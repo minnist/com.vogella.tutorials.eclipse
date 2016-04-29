@@ -1,4 +1,4 @@
-rootProject.name = 'com.vogella.tutorials.technology'
+rootProject.name = 'com.vogella.tutorials.eclipse'
 
 include 'EclipseJDTQuickfix'
 

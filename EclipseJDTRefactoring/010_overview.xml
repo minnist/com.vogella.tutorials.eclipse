@@ -1,0 +1,8 @@
+<section id="jdt">
+	<title>Developing custom JDT refactoring operations</title>
+	<para>
+		See
+		<ulink
+			url="http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html">Custom JDT refactoring operations</ulink>
+	</para>
+</section>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Contributing to Eclipse JDT - Tutorial</title>
+		<author>
+			<firstname>Gábor</firstname>
+			<surname>Kövesdán</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>02.04.2015</pubdate>
+		<releaseinfo>
+			<para>Version 0.1</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>How to contribute to the Eclipse JDT project</title>
+		</abstract>
+	</articleinfo>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+</article>

@@ -1,0 +1,25 @@
+<section id="exercise_jdtquickfix">
+	<title>Developing a custom JDT refactoring</title>
+	<para>
+		TODO, still missing....
+	</para>
+	<para>This is just an example screenshot for reference. </para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/formsWithCommandsInMenu.png" scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Blablabla
+				</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>This is an example for a code listing.</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/Test.java" />
+		</programlisting>
+	</para>
+
+</section>

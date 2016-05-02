@@ -1,4 +1,5 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
 include 'EclipseJDTQuickfix'
+include 'EclipseResources'
 

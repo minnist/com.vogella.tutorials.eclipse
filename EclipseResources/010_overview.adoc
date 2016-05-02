@@ -1,0 +1,15 @@
+[[eclipseresourcesproject]]
+== Eclipse Resources API
+
+=== Overview
+The Eclipse Resources project provides API to access and modify resources.
+
+=== Example
+
+The following example access all projects in your workspace, finds all associated editors and closes them.
+
+[source, java]
+----
+include::examples/SampleHandler.java[]
+----
+

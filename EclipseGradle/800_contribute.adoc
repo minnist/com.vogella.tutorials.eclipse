@@ -1,0 +1,24 @@
+[[buildship_source]]
+== Contribute to the buildship project
+
+After you installed the Buildship tooling, you can help the project by reporting issues in the http://discuss.gradle.org/c/help-discuss/buildship[Gradle Forum]
+or by contributing code.
+	
+[[buildship_bugs]]
+=== Reporting bugs and feature requests
+		
+To help the Buildship project please report all bugs via opening bugs in https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Buildship"[New Bug report for Buildship].
+You can also open here bug reports for feature requests.
+		
+[[buildship_sourcecode]]
+=== Get the sourcecode
+		
+Since the project is hosted on https://github.com/eclipse/buildship[Github], you can obtain the source by cloning it from the following URL:
+
+`git@github.com:eclipse/buildship.git`
+		
+[[Oomph based setup]]
+		
+The project also provides a Oomph setup for the development, which is explained further
+in the https://github.com/eclipse/buildship/blob/master/docs/development/Setup.md#oomph-based-setup[Buildship Docs].
+

@@ -1,0 +1,7 @@
+[eclipsegradle_overview]
+== Eclipse Gradle support with Buildship
+
+Gradle Inc., the company behind the Gradle build framework provides Gradle tooling for the Eclipse IDE. 
+The project itself is called Buildship and is available on https://github.com/eclipse/buildship[Buildship on Github].
+
+

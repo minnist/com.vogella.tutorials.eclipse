@@ -1,0 +1,23 @@
+[[buildship_import]]
+== Import an existing Gradle project
+	
+Projects can be imported by using the Import wizard via the (menu:File[Import...> Gradle > Gradle Project]) menu entry.
+	
+image::img/import_wizard.png[Gradle import wizard]
+	
+
+After pressing the btn:[Next >] button, you need to specify the root directory of your Gradle project.
+	
+image::img/import_gradle_project.png[Import Gradle project]
+	
+	
+You may now press btn:[Finish] button and use the default settings for the import or press the btn:[Next] button and specify the Gradle runtime settings.
+	
+
+image::img/import_options_gradle.png[Import Gradle project]
+	
+	
+Afterwards the import preview is shown.
+	
+image::img/import_gradle_preview.png[Import Gradle project review]
+

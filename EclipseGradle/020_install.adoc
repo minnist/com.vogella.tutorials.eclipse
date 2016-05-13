@@ -1,0 +1,25 @@
+[[buildship_install]]
+== Install Eclipse Gradle (Buildship) tooling
+
+[[buildship_install_marketplace]]
+=== Installation via the Marketplace
+	
+The easiest way to install the Gradle tooling for Eclipse is by using the Eclipse Marketplace client and search for _Buildship_.
+		
+image::img/marketplace_buildship.png[Eclipse Gradle installation via the Marketplace]
+
+
+[[buildship_install_update]]	
+=== Installation via the Eclipse update manager
+
+You also can use the menu:Help[Install New Software] menu path to install the Gradle tooling.
+
+For example, the following URL can be used for the Eclipse 4.5 (Mars) release: http://download.eclipse.org/releases/mars
+
+
+image::img/updatesite_dialoggradle.png[Eclipse Gradle installation via the update manager]
+
+			
+The Eclipse Gradle project provides also other updates sites, e.g., for developer builds. 
+See https://projects.eclipse.org/projects/tools.buildship/downloads[Buildship download page] for details.
+		

@@ -1,0 +1,23 @@
+= Using the Gradle build system in the Eclipse IDE - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+Simon Scholz, Lars Vogel (c) 2016 vogella GmbH
+Version 0.5, 13.05.2016
+
+[abstract]
+This article describes how to use the Gradle tooling in Eclipse.
+				
+include::010_overview.adoc[]
+include::020_install.adoc[]
+include::030_creatinganewproject.adoc[]
+include::040_import.adoc[]
+include::050_updatingbuildpathandproject.adoc[]
+include::060_usingbuildship.adoc[]
+include::060_usingbuildship.adoc[]
+include::200_androidsupport.adoc[]
+include::800_contribute.adoc[]
+include::008_resourceslocal.adoc[]
+
+

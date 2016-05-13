@@ -1,0 +1,20 @@
+[[buildship_tasksview]]
+== Using the Gradle Tasks view
+
+After successfully importing a Gradle project, the project is shown in the _Gradle Tasks_ view.
+
+image::img/tasks_view.png[The Gradle task view]
+
+By right clicking on a certain Gradle task in the Gradle Tasks view, you can run the selected Gradle task.
+
+image::img/run_gradle_task.png[Run Gradle task]
+
+
+By default the result is displayed in the _Gradle Executions_ view. 
+It is also displayed in the _Console_ view similar to the output you would get if you run the task via the command line.
+
+[WARNING]
+====
+The _Gradle Executions_ view can only be used, if you use Gradle 2.4 or higher. 
+====
+

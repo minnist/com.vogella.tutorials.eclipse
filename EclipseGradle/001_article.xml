@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<articleinfo>
+		<title></title>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<author>
+            <firstname>Lars</firstname>
+            <surname>Vogel</surname>
+        </author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>08.12.2015</pubdate>
+		<releaseinfo>
+			<emphasis>Version 0.5</emphasis>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Gradle</title>
+			<para>
+				
+			</para>
+		</abstract>
+	</articleinfo>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_install.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_creatinganewproject.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_import.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_usingbuildship.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_androidsupport.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_contribute.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml"/>
+	<?dbhtml-include href="../../web/vgwort/EclipseGradle"?>
+</article>

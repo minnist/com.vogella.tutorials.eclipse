@@ -9,12 +9,12 @@ In Eclipse it is common practice to have a separate test plug-in or fragment pro
 Tycho uses the `eclipse-test-plugin` packaging type for these projects. 
 The test execution is done via the Tycho Surefire plug-in which is aware of plug-in dependencies.
 		
-[source,code]
+[source, xml]
 ----
 <project>
 	<modelVersion>4.0.0</modelVersion>
 
-    <!--parent pom...  -->
+	<!--parent pom...  -->
 
 	<artifactId>com.vogella.tycho.unittests</artifactId>
 	<version>1.0.0-SNAPSHOT</version>

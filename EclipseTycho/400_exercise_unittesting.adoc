@@ -33,7 +33,7 @@ Create the following unit test, as an example.
 Of course this test does not test anything real. 
 It is only used to demonstrate how Tycho runs the tests.
 
-[source,xml]
+[source, java]
 ----
 include::res/tests/ExampleTest.java[]     
 ----	

@@ -82,7 +82,7 @@ This goals search from the existing directory for Eclipse components which do no
         
 You can use the following command to generate the pom files. The `-DgroupId` allows you to specify the group ID for the pom files.
 
-[source,xml]
+[source, shell]
 ----
 include::res/gen/gen1.txt[]
 ----       
@@ -99,7 +99,7 @@ If you try to execute this generated pom file, the build fail because you have n
 
 If you want to include Eclipse components which are not in the current directory you can point Tycho to these directories via the `-DextraDirs` parameter and define from which directory it should start.
         
-[source,xml]
+[source, shell]
 ----
 include::res/gen/gen2.txt[]
 ----
@@ -109,7 +109,7 @@ include::res/gen/gen2.txt[]
 
 You can also update existing pom files with the latest version number via the following command.
 
-[source,xml]
+[source, shell]
 ----
 include::res/gen/update_pom_version.txt[]
 ----
@@ -122,7 +122,7 @@ On the one hand the _pom.xml_ file and on the other hand the _MANIFEST.MF_ file.
         
 This can be done easily by using the ﻿Tycho Versions Plugin.
 
-[source,xml]
+[source, shell]
 ----
 include::res/gen/set_version_no.txt[]
 ----        

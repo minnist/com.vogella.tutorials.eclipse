@@ -26,18 +26,20 @@ This plug-in does not require a pom file, the defaults from pomless are fine for
 [[exercisetychoplugin_bundlespom]]
 === Add pom for bundles directory
 		
-Create the following pom in the _bundles_directory.
-
+Create the following pom in the _bundles_ directory.
+[source, xml]
+----
 include::res/components/parent/bundlespom.xml[]
+----
 
 [[exercisetychoplugin_rootbundlespom]]
 === Add bundle to root pom
 
-[source,shell]
+[source, xml]
 ----
 include::res/components/parent/rootpomwithplugin.xml[]		
 ----
-
+ 
 [[exercisetychoplugin_build]]
 === Run the build and validate the result
 		

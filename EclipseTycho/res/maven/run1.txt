@@ -1,0 +1,3 @@
+# default to run Maven
+# compiles, build and install the build result
+maven install

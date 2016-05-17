@@ -1,0 +1,81 @@
+<section id="exercisetycho_unit" role="wrapper">
+	<title>Exercise: Tycho build for JUnit/Test Plugins
+	<section id="exercisetycho_unit_target">
+		<title>Target of this exercise
+		
+			The following description demonstrates how to run unit tests with. It
+			requires that you finished build the
+			exercise for building plug-ins and features with Tycho before.
+		
+		
+			The tests of the implementation belong into a separate plug-in
+			or
+			fragment project. We decide that our tests
+			should only be able to
+			test API defined by the plug-in therefore we create a plug-in for the
+			unit tests.
+		
+	</section>
+
+	<section id="exercisetycho_unit_testproject">
+
+		<title>Create a JUnit test for the plugin
+		
+			Create a new plug-in project called
+			<wordasword>com.vogella.tycho.unittests</wordasword>
+			.
+		
+		
+			Define a dependency to
+			<wordasword>org.junit;bundle-version="4.11.0"</wordasword>
+			and
+			<wordasword>com.vogella.tycho.plugin1</wordasword>
+			in its
+			<filename>MANIFEST.MF</filename>
+			file.
+		
+		
+			Create the following pom.xml file for
+			<wordasword>com.vogella.tycho.unittests</wordasword>
+			project.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/pom.xml" />
+			</programlisting>
+		
+
+	</section>
+
+
+
+	<section id="exercisetycho_unit_unittest">
+		<title>Create example unit test
+		Create the following unit test, as an example. Of course this
+			test does not test anything real but it can be used
+			to demonstrate
+			how Tycho runs the tests.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/ExampleTest.java" />
+			</programlisting>
+		
+	</section>
+	<section id="exercisetycho_unit_master">
+		<title>Add new project to aggregator project
+		
+			Add your new plug-in to the pom file of
+			<code>com.vogella.tycho.aggregator</code>
+			.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/aggregatorpom.xml" />
+			</programlisting>
+		
+
+	</section>
+
+</section>

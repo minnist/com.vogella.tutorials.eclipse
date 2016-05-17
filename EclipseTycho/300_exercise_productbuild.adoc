@@ -1,0 +1,213 @@
+<section id="exercisetychoproduct" role="wrapper">
+	<title>Exercise: Tycho build for products
+	<section id="exercisetychoproduct_target">
+		<title>Target of this exercise
+		
+			The following description demonstrates how to build Eclipse products
+			with Maven Tycho. It requires that you finished
+			<xref linkend="exercisetychoplugin" />
+			and
+			<xref linkend="exercisetychofeature" />
+			before.
+		
+	</section>
+
+	<section id="exercisetychoproduct_product">
+		<title>Creating a plug-in and the product project
+		
+			Use the
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Plug-in Project</guisubmenu>
+			</menuchoice>
+			and create a plug-in in the
+			<filename>bundles</filename>
+			folder. Call this plug-in
+			<code>com.vogella.tycho.rcp</code>
+			and use the
+			<code>Eclipse 4 RCP application</code>
+			template.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho-rcpplugin-creation.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Eclipse RCP plug-in creation
+					</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+
+		
+			Create a new project of type
+			<parameter>General</parameter>
+			called
+			<wordasword>com.vogella.tycho.product</wordasword>
+			in the
+			<filename>releng</filename>
+			folder
+			and drag and drop your .product file from the com.vogella.tycho.rcp
+			file into this new project.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_productsetup10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Tycho product setup</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+	<section id="exercisetychoproduct_enterid">
+		<title>Enter ID in the product
+		
+			To build your
+			product
+			with
+			Tycho you need to enter the ID on the
+			product
+			configuration
+			file.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_productid10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Entering the product ID in the product configuration file</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+	<section id="exercisetychoproduct_createpomfile">
+		<title>Create poms
+		
+			As you are using pomless build, you do not need to create a pom file for your
+			<code>com.vogella.tycho.rcp</code>
+			plug-in.
+		
+
+		Pomless builds, do not yet support product, therefore create a pom file for your product. 
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/rcp/pom.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="exercisetychoproduct_switchtofeatures">
+		<title>Change product to use features
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_productid20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Switch product to features
+					</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_productid30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Switch product to features
+					</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+	<section id="exercisetychoproduct_feature">
+		<title>Enable separate update of the custom feature
+		
+			Open the product file and add
+			<code>installMode="root"</code>
+			for the feature. This will allow to update the feature
+			separately.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/rcp/com.vogella.tycho.rcp.product" />
+			</programlisting>
+		
+	</section>
+	<section id="exercisetychoproduct_startlevel">
+		<title>Enter start-level in the product
+
+		
+			To ensure that your product can be executed after the build,
+			you
+			have
+			to
+			set the start levels and the auto-start flag for
+			the
+			following
+			plug-ins
+			in your product configuration file on the
+			<guilabel>Configuration</guilabel>
+			tab,
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/rcp/startlevel.txt" />
+			</programlisting>
+		
+	</section>
+
+	<section id="exercise_rcp_updatereleng">
+		<title>Update releng pom
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise/rcp/relengpom.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="exercise_rcp_updatebundles">
+		<title>Update bundles pom
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise/rcp/bundlespom.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="plugin_aggregatorproduct">
+		<title>Validate setup
+		
+			Add the two new projects to your aggregator pom and run the
+			build. After the build you find zip and extracted
+			versions of your
+			product in the target/products folder.
+		
+
+		relengpom.xml
+		bundlespom.xml
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_productbuildresult10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Tycho product build result</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+	</section>
+</section>

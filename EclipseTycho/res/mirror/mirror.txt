@@ -1,0 +1,9 @@
+# create artifact mirror via the command line in your Eclipse installation
+# on windows use eclipse.exe instead of eclipse
+eclipse -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication
+   -source http://download.eclipse.org/releases/mars
+   -destination file:/home/vogella/marsclone
+   
+eclipse -application org.eclipse.equinox.p2.metadata.repository.mirrorApplication
+   -source http://download.eclipse.org/releases/mars
+   -destination file:/home/vogella/marsclone

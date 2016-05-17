@@ -1,0 +1,2 @@
+# Forces an update of the dependencies
+maven -U install

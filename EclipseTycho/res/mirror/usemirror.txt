@@ -1,0 +1,12 @@
+<settings>
+ <mirrors>
+  <mirror>
+   <id>Mars_mirror</id>
+   <mirrorOf>Mars</mirrorOf>
+   <name>Local mirror of Mars repository</name>
+   <url>file://home/vogella/Marsclone</url>
+   <layout>p2</layout>
+   <mirrorOfLayouts>p2</mirrorOfLayouts>
+  </mirror>
+ </mirrors>
+</settings> 

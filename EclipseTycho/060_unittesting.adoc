@@ -1,0 +1,173 @@
+[[tycho_unittesting]]
+== Executing plug-in unit tests with Tycho
+
+[[tycho_unittestingoverview]]
+=== Using the Tycho Surfire plug-in for execution plug-in tests
+
+In Eclipse it is common practice to have a separate test plug-in or fragment project for your tests.
+		
+Tycho uses the `eclipse-test-plugin` packaging type for these projects. 
+The test execution is done via the Tycho Surefire plug-in which is aware of plug-in dependencies.
+		
+[source,code]
+----
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+    <!--parent pom...  -->
+
+	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-test-plugin</packaging>
+</project>
+----
+
+Tycho builds test plug-ins similar as regular Eclipse plugins. 
+The execution of the the tests happens in the `integration-text` life cycle phase of Maven. 
+The runtime behavior of the Maven Tycho Surefire plug-in is a little different to the Maven Surefire plug-in.
+Tycho Surefire tests run in the integration-test phase while regular Maven Surefire tests run in the test phase. 
+The integration-test phase occurs between the package and install phases.
+		
+The Tycho Surefire plug-in supports the execution of non-UI based and UI-based tests.
+If you run UI tests, you have to enabled that explicitly via the `useUIHarness` parameter.
+		
+[source,xml]
+----
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--parent pom... -->
+
+	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-test-plugin</packaging>
+
+	<build>
+		<plugins>
+		 <plugin>
+			<groupId>org.eclipse.tycho</groupId>
+			<artifactId>tycho-surefire-plugin</artifactId>
+			<version>${tycho-version}</version>
+			<configuration>
+				<useUIHarness>true</useUIHarness>
+			</configuration>
+		 </plugin>
+		</plugins>
+	</build>
+
+</project>
+----
+
+
+The tests are executed in a test runtime (based on OSGi), using the dependencies defined in the _MANIFEST.MF_ file of the test plug-in. 
+You can also include more dependencies to features ("eclipse-feature"), plug-ins /fragments	("eclipse-plugin")  or installable units ("p2-installable-unit").
+If you define a dependency you include also their transitive dependencies, to the test runtime.
+		
+[source,xml]
+----
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--parent pom... -->
+
+	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-test-plugin</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<useUIHarness>true</useUIHarness>
+					<dependencies>
+						<dependency>
+							<type>eclipse-feature</type>
+							<artifactId>com.vogelal.feature1</artifactId>
+							<!-- This is the minimum required version -->
+							<version>1.0.0</version>
+						</dependency>
+					</dependencies>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
+----
+
+[[tycho_unittesting_testselection]]
+=== Test selection
+		
+Similar to the Maven Surfire plug-in, Tycho Surfile selects, by default, all test classes matching the _**/Test*.java_, _**/*Test.java_ and _**/*TestCase.java_ for the test run.
+		
+This selection can be configured via the `includes` parameter.
+		
+
+[source,xml]
+----
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--parent pom... -->
+
+	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-test-plugin</packaging>
+
+	<!-- Define to include all classes in the test run -->
+	<build>
+	 <plugins>
+	  <plugin>
+		<groupId>org.eclipse.tycho</groupId>
+		<artifactId>tycho-surefire-plugin</artifactId>
+		<version>${tycho.version}</version>
+		 <configuration>
+		  <includes>
+			<include>**/*.class</include>
+	      </includes>
+		 </configuration>
+	   </plugin>
+	 </plugins>
+	</build>
+</project>
+----		
+	
+		
+You can also specify a specific test or test suite to be executed.
+
+This requires setting the `TestSuite` to the Bundle-Symbolic-Name of the plug-in and the `testClass` parameter to the fully qualified class.
+		
+[source,xml]
+----
+<!-- snippet -->
+<build>
+ <plugins>   
+  <plugin>
+  	<groupId>org.eclipse.tycho</groupId>
+  	 <artifactId>tycho-surefire-plugin</artifactId>
+  	 <version>${tycho.version}</version>
+  	 <configuration>
+      	<testSuite>org.eclipse.e4.ui.tests.css.swt</testSuite>
+      	<testClass>org.eclipse.e4.ui.tests.css.swt.CssSwtTestSuite</testClass>
+  	 </configuration>
+    </plugin>
+ </plugins>
+</build>
+----
+
+[[tycho_unittesting_javaversion]]
+=== Specifying the Java version
+
+		
+The JDT compiler can be configured to use the compiler source/target level according to MANIFEST.MF settings. 
+So it is possible to compile a JavaSE-1.8 bundle using JDK 7, even if I started the build process with a Java 7 JVM.
+		
+This is not true for running the tests. 
+The tests are running with the build JVM by default. 
+So only because a Java 8 plug-in compiles, this does not mean that the correct JVM is used. 
+If you test bundle requires for example Java 8, you must start the build process via a Java 8 JVM.
+		

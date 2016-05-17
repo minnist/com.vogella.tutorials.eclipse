@@ -1,0 +1,10 @@
+[[tychotargetplatform]]
+== Tycho and the usage of a target platform
+
+Tycho uses a target platform to find dependencies.
+If you specify a p2 update site as target, the whole content of all defined p2 repositories becomes part of the target platform. 
+If a target	definition is used in the project for development, the build should also use this instead of using a whole repository.
+	
+Tycho only supports Software Sites as locations.
+The Directory Installation and Feature entries are not supported by Tycho and are ignored by the build process.
+	

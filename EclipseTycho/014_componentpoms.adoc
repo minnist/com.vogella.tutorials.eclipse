@@ -1,0 +1,121 @@
+[[maventycho_componentpoms]]
+== Defining poms for Eclipse and OSGi components
+
+[[maventycho_pom]]
+=== The pom file for Tycho
+		
+A Tycho build is configured via the standard Maven configuration files. 
+In most cases this configuration file is named _pom.xml_.
+You need at least one pom file. 
+This file describes the main configuration and the Eclipse components (modules) included in the build.
+Every Eclipse component can have its individual pom file.
+Tycho supports the Maven Polyglot functionality introduced with Maven 3.3.1 which allows that certain pom files are automatically derived. 
+Tycho derives this information based on the metadata of the Eclipse components. 
+See <<maventycho_componentpoms>>.
+			.
+If the defaults from the default configuration, are not sufficient you need to define a pom.file. 
+In this case, the artifact ID and version in the pom file must match the `Bundle-Symbolic-Name` and the  `Bundle-Version` from the _MANIFEST.MF_ file. 
+Eclipse components typical use `qualifier` as a suffix in the `Bundle-Version` to indicate that this should be replaced by the build system with a build qualifier.
+Maven uses "SNAPSHOT" for this, but Tycho maps these values correctly.
+		
+[[maventycho_pomless]]
+=== Enable pomless Tycho build
+		
+To enable the automatic determination of build information for your Eclipse components, add a _.mvn/extensions.xml_ descriptor to the root of your directory. 
+This requires at least Apache Maven 3.3 and Maven Tycho 0.24.0.
+		
+The contents of the _.mvn/extensions.xml_ must look like this:
+
+
+[source,xml,subs="specialchars,attributes"]
+----	
+include::res/polyglot/pomlesstycho-extensions.xml[]
+----
+
+The following rules are used to generate proper _pom.xml_ files for default plug-ins without a special configuration. 
+.qualifier is automatically mapped to -SNAPSHOT.
+		
+.Table Pom Properties Mapping
+|===
+|Property |Mapping
+
+|packaging, 
+|eclipse-plugin if MANIFEST.MF is found
+
+eclipse-feature if feature.xml is found
+
+eclipse-test-plugin if Bundle-SymbolicName ends with 
+.tests
+
+|groupId
+|same as in the parent pom
+
+|arifactId
+|eclipse-plugin: Bundle-SymbolicName from MANIFEST.MF
+								
+eclipse-feature: feature id from feature.xml
+
+|version
+|Bundle-Version from MANIFEST.MF or
+
+Feature version from feature.xml
+|===
+		
+For further information see https://wiki.eclipse.org/Tycho/Release_Notes/0.24[Release Notes of Tycho 0.24].
+
+[[maventycho_package]]
+=== Package attribute
+		
+If you define a pom file for an Eclipse component, you need to specify which component you are building via the
+_packaging_ attribute in the pom file. 
+For example, a plug-in must set this attribute to `eclipse-plugin`. 
+If you use the Maven polyglot functionality, this information is determined automatically by Tycho.
+
+.Table Package attributes for Eclipse components
+|===
+|Name of Column 1 |Name of Column 2 
+
+|Package Attribute
+|Description
+
+|eclipse-plugin
+|Used for Plug-ins
+
+|eclipse-feature
+|Used for features
+
+|eclipse-repository
+|Used for p2 update sites and Eclipse products
+|===
+		
+In addition to packaging attribute, the pom of an Eclipse component must also specify the name and the version of the component.
+It must also contain a link to the parent pom which contains the configuration.
+
+[[maventycho_moduleexample]]
+=== Example: Module / component pom
+		
+Each `module` has again a `pom.xml`	configuration file which defines attributes specifically to the corresponding Eclipse component, e.g., the package attribute. 
+The `pom.xml` files of the modules refer to their parent `pom.xml` file.
+The following listing contains an example pom file for a plug-in.
+		
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Link to the parent pom -->
+	<parent>
+		<artifactId>com.example.todo.build.parent</artifactId>
+		<groupId>com.example.e4.rcp</groupId>
+		<version>0.1.0-SNAPSHOT</version>
+		<relativePath>../com.example.todo.build.parent</relativePath>
+	</parent>
+
+	<groupId>com.example.e4.rcp</groupId>
+	<artifactId>com.example.e4.bundleresourceloader</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-plugin</packaging>
+</project>
+----
+

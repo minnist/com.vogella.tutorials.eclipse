@@ -1,0 +1,239 @@
+<section id="tychoadvanced" role="wrapper">
+	<title>Advanced Tycho settings
+	<section id="maventycho_rootlevelfeatures">
+		<title>Using root level features
+		Features and products installed in Eclipse are called
+			installable units. A root level feature is a feature which can be
+			updated or uninstalled independently of the product.
+		
+		To define that a feature is a root level feature, add
+			installMode="root" behind the feature in the product definition file.
+			You need to use a text editor for this at the moment, the product
+			configuration editor does currently not expose that in its user
+			interface.
+		
+	</section>
+	
+	<section id="maventycho_encoding">
+        <title>Source Encoding
+        
+            You can set the source code encoding via the
+            <parameter>project.build.sourceEncoding</parameter>
+            parameter.
+        
+
+        
+            <programlisting language="xml">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/setting/enc.txt" />
+            </programlisting>
+        
+        
+            <warning>
+                
+                    If you do not set this encoding property the maven build will throw
+                    warnings
+                    like this: ﻿
+                    <blockquote>
+                        [WARNING] Using platform encoding (UTF-8 actually) to copy
+                            filtered
+                            resources, i.e. build is platform
+                            dependent!
+                        
+                    </blockquote>
+                
+                
+                    For further information see
+                    <ulink url="http://maven.apache.org/general.html#encoding-warning">Maven FAQ for
+                        encoding warning
+                    </ulink>
+                
+            </warning>
+        
+
+    </section>
+	<section id="usingamirror">
+		<title>Using a repository mirror
+		You can create p2 repository mirrors, e.g., you can create a
+			mirror of an update site of an Eclipse release. For this you can use the
+			mirrorApplication of Eclipse.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/mirror/mirror.txt" />
+			</programlisting>
+		
+		
+			To use your mirror, configure Maven to use it via the
+			<filename>settings.xml</filename>
+			file in your home folder.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/mirror/usemirror.txt" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="maventycho_compilerwarnigns">
+		<title>Removing compiler warning messages from the build
+		
+			You can remove compiler warnings from the Maven build by configuring
+			the
+			<code>tycho-compiler-plugin</code>
+			. This is demonstrated with the following snippet.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/compiler/warning.txt" />
+			</programlisting>
+		
+	</section>
+
+	<section id="maventycho_build_settings">
+		<title>Using the last Git commit as build qualifier special build
+			settings
+		
+		
+			You can configure the
+			<code>tycho-packaging-plugin</code>
+			to use the last Git commit as build qualifier instead of the build
+			time.
+			The following
+			<filename>pom.xml</filename>
+			shows how to use the current git commit time stamp as qualifier
+			instead of the current system time stamp. This allows building
+			reproducible results if no change happened in the Git repository.
+			This only works if the project is in a Git repository.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/tycho/git_timestamps.xml" />
+			</programlisting>
+		
+	</section>
+	
+	<section id="maventycho_generatepom" role="wrapper">
+    <title>Generating and updating POM files for Eclipse components
+    <section id="maventycho_generatepom1">
+        <title>Generating POM files
+        
+            Tycho supports the generation of POM files via its
+            <code>tycho-pomgenerator-plugin:generate-poms</code>
+            goal. For goals search from the existing directory for Eclipse
+            components which do not yet have a POM file and
+            generates one for it
+            (backslash include to remove the line break).
+        
+        
+            You can use the following command to generate
+            default files. The
+            <parameter>-DgroupId</parameter>
+            allows you to specify the group ID for the pom files.
+        
+        
+            <programlisting language="bourne">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gen/gen1.txt" />
+            </programlisting>
+        
+         This command generates a POM for all Eclipse components below the current directory and a
+            parent pom in the
+            current directory which includes all Eclipse components as
+            modules.
+        
+        
+            For identifying test bundles the generator assumes that those bundles have
+            <quote>.test</quote>
+            as suffix. ﻿By using
+            <quote>-DtestSuffix=.mytestBundleSuffix</quote>
+            as additional parameter you can
+            override this default.
+        
+
+        <warning>
+            If you try to execute this POM file, the build fail because you have not yet
+                configured your dependencies.
+            
+        </warning>
+        
+
+            If you
+            want to
+            include
+            Eclipse components which are not in the current
+            directory you
+            can
+            point
+            Tycho to these directories
+            via the
+            <parameter>-DextraDirs</parameter>
+            parameter and define from which directory it should start.
+        
+        
+            <programlisting language="bourne">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gen/gen2.txt" />
+            </programlisting>
+        
+    </section>
+    <section id="maventycho_generatepom2">
+        <title>Update POM files with new version number
+        You can also update existing pom files with the latest version
+            number via the following command.
+        
+        
+            <programlisting language="bourne">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gen/update_pom_version.txt" />
+            </programlisting>
+        
+    </section>
+    <section>
+        <title>Setting version numbers
+        
+            After releasing an application or several plug-ins, the version number should be
+            increased. Usually there are two
+            locations where version numbers are defined. On the one
+            hand the
+            <filename>pom.xml</filename>
+            file and on the other hand the
+            <filename>MANIFEST.MF</filename>
+            file.
+        
+        This can be done easily by using the ﻿Tycho Versions Plugin.
+        
+            <programlisting language="bourne">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gen/set_version_no.txt" />
+            </programlisting>
+        
+        
+            Eclipse/Osgi usually uses semantic versioning for plug-ins/bundles, so a version
+            number like
+            {major}.{minor}.{patch} is
+            used.
+            See
+            <ulink url="http://www.osgi.org/wiki/uploads/Links/SemanticVersioning.pdf">Semantic versioning</ulink>
+            for more information.
+        
+        
+            <note>
+                
+                    The
+                    <code>tycho.mode=maven</code>
+                    property ﻿disables the target platform
+                    calculation and dependency ﻿resolution, which is usually done by Tycho. This
+                    results in better performance, since those features are not necessary for
+                    updating the version.
+                
+            </note>
+        
+        
+            More information about versioning with Tycho can be found in the
+            <ulink url="https://eclipse.org/tycho/sitedocs/tycho-release/tycho-versions-plugin/plugin-info.html">Tycho version wiki</ulink>
+            .
+        
+    </section>
+</section>
+</section>

@@ -1,0 +1,9 @@
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] com.vogella.tycho.configuration .................... SUCCESS [  0.037 s]
+[INFO] com.vogella.tycho.root ............................. SUCCESS [  0.001 s]
+[INFO] com.vogella.tycho.bundles .......................... SUCCESS [  0.001 s]
+[INFO] com.vogella.tycho.plugin1 .......................... SUCCESS [  0.427 s]
+[INFO] com.vogella.tycho.features ......................... SUCCESS [  0.001 s]
+[INFO] com.vogella.tycho.feature .......................... SUCCESS [  0.108 s]
+[INFO] ------------------------------------------------------------------------

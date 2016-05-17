@@ -1,0 +1,4 @@
+# group ID is set to com.vogella.tychoexample 
+mvn org.eclipse.tycho:tycho-pomgenerator-plugin:generate-poms \
+	-DgroupId=com.vogella.tychoexample 
+

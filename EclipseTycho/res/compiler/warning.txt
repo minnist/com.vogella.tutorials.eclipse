@@ -1,0 +1,14 @@
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-compiler-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <compilerArgs>
+            <arg>-warn:-raw,unchecked</arg>
+          </compilerArgs>
+        </configuration>
+      </plugin>
+    </plugins>
+ </build>

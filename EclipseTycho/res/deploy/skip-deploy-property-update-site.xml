@@ -1,0 +1,4 @@
+<properties>
+	<!-- Do not skip the deployment here since we want this module to be deployed -->
+	<maven.deploy.skip>false</maven.deploy.skip>
+</properties>

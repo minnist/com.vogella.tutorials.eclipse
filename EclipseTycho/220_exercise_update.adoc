@@ -1,0 +1,149 @@
+<section id="exercise_tychoupdatesite" role="wrapper">
+	<title>Exercise: Tycho build for update sites
+	
+	<section id="exercise_tychoupdatesite_target">
+		<title>Target of this exercise
+		
+			The following description demonstrates how to build Eclipse features
+			with Maven Tycho. It requires that you finished
+			<xref linkend="exercisetychoplugin" />
+			and
+			<xref linkend="exercisetychofeature" />
+			before.
+		
+	</section>
+
+	<section id="exercise_updatesite_categorydefinition">
+		<title>Create category definition for the update site
+
+		
+			In your
+			<filename>releng</filename>
+			folder, create a new project of type
+			<guilabel>General</guilabel>
+			called
+			<wordasword>com.vogella.tycho.update</wordasword>
+			.
+			
+
+        
+			
+			Select the main folder
+			of this
+			project and select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Category Definition</guisubmenu>
+			</menuchoice>
+			.
+		
+
+		
+			Press the
+			<guilabel>New Category</guilabel>
+			button and create a new category with the "tychoexample" ID and
+			"Tycho example" name.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_updatesite10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a category</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+
+			Press the
+			<guibutton>Add Feature...</guibutton>
+			button
+			and include your feature project into the category.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho_updatesite20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a category</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+
+	</section>
+
+	<section id="exercise_updatesite_updatepom">
+		<title>Create pom for the releng folder
+		Create the following pom for your releng folder.
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise/updatesite/releng.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="exercise_updatesite_pom">
+		<title>Create pom for the update site
+		Create the following pom for your update site project.
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise/updatesite/updatesitepom.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="exercise_updatesite_aggregator">
+		<title>Update root
+		
+			Add your new module to your root pom file.
+		
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/components/parent/rootpomwithupdatesite.xml" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="exercise_updatesite_aggregatorrun">
+		<title>Run aggregator build
+		
+			Select the pom of your aggregator and run the build. It should
+			complete and
+			build all your components including
+			the update site.
+		
+
+	</section>
+
+
+	<section id="exercise_updatesite_validate">
+		<title>Validate the update site build result
+		
+			Press F5 on your update site
+			project to refresh it. You find a new
+			folder
+			called
+			<filename>target</filename>
+			in your project which contains a "repository" folder. This folder
+			contains the update site.
+		
+		
+			Ensure that the JAR files in the "repository" have the SNAPSHOT
+			suffix replaced with the build qualifier.
+		
+
+
+	</section>
+
+</section>

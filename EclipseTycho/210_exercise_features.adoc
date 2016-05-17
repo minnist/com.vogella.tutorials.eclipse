@@ -1,0 +1,141 @@
+<section id="tychofeaturesexercise" role="wrapper">
+	<title>Exercise: Tycho build for Eclipse features
+	<section id="tychofeaturesexercise_target">
+		<title>Target of this exercise
+		
+			The following description demonstrates how to build Eclipse features
+			with Maven Tycho. It requires that you finished
+			<xref linkend="exercisetychoplugin" />
+			before.
+		
+	</section>
+	<section id="tychofeaturesexercise_featurecreate">
+		<title>Create feature to build
+
+		
+			Create a
+			new feature project called
+			<wordasword>com.vogella.tycho.feature</wordasword>
+			which
+			includes the
+			<wordasword>com.vogella.tycho.plugin1</wordasword>
+			plug-in.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho-plugin1-creation.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Plug-in creation for Tycho
+					</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+
+	</section>
+	<section id="tychofeaturesexercise_create">
+		<title>Create pom for feature folder
+
+		
+			Create the following pom in the
+			<filename>features</filename>
+			directory.
+
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/components/parent/featurespom.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="tychofeaturesexercise_createfeaturespom">
+		<title>Create a feature pom
+		
+			In the
+			<filename>features</filename>
+			folder, create the following pom file.
+		
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise/feature/pom.xml" />
+			</programlisting>
+		
+	</section>
+
+	<section id="tychofeaturesexercise_addfeaturetoroot">
+		<title>Add feature to root pom
+
+		
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/components/parent/rootpomwithfeatures.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="plugin_featurerun">
+		<title>Run build build
+		
+			Select the root pom and run your build. This should work fine.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/exercise/feature/successmessage.txt" />
+			</programlisting>
+		
+		
+			Building the feature (from the features directory) will not work, as this requires com.vogella.tycho.plugin1 to
+			be
+			present in one of the repositories specified as dependency. If an independent build of the feature is required, you
+			need to make the plug-in available via a repository, e.g., by building and installing the
+			plug-in
+			into the local Maven
+			repository with
+			<code>mvn clean install</code>
+			.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/exercise/feature/errormessage.txt" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="plugin_aggregatorrun">
+		<title>Run aggregator build
+		
+			Select the pom of your aggregator and run the build. It should
+			complete and
+			build all your components.
+		
+
+	</section>
+
+
+	<section id="feature_validate">
+		<title>Validate the feature build result
+		
+			Press F5 on your feature
+			project to refresh it. You find a new folder
+			called
+			<filename>target</filename>
+			in your project which contains the JAR file for your feature.
+		
+		
+			The JAR file still has the SNAPSHOT suffix. This suffix is replaced
+			with the build time stamp once you build a product
+			or an update site
+			with the
+			<code>eclipse-repository</code>
+			packaging type.
+		
+
+	</section>
+
+</section>

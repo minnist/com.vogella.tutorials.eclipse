@@ -1,0 +1,60 @@
+<section id="ftp_upload">
+	<title>Automatic deployment of a p2 update site with Maven
+	You can use the Maven Wagon plug-in to deploy your
+		artifacts, e.g., to an ftp server.
+	
+	
+		To define the credentials to login to the server you can 
+		add an entry for the user credentials to your local
+		<filename>~/m2/settings.xml</filename>
+		file.
+	
+	
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/deploy/settings.xml" />
+		</programlisting>
+	
+
+	
+		You can then configure your
+		<filename>pom.xml</filename>
+		to use the wagon plug-in of Maven.
+	
+
+	
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/deploy/pom.xml" />
+		</programlisting>
+	
+
+
+	The following command will now deploy your artifacts to your ftp site. 
+	
+		<programlisting language="bourne">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/deploy/command.txt" />
+		</programlisting>
+	
+	If you only want to upload your p2 update site, you can configure
+		the <code>org.apache.maven.wagon</code> plug-in.
+	
+
+	
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/deploy/pom2.xml" />
+		</programlisting>
+	
+
+	You can now upload your p2 update site with the following
+		command. 
+		
+		<programlisting language="bourne">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/deploy/command2.txt" />
+		</programlisting>
+	
+
+</section>

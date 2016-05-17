@@ -1,0 +1,24 @@
+# the following goes in one line
+
+keytool -genkey -alias   -keystore eclipse-signing.keystore \
+-storepass PASSWORD -validity 4360
+
+# this command triggers a set of questions
+
+What is your first and last name?
+  [Unknown]:  Jim Knopf
+What is the name of your organizational unit?
+  [Unknown]:  IT
+What is the name of your organization?
+  [Unknown]:  test Company
+What is the name of your City or Locality?
+  [Unknown]:  Hamburg
+What is the name of your State or Province?
+  [Unknown]:  Germany
+What is the two-letter country code for this unit?
+  [Unknown]:  DE
+Is CN=Jim Knopf, OU=IT, O=test Company, L=Hamburg, ST=Germany, C=DE correct?
+  [no]:  y
+
+Enter key password for <selfsigned>
+    (RETURN if same as keystore password):  

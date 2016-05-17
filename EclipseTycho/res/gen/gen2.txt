@@ -1,0 +1,2 @@
+mvn org.eclipse.tycho:tycho-pomgenerator-plugin:generate-poms \
+ -DgroupId=com.vogella.tycho.build -DbaseDir=features -DextraDirs="../../another_plugin_dir

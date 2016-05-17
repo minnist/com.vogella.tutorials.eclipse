@@ -1,0 +1,116 @@
+<section id="exercisetychoplugin" role="wrapper">
+	<title>Exercise: Tycho build for plug-ins
+	<section id="exercisetychoplugin_overview">
+		<title>Target of this exercise
+		
+			The following description demonstrates how to build Eclipse
+			plug-ins
+			with Maven Tycho.
+		
+	</section>
+
+	<section id="exercisetychoplugin_pluginsfolder">
+		<title>Creating a bundles folder
+		
+			Create a new folder called
+			<filename>bundles</filename>
+			in the root project. This folder will contain the bundles / plug-ins
+			you build with Tycho.
+		
+	</section>
+	<section id="exercisetychoplugin_plugin">
+		<title>Creating a plug-in to build
+		
+			In the
+			<filename>bundles</filename>
+			folder create a new plug-in project called
+			<wordasword>com.vogella.tycho.plugin1</wordasword>
+			.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tycho-plugin1-creation.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Plug-in creation for Tycho
+					</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+		
+			This plug-in does not require a pom file, the defaults from
+			pomless are fine for this project.
+		
+	</section>
+
+
+	<section id="exercisetychoplugin_bundlespom">
+		<title>Add pom for bundles directory
+		
+			Create the following pom in the
+			<filename>bundles</filename>
+			directory.
+
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/components/parent/bundlespom.xml" />
+			</programlisting>
+		
+
+
+	</section>
+	<section id="exercisetychoplugin_rootbundlespom">
+		<title>Add bundle to root pom
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/components/parent/rootpomwithplugin.xml" />
+			</programlisting>
+		
+	</section>
+	<section id="exercisetychoplugin_build">
+		<title>Run the build
+		
+			To run the build on the command line from your root directory via
+			<code>mvn clean verify</code>
+			. Also switch to your plug-in directory and run the build from this
+			directory. Both builds should run successfully.
+		
+	</section>
+	<section id="exercisetychoplugin_validate">
+		<title>Validate the result
+		
+			In your
+			<wordasword>Console</wordasword>
+			view you should see the BUILD SUCCESS statement. Press F5 on your
+			project to refresh it. You find a new folder called
+			<filename>target</filename>
+			in your project which contains the JAR file for your plug-in.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/pluginbuildresult10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Build result for the plug-in</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			The JAR file still has the SNAPSHOT suffix. This suffix is replaced
+			with the build time stamp once you build a product
+			or an update site
+			with the
+			<code>eclipse-repository</code>
+			packaging type.
+		
+	</section>
+
+</section>

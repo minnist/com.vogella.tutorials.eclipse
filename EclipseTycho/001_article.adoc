@@ -19,12 +19,20 @@ include::080_signingplugins.adoc[]
 
 // Exercises // 
 include::180_exercise_enablepomless.adoc[]
-include::200_exercise_plugins.xml[]
-include::210_exercise_features.xml[]
-include::220_exercise_update.xml[]
-include::300_exercise_productbuild.xml[]
-include::320_exercise_targetplatform.xml[]
-include::400_exercise_unittesting.xml[]
+include::200_exercise_plugins.adoc[]
+include::210_exercise_features.adoc[]
+include::220_exercise_update.adoc[]
+include::300_exercise_productbuild.adoc[]
+include::320_exercise_targetplatform.adoc[]
+include::400_exercise_unittesting.adoc[]
+
+include::500_convertjars.adoc[]
+include::600_advanced.adoc[]
+include::700_ftp_upload.adoc[]
+include::720_deployment.adoc[]
+
+
+
 
 
 

@@ -51,7 +51,7 @@ Create the following _pom.xml_ file in the root project of your build.
 		
 [source,xml]
 ----	
-include::res/components/components/parent/rootpom.xml[]
+include::res/components/parent/rootpom.xml[]
 ----
 
 [[exercisetycho_configuration_validate]]

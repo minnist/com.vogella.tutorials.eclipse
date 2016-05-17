@@ -1,0 +1,58 @@
+[[convertjars]]
+== Automatic conversion of JARS to OSGi bundles
+
+In order to convert JARS to OSGi bundles several solutions
+exist.
+
+=== Orbit receipts
+
+The Orbit project hosts the Orbit receipts project which allows to convert JARs from Maven to OSGi bundles.
+Clone the Git repo from the following URL https://git.eclipse.org/r/orbit/orbit-recipes[Orbit Git repos].
+Afterwards see the
+README.md for how to use it.
+Also see https://github.com/eclipse/ebr for a description of the _Eclipse Bundle Recipes_ project.
+
+=== General Eclipse metadata with the p2-maven-plugin
+
+The p2-maven-plugin can be used to generate OSGi bundles out of JARs
+and to create a p2 update site, which contains the converted OSGi JARs.
+
+With the following build file `slf4j-log4j12` in version 1.7.10 and all of its dependencies are be converted to OSGi
+bundles.
+Also, a p2 update site is created.
+
+[source,xml]
+----
+include::res/p2-maven-plugin/pom.xml[]
+----
+
+By using the `mvn clean p2:site` goal the following directory structure is created.
+
+image::img/p2-maven-plugin.png[]
+
+
+Here you can see that also `log4j_1.2.17` and `slf4j.api_1.7.10` are converted.
+They can be used via the generated update site.
+
+image::img/p2-maven-plugin-updatesite.png[]
+
+In this case the p2 repository targets the file system.
+But of curse you can also embed the conversion into a deployment build.
+
+In the following sample the p2-maven-plugin is added to the `package` phase and the `site` goal is executed.
+Then the p2 updatesite is archived to one zip file, which is then uploaded to a repository manager.
+
+[source,xml]
+----
+include::res/p2-maven-plugin/pom-scm.xml[]
+----
+
+If you are using an artifact manager like Nexus, you can `mvn clean deploy` and the zip file is deployed to it.
+
+
+In order to use this p2 update site inside this zip file you can create a virtual repository on Nexus and use the
+﻿_Tycho/Nexus Unzip Plugin_.
+
+See https://wiki.eclipse.org/Tycho/Nexus_Unzip_Plugin[Tycho/Nexus Unzip] plugin for more information.
+
+See http://projects.reficio.org/p2-maven-plugin for more information on the usage of the p2-maven-plugin.

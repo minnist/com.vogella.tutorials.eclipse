@@ -1,41 +1,32 @@
-<section id="exerise_tychotargetplatform">
-	<title>Exercise: Using a target platform for the build
-	<note>
-		This exercise requires that the target platform definition
-			actually
-			works for development. If you have compile errors after
-			activating the target platform in the Eclipse IDE, it will also not
-			work for the automatic build.
-		
-	</note>
-	
-		Create in a pom file to your
-		<code>com.vogella.build.targetdefinition</code>
-		project.
-	
-	
-		<programlisting language="xml">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/target2/pom.xml" />
-		</programlisting>
-	
-	Add the new project to your aggregator pom file
+[[exerise_tychotargetplatform]]
+== Exercise: Using a target platform for the build
 
+[NOTE]	
+====
+This exercise requires that the target platform definition actually works for development. 
+If you have compile errors after activating the target platform in the Eclipse IDE, it will also not work for the automatic build.
+====
 	
-		<programlisting language="xml">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/target2/aggregatorpom.xml" />
-		</programlisting>
+Create a new project of type _General_ in the _releng_ folder. 
+This project should be  called _com.vogella.build.targetdefinition_.
+Create in a pom file to your <code>com.vogella.build.targetdefinition</code> project.
+	
+[source,xml]
+----
+include::res/target2/pom.xml[]     
+----        
+	
+Add the new project to your aggregator pom file
+
+[source,xml]
+----
+include::res/target2/aggregatorpom.xml[]     
+---- 	
 	
 
-	Finally activate the usage of the target platform. 
+Finally activate the usage of the target platform. 
 
-	
-		<programlisting language="xml">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/target2/parentpom.xml" />
-		</programlisting>
-	
-
-
-</section>
+[source,xml]
+----
+include::res/target2/parentpom.xml[]     
+----    	

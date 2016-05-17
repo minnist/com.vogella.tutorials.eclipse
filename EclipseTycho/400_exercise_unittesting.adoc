@@ -1,81 +1,49 @@
-<section id="exercisetycho_unit" role="wrapper">
-	<title>Exercise: Tycho build for JUnit/Test Plugins
-	<section id="exercisetycho_unit_target">
-		<title>Target of this exercise
-		
-			The following description demonstrates how to run unit tests with. It
-			requires that you finished build the
-			exercise for building plug-ins and features with Tycho before.
-		
-		
-			The tests of the implementation belong into a separate plug-in
-			or
-			fragment project. We decide that our tests
-			should only be able to
-			test API defined by the plug-in therefore we create a plug-in for the
-			unit tests.
-		
-	</section>
+[[exercisetycho_unit]]
+== Exercise: Tycho build for test plug-ins
 
-	<section id="exercisetycho_unit_testproject">
+[[exercisetycho_unit_target]]
+=== Target of this exercise
+		
+The following exercise demonstrates how to run unit tests with Tycho. 
+It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
+		
+The tests of the implementation belong into a separate plug-in or fragment project.
+We decide that our software tests should test the API defined by the plug-in, therefore we create a plug-in for the unit tests.
 
-		<title>Create a JUnit test for the plugin
-		
-			Create a new plug-in project called
-			<wordasword>com.vogella.tycho.unittests</wordasword>
-			.
-		
-		
-			Define a dependency to
-			<wordasword>org.junit;bundle-version="4.11.0"</wordasword>
-			and
-			<wordasword>com.vogella.tycho.plugin1</wordasword>
-			in its
-			<filename>MANIFEST.MF</filename>
-			file.
-		
-		
-			Create the following pom.xml file for
-			<wordasword>com.vogella.tycho.unittests</wordasword>
-			project.
-		
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/pom.xml" />
-			</programlisting>
-		
+[[exercisetycho_unit_testproject]]
 
-	</section>
+=== Create a new plug-in for the tests
+		
+Create a new plug-in project called _com.vogella.tycho.unittests_.
+		
+Define a dependency to `org.junit;bundle-version="4.12.0` and `com.vogella.tycho.plugin1`in its _MANIFEST.MF_ file.
+		
+		
+Create the following pom.xml file for the _com.vogella.tycho.unittests_ project.
+		
+[source,xml]
+----
+include::res/tests/pom.xml[]     
+----      
 
+[[exercisetycho_unit_unittest]]
+=== Create a unit test
 
+Create the following unit test, as an example. 
+Of course this test does not test anything real. 
+It is only used to demonstrate how Tycho runs the tests.
 
-	<section id="exercisetycho_unit_unittest">
-		<title>Create example unit test
-		Create the following unit test, as an example. Of course this
-			test does not test anything real but it can be used
-			to demonstrate
-			how Tycho runs the tests.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/ExampleTest.java" />
-			</programlisting>
-		
-	</section>
-	<section id="exercisetycho_unit_master">
-		<title>Add new project to aggregator project
-		
-			Add your new plug-in to the pom file of
-			<code>com.vogella.tycho.aggregator</code>
-			.
-		
+[source,xml]
+----
+include::res/tests/ExampleTest.java[]     
+----	
 
+[[exercisetycho_unit_master]]		
+=== Add new project to the aggregator project
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tests/aggregatorpom.xml" />
-			</programlisting>
+Add your new plug-in to the releng pom file.
 		
-
-	</section>
-
-</section>
+[source,xml]
+----
+include::res/tests/aggregatorpom.xml[]     
+----    

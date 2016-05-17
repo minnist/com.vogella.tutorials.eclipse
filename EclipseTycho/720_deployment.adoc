@@ -1,0 +1,51 @@
+[[deployment]]
+== Deploy p2 updatesite to Nexus
+
+=== Setup Distribution Management
+
+When a Nexus is installed on localhost,
+the following Distribution Management will likely be used:
+
+
+[source,xml]
+----
+include::res/deploy/distribution-management.xml[]
+----
+    
+=== Credentials for the Nexus repository manager
+
+To define the credentials to login to the Nexus Server you can add an entry for the user credentials to your local `~/m2/settings.xml` file.
+
+[source,xml]
+----
+include::res/deploy/settingsnexus.xml[]
+----
+
+
+The `id` in the setting file must fit to the id of the repository in the Distribution Management. 
+Both are named `nexus` in this example.
+
+=== Only deploy the p2 update site
+
+When using `mvn clean deploy` usually all build artifacts of all modules are deployed to the Nexus.
+In the context of Tycho build, you usually want to deploy only the p2 update site, since its content is used by the target definitions or for application updates.
+
+
+In order to archive this the `deploy` phase can be skipped by using `maven.deploy.skip`	property in the root parent pom.
+
+[source,xml]
+----
+include::res/deploy/skip-deploy-property.xml[]
+----
+
+This property will be derived by all child modules so that they are not deployed unless a child module overrides this property.
+And this is supposed to be done in the p2 update site module.
+
+
+So this property should be false for all p2 update site modules.
+
+[source,xml]
+----
+include::res/deploy/skip-deploy-property-update-site.xml[]
+----
+

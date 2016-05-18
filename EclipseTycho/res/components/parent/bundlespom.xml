@@ -4,10 +4,10 @@
     <artifactId>com.vogella.tycho.bundles</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
+
     <parent>
-        <groupId>com.vogella.tycho.example</groupId>
-        <artifactId>com.vogella.tycho.example.root</artifactId>
+        <groupId>com.vogella.tycho</groupId>
+        <artifactId>com.vogella.tycho.root</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 

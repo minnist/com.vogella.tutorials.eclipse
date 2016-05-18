@@ -1,45 +1,18 @@
 <project>
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.vogella.tycho</groupId>
-		<artifactId>com.vogella.tycho.releng</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
-    
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.vogella.tycho</groupId>
-	<artifactId>com.vogella.tycho.product</artifactId>
-	<packaging>eclipse-repository</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+    <artifactId>com.vogella.tycho.releng</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-p2-repository-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<includeAllDependencies>true</includeAllDependencies>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-p2-director-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<executions>
-					<execution>
-						<id>materialize-products</id>
-						<goals>
-							<goal>materialize-products</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>archive-products</id>
-						<goals>
-							<goal>archive-products</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+    <parent>
+        <groupId>com.vogella.tycho</groupId>
+        <artifactId>com.vogella.tycho.root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>com.vogella.tycho.update</module>
+        <module>com.vogella.tycho.product</module> # <1>
+    </modules>
 </project>

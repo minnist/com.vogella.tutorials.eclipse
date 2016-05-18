@@ -4,24 +4,25 @@
 [[exercise_tychoupdatesite_target]]
 === Target of this exercise
 		
-The following exercise demonstrates how to build Eclipse update sites with Maven Tycho. 
+The following exercise demonstrates how to build Eclipse p2 update sites with Maven Tycho. 
 It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
 		
 [[exercise_updatesite_categorydefinition]]
 === Create a category definition file for the update site
 
-In your _releng_ folder, create a new project of type _General_.
-It should be called _com.vogella.tycho.update_.
+In your _releng_ folder, create a new project of type _General_. called _com.vogella.tycho.update_.
+
+image::img/tycho-updatesite-creation.png[Project creation for update site]
 			
-Select the main folder of this project and select File[New > Other...>Plug-in Development>Category Definition].
+Right-click on this project and select menu:File[New > Other...>Plug-in Development>Category Definition].
 		
 Press the _New Category_ button and create a new category with the "tychoexample" ID and "Tycho example" name.
 
 image::img/tycho_updatesite10.png[Adding a category]
 		
 Press the _Add Feature..._ button and include your feature project into the category.
-		
-image::img/tycho_updatesite20.png[Adding a feature to a category][]
+
+image::img/tycho_updatesite20.png[Adding a feature to a category]
 
 [[exercise_updatesite_updatepom]]
 === Create pom file for the releng folder
@@ -44,7 +45,7 @@ include::res/exercise/updatesite/updatesitepom.xml[]
 ----
 
 [[exercise_updatesite_aggregator]]
-=== Update the root poj
+=== Update the root pom
 		
 Add your new module to your root pom file.
 
@@ -53,15 +54,20 @@ Add your new module to your root pom file.
 include::res/components/parent/rootpomwithupdatesite.xml[]     
 ----
 
+
+<1> Adds the releng pom to the aggregator build
+
 [[exercise_updatesite_aggregatorrun]]
 === Run aggregator build and validate the update site build result
 		
-Select the pom of your aggregator and run the build. 
-It should complete and build all your components including sthe update site.
+Run the build from your main directory. 
+It should complete sucessfully and build all your components including the update site.
 
 Press F5 in the Eclipse IDE on your update site project to refresh it. 
 You find a new _target_ folder in your project which contains a _repository_ folder. 
 This folder contains the update site.
+
+image::img/tycho_updatesite_buildresult.png[Build result]
 		
 Validate that the JAR files in the "repository" have the SNAPSHOT suffix replaced with the build qualifier.
 		

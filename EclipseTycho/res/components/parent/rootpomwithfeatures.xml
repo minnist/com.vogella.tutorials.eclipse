@@ -13,6 +13,6 @@
 
     <modules>
         <module>bundles</module>
-        <module>features</module>
+        <module>features</module> # <1>
     </modules>
 </project>

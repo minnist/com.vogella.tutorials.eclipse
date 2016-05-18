@@ -10,13 +10,16 @@ It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercis
 [[exercisetychoproduct_product]]
 === Creating a plug-in and the product project
 		
-Use the File[New > Other...>Plug-in Development>Plug-in Project] menu entry	and create a plug-in in the _bundles_folder. 
+Use the menu:File[New > Other...>Plug-in Development>Plug-in Project] menu entry and create a plug-in in the _bundles_ folder. 
 Call this plug-in _com.vogella.tycho.rcp_ and use the _Eclipse 4 RCP application_ template.
 		
 image:img/tycho-rcpplugin-creation.png[Eclipse RCP plug-in creation]
 		
-Create a new project of type `General` called _com.vogella.tycho.product_in the _releng_ folder. 
-Drag and drop your .product file from the com.vogella.tycho.rcp file into this new project.
+Create a new project of type `General` called _com.vogella.tycho.product_ in the _releng_ folder. 
+
+image:img/tycho-rcpreleng-creation.png[Eclipse project for the product creation]
+
+Move your .product file from the com.vogella.tycho.rcp file into this new project.
 
 image:img/tycho_productsetup10.png[Tycho product setup]		
 
@@ -30,9 +33,9 @@ image:img/tycho_productid10.png[Entering the product ID in the product configura
 [[exercisetychoproduct_createpomfile]]
 === Create poms
 		
-As you are using pomless build, you do not need to create a pom file for your `com.vogella.tycho.rcp` plug-in.
+You do not need to create a pom file for your `com.vogella.tycho.rcp` plug-in as the default pom is sufficient.
 		
-Pomless builds for products are not yet supported, therefore create a pom file for your product. 
+Default pom for products are not yet supported (see https://bugs.eclipse.org/bugs/show_bug.cgi?id=482487[Bug report]), therefore create a pom file for your product. 
 
 [source,xml]
 ----
@@ -78,13 +81,17 @@ include::res/rcp/startlevel.txt[]
 include::res/rcp/relengpom.xml[]     
 ----    	
 
+<1> Add the project with the product configuration to the build
+
 [[exercise_rcp_updatebundles]]
-=== Update bundles pom
+=== Update bundles pom to include the new rcp plug-in
 
 [source,xml]
 ----
-include::res/exercise/rcp/bundlespom.xml[]     
+include::res/exercise/rcp/bundlespomrcp.xml[]     
 ----        		
+
+<1> Adds the rcp plug-in to the bundles build
 
 [[plugin_aggregatorproduct]]
 === Validate setup

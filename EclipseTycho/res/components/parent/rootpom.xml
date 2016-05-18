@@ -12,6 +12,5 @@
  </parent>
 
  <modules>
-  <module>releng/com.vogella.tycho.configuration</module>
  </modules>
 </project>

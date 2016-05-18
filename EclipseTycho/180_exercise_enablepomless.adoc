@@ -4,24 +4,35 @@
 [[exercisetychoplugin_configuration]]
 === Target of this exercise
 
-In this exercise you define the meta data to use pomless builds with Tycho.
+In this exercise you define the meta data to use pomless builds with Tycho. 
+You also create the directory structure and the Eclipse projects to contain the main and configuration pom.
+
+.Displaying hierarchical projects
+[TIP]
+====
+The _Project Explorer__ view allows to see hierarchical projects. See screenshot for the required setting.
+
+image::img/projectexplorer_hierarchicalview.png[Project Explorer - hierarchical view]
+====
+
 		
 [[exercisetycho_configuration_rootdirectory]]
-=== Create a root project
+=== Create a new folder and create a root project in it
 		
-Create a `tycho-example` project as general project in the workspace. 
-This root project will contain all your Eclipse components and Maven configuration files.
+Select or create a new directory for this tutorial. 
+In this directory, create a new project called _com.vogella.tycho_ via the menu:File[New > Other...>General> Project] menu entry.
 
 image::img/new_general_project_tycho.png[Create new project of type general]
+
+image::img/new_general_project_tycho2.png[Create new project of type general - Part 2]
 		
-		
-This root project is supposed to contain all Eclipse components, which are created in the follow up exercises.
+This root project is supposed to contain all Eclipse components and the main pom file.
 		
 [[exercisetycho_configuration_pomless]]
 
 === Enable pomless Tycho build
 		
-Create in the root project a _.mvn/extensions.xml_ descriptor. 
+Create in the main directory (in the _com.vogella.tycho_ project) a _.mvn/extensions.xml_ descriptor. 
 The content of the _.mvn/extensions.xml_ must look like the following to enable pomless builds.
 
 
@@ -34,9 +45,11 @@ include::res/polyglot/pomlesstycho-extensions.xml[]
 
 === Create pom for the build configuration
 		
-Create a new folder called `releng`	in the root project. 
-In this folder create a new Eclipse project of type `General` called _com.vogella.tycho.configuration_.
+Create a new folder called `releng`	in the main directory. 
+In this folder create a new project of type `General` called _com.vogella.tycho.configuration_.
 		
+image::img/new_general_project_configuration_tycho.png[Create new project for the Tycho configuration]
+
 Create the following _pom.xml_ file in this project.
 
 [source,xml,subs="specialchars,attributes"]
@@ -56,6 +69,11 @@ include::res/components/parent/rootpom.xml[]
 
 [[exercisetycho_configuration_validate]]
 === Validate build setup
-		
+
+The created directory structure should look like the following.
+
+image::img/tychodirectory_buildsetup.png[Directory after first build setup]
+
+
 Run the build via `mvn clean verify`, this build should be successful. 
 No build artifact is created.

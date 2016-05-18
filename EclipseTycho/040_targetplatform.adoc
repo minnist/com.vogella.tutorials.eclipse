@@ -1,5 +1,31 @@
-[[tychotargetplatform]]
-== Tycho and the usage of a target platform
+[[tychodependencies]]
+== Defining the repository to find Eclipse dependencies for the build
+
+=== Defining build dependencies
+
+You need to define where Tycho can find the dependencies of your Eclipse components. 
+By default, all components included in the build are available to resolve dependencies.
+For the remaining dependencies, you must configure Tycho where to search for them. 
+This can be defined via a p2 repository or via a target platform definition.
+
+
+=== Using p2 update sites for dependencies resolution
+
+        
+[source,xml]
+----
+ <repositories>
+    <repository>
+      <id>eclipse-mars</id>
+      <url>http://download.eclipse.org/releases/mars</url>
+      <layout>p2</layout>
+    </repository>
+  </repositories>
+----
+        
+Alternative to p2 update sites you can also use a target definition file. 
+
+=== Using target definition file for dependencies resolution
 
 Tycho uses a target platform to find dependencies.
 If you specify a p2 update site as target, the whole content of all defined p2 repositories becomes part of the target platform. 

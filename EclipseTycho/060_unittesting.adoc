@@ -66,34 +66,34 @@ If you define a dependency you include also their transitive dependencies, to th
 [source,xml]
 ----
 <project>
-	<modelVersion>4.0.0</modelVersion>
+ <modelVersion>4.0.0</modelVersion>
 
-	<!--parent pom... -->
+ <!--parent pom... -->
 
-	<artifactId>com.vogella.tycho.unittests</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>eclipse-test-plugin</packaging>
+ <artifactId>com.vogella.tycho.unittests</artifactId>
+ <version>1.0.0-SNAPSHOT</version>
+ <packaging>eclipse-test-plugin</packaging>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-surefire-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<configuration>
-					<useUIHarness>true</useUIHarness>
-					<dependencies>
-						<dependency>
-							<type>eclipse-feature</type>
-							<artifactId>com.vogelal.feature1</artifactId>
-							<!-- This is the minimum required version -->
-							<version>1.0.0</version>
-						</dependency>
-					</dependencies>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.eclipse.tycho</groupId>
+    <artifactId>tycho-surefire-plugin</artifactId>
+    <version>${tycho-version}</version>
+    <configuration>
+     <useUIHarness>true</useUIHarness>
+     <dependencies>
+      <dependency>
+       <type>eclipse-feature</type>
+       <artifactId>com.vogelal.feature1</artifactId>
+       <!-- This is the minimum required version -->
+       <version>1.0.0</version>
+      </dependency>
+     </dependencies>
+    </configuration>
+   </plugin>
+  </plugins>
+ </build>
 
 
 </project>
@@ -160,7 +160,7 @@ This requires setting the `TestSuite` to the Bundle-Symbolic-Name of the plug-in
 ----
 
 [[tycho_unittesting_javaversion]]
-=== Specifying the Java version
+=== Using the correct JRE for the test execution
 
 		
 The JDT compiler can be configured to use the compiler source/target level according to MANIFEST.MF settings. 

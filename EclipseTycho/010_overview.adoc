@@ -6,39 +6,127 @@
 
 _Tycho_ is a set of Maven plug-ins for building Eclipse components via the Maven build system. 
 Tycho supports the build process of Eclipse plug-ins, OSGi bundles, Eclipse features and update sites (based on p2) and products.
-Combined with a continuous integration server, for example a Jenkins instance, Tycho allows a continuous integration build. 
+Combined with a continuous integration server, e.g., a Jenkins instance, Tycho allows a continuous integration build. 
 Tycho uses the Eclipse components metadata as much as possible. 
-For example, for plug-ins it determines the dependencies via the _MANIFEST.MF_ file.
+For example, Tycho  determines the dependencies of a plug-in via the _MANIFEST.MF_ file of the plug-in.
 		
 		
-The main Tycho functionality is the `tycho-maven-plugin` plug-in.
-This plug-ins supports building Eclipse components. 
+The main Tycho functionality is provided by the `tycho-maven-plugin` plug-in. 
+This is a plug-in for Maven which supports building Eclipse components. 
 It also enables Maven to understand package types such as eclipse-plugin, eclipse-feature and eclipse-repository.
 		
-To use the Tycho plug-ins you only have to install the Maven build tool. 
-The Tycho plug-ins are configured in the pom file and are automatically downloaded and installed by Maven.
+If you add this plug-in to your Maven build file, the Maven build system downloads Tycho and uses it for building Eclipse components.
 		
 
-[[maventycho_dependencymanagement]]
+[[maventycho_pom]]
+=== Configuring the pom files for a Tycho build
+        
+A Tycho build is configured via the standard Maven configuration files typically called _pom.xml_ or _pom_ files.
 
-=== Defining dependencies for the build
+For a Tycho build, 
+you typically have one pom file for the main configuration (_configuration pom_) and another one which includes the Eclipse components (modules) relevant for the build (_main pom_).
 
-In your parent pom you can define where Tycho should search for plug-in dependencies of your Eclipse components.
-This can be defined via a p2 repository.
-		
+Every Eclipse component can have its individual pom file but Tycho allows also to generate default pom files based on the existing metadata of the compoments. 
+This is based on the Maven polyglot functionality introduced with Maven 3.3.1. 
+If the generated defaults, are not sufficient for an Eclipse component you can always define a specialized pom file for the component. 
+        
+[[maventycho_pomless]]
+=== Enable the generation of default pom files for Eclipse components
+        
+To enable the automatic determination of build information for your Eclipse components, add a _.mvn/extensions.xml_ descriptor to the root of your directory. 
+This requires at least Apache Maven 3.3 and Maven Tycho 0.24.0.
+        
+The contents of the _.mvn/extensions.xml_ must look like this:
+
+
+[source,xml,subs="specialchars,attributes"]
+----    
+include::res/polyglot/pomlesstycho-extensions.xml[]
+----
+
+The following rules are used for the automatic pom generation. 
+First of all `.qualifier` from the Eclipse components is automatically mapped to `-SNAPSHOT` for the Maven build.
+        
+.Table Pom Properties Mapping
+|===
+|Property |Mapping
+
+|packaging, 
+|eclipse-plugin if MANIFEST.MF is found
+
+eclipse-feature if feature.xml is found
+
+eclipse-test-plugin if Bundle-SymbolicName ends with 
+.tests
+
+|groupId
+|same as in the parent pom
+
+|arifactId
+|eclipse-plugin: Bundle-SymbolicName from MANIFEST.MF
+                                
+eclipse-feature: feature id from feature.xml
+
+|version
+|Bundle-Version from MANIFEST.MF or
+
+Feature version from feature.xml
+|===
+        
+
+[[maventycho_pomcomponent]]
+=== Defining a specialized pom file for an Eclipse component
+ 
+If you define a pom file for an Eclipse component, you need to specify the _packaging_ attribute in the pom file.
+This attribute defines what kind of Eclipse component you are building.
+For example, a plug-in must set this attribute to `eclipse-plugin`. 
+
+.Table Package attributes for Eclipse components
+|===
+|Package Attribute |Description
+
+|eclipse-plugin
+|Used for Plug-ins
+
+|eclipse-feature
+|Used for features
+
+|eclipse-repository
+|Used for p2 update sites and Eclipse products
+|===
+        
+In addition to packaging attribute, the pom of an Eclipse component must also specify the name and the version of the component.
+The artifact ID and version in the pom file must match the `Bundle-Symbolic-Name` and the  `Bundle-Version` from the _MANIFEST.MF_ file. 
+Eclipse components typical use `qualifier` as a suffix in the `Bundle-Version` to indicate that this should be replaced by the build system with a build qualifier.
+Maven uses "SNAPSHOT" for this, but Tycho maps these values correctly. Each `module` has again a `pom.xml` configuration file which defines attributes specifically to the corresponding Eclipse component, e.g., the package attribute. 
+
+It must also contain a link to the main or the configuration pom so that the build can determine the configuration.
+
+The following listing contains an example pom file for a plug-in.
+        
 [source,xml]
 ----
- <repositories>
-    <repository>
-      <id>eclipse-mars</id>
-      <url>http://download.eclipse.org/releases/mars</url>
-      <layout>p2</layout>
-    </repository>
-  </repositories>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Link to the parent pom -->
+    <parent>
+        <artifactId>com.example.todo.build.parent</artifactId>
+        <groupId>com.example.e4.rcp</groupId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath>../com.example.todo.build.parent</relativePath>
+    </parent>
+
+    <groupId>com.example.e4.rcp</groupId>
+    <artifactId>com.example.e4.bundleresourceloader</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>eclipse-plugin</packaging>
+</project>
 ----
-		
-It is also possible to use a target definition file. 
-See <<tychotargetplatform>> <<exerise_tychotargetplatform>> for more information.
+
+
+[[maventycho_dependencymanagement]]
 
 		
 [[maventycho_typicalconfiguration]]

@@ -10,7 +10,7 @@ You also create the directory structure and the Eclipse projects to contain the 
 .Displaying hierarchical projects
 [TIP]
 ====
-The _Project Explorer__ view allows to see hierarchical projects. See screenshot for the required setting.
+The _Project Explorer_ view allows to see hierarchical projects. See screenshot for the required setting.
 
 image::img/projectexplorer_hierarchicalview.png[Project Explorer - hierarchical view]
 ====

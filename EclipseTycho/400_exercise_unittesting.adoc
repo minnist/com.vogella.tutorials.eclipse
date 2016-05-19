@@ -15,16 +15,14 @@ We decide that our software tests should test the API defined by the plug-in, th
 === Create a new plug-in for the tests
 		
 Create a new plug-in project called _com.vogella.tycho.unittests_.
+
+image::img/tycho-unittest-creation.png[Test plug-in creation for Tycho]
 		
 Define a dependency to `org.junit;bundle-version="4.12.0` and `com.vogella.tycho.plugin1`in its _MANIFEST.MF_ file.
 		
+image::img/tycho-unittest-dependencies.png[Unit test dependencies]
 		
-Create the following pom.xml file for the _com.vogella.tycho.unittests_ project.
-		
-[source,xml]
-----
-include::res/tests/pom.xml[]     
-----      
+The default are sufficient for this test plug-in, hence we need no separate pom for the test plug-in.
 
 [[exercisetycho_unit_unittest]]
 === Create a unit test
@@ -39,11 +37,20 @@ include::res/tests/ExampleTest.java[]
 ----	
 
 [[exercisetycho_unit_master]]		
-=== Add new project to the aggregator project
+=== Add new project to the bundles pom
 		
-Add your new plug-in to the releng pom file.
+Add your new plug-in to the bundles pom file.
 		
 [source,xml]
 ----
 include::res/tests/aggregatorpom.xml[]     
 ----    
+
+[[plugin_featurerun]]
+=== Run the build with the tests
+        
+Run the build from the main directory. This should work fine.
+
+If you want to skip the test execution use `mvn clean verify -DskipTests=true`
+
+

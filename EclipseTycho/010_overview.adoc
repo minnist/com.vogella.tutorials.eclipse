@@ -86,13 +86,20 @@ For example, a plug-in must set this attribute to `eclipse-plugin`.
 |Package Attribute |Description
 
 |eclipse-plugin
-|Used for Plug-ins
+|Used for plug-ins
+
+|eclipse-test-plugin
+|Used for test plug-ins or fragments
 
 |eclipse-feature
 |Used for features
 
 |eclipse-repository
 |Used for p2 update sites and Eclipse products
+
+|eclipse-target-definition
+|Target definition used for the Tycho build
+
 |===
         
 In addition to packaging attribute, the pom of an Eclipse component must also specify the name and the version of the component.

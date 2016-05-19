@@ -165,4 +165,12 @@ To sign the plug-ins add the configuration for the `maven-jarsigner-plugin`
 include::res/signing/pom-addon.txt[]
 ----
 
+[[tycho_buildingnativecomponents]]
+=== Building native components
+
+Building native components, for example based on C or C++ code, is typically done via antrunner calling the native build system like make.
+
+See the following commit for an example:
+
+http://git.eclipse.org/c/cdt/org.eclipse.cdt.git/commit/?id=dff6b3bae3ddb27df5433ce7ff3ebb2f4c90de6d
 

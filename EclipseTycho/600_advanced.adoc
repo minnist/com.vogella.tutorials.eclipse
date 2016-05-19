@@ -137,3 +137,32 @@ This results in better performance, since those features are not necessary for u
 ====                
         
 More information about versioning with Tycho can be found in the https://eclipse.org/tycho/sitedocs/tycho-release/tycho-versions-plugin/plugin-info.html[Tycho version wiki].
+
+
+[[tycho_signing]]
+=== Signing plug-ins
+
+If the user installs plug-ins which are not signed, the user received a warning that the plug-in is not signed.
+    
+The Tycho build system allows to sign plug-ins and executables.
+You can purchase a certificate from a certification authority or create your own signature and use this for signing. 
+If you use a custom generated certificate the user receives a warning that the certificate is not official.
+    
+For testing a self-generated certificate is sufficient. 
+You can generate such a certificate on the command line with the `keytool` from the Java Development Kit. 
+This requires that the corresponding directory is in your current execution path.
+    
+[source,shell]
+----
+include::res/signing/create.txt[]
+----
+
+
+To sign the plug-ins add the configuration for the `maven-jarsigner-plugin`
+
+[source,xml]
+----
+include::res/signing/pom-addon.txt[]
+----
+
+

@@ -14,7 +14,6 @@ include::008_prereqs.adoc[]
 include::010_overview.adoc[]
 include::040_targetplatform.adoc[]
 include::060_unittesting.adoc[]
-include::080_signingplugins.adoc[]
 
 // Exercises // 
 include::180_exercise_enablepomless.adoc[]

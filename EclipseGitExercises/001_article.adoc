@@ -10,7 +10,12 @@ Version 0.1, 23.05.2016
 This tutorial contains notes about EclipseGitExercises.
 				
 include::400_exercise_userconfiguration.adoc[]
-include::440_clonerepo.adoc[]
+include::440_exercise_clonerepo.adoc[]
+include::460_exercise_developafeature.adoc[]
+
+// include::480_work-on-branches-in-parallel.adoc[]
+include::500_merge-rebase-and-resolving-conflicts.adoc[]
+include::520_exercise_rebase.adoc[]
 include::008_resourceslocal.adoc[]
 
 

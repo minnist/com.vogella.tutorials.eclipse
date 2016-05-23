@@ -52,7 +52,7 @@ image:img/sample-application.png[Sample application for Git exercise]
         
 [[git_repositories_view]]    		
 	
-== Analyze the Git repository      
+=== Analyze the Git repository      
 
 To get an overview of the history of your Git repository, right-click on one of the example projects and select the menu:Show in[Git Repositories] entry from the context menu.
 This opens the _Git repository_ view.

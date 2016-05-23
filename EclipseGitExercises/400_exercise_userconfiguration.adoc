@@ -16,7 +16,7 @@ Repeat the procedure for your email address via the  `user.email` key.
 image:img/egitconfig10.png[Configuration of EGit]
 
 [[egitconfiguration_autorebase]]
-== Configure Git to rebase during pull operations
+=== Configure Git to rebase during pull operations
 
 Unless you have a different opinion about rebase and merge commits, also set the `branch.autosetuprebase` parameter to `always`.
 This is common setting for Git repositories.  

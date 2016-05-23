@@ -1,33 +1,17 @@
-<section id="_history_view">
-	<title>History View
-	<section id="_preparation3">
-		<title>Preparation
-		<simpara>
-			Open the History View on your project by right-clicking on your
-			project and selecting
-			<emphasis>Show In &gt; History</emphasis>
-			. You should see the revision
-			graph of your repository.
-		</simpara>
-	</section>
+[[history_view]]
+== Using the History View
 
-	<section id="_exercises">
-		<title>Use filters and search
-		<simpara>
-			With the help of filters and search find out &#8230;
-			* &#8230; which commits have been done to package
-			<emphasis>org.eclipse.example.calc.internal</emphasis>
-			* &#8230; who has done commit
-			<emphasis>92f83b4af8ef307e&#8230;</emphasis>
-			and which files have
-			been touched in this commit
-			* &#8230; how many branches are known which have commits changing
-			<emphasis>Calculator.java</emphasis>
-		</simpara>
-	</section>
-	<section id="_actions_on_commits">
-		<title>Actions on Commits
-		<simpara>
+[[history_view_filters]]
+=== Use filters and search
+		
+Ensure you have the  History View open.
+
+With the help of filters and search find out which commits have been done to package `org.eclipse.example.calc.internal`. 
+Select a commit and find out who has done this commit which files have been touched in this commit.
+Find out how many branches are known which have commits changing `Calculator.java`.
+		
+[[_actions_on_commits]]
+=== Actions on Commits
 			If you double-click on a file touched by a commit in the History View
 			you will get an editor with the content of that file in that commit.
 			If you turn on

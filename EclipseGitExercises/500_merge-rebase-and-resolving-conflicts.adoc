@@ -1,0 +1,131 @@
+[[_merge_rebase_and_resolving_conflictsmerge_rebase_and_resolving_conflicts]]
+== Merge, Rebase and resolving conflicts
+
+[[merge_rebase_and_resolving_conflicts_preparation2]]
+=== Target
+In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.
+
+[[create_a_conflicting_commit]]
+=== Create a conflicting commit
+
+You may skip this step if you have already created conflicting changes in the previous exercises. 
+This is the case if you touched exactly the same line of the same file in different feature branches. 
+If this is not the case please do the following:
+		
+Create a new local branch based on the remote tracking branch `origin/master`.
+
+Do a different change in the same class on the same line as in the other branch (e.g. you may add a class
+			<emphasis>Multiply</emphasis>
+			and add a
+			corresponding line to method
+			<emphasis>setupDefaultOperations</emphasis>
+			in the
+			<emphasis>Calculator</emphasis>
+			class) and commit this change.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/history-view-4.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>History View</phrase>
+				</textobject>
+			</inlinemediaobject>
+			
+			
+[[_merge_the_feature_branches]]
+=== Trigger the first merge from the history view
+		
+Now you would like to have both new features in the master branch.
+One possibility to achieve that is to merge the branches into the master branch, one after the other. 
+Later in this exercise you will use the other option, the _rebase_operation..
+		
+Ensure that you have checked out the  `master` branch where you want to have the merged state, i.e. where the merge commit will be
+created.
+				
+				
+In the History View, select _Merge_ from in the context menu of the `addDivideOperation` branch. 
+This merges the content of the`addDivdeOperation` branch into the `master` branch. 
+Since there was no work done on the `master` branch and `addDivideOperation` points to a successor commit of the commit in
+master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
+Inspect this in the History View.
+				
+image:img/merge.png[Merge result]
+				
+image:img/fast-forward-merge.png[Fast Forward Merge]
+					</inlinemediaobject>
+
+[[_trigger_the_second_merge]]
+=== Trigger the second merge
+				
+In the History View, select _Merge_	in the context menu of the branch which contains the conflicting commit. 
+This merges the	content of this branch into the `master` branch. 
+This time the merge operation should  end with a conflicts.
+
+image:img/merge-2.png[Trigger Merge conflict]		
+
+image:img/merge-with-conflicts.png[Merge conflict]	
+				
+				
+[[resolve-conflicts]]
+=== Resolving merge conflicts
+
+If a merge generates conflicts the repository is in a special state. 
+The conflicts have to be resolved until normal work can go on.
+		
+You can find the conflicting files by the conflict decorator in the package explorer:
+		
+image:img/conflict-markers.png[Conflict Markers]	
+		
+If there are many conflicts it may be easier to find them in the Git Staging View:
+
+image:img/conflicts-in-staging-view.png[Conflicts in Staging View]	
+	
+				
+If you open the conflicting file in an editor you will find the conflict markers there. 
+You can directly edit the file here.
+				
+image:img/conflict-markers-2.png[Conflict Markers]
+			
+				
+You may use the Merge tool to resolve the conflicts:
+				
+				
+Select menu:Team[Merge Tool].
+You see a dialog where you can configure the initial state of the left hand side of the editor.
+Which one you choose depends on your preference.
+In the first case you’ll already get the state which was merged by Git. 
+In the second case you get the version before the merge operation.
+The first option is useful, if Git could already merge most of the changes automatically and only a small number of conflicts is left.
+With the second option you get a better overview of the changes in both branches.
+
+image:img/merge-mode.png[Merge Mode]
+
+image:img/merge-tool.png[Merge Tool Usage]					
+				
+Edit the left side until you are happy with the change and save.
+				
+image:img/merge-tool-resolved-conflict.png[Merge Tool with resolved conflict]	
+
+Use the _Git Staging_ view to stage the files  which had conflicts. 
+When you have done it for all such files the repository state changes from _Conflicts_ to _Merged_. 
+Press the _Commit_ button in the _Git Staging_ view. 
+Note that there is already a commit message proposed by Git. Leave it as it is.
+				
+[[_undo_merging_with_reset]]
+=== Undo the merge with with the git reset operation
+		
+After you have done a merge as described above assume that you do not want the merge commit in your branch anymore.
+You can easily undo the merge with the reset operation. 
+he same can also be done if the merge is not finished but your repository is in state `Conflicting` or `Merged`.
+		
+To undo the merge, select menu:Reset[Hard] on the commit where the branch pointed to before you did the second merge.
+				
+image:img/reset.png[Reset]
+		
+In case you do that when you have an unfinished merge the screenshot looks like this:
+
+image:img/reset-2.png[Reset]	
+				
+				

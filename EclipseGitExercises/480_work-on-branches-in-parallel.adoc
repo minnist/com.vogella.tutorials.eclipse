@@ -1,36 +1,18 @@
-<section id="_work_on_branches_in_parallel">
-	<title>Work on branches in parallel
+[[_work_on_branches_in_parallel]]
+== Work on branches in parallel
 	
-		In this exercise you will learn how to change commits using
-		the
-		<code>amend</code>
-		option of Git for commits.
-		This is for example useful if you work in different
-		branches in parallel and you want to
-		temporarily save your work. You
-		will commit an unfinished change and later on replace this commit with
-		a new, refined
-		commit using the
-		<parameter>amend</parameter>
-		option of
-		Git.
-	
-	<section id="_start_working_on_another_feature">
-		<title>Start working on another feature
+In this exercise you learn how to change commits using the `amend` option of Git for commits.
+This is for example useful if you work in different branches in parallel and you want to temporarily save your work. 
+You can commit an unfinished change and later on replace this commit with a new, refined commit using the `amend` option of Git.
+
+[[start_working_on_another_feature]]
+=== Start working on another feature
 		
-			Create a new local branch based on the remote tracking branch
-			<emphasis>origin/master</emphasis>
-			. You can do this as described in
-			<xref linkend="egitexercise_create_a_local_feature_branch" />
-			or you can use the
-			<guilabel>History</guilabel>
-			view as describe in this chapter.
+Create a new local branch based on the remote tracking branch `origin/master`. 
+You can do this as described in <<egitexercise_create_a_local_feature_branch>> or you can use the _History_	view as described in this chapter.
 		
 		
-			To create a branch from the
-			<guilabel>History</guilabel>
-			view
-			select the project, then click
+To create a branch from the _History_ view select the project, then click
 			<emphasis>Show In &gt; History</emphasis>
 			(Some views, e.g., in the Java EE-Perspective, do not have this
 			shortcut, in this case use
@@ -93,85 +75,32 @@
 			</inlinemediaobject>
 		
 	</section>
-	<section id="_switch_branches">
-		<title>Switch branches
-		Now you want to switch to another branch but you want to
-			continue
-			working at your new feature later on. The
-			easiest thing to do is to
-			just commit your work in progress and change that commit later on.
-		
-		<itemizedlist>
-			<listitem>
-				
-					Select your project in the Package Explorer and select
-					<emphasis>Team &gt; Commit</emphasis>
-					or click
-					<emphasis>Commit</emphasis>
-					in the Git Toolbar
-				
-			</listitem>
-			<listitem>
-				
-					In the commit dialog enter a preliminary message, e.g.
-					"[Unfinished] Add multiply operation", select the files to be
-					committed and click on
-					<emphasis>Commit</emphasis>
+[[_switch_branches]]
+=== Switch branches
+
+Now you want to switch to another branch but you want to continue working at your new feature later on. 
+The easiest thing to do is to just commit your work in progress and change that commit later on.
+Use the _Git Staging_ view to enter a preliminary message, e.g. "[Unfinished] Add multiply operation", stage the files and click on _Commit_ button.
 				
 				
-					<inlinemediaobject>
-						<imageobject>
-							<imagedata fileref="./images/commit-changes.png"/>
-						</imageobject>
-						<textobject>
-							<phrase>Commit Changes</phrase>
-						</textobject>
-					</inlinemediaobject>
+Now you can switch to the first feature branch "addDivideOperation". 
+This can be done by double clicking on the branch node in the Git Repositories View via the context menu by selecting menu:Team[Switch To addDivideOperation].
+Alternatively you can also select the _Checkout_ entry from the context menu on the "addDivideOperation" branch in the History View.
 				
-			</listitem>
-			<listitem>
 				
-					Now you can switch to the first feature branch
-					"addDivideOperation",
-					either by double clicking on the branch node in
-					the Git Repositories
-					View, by selecting
-					<emphasis>Team &gt; Switch To &gt; addDivideOperation</emphasis>
-					or by
-					selecting
-					<emphasis>Checkout</emphasis>
-					from the context menu on the
-					"addDivideOperation" branch in the History View.
+Check that your workspace contains the changes you committed in your first feature (implementing divide) branch. 
+You could now continue working here. 
+For example: you may want to fix the division by zero issue if it is not already handled. 
+If you do any changes in the "addDivideOperation" branch don’t forget to commit them with amend before the next step
 				
-			</listitem>
-			<listitem>
 				
-					Check that your workspace contains the changes you committed in your
-					first feature (implementing divide)
-					branch. You could now continue
-					working here. For example: you may want to fix the division by zero
-					issue if it is not
-					already handled. If you do any changes in the
-					"addDivideOperation" branch don’t forget to commit them with amend
-					before the next step
+Switch back to the "addMultiplyOperation" branch
+
+[[_continue_working_on_the_branch_adding_multiply]]
+=== Continue working on the branch adding Multiply
 				
-			</listitem>
-			<listitem>
+Do another change in the workspace improving Multiply.
 				
-					Switch back to the "addMultiplyOperation" branch
-				
-			</listitem>
-		</itemizedlist>
-	</section>
-	<section id="_continue_working_on_the_branch_adding_multiply">
-		<title>Continue working on the branch adding Multiply
-		<itemizedlist>
-			<listitem>
-				
-					Do another change in the workspace improving Multiply.
-				
-			</listitem>
-			<listitem>
 				
 					Compare your changed project with the first, preliminary commit by
 					selecting
@@ -179,8 +108,6 @@
 					. This will show you the
 					changes you will add on top of the first commit.
 				
-			</listitem>
-			<listitem>
 				
 					Compare your changed project with the parent commit of your first,
 					preliminary commit by selecting
@@ -189,14 +116,10 @@
 					This will show you the changes you will have in your new commit after
 					the next step.
 				
-			</listitem>
-			<listitem>
 				
 					Create a new commit with the combined changes of your first,
 					preliminary commit and your current changes
 				
-				<itemizedlist>
-					<listitem>
 						
 							Select your project in the Package Explorer and select
 							<emphasis>Team &gt; Commit</emphasis>
@@ -204,8 +127,6 @@
 							<emphasis>Commit</emphasis>
 							in the Git Toolbar.
 						
-					</listitem>
-					<listitem>
 						
 							Press the
 							<emphasis>Amend</emphasis>

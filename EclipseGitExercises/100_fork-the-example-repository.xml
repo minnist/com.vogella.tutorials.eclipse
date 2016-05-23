@@ -1,0 +1,92 @@
+<section id="fork_the_example_repository_on_github">
+	<title>Create Github user and fork repository
+	<section>
+		<title>Target of this exercise
+		In the following exercises you work with remote repositories.
+			First you learn how to work with a
+			repository where
+			only you have
+			write access. Such a repository can easily be created at Github.
+		
+		In Github there are two ways to get a repository.
+		<itemizedlist>
+			<listitem>
+				
+					Create a new one and push the initial content from a local repository
+				
+			</listitem>
+			<listitem>
+				
+					Create a copy of an existing repository hosted at Github. In Github, this is called
+					<wordasword>Forking</wordasword>
+					of creating a
+					<wordasword>fork</wordasword>
+					.
+				
+			</listitem>
+		</itemizedlist>
+		
+			As we have already worked with a local clone of a Github repository, this exercise uses the second approach.
+		
+	</section>
+	<section id="Sign_up_at_github">
+		<title>Sign up at Github
+		
+			Before you can fork a repository at Github, you need to have a account. In case you do not have already a Github
+			user,
+			open
+			<ulink url="http://www.github.com">http://www.github.com</ulink>
+			in a browser. Enter a username, an e-mail adress and a password.
+			The e-mail address should match the address you used
+			for the git setup; Github uses the e-mail
+			address to identify the author of a commit.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/githubstart.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Sign up at Github</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_fork_the_repository">
+		<title>Fork the Repository
+		Once you have signed up you can read about forking by pressing the fork button.
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/fork_button.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Fork Help</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		In order to fork a repository you have to look it up in github.
+		
+			You could search for repo, or in our example access it directly by entering the URL:
+			<informalexample>
+				<literallayout>https://github.com/vogellacompany/gittraining-sample</literallayout>
+			</informalexample>
+		
+		
+			Now you can create your own fork by pressing the
+			<emphasis>Fork</emphasis>
+			button:
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/fork-button2.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Fork Button</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		You have now created your own copy of the training repository on Github.
+	</section>
+</section>

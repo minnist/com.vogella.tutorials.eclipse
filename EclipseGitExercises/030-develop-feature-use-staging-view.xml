@@ -1,0 +1,235 @@
+
+<section id="_develop_another_feature_and_use_staging_view">
+	<title>Develop another feature using the Staging View
+	<section id="_create_another_local_feature_branch_and_check_it_out_target">
+		<title>Target of this exercise
+		
+			In this exercise you learn how work on multiple features in
+			parallel. You will
+			also get used to the
+			<guilabel>Git Staging</guilabel>
+			view.
+		
+	</section>
+	<section id="_create_another_local_feature_branch_and_check_it_out">
+		<title>Create another local Feature Branch and check it out
+		
+			When you develop features/bug-fixes in parallel make sure you
+			develop them in
+			different branches. Make sure to set the
+			starting point of these branches
+			correctly. Right-click on your Project and select
+			<menuchoice>
+				<guimenu>Team</guimenu>
+				<guisubmenu>Switch to</guisubmenu>
+				<guisubmenu>New branch</guisubmenu>
+			</menuchoice>
+			. Select as
+			<emphasis>Source ref</emphasis>
+			the remote tracking branch
+			<emphasis>refs/remotes/origin/master</emphasis>
+			and type into
+			<emphasis>Branch name</emphasis>
+			the name of the new
+			branch
+			<emphasis>addPowerOperation</emphasis>
+			. Check
+			<emphasis>Checkout new branch</emphasis>
+			and press
+			<emphasis>Finish</emphasis>
+			.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/create-branch-2.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Create branch</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			This creates and checkouts a new branch which starts where the remote
+			tracking branch
+			<emphasis>refs/remotes/origin/master</emphasis>
+			points to.
+		
+	</section>
+	<section id="_develop_the_new_feature">
+		<title>Develop the new feature
+		
+			Develop a
+			<emphasis>Power</emphasis>
+			class similar to the
+			<emphasis>Plus</emphasis>
+			class in the package
+			<emphasis>org.eclipse.example.calc.internal.operations</emphasis>
+			in project
+			<emphasis>org.eclipse.example.calc</emphasis>
+			. Don&#8217;t forget to register the new class in the
+			<emphasis>Calculator.setupDefaultOperations()</emphasis>
+			.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/power-class.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Power Class</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/register-power.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Register Power</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_do_a_modification_you_don_8217_t_want_to_commit">
+		<title>Do a modification you don&#8217;t want to commit
+		
+			Sometimes you want to locally change a file but don&#8217;t want
+			this modification to
+			be included in the next commit.
+			E.g. certain project modifications are
+			important to you but others shouldn&#8217;t see them. To simulate
+			this
+			right-click on
+			your project and select
+			<emphasis>Properties &gt; FindBugs</emphasis>
+			and select the button
+			<emphasis>Run
+				automatically
+			</emphasis>
+			(only available if FindBugs is installed in your Eclipse).
+		
+	</section>
+	<section id="_open_the_git_staging_view_and_inspect_the_status">
+		<title>Open the Git Staging view and inspect the status
+		
+			Open the staging view by selecting
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other…</guisubmenu>
+				<guisubmenu>Git Staging</guisubmenu>
+			</menuchoice>
+			.
+			This view presents which files you have touched and which files will be
+			in the
+			next commit.
+			<emphasis>Unstaged Changes</emphasis>
+			lists those changes which you have done locally
+			but which you have not yet added to the index.
+			<emphasis>Staged Changes</emphasis>
+			list those
+			changes which you already have added to the index. You can drag and drop
+			files
+			from one area to the other.
+		
+		
+			Git Staging view should list three files
+			<emphasis>.project</emphasis>
+			,
+			<emphasis>Calculator.java</emphasis>
+			and
+			<emphasis>Power.java</emphasis>
+			(
+			<emphasis>.project</emphasis>
+			appears only if you have configured FindBugs
+			to run automatically).
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/staging-view.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Staging view</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			Double-click on
+			<emphasis>.project</emphasis>
+			to inspect which changes you have done. This opens the
+			<guilabel>Compare</guilabel>
+			editor for this file.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/staging-view-2.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Staging view</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			Drag and drop
+			<emphasis>Calculator.java</emphasis>
+			and
+			<emphasis>Power.java</emphasis>
+			to the
+			<emphasis>Staged Changes</emphasis>
+			area
+			to mark that they should be included in the next commit.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/staging-view-3.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Staging view</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_commit_your_change">
+		<title>Commit your change
+		
+			In
+			<guilabel>Git Staging</guilabel>
+			view enter a commit message in the
+			<emphasis>Commit message</emphasis>
+			field and
+			click on the
+			<guibutton>Commit</guibutton>
+			button.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/staging-view-4.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Staging view</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_cleanup">
+		<title>Cleanup
+		
+			After inspecting your change to
+			<emphasis>.project</emphasis>
+			you decide that you don&#8217;t want this
+			change anymore. Revert your change by right-clicking on the
+			<emphasis>.project</emphasis>
+			file in
+			<emphasis>Git Staging View</emphasis>
+			and select
+			<emphasis>Replace with File in Git Index</emphasis>
+			.
+		
+	</section>
+</section>

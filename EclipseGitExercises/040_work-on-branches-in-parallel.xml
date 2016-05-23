@@ -1,0 +1,308 @@
+<section id="_work_on_branches_in_parallel">
+	<title>Work on branches in parallel
+	
+		In this exercise you will learn how to change commits using
+		the
+		<code>amend</code>
+		option of Git for commits.
+		This is for example useful if you work in different
+		branches in parallel and you want to
+		temporarily save your work. You
+		will commit an unfinished change and later on replace this commit with
+		a new, refined
+		commit using the
+		<parameter>amend</parameter>
+		option of
+		Git.
+	
+	<section id="_start_working_on_another_feature">
+		<title>Start working on another feature
+		
+			Create a new local branch based on the remote tracking branch
+			<emphasis>origin/master</emphasis>
+			. You can do this as described in
+			<xref linkend="egitexercise_create_a_local_feature_branch" />
+			or you can use the
+			<guilabel>History</guilabel>
+			view as describe in this chapter.
+		
+		
+			To create a branch from the
+			<guilabel>History</guilabel>
+			view
+			select the project, then click
+			<emphasis>Show In &gt; History</emphasis>
+			(Some views, e.g., in the Java EE-Perspective, do not have this
+			shortcut, in this case use
+			<emphasis>Team &gt; Show in History</emphasis>
+			)
+		
+		
+			Select
+			<emphasis>Create Branch&#8230;</emphasis>
+			from the context menu on the commit where
+			<emphasis>origin/master</emphasis>
+			points to
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/create-branch-from-history-view.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Branch from History View</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			Enter "addMultiplyOperation" as the name of the new branch, make
+			sure
+			the
+			<emphasis>checkout new branch</emphasis>
+			checkbox is selected and click on
+			<emphasis>Finish</emphasis>
+		
+		
+			Check that now you don’t see the changes of the first exercise
+			anymore in your workspace.
+		
+		
+			Start working on a change, e.g. add a
+			<emphasis>Multiply</emphasis>
+			operation, do not
+			commit yet, first read on.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/multiply-class.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Multiply Class</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/register-multiply.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Register Multiply</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_switch_branches">
+		<title>Switch branches
+		Now you want to switch to another branch but you want to
+			continue
+			working at your new feature later on. The
+			easiest thing to do is to
+			just commit your work in progress and change that commit later on.
+		
+		<itemizedlist>
+			<listitem>
+				
+					Select your project in the Package Explorer and select
+					<emphasis>Team &gt; Commit</emphasis>
+					or click
+					<emphasis>Commit</emphasis>
+					in the Git Toolbar
+				
+			</listitem>
+			<listitem>
+				
+					In the commit dialog enter a preliminary message, e.g.
+					"[Unfinished] Add multiply operation", select the files to be
+					committed and click on
+					<emphasis>Commit</emphasis>
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/commit-changes.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Commit Changes</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+			<listitem>
+				
+					Now you can switch to the first feature branch
+					"addDivideOperation",
+					either by double clicking on the branch node in
+					the Git Repositories
+					View, by selecting
+					<emphasis>Team &gt; Switch To &gt; addDivideOperation</emphasis>
+					or by
+					selecting
+					<emphasis>Checkout</emphasis>
+					from the context menu on the
+					"addDivideOperation" branch in the History View.
+				
+			</listitem>
+			<listitem>
+				
+					Check that your workspace contains the changes you committed in your
+					first feature (implementing divide)
+					branch. You could now continue
+					working here. For example: you may want to fix the division by zero
+					issue if it is not
+					already handled. If you do any changes in the
+					"addDivideOperation" branch don’t forget to commit them with amend
+					before the next step
+				
+			</listitem>
+			<listitem>
+				
+					Switch back to the "addMultiplyOperation" branch
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="_continue_working_on_the_branch_adding_multiply">
+		<title>Continue working on the branch adding Multiply
+		<itemizedlist>
+			<listitem>
+				
+					Do another change in the workspace improving Multiply.
+				
+			</listitem>
+			<listitem>
+				
+					Compare your changed project with the first, preliminary commit by
+					selecting
+					<emphasis>Compare With &gt; HEAD revision</emphasis>
+					. This will show you the
+					changes you will add on top of the first commit.
+				
+			</listitem>
+			<listitem>
+				
+					Compare your changed project with the parent commit of your first,
+					preliminary commit by selecting
+					<emphasis>Compare With &gt; Previous revision</emphasis>
+					.
+					This will show you the changes you will have in your new commit after
+					the next step.
+				
+			</listitem>
+			<listitem>
+				
+					Create a new commit with the combined changes of your first,
+					preliminary commit and your current changes
+				
+				<itemizedlist>
+					<listitem>
+						
+							Select your project in the Package Explorer and select
+							<emphasis>Team &gt; Commit</emphasis>
+							or click
+							<emphasis>Commit</emphasis>
+							in the Git Toolbar.
+						
+					</listitem>
+					<listitem>
+						
+							Press the
+							<emphasis>Amend</emphasis>
+							button as shown below.
+						
+						
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref="./images/commit-changes-with-amend.png"/>
+								</imageobject>
+								<textobject>
+									<phrase>Commit Changes with Amend</phrase>
+								</textobject>
+							</inlinemediaobject>
+						
+					</listitem>
+					<listitem>
+						
+							Now you see again the commit message of the last commit you made
+							in
+							this branch. Change it to something meaningful
+							(e.g remove
+							<emphasis>[UNFINISHED]</emphasis>
+							) and click the
+							<emphasis>Commit</emphasis>
+							button.
+						
+					</listitem>
+					<listitem>
+						
+							In the History View you can now see that your first, preliminary
+							commit was replaced by the new one.
+						
+						
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref="./images/history-view-3.png"/>
+								</imageobject>
+								<textobject>
+									<phrase>History View</phrase>
+								</textobject>
+							</inlinemediaobject>
+						
+					</listitem>
+				</itemizedlist>
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="_fixing_the_commit_message">
+		<title>Fixing the commit message
+		The amend feature is often used to fix the commit message of
+			what you
+			just committed.
+		
+		<itemizedlist>
+			<listitem>
+				
+					In order to change the commit message of the last commit:
+				
+				
+					Select your project in the Package Explorer and select
+					<emphasis>Team &gt; Commit</emphasis>
+					or click
+					<emphasis>Commit in</emphasis>
+					the Git Toolbar.
+				
+			</listitem>
+			<listitem>
+				
+					Because there are no changes to commit EGit asks you if you want to
+					amend the last commit:
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/amend-dialog.png" scale="50" />
+						</imageobject>
+						<textobject>
+							<phrase>Amend Dialog</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+			<listitem>
+				
+					Click
+					<emphasis>Yes</emphasis>
+					.
+				
+			</listitem>
+			<listitem>
+				
+					Change the commit message and click on the
+					<emphasis>Commit</emphasis>
+					button.
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+</section>

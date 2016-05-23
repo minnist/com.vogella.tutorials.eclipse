@@ -1,0 +1,356 @@
+<section id="_merge_rebase_and_resolving_conflicts">
+	<title>Merge, Rebase and resolving Conflicts
+	<section id="_preparation2">
+		<title>Target
+		In this exercise you will learn how to combine the work done
+			in
+			different branches and how to resolve the
+			conflicts which can occur
+			during that process.
+		
+	</section>
+	<section id="_create_a_conflicting_commit">
+		<title>Create a conflicting commit
+		You may skip this step if you have already created
+			conflicting changes
+			in the previous exercises. This is the case
+			if you touched exactly the
+			same line of the same file in different feature branches. If this is
+			not the case please do
+			the following:
+		
+		
+			Create a new local branch based on the remote tracking branch
+			<emphasis>origin/master</emphasis>
+			.
+
+		
+		
+			Do a different change in the same class on the same line as in the
+			other branch (e.g. you may add a class
+			<emphasis>Multiply</emphasis>
+			and add a
+			corresponding line to method
+			<emphasis>setupDefaultOperations</emphasis>
+			in the
+			<emphasis>Calculator</emphasis>
+			class) and commit this change.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/history-view-4.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>History View</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	</section>
+	<section id="_merge_the_feature_branches">
+		<title>Trigger the first merge from the history view
+		
+			Now you would like to have both new features in the master branch.
+			One possibility to achieve that is to merge the
+			branches into the
+			master branch, one after the other. Later in this exercise you will
+			learn another way,
+			<ulink url="#rebase">rebasing</ulink>
+			.
+		
+		<itemizedlist>
+			<listitem>
+				
+					Ensure that you have checked out the branch
+					<emphasis>master</emphasis>
+					where you want
+					to have the merged state, i.e. where the merge commit will be
+					created, either by double clicking in
+					the Repositories View, or by
+					selecting
+					<emphasis>Checkout</emphasis>
+					in the History View, or by using
+					<emphasis>Team &gt; Switch To &gt; master</emphasis>
+					, or using the
+					<emphasis>Checkout</emphasis>
+					button in the
+					Git tool bar.
+				
+			</listitem>
+			<listitem>
+				
+					In the History View, select
+					<emphasis>Merge</emphasis>
+					in the context menu of the
+					<emphasis>addDivideOperation</emphasis>
+					branch. This will merge the content of the
+					<emphasis>addDivdeOperation</emphasis>
+					branch into the
+					<emphasis>master</emphasis>
+					branch. Since there
+					was no work done on the
+					<emphasis>master</emphasis>
+					branch and
+					<emphasis>addDivideOperation</emphasis>
+					points to a successor commit of the commit in
+					<emphasis>master</emphasis>
+					there is not
+					much to do. Git simply advances the
+					<emphasis>master</emphasis>
+					branch to the same
+					commit as the
+					<emphasis>addDivideOperation</emphasis>
+					branch. Inspect this in the
+					History View.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/fast-forward-merge.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Fast Forward Merge</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="_trigger_the_second_merge">
+		<title>Trigger the second merge
+		<itemizedlist>
+			<listitem>
+				
+					In the History View, select
+					<emphasis>Merge</emphasis>
+					in the context menu of the
+					branch which contains the conflicting commit. This will merge the
+					content of this branch
+					into the
+					<emphasis>master</emphasis>
+					branch. This time expect
+					that the merge operation ends with conflicts.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge-2.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge-with-conflicts.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge with Conflicts</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="resolve-conflicts">
+		<title>Resolving merge conflicts
+		If a merge generates conflicts the repository is in a
+			special state.
+			The conflicts have to be resolved until
+			normal work can go on.
+		
+		You can find the conflicting files by the conflict decorator
+			in the
+			package explorer:
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/conflict-markers.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Conflict Markers</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		If there are many conflicts it may be easier to find them in
+			the Git
+			Staging View:
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/conflicts-in-staging-view.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Conflicts in Staging View</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		<itemizedlist>
+			<listitem>
+				
+					If you open the conflicting file in an editor you will find the
+					conflict markers there. You can directly edit
+					the file here.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/conflict-markers-2.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Conflict Markers</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+			<listitem>
+				
+					You may use the Merge tool to resolve the conflicts:
+				
+				
+					<emphasis>Select Team &gt; Merge Tool</emphasis>
+					. You will see a dialog where you can
+					configure the initial state of the left hand side of the editor.
+					Which one you
+					choose depends on your preference. In the first case
+					you’ll already get the state which was merged by git, in the
+					second
+					case you get the version before the merge operation. Thus the first
+					option is useful if git could already
+					merge most of the changes
+					automatically and only a small number of conflicts is left. With
+					the
+					second option will get
+					a better overview of the changes in both
+					branches.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge-mode.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge Mode</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge-tool.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge Tool</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+				Edit the left side until you are happy with the change and
+					save.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/merge-tool-resolved-conflict.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Merge Tool with resolved conflict</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+			<listitem>
+				
+					Now in the Package Explorer select
+					<emphasis>Team &gt; Add</emphasis>
+					on the files which
+					had conflicts. When you have done it for all such files the
+					repository state changes from
+					<emphasis>Conflicts</emphasis>
+					to
+					<emphasis>Merged</emphasis>
+					. You can also
+					use the Git Staging View to do this in one step for all files by
+					drag and drop.
+				
+			</listitem>
+			<listitem>
+				
+					Select
+					<emphasis>Team &gt; Commit</emphasis>
+					or press the
+					<emphasis>Commit</emphasis>
+					button in the Git
+					Staging View. Note that there is already a commit message proposed
+					by Git. Leave it as it is.
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="_undo_merging_with_reset">
+		<title>Undo merging with Reset
+		
+			After you have done a merge as described above assume that you do not
+			want the merge commit in your branch anymore.
+			You
+			can easily undo the
+			merge with the Reset operation. (The same can also be done if the
+			merge is not finished but
+			your
+			repository is in state
+			<emphasis>Conflicting</emphasis>
+			or
+			<emphasis>Merged</emphasis>
+			).
+		
+		<itemizedlist>
+			<listitem>
+				
+					Select
+					<emphasis>Reset &gt; Hard</emphasis>
+					on the commit where the branch pointed to
+					before you did the second merge.
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/reset.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Reset</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+			<listitem>
+				
+					In case you do that when you have an unfinished merge the screenshot
+					looks like this:
+				
+				
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/reset-2.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Reset</phrase>
+						</textobject>
+					</inlinemediaobject>
+				
+			</listitem>
+		</itemizedlist>
+	</section>
+</section>

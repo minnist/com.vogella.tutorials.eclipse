@@ -1,0 +1,216 @@
+<section id="_change_a_series_of_commits">
+	<title>Change a series of commits
+	<simpara>In this exercise you learn how you can rewrite the local
+		history
+		before you share it with others. After you have
+		committed locally you
+		can still change all commits in your local feature branch.
+	</simpara>
+	<section id="_preparation4">
+		<title>Preparation
+		<simpara>
+			Follow the exercise
+			<ulink url="merge-rebase-and-resolving-conflicts.html">
+				Merge, Rebase and Resolving Conflicts
+			</ulink>
+			. After the rebase you end up
+			with a branch which is two commits ahead of the remote branch
+			<emphasis>origin/master</emphasis>
+			, it&#8217;s the local
+			<emphasis>master</emphasis>
+			branch in the screenshot
+			below. Now you realize that you want to change the first commit and
+			keep the second one on top
+			of the changed commit.
+		</simpara>
+		<simpara>
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/history-view-8.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>History View</phrase>
+				</textobject>
+			</inlinemediaobject>
+		</simpara>
+	</section>
+	<section id="_change_the_first_commit">
+		<title>Change the first commit
+		<itemizedlist>
+			<listitem>
+				<simpara>
+					Create a new branch that points to the commit you want to change,
+					in
+					the screenshot below it&#8217;s the
+					<emphasis>Add multiply operation</emphasis>
+					commit. Use
+					<emphasis>Create Branch</emphasis>
+					to create a new branch, e.g. named
+					<emphasis>newMaster</emphasis>
+					.
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/history-view-9.png" scale="40"/>
+						</imageobject>
+						<textobject>
+							<phrase>History View</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/history-view-10.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>History View</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+			</listitem>
+			<listitem>
+				<simpara>
+					Edit the files in the workspace, e.g. add a class comment for the
+					<emphasis>Multiply</emphasis>
+					class.
+				</simpara>
+			</listitem>
+			<listitem>
+				<simpara>
+					Now create a new commit with the combined changes of your first
+					commit and your current changes:
+				</simpara>
+				<itemizedlist>
+					<listitem>
+						<simpara>
+							Select your project in the Package Explorer and select
+							<emphasis>Team &gt; Commit</emphasis>
+							or click
+							<emphasis>Commit</emphasis>
+							in the Git Toolbar.
+						</simpara>
+					</listitem>
+					<listitem>
+						<simpara>
+							Press the
+							<emphasis>Amend</emphasis>
+							button as shown below:
+						</simpara>
+						<simpara>
+							<inlinemediaobject>
+								<imageobject>
+									<imagedata fileref="./images/commit-changes-with-amend-2.png"/>
+								</imageobject>
+								<textobject>
+									<phrase>Commit Changes with Amend</phrase>
+								</textobject>
+							</inlinemediaobject>
+						</simpara>
+					</listitem>
+					<listitem>
+						<simpara>
+							Click the Commit button
+						</simpara>
+					</listitem>
+				</itemizedlist>
+			</listitem>
+			<listitem>
+				<simpara>
+					Now your history should look like this:
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/history-view-11.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>History View</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+				<simpara>Note that the first version of your changed commit is still
+					there, but
+					your branch points now to the new one.
+					Git always creates new commits
+					when you rewrite history, it does not change old ones (from time to
+					time it removes
+					commits which are not reachable by a reference,
+					e.g.
+					a branch or a tag).
+				</simpara>
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section id="_cherry_pick_the_rest">
+		<title>Cherry-pick the rest
+		<itemizedlist>
+			<listitem>
+				<simpara>
+					Select
+					<emphasis>Cherry Pick</emphasis>
+					on the other commit. This will add the
+					difference of this commit compared to its parent on top of your new
+					commit.
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/cherry-pick.png" scale="40"/>
+						</imageobject>
+						<textobject>
+							<phrase>Cherry Pick</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+			</listitem>
+			<listitem>
+				<simpara>
+					You may have to resolve conflicts
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/cherry-pick-conflicts.png" scale="40"/>
+						</imageobject>
+						<textobject>
+							<phrase>Cherry Pick Conflicts</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+				<simpara>
+					In that case, edit the conflicting files, add the changes and
+					commit
+					like in the exercise
+					<ulink url="merge-rebase-and-resolving-conflicts.html">
+						Merge, Rebase and Resolving Conflicts
+					</ulink>
+					.
+				</simpara>
+			</listitem>
+			<listitem>
+				<simpara>
+					The result should look like this:
+				</simpara>
+				<simpara>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="./images/history-view-12.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>History View</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</simpara>
+			</listitem>
+		</itemizedlist>
+		<simpara>
+			If you want to change more than one commit in a series git offers the
+			powerful tool
+			<emphasis>git rebase --interactive</emphasis>
+			. This is not yet available in
+			EGit, but can be used from the Git commandline.
+		</simpara>
+	</section>
+</section>

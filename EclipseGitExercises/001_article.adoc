@@ -1,0 +1,16 @@
+= Eclipse Git Exercises - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+(c) 2016 vogella GmbH
+Version 0.1, 23.05.2016
+
+[abstract]
+This tutorial contains notes about EclipseGitExercises.
+				
+include::400_exercise_userconfiguration.adoc[]
+include::440_clonerepo.adoc[]
+include::008_resourceslocal.adoc[]
+
+

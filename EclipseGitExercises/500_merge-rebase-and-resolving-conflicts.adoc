@@ -14,24 +14,10 @@ If this is not the case please do the following:
 		
 Create a new local branch based on the remote tracking branch `origin/master`.
 
-Do a different change in the same class on the same line as in the other branch (e.g. you may add a class
-			<emphasis>Multiply</emphasis>
-			and add a
-			corresponding line to method
-			<emphasis>setupDefaultOperations</emphasis>
-			in the
-			<emphasis>Calculator</emphasis>
-			class) and commit this change.
+Do a different change in the same class on the same line as in the other branch.
+For example, you may add a class `Multiply` and add a corresponding line to the `setupDefaultOperations` method in the `Calculator` class) and commit this change.
 		
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/history-view-4.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>History View</phrase>
-				</textobject>
-			</inlinemediaobject>
+image:img/history-view-4.png[History View]			
 			
 			
 [[_merge_the_feature_branches]]
@@ -39,7 +25,7 @@ Do a different change in the same class on the same line as in the other branch 
 		
 Now you would like to have both new features in the master branch.
 One possibility to achieve that is to merge the branches into the master branch, one after the other. 
-Later in this exercise you will use the other option, the _rebase_operation..
+Later in this exercise you will use the other option, the _rebase_ operation.
 		
 Ensure that you have checked out the  `master` branch where you want to have the merged state, i.e. where the merge commit will be
 created.

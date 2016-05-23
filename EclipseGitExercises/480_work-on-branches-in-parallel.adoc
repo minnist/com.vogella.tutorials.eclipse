@@ -12,69 +12,22 @@ Create a new local branch based on the remote tracking branch `origin/master`.
 You can do this as described in <<egitexercise_create_a_local_feature_branch>> or you can use the _History_	view as described in this chapter.
 		
 		
-To create a branch from the _History_ view select the project, then click
-			<emphasis>Show In &gt; History</emphasis>
-			(Some views, e.g., in the Java EE-Perspective, do not have this
-			shortcut, in this case use
-			<emphasis>Team &gt; Show in History</emphasis>
-			)
+Create a new branch from the _History_ view.
+
+image:img/create-branch-from-history-view.png[Create Branch from History View].
+		
+Enter "addMultiplyOperation" as the name of the new branch. 
+Make sure the _checkout new branch_	checkbox is selected and click on the _Finish_ button.
+		
+Ensure that you don’t see the changes of the first exercise anymore in your workspace.
 		
 		
-			Select
-			<emphasis>Create Branch&#8230;</emphasis>
-			from the context menu on the commit where
-			<emphasis>origin/master</emphasis>
-			points to
+Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
+
+image:img/multiply-class.png[Multiply Class].	
 		
+image:img/register-multiply.png[Register Multiply].
 		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/create-branch-from-history-view.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Create Branch from History View</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-		
-			Enter "addMultiplyOperation" as the name of the new branch, make
-			sure
-			the
-			<emphasis>checkout new branch</emphasis>
-			checkbox is selected and click on
-			<emphasis>Finish</emphasis>
-		
-		
-			Check that now you don’t see the changes of the first exercise
-			anymore in your workspace.
-		
-		
-			Start working on a change, e.g. add a
-			<emphasis>Multiply</emphasis>
-			operation, do not
-			commit yet, first read on.
-		
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/multiply-class.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Multiply Class</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/register-multiply.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Register Multiply</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-	</section>
 [[_switch_branches]]
 === Switch branches
 
@@ -101,129 +54,30 @@ Switch back to the "addMultiplyOperation" branch
 				
 Do another change in the workspace improving Multiply.
 				
-				
-					Compare your changed project with the first, preliminary commit by
-					selecting
-					<emphasis>Compare With &gt; HEAD revision</emphasis>
-					. This will show you the
-					changes you will add on top of the first commit.
+Compare your changed project with the first, preliminary commit by selecting menu:Compare With[HEAD revision]. 
+This shows you the changes you will add on top of the first commit.
 				
 				
-					Compare your changed project with the parent commit of your first,
-					preliminary commit by selecting
-					<emphasis>Compare With &gt; Previous revision</emphasis>
-					.
-					This will show you the changes you will have in your new commit after
-					the next step.
+Compare your changed project with the parent commit of your first, preliminary commit by selecting menu:Compare With[Previous revision].
+This shows you the changes you will have in your new commit after the next step.
 				
 				
-					Create a new commit with the combined changes of your first,
-					preliminary commit and your current changes
-				
+Create a new commit with the combined changes of your first, preliminary commit and your current changes by pressing the _Amend_ button in the staging view and by adding the new changes.
+
 						
-							Select your project in the Package Explorer and select
-							<emphasis>Team &gt; Commit</emphasis>
-							or click
-							<emphasis>Commit</emphasis>
-							in the Git Toolbar.
+Leave the commit messages as it is, e.g., do not remove the [UNFINISHED] prefix.
 						
 						
-							Press the
-							<emphasis>Amend</emphasis>
-							button as shown below.
-						
-						
-							<inlinemediaobject>
-								<imageobject>
-									<imagedata fileref="./images/commit-changes-with-amend.png"/>
-								</imageobject>
-								<textobject>
-									<phrase>Commit Changes with Amend</phrase>
-								</textobject>
-							</inlinemediaobject>
-						
-					</listitem>
-					<listitem>
-						
-							Now you see again the commit message of the last commit you made
-							in
-							this branch. Change it to something meaningful
-							(e.g remove
-							<emphasis>[UNFINISHED]</emphasis>
-							) and click the
-							<emphasis>Commit</emphasis>
-							button.
-						
-					</listitem>
-					<listitem>
-						
-							In the History View you can now see that your first, preliminary
-							commit was replaced by the new one.
-						
-						
-							<inlinemediaobject>
-								<imageobject>
-									<imagedata fileref="./images/history-view-3.png"/>
-								</imageobject>
-								<textobject>
-									<phrase>History View</phrase>
-								</textobject>
-							</inlinemediaobject>
-						
-					</listitem>
-				</itemizedlist>
-			</listitem>
-		</itemizedlist>
-	</section>
-	<section id="_fixing_the_commit_message">
-		<title>Fixing the commit message
-		The amend feature is often used to fix the commit message of
-			what you
-			just committed.
-		
-		<itemizedlist>
-			<listitem>
+In the History View you can now see that your first, preliminary commit was replaced by the new one.
+
+image:img/history-view-3.png[History View]	
+
+[[_fixing_the_commit_message]]
+=== Fixing the commit message
+
+The amend feature is often used to fix the commit message of what you just committed.
+
+Now, change the commit message to something meaningful (e.g remove [UNFINISHED]) and click the _Commit_ button.		
 				
-					In order to change the commit message of the last commit:
-				
-				
-					Select your project in the Package Explorer and select
-					<emphasis>Team &gt; Commit</emphasis>
-					or click
-					<emphasis>Commit in</emphasis>
-					the Git Toolbar.
-				
-			</listitem>
-			<listitem>
-				
-					Because there are no changes to commit EGit asks you if you want to
-					amend the last commit:
-				
-				
-					<inlinemediaobject>
-						<imageobject>
-							<imagedata fileref="./images/amend-dialog.png" scale="50" />
-						</imageobject>
-						<textobject>
-							<phrase>Amend Dialog</phrase>
-						</textobject>
-					</inlinemediaobject>
-				
-			</listitem>
-			<listitem>
-				
-					Click
-					<emphasis>Yes</emphasis>
-					.
-				
-			</listitem>
-			<listitem>
-				
-					Change the commit message and click on the
-					<emphasis>Commit</emphasis>
-					button.
-				
-			</listitem>
-		</itemizedlist>
-	</section>
-</section>
+In order to change the commit message of the last commit, press the _Amend_ button in the _Git Staging_ view.
+Change the commit message and press the _Commit_ button.

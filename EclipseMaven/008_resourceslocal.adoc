@@ -1,0 +1,6 @@
+== Eclipse Maven (m2e) resources
+
+http://books.sonatype.com/m2eclipse-book/reference/[m2e book]
+
+http://takari.io/2015/03/19/core-extensions.html[New Maven 3.3.1 Features: Core Extensions]
+

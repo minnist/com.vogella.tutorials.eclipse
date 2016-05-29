@@ -1,0 +1,74 @@
+[[example_eclipsemavenproject]]
+== Exercise: Create a new Maven enabled project via Eclipse
+
+[[example_eclipsemavenproject1]]
+=== Target of this exercise
+
+This exercise demonstrates the creation of a new Maven enabled project in Eclipse.
+
+[[example_eclipsemavenproject2]]
+=== Create Maven project
+		
+Create a new Maven project via menu:File[New>Other...>Maven>Maven Project].
+		
+image::img/m2e_newmavenproject10.png[Create Maven project in Eclipse - Part 1]
+		
+On the first wizard page you can select if you want to create a simple project. 
+In this case you skip the archetype selection. 
+In this exercise we want to use an archetype as template for our project creation.
+		
+image::img/m2e_newmavenproject20.png[Create Maven project in Eclipse - Part 2]
+		
+Press next, filter for the "quickstart" archetype and select the `maven-archetype-quickstart` entry.
+This is the classical Maven example archetype for project creation.
+		
+image::img/m2e_newmavenproject30.png[Create Maven project in Eclipse - Part 3]
+
+On the last tab enter the GAV of your project similar to the following screenshot.
+
+image::img/m2e_newmavenproject40.png[Create Maven project in Eclipse - Part 4]
+	
+	
+[[example_eclipsemavenproject_runningthebuild]]
+=== Run the build
+		
+Validate that the generate setup works correctly by running the build. 
+For this right-click the _pom.xml_ file and select menu:Run As[Maven build].
+			
+image::img/m2e_newmavenproject50.png[Run Maven project in Eclipse]	
+		
+This opens a dialog which allows to define the parameters for the start. 
+Enter `clean verify` in the _Goals:_ field and press the _Run_ button.
+		
+image::img/m2e_newmavenproject60.png[Run Maven project in Eclipse]	
+				
+		
+[[example_eclipsemavenproject_dependency]]
+=== Adding dependencies to your project
+		
+The Eclipse Maven tooling makes adding dependencies to the classpath of your project simple. 
+In can directly add it to your pom file, or use the _Dependencies_ tab of the pom editor.
+		
+Switch to the _Dependencies_ tab and press the _Add_ button.
+
+image::img/me2_adddependency20.png[]
+		
+
+In this example we add Gson as dependency. 
+For this we use the GAV which we found via the http://search.maven.org website.
+If the Maven index was downloaded (See <<maven_eclipseinstallation_index>> you can also search directly this dependency via the dialog.
+		
+image::img/me2_adddependency30.png[]	
+
+
+[[example_eclipsemavenproject_usage]]
+=== Use library
+		
+Change or create the `App.java` class in your `src/main/java` folder. 
+This classes uses Gson. 
+As Maven added it to your classpath, it should compile and you should be able to start the class via Eclipse.
+		
+[source,java]
+----
+include::res/first/App.java[]
+----

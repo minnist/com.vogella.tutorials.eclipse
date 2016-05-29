@@ -1,0 +1,50 @@
+[[example_eclipseproject]]
+== Exercise: Add Maven support to a Java project in Eclipse
+
+=== Target of this exercise
+This exercise demonstrates how to convert a Java project to a Maven project.
+
+=== Create Java project
+		
+Create a new Java project called _com.vogella.build.maven.simple_ in Eclipse.
+		
+		
+Add one class called `Main`. 
+This class should have a `main` method, which write "Hello Maven!" to the command line.
+
+[source,java]
+----
+include::res/first/Main.java[]
+----
+		
+=== Convert to Maven project
+		
+Select your project, right-click on it and select menu:Configure[Convert to Maven project...].
+		
+image::img/m2e_javaconverttomaven10.png[Convert Java project to Maven]
+		
+		
+This creates a _pom.xml_  file similar to the following.
+
+[source,xml]
+----
+include::res/simple/pom.xml[]
+----	
+		
+=== Execute the Maven build
+		
+Right-click the _pom.xml_ file and select menu:Run As[Maven build].
+		
+image::img/m2e_javaconverttomaven20.png[Run Maven build from Eclipse]
+		
+Enter "clean install" as Goal.
+
+NOTE: You have to enter the goals manually. The _Select..._ button does not work, the dialog it displays is always empty.
+			
+		
+Press the btn:[Finish] button.
+This starts the build, which you can follow in the _Console_ view. 
+		
+Once the build finishes, press F5 on the project to refresh it.
+You see a _target_ folder, which contains the build artifacts, e.g., a JAR file.
+		

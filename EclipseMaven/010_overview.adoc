@@ -1,0 +1,17 @@
+[[m2e_overview]]
+== Using Maven with the Eclipse IDE
+
+The Eclipse IDE provides excellent support for the Maven. 
+This tooling is developed in the _M2Eclipse_ project.
+	
+This tooling manages the project dependencies and updates the classpath of the project dependencies in the Eclipse IDE.
+It ensures that the Maven experience in Eclipse is as smooth as possible. 
+The tooling also provides different kind of wizards import andto create new Maven based projects.
+	
+It also provides an editor for the _pom.xml_ Maven configuration file via a structured interface.
+You can select the tab labeled _pom.xml_ to edit the XML data directly.
+	
+image::img/m2epomeditor10.png[M2E pom editor]
+
+image::img/m2epomeditor20.png[M2E pom editor]
+	

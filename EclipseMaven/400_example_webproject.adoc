@@ -1,0 +1,53 @@
+[[maven_webeproject]]
+== Exercise: Create a Java web project in Eclipse using Maven
+
+[[maven_webeproject_target]]
+== Target of this exercise
+This exercise demonstrates how to create a web application in Eclipse which uses Maven. 
+It assumes that you have already configured Eclipse for the creation of web applications.
+
+[[maven_webeproject_project]]
+=== Create Maven web project project
+		
+Create a new Maven project called _com.vogella.javaweb.maven.first_ via the menu:File[New>Other>Maven>Maven Project] entry.
+		
+On the archetype selection, select the _maven-archetype-webapp_ entry and click the _Next_ button.
+		
+image::img/maven_webproject10.png[Webproject archetype with Maven]
+		
+
+Enter the group, artifact and version of your new Maven component.
+
+image::img/maven_webproject20.png[Webproject archetype with Maven]		
+		
+[TIP]
+====
+You may see the error: _The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path_. 
+To fix this, right click on your project and select _Properties_. 
+On the _Targeted Runtimes_ select your web server entry, e.g., Tomcat.
+====
+
+[[maven_webeproject_projectbuild]]
+=== Build your project
+		
+Similar to <<example_eclipsemavenproject_runningthebuild>> run your `mvn clean verify` build command from Eclipse.
+Validate that there are no issues with the build.
+
+[[maven_webeproject_runserver]]
+=== Run on the server
+		
+Right-click your project and select the menu:Run As[Run on Server] menu entry.
+		
+image::img/maven_webproject30.png[Start Maven project on server]	
+
+image::img/maven_webproject40.png[Start Maven project on server]	
+	
+image::img/maven_webproject50.png[Start Maven project on server]	
+			
+
+image::img/maven_webproject60.png[Start Maven project on server]	
+			
+		
+If you open a browser you should be able to access your webapplication.
+		
+image::img/maven_webproject70.png[Start Maven project on server]	

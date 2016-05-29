@@ -21,7 +21,7 @@ include::res/first/Main.java[]
 		
 Select your project, right-click on it and select menu:Configure[Convert to Maven project...].
 		
-image::img/m2e_javaconverttomaven10.png[Convert Java project to Maven]
+image::/m2e_javaconverttomaven10.png[Convert Java project to Maven]
 		
 		
 This creates a _pom.xml_  file similar to the following.
@@ -35,7 +35,7 @@ include::res/simple/pom.xml[]
 		
 Right-click the _pom.xml_ file and select menu:Run As[Maven build].
 		
-image::img/m2e_javaconverttomaven20.png[Run Maven build from Eclipse]
+image::/m2e_javaconverttomaven20.png[Run Maven build from Eclipse]
 		
 Enter "clean install" as Goal.
 

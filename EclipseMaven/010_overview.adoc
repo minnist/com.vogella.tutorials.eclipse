@@ -11,7 +11,7 @@ The tooling also provides different kind of wizards import andto create new Mave
 It also provides an editor for the _pom.xml_ Maven configuration file via a structured interface.
 You can select the tab labeled _pom.xml_ to edit the XML data directly.
 	
-image::img/m2epomeditor10.png[M2E pom editor]
+image::/m2epomeditor10.png[M2E pom editor]
 
-image::img/m2epomeditor20.png[M2E pom editor]
+image::/m2epomeditor20.png[M2E pom editor]
 	

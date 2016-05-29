@@ -14,7 +14,7 @@ You can do this as described in <<egitexercise_create_a_local_feature_branch>> o
 		
 Create a new branch from the _History_ view.
 
-image:img/create-branch-from-history-view.png[Create Branch from History View].
+image:img/create-branch-from-history-view.png[Create Branch from History View, 700].
 		
 Enter "addMultiplyOperation" as the name of the new branch. 
 Make sure the _checkout new branch_	checkbox is selected and click on the _Finish_ button.
@@ -49,7 +49,7 @@ If you do any changes in the "addDivideOperation" branch don’t forget to commi
 				
 Switch back to the "addMultiplyOperation" branch
 
-[[_continue_working_on_the_branch_adding_multiply]]
+[[continue_working_on_the_branch_adding_multiply]]
 === Continue working on the branch adding Multiply
 				
 Do another change in the workspace improving Multiply.
@@ -61,16 +61,13 @@ This shows you the changes you will add on top of the first commit.
 Compare your changed project with the parent commit of your first, preliminary commit by selecting menu:Compare With[Previous revision].
 This shows you the changes you will have in your new commit after the next step.
 				
-				
 Create a new commit with the combined changes of your first, preliminary commit and your current changes by pressing the _Amend_ button in the staging view and by adding the new changes.
-
 						
 Leave the commit messages as it is, e.g., do not remove the [UNFINISHED] prefix.
 						
-						
-In the History View you can now see that your first, preliminary commit was replaced by the new one.
+In the _History_ view you can now see that your first, preliminary commit was replaced by the new one.
 
-image:img/history-view-3.png[History View]	
+image:img/history-view-3.png[History View, 500, 500]	
 
 [[_fixing_the_commit_message]]
 === Fixing the commit message

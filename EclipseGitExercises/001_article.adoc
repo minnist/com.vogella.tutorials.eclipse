@@ -1,14 +1,13 @@
-= Eclipse Git Exercises - Tutorial
+= Extended Git Command line Exercises - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 (c) 2016 vogella GmbH
-Version 0.1, 23.05.2016
+Version 0.1, 24.05.2016
 
 [abstract]
-This tutorial contains notes about EclipseGitExercises.
-				
+This tutorial contains exercises for the usage of Git.
 include::400_exercise_userconfiguration.adoc[]
 include::440_exercise_clonerepo.adoc[]
 include::460_exercise_developafeature.adoc[]
@@ -17,6 +16,16 @@ include::480_work-on-branches-in-parallel.adoc[]
 include::500_merge-rebase-and-resolving-conflicts.adoc[]
 include::520_exercise_rebase.adoc[]
 include::580_reset-branch-to-a-previous-state.adoc[]
-include::008_resourceslocal.adoc[]
+include::600_exercise_fork-the-example-repository.xml[]
+
+
+
+include::840_exercise_clonerepo_commandline.adoc[]
+include::860_exercise_developafeature_commandline.adoc[]
+include::880_work-on-branches-in-parallel_commandline.adoc[]
+include::890_merge-rebase-and-resolving-conflicts_commandline.adoc[]
+include::920_exercise_rebase_commandline.adoc[]
+
+// include::008_resourceslocal.adoc[]
 
 

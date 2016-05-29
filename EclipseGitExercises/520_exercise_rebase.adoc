@@ -8,7 +8,7 @@ Now do a rebase of the conflicting commit instead of a merge.
 		
 In the History View, select _Rebase on Top of_ from the context menu on the second feature branch (the first one is checked out):
 				
-image:img/rebase.png[Rebase]
+image:img/rebase.png[Rebase, 600,600]
 
 				
 The rebase stops because of a conflict. You see a dialog:
@@ -21,12 +21,11 @@ Click _OK_ to start conflict resolution (using pre-merged option).
 
 image:img/merge-mode.png[Merge Mode]		
 				
-image:img/merge-tool-2[Merge Tool]				
-				
+image:img/merge-tool-2.png[Merge Tool,400,400]				
 				
 Edit the left side until you are happy with the change and save
 				
-image:img/merge-tool-resolved-conflict-2.png[Merge Tool with resolved conflict]						
+image:img/merge-tool-resolved-conflict-2.png[Merge Tool with resolved conflict,400,400]						
 				
 Use the Git Staging View to do this in one step by drag and drop
 				
@@ -34,7 +33,7 @@ Use the Git Staging View to do this in one step by drag and drop
 In the Repositories View select your repository and click menu:Rebase[Continue].
 
 				
-image:img/rebase-continue.png[Rebase Continue]					
+image:img/rebase-continue.png[Rebase Continue,400,400]					
 				
 				
 Now the version graph should look like this:
@@ -49,7 +48,7 @@ You may revert the rebase operation with reset as described above.
 ====
 You may hide or show the additional references such as `ORIG_HEAD`	and	`FETCH_HEAD` from the History View by selecting menu:Show[Additional Refs] in the drop-down menu.
 			
-image:img/show-additional-refs.png[Show Additional Refs]
+image:img/show-additional-refs.png[Show Additional Refs,400,400]
 ====
 
 [[rebase_interactiverebase_edit]]
@@ -66,11 +65,12 @@ You realize that you wanted to combine the last two commits.
 Use the _History_ view to combine them.
 You can squash several commits by selecting them in the _History_ view and by using the menu:Modify[Squash]	menu entry from the context menu.
 
-image:img/rebase_interactive_squaschcommits10.png[Squash a commit]
+image:img/rebase_interactive_squaschcommits10.png[Squash a commit,400,400]
 		
 [[rebase_interactiverebase_remove]]
 === Remove a commit
 		
-Do two more commits, A followed by B. You want to remove the commit A from your history. 
+Do two more commits, A followed by B. 
+You want to remove the commit A from your history. 
 Use the interactive rebase to perform this operation.
 		

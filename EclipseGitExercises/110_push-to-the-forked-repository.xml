@@ -1,107 +1,50 @@
-<section id="_push_to_the_forked_repository">
-	<title>Push to the forked repository
-	In this exercise you learn how to push commits from your local repository
-		to a remote repository. You will
-		reuse
-		your already cloned repository and add
-		the fork as another remote repository.
+[[push_to_the_forked_repository]]
+
+== Push to the forked repository
+In this exercise you learn how to push commits from your local repository to a remote repository. 
+You will reuse your already cloned repository and add the fork as another remote repository.
 	
-	<note>
-		Another way to achieve the goal would be
-			to create a new clone of the forked repository. However, having
-			everything in one
-			repository has many advantages. For example, in eclipse you can then easily
-			checkout versions of your
-			projects from the two remote repositories
+
+Another way to achieve the goal would be to create a new clone of the forked repository. 
+However, having	everything in one repository has many advantages. 
+For example, in eclipse you can then easily	checkout versions of your projects from the two remote repositories
 		
-	</note>
-	<section id="_add_a_new_remote">
-		<title>Add a new remote
+[[_add_a_new_remote]]
+=== Add a new remote
 		
-			Git allows that you have more than one remote repository for a local repository.
-			In the
-			local repository you can
-			address each remote repository by a shortcut.
-			This shortcut is simply called
-			<emphasis>remote</emphasis>
-			. For such a remote several properties can be
-			specified, e.g. URL, branches to fetch or branches to push. When you
-			cloned your repository, Bit already created
-			a default remote called
-			<emphasis>origin</emphasis>
-			. You now create a second remote for your fork at Github.
+Git allows that you have more than one remote repository for a local repository.
+In the local repository you can address each remote repository by a shortcut.
+This shortcut is simply called _remote_.
+For such a remote several properties can be specified, e.g. URL, branches to fetch or branches to push. 
+When you cloned your repository, Git already created a default remote called _origin_. 
+
+You now create a second remote for your fork at Github.
 		
-		You will need the URL. Copy it to the clipboard from Github.
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/copyurl.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Copy URL from Github</phrase>
-				</textobject>
-			</inlinemediaobject>
+You will need the URL. Copy it to the clipboard from Github.
+	
+image:img/copyurl.png[Copy URL from Github]
 		
 		
-			In the Git Repositories view, select
-			<emphasis>Create Remote</emphasis>
-			on the
-			<emphasis>Remotes</emphasis>
-			node of your clone.
+In the Git Repositories view, select _Create Remote_  on the _Remotes_ node of your clone.
+		
+image:img/createremote.png[Create Remote]		
 		
 		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/createremote.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Remote</phrase>
-				</textobject>
-			</inlinemediaobject>
+In the next dialog, enter a name and select the _Configure fetch_ radiobutton.
+
+image:img/remote_github.png[Configure Remote]		
 		
 		
-			In the next dialog, enter a name and select the
-			<guilabel>Configure fetch</guilabel>
-			radiobutton.
+Now press the button _Change_ next to the URL field.
+
+image:img/githubconfigurefetch.png[Configure Fetch]		
+		
+The URL is  automatically taken from the clipboard in the next dialog.
+
+image:img/githubdestination.png[Fetch URL]			
 		
 		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/remote_github.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Configure Remote</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-		
-			Now press the button
-			<emphasis>Change</emphasis>
-			next to the URL field.
-		
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/githubconfigurefetch.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Configure Fetch</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-		The URL will be automatically taken from the clipboard in the next dialog.
-		
-			<inlinemediaobject>
-				<imageobject>
-					<imagedata fileref="./images/githubdestination.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Fetch URL</phrase>
-				</textobject>
-			</inlinemediaobject>
-		
-		
-			Press the Finish button. In order to test if everything worked well you can fetch from your new remote.
+Press the Finish button. In order to test if everything worked well you can fetch from your new remote.
 		
 		
 			<inlinemediaobject>
@@ -128,15 +71,13 @@
 					<phrase>Github fetch result</phrase>
 				</textobject>
 			</inlinemediaobject>
+			
+			
+[[_create_a_new_commit_in_a_new_branch]]
+=== Create a new commit in a new branch
 		
-	</section>
-	<section id="_create_a_new_commit_in_a_new_branch">
-		<title>Create a new commit in a new branch
-		
-			Create a new commit in your local repository. You should create the local branch based on the new remote, see
-			screenshot below.
-			When you do this, the Git push operation will pushes this branch to the new remote repository per
-			default.
+Create a new commit in your local repository. You should create the local branch based on the new remote, see screenshot below.
+When you do this, the Git push operation pushes this branch to the new remote repository per default.
 		
 		
 			<inlinemediaobject>
@@ -186,8 +127,8 @@
 				</textobject>
 			</inlinemediaobject>
 		
-		By default, Eclipse pushes the currently checked out branch to the branch with the same name in the remote.
-			Note that Git created a new remote tracking branch:
+By default, Eclipse pushes the currently checked out branch to the branch with the same name in the remote.
+Note that Git created a new remote tracking branch:
 		
 		
 			<inlinemediaobject>

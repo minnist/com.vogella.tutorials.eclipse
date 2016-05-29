@@ -24,5 +24,4 @@ For Mac there is a specific launch configuration with _Mac_ in the name.
 
 Use the `git log` command to get an overview of the history of the Git repository.
 
-image:img/repository-properties.png[Repository Properties]  
         

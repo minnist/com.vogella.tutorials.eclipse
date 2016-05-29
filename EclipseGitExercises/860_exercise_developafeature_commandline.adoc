@@ -23,13 +23,10 @@ git branch divide_feature origin/master
 Start editing the source code and implement a new feature. 
 In this example project implement a divide operation.
 		
-For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package that
-		
-* implements the interface `org.eclipse.example.calc.BinaryOperation` and
-* extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class
+For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package.
+This class should implements the interface `org.eclipse.example.calc.BinaryOperation` and extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
 
 image:img/divide-class.png[Divide Class]				
-		
 		
 To register the new operation add a corresponding line to the `Calculator.setupDefaultOperations` method.
 	

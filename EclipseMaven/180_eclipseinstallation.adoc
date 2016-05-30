@@ -39,6 +39,6 @@ You may want to remove this flag after restarting to avoid network traffic at ev
 ====
 The m2e team works on a way to dynamically query for dependencies. 
 Please register for the following bug to show that you are interested in this development:
-https://bugs.eclipse.org/bugs/show_bug.cgi?id=478647[Provide an alternative Artifact search mechanism in Eclipse Maven].
+Provide an alternative Artifact search mechanism in Eclipse Maven - https://bugs.eclipse.org/bugs/show_bug.cgi?id=478647.
 ====
 

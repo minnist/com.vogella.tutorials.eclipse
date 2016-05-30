@@ -7,7 +7,7 @@ exist.
 === Orbit receipts
 
 The Orbit project hosts the Orbit receipts project which allows to convert JARs from Maven to OSGi bundles.
-Clone the Git repo from the following URL https://git.eclipse.org/r/orbit/orbit-recipes[Orbit Git repos].
+Clone the Git repo from the following URL Orbit Git repos (https://git.eclipse.org/r/orbit/orbit-recipes).
 Afterwards see the
 README.md for how to use it.
 Also see https://github.com/eclipse/ebr for a description of the _Eclipse Bundle Recipes_ project.

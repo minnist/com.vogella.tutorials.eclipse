@@ -1,0 +1,8 @@
+== Eclipse Text
+
+=== What is the Eclipse Text API
+
+Eclipse Text is part of the Eclipse Platform UI project. 
+It provides the capabilities to develop base text editors, code completion, hyperlinking and similar functionality.
+
+

@@ -1,0 +1,40 @@
+== Adding a hyperlink detector to an editor
+
+=== Hyperlinks in a source editor
+
+If you hold down the kbd:[Ctrl] and click on an element in the Java editor you can navigate to it.
+This functionality is provided by the Eclipse Text framework and can be extended for every editor.
+
+=== Example: Implement a hyperlink
+
+In this exercise you create a hyperlink detector for the `vogella` keyword.
+
+Create a new plug-in project.
+Add the `org.eclipse.ui.workbench.texteditor.hyperlinkDetectors` extension with a unique id and a descriptive name. 
+This name is  visible in the preferences under menu:General[Editors>Text Editors>Hyperlinking].
+
+The targetId points to the type of editor you want to support.
+If you want to use in all text editors use `org.eclipse.ui.DefaultTextEditor`.
+
+Create the following two classes to determine the hyperlink and to react to it.
+
+[source,java]
+----
+include:res/hyperlink/VogellaHyperlink.java[]
+----
+[source,java]
+----
+include:res/hyperlink/VogelHyperlinkDetector.java[]
+----
+
+Start your plug-in and add _vogella_ to one of the text editor, for example the Java editor.
+Press kbd:[Ctrl] and click on _vogella_. 
+This should open a dialog.
+
+
+
+
+
+
+
+

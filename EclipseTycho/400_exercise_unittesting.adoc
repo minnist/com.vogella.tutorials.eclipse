@@ -16,11 +16,11 @@ We decide that our software tests should test the API defined by the plug-in, th
 		
 Create a new plug-in project called _com.vogella.tycho.unittests_.
 
-image::img/tycho-unittest-creation.png[Test plug-in creation for Tycho]
+image::tycho-unittest-creation.png[Test plug-in creation for Tycho]
 		
 Define a dependency to `org.junit;bundle-version="4.12.0` and `com.vogella.tycho.plugin1`in its _MANIFEST.MF_ file.
 		
-image::img/tycho-unittest-dependencies.png[Unit test dependencies]
+image::tycho-unittest-dependencies.png[Unit test dependencies]
 		
 The default are sufficient for this test plug-in, hence we need no separate pom for the test plug-in.
 

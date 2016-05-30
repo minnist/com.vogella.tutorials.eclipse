@@ -17,11 +17,11 @@ Create a new directory called _features_ in your main directory.
 
 Create a new feature project called _com.vogella.tycho.feature_ in the _features_ folder.
 
-image::img/tycho-feature-creation.png[Feature creation for Tycho]
+image::tycho-feature-creation.png[Feature creation for Tycho]
 
 Add the _com.vogella.tycho.plugin1_ plug-in to the feature.
 
-image::img/tycho-feature-creation2.png[Add plug-in to feature]
+image::tycho-feature-creation2.png[Add plug-in to feature]
 
 [[tychofeaturesexercise_create]]
 === Create pom for feature folder

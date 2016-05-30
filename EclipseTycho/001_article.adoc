@@ -3,6 +3,7 @@
 :sectnums:                                                          
 :experimental:
 :icons:
+:imagesdir: ./img
 :tychoversion: 0.25.0
 Lars Vogel, Simon Scholz (c) 2011 - 2016 vogella GmbH
 Version 2.6, 31.03.2016

@@ -28,13 +28,13 @@ include::res/p2-maven-plugin/pom.xml[]
 
 By using the `mvn clean p2:site` goal the following directory structure is created.
 
-image::img/p2-maven-plugin.png[]
+image::p2-maven-plugin.png[]
 
 
 Here you can see that also `log4j_1.2.17` and `slf4j.api_1.7.10` are converted.
 They can be used via the generated update site.
 
-image::img/p2-maven-plugin-updatesite.png[]
+image::p2-maven-plugin-updatesite.png[]
 
 In this case the p2 repository targets the file system.
 But of curse you can also embed the conversion into a deployment build.

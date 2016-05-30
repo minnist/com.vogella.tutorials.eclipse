@@ -13,22 +13,22 @@ It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercis
 Use the menu:File[New > Other...>Plug-in Development>Plug-in Project] menu entry and create a plug-in in the _bundles_ folder. 
 Call this plug-in _com.vogella.tycho.rcp_ and use the _Eclipse 4 RCP application_ template.
 		
-image:img/tycho-rcpplugin-creation.png[Eclipse RCP plug-in creation]
+image::tycho-rcpplugin-creation.png[Eclipse RCP plug-in creation]
 		
 Create a new project of type `General` called _com.vogella.tycho.product_ in the _releng_ folder. 
 
-image:img/tycho-rcpreleng-creation.png[Eclipse project for the product creation]
+image::tycho-rcpreleng-creation.png[Eclipse project for the product creation]
 
 Move your .product file from the com.vogella.tycho.rcp file into this new project.
 
-image:img/tycho_productsetup10.png[Tycho product setup]		
+image::tycho_productsetup10.png[Tycho product setup]		
 
 [[exercisetychoproduct_enterid]]
 === Enter ID in the product
 		
 To build your product with Tycho, you need to enter the ID on the product configuration file.
 		
-image:img/tycho_productid10.png[Entering the product ID in the product configuration file]
+image::tycho_productid10.png[Entering the product ID in the product configuration file]
 
 [[exercisetychoproduct_createpomfile]]
 === Create poms
@@ -47,9 +47,9 @@ include::res/rcp/pom.xml[]
 
 Change your product configuration file to be based on features.
 
-image:img/tycho_productid20.png[Switch product to features]
+image::tycho_productid20.png[Switch product to features]
 
-image:img/tycho_productid30.png[Switch product to features]
+image::tycho_productid30.png[Switch product to features]
 
 [[exercisetychoproduct_feature]]
 === Enable separate update of the custom feature
@@ -100,4 +100,4 @@ Add the two new projects to your aggregator pom and run the build.
 After the build you find zip and extracted versions of your product in the target/products folder.
 		
 
-image:img/tycho_productbuildresult10.png[Tycho product build result]	
+image::tycho_productbuildresult10.png[Tycho product build result]	

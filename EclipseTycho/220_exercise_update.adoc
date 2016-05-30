@@ -12,17 +12,17 @@ It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercis
 
 In your _releng_ folder, create a new project of type _General_. called _com.vogella.tycho.update_.
 
-image::img/tycho-updatesite-creation.png[Project creation for update site]
+image::tycho-updatesite-creation.png[Project creation for update site]
 			
 Right-click on this project and select menu:File[New > Other...>Plug-in Development>Category Definition].
 		
 Press the _New Category_ button and create a new category with the "tychoexample" ID and "Tycho example" name.
 
-image::img/tycho_updatesite10.png[Adding a category]
+image::tycho_updatesite10.png[Adding a category]
 		
 Press the _Add Feature..._ button and include your feature project into the category.
 
-image::img/tycho_updatesite20.png[Adding a feature to a category]
+image::tycho_updatesite20.png[Adding a feature to a category]
 
 [[exercise_updatesite_updatepom]]
 === Create pom file for the releng folder
@@ -67,7 +67,7 @@ Press F5 in the Eclipse IDE on your update site project to refresh it.
 You find a new _target_ folder in your project which contains a _repository_ folder. 
 This folder contains the update site.
 
-image::img/tycho_updatesite_buildresult.png[Build result]
+image::tycho_updatesite_buildresult.png[Build result]
 		
 Validate that the JAR files in the "repository" have the SNAPSHOT suffix replaced with the build qualifier.
 		

@@ -34,3 +34,8 @@ If a target	definition is used in the project for development, the build should 
 Tycho only supports Software Sites as locations.
 The Directory Installation and Feature entries are not supported by Tycho and are ignored by the build process.
 	
+The target editor picks always the exact version of the plug-in from the update site.
+In case you building against dynamically changing p2 repositories, you can specify that the version is not important.
+Use in this case "0.0.0" as version qualifier. 
+This change needs to be done, via a test editor, as the target editor does not support this.
+Tycho will select a version from the p2 update site, if several versions are available one of them is picked.

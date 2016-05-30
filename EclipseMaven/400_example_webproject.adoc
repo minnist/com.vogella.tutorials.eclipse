@@ -13,12 +13,12 @@ Create a new Maven project called _com.vogella.javaweb.maven.first_ via the menu
 		
 On the archetype selection, select the _maven-archetype-webapp_ entry and click the _Next_ button.
 		
-image::/maven_webproject10.png[Webproject archetype with Maven]
+image::maven_webproject10.png[Webproject archetype with Maven]
 		
 
 Enter the group, artifact and version of your new Maven component.
 
-image::/maven_webproject20.png[Webproject archetype with Maven]		
+image::maven_webproject20.png[Webproject archetype with Maven]		
 		
 [TIP]
 ====
@@ -38,16 +38,16 @@ Validate that there are no issues with the build.
 		
 Right-click your project and select the menu:Run As[Run on Server] menu entry.
 		
-image::/maven_webproject30.png[Start Maven project on server]	
+image::maven_webproject30.png[Start Maven project on server]	
 
-image::/maven_webproject40.png[Start Maven project on server]	
+image::maven_webproject40.png[Start Maven project on server]	
 	
-image::/maven_webproject50.png[Start Maven project on server]	
+image::maven_webproject50.png[Start Maven project on server]	
 			
 
-image::/maven_webproject60.png[Start Maven project on server]	
+image::maven_webproject60.png[Start Maven project on server]	
 			
 		
 If you open a browser you should be able to access your webapplication.
 		
-image::/maven_webproject70.png[Start Maven project on server]	
+image::maven_webproject70.png[Start Maven project on server]	

@@ -20,7 +20,7 @@ http://download.eclipse.org/technology/m2e/releases
 For the usage of Maven for Java projects, you only need the m2e component. 
 For Java web development you also want the m2e-wtp entry.
 		
-image::/m2einstallation10.png[m2e installation]
+image::m2einstallation10.png[m2e installation]
 
 [[maven_eclipseinstallation_index]]
 === Download the Maven index
@@ -29,7 +29,7 @@ By default, the Maven tooling does not download the Maven index for the Eclipse 
 Via the Maven index you can search for dependencies, select them and add them to your pom file. 
 To download the index, select menu:Windows[Preferences>Maven] and enable the _Download repository index updates on startup_ option.
 		
-image::/m2e_downloadindex10.png[Download the Maven index]
+image::m2e_downloadindex10.png[Download the Maven index]
 			
 After changing this setting, restart Eclipse. 
 This triggers the download of the Maven index. 

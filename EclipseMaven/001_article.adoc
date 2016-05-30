@@ -3,7 +3,7 @@
 :sectnums:                                                          
 :experimental:
 :icons:
-:imageDir:img
+:imagesdir: ./img
 Lars Vogel, Simon Scholz, (c) 2016 vogella GmbH
 Version 1.4, 29.05.2016
 

@@ -1,27 +1,27 @@
 [[resources_tycho]]
 == Eclipse Tycho resources
 
-https://wiki.eclipse.org/Tycho/Release_Notes[Tycho release notes]
+https://wiki.eclipse.org/Tycho/Release_Notes - Tycho release notes
 
-http://takari.io/2015/03/19/core-extensions.html[Blog post about Maven core extensions introduction]
+http://takari.io/2015/03/19/core-extensions.html - Blog post about Maven core extensions introduction
 
-https://wiki.eclipse.org/Tycho/Execution_Environments#Execution_environment_configuration[Specifying the Tycho execution environment]
+https://wiki.eclipse.org/Tycho/Execution_Environments#Execution_environment_configuration - Specifying the Tycho execution environment
 
-http://www.eclipse.org/community/eclipse_newsletter/2013/august/article3.php[CBI article from Thanh Ha]
+http://www.eclipse.org/community/eclipse_newsletter/2013/august/article3.php - CBI article from Thanh Ha
 
-http://wiki.eclipse.org/Tycho/Target_Platform[Tycho Target Platform]
+http://wiki.eclipse.org/Tycho/Target_Platform - Tycho Target Platform
 
-http://codeandme.blogspot.de/2012/12/tycho-build-1-building-plug-ins.html[Tycho blog series]
+http://codeandme.blogspot.de/2012/12/tycho-build-1-building-plug-ins.html - Tycho blog series
 
-http://www.slideshare.net/jsievers/tycho-tutorialecna2013[Tycho tutorial slides]
+http://www.slideshare.net/jsievers/tycho-tutorialecna2013 - Tycho tutorial slides
 
-git://git.eclipse.org/gitroot/tycho/org.eclipse.tycho-demo.git[Git repository for Tycho examples]
+git://git.eclipse.org/gitroot/tycho/org.eclipse.tycho-demo.git - Git repository for Tycho examples
 
-https://github.com/tesla/book-tycho/blob/master/en/01-introduction/01-chapter1.md[Tycho Book from the Tycho project]
+https://github.com/tesla/book-tycho/blob/master/en/01-introduction/01-chapter1.md - Tycho Book from the Tycho project
 
-http://wiki.eclipse.org/Tycho/Reference_Card[Tycho Reference Card]
+http://wiki.eclipse.org/Tycho/Reference_Card - Tycho Reference Card
 
-http://wiki.eclipse.org/Tycho/Target_Platform[Tycho Target Platform]
+http://wiki.eclipse.org/Tycho/Target_Platform - Tycho Target Platform
 
-https://wiki.eclipse.org/Tycho/How_Tos/Dependency_on_pom-first_artifacts[Tycho pom first artifacts]
+https://wiki.eclipse.org/Tycho/How_Tos/Dependency_on_pom-first_artifacts - Tycho pom first artifacts 
 

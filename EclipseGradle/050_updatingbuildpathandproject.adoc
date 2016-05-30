@@ -7,7 +7,7 @@
 Eclipse does currently not automatically update the classpath if the `build.gradle` file is updated. 
 Select menu:Gradle[Refresh Gradle Project] from the context menu of the project for that.
 		
-image::img/refreshgradlebuildpath.png[Refresh Gradle buildpath in Eclipse]
+image::refreshgradlebuildpath.png[Refresh Gradle buildpath in Eclipse]
 		
 This should be simpler. 
 Please add a comment to "https://bugs.eclipse.org/bugs/show_bug.cgi?id=491711[Simplify buildpath update in Eclipse Gradle] if you also want to have a simpler option

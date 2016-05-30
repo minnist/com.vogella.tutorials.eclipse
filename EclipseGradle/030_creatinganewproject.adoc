@@ -4,19 +4,19 @@
 The Eclipse Gradle tooling provides  a  wizard for the creation of  Java based Gradle projects.
 You can reach it via the menu:File[New > Other...] menu entry.
 
-image::img/gradle_new_wizard.png[New Gradle project wizard]
+image::gradle_new_wizard.png[New Gradle project wizard]
 
 
 When  you click on the btn:[Next >] button, you can define the name for your Gradle Java project and its location in the filesystem.
 And you can directly add your new project to certain working sets.
 	
-image::img/create_project_config_page.png[New Gradle project configuration page]
+image::create_project_config_page.png[New Gradle project configuration page]
 
 	
 Press the btn:[Finish] button to create the project. 
 This triggers the `gradle init --type java-library` command and imports the project into the Eclipse IDE.
 Press the btn:[Next >] button to get a preview of the project	which will be created.
 	
-image::img/create_project_preview_page.png[New Gradle project preview page]
+image::create_project_preview_page.png[New Gradle project preview page]
 
-image::img/create_project_result.png[New Gradle project wizard result]	
+image::create_project_result.png[New Gradle project wizard result]	

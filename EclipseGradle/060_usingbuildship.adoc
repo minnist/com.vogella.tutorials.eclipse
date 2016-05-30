@@ -3,11 +3,11 @@
 
 After successfully importing a Gradle project, the project is shown in the _Gradle Tasks_ view.
 
-image::img/tasks_view.png[The Gradle task view]
+image::tasks_view.png[The Gradle task view]
 
 By right clicking on a certain Gradle task in the Gradle Tasks view, you can run the selected Gradle task.
 
-image::img/run_gradle_task.png[Run Gradle task]
+image::run_gradle_task.png[Run Gradle task]
 
 
 By default the result is displayed in the _Gradle Executions_ view. 

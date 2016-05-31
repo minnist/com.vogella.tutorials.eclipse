@@ -46,7 +46,7 @@ Add your new plug-in to the bundles pom file.
 include::res/tests/aggregatorpom.xml[]     
 ----    
 
-[[plugin_featurerun]]
+[[plugin_unittestrun]]
 === Run the build with the tests
         
 Run the build from the main directory. This should work fine.

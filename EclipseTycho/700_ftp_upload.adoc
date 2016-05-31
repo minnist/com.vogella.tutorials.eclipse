@@ -33,8 +33,6 @@ If you only want to upload your p2 update site, you can configure the `org.apach
 include::res/deploy/pom2.xml[]
 ----
 	
-	
-
 You can now upload your p2 update site with the following command. 
 
 [source,shell]

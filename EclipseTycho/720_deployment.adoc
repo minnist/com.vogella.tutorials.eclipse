@@ -1,4 +1,4 @@
-[[deployment]]
+[[deployment_nexusp2]]
 == Deploy p2 updatesite to Nexus
 
 === Setup Distribution Management

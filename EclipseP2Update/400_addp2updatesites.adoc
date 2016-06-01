@@ -1,0 +1,14 @@
+[[addp2updatesites]]
+== Adding p2 update sites
+
+If you place a p2.inf file beside your product configuration file you can add update sites to your product. 
+The following listing is an example for that.
+
+[source]
+====
+instructions.configure=\
+  addRepository(type:0,location:http${#58}//download.eclipse.org/eclipse/updates/4.5,name:Eclipse Mars Update Site);\
+  addRepository(type:1,location:http${#58}//download.eclipse.org/eclipse/updates/4.5,name:Eclipse Mars Update Site);
+====
+
+image::addupdatesitesviaproduct.png[Add update site via product]

@@ -1,0 +1,46 @@
+[[p2touchpoints]]
+== Custom install actions (touchpoints) in p2
+	
+The Eclipse p2 functionality invokes actions (touchpoints) when an installable unit is installed, configured, or uninstalled. 
+For
+		example,
+		it is
+		possible to unzip or copy artifacts
+		or set file permissions.
+	
+	
+		The Eclipse p2 API uses install actions for this, called touchpoints.
+		By default, is supports two
+		touchpoint
+		types,
+		native and OSGi types. Native touchpoint
+		actions are
+		not directly related to Eclipse (such as file
+		commands)
+		while
+		the OSGi
+		ones
+		are
+		Eclipse specific.
+	
+	
+		It is possible to add custom touchpoint actions via the
+		<code>org.eclipse.equinox.p2.engine.action </code>
+		extension point.The class which implements this touchpoint action must implement
+		<code>ProvisioningAction</code>
+		.
+	
+	
+		p2 must be instructed to run this touchpoint. For this you need first to specify this action as requirement via a
+		MetaRequirements section in the
+		<filename>META-INF/p2.inf</filename>
+		file of the corresponding plug-in. It must also define how to invoke the execution of the custom touchpoint.
+	
+	
+		See
+		<xref linkend="resources_p2" />
+		for a detailed example how to set this up.
+	
+
+
+</section>

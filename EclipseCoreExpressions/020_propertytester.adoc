@@ -1,0 +1,77 @@
+== Expressions erweitern mit Property-Testern
+
+
+Ein Property Tester erlaubt es, die Ausdrücke zur Evaluierung von Expressions zu ergänzen. 
+Diese können beispielsweise bei der Aktivierung von Handlern für die Selektion verwendet werden,
+um Werte des selektierten Objekts abzufragen. 
+Nehmen wir an, wir möchten einen Handler nur dann aktivieren, wenn es sich bei der ausgewählten Adresse um eine Firma handelt.
+
+
+Dazu müssen wir unserem Plug-in zunächst eine Abhängigkeit zum Plug-in
+org.eclipse.core.expressions hinzufügen, da dieses den Extension Point zur Deklaration eigener
+Property Tester bereitstellt:
+Require-Bundle: [...],
+org.eclipse.core.expressions
+
+
+Nun können wir einen Property Tester deklarieren. Ein Property Tester bekommt eine eindeutige
+ID, eine implementierende Klasse und ist gültig für den angegebenen Objekttyp type. Der Name
+des Properties setzt sich aus einem Namespace und dem Namen zusammen, im folgenden
+Beispiel “com.example.addressbook.isCompany”:
+<extension point="org.eclipse.core.expressions.propertyTesters">
+<propertyTester
+id="com.example.addressbook.AddressPropertyTester"
+class="com.example.addressbook.AddressPropertyTester"
+type="com.example.addressbook.entities.Address"
+namespace="com.example.addressbook"
+properties="isCompany"/>
+</extension>
+
+Die Implementierung hat zur Evaluierung des Properties das receiver-Objekt (wie im type-
+Attribut deklariert) und den Namen des Properties zur Verfügung. Zusätzlich kann der Nutzer
+des Properties eine Liste von Argumenten und einen erwarteten Wert angeben, die dem
+PropertyTester übergeben werden:
+public class AddressPropertyTester extends PropertyTester {
+@Override
+public boolean test(Object receiver, String property, Object[] args, Object expectedValue) {
+return ((Address) receiver).isCompany();
+}
+}
+
+Ein solcher Property-Tester kann nun in test-Elementen verwendet werden:
+<test property="com.example.addressbook.isCompany" forcePluginActivation="true"/>
+Möchten wir beispielsweise einen Menüeintrag nur für Firmen aktivieren, könnten wir dies
+folgendermaßen erreichen:
+<extension point="org.eclipse.ui.handlers">
+<handler class="com.example.SomeHandler" commandId="com.example.SomeCommand">
+<activeWhen>
+<with variable="selection">
+<iterate ifEmpty="false" operator="or">
+<and>
+<instanceof value="com.example.addressbook.entities.Address"/>
+<test property="com.example.addressbook.isCompany"/>
+</and>
+</iterate>
+</with>
+</activeWhen>
+</handler>
+</extension>
+
+Ein solcher Property-Tester kann nun in test-Elementen verwendet werden:
+<test property="com.example.addressbook.isCompany" forcePluginActivation="true"/>
+Möchten wir beispielsweise einen Menüeintrag nur für Firmen aktivieren, könnten wir dies
+folgendermaßen erreichen:
+<extension point="org.eclipse.ui.handlers">
+<handler class="com.example.SomeHandler" commandId="com.example.SomeCommand">
+<activeWhen>
+<with variable="selection">
+<iterate ifEmpty="false" operator="or">
+<and>
+<instanceof value="com.example.addressbook.entities.Address"/>
+<test property="com.example.addressbook.isCompany"/>
+</and>
+</iterate>
+</with>
+</activeWhen>
+</handler>
+</extension>

@@ -1,0 +1,24 @@
+[[prerequisite_p2]]
+== Prerequisites
+
+	
+		This tutorial assumes that you have a basic understanding of
+		development
+		for the Eclipse platform.
+		Please see
+		<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html">Eclipse RCP Tutorial</ulink>
+		or
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plug-in Tutorial</ulink>
+		. It also assumes that you know how to create Eclipse feature
+		projects. Please see
+		<ulink url="http://www.vogella.com/tutorials/EclipseFeatureProject/article.html">Eclipse Feature and Fragment Tutorial</ulink>
+		for an introduction.
+	
+	
+		You should also know how to manually export products based on
+		product
+		configuration files, please see
+		<ulink url="http://www.vogella.com/tutorials/EclipseProductDeployment/article.html">Eclipse product and deployment</ulink>
+		.
+	
+</section>

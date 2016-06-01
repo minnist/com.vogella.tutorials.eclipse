@@ -1,0 +1,95 @@
+<section id="commmands_sourceprovider">
+	<title>Providing your own expression
+	 You can write your own Java class which can be used define a
+		variable which can then be used to define if a certain UI element
+		shall be active or not. For example you can read the authorization of
+		the user from your own class and then return the value which is assign
+		to the user. This return value can then be used in a visible / enabled
+		statement. This is similar to the usage of the core expressions we
+		have seen earlier.
+
+	 Create a RCP application
+		"de.vogella.rcp.commands.sourceprovider" with the template "Hello
+		RCP". 
+
+	We will create a source provider. This source provider can
+		provide variables which can be used in defining the visibility of
+		commands. Add the extension point "org.eclipse.ui.services" to your
+	 plug-in and create a new service provider. 
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sourceprovider10.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sourceprovider20.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	
+
+	 This defines a service which provides the variable
+		"de.vogella.rcp.commands.sourceprovider.active" to the workbench. This
+		class
+		must implement ISourceProvider. This
+		value can then be used
+		similar to
+		a core expression. Maintain the
+		following code. 
+	
+
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/sourceprovider/CommandState.java" />
+		</programlisting>
+	
+
+
+	 Create two commands
+		"de.vogella.rcp.commands.sourceprovider.command1" and
+		"de.vogella.rcp.commands.sourceprovider.command2". Create any handler
+		you want for the first command. Command2 will be used to change the
+		state in our ISourceProvider. Maintain the following code for the
+		handler.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/sourceprovider/Command2.java" />
+		</programlisting>
+	
+	 Add both commands to the menu. 
+	 Now use the state provided by your ISourceProvider in your
+		declaration of your menu. 
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sourceprovider30.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	
+
+	This looks in plugin.xml like the following.
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/sourceprovider/plugin.txt" />
+		</programlisting>
+	
+
+	If you now start your application can select the second command
+		the first command will not be available anymore. If you press it again
+		the first command will be displayed again.
+
+
+</section>

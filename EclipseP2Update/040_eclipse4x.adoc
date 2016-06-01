@@ -1,0 +1,11 @@
+[[eclipse4_update]]
+== Updating Eclipse RCP applications
+	
+To update your Eclipse 4 application you use the p2 API.
+The following code shows an example handler which performs an update of a complete Eclipse RCP application.
+The method annotated with <code>@Execute</code> configures the update operation and runs it.
+	
+[source,java]
+====
+include::res/P2UpdateHandler.java[]
+====

@@ -1,0 +1,31 @@
+<section id="resources">
+	<title>Links and Literature
+	
+	<section id="resources_eclipsecommands">
+		<title>Eclipse Commands Resources
+		
+			<ulink url="http://wiki.eclipse.org/Platform_Command_Framework"> http://wiki.eclipse.org/Platform_Command_Framework</ulink>
+			Command Framework wiki
+		
+		
+			<ulink url="http://wiki.eclipse.org/Command_Core_Expressions"> http://wiki.eclipse.org/Command_Core_Expressions</ulink>
+			Commands Core Expressions
+		
+
+		
+			<ulink
+				url="http://blog.eclipse-tips.com/2009/03/commands-part-6-toggle-radio-menu.html">
+				http://blog.eclipse-tips.com/2009/03/commands-part-6-toggle-radio-menu.html</ulink>
+			Blog series about Eclipse Command from Prakash G.R.
+		
+
+		
+			<ulink
+				url="http://hermanlintvelt.blogspot.com/2009/06/eclipse-rcp-commands-part-3-visiblewhen.html">
+				http://hermanlintvelt.blogspot.com/2009/06/eclipse-rcp-commands-part-3-visiblewhen.html</ulink>
+			Blog series about Eclipse Command from Herman Lintvelt
+		
+
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

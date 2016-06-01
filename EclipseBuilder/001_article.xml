@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse Builder - Tutorial
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008, 2009</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>16.10.2009</pubdate>
+		<releaseinfo>
+			Version 0.1
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Builder
+			 This article contains currently only a link to a tutorial for
+				builder and natures. Please move on..
+			 Currently in EARLY DRAFT.
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_overview.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseBuilder"?>
+</article>

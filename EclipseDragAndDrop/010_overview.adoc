@@ -1,0 +1,7 @@
+== Using drag and drop in SWT
+SWT supports drag and drop based on transfer types defined based on the `org.eclipse.swt.dnd.Transfer` class.
+Every widget element can define that it provides a certain transfer type as source.
+It can also define that it accepts a transfer type as destination.
+
+Eclipse provides several pre-defined transfer types. 
+To define your custom transfer type it is recommended to subclass the `org.eclipse.swt.dnd.ByteArrayTransfer` class.

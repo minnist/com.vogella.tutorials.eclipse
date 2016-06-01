@@ -1,0 +1,18 @@
+[[resources_p2]]]
+== Eclipse p2 updater resources
+
+https://wiki.eclipse.org/Equinox/p2 - The Eclipse p2 wiki
+	
+https://github.com/ifedorenko/p2-browser - p2 repository browser which allows to view the content of a p2 repository from Igor Fedorenko
+
+https://wiki.eclipse.org/Equinox/p2/Customizing_Metadata - Customizing metadata via p2 wiki
+	
+http://eclipsesource.com/blogs/2013/05/23/custom-touchpoints-in-p2 - Custom touch points in p2
+	
+http://pweclipse.blogspot.de/2012/02/p2-can-update-your-eclipseini.html - Using p2 touch points to update the eclipse.ini 
+
+http://eclipsesource.com/blogs/2012/06/01/eclipse-proxy-and-p2/ - Defining a proxy for p2 headless operations
+
+http://eclipsesource.com/blogs/2013/04/19/installing-eclipse-plug-ins-from-an-update-site-with-a-self-signed-certificate/ - Installing Eclipse Plug-ins from an Update Site with a self-signed certificate
+
+http://wiki.eclipse.org/Equinox/p2/Adding_Self-Update_to_an_RCP_Application - Adding p2 update to an RCP application

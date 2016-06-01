@@ -1,0 +1,37 @@
+[[p2intro]]
+== Eclipse application updates with p2
+
+[[p2intro_overview]]
+=== Eclipse application updates
+
+(((Application updates)))
+(((Updates)))
+(((p2 updates)))
+		
+The Eclipse platform provides an installation and update mechanism called _Eclipse p2_ (short: p2).
+This update mechanism allows you to update Eclipse applications and to install new functions.
+		
+The update and installation of functions with p2 is typical based on _feature projects_ (short: _features_). 
+It is possible to update complete products or individual features.
+In the terminology of p2 these features are _installable units_.
+		
+[[p2intro_creating]]
+=== Creating p2 update sites
+		
+Installable units can be grouped into a p2 repository. 
+A repository is defined via its URI and can point to a local file system or to a web server.
+A p2 repository is also called _update site_.
+		
+During the export of an Eclipse application you can select the _Generate p2 repository_ option in the Eclipse product export dialog.
+This option is highlighted in the following screenshot.
+
+image::deploy_p2_20.png[Selection in the export wizard for the metadata repository creation]
+		
+If you select this option, an update site iscreated in a sub-folder called _repository_ of the export directory.
+		
+Typically this directory is copied to a web server so users can install new functionality or upgrades using the p2 mechanism.
+
+The Eclipse update mechanism also supports file based update sites. 
+File based update sites are useful for testing the update functionality.
+		
+An update site contains an artifact and a metadata repository.

@@ -41,7 +41,7 @@ This step will take you through creating and setting up a GitHub account.  You m
 * Verify you can successfully log in to your newly created account
 * Optionally create and associate a Gravatar with the e-mail address you registered your account with
 <emphasis role="strong"> <ulink url="http://gravatar.com/site/signup/">http://gravatar.com/site/signup/</ulink>
-</emphasis> The image associated will be displayed on GitHub when viewing your commits, issues, comments and on your profile page.
+_ The image associated will be displayed on GitHub when viewing your commits, issues, comments and on your profile page.
 </section>
 <section id="_exploring_the_eclipse_repository_on_github">
 <title>Exploring the Eclipse Repository on GitHub
@@ -49,15 +49,15 @@ The Eclipse mirrored repositories on GitHub allow you to explore and track what 
 * Navigate in a web browser to <ulink url="https://github.com/eclipse">https://github.com/eclipse</ulink> to see a listing of all the repositories
 * You can explore bookmark different URLs for projects and views you are interested in such as:
 <emphasis role="strong"> All of Matthias Sohn’s EGit commits
-</emphasis>* <ulink url="https://github.com/eclipse/egit/commits/master?author=msohn">https://github.com/eclipse/egit/commits/master?author=msohn</ulink>
+_* <ulink url="https://github.com/eclipse/egit/commits/master?author=msohn">https://github.com/eclipse/egit/commits/master?author=msohn</ulink>
 <emphasis role="strong"> All of the Orion server branches
-</emphasis>* <ulink url="https://github.com/eclipse/orion.server/branches">https://github.com/eclipse/orion.server/branches</ulink>
+_* <ulink url="https://github.com/eclipse/orion.server/branches">https://github.com/eclipse/orion.server/branches</ulink>
 <emphasis role="strong"> Impact chart for the Tycho project
-</emphasis>* <ulink url="https://github.com/eclipse/tycho/graphs/impact">https://github.com/eclipse/tycho/graphs/impact</ulink>
+_* <ulink url="https://github.com/eclipse/tycho/graphs/impact">https://github.com/eclipse/tycho/graphs/impact</ulink>
 <emphasis role="strong"> See what changed between the EGit 1.0 and 1.1 releases
-</emphasis>* <ulink url="https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r">https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r</ulink>
+_* <ulink url="https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r">https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r</ulink>
 <emphasis role="strong"> Download the latest SWT platform source code
-</emphasis>* <ulink url="https://github.com/eclipse/eclipse.platform.swt/downloads">https://github.com/eclipse/eclipse.platform.swt/downloads</ulink>
+_* <ulink url="https://github.com/eclipse/eclipse.platform.swt/downloads">https://github.com/eclipse/eclipse.platform.swt/downloads</ulink>
 * You can also select to watch a repository and you will be notified in your dashboard when a new tag or branch is created.
 <inlinemediaobject>
   <imageobject>

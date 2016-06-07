@@ -16,7 +16,7 @@
 		fetch the latest state from the central repository.
 		This will update
 		the remote tracking branch
-		<emphasis>origin/master</emphasis>
+		_origin/master_
 		which will be the base
 		for your local changes.
 	
@@ -29,7 +29,7 @@
 		<listitem>
 			
 				Select your repository and click
-				<emphasis>Fetch from Upstream</emphasis>
+				_Fetch from Upstream_
 			
 			
 				<inlinemediaobject>
@@ -85,7 +85,7 @@
 
 	
 		Now, after the remote tracking branch
-		<emphasis>origin/master</emphasis>
+		_origin/master_
 		has been updated,
 		it is a good basis for creating a new local feature branch.
 	

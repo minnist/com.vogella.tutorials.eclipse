@@ -1,6 +1,6 @@
 <section id="_change_a_series_of_commits">
 	<title>Change a series of commits
-	<simpara>In this exercise you learn how you can rewrite the local
+	In this exercise you learn how you can rewrite the local
 		history
 		before you share it with others. After you have
 		committed locally you
@@ -8,22 +8,22 @@
 	</simpara>
 	<section id="_preparation4">
 		<title>Preparation
-		<simpara>
+		
 			Follow the exercise
 			<ulink url="merge-rebase-and-resolving-conflicts.html">
 				Merge, Rebase and Resolving Conflicts
 			</ulink>
 			. After the rebase you end up
 			with a branch which is two commits ahead of the remote branch
-			<emphasis>origin/master</emphasis>
+			_origin/master_
 			, it&#8217;s the local
-			<emphasis>master</emphasis>
+			_master_
 			branch in the screenshot
 			below. Now you realize that you want to change the first commit and
 			keep the second one on top
 			of the changed commit.
 		</simpara>
-		<simpara>
+		
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/history-view-8.png"/>
@@ -38,18 +38,18 @@
 		<title>Change the first commit
 		<itemizedlist>
 			<listitem>
-				<simpara>
+				
 					Create a new branch that points to the commit you want to change,
 					in
 					the screenshot below it&#8217;s the
-					<emphasis>Add multiply operation</emphasis>
+					_Add multiply operation_
 					commit. Use
-					<emphasis>Create Branch</emphasis>
+					_Create Branch_
 					to create a new branch, e.g. named
-					<emphasis>newMaster</emphasis>
+					_newMaster_
 					.
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-9.png" scale="40"/>
@@ -59,7 +59,7 @@
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-10.png"/>
@@ -71,34 +71,34 @@
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					Edit the files in the workspace, e.g. add a class comment for the
-					<emphasis>Multiply</emphasis>
+					_Multiply_
 					class.
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					Now create a new commit with the combined changes of your first
 					commit and your current changes:
 				</simpara>
 				<itemizedlist>
 					<listitem>
-						<simpara>
+						
 							Select your project in the Package Explorer and select
-							<emphasis>Team &gt; Commit</emphasis>
+							_Team &gt; Commit_
 							or click
-							<emphasis>Commit</emphasis>
+							_Commit_
 							in the Git Toolbar.
 						</simpara>
 					</listitem>
 					<listitem>
-						<simpara>
+						
 							Press the
-							<emphasis>Amend</emphasis>
+							_Amend_
 							button as shown below:
 						</simpara>
-						<simpara>
+						
 							<inlinemediaobject>
 								<imageobject>
 									<imagedata fileref="./images/commit-changes-with-amend-2.png"/>
@@ -110,17 +110,17 @@
 						</simpara>
 					</listitem>
 					<listitem>
-						<simpara>
+						
 							Click the Commit button
 						</simpara>
 					</listitem>
 				</itemizedlist>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					Now your history should look like this:
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-11.png"/>
@@ -130,7 +130,7 @@
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-				<simpara>Note that the first version of your changed commit is still
+				Note that the first version of your changed commit is still
 					there, but
 					your branch points now to the new one.
 					Git always creates new commits
@@ -147,14 +147,14 @@
 		<title>Cherry-pick the rest
 		<itemizedlist>
 			<listitem>
-				<simpara>
+				
 					Select
-					<emphasis>Cherry Pick</emphasis>
+					_Cherry Pick_
 					on the other commit. This will add the
 					difference of this commit compared to its parent on top of your new
 					commit.
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/cherry-pick.png" scale="40"/>
@@ -166,10 +166,10 @@
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					You may have to resolve conflicts
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/cherry-pick-conflicts.png" scale="40"/>
@@ -179,7 +179,7 @@
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-				<simpara>
+				
 					In that case, edit the conflicting files, add the changes and
 					commit
 					like in the exercise
@@ -190,10 +190,10 @@
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					The result should look like this:
 				</simpara>
-				<simpara>
+				
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-12.png"/>
@@ -205,10 +205,10 @@
 				</simpara>
 			</listitem>
 		</itemizedlist>
-		<simpara>
+		
 			If you want to change more than one commit in a series git offers the
 			powerful tool
-			<emphasis>git rebase --interactive</emphasis>
+			_git rebase --interactive_
 			. This is not yet available in
 			EGit, but can be used from the Git commandline.
 		</simpara>

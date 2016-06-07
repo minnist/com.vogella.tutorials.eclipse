@@ -24,7 +24,7 @@
 		<title>Configure push
 		
 			First you have to configure that a push to origin pushes to the master branch. Select
-			<emphasis>Configure Push&#8230;</emphasis>
+			_Configure Push&#8230;_
 		
 		
 			<inlinemediaobject>
@@ -38,11 +38,11 @@
 		
 		
 			Now enter master into the
-			<emphasis>Remote branch</emphasis>
+			_Remote branch_
 			field. Leave
-			<emphasis>HEAD</emphasis>
+			_HEAD_
 			in the
-			<emphasis>Local branch</emphasis>
+			_Local branch_
 			field. This means that always the currently checked out
 			commit will be pushed to master (and of course all its
 			ancestors which are not yet in the remote repository).
@@ -66,9 +66,9 @@
 		
 		
 			Select
-			<emphasis>Push to Upstream</emphasis>
+			_Push to Upstream_
 			in the Git Repositories view or
-			<emphasis>Team &gt; Push to Upstream</emphasis>
+			_Team &gt; Push to Upstream_
 			in the package explorer.
 			You should get the following error dialog, in case someone else pushed before you:
 		

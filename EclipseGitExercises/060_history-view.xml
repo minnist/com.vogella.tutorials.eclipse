@@ -15,36 +15,36 @@ Find out how many branches are known which have commits changing `Calculator.jav
 			If you double-click on a file touched by a commit in the History View
 			you will get an editor with the content of that file in that commit.
 			If you turn on
-			<emphasis>Compare Mode</emphasis>
+			_Compare Mode_
 			(h) then a compare view opens which
 			compares the state of the file during that commit to the state in the
 			previous commit. This tells which lines have been changed by a
 			certain
 			commit.
 		</simpara>
-		<simpara>Once you have selected a commit in the History View the
+		Once you have selected a commit in the History View the
 			context menu
 			offers a lot of operations you can do on a commit.
 		</simpara>
 		<itemizedlist>
 			<listitem>
-				<simpara>
+				
 					Create a new branch starting from the commit with id
-					<emphasis>27792504fad8&#8230;</emphasis>
+					_27792504fad8&#8230;_
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					Compare commit
-					<emphasis>92f83b4af8e&#8230;</emphasis>
+					_92f83b4af8e&#8230;_
 					with the second last commit on your
 					branch. Which files are different in these two commits?
 				</simpara>
 			</listitem>
 			<listitem>
-				<simpara>
+				
 					Inspect commit
-					<emphasis>a8c0e743721d81072de&#8230;</emphasis>
+					_a8c0e743721d81072de&#8230;_
 					in the Commit Viewer. Get a
 					single list of all modifications done by this commit by switching to
 					the Diff pane in Commit Viewer.

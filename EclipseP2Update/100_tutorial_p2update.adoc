@@ -90,73 +90,40 @@ Ensure to adjust the `REPOSITORY_LOC` constant in this code to the actual p2 udp
 		
 	</section>
 
-	<section id="tutorial__p2exportA">
-		<title>Create the initial product export
+=== Create the initial product export
 		
-			Build your product via the Tycho build system on the command line.
-			Alternatively, if you only want to test the update
-			functionality,
-			export your product via the
-			<guilabel>Eclipse Product export wizard</guilabel>
-			on
-			the
-			<guilabel>Overview</guilabel>
-			tab of the product file.
+Build your product via the Tycho build system on the command line.
+If you do not want to use Tycho, you can also export your product via the Eclipse _Product export_ link on the _Overview_ tab of the product file.
 		
-		<warning>
 			
-				Do not choose the
-				<code>REPOSITORY_LOC</code>
-				path as destination.
-			
-		</warning>
-	</section>
+Do not choose the _REPOSITORY_LOC_ path as destination, this path is later used to place the update site in.
 
-	<section id="tutorial__p2runA">
-		<title>Start the exported application and check for updates
-		
-			Start your exported application from the export directory. Check
-			for updates
-			by
-			invoking your update handler. Your
-			handler should give
-			you the feedback that no updates are available.
-		
-	</section>
+=== Start the exported application and check for updates
 
-	<section id="tutorial__p2exportB">
-		<title>Make a change and export the product again
+Start your exported application from the export directory. 
+Check for updates by invoking your update handler. 
+Your handler should give you the feedback that no updates are available.
 		
-			Change a (visible) label in your application, e.g., remove the
-			generated top trimbar and increment the product version on the
-			overview page of the product editor to indicate a functional change.
+
+=== Make a change and export the product again
+		
+Change a (visible) label in your application, e.g., remove the generated top trimbar.
+Increment the product version on the overview page of the product editor to indicate a functional change.
 		
 		
-			Run the Tycho build again or export your product again via the UI. Use a different export folder than you did
-			before. You don't want to override the existing exported application.
-			Make sure to select the
-			<guilabel>Generate p2 repository</guilabel>
-			option on the export dialog.
-		
-		<warning>
+Run the Tycho build again or export your product again via the UI. 
+Use a different export folder than you did before. Y
+ou don't want to override the existing exported application.
+Make sure to select the _Generate metadata repository_ option on the export dialog.
+Do not export to the _REPOSITORY_LOC<_ path.
 			
-				Again, do not export to the
-				<code>REPOSITORY_LOC</code>
-				path.
-			
-		</warning>
 		
-			In the new export folder you find a sub-folder called
-			<wordasword>repository</wordasword>
-			. Copy this sub-folder to the
-			<code>REPOSITORY_LOC</code>
-			path.
+In the new export folder you find a sub-folder called _repository_. 
+Copy this sub-folder to the _REPOSITORY_LOC_ path.
 		
-	</section>
-[[tutorial__p2exportC]]
 === Update the application
 		
-Start your exported application from <<tutorial__p2exportA>> and check again for updates via your menu entry.
+Start your exported application and check again for updates via your menu entry.
 If everything was implemented correctly, your handler should report that updates are available. 
 Install these updates and restart the application.
 		

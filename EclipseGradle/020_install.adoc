@@ -14,12 +14,12 @@ image::marketplace_buildship.png[Eclipse Gradle installation via the Marketplace
 
 You also can use the menu:Help[Install New Software] menu path to install the Gradle tooling.
 
-For example, the following URL can be used for the Eclipse 4.5 (Mars) release: http://download.eclipse.org/releases/mars
+For example, the following URL can be used for the Eclipse 4.6 (Neon) release: http://download.eclipse.org/releases/neon
 
 
 image::updatesite_dialoggradle.png[Eclipse Gradle installation via the update manager]
 
 			
 The Eclipse Gradle project provides also other updates sites, e.g., for developer builds. 
-See https://projects.eclipse.org/projects/tools.buildship/downloads[Buildship download page] for details.
+See the Buildship download page for details: https://projects.eclipse.org/projects/tools.buildship/downloads
 		

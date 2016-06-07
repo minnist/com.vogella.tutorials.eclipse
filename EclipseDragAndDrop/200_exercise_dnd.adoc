@@ -74,10 +74,10 @@ The second view accepts drops.
 
 [source,java]
 ----
-include::res/dnd/views/TableView.java[]
+include::res/views/TableView.java[]
 ----
 
 [source,java]
 ----
-include::res/dnd/views/TreeView.java[]
+include::res/views/TreeView.java[]
 ----		

@@ -1,8 +1,9 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
+include 'EclipseJDTContributions'
 include 'EclipseJDTQuickfix'
-include 'EclipseResources'
 include 'EclipseJDTRefactoring'
+include 'EclipseResources'
 include 'EclipseGradle'
 include 'EclipseMaven'
 include 'EclipseTycho'

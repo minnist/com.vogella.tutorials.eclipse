@@ -1,7 +1,0 @@
-
-<section id="resources_jdtquickfixes">
-	<title>Further JDT contribution links
-	<para>
-		TODO, not sure if that still makes sense, if 010_overview contains mainly links.
-	</para>
-</section>

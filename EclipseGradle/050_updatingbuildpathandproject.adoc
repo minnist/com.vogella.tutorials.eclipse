@@ -12,7 +12,7 @@ image::refreshgradlebuildpath.png[Refresh Gradle buildpath in Eclipse]
 [[addgradlesupporttoexistingeclipseproject]]
 === Add Gradle support to existing Eclipse project
 
-To convert a Java project to use Gradle, select menu:Gradle[>Add Gradle Nature] from the context menu of the project.
+To convert a Java project to use Gradle, select menu:Gradle[Add Gradle Nature] from the context menu of the project.
 
 image::addgradlenature10.png[]
 

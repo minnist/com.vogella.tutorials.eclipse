@@ -5,17 +5,15 @@
 === Updating Eclipse with the latest changes in the Gradle build file
 
 Eclipse does currently not automatically update the classpath if the `build.gradle` file is updated. 
-Select menu:Gradle[Refresh Gradle Project] from the context menu of the project for that.
+Select menu:Gradle[Refresh Gradle Project] from the context menu of the project or from your build.gradle file for that.
 		
 image::refreshgradlebuildpath.png[Refresh Gradle buildpath in Eclipse]
 		
-This should be simpler. 
-Please add a comment to "https://bugs.eclipse.org/bugs/show_bug.cgi?id=491711[Simplify buildpath update in Eclipse Gradle] if you also want to have a simpler option
-	
 [[addgradlesupporttoexistingeclipseproject]]
 === Add Gradle support to existing Eclipse project
 
-Currently the Gradle tooling for Eclipse does not offer the option to convert an existing project to Gradle. 
-The easiest way to convert an existing project is currently to delete the project from the current workspace, to add a build.gradle file and to import it via the Gradle import wizard.
+To convert a Java project to use Gradle, select menu:Gradle[>Add Gradle Nature] from the context menu of the project.
 
-Please add a comment to https://bugs.eclipse.org/bugs/show_bug.cgi?id=465355[Provide option to convert an Eclipse project to Gradle] in case you want to have project conversion better supported by the Eclipse Gradle tooling.
+image::addgradlenature10.png[]
+
+If you present you need to add a _build.gradle_ file and _settings.gradle_ manually.

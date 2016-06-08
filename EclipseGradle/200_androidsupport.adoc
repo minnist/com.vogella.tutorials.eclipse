@@ -4,3 +4,5 @@
 Currently the Buildship tooling does not support setting up the classpath for Android project. 
 But you can already import Android projects into Eclipse and run the Gradle tasks via the _Gradle Task_ view.
 	
+
+	

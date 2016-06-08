@@ -16,4 +16,4 @@ To convert a Java project to use Gradle, select menu:Gradle[Add Gradle Nature] f
 
 image::addgradlenature10.png[]
 
-If you present you need to add a _build.gradle_ file and _settings.gradle_ manually.
+Run the 'gradle init' task to create the initial Gradle files, in case you do not have them yet.

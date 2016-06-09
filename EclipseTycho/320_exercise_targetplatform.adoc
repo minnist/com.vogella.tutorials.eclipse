@@ -10,9 +10,9 @@ Right-click on the new project and select the menu:New[Other>Plug-in Development
 
 WARNING: The name is actually important. It must be the name of the Maven artifact id followed by .target.
     
-Add at least the _Eclipse RCP SDK_ to your target definition file.
+Add the _Eclipse RCP SDK_ and _Equinox Target Components_ to your target definition file.
 
-image::tycho_creatingtargetdefinitionfile10.png[Content of the target definition file]
+image::tycho_creatingtargetdefinitionfile.png[Content of the target definition file]
 
 [NOTE]  
 ====

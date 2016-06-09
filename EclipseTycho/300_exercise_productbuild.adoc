@@ -95,9 +95,7 @@ include::res/exercise/rcp/bundlespomrcp.xml[]
 
 [[plugin_aggregatorproduct]]
 === Validate setup
-		
-Add the two new projects to your aggregator pom and run the build. 
-After the build you find zip and extracted versions of your product in the target/products folder.
-		
+
+Run the build and after the build you find zip and extracted versions of your product in the target/products folder.
 
 image::tycho_productbuildresult10.png[Tycho product build result]	

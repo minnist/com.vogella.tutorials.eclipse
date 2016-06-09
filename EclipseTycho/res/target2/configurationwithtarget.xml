@@ -12,14 +12,15 @@
   <mars-repo.url>http://download.eclipse.org/releases/mars</mars-repo.url>
  </properties>
 
+ <!-- Repositories should be commented out to only use the target definition # <1>
  <repositories>
   <repository>
    <id>mars</id>
    <url>${mars-repo.url}</url>
    <layout>p2</layout>
   </repository>
-
  </repositories>
+ -->
 
  <build>
   <plugins>
@@ -35,7 +36,7 @@
     <artifactId>target-platform-configuration</artifactId>
     <version>${tycho.version}</version>
     <configuration>
-     <target> # <1>
+     <target> # <2>
         <artifact>
             <groupId>com.vogella.tycho</groupId>
             <artifactId>com.vogella.tycho.target</artifactId>

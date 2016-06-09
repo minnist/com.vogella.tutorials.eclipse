@@ -47,6 +47,7 @@ Finally activate the usage of the target platform.
 include::res/target2/configurationwithtarget.xml[]     
 ----    	
 
-<1> This block activates the usage of the target definition file
+<1> This should be commented out or removed, since only the target definition should be used now
+<2> This block activates the usage of the target definition file
 
 

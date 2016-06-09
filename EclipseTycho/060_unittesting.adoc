@@ -47,7 +47,7 @@ If you run UI tests, you have to enabled that explicitly via the `useUIHarness` 
 		 <plugin>
 			<groupId>org.eclipse.tycho</groupId>
 			<artifactId>tycho-surefire-plugin</artifactId>
-			<version>${tycho-version}</version>
+			<version>${tycho.version}</version>
 			<configuration>
 				<useUIHarness>true</useUIHarness>
 			</configuration>
@@ -79,7 +79,7 @@ If you define a dependency you include also their transitive dependencies, to th
    <plugin>
     <groupId>org.eclipse.tycho</groupId>
     <artifactId>tycho-surefire-plugin</artifactId>
-    <version>${tycho-version}</version>
+    <version>${tycho.version}</version>
     <configuration>
      <useUIHarness>true</useUIHarness>
      <dependencies>

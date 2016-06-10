@@ -16,7 +16,7 @@ The test execution is done via the Tycho Surefire plug-in which is aware of plug
 
 	<!--parent pom...  -->
 
-	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<artifactId>com.vogella.tycho.rcp.tests</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>eclipse-test-plugin</packaging>
 </project>
@@ -38,7 +38,7 @@ If you run UI tests, you have to enabled that explicitly via the `useUIHarness` 
 
 	<!--parent pom... -->
 
-	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<artifactId>com.vogella.tycho.rcp.tests</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>eclipse-test-plugin</packaging>
 
@@ -70,7 +70,7 @@ If you define a dependency you include also their transitive dependencies, to th
 
  <!--parent pom... -->
 
- <artifactId>com.vogella.tycho.unittests</artifactId>
+ <artifactId>com.vogella.tycho.rcp.tests</artifactId>
  <version>1.0.0-SNAPSHOT</version>
  <packaging>eclipse-test-plugin</packaging>
 
@@ -114,7 +114,7 @@ This selection can be configured via the `includes` parameter.
 
 	<!--parent pom... -->
 
-	<artifactId>com.vogella.tycho.unittests</artifactId>
+	<artifactId>com.vogella.tycho.rcp.tests</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>eclipse-test-plugin</packaging>
 

@@ -1,0 +1,18 @@
+= Oomph - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2016 vogella GmbH
+Version 0.1, 13.06.2016
+
+[abstract]
+This tutorial is supposed to describe how to use Eclipse Oomph to create a proper out of the box Eclipse installation and how to create and maintain setup files for Oomph.
+				
+include::010_overview.adoc[]
+include::020_oomph_installer.adoc[]
+
+include::008_resourceslocal.adoc[]
+
+

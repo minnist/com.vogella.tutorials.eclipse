@@ -1,0 +1,36 @@
+== Oomph Installer and predefined profiles
+
+=== Download the Oomph installer
+
+The Oomph installer can be found on http://www.eclipse.org/downloads/
+
+image::oomph-download.png[]
+
+The oomph installer itself is a small Eclipse application and about 44 MB in terms of size. 
+
+When starting the Oomph installer a certain EPP can be chosen and configured.
+
+image::oomph-installer.png[]
+
+In order to work with the previously mentioned profiles, one can switch to the _ADVANCED MODE..._
+
+image::oomph-installer-advanced.png[]
+
+In the advanced mode a certain EPP can also be chosen and when pressing btn:[Next >] a certain profile can be chosen.
+
+image::oomph-installer-profiles.png[]
+
+Out of the box the installer provides certain default categories containing different profiles, e.g., for _Eclipse Projects_.
+But it is also able to identify user defined profiles like the _Vogella-Setup_.
+
+Additional user setups can be added by using the green plus button besides the _filter text_.
+
+Depending on the chosen profiles there will be some extra varibles for the installation on the next page.
+
+image::oomph-installer-variables.png[]
+
+After the variables are configured properly the last wizard page will give an overview about the setup tasks.
+
+image::oomph-installer-setup-tasks.png[]
+
+Once btn:[Finish] has been clicked all the tasks will be processed and a pre-configured Eclipse installation will be started.

@@ -12,6 +12,19 @@ We decide that our software tests should test the API defined by the plug-in, th
 
 [[exercisetycho_unit_testproject]]
 
+=== Adding the test dependencies
+
+For testing usually JUnit is used, but also libraries like Hamcrest and Mockito.
+
+Therefore they are added to the target platform by using the http://download.eclipse.org/tools/orbit/downloads/[Orbit] repository.
+
+NOTE: The Orbit repository URLs do change quite regulary. Nevertheless the current one for Neon is http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/. 
+In case this is not valid any more go to http://download.eclipse.org/tools/orbit/downloads/[Orbit] and look for the latest Orbit repository URL.
+
+So for test purposes the target definition could look like this:
+
+image::target-platform-testing.png[]
+
 === Create a new tests folder
 
 Create a new _tests_ folder in the root _tychoexample_ folder.

@@ -1,0 +1,46 @@
+[[e4commandsin3x]]
+== Adding e4 commands, menus and toolbars to a 3.x API based applications
+
+=== Adding e4 menu entries
+
+Menus, handlers and commands can be contributed to an Eclipse application via model fragments.
+To do this, you only need to know the ID of the element to which you want to contribute.
+The ID of the Eclipse IDE and Eclipse 3.x RCP applications is hard coded to the `org.eclipse.e4.legacy.ide.application` value.
+
+TIP: You can use the model spy from the e4 tools project to identify the ID of the element you want to contribute too.
+See <<modelspyintroduction>>.
+
+With the correct ID you can create model fragments that contribute to the corresponding application model element.
+The
+following screenshot demonstrate how to contribute to the
+<wordasword>menuContributions</wordasword>
+feature of the Eclipse IDE.
+
+image::modelcontribution10.png[Contributing to the Eclipse menu]
+
+After you added a MenuContribution item you can contribute a menu.
+The `Parent-ID` must be the ID of the menu your are contributing to.
+
+image::modelcontribution20.png[Contributing to the Eclipse menu]
+
+image::modelcontribution30.png[Contributing to the Eclipse menu]
+
+The model fragment must be registered in the plugin.xml file via an extension to the `org.eclipse.e4.workbench.model` extension point, as demonstrated in the following listing.
+
+[source, java]
+----
+include::examples/extend/plugin.xml
+----
+
+=== Error analysis
+
+In case of problems, check the source code of plugin.xml and validate that your model fragment is included.
+Verify the name of the referred model fragment and ensure all the defined ID are available in the running configuration.
+
+=== Adding e4 toolbar entries to the appliation window
+
+Similar to menus you can contribute toolbar contributions.
+This is demonstrated in <<firstplugin_migratione4_toolbar>>.
+
+NOTE: This approach does currently not work for view toolbars.
+

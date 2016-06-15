@@ -1,0 +1,25 @@
+== Exercise: Create a feature for your plug-in
+
+=== Create a feature project
+
+Create a feature project for your plug-in and add your plug-in to this feature.
+You create a feature project via menu:File[New >Other... > Plug-in Development >Feature Project].
+
+Create the feature project according to the following screenshots.
+image::pluginfeature10.png[Creating a feature project for the plug-in export]
+
+image::pluginfeature20.png[Creating a feature project for the plug-in export]
+
+=== Create a category definition
+
+In your feature project create a new category definition, via the menu entry menu:File[New >Other... > Plug-in development >Category Definition].
+
+image::categorydefinition10.png[]
+
+Press the btn:[New Category] button and create a category with a name which describes your functionality.
+Add your feature to this category.
+
+image::categorydefinition20.png[]
+
+image::categorydefinition30.png[]
+

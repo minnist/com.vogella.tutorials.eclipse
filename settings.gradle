@@ -14,5 +14,6 @@ include 'EclipseCoreExpressions'
 include 'EclipseDragAndDrop'
 include 'EclipseP2Update'
 include 'EclipseBuilder'
+include 'EclipsePlugin'
 include 'Oomph'
 

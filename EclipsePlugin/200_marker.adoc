@@ -1,0 +1,12 @@
+[[resourcemarker]]
+== Resources and Marker
+
+Eclipse represents Resources like _Projects_, _Files_, _Folders_, _Packages_ as `IResource`.
+
+Marker represent additional information for resources, e.g., an error marker.
+Every marker can have attributes (key / value combination).
+Markers can be displayed in the standard view, e.g., the _Task_, _Bookmark_ or the _Problems_ view.
+To be displayed in these views, you have to use predefined attributes.
+
+The following will demonstrate how to create marker for a selected resource.
+

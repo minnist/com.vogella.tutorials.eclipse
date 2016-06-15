@@ -1,0 +1,38 @@
+== Exercise: Adding e4 part descriptors to 3.x based applications
+
+=== Target
+
+In this exercise you add a model based part contribution to an Eclipse 3.x RCP application.
+
+=== Adding a part descriptor </title>
+
+Create a simple plug-in called `com.vogella.plugin.partdescriptor`.
+
+Add the following dependencies to your manifest file.
+
+* org.eclipse.core.runtime
+* org.eclipse.jface
+* org.eclipse.e4.ui.model.workbench
+* org.eclipse.e4.ui.di
+
+Create the following class
+
+[source, java]
+----
+include::examples/migration/PartEclipse4x.java[]
+----
+
+Add a new model fragment to this plug-in via menu:File[New > Other... >Eclipse 4 > Model >New Model Fragment].
+
+image::ide_partdescriptor10.png[Adding a part descriptor to the Eclipse IDE]
+
+image::ide_partdescriptor20.png" scale="30[Adding a part descriptor to the Eclipse IDE]
+
+image::ide_partdescriptor40.png" scale="30[Adding a part descriptor to the Eclipse IDE]
+
+=== Validating
+Start an instance of the Eclipse IDE and validate that you can open the parts via the Quick Access box (shortcut Ctrl+3).
+
+NOTE:In Eclipse 4.4 the part descriptor can only be opened via the Quick Access box.
+In Eclipse 4.5 it is planned that it can also be opened via the menu:Window[Show View] menu entry.
+

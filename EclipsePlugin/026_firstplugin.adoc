@@ -1,0 +1,125 @@
+== Exercise: Add a e4 menu and toolbar to the Eclipse IDE
+
+=== Target of this exercise
+
+In this exercise you create a plug-in which contributes an e4 menu entry to a 3.x based application menu.
+
+=== Creating a plug-in project
+
+Create a new plug-in project called `com.vogella.plugin.first`
+via
+menu:File[New > Project... > Plug-in Development >Plug-in Project]
+
+Enter the data as depicted in the following screenshots.
+
+image::eclipseideplugin10.png[]
+
+Press the _Next_ button.
+
+image::eclipseideplugin20.png[]
+
+Press the _Next_ button.
+
+Select the _Hello, World Command_ template and press the _Next_ button. This template uses the 3.x API, which you convert to the e4 API in <<firstplugin_migratione4>>.
+
+image::eclipseideplugin30.png[]
+
+In the last page of the wizard you can customize some suggested values. You can leave the default values and press the btn:[Finish] button.
+
+image::eclipseideplugin40.png[]
+
+Eclipse may ask you if you want to switch to the plug-in development perspective.
+Answer _Yes_ if you are prompted.
+
+image::eclipseideplugin50.png[]
+
+As a result the following project is created.
+
+image::eclipseideplugin60.png[]
+
+=== Starting an Eclipse runtime IDE with your plug-in
+
+Start a new Eclipse IDE instance and validate that your menu and toolbar entry are available.
+See <xref linkend="runtimeeclipse_starting" /> for more information on how to start an instance of the Eclipse IDE with additional plug-ins.
+
+After launching the Eclipse IDE instance, you see the sample menu, contributed by your plug-in.
+After clicking the menu entry, you see a message box.
+
+image::eclipseideplugin80.png[]
+
+image::eclipseideplugin90.png[]
+
+[[firstplugin_migratione4_manifest]]
+=== Adding the plug-in dependencies for the e4 API
+
+Add a dependency to the `org.eclipse.e4.core.di`
+plug-in in the manifest file of the newly created plug-in.
+
+=== Creating the handler class
+
+Create the following class based on the generated handler class.
+
+include::./examples/first/SampleE4Handler.java[]
+
+=== Creating a model contribution
+
+Select menu:New[Other... > Eclipse 4 > Model >New Model Fragment] from the context menu of the plug-in project.
+
+image::migrategenerated10.png[Create Model Fragment, step 1]
+
+Press the _Finish_ button.
+image::migrategenerated20.png[Create Model Fragment, step 2]
+
+Create three model fragment entries in your new file, all of them should be contributing to the `org.eclipse.e4.legacy.ide.application` element id.
+
+Use the following screenshots to define the new contribution.
+
+image::migrategenerated30.png[Create Model Fragment, step 3]
+
+image::migrategenerated40.png[Create Model Fragment, step 4]
+
+image::migrategenerated50.png[Create Model Fragment, step 5]
+
+image::migrategenerated60.png[Create Model Fragment, step 6]
+
+image::migrategenerated70.png[]
+
+image::migrategenerated80.png[]
+
+image::migrategenerated90.png[]
+
+image::migrategenerated92.png[]
+
+=== Adding a toolbar contribution
+
+Also add a toolbar contribution for the same command.
+
+image::toolbarcontribution10.png[]
+
+WARNING: When this document was written, the model editor had a bug.
+If you enter a _Parent-ID_ to the toolbar contribution, that information is not persisted in the xmi code.
+Therefore, ensure that your settings are actually reflected in the fragment file.
+You can do this by closing the file and opening it again.
+If you read this and the bug is still present, you have to enter the
+Parent-ID directly in the xmi.
+For this switch to the XMI tab of the editor and enter the parent ID directly.
+Use the `org.eclipse.ui.main.toolbar` value.
+The file is only saved, if you enter the information syntactically correct.
+
+image::toolbarcontribution20.png[]
+
+image::toolbarcontribution24.png[]
+
+Add a toolbar and a handled tool item to your contribution.
+
+image::toolbarcontribution30.png[]
+
+image::toolbarcontribution40.png[]
+
+=== Validating the presence of the menu and toolbar contribution
+
+Start a new instance of the Eclipse IDE and validate that your menu and the toolbar are is contributed.
+If they are not visible in the window, check via the model spy for potential issues.
+
+image::toolbarcontribution50.png[]
+

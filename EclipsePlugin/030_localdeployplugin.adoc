@@ -1,0 +1,61 @@
+== Local deployment of your plug-in
+
+=== Options for installing a plug-in
+
+You have several options to make your plug-in available in your Eclipse IDE.
+You can:
+* Install your plug-in directly into your current Eclipse installation, using your Eclipse IDE.
+This option is useful for a quick installation and a test during development.
+
+* Export your plug-in and copy it into the _dropins_ folder of your Eclipse installation.
+This option is useful for a simple distribution scenario, where you only have to provide the exported plug-in to your users.
+On the other hand it is not very convenient for the end user as it requires manual file copying and provides no simple way to update the plug-in.
+
+* Create an update site and use the Eclipse update manager to install it from this site.
+This is the simplest approach for the end user.
+It also allows providing updates to all interested users.
+
+=== Installing your plug-in from your Eclipse IDE
+
+You can install your plug-in directly into your running Eclipse IDE.
+
+The Eclipse plug-in export wizard has an option for this.
+Open the export wizard via menu:File[Export >Plug-in Development >Deployable plug-ins and fragments].
+
+image::eclipseideexport10.png[Export plug-in into host IDE]
+
+In the export wizard dialog select in this case _Install into host. Repository_.
+This is depicted in the following screenshot.
+
+image::eclipseideexport20.png[Export plug-in into host IDE]
+
+=== Export plug-in and put into dropins folder
+
+If you export your plug-in locally, you can put it into the Eclipse icon:folder[] _dropins_ folder of your Eclipse installation.
+After a restart of your Eclipse your plug-in should be available and ready for use.
+
+Open again the export wizard via menu:File[Export > Plug-in Development>Deployable plug-ins and fragments].
+
+Select the plug-in you want to export and the folder to which this plug-in should get exported.
+
+image::eclipseideexport30.png[Export plug-in into host IDE]
+
+Press the btn:[Finish] button.
+This creates a _JAR_ file with the exported plug-in in the selected directory.
+
+Copy this _JAR_ file to the icon:folder[] _dropins_ directory in your Eclipse installation directory and restart your running Eclipse.
+
+After this restart your new plug-in is available in your Eclipse installation and ready to be used.
+
+=== Deployment using an update site
+
+You can create an update site for your plug-in.
+An update site consists of static files, which can be placed on a file server or a web server.
+Other users can install Eclipse plug-in from this update site by providing them a link to the update site.
+
+This requires that you create a feature project for the plug-in.
+You can export this feature project and use the Eclipse update manager to install the feature (with the plug-in).
+
+By default, the Eclipse update manager shows only features included into a category.
+Therefore, you should always use a category for your exported feature to make it easy for the user to install your feature.
+

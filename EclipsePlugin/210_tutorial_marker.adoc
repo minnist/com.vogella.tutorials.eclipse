@@ -1,0 +1,18 @@
+[[resourcemarker_create]]
+== Tutorial: Create Markers for resources
+
+Create a plug-in project "de.vogella.plugin.markers".
+Add the dependency to org.eclipse.core.resources", "org.eclipse.jdt.core" and "org.eclipse.jdt.ui".
+Create the command "de.vogella.plugin.markers.AddMarker" with the default handler `AddMarkerHandler` in the `de.vogella.plugin.markers.handler` class and add this command to the menu.
+
+Create the following code.
+
+[source, java]
+----
+include::examples/marker/AddMarker.java
+----
+
+If you run, you can create a marker in the TODO list if you select a Java project and click your menu entry.
+
+images::marker40.gif[]
+

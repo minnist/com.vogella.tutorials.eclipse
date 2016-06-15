@@ -1,0 +1,37 @@
+== Exercise: Create a feature for your plug-in
+
+=== Create an update site
+You can create an update site for your feature in a local directory on your machine.
+For this, select menu:File[Export > Deployable features]
+
+image::pluginfeatureexport10.png[]
+
+image::pluginfeatureexport20.png[]
+
+To use your category, switch to the _Options_ tab and select the path to your _category.xml_ file in the _Categorize repository_ option.
+
+image::pluginfeatureexport30.png[]
+
+=== Install feature via the Eclipse update manager
+Use the Eclipse update manager via menu:Help[Install New Software...] to install this new feature into your Eclipse IDE.
+
+Use the update manager to point to your local directory.
+Then select and install your feature.
+In case you don't see your feature, try deselecting the _Group items by category_ flag.
+In this case, you have forgotten to set your category during the export.
+
+image::idepluginfeatureinstall10.png[]
+
+image::idepluginfeatureinstall20.png[]
+
+image::idepluginfeatureinstall30.png[]
+
+NOTE: If you put the resulting files on a webserver under a public accessible URL, your users could install your features from this URL.
+
+=== Validate installation
+
+Restart the Eclipse IDE after the installation.
+Ensure that your plug-in is available in your Eclipse installation and can be used.
+
+image::idepluginfeatureinstall40.png[]
+

@@ -1,0 +1,22 @@
+[[eclipsecontext]]
+== Accessing the IEclipseContext from 3.x API
+
+The Eclipse 4.x IDE uses the `IEclipseContext` data structure to store central information about the IDE.
+You can access this information also via the Eclipse 3.x API.
+This approach is demonstrated with the following snippets.
+These code snippets assume that you are familiar with the 3.x API, if that is not the case you can skip this section.
+
+For example, to access the context from an Eclipse 3.x API view, you can use the following snippet.
+
+[source, java]
+----
+include::examples/context/View.java
+----
+
+This snippet demonstrates the access via an Eclipse 3.x API handler.
+
+[source, java]
+----
+include::examples/context/Access.java
+----
+

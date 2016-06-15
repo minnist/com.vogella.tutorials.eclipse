@@ -1,0 +1,40 @@
+= Eclipse IDE Plug-in Development: Plug-ins, Features, Update Sites and IDE Extensions
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: img
+(c) 2009, 2016 vogella GmbH
+Version 0.1, 29.05.2016
+
+[abstract]
+This Tutorial describes how to extend the Eclipse IDE with custom plugins.
+
+include::010_overview.adoc[]
+include::011_ideextensions.adoc[]
+include::012_prerequisites.adoc[]
+include::018_download.adoc[]
+include::020_runtimeeclipse.adoc[]
+include::024_commands.adoc[]
+include::026_firstplugin.adoc[]
+include::030_localdeployplugin.adoc[]
+include::032_tutorial_createfeature.adoc[]
+
+include::034_tutorial_deployplugin.adoc[]
+
+include::050_parts.adoc[]
+include::054_exercise_addingparts.adoc[]
+include::055_exercise_addingpartdescriptor.adoc[]
+include::056_modeladdons.adoc[]
+
+include::060_contextmenuplugin.adoc[]
+
+include::070_context.adoc[]
+
+include::200_marker.adoc[]
+include::210_tutorial_marker.adoc[]
+include::300_adapters.adoc[]
+include::400_resources.adoc[]
+include::220_startupaction.adoc[]
+
+include::006_resources.adoc[]

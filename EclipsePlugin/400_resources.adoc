@@ -1,0 +1,11 @@
+[[eclipseresources]]
+== Eclipse Resources
+
+You can register `IResourceChangeListener` on resources in Eclipse.
+For example, if you have a project, you can add or remove a resource listener to or from it.
+
+[source, java]
+----
+include::examples/resources/listener.java
+----
+

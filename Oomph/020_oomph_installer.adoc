@@ -12,6 +12,8 @@ When starting the Oomph installer a certain EPP can be chosen and configured.
 
 image::oomph-installer.png[]
 
+=== Chose and use profiles
+
 In order to work with the previously mentioned profiles, one can switch to the _ADVANCED MODE..._
 
 image::oomph-installer-advanced.png[]

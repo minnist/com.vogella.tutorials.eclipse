@@ -3,6 +3,7 @@
 :sectnums:                                                          
 :experimental:
 :icons:
+:imagesdir: ./img
 (c) 2016 vogella GmbH
 Version 0.1, 24.05.2016
 

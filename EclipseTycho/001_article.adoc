@@ -1,6 +1,6 @@
 = Eclipse Tycho for building Eclipse Plug-ins, OSGi bundles and RCP applications - Tutorial
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: ./img

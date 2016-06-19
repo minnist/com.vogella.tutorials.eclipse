@@ -1,0 +1,32 @@
+== Exercise - Eclipse JDT Quick Assist
+
+=== Target
+
+In this exercise a JDT Quick Assist will be created.
+
+=== Creating a Plug-in Project and add dependencies
+
+Create an empty Plug-in Project called _com.vogella.jdt.quickfix_ and add the following dependencies:
+
+* org.eclipse.jdt.ui
+* org.eclipse.jdt.core
+* org.eclipse.core.runtime
+* org.eclipse.jface
+* org.eclipse.jface.text
+
+=== Using the org.eclipse.jdt.ui.quickFixProcessors extension point
+
+Press the btn:[Add] button in the _Extensions_ tab of the _plugin.xml_ editor and choose org.eclipse.jdt.ui.quickFixProcessors.
+
+image::add-quickfix-extensionpoint.png[]
+
+Pressing the btn:[Finish] button will result in the extension point being added and already containing an entry.
+
+image::added-quickfix-extensionpoint.png[]
+
+By clicking on the _class*:_ link a class creation wizard will appear.
+
+image::quickfix-class-wizard.png[]
+
+Just stick to the defaults and press the btn:[Finish] button.
+

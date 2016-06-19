@@ -1,0 +1,22 @@
+== Exercise - Eclipse JDT Quickfixes
+
+=== Target
+
+In this exercise a JDT Quickfix will be created and the previously created _com.vogella.jdt.quickfix_ project will be reused for this.
+
+=== Using the org.eclipse.jdt.ui.quickFixProcessors extension point
+
+Press the btn:[Add] button in the _Extensions_ tab of the _plugin.xml_ editor and choose org.eclipse.jdt.ui.quickFixProcessors.
+
+image::add-quickfix-extensionpoint.png[]
+
+Pressing the btn:[Finish] button will result in the extension point being added and already containing an entry.
+
+image::added-quickfix-extensionpoint.png[]
+
+By clicking on the _class*:_ link a class creation wizard will appear.
+
+image::quickfix-class-wizard.png[]
+
+Just stick to the defaults and press the btn:[Finish] button.
+

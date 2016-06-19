@@ -1,7 +1,6 @@
-== Eclipse JDT Quickfixes
+== Eclipse JDT Quickfixes and Quickassist
 
-The Eclipse Java Development Tools (JDT) allow the creation of custom quick fixes via the `org.eclipse.jdt.ui.quickFixProcessors`
-extension point from the `org.eclipse.jdt.ui` plug-in.
+The Eclipse Java Development Tools (JDT) allow the creation of custom quick fixes and quick assistance by using the the `org.eclipse.jdt.ui` plug-in.
 
 Such plug-ins require the following plug-ins as dependency:
 
@@ -11,7 +10,4 @@ Such plug-ins require the following plug-ins as dependency:
 * org.eclipse.jface
 * org.eclipse.jface.text
 
-The class which is referred by the extension points must implement the `IQuickFixProcessor` interface.
-This defines the `hasCorrections(()` and `getCorrections()` methods.
 
-The `IProblem` interface defines the possible problems.

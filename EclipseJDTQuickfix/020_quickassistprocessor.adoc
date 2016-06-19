@@ -1,0 +1,14 @@
+== Quick Assist Processors
+
+Quick Assists Processors provide the opportunity to provide context sensitive refactorings and assistance in an editor, e.g., the Java editor.
+
+In order to provide quick assistance the _org.eclipse.jdt.ui.quickAssistProcessors_ extension point has to be used.
+
+image::quickassist-extensionpoint.png[]
+
+The referenced class in the extension point has to be an instance of `IQuickAssistProcessor`, which specifies the `boolean hasAssists(IInvocationContext context)` and `IJavaCompletionProposal[] getAssists(IInvocationContext context, IProblemLocation[] locations)` methods.
+
+The `hasAssists` method specifies whether the quick assist is appropriate.
+
+The `getAssists` method returns an array of `IJavaCompletionProposal` objects, which can apply refactorings and changes to the code.
+

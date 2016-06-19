@@ -1,14 +1,23 @@
-= Eclipse JDT - Creating custom quick fixes - Tutorial
+= Eclipse JDT - Creating custom quick assistance and fixes - Tutorial
 :linkcss:
+:sectnums:
 :experimental:
-(c) 2016 vogella GmbH
-Version 0.2, 15.04.2016
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2016 vogella GmbH
+Version 2.6, 31.03.2016
 
 [abstract]
-This tutorial describes how create own Eclipse JDT (Java Development Tools) Quickfixes. 
-In this tutorial Eclipse 4.4 is used.
+This tutorial describes how create own Eclipse JDT (Java Development Tools) Quick fixes and Quick assistance. 
+In this tutorial Eclipse 4.6 is used.
 				
 include::010_overview.adoc[]
+include::020_quickassistprocessor.adoc[]
+include::040_quickfixprocessor.adoc[]
+include::050_problemids.adoc[]
+include::090_exercise_quickassistprocessor.adoc[]
+include::100_exercise_quickfix.adoc[]
+
 include::008_resourceslocal.adoc[]
 
 

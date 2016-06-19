@@ -1,5 +1,6 @@
-<section id="commmands_sourceprovider">
-	<title>Providing your own expression
+[[commmands_sourceprovider]]
+== Providing your own expression
+
 	 You can write your own Java class which can be used define a
 		variable which can then be used to define if a certain UI element
 		shall be active or not. For example you can read the authorization of
@@ -17,41 +18,19 @@
 		commands. Add the extension point "org.eclipse.ui.services" to your
 	 plug-in and create a new service provider. 
 
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sourceprovider10.gif" />
-				
-			</imageobject>
-		</mediaobject>
-	
+image::sourceprovider10.png[]
 
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sourceprovider20.gif" />
-				
-			</imageobject>
-		</mediaobject>
-	
+image::sourceprovider20.png[]
 
-	 This defines a service which provides the variable
-		"de.vogella.rcp.commands.sourceprovider.active" to the workbench. This
-		class
-		must implement ISourceProvider. This
-		value can then be used
-		similar to
-		a core expression. Maintain the
-		following code. 
-	
+This defines a service which provides the variable "de.vogella.rcp.commands.sourceprovider.active" to the workbench.
+This class must implement ISourceProvider.
+This value can then be used similar to a core expression.
+Maintain the following code.
 
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/sourceprovider/CommandState.java" />
-		</programlisting>
-	
-
+[source, java]
+----
+include::res/sourceprovider/CommandState.java[]
+----
 
 	 Create two commands
 		"de.vogella.rcp.commands.sourceprovider.command1" and
@@ -60,36 +39,23 @@
 		state in our ISourceProvider. Maintain the following code for the
 		handler.
 	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/sourceprovider/Command2.java" />
-		</programlisting>
-	
-	 Add both commands to the menu. 
-	 Now use the state provided by your ISourceProvider in your
-		declaration of your menu. 
+[source, java]
+----
+include::res/sourceprovider/Command2.java[]
+----
 
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sourceprovider30.gif" />
-				
-			</imageobject>
-		</mediaobject>
-	
+Add both commands to the menu.
+Now use the state provided by your ISourceProvider in your declaration of your menu. 
 
-	This looks in plugin.xml like the following.
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/sourceprovider/plugin.txt" />
-		</programlisting>
-	
+image::sourceprovider30.png[]
 
-	If you now start your application can select the second command
-		the first command will not be available anymore. If you press it again
-		the first command will be displayed again.
+This looks in plugin.xml like the following.
 
+[source, java]
+----
+include::res/sourceprovider/plugin.txt[]
+----
 
-</section>
+If you now start your application can select the second command the first command will not be available anymore.
+If you press it again the first command will be displayed again.
+

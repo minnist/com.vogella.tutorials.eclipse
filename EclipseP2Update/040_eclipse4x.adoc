@@ -6,6 +6,6 @@ The following code shows an example handler which performs an update of a comple
 The method annotated with `@Execute` configures the update operation and runs it.
 	
 [source,java]
-====
+----
 include::res/P2UpdateHandler.java[]
-====
+----

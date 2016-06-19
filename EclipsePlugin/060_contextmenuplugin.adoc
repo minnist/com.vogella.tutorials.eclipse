@@ -51,7 +51,7 @@ include::examples/htmlconverter/ConvertHandler.java
 
 If you start this plug-in, you should be able to create HTML output from a Java source file.
 
-image::html40.gif[]
+image::html40.png[]
 
 [[contextmenu_restrict]]
 === Restrict the extension - Visible When

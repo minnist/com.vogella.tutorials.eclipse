@@ -28,32 +28,24 @@ For example for a popup menu "activeMenuSelection" provides the selection.
 	
 On the "activeMenuSelection" right-click and add a count with the value "1". The result should look like
 	
-image::enabled10.gif[]
+image::enabled10.png[]
 
 	
 On your handler, right-click and select enabledWhen.
 Right-click and add a "reference" to it with the value "oneElementSelected". 
 The result should look like.
 
-image::enabled20.gif[]	
+image::enabled20.png[]
 	
 
 The expression were are using is based on "selection". 
 Therefore the list must register itself as selection provider to inform the workbench in case something is selected. 
 Therefore add "getSite().setSelectionProvider(viewer);" in createPartControl of View.java.
-	
-[source,java]
-----
-include::res/enable/createPartControl.txt[]
-----
+
 If you now run the application your command should only be enabled if one element in the list is selected. 
 	
-[TIP]
-====
-You can also only display the menu if one item is selected. 
+TIP:You can also only display the menu if one item is selected. 
 The approach is the same but you only define the restriction on the menu contribution directly (visible when on the command in the menu). 
 For a command in the toolbar the definition would look like:
 
-image::visible10.gif[]
-			
-====	
+image::visible10.png[]

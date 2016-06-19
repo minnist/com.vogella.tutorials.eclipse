@@ -36,7 +36,7 @@ include::./res/editor/TaskEditorInput.java[]
 
 Go to _plugin.xml_ and add the extension _org.eclipse.ui.editors_.
 
-image::editor30.gif[]
+image::editor30.png[]
 
 Do not use a template.
 Use the ID _com.vogella.rcp.editor.example.editor.taskeditor_, any name you want and the class "com.vogella.rcp.editor.example.editor.TaskEditor".

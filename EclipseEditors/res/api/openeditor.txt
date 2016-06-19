@@ -1,0 +1,2 @@
+
+page.openEditor(new YourEditorInput(), ID_OF_THE_EDITOR);

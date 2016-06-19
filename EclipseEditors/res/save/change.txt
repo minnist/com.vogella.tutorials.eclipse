@@ -1,0 +1,2 @@
+
+firePropertyChange(IEditorPart.PROP.DIRTY);

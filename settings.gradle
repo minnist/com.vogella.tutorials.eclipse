@@ -15,5 +15,6 @@ include 'EclipseDragAndDrop'
 include 'EclipseP2Update'
 include 'EclipseBuilder'
 include 'EclipsePlugin'
+include 'EclipseEditors'
 include 'Oomph'
 

@@ -1,0 +1,65 @@
+== Exercise: Create a TextEditor with content assist
+
+We could implement an editor like before and place a `Text` or even a `StyledText` control on it, but Eclipse offers a lot more than this, which you can use and extend.
+Things like ContentAssist, Quickfixes, Markers and many more.
+
+So let us create a text editor for our `Task` model objects and reuse our _com.vogella.rcp.editor.example_ plugin project.
+
+=== Add new dependencies
+
+Now that we want to implement an enhanced editor, we also need _org.eclipse.ui.editors and _org.eclipse.jface.text_ as plugin dependency, besides _org.eclipse.ui_ and _org.eclipse.core.runtime_ in the _MANIFEST.MF_.
+
+image::text_editor_dependencies.png[]
+
+=== Add Task Text Editor
+
+A Text Editor is added to the _plugin.xml_ in the same way, as a usual Editor.
+But we also add the _task_ extension, so that our Task Text Editor is directly associated with _*.task_ files.
+
+image::task_text_editor_extension.png[]
+
+The _id_ of the editor should be _com.vogella.rcp.editor.example.editor.tasktexteditor_ and the editor class will be called _com.vogella.rcp.editor.example.editor.text.TaskTextEditor_.
+
+The difference here is that we do not extend `EditorPart` directly, but the `TextEditor` class.
+
+The `TextEditor` class is a default implementation so that you are not forced to override any methods right now.
+
+=== Add simple content assist
+In other words we define a custom `SourceViewerConfiguration` for our `TaskTextEditor`, where we configure a simple example for content assist.
+
+At first we create a `TaskSourceViewerConfiguration`, which extends `TextSourceViewerConfiguration` and place it in the com.vogella.rcp.editor.example.editor.text.config package.
+
+[source, java]
+----
+include::./res/editor/text/config/TaskSourceViewerConfiguration.java[]
+----
+
+Here we configure a `ContentAssistant` so that it can be returned by the `getContentAssistant(ISourceViewer sourceViewer)` method.
+
+Now we need to implement the `TaskCompletionProcessor`, which is used in the `TaskSourceViewerConfiguration`.
+
+Therefore we implement `computeCompletionProposals(ITextViewer viewer, int offset)` of the `IContentAssistProcessor` interface.
+
+[source, java]
+----
+include::./res/editor/text/config/TaskCompletionProcessor.java[]
+----
+
+We also applied some rules for the content assist, so that it is a little bit context sensitive and only allows completion proposals at the beginning of a line and only those proposals, which are not already present in the document.
+
+Please feel free to add your own rules here.
+
+To apply this `TaskSourceViewerConfiguration` to our `TaskTextEditor`, we set it in the constructor of the `TaskTextEditor`, like this:
+
+[source, java]
+----
+include::./res/editor/text/TaskTextEditor.java[]
+----
+
+=== Validating
+
+Please start the IDE together with your plugin and create a project in the project explorer, where you create a _example.task_ file.
+When you double click on this file, the `TaskTextEditor` should be opened.
+
+image::validate_content_assist_exercise.png[]
+

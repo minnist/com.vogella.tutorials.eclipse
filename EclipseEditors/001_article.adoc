@@ -1,0 +1,21 @@
+= Eclipse IDE Plug-in Development: Plug-ins, Features, Update Sites and IDE Extensions
+:linkcss:
+:sectnums:
+:experimental:
+:icons:
+:imagesdir: img
+(c) 2009, 2016 vogella GmbH
+Version 0.1, 29.05.2016
+
+[abstract]
+This tutorial describes how to create an editor and how this editor can be filled from a view.
+The tutorial is based on Eclipse 3.7 (Eclipse Indigo).
+
+
+include::010_overview.adoc[]
+include::020_exercise_editor.adoc[]
+include::030_texteditor_sourceviewer.adoc[]
+include::050_exercise_todo_texteditor_contentassist.adoc[]
+
+include::006_resources.adoc[]
+

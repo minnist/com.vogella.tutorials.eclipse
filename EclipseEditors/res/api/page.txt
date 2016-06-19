@@ -1,0 +1,7 @@
+
+// If you are in a view
+getViewSite().getPage();
+// If you are in an command
+HandlerUtil.getActiveWorkbenchWindow(event).getActivePage();
+// Somewhere else
+PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();

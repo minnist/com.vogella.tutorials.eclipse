@@ -25,7 +25,7 @@ Create the following data model.
 
 [source, java]
 ----
-include::examples/adapter/Todo.java
+include::examples/adapter/Todo.java[]
 ----
 
 Change the code of _SampleView.java_ to the following.

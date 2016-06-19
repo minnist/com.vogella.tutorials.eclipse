@@ -71,7 +71,7 @@ This will result in the following _plugin.xml_
 
 [source, xml]
 ----
-include::examples/htmlconverter/plugin.xml
+include::examples/htmlconverter/plugin.xml[]
 ----
 
 If you now start your plug-in, the menu entry should only be visible if at least one compilation unit has been selected.

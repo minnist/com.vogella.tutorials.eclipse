@@ -1,6 +1,6 @@
 = Eclipse IDE Plug-in Development: Plug-ins, Features, Update Sites and IDE Extensions
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: img

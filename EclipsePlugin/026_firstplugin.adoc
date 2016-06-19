@@ -40,7 +40,7 @@ image::eclipseideplugin60.png[]
 === Starting an Eclipse runtime IDE with your plug-in
 
 Start a new Eclipse IDE instance and validate that your menu and toolbar entry are available.
-See <xref linkend="runtimeeclipse_starting" /> for more information on how to start an instance of the Eclipse IDE with additional plug-ins.
+See <<runtimeeclipse_starting>> for more information on how to start an instance of the Eclipse IDE with additional plug-ins.
 
 After launching the Eclipse IDE instance, you see the sample menu, contributed by your plug-in.
 After clicking the menu entry, you see a message box.
@@ -59,7 +59,10 @@ plug-in in the manifest file of the newly created plug-in.
 
 Create the following class based on the generated handler class.
 
+[source, java]
+----
 include::./examples/first/SampleE4Handler.java[]
+----
 
 === Creating a model contribution
 

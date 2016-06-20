@@ -1,0 +1,4 @@
+== Eclipse Source Code Resources
+
+http://wiki.eclipse.org/Git#Setting_up_ssh_keys[Setting up your ssh key for Eclipse.org]
+

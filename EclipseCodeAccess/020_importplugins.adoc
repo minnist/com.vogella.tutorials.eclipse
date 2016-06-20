@@ -1,0 +1,28 @@
+== Binary import of plug-ins
+
+The following describes how you can import the source code of Eclipse plug-ins from your Eclipse installation to review the code.
+The Eclipse standard distribution contains the source code for the core Eclipse project.
+For other Eclipse projects you usually find an "SDK" bundle on the project update site which contains the source code.
+
+To avoid "pollution" of your existing workspace, switch to a new workspace and select
+
+menu:File[Import]
+
+Select btn:[Plug-ins and Fragments].
+
+image::import10.gif[]
+
+Make the following settings.
+Select _Binary project_.
+There you can read the source code, but you cannot change it.
+It will also not be compiled.
+Therefore, this setting will save memory and performance.
+
+image::import20.gif[]
+
+Add all plug-ins you would like to import and press the btn:[Finish] button.
+
+image::import30.gif[]
+
+You can you investigate the code of the imported plug-ins.
+

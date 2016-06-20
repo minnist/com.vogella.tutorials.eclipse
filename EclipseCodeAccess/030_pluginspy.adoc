@@ -1,0 +1,25 @@
+== Identifying who contributes user interface components
+
+=== Plug-in Spy for UI parts
+
+You can activate the _Plug-in Spy_ by pressing kbd:[Alt + Shift + F1] in the Eclipse IDE.
+It gives you information about the currently selected user interface component.
+This way you can get immediate access to the plug-in which is currently running.
+
+image::pluginspy10.png[]
+
+Click on any of the linked elements to obtain more information about that element.
+For example, if you click on the _contributing plug-in_ the tool opens the manifest editor for this plug-in.
+
+=== Menu spy
+
+Press kbd:[Alt + Shift + F2] and select a menu entry or click a toolbar entry to see information about this element.
+
+image::pluginspy20.png[]
+
+=== SWT Spy
+
+_SWT Spy_ for Eclipse is a tool that prints out information about the widget under the cursor.
+Currently, this includes style, layout and parent information.
+See http://www.eclipse.org/swt/tools.php[SWT Development Tools homepage] for more information.
+

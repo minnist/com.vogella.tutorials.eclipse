@@ -1,0 +1,30 @@
+== Finding classes and plug-ins
+
+=== Open Plug-in artifact
+
+Use the kbd:[Ctrl + Shift + A] shortcut to search for an extension point.
+
+Definition and usage of an extension point have different icons.
+For example, to see which plug-in defines the `org.eclipse.menu.ui` extension point,
+enter it in the dialog and select the entry with the blue icon.
+
+image::openpluginartifact.png[]
+
+=== Plug-in search
+
+_Plug-in Search_ allows you to perform a detailed search for extension points.
+Select the menu:Search[Search >Plug-in Search] menu.
+You can specify what your are searching for as demonstrated in the following screenshot.
+
+image::pluginsearch10.png[]
+
+=== Plain text search
+
+In case you have imported the source code of an Eclipse project into your workspace you can also use the plain text search.
+Select the menu:Search[Search] menu entry and switch to the _File Search_ tab.
+
+As indicated in the following screenshot you can search for a text, use regular expressions and restrict which files to search by specifying a file name pattern.
+This is a very flexible way to search and allows you to find almost everything.
+
+image::filesearch10.png[File Search]
+

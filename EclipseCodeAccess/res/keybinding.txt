@@ -1,0 +1,4 @@
+# turn on debugging for the org.eclipse.core.resources plugin.
+org.eclipse.ui/debug=true
+org.eclipse.ui/trace/keyBindings
+org.eclipse.ui/trace/keyBindings.verbose

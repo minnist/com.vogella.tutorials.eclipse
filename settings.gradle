@@ -16,5 +16,6 @@ include 'EclipseP2Update'
 include 'EclipseBuilder'
 include 'EclipsePlugin'
 include 'EclipseEditors'
+include 'EclipseCodeAccess'
 include 'Oomph'
 

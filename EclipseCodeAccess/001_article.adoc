@@ -1,0 +1,23 @@
+= Eclipse Source Code
+:linkcss:
+:sectnums:
+:experimental:
+:icons:
+:imagesdir: img
+(c) 2009, 2016 vogella GmbH
+Version 0.1, 29.05.2016
+
+[abstract]
+This tutorial explains how to work with the Eclipse source code.
+It assumes that you are already familiar with using the Eclipse IDE and is based on Eclipse 4.6 (Eclipse Neon).
+This Tutorial describes how to extend the Eclipse IDE with custom plugins.
+
+include::010_eclipsesourcecode.adoc[]
+include::020_importplugins.adoc[]
+include::030_pluginspy.adoc[]
+include::032_addtosearch.adoc[]
+include::034_findplugin.adoc[]
+include::040_search.adoc[]
+include::060_keybindings.adoc[]
+
+include::006_resourceslocal.adoc[]

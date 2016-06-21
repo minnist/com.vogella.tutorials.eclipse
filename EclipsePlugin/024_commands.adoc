@@ -24,7 +24,7 @@ image::modelcontribution30.png[Contributing to the Eclipse menu]
 
 The model fragment must be registered in the plugin.xml file via an extension to the `org.eclipse.e4.workbench.model` extension point, as demonstrated in the following listing.
 
-[source, java]
+[source, xml]
 ----
 include::examples/extend/plugin.xml[]
 ----

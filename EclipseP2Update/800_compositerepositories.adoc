@@ -1,31 +1,26 @@
 [[p2compositerepositories]]
 == p2 composite repositories
-	
+
 It is possible to create p2 composite repositories. 
 Such a repository wraps the information about other repositories.
 If a client connects to such an update site, the other update sites are contacted and the user can install features from the other update site.
-	
-	
+
 To build such a composite repository you have to create two files. 
 The first file must be called _compositeContent.xml_. 
 The second file must be  called _compositeArtifacts.xml_. 
 The following example demonstrates the content of these files.
-	
-	
-The following listing is an example for an _compositeContent.xml_ file.
-	
 
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/composite/compositeContent.xml" />
-		</programlisting>
-	
-	
+The following listing is an example for an _compositeContent.xml_ file.
+
+[source, xml]
+----
+include::res/composite/compositeContent.xml[]
+----
+
 The following listing is an example for a fitting _compositeArtifacts.xml_ file.
     
-        <programlisting language="java">
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                parse="text" href="./examples/composite/compositeArtifacts.xml" />
-        </programlisting>
-    
+[source, xml]
+----
+include::res/composite/compositeArtifacts.xml[]
+----
+

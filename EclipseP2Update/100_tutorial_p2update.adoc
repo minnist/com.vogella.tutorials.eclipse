@@ -43,7 +43,7 @@ Implement a new handler for this menu entry.
 
 [source, java]
 ----
-include::res/UpdateHandler.java" />
+include::res/UpdateHandler.java[]
 ----
 
 Ensure to adjust the `REPOSITORY_LOC` constant in this code to the actual p2 udpate site location on your file system.

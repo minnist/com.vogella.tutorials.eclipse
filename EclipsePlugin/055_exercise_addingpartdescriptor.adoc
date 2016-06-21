@@ -31,7 +31,7 @@ image::ide_partdescriptor20.png[Adding a part descriptor to the Eclipse IDE]
 image::ide_partdescriptor40.png[Adding a part descriptor to the Eclipse IDE]
 
 === Validating
-Start an instance of the Eclipse IDE and validate that you can open the parts via the Quick Access box (shortcut Ctrl+3).
+Start an instance of the Eclipse IDE and validate that you can open the parts via the Quick Access box (shortcut kbd:[CTRL + 3]).
 
 NOTE:In Eclipse 4.4 the part descriptor can only be opened via the Quick Access box.
 In Eclipse 4.5 it is planned that it can also be opened via the menu:Window[Show View] menu entry.

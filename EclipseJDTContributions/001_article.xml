@@ -10,7 +10,6 @@ Version 0.1, 13.05.2016
 How to contribute to the Eclipse JDT project.
                 
 include::010_overview.adoc[]
-include::008_resourceslocal.adoc[]
 include::030_creatinganewproject.adoc[]
 include::040_import.adoc[]
 include::050_updatingbuildpathandproject.adoc[]

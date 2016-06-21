@@ -1,0 +1,15 @@
+<section id="jdttemplates">
+	<title>Using code templates in the Eclipse IDE </title>
+	<para>For code completion the Eclipse IDE provides a set of predefined
+		templates. If you press Ctrl+Space during development you can select
+		this template and the code defined by the template is inserted into
+		the code.
+	</para>
+	<para>
+		See
+		<ulink
+			url="http://www.vogella.com/tutorials/Eclipse/article.html#tips_templates">Using code templates in the IDE </ulink>
+		as reference.
+	</para>
+
+</section>

@@ -1,0 +1,4 @@
+== Eclipse Patching
+
+Eclipse plug-ins can be patches with fixes.
+

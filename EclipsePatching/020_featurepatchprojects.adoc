@@ -1,0 +1,18 @@
+== Patching existing Eclipse plug-ins with feature patches
+
+=== Feature patch projects
+(((Feature patch projects)))
+
+If you want to modify standard Eclipse plug-ins, you can use _Feature Patch Projects_.
+A Feature Patch Project	can contain plug-ins which replace existing plug-ins. 
+This would allow you to create an update site for this feature and users can use your version of the modified code.
+
+Each feature can only be patched once.
+
+=== Feature patch projects
+
+A feature patch project can get created via menu:File[New> Other...> Plug-in Development>Feature Patch.
+
+In this dialog select the feature which you want to patch. 
+Add every modified plug-in to your new project and export it as a p2 update site to make it available.
+

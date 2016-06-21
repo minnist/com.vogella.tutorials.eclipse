@@ -11,10 +11,7 @@ TIP: You can use the model spy from the e4 tools project to identify the ID of t
 See <<modelspyintroduction>>.
 
 With the correct ID you can create model fragments that contribute to the corresponding application model element.
-The
-following screenshot demonstrate how to contribute to the
-<wordasword>menuContributions</wordasword>
-feature of the Eclipse IDE.
+The following screenshot demonstrate how to contribute to the _menuContributions_ feature of the Eclipse IDE.
 
 image::modelcontribution10.png[Contributing to the Eclipse menu]
 

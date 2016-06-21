@@ -6,25 +6,15 @@ Create a sample application, where features can be updated by using an update ha
 
 [[P2 Update Preparation]]
 === Exercise preparation: Create a update enabled RCP application
-		
+
 Create an Eclipse 4 RCP project called _com.example.p2.core_ based on the _Eclipse 4 wizard_.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/new-e4-application-wizard.png"></imagedata>
-				</imageobject>
-			</mediaobject>
-		
-		
+
+image::new-e4-application-wizard.png[]
+
 And a feature called _com.example.p2.feature_ which contain the _com.example.p2.core_ project.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/new-feature-wizard.png"></imagedata>
-				</imageobject>
-			</mediaobject>
+
+image::new-feature-wizard.png[]
+
 [[tutorial_p2product]]
 === Add the p2 feature to the product
 		
@@ -35,67 +25,41 @@ Add the following features to the list of the _Contents_ tab.
 * org.eclipse.equinox.p2.core.feature
 					
 After adding these feature the _Add Required_ button needs to be clicked so that the required features listed below are available as well.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/product-features.png" />
-				</imageobject>
-			</mediaobject>
-			
+
+image::product-features.png[]
+
 [[tutorial_p2dependencies]]
 === Add dependencies
-	
+
 Add the plug-in dependencies from <<p2intro_plugins>> to your _com.example.p2.core_	plug-in.
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/app-plugin-p2-dependencies.png" />
-				</imageobject>
-			</mediaobject>
-			
+
+image::app-plugin-p2-dependencies.png[]
+
 [[tutorial_p2ui]]
 === Create a user interface
 		
 Create a new _Update_ menu entry in your application.
 Implement a new handler for this menu entry.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="examples/UpdateHandler.java" />
-			</programlisting>
-		
-		
+
+[source, java]
+----
+include::res/UpdateHandler.java" />
+----
+
 Ensure to adjust the `REPOSITORY_LOC` constant in this code to the actual p2 udpate site location on your file system.
 
 [[tutorial__p2version]]
 === Enter a version in your product configuration file
-		
-			Ensure that you have entered a version number for the product and
-			to
-			append the
-			<wordasword>".qualifier"</wordasword>
-			suffix to the product version.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/p2update_version10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Enter version in the product configuration files</phrase>
-				</textobject>
-			</mediaobject>
-		
-	</section>
+
+Ensure that you have entered a version number for the product and to append the _".qualifier"_ suffix to the product version.
+
+image::p2update_version10.png[Enter version in the product configuration files]
 
 === Create the initial product export
-		
+
 Build your product via the Tycho build system on the command line.
 If you do not want to use Tycho, you can also export your product via the Eclipse _Product export_ link on the _Overview_ tab of the product file.
-		
-			
+
 Do not choose the _REPOSITORY_LOC_ path as destination, this path is later used to place the update site in.
 
 === Start the exported application and check for updates
@@ -103,35 +67,29 @@ Do not choose the _REPOSITORY_LOC_ path as destination, this path is later used 
 Start your exported application from the export directory. 
 Check for updates by invoking your update handler. 
 Your handler should give you the feedback that no updates are available.
-		
 
 === Make a change and export the product again
-		
+
 Change a (visible) label in your application, e.g., remove the generated top trimbar.
 Increment the product version on the overview page of the product editor to indicate a functional change.
-		
-		
+
 Run the Tycho build again or export your product again via the UI. 
 Use a different export folder than you did before. Y
 ou don't want to override the existing exported application.
 Make sure to select the _Generate metadata repository_ option on the export dialog.
 Do not export to the _REPOSITORY_LOC<_ path.
-			
-		
+
 In the new export folder you find a sub-folder called _repository_. 
 Copy this sub-folder to the _REPOSITORY_LOC_ path.
-		
+
 === Update the application
-		
+
 Start your exported application and check again for updates via your menu entry.
 If everything was implemented correctly, your handler should report that updates are available. 
 Install these updates and restart the application.
-		
-[TIP]
-====		
-In case your handler does not find the update, restart your application to clear the caches of p2. 
+
+TIP:In case your handler does not find the update, restart your application to clear the caches of p2. 
 p2 caches the meta information of an update side via a weak HashMap. 
 So as long as the application is running and it has enough memory the information is cached.
-====
 
 Verify that all updates have been applied.

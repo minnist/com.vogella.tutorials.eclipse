@@ -4,7 +4,7 @@
 
 In this exercise you add a model based part contribution to an Eclipse 3.x RCP application.
 
-=== Adding a part descriptor </title>
+=== Adding a part descriptor
 
 Create a simple plug-in called `com.vogella.plugin.partdescriptor`.
 

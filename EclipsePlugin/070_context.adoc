@@ -10,13 +10,13 @@ For example, to access the context from an Eclipse 3.x API view, you can use the
 
 [source, java]
 ----
-include::examples/context/View.java
+include::examples/context/View.java[]
 ----
 
 This snippet demonstrates the access via an Eclipse 3.x API handler.
 
 [source, java]
 ----
-include::examples/context/Access.java
+include::examples/context/Access.java[]
 ----
 

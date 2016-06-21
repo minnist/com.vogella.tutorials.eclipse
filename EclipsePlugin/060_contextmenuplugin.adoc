@@ -35,7 +35,7 @@ The resulting file _plugin.xml_ should look like the following.
 
 [source, xml]
 ----
-include::examples/htmlconverter/pluginsimple.xml
+include::examples/htmlconverter/pluginsimple.xml[]
 ----
 
 Eclipse allows to save additional information for each file.
@@ -46,7 +46,7 @@ Create the following `ConvertHandler` class.
 
 [source, java]
 ----
-include::examples/htmlconverter/ConvertHandler.java
+include::examples/htmlconverter/ConvertHandler.java[]
 ----
 
 If you start this plug-in, you should be able to create HTML output from a Java source file.

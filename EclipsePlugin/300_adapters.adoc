@@ -33,7 +33,7 @@ After this change, you should be able to run your project, open your view and se
 
 [source, java]
 ----
-include::examples/adapter/SampleView.java
+include::examples/adapter/SampleView.java[]
 ----
 
 To displays its values in the property view, add the extension point _org.eclipse.core.runtime.adapters_ to your project.
@@ -42,19 +42,19 @@ The data of the extension point should be like the following.
 
 [source, xml]
 ----
-include::examples/adapter/extension.xml
+include::examples/adapter/extension.xml[]
 ----
 
 Implement the factory and the new class `TodoPropertySource` which implements `IPropertySource`.
 
 [source, java]
 ----
-include::examples/adapter/TodoAdapterFactory.java
+include::examples/adapter/TodoAdapterFactory.java[]
 ----
 
 [source, java]
 ----
-include::examples/adapter/TodoPropertySource.java
+include::examples/adapter/TodoPropertySource.java[]
 ----
 
 If you run your workbench and open your view via menu:Windows[Show > View > Others > Sample Category > Sample View] and you select a data element in your viewer you should see your data in the _Properties_ view.

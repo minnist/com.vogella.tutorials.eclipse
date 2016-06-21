@@ -6,6 +6,6 @@ For example, if you have a project, you can add or remove a resource listener to
 
 [source, java]
 ----
-include::examples/resources/listener.java
+include::examples/resources/listener.java[]
 ----
 

@@ -14,5 +14,5 @@ include::examples/marker/AddMarker.java[]
 
 If you run, you can create a marker in the TODO list if you select a Java project and click your menu entry.
 
-images::marker40.png[]
+image::marker40.png[]
 

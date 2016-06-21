@@ -26,7 +26,7 @@ The model fragment must be registered in the plugin.xml file via an extension to
 
 [source, java]
 ----
-include::examples/extend/plugin.xml
+include::examples/extend/plugin.xml[]
 ----
 
 === Error analysis

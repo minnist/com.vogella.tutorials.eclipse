@@ -18,4 +18,5 @@ include 'EclipsePlugin'
 include 'EclipseEditors'
 include 'EclipseCodeAccess'
 include 'Oomph'
+include 'EclipsePatching'
 

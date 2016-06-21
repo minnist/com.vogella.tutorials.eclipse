@@ -1,0 +1,157 @@
+<section id="jdt">
+	<title>Eclipse JDT</title>
+	<section id="jdt_overview">
+		<title>Overview</title>
+		<para>
+			The Eclipse
+			<wordasword>Java Development Tools</wordasword>
+			(JDT) project provides the tools to develop Java applications. This
+			project also provides APIs to access
+			and manipulate Java source code.
+		</para>
+		<para>
+			It
+			allows to access the existing
+			projects in the workspace, create
+			new
+			projects and modify and read
+			existing projects. It also allows to
+			launch Java programs.
+		</para>
+		<para>
+			JDT provides access to the Java source code via two different
+			means.
+			The
+			<wordasword>Java Model</wordasword>
+			and the
+			<wordasword>Abstract Syntax Tree (AST)</wordasword>
+			which is a works on a
+			<wordasword>Document Object Model</wordasword>
+			similar to the XML DOM.
+		</para>
+	</section>
+	<section id="jdt_javamodel">
+		<title>Java Model</title>
+		<para> Each Java project is internally represented in Eclipse as a
+			Java model.
+			The Eclipse Java model is a light-weight and fault
+			tolerant
+			representation of the Java
+			project.
+		</para>
+		<para>
+			It does not contain as many
+			information as the AST but is fast to
+			create. For example
+			the
+			<guilabel>Outline</guilabel>
+			view
+			is using
+			the Java model for
+			its representation; this
+			way
+			the
+			information
+			in the
+			<guilabel>Outline</guilabel>
+			view
+			can
+			quickly get updated.
+		</para>
+		<para>
+			The Java model is defined in the
+			<code>org.eclipse.jdt.core</code>
+			plug-in.
+		</para>
+		<para>The Java model is represented as a tree structure which can
+			be
+			described via the following table.
+		</para>
+		<para>
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Project Element</entry>
+							<entry>Java Model element</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Java project</entry>
+							<entry>IJavaProject</entry>
+							<entry>The Java project which contains all other objects.
+							</entry>
+						</row>
+						<row>
+							<entry>src folder / bin folder / or external library</entry>
+							<entry>IPackageFragmentRoot</entry>
+							<entry> Hold source or binary files, can be a folder or a library
+								(zip / jar file )
+							</entry>
+						</row>
+						<row>
+							<entry>Each package</entry>
+							<entry>IPackageFragment</entry>
+							<entry> Each package is below the IPackageFragmentRoot,
+								sub-packages are not leaves of the package, they are listed
+								directed under IPackageFragmentRoot
+							</entry>
+						</row>
+						<row>
+							<entry>Java Source File</entry>
+							<entry>ICompilationUnit</entry>
+							<entry>The Source file is always below the package node
+							</entry>
+						</row>
+						<row>
+							<entry>Types / Fields / Methods</entry>
+							<entry>IType / IField / IMethod</entry>
+							<entry>Types, fields and methods</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+	<section id="jdt_ast">
+		<title>Abstract Syntax Tree (AST)</title>
+		<para> The AST is a detailed tree representation of the Java source
+			code.
+			The AST defines API to modify, create, read and delete source
+			code.
+		</para>
+		<para>
+			The main package for the AST is the
+			<code>org.eclipse.jdt.core.dom</code>
+			package
+			and is located in the
+			<code>org.eclipse.jdt.core</code>
+			plug-in.
+		</para>
+		<para>
+			Each Java source file is represented as a
+			subclass of
+			the
+			<code>ASTNode</code>
+			class. Each specific AST node provides specific
+			information about the
+			object it represents. For example you have
+			<code>MethodDeclaration</code>
+			(for
+			methods),
+			<code>VariableDeclarationFragment</code>
+			(for variable declarations) and
+			<code>SimpleName</code>
+			(for any string which is not a Java keyword).
+		</para>
+		<para>
+			The AST is typically created based on a
+			<code>ICompilationUnit</code>
+			from the Java Model.
+		</para>
+	</section>
+</section>

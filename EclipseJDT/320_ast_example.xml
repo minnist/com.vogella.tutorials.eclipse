@@ -1,0 +1,39 @@
+<section id="ast_example">
+	<title>Using the AST</title>
+	<para> The following will create an AST for each source file in your
+		workspace and print out the name and the return type of each method
+		using the AST.</para>
+	<para> Create a new plug-in project "de.vogella.jdt.astsimple" using
+		the "Hello world" template.</para>
+	<para> Maintain the following plug-in dependencies.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ast/MANIFEST.MF" />
+		</programlisting>
+	</para>
+	<para>To get information about the AST you can use the Visitor
+		Pattern. This allows you to add a visitor to the AST for a specific
+		element. In this visitor can you capture information about the object
+		and return it after processing the AST. Create for this the following
+		class.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ast/MethodVisitor.java" />
+		</programlisting>
+	</para>
+	<para> Add a new command "de.vogella.jdt.astsimple.GetInfo" and put it
+		into the menu.</para>
+	<para>Create the following handler for this command.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ast/GetInfo.java" />
+		</programlisting>
+	</para>
+	<para> Add the command to your menu. Run your new plugin, create a new
+		Java project and select the command. It should print out the
+		information about your methods in the IDE from which you started your
+		new plugin</para>
+</section>

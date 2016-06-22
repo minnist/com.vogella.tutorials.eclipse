@@ -1,0 +1,30 @@
+== Exercise: Wizards Example
+
+The following gives an example of a wizard with two pages.
+
+Create the following `MyPageOne` and `MyPageTwo` classes.
+
+[source, java]
+----
+include::res/wizard/MyPageOne.java[]
+----
+
+[source, java]
+----
+include::res/wizard/MyPageTwo.java[]
+----
+
+Create the following class called _MyWizard_.
+
+[source, java]
+----
+include::res/wizard/MyWizard.java[]
+----
+
+To show the wizard you could, for example, add a `Button` to your part and call the Wizard via a `SelectionListener` on the `Button`.
+
+[source, java]
+----
+include::res/wizard/ShowWizard.java[]
+----
+

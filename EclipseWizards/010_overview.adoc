@@ -1,0 +1,69 @@
+== Eclipse Wizards
+
+=== What is a wizard
+
+In Eclipse, a _wizard_ is commonly used for the creation of new elements, imports or exports.
+It can also be used for the execution of any task involving a sequential series of steps.
+A wizard should be used if there are many steps in the task, and they must be completed in a specific order.
+
+Wizards are meant to take the hassle out of standard, repetitive, or tedious user tasks.
+If a wizard is started, typically a new modal window is opened.
+This window blocks the remaining user interface until the user finishes the task in the wizard or cancels the wizard.
+
+The following screenshot shows the second page of a wizard.
+
+image::wizardexample10.png[Example wizard]
+
+TIP: JFace orders the buttons differently depending on the platform.
+
+=== Wizards and WizardPages
+The `Wizard` class from the `org.eclipse.jface.wizard` package provides the functionality to build custom wizards.
+This class controls the navigation between the different pages and provides the base user interface, for example, an area for error and information messages.
+
+A wizard contains one or several pages of the type `WizardPage`.
+Such a page is added to a `Wizard` object via the `addPage()` method.
+
+A `WizardPage` must create a new `Composite` in its `createControl()` method.
+This new `Composite` must use the `Composite` of the method parameter as parent.
+It also must call the `setControl()` method with this new `Composite` as parameter.
+If this is omitted, Eclipse will throw an error.
+
+=== Starting the Wizard
+
+To open a wizard, use the `WizardDialog` class from the `org.eclipse.jface.wizard` 	package.
+
+[source, java]
+----
+include::res/snippets/openwizard.java[]
+----
+
+Typically, a wizard is opened via a menu or toolbar entry or via a `SelectionListener` on a button.
+
+=== Changing the page order
+
+To control the order of the `WizardPage` object, you can override the `getNextPage()` method in the `Wizard`.
+This allows you to change the order of the pages depending on the data in the wizard and pages.
+
+The following code snippet demonstrates this approach.
+
+[source, java]
+----
+include::res/next/ChangeNext.java[]
+----
+
+=== Working with data in the wizard
+
+To use the same data in different pages of your wizard, pass them to the wizard pages via their constructor parameters.
+
+The `isVisible()` method is called whenever the `WizardPage` either gets visible or invisible.
+Call the `super.isVisible()` method and check the current status of the page.
+If the page is visible, assign the data of your object to the user interface components.
+
+=== Updating the Wizard buttons from a WizardPage
+
+The `WizardPage` class defines the `canFlipToNextPage()` and `setPageComplete()` methods to control if the btn:[Next] or the btn:[Finish] button in the wizard becomes active.
+
+The `Wizard` class defines the `canFinish` method in which you can define if the wizard can be completed.
+
+If the status changes, you can update the buttons in the `Wizard` (e.g., the btn:[Next] and the btn:[Finish] button) from a `WizardPage` via the `getWizard().getContainer().updateButtons()` method call.
+

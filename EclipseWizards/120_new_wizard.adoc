@@ -1,0 +1,18 @@
+== Exercise: IDE New Wizard
+
+=== Target
+
+Provide the previously created wizard as new Wizard in the IDE.
+
+=== Implement the INewWizard interface
+
+[source, java]
+----
+include::res/wizard/MyNewWizard.java[]
+----
+
+=== Using the org.eclipse.ui.newWizards extension point
+
+When a wizard should be provided as new wizard in the New dialog, the _org.eclipse.ui.newWizards_ extension point has to be used.
+
+

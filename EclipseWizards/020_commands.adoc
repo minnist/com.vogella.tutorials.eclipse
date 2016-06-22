@@ -1,0 +1,8 @@
+=== Adding your wizard to the New, Import and Export commands
+
+In Eclipse 3.x you can register a wizard via the _org.eclipse.ui.newWizards_ extension point.
+
+This includes your wizard in the standard dialog for new projects which can be used via the command _org.eclipse.ui.newWizard_.
+
+This is also possible for the export and import wizard commands.
+

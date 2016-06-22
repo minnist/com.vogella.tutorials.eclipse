@@ -1,0 +1,4 @@
+== Eclipse Wizard Resources
+
+http://www.eclipse.org/articles/article.php?file=Article-JFaceWizards/index.html[Creating JFace Wizards]
+

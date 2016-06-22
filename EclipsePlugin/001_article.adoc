@@ -16,7 +16,7 @@ include::012_prerequisites.adoc[]
 include::018_download.adoc[]
 include::020_runtimeeclipse.adoc[]
 include::024_commands.adoc[]
-include::026_firstplugin.adoc[]
+include::026_exercise_firstplugin_handler.adoc[]
 include::030_localdeployplugin.adoc[]
 include::032_exercise_createfeature.adoc[]
 

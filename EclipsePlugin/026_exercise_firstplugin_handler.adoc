@@ -76,7 +76,7 @@ image::migrategenerated20.png[Create Model Fragment, step 2]
 
 Create three model fragment entries in your new file, all of them should be contributing to the `org.eclipse.e4.legacy.ide.application` element id.
 
-TIP: Since Eclipse 4.5 (Mars) XPaths can be used to address certain elements in the application model. So instead of using `org.eclipse.e4.legacy.ide.application` as element id `xpath:/` can be used.
+TIP: Since Eclipse 4.5 (Mars) XPaths can be used to address certain elements in the application model. So instead of using `org.eclipse.e4.legacy.ide.application` as element id `xpath:/` can be used. Using XPaths is the preferred way, because it provides more flexibility.
 
 Use the following screenshots to define the new contribution.
 

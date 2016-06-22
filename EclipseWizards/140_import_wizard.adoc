@@ -1,4 +1,4 @@
-== Exercise: IDE Import Wizard
+== Exercise: Eclipse IDE Import Wizard
 
 === Target
 
@@ -16,7 +16,7 @@ Therefore almost every step from <<exercise-new-wizard>> can be adapted.
 
 Optionally the two wizard pages from previous exercises can be added to this new wizard.
 
-Start an Eclipse IDE and open the _Import_ dialog by using menu:File[Import...] menu and choose the MyImportWizard wizard.
+Start an Eclipse IDE and open the _Import_ dialog by using the menu:File[Import...] menu and choose the MyImportWizard wizard.
 
 image::import-wizard-result.png[Import dialog containing the MyNewWizard]
 

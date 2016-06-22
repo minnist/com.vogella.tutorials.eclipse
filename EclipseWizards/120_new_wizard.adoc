@@ -1,5 +1,5 @@
 [[exercise-new-wizard]]
-== Exercise: IDE New Wizard
+== Exercise: Eclipse IDE New Wizard
 
 === Target
 
@@ -23,7 +23,7 @@ Add a wizard to this extension point.
 
 image::new-wizard-entry-menu.png[Add a wizard entry]
 
-When pressing on the _class*:_ hyperlink of the wizard entry, the following dialog will appear.
+When clicking on the _class*:_ hyperlink of the wizard entry, the following dialog will appear.
 Use the data depicted on the image.
 
 image::create-new-wizard.png[Create a new wizard]
@@ -45,6 +45,6 @@ include::res/wizard/MyNewWizard.java[]
 
 Optionally the two wizard pages from previous exercises can be added to this new wizard.
 
-Start an Eclipse IDE and open the _New_ dialog by using menu:File[New > Other...] menu or simply press kbd:[CTRL + N] and choose the MyNewWizard wizard.
+Start an Eclipse IDE and open the _New_ dialog by using the menu:File[New > Other...] menu or simply press kbd:[CTRL + N] and choose the MyNewWizard wizard.
 
 image::new-wizard-result.png[New dialog containing the MyNewWizard]

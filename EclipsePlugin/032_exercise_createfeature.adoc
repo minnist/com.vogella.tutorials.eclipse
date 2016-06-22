@@ -6,6 +6,7 @@ Create a feature project for your plug-in and add your plug-in to this feature.
 You create a feature project via menu:File[New >Other... > Plug-in Development >Feature Project].
 
 Create the feature project according to the following screenshots.
+
 image::pluginfeature10.png[Creating a feature project for the plug-in export]
 
 image::pluginfeature20.png[Creating a feature project for the plug-in export]

@@ -18,9 +18,9 @@ include::020_runtimeeclipse.adoc[]
 include::024_commands.adoc[]
 include::026_firstplugin.adoc[]
 include::030_localdeployplugin.adoc[]
-include::032_tutorial_createfeature.adoc[]
+include::032_exercise_createfeature.adoc[]
 
-include::034_tutorial_deployplugin.adoc[]
+include::034_exercise_deployplugin.adoc[]
 
 include::050_parts.adoc[]
 include::054_exercise_addingparts.adoc[]

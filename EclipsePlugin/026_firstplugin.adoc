@@ -71,9 +71,12 @@ Select menu:New[Other... > Eclipse 4 > Model >New Model Fragment] from the conte
 image::migrategenerated10.png[Create Model Fragment, step 1]
 
 Press the _Finish_ button.
+
 image::migrategenerated20.png[Create Model Fragment, step 2]
 
 Create three model fragment entries in your new file, all of them should be contributing to the `org.eclipse.e4.legacy.ide.application` element id.
+
+TIP: Since Eclipse 4.5 (Mars) XPaths can be used to address certain elements in the application model. So instead of using `org.eclipse.e4.legacy.ide.application` as element id `xpath:/` can be used.
 
 Use the following screenshots to define the new contribution.
 

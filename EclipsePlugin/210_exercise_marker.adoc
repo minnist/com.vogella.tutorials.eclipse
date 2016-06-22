@@ -1,5 +1,5 @@
 [[resourcemarker_create]]
-== Tutorial: Create Markers for resources
+== Exercise: Create Markers for resources
 
 Create a plug-in project _de.vogella.plugin.markers_.
 Add the dependency to org.eclipse.core.resources", _org.eclipse.jdt.core_ and _org.eclipse.jdt.ui_.

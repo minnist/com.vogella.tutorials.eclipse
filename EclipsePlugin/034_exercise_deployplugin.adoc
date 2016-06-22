@@ -1,4 +1,4 @@
-== Exercise: Create a feature for your plug-in
+== Exercise: Create an update site your plug-in
 
 === Create an update site
 You can create an update site for your feature in a local directory on your machine.

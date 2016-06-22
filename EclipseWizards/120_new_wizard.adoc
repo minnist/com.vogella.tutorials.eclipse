@@ -1,3 +1,4 @@
+[[exercise-new-wizard]]
 == Exercise: IDE New Wizard
 
 === Target

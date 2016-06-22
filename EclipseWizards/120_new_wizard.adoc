@@ -2,17 +2,48 @@
 
 === Target
 
-Provide the previously created wizard as new Wizard in the IDE.
+Provide a wizard in the _New_ dialog of the Eclipse IDE.
+
+=== Using the org.eclipse.ui.newWizards extension point
+
+When a wizard should be provided as new wizard in the _New_ dialog, the _org.eclipse.ui.newWizards_ extension point has to be used.
+
+image::add-new-wizard-extension-point.png[Add org.eclipse.ui.newWizards extension point]
+
+Add a category to this extension point.
+
+image::new-wizard-category-menu.png[Add a wizard entry]
+
+This category should be called _Vogella_.
+
+image::new-wizard-category.png[Add a wizard entry]
+
+Add a wizard to this extension point.
+
+image::new-wizard-entry-menu.png[Add a wizard entry]
+
+When pressing on the _class*:_ hyperlink of the wizard entry, the following dialog will appear.
+Use the data depicted on the image.
+
+image::create-new-wizard.png[Create a new wizard]
+
+The result will look like this:
+
+image::new-wizard-entry.png[Extension Point Result]
 
 === Implement the INewWizard interface
+
+The `MyNewWizard` implementation will look similar to this:
 
 [source, java]
 ----
 include::res/wizard/MyNewWizard.java[]
 ----
 
-=== Using the org.eclipse.ui.newWizards extension point
+=== Validate
 
-When a wizard should be provided as new wizard in the New dialog, the _org.eclipse.ui.newWizards_ extension point has to be used.
+Optionally the two wizard pages from previous exercises can be added to this new wizard.
 
+Start an Eclipse IDE and open the _New_ dialog by using menu:File[New > Other...] menu or simply press kbd:[CTRL + N] and choose the MyNewWizard wizard.
 
+image::new-wizard-result.png[New dialog containing the MyNewWizard]

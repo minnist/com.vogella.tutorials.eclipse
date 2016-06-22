@@ -1,6 +1,6 @@
 = Eclipse p2 updates for RCP applications - Tutorial
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: ./img

@@ -8,23 +8,20 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.handlers.HandlerUtil;
+import org.eclipse.e4.ui.services.IServiceConstants;
 
-public class AddMarker extends AbstractHandler {
+public class AddMarker {
 
-	@Override
-	public Object execute(ExecutionEvent event) throws ExecutionException {
-		IStructuredSelection selection = (IStructuredSelection) HandlerUtil
-				.getActiveSite(event).getSelectionProvider().getSelection();
+	@Execute
+	public void execute(@Named(IServiceConstants.ACTIVE_SELECTION) IStructuredSelection selection) {
 		if (selection == null) {
-			return null;
+			return;
 		}
 		Object firstElement = selection.getFirstElement();
 		if (firstElement instanceof IJavaProject) {
 			IJavaProject type = (IJavaProject) firstElement;
 			writeMarkers(type);
-
 		}
-		return null;
 	}
 
 	private void writeMarkers(IJavaProject type) {

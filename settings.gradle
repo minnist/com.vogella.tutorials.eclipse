@@ -21,4 +21,5 @@ include 'Oomph'
 include 'EclipsePatching'
 include 'EclipseWizards'
 include 'EclipseJDT'
+include 'Eclipse4Adapter'
 

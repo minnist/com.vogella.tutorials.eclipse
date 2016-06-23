@@ -1,0 +1,76 @@
+== Eclipse Adapter Framework
+
+=== Using the IAdaptable interface
+
+Eclipse has its own enhanced adapter framework, which let's the object itself provide certain adapters by implementing the `org.eclipse.core.runtime.IAdaptable` interface.
+
+The `IAdaptable` interface provides a `public &lt;T&gt; T getAdapter(Class&lt;T&gt; adapter);` method, which can be used to obtain an adapter or null in case there is no adapter for the passed in class object.
+
+So the `GermanPlugConnector` itself can provide an adapter for the `UKPlugConnector`
+
+[source, java]
+----
+include::res/iadaptable/GermanPlugConnectorImpl.java[]
+----
+
+Now the `getAdapter` method can be used to get a proper adapter, so that the object itself can deliver a proper adapters for itself,e.g., for a UKPlugConnector and SwissPlugConnector.
+
+An adapter can now be obtained like this:
+
+[source, java]
+----
+include::res/iadaptable/IAdaptableUsage.java[]
+----
+
+NOTE: The `getAdapter` also returns `this` (the object itself) in case the requested class is an instance of it.
+This does not really make sense, if it is already an instance of GermanPlugConnector.
+But this is useful when the GermanPlugConnector is not passed in as `GermanPlugConnector`, but just as an `IAdaptable`.
+
+In many cases the object itself knows better how it can be adapted properly, therefore the use of `IAdaptable` is really popular in the Eclipse Platform.
+So the Eclipse Platform can also simply pass around `IAdaptable` objects to obtain certain adapter implementations.
+
+=== Registering adapters in the IAdapterManager
+
+In some cases the `IAdaptable` interface cannot be implemented by a class for instance when using third party plug-ins.
+Or the plug-in where the class comes from does not know about the actual type, which should be adapted due to different plug-in dependencies.
+
+For those situations the Eclipse Platform provides an adapter manager, which can be extended by an `org.eclipse.core.runtime.IAdapterFactory` .
+Such an `IAdapterFactory` can be registered with the _org.eclipse.core.runtime.adapters_ extension point.
+
+[source, java]
+----
+include::res/adaptermanager/UKPlugConnectorAdapterFactory.java[]
+----
+
+In the extension point the adaptable type, the adapter type itself and the adapter factory has to be specified.
+
+[source, xml]
+----
+include::res/adaptermanager/runtime_adapters.xml[]
+----
+
+The _adaptableType_ is the type, which can be adapted by the `IAdapterFactory`.
+In this case `java.lang.Object`, which means this `IAdapterFactory` can be used for any object, is used, because the different plug connector classes do not have a common super class or interface.
+
+=== Obtaining adapters correctly
+
+The recommended way is to obtain an adapter correctly is to use the `org.eclipse.e4.core.services.adapter.Adapter` service, which is available in the IEclipseContext so that it can be simply injected with DI.
+
+The `Adapter` interface offers an `adapt` method, which can be used like this:
+
+[source, xml]
+----
+include::res/obtainadapter/AdapterService.java[]
+----
+
+NOTE: `org.eclipse.core.runtime.Platform.getAdapterManager().getAdapter()` or `org.eclipse.core.runtime.Platform.getAdapterManager().loadAdapter()` can also used to get an adapter.
+But you should prefer the usuage of the Eclipse 4 service.
+Eclipse 4.6 also introduces the `org.eclipse.core.runtime.Adapters.adapt` method.
+
+The `org.eclipse.core.runtime.Adapters.adapt(Object, Class&lt;T&gt;)` method first does a null check and returns `null`, if the given sourceObject is null.
+
+Secondly it checks whether the sourceObject already is an instance of the desired adapter.
+
+Thirdly it checks if the sourceObject is an instance of `IAdaptable` and tries to get the adapter from it. And finally it queries the adapter manager.
+In case an adapter still cannot be found `null` is returned.
+

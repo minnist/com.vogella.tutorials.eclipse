@@ -1,0 +1,10 @@
+<extension
+      point="org.eclipse.core.runtime.adapters">
+   <factory
+         adaptableType="java.lang.Object"
+         class="com.example.adapter.UKPlugConnectorAdapterFactory">
+      <adapter
+            type="com.example.model.UKPlugConnector">
+      </adapter>
+   </factory>
+</extension>

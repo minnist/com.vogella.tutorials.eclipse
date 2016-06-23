@@ -6,3 +6,4 @@ The class which is referred by the extension points must implement the `IQuickFi
 This defines the `hasCorrections(()` and `getCorrections()` methods.
 
 The `IProblem` interface defines the possible problems.
+

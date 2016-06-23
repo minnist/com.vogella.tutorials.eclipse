@@ -14,9 +14,17 @@ Pressing the btn:[Finish] button will result in the extension point being added 
 
 image::added-quickfix-extensionpoint.png[]
 
-By clicking on the _class*:_ link a class creation wizard will appear.
+By clicking on the [underline]#class*:# link a class creation wizard will appear.
 
 image::quickfix-class-wizard.png[]
 
 Just stick to the defaults and press the btn:[Finish] button.
+
+=== Provide IJavaCompletionProposals with an IQuickFixProcessor
+
+The `IQuickFixProcessor` is pretty similar to an `IQuickAssistProcessor`, but just reacts on certain problems in an editor or in the problems view.
+
+In <<find-problem-id>> a way how to find the right problem id for a certain problem is described.
+
+Your task will be to grab a certain problem id and implement a Quick fix for that particular problem.
 

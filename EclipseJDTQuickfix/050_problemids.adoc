@@ -1,2 +1,18 @@
-== Finding predefined problemids
+[[find-problem-id]]
+== Finding predefined problem ids
+
+The `IProblem` interface contains a huge amount of potential problem ids, where a quick fix could be used to resolve a certain problem.
+
+Due to the huge amount of problem ids it sometimes is pretty hard to figure out, which problem id is in charge for a particular problem.
+
+Therefore an empty implementation of an `IQuickFixProcessor` can be used to find the correct id.
+
+[source, java]
+----
+include::res/QuickFixProcessorFindProblemIds.java[]
+----
+
+With the `IQuickFixProcessor` from above the Eclipse IDE can be started from the Eclipse IDE itself and a certain problem can be reconstructed, e.g., in a Java editor.
+
+Once a problem appears and the `hasCorrections()` is invoked the actual problem id will be printed to the system output.
 

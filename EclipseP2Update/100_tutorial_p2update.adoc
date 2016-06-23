@@ -2,6 +2,7 @@
 == Exercise: Application update
 
 === Target
+
 Create a sample application, where features can be updated by using an update handler.
 
 [[P2 Update Preparation]]

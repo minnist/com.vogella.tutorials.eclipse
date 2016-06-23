@@ -1,0 +1,29 @@
+== Accessing your Java projects with the JDT Java model
+
+The following will create a command which will read the project of the workspace, get all package and Java source files for these projects and read all methods for them by using the JDT Java Model API.
+
+Create a plug-in project called `de.vogella.jdt.infos`.
+Choose the "Hello World, command" as a template.
+
+Add the following dependencies to your plug-in:
+
+* org.eclipse.core.resources
+* org.eclipse.jdt
+* org.eclipse.jdt.core
+* org.eclipse.core.runtime
+* org.eclipse.jdt.ui
+* org.eclipse.jface.text</para>
+
+Change the handler to the following.
+
+[source, java]
+----
+include::res/SampleHandler.java[]
+----
+
+Start your plug-in. Create a few projects in your new workspace.
+Create a few packages for them and a few Java files.
+Press the menu entry which points to your sample command.
+
+You should see the projects, package and source files listed in the _Console_ view of the calling workbench.
+

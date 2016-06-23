@@ -1,0 +1,34 @@
+== Using the AST
+The following will create an AST for each source file in your workspace and print out the name and the return type of each method using the AST.
+
+Create a new plug-in project _de.vogella.jdt.astsimple_ using the "Hello world" template.
+
+Maintain the following plug-in dependencies.
+
+[source, java]
+----
+include::res/ast/MANIFEST.MF[]
+----
+
+To get information about the AST you can use the Visitor Pattern.
+This allows you to add a visitor to the AST for a specific element.
+In this visitor can you capture information about the object and return it after processing the AST.
+Create for this the following class.
+
+[source, java]
+----
+include::res/ast/MethodVisitor.java[]
+----
+
+Add a new command _de.vogella.jdt.astsimple.GetInfo_ and put it into the menu.
+Create the following handler for this command.
+
+[source, java]
+----
+include::res/ast/GetInfo.java[]
+----
+
+Add the command to your menu. Run your new plugin, create a new Java project and select the command.
+It should print out the information about your methods in the IDE from which you started your
+new plugin.
+

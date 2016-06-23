@@ -1,0 +1,41 @@
+== Modifying projects
+
+=== Creating new Java elements via the Java model
+
+The following will create a command which will create a new package to existing (and open) Java projects which have the same name as the Java project.
+For example if you have a project _de.vogella.test_ in your workspace without any package this command will create the package _de.vogella.test_ in this project.
+
+Create a new plug-in project _de.vogella.jdt.newelements_.
+
+Add a new command "de.vogella.jdt.newelements.AddPackage" and put it into the menu.
+
+Create the following handler for this command.
+
+[source, java]
+----
+include::res/AddPackage.java[]
+----
+
+TIP: This will add the package with the Java project name to all open projects in the workspace. Make you sure you really want this. You could also add the action to the context menu of the package explorer and apply it only for the selected project.
+You can learn how to do this in http://www.vogella.com/tutorials/EclipsePlugIn/article.html#packageexplorer[Extending the Package Explorer].
+
+An example can be found on the source page in project _de.vogella.jdt.packageexplorer_.
+Have a look at the command handler _AddPackage.java_.
+
+=== Change the classpath
+You can also modify the classpath of your project.
+The following example handler is contained in project _de.vogella.jdt.addclasspath_.
+It will add JUnit4 to the classpath of all projects in the workspace.
+
+[source, java]
+----
+include::res/classpath/GlobalModifyClasspathHandler.java[]
+----
+
+
+The next example shows a handler, which also adds Mockito to the classpath of a selected `IJavaElement` 's java project.
+
+[source, java]
+----
+include::res/classpath/ModifyClasspathHandler.java[]
+----

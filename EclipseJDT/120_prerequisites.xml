@@ -1,9 +1,0 @@
-<section id="prerequisites">
-	<title>Prerequisites</title>
-	<para>
-		This article assume that you are familiar with Eclipse plug-in
-		development. See
-		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse plug-in development tutorial</ulink>
-		for an introduction.
-	</para>
-</section>

@@ -1,0 +1,5 @@
+== Prerequisites
+
+This article assume that you are familiar with Eclipse plug-in development.
+See http://www.vogella.com/tutorials/EclipsePlugIn/article.html[Eclipse plug-in development tutorial] for an introduction.
+

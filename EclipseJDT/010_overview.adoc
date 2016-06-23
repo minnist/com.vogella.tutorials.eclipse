@@ -1,0 +1,65 @@
+== Eclipse JDT
+
+=== Overview
+
+The Eclipse _Java Development Tools_ (JDT) project provides the tools to develop Java applications.
+This project also provides APIs to access and manipulate Java source code.
+
+It allows to access the existing projects in the workspace, create new projects and modify and read existing projects.
+It also allows to launch Java programs.
+
+JDT provides access to the Java source code via two different means.
+The _Java Model_ and the _Abstract Syntax Tree (AST)_ which is a works on a _Document Object Model_ similar to the XML DOM.
+
+=== Java Model
+
+Each Java project is internally represented in Eclipse as a Java model.
+The Eclipse Java model is a light-weight and fault tolerant representation of the Java project.
+
+It does not contain as many information as the AST but is fast to create.
+For example the _Outline_ view is using the Java model for its representation.
+This way the information in the _Outline_ view can quickly get updated.
+
+The Java model is defined in the `org.eclipse.jdt.core` plug-in.
+
+The Java model is represented as a tree structure which can be described via the following table.
+
+.Java Model
+|===
+| Project Element | Java Model element | Description
+
+| Java project
+| IJavaProject
+| The Java project which contains all other objects.
+
+| src folder / bin folder / or external library
+| IPackageFragmentRoot
+| Hold source or binary files, can be a folder or a library (zip / jar file )
+
+| Each package
+| IPackageFragment
+| Each package is below the IPackageFragmentRoot, sub-packages are not leaves of the package, they are listed directed under IPackageFragmentRoot
+
+| Java Source File
+| ICompilationUnit
+| The Source file is always below the package node
+
+| Types / Fields / Methods
+| IType / IField / IMethod
+| Types, fields and methods
+|===
+
+
+=== Abstract Syntax Tree (AST)
+
+The AST is a detailed tree representation of the Java source code.
+The AST defines API to modify, create, read and delete source code.
+
+The main package for the AST is the `org.eclipse.jdt.core.dom` package and is located in the `org.eclipse.jdt.core` plug-in.
+
+Each Java source file is represented as a subclass of the `ASTNode` class.
+Each specific AST node provides specific information about the object it represents.
+For example you have `MethodDeclaration` (for methods), `VariableDeclarationFragment` (for variable declarations) and `SimpleName` (for any string which is not a Java keyword).
+
+The AST is typically created based on a `ICompilationUnit` from the Java Model.
+

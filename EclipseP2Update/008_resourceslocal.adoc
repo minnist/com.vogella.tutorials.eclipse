@@ -16,3 +16,5 @@ http://eclipsesource.com/blogs/2012/06/01/eclipse-proxy-and-p2/ - Defining a pro
 http://eclipsesource.com/blogs/2013/04/19/installing-eclipse-plug-ins-from-an-update-site-with-a-self-signed-certificate/ - Installing Eclipse Plug-ins from an Update Site with a self-signed certificate
 
 http://wiki.eclipse.org/Equinox/p2/Adding_Self-Update_to_an_RCP_Application - Adding p2 update to an RCP application
+
+

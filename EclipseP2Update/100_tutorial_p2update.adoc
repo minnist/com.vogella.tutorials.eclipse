@@ -6,7 +6,7 @@
 Create a sample application, where features can be updated by using an update handler.
 
 [[P2 Update Preparation]]
-=== Exercise preparation: Create a update enabled RCP application
+=== Exercise preparation - Create a update enabled RCP application
 
 Create an Eclipse 4 RCP project called _com.example.p2.core_ based on the _Eclipse 4 wizard_.
 

@@ -49,7 +49,7 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_loose_your_commit">
 		<title>"Loose" your commit
 		The next morning you come back to your office and you urgently have to fix a bug. Checkout another branch.
@@ -65,7 +65,7 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_find_it_again_in_the_reflog">
 		<title>Find it again in the reflog
 		Git has not only kept the commit in the repository, it has even written a log entry that the HEAD had pointed
@@ -98,5 +98,5 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
-</section>
+	
+

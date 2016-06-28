@@ -10,7 +10,7 @@
 		<title>Preparation
 		
 			For this exercise, we use the a new repository at
-			<ulink url="https://github.com/vogella/gittraining-shared.git">https://github.com/vogella/gittraining-shared.git</ulink>
+			https://github.com/vogella/gittraining-shared.git[https://github.com/vogella/gittraining-shared.git]
 			. Clone this repository and import the existing project into your workspace.
 		
 		Ask the trainers to add you as a coworker to this repository. Otherwise you are not authorized to push.
@@ -19,7 +19,7 @@
 			in your
 			local repository.
 		
-	</section>
+	
 	<section id="_configure_push">
 		<title>Configure push
 		
@@ -57,7 +57,7 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_try_to_push_to_origin">
 		<title>Try to push to origin
 		Try to push. If you are the first one to push the push is successful. If someone else have pushed a commit
@@ -87,7 +87,7 @@
 			its
 			latest state. You first have to fetch the latest state and rebase your local branch on top of it.
 		
-	</section>
+	
 	<section id="_fetch_from_origin_and_rebase">
 		<title>Fetch from origin and rebase
 		Fetch the latest change from the remote repository and integrate the latest change into your local repository
@@ -104,7 +104,7 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_push">
 		<title>Push
 		Now you can try to push again. If you are lucky and no other training participant has successfully pushed in
@@ -122,5 +122,5 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
-</section>
+	
+

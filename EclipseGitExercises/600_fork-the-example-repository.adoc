@@ -28,14 +28,14 @@
 		
 			As we have already worked with a local clone of a Github repository, this exercise uses the second approach.
 		
-	</section>
+	
 	<section id="Sign_up_at_github">
 		<title>Sign up at Github
 		
 			Before you can fork a repository at Github, you need to have a account. In case you do not have already a Github
 			user,
 			open
-			<ulink url="http://www.github.com">http://www.github.com</ulink>
+			http://www.github.com[http://www.github.com]
 			in a browser. Enter a username, an e-mail adress and a password.
 			The e-mail address should match the address you used
 			for the git setup; Github uses the e-mail
@@ -51,7 +51,7 @@
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_fork_the_repository">
 		<title>Fork the Repository
 		Once you have signed up you can read about forking by pressing the fork button.
@@ -88,5 +88,5 @@
 			</inlinemediaobject>
 		
 		You have now created your own copy of the training repository on Github.
-	</section>
-</section>
+	
+

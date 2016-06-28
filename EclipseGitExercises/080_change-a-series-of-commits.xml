@@ -10,7 +10,7 @@
 		<title>Preparation
 		
 			Follow the exercise
-			<ulink url="merge-rebase-and-resolving-conflicts.html">
+			merge-rebase-and-resolving-conflicts.html">
 				Merge, Rebase and Resolving Conflicts
 			</ulink>
 			. After the rebase you end up
@@ -33,7 +33,7 @@
 				</textobject>
 			</inlinemediaobject>
 		</simpara>
-	</section>
+	
 	<section id="_change_the_first_commit">
 		<title>Change the first commit
 		<itemizedlist>
@@ -142,7 +142,7 @@
 				</simpara>
 			</listitem>
 		</itemizedlist>
-	</section>
+	
 	<section id="_cherry_pick_the_rest">
 		<title>Cherry-pick the rest
 		<itemizedlist>
@@ -183,7 +183,7 @@
 					In that case, edit the conflicting files, add the changes and
 					commit
 					like in the exercise
-					<ulink url="merge-rebase-and-resolving-conflicts.html">
+					merge-rebase-and-resolving-conflicts.html">
 						Merge, Rebase and Resolving Conflicts
 					</ulink>
 					.
@@ -212,5 +212,5 @@
 			. This is not yet available in
 			EGit, but can be used from the Git commandline.
 		</simpara>
-	</section>
-</section>
+	
+

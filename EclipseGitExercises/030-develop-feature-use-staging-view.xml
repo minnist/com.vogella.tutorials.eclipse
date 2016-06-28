@@ -49,7 +49,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 			</emphasis>
 			(only available if FindBugs is installed in your Eclipse).
 		
-	</section>
+	
 	<section id="_open_the_git_staging_view_and_inspect_the_status">
 		<title>Open the Git Staging view and inspect the status
 		
@@ -147,7 +147,7 @@ In the _Git Staging_ view enter a commit message in the _Commit message_ field a
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	
 [[cleanup]]
 === Cleanup

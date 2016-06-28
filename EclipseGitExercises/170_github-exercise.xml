@@ -3,19 +3,19 @@
 <section id="_introductiongithub">
 <title>Introduction
 GitHub is the world’s largest source code repository with over 2 million Git repositories and 1 million people.  You can use it to share code and collaborate with others on projects.  The Eclipse organization on GitHub mirrors over 240 of the Git repositories available from Eclipse.org.  This training will involve setting up a project to be shared on GitHub, importing a project from GitHub using EGit, and how GitHub can be used to share code snippets with other developers.
-</section>
+
 <section id="_installation">
 <title>Installation
 GitHub Mylyn Connector can be installed from the following update sites:
 <itemizedlist>
 <listitem>
 
-Main Eclipse Git repository: <ulink url="http://download.eclipse.org/egit/github/updates">http://download.eclipse.org/egit/github/updates</ulink>
+Main Eclipse Git repository: http://download.eclipse.org/egit/github/updates[http://download.eclipse.org/egit/github/updates]
 
 </listitem>
 <listitem>
 
-Luna repository (*): <ulink url="http://download.eclipse.org/releases/luna">http://download.eclipse.org/releases/kepler</ulink>
+Luna repository (*): http://download.eclipse.org/releases/luna[http://download.eclipse.org/releases/kepler]
 
 </listitem>
 <listitem>
@@ -25,39 +25,39 @@ Via the Eclipse Marketplace
 </listitem>
 <listitem>
 
-<ulink url="http://download.eclipse.org/egit/github/updates">http://download.eclipse.org/egit/github/updates</ulink> 
+http://download.eclipse.org/egit/github/updates[http://download.eclipse.org/egit/github/updates] 
 
 </listitem>
 </itemizedlist>
 The feature is listed under the Collaboration category
 Select to install Eclipse EGit Mylyn GitHub Feature
 Restart Eclipse
-</section>
+
 <section id="_create_a_github_account">
 <title>Create a GitHub Account
 This step will take you through creating and setting up a GitHub account.  You may skip this step if you already have a GitHub account.
-* Open any web browser and navigate to <ulink url="https://github.com/signup/free">https://github.com/signup/free</ulink>
+* Open any web browser and navigate to https://github.com/signup/free[https://github.com/signup/free]
 * Enter the required information and select the  Create an account button
 * Verify you can successfully log in to your newly created account
 * Optionally create and associate a Gravatar with the e-mail address you registered your account with
-<emphasis role="strong"> <ulink url="http://gravatar.com/site/signup/">http://gravatar.com/site/signup/</ulink>
+<emphasis role="strong[ http://gravatar.com/site/signup/">http://gravatar.com/site/signup/]
 _ The image associated will be displayed on GitHub when viewing your commits, issues, comments and on your profile page.
-</section>
+
 <section id="_exploring_the_eclipse_repository_on_github">
 <title>Exploring the Eclipse Repository on GitHub
 The Eclipse mirrored repositories on GitHub allow you to explore and track what is happening in the over 240 Eclipse Git repositories.
-* Navigate in a web browser to <ulink url="https://github.com/eclipse">https://github.com/eclipse</ulink> to see a listing of all the repositories
+* Navigate in a web browser to https://github.com/eclipse[https://github.com/eclipse] to see a listing of all the repositories
 * You can explore bookmark different URLs for projects and views you are interested in such as:
 <emphasis role="strong"> All of Matthias Sohn’s EGit commits
-_* <ulink url="https://github.com/eclipse/egit/commits/master?author=msohn">https://github.com/eclipse/egit/commits/master?author=msohn</ulink>
+_* https://github.com/eclipse/egit/commits/master?author=msohn[https://github.com/eclipse/egit/commits/master?author=msohn]
 <emphasis role="strong"> All of the Orion server branches
-_* <ulink url="https://github.com/eclipse/orion.server/branches">https://github.com/eclipse/orion.server/branches</ulink>
+_* https://github.com/eclipse/orion.server/branches[https://github.com/eclipse/orion.server/branches]
 <emphasis role="strong"> Impact chart for the Tycho project
-_* <ulink url="https://github.com/eclipse/tycho/graphs/impact">https://github.com/eclipse/tycho/graphs/impact</ulink>
+_* https://github.com/eclipse/tycho/graphs/impact[https://github.com/eclipse/tycho/graphs/impact]
 <emphasis role="strong"> See what changed between the EGit 1.0 and 1.1 releases
-_* <ulink url="https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r">https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r</ulink>
+_* https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r[https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r]
 <emphasis role="strong"> Download the latest SWT platform source code
-_* <ulink url="https://github.com/eclipse/eclipse.platform.swt/downloads">https://github.com/eclipse/eclipse.platform.swt/downloads</ulink>
+_* https://github.com/eclipse/eclipse.platform.swt/downloads[https://github.com/eclipse/eclipse.platform.swt/downloads]
 * You can also select to watch a repository and you will be notified in your dashboard when a new tag or branch is created.
 <inlinemediaobject>
   <imageobject>
@@ -65,7 +65,7 @@ _* <ulink url="https://github.com/eclipse/eclipse.platform.swt/downloads">https:
   </imageobject>
   <textobject><phrase>github1.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_sharing_a_project_on_github_from_eclipse">
 <title>Sharing a Project on GitHub from Eclipse
 This task will have you publish an Eclipse project on GitHub as a new Git repository.
@@ -88,7 +88,7 @@ Enter HelloGitHub as the project name and select Finish
 
 </listitem>
 </itemizedlist>
-</section>
+
 <section id="_create_a_java_class">
 <title>Create a Java class
 <itemizedlist>
@@ -135,7 +135,7 @@ Select Save
 </itemizedlist>
 </listitem>
 </itemizedlist>
-</section>
+
 <section id="_create_git_repository_for_hellogithub_project">
 <title>Create Git repository for HelloGitHub project
 <itemizedlist>
@@ -176,7 +176,7 @@ Select Finish
   </imageobject>
   <textobject><phrase>github2.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_commit_hellogithub_project_to_new_git_repository">
 <title>Commit HelloGitHub project to new Git repository
 <itemizedlist>
@@ -212,13 +212,13 @@ Select Commit
   </imageobject>
   <textobject><phrase>github3.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_create_a_new_repository_on_github">
 <title>Create a new repository on GitHub
 <itemizedlist>
 <listitem>
 
-Open a web browser to <ulink url="https://github.com/repositories/new">https://github.com/repositories/new</ulink>
+Open a web browser to https://github.com/repositories/new[https://github.com/repositories/new]
 
 </listitem>
 <listitem>
@@ -238,7 +238,7 @@ Select Create repository
   </imageobject>
   <textobject><phrase>github4.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_push_local_git_repository_to_github">
 <title>Push local Git repository to GitHub
 <itemizedlist>
@@ -287,7 +287,7 @@ Enter the following in the URI text box
 <itemizedlist>
 <listitem>
 
-<ulink url="https://username@github.com/username/HelloGitHub.git">https://username@github.com/username/HelloGitHub.git</ulink>
+https://username@github.com/username/HelloGitHub.git[https://username@github.com/username/HelloGitHub.git]
 
 </listitem>
 <listitem>
@@ -327,7 +327,7 @@ A Push Results dialog will be displayed stating the master branch was created on
   </imageobject>
   <textobject><phrase>github7.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_make_a_second_commit_and_push_the_change_upstream">
 <title>Make a second commit and push the change upstream
 <itemizedlist>
@@ -391,7 +391,7 @@ A Push Results dialog will be displayed showing the commit pushed
   </imageobject>
   <textobject><phrase>github9.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_monitor_the_repository_s_issues">
 <title>Monitor the repository’s issues
 <itemizedlist>
@@ -417,7 +417,7 @@ Enter the repository’s URL in the URL text box
 <itemizedlist>
 <listitem>
 
-<ulink url="http://github.com/username/HelloGitHub">http://github.com/username/HelloGitHub</ulink>
+http://github.com/username/HelloGitHub[http://github.com/username/HelloGitHub]
 
 </listitem>
 <listitem>
@@ -499,7 +499,7 @@ Select Finish
   </imageobject>
   <textobject><phrase>github11.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_create_a_new_issue">
 <title>Create a new issue
 <itemizedlist>
@@ -547,8 +547,8 @@ The issue will be created and the editor will update with the new issue number
   </imageobject>
   <textobject><phrase>github12.png</phrase></textobject>
 </inlinemediaobject>
-</section>
-</section>
+
+
 <section id="_importing_projects_from_github">
 <title>Importing Projects from GitHub
 The GitHub Mylyn connector supports cloning repositories from GitHub and registering them in the EGit Git Repositories view.  This can be used to track libraries you are building against or using.  The cloned repository will be wired to pull from GitHub so that you can stay up-to-date as future changes are made to the repositories.
@@ -623,7 +623,7 @@ http-request will be visible after the clone operation completes
 </itemizedlist>
 </listitem>
 </itemizedlist>
-</section>
+
 <section id="_import_the_project">
 <title>Import the project
 <itemizedlist>
@@ -660,7 +660,7 @@ The http-request project will  be present in the Package Explorer view
 </itemizedlist>
 </listitem>
 </itemizedlist>
-</section>
+
 <section id="_pulling_changes">
 <title>Pulling Changes
 <itemizedlist>
@@ -685,8 +685,8 @@ A Push Results dialog will display showing which commits were fetched and which 
 
 </listitem>
 </itemizedlist>
-</section>
-</section>
+
+
 <section id="_sharing_snippets_from_eclipse">
 <title>Sharing Snippets from Eclipse
 The GitHub Mylyn connector supports creating, editing, and cloning GitHub Gists. Gists are snippets that are versioned in a Git repository that can contain or more files.  They can be browsed, edited, and commented on from the Mylyn Task editor.  The Gist task editor allows you to open Gist files in a local Eclipse editor as well as clone Gists into a local Git repository.
@@ -740,7 +740,7 @@ Select Finish
   </imageobject>
   <textobject><phrase>github14.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_viewing_your_own_gists">
 <title>Viewing your own Gists
 <itemizedlist>
@@ -772,7 +772,7 @@ The Gists will synchronize to the newly created query folder in the Task List vi
 </itemizedlist>
 </listitem>
 </itemizedlist>
-</section>
+
 <section id="_tracking_another_user_s_gists">
 <title>Tracking Another User’s Gists
 <itemizedlist>
@@ -840,7 +840,7 @@ This Gist contains a code snippet for creating Gists using the GitHub Java API
   </imageobject>
   <textobject><phrase>github16.png</phrase></textobject>
 </inlinemediaobject>
-</section>
+
 <section id="_creating_a_gist">
 <title>Creating a Gist
 <itemizedlist>
@@ -892,6 +892,6 @@ Note: You can also create Gists by selecting text in the Eclipse Console view.
 
 </listitem>
 </itemizedlist>
-</section>
-</section>
-</section>
+
+
+

@@ -89,7 +89,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
+	
 	<section id="_push_to_remote">
 		<title>Push to remote
 		
@@ -140,5 +140,5 @@ Note that Git created a new remote tracking branch:
 				</textobject>
 			</inlinemediaobject>
 		
-	</section>
-</section>
+	
+

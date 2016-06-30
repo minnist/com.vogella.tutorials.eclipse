@@ -19,9 +19,9 @@ Use the _Plug-in with a view_ template with the following settings.
 
 image::adapter10.png[]
 
-Add the dependency _org.eclipse.ui.views_ in tab dependencies of _plugin.xml_.
+Add the dependency _org.eclipse.ui.views_ in tab dependencies of the _MANIFEST.MF_.
 
-Create the following data model.
+Create the following `Todo` class as data model.
 
 [source, java]
 ----
@@ -45,16 +45,18 @@ The data of the extension point should be like the following.
 include::examples/adapter/extension.xml[]
 ----
 
+Implement the `IPropertySource` interface to provide it for the _Properties_ view.
+
+[source, java]
+----
+include::examples/adapter/TodoPropertySource.java[]
+----
+
 Implement the factory and the new class `TodoPropertySource` which implements `IPropertySource`.
 
 [source, java]
 ----
 include::examples/adapter/TodoAdapterFactory.java[]
-----
-
-[source, java]
-----
-include::examples/adapter/TodoPropertySource.java[]
 ----
 
 If you run your workbench and open your view via menu:Windows[Show > View > Others > Sample Category > Sample View] and you select a data element in your viewer you should see your data in the _Properties_ view.

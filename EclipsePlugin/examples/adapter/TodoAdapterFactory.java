@@ -7,7 +7,8 @@ import de.vogella.plugin.adapter.model.Todo;
 
 public class TodoAdapterFactory implements IAdapterFactory {
 
-	private static final adapterList = new Class<?>[] { IPropertySource.class };
+	// use a static final field so that the adapterList is only instanciated once
+	private static final Class<?>[] adapterList = new Class<?>[] { IPropertySource.class };
 
 	@Override
 	public <T> T getAdapter(Object adaptableObject, Class<T> adapterType) {

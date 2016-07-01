@@ -1,17 +1,17 @@
 [[adapters_propertyview_example]]
 == Exercise - Adapters for the Properties view
 
-We will simply use an adapter to show our data in the property view.
+We will simply use an adapter to show our data in the _Properties_ view.
 
 Create a new plug-in project _de.vogella.plugin.adapter_.
 
 Add the following dependencies in the dependencies tab of the _MANIFEST.MF_ file:
 
-* org.eclipse.core.runtime,
+* org.eclipse.core.runtime
 * org.eclipse.e4.ui.model.workbench
 * org.eclipse.e4.ui.services
 * org.eclipse.e4.ui.workbench
-* org.eclipse.ui,
+* org.eclipse.ui
 * org.eclipse.ui.views
 
 Create the following `Todo` class as data model.

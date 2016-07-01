@@ -1,0 +1,61 @@
+[[adapters_example]]
+=== Exercise - Adapters for the Properties view
+
+We will simply use an adapter to show our data in the property view.
+
+Create a new plug-in project _de.vogella.plugin.adapter_.
+
+Add the following dependencies in the dependencies tab of the _MANIFEST.MF_ file:
+
+* org.eclipse.core.runtime,
+* org.eclipse.e4.ui.model.workbench
+* org.eclipse.e4.ui.services
+* org.eclipse.e4.ui.workbench
+* org.eclipse.ui,
+* org.eclipse.ui.views
+
+Create the following `Todo` class as data model.
+
+[source, java]
+----
+include::examples/adapter/Todo.java[]
+----
+
+Create a model fragment (_fragment.e4xmi_) and add a _PartDescriptor_ called _Sample View_.
+
+Create _SampleView.java_ as part for the PartDescriptor implementation.
+
+[source, java]
+----
+include::examples/adapter/SampleView.java[]
+----
+
+After this change, you should be able to run your project, open your view and see your to-do items.
+
+To display the `Todo` values in the property view, add the extension point _org.eclipse.core.runtime.adapters_ to your project.
+
+The data of the extension point should be like the following.
+
+[source, xml]
+----
+include::examples/adapter/extension.xml[]
+----
+
+Implement the `IPropertySource` interface to provide it for the _Properties_ view.
+
+[source, java]
+----
+include::examples/adapter/TodoPropertySource.java[]
+----
+
+Implement the factory and the new class `TodoPropertySource` which implements `IPropertySource`.
+
+[source, java]
+----
+include::examples/adapter/TodoAdapterFactory.java[]
+----
+
+If you run your workbench and open your view via menu:Windows[Show > View > Others > Sample Category > Sample View] and you select a data element in your viewer you should see your data in the _Properties_ view.
+
+image::adapter40.png[]
+

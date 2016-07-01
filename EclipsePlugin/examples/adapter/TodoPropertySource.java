@@ -1,4 +1,3 @@
-
 package de.vogella.plugin.adapter;
 
 import org.eclipse.ui.views.properties.IPropertyDescriptor;

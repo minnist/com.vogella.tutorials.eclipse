@@ -14,7 +14,7 @@ public class AddMarker {
 	@Execute
 	public void execute(@Named(IServiceConstants.ACTIVE_SELECTION) IStructuredSelection selection, Adapter adapter) {
 
-		if (selection == null && !selection.isEmpty()) {
+		if (selection == null || selection.isEmpty()) {
 			return;
 		}
 

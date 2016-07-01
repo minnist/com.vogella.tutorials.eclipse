@@ -1,5 +1,5 @@
 [[adapters_example]]
-=== Exercise - Adapters for the Properties view
+== Exercise - Adapters for the Properties view
 
 We will simply use an adapter to show our data in the property view.
 
@@ -22,6 +22,8 @@ include::examples/adapter/Todo.java[]
 ----
 
 Create a model fragment (_fragment.e4xmi_) and add a _PartDescriptor_ called _Sample View_.
+
+image::adapter-todo-view.png[]
 
 Create _SampleView.java_ as part for the PartDescriptor implementation.
 

@@ -5,11 +5,11 @@
 :icons:
 :imagesdir: img
 (c) 2009, 2016 vogella GmbH
-Version 0.1, 29.05.2016
+Version 0.2, 29.06.2016
 
 [abstract]
 This tutorial describes how to create an editor and how this editor can be filled from a view.
-The tutorial is based on Eclipse 3.7 (Eclipse Indigo).
+The tutorial is based on Eclipse 4.6 (Eclipse Neon).
 
 
 include::010_overview.adoc[]

@@ -32,6 +32,7 @@ include::070_context.adoc[]
 include::200_marker.adoc[]
 include::210_exercise_marker.adoc[]
 include::300_adapters.adoc[]
+include::320_exercise_adapters.adoc[]
 include::400_resources.adoc[]
 include::220_startupaction.adoc[]
 

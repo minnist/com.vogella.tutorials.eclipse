@@ -3,6 +3,8 @@
 
 The _de.vogella.plugin.adapter_ plug-in from <<adapters_propertyview_example>> should be reused for this exercise.
 
+Create another _PartDescriptor_ called _WorkbenchAdapter Sample_, which also has the _Sample Category_ category.
+
 image::adapter-todo-workbenchadapter-descriptor.png[]
 
 Create _SampleWorkbenchAdapterView.java_ as part for the PartDescriptor implementation.

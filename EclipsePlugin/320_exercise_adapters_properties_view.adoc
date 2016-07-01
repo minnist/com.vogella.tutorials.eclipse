@@ -23,7 +23,7 @@ include::examples/adapter/Todo.java[]
 
 Create a model fragment (_fragment.e4xmi_) and add a _PartDescriptor_ called _Sample View_.
 
-image::adapter-todo-view.png[]
+image::adapter-todo-descriptor.png[]
 
 Create _SampleView.java_ as part for the PartDescriptor implementation.
 
@@ -34,9 +34,9 @@ include::examples/adapter/SampleView.java[]
 
 After this change, you should be able to run your project, open your view and see your to-do items.
 
-To display the `Todo` values in the property view, add the extension point _org.eclipse.core.runtime.adapters_ to your project.
+To display the `Todo` values in the _Properties_ view, add the extension point _org.eclipse.core.runtime.adapters_ to your project.
 
-The data of the extension point should be like the following.
+The data of the extension point should be like the following:
 
 [source, xml]
 ----

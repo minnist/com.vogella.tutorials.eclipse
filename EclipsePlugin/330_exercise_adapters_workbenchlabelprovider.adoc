@@ -1,63 +1,40 @@
-[[adapters_example]]
-== Exercise - Adapters for the Properties view
+[[adapters_workbenchlabelprovider_example]]
+== Exercise - Adapters and the WorkbenchLabelProvider
 
-We will simply use an adapter to show our data in the property view.
+The _de.vogella.plugin.adapter_ plug-in from <<adapters_propertyview_example>> should be reused for this exercise.
 
-Create a new plug-in project _de.vogella.plugin.adapter_.
+image::adapter-todo-workbenchadapter-descriptor.png[]
 
-Add the following dependencies in the dependencies tab of the _MANIFEST.MF_ file:
-
-* org.eclipse.core.runtime,
-* org.eclipse.e4.ui.model.workbench
-* org.eclipse.e4.ui.services
-* org.eclipse.e4.ui.workbench
-* org.eclipse.ui,
-* org.eclipse.ui.views
-
-Create the following `Todo` class as data model.
+Create _SampleWorkbenchAdapterView.java_ as part for the PartDescriptor implementation.
+The only difference to the previous `SampleView` is that a `DelegatingStyledCellLabelProvider` is used as LabelProvider, which takes the `WorkbenchLabelProvider` as `IStyledLabelProvider` implementation.
 
 [source, java]
 ----
-include::examples/adapter/Todo.java[]
+include::examples/adapter/SampleWorkbenchAdapterView.java[]
 ----
 
-Create a model fragment (_fragment.e4xmi_) and add a _PartDescriptor_ called _Sample View_.
+When using a `WorkbenchLabelProvider` the objects, which are supposed to be shown in the `Viewer` should provide an adapter for the `IWorkbenchAdapter`, `IWorkbenchAdapter2` and `IWorkbenchAdapter3` interface, but at least for the the `IWorkbenchAdapter`. These interfaces can be used by the `WorkbenchLabelProvider` in order to determine how the objects should be visualized.
 
-image::adapter-todo-view.png[]
-
-Create _SampleView.java_ as part for the PartDescriptor implementation.
+To provide these adapters for the `WorkbenchLabelProvider` a `TodoWorkbenchAdapter` is created.
+It derives from `WorkbenchAdapter`, which is an abstract class that implements all three interfaces.
 
 [source, java]
 ----
-include::examples/adapter/SampleView.java[]
+include::examples/adapter/TodoWorkbenchAdapter.java[]
 ----
 
-After this change, you should be able to run your project, open your view and see your to-do items.
-
-To display the `Todo` values in the property view, add the extension point _org.eclipse.core.runtime.adapters_ to your project.
-
-The data of the extension point should be like the following.
-
-[source, xml]
-----
-include::examples/adapter/extension.xml[]
-----
-
-Implement the `IPropertySource` interface to provide it for the _Properties_ view.
+Now the `TodoAdapterFactory` has to be extended to also provide the `TodoWorkbenchAdapter`.
 
 [source, java]
 ----
-include::examples/adapter/TodoPropertySource.java[]
+include::examples/adapter/TodoAdapterFactoryWorkbenchAdapter.java[]
 ----
 
-Implement the factory and the new class `TodoPropertySource` which implements `IPropertySource`.
+Now that the `TodoAdapterFactory` can also return `WorkbenchAdapter` objects, it also has to be specified in the _org.eclipse.core.runtime.adapters_ extension point.
 
-[source, java]
-----
-include::examples/adapter/TodoAdapterFactory.java[]
-----
+image::adapter-workbenchadapter-extension-point.png[]
 
-If you run your workbench and open your view via menu:Windows[Show > View > Others > Sample Category > Sample View] and you select a data element in your viewer you should see your data in the _Properties_ view.
+The result should look similar this:
 
-image::adapter40.png[]
+image::adapter-todo-workbenchadapter-view.png[]
 

@@ -1,0 +1,16 @@
+== Eclipse Forms</title>
+
+=== What is the Eclipse Forms API
+
+Eclipse supports a predefined web-like user interface style, called Eclipse Forms. 
+Eclipse Forms is provided by the `org.eclipse.ui.forms` plug-in and is based on SWT und JFace. 
+Eclipse Forms can be used in Eclipse based application using the 3.x or the 4.x API.
+The class FormToolkit serves as a factory for the creation of the required user interface elements. 
+This factory adjust the look and feel of the standard SWT and JFace elements to the Forms API.
+Existing UI elements can be enhanced to the form API via the method adapt(Composite).
+
+=== Form / ScrolledForm
+
+`FormToolkit` provides `Form` or `ScrollForm` which serve as the frame for the user interface elements. 
+They provide a header, a toolbar and a body. 
+The body can get accessed via the `getBody()` method and can contain other user interface elements.

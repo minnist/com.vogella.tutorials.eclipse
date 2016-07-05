@@ -1,10 +1,10 @@
 <section id="resources">
-	<title>Links and Literature</title>
+	<title>Links and Literature
 	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
-<para>
+
 			<ulink url="http://www.eclipse.org/articles/Article-Forms/article.html">
 				http://www.eclipse.org/articles/Article-Forms/article.html</ulink>
 		Article about Eclipse Forms
-		</para>
+		
 </section>

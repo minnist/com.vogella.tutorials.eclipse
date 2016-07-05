@@ -1,6 +1,6 @@
-== Forms Example</title>
+== Forms Example
 
-=== First Example</title>
+=== First Example
 
 Create a new Eclipse RCP project called _de.vogella.rcp.intro.forms_. 
 Use the "RCP Application with a view" as a template. 
@@ -18,7 +18,7 @@ The resulting application should look like the following:
 
 image::forms10.gif[]
 
-=== Adding a command to the menu</title>
+=== Adding a command to the menu
 
 You can also add a command to the menu of the form. 
 For this, define a command with a handler.

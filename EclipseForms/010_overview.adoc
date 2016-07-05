@@ -1,4 +1,4 @@
-== Eclipse Forms</title>
+== Eclipse Forms
 
 === What is the Eclipse Forms API
 

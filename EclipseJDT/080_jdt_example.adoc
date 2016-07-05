@@ -12,7 +12,7 @@ Add the following dependencies to your plug-in:
 * org.eclipse.jdt.core
 * org.eclipse.core.runtime
 * org.eclipse.jdt.ui
-* org.eclipse.jface.text</para>
+* org.eclipse.jface.text
 
 Change the handler to the following.
 

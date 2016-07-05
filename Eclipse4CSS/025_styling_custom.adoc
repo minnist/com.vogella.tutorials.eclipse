@@ -1,0 +1,208 @@
+<section id="css_custom_widgets">
+	<title>CSS support for custom widgets
+	
+		The CSS support offers two extension points
+		`org.eclipse.e4.ui.css.core.propertyHandler`
+		and
+		`org.eclipse.e4.ui.css.core.elementProvider`
+		, where you may define
+		custom CSS selectors and CSS properties for your own widgets.
+	
+	
+		Those extension points are defined in the
+		`org.eclipse.e4.ui.css.core`
+		plug-in,
+		so you need at least a dependency to this plug-in. In order to use some predefined
+		implementations for SWT you
+		may also want to use the
+		`org.eclipse.e4.ui.css.swt`
+		plug-in.
+	
+	
+		The
+		`org.eclipse.e4.ui.css.core.propertyHandler`
+		extension in general
+		defines an adapter (
+		`ElementAdapter`
+		) implementation to wrap a certain widget for
+		the CSS framework. And a handler (
+		`ICSSPropertyHandler`
+		) implementation must also
+		be defined, which applies the CSS properties, which are also defined under the handler in
+		the
+		_plugin.xml_
+		, to the actual widget.
+	
+	
+		The
+		`org.eclipse.e4.ui.css.core.elementProvider`
+		extension defines an
+		`IElementProvider`
+		, which in general returns the widgets
+		adapter(
+		`ElementAdapter`
+		). Under this provider you may specify for which
+		widgets the
+		`IElementProvider`
+		is responsible.
+	
+	<section id="org.eclipse.e4.ui.css.core.propertyHandler">
+		<title>The org.eclipse.e4.ui.css.core.propertyHandler extension point
+		
+			In the
+			`org.eclipse.e4.ui.css.core.propertyHandler`
+			extension point
+			you define an
+			`ElementAdapter`
+			for your widget and an implementation of an
+			`ICSSPropertyHandler`
+			, where different
+			`property-names`
+			for the widget can be defined.
+		
+		
+			Here you can see a sample of the
+			`org.eclipse.e4.ui.css.swt`
+			projects propertyHandler extension point:
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/swt_css_extensionpoints.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>PropertyHandler extension point for org.eclipse.e4.ui.css.swt</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			These are the default
+			`ElementAdapter`
+			implementations for the
+			`adapter`
+			property in the screenshot above:
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/elementadapter_type_hierarchy.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>ElementAdapter type hierarchy</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			In the
+			`ICSSPropertyHandler`
+			implementation those
+			`property-names`
+			are read and applied to the actual
+			widget.
+		
+		
+			The
+			`CSSPropertyBackgroundSWTHandler`
+			and it's parent
+			`AbstractCSSPropertyBackgroundHandler`
+			are examples of such an
+			implementation of the
+			`ICSSPropertyHandler`
+			, where the background behavior is
+			applied for certain widgets.
+		
+		
+			The
+			`AbstractCSSPropertyBackgroundHandler`
+			class delegates to the methods
+			for the
+			`property-names`
+			, which are applied in the propertyHandler
+			extension point, to its subclasses like the
+			`CSSPropertyBackgroundSWTHandler`
+			.
+		
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+				href="../examples/snippets/AbstractCSSPropertyBackgroundHandler.txt" />
+		</programlisting>
+		
+			The following listing is the
+			`﻿applyCSSPropertyBackgroundColor`
+			method of
+			the
+			`CSSPropertyBackgroundSWTHandler`
+			and shows how the background-color
+			`property-name`
+			will be applied for several widgets:
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/snippets/applyCSSPropertyBackgroundColor.txt" />
+			</programlisting>
+		
+	</section>
+	<section id="org.eclipse.e4.ui.css.core.elementProvider">
+		<title>The org.eclipse.e4.ui.css.core.elementProvider extension point
+		
+			With the
+			`org.eclipse.e4.ui.css.core.elementProvider`
+			extension
+			point you need to implement an
+			`IElementProvider`
+			, which returns an
+			`org.w3c.dom.Element`
+			.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/css_elementprovider.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>ElementAdapter type hierarchy</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			In general the returned
+			`org.w3c.dom.Element`
+			is an instance of an
+			`ElementAdapter`
+			, which we already saw in the propertyHandler extension
+			point and the screenshot of the ElementAdapter's type
+			hierarchy before.
+		
+		
+			By the widget properties under the provider, you see in the screenshot above, you
+			point to the class of the actual
+			widget, like
+			`org.eclipse.swt.widgets.Control`
+			, for which the provider is
+			responsible.
+		
+		
+			The
+			`SWTElementProvider`
+			for instance contains those
+			`ElementAdapter`
+			implementations, which are shown in the type hierarchy
+			screenshot and looks like this:
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/snippets/SWTElementProvider.txt" />
+			</programlisting>
+		
+
+		
+			See the following URL:
+			<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/CSS"> Eclipse
+				4 CSS Wiki
+			</ulink>
+			for more information.
+		
+	</section>
+</section>

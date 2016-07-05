@@ -1,0 +1,24 @@
+== Eclipse and declarative styling
+
+=== Styling Eclipse applications
+(((CSS, Eclipse)))
+(((Eclipse styling, CSS)))
+		
+The visual appearance of your Eclipse application can be styled via external files similar to the CSS 2.1 standard.
+CSS selectors used in Eclipse are identifiers, which relate to widgets or other elements, for example predefined pseudo classes. 
+Non-standard properties are prefixed with either `swt-` or `eclipse-`.
+		
+The following example shows a CSS file which defines a styling for an Eclipse application.
+		
+		
+<programlisting>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/default.css" />
+</programlisting>
+		
+
+SWT has certain limitations concerning component styling. 
+These limitations are based on the restrictions of the underlying operating system or limitation in SWT itself. 
+For example, it is not possible to style menus and table headers because this is not supported by SWT. 
+In addition some platforms do not allow the styling of certain widgets.
+For example, the SWT implementation for Windows does not allow to set the background color of the  `Button` and the `ScrollBar` widget.
+

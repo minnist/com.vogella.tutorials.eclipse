@@ -1,0 +1,14 @@
+
+// IStylingEngine is injected
+@Inject IStylingEngine engine;
+
+// more code....
+
+Label label = new Label(parent, SWT.NONE);
+Text text = new Text(parent, SWT.BORDER);
+
+// set the ID, must be unique in the same window
+engine.setID(label, "MyCSSTagForLabel"); 
+
+// set the class, can be used several times
+engine.setClassname(text, "error");

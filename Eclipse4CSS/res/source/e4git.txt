@@ -1,0 +1,13 @@
+
+//E4 Tools, use master for e4 0.12
+git://git.eclipse.org/gitroot/e4/org.eclipse.e4.tools.git
+
+//E4 UI, use master for e4 0.12
+Contains some e4 demos that depend on other parts of e4, and the simple IDE work.
+git://git.eclipse.org/gitroot/e4/org.eclipse.e4.ui.git
+
+//Platform Runtime (plus Eclipse4 runtime)
+git://git.eclipse.org/gitroot/platform/eclipse.platform.runtime.git
+- 
+// Platform UI (plus Eclipse4 UI) 
+git://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git

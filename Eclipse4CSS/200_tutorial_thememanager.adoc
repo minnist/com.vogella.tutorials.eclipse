@@ -1,0 +1,272 @@
+<section id="tutorial_cssstyling" role="wrapper">
+	<title>Exercise: Dynamic style switching with themes
+	<section id="css_switching_target">
+		<title>Target
+		
+			The following exercise assumes that you have already implemented
+			CSS
+			support for your application based on the last exercise.
+			In this
+			exercise you use the
+			`IThemeEngine`
+			to introduce the ability
+			to switch the
+			application
+			styling at
+			runtime.
+		
+	</section>
+	<section id="css_switching_dependencies">
+		<title>Add dependencies
+
+		
+			Add the
+			`org.eclipse.e4.ui.css.swt.theme`
+			plug-in
+			as dependency to your application plug-in.
+		
+	</section>
+	<section id="css_switching_cssfile">
+		<title>Create a CSS file
+
+		
+			Create the following
+			_css/rainbow.css_
+			file.
+		
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/css/rainbow.css" />
+			</programlisting>
+		
+	</section>
+	<section id="css_switching2">
+		<title>Remove the applicationCSS property
+		
+			Remove the
+			`applicationCSS`
+			property from your product extension. For this select the property
+			and press the
+			<guilabel>Remove</guilabel>
+			button as depicted in the following screenshot.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme05.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Remove applicationCSS</phrase>
+				</textobject>
+			</mediaobject>
+		
+
+	</section>
+
+	<section id="css_switching3">
+		<title>Create the theme extensions
+		
+			Select the
+			<guilabel>Extensions</guilabel>
+			tab in the 
+			_plugin.xml_ editor
+			and create two
+			extensions for the
+			`org.eclipse.e4.ui.css.swt.theme`
+			extension point.
+		
+		
+			You create an extension in the
+			<guilabel>Extensions</guilabel>
+			tab by
+			pressing the
+			<guibutton>Add...</guibutton>
+			button.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme06.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Add button in extension points</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Select the
+			`org.eclipse.e4.ui.css.swt.theme`
+			extension point and press the
+			<guilabel>Finish</guilabel>
+			button.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme08.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selecting</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Right-click on the
+			`org.eclipse.e4.ui.css.swt.theme`
+			extension to create a new theme. The following screenshots show the
+			extensions which you should create.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme10.png"/>
+
+				</imageobject>
+			</mediaobject>
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme20.png"/>
+
+				</imageobject>
+			</mediaobject>
+		
+		
+			The relevant part in the
+			_plugin.xml_
+			file should look like the following.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/themeextension.txt" />
+			</programlisting>
+		
+
+
+		
+			Add the
+			`cssTheme`
+			property to your product and point to the
+			`com.example.e4.rcp.todo.default`
+			theme.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme30.png"/>
+
+				</imageobject>
+			</mediaobject>
+		
+		<warning>
+			
+				Ensure that the
+				`cssTheme`
+				property is correctly set. Without this initial setting the
+				`IThemeEngine`
+				does not work.
+			
+		</warning>
+	</section>
+	<section id="css_switching_validate">
+		<title>Validating
+		
+			Start your application and ensure that the application is styled
+			according to the
+			`cssTheme`
+			property setting.
+		
+	</section>
+	<section id="css_switching4">
+		<title>Implement a new menu entry
+		
+			Create a new Java class, which allows you to switch between
+			the
+			themes.
+		
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/css/ThemeSwitchHandler.java" />
+			</programlisting>
+		
+		Define a new command and a handler in your application model for
+			switching the style.
+			Assign the above class to the handler.
+		
+
+		Add a menu entry to your application model which uses your
+			handler for switching the style.
+		
+
+	</section>
+	<section id="css_switching_validateswitching">
+		<title>Validate theme switching
+		
+			Start the application and select your new menu entry. Afterwards the
+			styling of your application should use the
+			_rainbow_
+			theme.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme40.png"/>
+
+				</imageobject>
+			</mediaobject>
+		
+		<note>Changes in styling may require a restart of
+			your
+			application if
+			your new style does not override all properties of
+			the old style.
+		</note>
+
+	</section>
+
+
+	<section id="css_darktheme">
+		<title>Optional: Reusing the dark theme of Eclipse
+
+		
+			You can also reuse other CSS themes. To use the dark theme of the
+			Eclipse IDE, add the
+			`org.eclipse.ui.themes`
+			plug-in to your feature.
+		
+		
+			Create the following file called
+			_dark.css_
+			in your
+			_css_
+			folder.
+		
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/css/dark.css" />
+			</programlisting>
+		
+
+		Create a new theme pointing to the following new CSS file. Start
+			your application and validate that you can switch to the dark theme.
+		
+	</section>
+
+	<section id="css_switching5">
+		<title>Adjust the build.properties file
+		
+			Ensure that all CSS files are selected in your
+			_build.properties_
+			file in the
+			`com.example.e4.rcp.todo`
+			plug-in to make them available in an exported application.
+		
+	</section>
+</section>

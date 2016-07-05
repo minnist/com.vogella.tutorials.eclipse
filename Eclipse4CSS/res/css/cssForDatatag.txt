@@ -1,0 +1,7 @@
+#MyCSSTagForLabel{
+	color: blue;
+}
+
+.error { 
+	border: 1px red; 
+}

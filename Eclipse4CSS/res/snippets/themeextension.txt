@@ -1,0 +1,13 @@
+ <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/default.css"
+            id="com.example.e4.rcp.todo.default"
+            label="Default Theme">
+      </theme>
+      <theme
+            basestylesheeturi="css/rainbow.css"
+            id="com.example.e4.rcp.todo.rainbow"
+            label="Rainbow">
+      </theme>
+</extension>

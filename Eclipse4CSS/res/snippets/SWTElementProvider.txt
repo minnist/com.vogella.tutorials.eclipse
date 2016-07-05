@@ -1,0 +1,60 @@
+/**
+ * Returns the CSS class which is responsible for styling a SWT widget
+ *
+ * Registered via the "org.eclipse.e4.ui.css.core.elementProvider" extension
+ * point for the SWT widgets
+ *
+ *
+ *
+ * {@link IElementProvider} SWT implementation to retrieve w3c Element
+ * {@link SWTElement} linked to SWT widget.
+ *
+ */
+public class SWTElementProvider implements IElementProvider {
+
+	public static final IElementProvider INSTANCE = new SWTElementProvider();
+
+	@Override
+	public Element getElement(Object element, CSSEngine engine) {
+		if (element instanceof Text) {
+			return new TextElement((Text) element, engine);
+		}
+		if (element instanceof Button) {
+			return new ButtonElement((Button) element, engine);
+		}
+		if (element instanceof Scale) {
+			return new ScaleElement((Scale) element, engine);
+		}
+		if (element instanceof Shell) {
+			return new ShellElement((Shell) element, engine);
+		}
+		if (element instanceof CTabFolder) {
+			return new CTabFolderElement((CTabFolder) element, engine);
+		}
+		if (element instanceof ToolBar) {
+			return new ToolBarElement((ToolBar) element, engine);
+		}
+		if (element instanceof Composite) {
+			return new CompositeElement((Composite) element, engine);
+		}
+		if (element instanceof Control) {
+			return new ControlElement((Control) element, engine);
+		}
+		if (element instanceof CTabItem) {
+			return new CTabItemElement((CTabItem) element, engine);
+		}
+		if (element instanceof TableItem) {
+			return new TableItemElement((TableItem) element, engine);
+		}
+		if (element instanceof ToolItem) {
+			return new ToolItemElement((ToolItem) element, engine);
+		}
+		if (element instanceof Item) {
+			return new ItemElement((Item) element, engine);
+		}
+		if (element instanceof Widget) {
+			return new WidgetElement((Widget) element, engine);
+		}
+		return null;
+	}
+}

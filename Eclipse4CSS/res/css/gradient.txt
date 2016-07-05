@@ -1,0 +1,16 @@
+
+// linear gradient
+// background-color: gradient linear color_1 [color_2]* [percentage]*
+
+// for example
+background-color: gradient linear white black 
+background-color: gradient linear white black blue
+background-color: gradient linear white black 50%
+background-color: gradient linear white black 50% 20%
+
+// radial gradient
+// background-color: gradient radial color_1 [color_2]* [percentage]*
+
+// for example
+background-color: gradient radial white black
+background-color: gradient radial white black 50%

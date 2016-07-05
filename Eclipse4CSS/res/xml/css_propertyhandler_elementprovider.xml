@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <extension
+        point="org.eclipse.e4.ui.css.core.propertyHandler">
+        <handler
+            adapter="com.vogella.rcp.css.custom.css.UserProfileElementAdapter"
+            composite="true"
+            handler="com.vogella.rcp.css.custom.css.UserProfileCSSHandler">
+            <property-name
+                name="header-color">
+            </property-name>
+        </handler>
+    </extension>
+    <extension
+        point="org.eclipse.e4.ui.css.core.elementProvider">
+        <provider
+            class="com.vogella.rcp.css.custom.css.UserProfileWidgetElementProvider">
+            <widget
+                class="com.vogella.rcp.css.custom.widget.UserProfileWidget">
+            </widget>
+        </provider>
+    </extension>
+</plugin>

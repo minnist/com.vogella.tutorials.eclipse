@@ -1,0 +1,23 @@
+	@Override
+	public boolean applyCSSProperty(Object element, String property,
+			CSSValue value, String pseudo, CSSEngine engine) throws Exception {
+		if ("background".equals(property)) {
+			applyCSSPropertyBackground(element, value, pseudo, engine);
+		}
+		if ("background-attachment".equals(property)) {
+			applyCSSPropertyBackgroundAttachment(element, value, pseudo, engine);
+		}
+		if ("background-color".equals(property)) {
+			applyCSSPropertyBackgroundColor(element, value, pseudo, engine);
+		}
+		if ("background-image".equals(property)) {
+			applyCSSPropertyBackgroundImage(element, value, pseudo, engine);
+		}
+		if ("background-position".equals(property)) {
+			applyCSSPropertyBackgroundPosition(element, value, pseudo, engine);
+		}
+		if ("background-repeat".equals(property)) {
+			applyCSSPropertyBackgroundRepeat(element, value, pseudo, engine);
+		}
+		return false;
+	}

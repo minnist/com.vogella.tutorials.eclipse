@@ -1,0 +1,44 @@
+@Override
+	public void applyCSSPropertyBackgroundColor(Object element, CSSValue value,
+			String pseudo, CSSEngine engine) throws Exception {
+		Widget widget = (Widget) ((WidgetElement) element).getNativeWidget();
+		if (value.getCssValueType() == CSSValue.CSS_PRIMITIVE_VALUE) {
+			Color newColor = (Color) engine.convert(value, Color.class, widget
+					.getDisplay());
+			if (widget instanceof CTabItem) {
+				CTabFolder folder = ((CTabItem) widget).getParent();
+				if ("selected".equals(pseudo)) {
+					// tab folder selection manages gradients
+					CSSSWTColorHelper.setSelectionBackground(folder, newColor);
+				} else {
+					CSSSWTColorHelper.setBackground(folder, newColor);
+				}
+			} else if (widget instanceof Control) {
+				GradientBackgroundListener.remove((Control) widget);
+				CSSSWTColorHelper.setBackground((Control) widget, newColor);
+				CompositeElement.setBackgroundOverriddenByCSSMarker(widget);
+			}
+		} else if (value.getCssValueType() == CSSValue.CSS_VALUE_LIST) {
+			Gradient grad = (Gradient) engine.convert(value, Gradient.class,
+					widget.getDisplay());
+			if (grad == null) {
+				return; // warn?
+			}
+			if (widget instanceof CTabItem) {
+				CTabFolder folder = ((CTabItem) widget).getParent();
+				Color[] colors = CSSSWTColorHelper.getSWTColors(grad,
+						folder.getDisplay(), engine);
+				int[] percents = CSSSWTColorHelper.getPercents(grad);
+
+				if ("selected".equals(pseudo)) {
+					folder.setSelectionBackground(colors, percents, true);
+				} else {
+					folder.setBackground(colors, percents, true);
+				}
+
+			} else if (widget instanceof Control) {
+				GradientBackgroundListener.handle((Control) widget, grad);
+				CompositeElement.setBackgroundOverriddenByCSSMarker(widget);
+			}
+		}
+	}

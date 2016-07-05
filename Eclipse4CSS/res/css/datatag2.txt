@@ -1,0 +1,10 @@
+// more code....
+
+Label label = new Label(parent, SWT.NONE);
+Text text = new Text(parent, SWT.BORDER);
+
+// set the ID, must be unique in the same window
+text.setData("org.eclipse.e4.ui.css.id", "MyCSSTagForLabel");
+
+// set the class, can be used several times
+label.setData("org.eclipse.e4.ui.css.CssClassName", "MyCSSTagForLabel")

@@ -1,0 +1,253 @@
+<section id="tutorial_custom_css_properties" role="wrapper">
+	<title>Exercise: Define a custom CSS selector and CSS property
+	<section id="css_switching_target">
+		<title>Target
+		 In this exercise you will implement your own custom CSS selector and property for
+			styling the header of an user profile widget. 
+		The aim is to apply this CSS to the user profile widget:
+		
+			<programlisting language="css">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/user_profile_widget.css"/>
+			</programlisting>
+		
+		As you may see `UserProfileWidget` is a new CSS selector and
+				`header-background-color` is a new CSS property.
+		The result may look like that, where the user profile widget is embedded in a
+				`Tooltip`:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/user_profile_widget.png" scale="40"/>
+				</imageobject>
+				<textobject>
+					<phrase>UserProfileWidget sample</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+	<section id="css_switching_dependencies">
+		<title>Add dependencies
+		 Add the `org.eclipse.e4.ui.css.core` and the
+				`org.eclipse.e4.ui.css.swt` plug-ins as dependency to your application. 
+	</section>
+	<section id="css_switching_cssfile">
+		<title>Adjust custom CSS to your CSS file
+		 Add the following CSS to your CSS file, which is used in your application plug-in. 
+		
+			<programlisting language="css">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/user_profile_widget.css"/>
+			</programlisting>
+		
+	</section>
+	<section id="css_switching2">
+		<title>Create the user profile widget
+		In order to learn how to implement customizations for CSS we also need a custom widget,
+			which should be styled. So we implement a really simple custom widget, which is a
+				`Composite` that consists of three other `Composites` for the
+			header, image and description area.
+		For the following widget you should create a widget package in your plug-in and place
+			the `UserProfileWidget` class into it.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets//UserProfileWidget.java"/>
+			</programlisting>
+		
+		The most important method for our custom CSS here is the last `setHeaderColor()`
+			method, which we will use for our `header-background-color` CSS
+			property.
+		In order to test this widget you can place it on a new part in your application or in a
+			tooltip as it is depicted in the screenshot above.
+		Afterwards you should set a certain header-text, an image and a description-text to
+			the `UserProfileWidget`.
+	</section>
+	<section id="css_switching3">
+		<title>Adding the org.eclipse.e4.ui.css.core.propertyHandler extension point
+		 Select the <guilabel>Extensions</guilabel> tab in the editor for the
+				_plugin.xml_ file and add the
+				`﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point. 
+		 You create an extension in the <guilabel>Extensions</guilabel> tab by pressing the
+				<guibutton>Add...</guibutton> button. 
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/theme06.png" scale="40"/>
+				</imageobject>
+				<textobject>
+					<phrase>Add button in extension points</phrase>
+				</textobject>
+			</mediaobject>
+		
+		 Select the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point
+			and press the <guilabel>Finish</guilabel> button. 
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/propertyHandler_extension.png" scale="40"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selecting</phrase>
+				</textobject>
+			</mediaobject>
+		
+		There are three properties, which have to be defined for a `﻿org.eclipse.e4.ui.css.core.propertyHandler`.
+		<table frame="all">
+			<title>Properties of the propertyHandler
+			<tgroup cols="2">
+				<colspec colname="c1" colnum="1" colwidth="1.0*"/>
+				<colspec colname="c2" colnum="2" colwidth="1.0*"/>
+				<tbody>
+					<row>
+						<entry>adapter</entry>
+						<entry>The `ElementAdapter` implementation adapts/wraps your custom widget for the
+							CSS framework</entry>
+					</row>
+					<row>
+						<entry>composite</entry>
+						<entry>A boolean, which specifies whether the widget is a composite or not</entry>
+					</row>
+					<row>
+						<entry>handler</entry>
+						<entry>`ICSSPropertyHandler` implementation, which is responsible for setting a
+							custom CSS property. </entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/propertyHandler_handler_definition.png" scale="40"/>
+				</imageobject>
+			</mediaobject>
+		
+		By clicking on the `adapter` hyperlink of the handler in the
+				_plugin.xml_ a "New Java Class" dialog appears, where you define
+			the `CompositeElement` as superclass, call the class itself
+				`UserProfileElementAdapter` and place it into a css package.
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/new_class_dialog_user_profile_element_adapter.png" scale="40"/>
+				</imageobject>
+			</mediaobject>
+		
+		The `UserProfileElementAdapter` class should look like this:
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets//UserProfileElementAdapter.java"/>
+			</programlisting>
+		
+		In this case we only have a custom composite, which needs to be adapted. For other adapters
+			see <xref linkend="css_newwidgets"/> in the ﻿`ElementAdapter` type hierarchy
+			screenshot or define your own implementation of an `ElementAdapter`.
+		The `propertyHandler` also needs a `handler`, which
+			has to be an implementation of the `ICSSPropertyHandler` interface. Therefore
+			we need to click on the `handler` hyperlink in the
+				_plugin.xml_ and the following "New Java Class" dialog will
+			appear:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/new_class_dialog_user_profile_css_handler.png"
+						scale="40"/>
+				</imageobject>
+			</mediaobject>
+		
+		The `AbstractCSSPropertySWTHandler` is an abstraction of the
+				`ICSSPropertyHandler` interface for SWT widgets and handles the cast to a
+			SWT Control, which is then passed to the `applyCSSProperty` and
+				`retrieveCSSProperty` methods.
+		In the `UserProfileCSSHandler` implementation we apply the
+				`header-background-color` to our
+			`UserProfileWidget`.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets//UserProfileCSSHandler.java"/>
+			</programlisting>
+		
+		At first we check, if the given `Control` is a `UserProfileWidget` and
+			cast it. Then we check, if the property, which should be applied, is our
+				`﻿header-background-color`. 
+		In case these checks are valid the `﻿CSSEngine` can be used to convert the
+			given `﻿CSSValue` in our case to a `Color`. Finally we set this
+			color for the header of our custom widget.
+		<note>
+				If you are using a different UI toolkit than SWT you must only implement the
+						`ICSSPropertyHandler` interface, rather than the
+						`AbstractCSSPropertySWTHandler`, which just passes an
+						`java.lang.Object` and does not check for a SWT Control .
+			</note>
+		The last thing we need to do for the propertyHandler extension is to define for which
+				`property-name` this handler is responsible:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/property_handler_property_name.png"
+						scale="40"/>
+				</imageobject>
+			</mediaobject>
+		
+	</section>
+	<section>
+		<title>Adding the org.eclipse.e4.ui.css.core.elementProvider extension point
+		Now the second and last extension point has to be added:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/element_provider_extension.png" scale="50"/>
+				</imageobject>
+			</mediaobject>
+		
+		After adding the `org.eclipse.e4.ui.css.core.elementProvider` extension point we
+			can add an `IElementProvider` to it by clicking on the
+				`class` hyperlink and giving the class the name
+				`UserProfileWidgetElementProvider`.
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/element_provider_provider_definition.png" scale="50"/>
+				</imageobject>
+			</mediaobject>
+		
+		The `widget` property you can see in the screenshot above points to the
+			full qualified name of the `UserProfileWidget`
+			`(com.vogella.rcp.css.custom.widget.UserProfileWidget)`. The
+				`widget` property may be used several times, so that one
+				`IElementProvider` implementation can be in charge of several
+			widgets.
+		The `UserProfileWidgetElementProvider` class we just created by clicking the
+				`class` hyperlink in the _plugin.xml_
+			implements the `IElementProvider` interface and should look like this:
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets//UserProfileWidgetElementProvider.java"/>
+			</programlisting>
+		
+		In this `IElementProvider` implementation we return the
+				`UserProfileElementAdapter`, which we previously defined, when we
+			attached this adapter to the `propertyHandler`.
+	</section>
+	<section id="css_switching_validate">
+		<title>Validating
+		Now we can check, if our custom CSS definitions are applied to the
+				`UserProfileWidget`. Make sure that you have done all the steps and then
+			start your application.
+		<itemizedlist>
+			<listitem>
+				The `UserProfileWidget` has been applied to a Part and a sample
+					header-text, image and description-text has been set for the widget.
+			</listitem>
+			<listitem>
+				The CSS snippet has been added to the active CSS file
+			</listitem>
+			<listitem>
+				You have configured the
+						`org.eclipse.e4.ui.css.core.propertyHandler` and
+						`org.eclipse.e4.ui.css.core.elementProvider` extension points
+					correctly
+			</listitem>
+		</itemizedlist>
+	</section>
+</section>

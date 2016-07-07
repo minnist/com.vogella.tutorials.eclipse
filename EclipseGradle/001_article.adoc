@@ -6,19 +6,27 @@
 :imagesdir: ./img
 Simon Scholz, Lars Vogel (c) 2016 vogella GmbH
 Version 0.5, 13.05.2016
+:docinfodir: ../
+:vgwort: EclipseGradle
 
 [abstract]
 This article describes how to use the Gradle tooling in Eclipse.
 				
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
 include::020_install.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::030_creatinganewproject.adoc[]
 include::040_import.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::050_updatingbuildpathandproject.adoc[]
 include::060_usingbuildship.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::060_usingbuildship.adoc[]
 include::200_androidsupport.adoc[]
 include::800_contribute.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
 

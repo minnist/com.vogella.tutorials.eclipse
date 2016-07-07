@@ -6,35 +6,40 @@
 :imagesdir: img
 (c) 2009, 2016 vogella GmbH
 Version 0.1, 29.05.2016
+:docinfodir: ../
+:vgwort: EclipsePlugin
 
 [abstract]
 This Tutorial describes how to extend the Eclipse IDE with custom plugins.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::011_ideextensions.adoc[]
 include::012_prerequisites.adoc[]
 include::018_download.adoc[]
 include::020_runtimeeclipse.adoc[]
 include::024_commands.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::026_exercise_firstplugin_handler.adoc[]
 include::030_localdeployplugin.adoc[]
 include::032_exercise_createfeature.adoc[]
 include::034_exercise_deployplugin.adoc[]
 include::050_parts.adoc[]
 include::054_exercise_addingparts.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::055_exercise_addingpartdescriptor.adoc[]
 include::056_modeladdons.adoc[]
-
 include::060_contextmenuplugin.adoc[]
-
 include::070_context.adoc[]
-
 include::200_marker.adoc[]
 include::210_exercise_marker.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::300_adapters.adoc[]
 include::320_exercise_adapters_properties_view.adoc[]
 include::330_exercise_adapters_workbenchlabelprovider.adoc[]
 include::400_resources.adoc[]
 include::220_startupaction.adoc[]
-
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

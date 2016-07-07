@@ -21,7 +21,7 @@ Create the following class.
 
 [source, java]
 ----
-include::examples/migration/ViewEclipse4x.java[]
+include::res/migration/ViewEclipse4x.java[]
 ----
 
 Afterwards add an _e4view_ extension for the `org.eclipse.ui.views` extension point.

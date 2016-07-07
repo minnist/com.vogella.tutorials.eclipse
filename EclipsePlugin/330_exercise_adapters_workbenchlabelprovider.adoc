@@ -12,7 +12,7 @@ The only difference to the previous `SampleView` is that a `DelegatingStyledCell
 
 [source, java]
 ----
-include::examples/adapter/SampleWorkbenchAdapterView.java[]
+include::res/adapter/SampleWorkbenchAdapterView.java[]
 ----
 
 When using a `WorkbenchLabelProvider` the objects, which are supposed to be shown in the `Viewer` should provide an adapter for the `IWorkbenchAdapter`, `IWorkbenchAdapter2` and `IWorkbenchAdapter3` interface, but at least for the the `IWorkbenchAdapter`. These interfaces can be used by the `WorkbenchLabelProvider` in order to determine how the objects should be visualized.
@@ -22,14 +22,14 @@ It derives from `WorkbenchAdapter`, which is an abstract class that implements a
 
 [source, java]
 ----
-include::examples/adapter/TodoWorkbenchAdapter.java[]
+include::res/adapter/TodoWorkbenchAdapter.java[]
 ----
 
 Now the `TodoAdapterFactory` has to be extended to also provide the `TodoWorkbenchAdapter`.
 
 [source, java]
 ----
-include::examples/adapter/TodoAdapterFactoryWorkbenchAdapter.java[]
+include::res/adapter/TodoAdapterFactoryWorkbenchAdapter.java[]
 ----
 
 Now that the `TodoAdapterFactory` can also return `WorkbenchAdapter` objects, it also has to be specified in the _org.eclipse.core.runtime.adapters_ extension point.

@@ -19,7 +19,7 @@ Create the following class
 
 [source, java]
 ----
-include::examples/migration/PartEclipse4x.java[]
+include::res/migration/PartEclipse4x.java[]
 ----
 
 Add a new model fragment to this plug-in via menu:File[New > Other... >Eclipse 4 > Model >New Model Fragment].

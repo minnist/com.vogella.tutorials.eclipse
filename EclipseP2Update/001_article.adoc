@@ -6,16 +6,25 @@
 :imagesdir: ./img
 Lars Vogel, Simon Scholz, (c) 2008, 2016 vogella GmbH
 Version 2.8, 29.05.2016
+:docinfodir: ../
+:vgwort: EclipseP2Update
 
 [abstract]
 This tutorial describes how to integrate update functionality into Eclipse RCP applications using Eclipse p2.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::008_prerequisite.adoc[]
 include::010_overview.adoc[]
 include::016_p2product.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::040_eclipse4x.adoc[]
 include::100_tutorial_p2update.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::400_addp2updatesites.adoc[]
 include::450_customtouchpoints.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::800_compositerepositories.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

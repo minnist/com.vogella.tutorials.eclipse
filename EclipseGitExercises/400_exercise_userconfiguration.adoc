@@ -28,5 +28,5 @@ It avoids merge commits if you pull from a remote repository and have divergent 
 
 After this setup, the configuration should look similar to the following screenshot.
 
-image:img/egitconfig20.png[Configuration of EGit user and email defaults, 400, 400]
+image:egitconfig20.png[Configuration of EGit user and email defaults, 400, 400]
 

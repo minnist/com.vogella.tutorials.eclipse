@@ -15,7 +15,7 @@ To simulate that,create a new branch called _fixWarnings_ based on the _origin/m
 But make sure the_checkout new branch_checkbox is deselected. 
 The new branch gets created but the _addDivideOperation_ branch is still checked out.
 
-image:img/create-branch-3.png[Create Branch]
+image::create-branch-3.png[Create Branch]
 
 Remove the field _serialVersionUID_ from _org.eclipse.example.calc.internal.ui.swt.CalculatorUI_. 
 Commit the changes. 
@@ -27,7 +27,7 @@ Reset the _addDivideOperation_ branch back to its previous state but keep the ch
 You can do this, via the _History View_. 
 Find the parent commit of the tip of the _addDivideOperation_ branch and select menu:Reset[Mixed] from the context menu.
 
-image:img/history-view-7.png[History View]
+image::history-view-7.png[History View]
 
 The _addDivideOperation_ branch is reset back to its previous state and doesn’t contain the commit that fixed the warning anymore.
 However, the fix for the warning is still in the working tree!

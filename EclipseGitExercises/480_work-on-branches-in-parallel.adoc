@@ -14,7 +14,7 @@ You can do this as described in <<egitexercise_create_a_local_feature_branch>> o
 		
 Create a new branch from the _History_ view.
 
-image:img/create-branch-from-history-view.png[Create Branch from History View, 700].
+image::create-branch-from-history-view.png[Create Branch from History View, 700].
 		
 Enter "addMultiplyOperation" as the name of the new branch. 
 Make sure the _checkout new branch_	checkbox is selected and click on the _Finish_ button.
@@ -24,9 +24,9 @@ Ensure that you don’t see the changes of the first exercise anymore in your wo
 		
 Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
 
-image:img/multiply-class.png[Multiply Class].	
+image::multiply-class.png[Multiply Class].	
 		
-image:img/register-multiply.png[Register Multiply].
+image::register-multiply.png[Register Multiply].
 		
 [[_switch_branches]]
 === Switch branches
@@ -67,7 +67,7 @@ Leave the commit messages as it is, e.g., do not remove the [UNFINISHED] prefix.
 						
 In the _History_ view you can now see that your first, preliminary commit was replaced by the new one.
 
-image:img/history-view-3.png[History View, 500, 500]	
+image::history-view-3.png[History View, 500, 500]	
 
 [[_fixing_the_commit_message]]
 === Fixing the commit message

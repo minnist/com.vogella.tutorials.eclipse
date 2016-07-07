@@ -26,11 +26,11 @@ In this example project implement a divide operation.
 For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package.
 This class should implements the interface `org.eclipse.example.calc.BinaryOperation` and extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
 
-image:img/divide-class.png[Divide Class]				
+image::divide-class.png[Divide Class]				
 		
 To register the new operation add a corresponding line to the `Calculator.setupDefaultOperations` method.
 	
-image:img/register-divide.png[Register Divide class]	
+image::register-divide.png[Register Divide class]	
 		
 		
 You may also decide to implement something else like polish the SWT or Swing user interface.

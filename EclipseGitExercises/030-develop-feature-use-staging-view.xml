@@ -17,7 +17,7 @@ Select as _source ref the remote tracking branch `refs/remotes/origin/master`.
 Use _addPowerOperation_ as branch name. 
 Check the _Checkout new branch_ checkbox and press the _Finish_ button.
 
-image:img/create-branch-2.png[Create branch]
+image::create-branch-2.png[Create branch,pdfwidth=60%]
 		
 This creates and checkouts a new branch which starts where the remote tracking branch `refs/remotes/origin/master` points to.
 
@@ -28,9 +28,9 @@ Develop a `Power` class similar to the `Plus` class in the package `org.eclipse.
 This should be done in the _org.eclipse.example.calc_ project.
 Register the new class in the `Calculator.setupDefaultOperations()` method.
 		
-image:img/power-class.png[Power Class]
+image::power-class.png[Power Class,pdfwidth=60%]
 
-image:img/register-power.png[Register Power]	
+image::register-power.png[Register Power,pdfwidth=60%]	
 	
 [[_do_a_undesired_modification]]
 === Do a undesired modification

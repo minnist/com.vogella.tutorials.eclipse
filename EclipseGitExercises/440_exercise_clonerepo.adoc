@@ -6,7 +6,7 @@
 
 Open the _Git Repositories_	view via the menu:Window[Show View>Other>Git>Git Repositories] menu entry.
 
-image:img/git-repositories-view.png[Git repositories view, 400, 400]
+image::img/git-repositories-view.png[Git repositories view, 400, 400]
 
 		
 Click the _Clone a Git repository_ button in this view (see Tooltips for the correct button).
@@ -15,7 +15,7 @@ This opens the dialog to clone a Git repository. Enter the following URI in the 
 		
 https://github.com/vogellacompany/gittraining-sample.git
 
-image:img/clone-git-repository.png[Screenshot of cloning the repository, 400, 400]
+image::img/clone-git-repository.png[Screenshot of cloning the repository, 400, 400]
 		
 Click the _Next_ button.
 
@@ -23,7 +23,7 @@ On the next page you see the branches in this repository.
 Ensure all branches are selected.
 The branches you see may differ from the following screenshot. 
 		
-image:img/branch-selection.png[Branch selection, 400, 400]		
+image::branch-selection.png[Branch selection, 400, 400]		
 
 Click the _Next_ button.
 
@@ -31,7 +31,7 @@ In the _Directory_ field, choose a path where to store the local repository.
 		
 Make sure the _Import all existing projects after clone finishes_ checkbox is selected and click the _Finish_ button.
 		
-image:img/finish-clone.png[Finish Git clone, 400, 400]    
+image::finish-clone.png[Finish Git clone, 400, 400]    
 
 [[get_familiar_with_the_example_project]]
 
@@ -46,9 +46,9 @@ Both projects contain launch configurations.
 Use them to start the calculator or run the unit tests.
 For Mac there is a specific launch configuration with _Mac_ in the name.
 
-image:img/launch-sample-application.png[Launch Sample Application, 350, 350]    		
+image::launch-sample-application.png[Launch Sample Application, 350, 350]    		
 		
-image:img/sample-application.png[Sample application for Git exercise]          
+image::sample-application.png[Sample application for Git exercise]          
         
 [[git_repositories_view]]    		
 	
@@ -57,7 +57,7 @@ image:img/sample-application.png[Sample application for Git exercise]
 To get an overview of the history of your Git repository, right-click on one of the example projects and select the menu:Show in[Git Repositories] entry from the context menu.
 This opens the _Git repository_ view.
         
-image:img/git-repositories-view-2.png[Git Repositories View,400, 400]    
+image::git-repositories-view-2.png[Git Repositories View,400, 400]    
 
         
 Under menu:Remotes[origin] you see the fetch and the push configuration. 
@@ -65,5 +65,5 @@ To see more details, right-click on the repository entryand select menu:Show In[
         
 To see the complete repository configuration, select the menu:Properties menu entry from the repository context menu.
 
-image:img/repository-properties.png[Repository Properties, 400, 400] 
+image::repository-properties.png[Repository Properties, 400, 400] 
         

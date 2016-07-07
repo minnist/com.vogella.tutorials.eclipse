@@ -27,7 +27,7 @@ In case you do not have already a Github user,  open http://www.github.com in a 
 Press the _Sign up" button and enter a username, an e-mail adress and a password.
 The e-mail address should match the address you used for the Git setup; Github uses the e-mail address to identify the author of a commit.
 		
-image:img/githubstart.png[Sign up at Github]
+image::githubstart.png[Sign up at Github]
 		
 [[_fork_the_repository]]
 === Fork the Repository
@@ -36,6 +36,6 @@ In order to fork a repository open the following URL: https://github.com/vogella
 
 If you are logged into Github, press the _Fork_ button and create your own copy of the repository.
 		
-image:img/fork-button2.png[Fork Button]
+image::fork-button2.png[Fork Button]
 		
 You have now created your own copy of the training repository on Github.

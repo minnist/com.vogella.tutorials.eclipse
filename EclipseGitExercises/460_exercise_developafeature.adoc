@@ -19,7 +19,7 @@ Go to the _Git Repositories_ view.
 Right click on menu:Branches[Remote Tracking>origin/master] and select _Create Branch_.
 		
 		
-image:img/create-branch.png[Create branch in Eclipse Git]
+image::create-branch.png[Create branch in Eclipse Git]
 		
 In the new branch dialog:
 
@@ -28,11 +28,11 @@ In the new branch dialog:
 * keep the _Checkout new branch_ flag selected
 * confirm the dialog by clicking on the _Finish_ button
 
-image:img/create-branch-dialog.png[Create branch in Eclipse Git part II]			
+image::create-branch-dialog.png[Create branch in Eclipse Git part II]			
 		
 This creates and checks out the new branch.
 
-image:img/new-branch-checked-out.png[Created branch]			
+image::new-branch-checked-out.png[Created branch]			
 
 [[_develop_a_new_feature]]
 === Develop a new feature
@@ -43,12 +43,12 @@ In this example project implement a divide operation.
 For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package.
 This class should implements the interface `org.eclipse.example.calc.BinaryOperation` and extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
 
-image:img/divide-class.png[Divide Class]				
+image::divide-class.png[Divide Class]				
 		
 		
 To register the new operation add a corresponding line to the `Calculator.setupDefaultOperations` method.
 	
-image:img/register-divide.png[Register Divide class]	
+image::register-divide.png[Register Divide class]	
 		
 		
 You may also decide to implement something else like polish the SWT or Swing user interface.
@@ -59,7 +59,7 @@ You may also decide to implement something else like polish the SWT or Swing use
 
 Run the unit tests to ensure that you did not break anything.
 		
-image:img/run-tests.png[Run Tests, 400, 400]	
+image::run-tests.png[Run Tests, 400, 400]	
 
 [[_commit_your_changes_locally]]
 === Commit your changes locally

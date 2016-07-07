@@ -22,26 +22,26 @@ You now create a second remote for your fork at Github.
 		
 You will need the URL. Copy it to the clipboard from Github.
 	
-image:img/copyurl.png[Copy URL from Github]
+image::copyurl.png[Copy URL from Github,pdfwidth=60%]
 		
 		
 In the Git Repositories view, select _Create Remote_  on the _Remotes_ node of your clone.
 		
-image:img/createremote.png[Create Remote]		
+image::createremote.png[Create Remote,pdfwidth=60%]		
 		
 		
 In the next dialog, enter a name and select the _Configure fetch_ radiobutton.
 
-image:img/remote_github.png[Configure Remote]		
+image::remote_github.png[Configure Remote,pdfwidth=60%]		
 		
 		
 Now press the button _Change_ next to the URL field.
 
-image:img/githubconfigurefetch.png[Configure Fetch]		
+image::githubconfigurefetch.png[Configure Fetch,pdfwidth=60%]		
 		
 The URL is  automatically taken from the clipboard in the next dialog.
 
-image:img/githubdestination.png[Fetch URL]			
+image::githubdestination.png[Fetch URL,pdfwidth=60%]			
 		
 		
 Press the Finish button. In order to test if everything worked well you can fetch from your new remote.

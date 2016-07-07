@@ -17,7 +17,7 @@ Create a new local branch based on the remote tracking branch `origin/master`.
 Do a different change in the same class on the same line as in the other branch.
 For example, you may add a class `Multiply` and add a corresponding line to the `setupDefaultOperations` method in the `Calculator` class) and commit this change.
 		
-image:img/history-view-4.png[History View, 400,400]			
+image::history-view-4.png[History View, 400,400]			
 			
 			
 [[_merge_the_feature_branches]]
@@ -37,9 +37,9 @@ Since there was no work done on the `master` branch and `addDivideOperation` poi
 master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
 Inspect this in the History View.
 				
-image:img/merge.png[Trigger merge via History view,600,600]
+image::merge.png[Trigger merge via History view,600,600]
 				
-image:img/fast-forward-merge.png[Fast Forward Merge]
+image::fast-forward-merge.png[Fast Forward Merge]
 
 [[_trigger_the_second_merge]]
 === Trigger the second merge
@@ -48,9 +48,9 @@ In the History View, select _Merge_	in the context menu of the branch which cont
 This merges the	content of this branch into the `master` branch. 
 This time the merge operation should  end with a conflicts.
 
-image:img/merge-2.png[Trigger Merge conflict, ,600,600]		
+image::merge-2.png[Trigger Merge conflict, ,600,600]		
 
-image:img/merge-with-conflicts.png[Merge conflict]	
+image::merge-with-conflicts.png[Merge conflict]	
 				
 				
 [[resolve-conflicts]]
@@ -61,17 +61,17 @@ The conflicts have to be resolved until normal work can go on.
 		
 You can find the conflicting files by the conflict decorator in the package explorer:
 		
-image:img/conflict-markers.png[Conflict Markers, 400,400]	
+image::conflict-markers.png[Conflict Markers, 400,400]	
 		
 If there are many conflicts it may be easier to find them in the Git Staging View:
 
-image:img/conflicts-in-staging-view.png[Conflicts in Staging View, 400,400]	
+image::conflicts-in-staging-view.png[Conflicts in Staging View, 400,400]	
 	
 				
 If you open the conflicting file in an editor you will find the conflict markers there. 
 You can directly edit the file here.
 				
-image:img/conflict-markers-2.png[Conflict Markers,400,400]
+image::conflict-markers-2.png[Conflict Markers,400,400]
 			
 				
 You may use the Merge tool to resolve the conflicts:
@@ -85,13 +85,13 @@ In the second case you get the version before the merge operation.
 The first option is useful, if Git could already merge most of the changes automatically and only a small number of conflicts is left.
 With the second option you get a better overview of the changes in both branches.
 
-image:img/merge-mode.png[Merge Mode]
+image::merge-mode.png[Merge Mode]
 
-image:img/merge-tool.png[Merge Tool Usage, 400,400]					
+image::merge-tool.png[Merge Tool Usage, 400,400]					
 				
 Edit the left side until you are happy with the change and save.
 				
-image:img/merge-tool-resolved-conflict.png[Merge Tool with resolved conflict, 400,400]	
+image::merge-tool-resolved-conflict.png[Merge Tool with resolved conflict, 400,400]	
 
 Use the _Git Staging_ view to stage the files  which had conflicts. 
 When you have done it for all such files the repository state changes from _Conflicts_ to _Merged_. 
@@ -107,10 +107,10 @@ he same can also be done if the merge is not finished but your repository is in 
 		
 To undo the merge, select menu:Reset[Hard] on the commit where the branch pointed to before you did the second merge.
 				
-image:img/reset.png[Reset, 500,500]
+image::reset.png[Reset, 500,500]
 		
 In case you do that when you have an unfinished merge the screenshot looks like this:
 
-image:img/reset-2.png[Reset, 400,400]	
+image::reset-2.png[Reset, 400,400]	
 				
 				

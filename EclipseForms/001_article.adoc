@@ -6,14 +6,16 @@
 :imagesdir: img
 (c) 2009, 2016 vogella GmbH
 Version 1.1, 29.05.2016
+:docinfodir: ../
+:vgwort: EclipseForms
 
 [abstract]
 This article describes how to build user interfaces using Eclipse Forms.
 
-006_resourceslocal.adoc
-010_forms.adoc
-020_firstforms.adoc
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_firstforms.adoc.adoc[]
-include::006_resourceslocal.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

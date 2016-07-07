@@ -11,8 +11,7 @@ Version 0.4, 23.06.2016
 
 [abstract]
 This tutorial gives an overview about using the adapter framework in Eclipse 4.
-
-Also see http://www.vogella.com/tutorials/DesignPatternAdapter/article.html[Adapter design pattern Tutorial].
+Also see the http://www.vogella.com/tutorials/DesignPatternAdapter/article.html[Adapter design pattern Tutorial].
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::020_eclipse_adapter.adoc[]

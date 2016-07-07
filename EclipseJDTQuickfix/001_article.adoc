@@ -6,19 +6,26 @@
 :imagesdir: ./img
 Lars Vogel, Simon Scholz (c) 2016 vogella GmbH
 Version 2.6, 31.03.2016
+:docinfodir: ../
+:vgwort: EclipseJDTQuickfix
 
 [abstract]
 This tutorial describes how create own Eclipse JDT (Java Development Tools) Quick fixes and Quick assistance. 
 In this tutorial Eclipse 4.6 is used.
-				
+
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
 include::020_quickassistprocessor.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::040_quickfixprocessor.adoc[]
 include::050_problemids.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::090_exercise_quickassistprocessor.adoc[]
 include::100_exercise_quickfix.adoc[]
-
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
 
 
 

@@ -15,9 +15,9 @@ Ensure that you don’t see the changes of the first exercise anymore in your wo
 		
 Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
 
-image:img/multiply-class.png[Multiply Class].	
+image::multiply-class.png[Multiply Class]	
 		
-image:img/register-multiply.png[Register Multiply].
+image::register-multiply.png[Register Multiply]
 		
 [[_switch_branches]]
 === Switch branches

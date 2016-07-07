@@ -5,17 +5,25 @@
 :icons:
 Lars Vogel (c) 2016 vogella GmbH
 Version 0.1, 13.05.2016
+:docinfodir: ../
+:vgwort: EclipseJDTContributions
 
 [abstract]
 How to contribute to the Eclipse JDT project.
-                
+
+include::../web/advertisement/afterTableOfContent.adoc[]                
 include::010_overview.adoc[]
 include::030_creatinganewproject.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::040_import.adoc[]
 include::050_updatingbuildpathandproject.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::060_usingbuildship.adoc[]
 include::060_usingbuildship.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::200_androidsupport.adoc[]
 include::800_contribute.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

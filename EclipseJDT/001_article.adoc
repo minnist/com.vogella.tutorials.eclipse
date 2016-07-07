@@ -6,16 +6,22 @@
 :imagesdir: ./img
 Lars Vogel, Simon Scholz (c) 2009 - 2016 vogella GmbH
 Version 1.8, 23.06.2016
+:docinfodir: ../
+:vgwort: EclipseJDT
 
 [abstract]
 This tutorial describes how the Eclipse JDT (Java Development Tools) and the Eclipse AST (Abstract Syntax Tree) can be used to access, change and read the elements of a Java program.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::012_prerequisites.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::080_jdt_example.adoc[]
 include::100_jdt_newelements.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::120_ast_example.adoc[]
 include::200_contributions.adoc[]
-
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

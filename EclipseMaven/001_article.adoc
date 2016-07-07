@@ -6,16 +6,24 @@
 :imagesdir: ./img
 Lars Vogel, Simon Scholz, (c) 2016 vogella GmbH
 Version 1.4, 29.05.2016
+:docinfodir: ../
+:vgwort: EclipseMaven
 
 [abstract]
 This tutorial describes the usage of Maven within the Eclipse IDE for building Java applications.
-				
+
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
 include::180_eclipseinstallation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::200_example_mavenproject.adoc[]
 include::300_example_eclipseproject.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::400_example_webproject.adoc[]
 include::800_references.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
 
 

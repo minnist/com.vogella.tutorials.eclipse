@@ -1,0 +1,29 @@
+== Eclipse Builder
+	 
+Eclipse supports the concept of natures and builders. For each
+project you can register a nature for which you can associate a
+certain builder. A builder is an object that manipulates your
+resources in your Eclipse IDE and creates other resources. 
+	
+
+For example the "Java Builder" is used to translate Java Source
+files into .class files. 
+You can create your own builders by implementing the extension
+point "org.eclipse.core.resources.builders".
+Each builder is subclassed from "IncrementalProjectBuilder" and
+must implement the method build().
+In case autobuild is active then this method is called from the
+eclipse Framework if resources are
+changed. The method is also called
+if the user selects "Clean", "Build" or "Build All" from the menu.
+	
+Builder are included in the file ".project" in the buildCommands
+tag. 
+The method build() get a parameter if a full build (FULL_BUILD)
+or a delta build (INCREMENTAL_BUILD) has to be done. To get the
+changes in case of a delta build you can use the
+getDelta(getProject() call which returns a "IResourceDelta".
+
+For more information on builders please see the article in the
+appendix.
+

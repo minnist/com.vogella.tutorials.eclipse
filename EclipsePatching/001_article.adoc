@@ -6,12 +6,17 @@
 :imagesdir: ./img
 (c) 2016 vogella GmbH
 Version 0.1, 09.06.2016
+:docinfodir: ../
+:vgwort: EclipsePatching
 
 [abstract]
 This tutorial contains notes about EclipsePatching.
-				
+
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
 include::020_featurepatchprojects.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
 

@@ -11,7 +11,7 @@ Each feature can only be patched once.
 
 === Feature patch projects
 
-A feature patch project can get created via menu:File[New> Other...> Plug-in Development>Feature Patch.
+A feature patch project can get created via menu:File[New > Other... > Plug-in Development > Feature Patch].
 
 In this dialog select the feature which you want to patch. 
 Add every modified plug-in to your new project and export it as a p2 update site to make it available.

@@ -6,10 +6,17 @@
 :imagesdir: ./img
 Lars Vogel (c) 2016 vogella GmbH
 Version 1.1, 01.06.2016
+:docinfodir: ../
+:vgwort: EclipseCoreExpressions
 
 [abstract]
 This article describes the usage of core expressions for Eclipse RCP and plug-in development.
 				
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_propertytester.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
+

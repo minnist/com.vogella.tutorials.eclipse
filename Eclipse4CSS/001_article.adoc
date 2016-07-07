@@ -6,11 +6,15 @@
 :imagesdir: ./img
 Lars Vogel (c) 2009 - 2016 vogella GmbH
 Version 6.2, 23.06.2016
+:docinfodir: ../
+:vgwort: Eclipse4CSS
 
 [abstract]
 This tutorial gives an introduction into the CSS styling capabilities of Eclipse 4.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::020_eclipse_adapter.adoc[]
-
-include::008_resources.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

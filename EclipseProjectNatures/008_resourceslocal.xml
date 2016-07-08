@@ -10,11 +10,10 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="EclipseProjectNaturesonline" role="wrapper">
-	<title>Eclipse Project Natures online resources</title>
-	<para>
-		<ulink url="http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2FresAdv_natures.htm">
+
+	<title>Eclipse Project Natures online resources
+	
+		http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Fguide%2FresAdv_natures.htm">
 			Eclipse Help concerning  Project natures
-		</ulink>
-	</para>
-</section>
+		
+	

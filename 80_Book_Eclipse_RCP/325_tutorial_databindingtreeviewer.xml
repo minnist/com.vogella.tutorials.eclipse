@@ -1,16 +1,16 @@
 <chapter id="tutorial_databindingtreeviewer_exercise">
-	<title>Exercise: Data Binding for the tree viewers</title>
-	<section id="tutorial_databindingtreeviewer">
-		<title>Implement data binding for the tree viewer of your tags</title>
-		<para>
+	<title>Exercise: Data Binding for the tree viewers
+[[tutorial_databindingtreeviewer">
+=== Implement data binding for the tree viewer of your tags
+		
 			Change your implementation of the
 			<code>TagOverviewPart</code>
 			to use data binding.
-		</para>
-		<para>The following code demonstrates this implementation.
-		</para>
+		
+		The following code demonstrates this implementation.
+		
 		<tip>
-			<para>
+			
 				The following code
 				snippet only contains the data binding
 				relevant part of the code. If you did any of the optional exercises
@@ -22,15 +22,15 @@
 				box, the registration of
 				the
 				popup menu, a filter or more.
-			</para>
+			
 		</tip>
-		<para>
+		
 			Before changing the actual
 			<code>TagOverviewPart</code>
 			is changed some helper classes are necessary to let the databinding
 			work properly.
-		</para>
-		<para>
+		
+		
 			The
 			<code>ObservableListTreeContentProvider</code>
 			, which will be used as
@@ -41,29 +41,29 @@
 			subclass, which is passed to the
 			<code>ObservableListTreeContentProvider</code>
 			, is created.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/databinding/TagTreeListProperty.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			To keep track on changes, which are rendered by a
 			<code>TreeViewerColumns</code>
 			<code>CellLabelProvider</code>
 			, a subclass of the
 			<code>ObservableMapCellLabelProvider</code>
 			is created.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/databinding/DelegatingObservableCellLabelProvider.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			To provide the right values for the different model elements
 			<code>Tag</code>
 			and
@@ -73,46 +73,46 @@
 			needs to have the right
 			<code>IValueProperty</code>
 			in order to get the values to be displayed.
-		</para>
-		<para>
+		
+		
 			After the helper classes are created the
 			<code>TagOverviewPart</code>
 			can be changed accordingly.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/databinding/DelegatingLabelProperty.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/databinding/DelegatingDescriptionProperty.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/databinding/TagOverviewPart.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_databindingtreeviewer_validating">
-		<title>Validating</title>
-		<para>
+[[tutorial_databindingtreeviewer_validating">
+=== Validating
+		
 			Start your application and ensure that the data is displayed
 			correctly in the tree.
-		</para>
+		
 		<note>
-			<para>
+			
 				Currently the selection of the tree is not sent to the
 				TodoDetailsPart. This will be implemented in
 				<xref linkend="tutorial_usingeselectionservice" />
 				.
-			</para>
+			
 		</note>
-	</section>
+	
 
 </chapter>

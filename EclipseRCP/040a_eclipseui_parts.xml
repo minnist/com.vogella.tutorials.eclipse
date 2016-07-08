@@ -1,16 +1,10 @@
-<section id="parts">
-	<title>Parts</title>
-	<indexterm>
-		<primary>Part</primary>
-	</indexterm>
-	<indexterm>
-		<primary>Editor</primary>
-	</indexterm>
-	<indexterm>
-		<primary>View</primary>
-	</indexterm>
 
-	<para>
+	<title>Parts
+
+
+
+
+	
 		Parts
 		are user interface components which allow you to navigate
 		and modify
@@ -22,9 +16,9 @@
 		The Parts can be stacked or positioned next to each other
 		depending on the container into
 		which they are dropped.
-	</para>
+	
 	<!-- Screenshot for the Eclipse RCP book -->
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/e4parts10.png" scale="30" />
@@ -33,27 +27,27 @@
 				<phrase>Eclipse application with a few parts</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 	<!-- Screenshot for the Eclipse IDE book -->
-	<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
-		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject>  -->
 
 
 	<!-- Screenshot for the Eclipse RCP book -->
 	<!-- Screenshot for the Eclipse IDE book -->
-	<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
-		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject>  -->
 
 
-	<para>
+	
 		Parts
 		are typically classified as
-		<wordasword>views</wordasword>
+		_views_
 		and
-		<wordasword>editors</wordasword>
+		_editors_
 		.
-	</para>
-	<para>
+	
+	
 		A
 		view
 		is
@@ -74,18 +68,18 @@
 		editor
 		for the selected set of data.
 		For example, the
-		<wordasword>Package Explorer</wordasword>
+		_Package Explorer_
 		view allows you to browse the files of Eclipse projects. If you
 		for example rename a file via the
-		<wordasword>Package Explorer</wordasword>
+		_Package Explorer_
 		view, the
 		file
 		name
 		is directly changed on the
 		file
 		system.
-	</para>
-	<para>
+	
+	
 		Editors
 		are
 		typically used to modify a single data element, e.g.,
@@ -97,21 +91,21 @@
 		data
 		structure, the user has to explicitly save the
 		editor content.
-	</para>
+	
 
-	<para>
+	
 		For example, the
-		<guilabel>Java</guilabel>
+		_Java_
 		editor
 		is used to modify Java source files. Changes to the source file
 		are
 		applied once the user selects the
-		<guilabel>Save</guilabel>
+		_Save_
 		button. A dirty editor tab is marked with an asterisk
 		left to the
 		name of the modified file.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dirtyeditor10.png" />
@@ -120,9 +114,9 @@
 				<phrase>Editor marked as dirty</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
 
-</section>
+
 
 

@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Reporting with Eclipse BIRT and Java Objects (POJO's)
-			- Tutorial</title>
+=== Reporting with Eclipse BIRT and Java Objects (POJO's)
+			- Tutorial
 		<author>
 			<firstname>Lars Vogel </firstname>
 			<surname> Hendrik Still </surname>
@@ -24,12 +24,12 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>26.06.2011</pubdate>
 		<releaseinfo>
-			<para>Version 1.2</para>
+			Version 1.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Birt</title>
-			<para> This tutorial describes how to use Eclipse BIRT for reporting
+	=== Eclipse Birt
+			 This tutorial describes how to use Eclipse BIRT for reporting
 				on simple Java Objects (POJO's). The
 				tutorial explains also how to deploy the resulting BIRT
 				report
@@ -37,7 +37,7 @@ Version 0.3, 06.07.2016
 				webcontainer (Tomcat) and how to use it in an Eclipse
 				RCP
 				application. Eclipse 3.7 (Indigo) is used for this tutorial.
-			</para>
+			
 		</abstract>
 	</articleinfo>	
 include::../web/advertisement/afterTableOfContent.adoc[]

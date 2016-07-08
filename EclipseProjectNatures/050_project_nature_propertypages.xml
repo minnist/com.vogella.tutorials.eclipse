@@ -10,23 +10,23 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="EclipseProjectNatures_propertypages">
-	<title>Properties of a Project</title>
-    <para>Each project also has properties, which can be configured.</para>
-    <para>You can access these properties from the last menu item of the context menu of a project,
-        which is called <guimenuitem>Properties</guimenuitem>.</para>
-    <para>For a general project called <guilabel>test</guilabel> the properties might look like
-        this:</para>
-    <para>
+
+	<title>Properties of a Project
+    Each project also has properties, which can be configured.
+    You can access these properties from the last menu item of the context menu of a project,
+        which is called <guimenuitem>Properties</guimenuitem>.
+    For a general project called _test_ the properties might look like
+        this:
+    
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/minimal_project_properties.png"/>
             </imageobject>
         </mediaobject>
-    </para>
-    <para>The <code>org.eclipse.ui.propertyPages</code> extension point can be used to add new
-        property pages to the project's properties dialog.</para>
-    <para>In general a property page extends <code>org.eclipse.ui.dialogs.PropertyPage</code> class
-        and also implements the <code>org.eclipse.ui.IWorkbenchPropertyPage</code> interface.</para>
+    
+    The <code>org.eclipse.ui.propertyPages</code> extension point can be used to add new
+        property pages to the project's properties dialog.
+    In general a property page extends <code>org.eclipse.ui.dialogs.PropertyPage</code> class
+        and also implements the <code>org.eclipse.ui.IWorkbenchPropertyPage</code> interface.
   
-</section>
+

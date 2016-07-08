@@ -1,7 +1,7 @@
-<section id="livemodeleditoride">
-	<title>Model spy and the Eclipse IDE</title>
 
-	<para>
+	<title>Model spy and the Eclipse IDE
+
+	
 		If installed you can also use the model spy to see the application
 		model of the running Eclipse IDE itself. You can
 		open it via
@@ -13,9 +13,9 @@
 		</keycombo>
 		shortcut.
 
-	</para>
+	
 	<warning>
-		<para>
+		
 			If you
 			modify
 			the
@@ -31,7 +31,6 @@
 			such issues, start the Eclipse IDE from the command line with the
 			<parameter>-clearPersistedState</parameter>
 			parameter.
-		</para>
+		
 
 	</warning>
-</section>

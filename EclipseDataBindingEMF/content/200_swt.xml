@@ -1,29 +1,29 @@
-<section id="example_viewer">
-	<title>EMF and Data Binding for SWT controls</title>
-	<para>
+
+	<title>EMF and Data Binding for SWT controls
+	
 		Create an RCP project called
-		<wordasword>de.vogella.databinding.emf.swt</wordasword>
+		_de.vogella.databinding.emf.swt_
 		based on
 		the
-		<guilabel>RCP
+		_RCP
 			application with a view
-		</guilabel>
+		_
 		. Add the
 		<code>org.eclipse.emf.ecore</code>
 		and the JFace data binding plug-ins
 		as a
 		plug-in dependency.
-	</para>
-	<para>
+	
+	
 		Create an EMF model called
-		<wordasword>person.ecore</wordasword>
+		_person.ecore_
 		. Create a class called
-		<wordasword>Phone</wordasword>
+		_Phone_
 		with the
 		<parameter>number</parameter>
 		property. Create also a
 		class called
-		<wordasword>Person</wordasword>
+		_Person_
 		which
 		should have the
 		following
@@ -31,50 +31,49 @@
 
 		<itemizedlist>
 			<listitem>
-				<para>firstName - String    </para>
+				firstName - String    
 			</listitem>
 			<listitem>
-				<para>lastName - String   </para>
+				lastName - String   
 			</listitem>
 			<listitem>
-				<para>gender - String      </para>
+				gender - String      
 			</listitem>
 			<listitem>
-				<para>isMarried - boolean    </para>
+				isMarried - boolean    
 			</listitem>
 			<listitem>
-				<para>phone - Phone    </para>
+				phone - Phone    
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para> The result should look similar to the following. </para>
-	<para>
+	
+	 The result should look similar to the following. 
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/emfdb10.png" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Change the
 		<code>View</code>
 		class according to the following listing. The code demonstrates
 		how
 		you can use
-		<wordasword>Data Binding</wordasword>
+		_Data Binding_
 		to access model properties. It also
 		demonstrates how to
 		access nestled
 		properties to the phone class with
 		is part
 		of person.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/swt/View.java" />
 		</programlisting>
-	</para>
-</section>
+	

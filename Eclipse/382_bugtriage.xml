@@ -1,66 +1,54 @@
-<section id="bugtriage" role="wrapper">
-	<title>Using Eclipse Bugzilla</title>
-	<section id="bugtriage1">
-		<title>Target</title>
-		<para>In this exercise you use the Bugzilla system to review some of
+
+	<title>Using Eclipse Bugzilla
+[[bugtriage1">
+=== Target
+		In this exercise you use the Bugzilla system to review some of
 			the Eclipse platform bugs. No action is excepted
 			from you, but if you
 			find an updated bug, you should update the bug report and describe
 			that the problem is solved.
-		</para>
-		<para>This exercise uses the Eclipse platform as example but you can
+		
+		This exercise uses the Eclipse platform as example but you can
 			use any Eclipse project of your choice.
-		</para>
-	</section>
+		
+	
 
-	<section id="bugtriage2">
-		<title>Run Bugzilla query</title>
-		<para>
+[[bugtriage2">
+=== Run Bugzilla query
+		
 			Open to
-			<ulink url="https://bugs.eclipse.org/bugs/">Eclipse Bugzilla</ulink>
+			https://bugs.eclipse.org/bugs/">Eclipse Bugzilla
 			and select the
-			<guilabel>Search</guilabel>
+			_Search_
 			button. Select the
-			<guilabel>Advanced Search</guilabel>
+			_Advanced Search_
 			tab and search for
-			<menuchoice>
-				<guimenu>Eclipse</guimenu>
-				<guisubmenu>Platform</guisubmenu>
-				<guisubmenu>UI</guisubmenu>
-			</menuchoice>
+			menu:Eclipse[Platform > UI]
 			for all bugs in status
-			<guilabel>NEW</guilabel>
+			_NEW_
 			,
-			<guilabel>ASSIGNED</guilabel>
+			_ASSIGNED_
 			,
-			<guilabel>UNCONFIRMED</guilabel>
+			_UNCONFIRMED_
 			and
-			<guilabel>REOPENED</guilabel>
+			_REOPENED_
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/bugtriage10.png" scale="30" />
+		
+		
+image::bugtriage10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/bugtriage20.png" scale="30" />
+					<phrase>,pdfwidth=60%]
+		
+		
+image::bugtriage20.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Search for bugs</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
+					<phrase>Search for bugs,pdfwidth=60%]
+		
+		In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
 			recommended to look at the latest bugs, e.g., the bugs which have been recently updated.
-		</para>
-	</section>
+		
+	
 
-</section>
+

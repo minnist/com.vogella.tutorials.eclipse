@@ -1,7 +1,7 @@
-<section id="product" role="wrapper">
-	<title>Product configuration file</title>
-	<section id="overview_product">
-		<title>The Product configuration file and the application</title>
+
+	<title>Product configuration file
+[[overview_product">
+=== The Product configuration file and the application
 		<indexterm>
 			<primary>Product configuration file</primary>
 		</indexterm>
@@ -11,11 +11,11 @@
 		<indexterm>
 			<primary>Product</primary>
 		</indexterm>
-		<para>
+		
 			A
-			<wordasword>product configuration file</wordasword>
+			_product configuration file_
 			(in a shorter form this is called:
-			<wordasword>product</wordasword>
+			_product_
 			)
 			defines the configuration of an Eclipse
 			application. This includes
@@ -24,8 +24,8 @@
 			screen and the plug-ins (directly or via the usage of
 			features) which are included in your
 			application.
-		</para>
-		<para>
+		
+		
 			A
 			product
 			always points to one application
@@ -40,8 +40,8 @@
 			must implement the
 			<code>IApplication</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			A
 			product is
 			a development
@@ -49,13 +49,13 @@
 			and is not
 			required at
 			runtime.
-		</para>
-	</section>
-	<section id="overview_productcreation">
-		<title>Creating a new product configuration file</title>
-		<para>
+		
+	
+[[overview_productcreation">
+=== Creating a new product configuration file
+		
 			A product is typically created in a separate project. In the
-			<guilabel>Plug-in Development</guilabel>
+			_Plug-in Development_
 			perspective you can create a new
 			product
 			configuration file via a
@@ -63,56 +63,45 @@
 			a
 			project and by
 			selecting
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Product Configuration</guisubmenu>
-			</menuchoice>
+			menu:New[Product Configuration]
 			.
-		</para>
-	</section>
-	<section id="overview_productapplications">
-		<title>Using the product editor</title>
-		<para>
+		
+	
+[[overview_productapplications">
+=== Using the product editor
+		
 			You can edit the product file via a special editor. The product
 			extension and the containing plug-in can be defined in the
-			<guilabel>Product Definition</guilabel>
+			_Product Definition_
 			section.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/product50.png" />
+		
+		
+image::product50.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Product extension definition</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Product extension definition,pdfwidth=60%]
+		
+		
 			On the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab of this editor you can start the product.
 			Pressing the
-			<guilabel>Synchronize</guilabel>
+			_Synchronize_
 			link writes the relevant
 			product
 			configuration
 			information into the
 			<filename>plugin.xml</filename>
 			file. Both settings are highlighted in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/product55.png" />
+		
+		
+image::product55.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Product definition file show the overview tab</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Product definition file show the overview tab,pdfwidth=60%]
+		
 
-		<para>It is possible to enter an ID for the product. Avoid using the
+		It is possible to enter an ID for the product. Avoid using the
 			same ID for the product as for a plug-in as
 			this might create
 			problems
@@ -120,25 +109,25 @@
 			extension
 			to
 			the ID.
-		</para>
-		<para>
+		
+		
 			On the
-			<guilabel>Contents</guilabel>
+			_Contents_
 			tab you can define the set of plug-ins or features which are included in the
 			product,
 			e.g., the plug-ins that are included if you start or export your product.
-		</para>
+		
 
-	</section>
 	
-	<section id="product_splashscreen">
-        <title>Splash screen</title>
+	
+[[product_splashscreen">
+        <title>Splash screen
         <indexterm>
             <primary>Splash screen</primary>
         </indexterm>
-        <para>
+        
             The
-            <guilabel>Splash</guilabel>
+            _Splash_
             tab allows you to specify the plug-in which
             contains the splash
             screen. The name is predefined as
@@ -153,9 +142,9 @@
             <filename>.bmp</filename>
             )
             files.
-        </para>
+        
 
-        <para>
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/product60.png" />
@@ -164,8 +153,8 @@
                     <phrase>Show the tab splash from the product configuration file</phrase>
                 </textobject>
             </mediaobject>
-        </para>
-        <para>
+        
+        
             The predefined name and location of the splash screen image can be
             changed via the
             <parameter class='command'>osgi.splashPath</parameter>
@@ -174,10 +163,10 @@
             . See
             <xref linkend="runconfiguration_product" />
             to learn how to set launch parameters.
-        </para>
-    </section>
-    <section id="product_configuration">
-        <title>Icons, launcher name and program arguments</title>
+        
+    
+    
+        <title>Icons, launcher name and program arguments
         <indexterm>
             <primary>Application</primary>
             <secondary>Icons</secondary>
@@ -195,7 +184,7 @@
             <secondary>Definition</secondary>
         </indexterm>
 
-        <para>
+        
             You can configure the launcher name and icon for your
             product. The
             launcher is the executable program that is
@@ -214,39 +203,39 @@
             change the name and the
             icon, select
             the
-            <guilabel>Launching</guilabel>
+            _Launching_
             tab of
             your product
             configuration.
-        </para>
-        <para> Here you can specify the file name of the launcher
+        
+         Here you can specify the file name of the launcher
             and the icon
             which should be used.
             Make sure the format of the icons is correct,
             otherwise
             Eclipse will not use them.
-        </para>
+        
 
 
         <tip>
-            <para>The icon configuration depends on the platform you are using.
+            The icon configuration depends on the platform you are using.
                 Eclipse allows you to export your application for multiple platforms
                 and uses the correct ones based on your product configuration.
-            </para>
+            
         </tip>
 
-        <para>
+        
             In the
-            <guilabel>Launching Arguments</guilabel>
+            _Launching Arguments_
             section you can specify parameters for your
             Eclipse application
             and
             arguments for the Java runtime environment.
-            <guilabel>Program Arguments</guilabel>
+            _Program Arguments_
             are parameters passed to the Eclipse application.
-        </para>
+        
 
-        <para>
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/product80.png"/>
@@ -255,33 +244,32 @@
                     <phrase>Highlighting the section where the icons are maintained.</phrase>
                 </textobject>
             </mediaobject>
-        </para>
+        
 
-    </section>
+    
 
-    <section id="producte4">
-        <title>Product configuration limitations</title>
+    
+        <title>Product configuration limitations
         <indexterm>
             <primary>Product configuration file</primary>
             <secondary>Limitations</secondary>
         </indexterm>
-        <para>
+        
             Currently the splash handlers, which can be registered via the
-            <guilabel>Customization</guilabel>
+            _Customization_
             part of the
-            <guilabel>Splash</guilabel>
+            _Splash_
             tab are not supported by the Eclipse 4 standard. Also,
             the
             configuration
             in the
-            <guilabel>About Dialog</guilabel>
+            _About Dialog_
             and the
-            <guilabel>Welcome Page</guilabel>
+            _Welcome Page_
             section
             on the
-            <guilabel>Branding</guilabel>
+            _Branding_
             tab is not directly supported in Eclipse 4 RCP applications.
-        </para>
-    </section>
+        
+    
 
-</section>

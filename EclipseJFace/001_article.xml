@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse JFace Overview - Tutorial</title>
+=== Eclipse JFace Overview - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -34,19 +34,19 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>07.10.2014</pubdate>
 		<releaseinfo>
-			<para>Version 2.9</para>
+			Version 2.9
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse JFace Tutorial</title>
-			<para> This tutorial gives a overview about Eclipse JFace. It
+	=== Eclipse JFace Tutorial
+			 This tutorial gives a overview about Eclipse JFace. It
 				discusses the
 				base concept of JFace
 				Viewers and the JFace
 				LocalResourceManager. The
 				tutorial is based
 				on Eclipse 4.4 (Luna).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

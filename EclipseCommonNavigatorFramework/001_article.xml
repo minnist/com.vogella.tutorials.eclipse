@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Common Navigator Framework -	Tutorial</title>
+=== Eclipse Common Navigator Framework -	Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -24,14 +24,14 @@ Version 0.3, 06.07.2016
 		<pubdate>01.05.2015</pubdate>
 
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 
 		
 		<abstract id="abstract">
-			<title>Eclipse Common Navigator Framework</title>
-			<para> This article describes the usage of the Common Navigator Framework..
-			</para>
+	=== Eclipse Common Navigator Framework
+			 This article describes the usage of the Common Navigator Framework..
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

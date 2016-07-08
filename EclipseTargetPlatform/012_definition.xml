@@ -1,27 +1,25 @@
-<section id="targetplatform_control">
-	<title>Defining a target platform</title>
+
+	<title>Defining a target platform
 	<indexterm>
 		<primary>Target platform</primary>
 		<secondary>Definition</secondary>
 	</indexterm>
-	<indexterm>
-		<primary>Target definition file</primary>
-	</indexterm>
-		<para>
+
+		
 			You can specify your target platform with a
-			<wordasword>target definition file</wordasword>
+			_target definition file_
 			. With such a file you define the available plug-ins and features.
-		</para>
+		
 		<tip>
-			<para>A target platform can be defined based on software sites (p2 update sites) or
+			A target platform can be defined based on software sites (p2 update sites) or
 				other means. As build systems like
 				Maven Tycho support only p2 update sites,
 				it is recommended to use only these.
-			</para>
+			
 		</tip>
-	<para>
+	
 		A target definition file can be created via
-		<menuchoice>
+		menu:
 			<guimenu>File</guimenu>
 			<guisubmenu>New</guisubmenu>
 			<guisubmenu>Other...</guisubmenu>
@@ -29,8 +27,8 @@
 			<guisubmenu>Target Definition</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/targetdefinition10.png"/>
@@ -39,19 +37,19 @@
 				<phrase>Define File name for Target Definition</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		You can add new locations via the
 		<guibutton>Add...</guibutton>
 		button in the Locations
 		section. To add an Eclipse p2 update site,
 		select
-		<guilabel>Software Site</guilabel>
+		_Software Site_
 		and
 		specify the URL.
-	</para>
+	
 
-	<para>
+	
 		Once you have a target definition file, you can set
 		it as
 		the
@@ -60,8 +58,8 @@
 		<guibutton>Set as Target Platform</guibutton>
 		link in the Target definition editor as depicted in the following
 		screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/targetdefinition20.png"/>
@@ -72,21 +70,21 @@
 					development</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 	<tip>
-		<para>Wait until the target platform is completely resolved before setting it as target platform.</para>
+		Wait until the target platform is completely resolved before setting it as target platform.
 	</tip>
 	
-	<para>
+	
 		All plug-ins you are planning to use in your application and test code must be included in the target definition. For example, if you want, for example, use SWTBot for unit tests, add
-		<wordasword>SWTBot for SWT Testing</wordasword> features
+		_SWTBot for SWT Testing_ features
 		from
 		http://download.eclipse.org/technology/swtbot/releases/latest/
 		to
 		your
 		target platform.
-    </para>
-	<para>
+    
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/tutorial_targetdefinition50.png"/>
@@ -95,21 +93,21 @@
 				<phrase>Definition of a target definition file</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 			
 	
-	<para>
+	
 		You can switch the target platform in the Eclipse Preferences.
 		Select
-		<menuchoice>
+		menu:
 			<guimenu>Window</guimenu>
 			<guisubmenu>Preferences</guisubmenu>
 			<guisubmenu>Plug-in Development</guisubmenu>
 			<guisubmenu>Target Platform</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/targetdefinition30.png" />
@@ -118,9 +116,9 @@
 				<phrase>Setting the target definition via the Eclipse Preferences</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>
+	
 		The most effective
 		way of
 		defining
@@ -146,8 +144,8 @@
 		plug-ins
 		can
 		be updated.
-	</para>
-	<para>
+	
+	
 		It is also possible to define your target platform based on
 		plug-ins
 		in your
@@ -155,6 +153,6 @@
 		recommended as certain
 		build system like Maven/Tycho do not support file based target
 		definition files.
-	</para>
+	
 
-</section>
+

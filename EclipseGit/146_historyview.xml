@@ -1,7 +1,7 @@
-<section id="historyview" role="wrapper">
-	<title>Using the History view</title>
-	<section id="historyview_intro">
-		<title>Purpose of the history view</title>
+
+	<title>Using the History view
+[[historyview_intro">
+=== Purpose of the history view
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>commit history
@@ -15,9 +15,9 @@
 		<indexterm>
 			<primary>History view</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>History</guilabel>
+			_History_
 			view
 			allows you to analyze the history of your Git repository and to
 			see to
@@ -25,39 +25,29 @@
 			This view displays author, date, commit message and
 			the modified
 			files of a commits.
-		</para>
-		<para>This view is
+		
+		This view is
 			depicted
 			in the
 			following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egithistoryview10.png" scale="30" />
+		
+		
+image::egithistoryview10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>History view of changes</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>History view of changes,pdfwidth=60%]
+		
 
-		<para>
+		
 			You can open this view via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Team</guisubmenu>
-				<guisubmenu>History</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Other... > Team > History]
 			.
 			Alternatively you can open
 			it via
 			the
 			repository node in the
-			<guilabel>Git Repositories</guilabel>
+			_Git Repositories_
 			View. For this
 			click on the
 			<emphasis>Show In &gt; History</emphasis>
@@ -65,78 +55,64 @@
 			shortcut, in this case use
 			<emphasis>Team &gt; Show in History</emphasis>
 			).
-		</para>
-	</section>
-	<section id="historyview_seechanges">
-		<title>Review the repository history via the History view </title>
+		
+	
+[[historyview_seechanges">
+=== Review the repository history via the History view 
 
-		<para>
+		
 			To see the history of a resource, select your project, a file or a
 			folder, right-click on it and select the
-			<menuchoice>
-				<guimenu>Show in </guimenu>
-				<guisubmenu>History</guisubmenu>
-			</menuchoice>
+			menu:Show in [History]
 			context menu entry.
 			Alternative you
 			can use the
 			Alt+Shift+W shortcut and
 			select the
-			<guilabel>History</guilabel>
+			_History_
 			entry.
-		</para>
-		<para>
+		
+		
 			You can also configure the
-			<guilabel>History</guilabel>
+			_History_
 			view to display the history of the current selection. Select the
 			highlighted button in the following screenshot for
 			that.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/historytrackselection10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Tracking active selection</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::historytrackselection10.png[Tracking active selection,pdfwidth=60%]
+		
 
-		<para>If you select a commit you see the commit message and the
+		If you select a commit you see the commit message and the
 			involved files.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githistoryview10.png" scale="30" />
+		
+image::githistoryview10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>History View</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Via right-click on an individual file you can compare
+					<phrase>History View,pdfwidth=60%]
+		
+		Via right-click on an individual file you can compare
 			this
 			file
 			with its ancestor (the commit before that) or with
 			the current
 			version
 			in the workspace.
-		</para>
+		
 		<tip>
-			<para>
+			
 				If the "compare mode" toggle is selected from the view menu of the
-				<guilabel>History</guilabel>
+				_History_
 				view
 				you can also double
 				click a file
 				to compare it to the previous
 				version.
-			</para>
-			<para>
+			
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/comparemode10.png"/>
@@ -145,61 +121,57 @@
 						<phrase>Compare mode</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 		</tip>
-	</section>
+	
 
 
-	<section id="historyview_settings">
-		<title>The History view filters</title>
+[[historyview_settings">
+=== The History view filters
 
-		<para>
+		
 			The
-			<guilabel>History</guilabel>
+			_History_
 			view has quite some options to configure
 			which commits are displayed.
 			Its toolbar allows you to customize which commits
 			are displayed. By default,
 			the
-			<guilabel>History</guilabel>
+			_History_
 			view filters the history based on the current selection and shows
 			only the active branch.
-		</para>
+		
 
 
-		<para>If you work with several branches, e.g., because you are using
+		If you work with several branches, e.g., because you are using
 			Gerrit for code reviews, you typically want to see
 			all branch
 			information and remove the filter based on the resource.
-		</para>
+		
 
-		<para>
+		
 			The
-			<guilabel>History</guilabel>
+			_History_
 			view
 			allows you to filter based on resources. See the tooltips of the
 			toolbar
 			for the meaning of the different filter
 			options. In order to
 			see all commits click the highlighted buttons with the
-			<guilabel>Show all changes in this repository</guilabel>
+			_Show all changes in this repository_
 			and
-			<guilabel>Show all branches and tags</guilabel>
+			_Show all branches and tags_
 			tooltips.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/historyview_toolbar10.png" scale="30" />
+		
+		
+image::historyview_toolbar10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Toolbar settings in history view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>The following listing gives an overview of the purpose of the different buttons.</para>
+					<phrase>Toolbar settings in history view,pdfwidth=60%]
+		
+		The following listing gives an overview of the purpose of the different buttons.
 
-		<para>
+		
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/history-view-buttons.png" scale="60" />
@@ -208,57 +180,57 @@
 					<phrase>History View Buttons</phrase>
 				</textobject>
 			</inlinemediaobject>
-		</para>
-		<para>Depending on your use case you may want to select the following option:</para>
+		
+		Depending on your use case you may want to select the following option:
 		<orderedlist numeration="loweralpha">
 			<listitem>
-				<para>
+				
 					show only those commits which are reachable from the current
 					branch. Hide all commits on other topic branches.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					see only those commits which changed the selected resource
 					(file, project, subfolder) or it’s children. E.g.
 					display only
 					those commits which touched the selected java file. The current
 					selection is shown in the top right
 					corner of the History view.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					see only those commits which changed anything in the parent
 					folder of the selected resource (file, project,
 					subfolder) or it’s
 					children. E.g. display only those commits which changed the same
 					package as the selected java
 					source.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					see only those commits which changed anything in the same
 					project as the selected resource or it’s children.
 					Used when you
 					are working in a repository which contains multiple projects.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					don’t filter at all. Show all commits of the current repository
-				</para>
+				
 			</listitem>
 		</orderedlist>
-		<para>The options b., c. and d. are tied to the currently selected
+		The options b., c. and d. are tied to the currently selected
 			resource.
 			Button g. allows that the history view
 			automatically updates when you
 			change the selection.
-		</para>
+		
 		<tip>
-			<para>
+			
 				If you got lost with the different filters and the history
 				doesn’t show what you expect, set it back to show
 				everything.
@@ -268,15 +240,15 @@
 				and
 				<emphasis>Show all changes in repository</emphasis>
 				(e) is selected.
-			</para>
+			
 		</tip>
-	</section>
+	
 
 
-	<section id="historyview_search">
-		<title>Using search</title>
+[[historyview_search">
+=== Using search
 
-		<para>
+		
 			You can also search for commits based
 			on committer, author, ID or
 			comment. For this turn on the
@@ -287,23 +259,16 @@
 			commits fitting to your search
 			are highlighted. You can combine this search with the filters
 			explained above.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egithistoryview30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Search in the Git history view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
+		
 		<note>
-			<para>
+			
 				The
-				<guilabel>Git Search</guilabel>
+				_Git Search_
 				available in the
-				<menuchoice>
+				menu:
 					<guimenu>Search</guimenu>
 					<guisubmenu>Search</guisubmenu>
 				</menuchoice>
@@ -315,8 +280,8 @@
 				need
 				to also display the
 				history.
-			</para>
-			<para>
+			
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/gitsearch10.png"/>
@@ -325,40 +290,28 @@
 						<phrase>Git search</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 		</note>
-	</section>
+	
 
-	<section id="historyview_commitdetails">
-		<title>Showing details of a commit</title>
-		<para>
+[[historyview_commitdetails">
+=== Showing details of a commit
+		
 			If you want to see more details about a commit, right-click it and
 			select the
-			<guilabel>Open in Commit Viewer</guilabel>
+			_Open in Commit Viewer_
 			entry.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commitviewer10.png"/>
+		
+		
+image::commitviewer10.png[Commit Viewer,pdfwidth=60%]
+		
+		
+image::commitviewer20.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Commit Viewer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commitviewer20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Commit Viewer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Commit Viewer,pdfwidth=60%]
+		
 
-	</section>
+	
 
 
-</section>

@@ -1,11 +1,11 @@
-<section id="team_movecommit">
-	<title>Using git cherry-pick</title>
-	<para>
+
+	<title>Using git cherry-pick
+	
 		In the
-		<guilabel>History</guilabel>
+		_History_
 		view, you can cherry-pick a commit via the context menu.
-	</para>
-	<para>A combination of git reset and git cherry-pick allows you to
+	
+	A combination of git reset and git cherry-pick allows you to
 		move
 		the changes done in a commit to anther branch. Assume you have a
 		bad
@@ -14,8 +14,8 @@
 		followed by a good commit. This
 		situation is depicted in the following
 		screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/cherrypick10.png"/>
@@ -24,13 +24,13 @@
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>For this you would make a hard reset on the commit of
+	For this you would make a hard reset on the commit of
 		origin/master.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/cherrypick20.png"/>
@@ -39,10 +39,10 @@
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>Afterwards you can cherry-pick the good commit.</para>
-	<para>
+	Afterwards you can cherry-pick the good commit.
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/cherrypick30.png"/>
@@ -51,8 +51,8 @@
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/cherrypick40.png"/>
@@ -61,11 +61,11 @@
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>This results in a history without the bad commit. </para>
+	
+	This results in a history without the bad commit. 
 	<note>
-		<para>
+		
 			You can do the same with interactive rebase.
-		</para>
+		
 	</note>
-</section>
+

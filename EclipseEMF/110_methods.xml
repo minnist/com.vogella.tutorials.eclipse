@@ -1,71 +1,71 @@
-<section id="methods">
-	<title>Generating methods</title>
-	<para> By default EMF generates getter and setter for every class. You
+
+	<title>Generating methods
+	 By default EMF generates getter and setter for every class. You
 		can also add Operations or for example overwrite methods, e.g., the 
 		<code>toString()</code>
 		method. For Article the following toString method was generated
 		in "ArticleImpl
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/method/toString.txt" />
 		</programlisting>
-	</para>
-	<para>To overwrite this, add a "EOperation" to your model with the name
+	
+	To overwrite this, add a "EOperation" to your model with the name
 		toString. Maintain in the properties "EType" EString as return type.
 
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/method10.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> Add an annotation with the source
+	 Add an annotation with the source
 		"http://www.eclipse.org/emf/2002/GenModel" and maintain an entry with
 		the key
 		"body", the value is the code
 		that will
 		be generated in to the
 		method,
-		you find it listed below.</para>
+		you find it listed below.
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/method20.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/method/newtoString.txt" />
 		</programlisting>
-	</para>
-	<para> You can also generate methods with input parameter, just add
-		parameter with their type to your EOperation.  </para>
-	<para>
+	
+	 You can also generate methods with input parameter, just add
+		parameter with their type to your EOperation.  
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/method30.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/method40.png" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-</section>
+	
+

@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>How to create Eclipse plug-ins from Java libraries (JAR files) - Tutorial</title>
+=== How to create Eclipse plug-ins from Java libraries (JAR files) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,17 +30,17 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>08.01.2016</pubdate>
 		<releaseinfo>
-			<para>Version 1.3</para>
+			Version 1.3
 		</releaseinfo>
 
 		
 		<abstract id="abstract">
-			<title>Converting standard Java libraries to Eclipse plug-ins</title>
-			<para> This article describes the manual process of 
+	=== Converting standard Java libraries to Eclipse plug-ins
+			 This article describes the manual process of 
 			converting a Java library to an Eclipse plug-ins (OSGi
 				bundles) from standard Java libraries delivered as JAR files. This
 				article is based on Eclipse 4.5.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

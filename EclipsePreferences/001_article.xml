@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Preferences - Tutorial</title>
+=== Eclipse Preferences - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,14 +30,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>10.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 2.2</para>
+			Version 2.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Preferences</title>
-			<para> This article describes the usage of Eclipse preferences and
+	=== Eclipse Preferences
+			 This article describes the usage of Eclipse preferences and
 				preference pages. Within this tutorial Eclipse 4.5 (Mars) is used.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

@@ -1,12 +1,12 @@
-<section id="osgi_dependencymanagement" role="wrapper">
-	<title>Defining the dependencies of the plug-in</title>
-	<section id="osgiarch_dependencies">
-		<title>Specifying plug-in dependencies via the manifest file</title>
+
+	<title>Defining the dependencies of the plug-in
+[[osgiarch_dependencies">
+=== Specifying plug-in dependencies via the manifest file
 		<indexterm>
 			<primary>OSGi</primary>
 			<secondary>Dependencies</secondary>
 		</indexterm>
-		<para>
+		
 			A plug-in can define
 			dependencies to
 			other software components
@@ -23,16 +23,16 @@
 			packages are
 			always available to a plug-in without an explicitly
 			defined dependency.
-		</para>
+		
 
-		<para>
+		
 			If you add a dependency to your manifest file, the Eclipse IDE
 			automatically adds the
 			corresponding
 			<filename>JAR</filename>
 			file to your project classpath.
-		</para>
-		<para>You can define dependencies either as plug-in dependencies or
+		
+		You can define dependencies either as plug-in dependencies or
 			package dependencies. If you define a plug-in
 			dependency your plug-in
 			can access
@@ -45,19 +45,12 @@
 			package at a
 			later point in time. If you require this flexibility
 			prefer the usage of package dependencies.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/osgi_dependency_definition10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Dependency management</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::osgi_dependency_definition10.png[Dependency management,pdfwidth=60%]
+		
 
-		<para>
+		
 			A plug-in can define that it depends on a
 			certain version (or a
 			range) of another bundle, e.g., plug-in A can
@@ -66,8 +59,8 @@
 			plug-in C in version 2.0, while plug-in B
 			defines that it depends on
 			version 1.0 of plug-in C.
-		</para>
-		<para>
+		
+		
 			The OSGi runtime ensures that all dependencies are present
 			before it
 			starts a plug-in.
@@ -82,39 +75,39 @@
 			are also
 			resolved and, if necessary, activates
 			them before the plug-in starts.
-		</para>
-	</section>
+		
+	
 
-	<section id="osgiarch_livecycle">
-		<title>Life cycle of plug-ins in OSGi</title>
+[[osgiarch_livecycle">
+=== Life cycle of plug-ins in OSGi
 		<indexterm>
 			<primary>OSGi</primary>
 			<secondary>Life cycle</secondary>
 		</indexterm>
 
-		<para> With the installation of a plug-in in the OSGi runtime the
+		 With the installation of a plug-in in the OSGi runtime the
 			plug-in is persisted in a local bundle cache. The
 			OSGi runtime then
 			tries to resolve its dependencies.
-		</para>
-		<para>
+		
+		
 			If all required
 			dependencies are resolved, the plug-in is in the
 
-			<wordasword>RESOLVED</wordasword>
+			_RESOLVED_
 			status
 			otherwise it stays in the
-			<wordasword>INSTALLED</wordasword>
+			_INSTALLED_
 			status.
-		</para>
-		<para>
+		
+		
 			In case several plug-ins exist which
 			can satisfy the dependency, the
 			plug-in
 			with the highest valid
 			version is used.
-		</para>
-		<para>
+		
+		
 			If the
 			versions are the
 			same,
@@ -126,39 +119,34 @@
 			assigned by
 			the framework during the
 			installation.
-		</para>
-		<para>
+		
+		
 			When the plug-in starts, its status is
-			<wordasword>STARTING</wordasword>
+			_STARTING_
 			. After a successful start, it becomes
-			<wordasword>ACTIVE</wordasword>
+			_ACTIVE_
 			.
-		</para>
-		<para>This life cycle is depicted in the following graphic.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/osgi_livecycle10.png" scale="30" />
+		
+		This life cycle is depicted in the following graphic.
+		
+image::osgi_livecycle10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>OSGi life cycle</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>OSGi life cycle,pdfwidth=60%]
+		
+	
 
-	<section id="osgiarch_dynamic">
-		<title>Dynamic imports of packages</title>
-		<para>
+[[osgiarch_dynamic">
+=== Dynamic imports of packages
+		
 			For legacy reasons OSGi supports a dynamic import of
 			packages.
 			See
-			<ulink url="http://wiki.osgi.org/wiki/DynamicImport-Package">OSGi Wiki for dynamic imports</ulink>
+			http://wiki.osgi.org/wiki/DynamicImport-Package">OSGi Wiki for dynamic imports
 			for
 			details.
 			You should not use this feature, it is a symptom of a
 			non-modular design.
-		</para>
-	</section>
+		
+	
 
-</section>

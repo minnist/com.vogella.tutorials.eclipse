@@ -1,32 +1,32 @@
-<section id="eventsystem_usage">
-	<title>Sending and receiving events</title>
-	<section id="eventsystem_usagesend">
-		<title>Sending</title>
+
+	<title>Sending and receiving events
+[[eventsystem_usagesend">
+=== Sending
 		<indexterm>
 			<primary>Event service</primary>
 			<secondary>Sending events</secondary>
 		</indexterm>
-		<para>
+		
 			The
 			event
 			service can be injected via dependency injection.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/eventadmin/inject.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The following code examples assume that you have a class named
-			<wordasword>MyEventConstants</wordasword>
+			_MyEventConstants_
 			defined which contains a static final field (constant) for the
 			<code>TOPIC_TODO_NEW</code>
 			string.
-		</para>
-		<para>
+		
+		
 			The event service collects all events and
 			sends them
 			to the
@@ -34,30 +34,30 @@
 			This can be done
 			asynchronously or
 			synchronously.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/eventadmin/asend.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/eventadmin/ssend.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>You can now send arbitrary Java objects or primitives through
+		You can now send arbitrary Java objects or primitives through
 			the
 			event
 			bus.
-		</para>
-	</section>
-	<section id="eventsystem_annotations">
-		<title>Annotations for receiving events</title>
+		
+	
+[[eventsystem_annotations">
+=== Annotations for receiving events
 		<indexterm>
 			<primary>Event service</primary>
 			<secondary>Annotations</secondary>
@@ -72,7 +72,7 @@
 		<indexterm>
 			<primary>@EventTopic</primary>
 		</indexterm>
-		<para>
+		
 			You can use dependency injection to register and respond to
 			events.
 			If dependency injection is used, the Eclipse framework
@@ -82,8 +82,8 @@
 			when the model class
 			is
 			disposed.
-		</para>
-		<para>
+		
+		
 			The
 			<code>@EventTopic</code>
 			and
@@ -95,23 +95,23 @@
 			performed
 			in the user interface
 			thread.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/events/register.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="eventsystem_listeners">
-		<title>Registering listeners for events</title>
+	
+[[eventsystem_listeners">
+=== Registering listeners for events
 		<indexterm>
 			<primary>Event service</primary>
 			<secondary>Listener</secondary>
 		</indexterm>
-		<para>
+		
 			An object can also register an instance of the
 			<code>org.osgi.service.event.EventHandler</code>
 			directly with
@@ -125,32 +125,32 @@
 			the
 			<code>unsubscribe()</code>
 			method.
-		</para>
+		
 		<tip>
-			<para>Using dependency injection for subscribing should be
+			Using dependency injection for subscribing should be
 				preferred
 				compared to the direct subscription as this way the
 				framework handles
 				the listener registration and de-registration
 				automatically for you.
-			</para>
+			
 		</tip>
-		<para>
+		
 			While using dependency injection is usually the better approach,
 			it is sometimes useful to control when to listening to events. An
 			example is the situation, when an event should result in a certain
 			behavior only once.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/events/LazyLoadingAddon.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="eventsystem_objectstobesendout">
-		<title>Which objects should be send out?</title>
-		<para>
+		
+	
+[[eventsystem_objectstobesendout">
+=== Which objects should be send out?
+		
 			The event system allows sending and receiving objects of an arbitrary
 			type.
 			In Eclipse applications it is good
@@ -162,15 +162,15 @@
 			<code>Map</code>
 			class can be configured with properties to contain more data about
 			the event.
-		</para>
-	</section>
-	<section id="eventsystem_eventsubscription">
-		<title>Subscribing to sub-topics</title>
+		
+	
+[[eventsystem_eventsubscription">
+=== Subscribing to sub-topics
 		<indexterm>
 			<primary>Event service</primary>
 			<secondary>Sub-topics</secondary>
 		</indexterm>
-		<para>
+		
 			You can subscribe to specific topics or use wildcards to
 			subscribe to
 			all sub-events. Sub-events are separated by
@@ -178,14 +178,14 @@
 			. The following example code defines several topics and also the
 			<code>TOPIC_TODO_ALLTOPICS</code>
 			constant which can be used to register for all sub-events.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/events/MyEventConstants.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-</section>
+

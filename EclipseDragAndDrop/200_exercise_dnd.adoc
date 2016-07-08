@@ -1,4 +1,4 @@
-== Exercise: Drag and Drop in SWT</title>
+== Exercise: Drag and Drop in SWT
 
 Create the following class. 
 	

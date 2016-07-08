@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse platform services - Tutorial</title>
+=== Eclipse platform services - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,17 +30,17 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>11.02.2016</pubdate>
 		<releaseinfo>
-			<para>Version 6.1</para>
+			Version 6.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse e4</title>
-			<para> This tutorial gives an overview of the available services of
+	=== Eclipse e4
+			 This tutorial gives an overview of the available services of
 				the
 				Eclipse platform. These service are used to developing Eclipse RCP
 				applications and Eclipse
 				plug-ins.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

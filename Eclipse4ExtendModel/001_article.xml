@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Extending the Eclipse 4 application model- Tutorial</title>
+=== Extending the Eclipse 4 application model- Tutorial
 		<subtitle>Building Eclipse RCP applications based on Eclipse 4</subtitle>
 		<author>
 			<firstname>Lars</firstname>
@@ -29,18 +29,18 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>12.03.2014</pubdate>
 		<releaseinfo>
-			<para>Version 6.5</para>
+			Version 6.5
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>How to extend the Eclipse 4 application model</title>
-			<para>
+	=== How to extend the Eclipse 4 application model
+			
 				This tutorial gives an overview on how to extend the Eclipse 4
 				application model and how to define a new renderer for new
 				model
 				elements. It also covers how to create custom editor implementations
 				for these new model elements.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>

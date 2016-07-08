@@ -1,46 +1,42 @@
-<section id="tutorial_clearpesistence" role="wrapper">
-	<title>Exercise: Configure the deletion of persisted model data</title>
-	<section id="tutorial_clearpesistence_task">
-		<title>Delete the persisted user changes at startup</title>
 
-		<para>
+	<title>Exercise: Configure the deletion of persisted model data
+[[tutorial_clearpesistence_task">
+=== Delete the persisted user changes at startup
+
+		
 			To ensure that always the latest version of your application model is
 			used, add the
 			<parameter>-clearPersistedState</parameter>
 			parameter to your product configuration file.
-		</para>
+		
 
-		<para>The following screenshot shows this setting in the product
+		The following screenshot shows this setting in the product
 			configuration file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/deletepersistedmodel10.png"
+		
+		
+image::deletepersistedmodel10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Delete persisted Eclipse application model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Delete persisted Eclipse application model,pdfwidth=60%]
+		
 
 		<note>
-			<para>
+			
 				Ensure that you used the
 				<parameter>-</parameter>
 				sign and that the parameter is typed correctly. Is must be:
-			</para>
-			<para>
+			
+			
 				<parameter>-clearPersistedState</parameter>
-			</para>
+			
 		</note>
 
-	</section>
-	<section id="tutorial_clearpesistence_why">
-		<title>Why is this setting necessary?</title>
+	
+[[tutorial_clearpesistence_why">
+=== Why is this setting necessary?
 
-		<para>
+		
 			At startup of an Eclipse application the Eclipse platform
 			restores the state in which you
 			left the application
@@ -61,17 +57,16 @@
 			this entry
 			is not
 			displayed in your application.
-		</para>
+		
 
 
-		<para>
+		
 			Alternatively to the approach described above, you can also set the
-			<guilabel>Clear</guilabel>
+			_Clear_
 			flag on the
-			<guilabel>Main</guilabel>
+			_Main_
 			tab in your Run configuration. This would also delete other persisted
 			data, like for example preference values.
-		</para>
+		
 
-	</section>
-</section>
+	

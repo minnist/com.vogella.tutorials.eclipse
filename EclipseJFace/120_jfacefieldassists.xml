@@ -1,14 +1,12 @@
-<section id="jface_fieldassists">
-	<title>User input help with field assistance</title>
-	<indexterm>
-		<primary>Field assistance (JFace)</primary>
-	</indexterm>
+
+	<title>User input help with field assistance
+
 
 	<indexterm>
 		<primary>JFace</primary>
 		<secondary>Field assistance</secondary>
 	</indexterm>
-	<para>
+	
 		The
 		<code>org.eclipse.jface.fieldassist</code>
 		package provides
@@ -21,8 +19,8 @@
 		<code>ContentProposalAdapter</code>
 		class is responsible for
 		providing the possible input values.
-	</para>
-	<para>
+	
+	
 		In the following example
 		the
 		content proposal should get
@@ -36,23 +34,23 @@
 			<keycap>Space</keycap>
 		</keycombo>
 		key combination.
-	</para>
-	<para>
+	
+	
 		The following code demonstrates the usage of the field assistance
 		functionality. It
 		also uses the
 		<code>ControlDecoration</code>
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/fieldassists/MyView.java" />
 		</programlisting>
-	</para>
-	<para> If used the result should look similar to the following.
-	</para>
-	<para>
+	
+	 If used the result should look similar to the following.
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/fieldassists10.png"/>
@@ -61,6 +59,6 @@
 				<phrase>Running application with ControlDecoration and FieldAssists</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-</section>
+

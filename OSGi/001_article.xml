@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>OSGi Modularity - Tutorial</title>
+=== OSGi Modularity - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,15 +31,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>04.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 5.0</para>
+			Version 5.0
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>OSGi with Eclipse Equinox</title>
-			<para> This tutorial gives an overview of OSGi and its modularity
+	=== OSGi with Eclipse Equinox
+			 This tutorial gives an overview of OSGi and its modularity
 				layer.
 				For this tutorial Eclipse 4.5 (Luna) is used.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

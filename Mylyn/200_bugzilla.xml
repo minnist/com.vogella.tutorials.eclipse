@@ -1,81 +1,68 @@
-<section id="mylynbugzillaintegration">
-	<title>Using Mylyn to integrate with Bugzilla</title>
+
+	<title>Using Mylyn to integrate with Bugzilla
 	<indexterm>
 		<primary>Mylyn</primary>
 		<secondary>bugzilla integration</secondary>
 	</indexterm>
 
-	<para>
+	
 		The following description explains how you can use Mylyn to
 		work on
 		bugs and feature requests which are tracked in the
 		Eclipse
-		<wordasword>Bugzilla</wordasword>
+		_Bugzilla_
 		installation.
-	</para>
-	<para>
+	
+	
 		All known Eclipse bugs and feature requests are stored in the
 		Eclipse Bugzilla
 		database which can be found under
 		the following link.
-	</para>
-	<para>
+	
+	
 		<code>https://bugs.eclipse.org/bugs/</code>
-	</para>
-	<para>
+	
+	
 		Mylyn supports accessing the Eclipse bug database via its
 		Bugzilla connector.
-	</para>
+	
 	<tip>
-		<para>
+		
 			Some packaged version of Eclipse have the Eclipse Bugzilla
 			preconfigured. If you open the
-			<guilabel>Task Repositories</guilabel>
+			_Task Repositories_
 			view via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Mylyn</guisubmenu>
-				<guisubmenu>Task Repositories</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Other... > Mylyn > Task Repositories]
 			menu.
-		</para>
-		<para>
+		
+		
 			If the
-			<guilabel>Eclipse Bugzilla</guilabel>
+			_Eclipse Bugzilla_
 			does not exists here, select
-			<guilabel>Add Task Repository</guilabel>
+			_Add Task Repository_
 			from the view menu and enter the URL to Bugzilla and your
 			credentials similar to the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyneclipsebugzilla10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse Bugzilla connection in Mylyn</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=60%]
+		
 
 	</tip>
 
-	<para>
+	
 		Afterwards
 		right
 		click in the
-		<guilabel>Task List</guilabel>
+		_Task List_
 		view
 		and select
-		<menuchoice>
+		menu:
 			<guimenu>New</guimenu>
 			<guisubmenu>Query</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mylynbugzilla10.png"/>
@@ -84,16 +71,16 @@
 				<phrase>Creating a bugzilla query in Mylyn - Part 1</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Select the
-		<guilabel>Eclipse</guilabel>
+		_Eclipse_
 		entry and press the
-		<guilabel>Next</guilabel>
+		_Next_
 		button.
 
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mylynbugzilla20.png"/>
@@ -102,16 +89,16 @@
 				<phrase>Creating a bugzilla query in Mylyn - Part 2</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 
 		Select the
-		<guilabel>Create query</guilabel>
+		_Create query_
 		entry and
-		<guilabel>Create query using form</guilabel>
+		_Create query using form_
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mylynbugzilla30.png"/>
@@ -120,14 +107,14 @@
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> If for example you want to see all open bugs in
+	 If for example you want to see all open bugs in
 		Platform - UI
 		then you could enter a query as depicted in the
 		following screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mylynbugzilla40.png"/>
@@ -136,13 +123,13 @@
 				<phrase>Creating a bugzilla query in Mylyn - Part 4</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> If you now activate a task, you can use Mylyn to work on
+	 If you now activate a task, you can use Mylyn to work on
 		Eclipse
 		bugs.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mylynbugzilla50.png" scale="30" />
@@ -151,6 +138,6 @@
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-</section>
+

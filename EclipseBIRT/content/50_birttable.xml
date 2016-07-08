@@ -1,65 +1,52 @@
-<section id="birttable">
-	<title>Display the data in a table</title>
-	<section id="birttable_overview">
-		<title>Overview</title>
-		<para> We will now display the data in a table.</para>
-	</section>
-	<section id="birttable_create">
-		<title>Create a table</title>
-		<para>Switch from "Data Explorer" to the
+
+	<title>Display the data in a table
+[[birttable_overview">
+=== Overview
+		 We will now display the data in a table.
+	
+[[birttable_create">
+=== Create a table
+		Switch from "Data Explorer" to the
 			"Palette". Select the tab
-			"Layout".</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/SNAG-0012.gif" format="gif" />
+			"Layout".
+		
+image::SNAG-0012.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Drag and drop the table element on the report.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/SNAG-0015.gif" format="gif" />
+		
+		 Drag and drop the table element on the report.
+		
+image::SNAG-0015.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Define the following settings for the table.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/table40.gif" format="gif" />
+		
+		 Define the following settings for the table.
+		
+image::table40.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Change back to the "Data Explorer". And drag
+		
+		 Change back to the "Data Explorer". And drag
 			and drop the
-			dataset columns into the "Details row" of the table. </para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/table50.gif" format="gif" />
+			dataset columns into the "Details row" of the table. 
+		
+image::table50.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>The result should look like the following.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/table60.gif" format="gif" />
+		
+		The result should look like the following.
+		
+image::table60.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Done. You can
+		
+		 Done. You can
 			see a preview of the report if you click on the
 			"Review" Tab. The
-			result should look like the following:</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/table70.gif" format="gif" />
+			result should look like the following:
+		
+image::table70.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

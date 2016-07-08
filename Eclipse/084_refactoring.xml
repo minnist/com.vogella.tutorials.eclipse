@@ -1,66 +1,61 @@
-<section id="refactoring" role="wrapper">
-	<title>Refactoring</title>
-	<section id="refactoring_intro">
-		<title>Refactoring</title>
+
+	<title>Refactoring
+[[refactoring_intro">
+=== Refactoring
 		<indexterm>
 			<primary>Refactoring</primary>
 		</indexterm>
-		<para>
-			<wordasword>Refactoring</wordasword>
+		
+			_Refactoring_
 			is the process of restructuring the code without
 			changing its
 			behavior. For example, renaming a Java class or method is
 			a refactoring
 			activity.
-		</para>
-	</section>
-	<section id="refactoring_eclipse">
-		<title>Refactoring in Eclipse</title>
-		<para>
+		
+	
+[[refactoring_eclipse">
+=== Refactoring in Eclipse
+		
 			Eclipse supports several refactoring activities, for example,
 			renaming
 			or
 			moving.
-		</para>
+		
 
-		<para>
+		
 			For example, to use the
-			<wordasword>Rename</wordasword>
+			_Rename_
 			refactoring, you can right-click on your class (in the editor or
 			Package Explorer) and
 			select
-			<menuchoice>
-				<guimenu>Refactor</guimenu>
-				<guisubmenu>Rename</guisubmenu>
-			</menuchoice>
+			menu:Refactor[Rename]
 			to rename your class. Eclipse will make sure that all calls
 			in your
 			Workspace to
 			your class or method are renamed.
-		</para>
+		
 
-		<para>
+		
 			The following screenshot shows how to call the
-			<guilabel>Rename</guilabel>
+			_Rename_
 			refactoring for a class. The cursor is positioned on the class and
 			the context menu is activated via a right-click on the class.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/refactor10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Renaming a class</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Renaming a class,pdfwidth=60%]
+		
 
-		<para>
+		
 			The most important refactorings are listed in the following
 			table.
 			<table frame='all'>
-				<title>Refactoring</title>
+		=== Refactoring
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -88,16 +83,16 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 		<tip>
-			<para>
+			
 				Lots of refactorings are also available via the
 				<keycombo>
 					<keycap>Ctrl</keycap>
 					<keycap>1</keycap>
 				</keycombo>
 				shortcut (
-				<wordasword>quick fix</wordasword>
+				_quick fix_
 				). Select a certain part of your code and press
 				<keycombo>
 					<keycap>Ctrl</keycap>
@@ -105,16 +100,15 @@
 				</keycombo>
 				to see possible refactorings for the selected
 				position.
-			</para>
+			
 		</tip>
-		<para> Eclipse has many more refactorings. The available options
+		 Eclipse has many more refactorings. The available options
 			depend on the selection in the Java editor. In most cases you should
 			get
 			an idea of the performed action by the naming of the refactoring
 			operation.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

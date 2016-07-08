@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>SWTBot for testing Eclipse Applications - Tutorial
+=== SWTBot for testing Eclipse Applications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -35,7 +35,7 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>SWTBot
+	=== SWTBot
 			 This tutorial describes how to use SWTBot to test Eclipse RCP
 				applications. Within this tutorial Eclipse 4.5 (Mars) is used.
 			

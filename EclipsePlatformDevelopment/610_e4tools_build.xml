@@ -1,84 +1,83 @@
-<section id="e4tools" role="wrapper">
-	<title>Information about the e4 tools</title>
 
-	<section id="e4tools_interview">
-		<title>e4 tools and committer</title>
-		<para>The e4 tools project provides tools for developing Eclipse 4
+	<title>Information about the e4 tools
+
+[[e4tools_interview">
+=== e4 tools and committer
+		The e4 tools project provides tools for developing Eclipse 4
 			based applications. The following follows more or less the same
 			guidelines as the Eclipse platform team.
-		</para>
-	</section>
-	<section id="e4tools_git">
-		<title>Git repository for the e4 tools</title>
-		<para>
+		
+	
+[[e4tools_git">
+=== Git repository for the e4 tools
+		
 			The e4 tools are also available via their Git repository.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/source/e4tools.txt" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="e4tools_infos">
-		<title>Infos about the e4 tools</title>
-		<para>
+		
+	
+[[e4tools_infos">
+=== Infos about the e4 tools
+		
 			Most e4 tools project contain a
 			<filename>README.md</filename>
 			file which describes their usage and important classes.
-		</para>
-	</section>
+		
+	
 
-	<section id="e4tools_editor">
-		<title>Adding an editor for a custom model elements</title>
-		<para>
+[[e4tools_editor">
+=== Adding an editor for a custom model elements
+		
 			The
 			<code>org.eclipse.e4.tools.emf.ui</code>
 			plug-in defines the
 			<code>org.eclipse.e4.tools.emf.ui.editors</code>
 			extension point, which allows registering editors for new model
 			elements.
-		</para>
-	</section>
+		
+	
 
-	<section id="e4toolsbuild">
-		<title>Building the e4 tools</title>
-		<para>
+[[e4toolsbuild">
+=== Building the e4 tools
+		
 			You can build
 			the e4 tools
 			locally via Maven Tycho. If you have
 			Maven installed on
 			your machine, the build process is trivial.
-		</para>
-		<para>Clone the e4 tools project with the following command.</para>
-		<para>
+		
+		Clone the e4 tools project with the following command.
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/build/releng" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Afterwards, you can build the e4 tools via Maven on the command
 			line.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/build/tools" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			After the build finishes successfully, you find a p2 update site
 			in the following
 			folder.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/build/target" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>

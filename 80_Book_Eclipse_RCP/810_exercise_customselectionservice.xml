@@ -1,15 +1,15 @@
 <chapter id="exercise_customselectionservice">
-	<title>Exercise: Development a custom selection service</title>
-	<section id="exercise_customselectionservice3">
-		<title>Develop custom selection service</title>
+	<title>Exercise: Development a custom selection service
+[[exercise_customselectionservice3">
+=== Develop custom selection service
 		<note>
-			<para>
+			
 				This exercise is optional and based on
 				<xref linkend="exercise_customselectionservice1" />
 				.
-			</para>
+			
 		</note>
-		<para>
+		
 			In the project you created in
 			<xref linkend="exercise_customselectionservice1" />
 			create the following class, which is a simple
@@ -18,74 +18,70 @@
 			selection service, which uses the context to
 			persists the
 			selection.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/replaceselectionservice/MySelectionService.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="exercise_customselectionservice4">
-		<title>Create the context function implementation</title>
+		
+	
+[[exercise_customselectionservice4">
+=== Create the context function implementation
 
-		<para>Create the following class which will be used as context
+		Create the following class which will be used as context
 			function.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/replaceselectionservice/MyContextFunction.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="exercise_customselectionservice5">
-		<title>Register the context function via a model add-on</title>
-		<para>Define the following class. </para>
-		<para>
+[[exercise_customselectionservice5">
+=== Register the context function via a model add-on
+		Define the following class. 
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="./examples/replaceselectionservice/ReplaceSelectionService.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>This class is registered as model
+		This class is registered as model
 			add-on.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/customselection_serviceaddon.png"
+		
+		
+image::customselection_serviceaddon.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating an add-on</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="exercise_customselectionservice6">
-		<title>Update your parts to use the new selection service</title>
-		<para>Adjust your parts, so that they use the new service.</para>
-		<para>
+					<phrase>Creating an add-on,pdfwidth=60%]
+		
+	
+[[exercise_customselectionservice6">
+=== Update your parts to use the new selection service
+		Adjust your parts, so that they use the new service.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/replaceselectionservice/ListenerPart.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Adjust your
 			<code>SamplePart</code>
 			to send out the selection.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/replaceselectionservice/SamplePart.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 </chapter>

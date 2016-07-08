@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse RCP (Rich Client Platform) - Tutorial</title>
+=== Eclipse RCP (Rich Client Platform) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -32,12 +32,12 @@ Version 0.3, 06.07.2016
 		<releaseinfo>Version 7.1</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Building Eclipse based applications</title>
-			<para> This tutorial gives an overview about the
+	=== Building Eclipse based applications
+			 This tutorial gives an overview about the
 				Eclipse application
 				platform using the Eclipse 4 (e4) programming model.
-			</para>
-			<para> This tutorial describes the creation of Eclipse based
+			
+			 This tutorial describes the creation of Eclipse based
 				applications, e.g., Eclipse RCP applications. It describes
 				the
 				modeled
@@ -49,7 +49,7 @@ Version 0.3, 06.07.2016
 				on
 				annotations and dependency
 				injection.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
@@ -78,15 +78,15 @@ include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="250_tutorial_playgroundview.adoc[]
 
 	<section>
-		<title>Introduction to dependency injection</title>
-		<para>
+=== Introduction to dependency injection
+		
 			See
 			<ulink
-				url="http://www.vogella.com/tutorials/DependencyInjection/article.html">Dependency injection in Java</ulink>
+				url="http://www.vogella.com/tutorials/DependencyInjection/article.html">Dependency injection in Java
 			for an introduction into the concept of dependency injection,
-		</para>
+		
 
-	</section>
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="420_dependencyinjection.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="422_context.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="424_context_objects.adoc[]

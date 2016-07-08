@@ -10,101 +10,94 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="Eclipse4ModelEvents_event_information">
-	<title>Extract event information</title>
-	<section id="Eclipse4ModelEvents_event_tags">
-		<title>Available event tags</title>
-		<para>
+
+	<title>Extract event information
+[[Eclipse4ModelEvents_event_tags">
+=== Available event tags
+		
 			The
 			<code>UIEvents.EventTags</code>
 			interface define the possible event tags:
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="./images/event_tags.png" scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>EventTags interface with properties of an Event</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<para>These event tags are explained in the following sections. </para>
+					<phrase>EventTags interface with properties of an Event,pdfwidth=60%]
+		
+	
+	These event tags are explained in the following sections. 
 	<section>
-		<title>ATTNAME event tag</title>
-		<para>
+=== ATTNAME event tag
+		
 			The
 			<property>ATTNAME</property>
 			property of the event is the attribute of the model,
 			which has been changed.
-		</para>
-		<para>
+		
+		
 			So if you for instance listen to changes of a model element's label, the
 			<property>ATTNAME</property>
 			of the event will be
 			<varname>label</varname>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/attname_label.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/label_attname.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Label ATTNAME</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<imagedata fileref="./images/label_attname.png[Label ATTNAME,pdfwidth=60%]
+		
+		
 			<note>
-				<para>
+				
 					The
 					<property>label</property>
 					is an XML attribute and can be
 					found is the source of your
 					<filename>Application.e4xmi</filename>
 					file.
-				</para>
-				<para>
+				
+				
 					<programlisting>&lt;children xsi:type="basic:Part" xmi:id="_9CJOwNgYEeKX2Jv3m0M6IA"
 						elementId="com.sample.application.part.attname"
 						contributionURI="bundleclass://com.sample.application/yourpackage.attname"
 						label="ATTNAME sample
 						label"/>
 					</programlisting>
-				</para>
+				
 			</note>
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>ELEMENT event tag</title>
-		<para>
+=== ELEMENT event tag
+		
 			The
 			<property>ELEMENT</property>
 			event tag in general is the model element, which is
 			concerned in the event. For an example see
 			<xref linkend="active_sample_event" />
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>NEW_VALUE and OLD_VALUE event tags</title>
-		<para>
+=== NEW_VALUE and OLD_VALUE event tags
+		
 			The
 			<property>NEW_VALUE</property>
 			and
 			<property>OLD_VALUE</property>
 			properties
 			contain the changed value of the element's attribute.
-		</para>
-		<para>
+		
+		
 			<note>
-				<para>
+				
 					In the old Eclipse 3.x days, you would have registered an
 					<code>IPerspectiveListener</code>
 					for the
@@ -117,19 +110,19 @@ Version 0.3, 06.07.2016
 					<emphasis>&lt;ELEMENT ATTNAME="NEW_VALUE"></emphasis>
 					are manipulated and
 					fired within events.
-				</para>
+				
 			</note>
-		</para>
-		<para>A example for using the values of an attribute in the model is a listener for a
+		
+		A example for using the values of an attribute in the model is a listener for a
 			perspective change.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/perspective_stack_selected_element_event.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			In case you want to listen to a kind of "perspective changed" event, you need to
 			listen to the change of the
 			<property>selectedElement</property>
@@ -142,8 +135,8 @@ Version 0.3, 06.07.2016
 			and
 			<code>EventTags.OLD_VALUE</code>
 			properties.
-		</para>
-		<para>
+		
+		
 			So you actually listen to the changed
 			<property>selectedElement</property>
 			attribute
@@ -151,88 +144,78 @@ Version 0.3, 06.07.2016
 			<code>MPerspectiveStack</code>
 			, rather than looking for a "perspective
 			change" event.
-		</para>
-		<para>So it is good to keep the DOM structure of the application model in mind and think of
+		
+		So it is good to keep the DOM structure of the application model in mind and think of
 			the changes, which can
 			occur within the application model.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>TYPE event tag</title>
-		<para>
+=== TYPE event tag
+		
 			With the
 			<property>TYPE</property>
 			event tag you may determine what action has been
 			done to the application model.
-		</para>
-		<para>
+		
+		
 			The different types can be found in the
 			<code>UIEvents.EventTypes</code>
 			interface:
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/event_types.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>EventTypes interface for changes to the application model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>With these event types you are able to figure out, whether a model element was added,
+					<imagedata fileref="./images/event_types.png[EventTypes interface for changes to the application model,pdfwidth=60%]
+		
+		With these event types you are able to figure out, whether a model element was added,
 			created, moved, removed or
 			an attribute was set.
-		</para>
-		<para>
+		
+		
 			The
 			<code>UIEvents</code>
 			class, also offers convenience methods to check for some
 			types.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/event_type_convenience.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Convenience methods for event types.</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<imagedata fileref="./images/event_type_convenience.png[Convenience methods for event types.,pdfwidth=60%]
+		
+		
 			The
 			<code>isADD(Event)</code>
 			and
 			<code>isREMOVE(Event)</code>
 			methods apply for both
 			single and many, e.g., ADD and ADD_MANY)
-		</para>
-		<para>
+		
+		
 			For an example see
 			<xref linkend="position_event_tag" />
-		</para>
-	</section>
-	<section id="position_event_tag">
-		<title>POSITION event tag</title>
-		<para>
+		
+	
+[[position_event_tag">
+=== POSITION event tag
+		
 			The
 			<property>POSITION</property>
 			event tag contains the new position of model
 			elements. So this property is only set in case a collection of elements
 			is
 			concerned.
-		</para>
-		<para>If you move parts in a MPartStack or between different MPartStacks, you can also
+		
+		If you move parts in a MPartStack or between different MPartStacks, you can also
 			listen to changes of the
 			children of an element container like this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/position_event_tag.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			In case you drag and drop a
 			<code>MPart</code>
 			within a
@@ -242,19 +225,19 @@ Version 0.3, 06.07.2016
 			will be removed and afterwards added to the
 			<code>MPartStack</code>
 			.
-		</para>
-		<para>
+		
+		
 			The details can be seen in the
 			<code>UIEventPublisher.formatData()</code>
 			method from the
 			<code>org.eclipse.e4.ui.internal.workbench</code>
 			package, where the position on is only the for move,
 			add or remove events.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>WIDGET event tag</title>
-		<para>
+=== WIDGET event tag
+		
 			The
 			<property>WIDGET</property>
 			event tag can be used to get the underlying widget,
@@ -262,8 +245,8 @@ Version 0.3, 06.07.2016
 			<code>Composite</code>
 			, of the model element, which is concerned in the
 			event.
-		</para>
-		<para>
+		
+		
 			So you are also able to directly interact with the underlying widget. But in most
 			cases this is not necessary, because
 			the model elements themselves provide the most of
@@ -272,6 +255,6 @@ Version 0.3, 06.07.2016
 			or
 			<code>setVisible</code>
 			methods and so on.
-		</para>
-	</section>
-</section>
+		
+	
+

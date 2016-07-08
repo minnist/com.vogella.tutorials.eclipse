@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Using native code in OSGi - Tutorial</title>
+=== Using native code in OSGi - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -23,13 +23,13 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>30.04.2015</pubdate>
 		<releaseinfo>
-			<para>Version 4.8</para>
+			Version 4.8
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using native code in OSGI via the Bundle-NativeCode</title>
-			<para> This tutorial explains the usage of native code in OSGi bundles.
-			</para>
+	=== Using native code in OSGI via the Bundle-NativeCode
+			 This tutorial explains the usage of native code in OSGi bundles.
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

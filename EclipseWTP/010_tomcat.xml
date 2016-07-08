@@ -1,15 +1,14 @@
-<section id="installationtomcat">
-	<title>Tomcat Installation</title>
-	<para>
+
+	<title>Tomcat Installation
+	
 		Eclipse allows downloading and starting a local Tomcat
 		installation
 		within the Eclipse IDE. Their is no need for an additional
 		setup.
-	</para>
-	<para>
+	
+	
 		If you have a local running Tomcat installation on your computer, stop
 		Tomcat.
 		Eclipse WTP needs to start Tomcat itself
 		for its deployments.
-	</para>
-</section>
+	

@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Adding Help to Eclipse RCP Applications - Tutorial</title>
+=== Adding Help to Eclipse RCP Applications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,14 +30,14 @@ Version 0.3, 06.07.2016
 		<pubdate>01.06.2016</pubdate>
 
 		<releaseinfo>
-			<para>Version 1.4</para>
+			Version 1.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse RCP Help System</title>
-			<para> This article describes how to add help to an Eclipse 3.x RCP
+	=== Eclipse RCP Help System
+			 This article describes how to add help to an Eclipse 3.x RCP
 				application. It is based on Eclipse Neon (4.6).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

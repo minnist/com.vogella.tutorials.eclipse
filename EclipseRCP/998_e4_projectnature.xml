@@ -1,8 +1,8 @@
-<section id="recipes_projectnature">
-	<title>Enable to start your product with right mouse click</title>
-	<para>
+
+	<title>Enable to start your product with right mouse click
+	
 		You can also add the
-		<wordasword>pde nature</wordasword>
+		_pde nature_
 		to your project in which you placed the product configuration file,
 		if
 		you want to
@@ -12,53 +12,48 @@
 		right-click on the
 		product
 		and by selecting
-		<menuchoice>
+		menu:
 			<guimenu>Run-as</guimenu>
 			<guisubmenu>Eclipse Application</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 	<note>
-		<para>
+		
 			The
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			may have a filter set for
-			<wordasword>.*resources</wordasword>
+			_.*resources_
 			. You can modify this filter via the view menu as depicted in the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/removefilterfordotfiles10.png"
+		
+		
+image::removefilterfordotfiles10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Remove filter</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Remove filter,pdfwidth=60%]
+		
 
 
 	</note>
 
-	<para>
+	
 		For this
 		purpose
 		remove
 		the filter in the
-		<guilabel>Package Explorer</guilabel>
+		_Package Explorer_
 		view
 		for files starting with . (dot) and modify the
 		<filename>.project</filename>
 		file to the following.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/firstrcp/project" />
 		</programlisting>
-	</para>
+	
 
-</section>

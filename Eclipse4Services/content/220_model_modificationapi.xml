@@ -1,13 +1,13 @@
-<section id="modeldynamics" role="wrapper">
-	<title>Application model modifications at runtime</title>
-	<section id="modeldynamics_creating">
-		<title>Creating model elements</title>
+
+	<title>Application model modifications at runtime
+[[modeldynamics_creating">
+=== Creating model elements
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Runtime modification</secondary>
 		</indexterm>
 
-		<para> As the
+		 As the
 			application model is interactive, you
 			can change it at
 			runtime.
@@ -18,26 +18,26 @@
 			application
 			or remove menu
 			entries.
-		</para>
-		<para>To add your new model elements to the application you can use
+		
+		To add your new model elements to the application you can use
 			the model service or get existing elements injected.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="modeldynamics_modification">
-		<title>Modifying existing model elements</title>
-		<para>You can also access existing model elements, via the model
+[[modeldynamics_modification">
+=== Modifying existing model elements
+		You can also access existing model elements, via the model
 			service or via dependency injection and adjust their attributes.
-		</para>
-		<para>
+		
+		
 			The Eclipse framework automatically keeps track of the
 			application
 			model and changes in the model are reflected immediately
 			in your
 			application.
-		</para>
-		<para>
+		
+		
 			For example, if you add a new window to your
 			application, it becomes
 			visible instantly.
@@ -46,11 +46,10 @@
 			method, the text of the part in a
 			<code>PartStack</code>
 			changes immediately.
-		</para>
-	</section>
+		
+	
 
 
 
 
 
-</section>

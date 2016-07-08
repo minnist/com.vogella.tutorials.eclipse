@@ -1,8 +1,8 @@
-<section id="tutorial_jfacetable">
-	<title>Tutorial: JFace Table Viewer</title>
-	<section id="tutorial_jfacetableoverview">
-		<title>Overview of the example</title>
-		<para>
+
+	<title>Tutorial: JFace Table Viewer
+[[tutorial_jfacetableoverview">
+=== Overview of the example
+		
 			We will build an
 			Eclipse RCP application
 			which
@@ -12,21 +12,19 @@
 			row.
 			This tutorial the basic setup of a
 			JFace Table.
-		</para>
-		<para>The final application will look like this.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jfacetable10.gif" />
+		
+		The final application will look like this.
+		
+image::jfacetable10.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-	<section id="jface_setup">
-		<title>Project creation and data model</title>
-		<para>
+[[jface_setup">
+=== Project creation and data model
+		
 			Create a new RCP Project
 			<code>de.vogella.jface.tableviewer</code>
 			using the
@@ -36,14 +34,14 @@
 			"de.vogella.jface.tableviewer.model"
 			and the following
 			class "Person".
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/model/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The Person
 			<code>class</code>
 			represents the data model for this example.
@@ -56,47 +54,47 @@
 			but is nice if you
 			would later extend this example with
 			Eclipse Data Binding support.
-		</para>
-		<para>
+		
+		
 			Create the
 			<code>ModelProvider</code>
 			class which is a in-memory
 			representation
 			of your data. This class is
 			defined as a Singleton.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/model/ModelProvider.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="tutorial_jfacetableviewer_usage">
-		<title>Define the viewer</title>
-		<para>
+[[tutorial_jfacetableviewer_usage">
+=== Define the viewer
+		
 			Change the
 			<code>View</code>
 			class to the following.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/view/View.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
 			<code>createColumns</code>
 			method
 			creates the table columns, headers, sets the size of the
 			columns and
 			makes the columns re-sizable.
-		</para>
+		
 		<note>
-			<para>
+			
 
 				The
 				<code>createTableViewerColumn()</code>
@@ -106,11 +104,11 @@
 				will use
 				it in the
 				<ulink
-					url="http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html"> advanced tutorial</ulink>
+					url="http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html"> advanced tutorial
 				.
-			</para>
+			
 		</note>
-		<para>
+		
 			<tip>
 				Please note that we use icons for the married Status. If the
 				<filename>icons</filename>
@@ -120,7 +118,7 @@
 				<ulink
 					url="http://www.vogella.com/tutorials/EclipseJFaceTable/download/checkedpics.zip">
 					Download the
-					icons</ulink>
+					icons
 				and
 				place the
 				two
@@ -132,15 +130,14 @@
 				<code>setText()</code>
 				method.
 			</tip>
-		</para>
-	</section>
-	<section id="tutorial_jfacetableviewer_run">
-		<title>Run</title>
-		<para>
+		
+	
+[[tutorial_jfacetableviewer_run">
+=== Run
+		
 			Run the example. The application should display a non-working
 			search
 			field and a table.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -10,130 +10,130 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="EclipseProjectNatures_exercise_nature_set">
-	<title>Exercise: Apply a project nature to a project</title>
+
+	<title>Exercise: Apply a project nature to a project
     <section>
-        <title>Target</title>
-        <para>Add a <guimenuitem>Convert to example project</guimenuitem> menu item to the
-                <guimenu>Configure</guimenu> menu of a projects context menu.</para>
-    </section>
+        <title>Target
+        Add a <guimenuitem>Convert to example project</guimenuitem> menu item to the
+                <guimenu>Configure</guimenu> menu of a projects context menu.
+    
     <section>
-        <title>Define an example project nature</title>
-        <para>Create a plugin project and add the following dependencies to it:</para>
-        <para>
+        <title>Define an example project nature
+        Create a plugin project and add the following dependencies to it:
+        
             <itemizedlist>
                 <listitem>
-                    <para>org.eclipse.core.runtime</para>
+                    org.eclipse.core.runtime
                 </listitem>
                 <listitem>
-                    <para>org.eclipse.core.resources</para>
+                    org.eclipse.core.resources
                 </listitem>
                 <listitem>
-                    <para>org.eclipse.ui.ide</para>
+                    org.eclipse.ui.ide
                 </listitem>
                 <listitem>
-                    <para>org.eclipse.ui</para>
+                    org.eclipse.ui
                 </listitem>
             </itemizedlist>
-        </para>
-        <para>In the plugin.xml you need to add the <code>org.eclipse.core.resources.natures</code>
-            extension point.</para>
-        <para>
+        
+        In the plugin.xml you need to add the <code>org.eclipse.core.resources.natures</code>
+            extension point.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_extension.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>In the <guilabel>ExampleProjectNature(run)</guilabel> we reference the
-                <code>ExampleProjectNature</code> class:</para>
-        <para><programlisting language="java">
+        
+        In the _ExampleProjectNature(run)_ we reference the
+                <code>ExampleProjectNature</code> class:
+        <programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExampleProjectNature.java"/>
-		</programlisting></para>
-    </section>
+		</programlisting>
+    
     <section>
-        <title>Add a convert command</title>
-        <para>Now use the <code>org.eclipse.ui.commands</code> extension point and add a command
+        <title>Add a convert command
+        Now use the <code>org.eclipse.ui.commands</code> extension point and add a command
             with <code>com.example.product.examplenature.command</code>  as
                 <parameter>id</parameter> and <code>Convert to Example Project</code> as
-                <parameter>name</parameter>.</para>
-    </section>
+                <parameter>name</parameter>.
+    
     <section>
-        <title>Add a convert handler</title>
-        <para>Add the <code>org.eclipse.ui.handlers</code> extension point and add a handler for the
+        <title>Add a convert handler
+        Add the <code>org.eclipse.ui.handlers</code> extension point and add a handler for the
                 <code>com.example.product.examplenature.command</code> command. The class for the
-            handler is <code>ExampleProjectNatureHandler</code> and looks like this:</para>
-        <para>
+            handler is <code>ExampleProjectNatureHandler</code> and looks like this:
+        
             <programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExampleProjectNatureHandler.java"/>
 		</programlisting>
-        </para>
-    </section>
+        
+    
     <section>
-        <title>Add the menu contribution for the conversion</title>
-        <para>The id of the <guimenu>Configure</guimenu> menu in a projects context menu is
+        <title>Add the menu contribution for the conversion
+        The id of the <guimenu>Configure</guimenu> menu in a projects context menu is
                 <code>org.eclipse.ui.projectConfigure</code> and therefore the
                 <parameter>locationURI</parameter> of the <parameter>menuContribution</parameter>
             must be <code>popup:org.eclipse.ui.projectConfigure</code>. In this
                 <parameter>menuContribution</parameter> we then reference the defined
-            command.</para>
-        <para>
+            command.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_convert_menucontribution.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-    </section>
-    <section id="optional_project_nature_definition">
-        <title>Optional - Add a core expression</title>
-        <para>As I already mentioned the <guimenu>Configure</guimenu> menu is only visible, in case
+        
+    
+    
+        <title>Optional - Add a core expression
+        As I already mentioned the <guimenu>Configure</guimenu> menu is only visible, in case
             it has elements in it, we should only apply the <parameter>menuContribution</parameter>
-            to it, if the nature has not already been set.</para>
-        <para>Therefore we want to add a core expression with the
-                <code>org.eclipse.core.expressions.definitions</code> extension point.</para>
-        <para>
+            to it, if the nature has not already been set.
+        Therefore we want to add a core expression with the
+                <code>org.eclipse.core.expressions.definitions</code> extension point.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_core_expression.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>The <parameter>id</parameter> of the definition should be
+        
+        The <parameter>id</parameter> of the definition should be
                 <code>com.example.project.hasNature</code>, which adapts
                 <code>org.eclipse.core.resources.IProject</code> as <parameter>type</parameter> and
             reuses a predefined <code>PropertyTester</code>, which is able to check for certain
             project natures. The <parameter>property</parameter> of the <code>PropertyTester</code>
-            is <code>org.eclipse.core.resources.projectNature</code>.</para>
-        <para>
+            is <code>org.eclipse.core.resources.projectNature</code>.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_propertytester.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>Now we only need to reference this definition in a <parameter>visibleWhen</parameter>
-            definition for the <parameter>menuContribution</parameter>.</para>
-        <para>
+        
+        Now we only need to reference this definition in a <parameter>visibleWhen</parameter>
+            definition for the <parameter>menuContribution</parameter>.
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_visibleWhen_expression.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>Do not forget to define <parameter>(not)</parameter> and then reference the
+        
+        Do not forget to define <parameter>(not)</parameter> and then reference the
                 <code>com.example.project.hasNature</code> definition. The
                 <parameter>(not)</parameter> is not directly part of the definition itself, because
             we want to reuse this definition later on, where we want to ensure that the
-                <code>com.example.project.examplenature</code> is applied to a project.</para>
-    </section>
+                <code>com.example.project.examplenature</code> is applied to a project.
+    
     <section>
-        <title>Validate</title>
-        <para>Start your plug-in within the Eclipse IDE and create a new <guilabel>General
-                Project</guilabel> and then right click the project and click on <guimenu>Configure
+        <title>Validate
+        Start your plug-in within the Eclipse IDE and create a new _General
+                Project_ and then right click the project and click on <guimenu>Configure
                 > Convert to Example Project</guimenu>. In case you have done the optional part, the
                 <guimenuitem>Convert to Example Project</guimenuitem>  menu item should not appear
-            any more in the <guimenu>Configure</guimenu> menu.</para>
-    </section>
+            any more in the <guimenu>Configure</guimenu> menu.
+    
   
-</section>
+

@@ -1,4 +1,4 @@
-<section id="_change_a_series_of_commits">
+
 	<title>Change a series of commits
 	In this exercise you learn how you can rewrite the local
 		history
@@ -6,13 +6,13 @@
 		committed locally you
 		can still change all commits in your local feature branch.
 	</simpara>
-	<section id="_preparation4">
-		<title>Preparation
+[[_preparation4">
+=== Preparation
 		
 			Follow the exercise
 			merge-rebase-and-resolving-conflicts.html">
 				Merge, Rebase and Resolving Conflicts
-			</ulink>
+			
 			. After the rebase you end up
 			with a branch which is two commits ahead of the remote branch
 			_origin/master_
@@ -34,8 +34,8 @@
 			</inlinemediaobject>
 		</simpara>
 	
-	<section id="_change_the_first_commit">
-		<title>Change the first commit
+[[_change_the_first_commit">
+=== Change the first commit
 		<itemizedlist>
 			<listitem>
 				
@@ -143,8 +143,8 @@
 			</listitem>
 		</itemizedlist>
 	
-	<section id="_cherry_pick_the_rest">
-		<title>Cherry-pick the rest
+[[_cherry_pick_the_rest">
+=== Cherry-pick the rest
 		<itemizedlist>
 			<listitem>
 				
@@ -185,7 +185,7 @@
 					like in the exercise
 					merge-rebase-and-resolving-conflicts.html">
 						Merge, Rebase and Resolving Conflicts
-					</ulink>
+					
 					.
 				</simpara>
 			</listitem>

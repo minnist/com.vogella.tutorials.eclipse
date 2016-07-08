@@ -1,18 +1,18 @@
 <appendix id="modelbackground">
-	<title>Architectural background of the application model</title>
-	<para>This section contains some background information about the
+	<title>Architectural background of the application model
+	This section contains some background information about the
 		design goals of the Eclipse application model and has been
 		contributed by Eric Moffatt, Eclipse 4 SDK development lead.
-	</para>
-	<section id="modelbackground_areas">
-		<title>Main areas of the model</title>
-		<para>
+	
+[[modelbackground_areas">
+=== Main areas of the model
+		
 			Conceptually the model
 			is structured into three areas which are
 			described in the following
 			table.
 			<table frame='all'>
-				<title>Architectural areas of the model</title>
+		=== Architectural areas of the model
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -26,12 +26,12 @@
 						<row>
 							<entry>Mix-ins</entry>
 							<entry>
-								<para>Abstract
+								Abstract
 									interfaces containing the attributes necessary to
 									support their
 									specific roles in some derived concrete types.
-								</para>
-								<para>
+								
+								
 									For example
 									<code>MContext</code>
 									contains only the reference to the context,
@@ -39,20 +39,20 @@
 									contains the instantiated 'object' and
 									<code>MUILabel</code>
 									contains attributes to manage labels and images.
-								</para>
+								
 							</entry>
 						</row>
 						<row>
 							<entry>Containment Types</entry>
 							<entry>
-								<para>Every concrete container specifies a specific interface as
+								Every concrete container specifies a specific interface as
 									its containment type. It allows the generic to be a specific
 									type
 									and the compiler to generate a compile time error if an
 									attempt
 									is made to add an invalid element to a container.
-								</para>
-								<para>
+								
+								
 									It also means that when creating a domain specific model (or
 									changing
 									the base model) it is relatively easy to loosen the
@@ -67,7 +67,7 @@
 									interface to
 									<code>MPart</code>
 									.
-								</para>
+								
 							</entry>
 						</row>
 
@@ -85,13 +85,13 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 
-	</section>
-	<section id="modelbackground_mixins">
-		<title>Advantages of using mix-ins</title>
-		<para>
-			<wordasword>Mix-ins</wordasword>
+	
+[[modelbackground_mixins">
+=== Advantages of using mix-ins
+		
+			_Mix-ins_
 			allow the Eclipse 4 internal code to manage the
 			mix-ins
 			specifically,
@@ -114,8 +114,8 @@
 			finding all
 			<code>MDirtyable</code>
 			elements for saving.
-		</para>
-		<para>
+		
+		
 			Mix-ins
 			make
 			domain specific modeling
@@ -134,8 +134,8 @@
 			against their
 			own element
 			types.
-		</para>
-		<para>
+		
+		
 			Having the
 			mix-ins
 			in place makes this much simpler as well as
@@ -143,7 +143,7 @@
 			reuse
 			existing code written to manage a particular
 			mix-in.
-		</para>
+		
 
-	</section>
+	
 </appendix>

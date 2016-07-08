@@ -1,7 +1,7 @@
-<section id="extentcontext" role="wrapper">
-	<title>Accessing and extending the Eclipse context</title>
-	<section id="extentcontext_access">
-		<title>Accessing the context</title>
+
+	<title>Accessing and extending the Eclipse context
+[[extentcontext_access">
+=== Accessing the context
 		<indexterm>
 			<primary>MContext</primary>
 		</indexterm>
@@ -10,12 +10,12 @@
 			<primary>Eclipse context</primary>
 			<secondary>Modify</secondary>
 		</indexterm>
-		<para>
+		
 			You can place objects directly in the
 			<code>IEclipseContext</code>
 			hierarchy to make them available to other model objects.
-		</para>
-		<para>
+		
+		
 			To access an
 			existing
 			context you can use dependency injection if
@@ -29,15 +29,15 @@
 			to the active
 			<code>IEclipseContext</code>
 			, in which the handler is called.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/accessContext1.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			If a model object implements
 			<code>MContext</code>
 			,
@@ -47,34 +47,34 @@
 			<code>getContext()</code>
 			method to access its context. For example, MPart, MWindow,
 			MApplication and MPerspective extend MContext.
-		</para>
-		<para>
+		
+		
 			The following code demonstrates how to get the
 			<code>MApplication</code>
 			injected and how to access its
 			<code>IEclipseContext</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/accessContext3.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="icontextvariables">
-		<title>Objects and context variables</title>
+[[icontextvariables">
+=== Objects and context variables
 		<indexterm>
 			<primary>Context variables</primary>
 		</indexterm>
-		<para>
+		
 			You can add key / value pairs directly to the
 			<code>IEclipseContext</code>
 			.
-		</para>
-		<para>
+		
+		
 			Adding objects to
 			a context can be done via
 			the
@@ -87,42 +87,42 @@
 			factory method call and adds some objects to it. Via the
 			<code>setParent()</code>
 			method call, the new context is connected to the context hierarchy.
-		</para>
+		
 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/addingtoexisting.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Such a context can be used to instantiate an object via the
 			Eclipse
 			framework. See
 			<xref linkend="customobjects_cif" />
 			for a detailed description.
-		</para>
-		<para>
+		
+		
 			A
-			<wordasword>context variable</wordasword>
+			_context variable_
 			is a key which is
 			declared as
-			<wordasword>modifiable</wordasword>
+			_modifiable_
 			via the
 			<code>declareModifiable(key)</code>
 			method call.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/snippets/makecontextvariable.txt" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			Context variables are added to particular levels of the
 			<code>IEclipseContext</code>
 			hierarchy and can also be modified using the
@@ -150,39 +150,39 @@
 			method, if not, the method
 			throws an
 			exception.
-		</para>
-		<para>
+		
+		
 			You can add key/value pairs and
-			<wordasword>Context variables</wordasword>
+			_Context variables_
 			at different levels of the context hierarchy to supply different
 			objects in your application.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="extentcontext_modify">
-		<title>Replacing existing objects in the IEclipseContext</title>
+[[extentcontext_modify">
+=== Replacing existing objects in the IEclipseContext
 		<indexterm>
 			<primary>IWindowCloseHandler</primary>
 		</indexterm>
 		<indexterm>
 			<primary>ISaveHandler</primary>
 		</indexterm>
-		<para>
+		
 			Instead of adding new objects to the
 			<code>IEclipseContext</code>
 			hierarchy, you can also override existing objects by using
 			the same
 			key.
-		</para>
-		<para>
+		
+		
 			You can change behavior of your application by overriding
 			certain
 			entries in the context.
 			For example, you can modify
 			the context of the
-			<wordasword>MWindow</wordasword>
+			_MWindow_
 			model element. Its
 			<code>IEclipseContext</code>
 			is originally created by the
@@ -194,13 +194,13 @@
 			<code>ISaveHandler</code>
 			interface
 			into the local context of the
-			<wordasword>MWindow</wordasword>
+			_MWindow_
 			model element. The
 			<code>IWindowCloseHandler</code>
 			object is responsible for
 			the
 			behavior once the
-			<wordasword>MWindow</wordasword>
+			_MWindow_
 			model element is closed. The default
 			<code>IWindowCloseHandler</code>
 			prompts the user if he wants to save
@@ -211,40 +211,40 @@
 			<code>@Execute</code>
 			method in a handler implementation which overrides this class at
 			runtime.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/snippets/setWindowCloseHandler.txt" />
 			</programlisting>
-		</para>
+		
 		<tip>
-			<para>
+			
 				You could use this example in your life cycle handler and subscribe
 				to the
 				<code>UIEvents.UILifeCycle.APP_STARTUP_COMPLETE</code>
 				event. In the event handler you would replace the
 				<code>IWindowCloseHandler</code>
 				handler in the context.
-			</para>
+			
 		</tip>
-	</section>
+	
 
-	<section id="extentcontext_adding">
-		<title>Accessing the IEclipseContext hierarchy from OSGi services
-		</title>
-		<para>
+[[extentcontext_adding">
+=== Accessing the IEclipseContext hierarchy from OSGi services
+		
+		
 			OSGi services are not directly part of the
 			<code>IEclipseContext</code>
 			hierarchy and are created by the OSGi runtime. The OSGi runtime does
 			not support dependency injection based on the
 			<code>@Inject</code>
 			annotation.
-		</para>
-		<para>
-		</para>
-		<para>
+		
+		
+		
+		
 			The Eclipse framework
 			registers the implementation of the
 			<code>MApplication</code>
@@ -260,12 +260,12 @@
 			<code>MApplication</code>
 			context you can search for other context elements via
 			it.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="extentcontext_modeladdons">
-		<title>Model add-ons</title>
+[[extentcontext_modeladdons">
+=== Model add-ons
 		<indexterm>
 			<primary>Model add-ons</primary>
 		</indexterm>
@@ -273,7 +273,7 @@
 			<primary>Application model</primary>
 			<secondary>Add-ons</secondary>
 		</indexterm>
-		<para>
+		
 			To participate in dependency injection with your custom Java
 			objects
 			you can add them as model add-ons
@@ -287,40 +287,36 @@
 			or
 			interact with other services,
 			e.g., the event system.
-		</para>
-		<para>
+		
+		
 			The following screenshot shows a custom model add-on registered
 			in the application model.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modeladdon10.png" scale="30" />
+		
+		
+image::modeladdon10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Registering a model add-on</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Registering a model add-on,pdfwidth=60%]
+		
+		
 			The following code shows an example implementation for the model
 			addon class. This addon places an object into the
 			<code>IEclipseContext</code>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/modeladdon/MyModelAddon.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
-	<section id="extentcontext_turnandtrack">
-		<title>RunAndTrack</title>
+	
+[[extentcontext_turnandtrack">
+=== RunAndTrack
 		<indexterm>
 			<primary>RunAndTrack</primary>
 		</indexterm>
-		<para>
+		
 			The
 			<code>IEclipseContext</code>
 			allows you via the
@@ -328,8 +324,8 @@
 			method to register a Java object of type
 			<code>RunAndTrack</code>
 			.
-		</para>
-		<para>
+		
+		
 			A
 			<code>RunAndTrack</code>
 			object
@@ -337,9 +333,9 @@
 			<code>Runnable</code>
 			which has access to the context.
 
-		</para>
+		
 
-		<para>
+		
 			If the context changes, the
 			<code>RunAndTrack</code>
 			is called by the Eclipse framework.
@@ -362,8 +358,8 @@
 			from change tracking on
 			this
 			context.
-		</para>
-		<para>
+		
+		
 			Such a
 			<code>RunAndTrack</code>
 			object
@@ -373,8 +369,8 @@
 			one
 			or more values
 			in this context.
-		</para>
-	</section>
+		
+	
 
 
-</section>
+

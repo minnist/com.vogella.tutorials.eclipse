@@ -1,26 +1,26 @@
-<section id="initialvalue">
-	<title>Setting the empty string as default value</title>
-	<para>
+
+	<title>Setting the empty string as default value
+	
 		It is not obvious how to set an empty string as a default value
 		for an
 		EMF string attribute. To set an empty string as default value do the
 		following.
 
 		<itemizedlist>
-			<listitem><para>Select the Attribute
-		    </para>
+			<listitem>Select the Attribute
+		    
 			</listitem>
 			<listitem>
-				<para>Im the Property View click into the value field of "Default
+				Im the Property View click into the value field of "Default
 					Value Literal"
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Do not enter something. 
-				</para>
+				Do not enter something. 
+				
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para> To remove this empty value again, click "Restore Default Value"
-		in the toolbar. </para>
-</section>
+	
+	 To remove this empty value again, click "Restore Default Value"
+		in the toolbar. 
+

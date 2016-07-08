@@ -1,30 +1,29 @@
-<section id="dtpconfig">
-	<title>Configuration</title>
-	<para> The following will create a connection for an embedded Derby.
-	</para>
-	<para> Define the driver for the derby access. Go to Window->
+
+	<title>Configuration
+	 The following will create a connection for an embedded Derby.
+	
+	 Define the driver for the derby access. Go to Window->
 		Preferences and select "Data Management" -> Connectivity -> Driver
 		Definition. Press Add. Select Derby and the version you want to use.
 		If your Derby version is not listed selected the highest number
 		displayed.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dtpconfig10.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>Select then the tab jar press <guibutton>Add...</guibutton> and select the derby.jar from
-		your project folder "lib".</para>
-	<para>
+	Select then the tab jar press <guibutton>Add...</guibutton> and select the derby.jar from
+		your project folder "lib".
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dtpconfig20.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-</section>
+	

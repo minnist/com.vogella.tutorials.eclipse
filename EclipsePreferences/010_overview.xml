@@ -1,7 +1,7 @@
-<section id="preferences" role="wrapper">
-	<title>Eclipse Preference basics</title>
-	<section id="preferences_overview">
-		<title>Preferences and scopes</title>
+
+	<title>Eclipse Preference basics
+[[preferences_overview">
+=== Preferences and scopes
 		<indexterm>
 			<primary>Preferences</primary>
 		</indexterm>
@@ -21,9 +21,9 @@
 			<primary>Preferences</primary>
 			<secondary>BundleDefaultsScope</secondary>
 		</indexterm>
-		<para>
+		
 			The Eclipse platform supports
-			<wordasword>preferences</wordasword>
+			_preferences_
 			for persisting data between application restarts. Preferences are
 			stored as
 			key / value
@@ -35,13 +35,13 @@
 			another
 			primitive type. For
 			example the
-			<wordasword>user</wordasword>
+			_user_
 			key may point to the value
-			<wordasword>vogella</wordasword>
+			_vogella_
 			.
-		</para>
+		
 
-		<para>
+		
 			The preference support in Eclipse is based on the
 			<code>Preferences</code>
 			class from the
@@ -58,12 +58,12 @@
 			retrieve
 			the
 			configuration and support
-			<wordasword>scopes</wordasword>
+			_scopes_
 			.
-		</para>
+		
 
 
-		<para>
+		
 			The scope defines
 			how the
 			preference data is stored and how it is
@@ -72,7 +72,7 @@
 			explained in the following table.
 
 			<table frame='all'>
-				<title>Eclipse Preference scope</title>
+		=== Eclipse Preference scope
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -129,11 +129,11 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
-	<section id="preferences_stores">
-		<title>Storage of the preferences</title>
-		<para>
+		
+	
+[[preferences_stores">
+=== Storage of the preferences
+		
 			Eclipse stores the preferences in the workspace of your
 			application in
 			the
@@ -142,8 +142,8 @@
 			directory in the
 			<filename><![CDATA[<nodePath>.prefs]]></filename>
 			file.
-		</para>
-		<para>
+		
+		
 			The <![CDATA[<nodePath>]]>
 			is by default the Bundle-SymbolicName of the plug-in but can be
 			specified via the preference API.
@@ -152,8 +152,8 @@
 			directory
 			in which the
 			application starts.
-		</para>
-		<para>
+		
+		
 			You can configure the storage location of the preferences
 			via the
 			<parameter>-data path</parameter>
@@ -161,11 +161,11 @@
 			home directory use the
 			<parameter>-data @user.home</parameter>
 			parameter setting.
-		</para>
-	</section>
-	<section id="preferences_api">
-		<title>Eclipse preference API</title>
-		<para>
+		
+	
+[[preferences_api">
+=== Eclipse preference API
+		
 			You can create and manipulate preferences directly via
 			Singletons
 			provided by the Eclipse runtime. You have the
@@ -177,9 +177,9 @@
 			classes which give access to the corresponding instance via the
 			<code>INSTANCE</code>
 			field.
-		</para>
+		
 
-		<para>
+		
 			Preference values are read and saved by
 			<code>get()</code>
 			and
@@ -196,20 +196,19 @@
 			to delete a selected preference value. Via the
 			<code>flush()</code>
 			method you persist the preferences to the file system.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/snippets/putconfigurationscope.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/read.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>

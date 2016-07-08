@@ -1,9 +1,9 @@
-<section id="commandservice" role="wrapper">
-	<title>Command and Handler service</title>
 
-	<section id="commandservice1">
+	<title>Command and Handler service
 
-		<title>Purpose of the command and handler service</title>
+[[commandservice1">
+
+=== Purpose of the command and handler service
 		<indexterm>
 			<primary>Command service</primary>
 		</indexterm>
@@ -11,71 +11,70 @@
 			<primary>Handler service</primary>
 		</indexterm>
 
-		<para>
+		
 			The command and handler
 			services
 			provide the functionality to work
 			with commands and handlers.
-		</para>
+		
 
-		<para>
+		
 			Via the handler service you can create, activate and trigger
 			handlers based on commands. The command service allows you to access,
 			and configure commands, i.e. by setting the parameters.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="commandservice_access">
-		<title>Access to command and handler service</title>
+[[commandservice_access">
+=== Access to command and handler service
 		<indexterm>
 			<primary>ECommandService</primary>
 		</indexterm>
 		<indexterm>
 			<primary>EHandlerService</primary>
 		</indexterm>
-		<para>
+		
 			You can use dependency injection to access the services. The relevant
 			interfaces are
 			<code>ECommandService</code>
 			and
 			<code>EHandlerService</code>
 			.
-		</para>
-	</section>
-	<section id="commandservice_example1">
-		<title>Example for executing a command</title>
+		
+	
+[[commandservice_example1">
+=== Example for executing a command
 
-		<para>
+		
 			The following example shows how to execute a handler for an
 			existing command.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/ehandlerservice/createhandler.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="commandservice_example">
-		<title>Example for assigning a handler to a command</title>
+	
+[[commandservice_example">
+=== Example for assigning a handler to a command
 
-		<para>
+		
 			The following example shows how to add a new handler to an existing
 			command. It assumes that the
 			<code>AboutHandler</code>
 			class already exists.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/ehandlerservice/createhandler.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-</section>
+	

@@ -1,26 +1,24 @@
-<section id="modelspyintroduction">
-	<title>Analyzing the application model with the model spy</title>
+
+	<title>Analyzing the application model with the model spy
 	<indexterm>
 		<primary>Live model editor</primary>
 		<see>Model spy</see>
 	</indexterm>
-	<indexterm>
-		<primary>Model spy</primary>
-	</indexterm>
-	<para>
+
+	
 		The application model of an Eclipse application is available at
 		runtime. The
 		application can access the model and
 		change it via a
 		defined API.
-	</para>
-	<para>
+	
+	
 		To analyzing this application model and for testing model changes, you can use a test tool from the e4 tools
 		project
 		which
 		allows modifying the application model interactively.
 		This tool is called
-		<wordasword>Model Spy</wordasword>
+		_Model Spy_
 		(used to be called: Live model editor) and can be
 		integrated
 		into your
@@ -30,21 +28,21 @@
 		the
 		orientation of a part sash container,
 		your user interface is updated automatically.
-	</para>
+	
 
 
 
-	<para>
+	
 		In the model spy, you can select a
 		part
 		in the application model, right
 		click on
 		it and
 		select
-		<guilabel>Show Control</guilabel>
+		_Show Control_
 		to get the
 		part
 		highlighted.
-	</para>
+	
 
-</section>
+

@@ -1,8 +1,8 @@
-<section id="tutorialextensionpoint" role="wrapper">
-	<title>Exercise: Create and evaluate an extension point</title>
-	<section id="tutorialextensionpoint_overview">
-		<title>Target for this exercise</title>
-		<para>
+
+	<title>Exercise: Create and evaluate an extension point
+[[tutorialextensionpoint_overview">
+=== Target for this exercise
+		
 			In this exercise you create two new plug-ins. The first one
 			contains an extension point and the second
 			contributes an
@@ -14,92 +14,78 @@
 			is not intended to
 			be a realistic
 			feature.
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_extensionprovider">
-		<title>Creating a plug-in for the extension point definition</title>
-		<para>
+		
+	
+[[tutorialextensionpoint_extensionprovider">
+=== Creating a plug-in for the extension point definition
+		
 			Create a new plug-in project called
-			<wordasword>com.vogella.extensionpoint.definition</wordasword>
+			_com.vogella.extensionpoint.definition_
 			based on the settings of the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint_projectwizard10.png"/>
+		
+		
+image::extensionpoint_projectwizard10.png"/>
 
 				</imageobject>
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
-						extension</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint_projectwizard20.png"/>
+						extension,pdfwidth=60%]
+		
+		
+image::extensionpoint_projectwizard20.png"/>
 
 				</imageobject>
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
-						extension</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+						extension,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="tutorialextensionpoint_defineextension">
-		<title>Create an extension point</title>
-		<para>
+[[tutorialextensionpoint_defineextension">
+=== Create an extension point
+		
 			Open the
 			<filename>MANIFEST.MF</filename>
 			file
 			or the
 			<filename>plugin.xml</filename>
 			file and select the
-			<guilabel>Extension Points</guilabel>
+			_Extension Points_
 			tab.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint10.png"/>
+		
+		
+image::extensionpoint10.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 
 			Press the
 			<guibutton>Add...</guibutton>
 			button.
-		</para>
-		<para>
+		
+		
 			Enter
 			"com.vogella.extensionpoint.definition.greeter" as
-			<guilabel>Extension Point ID</guilabel>
+			_Extension Point ID_
 			and
 			"Greeter" as
-			<guilabel>Extension Point Name</guilabel>
+			_Extension Point Name_
 			in the dialog. The
-			<guilabel>Extension Point Schema</guilabel>
+			_Extension Point Schema_
 			field is automatically
 			populated based on your input.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint20.png"/>
+		
+		
+image::extensionpoint20.png"/>
 
 				</imageobject>
 				<textobject>
-					<phrase>Define Extension Point</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Define Extension Point,pdfwidth=60%]
+		
+		
 			Press the
 			<guibutton>Finish</guibutton>
 			button.
@@ -107,38 +93,24 @@
 			schema
 			editor
 			opens. Switch to the
-			<guilabel>Definition</guilabel>
+			_Definition_
 			tab.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Extension Point Schema Editor</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::extensionpoint30.png[Extension Point Schema Editor,pdfwidth=60%]
+		
+		
 			Add attributes
 			to the extension point. For that click
 			on
 			the
-			<guilabel>New Element</guilabel>
+			_New Element_
 			button. Give the new element the name "client".
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Add Elements to Extension</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::extensionpoint40.png[Add Elements to Extension,pdfwidth=60%]
+		
+		
 			Select the "client" element and press
 			<guibutton>New Attribute</guibutton>
 			. Give the
@@ -146,146 +118,126 @@
 			element the name "class" and the type "java". Enter
 			<code>com.vogella.extensionpoint.definition.IGreeter</code>
 			as interface name
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint50.png" scale="35" />
+		
+		
+image::extensionpoint50.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Add Attribute to Extension</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Add Attribute to Extension,pdfwidth=60%]
+		
+		
 			This interface doesn't exit yet. Press on the
 			hyperlink called
-			<guilabel>Implements</guilabel>
+			_Implements_
 			to
 			create it based on the
 			following code.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/IGreeter.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Go back to your extension point definition and add a choice to
 			the
 			extension point. For this select the
-			<guilabel>extension</guilabel>
+			_extension_
 			entry, right-click on it and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Choice</guisubmenu>
-			</menuchoice>
+			menu:New[Choice]
 			.
 			This defines how often the extension "client" can
 			be provided by
 			contributing plug-ins. We will set no restrictions
 			(unbound).
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint70.png"/>
+		
+		
+image::extensionpoint70.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint80.png"/>
+		
+image::extensionpoint80.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint90.png"/>
+		
+		
+image::extensionpoint90.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint92.png"/>
+		
+		
+image::extensionpoint92.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_export">
-		<title>Export the package</title>
-		<para>
+		
+	
+[[tutorialextensionpoint_export">
+=== Export the package
+		
 			Select the
 			<filename>MANIFEST.MF</filename>
 			file switch to the
-			<guilabel>Runtime</guilabel>
+			_Runtime_
 			tab and
 			export
 			the
 			package which contains the
 			<code>IGreeter</code>
 			interface.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint100.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Export IGreeter package</phrase>
+		
+		
+image::extensionpoint100.png[Export IGreeter package</phrase>
 				</textobject>
 
 			</mediaobject>
-		</para>
+		
 
-	</section>
-	<section id="tutorialextensionpoint_dependencies">
-		<title>Add dependencies</title>
-		<para>
+	
+[[tutorialextensionpoint_dependencies">
+=== Add dependencies
+		
 			Add the following dependencies via the
 			<filename>MANIFEST.MF</filename>
 			file of your new plug-in:
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.core.runtime</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.core.di</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
 			.
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_readingextension">
-		<title>Evaluating the registered extensions</title>
-		<para>
+		
+	
+[[tutorialextensionpoint_readingextension">
+=== Evaluating the registered extensions
+		
 			The defining plug-in also evaluates the existing extension
 			points. In the following example you create a handler
 			class which can
 			evaluate the existing extensions.
-		</para>
-		<para>Create the following class.</para>
-		<para>
+		
+		Create the following class.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/simple/EvaluateContributionsHandler.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The code above uses
 			the
 			<code>ISafeRunnable</code>
@@ -298,9 +250,9 @@
 			<code>ISafeRunnable</code>
 			and
 			the remaining extensions will still get executed.
-		</para>
+		
 
-		<para>
+		
 			Review the
 			<filename>.exsd</filename>
 			schema file and
@@ -308,51 +260,51 @@
 			reference to this file in the
 			<filename>plugin.xml</filename>
 			file.
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_handler">
-		<title>Create a menu entry and add it to your product</title>
-		<para>
+		
+	
+[[tutorialextensionpoint_handler">
+=== Create a menu entry and add it to your product
+		
 			Add a dependency to the
 			<code>com.vogella.extensionpoint.definition</code>
 			plug-in
 			in the
 			<filename>MANIFEST.MF</filename>
 			file of your application plug-in.
-		</para>
-		<para>
+		
+		
 			Afterwards create a new menu entry called
-			<guilabel>Evaluate extensions</guilabel>
+			_Evaluate extensions_
 			and define a command and handler for this menu entry. In the handler
 			point to the
 			<code>EvaluateContributionsHandler</code>
 			class.
-		</para>
-		<para>Also update your product (via your features) so that the new
+		
+		Also update your product (via your features) so that the new
 			plug-in is part of your application.
-		</para>
+		
 		<note>
-			<para>A better approach would be to add the menu entry via a model
+			A better approach would be to add the menu entry via a model
 				fragment or a model processor, but I leave that as
 				an additional
 				exercise to the reader.
-			</para>
+			
 		</note>
-	</section>
+	
 
-	<section id="tutorialextensionpoint_usingextension">
-		<title>Providing an extension</title>
-		<para>
+[[tutorialextensionpoint_usingextension">
+=== Providing an extension
+		
 			Create a new simple plug-in called
-			<wordasword>com.vogella.extensionpoint.contribution</wordasword>
+			_com.vogella.extensionpoint.contribution_
 			.
-		</para>
+		
 
-		<para>
+		
 			Open the
 			<filename>MANIFEST.MF</filename>
 			editor of this new plug-in and select the
-			<guilabel>Dependencies</guilabel>
+			_Dependencies_
 			tab.
 
 			Add the
@@ -363,101 +315,93 @@
 			as dependencies. Make sure
 			your plug-in has
 			the
-			<guilabel>This plug-in is a singleton</guilabel>
+			_This plug-in is a singleton_
 			flag
 			set on the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab for your
 			<filename>MANIFEST.MF</filename>
 			file.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint110.png"/>
+		
+image::extensionpoint110.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Switch to the
-			<guilabel>Extensions</guilabel>
+			_Extensions_
 			tab and select
 			<guibutton>Add...</guibutton>
 			. Select your custom
 			extension point
 			and press the
-			<guilabel>Finish</guilabel>
+			_Finish_
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint120.png"/>
+		
+		
+image::extensionpoint120.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>Add a client to your extension point via right-click.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint130.png"/>
+		Add a client to your extension point via right-click.
+		
+image::extensionpoint130.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/extensionpoint140.png"/>
+		
+image::extensionpoint140.png"/>
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			Create the
 			<code>GreeterGerman</code>
 			class
 			with the
 			following code.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/GreeterGerman.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_add">
-		<title>Add the plug-in to your product</title>
-		<para>
+		
+	
+[[tutorialextensionpoint_add">
+=== Add the plug-in to your product
+		
 			Add the
 			<code>com.vogella.extensionpoint.definition</code>
 			plug-in
 			to your product (via your features).
-		</para>
-	</section>
-	<section id="tutorialextensionpoint_validate">
-		<title>Validating</title>
-		<para>Start your application via the product configuration file to
+		
+	
+[[tutorialextensionpoint_validate">
+=== Validating
+		Start your application via the product configuration file to
 			update the plug-ins included in the run
 			configuration.
-		</para>
-		<para>
+		
+		
 			In your running application
 			select
 			your new menu entry.
 			The handler
 			class write the output of your extensions to the
-			<guilabel>Console</guilabel>
+			_Console_
 			view
 			of your Eclipse IDE.
-		</para>
+		
 
-	</section>
-</section>
+	
+

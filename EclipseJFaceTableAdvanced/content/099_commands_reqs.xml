@@ -1,10 +1,10 @@
-<section id="commands_prereqs">
-	<title>Commands Prerequisite</title>
-	<para>
+
+	<title>Commands Prerequisite
+	
 		If you are not familiar with Eclipse Commands, please have a
 		look at
 		the following tutorial:
-		<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html">
-			Eclipse Commands Tutorial</ulink>
-	</para>
-</section>
+		http://www.vogella.com/tutorials/EclipseCommands/article.html">
+			Eclipse Commands Tutorial
+	
+

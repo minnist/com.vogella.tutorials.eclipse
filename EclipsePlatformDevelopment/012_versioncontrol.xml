@@ -1,150 +1,123 @@
 <section role="wrapper">
-	<title>Finding information about an Eclipse project</title>
+	<title>Finding information about an Eclipse project
 	<section>
-		<title>The Eclipse project page</title>
+=== The Eclipse project page
 		<indexterm>
 			<primary>Project pages</primary>
 		</indexterm>
-		<para>
+		
 			Additional information about a project can be found under its
-			<ulink url="https://projects.eclipse.org/">Eclipse project page</ulink>
+			https://projects.eclipse.org/">Eclipse project page
 			. This includes information about future developments plans,
 			documentation, wiki pages, developer mailing lists and
 			the project
 			charter.
-		</para>
-		<para>
+		
+		
 			The following screenshot depicts the website for the JDT UI
 			project. This project page can be found under
-			<ulink url="https://projects.eclipse.org/projects/eclipse.jdt.ui">JDT UI project page</ulink>
+			https://projects.eclipse.org/projects/eclipse.jdt.ui">JDT UI project page
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdtuieclipseprojectpage10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse top-level project homepage</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth=60%]
+		
+	
 
 
-	<section id="versioncontrolprojects1">
-		<title>Finding the Git repositories for an Eclipse project</title>
-		<para>
+[[versioncontrolprojects1">
+=== Finding the Git repositories for an Eclipse project
+		
 			Eclipse lists
 			all
 			project repositories under their project
 			page. This page can be found via the main
-			<ulink url="https://projects.eclipse.org/">Eclipse projects page</ulink>
+			https://projects.eclipse.org/">Eclipse projects page
 			.
-		</para>
-		<para>
+		
+		
 			Use this page to search for an Eclipse project.
 			If you click on the
-			<guilabel>Learn more</guilabel>
+			_Learn more_
 			in one of the search results you are taken to the project homepage. Click on the
-			<guilabel>Developer resources</guilabel>
+			_Developer resources_
 			tab to see all Git repositories of the project.
-		</para>
-	</section>
-	<section id="versioncontrolprojects2">
-		<title>Example: Finding the Git repositories for the Eclipse Platform UI project</title>
-		<para>
+		
+	
+[[versioncontrolprojects2">
+=== Example: Finding the Git repositories for the Eclipse Platform UI project
+		
 			The Eclipse platform UI project is responsible for the user interface, runtime and user assistant components of
 			the
 			Eclipse platform. In this example search for "Platform UI".
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegitrepos10.png" scale="30" />
+		
+image::eclipsegitrepos10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Eclipse Platform UI search result</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Eclipse Platform UI search result,pdfwidth=60%]
+		
+		
 			Click on the
-			<guilabel>Learn more</guilabel>
+			_Learn more_
 			link and select the
-			<guilabel>Developer resources</guilabel>
+			_Developer resources_
 			tab.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegitrepos20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse Platform UI developer resources`</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="eclipseplatform_dashboard">
-		<title>The Eclipse dashboard</title>
+[[eclipseplatform_dashboard">
+=== The Eclipse dashboard
 		<indexterm>
 			<primary>Dashboard</primary>
 		</indexterm>
 		<indexterm>
 			<primary>Eclipse dashboard</primary>
 		</indexterm>
-		<para>
+		
 			At the time of this writing the Eclipse foundation is setting up
 			a
 			new
-			<ulink url="http://dashboard.eclipse.org/">dashboard</ulink>
+			http://dashboard.eclipse.org/">dashboard
 			.
-		</para>
-		<para>
+		
+		
 			For example
-			<ulink url="http://dashboard.eclipse.org/its-contributors.html"></ulink>
+			http://dashboard.eclipse.org/its-contributors.html">
 			gives an overview of Eclipse contributions. The dashboard allows
 			you
 			to drill down as depicted in the following
 			screenshot.
-		</para>
+		
 		<note>
-			<para>
+			
 				The URL and appearance may still change. See
-				<ulink url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792">Bug 405792</ulink>
+				https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792">Bug 405792
 				for details.
-			</para>
+			
 		</note>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsedash10.png" scale="30" />
+		
+image::eclipsedash10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Project members dash</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Project members dash,pdfwidth=60%]
+		
 
-		<para>You can select in the top the sub-project to see. For example
+		You can select in the top the sub-project to see. For example
 			the reporting for the Eclipse project is depicted
 			in the following
 			screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsedash20.png" scale="30" />
+		
+image::eclipsedash20.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Eclipse project dashboard</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+					<phrase>Eclipse project dashboard,pdfwidth=60%]
+		
+	

@@ -1,19 +1,19 @@
-<section id="plugin_introducion" role="wrapper">
-	<title>Eclipse plug-ins and applications</title>
 
-	<section id="plugin_introducion_def">
+	<title>Eclipse plug-ins and applications
+
+[[plugin_introducion_def">
 		<indexterm>
 			<primary>Plug-in development</primary>
 		</indexterm>
-		<title>Eclipse software components - Plug-ins</title>
+=== Eclipse software components - Plug-ins
 		<indexterm>
 			<primary>Plug-in</primary>
 		</indexterm>
-		<para>
+		
 			An Eclipse application consists of several Eclipse
 			components. A
 			software component in Eclipse is called a
-			<wordasword>plug-in</wordasword>
+			_plug-in_
 			. The
 			Eclipse platform allows the developer to extend Eclipse
 			applications like the Eclipse IDE
@@ -21,30 +21,30 @@
 			functionalities
 			via
 			plug-ins.
-		</para>
-		<para>
+		
+		
 			Eclipse applications use a runtime based on a specification called
-			<wordasword>OSGi</wordasword>
+			_OSGi_
 			.
 			A
 			software
 			component in OSGi is called a
-			<wordasword>bundle</wordasword>.
+			_bundle_.
 			An OSGi bundle is also always an Eclipse plug-in.
 			Both terms can be
 			used
 			interchangeably.
-		</para>
-		<para> For example, a new plug-in can create new menu entries
+		
+		 For example, a new plug-in can create new menu entries
 			or toolbar
 			entries.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="overview_advantages">
-		<title>Advantages of developing Eclipse plug-ins</title>
-		<para> The Eclipse platform forms the basis of the most successful
+[[overview_advantages">
+=== Advantages of developing Eclipse plug-ins
+		 The Eclipse platform forms the basis of the most successful
 			Java
 			IDE and
 			therefore is very stable and broadly used. It uses native
@@ -58,8 +58,8 @@
 			component
 			based
 			systems.
-		</para>
-		<para>
+		
+		
 			Companies such as IBM, SAP and Google use the Eclipse framework
 			as a basis for
 			their
@@ -68,19 +68,19 @@
 			flexible, fast
 			and
 			continues to evolve.
-		</para>
-		<para>The Eclipse platform also fosters a large community of
+		
+		The Eclipse platform also fosters a large community of
 			individuals which
 			provide support, documentation and extensions to the
 			Eclipse framework.
 			Tapping into this ecosystem allows you to find
 			required
 			resources and information.
-		</para>
-	</section>
+		
+	
 
-	<section id="overview_rcp">
-		<title>What is the Eclipse Rich Client Platform (Eclipse RCP)?</title>
+[[overview_rcp">
+=== What is the Eclipse Rich Client Platform (Eclipse RCP)?
 		<indexterm>
 			<primary>History</primary>
 		</indexterm>
@@ -88,7 +88,7 @@
 			<primary>Eclipse RCP</primary>
 		</indexterm>
 
-		<para> The Eclipse IDE version 2.0 started as a modular IDE
+		 The Eclipse IDE version 2.0 started as a modular IDE
 			application.
 			In
 			2004 Eclipse version 3.0 was released. Eclipse 3.0
@@ -101,21 +101,21 @@
 			on
 			the
 			same technology as the Eclipse IDE.
-		</para>
-		<para>
+		
+		
 			At this point, the term
-			<wordasword>Eclipse RCP</wordasword>
+			_Eclipse RCP_
 			was
 			coined. Eclipse RCP is
 			short for
-			<wordasword>Eclipse Rich Client Platform</wordasword>
+			_Eclipse Rich Client Platform_
 			and indicates that the
 			Eclipse platform is used as a basis
 			to create
 			feature-rich stand-alone
 			applications.
-		</para>
-		<para> The release of Eclipse in version 4.x simplified and unified
+		
+		 The release of Eclipse in version 4.x simplified and unified
 			the
 			Eclipse
 			programming model which is now based on state-of-the-art
@@ -125,13 +125,12 @@
 			declarative styling via
 			CSS
 			files.
-		</para>
-		<para>Eclipse RCP applications benefit from the existing user
+		
+		Eclipse RCP applications benefit from the existing user
 			interface and the
 			internal framework, and can reuse existing plug-ins
 			and features.
-		</para>
-	</section>
+		
+	
 
 
-</section>

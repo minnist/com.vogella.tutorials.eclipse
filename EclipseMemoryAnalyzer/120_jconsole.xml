@@ -1,31 +1,30 @@
-<section id="jconsole">
-	<title>jconsole</title>
-	<para>
+
+	<title>jconsole
+	
 		You can also interactively create a
-		<wordasword>heap dumps</wordasword>
+		_heap dumps_
 		via the
-		<wordasword>jconsole</wordasword>
+		_jconsole_
 		, a tool which is included in the JDK.
 		Type
-		<wordasword>jconsole</wordasword>
+		_jconsole_
 		in the command line
 		to start it.
-	</para>
-	<para> To
+	
+	 To
 		allow a Java program the access of jconsole use the
 		-Dcom.sun.management.jmxremote start option.
-	</para>
-	<para>Use them MBeans |
+	
+	Use them MBeans |
 		com.sun.management | HotSpotDiagnostics |
 		Operations |DumpHeap .
-	</para>
-	<para>
+	
+	
 		More info can be found in
 		<ulink
-			url="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">JConsole</ulink>
+			url="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">JConsole
 		and
 		<ulink
-			url="http://java.sun.com/j2se/1.5.0/docs/guide/management/jconsole.html"> JConsole Tutorial</ulink>
+			url="http://java.sun.com/j2se/1.5.0/docs/guide/management/jconsole.html"> JConsole Tutorial
 		.
-	</para>
-</section>
+	

@@ -1,20 +1,19 @@
-<section id="prerequisite">
-	<title>Prerequisite</title>
-	<para>
+
+	<title>Prerequisite
+	
 		The following
 		assumes that you already have some knowledge in using
 		the
 		Eclipse IDE
 		for
 		standard Java development. See
-		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html"> Eclipse IDE Tutorial</ulink>
+		http://www.vogella.com/tutorials/Eclipse/article.html"> Eclipse IDE Tutorial
 		if you do not have this knowledge.
-	</para>
-	<para>
+	
+	
 		Is also assume that you are familiar with using the Eclipse update
 		manager. See
 		<ulink
-			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse Update Manager</ulink>
+			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse Update Manager
 		to learn how to use it.
-	</para>
-</section>
+	

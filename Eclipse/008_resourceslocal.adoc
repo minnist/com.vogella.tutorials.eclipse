@@ -1,0 +1,21 @@
+== Eclipse Resources
+
+=== Eclipse
+		
+http://www.amazon.com/dp/3943747042 - Eclipse IDE book from Lars Vogel
+		
+http://www.eclipse.org - Eclipse Homepage
+		
+[[resources_eclipse">
+=== Eclipse Bug Tracker and Eclipse forum
+		
+http://eclipse.org/forums - Eclipse Forum for asking questions and providing feedback.
+		
+https://bugs.eclipse.org/bugs/ - Eclipse Bug Tracker for reporting errors or feature requests.
+	
+[[resources_eclipsethemes">
+=== Eclipse additional themes
+		
+https://github.com/jeeeyul/eclipse-themes/ - Very flexible Eclipse Theme by Jeeeyul
+		
+	

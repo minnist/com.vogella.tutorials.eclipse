@@ -1,24 +1,22 @@
-<section id="projectdependency">
-	<title>Using project dependencies</title>
-	<indexterm>
-		<primary>Project dependencies</primary>
-	</indexterm>
-	<para>
+
+	<title>Using project dependencies
+
+	
 		You can define in Eclipse that a project is dependent on another
 		project.
 		To do this
 		select your project, right-click on it and select
-		<guilabel>Properties</guilabel>
+		_Properties_
 		.
-	</para>
-	<para>
+	
+	
 		Select
-		<guilabel>Java Build Path</guilabel>
+		_Java Build Path_
 		and the
-		<guilabel>Projects</guilabel>
+		_Projects_
 		tab.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/projectdependencies10.png"
@@ -28,13 +26,12 @@
 				<phrase>Defining project dependencies</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>If you add a project to the build path of another project, you
+	
+	If you add a project to the build path of another project, you
 		can use its
 		classes in Eclipse.
-	</para>
-	<para>This only works within Eclipse; outside of it you need to
+	
+	This only works within Eclipse; outside of it you need to
 		create Java libraries for the projects and add them to the classpath
 		of your Java application.
-	</para>
-</section>
+	

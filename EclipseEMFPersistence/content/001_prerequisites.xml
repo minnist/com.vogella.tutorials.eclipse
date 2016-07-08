@@ -1,10 +1,10 @@
-<section id="preerquisites">
-	<title>Prerequisites</title>
-	<para>
+
+	<title>Prerequisites
+	
 		This article focus on the persistence of EMF models via XMI. For an
 		introduction
 		into Eclipse EMF please see
-		<ulink url="http://www.vogella.com/tutorials/EclipseEMF/article.html">Eclipse EMF</ulink>
+		http://www.vogella.com/tutorials/EclipseEMF/article.html">Eclipse EMF
 		.
-	</para>
-</section>
+	
+

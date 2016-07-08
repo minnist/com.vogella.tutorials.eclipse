@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Define key bindings for Eclipse Commands - Tutorial</title>
+=== Define key bindings for Eclipse Commands - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -28,15 +28,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>17.01.2012</pubdate>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Define key bindings for Eclipse Commands</title>
-			<para> This tutorial describes how to define shortcuts for Eclipse
+	=== Define key bindings for Eclipse Commands
+			 This tutorial describes how to define shortcuts for Eclipse
 				commands. This article is based on Eclipse Indigo (3.7) and uses the
 				Eclipse 3.x API.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

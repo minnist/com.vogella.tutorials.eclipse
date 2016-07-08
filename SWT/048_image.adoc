@@ -1,5 +1,5 @@
-<section id="swt_image">
-	<title>Image</title>
+
+	<title>Image
 	Images can be displayed via labels. The following class
 		demonstrates that using some system images.
 	
@@ -21,4 +21,3 @@
 			</imageobject>
 		</mediaobject>
 	
-</section>

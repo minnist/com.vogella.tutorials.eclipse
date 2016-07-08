@@ -1,11 +1,11 @@
-<section id="e4modelextend__renderer">
-	<title>Exercise: Create renderer for new model element</title>
-	<para>
+
+	<title>Exercise: Create renderer for new model element
+	
 		Define a new simple plug-in called
-		<wordasword>com.vogella.e4.appmodel.renderer</wordasword>
+		_com.vogella.e4.appmodel.renderer_
 		.
-	</para>
-	<para>
+	
+	
 		Add the following plug-ins as dependencies to your new plug-in.
 		<itemizedlist>
 			<listitem>
@@ -27,24 +27,24 @@
 				<code>org.eclipse.e4.core.contexts</code>
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 		Create the following new class called
 		<code>BrowserPartRenderer</code>
 		as renderer for your new
 		<code>BrowserPart</code>
 		.
-	</para>
+	
 
-	<para>
+	
 		Create the following factory to assign a renderer to your new
 		model element.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/renderer/MyRendererFactory.java" />
 		</programlisting>
-	</para>
-</section>
+	
+
 

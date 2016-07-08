@@ -1,10 +1,10 @@
-<section id="contribute">
-	<title>Contribute a menu to existing Part</title>
-	<section id="contribute_overview">
-		<title>Overview</title>
-		<para>
+
+	<title>Contribute a menu to existing Part
+[[contribute_overview">
+=== Overview
+		
 			In this example we will add a new context menu entry to the
-			<wordasword>Package Explorer</wordasword>
+			_Package Explorer_
 			part. The context menu is displayed if
 			the user
 			selects a
@@ -16,55 +16,55 @@
 			the option
 			to
 			create a HTML page from a Java source file.
-		</para>
-		<para>
+		
+		
 			To contribute to an existing menu or toolbar, you need to know the
 			corresponding ID. This ID can be found via the
-			<wordasword>Menu Spy</wordasword>
+			_Menu Spy_
 			. To start the Menu Spy use ALT + Shift + F2 and click on the menu entry you are interested in.
-		</para>
-	</section>
-	<section id="contribute_packageexplorer">
-		<title>Contribute to the Package Explorer</title>
-		<para>
+		
+	
+[[contribute_packageexplorer">
+=== Contribute to the Package Explorer
+		
 			Create a new plug-in project called
-			<wordasword>de.vogella.plugin.htmlconverter</wordasword>
+			_de.vogella.plugin.htmlconverter_
 			.
 			Do not use a template.
-		</para>
+		
 
-		<para>
+		
 			Open the
 			<filename>META-INF/MANIFEST.MF</filename>
 			file. Select the
-			<guilabel>Dependencies</guilabel>
+			_Dependencies_
 			tab
 			and add the following dependencies to your plug-in.
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						org.eclipse.jdt.core
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>org.eclipse.core.runtime</para>
+					org.eclipse.core.runtime
 				</listitem>
 				<listitem>
-					<para>org.eclipse.core.resources</para>
+					org.eclipse.core.resources
 				</listitem>
 				<listitem>
-					<para>org.eclipse.core.expressions</para>
+					org.eclipse.core.expressions
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
-		<para>
+		
 			Open the
-			<guilabel>Extensions</guilabel>
+			_Extensions_
 			tab in your editor, or if the tab is not visible, click the
-			<guilabel>Extensions</guilabel>
+			_Extensions_
 			link on the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab.
 			Add a command with the ID
 			<code>de.vogella.plugin.htmlconverter.convert</code>
@@ -72,8 +72,8 @@
 			the default handler
 			<code>de.vogella.plugin.htmlconverter.handler.ConvertHandler</code>
 			to your plug-in.
-		</para>
-		<para>
+		
+		
 			Add
 			this command to the menu via the extension point
 			<code>org.eclipse.ui.menus</code>
@@ -84,19 +84,19 @@
 			. Set the label to
 			<parameter>Create HTML</parameter>
 			for this contribution.
-		</para>
-		<para>
+		
+		
 			The resulting file
 			<code>plugin.xml</code>
 			should look like the following.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/pluginsimple.adoc[]
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Eclipse allows to
 			save additional information for each file. You
 			can
@@ -112,38 +112,36 @@
 			files which
 			were
 			already exported via HTML.
-		</para>
+		
 
 
-		<para>
+		
 			Create the following
 			<code>ConvertHandler</code>
 			class.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/htmlconverter/ConvertHandler.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			If you start this plug-in, you should be able to create
 			HTML
 			output from a Java source file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/html40.gif" scale="60" />
+		
+		
+image::html40.gif" scale="60" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="contextmenu_restrict">
-		<title>Restrict the extension - Visible When</title>
-		<para>
+		
+	
+[[contextmenu_restrict">
+=== Restrict the extension - Visible When
+		
 			Currently our context menu is displayed all the time.
 			We would
 			like to
@@ -153,8 +151,8 @@
 			this we will use
 			a
 			"visible-when" definition.
-		</para>
-		<para>
+		
+		
 			Add the
 			<code>org.eclipse.core.expressions</code>
 			plug-in as dependency to your plug-in. Select your menu
@@ -167,8 +165,8 @@
 			from the
 			<code>org.eclipse.jdt.core</code>
 			package.
-		</para>
-		<para>
+		
+		
 			For this exercise you use the
 			predefined variable
 			<parameter>activeMenuSelection</parameter>
@@ -178,21 +176,20 @@
 			<code>ICompilationUnit</code>
 			,
 			then the contribution will be visible.
-		</para>
-		<para>
+		
+		
 			This will result in the following
 			<filename>plugin.xml</filename>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/plugin.adoc[]
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			If you now start your plug-in, the menu entry should only be
 			visible if at least one compilation unit has been
 			selected.
-		</para>
-	</section>
-</section>
+		
+	

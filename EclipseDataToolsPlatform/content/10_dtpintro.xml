@@ -1,22 +1,22 @@
-<section id="dtpintro">
-	<title>Introduction</title>
-	<section id="dtpintro_dtp">
-		<title>Eclipse Data Tools Platform</title>
-		<para> The Eclipse DTP project provide tools for performing
+
+	<title>Introduction
+[[dtpintro_dtp">
+=== Eclipse Data Tools Platform
+		 The Eclipse DTP project provide tools for performing
 			database
 			tasks. For example the project provides an editor for SQL statements
 			or a database browser.
-		</para>
-	</section>
-	<section id="dtpintro_derby">
-		<title>Derby - Java DB</title>
-		<para>
+		
+	
+[[dtpintro_derby">
+=== Derby - Java DB
+		
 			In this article
-			<ulink url="http://www.vogella.com/tutorials/ApacheDerby/article.html"> Apache Derby</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html"> Apache Derby
 			is used as the example database. Derby is an open-source, freely
 			available, pure Java database.
 			See
-			<ulink url="http://www.vogella.com/tutorials/ApacheDerby/article.html"> Apache Derby Tutorial</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html"> Apache Derby Tutorial
 			to learn more about Apache Derby.
 
 
@@ -26,17 +26,16 @@
 			lots of other databases, e.g.
 			MySQL,
 			PostgreSQL, HSQLDB.
-		</para>
-	</section>
-	<section id="dtpintro_ide">
-		<title>Using Eclipse</title>
-		<para>
+		
+	
+[[dtpintro_ide">
+=== Using Eclipse
+		
 			The following assumes that you already have knowledge in using
 			the
-			<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE</ulink>
+			http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE
 			. See the
-			<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse Java IDE Tutorial</ulink>
+			http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse Java IDE Tutorial
 			in case you lacking this knowledge.
-		</para>
-	</section>
-</section>
+		
+	

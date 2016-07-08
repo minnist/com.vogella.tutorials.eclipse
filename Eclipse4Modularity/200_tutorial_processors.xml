@@ -1,96 +1,96 @@
-<section id="contributeprocessors" role="wrapper">
-	<title>Exercise: Implementing a model processor</title>
-	<section id="contributeprocessors_target">
-		<title>Target</title>
-		<para>
+
+	<title>Exercise: Implementing a model processor
+[[contributeprocessors_target">
+=== Target
+		
 			In this exercise
 			you
 			replace an existing menu entry with another
 			menu entry.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="contributeprocessors_dependencies">
-		<title>Enter the dependencies</title>
-		<para>
+[[contributeprocessors_dependencies">
+=== Enter the dependencies
+		
 			Continue to use the
 			<code>com.example.e4.rcp.todo.contribute</code>
 			plug-in for this exercise.
-		</para>
+		
 
-		<para>
+		
 			In the
 			<filename>MANIFEST.MF</filename>
 			, add the following plug-ins as dependencies to your
-			<wordasword>contribute</wordasword>
+			_contribute_
 			plug-in.
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.services</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.core.contexts</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.model.workbench</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
-	</section>
-	<section id="contributeprocessors_java">
-		<title>Create the Java classes</title>
-		<para> Create the following dialog and handler classes. </para>
+	
+[[contributeprocessors_java">
+=== Create the Java classes
+		 Create the following dialog and handler classes. 
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/processors/ExitDialog.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/processors/ExitHandlerWithCheck.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Create the model processor class. This class removes all menu
 			entries
 			which have "exit" in their ID from the menu with
 			the
 			<code>org.eclipse.ui.file.menu</code>
 			ID. It also adds a new entry.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/processors/MenuProcessor.java" />
 			</programlisting>
-		</para>
+		
 
 		<warning>
-			<para>
+			
 				Ensure that your menu entry labeled with "Exit" in the
 				<filename>Application.e4xmi</filename>
 				file, contains "exit" in its ID.
-			</para>
+			
 		</warning>
 
-	</section>
+	
 
-	<section id="contributeprocessors_extension">
-		<title>Register processor via extension</title>
-		<para>
+[[contributeprocessors_extension">
+=== Register processor via extension
+		
 			In your
 			<code>contribute</code>
 			plug-in register your
@@ -98,23 +98,18 @@
 			via the
 			<code>org.eclipse.e4.workbench.model</code>
 			extension.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/processor04.png" />
+		
+image::processor04.png" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			Right-click on the processor and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>element</guisubmenu>
-			</menuchoice>
+			menu:New[element]
 			. The value from the ID parameter is the ID of the model element
 			which is
 			injected
@@ -123,45 +118,43 @@
 			as
 			<parameter>id*</parameter>
 			parameter.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/processor10.png" />
+		
+image::processor10.png" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 		<warning>
-			<para>
+			
 				This assumes that you used
-				<wordasword>org.eclipse.ui.file.menu</wordasword>
+				_org.eclipse.ui.file.menu_
 				as
 				ID for your
-				<wordasword>File</wordasword>
+				_File_
 				menu in the main application model.
-			</para>
+			
 		</warning>
 
 		<warning>
-			<para>
+			
 				The ID of the element defined in the extension point must match the
 				<code>@Named</code>
 				value in the processor, otherwise your menu is not injected into the
 				processor.
-			</para>
+			
 		</warning>
 
-	</section>
-	<section id="contributeprocessors_validate">
-		<title>Validating</title>
-		<para>
+	
+[[contributeprocessors_validate">
+=== Validating
+		
 			Start your application. In the model fragment exercises, the
 			contribute plug-in was already added to your
 			product.
-		</para>
-		<para>
+		
+		
 			Ensure that the
 			existing "Exit"
 			menu entry is
@@ -171,10 +164,10 @@
 			label is
 			added to
 			the file menu.
-		</para>
-	</section>
+		
+	
 
-</section>
+
 
 
 

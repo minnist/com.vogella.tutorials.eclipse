@@ -1,12 +1,12 @@
 
-<section id="egitsource">
-	<title>Contributing to EGit - Getting the source code</title>
-	<para>
+
+	<title>Contributing to EGit - Getting the source code
+	
 		EGit is self-hosted on
-		<ulink url="git://git.eclipse.org"> git://git.eclipse.org</ulink>
+		git://git.eclipse.org"> git://git.eclipse.org
 		. See
 
-		<ulink url="http://wiki.eclipse.org/EGit/Contributor_Guide"> EGit contributor guide</ulink>
+		http://wiki.eclipse.org/EGit/Contributor_Guide"> EGit contributor guide
 		for a description how to work with the EGit and JGit source.
-	</para>
-</section>
+	
+

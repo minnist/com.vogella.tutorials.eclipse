@@ -1,28 +1,26 @@
-<section id="standardcommands">
-	<title>Eclipse standard commands</title>
 
-	<section id="standardcommands_overview">
-		<title>Overview</title>
-		<para> Eclipse provides lots of standard commands which you can
+	<title>Eclipse standard commands
+
+[[standardcommands_overview">
+=== Overview
+		 Eclipse provides lots of standard commands which you can
 			reuse.
 			Just press on the "Browse button" while defining your
 			commandId to see
 			the available standard commands. For example the
 			screenshot shows the
 			usage of the standard about dialog command.
-		</para>
+		
 
-		<para> The advantage of using standard commands is that you get the
-			keybinding, icons, etc for free.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/standardcommand10.gif" />
+		 The advantage of using standard commands is that you get the
+			keybinding, icons, etc for free.
+		
+image::standardcommand10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			<tip> Standard commands sometimes map to actions which are
 				contributed
 				via ActionFactory in the class
@@ -35,40 +33,40 @@
 				following made the reset perspective
 				and welcome command active.
 		</tip>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/standardcommands/ApplicationActionBarAdvisor.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="standardcommands_example">
-		<title>Example</title>
-		<para>
+[[standardcommands_example">
+=== Example
+		
 			You can also use standard command and define a new handler for
 			this
 			command, e.g., you can use the standard Eclipse delete command
 			(org.eclipse.ui.edit.delete). 
-		</para>
+		
 
-		<para>
+		
 			<tip>
 				To find the id of existing commands you
 				can you the
 				<ulink
-					url="http://www.vogella.com/tutorials/EclipseCodeAccess/article.html#pluginspy"> Eclipse Plugin Spy.</ulink>
+					url="http://www.vogella.com/tutorials/EclipseCodeAccess/article.html#pluginspy"> Eclipse Plugin Spy.
 			</tip>
-		</para>
+		
 
 
-		<para> You can use the extension point "org.eclipse.ui.handlers"
+		 You can use the extension point "org.eclipse.ui.handlers"
 			to define new handlers for the standard commands. 
-			</para>
+			
 
-		<para>
+		
 			<tip>
 				Eclipse requires
 				you to have only one active handler at the time
@@ -79,42 +77,35 @@
 				delete in several views with different handlers use "activeWhen"
 				with the variable "activePartId" and as the value your view id.
 			</tip>
-		</para>
+		
 
-		<para> Create a new RCP application
+		 Create a new RCP application
 			"de.vogella.rcp.commands.standardcommands" with the template "Hello
-			RCP". </para>
-		<para> Create a handler for the command "org.eclipse.ui.edit.delete"
+			RCP". 
+		 Create a handler for the command "org.eclipse.ui.edit.delete"
 			which display a message box. Add the command
-			"org.eclipse.ui.edit.delete" to the menu. </para>
+			"org.eclipse.ui.edit.delete" to the menu. 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/standardcommand20.gif" />
+		
+image::standardcommand20.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/standardcommand30.gif" />
+		
+image::standardcommand30.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para> The result should look like the following.</para>
+		 The result should look like the following.
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/standardcommand40.gif" />
+		
+image::standardcommand40.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

@@ -1,10 +1,10 @@
-<section id="targetplatform">
-		<title>Target platform for defining available plug-ins for development</title>
+
+=== Target platform for defining available plug-ins for development
 		<indexterm>
 			<primary>Target platform</primary>
 		</indexterm>
 
-		<para>
+		
 			The set of plug-ins
 			which you can use for your development or your
 			build process to resolve the project dependencies is
@@ -14,7 +14,7 @@
 			workspace in addition with the plug-ins
 			defined by
 			your
-			<wordasword>target platform</wordasword>
+			_target platform_
 			.
 			For example your plug-ins use classes from the SWT and JFace
 			plug-ins.
@@ -24,12 +24,12 @@
 			IDE installation
 			are used as target
 			platform.
-		</para>
-		<para> A target definition file is typically shared between the developers to ensure that
+		
+		 A target definition file is typically shared between the developers to ensure that
 			everyone is using the same
 			basis for development.
-		</para>
-		<para>It is good practice to develop and build against a specific
+		
+		It is good practice to develop and build against a specific
 			target definition. This way it can be ensured that
 			dependencies and
 			their
@@ -45,6 +45,5 @@
 			on the
 			versions installed in the IDE of
 			every developer.
-		</para>
+		
 
-</section>

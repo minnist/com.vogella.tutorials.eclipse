@@ -1,8 +1,8 @@
-<section id="applicationmodel">
-	<title>Contributing to the application model</title>
 
-	<section id="contribute_fragment">
-		<title>Model fragments</title>
+	<title>Contributing to the application model
+
+[[contribute_fragment">
+=== Model fragments
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Fragments</secondary>
@@ -10,41 +10,41 @@
 		<indexterm>
 			<primary>Model fragments</primary>
 		</indexterm>
-		<para>
+		
 			A model
-			<wordasword>fragment</wordasword>
+			_fragment_
 			is a file which typically ends with the
 			<filename>.e4xmi</filename>
 			extension. It statically specifies model elements and the location in
 			the application model
 			to which it should be
 			contributed.
-		</para>
-		<para> For example a
+		
+		 For example a
 			fragment
 			can define that
 			it extends a
 			certain menu
 			with additional menu
 			entries.
-		</para>
-		<para>The e4 tools project provides a wizard and an editor for model
+		
+		The e4 tools project provides a wizard and an editor for model
 			fragments.
-		</para>
+		
 		<tip>
-			<para>
+			
 				The application model editor also allows you to extract a subtree
 				into a new or existing fragment. Select a model
 				element, right click
 				on it and select
-				<guilabel>Extract into a fragment</guilabel>
+				_Extract into a fragment_
 				from the context menu.
-			</para>
+			
 		</tip>
-	</section>
+	
 
-	<section id="contribute_processors">
-		<title>Model processors</title>
+[[contribute_processors">
+=== Model processors
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Processors</secondary>
@@ -52,28 +52,28 @@
 		<indexterm>
 			<primary>Model processor</primary>
 		</indexterm>
-		<para>
+		
 			A
-			<wordasword>processor</wordasword>
+			_processor_
 			allows you to contribute to the model via program code. This enables
 			the dynamic creation of model
 			elements during the
 			start of the
 			application.
-		</para>
-	</section>
+		
+	
 
-	<section id="applicationmodel_position">
-		<title>Position of new model elements</title>
-		<para>
+[[applicationmodel_position">
+=== Position of new model elements
+		
 			Fragments define the desired position of new model
 			elements
 			via the
 			<parameter>Position in List</parameter>
 			attribute. The following values are allowed:
-		</para>
+		
 		<table frame='all'>
-			<title>Position in list</title>
+	=== Position in list
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
@@ -127,7 +127,7 @@
 				</tbody>
 			</tgroup>
 		</table>
-		<para>
+		
 			fragments
 			of independent plug-ins
 			are processed in arbitrary order by
@@ -138,32 +138,32 @@
 			or
 			<parameter>index</parameter>
 			might not always result in the desired outcome.
-		</para>
-	</section>
+		
+	
 
 
-	<section id="applicationmodel_contributingtoids">
-		<title>Usage of IDs</title>
-		<para>If you want to contribute to an element of the application model
+[[applicationmodel_contributingtoids">
+=== Usage of IDs
+		If you want to contribute to an element of the application model
 			you must
 			specify the ID of the element to
 			which
 			you are
 			contributing.
-		</para>
+		
 		<tip>
-			<para>In general it is good practice to always specify unique IDs in
+			In general it is good practice to always specify unique IDs in
 				your
 				application model. If not you may experience
 				strange application
 				behavior.
-			</para>
+			
 		</tip>
-	</section>
+	
 
-	<section id="applicationmodel_eclipse3">
-		<title>Comparison with Eclipse 3.x</title>
-		<para>The programming model of Eclipse 3.x primarily uses extension
+[[applicationmodel_eclipse3">
+=== Comparison with Eclipse 3.x
+		The programming model of Eclipse 3.x primarily uses extension
 			points to define
 			contributions to the application.
 			These extensions
@@ -175,7 +175,6 @@
 			applications. All
 			contributions are made via fragments or
 			processors.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -1,16 +1,16 @@
-<section id="commands">
-	<title>Commands</title>
-	<section id="commands_overview">
-		<title>What are commands?</title>
-		<para>
+
+	<title>Commands
+[[commands_overview">
+=== What are commands?
+		
 			A command in Eclipse is a declarative description of a
 			component
 			and
 			is
 			independent from the implementation details.
-		</para>
+		
 
-		<para>
+		
 			A
 			command can be
 			categorized, assigned
@@ -23,20 +23,19 @@
 			The behavior
 			of a command is
 			defined via a handler.
-		</para>
-	</section>
+		
+	
 
-	<section id="commands_process">
-		<title>Relevant Extension Points for Commands</title>
-		<para>
+[[commands_process">
+=== Relevant Extension Points for Commands
+		
 			To define a command you create an extension to the
 			<code>org.eclipse.ui.command</code>
 			extension point.
-		</para>
 		
-	</section>
+		
+	
 
 
 
 
-</section>

@@ -1,15 +1,14 @@
-<section id="modelpersistence" role="wrapper">
-	<title>Tutorial: Replace persistence of the application model</title>
-	<para>
+
+	<title>Tutorial: Replace persistence of the application model
+	
 		Create a plain OSGi bundle without
-		<wordasword>Activator</wordasword>
+		_Activator_
 		called
-		<wordasword>com.example.e4.rcp.todo.appmodelprovider</wordasword>
+		_com.example.e4.rcp.todo.appmodelprovider_
 		.
-	</para>
-	<para>
+	
+	
 		Add the
 		<code>org.eclipse.e4.ui.workbench</code>
 		plug-in as dependency to this new plug-in.
-	</para>
-</section>
+	

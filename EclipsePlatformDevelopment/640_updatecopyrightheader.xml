@@ -1,52 +1,37 @@
-<section id="updatingthecopyrightheader" role="wrapper">
-	<title>Updating the copyright header of a source file</title>
 
-	<section id="updatingthecopyrightheader_why">
-		<title>Why updating the copyright header of a changed file?</title>
+	<title>Updating the copyright header of a source file
+
+[[updatingthecopyrightheader_why">
+=== Why updating the copyright header of a changed file?
 		<indexterm>
 			<primary>Copyright header update
 			</primary>
 		</indexterm>
-		<para>Most Eclipse projects insists that you update the last changed date in the copyright header if you change the
+		Most Eclipse projects insists that you update the last changed date in the copyright header if you change the
 			file. You can do this manually but the Eclipse releng project also provides tooling for that.
-		</para>
+		
 
-	</section>
-	<section id="updatingthecopyrightheader_tooling">
+	
+[[updatingthecopyrightheader_tooling">
 		<indexterm>
 			<primary>Copyright header update tool
 			</primary>
 		</indexterm>
-		<title>Using the Eclipse releng tooling for updating the copyright header</title>
-		<para>
+=== Using the Eclipse releng tooling for updating the copyright header
+		
 			You need to install the copyright header tool from the following update site:
 			http://download.eclipse.org/eclipse/updates/4.5
-		</para>
-		<para>Adjust the number "4.5" to the number matching your eclipse
+		
+		Adjust the number "4.5" to the number matching your eclipse
 			version.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/copyrightheadertool10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Installing the copyright header tool</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::copyrightheadertool10.png[Installing the copyright header tool,pdfwidth=60%]
+		
 
-		<para>After the installation you can select the entry from the context menu of a project or source folder. </para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/copyrightheadertool20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Using the fix copyright header tool</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		After the installation you can select the entry from the context menu of a project or source folder. 
+		
+image::copyrightheadertool20.png[Using the fix copyright header tool,pdfwidth=60%]
+		
+	
 
-</section>

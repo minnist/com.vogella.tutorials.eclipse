@@ -1,6 +1,6 @@
-<section id="jfaceviewer" role="wrapper">
-	<title>Eclipse JFace Viewers</title>
-	<section id="jface_viewers">
+
+	<title>Eclipse JFace Viewers
+[[jface_viewers">
 		<indexterm>
 			<primary>Viewer (JFace)</primary>
 		</indexterm>
@@ -9,8 +9,8 @@
 			<primary>JFace</primary>
 			<secondary>Viewer</secondary>
 		</indexterm>
-		<title>Purpose of the JFace viewer framework</title>
-		<para>
+=== Purpose of the JFace viewer framework
+		
 			The
 			JFace viewer
 			framework
@@ -24,32 +24,32 @@
 			the domain
 			model
 			beforehand.
-		</para>
-		<para>
+		
+		
 			A
 			viewer
 			allows you to set a
-			<wordasword>content provider</wordasword>
+			_content provider_
 			which provides the data for the
 			viewer. The
 			content provider
 			makes no
 			assumption about the presentation of the data model.
-		</para>
-		<para>
+		
+		
 			You can also assign at least one
-			<wordasword>label provider</wordasword>
+			_label provider_
 			to a
 			viewer. The label provider defines how the data from the model
 			will be
 			displayed in the
 			viewer.
-		</para>
+		
 
-	</section>
-	<section id="jfaceviewers_types">
-		<title>Standard JFace viewer</title>
-		<para>
+	
+[[jfaceviewers_types">
+=== Standard JFace viewer
+		
 			JFace provides several standard
 			viewer implementations. These
 			viewers
@@ -61,38 +61,38 @@
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>ComboViewer</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>ListViewer</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>TreeViewer</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>TableViewer</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
-	<section id="jfaceviewers_contentandlabel">
-		<title>Standard content and label provider</title>
-		<para>
+		
+	
+[[jfaceviewers_contentandlabel">
+=== Standard content and label provider
+		
 			The related interfaces for defining a
 			content provider
 			are described in
 			the following table.
 
 			<table frame='all'>
-				<title>Content providers</title>
+		=== Content providers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
@@ -140,13 +140,13 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>
+		
 			Important standard label providers are listed in the following table.
 
 			<table frame='all'>
-				<title>Label providers</title>
+		=== Label providers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
@@ -178,8 +178,8 @@
 				</tgroup>
 			</table>
 
-		</para>
-	</section>
-</section>
+		
+	
+
 	
 	

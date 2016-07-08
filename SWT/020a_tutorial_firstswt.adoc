@@ -1,5 +1,5 @@
-<section id="firstswt_simple">
-	<title>Exercise: Create a simple SWT program</title>
+
+	<title>Exercise: Create a simple SWT program
 	
 		Continue to use the
 		<code>com.examle.swt.widgets</code>
@@ -20,7 +20,7 @@
 	
 	
 		To start your application, right-click on your Java class, and select
-		<menuchoice>
+		menu:
 			<guimenu>Run-As</guimenu>
 			<guisubmenu>Java Application</guisubmenu>
 		</menuchoice>
@@ -60,4 +60,3 @@
 			</textobject>
 		</mediaobject>
 	
-</section>

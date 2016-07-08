@@ -1,29 +1,29 @@
 
-<section id="tutorial_downloadrelease">
-	<title>Download the Eclipse Software Development Kit (SDK)</title>
+
+	<title>Download the Eclipse Software Development Kit (SDK)
 	<indexterm>
 		<primary>Download</primary>
 		<secondary>Eclipse SDK</secondary>
 	</indexterm>
-	<para>
+	
 		The following description is based on the latest
 		Eclipse 4.6 release.
 		Download the latest version of the
-		<wordasword>Eclipse SDK</wordasword>
+		_Eclipse SDK_
 		build
 		from the following URL:
-	</para>
-	<para>
+	
+	
 		<code>http://download.eclipse.org/eclipse/downloads/</code>
-	</para>
+	
 
-	<para>This website should look similar to the following screenshot.
+	This website should look similar to the following screenshot.
 		Click on the link of the latest released version (the release version
 		with the highest number) to get to the
 		download
 		section.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/downloadeclipse.png"/>
@@ -32,8 +32,8 @@
 				<phrase>Eclipse.org Download Page</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		The download is a compressed archive  of
 		multiple
 		files. This
@@ -43,6 +43,6 @@
 		the
 		<filename>tar.gz</filename>
 		format.
-	</para>
-</section>
+	
+
 

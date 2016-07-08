@@ -1,9 +1,9 @@
-<section id="tutorial_e4wizard" role="wrapper">
-	<title>Exercise: Wizard to create an RCP application</title>
 
-	<section id="tutorial_e4wizard_target">
-		<title>Target</title>
-		<para>
+	<title>Exercise: Wizard to create an RCP application
+
+[[tutorial_e4wizard_target">
+=== Target
+		
 			The following exercise demonstrates how to create an Eclipse RCP application based on a template.
 			It also shows
 			how to
@@ -11,32 +11,24 @@
 			the application via
 			the Eclipse IDE. You learn all the details of what happened here in later
 			chapters.
-		</para>
-	</section>
-	<section id="tutorial_e4wizard_project">
-		<title>Create project</title>
-		<para>
+		
+	
+[[tutorial_e4wizard_project">
+=== Create project
+		
 			Select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Plug-in Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in Development > Plug-in Project]
 			from the menu of your Eclipse IDE.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard10.png" scale="35" />
+		
+image::wizard10.png" scale="35" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 
 			Create a
 			project called
@@ -44,36 +36,30 @@
 			.
 			Use the settings similar to the following
 			screenshots, most of them are the default settings.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard20.png" scale="35" />
+		
+image::wizard20.png" scale="35" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard30.png" scale="35" />
+		
+		
+image::wizard30.png" scale="35" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard40.png" scale="35" />
+		
+image::wizard40.png" scale="35" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			On the last wizard page, select the
-			<guilabel>Create sample content (parts, menu etc.)</guilabel>
+			_Create sample content (parts, menu etc.)_
 			flag. Via this flag
 			you configure that
 			the generated application has
@@ -81,15 +67,13 @@
 			view
 			and some menu and
 			toolbar entries.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/rcpwizard50.png" scale="35" />
+		
+		
+image::rcpwizard50.png" scale="35" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 		<indexterm>
 			<primary>clearPersistedState</primary>
 		</indexterm>
@@ -98,7 +82,7 @@
 		</indexterm>
 
 		<note>
-			<para>
+			
 				The wizard adds also the
 
 				<parameter>clearPersistedState</parameter>
@@ -109,68 +93,57 @@
 				always visible. See
 				<xref linkend="tutorial_clearpesistence_task" />
 				for more information.
-			</para>
+			
 		</note>
-	</section>
+	
 
-	<section id="wizward_launch">
-		<title>Launch your Eclipse application via the product file</title>
-		<para>
+[[wizward_launch">
+=== Launch your Eclipse application via the product file
+		
 			Open the generated
 			product file by double-clicking on the file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard51.png" />
+		
+		
+image::wizard51.png" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Starting the Eclipse 4 application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Starting the Eclipse 4 application,pdfwidth=60%]
+		
+		
 			Switch to
 			the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab in the editor and
 			launch your
 			Eclipse application
 			by pressing the
-			<guilabel>Launch an Eclipse application</guilabel>
+			_Launch an Eclipse application_
 			hyperlink. This selection is highlighted in the following screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard52.png" />
+		
+image::wizard52.png" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Starting the Eclipse 4 application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="wizward_validate">
-		<title>Validating</title>
+					<phrase>Starting the Eclipse 4 application,pdfwidth=60%]
+		
+	
+[[wizward_validate">
+=== Validating
 
-		<para>As a result your Eclipse application should start. The
+		As a result your Eclipse application should start. The
 			application should look similar
 			to the following
 			screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wizard70.png" />
+		
+image::wizard70.png" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-</section>

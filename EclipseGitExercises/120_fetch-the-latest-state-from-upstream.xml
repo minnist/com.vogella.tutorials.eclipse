@@ -1,4 +1,4 @@
-<section id="_fetch_the_latest_state_from_upstream">
+
 	<title>Fetch the latest state from your remote repository
 	In this exercise you learn how to use the git fetch command to get the latest state from
 		a remote repository.

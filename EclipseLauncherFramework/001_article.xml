@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Defining custom launcher for the Eclipse IDE</title>
+=== Defining custom launcher for the Eclipse IDE
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -27,15 +27,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>23.03.2015</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse Launcher Framework</title>
-			<para> This tutorial describes how the define custom launcher for additional programs.
-			</para>
-			<para> In this tutorial Eclipse 4.3 is used.</para>
-			<para>Level of this tutorial: Advanced</para>
+	=== Eclipse Launcher Framework
+			 This tutorial describes how the define custom launcher for additional programs.
+			
+			 In this tutorial Eclipse 4.3 is used.
+			Level of this tutorial: Advanced
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

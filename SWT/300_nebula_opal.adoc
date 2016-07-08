@@ -1,15 +1,11 @@
-<section id="nebula_opal">
-	<title>The Nebula and Opal widgets</title>
-	<indexterm>
-		<primary>Nebula widgets</primary>
-	</indexterm>
-	<indexterm>
-		<primary>Opal widgets</primary>
-	</indexterm>
+
+	<title>The Nebula and Opal widgets
+
+
 
 	
 		The
-		<ulink url="http://eclipse.org/nebula/">Eclipse Nebula</ulink>
+		http://eclipse.org/nebula/">Eclipse Nebula
 		project provides additional
 		widgets for SWT. For example, it provides
 		several visualization widgets as depicted in the following screenshot.
@@ -27,7 +23,7 @@
 	
 	
 		Another source for SWT widgets is the
-		<ulink url="http://code.google.com/a/eclipselabs.org/p/opal/">Opal widget homepage</ulink>
+		http://code.google.com/a/eclipselabs.org/p/opal/">Opal widget homepage
 		. The following screenshot shows a widgets for displaying two lists.
 	
 	
@@ -41,5 +37,5 @@
 		</mediaobject>
 	
 
-</section>
+
 

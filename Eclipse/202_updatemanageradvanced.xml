@@ -1,7 +1,7 @@
 <section role="wrapper" id="plugin_installation">
-	<title>Advanced Eclipse Update manager options</title>
-	<section id="dropins">
-		<title>Manual installation of plug-ins (dropins folder)</title>
+	<title>Advanced Eclipse Update manager options
+[[dropins">
+=== Manual installation of plug-ins (dropins folder)
 
 		<indexterm>
 			<primary>Update manager</primary>
@@ -9,16 +9,16 @@
 			</secondary>
 		</indexterm>
 
-		<para>
+		
 			Eclipse plug-ins are distributed as
 			<filename>jar</filename>
 			files.
 			If you want to use an Eclipse plug-in directly or do not
 			know
 			the
-			<wordasword>update
+			_update
 				site
-			</wordasword>
+			_
 			for it,
 			you
 			can place it in the
@@ -29,16 +29,16 @@
 			manager installs
 			and removes plug-in based on the files contained in
 			this directory.
-		</para>
-		<para>
+		
+		
 			You should not modify
 			the content of the Eclipse
 			<filename>plugins</filename>
 			directory directly. If you want to install plug-ins, put them into the
 			<filename>dropins</filename>
 			folder. If you want to remove it, delete the JAR from this folder.
-		</para>
-		<para>
+		
+		
 			Plug-ins are typically distributed as
 			<filename>jar</filename>
 			files. To add a
@@ -55,28 +55,28 @@
 			plug-in and
 			install it
 			for you.
-		</para>
-		<para>
+		
+		
 			If you remove plug-ins from the
 			<filename>dropins</filename>
 			folder and restart Eclipse, these plug-ins are automatically removed
 			from your Eclipse installation.
-		</para>
-	</section>
+		
+	
 
-	<section id="p2_export">
-		<title>Exporting and importing the installed components</title>
+[[p2_export">
+=== Exporting and importing the installed components
 		<indexterm>
 			<primary>Update manager</primary>
 			<secondary>exporting and importing the installed components
 			</secondary>
 		</indexterm>
-		<para>Eclipse allows you to export a file which
+		Eclipse allows you to export a file which
 			describes the installed
 			Eclipse components. During the export the user can select which
 			components should be included into this description file.
-		</para>
-		<para>
+		
+		
 			Other
 			users
 			can import this description
@@ -85,61 +85,47 @@
 			Eclipse
 			installation and
 			install the components based on this file.
-		</para>
-		<para>This way, Eclipse installation can be kept in sync with each
+		
+		This way, Eclipse installation can be kept in sync with each
 			other.
-		</para>
-		<para>
+		
+		
 			To export a description file, select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Export</guisubmenu>
-				<guisubmenu>Install</guisubmenu>
-				<guisubmenu>Installed Software Items to File</guisubmenu>
-			</menuchoice>
+			menu:File[Export > Install > Installed Software Items to File]
 			and select the components which should be included in your
 			description file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/descriptionfile10.png" />
+		
+		
+image::descriptionfile10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Exporting a description file for p2</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Exporting a description file for p2,pdfwidth=60%]
+		
+		
 			To install the described components in another Eclipse
 			installation,
 			open the exported file with
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Import</guisubmenu>
-				<guisubmenu>Install</guisubmenu>
-				<guisubmenu>Install Software Items from File</guisubmenu>
-			</menuchoice>
+			menu:File[Import > Install > Install Software Items from File]
 			and follow the wizard. The wizard allows you to specify the
 			components which should be installed.
-		</para>
-	</section>
+		
+	
 
-	<section id="director">
-		<title>Installing features via the command line</title>
+[[director">
+=== Installing features via the command line
 		<indexterm>
 			<primary>Update manager</primary>
 			<secondary>command line installation
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The Eclipse update manager has a component called
-			<wordasword>director</wordasword>
+			_director_
 			which allows you to
 			install new features
 			via the command line.
-		</para>
-		<para>
+		
+		
 			For example, the following command will install the components EGit,
 			Mylyn and EMF into
 			an Eclipse instance. You need to start this command
@@ -147,28 +133,23 @@
 			contains your Eclipse installation in a folder called
 			<filename>eclipse</filename>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commandline.txt" />
 			</programlisting>
-		</para>
-		<para>The feature names which you need for this operation can be seen
+		
+		The feature names which you need for this operation can be seen
 			on the second page of the standard installation dialog of the Eclipse
 			update manager.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipse_installcommandline10.png"
+		
+		
+image::eclipse_installcommandline10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Getting the feature name</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+					<phrase>Getting the feature name,pdfwidth=60%]
+		
+	

@@ -1,12 +1,12 @@
-<section id="deployproductjresheadless" role="wrapper">
-	<title>JRE and headless build</title>
-	<section id="deployproduct_jre">
-		<title>Including the required JRE into the export</title>
+
+	<title>JRE and headless build
+[[deployproduct_jre">
+=== Including the required JRE into the export
 		<indexterm>
 			<primary>Deployment</primary>
 			<secondary>JRE</secondary>
 		</indexterm>
-		<para>
+		
 			You can also deploy your own RCP application bundled with a JRE
 			to
 			make
@@ -24,17 +24,17 @@
 			start the
 			Eclipse
 			application.
-		</para>
-		<para>
+		
+		
 			To include the JRE from your running environment, select the
-			<guilabel>Bundle JRE for this environment with the product</guilabel>
+			_Bundle JRE for this environment with the product_
 			flag on the
-			<guilabel>Launching</guilabel>
+			_Launching_
 			tab of your product configuration file.
-		</para>
-	</section>
-	<section id="deployproduct_headless">
-		<title>Headless build</title>
+		
+	
+[[deployproduct_headless">
+=== Headless build
 		<indexterm>
 			<primary>Headless build</primary>
 		</indexterm>
@@ -43,17 +43,17 @@
 			<primary>Deployment</primary>
 			<secondary>Headless build</secondary>
 		</indexterm>
-		<para>
+		
 			A
-			<wordasword>headless build</wordasword>
+			_headless build_
 			is an automatic build without user interaction and without a
 			graphical user interface. It can be triggered from the command line.
 			Typically, the build is automatically done via an additional software
 			component called the
-			<wordasword>build server</wordasword>
+			_build server_
 			which does so in a clean (and remote) environment.
-		</para>
-		<para>
+		
+		
 			Different solutions exist to do a
 			headless build.
 			Currently the most
@@ -61,19 +61,18 @@
 			approach for building Eclipse RCP applications is based on
 			Maven Tycho. Describing a headless build is beyond the scope of this
 			description but you can see the online
-			<ulink url="http://www.vogella.com/tutorials/EclipseTycho/article.html">Maven Tycho tutorial</ulink>
+			http://www.vogella.com/tutorials/EclipseTycho/article.html">Maven Tycho tutorial
 			for an introduction into headless builds for Eclipse RCP
 			applications.
-		</para>
-		<para>
+		
+		
 			An example for a build server would be the
-			<wordasword>Jenkins</wordasword>
+			_Jenkins_
 			continuous integration (system). See the online
-			<ulink url="http://www.vogella.com/tutorials/Jenkins/article.html">Jenkins tutorial</ulink>
+			http://www.vogella.com/tutorials/Jenkins/article.html">Jenkins tutorial
 			for an introduction into the setup, configuration and usage of
 			Jenkins.
-		</para>
+		
 
 
-	</section>
-</section>
+	

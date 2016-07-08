@@ -1,99 +1,78 @@
-<section id="interactiverebase_egit" role="wrapper">
-	<title>Adjusting the history with interactive rebase</title>
 
-	<section id="interactiverebase_egitsupport">
-		<title>Support for interactive rebase in Eclipse</title>
+	<title>Adjusting the history with interactive rebase
+
+[[interactiverebase_egitsupport">
+=== Support for interactive rebase in Eclipse
 		<indexterm>
 			<primary>Eclipse Git
 			</primary>
 			<secondary>Interactive rebase
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Git allows to adjust the existing commit history the interactive rebase functionality. Eclipse supports this
 			functionality
 			rebase via the
-			<guilabel>History</guilabel>
+			_History_
 			view and the
-			<guilabel>Git Interactive Rebase</guilabel>
+			_Git Interactive Rebase_
 			view.
-		</para>
+		
 
-	</section>
-	<section id="interactiverebase_historyview">
-		<title>Actions available via the History view</title>
+	
+[[interactiverebase_historyview">
+=== Actions available via the History view
 		<indexterm>
 			<primary>Eclipse Git
 			</primary>
 			<secondary>Interactive rebase via the History view
 			</secondary>
 		</indexterm>
-		<para>
+		
 			To reword a commit, right-click on it in the
-			<guilabel>History</guilabel>
+			_History_
 			view and select
-			<menuchoice>
-				<guimenu>Modify</guimenu>
-				<guisubmenu>Reword</guisubmenu>
-			</menuchoice>
+			menu:Modify[Reword]
 			to change the commit message.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/reword_commitmesage_egit10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Reword a commit message in Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::reword_commitmesage_egit10.png[Reword a commit message in Eclipse,pdfwidth=60%]
+		
+		
 			You can squash several commits by selecting them in the
-			<guilabel>History</guilabel>
+			_History_
 			view and by using the
-			<menuchoice>
-				<guimenu>Modify</guimenu>
-				<guisubmenu>Squash</guisubmenu>
-			</menuchoice>
+			menu:Modify[Squash]
 			menu entry from the context menu.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/rebase_interactive_squaschcommits10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Squash a commit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>The above options are simplified ways to do an interactive
+		
+image::rebase_interactive_squaschcommits10.png[Squash a commit,pdfwidth=60%]
+		
+		The above options are simplified ways to do an interactive
 			rebase.
-		</para>
-	</section>
-	<section id="interactiverebase_interactiverebaseview">
-		<title>Using the Git Interactive Rebase view</title>
+		
+	
+[[interactiverebase_interactiverebaseview">
+=== Using the Git Interactive Rebase view
 		<indexterm>
 			<primary>Eclipse Git
 			</primary>
 			<secondary>Interactive rebase via the Git Interactive Rebase view
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Git Interactive Rebase</guilabel>
+			_Git Interactive Rebase_
 			view allow you to change the order of commits, combine or remove commits, adjust commits and change the commit
 			message.
-		</para>
-		<para>
+		
+		
 			To start the full interactive rebase open the
-			<guilabel>History</guilabel>
+			_History_
 			view and click
-			<menuchoice>
-				<guimenu>Rebase Interactive</guimenu>
+			menu:Rebase Interactive</guimenu>
 			</menuchoice>
 			on the context menu of the commit
 			preceding the
@@ -105,47 +84,33 @@
 			origin/master
 			points
 			to.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitinteractive_rebase08.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interactive Rebase EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::egitinteractive_rebase08.png[Interactive Rebase EGit,pdfwidth=60%]
+		
+		
 			This opens the
-			<guilabel>Git Interactive Rebase</guilabel>
+			_Git Interactive Rebase_
 			view. It shows the rebase plan populated with the commits to be
 			modified
 			in topological order in the sequence they will
 			be processed. This order is the reverse order which you see via the
 			<code>git log</code>
 			command or in the
-			<guilabel>History</guilabel>
+			_History_
 			view.
 			The initial action for all commits is "Pick".
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitinteractive_rebase10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interactive Rebase EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::egitinteractive_rebase10.png[Interactive Rebase EGit,pdfwidth=60%]
+		
 
-		<para>
+		
 			The Eclipse Git tooling supports the following actions.
 
 			<table frame='all'>
-				<title>Interactive rebase actions</title>
+		=== Interactive rebase actions
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -197,9 +162,9 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 
-		<para>
+		
 			Use this view to finalize the rebase plan. For example you
 			can
 			reorder commits with the arrow buttons and select
@@ -208,22 +173,15 @@
 			want to apply to the commit. The following screenshot
 			demonstrates a
 			possible selection.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitinteractive_rebase30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interactive Rebase EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::egitinteractive_rebase30.png[Interactive Rebase EGit,pdfwidth=60%]
+		
 
-		<para>
+		
 			When the rebase plan is finalized, click the
-			<guilabel>Start</guilabel>
+			_Start_
 			button to start the interactive rebase command.
 			Eclipse Git processes
 			the
@@ -236,47 +194,33 @@
 			commit message. The dialog for
 			changing the commit message is depicted
 			in the following screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitinteractive_rebase40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interactive Rebase EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::egitinteractive_rebase40.png[Interactive Rebase EGit,pdfwidth=60%]
+		
 
-		<para>
+		
 			Here is the result of the rebase operation displayed in the
-			<guilabel>History</guilabel>
+			_History_
 			view.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitinteractive_rebase50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interactive Rebase EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::egitinteractive_rebase50.png[Interactive Rebase EGit,pdfwidth=60%]
+		
 
 		<tip>
-			<para>
+			
 				If something goes wrong during the rebase operation you can
 				select
-				<guilabel>Abort</guilabel>
+				_Abort_
 				in order to stop the rebase operation and
 				roll back to the
 				starting
 				point.
-			</para>
+			
 		</tip>
 
-	</section>
-</section>
+	
+

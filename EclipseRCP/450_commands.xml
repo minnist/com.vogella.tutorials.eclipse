@@ -1,8 +1,8 @@
-<section id="commands" role="wrapper">
-	<title>Menu and toolbar application objects</title>
 
-	<section id="commands_menu">
-		<title>Adding menu and toolbar entries</title>
+	<title>Menu and toolbar application objects
+
+[[commands_menu">
+=== Adding menu and toolbar entries
 		<indexterm>
 			<primary>Menu</primary>
 		</indexterm>
@@ -26,7 +26,7 @@
 		<indexterm>
 			<primary>Handled ToolItem</primary>
 		</indexterm>
-		<para>
+		
 			You can add menus and toolbars to your RCP application via the
 			application
 			model. These entries can be positioned
@@ -39,12 +39,12 @@
 			or toolbar entry is
 			selected.
 			Such a class is called
-			<wordasword>handler class</wordasword>
+			_handler class_
 			.
-		</para>
-	</section>
-	<section id="commands_overview">
-		<title>The usage of commands and handlers</title>
+		
+	
+[[commands_overview">
+=== The usage of commands and handlers
 		<indexterm>
 			<primary>Command</primary>
 		</indexterm>
@@ -57,38 +57,38 @@
 		<indexterm>
 			<primary>Handlers</primary>
 		</indexterm>
-		<para>
+		
 			The Eclipse application model allows you to specify
-			<wordasword>commands</wordasword>
+			_commands_
 			and
-			<wordasword>handlers</wordasword>
+			_handlers_
 			.
-		</para>
+		
 
-		<para>
+		
 			The usage of the commands and handlers model element is optional.
 			You can use the
-			<wordasword>Direct MenuItem</wordasword>
+			_Direct MenuItem_
 			or
 			a
-			<wordasword>Direct ToolItem</wordasword>
+			_Direct ToolItem_
 			model elements. These entries define a reference to a class (handler class). An instance of this handler class is
 			created by the
 			framework and its annotated methods are called by the framework if necessary. Menus and toolbars
 			support separators.
-		</para>
-		<para>
+		
+		
 			A
 			command
 			is a declarative description of an abstract
 			action which
 			can be
 			performed, for example,
-			<wordasword>save</wordasword>
+			_save_
 			,
-			<wordasword>edit</wordasword>
+			_edit_
 			or
-			<wordasword>copy</wordasword>
+			_copy_
 			.
 			A command is independent from its implementation details. The Eclipse framework does
 			not provide standard commands,
@@ -96,9 +96,9 @@
 			create all required
 			commands in your
 			application model.
-		</para>
+		
 
-		<para>
+		
 			The behavior of a
 			command
 			is defined via a
@@ -108,18 +108,18 @@
 			class (handler class) via the
 			<code>contributionURI</code>
 			property of the handler. This attribute is displayed as
-			<guilabel>Class URI</guilabel>
+			_Class URI_
 			in the model editor.
-		</para>
+		
 
-		<para>
+		
 			Commands are used by the
-			<wordasword>Handled MenuItem</wordasword>
+			_Handled MenuItem_
 			and
-			<wordasword>Handled ToolItem</wordasword>
+			_Handled ToolItem_
 			model elements.
-		</para>
-		<para>
+		
+		
 			Prefer the usage of commands over the usage of direct (menu or
 			tool) items.
 			Using
@@ -133,11 +133,11 @@
 			you can
 			define key bindings for the
 			handler's associated commands.
-		</para>
-	</section>
+		
+	
 
-	<section id="commands_behaviorannotations">
-		<title>Behavior annotations and dependency injection for handler classes</title>
+[[commands_behaviorannotations">
+=== Behavior annotations and dependency injection for handler classes
 		<indexterm>
 			<primary>Behavior annotations</primary>
 			<secondary>Handler</secondary>
@@ -148,7 +148,7 @@
 		<indexterm>
 			<primary>@CanExecute</primary>
 		</indexterm>
-		<para>
+		
 			In a handler class exactly one
 			method must be annotated
 			with the
@@ -162,11 +162,11 @@
 			The purpose of these annotations are
 			described in
 			the following table.
-		</para>
+		
 
-		<para>
+		
 			<table frame='all'>
-				<title>Behavior annotations for handler classes</title>
+		=== Behavior annotations for handler classes
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1.0*" />
 					<colspec colname='c2' colwidth="4.0*" />
@@ -180,7 +180,7 @@
 						<row>
 							<entry>@Execute</entry>
 							<entry>
-								<para>
+								
 
 									Marks the method which is responsible for the action
 									of the
@@ -192,14 +192,14 @@
 									user interface element, e.g., the menu entry, is
 									selected.
 
-								</para>
+								
 
 							</entry>
 						</row>
 						<row>
 							<entry>@CanExecute</entry>
 							<entry>
-								<para>
+								
 									Marks a method to be
 									visited by the Eclipse framework to
 									check if
@@ -217,8 +217,8 @@
 									class returns true in the
 									<code>@CanExecute</code>
 									method.
-								</para>
-								<para>
+								
+								
 									The default for this method is true, which means, if the
 									handler
 									class can always be executed, it does not need
@@ -226,7 +226,7 @@
 									implement a
 									<code>@CanExecute</code>
 									method.
-								</para>
+								
 							</entry>
 						</row>
 
@@ -234,18 +234,18 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>The following example demonstrates the implementation of a
+		The following example demonstrates the implementation of a
 			handler class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/command/Example.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			A handler instance does not have its own Eclipse context (
 			<code>IEclipseContext</code>
 			).
@@ -259,8 +259,8 @@
 			context of
 			the
 			active part.
-		</para>
-		<para>
+		
+		
 			All required parameters should be injected into the
 			method
 			annotated
@@ -270,20 +270,20 @@
 			runtime
 			information
 			during execution.
-		</para>
+		
 		<warning>
-			<para>To ensure that you get the expected values from the active
+			To ensure that you get the expected values from the active
 				context
 				ALWAYS get the required values injected as
 				parameters into your methods annotated with @Execute or @CanExecute.
-			</para>
+			
 		</warning>
 
-	</section>
+	
 
-	<section id="commands_valid">
-		<title>Determining the relevant handler for a command</title>
-		<para>If a
+[[commands_valid">
+=== Determining the relevant handler for a command
+		If a
 			command is
 			selected, the runtime determines the
 			relevant
@@ -297,16 +297,16 @@
 			a window and a part.
 
 
-		</para>
-		<para>Each command can have only one valid handler for a given scope.
+		
+		Each command can have only one valid handler for a given scope.
 			The Eclipse framework
 			selects the
 			handler most
 			specific to the
 			model
 			element.
-		</para>
-		<para> For example, if you have two handlers for the "Copy"
+		
+		 For example, if you have two handlers for the "Copy"
 			command,
 			one
 			for the window and another one for the part then
@@ -318,14 +318,14 @@
 			selected by
 			the
 			user.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="commands_evalationofcanexecute">
-		<title>Evaluation of @CanExecute</title>
-		<para>
+[[commands_evalationofcanexecute">
+=== Evaluation of @CanExecute
+		
 			A method annotated with
 			<code>@CanExecute</code>
 			is called by the framework, if a change in the Eclipse context happens. For example, if you select a new part.
@@ -337,33 +337,33 @@
 			disables any menu and
 			tool
 			items that point to that command.
-		</para>
+		
 
-		<para>
+		
 			You can request the re-evaluation of the
 			<code>@CanExecute</code>
 			methods by sending out an event via the event broker.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/canexecutetrigger/triggerevent.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
 
 
-	<section id="commands_accessibility">
-		<title>Mnemonics</title>
+[[commands_accessibility">
+=== Mnemonics
 		<indexterm>
 			<primary>Mnemonics</primary>
 		</indexterm>
-		<para>
+		
 			The application model allows you to define
-			<wordasword>mnemonics</wordasword>
+			_mnemonics_
 			.
 			A
 			mnemonic
@@ -376,8 +376,8 @@
 				<keycap>ALT</keycap>
 			</keycombo>
 			key and allows the user to quickly access menu entries by keyboard.
-		</para>
-		<para>
+		
+		
 			You specify
 			mnemonics by prefixing the letter
 			intended to be
@@ -398,12 +398,12 @@
 				<keycap>Alt</keycap>
 			</keycombo>
 			key is pressed.
-		</para>
-	</section>
+		
+	
 
 
-	<section id="commands_ids">
-		<title>Naming schema for command and handler IDs</title>
+[[commands_ids">
+=== Naming schema for command and handler IDs
 		<indexterm>
 			<primary>Naming conventions</primary>
 			<secondary>Command IDs</secondary>
@@ -412,15 +412,15 @@
 			<primary>Naming conventions</primary>
 			<secondary>Handler IDs</secondary>
 		</indexterm>
-		<para>
+		
 			A good convention is to start IDs with the
-			<wordasword>top level package name</wordasword>
+			_top level package name_
 			of your project
 			and to use only lower case letters.
-		</para>
+		
 
 
-		<para>
+		
 			The IDs of commands and handlers should reflect their
 			relationship.
 			For
@@ -437,8 +437,8 @@
 			e.g.
 			<code>com.example.contacts.handler.show.details</code>
 			.
-		</para>
-		<para>
+		
+		
 			In case you implement commonly used functions, e.g., save, copy,
 			you
 			should use the existing platform IDs, as some
@@ -451,10 +451,10 @@
 			is available in
 			<code>org.eclipse.ui.IWorkbenchCommandConstants</code>
 			.
-		</para>
+		
 
 		<table frame='all'>
-			<title>Default IDs for commonly used commands</title>
+	=== Default IDs for commonly used commands
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
@@ -525,6 +525,5 @@
 			</tgroup>
 		</table>
 
-	</section>
+	
 
-</section>

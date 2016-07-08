@@ -1,6 +1,6 @@
-<section id="intro">
-	<title>Persisting EMF models via XMI</title>
-	<para>
+
+	<title>Persisting EMF models via XMI
+	
 		The Eclipse Modelling Framework (EMF) allows to store the model
 		content via the EMF
 		persistence
@@ -18,12 +18,12 @@
 		information via Extensible
 		Markup
 		Language (XML).
-	</para>
-	<para> The following demonstrates how you create a EMF model instance,
+	
+	 The following demonstrates how you create a EMF model instance,
 		save it and load it again.
-	</para>
+	
 
-	<para>
+	
 		If you persistent an EMF object all dependent object will
 		automatically be persistent.
 		Objects which do not have a "contains
@@ -43,6 +43,6 @@
 		thrown when calling the
 		<code>resource.save()</code>
 		method.
-	</para>
+	
 
-</section>
+

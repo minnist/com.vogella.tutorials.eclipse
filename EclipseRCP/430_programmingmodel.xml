@@ -1,7 +1,7 @@
-<section id="programmingmodel" role="wrapper">
-	<title>Using annotations to define behavior</title>
-	<section id="programmingmodel_api">
-		<title>API definition</title>
+
+	<title>Using annotations to define behavior
+[[programmingmodel_api">
+=== API definition
 		<indexterm>
 			<primary>Application Programming Interface</primary>
 		</indexterm>
@@ -9,7 +9,7 @@
 			<primary>API</primary>
 		</indexterm>
 
-		<para>
+		
 			If you use a framework in your application, you need to have a
 			convention for how your application interacts with
 			the
@@ -24,8 +24,8 @@
 			method of this
 			object needs to
 			be called.
-		</para>
-		<para>For this purpose every framework defines an Application
+		
+		For this purpose every framework defines an Application
 			Programming
 			Interface
 			(API). This API defines how you can
@@ -41,20 +41,20 @@
 			inheritance
 			or
 			annotations for this purpose.
-		</para>
+		
 
-	</section>
-	<section id="programmingmodel_inheritance">
-		<title>API definition via inheritance</title>
-		<para>The "traditional" way of defining an API
+	
+[[programmingmodel_inheritance">
+=== API definition via inheritance
+		The "traditional" way of defining an API
 			is via inheritance. This
 			approach requires that your classes extend
 			or
 			implement framework
 			classes and interfaces. The Eclipse 3.x platform API used this
 			approach.
-		</para>
-		<para>
+		
+		
 			The framework defines, for example, an abstract class which defines
 			methods to be
 			implemented.
@@ -65,8 +65,8 @@
 			<code>execute()</code>
 			and the framework knows that this method must be called once the
 			button is clicked.
-		</para>
-		<para>API definition via inheritance is a simple way to define an API,
+		
+		API definition via inheritance is a simple way to define an API,
 			but
 			it also couples the classes tightly to the
 			framework. For example,
@@ -75,11 +75,11 @@
 			framework difficult as such an update may
 			affect clients. This is why the Eclipse 4.x does not use this approach
 			anymore.
-		</para>
-	</section>
+		
+	
 
-	<section id="programmingmodel_annotation">
-		<title>API definition via annotations</title>
+[[programmingmodel_annotation">
+=== API definition via annotations
 		<indexterm>
 			<primary>Behavior annotations</primary>
 			<secondary>Parts</secondary>
@@ -103,7 +103,7 @@
 		<indexterm>
 			<primary>@PersistState</primary>
 		</indexterm>
-		<para>
+		
 			The Eclipse 4.x platform API is based on annotations, e.g.,
 			annotations are used to
 			identify which methods should
@@ -111,20 +111,20 @@
 			called at a
 			certain point in
 			time. These annotations are called
-			<wordasword>behavior annotations</wordasword>
+			_behavior annotations_
 			.
-		</para>
-		<para>
+		
+		
 			The
 			following table lists the
 			available
 			behavior annotations for
 			parts.
-		</para>
+		
 
-		<para>
+		
 			<table frame='all'>
-				<title>Eclipse life cycle annotations for parts</title>
+		=== Eclipse life cycle annotations for parts
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="2.0*" />
 					<colspec colname='c2' colwidth="5.0*" />
@@ -182,9 +182,9 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>
+		
 			The
 			<code>@PostConstruct</code>
 			,
@@ -200,17 +200,17 @@
 			are part of the
 			<code>org.eclipse.e4.ui.di</code>
 			package.
-		</para>
-		<para>
+		
+		
 			Eclipse defines additional behavior annotations for commands and
 			for the application life cycle which are covered
 			in the respective
 			chapters.
-		</para>
-	</section>
-	<section id="programmingmodel_annotationinject">
-		<title>Behavior annotations imply method dependency injection</title>
-		<para>
+		
+	
+[[programmingmodel_annotationinject">
+=== Behavior annotations imply method dependency injection
+		
 			Behavior annotations imply that the framework needs to
 			provide the
 			specified parameters to the method, i.e., the
@@ -227,14 +227,14 @@
 			annotation.
 			This
 			is typically undesired and therefore an error.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="programmingmodel_postconstruct">
-		<title>Use the @PostConstruct method to build the user interface
-		</title>
-		<para>
+[[programmingmodel_postconstruct">
+=== Use the @PostConstruct method to build the user interface
+		
+		
 			It is recommended to construct the user interface of a part in a
 			method annotated with the
 			<code>@PostConstruct</code>
@@ -248,8 +248,8 @@
 			done
 			at
 			this point.
-		</para>
-		<para>
+		
+		
 			Creating the user interface
 			in an
 			<code>@PostConstruct</code>
@@ -259,30 +259,30 @@
 			methods
 			are aware that the user interface might not have been created
 			yet.
-		</para>
-	</section>
+		
+	
 
-	<section id="postconstructmethodnotcalled">
-		<title>Why is the @PostConstruct method not called?</title>
+[[postconstructmethodnotcalled">
+=== Why is the @PostConstruct method not called?
 		<indexterm>
 			<primary>@PostConstruct method not called</primary>
 		</indexterm>
-		<para>
+		
 			Both Java 7 and the Eclipse platform expose the
 			<code>@PostConstruct</code>
 			annotation. In your Eclipse application you need to tell
 			the framework
 			that the annotation from the Eclipse platform
 			should be used.
-		</para>
+		
 		<note>
-			<para>
+			
 				Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the
 				<code>javax.annotation</code>
 				package anymore.
-			</para>
+			
 		</note>
-		<para>
+		
 			In case your
 			<code>@PostConstruct</code>
 			method is not called, ensure that you have defined a
@@ -292,9 +292,9 @@
 			<filename>MANIFEST.MF</filename>
 			file. See
 			http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
-		</para>
+		
 		<note>
-			<para>
+			
 				<code>org.eclipse.core.runtime</code>
 				exports
 				<code>javax.annotation</code>
@@ -310,9 +310,8 @@
 				dependency to the
 				<code>javax.annotation</code>
 				package and set the version to 1.0.0.
-			</para>
+			
 		</note>
-	</section>
+	
 
 
-</section>

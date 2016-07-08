@@ -1,86 +1,78 @@
-<section id="firstrap">
-	<title>Your first Eclipse RAP application</title>
-	<section id="firstrap_project">
-		<title>Create Project</title>
-		<para>
+
+	<title>Your first Eclipse RAP application
+[[firstrap_project">
+=== Create Project
+		
 			Create a new plug-in project "de.vogella.rap.first" via File ->
 			New -> Project -> Plug-in Development -> Plug-in Project. Perform the
 			following selection.
-			</para>
+			
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstrap10.gif" />
+		
+image::firstrap10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstrap20.gif" />
+		
+		
+image::firstrap20.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Select the "RAP Hello World" template and press "Finish".
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstrap30.gif" />
+		
+		 Select the "RAP Hello World" template and press "Finish".
+		
+		
+image::firstrap30.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-	<section id="firstrap_run">
-		<title>Run</title>
-		<para> Select your <filename>MANIFEST.MF</filename>, right-click on it, select Run-as->
-			Rap Application. </para>
-		<para>
+[[firstrap_run">
+=== Run
+		 Select your <filename>MANIFEST.MF</filename>, right-click on it, select Run-as->
+			Rap Application. 
+		
 			This should start your first RAP application. 
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstrap40.gif" />
+		
+image::firstrap40.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>Congratulations! You have your first Eclipse RAP application
-			running. </para>
+		
+		Congratulations! You have your first Eclipse RAP application
+			running. 
 
 
-	</section>
+	
 
 
-	<section id="firstrap_entrypoint">
-		<title>Entrypoint</title>
-		<para> Eclipse RAP requires an entrypoint similar to
+[[firstrap_entrypoint">
+=== Entrypoint
+		 Eclipse RAP requires an entrypoint similar to
 			"org.eclipse.core.runtime.applications" for Eclipse RCP applications.
 			The entrypoint for Eclipse RAP is defined via
 			"org.eclipse.rap.ui.workbench.entrypoint". 
-		</para>
+		
 
-		<para> View your Entrypoint via the entension
+		 View your Entrypoint via the entension
 			"org.eclipse.rap.ui.workbench.entrypoint" in the file <filename>MANIFEST.MF</filename>
 			.
 			Please note that the parameter
 			"default" is used in your runtime
-			configuration of RAP. </para>
+			configuration of RAP. 
 		.
 
-	</section>
+	
 	
 
-	<section id="firstrap_view">
-		<title>Extending your UI</title>
-		<para>
+[[firstrap_view">
+=== Extending your UI
+		
 			Create now a view.
 			Select therefore in MANIFEST.MF the tab extension
 			and add the extension
@@ -90,44 +82,43 @@
 			same as for Eclipse
 			RCP application which is described in 
 			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#views"> Adding views to Eclipse RCP applications</ulink>
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#views"> Adding views to Eclipse RCP applications
 			.
-		</para>
+		
 
-		<para> Create the following view class. </para>
-		<para>
+		 Create the following view class. 
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/firstrap/View.java" />
 			</programlisting>
-		</para>
-		<para> Add the view to the perspective by changing Perspective.java to
-			the following. </para>
-		<para>
+		
+		 Add the view to the perspective by changing Perspective.java to
+			the following. 
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/firstrap/Perspective.java" />
 			</programlisting>
-		</para>
-		<para> Run your application and see your new view in actions.</para>
+		
+		 Run your application and see your new view in actions.
 
-		<para>
+		
 			Eclipse RAP supports most of the API JFace and Eclipse RCP support.
 			If
 			you want
 			to learn how you can extend your Eclipse RAP application
 			you can review
 			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP Tutorial</ulink>
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP Tutorial
 			or
 			<ulink
-				url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer</ulink>
-		</para>
-		<para> Of course Eclipse RAP does only support a subset of these API
+				url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
+		
+		 Of course Eclipse RAP does only support a subset of these API
 			(but this is
 			increasing every release)
 			so the best way of exploring it
 			is to build your application and see
-			which API are available. </para>
-	</section>
-</section>
+			which API are available. 
+	

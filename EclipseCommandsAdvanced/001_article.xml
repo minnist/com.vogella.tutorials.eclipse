@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Commands Advanced - Tutorial</title>
+=== Eclipse Commands Advanced - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,18 +30,18 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>18.03.2014</pubdate>
 		<releaseinfo>
-			<para>Version 2.2</para>
+			Version 2.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Advanced Commands</title>
-			<para> This article describes use cases for Eclipse commands
+	=== Eclipse Advanced Commands
+			 This article describes use cases for Eclipse commands
 				which go
 				beyond the simple one for adding commands to menus,
 				toolbars, etc.
-			</para>
-			<para>This article is based on Eclipse Indigo (3.7).
-			</para>
+			
+			This article is based on Eclipse Indigo (3.7).
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

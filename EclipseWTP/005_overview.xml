@@ -1,8 +1,8 @@
-<section id="wtp_overview">
-	<title>Eclipse Web Tool Platform</title>
-	<para>
+
+	<title>Eclipse Web Tool Platform
+	
 		The
-		<wordasword>Eclipse WTP</wordasword>
+		_Eclipse WTP_
 		project
 		provides tools for developing standard Java
 		web
@@ -26,11 +26,11 @@
 		can be deployed, started
 		and
 		debugged.
-	</para>
-	<para>
+	
+	
 		In Eclipse
 		WTP you create
-		<wordasword>Dynamic Web Projects</wordasword>
+		_Dynamic Web Projects_
 		.
 		These projects
 		provide
@@ -39,15 +39,14 @@
 		deploy
 		Java web
 		applications.
-	</para>
-	<para>
+	
+	
 		Eclipse WTP supports all major web containers. This includes
 		Jetty and
 		Apache Tomcat as well as most Java EE application
 		server. In this tutorial we use Apache Tomcat as the web container.
-	</para>
-	<para>The tutorial describes the creation of Java servlets. The usage
+	
+	The tutorial describes the creation of Java servlets. The usage
 		of JavaServer Pages is widely seen as outdated, other frameworks are
 		used for the creation of web user interfaces.
-	</para>
-</section>
+	

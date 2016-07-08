@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Register for the Eclipse 4 application life cycle - Tutorial</title>
+=== Register for the Eclipse 4 application life cycle - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,11 +31,11 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse e4</title>
-			<para> This tutorial describes how to use an life cycle handler for
+	=== Eclipse e4
+			 This tutorial describes how to use an life cycle handler for
 				Eclipse RCP
 				application.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

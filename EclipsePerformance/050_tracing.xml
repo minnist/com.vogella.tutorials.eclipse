@@ -1,24 +1,24 @@
-<section id="tracing" role="wrapper">
-	<title>Using the build-in tracing facilities of Eclipse</title>
-	<section id="tracing1">
-		<title>What is tracing?</title>
+
+	<title>Using the build-in tracing facilities of Eclipse
+[[tracing1">
+=== What is tracing?
 		<indexterm>
 			<primary>Tracing in Eclipse</primary>
 		</indexterm>
-		<para>
+		
 			Eclipse provides a tracing facility which can be activated on demand. If turned on,
 			the Eclipse IDE
 			writes
 			additional information to a specified log file or the console.
-		</para>
-	</section>
-	<section id="tracing2">
-		<title>Turning on tracing via an options file</title>
-		<para>To turn tracing on, you need to create a trace-options file that
+		
+	
+[[tracing2">
+=== Turning on tracing via an options file
+		To turn tracing on, you need to create a trace-options file that
 			contains key-value pairs for the tracing options
 			which should be turned on.
-		</para>
-		<para>
+		
+		
 			By
 			default, this file is called .options and the Eclipse runtime
 			looks
@@ -35,19 +35,19 @@
 			you need an options
 			file that
 			looks like this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			You can use the corresponding preference dialog to find the values
 			you want to enable. See
 			<xref linkend="tracing_runonatruntime" />
 			.
-		</para>
-		<para>
+		
+		
 			Finally, you need to enable the tracing mechanism by starting
 			Eclipse with the
 			<parameter>-debug</parameter>
@@ -57,68 +57,64 @@
 			file-system path after
 			the -debug
 			argument.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/run.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			For example the
-			<wordasword>Starting application</wordasword>
+			_Starting application_
 			describes when OSGi is done with its initialization and the
-			<wordasword>Application Started</wordasword>
+			_Application Started_
 			tells you when the application has been started.
 			Afterwards you can extract the information which interest you the
 			most. Here are a few commands which extract
 			the
 			starting time
 			of each bundle and sort the bundles by this time.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/extract.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>The following is another example for an .option file in which you trace the resources.</para>
-		<para>
+		The following is another example for an .option file in which you trace the resources.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options_resources.txt" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="tracing_runonatruntime">
-		<title>Turning on tracing at runtime</title>
+[[tracing_runonatruntime">
+=== Turning on tracing at runtime
 
-		<para>It is also possible to turn on some tracing options at runtime
+		It is also possible to turn on some tracing options at runtime
 			via the
 			Eclipse IDE preferences as depicted in the
 			following
 			screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/enabletracing10.png" />
+		
+image::enabletracing10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Enable Tracing at runtime.</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Enable Tracing at runtime.,pdfwidth=60%]
+		
 
-	</section>
-	<section id="tracing_implementtracing">
-		<title>Implement tracing for your plug-in</title>
-		<para>
+	
+[[tracing_implementtracing">
+=== Implement tracing for your plug-in
+		
 			Can you also implement tracing for your custom plug-in, see
-			<ulink url="https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-eclipse-tracing-api">Using Eclipse Tracing API</ulink>
+			https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-eclipse-tracing-api">Using Eclipse Tracing API
 			. To add your tracing options to the preference preference page, to allow users to turn them on at run time, use
 			extension point
 			the
@@ -126,6 +122,5 @@
 			. See
 			<code>TracingPreferencePage</code>
 			for the implementation of this.
-		</para>
-	</section>
-</section>
+		
+	

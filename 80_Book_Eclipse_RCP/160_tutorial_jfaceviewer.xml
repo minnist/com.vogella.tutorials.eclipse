@@ -1,74 +1,70 @@
 <chapter>
-	<title>Exercise: Using TableViewer</title>
+	<title>Exercise: Using TableViewer
 	<section>
-		<title>Create a JFace TableViewer for the Todo items</title>
-		<para>
+=== Create a JFace TableViewer for the Todo items
+		
 			In this exercise you create a JFace table in the
 			<code>TodoOverviewPart</code>
 			class which displays the
 			<code>Todo</code>
 			items.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>Add dependencies</title>
-		<para>
+=== Add dependencies
+		
 			Ensure that the
 			<code>org.eclipse.jface</code>
 			plug-in is available as a dependency to the
 			<code>com.example.e4.rcp.todo</code>
 			plug-in. You might have added this dependency already in another exercise.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>Create implementation</title>
-		<para>
+=== Create implementation
+		
 			Create a JFace table implementation with the
 			<code>summary</code>
 			and
 			<code>description</code>
 			fields as table
 			columns.
-		</para>
-		<para> Your part should still have the "Load Data" button.
+		
+		 Your part should still have the "Load Data" button.
 			Load the
 			data into the
 			viewer
 			once this button
 			is pressed.
-		</para>
+		
 
-		<para>You can use the following example code as base for this
+		You can use the following example code as base for this
 			exercise.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/viewer/TodoOverviewPart.java" />
 			</programlisting>
-		</para>
+		
 
 
 
-		<para>The result should look similar to the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jfacetable_tutorial10.png"
+		The result should look similar to the following screenshot.
+		
+		
+image::jfacetable_tutorial10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Result Part after the implementation of the JFace Table</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Result Part after the implementation of the JFace Table,pdfwidth=60%]
+		
 		<tip>
-			<para>The "Load Data" button is later used, once you implement the
-				possibility to delete data. </para>
+			The "Load Data" button is later used, once you implement the
+				possibility to delete data. 
 		</tip>
-	</section>
+	
 
 
 </chapter>

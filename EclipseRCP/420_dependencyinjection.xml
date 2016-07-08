@@ -1,9 +1,9 @@
-<section id="dependencyinjectione4" role="wrapper">
-	<title>Dependency injection and annotations</title>
 
-	<section id="dependencyinjection_eclipse">
-		<title>Define class dependencies in Eclipse</title>
-		<para>
+	<title>Dependency injection and annotations
+
+[[dependencyinjection_eclipse">
+=== Define class dependencies in Eclipse
+		
 			The programming model in Eclipse supports constructor, method
 			and
 			field injection according to the Java Specification
@@ -15,10 +15,10 @@
 			<xref linkend="dependencyinjection_eclipseannotations" />
 			, other more special annotations are covered in there corresponding
 			chapters.
-		</para>
+		
 
 
-		<para>
+		
 			The Eclipse dependency framework ensures that the key and the
 			type of
 			the injected object is
@@ -32,15 +32,15 @@
 			object if it finds one
 			with an
 			assignable type.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/namedfield.txt" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="dependencyinjection_eclipseannotations">
-		<title>Annotations to define class dependencies in Eclipse</title>
+		
+	
+[[dependencyinjection_eclipseannotations">
+=== Annotations to define class dependencies in Eclipse
 		<indexterm>
 			<primary>@Inject</primary>
 		</indexterm>
@@ -55,12 +55,12 @@
 			<primary>@GroupUpdates</primary>
 		</indexterm>
 
-		<para>
+		
 			The following table gives an overview of dependency injection related
 			annotations based on JSR330 and the Eclipse
 			specific ones.
 			<table frame='all'>
-				<title>Basic annotations for dependency injection</title>
+		=== Basic annotations for dependency injection
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -102,7 +102,7 @@
 						<row>
 							<entry>@Optional</entry>
 							<entry>
-								<para>
+								
 									Eclipse specific annotation, marks an injected value
 									to
 									be
@@ -113,35 +113,35 @@
 									(and type), the framework
 									does not
 									throw an exception.
-								</para>
-								<para>
+								
+								
 									The specific behavior depends on where the
 									<code>@Optional</code>
 									is placed. The following description is based on the key. If the key cannot be resolved the following happens:
 									<itemizedlist>
 										<listitem>
-											<para>
+											
 												for parameters: a
 												<code>null</code>
 												value will be injected;
-											</para>
+											
 										</listitem>
 										<listitem>
-											<para>for methods: the method calls will be skipped</para>
+											for methods: the method calls will be skipped
 										</listitem>
 										<listitem>
-											<para>for fields: the values will not be injected. </para>
+											for fields: the values will not be injected. 
 										</listitem>
 									</itemizedlist>
-								</para>
-								<para>
+								
+								
 									Note that null is an acceptable value to be set in the context, and it is different from a key being
 									removed
 									from the context. For example, if the following is called
 									<code>context.set(SOMEKEY, null)</code>
 									,
 									anybody listening for SOMEKEY will be injected with null.
-								</para>
+								
 							</entry>
 						</row>
 
@@ -171,11 +171,11 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
 
 		<note>
-			<para>
+			
 				The Eclipse platform supports additional annotations for
 				special
 				purposes, e.g., for receiving events (sent by the
@@ -188,15 +188,15 @@
 				Eclipse platform see
 				<xref linkend="eclipse4_annotations" />
 				.
-			</para>
+			
 		</note>
-	</section>
+	
 
 
-	<section id="dependencyinjection_container">
-		<title>On which objects does Eclipse perform dependency injection?
-		</title>
-		<para>
+[[dependencyinjection_container">
+=== On which objects does Eclipse perform dependency injection?
+		
+		
 			The Eclipse runtime creates objects for the Java classes
 			referred by
 			the application model.
@@ -213,18 +213,18 @@
 			annotations the Eclipse framework
 			performs the
 			injection.
-		</para>
-		<para>
+		
+		
 			Eclipse does not automatically perform dependency injection on objects
 			which are created in your code with the
 			<code>new</code>
 			operator.
-		</para>
-	</section>
+		
+	
 
-	<section id="dependencyinjection_reinject">
-		<title>Dynamic dependency injection based on key / value changes</title>
-		<para>The Eclipse framework tracks which object expressed a dependency
+[[dependencyinjection_reinject">
+=== Dynamic dependency injection based on key / value changes
+		The Eclipse framework tracks which object expressed a dependency
 			to which key and type. If the value to which a
 			key points changes,
 			the Eclipse
@@ -239,9 +239,9 @@
 			freed from
 			having to install (and remove)
 			listeners.
-		</para>
+		
 
-		<para>
+		
 			For
 			example, you can
 			define via
@@ -256,8 +256,8 @@
 			will inject the
 			new
 			value.
-		</para>
-		<para>
+		
+		
 			The re-injection only works on methods and fields which are
 			marked
 			with
@@ -276,9 +276,9 @@
 			in
 			<xref linkend="context_creationprocess" />
 			.
-		</para>
+		
 		<note>
-			<para>
+			
 				This does not mean that Eclipse tracks the fields of the value
 				to
 				which the key points. For example if the
@@ -292,7 +292,6 @@
 				<code>Todo</code>
 				object changes, it does not trigger a
 				re-injection.
-			</para>
+			
 		</note>
-	</section>
-</section>
+	

@@ -1,16 +1,15 @@
-<section id="eclipseresources">
-	<title>Eclipse Resources</title>
-	<para>
+
+	<title>Eclipse Resources
+	
 		You can register
 		<code>IResourceChangeListener</code>
 		on resources in Eclipse. For example, if you have a project, you can add
 		or remove a resource listener to or from it.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/resources/listener.java" />
 		</programlisting>
-	</para>
+	
 
-</section>

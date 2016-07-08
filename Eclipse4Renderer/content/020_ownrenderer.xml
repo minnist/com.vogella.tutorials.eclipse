@@ -1,78 +1,78 @@
-<section id="renderer_own" role="wrapper">
-	<title>Exercise: Defining a renderer</title>
-	<section id="renderer_customrenderer_target">
-		<title>Target</title>
-		<para>The following exercise serves as a simple example for creating a
+
+	<title>Exercise: Defining a renderer
+[[renderer_customrenderer_target">
+=== Target
+		The following exercise serves as a simple example for creating a
 			custom
 			renderer. It implements a custom stack
 			renderer which uses "*
 			Demo *"
 			instead of "*" to mark an editor dirty.
-		</para>
-	</section>
-	<section id="renderer_customrenderer_plugin">
-		<title>Creating a plug-in</title>
+		
+	
+[[renderer_customrenderer_plugin">
+=== Creating a plug-in
 
-		<para>
+		
 			Create a new simple plug-in called
-			<wordasword>com.example.e4.renderer.swt</wordasword>
+			_com.example.e4.renderer.swt_
 			. This plug-in is called the
 			<code>renderer</code>
 			plug-in in the following description.
-		</para>
-	</section>
+		
+	
 
-	<section id="renderer_customrenderer_dependencies">
-		<title>Enter the dependencies</title>
-		<para>
+[[renderer_customrenderer_dependencies">
+=== Enter the dependencies
+		
 			Add the following plug-ins as dependencies to your
 			<code>renderer</code>
 			plug-in.
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.core.contexts</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.workbench.renderers.swt</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.workbench.swt</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.workbench</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.core.services</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.e4.ui.model.workbench</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.swt</code>
-					</para>
+					
 				</listitem>
 
 			</itemizedlist>
 
-		</para>
-	</section>
-	<section id="renderer_customrenderer_implementation">
-		<title>Create the renderer implementation</title>
-		<para>
+		
+	
+[[renderer_customrenderer_implementation">
+=== Create the renderer implementation
+		
 			In your
 			<code>renderer</code>
 			plug-in create the
@@ -80,22 +80,22 @@
 			package and the following classes. The new stack renderer extends
 			the
 			stack renderer from the Eclipse platform.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/MyStackRenderer.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/MyRendererFactory.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="renderer_own3">
-		<title>Register the renderer</title>
+		
+	
+[[renderer_own3">
+=== Register the renderer
 
-		<para>
+		
 			Register your renderer in the
 			<filename>plugin.xml</filename>
 			file of your
@@ -111,38 +111,30 @@
 			or the
 			<property>lifeCycleURI</property>
 			property hence you should know how to do this.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/plugin.adoc[]
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="renderer_dirtyvalidation">
-		<title>Validating</title>
-		<para>
+	
+[[renderer_dirtyvalidation">
+=== Validating
+		
 			Start your application and change a
 			<code>Todo</code>
 			in your
 			<code>TodoDetailPart</code>
 			. The dirty indicator should now be different as indicated in the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/stackrenderer10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Stack renderer with alternative dirty implementation</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::stackrenderer10.png[Stack renderer with alternative dirty implementation,pdfwidth=60%]
+		
 
-	</section>
+	
 
 
 
-</section>

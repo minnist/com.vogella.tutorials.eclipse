@@ -1,13 +1,13 @@
 ==SWT Widget online resources
-	<ulink url="http://www.vogella.com/tutorials/Eclipse4CSS/article.html#css_newwidgets">
+	http://www.vogella.com/tutorials/Eclipse4CSS/article.html#css_newwidgets">
 		Style your custom widgets with CSS
-	</ulink>
-	<ulink url="https://eclipse.org/articles/Article-Writing%20Your%20Own%20Widget/Writing%20Your%20Own%20Widget.htm">
+	
+	https://eclipse.org/articles/Article-Writing%20Your%20Own%20Widget/Writing%20Your%20Own%20Widget.htm">
 		Creating Your Own Widgets using SWT
-	</ulink>
-	<ulink url="https://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html">
+	
+	https://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html">
 		SWT Graphics Context
-	</ulink>
+	
 	<ulink
 			url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html#customObservables"
-			>Databinding for custom widgets</ulink>
+			>Databinding for custom widgets

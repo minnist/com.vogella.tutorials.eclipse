@@ -1,4 +1,4 @@
-<section id="swtbot_usage">
+
 	<title>SWTBot API
 	
 		`SWTBot`
@@ -39,7 +39,7 @@
 
 	
 		For details on the API usage please see
-		<ulink url="http://wiki.eclipse.org/SWTBot/UsersGuide">SWTBot wiki</ulink>
+		http://wiki.eclipse.org/SWTBot/UsersGuide">SWTBot wiki
 		.
 	
 	<note>
@@ -58,8 +58,7 @@
 			Testing an application with a login screen is currently not supported
 			by SWTBot. See
 			<ulink
-				url="http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ</ulink>
+				url="http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ
 			.
 		
 	</warning>
-</section>

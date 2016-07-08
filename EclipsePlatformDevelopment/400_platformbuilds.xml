@@ -1,14 +1,14 @@
-<section id="buildeclipse" role="wrapper">
-	<title>Creating a custom Eclipse IDE build</title>
+
+	<title>Creating a custom Eclipse IDE build
 
 	
-	<section id="buildeclipse_introduction">
-		<title>Building the Eclipse IDE</title>
+[[buildeclipse_introduction">
+=== Building the Eclipse IDE
 		<indexterm>
 			<primary>Eclipse IDE</primary>
 			<secondary>custom build</secondary>
 		</indexterm>
-		<para>
+		
 			Eclipse uses a Maven based build system for automated build
 			using the Maven Tycho plug-in. Using this build
 			system you can create your custom build of the
@@ -18,16 +18,16 @@
 			based
 			on
 			the latest developments of the Eclipse development team.
-		</para>
-		<para>
+		
+		
 			This effort is
 			part of the
 			Common Build
 			Infrastructure (CBI) project which provide tools to simplify and
 			standardize the
 			Eclipse build process.
-		</para>
-		<para>
+		
+		
 			The
 			results of
 			this
@@ -37,12 +37,12 @@
 			platforms,
 			which include
 			everything to run an Eclipse IDE.
-		</para>
+		
 
-	</section>
-	<section id="buildeclipse_requirements">
-		<title>Requirements</title>
-		<para>
+	
+[[buildeclipse_requirements">
+=== Requirements
+		
 			As the build continuously changes, the
 			results
 			and
@@ -53,8 +53,8 @@
 			this. See
 			<xref linkend="buildeclipse_additions_questions" />
 			for finding additional information.
-		</para>
-		<para>
+		
+		
 			Depending on your network connection and your machine power the build of the Eclipse IDE takes around 2 hours on
 			a Core i5 machine with
 			SSD, so of course time is required for this.
@@ -68,55 +68,55 @@
 			and Linux
 			based
 			distributions. This tutorial is tested with Linux.
-		</para>
-		<para>
+		
+		
 			On the software-side the following software is required:
 			<itemizedlist>
 				<listitem>Git</listitem>
 				<listitem>Maven Version 3.3.1</listitem>
 				<listitem>Oracle 1.8 JDK or higher</listitem>
 			</itemizedlist>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="buildeclipse_load_source">
-		<title>Cloning the SDK repository</title>
-		<para>
+[[buildeclipse_load_source">
+=== Cloning the SDK repository
+		
 			You download the newest version of the source code by cloning
 			the
 			following
 			repository
 			and it's submodules via Git.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clone.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="buildeclipse_run">
-		<title>Building the Eclipse IDE</title>
+[[buildeclipse_run">
+=== Building the Eclipse IDE
 
-		<para>You start the build with the following command.  </para>
-		<para>
+		You start the build with the following command.  
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/build.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			If you receive
 			<code>java.lang.OutOfMemoryError</code>
 			error during the Maven build, you should increase the memory which is available for the build.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_memory.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			If the build is successful, the Eclipse SDK is packaged as archive
 			files
 			for all supported platforms. These packages
@@ -126,21 +126,21 @@
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/path_product.txt" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="buildeclipse_cleanupstepss">
-		<title>Cleanup before the next build</title>
-		<para>
+[[buildeclipse_cleanupstepss">
+=== Cleanup before the next build
+		
 			To ensure that the repository is clean and up to date we execute
 			the following Git commands.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clean.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The build requires that the version numbers of each single
 			Maven artifacts and it's Eclipse plug-ins are in
 			sync. But sometimes
@@ -152,11 +152,11 @@
 			mismatch. Run the following command to correct
 			existing
 			inconsistencies.
-		</para>
-		<para>
+		
+		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_update_pom.txt" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	
+

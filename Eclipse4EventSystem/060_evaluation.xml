@@ -1,7 +1,7 @@
-<section id="eventsystem_summary">
-	<title>Usage of the event system</title>
 
-	<para>
+	<title>Usage of the event system
+
+	
 		The
 		<code>IEventBroker</code>
 		is a global event bus and is unaware of the
@@ -28,12 +28,11 @@
 		this pattern supports the creation of very loosely
 		coupled application
 		components.
-	</para>
-	<para>The disadvantage is that it is a global bus, i.e. there is no
+	
+	The disadvantage is that it is a global bus, i.e. there is no
 		scoping of the events. Publishers have to ensure they provide enough
 		information in the topic and the send object to allow subscribers to
 		discriminate and decide that the
 		particular event is applicable to a
 		subscriber.
-	</para>
-</section>
+	

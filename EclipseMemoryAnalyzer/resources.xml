@@ -1,13 +1,12 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
 
-	<section id="resources_mat">
-		<title>MAT Resources</title>
-		<para>
+[[resources_mat">
+=== MAT Resources
+		
 			<ulink
-				url="http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool">How to acquire a Heap Dump from MAT</ulink>
-		</para>
-	</section>
+				url="http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool">How to acquire a Heap Dump from MAT
+		
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>

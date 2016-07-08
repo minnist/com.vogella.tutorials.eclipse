@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Jobs and Background Processing - Tutorial</title>
+=== Eclipse Jobs and Background Processing - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -34,12 +34,12 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>22.03.2016</pubdate>
 		<releaseinfo>
-			<para>Version 3.5</para>
+			Version 3.5
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Background processing in Eclipse Plug-ins</title>
-			<para> This tutorial describes how to do asynchronous work within
+	=== Background processing in Eclipse Plug-ins
+			 This tutorial describes how to do asynchronous work within
 				Eclipse plug-ins and RCP applications.
 				It explains the usage of
 				the
@@ -48,11 +48,11 @@ Version 0.3, 06.07.2016
 				performing
 				asynchronous
 				tasks.
-			</para>
-			<para>This
+			
+			This
 				tutorial can be used for Eclipse 3.x and Eclipse 4.x based
 				plug-ins.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

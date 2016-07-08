@@ -1,21 +1,21 @@
-<section id="emfmodel">
-	<title>Generating the domain classes</title>
-	<section id="emfmodel_code">
-		<title>Generating Java code</title>
-		<para>
+
+	<title>Generating the domain classes
+[[emfmodel_code">
+=== Generating Java code
+		
 			Based on the
 			<filename>.genmodel</filename>
 			files, you can generate
 			Java
 			code.
-		</para>
-		<para>
+		
+		
 			Right-click
 			on the root node of the
 			<filename>.genmodel</filename>
 			file
 			and select
-			<guilabel>Generate Model Code</guilabel>
+			_Generate Model Code_
 			. This
 			creates the
 			Java
@@ -24,45 +24,43 @@
 			the
 			current
 			project.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/EMFCodeGen10.gif" />
+		
+		
+image::EMFCodeGen10.gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-	<section id="emfmodel_codereview">
-		<title>Review the generated code</title>
-		<para>
+[[emfmodel_codereview">
+=== Review the generated code
+		
 			The generated code will consist of the following:
 			<itemizedlist>
 				<listitem>
-					<para><filename>model</filename> -- Interfaces and the Factory to create
+					<filename>model</filename> -- Interfaces and the Factory to create
 						the Java classes
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para><filename>model.impl</filename> -- Concrete implementation of the
+					<filename>model.impl</filename> -- Concrete implementation of the
 						interfaces
 						defined in model
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para><filename>model.util</filename> -- The AdapterFactory</para>
+					<filename>model.util</filename> -- The AdapterFactory
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			The central factory has methods for creating all defined
 			objects
 			via
 			<code>createObjectName()</code>
 			methods.
-		</para>
-		<para>
+		
+		
 			For each attribute the generated interface and its
 			implementation
 			contain
@@ -77,9 +75,9 @@
 			the model
 			and
 			react to changes in the model.
-		</para>
+		
 
-		<para>
+		
 			Each generated interface extends the
 			<code>EObject</code>
 			interface.
@@ -102,9 +100,9 @@
 			notification and
 			persistence
 			frameworks.
-		</para>
+		
 
-		<para>
+		
 			Every generated method is tagged with
 			<code>@generated</code>
 			. If you
@@ -116,12 +114,12 @@
 			you
 			need to
 			remove this tag.
-		</para>
+		
 
-	</section>
-	<section id="emfmodel_update">
-		<title>Updating the model</title>
-		<para>
+	
+[[emfmodel_update">
+=== Updating the model
+		
 			If you change your
 			<filename>.ecore</filename>
 			model then you can
@@ -129,11 +127,9 @@
 			<filename>.genmodel</filename>
 			simply by
 			reloading.
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/EMFModel70.gif" />
+image::EMFModel70.gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	
+

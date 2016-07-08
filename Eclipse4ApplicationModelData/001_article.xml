@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse application model - Tags, persisted state and variables
-			- Tutorial</title>
+=== Eclipse application model - Tags, persisted state and variables
+			- Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -33,10 +33,10 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Additional model data</title>
-			<para> The application model in Eclipse can hold additional model
+	=== Additional model data
+			 The application model in Eclipse can hold additional model
 				data. These are described in this tutorial.
-			</para>
+			
 
 		</abstract>
 	</articleinfo>

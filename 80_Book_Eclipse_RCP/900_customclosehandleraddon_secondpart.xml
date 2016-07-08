@@ -1,54 +1,46 @@
 <chapter id="exercise_modeladdonclose_ide">
-	<title>Optional Exercise: Model add-on to change the close behavior of the IDE</title>
-	<section id="exercise_modeladdonclose_idetarget">
-		<title>Target</title>
-		<para>
+	<title>Optional Exercise: Model add-on to change the close behavior of the IDE
+[[exercise_modeladdonclose_idetarget">
+=== Target
+		
 			In this exercise you register an existing model add-on created in
 			<xref linkend="exercise_modeladdonclose" />
 			with the Eclipse IDE.
 			This is done similar to the approach described in
 			<xref linkend="firstplugin_migratione4" />
 			, the only difference is that you contribute a model add-on.
-		</para>
-	</section>
+		
+	
 
-	<section id="exercise_modeladdonclose_idefragment">
-		<title>Register model add-on via model fragment with the Eclipse IDE</title>
-		<para>Create a model fragment which contributes the add-on to the application of the Eclipse IDE.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modeladdonide10.png" scale="35" />
+[[exercise_modeladdonclose_idefragment">
+=== Register model add-on via model fragment with the Eclipse IDE
+		Create a model fragment which contributes the add-on to the application of the Eclipse IDE.
+		
+		
+image::modeladdonide10.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a model add-on to the Eclipse IDE</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modeladdonide20.png" scale="35" />
+		
+image::modeladdonide20.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a model add-on to the Eclipse IDE</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
+		
 
 
 
-	</section>
+	
 
 
-	<section id="exercise_modeladdonverifyintheide">
-		<title>Verifying the model add-on in the Eclipse IDE </title>
-		<para>Start a runtime Eclipse IDE with your plug-in included in the launch configuration. Ensure that your new close
+[[exercise_modeladdonverifyintheide">
+=== Verifying the model add-on in the Eclipse IDE 
+		Start a runtime Eclipse IDE with your plug-in included in the launch configuration. Ensure that your new close
 			dialog is used if you try to close
 			the IDE with a dirty editor.
-		</para>
-	</section>
+		
+	
 
 </chapter>

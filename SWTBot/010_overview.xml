@@ -1,4 +1,4 @@
-<section id="swtbot">
+
 	<title>User interface testing with SWTBot
 	<indexterm>
 		<primary>Testing</primary>
@@ -8,11 +8,9 @@
 		<primary>Testing</primary>
 		<secondary>User interface testing</secondary>
 	</indexterm>
-	<indexterm>
-		<primary>SWTBot</primary>
-	</indexterm>
+
 	
-		<wordasword>SWTBot</wordasword>
+		_SWTBot_
 		is an Eclipse
 		project which supports testing the user
 		interface of an
@@ -48,4 +46,3 @@
 		start and test
 		Eclipse bundles.
 	
-</section>

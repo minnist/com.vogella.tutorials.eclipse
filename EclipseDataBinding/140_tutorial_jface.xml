@@ -1,6 +1,6 @@
-<section id="tutorial_jface_viewer">
-	<title>Exercise: Data binding for a JFace Viewer</title>
-	<para>
+
+	<title>Exercise: Data binding for a JFace Viewer
+	
 		Create a
 		new
 		Eclipse RCP
@@ -13,8 +13,8 @@
 		plug-ins as
 		dependency to your
 		plug-in project.
-	</para>
-	<para>
+	
+	
 		Create the
 		<code>de.vogella.databinding.viewer.model</code>
 		package
@@ -25,40 +25,40 @@
 		<code>Address</code>
 		class from the previous example in this $book in this package.
 
-	</para>
-	<para>
+	
+	
 		Create the
 		following
 		<code>MyModel</code> class to get
 		some
 		example data.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/viewer/MyModel.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Create a new view called
-		<wordasword>ViewTable</wordasword>
+		_ViewTable_
 		add it to your RCP
 		application.
 		Change
 		ViewTable.java to the following.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/viewer/ViewTable.java" />
 		</programlisting>
-	</para>
-	<para> In this example the user interface is updated if you delete and
+	
+	 In this example the user interface is updated if you delete and
 		element
 		or add an
 		element to the collection. Run this example and test
 		it.
-	</para>
-</section>
+	
+

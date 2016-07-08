@@ -1,19 +1,19 @@
 
-<section id="preferences_assumptions">
-	<title>Assumptions</title>
-	<para>
+
+	<title>Assumptions
+	
 		The following assumes that you know how to create simple
-		<ulink url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">Eclipse RCP</ulink>
+		http://www.vogella.com/tutorials/RichClientPlatform/article.html">Eclipse RCP
 		applications and that you know how to create
-		<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html">commands</ulink>
+		http://www.vogella.com/tutorials/EclipseCommands/article.html">commands
 		and
 		add them to
 		the menu. If not please have a look at the
-		<ulink url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">Eclipse RCP</ulink>
+		http://www.vogella.com/tutorials/RichClientPlatform/article.html">Eclipse RCP
 		and
-		<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html">Eclipse Commands</ulink>
+		http://www.vogella.com/tutorials/EclipseCommands/article.html">Eclipse Commands
 		tutorial
 		.
-	</para>
-</section>
+	
+
 

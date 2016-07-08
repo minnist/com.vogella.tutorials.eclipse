@@ -1,9 +1,9 @@
-<section id="runconfiguration_problems" role="wrapper">
-	<title>Common launch problems</title>
 
-	<section id="runconfiguration_problems2">
-		<title>Checklist for common launch problems</title>
-		<para>
+	<title>Common launch problems
+
+[[runconfiguration_problems2">
+=== Checklist for common launch problems
+		
 			Errors in the run configurations of Eclipse RCP application
 			are
 			frequently the source of problems. This chapter describes common
@@ -17,7 +17,7 @@
 			solutions.
 
 			<table frame='all'>
-				<title>Run configuration problems</title>
+		=== Run configuration problems
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -34,7 +34,7 @@
 								resolve module" message during start up.
 							</entry>
 							<entry>
-								<para>
+								
 									Check that all required plug-ins are included in your
 									product
 									configuration. Make sure that your product defines
@@ -42,8 +42,8 @@
 									to
 									all required plug-ins or features. See
 									<xref linkend="runconfiguration_mainproblem" />
-								</para>
-								<para>
+								
+								
 									Bundles may also require a
 									certain version of the Java virtual
 									machine, e.g., a bundle may
@@ -51,11 +51,11 @@
 									not load in a Java 1.5 VM. Check the
 									<filename>MANIFEST.MF</filename>
 									file on the
-									<guilabel>Overview</guilabel>
+									_Overview_
 									tab in the
-									<guilabel>Execution Environments</guilabel>
+									_Execution Environments_
 									section which Java version is required.
-								</para>
+								
 							</entry>
 						</row>
 						<row>
@@ -67,12 +67,12 @@
 								message during start up.
 							</entry>
 							<entry>
-								<para>
+								
 									See "Could not
 									resolve module" message during start up
 									error. In most cases also triggered by a missing plug-in
 									dependency.
-								</para>
+								
 							</entry>
 						</row>
 
@@ -88,7 +88,7 @@
 								based
 								applications
 								in the
-								<guilabel>Console</guilabel>
+								_Console_
 								view of the Eclipse IDE.
 							</entry>
 						</row>
@@ -104,7 +104,7 @@
 						<row>
 							<entry>
 								A change in the product
-								<guilabel>Dependencies</guilabel>
+								_Dependencies_
 								tab is not
 								reflected in the run configuration (e.g., a new
 								plug-in
@@ -126,7 +126,7 @@
 								application.
 							</entry>
 							<entry>
-								<para>
+								
 									Eclipse 4 persists user changes in the application in a
 									delta file which is restored at startup.
 									During
@@ -142,17 +142,17 @@
 									and
 									this entry is not displayed in your
 									application.
-								</para>
-								<para>
+								
+								
 									Either set the
-									<guilabel>Clear</guilabel>
+									_Clear_
 									flag on the
-									<guilabel>Main</guilabel>
+									_Main_
 									tab in your run configuration or add the
 									<parameter>clearPersistedState</parameter>
 									parameter for your product configuration file or run
 									configuration.
-								</para>
+								
 							</entry>
 						</row>
 						<row>
@@ -175,7 +175,7 @@
 								Menu entries are disabled in the Eclipse application.
 							</entry>
 							<entry>
-								<para>
+								
 									Ensure that the
 									<code>HandlerProcessingAddon</code>
 									class in the package
@@ -185,7 +185,7 @@
 									name is
 									<code>org.eclipse.e4.ui.workbench</code>
 									.
-								</para>
+								
 							</entry>
 						</row>
 						<row>
@@ -197,28 +197,28 @@
 							</entry>
 							<entry>
 								Ensure that you have pressed the
-								<guilabel>New...</guilabel>
+								_New..._
 								button in the product configuration file and selected the
 								<code>E4Application</code>
 								as application to start. You can check the current setting in
 								your
 								<filename>plugin.xml</filename>
 								file on the
-								<guilabel>Extensions</guilabel>
+								_Extensions_
 								tab and in the details of the
-								<guilabel>org.eclipse.core.runtime.products</guilabel>
+								_org.eclipse.core.runtime.products_
 								extension.
 							</entry>
 						</row>
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
+		
+	
 
-	<section id="runconfiguration_mainproblem">
-		<title>Finding missing plug-in dependencies during a product launch
-		</title>
+[[runconfiguration_mainproblem">
+=== Finding missing plug-in dependencies during a product launch
+		
 		<indexterm>
 			<primary>Finding missing plug-in dependencies during a product launch
 			</primary>
@@ -229,7 +229,7 @@
 			<primary>Launch configuration</primary>
 			<secondary>Problems</secondary>
 		</indexterm>
-		<para>
+		
 			The most common problem is that some required plug-ins are
 			missing in
 			your product. If you are using a feature based product
@@ -240,39 +240,39 @@
 			MANIFEST.MF
 			file are also included in your features. This error is
 			reported in the
-			<guilabel>Console</guilabel>
+			_Console_
 			view, typically it is one of the first error messages and you need to
 			scroll up to see it.
-		</para>
-		<para>The following listing shows how this message typically looks
+		
+		The following listing shows how this message typically looks
 			like (formating changed to make the text fit better).
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/launchproblems/dependency.txt" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			After identifying the missing plug-ins ensure that you add them
 			to your product (if the product is plug-in based) or to your features
 			(if the product is feature based).
-		</para>
+		
 
 		<tip>
-			<para>
+			
 				Eclipse can check for missing dependencies automatically before you
 				run the Launch configuration.
 				On
 				the
-				<guilabel>Plug-ins</guilabel>
+				_Plug-ins_
 				Tab press the
-				<guilabel>Validate Plug-ins</guilabel>
+				_Validate Plug-ins_
 				button or select the
-				<guilabel>Validate plug-ins automatically prior to launching
-				</guilabel>
+				_Validate plug-ins automatically prior to launching
+				_
 				option.
 				This
 				will
@@ -280,8 +280,8 @@
 				in your
 				run
 				configuration.
-			</para>
-			<para>
+			
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata scale="35" fileref="images/launchconfiguration30.png" />
@@ -290,10 +290,10 @@
 						<phrase>Validating the runtime configuration</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 		</tip>
 
-		<para>
+		
 			Avoid fixing problems with dependencies in the run configuration
 			because
 			the run configuration is created and updated based on the
@@ -304,6 +304,5 @@
 			export of your product, hence
 			an error in the product dependencies results in an
 			exported application which cannot be started.
-		</para>
-	</section>
-</section>
+		
+	

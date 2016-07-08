@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Java web development with Eclipse WTP - Tutorial</title>
+=== Java web development with Eclipse WTP - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,16 +30,16 @@ Version 0.3, 06.07.2016
 			<holder>vogella GmbH</holder>
 		</copyright>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 		<pubdate>15.04.2016</pubdate>
 		<abstract id="abstract">
-			<title>Eclipse Web Tool Platform (WTP)</title>
-			<para>
+	=== Eclipse Web Tool Platform (WTP)
+			
 				This tutorial describes the development of servlets with
 				Eclipse WTP. This tutorial is based on Eclipse
 				4.5 (Mars) and Tomcat 7.0 and JDK 1.8.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

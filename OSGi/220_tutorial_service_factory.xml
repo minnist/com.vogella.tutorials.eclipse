@@ -1,24 +1,24 @@
-<section id="dataservice_plugin_usage">
-	<title>Exercise: Create service bundle</title>
-	<section id="services_todo4">
-		<title>Create a factory to access your service implementation</title>
-		<para>
+
+	<title>Exercise: Create service bundle
+[[services_todo4">
+=== Create a factory to access your service implementation
+		
 			In
 			<xref linkend="dataservice_plugin" />
 			you create two plug-ins. To provide the service implementation to consumers the best solution is to use
-			<ulink url="http://www.vogella.com/tutorials/OSGiServices/article.html">OSGi services</ulink>
+			http://www.vogella.com/tutorials/OSGiServices/article.html">OSGi services
 			but to keep this description, simple we use a factory in this exercise.
-		</para>
-		<para>
+		
+		
 			Create a new class called
-			<wordasword>TodoServiceFactory</wordasword>
+			_TodoServiceFactory_
 			in the
 			<code>com.example.e4.rcp.todo.services</code>
 			package. For this you might need the following tip.
-		</para>
+		
 
 		<tip>
-			<para>
+			
 				In its default configuration the Eclipse IDE hides parent
 				packages if they don't contain any classes. During the
 				specification
@@ -28,9 +28,9 @@
 				is depicted in
 				the following
 				screenshot.
-			</para>
+			
 
-			<para>
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/tutorial_servicepackage10.png" />
@@ -39,15 +39,15 @@
 						<phrase>Specify the package for the creation of a class</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 		</tip>
 
-		<para>
+		
 			The class provides access to your
 			<code>ITodoService</code>
 			implementation via a static method. It can be
 			considered to be a
-			<wordasword>factory</wordasword>
+			_factory_
 			for the
 			<code>ITodoService</code>
 			interface.
@@ -55,29 +55,29 @@
 			instance of
 			a
 			certain interface.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/server/TodoServiceFactory.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="osgi_services_todo_exportpackage">
-		<title>Export the package in the service plug-in</title>
+	
+[[osgi_services_todo_exportpackage">
+=== Export the package in the service plug-in
 
-		<para>
+		
 			Export the
 			<code>com.example.e4.rcp.todo.services</code>
 			package via the
 			<code>MANIFEST.MF</code>
 			file on the
-			<guilabel>Runtime</guilabel>
+			_Runtime_
 			tab, so that it is available for other
 			plug-ins.
-		</para>
+		
 		<note>
-			<para>Please note that the
+			Please note that the
 				Eclipse tooling does not support the export
 				of empty packages. You
 				have
@@ -88,7 +88,7 @@
 				before you are able
 				to
 				export it.
-			</para>
+			
 		</note>
-	</section>
-</section>
+	
+

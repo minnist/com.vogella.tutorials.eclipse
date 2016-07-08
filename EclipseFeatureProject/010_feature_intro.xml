@@ -1,20 +1,16 @@
-<section id="eclipsefeatureproject_overview">
-	<title>What are feature projects and features?</title>
-	<indexterm>
-		<primary>Feature projects</primary>
-	</indexterm>
-	<indexterm>
-		<primary>Features</primary>
-	</indexterm>
-	<para>
+
+	<title>What are feature projects and features?
+
+
+	
 		Using the Eclipse wizards you can create feature projects, similarly on how you create plug-in projects.
 		An
 		Eclipse
 		feature project contains
-		<wordasword>features</wordasword>
+		_features_
 		.
-	</para>
-	<para>
+	
+	
 		A
 		feature
 		describes a list of plug-ins and other features which can
@@ -26,19 +22,18 @@
 		name,
 		a version number and
 		in most cases a license information assigned to it.
-	</para>
-	<para>
+	
+	
 		A
 		feature
 		is described via a
 		<filename>feature.xml</filename>
 		file. The following listing shows an example of such a file.
-	</para>
-	<para>
+	
+	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/feature.adoc[]
 		</programlisting>
-	</para>
+	
 
 
-</section>

@@ -1,24 +1,24 @@
-<section id="preferences_more">
-	<title>Preference handling in Eclipse 3.x</title>
 
-	<section id="preferences_preferencepage">
-		<title>Preference Page</title>
-		<para>
+	<title>Preference handling in Eclipse 3.x
+
+[[preferences_preferencepage">
+=== Preference Page
+		
 			Eclipse 3.x provides a standard dialog to display and
 			change
 			preference values via a preference dialog.
 			Please note
 			that this dialog does not work for Eclipse 4 RCP applications.
-		</para>
-		<para>
+		
+		
 			To add a page to this preference dialog a
 			plug-in must provide an
 			contribution to the
 			<code>org.eclipse.ui.preferencePages</code>
 			extension point.
 
-		</para>
-		<para>
+		
+		
 			This extension point defines a class which
 			is
 			responsible for creating
@@ -29,8 +29,8 @@
 			implement
 			<code>IWorkbenchPreferencePage</code>
 			and must have a non-parameter constructor.
-		</para>
-		<para>
+		
+		
 			The
 			<code>PreferencePage</code>
 			class or one of its subclasses can get extended; a good
@@ -38,22 +38,22 @@
 			usually
 			<code>FieldEditorPreferencePage</code>
 			.
-		</para>
-		<para>
+		
+		
 			To open the Preference dialog, you can use the
 			<code>org.eclipse.ui.window.preferences</code>
 			command.
-		</para>
-	</section>
+		
+	
 
-	<section id="preferences_security">
-		<title>Secure storage of preferences</title>
-		<para>
+[[preferences_security">
+=== Secure storage of preferences
+		
 			Eclipse allows to encrypt preference values via the
 			<code>org.eclipse.equinox.security</code>
 			plug-in.
-		</para>
-		<para>
+		
+		
 			The key / value pairs will be stored in the
 			<filename>secure.storage</filename>
 			file in
@@ -64,40 +64,40 @@
 			Eclipse uses a class of type
 			<code>PasswordProvider</code>
 			for encrypting the preferences and has a default class registered.
-		</para>
-		<para>
+		
+		
 			Via the
 			<code>org.eclipse.equinox.security.secureStorage</code>
 			extension point
 			you can register your
 			own
 			PasswordProvider.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="preferences_pluginaccess">
-		<title>Access Preferences in different plug-ins</title>
-		<para>
+[[preferences_pluginaccess">
+=== Access Preferences in different plug-ins
+		
 			You can access preferences in other plug-ins via the
 			<code>PreferenceService</code>
 			service.
-		</para>
-		<para>
+		
+		
 			For example, to access the "MySTRING1" preference in the
 			"de.vogella.preferences.page" plug-in, you can use the
 			following:
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/access/AccessPreferences.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="preferences_listener">
-		<title>Reacting to changes in the preferences</title>
-		<para>
+[[preferences_listener">
+=== Reacting to changes in the preferences
+		
 			You can register
 			<code>IPropertyChangeListener</code>
 			instances to changes in the preference values.
@@ -106,15 +106,14 @@
 			framework if the reference
 			value
 			changes.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/listener.txt" />
 			</programlisting>
-		</para>
+		
 
 
 
-	</section>
+	
 
-</section>

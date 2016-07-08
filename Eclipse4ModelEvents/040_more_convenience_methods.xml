@@ -10,12 +10,12 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="Eclipse4ModelEvents_UIEvents_convenience">
-	<title>Convenience methods for working with events</title>
-	<para>Besides the convenience methods for the event types, the UIEvents class offers two more
+
+	<title>Convenience methods for working with events
+	Besides the convenience methods for the event types, the UIEvents class offers two more
 		convenience methods:
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="./images/ui_events_convenience.png" scale="50" />
@@ -24,53 +24,53 @@ Version 0.3, 06.07.2016
 				<phrase>Additional convenience methods of the UIEvents class.</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 	<section>
-		<title>The contains method</title>
-		<para>
+=== The contains method
+		
 			The
 			<code>contains</code>
 			method can be used to check whether a certain object is part
 			of an event's property.
-		</para>
-		<para>
+		
+		
 			Imagine you listen for changed tags on a certain model element and want to determine, if a
 			certain tag is part of the
 			tags of the given model element. In this case the
 			<code>contains</code>
 			method helps you with that task.
-		</para>
-		<para>
+		
+		
 			An example for this can be found in the
 			<code>subscribeTopicTagsChanged(Event)</code>
 			method of the
 			<code>ToolBarManagerRenderer</code>
 			class from the Eclipse framework.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ui_events_contains_example.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			This code demonstrates how the existence of a certain tag
 			(
 			<code>IPresentationEngine.HIDDEN_EXPLICITLY</code>
 			) is checked with the contains
 			method.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>The asIterable method</title>
-		<para>
+=== The asIterable method
+		
 			The
 			<code>asIterable</code>
 			method can be used to get an
 			<code>Iterable</code>
 			of an
 			event's property.
-		</para>
-		<para>
+		
+		
 			Let's take the example from
 			<xref linkend="position_event_tag" />
 			, where we listened to
@@ -78,8 +78,8 @@ Version 0.3, 06.07.2016
 			<code>UIEvents.ElementContainer.TOPIC_CHILDREN</code>
 			event and checked the new
 			position.
-		</para>
-		<para>
+		
+		
 			This sample lacks in case we add more than one child to the
 			<code>MPartStack</code>
 			,
@@ -91,18 +91,18 @@ Version 0.3, 06.07.2016
 			property rather than an
 			<code>MPart</code>
 			.
-		</para>
-		<para>
+		
+		
 			So we need to enhance our
 			<code>subscribeTopicElementContainerChildren</code>
 			method
 			like this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/ui_events_asIterable_example.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	
+

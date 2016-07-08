@@ -1,26 +1,26 @@
-<section id="commands">
-	<title>Commands</title>
-	<section id="commands_add">
-		<title>Add objects to the table</title>
-		<para>
+
+	<title>Commands
+[[commands_add">
+=== Add objects to the table
+		
 			This chapter shows how to add persons to the
 			<code>TableViewer</code>.
-		</para>
-		<para>
+		
+		
 			You have to make the selection of the
 			<code>Viewer</code>
 			available and also provide public method to refresh the data of to
 			the
 			<code>Viewer</code>
 			so that other components can trigger the refresh process.
-		</para>
-		<para>
+		
+		
 			<programlisting  language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commands/createPartControlSelection.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create a
 			<code>Dialog</code>
 			to enter the data for the additional person. Create the
@@ -29,22 +29,22 @@
 			and the following
 			<code>AddPersonDialog</code>
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commands/AddPersonDialog.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create a new
 			<code>View</code>
 			called
-			<wordasword>ChangeView</wordasword>
+			_ChangeView_
 			to your application and add it to your
 			perspective.
-		</para>
-		<para>
+		
+		
 			This
 			<code>View</code>
 			contains a
@@ -53,73 +53,72 @@
 			<code>Dialog</code>,
 			adds the new Person to the data and refreshes the
 			<code>Viewer</code>.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commands/ChangeView.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			When you finished this successfully,
 			you are able to add new persons to
 			your
 			<code>TableViewer</code>
 			via clicking on the
 			<code>Button</code>.
-		</para>
-	</section>
+		
+	
 
-	<section id="commands_delete">
-		<title>Delete objects from your table</title>
-		<para>
+[[commands_delete">
+=== Delete objects from your table
+		
 			We will implement, that the current selected persons can be
 			deleted from the list.
-		</para>
-		<para>
+		
+		
 			Create the command
 			<code>de.vogella.jface.tableviewer.commands.DeletePerson</code> with the default
 			handler <code>de.vogella.jface.tableviewer.commands.DeletePerson</code>. Add the
 			command to your menu.
-		</para>
-		<para>
+		
+		
 			Implement class
 			<code>de.vogella.jface.tableviewer.commands.DeletePerson</code>.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commands/DeletePerson.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Please try to delete entries of the table by selection entries
 			and executing <guibutton>Delete Action</guibutton>.
-		</para>
-	</section>
+		
+	
 
-	<section id="commands_copytoclipboard">
-		<title>Copy data to the system clipboard</title>
-		<para>
+[[commands_copytoclipboard">
+=== Copy data to the system clipboard
+		
 			This chapter shows how to copy the table data to the system
 			clipboard via a command.
-		</para>
-		<para>
+		
+		
 			Create the command
 			<code>de.vogella.jface.tableviewer.commands.CopyPersonClipboard</code> with the
 			default handler
 			<code>de.vogella.jface.tableviewer.commands.CopyPersonClipboard</code>. Add the
 			command to the menu.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/commands/CopyPersonClipboard.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Run your application, select a few persons, run your command
 			and paste the result in a text editor, e.g., notepad.
-		</para>
-	</section>
-</section>
+		
+	

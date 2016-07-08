@@ -1,52 +1,52 @@
-<section id="exercise_supplementarydata" role="wrapper">
-	<title>Exercise: Using model tags and persisted data</title>
-	<section id="exercise_supplementarydata_target">
-		<title>Target</title>
-		<para>
+
+	<title>Exercise: Using model tags and persisted data
+[[exercise_supplementarydata_target">
+=== Target
+		
 			In this exercise you are about to learn
 			how to use tags and
 			persisted state
 			data on the application model elements.
-		</para>
+		
 		<tip>
-			<para>
+			
 				Use
 				<xref linkend="recipes_tags" />
 				for information on the tags or look directly at the
 				<code>IPresentationEngine</code>
 				interface.
-			</para>
+			
 		</tip>
-	</section>
-	<section id="exercise_supplementarydata_tags">
-		<title>Use tags</title>
-		<para>
+	
+[[exercise_supplementarydata_tags">
+=== Use tags
+		
 			Add the
 			<parameter>NoMove</parameter>
 			tag to your parts and ensure that you cannot move it via
 			drag and
 			drag.
-		</para>
-		<para>
+		
+		
 			Make all your parts closable via the corresponding model attribute.
 			Assign the
 			<parameter>NoAutoCollapse</parameter>
 			to a stack and close all parts in this stack. Validate that your
 			stack is not closed.
-		</para>
-	</section>
-	<section id="exercise_supplementarydata_persistedstate">
-		<title>Optional: Use persisted state</title>
-		<para>
+		
+	
+[[exercise_supplementarydata_persistedstate">
+=== Optional: Use persisted state
+		
 			Add to the
 			<parameter>styleOverride</parameter>
 			parameter with the value 1024 as
-			<guilabel>Persisted State</guilabel>
+			_Persisted State_
 			to on of your
-			<wordasword>PartStacks</wordasword>
+			_PartStacks_
 			model elements.
-		</para>
-		<para>This causes this part stack to render its tabs at the bottom.
-		</para>
-	</section>
-</section>
+		
+		This causes this part stack to render its tabs at the bottom.
+		
+	
+

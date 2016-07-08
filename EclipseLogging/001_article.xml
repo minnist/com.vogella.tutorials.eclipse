@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Logging- Tutorial</title>
+=== Eclipse Logging- Tutorial
 		<subtitle>Based on Eclipse 4.2</subtitle>
 		<author>
 			<firstname>Lars</firstname>
@@ -27,14 +27,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>03.08.2012</pubdate>
 		<releaseinfo>
-			<para>Version 1.1</para>
+			Version 1.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using Eclipse logging</title>
-			<para> This tutorial gives an overview how to do logging in an Eclipse
+	=== Using Eclipse logging
+			 This tutorial gives an overview how to do logging in an Eclipse
 				 application.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

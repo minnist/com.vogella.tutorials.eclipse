@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Memory Analyzer (MAT) - Tutorial</title>
+=== Eclipse Memory Analyzer (MAT) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -29,16 +29,16 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>09.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.3</para>
+			Version 1.3
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse Memory Analyzer (MAT)</title>
-			<para> This article describes the usage of the Eclipse Memory
+	=== Eclipse Memory Analyzer (MAT)
+			 This article describes the usage of the Eclipse Memory
 				Analyzer (MAT) to identify memory leaks.
-			</para>
+			
 
-			<para>This article is based on Eclipse 4.5. </para>
+			This article is based on Eclipse 4.5. 
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

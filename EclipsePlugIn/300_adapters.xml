@@ -1,126 +1,114 @@
-<section id="adapters">
-	<title>Adapters</title>
-	<section id="adapters_overview">
-		<title>What are adapters?</title>
-		<para>
+
+	<title>Adapters
+[[adapters_overview">
+=== What are adapters?
+		
 			Adapters help to display information about objects in view
 			without having to adjust the existing views. In this
 			example we will
 			create a small view which allows to select objects and use the
 			properties view to display them.
-		</para>
-		<para>
+		
+		
 			Adapters are used on several places, for example, you can use an
 			adapter to display your data in the outline view. See
-			<ulink url="http://www.eclipsezone.com/eclipse/forums/t101941.html">
+			http://www.eclipsezone.com/eclipse/forums/t101941.html">
 				Outline View Example for an example
-			</ulink>
+			
 			on how to do this.
-		</para>
+		
 
-	</section>
-	<section id="adapters_example">
-		<title>Example</title>
-		<para>
+	
+[[adapters_example">
+=== Example
+		
 			We will simply use an adapter to show our data in the property
 			view. Create a new plug-in project
 			<property>de.vogella.plugin.adapter</property>
 			. Use
 			the
-			<guilabel>Plug-in with a view</guilabel>
+			_Plug-in with a view_
 			template with the following settings.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/adapter10.gif" />
+		
+		
+image::adapter10.gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Add the
 			dependency
 			<parameter>org.eclipse.ui.views</parameter>
 			in tab dependencies of
 			<filename>plugin.xml</filename>
 			.
-		</para>
-		<para> Create the following data model.</para>
-		<para>
+		
+		 Create the following data model.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/Todo.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Change the code of
 			<filename>SampleView.java</filename>
 			to the following. After this
 			change, you should be able to run your project, open your view and see
 			your to-do items.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/SampleView.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			To displays its values in the property view, add the extension
 			point
 			<parameter>org.eclipse.core.runtime.adapters</parameter>
 			to your project. The data
 			of the extension point should be like the following.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/extension.adoc[]
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Implement the factory and the new class
 			<code>TodoPropertySource</code>
 			which implements
 			<code>IPropertySource</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoAdapterFactory.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoPropertySource.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			If you run your workbench and open your view
 			via
-			<menuchoice>
-				<guimenu>Windows</guimenu>
-				<guisubmenu>Show</guisubmenu>
-				<guisubmenu>View</guisubmenu>
-				<guisubmenu>Others</guisubmenu>
-				<guisubmenu>Sample Category</guisubmenu>
-				<guisubmenu>Sample View</guisubmenu>
-			</menuchoice>
-			and if you select a data element in your viewer you should see your data in the <guilabel>Properties</guilabel> view.
-		</para>
+			menu:Windows[Show > View > Others > Sample Category > Sample View]
+			and if you select a data element in your viewer you should see your data in the _Properties_ view.
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/adapter40.gif" />
+		
+image::adapter40.gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-</section>

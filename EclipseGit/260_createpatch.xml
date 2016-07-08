@@ -1,26 +1,26 @@
-<section id="team_createpatch">
-	<title>Creating patches</title>
+
+	<title>Creating patches
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>patch
 		</secondary>
 	</indexterm>
-	<para>
+	
 		To create a patch for a set of changes with Eclipse Git, select the
 		resources
 		for which you want to create a patch in the
-		<guilabel>Package Explorer</guilabel>
+		_Package Explorer_
 		view,
 		right
 		click and select
-		<menuchoice>
+		menu:
 			<guimenu>Team</guimenu>
 			<guisubmenu>Create Patch</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_createpatch10.png"/>
@@ -29,8 +29,8 @@
 				<phrase>Create Patch via EGit menu path</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_createpatch20.png"/>
@@ -39,16 +39,16 @@
 				<phrase>Create Patch via Eclipse Git</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		The resulting file can be used to get applied to another Git
 		repository, via
-		<menuchoice>
+		menu:
 			<guimenu>Team</guimenu>
 			<guisubmenu>Apply Patch</guisubmenu>
 		</menuchoice>
 		. You can also apply the patch on a system where Git isn't installed
 		at all, i.e., you don't need a Git repository to apply a patch.
-	</para>
+	
 
-</section>
+

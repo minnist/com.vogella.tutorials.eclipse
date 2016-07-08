@@ -1,7 +1,6 @@
-<section id="resources">
-	<title>Links and Literature</title>
-	<section id="resources_features">
-		<title>Eclipse resources</title>
-	</section>
+
+	<title>Links and Literature
+[[resources_features">
+=== Eclipse resources
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>

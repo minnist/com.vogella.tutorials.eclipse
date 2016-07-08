@@ -1,14 +1,10 @@
-<section id="swtsniptters">
-	<title>SWT snippets and examples</title>
-	<indexterm>
-		<primary>SWT snippets</primary>
-	</indexterm>
-	<indexterm>
-		<primary>SWT Examples</primary>
-	</indexterm>
+
+	<title>SWT snippets and examples
+
+
 	
 		The
-		<wordasword>SWT Snippets</wordasword>
+		_SWT Snippets_
 		are examples for
 		stand-alone
 		SWT
@@ -34,12 +30,12 @@
 	
 	
 		The
-		<ulink url="http://www.eclipse.org/swt/examples.php">SWT Examples</ulink>
+		http://www.eclipse.org/swt/examples.php">SWT Examples
 		page
 		provides useful programs that are written in
 		SWT. These are
 		typically much larger and more comprehensive than the SWT
 		Snippets.
 	
-</section>
+
 

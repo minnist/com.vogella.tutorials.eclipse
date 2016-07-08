@@ -1,47 +1,47 @@
 <chapter id="tutorial_build">
-	<title>Building your Eclipse RCP application</title>
-	<section id="tutorial_build1">
-		<title>Exercise: Manual export</title>
-		<para>The following exercise is a repetition. Very early in this
+	<title>Building your Eclipse RCP application
+[[tutorial_build1">
+=== Exercise: Manual export
+		The following exercise is a repetition. Very early in this
 			$books you have exported your application already.
-		</para>
-		<para>
+		
+		
 			Use your product configuration file to manually export your
 			Eclipse RCP application.
-		</para>
-		<para>
+		
+		
 			Start your exported Eclipse application directory. If you face
 			issues
 			with starting the application check the possible problem list
 			in the
-			<wordasword>Product Export</wordasword>
+			_Product Export_
 			chapter of this book.
-		</para>
-	</section>
-	<section id="tutorial__build2">
-		<title>Exercise: Validate the Tycho tutorial</title>
-		<para>Install Maven. Create a new workspace and follow the two
+		
+	
+[[tutorial__build2">
+=== Exercise: Validate the Tycho tutorial
+		Install Maven. Create a new workspace and follow the two
 			tutorial for building plug-ins and products with Maven Tycho.
-		</para>
-		<para>Following these tutorials reduces the complexity of the
+		
+		Following these tutorials reduces the complexity of the
 			automatic setup as they are based on a minimal number of Eclipse
 			components.
-		</para>
-	</section>
-	<section id="tutorial__build3">
-		<title>Exercise: Tycho Build for the Todo application</title>
-		<para>
+		
+	
+[[tutorial__build3">
+=== Exercise: Tycho Build for the Todo application
+		
 			Once you have successfully finished a minimal build setup,
 			create
 			<filename>pom.xml</filename>
 			files for your Todo components.
-		</para>
-		<para>After the setup ensure that you can automatically build your
+		
+		After the setup ensure that you can automatically build your
 			Eclipse application with
 			Maven Tycho and that you can start the resulting export.
-		</para>
+		
 
 
 
-	</section>
+	
 </chapter>

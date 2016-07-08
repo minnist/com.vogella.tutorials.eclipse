@@ -1,13 +1,13 @@
-<section id="i18n_problems">
-	<title>Common problems with i18n</title>
+
+	<title>Common problems with i18n
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>Problems</secondary>
 	</indexterm>
-	<para>
+	
 		<itemizedlist>
 			<listitem>
-				<para>
+				
 					If the translations are not available in the exported product, ensure that the
 					property
 					files are included in the export.
@@ -15,16 +15,16 @@
 					<filename>build.properties</filename>
 					file of the plug-in which provides the property
 					files.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					If the translations are not displayed in the application, select
-					<guilabel>Clear Configuration</guilabel>
+					_Clear Configuration_
 					in your launch configuration. OSGi caches text
 					information sometimes.
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
-</section>
+	
+

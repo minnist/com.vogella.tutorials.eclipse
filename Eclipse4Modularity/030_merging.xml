@@ -1,8 +1,8 @@
-<section id="contributecomponents">
-	<title>Constructing the runtime application model</title>
-	<section id="contributecomponents_userchanges">
-		<title>User Changes</title>
-		<para>
+
+	<title>Constructing the runtime application model
+[[contributecomponents_userchanges">
+=== User Changes
+		
 			Changes
 			during
 			runtime,
@@ -15,8 +15,8 @@
 			part to a
 			new container via drag
 			and drop.
-		</para>
-		<para>
+		
+		
 			If the RCP application is closed, theses changes are
 			recorded and
 			saved
@@ -25,47 +25,47 @@
 			file in the
 			<filename>.metadata/.plugins/org.eclipse.e4.workbench</filename>
 			folder.
-		</para>
+		
 		<tip>
-			<para>
+			
 				User changes can be deleted at start of your application via the
 				<parameter>clearPersistedState</parameter>
 				parameter as a launch parameter. In most cases this is undesired behavior for an exported application and only used
 				during development.
-			</para>
+			
 		</tip>
-	</section>
-	<section id="contributecomponents_overview">
-		<title>Runtime application model</title>
-		<para>
+	
+[[contributecomponents_overview">
+=== Runtime application model
+		
 			At runtime the application model of an Eclipse application
 			consists of
 			different
 			components:
 			<itemizedlist>
 				<listitem>
-					<para>Application model - By default defined via the
+					Application model - By default defined via the
 						Application.e4xmi file
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Model contributions - Based on fragments and processors
-					</para>
+					Model contributions - Based on fragments and processors
+					
 				</listitem>
 				<listitem>
-					<para>User changes - Changes the user did to the user interface
+					User changes - Changes the user did to the user interface
 						during his last usage
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			These different components of the runtime application model need
 			to be
 			combined.
-		</para>
+		
 
-		<para> The Eclipse platform creates the runtime application model
+		 The Eclipse platform creates the runtime application model
 			based on the initial
 			application model
 			(Application.e4xmi) and applies
@@ -81,17 +81,17 @@
 			changed,
 			they will be
 			skipped.
-		</para>
-		<para>
+		
+		
 			The deltas are applied to the model
 			based on
 			the
 			IDs of the user
 			interface
 			component.
-		</para>
+		
 		<note>
-			<para>
+			
 				This behavior can be surprising during development. The
 				developer
 				adds a new part and this part is not visible after
@@ -102,8 +102,7 @@
 				earlier session. Use the
 				<parameter>clearPersistedState</parameter>
 				parameter to avoid the processing of user changes at startup.
-			</para>
+			
 		</note>
-	</section>
+	
 
-</section>

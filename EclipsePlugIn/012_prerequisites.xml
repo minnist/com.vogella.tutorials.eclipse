@@ -1,27 +1,27 @@
-<section id="prerequisites">
-	<title>Prerequisites</title>
-	<section id="prerequisites_1">
-		<title>Development</title>
-		<para>
+
+	<title>Prerequisites
+[[prerequisites_1">
+=== Development
+		
 			This tutorial assumes that you are already familiar with
-			<ulink url="http://www.vogella.com/tutorials/JavaIntroduction/article.html">standard Java
+			http://www.vogella.com/tutorials/JavaIntroduction/article.html">standard Java
 				development
-			</ulink>
+			
 			and with the
-			<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE</ulink>
+			http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE
 			.
-		</para>
-	</section>
+		
+	
 
-	<section id="modelspyintroduction">
-		<title>Model spy</title>
-		<para>
+[[modelspyintroduction">
+=== Model spy
+		
 			See
-			<ulink url="http://www.vogella.com/tutorials/Eclipse4LiveModelEditor/article.html">Eclipse Model Spy</ulink>
+			http://www.vogella.com/tutorials/Eclipse4LiveModelEditor/article.html">Eclipse Model Spy
 			to learn abou the model spy.
-		</para>
-	</section>
+		
+	
 
 
 
-</section>
+

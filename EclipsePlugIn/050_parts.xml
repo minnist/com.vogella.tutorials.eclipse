@@ -1,69 +1,65 @@
-<section id="e4partsin3x">
-	<title>Adding Eclipse 4.x parts and perspectives to 3.x based applications</title>
-	<section id="partialmigration_convertviews">
-		<title>Adding Eclipse 4.x parts to Eclipse 3.x applications</title>
-		<para>As a reminder, the term POJO (Plan Old Java Object) is used to
+
+	<title>Adding Eclipse 4.x parts and perspectives to 3.x based applications
+[[partialmigration_convertviews">
+=== Adding Eclipse 4.x parts to Eclipse 3.x applications
+		As a reminder, the term POJO (Plan Old Java Object) is used to
 			describe a Java class without inheritance of a
 			framework class.
-		</para>
-		<para>
+		
+		
 			As of the Eclipse 4.4 release you can also use a POJO in an extension for the
 			<code>org.eclipse.ui.views</code>
 			extension point. Use the
-			<guilabel>e4view</guilabel>
+			_e4view_
 			entry in the context menu of the extension to archive this.
 			The resulting object is
 			created via dependency injection.
-		</para>
+		
 
-		<para>
+		
 			For such a kind of view the existing toolbar and view extension point contributions do not work. To add for example a
 			toolbar to
 			your e4view, get
 			the
 			<code>MToolbar</code>
 			injected into its implementation and construct the entries in your source code.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="partialmigration_usingpartdescriptors">
-		<title>Supporting part descriptors in an Eclipse 4.5 IDE</title>
-		<para>
+[[partialmigration_usingpartdescriptors">
+=== Supporting part descriptors in an Eclipse 4.5 IDE
+		
 			The Eclipse 4.5 IDE release will support the
 			contribution
 			of part descriptor
 			model elements
 			via fragments or
 			processors.
-		</para>
-		<para>
+		
+		
 			If you use the
 			<parameter>org.eclipse.e4.legacy.ide.application</parameter>
 			ID to contribute your part descriptors, the views can be opened via the
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Other...]
 			dialog or via the
-			<wordasword>Quick Access</wordasword>
+			_Quick Access_
 			. This requires that you add the
 			<parameter>View</parameter>
 			tag to such a part descriptor.
-		</para>
-		<para>Eclipse 3.x API RCP applications running on
+		
+		Eclipse 3.x API RCP applications running on
 			top of a 4.5 or higher runtime can use the same
 			approach.
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="partialmigration_perspectives">
-		<title>Adding perspectives to the Eclipse IDE via model snippets
-		</title>
-		<para>
+[[partialmigration_perspectives">
+=== Adding perspectives to the Eclipse IDE via model snippets
+		
+		
 			Your model fragment or processor can also contribute a
 			perspective to
 			an Eclipse 4.x IDE. For this
@@ -71,14 +67,14 @@
 			a snippet. This snippet must again contribute to the application via
 			the
 			<parameter>org.eclipse.e4.legacy.ide.application</parameter> ID.
-		</para>
-		<para>This approach can also be used to contribute a perspective to
+		
+		This approach can also be used to contribute a perspective to
 			your Eclipse 3.x API based RCP application running
 			on top of an
 			Eclipse 4.x runtime but this depends on the specifics of your
 			application.
-		</para>
+		
 
-	</section>
+	
 
-</section>
+

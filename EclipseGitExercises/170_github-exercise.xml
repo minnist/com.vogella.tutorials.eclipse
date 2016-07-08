@@ -1,10 +1,10 @@
-<section id="_github_integration_with_eclipse" role="wrapper">
+
 <title>GitHub Integration with Eclipse
-<section id="_introductiongithub">
+
 <title>Introduction
 GitHub is the world’s largest source code repository with over 2 million Git repositories and 1 million people.  You can use it to share code and collaborate with others on projects.  The Eclipse organization on GitHub mirrors over 240 of the Git repositories available from Eclipse.org.  This training will involve setting up a project to be shared on GitHub, importing a project from GitHub using EGit, and how GitHub can be used to share code snippets with other developers.
 
-<section id="_installation">
+
 <title>Installation
 GitHub Mylyn Connector can be installed from the following update sites:
 <itemizedlist>
@@ -33,7 +33,7 @@ The feature is listed under the Collaboration category
 Select to install Eclipse EGit Mylyn GitHub Feature
 Restart Eclipse
 
-<section id="_create_a_github_account">
+
 <title>Create a GitHub Account
 This step will take you through creating and setting up a GitHub account.  You may skip this step if you already have a GitHub account.
 * Open any web browser and navigate to https://github.com/signup/free[https://github.com/signup/free]
@@ -43,7 +43,7 @@ This step will take you through creating and setting up a GitHub account.  You m
 <emphasis role="strong[ http://gravatar.com/site/signup/">http://gravatar.com/site/signup/]
 _ The image associated will be displayed on GitHub when viewing your commits, issues, comments and on your profile page.
 
-<section id="_exploring_the_eclipse_repository_on_github">
+
 <title>Exploring the Eclipse Repository on GitHub
 The Eclipse mirrored repositories on GitHub allow you to explore and track what is happening in the over 240 Eclipse Git repositories.
 * Navigate in a web browser to https://github.com/eclipse[https://github.com/eclipse] to see a listing of all the repositories
@@ -66,10 +66,10 @@ _* https://github.com/eclipse/eclipse.platform.swt/downloads[https://github.com/
   <textobject><phrase>github1.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_sharing_a_project_on_github_from_eclipse">
+
 <title>Sharing a Project on GitHub from Eclipse
 This task will have you publish an Eclipse project on GitHub as a new Git repository.
-<section id="_create_a_new_eclipse_project">
+
 <title>Create a new Eclipse project
 <itemizedlist>
 <listitem>
@@ -89,7 +89,7 @@ Enter HelloGitHub as the project name and select Finish
 </listitem>
 </itemizedlist>
 
-<section id="_create_a_java_class">
+
 <title>Create a Java class
 <itemizedlist>
 <listitem>
@@ -136,7 +136,7 @@ Select Save
 </listitem>
 </itemizedlist>
 
-<section id="_create_git_repository_for_hellogithub_project">
+
 <title>Create Git repository for HelloGitHub project
 <itemizedlist>
 <listitem>
@@ -177,7 +177,7 @@ Select Finish
   <textobject><phrase>github2.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_commit_hellogithub_project_to_new_git_repository">
+
 <title>Commit HelloGitHub project to new Git repository
 <itemizedlist>
 <listitem>
@@ -213,7 +213,7 @@ Select Commit
   <textobject><phrase>github3.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_create_a_new_repository_on_github">
+
 <title>Create a new repository on GitHub
 <itemizedlist>
 <listitem>
@@ -239,7 +239,7 @@ Select Create repository
   <textobject><phrase>github4.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_push_local_git_repository_to_github">
+
 <title>Push local Git repository to GitHub
 <itemizedlist>
 <listitem>
@@ -328,7 +328,7 @@ A Push Results dialog will be displayed stating the master branch was created on
   <textobject><phrase>github7.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_make_a_second_commit_and_push_the_change_upstream">
+
 <title>Make a second commit and push the change upstream
 <itemizedlist>
 <listitem>
@@ -392,7 +392,7 @@ A Push Results dialog will be displayed showing the commit pushed
   <textobject><phrase>github9.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_monitor_the_repository_s_issues">
+
 <title>Monitor the repository’s issues
 <itemizedlist>
 <listitem>
@@ -500,7 +500,7 @@ Select Finish
   <textobject><phrase>github11.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_create_a_new_issue">
+
 <title>Create a new issue
 <itemizedlist>
 <listitem>
@@ -549,10 +549,10 @@ The issue will be created and the editor will update with the new issue number
 </inlinemediaobject>
 
 
-<section id="_importing_projects_from_github">
+
 <title>Importing Projects from GitHub
 The GitHub Mylyn connector supports cloning repositories from GitHub and registering them in the EGit Git Repositories view.  This can be used to track libraries you are building against or using.  The cloned repository will be wired to pull from GitHub so that you can stay up-to-date as future changes are made to the repositories.
-<section id="_clone_an_existing_repository">
+
 <title>Clone an existing repository
 <itemizedlist>
 <listitem>
@@ -624,7 +624,7 @@ http-request will be visible after the clone operation completes
 </listitem>
 </itemizedlist>
 
-<section id="_import_the_project">
+
 <title>Import the project
 <itemizedlist>
 <listitem>
@@ -661,7 +661,7 @@ The http-request project will  be present in the Package Explorer view
 </listitem>
 </itemizedlist>
 
-<section id="_pulling_changes">
+
 <title>Pulling Changes
 <itemizedlist>
 <listitem>
@@ -687,10 +687,10 @@ A Push Results dialog will display showing which commits were fetched and which 
 </itemizedlist>
 
 
-<section id="_sharing_snippets_from_eclipse">
+
 <title>Sharing Snippets from Eclipse
 The GitHub Mylyn connector supports creating, editing, and cloning GitHub Gists. Gists are snippets that are versioned in a Git repository that can contain or more files.  They can be browsed, edited, and commented on from the Mylyn Task editor.  The Gist task editor allows you to open Gist files in a local Eclipse editor as well as clone Gists into a local Git repository.
-<section id="_adding_a_gist_task_repository">
+
 <title>Adding a Gist Task repository
 <itemizedlist>
 <listitem>
@@ -741,7 +741,7 @@ Select Finish
   <textobject><phrase>github14.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_viewing_your_own_gists">
+
 <title>Viewing your own Gists
 <itemizedlist>
 <listitem>
@@ -773,7 +773,7 @@ The Gists will synchronize to the newly created query folder in the Task List vi
 </listitem>
 </itemizedlist>
 
-<section id="_tracking_another_user_s_gists">
+
 <title>Tracking Another User’s Gists
 <itemizedlist>
 <listitem>
@@ -841,7 +841,7 @@ This Gist contains a code snippet for creating Gists using the GitHub Java API
   <textobject><phrase>github16.png</phrase></textobject>
 </inlinemediaobject>
 
-<section id="_creating_a_gist">
+
 <title>Creating a Gist
 <itemizedlist>
 <listitem>

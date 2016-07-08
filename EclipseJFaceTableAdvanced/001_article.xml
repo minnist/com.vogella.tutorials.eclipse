@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Advanced programming tricks for the Eclipse JFace Table API - Tutorial</title>
+=== Advanced programming tricks for the Eclipse JFace Table API - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,17 +30,17 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>16.06.2015</pubdate>
 		<releaseinfo>
-			<para>Version 3.4</para>
+			Version 3.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse JFace Table</title>
-			<para>
+	=== Eclipse JFace Table
+			
 				This tutorial explains advanced usage of the JFace TableViewer
 				including inline table editing, table filtering and sorting, and
 				model / view interaction. StyledLabelProvider are also discussed.
-			</para>
-			<para> This tutorial is based on Eclipse 4.5.</para>
+			
+			 This tutorial is based on Eclipse 4.5.
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

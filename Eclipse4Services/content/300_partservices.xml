@@ -1,8 +1,8 @@
-<section id="selectedservices_partservice" role="wrapper">
-	<title>Part service and editor like behavior</title>
 
-	<section id="selectedservices_partservice1">
-		<title>What is the part service?</title>
+	<title>Part service and editor like behavior
+
+[[selectedservices_partservice1">
+=== What is the part service?
 		<indexterm>
 			<primary>Part service</primary>
 		</indexterm>
@@ -18,16 +18,16 @@
 			<primary>Parts</primary>
 			<secondary>Creating at runtime</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<wordasword>part service</wordasword>
+			_part service_
 			allows you to find and perform actions on
 			parts
 			in the application
 			model.
-		</para>
+		
 
-		<para>
+		
 			It also allows you to
 			switch
 			perspectives
@@ -35,22 +35,22 @@
 			parts
 			based on part descriptors
 			in the application model.
-		</para>
-	</section>
+		
+	
 
-	<section id="selectedservices_access">
-		<title>How to access the part service</title>
-		<para>
+[[selectedservices_access">
+=== How to access the part service
+		
 			Use dependency injection to get access to the part service. For
 			example via the
 			<code>@Inject EPartService partService;</code>
 			statement.
-		</para>
-	</section>
+		
+	
 
-	<section id="selectedservices_partservice2">
-		<title>Example: Showing and hiding parts</title>
-		<para>
+[[selectedservices_partservice2">
+=== Example: Showing and hiding parts
+		
 			The following example shows how you can find
 			parts, hide or show
 			them.
@@ -67,32 +67,32 @@
 			to ensure that the
 			part
 			gets displayed.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/partservice/partService.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="selectedservices_partservice4">
-		<title>Example: Switching perspectives</title>
-		<para>
+		
+	
+[[selectedservices_partservice4">
+=== Example: Switching perspectives
+		
 			The following example shows how you can switch to another
 			perspective with the part service.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/partservice/SwitchPerspectiveHandler.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="selectedservices_partdescriptors">
-		<title>Using part descriptors</title>
+[[selectedservices_partdescriptors">
+=== Using part descriptors
 		<indexterm>
 			<primary>Part descriptor</primary>
 		</indexterm>
@@ -100,9 +100,9 @@
 			<primary>PartDescriptor</primary>
 			<see>Part descriptor</see>
 		</indexterm>
-		<para>
+		
 			The
-			<wordasword>part descriptor</wordasword>
+			_part descriptor_
 			model element is a template for the creation of a part. 
 			By defining a common set of
 			attributes via such a blueprint it
@@ -110,68 +110,59 @@
 			possible to create concrete
 			instances of it via the part
 			service.
-		</para>
-		<para>
+		
+		
 			Via the
 			<parameter>Multiple</parameter>
 			of the part descriptor you configure if multiple instances of this
 			part can be created or not.
 			Such a model element is depicted in the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/partdescripter_service10.png" scale="35" />
+		
+		
+image::partdescripter_service10.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a PartDescripter to the model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Adding a PartDescripter to the model,pdfwidth=60%]
+		
+	
 
-	<section id="selectedservices_partservice5">
-		<title>Example: Part descriptors and creating parts dynamically</title>
-		<para>
+[[selectedservices_partservice5">
+=== Example: Part descriptors and creating parts dynamically
+		
 			If you define a part descriptor 
 			in your application model, you can use the
 			<code>EPartService</code>
 			to create a
 			part
 			from it.
-		</para>
-		<para>
+		
+		
 			The following screenshot shows the definition of a part descriptor
 			in the application model. As the
 			<parameter>Multiple</parameter>
 			parameter is set, it is possible to create several parts based on
 			this template.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/partdescripter_service10.png"
+		
+		
+image::partdescripter_service10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a PartDescripter to the model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>The part service allows you to create a new part based on this
+					<phrase>Adding a PartDescripter to the model,pdfwidth=60%]
+		
+		The part service allows you to create a new part based on this
 			template. This is demonstrated by the following example code.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/partservice/OpenPartHandler.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-
-
+	
 
 
-</section>
+
+

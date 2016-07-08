@@ -1,5 +1,5 @@
-<section id="firstjava" role="wrapper">
-	<title>Create your first Java program</title>
+
+	<title>Create your first Java program
 	<indexterm>
 		<primary>Java projects</primary>
 		<secondary>create
@@ -10,9 +10,9 @@
 		<secondary>create
 		</secondary>
 	</indexterm>
-	<section id="firstjava_target">
-		<title>Target of this exercise</title>
-		<para> The following section describes how to create a minimal Java
+[[firstjava_target">
+=== Target of this exercise
+		 The following section describes how to create a minimal Java
 			application
 			using Eclipse. It is tradition in the programming world to
 			create a
@@ -22,40 +22,32 @@
 			this tradition and will
 			write "Hello Eclipse!" to the
 			console.
-		</para>
-	</section>
-	<section id="firstjava_project">
-		<title>Create project</title>
-		<para>This $book uses the naming convention that the project is named
+		
+	
+[[firstjava_project">
+=== Create project
+		This $book uses the naming convention that the project is named
 			the same as the top-level package in the project.
-		</para>
-		<para>
+		
+		
 			Select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Java project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Java project]
 			from the menu. Enter
 			<code>de.vogella.eclipse.ide.first</code>
 			as the project name. Select the
-			<guilabel>Create
+			_Create
 				separate folders for
 				sources and class files
-			</guilabel>
+			_
 			flag.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany10.gif" />
+		
+		
+image::firstgany10.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>New Java Project Wizard</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>New Java Project Wizard,pdfwidth=60%]
+		
+		
 			Press the
 			<guibutton>Finish</guibutton>
 			button to create the project. A new project is created
@@ -64,11 +56,11 @@
 			a folder. Open the
 			<code>de.vogella.eclipse.ide.first</code>
 			folder and explore the content of this folder.
-		</para>
-	</section>
-	<section id="firstjava_package">
-		<title>Create package</title>
-		<para>
+		
+	
+[[firstjava_package">
+=== Create package
+		
 			In the following step you create a new
 			<code>package</code>
 			. A good convention for the project and package name is to use the
@@ -82,8 +74,8 @@
 			you should also use
 			<code>com.example.javaproject</code>
 			as the top-level package name.
-		</para>
-		<para>
+		
+		
 			To create the
 			<code>de.vogella.eclipse.ide.first</code>
 			package, select the
@@ -91,25 +83,18 @@
 			folder
 			, right-click on it and select
 
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Package</guisubmenu>
-			</menuchoice>
+			menu:New[Package]
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany30.gif" />
+		
+image::firstgany30.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Right mouse click to create a package</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Right mouse click to create a package,pdfwidth=60%]
+		
 		<tip>
-			<para>
+			
 				Reverse domain names should be used for packages to prevent
 				name
 				clashes. It is relatively unlikely that another company defines a
@@ -118,137 +103,112 @@
 				in the
 				<code>com.vogella</code>
 				package because this is the reverse URL of the vogella GmbH company.
-			</para>
+			
 		</tip>
-		<para>
+		
 			Enter the name of your new package in the dialog and press the
 			<guibutton>Finish</guibutton>
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany40.gif" />
+		
+		
+image::firstgany40.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Create a package Dialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="firstjava_class">
-		<title>Create Java class</title>
-		<para>
+					<phrase>Create a package Dialog,pdfwidth=60%]
+		
+	
+[[firstjava_class">
+=== Create Java class
+		
 			Create a Java class. Right-click on your package and
 			select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Class</guisubmenu>
-			</menuchoice>
+			menu:New[Class]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany50.gif" />
+		
+		
+image::firstgany50.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Create a new class selection</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Create a new class selection,pdfwidth=60%]
+		
+		
 			Enter
 			<code>MyFirstClass</code>
 			as the class name and
 			select the
-			<guilabel>public static void main
+			_public static void main
 				(String[] args)
-			</guilabel>
+			_
 			checkbox.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany60.gif" />
+		
+		
+image::firstgany60.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Create a new class selection</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Create a new class selection,pdfwidth=60%]
+		
+		
 			Press the
 			<guibutton>Finish</guibutton>
 			button.
-		</para>
-		<para>
+		
+		
 			This creates a new file and opens the Java
-			<wordasword>editor</wordasword>
+			_editor_
 			.
 			Change the class based on the following listing.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/firstexample/MyFirstClass.java" />
 			</programlisting>
-		</para>
-		<para>You could also directly create new packages via this dialog. If
+		
+		You could also directly create new packages via this dialog. If
 			you enter a new package in this dialog, it is created automatically.
-		</para>
-	</section>
-	<section id="firstjava_run">
-		<title>Run your project in Eclipse</title>
+		
+	
+[[firstjava_run">
+=== Run your project in Eclipse
 		<indexterm>
 			<primary>Java program</primary>
 			<secondary>run, inside Eclipse
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Now run your code. Either right-click on your Java class in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			or right-click in the Java class and
 			select
-			<menuchoice>
-				<guimenu>Run-as</guimenu>
-				<guisubmenu>Java application</guisubmenu>
-			</menuchoice>
+			menu:Run-as[Java application]
 			.
 
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany70.gif" />
+		
+		
+image::firstgany70.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Run project</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Run project,pdfwidth=60%]
+		
+		
 			Eclipse will run your Java program. You should see the output in
 			the
-			<guilabel>Console</guilabel>
+			_Console_
 			view
 			.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/firstgany80.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Result of the running application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para> Congratulations! You created your first Java project, a
+					<phrase>Result of the running application,pdfwidth=60%]
+		
+		 Congratulations! You created your first Java project, a
 			package,
 			a Java class and you ran this program inside
 			Eclipse.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -1,14 +1,14 @@
-<section id="swt" role="wrapper">
-	<title>SWT Overview</title>
 
-	<section id="swt_overview">
-		<title>What is SWT?</title>
+	<title>SWT Overview
+
+[[swt_overview">
+=== What is SWT?
 		<indexterm>
 			<primary>SWT</primary>
 		</indexterm>
 		
 			The Standard Widget Toolkit (
-			<wordasword>SWT</wordasword>
+			_SWT_
 			)
 			is the default user interface library used by Eclipse. It provides
 			widgets,
@@ -44,9 +44,9 @@
 			the OS are
 			accessed by the SWT
 			framework via the
-			<wordasword>Java Native
+			_Java Native
 				Interface
-			</wordasword>
+			_
 			(JNI)
 			framework. JNI is a
 			programming
@@ -68,7 +68,7 @@
 		
 		
 			The approach of using native widgets can also be found in
-			<wordasword>AWT</wordasword>
+			_AWT_
 			, a
 			standard user interface library available in Java.
 			But SWT
@@ -81,9 +81,9 @@
 			widget on
 			this platform.
 		
-	</section>
-	<section id="swt_eclipse">
-		<title>Eclipse applications and SWT</title>
+	
+[[swt_eclipse">
+=== Eclipse applications and SWT
 		
 			Eclipse applications typically use
 			SWT
@@ -117,9 +117,9 @@
 			interface toolkit.
 		
 
-	</section>
-	<section id="swt_display">
-		<title>Display and Shell</title>
+	
+[[swt_display">
+=== Display and Shell
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Display</secondary>
@@ -189,11 +189,11 @@
 			which is currently used or a default one.
 		
 
-	</section>
+	
 
 
-	<section id="swt_eventloop">
-		<title>Event loop</title>
+[[swt_eventloop">
+=== Event loop
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Event loop</secondary>
@@ -247,6 +247,5 @@
 			Eclipse
 			framework.
 		
-	</section>
+	
 
-</section>

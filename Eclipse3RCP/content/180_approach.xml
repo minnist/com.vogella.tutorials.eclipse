@@ -1,6 +1,6 @@
-<section id="rcpapproach">
-	<title>Approach</title>
-	<para>If you teach programming you basically have two extreme choices.
+
+	<title>Approach
+	If you teach programming you basically have two extreme choices.
 		The
 		first approach is that you
 		explain everything first and then do it.
@@ -8,10 +8,10 @@
 		second choice is that you first do everything and then explain what
 		you
 		have done.
-	</para>
-	<para>The following description tends towards the second approach.
-	</para>
-	<para>
+	
+	The following description tends towards the second approach.
+	
+	
 		We will develop
 		a small RCP application, create a product and
 		launch it,
@@ -20,23 +20,22 @@
 		and what a
 		product
 		or a launch configuration is.
-	</para>
+	
 
-	<para> In my experience its easier to understand an explanation, if you
+	 In my experience its easier to understand an explanation, if you
 		have already created an example.
-	</para>
-	<para>
+	
+	
 		The risk associated with that
 		approach is that if you run into a
 		problem you do not know how to solve
 		it.
-	</para>
-	<para> Therefore if you
+	
+	 Therefore if you
 		have problem starting your product, I suggest to
 		read
 		the chapter about
 		launch configurations and if that does not help,
 		check the "Products and Branding"
 		chapter.
-	</para>
-</section>
+	

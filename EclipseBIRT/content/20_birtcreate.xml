@@ -1,44 +1,43 @@
-<section id="birtcreate">
-	<title>Create Project and REport</title>
-	<para> Create a new Java Project with the name
+
+	<title>Create Project and REport
+	 Create a new Java Project with the name
 		"de.vogella.birt.stocks". 
-		</para>
-	<para>
+		
+	
 		Create a new report "stock_report.rptdesign"
 		via File -> New ->
 		Other -> Business Intelligence and Reporting ->
 		Report.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/createreport10.gif" format="gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/createreport20.gif" format="gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/createreport30.gif" format="gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para> The new report is displayed in the "Report
+	
+	 The new report is displayed in the "Report
 		Design" perspective. Delete everything in the example report except the report header. The result
-		should look like the following.</para>
+		should look like the following.
 		
-		<para>
+		
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/createreport40.gif" format="gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
-</section>
+	

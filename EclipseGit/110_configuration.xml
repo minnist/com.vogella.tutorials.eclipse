@@ -1,9 +1,9 @@
-<section id="egitconfiguration">
-	<title>How to configure the usage of Git in Eclipse</title>
 
-	<section id="egitconfiguration_interoperability">
-		<title>Interoperability of Git command line settings with the Eclipse IDE</title>
-		<para>
+	<title>How to configure the usage of Git in Eclipse
+
+[[egitconfiguration_interoperability">
+=== Interoperability of Git command line settings with the Eclipse IDE
+		
 			The Git functionality in the Eclipse IDE uses the same
 			configuration files as the Git command
 			line tools. This
@@ -11,18 +11,18 @@
 			easier to use the Eclipse Git tooling and the command line tooling for Git interchangeable. One notable
 			exception is
 			currently the support of gitattributes. See
-			<ulink url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342372">Bug 342372 - support gitattributes</ulink>
+			https://bugs.eclipse.org/bugs/show_bug.cgi?id=342372">Bug 342372 - support gitattributes
 			for details.
-		</para>
-	</section>
-	<section id="egitconfiguration_settings">
-		<title>Git user settings in Eclipse</title>
+		
+	
+[[egitconfiguration_settings">
+=== Git user settings in Eclipse
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>preference settings
 			</secondary>
 		</indexterm>
-		<para>
+		
 			To use Git you must configure your full name and email
 			address.
 			This information is used to fill the author and
@@ -33,119 +33,82 @@
 			preference
 			setting.
 			Select
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Team</guisubmenu>
-				<guisubmenu>Git</guisubmenu>
-				<guisubmenu>Configuration</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Team > Git > Configuration]
 			to see the current configuration and to change it.
-		</para>
+		
 
-		<para>
+		
 			You can add entries to your Git configuration by pressing the
 			<guibutton>Add Entries</guibutton>
 			button on the
-			<guilabel>Git Configuration</guilabel>
+			_Git Configuration_
 			preference page.
-		</para>
+		
 
 
 
-	</section>
-	<section id="egitconfiguration_defaultlocation">
-		<title>Default clone location</title>
-		<para>
+	
+[[egitconfiguration_defaultlocation">
+=== Default clone location
+		
 			If you clone a new repository via Eclipse Git,
 			it
 			will create by default a new sub-folder for the new Git repository in
 			a default directory.
 			This default path can be configured
 			via the
-			<menuchoice>
-				<guimenu>Windows</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Team</guisubmenu>
-				<guisubmenu>Git</guisubmenu>
-			</menuchoice>
+			menu:Windows[Preferences > Team > Git]
 			entry in the
-			<guilabel>Default Repository folder</guilabel>
+			_Default Repository folder_
 			field.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitconfig30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>EGit default repository folder</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::egitconfig30.png[EGit default repository folder,pdfwidth=60%]
+		
 
-		<para>You can also use Eclipse configuration variables to define
+		You can also use Eclipse configuration variables to define
 			this
 			path, e.g., if you want to store repositories in
 			the folder "git"
 			under the Eclipse workspace you may use ${workspace_loc}/git.
-		</para>
-	</section>
+		
+	
 
-	<section id="egitconfiguration_toolbar">
-		<title>Configuring the toolbar and the menu for Git usage</title>
+[[egitconfiguration_toolbar">
+=== Configuring the toolbar and the menu for Git usage
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>toolbar
 			</secondary>
 		</indexterm>
-		<para>
+		
 			To simplify access to the common Git operations you can activate the
 			Git toolbar. For this select
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guimenu>Perspective</guimenu>
-				<guisubmenu>Customize perspective...</guisubmenu>
-			</menuchoice>
+			menu:Window</guimenu>Perspective[Customize perspective...]
 			and check the
-			<guilabel>Git</guilabel>
+			_Git_
 			and
-			<guilabel>Git Navigation Actions</guilabel>
+			_Git Navigation Actions_
 			entries in
 			the
-			<guilabel>Action Set Availability</guilabel>
+			_Action Set Availability_
 			tab.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/git_toolbar10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Git toolbar buttons</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::git_toolbar10.png[Git toolbar buttons,pdfwidth=60%]
+		
+		
 			Afterwards you can configure which Git operations should be available
 			via the
-			<guilabel>Tool Bar Visibility</guilabel>
+			_Tool Bar Visibility_
 			or the
-			<guilabel>Menu Visibility</guilabel>
+			_Menu Visibility_
 			tab.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/git_toolbar20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Git toolbar buttons</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::git_toolbar20.png[Git toolbar buttons,pdfwidth=60%]
+		
+	
 
 
-</section>

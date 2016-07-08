@@ -1,14 +1,13 @@
 
 <section>
-	<title>Features and Products</title>
-	<para>
+	<title>Features and Products
+	
 		The following description uses feature projects and products, please
 		see
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseFeatureProject/article.html">Feature projects</ulink>
+			url="http://www.vogella.com/tutorials/EclipseFeatureProject/article.html">Feature projects
 		and
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseProductDeployment/article.html">Eclipse Products and Deployment</ulink>
+			url="http://www.vogella.com/tutorials/EclipseProductDeployment/article.html">Eclipse Products and Deployment
 		for a description of these topics.
-	</para>
-</section>
+	

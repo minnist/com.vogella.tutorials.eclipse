@@ -1,79 +1,70 @@
-<section id="keybinding">
-	<title>Tutorial: Defining key bindings for Commands</title>
-	<section id="keybinding_shortcut">
-		<title>Keybinding using the default scheme</title>
-		<para> Create a new project "de.vogella.rcp.intro.commands.keybinding"
+
+	<title>Tutorial: Defining key bindings for Commands
+[[keybinding_shortcut">
+=== Keybinding using the default scheme
+		 Create a new project "de.vogella.rcp.intro.commands.keybinding"
 			using the "Hello RCP" template, declare command
 			"de.vogella.rcp.intro.commands.keybinding.hello" with a default
 			handler "de.vogella.rcp.intro.commands.keybinding.HelloHandler" which
-			prints out "Hello" to the console</para>
-		<para> Add the extension point "org.eclipse.ui.bindings" to your
+			prints out "Hello" to the console
+		 Add the extension point "org.eclipse.ui.bindings" to your
 			project. Right-click in this extension point, select New-> Key.
-		</para>
-		<para> Select as schemeID
+		
+		 Select as schemeID
 			"org.eclipse.ui.defaultAcceleratorConfiguration" this is the
 			workbench default and will make sure you keybinding is valid in the
 			whole application. The commandId is the ID of the command you just
 			created. The sequence is the shortcut key for calling the command. M1
-			represents the Ctrl key.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/keybinding10.gif" />
+			represents the Ctrl key.
+		
+image::keybinding10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> If you now run it the keybinding should work and if you press
-			Ctrll+1 the message on the console should be visible.</para>
-	</section>
-	<section id="keybinding_scheme">
-		<title>Defining your own scheme</title>
-		<para> Add now another key binding "Ctrl+N" to the command
+		
+		 If you now run it the keybinding should work and if you press
+			Ctrll+1 the message on the console should be visible.
+	
+[[keybinding_scheme">
+=== Defining your own scheme
+		 Add now another key binding "Ctrl+N" to the command
 			"de.vogella.rcp.intro.commands.keybinding.hello". Try it. This will
-			not work as it is conflicting with the Eclipse default schema.</para>
-		<para> Right-click in this extension point "org.eclipse.ui.bindings",
-			select New-> Scheme. Create a schema with the id "MyScheme".</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/keybinding20.gif" />
+			not work as it is conflicting with the Eclipse default schema.
+		 Right-click in this extension point "org.eclipse.ui.bindings",
+			select New-> Scheme. Create a schema with the id "MyScheme".
+		
+image::keybinding20.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Assign the scheme id to your commands.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/keybinding30.gif" />
+		
+		 Assign the scheme id to your commands.
+		
+image::keybinding30.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Define a product. See
 			<ulink
 				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#product">
-				Defining a product for Eclipse RCP</ulink>
+				Defining a product for Eclipse RCP
 			for details. Create the following file "plugin_customization.ini" and put it
-			in your main directory</para>
-		<para>
+			in your main directory
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/keybinding/plugin_customization.ini" />
 			</programlisting>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/keybinding40.gif" />
+		
+image::keybinding40.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>If you now run your product the "Ctrl+N" shortcut should work.
-		</para>
-	</section>
-</section>
+		
+		If you now run your product the "Ctrl+N" shortcut should work.
+		
+	

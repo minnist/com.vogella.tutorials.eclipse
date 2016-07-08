@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>JPA with Eclipse Dali - Tutorial</title>
+=== JPA with Eclipse Dali - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -23,16 +23,16 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>07.07.2009</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Dali</title>
-			<para> This article describes how to use Eclipse Dali for JPA
+	=== Eclipse Dali
+			 This article describes how to use Eclipse Dali for JPA
 				mapping.
-			</para>
+			
 
-			<para>This article is based on Eclipse 3.5 (Eclipse Galileo). </para>
+			This article is based on Eclipse 3.5 (Eclipse Galileo). 
 		</abstract>
 	</articleinfo>
 

@@ -1,15 +1,15 @@
-<section id="ownobjects" role="wrapper">
-	<title>Extending the objects available for the dependency injection
-	</title>
-	<section id="ownobjects_overview">
-		<title>Creating and injecting custom objects</title>
 
-		<para>
+	<title>Extending the objects available for the dependency injection
+	
+[[ownobjects_overview">
+=== Creating and injecting custom objects
+
+		
 			Using dependency injection for your custom objects has two
 			flavors.
 			<orderedlist>
 				<listitem>
-					<para>
+					
 						You
 						want
 						to create objects which declare their
@@ -20,11 +20,11 @@
 						context. See
 						<xref linkend="customobjects_cif" />
 						for details.
-					</para>
+					
 				</listitem>
 
 				<listitem>
-					<para>
+					
 						You want the Eclipse dependency container to create
 						your
 						custom
@@ -38,17 +38,17 @@
 						and
 						<xref linkend="ownobjects_singletons" />
 						.
-					</para>
+					
 				</listitem>
 
 			</orderedlist>
 
 
-		</para>
-	</section>
+		
+	
 
-	<section id="customobjects_cif">
-		<title>Using dependency injection to create objects</title>
+[[customobjects_cif">
+=== Using dependency injection to create objects
 		<indexterm>
 			<primary>Dependency injection</primary>
 			<secondary>Create objects with the Eclipse DI framework</secondary>
@@ -64,7 +64,7 @@
 			<primary>CIF</primary>
 		</indexterm>
 
-		<para>
+		
 			Using dependency injection is not limited to the objects created by
 			the
 			Eclipse runtime. You can use the same approach
@@ -75,13 +75,13 @@
 			For this you use the
 			<code>ContextInjectionFactory</code>
 			class as demonstrated in the following code example.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/injectown.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
 			<code>ContextInjectionFactory.make()</code>
 			method creates the object. You can also put it into the
@@ -90,9 +90,9 @@
 			after the creation. If you place it into the
 			<code>IEclipseContext</code>
 			of the application, the created object is globally available.
-		</para>
+		
 
-		<para>
+		
 			For this you can either use an existing
 			<code>IEclipseContext</code>
 			or create a new
@@ -107,21 +107,21 @@
 			context. Call the
 			<code>dispose</code>
 			method on your local context, if the object is not needed anymore.
-		</para>
+		
 
-		<para>
+		
 			The following code demonstrates how to create a new
 			<code>IEclipseContext</code>
 			object and to place values into it. This context can be used to
 			create a new object.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/createContext.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The next code example demonstrates how you can connect your new
 			<code>IEclipseContext</code>
 			object with an existing context hierarchy. The factory searches
@@ -129,13 +129,13 @@
 			hierarchy upwards to find values, requested by the
 			class which is
 			instantiated.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/createContext2.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
 			<code>ContextInjectionFactory.inject(Object, IEclipseContext)</code>
 			method allows you to perform injection on an existing object. For
@@ -143,15 +143,15 @@
 			<code>new()</code>
 			operator, you can
 			still run dependency injection on it.
-		</para>
-	</section>
-	<section id="ownobjects_difrom">
-		<title>Create your custom objects automatically with @Creatable
-		</title>
+		
+	
+[[ownobjects_difrom">
+=== Create your custom objects automatically with @Creatable
+		
 		<indexterm>
 			<primary>@Creatable</primary>
 		</indexterm>
-		<para>
+		
 			If you want the Eclipse framework to create your custom objects
 			for
 			you,
@@ -164,8 +164,8 @@
 			in the
 			context. The automatically-generated instance is not stored in
 			the context.
-		</para>
-		<para>
+		
+		
 			If you have a non default-constructor, you must use
 			the
 			<code>@Inject</code>
@@ -173,22 +173,22 @@
 			on the constructor to indicate that Eclipse should try to
 			run
 			dependency injection on it.
-		</para>
-		<para>For example, assume that you have the following domain model.
-		</para>
-		<para>
+		
+		For example, assume that you have the following domain model.
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/Dependent.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/YourObject.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			As the Eclipse framework is allowed to create instances of the
 			<code>Dependent</code>
 			and the
@@ -203,8 +203,8 @@
 			throws
 			an
 			exception.
-		</para>
-		<para>
+		
+		
 			Assuming that you have defined the
 			<code>ITodoService</code>
 			OSGi
@@ -213,34 +213,33 @@
 			<code>YourObject</code>
 			class injected into a part. The following example code demonstrates
 			that.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/usage.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="ownobjects_singletons">
-		<title>Create automatically objects in the application context with @Singleton</title>
+	
+[[ownobjects_singletons">
+=== Create automatically objects in the application context with @Singleton
 		<indexterm>
 			<primary>@Singleton</primary>
 		</indexterm>
-		<para>
+		
 			If the object should be created in the application context, use the
 			<code>@Singleton</code>
 			annotation in addition to the
 			<code>@Creatable</code>
 			annotation. This ensures that only one instance of the object is
 			created in your application.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/di_own/YourObjectSingleton.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -1,21 +1,21 @@
-<section id="debugging" role="wrapper">
-	<title>Overview</title>
-	<section id="debugging_overview">
-		<title>What is debugging?</title>
+
+	<title>Overview
+[[debugging_overview">
+=== What is debugging?
 		<indexterm>
 			<primary>Debugging</primary>
 		</indexterm>
-		<para>
-			<wordasword>Debugging</wordasword>
+		
+			_Debugging_
 			allows you to run a program interactively while watching
 			the
 			source
 			code
 			and the variables during the execution.
-		</para>
-		<para>
+		
+		
 			By
-			<wordasword>breakpoints</wordasword>
+			_breakpoints_
 			<indexterm>
 				<primary>Breakpoint</primary>
 			</indexterm>
@@ -23,40 +23,40 @@
 			program
 			should stop. To stop the execution only if a field is read or
 			modified, you can specify
-			<wordasword>watchpoints</wordasword>
+			_watchpoints_
 			<indexterm>
 				<primary>Watchpoint</primary>
 			</indexterm>
 			.
-		</para>
-		<para>
-			<wordasword>Breakpoints</wordasword>
+		
+		
+			_Breakpoints_
 			and
-			<wordasword>watchpoints</wordasword>
+			_watchpoints_
 			can be summarized as
-			<wordasword>stop points</wordasword>
+			_stop points_
 			.
-		</para>
-		<para>Once the program is stopped you can investigate variables,
+		
+		Once the program is stopped you can investigate variables,
 			change their content, etc.
-		</para>
-	</section>
-	<section id="debugging_eclipse">
-		<title>Debugging support in Eclipse</title>
-		<para>
+		
+	
+[[debugging_eclipse">
+=== Debugging support in Eclipse
+		
 			Eclipse allows you to start a Java program
 			in
-			<wordasword>Debug mode</wordasword>
+			_Debug mode_
 			.
-		</para>
-		<para>
+		
+		
 			Eclipse has a special
-			<guilabel>Debug</guilabel>
-			<wordasword>perspective</wordasword>
+			_Debug_
+			_perspective_
 			which gives you a preconfigured set of
-			<wordasword>views</wordasword>
+			_views_
 			. In this
-			<wordasword>perspective</wordasword>
+			_perspective_
 			you
 			control the execution
 			process of your program and
@@ -64,7 +64,6 @@
 			investigate the
 			state of
 			the variables.
-		</para>
+		
 
-	</section>
-</section>
+	

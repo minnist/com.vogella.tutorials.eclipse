@@ -1,4 +1,4 @@
-<section id="waitoperations">
+
 	<title>Waiting for certain conditions
 
 	During UI tests there may be longer operations, which makes it necessary to wait until a
@@ -47,4 +47,4 @@
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/wait/wait_for_shell_matcher.java"/>
 		</programlisting>
 	
-</section>
+

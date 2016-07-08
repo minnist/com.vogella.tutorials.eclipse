@@ -1,14 +1,14 @@
-<section id="resources">
+
 	<title>Links and Literature
 	
-	<section id="resources_rest">
-		<title>SWTBot Resources
+[[resources_rest">
+=== SWTBot Resources
 		
-			<ulink url="http://www.eclipse.org/swtbot/">SWTBot homepage</ulink>
+			http://www.eclipse.org/swtbot/">SWTBot homepage
 		
 		
-			<ulink url="http://wiki.eclipse.org/SWTBot/FAQ">SWTBot FAQ</ulink>
+			http://wiki.eclipse.org/SWTBot/FAQ">SWTBot FAQ
 		
-	</section>
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>
+

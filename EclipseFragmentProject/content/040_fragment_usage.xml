@@ -1,6 +1,6 @@
-<section id="fragement_usage">
-	<title>Typical use cases for fragments</title>
-	<para>
+
+	<title>Typical use cases for fragments
+	
 		Fragments can be used to contain test classes. This
 		way
 		the
@@ -21,8 +21,8 @@
 		external
 		API of
 		other plug-ins.
-	</para>
-	<para>
+	
+	
 		Fragments can also be used to contribute property files for
 		additional
 		translations. This allows contributing
@@ -32,10 +32,10 @@
 		any other part
 		of
 		the code.
-	</para>
+	
 
 
-	<para>
+	
 		In
 		addition, fragments can also supply native code which is
 		specific
@@ -54,11 +54,10 @@
 		Eclipse help
 		system if you search for
 		the following term: "OSGi Bundle Manifest Headers".
-	</para>
-	<para>Last but not the least, fragments can be used to contain resources
+	
+	Last but not the least, fragments can be used to contain resources
 		like icon sets or other images. This allows you
 		to
 		customize your
 		application icons via the provided fragment.
-	</para>
-</section>
+	

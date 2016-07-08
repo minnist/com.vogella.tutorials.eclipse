@@ -1,115 +1,93 @@
-<section id="startingeclipse" role="wrapper">
-	<title>Getting started</title>
-	<section id="startingeclipse">
-		<title>Starting the Eclipse IDE</title>
-		<para>
+
+	<title>Getting started
+[[startingeclipse">
+=== Starting the Eclipse IDE
+		
 			To start Eclipse, double-click the
 			<code>eclipse.exe</code>
 			(Microsoft Windows) or
 			<code>eclipse</code>
 			(Linux / Mac) file in the directory where you
 			unpacked Eclipse.
-		</para>
-		<para>
+		
+		
 			The Eclipse system
 			prompts you for a
-			<wordasword>workspace</wordasword>
+			_workspace_
 			.
 			The
-			<wordasword>workspace</wordasword>
+			_workspace_
 			is
 			the location in your file system where Eclipse stores its
 			preferences and other resources. For example your
 			projects can be stored in the workspace.
-		</para>
-		<para>
+		
+		
 			Select
 			an empty directory
 			and click the
 			<guibutton>OK</guibutton>
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/starteclipse10.png" />
+		
+		
+image::starteclipse10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Selecting the Workspace</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Selecting the Workspace,pdfwidth=60%]
+		
+		
 			Eclipse starts and shows the
-			<guilabel>Welcome</guilabel>
+			_Welcome_
 			page. Close this
 			page
 			by
 			clicking the
-			<guilabel>x</guilabel>
+			_x_
 			beside
-			<guilabel>Welcome</guilabel>
+			_Welcome_
 			.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="30" fileref="images/starteclipse20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Closing the Eclipse welcome screen</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>After closing the welcome screen, the application
+					<phrase>Closing the Eclipse welcome screen,pdfwidth=60%]
+		
+		After closing the welcome screen, the application
 			should look
 			similar to the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/starteclipse30.png" />
+		
+		
+image::starteclipse30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Closing the Eclipse welcome screen</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="startingeclipse_appearance">
-		<title>Appearance</title>
-		<para>The appearance of Eclipse can be configured. By default, Eclipse
+					<phrase>Closing the Eclipse welcome screen,pdfwidth=60%]
+		
+	
+[[startingeclipse_appearance">
+=== Appearance
+		The appearance of Eclipse can be configured. By default, Eclipse
 			ships with a few themes but you can also extend Eclipse with new
 			themes.
-		</para>
-		<para>
+		
+		
 			To change the appearance, select from the menu
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>General</guisubmenu>
-				<guisubmenu>Appearance</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > General > Appearance]
 			.
-		</para>
-		<para>
+		
+		
 			The
-			<guilabel>Theme</guilabel>
+			_Theme_
 			selection allows you to change the appearance of your Eclipse IDE.
 			For example you can switch to the
-			<wordasword>Dark</wordasword>
+			_Dark_
 			theme of Eclipse.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/starteclipse40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Changing the theme</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+image::starteclipse40.png[Changing the theme,pdfwidth=60%]
+		
+	
+

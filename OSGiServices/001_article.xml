@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>OSGi Services - Tutorial</title>
+=== OSGi Services - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,12 +30,12 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>18.07.2014</pubdate>
 		<releaseinfo>
-			<para>Version 5.1</para>
+			Version 5.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>OSGi services with Eclipse Equinox</title>
-			<para> This tutorial explains the usage of OSGi services primary
+	=== OSGi services with Eclipse Equinox
+			 This tutorial explains the usage of OSGi services primary
 				focusing on the usage of declarative services.
 				Eclipse Equinox is
 				used as an
@@ -44,7 +44,7 @@ Version 0.3, 06.07.2016
 				this tutorial Eclipse 4.4
 				(Luna) is
 				used.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

@@ -1,53 +1,50 @@
-<section id="intro">
-	<title>Eclipse BIRT</title>
-	<section id="intro_overview">
-		<title>Overview</title>
-		<para> Eclipse BIRT allows the creation of reports based on data from
+
+	<title>Eclipse BIRT
+[[intro_overview">
+=== Overview
+		 Eclipse BIRT allows the creation of reports based on data from
 			different data
 			sources. Data sources define where the data is
 			stored.
-		</para>
-		<para>
+		
+		
 			BIRT provides for example the following data sources:
 			<itemizedlist>
 				<listitem>
-					<para>Databases (via JDBC)</para>
+					Databases (via JDBC)
 				</listitem>
 				<listitem>
-					<para>Text Files (cvs, XML)</para>
+					Text Files (cvs, XML)
 				</listitem>
 				<listitem>
-					<para>WebServices (via WSDL-Files)</para>
+					WebServices (via WSDL-Files)
 				</listitem>
 				<listitem>
-					<para>Scripting Data sources</para>
+					Scripting Data sources
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para> You use in BIRT "Data sets" to
+		
+		 You use in BIRT "Data sets" to
 			defines queries on data source. These data sets can be used in a report.
-		</para>
-		<para> In a Java program it is often convenient to use Java
+		
+		 In a Java program it is often convenient to use Java
 			objects as
 			a data source for reports. This article will focus on the
 			usage of
 			Plain Old Java Objects (POJO) as data sources for BIRT
 			reports.
-		</para>
-	</section>
-	<section id="birtintro_report">
-		<title>Example</title>
-		<para>
+		
+	
+[[birtintro_report">
+=== Example
+		
 			In this tutorial we will build a report which will show us
 			information about the stock market. We get the information from a
 			Java Object. The data will be displayed in a chart and in a table
 			with detailed information. The result should look like this:
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/finalresult10.gif" />
+image::finalresult10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

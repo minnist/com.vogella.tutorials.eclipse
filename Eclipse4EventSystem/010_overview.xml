@@ -1,20 +1,20 @@
-<section id="eventsystem" role="wrapper">
-	<title>Communication within your Eclipse application</title>
-	<section id="eventsystem_concept">
-		<title>Event based communication</title>
+
+	<title>Communication within your Eclipse application
+[[eventsystem_concept">
+=== Event based communication
 		<indexterm>
 			<primary>Events</primary>
 		</indexterm>
 		<indexterm>
 			<primary>Events bus</primary>
 		</indexterm>
-		<para>
+		
 			In your application you frequently have the need to communicate
 			between application components. This communication should be loosely
 			coupled, to remove dependency between the components and to increase
 			reuse of these components.
-		</para>
-		<para>This can be archived by the subscriber/ publisher model
+		
+		This can be archived by the subscriber/ publisher model
 			implemented as an event system.
 			Software
 			components
@@ -26,44 +26,40 @@
 			send
 			events out. The event system ensures that all registered components receive
 			the event they registered for. .
-		</para>
-	</section>
-	<section id="eventsystem_overview">
-		<title>The event bus of Eclipse</title>
-		<para>
+		
+	
+[[eventsystem_overview">
+=== The event bus of Eclipse
+		
 			For this purpose
 			the Eclipse platform
 			provides a global event
 			based
 			communication system, called the
-			<wordasword>event bus</wordasword>
+			_event bus_
 			.
-		</para>
+		
 
-		<para>Any software component which has access to the event system can
+		Any software component which has access to the event system can
 			send out arbitrary events as depicted in the following graphic.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eventbroker10.png" scale="30" />
+		
+		
+image::eventbroker10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Sending out events with an event broker</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Sending out events with an event broker,pdfwidth=60%]
+		
 
-		<para>The Eclipse platform will make sure that registered components
+		The Eclipse platform will make sure that registered components
 			receive the messages. The Eclipse platform uses this event system for
 			the
 			internal
 			communication.
-		</para>
+		
 
-	</section>
-	<section id="eventsystem_eventadmin">
-		<title>Event service</title>
+	
+[[eventsystem_eventadmin">
+=== Event service
 		<indexterm>
 			<primary>Event service</primary>
 		</indexterm>
@@ -72,7 +68,7 @@
 			<seealso>Event service</seealso>
 		</indexterm>
 
-		<para>
+		
 			The Eclipse framework provides the event service for event
 			communication.
 			This service can be accessed via dependency injection
@@ -84,20 +80,20 @@
 			communicate
 			between your
 			own application components.
-		</para>
-		<para>
+		
+		
 			The Eclipse
 			event service
 			is based on the OSGi
-			<wordasword>EventAdmin</wordasword>
+			_EventAdmin_
 			service but has been wrapped with a simpler API.
-		</para>
+		
 
 
-	</section>
-	<section id="eventsystem_requiredplugins">
-		<title>Required plug-ins to use the event service</title>
-		<para>
+	
+[[eventsystem_requiredplugins">
+=== Required plug-ins to use the event service
+		
 			The following plug-ins are required to use the
 			event service
 			functionality:
@@ -111,13 +107,12 @@
 			</itemizedlist>
 
 
-		</para>
+		
 
 
-	</section>
+	
 
 
 
 
 
-</section>

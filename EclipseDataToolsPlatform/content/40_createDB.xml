@@ -1,81 +1,68 @@
-<section id="createDB">
-	<title>Working with Databases</title>
-	<section id="createDB">
-		<title>Create a new Databases Connection</title>
-		<para>
+
+	<title>Working with Databases
+[[createDB">
+=== Create a new Databases Connection
+		
 			Switch to the perspective "Database Development" and select
 			"Database Connections", right mouse click and select
-			new.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase06.gif" />
+			new.
+		
+image::dtpdatabase06.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase10.gif" />
+		
+		
+image::dtpdatabase10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Select Derby.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase20.gif" />
+		
+		 Select Derby.
+		
+image::dtpdatabase20.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Maintain a Database location where the new database should be
+		
+		 Maintain a Database location where the new database should be
 			stored on your file system. The flag "Create database (if required)"
 			should be selected. Maintain user and password and press finish.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase30.gif" />
+		
+		
+image::dtpdatabase30.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>Congratulation! You have created a new database.
-		</para>
+		
+		Congratulation! You have created a new database.
+		
 
-	</section>
-	<section id="connectDB">
-		<title>Create a new Databases Connection</title>
-		<para> Now your folder Database should have an additional entry. Right
+	
+[[connectDB">
+=== Create a new Databases Connection
+		 Now your folder Database should have an additional entry. Right
 			it and select
-			connect (if you not connected).</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase50.gif" />
+			connect (if you not connected).
+		
+image::dtpdatabase50.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>Open then tree to see the content of your new database.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dtpdatabase60.gif" />
+		
+		Open then tree to see the content of your new database.
+		
+		
+image::dtpdatabase60.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>Congratulation. You have connected yourself to the new database.
-		</para>
-		<para>
+		
+		Congratulation. You have connected yourself to the new database.
+		
+		
 			<tip> Sometimes you have to disconnect and connect again to see the
 				changes you did. For example if you create a new database schema.
 			</tip>
-		</para>
-	</section>
-</section>
+		
+	

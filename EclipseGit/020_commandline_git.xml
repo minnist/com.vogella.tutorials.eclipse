@@ -1,16 +1,16 @@
-<section id="commandline_git">
-	<title>Command line Git</title>
-	<para>
+
+	<title>Command line Git
+	
 		This tutorial describes the usage of
-		<wordasword>EGit</wordasword>
+		_EGit_
 		. If you want to learn about
 		the usage of the Git command line, you can
 		use the
-		<ulink url="http://www.vogella.com/tutorials/Git/article.html"> Git Tutorial</ulink>
+		http://www.vogella.com/tutorials/Git/article.html"> Git Tutorial
 		as a reference.
-	</para>
-	<para>
+	
+	
 		This tutorial also explains the basic Git terminology, e.g., what
 		is a commit, branch, etc.
-	</para>
-</section>
+	
+

@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Adding menus, toolbar and popup menus to the Eclipse IDE - Tutorial</title>
+=== Adding menus, toolbar and popup menus to the Eclipse IDE - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -28,16 +28,16 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>22.01.2014</pubdate>
 		<releaseinfo>
-			<para>Version 3.1</para>
+			Version 3.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Commands tutorial</title>
-			<para> This tutorials describes how to add commands, menus and
+	=== Eclipse Commands tutorial
+			 This tutorials describes how to add commands, menus and
 				toolbar entries to the Eclipse IDE.
-			</para>
-			<para>This article is based on Eclipse Kepler (4.3).
-			</para>
+			
+			This article is based on Eclipse Kepler (4.3).
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

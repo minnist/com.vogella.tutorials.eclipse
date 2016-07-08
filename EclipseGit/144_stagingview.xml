@@ -1,28 +1,24 @@
 
-<section id="committingchanges_stagingview">
-	<title>Using the Git Staging view</title>
+
+	<title>Using the Git Staging view
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>Staging view
 		</secondary>
 	</indexterm>
-	<indexterm>
-		<primary>Git Staging view</primary>
-	</indexterm>
-	<indexterm>
-		<primary>Staging view</primary>
-	</indexterm>
-	<para>
+
+
+	
 		Eclipse gives you several options to stage and commit your changes.
 		The
-		<guilabel>Git Staging</guilabel>
+		_Git Staging_
 		view
 		provides a convenient compact overview on all changes you have
 		done compared to the current HEAD revision.
-	</para>
-	<para>
+	
+	
 		The
-		<guilabel>Git Staging</guilabel>
+		_Git Staging_
 		view
 		is
 		non-modal. You can switch between
@@ -32,13 +28,13 @@
 		message and it allows
 		incremental
 		staging for changes.
-	</para>
-	<para>
+	
+	
 		Open the
-		<guilabel>Git Staging</guilabel>
+		_Git Staging_
 		view
 		via the
-		<menuchoice>
+		menu:
 			<guimenu>Window</guimenu>
 			<guisubmenu>Show View</guisubmenu>
 			<guisubmenu>Other...</guisubmenu>
@@ -46,21 +42,21 @@
 			<guisubmenu>Git Staging</guisubmenu>
 		</menuchoice>
 		menu.
-	</para>
-	<para>
+	
+	
 		In this
 		view
 		you
 		select all files which have changed and drag them into
 		the
-		<guilabel>Staged Changes</guilabel>
+		_Staged Changes_
 		area. To commit the staged changes you
 		write a descriptive commit
 		message and press the
 		<guibutton>Commit</guibutton>
 		button which is highlighted in the following screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/gitstaging10.png"/>
@@ -69,8 +65,8 @@
 				<phrase>Git Staging View - Commit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>Perform these actions for your initial changes. Afterwards the
+	
+	Perform these actions for your initial changes. Afterwards the
 		first version of
 		your Java project is
 		under
@@ -90,5 +86,5 @@
 		Eclipse project to
 		this
 		initial point.
-	</para>
-</section>
+	
+

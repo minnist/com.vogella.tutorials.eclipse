@@ -1,47 +1,39 @@
-<section id="team_resetcherrypick">
-	<title>Git reset and Git reflog</title>
-	<section id="team_reset1">
-		<title>git reset</title>
+
+	<title>Git reset and Git reflog
+[[team_reset1">
+=== git reset
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>reset</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>History</guilabel>
+			_History_
 			view
 			allows you to reset your current branch to a commit. Right-click
 			on a
 			certain commit and select
-			<menuchoice>
-				<guimenu>Reset</guimenu>
+			menu:Reset</guimenu>
 			</menuchoice>
 			and the reset mode you would like to use.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egit_reset10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Reset in EGit</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="team_reset2">
-		<title>Finding "invisible" commits with the Reflog view</title>
-		<para>Commits are not visible in the Git history if they can't be
+		
+		
+image::egit_reset10.png[Reset in EGit,pdfwidth=60%]
+		
+	
+[[team_reset2">
+=== Finding "invisible" commits with the Reflog view
+		Commits are not visible in the Git history if they can't be
 			reached from a
 			branch or
 			tag. This might happen during a reset, commit
 			amend or rebase
 			operation. By default, such invisible commits are
 			removed after two weeks by the Git system.
-		</para>
-		<para>
+		
+		
 			The
-			<guilabel>Git Reflog</guilabel>
+			_Git Reflog_
 			view
 			keeps track of the movements of the HEAD pointer and the
 			movements of each branch. This
@@ -51,7 +43,6 @@
 			e.g., if you used the
 			<code>git reset --hard</code>
 			command to remove certain commits.
-		</para>
-	</section>
+		
+	
 
-</section>

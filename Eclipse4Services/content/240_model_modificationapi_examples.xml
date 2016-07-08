@@ -1,16 +1,16 @@
-<section id="modeldynamics" role="wrapper">
-	<title>Example for changing the application model</title>
 
-	<section id="modelservice_example">
-		<title>Example: Search for a perspective and change its attributes</title>
-		<para>
+	<title>Example for changing the application model
+
+[[modelservice_example">
+=== Example: Search for a perspective and change its attributes
+		
 			The following code shows how to access a
 			<code>PartSashContainer</code>
 			with the
 			<code>mypartsashcontainer</code>
 			ID. It also demonstrates how to modify model attributes.
-		</para>
-		<para>
+		
+		
 			In this
 			example it changes the
 			<parameter>container data</parameter>
@@ -18,64 +18,63 @@
 			arrange (layout) the
 			parts
 			in the container.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/emodelservice/layoutingPerspective.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="modeldynamics_example1">
-		<title>Example: Dynamically create a new window</title>
-		<para>
+[[modeldynamics_example1">
+=== Example: Dynamically create a new window
+		
 			To create new model objects you can use the
 			<code>createModelElement()</code>
 			of the model service. After you created such an object you can add it
 			to your application model at runtime.
 
-		</para>
-		<para>
+		
+		
 			For example, the creation of a new window for a running
 			application is demonstrated by the following code snippet.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/model/addWindow.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="modeldynamics_example2">
-		<title>Example: Dynamically create a new part</title>
+		
+	
+[[modeldynamics_example2">
+=== Example: Dynamically create a new part
 
-		<para> The following code demonstrates how to create and add a new
+		 The following code demonstrates how to create and add a new
 			part to the currently
 			active window.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/model/AddPartHandler.java" />
 			</programlisting>
-		</para>
+		
 		<tip>
-			<para>
+			
 				Typically you would add the part to a pre-defined
 				<code>PartStack</code>
 				. Use the model service to search for the correct one.
-			</para>
+			
 		</tip>
 
 
-	</section>
+	
 
 
 
 
 
 
-</section>

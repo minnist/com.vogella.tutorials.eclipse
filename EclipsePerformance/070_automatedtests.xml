@@ -1,10 +1,10 @@
-<section id="automated_tests">
-	<title>Automated tests</title>
-	<para>
+
+	<title>Automated tests
+	
 		The Eclipse project supports
 		<ulink
 			url="https://wiki.eclipse.org/Performance/Automated_Tests">
-			automated tests</ulink>
+			automated tests
 		to continuously run benchmarks.
-	</para>
-</section>
+	
+

@@ -1,13 +1,13 @@
-<section id="templates" role="wrapper">
-	<title>Using and configuring templates and the code formatter</title>
-	<section id="tips_templates">
-		<title>Templates</title>
+
+	<title>Using and configuring templates and the code formatter
+[[tips_templates">
+=== Templates
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>Templates
 			</secondary>
 		</indexterm>
-		<para>
+		
 			In Eclipse you can create templates for code snippets. This code
 			snippets can be activated via
 			autocomplete (
@@ -16,70 +16,58 @@
 				<keycap>Space</keycap>
 			</keycombo>
 			).
-		</para>
-		<para>
+		
+		
 			For example, assume that you are frequently creating
 			<code>public void name(){}</code>
 			methods. You could define a template which creates the
 			method body
 			for
 			you.
-		</para>
-		<para>
+		
+		
 			To create a template for this, select the menu
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu> Templates</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Editor >  Templates]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/templates10.gif" />
+		
+		
+image::templates10.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Maintaining code templates</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Maintaining code templates,pdfwidth=60%]
+		
 
-		<para>
+		
 			Press the
 			<guibutton>New</guibutton>
 			button. Create the template shown in the following
 			screenshot.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/templates30.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating a new code template</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Creating a new code template,pdfwidth=60%]
+		
+		
 			<code>${cursor}</code>
 			indicates
 			that the cursor should be placed at this
 			position after
 			applying the
 			template.
-		</para>
+		
 
-		<para>
+		
 			In this example the name
-			<wordasword>npm</wordasword>
+			_npm_
 			is your keyword for code completion.
-		</para>
-		<para>
+		
+		
 			Now every time you type
-			<wordasword>npm</wordasword>
+			_npm_
 			in the Java editor and
 			press
 			<keycombo>
@@ -90,109 +78,82 @@
 			system will allow you to replace your keyword with
 			your
 			template.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/templates40.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Using code templates</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Using code templates,pdfwidth=60%]
+		
 
-	</section>
-	<section id="tips_codeformater">
-		<title>Code Formatter</title>
+	
+[[tips_codeformater">
+=== Code Formatter
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>code formatter
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Eclipse allows you also to specify the rules for the code
 			formatter.
 			These rules are used by Eclipse to format your source code.
 			This
 			allows you, for example, to define the settings for the usage of
 			whitespace or for line wrapping.
-		</para>
-		<para>
+		
+		
 			You find
 			the settings under
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Code Style</guisubmenu>
-				<guisubmenu>Formatter</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Code Style > Formatter]
 			.
-		</para>
-		<para>
+		
+		
 			Press the
 			<guibutton>New</guibutton>
 			button to create a new set of formatting rules or press the
 			<guibutton>Edit</guibutton>
 			button to adjust an exising profile.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/codeformatter10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Code formatter</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::codeformatter10.png[Code formatter,pdfwidth=60%]
+		
+	
 
-	<section id="tips_codetemplates">
-		<title>Code Templates</title>
+[[tips_codetemplates">
+=== Code Templates
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>code templates
 			</secondary>
 		</indexterm>
-		<para> Eclipse can generate source code automatically. In several
+		 Eclipse can generate source code automatically. In several
 			cases comments are added to the source code.
-		</para>
+		
 
-		<para>
+		
 			Select
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Code Style</guisubmenu>
-				<guisubmenu> Code Templates</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Code Style >  Code Templates]
 			to change the code-generation templates.
-		</para>
-		<para>
+		
+		
 			In the code tree you have the templates. Select, for example,
-			<menuchoice>
-				<guimenu>Code </guimenu>
-				<guisubmenu>Method Body</guisubmenu>
-			</menuchoice>
+			menu:Code [Method Body]
 			and press the
 			<guibutton>Edit</guibutton>
 			button to edit this template and to remove the "todo"
 			comment.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/codetemplates10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Removing the todos from the Java code templates</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+					<phrase>Removing the todos from the Java code templates,pdfwidth=60%]
+		
+	

@@ -1,35 +1,34 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
 
-	<section id="resources_databinding">
-		<title>Eclipse DataBinding Resources</title>
-		<para>
-			<ulink url="http://wiki.eclipse.org/index.php/JFace_Data_Binding">
-				Wiki about the JFace Data Binding</ulink>
+[[resources_databinding">
+=== Eclipse DataBinding Resources
+		
+			http://wiki.eclipse.org/index.php/JFace_Data_Binding">
+				Wiki about the JFace Data Binding
 
-		</para>
-		<para>
+		
+		
 			<ulink
 
 				url="http://tomsondev.bestsolution.at/2009/06/06/galileo-emf-databinding-part-1/">
-				Galileo: EMF-Data Binding – Part 1 from Tom Schindl</ulink>
-		</para>
-		<para>
+				Galileo: EMF-Data Binding – Part 1 from Tom Schindl
+		
+		
 			<ulink
 
 				url="http://tomsondev.bestsolution.at/2009/06/07/galileo-emf-databinding-part-2/">
-				Eclipse EMF Data Binding and the Properties API - Part 2 from Tom Schindl</ulink>
-		</para>
-		<para>
+				Eclipse EMF Data Binding and the Properties API - Part 2 from Tom Schindl
+		
+		
 			<ulink
 
 				url="http://tomsondev.bestsolution.at/2009/06/08/galileo-emf-databinding-%E2%80%93-part-3/">
-				Setting up a TreeViewer with EMF-Data Binding - Part 3 from  Tom Schindl</ulink>
-		</para>
-	</section>
+				Setting up a TreeViewer with EMF-Data Binding - Part 3 from  Tom Schindl
+		
+	
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
 
 
-</section>

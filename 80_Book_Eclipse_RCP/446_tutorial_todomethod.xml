@@ -1,8 +1,8 @@
 <chapter id="tutorial_api">
-	<title>Exercise: Prepare TodoDetailsPart for data</title>
-	<section id="tutorial_settodo1">
-		<title>Preparing for data</title>
-		<para>
+	<title>Exercise: Prepare TodoDetailsPart for data
+[[tutorial_settodo1">
+=== Preparing for data
+		
 			The
 			<code>TodoDetailsPart</code>
 			class
@@ -11,12 +11,12 @@
 			objects. In this exercise we prepare the class so it contains a
 			<code>Todo</code>
 			setter method, which can be called by the Eclipse framework.
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_settodo2">
-		<title>Add dependency</title>
-		<para>
+[[tutorial_settodo2">
+=== Add dependency
+		
 			Add the
 			<code>org.eclipse.e4.ui.services</code>
 			plug-in as dependency to your application plug-in via
@@ -25,11 +25,11 @@
 			file. This is required to use the
 			<code>IServiceConstants</code>
 			interface in the next section.
-		</para>
-	</section>
-	<section id="tutorial_settodo3">
-		<title>Prepare for dependency injection</title>
-		<para>
+		
+	
+[[tutorial_settodo3">
+=== Prepare for dependency injection
+		
 			To be able to set the
 			<code>Todo</code>
 			object from outside create a
@@ -37,8 +37,8 @@
 			method in the
 			<code>TodoDetailsPart</code>
 			class.
-		</para>
-		<para>
+		
+		
 			Use the following example code to create the method.
 			This method uses
 			annotations so that the current active
@@ -60,17 +60,17 @@
 			It also disables the widgets if the Todo object is not
 			yet
 			set.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/selection/TodoDetailsPartWithoutDataBinding.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			In this method
 			you have to check the availability
 			of the SWT widgets
@@ -82,11 +82,11 @@
 			method has
 			already
 			been called.
-		</para>
-	</section>
-	<section id="tutorial_settodo4">
-		<title>Usage of this method</title>
-		<para>
+		
+	
+[[tutorial_settodo4">
+=== Usage of this method
+		
 			At the moment the
 			<code>setTodo()</code>
 			method
@@ -104,7 +104,7 @@
 			changes in
 			<xref linkend="tutorial_usingeselectionservice" />
 			.
-		</para>
-	</section>
+		
+	
 
 </chapter>

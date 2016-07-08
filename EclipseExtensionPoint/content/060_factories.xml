@@ -1,6 +1,6 @@
-<section id="extensionpoints_factories">
-	<title>Extension Factories</title>
-	<para>
+
+	<title>Extension Factories
+	
 		If you create your class directly via the
 		<code>IConfigurationElement</code>
 		class of the extension you are limited to classes which have a
@@ -8,8 +8,8 @@
 		To avoid this
 		restriction you can use
 		extension factories.
-	</para>
-	<para>
+	
+	
 		To use a factory implement the interface
 		<code>IExecutableExtensionFactory</code>
 		in the class attribute of your
@@ -18,5 +18,5 @@
 		elements and can
 		construct the required
 		object.
-	</para>
-</section>
+	
+

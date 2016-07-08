@@ -1,11 +1,11 @@
-<section id="shortcuts_mustknow">
-	<title>Minimum</title>
-	<para>The following shortcuts are the absolute minimum a developer
+
+	<title>Minimum
+	The following shortcuts are the absolute minimum a developer
 		should be familiar with to work efficient in Eclipse.
-	</para>
-	<para>
+	
+	
 		<table frame='all'>
-			<title>Must known shortcuts</title>
+	=== Must known shortcuts
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
@@ -68,5 +68,5 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-</section>
+	
+

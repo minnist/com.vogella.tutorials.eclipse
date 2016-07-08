@@ -1,139 +1,113 @@
-<section id="workorganization" role="wrapper">
-	<title>Organizing your workspace</title>
-	<section id="workorganization_overview">
-		<title>Working sets and tasks</title>
-		<para>
+
+	<title>Organizing your workspace
+[[workorganization_overview">
+=== Working sets and tasks
+		
 			The Eclipse IDE allows you to organize your project into
 			working sets so
 			that you can hide certain resources. 
-		</para>
-	</section>
+		
+	
 
-	<section id="tips_workingsets">
-		<title>Working sets</title>
+[[tips_workingsets">
+=== Working sets
 		<indexterm>
 			<primary>Working sets</primary>
 		</indexterm>
-		<para>
+		
 			You will create more and more projects in your development
 			career. Therefore, the data in your
 			workspace
 			grows
 			and it is hard to
 			find the right information.
-		</para>
+		
 
-		<para>
+		
 			You can
 			use working sets to organize your displayed projects / data.
 			To
 			set up
 			your working set, select the
-			<menuchoice>
-				<guimenu>Package Explorer</guimenu>
-				<guisubmenu>open the drop-down menu</guisubmenu>
-				<guisubmenu>Select Working Set...</guisubmenu>
-			</menuchoice>
-		</para>
-		<para>
+			menu:Package Explorer[open the drop-down menu > Select Working Set...]
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/workingset10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Showing the working set</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Showing the working set,pdfwidth=60%]
+		
+		
 			Press the
 			<guibutton>New</guibutton>
 			button
 			on the following dialog to create a working set.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/workingset20.png" />
+		
+		
+image::workingset20.png" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Creating new working sets</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Creating new working sets,pdfwidth=60%]
+		
+		
 			On the next dialog select
-			<guilabel>Resource</guilabel>
+			_Resource_
 			, press the
 			<guibutton>Next</guibutton>
 			button and select the
 			projects
 			you
 			would like to see and give it a name.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/workingset30.png" />
+		
+		
+image::workingset30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating new working sets</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Creating new working sets,pdfwidth=60%]
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/workingset40.png" />
+		
+image::workingset40.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating new working sets</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Creating new working sets,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/workingset50.png"/>
+		
+image::workingset50.png"/>
 
 				</imageobject>
 				<textobject>
-					<phrase>Creating new working sets</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Creating new working sets,pdfwidth=60%]
+		
 
-		<para>
+		
 			You can now filter the displayed files in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			based on the created working set.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/workingset60.png" />
+		
+image::workingset60.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Filtering resources for the working set</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Filtering resources for the working set,pdfwidth=60%]
+		
 
 		<tip>
-			<para>
+			
 				You can also use the working set to structure your projects in your
 				workspace. For this, select
-				<guilabel>Working Sets</guilabel>
+				_Working Sets_
 				from the context menu of the
-				<guilabel>Package Explorer</guilabel>
+				_Package Explorer_
 				view.
-			</para>
-			<para>
+			
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/workingset70.png" />
@@ -142,9 +116,9 @@
 						<phrase>Structure by working set</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 
-			<para>
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/workingset80.png" />
@@ -153,10 +127,9 @@
 						<phrase>Structure by working set</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 
 
 		</tip>
-	</section>
+	
 
-</section>

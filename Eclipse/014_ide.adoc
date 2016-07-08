@@ -1,0 +1,105 @@
+== Different Eclipse IDE distributions
+
+=== The Eclipse IDE for Java development
+		
+Most people know
+Eclipse
+as an integrated development
+environment
+(IDE)
+for Java. In 2014 the Eclipse IDE is the
+leading
+development
+environment for Java
+with a market share of approximately 65%.
+		
+The Eclipse IDE can be
+extended
+with
+additional software components.
+Eclipse calls these software components
+_plug-ins_
+. Plug-in can be grouped into
+_features_
+.
+		
+Several 
+projects and
+companies
+have
+extended the Eclipse
+IDE
+or
+created stand-alone applications
+(Eclipse
+Rich Client Platform) on top of the
+Eclipse
+framework.
+		
+=== The Eclipse IDE distributions from the Eclipse Packaging Project (EPP)
+		
+The Eclipse IDE is also available as an IDE for other languages,
+ranging
+from C, C++ to Lua, Python, Perl and PHP.
+Several
+pre-packaged
+Eclipse distributions are available for download. These pre-packaged solutions are provided by an
+Eclipse project called the Eclipse Packaging Project (EPP).
+		
+=== Developer and milestone downloads
+		
+The Eclipse project has a simultaneous release every year at the
+end of June. In June
+2016 the Eclipse 4.6 (Neon)
+version was released.
+		
+The top-level Eclipse
+project creates regular builds of the next
+releases including JDT, PDT and the Eclipse
+platform
+projects. This is called the Eclipse SDK.
+
+You
+find
+_Stable Builds_
+which are tested by the community. These
+_milestone_
+(ending with M and a number) and
+_release candidate_
+(RC) builds are created based
+on a
+predefined
+time schedule.
+_Integration_
+(I)
+and
+_Nightly_
+(N)
+builds are test builds which are automatically created. They
+are
+not
+manually tested.
+
+In general, milestone and RC
+builds are
+relative stable compared
+to
+integration builds, but may not contain the
+latest
+features and
+patches.
+		
+You find one of latest Eclipse SDK builds under the
+http://download.eclipse.org/eclipse/downloads/ - Eclipse project download page
+link.
+		
+		
+The packaged solutions are also available as developer release. You find them by clicking on the
+_Developer Builds_
+tab from the
+https://www.eclipse.org/downloads">Eclipse download page
+.
+		
+image::epp_developerbuilds10.png[Eclipse download page - Developer builds,pdfwidth=60%]
+		
+	

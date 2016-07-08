@@ -1,21 +1,21 @@
 
-<section id="createheapdumps">
-	<title>Creating heap dumps for Java programs</title>
-	<para>
+
+	<title>Creating heap dumps for Java programs
+	
 		It is possible to instruct the JVM to create automatically a
-		<wordasword>heap dump</wordasword>
+		_heap dump_
 		in case that it runs out of memory, i.e. in case of a
 		<code>OutOfMemoryError</code>
 		error. To instruct the JVM to create a
-		<wordasword>heap dump</wordasword>
+		_heap dump_
 		in such a situation, start your Java application with the
 		<parameter>-XX:+HeapDumpOnOutOfMemoryError</parameter>
 		option.
-	</para>
+	
 
-	<para>
+	
 		Use the
-		<menuchoice>
+		menu:
 			<guimenu>File</guimenu>
 			<guisubmenu>New</guisubmenu>
 			<guisubmenu>Other...</guisubmenu>
@@ -24,8 +24,8 @@
 		</menuchoice>
 		menu entry to open a dialog to select for which process you want to
 		acquire a memory dump.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/mat_getheapdump10.png"/>
@@ -34,27 +34,27 @@
 				<phrase>Creating a heap dump</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Select the process for a heap dump in the following dialog and press
 		the
-		<guilabel>Finish</guilabel>
+		_Finish_
 		button.
-	</para>
+	
 
-	<para>
+	
 		Alternatively you can also interactively create a heap dump via
 		Eclipse. For this
 		open the
-		<guilabel>Memory Analysis</guilabel>
+		_Memory Analysis_
 		perspective via
-		<menuchoice>
+		menu:
 			<guimenu>Open Perspective</guimenu>
 			<guisubmenu>Other...</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/matperspective20.png"/>
@@ -63,10 +63,10 @@
 				<phrase>Opening the MAT perspective</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
 
-	<para>If you trigger the creation of the heap manually the JVM performs
+	If you trigger the creation of the heap manually the JVM performs
 		a garbage collector run before it writes the heap dump.
-	</para>
-</section>
+	
+

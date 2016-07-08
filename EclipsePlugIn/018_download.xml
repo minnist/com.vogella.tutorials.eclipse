@@ -1,11 +1,11 @@
-<section id="eclipsepdeinstallation">
-	<title>Download the Eclipse SDK</title>
 
-	<para>If you plan to add functionalities to the Eclipse platform, you should download the latest Eclipse release.
+	<title>Download the Eclipse SDK
+
+	If you plan to add functionalities to the Eclipse platform, you should download the latest Eclipse release.
 		Official releases have stable APIs, therefore are a good foundation for adding your plug-ins and features.
-	</para>
+	
 
-	<para>
+	
 		The Eclipse IDE is provided in different flavors. While you can
 		install the necessary tools in any Eclipse
 		package, it is typically
@@ -15,17 +15,17 @@
 		for
 		plug-in development. Other packages adds more tools
 		which are not required for Eclipse plug-in development.
-	</para>
-	<para>
+	
+	
 		Browse to the
-		<ulink url="http://www.eclipse.org/downloads">Eclipse download site</ulink>
+		http://www.eclipse.org/downloads">Eclipse download site
 		and
 		download the
-		<guilabel>Eclipse Standard</guilabel>
+		_Eclipse Standard_
 		package.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/eclipseplugininstall10.png"/>
@@ -34,15 +34,14 @@
 				<phrase>Download Eclipse Plug-in IDE</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 	<note>
-		<para>
+		
 			Eclipse 4.5 provides also a new
-			<ulink url="Eclipse installer">https://wiki.eclipse.org/Eclipse_Installer</ulink>
+			Eclipse installer">https://wiki.eclipse.org/Eclipse_Installer
 			installer. The installer is useful if you want to download several flavors of Eclipse, as it uses a shared
 			installation pool for common plug-ins.
-		</para>
+		
 	</note>
 
 
-</section>

@@ -1,72 +1,71 @@
-<section id="parameters">
-	<title>Using parameters in commands</title>
-	<para>You can also define parameters in commands. Create project
+
+	<title>Using parameters in commands
+	You can also define parameters in commands. Create project
 		"de.vogella.rcp.commands.parameterfirst" using the "Hello RCP"
 		template. 
-	</para>
+	
 
-	<para> Create a command with the id
+	 Create a command with the id
 		"de.vogella.rcp.commands.parameterfirst.helloName" and a default
 		handler "de.vogella.rcp.commands.parameterfirst.handler.HelloName".
-	</para>
+	
 
-	<para> Right-click on your command, select New -> commandParameter
-	</para>
+	 Right-click on your command, select New -> commandParameter
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/parameter10.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> Use the following id for the parameter
-		"de.vogella.rcp.commands.parameterfirst.commandParameter1"</para>
+	 Use the following id for the parameter
+		"de.vogella.rcp.commands.parameterfirst.commandParameter1"
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/parameter20.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>In the handler you have to evaluate the parameter.</para>
+	In the handler you have to evaluate the parameter.
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/parameter/HelloName.java" />
 		</programlisting>
-	</para>
+	
 
-	<para> Add this command to the menu. On the command, right-click and
-		select New -> Parameter</para>
-	<para>
+	 Add this command to the menu. On the command, right-click and
+		select New -> Parameter
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/parameter30.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para> As name enter the name of the parameter, pass as value the
-		value you want to use in your handler.  </para>
-	<para>
+	
+	 As name enter the name of the parameter, pass as value the
+		value you want to use in your handler.  
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/parameter40.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> Add the same command again to the menu and pass another
-		parameter.</para>
+	 Add the same command again to the menu and pass another
+		parameter.
 
-	<para> If you run your application and select the menu entry the value
-		should be used in the message box. </para>
-</section>
+	 If you run your application and select the menu entry the value
+		should be used in the message box. 

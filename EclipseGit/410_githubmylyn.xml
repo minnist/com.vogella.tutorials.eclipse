@@ -1,5 +1,5 @@
-<section id="github_mylyn">
-	<title>Eclipse integration with GitHub</title>
+
+	<title>Eclipse integration with GitHub
 	<indexterm>
 		<primary>GitHub</primary>
 		<secondary> Mylyn integration
@@ -10,165 +10,101 @@
 		<secondary> GitHub integration
 		</secondary>
 	</indexterm>
-	<section id="github_mylynoverview">
-		<title>The Eclipse Mylyn plug-in</title>
-		<para>
+[[github_mylynoverview">
+=== The Eclipse Mylyn plug-in
+		
 			Eclipse Mylyn provides task integration for GitHub issues,
 			GitHub
 			pull
 			and Gist (short text snippets) into the Eclipse IDE.
-		</para>
-		<para>
+		
+		
 			There is a GitHub connector
 			for
 			Mylyn available, please see
-			<ulink url="http://wiki.eclipse.org/EGit/GitHub/UserGuide"> GitHub Mylyn User Guide</ulink>
+			http://wiki.eclipse.org/EGit/GitHub/UserGuide"> GitHub Mylyn User Guide
 			for details.
-		</para>
+		
 
-		<para>
+		
 			You install it via
-			<menuchoice>
-				<guimenu>Help</guimenu>
-				<guisubmenu>Install new Software</guisubmenu>
-			</menuchoice>
+			menu:Help[Install new Software]
 			and the update site of your release.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/github_mylyn10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Install Mylyn GitHub connector</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="github_mylynissues">
-		<title>GitHub issue integration</title>
-		<para>
+		
+image::github_mylyn10.png[Install Mylyn GitHub connector,pdfwidth=60%]
+		
+	
+[[github_mylynissues">
+=== GitHub issue integration
+		
 			You can integrate your GitHub issues into Eclipse via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Import...</guisubmenu>
-				<guisubmenu>Task</guisubmenu>
-				<guisubmenu>GitHub Task Repositories</guisubmenu>
-			</menuchoice>
+			menu:File[Import... > Task > GitHub Task Repositories]
 			and by following the wizard.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/github_import08.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Importing tasks into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::github_import08.png[Importing tasks into Eclipse,pdfwidth=60%]
+		
+	
 
-	<section id="github_mylynpullrequests">
-		<title>Manage pull requests in Eclipse</title>
-		<para>
+[[github_mylynpullrequests">
+=== Manage pull requests in Eclipse
+		
 			You can integrate your pull requests at GitHub into Eclipse by
 			creating a new query from the
-			<guilabel>Task List</guilabel>
+			_Task List_
 			view. This is demonstrated via the following screenshots.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githubpullrequests10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Integrating Gitpull requests into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githubpullrequests20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Integrating Gitpull requests into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githubpullrequests30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Integrating Gitpull requests into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githubpullrequests40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Integrating Gitpull requests into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/githubpullrequests50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Integrating Gitpull requests into Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::githubpullrequests10.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+		
+		
+image::githubpullrequests20.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+		
+		
+image::githubpullrequests30.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+		
+		
+image::githubpullrequests40.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+		
+		
+image::githubpullrequests50.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+		
 		<note>
-			<para>Unfortunately the GitHub connect does currently not support
+			Unfortunately the GitHub connect does currently not support
 				that you merge the pull request.
-			</para>
+			
 		</note>
-	</section>
+	
 
-	<section id="github_mylynprojects">
-		<title>Import projects directly from GitHub</title>
-		<para>You can also import now directly projects from GitHub
+[[github_mylynprojects">
+=== Import projects directly from GitHub
+		You can also import now directly projects from GitHub
 			repositories.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/github_import10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Importing projects from GitHub into EclipseF</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::github_import10.png[Importing projects from GitHub into EclipseF,pdfwidth=60%]
+		
+	
 
 
-	<section id="github_mylyninfo">
-		<title>More infos about the GitHub Mylyn integration</title>
-		<para>
+[[github_mylyninfo">
+=== More infos about the GitHub Mylyn integration
+		
 			For a
 			detailed description of the Mylyn and EGit integration
 			please see the
 			following webpage.
-		</para>
-		<para>
+		
+		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/links/mylyn.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-</section>
+	
+

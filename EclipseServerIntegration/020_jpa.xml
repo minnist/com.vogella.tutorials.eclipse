@@ -1,24 +1,24 @@
-<section id="rcp_jpa">
-	<title>Using the JPA in an OSGi environment</title>
-	<para>
+
+	<title>Using the JPA in an OSGi environment
+	
 		The usage of JPA to access a database, either embedded or standalone, requires a special setup, as you must
 		configure JPA to run in an OSGi runtime.
-	</para>
-	<para>In case JPA should be used within an OSGi environment, e.g., an Eclipse RCP application,
+	
+	In case JPA should be used within an OSGi environment, e.g., an Eclipse RCP application,
 		some rules have to be considered.
-	</para>
-	<para>
+	
+	
 		<itemizedlist>
 			<listitem>
-				<para>
+				
 					Tell the
 					<code>PersistenceProvider</code>
 					, which classloader should be
 					used
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					Place the
 					<filename>persistence.xml</filename>
 					in the
@@ -26,27 +26,26 @@
 					folder of the bundle, where the
 					<code>EntityManager</code>
 					is created
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/osgi_jpa.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/persistence.xml-location.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>
+	
 		You find an example for this on
-		<ulink url="https://github.com/wolkenschieber/e4JPA">Github</ulink>
+		https://github.com/wolkenschieber/e4JPA">Github
 		.
-	</para>
+	
 
-</section>

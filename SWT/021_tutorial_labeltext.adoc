@@ -1,5 +1,5 @@
-<section id="firstswt_label">
-	<title>Label and Text</title>
+
+	<title>Label and Text
 	
 		Add
 		a
@@ -32,4 +32,3 @@
 			</textobject>
 		</mediaobject>
 	
-</section>

@@ -1,7 +1,7 @@
-<section id="i18n" role="wrapper">
-	<title>Internationalization and localization</title>
-	<section id="i18n_overview">
-		<title>Translation of a Java applications</title>
+
+	<title>Internationalization and localization
+[[i18n_overview">
+=== Translation of a Java applications
 		<indexterm>
 			<primary>Translation</primary>
 			<see>i18n</see>
@@ -16,44 +16,44 @@
 		<indexterm>
 			<primary>Localization</primary>
 		</indexterm>
-		<para>
+		
 			The process of preparing an application for being translated into
 			several languages is called
-			<wordasword>internationalization</wordasword>
+			_internationalization_
 			. This term is typically abbreviated to
-			<wordasword>i18n</wordasword>
+			_i18n_
 			.
-		</para>
-		<para>
+		
+		
 			The process of translating the application is called
-			<wordasword>localization</wordasword>
+			_localization_
 			and is abbreviated to
-			<wordasword>l10n</wordasword>
+			_l10n_
 			.
-		</para>
-	</section>
-	<section id="i18n_propertyfiles">
-		<title>Property files</title>
+		
+	
+[[i18n_propertyfiles">
+=== Property files
 		<indexterm>
 			<primary>i18n</primary>
 			<secondary>Property files</secondary>
 		</indexterm>
-		<para>
+		
 			Java applications are typically translated via
-			<wordasword>property</wordasword>
+			_property_
 			files. Such a file
 			contains key/values. The key can be used in your application
 			and is
 			substituted at runtime with the
 			corresponding
 			value. The following listing demonstrates an example content of such a file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/osgi/bundle.properties" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Based on the language of the user, the Java runtime searches
 			for the corresponding resource bundle using
 			language
@@ -64,59 +64,59 @@
 			back to the next
 			general
 			resource bundle.
-		</para>
-		<para>
+		
+		
 			For example:
 			<itemizedlist>
 				<listitem>
-					<para>messages.properties: default language file, if nothing else
+					messages.properties: default language file, if nothing else
 						is available
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>messages_de.properties: used for German
-					</para>
+					messages_de.properties: used for German
+					
 				</listitem>
 				<listitem>
-					<para>messages_en.properties: default for English</para>
+					messages_en.properties: default for English
 				</listitem>
 				<listitem>
-					<para>messages_en_US.properties: US English file</para>
+					messages_en_US.properties: US English file
 				</listitem>
 				<listitem>
-					<para>messages_en_UK.properties: British English file </para>
+					messages_en_UK.properties: British English file 
 				</listitem>
 
 
 			</itemizedlist>
-		</para>
+		
 
 
-		<para>The Eclipse platform provides functionality to support
+		The Eclipse platform provides functionality to support
 			translations based on properties
 			files but also allows
 			the
 			usage of
 			alternative approaches.
-		</para>
-	</section>
+		
+	
 
-	<section id="i18n_encoding">
-		<title>Encoding of property files in Java</title>
-		<para> Resource bundles in Java are always LATIN-1 (ISO 8859-1)
+[[i18n_encoding">
+=== Encoding of property files in Java
+		 Resource bundles in Java are always LATIN-1 (ISO 8859-1)
 			encoded. This is defined by the Java specification.
-		</para>
-	</section>
-	<section id="i18n_rcp">
-		<title>Relevant files for translation in Eclipse applications</title>
-		<para>
+		
+	
+[[i18n_rcp">
+=== Relevant files for translation in Eclipse applications
+		
 			The following table lists the relevant elements for translating
 			an
 			Eclipse RCP application.
-		</para>
-		<para>
+		
+		
 			<table frame='all'>
-				<title>Translation relevant entities for Eclipse plug-ins</title>
+		=== Translation relevant entities for Eclipse plug-ins
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -149,24 +149,24 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="i18n_bestpractices">
-		<title>Where to store the translations?
-		</title>
-		<para>It is not uncommon that a plug-in also contains its translations.
-		</para>
-		<para>If a translation should be used by several plug-ins it is good
+[[i18n_bestpractices">
+=== Where to store the translations?
+		
+		It is not uncommon that a plug-in also contains its translations.
+		
+		If a translation should be used by several plug-ins it is good
 			practice to have one central plug-in which
 			contains
 			the
 			translations.
 			This plug-in contains at least the main language and potentially
 			more.
-		</para>
-		<para>It is also possible to provide
+		
+		It is also possible to provide
 			translation files
 			via fragment
 			projects. Fragment projects
@@ -180,27 +180,27 @@
 			the translation team. This approach
 			also allows configuring the included languages via the product
 			configuration file.
-		</para>
-	</section>
+		
+	
 
-	<section id="i18n_nlparameter">
-		<title>Setting the language in the launch configuration</title>
+[[i18n_nlparameter">
+=== Setting the language in the launch configuration
 		<indexterm>
 			<primary>i18n</primary>
 			<secondary>Setting the language via launch parameter</secondary>
 		</indexterm>
-		<para>
+		
 			By default Eclipse uses
 			the
 			language configured in the operating
 			system of the user.
-		</para>
-		<para>
+		
+		
 			For testing you can set the language manually.
 			In your Eclipse
 			launch
 			configuration on the
-			<guilabel>Arguments</guilabel>
+			_Arguments_
 			tab
 			you
 			can
@@ -211,13 +211,13 @@
 			to select the language, e.g.
 			<parameter class="option">-nl en</parameter>
 			.
-		</para>
-	</section>
+		
+	
 
-	<section id="eclipse4_translationservice">
-		<title>Translation service</title>
+[[eclipse4_translationservice">
+=== Translation service
 
-		<para>
+		
 			Eclipse uses a translation service via the
 			<code>TranslationService</code>
 			interface. The default implementation of this class is the
@@ -227,8 +227,8 @@
 			different source, e.g., a
 			database to get the
 			translations.
-		</para>
-		<para>
+		
+		
 			This service is stored in the application context. You can
 			replace it
 			there, e.g., via a life cycle hook or via a
@@ -236,8 +236,8 @@
 			which modifies
 			the application context once the application startup is
 			completed.
-		</para>
-		<para>
+		
+		
 			By
 			storing it in the
 			<code>IEclipseContext</code>
@@ -248,7 +248,6 @@
 			you can use different
 			translation
 			services.
-		</para>
-	</section>
+		
+	
 
-</section>

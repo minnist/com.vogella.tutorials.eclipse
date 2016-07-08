@@ -1,9 +1,9 @@
 <section id="recipes_wrapper" role="wrapper">
-	<title>Code receipts</title>
+	<title>Code receipts
 	
-	<section id="recipes_loadimage">
-		<title>Loading images from a plug-in</title>
-		<para>
+[[recipes_loadimage">
+=== Loading images from a plug-in
+		
 			The
 			<code>ImageDescriptor</code>
 			class has a static method to
@@ -19,15 +19,14 @@
 			you can create the
 			<code>Image</code>
 			instance.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/loadimage.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

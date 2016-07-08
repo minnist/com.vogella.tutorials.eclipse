@@ -13,7 +13,7 @@ Version 0.3, 06.07.2016
 
 
 
-		<title>Eclipse Modeling Framework (EMF) - Persisting models via XMI - Tutorial</title>
+=== Eclipse Modeling Framework (EMF) - Persisting models via XMI - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,18 +31,18 @@ Version 0.3, 06.07.2016
 		<pubdate>24.07.2012</pubdate>
 
 		<releaseinfo>
-			<para>Version 1.2</para>
+			Version 1.2
 		</releaseinfo>
 
 		
 
 		<abstract id="abstract">
-			<title>Persistence with Eclipse EMF</title>
+	=== Persistence with Eclipse EMF
 
-			<para>
+			
 				This tutorial describes how to persists Eclipse EMF in XMI
 				(XML). This article is based on Eclipse 4.2 (Juno).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

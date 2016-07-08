@@ -1,25 +1,25 @@
-<section id="modeladdons" role="wrapper">
-	<title>Using model add-ons</title>
-	<section id="modeladdons_overview">
-		<title>What are model add-ons?</title>
+
+	<title>Using model add-ons
+[[modeladdons_overview">
+=== What are model add-ons?
 		<indexterm>
 			<primary>Model Add-ons</primary>
 		</indexterm>
 		<indexterm>
 			<primary>Add-ons</primary>
 		</indexterm>
-		<para>
+		
 			The application model allows you to create
 			model objects called
-			<wordasword>add-ons</wordasword>
+			_add-ons_
 			. These components
 			can
 			enhance
 			the
 			application with
 			additional functionality.
-		</para>
-		<para>
+		
+		
 			Add-ons
 			add flexibility to the application model. They
 			allow you
@@ -33,8 +33,8 @@
 			model
 			component.
 
-		</para>
-		<para>
+		
+		
 			For example, the default
 			drag and drop support
 			of parts
@@ -47,25 +47,25 @@
 			the application model. If you want a
 			different behavior, you simply register your own add-on in your
 			application model.
-		</para>
-		<para>
+		
+		
 			Add-ons
 			point to Java classes via their
-			<wordasword>Class URI</wordasword>
+			_Class URI_
 			attribute using the
 			<code>bundleclass://</code>
 			URI convention.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="modeladdons_standard">
-		<title>Add-ons from the Eclipse framework</title>
+[[modeladdons_standard">
+=== Add-ons from the Eclipse framework
 		<indexterm>
 			<primary>Model add-ons</primary>
 			<secondary>Platform add-ons</secondary>
 		</indexterm>
-		<para>
+		
 			Currently the following standard
 			add-ons
 			are useful for Eclipse
@@ -75,51 +75,51 @@
 			their
 			provided
 			functionality.
-		</para>
-		<para>
+		
+		
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>CommandServiceAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>ContextServiceAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>BindingServiceAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>HandlerProcessingAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>CommandProcessingAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>ContextProcessingAddon</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>BindingProcessingAddon</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
 
-		</para>
-	</section>
-	<section id="modeladdons_swtaddons">
-		<title>Additional SWT add-ons</title>
+		
+	
+[[modeladdons_swtaddons">
+=== Additional SWT add-ons
 		<indexterm>
 			<primary>Model add-ons</primary>
 			<secondary>CleanupAddon</secondary>
@@ -132,7 +132,7 @@
 			<primary>Model addons</primary>
 			<secondary>MinMaxAddon</secondary>
 		</indexterm>
-		<para>
+		
 			Additional
 			add-ons
 			are available.
@@ -153,19 +153,19 @@
 			<code>MinMaxAddon</code>
 			class which allows adding the functionality to minimize or maximize your
 			application.
-		</para>
-		<para>
+		
+		
 			The
 			<code>org.eclipse.e4.ui.workbench.addons.swt</code>
 			plug-in contributes these add-ons automatically to your application
 			model via a model
 			processor at runtime.
-		</para>
-	</section>
+		
+	
 
-	<section id="modeladdons_lifecycle">
-		<title>Relationship to other services</title>
-		<para>
+[[modeladdons_lifecycle">
+=== Relationship to other services
+		
 			Add-ons
 			are created before
 			the
@@ -176,8 +176,8 @@
 			event
 			service has been
 			created.
-		</para>
-		<para>
+		
+		
 			This allows
 			add-ons
 			to alter the user interface that is produced by the
@@ -190,8 +190,8 @@
 			changes the tab folders
 			created for the part stacks
 			to have the min/max buttons in the corner.
-		</para>
-		<para>
+		
+		
 			The Eclipse platform uses events sent via the
 			event
 			service to
@@ -212,6 +212,5 @@
 			and react
 			to
 			them.
-		</para>
-	</section>
-</section>
+		
+	

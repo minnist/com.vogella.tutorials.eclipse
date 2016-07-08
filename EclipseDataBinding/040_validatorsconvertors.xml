@@ -1,12 +1,12 @@
-<section id="databinding_convertorsandvalidators" role="wrapper">
-	<title>Update strategy, converters and validators</title>
 
-	<section id="databinding_updatestrategy">
-		<title>UpdateValueStrategy</title>
+	<title>Update strategy, converters and validators
+
+[[databinding_updatestrategy">
+=== UpdateValueStrategy
 		<indexterm>
 			<primary>UpdateValueStrategy</primary>
 		</indexterm>
-		<para>
+		
 			The
 			<code>bindValue()</code>
 			method from
@@ -20,7 +20,7 @@
 			following values are permitted:
 
 			<table frame='all'>
-				<title>UpdateValueStrategy</title>
+		=== UpdateValueStrategy
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
@@ -91,8 +91,8 @@
 				</tgroup>
 			</table>
 
-		</para>
-		<para>
+		
+		
 			If no
 			<code>UpdateValueStrategy</code>
 			is specified, the
@@ -101,22 +101,22 @@
 			You can register converters and validators in the
 			<code>UpdateValueStrategy</code>
 			object.
-		</para>
+		
 
-	</section>
-	<section id="databinding_converter">
-		<title>Converter</title>
+	
+[[databinding_converter">
+=== Converter
 		<indexterm>
 			<primary>JFace Data Binding</primary>
 			<secondary>Converter</secondary>
 		</indexterm>
-		<para>
-			<wordasword>Converters</wordasword>
+		
+			_Converters_
 			allow to convert the values between the observed properties. Converters are defined based on the
 			<code>IConverter</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			<code>UpdateValueStrategy.setConverter()</code>
 			allows to set the converter.
 			The
@@ -126,50 +126,50 @@
 			<code>UpdateValueStrategy.create(IConverter)</code>
 			method allows to create
 			an update strategy with a converter.
-		</para>
-		<para>For example, you can convert a String to another object and vice versa.
-		</para>
-		<para>
+		
+		For example, you can convert a String to another object and vice versa.
+		
+		
 			For example, assume you have a
 			<code>Person</code>
 			object with a
 			<code>programmingSkills</code>
 			property.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Developer.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The entries of
 			<code>programmingSkills</code>
 			should be shown in the
 			<code>Text</code>
 			widget as text separated by comma. Therefore a conversion is necessary.
-		</para>
-		<para>
+		
+		
 			In order to apply these converters an
 			<code>UpdateValueStrategy</code>
 			for the
 			binding needs to be defined and applied.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/Converter.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="databinding_validator">
-		<title>Validator</title>
+[[databinding_validator">
+=== Validator
 
 		<indexterm>
 			<primary>JFace Data Binding</primary>
 			<secondary>Validator</secondary>
 		</indexterm>
-		<para>
-			A <wordasword>validator</wordasword>
+		
+			A _validator_
 			allows you to implement validation of the data before it is propagated
 			to
 			the other connected property. A class which
@@ -178,16 +178,16 @@
 			implement the
 			<code>org.eclipse.core.databinding.validation.IValidator</code>
 			interface.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/validator.java" />
 			</programlisting>
-		</para>
+		
 
 		<tip>
-			<para>
+			
 				The
 				<code>WizardPageSupport</code>
 				class provides support to connect the result from the given data
@@ -195,9 +195,8 @@
 				context to the given wizard page, updating
 				the wizard page's
 				completion state and its error message accordingly.
-			</para>
+			
 		</tip>
 
-	</section>
+	
 
-</section>

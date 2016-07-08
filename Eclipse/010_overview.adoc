@@ -1,0 +1,88 @@
+== What is Eclipse?
+
+=== The Eclipse IDE, other projects and a short history
+		
+While the Eclipse IDE for Java development is widely known, the
+Eclipse open source
+community is much bigger. Currently
+it consists of more
+than
+150
+projects
+covering
+different aspects
+of
+software development. For
+example,
+Eclipse projects
+provide tooling for JavaScript development
+and runtime components, like
+the
+popular
+_Jetty_
+webserver.
+		
+The roots of Eclipse go
+back to 2001. The initial code base was
+provided by IBM. In November 2001, a consortium
+was formed to support
+the development of Eclipse as open source software. This consortium
+was controlled by IBM.
+		
+		
+In 2004 it became the
+_Eclipse Foundation_
+, which is a vendor neutral foundation where no single company
+has
+control of the direction.
+		
+The
+_Eclipse_
+name at this time was viewed by many as declaration of war against
+_Sun Microsystems_
+, the company responsible for developing the Java
+programming
+language. IBM stated that the name was targeting at
+"Eclipsing"
+Microsoft. See
+http://www.eweek.com/c/a/Application-Development/Eclipse-Behind-the-Name/ - Eclipse: Behind the Name
+for details.
+		
+With the purchase of
+_Sun Microsystems_
+by Oracle this conflict finally went away. Oracle is currently
+among
+the 5 largest contributor companies of the Eclipse
+project.
+		
+
+=== Eclipse releases
+		
+The Eclipse open source project has a simultaneous release every
+year. Eclipse projects can choose to join this
+release but must
+fulfill the requirements described in the
+https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements - Release requirements wiki.
+		
+This simultaneous release includes new versions of the Eclipse
+IDE distributions.
+Before
+2012
+Eclipse was
+released in
+version 3.x, e.g.
+Eclipse 3.6,
+Eclipse 3.7.
+These releases
+and the corresponding API are
+referred to
+as
+Eclipse
+3.x.
+		
+As of 2012 the main Eclipse release carried the major
+version
+number 4, e.g., Eclipse 4.2 in the year 2012,
+Eclipse 4.3 in
+2013, Eclipse 4.4. in 2014, Eclipse 4.5 in 2015 and Eclipse 4.6 in 2016.
+		

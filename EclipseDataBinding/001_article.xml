@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>JFace Data Binding - Tutorial</title>
+=== JFace Data Binding - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -35,16 +35,16 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>25.05.2016</pubdate>
 		<releaseinfo>
-			<para>Version 4.1</para>
+			Version 4.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>JFace Data binding</title>
-			<para> This tutorial explains Eclipse JFace Data Binding which can be
+	=== JFace Data binding
+			 This tutorial explains Eclipse JFace Data Binding which can be
 				used to synchronize data between different objects.
 				This tutorial is
 				based on Eclipse 4.6.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

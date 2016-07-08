@@ -1,42 +1,42 @@
-<section id="javacode">
-	<title>Using the model code</title>
-	<section id="javacode_overview">
-		<title>Overview</title>
-		<para>
+
+	<title>Using the model code
+[[javacode_overview">
+=== Overview
+		
 			The generated model code is standard Java code and can be used
 			as such. The following demonstrates how you create
 			objects based on
 			the
 			generated code.
-		</para>
+		
 
-	</section>
-	<section id="javacode_usage">
-		<title>Example</title>
-		<para>
+	
+[[javacode_usage">
+=== Example
+		
 			Create a new plug-in project called
-			<wordasword>de.vogella.emf.webpage.usingmodel</wordasword>
+			_de.vogella.emf.webpage.usingmodel_
 			.
 			Add the following dependency to your
 			<filename>MANIFEST.MF</filename>
 			.
-		</para>
-		<para>
+		
+		
 			<itemizedlist>
 				<listitem>org.eclipse.emf.ecore</listitem>
 				<listitem>com.vogella.emf.webpage.model</listitem>
 			</itemizedlist>
-		</para>
-		<para> Create the following class.</para>
+		
+		 Create the following class.
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/using/UsingEMFModel.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<tip>
 				The
 				<code>*PackageImpl.init()</code>
@@ -50,9 +50,9 @@
 				model
 				and the listeners.
 			</tip>
-		</para>
+		
 
 
-	</section>
+	
 
-</section>
+

@@ -1,15 +1,14 @@
-<section id="installation">
-	<title>Installation</title>
-	<para>
+
+	<title>Installation
+	
 		Use the
 		<ulink
-			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse update manager</ulink>
+			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse update manager
 		to install the "Graphical
 		Editing
 		Framework Zest Visualization Toolkit".
-		You may have to unflag <guilabel>Group
+		You may have to unflag _Group
 			items
-			by category</guilabel> to see
-		<ulink url="http://www.vogella.com/tutorials/EclipseZest/article.html">Eclipse Zest</ulink>.
-	</para>
-</section>
+			by category_ to see
+		http://www.vogella.com/tutorials/EclipseZest/article.html">Eclipse Zest.
+	

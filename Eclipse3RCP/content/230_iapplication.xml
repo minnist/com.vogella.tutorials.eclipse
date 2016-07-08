@@ -1,33 +1,33 @@
-<section id="iapplication">
-	<title>Application and Advisor Classes</title>
-	<para>
+
+	<title>Application and Advisor Classes
+	
 		During the startup of an Eclipse RCP application the Eclipse
 		runtime
 		will evaluate which class is defined via the
 		<code>org.eclipse.core.runtime.application</code>
 		extension point.
-	</para>
-	<para>
+	
+	
 		This is the equivalent of the main class of standard Java
 		programs.
 		This class is responsible for creating the SWT
 		<code>Display</code>
 		and for starting the event loop for the application.
-	</para>
-	<para>
+	
+	
 		This class is typically called Application
 		and must implement the
 		interface
 		<code>IApplication</code>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/application/start.txt" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		<code>PlatformUI.createAndRunWorkbench()</code>
 		creates and runs a
 		<code>Workbench</code>
@@ -46,8 +46,8 @@
 		is represented via the class
 		<code>WorkbenchPage</code>
 		.
-	</para>
-	<para>
+	
+	
 		The
 		<code>Workbench</code>
 		is configured via a class of type
@@ -55,8 +55,8 @@
 		. This class defines the initial Perspective and defines the
 		<code>WorkbenchWindowAdvisor</code>
 		class.
-	</para>
-	<para>
+	
+	
 		<code>WorkbenchWindowAdvisor</code>
 		calls the class
 		<code>ActionBarAdvisor</code>
@@ -67,31 +67,31 @@
 		and defines initial attribute for the
 		<code>WorkbenchWindow</code>
 		as initial size, title and visibility of the statusline.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/workbenchwindow/advisor.txt" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		For example you could set the initial position of the application via
 		<code>postWindowCreate()</code>
 		method.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/workbenchwindow/position.txt" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		The
 		<code>ActionBarAdvisor</code>
 		class is as of Eclipse 3.7 not important any more as the Action
 		framework is replaced by the superior command framework.
-	</para>
-	<para>
+	
+	
 		Each adviser allow to configure certain behavior of the application,
 		e.g., the
 		<code>WorkbenchAdvisor</code>
@@ -101,5 +101,4 @@
 		and
 		<code>preShutdown()</code> methods.
 		.
-	</para>
-</section>
+	

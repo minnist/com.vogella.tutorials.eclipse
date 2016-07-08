@@ -1,7 +1,7 @@
-<section id="deployproduct" role="wrapper">
-	<title>Deployment of your application</title>
-	<section id="deployproduct_overview">
-		<title>Creating a stand-alone version of the application</title>
+
+	<title>Deployment of your application
+[[deployproduct_overview">
+=== Creating a stand-alone version of the application
 		<indexterm>
 			<primary>Export</primary>
 			<see>Deployment</see>
@@ -9,7 +9,7 @@
 		<indexterm>
 			<primary>Deployment</primary>
 		</indexterm>
-		<para>An Eclipse application needs to be exported (also called:
+		An Eclipse application needs to be exported (also called:
 			deployed) to run outside of Eclipse.
 			Your product configuration file
 			can be used for that purpose.
@@ -34,37 +34,30 @@
 			have
 			exported it
 			for.
-		</para>
-	</section>
-	<section id="deployproduct_howtoexport">
-		<title>Exporting via the product file</title>
-		<para>
+		
+	
+[[deployproduct_howtoexport">
+=== Exporting via the product file
+		
 			To export the product switch to your product configuration file,
 			select the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab and click on the
-			<guilabel>Eclipse Product export wizard</guilabel>
+			_Eclipse Product export wizard_
 			link.
 			In the wizard you can specify the location of the exported
 			product via
 			the
 			<filename class="directory">Directory</filename>
 			property in the
-			<guilabel>Destination</guilabel>
+			_Destination_
 			group/section. The export wizard is depicted in the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pdeexportwizard10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::pdeexportwizard10.png[,pdfwidth=60%]
+		
+		
 			The
 			<property>Root directory</property>
 			property can be used to specify a sub-folder
@@ -72,8 +65,8 @@
 			contains the complete exported application.
 			This is useful if you
 			export the product as an archive file.
-		</para>
-		<para>
+		
+		
 			The
 			resulting directory can be, for example, compressed (zipped)
 			and
@@ -87,39 +80,39 @@
 			it easier to
 			transfer all files to another
 			machine.
-		</para>
-		<para>
+		
+		
 			If the
-			<guilabel>Generate p2 repository</guilabel>
+			_Generate p2 repository_
 			option is selected, an (p2) update site is generated in a folder
 			called
 			<filename>repository</filename>
 			. This folder can be used to update the Eclipse RCP application.
-		</para>
-		<para>
+		
+		
 			If you transfer the content of this directory to another machine
 			(with the same architecture, e.g., Linux 64 bit),
 			your application
 			can
 			start on this machine. Of course the correct Java version must be
 			installed there.
-		</para>
-	</section>
+		
+	
 
-	<section id="deployproduct_buildproperties">
-		<title>Defining which artifacts are included in the export</title>
+[[deployproduct_buildproperties">
+=== Defining which artifacts are included in the export
 		<indexterm>
 			<primary>build.properties</primary>
 		</indexterm>
-		<para>
+		
 			The artifacts which are included in an export are
 			defined by
 			the
 			<filename>build.properties</filename>
 			file of the plug-in. Eclipse provides an graphical editor for this
 			file.
-		</para>
-		<para>
+		
+		
 			Eclipse adds the
 			compiled Java
 			classes by default. You have
@@ -128,8 +121,8 @@
 			other
 			files manually, e.g.,
 			icons or splash screen images.
-		</para>
-		<para>
+		
+		
 			An Eclipse application started
 			from
 			the Eclipse IDE
@@ -139,73 +132,66 @@
 			in the
 			<filename>build.properties</filename>
 			file.
-		</para>
-		<para>
+		
+		
 			It is good practice to include new required resources immediately in
 			the
 			<filename>build.properties</filename>
 			file. This avoids errors after the export of your
 			application.
-		</para>
-	</section>
-	<section id="deployproduct_mandatoryartifacts">
-		<title>Mandatory plug-in artifacts in build.properties </title>
-		<para>
+		
+	
+[[deployproduct_mandatoryartifacts">
+=== Mandatory plug-in artifacts in build.properties 
+		
 			Make sure the following items (if available) are included in each
 			plug-in of the exported application::
 			<itemizedlist>
 				<listitem>
-					<para>META-INF/MANIFEST.MF</para>
+					META-INF/MANIFEST.MF
 				</listitem>
 				<listitem>
-					<para>plugin.xml</para>
+					plugin.xml
 				</listitem>
 				<listitem>
-					<para>
+					
 						other
 						static
 						files, e.g., icons,
 						splash.bmp, etc.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Application.e4xmi</para>
+					Application.e4xmi
 				</listitem>
 				<listitem>
-					<para>CSS files</para>
+					CSS files
 				</listitem>
 				<listitem>
-					<para>OSGi service definition files</para>
+					OSGi service definition files
 				</listitem>
 				<listitem>
-					<para>model fragments</para>
+					model fragments
 				</listitem>
 				<listitem>
-					<para>translation files</para>
+					translation files
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
-		<para>
+		
 			The screenshot below shows
 			<filename>build.properties</filename>
 			file for a plug-in with most of these components.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/buildproperties10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::buildproperties10.png[,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="deployment_deltapack">
-		<title>Export for multiple platforms via the delta pack</title>
+[[deployment_deltapack">
+=== Export for multiple platforms via the delta pack
 		<indexterm>
 			<primary>Deployment</primary>
 			<secondary>Multiple platforms</secondary>
@@ -213,9 +199,9 @@
 		<indexterm>
 			<primary>Delta pack</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<wordasword>delta pack</wordasword>
+			_delta pack_
 			contains the platform specific features and
 			plug-ins
 			which are
@@ -230,20 +216,14 @@
 			in the
 			<code>org.eclipse.equinox.executable</code>
 			feature.
-		</para>
-		<para>
+		
+		
 			See
-			<ulink url="https://wiki.eclipse.org/Building#Cross-platform_build">Wiki entry for Cross-platform builds</ulink>
+			https://wiki.eclipse.org/Building#Cross-platform_build">Wiki entry for Cross-platform builds
 			for the usage. It basically requires that you add the delta pack
 			update site to your target platform via
 			the
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Target Platform</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Plug-in Development > Target Platform]
 			menu entry.
-		</para>
-	</section>
-</section>
+		
+	

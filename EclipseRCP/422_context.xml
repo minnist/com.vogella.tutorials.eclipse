@@ -1,7 +1,7 @@
-<section id="context" role="wrapper">
-	<title>The Eclipse context</title>
-	<section id="context_ieclipsecontext">
-		<title>What is the Eclipse context?</title>
+
+	<title>The Eclipse context
+[[context_ieclipsecontext">
+=== What is the Eclipse context?
 		<indexterm>
 			<primary>Eclipse context</primary>
 		</indexterm>
@@ -9,19 +9,19 @@
 			<primary>IEclipseContext</primary>
 			<see>Eclipse context</see>
 		</indexterm>
-		<para>
+		
 			During startup of an Eclipse application the Eclipse runtime creates
 			an object
 			based on the
 			<code>IEclipseContext</code>
 			interface. This object is called the
-			<wordasword>context</wordasword>
+			_context_
 			or the
-			<wordasword>Eclipse context</wordasword>
+			_Eclipse context_
 			.
-		</para>
+		
 
-		<para>
+		
 			The context is similar to a
 			<code>Map</code>
 			data structure,
@@ -36,19 +36,19 @@
 			injected
 			into
 			other objects.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="context_hierarchy">
-		<title>Relationship definition in the Eclipse context</title>
+[[context_hierarchy">
+=== Relationship definition in the Eclipse context
 		<indexterm>
 			<primary>Eclipse context</primary>
 			<secondary>Hierarchy</secondary>
 		</indexterm>
 
-		<para>
+		
 			As described earlier the Eclipse context is similar to a
 			<code>Map</code>
 			data structure. But unlike a map, the Eclipse context is
@@ -59,18 +59,18 @@
 			values for
 			requested
 			keys.
-		</para>
+		
 
 
-		<para>
+		
 			For certain model objects (see
 			<xref linkend="context_modelelementswithcontext" />
 			) a local context is created. Such a context is
 			associated with
 			an
 			application model object.
-		</para>
-		<para>
+		
+		
 			The different context objects are
 			connected to
 			form a hierarchical tree
@@ -86,31 +86,24 @@
 			this
 			hierarchy is the application context.
 
-		</para>
-		<para>
+		
+		
 			A sample context hierarchy
 			is
 			depicted in the
 			following picture.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/contexthierarchy03.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Context hierarchy</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para> Objects can be placed
+		
+image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
+		
+		 Objects can be placed
 			at different levels in the context
 			hierarchy. This allows that the same key points to
 			different objects
 			in the hierarchy.
-		</para>
-		<para>
+		
+		
 			For
 			example, a
 			part
@@ -127,51 +120,51 @@
 			type
 			<code>Composite</code>
 			.
-		</para>
-	</section>
+		
+	
 
 
 
-	<section id="context_modelelementswithcontext">
-		<title>Which model elements have a local context?</title>
+[[context_modelelementswithcontext">
+=== Which model elements have a local context?
 		<indexterm>
 			<primary>Model objects with context</primary>
 		</indexterm>
-		<para>
+		
 			Currently the following model elements implement the
 			<code>MContext</code>
 			interface
 			and therefore have their own context:
 			<itemizedlist>
 				<listitem>
-					<para>MApplication</para>
+					MApplication
 				</listitem>
 				<listitem>
-					<para>MWindow</para>
+					MWindow
 				</listitem>
 				<listitem>
-					<para>MPerspective</para>
+					MPerspective
 				</listitem>
 				<listitem>
-					<para>MPart</para>
+					MPart
 				</listitem>
 
 				<listitem>
-					<para>MPopupMenu</para>
+					MPopupMenu
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="context_creationprocess">
-		<title>Life cycle of the Eclipse context</title>
+[[context_creationprocess">
+=== Life cycle of the Eclipse context
 		<indexterm>
 			<primary>Eclipse context</primary>
 			<secondary>Life cycle</secondary>
 		</indexterm>
-		<para>
+		
 			The Eclipse framework creates the context hierarchy based on the application model during
 			the start process.
 			By
@@ -179,11 +172,11 @@
 			control the Eclipse
 			framework
 			functionality.
-		</para>
-		<para>
+		
+		
 			The model objects and the created objects based on
 			the
-			<wordasword>class URI</wordasword>
+			_class URI_
 			attributes are created by
 			the Eclipse
 			platform.
@@ -203,9 +196,9 @@
 			<parameter>Class URI</parameter>
 			property of the
 			model elements. This is for example the case if a part is visible to the user.
-		</para>
+		
 		<note>
-			<para>
+			
 				The renderer framework is responsible for creating the local
 				context
 				of the UI related model elements.
@@ -220,10 +213,10 @@
 				model
 				objects. A class
 				responsible for a model element is called the
-				<wordasword>renderer</wordasword>
+				_renderer_
 				for this model element.
-			</para>
-			<para>
+			
+			
 				For
 				example,
 				the
@@ -239,10 +232,10 @@
 				<code>Composite</code>
 				into the local context of the
 				part.
-			</para>
+			
 		</note>
 
-		<para>After the initial creation of the Eclipse context hierarchy, the
+		After the initial creation of the Eclipse context hierarchy, the
 			framework or the application code can change the
 			key-value pairs
 			stored in the context. In this case objects which were created with the related Eclipse
@@ -250,15 +243,14 @@
 			(for example by the Eclipse dependency
 			injection
 			framework) are updated with the new values.
-		</para>
-		<para>
+		
+		
 			Objects in the context are
 			persisted in
 			memory
 			(transient), i.e.,
 			once the application is stopped the context gets
 			destroyed.
-		</para>
-	</section>
+		
+	
 
-</section>

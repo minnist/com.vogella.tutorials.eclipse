@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse server integration - Tutorial</title>
+=== Eclipse server integration - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -29,14 +29,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>12.07.2013</pubdate>
 		<releaseinfo>
-			<para>Version 2.1</para>
+			Version 2.1
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse server integration</title>
-			<para> This tutorial describes options how to integration a server with Eclipse. A 2-tier and 3-tier layer is
+	=== Eclipse server integration
+			 This tutorial describes options how to integration a server with Eclipse. A 2-tier and 3-tier layer is
 				described.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

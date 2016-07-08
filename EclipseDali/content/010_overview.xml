@@ -1,30 +1,29 @@
-<section id="overview">
-	<title>Overview</title>
-	<para>
+
+	<title>Overview
+	
 		This article describes Eclipse Dali and does not give a general
 		introduction into JPA. Please see
 		<ulink
-			url="http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html"> Java Persistence API (JPA) with EclipseLink- Tutorial</ulink>
+			url="http://www.vogella.com/tutorials/JavaPersistenceAPI/article.html"> Java Persistence API (JPA) with EclipseLink- Tutorial
 		for an introduction.
-	</para>
-	<para>
+	
+	
 		To use Eclipse Dali you also need Eclipse DTP which is described
 		in
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseDataToolsPlatform/article.html">Eclipse DTP Tutorial</ulink>
-	</para>
+			url="http://www.vogella.com/tutorials/EclipseDataToolsPlatform/article.html">Eclipse DTP Tutorial
+	
 
 
-	<para>
+	
 		To use Eclipse Dali you also need Derby which is described in
 
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseDataToolsPlatform/article.html">Eclipse DTP Tutorial</ulink>
+			url="http://www.vogella.com/tutorials/EclipseDataToolsPlatform/article.html">Eclipse DTP Tutorial
 
 		or independently of Eclipse in 
-		<ulink url="http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
+		http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby
 		.
-	</para>
+	
 
 
-</section>

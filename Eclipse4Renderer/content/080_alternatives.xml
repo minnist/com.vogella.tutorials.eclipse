@@ -1,8 +1,8 @@
-<section id="alternativerenderer_own" role="wrapper">
-	<title>Alternative renderer</title>
-	<section id="alternativerenderer_overview">
-		<title>Alternatives to SWT</title>
-		<para>You can use any user interface technology for your RCP
+
+	<title>Alternative renderer
+[[alternativerenderer_overview">
+=== Alternatives to SWT
+		You can use any user interface technology for your RCP
 			application, as long as you provide a renderer implementation for it.
 			There are already several
 			default implementations besides SWT
@@ -10,8 +10,8 @@
 			section
 			lists the most
 			popular ones.
-		</para>
-		<para>
+		
+		
 			A popular misconception about a different renderer is that you
 			can
 			port your SWT applications unchanged to it, for example to Vaadin
@@ -26,8 +26,8 @@
 			or
 			your tool controls
 			are implemented with SWT classes.
-		</para>
-		<para>
+		
+		
 			You have to
 			re-implement these user interface
 			components.
@@ -59,10 +59,10 @@
 			interface toolkit of
 			your
 			choice.
-		</para>
-	</section>
-	<section id="alternativerenderer_own1">
-		<title>Vaadin renderer - Vaaeclipse</title>
+		
+	
+[[alternativerenderer_own1">
+=== Vaadin renderer - Vaaeclipse
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>Vaadin</secondary>
@@ -70,46 +70,32 @@
 		<indexterm>
 			<primary>Vaadin</primary>
 		</indexterm>
-		<para>
+		
 			Vaaclipse is a framework for building web applications using the
 			Eclipse 4
 			platform and Vaadin. It allows to use the power of the
 			Eclipse framework in
 			web development.
 
-		</para>
-		<para>
+		
+		
 			You find more information about this
 			project on the
 			following homepage:
-			<ulink url="https://github.com/semanticsoft/vaaclipse/wiki">Vaaclipse</ulink>
-		</para>
-		<para>The following screenshots show demo applications of Vaaclipse.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/vaadinrenderer10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Vaadin renderer for Eclipse 4</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+			https://github.com/semanticsoft/vaaclipse/wiki">Vaaclipse
+		
+		The following screenshots show demo applications of Vaaclipse.
+		
+		
+image::vaadinrenderer10.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/vaadinrenderer20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Vaadin renderer for Eclipse 4</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="alternativerenderer_javafxs">
-		<title>JavaFX renderer - e(fx)clipse</title>
+		
+image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
+		
+	
+[[alternativerenderer_javafxs">
+=== JavaFX renderer - e(fx)clipse
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>JavaFX</secondary>
@@ -117,26 +103,19 @@
 		<indexterm>
 			<primary>JavaFX</primary>
 		</indexterm>
-		<para>
+		
 			The e(fx)clipse provides a JavaFX renderer for Eclipse 4 RCP
 			application. For more information see the
-			<ulink url="http://www.efxclipse.org/">e(fx)clipse homepage</ulink>
+			http://www.efxclipse.org/">e(fx)clipse homepage
 			. The following screenshot shows an example Eclipse RCP application
 			using JavaFX as a renderer.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/lose_klein.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>JavaFX renderer example</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="alternativerenderer_rap">
-		<title>Eclipse RAP</title>
+		
+		
+image::lose_klein.png[JavaFX renderer example,pdfwidth=60%]
+		
+	
+[[alternativerenderer_rap">
+=== Eclipse RAP
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>RAP</secondary>
@@ -144,11 +123,11 @@
 		<indexterm>
 			<primary>RAP</primary>
 		</indexterm>
-		<para>Eclipse RAP is an approach to provide a web implementation for
+		Eclipse RAP is an approach to provide a web implementation for
 			the SWT API and makes it relatively easy to run an Eclipse 3.x RCP
 			application in the web without code modifications.
-		</para>
-		<para>Eclipse RAP is special case as the renderer is still the default
+		
+		Eclipse RAP is special case as the renderer is still the default
 			SWT renderer but
 			there is a translation
 			layer between SWT and the
@@ -156,19 +135,19 @@
 			is
 			produced. This allows you to reuse your SWT user
 			interface code to run as a web application.
-		</para>
-		<para>
+		
+		
 			Currently the Eclipse RAP team does not officially support
 			the Eclipse
 			4 API
 			but several open source ports have been made. See for
 			example
-			<ulink url="http://wiki.eclipse.org/RAP/Eclipse4">Eclipse 4 on RAP wiki</ulink>
+			http://wiki.eclipse.org/RAP/Eclipse4">Eclipse 4 on RAP wiki
 			.
-		</para>
-	</section>
-	<section id="alternativerenderer_controls">
-		<title>Additional UI toolkits</title>
+		
+	
+[[alternativerenderer_controls">
+=== Additional UI toolkits
 		<indexterm>
 			<primary>jo-widget</primary>
 		</indexterm>
@@ -184,12 +163,12 @@
 		<indexterm>
 			<primary>EMF Parsley</primary>
 		</indexterm>
-		<para>Writing source code is the current default approach
+		Writing source code is the current default approach
 			by the
 			Eclipse platform
 			to create your user interfaces.
-		</para>
-		<para>
+		
+		
 			Currently several
 			open source frameworks are developed to
 			simplify the
@@ -205,43 +184,42 @@
 			selection
 			of
 			possible approaches.
-		</para>
-		<para>
+		
+		
 			The jo-widget project provides components which can be
 			rendered to
 			SWT,
 			Swing and JavaFX. See the
-			<ulink url="https://code.google.com/p/jo-widgets/">jo-widget homepage</ulink>
+			https://code.google.com/p/jo-widgets/">jo-widget homepage
 			for more information.
-		</para>
-		<para>
+		
+		
 			The Eclipse XWT project supports the creation of user interface
 			components based on XML files. See the
-			<ulink url="http://wiki.eclipse.org/E4/XWT">XWT wiki</ulink>
+			http://wiki.eclipse.org/E4/XWT">XWT wiki
 			for documentation.
-		</para>
-		<para>
+		
+		
 			The Eclipse Sapphire project allows you to create user interfaces
 			based
 			on a property editor. See the
-			<ulink url="http://www.eclipse.org/sapphire/">Eclipse Sapphire homepage</ulink>
+			http://www.eclipse.org/sapphire/">Eclipse Sapphire homepage
 			for details.
-		</para>
-		<para>
+		
+		
 			The Wazzabi project provides functionality to model the user
 			interface via EMF and to generate the SWT user interface at runtime
 			based on this model. See the
-			<ulink url="http://eclipse.org/wazaabi/">Wazzabi homepage</ulink>
+			http://eclipse.org/wazaabi/">Wazzabi homepage
 			for more information.
-		</para>
-		<para>
+		
+		
 			The EMF Parsley project plans to provide model based user interface
 			components. See the
-			<ulink url="http://www.eclipse.org/emf-parsley">EMF Parsley project page</ulink>
+			http://www.eclipse.org/emf-parsley">EMF Parsley project page
 			for more information.
-		</para>
-	</section>
+		
+	
 
 
 
-</section>

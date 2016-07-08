@@ -1,15 +1,15 @@
-<section id="rapinstallation">
-	<title>Tutorial: Eclipse RAP installation</title>
 
-	<para> The following assumes that you have already downloaded and
+	<title>Tutorial: Eclipse RAP installation
+
+	 The following assumes that you have already downloaded and
 		installed "Eclipse for RCP and RAP developer". Via the Help page you
 		can install the target platform. Select Help -> Welcome from the menu.
 		Now the Help page should be diplayed. Click on the overview button and
 		search for "RAP" on the next page. Select it and select "Install
 		Target Platform". I suggest to select the "Latest release"
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/rap_install10.png" />
@@ -18,20 +18,19 @@
 				<phrase>Installation of the Eclipse RAP Target Platform</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para> Check that the target platform got activated under Window ->
+	
+	 Check that the target platform got activated under Window ->
 		Preferences ->
 		Plug-in Development -> Target Platform
-	</para>
-	<para> Use the Eclipse update manager to install the tooling from the
-		Eclipse update.</para>
-	<para>
+	
+	 Use the Eclipse update manager to install the tooling from the
+		Eclipse update.
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/rap_install20.png"/>
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para> After the installation is finished restart your Eclipse.</para>
+	
+	 After the installation is finished restart your Eclipse.
 
-</section>

@@ -1,187 +1,147 @@
-<section id="team_mergeoverview" role="wrapper">
-	<title>Starting a merge operation in Eclipse</title>
-	<section id="team_merge">
-		<title>Merge</title>
+
+	<title>Starting a merge operation in Eclipse
+[[team_merge">
+=== Merge
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>merge
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Eclipse supports merging of branches to add the changes
 			committed on
 			one branch into another branch.
-		</para>
-		<para>
+		
+		
 			Checkout the branch into which you
 			want to merge the
 			changes into and
 			select your project
 			and
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Merge</guisubmenu>
-			</menuchoice>
+			menu:Team[Merge]
 			to start the merge dialog.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egit_mergeoperation10.png" scale="40" />
+		
+		
+image::egit_mergeoperation10.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Team Merge menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egit_mergeoperation20.png" scale="40" />
+					<phrase>Team Merge menu,pdfwidth=60%]
+		
+		
+image::egit_mergeoperation20.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Team Merge menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Team Merge menu,pdfwidth=60%]
+		
 
 
-	</section>
-	<section id="team_mergeconflicts">
-		<title>Solving merge conflicts</title>
+	
+[[team_mergeconflicts">
+=== Solving merge conflicts
 		<indexterm>
 			<primary>Eclipse Git</primary>
 			<secondary>merge conflicts, solving
 			</secondary>
 		</indexterm>
-		<para>
+		
 			If during a Git operation, two changes are conflicting, you
 			have to
 			solve these conflicts manually.
 			Eclipse Git
 			highlights the affected
 			files in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			or
-			<guilabel>Project Explorer</guilabel>
+			_Project Explorer_
 			view.
-		</para>
-		<para>
+		
+		
 			Eclipse Git supports the resolution
 			of these merge
 			conflicts. To
 			trigger this via the explorer views, right-click on a
 			file with merge
 			conflicts and select
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Merge Tool</guisubmenu>
-			</menuchoice>
+			menu:Team[Merge Tool]
 			.
-		</para>
-		<para>
+		
+		
 			You can also use the
-			<guilabel>Git staging</guilabel>
+			_Git staging_
 			view
 			to find the conflicting files. In large
 			projects this is usually
 			faster
 			than navigating the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			or
-			<guilabel>Project Explorer</guilabel>
+			_Project Explorer_
 			view.
-		</para>
-		<para>
+		
+		
 			This opens a dialog, asking you which merge mode you would like to
 			use.
 			The easiest way to see the conflicting changes
 			is
 			to use the
-			<guilabel>Use HEAD (the last local version) of conflicting files
-			</guilabel>
+			_Use HEAD (the last local version) of conflicting files
+			_
 			as merge mode. This way you see the original changes on the left
 			side
 			and the conflicting and non-conflicting changes
 			on the right side.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitmerge08.png" />
+		
+		
+image::egitmerge08.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Selecting the merge model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Selecting the merge model,pdfwidth=60%]
+		
+		
 			You can manually edit the text on
 			the left side or use the
-			<guilabel>Copy current change from right to left</guilabel>
+			_Copy current change from right to left_
 			button to copy the changes from right to left.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitmerge10.png" />
+		
+		
+image::egitmerge10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Seeing merge conflicts</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egitmerge20.png" />
+					<phrase>Seeing merge conflicts,pdfwidth=60%]
+		
+		
+image::egitmerge20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Copy changes from right to left</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Copy changes from right to left,pdfwidth=60%]
+		
+		
 			Eclipse also allows to show the common ancestor of both commits to make the merge easier. Press the
-			<guilabel>Hide/Show Ancestor Pane</guilabel>
+			_Hide/Show Ancestor Pane_
 			button for that. This is demonstrated by the
 			following screenshots.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/threewaycomparemode10.png" />
+		
+		
+image::threewaycomparemode10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Three way merge view in Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/threewaycomparemode20.png" />
+					<phrase>Three way merge view in Eclipse,pdfwidth=60%]
+		
+		
+image::threewaycomparemode20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Three way merge view in Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Three way merge view in Eclipse,pdfwidth=60%]
+		
+		
 			Once you have manually merged the changes, select
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Add</guisubmenu>
-			</menuchoice>
+			menu:Team[Add]
 			from the context menu of the resource to mark the conflicts as
 			resolved and
 			commit the merge commit via
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Commit</guisubmenu>
-			</menuchoice>
+			menu:Team[Commit]
 			.
-		</para>
-	</section>
+		
+	
 
-</section>
+

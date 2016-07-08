@@ -1,51 +1,51 @@
-<section id="swtdatabinding">
-	<title>Data Binding with SWT controls</title>
-	<section id="swtdatabinding_simple">
-		<title>First example</title>
-		<para>
+
+	<title>Data Binding with SWT controls
+[[swtdatabinding_simple">
+=== First example
+		
 			Create a new
 			Eclipse RCP
 			project "de.vogella.databinding.example"
 			using the template "RCP
 			application with a View".
-		</para>
+		
 
-		<para>
+		
 			Create the
 			<code>de.vogella.databinding.person.model</code>
 			package and the
 			following model classes.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/model/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/model/Address.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Add the JFace Data Binding plug-ins as dependency to your
 			plug-in.
 
-		</para>
-		<para>
+		
+		
 			Change the
 			<code>View</code>
 			class to the following.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/person/View.java" />
 			</programlisting>
-		</para>
+		
 
-		<para> Run the example and test it. Each time you change the UI
+		 Run the example and test it. Each time you change the UI
 			element
 			then model changes automatically. If you change the model
 			then
@@ -55,61 +55,58 @@
 			field you will get an error symbol in the UI and if the mouse
 			hovers
 			over the symbol you see the error message.
-		</para>
-	</section>
-	<section id="swtdatabinding_validation">
-		<title>More Customer Validations and ControlDecoration</title>
+		
+	
+[[swtdatabinding_validation">
+=== More Customer Validations and ControlDecoration
 
-		<para>
+		
 			The following extends the example with the usage of
-			<wordasword>Validators</wordasword>
+			_Validators_
 			and
-			<wordasword>Decorators</wordasword>
+			_Decorators_
 			.
-		</para>
-		<para>
+		
+		
 			In this example the
-			<wordasword>Validators</wordasword>
+			_Validators_
 			ensures that the firstName has at
 			least 2
 			characters. A new
 			label
 			displays the
 			validation status via a
-			<wordasword>Decorator</wordasword>
+			_Decorator_
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/validation10.png" />
+		
+		
+image::validation10.png" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Create the following
 			<code>StringLongerThenTwo</code>
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/validator/StringLongerThenTwo.java" />
 			</programlisting>
-		</para>
-		<para>
-		</para>
-		<para>
+		
+		
+		
+		
 			The following shows the new  code for
 			<code>View.java</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/validator/View.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	

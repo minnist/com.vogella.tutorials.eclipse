@@ -1,7 +1,7 @@
-<section id="sourcenavigationexplorer" role="wrapper">
-	<title>Source navigation in the Eclipse IDE</title>
-	<section id="sourcenavigation_packageexplorer">
-		<title>Package Explorer or Project Explorer</title>
+
+	<title>Source navigation in the Eclipse IDE
+[[sourcenavigation_packageexplorer">
+=== Package Explorer or Project Explorer
 		<indexterm>
 			<primary>Package Explorer view</primary>
 			<secondary>navigation
@@ -12,69 +12,57 @@
 			<secondary>filter resources
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The primary way of navigating through your project is the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			or alternatively the
-			<guilabel>Project Explorer</guilabel>
+			_Project Explorer_
 			view. You can open nodes in the tree and open a file in an editor
 			by
 			double-clicking on the corresponding entry in the
 			tree hierarchy.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/packageexplorer10_display.png" scale="40" />
+		
+		
+image::packageexplorer10_display.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Package Explorer display</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Package Explorer display,pdfwidth=60%]
+		
 
-		<para>
+		
 			The drop-down menu in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			allows you to filter
 			the resources which should be displayed or
 			hidden.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/packageexplorer20_filter.png" scale="40" />
+		
+image::packageexplorer20_filter.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Filter in the package explorer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Filter in the package explorer,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/packageexplorer22_filter.png" scale="40" />
+		
+image::packageexplorer22_filter.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Filter in the package explorer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Filter in the package explorer,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="packageexplorerlinkwitheditor">
-		<title>Link Package Explorer with editor</title>
+[[packageexplorerlinkwitheditor">
+=== Link Package Explorer with editor
 		<indexterm>
 			<primary>Package Explorer view</primary>
 			<secondary>link with active editor
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			allows you to display the associated file from
 			the
@@ -82,60 +70,56 @@
 			editor. For example, if you are working on the
 			<code>Foo.java</code>
 			file in the Java
-			<wordasword>editor</wordasword>
+			_editor_
 			and
 			switch to the Java
-			<wordasword>editor</wordasword>
+			_editor_
 			of the
 			<code>Var.java</code>
 			file,
 			then the corresponding file will be selected in
 			the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view.
-		</para>
+		
 
-		<para>
+		
 			To activate this behavior, press the
 			<guibutton>Link with Editor</guibutton>
 			button in
 			the
-			<guilabel>Package
+			_Package
 				explorer
-			</guilabel>
+			_
 			view
 			as depicted in the following screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/editorsyncpackage10.png" scale="40" />
+		
+image::editorsyncpackage10.png" scale="40" />
 				</imageobject>
 				<textobject>
 					<phrase>Synchronize the package explorer selectioni with the
 						current selected
 						editor
-					</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					,pdfwidth=60%]
+		
+	
 
 
 
-	<section id="classnavigation">
-		<title>Opening a class</title>
-		<para>
+[[classnavigation">
+=== Opening a class
+		
 			You can navigate between the classes in your project via the
-			<guilabel>Package
+			_Package
 				Explorer
-			</guilabel>
+			_
 			view
 			as described before. You can navigate the tree and open a file via
 			a double-click.
-		</para>
-		<para>
+		
+		
 			In addition, you can open any class by positioning the cursor
 			on
 			the
@@ -156,31 +140,29 @@
 			class name
 			to open
 			it.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/classopen10.png" />
+		
+		
+image::classopen10.png" />
 				</imageobject>
 				<textobject>
 					<phrase>Opening a class</phrase>
 
 				</textobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			You can also search for package names. Each part of the package name
 			must end with a
 			<parameter>.</parameter>
 			(the
-			<wordasword>dot</wordasword>
+			_dot_
 			character)
 			so that the
-			<wordasword>Open Type Dialog</wordasword>
+			_Open Type Dialog_
 			can identify it as a package.
-		</para>
+		
 		<tip>
-			<para>
+			
 				You only need to specify part of each
 				segment of the package name.
 				Assume, for example, that you search for
@@ -194,24 +176,20 @@
 				or
 				<parameter>o.Button</parameter>
 				.
-			</para>
+			
 		</tip>
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/classopen20.png" />
+		
+image::classopen20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Opening a class with package name</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Opening a class with package name,pdfwidth=60%]
+		
+		
 			The
-			<wordasword>Open Type Dialog</wordasword>
+			_Open Type Dialog_
 			also supports
-			<wordasword>CamelCase</wordasword>
+			_CamelCase_
 			like
 			search, e.g., it matches capital letters in the class name. For
 			example, if you would search for the
@@ -221,20 +199,16 @@
 			or
 			<parameter>OToList</parameter>
 			as search term.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/classopen30.png" />
+		
+image::classopen30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Opening a class with CamelCase</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Opening a class with CamelCase,pdfwidth=60%]
+		
 		<tip>
-			<para>
+			
 				To avoid suffix matching, you can add a space after the class name.
 				For
 				example, you can type
@@ -244,11 +218,11 @@
 				class but not the
 				<code>SelectionListener</code>
 				class. Wildcards like * are also supported.
-			</para>
+			
 		</tip>
-	</section>
-	<section id="resourcenavigation_openresourcedialog">
-		<title>Open Resource dialog to open arbitrary files</title>
+	
+[[resourcenavigation_openresourcedialog">
+=== Open Resource dialog to open arbitrary files
 		<indexterm>
 			<primary>Resource</primary>
 			<secondary>opening dialog
@@ -257,9 +231,9 @@
 		<indexterm>
 			<primary>Open Resource dialog</primary>
 		</indexterm>
-		<para>
+		
 			You can open any file from your open projects via the
-			<wordasword>Open Resource</wordasword>
+			_Open Resource_
 			dialog. You can open this dialog via the
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -269,82 +243,78 @@
 			shortcut. This dialog allows to enter the file name
 			and to open or show it in a selected view. The following
 			screenshot demonstrate the usage to open a pom.xml file from your workspace.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/openresourceeclipse10.png" scale="40" />
+		
+		
+image::openresourceeclipse10.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Open resources in Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Open resources in Eclipse,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="sourcenavigation_quickoutline">
-		<title>Quick Outline</title>
+[[sourcenavigation_quickoutline">
+=== Quick Outline
 		<indexterm>
 			<primary>Quick Outline</primary>
 		</indexterm>
-		<para>
-			<guilabel>Quick Outline</guilabel>
+		
+			_Quick Outline_
 			shows you an structured overview of the file you are editing.
 			For example, for a Java class you see its methods with
 			the
 			option
 			to filter.
 			The shortcut for opening the
-			<guilabel>Quick Outline</guilabel>
+			_Quick Outline_
 			is
 			<keycombo>
 				<keycap>Ctrl</keycap>
 				<keycap>O</keycap>
 			</keycombo>
 			. You can also reach this option, via right-click in an editor via the
-			<guilabel>Quick Outline</guilabel>
+			_Quick Outline_
 			option.
 
-		</para>
+		
 
-		<para>
+		
 			By default,
-			<guilabel>Quick Outline</guilabel>
+			_Quick Outline_
 			shows only the direct members and fields of the Java class. Press
 			<keycombo>
 				<keycap>Ctrl</keycap>
 				<keycap>O</keycap>
 			</keycombo>
 			again to show also the inherited members and fields.
-		</para>
-		<para>
+		
+		
 			The default look of the
-			<guilabel>Quick Outline</guilabel>
+			_Quick Outline_
 			option is similar to the
-			<guilabel>Quick Outline</guilabel>
+			_Quick Outline_
 			view
 			of the
-			<guilabel>Java</guilabel>
-			<wordasword>perspective</wordasword>
+			_Java_
+			_perspective_
 			.
-		</para>
-	</section>
-	<section id="sourcenavigation_type_hierarchy">
-		<title>Open Type Hierarchy</title>
+		
+	
+[[sourcenavigation_type_hierarchy">
+=== Open Type Hierarchy
 		<indexterm>
 			<primary>Type Hierarchy</primary>
 			<secondary>open
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The type hierarchy of a class shows you which classes it extends
 			and
 			which interfaces it implements. You can use
 			the type hierarchy to
 			navigate to one of these elements.
-		</para>
-		<para>
+		
+		
 			To open the type
 			hierarchy of the
 			selected class, right-click
@@ -352,91 +322,76 @@
 			the
 			editor and
 			select
-			<guilabel>Open Type Hierarchy</guilabel>
+			_Open Type Hierarchy_
 			(Shortcut:
 			<keycombo>
 				<keycap>F4</keycap>
 			</keycombo>
 			) or
-			<guilabel>Quick Type Hierarchy</guilabel>
+			_Quick Type Hierarchy_
 			(Shortcut:
 			<keycombo>
 				<keycap>Ctrl</keycap>
 				<keycap>T</keycap>
 			</keycombo>
 			).
-		</para>
-	</section>
-	<section id="sourcenavigation_textsearch">
-		<title>Full text search</title>
+		
+	
+[[sourcenavigation_textsearch">
+=== Full text search
 		<indexterm>
 			<primary>Search dialog</primary>
 		</indexterm>
-		<para>
+		
 			You frequently need to find files containing certain text or other meta data. Via the
-			<menuchoice>
-
-				<guimenu>Search</guimenu>
-				<guisubmenu>Search</guisubmenu>
-			</menuchoice>
+			menu:
+Search[Search]
 			menu (Shortcut:
 			<keycombo>
 				<keycap>Ctrl</keycap>
 				<keycap>H</keycap>
 			</keycombo>
 			) you can open the search dialog of Eclipse. Use the
-			<guilabel>File Search</guilabel>
+			_File Search_
 			tab to search for text with the option to use regular expressions and also to replace matching entries.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javasearchdialog30.png" />
+		
+		
+image::javasearchdialog30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Text search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Text search,pdfwidth=60%]
+		
 
-		<para>
+		
 			Eclipse associates file extensions with the default tab. You can
 			customize the available search tabs via the
-			<guilabel>Customize</guilabel>
+			_Customize_
 			button in the Search dialog. Via the
-			<guilabel>Remember the last used page</guilabel>
+			_Remember the last used page_
 			you can configure Eclipse to use your last tab as default.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/customizesearch10.png" />
+		
+image::customizesearch10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Customize search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Customize search,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/customizesearch20.png" />
+		
+image::customizesearch20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Customize search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Customize search,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="sourcenavigation_othersearch">
-		<title>Java search and other specialized searches</title>
+[[sourcenavigation_othersearch">
+=== Java search and other specialized searches
 
-		<para>
+		
 			The Search functionality (
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -444,23 +399,19 @@
 			</keycombo>
 			) others specialized searches for more complex use cases.
 			For example, use the
-			<guilabel>Java Search</guilabel>
+			_Java Search_
 			tab to search for Java elements, e.g.,
 			methods.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javasearchdialog10.png" />
+		
+		
+image::javasearchdialog10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Text search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Text search,pdfwidth=60%]
+		
+		
 			The
-			<guilabel>Search</guilabel>
+			_Search_
 			view
 			shows the search results for the selected scope. You can
 			double-click
@@ -472,33 +423,29 @@
 			editor. The currently selected search result is also indicated via an
 			arrow in the left
 			border of the editor.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javasearchdialog20.png" />
+		
+		
+image::javasearchdialog20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Text search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Text search,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="sourcenavigation_incrementalfind">
-		<title>Inline search in an editor</title>
+[[sourcenavigation_incrementalfind">
+=== Inline search in an editor
 		<indexterm>
 			<primary>Incremental find</primary>
 		</indexterm>
-		<para>
+		
 			You can use the
 			<keycombo>
 				<keycap>Ctrl</keycap>
 				<keycap>J</keycap>
 			</keycombo>
 			shortcut to activate
-			<wordasword>Incremental Find</wordasword>
+			_Incremental Find_
 			. This allows you to search in the current active editor for a text
 			which is displayed in the status line as depicted
 			by the following
@@ -509,23 +456,19 @@
 			</keycombo>
 			in order to move to the next
 			occurrence of the current search term.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/incrementalsearch10.png" scale="30" />
+		
+image::incrementalsearch10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Incrementation search</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>The advantage of this search is that no pop-up dialog is opened
+					<phrase>Incrementation search,pdfwidth=60%]
+		
+		The advantage of this search is that no pop-up dialog is opened
 			which blocks other elements in the Eclipse IDE.
-		</para>
+		
 
-		<para>
+		
 			If you have selected an element in the editor, you can use the
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -538,27 +481,23 @@
 				<keycap>K</keycap>
 			</keycombo>
 			for the previous element.
-		</para>
-	</section>
-	<section id="sourcenavigation_annotations">
-		<title>Annotation navigations</title>
-		<para>You can also navigate via the annotation buttons, e.g., for
+		
+	
+[[sourcenavigation_annotations">
+=== Annotation navigations
+		You can also navigate via the annotation buttons, e.g., for
 			jumping
 			to the next error or warning in your source
 			code.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/navigation_annotations10.png" scale="40" />
+		
+image::navigation_annotations10.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Annotation navigation</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Annotation navigation,pdfwidth=60%]
+		
+		
 			By pressing the buttons you can navigate to the related
 			annotations.
 			You can also use the keyboard shortcut
@@ -575,42 +514,34 @@
 			(Ctrl plus the comma sign)
 			for selecting the previous annotation.
 
-		</para>
-		<para>The following screenshot shows source code with two warnings
+		
+		The following screenshot shows source code with two warnings
 			and
 			one error and you can navigate between the
 			corresponding code via the
 			annotation buttons.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/annotationsnavigation30.png" scale="40" />
+		
+		
+image::annotationsnavigation30.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Moving in the source code</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Which annotations are relevant for navigation can be configured
+					<phrase>Moving in the source code,pdfwidth=60%]
+		
+		Which annotations are relevant for navigation can be configured
 			via the drop-down menu of the toolbar. This
 			selection is highlighted
 			in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/navigation_annotations20.png" scale="40" />
+		
+		
+image::navigation_annotations20.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Annotation navigation</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="sourcenavigation_mouse">
-		<title>Mouse and keyboard navigation</title>
-		<para>
+					<phrase>Annotation navigation,pdfwidth=60%]
+		
+	
+[[sourcenavigation_mouse">
+=== Mouse and keyboard navigation
+		
 			In a lot of cases you can also use the mouse to navigate to or
 			into an
 			element if you press the
@@ -624,8 +555,8 @@
 			key and (left) click with the mouse on the name of a class to jump
 			into the class
 			declaration.
-		</para>
-		<para>
+		
+		
 			Similar to the left mouse click combined with the
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -636,10 +567,10 @@
 				<keycap>F3</keycap>
 			</keycombo>
 			key to go into a class.
-		</para>
-	</section>
-	<section id="sourcenavigation_breadcrumb">
-		<title>Show in Breadcrumb</title>
+		
+	
+[[sourcenavigation_breadcrumb">
+=== Show in Breadcrumb
 		<indexterm>
 			<primary>Java editor</primary>
 			<secondary>breadcrumb
@@ -648,81 +579,64 @@
 		<indexterm>
 			<primary>Breadcrumb</primary>
 		</indexterm>
-		<para>
+		
 			You can also activate the
-			<wordasword>breadcrumb</wordasword>
+			_breadcrumb_
 			mode for the Java editor
 			which allows you to navigate the source code
 			directly from the Java
 			editor.
-		</para>
-		<para>
+		
+		
 			You can activate this mode via right-click in the editor and by
 			selecting the
-			<guilabel>Show in Breadcrumb</guilabel>
+			_Show in Breadcrumb_
 			entry.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/breadcrumb10.png" />
+		
+		
+image::breadcrumb10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Show in Breadcrumb</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>This allows you to navigate the source code from the editor as
+					<phrase>Show in Breadcrumb,pdfwidth=60%]
+		
+		This allows you to navigate the source code from the editor as
 			depicted in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/breadcrumb20.png" />
+		
+		
+image::breadcrumb20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Breadcrumb view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Breadcrumb view,pdfwidth=60%]
+		
+		
 			To hide it again, right-click on a breadcrump entry and select
-			<guilabel>Hide Breadcrumb</guilabel>
+			_Hide Breadcrumb_
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/breadcrumb30.png" />
+		
+image::breadcrumb30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Breadcrumb view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="sourcenavigation_shortcuts">
-		<title>Shortcuts</title>
-		<para>
+					<phrase>Breadcrumb view,pdfwidth=60%]
+		
+	
+[[sourcenavigation_shortcuts">
+=== Shortcuts
+		
 			There are a lot of shortcuts available for navigation.
 			Please
 			check
 			the appendix of this $book for these shortcuts or
 			open
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guimenu>Preferences</guimenu>
-				<guisubmenu>General</guisubmenu>
-				<guisubmenu>Keys</guisubmenu>
-			</menuchoice>
+			menu:Window</guimenu>Preferences[General > Keys]
 			to find and redefine shortcuts at
 			runtime.
-		</para>
-	</section>
+		
+	
 
-	<section id="packageexplorer_closeprojects">
-		<title>Closing and opening projects</title>
+[[packageexplorer_closeprojects">
+=== Closing and opening projects
 		<indexterm>
 			<primary>Package Explorer view</primary>
 			<secondary>close projects
@@ -733,43 +647,42 @@
 			<secondary>open projects
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Closing projects saves memory in Eclipse and can reduce the build
 			time. Eclipse ignores closed
 			projects, e.g., all
 			searches ignore files from closed projects. Also the
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view
 			does only shows errors of opened projects. This typically helps you
 			focus your attention on the project. You can
 			close projects via a right-click on it and by selecting the
-			<guilabel>Close Project</guilabel>
+			_Close Project_
 			menu entry.
 			Alternatively, if you work on a project, you can close all
 			unrelated
 			projects via a right-click on it and by
 			selecting the
-			<guilabel>Close Unrelated Projects</guilabel>
+			_Close Unrelated Projects_
 			menu entry.
-		</para>
+		
 
-		<para>
+		
 			To open a
 			closed project double-click on it, or right-click it
 			and
 			select
-			<guilabel>Open Project</guilabel>
+			_Open Project_
 			.
-		</para>
-		<para>
+		
+		
 			You can
 			use the filter functionality for the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			to hide the closed projects.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

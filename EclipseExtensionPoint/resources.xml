@@ -1,14 +1,13 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
-	<section id="resources_emf">
-		<title>Extension points related tutorials</title>
-		<para></para>
+[[resources_emf">
+=== Extension points related tutorials
+		
 		<ulink
-			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">OSGi Tutorial</ulink>
+			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">OSGi Tutorial
 		<ulink
-			url="http://angelozerr.wordpress.com/2010/09/14/eclipse-extension-points-and-extensions-without-osgi/">Angelo Zerr describes how to use Extension points without OSGi</ulink>
-	</section>
+			url="http://angelozerr.wordpress.com/2010/09/14/eclipse-extension-points-and-extensions-without-osgi/">Angelo Zerr describes how to use Extension points without OSGi
+	
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>

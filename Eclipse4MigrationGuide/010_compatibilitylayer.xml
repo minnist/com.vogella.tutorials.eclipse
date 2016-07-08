@@ -1,7 +1,7 @@
-<section id="compatibiliylayer" role="wrapper">
-	<title>Running Eclipse 3.x plug-ins on top of Eclipse 4</title>
-	<section id="compatibiliymode_overview">
-		<title>Using the compatibility mode</title>
+
+	<title>Running Eclipse 3.x plug-ins on top of Eclipse 4
+[[compatibiliymode_overview">
+=== Using the compatibility mode
 		<indexterm>
 			<primary>Compatibility mode</primary>
 		</indexterm>
@@ -9,13 +9,13 @@
 			<primary>Compatibility layer</primary>
 		</indexterm>
 
-		<para>
+		
 			The Eclipse platform team has re-implemented the existing 3.x API on top of the 4.x API. This re-implementation
 			is
 			sometimes called the
-			<wordasword>compatibility
+			_compatibility
 				mode
-			</wordasword>
+			_
 			.
 			Therefore, you can run
 			an Eclipse 3.x RCP application nearly
@@ -28,26 +28,22 @@
 			are converted
 			into application model elements at runtime.
 
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/compatibilitymode10.png" scale="25" />
+		
+		
+image::compatibilitymode10.png" scale="25" />
 				</imageobject>
 				<textobject>
-					<phrase>Compatibility mode of 3.x API and 4.x API</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Compatibility mode of 3.x API and 4.x API,pdfwidth=60%]
+		
 
-		<para>
+		
 			This approach requires that your Eclipse 3.x
 			application is based on released 3.x API. If it uses 3.x
 			internals,
 			you might have to adjust your code as this code might have been
 			changed.
-		</para>
-		<para>
+		
+		
 			If a 3.x RCP application runs on top of an Eclipse 4.x runtime, the
 			platform translates the information contained
 			in the
@@ -60,19 +56,19 @@
 			generated
 			based on this
 			information.
-		</para>
+		
 
-		<para>In this scenario you can start to convert certain parts of your
+		In this scenario you can start to convert certain parts of your
 			application
 			into Eclipse 4.x API based parts.
 			Afterwards
 			you have migrated
 			sufficient parts of your application you should switch over
 			completely.
-		</para>
-	</section>
-	<section id="compatibiliylayer_e4runtimeterminology">
-		<title>The e4 API and e4 runtime terminology</title>
+		
+	
+[[compatibiliylayer_e4runtimeterminology">
+=== The e4 API and e4 runtime terminology
 		<indexterm>
 			<primary>e4 API
 			</primary>
@@ -81,57 +77,57 @@
 			<primary>e4 runtime
 			</primary>
 		</indexterm>
-		<para>
+		
 			This $book uses the term
-			<wordasword>e4 API</wordasword>
+			_e4 API_
 			as a synonym for
-			<wordasword>Eclipse 4.x API</wordasword>
+			_Eclipse 4.x API_
 			and the term
-			<wordasword>e4 runtime</wordasword>
+			_e4 runtime_
 			as a synonym
 			for the
-			<wordasword>Eclipse 4.x runtime</wordasword>
+			_Eclipse 4.x runtime_
 			term.
-		</para>
-	</section>
-	<section id="compatibiliylayer_features">
-		<title>Running 3.x RCP applications on top of an e4 runtime</title>
-		<para>
+		
+	
+[[compatibiliylayer_features">
+=== Running 3.x RCP applications on top of an e4 runtime
+		
 			To migrate your Eclipse RCP application to e4 API you have
 			to
 			exchange the target platform to an Eclipse 4.x
 			version.
-		</para>
-		<para>
+		
+		
 			The following features includes the necessary Eclipse platform plug-ins required for this.
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.rcp</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.emf.ecore</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.emf.common</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			Add these features (or the included plug-ins) to your product
 			configuration file. Afterwards the Eclipse 3.x API
 			based RCP
 			application starts on top of an e4 runtime without requiring any change in
 			your code.
-		</para>
+		
 		<note>
-			<para>
+			
 				This assumes that your Eclipse 3.x application does not use any
 				3.x
 				internal API. Eclipse marks internal packages with
@@ -140,24 +136,24 @@
 				flag in the
 				<filename>MANIFEST.MF</filename>
 				file.
-			</para>
+			
 		</note>
 
-	</section>
-	<section id="compatibiliylayer_value">
-		<title>Benefit of adjusting the runtime to Eclipse 4.x</title>
-		<para>Running your Eclipse 3.x RCP application on top of an e4 runtime allows you to start migrating
+	
+[[compatibiliylayer_value">
+=== Benefit of adjusting the runtime to Eclipse 4.x
+		Running your Eclipse 3.x RCP application on top of an e4 runtime allows you to start migrating
 			components
 			of
 			your
 			application to the e4 API.
-		</para>
-		<para>It also ensures
+		
+		It also ensures
 			that you do not use 3.x internal API and that you
 			benefit from the latest
 			Eclipse platform
 			developments, e.g., security updates.
-		</para>
-	</section>
+		
+	
 
-</section>
+

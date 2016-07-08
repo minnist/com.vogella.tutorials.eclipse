@@ -1,17 +1,17 @@
-<section id="plugin_ideextensionsintroducion">
-	<title>Extending the Eclipse IDE</title>
-	<para>The Eclipse IDE is basically an Eclipse RCP application to support development activities. Even core
+
+	<title>Extending the Eclipse IDE
+	The Eclipse IDE is basically an Eclipse RCP application to support development activities. Even core
 		functionality of the Eclipse IDE is provided via a plug-in, for example the Java development or the C
 		development tools
 		are contributed as a set of plug-ins. Only if these plug-ins are present the Java or C development
 		capabilities are
 		available.
-	</para>
-	<para>The Eclipse IDE functionality is heavily based on the concept of extensions and extension points. For example the
+	
+	The Eclipse IDE functionality is heavily based on the concept of extensions and extension points. For example the
 		Java Development Tools provide an extension point to register new code templates for the Java editor.
-	</para>
+	
 
-	<para>
+	
 		Via additional
 		plug-ins you can contribute to an existing
 		functionality, for example
@@ -22,7 +22,7 @@
 		or provide
 		completely
 		new functionality. But you can also create completely new programming environments.
-	</para>
+	
 
 
-</section>
+

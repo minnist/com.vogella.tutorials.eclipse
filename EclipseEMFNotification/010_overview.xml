@@ -1,10 +1,10 @@
-<section id="intro">
-	<title>Models and Eclipse EMF</title>
-	<para>
+
+	<title>Models and Eclipse EMF
+	
 		For a general introduction into Eclipse EMF please see
-		<ulink url="http://www.vogella.com/tutorials/EclipseEMF/article.html">Eclipse EMF Tutorial</ulink>
-	</para>
-	<para> This article focus on the observer / notification functionality
+		http://www.vogella.com/tutorials/EclipseEMF/article.html">Eclipse EMF Tutorial
+	
+	 This article focus on the observer / notification functionality
 		of Eclipse EMF.
-	</para>
-</section>
+	
+

@@ -1,7 +1,7 @@
-<section id="osgiservice" role="wrapper">
-	<title>OSGi Services</title>
-	<section id="osgiservice_overview">
-		<title>What are OSGi services?</title>
+
+	<title>OSGi Services
+[[osgiservice_overview">
+=== What are OSGi services?
 		<indexterm>
 			<primary>OSGi</primary>
 			<secondary>Services</secondary>
@@ -16,9 +16,9 @@
 		<indexterm>
 			<primary>OSGi service priorities</primary>
 		</indexterm>
-		<para>
+		
 			A
-			<wordasword>service</wordasword>
+			_service_
 			in OSGi is defined by a standard Java class or an
 			interface.
 			The first step to define an OSGi service is to define the
@@ -26,24 +26,24 @@
 			or interface for which you want to provide a
 			service.
 			This is called the
-			<wordasword>service interface</wordasword>
+			_service interface_
 			.
-		</para>
-		<para>As a second step you write the implementation
+		
+		As a second step you write the implementation
 			class for the service interface.
-		</para>
-		<para>
+		
+		
 			You can
 			register services implementations and consume existing services via the OSGi
 			runtime.
 			OSGi provides
 			a
 			central
-			<wordasword>service registry</wordasword>
+			_service registry_
 			for this purpose.
-		</para>
+		
 
-		<para>
+		
 			A
 			service
 			can be dynamically started and stopped,
@@ -61,12 +61,12 @@
 			started
 			or
 			stopped.
-		</para>
-		<para>During the declaration of a service it is possible to specify
+		
+		During the declaration of a service it is possible to specify
 			key / values which can be used to configure the
 			service.
-		</para>
-		<para>
+		
+		
 			It is possible to define a service ranking for a service via a
 			service
 			property.
@@ -78,8 +78,8 @@
 			Eclipse dependency injection
 			framework automatically inject the
 			service with the highest service ranking.
-		</para>
-		<para>
+		
+		
 			The
 			<code>Constants</code>
 			class from the
@@ -93,37 +93,33 @@
 			integer property of the
 			service
 			ranking.
-		</para>
+		
 
-	</section>
-	<section id="osgiservice_active">
-		<title>Life cycle status for providing services</title>
-		<para>
+	
+[[osgiservice_active">
+=== Life cycle status for providing services
+		
 			To provide a service a plug-in needs to be in the
 			<code>ACTIVE</code>
 			life cycle status of OSGi.
-		</para>
-		<para>
+		
+		
 			This requires that the service plug-in has the
-			<wordasword>Activate this plug-in when one of its classes is loaded</wordasword>
+			_Activate this plug-in when one of its classes is loaded_
 			flag set in the
 			manifest
 			file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/osgi_dsservices_activateflag10.png" scale="40" />
+		
+		
+image::osgi_dsservices_activateflag10.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Activate flag for services</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="osgiservice_definition">
-		<title>Best practices for defining services</title>
-		<para>
+					<phrase>Activate flag for services,pdfwidth=60%]
+		
+	
+[[osgiservice_definition">
+=== Best practices for defining services
+		
 			It is good practice to define a
 			service
 			via a plug-in
@@ -139,7 +135,7 @@
 			the
 			implementation of the service via a
 			different plug-in.
-		</para>
-	</section>
+		
+	
 
-</section>
+

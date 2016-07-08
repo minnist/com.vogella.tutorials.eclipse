@@ -1,8 +1,8 @@
 <chapter id="tutorial_usingeselectionservice">
-	<title>Exercise: Selection service</title>
-	<section id="tutorial_usinge4service_0">
-		<title>Target of this exercise</title>
-		<para>
+	<title>Exercise: Selection service
+[[tutorial_usinge4service_0">
+=== Target of this exercise
+		
 			In this section you propagate the selection of the
 			<code>TableViewer</code>
 			in the
@@ -10,8 +10,8 @@
 			to your
 			<code>TodoDetailsPart</code>
 			.
-		</para>
-		<para>
+		
+		
 			The
 			<code>org.eclipse.e4.ui.services</code>
 			plug-in must be defined as dependency in the
@@ -20,45 +20,45 @@
 			<xref linkend="tutorial_api" />
 			.
 			Validate that this is the case.
-		</para>
-	</section>
-	<section id="tutorial_usinge4service_1">
-		<title>Retrieving the selection service</title>
+		
+	
+[[tutorial_usinge4service_1">
+=== Retrieving the selection service
 
-		<para>
+		
 			In your
 			<code>TodoOverviewPart</code>
 			class,
 			acquire the
 			<code>ESelectionService</code>
 			service via dependency injection.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/selection/GetSelectionService.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_usinge4service_2">
-		<title>Setting the selection in TodoOverviewPart</title>
-		<para>
+[[tutorial_usinge4service_2">
+=== Setting the selection in TodoOverviewPart
+		
 			Use the selection service to set the selection, once the user
 			selects an
 			entry in the list. The following code demonstrates that.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/selection/ViewerSetSelection.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_usinge4service_3">
-		<title>Review TodoDetailsPart</title>
-		<para>
+		
+	
+[[tutorial_usinge4service_3">
+=== Review TodoDetailsPart
+		
 			If you followed the exercises in
 			<xref linkend="tutorial_api" />
 			,
@@ -66,18 +66,18 @@
 			<code>TodoDetailsPart</code>
 			class should already be correctly implemented. The relevant part of
 			the code is repeated in the following snippet.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/selection/TodoDetailsPartSelection.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_usinge4service_4">
-		<title>Validate selection propagation</title>
-		<para>
+		
+	
+[[tutorial_usinge4service_4">
+=== Validate selection propagation
+		
 			Start your application.
 			If you select a row in the JFace table, the
 			corresponding
@@ -88,10 +88,10 @@
 			to the
 			<code>TodoDetailsPart</code>
 			class.
-		</para>
+		
 		<warning>
 
-			<para>
+			
 				Please keep in mind that ALL injections run before
 				<code>@PostConstruct</code>
 				, e.g., the annotated constructor, the annotated fields and the
@@ -103,11 +103,11 @@
 				check if
 				your user
 				interface is already available.
-			</para>
+			
 
 		</warning>
 		<note>
-			<para>
+			
 				It might also happen that
 				<code>setTodo()</code>
 				is called before the
@@ -121,17 +121,17 @@
 				constructed, its @Inject method is called before the
 				<code>@PostConstruct</code>
 				method is called.
-			</para>
-			<para>
+			
+			
 				The
 				<code>updateUserInterface()</code>
 				method call at the end of your
 				<code>@PostConstruct</code>
 				method covers this case.
-			</para>
+			
 		</note>
 		<tip>
-			<para>
+			
 				If you see unwanted updates of Todo items in your table, you did not
 				implement the data binding correctly in the
 				<code>TodoOverviewPart</code>
@@ -146,9 +146,9 @@
 				active. A new Todo will
 				update the user interface and the user interface binding will update
 				all the old Todo objects,  which is not what you want.
-			</para>
+			
 		</tip>
 
-	</section>
+	
 
 </chapter>

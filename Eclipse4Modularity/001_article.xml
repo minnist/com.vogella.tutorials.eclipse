@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse application model modularity with fragments and
-			processors - Tutorial</title>
+=== Eclipse application model modularity with fragments and
+			processors - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,15 +31,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>04.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 6.0</para>
+			Version 6.0
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Application Model contributions</title>
-			<para> This tutorial explains how to contribute to the Eclipse
+	=== Eclipse Application Model contributions
+			 This tutorial explains how to contribute to the Eclipse
 				application model via other
 				plug-ins.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

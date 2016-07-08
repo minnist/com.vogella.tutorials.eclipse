@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 development practices - Tutorial</title>
+=== Eclipse 4 development practices - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,13 +31,13 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse application development practices</title>
-			<para> This tutorial gives an overview about development practices
+	=== Eclipse application development practices
+			 This tutorial gives an overview about development practices
 				with the
 				Eclipse 4
 				application
 				platform.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

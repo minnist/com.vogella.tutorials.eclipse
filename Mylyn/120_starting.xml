@@ -1,122 +1,86 @@
-<section id="mylyn_start" role="wrapper">
-	<title>Tutorial: Using Mylyn</title>
-	<section id="mylyn_tasklist">
-		<title>Task List view</title>
+
+	<title>Tutorial: Using Mylyn
+[[mylyn_tasklist">
+=== Task List view
 		<indexterm>
 			<primary>Mylyn</primary>
 			<secondary>Task List view</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Task List</guilabel>
+			_Task List_
 			view
 			is part of the standard Java
-			<wordasword>perspective</wordasword>
+			_perspective_
 			.
-		</para>
-		<para>
+		
+		
 			In case you closed the
 			view
 			, you can re-open it via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Mylyn</guisubmenu>
-				<guisubmenu>Task List</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Mylyn > Task List]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Task List View</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::mylyn10.png[Task List View,pdfwidth=60%]
+		
+	
 
-	<section id="mylyn_createtask">
-		<title>Create new tasks</title>
+[[mylyn_createtask">
+=== Create new tasks
 		<indexterm>
 			<primary>Mylyn</primary>
 			<secondary>create tasks</secondary>
 		</indexterm>
-		<para>
+		
 			To create a new task press the
 			<guibutton>New Task</guibutton>
 			button or right-click in the
-			<guilabel>Task List</guilabel>
+			_Task List_
 			view
 			and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Task</guisubmenu>
-			</menuchoice>
+			menu:New[Task]
 			.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Selecting local repository</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+image::mylyn20.png[Selecting local repository,pdfwidth=60%]
+		
+		
 			Select the
-			<guilabel>Local</guilabel>
+			_Local_
 			repository, as depicted in the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Selecting local repository</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::mylyn30.png[Selecting local repository,pdfwidth=60%]
+		
 
-	</section>
-	<section id="mylyn_activate">
-		<title>Activate a task</title>
+	
+[[mylyn_activate">
+=== Activate a task
 		<indexterm>
 			<primary>Mylyn</primary>
 			<secondary>activate tasks</secondary>
 		</indexterm>
-		<para>
+		
 			To start working on a task, select the
 			<guibutton>Activate task</guibutton>
 			button. If the task has already captured a
-			<wordasword>context</wordasword>
+			_context_
 			, Mylyn
 			filters the visible elements in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Activate Tasks in the Package Explorer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::mylyn40.png[Activate Tasks in the Package Explorer,pdfwidth=60%]
+		
 
-		<para>
+		
 			You can remove the filter in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			by
 			clicking the
@@ -127,88 +91,69 @@
 			. Afterwards
 			all files
 			are displayed.
-		</para>
-		<para> If you open a file while having an activated task, this file
+		
+		 If you open a file while having an activated task, this file
 			is
 			added to
 			the context of
 			the
 			task.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Focus on active tasks</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Once you have identified all necessary elements, you can
+		
+		
+image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
+		
+		Once you have identified all necessary elements, you can
 			focus
 			again on the task to filter out the unnecessary elements.
-		</para>
-		<para>If you have to switch to another task you simply can activate
+		
+		If you have to switch to another task you simply can activate
 			it. The context of the task will be restored.
-		</para>
-	</section>
-	<section id="problemsview">
-		<title>Create task from Problems view</title>
+		
+	
+[[problemsview">
+=== Create task from Problems view
 		<indexterm>
 			<primary>Mylyn</primary>
 			<secondary>create task from Problems views</secondary>
 		</indexterm>
-		<para>
+		
 			You can create a new Mylyn task from the
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view
 			, by
 			right-clicking on a problem and selecting
-			<guilabel>New Task from Marker...</guilabel>
+			_New Task from Marker..._
 			from the context menu.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/problemsview_marker10.png"
+		
+		
+image::problemsview_marker10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Problems View</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="export">
-		<title>Export and import your tasks</title>
+					<phrase>Problems View,pdfwidth=60%]
+		
+	
+[[export">
+=== Export and import your tasks
 		<indexterm>
 			<primary>Mylyn</primary>
 			<secondary>export and import tasks</secondary>
 		</indexterm>
-		<para>
+		
 			Mylyn allows you to export and import your local tasks. Select
 			your
 			categories or tasks in the
-			<guilabel>Task List</guilabel>
+			_Task List_
 			view
 			, right-click on them and select
-			<guilabel>Export and
+			_Export and
 				Import
-			</guilabel>
+			_
 			from the context menu.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/mylyn_export10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Export Mylyn tasks</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::mylyn_export10.png[Export Mylyn tasks,pdfwidth=60%]
+		
+	
 
-</section>

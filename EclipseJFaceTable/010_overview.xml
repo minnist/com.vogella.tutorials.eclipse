@@ -1,8 +1,8 @@
-<section id="jfacetable" role="wrapper">
-	<title>JFace Table Viewer</title>
 
-	<section id="jfacetable_viewer">
-		<title>Using the JFace TableViewer</title>
+	<title>JFace Table Viewer
+
+[[jfacetable_viewer">
+=== Using the JFace TableViewer
 		<indexterm>
 			<primary>TableViewer (JFace)</primary>
 		</indexterm>
@@ -11,7 +11,7 @@
 			<primary>JFace</primary>
 			<secondary>TableViewer</secondary>
 		</indexterm>
-		<para>
+		
 			You can use the
 			<code>TableViewer</code>
 			class to create tables using the JFace framework. The SWT
@@ -20,21 +20,21 @@
 			is wrapped into the
 			<code>TableViewer</code>
 			and can still be accessed to set its properties.
-		</para>
+		
 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/viewer.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
-	<section id="jfacetable_contentprovider">
-		<title>Content provider for JFace tables</title>
-		<para>
+	
+[[jfacetable_contentprovider">
+=== Content provider for JFace tables
+		
 			As with other JFace
 			viewers a
 			content provider
@@ -42,8 +42,8 @@
 			should be displayed in the
 			<code>TableViewer</code>
 			.
-		</para>
-		<para>
+		
+		
 			Eclipse provides an implementation
 			of
 			this interface via the
@@ -62,8 +62,8 @@
 			from the
 			<code>org.eclipse.jface.viewers</code>
 			package.
-		</para>
-		<para>
+		
+		
 			The
 			<code>getElements()</code>
 			method of the
@@ -76,40 +76,40 @@
 			before the
 			<code>setInput()</code>
 			method is called.
-		</para>
+		
 
-		<para>
+		
 			Each object in the Array returned by the content provider is
 			displayed as individual element by the
 			viewer. In case of the table
 			viewer each object is displayed in an
 			individual row.
-		</para>
-		<para>
+		
+		
 			The usage of the content provider is demonstrated with the
 			following code snippet.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/contentprovider.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="jfacetable_labelprovider">
-		<title>Columns and label provider</title>
-		<para>
+[[jfacetable_labelprovider">
+=== Columns and label provider
+		
 			Columns for a JFace
 			<code>TableViewer</code>
 			object
 			are defined by creating instances of the
 			<code>TableViewerColumn</code>
 			class.
-		</para>
-		<para>
+		
+		
 			Each
 			<code>TableViewerColumn</code>
 			object
@@ -126,13 +126,13 @@
 			input to
 			determine which data is displayed in the column for this
 			row.
-		</para>
-		<para>
+		
+		
 			Typically the label provider returns a String, but more complex
 			implementations
 			are possible.
-		</para>
-		<para>
+		
+		
 			The
 			<code>setLabelProvider()</code>
 			method on the
@@ -143,15 +143,15 @@
 			provided by the
 			<code>ColumnLabelProvider</code>
 			class. Its usage is demonstrated in the following code snippet.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/columns.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The above code uses two fields which contain
 			<code>Image</code>
 			instances. These fields could for example be initialized via the
@@ -160,19 +160,19 @@
 			to the
 			<code>org.eclipse.core.runtime</code>
 			plug-in.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/columnshelper.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="jfacetable_datachanges">
-		<title>Reflect data changes in the viewer</title>
-		<para>
+[[jfacetable_datachanges">
+=== Reflect data changes in the viewer
+		
 			To reflect data changes in the data model that is displayed by the
 			viewer,
 			you can call the
@@ -181,17 +181,17 @@
 			viewer
 			based on the data which is
 			assigned to it.
-		</para>
-		<para>
+		
+		
 			To change the data which is displayed use the
 			<code>viewer.setInput()</code>
 			method.
-		</para>
-	</section>
+		
+	
 
-	<section id="jfacetable_selectionlistener">
-		<title>Selection change listener</title>
-		<para>
+[[jfacetable_selectionlistener">
+=== Selection change listener
+		
 			Via the
 			<code>addSelectionChangedListener</code>
 			method you can add a
@@ -200,16 +200,15 @@
 			<code>ISelectionChangedListener</code>
 			interface. The following code shows an example that gets the selected
 			element of the viewer.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/listener.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-</section>

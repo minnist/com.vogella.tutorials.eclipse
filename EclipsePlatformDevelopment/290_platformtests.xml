@@ -1,9 +1,9 @@
-<section id="unitTesting" role="wrapper">
-	<title>Running the Eclipse platform unit tests</title>
 
-	<section id="unitTestingJFace2">
-		<title>Repositories for platform tests</title>
-		<para>
+	<title>Running the Eclipse platform unit tests
+
+[[unitTestingJFace2">
+=== Repositories for platform tests
+		
 			Clone the following Git repositories as these contain the existing
 			unit tests. The clone URLs (these are not URLs for
 			the browser!) are
@@ -11,23 +11,23 @@
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.releng.git
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.runtime.git
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			In case you want to contribute Gerrit patches to these
 			projects, you
 			should clone them via the Gerrit system as described in
@@ -35,12 +35,12 @@
 			. But you can always adjust the push URL later, as described in
 			<xref linkend="eclipsegerritcontribution_adjustpush" />
 			.
-		</para>
-	</section>
-	<section id="platformtest_jface">
-		<title>Example: JFace tests</title>
+		
+	
+[[platformtest_jface">
+=== Example: JFace tests
 
-		<para>
+		
 			In this section the procedure to run the
 			unit
 			tests of the
@@ -49,17 +49,17 @@
 			is described as an example for running
 			tests from an
 			Eclipse project.
-		</para>
-		<para>
+		
+		
 			The unit tests for the JFace Bundle are placed in the
 			org.eclipse.ui.tests plug-in. This plug-in includes also
 			several
 			other
 			tests for the Eclipse platform.ui component.
-		</para>
+		
 
 
-		<para>
+		
 			To run theses tests, import the following required plug-ins:
 			<itemizedlist>
 				<listitem>
@@ -83,17 +83,17 @@
 					repository
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
 
 
-		<para>
+		
 			To test the full JFace TestSuite, you only need to run the
-			<wordasword>JFace-All Tests.launch</wordasword>
+			_JFace-All Tests.launch_
 			run configuration from the
 			<code>org.eclipse.ui.tests</code>
 			plug-in.
-		</para>
+		
 
 		<mediaobject>
 			<imageobject>
@@ -103,5 +103,5 @@
 				<phrase>Screenshot of the JFace JUnit run</phrase>
 			</textobject>
 		</mediaobject>
-	</section>
-</section>
+	
+

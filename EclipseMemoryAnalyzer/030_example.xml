@@ -1,48 +1,45 @@
-<section id="example">
-	<title>Example</title>
-	<section id="example_project">
-		<title>Create Project</title>
-		<para>
+
+	<title>Example
+[[example_project">
+=== Create Project
+		
 			Create the Java project called
-			<wordasword>com.vogella.mat.first</wordasword>
+			_com.vogella.mat.first_
 			and the
 			<code>com.vogella.mat.first</code>
 			package. Create the following class.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/simple/Main.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="example_run">
-		<title>Run project and create heap dump</title>
-		<para>
+		
+	
+[[example_run">
+=== Run project and create heap dump
+		
 			In Eclipse add the
 			<parameter>-XX:+HeapDumpOnOutOfMemoryError</parameter>
 			to the
 			runtime configuration.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dumpparameter10.gif" scale="40"/>
+		
+		
+image::dumpparameter10.gif" scale="40"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Run the project. It crashes and writes an
-			<wordasword>heap dump</wordasword>
+			_heap dump_
 			.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="example_analyse">
-		<title>Use MAT to analyze the heap dump</title>
-		<para>Open the heap dump in MAT and get familiar with using the MAT tooling.
-		</para>
-	</section>
-</section>
+[[example_analyse">
+=== Use MAT to analyze the heap dump
+		Open the heap dump in MAT and get familiar with using the MAT tooling.
+		
+	

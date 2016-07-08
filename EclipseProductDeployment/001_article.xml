@@ -13,7 +13,7 @@ Version 0.3, 06.07.2016
 
 
 
-		<title>Eclipse product and application deployment - Tutorial</title>
+=== Eclipse product and application deployment - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -38,12 +38,12 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse RCP product deployment</title>
-			<para> This tutorial describes how the product configuration file and
+	=== Eclipse RCP product deployment
+			 This tutorial describes how the product configuration file and
 				the deployment process of Eclipse RCP
 				applications. It is based on
 				Eclipse 4.5 (Eclipse Mars).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

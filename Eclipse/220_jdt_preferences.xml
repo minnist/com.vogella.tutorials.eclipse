@@ -1,8 +1,8 @@
-<section id="improvedeclipsesettings" role="wrapper">
-	<title>Exercise: Configuring the IDE for an improved development experience</title>
-	<section id="tutorial_eclipsesetup_configuration">
-		<title>Why adjusting the Eclipse default configuration?</title>
-		<para>
+
+	<title>Exercise: Configuring the IDE for an improved development experience
+[[tutorial_eclipsesetup_configuration">
+=== Why adjusting the Eclipse default configuration?
+		
 			The Eclipse IDE is relatively conservative configured to avoid
 			surprises during development. Certain settings in
 			the Eclipse IDE allow you to use it
@@ -16,67 +16,59 @@
 			you
 			can always skip
 			that setting.
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_eclipsesetup_linkwitheditor">
-		<title>Link Java editor with the Package Explorer view</title>
-		<para>
+[[tutorial_eclipsesetup_linkwitheditor">
+=== Link Java editor with the Package Explorer view
+		
 			You can synchronize the currently selected
 			Java editor with the
 			selection in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view. This gives you a clearer visibility which object you are
 			currently
 			editing.
-		</para>
-		<para>
+		
+		
 			Enable this by selecting the corresponding button in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/linkwitheditor10.png" scale="60" />
+		
+		
+image::linkwitheditor10.png" scale="60" />
 				</imageobject>
 				<textobject>
-					<phrase>Editor</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Editor,pdfwidth=60%]
+		
+	
 
 
-	<section id="preferences_semicolon">
-		<title>Automatic placement of semicolon</title>
+[[preferences_semicolon">
+=== Automatic placement of semicolon
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>automatic placement of semicolon
 			</secondary>
 		</indexterm>
-		<para> Eclipse can make typing more efficient by placing semicolons
+		 Eclipse can make typing more efficient by placing semicolons
 			at
 			the correct position in your source code.
-		</para>
+		
 
-		<para>
+		
 			In the Preference setting select
-			<menuchoice>
-				<guimenu>Java</guimenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu>Typing</guisubmenu>
-			</menuchoice>
+			menu:Java[Editor > Typing]
 			. In the
-			<guilabel>Automatically insert at correct position</guilabel>
+			_Automatically insert at correct position_
 			selection
 			enable
 			the
-			<guilabel>Semicolons</guilabel>
+			_Semicolons_
 			checkbox.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="50" fileref="images/wayofworking10.png" />
@@ -85,25 +77,23 @@
 					<phrase>Type Assists which allow setting the semicolon to the
 						right
 						position
-					</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Afterwards, you can type a semicolon in the middle of your code
+					,pdfwidth=60%]
+		
+		Afterwards, you can type a semicolon in the middle of your code
 			and
 			Eclipse will position it at the end of the
 			current statement.
-		</para>
-	</section>
+		
+	
 
-	<section id="tips_escape">
-		<title>Auto-escape text pasted into Strings</title>
+[[tips_escape">
+=== Auto-escape text pasted into Strings
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>auto escape text pasted into Strings
 			</secondary>
 		</indexterm>
-		<para>Eclipse allows you to escape text automatically if it is pasted
+		Eclipse allows you to escape text automatically if it is pasted
 			into
 			a String literal. For example, you can copy
 			HTML code and paste
@@ -111,94 +101,74 @@
 			into
 			a String in your Java source. Eclipse would escape the text
 			automatically for you.
-		</para>
-		<para>
+		
+		
 			Activate this setting via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu>Typing</guisubmenu>
-				<guisubmenu>In string literals</guisubmenu>
-				<guisubmenu>Escape text when pasting
+			menu:Window[Preferences > Java > Editor > Typing > In string literals > Escape text when pasting
 					into string literal
-				</guisubmenu>
-			</menuchoice>
-		</para>
-		<para>Now you can paste text that should be escaped. The
+				]
+		
+		Now you can paste text that should be escaped. The
 			following code
 			snippet shows an example for the resulting code
 			if you
 			paste
 			HTML code
 			containing a link into a string literal.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/escape/Paste1.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="tips_brackets">
-		<title>Bracket highlighting</title>
+[[tips_brackets">
+=== Bracket highlighting
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>bracket highlighting
 			</secondary>
 		</indexterm>
-		<para>You can configure Eclipse to highlight the matching brackets of
+		You can configure Eclipse to highlight the matching brackets of
 			a code block in the source code editor.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdtbrackets10.png" scale="30" />
+		
+image::jdtbrackets10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Highlight the enclosing brackets in JDT</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Before the change you would not see the enclosing brackets.
+					<phrase>Highlight the enclosing brackets in JDT,pdfwidth=60%]
+		
+		Before the change you would not see the enclosing brackets.
 			Afterwards, they will be slightly highlighted. This
 			helps to see in
 			which block you are.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdtbrackets20.png" />
+		
+		
+image::jdtbrackets20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Without highlight the enclosing brackets in JDT</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Without highlight the enclosing brackets in JDT,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdtbrackets30.png" />
+		
+image::jdtbrackets30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>With highlight the enclosing brackets in JDT</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>With highlight the enclosing brackets in JDT,pdfwidth=60%]
+		
+	
 
-	<section id="tips_autoformatimport">
-		<title>Code cleanup during save via save actions</title>
+[[tips_autoformatimport">
+=== Code cleanup during save via save actions
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>save action</secondary>
 		</indexterm>
-		<para>
+		
 			Eclipse can cleanup your code and format it automatically during save (shortcut:
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -208,31 +178,23 @@
 			You can find
 			the corresponding
 			settings under
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guimenu>Java</guimenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu>Save Actions</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences</guisubmenu>Java[Editor > Save Actions]
 			.
-		</para>
-		<para>
+		
+		
 			Here you can define the actions which should be performed during save and via the
-			<guilabel>Configure...</guilabel>
+			_Configure..._
 			button you can configure the code cleanup actions which should be performed.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="50" fileref="images/wayofworking30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Save Actions</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Save Actions,pdfwidth=60%]
+		
+		
 			Import statements are only automatically created if
 			where is one valid import. If Eclipse determines more
 			than
@@ -241,10 +203,7 @@
 			you still need to right-click in
 			your editor and
 			select
-			<menuchoice>
-				<guimenu>Source</guimenu>
-				<guisubmenu>Organize Imports</guisubmenu>
-			</menuchoice>
+			menu:Source[Organize Imports]
 			(shortcut:
 			<keycombo>
 				<keycap>Shift</keycap>
@@ -252,52 +211,45 @@
 				<keycap>O</keycap>
 			</keycombo>
 			).
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_eclipsesetup_launchconfig">
-		<title>Launch configuration</title>
-		<para>
+[[tutorial_eclipsesetup_launchconfig">
+=== Launch configuration
+		
 			In the Eclipse preferences dialog select the
-			<guilabel>Launch the previously launched application</guilabel>
+			_Launch the previously launched application_
 			option in the
-			<menuchoice>
-				<guimenu>Run/Debug</guimenu>
-				<guisubmenu>Launching</guisubmenu>
-			</menuchoice>
+			menu:Run/Debug[Launching]
 			setting.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/exercise_lauchprevious11.png" scale="30" />
+		
+		
+image::exercise_lauchprevious11.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Launch previous launched application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Launch previous launched application,pdfwidth=60%]
+		
 
-	</section>
-	<section id="tips_filterimports">
-		<title>Type Filters</title>
+	
+[[tips_filterimports">
+=== Type Filters
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>filter import statements
 			</secondary>
 		</indexterm>
-		<para>
+		
 			The
-			<wordasword>Save Actions</wordasword>
+			_Save Actions_
 			setting
 			automatically adds required import statements to your source
 			code
 			if there is only one possible import.
-		</para>
-		<para>
+		
+		
 			Alternatively, or if there are several possible imports, you can use
 			the
-			<wordasword>Organize Imports</wordasword>
+			_Organize Imports_
 
 			(shortcut:
 			<keycombo>
@@ -315,38 +267,28 @@
 			to
 			select the right
 			one.
-		</para>
-		<para>
+		
+		
 			The following shows the available packages for the
 			<code>List</code>
 			class in the
-			<guilabel>Organize Imports</guilabel>
+			_Organize Imports_
 			dialog.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/importpackages10.png" />
+		
+		
+image::importpackages10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Dialog for selecting the correct import statement</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Dialog for selecting the correct import statement,pdfwidth=60%]
+		
+		
 			If you never use certain packages, for example AWT or Swing, you can
 			exclude
 			these packages from Eclipse via the
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Appearance</guisubmenu>
-				<guisubmenu>Type Filters</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Appearance > Type Filters]
 			setting.
-		</para>
-		<para>
+		
+		
 			Press the
 			<guibutton>Add packages</guibutton>
 			button
@@ -362,18 +304,14 @@
 			search
 			functionality
 			in Eclipse.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/importpackages20.png" />
+		
+		
+image::importpackages20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Filtering packages from the Eclipse import</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Please note that Eclipse shows (in its default configuration)
+					<phrase>Filtering packages from the Eclipse import,pdfwidth=60%]
+		
+		Please note that Eclipse shows (in its default configuration)
 			only the packages that are
 			used in the current
 			workspace. If you want
@@ -381,36 +319,32 @@
 			packages, you have to create at least one
 			Java
 			project.
-		</para>
-	</section>
-	<section id="tips_completion">
-		<title>Completion overwrites and insert guessed method arguments
-		</title>
+		
+	
+[[tips_completion">
+=== Completion overwrites and insert guessed method arguments
+		
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>Completion overwrites and insert guessed method arguments
 			</secondary>
 		</indexterm>
-		<para>Eclipse can override existing method calls, in case you trigger
+		Eclipse can override existing method calls, in case you trigger
 			a code completion in an existing statement.
 			Eclipse can also try to
 			guess
 			the correct actual
 			parameters for a method call.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdt_completion04.png" scale="30" />
+		
+image::jdt_completion04.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>JDT completion</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>JDT completion,pdfwidth=60%]
+		
 
-		<para>
+		
 			With the first setting you can override methods in the middle of
 			a
 			statement via the
@@ -419,76 +353,54 @@
 				<keycap>Space</keycap>
 			</keycombo>
 			code assists shortcut.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdt_completion08.png" />
+		
+image::jdt_completion08.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Trigger code completion</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Without this setting you would get the following result, which
+					<phrase>Trigger code completion,pdfwidth=60%]
+		
+		Without this setting you would get the following result, which
 			results in a syntax error.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdt_completion20.png" />
+		
+		
+image::jdt_completion20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>JDT completion</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>With this setting you get the following result.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdt_completion10.png" />
+					<phrase>JDT completion,pdfwidth=60%]
+		
+		With this setting you get the following result.
+		
+image::jdt_completion10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Result</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Result,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="tips_codecompletionactivationkey">
-		<title>Auto activation key for code completion</title>
+[[tips_codecompletionactivationkey">
+=== Auto activation key for code completion
 
-		<para>
+		
 			The Eclipse IDE is configured to give you automatic code completion
 			suggestion only after the . sign. Typically you
 			want to have code
 			completion on every character. Open again the
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu>Content Assists</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Editor > Content Assists]
 			preference setting and enter
 			.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ in the
-			<guilabel>Auto activation trigger for Java</guilabel>
+			_Auto activation trigger for Java_
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jdt_contentassists20.png" scale="40" />
+		
+		
+image::jdt_contentassists20.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Auto activation key for code completion</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Auto activation key for code completion,pdfwidth=60%]
+		
+	
 
 
-</section>
+

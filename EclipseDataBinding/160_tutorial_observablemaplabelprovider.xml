@@ -1,7 +1,7 @@
-<section id="tutorial_observablemaplabelprovider">
+
 	<title>Using ObservableListContentProvider and
-		ObservableMapLabelProvider</title>
-	<para>
+		ObservableMapLabelProvider
+	
 		If you use
 		<code>WritableList</code>
 		and
@@ -10,16 +10,16 @@
 		can use
 		<code>ObservableMapLabelProvider</code>
 		to listen to changes of the individual objects.
-	</para>
-	<para>
+	
+	
 		Change the
 		<code>View.java</code>
 		to the following.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/viewer/View.java" />
 		</programlisting>
-	</para>
-</section>
+	
+

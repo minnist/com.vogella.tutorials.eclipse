@@ -10,31 +10,31 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="debug_creation_exercise">
-	<title>Exercise: Creating the Debug Model Elements</title>
-	<section id="debug_creation_exercise_target">
-		<title>Target</title>
-		<para>In this exercise an example debug model will be created, so
+
+	<title>Exercise: Creating the Debug Model Elements
+[[debug_creation_exercise_target">
+=== Target
+		In this exercise an example debug model will be created, so
 			that
 			a debug session can be started.
-		</para>
-		<para>In this debug session a given String will be printed to the
+		
+		In this debug session a given String will be printed to the
 			console char by char. The running application can be suspended at the
 			char, which is currently in the work queue.
-		</para>
-		<para>
+		
+		
 			<note>
-				<para>
+				
 					This exercise is based on
 					<ulink
-						href="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui">Launch Configuration UI</ulink>
+						href="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui">Launch Configuration UI
 					and will make use of the tab and launch delegate, which is created
 					in the
 					<ulink
-						href="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui">Defining custom launcher for the Eclipse IDE</ulink>
+						href="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui">Defining custom launcher for the Eclipse IDE
 					tutorial.
-				</para>
-				<para>
+				
+				
 					<mediaobject>
 						<imageobject>
 							<imagedata fileref="images/vogella_launch_ui.png"
@@ -44,55 +44,55 @@ Version 0.3, 06.07.2016
 							<phrase>Vogella launch UI</phrase>
 						</textobject>
 					</mediaobject>
-				</para>
+				
 			</note>
-		</para>
-	</section>
-	<section id="debug_create_idebugelement">
-		<title>Create a common IDebugElement</title>
-		<para>
+		
+	
+[[debug_create_idebugelement">
+=== Create a common IDebugElement
+		
 			As mentioned earlier each debug model class is derived from
 			<code>IDebugElement</code>
 			and contains methods, which are equal for every debug model class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/ExampleDebugElement.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<note>
-				<para>
+				
 					A custom model identifier may also be used. This means it is
 					not
 					necessary to use the plug-in's id to make everything work
 					correctly.
-				</para>
+				
 			</note>
-		</para>
-	</section>
-	<section id="debug_create_istackframe">
-		<title>Create an IStackFrame</title>
-		<para>
+		
+	
+[[debug_create_istackframe">
+=== Create an IStackFrame
+		
 			<code>IStackFrames</code>
 			are only visible when a thread is suspended, which can also be seen
 			in the following
 			<xref linkend="debug_create_ithread" />
 			section.
-		</para>
-		<para>
+		
+		
 			For instance when debugging a Java application the list of
 			<code>IStackFrame</code>
 			objects under a thread show the currently suspended Java stacktrace.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/ExampleStackFrame.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			For convenience most of the actions in the ExampleStackFrame are
 			delegated to the given
 			<code>IThread</code>
@@ -103,10 +103,10 @@ Version 0.3, 06.07.2016
 			spelled. In later sections IVariables will be added to this
 			<code>IStackFrame</code>
 			implementation, so that also available variables are shown in the
-			<guilabel>Variables</guilabel>
+			_Variables_
 			view.
-		</para>
-		<para>
+		
+		
 			<code>IStackFrame</code>
 			classes should also override the
 			<code>equals</code>
@@ -119,28 +119,28 @@ Version 0.3, 06.07.2016
 			methods in
 			<xref linkend="debug_create_ithread" />
 			.
-		</para>
-	</section>
-	<section id="debug_create_ithread">
-		<title>Create an IThread</title>
-		<para>
+		
+	
+[[debug_create_ithread">
+=== Create an IThread
+		
 			An
 			<code>IThread</code>
 			is supposed to be a wrapper around a usual Java thread, which runs
 			within an
 			<code>IDebugTarget</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/ExampleThread.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="debug_create_idebugtarget">
-		<title>Create an IDebugTarget</title>
-		<para>
+		
+	
+[[debug_create_idebugtarget">
+=== Create an IDebugTarget
+		
 			The
 			<code>IDebugTarget</code>
 			is supposed to be applied to the
@@ -151,52 +151,41 @@ Version 0.3, 06.07.2016
 			<code>addDebugTarget(IDebugTarget target)</code>
 			method.
 			.
-		</para>
-		<para>
+		
+		
 			It can contain several
 			<code>IThreads</code>
 			, which run during a debug session.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/ExampleDebugTarget.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="debug_create_validate">
-		<title>Validate</title>
-		<para>
+		
+	
+[[debug_create_validate">
+=== Validate
+		
 			To validate the result start the ExampleLaunchDelegate, switch
 			to the
 			debug perspective and use the toolbar controls below to
 			suspend,
 			resume, step over or terminate the debug session.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/debug_toolbar_buttons.png"
+		
+		
+image::debug_toolbar_buttons.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Debug toolbar buttons</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Debug toolbar buttons,pdfwidth=60%]
+		
+		
 			When passing in "vogella" as String the result should look
 			similar to this:
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/debug_view_result.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Debug view result</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+		
+image::debug_view_result.png[Debug view result,pdfwidth=60%]
+		
+	
+

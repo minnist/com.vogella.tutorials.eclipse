@@ -1,44 +1,44 @@
-<section id="exercise_preferencepage">
-	<title>Exercise: Contribute a preference page to the Eclipse IDE</title>
+
+	<title>Exercise: Contribute a preference page to the Eclipse IDE
 	<note>
-		<para>
+		
 			This exercise is specific to the Eclipse IDE and will not work for Eclipse 4 RCP applications. See
-			<ulink url="https://github.com/opcoach/e4Preferences"> for an Eclipse 4 implementation.</ulink>
-		</para>
+			https://github.com/opcoach/e4Preferences"> for an Eclipse 4 implementation.
+		
 	</note>
-	<para>
+	
 		In the following exercise you create a plug-in with a preference
 		pages
 		which
 		allows the user to maintain certain
 		settings.
-	</para>
-	<para>
+	
+	
 		Create a new simple plug-in project called
 		<code>com.vogella.preferences.page</code>
 		. No activator is needed and you do not have to use a template.
 
-	</para>
-	<para>
+	
+	
 		Open the
 		<filename>MANIFEST.MF</filename>
 		editor and click on the
-		<guilabel>Extensions</guilabel>
+		_Extensions_
 		link on the
-		<guilabel>Overview</guilabel>
+		_Overview_
 		tab.
 		On this tab, add the extension
 		<code>org.eclipse.ui.preferencePages</code>
 		with the following settings.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/preferences10.gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Enter the following code for your class
 		<code>MyPreferencePage1</code>
 		.
@@ -53,16 +53,16 @@
 		allows to perform a validations. To get notified about
 		value changes
 		you need to override the propertyChange method.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 				href="./examples/preferencepage/MyPreferencePage1.java" />
 		</programlisting>
-	</para>
+	
 
-	<para> Start a runtime Eclipse IDE with your plug-in and ensure that
+	 Start a runtime Eclipse IDE with your plug-in and ensure that
 		you see your preference page in the preference
 		settings of the Eclipse
 		IDE.
@@ -71,16 +71,16 @@
 		you restart
 		your
 		application.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/preferences20.gif" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Add a command
 		<code>showPreferenceValues</code>
 		with the following
@@ -91,14 +91,14 @@
 		the
 		<code>preferencePage</code>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 				href="./examples/preferencepage/ShowPreferenceValues.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		To set the default values for preferences use the extension
 		point
 		<code>org.eclipse.core.runtime.preferences</code>
@@ -106,14 +106,14 @@
 		initializer with the following class
 		<code>de.vogella.preferences.page.preferencepage.MyInitializer</code>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 				href="./examples/preferencepage/MyInitializer.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Finally create a new
 		view
 		to show one of
@@ -125,10 +125,9 @@
 		the preferences store to get informed in case the preference
 		settings
 		change.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferencepage/View.java" />
 		</programlisting>
-	</para>
-</section>
+	

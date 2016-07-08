@@ -1,48 +1,41 @@
-<section id="eclipsegerritcontribgution_pushsetup" role="wrapper">
-	<title>Exercise: make a change and push a review</title>
-	<section id="eclipsegerritcontribution_codechange">
-		<title>Make a code change</title>
-		<para>
+
+	<title>Exercise: make a change and push a review
+[[eclipsegerritcontribution_codechange">
+=== Make a code change
+		
 			Find a very simple change for your first contribution. For
 			example fix a typo or a compiler warning. Eclipse
 			projects
 			frequently tag bugs with the keyword
-			<wordasword>bugday</wordasword>
+			_bugday_
 			or
-			<wordasword>helpwanted</wordasword>
+			_helpwanted_
 			, these are candidates for initial contributions.
-		</para>
-	</section>
-	<section id="eclipsegerritcontribution_push">
-		<title>Push to the Gerrit review system</title>
-		<para>
+		
+	
+[[eclipsegerritcontribution_push">
+=== Push to the Gerrit review system
+		
 			Use the
-			<guilabel>Git Staging</guilabel>
+			_Git Staging_
 			view to commit your change and to push it to the Gerrit review server.
-		</para>
-		<para>
+		
+		
 			You
 			need to sign off every commit. The Git functionality in Eclipse
 			simplifies that via the
 			sign-off
 			push button. The
-			<guilabel>Add Change-Id</guilabel>
+			_Add Change-Id_
 			push button allows you to include a Change-Id entry to the commit
 			message. Both buttons are highlighted in the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse Signed-off-by</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::eclipsegerritcontribution20.png[Eclipse Signed-off-by,pdfwidth=60%]
+		
 		<note>
-			<para>
+			
 				The Change-ID entry is initially set to "Change-Id:
 				I0000000000000000000000000000000000000000". During the
 				commit, this
@@ -55,29 +48,29 @@
 				not
 				a
 				Git commit ID.
-			</para>
+			
 		</note>
 		<warning>
-			<para>
+			
 				To get picked up by Gerrit, the
-				<wordasword>Change-Id</wordasword>
+				_Change-Id_
 				must be in the last paragraph together with the other footers.
 				To
 				avoid problems do not separate it from the
-				<wordasword>Signed-off-by</wordasword>
+				_Signed-off-by_
 				message
 				with a new-line character.
-			</para>
+			
 		</warning>
-	</section>
-	<section id="eclipsegerritcontribution_reviewupdating">
-		<title>Updating the Gerrit review</title>
-		<para>
+	
+[[eclipsegerritcontribution_reviewupdating">
+=== Updating the Gerrit review
+		
 			You may get review comments asking to improve the Gerrit change. Or you find a better way of doing the change.
 			You can update an existing Gerrit review by using the same Change-Id for another commit. The easiest way of doing
 			this is to amend the last commit and push this commit again to Gerrit.
-		</para>
-		<para>
+		
+		
 			Since the amended commit contains
 			the same Change-Id as the
 			initial commit, Gerrit knows that you want to
@@ -89,8 +82,8 @@
 			local history (and keep
 			the same
 			parent commit).
-		</para>
-	</section>
+		
+	
 
 
-</section>
+

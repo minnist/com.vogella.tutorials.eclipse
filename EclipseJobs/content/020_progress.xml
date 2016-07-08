@@ -1,7 +1,7 @@
-<section id="eclipsejobs_progress" role="wrapper">
-	<title>Reporting Progress</title>
-	<section id="eclipsejobs_submonitor">
-		<title>IProgressMonitor and the SubMonitor</title>
+
+	<title>Reporting Progress
+[[eclipsejobs_submonitor">
+=== IProgressMonitor and the SubMonitor
 		<indexterm>
 			<primary>Progress reporting</primary>
 		</indexterm>
@@ -11,7 +11,7 @@
 		<indexterm>
 			<primary>IProgressMonitor</primary>
 		</indexterm>
-		<para>
+		
 			An instance of an
 			<code>IProgressMonitor</code>
 			is passed to the run method of a
@@ -31,16 +31,16 @@
 			<code>SubMonitor</code>
 			can be created similar to this:
 			<code>SubMonitor subMonitor = SubMonitor.convert(monitor, 3);</code>
-		</para>
+		
 
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitor.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			When using a
 			<code>SubMonitor</code>
 			it is not necessary to call the
@@ -50,30 +50,30 @@
 			method, since this is done implicitly by the
 			<code>SubMonitor</code>
 			implementation.
-		</para>
-	</section>
+		
+	
 
-	<section id="eclipsejobs_submonitor_conditional">
-		<title>Taking conditions during progress into account</title>
-		<para>In some cases the amount of work
+[[eclipsejobs_submonitor_conditional">
+=== Taking conditions during progress into account
+		In some cases the amount of work
 			depends on conditions, which
 			should also be properly reported.
-		</para>
-		<para>
+		
+		
 			This can be done by using the
 			<code>setWorkRemaining()</code>
 			method of the
 			<code>SubMonitor</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitorCondition.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			In case the code in the
 			<code>taskNeedsPreconfiguration()</code>
 			if block is run, the
@@ -81,24 +81,24 @@
 			method actually does nothing. Only in case the code of the if block
 			is skipped it ensures that the process monitoring
 			is done properly.
-		</para>
+		
 
-		<para>
+		
 			Another use case for using
 			<code>setWorkRemaining()</code>
 			is when the actual work is determined later. See
 			<code>workOnTask</code>
 			method.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/jobs/monitorLoopRemainingWork.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			For the loop in the
 			<code>workOnTask</code>
 			a new child
@@ -109,17 +109,17 @@
 			is set by the
 			<code>setWorkRemaining()</code>
 			.
-		</para>
-	</section>
+		
+	
 
-	<section id="eclipsejobs_progress4x">
-		<title>Reporting progress in Eclipse RCP applications</title>
-		<para>
+[[eclipsejobs_progress4x">
+=== Reporting progress in Eclipse RCP applications
+		
 			In Eclipse applications you can report progress by implementing the
 			<code>IProgressMonitor</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			You can, for example, add a tool control
 			to a toolbar in your
 			application model. This tool control
@@ -127,39 +127,39 @@
 			implement the
 			<code>IProgressMonitor</code>
 			interface to show the progress.
-		</para>
-		<para>This is demonstrated in the following example. </para>
+		
+		This is demonstrated in the following example. 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/progressbar/ProgressMonitorControl.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			This new element can be accessed via the model service and used as an
 			<code>IProgressMonitor</code>
 			for the job.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="../examples/progressbar/setProgressMonitor.java" />
 			</programlisting>
-		</para>
+		
 
 		<tip>
-			<para>A more advanced implementation could, for example, implement a
+			A more advanced implementation could, for example, implement a
 				progress
 				monitoring OSGi Service and report
 				progress to the user
 				interface via the
 				event service.
-			</para>
+			
 		</tip>
 
-	</section>
+	
 
-</section>
+

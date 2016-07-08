@@ -1,16 +1,16 @@
-<section id="tutorial_menu" role="wrapper">
-	<title>Exercise: Adding menus</title>
-	<section id="uicomponents_overview">
-		<title>Target of this exercise</title>
-		<para>In this exercise you create commands and handlers for your
+
+	<title>Exercise: Adding menus
+[[uicomponents_overview">
+=== Target of this exercise
+		In this exercise you create commands and handlers for your
 			application. Afterwards you will create menu entries
 			using
 			these commands.
-		</para>
-	</section>
-	<section id="tutorial_menu_command">
-		<title>Create command model elements</title>
-		<para>
+		
+	
+[[tutorial_menu_command">
+=== Create command model elements
+		
 
 			Open
 			the
@@ -18,20 +18,16 @@
 			file of your
 			<code>com.example.e4.rcp.todo</code>
 			plug-in and select the
-			<guilabel>Commands</guilabel>
+			_Commands_
 			entry. This selection is highlighted in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commands10.png" scale="50" />
+		
+		
+image::commands10.png" scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding commands to your application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding commands to your application,pdfwidth=60%]
+		
+		
 			Via the
 			<guibutton>Add...</guibutton>
 			button
@@ -40,10 +36,10 @@
 			important
 			fields. Create the following
 			commands.
-		</para>
-		<para>
+		
+		
 			<table frame='all'>
-				<title>Commands</title>
+		=== Commands
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
@@ -79,77 +75,77 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="tutorial_menu_handlerclasses">
-		<title>Creating the handler classes</title>
-		<para>
+[[tutorial_menu_handlerclasses">
+=== Creating the handler classes
+		
 			Create the
 			<code>com.example.e4.rcp.todo.handlers</code>
 			package for your handler classes.
-		</para>
-		<para>
+		
+		
 			All handler classes implement an
 			<code>execute()</code>
 			method annotated with
 			<code>@Execute</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/SaveAllHandler.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>Using this template for all classes, implement the following
+		Using this template for all classes, implement the following
 			classes.
-		</para>
+		
 		<itemizedlist>
 			<listitem>
-				<para>SaveAllHandler</para>
+				SaveAllHandler
 			</listitem>
 			<listitem>
-				<para>ExitHandler</para>
+				ExitHandler
 			</listitem>
 			<listitem>
-				<para>NewTodoHandler</para>
+				NewTodoHandler
 			</listitem>
 			<listitem>
-				<para>RemoveTodoHandler</para>
+				RemoveTodoHandler
 			</listitem>
 
 			<listitem>
-				<para>TestHandler</para>
+				TestHandler
 			</listitem>
 		</itemizedlist>
 
-	</section>
-	<section id="tutorial_menu_handlers">
-		<title>Creating handler model elements</title>
+	
+[[tutorial_menu_handlers">
+=== Creating handler model elements
 
-		<para>
+		
 			Select the application-scoped
-			<guilabel>Handlers</guilabel>
+			_Handlers_
 			entry
 			in your application model and create
 			the handlers from the
 			following
 			table for your commands. For the definition of handlers the
 			ID, command and class are the relevant information.
-		</para>
-		<para>
+		
+		
 			Use the
 			<code>com.example.e4.rcp.todo.handler</code>
 			prefix for all IDs of the handlers.
-		</para>
-		<para>
+		
+		
 
 			<table frame='all'>
-				<title>Handlers</title>
+		=== Handlers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -193,9 +189,9 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 
-		<para>
+		
 			The application model editor shows both the name and the ID of
 			the
 			command. The class URI follows the
@@ -203,59 +199,50 @@
 			schema, the table only defines the class name to make the table more
 			readable. For example, for the save handler this looks like the
 			following:
-		</para>
-		<para>
+		
+		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/bundleclass.txt" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/handler10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Defining a handler in Eclipse 4</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::handler10.png[Defining a handler in Eclipse 4,pdfwidth=60%]
+		
 
-	</section>
-	<section id="tutorial_menu_menu">
-		<title>Adding a menu</title>
+	
+[[tutorial_menu_menu">
+=== Adding a menu
 
-		<para>
+		
 			In your
 			<filename>Application.e4xmi</filename>
 			file select your
-			<guilabel>TrimmedWindow</guilabel>
+			_TrimmedWindow_
 			entry in the model and flag the
-			<guilabel>Main Menu</guilabel>
+			_Main Menu_
 			attribute.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/menu04.png"/>
+		
+image::menu04.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Assign the
 			<code>org.eclipse.ui.main.menu</code>
 			ID to your main menu.
-		</para>
+		
 		<warning>
-			<para>Ensure that this ID of the main menu is correct. You use it
+			Ensure that this ID of the main menu is correct. You use it
 				later to contribute
 				another menu entry via another plug-in.
-			</para>
+			
 		</warning>
-		<para>
+		
 			Add two menus, one with the name
 			"File"
 			and the other one with
@@ -264,103 +251,94 @@
 			in the
 			<parameter>Label</parameter>
 			attribute.
-		</para>
-		<para>
+		
+		
 			Also set the
-			<wordasword>org.eclipse.ui.file.menu</wordasword>
+			_org.eclipse.ui.file.menu_
 			ID for the
 			File
 			menu. Use
-			<wordasword>com.example.e4.rcp.todo.menu.edit</wordasword>
+			_com.example.e4.rcp.todo.menu.edit_
 			as ID for the
 			Edit
 			menu.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commands20.png" scale="50" />
+		
+		
+image::commands20.png" scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating a menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Creating a menu,pdfwidth=60%]
+		
+		
 			Add a
-			<guilabel>Handled MenuItem</guilabel>
+			_Handled MenuItem_
 			model element
 			to the
 			File
 			menu. This item should point to the
-			<wordasword>Save</wordasword>
+			_Save_
 			command via the
 			<parameter>Command</parameter>
 			attribute.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commands30.png" scale="30" />
+		
+		
+image::commands30.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a menu item to the menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a menu item to the menu,pdfwidth=60%]
+		
 
-		<para>
+		
 			Add a
-			<guilabel>Separator</guilabel>
+			_Separator_
 			after the Save menu item and after that add an entry for the Exit
 			command.
-		</para>
-		<para>
+		
+		
 			Add all other commands to the
 			Edit
 			menu.
-		</para>
+		
 
-	</section>
 	
-	<section id="tutorial_menu_close">
-		<title>Implement a handler class for exit</title>
-		<para>
+	
+[[tutorial_menu_close">
+=== Implement a handler class for exit
+		
 			To test if your handler is working, change your
 			<code>ExitHandler</code>
 			class, so that it closes your application, once selected.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/command/ExitHandler.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_menu_validate">
-		<title>Validating</title>
-		<para>
+[[tutorial_menu_validate">
+=== Validating
+		
 			Validate that your save handler is called if you select Save
 			from the
 			menu.
-		</para>
-		<para>
+		
+		
 			Also check that you can exit the application via the
-			<guilabel>Exit</guilabel>
+			_Exit_
 			menu entry.
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_menu_macissue">
-		<title>Possible issue: Exit menu entry on a MacOS</title>
-		<para>If you use the "org.eclipse.ui.file.exit" ID for your exit
+[[tutorial_menu_macissue">
+=== Possible issue: Exit menu entry on a MacOS
+		If you use the "org.eclipse.ui.file.exit" ID for your exit
 			command, the Eclipse framework tries to map the exit command to its
 			default menu location on the MacOS. If you don't see your exit menu,
 			in its defined position, check this location.
-		</para>
-	</section>
+		
+	
 
 
 
-</section>

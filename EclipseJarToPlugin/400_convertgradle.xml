@@ -1,20 +1,20 @@
-<section id="gradle_bndconvertion">
-	<title>Convert JAR files to OSGi bundles with Gradle</title>
-	<para>
+
+	<title>Convert JAR files to OSGi bundles with Gradle
+	
 		You can also use the Gradle build system to convert JARs to OSGi bundles.
 		For example, the following build.gradle file converts the EasyMock library and its dependencies to OSGi bundles. Under
 		the hood, it uses the bnd tooling.
-	</para>
-	<para>
+	
+	
 		<programlisting language="groovy">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gradle/build.gradle" />
 		</programlisting>
-	</para>
-	<para>Run `gradle bundles` to create OSGi bundles from the specified JAR files.
+	
+	Run `gradle bundles` to create OSGi bundles from the specified JAR files.
 		Use the `gradle updateSite` task to
 		create a p2 update site.
-	</para>
-	<para>For more details see https://github.com/stempler/bnd-platform/blob/master/README.md.
-	</para>
-</section>
+	
+	For more details see https://github.com/stempler/bnd-platform/blob/master/README.md.
+	
+
 	

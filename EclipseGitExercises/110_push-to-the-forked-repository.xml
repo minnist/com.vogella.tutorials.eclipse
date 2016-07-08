@@ -90,16 +90,13 @@ When you do this, the Git push operation pushes this branch to the new remote re
 			</inlinemediaobject>
 		
 	
-	<section id="_push_to_remote">
-		<title>Push to remote
+[[_push_to_remote">
+=== Push to remote
 		
 			Select
 			_Push to Upstream_
 			in the Git Repositories view or
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Push to Upstream</guisubmenu>
-			</menuchoice>
+			menu:Team[Push to Upstream]
 			in the Package Explorer or Project Explorer.
 			Now Github needs your username and password. Note that you could clone
 			and fetch without

@@ -1,21 +1,21 @@
-<section id="fragmentextensions">
-	<title>Fragment extension elements</title>
-	<para>
+
+	<title>Fragment extension elements
+	
 		In fragments you contribute to an existing model element which is
 		defined via its ID. You also have to specify the
-		<wordasword>Featurename</wordasword>
+		_Featurename_
 		to which you want to contribute. A
-		<wordasword>Featurename</wordasword>
+		_Featurename_
 		is a direct link to the structure of the application model.
-	</para>
-	<para>
+	
+	
 		The following table lists some
-		<wordasword>Featurename</wordasword>
+		_Featurename_
 		values and their purposes.
-	</para>
+	
 
 	<table frame='all'>
-		<title>Contribution, Featurename and Element id</title>
+=== Contribution, Featurename and Element id
 		<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 			<colspec colname='c1' colwidth="2*"/>
 			<colspec colname='c2' colwidth="1*"/>
@@ -57,4 +57,3 @@
 			</tbody>
 		</tgroup>
 	</table>
-</section>

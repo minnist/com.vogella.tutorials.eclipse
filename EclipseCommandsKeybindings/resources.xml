@@ -1,11 +1,10 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
-	<section id="resources_eclipsecommands">
-		<title>Eclipse Commands Resources</title>
-		<para>
-			<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html">Introduction to Eclipse Commands</ulink>
-		</para>
-	</section>
+[[resources_eclipsecommands">
+=== Eclipse Commands Resources
+		
+			http://www.vogella.com/tutorials/EclipseCommands/article.html">Introduction to Eclipse Commands
+		
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>

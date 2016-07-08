@@ -1,8 +1,8 @@
-<section id="osgiarch" role="wrapper">
-	<title>OSGi metadata</title>
 
-	<section id="osgiarch_manifest">
-		<title>The manifest file (MANIFEST.MF)</title>
+	<title>OSGi metadata
+
+[[osgiarch_manifest">
+=== The manifest file (MANIFEST.MF)
 		<indexterm>
 			<primary>MANIFEST.MF</primary>
 		</indexterm>
@@ -27,7 +27,7 @@
 		<indexterm>
 			<primary>Bundle-ClassPath</primary>
 		</indexterm>
-		<para>
+		
 			Technically OSGi plug-ins
 			are
 			<filename>.jar</filename>
@@ -38,7 +38,7 @@
 			in the
 			<filename>META-INF/MANIFEST.MF</filename>
 			file. This file is called the
-			<wordasword>manifest</wordasword>
+			_manifest_
 			file and
 			is part of the standard Java
 			specification and
@@ -57,20 +57,20 @@
 			restrictions in other
 			Java
 			environments.
-		</para>
-		<para>
+		
+		
 			The following listing
 			is
 			an example
 			for a manifest file.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/bundles/MANIFEST.MF" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The following table gives an explanation of the identifiers
 			in the
 			manifest
@@ -82,9 +82,9 @@
 			OSGi see
 			<xref linkend="osgiarch_semanticversions" />
 			.
-		</para>
+		
 		<table frame='all'>
-			<title>OSGi identifiers in the manifest file</title>
+	=== OSGi identifiers in the manifest file
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="2*" />
 				<colspec colname='c2' colwidth="4*" />
@@ -102,7 +102,7 @@
 					<row>
 						<entry>Bundle-SymbolicName</entry>
 						<entry>
-							<para>
+							
 								The unique identifier of the plug-in. If this plug-in is using
 								the
 								extension point functionality of Eclipse,
@@ -110,10 +110,10 @@
 								Singleton. You do this by adding the following
 								statement after the Bundle-SymbolicName
 								identifier:
-							</para>
-							<para>
+							
+							
 								<code>; singleton:=true</code>
-							</para>
+							
 						</entry>
 					</row>
 					<row>
@@ -187,22 +187,22 @@
 							the root of the bundle. You can also add JAR files to
 							it, these
 							are called
-							<wordasword>nested JAR files</wordasword>
+							_nested JAR files_
 							.
 						</entry>
 					</row>
 				</tbody>
 			</tgroup>
 		</table>
-	</section>
+	
 
-	<section id="osgiarch_identifier">
-		<title>Bundle-SymbolicName and Version</title>
+[[osgiarch_identifier">
+=== Bundle-SymbolicName and Version
 		<indexterm>
 			<primary>Bundle-SymbolicName</primary>
 		</indexterm>
 
-		<para>
+		
 			Each plug-in has a symbolic name which is defined via the
 			<code>Bundle-SymbolicName</code>
 			property. The name starts by convention
@@ -214,13 +214,13 @@
 			then the
 			symbolic name would start with
 			"com.example".
-		</para>
-		<para>
+		
+		
 			Each plug-in has also a version number in the
 			<code>Bundle-Version</code>
 			property.
-		</para>
-		<para>
+		
+		
 			The
 			<code>Bundle-Version</code>
 			and the
@@ -228,11 +228,11 @@
 			uniquely
 			identifies
 			a plug-in.
-		</para>
-	</section>
-	<section id="osgiarch_semanticversions">
-		<title>Semantic Versioning with OSGi</title>
-		<para>
+		
+	
+[[osgiarch_semanticversions">
+=== Semantic Versioning with OSGi
+		
 			OSGi recommends to use a
 			<parameter><![CDATA[<major>.<minor>.<patch>]]></parameter>
 			schema for the
@@ -242,33 +242,32 @@
 			version according to the following rule set.
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<parameter><![CDATA[<patch>]]></parameter>
 						is increased if all changes are backwards compatible.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<parameter><![CDATA[<minor>]]></parameter>
 						is increased if public API has changed but all changes are
 						backwards compatible.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<parameter><![CDATA[<major>]]></parameter>
 						is increased if changes are not backwards compatible.
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			For more information on this version scheme see the
-			<ulink url="https://wiki.eclipse.org/Version_Numbering">Eclipse Version Numbering Wiki</ulink>
+			https://wiki.eclipse.org/Version_Numbering">Eclipse Version Numbering Wiki
 			.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

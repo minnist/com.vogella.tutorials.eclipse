@@ -1,5 +1,5 @@
-	<section id="importantmodelelement_element">
-		<title>Overview of available model objects</title>
+[[importantmodelelement_element">
+=== Overview of available model objects
 		<indexterm>
 			<primary>Model objects</primary>
 		</indexterm>
@@ -31,24 +31,24 @@
 			<primary>Snippets</primary>
 		</indexterm>
 
-		<para>
+		
 			During startup the Eclipse framework parses the available information
 			about the application model (Application.e4xmi,
 			persisted user
 			changes and model contributions) and stores this information in Java
 			objects. These objects are called
-			<wordasword>model objects</wordasword>
+			_model objects_
 			and at runtime they represent the attributes from the model elements.
-		</para>
+		
 
-		<para> The
+		 The
 			following table lists the types of the important model
 			objects.
-		</para>
+		
 
-		<para>
+		
 			<table frame='all'>
-				<title>Eclipse model elements</title>
+		=== Eclipse model elements
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -140,8 +140,8 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-	</section>
+	
 
 

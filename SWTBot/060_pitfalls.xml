@@ -1,9 +1,9 @@
-<section id="pitfalls">
+
 	<title>Possible pitfalls with SWTBot
 	This section contains possible pitfalls, which might come up when implementing SWTBot
 		tests.
 	<section>
-		<title>Accessing a Link and clicking on it
+=== Accessing a Link and clicking on it
 		First of all define a `org.eclipse.swt.widgets.Link` to be tested in the UI
 			code.
 		
@@ -15,9 +15,7 @@
 				<property>&lt;a>www.vogella.com&lt;/a></property>, but in the UI you'll see
 			this:
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/vogella_SWT_Link.png"/>
+image::vogella_SWT_Link.png"/>
 				</imageobject>
 			</mediaobject>
 		
@@ -40,5 +38,5 @@
 			</programlisting>
 		
 		So the `click(String hyperlinkText)` method should always be used rather than just the simple `click()` method.
-	</section>
-</section>
+	
+

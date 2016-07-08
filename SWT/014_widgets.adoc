@@ -1,7 +1,7 @@
-<section id="widgets" role="wrapper">
-	<title>SWT Widgets</title>
-	<section id="swt_widgets">
-		<title>Available widgets in the SWT library</title>
+
+	<title>SWT Widgets
+[[swt_widgets">
+=== Available widgets in the SWT library
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Widgets</secondary>
@@ -21,19 +21,15 @@
 			<code>Control</code>
 			class. Several of these widgets are depicted in the following
 			graphic. This graphic is a screenshot of the
-			<ulink url="http://www.eclipse.org/swt/widgets/">SWT widget homepage</ulink>
+			http://www.eclipse.org/swt/widgets/">SWT widget homepage
 			.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/swtwidgetoverview10.png"
+image::swtwidgetoverview10.png"
 						scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Overview of the SWT widgets</phrase>
-				</textobject>
-			</mediaobject>
+					<phrase>Overview of the SWT widgets,pdfwidth=60%]
 		
 		
 			While SWT tries to use native widgets as much as possible, it can not
@@ -115,10 +111,10 @@
 			"control" are used
 			interchangeable for user interface elements.
 		
-	</section>
+	
 
-	<section id="widets_memory">
-		<title>Memory management</title>
+[[widets_memory">
+=== Memory management
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Memory management</secondary>
@@ -143,9 +139,9 @@
 			<code>LocalResourceManager</code>
 			.
 		
-	</section>
-	<section id="widets_creation">
-		<title>Constructing widgets</title>
+	
+[[widets_creation">
+=== Constructing widgets
 		
 			SWT
 			widgets, except the
@@ -161,7 +157,7 @@
 		
 		
 			The second parameter of the widget constructor contains the
-			<wordasword>stylebits</wordasword>
+			_stylebits_
 			.
 			Depending on
 			the
@@ -202,10 +198,10 @@
 					parse="text" href="./examples/start/check.txt" />
 			</programlisting>
 		
-	</section>
+	
 
-	<section id="widets_composites">
-		<title>Basic containers</title>
+[[widets_composites">
+=== Basic containers
 
 		<indexterm>
 			<primary>SWT</primary>
@@ -236,5 +232,5 @@
 			it additionally draws a border around itself and allows you to set a
 			header for the grouped widgets.
 		
-	</section>
-</section>
+	
+

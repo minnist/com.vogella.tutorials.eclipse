@@ -1,5 +1,5 @@
-<section id="swt_ctabfolder">
-	<title>CTabFolder</title>
+
+	<title>CTabFolder
 	 CTabFolder and CTabItem allow to create the folder experience
 		with different tabs.
 	
@@ -26,4 +26,3 @@
 			</textobject>
 		</mediaobject>
 	
-</section>

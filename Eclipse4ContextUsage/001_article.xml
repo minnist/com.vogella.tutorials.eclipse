@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 RCP - Tutorial</title>
+=== Eclipse 4 RCP - Tutorial
 		<subtitle>Building Eclipse RCP applications based on Eclipse 4
 		</subtitle>
 		<author>
@@ -33,13 +33,13 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse e4</title>
-			<para> This tutorial gives an overview about the
+	=== Eclipse e4
+			 This tutorial gives an overview about the
 				Eclipse 4
 				application
 				platform.
-			</para>
-			<para> This tutorial describes the creation of Eclipse 4 based
+			
+			 This tutorial describes the creation of Eclipse 4 based
 				applications, e.g., Eclipse RCP applications. It describes
 				the
 				modeled
@@ -51,7 +51,7 @@ Version 0.3, 06.07.2016
 				on
 				annotations and dependency
 				injection.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

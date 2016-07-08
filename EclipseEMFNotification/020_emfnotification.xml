@@ -1,36 +1,36 @@
-<section id="emfnotifcation">
+
 	<title>Notifications and Adapters with Adapter and
-		EContentAdapter</title>
-	<para>
+		EContentAdapter
+	
 		EMF has the possibility to inform observers / listeners about
 		changes in the model. You can listen to changes of an individual
 		object and to changes to all objects in a collection.
-	</para>
-	<para>
+	
+	
 		To test this notification create a new Java Project called
-		<wordasword>com.vogella.emf.notifications</wordasword>
+		_com.vogella.emf.notifications_
 		.
-	</para>
-	<para>
+	
+	
 		Create the model based on the following two interfaces and
 		generate the model code from it.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/notification/IPerson.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/notification/IPersonList.java" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 
 		Create the following to two classes
 		<code>ElementObserver</code>
@@ -47,31 +47,31 @@
 		which are contained in
 		the
 		list.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/notification/ElementObserver.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/notification/TotalObserver.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Create a main class to test the different behavior and run the
 		main method.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/notification/Main.java" />
 		</programlisting>
-	</para>
+	
 
-</section>
+

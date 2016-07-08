@@ -1,8 +1,8 @@
-<section id="menus">
-	<title>Defining the command usage in the UI</title>
-	<section id="menus_extensionpoint">
-		<title>Menu extension points</title>
-		<para>
+
+	<title>Defining the command usage in the UI
+[[menus_extensionpoint">
+=== Menu extension points
+		
 			The
 			<code>org.eclipse.ui.menu</code>
 			extension point is used to define where the command is visible in the
@@ -10,25 +10,23 @@
 			application menu or in a
 			view
 			menu.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/command62.gif" />
+		
+image::command62.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			The
-			<guilabel>menuContribution</guilabel>
+			_menuContribution_
 			contribution has an ID value which allow to identify the
 			contribution.
-		</para>
-		<para>
-			<guilabel>menuContribution</guilabel>
+		
+		
+			_menuContribution_
 			has an
 			<parameter>locationURI</parameter>
 			attribute which allows to
@@ -36,11 +34,11 @@
 			command
 			is displayed. This different attribute values are summarized in the
 			following table.
-		</para>
+		
 
-		<para>
+		
 			<table frame='all'>
-				<title>Location URIs</title>
+		=== Location URIs
 
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
@@ -88,20 +86,20 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
+		
+	
 
-	<section id="menus_position">
-		<title>Defining the position of a menu extension</title>
-		<para>
+[[menus_position">
+=== Defining the position of a menu extension
+		
 			Frequently you want to position a new command behind or before
 			another command. For example the 
-			<guilabel>Save All</guilabel>
+			_Save All_
 			menu entry should be positioned after the
-			<guilabel>Save</guilabel>
+			_Save_
 			menu entry.
-		</para>
-		<para>
+		
+		
 			You can define the relative position of a command in this
 			locationURI
 			by using the
@@ -110,8 +108,8 @@
 			or
 			<parameter>?after=ID</parameter>
 			.
-		</para>
-		<para>
+		
+		
 			The ID
 			can
 			be an existing separator
@@ -122,8 +120,8 @@
 			after
 			the element with the
 			corresponding ID.
-		</para>
-		<para>
+		
+		
 			For example if you want to add
 			a command to an
 			existing menu with
@@ -135,9 +133,8 @@
 			ID use the
 			<parameter>menu:fileMenu?after=oneEntry</parameter>
 			locationURI .
-		</para>
-	</section>
+		
+	
 
 
 
-</section>

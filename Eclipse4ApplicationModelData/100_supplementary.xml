@@ -1,38 +1,38 @@
-<section id="supplementary" role="wrapper">
 
-	<title>Persisted model attributes</title>
-	<section id="supplementary_elements">
-		<title>Adding additional information on the model elements</title>
+
+	<title>Persisted model attributes
+[[supplementary_elements">
+=== Adding additional information on the model elements
 		<indexterm>
 			<primary>Supplementary data</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Supplementary</guilabel>
+			_Supplementary_
 			tab in the application model editor allows you to enter additional
 			information
 			about the selected
 			model element. This data can also be
 			modified and accessed via Eclipse API.
-		</para>
-	</section>
+		
+	
 
-	<section id="supplementary_tags">
-		<title>Tags</title>
+[[supplementary_tags">
+=== Tags
 		<indexterm>
 			<primary>Tags</primary>
 		</indexterm>
-		<para>
+		
 			All model elements can have
-			<wordasword>tags</wordasword>
+			_tags_
 			assigned to them.
 			These
 			tags
 			can be used by the Eclipse platform or by
 			other code to trigger
 			functionality.
-		</para>
-		<para>
+		
+		
 			Tags
 			are automatically persisted by the Eclipse runtime between
 			application restarts and are
@@ -41,9 +41,9 @@
 			of type
 			<code>String</code>
 			.
-		</para>
+		
 		<tip>
-			<para>
+			
 				Tags are also available to the CSS Engine as additional class
 				selectors.
 				For
@@ -57,16 +57,16 @@
 				<code>.MPartStack.active</code>
 				. If you want to use tag as CSS selectors, don't use whitespace in
 				them.
-			</para>
-			<para>
+			
+			
 				You can define your own tags and define CSS for this. This is a
 				great way to allow custom CSS to be
 				integrated into
 				the
 				model.
-			</para>
+			
 		</tip>
-		<para>
+		
 			By default, Eclipse uses some predefined
 			<parameter>tags</parameter>
 			to determine the state of certain model elements. For example, the
@@ -74,43 +74,36 @@
 			and
 			<parameter>shellMinimized</parameter>
 			tag on a
-			<wordasword>Window</wordasword>
+			_Window_
 			is used by Eclipse to determine if the
-			<wordasword>Window</wordasword>
+			_Window_
 			should be maximized or minimized.
-		</para>
-		<para>
+		
+		
 			The following screenshot shows how to define the
 			maximization of a
-			<wordasword>Window</wordasword>
+			_Window_
 			model element.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/supplementary10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Supplementary info for a Window to set it to maximize.</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::supplementary10.png[Supplementary info for a Window to set it to maximize.,pdfwidth=60%]
+		
+		
 			You find more information about the default tags in
 			<xref linkend="recipes_tags" />
 			.
-		</para>
-	</section>
+		
+	
 
-	<section id="supplementary_variables">
-		<title>Variables</title>
-		<para>
+[[supplementary_variables">
+=== Variables
+		
 			You can also define
-			<wordasword>Variables</wordasword>
+			_Variables_
 			in the
-			<guilabel>Supplementary</guilabel>
+			_Supplementary_
 			tab which can be used as
-			<wordasword>context variables</wordasword>
+			_context variables_
 			. If you use this approach, Eclipse creates keys in the context which
 			are marked as modifiable (by descendants).
 			See
@@ -120,45 +113,45 @@
 			<xref linkend="chaptereclipsecontext" />
 			to learn more about
 			context variables.
-		</para>
-	</section>
+		
+	
 
-	<section id="supplementary_persistence">
-		<title>Persisted state</title>
+[[supplementary_persistence">
+=== Persisted state
 		<indexterm>
 			<primary>Persisted state</primary>
 		</indexterm>
-		<para>
+		
 			Model elements can have persisted state key/value pairs assigned
 			to them. If you
 			retrieve the model element, you can get and set this
 			persisted state.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/supplementary/persists.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Persisted data for model elements is automatically restored by
 			the Eclipse
 			application between application restarts and allows to
 			store key/values pairs based on Strings.
-		</para>
-		<para>
+		
+		
 			Persisted state data can also be used by the Eclipse framework
 			to
 			define or change the application behavior.
-		</para>
-	</section>
+		
+	
 
-	<section id="transientdata">
-		<title>Transient data</title>
+[[transientdata">
+=== Transient data
 		<indexterm>
 			<primary>Transient data</primary>
 		</indexterm>
-		<para>
+		
 			Each model element can also attach transient data to it.
 			This
 			transient data is based on a
@@ -166,19 +159,19 @@
 			structure and can be accessed on the model object via the
 			<code>getTransientData()</code>
 			method.
-		</para>
-		<para>
+		
+		
 			Transient data is not persisted between application restarts and
 			needs to be generated at
 			runtime.
-		</para>
-		<para>
+		
+		
 			As transient data is not persisted, it can not be assigned to
 			model
 			elements via the application model editor, you need to use the
 			<code>getTransientData()</code>
 			method.
-		</para>
-	</section>
+		
+	
 
-</section>
+

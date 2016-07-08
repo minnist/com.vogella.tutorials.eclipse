@@ -1,11 +1,10 @@
-<section id="installation">
-	<title>Installation</title>
-	<para>
+
+	<title>Installation
+	
 		Use the
 		<ulink
-			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse Update Manager</ulink>
+			url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager"> Eclipse Update Manager
 		to install "Business Intelligence,
 		Reporting and Charting" -> BIRT
 		Framework.
-	</para>
-</section>
+	

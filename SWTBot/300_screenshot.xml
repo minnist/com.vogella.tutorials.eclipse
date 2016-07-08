@@ -1,10 +1,10 @@
-<section id="screenshot">
+
 	<title>Screenshot
 	 SWTBot can
 		automatically generate screenshots of the running
 		application if a test fails. To
 		use
-		this feature include the plug-in <wordasword>org.eclipse.swtbot.junit4_x</wordasword> into
+		this feature include the plug-in _org.eclipse.swtbot.junit4_x_ into
 		the
 		dependencies of your test
 		project. Annotate your class test with
@@ -20,4 +20,3 @@
 		a screenshot in your code via the method
 		`bot.captureScreenshot(fileName)`.
 	
-</section>

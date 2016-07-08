@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Feature Projects - Tutorial</title>
+=== Eclipse Feature Projects - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,14 +30,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>15.10.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.6</para>
+			Version 2.6
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse Feature Project</title>
-			<para> This tutorial describes the purpose and usage of
+	=== Eclipse Feature Project
+			 This tutorial describes the purpose and usage of
 				Eclipse feature projects and Fragments.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

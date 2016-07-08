@@ -1,6 +1,6 @@
-<section id="lifecycle" role="wrapper">
-	<title>Eclipse application life cycle</title>
-	<section id="lifecycle_overview">
+
+	<title>Eclipse application life cycle
+[[lifecycle_overview">
 		<indexterm>
             <primary>Life cycle hooks</primary>
         </indexterm>
@@ -9,8 +9,8 @@
         </indexterm>
 
 
-		<title>Connecting to the Eclipse application life cycle</title>
-		<para>
+=== Connecting to the Eclipse application life cycle
+		
 			If an
 			application is
 			started or stopped, it typically requires
@@ -19,8 +19,8 @@
 			to connect to a
 			database or
 			close the database connection.
-		</para>
-		<para>
+		
+		
 			The Eclipse platform allows you
 			to register a class for
 			predefined events
@@ -40,11 +40,11 @@
 			the
 			application is
 			started.
-		</para>
-	</section>
+		
+	
 
-	<section id="lifecycle_iapplicationcontext">
-		<title>Accessing application startup parameters</title>
+[[lifecycle_iapplicationcontext">
+=== Accessing application startup parameters
 		<indexterm>
 			<primary>Launch parameters</primary>
 			<secondary>Access</secondary>
@@ -57,7 +57,7 @@
 			<primary>IApplicationContext</primary>
 		</indexterm>
 
-		<para>
+		
 			The
 			<code>IApplicationContext</code>
 			object which can be injected into your life cycle class contains
@@ -66,34 +66,34 @@
 			access these parameters via the
 			<code>getArguments()</code>
 			method.
-		</para>
-		<para>The access is demonstrated by the following snippet.</para>
-		<para>
+		
+		The access is demonstrated by the following snippet.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/access.java" />
 			</programlisting>
-		</para>
-		<para>A parameter can be a flag or can have a parameter and a value.
+		
+		A parameter can be a flag or can have a parameter and a value.
 			You can use a method similar to the following to
 			evaluate this.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/getValue.java" />
 			</programlisting>
-		</para>
+		
 
 
 
 
-	</section>
-	<section id="lifecycle_staticsplash">
-		<title>Close static splash screen</title>
+	
+[[lifecycle_staticsplash">
+=== Close static splash screen
 		<indexterm>
 			<primary>Splash screen</primary>
 			<secondary>Close</secondary>
 		</indexterm>
-		<para>
+		
 			If you configured in your product configuration file that a static
 			splash screen should be used, you can call the
 			<code>applicationRunning()</code>
@@ -102,10 +102,10 @@
 			object. You typically call this method if you want to replace the
 			static splash screen with a dynamic screen developed
 			with SWT.
-		</para>
-	</section>
-	<section id="lifecycle_implementation">
-		<title>How to implement a life cycle class</title>
+		
+	
+[[lifecycle_implementation">
+=== How to implement a life cycle class
 
 		<indexterm>
 			<primary>@PostContextCreate</primary>
@@ -123,23 +123,23 @@
 			<primary>lifeCycleURI</primary>
 		</indexterm>
 
-		<para>
+		
 			The
 			<code>org.eclipse.core.runtime.product</code>
 			extension point allows you to define a
 			class as life cycle callback
 			via a
 			property.
-		</para>
-		<para>
+		
+		
 			The key for this property is
 			<code>lifeCycleURI</code>
 			and it
 			points to the class via the
 			<code>bundleclass://</code>
 			schema.
-		</para>
-		<para>
+		
+		
 			In the class
 			you can annotate methods with the following
 			annotations. These
@@ -148,11 +148,11 @@
 			the
 			life cycle of
 			your application.
-		</para>
-		<para>
+		
+		
 
 			<table frame='all'>
-				<title>Life cycle annotations</title>
+		=== Life cycle annotations
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="2.0*" />
 					<colspec colname='c2' colwidth="4.0*" />
@@ -195,40 +195,39 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
 
-	</section>
-	<section id="lifecycle_implementationexample">
-		<title>Example life cycle implementation</title>
-		<para>
+	
+[[lifecycle_implementationexample">
+=== Example life cycle implementation
+		
 			The following example shows how to register a class in your
 			<filename>plugin.xml</filename>
 			file as life cycle handler. To avoid that the code wraps we use
 			<code>testing</code>
 			as BundleSymbolicName and package, you need to replace that with the correct values for your life cycle class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/plugin.adoc[]
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The following class displays a
 			<code>Shell</code>
 			until the startup process of your application has finished.
 			You could
 			extend this example to show a progress bar.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/LifeCycleManager.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-</section>

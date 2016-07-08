@@ -10,93 +10,81 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="eclipse_debug_framework_breakpoints">
-	<title>Breakpoints</title>
-	<section id="eclipse_breakpoint_debug_model">
-		<title>Eclipse Breakpoint Debug Model</title>
-		<para>Breakpoints in general are used to suspend the execution of an
+
+	<title>Breakpoints
+[[eclipse_breakpoint_debug_model">
+=== Eclipse Breakpoint Debug Model
+		Breakpoints in general are used to suspend the execution of an
 			application at a certain point.
-		</para>
-		<para>
+		
+		
 			In Eclipse breakpoint classes are derived from the
 			<code>org.eclipse.debug.core.model.IBreakpoint</code>
 			interface. As listed below there are also default implementation for
 			breakpoints, as well as more specific breakpoints, e.g.,
 			<code>ILineBreakpoint</code>
 			, which also informs about a certain position in a document.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/breakpoint_hierarchy.png"
+		
+		
+image::breakpoint_hierarchy.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Class hierarchy of IBreakpoint</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="eclipse_breakpoint_debug_extension_points">
-		<title>Registering custom breakpoints</title>
-		<para>
+					<phrase>Class hierarchy of IBreakpoint,pdfwidth=60%]
+		
+	
+[[eclipse_breakpoint_debug_extension_points">
+=== Registering custom breakpoints
+		
 			Eclipse provides the
 			<parameter>org.eclipse.debug.core.breakpoints</parameter>
 			extension point for registering custom
 			<code>IBreakpoint</code>
 			classes.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/breakpoint_ext_point.png"
+		
+		
+image::breakpoint_ext_point.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>IBreakpoint extension point</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>IBreakpoint extension point,pdfwidth=60%]
+		
+		
 			In this definition a
 			<parameter>markerType</parameter>
 			attribute is used, because breakpoints do have a reference to an
 			<code>IMarker</code>
 			, which represents the breakpoint in the UI and it is also used for
 			the persistence of breakpoints.
-		</para>
-		<para>
+		
+		
 			Therefore the
 			<parameter>org.eclipse.core.resources.markers</parameter>
 			extension point is used.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/breakpoint_marker_sample.adoc[]
 			</programlisting>
-		</para>
-	</section>
-	<section id="eclipse_breakpoint_creation">
-		<title>Creating breakpoints in the Eclipse IDE</title>
-		<para>
+		
+	
+[[eclipse_breakpoint_creation">
+=== Creating breakpoints in the Eclipse IDE
+		
 			The easiest approach to create custom breakpoints is to provide an
 			implementation of
 			<code>org.eclipse.debug.ui.actions.IToggleBreakpointsTarget</code>
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/togglebreakpointstarget_hierarchy.png"
+		
+		
+image::togglebreakpointstarget_hierarchy.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>IToggleBreakpointsTarget type hierarchy</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>IToggleBreakpointsTarget type hierarchy,pdfwidth=60%]
+		
+		
 			For instance the
 			<code>IToggleBreakpointsTargetExtension</code>
 			interface provides a
@@ -112,24 +100,24 @@ Version 0.3, 06.07.2016
 			and/or
 			<code>IWorkbenchPart</code>
 			.
-		</para>
-		<para>
+		
+		
 			These
 			<code>IToggleBreakpointsTarget</code>
 			implementations are often provided as an adapter for custom
 			<code>IDebugElements</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/togglebreakpoint_adapter.adoc[]
 			</programlisting>
-		</para>
-	</section>
-	<section id="eclipse_breakpoint_manager">
-		<title>Registering breakpoints in the IBreakpointManager</title>
-		<para>
+		
+	
+[[eclipse_breakpoint_manager">
+=== Registering breakpoints in the IBreakpointManager
+		
 			When an
 			<code>IBreakpoint</code>
 			is created, e.g., by a
@@ -137,14 +125,14 @@ Version 0.3, 06.07.2016
 			, it must be registered to the workspace's
 			<code>IBreakpointManager</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/RegisterBreakpoint.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			When adding or removing
 			<code>IBreakpoints</code>
 			from the
@@ -153,14 +141,14 @@ Version 0.3, 06.07.2016
 			<code>IBreakpointListener</code>
 			will be informed about it and can act upon the added or removed
 			breakpoint.
-		</para>
-		<para>
+		
+		
 			An
 			<code>IDebugTarget</code>
 			is an instance of
 			<code>IBreakpointListener</code>
 			by default and is therefore in charge to manage changes concerning
 			breakpoints.
-		</para>
-	</section>
-</section>
+		
+	
+

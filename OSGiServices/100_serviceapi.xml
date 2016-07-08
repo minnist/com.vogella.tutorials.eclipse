@@ -1,24 +1,20 @@
-<section id="osgiservice_lowlevel" role="wrapper">
-	<title>OSGi service low-level API</title>
-	<section id="osgiapiservice_overview">
-		<title>Using the OSGi service API</title>
-		<para>OSGi provides several means of declaring services. This $book focus on the OSGi declarative service
+
+	<title>OSGi service low-level API
+[[osgiapiservice_overview">
+=== Using the OSGi service API
+		OSGi provides several means of declaring services. This $book focus on the OSGi declarative service
 			functionality but it is also possible to use other means for defining services. These options are depicted in the
 			following picture. Blueprint and Declarative Services provide high level abstractions for handling services.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/osgiserviceoptions.png" scale="30" />
+		
+		
+image::osgiserviceoptions.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Options for defining OSGi services</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Options for defining OSGi services,pdfwidth=60%]
+		
 
 
-		<para>
+		
 			This chapter describes the API to work
 			directly with OSGi services but, if you have the option, you should prefer higher
 			level
@@ -27,23 +23,23 @@
 			handling
 			of OSGi
 			services.
-		</para>
-	</section>
-	<section id="osgiservice_bundlecontext">
-		<title>BundleContext</title>
-		<para>
+		
+	
+[[osgiservice_bundlecontext">
+=== BundleContext
+		
 			Access to the service registry is performed via the
 			<code>BundleContext</code>
 			class.
-		</para>
-		<para>
+		
+		
 			A bundle can define a
 			<code>Bundle-Activator</code>
 			(Activator) in its declaration. This class must implement the
 			<code>BundleActivator</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			If defined,
 			OSGi injects the
 			<code>BundleContext</code>
@@ -54,13 +50,13 @@
 			methods of the implementing
 			<code>Activator</code>
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/activator.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			If you do not have an
 			<code>Activator</code>
 			,
@@ -70,17 +66,17 @@
 			<code>BundleContext</code>
 			for a
 			class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/getBundleContext.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="osgiservice_register">
-		<title>Registering services via API</title>
-		<para>
+[[osgiservice_register">
+=== Registering services via API
+		
 			A bundle can also register itself for the events
 			(
 			<code>ServiceEvents</code>
@@ -91,16 +87,16 @@
 			These are, for example, triggered if a new bundle is
 			installed or
 			de-installed or if a new service is registered.
-		</para>
+		
 
-		<para> To publish a service in your bundle use: </para>
-		<para>
+		 To publish a service in your bundle use: 
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/register.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Once the service is no longer used, you must unregister the
 			service with OSGi. OSGi counts the usage of services
 			to enable the
@@ -108,14 +104,14 @@
 			used by your implementation, you should
 			tell the OSGi environment
 			this by:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/unregisterservice.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			In the
 			<code>registerService()</code>
 			method from the
@@ -123,8 +119,8 @@
 			class you can specify arbitrary properties in the
 			dictionary
 			parameter.
-		</para>
-		<para>
+		
+		
 			You can
 			use the
 			<code>getProperty()</code>
@@ -134,26 +130,26 @@
 			<code>org.osgi.framework</code>
 			package,
 			to access a specific property.
-		</para>
-	</section>
+		
+	
 
-	<section id="osgiservice_aquire">
-		<title>Accessing a service via API</title>
-		<para>
+[[osgiservice_aquire">
+=== Accessing a service via API
+		
 			A bundle can acquire a service via the
 			<code>BundleContext</code>
 			class. The following example demonstrates that.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/getservice.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="osgiservice_problems">
-		<title>Low-level API vs OSGi declarative services</title>
-		<para> OSGi services can be dynamically started and stopped. If you
+[[osgiservice_problems">
+=== Low-level API vs OSGi declarative services
+		 OSGi services can be dynamically started and stopped. If you
 			work with the OSGI low-level API you have to handle
 			this dynamic in
 			your code. This make the source code unnecessary complex. If you do
@@ -164,14 +160,14 @@
 			service and the
 			service cannot
 			be removed via the OSGi framework.
-		</para>
-		<para>
+		
+		
 			To handle the dynamics automatically declarative services were
 			developed.
 			Prefer therefore the usage of
 			OSGi
-			<wordasword>declarative services</wordasword>
+			_declarative services_
 			over the low-level API.
-		</para>
-	</section>
-</section>
+		
+	
+

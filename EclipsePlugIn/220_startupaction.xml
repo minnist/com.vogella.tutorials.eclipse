@@ -1,30 +1,29 @@
-<section id="tools">
-	<title>Early startup actions</title>
-	<para>
+
+	<title>Early startup actions
+	
 		The Eclipse platform provides the
 		<code>org.eclipse.ui.startup</code>
 		extension point via the
 		<code>org.eclipse.ui</code>
 		plug-in.
-	</para>
+	
 	<note>
-		<para>This extension point is not used for Eclipse 4 RCP applications,
+		This extension point is not used for Eclipse 4 RCP applications,
 			use a life cycle hook or model add-on to archive
 			similar behavior.
-		</para>
+		
 	</note>
 
-	<para>
+	
 		To implement an extension to this extension point, select
 		<guibutton>Add...</guibutton>
 		on the
-		<guilabel>Extensions</guilabel>
+		_Extensions_
 		tab of the
 		<filename>plugin.xml</filename>
 		editor and point to a class implementing the
 		<code>IStartup</code>
 		interface.
-	</para>
+	
 
 
-</section>

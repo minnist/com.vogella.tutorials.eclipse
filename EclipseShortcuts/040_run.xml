@@ -1,9 +1,9 @@
 
-<section id="shortcuts_run">
-	<title>Start Java programs</title>
-	<para>
+
+	<title>Start Java programs
+	
 		<table frame='all'>
-			<title>Running programs</title>
+	=== Running programs
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -25,6 +25,6 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
-</section>
+

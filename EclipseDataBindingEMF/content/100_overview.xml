@@ -1,31 +1,30 @@
-<section id="databinding">
-	<title>Prerequisistes</title>
-	<para>
+
+	<title>Prerequisistes
+	
 		This article covers
-		<wordasword>JFace Data Binding</wordasword>
+		_JFace Data Binding_
 		together with
 		the
-		<wordasword>Eclipse Modeling Framework</wordasword>
+		_Eclipse Modeling Framework_
 		(EMF)
 		.
-	</para>
-	<para>This tutorial assumes that you are familiar with
+	
+	This tutorial assumes that you are familiar with
 		the base concepts
 		of EMF and JFace Data binding and will focus on the
 		additional
 		information how to use both frameworks together.
-	</para>
-	<para>
+	
+	
 
 		For an introduction to JFace Data Binding please see
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html">JFace Data Binding Tutorial</ulink>
-	</para>
-	<para>
+			url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html">JFace Data Binding Tutorial
+	
+	
 		. For an introduction to Eclipse EMF please see
-		<ulink url="http://www.vogella.com/tutorials/EclipseEMF/article.html"> Eclipse EMF Tutorial</ulink>
+		http://www.vogella.com/tutorials/EclipseEMF/article.html"> Eclipse EMF Tutorial
 		.
-	</para>
+	
 
 
-</section>

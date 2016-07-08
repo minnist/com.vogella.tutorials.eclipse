@@ -1,96 +1,74 @@
-<section id="webserver_configuration">
-	<title>Web server configuration in Eclipse</title>
-	<section id="webserver_configuration_runtime">
-		<title>Setting up runtime environments</title>
-		<para>
+
+	<title>Web server configuration in Eclipse
+[[webserver_configuration_runtime">
+=== Setting up runtime environments
+		
 			To configure Eclipse WTP, select from the menu
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Server</guisubmenu>
-				<guisubmenu>Runtime Environments</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Server > Runtime Environments]
 			.
 			Press the
-			<guilabel>Add</guilabel>
+			_Add_
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/WTPConfig10.png" />
+		
+		
+image::WTPConfig10.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Select your version of Tomcat and select the
-			<guilabel>Create a new local server</guilabel>
+			_Create a new local server_
 			flag.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/WTPConfig20.png" />
+		
+		
+image::WTPConfig20.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			You can instruct Eclipse to download Tomcat into a local
 			directory.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/WTPConfig30.png" />
+		
+		
+image::WTPConfig30.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-		</para>
-		<para>
+		
+		
+		
+		
 			Press the
 			<guibutton>Finish</guibutton>
 			and afterwards OK.
-		</para>
-		<para>You are now ready to use Tomcat
+		
+		You are now ready to use Tomcat
 			together with the Eclipse IDE.
-		</para>
-	</section>
+		
+	
 
-	<section id="webserver_configuration_starting">
-		<title>Starting a web server</title>
-		<para>
+[[webserver_configuration_starting">
+=== Starting a web server
+		
 			Once you have configure a local Tomcat server the
-			<guilabel>Servers</guilabel>
+			_Servers_
 			view allows you to start start and stop this server. To open this view select
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Server</guisubmenu>
-				<guisubmenu>Servers...</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Other... > Server > Servers...]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_tomcatserver10.png" />
+		
+		
+image::wtp_tomcatserver10.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			You can stop and start the
 			Tomcat server via the
-			<guilabel>Servers</guilabel>
+			_Servers_
 			view.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_tomcatserver20.png" />
+		
+		
+image::wtp_tomcatserver20.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

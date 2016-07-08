@@ -10,107 +10,95 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="exercise_perspective_switch">
-	<title>﻿Exercise: Changing the window title on perspective change</title>
+
+	<title>﻿Exercise: Changing the window title on perspective change
 	<section>
-		<title>Target</title>
-		<para>In this exercise we will change the window title according to the active
+=== Target
+		In this exercise we will change the window title according to the active
 			perspective.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>Clone ﻿e4-perspective-switcher</title>
-		<para>
+=== Clone ﻿e4-perspective-switcher
+		
 			In order to have a running example with different perspectives you should clone the
 			e4-perspective-switcher
 			<uri>git@github.com:vogellacompany/e4-perspective-switcher.git</uri>
 			into a new
 			workspace.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/clone_e4_perspective_switcher.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Clone the ﻿e4-perspective-switcher</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>After you cloned the e4-perspective-switcher, you should have 3 projects in your
+					<imagedata fileref="./images/clone_e4_perspective_switcher.png[Clone the ﻿e4-perspective-switcher,pdfwidth=60%]
+		
+		After you cloned the e4-perspective-switcher, you should have 3 projects in your
 			workspace:
-		</para>
-		<para>
+		
+		
 			<itemizedlist>
 				<listitem>
-					<para>﻿com.sample.application</para>
+					﻿com.sample.application
 				</listitem>
 				<listitem>
-					<para> com.sample.feature</para>
+					 com.sample.feature
 				</listitem>
 				<listitem>
-					<para>﻿org.eclipse.e4.ui.workbench.commands.swt</para>
+					﻿org.eclipse.e4.ui.workbench.commands.swt
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			In the
 			<filename>com.sample.application</filename>
 			project you can find the
 			<filename>com.sample.application.product</filename>
 			, which you should start in order
 			to see a running example of the ﻿e4-perspective-switcher.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>Add a new model add-on</title>
-		<para>Now we add a new add-on to the application model, which will be used to listen for the
+=== Add a new model add-on
+		Now we add a new add-on to the application model, which will be used to listen for the
 			perspective change event.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="./images/perspective_switch_addon.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Perspective switch addon</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Perspective switch addon,pdfwidth=60%]
+		
+		
 			The implementation of the
 			<code>PerspectiveSwitchAddon</code>
 			looks like
 			this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/perspective_switch_exercise.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>﻿Validate</title>
-		<para>
+=== ﻿Validate
+		
 			Start your application again and make sure that you used the
 			<property>-clearPersistedState</property>
 			program argument, so that the new addon
 			is available and active.
-		</para>
-		<para>The result should look similar to this one, where you can see that the window title
+		
+		The result should look similar to this one, where you can see that the window title
 			has been changed to the name
 			of the currently selected perspective:
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/perspective_switch_addon_result_app.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Perspective switch addon result</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+					<imagedata fileref="./images/perspective_switch_addon_result_app.png[Perspective switch addon result,pdfwidth=60%]
+		
+	
+

@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 Model Add-ons - Tutorial</title>
+=== Eclipse 4 Model Add-ons - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,12 +31,12 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Creating model add-ons for Eclipse plug-ins</title>
-			<para> This tutorial gives an overview about the
+	=== Creating model add-ons for Eclipse plug-ins
+			 This tutorial gives an overview about the
 				model add-ons in the Eclipse 4
 				application
 				platform.
-			</para>
+			
 		
 		</abstract>
 	</articleinfo>

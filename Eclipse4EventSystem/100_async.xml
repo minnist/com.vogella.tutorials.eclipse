@@ -1,11 +1,11 @@
-<section id="eventadmin_threads">
-	<title>Asynchronous processing and the event bus</title>
+
+	<title>Asynchronous processing and the event bus
 	<indexterm>
 		<primary>Event service</primary>
 		<secondary>Asynchronous processing</secondary>
 	</indexterm>
 
-	<para>
+	
 		Your threads can use the
 		<code>IEventBroker</code>
 		to send event data. Every listener will be automatically called and if
@@ -13,14 +13,14 @@
 		<code>UIEventTopic</code>
 		annotation, it will be
 		called in the main thread.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/event/Example.java" />
 		</programlisting>
-	</para>
+	
 
 
-</section>
+

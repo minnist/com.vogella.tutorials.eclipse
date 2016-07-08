@@ -1,31 +1,30 @@
-<section id="eclipselauncher">
-	<title>Eclipse Launching Framework</title>
 
-	<para>
+	<title>Eclipse Launching Framework
+
+	
 		The Eclipse IDE supports launching of other programs. Launching in this context is
 		defined as running or
 		debugging
 		a
 		program from
 		within the Eclipse IDE. A
-		<wordasword>launcher</wordasword>
+		_launcher_
 		is a
 		set of
 		Java
 		classes in an Eclipse plug-in that
 		performs
 		launching.
-	</para>
-	<para>
+	
+	
 		The framework allows defining launch configuration types which defines how launch configuration 
 		are created.
-	</para>
-	<para>
+	
+	
 		The
 		<code>org.eclipse.debug.core</code>
 		plug-in is responsible for of creating and persisting launch configurations on behalf of the configuration
 		type and
 		<code>org.eclipse.debug.ui</code>
 		provides the base functionality to display and change an existing launch configuration.
-	</para>
-</section>
+	

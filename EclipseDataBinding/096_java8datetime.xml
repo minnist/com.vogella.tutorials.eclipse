@@ -1,22 +1,22 @@
-<section id="Java8TimeApi">
-	<title>Example: DateTime Widget and Java 8 time API</title>
-	<para>
+
+	<title>Example: DateTime Widget and Java 8 time API
+	
 		With Java 8, you have a redesigned Data and Time API. JFace data binding does currently not support not based
 		on Java 8 therefore this
 		Java 8 API
 		cannot be used out of the box with JFace data binding.
-	</para>
-	<para>
+	
+	
 		To use it, you have to implement your custom
 		<code>WidgetValueProperty</code>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/java8/DateTimeSelectionProperty.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Here we implement a binding between the
 		<code>DateTime</code>
 		SWT widget and a
@@ -26,18 +26,18 @@
 		or
 		<code>java.time.LocalTime</code>
 		.
-	</para>
-	<para>
+	
+	
 		The usage of the
 		<code>DateTimeSelectionProperty</code>
 		is demonstrated by the following listing.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/java8/Java8DateTimePart.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		In this sample we bind the
 		<code>DateTime</code>
 		widget to a
@@ -55,8 +55,8 @@
 		changes by manually manipulating to the
 		<code>DateTime</code>
 		widget.
-	</para>
-	<para>
+	
+	
 		The result of manually manipulating to the
 		<code>DateTime</code>
 		widget looks like this:
@@ -65,8 +65,8 @@
 				<imagedata fileref="./images/java8_DateTime_binding.png"/>
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		If you select a date in the
 		<code>TableViewer</code>
 		, this updates the
@@ -77,5 +77,4 @@
 		the
 		<code>Label</code>
 		, because all these are bound together.
-	</para>
-</section>
+	

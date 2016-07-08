@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Extension Points and Extensions - Tutorial</title>
+=== Eclipse Extension Points and Extensions - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -28,17 +28,17 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>27.08.2013</pubdate>
 		<releaseinfo>
-			<para>Version 2.4</para>
+			Version 2.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Extension Points</title>
-			<para> This tutorial describes the definition and usage of the
+	=== Eclipse Extension Points
+			 This tutorial describes the definition and usage of the
 				Eclipse
 				Extension Points. The article is written for and
 				Eclipse
 				4.2 but you can easily adjust it for Eclipse 3.x.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

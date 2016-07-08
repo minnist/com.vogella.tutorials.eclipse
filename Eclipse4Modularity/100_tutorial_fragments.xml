@@ -1,28 +1,28 @@
-<section id="contributefragment" role="wrapper">
-	<title>Exercise: Contributing via model fragments</title>
-	<section id="contributefragments_target">
-		<title>Target</title>
-		<para>In this exercise you create a model fragment to contribute a
+
+	<title>Exercise: Contributing via model fragments
+[[contributefragments_target">
+=== Target
+		In this exercise you create a model fragment to contribute a
 			menu
 			entry, a command and a
 			handler to
 			your application model.
-		</para>
-	</section>
+		
+	
 
-	<section id="contributefragments_project">
-		<title>Create a new plug-in</title>
-		<para>
+[[contributefragments_project">
+=== Create a new plug-in
+		
 			Create a simple plug-in project called
-			<wordasword>com.example.e4.rcp.todo.contribute</wordasword>
+			_com.example.e4.rcp.todo.contribute_
 			. The following description abbreviates the plug-in name to the
 			<code>contribute</code>
 			plug-in.
-		</para>
-	</section>
-	<section id="contributefragments_dependencies">
-		<title>Add the dependencies</title>
-		<para>
+		
+	
+[[contributefragments_dependencies">
+=== Add the dependencies
+		
 			In the
 			<code>MANIFEST.MF</code>
 			file, add the following plug-ins as dependencies to your
@@ -30,97 +30,76 @@
 			plug-in.
 			<itemizedlist>
 				<listitem>
-					<para>org.eclipse.core.runtime</para>
+					org.eclipse.core.runtime
 				</listitem>
 				<listitem>
-					<para>org.eclipse.swt</para>
+					org.eclipse.swt
 				</listitem>
 				<listitem>
-					<para>org.eclipse.jface</para>
+					org.eclipse.jface
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.core.di</para>
+					org.eclipse.e4.core.di
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.ui.workbench</para>
+					org.eclipse.e4.ui.workbench
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.ui.di</para>
+					org.eclipse.e4.ui.di
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
-	<section id="contributefragments_classes">
-		<title>Create a handler class</title>
-		<para>
+		
+	
+[[contributefragments_classes">
+=== Create a handler class
+		
 			Create the
 			<code>com.example.e4.rcp.todo.contribute.handlers</code>
 			package and
 			the following class.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/fragments/OpenMapHandler.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="contributefragments_model">
-		<title>Create a model fragment</title>
-		<para>
+[[contributefragments_model">
+=== Create a model fragment
+		
 			Use the fragment wizard from the e4 tools project to create a new
 			model fragment via the following
 			menu:
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Eclipse 4</guisubmenu>
-				<guisubmenu>Model</guisubmenu>
-				<guisubmenu>New Model Fragment</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Eclipse 4 > Model > New Model Fragment]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragmentwizard10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating fragments with the wizard</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::fragmentwizard10.png[Creating fragments with the wizard,pdfwidth=60%]
+		
+		
 			Select the
 			<code>contribute</code>
 			plug-in as the container and use
 			<filename>fragment.e4xmi</filename>
 			as the name for the file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragmentwizard20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating fragments with the wizard, Part 2</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=60%]
+		
 
-		<para>
+		
 			Press the
-			<guilabel>Finish</guilabel>
+			_Finish_
 			button.
-		</para>
-	</section>
+		
+	
 
-	<section id="contributefragments_extensionpoint">
-		<title>Validate that the fragment is registered as extension</title>
+[[contributefragments_extensionpoint">
+=== Validate that the fragment is registered as extension
 
-		<para>
+		
 			This wizard which creates the fragment also adds the
 			<code>org.eclipse.e4.workbench.model</code>
 			extension to your
@@ -128,54 +107,50 @@
 			plug-in. To review this open the
 			<filename>plugin.xml</filename>
 			file.
-		</para>
+		
 
 		<tip>
-			<para>
+			
 				If the
 				<filename>plugin.xml</filename>
 				file is missing, open your
 				<filename>MANIFEST.MF</filename>
 				file, select the
-				<guilabel>Overview</guilabel>
+				_Overview_
 				tab and click on the
-				<guilabel>Extensions</guilabel>
+				_Extensions_
 				link. This shows the
-				<guilabel>Extensions</guilabel>
+				_Extensions_
 				tab in the editor and once you add an extension in this tab the
 				<filename>plugin.xml</filename>
 				file is generated.
-			</para>
+			
 		</tip>
 		<warning>
-			<para>At the time of this writing the wizard deletes existing content
+			At the time of this writing the wizard deletes existing content
 				in the plugin.xml, if you create a new fragment. This is a bug and
 				might already be solved once you read this.
-			</para>
+			
 		</warning>
 
-		<para>
+		
 			On the
-			<guilabel>Extensions</guilabel>
+			_Extensions_
 			tab validate that you have an entry similar to the following
 			screenshot.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modelfragment_extensionpoint16.png"
+		
+image::modelfragment_extensionpoint16.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding the fragment to the extensions</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding the fragment to the extensions,pdfwidth=60%]
+		
 
 		<tip>
-			<para>
+			
 				If entry in the plugin.xml is missing you can create it by clicking
 				on the
 				<guibutton>Add...</guibutton>
@@ -183,63 +158,59 @@
 				<code>org.eclipse.e4.workbench.model</code>
 				extension point. Afterwards you the right mouse click to add a
 				fragment to it.
-			</para>
+			
 		</tip>
-		<para>
+		
 			The resulting
 			plugin.xml
 			file should look similar to the following
 			code.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/fragments/plugin.adoc[]
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
 
-	<section id="contributefragments_addingelements">
-		<title>Adding model elements</title>
-		<para>
+[[contributefragments_addingelements">
+=== Adding model elements
+		
 			Open the
 			<filename>fragment.e4xmi</filename>
 			file in its editor.
 			Select the
-			<guilabel>Model Fragments</guilabel>
+			_Model Fragments_
 			node and
 			press the
 			<guibutton>Add...</guibutton>
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modelfragment10.png"/>
+		
+		
+image::modelfragment10.png"/>
 
 				</imageobject>
 				<textobject>
-					<phrase>Adding a model fragment</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding a model fragment,pdfwidth=60%]
+		
+		
 			Use
 			<code>com.example.e4.rcp.todo.application</code>
 			as the
-			<guilabel>Element ID</guilabel>
+			_Element ID_
 			. This is the ID of the
 			<parameter>Application</parameter>
 			model element in
 			your
 			<filename>Application.e4xmi</filename>
 			file.
-		</para>
+		
 		<warning>
-			<para>
+			
 				Ensure that
 				<code>com.example.e4.rcp.todo.application</code>
 				is the ID you
@@ -252,113 +223,97 @@
 				does not find
 				the correct model element to contribute
 				to.
-			</para>
+			
 		</warning>
-		<para>
+		
 			You
 			also need to
 			define
 			to which feature
 			you will be adding to. For
-			<wordasword>Featurename</wordasword>
+			_Featurename_
 			, specify the value
-			<wordasword>commands</wordasword>
+			_commands_
 			.
 			Make sure you have the
-			<guilabel>Model Fragment</guilabel>
+			_Model Fragment_
 			selected and
 			use
 			the
 			<guibutton>Add...</guibutton>
 			button to add a
-			<guilabel>Command</guilabel>
+			_Command_
 			to your model fragment.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/modelfragment20.png" scale="35" />
+		
+image::modelfragment20.png" scale="35" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Adding a model fragment</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a model fragment,pdfwidth=60%]
+		
 
-		<para>
+		
 			Use
 			<code>com.example.e4.rcp.todo.contribute.command.openmap</code>
 			for the
-			<guilabel>ID</guilabel>
+			_ID_
 			field and
 			<code>Open Map</code>
 			for the
-			<guilabel>Name</guilabel>
+			_Name_
 			field.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment30.png" scale="35" />
+		
+		
+image::fragment30.png" scale="35" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Adding a command to the model fragment</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding a command to the model fragment,pdfwidth=60%]
+		
+		
 			Create a new model fragment for the handler. The
-			<guilabel>Element ID</guilabel>
+			_Element ID_
 			is again your
 			application ID, the
-			<guilabel>Featurename</guilabel>
+			_Featurename_
 			is
 			<code>handlers</code>
 			.
-		</para>
-		<para>
+		
+		
 			Add a
-			<guilabel>Handler</guilabel>
+			_Handler_
 			to this model fragment.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment32.png" scale="35" />
+		
+		
+image::fragment32.png" scale="35" />
 
 				</imageobject>
 				<textobject>
-					<phrase>Adding a handler to the model fragment</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding a handler to the model fragment,pdfwidth=60%]
+		
+		
 			Use
 			<code>com.example.e4.rcp.todo.contribute.handler.openmap</code>
 			as ID for the handler.
 			Point to the
-			<wordasword>Open Map</wordasword>
+			_Open Map_
 			command and the
 			<code>OpenMapHandler</code>
 			class.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment40.png" scale="30" />
+		
+		
+image::fragment40.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a handler to the model fragment</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a handler to the model fragment,pdfwidth=60%]
+		
 
-		<para>
+		
 			Add another
-			<wordasword>Model Fragment</wordasword>
+			_Model Fragment_
 			to contribute a new menu to your application model. Contribute to
 			the
 			main menu of your
@@ -368,24 +323,17 @@
 			exericses correctly this should be the
 			<code>org.eclipse.ui.main.menu</code>
 			ID. The
-			<wordasword>Featurename</wordasword>
+			_Featurename_
 			is
 			<code>children</code>
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment50.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Adding a fragment for the menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
+		
 
 		<warning>
-			<para>
+			
 				Ensure in your
 				<filename>Application.e4xmi</filename>
 				file that you are using the
@@ -395,8 +343,8 @@
 				The following
 				screenshot
 				highlights this entry.
-			</para>
-			<para>
+			
+			
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/fragment52.png"/>
@@ -405,42 +353,28 @@
 						<phrase>Adding a fragment for the menu</phrase>
 					</textobject>
 				</mediaobject>
-			</para>
+			
 		</warning>
-		<para>
+		
 			In your
 			<filename>fragment.e4xmi</filename>
 			file add a
-			<guilabel>Menu</guilabel>
+			_Menu_
 			with the
 			<parameter>com.example.e4.rcp.todo.contribute.menu.map</parameter>
 			ID and a
 			<parameter>Map</parameter>
 			label.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment60.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Adding a menu entry</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment62.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Adding a menu entry</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::fragment60.png[Adding a menu entry,pdfwidth=60%]
+		
+		
+image::fragment62.png[Adding a menu entry,pdfwidth=60%]
+		
+		
 			Add a
-			<guilabel>HandledMenuItem</guilabel>
+			_HandledMenuItem_
 			which
 			points to
 			your new command. The process
@@ -455,94 +389,90 @@
 			<xref linkend="part_commands" />
 			for further information. The created entry should be similar to the
 			following screenshot.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/fragment70.png"/>
+		
+image::fragment70.png"/>
 
 				</imageobject>
 				<textobject>
-					<phrase>Adding a menu item to the menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a menu item to the menu,pdfwidth=60%]
+		
 
-	</section>
+	
 
 
-	<section id="contributefragments_product">
-		<title>Update the product configuration (via the feature)</title>
-		<para>
+[[contributefragments_product">
+=== Update the product configuration (via the feature)
+		
 			Add the
 			<code>contribute</code>
 			plug-in to your
 			<code>com.example.e4.rcp.todo.feature</code>
 			feature.
-		</para>
+		
 
 		<warning>
-			<para>Ensure that you added this new plug-in to your feature and
+			Ensure that you added this new plug-in to your feature and
 				saved the changes.
-			</para>
+			
 		</warning>
-	</section>
+	
 
-	<section id="contributefragments_validate">
-		<title>Validating</title>
+[[contributefragments_validate">
+=== Validating
 
-		<para>
+		
 			Start your application.
-		</para>
+		
 		<warning>
-			<para>Remember to start via the product to update the launch
+			Remember to start via the product to update the launch
 				configuration.
-			</para>
+			
 		</warning>
 
-		<para>
+		
 			You should
 			see the new
-			<guilabel>Map</guilabel>
+			_Map_
 			entry in the application menu. If you select
 			this entry a message
 			dialog
 			opens.
-		</para>
-		<para>
+		
+		
 			If the menu entry is not displayed, ensure that your IDs are
 			correctly
 			entered and that you either use the
 			<parameter>clearPersistedState</parameter>
 			flag or clear the workspace data in your
-			<wordasword>Launch configuration</wordasword>
+			_Launch configuration_
 			.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="contributefragments_view">
-		<title>Exercise: Contributing a part</title>
+[[contributefragments_view">
+=== Exercise: Contributing a part
 		<note>
-			<para>This exercise is optional.</para>
+			This exercise is optional.
 		</note>
-		<para>
+		
 			Define a new model fragment which
 			contributes a
 			part
 			to an existing
-			<wordasword>PartStack</wordasword>
+			_PartStack_
 			. Use the ID of an existing
-			<wordasword>PartStack</wordasword>
+			_PartStack_
 			and use
 			<code>children</code>
 			as
-			<wordasword>FeatureName</wordasword>
+			_FeatureName_
 			.
-		</para>
+		
 
-	</section>
+	
 
-</section>
+

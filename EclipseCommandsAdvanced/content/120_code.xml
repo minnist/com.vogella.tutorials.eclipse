@@ -1,18 +1,17 @@
 
-<section id="commmands_code">
-	<title>Calling commands directly via code</title>
-	<para> You can call a command directly. For example if you have a
+
+	<title>Calling commands directly via code
+	 You can call a command directly. For example if you have a
 		command "add.command" defined you can call it via the following
 		coding.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/button/button.java" />
 		</programlisting>
-	</para>
-	<para> The code above is called within a view which provides access
+	
+	 The code above is called within a view which provides access
 		to the site and to services. You can also get the service via the
 		WorkbenchWindow.
-	</para>
-</section>
+	

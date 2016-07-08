@@ -1,5 +1,5 @@
-<section id="firstjavaexport" role="wrapper">
-	<title>Run Java program outside Eclipse</title>
+
+	<title>Run Java program outside Eclipse
 	<indexterm>
 		<primary>Java projects</primary>
 		<secondary>Export
@@ -15,9 +15,9 @@
 		<secondary>create
 		</secondary>
 	</indexterm>
-	<section id="firstjava_export">
-		<title>Create JAR file</title>
-		<para>
+[[firstjava_export">
+=== Create JAR file
+		
 			To run the Java program outside of the Eclipse IDE, you need to
 			export
 			it as a
@@ -25,25 +25,21 @@
 			file. A
 			<filename>JAR</filename>
 			file is the standard distribution format for Java applications.
-		</para>
-		<para>
+		
+		
 			Select your project, right-click it and select the
-			<guilabel>Export</guilabel>
+			_Export_
 			menu entry.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany90.gif" />
+		
+		
+image::firstgany90.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Export wizard for Java project</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Export wizard for Java project,pdfwidth=60%]
+		
+		
 			Select
-			<guilabel>JAR file</guilabel>
+			_JAR file_
 			and select the
 			<guibutton>Next</guibutton>
 			button.
@@ -56,39 +52,31 @@
 			file. I named it
 			<code>myprogram.jar</code>
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany100.gif" />
+		
+		
+image::firstgany100.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Export wizard for Java project, Part II</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstgany110.gif" />
+					<phrase>Export wizard for Java project, Part II,pdfwidth=60%]
+		
+		
+image::firstgany110.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Export wizard for Java project, Part III</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Export wizard for Java project, Part III,pdfwidth=60%]
+		
+		
 			Press The
 			<guibutton>Finish</guibutton>
 			button. This creates a
 			<filename>JAR</filename>
 			file in your selected output
 			directory.
-		</para>
+		
 
-	</section>
-	<section id="firstjava_runconsole">
-		<title>Run your program outside Eclipse</title>
+	
+[[firstjava_runconsole">
+=== Run your program outside Eclipse
 		<indexterm>
 			<primary>Java projects</primary>
 			<secondary>run, outside Eclipse
@@ -99,17 +87,14 @@
 			<secondary>run, outside Eclipse
 			</secondary>
 		</indexterm>
-		<para>
+		
 			Open a command shell, e.g., under Microsoft Windows select
-			<menuchoice>
-				<guimenu>Start</guimenu>
-				<guisubmenu>Run</guisubmenu>
-			</menuchoice>
+			menu:Start[Run]
 			and type
 			<code>cmd</code>
 			and press the Enter key. This should open a console window.
-		</para>
-		<para>
+		
+		
 			Switch to the directory which contains the
 			<filename>JAR</filename>
 			file
@@ -121,23 +106,23 @@
 			<filename>JAR</filename> is located in
 			<filename>c:\temp</filename>,
 			use the following command.
-		</para>
-		<para>
+		
+		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/cd.txt" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			To run this program, include the
 			<filename>JAR</filename>
 			file
 			in your
-			<wordasword>classpath</wordasword>
+			_classpath_
 			. The
-			<wordasword>classpath</wordasword>
+			_classpath_
 			defines which Java classes are available to the Java
 			runtime. You can
 			add a
@@ -145,27 +130,24 @@
 			file to the classpath with the
 			<parameter>-classpath</parameter>
 			option.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/firstexample/run.txt" />
 			</programlisting>
-		</para>
-		<para> Type the above command in the directory you used for the export
+		
+		 Type the above command in the directory you used for the export
 			and you see the "Hello Eclipse!" output in your
 			command shell.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="50" fileref="images/firstgany120.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Running application outside Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Running application outside Eclipse,pdfwidth=60%]
+		
 
-	</section>
-</section>
+	

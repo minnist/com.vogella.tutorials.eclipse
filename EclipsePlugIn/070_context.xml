@@ -1,6 +1,6 @@
-<section id="eclipsecontext">
-	<title>Accessing the IEclipseContext from 3.x API</title>
-	<para>
+
+	<title>Accessing the IEclipseContext from 3.x API
+	
 		The Eclipse 4.x IDE uses the
 		<code>IEclipseContext</code>
 		data structure
@@ -11,24 +11,23 @@
 		is demonstrated with the following snippets. These code snippets assume that you are familiar
 		with the 3.x
 		API, if that is not the case you can skip this section.
-	</para>
+	
 
-	<para>For example, to access the context from an Eclipse 3.x API view, you can use the
+	For example, to access the context from an Eclipse 3.x API view, you can use the
 		following snippet.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/View.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>This snippet demonstrates the access via an Eclipse 3.x API handler. </para>
-	<para>
+	This snippet demonstrates the access via an Eclipse 3.x API handler. 
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/Access.java" />
 		</programlisting>
-	</para>
+	
 
 
 
-</section>

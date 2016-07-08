@@ -1,12 +1,12 @@
-<section id="dialogs_jface">
-	<title>JFace Dialogs</title>
+
+	<title>JFace Dialogs
 	<indexterm>
 		<primary>Dialog</primary>
 		<secondary>JFace</secondary>
 	</indexterm>
-	<section id="dialogs_purpose">
-		<title>Dialogs from JFace</title>
-		<para>
+[[dialogs_purpose">
+=== Dialogs from JFace
+		
 			JFace contains several
 			frequently used dialogs which are not
 			based on the
@@ -15,23 +15,23 @@
 			a framework for
 			building custom
 			dialogs.
-		</para>
+		
 		<note>
-			<para>Even though JFace dialogs are not native, they follow the
+			Even though JFace dialogs are not native, they follow the
 				native platform semantics for things like the button
 				order.
-			</para>
+			
 		</note>
-	</section>
+	
 
-	<section id="dialogs_jfacemessagedialogstatic">
-		<title>Using the static helper methods of the JFace MessageDialog class</title>
+[[dialogs_jfacemessagedialogstatic">
+=== Using the static helper methods of the JFace MessageDialog class
 		<indexterm>
 			<primary>MessageDialog</primary>
 		</indexterm>
 
 
-		<para>
+		
 			The
 			<code>MessageDialog</code>
 			class
@@ -46,18 +46,18 @@
 			usage
 			of
 			these static methods.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialogStandardjava" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="dialogs_jfacemessagedialog">
-		<title>Using the JFace MessageDialog class directly</title>
+		
+	
+[[dialogs_jfacemessagedialog">
+=== Using the JFace MessageDialog class directly
 
-		<para>
+		
 			The
 			<code>MessageDialog</code>
 			class also allows the customization of the
@@ -65,51 +65,44 @@
 			The
 			following code demonstrates its
 			usage.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialog.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>If you open this dialog, it looks similar to the following
+		If you open this dialog, it looks similar to the following
 			screenshot.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jface_customdialog10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>JFace own dialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
+		
+		
 			Several of these dialogs return the user selection, e.g.
 			the
 			<code>openConfirm()</code>
 			method returns
 			true if the user selected the
-			<guilabel>OK</guilabel>
+			_OK_
 			button.
 			The following example code prompts the user for confirmation
 			and handles the result.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MessageDialog1.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="dialogs_jface_errordialog">
-		<title>ErrorDialog</title>
+		
+	
+[[dialogs_jface_errordialog">
+=== ErrorDialog
 		<indexterm>
 			<primary>ErrorDialog</primary>
 		</indexterm>
-		<para>
+		
 			The
 			<code>ErrorDialog</code>
 			class can be used
@@ -122,39 +115,32 @@
 			added, which shows or hides this information when
 			pressed by the
 			user.
-		</para>
-		<para>
+		
+		
 			The following snippet shows a handler class which
 			uses this
 			dialog.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/ShowErrorDialogHandler.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>If you trigger this handler, the dialog shows the exception
+		If you trigger this handler, the dialog shows the exception
 			messages and the detail page contains the stacktrace,
 			as depicted in
 			the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/errordialog_jface10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>ErrorDialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="tutorialjface_owndialog">
-		<title>Creating a custom dialog</title>
-		<para>
+		
+		
+image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
+		
+	
+[[tutorialjface_owndialog">
+=== Creating a custom dialog
+		
 			The
 			<code>org.eclipse.jface.dialogs.Dialog</code>
 			class can be extended to create your own
@@ -167,8 +153,8 @@
 			and
 			<guibutton>Cancel</guibutton>
 			button (or other custom buttons).
-		</para>
-		<para>
+		
+		
 			Your class needs to implement the
 			<code>createDialogArea()</code>
 			method. This method gets a
@@ -181,45 +167,38 @@
 			<code>Composite</code>
 			to which you can add your controls. This is demonstrated by the
 			following example code.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyDialog.java" />
 			</programlisting>
-		</para>
+		
 		<tip>
-			<para>
+			
 				The example code demonstrates how to set the title of your custom
 				dialog via the
 				<code>configureShell()</code>
 				method.
-			</para>
+			
 		</tip>
-		<para>If you open this dialog it looks similar to the following
+		If you open this dialog it looks similar to the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jface_customdialog02.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Custom dialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::jface_customdialog02.png[Custom dialog,pdfwidth=60%]
+		
+	
 
-	<section id="tutorialjface_userdefined">
-		<title>TitleAreaDialog</title>
-		<para>
+[[tutorialjface_userdefined">
+=== TitleAreaDialog
+		
 			You can also implement your custom
 			dialog
 			based on the
 			<code>TitleAreaDialog</code>
 			class.
-		</para>
-		<para>
+		
+		
 
 			<code>TitleAreaDialog</code>
 			has a reserved space for providing feedback to the user. You can set
@@ -228,40 +207,33 @@
 			and
 			<code>setErrorMessage()</code>
 			methods.
-		</para>
-		<para>
+		
+		
 			The following example shows a custom defined
 			<code>TitleAreaDialog</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyTitleAreaDialog.java" />
 			</programlisting>
-		</para>
-		<para>This dialog is depicted in the following screenshot.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jface_customdialog20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Custom dialog</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		This dialog is depicted in the following screenshot.
+		
+image::jface_customdialog20.png[Custom dialog,pdfwidth=60%]
+		
+		
 			The usage of this dialog is demonstrated in the
 			following code
 			snippet. This code might for example be used in a
 			handler.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/OpenMyDialog.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>
+

@@ -1,5 +1,5 @@
-<section id="layout">
-	<title>Example: Using layout manager</title>
+
+	<title>Example: Using layout manager
 	
 		The following shows an example for the usage of the
 		<code>GridLayout</code>
@@ -27,5 +27,5 @@
 	Resize the window and see how the arrangement of the widgets
 		change.
 	
-</section>
+
 

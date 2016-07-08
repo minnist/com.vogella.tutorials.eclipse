@@ -1,5 +1,5 @@
-<section id="swt_tab">
-	<title>Tab order of elements</title>
+
+	<title>Tab order of elements
 	
 		You can specify the tab order of controls via the
 		<code>setTabList()</code>
@@ -20,4 +20,3 @@
 			the accessibility and to allow advanced users a quick navigation.
 		
 	</tip>
-</section>

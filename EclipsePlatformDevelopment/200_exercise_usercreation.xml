@@ -1,10 +1,10 @@
-<section id="eclipsecontribution_usersetup" role="wrapper">
-	<title>Exericse: Eclipse user creation and Gerrit server configuration</title>
 
-	<section id="eclipsecontribution_usersetup_creation">
-		<title>Create an Eclipse user account</title>
+	<title>Exericse: Eclipse user creation and Gerrit server configuration
 
-		<para>
+[[eclipsecontribution_usersetup_creation">
+=== Create an Eclipse user account
+
+		
 			To contribute to an Eclipse project you need to have valid user credentials. If you already have an Eclipse Bugzilla
 			or Eclipse
 			Forum
@@ -14,24 +14,24 @@
 			You can create a new user
 			via the
 			following:
-			<ulink url="https://dev.eclipse.org/site_login/createaccount.php">
+			https://dev.eclipse.org/site_login/createaccount.php">
 				Create Eclipse.org user account
-			</ulink>
+			
 			.
-		</para>
-	</section>
-	<section id="eclipsecontribution_usersetup_cla">
-		<title>Sign the Contributor License Agreement (CLA)</title>
-		<para>You also need to confirm to the Eclipse foundation that you have the right to contribute your code to
+		
+	
+[[eclipsecontribution_usersetup_cla">
+=== Sign the Contributor License Agreement (CLA)
+		You also need to confirm to the Eclipse foundation that you have the right to contribute your code to
 			the Eclipse
 			open source project. This requires that you sign a
 			contributor
 			license
 			agreement (CLA) via a web interface. Signing is
 			really simple and only takes a few minutes.
-		</para>
+		
 
-		<para>
+		
 			The Eclipse CLA
 			FAQ describes the process and purpose of the CLA. At
 			the end this
@@ -42,56 +42,49 @@
 			CLA. You find it
 			under the
 			following URL:
-			<ulink url="http://www.eclipse.org/legal/clafaq.php">Eclipse CLA FAQ</ulink>
+			http://www.eclipse.org/legal/clafaq.php">Eclipse CLA FAQ
 			.
-		</para>
+		
 		<tip>
-			<para> In case
+			 In case
 				you contribute to the Eclipse open source project
 				during your work time, ensure that your employer
 				agrees that the
 				code can
 				be contributed.
-			</para>
+			
 		</tip>
-	</section>
+	
 
-	<section id="eclipsegerrit_configuration_user">
-		<title>Configure your Eclipse Gerrit user</title>
-		<para>
+[[eclipsegerrit_configuration_user">
+=== Configure your Eclipse Gerrit user
+		
 			You need to configure Gerrit if you want to use SSH or HTTPS to upload your contributions. The Gerrit user is
 			NOT the same as your Eclipse user. Also, the
 			Gerrit HTTPS password is NOT
 			the same as your
 			Eclipse user password.
-		</para>
-		<para>
+		
+		
 			To configure your access
 			method
 			open the
 			following
 			URL:
-			<ulink url="https://git.eclipse.org/r/">Gerrit at Eclipse</ulink>
+			https://git.eclipse.org/r/">Gerrit at Eclipse
 			and login with your Eclipse account (registered email address) and
 			password via the top right corner of your browser.
-		</para>
-		<para>
+		
+		
 			Afterwards
 			select
-			<guilabel>Settings</guilabel>
+			_Settings_
 			as highlighted in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritsettings10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit settings for Eclipse</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::eclipsegerritsettings10.png[Gerrit settings for Eclipse,pdfwidth=60%]
+		
+		
 			You can either use SSH or HTTPS to push to Gerrit. See
 			<xref linkend="eclipsegerrit_configuration_https" />
 			for the
@@ -105,34 +98,27 @@
 			company is using a proxy,
 			you may have to use HTTPS as some proxies block SSH.
 
-		</para>
-	</section>
+		
+	
 
 
-	<section id="eclipsegerrit_configuration_https">
-		<title>Authentication via HTTPS</title>
-		<para>
+[[eclipsegerrit_configuration_https">
+=== Authentication via HTTPS
+		
 			The web page of the Gerrit review system enables you to generate an HTTP password.
 			Select the
-			<guilabel>HTTP password</guilabel>
+			_HTTP password_
 			in the Gerrit user settings
 			and generate a password. This setting is
 			depicted in the
 			following screenshot (the password
 			is obfuscated).
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/gerrit_eclipsehttps.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse Gerrit HTTPS access</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Take note or copy the password, as it will be needed to push your changes
+		
+image::gerrit_eclipsehttps.png[Eclipse Gerrit HTTPS access,pdfwidth=60%]
+		
+		Take note or copy the password, as it will be needed to push your changes
 			to
 			the Eclipse Gerrit system. In
 			contrast to SSH, when
@@ -141,30 +127,23 @@
 			later if you
 			forgot
 			the password.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="eclipsegerrit_configuration_ssh">
-		<title>Authentication via SSH</title>
-		<para>
+[[eclipsegerrit_configuration_ssh">
+=== Authentication via SSH
+		
 			You need to upload your SSH key to the Gerrit installation so that
 			you
 			can push
 			changes to Gerrit via SSH. Once you have created a SSH key pair, upload your public SSH key
 			to Gerrit to be able to push to it.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritsettings30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Upload SSH key</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::eclipsegerritsettings30.png[Upload SSH key,pdfwidth=60%]
+		
+	
 
-</section>
+

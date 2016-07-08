@@ -1,12 +1,12 @@
-<section id="exportproblems" role="wrapper">
-	<title>Common product export problems</title>
-	<section id="exportproblems_analysis">
-		<title>Problems with the export and log files</title>
+
+	<title>Common product export problems
+[[exportproblems_analysis">
+=== Problems with the export and log files
 		<indexterm>
 			<primary>Log file</primary>
 			<secondary>Exported RCP application</secondary>
 		</indexterm>
-		<para>
+		
 			During the export or the start of the exported application you may
 			encounter
 			problems. If your application got successfully exported but
@@ -18,20 +18,20 @@
 			<filename>configuration</filename>
 			folder of your application. This file contains the error you
 			encountered.
-		</para>
-		<para>Alternatively the export process may fail. In both cases you can
+		
+		Alternatively the export process may fail. In both cases you can
 			use
 			this chapter as reference to try to find and fix the reason for
 			the failure.
-		</para>
-	</section>
-	<section id="exportproblems_mainproblem">
+		
+	
+[[exportproblems_mainproblem">
 		<indexterm>
 			<primary>Deployment</primary>
 			<secondary>Common problems</secondary>
 		</indexterm>
-		<title>Export problem number #1: export folder is not empty</title>
-		<para>
+=== Export problem number #1: export folder is not empty
+		
 			The most common problem is that the folder to which you export
 			is not
 			empty.
@@ -40,17 +40,17 @@
 			is empty. Exporting twice to the same folder may create file locks
 			or
 			results in error messages reporting version conflicts.
-		</para>
-	</section>
-	<section id="exportproblems_checklist">
-		<title>Checklist for common export problems</title>
-		<para>
+		
+	
+[[exportproblems_checklist">
+=== Checklist for common export problems
+		
 			If the export encounters a problem please have a look into the
 			following table
 			for a solution:
 
 			<table frame='all'>
-				<title>Problems with the product export</title>
+		=== Problems with the product export
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -76,7 +76,7 @@
 								launcher
 								artifacts" in
 								your .product file on the
-								<guilabel>Overview</guilabel>
+								_Overview_
 								tab.
 							</entry>
 						</row>
@@ -146,9 +146,9 @@
 							<entry>Service could not be found or injected</entry>
 							<entry>
 								Make sure that the bundle which provides the service has the
-								<guilabel>Activate this plug-in when one of its classes is
+								_Activate this plug-in when one of its classes is
 									loaded
-								</guilabel>
+								_
 								flag set. Also
 								make
 								sure
@@ -156,7 +156,7 @@
 								<code>org.eclipse.equinox.ds</code>
 								bundle
 								is started automatically with a
-								<guilabel>Start Level</guilabel>
+								_Start Level_
 								less than 4.
 							</entry>
 						</row>
@@ -186,6 +186,5 @@
 				</tgroup>
 			</table>
 
-		</para>
-	</section>
-</section>
+		
+	

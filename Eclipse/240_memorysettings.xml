@@ -1,7 +1,7 @@
-<section id="startingeclipse" role="wrapper">
-	<title>Eclipse command line configuration</title>
-	<section id="eclipse_memorysettings">
-		<title>Eclipse memory and performance settings</title>
+
+	<title>Eclipse command line configuration
+[[eclipse_memorysettings">
+=== Eclipse memory and performance settings
 		<indexterm>
 			<primary>Memory settings for the Eclipse IDE</primary>
 		</indexterm>
@@ -14,7 +14,7 @@
 			</secondary>
 		</indexterm>
 
-		<para>
+		
 			Your Eclipse installation contains a file called
 			<filename>eclipse.ini</filename>
 			which allows you to configure the memory parameters for the
@@ -28,8 +28,8 @@
 			get.
 			<parameter>-Xms</parameter>
 			defines the initial heap size of the Java virtual machine.
-		</para>
-		<para>
+		
+		
 			The following listing shows an example
 			<filename>eclipse.ini</filename>
 			file. The parameters after -vmargs configure the Java virtual
@@ -39,16 +39,16 @@
 			the Java
 			virtual
 			machine is a good practice to run Eclipse faster.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/eclipse.ini_memory" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			You can in additional also turn of
-			<wordasword>class verification</wordasword>
+			_class verification_
 			in the JVM. This avoids that the JVM checks if the class data which are loaded is not
 			corrupt or
 			invalid.
@@ -61,27 +61,27 @@
 			<parameter>-Xverify:none option</parameter>
 			option
 			on your JVM.
-		</para>
+		
 		<note>
-			<para>
+			
 				These options can also be specified per invocation of the Eclipse IDE, e.g., for desktop shortcuts. For example
 				to
 				start Eclipse with 2GB of memory, use the following command line:
 				<code>./eclipse -vmargs -Xmx2024m</code>
 				.
-			</para>
+			
 		</note>
 
-	</section>
-	<section id="workspace_parameter">
-		<title>Eclipse startup parameters</title>
+	
+[[workspace_parameter">
+=== Eclipse startup parameters
 		<indexterm>
 			<primary>Launch parameter</primary>
 		</indexterm>
 		<indexterm>
 			<primary>Startup configuration</primary>
 		</indexterm>
-		<para>
+		
 			Eclipse allows you to configure it via
 			startup
 			parameters. This
@@ -90,12 +90,12 @@
 			line or that you
 			configure your launcher links to include these
 			parameters.
-		</para>
-		<para>
+		
+		
 			The following table shows important parameters.
 
 			<table frame='all'>
-				<title>Workspace startup parameters</title>
+		=== Workspace startup parameters
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -126,38 +126,37 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>
+		
 			For example, if you want to start Eclipse under Microsoft
 			Windows
 			using
 			the
 			<filename>c:\temp</filename>
 			directory as
-			<wordasword>workspace</wordasword>
+			_workspace_
 			,
 			you can start Eclipse via the following command
 			from the
 			command line.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/workspace.txt" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Depending on your platform, you may have to put the path name
 			into
 			double quotes.
-		</para>
+		
 		<note>
-			<para>
+			
 				You find all available runtime options in the
-				<ulink url="http://help.eclipse.org/">Eclipse help</ulink>
+				http://help.eclipse.org/">Eclipse help
 				if you search for the "Eclipse runtime options" term.
-			</para>
+			
 		</note>
-	</section>
-</section>
+	

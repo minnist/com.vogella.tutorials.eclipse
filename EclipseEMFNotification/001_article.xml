@@ -13,7 +13,7 @@ Version 0.3, 06.07.2016
 
 
 
-		<title>Eclipse Modeling Framework (EMF) -  Notifications and Adapters - Tutorial</title>
+=== Eclipse Modeling Framework (EMF) -  Notifications and Adapters - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,17 +30,17 @@ Version 0.3, 06.07.2016
 		<pubdate>19.03.2014</pubdate>
 
 		<releaseinfo>
-			<para>Version 0.2</para>
+			Version 0.2
 		</releaseinfo>
 
 		
 
 		<abstract id="abstract"><?dbhtml-include href="../../web/vgwort/EclipseEMF"?>
-			<title>Eclipse Adapters and Notification</title>
-			<para>
+	=== Eclipse Adapters and Notification
+			
 				This article describes the notification functionality of
 				Eclipse EMF.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

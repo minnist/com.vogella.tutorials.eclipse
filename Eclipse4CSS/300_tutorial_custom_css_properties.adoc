@@ -24,8 +24,8 @@ Add the following CSS to your CSS file, which is used in your application plug-i
 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/user_profile_widget.css"/>
 	</programlisting>
 
-	</section>
-	<section id="css_switching2">
+	
+[[css_switching2">
 <title>Create the user profile widget
 In order to learn how to implement customizations for CSS we also need a custom widget,
 	which should be styled. So we implement a really simple custom widget, which is a
@@ -45,8 +45,8 @@ In order to test this widget you can place it on a new part in your application 
 	tooltip as it is depicted in the screenshot above.
 Afterwards you should set a certain header-text, an image and a description-text to
 	the `UserProfileWidget`.
-	</section>
-	<section id="css_switching3">
+	
+[[css_switching3">
 <title>Adding the org.eclipse.e4.ui.css.core.propertyHandler extension point
 Select the _Extensions_ tab in the editor for the
 _plugin.xml_ file and add the
@@ -175,7 +175,7 @@ scale="40"/>
 </imageobject>
 	</mediaobject>
 
-	</section>
+	
 	<section>
 <title>Adding the org.eclipse.e4.ui.css.core.elementProvider extension point
 Now the second and last extension point has to be added:
@@ -214,8 +214,8 @@ The `UserProfileWidgetElementProvider` class we just created by clicking the
 In this `IElementProvider` implementation we return the
 `UserProfileElementAdapter`, which we previously defined, when we
 	attached this adapter to the `propertyHandler`.
-	</section>
-	<section id="css_switching_validate">
+	
+[[css_switching_validate">
 <title>Validating
 Now we can check, if our custom CSS definitions are applied to the
 `UserProfileWidget`. Make sure that you have done all the steps and then
@@ -235,5 +235,4 @@ You have configured the
 	correctly
 	</listitem>
 </itemizedlist>
-	</section>
-</section>
+	

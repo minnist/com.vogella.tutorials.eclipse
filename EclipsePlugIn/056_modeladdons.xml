@@ -1,9 +1,9 @@
-<section id="modeladdons">
-	<title>Adding model addons to 3.x based applications</title>
-	<para>
+
+	<title>Adding model addons to 3.x based applications
+	
 		Similar to
 		<xref linkend="e4commandsin3x" />
 		you can add model add-ons to your Eclipse 3.x application. This allows you to register for the event service.
-	</para>
+	
 
-</section>
+

@@ -1,25 +1,25 @@
-<section id="team_rebase">
-	<title>Rebasing a branch onto another branch via Eclipse</title>
+
+	<title>Rebasing a branch onto another branch via Eclipse
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>rebase
 		</secondary>
 	</indexterm>
-	<para>
+	
 		The
-		<guilabel>Git Repositories</guilabel>
+		_Git Repositories_
 		view
 		allows you to rebase your currently checkout branch onto another
 		branch.
 
 		Right-click on a
 		repository node and select
-		<menuchoice>
+		menu:
 			<guimenu>Rebase</guimenu>
 		</menuchoice>
 		as depicted in the following screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_rebase10.png"/>
@@ -28,11 +28,11 @@
 				<phrase>Rebase in EGit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>In the following dialog you can select the branch onto which you
+	
+	In the following dialog you can select the branch onto which you
 		want to rebase.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_rebase20.png"/>
@@ -41,39 +41,39 @@
 				<phrase>Rebase in EGit, selecting the branch for rebase</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 	<tip>
-		<para>
+		
 			You can also select the branch to rebase onto from the
-			<guilabel>Branches</guilabel>
+			_Branches_
 			node of the tree directly.
-		</para>
+		
 	</tip>
-	<para>
+	
 		If the rebase was successful a dialog is shown. You have to resolve
 		rebase conflicts if they occur. After resolving them, select
-		<menuchoice>
+		menu:
 			<guimenu>Rebase</guimenu>
 			<guisubmenu>Continue</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-	<para>
+	
+	
 		If you want to skip the conflicting commit and continue with the
 		rebase operation use
-		<menuchoice>
+		menu:
 			<guimenu>Rebase</guimenu>
 			<guisubmenu>Skip</guisubmenu>
 		</menuchoice>
 		.
 
-	</para>
-	<para>
+	
+	
 		To cancel the rebase operation select
-		<menuchoice>
+		menu:
 			<guimenu>Rebase</guimenu>
 			<guisubmenu>Abort</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-</section>
+	
+

@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 - Defining custom annotations and extended object suppliers for dependency injection -
-			Tutorial</title>
+=== Eclipse 4 - Defining custom annotations and extended object suppliers for dependency injection -
+			Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -33,14 +33,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>03.09.2015</pubdate>
 		<releaseinfo>
-			<para>Version 6.4</para>
+			Version 6.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Defining and using custom annotations in Eclipse 4 for dependency injection.</title>
-			<para> This tutorial explains how to create and evaluate your own
+	=== Defining and using custom annotations in Eclipse 4 for dependency injection.
+			 This tutorial explains how to create and evaluate your own
 				annotations in Eclipse 4 for the purpose of dependency injection.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

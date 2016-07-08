@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse SWT and JFace dialogs -
-			Tutorial</title>
+=== Eclipse SWT and JFace dialogs -
+			Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -28,17 +28,17 @@ Version 0.3, 06.07.2016
 		<pubdate>23.07.2013</pubdate>
 
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 
 		
 		<abstract id="abstract">
-			<title>Eclipse Dialog</title>
-			<para> This article describes the different kind of dialogs which can
+	=== Eclipse Dialog
+			 This article describes the different kind of dialogs which can
 				be used in Eclipse plug-in development. This tutorial is
 				based on
 				Eclipse 4.6	(Eclipse Neon).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

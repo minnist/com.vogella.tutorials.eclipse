@@ -1,5 +1,5 @@
-<section id="e4_customannotations">
-	<title>Custom annotations</title>
+
+	<title>Custom annotations
 
 	<indexterm>
 		<primary>Annotations</primary>
@@ -7,10 +7,10 @@
 	</indexterm>
 
 
-	<section id="e4_customannotations1">
-		<title>Custom annotations in Eclipse</title>
+[[e4_customannotations1">
+=== Custom annotations in Eclipse
 
-		<para>
+		
 			The Eclipse platform uses dependency injection as the primary
 			programming model. This mechanism is
 			extensible with
@@ -19,23 +19,23 @@
 			The following code demonstrates how you can define your
 			custom
 			annotation.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/DirectTodo.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="e4_customannotations2">
-		<title>Define an annotation processor via an OSGi service</title>
+[[e4_customannotations2">
+=== Define an annotation processor via an OSGi service
 		<indexterm>
 			<primary>ExtendedObjectSupplier</primary>
 		</indexterm>
 
-		<para>
+		
 			To process these custom annotations
 			you can register an
 			OSGi
@@ -49,10 +49,10 @@
 			<property>dependency.injection.annotation</property>
 			property the annotation for which the service is
 			responsible.
-		</para>
+		
 
 
-		<para>
+		
 			After this registration the
 			Eclipse framework
 			calls
@@ -60,8 +60,8 @@
 			annotation
 			processor if it encounters
 			the configured annotation.
-		</para>
-		<para>
+		
+		
 			The following snippet shows an example
 			<filename>DirectTodoSupplier.xml</filename>
 			file which registers an
@@ -69,16 +69,16 @@
 			for the
 			<code>DirectTodo</code>
 			annotation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/DirectTodoSupplier.adoc[]
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			The annotation processor registered via the
 			<filename>DirectTodoSupplier.xml</filename>
 			file returns an object. The
@@ -92,12 +92,11 @@
 			class, in case a proper id is passed to the
 			<code>DirectTodo</code>
 			annotation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/DirectTodoObjectSupplier.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	

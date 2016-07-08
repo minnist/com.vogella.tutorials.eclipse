@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 event system (EventAdmin) - Tutorial</title>
+=== Eclipse 4 event system (EventAdmin) - Tutorial
 		<subtitle>Building Eclipse RCP applications based on Eclipse 4
 		</subtitle>
 		<author>
@@ -35,15 +35,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>01.12.2015</pubdate>
 		<releaseinfo>
-			<para>Version 6.4</para>
+			Version 6.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Using the Eclipse event system within your application</title>
-			<para> This tutorial gives an overview about the event system of the
+	=== Using the Eclipse event system within your application
+			 This tutorial gives an overview about the event system of the
 				Eclipse
 				application platform.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

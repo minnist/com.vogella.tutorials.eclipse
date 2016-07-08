@@ -1,20 +1,20 @@
-<section id="egit_pacakgeexplorerdeco" role="wrapper">
-	<title>Git integration into the Package and the Project Explorer</title>
+
+	<title>Git integration into the Package and the Project Explorer
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>Package Explorer integration
 		</secondary>
 	</indexterm>
-	<para>
+	
 		The
-		<guilabel>Package Explorer</guilabel>
+		_Package Explorer_
 		view
 		shows indicators on the files to show their status. The most
 		important
 		icon decorators are depicted in the following screenshot.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/jdt_packageexplorer_icondecu10.png"
@@ -24,13 +24,13 @@
 				<phrase>Icon decorator</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		The file name describes the state of the file from the following
 		table:
 
 		<table frame='all'>
-			<title>Git label decorations</title>
+	=== Git label decorations
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
@@ -84,7 +84,7 @@
 							file has been
 							stored in the git database. This status is the same
 							as the
-							<wordasword>staged</wordasword>
+							_staged_
 							status,
 							but the file wasn't under Git version control before.
 						</entry>
@@ -103,8 +103,8 @@
 			</tgroup>
 		</table>
 
-	</para>
-	<para>A combination of the staged and dirty status means: some parts
+	
+	A combination of the staged and dirty status means: some parts
 		of
 		the changed
 		file have been staged while some are still unstaged.
@@ -119,8 +119,8 @@
 		the compare
 		editor opened by double clicking files in the staging
 		view.
-	</para>
-	<para>
+	
+	
 		On a project level the explorer
 		view
 		adds the
@@ -140,9 +140,9 @@
 		ahead or behind the
 		remote branch
 		it is tracking.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/jdt_packageexplorer_icondecu20.png"
@@ -152,5 +152,5 @@
 				<phrase>Git icon decorator in the Package Explorer</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-</section>
+	
+

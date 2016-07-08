@@ -1,18 +1,18 @@
-<section id="active_sample_event">
-	<title>Example: the part activation event</title>
-	<para>
+
+	<title>Example: the part activation event
+	
 		A topic, which is fired by Eclipse is the
 		<code>UIEvents.UILifeCycle.ACTIVATE</code>
 		, which is fired every time a
 		part
 		is activated.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activate.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		The
 		<code>Event</code>
 		class contains properties like
@@ -25,5 +25,4 @@
 		class and its internal interfaces like
 		<code>UIEvents.EventTags</code>
 		.
-	</para>
-</section>
+	

@@ -1,12 +1,12 @@
-<section id="commandsextensionpoints">
-	<title>Introduction to commands</title>
-	<para>Eclipse IDE extensions use the commands framework to
+
+	<title>Introduction to commands
+	Eclipse IDE extensions use the commands framework to
 		contribute
 		actions to the user interface. This concept is based on
 		extension
 		points.
-	</para>
-	<para>
+	
+	
 		This description explains the usage of commands in Eclipse IDE
 		extensions. To define and use a command you have to define three
 		extensions.
@@ -15,7 +15,7 @@
 		or toolbar
 		contribution for an Eclipse plug-in.
 		<table frame='all'>
-			<title></title>
+	=== 
 
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
@@ -50,9 +50,8 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
 
 
 
-</section>

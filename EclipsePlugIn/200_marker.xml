@@ -1,29 +1,28 @@
-<section id="resourcemarker">
-	<title>Resources and Marker</title>
-	<para>
+
+	<title>Resources and Marker
+	
 		Eclipse represents Resources like
-		<wordasword>Projects</wordasword>,
-		<wordasword>Files</wordasword>,
-		<wordasword>Folders</wordasword>,
-		<wordasword>Packages</wordasword>
+		_Projects_,
+		_Files_,
+		_Folders_,
+		_Packages_
 		as
 		<code>IResource</code>
 		.
-	</para>
-	<para>
+	
+	
 		Marker represent additional information for resources,
 		e.g., an
 		error marker. Every marker can have attributes (key / value
 		combination). Markers can be displayed in the standard view, e.g., the
-		<wordasword>Task</wordasword>,
-		<wordasword>Bookmark</wordasword>
-		or the <wordasword>Problems</wordasword> view.
+		_Task_,
+		_Bookmark_
+		or the _Problems_ view.
 		To be displayed in these views,
 		you have to use predefined attributes.
-	</para>
-	<para>
+	
+	
 		The following will demonstrate how to create marker for a
 		selected resource.
-	</para>
+	
 
-</section>

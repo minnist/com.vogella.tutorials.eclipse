@@ -1,10 +1,10 @@
-<section id="tutorial_requirements">
-	<title>Exercise: Create application</title>
-	<para>
+
+	<title>Exercise: Create application
+	
 		Create an Eclipse 4 RCP application in a plug-in called
-		<wordasword>com.example.e4.rcp.wizard</wordasword>
+		_com.example.e4.rcp.wizard_
 		.
-	</para>
-</section>
+	
+
 	
 

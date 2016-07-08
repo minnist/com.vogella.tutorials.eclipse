@@ -1,12 +1,10 @@
-<section id="events">
-	<title>Event Listener</title>
+
+	<title>Event Listener
 	<indexterm>
 		<primary>SWT</primary>
 		<secondary>Event listener</secondary>
 	</indexterm>
-	<indexterm>
-		<primary>Event listener (SWT)</primary>
-	</indexterm>
+
 	
 		You can register listeners for specific events on SWT controls, e.g.,
 		a
@@ -55,16 +53,13 @@
 			naming convention:
 		
 		
-			<menuchoice>
-				<guimenu>
+			menu:
 					<parameter>Name</parameter>
 					<code>Listener</code>
-				</guimenu>
-				<guisubmenu>
+				[
 					<parameter>Name</parameter>
 					<code>Adapter</code>
-				</guisubmenu>
-			</menuchoice>
+				]
 		
 		
 			For
@@ -90,4 +85,3 @@
 		accordingly.
 	
 
-</section>

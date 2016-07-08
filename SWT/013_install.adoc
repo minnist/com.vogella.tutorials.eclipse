@@ -1,5 +1,5 @@
-<section id="swtinstall_plugin">
-	<title>Using SWT in a plug-in project</title>
+
+	<title>Using SWT in a plug-in project
 	
 		The SWT library
 		is packaged as an Eclipse
@@ -19,5 +19,5 @@
 		</programlisting>
 	
 
-</section>
+
 	

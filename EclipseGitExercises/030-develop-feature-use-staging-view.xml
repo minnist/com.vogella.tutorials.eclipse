@@ -50,16 +50,11 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 			(only available if FindBugs is installed in your Eclipse).
 		
 	
-	<section id="_open_the_git_staging_view_and_inspect_the_status">
-		<title>Open the Git Staging view and inspect the status
+[[_open_the_git_staging_view_and_inspect_the_status">
+=== Open the Git Staging view and inspect the status
 		
 			Open the staging view by selecting
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Other…</guisubmenu>
-				<guisubmenu>Git Staging</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Other… > Git Staging]
 			.
 			This view presents which files you have touched and which files will be
 			in the

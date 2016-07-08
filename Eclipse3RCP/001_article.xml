@@ -13,7 +13,7 @@ Version 0.3, 06.07.2016
 
 
 
-		<title>Eclipse RCP based on the 3.x API - Tutorial</title>
+=== Eclipse RCP based on the 3.x API - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -36,10 +36,10 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse RCP</title>
-			<para> This tutorial describes how to develop Eclipse RCP
+	=== Eclipse RCP
+			 This tutorial describes how to develop Eclipse RCP
 				applications with Eclipse 3.x API.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

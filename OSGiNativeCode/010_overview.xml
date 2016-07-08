@@ -1,6 +1,6 @@
-<section id="osgi_nativecode">
-	<title>Using native code in OSGI</title>
-	<para>
+
+	<title>Using native code in OSGI
+	
 		OSGi provides support for resolving and loading shared libraries in Java applications. A plug-in
 		can
 		specify these
@@ -12,33 +12,33 @@
 		header value is then used when loading a DLL through the
 		<code>System.loadLibrary()</code>
 		method call.
-	</para>
-	<para>
+	
+	
 
 		While you could use native code without this header, its usage has two advantages.
 
 		<itemizedlist>
 			<listitem>
-				<para>a plug-in does not resolve if there is no matching clause for the current platform. If you don’t include the
+				a plug-in does not resolve if there is no matching clause for the current platform. If you don’t include the
 					optional specifier (the trailing asterisk), this avoids an
 					UnsatisfiedLinkError.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para> OSGi resolves the library name, e.g., "mydll" to the appropriate DLLs for the platform,
+				 OSGi resolves the library name, e.g., "mydll" to the appropriate DLLs for the platform,
 					and
 					manages
 					the loading
 					and unloading of the shared library
-				</para>
+				
 			</listitem>
 
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 		To make your native library available you have to load it via a call of
 		<code>System.libraryLoad()</code>
 		, OSGi handles shared libraries lazy, e.g., it does not eagerly load them.
-	</para>
+	
 
-</section>
+

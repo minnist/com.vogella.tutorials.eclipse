@@ -1,14 +1,13 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
-	<section id="resources_eclipsecommands">
-		<title>Eclipse Help Resources</title>
-		<para>
+[[resources_eclipsecommands">
+=== Eclipse Help Resources
+		
 			<ulink
-				url="http://www.eclipse.org/articles/article.php?file=Article-AddingHelpToRCP/index.html"> Adding Help Support to a Rich Client Platform (RCP) Application</ulink>
-		</para>
+				url="http://www.eclipse.org/articles/article.php?file=Article-AddingHelpToRCP/index.html"> Adding Help Support to a Rich Client Platform (RCP) Application
+		
 
 
-	</section>
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-</section>

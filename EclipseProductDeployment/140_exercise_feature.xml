@@ -1,104 +1,86 @@
-<section id="exericse_productfeatures" role="wrapper">
-	<title>Exercise: Export your product</title>
 
-	<section id="tutorial_exportproduct5">
-		<title>Create a feature project for your generated RCP application</title>
+	<title>Exercise: Export your product
 
-		<para>
+[[tutorial_exportproduct5">
+=== Create a feature project for your generated RCP application
+
+		
 			Create a new feature project called
-			<wordasword>com.example.e4.rcp.wizard.feature</wordasword>
+			_com.example.e4.rcp.wizard.feature_
 			via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Feature Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in Development > Feature Project]
 			. The following screenshot shows the first wizard page.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/createfeature10.png" />
+		
+		
+image::createfeature10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating a feature</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Creating a feature,pdfwidth=60%]
+		
+		
 			Press
-			<guilabel>Finish</guilabel>
+			_Finish_
 			on this first wizard page. This leaves the plug-in selection empty,
 			you fill
 			that in the next
 			part of this exercise.
-		</para>
+		
 
-	</section>
-	<section id="tutorial_exportproduct_includeplugin">
-		<title>Include your plug-in into the feature project</title>
-		<para>
+	
+[[tutorial_exportproduct_includeplugin">
+=== Include your plug-in into the feature project
+		
 			Include the
 			<code>com.example.e4.rcp.wizard</code>
 			plug-in into the new feature. For this open the
 			<filename>feature.xml</filename>
 			file, select the
-			<guilabel>Plug-ins</guilabel>
+			_Plug-ins_
 			tab and press the
 			<guibutton>Add...</guibutton>
 			button.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/createfeature20.png" />
+		
+image::createfeature20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Include plug-in into a feature</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="tutorial_exportproduct6">
-		<title>Change the product configuration file to use features</title>
+					<phrase>Include plug-in into a feature,pdfwidth=60%]
+		
+	
+[[tutorial_exportproduct6">
+=== Change the product configuration file to use features
 
 
-		<para>
+		
 			Open your product configuration file and select the
-			<guilabel>Overview</guilabel>
+			_Overview_
 			tab. Select the option that it is based
 			on
 			features as depicted in the
 			following
 			screenshot.
 
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tuturiale4_featurewizard10.png" />
+		
+		
+image::tuturiale4_featurewizard10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Switching to features in the product configuration file.</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="tutorial_exportproduct7">
-		<title>Add the features as content to your product</title>
-		<para>
+					<phrase>Switching to features in the product configuration file.,pdfwidth=60%]
+		
+	
+[[tutorial_exportproduct7">
+=== Add the features as content to your product
+		
 			Switch to the
-			<guilabel>Contents</guilabel>
+			_Contents_
 			tab in your product editor. Add the
-			<wordasword>com.example.e4.rcp.wizard.feature</wordasword>
+			_com.example.e4.rcp.wizard.feature_
 			feature to your product with the
 			<guibutton>Add...</guibutton>
 			button.
-		</para>
-		<para>
+		
+		
 			Afterwards add the
 			<code>org.eclipse.e4.rcp</code>
 			feature and press the
@@ -106,32 +88,28 @@
 			button to add the dependencies of the
 			<code>org.eclipse.e4.rcp</code>
 			feature to the product.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tuturiale4_featurewizard20.png" />
+		
+		
+image::tuturiale4_featurewizard20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Switching to features in the product configuration file.</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>Ensure that you have the four
+					<phrase>Switching to features in the product configuration file.,pdfwidth=60%]
+		
+		Ensure that you have the four
 			features from the screenshot included
 			in
 			your
 			product.
-		</para>
-	</section>
+		
+	
 
 
-	<section id="tutorial_exportproduct8">
-		<title>Start the application via the product</title>
-		<para>Start your application via the product configuration file and
+[[tutorial_exportproduct8">
+=== Start the application via the product
+		Start your application via the product configuration file and
 			ensure that the application starts correctly.
-		</para>
-		<para>If the application does not start, check that you
+		
+		If the application does not start, check that you
 			have included all four
 			features and that you start your
 			application via the product configuration and NOT with an existing launch
@@ -139,9 +117,9 @@
 			to
 			ensure that your new product
 			configuration is used.
-		</para>
+		
 
-	</section>
-</section>
+	
+
 	
 

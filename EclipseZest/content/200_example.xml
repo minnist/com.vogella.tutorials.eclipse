@@ -1,8 +1,8 @@
-<section id="zestfirst">
-	<title>Your first Zest Project</title>
-	<section id="zestfirst_started">
-		<title>Getting started</title>
-		<para>
+
+	<title>Your first Zest Project
+[[zestfirst_started">
+=== Getting started
+		
 			Create a new Eclipse RCP application "de.vogella.zest.first".
 			Use
 			the
@@ -12,46 +12,43 @@
 			and "org.eclipse.zest.layouts" as
 			dependencies
 			to your MANIFEST.MF.
-	</para>
+	
 
-		<para>Change the code of "View.java" to the following. This code
-			creates a simple graph and connects its elements.</para>
-		<para>
+		Change the code of "View.java" to the following. This code
+			creates a simple graph and connects its elements.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/first/View.java" />
 			</programlisting>
-		</para>
-		<para> Run you application and you should see the graph. </para>
+		
+		 Run you application and you should see the graph. 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/simple10.gif" />
+		
+image::simple10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="zestfirst_commands">
-		<title>Select layout manager via a command</title>
-		<para>
+		
+	
+[[zestfirst_commands">
+=== Select layout manager via a command
+		
 			Create a
-			<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html"> command</ulink>
+			http://www.vogella.com/tutorials/EclipseCommands/article.html"> command
 			with the following default handler
 			"de.vogella.zest.first.handler.ChangeLayout" which will change
 			the
 			layout for the graph. Assign the command to the menu.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/first/ChangeLayout.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>Run your application, if you select your command the layout of
-			your view should change.</para>
-	</section>
+		Run your application, if you select your command the layout of
+			your view should change.
+	
 
-</section>

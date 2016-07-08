@@ -12,9 +12,9 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Migrating Eclipse 3.x plug-ins and RCP applications to Eclipse
+=== Migrating Eclipse 3.x plug-ins and RCP applications to Eclipse
 			4 - Tutorial
-		</title>
+		
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,13 +31,13 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>08.03.2015</pubdate>
 		<releaseinfo>
-			<para>Version 6.1</para>
+			Version 6.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Migrating Eclipse 3.x components and applications to Eclipse 4
-			</title>
-			<para> This tutorial gives an overview on how to migrate Eclipse
+	=== Migrating Eclipse 3.x components and applications to Eclipse 4
+			
+			 This tutorial gives an overview on how to migrate Eclipse
 				components and application based on the Eclipse 3.x application
 				model to Eclipse 4. This also includes using the
 				compatibility
@@ -46,7 +46,7 @@ Version 0.3, 06.07.2016
 				Eclipse platform to run plug-ins
 				based on the Eclipse
 				3.x API.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

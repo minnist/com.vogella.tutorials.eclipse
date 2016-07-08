@@ -1,13 +1,13 @@
-<section id="services" role="wrapper">
-	<title>Eclipse platform services</title>
-	<section id="services_what">
-		<title>What are Eclipse platform services?</title>
+
+	<title>Eclipse platform services
+[[services_what">
+=== What are Eclipse platform services?
 
 		<indexterm>
 			<primary>Eclipse services</primary>
 		</indexterm>
 
-		<para>Services are software
+		Services are software
 			components (based on an interface or a
 			class)
 			which provide functionality.
@@ -18,9 +18,9 @@
 			can access these services via
 			dependency
 			injection.
-		</para>
+		
 
-		<para>
+		
 			To use an Eclipse service you
 			specify
 			the service dependency via an
@@ -28,28 +28,28 @@
 			annotation and the Eclipse framework injects this component into
 			your
 			object.
-		</para>
-		<para>
+		
+		
 			The typical naming convention for Eclipse service interfaces is to
 			start
 			with an
-			<wordasword>E</wordasword>
+			_E_
 			and end with
-			<wordasword>Service</wordasword>
+			_Service_
 			e.g.
-			<wordasword>E*Service</wordasword>
+			_E*Service_
 			.
-		</para>
-	</section>
-	<section id="services_list">
-		<title>Overview of the available platform services</title>
-		<para>
+		
+	
+[[services_list">
+=== Overview of the available platform services
+		
 			The following table gives an overview of the most important available
 			platform
 			services.
 
 			<table frame='all'>
-				<title>Platform services</title>
+		=== Platform services
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="2*" />
 					<colspec colname='c2' colwidth="5*" />
@@ -141,12 +141,12 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-		<para>
+		
+		
 			Other available services are:
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						org.eclipse.e4.core.services.Adapter - An adapter can adapt
 						an
 						object to the specified type, allowing clients to request
@@ -156,32 +156,32 @@
 						and
 						<code>IAdapterManager</code>
 						. See the
-						<ulink url="http://wiki.eclipse.org/E4/EAS/Adapting_Objects">Adapter wiki</ulink>
+						http://wiki.eclipse.org/E4/EAS/Adapting_Objects">Adapter wiki
 						for details.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.core.services.Logger - Provides logging
+					org.eclipse.e4.core.services.Logger - Provides logging
 						functionality
-					</para>
+					
 				</listitem>
 
 				<listitem>
-					<para>
+					
 						org.eclipse.jface.window.IShellProvider - allows access to a
 						<code>Shell</code>
 						, depends on SWT.
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
 
-	</section>
 	
-	<section id="platformservice_implementation">
-    <title>How are Eclipse platform services implemented?</title>
-    <para>
+	
+[[platformservice_implementation">
+    <title>How are Eclipse platform services implemented?
+    
         Usually services
         have two parts: the interface definition and the
         implementation. How these two
@@ -195,7 +195,6 @@
         ). Please note that there can be more than one service
         implementation
         for an interface.
-    </para>
-</section>
+    
 
-</section>
+

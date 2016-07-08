@@ -1,14 +1,14 @@
-<section id="selectionservice" role="wrapper">
-	<title>Selection service</title>
-	<section id="selectedservices_selectionservice_usage">
-		<title>Usage of the selection service</title>
+
+	<title>Selection service
+[[selectedservices_selectionservice_usage">
+=== Usage of the selection service
 		<indexterm>
 			<primary>Selection services</primary>
 		</indexterm>
 		<indexterm>
 			<primary>ESelectionService</primary>
 		</indexterm>
-		<para>
+		
 			The
 			<code>ESelectionService</code>
 			service allows you to retrieve and set the global
@@ -20,43 +20,43 @@
 			active
 			selection
 			directly.
-		</para>
-		<para>
+		
+		
 			A
 			client
 			can get
 			the selection service via:
 			<code>@Inject ESelectionService</code>
 			.
-		</para>
+		
 		<tip>
-			<para>
+			
 				The selection is window specific, i.e. stored in the context of the
 				<code>MWindow</code>
 				model object.
-			</para>
+			
 		</tip>
 
-	</section>
-	<section id="selectedservices_selectionservice_changing">
-		<title>Changing the current selection</title>
-		<para>
+	
+[[selectedservices_selectionservice_changing">
+=== Changing the current selection
+		
 			You can change the current selection with the
 			<code>setSelection()</code>
 			method of the
 			<code>ESelectionService</code>
 			class. This is demonstrated in the following code.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/servicesoverview/setSelection.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="selectedservices_selectionservice_getting">
-		<title>Getting the selection</title>
-		<para>
+		
+	
+[[selectedservices_selectionservice_getting">
+=== Getting the selection
+		
 			A client can retrieve the last selection for the current window
 			directly from the
 			<code>ESelectionService</code>
@@ -67,18 +67,18 @@
 			method allows you to retrieve the selection of a specific
 			part.
 
-		</para>
+		
 		<tip>
-			<para>
+			
 				The possibility of retrieving the selection of a part is based on
 				the
 				hierarchy of the
 				<code>IEclipseContext</code>
 				. With this hierarchy it is possible to store a selection per window
 				and also per part.
-			</para>
+			
 		</tip>
-		<para>
+		
 			It is preferred that a class which is part of the application model
 			uses dependency injection to retrieve
 			the selection. The selection is
@@ -91,20 +91,20 @@
 			selections are
 			only
 			injected if they have the fitting type.
-		</para>
+		
 
-		<para>
+		
 			The usage of the
 			<code>@Named</code>
 			annotation to retrieve the selection is demonstrated with the
 			following method.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/servicesoverview/getSelection.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-</section>
+	
+

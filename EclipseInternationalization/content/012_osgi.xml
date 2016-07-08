@@ -1,13 +1,11 @@
-<section id="i18n_osgi">
-	<title>OSGi resource bundles</title>
+
+	<title>OSGi resource bundles
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>OSGi resource bundles</secondary>
 	</indexterm>
-	<indexterm>
-		<primary>Bundle-Localization</primary>
-	</indexterm>
-	<para>
+
+	
 		For the translation of the plugin.xml and application model files the
 		Eclipse runtime uses by default OSGi
 		resource
@@ -17,9 +15,9 @@
 		files in a specified location. OSGi
 		expects at least one resource bundle in this
 		location.
-	</para>
+	
 
-	<para>
+	
 		<filename>OSGI-INF/l10n/bundle</filename>
 		is the default location and file prefix which the Eclipse translation service is using.
 		Via the
@@ -30,16 +28,16 @@
 		attribute is demonstrated in
 		the following
 		listing.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/plugin/MANIFEST.MF" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 		Alternative languages are
 		defined
 		via
@@ -56,8 +54,8 @@
 		<filename>bundle_en_UK.properties</filename>
 		.
 
-	</para>
+	
 
 
-</section>
+
 

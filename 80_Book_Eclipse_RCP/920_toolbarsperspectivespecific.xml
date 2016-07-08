@@ -1,41 +1,41 @@
 <chapter id="exercise_modeladdon_perspective">
-	<title>Optional Exercise: Make toolbar visible dependent on the perspective</title>
-	<section id="eexercise_modeladdon_idetarget">
-		<title>Target of this exercise</title>
-		<para>
+	<title>Optional Exercise: Make toolbar visible dependent on the perspective
+[[eexercise_modeladdon_idetarget">
+=== Target of this exercise
+		
 			In this exercise you develop a model add-on which allows to define that a toolbar is only visible 
 			in a certain perspective. If no tag is set, it is always visible. If a tag is set, it must identify 
 			the perspectives for which it is valid via model tags.
-		</para>
-	</section>
+		
+	
 
-	<section id="eexercise_modeladdon_idefragment">
-		<title>Creating a new class for the model add-on</title>
-		<para>Create the following new class for the model add-on.
-		</para>
-		<para>
+[[eexercise_modeladdon_idefragment">
+=== Creating a new class for the model add-on
+		Create the following new class for the model add-on.
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/addon/ToolbarsVisiblePerPerspectiveAddon.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="eexercise_modeladdon_register">
-		<title>Registering your add-on with the application model</title>
-		<para>In your application model add a new model add-on with a reference to the new class. </para>
-	</section>
-	<section id="eexercise_modeladdon_tag">
-		<title>Tagging a toolbar</title>
-		<para>In your application model tag at least one of your toolbars with the prefix "perspective:" followed by the ID of
+	
+[[eexercise_modeladdon_register">
+=== Registering your add-on with the application model
+		In your application model add a new model add-on with a reference to the new class. 
+	
+[[eexercise_modeladdon_tag">
+=== Tagging a toolbar
+		In your application model tag at least one of your toolbars with the prefix "perspective:" followed by the ID of
 			one of your perspectives.
-		</para>
-	</section>
-	<section id="exercise_modeladdon_verify">
-		<title>Verifying the model add-on</title>
-		<para>Start your application. Verify that the toolbar tagged for a certain perspective is only visible if you have
+		
+	
+[[exercise_modeladdon_verify">
+=== Verifying the model add-on
+		Start your application. Verify that the toolbar tagged for a certain perspective is only visible if you have
 			selected the corresponding perspective.
-		</para>
-	</section>
+		
+	
 
 </chapter>

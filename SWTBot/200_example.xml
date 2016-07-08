@@ -1,19 +1,19 @@
-<section id="swtbotexample" role="wrapper">
+
 	<title>Exercise: Write SWTBot test
-	<section id="swtbotexample_installation">
-		<title>Installation
+[[swtbotexample_installation">
+=== Installation
 		
 			Ensure to install SWTBot into your Eclipse IDE. See
 			<xref linkend="swtbotinstallation" />
 			for detailed information.
 		
-	</section>
-	<section id="swtbotexample_project">
-		<title>Create project
+	
+[[swtbotexample_project">
+=== Create project
 		
 			Create a new plug-in
 			called
-			<wordasword>com.example.e4.rcp.todo.uitest</wordasword>
+			_com.example.e4.rcp.todo.uitest_
 			and add the following dependencies to the
 			<filename>MANIFEST.MF</filename>
 			file:
@@ -36,9 +36,9 @@
 				</listitem>
 			</itemizedlist>
 		
-	</section>
-	<section id="swtbotexample_test">
-		<title>Create test
+	
+[[swtbotexample_test">
+=== Create test
 		
 			Write the following test class.
 		
@@ -48,15 +48,12 @@
 					parse="text" href="./examples/eclipse4/ExitHandlerTest.java" />
 			</programlisting>
 		
-	</section>
-	<section id="swtbotexample_launchconfiguration">
-		<title>Adjust launch configuration
+	
+[[swtbotexample_launchconfiguration">
+=== Adjust launch configuration
 		
 			Right-click on your test class and select
-			<menuchoice>
-				<guimenu>Run</guimenu>
-				<guisubmenu>JUnit Plug-in Test</guisubmenu>
-			</menuchoice>
+			menu:Run[JUnit Plug-in Test]
 			.
 		
 		This test run should fail or result in error messages but it
@@ -64,10 +61,7 @@
 		
 		
 			Select
-			<menuchoice>
-				<guimenu>Run</guimenu>
-				<guisubmenu>Run Configurations...</guisubmenu>
-			</menuchoice>
+			menu:Run[Run Configurations...]
 			and switch to the
 			_Main_
 			tab.
@@ -76,25 +70,20 @@
 			following screenshot.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/swtbot_startproduct10.png"
+image::swtbot_startproduct10.png"
 						scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Select the product which should be started</phrase>
-				</textobject>
-			</mediaobject>
+					<phrase>Select the product which should be started,pdfwidth=60%]
 		
-	</section>
+	
 
 
-	<section id="swtbotexample_validate">
-		<title>Validating
+[[swtbotexample_validate">
+=== Validating
 		 Run your test and verify that the test runs successfully.
 			If you
 			have used different text in your menu, adjust the test until it runs
 			successfully.
 		
-	</section>
-</section>
+	

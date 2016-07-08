@@ -1,15 +1,13 @@
-<section id="fragement_overview">
-	<title>What are fragments in OSGi?</title>
-	<indexterm>
-		<primary>Fragments</primary>
-	</indexterm>
 
-	<para>
+	<title>What are fragments in OSGi?
+
+
+	
 		A
-		<wordasword>fragment</wordasword>
+		_fragment_
 		is an optional attachment to another plug-in. This other plug-in is
 		called the
-		<wordasword>host plug-in</wordasword>
+		_host plug-in_
 		. At runtime the
 		fragment
 		is
@@ -23,13 +21,13 @@
 		optional for
 		their host
 		plug-in and the host plug-in doesn't even know that it exists.
-	</para>
-	<para>
+	
+	
 		The Eclipse IDE supports the creation of fragments via
-		<wordasword>fragment projects</wordasword>
+		_fragment projects_
 		.
 		To create a fragment project select
-		<menuchoice>
+		menu:
 			<guimenu>File</guimenu>
 			<guisubmenu>New</guisubmenu>
 			<guisubmenu>Other...</guisubmenu>
@@ -37,6 +35,5 @@
 			<guisubmenu>Fragment Project</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 
-</section>

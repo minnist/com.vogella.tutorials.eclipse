@@ -1,35 +1,34 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
-	<section id="rap_links">
-		<title>Eclipse RAP</title>
-		<para>
+[[rap_links">
+=== Eclipse RAP
+		
 			<ulink
 				url="http://www.eclipse.org/rap">
-				http://www.eclipse.org/rap</ulink>
+				http://www.eclipse.org/rap
 			Eclipse RAP homepage
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://wiki.eclipse.org/RAP">
-				http://wiki.eclipse.org/RAP</ulink>
+				http://wiki.eclipse.org/RAP
 			Eclipse RAP Wiki
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://wiki.eclipse.org/RAP_Theming">
-				http://wiki.eclipse.org/RAP_Theming</ulink>
+				http://wiki.eclipse.org/RAP_Theming
 			Eclipse RAP Theming Wiki
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/">
-				http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/</ulink>
+				http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/
 			Eclipse RAP article Part from IBU
-		</para>
+		
 
-	</section>
+	
 
-</section>

@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Extending the Eclipse IDE - Plug-in development - Tutorial</title>
+=== Extending the Eclipse IDE - Plug-in development - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,19 +31,19 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>08.03.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse Plug-ins tutorial</title>
-			<para> This article describes the creation and deployment of
+	=== Eclipse Plug-ins tutorial
+			 This article describes the creation and deployment of
 				Eclipse
 				plug-ins. The article is based on
 				Eclipse
 				4.4 (Luna)
 				and Java
 				1.6.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

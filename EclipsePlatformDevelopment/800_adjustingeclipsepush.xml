@@ -1,26 +1,26 @@
-<section id="eclipsegerritcontribution_adjustpush">
-	<title>Appendix: Cloning from the Git server and adjusting the push URL</title>
-	<section id="eclipsegerritcontribution_adjustpush1">
-		<title>Overview</title>
-		<para>
+
+	<title>Appendix: Cloning from the Git server and adjusting the push URL
+[[eclipsegerritcontribution_adjustpush1">
+=== Overview
+		
 			If you cloned an Eclipse Git repository directly from the Eclipse Git
 			server (without using the Gerrit server) you
 			have to adjust the push
 			URL to create Gerrit changes. For example, you may have found the
 			clone URL on:
-			<ulink url="https://git.eclipse.org/c/">Eclipse Git web interface</ulink>
+			https://git.eclipse.org/c/">Eclipse Git web interface
 			.
-		</para>
+		
 
-		<para>
+		
 			It is far easier to clone from the Gerrit server as this does not
 			require you to change the push URL. See
 			<xref linkend="eclipsegerritcontribution_cloneviagerrit_server" />
 			for the description how to clone. In case you can use the Gerrit
 			server, this section is not relevant for you.
-		</para>
+		
 
-		<para>The push configuration in the following dialog depends a bit if
+		The push configuration in the following dialog depends a bit if
 			you want to use SSH or
 			HTTPS. If you want to use
 			SSH
@@ -30,8 +30,8 @@
 			"gitroot"
 			string from the
 			push-url.
-		</para>
-		<para>
+		
+		
 			The
 			following screenshot
 			demonstrates that for the Eclipse
@@ -39,18 +39,11 @@
 			UI
 			Git
 			repository.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution12.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit push configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>If you want to use HTTPS to push to the Gerrit server, you have
+		
+		
+image::eclipsegerritcontribution12.png[Gerrit push configuration,pdfwidth=60%]
+		
+		If you want to use HTTPS to push to the Gerrit server, you have
 			to
 			use a push URL
 			with an "r" included
@@ -60,31 +53,24 @@
 			password if you want to
 			push to an Eclipse Git repository as depicted in the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipse_gerrithttps10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit push configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::eclipse_gerrithttps10.png[Gerrit push configuration,pdfwidth=60%]
+		
 
-	</section>
-	<section id="eclipsegerritcontribution_pushconfig">
-		<title>Gerrit push configuration</title>
-		<para>
+	
+[[eclipsegerritcontribution_pushconfig">
+=== Gerrit push configuration
+		
 			The Gerrit server requires that you push using a predefined
-			<wordasword>refspec</wordasword>
+			_refspec_
 			, called
-			<wordasword>HEAD:refs/for/master</wordasword>
+			_HEAD:refs/for/master_
 			. A refspec allows you to configure which remote branch should
 			be used
 			for remote operations.
-		</para>
-		<para>
+		
+		
 			If you clone a Git repository managed by a Gerrit server, this push url is already correctly configured in most
 			cases.
 
@@ -92,9 +78,9 @@
 			specific commands are added to
 			the repository's
 			context menu, e.g.,
-			<guilabel>Push to Gerrit...</guilabel>
+			_Push to Gerrit..._
 			and
-			<guilabel>Fetch from Gerrit...</guilabel>
+			_Fetch from Gerrit..._
 			). In addition, the repository
 			is
 			configured to always add a Change-ID
@@ -108,79 +94,54 @@
 			<code>eclipse.jdt</code>
 			repository in this screenshot is not configured for Gerrit.
 
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution14.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit Eclipse configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+image::eclipsegerritcontribution14.png[Gerrit Eclipse configuration,pdfwidth=60%]
+		
+		
 			If you have to configure the push URL manually, select your remote repository in the
-			<guilabel>Git Repositories</guilabel>
+			_Git Repositories_
 			view, right-click on
 			it and select
-			<guilabel>Gerrit configuration</guilabel>
+			_Gerrit configuration_
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit Eclipse configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+image::eclipsegerritcontribution10.png[Gerrit Eclipse configuration,pdfwidth=60%]
+		
+		
 			If you select the
-			<guilabel>origin</guilabel>
+			_origin_
 			entry, right mouse click on it and select
-			<guilabel>Gerrit Configuration...</guilabel>
+			_Gerrit Configuration..._
 			the entry should look like the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution12.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit Eclipse configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::eclipsegerritcontribution12.png[Gerrit Eclipse configuration,pdfwidth=60%]
+		
 		<note>
-			<para>For HTTPS access the URL is different.</para>
+			For HTTPS access the URL is different.
 		</note>
-		<para>
+		
 			You can validate the push specification if you select the
 			highlighted
 			node in the following screenshot and check the
-			<guilabel>Remote Push Specification</guilabel>
+			_Remote Push Specification_
 			entry in the
-			<guilabel>Properties</guilabel>
+			_Properties_
 			view.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipsegerritcontribution13.png" scale="30" />
+		
+		
+image::eclipsegerritcontribution13.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Gerrit Eclipse configuration</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Gerrit Eclipse configuration,pdfwidth=60%]
+		
 
 
 
-	</section>
+	
 
-</section>
+

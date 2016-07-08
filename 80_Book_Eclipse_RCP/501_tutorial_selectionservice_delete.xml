@@ -1,47 +1,44 @@
 <chapter id="tutorial_usingeselectionservice_deletion">
-	<title>Optinal exercise: Selection service for deleting data</title>
+	<title>Optinal exercise: Selection service for deleting data
 
-	<section id="tutorial_usinge4service_5">
-		<title>Implement the RemoveTodoHandler handler</title>
-		<para>
+[[tutorial_usinge4service_5">
+=== Implement the RemoveTodoHandler handler
+		
 			Implement
 			<code>RemoveTodoHandler</code>
 			so that the selected
 			<code>Todo</code>
 			is deleted.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/delete/RemoveTodoHandler.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_usinge4service_validate">
-		<title>Validate that the deletion works</title>
+		
+	
+[[tutorial_usinge4service_validate">
+=== Validate that the deletion works
 
-		<para>
+		
 			Run your application and select a line in your JFace
 			table. Select
 			your
-			<menuchoice>
-				<guimenu>Edit</guimenu>
-				<guisubmenu>Remove Todo</guisubmenu>
-			</menuchoice>
+			menu:Edit[Remove Todo]
 			menu entry.
-		</para>
-		<para>
+		
+		
 			Press the "Load Data" button to update the table. Validate that the
 			selected
 			<code>Todo</code>
 			is not available anymore.
-		</para>
+		
 		<note>
-			<para>
+			
 				Currently your parts are not reacting to changes in your data
 				model
 				and you have to press the
-				<guilabel>Load Data</guilabel>
+				_Load Data_
 				button in your
 				<code>TodoOverviewPart</code>
 				part.
@@ -49,17 +46,17 @@
 				Eclipse in
 				<xref linkend="part_eventbroker" />
 				.
-			</para>
+			
 		</note>
 
-	</section>
+	
 
-	<section id="tutorial_usinge4service_6">
-		<title>Test the context menu for deletion</title>
+[[tutorial_usinge4service_6">
+=== Test the context menu for deletion
 		<tip>
-			<para>This exercise is optional</para>
+			This exercise is optional
 		</tip>
-		<para>
+		
 			In
 			<xref linkend="tutorial_commandscontextmenu" />
 			you defined a context (popup) menu for your table.
@@ -69,18 +66,18 @@
 			correctly implemented, you should be able to delete
 			selected items
 			with the
-			<guilabel>Delete</guilabel>
+			_Delete_
 			context menu without any changes in the
 			<code>RemoveTodoHandler</code>
 			handler class.
-		</para>
-		<para>
+		
+		
 			Delete one todo item. Use the
-			<guilabel>Load Data</guilabel>
+			_Load Data_
 			button and validate that the delete item has been removed from the data model.
-		</para>
+		
 
-	</section>
+	
 
 
 </chapter>

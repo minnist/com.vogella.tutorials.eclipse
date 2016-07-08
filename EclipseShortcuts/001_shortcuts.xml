@@ -1,19 +1,17 @@
-<section id="shortcuts">
-	<title>Shortcuts</title>
-	<indexterm>
-		<primary>Shortcuts</primary>
-	</indexterm>
-	<section id="shortcuts_productivity">
-		<title>Using shortcuts in Eclipse</title>
-		<para>Using shortcuts make a developer more productive.
+
+	<title>Shortcuts
+
+[[shortcuts_productivity">
+=== Using shortcuts in Eclipse
+		Using shortcuts make a developer more productive.
 			Eclipse
 			provides keyboard shortcuts for the most common actions.
 			Using
 			shortcuts is usually preferable as you can perform actions
 			much
 			faster.
-		</para>
-		<para>
+		
+		
 			Eclipse supports of course the typical shortcuts, e.g.
 			<keycombo>
 				<keycap>Ctrl</keycap>
@@ -31,21 +29,20 @@
 
 			</keycombo>
 			for pasting the element currently in the clipboard.
-		</para>
+		
 
 
-	</section>
-	<section id="shortcuts_mac">
-		<title>Shortcuts on Mac OS</title>
+	
+[[shortcuts_mac">
+=== Shortcuts on Mac OS
 		<indexterm>
 			<primary>Shortcuts</primary>
 			<secondary>Mac OS
 			</secondary>
 		</indexterm>
-		<para>This description uses the shortcuts based on Windows and Linux.
+		This description uses the shortcuts based on Windows and Linux.
 			Mac OS uses the Cmd key frequently instead of the
 			Ctrl key.
-		</para>
-	</section>
+		
+	
 
-</section>

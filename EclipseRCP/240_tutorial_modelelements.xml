@@ -1,180 +1,144 @@
-<section id="tutorial_modelelements" role="wrapper">
-	<title>Exercise: Modeling a User Interface</title>
-	<section id="tutorial_modelelements1">
-		<title>Desired user interface</title>
-		<para>
+
+	<title>Exercise: Modeling a User Interface
+[[tutorial_modelelements1">
+=== Desired user interface
+		
 			In the following exercises you create the basis of the application user interface. At the end of this exercise
 			your user
 			interface
 			should look
 			similar to the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model50.png" scale="50" />
+		
+		
+image::tutorial_model50.png" scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>Screenshot of the application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="tutorial_modelelements_openeditor">
-		<title>Open the Application.e4xmi file</title>
-		<para>
+					<phrase>Screenshot of the application,pdfwidth=60%]
+		
+	
+[[tutorial_modelelements_openeditor">
+=== Open the Application.e4xmi file
+		
 			Open the
 			<filename>Application.e4xmi</filename>
 			file in
 			the
-			<guilabel>Eclipse 4 model editor</guilabel>
+			_Eclipse 4 model editor_
 			via a
 			double-click or
 			right-click on
 			it
 			and
 			select
-			<menuchoice>
-				<guimenu>Open With</guimenu>
-				<guisubmenu>Eclipse 4 model editor</guisubmenu>
-			</menuchoice>
+			menu:Open With[Eclipse 4 model editor]
 			.
-		</para>
-	</section>
-	<section id="tutorial_modelelements_perspective">
-		<title>Add a perspective</title>
-		<para>
+		
+	
+[[tutorial_modelelements_perspective">
+=== Add a perspective
+		
 			Add a perspective stack with one perspective
 			to your application
 			model
 			so that you can later easily add more of
 			them.
-		</para>
-		<para>
+		
+		
 			Navigate to your
 			window inside the
 			<filename>Application.e4xmi</filename>
 			file. Select the
-			<guilabel>Controls</guilabel>
+			_Controls_
 			node.
 			Add a
-			<guilabel>Perspective Stack</guilabel>
+			_Perspective Stack_
 			via the context menu on the
-			<guilabel>Controls</guilabel>
+			_Controls_
 			entry as indicated in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model02.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Adding a PerspectiveStack to the Eclipse RCP application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application,pdfwidth=60%]
+		
 		<tip>
-			<para>
+			
 				Alternatively to the context menu you can also use the
-				<guilabel>Add...</guilabel>
+				_Add..._
 				button on the detail page to add child elements to the selected
 				element.
-			</para>
+			
 		</tip>
 
-		<para>
+		
 			After creating the perspective stack add a
-			<guilabel>Perspective</guilabel>
+			_Perspective_
 			to it, either
 			via the context menu or the
-			<guilabel>Add...</guilabel>
+			_Add..._
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model04.png" scale="35" />
+		
+		
+image::tutorial_model04.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a Perspective</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding a Perspective,pdfwidth=60%]
+		
+		
 			Enter the
-			<guilabel>To-do</guilabel>
+			_To-do_
 			value
 			in the
-			<guilabel>Label</guilabel>
+			_Label_
 			field
 			and the
-			<guilabel>com.example.e4.rcp.todo.perspective</guilabel>
+			_com.example.e4.rcp.todo.perspective_
 			value
 			in the
-			<guilabel>ID</guilabel>
+			_ID_
 			field.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Adding a Perspective to the Eclipse 4 application</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application,pdfwidth=60%]
+		
+	
 
-	<section id="tutorial_modelelements1a">
-		<title>Add part sash and part stack containers</title>
-		<para>
+[[tutorial_modelelements1a">
+=== Add part sash and part stack containers
+		
 			Select
-			<guilabel>Controls</guilabel>
+			_Controls_
 			below the newly created perspective
 			and add a
 			part sash container element.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model12.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Add PartSashContainer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::tutorial_model12.png[Add PartSashContainer,pdfwidth=60%]
+		
+		
 
 			Change its
-			<guilabel>Orientation</guilabel>
+			_Orientation_
 			attribute to
-			<guilabel>Horizontal</guilabel>
+			_Horizontal_
 			and enter into the ID
 			field the
-			<guilabel>com.example.e4.rcp.todo.partsashcontainer.main</guilabel>
+			_com.example.e4.rcp.todo.partsashcontainer.main_
 			value.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model20.png" scale="30" />
+		
+image::tutorial_model20.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Change the orientation attribute</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Change the orientation attribute,pdfwidth=60%]
+		
+		
 			Add a
 			part stack
 			as the first child to your part sash container
 			element.
-		</para>
+		
 
-		<para>
+		
 			Re-select the
 			parent part sash container
 			and add another
@@ -185,28 +149,24 @@
 			to the
 			second part sash
 			container.
-		</para>
-		<para>After these changes your application model should look similar
+		
+		After these changes your application model should look similar
 			to
 			the
 			following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model30.png" scale="60" />
+		
+		
+image::tutorial_model30.png" scale="60" />
 				</imageobject>
 				<textobject>
-					<phrase>Application model structure</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Application model structure,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="tutorial_modelelements1b">
-		<title>Create the parts</title>
-		<para>
+[[tutorial_modelelements1b">
+=== Create the parts
+		
 			Add a
 			part
 			model element
@@ -217,10 +177,10 @@
 			and the suffix from the following table. Also put the label from the
 			table into the appropriate field of the part
 			editor.
-		</para>
-		<para>
+		
+		
 			<table frame='all'>
-				<title>Label and ID from the Parts</title>
+		=== Label and ID from the Parts
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -246,30 +206,26 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-		<para>
+		
+		
 			The final structure of your application model should
 			be similar
 			to the
 			following
 			screenshot. The screenshot also
 			shows the detailed data of the overview part inside the detail pane of the application model editor.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_model40.png" scale="30" />
+		
+		
+image::tutorial_model40.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Part data</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Part data,pdfwidth=60%]
+		
 
-	</section>
-	<section id="tutorial_modelelement_validate">
-		<title>Validate the user interface</title>
-		<para>
+	
+[[tutorial_modelelement_validate">
+=== Validate the user interface
+		
 			Start your product and validate that the user interface looks as
 			planned. Reassign your model elements if
 			required. The model
@@ -278,10 +234,9 @@
 			drop
 			for
 			reassignment.
-		</para>
-		<para>Also note that you can already see the
+		
+		Also note that you can already see the
 			structure, even though you have not created any Java classes so far.
-		</para>
-	</section>
+		
+	
 
-</section>

@@ -1,57 +1,57 @@
-<section id="tips">
-	<title>Tips and Tricks</title>
-	<section id="tips_loadimages">
-		<title>Load an image from your plugin</title>
-		<para>
+
+	<title>Tips and Tricks
+[[tips_loadimages">
+=== Load an image from your plugin
+		
 			To load an image from your plug-in your use the
 			<code>AbstractUIPlugin</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/loadimage/loadimageold.txt" />
 			</programlisting>
-		</para>
-		<para>Alternatively you could load the framework directly. </para>
-		<para>
+		
+		Alternatively you could load the framework directly. 
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/loadimage/loadimage.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="tips_userlayout">
-		<title>Save users layout</title>
-		<para> To remember the user's layout and window size for the next
+[[tips_userlayout">
+=== Save users layout
+		 To remember the user's layout and window size for the next
 			time
 			you start your application, add
 			configurer.setSaveAndRestore(true);
 			to
 			the initialize method of
 			ApplicationWorkbenchAdvisor.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/tips/ApplicationWorkbenchAdvisorRememberValues.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Eclipse has a pre-defined command to reset the perspective. See
 			<ulink
-				url="http://www.vogella.com/tutorials/EclipseCommands/article.html#standardcommands">Eclipse Commands</ulink>
+				url="http://www.vogella.com/tutorials/EclipseCommands/article.html#standardcommands">Eclipse Commands
 			.
-		</para>
-	</section>
+		
+	
 
-	<section id="statusline">
-		<title>Accessing the status line</title>
-		<para>
+[[statusline">
+=== Accessing the status line
+		
 			The status line in an RCP application can be used to give the
 			user some information about the running application. The shared
 			message area can be used by all parts of the
@@ -66,67 +66,65 @@
 			might
 			be
 			overwritten.
-		</para>
-		<para>
+		
+		
 			To show the
 			status line in your RCP application use the
 			"ApplicationWorkbenchWindowAdvisor" and set the status line visible
 			in the
 			method preWindowOpen().
-		</para>
-		<para>
+		
+		
 			<programlisting>
 
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/statusline/ApplicationWorkbenchWindowAdvisor.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The following writes a text to the status line from a view.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/statusline/statuslinesettext.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			From an editor you can access the status line via the
 			following:
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/statusline/editorstatusline.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="tips_unused_dependencies">
-		<title>Finding unused dependencies</title>
-		<para> In the file plugin.xml (tab dependencies) you define on which
+[[tips_unused_dependencies">
+=== Finding unused dependencies
+		 In the file plugin.xml (tab dependencies) you define on which
 			plugins your plug-in depends. Of course you should only define the
 			required plugins here. You can check if you have any dependency
 			maintained which is actually not used, by selecting Dependency
 			Analysis -> Find unused dependencies.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/unuseddependency10.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>How to remove unused dependencies</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="tips_multiuser">
-		<title>Multi-User settings</title>
-		<para> Eclipse RCP applications save configuration files in the
+					<phrase>How to remove unused dependencies,pdfwidth=60%]
+		
+	
+[[tips_multiuser">
+=== Multi-User settings
+		 Eclipse RCP applications save configuration files in the
 			folder
 			".metadata". In the standard settings the
 			Eclipse RCP
@@ -144,6 +142,5 @@
 			saved in
 			a user
 			specific folder.
-		</para>
-	</section>
-</section>
+		
+	

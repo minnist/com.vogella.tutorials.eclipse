@@ -1,15 +1,15 @@
 
-<section id="resources_osgiservice">
-	<title>OSGi native code Resources</title>
-	<para>
-		<ulink url="http://wiki.osgi.org/wiki/Dependencies_In_Native_Code"> Dependencies In Native Code</ulink>
-	</para>
-	<para>
-		<ulink url="http://robertvarttinen.blogspot.de/2008/12/bundle-nativecode-in-osgi-manifest.html"> Bundle-NativeCode in the OSGi manifest </ulink>
-	</para>
-	<para>
-		<ulink url="https://holistictendencies.wordpress.com/2011/03/28/bundle-nativecode-using-platform-specific-dlls-from-osgi/"> Bundle-NativeCode blog post by Brian de Alwis </ulink>
-	</para>
-</section>
+
+	<title>OSGi native code Resources
+	
+		http://wiki.osgi.org/wiki/Dependencies_In_Native_Code"> Dependencies In Native Code
+	
+	
+		http://robertvarttinen.blogspot.de/2008/12/bundle-nativecode-in-osgi-manifest.html"> Bundle-NativeCode in the OSGi manifest 
+	
+	
+		https://holistictendencies.wordpress.com/2011/03/28/bundle-nativecode-using-platform-specific-dlls-from-osgi/"> Bundle-NativeCode blog post by Brian de Alwis 
+	
+
 
 

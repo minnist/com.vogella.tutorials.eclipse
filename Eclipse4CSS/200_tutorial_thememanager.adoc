@@ -13,8 +13,8 @@ application
 styling at
 runtime.
 
-</section>
-<section id="css_switching_dependencies">
+
+
 <title>Add dependencies
 
 
@@ -23,8 +23,8 @@ Add the
 plug-in
 as dependency to your application plug-in.
 
-</section>
-<section id="css_switching_cssfile">
+
+
 <title>Create a CSS file
 
 
@@ -38,8 +38,8 @@ file.
 parse="text" href="../examples/css/rainbow.css" />
 </programlisting>
 
-</section>
-<section id="css_switching2">
+
+
 <title>Remove the applicationCSS property
 
 Remove the
@@ -60,9 +60,9 @@ button as depicted in the following screenshot.
 </mediaobject>
 
 
-</section>
 
-<section id="css_switching3">
+
+
 <title>Create the theme extensions
 
 Select the

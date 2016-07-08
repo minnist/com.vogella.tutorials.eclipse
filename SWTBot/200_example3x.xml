@@ -1,12 +1,12 @@
-<section id="swtbotexample" role="wrapper">
+
 	<title>Tutorial: Test Eclipse 3.x RCP applications
-	<section id="swtbotexample_project">
-		<title>Create project
+[[swtbotexample_project">
+=== Create project
 		
 			Create a new
 			Eclipse RCP
 			application called
-			<wordasword>de.vogella.swtbot.app</wordasword>
+			_de.vogella.swtbot.app_
 			based on the "Eclipse
 			application
 			with a
@@ -29,13 +29,13 @@
 			via the
 			label and the other through an SWTBot specific ID.
 		
-	</section>
-	<section id="swtbotexample_test">
-		<title>Create test plug-in
+	
+[[swtbotexample_test">
+=== Create test plug-in
 		
 			Create another
 			Eclipse plug-in called
-			<wordasword>de.vogella.swtbot.tests</wordasword>
+			_de.vogella.swtbot.tests_
 			.
 		
 		
@@ -73,13 +73,10 @@
 		
 		
 			Right-click on the test and select
-			<menuchoice>
-				<guimenu>Run As </guimenu>
-				<guisubmenu>SWTBot Test</guisubmenu>
-			</menuchoice>
+			menu:Run As [SWTBot Test]
 			. In the
 			launch configuration maintain your application and add the
-			<wordasword>de.vogella.swtbot.tests</wordasword> and <wordasword>de.vogella.swtbot.app</wordasword>
+			_de.vogella.swtbot.tests_ and _de.vogella.swtbot.app_
 			plugins
 			as well as
 			their
@@ -87,9 +84,7 @@
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/swtbot10.png"/>
+image::swtbot10.png"/>
 				</imageobject>
 			</mediaobject>
 		
@@ -110,5 +105,4 @@
 			that
 			the test fails.
 		
-	</section>
-</section>
+	

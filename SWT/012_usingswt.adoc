@@ -1,5 +1,5 @@
-<section id="usingswt">
-	<title>Using SWT in Java projects</title>
+
+	<title>Using SWT in Java projects
 	<indexterm>
 		<primary>SWT</primary>
 		<secondary>In standard Java projects</secondary>
@@ -47,8 +47,7 @@
 		This ZIP file contains a
 		<filename>swt.jar</filename>
 		file which you need to add to the
-		<wordasword>classpath</wordasword>
+		_classpath_
 		of your SWT
 		project.
 	
-</section>

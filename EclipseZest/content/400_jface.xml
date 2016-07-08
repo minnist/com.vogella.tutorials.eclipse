@@ -1,22 +1,22 @@
-<section id="jface">
-	<title>Zest and JFace</title>
-	<para>
-		<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace</ulink>
+
+	<title>Zest and JFace
+	
+		http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace
 		provides viewers to encapsulate the data from the presentation.
 		For an
 		introduction to JFace viewer please see
-		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer</ulink>
-		or 		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTreeViewer/article.html"> Eclipse JFace TreeViewer</ulink>. A JFace viewer requires a content provider and a label provider.
+		http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
+		or 		http://www.vogella.com/tutorials/EclipseJFaceTreeViewer/article.html"> Eclipse JFace TreeViewer. A JFace viewer requires a content provider and a label provider.
 		Zest provides as a viewer the class "GraphViewer".
 		Content provider in
 		Zest are either based on the connections or on the
 		nodes.
-	</para>
+	
 
-	<para>
+	
 		Standard Zest Content providers are:
 		<table frame='all'>
-			<title>Zest JFace Content Provider</title>
+	=== Zest JFace Content Provider
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
@@ -54,13 +54,12 @@
 			</tgroup>
 		</table>
 
-	</para>
+	
 
-	<para> As label provider Zest can use the standard JFace interface
+	 As label provider Zest can use the standard JFace interface
 		ILabelProvider
 		(implemented for example by the class LabelProvider) or
 		the Zest specific IEntityStyleProvider. 
-	</para>
+	
 
 
-</section>

@@ -1,35 +1,35 @@
-<section id="e4modelextend_model">
-	<title>Exercise: Extend the Eclipse application model</title>
-	<para>
+
+	<title>Exercise: Extend the Eclipse application model
+	
 		Create another model element called
-		<wordasword>MyOwnPartStack</wordasword>
+		_MyOwnPartStack_
 		with the
 		supertype
 		<code>PartStack</code>
 		The finished model
 		should look like the
 		following.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/stackrenderermodel60.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Create the following class.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/renderer/MyOwnStackRenderer.java" />
 		</programlisting>
-	</para>
 	
-	<section id="renderer_factory">
-		<title>Define your renderer and the renderer factory</title>
-		<para>
+	
+[[renderer_factory">
+=== Define your renderer and the renderer factory
+		
 			Create an
 			<filename class="directory">html</filename>
 			folder in your
@@ -37,34 +37,33 @@
 			plug-in and create the following
 			<filename>map.html</filename>
 			file in it.
-		</para>
+		
 		<!--  TODO: map.html is not yet listed -->
-		<para>
+		
 			In the
 			<code>com.vogella.e4.renderer.maps</code>
 			plug-in
 			create the following class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/renderer/MyMapRenderer.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<code>MyMapRenderer</code>
 			will load <filename>map.html</filename> and display it.
-		</para>
-		<para>
+		
+		
 			Create the following factory
 			to define a new renderer for your
 			widgets.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/renderer/MyRendererFactory.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	

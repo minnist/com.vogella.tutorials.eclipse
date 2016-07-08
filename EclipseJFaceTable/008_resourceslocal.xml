@@ -1,29 +1,28 @@
 
-<section id="resources_jface">
-	<title>JFace Resources</title>
-	<para>
-		<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">Eclipse JFace</ulink>
-	</para>
-	<para>
-		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html">Eclipse JFace Table</ulink>
-	</para>
-	<para>
-		<ulink
-			url="http://www.vogella.com/tutorials/EclipseJFaceTree/article.html"> JFace Tree Tutorial</ulink>
-	</para>
 
-	<para>
+	<title>JFace Resources
+	
+		http://www.vogella.com/tutorials/EclipseJFace/article.html">Eclipse JFace
+	
+	
+		http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html">Eclipse JFace Table
+	
+	
 		<ulink
-			url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html">JFace Data Binding</ulink>
-	</para>
+			url="http://www.vogella.com/tutorials/EclipseJFaceTree/article.html"> JFace Tree Tutorial
+	
 
-	<para>
+	
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html">JFace Data Binding
+	
+
+	
 		<ulink
 			url="http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html">
-			http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html</ulink>
+			http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html
 		Building and delivering a table editor with SWT/JFace
-	</para>
+	
 
 
 
-</section>

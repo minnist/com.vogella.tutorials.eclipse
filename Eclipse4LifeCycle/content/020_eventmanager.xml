@@ -1,126 +1,118 @@
-<section id="tutorial_lifecycle" role="wrapper">
-	<title>Life cycle hook and a login screen</title>
-	<section id="tutorial_lifecycle_target">
-		<title>Target</title>
-		<para>
+
+	<title>Life cycle hook and a login screen
+[[tutorial_lifecycle_target">
+=== Target
+		
 			In this exercise you create a splash screen which allows the user to
 			enter his or her
 			credentials. This assumes that you have created a
 			<code>PasswordDialog</code>
 			class  which allows the user to enter this user and password.
-		</para>
-	</section>
-	<section id="tutorial_lifecycle1">
-		<title>Create a new class</title>
+		
+	
+[[tutorial_lifecycle1">
+=== Create a new class
 
-		<para>
+		
 			The following development is done again in the
 			<code>com.example.e4.rcp.todo</code>
 			plug-in.
-		</para>
-		<para>
+		
+		
 			Create the
 			<code>com.example.e4.rcp.todo.lifecycle</code>
 			package and add the following class.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/event/LifeCycleManager.java" />
 			</programlisting>
-		</para>
+		
 
 		<note>
-			<para>
+			
 				The life cycle annotations are
 				not yet released as official API. See
 				<xref linkend="e4overview_api" />
 				.
-			</para>
+			
 		</note>
 
-	</section>
-	<section id="tutorial_lifecycle2">
-		<title>Register life cycle hook</title>
-		<para>
+	
+[[tutorial_lifecycle2">
+=== Register life cycle hook
+		
 			Register the
 			<code>Manager</code>
 			class as life cycle handler in your
 			<filename>plugin.xml</filename>
 			file.
-		</para>
-		<para>
+		
+		
 			For this, open the
 			<filename>plugin.xml</filename>
 			in your application plug-in and select the
-			<guilabel>Extensions</guilabel>
+			_Extensions_
 			tab.
-		</para>
+		
 
-		<para>
+		
 			Open the
 			<code>org.eclipse.core.runtime.products</code>
 			extension,
 			right click on the existing entry and create a new
 			property.
 
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/lifecycleregistration10.png"
+		
+		
+image::lifecycleregistration10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Lifecycle registration in the product extension part 1</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Lifecycle registration in the product extension part 1,pdfwidth=60%]
+		
 
-		<para>
+		
 			Enter
-			<wordasword>lifeCycleURI</wordasword>
+			_lifeCycleURI_
 			as name for the property and use
 			<code>bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager
 			</code>
 			as the value.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/lifecycleregistration20.png"
+		
+image::lifecycleregistration20.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Life cycle registration in the product extension part 1</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Life cycle registration in the product extension part 1,pdfwidth=60%]
+		
 
-		<para>
+		
 			The following snippet shows the resulting plugin.xml file.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/event/plugin.adoc[]
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="tutorial_lifecycle3">
-		<title>Validating</title>
-		<para>
+[[tutorial_lifecycle3">
+=== Validating
+		
 			Start your application. The login dialog should get displayed and
 			your
 			application should be started after the user selects the
 			<guibutton>Login</guibutton>
 			button.
-		</para>
-	</section>
-</section>
+		
+	
+

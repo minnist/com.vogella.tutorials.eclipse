@@ -1,13 +1,12 @@
-<section id="resources_jface">
-	<title>JFace resources</title>
-	<para>
-		<ulink url="http://wiki.eclipse.org/index.php/JFaceSnippets">
-			http://wiki.eclipse.org/index.php/JFaceSnippets</ulink>
+
+	<title>JFace resources
+	
+		http://wiki.eclipse.org/index.php/JFaceSnippets">
+			http://wiki.eclipse.org/index.php/JFaceSnippets
 		JFace snippets, e.g., small code examples
-	</para>
+	
 
-	<para>
-		<ulink url="http://eclipse.org/nattable/">NatTable - Flexible Table / Data Grid</ulink>
-	</para>
+	
+		http://eclipse.org/nattable/">NatTable - Flexible Table / Data Grid
+	
 
-</section>

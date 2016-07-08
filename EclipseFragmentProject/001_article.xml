@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Fragment Projects - Tutorial</title>
+=== Eclipse Fragment Projects - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -27,14 +27,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>24.06.2012</pubdate>
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Feature Project</title>
-			<para> This tutorial describes the purpose and usage of
+	=== Eclipse Feature Project
+			 This tutorial describes the purpose and usage of
 				Eclipse fragment projects
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

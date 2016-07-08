@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse IDE platform development - tutorial</title>
+=== Eclipse IDE platform development - tutorial
 		<subtitle>Contributing to the Eclipse open source project
 		</subtitle>
 		<author>
@@ -32,28 +32,28 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>09.05.2016</pubdate>
 		<releaseinfo>
-			<para>Version 6.8</para>
+			Version 6.8
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse platform development</title>
-			<para> This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
-			</para>
+	=== Eclipse platform development
+			 This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
+			
 
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-contribution.txt"?>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_contributingtoeclipse.adoc[]
-	<section id="prereq">
-		<title>Prerequisites</title>
-		<para>
+[[prereq">
+=== Prerequisites
+		
 			This tutorial assumes that you have already Eclipse plug-in
 			development experience. See the
-			<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-in development tutorial</ulink>
+			http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-in development tutorial
 			for details.
-		</para>
+		
 
-	</section>
+	
 
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="011_foundation.adoc[]

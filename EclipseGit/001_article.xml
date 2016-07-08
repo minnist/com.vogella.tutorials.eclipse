@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Git version control with Eclipse (EGit) - Tutorial</title>
+=== Git version control with Eclipse (EGit) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,18 +30,18 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>18.01.2016</pubdate>
 		<releaseinfo>
-			<para>Version 4.1</para>
+			Version 4.1
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Git with Eclipse (EGit)</title>
-			<para> This tutorial describes the usage of EGit; an Eclipse plug-in
+	=== Git with Eclipse (EGit)
+			 This tutorial describes the usage of EGit; an Eclipse plug-in
 				to
 				use the distributed version control system Git.
 				This tutorial is
 				based on
 				Eclipse 4.5 (Mars).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>

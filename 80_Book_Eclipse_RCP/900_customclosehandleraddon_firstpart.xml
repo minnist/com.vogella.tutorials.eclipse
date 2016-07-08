@@ -1,64 +1,63 @@
 <section id="exercise_modeladdonclose" role="wrapper">
-	<title>Optional exercise: Changing the close behavior via an add-on</title>
-	<section id="exercise_modeladdonclose1">
-		<title>Target</title>
-		<para>
+	<title>Optional exercise: Changing the close behavior via an add-on
+[[exercise_modeladdonclose1">
+=== Target
+		
 			In this exercise you ensure that the user is prompted if he
 			wants to leave the application with some unsaved
 			changes. This should also work if he presses
 			the close button
 			of the application corner.
-		</para>
-	</section>
+		
+	
 
-	<section id="exercise_modeladdonclose_create">
-		<title>Creating a plug-in</title>
-		<para>
+[[exercise_modeladdonclose_create">
+=== Creating a plug-in
+		
 			Create a new simple plug-in called
 			<code>com.vogella.e4.addon.exitconfirmation</code>
 			.
-		</para>
-		<para>
+		
+		
 			Add the following dependencies to your plug-in.
 			<itemizedlist>
 				<listitem>
-					<para>org.eclipse.core.runtime
-					</para>
+					org.eclipse.core.runtime
+					
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.ui.di</para>
+					org.eclipse.e4.ui.di
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.ui.model.workbench</para>
+					org.eclipse.e4.ui.model.workbench
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.ui.workbench</para>
+					org.eclipse.e4.ui.workbench
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.core.di</para>
+					org.eclipse.e4.core.di
 				</listitem>
 				<listitem>
-					<para>org.eclipse.jface</para>
+					org.eclipse.jface
 				</listitem>
 				<listitem>
-					<para>org.eclipse.e4.core.contexts</para>
+					org.eclipse.e4.core.contexts
 				</listitem>
 				<listitem>
-					<para>org.eclipse.osgi.services</para>
+					org.eclipse.osgi.services
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
-	<section id="exercise_modeladdonclose_createclass">
-		<title>Creating the model add-on</title>
-		<para>Define the following class which is used as model add-on </para>
-		<para>
+		
+	
+[[exercise_modeladdonclose_createclass">
+=== Creating the model add-on
+		Define the following class which is used as model add-on 
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/modeladdon/WindowCloseListenerAddon.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-</section>

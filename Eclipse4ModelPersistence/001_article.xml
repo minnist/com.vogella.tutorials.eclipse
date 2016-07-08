@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 Model Persistence - Tutorial</title>
+=== Eclipse 4 Model Persistence - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,14 +30,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>16.03.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.1</para>
+			Version 1.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Constructing the Eclipse application model</title>
-			<para> This tutorial given an introduction how to replace the
+	=== Constructing the Eclipse application model
+			 This tutorial given an introduction how to replace the
 				persistence of the application model.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

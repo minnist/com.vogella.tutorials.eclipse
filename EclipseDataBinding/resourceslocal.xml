@@ -1,18 +1,18 @@
-<section id="resources_databinding">
-		<title>Eclipse Data Binding resources</title>
-		<para>
-			<ulink url="http://wiki.eclipse.org/index.php/JFace_Data_Binding">
-				Wiki about the JFace Data Binding</ulink>
-		</para>
 
-		<para>
-			<ulink url="https://developers.google.com/java-dev-tools/wbpro/features/swt/data_binding/example">
-				WindowBuilder Data Binding Example</ulink>
-		</para>
-		<para>
+=== Eclipse Data Binding resources
+		
+			http://wiki.eclipse.org/index.php/JFace_Data_Binding">
+				Wiki about the JFace Data Binding
+		
+
+		
+			https://developers.google.com/java-dev-tools/wbpro/features/swt/data_binding/example">
+				WindowBuilder Data Binding Example
+		
+		
 			<ulink
 				url="http://wiki.eclipse.org/index.php?title=JFace_Data_Binding/JSR303BeanJFaceDatabindingValidation">
-				Using Bean Validation (JSR 303) with JFace Data Binding</ulink>
-		</para>
+				Using Bean Validation (JSR 303) with JFace Data Binding
+		
 
-	</section>
+	

@@ -1,6 +1,6 @@
-<section id="eclipsejobs_progress3x">
-	<title>Reporting Progress in Eclipse 3.x</title>
-	<para>
+
+	<title>Reporting Progress in Eclipse 3.x
+	
 		To activate progress reporting in the status line in Eclipse 3.x you
 		have to activate
 		progress reporting in
@@ -8,5 +8,5 @@
 		method of the
 		<code>WorkbenchWindowAdvisor</code>
 		.
-	</para>
-</section>
+	
+

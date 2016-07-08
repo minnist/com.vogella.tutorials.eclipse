@@ -1,17 +1,17 @@
 
-<section id="shortcuts_navigation">
-	<title>Navigation</title>
+
+	<title>Navigation
 	<indexterm>
 		<primary>Shortcuts</primary>
 		<secondary>Navigation</secondary>
 	</indexterm>
 
-	<section id="shortcuts_navigationgeneral">
-		<title>Globally available navigation shortcuts</title>
-		<para>Eclipse provides shortcuts for opening files or Java artifacts.</para>
-		<para>
+[[shortcuts_navigationgeneral">
+=== Globally available navigation shortcuts
+		Eclipse provides shortcuts for opening files or Java artifacts.
+		
 			<table frame='all'>
-				<title>Navigation</title>
+		=== Navigation
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -46,21 +46,21 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="shortcuts_navigationeditor">
-		<title>Navigation shortcuts in the editor</title>
+[[shortcuts_navigationeditor">
+=== Navigation shortcuts in the editor
 
-		<para>If you are working in the Java editor you can also use certain
+		If you are working in the Java editor you can also use certain
 			shortcuts for faster navigation. The following
 			tables lists a few of
 			them.
-		</para>
-		<para>
+		
+		
 			<table frame='all'>
-				<title>Search from an editor</title>
+		=== Search from an editor
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -104,7 +104,7 @@
 							<entry>
 								Searches the selected text or if nothing is selected the last
 								search from the
-								<guilabel>Find</guilabel>
+								_Find_
 								dialog.
 							</entry>
 						</row>
@@ -124,11 +124,11 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>
+		
 			<table frame='all'>
-				<title>Navigation between editors</title>
+		=== Navigation between editors
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
@@ -168,9 +168,8 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
 
-	</section>
+	
 
-</section>

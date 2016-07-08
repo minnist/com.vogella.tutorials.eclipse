@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse framework and model events - Tutorial</title>
+=== Eclipse framework and model events - Tutorial
 		<author>
 			<firstname>Simon</firstname>
 			<surname>Scholz</surname>
@@ -31,10 +31,10 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse application model events</title>
-			<para>
+	=== Eclipse application model events
+			
 				This article describes how you can react on changes of the application model.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>

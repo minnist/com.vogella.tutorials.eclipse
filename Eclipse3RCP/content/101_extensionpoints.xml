@@ -1,23 +1,23 @@
-<section id="extensionpoints_definition">
-	<title>What are Extension Points?</title>
-	<para>
+
+	<title>What are Extension Points?
+	
 		Extension-points define
 		interfaces for other
 		plug-ins to contribute
 		functionality (code and
 		non-code).
-	</para>
-	<para>
+	
+	
 		They are defined in the <filename>plugin.xml</filename> file, which must be
 		in
 		the root directory of
 		your plug-in project.
-	</para>
+	
 
-	<para>
+	
 		Existing extensions (contributions) are collected during the
 		start of an Eclipse
 		application.
-	</para>
+	
 
-</section>
+

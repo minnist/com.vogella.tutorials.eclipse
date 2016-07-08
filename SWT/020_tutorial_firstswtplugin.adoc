@@ -1,10 +1,10 @@
-<section id="firstswt">
-	<title>Example: Creating a plug-in project with a dependency to SWT</title>
+
+	<title>Example: Creating a plug-in project with a dependency to SWT
 	
 		Create a new plug-in project called
 		<code>com.examle.swt.widgets</code>
 		via
-		<menuchoice>
+		menu:
 			<guimenu>File</guimenu>
 			<guisubmenu>New</guisubmenu>
 			<guisubmenu>Other...</guisubmenu>
@@ -89,4 +89,3 @@
 	
 
 	
-</section>

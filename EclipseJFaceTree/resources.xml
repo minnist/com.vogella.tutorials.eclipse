@@ -1,26 +1,25 @@
-<section id="resources">
-	<title>Links and Literature</title>
+
+	<title>Links and Literature
 	
 
-	<section id="resources_s1s2a">
-		<title>JFace Resources</title>
-		<para>
+[[resources_s1s2a">
+=== JFace Resources
+		
 			<ulink
 				url="http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html">
-				http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html</ulink>
+				http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html
 			Building and delivering a table editor with SWT/JFace
-		</para>
 		
 		
-			<para>
+		
+			
 			<ulink
 				url="http://wiki.eclipse.org/index.php/JFaceSnippets">
-				http://wiki.eclipse.org/index.php/JFaceSnippets</ulink>
+				http://wiki.eclipse.org/index.php/JFaceSnippets
 			JFace snippets, e.g., small code examples
-		</para>
 		
-	</section>
+		
+	
 	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 		href="../10_Include/resources.adoc[]
-</section>

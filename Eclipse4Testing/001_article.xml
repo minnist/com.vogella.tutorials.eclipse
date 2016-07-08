@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 Testing - Tutorial</title>
+=== Eclipse 4 Testing - Tutorial
 		<subtitle>Based on Eclipse 4.6</subtitle>
 		<author>
 			<firstname>Lars</firstname>
@@ -33,14 +33,14 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>08.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 6.0</para>
+			Version 6.0
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Testing Eclipse 4 components</title>
-			<para> This tutorial gives an overview how to test Eclipse 4
+	=== Testing Eclipse 4 components
+			 This tutorial gives an overview how to test Eclipse 4
 				components.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

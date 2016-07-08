@@ -1,89 +1,56 @@
-<section id="p2featureproject" role="wrapper">
-	<title>Exercise: Create a feature for your plug-in</title>
 
-	<section id="p2deployplugin_feature">
-		<title>Create a feature project</title>
-		<para>
+	<title>Exercise: Create a feature for your plug-in
+
+[[p2deployplugin_feature">
+=== Create a feature project
+		
 			Create a
 			feature project
 			for your
 			plug-in and add your plug-in to
 			this
 			feature. You create a feature project via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Feature Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in Development > Feature Project]
 			.
-		</para>
-		<para>
+		
+		
 			Create the feature project according to the following screenshots.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pluginfeature10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a feature project for the plug-in export</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pluginfeature20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Creating a feature project for the plug-in export</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="p2deployplugin_categorydefinition">
-		<title>Create a category definition</title>
-		<para>
+		
+		
+image::pluginfeature10.png[Creating a feature project for the plug-in export,pdfwidth=60%]
+		
+		
+image::pluginfeature20.png[Creating a feature project for the plug-in export,pdfwidth=60%]
+		
+	
+[[p2deployplugin_categorydefinition">
+=== Create a category definition
+		
 			In your feature project create a new category definition, via the menu entry
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in development</guisubmenu>
-				<guisubmenu>Category Definition</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in development > Category Definition]
 	.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/categorydefinition10.png"/>
+		
+		
+image::categorydefinition10.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Press the
 			<guibutton>New Category</guibutton>
 			button and create a category with a name which
 			describes your
 			functionality. Add your feature to this category.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/categorydefinition20.png"/>
+		
+		
+image::categorydefinition20.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/categorydefinition30.png"/>
+		
+		
+image::categorydefinition30.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-</section>

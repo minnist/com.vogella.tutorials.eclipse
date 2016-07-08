@@ -1,13 +1,13 @@
 <chapter id="tutorial_databindingadvanced">
-	<title>Exercise: Data binding for table viewers</title>
-	<section id="tutorial_databindingadvanced1">
-		<title>Implement data binding for the table viewer</title>
-		<para>
+	<title>Exercise: Data binding for table viewers
+[[tutorial_databindingadvanced1">
+=== Implement data binding for the table viewer
+		
 			Change your implementation of
 			<code>TodoOverviewPart</code>
 			to use data binding.
-		</para>
-		<para>
+		
+		
 			For this you can delete the
 			<code>LabelProvider</code>
 			of your
@@ -17,11 +17,11 @@
 			and the
 			<code>ContentProvider</code>
 			.
-		</para>
-		<para>The following code demonstrates this implementation.
-		</para>
+		
+		The following code demonstrates this implementation.
+		
 		<tip>
-			<para>
+			
 				The following code
 				snippet only contains the data binding
 				relevant part of the code. If you did any of the optional exercises
@@ -33,19 +33,19 @@
 				box, the registration of
 				the
 				popup menu, a filter or more.
-			</para>
+			
 		</tip>
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/databinding/TodoOverviewPart.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_databindingadvanced2">
-		<title>Clean up old code</title>
+		
+	
+[[tutorial_databindingadvanced2">
+=== Clean up old code
 		<warning>
-			<para>
+			
 				You should not have any call to the
 				<code>setInput</code>
 				,
@@ -54,27 +54,27 @@
 				<code>setLabelProvider</code>
 				methods anymore in your code. Use the text search to validate this
 				in case you are having problems.
-			</para>
+			
 		</warning>
 
 
-	</section>
+	
 
-	<section id="tutorial_databindingadvanced3">
-		<title>Validating</title>
-		<para>
+[[tutorial_databindingadvanced3">
+=== Validating
+		
 			Start your application and load the data into the table via the
-			<guilabel>Load data</guilabel>
+			_Load data_
 			button. Ensure that the data is displayed correctly in the table.
-		</para>
+		
 		<note>
-			<para>
+			
 				Currently the selection of the table is not sent to the
 				TodoDetailsPart. This will be implemented in
 				<xref linkend="tutorial_usingeselectionservice" />
 				.
-			</para>
+			
 		</note>
-	</section>
+	
 
 </chapter>

@@ -1,15 +1,15 @@
-<section id="selectedservices_partserviceeditor" role="wrapper">
-	<title>Implementing editor like behavior</title>
+
+	<title>Implementing editor like behavior
 
 
-	<section id="selectedservices_editors">
-		<title>Parts which behave similar to editors</title>
+[[selectedservices_editors">
+=== Parts which behave similar to editors
 		<indexterm>
 			<primary>Editor</primary>
 			<secondary>Implementation</secondary>
 		</indexterm>
 
-		<para>
+		
 			An editor is a part which requires that the user
 			triggers a
 			save
@@ -17,30 +17,30 @@
 			contain
 			data, which can be saved, are typically
 			called
-			<wordasword>dirty</wordasword>
+			_dirty_
 			.
-		</para>
-		<para>
+		
+		
 			The
 			part service
 			allows you to save dirty parts. Every part can
 			mark itself as dirty, hence behave like
 			an editor.
-		</para>
+		
 
 
 
-	</section>
+	
 
-	<section id="eclipse4editor_persist">
-		<title>MDirtyable and @Persist</title>
+[[eclipse4editor_persist">
+=== MDirtyable and @Persist
 		<indexterm>
 			<primary>@Persists</primary>
 		</indexterm>
 		<indexterm>
 			<primary>MDirtyable</primary>
 		</indexterm>
-		<para>
+		
 			A part has the
 			<code>MDirtyable</code>
 			attribute
@@ -50,56 +50,56 @@
 			yet saved. The
 			<code>MDirtyable</code>
 			object can get injected into a part.
-		</para>
-		<para>
+		
+		
 			You can use the
 			<code>setDirty(boolean)</code>
 			method to mark the part as dirty.
-		</para>
-		<para>
+		
+		
 			The following snippet demonstrates how to use the
 			<code>MDirtyable</code>
 			model property in a part to flag it as dirty after a button was
 			pressed.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/model/dirty.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The part service allows you to query the dirty parts and to
 			call a
 			method annotated with
-			<wordasword>@Persist</wordasword>
+			_@Persist_
 			on the dirty parts. This method saves the data of the part and
 			sets
 			the
 			dirty flag back to false if the save operation was
 			successful.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dirty/persists.java" />
 			</programlisting>
-		</para>
+		
 		<note>
-			<para>
+			
 				Every part is responsible for saving itself. Hence every
 				part which
 				behaves like an editor must have one method annotated with
 				<code>@Persist</code>
 				.
-			</para>
+			
 		</note>
 
-	</section>
-	<section id="selectedservices_save">
-		<title>Use part service to trigger save in editors</title>
+	
+[[selectedservices_save">
+=== Use part service to trigger save in editors
 		<indexterm>
 			<primary>Editor</primary>
 			<secondary>Save</secondary>
@@ -108,14 +108,14 @@
 			<primary>Part service</primary>
 			<secondary>Trigger save in dirty editors</secondary>
 		</indexterm>
-		<para>
+		
 			The part service allows you to trigger the
 			<code>@Persist</code>
 			method on the dirty parts via the
 			<code>saveAll()</code>
 			method.
-		</para>
-		<para>
+		
+		
 			The
 			<code>EPartService</code>
 			searches in each part which is marked as dirty for a method annotated
@@ -128,56 +128,56 @@
 			method on the
 			<code>MDirtyable</code>
 			object.
-		</para>
+		
 
-		<para>
+		
 			The following example demonstrates that.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/partservice/SaveHandler.java" />
 			</programlisting>
-		</para>
+		
 
 
 
-	</section>
+	
 
-	<section id="editorinput">
-		<title>MPart and multiple editors</title>
+[[editorinput">
+=== MPart and multiple editors
 		<indexterm>
 			<primary>Editor</primary>
 			<secondary>Multiple instances</secondary>
 		</indexterm>
-		<para>
+		
 			You can use the
-			<wordasword>MPart</wordasword>
+			_MPart_
 			model element to create multiple editors. Every model element can
 			get
 			persisted data assigned which can be accessed via the
 			<code>getPersistedState()</code>
 			method.
-		</para>
-		<para>
+		
+		
 			In its
 			@PostConstruct method the implementation class can get the
 			<code>MPart</code>
 			injected and access
 			its persisted state. This information can be used
 			to configure the editor.
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="minputpart">
-		<title>MInputPart</title>
+[[minputpart">
+=== MInputPart
 		<indexterm>
 			<primary>MInputPart</primary>
 		</indexterm>
-		<para>
+		
 			Eclipse used to have the
 			<code>MInputPart</code>
 			model element. This model element has been deprecated and should not
@@ -186,10 +186,9 @@
 			in
 			<xref linkend="editorinput" />
 			.
-		</para>
+		
 
-	</section>
+	
 
 
 
-</section>

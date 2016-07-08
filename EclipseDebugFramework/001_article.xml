@@ -12,8 +12,8 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Implementing Debug behavior in the Eclipse IDE - Tutorial
-		</title>
+=== Implementing Debug behavior in the Eclipse IDE - Tutorial
+		
 		<author>
 			<firstname>Simon</firstname>
 			<surname>Scholz</surname>
@@ -28,11 +28,11 @@ Version 0.3, 06.07.2016
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Eclipse Debug Framework</title>
-			<para>
+	=== Eclipse Debug Framework
+			
 				This article describes how to implement debugging behavior in
 				Eclipse.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]

@@ -1,12 +1,11 @@
-<section id="_egit_documentation">
-	<title>Eclipse Git documentation</title>
-	<para>
+
+	<title>Eclipse Git documentation
+	
 		The Eclipse Git user guide is bundled with the Eclipse Git feature, invoke it via
-		<menuchoice>
+		menu:
 			<guimenu>Help</guimenu>
 			<guisubmenu>Help Contents</guisubmenu>
 			<guisubmenu> EGit Documentation</guisubmenu>
 		</menuchoice>
 		.
-	</para>
-</section>
+	

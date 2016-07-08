@@ -1,56 +1,34 @@
-<section id="github" role="wrapper">
-	<title>Using Eclipse Git with GitHub</title>
-	<section id="github_clone">
-		<title>Clone project</title>
-		<para>
+
+	<title>Using Eclipse Git with GitHub
+[[github_clone">
+=== Clone project
+		
 			Copy the URL from GitHub and select in Eclipse from the menu the
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Import</guisubmenu>
-				<guisubmenu>Git</guisubmenu>
-				<guisubmenu>Projects from Git</guisubmenu>
-			</menuchoice>
-		</para>
-		<para>
+			menu:File[Import > Git > Projects from Git]
+		
+		
 			Eclipse fills out most of the fields based on the URL in the
 			clipboard. Enter your user and password to be able to push to GitHub.
 			Alternative you can also use an SSH key. You can configure Eclipse to
 			know your SSH via the
-			<menuchoice>
-				<guimenu>Window </guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>General</guisubmenu>
-				<guisubmenu>Network Connection</guisubmenu>
-				<guisubmenu>SSH2</guisubmenu>
-			</menuchoice>
+			menu:Window [Preferences > General > Network Connection > SSH2]
 			preference setting. This setting is depicted in the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/egit_ssh10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>SSH settings</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::egit_ssh10.png[SSH settings,pdfwidth=60%]
+		
 
 
-	</section>
-	<section id="github_push">
-		<title>Push changes</title>
-		<para>
+	
+[[github_push">
+=== Push changes
+		
 			After you made changes and committed them to your local repository,
 			you can select
-			<menuchoice>
-				<guimenu>Team</guimenu>
-				<guisubmenu>Push to upstream</guisubmenu>
-			</menuchoice>
+			menu:Team[Push to upstream]
 			on the project folder, to push your changes to your GitHub. This
 			requires write access to the GitHub repository.
-		</para>
-	</section>
+		
+	
 
-</section>

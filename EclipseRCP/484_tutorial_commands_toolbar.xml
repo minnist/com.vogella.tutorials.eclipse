@@ -1,18 +1,18 @@
-<section id="tutorial_commands_toolbar" role="wrapper">
-	<title>Exercise: Adding a toolbar</title>
-	<section id="tutorial_commands_toolbar1">
-		<title>Target of this exercise</title>
-		<para>In this exercise you add a toolbar to your application. 
-		</para>
-	</section>
-		<section id="tutorial_commands_toolbar2">
-		<title>Adding a toolbar</title>
 
-		<para>
+	<title>Exercise: Adding a toolbar
+[[tutorial_commands_toolbar1">
+=== Target of this exercise
+		In this exercise you add a toolbar to your application. 
+		
+	
+	[[tutorial_commands_toolbar2">
+=== Adding a toolbar
+
+		
 			Select the
-			<guilabel>TrimBars</guilabel>
+			_TrimBars_
 			node under your
-			<wordasword>TrimmedWindow</wordasword>
+			_TrimmedWindow_
 			entry and press the
 			<guibutton>Add...</guibutton>
 			button. The
@@ -23,59 +23,50 @@
 			trimbar
 			appear on the top of
 			the application.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commands40.png" scale="30" />
+		
+image::commands40.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a toolbar</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding a toolbar,pdfwidth=60%]
+		
 
 
-		<para>
+		
 			Add a
-			<guilabel>ToolBar</guilabel>
+			_ToolBar_
 			model element
 			to your TrimBar. Add a
-			<guilabel>Handled ToolItem</guilabel>
+			_Handled ToolItem_
 			to this toolbar
 			which
 			points to the
 			<code>org.eclipse.ui.file.saveAll</code>
 			command.
-		</para>
-		<para>
+		
+		
 			Set the label for this entry to
 			<parameter>Save</parameter>
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/commands50.png" scale="35" />
+		
+image::commands50.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a menu item to the menu</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Adding a menu item to the menu,pdfwidth=60%]
+		
+	
 
 	
 
-	<section id="uicomponents_save">
-		<title>Validating</title>
-		<para>
+[[uicomponents_save">
+=== Validating
+		
 			Validate that your save handler is called if you select Save
 			from the
 			menu or the toolbar.
-		</para>
-	</section>
+		
+	
 
-</section>

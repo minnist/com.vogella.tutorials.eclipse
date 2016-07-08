@@ -1,21 +1,21 @@
-<section id="stash_gitrepo">
-	<title>Stash via the Git repository view</title>
+
+	<title>Stash via the Git repository view
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>stash via the Git repositories view
 		</secondary>
 	</indexterm>
-	<para>
+	
 		The
 		<code>git stash</code>
 		command is available in the
-		<guilabel></guilabel>
-		<wordasword>Git repositories</wordasword>
+		__
+		_Git repositories_
 		view. Right-click on your Git repository and select
-		<guilabel>Stash Changes</guilabel>
+		_Stash Changes_
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_stash10.png" scale="25" />
@@ -24,8 +24,8 @@
 				<phrase>Stash changes in EGit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_stash20.png"/>
@@ -34,8 +34,8 @@
 				<phrase>Stash changes in EGit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egit_stash30.png"/>
@@ -44,5 +44,5 @@
 				<phrase>Stash changes in EGit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-</section>
+	
+

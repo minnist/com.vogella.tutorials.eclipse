@@ -1,97 +1,89 @@
 <chapter id="tutorial_dynamicmenus">
-	<title>Optional exercise: Creating dynamic menu entries</title>
+	<title>Optional exercise: Creating dynamic menu entries
 	<indexterm>
 		<primary>DynamicMenuContribution</primary>
 		<secondary>Example
 		</secondary>
 	</indexterm>
-	<section id="tutorial_dynamicmenus1">
-		<title>Target of this exercise</title>
-		<para>
+[[tutorial_dynamicmenus1">
+=== Target of this exercise
+		
 			In this exercise you create dynamic menu
 			entries with the model
 			service. For this you use the
-			<wordasword>DynamicMenuContribution</wordasword>
+			_DynamicMenuContribution_
 			model element which was introduced in the
 			<xref linkend="menuadvanced_dynamic" />
 			chapter.
-		</para>
-	</section>
+		
+	
 
-	<section id="tutorial_dynamicmenus2">
-		<title>Create handler class</title>
-		<para>
+[[tutorial_dynamicmenus2">
+=== Create handler class
+		
 			Create the following class in your application plug-in. This
 			simple
 			class is later used as example handler.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dynamicmenu/PrintMessageHandler.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_dynamicmenus3">
-		<title>Create class for DynamicMenuContribution</title>
-		<para>
+		
+	
+[[tutorial_dynamicmenus3">
+=== Create class for DynamicMenuContribution
+		
 			Create the following implementation for the
-			<wordasword>DynamicMenuContribution</wordasword>
+			_DynamicMenuContribution_
 			in your application plug-in.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/dynamicmenu/DynamicMenuEntries.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_dynamicmenus4">
-		<title>Add DynamicMenuContribution model element</title>
-		<para>
+		
+	
+[[tutorial_dynamicmenus4">
+=== Add DynamicMenuContribution model element
+		
 			Add to one of for menu another menu entry called "Recently
 			opened..."
 			and
 			add a
-			<wordasword>DynamicMenuContribution</wordasword>
+			_DynamicMenuContribution_
 			to this menu, pointing to your
 			<code>DynamicMenuEntries.java</code>
 			class.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dynamicmenucontributions10.png"
+		
+		
+image::dynamicmenucontributions10.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding DynamicMenuContribution to the model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Adding DynamicMenuContribution to the model,pdfwidth=60%]
+		
+	
 
 
-	<section id="tutorial_dynamicmenus_validate">
-		<title>Validating</title>
-		<para>
+[[tutorial_dynamicmenus_validate">
+=== Validating
+		
 			Start your application and validate that the menu entries are
 			dynamically calculated.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dynamicmenucontributions20.png"
+		
+image::dynamicmenucontributions20.png"
 						scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding DynamicMenuContribution to the model</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Adding DynamicMenuContribution to the model,pdfwidth=60%]
+		
 
-	</section>
+	
 
 </chapter>

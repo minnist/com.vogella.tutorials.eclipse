@@ -1,58 +1,58 @@
-<section id="desconsumer">
-	<title>Tutorial: Using services via declarative services</title>
-	<para> Of course you can also define the consumption of services via
+
+	<title>Tutorial: Using services via declarative services
+	 Of course you can also define the consumption of services via
 		DS.
-	</para>
-	<para>
+	
+	
 		Create a new plug-in "de.vogella.osgi.ds.quoteconsumer". Do not
 		use a
 		template, do not create an activator. Import the package
 		"de.vogella.osgi.quote" in MANIFEST.MF on the
-		<guilabel>Dependencies</guilabel>
+		_Dependencies_
 		tab.
-	</para>
-	<para> Create the following class. </para>
-	<para>
+	
+	 Create the following class. 
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/dsconsumer/QuoteConsumer.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		<tip> Note that this class has no dependency to OSGi.</tip>
-	</para>
-	<para>
+	
+	
 		Create the
 		<filename>OSGI-INF</filename>
 		folder and create a new
-		<wordasword>Component Definition</wordasword>
+		_Component Definition_
 		in this folder.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dsconsumer10.gif" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> This time we will use a service. Maintain the "Referenced
+	 This time we will use a service. Maintain the "Referenced
 		Services".
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dsconsumer20.gif" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para>
+	
 		Make the relationship to the
 		<code>bind()</code>
 		and
@@ -60,40 +60,39 @@
 		method by selecting your entry can by pressing the
 		<guibutton>Edit</guibutton>
 		button.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/dsconsumer30.gif" />
 
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> The result component.xml should look like: </para>
+	 The result component.xml should look like: 
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/dsconsumer/component.adoc[]
 		</programlisting>
-	</para>
-	<para> The result MANIFEST.MF should look like: </para>
+	
+	 The result MANIFEST.MF should look like: 
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/dsconsumer/MANIFEST.MF" />
 		</programlisting>
-	</para>
-	<para> Export your plug-in and install it via:
+	
+	 Export your plug-in and install it via:
 		install
 		file:c:\temp\bundles\plugins
 		\de.vogella.osgi.ds.quoteconsumer.jar
-	</para>
-	<para>"If you start the bundle now with "start id_of_your_bundle" you
+	
+	"If you start the bundle now with "start id_of_your_bundle" you
 		should get the feedback that the service was set and one quote should
 		be returned
-	</para>
-</section>
+	

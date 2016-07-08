@@ -1,5 +1,5 @@
-<section id="firstswt_button">
-	<title>Exercise: SWT Button</title>
+
+	<title>Exercise: SWT Button
 
 	
 		Add a
@@ -16,4 +16,3 @@
 		</programlisting>
 	
 
-</section>

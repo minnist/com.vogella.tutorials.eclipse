@@ -1,25 +1,23 @@
-<section id="eclipsejavaperspective" role="wrapper">
-	<title>The Eclipse Java perspective</title>
-	<indexterm>
-		<primary>Java perspective</primary>
-	</indexterm>
+
+	<title>The Eclipse Java perspective
+
 	
-	<section id="eclipsejavaperspective_packageexplorer">
-		<title>Package Explorer view</title>
+[[eclipsejavaperspective_packageexplorer">
+=== Package Explorer view
 		<indexterm>
 			<primary>Package Explorer view</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			allows you to browse the structure of your projects and to open files
 			in an
-			<wordasword>editor</wordasword>
+			_editor_
 			via a
 			double-click on the file.
-		</para>
-		<para>
+		
+		
 			It is also used to change the
 			structure of your
 			project. For
@@ -34,59 +32,48 @@
 			folder shows you the
 			available
 			options.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/packageexplorerview20.png"
+		
+image::packageexplorerview20.png"
 						scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>Package Explorer</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Package Explorer,pdfwidth=60%]
+		
+		
 			For more info on the Package Explorer see
 			<xref linkend="sourcenavigation_packageexplorer" />
 			and
 			<xref linkend="packageexplorerlinkwitheditor" />
 			.
-		</para>
-	</section>
+		
 	
-	<section id="eclipsejavaperspective_outlineview">
-		<title>Outline view</title>
+	
+[[eclipsejavaperspective_outlineview">
+=== Outline view
 		<indexterm>
 			<primary>Outline view</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Outline</guilabel>
+			_Outline_
 			view
 			shows the structure of the currently selected source file.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/outlineview10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Outline View</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="eclipsejavaperspective_problems">
-		<title>Problems view</title>
+		
+image::outlineview10.png[Outline View,pdfwidth=60%]
+		
+	
+[[eclipsejavaperspective_problems">
+=== Problems view
 		<indexterm>
 			<primary>Problems view</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view
 			shows errors and warning messages.
 			Sooner or later you will run into problems
@@ -94,40 +81,32 @@
 			your
 			project setup. To view the problems in your
 			project, you can use the
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view
 			which is part of the standard Java
-			<wordasword>perspective</wordasword>
+			_perspective_
 			. If this
 			view
 			is closed, you
 			can
 			open it
 			via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Problems</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Problems]
 			.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/problemsview10.png" scale="30" />
+		
+image::problemsview10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Errors in the problem view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Errors in the problem view,pdfwidth=60%]
+		
 
 
-		<para>
+		
 			The messages which are displayed in the
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view can
 			be configured via the drop-down menu of the
 			view
@@ -135,120 +114,77 @@
 			from the currently
 			selected
 			project, select
-			<guilabel>Configure Contents</guilabel>
+			_Configure Contents_
 			and set the Scope to
-			<guilabel>On any element in the same project</guilabel>
+			_On any element in the same project_
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/problemsview20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Drop-down menu of the problems view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::problemsview20.png[Drop-down menu of the problems view,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/problemsview30.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Customizing</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::problemsview30.png[Customizing,pdfwidth=60%]
+		
 
-		<para>
+		
 			The
-			<guilabel>Problems</guilabel>
+			_Problems_
 			view
 			also allows you to trigger a
-			<wordasword>Quick fix</wordasword>
+			_Quick fix_
 			via a right mouse-click on several selected messages. See
 			<xref linkend="quickfix" />
 			for details on the
-			<wordasword>Quick fix</wordasword>
+			_Quick fix_
 			functionality.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/problemsview40.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Customizing</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::problemsview40.png[Customizing,pdfwidth=60%]
+		
 
-	</section>
-	<section id="eclipsejavaperspective_javadoc">
-		<title>Javadoc view</title>
+	
+[[eclipsejavaperspective_javadoc">
+=== Javadoc view
 		<indexterm>
 			<primary>Javadoc view</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<guilabel>Javadoc</guilabel>
+			_Javadoc_
 			view
 			shows the documentation of the selected element in the Java
-			<wordasword>editor</wordasword>
+			_editor_
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javadocview12.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Javadoc View</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::javadocview12.png[Javadoc View,pdfwidth=60%]
+		
 
-	</section>
-	<section id="eclipsejavaperspective_editor">
-		<title>Java editor</title>
+	
+[[eclipsejavaperspective_editor">
+=== Java editor
 		<indexterm>
 			<primary>Java editor</primary>
 		</indexterm>
-		<para>
+		
 			The Java
-			<wordasword>editor</wordasword>
+			_editor_
 			is used to modify the Java source code. Each
 			Java source file is
 			opened in a separate
-			<wordasword>editor</wordasword>
+			_editor_
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javaeditorintro10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Java editor</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>If you click in the left column of the editor, you can configure its
+		
+image::javaeditorintro10.png[Java editor,pdfwidth=60%]
+		
+		If you click in the left column of the editor, you can configure its
 			properties, for example, that line number should be displayed.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javaeditorintro20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Java editor</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::javaeditorintro20.png[Java editor,pdfwidth=60%]
+		
+	
 
-</section>

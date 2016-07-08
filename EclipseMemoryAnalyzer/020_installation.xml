@@ -1,21 +1,21 @@
-<section id="mat_installation">
-	<title>Installation</title>
-	<para>
+
+	<title>Installation
+	
 		Install Eclipse MAT via the
-		<menuchoice>
+		menu:
 			<guimenu>Help</guimenu>
 			<guisubmenu>Install New Software...</guisubmenu>
 		</menuchoice>
 		menu entry.
 		Select the update site of your release from the drop-down box and once its content is downloaded, select
-		<guilabel>General Purpose Tools</guilabel>
+		_General Purpose Tools_
 		and its sub-entries
-		<guilabel>Memory Analyzer</guilabel>
+		_Memory Analyzer_
 		and
-		<guilabel>Memory Analyzer(Charts)</guilabel>
+		_Memory Analyzer(Charts)_
 		.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/matinstallation10.png"/>
@@ -24,5 +24,5 @@
 				<phrase>Installation of MAT</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-</section>
+	
+

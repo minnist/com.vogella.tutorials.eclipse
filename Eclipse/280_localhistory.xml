@@ -1,8 +1,8 @@
-<section id="localhistory" role="wrapper">
-	<title>Local history for files</title>
-	<section id="localhistory_overview">
-		<title>Local history</title>
-		<para>Eclipse keeps a local history of files which have changed.
+
+	<title>Local history for files
+[[localhistory_overview">
+=== Local history
+		Eclipse keeps a local history of files which have changed.
 			Every time an editable file is saved, the Eclipse
 			runtime
 			updates the
@@ -12,50 +12,39 @@
 			This local history can then be accessed and used to
 			revert the file
 			changes or to compare against a previous version.
-		</para>
-	</section>
-	<section id="localhistory_compare">
-		<title>Compare files based on local history</title>
-		<para>
+		
+	
+[[localhistory_compare">
+=== Compare files based on local history
+		
 			To compare the current version of a file with a local version stored
 			by
 			Eclipse, right-click on the file and select
-			<menuchoice>
-				<guimenu>Compare With</guimenu>
-				<guisubmenu>Local History...</guisubmenu>
-			</menuchoice>
+			menu:Compare With[Local History...]
 			from the context menu. Eclipse opens the
-			<guilabel>History</guilabel> view.
-		</para>
-		<para>
+			_History_ view.
+		
+		
 			 If you double-click on an older version of the file, the
-			<guilabel>Compare</guilabel>
+			_Compare_
 			view
 			shows the differences as depicted in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/localcompare10.png" scale="30" />
+		
+		
+image::localcompare10.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Local compare view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="localhistory_replace">
-		<title>Replace files based on local history</title>
-		<para>
+					<phrase>Local compare view,pdfwidth=60%]
+		
+	
+[[localhistory_replace">
+=== Replace files based on local history
+		
 			You can replace files based on the local history. Right-click on
 			the
 			file and select
-			<menuchoice>
-				<guimenu>Replace With</guimenu>
-				<guisubmenu>Local history...</guisubmenu>
-			</menuchoice>
+			menu:Replace With[Local history...]
 			to start this action.
-		</para>
-	</section>
+		
+	
 
-</section>

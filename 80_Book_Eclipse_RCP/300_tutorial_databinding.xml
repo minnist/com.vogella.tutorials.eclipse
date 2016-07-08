@@ -1,8 +1,8 @@
 <chapter id="tutorial_databinding">
-	<title>Exercise: Data binding for SWT widgets</title>
-	<section id="tutorial_databinding1">
-		<title>Add new plug-in dependencies to the application plug-in</title>
-		<para>
+	<title>Exercise: Data binding for SWT widgets
+[[tutorial_databinding1">
+=== Add new plug-in dependencies to the application plug-in
+		
 			In the
 			<filename>MANIFEST.MF</filename>
 			, add the following plug-ins as dependencies to your
@@ -11,29 +11,29 @@
 
 			<itemizedlist>
 				<listitem>
-					<para>org.eclipse.core.databinding
-					</para>
+					org.eclipse.core.databinding
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						org.eclipse.core.databinding.beans
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						org.eclipse.core.databinding.property
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>org.eclipse.jface.databinding
-					</para>
+					org.eclipse.jface.databinding
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
-	<section id="tutorial_databinding2">
-		<title>Add the plug-in dependencies to the model plug-in</title>
-		<para>
+		
+	
+[[tutorial_databinding2">
+=== Add the plug-in dependencies to the model plug-in
+		
 			Add
 			<code>org.eclipse.core.databinding</code>
 			as dependency to the
@@ -41,12 +41,12 @@
 			file of the
 			<code>com.example.e4.rcp.todo.model</code>
 			plug-in.
-		</para>
-	</section>
-	<section id="tutorial__databinding2">
-		<title>Update your Todo data model to be observable</title>
+		
+	
+[[tutorial__databinding2">
+=== Update your Todo data model to be observable
 
-		<para>
+		
 			Add constants for the property name in your
 			<code>Todo</code>
 			class for them to use them later in data binding. The constants must reflect the bean property names in the
@@ -58,18 +58,18 @@
 			class to use
 			<code>WritableValue</code>
 			for its members.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Todo.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="tutorial_databinding3">
-		<title>Remove the modification listeners in your code</title>
-		<para>
+[[tutorial_databinding3">
+=== Remove the modification listeners in your code
+		
 			Delete your
 			<code>addModifyListener()</code>
 			methods in the
@@ -78,9 +78,9 @@
 			<code>Todo</code>
 			object and the user interface will be handled by the JFace Data
 			Binding framework.
-		</para>
+		
 		<warning>
-			<para>
+			
 				Ensure to remove these listeners. Otherwise you will see "strange"
 				side-effects like jumping cursors. Ensure that you
 				removed it, via a text search for
@@ -88,73 +88,65 @@
 				term in your
 				<code>TodoDetailsPart</code>
 				class.
-			</para>
+			
 		</warning>
 
-	</section>
+	
 
-	<section id="tutorial_databinding4b">
-		<title>Implement data binding in TodoDetailsPart</title>
+[[tutorial_databinding4b">
+=== Implement data binding in TodoDetailsPart
 
-		<para>
+		
 			Change your implementation of the
 			<code>TodoDetailsPart</code>
 			class
 			to use data binding based on the following example code.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Binding.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="tutorial_databinding_validate">
-		<title>Validating</title>
-		<para>
+	
+[[tutorial_databinding_validate">
+=== Validating
+		
 			Use your wizard to create new
 			<code>Todo</code>
 			objects. The following screenshot shows the first page of the wizard.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/newtodo_wizard10.png" />
+		
+		
+image::newtodo_wizard10.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>,pdfwidth=60%]
+		
+		
 			Test if your implementation behaves correctly. Ensure that new Todo
 			objects
 			are
 			shown in the
 			table after pressing the
-			<guilabel>Load data</guilabel>
+			_Load data_
 			button.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/newtodo_wizard20.png" />
+		
+		
+image::newtodo_wizard20.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>,pdfwidth=60%]
+		
 		<note>
-			<para>
+			
 				Your detail part
 				is currently not supplied with a Todo, only
 				the
 				wizard can currently be used to test the
 				databinding. This will be change
 				in a later exercise.
-			</para>
+			
 		</note>
-	</section>
+	
 </chapter>

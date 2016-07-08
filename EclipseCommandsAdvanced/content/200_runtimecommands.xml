@@ -1,32 +1,31 @@
-<section id="runtimecommands">
-	<title>Defining commands at runtime</title>
-	<para>You can create commands at runtime. Create project
+
+	<title>Defining commands at runtime
+	You can create commands at runtime. Create project
 		"de.vogella.rcp.commands.runtimecommands" using the "Hello RCP"
 		template. 
-	</para>
-	<para> Define a menu contribution. Maintain the class
+	
+	 Define a menu contribution. Maintain the class
 		"de.vogella.rcp.commands.runtimecommands.DefineCommands" in this menu
-		contribution. </para>
+		contribution. 
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/runtime10.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
-	<para> Create the following class. </para>
-	<para>
+	 Create the following class. 
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/runtime/DefineCommands.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>Run the example, your application should have the Exit command in
-		the menu.  </para>
+	Run the example, your application should have the Exit command in
+		the menu.  
 
 
-</section>

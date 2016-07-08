@@ -1,11 +1,11 @@
-<section id="i18n_plugin">
-	<title>Translating plugin.xml</title>
+
+	<title>Translating plugin.xml
 	<indexterm>
 		<primary>i22n</primary>
 		<secondary>plugin.xml</secondary>
 	</indexterm>
 
-	<para>
+	
 		Similar to the usage of keys in the application model, you can use the key prefixed with % in the
 		<filename>plugin.xml</filename>
 		file. The Eclipse tooling supports extracting existing
@@ -15,14 +15,14 @@
 		file. Select your
 		<filename>plugin.xml</filename>
 		file, right-click on it and select
-		<menuchoice>
+		menu:
 			<guimenu>Plug-in Tools</guimenu>
 			<guisubmenu>Externalize Strings</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/pdetools10.png" scale="60" />
@@ -31,16 +31,16 @@
 				<phrase>Eclipse PDE Wizard for externizing plugin.xml</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Via
-		<menuchoice>
+		menu:
 			<guimenu>PDE Tools</guimenu>
 			<guisubmenu>Internationalize</guisubmenu>
 		</menuchoice>
 		you can also directly create
 		one or several fragments for the result of
 		the internationalization.
-	</para>
-</section>
+	
+
 

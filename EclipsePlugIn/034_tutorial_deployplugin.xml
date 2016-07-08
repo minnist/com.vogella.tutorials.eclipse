@@ -1,68 +1,55 @@
-<section id="p2deployplugin" role="wrapper">
-	<title>Exercise: Create a feature for your plug-in</title>
+
+	<title>Exercise: Create a feature for your plug-in
 
 
-	<section id="p2deployplugin_updatesite">
-		<title>Create an update site</title>
-		<para>
+[[p2deployplugin_updatesite">
+=== Create an update site
+		
 			You can create an update site for your feature in a local directory
 			on your machine. For this,
 			select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Export</guisubmenu>
-				<guisubmenu>Deployable features</guisubmenu>
-			</menuchoice>
+			menu:File[Export > Deployable features]
 			.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pluginfeatureexport10.png"/>
+		
+image::pluginfeatureexport10.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pluginfeatureexport20.png"/>
+		
+image::pluginfeatureexport20.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			To use your category, switch to the
-			<guilabel>Options</guilabel>
+			_Options_
 			tab and select the path to your
 			<filename>category.xml</filename>
 			file in the
-			<guilabel>Categorize repository</guilabel>
+			_Categorize repository_
 			option.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/pluginfeatureexport30.png"/>
+		
+		
+image::pluginfeatureexport30.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
+		
+	
 
-	<section id="p2deployplugin_install">
-		<title>Install feature via the Eclipse update manager</title>
-		<para>
+[[p2deployplugin_install">
+=== Install feature via the Eclipse update manager
+		
 			Use the Eclipse update manager via
-			<menuchoice>
-				<guimenu>Help</guimenu>
-				<guisubmenu>Install New Software...</guisubmenu>
-			</menuchoice>
+			menu:Help[Install New Software...]
 			to install this new feature into
 			your Eclipse IDE.
-		</para>
+		
 
-		<para>
+		
 			Use
 			the
 			update
@@ -73,47 +60,41 @@
 			install your feature. In case you don't see your
 			feature, try
 			deselecting the
-			<guilabel>Group items by category</guilabel>
+			_Group items by category_
 			flag. In this case, you have forgotten to set your category during the
 			export.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/idepluginfeatureinstall10.png"/>
+		
+image::idepluginfeatureinstall10.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/idepluginfeatureinstall20.png"/>
+		
+image::idepluginfeatureinstall20.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/idepluginfeatureinstall30.png"/>
+		
+		
+image::idepluginfeatureinstall30.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
 		<note>
-			<para>If you put the resulting files on a webserver under a public
+			If you put the resulting files on a webserver under a public
 				accessible URL, your users could
 				install your
 				features from
 				this URL.
-			</para>
+			
 		</note>
-	</section>
-	<section id="p2deployplugin_validate">
-		<title>Validate installation</title>
+	
+[[p2deployplugin_validate">
+=== Validate installation
 
-		<para>
+		
 			Restart the Eclipse IDE after the
 			installation.
 			Ensure that your
@@ -123,15 +104,12 @@
 			Eclipse
 			installation and
 			can be used.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/idepluginfeatureinstall40.png"/>
+		
+image::idepluginfeatureinstall40.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-	</section>
-</section>
+	

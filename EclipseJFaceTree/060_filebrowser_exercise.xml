@@ -1,71 +1,61 @@
-<section id="jfacefilebrowser" role="wrapper">
-	<title>Exercise: File browser via a TreeViewer</title>
-	<section id="filebrowser_project">
-		<title>Create a new application</title>
-		<para>
+
+	<title>Exercise: File browser via a TreeViewer
+[[filebrowser_project">
+=== Create a new application
+		
 			This exercise is a stand-alone exercise and can be used to
 			repeat the steps of creating an Eclipse 4 application.
-		</para>
-		<para>
+		
+		
 			Use the
-			<wordasword>Eclipse 4 wizard</wordasword>
+			_Eclipse 4 wizard_
 			from
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Eclipse 4</guisubmenu>
-				<guisubmenu>Eclipse 4 Application Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Eclipse 4 > Eclipse 4 Application Project]
 			to create a new Eclipse 4 application without sample data called
-			<wordasword>com.example.e4.filebrowser</wordasword>
+			_com.example.e4.filebrowser_
 			.
-		</para>
+		
 
-		<para>The important selection in the last wizard page is highlighted
+		The important selection in the last wizard page is highlighted
 			in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/filebrowser_exercise10.png"
+		
+		
+image::filebrowser_exercise10.png"
 						scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Empty content</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="filebrowser_gif">
-		<title>Add an image file</title>
-		<para>
+					<phrase>Empty content,pdfwidth=60%]
+		
+	
+[[filebrowser_gif">
+=== Add an image file
+		
 			Download or create an icon called folder.png and place it into
 			the
 			"icons" folder of your plug-in.
-		</para>
-		<para>
+		
+		
 			You find an example icon under the
 			following URL:
-			<ulink url="http://download.vogella.com/resources/folder.png"> Folder icon</ulink>
+			http://download.vogella.com/resources/folder.png"> Folder icon
 			.
-		</para>
-		<para>
+		
+		
 			This icon is taken from the following icon collection:
-			<ulink url="http://www.famfamfam.com/lab/icons/silk/">FamFamFam icons</ulink>
-		</para>
-	</section>
-	<section id="filebrowser_part">
-		<title>Create a part</title>
-		<para>
+			http://www.famfamfam.com/lab/icons/silk/">FamFamFam icons
+		
+	
+[[filebrowser_part">
+=== Create a part
+		
 			Add a part stack with a
 			part
 			to your application model and display a
 			<code>TreeViewer</code>
 			in this
 			part.
-		</para>
-		<para>
+		
+		
 			Implement a class for the
 			<code>ITreeContentProvider</code>
 			interface
@@ -73,42 +63,41 @@
 			Javadoc
 			of
 			this class to understand the methods of this interface.
-		</para>
-		<para>
+		
+		
 			Also implement your custom
 			<code>LabelProvider</code>
 			for the tree.
-		</para>
-		<para>
+		
+		
 			Use
 			<code>viewer.setInput(File.listRoots());</code>
 			to set the initial input to the
 			viewer.
-		</para>
+		
 
-		<para>
+		
 			The following listing contains an example implementation for
 			this
 			exercise. It assumes that you added the "folder.png" icon to the
 			"icons" folder. It also demonstrates the usage of a
 			<code>ViewLabelProvider</code>
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/filebrowser/FileBrowserPart.java" />
 			</programlisting>
-		</para>
-		<para>Link
+		
+		Link
 			from your part in the application model to your new class.
-		</para>
+		
 
-	</section>
-	<section id="filebrowser_validate">
-		<title>Validating</title>
-		<para>Start your new application ensure that you see the content of
+	
+[[filebrowser_validate">
+=== Validating
+		Start your new application ensure that you see the content of
 			your file system in your tree.
-		</para>
-	</section>
-</section>
+		
+	

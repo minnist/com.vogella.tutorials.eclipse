@@ -1,41 +1,41 @@
-<section id="views">
-	<title>WorkbenchParts and Perspectives</title>
-	<section id="views_overview">
-		<title>WorkbenchParts - Views and Editors</title>
-		<para>
+
+	<title>WorkbenchParts and Perspectives
+[[views_overview">
+=== WorkbenchParts - Views and Editors
+		
 			As described earlier the
 			<code>WorkbenchWindow</code>
 			and the
 			<code>WorkbenchPage</code>
 			represent the visual and inner part of the graphical user interface.
 
-		</para>
-		<para>
+		
+		
 			The
 			<code>WorkbenchPage</code>
 			contains Parts, which can be
-			<wordasword>Views</wordasword>
+			_Views_
 			or
-			<wordasword>Editors</wordasword>
+			_Editors_
 			.
-		</para>
-		<para>
-			<wordasword>Views</wordasword>
+		
+		
+			_Views_
 			are used to display information in an RCP application; they
 			can also
 			be used to change data.
-			<wordasword>Views</wordasword>
+			_Views_
 			extend the abstract class
 			<code>ViewPart</code>
 			.
-			<wordasword>Editors</wordasword>
+			_Editors_
 			extend the abstract
 			<code>EditorPart</code>
 			. Both extend
 			<code>WorkbenchPart</code>
 			.
-		</para>
-		<para>
+		
+		
 			An
 			<code>editor</code>
 			typically requires that the user explicitly select "save" to apply
@@ -46,39 +46,39 @@
 			All editors are opened in the same area. Via the
 			perspective you can
 			configure if the editor area is visible or not.
-		</para>
-		<para>
-			<wordasword>Views</wordasword>
+		
+		
+			_Views_
 			and
-			<wordasword>Editors</wordasword>
+			_Editors_
 			are defined via extension points in the file <filename>plugin.xml</filename> via the tab
 			"Extensions".
-		</para>
-		<para>
-			<wordasword>Views</wordasword>
+		
+		
+			_Views_
 			are defined via the extension point "org.eclipse.ui.views"
 			and
-			<wordasword>Editors</wordasword>
+			_Editors_
 			via the extension point "org.eclipse.ui.editors".
-		</para>
-		<para>
-			<wordasword>Views</wordasword>
+		
+		
+			_Views_
 			must implement the
 			<code>createPartControl()</code>
 			and
 			<code>setFocus()</code>
 			methods.
-		</para>
-		<para>
+		
+		
 
 			<code>createPartControl()</code>
 			is used to create the UI components of the
 			<code>View</code>
 			.
-		</para>
-		<para>
+		
+		
 
-			<para>
+			
 				createPartControl() will get as parameter a
 				<code>Composite</code>
 				which can be used to construct the user interface. This composite
@@ -88,24 +88,24 @@
 				layout manager assigned to it. This layout manager assigns the same
 				space to all components
 				equally.
-			</para>
+			
 			<code>setFocus()</code>
 			must set the focus to a specific UI component.
-		</para>
+		
 
-	</section>
-	<section id="workbenchparts_perspective">
-		<title>Perspective</title>
-		<para>
+	
+[[workbenchparts_perspective">
+=== Perspective
+		
 			A
 			<code>Perspective</code>
 			describes a certain configuration of
-			<wordasword>Views</wordasword>
+			_Views_
 			and
-			<wordasword>Editors</wordasword>
+			_Editors_
 			.
-		</para>
-		<para>
+		
+		
 			A
 			<code>Perspective</code>
 			is defined via "org.eclipse.ui.perspectives". The
@@ -115,14 +115,14 @@
 			are either defined via a Java class defined in the extension point
 			"org.eclipse.ui.perspectives" or via the
 			"org.eclipse.ui.perspectiveExtensions".
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/perspective/addView.txt" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<code>layout.addView()</code>
 			adds a view to the perspective.
 
@@ -139,21 +139,20 @@
 
 			<code>layout.addPlaceholder("view_id",....)</code>
 			to open a View with the "view_id" ID in this placeholder.
-		</para>
-		<para>
+		
+		
 			You can also group view via a
 			<code>IFolderLayout</code>
 			which can be created via
 			<code>layout.createFolder()</code>
 			call and by adding
-			<wordasword>Views</wordasword>
+			_Views_
 			to this folder via the
 			<code>addView(id)</code>
 			method on
 			<code>IFolderLayout</code>
 			.
-		</para>
+		
 
-	</section>
+	
 
-</section>

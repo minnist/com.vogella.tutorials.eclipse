@@ -1,58 +1,36 @@
-<section id="eclipsejava8" role="wrapper">
-	<title>Java 8 support in Eclipse</title>
-	<section id="eclipsejava8_overview">
-		<title>Eclipse and Java 8</title>
+
+	<title>Java 8 support in Eclipse
+[[eclipsejava8_overview">
+=== Eclipse and Java 8
 		<indexterm>
 			<primary>Java 8</primary>
 		</indexterm>
-		<para>
+		
 			The Eclipse IDE has full support for Java 8. You can use content assists, quick fixes and refactoring for Java
 			8.
-		</para>
-	</section>
-	<section id="eclipsejava8_annouymoustolambda">
-		<title>Example: Converting anonymous inner classes to lambda expressions and vice versa</title>
-		<para>
+		
+	
+[[eclipsejava8_annouymoustolambda">
+=== Example: Converting anonymous inner classes to lambda expressions and vice versa
+		
 			This section demonstrates the quick fix for converting anonymous inner classes to lambda expressions.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/java8/Java8Example.java" />
 			</programlisting>
-		</para>
-		<para>You can use a quick fix for the conversion as demonstrated via the following screenshots.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images//convertannoymoustolambda10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		You can use a quick fix for the conversion as demonstrated via the following screenshots.
+		
+image::/convertannoymoustolambda10.png[,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images//convertannoymoustolambda20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::/convertannoymoustolambda20.png[,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images//convertannoymoustolambda30.png" scale="40"/>
-				</imageobject>
-				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+image::/convertannoymoustolambda30.png" scale="40[,pdfwidth=60%]
+		
+	
 
-</section>

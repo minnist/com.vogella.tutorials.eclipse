@@ -1,8 +1,8 @@
-<section id="wtp_servlets">
-	<title>Exercise: Create and run a servlet</title>
-	<section id="servlets_target">
-		<title>Target</title>
-		<para>In this exercise you create a servlet
+
+	<title>Exercise: Create and run a servlet
+[[servlets_target">
+=== Target
+		In this exercise you create a servlet
 			which works as a webpage
 			counter. This
 			servlet keeps track of the
@@ -11,65 +11,53 @@
 			servlet persists the number
 			of visitors in a text
 			file.
-		</para>
-	</section>
-	<section id="servlets_project">
-		<title>Create web project</title>
-		<para>
+		
+	
+[[servlets_project">
+=== Create web project
+		
 			Create a
 			new
-			<wordasword>Dynamic Web Project</wordasword>
+			_Dynamic Web Project_
 			called
-			<wordasword>com.vogella.web.filecounter</wordasword>
+			_com.vogella.web.filecounter_
 			by selecting
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Web</guisubmenu>
-				<guisubmenu>Dynamic Web Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Web > Dynamic Web Project]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project10.png" />
+		
+		
+image::wtp_first_project10.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project20.png" />
+		
+		
+image::wtp_first_project20.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Press twice the
-			<guilabel>Next</guilabel>
+			_Next_
 			button and select the
-			<guilabel>Generate web.xml deployment descriptor</guilabel>
+			_Generate web.xml deployment descriptor_
 			on the last page.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project30.png" />
+		
+		
+image::wtp_first_project30.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Afterwards press the
 			<guibutton>Finish</guibutton>
 			button.
-		</para>
-		<para>
+		
+		
 			If Eclipse asks you, to switch to the
-			<wordasword>Java EE Perspective</wordasword>
+			_Java EE Perspective_
 			answer yes.
-		</para>
-		<para>
+		
+		
 			A new project has been created with the standard structure of
 			a
 			Java
@@ -79,55 +67,48 @@
 			the JAR files that the Java web
 			application
 			requires.
-		</para>
-	</section>
+		
+	
 
-	<section id="servlets_dao">
-		<title>Creating Data Access Object</title>
-		<para>
+[[servlets_dao">
+=== Creating Data Access Object
+		
 			Create a new package called
-			<wordasword>com.vogella.web.filecounter.dao</wordasword>
+			_com.vogella.web.filecounter.dao_
 			.
-		</para>
-		<para>
+		
+		
 			Create the following new Java class to read and write the
 			counter value to and from the file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/counter/FileDao.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="servlets_createservlet">
-		<title>Creating the Servlet</title>
-		<para>
+[[servlets_createservlet">
+=== Creating the Servlet
+		
 			Create a servlet. Right-click on your project and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>Servlet</guisubmenu>
-			</menuchoice>
+			menu:New[Servlet]
 			.
 			Enter the following data.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project40.png" />
+		
+		
+image::wtp_first_project40.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project50.png" />
+		
+		
+image::wtp_first_project50.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>Press finish.</para>
-		<para>
+		
+		Press finish.
+		
 			You could also create a servlet without the wizard. The wizard
 			creates a Java class
 			which extends the
@@ -137,91 +118,83 @@
 			settings to the
 			<filename>web.xml</filename>
 			file.
-		</para>
-		<para>Enter the following code.</para>
-		<para>
+		
+		Enter the following code.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/counter/FileCounter.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			This code will read the counter from a file on the server and
 			return plain text to the browser. The servlet will increase the
 			counter if the user was inactive for 5 seconds.
-		</para>
-	</section>
+		
+	
 
-	<section id="servlets_runservlet">
-		<title>Deployment of the servlet</title>
-		<para>
+[[servlets_runservlet">
+=== Deployment of the servlet
+		
 			You application must be deployed to the server and started there.
 			Select your servlet or your project, right-click on it and select
-			<menuchoice>
-				<guimenu>Run As</guimenu>
-				<guisubmenu>Run on Server</guisubmenu>
-			</menuchoice>
+			menu:Run As[Run on Server]
 			from the context menu and select your existing server.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project60.png" />
+		
+		
+image::wtp_first_project60.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			Ensure your servlet is selected to run on the
 			server.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/wtp_first_project70.png" />
+		
+		
+image::wtp_first_project70.png" />
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 
 		<note>
-			<para>In case you get the error "The Tomcat server configuration at
+			In case you get the error "The Tomcat server configuration at
 				\Servers\Tomcat v7.0 Server at localhost-config is missing. Check
 				the server for errors.", simply delete the existing server
 				configuration and create a new one.
-			</para>
+			
 		</note>
-		<para>
+		
 			Press the
 			<guibutton>Finish</guibutton>
 			button.
-		</para>
-	</section>
-	<section id="servlets_validatedeployment">
-		<title>Validate the deployment</title>
-		<para>
+		
+	
+[[servlets_validatedeployment">
+=== Validate the deployment
+		
 			If the deployment was successfully you should be able to
 			access
 			your servlet via the following URL:
 			http://localhost:8080/com.vogella.web.filecounter/FileCounter
-		</para>
-	<para>
+		
+	
 		The servlet you return the number of times it was accessed. If
 		you
 		wait 5 seconds and
 		refresh the browser, the
 		number should
 		increase.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/wtp_first_project80.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Congratulations. You created your first working servlet with
 		Eclipse WTP!
-	</para>
-</section>
-</section>
+	
+

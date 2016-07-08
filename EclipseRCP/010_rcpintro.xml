@@ -1,10 +1,10 @@
-<section id="overview" role="wrapper">
-	<title>Eclipse based Applications</title>
-	<section id="overview_rcp">
-		<title>What are Eclipse RCP applications?</title>
-		<para> Eclipse was originally started as a modular IDE application.
-		</para>
-		<para>
+
+	<title>Eclipse based Applications
+[[overview_rcp">
+=== What are Eclipse RCP applications?
+		 Eclipse was originally started as a modular IDE application.
+		
+		
 			In
 			2004 Eclipse version 3.0 was released. The Eclipse 3.0 release
 			supported
@@ -16,21 +16,21 @@
 			on
 			the
 			same technology as the Eclipse IDE.
-		</para>
-		<para>
+		
+		
 			At this point the term
-			<wordasword>Eclipse RCP</wordasword>
+			_Eclipse RCP_
 			was
 			coined. Eclipse RCP is
 			short for
-			<wordasword>Eclipse Rich Client Platform</wordasword>
+			_Eclipse Rich Client Platform_
 			and indicates that the
 			Eclipse platform is used as a basis
 			to create
 			feature-rich stand-alone
 			applications.
-		</para>
-		<para> The release of Eclipse in version 4.x simplified and unified
+		
+		 The release of Eclipse in version 4.x simplified and unified
 			the
 			Eclipse
 			programming model which is now based on state of the art
@@ -45,12 +45,12 @@
 			user interface technology is replaced, for example you can exchange
 			the
 			SWT toolkit with JavaFX or GWT.
-		</para>
-	</section>
+		
+	
 
-	<section id="overview_advantages">
-		<title>Advantages of Eclipse based applications</title>
-		<para> The Eclipse platform forms the basis of the most successful
+[[overview_advantages">
+=== Advantages of Eclipse based applications
+		 The Eclipse platform forms the basis of the most successful
 			Java
 			IDE and
 			therefore is very stable and broadly used. It uses native
@@ -62,8 +62,8 @@
 			component
 			based
 			systems.
-		</para>
-		<para>
+		
+		
 			Companies such as IBM, SAP and Google use the Eclipse framework
 			as a basis for
 			their
@@ -71,15 +71,14 @@
 			flexible, fast
 			and
 			continues to evolve.
-		</para>
-		<para>The Eclipse platform also fosters a large community of
+		
+		The Eclipse platform also fosters a large community of
 			individuals which
 			provide support, information and extensions to the
 			Eclipse framework.
 			Tapping into this ecosystem allows you to find
 			required
 			resources and information.
-		</para>
-	</section>
+		
+	
 
-</section>

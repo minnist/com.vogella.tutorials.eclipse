@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse RCP and Plugin Internationalization - Tutorial</title>
+=== Eclipse RCP and Plugin Internationalization - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -27,20 +27,20 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>03.09.2013</pubdate>
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 
 		
 		<abstract id="abstract">
-			<title>Eclipse internationalization and localization</title>
-			<para> This article describes how to externalize your strings in
+	=== Eclipse internationalization and localization
+			 This article describes how to externalize your strings in
 				Eclipse RCP and Eclipse plug-ins and how to support different
 				languages. Includes how to translate your Eclipse 4.x workbench
 				model.
-			</para>
-			<para>
+			
+			
 				This article is based on Eclipse 4.2 (Eclipse Juno).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

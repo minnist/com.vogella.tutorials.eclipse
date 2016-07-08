@@ -1,68 +1,68 @@
 <chapter id="tutorial_wizard">
-	<title>Exercise: Create a wizard</title>
-	<section id="tutorial_wizard1">
-		<title>Create classes for the wizard</title>
-		<para>
+	<title>Exercise: Create a wizard
+[[tutorial_wizard1">
+=== Create classes for the wizard
+		
 			In this exercise you create a wizard in your
 			<code>com.example.e4.rcp.todo</code>
 			plug-in which allows you to create a new Todo item.
 			This exercise
 			demonstrates how you can reuse your part implementation in a wizard.
-		</para>
-		<para>
+		
+		
 			Create the
 			<code>com.example.e4.rcp.todo.wizards</code>
 			package in your application plug-in.
-		</para>
-		<para>
+		
+		
 			Create the following
 			<code>TodoWizardPage1</code>
 			class which is your first wizard page. This page
 			reuses the
 			<code>TodoDetailsPart</code>
 			for defining the user interface.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/wizards/TodoWizardPage1.java" />
 			</programlisting>
-		</para>
+		
 		<note>
-			<para>
+			
 				As you create this instance of the
 				<code>TodoDetailsPart</code>
 				class, there is no automatic dependency injection performed by the
 				framework. Therefore the above code calls the methods directly to
 				construct the user interface.
-			</para>
+			
 		</note>
-		<para>
+		
 			Create the following class for the second page
 			of the wizard. It
 			contains only a
-			<guilabel>Confirm</guilabel>
+			_Confirm_
 			checkbox
 			button.
-		</para>
+		
 		<warning>
-			<para>
+			
 				You will get a temporary compile error once you get this class
 				because it uses
 				the
 				<code>TodoWizard</code>
 				class which you create in the next step.
-			</para>
+			
 		</warning>
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/wizards/TodoWizardPage2.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			Create the
 			<code>TodoWizard</code>
 			class which extends the
@@ -72,27 +72,27 @@
 			and
 			<code>TodoWizardPage2</code>
 			as pages to it.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/wizards/TodoWizard.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="tutorial_wizard2">
-		<title>Adjust part</title>
-		<para>
+[[tutorial_wizard2">
+=== Adjust part
+		
 			To capture the changes in the user interface in your
 			<code>Todo</code>
 			object you need to extend your
 			<code>TodoDetailsPart</code>
 			class.
-		</para>
-		<para>
+		
+		
 			Add a
 			<code>ModifyListener</code>
 			to your text fields in your
@@ -100,17 +100,17 @@
 			class and write the content of the text fields back to the
 			<code>Todo</code>
 			object if the text fields are modified.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/wizards/ModifyListener.java" />
 			</programlisting>
-		</para>
+		
 
 		<note>
-			<para>
+			
 				You could also add similar listeners to your
 				check button
 				and
@@ -120,28 +120,28 @@
 				object. We skip this step here because in
 				<xref linkend="databindingpart" />
 				you learn an easier way to do this.
-			</para>
+			
 		</note>
-	</section>
-	<section id="tutorial_wizard3">
-		<title>Adjust handler implementation</title>
-		<para>
+	
+[[tutorial_wizard3">
+=== Adjust handler implementation
+		
 			Call the wizard from your
 			<code>NewTodoHandler</code>
 			class, which you already added to the menu in an earlier exercise.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/wizards/NewTodoHandler.java" />
 			</programlisting>
 
-		</para>
-	</section>
-	<section id="tutorial_wizard4">
-		<title>Validating</title>
-		<para>
+		
+	
+[[tutorial_wizard4">
+=== Validating
+		
 			Validate that you can create new Todo objects via your wizard. Start
 			your
 			application
@@ -149,25 +149,25 @@
 			<code>Todo</code>
 			via the
 			wizard.
-		</para>
-		<para>Afterwards refresh your table via the "Load Data" button to see
+		
+		Afterwards refresh your table via the "Load Data" button to see
 			the entry.
-		</para>
+		
 		<warning>
-			<para>If you did not implement the modification listeners correctly,
+			If you did not implement the modification listeners correctly,
 				you may get a new empty in the table.
-			</para>
+			
 		</warning>
 
 		<note>
-			<para>
+			
 				In
 				<xref linkend="part_eventbroker" />
 				you learn how to update all components of your
 				application
 				immediately
 				after a change in the data model.
-			</para>
+			
 		</note>
-	</section>
+	
 </chapter>

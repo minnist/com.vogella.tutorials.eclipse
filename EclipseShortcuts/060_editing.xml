@@ -1,13 +1,13 @@
 
-<section id="shortcuts_editor">
-	<title>Editing</title>
-	<para>The following lists contains useful keyboard shortcuts if you are
+
+	<title>Editing
+	The following lists contains useful keyboard shortcuts if you are
 		inside
 		your Java editor.
-	</para>
-	<para>
+	
+	
 		<table frame='all'>
-			<title>Handling the editor</title>
+	=== Handling the editor
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -83,11 +83,11 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
-	<para>
+	
 		<table frame='all'>
-			<title>Cursor navigation and text selection</title>
+	=== Cursor navigation and text selection
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
@@ -132,13 +132,13 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
 
 
-	<para>
+	
 		<table frame='all'>
-			<title>Copy and move lines</title>
+	=== Copy and move lines
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -174,11 +174,11 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
-	<para>
+	
 		<table frame='all'>
-			<title>Delete</title>
+	=== Delete
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -209,10 +209,10 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-	<para>
+	
+	
 		<table frame='all'>
-			<title>Create new lines</title>
+	=== Create new lines
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -241,11 +241,11 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
-	<para>
+	
 		<table frame='all'>
-			<title>Variable assignment</title>
+	=== Variable assignment
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*"/>
 				<colspec colname='c2' colwidth="3*"/>
@@ -269,7 +269,7 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
+	
 
 
-</section>
+

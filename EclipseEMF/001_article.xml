@@ -13,7 +13,7 @@ Version 0.3, 06.07.2016
 
 
 
-		<title>Eclipse Modeling Framework (EMF) - Tutorial</title>
+=== Eclipse Modeling Framework (EMF) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -35,19 +35,19 @@ Version 0.3, 06.07.2016
 		<pubdate>02.09.2015</pubdate>
 
 		<releaseinfo>
-			<para>Version 3.5</para>
+			Version 3.5
 		</releaseinfo>
 
 		
 
 		<abstract id="abstract">
-			<title>Eclipse EMF</title>
-			<para>
+	=== Eclipse EMF
+			
 				This tutorial describes the usage of Eclipse EMF, a framework
 				for modeling your data model and creating Java code from it. This tutorial is
                 based on
                 Eclipse 4.6 (Eclipse Neon).
-			</para>
+			
 		</abstract>
 	</articleinfo>
 

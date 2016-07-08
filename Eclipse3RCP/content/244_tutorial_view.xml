@@ -1,40 +1,35 @@
-<section id="viewtutorial">
-	<title>Tutorial: Adding Views to your application</title>
-	<section id="viewtutorial_add">
-		<title>Create a view</title>
-		<para> The
+
+	<title>Tutorial: Adding Views to your application
+[[viewtutorial_add">
+=== Create a view
+		 The
 			following will
 			explain how to add views to your
 			application.
 			We will continue to use the
 			RCP project
 			"de.vogella.rcp.intro.first".
-		</para>
-		<para> Add the extension "org.eclipse.ui.views" to your plugin. Select
+		
+		 Add the extension "org.eclipse.ui.views" to your plugin. Select
 			"<filename>plugin.xml</filename> and the tab "Extentions".
 			Right
 			mouse-click on your new
 			view extension and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>View</guisubmenu>
-			</menuchoice>.
+			menu:New[View].
 			Maintain the id
 			"de.vogella.rcp.intro.view.MyView" and the
 			class
 			"de.vogella.rcp.intro.view.MyView".
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/addview80.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Data for the "org.eclipse.ui.views" extension point</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/addview90.png" />
@@ -44,46 +39,39 @@
 				</textobject>
 
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			Create the class "MyView" by clicking on the "class"
 			hyperlink
 			and
 			maintain the following code. Afterwards, your view is ready to be
 			used.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/view/MyView.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="viewtutorial_perspective">
-		<title>Add the view to your perspective</title>
-		<para>
+		
+	
+[[viewtutorial_perspective">
+=== Add the view to your perspective
+		
 			You have to add the view to your
 			perspective. Add
 			the extension
 			"org.eclipse.ui.perspectiveExtensions" to your plugin.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/addview110.gif" />
+		
+		
+image::addview110.gif" />
 				</imageobject>
 				<textobject>
 					<phrase>Adding a view to your perspective via the
-						"org.eclipse.ui.perspectiveExtensions" extension</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+						"org.eclipse.ui.perspectiveExtensions" extension,pdfwidth=60%]
+		
+		
 			Right-click "*(perspectiveExtension)"
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>View</guisubmenu>
-			</menuchoice>.
+			menu:New[View].
 			Maintain
 			your view id
 			<property>de.vogella.rcp.intro.first.MyView</property>.
@@ -101,37 +89,29 @@
 			ratio
 			of
 			<property>0.95f</property>.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/addview130.png" />
+		
+		
+image::addview130.png" />
 				</imageobject>
 				<textobject>
 					<phrase>Maintaining the layout data for the view in the
-						<code>org.eclipse.ui.perspectiveExtensions</code> extension point</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="viewtutorial_result">
-		<title>Result</title>
-		<para>Run your application to see the result.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/addview200.gif" />
+						<code>org.eclipse.ui.perspectiveExtensions</code> extension point,pdfwidth=60%]
+		
+	
+[[viewtutorial_result">
+=== Result
+		Run your application to see the result.
+		
+image::addview200.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Running application with a new view</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Running application with a new view,pdfwidth=60%]
+		
 
-	</section>
-	<section id="viewtutorial_programmically">
-		<title>Add view to perspective via code</title>
-		<para> I personally prefer extension points over code. But instead of
+	
+[[viewtutorial_programmically">
+=== Add view to perspective via code
+		 I personally prefer extension points over code. But instead of
 			using the extension
 			point
 			"org.eclipse.ui.perspectiveExtensions" you
@@ -140,13 +120,12 @@
 			via
 			code to the perspective. For this modify
 			"Perspective.java" to the following.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/view/Perspective.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-</section>

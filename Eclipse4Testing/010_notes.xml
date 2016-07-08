@@ -1,79 +1,79 @@
-<section id="eclipse4testing" role="wrapper">
-	<title>Testing Eclipse 4 application</title>
-	<section id="eclipse4testing_overview">
-		<title>General testing</title>
-		<para>In general all Java classes in an Eclipse 4 application can be
+
+	<title>Testing Eclipse 4 application
+[[eclipse4testing_overview">
+=== General testing
+		In general all Java classes in an Eclipse 4 application can be
 			tested similarly to other Java applications. This description
 			highlights the special Eclipse 4 constructs.
-		</para>
-	</section>
-	<section id="eclipse4testing_fragments">
-		<title>Fragment projects</title>
+		
+	
+[[eclipse4testing_fragments">
+=== Fragment projects
 		<indexterm>
 			<primary>Fragment projects</primary>
 			<secondary>Tests</secondary>
 		</indexterm>
-		<para>Tests for Eclipse plug-ins are typically contained in a fragment
+		Tests for Eclipse plug-ins are typically contained in a fragment
 			project. This way the tests can access all classes in their host
 			plug-in.
-		</para>
-	</section>
-	<section id="eclipse4testing_ui">
-		<title>Testing user interface components</title>
+		
+	
+[[eclipse4testing_ui">
+=== Testing user interface components
 		<indexterm>
 			<primary>Testing</primary>
 			<secondary>User interface components</secondary>
 		</indexterm>
-		<para>
+		
 			Eclipse classes that are using the application model have no
 			hard
 			dependency on
 			the Eclipse framework. Therefore you can test these
 			components directly with JUnit.
-		</para>
+		
 
-		<para>
+		
 			For example take the following
 			part.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/TodoOverviewPart.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			This
 			part
 			can be created via a simple Java Program which has the
 			SWT library
 			included in its classpath.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/TodoOverviewPartTest.java" />
 			</programlisting>
-		</para>
-		<para>The above code can be easily changed to a unit test. Your test
+		
+		The above code can be easily changed to a unit test. Your test
 			class can create the class, provide the
 			required
 			dependencies and
 			run
 			the tests.
-		</para>
+		
 
-	</section>
-	<section id="eclipse4testing_di">
-		<title>Testing dependency injection</title>
+	
+[[eclipse4testing_di">
+=== Testing dependency injection
 		<indexterm>
 			<primary>Testing</primary>
 			<secondary>Using dependency injection in your tests</secondary>
 		</indexterm>
-		<para>
+		
 			You can include the process of dependency injection into the
 			test.
 			Create your own
@@ -81,24 +81,23 @@
 			and use the
 			<code>ContextInjectionFactory.make()</code>
 			method to create the object which should be tested.
-		</para>
-		<para>
+		
+		
 			The following code shows an example of how to create your own
 			context
 			and construct the object based on this construct. This test
 			needs to
 			run as
-			<wordasword>JUnit Plug-in</wordasword>
+			_JUnit Plug-in_
 			test.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/snippets/CreateContextText.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

@@ -1,19 +1,19 @@
-<section id="tasks" role="wrapper">
-	<title>Tasks</title>
-	<section id="tasks_definition">
-		<title>Task management</title>
+
+	<title>Tasks
+[[tasks_definition">
+=== Task management
 		<indexterm>
 			<primary>Task management</primary>
 		</indexterm>
-		<para>
+		
 			You can place
 			markers in the
 			code which you can later access via the
-			<guilabel>Task</guilabel>
+			_Task_
 			view
 			.
-		</para>
-		<para>
+		
+		
 			You can use
 			<code>// TODO</code>
 			,
@@ -21,101 +21,81 @@
 			or
 			<code>// XXX</code>
 			tags in your code to add task reminders.
-		</para>
-		<para>
+		
+		
 			This indicates a task for
 			Eclipse. You find those in the
-			<guilabel>Task</guilabel>
+			_Task_
 			view
 			of Eclipse. Via double-clicking on the task, you can navigate to the
 			corresponding code.
-		</para>
-		<para>
+		
+		
 			You can open this
 			view
 			via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Show View</guisubmenu>
-				<guisubmenu>Tasks</guisubmenu>
-			</menuchoice>
+			menu:Window[Show View > Tasks]
 			.
-		</para>
-		<para>
+		
+		
 			For example, add a TODO to your
 			<code>MyFirstClass</code>
 			class to see it in the Tasks
 			view
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/todo/MyFirstClass.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Close the editor for the
 			<code>MyFirstClass</code>
 			class. If you now double-click on the
 			tasks, the Java editor opens
 			again and
 			the TODO comment is selected.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/todo10.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>,pdfwidth=60%]
+		
 		<tip>
-			<para>
+			
 				The
-				<guilabel>Task</guilabel>
+				_Task_
 				view
 				shows only the tasks from the currently open projects. See
 				<xref linkend="packageexplorer_closeprojects" />
 				.
 
-			</para>
+			
 		</tip>
-	</section>
-	<section id="tasks_owntags">
-		<title>Own tags</title>
-		<para>
+	
+[[tasks_owntags">
+=== Own tags
+		
 			You can also define your own tags in the Eclipse preferences via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Compiler</guisubmenu>
-				<guisubmenu>Task Tags</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Java > Compiler > Task Tags]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tasktags10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Defining new tasks tags</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+		
+		
+image::tasktags10.png[Defining new tasks tags,pdfwidth=60%]
+		
+	
 
-	<section id="tasks_mylyn">
-		<title>Mylyn</title>
-		<para>
+[[tasks_mylyn">
+=== Mylyn
+		
 			A more advanced tasks management system is available with the
-			<wordasword>Mylyn</wordasword>
+			_Mylyn_
 			plug-in.
-		</para>
-	</section>
+		
+	
 
-</section>

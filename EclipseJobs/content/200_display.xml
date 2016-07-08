@@ -1,12 +1,12 @@
-<section id="eclipsejobs_display">
-	<title>Using syncExec() and asyncExec()</title>
-	<para>
+
+	<title>Using syncExec() and asyncExec()
+	
 		In Eclipse 3.x API based plug-ins you cannot use dependency injection
 		to get the
 		<code>UISynchronize</code>
 		instance injected.
-	</para>
-	<para>
+	
+	
 		In this case you can use the
 		<code>Display</code>
 		class which provides the 
@@ -15,12 +15,12 @@
 		<code>asyncExec()</code>
 		methods to update the user interface from another
 		thread.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/threadaccess/example.txt" />
 		</programlisting>
-	</para>
-</section>
+	
+

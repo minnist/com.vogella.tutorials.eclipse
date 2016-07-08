@@ -1,25 +1,24 @@
 
-<section id="resources_osgi">
-	<title>OSGi Resources</title>
-	<para>
-		<ulink url="http://www.osgi.org">OSGi homepage</ulink>
 
-	</para>
-	<para>
-		<ulink url="http://www.eclipse.org/equinox">Equinox homepage</ulink>
+	<title>OSGi Resources
+	
+		http://www.osgi.org">OSGi homepage
 
-	</para>
+	
+	
+		http://www.eclipse.org/equinox">Equinox homepage
 
-	<para>
-		<ulink url="http://www.eclipse.org/equinox/documents/quickstart.php">
-			Equinox quick start guide</ulink>
+	
 
-	</para>
-	<para>
+	
+		http://www.eclipse.org/equinox/documents/quickstart.php">
+			Equinox quick start guide
+
+	
+	
 		<ulink
-			url="http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/">OSGi blueprint services</ulink>
-	</para>
-	<para>
-		<ulink url="http://hawt.io/plugins/index.html">hawtio dependency visualization tool</ulink>
-	</para>
-</section>
+			url="http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/">OSGi blueprint services
+	
+	
+		http://hawt.io/plugins/index.html">hawtio dependency visualization tool
+	

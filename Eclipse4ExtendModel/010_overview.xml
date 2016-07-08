@@ -1,7 +1,7 @@
-<section id="applicationmodelextension_overview">
-	<title>Application model extensibility</title>
-	<section id="applicationmodelextension_structure">
-		<title>The application model structure</title>
+
+	<title>Application model extensibility
+[[applicationmodelextension_structure">
+=== The application model structure
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Extensions</secondary>
@@ -9,7 +9,7 @@
 		<indexterm>
 			<primary>Extensions of the application model</primary>
 		</indexterm>
-		<para>
+		
 			The application
 			model you create for your Eclipse based
 			application is
@@ -23,8 +23,8 @@
 			an
 			<code>MPart</code> can
 			be stored in an <code>MPartSashContainer</code>.
-		</para>
-		<para>
+		
+		
 			The
 			Eclipse platform uses generated Java classes based on this EMF
 			model. These classes are instantiated based on the
@@ -32,16 +32,16 @@
 			file of the application including formation from model fragments,
 			processors and other sources which modify the model, e.g., mode
 			add-ons.
-		</para>
-		<para>
+		
+		
 			The Eclipse platform registers listeners on the attributes of
 			these objects, so that it can react immediately if a model property
 			changes.
-		</para>
-	</section>
-	<section id="applicationmodelextension_extensions">
-		<title>Using extensions</title>
-		<para>
+		
+	
+[[applicationmodelextension_extensions">
+=== Using extensions
+		
 			The underlying structure of the application model can be
 			extended
 			by customers using
@@ -59,17 +59,17 @@
 			responsible for
 			the new model
 			elements.
-		</para>
-	</section>
-	<section id="e4tools_editor">
-		<title>Adding an editor for a custom model elements</title>
-		<para>
+		
+	
+[[e4tools_editor">
+=== Adding an editor for a custom model elements
+		
 			The
 			<code>org.eclipse.e4.tools.emf.ui</code>
 			plug-in defines the
 			<code>org.eclipse.e4.tools.emf.ui.editors</code>
 			extension point, which allows registering editors for new model
 			elements.
-		</para>
-	</section>
-</section>
+		
+	
+

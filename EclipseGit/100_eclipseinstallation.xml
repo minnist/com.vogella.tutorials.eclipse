@@ -1,9 +1,7 @@
-<section id="eclipseinstallationgit">
-	<title>Installation of Git support into Eclipse</title>
-	<indexterm>
-		<primary>Installation of Git support into Eclipse</primary>
-	</indexterm>
-	<para>
+
+	<title>Installation of Git support into Eclipse
+
+	
         Most Eclipse IDE
         downloads
         from Eclipse.org contain
@@ -14,9 +12,9 @@
         this case no additional installation
         is
         required.
-    </para>
+    
 
-	<para>
+	
 		If the Git functionality is missing in your
 		Eclipse IDE installation,
 		you
@@ -26,23 +24,23 @@
 		manager. 
 		Start this manager
 		via the
-		<menuchoice>
+		menu:
 			<guimenu>Help</guimenu>
 			<guisubmenu>Install new Software...</guisubmenu>
 		</menuchoice>
 		menu entry by using the following update site URL:
-	</para>
-	<para>
+	
+	
 		<programlisting language="bourne">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/links/p2.txt" />
 		</programlisting>
-	</para>
-	<para>The dialog to install the Eclipse Git team provider is depicted
+	
+	The dialog to install the Eclipse Git team provider is depicted
 		in the following
 		screenshot.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/egitinstallation10.png"/>
@@ -51,6 +49,6 @@
 				<phrase>Installing EGit</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
+	
 
-</section>
+

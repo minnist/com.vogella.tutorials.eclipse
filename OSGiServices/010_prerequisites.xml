@@ -1,12 +1,11 @@
-<section id="prerequisite">
-	<title>Prerequisite</title>
-	<para>
+
+	<title>Prerequisite
+	
 		The following assumes that you are familiar with the OSGi runtime
 		and
 		its modularity layer as described in
-		<ulink url="http://www.vogella.com/tutorials/OSGi/article.html"> OSGi modularity</ulink>
+		http://www.vogella.com/tutorials/OSGi/article.html"> OSGi modularity
 		.
-	</para>
+	
 
 
-</section>

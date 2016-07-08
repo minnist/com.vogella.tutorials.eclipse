@@ -1,8 +1,8 @@
 <chapter id="tutorial_preferences_application">
-	<title>Exercise: Using preferences in a handler and in a part</title>
-	<section id="tutorial_preferences_application_target">
-		<title>Target</title>
-		<para>
+	<title>Exercise: Using preferences in a handler and in a part
+[[tutorial_preferences_application_target">
+=== Target
+		
 			In this exercise you modify the handler within the
 			application to
 			enter the user and listen to
@@ -10,16 +10,16 @@
 			corresponding
 			preference
 			values in a part.
-		</para>
+		
 		<note>
-			<para>We do not persists the password in this exercises, because
+			We do not persists the password in this exercises, because
 				persisting passwords without encryption is a security risk.
-			</para>
+			
 		</note>
-	</section>
-	<section id="tutorial_preferencesstorage">
-		<title>Using preferences in your handler</title>
-		<para>
+	
+[[tutorial_preferencesstorage">
+=== Using preferences in your handler
+		
 			Extend your
 			<code>EnterCredentialsHandler</code>
 			handler to get and store the user via
@@ -29,47 +29,47 @@
 			is not explicitly set for the
 			<code>@Execugte</code>
 			method, it uses 
-			<wordasword>com.example.e4.rcp.todo</wordasword>, 
+			_com.example.e4.rcp.todo_, 
 			which is the Bundle-SymbolicName of your application plug-in.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/preferences/EnterCredentialsHandler.java" />
 			</programlisting>
-		</para>
+		
 
 		<note>
-			<para>
+			
 
-			</para>
+			
 		</note>
 		<note>
-			<para>
+			
 				The
 				<code>@Preference</code>
 				annotation
 				is not yet released as official API. See
 				<xref linkend="e4overview_api" />
 				.
-			</para>
+			
 		</note>
 
-		<para>
+		
 			For test purpose listen to preference changes in your playground
 			view and
 			print the values to the console.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/preferences/Listen.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="tutorial_preferences_validate">
-		<title>Validating the implementation</title>
-		<para>
+		
+	
+[[tutorial_preferences_validate">
+=== Validating the implementation
+		
 			Start your application. Use the menu entry which uses the
 			<code>EnterCredentialsHandler</code>
 			handler and enter a user into the dialog.
@@ -77,8 +77,8 @@
 			it
 			again via the menu. The last entered user should
 			be displayed.
-		</para>
+		
 
-	</section>
+	
 
 </chapter>

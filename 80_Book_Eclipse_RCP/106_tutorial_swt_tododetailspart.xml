@@ -1,11 +1,11 @@
 <chapter>
 	<title>
 		Exercise: Implement a UI for TodoDetailsPart
-	</title>
+	
 
 	<section>
-		<title>TodoDetailsPart</title>
-		<para>
+=== TodoDetailsPart
+		
 			Change the
 			<code>TodoDetailsPart</code>
 			class
@@ -13,51 +13,47 @@
 			Use a
 			<code>DateTime</code>
 			widget for the "Due Date" selection.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tododetails-userinterface.png"
+		
+		
+image::tododetails-userinterface.png"
 						scale="50" />
 				</imageobject>
 				<textobject>
-					<phrase>Creating a Todo user interface</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Creating a Todo user interface,pdfwidth=60%]
+		
+		
 			See
 			<xref linkend="swt_tododetailspart_solution" />
 			for the complete example coding.
-		</para>
+		
 
-	</section>
+	
 	<section>
-		<title>Implement focus setting for one of your widgets</title>
-		<para>
+=== Implement focus setting for one of your widgets
+		
 			Ensure that your @Focus method sets the focus to one of the
 			SWT
 			widgets.
 			This is an optional step but it is a
 			good practice to put the
 			focus explicitly on one SWT widget.
-		</para>
+		
 
 
-		<para>
+		
 			The following code shows an example implementation of this
 			method.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/focus/onFocus.java" />
 			</programlisting>
-		</para>
+		
 
 		<note>
-			<para>
+			
 				If you forget to put focus on an SWT widget in your method annotated
 				with
 				<code>@Focus</code>
@@ -69,31 +65,31 @@
 				places the focus on one SWT widget, the
 				method is only called once
 				if the part is activated by the user.
-			</para>
+			
 		</note>
 
-		<para>
+		
 			Ensure that you also put the focus on an SWT widget in your
 			<code>TodoOverviewPart</code>
 			class.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="swt_tododetailspart_solution">
-		<title>Example code for TodoDetailsPart</title>
-		<para>The following listing contains a possible implementation of this
+[[swt_tododetailspart_solution">
+=== Example code for TodoDetailsPart
+		The following listing contains a possible implementation of this
 			exercise as reference for the reader.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/swt/TodoDetailsPart_SWT.java" />
 			</programlisting>
-		</para>
+		
 
 
 
-	</section>
+	
 </chapter>

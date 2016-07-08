@@ -1,36 +1,36 @@
-<section id="wtp_installation">
-	<title>Installation of WTP</title>
-	<para>
+
+	<title>Installation of WTP
+	
 		Your version of the Eclipse IDE might not have the required web
 		developer
 		tools installed.
-	</para>
-	<para>
+	
+	
 
 		Use theEclipse Update Manager
 		to
 		install the following features from the
-		<guilabel>Web, XML, Java EE Developmentand OSGi Enterprise Development</guilabel>
+		_Web, XML, Java EE Developmentand OSGi Enterprise Development_
 		category.
 		<itemizedlist>
 			<listitem>
-				<para>Eclipse Java EE Developer Tools</para>
+				Eclipse Java EE Developer Tools
 			</listitem>
 			<listitem>
-				<para>Eclipse Java Web Developer Tools</para>
+				Eclipse Java Web Developer Tools
 			</listitem>
 			<listitem>
-				<para>Eclipse Web Developer Tools</para>
+				Eclipse Web Developer Tools
 			</listitem>
 			<listitem>
-				<para>JST Server Adapters</para>
+				JST Server Adapters
 			</listitem>
 			<listitem>
-				<para>JST Server Adapters Extensions</para>
+				JST Server Adapters Extensions
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/eclipsewtp_installation10.png"
@@ -40,5 +40,4 @@
 				<phrase>Eclipse WTP installation</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-</section>
+	

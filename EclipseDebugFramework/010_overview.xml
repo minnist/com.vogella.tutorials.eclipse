@@ -10,82 +10,75 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="eclipse_debug_framework_overview">
-	<title>Eclipse Debug Framework</title>
+
+	<title>Eclipse Debug Framework
 	<!-- - Used when the launch framework is used in debug mode - Describe debug 
 		model and IDebugElements - Communication between the Debug Framework and 
 		the VM or interpreter - A thread only has stack frames when it is suspended. -->
-	<section id="eclipse_debug_framework_prerequisites">
-		<title>Prerequisites for this tutorial</title>
-		<para>
+[[eclipse_debug_framework_prerequisites">
+=== Prerequisites for this tutorial
+		
 			This tutorial assumes that you have basic understanding of
 			development
 			for the Eclipse platform.
 			Please see
-			<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html">Eclipse RCP Tutorial</ulink>
+			http://www.vogella.com/tutorials/EclipseRCP/article.html">Eclipse RCP Tutorial
 			or
-			<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plug-in Tutorial</ulink>
+			http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plug-in Tutorial
 			if you need any basic information.
-		</para>
-		<para>
+		
+		
 			In addition to the basics another requirement is the
 			<ulink
-				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE</ulink>
+				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
 			tutorial, which should be read beforehand.
-		</para>
-	</section>
-	<section id="eclipse_debug_model">
-		<title>Eclipse Debug Model</title>
-		<para>
+		
+	
+[[eclipse_debug_model">
+=== Eclipse Debug Model
+		
 			The Eclipse Debug Model is represented by a hierarchy of model
 			interfaces, which are visualized by a the
-			<guilabel>Debug</guilabel>
+			_Debug_
 			and
-			<guilabel>Variables</guilabel>
+			_Variables_
 			view, which can usually be found in the Debug perspective of the
 			Eclipse IDE.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/debug_model_ui.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Debug model in the UI</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
+		
+		
 			Every debug model element is derived from
 			<code>org.eclipse.debug.core.model.IDebugElement</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.debug.core.model.IDebugTarget</code>
-					</para>
+					
 					<itemizedlist>
 						<listitem>
-							<para>
+							
 								<code>org.eclipse.debug.core.model.IThread</code>
-							</para>
+							
 							<itemizedlist>
 								<listitem>
-									<para>
+									
 										<code>org.eclipse.debug.core.model.IStackFrame</code>
-									</para>
+									
 									<itemizedlist>
 										<listitem>
-											<para>
+											
 												<code>org.eclipse.debug.core.model.IVariable</code>
-											</para>
+											
 											<itemizedlist>
 												<listitem>
-													<para>
+													
 														<code>org.eclipse.debug.core.model.IValue</code>
-													</para>
+													
 												</listitem>
 											</itemizedlist>
 										</listitem>
@@ -96,25 +89,25 @@ Version 0.3, 06.07.2016
 					</itemizedlist>
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 		<note>
-			<para>
+			
 				The debug framework also offers an abstract
 				<code>org.eclipse.debug.core.model.DebugElement</code>
 				class as default implementation of
 				<code>IDebugElement</code>
 				interface, which should should be used for implementing these custom
 				debug model elements.
-			</para>
+			
 		</note>
-	</section>
-	<section id="eclipse_debug_operations">
-		<title>Debug Model Communication</title>
-		<para>The Debug Model Communication is based on events, due to the
+	
+[[eclipse_debug_operations">
+=== Debug Model Communication
+		The Debug Model Communication is based on events, due to the
 			asynchronous nature of the communication between the model and the
 			interpreter.
-		</para>
-		<para>
+		
+		
 			For example the
 			<code>IDebugTarget</code>
 			implements the
@@ -127,8 +120,8 @@ Version 0.3, 06.07.2016
 			the actual result comes back asynchronously by sending an
 			<code>org.eclipse.debug.core.DebugEvent</code>
 			.
-		</para>
-		<para>
+		
+		
 			Also custom events may be fired asynchronously, as long as this
 			is
 			done in
@@ -140,27 +133,27 @@ Version 0.3, 06.07.2016
 			, which offers default implementations for firing
 			<code>DebugEvents</code>
 			.
-		</para>
-	</section>
+		
+	
 	<section>
-		<title>Attach the IDebugTarget to the launch delegate</title>
-		<para>
+=== Attach the IDebugTarget to the launch delegate
+		
 			<code>IDebugTargets</code>
 			are added to the launch procedure like this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/RegisterDebugTarget.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			A general overview concerning the launcher framework can be found
 			in
 			the
 			<ulink
-				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE</ulink>
+				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
 			tutorial.
-		</para>
-	</section>
-</section>
+		
+	
+

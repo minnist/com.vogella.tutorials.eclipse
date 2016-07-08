@@ -1,12 +1,11 @@
-<section id="eclipse3x">
-	<title>Eclipse 3.x vs. Eclipse 4</title>
+
+	<title>Eclipse 3.x vs. Eclipse 4
 	<warning>
-		<para>
+		
 			Outdated information. See
-			<ulink url="http://www.vogella.com/tutorials/Eclipse4RCP/article.html">
-				Eclipse 4 Tutorial</ulink>
+			http://www.vogella.com/tutorials/Eclipse4RCP/article.html">
+				Eclipse 4 Tutorial
 			for an introduction into the Eclipse RCP programming.
-		</para>
+		
 
 	</warning>
-</section>

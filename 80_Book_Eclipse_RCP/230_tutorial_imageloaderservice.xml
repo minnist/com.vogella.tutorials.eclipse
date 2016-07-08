@@ -1,8 +1,8 @@
 <chapter id="tutorial_imageloader">
-	<title>Optional exercise: Create an image loader service</title>
-	<section id="tutorial_imageloader_target">
-		<title>Target of this exercise</title>
-		<para>In this exercise you create a service for your application which
+	<title>Optional exercise: Create an image loader service
+[[tutorial_imageloader_target">
+=== Target of this exercise
+		In this exercise you create a service for your application which
 			allows you to load
 			images. We use the same
 			plug-in (bundle) for
@@ -12,147 +12,147 @@
 			if you
 			plan to have only
 			one service implementation.
-		</para>
-	</section>
-	<section id="tutorial_imageloader_createplugin">
-		<title>Creating a new plug-in</title>
-		<para>
+		
+	
+[[tutorial_imageloader_createplugin">
+=== Creating a new plug-in
+		
 			Create a new simple plug-in called
-			<wordasword>com.example.e4.bundleresourceloader</wordasword>
+			_com.example.e4.bundleresourceloader_
 			.
-		</para>
-		<para>
+		
+		
 			Add the following plug-ins as dependencies to your new plug-in.
 
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.core.runtime</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.jface</code>
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						<code>org.eclipse.osgi.services</code>
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
 		<note>
-			<para>
+			
 				The
 				<code>org.eclipse.jface</code>
 				plug-in re-exports the
 				<code>org.eclipse.swt</code>
 				hence if you define a dependency to *.jface you can also use the
 				classes from *.swt.
-			</para>
+			
 		</note>
-	</section>
-	<section id="tutorial_imageloader_conditions">
-		<title>Ensure that OSGi DS service functionality is available</title>
-		<para>
+	
+[[tutorial_imageloader_conditions">
+=== Ensure that OSGi DS service functionality is available
+		
 			Ensure that the plug-in is activated and that OSGi DS annotation processing is active.
 			similar to
 			<xref linkend="tutorial_e4services_enable_ds_annotations" />
 			.
-		</para>
+		
 
-	</section>
-	<section id="tutorial_imageloader_interface">
-		<title>Creating the service interface</title>
-		<para>
+	
+[[tutorial_imageloader_interface">
+=== Creating the service interface
+		
 			Create
 			the following interface called
 			<code>IBundleResourceLoader</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/service/IBundleResourceLoader.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
-	<section id="tutorial_imageloader_serviceimpl">
-		<title>Creating a service implementation</title>
+	
+[[tutorial_imageloader_serviceimpl">
+=== Creating a service implementation
 
-		<para>
+		
 			Create the following class which allows, via its
 			<code>getImageDescriptor()</code>
 			method, to
 			load an ImageDescriptor from a plug-in based on the class
 			provided as
 			parameter.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/service/BundleResourceLoaderImpl.java" />
 			</programlisting>
-		</para>
+		
 
 
-	</section>
+	
 
-	<section id="tutorial_imageloader_serviceproduct">
-		<title>Adding the new plug-in to your feature project</title>
-		<para>Add the new plug-in to your product
+[[tutorial_imageloader_serviceproduct">
+=== Adding the new plug-in to your feature project
+		Add the new plug-in to your product
 			configuration
 			file via your
 			feature project.
-		</para>
-	</section>
-	<section id="tutorial_imageloader_export">
-		<title>Exporting the API</title>
-		<para>
+		
+	
+[[tutorial_imageloader_export">
+=== Exporting the API
+		
 			To use the service in other plug-ins, export the package which
 			contains the
 			interface in the
 			corresponding
 			<filename>MANIFEST.MF</filename>
 			file.
-		</para>
-	</section>
-	<section id="tutorial_imageloader_dependency">
-		<title>Adding the dependencies to the new plug-in</title>
-		<para>
+		
+	
+[[tutorial_imageloader_dependency">
+=== Adding the dependencies to the new plug-in
+		
 			Define a dependency to
 			the new
 			package (or the whole
 			plug-in) in the
 			<filename>MANIFEST.MF</filename>
 			file of your application plug-in.
-		</para>
-		<para>
+		
+		
 			Also add a dependency to
 			<code>org.eclipse.jface</code>
 			to your application manifest.
-		</para>
+		
 
-	</section>
-	<section id="tutorial_imageloader_using">
-		<title>Using the new service</title>
-		<para>
+	
+[[tutorial_imageloader_using">
+=== Using the new service
+		
 			Create a directory called
-			<wordasword>images</wordasword>
+			_images_
 			in your application plug-in
 			and put an image with the file name
-			<wordasword>vogella.png</wordasword>
+			_vogella.png_
 			into it. A Google search for
-			<wordasword>vogella.png</wordasword>
+			_vogella.png_
 			should find such an image, but you can use any *.png file you like.
-		</para>
-		<para>
+		
+		
 			Use the image loader service in your
 			<code>PlaygroundPart</code>
 			class.
@@ -163,38 +163,34 @@
 			and
 			<xref linkend="jface_localresoucemanager" />
 			to learn more about the code snippet.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/LabelAssign.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>The result might look like the following.</para>
+		The result might look like the following.
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/imageservice.png" />
+		
+image::imageservice.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Image on Label</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Image on Label,pdfwidth=60%]
+		
 		<warning>
-			<para>As you added plug-ins to your product via the feature,
+			As you added plug-ins to your product via the feature,
 				remember
 				to start via the product configuration file.
 				Using the existing run
 				configuration does not work.
-			</para>
+			
 		</warning>
-	</section>
-	<section id="tutorial_imageloader_review">
-		<title>Reviewing the implementation</title>
-		<para>
+	
+[[tutorial_imageloader_review">
+=== Reviewing the implementation
+		
 			In this example the service interface and the
 			implementation
 			class is contained in one plug-in. Therefore, this
@@ -206,14 +202,14 @@
 			implementation and the service interface as this allows you to
 			replace the service
 			easily.
-		</para>
-		<para>
+		
+		
 			Both approaches are valid. You typically put the interface and
 			the implementation in one plug-in, if you do not
 			expect an
 			alternative
 			implementation of the service interface.
-		</para>
+		
 
-	</section>
+	
 </chapter>

@@ -1,23 +1,23 @@
-<section id="emfinstallation">
-	<title>Installation</title>
-	<para>
-		Install <wordasword>EMF</wordasword> via the
-		<wordasword>Eclipse Update manager</wordasword> from
-		<menuchoice>
+
+	<title>Installation
+	
+		Install _EMF_ via the
+		_Eclipse Update manager_ from
+		menu:
 			<guimenu>Help</guimenu>
 			<guisubmenu>Install New Software...</guisubmenu>
 		</menuchoice>
 		. Select
-		<guilabel>Modeling</guilabel>
+		_Modeling_
 		and install
-		<guilabel>EMF - Eclipse Modeling Framework SDK</guilabel>
+		_EMF - Eclipse Modeling Framework SDK_
 		and the 
-		<guilabel>Diagram Editor for Ecore (SDK)</guilabel>. The second entry 
+		_Diagram Editor for Ecore (SDK)_. The second entry 
 		allows you to create
 		models based on diagrams. Restart your Eclipse IDE after the installation.
-	</para>
 	
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/emf_installation10.png"/>
@@ -26,5 +26,4 @@
 				<phrase>EMF Installation</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-</section>
+	

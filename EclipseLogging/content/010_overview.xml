@@ -1,6 +1,6 @@
-<section id="logging">
-	<title>Eclipse Logging</title>
-	<para>
+
+	<title>Eclipse Logging
+	
 		The
 		<code>org.eclipse.e4.core.services</code>
 		plug-in contains the
@@ -9,38 +9,38 @@
 		implementation is provided by the
 		<code>WorkbenchLogger</code>
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/getLogger.java" />
 		</programlisting>
-	</para>
+	
 
 
-	<para>
+	
 		The
 		<code>Logger</code>
 		implementation wraps the
 		<code>IStatus</code>
 		into an simpler interface and provides several methods to log info,
 		warning or error message. The following code shows example calls.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/log.java" />
 		</programlisting>
-	</para>
+	
 
-	<para>
+	
 		Customers can replace the
 		<code>WorkbenchLogger</code>
 		implementation in the Context with there own implementation. For
 		example this way customers could log to the Eclipse system as well as
 		to other external log systems.
-	</para>
-	<para>
+	
+	
 		The log level can be setup in the
 		<filename>config.ini</filename>
 		file of your application via the
@@ -54,7 +54,6 @@
 		.
 		<parameter>INFO</parameter>
 		will for example show all log message.
-	</para>
-	<para>By default Eclipse logs all messages.</para>
+	
+	By default Eclipse logs all messages.
 
-</section>

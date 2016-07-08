@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse 4 Context Functions - Tutorial</title>
+=== Eclipse 4 Context Functions - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -30,13 +30,13 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>04.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 6.1</para>
+			Version 6.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Application Model contributions</title>
-			<para> This tutorial explains how to define a context function in Eclipse 4 RCP applications.
-			</para>
+	=== Eclipse Application Model contributions
+			 This tutorial explains how to define a context function in Eclipse 4 RCP applications.
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>

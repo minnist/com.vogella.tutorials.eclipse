@@ -1,6 +1,6 @@
-<section id="e4_ownannotationsusage">
-	<title>Example usage</title>
-	<para>An example for using your custom annotations would be the Java
+
+	<title>Example usage
+	An example for using your custom annotations would be the Java
 		Persistence API (JPA). You could create a custom
 		annotation for the
 		JPA persistence manager. The JPA persistence manager could be
@@ -9,7 +9,6 @@
 		based on that custom annotation and a
 		corresponding
 		annotation processor.
-	</para>
+	
 
 
-</section>

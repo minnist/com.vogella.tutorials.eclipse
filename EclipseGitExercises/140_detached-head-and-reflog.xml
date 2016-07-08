@@ -1,4 +1,4 @@
-<section id="_detached_head_and_reflog">
+
 	<title>Detached Head and Reflog
 	Once you get used to git you appreciate that git does not throw away anything which is added to the
 		repository.
@@ -8,8 +8,8 @@
 	In this exercise you create such an unreferenced commit by committing with a detached head. There are other
 		scenarios where a commit gets lost, e.g. after an amend or a reset.
 	
-	<section id="_detach_your_head">
-		<title>Detach your head
+[[_detach_your_head">
+=== Detach your head
 		A simple way to create a detached head is to check out a remote tracking branch. This is a common scenario.
 			You may want to test the state in the remote repository.
 		
@@ -50,8 +50,8 @@
 			</inlinemediaobject>
 		
 	
-	<section id="_loose_your_commit">
-		<title>"Loose" your commit
+[[_loose_your_commit">
+=== "Loose" your commit
 		The next morning you come back to your office and you urgently have to fix a bug. Checkout another branch.
 		
 		The commit you made before is not visible anymore in the history view.
@@ -66,8 +66,8 @@
 			</inlinemediaobject>
 		
 	
-	<section id="_find_it_again_in_the_reflog">
-		<title>Find it again in the reflog
+[[_find_it_again_in_the_reflog">
+=== Find it again in the reflog
 		Git has not only kept the commit in the repository, it has even written a log entry that the HEAD had pointed
 			to it.
 			To find it again, open the Git Reflog view, either with Ctrl+3 and typing reflog or from the Git repositories view,

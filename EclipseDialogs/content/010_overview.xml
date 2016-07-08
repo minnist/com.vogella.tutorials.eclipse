@@ -1,11 +1,9 @@
-<section id="dialogs">
-	<title>Dialogs in Eclipse</title>
-	<indexterm>
-		<primary>Dialog</primary>
-	</indexterm>
-	<para>
+
+	<title>Dialogs in Eclipse
+
+	
 		Eclipse allows you to use
-		<wordasword>dialogs</wordasword>
+		_dialogs_
 		to prompt the user for additional information or provide
 		the
 		user
@@ -15,5 +13,4 @@
 		SWT
 		and
 		JFace.
-	</para>
-</section>
+	

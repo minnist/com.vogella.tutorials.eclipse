@@ -1,8 +1,8 @@
-<section id="eclipsefeatureproject_create">
-	<title>Creating a feature</title>
-	<para>
+
+	<title>Creating a feature
+	
 		You can create a new feature project via the following menu path:
-		<menuchoice>
+		menu:
 			<guimenu>
 				File
 			</guimenu>
@@ -14,6 +14,5 @@
 			<guisubmenu>Feature Project</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 
-</section>

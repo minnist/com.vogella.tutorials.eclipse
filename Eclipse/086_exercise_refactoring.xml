@@ -1,24 +1,24 @@
-<section id="exercise_refactoring" role="wrapper">
-	<title>Exercise: Refactoring</title>
-	<section id="exercise_refactoring1">
-		<title>Preparation</title>
 
-		<para>
+	<title>Exercise: Refactoring
+[[exercise_refactoring1">
+=== Preparation
+
+		
 			For the next examples change the
 			<code>MyFirstClass</code>
 			class to
 			the following code.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/refactoring/MyFirstClassVrs1.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="exercise_refactoring2">
-		<title>Extract method</title>
-		<para>
+		
+	
+[[exercise_refactoring2">
+=== Extract method
+		
 			A useful refactoring is to mark code and create a method
 			from
 			the
@@ -26,70 +26,57 @@
 			"for" loop, right
 			click on the selection and
 			select
-			<menuchoice>
-				<guimenu>Refactoring </guimenu>
-				<guisubmenu>Extract Method</guisubmenu>
-			</menuchoice>
+			menu:Refactoring [Extract Method]
 			. Use
-			<wordasword>calculateSum</wordasword>
+			_calculateSum_
 			as the name of the new method.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/refactor20.png" />
+		
+image::refactor20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Extract Method refactoring</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para> After this refactoring the class should look like the following code.</para>
-		<para>
+					<phrase>Extract Method refactoring,pdfwidth=60%]
+		
+		 After this refactoring the class should look like the following code.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/refactoring/MyFirstClassVrs2.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="exercise_refactoring3">
-		<title>Extract Constant</title>
-		<para>
+	
+[[exercise_refactoring3">
+=== Extract Constant
+		
 			You can also extract strings and create constants based on the
 			strings. Mark for
 			this example the
 			<code>"Hello Eclipse!"</code>
 			string in your source code, right-click on it and
 			select
-			<menuchoice>
-				<guimenu>Refactor</guimenu>
-				<guisubmenu>Extract Constant</guisubmenu>
-			</menuchoice>
+			menu:Refactor[Extract Constant]
 			. Name your new constant <code>HELLO</code>.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/refactor30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Extract Constants</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Extract Constants,pdfwidth=60%]
+		
 
-		<para>The string is now defined as a constant.</para>
+		The string is now defined as a constant.
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/refactoring/MyFirstClassVrs3.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-</section>

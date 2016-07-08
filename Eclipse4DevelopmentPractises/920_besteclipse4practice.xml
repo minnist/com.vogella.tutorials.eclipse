@@ -1,11 +1,9 @@
-<section id="bestpractices" role="wrapper">
-	<title>Eclipse development good practices</title>
-	<indexterm>
-		<primary>Development practices</primary>
-	</indexterm>
 
-	<section id="bestpractices_packagename">
-		<title>Project, package and class names</title>
+	<title>Eclipse development good practices
+
+
+[[bestpractices_packagename">
+=== Project, package and class names
 		<indexterm>
 			<primary>Naming conventions</primary>
 			<secondary>Projects</secondary>
@@ -14,23 +12,23 @@
 			<primary>Naming conventions</primary>
 			<secondary>Packages and classes</secondary>
 		</indexterm>
-		<para>
+		
 			It is good practice to use your reverse web domain
 			name as top-level
 			package identifier. For example if you own the
 			domain
-			<wordasword>mycompany.com</wordasword>
+			_mycompany.com_
 			you package name space would start with
 			<code>com.mycompany</code>
 			. This avoids name collision with packages contributed by other
 			plug-ins.
-		</para>
+		
 
-		<para>The following table suggests good practices for naming
+		The following table suggests good practices for naming
 			conventions for projects, packages and classes.
-		</para>
+		
 		<table frame="all">
-			<title>Naming conventions</title>
+	=== Naming conventions
 			<tgroup align="left" cols="2" colsep="1" rowsep="1">
 				<colspec colname="c1" colwidth="1*" />
 				<colspec colname="c2" colwidth="3*" />
@@ -82,15 +80,15 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</section>
+	
 
-	<section id="e4modelids_requirements">
-		<title>Naming conventions for model identifiers (IDs)</title>
+[[e4modelids_requirements">
+=== Naming conventions for model identifiers (IDs)
 		<indexterm>
 			<primary>Naming conventions</primary>
 			<secondary>ID for model elements</secondary>
 		</indexterm>
-		<para>
+		
 			Every model element allows you to define an ID. This ID is used
 			by
 			the Eclipse framework to identify this model
@@ -102,68 +100,68 @@
 			in every
 			window of you application. This allows menu contributions to
 			contribute to every window its menu entries.
-		</para>
-		<para>
+		
+		
 			Unintentionally using the same ID for a model element may result
 			in unexpected behavior. For example if you
 			search for a element via
 			the ID.
-		</para>
+		
 
-		<para>
+		
 			A good convention is to start IDs with the
-			<wordasword>top level package</wordasword>
+			_top level package_
 			name of
 			your project followed by a group descriptor and a name which
 			gives an
 			idea about the purpose of the element. For
 			example,
-			<wordasword>com.example.e4.rcp.todo.part.todooverview</wordasword>
+			_com.example.e4.rcp.todo.part.todooverview_
 			, where
-			<wordasword>com.example.e4.rcp.todo</wordasword>
+			_com.example.e4.rcp.todo_
 			is the top level
 			package,
-			<wordasword>part</wordasword>
+			_part_
 			is the group
 			descriptor for all visible
 			parts (views and editors)
 			in
 			your
 			application and
-			<wordasword>todooverview</wordasword>
+			_todooverview_
 			gives an
 			idea about the purpose of this
 			part.
-		</para>
-		<para>
+		
+		
 			Also note that the
 			entire
 			ID is
 			written only in lower case
 			characters.
-		</para>
+		
 
-		<para>Some
+		Some
 			Eclipse projects also
 			use
 			camelCase for the last part of the
 			ID, but that is
 			more for historical reasons.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="bestpractices_components">
-		<title>Create isolated components</title>
-		<para>
+[[bestpractices_components">
+=== Create isolated components
+		
 			It is important to separate your application components into
 			isolated
 			modules. This reduces the complexity of
 			development and
 			allows you to reuse these components in different
 			applications.
-		</para>
-		<para>
+		
+		
 			User interface
 			related and core functionalities
 			should be
@@ -173,8 +171,8 @@
 			plug-ins. For example, if you
 			develop a new SWT
 			widget, you should place this widget in a separate plug-in.
-		</para>
-		<para>
+		
+		
 			The
 			data model
 			of the application should be kept in its own
@@ -184,21 +182,21 @@
 			therefore
 			keep it as small as
 			possible.
-		</para>
-	</section>
+		
+	
 
 
 
-	<section id="bestpracticese_extensionpoints">
-		<title>Usage of your custom extension points</title>
-		<para>
+[[bestpracticese_extensionpoints">
+=== Usage of your custom extension points
+		
 			The programming model of Eclipse 4 has reduced the need for
 			using extensions and extension points but they still
 			have
 			valid use
 			cases.
-		</para>
-		<para>
+		
+		
 			If you
 			have multiple
 			plug-ins which should contribute to a defined
@@ -208,13 +206,13 @@
 			your own
 			extension
 			points.
-		</para>
-	</section>
+		
+	
 
 
-	<section id="bestpractices_minimizeapi">
-		<title>Avoid releasing unnecessary API</title>
-		<para>
+[[bestpractices_minimizeapi">
+=== Avoid releasing unnecessary API
+		
 			Eclipse plug-ins explicitly declare their API via their exported
 			packages. Publish only the packages which other
 			plug-ins should use.
@@ -224,15 +222,15 @@
 			Avoid
 			exporting
 			packages just for testing.
-		</para>
-	</section>
+		
+	
 
-	<section id="bestpractices_dependencies">
-		<title>Packages vs. plug-in dependencies</title>
-		<para>OSGi allows you to define dependencies via plug-ins (Require-Bundle) or via packages (Import-Package) in the
+[[bestpractices_dependencies">
+=== Packages vs. plug-in dependencies
+		OSGi allows you to define dependencies via plug-ins (Require-Bundle) or via packages (Import-Package) in the
 			manifest file.
-		</para>
-		<para>
+		
+		
 			Dependencies based on packages express an API dependency as
 			they
 			allow you to
@@ -240,8 +238,8 @@
 			Dependencies based on
 			plug-ins imply a dependency on
 			an implementation.
-		</para>
-		<para>
+		
+		
 			Use package
 			dependencies
 			whenever
@@ -249,13 +247,13 @@
 			exchange the
 			implementing
 			plug-in.
-		</para>
-		<para>
+		
+		
 			Package dependencies add complexity to the setup as you usually
 			have
 			more packages than plug-ins.
-		</para>
-		<para>
+		
+		
 			Therefore
 			use plug-in
 			dependencies,
@@ -269,7 +267,6 @@
 			the near
 			future is
 			unlikely.
-		</para>
-	</section>
+		
+	
 
-</section>

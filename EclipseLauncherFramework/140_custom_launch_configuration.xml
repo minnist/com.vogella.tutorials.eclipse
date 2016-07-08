@@ -1,88 +1,86 @@
-<section id="eclipsecustomlaunchconfigurationtype">
-	<title>How a launch can be triggered</title>
-	<para>Three different ways to trigger a launch exist.</para>
-	<para>
+
+	<title>How a launch can be triggered
+	Three different ways to trigger a launch exist.
+	
 		<itemizedlist>
 			<listitem>
-				<para>Pass a launch configuration to an <code>﻿ILaunchConfigurationDelegate</code>, which runs
-					the launch configuration</para>
+				Pass a launch configuration to an <code>﻿ILaunchConfigurationDelegate</code>, which runs
+					the launch configuration
 			</listitem>
 			<listitem>
-				<para>Use an <code>﻿ILaunchShortcut</code> and determine with an IEditorPart how a
-					launch should be done</para>
+				Use an <code>﻿ILaunchShortcut</code> and determine with an IEditorPart how a
+					launch should be done
 			</listitem>
 			<listitem>
-				<para>Use an <code>﻿ILaunchShortcut</code> and determine with an ISelection how a
-					launch should be done</para>
+				Use an <code>﻿ILaunchShortcut</code> and determine with an ISelection how a
+					launch should be done
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 	<section>
-		<title>Creating a new launch configuration type</title>
-		<para>﻿The <code>org.eclipse.debug.core</code> plugin provides the
+=== Creating a new launch configuration type
+		﻿The <code>org.eclipse.debug.core</code> plugin provides the
 				<code>﻿org.eclipse.debug.core.launchConfigurationTypes</code> extension point, where
-			a new launch configuration type can be added.</para>
-		<para>The extension point can be configured as follows.</para>
-		<para>
+			a new launch configuration type can be added.
+		The extension point can be configured as follows.
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchConfigurationTypes.xml"/>
 			</programlisting>
-		</para>
-		<para>The different <property>modes</property> are <code>ILaunchManager.RUN_MODE</code>,
+		
+		The different <property>modes</property> are <code>ILaunchManager.RUN_MODE</code>,
 				<code>ILaunchManager.DEBUG_MODE</code> and
-			<code>ILaunchManager.PROFILE_MODE</code>.</para>
-		<para>You can set one or more of these modes, as depicted in the programlisting above.</para>
-		<para>The <property>delegate</property> must be an implementation of the
+			<code>ILaunchManager.PROFILE_MODE</code>.
+		You can set one or more of these modes, as depicted in the programlisting above.
+		The <property>delegate</property> must be an implementation of the
 				﻿<code>ILaunchConfigurationDelegate</code> interface, which contains just one
-			method.</para>
-		<para>This method is responsible for the actual launch. The
+			method.
+		This method is responsible for the actual launch. The
 				<code>ILaunchConfiguration</code> contains launching attributes, which can be read
-			by using one the its <code>getAttribute</code> methods.</para>
-		<para>Therefore we also specify an interface with key constants for the custom attributes:</para>
-		<para>
+			by using one the its <code>getAttribute</code> methods.
+		Therefore we also specify an interface with key constants for the custom attributes:
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfigurationAttributes.java"/>
 			</programlisting>
-		</para>
-		<para>The <code>LaunchConfigurationDelegate</code> implementation, which works with this attribute may look like this:</para>
-		<para>
+		
+		The <code>LaunchConfigurationDelegate</code> implementation, which works with this attribute may look like this:
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfiguration.java"/>
 			</programlisting>
-		</para>
-		<para>Usually a <code>ILaunchConfigurationDelegate</code> is invoked by the UI of
+		
+		Usually a <code>ILaunchConfigurationDelegate</code> is invoked by the UI of
                 ﻿<code>org.eclipse.debug.ui</code>, which is covered in <xref
-                linkend="eclipsecustomlaunchconfigurationui"/>.</para>
-	</section>
+                linkend="eclipsecustomlaunchconfigurationui"/>.
+	
 	<section>
-		<title>Using the ﻿ILaunchShortcut for ISelections and IEditorParts</title>
-		<para>In some cases, one would rather create a default launch configuration from an
+=== Using the ﻿ILaunchShortcut for ISelections and IEditorParts
+		In some cases, one would rather create a default launch configuration from an
 				<code>ISelection</code> or an <code>IEditorPart</code>, than manually configuring a
-			launch configuration.</para>
-		<para>With this approach it is up to the programmer to determine how a launch should be done
-			according the current <code>ISelection</code> or <code>IEditorPart</code>.</para>
-		<para>Such an <code>ILaunchShortcut</code> can be defined with the
-				<code>﻿org.eclipse.debug.ui.launchShortcuts</code> extension point.</para>
-		<para>		
+			launch configuration.
+		With this approach it is up to the programmer to determine how a launch should be done
+			according the current <code>ISelection</code> or <code>IEditorPart</code>.
+		Such an <code>ILaunchShortcut</code> can be defined with the
+				<code>﻿org.eclipse.debug.ui.launchShortcuts</code> extension point.
+				
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchShortcut.xml"/>
 			</programlisting>
-		</para>
-		<para>The referenced <code>﻿LaunchShortcut</code> class must implement
-				﻿<code>ILaunchShortcut</code>.</para>
-		<para>
+		
+		The referenced <code>﻿LaunchShortcut</code> class must implement
+				﻿<code>ILaunchShortcut</code>.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/LaunchShortcut.java"/>
 			</programlisting>
-		</para>
-        <para>After implementing this, you can run the <guimenuitem>Sample Shortcut</guimenuitem>
-            from a editor's popup menu or on a ISelection, such as a Java class file.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/run_as_sample_shortcut.png"/>
+		
+        After implementing this, you can run the <guimenuitem>Sample Shortcut</guimenuitem>
+            from a editor's popup menu or on a ISelection, such as a Java class file.
+		
+image::run_as_sample_shortcut.png"/>
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	
+

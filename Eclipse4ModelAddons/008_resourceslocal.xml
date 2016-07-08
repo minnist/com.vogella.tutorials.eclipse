@@ -1,48 +1,48 @@
-<section id="webresrouces_eclipse4">
-	<title>Eclipse RCP resources</title>
 
-	<section id="resources_eclipse">
-		<title>Eclipse Bug Tracker and Eclipse forum</title>
-		<para>
-			<ulink url="http://eclipse.org/forums">Eclipse Forum</ulink>
+	<title>Eclipse RCP resources
+
+[[resources_eclipse">
+=== Eclipse Bug Tracker and Eclipse forum
+		
+			http://eclipse.org/forums">Eclipse Forum
 			for asking questions and providing feedback.
-		</para>
-		<para>
-			<ulink url="https://bugs.eclipse.org/bugs/">Eclipse Bug Tracker</ulink>
+		
+		
+			https://bugs.eclipse.org/bugs/">Eclipse Bug Tracker
 			for reporting errors or feature requests.
-		</para>
+		
 
-	</section>
+	
 
-	<section id="resources_eclipsercp">
-		<title>Eclipse RCP development resources</title>
+[[resources_eclipsercp">
+=== Eclipse RCP development resources
 
-		<para>
-			<ulink url="http://wiki.eclipse.org/Eclipse4/RCP">Eclipse 4 RCP Wiki</ulink>
-		</para>
+		
+			http://wiki.eclipse.org/Eclipse4/RCP">Eclipse 4 RCP Wiki
+		
 
-		<para>
-			<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/FAQ">Eclipse 4 RCP FAQ</ulink>
-		</para>
-		<para>
-			<ulink url="http://www.vogella.com/eclipse.html"> vogella Eclipse Tutorials</ulink>
-		</para>
-		<para>
-			<ulink url="http://wiki.eclipse.org/Eclipse4/Tutorials"> Eclipse wiki with Eclipse 4 tutorials</ulink>
-		</para>
-		<para>
-			<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection">Eclipse 4 dependency injection wiki</ulink>
-		</para>
+		
+			http://wiki.eclipse.org/Eclipse4/RCP/FAQ">Eclipse 4 RCP FAQ
+		
+		
+			http://www.vogella.com/eclipse.html"> vogella Eclipse Tutorials
+		
+		
+			http://wiki.eclipse.org/Eclipse4/Tutorials"> Eclipse wiki with Eclipse 4 tutorials
+		
+		
+			http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection">Eclipse 4 dependency injection wiki
+		
 
-		<para>
-			<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags"> Eclipse 4 RCP Wiki for tags for the application
-				model</ulink>
-		</para>
-		<para>
+		
+			http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags"> Eclipse 4 RCP Wiki for tags for the application
+				model
+		
+		
 			<ulink
-				url="http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html">Eclipse 4 Build Schedule</ulink>
-		</para>
-	</section>
-</section>
+				url="http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html">Eclipse 4 Build Schedule
+		
+	
+
 
 	

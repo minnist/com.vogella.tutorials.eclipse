@@ -10,65 +10,65 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="EclipseProjectNatures_propertypages_exercise">
-	<title>Exercise: Add a new custom property page</title>
-    <para>In this exercise we want to reuse the project from the previous exercise.</para>
+
+	<title>Exercise: Add a new custom property page
+    In this exercise we want to reuse the project from the previous exercise.
     <section>
-        <title>Target</title>
-        <para>Add a custom property page to the properties of those projects, which have
-                <property>com.example.project.examplenature</property> as project nature.</para>
-    </section>
+        <title>Target
+        Add a custom property page to the properties of those projects, which have
+                <property>com.example.project.examplenature</property> as project nature.
+    
     <section>
-        <title>Adding a custom property page</title>
-        <para>Add the <code>org.eclipse.ui.propertyPages</code> extension point and configure the
-            page like this:</para>
-        <para>
+        <title>Adding a custom property page
+        Add the <code>org.eclipse.ui.propertyPages</code> extension point and configure the
+            page like this:
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_property_page.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>The referenced <code>ExamplePropertyPage</code> should extend the
+        
+        The referenced <code>ExamplePropertyPage</code> should extend the
                 <code>org.eclipse.ui.dialogs.PropertyPage</code> class and implement the
-                <code>org.eclipse.ui.IWorkbenchPropertyPage</code> interface.</para>
-        <para><programlisting language="java">
+                <code>org.eclipse.ui.IWorkbenchPropertyPage</code> interface.
+        <programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExamplePropertyPage.java"/>
-		</programlisting></para>
-    </section>
+		</programlisting>
+    
     <section>
-        <title>Optional - Reuse project nature definition</title>
-        <para>We only want to add the custom property page, in case the
-                <property>com.example.project.examplenature</property> project nature is set.</para>
-        <para>Therefore we define a <property>enabledWhen</property> definition, with the
+        <title>Optional - Reuse project nature definition
+        We only want to add the custom property page, in case the
+                <property>com.example.project.examplenature</property> project nature is set.
+        Therefore we define a <property>enabledWhen</property> definition, with the
                 <property>com.example.project.hasNature</property> expression, which has been
             created in the previous optional exercise. See <xref
-                linkend="optional_project_nature_definition"/></para>
-        <para>
+                linkend="optional_project_nature_definition"/>
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/property_page_enablement.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-    </section>
+        
+    
     <section>
-        <title>Validate</title>
-        <para>Start your plug-in within the Eclipse IDE, right click your project and click on the
-                <guimenuitem>Properties</guimenuitem> menu item.</para>
-        <para>Then select <guilabel>Example Settings</guilabel> and the result should look like
-            this:</para>
-        <para>
+        <title>Validate
+        Start your plug-in within the Eclipse IDE, right click your project and click on the
+                <guimenuitem>Properties</guimenuitem> menu item.
+        Then select _Example Settings_ and the result should look like
+            this:
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_property_page_sample.png"/>
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>In case you have also done the optional exercises the <guilabel>Example
-                Settings</guilabel>should only be visible, if the
+        
+        In case you have also done the optional exercises the _Example
+                Settings_should only be visible, if the
                 <property>com.example.project.examplenature</property> project nature is applied to
-            the project.</para>
-    </section>
+            the project.
     
-</section>
+    
+

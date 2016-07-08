@@ -1,17 +1,17 @@
-<section id="quickfixcontentassists" role="wrapper">
-	<title>Content Assist and Quick Fix</title>
-	<section id="contentassist">
-		<title>Content assist</title>
+
+	<title>Content Assist and Quick Fix
+[[contentassist">
+=== Content assist
 		<indexterm>
 			<primary>Content assist</primary>
 		</indexterm>
-		<para>
-			<wordasword>Content assist</wordasword>
+		
+			_Content assist_
 			is a functionality in Eclipse which allows the developer to get
 			context-sensitive code
 			completion in an editor upon user request.
-		</para>
-		<para>
+		
+		
 			It can
 			be invoked by pressing
 			<keycombo>
@@ -19,8 +19,8 @@
 				<keycap>Space</keycap>
 			</keycombo>
 			.
-		</para>
-		<para>
+		
+		
 			For example, type
 			<code>syso</code>
 			in the editor of a Java source file
@@ -35,8 +35,8 @@
 			with
 			<code>System.out.println("")</code>
 			.
-		</para>
-		<para>
+		
+		
 			If you have a reference to an object, for example, the object
 			<code>person</code>
 			of the type
@@ -52,24 +52,20 @@
 				<keycap>Space</keycap>
 			</keycombo>
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/contentassists10.gif" />
+		
+		
+image::contentassists10.gif" />
 				</imageobject>
 				<textobject>
-					<phrase>Content Assists</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="quickfix">
-		<title>Quick Fix</title>
+					<phrase>Content Assists,pdfwidth=60%]
+		
+	
+[[quickfix">
+=== Quick Fix
 		<indexterm>
 			<primary>Quick Fix</primary>
 		</indexterm>
-		<para>
+		
 			Whenever Eclipse detects a problem, it will underline the
 			problematic
 			text in the editor. Select the underlined text and press
@@ -80,10 +76,10 @@
 			</keycombo>
 			to see proposals how to solve this problem. This functionality is
 			called
-			<wordasword>Quick Fix</wordasword>
+			_Quick Fix_
 			.
-		</para>
-		<para>
+		
+		
 			For example, type
 			<code>myBoolean = true;</code>
 			If myBoolean is not yet
@@ -97,21 +93,19 @@
 			Eclipse will
 			suggest creating a field or
 			local variable.
-		</para>
+		
 
-		<para>
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="60" fileref="images/quickfix10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Using Quickfix Example</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Using Quickfix Example,pdfwidth=60%]
+		
 
-		<para>
-			<wordasword>Quick Fix</wordasword>
+		
+			_Quick Fix_
 			is extremely powerful. For example, it allows you to
 			create new
 			local
@@ -125,14 +119,13 @@
 			assign a
 			statement
 			to a variable and much more.
-		</para>
-		<para>
-			<wordasword>Quick Fix</wordasword>
+		
+		
+			_Quick Fix_
 			also gives several options for code changes on code which does not
 			contain errors, e.g., it allows you to convert a local variable to a
 			field.
-		</para>
+		
 
-	</section>
+	
 
-</section>

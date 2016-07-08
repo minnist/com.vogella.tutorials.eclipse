@@ -1,75 +1,37 @@
-<section id="exportimport" role="wrapper">
-	<title>Exporting and importing projects</title>
-	<section id="exportingprojects">
-		<title>Exporting projects</title>
-		<para>You can export and import Eclipse projects. This allows you to
+
+	<title>Exporting and importing projects
+[[exportingprojects">
+=== Exporting projects
+		You can export and import Eclipse projects. This allows you to
 			share projects with other people and to import existing projects.
-		</para>
-		<para>
+		
+		
 			To export Eclipse projects, select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Export</guisubmenu>
-				<guisubmenu>General</guisubmenu>
-				<guisubmenu>Archive File</guisubmenu>
-			</menuchoice>
+			menu:File[Export > General > Archive File]
 			and select the projects you want to export.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/exportprojects10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Exporting project</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+image::exportprojects10.png[Exporting project,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/exportprojects20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Exporting projects part 2</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="importingprojects">
-		<title>Importing projects</title>
-		<para>
+		
+image::exportprojects20.png[Exporting projects part 2,pdfwidth=60%]
+		
+	
+[[importingprojects">
+=== Importing projects
+		
 			To import projects, select
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Import</guisubmenu>
-				<guisubmenu>Existing Projects into Workspace</guisubmenu>
-			</menuchoice>
+			menu:File[Import > Existing Projects into Workspace]
 			. You can import from an archive file, i.e., zip file or directly
 			import the projects in case you have extracted the zip file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/importprojects10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Importing projects</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+		
+		
+image::importprojects10.png[Importing projects,pdfwidth=60%]
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/importprojects20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Importing projects from archive file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+image::importprojects20.png[Importing projects from archive file,pdfwidth=60%]
+		
+	

@@ -1,108 +1,93 @@
-<section id="data">
-	<title>Datasource and Dataset</title>
-	<para>To use Java Objects (POJO's) as datasource in Eclipse BIRT you
+
+	<title>Datasource and Dataset
+	To use Java Objects (POJO's) as datasource in Eclipse BIRT you
 		have to map the fields of your Java classes to
 		JavaScript. This
 		JavaScript is used in your report and will access the Java
-		Object.</para>
-	<section id="data_source">
-		<title>Create Data Source</title>
-		<para> The data source connects your data with your report. BIRT
+		Object.
+[[data_source">
+=== Create Data Source
+		 The data source connects your data with your report. BIRT
 			provides different types of data sources, we use the "Scripted Data
 			Source". Go back to your stocks_report, use the "Report Design"
-			perspective and select the "Data Explorer" View.</para>
-		<para>
+			perspective and select the "Data Explorer" View.
+		
 			<tip> You have to select your report to display the content of the
 				datasource view.</tip>
-		</para>
-		<para>
+		
+		
 			Create a new datasource, named "srcStocks" in your report.
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/datasource10.gif" format="gif" />
+image::datasource10.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/datasource20.gif" format="gif" />
+image::datasource20.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="data_dataset">
-		<title>The Dataset</title>
-		<para>
+		
+	
+[[data_dataset">
+=== The Dataset
+		
 			The dataset defines the mapping for the datasource data and the
 			BIRT data. 	Create a new dataset named "dataSetSocks".
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dataset10.gif" format="gif" />
+		
+image::dataset10.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dataset20.gif" format="gif" />
+		
+		
+image::dataset20.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
 
-		</para>
-		<para>
+		
+		
 			Press next and define the columns for your report.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dataset30.gif" format="gif" />
+		
+		
+image::dataset30.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="data_javascript">
-		<title>JavaScript</title>
-		<para> Now we have to write the JavaScript for our dataset. Select the dataset and
+		
+	
+[[data_javascript">
+=== JavaScript
+		 Now we have to write the JavaScript for our dataset. Select the dataset and
 			choose "open" as script. The open script is called before the first
 			access to the dataset. We use this to load our List with the stock
 			objects. To access a Java class you only have to use the following
 			syntax: Packages.myJavaClass where myJavaClass is the full qualified
-			Java class name.</para>
-		<para>
+			Java class name.
+		
 			<tip> In case you do not see the script please node that the editor
 				for the report has several tab. One of it is labeled "source".</tip>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/javascript10.gif" format="gif" />
+		
+		
+image::javascript10.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/javascript/open.script" />
 			</programlisting>
-		</para>
-		<para> Place the following coding in the fetch script.</para>
 		
-		<para>
+		 Place the following coding in the fetch script.
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/javascript/fetch.script" />
 			</programlisting>
-		</para>
-		<para> Check if your Script works by doubleclicking
-			on the dataset -> Preview Result.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/SNAG-0011.gif" format="gif" />
+		
+		 Check if your Script works by doubleclicking
+			on the dataset -> Preview Result.
+		
+image::SNAG-0011.gif" format="gif" />
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

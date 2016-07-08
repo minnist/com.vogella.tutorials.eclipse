@@ -1,104 +1,76 @@
-<section id="tuturial_targetplatform" role="wrapper">
-	<title>Exercise: Setting up a target platform</title>
-	<section id="tuturial_targetplatform_project">
-		<title>Creating a target definition file</title>
-		<para>
-			Create a new project called
-			<wordasword>com.example.rcp.target</wordasword>
-			of type
-			<guilabel>General</guilabel>
-			via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>General</guisubmenu>
-				<guisubmenu>Project</guisubmenu>
-			</menuchoice>
-			.
-		</para>
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/targetdefinitionproject10.png" />
+	<title>Exercise: Setting up a target platform
+[[tuturial_targetplatform_project">
+=== Creating a target definition file
+		
+			Create a new project called
+			_com.example.rcp.target_
+			of type
+			_General_
+			via
+			menu:File[New > Other... > General > Project]
+			.
+		
+
+		
+image::targetdefinitionproject10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Create a project for your target definition file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Create a project for your target definition file,pdfwidth=60%]
+		
+		
 			Create a new target definition file via the
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Target Definition</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in Development > Target Definition]
 			menu path. Use the
 			<code>com.example.rcp.target</code>
 			as file name.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_targetdefinition10.png" />
+		
+image::tutorial_targetdefinition10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Define target definition file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Define target definition file,pdfwidth=60%]
+		
+		
 			Press the
-			<guilabel>Add...</guilabel>
+			_Add..._
 			button.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_targetdefinition20.png" />
+		
+image::tutorial_targetdefinition20.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Add content to target definition file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Add content to target definition file,pdfwidth=60%]
+		
+		
 			Select
-			<guilabel>Software site</guilabel>
+			_Software site_
 			in the following dialog.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_targetdefinition30.png" />
+		
+		
+image::tutorial_targetdefinition30.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Add content to target definition file</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Add content to target definition file,pdfwidth=60%]
+		
+		
 			Press the
 			<guibutton>Next</guibutton>
 			button and enter the update site URL of the target release
 			in the Work with selection box. This is for example:
 			http://download.eclipse.org/releases/neon
 			for the Eclipse 4.6 (Neon) release.
-		</para>
+		
 
-		<para>
+		
 			Remove the
-			<guilabel>Group by Category</guilabel>
+			_Group by Category_
 			flag and add the following components:
 
 			<table frame='all'>
-				<title>Target components</title>
+		=== Target components
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -124,83 +96,69 @@
 				</tgroup>
 			</table>
 
-		</para>
+		
 
-		<para>After you close this dialog, the target definition is resolved,
+		After you close this dialog, the target definition is resolved,
 			which will take a while. The result should look
 			similar to the
 			following
 			screenshot.
 			Please note that your version numbers might be
 			different.
-		</para>
+		
 
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_targetdefinition40.png" />
+		
+image::tutorial_targetdefinition40.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>,pdfwidth=60%]
+		
 
-	</section>
+	
 
 
-	<section id="tuturial_targetplatform_activate">
-		<title>Activate your target platform</title>
-		<para>
+[[tuturial_targetplatform_activate">
+=== Activate your target platform
+		
 			Afterwards press the
-			<wordasword>Set as Target Platform</wordasword>
+			_Set as Target Platform_
 			to activate it. See
 			<xref linkend="tuturial_targetplatform_solvingissues" />
 			in case
 			you have problems with your new target platform.
-		</para>
-		<para>
+		
+		
 			To check if your definition is active, try to open the
 			<code>SpyHandler</code>
 			class via Ctrl+Shift+T (Open Type). This should not be possible.
-		</para>
-	</section>
+		
+	
 
-	<section id="tuturial_targetplatform_solvingissues">
-		<title>Solving potential issues for development</title>
-		<para>Your target platform depends on external update sites and their
+[[tuturial_targetplatform_solvingissues">
+=== Solving potential issues for development
+		Your target platform depends on external update sites and their
 			packaging of plug-ins. Theses update sites might
 			change over time, so
 			you should be able to revert your target platform settings in case
 			you face issues.
-		</para>
-		<para>
+		
+		
 			You can switch back to your
 			Eclipse IDE as target platform via
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Target Platform</guisubmenu>
-			</menuchoice>
+			menu:Window[Preferences > Plug-in Development > Target Platform]
 			.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/tutorial_targetdefinition60.png" />
+		
+		
+image::tutorial_targetdefinition60.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>,pdfwidth=60%]
+		
 
 		<note>
-			<para>If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch
-				back to your definition. That sometimes solves target resolution issues.</para>
+			If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch
+				back to your definition. That sometimes solves target resolution issues.
 		</note>
-	</section>
+	
 
-</section>

@@ -10,40 +10,40 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-<section id="EclipseProjectNatures_image">
-	<title>Provide an image as decorator for the project</title>
-    <para>You may have noticed the <guilabel>J</guilabel> as decorator for a java project.</para>
-    <para>
+
+	<title>Provide an image as decorator for the project
+    You may have noticed the _J_ as decorator for a java project.
+    
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_java_images.png"/>
             </imageobject>
         </mediaobject>
-    </para>
-    <para>In order to provide such an decorator image in case your project nature has been applied
+    
+    In order to provide such an decorator image in case your project nature has been applied
         to a project, you can use the <code>org.eclipse.ui.ide.projectNatureImages</code> extension
-        point.</para>
-    <para>
+        point.
+    
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_images_extension_point.png"/>
             </imageobject>
         </mediaobject>
-    </para>
-    <para>So in case the <code>com.example.project.examplenature</code> project nature is applied to
-        a project, this decorator will also be shown.</para>
-    <para>
+    
+    So in case the <code>com.example.project.examplenature</code> project nature is applied to
+        a project, this decorator will also be shown.
+    
         <note>
-            <para>The size of the image 8x8 is recommended in order to look nice.</para>
+            The size of the image 8x8 is recommended in order to look nice.
         </note>
-    </para>
-    <para>When the <code>com.example.project.examplenature</code> is applied to a general
-            <guilabel>test</guilabel> project it should look like this:</para>
-    <para>
+    
+    When the <code>com.example.project.examplenature</code> is applied to a general
+            _test_ project it should look like this:
+    
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_image_example.png"/>
             </imageobject>
         </mediaobject>
-    </para>
-</section>
+    
+

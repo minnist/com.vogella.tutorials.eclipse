@@ -1,26 +1,26 @@
-<section id="renderer" role="wrapper">
-	<title>Renderer Framework</title>
-	<section id="renderer_overview">
-		<title>Renderer</title>
+
+	<title>Renderer Framework
+[[renderer_overview">
+=== Renderer
 		<indexterm>
 			<primary>Renderer</primary>
 		</indexterm>
 		<indexterm>
 			<primary>WorkbenchRendererFactory</primary>
 		</indexterm>
-		<para>
+		
 			An Eclipse application is modeled without a hard dependency to a
 			specific user interface toolkit. Eclipse allows you
 			to define a
-			<wordasword>renderer factory</wordasword>
+			_renderer factory_
 			. This
 			renderer factory
 			determines for every model element the
 			responsible
-			<wordasword>renderer object</wordasword>
+			_renderer object_
 			.
-		</para>
-		<para>
+		
+		
 			A renderer object
 			is responsible for creating the user
 			interface
@@ -33,8 +33,8 @@
 			to
 			these
 			changes.
-		</para>
-		<para>
+		
+		
 			By
 			default the
 			Eclipse platform
@@ -44,16 +44,16 @@
 			The
 			<code>org.eclipse.e4.ui.workbench.renderers.swt</code>
 			plug-in contains this default implementation.
-		</para>
+		
 
 
-	</section>
-	<section id="renderer_factories">
-		<title>Renderer factory and renderer objects</title>
+	
+[[renderer_factories">
+=== Renderer factory and renderer objects
 		<indexterm>
 			<primary>IRendererFactory</primary>
 		</indexterm>
-		<para>
+		
 
 			The
 			renderer factory determines per model object the
@@ -63,9 +63,9 @@
 			corresponding
 			model
 			object.
-		</para>
+		
 
-		<para>
+		
 			Renderer factories implement the
 			<code>IRendererFactory</code>
 			interface. In the
@@ -73,9 +73,9 @@
 			method it returns a renderer object of type
 			<code>AbstractPartRenderer</code>
 			.
-		</para>
+		
 
-		<para>
+		
 			For example, if the model element is an instance of
 			<code>MPart</code>
 			,
@@ -87,25 +87,25 @@
 			code in the
 			<code>WorkbenchRendererFactory</code>
 			class is shown below.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/renderer/rendererselection.txt" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="renderer_context">
-		<title>Context creation of model objects</title>
-		<para>
+	
+[[renderer_context">
+=== Context creation of model objects
+		
 			During the rendering the
 			<code>IEclipseContext</code>
 			of those model elements which
 			extend
 			<code>MContext</code>
 			(MApplication, MPart, etc) is created and populated.
-		</para>
-		<para>
+		
+		
 			For
 			example an object of type
 			<code>ContributedPartRenderer</code>
@@ -114,10 +114,10 @@
 			model element. This object creates a
 			<code>Composite</code>
 			and injects it into the local context of each part.
-		</para>
-	</section>
-	<section id="renderer_customfactory">
-		<title>Using a custom renderer</title>
+		
+	
+[[renderer_customfactory">
+=== Using a custom renderer
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>Custom implementation</secondary>
@@ -126,7 +126,7 @@
 			<primary>rendererFactoryUri</primary>
 		</indexterm>
 
-		<para>
+		
 			The Eclipse platform allows you
 			to extend or exchange the
 			default
@@ -134,8 +134,8 @@
 			stack to use
 			tabs at
 			the bottom instead of the top.
-		</para>
-		<para>
+		
+		
 			You can also implement renderer for other
 			user
 			interface
@@ -150,9 +150,9 @@
 			for
 			your
 			application.
-		</para>
+		
 		<tip>
-			<para>
+			
 				If you switch from SWT to another user interface technology
 				your non
 				user interface related logic, e.g.,
@@ -170,20 +170,20 @@
 				written in SWT must be
 				re-written in JavaFX to work together with a
 				JavaFX Renderer.
-			</para>
+			
 		</tip>
-		<para>
+		
 			The custom renderer factory is registered via the
 			<code>org.eclipse.core.runtime.products</code>
 			extension point. You use an additional property called
 			<code>rendererFactoryUri</code>
 			to point to the new factory class.
-		</para>
-	</section>
+		
+	
 
-	<section id="renderer_customfactory_modelspecific">
-		<title>Using a custom renderer for one model element</title>
-		<para>
+[[renderer_customfactory_modelspecific">
+=== Using a custom renderer for one model element
+		
 			If you want to replace the renderer for only one model element,
 			there
 			is a key
@@ -193,8 +193,7 @@
 			URI of the
 			renderer you want to
 			use.
-		</para>
+		
 
-	</section>
+	
 
-</section>

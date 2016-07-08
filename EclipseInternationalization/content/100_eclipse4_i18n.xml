@@ -1,52 +1,52 @@
-<section id="eclipse4_i18n" role="wrapper">
-	<title>Eclipse 4 internationalization</title>
-	<section id="eclipse4_i18n1">
-		<title>Translation with POJOs</title>
+
+	<title>Eclipse 4 internationalization
+[[eclipse4_i18n1">
+=== Translation with POJOs
 		<indexterm>
 			<primary>Translation service</primary>
 		</indexterm>
-		<para>
-		</para>
-		<para>To define your translations you simply define a Java object with
+		
+		
+		To define your translations you simply define a Java object with
 			several public fields of type String.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/Message.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The fields of such a Java object are initialized when an instance is
 			injected via the
 			<code>@Translation</code>
 			annotation. The
 			<code>org.eclipse.e4.core.services</code>
 			plug-in contains the annotations which are used for translations.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/Usage.java" />
 			</programlisting>
-		</para>
-		<para>To find the property files for the key/value pairs, if searches
+		
+		To find the property files for the key/value pairs, if searches
 			for property files based on the rules described
 			in the next
 			section.
-		</para>
-	</section>
-	<section id="eclipse4_i18_searchprocess">
-		<title>Search process for translation files</title>
+		
+	
+[[eclipse4_i18_searchprocess">
+=== Search process for translation files
 
-		<para>
+		
 			The default translation service searches for property files with the
 			translations in the following order.
 			<orderedlist>
 				<listitem>
-					<para>
+					
 						Check the @Message annotation in the Messages class for the
 						correct location. This annotation allows defining the
 						location of
@@ -54,20 +54,20 @@
 						<xref linkend="eclipse4_i18_messagesannotation" />
 						. If not present, go to the next
 						step.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>Check if a property file with a corresponding name is
+					Check if a property file with a corresponding name is
 						available relatively to the Message
 						class. If not
 						present, go to
 						the
 						next
 						step.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Check if a property file is configured via the
 						OSGi-ResourceBundle
 						header in the MANIFEST.MF file. resource bundle.
@@ -81,14 +81,14 @@
 						bundle (see
 						<xref linkend="i18n_osgi" />
 						).
-					</para>
+					
 				</listitem>
 			</orderedlist>
-		</para>
+		
 
-		<section id="eclipse4_i18_messagesannotation">
-			<title>Using the optional @Message annotation</title>
-			<para>
+	[[eclipse4_i18_messagesannotation">
+	=== Using the optional @Message annotation
+			
 				The optional
 				<code>@Message</code>
 				annotation
@@ -101,38 +101,38 @@
 				See the Javadoc of the
 				<code>@Message</code>
 				annotation for more information on this topic.
-			</para>
+			
 
-		</section>
+		
 
-		<section id="eclipse4_i18_postconstruct">
-			<title>Using the optional @PostConstruct in message POJOs</title>
-			<para>
+	[[eclipse4_i18_postconstruct">
+	=== Using the optional @PostConstruct in message POJOs
+			
 				It is possible to initialize fields via the
 				<code>@PostConstruct</code>
 				method in a message object as demonstrated in the following snippet.
-			</para>
-			<para>
+			
+			
 				<programlisting language="java">
 					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 						parse="text" href="../examples/eclipse4/MessagePlaceholder.java" />
 				</programlisting>
-			</para>
+			
 			<note>
-				<para>
+				
 					<code>@PostConstruct</code>
 					does not support parameter
 					injection in the context of a message
 					object.
-				</para>
+				
 			</note>
 
-		</section>
+		
 
-	</section>
-	<section id="eclipse4_i18n2">
-		<title>Dynamic language switch</title>
-		<para>
+	
+[[eclipse4_i18n2">
+=== Dynamic language switch
+		
 			The currently active
 			locale, e.g., "de" or "en", is represented by an
 			object of type
@@ -140,17 +140,17 @@
 			.
 			The Eclipse runtime supports a dynamic switch of this locale at
 			runtime.
-		</para>
+		
 		<note>
-			<para>
+			
 				The type of the
 				<code>TranslationService.LOCALE</code>
 				key was changed from String to Locale in Eclipse 4.4.2.
-			</para>
+			
 		</note>
 
 
-		<para>
+		
 			To support a dynamic locale switch the
 			application must be
 			able
@@ -163,45 +163,45 @@
 			fields and that a method
 			exists which updates them. This is
 			called the
-			<wordasword>Eclipse Translation Pattern</wordasword>
+			_Eclipse Translation Pattern_
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/TranslationPart.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			To change the active
 			locale at runtime use the
 			<code>ILocaleChangeService</code>
 			service. This is demonstrated by the following class which could be
 			used as part of a tool control.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/SwitchLanguageToolControl.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>To get notified you can use dependency injection.</para>
+		To get notified you can use dependency injection.
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/Notification.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
+	
 
-	<section id="eclipse4_MessageRegistry">
-		<title>Using the BaseMessageRegistry&lt;M&gt; to track language
+[[eclipse4_MessageRegistry">
+=== Using the BaseMessageRegistry&lt;M&gt; to track language
 			changes
-		</title>
-		<para>
+		
+		
 			Instead of implementing a method to receive the
 			<code>Message</code>
 			object on locale change in a part, like
@@ -210,8 +210,8 @@
 			, a
 			<code>BaseMessageRegistry&lt;M&gt;</code>
 			can be implemented.
-		</para>
-		<para>
+		
+		
 			The
 			<code>BaseMessageRegistry&lt;M&gt;</code>
 			contains methods to register controls, which are supposed to be
@@ -220,21 +220,21 @@
 			will be informed about new
 			<code>Message</code>
 			objects and applies the new values to its registered controls.
-		</para>
-		<para>
+		
+		
 			The
 			<code>BaseMessageRegistry&lt;M&gt;</code>
 			itself gets the
 			<code>Message</code>
 			object injected.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/eclipse4/MessagesRegistry.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Because the
 			<code>MessagesRegistry</code>
 			class is annoted with
@@ -243,23 +243,23 @@
 			the
 			<code>postConstruct</code>
 			method.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/eclipse4/MessagesRegistryExamplePartWithoutJava8.java" />
 			</programlisting>
-		</para>
-		<para>By using Java 8 registering controls looks better and is even
+		
+		By using Java 8 registering controls looks better and is even
 			shorter.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
 					href="../examples/eclipse4/MessagesRegistryExamplePartWithJava8.java" />
 			</programlisting>
-		</para>
-	</section>
-</section>
+		
+	
+

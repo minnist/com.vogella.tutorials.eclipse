@@ -1,4 +1,4 @@
-<section id="swtbot_usage3x">
+
 	<title>Resetting the workbench in 3.x
 
 	 JUnit does not require that the tests run in the same order as
@@ -13,4 +13,3 @@
 				parse="text" href="./examples/api/reset.txt" />
 		</programlisting>
 	
-</section>

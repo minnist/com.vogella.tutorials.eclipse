@@ -1,20 +1,20 @@
-<section id="toolbar_advanced" role="wrapper">
-	<title>Toolbars, ToolControls and drop-down tool items</title>
 
-	<section id="toolbar_advanced_buttons">
-		<title>Adding toolbars to parts</title>
+	<title>Toolbars, ToolControls and drop-down tool items
+
+[[toolbar_advanced_buttons">
+=== Adding toolbars to parts
 		<indexterm>
 			<primary>Toolbar</primary>
 			<secondary>View / Part</secondary>
 		</indexterm>
 
-		<para>
+		
 			Toolbars in the application
 			model are defined within
 			the
-			<wordasword>Trimbars</wordasword>
+			_Trimbars_
 			model element. A trimbar can be defined for
-			<wordasword>TrimmedWindow</wordasword>
+			_TrimmedWindow_
 			model elements. Via its
 			<parameter>Side</parameter>
 			attribute you define if the trimbar
@@ -23,114 +23,99 @@
 			placed on the top, left,
 			right or bottom corner of the
 			resulting window.
-		</para>
+		
 
-		<para>
+		
 			To add a toolbar to a
 			view,
 			set the
 			<parameter>Toolbar</parameter>
 			flag on the model element for the part and create the entries in the
 			application model.
-		</para>
-		<para>
+		
+		
 			Such an example setup is displayed in the following screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/part_toolbar10.png" />
+		
+		
+image::part_toolbar10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a toolbar to a part</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="toolbar_advanced_toolcontrols">
-		<title>ToolControls</title>
+					<phrase>Adding a toolbar to a part,pdfwidth=60%]
+		
+	
+[[toolbar_advanced_toolcontrols">
+=== ToolControls
 		<indexterm>
 			<primary>ToolControl</primary>
 		</indexterm>
-		<para>
-			<wordasword>ToolControl</wordasword>
+		
+			_ToolControl_
 			model element points to a Java class which can create controls that
 			are displayed in the toolbar.
 
-		</para>
-		<para>
+		
+		
 			For example, the following code creates a
 			<code>Text</code>
 			field in the toolbar which looks like a search field.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/toolitem/SearchToolItem.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			You can add such a
 			<code>ToolControl</code>
 			,
 			for example, to your windows trimbar as depicted in the following
 			screenshot.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<!-- TODO: screenshot shows an old class name com.vogella.e4.rcp.todo.SearchToolItem -->
 				<imageobject>
 					<imagedata fileref="images/toolitem_search04.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Adding a ToolItems to the Window Trim</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>Adding a ToolItems to the Window Trim,pdfwidth=60%]
+		
+		
 			The following screenshot shows this
 			<code>ToolControl</code>
 			used in an example RCP application.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/toolitem_search10.png" />
+		
+image::toolitem_search10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Resulting application with a search Toolitem</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>Resulting application with a search Toolitem,pdfwidth=60%]
+		
+	
 
-	<section id="toolbar_advanced_menues">
-		<title>Drop-down tool items</title>
+[[toolbar_advanced_menues">
+=== Drop-down tool items
 		<indexterm>
 			<primary>Toolbar</primary>
 			<secondary>Drop-down</secondary>
 		</indexterm>
-		<para>
+		
 			Set the
 			<parameter>Menu</parameter>
 			attribute on an toolitem
 			to be able to define a menu
 			similar to the
-			<guilabel>Run As...</guilabel>
+			_Run As..._
 			button in the Eclipse IDE. This button is depicted in the following
 			screenshot.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/toolitem_dropdown10.png" scale="40" />
+		
+		
+image::toolitem_dropdown10.png" scale="40" />
 				</imageobject>
 				<textobject>
-					<phrase>Drop-down menu for a toolitem</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Drop-down menu for a toolitem,pdfwidth=60%]
+		
 
-	</section>
+	
 
-</section>

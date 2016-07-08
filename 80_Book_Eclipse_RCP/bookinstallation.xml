@@ -31,27 +31,27 @@
 
 	</bookinfo>
 
-	<!-- <dedication> <para>For Jennifer, Kiran, Liam</para> </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+	<!-- <dedication> For Jennifer, Kiran, Liam </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
 		href="./004_foreword.adoc[] <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.adoc[] -->
 
 	<part>
-		<title>Setting up an Eclipse RCP development environment</title>
+=== Setting up an Eclipse RCP development environment
 		<chapter id="javainstallation">
-			<title>Install Java for Eclipse RCP development</title>
+	=== Install Java for Eclipse RCP development
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.adoc[]
 		</chapter>
 
 		<chapter id="eclipseskdinstallationforrcp">
-			<title>Install Eclipse IDE for RCP development</title>
+	=== Install Eclipse IDE for RCP development
 			<indexterm>
 				<primary>Installation</primary>
 			</indexterm>
-			<para>The following description explains
+			The following description explains
 				how to install the Eclipse
 				IDE and the required tools to develop Eclipse RCP
 				applications.
-			</para>
+			
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.adoc[]
@@ -61,31 +61,31 @@
 
 		</chapter>
 		<chapter>
-            <title>Install the e4 tools</title>
+            <title>Install the e4 tools
             <section>
-                <title>Requirements</title>
-                <para>
+                <title>Requirements
+                
                     To install the tools required for Eclipse RCP development you
                     need
                     to know how to use the Eclipse update manager.
                     Open
-                    <menuchoice>
+                    menu:
                         <guimenu>Help</guimenu>
                         <guisubmenu>Install new software...</guisubmenu>
                     </menuchoice>
                     for this.
-                </para>
-            </section>
+                
+            
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.adoc[]
         </chapter>
 
 		
 		<chapter>
-			<title>Exercise: Enable Java access to all plug-ins</title>
+	=== Exercise: Enable Java access to all plug-ins
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Defining a target platform</title>
+	=== Exercise: Defining a target platform
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.adoc[]
 		</chapter>
 	</part>

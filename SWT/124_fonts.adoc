@@ -1,5 +1,5 @@
-<section id="swt_tree">
-	<title>Tree and Menu</title>
+
+	<title>Tree and Menu
 	 Create the following class. 
 	
 		<programlisting>
@@ -11,4 +11,3 @@
 		attached to it. If you select the menu the text of the selected item
 		will be printed to the console. 
 	
-</section>

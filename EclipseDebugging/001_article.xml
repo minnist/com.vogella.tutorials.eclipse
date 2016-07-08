@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Java Debugging with Eclipse - Tutorial</title>
+=== Java Debugging with Eclipse - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -27,16 +27,16 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>24.01.2013</pubdate>
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse Debugging</title>
-			<para> This article describes how to debug a Java application in
+	=== Eclipse Debugging
+			 This article describes how to debug a Java application in
 				Eclipse.
-			</para>
+			
 
-			<para>This article is based on Eclipse 4.2 (Eclipse Juno). </para>
+			This article is based on Eclipse 4.2 (Eclipse Juno). 
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>

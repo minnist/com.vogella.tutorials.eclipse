@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Eclipse Rich Ajax Platform (RAP) - Tutorial</title>
+=== Eclipse Rich Ajax Platform (RAP) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -23,21 +23,21 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>02.10.2011</pubdate>
 		<releaseinfo>
-			<para>Version 1.2</para>
+			Version 1.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Eclipse RAP Tutorial</title>
-			<para> This tutorial describes how to create
+	=== Eclipse RAP Tutorial
+			 This tutorial describes how to create
 				Eclipse RAP
 				applications and how to use the CSS theming to modify their look.
 				Eclipse RAP aims to enable developers to build
 				rich,
 				Ajax-enabled web
 				applications by using the Eclipse development
-				model. </para>
-			<para>  This tutorial is based on Eclipse 3.7 (Indigo).
-			</para>
+				model. 
+			  This tutorial is based on Eclipse 3.7 (Indigo).
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

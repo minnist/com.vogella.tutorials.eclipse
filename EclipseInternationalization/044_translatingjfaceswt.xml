@@ -1,13 +1,13 @@
-<section id="i18n_sourceswt">
-	<title>Translating SWT and JFace code</title>
-	<para>The SWT and JFace plug-ins include their resource translation
+
+	<title>Translating SWT and JFace code
+	The SWT and JFace plug-ins include their resource translation
 		files. You can change these default texts and their
 		translations
 		because resource
 		bundles have an override support built
 		in.
-	</para>
-	<para>
+	
+	
 		If you
 		supply
 		a different file
@@ -24,27 +24,27 @@
 		matching
 		the
 		current locale is used.
-	</para>
-	<para>
+	
+	
 		To change the text supplied by SWT and JFace do the following:
 		<itemizedlist>
 			<listitem>
-				<para>
+				
 					Create two fragments projects, which will hold the translations. One with org.eclipse.jface and one with org.eclipse.swt as
 					Host-Plug-in.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					Create the
 					<code>org.eclipse.jface</code>
 					and
 					<code>org.eclipse.swt.internal</code>
 					packages in the corresponding fragments.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					Copy the
 					<filename>org/eclipse/jface/message.properties</filename>
 					file from the org.eclipse.jface plug-in and the
@@ -57,20 +57,20 @@
 					project. See the appendix for the links to their
 					location in the
 					Eclipse Git repository.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Provide the files with your desired language extensions, e.g.
+				Provide the files with your desired language extensions, e.g.
 					message_de.properties.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Edit the files to contain your text properties.</para>
+				Edit the files to contain your text properties.
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 	<warning>
-		<para>
+		
 			The original
 			<filename>message.properties</filename>
 			in JFace or
@@ -84,9 +84,9 @@
 			for a
 			certain locale like
 			message_de.properties.
-		</para>
+		
 	</warning>
-	<para>
+	
 		You can translate selected
 		properties of the
 		original
@@ -100,12 +100,12 @@
 		class in a
 		<filename>message_de.properties</filename>
 		file.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/jface/message.example" />
 		</programlisting>
-	</para>
+	
 
 	<mediaobject>
 		<imageobject>
@@ -115,4 +115,4 @@
 			<phrase>Package structure of the JFace fragment</phrase>
 		</textobject>
 	</mediaobject>
-</section>
+

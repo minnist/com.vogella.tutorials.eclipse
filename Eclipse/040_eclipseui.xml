@@ -1,31 +1,31 @@
-<section id="eclipsesui" role="wrapper">
-	<title>Important Eclipse terminology</title>
-	<section id="generaluistructoreofide">
-		<title>How is the Eclipse IDE structured?</title>
-		<para>
+
+	<title>Important Eclipse terminology
+[[generaluistructoreofide">
+=== How is the Eclipse IDE structured?
+		
 			Eclipse provides
-			<wordasword>Perspectives</wordasword>
+			_Perspectives_
 			,
-			<wordasword>Views</wordasword>
+			_Views_
 			and
-			<wordasword>Editors</wordasword>
+			_Editors_
 			.
-			<wordasword>Views</wordasword>
+			_Views_
 			and
-			<wordasword>Editors</wordasword>
+			_Editors_
 			are grouped into
-			<wordasword>Perspectives</wordasword>
+			_Perspectives_
 			.
-		</para>
-	</section>
-	<section id="workspace">
-		<title>Workspace</title>
+		
+	
+[[workspace">
+=== Workspace
 		<indexterm>
 			<primary>Workspace</primary>
 		</indexterm>
-		<para>
+		
 			The
-			<wordasword>workspace</wordasword>
+			_workspace_
 			is the physical location (file path) you are
 			working in. Your
 			projects,
@@ -34,20 +34,20 @@
 			stored and
 			saved in
 			your workspace. The
-			<wordasword>workspace</wordasword>
+			_workspace_
 			also contains preferences settings, plug-in specific meta data, logs
 			etc.
-		</para>
-		<para>
+		
+		
 			You typically use different
-			<wordasword>workspaces</wordasword>
+			_workspaces_
 			if
 			you require different settings for your project or if you
 			want to
 			divide your projects into separate directories.
-		</para>
+		
 		<note>
-			<para>
+			
 				It is not mandatory that a project resides within the
 				<filename>workspace</filename>
 				directory.
@@ -58,33 +58,29 @@
 				projects)
 				from
 				the
-				<wordasword>workspace</wordasword>
+				_workspace_
 				.
-			</para>
+			
 		</note>
-		<para>
+		
 			You can
 			choose the workspace during startup of
 			Eclipse or
 			via the menu
 			(
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>Switch Workspace</guisubmenu>
-				<guisubmenu>Others</guisubmenu>
-			</menuchoice>
+			menu:File[Switch Workspace > Others]
 			)
 			.
 
-		</para>
+		
 
-	</section>
-	<section id="workspace_project">
-		<title>Eclipse projects</title>
+	
+[[workspace_project">
+=== Eclipse projects
 		<indexterm>
 			<primary>Projects</primary>
 		</indexterm>
-		<para>
+		
 			An Eclipse project contains source, configuration and binary
 			files
 			related to a
@@ -92,24 +88,24 @@
 			buildable and
 			reusable
 			units. An Eclipse project can have
-			<wordasword>natures</wordasword>
+			_natures_
 			assigned to it which describe the purpose of this project. For
 			example, the Java
-			<wordasword>nature</wordasword>
+			_nature_
 			defines a project as Java project. Projects can have multiple natures
 			combined to model different technical aspects.
-		</para>
-		<para>
-			<wordasword>Natures</wordasword>
+		
+		
+			_Natures_
 			for a project are defined via the
 			<filename>.project</filename>
 			file in the project directory.
-		</para>
-		<para>Projects in Eclipse cannot contain other projects. </para>
-	</section>
+		
+		Projects in Eclipse cannot contain other projects. 
+	
 
-	<section id="parts_editorviews">
-		<title>Views or editors</title>
+[[parts_editorviews">
+=== Views or editors
 		<indexterm>
 			<primary>Editor</primary>
 		</indexterm>
@@ -118,19 +114,19 @@
 		</indexterm>
 		<!-- Screenshot for the Eclipse RCP book -->
 		<!-- Screenshot for the Eclipse IDE book -->
-		<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
-			<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+		<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+			<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject>  -->
 
 
-		<para>
+		
 			Individual elements (part) of the Eclipse UI
 			are typically classified into
-			<wordasword>views</wordasword>
+			_views_
 			and
-			<wordasword>editors</wordasword>
+			_editors_
 			.
-		</para>
-		<para>
+		
+		
 			A
 			view
 			is
@@ -150,15 +146,15 @@
 			an
 			editor
 			for the selected set of data.
-		</para>
-		<para>
+		
+		
 			An example for a
 			view in the Eclipse IDE
 			is the
-			<wordasword>Project Explorer</wordasword>
+			_Project Explorer_
 			, which allows you to browse the files of Eclipse projects. If you
 			change data in the
-			<wordasword>Project Explorer</wordasword>
+			_Project Explorer_
 			, e.g.,
 			if you rename a file, the
 			file
@@ -166,8 +162,8 @@
 			is directly changed on the
 			file
 			system.
-		</para>
-		<para>
+		
+		
 			Editors
 			are
 			typically used to modify a single data element, e.g.,
@@ -180,37 +176,33 @@
 			data
 			structure, the user has to explicitly save the
 			editor content.
-		</para>
+		
 
-		<para>
+		
 
 			For example, the
-			<guilabel>Java</guilabel>
+			_Java_
 			editor
 			is used to modify Java source files. Changes to the source file
 			are
 			applied once the user selects the
-			<guilabel>Save</guilabel>
+			_Save_
 			button. A dirty editor tab is marked with an asterisk
 			left to the
 			name of the modified file.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dirtyeditor10.png" />
+		
+		
+image::dirtyeditor10.png" />
 				</imageobject>
 				<textobject>
-					<phrase>Editor marked as dirty</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Editor marked as dirty,pdfwidth=60%]
+		
 
 
-	</section>
+	
 
 
-</section>
+
 
 
 

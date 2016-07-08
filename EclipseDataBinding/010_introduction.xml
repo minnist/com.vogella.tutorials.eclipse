@@ -1,9 +1,9 @@
-<section id="databinding" role="wrapper">
-	<title>Data binding with JFace</title>
+
+	<title>Data binding with JFace
 
 
-	<section id="databinding_overview">
-		<title>Using JFace data binding</title>
+[[databinding_overview">
+=== Using JFace data binding
 		<indexterm>
 			<primary>Data binding</primary>
 			<seealso>JFace data binding</seealso>
@@ -13,9 +13,9 @@
 			<primary>Observable (data binding)</primary>
 		</indexterm>
 
-		<para>
+		
 			The
-			<wordasword>JFace data binding</wordasword>
+			_JFace data binding_
 			framework allows to synchronize changes in
 			properties of
 			objects. Validation and conversion
@@ -23,9 +23,9 @@
 			the
 			synchronization
 			process is supported.
-		</para>
+		
 
-		<para>
+		
 			For example you could bind the String property called
 			<property>firstName</property>
 			of
@@ -38,9 +38,9 @@
 			widget. If the user changes the text in the user interface, the
 			corresponding
 			property in the Java object is updated.
-		</para>
+		
 
-		<para>
+		
 			To observe changes in an attribute of a Java object, a
 			data
 			binding framework needs
@@ -59,8 +59,8 @@
 			<code>WritableValue</code>
 			interface from JFace
 			inside the model.
-		</para>
-		<para>
+		
+		
 			The
 			<code>IObservableValue</code>
 			interface is the basis for
@@ -75,7 +75,7 @@
 			are listed in the following table.
 
 			<table frame='all' id="databinding_observable_factories">
-				<title>Factories for the creation of an IObservableValue object </title>
+		=== Factories for the creation of an IObservableValue object 
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
@@ -159,9 +159,9 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 
-		<para>
+		
 			The following code demonstrates how to create an
 			<code>IObservableValue</code>
 			object
@@ -170,16 +170,16 @@
 			property of a Java object called
 			<property>person</property>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/personpojo/View.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			The next example demonstrates how to create an
 			<code>IObservableValue</code>
 			for the
@@ -189,52 +189,52 @@
 			widget called
 			<property>firstNameText</property>
 			.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/widgetProperties.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			The following plug-ins are required to use
 			JFace Data Binding.
 			<itemizedlist>
 				<listitem>
-					<para>org.eclipse.core.databinding
-					</para>
+					org.eclipse.core.databinding
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						org.eclipse.core.databinding.beans
-					</para>
+					
 				</listitem>
 
 				<listitem>
-					<para>
+					
 						org.eclipse.core.databinding.property
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>org.eclipse.jface.databinding
-					</para>
+					org.eclipse.jface.databinding
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-	</section>
-	<section id="databinding_generics">
-		<title>JFace data binding and generics</title>
-		<para>
+		
+	
+[[databinding_generics">
+=== JFace data binding and generics
+		
 			In Eclipse 4.6 the data binding framework has been partially generified. This work is planned to be finished in
 			4.7.
 			Currently you need to use
 			<code>@SuppressWarnings("unchecked")</code>
 			sometimes in your data binding code to avoid compiler warnings.
-		</para>
-	</section>
-	<section id="databinding_pojovsbean">
-		<title>Example for a Java bean implementation</title>
+		
+	
+[[databinding_pojovsbean">
+=== Example for a Java bean implementation
 		<indexterm>
 			<primary>POJO</primary>
 		</indexterm>
@@ -242,47 +242,47 @@
 			<primary>Java Bean</primary>
 		</indexterm>
 
-		<para>
+		
 			A Java class which provides
 			<code>PropertyChangeSupport</code>
 			looks
 			like the following example.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/ModelObject.java" />
 			</programlisting>
-		</para>
-		<para>Other domain classes could extend this class. The following
+		
+		Other domain classes could extend this class. The following
 			example demonstrates that.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Person.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
-	<section id="databinding_model_writablevalue">
-		<title>Using JFaces WritableValue class to track changes</title>
-		<para>
+[[databinding_model_writablevalue">
+=== Using JFaces WritableValue class to track changes
+		
 			If you are able to use JFace API in your domain model, you can use
 			<code>WritableValue</code>
 			to provide the option to track values.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/writable/Person.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="databinding_pojos">
-		<title>Data binding and Java objects without change notification
-		</title>
-		<para>
+[[databinding_pojos">
+=== Data binding and Java objects without change notification
+		
+		
 			If you connect two properties and one of these properties cannot be observed, you
 			you
 			can
@@ -308,6 +308,5 @@
 			user interface will update the
 			<code>Todo</code>
 			property.
-		</para>
-	</section>
-</section>
+		
+	

@@ -33,63 +33,63 @@
 
 	</bookinfo>
 
-	<!-- <dedication> <para>For Jennifer, Kiran, Liam</para> </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+	<!-- <dedication> For Jennifer, Kiran, Liam </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
 		href="./004_foreword.adoc[] <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.adoc[] -->
 
 
 	<part>
-		<title>The concepts behind Eclipse and Eclipse based applications</title>
+=== The concepts behind Eclipse and Eclipse based applications
 		<chapter>
-			<title>Introduction to the Eclipse project</title>
+	=== Introduction to the Eclipse project
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlatformDevelopment/011_foundation.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/010_overview.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Eclipse plug-ins and applications</title>
+	=== Eclipse plug-ins and applications
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/010_overview.adoc[]
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/010_overview.adoc[]
 		</chapter>
 		<chapter>
-			<title>Architecture of Eclipse</title>
-			<para>
+	=== Architecture of Eclipse
+			
 				The
 				following chapter gives an overview of the Eclipse architecture,
 				explains
 				the term
-				<wordasword>plug-ins</wordasword>
+				_plug-ins_
 				and what extensions and extension
 				points are.
-			</para>
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/020_architecture.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Using a target platform for development</title>
+	=== Using a target platform for development
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/012_definition.adoc[]
 		</chapter>
 
 	</part>
 	<part>
-		<title>Setting up an Eclipse RCP development environment</title>
+=== Setting up an Eclipse RCP development environment
 		<chapter id="javainstallation">
-			<title>Install Java for Eclipse RCP development</title>
+	=== Install Java for Eclipse RCP development
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.adoc[]
 		</chapter>
 
 		<chapter id="eclipseskdinstallationforrcp">
-			<title>Install Eclipse IDE for RCP development</title>
+	=== Install Eclipse IDE for RCP development
 			<indexterm>
 				<primary>Installation</primary>
 			</indexterm>
-			<para>The following description explains
+			The following description explains
 				how to install the Eclipse
 				IDE and the required tools to develop Eclipse RCP
 				applications.
-			</para>
+			
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.adoc[]
@@ -99,61 +99,61 @@
 
 		</chapter>
 		<chapter>
-			<title>Install the e4 tools</title>
+	=== Install the e4 tools
 			<section>
-				<title>Requirements</title>
-				<para>
+		=== Requirements
+				
 					To install the tools required for Eclipse RCP development you
 					need
 					to know how to use the Eclipse update manager.
 					Open
-					<menuchoice>
+					menu:
 						<guimenu>Help</guimenu>
 						<guisubmenu>Install new software...</guisubmenu>
 					</menuchoice>
 					for this.
-				</para>
-			</section>
+				
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Enable Java access to all plug-ins</title>
+	=== Exercise: Enable Java access to all plug-ins
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Defining a target platform</title>
+	=== Exercise: Defining a target platform
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>Creating and exporting Eclipse applications</title>
+=== Creating and exporting Eclipse applications
 		<chapter>
-			<title>Product configuration file</title>
+	=== Product configuration file
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/010_product.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>The usage of run configurations</title>
-			<para>
+	=== The usage of run configurations
+			
 				This chapter describes the usage of the
-				<wordasword>run configuration</wordasword>
+				_run configuration_
 				and highlights
 				typical
 				problems with them.
-			</para>
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/090_runconfiguration.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/091_runconfiguration_product.adoc[]
 		</chapter>
 		<chapter>
-			<title>Common launch problems</title>
+	=== Common launch problems
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/092_runconfiguration_problems.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Features and feature projects</title>
+	=== Features and feature projects
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/010_feature_intro.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/020_feature_create.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/030_products_features.adoc[]
@@ -161,119 +161,119 @@
 		</chapter>
 
 		<chapter>
-			<title>Deployment of your RCP application</title>
+	=== Deployment of your RCP application
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/020_deployment.adoc[]
-			<section id="deployproduct_targetplatform">
-				<title>More about the target platform</title>
-				<para>
+		[[deployproduct_targetplatform">
+		=== More about the target platform
+				
 					See
 					<xref linkend="parttargetplatform" />
 					for more information about the target platform configuration.
-				</para>
-			</section>
+				
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/022_deployment.adoc[]
 		</chapter>
 		<chapter id="exportproblems">
-			<title>Common product export problems</title>
+	=== Common product export problems
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/080_problems_export.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Create and run an RCP application</title>
+	=== Exercise: Create and run an RCP application
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/044_tutorial_first.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/140_exercise_feature.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Export your product</title>
+	=== Exercise: Export your product
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/100_exercise_exportproduct.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>Application model</title>
+=== Application model
 		<chapter>
-			<title>Eclipse application model</title>
+	=== Eclipse application model
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/120_applicationmodel.adoc[]
 
 		</chapter>
 		<chapter>
-			<title>Model objects and the runtime application model</title>
+	=== Model objects and the runtime application model
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/140_modelelements.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/122_uiconcepts.adoc[]
 		</chapter>
 
 		<chapter id="partlivemodeleditor">
-			<title>Using the model spy</title>
+	=== Using the model spy
 
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/010_overview.adoc[]
 			<section>
-				<title>Installation requirements</title>
-			</section>
-			<para>
+		=== Installation requirements
+			
+			
 				The usage of the model spy requires the installation of the
 				Eclipse 4
 				- Core Tools as described in
 				<xref linkend="tutorial_installation_e4tools" />
 				.
-			</para>
+			
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/012_ide.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Create an Eclipse plug-in</title>
+	=== Exercise: Create an Eclipse plug-in
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/210_tutorial_plugin.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: From plug-in to Eclipse RCP</title>
+	=== Exercise: From plug-in to Eclipse RCP
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/220_tutorial_e4_application.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Configure the deletion of persisted model data
-			</title>
+	=== Exercise: Configure the deletion of persisted model data
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/239_tutorial_clearpersistence.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Modeling a user interface</title>
+	=== Exercise: Modeling a user interface
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/240_tutorial_modelelements.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Enter the dependencies</title>
+	=== Exercise: Enter the dependencies
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/242_tutorial_e4_dependencies.adoc[]
 			<section>
-				<title>More on dependencies</title>
-				<para>
+		=== More on dependencies
+				
 					The exact details of applying this
 					modular approach is covered in
 					<xref linkend="osgipart" />
 					.
-				</para>
-			</section>
+				
+			
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Connect Java classes with the parts</title>
+	=== Exercise: Connect Java classes with the parts
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/244_tutorial_modelelemenentjava.adoc[]
 		</chapter>
 
 
 		<chapter>
-			<title>Optional Exercise: Using the model spy</title>
+	=== Optional Exercise: Using the model spy
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/100_exercise.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>Using dependency injection</title>
+=== Using dependency injection
 
 		<chapter id="dependencyinjectionchapter">
-			<title>The concept of dependency injection</title>
+	=== The concept of dependency injection
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/010_dependencyinjection.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/011_annotations.adoc[]
@@ -282,27 +282,27 @@
 		</chapter>
 
 		<chapter id="dependencyinjectione4">
-			<title>Dependency injection in Eclipse</title>
+	=== Dependency injection in Eclipse
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/420_dependencyinjection.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>The Eclipse context</title>
+	=== The Eclipse context
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/422_context.adoc[]
 		</chapter>
 		<chapter>
-			<title>Object selection during dependency injection</title>
+	=== Object selection during dependency injection
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/424_context_objects.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Using annotations to define behavior</title>
+	=== Using annotations to define behavior
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/430_programmingmodel.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Using @PostConstruct</title>
+	=== Exercise: Using @PostConstruct
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/444_tutorial_programmingmodel.adoc[]
 		</chapter>
 	</part>
@@ -311,9 +311,9 @@
 
 
 	<part id="osgipart">
-		<title>Eclipse modularity based on OSGi</title>
+=== Eclipse modularity based on OSGi
 		<chapter>
-			<title>Software modularity with OSGi</title>
+	=== Software modularity with OSGi
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/010_osgi_introduction.adoc[]
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/034_findplugin.adoc[]
@@ -321,7 +321,7 @@
 		</chapter>
 
 		<chapter>
-			<title>OSGi metadata</title>
+	=== OSGi metadata
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/012_osgi_bundles.adoc[]
 
@@ -330,39 +330,39 @@
 
 		</chapter>
 		<chapter>
-			<title>Using the OSGi console</title>
+	=== Using the OSGi console
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/020_osgi_console.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>OSGi fragments and fragment projects</title>
+	=== OSGi fragments and fragment projects
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFragmentProject/content/020_fragment_intro.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFragmentProject/content/040_fragment_usage.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>OSGi service introduction</title>
+	=== OSGi service introduction
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/070_service.adoc[]
 
 		</chapter>
 
 		<chapter>
-			<title>Defining OSGi services</title>
+	=== Defining OSGi services
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/076_ds.adoc[]
 		</chapter>
 		<chapter>
-			<title>Eclipse RCP and OSGi services</title>
+	=== Eclipse RCP and OSGi services
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/081_eclipse4_osgiservices.adoc[]
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="121_eclipse4_osgids_context.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Create data model plug-in</title>
+	=== Exercise: Create data model plug-in
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/200_tutorial_model.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Create service plug-in</title>
+	=== Exercise: Create service plug-in
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/210_tutorial_service.adoc[]
 		</chapter>
 
@@ -375,35 +375,35 @@
 
 	<part>
 
-		<title>User interface development with SWT and JFace</title>
+=== User interface development with SWT and JFace
 		<chapter>
-			<title>Standard Widget Toolkit</title>
+	=== Standard Widget Toolkit
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/010_swtintro.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/011_relationship.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/013_install.adoc[]
 		</chapter>
 		<chapter>
-			<title>Using SWT widgets</title>
+	=== Using SWT widgets
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/014_widgets.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/016_eventlistener.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Using layout managers in SWT</title>
+	=== Using layout managers in SWT
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/036_layout.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/039_tab.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/038_layout_tutorial.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>SWT widget examples and controls</title>
+	=== SWT widget examples and controls
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/280_swt_snippets.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/300_nebula_opal.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>SWT Designer</title>
+	=== SWT Designer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder//010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder//020_installation.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder/030_usage.adoc[]
@@ -411,7 +411,7 @@
 
 
 		<chapter>
-			<title>Exercise: Getting started with SWT Designer</title>
+	=== Exercise: Getting started with SWT Designer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder/100_tutorial_windowbuilder.adoc[]
 		</chapter>
 
@@ -421,12 +421,12 @@
 
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="446_tutorial_todomethod.adoc[]
 		<chapter>
-			<title>Exercise: Using the SWT Browser widget</title>
+	=== Exercise: Using the SWT Browser widget
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/250_tutorial_playgroundview.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>JFace</title>
+	=== JFace
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/030_resourcemanager.adoc[]
@@ -435,18 +435,18 @@
 
 		</chapter>
 		<chapter>
-			<title>The JFace viewer framework</title>
+	=== The JFace viewer framework
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/200_viewer.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/220_comboviewer.adoc[]
 		</chapter>
 		<chapter>
-			<title>Implementing JFace tables</title>
+	=== Implementing JFace tables
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTable/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTableAdvanced/content/010_overview.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Implementing JFace trees</title>
+	=== Implementing JFace trees
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/010_overview.adoc[]
 		</chapter>
 
@@ -459,65 +459,65 @@
 
 
 		<chapter id="jfacefilebrowser">
-			<title>Optional exercises: Using tree viewer to build a file explorer</title>
+	=== Optional exercises: Using tree viewer to build a file explorer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/060_filebrowser_exercise.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/065_filebrowser_columns_exercise.adoc[]
 		</chapter>
 
 	</part>
 	<part id="part_commands">
-		<title>Defining menus, toolbars and key bindings</title>
+=== Defining menus, toolbars and key bindings
 
 		<chapter>
-			<title>Menu and toolbar application objects</title>
+	=== Menu and toolbar application objects
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/450_commands.adoc[]
 			<section>
-				<title>Learn about the event system</title>
-				<para>
+		=== Learn about the event system
+				
 					See
 					<xref linkend="part_eventbroker" />
 					to learn more about sending out events in your Eclipse application.
-				</para>
-			</section>
+				
+			
 
 		</chapter>
 
 		<chapter>
-			<title>More on menus and toolbars</title>
+	=== More on menus and toolbars
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/461_menu_advanced.adoc[]
 			<section>
-				<title>Creating dynamic menu entries</title>
-				<para>
+		=== Creating dynamic menu entries
+				
 					See
 					<xref linkend="tutorial_dynamicmenus" />
 					for information about creating and changing application model
 					elements dynamically.
-				</para>
-			</section>
+				
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/462_toolbar_advanced.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/463_more_commands.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Key bindings</title>
+	=== Key bindings
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/500_keybindings.adoc[]
 
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Adding a menu and menu entries</title>
+	=== Exercise: Adding a menu and menu entries
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/480_tutorial_commands_menu.adoc[]
 		</chapter>
 
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="420_tutorial_contextmenu.adoc[]
 
 		<chapter>
-			<title>Exercise: Adding a toolbar</title>
+	=== Exercise: Adding a toolbar
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/484_tutorial_commands_toolbar.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Define key bindings</title>
+	=== Exercise: Define key bindings
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="466_tutorial_keybindings.adoc[]
 		</chapter>
 	</part>
@@ -525,9 +525,9 @@
 
 
 	<part>
-		<title>Dialogs and wizards</title>
+=== Dialogs and wizards
 		<chapter>
-			<title>Dialogs</title>
+	=== Dialogs
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/020_swtdialogs.adoc[]
@@ -535,12 +535,12 @@
 		</chapter>
 
 		<chapter>
-			<title>Wizards</title>
+	=== Wizards
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWizards/content/010_overview.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Dialogs</title>
+	=== Exercise: Dialogs
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="239_tutorial_dialog.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/220_tutorial_passworddialog.adoc[]
 		</chapter>
@@ -549,28 +549,28 @@
 	</part>
 
 	<part id="databindingpart">
-		<title>Using data binding</title>
+=== Using data binding
 		<chapter>
-			<title>Data binding with JFace</title>
+	=== Data binding with JFace
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/010_introduction.adoc[]
 		</chapter>
 		<chapter>
-			<title>Create bindings</title>
+	=== Create bindings
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/020_binding.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Updates, convertors and validators</title>
+	=== Updates, convertors and validators
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/040_validatorsconvertors.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>More on bindings</title>
+	=== More on bindings
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/060_moreonbinding.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Data binding for JFace viewer</title>
+	=== Data binding for JFace viewer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/090_jfaceviewers.adoc[]
 		</chapter>
 
@@ -579,7 +579,7 @@
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="325_tutorial_databindingtreeviewer.adoc[]
 
 		<chapter>
-			<title>Extending data binding with custom observables</title>
+	=== Extending data binding with custom observables
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/094_custom_observables.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/096_java8datetime.adoc[]
@@ -589,15 +589,15 @@
 	</part>
 
 	<part>
-		<title>Using Eclipse platform services</title>
+=== Using Eclipse platform services
 
 		<chapter>
-			<title>Eclipse platform services</title>
+	=== Eclipse platform services
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/010_overview.adoc[]
 
-			<section id="platformservice_implementation_references">
-				<title>How are Eclipse services implemented?</title>
-				<para>
+		[[platformservice_implementation_references">
+		=== How are Eclipse services implemented?
+				
 					How context functions are implemented as OSGI services is described
 					in
 					<xref linkend="contextfunctionschapter" />
@@ -605,54 +605,54 @@
 					<xref linkend="bestpractices" />
 					summarize the different approaches for communicating inside your
 					application.
-				</para>
-			</section>
+				
+			
 		</chapter>
 		<chapter>
-			<title>Selection service</title>
+	=== Selection service
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/100_selectionservice.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Model service</title>
+	=== Model service
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/200_modelservices.adoc[]
 		</chapter>
 		<chapter>
-			<title>Modifying the application model at runtime</title>
+	=== Modifying the application model at runtime
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/220_model_modificationapi.adoc[]
 		</chapter>
 		<chapter>
-			<title>Example for application model modifications</title>
+	=== Example for application model modifications
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/240_model_modificationapi_examples.adoc[]
 		</chapter>
 
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="504_tutorial_dynamicmenus.adoc[]
 
 		<chapter>
-			<title>Using the part service</title>
+	=== Using the part service
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/300_partservices.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Implementing editors</title>
+	=== Implementing editors
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/310_partservicespersists.adoc[]
 
-			<section id="chapter_editorsexamples">
-				<title>Code examples for editor implementations</title>
-				<para>
+		[[chapter_editorsexamples">
+		=== Code examples for editor implementations
+				
 					How to implement editor like behavior in a part is demonstrated in
 					<xref linkend="tutorial_editorpartservice" />
 					. An example implementation of multiple editors can be found in
 					exercise
 					<xref linkend="tutorial_multipleeditors" />
 					.
-				</para>
-			</section>
+				
+			
 		</chapter>
 
 		<chapter>
-			<title>Command and handler service</title>
+	=== Command and handler service
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/400_commandservice.adoc[]
 		</chapter>
 
@@ -670,7 +670,7 @@
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/520_tutorial_editors.adoc[]
 
 		<chapter>
-			<title>Optional exercise: Saving and restoring a perspective</title>
+	=== Optional exercise: Saving and restoring a perspective
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_exercise_perspectivereset.adoc[]
 		</chapter>
 
@@ -680,16 +680,16 @@
 	</part>
 
 	<part>
-		<title>Asynchronous processing</title>
+=== Asynchronous processing
 		<chapter>
-			<title>Threading in Eclipse</title>
+	=== Threading in Eclipse
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaConcurrency/010_concurrency.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJobs/content/010_overview.adoc[]
 
 
 		</chapter>
 		<chapter>
-			<title>Progress reporting</title>
+	=== Progress reporting
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJobs/content/020_progress.adoc[]
 		</chapter>
 
@@ -699,10 +699,10 @@
 	</part>
 
 	<part id="part_eventbroker">
-		<title>Event service for message communication</title>
+=== Event service for message communication
 
 		<chapter>
-			<title>Eclipse event notifications</title>
+	=== Eclipse event notifications
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/040_usage.adoc[]
 
@@ -711,7 +711,7 @@
 		</chapter>
 
 		<chapter>
-			<title>Eclipse framework events</title>
+	=== Eclipse framework events
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/022_examplepartactivation.adoc[]
@@ -726,15 +726,15 @@
 
 
 	<part>
-		<title>Extending and modifying the Eclipse context</title>
+=== Extending and modifying the Eclipse context
 
 		<chapter id="chaptereclipsecontext">
-			<title>Accessing and extending the Eclipse context</title>
+	=== Accessing and extending the Eclipse context
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextUsage/content/020_extendcontext.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Using dependency injection for your Java objects</title>
+	=== Using dependency injection for your Java objects
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextUsage/content/040_customobjects.adoc[]
 		</chapter>
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="479_tutorial_contextinjection.adoc[]
@@ -742,34 +742,34 @@
 	</part>
 
 	<part id="contextfunctionschapter">
-		<title>Eclipse context functions</title>
+=== Eclipse context functions
 		<chapter>
-			<title>Context functions</title>
+	=== Context functions
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextFunctions/010_overview.adoc[]
 		</chapter>
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="660_tutorial_contextfunction.adoc[]
 	</part>
 
 	<part>
-		<title>Model add-ons and supplementary application model data</title>
+=== Model add-ons and supplementary application model data
 		<chapter>
-			<title>Using model add-ons</title>
+	=== Using model add-ons
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelAddons/010_addons.adoc[]
 		</chapter>
 
 		<chapter id="exercise_modeladdonclose">
-			<title>Exercise: Model add-on to change the close behavior</title>
+	=== Exercise: Model add-on to change the close behavior
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./900_customclosehandleraddon_firstpart.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Supplementary model data</title>
+	=== Supplementary model data
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/100_supplementary.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/200_e4_tags.adoc[]
 		</chapter>
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./920_toolbarsperspectivespecific.adoc[]
 		<chapter>
-			<title>Exercise: Using model tags and persisted data</title>
+	=== Exercise: Using model tags and persisted data
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/400_exercise_supplementary.adoc[]
 		</chapter>
 
@@ -778,9 +778,9 @@
 
 
 	<part>
-		<title>Application model modularity</title>
+=== Application model modularity
 		<chapter>
-			<title>Contributing to the application model</title>
+	=== Contributing to the application model
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/010_modularity.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/020_approach.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/030_merging.adoc[]
@@ -789,37 +789,37 @@
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Contributing via model fragments</title>
+	=== Exercise: Contributing via model fragments
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/100_tutorial_fragments.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Implementing a model processor</title>
+	=== Exercise: Implementing a model processor
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/200_tutorial_processors.adoc[]
 		</chapter>
 
 	</part>
 
 	<part>
-		<title>Eclipse application life cycle</title>
+=== Eclipse application life cycle
 
 		<chapter>
-			<title>Registering for the application life cycle</title>
+	=== Registering for the application life cycle
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LifeCycle/content/010_overview.adoc[]
 		</chapter>
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="640_tutorial_lifecycle.adoc[]
 	</part>
 
 	<part>
-		<title>Handling preferences</title>
+=== Handling preferences
 		<chapter>
-			<title>Eclipse preference basics</title>
+	=== Eclipse preference basics
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/010_overview.adoc[]
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/200_plugin_customization_ini.adoc[]
 		</chapter>
 		<chapter>
-			<title>Preferences and dependency injection</title>
+	=== Preferences and dependency injection
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/020_eclipse4.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/040_persiststate.adoc[]
 
@@ -832,34 +832,34 @@
 
 
 	<part>
-		<title>Internationalization</title>
+=== Internationalization
 		<chapter>
-			<title>Internationalization and localization in Eclipse</title>
+	=== Internationalization and localization in Eclipse
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/010_overview.adoc[]
 
 		</chapter>
 		<chapter>
-			<title>Translating the application model and plugin.xml</title>
+	=== Translating the application model and plugin.xml
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/012_osgi.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/020_model.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/030_plugin.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Source code translation with the Eclipse translation service
-			</title>
+	=== Source code translation with the Eclipse translation service
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/100_eclipse4_i18n.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Source code translation with NLS support</title>
+	=== Source code translation with NLS support
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/040_source.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/044_translatingjfaceswt.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exporting and common problems with translations</title>
+	=== Exporting and common problems with translations
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/050_export.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/060_problems_i18n.adoc[]
 		</chapter>
@@ -868,53 +868,53 @@
 	</part>
 
 	<part>
-		<title>Using custom annotations for dependency injection</title>
+=== Using custom annotations for dependency injection
 		<chapter>
-			<title>Usage of custom annotations for dependency injection</title>
+	=== Usage of custom annotations for dependency injection
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/012_restrictions.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/020_usage.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Defining custom annotations</title>
+	=== Exercise: Defining custom annotations
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/030_tutorial_ownannoations.adoc[]
 		</chapter>
 	</part>
 
 
 	<part id="osgi_javalibraries">
-		<title>Using Java libraries in Eclipse applications</title>
+=== Using Java libraries in Eclipse applications
 		<chapter>
-			<title>Defining and using libraries in Java</title>
+	=== Defining and using libraries in Java
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaLibraries/010_overview.adoc[]
 		</chapter>
 		<chapter>
-			<title>Using JAR files in Eclipse applications</title>
+	=== Using JAR files in Eclipse applications
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJarToPlugin/100_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJarToPlugin/200_usingexternaljars.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>The Eclipse adapter pattern</title>
+=== The Eclipse adapter pattern
 
 		<chapter>
-			<title>The adapter pattern in generalI</title>
+	=== The adapter pattern in generalI
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DesignPatternAdapter/010_overview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DesignPatternAdapter/200_adapter_example.adoc[]
 		</chapter>
 		<chapter>
-			<title>Adapter in Eclipse RCP</title>
+	=== Adapter in Eclipse RCP
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Adapter/020_eclipse_adapter.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>Using custom extension points</title>
+=== Using custom extension points
 
 		<chapter>
-			<title>Creating and evaluating extension points</title>
+	=== Creating and evaluating extension points
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/010_extensionpoints.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/020_define.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/040_addingextensions.adoc[]
@@ -924,43 +924,43 @@
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Create and evaluate extension point</title>
+	=== Exercise: Create and evaluate extension point
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/100_simpleextensionpoint.adoc[]
 		</chapter>
 	</part>
 
 	<part>
-		<title>Eclipse styling with CSS</title>
+=== Eclipse styling with CSS
 
 		<chapter>
-			<title>Introduction to CSS styling</title>
+	=== Introduction to CSS styling
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/010_overview.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>How to style in Eclipse</title>
+	=== How to style in Eclipse
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/012_fixed.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/014_themes.adoc[]
 		</chapter>
 		<chapter>
-			<title>More details on Eclipse styling</title>
+	=== More details on Eclipse styling
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/020_styling.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/030_tools.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Styling with CSS files</title>
+	=== Exercise: Styling with CSS files
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/100_tutorial_cssstyling.adoc[]
 
 		</chapter>
 		<chapter>
-			<title>Exercise: Using the theme service</title>
+	=== Exercise: Using the theme service
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/200_tutorial_thememanager.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Styling the widgets created by the life cycle class
-			</title>
+	=== Exercise: Styling the widgets created by the life cycle class
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./220_tutorial_lifecycle.adoc[]
 		</chapter>
 
@@ -970,20 +970,20 @@
 
 
 	<part>
-		<title>The renderer framework</title>
+=== The renderer framework
 
 		<chapter id="rendererchapter">
-			<title>The usage of renderer</title>
+	=== The usage of renderer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/010_renderer.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Existing alternative renderer implementations</title>
+	=== Existing alternative renderer implementations
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/080_alternatives.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Exercise: Defining a renderer</title>
+	=== Exercise: Defining a renderer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/020_ownrenderer.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/040_browser.adoc[]
 		</chapter>
@@ -991,63 +991,63 @@
 	</part>
 
 	<part>
-		<title>Application model persistence and model extensions</title>
+=== Application model persistence and model extensions
 		<chapter>
-			<title>Custom persistence for the application model</title>
+	=== Custom persistence for the application model
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelPersistence/010_overview.adoc[]
 		</chapter>
 		<chapter>
-			<title>Saving and restoring parts of the application model</title>
+	=== Saving and restoring parts of the application model
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelPersistence/020_e4xmi_resource.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Extend the Eclipse application model</title>
-			<para>
+	=== Extend the Eclipse application model
+			
 				It is also possible to extend the application model. This requires knowledge about the Eclipse EMF framework.
 				Describing EMF is currently
 				out of scope for this book. See
-				<ulink url="http://www.vogella.com/tutorials/Eclipse4ExtendModel/article.html">Extending the Eclipse 4 application model</ulink>
+				http://www.vogella.com/tutorials/Eclipse4ExtendModel/article.html">Extending the Eclipse 4 application model
 				for an introduction into the concepts.
-			</para>
+			
 		</chapter>
 
 	</part>
 
 
 	<part id="bestpractices">
-		<title>Good development practices</title>
+=== Good development practices
 		<chapter>
-			<title>Eclipse development good practices</title>
+	=== Eclipse development good practices
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4DevelopmentPractises/920_besteclipse4practice.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Application communication and context usage</title>
+	=== Application communication and context usage
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4DevelopmentPractises/921_besteclipse4practice.adoc[]
 		</chapter>
 	</part>
 
 
 	<part>
-		<title>Migrating Eclipse 3.x components and RCP applications</title>
+=== Migrating Eclipse 3.x components and RCP applications
 		<chapter>
-			<title>Why migrating an Eclipse 3.x RCP application?</title>
+	=== Why migrating an Eclipse 3.x RCP application?
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/001_purpose.adoc[]
 		</chapter>
 		<chapter>
-			<title>Running Eclipse 3.x plug-ins on top of Eclipse 4</title>
+	=== Running Eclipse 3.x plug-ins on top of Eclipse 4
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/010_compatibilitylayer.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Excursion: Extending the Eclipse IDE</title>
+	=== Excursion: Extending the Eclipse IDE
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/011_ideextensions.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/020_runtimeeclipse.adoc[]
 		</chapter>
 
 		<chapter>
-			<title>Partial migrating to the Eclipse 4.x API</title>
+	=== Partial migrating to the Eclipse 4.x API
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/020_partial_migration.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/024_commands.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/050_parts.adoc[]
@@ -1056,16 +1056,16 @@
 
 
 		<chapter>
-			<title>Exercise: Adding an e4 menu and toolbar to a 3.x based application</title>
+	=== Exercise: Adding an e4 menu and toolbar to a 3.x based application
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/026_firstplugin.adoc[]
 		</chapter>
 		<chapter>
-			<title>Exercise: Using POJOs to contribute views to a 3.x based application</title>
+	=== Exercise: Using POJOs to contribute views to a 3.x based application
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/054_exercise_addingparts.adoc[]
 
 		</chapter>
 		<chapter>
-			<title>Exercise: Adding e4 part descriptors to 3.x based applications</title>
+	=== Exercise: Adding e4 part descriptors to 3.x based applications
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/055_exercise_addingpartdescriptor.adoc[]
 
 		</chapter>
@@ -1073,7 +1073,7 @@
 
 
 		<chapter>
-			<title>Migrating to an e4 API application without 3.x API usage</title>
+	=== Migrating to an e4 API application without 3.x API usage
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/030_migration.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/050_mixedmode.adoc[]
 		</chapter>
@@ -1085,9 +1085,9 @@
 
 
 	<part id="questions">
-		<title>Questions, feedback and closing words</title>
+=== Questions, feedback and closing words
 		<chapter>
-			<title>Questions, feedback</title>
+	=== Questions, feedback
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/381_eclipsebugs.adoc[]
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/382_questions.adoc[]
@@ -1096,29 +1096,29 @@
 
 	</part>
 	<part>
-		<title>Appendix</title>
+=== Appendix
 		<appendix>
-			<title>Eclipse annotations, extension points</title>
+	=== Eclipse annotations, extension points
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/960_annotationoverview.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="992_e4_extensionpoints.adoc[]
 		</appendix>
 		<appendix id="exercisesolution">
-			<title>Solutions for the exercises</title>
+	=== Solutions for the exercises
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="984_exercisesolution.adoc[]
 		</appendix>
 
 		<appendix>
-			<title>Using the update manager</title>
+	=== Using the update manager
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/content/200_updatemanager.adoc[]
 		</appendix>
 
 		<appendix>
-			<title>Recipes</title>
-			<para>This chapter contains a few
+	=== Recipes
+			This chapter contains a few
 				recipes for typical development
 				tasks and some additional background
 				material.
-			</para>
+			
 
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse3RCP/content/840_access_resources.adoc[]
@@ -1128,12 +1128,12 @@
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="980_modelbackground.adoc[]
 
 		<appendix>
-			<title>OSGi low level service API</title>
+	=== OSGi low level service API
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/100_serviceapi.adoc[]
 		</appendix>
 
 		<appendix id="webresources">
-			<title>Links and web resources</title>
+	=== Links and web resources
 			<indexterm>
 				<primary>Web resources</primary>
 			</indexterm>

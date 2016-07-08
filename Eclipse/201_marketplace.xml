@@ -1,46 +1,44 @@
-<section id="marketclient">
-	<title>Eclipse Marketplace</title>
+
+	<title>Eclipse Marketplace
 	<indexterm>
 		<primary>Update manager</primary>
 		<secondary>Eclipse Marketplace
 		</secondary>
 
 	</indexterm>
-	<indexterm>
-		<primary>Eclipse Marketplace</primary>
-	</indexterm>
-	<para>
+
+	
 		Eclipse also contains a client which allows installing software
 		components from the Eclipse
-		<wordasword>Marketplace client</wordasword>
+		_Marketplace client_
 		. The advantage of this client
 		is
 		that you can search for components,
 		discover popular
 		extensions and
 		see descriptions and ratings.
-	</para>
-	<para>
+	
+	
 		Compared to the update manager, you do not have to know
 		the
 		URL
 		for
 		the
-		<wordasword>software site</wordasword>
+		_software site_
 		which contains the installable software components.
-	</para>
-	<para>
+	
+	
 		Not all Eclipse distributions contain the
-		<wordasword>Marketplace client</wordasword>
+		_Marketplace client_
 		by
 		default. You may need to install the
-		<wordasword>Marketplace client</wordasword>
+		_Marketplace client_
 		software component into Eclipse before you can use it. The following
 		screenshot shows how to install it from one of the official Eclipse
 		update sites.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/installmpc10.png"/>
@@ -49,17 +47,17 @@
 				<phrase>Installing the MPC</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		To open the Eclipse Marketplace, select
-		<menuchoice>
+		menu:
 			<guimenu>Help</guimenu>
 			<guisubmenu>Eclipse Marketplace</guisubmenu>
 		</menuchoice>
 		.
-	</para>
+	
 
-	<para>
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata scale="60" fileref="images/marketclient10.png" />
@@ -68,13 +66,13 @@
 				<phrase>Showing the Eclipse Marketplace Client</phrase>
 			</textobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		You can use the
-		<guilabel>Find</guilabel>
+		_Find_
 		box to search for components. Pressing the
 		<guibutton>Install</guibutton>
 		button starts the
 		installation process.
-	</para>
-</section>
+	
+

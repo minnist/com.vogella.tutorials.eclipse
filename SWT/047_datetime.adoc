@@ -1,5 +1,5 @@
-<section id="swt_datetime">
-	<title>DateTime widget</title>
+
+	<title>DateTime widget
 	
 		SWT provides
 		<code>DateTime</code>
@@ -29,4 +29,3 @@
 		widget requires a selection, i.e. you cannot use this widget without a
 		date selection.
 	
-</section>

@@ -1,9 +1,9 @@
-<section id="source">
-	<title>Source code</title>
 
-	<section id="e4tech_application.xmi">
-		<title>Workbench XMI file</title>
-		<para>
+	<title>Source code
+
+[[e4tech_application.xmi">
+=== Workbench XMI file
+		
 			The base workbench model for the Eclipse IDE is defined in the
 			"org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
 			In
@@ -13,10 +13,10 @@
 			<filename>LegacyIDE.e4xmi</filename>
 			file which defines the initial
 			window and some
-			<wordasword>model Add-ons</wordasword>
+			_model Add-ons_
 			.
-		</para>
-		<para>
+		
+		
 			If Eclipse is started in the compatibility mode, this file is read
 			via
 			the
@@ -28,11 +28,11 @@
 			will then convert the relevant extension points into elements of the
 			application
 			model.
-		</para>
-	</section>
-	<section id="e4tech_application">
-		<title>Eclipse 4 application - E4Application</title>
-		<para>
+		
+	
+[[e4tech_application">
+=== Eclipse 4 application - E4Application
+		
 			The
 			<code>org.eclipse.e4.ui.workbench.swt.E4Application</code>
 			application is defined in the extension point
@@ -40,16 +40,16 @@
 			in the
 			<code>org.eclipse.e4.ui.workbench.swt</code>
 			plug-in.
-		</para>
-		<para>
+		
+		
 			It points to the
 			<code>org.eclipse.e4.ui.internal.workbench.swt.E4Application
 			</code>
 			class which implements the
 			<code>IApplication</code>
 			interface.
-		</para>
-		<para>
+		
+		
 			The
 			<code>E4Application</code>
 			class, reads the parameter passed to the application, evaluates the
@@ -65,12 +65,12 @@
 				Display display)
 			</code>
 			method will process the whole model.
-		</para>
-	</section>
-	<section id="e4tech_resourcehandler">
-		<title>Model Resource Handler</title>
+		
+	
+[[e4tech_resourcehandler">
+=== Model Resource Handler
 
-		<para>
+		
 			The
 			<code>org.eclipse.e4.ui.internal.workbench.ResourceHandler</code>
 			class is responsible for loading and saving the model. The
@@ -78,13 +78,13 @@
 			method will load the
 			<filename>Application.e4xmi</filename>
 			model.
-		</para>
-	</section>
-	<section id="e4tech_other">
-		<title>Other important classes</title>
+		
+	
+[[e4tech_other">
+=== Other important classes
 
 		<table frame='all'>
-			<title>Important Eclipse 4 classes</title>
+	=== Important Eclipse 4 classes
 			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
@@ -125,8 +125,7 @@
 			</tgroup>
 		</table>
 
-	</section>
+	
 
 
 
-</section>

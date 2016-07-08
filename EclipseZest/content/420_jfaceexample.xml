@@ -1,8 +1,8 @@
-<section id="jfaceexample">
-	<title>Zest and JFace Example</title>
-	<section id="jfaceexample_project">
-		<title>Create Project</title>
-		<para>
+
+	<title>Zest and JFace Example
+[[jfaceexample_project">
+=== Create Project
+		
 			Create a new RCP application "de.vogella.zest.jface".
 			Use the "
 			RCP application with a view" as a template. Add the zest
@@ -10,114 +10,111 @@
 			to your MANIFEST.MF. Change the Perspective.java to the
 			following (we
 			do not want a
-			stand-alone view).</para>
+			stand-alone view).
 			
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/Perspective.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
-	<section id="jfaceexample_model">
-		<title>Model</title>
-		<para> Create the following model. Please note that the model can be
+[[jfaceexample_model">
+=== Model
+		 Create the following model. Please note that the model can be
 			anything as long as you can
-			logically convert it into a connected Graph. </para>
+			logically convert it into a connected Graph. 
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/MyNode.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/MyConnection.java" />
 			</programlisting>
-		</para>
+		
 
-		<para> Also build this class which provides an instance of the data
-			model. </para>
-		<para>
+		 Also build this class which provides an instance of the data
+			model. 
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/NodeModelContentProvider.java" />
 			</programlisting>
-		</para>
+		
 
-	</section>
-	<section id="jfaceexample_provides">
-		<title>Providers</title>
-		<para>Create the following content and label providers. </para>
+	
+[[jfaceexample_provides">
+=== Providers
+		Create the following content and label providers. 
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/ZestNodeContentProvider.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/ZestLabelProvider.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="jfaceexample_view">
-		<title>View</title>
+		
+	
+[[jfaceexample_view">
+=== View
 
-		<para> Change the view to the following.</para>
-		<para>
+		 Change the view to the following.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/View.java" />
 			</programlisting>
-		</para>
-		<para> The result should look like the following.
-		</para>
+		
+		 The result should look like the following.
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/ZestFinal10.gif" />
+		
+image::ZestFinal10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-	<section id="jfaceexample_filter">
-		<title>Filter</title>
+		
+	
+[[jfaceexample_filter">
+=== Filter
 
-		<para> You can define a filter on the viewer via setFilters();
-		</para>
-		<para> For example define the following filter.</para>
-		<para>
+		 You can define a filter on the viewer via setFilters();
+		
+		 For example define the following filter.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/NodeFilter.java" />
 			</programlisting>
-		</para>
-		<para> Apply the filter to the view to filter all elements.</para>
-		<para>
+		
+		 Apply the filter to the view to filter all elements.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/jface/ViewFilter.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<tip> You can also define a filter on the layout so that certain
 				elements are ignore then calculating the layout. Method
 				isObjectFiltered(LayoutItem item). Use item.getGraphData() to get
 				the underlying object
 				(GraphNode or GraphConnection).
 			</tip>
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

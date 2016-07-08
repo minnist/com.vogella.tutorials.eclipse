@@ -1,7 +1,7 @@
-<section id="swt_jface">
-	<title>Relationship to JFace</title>
+
+	<title>Relationship to JFace
 	
-		<wordasword>JFace</wordasword>
+		_JFace_
 		is a set of APIs which builds on top of
 		SWT
 		and provides higher level
@@ -17,4 +17,3 @@
 		solid understanding of
 		SWT.
 	
-</section>

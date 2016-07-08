@@ -1,7 +1,7 @@
-<section id="fork_the_example_repository_on_github">
+
 	<title>Create Github user and fork repository
 	<section>
-		<title>Target of this exercise
+=== Target of this exercise
 		In the following exercises you work with remote repositories.
 			First you learn how to work with a
 			repository where
@@ -29,8 +29,8 @@
 			As we have already worked with a local clone of a Github repository, this exercise uses the second approach.
 		
 	
-	<section id="Sign_up_at_github">
-		<title>Sign up at Github
+[[Sign_up_at_github">
+=== Sign up at Github
 		
 			Before you can fork a repository at Github, you need to have a account. In case you do not have already a Github
 			user,
@@ -52,8 +52,8 @@
 			</inlinemediaobject>
 		
 	
-	<section id="_fork_the_repository">
-		<title>Fork the Repository
+[[_fork_the_repository">
+=== Fork the Repository
 		Once you have signed up you can read about forking by pressing the fork button.
 		
 			<inlinemediaobject>

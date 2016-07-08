@@ -12,7 +12,7 @@ Version 0.3, 06.07.2016
 [abstract]
 
 
-		<title>Performance analysis and tracing of Eclipse plug-ins and RCP applications - Tutorial</title>
+=== Performance analysis and tracing of Eclipse plug-ins and RCP applications - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -31,15 +31,15 @@ Version 0.3, 06.07.2016
 		</copyright>
 		<pubdate>10.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 2.3</para>
+			Version 2.3
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Tracing Eclipse components</title>
-			<para>
+	=== Tracing Eclipse components
+			
 				This article describes how to trace and perform performance analysis on 
 				Eclipse plug-ins and RCP applications.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

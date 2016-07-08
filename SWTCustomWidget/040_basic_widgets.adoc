@@ -18,10 +18,10 @@ Version 0.3, 06.07.2016
 	It is already planed to offer a tutorial for the usage of the SWT graphics context, but
 		until such a tutorial will be available you can have a look at this <ulink
 			url="https://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html">SWT
-			Graphics Context</ulink> or simply do the following exercises, which will also contain
+			Graphics Context or simply do the following exercises, which will also contain
 		custom drawings with the SWT graphics context.
 	<section>
-		<title>Add a PaintListener and use redraw
+=== Add a PaintListener and use redraw
 		Use the `addPaintListner` method in order to draw on a `Canvas`
 			or `Composite` and use the`redraw` method instead of directly
 			calling your internal paint methods, so that the framework may queue all redraw requests
@@ -29,23 +29,16 @@ Version 0.3, 06.07.2016
 		The result and also how to use the `PaintListenerCanvas` sample below is
 			shown in the screenshot:
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/PaintListenerCanvas.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>`PaintListenerCanvas` sample</phrase>
-				</textobject>
-			</mediaobject>
+image::PaintListenerCanvas.png[`PaintListenerCanvas` sample,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
 					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/PaintListenerCanvas.java"/>
 				</programlisting>
 		
-	</section>
+	
 	<section>
-		<title>SWT events and listener
+=== SWT events and listener
 		In most cases the user will also interact with your custom widget. Therefore it must
 			fire events like other widgets also do, i.e. a Button, which fires a
 				`widgetSelected` event to it's attached
@@ -81,9 +74,9 @@ Version 0.3, 06.07.2016
 		
 		The last thing to do is simply offering an API to add and remove your custom listener
 			and to fire your custom events, which will be passed to the listener.
-	</section>
+	
 	<section>
-		<title>Positions in custom drawings
+=== Positions in custom drawings
 		In custom drawings the positions of the elements inside it should be stored. So the
 			positions of certain elements inside the custom widget can be found after they are
 			drawn.
@@ -115,11 +108,9 @@ Version 0.3, 06.07.2016
 		
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/gameboy-widget.png"/>
+image::gameboy-widget.png"/>
 				</imageobject>
 			</mediaobject>
 		
-	</section>
-</section>
+	
+

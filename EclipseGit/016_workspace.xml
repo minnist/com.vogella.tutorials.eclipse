@@ -1,11 +1,11 @@
-<section id="egitconfiguration_reposandworkspace">
-	<title>The Eclipse workspace and Git repositories</title>
+
+	<title>The Eclipse workspace and Git repositories
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>Workspaces and Git repositories
 		</secondary>
 	</indexterm>
-	<para>
+	
 		It is good
 		practice to
 		place your Git
@@ -24,5 +24,4 @@
 		folder in the users home directory to clone new repositories. This default location can of course be adjusted, see
 		<xref linkend="egitconfiguration_defaultlocation" />
 		for more information on this.
-	</para>
-</section>
+	

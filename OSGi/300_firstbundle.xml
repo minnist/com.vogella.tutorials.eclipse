@@ -1,6 +1,6 @@
-<section id="OSGi_firstbundle">
-	<title>Tutorial: Using the Activator and exporting your bundle</title>
-	<para>
+
+	<title>Tutorial: Using the Activator and exporting your bundle
+	
 		In this exercise you create another bundle which uses an
 		<code>Activator</code>
 		. You also run it within Eclipse
@@ -11,85 +11,72 @@
 		to use it
 		later in a
 		stand-alone OSGi server.
-	</para>
-	<section id="createbundle">
-		<title>Create a new Bundle</title>
-		<para>
+	
+[[createbundle">
+=== Create a new Bundle
+		
 			Create a new simple plug-in project
 			"com.vogella.osgi.firstbundle.internal" via
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New</guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Plug-in Development</guisubmenu>
-				<guisubmenu>Plug-in Project</guisubmenu>
-			</menuchoice>
+			menu:File[New > Other... > Plug-in Development > Plug-in Project]
 			.
-		</para>
-	</section>
-	<section id="codebundle">
-		<title>Coding</title>
-		<para> Create the following thread class.</para>
-		<para>
+		
+	
+[[codebundle">
+=== Coding
+		 Create the following thread class.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/firstbundle/MyThread.java" />
 			</programlisting>
-		</para>
-		<para> Change the class Activator.java to the following.</para>
-		<para>
+		
+		 Change the class Activator.java to the following.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/firstbundle/Activator.java" />
 			</programlisting>
-		</para>
-	</section>
-	<section id="runbundle">
-		<title>Run</title>
-		<para>
+		
+	
+[[runbundle">
+=== Run
+		
 			Select your
 			<filename>MANIFEST.MF</filename>
 			file, right-click it and select
-			<menuchoice>
-				<guimenu>Run As</guimenu>
-				<guisubmenu>Run
+			menu:Run As[Run
 					Configuration
-				</guisubmenu>
-			</menuchoice>
+				]
 			. Create an OSGi Framework launch configuration. deselect
 			all bundles
 			except your de.vogella.osgi.firstbundle. Afterwards press the
-			<guilabel>Add
+			_Add
 				Required
 				bundles
-			</guilabel>
+			_
 			.
 			This adds the
 			<code>org.eclipse.osgi</code>
 			bundle to your run configuration.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstbundle30.gif" />
+		
+		
+image::firstbundle30.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Run this configuration. Every 5 second a new
+		
+		 Run this configuration. Every 5 second a new
 			message is
 			written
 			to the console.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstbundle40.gif" />
+		
+		
+image::firstbundle40.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
+		
+		
 			<tip>
 				In case you are wondering in which folder OSGi starts you find it
 				in
@@ -102,38 +89,31 @@
 				update your bundles in the running OSGi environment directly without
 				any deployment.
 			</tip>
-		</para>
-	</section>
-	<section id="exportbundle">
-		<title>Export your bundle</title>
-		<para>Export your bundle. This will allow you to install it into a
+		
+	
+[[exportbundle">
+=== Export your bundle
+		Export your bundle. This will allow you to install it into a
 			OSGi runtime. Select your bundle and choose File -> Export -> Plug-in
 			Development -> "Deployable plug-ins and fragment".
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstbundle50.gif" />
+		
+		
+image::firstbundle50.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstbundle60.gif" />
+		
+		
+image::firstbundle60.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-		<para> Unflag the option to export the source.</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/firstbundle65.gif" />
+		
+		 Unflag the option to export the source.
+		
+image::firstbundle65.gif" />
 
 				</imageobject>
 			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+	

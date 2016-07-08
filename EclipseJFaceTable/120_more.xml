@@ -1,26 +1,26 @@
-<section id="jfacetable_prerequisites">
-	<title>Prerequisites</title>
-	<para>
+
+	<title>Prerequisites
+	
 		The following
 		provides an
 		example how to build a table with the
 		JFace Viewer
 		framework.
-	</para>
-	<para>
+	
+	
 		It assume that you are familiar with creating
-		<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html"> Eclipse RCP applications</ulink>
+		http://www.vogella.com/tutorials/EclipseRCP/article.html"> Eclipse RCP applications
 		or
-		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-ins</ulink>
+		http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-ins
 		.
-	</para>
-	<para>
+	
+	
 		Please
 		see
-		<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">Introduction to JFace</ulink>
+		http://www.vogella.com/tutorials/EclipseJFace/article.html">Introduction to JFace
 		for an introduction to the
 		concepts behind this example.
-	</para>
-</section>
+	
+
 
 

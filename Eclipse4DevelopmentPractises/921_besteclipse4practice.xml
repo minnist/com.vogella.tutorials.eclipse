@@ -1,23 +1,23 @@
-<section id="bestpractices" role="wrapper">
-	<title>Eclipse API best practice</title>
-	<section id="bestpractise_eventadmin">
-		<title>Application communication</title>
-		<para>
+
+	<title>Eclipse API best practice
+[[bestpractise_eventadmin">
+=== Application communication
+		
 			A simple way of propagating user interface selections is the
 			selection service (
 			<code>ESelectionService</code>
 			) of the Eclipse platform. Use this service to
 			propagate the current
 			selection of a window.
-		</para>
-		<para>
+		
+		
 			For general scoped communication it is recommended to use the
 			Eclipse
 			context (
 			<code>IEclipseContext</code>
 			).
-		</para>
-		<para>
+		
+		
 			The event service (
 			<code>IEventBroker</code>
 			)
@@ -35,89 +35,85 @@
 			and
 			subscribe mechanism is relatively
 			simple.
-		</para>
-		<para>Frequently the event service is also used together with a
+		
+		Frequently the event service is also used together with a
 			modification of the Eclipse context. The following
 			section contains
 			an example for this.
-		</para>
+		
 
-	</section>
-	<section id="bestpracticese_eventcontextvariable">
-		<title>Example: Using events together with the IEclipseContext</title>
-		<para>
+	
+[[bestpracticese_eventcontextvariable">
+=== Example: Using events together with the IEclipseContext
+		
 			The following example demonstrates the registration for events
 			and how the provided information is used to modify
 			the context.
-		</para>
-		<para>
+		
+		
 			Assume that on every change of the active part you want to place a
 			variable called
 			<parameter>myactivePartId</parameter>
 			into the
 			<code>IEclipseContext</code>
 			. This can be done via the following code.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/activate2.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>This context variable can be used
+		This context variable can be used
 			to define a visible-when clause
 			which can be used to
 			restrict the visibility of
 			menus and toolbars.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/plugin.adoc[]
 			</programlisting>
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/event_visibility10.png" scale="35" />
+		
+image::event_visibility10.png" scale="35" />
 				</imageobject>
 				<textobject>
-					<phrase>Restrict the visibility of a command</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Restrict the visibility of a command,pdfwidth=60%]
+		
 
-	</section>
+	
 
-	<section id="bestpractices_osig">
-		<title>Which dependency injection approach to use for your implementation</title>
-		<para>
+[[bestpractices_osig">
+=== Which dependency injection approach to use for your implementation
+		
 			The application can add or modify the behavior of the dependency injection
 			mechanisms. You
 			have several options for
 			this. The most common approaches are the following:
 			<itemizedlist>
 				<listitem>
-					<para>OSGi services</para>
+					OSGi services
 				</listitem>
 				<listitem>
-					<para>Context modifications of the Eclipse context </para>
+					Context modifications of the Eclipse context 
 				</listitem>
 				<listitem>
-					<para>Context functions</para>
+					Context functions
 				</listitem>
 				<listitem>
-					<para>Extended object suppliers for custom annotations</para>
+					Extended object suppliers for custom annotations
 				</listitem>
 				<listitem>
-					<para>Model add-ons</para>
+					Model add-ons
 				</listitem>
 			</itemizedlist>
 			.
-		</para>
-		<para>All are valid options for your implementation. </para>
-		<para>The programming model of Eclipse 4 makes it easy to
+		
+		All are valid options for your implementation. 
+		The programming model of Eclipse 4 makes it easy to
 			create and
 			use OSGi services. OSGi services do not have access
 			to the Eclipse
@@ -125,8 +121,8 @@
 			OSGi services are a good approach for
 			infrastructure
 			services.
-		</para>
-		<para>
+		
+		
 			Context functions allow you to create objects based on the
 			Eclipse context. They also allow you to persist the
 			created object
@@ -136,8 +132,8 @@
 			of
 			pure
 			OSGi services.
-		</para>
-		<para>
+		
+		
 			Storing the key/value pairs in the Eclipse context (as context elements or
 			context variables)
 			allows you to persist
@@ -151,9 +147,9 @@
 			example you can change the default
 			window
 			close handler.
-		</para>
+		
 
-		<para>Via extended object suppliers you can define your custom
+		Via extended object suppliers you can define your custom
 			annotations and provide processors for them. Extended
 			object
 			supplier do not have access to the Eclipse context, but can access
@@ -161,8 +157,8 @@
 			could implement a
 			provider for preferences which are stored in the network instead of
 			the file system.
-		</para>
-		<para>
+		
+		
 			Model add-ons
 			allow you to contribute Java objects to the
 			application
@@ -172,9 +168,8 @@
 			<code>IEclipseBroker</code>
 			and
 			can contribute functionality based on these events.
-		</para>
+		
 
-	</section>
+	
 
 
-</section>

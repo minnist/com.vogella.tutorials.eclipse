@@ -1,9 +1,9 @@
 <chapter>
-	<title>Exercise: Build a first SWT UI</title>
+	<title>Exercise: Build a first SWT UI
 
 	<section>
-		<title>TodoOverviewPart</title>
-		<para>
+=== TodoOverviewPart
+		
 			Add a
 			button
 			to your
@@ -12,8 +12,8 @@
 			label
 			with the default text set to:
 			"Data not available."
-		</para>
-		<para>
+		
+		
 			Attach a
 			<code>SelectionListener</code>
 			to the
@@ -23,24 +23,24 @@
 			<code>ITodoService</code>
 			service and assign the number to
 			the text of the label.
-		</para>
-		<para>
+		
+		
 			The following code may serve as an entry point. See
 			<xref linkend="swtuserinterface_solution" />
 			for the complete example coding.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/snippets/btn.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The resulting user interface should look similar to the
 			following
 			screenshot.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<!-- TODO: old screenshot, space between items:9 missing -->
@@ -48,29 +48,27 @@
 						scale="60" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
+					<phrase>,pdfwidth=60%]
+		
+	
 
 
 
-	<section id="swtuserinterface_solution">
-		<title>Example code for TodoOverviewPart</title>
-		<para>
+[[swtuserinterface_solution">
+=== Example code for TodoOverviewPart
+		
 			Your resulting implementation of
 			<code>TodoOverviewPart</code>
 			should be similar to the following classes.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/swt/TodoOverviewPart_SWT.java" />
 			</programlisting>
-		</para>
-	</section>
+		
+	
 
 
 </chapter>

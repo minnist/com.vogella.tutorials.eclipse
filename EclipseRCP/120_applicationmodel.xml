@@ -1,7 +1,7 @@
-<section id="applicationmodel" role="wrapper">
-	<title>Eclipse 4 application model</title>
-	<section id="applicationmodel_overview">
-		<title>What is the application model?</title>
+
+	<title>Eclipse 4 application model
+[[applicationmodel_overview">
+=== What is the application model?
 		<indexterm>
 			<primary>Application model</primary>
 		</indexterm>
@@ -10,9 +10,9 @@
 			<primary>Application.e4xmi</primary>
 		</indexterm>
 
-		<para>
+		
 			The Eclipse platform uses an abstract description, called the
-			<wordasword>application model</wordasword>
+			_application model_
 			,
 			to
 			describe the structure of an application. This
@@ -24,9 +24,9 @@
 			elements of
 			the
 			application.
-		</para>
+		
 
-		<para>
+		
 			The visual parts are, for example,
 			windows, parts (views and
 			editors),
@@ -37,9 +37,9 @@
 			commands
 			and
 			key bindings.
-		</para>
+		
 
-		<para>
+		
 			Each model element has
 			attributes which describe
 			its current
@@ -54,8 +54,8 @@
 			also expresses the relationship of the
 			model elements via a hierarchy.
 
-		</para>
-		  <para>
+		
+		  
             The individual user interface widgets, which are displayed in a
             part,
             are not defined via the application model,
@@ -83,8 +83,8 @@
             by the
             following
             image.
-        </para>
-        <para>
+        
+        
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/modeledworkbench10.gif" scale="60" />
@@ -93,9 +93,9 @@
                     <phrase>Limits of the modeled workbench</phrase>
                 </textobject>
             </mediaobject>
-        </para>
+        
 
-		<para>
+		
 			The base of the application
 			model is
 			typically defined
@@ -111,22 +111,22 @@
 			construct the initial application model. Changes made by the user are
 			persisted and re-applied
 			at startup.
-		</para>
-		<para>
+		
+		
 			The application model is extensible, e.g., other plug-ins can
 			contribute
 			to it via
-			<wordasword>model processors</wordasword>
+			_model processors_
 			and
-			<wordasword>model fragments</wordasword>
+			_model fragments_
 			.
-		</para>
+		
 
-	</section>
+	
 
 
-	<section id="runtime_uri">
-		<title>Connecting model elements to classes and resources</title>
+[[runtime_uri">
+=== Connecting model elements to classes and resources
 		<indexterm>
 			<primary>Class URI</primary>
 			<secondary>bundleclass://</secondary>
@@ -142,7 +142,7 @@
 			<primary>Class URI</primary>
 		</indexterm>
 
-		<para>
+		
 			Model elements can point to a class or to a static resource via
 			a
 			Uniform
@@ -157,8 +157,8 @@
 			classes for a part are
 			instantiated when
 			the part gets visible.
-		</para>
-		<para>
+		
+		
 
 			The following table describes the support URI
 			patterns.
@@ -166,11 +166,11 @@
 			example
 			assumes
 			that the bundle is called
-			<wordasword>test</wordasword>
+			_test_
 			to have a short name.
-		</para>
+		
 		<table frame='all'>
-			<title>URI pattern</title>
+	=== URI pattern
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="2*" />
 				<colspec colname='c2' colwidth="3*" />
@@ -183,20 +183,20 @@
 				<tbody>
 					<row>
 						<entry>
-							<para>
+							
 								<emphasis>bundleclass://</emphasis>
 								BSN/package.classname
-							</para>
-							<para></para>
-							<para>Example:</para>
-							<para>bundleclass://test/test.parts.MySavePart</para>
-							<para></para>
+							
+							
+							Example:
+							bundleclass://test/test.parts.MySavePart
+							
 						</entry>
 						<entry>
-							<para>
+							
 								Identifier for a Java class.
-							</para>
-							<para>
+							
+							
 								It consists of the
 								following
 								parts:
@@ -207,27 +207,27 @@
 								<filename>MANIFEST.MF</filename>
 								file. The Bundle-SymbolicName is followed by a '/' and the fully
 								qualified classname.
-							</para>
+							
 						</entry>
 					</row>
 					<row>
 						<entry>
-							<para>
+							
 								<emphasis>platform:/plugin/</emphasis>
 								BSN/path/filename.extension
-							</para>
+							
 
-							<para></para>
-							<para>Example:</para>
-							<para>
+							
+							Example:
+							
 								platform:/plugin/test/icons/save_edit.gif
-							</para>
+							
 						</entry>
 						<entry>
-							<para>
+							
 								Used to identify resources.
-							</para>
-							<para>
+							
+							
 								Identifier for a resource in a plug-in.
 								<emphasis>platform:/plugin/</emphasis>
 								is a
@@ -238,7 +238,7 @@
 								file, followed by the
 								path
 								to the file and the filename.
-							</para>
+							
 						</entry>
 					</row>
 				</tbody>
@@ -246,10 +246,10 @@
 		</table>
 
 
-		<para>
+		
 			For example a part, have
 			a
-			<guilabel>Class URI</guilabel>
+			_Class URI_
 			attribute
 			which points to a Java class via the
 			<code>bundleclass://</code>
@@ -274,32 +274,28 @@
 			interactive
 			objects
 			behave.
-		</para>
+		
 
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/classuri10.png" />
+		
+image::classuri10.png" />
 				</imageobject>
 				<textobject>
-					<phrase></phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+					<phrase>,pdfwidth=60%]
+		
+		
 			An example for a static resource reference is the
 			the
-			<guilabel>Icon URI</guilabel>
+			_Icon URI_
 			attribute of a part. This attribute
 			can point to an icon that is used for the part.
-		</para>
-	</section>
+		
+	
 
-    <section id="appmodel_runtime">
-        <title>Runtime application model</title>
-        <para>
+    
+        <title>Runtime application model
+        
             At runtime of the application the created set of model objects is called the
-            <wordasword>runtime application model</wordasword>
+            _runtime application model_
             .
             This runtime application model is dynamic, i.e., you can change the
             model
@@ -317,7 +313,6 @@
             user interface whenever you change
             relevant
             attributes.
-        </para>
-    </section>
+        
+    
 
-</section>

@@ -1,9 +1,9 @@
-<section id="eclipseplatform_who" role="wrapper">
-	<title>The platform development team</title>
-	<section id="eclipseplatform_contributions2">
-		<title>Who is involved?</title>
 
-		<para>
+	<title>The platform development team
+[[eclipseplatform_contributions2">
+=== Who is involved?
+
+		
 			Despite the general assumption that the Eclipse SDK components
 			are
 			developed by an army of developers, the actual
@@ -11,15 +11,15 @@
 			team
 			is
 			relatively small.
-		</para>
-		<para>
+		
+		
 			General information about an Eclipse project can be
 			found
 			under
-			<ulink url="http://projects.eclipse.org/">http://projects.eclipse.org/</ulink>
+			http://projects.eclipse.org/">http://projects.eclipse.org/
 			. For example
 			via the
-			<guilabel>Who's Involved</guilabel>
+			_Who's Involved_
 			link you can see an overview of the project activities. For
 			example,
 			the information for
@@ -27,22 +27,18 @@
 			platform
 			project can be found
 			under the
-			<ulink url="https://projects.eclipse.org/projects/eclipse/who">Eclipse project</ulink>
+			https://projects.eclipse.org/projects/eclipse/who">Eclipse project
 			link.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/eclipseplatformcontributors.png" scale="60" />
+		
+		
+image::eclipseplatformcontributors.png" scale="60" />
 				</imageobject>
 				<textobject>
-					<phrase>Screenshots of the Eclipse platform contributors</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
+					<phrase>Screenshots of the Eclipse platform contributors,pdfwidth=60%]
+		
 
 		<tip>
-			<para>
+			
 				To find out how
 				many people contribute to a given Eclipse Git
 				repo
@@ -56,51 +52,40 @@
 				contributing
 				to the
 				platform.ui repository.
-			</para>
-			<para>
+			
+			
 				<programlisting language="java">
 					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitcount/gitcount.txt" />
 				</programlisting>
-			</para>
+			
 
 
 
 		</tip>
 
-		<para>
+		
 			Since the core team of an individual project is relatively small,
 			contributors can really
 			make a difference. For
 			example the following screenshot shows a snapshot of the activities of the
-			<ulink url="https://projects.eclipse.org/projects/eclipse.platform.ui/who">Eclipse platform.ui project</ulink>
+			https://projects.eclipse.org/projects/eclipse.platform.ui/who">Eclipse platform.ui project
 			. 
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/platformcontributions20.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Acivities in the Eclipse platform UI project</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::platformcontributions20.png[Acivities in the Eclipse platform UI project,pdfwidth=60%]
+		
+		
 			An alternative view gives the new dashboard. For example
 			the following
 			screeenshot shows the
-			<ulink url="http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui">Platform.ui dashboard</ulink>
+			http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui">Platform.ui dashboard
 			link.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/dashboard.png" scale="30" />
+		
+		
+image::dashboard.png" scale="30" />
 				</imageobject>
 				<textobject>
-					<phrase>Platform.ui dashboard</phrase>
-				</textobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+					<phrase>Platform.ui dashboard,pdfwidth=60%]
+		
+	
+

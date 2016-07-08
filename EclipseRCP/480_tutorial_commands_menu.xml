@@ -94,8 +94,8 @@ image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/SaveAllHandler.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/SaveAllHandler.java[]
+----
 		
 
 		Using this template for all classes, implement the following
@@ -200,8 +200,8 @@ image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60
 		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/bundleclass.txt" />
-			</programlisting>
+					parse="text" href="./examples/snippets/bundleclass.txt[]
+----
 		
 
 
@@ -246,7 +246,7 @@ image::menu04.png"/>
 			the name
 			"Edit"
 			in the
-			<parameter>Label</parameter>
+			_Label_
 			attribute.
 		
 		
@@ -272,7 +272,7 @@ image::commands20.png" scale="50[Creating a menu,pdfwidth=60%]
 			menu. This item should point to the
 			_Save_
 			command via the
-			<parameter>Command</parameter>
+			_Command_
 			attribute.
 		
 		
@@ -303,8 +303,8 @@ image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/command/ExitHandler.java" />
-			</programlisting>
+					parse="text" href="./examples/command/ExitHandler.java[]
+----
 		
 	
 

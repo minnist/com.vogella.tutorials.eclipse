@@ -53,15 +53,15 @@
 		
 			Assume that on every change of the active part you want to place a
 			variable called
-			<parameter>myactivePartId</parameter>
+			_myactivePartId_
 			into the
 			`IEclipseContext`
 			. This can be done via the following code.
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/activate2.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/activate2.java[]
+----
 		
 
 		This context variable can be used

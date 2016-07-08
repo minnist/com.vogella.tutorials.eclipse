@@ -154,8 +154,8 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActivePart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActivePart.java[]
+----
 		
 
 		
@@ -165,10 +165,10 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActiveShell.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActiveShell.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				Eclipse uses handlers to define actions which can be triggered via menu or toolbar entries.
 				For a handler
@@ -220,11 +220,11 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/MyOwnClass.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/MyOwnClass.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				The
 				`@Active`

@@ -3,7 +3,7 @@
 
 
 === Add the plug-in dependencies
-		<note>
+		NOTE:
 			
 				If you did the optional exercise
 				<xref linkend="tutorial_commandscontextmenu" />
@@ -57,10 +57,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dirty/Dirty.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dirty/Dirty.java[]
+----
 		
 
 		
@@ -79,10 +79,10 @@
 
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dirty/Persist.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dirty/Persist.java[]
+----
 		
 	
 
@@ -97,10 +97,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dirty/SaveAllHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dirty/SaveAllHandler.java[]
+----
 		
 
 		
@@ -142,7 +142,7 @@
 
 
 === Confirmation dialog for modified data
-		<note>
+		NOTE:
 			This exercise is optional. It is a repetition of the usage of
 				dialogs.
 			

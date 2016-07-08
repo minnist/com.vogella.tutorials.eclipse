@@ -1,6 +1,6 @@
 
 == Exercise: Add multiple columns to a tree viewer
-	<note>
+	NOTE:
 		
 			This exercise assumes that
 			<xref linkend="jfacefilebrowser" />
@@ -26,8 +26,8 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/treeColumn/TreeColumn.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/treeColumn/TreeColumn.java[]
+----
 		
 		
 			Instead of applying a
@@ -47,8 +47,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/filebrowser/MultiColumnFileBrowserPart.java" />
-			</programlisting>
+					href="./examples/filebrowser/MultiColumnFileBrowserPart.java[]
+----
 		
 	
 

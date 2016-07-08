@@ -29,7 +29,7 @@
 			Eclipse IDE into a bad
 			state. To fix
 			such issues, start the Eclipse IDE from the command line with the
-			<parameter>-clearPersistedState</parameter>
+			_-clearPersistedState_
 			parameter.
 		
 

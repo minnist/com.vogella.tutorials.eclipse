@@ -88,10 +88,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/command/getid.java" />
-			</programlisting>
+[source,java]
+----
+include::res/command/getid.java[]
+----
 		
 	
 
@@ -123,8 +123,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/osgi/standard.java" />
-			</programlisting>
+					parse="text" href="../examples/osgi/standard.java[]
+----
 		
 	
 

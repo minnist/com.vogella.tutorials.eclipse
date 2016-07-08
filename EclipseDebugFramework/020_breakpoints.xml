@@ -34,7 +34,7 @@ image::breakpoint_hierarchy.png"
 === Registering custom breakpoints
 		
 			Eclipse provides the
-			<parameter>org.eclipse.debug.core.breakpoints</parameter>
+			_org.eclipse.debug.core.breakpoints_
 			extension point for registering custom
 			`IBreakpoint`
 			classes.
@@ -45,7 +45,7 @@ image::breakpoint_ext_point.png"
 		
 		
 			In this definition a
-			<parameter>markerType</parameter>
+			_markerType_
 			attribute is used, because breakpoints do have a reference to an
 			`IMarker`
 			, which represents the breakpoint in the UI and it is also used for
@@ -53,7 +53,7 @@ image::breakpoint_ext_point.png"
 		
 		
 			Therefore the
-			<parameter>org.eclipse.core.resources.markers</parameter>
+			_org.eclipse.core.resources.markers_
 			extension point is used.
 		
 		
@@ -120,8 +120,8 @@ image::togglebreakpointstarget_hierarchy.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/RegisterBreakpoint.java" />
-			</programlisting>
+					parse="text" href="./examples/RegisterBreakpoint.java[]
+----
 		
 		
 			When adding or removing

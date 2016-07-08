@@ -1,0 +1,244 @@
+== Exercise: Configuring the IDE for an improved development experience
+
+=== Why adjusting the Eclipse default configuration?
+
+The Eclipse IDE is relatively conservative configured to avoid
+surprises during development. Certain settings in
+the Eclipse IDE allow you to use it
+more
+efficiently. In this exercise you
+make changes to
+the default Eclipse
+IDE
+settings to your personal usability with the
+Eclipse IDE. If you find a setting in this exercise not working for you,
+you
+can always skip
+that setting.
+
+=== Link Java editor with the Package Explorer view
+
+You can synchronize the currently selected
+Java editor with the
+selection in the
+_Package Explorer_
+view. This gives you a clearer visibility which object you are
+currently
+editing.
+
+Enable this by selecting the corresponding button in the
+_Package Explorer_
+view.
+
+image::linkwitheditor10.png[Editor,pdfwidth=60%]
+
+=== Automatic placement of semicolon
+ 
+Eclipse can make typing more efficient by placing semicolons
+at
+the correct position in your source code.
+
+In the Preference setting select
+menu:Java[Editor > Typing]
+. In the
+_Automatically insert at correct position_
+selection
+enable
+the
+_Semicolons_
+checkbox.
+
+image::wayofworking10.png[Type Assists which allow setting the semicolon to the right position,pdfwidth=50%,width=50%]
+
+Afterwards, you can type a semicolon in the middle of your code
+and
+Eclipse will position it at the end of the
+current statement.
+
+=== Auto-escape text pasted into Strings
+
+Eclipse allows you to escape text automatically if it is pasted
+into
+a String literal. For example, you can copy
+HTML code and paste
+it
+into
+a String in your Java source. Eclipse would escape the text
+automatically for you.
+
+Activate this setting via
+menu:Window[Preferences > Java > Editor > Typing > In string literals > Escape text when pasting into string literal]
+
+Now you can paste text that should be escaped. The
+following code
+snippet shows an example for the resulting code
+if you
+paste
+HTML code
+containing a link into a string literal.
+
+<[source,java]
+----
+include::res/escape/Paste1.txt[]
+----
+
+=== Bracket highlighting
+
+You can configure Eclipse to highlight the matching brackets of
+a code block in the source code editor.
+
+image::jdtbrackets10.png[Highlight the enclosing brackets in JDT,pdfwidth=30%,width=30%]
+
+Before the change you would not see the enclosing brackets.
+Afterwards, they will be slightly highlighted. This
+helps to see in
+which block you are.
+
+image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT,pdfwidth=60%]
+
+image::jdtbrackets30.png[With highlight the enclosing brackets in JDT,pdfwidth=60%]
+
+=== Code cleanup during save via save actions
+
+Eclipse can cleanup your code and format it automatically during save (shortcut:
+kbd:[Ctrl+S]
+).
+You can find
+the corresponding
+settings under
+menu:Window[Preferences+Java[Editor > Save Actions].
+
+Here you can define the actions which should be performed during save and via the
+_Configure..._
+button you can configure the code cleanup actions which should be performed.
+
+image::wayofworking30.png[Save Actions,pdfwidth=50%,width=50%]
+
+Import statements are only automatically created if
+where is one valid import. If Eclipse determines more
+than
+one valid
+import, it will not add import statements automatically. In this case
+you still need to right-click in
+your editor and
+select
+menu:Source[Organize Imports]
+(shortcut:
+kbd:[Shift+Ctrl+O]).
+
+=== Launch configuration
+
+In the Eclipse preferences dialog select the
+_Launch the previously launched application_
+option in the
+menu:Run/Debug[Launching]
+setting.
+
+image::exercise_lauchprevious11.png[Launch previous launched application,pdfwidth=30%,width=30%]
+
+=== Type Filters
+
+The
+_Save Actions_
+setting
+automatically adds required import statements to your source
+code
+if there is only one possible import.
+
+Alternatively, or if there are several possible imports, you can use
+the
+_Organize Imports_ (shortcut:
+kbd:[Ctrl+Shift+O]
+).
+If
+there are several
+alternatives, Eclipse
+suggests all available
+packages and
+the user has
+to
+select the right
+one.
+
+The following shows the available packages for the
+`List`
+class in the
+_Organize Imports_
+dialog.
+
+image::importpackages10.png[Dialog for selecting the correct import statement,pdfwidth=60%]
+
+If you never use certain packages, for example AWT or Swing, you can
+exclude
+these packages from Eclipse via the
+menu:Window[Preferences > Java > Appearance > Type Filters]
+setting.
+
+Press the
+_Add packages_
+button
+to add a specific package or the
+_Add..._
+button
+to use
+wildcards. The setting in the following screenshot
+excludes all
+AWT packages from the
+possible imports and
+other Java
+search
+functionality
+in Eclipse.
+
+image::importpackages20.png[Filtering packages from the Eclipse import,pdfwidth=60%]
+
+Please note that Eclipse shows (in its default configuration)
+only the packages that are
+used in the current
+workspace. If you want
+to exclude standard Java
+packages, you have to create at least one
+Java
+project.
+
+=== Completion overwrites and insert guessed method arguments
+
+Eclipse can override existing method calls, in case you trigger
+a code completion in an existing statement.
+Eclipse can also try to
+guess
+the correct actual
+parameters for a method call.
+
+image::jdt_completion04.png[JDT completion,pdfwidth=30%,width=30%]
+
+With the first setting you can override methods in the middle of
+a
+statement via the
+kbd:[Ctrl+Space]
+code assists shortcut.
+
+image::jdt_completion08.png[Trigger code completion,pdfwidth=60%]
+
+Without this setting you would get the following result, which
+results in a syntax error.
+
+image::jdt_completion20.png[JDT completion,pdfwidth=60%]
+
+With this setting you get the following result.
+
+image::jdt_completion10.png[Result,pdfwidth=60%]
+
+=== Auto activation key for code completion
+
+The Eclipse IDE is configured to give you automatic code completion
+suggestion only after the . sign. Typically you
+want to have code
+completion on every character. Open again the
+menu:Window[Preferences > Java > Editor > Content Assists]
+preference setting and enter
+.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXYZ in the
+_Auto activation trigger for Java_.
+
+image::jdt_contentassists20.png[Auto activation key for code completion,pdfwidth=40%]
+

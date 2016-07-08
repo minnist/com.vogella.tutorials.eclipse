@@ -43,10 +43,10 @@
 			, is created.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/databinding/TagTreeListProperty.java" />
-			</programlisting>
+[source,java]
+----
+include::res/databinding/TagTreeListProperty.java[]
+----
 		
 		
 			To keep track on changes, which are rendered by a
@@ -60,8 +60,8 @@
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/databinding/DelegatingObservableCellLabelProvider.java" />
-			</programlisting>
+					href="../examples/databinding/DelegatingObservableCellLabelProvider.java[]
+----
 		
 		
 			To provide the right values for the different model elements
@@ -80,22 +80,22 @@
 			can be changed accordingly.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/databinding/DelegatingLabelProperty.java" />
-			</programlisting>
+[source,java]
+----
+include::res/databinding/DelegatingLabelProperty.java[]
+----
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/databinding/DelegatingDescriptionProperty.java" />
-			</programlisting>
+[source,java]
+----
+include::res/databinding/DelegatingDescriptionProperty.java[]
+----
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/databinding/TagOverviewPart.java" />
-			</programlisting>
+[source,java]
+----
+include::res/databinding/TagOverviewPart.java[]
+----
 		
 	
 
@@ -105,7 +105,7 @@
 			Start your application and ensure that the data is displayed
 			correctly in the tree.
 		
-		<note>
+		NOTE:
 			
 				Currently the selection of the tree is not sent to the
 				TodoDetailsPart. This will be implemented in

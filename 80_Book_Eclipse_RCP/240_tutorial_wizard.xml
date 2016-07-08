@@ -24,12 +24,12 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/wizards/TodoWizardPage1.java" />
-			</programlisting>
+[source,java]
+----
+include::res/wizards/TodoWizardPage1.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				As you create this instance of the
 				`TodoDetailsPart`
@@ -56,10 +56,10 @@
 			
 		</warning>
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/wizards/TodoWizardPage2.java" />
-			</programlisting>
+[source,java]
+----
+include::res/wizards/TodoWizardPage2.java[]
+----
 		
 
 		
@@ -75,10 +75,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/wizards/TodoWizard.java" />
-			</programlisting>
+[source,java]
+----
+include::res/wizards/TodoWizard.java[]
+----
 		
 
 	
@@ -103,13 +103,13 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/wizards/ModifyListener.java" />
-			</programlisting>
+[source,java]
+----
+include::res/wizards/ModifyListener.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				You could also add similar listeners to your
 				check button
@@ -132,10 +132,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/wizards/NewTodoHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/wizards/NewTodoHandler.java[]
+----
 
 		
 	
@@ -159,7 +159,7 @@
 			
 		</warning>
 
-		<note>
+		NOTE:
 			
 				In
 				<xref linkend="part_eventbroker" />

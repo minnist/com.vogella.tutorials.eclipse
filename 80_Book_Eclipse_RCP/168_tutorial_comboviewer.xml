@@ -87,8 +87,8 @@ image::tododeletepart10.png" scale="60[ComboViewer example screenshot,pdfwidth=6
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/viewer/TodoDeletionPart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/viewer/TodoDeletionPart.java[]
+----
 		
 
 		<tip>
@@ -105,7 +105,7 @@ image::tododeletepart10.png" scale="60[ComboViewer example screenshot,pdfwidth=6
 				`Todo`
 				are
 				correct (they should be based on the
-				<parameter>id</parameter>
+				_id_
 				field, see
 				<xref linkend="services_todo_tostringhashcode" />
 				).

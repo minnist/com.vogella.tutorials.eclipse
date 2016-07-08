@@ -172,8 +172,8 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/personpojo/View.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/personpojo/View.java[]
+----
 		
 
 
@@ -191,8 +191,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/widgetProperties.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/widgetProperties.java[]
+----
 		
 
 		
@@ -245,16 +245,16 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/ModelObject.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/ModelObject.java[]
+----
 		
 		Other domain classes could extend this class. The following
 			example demonstrates that.
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Person.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Person.java[]
+----
 		
 	
 
@@ -268,8 +268,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/writable/Person.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/writable/Person.java[]
+----
 		
 	
 
@@ -284,11 +284,11 @@
 			use data binding for a
 			uni-directional binding.
 			For example, you can connect the
-			<parameter>text</parameter>
+			_text_
 			property of a SWT
 			`Text`
 			field to the
-			<parameter>summary</parameter>
+			_summary_
 			field of a
 			`Todo`
 			object, even if Todo cannot be observed.

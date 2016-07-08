@@ -63,7 +63,7 @@
 		</mediaobject>
 	
 	This results in a history without the bad commit. 
-	<note>
+	NOTE:
 		
 			You can do the same with interactive rebase.
 		

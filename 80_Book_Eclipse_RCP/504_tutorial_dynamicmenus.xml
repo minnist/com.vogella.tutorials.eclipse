@@ -27,10 +27,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dynamicmenu/PrintMessageHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dynamicmenu/PrintMessageHandler.java[]
+----
 		
 	
 
@@ -41,10 +41,10 @@
 			in your application plug-in.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dynamicmenu/DynamicMenuEntries.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dynamicmenu/DynamicMenuEntries.java[]
+----
 		
 	
 

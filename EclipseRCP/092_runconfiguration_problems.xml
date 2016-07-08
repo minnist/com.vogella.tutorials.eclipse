@@ -81,7 +81,7 @@
 							<entry>Strange behavior but no error message.</entry>
 							<entry>
 								Check if your run configuration includes the
-								<parameter>-consoleLog</parameter>
+								_-consoleLog_
 								parameter.
 								This
 								option allows you to see errors from Eclipse
@@ -149,7 +149,7 @@
 									flag on the
 									_Main_
 									tab in your run configuration or add the
-									<parameter>clearPersistedState</parameter>
+									_clearPersistedState_
 									parameter for your product configuration file or run
 									configuration.
 								
@@ -250,8 +250,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/launchproblems/dependency.txt" />
-			</programlisting>
+					parse="text" href="./examples/launchproblems/dependency.txt[]
+----
 		
 
 

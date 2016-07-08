@@ -47,7 +47,7 @@
 			so that it writes, "Soon, I will really delete your todo".
 		
 
-		<note>
+		NOTE:
 			
 				You will change the
 				`RemoveTodoHandler`

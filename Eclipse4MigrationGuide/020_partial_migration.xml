@@ -2,11 +2,7 @@
 == Using e4 API in 3.x applications
 
 === Using e4 API based components in a 3.x applications
-		<indexterm>
-			<primary>Migration</primary>
-			<secondary>Eclipse 3.x RCP application
-			</secondary>
-		</indexterm>
+
 		
 			It is possible to define new e4 API based components and use them in an application which still uses the
 			Eclipse 3.x

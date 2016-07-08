@@ -25,8 +25,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle.properties" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle.properties[]
+----
 		
 		
 			Create at least one additional translation file for another language. For example, if English is your default
@@ -71,7 +71,7 @@ image::exercise_appmodel_translation10.png[Using the translation keys in the app
 			launch
 			configuration by
 			using the
-			<parameter class="option">-nl</parameter>
+			<parameter class="option">-nl_
 			start parameter as described in
 			<xref linkend="i18n_nlparameter" />
 		

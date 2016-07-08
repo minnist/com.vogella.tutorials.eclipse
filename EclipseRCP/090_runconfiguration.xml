@@ -92,11 +92,11 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 			_Arguments_
 			tab. By default Eclipse includes already several parameters, e.g.
 			parameters for
-			<parameter>-os</parameter>
+			_-os_
 			,
-			<parameter>-ws</parameter>
+			_-ws_
 			and
-			<parameter>-arch</parameter>
+			_-arch_
 			to specify the architecture on which
 			the application is running.
 		
@@ -111,7 +111,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 				As
 				example,
 				if you add the argument
-				<parameter>-Dmy.product.loglevel=INFO</parameter>
+				_-Dmy.product.loglevel=INFO_
 				, you can get the "INFO" value with
 				`System.getProperties("my.product.loglevel")`
 				.
@@ -134,7 +134,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 				<tbody>
 					<row>
 						<entry>
-							<parameter class='option'>consoleLog</parameter>
+							<parameter class='option'>consoleLog_
 						</entry>
 						<entry>
 							Error messages of the running
@@ -151,7 +151,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 					</row>
 					<row>
 						<entry>
-							<parameter class='option'>nl</parameter>
+							<parameter class='option'>nl_
 						</entry>
 						<entry>
 							
@@ -168,7 +168,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 							
 							
 								For example
-								<parameter class='option'>-nl en</parameter>
+								<parameter class='option'>-nl en_
 								starts your application using the
 								English language. This is
 								useful
@@ -178,7 +178,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 					</row>
 					<row>
 						<entry>
-							<parameter class='option'>console</parameter>
+							<parameter class='option'>console_
 						</entry>
 						<entry>Provides access to an
 							OSGi
@@ -189,7 +189,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 					</row>
 					<row>
 						<entry>
-							<parameter class='option'>noExit</parameter>
+							<parameter class='option'>noExit_
 						</entry>
 						<entry>Keeps the OSGi console open
 							even if the
@@ -202,7 +202,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 					</row>
 					<row>
 						<entry>
-							<parameter class='option'>clearPersistedState</parameter>
+							<parameter class='option'>clearPersistedState_
 						</entry>
 						<entry>Deletes cached runtime changes of the Eclipse 4 application
 							model.

@@ -50,8 +50,8 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/activator.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/activator.java[]
+----
 		
 		
 			If you do not have an
@@ -66,8 +66,8 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/getBundleContext.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/getBundleContext.java[]
+----
 		
 	
 
@@ -89,8 +89,8 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 		 To publish a service in your bundle use: 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/register.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/register.java[]
+----
 		
 
 		
@@ -104,8 +104,8 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/unregisterservice.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/unregisterservice.java[]
+----
 		
 
 		
@@ -139,8 +139,8 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/getservice.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/getservice.java[]
+----
 		
 	
 

@@ -40,8 +40,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/perspectives/PerspectiveSwitchHandler.java" />
-			</programlisting>
+					href="../examples/perspectives/PerspectiveSwitchHandler.java[]
+----
 		
 		
 			Create or update a

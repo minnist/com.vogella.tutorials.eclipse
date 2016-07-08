@@ -13,8 +13,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/delete/RemoveTodoHandler.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/delete/RemoveTodoHandler.java[]
+----
 		
 	
 
@@ -33,7 +33,7 @@
 			`Todo`
 			is not available anymore.
 		
-		<note>
+		NOTE:
 			
 				Currently your parts are not reacting to changes in your data
 				model

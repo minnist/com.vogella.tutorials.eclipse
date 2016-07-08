@@ -36,8 +36,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options.txt[]
+----
 		
 		
 			You can use the corresponding preference dialog to find the values
@@ -48,7 +48,7 @@
 		
 			Finally, you need to enable the tracing mechanism by starting
 			Eclipse with the
-			<parameter>-debug</parameter>
+			_-debug_
 			command line argument. You
 			can optionally
 			specify the location of the options file as a URL or a
@@ -59,8 +59,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/run.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/run.txt[]
+----
 		
 		
 			For example the
@@ -76,15 +76,15 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/extract.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/extract.txt[]
+----
 		
 
 		The following is another example for an .option file in which you trace the resources.
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options_resources.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options_resources.txt[]
+----
 		
 
 

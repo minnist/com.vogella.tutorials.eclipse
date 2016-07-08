@@ -1,6 +1,6 @@
 <chapter>
 == Exercise: Using more viewer functionality
-	<note>
+	NOTE:
 		The following exercise is optional.
 	</note>
 	<section>
@@ -21,8 +21,8 @@ image::jfacetable_filterbox10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/viewer/filter.java" />
-			</programlisting>
+					parse="text" href="./examples/viewer/filter.java[]
+----
 		
 
 	
@@ -31,7 +31,7 @@ image::jfacetable_filterbox10.png"
 === Sort the table based on summary
 		
 			Ensure that the table is sorted by the
-			<parameter>summary</parameter>
+			_summary_
 			column.
 		
 		

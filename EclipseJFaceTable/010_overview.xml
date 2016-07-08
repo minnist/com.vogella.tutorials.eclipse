@@ -24,8 +24,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/viewer.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/viewer.java[]
+----
 		
 
 
@@ -91,8 +91,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/contentprovider.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/contentprovider.java[]
+----
 		
 	
 
@@ -146,8 +146,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/columns.txt" />
-			</programlisting>
+					parse="text" href="./examples/snippets/columns.txt[]
+----
 		
 		
 			The above code uses two fields which contain
@@ -162,8 +162,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/columnshelper.txt" />
-			</programlisting>
+					parse="text" href="./examples/snippets/columnshelper.txt[]
+----
 		
 
 	
@@ -203,8 +203,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/listener.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/listener.java[]
+----
 		
 
 

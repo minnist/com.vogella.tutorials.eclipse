@@ -59,25 +59,25 @@
 		Enter the URL to your Git repository. Git supports
 		several protocols,
 		e.g.
-		<parameter>git://</parameter>
+		_git://_
 		,
-		<parameter>ssh://</parameter>
+		_ssh://_
 		and
-		<parameter>https://</parameter>
+		_https://_
 		.
 		You only have to paste the URL to the first line of the dialog, the
 		rest will be filled out automatically.
 	
-	<note>
+	NOTE:
 		
 			Some proxy servers block the
-			<parameter>git://</parameter>
+			_git://_
 			and
-			<parameter>ssh://</parameter>
+			_ssh://_
 			protocols. If you face issues, please try to use the
-			<parameter>https://</parameter>
+			_https://_
 			or
-			<parameter>http://</parameter>
+			_http://_
 			protocol.
 		
 	</note>

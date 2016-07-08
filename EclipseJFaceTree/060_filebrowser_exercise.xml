@@ -84,8 +84,8 @@ image::filebrowser_exercise10.png"
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/filebrowser/FileBrowserPart.java" />
-			</programlisting>
+					parse="text" href="./examples/filebrowser/FileBrowserPart.java[]
+----
 		
 		Link
 			from your part in the application model to your new class.

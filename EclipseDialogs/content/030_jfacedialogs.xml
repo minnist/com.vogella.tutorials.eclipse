@@ -16,7 +16,7 @@
 			building custom
 			dialogs.
 		
-		<note>
+		NOTE:
 			Even though JFace dialogs are not native, they follow the
 				native platform semantics for things like the button
 				order.
@@ -48,8 +48,8 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialogStandardjava" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialogStandardjava[]
+----
 		
 	
 
@@ -67,8 +67,8 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialog.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialog.java[]
+----
 		
 
 		If you open this dialog, it looks similar to the following
@@ -91,8 +91,8 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MessageDialog1.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MessageDialog1.java[]
+----
 		
 	
 
@@ -120,8 +120,8 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/ShowErrorDialogHandler.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/ShowErrorDialogHandler.java[]
+----
 		
 
 		If you trigger this handler, the dialog shows the exception
@@ -166,8 +166,8 @@ image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyDialog.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyDialog.java[]
+----
 		
 		<tip>
 			
@@ -212,8 +212,8 @@ image::jface_customdialog02.png[Custom dialog,pdfwidth=60%]
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyTitleAreaDialog.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyTitleAreaDialog.java[]
+----
 		
 		This dialog is depicted in the following screenshot.
 		
@@ -227,8 +227,8 @@ image::jface_customdialog20.png[Custom dialog,pdfwidth=60%]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/OpenMyDialog.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/OpenMyDialog.java[]
+----
 		
 	
 

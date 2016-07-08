@@ -10,7 +10,7 @@
 		. The update site
 		for the
 		SWTBot
-		is: <parameter>http://download.eclipse.org/technology/swtbot/releases/latest/</parameter>
+		is: _http://download.eclipse.org/technology/swtbot/releases/latest/_
 	
 	
 		Install the

@@ -54,8 +54,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodo.java[]
+----
 		
 		
 			Export the
@@ -98,10 +98,10 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodoObjectSupplier.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodoObjectSupplier.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				The
 				`ExtendedObjectSupplier`
@@ -147,8 +147,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ParameterDirectTodo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ParameterDirectTodo.java[]
+----
 		
 		
 			Start your application (via the product as you added a new

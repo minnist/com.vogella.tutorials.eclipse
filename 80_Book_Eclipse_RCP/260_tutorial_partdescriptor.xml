@@ -6,8 +6,8 @@
 		Create the following new class.
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/dynamics/DynamicPart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/dynamics/DynamicPart.java[]
+----
 		
 	
 
@@ -18,7 +18,7 @@
 			model element
 			in your application model using
 			the
-			<parameter>com.example.e4.rcp.todo.partdescriptor.dynamic</parameter>
+			_com.example.e4.rcp.todo.partdescriptor.dynamic_
 			ID. In the
 			_Class URI_
 			field point to your new
@@ -30,7 +30,7 @@ image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
 		
 		
 			The
-			<parameter>Multiple</parameter>
+			_Multiple_
 			attribute should be flagged.
 		
 	
@@ -50,8 +50,8 @@ image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/dynamics/DynamicPartHandler.java" />
-			</programlisting>
+					href="../examples/dynamics/DynamicPartHandler.java[]
+----
 		
 		
 			Add a new menu called
@@ -68,7 +68,7 @@ image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
 			and display
 			new
 			parts. As you have set the
-			<parameter>Multiple</parameter>
+			_Multiple_
 			flag on the part descriptor, you can also open multiple instances of
 			the part.
 		

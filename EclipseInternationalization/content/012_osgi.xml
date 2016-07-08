@@ -21,7 +21,7 @@
 		_OSGI-INF/l10n/bundle_
 		is the default location and file prefix which the Eclipse translation service is using.
 		Via the
-		<parameter>Bundle-Localization</parameter>
+		_Bundle-Localization_
 		attribute in the
 		manifest
 		file, you can specify an alternative location for the bundle resources. The usage of this

@@ -81,7 +81,7 @@
 			class from the
 			`org.osgi.framework`
 			package defines the
-			<parameter>service.ranking</parameter>
+			_service.ranking_
 			value via the
 			`Constants.SERVICE_RANKING`
 			constant. This constant can be used to

@@ -1,6 +1,6 @@
 
 == Exercise: Contribute a preference page to the Eclipse IDE
-	<note>
+	NOTE:
 		
 			This exercise is specific to the Eclipse IDE and will not work for Eclipse 4 RCP applications. See
 			https://github.com/opcoach/e4Preferences"> for an Eclipse 4 implementation.

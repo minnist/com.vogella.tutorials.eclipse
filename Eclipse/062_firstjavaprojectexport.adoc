@@ -82,20 +82,14 @@ file to the classpath with the
 _-classpath_
 option.
 		
+[source,txt]
+----
+include::res/firstexample/run.txt[]
+----
 		
-<programlisting>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="../examples/firstexample/run.txt" />
-</programlisting>
-		
-		 Type the above command in the directory you used for the export
+Type the above command in the directory you used for the export
 and you see the "Hello Eclipse!" output in your
 command shell.
 		
+image::firstgany120.gif[Running application outside Eclipse,pdfwidth=60%]
 		
-<mediaobject>
-	<imageobject>
-		<imagedata scale="50" fileref="images/firstgany120.gif[Running application outside Eclipse,pdfwidth=60%]
-		
-
-	

@@ -23,8 +23,8 @@ image::SNAG-0032.gif" format="gif" />
 			the dataset. Change the open Script of our dataset into this.
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/javascript/newopen.script" />
-			</programlisting>
+					parse="text" href="../examples/javascript/newopen.script[]
+----
 		
 		 Test your report by clicking on the preview tab. You can change
 			the parameter via the button "Show Report Parameter".

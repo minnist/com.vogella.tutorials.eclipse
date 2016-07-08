@@ -45,7 +45,7 @@
 			re-used and as this approach is officially not supported, it is hard to predict which
 			issues are encountered.
 		
-		<note>
+		NOTE:
 			
 				The difference to
 				<xref linkend="partialmigration" />

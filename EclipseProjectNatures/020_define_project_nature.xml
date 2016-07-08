@@ -28,10 +28,10 @@ Version 0.3, 06.07.2016
 		</programlisting>
     
     
-        <note>
+        NOTE:
             The acutal id of a project nature consists of the
-                    <parameter>Bundle-SymbolicName</parameter> + <parameter>id</parameter>, which is
-                defined for the extension point. See <parameter>NATURE_ID</parameter> in
+                    _Bundle-SymbolicName_ + _id_, which is
+                defined for the extension point. See _NATURE_ID_ in
                     `ExampleProductNature`.
         </note>
     
@@ -48,7 +48,7 @@ Version 0.3, 06.07.2016
     <section>
         <title>Get and set a Project Natures
         Every `IProject` has an `IProjectDescription`, which contains
-            all <parameter>natureIds</parameter>.
+            all _natureIds_.
         
             <programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/GetAndSetProjectNatures.java"/>
@@ -67,7 +67,7 @@ Version 0.3, 06.07.2016
         
         Here you can see that a `PropertyTester` for project natures is already
             available and you can use the
-                <parameter>org.eclipse.core.resources.projectNature</parameter> property to check
+                _org.eclipse.core.resources.projectNature_ property to check
             for a certain project nature.
     
 

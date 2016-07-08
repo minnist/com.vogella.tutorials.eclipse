@@ -48,8 +48,8 @@
 			start the build like the following:
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/build_release.txt" />
-			</programlisting>
+					parse="text" href="./examples/extras/build_release.txt[]
+----
 		
 		<warning>
 			
@@ -86,8 +86,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/buildid.txt" />
-			</programlisting>
+					parse="text" href="./examples/extras/buildid.txt[]
+----
 		
 
 	
@@ -105,11 +105,11 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/build-individual-bundles.txt" />
-			</programlisting>
+					parse="text" href="./examples/extras/build-individual-bundles.txt[]
+----
 		
 
-		<note>
+		NOTE:
 			Unfortunately while there
 				are numerous bundles for which the
 				build succeed with this method, there are a
@@ -135,7 +135,7 @@
 			natives by passing the -Dnative pointing to the build.
 			For
 			example the
-			<parameter>-Dnative=gtk.linux.x86_64</parameter>
+			_-Dnative=gtk.linux.x86_64_
 			parameter in
 			the
 			case of Linux. List of options available at

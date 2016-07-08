@@ -6,10 +6,10 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/editor/EditorPartSave.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/editor/EditorPartSave.java[]
+----
 		
-		<note>
+		NOTE:
 			You could also specify a parameter for your command with the id of the todo item should be saved and pass that
 				as value for the parameter in the handler.
 			
@@ -59,11 +59,11 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/handler/TodoDeletionPart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/handler/TodoDeletionPart.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				The handler and command service have not been
 				released as official API. See

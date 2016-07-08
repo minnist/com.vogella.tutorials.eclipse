@@ -60,10 +60,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/model/dirty.java" />
-			</programlisting>
+[source,java]
+----
+include::res/model/dirty.java[]
+----
 		
 
 		
@@ -78,12 +78,12 @@
 			successful.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/dirty/persists.java" />
-			</programlisting>
+[source,java]
+----
+include::res/dirty/persists.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				Every part is responsible for saving itself. Hence every
 				part which
@@ -131,10 +131,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/partservice/SaveHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/partservice/SaveHandler.java[]
+----
 		
 
 

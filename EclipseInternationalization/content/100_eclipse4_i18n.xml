@@ -10,10 +10,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/Message.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/Message.java[]
+----
 		
 
 		
@@ -25,10 +25,10 @@
 			plug-in contains the annotations which are used for translations.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/Usage.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/Usage.java[]
+----
 		
 		To find the property files for the key/value pairs, if searches
 			for property files based on the rules described
@@ -116,7 +116,7 @@
 						parse="text" href="../examples/eclipse4/MessagePlaceholder.java" />
 				</programlisting>
 			
-			<note>
+			NOTE:
 				
 					`@PostConstruct`
 					does not support parameter
@@ -139,7 +139,7 @@
 			The Eclipse runtime supports a dynamic switch of this locale at
 			runtime.
 		
-		<note>
+		NOTE:
 			
 				The type of the
 				`TranslationService.LOCALE`
@@ -165,10 +165,10 @@
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/TranslationPart.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/TranslationPart.java[]
+----
 		
 		
 			To change the active
@@ -178,19 +178,19 @@
 			used as part of a tool control.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/SwitchLanguageToolControl.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/SwitchLanguageToolControl.java[]
+----
 		
 
 		To get notified you can use dependency injection.
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/Notification.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/Notification.java[]
+----
 		
 
 	
@@ -227,10 +227,10 @@
 			object injected.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/eclipse4/MessagesRegistry.java" />
-			</programlisting>
+[source,java]
+----
+include::res/eclipse4/MessagesRegistry.java[]
+----
 		
 		
 			Because the
@@ -246,8 +246,8 @@
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/eclipse4/MessagesRegistryExamplePartWithoutJava8.java" />
-			</programlisting>
+					href="../examples/eclipse4/MessagesRegistryExamplePartWithoutJava8.java[]
+----
 		
 		By using Java 8 registering controls looks better and is even
 			shorter.
@@ -256,8 +256,8 @@
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/eclipse4/MessagesRegistryExamplePartWithJava8.java" />
-			</programlisting>
+					href="../examples/eclipse4/MessagesRegistryExamplePartWithJava8.java[]
+----
 		
 	
 

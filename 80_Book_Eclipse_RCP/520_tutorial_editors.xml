@@ -22,10 +22,10 @@
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/editor/OpenEditorHandlerFirst.java" />
-			</programlisting>
+[source,java]
+----
+include::res/editor/OpenEditorHandlerFirst.java[]
+----
 		
 
 		
@@ -68,10 +68,10 @@ image::openneweditor20.png[Validate PartStack ID,pdfwidth=60%]
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/editor/EditorPart.java" />
-			</programlisting>
+[source,java]
+----
+include::res/editor/EditorPart.java[]
+----
 		
 		
 			Create a part descriptor in the application model, where this
@@ -115,10 +115,10 @@ image::openneweditor20.png[Validate PartStack ID,pdfwidth=60%]
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/editor/OpenEditorHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/editor/OpenEditorHandler.java[]
+----
 		
 
 

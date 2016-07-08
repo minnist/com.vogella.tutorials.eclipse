@@ -23,7 +23,7 @@ Version 0.3, 06.07.2016
 			char, which is currently in the work queue.
 		
 		
-			<note>
+			NOTE:
 				
 					This exercise is based on
 					<ulink
@@ -58,11 +58,11 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleDebugElement.java" />
-			</programlisting>
+					parse="text" href="./examples/ExampleDebugElement.java[]
+----
 		
 		
-			<note>
+			NOTE:
 				
 					A custom model identifier may also be used. This means it is
 					not
@@ -89,8 +89,8 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleStackFrame.java" />
-			</programlisting>
+					parse="text" href="./examples/ExampleStackFrame.java[]
+----
 		
 		
 			For convenience most of the actions in the ExampleStackFrame are
@@ -134,8 +134,8 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleThread.java" />
-			</programlisting>
+					parse="text" href="./examples/ExampleThread.java[]
+----
 		
 	
 
@@ -160,8 +160,8 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleDebugTarget.java" />
-			</programlisting>
+					parse="text" href="./examples/ExampleDebugTarget.java[]
+----
 		
 	
 

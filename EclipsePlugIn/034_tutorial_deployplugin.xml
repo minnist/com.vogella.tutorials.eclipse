@@ -82,7 +82,7 @@ image::idepluginfeatureinstall30.png"/>
 			</mediaobject>
 		
 
-		<note>
+		NOTE:
 			If you put the resulting files on a webserver under a public
 				accessible URL, your users could
 				install your

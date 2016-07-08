@@ -18,7 +18,7 @@ image::firstemfproject10.png" />
 			Enter
 			_webpage.ecore_
 			as the
-			<parameter>Domain File Name</parameter>
+			_Domain File Name_
 			parameter.
 		
 		
@@ -83,7 +83,7 @@ image::firstemfproject50.png" />
 			_Attribute_
 			node to assign the attribute
 			called
-			<parameter>name</parameter>
+			_name_
 			to each object
 			. This attribute should have the
 			`EString`
@@ -98,11 +98,11 @@ image::firstemfproject60.png" />
 
 		
 			Add the
-			<parameter>title</parameter>
+			_title_
 			,
-			<parameter>description</parameter>
+			_description_
 			and
-			<parameter>keywords</parameter>
+			_keywords_
 			attributes
 			to the
 			_Web_
@@ -121,13 +121,13 @@ image::firstemfproject70.png" />
 			`Datatype`
 			and drag it into your model.
 			Assign the name
-			<parameter>Calendar</parameter>
+			_Calendar_
 			to it. Use
 			`java.util.Calendar`
 			as type parameter.
 			Add a new
 			Attribute called
-			<parameter>created</parameter>
+			_created_
 			to
 			`Article`
 			and use your
@@ -200,7 +200,7 @@ image::model96.png" />
 			node. Set the
 			<property>base package</property>
 			property to
-			<parameter>de.vogella.emf.webpage.model</parameter>
+			_de.vogella.emf.webpage.model_
 			.
 		
 

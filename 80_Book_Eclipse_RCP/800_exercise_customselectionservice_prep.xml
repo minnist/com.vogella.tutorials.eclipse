@@ -2,7 +2,7 @@
 == Optional exercise: Using the selection service
 
 === Create project and use the Eclipse selection service
-		<note>
+		NOTE:
 			This exercise is optional.
 		</note>
 		
@@ -18,8 +18,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/ListenerPartFirst.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/ListenerPartFirst.java[]
+----
 		
 		
 			Adjust your
@@ -29,8 +29,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/SamplePartFirst.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/SamplePartFirst.java[]
+----
 		
 		Start your application and ensure the text entered in the first
 			part is propagated to the second part.
@@ -53,8 +53,8 @@ image::CustomSelectionService_twoPerspectives10.png"
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="./examples/replaceselectionservice/SwitchPerspectiveHandler.java" />
-			</programlisting>
+					href="./examples/replaceselectionservice/SwitchPerspectiveHandler.java[]
+----
 		
 
 		

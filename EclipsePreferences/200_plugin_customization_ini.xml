@@ -18,7 +18,7 @@
 		Such a file needs
 		to
 		be registered via the
-		<parameter>preferenceCustomization</parameter>
+		_preferenceCustomization_
 		property on the product extension point in the
 		_plugin.xml_
 		file. This is demonstrated in the following screenshot.
@@ -41,7 +41,7 @@
 		`<![CDATA[<plugin id>/<setting>=<value>]]>`
 		,
 		e.g.
-		<parameter>com.example.e4.rcp.todo/user=vogella</parameter>
+		_com.example.e4.rcp.todo/user=vogella_
 		.
 	
 	<tip>

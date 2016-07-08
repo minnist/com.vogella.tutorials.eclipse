@@ -81,8 +81,8 @@ image::help10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ApplicationActionBarAdvisor.java" />
-			</programlisting>
+					parse="text" href="./examples/ApplicationActionBarAdvisor.java[]
+----
 		
 		 Now you can call the help search and the context sensitive
 			help. To define the targets for the context sensitive search create a
@@ -110,8 +110,8 @@ image::help10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/assign.txt" />
-			</programlisting>
+					parse="text" href="./examples/assign.txt[]
+----
 		
 
 	

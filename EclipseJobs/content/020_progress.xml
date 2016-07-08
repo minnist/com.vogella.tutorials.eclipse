@@ -30,8 +30,8 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitor.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitor.java[]
+----
 		
 
 		
@@ -63,8 +63,8 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitorCondition.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitorCondition.java[]
+----
 		
 
 		
@@ -88,8 +88,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/jobs/monitorLoopRemainingWork.java" />
-			</programlisting>
+					href="../examples/jobs/monitorLoopRemainingWork.java[]
+----
 		
 
 		
@@ -127,8 +127,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/progressbar/ProgressMonitorControl.java" />
-			</programlisting>
+					href="../examples/progressbar/ProgressMonitorControl.java[]
+----
 		
 
 
@@ -140,8 +140,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/progressbar/setProgressMonitor.java" />
-			</programlisting>
+					href="../examples/progressbar/setProgressMonitor.java[]
+----
 		
 
 		<tip>

@@ -33,7 +33,7 @@ Version 0.3, 06.07.2016
     So in case the `com.example.project.examplenature` project nature is applied to
         a project, this decorator will also be shown.
     
-        <note>
+        NOTE:
             The size of the image 8x8 is recommended in order to look nice.
         </note>
     

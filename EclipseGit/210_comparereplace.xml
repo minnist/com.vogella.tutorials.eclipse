@@ -2,11 +2,7 @@
 == Comparing and replacing files based on the Git history
 
 === Comparing files
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>compare files
-			</secondary>
-		</indexterm>
+
 		
 			Eclipse Git allows you to compare a selected file, folder or
 			project
@@ -27,11 +23,7 @@ image::egit_compare10.png[Compare,pdfwidth=60%]
 	
 
 === Replacing files
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>replace files
-			</secondary>
-		</indexterm>
+
 		
 			The
 			menu:Team[Replace with]

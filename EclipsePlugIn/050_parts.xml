@@ -39,13 +39,13 @@
 		
 		
 			If you use the
-			<parameter>org.eclipse.e4.legacy.ide.application</parameter>
+			_org.eclipse.e4.legacy.ide.application_
 			ID to contribute your part descriptors, the views can be opened via the
 			menu:Window[Show View > Other...]
 			dialog or via the
 			_Quick Access_
 			. This requires that you add the
-			<parameter>View</parameter>
+			_View_
 			tag to such a part descriptor.
 		
 		Eclipse 3.x API RCP applications running on
@@ -66,7 +66,7 @@
 			add a perspective via
 			a snippet. This snippet must again contribute to the application via
 			the
-			<parameter>org.eclipse.e4.legacy.ide.application</parameter> ID.
+			_org.eclipse.e4.legacy.ide.application_ ID.
 		
 		This approach can also be used to contribute a perspective to
 			your Eclipse 3.x API based RCP application running

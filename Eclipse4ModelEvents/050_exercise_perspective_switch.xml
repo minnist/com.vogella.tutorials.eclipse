@@ -76,8 +76,8 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspective_switch_exercise.java" />
-			</programlisting>
+					href="./examples/perspective_switch_exercise.java[]
+----
 		
 	
 	<section>

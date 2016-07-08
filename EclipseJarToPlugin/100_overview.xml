@@ -23,7 +23,7 @@
 		<xref linkend="jartoplugin" />
 		.
 	
-	<note>
+	NOTE:
 		If you repackage a JAR into a plug-in it is wise to check if
 			the
 			license allows this. You should also try to

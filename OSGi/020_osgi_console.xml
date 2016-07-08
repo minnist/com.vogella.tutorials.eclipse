@@ -55,12 +55,12 @@
 						<row>
 							<entry>
 								ss
-								<parameter>vogella</parameter>
+								_vogella_
 							</entry>
 							<entry>
 								Lists bundles and their status
 								that have
-								<parameter>vogella</parameter>
+								_vogella_
 								within
 								their name.
 							</entry>
@@ -68,29 +68,29 @@
 						<row>
 							<entry>
 								start
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>
 								Starts the bundle with the
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 								ID.
 							</entry>
 						</row>
 						<row>
 							<entry>
 								stop
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>
 								Stops the bundle with the
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 								ID.
 							</entry>
 						</row>
 						<row>
 							<entry>
 								diag
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>Diagnoses a particular bundle. It lists all missing
 								dependencies.
@@ -99,29 +99,29 @@
 						<row>
 							<entry>
 								install
-								<parameter>URL</parameter>
+								_URL_
 							</entry>
 							<entry>Installs a bundle from a URL.</entry>
 						</row>
 						<row>
 							<entry>
 								uninstall
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>
 								Uninstalls the bundle with the
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 								ID.
 							</entry>
 						</row>
 						<row>
 							<entry>
 								bundle
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>
 								Shows information about the bundle with the
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 								ID,
 								including the
 								registered
@@ -131,7 +131,7 @@
 						<row>
 							<entry>
 								headers
-								<parameter><![CDATA[<bundle-id>]]></parameter>
+								_<![CDATA[<bundle-id>]]>_
 							</entry>
 							<entry>
 								Shows the MANIFST.MF information for a bundle.
@@ -140,7 +140,7 @@
 						<row>
 							<entry>
 								services
-								<parameter>filter</parameter>
+								_filter_
 							</entry>
 							<entry>
 								Shows all available services and their consumer. Filter is
@@ -186,7 +186,7 @@
 === Telnet
 		
 			If you specify the
-			<parameter>-console</parameter>
+			_-console_
 			parameter in your launch configuration Eclipse will allow you to
 			interact with the OSGi console. An OSGi launch
 			configuration created
@@ -197,7 +197,7 @@
 			port to which you can connect via the telnet protocol.
 		
 		
-			<parameter>-console 5555</parameter>
+			_-console 5555_
 		
 		
 			If you open a

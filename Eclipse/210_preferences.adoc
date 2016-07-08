@@ -1,0 +1,86 @@
+== Eclipse preference settings
+
+=== What are preferences?
+
+The behavior of the Eclipse IDE can be controlled via key value pairs
+stores as
+_preference_
+settings. Each Eclipse software component can define such perferences
+and use the values to configure itself. This allows you for example
+to configure how long the Eclipse waits before the code completion
+or if the import statements in your source code should be
+automatically adjusted if you save your source code.
+
+Which preferences are key values stored on the file system, the
+Eclipse IDE allows the user to configure most of these values via the
+preference dialog.
+
+=== Opening the preference dialog
+
+Select
+menu:Window[Preferences]
+to open the preference dialog. You can use the filter box
+to
+search for
+specific settings.
+
+image::preferencesettings17.png[Preference settings,pdfwidth=40%]
+
+Correctly configuring Eclipse to your needs can largely improve
+your productivity. Most of these preference
+settings
+are specific to
+your workspace but some are also valid for all workspaces.
+
+=== Configuring the preference values via the plugin_customization.ini file
+
+You can specify default values for preferences via a file which is
+typically called
+_plugin_customization.ini_
+.
+
+In this file you enter default values for preference settings.
+For
+example, the following will setup a default type filter for the
+`java.awt`
+and
+`javax.swing`
+package.
+
+[source,java]
+----
+include::res/preferences/plugin_customization.ini[]
+----
+
+You link to this file via your
+_eclipse.ini_
+file in your Eclipse
+installation directory.
+
+The following example
+_eclipse.ini_
+links to the file and it
+assumes
+that you created the
+_plugin_customization.ini_
+file in the Eclipse installation directory.
+
+[source,txt]
+----
+include::res/preferences/eclipse.ini[]
+----
+
+=== Identifying preference setting values
+
+To identify a key for a certain preference setting you can export
+existing preference settings via the following approach.
+
+* start a new workspace
+* change the preference
+* export all preferences
+* search the key in the exported file
+
+NOTE: You need to remove the scope (e.g., /instance/) before copying it into the
+_plugin_customization.ini_ file.
+
+

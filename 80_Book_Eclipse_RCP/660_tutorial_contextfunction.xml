@@ -92,8 +92,8 @@ image::contextfunction02.png[Dependencies for the Context Function,pdfwidth=60%]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/TodoServiceContextFunction.java" />
-			</programlisting>
+					href="./examples/contextfunction/TodoServiceContextFunction.java[]
+----
 		
 
 	
@@ -127,7 +127,7 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			.
 		
 
-		<note>
+		NOTE:
 			
 				You could leave your OSGi service for the
 				`ITodoService`
@@ -157,8 +157,8 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/MyTodoServiceImpl.java" />
-			</programlisting>
+					href="./examples/contextfunction/MyTodoServiceImpl.java[]
+----
 		
 
 	
@@ -188,8 +188,8 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/NewTodoHandler.java" />
-			</programlisting>
+					href="./examples/contextfunction/NewTodoHandler.java[]
+----
 		
 
 	

@@ -80,9 +80,9 @@
 			and use
 			<property>popup:org.eclipse.jdt.ui.PackageExplorer</property>
 			as the
-			<parameter>locationURI</parameter>
+			_locationURI_
 			. Set the label to
-			<parameter>Create HTML</parameter>
+			_Create HTML_
 			for this contribution.
 		
 		
@@ -124,8 +124,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/htmlconverter/ConvertHandler.java" />
-			</programlisting>
+					href="./examples/htmlconverter/ConvertHandler.java[]
+----
 		
 
 		
@@ -169,7 +169,7 @@ image::html40.gif" scale="60" />
 		
 			For this exercise you use the
 			predefined variable
-			<parameter>activeMenuSelection</parameter>
+			_activeMenuSelection_
 			which contains the selection in the menu and iterate over
 			it. If the
 			selection can get adapted to

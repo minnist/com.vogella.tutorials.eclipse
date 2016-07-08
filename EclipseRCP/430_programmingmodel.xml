@@ -259,7 +259,7 @@
 			that the annotation from the Eclipse platform
 			should be used.
 		
-		<note>
+		NOTE:
 			
 				Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the
 				`javax.annotation`
@@ -277,7 +277,7 @@
 			file. See
 			http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
 		
-		<note>
+		NOTE:
 			
 				`org.eclipse.core.runtime`
 				exports

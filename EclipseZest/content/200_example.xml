@@ -19,8 +19,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/first/View.java" />
-			</programlisting>
+					parse="text" href="../examples/first/View.java[]
+----
 		
 		 Run you application and you should see the graph. 
 
@@ -44,8 +44,8 @@ image::simple10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/first/ChangeLayout.java" />
-			</programlisting>
+					parse="text" href="../examples/first/ChangeLayout.java[]
+----
 		
 
 		Run your application, if you select your command the layout of

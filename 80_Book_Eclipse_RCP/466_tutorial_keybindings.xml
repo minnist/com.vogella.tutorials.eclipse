@@ -56,16 +56,10 @@ image::exercise_keybindings20.png"
 === Create key bindings for a BindingContext
 		
 			Create a key binding for your Save command to the
-			<keycombo>
-				<keycap>M1</keycap>
-				<keycap>S</keycap>
-			</keycombo>
+			kbd:[M1+S]
 			shortcut.
 			Afterwards create a keybinding for your Exit command to the
-			<keycombo>
-				<keycap>M1</keycap>
-				<keycap>X</keycap>
-			</keycombo>
+			kbd:[M1+X]
 			shortcut.
 		
 		The required entries are depicted in the following screenshots.

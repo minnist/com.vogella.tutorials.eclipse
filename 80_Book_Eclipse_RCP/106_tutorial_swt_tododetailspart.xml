@@ -43,13 +43,13 @@ image::tododetails-userinterface.png"
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/focus/onFocus.java" />
-			</programlisting>
+[source,java]
+----
+include::res/focus/onFocus.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				If you forget to put focus on an SWT widget in your method annotated
 				with
@@ -80,10 +80,10 @@ image::tododetails-userinterface.png"
 			exercise as reference for the reader.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/swt/TodoDetailsPart_SWT.java" />
-			</programlisting>
+[source,java]
+----
+include::res/swt/TodoDetailsPart_SWT.java[]
+----
 		
 
 

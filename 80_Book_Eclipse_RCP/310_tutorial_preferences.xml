@@ -44,8 +44,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/preferences/PreferenceConstants.java" />
-			</programlisting>
+					href="../examples/preferences/PreferenceConstants.java[]
+----
 		
 
 
@@ -64,8 +64,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/Manager.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/Manager.java[]
+----
 		
 
 	

@@ -35,8 +35,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/namedfield.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/namedfield.txt[]
+----
 		
 	
 
@@ -166,7 +166,7 @@
 		
 
 
-		<note>
+		NOTE:
 			
 				The Eclipse platform supports additional annotations for
 				special
@@ -269,12 +269,12 @@
 			<xref linkend="context_creationprocess" />
 			.
 		
-		<note>
+		NOTE:
 			
 				This does not mean that Eclipse tracks the fields of the value
 				to
 				which the key points. For example if the
-				<parameter>mykey1</parameter>
+				_mykey1_
 				key points to a
 				`Todo`
 				object as value, and the key points to a new object, this triggers

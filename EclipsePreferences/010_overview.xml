@@ -154,10 +154,10 @@
 		
 			You can configure the storage location of the preferences
 			via the
-			<parameter>-data path</parameter>
+			_-data path_
 			launch parameter in Eclipse. To place the preferences in the user
 			home directory use the
-			<parameter>-data @user.home</parameter>
+			_-data @user.home_
 			parameter setting.
 		
 	
@@ -199,14 +199,14 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/snippets/putconfigurationscope.txt" />
-			</programlisting>
+					href="./examples/snippets/putconfigurationscope.txt[]
+----
 		
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/read.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/read.txt[]
+----
 		
 	
 

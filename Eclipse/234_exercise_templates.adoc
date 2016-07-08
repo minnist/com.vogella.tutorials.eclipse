@@ -1,0 +1,18 @@
+== Exercise: Creating and using template
+
+=== Create template for try/catch/finally
+
+Create a template which creates the following block.
+
+image::tryfinally10.png[Try catch finally template,pdfwidth=60%]
+
+Place the cursor after the first bracket after the
+`try`
+statement.
+
+=== Use template
+
+Test your template in the Java editor and ensure that it works
+as
+expected.
+

@@ -40,8 +40,8 @@ image::dali25.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/model/Person.java" />
-			</programlisting>
+					parse="text" href="../examples/model/Person.java[]
+----
 		
 
 		 Annotate now the class with @Entity (before the class name".

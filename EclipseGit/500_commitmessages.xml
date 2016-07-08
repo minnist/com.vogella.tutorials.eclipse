@@ -51,7 +51,7 @@
 			example the
 			_Gerrit_
 			code review system uses the
-			<parameter>Change-Id</parameter>
+			_Change-Id_
 			key followed by a
 			_change-id_
 			, which does not change across different versions of the same code
@@ -75,8 +75,8 @@
 		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/message.txt" />
-			</programlisting>
+					parse="text" href="./examples/message/message.txt[]
+----
 		
 
 	
@@ -98,8 +98,8 @@
 		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/bad.txt" />
-			</programlisting>
+					parse="text" href="./examples/message/bad.txt[]
+----
 		
 
 
@@ -113,8 +113,8 @@
 		
 			<programlisting language="text">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/good.txt" />
-			</programlisting>
+					parse="text" href="./examples/message/good.txt[]
+----
 		
 		The above example also adds the corresponding bug number to the
 			commit message. Some teams (like the Eclipse platform team) use this

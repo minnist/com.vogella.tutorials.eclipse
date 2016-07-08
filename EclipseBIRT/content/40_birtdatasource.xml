@@ -72,16 +72,16 @@ image::javascript10.gif" format="gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/javascript/open.script" />
-			</programlisting>
+					parse="text" href="../examples/javascript/open.script[]
+----
 		
 		 Place the following coding in the fetch script.
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/javascript/fetch.script" />
-			</programlisting>
+					parse="text" href="../examples/javascript/fetch.script[]
+----
 		
 		 Check if your Script works by doubleclicking
 			on the dataset -> Preview Result.

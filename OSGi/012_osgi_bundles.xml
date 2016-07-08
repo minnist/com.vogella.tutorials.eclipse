@@ -50,8 +50,8 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/bundles/MANIFEST.MF" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/bundles/MANIFEST.MF[]
+----
 		
 
 		
@@ -149,7 +149,7 @@
 						<entry>Bundle-ActivationPolicy</entry>
 						<entry>
 							Setting this to
-							<parameter>lazy</parameter>
+							_lazy_
 							will tell the OSGi runtime that this
 							plug-in should only be
 							activated if one of its components, i.e.
@@ -216,7 +216,7 @@
 === Semantic Versioning with OSGi
 		
 			OSGi recommends to use a
-			<parameter><![CDATA[<major>.<minor>.<patch>]]></parameter>
+			_<![CDATA[<major>.<minor>.<patch>]]>_
 			schema for the
 			version number which is defined via the
 			`Bundle-Version`
@@ -225,20 +225,20 @@
 			<itemizedlist>
 				<listitem>
 					
-						<parameter><![CDATA[<patch>]]></parameter>
+						_<![CDATA[<patch>]]>_
 						is increased if all changes are backwards compatible.
 					
 				</listitem>
 				<listitem>
 					
-						<parameter><![CDATA[<minor>]]></parameter>
+						_<![CDATA[<minor>]]>_
 						is increased if public API has changed but all changes are
 						backwards compatible.
 					
 				</listitem>
 				<listitem>
 					
-						<parameter><![CDATA[<major>]]></parameter>
+						_<![CDATA[<major>]]>_
 						is increased if changes are not backwards compatible.
 					
 				</listitem>

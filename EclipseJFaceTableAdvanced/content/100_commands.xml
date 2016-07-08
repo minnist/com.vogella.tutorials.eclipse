@@ -17,8 +17,8 @@
 		
 			<programlisting  language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/commands/createPartControlSelection.java" />
-			</programlisting>
+					parse="text" href="../examples/commands/createPartControlSelection.java[]
+----
 		
 		
 			Create a
@@ -31,10 +31,10 @@
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/commands/AddPersonDialog.java" />
-			</programlisting>
+[source,java]
+----
+include::res/commands/AddPersonDialog.java[]
+----
 		
 		
 			Create a new
@@ -55,10 +55,10 @@
 			`Viewer`.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/commands/ChangeView.java" />
-			</programlisting>
+[source,java]
+----
+include::res/commands/ChangeView.java[]
+----
 		
 		
 			When you finished this successfully,
@@ -87,10 +87,10 @@
 			`de.vogella.jface.tableviewer.commands.DeletePerson`.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/commands/DeletePerson.java" />
-			</programlisting>
+[source,java]
+----
+include::res/commands/DeletePerson.java[]
+----
 		
 		
 			Please try to delete entries of the table by selection entries
@@ -112,10 +112,10 @@
 			command to the menu.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/commands/CopyPersonClipboard.java" />
-			</programlisting>
+[source,java]
+----
+include::res/commands/CopyPersonClipboard.java[]
+----
 		
 		
 			Run your application, select a few persons, run your command

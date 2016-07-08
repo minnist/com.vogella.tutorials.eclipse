@@ -23,7 +23,7 @@ Enable this by selecting the corresponding button in the
 _Package Explorer_
 view.
 		
-image::linkwitheditor10.png[Editor,pdfwidth=60%,width=60%]
+image::linkwitheditor10.png[Editor,pdfwidth=60%]
 	
 === Java editor settings
 		

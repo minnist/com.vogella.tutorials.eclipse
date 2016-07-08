@@ -8,17 +8,17 @@
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/loadimage/loadimageold.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/loadimage/loadimageold.txt[]
+----
 		
 		Alternatively you could load the framework directly. 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/loadimage/loadimage.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/loadimage/loadimage.txt[]
+----
 		
 
 	
@@ -38,8 +38,8 @@
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/tips/ApplicationWorkbenchAdvisorRememberValues.java" />
-			</programlisting>
+					href="../examples/tips/ApplicationWorkbenchAdvisorRememberValues.java[]
+----
 		
 		
 			Eclipse has a pre-defined command to reset the perspective. See
@@ -79,8 +79,8 @@
 
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/statusline/ApplicationWorkbenchWindowAdvisor.java" />
-			</programlisting>
+					href="../examples/statusline/ApplicationWorkbenchWindowAdvisor.java[]
+----
 		
 		
 			The following writes a text to the status line from a view.
@@ -89,8 +89,8 @@
 			<programlisting>
 
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/statusline/statuslinesettext.java" />
-			</programlisting>
+					parse="text" href="../examples/statusline/statuslinesettext.java[]
+----
 		
 		
 			From an editor you can access the status line via the
@@ -99,8 +99,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/statusline/editorstatusline.java" />
-			</programlisting>
+					parse="text" href="../examples/statusline/editorstatusline.java[]
+----
 		
 	
 

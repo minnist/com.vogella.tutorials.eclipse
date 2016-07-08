@@ -46,8 +46,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/osgi/bundle.properties" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/osgi/bundle.properties[]
+----
 		
 		
 			Based on the language of the user, the Java runtime searches
@@ -203,9 +203,9 @@
 			specify the
 			runtime
 			parameter
-			<parameter class="option">-nl</parameter>
+			<parameter class="option">-nl_
 			to select the language, e.g.
-			<parameter class="option">-nl en</parameter>
+			<parameter class="option">-nl en_
 			.
 		
 	

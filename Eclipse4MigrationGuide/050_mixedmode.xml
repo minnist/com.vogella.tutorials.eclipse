@@ -13,7 +13,7 @@
 		
 		
 			Point to that file via the
-			<parameter>applicationXMI</parameter>
+			_applicationXMI_
 			parameter in
 			your
 			`org.eclipse.core.runtime.products`
@@ -26,8 +26,8 @@
 		
 		
 			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/link.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/link.txt[]
+----
 		
 		As said before, this approach is not officially supported by the Eclipse
 			platform team. If you use this approach,

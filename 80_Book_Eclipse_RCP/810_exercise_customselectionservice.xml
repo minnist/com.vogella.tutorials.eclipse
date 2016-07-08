@@ -2,7 +2,7 @@
 == Exercise: Development a custom selection service
 
 === Develop custom selection service
-		<note>
+		NOTE:
 			
 				This exercise is optional and based on
 				<xref linkend="exercise_customselectionservice1" />
@@ -22,8 +22,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/MySelectionService.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/MySelectionService.java[]
+----
 		
 	
 
@@ -35,8 +35,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/MyContextFunction.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/MyContextFunction.java[]
+----
 		
 	
 
@@ -47,8 +47,8 @@
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="./examples/replaceselectionservice/ReplaceSelectionService.java" />
-			</programlisting>
+					href="./examples/replaceselectionservice/ReplaceSelectionService.java[]
+----
 		
 
 		This class is registered as model
@@ -65,8 +65,8 @@ image::customselection_serviceaddon.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/ListenerPart.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/ListenerPart.java[]
+----
 		
 		
 			Adjust your
@@ -76,8 +76,8 @@ image::customselection_serviceaddon.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/SamplePart.java" />
-			</programlisting>
+					parse="text" href="./examples/replaceselectionservice/SamplePart.java[]
+----
 		
 	
 

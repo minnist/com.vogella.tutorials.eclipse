@@ -18,10 +18,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/CreateSaveTester.java" />
-			</programlisting>
+[source,java]
+----
+include::res/CreateSaveTester.java[]
+----
 		
 	
 
@@ -30,20 +30,20 @@
 			The following code can be used to load an existing model.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/EMFModelLoad.java" />
-			</programlisting>
+[source,java]
+----
+include::res/EMFModelLoad.java[]
+----
 		
 		
 			You can then access the model content via standard Java
 			coding.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/LoadTest.java" />
-			</programlisting>
+[source,java]
+----
+include::res/LoadTest.java[]
+----
 		
 	
 

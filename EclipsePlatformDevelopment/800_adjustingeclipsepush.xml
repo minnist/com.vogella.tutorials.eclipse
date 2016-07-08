@@ -121,7 +121,7 @@ image::eclipsegerritcontribution10.png[Gerrit Eclipse configuration,pdfwidth=60%
 		
 image::eclipsegerritcontribution12.png[Gerrit Eclipse configuration,pdfwidth=60%]
 		
-		<note>
+		NOTE:
 			For HTTPS access the URL is different.
 		</note>
 		

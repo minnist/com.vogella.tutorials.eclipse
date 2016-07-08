@@ -84,8 +84,8 @@ image::wtp_first_project30.png" />
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/counter/FileDao.java" />
-			</programlisting>
+					parse="text" href="./examples/counter/FileDao.java[]
+----
 		
 	
 
@@ -123,8 +123,8 @@ image::wtp_first_project50.png" />
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/counter/FileCounter.java" />
-			</programlisting>
+					parse="text" href="./examples/counter/FileCounter.java[]
+----
 		
 		
 			This code will read the counter from a file on the server and
@@ -157,7 +157,7 @@ image::wtp_first_project70.png" />
 			</mediaobject>
 		
 
-		<note>
+		NOTE:
 			In case you get the error "The Tomcat server configuration at
 				\Servers\Tomcat v7.0 Server at localhost-config is missing. Check
 				the server for errors.", simply delete the existing server

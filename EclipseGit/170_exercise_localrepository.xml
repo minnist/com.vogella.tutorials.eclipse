@@ -19,11 +19,7 @@
 
 
 === Create a new Git repository via Eclipse
-		<indexterm>
-			<primary>Git in Eclipse</primary>
-			<secondary>create Git repository
-			</secondary>
-		</indexterm>
+
 		
 			Open the
 			_Git Repositories_
@@ -75,8 +71,8 @@ image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitignore/gitignore" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitignore/gitignore[]
+----
 		
 		
 			All files and
@@ -102,7 +98,7 @@ image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
 			_.gitignore_
 			file in the root directory of the repository.
 		
-		<note>
+		NOTE:
 			
 				You can also configure Eclipse to automatically ignore derived
 				resources, e.g., class files via the
@@ -133,8 +129,8 @@ image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitfirst/GitTest.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitfirst/GitTest.java[]
+----
 		
 	
 
@@ -215,8 +211,8 @@ image::gitstaging10.png[Initial commit,pdfwidth=60%]
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/change/GitTest.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/change/GitTest.java[]
+----
 		
 
 		

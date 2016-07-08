@@ -131,8 +131,8 @@ image::eclipseideplugin90.png"/>
 		Create the following class based on the generated handler class. 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/SampleE4Handler.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/SampleE4Handler.java[]
+----
 		
 	
 

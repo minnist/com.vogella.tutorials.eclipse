@@ -22,8 +22,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/decorations.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/decorations.java[]
+----
 		
 		The result might look like the following screenshot.
 		
@@ -52,8 +52,8 @@ image::controldecoration17.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/SelectObservableValue.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/SelectObservableValue.java[]
+----
 		
 		The result of this snippet, should look like this:
 		
@@ -88,8 +88,8 @@ image::controldecoration17.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/editor/dirty.java" />
-			</programlisting>
+					parse="text" href="./examples/editor/dirty.java[]
+----
 		
 	
 
@@ -132,8 +132,8 @@ image::controldecoration17.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/writablevalue.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/writablevalue.java[]
+----
 		
 	
 
@@ -153,8 +153,8 @@ image::controldecoration17.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/computedvalue/ComputedValuePersonNameImpl.java" />
-			</programlisting>
+					parse="text" href="./examples/computedvalue/ComputedValuePersonNameImpl.java[]
+----
 		
 		
 			Since Eclipse Neon a new
@@ -170,8 +170,8 @@ image::controldecoration17.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/computedvalue/ComputedValuePersonNameCreate.java" />
-			</programlisting>
+					parse="text" href="./examples/computedvalue/ComputedValuePersonNameCreate.java[]
+----
 		
 		So basically ComputedValue can easily combine different
 			observables and is recomputed every time one of the tracked getter
@@ -200,8 +200,8 @@ image::controldecoration17.png"
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="./examples/computedvalue/ComputedValueButtonValidationEnablement.java" />
-			</programlisting>
+					href="./examples/computedvalue/ComputedValueButtonValidationEnablement.java[]
+----
 		
 		
 			Applying an IConverter to convert from IStatus to boolean would

@@ -15,17 +15,17 @@
 			attribute set to true.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/cansave.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/cansave.txt[]
+----
 		
 
 	
 
 
 === Enable the deletion handler only if necessary
-		<note>
+		NOTE:
 			This exercise is optional.
 		</note>
 		
@@ -47,10 +47,10 @@
 			wants to save the data.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/exit.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/exit.txt[]
+----
 		
 
 	

@@ -74,8 +74,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/emodelservice/ModelServiceExampleHandler.java" />
-			</programlisting>
+					href="../examples/emodelservice/ModelServiceExampleHandler.java[]
+----
 		
 
 		
@@ -87,8 +87,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/emodelservice/FindPerspectiveHandler.java" />
-			</programlisting>
+					href="../examples/emodelservice/FindPerspectiveHandler.java[]
+----
 		
 
 

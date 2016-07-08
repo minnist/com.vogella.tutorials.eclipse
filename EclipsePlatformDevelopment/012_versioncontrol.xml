@@ -85,7 +85,7 @@ image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=6
 			to drill down as depicted in the following
 			screenshot.
 		
-		<note>
+		NOTE:
 			
 				The URL and appearance may still change. See
 				https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792">Bug 405792

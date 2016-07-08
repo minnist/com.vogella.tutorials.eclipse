@@ -222,8 +222,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/start/loop.txt" />
-			</programlisting>
+					parse="text" href="./examples/start/loop.txt[]
+----
 		
 		
 			If

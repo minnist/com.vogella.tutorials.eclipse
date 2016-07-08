@@ -49,7 +49,7 @@
 		Alternatively you can also activate it for your Eclipse IDE. For
 		this
 		you have to start Eclipse with the
-		<parameter>-debug</parameter>
+		_-debug_
 		option from the command
 		line. You also need to create a
 		_.options_

@@ -28,7 +28,7 @@ image::command62.gif" />
 		
 			_menuContribution_
 			has an
-			<parameter>locationURI</parameter>
+			_locationURI_
 			attribute which allows to
 			define where in the user interface a
 			command
@@ -104,9 +104,9 @@ image::command62.gif" />
 			locationURI
 			by using the
 			pattern
-			<parameter>?before=ID</parameter>
+			_?before=ID_
 			or
-			<parameter>?after=ID</parameter>
+			_?after=ID_
 			.
 		
 		
@@ -126,12 +126,12 @@ image::command62.gif" />
 			a command to an
 			existing menu with
 			the
-			<parameter>fileMenu</parameter>
+			_fileMenu_
 			ID behind the menu
 			entry with the
-			<parameter>oneEntry</parameter>
+			_oneEntry_
 			ID use the
-			<parameter>menu:fileMenu?after=oneEntry</parameter>
+			_menu:fileMenu?after=oneEntry_
 			locationURI .
 		
 	

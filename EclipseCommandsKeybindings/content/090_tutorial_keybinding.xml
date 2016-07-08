@@ -55,8 +55,8 @@ image::keybinding30.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/keybinding/plugin_customization.ini" />
-			</programlisting>
+					parse="text" href="../examples/keybinding/plugin_customization.ini[]
+----
 		
 
 		

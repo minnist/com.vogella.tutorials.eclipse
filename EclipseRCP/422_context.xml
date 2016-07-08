@@ -189,11 +189,11 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 			Java
 			objects
 			referred by the
-			<parameter>Class URI</parameter>
+			_Class URI_
 			property of the
 			model elements. This is for example the case if a part is visible to the user.
 		
-		<note>
+		NOTE:
 			
 				The renderer framework is responsible for creating the local
 				context

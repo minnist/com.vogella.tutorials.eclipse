@@ -20,7 +20,7 @@
 		. Create a class called
 		_Phone_
 		with the
-		<parameter>number</parameter>
+		_number_
 		property. Create also a
 		class called
 		_Person_

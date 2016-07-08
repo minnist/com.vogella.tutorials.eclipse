@@ -9,8 +9,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/move/NonMovableGraph.java" />
-			</programlisting>
+					parse="text" href="../examples/move/NonMovableGraph.java[]
+----
 		
 		
 

@@ -24,8 +24,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/toolbar/Hello.java" />
-			</programlisting>
+					parse="text" href="../examples/toolbar/Hello.java[]
+----
 		
 		 Add a
 			menucontribution to the "org.eclipse.ui.menus extension"
@@ -57,8 +57,8 @@ image::commandcoolbar20.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/toolbar/ApplicationWorkbenchWindowAdvisor.java" />
-			</programlisting>
+					parse="text" href="../examples/toolbar/ApplicationWorkbenchWindowAdvisor.java[]
+----
 		
 		 The result should look like the following. If you select the
 			element in the toolbar an information dialog should open.
@@ -78,8 +78,8 @@ image::commandcoolbar30.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/toolbar/Perspective.java" />
-			</programlisting>
+					parse="text" href="../examples/toolbar/Perspective.java[]
+----
 		
 		Create a new menu contribution to the extension point
 			"org.eclipse.ui.menus" with the locationURI:

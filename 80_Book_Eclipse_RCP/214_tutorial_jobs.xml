@@ -15,10 +15,10 @@
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/delay.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/delay.java[]
+----
 		
 		
 			Start your application. What happens if you press the
@@ -55,16 +55,16 @@
 		The following example code can help. 
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/job/JobSnippets.java" />
-			</programlisting>
+[source,java]
+----
+include::res/job/JobSnippets.java[]
+----
 		
 
 	
 	<section>
 === Validating
-		<note>
+		NOTE:
 			
 				If you start your application, it takes longer to start if you
 				still

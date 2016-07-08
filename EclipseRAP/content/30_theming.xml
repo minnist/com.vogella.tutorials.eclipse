@@ -43,8 +43,8 @@ image::theming10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/themes/theme.css" />
-			</programlisting>
+					parse="text" href="../examples/themes/theme.css[]
+----
 		
 
 		 Add now the "org.eclipse.rap.ui.branding" extension point which

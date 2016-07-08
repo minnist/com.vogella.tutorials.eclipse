@@ -31,7 +31,7 @@
 	Run your application and test that every part is now rendered as
 		browser.
 	
-	<note>
+	NOTE:
 		Currently all parts show the same URL, but you could extend your
 			renderer to access for example tags at the parts to determine the
 			URLs which should be used.

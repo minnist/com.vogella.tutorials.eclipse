@@ -61,8 +61,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/fragments/OpenMapHandler.java" />
-			</programlisting>
+					parse="text" href="./examples/fragments/OpenMapHandler.java[]
+----
 		
 	
 
@@ -200,7 +200,7 @@ image::modelfragment10.png"/>
 			as the
 			_Element ID_
 			. This is the ID of the
-			<parameter>Application</parameter>
+			_Application_
 			model element in
 			your
 			_Application.e4xmi_
@@ -355,9 +355,9 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 			file add a
 			_Menu_
 			with the
-			<parameter>com.example.e4.rcp.todo.contribute.menu.map</parameter>
+			_com.example.e4.rcp.todo.contribute.menu.map_
 			ID and a
-			<parameter>Map</parameter>
+			_Map_
 			label.
 		
 		
@@ -439,7 +439,7 @@ image::fragment70.png"/>
 			If the menu entry is not displayed, ensure that your IDs are
 			correctly
 			entered and that you either use the
-			<parameter>clearPersistedState</parameter>
+			_clearPersistedState_
 			flag or clear the workspace data in your
 			_Launch configuration_
 			.
@@ -449,7 +449,7 @@ image::fragment70.png"/>
 
 
 === Exercise: Contributing a part
-		<note>
+		NOTE:
 			This exercise is optional.
 		</note>
 		

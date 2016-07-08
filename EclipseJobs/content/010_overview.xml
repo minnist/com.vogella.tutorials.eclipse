@@ -42,8 +42,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/invalid/error.txt" />
-			</programlisting>
+					parse="text" href="../examples/invalid/error.txt[]
+----
 		
 		
 			All events in the user interface
@@ -153,8 +153,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jobs/example.txt" />
-			</programlisting>
+					parse="text" href="../examples/jobs/example.txt[]
+----
 		
 		
 			If you want to update the user interface from a
@@ -226,8 +226,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/simple/Busy.java" />
-			</programlisting>
+					parse="text" href="../examples/simple/Busy.java[]
+----
 		
 		
 			If this code is executed, the cursor will change to a

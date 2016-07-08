@@ -56,7 +56,7 @@
 			component description file is entered in the
 			_MANIFEST.MF_
 			file via the
-			<parameter>Service-Component</parameter>
+			_Service-Component_
 			property. If the OSGi runtime finds such a reference, the
 			`org.eclipse.equinox.ds`
 			plug-in creates
@@ -71,8 +71,8 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/componentdescription.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/componentdescription.txt[]
+----
 		
 
 	
@@ -159,8 +159,8 @@ image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/MANIFEST.MF" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/MANIFEST.MF[]
+----
 		
 		
 			OSGi also provides a low-level API for starting, stopping and

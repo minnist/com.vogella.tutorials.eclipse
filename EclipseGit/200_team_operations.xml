@@ -16,16 +16,8 @@ image::pullpush10.png[Pull push and fetch dialog,pdfwidth=60%]
 	
 
 === Basic team operations
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>add
-			</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>commit
-			</secondary>
-		</indexterm>
+
+
 		
 			Once you have placed a project under version control you can
 			start
@@ -174,11 +166,7 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 
 
 === Amending a commit
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>amend
-			</secondary>
-		</indexterm>
+
 		
 			Git amend allows adjusting the last commit. For example you can
 			change the commit message or add another modification.

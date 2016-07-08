@@ -217,8 +217,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/command/Example.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/command/Example.java[]
+----
 		
 
 		
@@ -324,8 +324,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/canexecutetrigger/triggerevent.java" />
-			</programlisting>
+					href="./examples/canexecutetrigger/triggerevent.java[]
+----
 		
 	
 
@@ -346,9 +346,7 @@
 			the user
 			presses and
 			holds the
-			<keycombo>
-				<keycap>ALT</keycap>
-			</keycombo>
+			kbd:[ALT]
 			key and allows the user to quickly access menu entries by keyboard.
 		
 		
@@ -368,9 +366,7 @@
 			<emphasis role="underline">S</emphasis>
 			)
 			when the
-			<keycombo>
-				<keycap>Alt</keycap>
-			</keycombo>
+			kbd:[Alt]
 			key is pressed.
 		
 	

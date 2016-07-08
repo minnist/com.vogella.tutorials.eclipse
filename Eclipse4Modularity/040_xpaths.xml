@@ -44,7 +44,7 @@
 							detailed than the one above since it also
 							requires that the main
 							menu child is of type
-							<parameter>menu:Menu</parameter>
+							_menu:Menu_
 							.
 						
 						
@@ -88,7 +88,7 @@
 						Contribute to a
 						`MPart`
 						which is tagged with the
-						<parameter>Editor</parameter>
+						_Editor_
 						tag.
 					</entry>
 				</row>

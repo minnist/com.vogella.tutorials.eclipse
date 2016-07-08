@@ -34,7 +34,7 @@
 		
 image::eclipsegerritcontribution20.png[Eclipse Signed-off-by,pdfwidth=60%]
 		
-		<note>
+		NOTE:
 			
 				The Change-ID entry is initially set to "Change-Id:
 				I0000000000000000000000000000000000000000". During the

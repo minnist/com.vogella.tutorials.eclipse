@@ -91,8 +91,8 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clone.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clone.txt[]
+----
 		
 	
 
@@ -103,8 +103,8 @@
 		You start the build with the following command.  
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/build.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/build.txt[]
+----
 		
 		
 			If you receive
@@ -113,8 +113,8 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_memory.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_memory.txt[]
+----
 		
 		
 			If the build is successful, the Eclipse SDK is packaged as archive
@@ -124,8 +124,8 @@
 			Git
 			repository in the following folder:
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/path_product.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/path_product.txt[]
+----
 		
 	
 
@@ -137,8 +137,8 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clean.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clean.txt[]
+----
 		
 		
 			The build requires that the version numbers of each single
@@ -155,8 +155,8 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_update_pom.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_update_pom.txt[]
+----
 		
 	
 

@@ -13,19 +13,11 @@
 		
 		
 			Eclipse supports of course the typical shortcuts, e.g.
-			<keycombo>
-				<keycap>Ctrl</keycap>
-				<keycap>S</keycap>
-			</keycombo>
+			kbd:[Ctrl+S]
 			for saving,
-			<keycombo>
-				<keycap>Ctrl</keycap>
-				<keycap>C</keycap>
-			</keycombo>
+			kbd:[Ctrl+C]
 			for copying the selected text or file and
-			<keycombo>
-				<keycap>Ctrl</keycap>
-				<keycap>V</keycap>
+			kbd:[Ctrl+V</keycap>
 
 			</keycombo>
 			for pasting the element currently in the clipboard.
@@ -35,11 +27,7 @@
 	
 
 === Shortcuts on Mac OS
-		<indexterm>
-			<primary>Shortcuts</primary>
-			<secondary>Mac OS
-			</secondary>
-		</indexterm>
+
 		This description uses the shortcuts based on Windows and Linux.
 			Mac OS uses the Cmd key frequently instead of the
 			Ctrl key.

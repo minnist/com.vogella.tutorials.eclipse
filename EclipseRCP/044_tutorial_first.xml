@@ -77,11 +77,11 @@ image::rcpwizard50.png" scale="35" />
 		
 		
 
-		<note>
+		NOTE:
 			
 				The wizard adds also the
 
-				<parameter>clearPersistedState</parameter>
+				_clearPersistedState_
 				flag to the product configuration file. This ensures that changes
 				during development in
 				your

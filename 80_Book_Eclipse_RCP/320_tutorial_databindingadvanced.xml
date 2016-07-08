@@ -36,10 +36,10 @@
 			
 		</tip>
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/databinding/TodoOverviewPart.java" />
-			</programlisting>
+[source,java]
+----
+include::res/databinding/TodoOverviewPart.java[]
+----
 		
 	
 
@@ -67,7 +67,7 @@
 			_Load data_
 			button. Ensure that the data is displayed correctly in the table.
 		
-		<note>
+		NOTE:
 			
 				Currently the selection of the table is not sent to the
 				TodoDetailsPart. This will be implemented in

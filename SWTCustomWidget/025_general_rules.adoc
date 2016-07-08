@@ -60,7 +60,7 @@ error methods of the `SWT` class.
 * `public static void error (int code, Throwable throwable)`
 * `public static void error (int code, Throwable throwable, String detail)`
 
-The <parameter>code</parameter> parameter of each `error` method must be one of
+The _code_ parameter of each `error` method must be one of
 the `SWT.ERROR_*` constants.
 In case a parameter of a method must not be null you can check this parameter and call
 `SWT.error(SWT.ERROR_NULL_ARGUMENT)` in case this parameter is

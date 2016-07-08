@@ -6,11 +6,7 @@
 
 
 === Breakpoint properties
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Breakpoint properties
-			</secondary>
-		</indexterm>
+
 		
 			After setting a breakpoint you can select the
 			properties of the
@@ -59,11 +55,7 @@ image::debug20.png[Breakpoint Properties,pdfwidth=60%]
 
 
 === Watchpoint
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>using Watchpoints
-			</secondary>
-		</indexterm>
+
 		
 			A
 			_watchpoint_
@@ -101,11 +93,7 @@ image::watchpoint10.gif[Watchpoint,pdfwidth=60%]
 	
 
 === Exception breakpoints
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Exception breakpoints
-			</secondary>
-		</indexterm>
+
 		
 			You can set breakpoints which are triggered when exceptions in your
 			Java source code
@@ -133,11 +121,7 @@ image::exception10.gif" scale="50[Exception Breakpoint,pdfwidth=60%]
 
 === Method breakpoint
 
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Method breakpoint
-			</secondary>
-		</indexterm>
+
 		 A method breakpoint is defined by double-clicking in the left
 			margin of the editor next to the method header.
 		
@@ -155,11 +139,7 @@ image::methodbreakpoint10.gif[Method Breakpoint,pdfwidth=60%]
 
 
 === Breakpoints for loading classes
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Class breakpoint
-			</secondary>
-		</indexterm>
+
 		
 			A class load breakpoint stops when the
 			class is loaded.
@@ -183,11 +163,7 @@ image::classloadbreakpoint.gif"
 
 
 === Step Filter
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Step filter
-			</secondary>
-		</indexterm>
+
 		
 			You can define that certain packages should be skipped in debugging.
 			This is
@@ -204,11 +180,7 @@ image::classloadbreakpoint.gif"
 	
 
 === Hit Count
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Hit count
-			</secondary>
-		</indexterm>
+
 		 For every breakpoint you can specify a hit
 			count in its
 			properties. The application is stopped once
@@ -231,10 +203,10 @@ image::classloadbreakpoint.gif"
 			example.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/remote/remote.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/remote/remote.txt[]
+----
 		
 		
 			In you Eclipse IDE you can
@@ -253,7 +225,7 @@ image::classloadbreakpoint.gif"
 image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 		
 
-		<note>
+		NOTE:
 			Remote debugging requires that you have the source code of the
 				application which is debugged available in your Eclipse IDE.
 			
@@ -263,11 +235,7 @@ image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 
 
 === Drop to frame
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>drop to frame
-			</secondary>
-		</indexterm>
+
 		Eclipse allows you to select any level (frame) in the call stack
 			during debugging and set the JVM to restart from that point.
 		
@@ -288,7 +256,7 @@ image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 			view
 			.
 		
-		<note>
+		NOTE:
 			
 				Fields and external data may not be affected by the reset.
 				For

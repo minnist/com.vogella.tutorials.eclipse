@@ -16,8 +16,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../../Eclipse4EventSystem/examples/events/MyEventConstants.java" />
-			</programlisting>
+					parse="text" href="../../Eclipse4EventSystem/examples/events/MyEventConstants.java[]
+----
 		
 		
 			Export the
@@ -97,10 +97,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/event/NewTodoHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/event/NewTodoHandler.java[]
+----
 		
 
 	
@@ -118,10 +118,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/event/TodoOverviewPart.java" />
-			</programlisting>
+[source,java]
+----
+include::res/event/TodoOverviewPart.java[]
+----
 		
 	
 

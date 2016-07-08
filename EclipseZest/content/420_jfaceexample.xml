@@ -15,8 +15,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/Perspective.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/Perspective.java[]
+----
 		
 	
 
@@ -29,15 +29,15 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/MyNode.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/MyNode.java[]
+----
 		
 
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/MyConnection.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/MyConnection.java[]
+----
 		
 
 		 Also build this class which provides an instance of the data
@@ -45,8 +45,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/NodeModelContentProvider.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/NodeModelContentProvider.java[]
+----
 		
 
 	
@@ -57,14 +57,14 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ZestNodeContentProvider.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/ZestNodeContentProvider.java[]
+----
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ZestLabelProvider.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/ZestLabelProvider.java[]
+----
 		
 	
 
@@ -74,8 +74,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/View.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/View.java[]
+----
 		
 		 The result should look like the following.
 		
@@ -96,15 +96,15 @@ image::ZestFinal10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/NodeFilter.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/NodeFilter.java[]
+----
 		
 		 Apply the filter to the view to filter all elements.
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ViewFilter.java" />
-			</programlisting>
+					parse="text" href="../examples/jface/ViewFilter.java[]
+----
 		
 		
 			<tip> You can also define a filter on the layout so that certain

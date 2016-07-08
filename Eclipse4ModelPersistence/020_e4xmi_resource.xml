@@ -6,7 +6,7 @@
 		
 			By default the Eclipse platform stores and restores the complete runtime application model, unless the startup
 			parameter
-			<parameter>clearPersistedState</parameter>
+			_clearPersistedState_
 			is used. If this parameter is used, the whole user changes are deleted.
 		
 		
@@ -25,8 +25,8 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/SaveHandler.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/SaveHandler.java[]
+----
 		
 	
 
@@ -42,15 +42,15 @@
 			The following snippet is an example, where a stored perspective is applied to an existing application model. In case
 			an existing
 			perspective with the same
-			<parameter>elementId</parameter>
+			_elementId_
 			as the one of the loaded
 			perspective is found, it is removed. Afterwards the code adds and switches to the loaded
 			perspective.
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/LoadHandler.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/LoadHandler.java[]
+----
 		
 	
 

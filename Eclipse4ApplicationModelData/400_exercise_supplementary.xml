@@ -22,7 +22,7 @@
 === Use tags
 		
 			Add the
-			<parameter>NoMove</parameter>
+			_NoMove_
 			tag to your parts and ensure that you cannot move it via
 			drag and
 			drag.
@@ -30,7 +30,7 @@
 		
 			Make all your parts closable via the corresponding model attribute.
 			Assign the
-			<parameter>NoAutoCollapse</parameter>
+			_NoAutoCollapse_
 			to a stack and close all parts in this stack. Validate that your
 			stack is not closed.
 		
@@ -39,7 +39,7 @@
 === Optional: Use persisted state
 		
 			Add to the
-			<parameter>styleOverride</parameter>
+			_styleOverride_
 			parameter with the value 1024 as
 			_Persisted State_
 			to on of your

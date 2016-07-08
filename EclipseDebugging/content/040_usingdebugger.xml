@@ -2,11 +2,7 @@
 == Debugging in Eclipse
 
 === Setting Breakpoints
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>setting Breakpoints
-			</secondary>
-		</indexterm>
+
 		
 			To set
 			breakpoints in your source code right-click in the small left
@@ -38,11 +34,7 @@ image::setbreakpoint12.png[Showing a defined breakpoint,pdfwidth=60%]
 	
 
 === Starting the Debugger
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>starting the Debugger
-			</secondary>
-		</indexterm>
+
 		
 			To debug your application, select a Java file
 			which can be executed,
@@ -101,11 +93,7 @@ image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 	
 
 === Controlling the program execution
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>debug process
-			</secondary>
-		</indexterm>
+
 		Eclipse provides buttons in the toolbar for controlling the
 			execution of the program you are debugging. Typically it is easier to
 			use the corresponding keys to control this execution.
@@ -203,16 +191,8 @@ image::stack10.gif" scale="50[Showing the stack view,pdfwidth=60%]
 
 
 === Breakpoints view and deactivating breakpoints
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>Breakpoints view
-			</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>deactivating breakpoints
-			</secondary>
-		</indexterm>
+
+
 		
 			The
 			_Breakpoints_
@@ -256,11 +236,7 @@ image::skipbreakpoints10.gif[De-activating all breakpoints,pdfwidth=60%]
 
 
 === Evaluating variables in the debugger
-		<indexterm>
-			<primary>Debugging</primary>
-			<secondary>evaluating variables
-			</secondary>
-		</indexterm>
+
 		
 			The
 			_Variables_
@@ -305,11 +281,7 @@ image::variables30.gif[Showing the actual type of the variables,pdfwidth=60%]
 
 
 === Changing variable assignments in the debugger
-			<indexterm>
-			<primary>Debugging</primary>
-			<secondary>changing variable assignments
-			</secondary>
-		</indexterm>
+	
 		
 			The
 			_Variables_

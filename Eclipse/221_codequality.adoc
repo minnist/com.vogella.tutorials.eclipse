@@ -1,0 +1,74 @@
+== Eclipse code checks and cleanup
+
+=== Java Development Toolkit code checks
+		
+You can define how the Java compiler should react to certain
+common
+programming problems, e.g., you can define that an assignment
+of a
+variable which
+has no effect, e.g.,
+`x=x`
+, causes an error in
+Eclipse.
+
+=== Configuring the code settings
+		
+You can configure these checks in the Eclipse preferences
+settings via
+the
+menu:Java[Compiler > Errors/Warnings]
+entry.
+		
+image::eclipsecodequality10.png[Code settings,pdfwidth=40%]
+
+=== Annotation-based Null analysis
+		
+You can enable annotation-based null checks in Eclipse via the
+setting highlighted in the following screenshot.
+		
+image::eclipsecodequality20.png[Null annotations,pdfwidth=40%]
+		
+		
+After enabling this setting, you can use the
+`@NonNull`
+annotation on method parameters or variable definitions to indicate
+that these are not allowed to be NULL. You can also use the
+`@Nullable`
+annotation to define that a variable can be NULL.
+
+=== Running a code cleanup and removal of trailing whitespace
+		
+Eclipse has the option to perform cleanup actions on existing
+code. This includes the removal of trailing whitespace, the
+additional of missing annotations but also advanced cleanups like the
+conversion of code to Java
+8 lambda expressions.
+		
+To trigger this cleanup, select the Java source file, package or
+project and select
+menu:Source[Clean-up...]
+from the context menu.
+		
+image::codecleanup10.png[pdfwidth=60%]
+		
+Select
+_Use custom profile_
+and press
+_Configure..._
+to configure the actions which should be performed on your code.
+		
+image::codecleanup20.png[pdfwidth=60%]
+		
+image::codecleanup30.png[pdfwidth=60%]
+
+WARNING: Ensure to unselect any cleanup action which you do not want to perform.
+		
+After finishing the configuration, press
+_OK_
+and the
+_Next_
+button in the cleanup wizard to get a preview of the changes.
+
+image::codecleanup40.png[pdfwidth=60%]
+

@@ -159,7 +159,7 @@ At first we check, if the given `Control` is a `UserProfileWidget` and
 In case these checks are valid the `﻿CSSEngine` can be used to convert the
 	given `﻿CSSValue` in our case to a `Color`. Finally we set this
 	color for the header of our custom widget.
-<note>
+NOTE:
 If you are using a different UI toolkit than SWT you must only implement the
 `ICSSPropertyHandler` interface, rather than the
 `AbstractCSSPropertySWTHandler`, which just passes an

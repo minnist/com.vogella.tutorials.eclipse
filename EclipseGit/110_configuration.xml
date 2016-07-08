@@ -17,11 +17,7 @@
 	
 
 === Git user settings in Eclipse
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>preference settings
-			</secondary>
-		</indexterm>
+
 		
 			To use Git you must configure your full name and email
 			address.
@@ -76,11 +72,7 @@ image::egitconfig30.png[EGit default repository folder,pdfwidth=60%]
 
 
 === Configuring the toolbar and the menu for Git usage
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>toolbar
-			</secondary>
-		</indexterm>
+
 		
 			To simplify access to the common Git operations you can activate the
 			Git toolbar. For this select

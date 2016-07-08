@@ -15,8 +15,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/eventadmin/inject.txt" />
-			</programlisting>
+					parse="text" href="./examples/eventadmin/inject.txt[]
+----
 		
 
 		
@@ -39,15 +39,15 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/eventadmin/asend.java" />
-			</programlisting>
+					parse="text" href="./examples/eventadmin/asend.java[]
+----
 		
 
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/eventadmin/ssend.java" />
-			</programlisting>
+					parse="text" href="./examples/eventadmin/ssend.java[]
+----
 		
 
 		You can now send arbitrary Java objects or primitives through
@@ -96,8 +96,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/events/register.java" />
-			</programlisting>
+					parse="text" href="./examples/events/register.java[]
+----
 		
 
 	
@@ -140,8 +140,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/events/LazyLoadingAddon.java" />
-			</programlisting>
+					parse="text" href="./examples/events/LazyLoadingAddon.java[]
+----
 		
 	
 
@@ -178,8 +178,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/events/MyEventConstants.java" />
-			</programlisting>
+					parse="text" href="./examples/events/MyEventConstants.java[]
+----
 		
 
 	

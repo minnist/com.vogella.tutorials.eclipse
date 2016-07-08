@@ -44,15 +44,15 @@
 		The log level can be setup in the
 		_config.ini_
 		file of your application via the
-		<parameter>eclipse.log.level</parameter>
+		_eclipse.log.level_
 		parameter. The value can be set to
-		<parameter>INFO</parameter>
+		_INFO_
 		,
-		<parameter>WARNING</parameter>
+		_WARNING_
 		and
-		<parameter>ERROR</parameter>
+		_ERROR_
 		.
-		<parameter>INFO</parameter>
+		_INFO_
 		will for example show all log message.
 	
 	By default Eclipse logs all messages.

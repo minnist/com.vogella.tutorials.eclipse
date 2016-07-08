@@ -6,7 +6,7 @@
 		Eclipse installer is currently still under heavy development and the
 		user interface might change significantly.
 	
-	<note>
+	NOTE:
 		Currently the main Eclipse platform projects do not actively configure Oomph, hence the contribution setup via
 			the Eclipse installer may not
 			result in a correct setup.

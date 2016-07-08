@@ -9,7 +9,7 @@
 		error. To instruct the JVM to create a
 		_heap dump_
 		in such a situation, start your Java application with the
-		<parameter>-XX:+HeapDumpOnOutOfMemoryError</parameter>
+		_-XX:+HeapDumpOnOutOfMemoryError_
 		option.
 	
 

@@ -1,0 +1,167 @@
+== Using JARs (libraries) in Eclipse
+
+=== Adding a Java library to the project classpath
+
+If the libraries should be distributed with your project, you can
+store the
+JAR
+files directly in your project.
+
+For example, you can
+create a new Java project
+`de.vogella.eclipse.ide.jars`
+. Then create
+a new folder called
+`lib`
+by right-clicking on
+your project and selecting
+menu:New[Folder]
+.
+
+image::jar10.png[Creating a new folder,pdfwidth=60%]
+
+From the menu select
+menu:File[Import > General > File System]
+.
+Select the Java library you want to import
+and select the
+_lib_
+folder
+as target. Alternatively, just copy and paste the
+`jar`
+file into the
+_lib_
+folder.
+
+You can add this library to your classpath, right-click on the JAR
+file and select
+menu:Build Path[Add to Build Path]
+.
+
+To manage your classpath, right-click on your project and select
+_Properties_
+.
+Under
+menu:Java Build Path[Libraries]
+select the
+_Add JARs_
+button.
+
+The following example shows how the result would look like
+if
+the
+_junit-4.4.jar_
+file
+had been added to the project.
+
+image::externaljars10.gif[Adding a jar to the current project,pdfwidth=60%]
+
+After adding it to the classpath, Eclipse allows you to use the
+classes
+contained
+in the
+JAR
+file in the project . Outside Eclipse you
+still need to configure your
+classpath, e.g., via the
+_MANIFEST.MF_
+file.
+
+=== Attach source code to a Java library
+
+You can open any class by positioning the
+cursor on
+the class in
+an
+editor and pressing
+kbd:[F3]
+. Alternatively, you
+can
+press
+kbd:[Ctrl+Shift+T]
+. This will show a dialog in which you can enter
+the
+class name to open
+it.
+
+If the source code is not
+available,
+the editor
+will show the
+bytecode
+of that class.
+
+This happens, for example, if you open a class from a the standard
+Java library without attaching the
+source code to it.
+
+To see the source code of such a class, you can
+attach a source
+archive or source folder
+to a Java
+library. Afterwards, the editor
+shows
+the source instead of
+the
+bytecode.
+
+Attaching the source code to a library also allows you to
+debug
+this
+source code.
+
+The _Source Attachment_ dialog can be reached in the
+_Java Build Path_
+page of a project. To open this page, right-click on a project and
+select
+menu:Properties[Java Build Path]
+. On the
+_Libraries_
+tab, expand the library's node, select the
+_Source Attachment_
+attribute and click the
+_Edit_
+button.
+
+In the Location path field, enter the path of an archive or a
+folder containing the source.
+
+The following screenshot shows this setting for the standard Java
+library. If you
+have
+the Java Development Kit (JDK) installed, you
+should find the
+source
+in the JDK installation folder. The file is
+typically called
+_src.zip_
+.
+
+image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar,pdfwidth=60%]
+
+=== Add Javadoc for a JAR
+ 
+It is also possible to add Javadoc to a library which you use.
+
+Download the Javadoc of the JAR file and put it somewhere in
+your
+filesystem.
+
+To enter the location of the Javadoc, open the
+_Java Build Path_
+via a
+right-click on a project and select
+menu:Properties[Java Build Path]
+. On the
+_Libraries_
+tab expand the
+library's node, select the
+_Javadoc location_
+attribute and press the
+_Edit_
+button.
+
+Enter the location to the file which contains the Javadoc.
+
+image::javadoc10.png[Enter the location to the Javadoc file for a jar file,pdfwidth=60%]
+	

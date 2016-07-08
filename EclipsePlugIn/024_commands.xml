@@ -88,7 +88,7 @@ image::modelcontribution30.png" scale="35[Contributing to the Eclipse menu,pdfwi
 			<xref linkend="firstplugin_migratione4_toolbar" />
 			.
 		
-		<note>
+		NOTE:
 			This approach does currently not work for view toolbars.
 		</note>
 	

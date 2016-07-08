@@ -2,11 +2,7 @@
 == Starting a merge operation in Eclipse
 
 === Merge
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>merge
-			</secondary>
-		</indexterm>
+
 		
 			Eclipse supports merging of branches to add the changes
 			committed on
@@ -32,11 +28,7 @@ image::egit_mergeoperation20.png" scale="40[Team Merge menu,pdfwidth=60%]
 	
 
 === Solving merge conflicts
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>merge conflicts, solving
-			</secondary>
-		</indexterm>
+
 		
 			If during a Git operation, two changes are conflicting, you
 			have to

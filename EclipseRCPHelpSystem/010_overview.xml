@@ -96,8 +96,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/toc.txt" />
-			</programlisting>
+					parse="text" href="./examples/plugin/toc.txt[]
+----
 		
 		The following shows the non primary ""tocgettingstarted.xml"
 			file. Via the href attribute this toc file links the chapters to
@@ -107,8 +107,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/tocgettingstarted.txt" />
-			</programlisting>
+					parse="text" href="./examples/plugin/tocgettingstarted.txt[]
+----
 		
 	
 
@@ -149,8 +149,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/extension.txt" />
-			</programlisting>
+					parse="text" href="./examples/context/extension.txt[]
+----
 		
 		 This file defines Id's and links to the HTML pages of the help
 			system. The file can be maintained with the specialized "Context
@@ -169,8 +169,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/assignId.txt" />
-			</programlisting>
+					parse="text" href="./examples/context/assignId.txt[]
+----
 		
 		 If the user opens the dynamic help via the command
 			"org.eclipse.ui.help.dynamicHelp" then the corresponding help is

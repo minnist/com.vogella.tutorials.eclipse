@@ -69,7 +69,7 @@ perspective
 The Java perspective can be opened via
 menu:Window+Perspective[Open Perspective > Java].
 		
-image::eclipseide_perspective10.png[Switching perspectives in the Eclipse IDE,pdfwidth=60%,width=60%]
+image::eclipseide_perspective10.png[Switching perspectives in the Eclipse IDE,pdfwidth=60%]
 		
 On the left hand side, this perspective shows the
 _Package Explorer_
@@ -168,7 +168,7 @@ perspective
 via
 menu:Window+Perspective[Save Perspective As...].
 		
-image::eclipseide_saveperspective10.png[Save your perspective configuration,pdfwidth=40%,width=40%]
+image::eclipseide_saveperspective10.png[Save your perspective configuration,pdfwidth=40%]
 		
 The
 menu:Window+Perspective[Customize Perspective...]
@@ -178,5 +178,5 @@ perspective
 you can
 hide or show toolbar and menu entries.
 		
-image::perspective_customize10.png[Customize Perspective,pdfwidth=40%,width=40%]
+image::perspective_customize10.png[Customize Perspective,pdfwidth=40%]
 		

@@ -25,7 +25,7 @@
 			</itemizedlist>
 		
 
-		<note>
+		NOTE:
 			You have to manually adjust the application model, as the
 				default editors don't support your new model elements. It is
 				possible
@@ -38,9 +38,9 @@
 			Add your model name space to the
 			_Application.e4xmi_
 			file. Please note that
-			<parameter>
+			_
 				xmlns:extension="http://www.vogella.com/ui/e4/extension"
-			</parameter>
+			_
 			defines the
 			UI of your model extension. By this you can use
 			<property>extension:modelelement</property>
@@ -51,8 +51,8 @@
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/renderer/Application.e4xmi" />
-			</programlisting>
+					parse="text" href="./examples/renderer/Application.e4xmi[]
+----
 		
 
 		Afterwards add your new part implementation to a part, the
@@ -61,8 +61,8 @@
 		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/renderer/Application2.e4xmi" />
-			</programlisting>
+					parse="text" href="./examples/renderer/Application2.e4xmi[]
+----
 		
 	
 
@@ -75,7 +75,7 @@
 			product in
 			_plugin.xml_
 			with a link to your new factory:
-			<parameter>platform:/plugin/com.vogella.e4.renderer.maps/com.vogella.e4.renderer.maps.MyRendererFactory</parameter>
+			_platform:/plugin/com.vogella.e4.renderer.maps/com.vogella.e4.renderer.maps.MyRendererFactory_
 		
 		
 			<programlisting language="xml">
@@ -91,7 +91,7 @@
 		
 			Run your application. The result should display the webpage to which
 			you pointed via the
-			<parameter>uri</parameter>
+			_uri_
 			parameter.
 		
 

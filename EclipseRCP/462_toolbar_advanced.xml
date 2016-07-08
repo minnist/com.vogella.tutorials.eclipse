@@ -16,7 +16,7 @@
 			model element. A trimbar can be defined for
 			_TrimmedWindow_
 			model elements. Via its
-			<parameter>Side</parameter>
+			_Side_
 			attribute you define if the trimbar
 			should
 			be
@@ -29,7 +29,7 @@
 			To add a toolbar to a
 			view,
 			set the
-			<parameter>Toolbar</parameter>
+			_Toolbar_
 			flag on the model element for the part and create the entries in the
 			application model.
 		
@@ -56,8 +56,8 @@ image::part_toolbar10.png[Adding a toolbar to a part,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/toolitem/SearchToolItem.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/toolitem/SearchToolItem.java[]
+----
 		
 		
 			You can add such a
@@ -91,7 +91,7 @@ image::toolitem_search10.png[Resulting application with a search Toolitem,pdfwid
 		</indexterm>
 		
 			Set the
-			<parameter>Menu</parameter>
+			_Menu_
 			attribute on an toolitem
 			to be able to define a menu
 			similar to the

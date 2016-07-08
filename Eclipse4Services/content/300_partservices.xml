@@ -51,7 +51,7 @@
 			parts, hide or show
 			them.
 			If the
-			<parameter>Visible</parameter>
+			_Visible_
 			attribute of the
 			part
 			was initially set
@@ -68,8 +68,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/partservice/partService.java" />
-			</programlisting>
+					parse="text" href="../examples/partservice/partService.java[]
+----
 		
 	
 
@@ -80,10 +80,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/partservice/SwitchPerspectiveHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/partservice/SwitchPerspectiveHandler.java[]
+----
 		
 	
 
@@ -107,7 +107,7 @@
 		
 		
 			Via the
-			<parameter>Multiple</parameter>
+			_Multiple_
 			of the part descriptor you configure if multiple instances of this
 			part can be created or not.
 			Such a model element is depicted in the
@@ -131,7 +131,7 @@ image::partdescripter_service10.png" scale="35[Adding a PartDescripter to the mo
 		
 			The following screenshot shows the definition of a part descriptor
 			in the application model. As the
-			<parameter>Multiple</parameter>
+			_Multiple_
 			parameter is set, it is possible to create several parts based on
 			this template.
 		
@@ -143,10 +143,10 @@ image::partdescripter_service10.png"
 			template. This is demonstrated by the following example code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/partservice/OpenPartHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/partservice/OpenPartHandler.java[]
+----
 		
 
 	

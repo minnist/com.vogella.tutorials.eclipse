@@ -44,7 +44,7 @@
 				selectors.
 				For
 				example, the currently active part is tagged as
-				<parameter>active</parameter>
+				_active_
 				at runtime
 				and the CSS engine allows to style components
 				based on
@@ -64,11 +64,11 @@
 		</tip>
 		
 			By default, Eclipse uses some predefined
-			<parameter>tags</parameter>
+			_tags_
 			to determine the state of certain model elements. For example, the
-			<parameter>shellMaximized</parameter>
+			_shellMaximized_
 			and
-			<parameter>shellMinimized</parameter>
+			_shellMinimized_
 			tag on a
 			_Window_
 			is used by Eclipse to determine if the
@@ -124,8 +124,8 @@ image::supplementary10.png[Supplementary info for a Window to set it to maximize
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/supplementary/persists.java" />
-			</programlisting>
+					parse="text" href="./examples/supplementary/persists.java[]
+----
 		
 		
 			Persisted data for model elements is automatically restored by

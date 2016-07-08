@@ -52,14 +52,14 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/ExitDialog.java" />
-			</programlisting>
+					parse="text" href="./examples/processors/ExitDialog.java[]
+----
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/ExitHandlerWithCheck.java" />
-			</programlisting>
+					parse="text" href="./examples/processors/ExitHandlerWithCheck.java[]
+----
 		
 
 		
@@ -74,8 +74,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/MenuProcessor.java" />
-			</programlisting>
+					parse="text" href="./examples/processors/MenuProcessor.java[]
+----
 		
 
 		<warning>
@@ -114,9 +114,9 @@ image::processor04.png" />
 			which is
 			injected
 			into your processor class. Use
-			<parameter>org.eclipse.ui.file.menu</parameter>
+			_org.eclipse.ui.file.menu_
 			as
-			<parameter>id*</parameter>
+			_id*_
 			parameter.
 		
 

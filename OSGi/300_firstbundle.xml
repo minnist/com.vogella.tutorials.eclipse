@@ -27,15 +27,15 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/firstbundle/MyThread.java" />
-			</programlisting>
+					parse="text" href="./examples/firstbundle/MyThread.java[]
+----
 		
 		 Change the class Activator.java to the following.
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/firstbundle/Activator.java" />
-			</programlisting>
+					parse="text" href="./examples/firstbundle/Activator.java[]
+----
 		
 	
 

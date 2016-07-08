@@ -24,13 +24,13 @@
 			package and add the following class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/event/LifeCycleManager.java" />
-			</programlisting>
+[source,java]
+----
+include::res/event/LifeCycleManager.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				The life cycle annotations are
 				not yet released as official API. See
@@ -90,9 +90,9 @@ image::lifecycleregistration20.png"
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/event/plugin.adoc[]
+[source,java]
+----
+include::res/event/plugin.adoc[]
 			</programlisting>
 		
 

@@ -36,8 +36,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/Messages.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/Messages.java[]
+----
 		
 	
 
@@ -64,8 +64,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle2.properties" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle2.properties[]
+----
 		
 		
 			Create one additional translation file for another language, e.g., via
@@ -73,7 +73,7 @@
 			_bundle_de.properties_
 			file. Ensure that the translation values are different.
 		
-		<note>
+		NOTE:
 			
 				The translations for the application model as created in
 				<xref linkend="tutorial_i22n" />
@@ -143,8 +143,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/TodoOverviewPart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/TodoOverviewPart.java[]
+----
 		
 	
 

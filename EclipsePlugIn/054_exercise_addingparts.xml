@@ -38,8 +38,8 @@ image::eclipse3rcp_e4viewexample30.png[,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/migration/ViewEclipse4x.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/migration/ViewEclipse4x.java[]
+----
 		
 		
 			Afterwards add an

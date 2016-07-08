@@ -38,8 +38,8 @@
 		Create the following class
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/migration/PartEclipse4x.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/migration/PartEclipse4x.java[]
+----
 		
 
 		
@@ -65,7 +65,7 @@ image::ide_partdescriptor40.png[Adding a part descriptor to the Eclipse IDE,pdfw
 			Start an instance of the Eclipse IDE and validate that you can open the parts via the Quick Access box (shortcut
 			Ctrl+3).
 		
-		<note>
+		NOTE:
 			
 				In Eclipse 4.4 the part descriptor can only be opened via the Quick Access box. In Eclipse
 				4.5 it

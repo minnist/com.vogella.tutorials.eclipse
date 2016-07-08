@@ -26,23 +26,23 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/rcp/MANIFEST.MF" />
-			</programlisting>
+					parse="text" href="../examples/rcp/MANIFEST.MF[]
+----
 		
 		 Copy your report to "stock_report_rcp.rptdesign" into this new project. Open this
 			report and change the "open" JavaScript to the following.
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/rcp/fetch.txt" />
-			</programlisting>
+					parse="text" href="../examples/rcp/fetch.txt[]
+----
 		
 		
 		 Use this code as View.java.
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/rcp/View.java" />
-			</programlisting>
+					parse="text" href="../examples/rcp/View.java[]
+----
 		
 	

@@ -7,7 +7,7 @@
 		`org.eclipse.ui`
 		plug-in.
 	
-	<note>
+	NOTE:
 		This extension point is not used for Eclipse 4 RCP applications,
 			use a life cycle hook or model add-on to archive
 			similar behavior.

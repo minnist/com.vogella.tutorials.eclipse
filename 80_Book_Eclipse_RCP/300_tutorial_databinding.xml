@@ -61,8 +61,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Todo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Todo.java[]
+----
 		
 	
 
@@ -105,8 +105,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Binding.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Binding.java[]
+----
 		
 
 	
@@ -132,7 +132,7 @@ image::newtodo_wizard10.png[,pdfwidth=60%]
 		
 image::newtodo_wizard20.png[,pdfwidth=60%]
 		
-		<note>
+		NOTE:
 			
 				Your detail part
 				is currently not supplied with a Todo, only

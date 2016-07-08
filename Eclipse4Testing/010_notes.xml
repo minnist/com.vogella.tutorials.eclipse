@@ -40,8 +40,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/TodoOverviewPart.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/TodoOverviewPart.java[]
+----
 		
 
 		
@@ -55,8 +55,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/TodoOverviewPartTest.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/TodoOverviewPartTest.java[]
+----
 		
 		The above code can be easily changed to a unit test. Your test
 			class can create the class, provide the
@@ -94,8 +94,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/CreateContextText.java" />
-			</programlisting>
+					parse="text" href="./examples/snippets/CreateContextText.java[]
+----
 		
 
 	

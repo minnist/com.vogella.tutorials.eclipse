@@ -67,7 +67,7 @@ image::popupmenu20.png" scale="35[ID for the popupmenu,pdfwidth=60%]
 			`registerContextMenu(control, id)`
 			method for this purpose.
 			The
-			<parameter>id</parameter>
+			_id_
 			parameter
 			of the
 			`registerContextMenu`
@@ -86,8 +86,8 @@ image::popupmenu20.png" scale="35[ID for the popupmenu,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/popup/table.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/popup/table.java[]
+----
 		
 		
 			If you want to implement this example, your plug-in must have

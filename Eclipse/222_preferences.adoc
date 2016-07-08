@@ -1,0 +1,98 @@
+== More on preference settings
+
+=== Launch Configuration
+		
+Eclipse allows you to start an application via the
+_Run_
+button in the menu or via the
+kbd:[Ctrl+F11]
+shortcut. By default, Eclipse determines if the currently selected
+file is executable and try to start that. This is sometimes confusing.
+You can configure the Eclipse IDE to always start the last started
+program.
+		
+To configure this, select
+menu:Window[Preferences > Run/Debug > Launching]
+and define that the previous launched application should always be
+launched.
+		
+image::androideclipsesetup10.png[Setting the previous launched application,pdfwidth=40%]
+
+=== Configuring the editors for a file extension
+		
+The
+_Editors_
+which are available to open a file can be configured via
+menu:Window[Preferences > General > Editors > File Associations].
+		
+The
+_Default_
+button in this preference dialog allows you to set the default
+editor for
+a certain file extension, e.g., this is the
+_editor_
+which will be used
+by default if you open a new file with
+this
+extension.
+		
+The other configured
+_editors_
+can be selected if you right-click on a file and select
+menu:Open With[]
+In the sub-menu you see the available editors. The available
+editors
+depend on your Eclipse installation.
+		
+image::openeditor27.png[Open With,pdfwidth=60%]
+
+Eclipse will remember the last
+_editor_
+you used to open a
+file and use this
+_editor_
+again the next time you open the file.
+
+=== Export and import preference settings
+		
+You can export your preference settings from one workspace
+via
+menu:File[Export > General > Preferences]
+.
+		
+Eclipse does allow you to export some preference settings
+separately, but
+for
+most of
+them you have to select the
+_Export all_
+flag.
+		
+image::eclipse_exportpreferences10.png[Export your Eclipse preferences.,pdfwidth=40%]
+		
+Similarly, you can import
+them
+again into another
+workspace via
+menu:File[Import > General > Preferences]
+.
+
+=== Preference settings per project
+		
+You can also configure certain preference settings on a per project
+basis. To do this, select your project, right-click on it and select
+_Properties_
+. For example, on the
+menu:Java Editor[Save Actions]
+you can select the
+_Enable project specific settings_
+checkbox to configure the save action for the current project only.
+		
+		
+image::preferencesettingsperproject10.png[Preference settings per project,pdfwidth=35%,width=35%]
+		
+This creates a
+_.settings_
+folder which you can add to your version control system to ensure
+that every developer uses the same setting.
+	

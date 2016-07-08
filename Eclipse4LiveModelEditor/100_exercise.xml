@@ -26,7 +26,7 @@
 			
 		</warning>
 
-		<note>
+		NOTE:
 			The model spy is a debug tool and not intended to be used in a
 				productive application. So it might happen that
 				this exercise does
@@ -95,11 +95,7 @@ image::adding_liveeditor10.png[Adding the live editor to a run configuration,pdf
 
 		
 			Start your application and use the
-			<keycombo>
-				<keycap>Shift</keycap>
-				<keycap>Alt</keycap>
-				<keycap>F9</keycap>
-			</keycombo>
+			kbd:[Shift+Alt+F9]
 			shortcut to
 			open the model spy.
 		

@@ -118,8 +118,8 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/gridDataExample.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/gridDataExample.txt[]
+----
 		
 		<warning>
 			
@@ -237,8 +237,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/Constructor.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/Constructor.java[]
+----
 		
 
 		
@@ -382,8 +382,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/GirdDataFactory.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/GirdDataFactory.java[]
+----
 		
 
 

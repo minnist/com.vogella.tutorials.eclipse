@@ -132,8 +132,8 @@ image::extensionpoint50.png" scale="35[Add Attribute to Extension,pdfwidth=60%]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/IGreeter.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/IGreeter.java[]
+----
 		
 
 		
@@ -231,8 +231,8 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/simple/EvaluateContributionsHandler.java" />
-			</programlisting>
+					href="../examples/simple/EvaluateContributionsHandler.java[]
+----
 		
 		
 			The code above uses
@@ -280,7 +280,7 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		Also update your product (via your features) so that the new
 			plug-in is part of your application.
 		
-		<note>
+		NOTE:
 			A better approach would be to add the menu entry via a model
 				fragment or a model processor, but I leave that as
 				an additional
@@ -370,8 +370,8 @@ image::extensionpoint140.png"/>
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/GreeterGerman.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/GreeterGerman.java[]
+----
 		
 	
 

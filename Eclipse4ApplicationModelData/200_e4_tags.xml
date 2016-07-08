@@ -30,7 +30,7 @@
 				<tbody>
 					<row>
 						<entry>
-							<parameter>shellMaximized</parameter>
+							_shellMaximized_
 						</entry>
 						<entry>
 							_Window_
@@ -41,7 +41,7 @@
 					</row>
 					<row>
 						<entry>
-							<parameter>shellMinimized</parameter>
+							_shellMinimized_
 						</entry>
 						<entry>
 							_Window_
@@ -52,7 +52,7 @@
 					</row>
 					<row>
 						<entry>
-							<parameter>NoAutoCollapse</parameter>
+							_NoAutoCollapse_
 						</entry>
 						<entry>
 							_PartStack_
@@ -71,12 +71,12 @@
 					</row>
 					
 						Another tag, which is used frequently, is the
-						<parameter>NoAutoCollapse</parameter>
+						_NoAutoCollapse_
 						tag which you can add to a
 					
 					<row>
 						<entry>
-							<parameter>FORCE_TEXT</parameter>
+							_FORCE_TEXT_
 						</entry>
 						<entry>
 							_ToolItem_
@@ -85,7 +85,7 @@
 					</row>
 					<row>
 						<entry>
-							<parameter>NoMove</parameter>
+							_NoMove_
 						</entry>
 						<entry>Part</entry>
 						<entry>
@@ -96,7 +96,7 @@
 					</row>
 					<row>
 						<entry>
-							<parameter>styleOverride</parameter>
+							_styleOverride_
 						</entry>
 						<entry>
 							_MWindow_

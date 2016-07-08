@@ -44,8 +44,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/view/MyView.java" />
-			</programlisting>
+					parse="text" href="../examples/view/MyView.java[]
+----
 		
 	
 
@@ -109,8 +109,8 @@ image::addview200.gif[Running application with a new view,pdfwidth=60%]
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/view/Perspective.java" />
-			</programlisting>
+					parse="text" href="../examples/view/Perspective.java[]
+----
 		
 	
 

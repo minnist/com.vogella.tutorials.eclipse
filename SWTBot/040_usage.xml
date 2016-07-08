@@ -42,7 +42,7 @@
 		http://wiki.eclipse.org/SWTBot/UsersGuide">SWTBot wiki
 		.
 	
-	<note>
+	NOTE:
 		The support for Eclipse 4 RCP application is at the time of this
 			writing fairly new. Therefore this chapter is intentionally
 			short, as

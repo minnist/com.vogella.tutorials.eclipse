@@ -27,8 +27,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizardPage1.java" />
-			</programlisting>
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizardPage1.java[]
+----
 		
 
 
@@ -42,8 +42,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizard.java" />
-			</programlisting>
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizard.java[]
+----
 		
 	
 
@@ -78,8 +78,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/NewTodoHandler.java" />
-			</programlisting>
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/NewTodoHandler.java[]
+----
 		
 
 

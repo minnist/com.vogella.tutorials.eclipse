@@ -19,8 +19,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/View.java" />
-			</programlisting>
+					parse="text" href="./examples/first/View.java[]
+----
 		
 		
 			This
@@ -68,8 +68,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/UserInterfaceTester1.java" />
-			</programlisting>
+					parse="text" href="./examples/first/UserInterfaceTester1.java[]
+----
 		
 		
 			Right-click on the test and select
@@ -96,8 +96,8 @@ image::swtbot10.png"/>
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/UserInterfaceTester.java" />
-			</programlisting>
+					parse="text" href="./examples/first/UserInterfaceTester.java[]
+----
 		
 		 Run your test again and verify that the test runs ok. Change,
 			for

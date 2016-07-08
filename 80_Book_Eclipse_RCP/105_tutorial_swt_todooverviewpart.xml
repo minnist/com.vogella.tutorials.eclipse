@@ -30,10 +30,10 @@
 			for the complete example coding.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/btn.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/btn.java[]
+----
 		
 		
 			The resulting user interface should look similar to the
@@ -60,10 +60,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/swt/TodoOverviewPart_SWT.java" />
-			</programlisting>
+[source,java]
+----
+include::res/swt/TodoOverviewPart_SWT.java[]
+----
 		
 	
 

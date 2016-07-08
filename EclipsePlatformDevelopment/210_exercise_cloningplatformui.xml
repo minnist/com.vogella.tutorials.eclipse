@@ -79,7 +79,7 @@ image::gerrit_getcloneurl60.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 			option becomes available. You end up with the projects from the repository imported into your workspace.
 		
 
-		<note>
+		NOTE:
 			
 				In case you cloned a Git repository without using the
 				Gerrit URL or not via Eclipse Git you

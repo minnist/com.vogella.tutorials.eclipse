@@ -119,13 +119,13 @@ image::compatibilitymode10.png" scale="25[Compatibility mode of 3.x API and 4.x 
 			application starts on top of an e4 runtime without requiring any change in
 			your code.
 		
-		<note>
+		NOTE:
 			
 				This assumes that your Eclipse 3.x application does not use any
 				3.x
 				internal API. Eclipse marks internal packages with
 				the
-				<parameter>x-internal</parameter>
+				_x-internal_
 				flag in the
 				_MANIFEST.MF_
 				file.

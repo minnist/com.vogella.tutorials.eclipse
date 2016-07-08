@@ -2,16 +2,8 @@
 == Using the History view
 
 === Purpose of the history view
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>commit history
-			</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Eclipse Git</primary>
-			<secondary>History view
-			</secondary>
-		</indexterm>
+
+
 		
 		
 			The
@@ -249,7 +241,7 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 		
 image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 		
-		<note>
+		NOTE:
 			
 				The
 				_Git Search_

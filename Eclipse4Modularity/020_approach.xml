@@ -65,7 +65,7 @@
 			Fragments define the desired position of new model
 			elements
 			via the
-			<parameter>Position in List</parameter>
+			_Position in List_
 			attribute. The following values are allowed:
 		
 		<table frame='all'>
@@ -82,41 +82,41 @@
 				<tbody>
 					<row>
 						<entry>
-							<parameter>first</parameter>
+							_first_
 						</entry>
 						<entry>Positions the element on the beginning of the list.</entry>
 					</row>
 					<row>
 						<entry>
-							<parameter>index:theIndex</parameter>
+							_index:theIndex_
 						</entry>
 						<entry>
 							Places the new model elements at position
-							<parameter>theIndex</parameter>
+							_theIndex_
 							. Example:
-							<parameter>index:0</parameter>
+							_index:0_
 
 						</entry>
 					</row>
 					<row>
 						<entry>
-							<parameter>before:theOtherElementsId</parameter>
+							_before:theOtherElementsId_
 						</entry>
 						<entry>
 							Places the new model elements before the model element with the
 							ID
-							<parameter>theOtherElementsId</parameter>
+							_theOtherElementsId_
 							.
 						</entry>
 					</row>
 					<row>
 						<entry>
-							<parameter>after:theotherelementsid</parameter>
+							_after:theotherelementsid_
 						</entry>
 						<entry>
 							Places the new model elements after the model element with the
 							ID
-							<parameter>theotherelementsid</parameter>
+							_theotherelementsid_
 							.
 						</entry>
 					</row>
@@ -130,9 +130,9 @@
 			the
 			Eclipse runtime,
 			therefore
-			<parameter>first</parameter>
+			_first_
 			or
-			<parameter>index</parameter>
+			_index_
 			might not always result in the desired outcome.
 		
 	

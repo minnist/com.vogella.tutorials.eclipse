@@ -87,8 +87,8 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/Messages.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/Messages.java[]
+----
 		
 		
 			In this example the
@@ -104,8 +104,8 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/messages.properties" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/messages.properties[]
+----
 		
 		
 			In your code you access the translations via the
@@ -115,8 +115,8 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/using.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/using.txt[]
+----
 		
 		
 			You can also use placeholders in the messages and evaluate them with
@@ -127,13 +127,13 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place1.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place1.txt[]
+----
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place2.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place2.txt[]
+----
 		
 
 		 If translations should be used over several plug-ins to ensure consistency,

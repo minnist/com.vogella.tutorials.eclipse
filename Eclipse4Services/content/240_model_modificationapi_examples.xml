@@ -13,17 +13,17 @@
 		
 			In this
 			example it changes the
-			<parameter>container data</parameter>
+			_container data_
 			parameter for its children. This will
 			arrange (layout) the
 			parts
 			in the container.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/emodelservice/layoutingPerspective.java" />
-			</programlisting>
+[source,java]
+----
+include::res/emodelservice/layoutingPerspective.java[]
+----
 		
 
 
@@ -43,10 +43,10 @@
 			application is demonstrated by the following code snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/model/addWindow.java" />
-			</programlisting>
+[source,java]
+----
+include::res/model/addWindow.java[]
+----
 		
 	
 
@@ -59,8 +59,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/model/AddPartHandler.java" />
-			</programlisting>
+					parse="text" href="../examples/model/AddPartHandler.java[]
+----
 		
 		<tip>
 			

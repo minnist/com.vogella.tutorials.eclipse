@@ -6,7 +6,7 @@
 		
 			To ensure that always the latest version of your application model is
 			used, add the
-			<parameter>-clearPersistedState</parameter>
+			_-clearPersistedState_
 			parameter to your product configuration file.
 		
 
@@ -18,14 +18,14 @@ image::deletepersistedmodel10.png"
 						scale="40[Delete persisted Eclipse application model,pdfwidth=60%]
 		
 
-		<note>
+		NOTE:
 			
 				Ensure that you used the
-				<parameter>-</parameter>
+				_-_
 				sign and that the parameter is typed correctly. Is must be:
 			
 			
-				<parameter>-clearPersistedState</parameter>
+				_-clearPersistedState_
 			
 		</note>
 

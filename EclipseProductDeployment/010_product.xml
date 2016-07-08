@@ -145,9 +145,9 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
         
             The predefined name and location of the splash screen image can be
             changed via the
-            <parameter class='command'>osgi.splashPath</parameter>
+            <parameter class='command'>osgi.splashPath_
             parameter, the file name can be changed with the
-            <parameter>-showsplash path_to_file</parameter>
+            _-showsplash path_to_file_
             . See
             <xref linkend="runconfiguration_product" />
             to learn how to set launch parameters.
@@ -181,7 +181,7 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
             deployment of the product. A launcher is
             platform specific. For
             example the default launcher is called
-            <parameter class='command'>eclipse.exe</parameter>
+            <parameter class='command'>eclipse.exe_
             on the
             MS Windows platform. This
             launcher has also

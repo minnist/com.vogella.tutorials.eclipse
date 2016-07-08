@@ -181,8 +181,8 @@ image::swtwidgetoverview10.png"
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/start/push.txt" />
-			</programlisting>
+					parse="text" href="./examples/start/push.txt[]
+----
 		
 		 The following example creates a checkbox button. The only
 			difference is the usage of another stylebit.
@@ -190,8 +190,8 @@ image::swtwidgetoverview10.png"
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/start/check.txt" />
-			</programlisting>
+					parse="text" href="./examples/start/check.txt[]
+----
 		
 	
 

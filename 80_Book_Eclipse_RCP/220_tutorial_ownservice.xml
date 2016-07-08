@@ -86,8 +86,8 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples//osgi/TodoServiceImplOsgiDs.java" />
-			</programlisting>
+					href="./examples//osgi/TodoServiceImplOsgiDs.java[]
+----
 		
 	
 
@@ -112,8 +112,8 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/PostConstruct.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/PostConstruct.java[]
+----
 		
 	
 
@@ -192,8 +192,8 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/servicereference.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/servicereference.txt[]
+----
 		
 
 	

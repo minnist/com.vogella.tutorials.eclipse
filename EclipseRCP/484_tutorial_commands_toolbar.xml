@@ -16,9 +16,9 @@
 			entry and press the
 			_Add..._
 			button. The
-			<parameter>Side</parameter>
+			_Side_
 			attribute should be set to
-			<parameter>Top</parameter>
+			_Top_
 			, so that all toolbars assigned to that
 			trimbar
 			appear on the top of
@@ -44,7 +44,7 @@ image::commands40.png" scale="30[Adding a toolbar,pdfwidth=60%]
 		
 		
 			Set the label for this entry to
-			<parameter>Save</parameter>
+			_Save_
 			.
 		
 

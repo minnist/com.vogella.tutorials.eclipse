@@ -34,10 +34,10 @@
 			service via dependency injection.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/selection/GetSelectionService.java" />
-			</programlisting>
+[source,java]
+----
+include::res/selection/GetSelectionService.java[]
+----
 		
 	
 
@@ -50,10 +50,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/selection/ViewerSetSelection.java" />
-			</programlisting>
+[source,java]
+----
+include::res/selection/ViewerSetSelection.java[]
+----
 		
 	
 
@@ -71,8 +71,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/selection/TodoDetailsPartSelection.java" />
-			</programlisting>
+					parse="text" href="../examples/selection/TodoDetailsPartSelection.java[]
+----
 		
 	
 
@@ -106,7 +106,7 @@
 			
 
 		</warning>
-		<note>
+		NOTE:
 			
 				It might also happen that
 				`setTodo()`

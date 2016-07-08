@@ -49,7 +49,7 @@ image::e4_commandpara30.png[Passing a parameter from a menu entry to a command,p
 				injected via the
 				`@Named`
 				annotation and used as
-				<parameter>Name</parameter>
+				_Name_
 				(second field) during the definition of the menu or toolbar. This is
 				highlighted in the following picture.
 			
@@ -70,8 +70,8 @@ image::parameter_relationship10.png" scale="35[Relationship between parameters i
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/commandparameter/TestHandler.java" />
-			</programlisting>
+					href="./examples/commandparameter/TestHandler.java[]
+----
 		
 
 
@@ -200,7 +200,7 @@ image::e4_coreexpression12.png" scale="30[Assigning it to the menu entry,pdfwidt
 			The following code demonstrates an example handler class which places
 			a
 			value for the
-			<parameter>myactivePartId</parameter>
+			_myactivePartId_
 			key in the context (you will learn more
 			about modifying the
 			`IEclipseContext`
@@ -209,15 +209,15 @@ image::e4_coreexpression12.png" scale="30[Assigning it to the menu entry,pdfwidt
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/coreexpression/putactivePartId.txt" />
-			</programlisting>
+					href="./examples/coreexpression/putactivePartId.txt[]
+----
 		
 
 		
 			The following shows an example core expression which evaluates to
 			`true`
 			if an
-			<parameter>myactivePartId</parameter>
+			_myactivePartId_
 			key
 			with the value
 			`com.example.e4.rcp.ui.parts.todooverview`

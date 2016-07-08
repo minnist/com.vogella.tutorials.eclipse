@@ -21,11 +21,11 @@
 		For example the following custom widget allows to set a text.
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidget.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidget.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 				Since there is no predefined
 				`IObservable`
@@ -66,15 +66,15 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetObservableValue.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetObservableValue.java[]
+----
 		
 		This observable can then be used like this:
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Observable.java" />
-			</programlisting>
+					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Observable.java[]
+----
 		
 	
 	<section>
@@ -95,8 +95,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetProperty.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetProperty.java[]
+----
 		
 		
 			This
@@ -106,8 +106,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Property.java" />
-			</programlisting>
+					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Property.java[]
+----
 		
 	
 	<section>
@@ -145,8 +145,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/VogellaDelegatingValueProperty.java" />
-			</programlisting>
+					href="./examples/custom_observable/VogellaDelegatingValueProperty.java[]
+----
 		
 		
 			In order to have a factory like the
@@ -158,8 +158,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaProperties.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaProperties.java[]
+----
 		
 		
 			You might want to have a look at
@@ -173,8 +173,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaPropertiesPart.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaPropertiesPart.java[]
+----
 		
 	
 

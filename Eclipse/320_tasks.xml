@@ -45,8 +45,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/todo/MyFirstClass.java" />
-			</programlisting>
+					parse="text" href="../examples/todo/MyFirstClass.java[]
+----
 		
 		
 			Close the editor for the

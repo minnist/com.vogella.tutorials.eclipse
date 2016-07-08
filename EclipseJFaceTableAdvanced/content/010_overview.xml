@@ -14,10 +14,10 @@
 			implementation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/editing/FirstNameEditingSupport.java" />
-			</programlisting>
+[source,java]
+----
+include::res/editing/FirstNameEditingSupport.java[]
+----
 		
 		
 			The
@@ -95,10 +95,10 @@
 			object.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/Editing.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/Editing.java[]
+----
 		
 		
 			From an application design perspective, editing within a table
@@ -136,10 +136,10 @@
 			if it should be filtered.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/filter/PersonFilter.java" />
-			</programlisting>
+[source,java]
+----
+include::res/filter/PersonFilter.java[]
+----
 		
 		
 			All filters are checked
@@ -172,10 +172,10 @@
 			method of the objects in the viewer.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/compare.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/compare.java[]
+----
 		
 	
 
@@ -199,10 +199,10 @@
 			assigned.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/layout/LayoutSetup.java" />
-			</programlisting>
+[source,java]
+----
+include::res/layout/LayoutSetup.java[]
+----
 		
 		
 			The
@@ -210,10 +210,10 @@
 			requires that you define a fixed or relative size for all columns.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/layout/LayoutColumn.java" />
-			</programlisting>
+[source,java]
+----
+include::res/layout/LayoutColumn.java[]
+----
 		
 	
 
@@ -235,10 +235,10 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/style.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/style.java[]
+----
 		
 		
 			As a result the number "15" will be highlighted as depicted in
@@ -258,10 +258,10 @@ image::styledcelllabelprovider10.png"
 			image into the cell.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/snippets/OwnerDrawLabelProvider.java" />
-			</programlisting>
+[source,java]
+----
+include::res/snippets/OwnerDrawLabelProvider.java[]
+----
 		
 		
 image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
@@ -286,10 +286,10 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 			setting as demonstrated in the following code snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/showhide/View.java" />
-			</programlisting>
+[source,java]
+----
+include::res/showhide/View.java[]
+----
 		
 	
 
@@ -302,10 +302,10 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 			you have to activate the tooltips for a viewer.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/tooltips/activate.java" />
-			</programlisting>
+[source,java]
+----
+include::res/tooltips/activate.java[]
+----
 		
 		
 			In your
@@ -313,10 +313,10 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 			you specify the related methods for displaying the tooltip.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/tooltips/CellEditor.java" />
-			</programlisting>
+[source,java]
+----
+include::res/tooltips/CellEditor.java[]
+----
 		
 	
 
@@ -334,16 +334,16 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 			its usage.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/lazycontent/ContentProvider.java" />
-			</programlisting>
+[source,java]
+----
+include::res/lazycontent/ContentProvider.java[]
+----
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/lazycontent/Lazy.java" />
-			</programlisting>
+[source,java]
+----
+include::res/lazycontent/Lazy.java[]
+----
 		
 	
 

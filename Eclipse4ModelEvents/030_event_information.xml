@@ -43,8 +43,8 @@ Version 0.3, 06.07.2016
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/attname_label.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/attname_label.java[]
+----
 		
 		
 			<mediaobject>
@@ -52,7 +52,7 @@ Version 0.3, 06.07.2016
 					<imagedata fileref="./images/label_attname.png[Label ATTNAME,pdfwidth=60%]
 		
 		
-			<note>
+			NOTE:
 				
 					The
 					<property>label</property>
@@ -93,7 +93,7 @@ Version 0.3, 06.07.2016
 			contain the changed value of the element's attribute.
 		
 		
-			<note>
+			NOTE:
 				
 					In the old Eclipse 3.x days, you would have registered an
 					`IPerspectiveListener`
@@ -116,8 +116,8 @@ Version 0.3, 06.07.2016
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspective_stack_selected_element_event.java" />
-			</programlisting>
+					href="./examples/perspective_stack_selected_element_event.java[]
+----
 		
 		
 			In case you want to listen to a kind of "perspective changed" event, you need to
@@ -209,8 +209,8 @@ Version 0.3, 06.07.2016
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/position_event_tag.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/position_event_tag.java[]
+----
 		
 		
 			In case you drag and drop a

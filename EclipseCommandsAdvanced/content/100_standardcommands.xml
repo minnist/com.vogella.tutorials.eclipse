@@ -38,8 +38,8 @@ image::standardcommand10.gif" />
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/standardcommands/ApplicationActionBarAdvisor.java" />
-			</programlisting>
+					href="../examples/standardcommands/ApplicationActionBarAdvisor.java[]
+----
 		
 	
 

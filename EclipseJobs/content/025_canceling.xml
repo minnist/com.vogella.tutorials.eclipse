@@ -31,10 +31,10 @@
 
 === Handle Job cancellation before Eclipse Neon (4.6)
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/progressreport/IsCancelCheck.java" />
-			</programlisting>
+[source,java]
+----
+include::res/progressreport/IsCancelCheck.java[]
+----
 		
 	
 
@@ -43,8 +43,8 @@
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text"
-					href="../examples/progressreport/IsCancelCheckSubmonitorSplit.java" />
-			</programlisting>
+					href="../examples/progressreport/IsCancelCheckSubmonitorSplit.java[]
+----
 		
 		
 			The new
@@ -62,7 +62,7 @@
 			then.
 		
 		
-			<note>
+			NOTE:
 				Using the new Submonitor's
 				`split`
 				is not only shorter than the former approach, but also provides

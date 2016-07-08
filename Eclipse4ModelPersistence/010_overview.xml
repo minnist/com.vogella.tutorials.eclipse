@@ -38,9 +38,9 @@
 			entry and select
 			menu:New [Property]
 			. Use
-			<parameter>applicationXMI</parameter>
+			_applicationXMI_
 			as parameter name and
-			<parameter>com.example.e4.rcp.todo/ApplicationNew.e4xmi</parameter>
+			_com.example.e4.rcp.todo/ApplicationNew.e4xmi_
 			as value. This value
 			consists of the
 			`BundleSymbolicName`
@@ -74,7 +74,7 @@ image::tutorial_product70.png[,pdfwidth=60%]
 		
 		
 			You can specify the
-			<parameter>modelResourceHandler</parameter>
+			_modelResourceHandler_
 			as parameter on your product extension to point to another class via
 			the
 			`bundleclass://`

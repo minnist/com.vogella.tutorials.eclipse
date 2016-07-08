@@ -29,7 +29,7 @@
 		<tip>
 			
 				User changes can be deleted at start of your application via the
-				<parameter>clearPersistedState</parameter>
+				_clearPersistedState_
 				parameter as a launch parameter. In most cases this is undesired behavior for an exported application and only used
 				during development.
 			
@@ -90,7 +90,7 @@
 			interface
 			component.
 		
-		<note>
+		NOTE:
 			
 				This behavior can be surprising during development. The
 				developer
@@ -100,7 +100,7 @@
 				application because Eclipse assumes that the user closed it
 				in an
 				earlier session. Use the
-				<parameter>clearPersistedState</parameter>
+				_clearPersistedState_
 				parameter to avoid the processing of user changes at startup.
 			
 		</note>

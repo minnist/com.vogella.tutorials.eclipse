@@ -8,7 +8,7 @@
 		`IExtensionRegistry`
 		.
 	
-	<note>
+	NOTE:
 		The Eclipse platform reads the
 		extension points and provided extensions
 		once the

@@ -11,7 +11,7 @@
 			preference
 			values in a part.
 		
-		<note>
+		NOTE:
 			We do not persists the password in this exercises, because
 				persisting passwords without encryption is a security risk.
 			
@@ -25,7 +25,7 @@
 			handler to get and store the user via
 			the preference
 			values. As
-			<parameter>nodePath</parameter>
+			_nodePath_
 			is not explicitly set for the
 			`@Execugte`
 			method, it uses 
@@ -33,18 +33,18 @@
 			which is the Bundle-SymbolicName of your application plug-in.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/preferences/EnterCredentialsHandler.java" />
-			</programlisting>
+[source,java]
+----
+include::res/preferences/EnterCredentialsHandler.java[]
+----
 		
 
-		<note>
+		NOTE:
 			
 
 			
 		</note>
-		<note>
+		NOTE:
 			
 				The
 				`@Preference`
@@ -61,10 +61,10 @@
 			print the values to the console.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/preferences/Listen.java" />
-			</programlisting>
+[source,java]
+----
+include::res/preferences/Listen.java[]
+----
 		
 	
 

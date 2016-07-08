@@ -38,7 +38,7 @@ image::adapter10.gif" />
 		
 			Add the
 			dependency
-			<parameter>org.eclipse.ui.views</parameter>
+			_org.eclipse.ui.views_
 			in tab dependencies of
 			_plugin.xml_
 			.
@@ -46,8 +46,8 @@ image::adapter10.gif" />
 		 Create the following data model.
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/Todo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/Todo.java[]
+----
 		
 
 		
@@ -60,14 +60,14 @@ image::adapter10.gif" />
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/SampleView.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/SampleView.java[]
+----
 		
 
 		
 			To displays its values in the property view, add the extension
 			point
-			<parameter>org.eclipse.core.runtime.adapters</parameter>
+			_org.eclipse.core.runtime.adapters_
 			to your project. The data
 			of the extension point should be like the following.
 		
@@ -87,14 +87,14 @@ image::adapter10.gif" />
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoAdapterFactory.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoAdapterFactory.java[]
+----
 		
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoPropertySource.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/TodoPropertySource.java[]
+----
 		
 
 

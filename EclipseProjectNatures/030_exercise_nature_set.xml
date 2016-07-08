@@ -55,8 +55,8 @@ Version 0.3, 06.07.2016
         <title>Add a convert command
         Now use the `org.eclipse.ui.commands` extension point and add a command
             with `com.example.product.examplenature.command`  as
-                <parameter>id</parameter> and `Convert to Example Project` as
-                <parameter>name</parameter>.
+                _id_ and `Convert to Example Project` as
+                _name_.
     
     <section>
         <title>Add a convert handler
@@ -73,9 +73,9 @@ Version 0.3, 06.07.2016
         <title>Add the menu contribution for the conversion
         The id of the <guimenu>Configure</guimenu> menu in a projects context menu is
                 `org.eclipse.ui.projectConfigure` and therefore the
-                <parameter>locationURI</parameter> of the <parameter>menuContribution</parameter>
+                _locationURI_ of the _menuContribution_
             must be `popup:org.eclipse.ui.projectConfigure`. In this
-                <parameter>menuContribution</parameter> we then reference the defined
+                _menuContribution_ we then reference the defined
             command.
         
             <mediaobject>
@@ -88,7 +88,7 @@ Version 0.3, 06.07.2016
     
         <title>Optional - Add a core expression
         As I already mentioned the <guimenu>Configure</guimenu> menu is only visible, in case
-            it has elements in it, we should only apply the <parameter>menuContribution</parameter>
+            it has elements in it, we should only apply the _menuContribution_
             to it, if the nature has not already been set.
         Therefore we want to add a core expression with the
                 `org.eclipse.core.expressions.definitions` extension point.
@@ -99,11 +99,11 @@ Version 0.3, 06.07.2016
                 </imageobject>
             </mediaobject>
         
-        The <parameter>id</parameter> of the definition should be
+        The _id_ of the definition should be
                 `com.example.project.hasNature`, which adapts
-                `org.eclipse.core.resources.IProject` as <parameter>type</parameter> and
+                `org.eclipse.core.resources.IProject` as _type_ and
             reuses a predefined `PropertyTester`, which is able to check for certain
-            project natures. The <parameter>property</parameter> of the `PropertyTester`
+            project natures. The _property_ of the `PropertyTester`
             is `org.eclipse.core.resources.projectNature`.
         
             <mediaobject>
@@ -112,8 +112,8 @@ Version 0.3, 06.07.2016
                 </imageobject>
             </mediaobject>
         
-        Now we only need to reference this definition in a <parameter>visibleWhen</parameter>
-            definition for the <parameter>menuContribution</parameter>.
+        Now we only need to reference this definition in a _visibleWhen_
+            definition for the _menuContribution_.
         
             <mediaobject>
                 <imageobject>
@@ -121,9 +121,9 @@ Version 0.3, 06.07.2016
                 </imageobject>
             </mediaobject>
         
-        Do not forget to define <parameter>(not)</parameter> and then reference the
+        Do not forget to define _(not)_ and then reference the
                 `com.example.project.hasNature` definition. The
-                <parameter>(not)</parameter> is not directly part of the definition itself, because
+                _(not)_ is not directly part of the definition itself, because
             we want to reuse this definition later on, where we want to ensure that the
                 `com.example.project.examplenature` is applied to a project.
     

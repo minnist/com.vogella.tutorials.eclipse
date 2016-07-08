@@ -115,7 +115,7 @@ image::e4uicomponents20.png" scale="60[The hierarchy of Parts using PartStacks a
 
 		
 			You can use the
-			<parameter>Container Data</parameter>
+			_Container Data_
 			attribute on a child of a part sash container
 			to assign a layout
 			weight.
@@ -131,7 +131,7 @@ image::containerdata20.png[Container data for layouting,pdfwidth=60%]
 		
 		
 			If you set the
-			<parameter>Container Data</parameter>
+			_Container Data_
 			for one element, you must define it for
 			all the other elements, too.
 			Otherwise

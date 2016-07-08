@@ -7,7 +7,7 @@
 			`Browser`
 			widget.
 		
-		<note>
+		NOTE:
 			
 				This exercise does not always work on a
 				Linux system because on
@@ -30,7 +30,7 @@
 image::swtmap10.png" scale="60[SWT Browser Widget example with Google Maps,pdfwidth=60%]
 		
 		
-		<note>
+		NOTE:
 			This example might not work, in case Google changes its API.
 			
 		</note>
@@ -56,8 +56,8 @@ image::swtmap10.png" scale="60[SWT Browser Widget example with Google Maps,pdfwi
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/playground/PlaygroundPart.java" />
-			</programlisting>
+					parse="text" href="./examples/playground/PlaygroundPart.java[]
+----
 		
 
 	

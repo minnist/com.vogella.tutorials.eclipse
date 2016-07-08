@@ -97,7 +97,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		</tip>
 		
 			You need to specify the key the context function is responsible for. This is done via the
-			<parameter>service.context.key</parameter>
+			_service.context.key_
 			property in the service definition.
 		
 		
@@ -137,8 +137,8 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunctions/Inject.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunctions/Inject.java[]
+----
 		
 
 		The following example demonstrates a possible implementation of
@@ -146,8 +146,8 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/todo/Todo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/todo/Todo.java[]
+----
 		
 
 	
@@ -202,8 +202,8 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/todo/TodoServiceContextFunctionOSGi.java" />
-			</programlisting>
+					href="./examples/todo/TodoServiceContextFunctionOSGi.java[]
+----
 		
 
 

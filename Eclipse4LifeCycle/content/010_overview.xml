@@ -68,8 +68,8 @@
 		The access is demonstrated by the following snippet.
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/access.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/access.java[]
+----
 		
 		A parameter can be a flag or can have a parameter and a value.
 			You can use a method similar to the following to
@@ -77,8 +77,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/getValue.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/getValue.java[]
+----
 		
 
 
@@ -212,8 +212,8 @@
 
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/LifeCycleManager.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/LifeCycleManager.java[]
+----
 		
 
 

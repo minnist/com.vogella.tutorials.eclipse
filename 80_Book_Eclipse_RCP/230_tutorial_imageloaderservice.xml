@@ -43,7 +43,7 @@
 			</itemizedlist>
 		
 
-		<note>
+		NOTE:
 			
 				The
 				`org.eclipse.jface`
@@ -76,8 +76,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/service/IBundleResourceLoader.java" />
-			</programlisting>
+					href="./examples/service/IBundleResourceLoader.java[]
+----
 		
 
 
@@ -97,8 +97,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/service/BundleResourceLoaderImpl.java" />
-			</programlisting>
+					href="./examples/service/BundleResourceLoaderImpl.java[]
+----
 		
 
 
@@ -166,8 +166,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/LabelAssign.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/LabelAssign.java[]
+----
 		
 
 

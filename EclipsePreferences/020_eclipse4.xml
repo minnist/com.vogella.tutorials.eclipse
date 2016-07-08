@@ -27,15 +27,15 @@
 		The
 		`@Preference`
 		annotation allows you to specify the
-		<parameter>nodePath</parameter>
+		_nodePath_
 		and the
-		<parameter>value</parameter>
+		_value_
 		as optional parameters.
 	
 
 	
 		The
-		<parameter>nodePath</parameter>
+		_nodePath_
 		is the file name
 		used to save the
 		preference values to disk.
@@ -43,7 +43,7 @@
 		this is
 		the
 		Bundle-SymbolicName of the plug-in. The
-		<parameter>value</parameter>
+		_value_
 		parameter specifies the preference key for the value which should be
 		injected.
 	

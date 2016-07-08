@@ -47,11 +47,7 @@
 
 
 === Installing your plug-in from your Eclipse IDE
-		<indexterm>
-			<primary>Plug-in deployment</primary>
-			<secondary>installation into host IDE
-			</secondary>
-		</indexterm>
+
 		
 			You can install
 			your plug-in directly into your running Eclipse

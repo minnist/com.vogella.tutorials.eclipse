@@ -29,8 +29,8 @@ image::firstservice10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/IQuoteService.java" />
-			</programlisting>
+					parse="text" href="./examples/service/IQuoteService.java[]
+----
 		
 	
 
@@ -53,15 +53,15 @@ image::firstservice20.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/QuoteService.java" />
-			</programlisting>
+					parse="text" href="./examples/service/QuoteService.java[]
+----
 		
 		 Register the service in the class Activator.
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorService.java" />
-			</programlisting>
+					parse="text" href="./examples/service/ActivatorService.java[]
+----
 		
 	
 
@@ -103,8 +103,8 @@ image::firstservice35.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorConsument.java" />
-			</programlisting>
+					parse="text" href="./examples/service/ActivatorConsument.java[]
+----
 		
 		Export this bundle, install it and start and stop it.
 			Everything
@@ -133,8 +133,8 @@ image::firstservice40.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/MyQuoteServiceTrackerCustomizer.java" />
-			</programlisting>
+					parse="text" href="./examples/service/MyQuoteServiceTrackerCustomizer.java[]
+----
 		
 		 You also need to register a service tracker in your activator
 			of your serviceconsumer.
@@ -142,8 +142,8 @@ image::firstservice40.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorServiceTracker.java" />
-			</programlisting>
+					parse="text" href="./examples/service/ActivatorServiceTracker.java[]
+----
 		
 		 Export your bundle again. Start the OSGi console. Use the
 			update command or the install command to get the new version of your

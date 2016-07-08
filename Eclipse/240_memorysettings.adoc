@@ -1,0 +1,103 @@
+== Eclipse command line configuration
+
+=== Eclipse memory and performance settings
+
+Your Eclipse installation contains a file called
+_eclipse.ini_
+which allows you to configure the memory parameters for the
+Java
+virtual
+machine which runs the Eclipse IDE. For
+example,
+the
+_-Xmx_
+parameter can be used to define how large the Java heap size can
+get.
+_-Xms_
+defines the initial heap size of the Java virtual machine.
+
+The following listing shows an example
+_eclipse.ini_
+file. The parameters after -vmargs configure the Java virtual
+machine.
+On a modern machine (with at least 8 Gigabyte
+available memory) assigning 2024 MB or more to
+the Java
+virtual
+machine is a good practice to run Eclipse faster.
+
+[source,txt]
+----
+include::res/preferences/eclipse.ini_memory[]
+----
+
+You can in additional also turn of
+_class verification_
+in the JVM. This avoids that the JVM checks if the class data which are loaded is not
+corrupt or
+invalid.
+This check is
+only
+really important if
+byte code in manipulated and adds
+10-20% additional startup time. To disable this check add
+the
+_-Xverify:none option_
+option
+on your JVM.
+
+NOTE: These options can also be specified per invocation of the Eclipse IDE, e.g., for desktop shortcuts. For example
+to
+start Eclipse with 2GB of memory, use the following command line:
+`./eclipse -vmargs -Xmx2024m`
+.
+
+=== Eclipse startup parameters
+
+Eclipse allows you to configure it via
+startup
+parameters. This
+requires that you start Eclipse from the
+command
+line or that you
+configure your launcher links to include these
+parameters.
+
+The following table shows important parameters.
+
+.Workspace startup parameters
+|===
+|Parameter |Description
+
+|-data workspace_path
+|Predefine the Eclipse workspace
+
+|-showLocation
+|Enables the display of the current workspace directory in the header of the running IDE
+|===
+
+For example, if you want to start Eclipse under Microsoft
+Windows
+using
+the
+_c:\temp_
+directory as
+_workspace_
+,
+you can start Eclipse via the following command
+from the
+command line.
+
+[source,java]
+----
+include::res/snippets/workspace.txt[]
+----
+
+Depending on your platform, you may have to put the path name
+into
+double quotes.
+
+NOTE: You find all available runtime options in the
+http://help.eclipse.org/">Eclipse help
+if you search for the "Eclipse runtime options" term.
+

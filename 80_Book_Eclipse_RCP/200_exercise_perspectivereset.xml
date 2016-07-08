@@ -44,8 +44,8 @@ image::perpective_reset_applicationmodel.png" scale="50[Application model requir
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspectives/SavePerspectiveHandler.java" />
-			</programlisting>
+					href="./examples/perspectives/SavePerspectiveHandler.java[]
+----
 		
 	
 
@@ -56,8 +56,8 @@ image::perpective_reset_applicationmodel.png" scale="50[Application model requir
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspectives/RestorePerspectiveHandler.java" />
-			</programlisting>
+					href="./examples/perspectives/RestorePerspectiveHandler.java[]
+----
 		
 		Create a snippet in your application model for the default of a certain perspective. Use the same ID as the
 			perspective you want to be able to reset.

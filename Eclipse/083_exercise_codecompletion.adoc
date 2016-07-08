@@ -1,0 +1,130 @@
+== Exercise: code generation and content assists
+
+=== Introduction
+		
+In this exercise you practice the usage of code generation and
+the
+usage of the
+_Content Assists_
+functionality.
+
+=== Create project
+		
+Create a project called
+`com.vogella.ide.todo`
+.
+
+=== Create class
+		
+Create the
+`com.vogella.ide.todo`
+package
+and the
+following class.
+		
+[source,java]
+----
+include::res/net/TodoBase.java[]
+----		
+		
+Select
+menu:Source[Generate Constructor using Fields...]
+to generate a constructor using all fields.
+
+Use the
+menu:Source[Generate Getter and Setter]
+to create getters and setters for all fields.
+		
+The resulting class should look like the following listing.
+		
+[source,java]
+----
+include::res/net/Todo.java[]
+----
+		
+Use Eclipse to generate a
+`toString()`
+method for the
+`Todo`
+class based on the
+_id_
+and
+_summary_
+field.
+
+This can be done via the Eclipse menu
+menu:Source[Generate toString()...]
+.
+
+Also
+use Eclipse to generate a
+`hashCode()`
+and
+`equals()`
+method based on the
+_id_
+field. This can be done via the
+Eclipse menu
+menu:Source[Generate hashCode() and equals()...]
+.
+
+=== Create instances
+		
+Create a new class called
+`TodoProvider`
+.
+Create the following static method in your
+`TodoProvider`
+class.
+		
+[source,java]
+----
+include::res/net/TodoProvider.java[]
+----		
+
+=== Write a test class
+		
+Write another
+`TodoProviderTest`
+class
+with a
+`public static void main (String[] args)`
+method.
+		
+In your main method call the
+`createInitialModel`
+method and validate that the returned number of
+items is 5.
+		
+If another number than 5 is returned, throw a
+`RuntimeException`
+. If the correct number is returned, write the String "Correct" to
+the
+_Console_
+view
+.
+		
+Use
+_Content assist_
+to create the
+`System.out.println()`
+based on
+`syso`
+for you.
+		
+image::contentassists10.png[Content Assists Input,pdfwidth=60%]
+		
+image::contentassists20.png[Content Assists Result,pdfwidth=60%]
+		
+=== Example implementation of TodoProviderTest
+		
+While this exercise was about code generation and content
+assits,
+you might be interested in a potential solution for this exercise. The
+following listing contains a potential solution.
+		
+[source,java]
+----
+include::res/net/TodoProviderTest.java[]
+----
+		

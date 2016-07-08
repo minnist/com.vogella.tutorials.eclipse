@@ -13,15 +13,15 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/simple/Main.java" />
-			</programlisting>
+					parse="text" href="./examples/simple/Main.java[]
+----
 		
 	
 
 === Run project and create heap dump
 		
 			In Eclipse add the
-			<parameter>-XX:+HeapDumpOnOutOfMemoryError</parameter>
+			_-XX:+HeapDumpOnOutOfMemoryError_
 			to the
 			runtime configuration.
 		

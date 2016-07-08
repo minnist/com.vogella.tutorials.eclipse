@@ -20,7 +20,7 @@ image::download_developmentbuilds10.png[Download development builds,pdfwidth=60%
 			build by the Eclipse
 			platform team.
 		
-		<note>
+		NOTE:
 			
 				For several Eclipse projects you can also use the Eclipse installer. See
 				<xref linkend="usingtheinstaller" />

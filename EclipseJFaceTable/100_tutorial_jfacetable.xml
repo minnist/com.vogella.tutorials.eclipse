@@ -38,8 +38,8 @@ image::jfacetable10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Person.java" />
-			</programlisting>
+					parse="text" href="./examples/model/Person.java[]
+----
 		
 		
 			The Person
@@ -66,8 +66,8 @@ image::jfacetable10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/ModelProvider.java" />
-			</programlisting>
+					parse="text" href="./examples/model/ModelProvider.java[]
+----
 		
 	
 
@@ -82,8 +82,8 @@ image::jfacetable10.gif" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/view/View.java" />
-			</programlisting>
+					parse="text" href="./examples/view/View.java[]
+----
 		
 		
 			The
@@ -93,7 +93,7 @@ image::jfacetable10.gif" />
 			columns and
 			makes the columns re-sizable.
 		
-		<note>
+		NOTE:
 			
 
 				The

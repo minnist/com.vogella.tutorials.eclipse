@@ -50,10 +50,10 @@ image::osgi_simpleplugin10.png"
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/TodoSimple.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/TodoSimple.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				You see an error for your final id field. This error is solved
 				in the
@@ -69,7 +69,7 @@ image::osgi_simpleplugin10.png"
 			menu:Source[Generate Constructor using Fields...]
 			to generate a constructor using all fields. Use the same approach to
 			create another constructor using only the
-			<parameter>id</parameter>
+			_id_
 			field.
 		
 
@@ -91,9 +91,9 @@ image::osgi_simpleplugin10.png"
 			menu
 			to create getters and setters for your fields.
 		
-		<note>
+		NOTE:
 			The
-			<parameter>id</parameter>
+			_id_
 			is final and therefore Eclipse creates only a getter. This is correct
 			and desired.
 		</note>
@@ -116,8 +116,8 @@ image::osgi_model_settergetter10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/getDueDate.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/getDueDate.java[]
+----
 		
 		
 			The resulting class should look like the following listing.
@@ -125,13 +125,13 @@ image::osgi_model_settergetter10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Todo.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/Todo.java[]
+----
 		
-		<note>
+		NOTE:
 			
 				Why is the
-				<parameter>id</parameter>
+				_id_
 				field marked as final? We will use this field to generate the
 				`equals`
 				and
@@ -158,9 +158,9 @@ image::osgi_model_settergetter10.png"
 			method for the
 			`Todo`
 			class based on the
-			<parameter>id</parameter>
+			_id_
 			and
-			<parameter>summary</parameter>
+			_summary_
 			field.
 			This can be done via the Eclipse menu
 			menu:Source[Generate toString()...]
@@ -173,7 +173,7 @@ image::osgi_model_settergetter10.png"
 			and
 			`equals()`
 			method based on the
-			<parameter>id</parameter>
+			_id_
 			field. This can be done via the
 			Eclipse menu
 			menu:Source[Generate hashCode() and equals()...]
@@ -191,8 +191,8 @@ image::osgi_model_settergetter10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Copy.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/Copy.java[]
+----
 		
 	
 
@@ -204,8 +204,8 @@ image::osgi_model_settergetter10.png"
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Tag.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/Tag.java[]
+----
 		
 	
 
@@ -219,8 +219,8 @@ image::osgi_model_settergetter10.png"
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/ITodoService.java" />
-			</programlisting>
+					parse="text" href="./examples/datamodel/ITodoService.java[]
+----
 		
 	
 

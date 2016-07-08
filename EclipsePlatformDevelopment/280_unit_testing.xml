@@ -77,14 +77,14 @@
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/install.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/install.txt[]
+----
 		
 		You start the server with the following parameters.
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/start.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/start.txt[]
+----
 		
 		
 			In the Eclipse launch configuration you can define the display
@@ -108,8 +108,8 @@ image::settingdisplayforunittests.png" scale="30[Setting the Display variable in
 		
 		
 			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/connect.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/connect.txt[]
+----
 		
 	
 

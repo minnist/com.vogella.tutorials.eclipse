@@ -19,14 +19,14 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Person.java" />
-			</programlisting>
+					parse="text" href="./examples/model/Person.java[]
+----
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Address.java" />
-			</programlisting>
+					parse="text" href="./examples/model/Address.java[]
+----
 		
 		
 			Add the JFace Data Binding plug-ins as dependency to your
@@ -41,8 +41,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/person/View.java" />
-			</programlisting>
+					parse="text" href="./examples/person/View.java[]
+----
 		
 
 		 Run the example and test it. Each time you change the UI
@@ -93,8 +93,8 @@ image::validation10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/validator/StringLongerThenTwo.java" />
-			</programlisting>
+					parse="text" href="./examples/validator/StringLongerThenTwo.java[]
+----
 		
 		
 		
@@ -106,7 +106,7 @@ image::validation10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/validator/View.java" />
-			</programlisting>
+					parse="text" href="./examples/validator/View.java[]
+----
 		
 	

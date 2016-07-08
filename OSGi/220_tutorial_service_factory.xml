@@ -58,8 +58,8 @@
 		
 		
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/server/TodoServiceFactory.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/server/TodoServiceFactory.java[]
+----
 		
 
 	
@@ -76,7 +76,7 @@
 			tab, so that it is available for other
 			plug-ins.
 		
-		<note>
+		NOTE:
 			Please note that the
 				Eclipse tooling does not support the export
 				of empty packages. You

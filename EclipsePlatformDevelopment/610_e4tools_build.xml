@@ -16,8 +16,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/source/e4tools.txt" />
-			</programlisting>
+					parse="text" href="./examples/source/e4tools.txt[]
+----
 		
 	
 
@@ -54,8 +54,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/build/releng" />
-			</programlisting>
+					parse="text" href="./examples/build/releng[]
+----
 		
 
 		
@@ -65,8 +65,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/build/tools" />
-			</programlisting>
+					parse="text" href="./examples/build/tools[]
+----
 		
 		
 			After the build finishes successfully, you find a p2 update site
@@ -76,8 +76,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/build/target" />
-			</programlisting>
+					parse="text" href="./examples/build/target[]
+----
 		
 	
 

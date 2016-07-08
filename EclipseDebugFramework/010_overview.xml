@@ -90,7 +90,7 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 				</listitem>
 			</itemizedlist>
 		
-		<note>
+		NOTE:
 			
 				The debug framework also offers an abstract
 				`org.eclipse.debug.core.model.DebugElement`
@@ -144,8 +144,8 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/RegisterDebugTarget.java" />
-			</programlisting>
+					parse="text" href="./examples/RegisterDebugTarget.java[]
+----
 		
 		
 			A general overview concerning the launcher framework can be found

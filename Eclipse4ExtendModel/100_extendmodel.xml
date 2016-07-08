@@ -75,9 +75,9 @@ image::renderermodel10.png"/>
 			Click on the button
 			_Browse Registered Packages_
 			and select the
-			<parameter>*UiModel/application</parameter>
+			_*UiModel/application_
 			model from the
-			<parameter>org.eclipse.e4.ui.model.workbench</parameter>
+			_org.eclipse.e4.ui.model.workbench_
 			plug-in.
 		
 		
@@ -96,10 +96,10 @@ image::renderermodel40.png[Define connections to an existing model, part 2,pdfwi
 			model element
 			and add the following
 			`Part`
-			<parameter>
+			_
 				ESuper
 				Types
-			</parameter>
+			_
 			to it.
 		
 		
@@ -111,7 +111,7 @@ image::renderermodel50.png"/>
 			Use
 			<property>BrowserPart</property>
 			as value for the
-			<parameter>Name</parameter>
+			_Name_
 			attribute.
 		
 		

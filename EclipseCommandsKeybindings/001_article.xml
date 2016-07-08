@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Define key bindings for Eclipse Commands - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -28,16 +39,16 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_introduction.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_prereqs.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/090_tutorial_keybinding.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseCommandsKeybindings"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.adoc[]
+include::010_introduction.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.adoc[]
+include::020_prereqs.adoc[]
+include::090_tutorial_keybinding.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

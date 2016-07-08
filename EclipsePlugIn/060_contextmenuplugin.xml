@@ -92,7 +92,7 @@
 		</para>
 		<para>
 			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/pluginsimple.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/pluginsimple.adoc[]
 			</programlisting>
 		</para>
 
@@ -186,7 +186,7 @@
 		</para>
 		<para>
 			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/plugin.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/plugin.adoc[]
 			</programlisting>
 		</para>
 		<para>

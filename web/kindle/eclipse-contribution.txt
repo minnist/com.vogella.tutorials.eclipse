@@ -1,0 +1,8 @@
+<div id="kindle">
+
+<a href="http://www.vogella.com/books/eclipsecontribution.html">
+	Get the book!
+	<img src="../../img/books/eclipsecontribution_book.png" width="150" height="200" alt="Eclipse Contribution book"/> 	
+</a>
+
+</div>

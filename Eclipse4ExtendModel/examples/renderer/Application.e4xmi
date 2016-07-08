@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" 

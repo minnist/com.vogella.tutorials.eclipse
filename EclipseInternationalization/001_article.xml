@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse RCP and Plugin Internationalization - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -32,23 +43,23 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_osgi.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_model.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/030_plugin.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_source.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="044_translatingjfaceswt.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/050_export.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/060_problems_i18n.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_eclipse4_i18n.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_tutorial3x.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseInternationalization"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_osgi.adoc[]
+include::020_model.adoc[]
+include::030_plugin.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_source.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="044_translatingjfaceswt.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::050_export.adoc[]
+include::060_problems_i18n.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::100_eclipse4_i18n.adoc[]
+include::200_tutorial3x.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

@@ -76,7 +76,7 @@
 	<para>
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/dsconsumer/component.xml" />
+				parse="text" href="./examples/dsconsumer/component.adoc[]
 		</programlisting>
 	</para>
 	<para> The result MANIFEST.MF should look like: </para>

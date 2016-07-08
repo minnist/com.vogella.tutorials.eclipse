@@ -195,7 +195,7 @@
 		<para>
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/fragments/plugin.xml" />
+					parse="text" href="./examples/fragments/plugin.adoc[]
 			</programlisting>
 		</para>
 	</section>

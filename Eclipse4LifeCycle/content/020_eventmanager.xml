@@ -106,7 +106,7 @@
 		<para>
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/event/plugin.xml" />
+					parse="text" href="../examples/event/plugin.adoc[]
 			</programlisting>
 		</para>
 

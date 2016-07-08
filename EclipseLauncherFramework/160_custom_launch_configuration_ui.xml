@@ -26,7 +26,7 @@
 	<para>
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/custom_launch/launchConfigurationTabGroup.xml" />
+				parse="text" href="./examples/custom_launch/launchConfigurationTabGroup.adoc[]
 		</programlisting>
 	</para>
 	<para>
@@ -80,7 +80,7 @@
 		<para>
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/custom_ui_launch/launchConfigurationTypeImages.xml" />
+				parse="text" href="./examples/custom_ui_launch/launchConfigurationTypeImages.adoc[]
 		</programlisting>
 	</para>
 	<para>The result will look similar to this:</para>

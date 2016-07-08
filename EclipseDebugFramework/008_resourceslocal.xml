@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <section id="eclipsedebugframeworkonline" role="wrapper">
 	<title>Eclipse Debug Framework Resources</title>
 	<para>

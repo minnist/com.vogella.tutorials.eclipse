@@ -73,7 +73,7 @@
 		<para>
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/DirectTodoSupplier.xml" />
+					parse="text" href="./examples/DirectTodoSupplier.adoc[]
 			</programlisting>
 		</para>
 

@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse Rich Ajax Platform (RAP) - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -29,18 +40,18 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/001_introduction.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_tutorial_rap_installation.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/20_firstrap.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/30_theming.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/40_singlesourcing.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/50_deployment.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseRAP"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::001_introduction.adoc[]
+include::010_tutorial_rap_installation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::20_firstrap.adoc[]
+include::30_theming.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::40_singlesourcing.adoc[]
+include::50_deployment.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

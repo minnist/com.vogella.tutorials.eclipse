@@ -1,0 +1,11 @@
+++++
+<div id="kindle">
+
+<a href="http://www.vogella.com/books/eclipseide.html">
+	Get the book!
+	<img src="../../img/books/eclipseide_book.png" width="150" height="200" alt="Eclipse IDE book"/> 	
+</a>
+
+</div>
+++++
+

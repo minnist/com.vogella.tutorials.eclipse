@@ -10,5 +10,5 @@
 			<ulink url="http://blog.vogella.com/2009/10/05/modifying-mylyn-context/"> Blog post about modifying Mylyn Context</ulink>
 		</para>
 	</section>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
 </section>

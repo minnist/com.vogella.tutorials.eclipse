@@ -1,6 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse Project Natures - Tutorial</title>
 		<author>
 			<firstname>Simon</firstname>
@@ -24,15 +35,17 @@
 	</articleinfo>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_define_project_nature.xml"/>
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+include::../web/advertisement/inBetween01.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_exercise_nature_set.xml"/>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_project_nature_image.xml"/>
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_project_nature_propertypages.xml"/>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_exercise_project_nature_propertypages.xml"/>
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml"/>
-	<?dbhtml-include href="../../web/vgwort/EclipseProjectNatures"?>
-</article>
+
+adoc[]

@@ -27,19 +27,19 @@
 				<imagedata fileref="images/cover.png" align="center" />
 			</imageobject>
 		</mediaobject>
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.adoc[]
 
 	</bookinfo>
 
 	<!-- <dedication> <para>For Jennifer, Kiran, Liam</para> </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
-		href="./004_foreword.xml" /> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.xml" /> -->
+		href="./004_foreword.adoc[] <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.adoc[] -->
 
 	<part>
 		<title>Setting up an Eclipse RCP development environment</title>
 		<chapter id="javainstallation">
 			<title>Install Java for Eclipse RCP development</title>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.xml" />
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.adoc[]
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.adoc[]
 		</chapter>
 
 		<chapter id="eclipseskdinstallationforrcp">
@@ -53,9 +53,9 @@
 				applications.
 			</para>
 
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.xml" />
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.xml" />
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/022_gettingstarted.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.adoc[]
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.adoc[]
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/022_gettingstarted.adoc[]
 
 
 
@@ -76,17 +76,17 @@
                     for this.
                 </para>
             </section>
-            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.xml" />
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.adoc[]
         </chapter>
 
 		
 		<chapter>
 			<title>Exercise: Enable Java access to all plug-ins</title>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.adoc[]
 		</chapter>
 		<chapter>
 			<title>Exercise: Defining a target platform</title>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.adoc[]
 		</chapter>
 	</part>
 </book>

@@ -1,0 +1,8 @@
+<div id="kindle">
+
+<a href="http://www.vogella.com/books/eclipsercp.html">
+	Get the book!
+	<img src="../../img/books/Eclipse4-RCP-V3-Book.png" width="150" height="200" alt="Eclipse RCP book"/> 	
+</a>
+
+</div>

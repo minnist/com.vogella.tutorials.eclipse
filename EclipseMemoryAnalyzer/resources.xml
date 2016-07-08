@@ -9,5 +9,5 @@
 				url="http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool">How to acquire a Heap Dump from MAT</ulink>
 		</para>
 	</section>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
 </section>

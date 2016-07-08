@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <section>
 	<title>Complete sample custom basic widget
 	Now let's create a sample custom basic widget by extending a

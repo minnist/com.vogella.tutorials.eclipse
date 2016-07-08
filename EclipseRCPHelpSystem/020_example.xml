@@ -96,7 +96,7 @@
 		<para>
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context.xml" />
+					parse="text" href="./examples/context.adoc[]
 			</programlisting>
 		</para>
 		<para> You then have to define an extension
@@ -105,7 +105,7 @@
 		<para>
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin.xml" />
+					parse="text" href="./examples/plugin.adoc[]
 			</programlisting>
 		</para>
 		<para> After this you can assign the help to individual controls. For

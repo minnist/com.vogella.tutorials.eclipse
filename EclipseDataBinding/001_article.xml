@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>JFace Data Binding - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -36,26 +47,26 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_introduction.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_binding.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_introduction.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_binding.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_validatorsconvertors.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_moreonbinding.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_jfaceviewers.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="094_custom_observables.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="096_java8datetime.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_prerequisite.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="130_tutorial_swt.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="132_tutorial_writablevalue.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_tutorial_jface.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_tutorial_observablemaplabelprovider.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseDataBinding"?>
-</article>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_validatorsconvertors.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_moreonbinding.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_jfaceviewers.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="094_custom_observables.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="096_java8datetime.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_prerequisite.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="130_tutorial_swt.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="132_tutorial_writablevalue.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_tutorial_jface.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_tutorial_observablemaplabelprovider.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

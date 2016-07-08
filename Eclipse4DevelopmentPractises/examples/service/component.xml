@@ -1,5 +1,16 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="de.vogella.e4.todo.model">
    <implementation class="de.vogella.e4.todo.model.servicemock.TodoMockModel"/>
    <service>

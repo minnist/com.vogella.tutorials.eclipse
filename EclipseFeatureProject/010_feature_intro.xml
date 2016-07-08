@@ -36,7 +36,7 @@
 	</para>
 	<para>
 		<programlisting language="xml">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/feature.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/feature.adoc[]
 		</programlisting>
 	</para>
 

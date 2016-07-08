@@ -15,5 +15,5 @@ public interface Category {
 	/**
 	 * @model containment="true"
 	 */
-	public List<Article> getArticles();
+	public List getArticles();
 }

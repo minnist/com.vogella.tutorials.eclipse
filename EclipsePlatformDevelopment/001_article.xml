@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse IDE platform development - tutorial</title>
 		<subtitle>Contributing to the Eclipse open source project
 		</subtitle>
@@ -32,7 +43,7 @@
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-contribution.txt"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_contributingtoeclipse.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_contributingtoeclipse.adoc[]
 	<section id="prereq">
 		<title>Prerequisites</title>
 		<para>
@@ -45,22 +56,24 @@
 	</section>
 
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="011_foundation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_versioncontrol.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_eclipsedevelopmentbuild.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_exercise_usercreation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_exercise_cloningplatformui.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="212_exercise_configuringplatform.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_exerise_createplatformreview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_platformproject.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_unit_testing.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="290_platformtests.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_platformbuilds.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="420_platformbuilds_extras.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="640_updatecopyrightheader.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_adjustingeclipsepush.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="820_usingtheinstaller.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_localresources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipsePlatformDevelopment"?>
-</article>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="011_foundation.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_versioncontrol.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_eclipsedevelopmentbuild.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_exercise_usercreation.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_exercise_cloningplatformui.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="212_exercise_configuringplatform.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_exerise_createplatformreview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_platformproject.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_unit_testing.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="290_platformtests.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_platformbuilds.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="420_platformbuilds_extras.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="640_updatecopyrightheader.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_adjustingeclipsepush.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="820_usingtheinstaller.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_localresources.adoc[]
+
+adoc[]

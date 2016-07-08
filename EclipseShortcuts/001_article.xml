@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse Shortcuts - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -31,21 +42,21 @@
 	</articleinfo>
 
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="001_shortcuts.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_navigation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_run.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_editing.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_programming.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_refactoring.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_mustknown.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseShortcuts"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="001_shortcuts.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_navigation.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_run.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_editing.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_programming.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_refactoring.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_mustknown.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

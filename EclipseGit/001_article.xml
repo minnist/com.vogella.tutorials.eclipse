@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Git version control with Eclipse (EGit) - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -34,47 +45,49 @@
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="008_about.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_workspace.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_commandline_git.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_eclipseinstallation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_configuration.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_repositoryview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="142_packageexplorer.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="144_stagingview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="145_commitdialog.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="146_historyview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_multiprojects.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="170_exercise_localrepository.xml" />
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="008_about.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_workspace.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_commandline_git.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_eclipseinstallation.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_configuration.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_repositoryview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="142_packageexplorer.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="144_stagingview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="145_commitdialog.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="146_historyview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_multiprojects.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="170_exercise_localrepository.adoc[]
 	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="190_clone_repository.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="192_import_project.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_team_operations.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_team_operations_branch.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="212_team_merge.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_rebase.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="250_reset.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="254_cherrypick.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="260_createpatch.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="270_annotations.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_stash.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="190_clone_repository.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="192_import_project.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_team_operations.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_team_operations_branch.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="212_team_merge.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_rebase.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="250_reset.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="254_cherrypick.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="260_createpatch.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="270_annotations.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_stash.adoc[]
 
 
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="340_interactive_rebase.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_github.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="406_eclipsessh.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="410_githubmylyn.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="500_commitmessages.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_egitsource.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseGit"?>
-</article>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="340_interactive_rebase.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_github.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="406_eclipsessh.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="410_githubmylyn.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="500_commitmessages.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_egitsource.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
+
+
+adoc[]

@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse Commands Advanced - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -33,19 +44,19 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_introduction.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_standardcommands.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/120_code.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/160_parameters.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_runtimecommands.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseCommandsAdvanced"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.adoc[]
+include::010_introduction.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_standardcommands.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::120_code.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::160_parameters.adoc[]
+include::200_runtimecommands.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

@@ -242,7 +242,7 @@
 
 		<para>
 			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunction/service.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunction/service.adoc[]
 			</programlisting>
 		</para>
 

@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <section id="eclipse_debug_framework_breakpoints">
 	<title>Breakpoints</title>
 	<section id="eclipse_breakpoint_debug_model">
@@ -62,7 +73,7 @@
 		<para>
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/breakpoint_marker_sample.xml" />
+					parse="text" href="./examples/breakpoint_marker_sample.adoc[]
 			</programlisting>
 		</para>
 	</section>
@@ -112,7 +123,7 @@
 		<para>
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/togglebreakpoint_adapter.xml" />
+					parse="text" href="./examples/togglebreakpoint_adapter.adoc[]
 			</programlisting>
 		</para>
 	</section>

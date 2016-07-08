@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.example.e4.rcp.todo.ownannotation.DirectTodo">
    <implementation class="com.example.e4.rcp.todo.ownannotation.internal.DirectTodoObjectSupplier"/>
    <property name="dependency.injection.annotation" type="String" value="com.example.e4.rcp.todo.ownannotation.DirectTodo"/>

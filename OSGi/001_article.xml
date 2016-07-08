@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>OSGi Modularity - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -31,24 +42,26 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_osgi_introduction.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_osgi_bundles.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_osgi_dependencymanagement.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="018_osgi_apidefinition.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_osgi_console.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/018_download.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_tutorial_model.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_tutorial_service.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_tutorial_service_factory.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_firstbundle.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_running_osgi.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="004_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/OSGi"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_osgi_introduction.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_osgi_bundles.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_osgi_dependencymanagement.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="018_osgi_apidefinition.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_osgi_console.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/018_download.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_tutorial_model.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_tutorial_service.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_tutorial_service_factory.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_firstbundle.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_running_osgi.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="004_resources.adoc[]
+
+adoc[]

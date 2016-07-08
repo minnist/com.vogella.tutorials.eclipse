@@ -1,7 +1,18 @@
-<?xml version="1.0"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
 
-<article>
-	<articleinfo>
+[abstract]
+
+
+
 		<title>Eclipse Modeling Framework (EMF) - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -41,25 +52,27 @@
 	</articleinfo>
 
     <?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_createmodel.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_emfmodel.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="075_emfeditor.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_javacode.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_javadoc.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_methods.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_inheritance.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_initialvalue.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_creategenmodel.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_nextsteps.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseEMF"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_createmodel.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_emfmodel.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="075_emfeditor.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_javacode.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_javadoc.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_methods.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_inheritance.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_initialvalue.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_creategenmodel.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_nextsteps.adoc[]
 
-</article>
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.adoc[]
+
+
+adoc[]

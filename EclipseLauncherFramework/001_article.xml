@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Defining custom launcher for the Eclipse IDE</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -27,11 +38,13 @@
 			<para>Level of this tutorial: Advanced</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_create_launch_configuration.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_custom_launch_configuration.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_custom_launch_configuration_ui.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_overview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_create_launch_configuration.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_custom_launch_configuration.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_custom_launch_configuration_ui.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+adoc[]

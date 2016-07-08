@@ -33,7 +33,7 @@
 		</para>
 	</section>
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040a_eclipseui_parts.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040a_eclipseui_parts.adoc[]
 
 
 	<section id="e4uiconcept_container">

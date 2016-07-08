@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
 <section id="EclipseProjectNatures_image">
 	<title>Provide an image as decorator for the project</title>
     <para>You may have noticed the <guilabel>J</guilabel> as decorator for a java project.</para>

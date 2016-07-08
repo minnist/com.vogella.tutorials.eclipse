@@ -1,7 +1,18 @@
-<?xml version="1.0"?>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
 
-<article>
-	<articleinfo>
+[abstract]
+
+
+
 		<title>Eclipse product and application deployment - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -38,20 +49,22 @@
 
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_product.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_deployment.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_product.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_deployment.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_deployment.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_problems_export.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="099_tutorial_requirements.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_deployment.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_problems_export.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="099_tutorial_requirements.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_exportproduct.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_exportproduct.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_exercise_feature.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_exercise_feature.adoc[]
 
 	<?dbhtml-include href="../../web/adsense/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseProductDeployment"?>
-</article>
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+
+
+adoc[]

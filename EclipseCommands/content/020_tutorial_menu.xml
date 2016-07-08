@@ -1,7 +1,7 @@
 <section id="firstcommand">
 	<title>Tutorial: Commands and menus</title>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		href="../../10_Include/commands/320_commandspart1.xml" />
+		href="../../10_Include/commands/320_commandspart1.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		href="../../10_Include/commands/320_commandspart2.xml" />
+		href="../../10_Include/commands/320_commandspart2.adoc[]
 </section>

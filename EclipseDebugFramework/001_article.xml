@@ -1,6 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Implementing Debug behavior in the Eclipse IDE - Tutorial
 		</title>
 		<author>
@@ -24,12 +35,14 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_breakpoints.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_exercise_debug_model.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipseDebugFramework"?>
-</article>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_breakpoints.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_exercise_debug_model.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+
+
+adoc[]

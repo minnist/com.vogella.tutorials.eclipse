@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse application model - Tags, persisted state and variables
 			- Tutorial</title>
 		<author>
@@ -30,12 +41,14 @@
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../lib/adsense/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_supplementary.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_e4_tags.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_exercise_supplementary.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_supplementary.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_e4_tags.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_exercise_supplementary.adoc[]
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-</article>
+
+adoc[]

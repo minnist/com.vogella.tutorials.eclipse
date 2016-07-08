@@ -3,45 +3,45 @@
 	
 	<chapter>
 		<title>Exercise - Cloning and feature develop with branches
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/010_clonerepo.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/020_developafeature.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/030-develop-feature-use-staging-view.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/040_work-on-branches-in-parallel.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/010_clonerepo.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/020_developafeature.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/030-develop-feature-use-staging-view.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/040_work-on-branches-in-parallel.adoc[]
 	</chapter>
 	<chapter>
 		<title>Exercise - Merging, rebasing and more
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/050_merge-rebase-and-resolving-conflicts.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/052_rebase.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/060_history-view.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/070_reset-branch-to-a-previous-state.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/080_change-a-series-of-commits.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/090_use-the-git-blame-feature.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/050_merge-rebase-and-resolving-conflicts.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/052_rebase.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/060_history-view.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/070_reset-branch-to-a-previous-state.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/080_change-a-series-of-commits.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/090_use-the-git-blame-feature.adoc[]
 
 	</chapter>
 	<chapter>
 		<title>Exercise - Working with remotes and using fetch, rebase and push
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/100_fork-the-example-repository.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/110_push-to-the-forked-repository.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/120_fetch-the-latest-state-from-upstream.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/100_fork-the-example-repository.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/110_push-to-the-forked-repository.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/120_fetch-the-latest-state-from-upstream.adoc[]
 	</chapter>
 		<chapter>
 		<title>Exercise - Using a shared repository
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/130_synchronizewith_sharedremote.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/130_synchronizewith_sharedremote.adoc[]
 	</chapter>
 	<chapter>
 		<title>Exercise - Using submodules
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/160_submodules.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/160_submodules.adoc[]
 	</chapter>
 	<chapter>
 		<title>Exercise - Detached head and stashing
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/140_detached-head-and-reflog.xml" />
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/150_stash.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/140_detached-head-and-reflog.adoc[]
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/150_stash.adoc[]
 
 
 	</chapter>
 	<chapter>
 		<title>Exercise - GitHub integration with Eclipse
-		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/170_github-exercise.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../82_Book_Eclipse_IDE/gitexercises/170_github-exercise.adoc[]
 	</chapter>
 
 </part>

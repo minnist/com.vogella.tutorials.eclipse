@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Eclipse platform services - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -33,22 +44,22 @@
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_selectionservice.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_modelservices.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/220_model_modificationapi.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/240_model_modificationapi_examples.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/300_partservices.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/310_partservicespersists.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/400_commandservice.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/Eclipse4Services"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_selectionservice.adoc[]
+include::200_modelservices.adoc[]
+include::220_model_modificationapi.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::240_model_modificationapi_examples.adoc[]
+include::300_partservices.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::310_partservicespersists.adoc[]
+include::400_commandservice.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

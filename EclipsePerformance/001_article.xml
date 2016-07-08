@@ -1,6 +1,17 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+= Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: 
+
+[abstract]
+
+
 		<title>Performance analysis and tracing of Eclipse plug-ins and RCP applications - Tutorial</title>
 		<author>
 			<firstname>Lars</firstname>
@@ -31,19 +42,21 @@
 			</para>
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_interactiveuiperformance.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_tracing.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_performancestats.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_automatedtests.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_sleak.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_yourkit.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_javamissioncontrol.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="004_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EclipsePerformance"?>
-</article>
+include::../web/advertisement/afterTableOfContent.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_interactiveuiperformance.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_tracing.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_performancestats.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_automatedtests.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_sleak.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_yourkit.adoc[]
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_javamissioncontrol.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="004_resources.adoc[]
+
+adoc[]

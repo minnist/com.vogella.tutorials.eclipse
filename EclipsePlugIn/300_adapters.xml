@@ -76,7 +76,7 @@
 
 		<para>
 			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/extension.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/adapter/extension.adoc[]
 			</programlisting>
 		</para>
 		<para>

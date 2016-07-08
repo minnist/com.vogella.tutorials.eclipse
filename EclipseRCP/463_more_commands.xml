@@ -176,7 +176,7 @@
 		</para>
 		<para>
 			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/instanceof.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/instanceof.adoc[]
 			</programlisting>
 		</para>
 		<para>You can assign this core expression to your menu entry in the
@@ -263,7 +263,7 @@
 
 		<para>
 			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/activepart.xml" />
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/activepart.adoc[]
 			</programlisting>
 		</para>
 

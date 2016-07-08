@@ -47,7 +47,7 @@
 			of the tests faster
 			and allows to developer to continue to work on the same machine.
 		
-		<tip>
+		TIP:
 			This step is optional. You can of course run the tests without
 				a virtual
 				server.

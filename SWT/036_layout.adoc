@@ -353,7 +353,7 @@
 			`SWT.FILL`
 			are often used together.
 		
-		<tip>
+		TIP:
 			
 				The
 				`GridDataFactory`

@@ -122,7 +122,7 @@
 			`unsubscribe()`
 			method.
 		
-		<tip>
+		TIP:
 			Using dependency injection for subscribing should be
 				preferred
 				compared to the direct subscription as this way the

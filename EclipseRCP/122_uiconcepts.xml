@@ -141,7 +141,7 @@ image::containerdata20.png[Container data for layouting,pdfwidth=60%]
 			take
 			up all available space.
 		
-		<tip>
+		TIP:
 			
 				The initial total of all the container data values is
 				maintained when elements in the sash are moved. In order

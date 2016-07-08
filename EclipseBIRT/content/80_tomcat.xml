@@ -42,7 +42,7 @@
 		Copy the birt.war of this download into the Tomcat
 			webappsfolder.
 		
-			<tip>
+			TIP:
 				Currently you have to install org.eclipse.commons.logging separately
 				into Tomcat. Download this lib from
 				http://commons.apache.org/logging/">http://commons.apache.org/logging/
@@ -90,7 +90,7 @@ image::SNAG-0043.gif" format="gif" />
 			</mediaobject>
 		
 		
-			<tip>
+			TIP:
 				If you want to export your report to PDF you also need the library
 				iText from (
 				http://prdownloads.sourceforge.net/itext/itext-1.3.jar">

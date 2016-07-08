@@ -61,7 +61,7 @@ image::dtpdatabase60.gif" />
 		Congratulation. You have connected yourself to the new database.
 		
 		
-			<tip> Sometimes you have to disconnect and connect again to see the
+			TIP: Sometimes you have to disconnect and connect again to see the
 				changes you did. For example if you create a new database schema.
 			</tip>
 		

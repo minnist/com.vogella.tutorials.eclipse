@@ -84,7 +84,7 @@ include::res/editor/EditorPart.java[]
 				<imageobject><imagedata fileref="images/editor-part-descriptor.png"></imagedata></imageobject>
 			</mediaobject>
 		
-		<tip>
+		TIP:
 			
 				You could also adjust the
 				`TodoDetailsPart`

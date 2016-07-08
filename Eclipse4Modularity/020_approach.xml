@@ -29,7 +29,7 @@
 		The e4 tools project provides a wizard and an editor for model
 			fragments.
 		
-		<tip>
+		TIP:
 			
 				The application model editor also allows you to extract a subtree
 				into a new or existing fragment. Select a model
@@ -147,7 +147,7 @@
 			you are
 			contributing.
 		
-		<tip>
+		TIP:
 			In general it is good practice to always specify unique IDs in
 				your
 				application model. If not you may experience

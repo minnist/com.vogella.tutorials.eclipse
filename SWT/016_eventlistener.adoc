@@ -34,7 +34,7 @@
 		is another
 		examples for such a listener interface.
 	
-	<tip>
+	TIP:
 		
 
 			The Listener interfaces sometimes contain several methods and

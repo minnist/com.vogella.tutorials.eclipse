@@ -12,7 +12,7 @@
 			Source". Go back to your stocks_report, use the "Report Design"
 			perspective and select the "Data Explorer" View.
 		
-			<tip> You have to select your report to display the content of the
+			TIP: You have to select your report to display the content of the
 				datasource view.</tip>
 		
 		
@@ -61,7 +61,7 @@ image::dataset30.gif" format="gif" />
 			syntax: Packages.myJavaClass where myJavaClass is the full qualified
 			Java class name.
 		
-			<tip> In case you do not see the script please node that the editor
+			TIP: In case you do not see the script please node that the editor
 				for the report has several tab. One of it is labeled "source".</tip>
 		
 		

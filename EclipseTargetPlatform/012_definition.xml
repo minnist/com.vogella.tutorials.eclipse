@@ -10,7 +10,7 @@
 			_target definition file_
 			. With such a file you define the available plug-ins and features.
 		
-		<tip>
+		TIP:
 			A target platform can be defined based on software sites (p2 update sites) or
 				other means. As build systems like
 				Maven Tycho support only p2 update sites,
@@ -71,7 +71,7 @@
 			</textobject>
 		</mediaobject>
 	
-	<tip>
+	TIP:
 		Wait until the target platform is completely resolved before setting it as target platform.
 	</tip>
 	

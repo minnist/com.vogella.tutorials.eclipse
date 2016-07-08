@@ -61,7 +61,7 @@ image::placeholder10.png[Adding placeholders to the application model,pdfwidth=6
 			should be the
 			same.
 		
-		<tip>
+		TIP:
 			By using this approach the part displayed in two perspectives
 				is
 				the same instance, i.e. the data in the part is

@@ -1,0 +1,27 @@
+== Exporting and importing projects
+
+=== Exporting projects
+
+You can export and import Eclipse projects. This allows you to
+share projects with other people and to import existing projects.
+
+To export Eclipse projects, select
+menu:File[Export > General > Archive File]
+and select the projects you want to export.
+
+image::exportprojects10.png[Exporting project,pdfwidth=60%]
+
+image::exportprojects20.png[Exporting projects part 2,pdfwidth=60%]
+
+=== Importing projects
+
+To import projects, select
+menu:File[Import > Existing Projects into Workspace]
+. You can import from an archive file, i.e., zip file or directly
+import the projects in case you have extracted the zip file.
+
+image::importprojects10.png[Importing projects,pdfwidth=60%]
+
+image::importprojects20.png[Importing projects from archive file,pdfwidth=60%]
+
+	

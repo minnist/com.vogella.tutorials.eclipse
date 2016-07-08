@@ -7,7 +7,7 @@
 			Others -> JPA -> JPA Project.
 		
 		
-			<tip> You can also add to an existing project the JPA nature. Use the
+			TIP: You can also add to an existing project the JPA nature. Use the
 				JPA perspective and the right mouse button on the project and select
 				Configure -> Convert to JPA Project</tip>
 		

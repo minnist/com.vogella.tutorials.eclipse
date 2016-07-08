@@ -26,7 +26,7 @@
 		Mylyn supports accessing the Eclipse bug database via its
 		Bugzilla connector.
 	
-	<tip>
+	TIP:
 		
 			Some packaged version of Eclipse have the Eclipse Bugzilla
 			preconfigured. If you open the

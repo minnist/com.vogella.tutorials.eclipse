@@ -25,7 +25,7 @@
 			`@Inject ESelectionService`
 			.
 		
-		<tip>
+		TIP:
 			
 				The selection is window specific, i.e. stored in the context of the
 				`MWindow`
@@ -64,7 +64,7 @@
 			part.
 
 		
-		<tip>
+		TIP:
 			
 				The possibility of retrieving the selection of a part is based on
 				the

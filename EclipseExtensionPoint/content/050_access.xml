@@ -45,7 +45,7 @@
 				parse="text" href="../examples/registry/query.txt" />
 		</programlisting>
 	
-	<tip>
+	TIP:
 		
 			You can access extensions of all extension points via the
 			`IExtensionRegistery`

@@ -17,7 +17,7 @@
 			package. For this you might need the following tip.
 		
 
-		<tip>
+		TIP:
 			
 				In its default configuration the Eclipse IDE hides parent
 				packages if they don't contain any classes. During the

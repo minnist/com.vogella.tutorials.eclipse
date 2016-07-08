@@ -114,9 +114,7 @@ include::res/loadimage/loadimage.txt[]
 		
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="60" fileref="images/unuseddependency10.gif[How to remove unused dependencies,pdfwidth=60%]
+			image::unuseddependency10.gif[How to remove unused dependencies,pdfwidth=60%]
 		
 	
 

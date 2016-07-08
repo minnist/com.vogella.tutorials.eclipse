@@ -205,7 +205,7 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
         
 
 
-        <tip>
+        TIP:
             The icon configuration depends on the platform you are using.
                 Eclipse allows you to export your application for multiple platforms
                 and uses the correct ones based on your product configuration.

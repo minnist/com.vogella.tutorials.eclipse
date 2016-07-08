@@ -1,0 +1,39 @@
+== Local history for files
+
+=== Local history
+
+Eclipse keeps a local history of files which have changed.
+Every time an editable file is saved, the Eclipse
+runtime
+updates the
+local history of that file and logs the changes
+that have 
+been made.
+This local history can then be accessed and used to
+revert the file
+changes or to compare against a previous version.
+
+=== Compare files based on local history
+
+To compare the current version of a file with a local version stored
+by
+Eclipse, right-click on the file and select
+menu:Compare With[Local History...]
+from the context menu. Eclipse opens the
+_History_ view.
+
+ If you double-click on an older version of the file, the
+_Compare_
+view
+shows the differences as depicted in the following screenshot.
+
+image::localcompare10.png[Local compare view,pdfwidth=30%]
+
+=== Replace files based on local history
+
+You can replace files based on the local history. Right-click on
+the
+file and select
+menu:Replace With[Local history...]
+to start this action.
+

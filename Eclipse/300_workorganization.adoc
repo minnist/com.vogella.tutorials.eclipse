@@ -1,0 +1,69 @@
+== Organizing your workspace
+
+=== Working sets and tasks
+
+The Eclipse IDE allows you to organize your project into
+working sets so
+that you can hide certain resources. 
+
+=== Working sets
+
+You will create more and more projects in your development
+career. Therefore, the data in your
+workspace
+grows
+and it is hard to
+find the right information.
+
+You can
+use working sets to organize your displayed projects / data.
+To
+set up
+your working set, select the
+menu:Package Explorer[open the drop-down menu > Select Working Set...]
+
+image::workingset10.png[Showing the working set,pdfwidth=60%]
+
+Press the
+_New_
+button
+on the following dialog to create a working set.
+
+image::workingset20.png[Creating new working sets,pdfwidth=60%]
+
+On the next dialog select
+_Resource_
+, press the
+_Next_
+button and select the
+projects
+you
+would like to see and give it a name.
+
+image::workingset30.png[Creating new working sets,pdfwidth=60%]
+
+image::workingset40.png[Creating new working sets,pdfwidth=60%]
+
+image::workingset50.png[Creating new working sets,pdfwidth=60%]
+
+You can now filter the displayed files in the
+_Package Explorer_
+based on the created working set.
+
+image::workingset60.png[Filtering resources for the working set,pdfwidth=60%]
+
+
+[TIP]
+====
+You can also use the working set to structure your projects in your
+workspace. For this, select
+_Working Sets_
+from the context menu of the
+_Package Explorer_
+view.
+
+image::workingset70.png[Structure by working set,pdfwidth=60%]
+
+image::workingset80.png[Structure by working set,pdfwidth=60%]
+====
+

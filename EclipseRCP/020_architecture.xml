@@ -160,7 +160,7 @@ image::osgi_api_definition_overview.png" scale="20[API definition in Eclipse,pdf
 			_
 			warning in the Java editor.
 		
-		<tip>
+		TIP:
 			
 				You can turn
 				off these warnings for your workspace via

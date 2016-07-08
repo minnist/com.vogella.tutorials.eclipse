@@ -74,7 +74,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			`IContextFunction`
 			interface.
 		
-		<tip>
+		TIP:
 			
 				Question: Why should you register your service for the
 				`IContextFunction`

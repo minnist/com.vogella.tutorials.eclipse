@@ -86,7 +86,7 @@ image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 			version
 			in the workspace.
 		
-		<tip>
+		TIP:
 			
 				If the "compare mode" toggle is selected from the view menu of the
 				_History_
@@ -207,7 +207,7 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 			automatically updates when you
 			change the selection.
 		
-		<tip>
+		TIP:
 			
 				If you got lost with the different filters and the history
 				doesn’t show what you expect, set it back to show

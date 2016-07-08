@@ -261,7 +261,7 @@
 			(if the product is feature based).
 		
 
-		<tip>
+		TIP:
 			
 				Eclipse can check for missing dependencies automatically before you
 				run the Launch configuration.

@@ -77,7 +77,7 @@ image::firstbundle40.gif" />
 			</mediaobject>
 		
 		
-			<tip>
+			TIP:
 				In case you are wondering in which folder OSGi starts you find it
 				in
 				<![CDATA[ 

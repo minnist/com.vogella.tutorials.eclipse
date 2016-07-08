@@ -62,7 +62,7 @@ include::res/model/addWindow.java[]
 					parse="text" href="../examples/model/AddPartHandler.java[]
 ----
 		
-		<tip>
+		TIP:
 			
 				Typically you would add the part to a pre-defined
 				`PartStack`

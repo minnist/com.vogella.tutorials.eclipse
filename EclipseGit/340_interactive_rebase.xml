@@ -210,7 +210,7 @@ image::egitinteractive_rebase40.png[Interactive Rebase EGit,pdfwidth=60%]
 image::egitinteractive_rebase50.png[Interactive Rebase EGit,pdfwidth=60%]
 		
 
-		<tip>
+		TIP:
 			
 				If something goes wrong during the rebase operation you can
 				select

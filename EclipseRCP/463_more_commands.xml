@@ -75,7 +75,7 @@ image::parameter_relationship10.png" scale="35[Relationship between parameters i
 		
 
 
-		<tip>
+		TIP:
 			
 				Alternatively to injecting each parameter, you can also inject the
 				`ParameterizedCommand`

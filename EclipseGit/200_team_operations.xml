@@ -27,7 +27,7 @@ image::pullpush10.png[Pull push and fetch dialog,pdfwidth=60%]
 		
 image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 		
-		<tip>
+		TIP:
 			The Team menu is also available from the context menu of an
 				opened editor.
 			

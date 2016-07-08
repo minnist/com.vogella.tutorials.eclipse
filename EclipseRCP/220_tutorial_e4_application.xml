@@ -334,7 +334,7 @@ image::tutorial_product80.png[Adding a trimmed window,pdfwidth=60%]
 image::tutorial_product90.png" scale="35[Enter the data for the TrimmedWindow in the model editor,pdfwidth=60%]
 		
 
-		<tip>
+		TIP:
 			
 				If you start and close your application the last state of the
 				application is persisted by the framework and restored

@@ -198,7 +198,7 @@ image::applicationmodel_generatecode10.png"
 			_MANIFEST.MF_
 			file.
 		
-		<tip>
+		TIP:
 			
 				Please note that the first time you run the model generation, the
 				_plugin.xml_

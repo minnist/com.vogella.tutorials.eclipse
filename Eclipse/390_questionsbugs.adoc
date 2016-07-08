@@ -1,0 +1,6 @@
+== Reporting Eclipse bugs and asking questions
+
+include::382_questions.adoc[]
+include::381_eclipsebugs.adoc[]
+include::382_bugtriage.adoc[]
+

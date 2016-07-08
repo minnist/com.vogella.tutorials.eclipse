@@ -53,7 +53,7 @@
 
 
 === Using preferences in the life cycle class
-		<tip>
+		TIP:
 			This exercise is optional.
 		</tip>
 		
@@ -78,7 +78,7 @@
 			display the last
 			entered user.
 		
-		<tip>
+		TIP:
 			If persisting the user does not work, you potentially have an
 				incorrect setting in your launch configuration.
 			

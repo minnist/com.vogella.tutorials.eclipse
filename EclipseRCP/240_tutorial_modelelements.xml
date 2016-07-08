@@ -56,7 +56,7 @@ image::tutorial_model50.png" scale="50[Screenshot of the application,pdfwidth=60
 		
 image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application,pdfwidth=60%]
 		
-		<tip>
+		TIP:
 			
 				Alternatively to the context menu you can also use the
 				_Add..._

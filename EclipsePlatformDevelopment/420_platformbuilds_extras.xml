@@ -65,7 +65,7 @@
 			
 		</warning>
 
-		<tip>
+		TIP:
 			To check which properties can be overridden check the
 				properties fields in the eclipse-platform-parent/pom.xml file.
 			

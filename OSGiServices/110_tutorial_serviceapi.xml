@@ -76,7 +76,7 @@ image::firstservice30.gif" />
 			</mediaobject>
 		
 		
-			<tip>Nothing fancy happens, as we are not yet consuming our
+			TIP:Nothing fancy happens, as we are not yet consuming our
 				service.
 			</tip>
 		
@@ -94,7 +94,7 @@ image::firstservice35.gif" />
 			</mediaobject>
 		
 		
-			<tip> Please note that we have added the dependency against the
+			TIP: Please note that we have added the dependency against the
 				package NOT against the plugin. This way we later replace the
 				service with a different implementation.
 			</tip>

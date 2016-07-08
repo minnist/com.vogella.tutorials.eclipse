@@ -21,7 +21,7 @@ image::standardcommand10.gif" />
 			</mediaobject>
 		
 		
-			<tip> Standard commands sometimes map to actions which are
+			TIP: Standard commands sometimes map to actions which are
 				contributed
 				via ActionFactory in the class
 				ApplicationActionBarAdvisor. If the
@@ -53,7 +53,7 @@ image::standardcommand10.gif" />
 		
 
 		
-			<tip>
+			TIP:
 				To find the id of existing commands you
 				can you the
 				<ulink
@@ -67,7 +67,7 @@ image::standardcommand10.gif" />
 			
 
 		
-			<tip>
+			TIP:
 				Eclipse requires
 				you to have only one active handler at the time
 				therefore you have to

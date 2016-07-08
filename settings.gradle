@@ -25,4 +25,5 @@ include 'EclipsePatching'
 include 'EclipseWizards'
 include 'EclipseJDT'
 include 'Eclipse4Adapter'
+include 'Eclipse'
 

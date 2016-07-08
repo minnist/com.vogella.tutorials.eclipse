@@ -26,7 +26,7 @@
 			_.metadata/.plugins/org.eclipse.e4.workbench_
 			folder.
 		
-		<tip>
+		TIP:
 			
 				User changes can be deleted at start of your application via the
 				_clearPersistedState_

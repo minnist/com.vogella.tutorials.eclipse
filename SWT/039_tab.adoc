@@ -15,7 +15,7 @@
 				parse="text" href="./examples/tab/TabExample.java" />
 		</programlisting>
 	
-	<tip>
+	TIP:
 		Defining a tab order for your controls is important to increase
 			the accessibility and to allow advanced users a quick navigation.
 		

@@ -55,7 +55,7 @@ image::tododeletepart10.png" scale="60[ComboViewer example screenshot,pdfwidth=6
 			`TodoOverviewPart`
 			part.
 		
-		<tip>
+		TIP:
 			If a certain part of your user interface is not displayed,
 				check
 				the container data of your model elements in the
@@ -91,7 +91,7 @@ image::tododeletepart10.png" scale="60[ComboViewer example screenshot,pdfwidth=6
 ----
 		
 
-		<tip>
+		TIP:
 			
 				If you face issues with the selection in the viewer or the
 				deletion

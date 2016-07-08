@@ -1,0 +1,103 @@
+== Eclipse bug reports and feature requests
+
+=== Reporting bugs and feature requests
+
+If you encounter a problem with the Eclipse IDE or think about a potential improvement for it, you should report this
+to the Eclipse project.
+The Eclipse bug and feature tracker is using the open source
+_Bugzilla_
+project
+from
+_Mozilla_
+. In this system, you enter Eclipse error reports. You can also request new
+features or improvements
+of
+existing
+features.
+
+TIP: Most Eclipse projects receive lots of bug and feature requests. So if you want something fixed or
+enhanced you
+may have to provide a Gerrit review for it. If the Eclipse developer sees that you try to fix the
+problem yourself,
+you typically receive more support from them.
+
+=== Using the Eclipse bugzilla system
+
+This
+bug tracker can be
+found under
+https://bugs.eclipse.org/bugs/ - Eclipse Bugzilla
+.
+Here you
+can
+search for
+existing bugs and review them.
+
+To participate actively in the Eclipse bug tracker, you need to
+create
+a
+new account. This can be done by clicking
+the
+_Create a New Account_
+link.
+
+image::bugzilla10.png[Opening an account at Eclipse bugzilla,pdfwidth=60%]
+
+Once you have a user account, you can login to the Eclipse
+bug
+tracker.
+This
+allows you to comment on existing bugs
+and
+report
+new
+ones.
+The user data for the all Eclipse sites are the same, i.e, the
+forum, marketplace, bug tracker, etc.
+Only for the Gerrit access,
+different user data is used.
+
+As example you can report bugs for the Eclipse
+platform via the
+following link:
+https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform - 
+Bug report for the Eclipse platform.
+
+=== Eclipse bug priorities
+
+The Eclipse Bugzilla system allows you and the Eclipse committer
+to
+enter the bug priority. But overall, it is up to
+each project do
+decide how they handle bugs so some variation from project
+to
+project
+will occur. The following rules can
+be used as guideline.
+<table frame='all'>
+.Bug priorities
+|===
+|Priority |Description
+|blocker
+|The bug blocks development or testing of the build and no workaround is known.
+
+|critical
+|Implies "loss of data" or frequent crashes or a severe memory leak.
+
+|major
+|Implies a "major loss of function".
+
+|normal
+|This is the default value for new bug reports. 
+Implies some loss of functionality under specific circumstances, typically the correct setting unless one of the other levels fit.
+
+|minor
+|Something is wrong, but doesn't affect function significantly or other problem where easy workaround is present.
+
+|trivial
+|This describes a cosmetic problem like misspelled words or misaligned text, but doesn't affect function.
+
+|enhancement
+|Represents a request for enhancement (also for "major" features that would be really nice to have).
+|===
+

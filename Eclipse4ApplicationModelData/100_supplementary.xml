@@ -38,7 +38,7 @@
 			`String`
 			.
 		
-		<tip>
+		TIP:
 			
 				Tags are also available to the CSS Engine as additional class
 				selectors.

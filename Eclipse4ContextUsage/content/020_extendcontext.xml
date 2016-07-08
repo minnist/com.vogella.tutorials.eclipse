@@ -211,7 +211,7 @@
 					href="../examples/snippets/setWindowCloseHandler.txt[]
 ----
 		
-		<tip>
+		TIP:
 			
 				You could use this example in your life cycle handler and subscribe
 				to the

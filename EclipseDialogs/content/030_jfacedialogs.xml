@@ -169,7 +169,7 @@ image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyDialog.java[]
 ----
 		
-		<tip>
+		TIP:
 			
 				The example code demonstrates how to set the title of your custom
 				dialog via the

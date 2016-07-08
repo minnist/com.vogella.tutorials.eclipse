@@ -130,7 +130,7 @@ include::res/selection/ViewerSetSelection.java[]
 				method covers this case.
 			
 		</note>
-		<tip>
+		TIP:
 			
 				If you see unwanted updates of Todo items in your table, you did not
 				implement the data binding correctly in the

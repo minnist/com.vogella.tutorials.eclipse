@@ -109,7 +109,7 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 			file.
 		
 
-		<tip>
+		TIP:
 			
 				If the
 				_plugin.xml_
@@ -146,7 +146,7 @@ image::modelfragment_extensionpoint16.png"
 						scale="40[Adding the fragment to the extensions,pdfwidth=60%]
 		
 
-		<tip>
+		TIP:
 			
 				If entry in the plugin.xml is missing you can create it by clicking
 				on the
@@ -244,11 +244,7 @@ image::modelfragment10.png"/>
 		
 
 		
-image::modelfragment20.png" scale="35" />
-
-				</imageobject>
-				<textobject>
-					<phrase>Adding a model fragment,pdfwidth=60%]
+image::modelfragment20.png" scale="35[Adding a model fragment,pdfwidth=60%]
 		
 
 		
@@ -263,11 +259,7 @@ image::modelfragment20.png" scale="35" />
 			field.
 		
 		
-image::fragment30.png" scale="35" />
-
-				</imageobject>
-				<textobject>
-					<phrase>Adding a command to the model fragment,pdfwidth=60%]
+image::fragment30.png" scale="35[Adding a command to the model fragment,pdfwidth=60%]
 		
 		
 			Create a new model fragment for the handler. The
@@ -285,11 +277,7 @@ image::fragment30.png" scale="35" />
 			to this model fragment.
 		
 		
-image::fragment32.png" scale="35" />
-
-				</imageobject>
-				<textobject>
-					<phrase>Adding a handler to the model fragment,pdfwidth=60%]
+image::fragment32.png" scale="35[Adding a handler to the model fragment,pdfwidth=60%]
 		
 		
 			Use

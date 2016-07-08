@@ -1,0 +1,51 @@
+== Eclipse online resources
+
+=== Online documentations
+		
+The Eclipse help system is available from within your Eclipse
+installation as well as online.
+		
+With your running Eclipse IDE you can access
+the online help via
+menu:Help[Help Contents]
+. This will start a new window which shows you the help topics for
+your currently installed components.
+		
+image::onlinehelp10.png[Starting the Eclipse help,pdfwidth=40%]
+		
+You find the online help for the current release of the Eclipse IDE
+under the following URL:
+http://help.eclipse.org - Eclipse online help
+. The online help is version-dependent and
+contains the help for
+all
+Eclipse projects of the simultaneous release.
+
+=== Web resources
+		
+The Eclipse webpage also contains a list of relevant resources
+about
+Eclipse and Eclipse programming. You find these resources under the
+following link:
+http://www.eclipse.org/resources/ - Eclipse resources
+and
+https://wiki.eclipse.org/Eclipse_Corner - Eclipse corner wiki
+.
+		
+		
+You also find lots of tutorials about the usage of the Eclipse IDE
+from the vogella GmbH
+on
+the
+following
+webpage:
+http://www.vogella.com/tutorials/eclipseide.html - vogella Eclipse IDE tutorials
+.
+		
+Information about Eclipse plug-in and RCP development from the
+vogella GmbH can be found on
+the following webpage:
+http://www.vogella.com/tutorials/eclipse.html - Eclipse Plug-in and RCP tutorials
+.
+		
+	

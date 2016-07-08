@@ -144,7 +144,7 @@
 ----
 		
 
-		<tip>
+		TIP:
 			A more advanced implementation could, for example, implement a
 				progress
 				monitoring OSGi Service and report

@@ -107,7 +107,7 @@ image::ZestFinal10.gif" />
 ----
 		
 		
-			<tip> You can also define a filter on the layout so that certain
+			TIP: You can also define a filter on the layout so that certain
 				elements are ignore then calculating the layout. Method
 				isObjectFiltered(LayoutItem item). Use item.getGraphData() to get
 				the underlying object

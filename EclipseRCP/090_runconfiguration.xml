@@ -21,7 +21,7 @@
 			created or
 			updated.
 		
-		<tip>
+		TIP:
 			If you are starting an Eclipse runtime IDE for testing, and clear the workspace location the next run will
 				prompt you to choose a workspace.
 			
@@ -101,11 +101,9 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 			the application is running.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="60" fileref="images/launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
+			image::launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
 		
-		<tip>
+		TIP:
 			
 				To pass system properties to your Eclipse application, you can add launch parameters using the -D switch.
 				As

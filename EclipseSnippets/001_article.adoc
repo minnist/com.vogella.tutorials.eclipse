@@ -6,7 +6,8 @@
 :imagesdir: ./img
 Lars Vogel, (c) 2016 vogella GmbH
 Version 1.4, 29.05.2016
-				
-include::010_overview.adoc[]
+:docinfodir: ../
 
+include::010_overview.adoc[]
+include::008_resourceslocal.adoc[]
 

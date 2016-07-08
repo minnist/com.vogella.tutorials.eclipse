@@ -5,11 +5,15 @@
 :icons:
 (c) 2016 vogella GmbH
 Version 0.1, 24.05.2016
+:docinfodir: ../
+:vgwort: EclipseText
 
 [abstract]
 This tutorial contains notes about using the Eclipse Text API.
-				
-include::010_overview.adoc[]
-include::008_resourceslocal.adoc[]
 
+include::../web/advertisement/afterTableOfContent.adoc[]				
+include::010_overview.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

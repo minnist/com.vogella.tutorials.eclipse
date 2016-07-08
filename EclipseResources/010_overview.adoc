@@ -10,6 +10,6 @@ The following example access all projects in your workspace, finds all associate
 
 [source, java]
 ----
-include::examples/SampleHandler.java[]
+include::res/SampleHandler.java[]
 ----
 

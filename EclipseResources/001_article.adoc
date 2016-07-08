@@ -1,13 +1,20 @@
 = Using the Eclipse resource API - Tutorial
-:linkcss:
+:sectnums:                                                          
 :experimental:
+:icons:
+:imagesdir: ./img
 (c) 2016 vogella GmbH
 Version 1.3, 20.04.2016
+:docinfodir: ../
+:vgwort: EclipseResources
 
 [abstract]
 This tutorial describes how to use the Eclipse resource API. 
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
 

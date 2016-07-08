@@ -1,0 +1,4 @@
+
+#MyCSSTagForLabel{
+	color:#blue;
+}

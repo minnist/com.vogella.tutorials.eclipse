@@ -1,0 +1,13 @@
+eclipse/eclipse \
+-application org.eclipse.equinox.p2.director \
+-noSplash \
+-repository \
+http://download.eclipse.org/releases/luna \
+-installIUs \
+org.eclipse.egit.feature.group,\
+org.eclipse.jgit.feature.group,\
+org.eclipse.emf.sdk.feature.group,\
+org.eclipse.mylyn_feature.feature.group,\
+org.eclipse.wst.xml_ui.feature.feature.group,\
+org.eclipse.mylyn.java_feature.feature.group,\
+org.eclipse.mylyn.pde_feature.feature.group

@@ -1,0 +1,120 @@
+<section id="refactoring" role="wrapper">
+	<title>Refactoring</title>
+	<section id="refactoring_intro">
+		<title>Refactoring</title>
+		<indexterm>
+			<primary>Refactoring</primary>
+		</indexterm>
+		<para>
+			<wordasword>Refactoring</wordasword>
+			is the process of restructuring the code without
+			changing its
+			behavior. For example, renaming a Java class or method is
+			a refactoring
+			activity.
+		</para>
+	</section>
+	<section id="refactoring_eclipse">
+		<title>Refactoring in Eclipse</title>
+		<para>
+			Eclipse supports several refactoring activities, for example,
+			renaming
+			or
+			moving.
+		</para>
+
+		<para>
+			For example, to use the
+			<wordasword>Rename</wordasword>
+			refactoring, you can right-click on your class (in the editor or
+			Package Explorer) and
+			select
+			<menuchoice>
+				<guimenu>Refactor</guimenu>
+				<guisubmenu>Rename</guisubmenu>
+			</menuchoice>
+			to rename your class. Eclipse will make sure that all calls
+			in your
+			Workspace to
+			your class or method are renamed.
+		</para>
+
+		<para>
+			The following screenshot shows how to call the
+			<guilabel>Rename</guilabel>
+			refactoring for a class. The cursor is positioned on the class and
+			the context menu is activated via a right-click on the class.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="60" fileref="images/refactor10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Renaming a class</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			The most important refactorings are listed in the following
+			table.
+			<table frame='all'>
+				<title>Refactoring</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Refactoring</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Rename</entry>
+							<entry>Rename a variable or class</entry>
+						</row>
+						<row>
+							<entry>Extract Method</entry>
+							<entry>Creates a method based on the selected code in the editor
+							</entry>
+						</row>
+						<row>
+							<entry>Extract Constant</entry>
+							<entry>Gives magic numbers or hard-coded strings a descriptive constant name and replaces all occurences.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+		<tip>
+			<para>
+				Lots of refactorings are also available via the
+				<keycombo>
+					<keycap>Ctrl</keycap>
+					<keycap>1</keycap>
+				</keycombo>
+				shortcut (
+				<wordasword>quick fix</wordasword>
+				). Select a certain part of your code and press
+				<keycombo>
+					<keycap>Ctrl</keycap>
+					<keycap>1</keycap>
+				</keycombo>
+				to see possible refactorings for the selected
+				position.
+			</para>
+		</tip>
+		<para> Eclipse has many more refactorings. The available options
+			depend on the selection in the Java editor. In most cases you should
+			get
+			an idea of the performed action by the naming of the refactoring
+			operation.
+		</para>
+
+	</section>
+
+
+</section>

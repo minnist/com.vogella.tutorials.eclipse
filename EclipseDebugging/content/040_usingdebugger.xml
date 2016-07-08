@@ -1,0 +1,499 @@
+<section id="usedebug" role="wrapper">
+	<title>Debugging in Eclipse</title>
+	<section id="usedebug_breakpoints">
+		<title>Setting Breakpoints</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>setting Breakpoints
+			</secondary>
+		</indexterm>
+		<para>
+			To set
+			breakpoints in your source code right-click in the small left
+			margin in your
+			source
+			code editor
+			and select
+			<guilabel>Toggle Breakpoint</guilabel>
+			. Alternatively you can
+			double-click
+			on this position.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/setbreakpoint10.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting a breakpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			For example in the following screenshot we set a breakpoint on
+			the
+			line
+			<code>Counter counter = new Counter();</code>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/setbreakpoint12.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Showing a defined breakpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+	<section id="usedebug_start">
+		<title>Starting the Debugger</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>starting the Debugger
+			</secondary>
+		</indexterm>
+		<para>
+			To debug your application, select a Java file
+			which can be executed,
+			right-click on it and select
+			<menuchoice>
+				<guimenu>Debug As</guimenu>
+				<guisubmenu>Java Application</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debugstart10.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Start the debugger</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After you have started the application once via the context menu, you
+			can
+			use the created launch configuration again via the
+			<guibutton>Debug</guibutton>
+			button in the Eclipse toolbar.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debugtoolbar10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Debug button</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			If you have not defined any breakpoints, this will run your
+			program as normal. To debug the program you
+			need to define
+			breakpoints.
+		</para>
+		<para>
+			If you start the debugger, Eclipse asks
+			you
+			if you
+			want
+			to switch to the
+			<guilabel>Debug</guilabel>
+			<wordasword>perspective</wordasword>
+			once a stop point is reached.
+			Answer
+			<guibutton>Yes</guibutton>
+			in the corresponding dialog.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debugstart08.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Afterwards Eclipse opens this
+			<wordasword>perspective</wordasword>
+			, which
+			looks
+			similar to the following screenshot.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debugstart20.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Switch to perspective</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="usedebug_control">
+		<title>Controlling the program execution</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>debug process
+			</secondary>
+		</indexterm>
+		<para>Eclipse provides buttons in the toolbar for controlling the
+			execution of the program you are debugging. Typically it is easier to
+			use the corresponding keys to control this execution.
+		</para>
+
+		<para>
+			You can use the F5, F6, F7 and F8 key to step through your coding.
+			The
+			meaning of these keys is explained in the following table.
+
+			<table frame='all'>
+				<title>Debugging key bindings / shortcuts</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="4*" />
+					<thead>
+						<row>
+							<entry>Key</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>F5 </entry>
+							<entry>Executes the currently selected line and goes to the next
+								line in
+								your program. If the selected line is a method call the
+								debugger steps into the
+								associated
+								code.
+							</entry>
+						</row>
+						<row>
+							<entry>F6 </entry>
+							<entry>F6
+								steps over the call, i.e. it executes a method
+								without
+								stepping into it in
+								the debugger.
+							</entry>
+						</row>
+						<row>
+							<entry>F7</entry>
+							<entry>F7 steps out to the caller of the
+								currently executed
+								method.
+								This
+								finishes the
+								execution of the current method and
+								returns to
+								the
+								caller of
+								this method.
+							</entry>
+						</row>
+						<row>
+							<entry>F8</entry>
+							<entry>F8 tells the Eclipse debugger to resume the execution of
+								the
+								program code until is reaches the next breakpoint or
+								watchpoint.
+							</entry>
+						</row>
+
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+		<para>
+			The
+			following picture
+			displays
+			the buttons and their related
+			keyboard
+			shortcuts.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debugstart30.gif" scale="80" />
+				</imageobject>
+				<textobject>
+					<phrase>Debug Shortcuts</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The call stack shows the parts of the program which are currently
+			executed and how they relate to each other. The current stack is
+			displayed in the
+			<guilabel>Debug</guilabel>
+			view
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/stack10.gif" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Showing the stack view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+	<section id="usedebug_skipbreakpoints">
+		<title>Breakpoints view and deactivating breakpoints</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Breakpoints view
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>deactivating breakpoints
+			</secondary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Breakpoints</guilabel>
+			view
+			allows you to delete and deactivate
+			<wordasword>stop points</wordasword>
+			, i.e.
+			<wordasword>breakpoints</wordasword>
+			and
+			<wordasword>watchpoints</wordasword>
+			and to modify their properties.
+		</para>
+		<para>
+			To deactivate a breakpoint, remove the corresponding checkbox in the
+			<guilabel>Breakpoints</guilabel>
+			view
+			.
+			To delete it you can use
+			the
+			corresponding buttons in the
+			view
+			toolbar. These options are depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/breakpointview10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Breakpoint view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you want to deactivate all your breakpoints you
+			can
+			press the
+			<guibutton>Skip all breakpoints</guibutton>
+			button. If you press it again, your breakpoints are
+			reactivated. This
+			button is highlighted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/skipbreakpoints10.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>De-activating all breakpoints</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+	<section id="usedebug_variables">
+		<title>Evaluating variables in the debugger</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>evaluating variables
+			</secondary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Variables</guilabel>
+			view
+			displays fields and local variables from
+			the
+			current executing stack.
+			Please note
+			you need to run the debugger to see the
+			variables in this
+			view
+			.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variables10.gif" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Variables View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para> Use the drop-down menu to display static variables.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variables20.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Drop-down menu for static variables</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Via the drop-down menu of the
+			<guilabel>Variables</guilabel>
+			view
+			you can customize the displayed columns.
+
+			For example,
+			you can show
+			the
+			actual type of each variable
+			declaration. For this select
+			<menuchoice>
+				<guimenu>Layout</guimenu>
+				<guisubmenu>Select Columns...</guisubmenu>
+				<guisubmenu>Type</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variables30.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Showing the actual type of the variables</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="usedebug_variablechange">
+		<title>Changing variable assignments in the debugger</title>
+			<indexterm>
+			<primary>Debugging</primary>
+			<secondary>changing variable assignments
+			</secondary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Variables</guilabel>
+			view
+			allows you to change the values assigned to your variable at runtime.
+			This is
+			depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variablesview_change10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Changing the value of a variable</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="usedebug_debugger">
+		<title>Controlling the display of the variables with Detail Formatter</title>
+		<para>
+			By default the
+			<guilabel>Variables</guilabel>
+			view
+			uses the
+			<code>toString()</code>
+			method to determine how to display the variable.
+		</para>
+
+		<para>
+			You can define a
+			<wordasword>Detail Formatter</wordasword>
+			in which you can use Java code to
+			define how a variable is displayed.
+		</para>
+
+		<para>
+
+			For example the
+			<code>toString()</code>
+			method in the
+			<code>Counter</code>
+			class
+			may show meaningless information, e.g.
+			<code>de.vogella.combug.first.Counter@587c94</code>
+			. To make this output more readable you can right-click on the
+			corresponding variable
+			and select the
+			<menuchoice>
+				<guimenu>New Detail Formater</guimenu>
+			</menuchoice>
+			entry from the context menu.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variables40.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>New Detail Formater Screenshot</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Afterwards you can use a method of this class to determine the
+			output. In this example the
+			<code>getResult()</code>
+			method of this class is used. This setup is depicted in the following
+			screenshot.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/variables50.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Detailled formater example</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+</section>

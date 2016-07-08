@@ -1,0 +1,8 @@
+
+<?xml version="1.0" encoding="ASCII"?>
+<application:ModelComponents xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2008/UIModel" xsi:schemaLocation="http://www.eclipse.org/ui/2008/UIModel ../../org.eclipse.e4.ui.model.workbench/model/UIElements.ecore" xmi:id="_UW9TZfr3Ed6gmo7caOxU9h">
+  <components xmi:id="_UW9TZfr3Ed6gmo7caOxU9q" id="_UW9TZfr3Ed6gmo7caOxU9q" parentID="org.eclipse.e4.ide.application">
+    <descriptors id="de.vogella.e4.rcp.modelcontribution.parts.Part3" URI="platform:/plugin/de.vogella.e4.rcp.modelcontribution/de.vogella.e4.rcp.modelcontribution.parts.Part3" label="My Model Component" category="_m-UVdy2LEd-RMdxMTPbEkQ"/>
+  </components>
+</application:ModelComponents>
+

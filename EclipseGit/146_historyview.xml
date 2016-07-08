@@ -1,0 +1,364 @@
+<section id="historyview" role="wrapper">
+	<title>Using the History view</title>
+	<section id="historyview_intro">
+		<title>Purpose of the history view</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>commit history
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>History view
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>History view</primary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>History</guilabel>
+			view
+			allows you to analyze the history of your Git repository and to
+			see to
+			which commits the branches and tags points.
+			This view displays author, date, commit message and
+			the modified
+			files of a commits.
+		</para>
+		<para>This view is
+			depicted
+			in the
+			following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/egithistoryview10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>History view of changes</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			You can open this view via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Team</guisubmenu>
+				<guisubmenu>History</guisubmenu>
+			</menuchoice>
+			.
+			Alternatively you can open
+			it via
+			the
+			repository node in the
+			<guilabel>Git Repositories</guilabel>
+			View. For this
+			click on the
+			<emphasis>Show In &gt; History</emphasis>
+			entry. Some views, e.g., in the Java EE-Perspective, do not have this
+			shortcut, in this case use
+			<emphasis>Team &gt; Show in History</emphasis>
+			).
+		</para>
+	</section>
+	<section id="historyview_seechanges">
+		<title>Review the repository history via the History view </title>
+
+		<para>
+			To see the history of a resource, select your project, a file or a
+			folder, right-click on it and select the
+			<menuchoice>
+				<guimenu>Show in </guimenu>
+				<guisubmenu>History</guisubmenu>
+			</menuchoice>
+			context menu entry.
+			Alternative you
+			can use the
+			Alt+Shift+W shortcut and
+			select the
+			<guilabel>History</guilabel>
+			entry.
+		</para>
+		<para>
+			You can also configure the
+			<guilabel>History</guilabel>
+			view to display the history of the current selection. Select the
+			highlighted button in the following screenshot for
+			that.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/historytrackselection10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Tracking active selection</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>If you select a commit you see the commit message and the
+			involved files.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githistoryview10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>History View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Via right-click on an individual file you can compare
+			this
+			file
+			with its ancestor (the commit before that) or with
+			the current
+			version
+			in the workspace.
+		</para>
+		<tip>
+			<para>
+				If the "compare mode" toggle is selected from the view menu of the
+				<guilabel>History</guilabel>
+				view
+				you can also double
+				click a file
+				to compare it to the previous
+				version.
+			</para>
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/comparemode10.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Compare mode</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</tip>
+	</section>
+
+
+	<section id="historyview_settings">
+		<title>The History view filters</title>
+
+		<para>
+			The
+			<guilabel>History</guilabel>
+			view has quite some options to configure
+			which commits are displayed.
+			Its toolbar allows you to customize which commits
+			are displayed. By default,
+			the
+			<guilabel>History</guilabel>
+			view filters the history based on the current selection and shows
+			only the active branch.
+		</para>
+
+
+		<para>If you work with several branches, e.g., because you are using
+			Gerrit for code reviews, you typically want to see
+			all branch
+			information and remove the filter based on the resource.
+		</para>
+
+		<para>
+			The
+			<guilabel>History</guilabel>
+			view
+			allows you to filter based on resources. See the tooltips of the
+			toolbar
+			for the meaning of the different filter
+			options. In order to
+			see all commits click the highlighted buttons with the
+			<guilabel>Show all changes in this repository</guilabel>
+			and
+			<guilabel>Show all branches and tags</guilabel>
+			tooltips.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/historyview_toolbar10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Toolbar settings in history view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The following listing gives an overview of the purpose of the different buttons.</para>
+
+		<para>
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/history-view-buttons.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>History View Buttons</phrase>
+				</textobject>
+			</inlinemediaobject>
+		</para>
+		<para>Depending on your use case you may want to select the following option:</para>
+		<orderedlist numeration="loweralpha">
+			<listitem>
+				<para>
+					show only those commits which are reachable from the current
+					branch. Hide all commits on other topic branches.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					see only those commits which changed the selected resource
+					(file, project, subfolder) or it’s children. E.g.
+					display only
+					those commits which touched the selected java file. The current
+					selection is shown in the top right
+					corner of the History view.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					see only those commits which changed anything in the parent
+					folder of the selected resource (file, project,
+					subfolder) or it’s
+					children. E.g. display only those commits which changed the same
+					package as the selected java
+					source.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					see only those commits which changed anything in the same
+					project as the selected resource or it’s children.
+					Used when you
+					are working in a repository which contains multiple projects.
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					don’t filter at all. Show all commits of the current repository
+				</para>
+			</listitem>
+		</orderedlist>
+		<para>The options b., c. and d. are tied to the currently selected
+			resource.
+			Button g. allows that the history view
+			automatically updates when you
+			change the selection.
+		</para>
+		<tip>
+			<para>
+				If you got lost with the different filters and the history
+				doesn’t show what you expect, set it back to show
+				everything.
+				Therefore make sure that
+				<emphasis>Show all branches and tags</emphasis>
+				(a) is turned on
+				and
+				<emphasis>Show all changes in repository</emphasis>
+				(e) is selected.
+			</para>
+		</tip>
+	</section>
+
+
+	<section id="historyview_search">
+		<title>Using search</title>
+
+		<para>
+			You can also search for commits based
+			on committer, author, ID or
+			comment. For this turn on the
+			<emphasis>Show Find toolbar</emphasis>
+			(f) and type in a search string in the
+			<emphasis>Find</emphasis>
+			field. The
+			commits fitting to your search
+			are highlighted. You can combine this search with the filters
+			explained above.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/egithistoryview30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Search in the Git history view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<note>
+			<para>
+				The
+				<guilabel>Git Search</guilabel>
+				available in the
+				<menuchoice>
+					<guimenu>Search</guimenu>
+					<guisubmenu>Search</guisubmenu>
+				</menuchoice>
+				menu is much more
+				powerful and
+				consumes less
+				memory since it
+				doesn't
+				need
+				to also display the
+				history.
+			</para>
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/gitsearch10.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Git search</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</note>
+	</section>
+
+	<section id="historyview_commitdetails">
+		<title>Showing details of a commit</title>
+		<para>
+			If you want to see more details about a commit, right-click it and
+			select the
+			<guilabel>Open in Commit Viewer</guilabel>
+			entry.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/commitviewer10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Commit Viewer</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/commitviewer20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Commit Viewer</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+
+</section>

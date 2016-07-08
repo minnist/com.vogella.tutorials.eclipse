@@ -1,0 +1,400 @@
+<section id="firstplugin" role="wrapper">
+	<title>Exercise: Add a e4 menu and toolbar to the Eclipse IDE</title>
+	<section id="firstplugin_target">
+		<title>Target of this exercise</title>
+		<para>
+			In this exercise you create a plug-in which contributes
+			an e4 menu
+			entry to a
+			3.x based application menu.
+		</para>
+	</section>
+	<section id="firstplugin_create">
+		<title>Creating a plug-in project</title>
+
+		<para>
+			Create a new plug-in project called
+			<code>com.vogella.plugin.first</code>
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Project...</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Plug-in Project</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>Enter the data as depicted in the following screenshots.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin10.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guilabel>Next</guilabel>
+			button.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin20.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guilabel>Next</guilabel>
+			button.
+		</para>
+		<para>
+			Select the
+			<guilabel>Hello, World Command</guilabel>
+			template and press the
+			<guilabel>Next</guilabel>
+			button. This template uses the 3.x API, which you convert to the e4 API in
+			<xref linkend="firstplugin_migratione4" />
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin30.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			In the last page of the wizard you can customize some suggested values. You can leave the default values and
+			press the
+			<guibutton>Finish</guibutton>
+			button.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin40.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Eclipse may ask you if you want to switch to the plug-in
+			development
+			perspective. Answer
+			<guilabel>Yes</guilabel>
+			if you are prompted.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin50.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+
+
+		<para>As a result the following project is created.</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin60.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="firstplugin_start">
+		<title>Starting an Eclipse runtime IDE with your plug-in</title>
+		<para>
+			Start a new Eclipse IDE instance and validate that your menu and toolbar entry are available. See
+			<xref linkend="runtimeeclipse_starting" />
+			for more information on how to start an instance of the Eclipse IDE with additional plug-ins.
+
+		</para>
+
+		<para>
+			After launching the Eclipse IDE instance, you see the sample menu, contributed by your plug-in. After clicking
+			the menu
+			entry, you see a message box.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin80.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin90.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+	<section id="firstplugin_migratione4_manifest">
+		<title>Adding the plug-in dependencies for the e4 API</title>
+		<para>
+			Add a dependency to the
+			<code>org.eclipse.e4.core.di</code>
+			plug-in in the manifest file of the newly created plug-in.
+		</para>
+	</section>
+	<section id="firstplugin_migratione4_createhandler">
+		<title>Creating the handler class</title>
+		<para>Create the following class based on the generated handler class. </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/first/SampleE4Handler.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="firstplugin_migratione4">
+		<title>Creating a model contribution</title>
+
+		<para>
+			Select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Eclipse 4</guisubmenu>
+				<guisubmenu>Model</guisubmenu>
+				<guisubmenu>New Model Fragment</guisubmenu>
+			</menuchoice>
+			from the context menu of the plug-in project.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guilabel>Finish</guilabel>
+			button.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Create three model fragment entries in your new file, all of them should be contributing to the
+			<code>org.eclipse.e4.legacy.ide.application</code>
+			element id.
+		</para>
+		<para>Use the following screenshots to define the new contribution.</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated50.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated60.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated70.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated80.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated90.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/migrategenerated92.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="firstplugin_migratione4_toolbar">
+		<title>Adding a toolbar contribution</title>
+		<para>Also add a toolbar contribution for the same command.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<warning>
+			<para>
+				When this document was written, the model editor had a bug.
+				If you
+				enter a
+				<guilabel>Parent-ID</guilabel>
+				to the toolbar contribution, that information is not persisted in the
+				xmi code.
+				Therefore, ensure
+				that your
+				settings are
+				actually reflected in the
+				fragment
+				file. You can do this by closing the file and opening it again.
+			</para>
+			<para>
+				If you read this and the bug is still present, you have to enter the
+				Parent-ID directly in the xmi. For this switch
+				to
+				the XMI tab of the editor and enter the parent ID directly. Use the
+				<code>org.eclipse.ui.main.toolbar</code>
+				value. The file is only
+				saved, if you enter the information syntactically correct.
+			</para>
+		</warning>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution24.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Add a toolbar and a handled tool item to your contribution.
+
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution30.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution40.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="firstplugin_migratione4_validatetoolbar">
+		<title>Validating the presence of the menu and toolbar contribution</title>
+		<para>Start a new instance of the Eclipse IDE and validate that your menu and the toolbar are is contributed. If they
+			are not visible in the window, check
+			via the model spy for potential issues.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/toolbarcontribution50.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Create Model Fragment, step 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+
+
+	</section>
+
+</section>

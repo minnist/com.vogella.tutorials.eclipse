@@ -1,0 +1,8 @@
+<extension
+        point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+    <launchConfigurationTypeImage
+            id="com.example.ui.launch.launchconfigurationtypeimage"
+            configTypeID="com.example.launchConfigurationType"
+            icon="icons/full/obj16/vogella.png">
+    </launchConfigurationTypeImage>
+</extension>

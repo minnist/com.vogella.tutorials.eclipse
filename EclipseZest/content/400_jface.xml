@@ -1,0 +1,66 @@
+<section id="jface">
+	<title>Zest and JFace</title>
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace</ulink>
+		provides viewers to encapsulate the data from the presentation.
+		For an
+		introduction to JFace viewer please see
+		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer</ulink>
+		or 		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTreeViewer/article.html"> Eclipse JFace TreeViewer</ulink>. A JFace viewer requires a content provider and a label provider.
+		Zest provides as a viewer the class "GraphViewer".
+		Content provider in
+		Zest are either based on the connections or on the
+		nodes.
+	</para>
+
+	<para>
+		Standard Zest Content providers are:
+		<table frame='all'>
+			<title>Zest JFace Content Provider</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' />
+				<colspec colname='c2' />
+				<thead>
+					<row>
+						<entry>Content Provider</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>IGraphContentProvider</entry>
+						<entry>Based on the connections. The connections contain the
+							information
+							which nodes they refer to. Cannot display nodes
+							without connections.</entry>
+					</row>
+					<row>
+						<entry>IGraphEntityContentProvider</entry>
+						<entry>Based on the Node which
+							contain the information
+							about which
+							relationship they have. These relationship are available in the
+							label provider as EntityConnectionData objects. </entry>
+					</row>
+					<row>
+						<entry>IGraphEntityRelationshipContentProvider </entry>
+						<entry>Node based, the content provider defines
+							getRelationShips(sourceNode, destinationNode) which determines
+							the connections. The advantages compared with
+							IGraphEntityContentProvider is that you decide which objects you
+							return. </entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+	</para>
+
+	<para> As label provider Zest can use the standard JFace interface
+		ILabelProvider
+		(implemented for example by the class LabelProvider) or
+		the Zest specific IEntityStyleProvider. 
+	</para>
+
+
+</section>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse 4 event system (EventAdmin) - Tutorial</title>
+		<subtitle>Building Eclipse RCP applications based on Eclipse 4
+		</subtitle>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010 </year>
+			<year>2011 </year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>01.12.2015</pubdate>
+		<releaseinfo>
+			<para>Version 6.4</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Using the Eclipse event system within your application</title>
+			<para> This tutorial gives an overview about the event system of the
+				Eclipse
+				application platform.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4_prerequisites.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_usage.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_evaluation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_async.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Eclipse4EventSystem"?>
+</article>

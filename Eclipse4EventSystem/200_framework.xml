@@ -1,0 +1,9 @@
+<section id="eventsystem_frameworkevent">
+	<title>Eclipse framework events</title>
+
+	<para>
+		The framework also uses the event service for model changes and other framework events. See
+		<ulink url="http://www.vogella.com/tutorials/Eclipse4ModelEvents/article.html">Eclipse model and application events</ulink>
+		for a tutorial.
+	</para>
+</section>

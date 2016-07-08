@@ -42,11 +42,11 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 			this
 			right-click on
 			your project and select
-			<emphasis>Properties &gt; FindBugs</emphasis>
+			_Properties &gt; FindBugs_
 			and select the button
-			<emphasis>Run
+			_Run
 				automatically
-			</emphasis>
+			_
 			(only available if FindBugs is installed in your Eclipse).
 		
 	
@@ -64,10 +64,10 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 			This view presents which files you have touched and which files will be
 			in the
 			next commit.
-			<emphasis>Unstaged Changes</emphasis>
+			_Unstaged Changes_
 			lists those changes which you have done locally
 			but which you have not yet added to the index.
-			<emphasis>Staged Changes</emphasis>
+			_Staged Changes_
 			list those
 			changes which you already have added to the index. You can drag and drop
 			files
@@ -75,13 +75,13 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 		
 			Git Staging view should list three files
-			<emphasis>.project</emphasis>
+			_.project_
 			,
-			<emphasis>Calculator.java</emphasis>
+			_Calculator.java_
 			and
-			<emphasis>Power.java</emphasis>
+			_Power.java_
 			(
-			<emphasis>.project</emphasis>
+			_.project_
 			appears only if you have configured FindBugs
 			to run automatically).
 		
@@ -97,9 +97,9 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 		
 			Double-click on
-			<emphasis>.project</emphasis>
+			_.project_
 			to inspect which changes you have done. This opens the
-			<guilabel>Compare</guilabel>
+			_Compare_
 			editor for this file.
 		
 		
@@ -114,11 +114,11 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 		
 			Drag and drop
-			<emphasis>Calculator.java</emphasis>
+			_Calculator.java_
 			and
-			<emphasis>Power.java</emphasis>
+			_Power.java_
 			to the
-			<emphasis>Staged Changes</emphasis>
+			_Staged Changes_
 			area
 			to mark that they should be included in the next commit.
 		

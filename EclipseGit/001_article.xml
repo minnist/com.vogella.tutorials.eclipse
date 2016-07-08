@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Git version control with Eclipse (EGit) - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>18.01.2016</pubdate>
+		<releaseinfo>
+			<para>Version 4.1</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Git with Eclipse (EGit)</title>
+			<para> This tutorial describes the usage of EGit; an Eclipse plug-in
+				to
+				use the distributed version control system Git.
+				This tutorial is
+				based on
+				Eclipse 4.5 (Mars).
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="008_about.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_workspace.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_commandline_git.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_eclipseinstallation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_configuration.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_repositoryview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="142_packageexplorer.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="144_stagingview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="145_commitdialog.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="146_historyview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_multiprojects.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="170_exercise_localrepository.xml" />
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="190_clone_repository.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="192_import_project.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_team_operations.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_team_operations_branch.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="212_team_merge.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_rebase.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="250_reset.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="254_cherrypick.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="260_createpatch.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="270_annotations.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_stash.xml" />
+
+
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="340_interactive_rebase.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_github.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="406_eclipsessh.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="410_githubmylyn.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="500_commitmessages.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="800_egitsource.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseGit"?>
+</article>

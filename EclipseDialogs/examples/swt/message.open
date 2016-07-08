@@ -1,0 +1,8 @@
+// create a dialog with ok and cancel buttons and a question icon
+MessageBox dialog = 
+	new MessageBox(shell, SWT.ICON_QUESTION | SWT.OK| SWT.CANCEL);
+dialog.setText("My info");
+dialog.setMessage("Do you really want to do this?");
+
+// open dialog and await user selection
+returnCode = dialog.open();

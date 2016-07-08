@@ -1,0 +1,10 @@
+// create the manager and bind to a widget
+ResourceManager resManager = 
+	new LocalResourceManager(JFaceResources.getResources(), composite);
+
+// create resources
+Color color = resManager.createColor(new RGB(200, 100, 0));
+Font font = resManager.
+	createFont(FontDescriptor.createFrom("Arial", 10, SWT.BOLD));
+// get an imageDescriptor and create Image object 
+Image image = resManager.createImage(imageDescriptor);

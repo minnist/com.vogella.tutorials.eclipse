@@ -1,0 +1,20 @@
+
+@Inject
+@Optional
+public void trackUserSettings
+	(
+	@Preference(nodePath = "com.example.e4.rcp.todo", 
+	value = "user") 
+	String user) {
+	System.out.println("New user: " + user);
+}
+	
+@Inject
+@Optional
+public void trackPasswordSettings
+    (
+	@Preference(nodePath = "com.example.e4.rcp.todo", 
+	value = "password") 
+	String password) {
+	System.out.println("New password: " + password);
+}

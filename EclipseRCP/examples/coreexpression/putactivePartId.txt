@@ -1,0 +1,7 @@
+
+@Execute
+public void execute(IEclipseContext context) {
+  // put an example value in the context
+  context.set("myactivePartId", 
+  "com.example.e4.rcp.todo.part.todooverview");
+}

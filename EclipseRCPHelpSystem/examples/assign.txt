@@ -1,0 +1,4 @@
+
+Text text = new Text(parent, SWT.NONE);
+text.setText("Hello");
+PlatformUI.getWorkbench().getHelpSystem().setHelp(text, "message");

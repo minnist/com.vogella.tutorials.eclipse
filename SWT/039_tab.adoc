@@ -1,0 +1,23 @@
+<section id="swt_tab">
+	<title>Tab order of elements</title>
+	
+		You can specify the tab order of controls via the
+		<code>setTabList()</code>
+		method of a
+		<code>Composite</code>
+		. For this you provide an array of the controls where the order of the
+		controls in the array specify the tab order.
+	
+
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/tab/TabExample.java" />
+		</programlisting>
+	
+	<tip>
+		Defining a tab order for your controls is important to increase
+			the accessibility and to allow advanced users a quick navigation.
+		
+	</tip>
+</section>

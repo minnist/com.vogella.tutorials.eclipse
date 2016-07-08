@@ -1,0 +1,173 @@
+<section id="eclipsebugtracker" role="wrapper">
+	<title>Eclipse bug reports and feature requests</title>
+	<indexterm>
+		<primary>Bug tracker for Eclipse</primary>
+	</indexterm>
+
+	<section id="eclipsebugs1">
+		<title>Reporting bugs and feature requests</title>
+
+		<para>
+			If you encounter a problem with the Eclipse IDE or think about a potential improvement for it, you should report this
+			to the Eclipse project.
+			The Eclipse bug and feature tracker is using the open source
+			<wordasword>Bugzilla</wordasword>
+			project
+			from
+			<wordasword>Mozilla</wordasword>
+			. In this system, you enter Eclipse error reports. You can also request new
+			features or improvements
+			of
+			existing
+			features.
+		</para>
+		<tip>
+			<para>Most Eclipse projects receive lots of bug and feature requests. So if you want something fixed or
+				enhanced you
+				may have to provide a Gerrit review for it. If the Eclipse developer sees that you try to fix the
+				problem yourself,
+				you typically receive more support from them.
+			</para>
+		</tip>
+
+
+	</section>
+	<section id="eclipsebugzilla_usaging">
+		<title>Using the Eclipse bugzilla system</title>
+		<para>
+			This
+			bug tracker can be
+			found under
+			<ulink url="https://bugs.eclipse.org/bugs/">Eclipse Bugzilla</ulink>
+			.
+			Here you
+			can
+			search for
+			existing bugs and review them.
+		</para>
+		<para>
+			To participate actively in the Eclipse bug tracker, you need to
+			create
+			a
+			new account. This can be done by clicking
+			the
+			<guilabel>Create a New Account</guilabel>
+			link.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/bugzilla10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Opening an account at Eclipse bugzilla</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para> Once you have a user account, you can login to the Eclipse
+			bug
+			tracker.
+			This
+			allows you to comment on existing bugs
+			and
+			report
+			new
+			ones.
+			The user data for the all Eclipse sites are the same, i.e, the
+			forum, marketplace, bug tracker, etc.
+			Only for the Gerrit access,
+			different user data is used.
+		</para>
+		<para>
+			As example you can report bugs for the Eclipse
+			platform via the
+			following link:
+			<ulink url="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform">
+				Bug report for the Eclipse platform
+			</ulink>
+			.
+		</para>
+
+	</section>
+
+	<section id="eclipsebugs_priorities">
+		<title>Eclipse bug priorities</title>
+		<para>
+			The Eclipse Bugzilla system allows you and the Eclipse committer
+			to
+			enter the bug priority. But overall, it is up to
+			each project do
+			decide how they handle bugs so some variation from project
+			to
+			project
+			will occur. The following rules can
+			be used as guideline.
+			<table frame='all'>
+				<title>Bug priorities</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Priority</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>blocker</entry>
+							<entry>The bug blocks development or testing of the build and no
+								workaround is known.
+							</entry>
+						</row>
+						<row>
+							<entry>critical</entry>
+							<entry>Implies "loss of data" or frequent crashes or a severe
+								memory leak.
+							</entry>
+						</row>
+						<row>
+							<entry>major</entry>
+							<entry>Implies a "major loss of function".</entry>
+						</row>
+						<row>
+							<entry>normal</entry>
+							<entry>This is the default value for new bug reports. Implies
+								some loss of functionality under specific
+								circumstances,
+								typically the correct setting unless one of the other levels
+								fit.
+							</entry>
+						</row>
+						<row>
+							<entry>minor</entry>
+							<entry>Something is wrong,
+								but doesn't affect function
+								significantly or other problem where
+								easy workaround is
+								present.
+							</entry>
+						</row>
+						<row>
+							<entry>trivial</entry>
+							<entry>This describes a cosmetic problem like misspelled words or
+								misaligned text, but doesn't affect function.
+							</entry>
+						</row>
+						<row>
+							<entry>enhancement</entry>
+							<entry>Represents a request for enhancement (also for "major"
+								features that would be really nice to have).
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+
+	</section>
+
+
+</section>

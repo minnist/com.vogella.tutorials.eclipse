@@ -1,0 +1,123 @@
+<section id="unitTesting" role="wrapper">
+	<title>Eclipse and tests</title>
+	<section id="unitTestingJFace1">
+		<title>Eclipse projects and their test suite</title>
+		<para>
+			Most Eclipse projects provide a test suite which can be used to
+			validate that everything still works as planned.
+		</para>
+		<para>
+			For example, in case you are changing the Eclipse
+			platform code
+			you should
+			ensure that
+			the platform tests still
+			perform as
+			planned. If
+			changes in the tests are
+			required, you should
+			adjust the tests
+			with the
+			same Gerrit
+			change.
+		</para>
+	</section>
+
+
+	<section id="unitTesting_version">
+		<title>Version of JUnit</title>
+		<para>
+			At the time of this writing, lots of unit tests of the Eclipse
+			projects are still based on JUnit 3.x.
+			JUnit 3.x uses
+			the
+			<wordasword>test</wordasword>
+			prefix of method names to identify test methods.
+		</para>
+		<para>
+			Several projects are currently migrating their test to JUnit 4, so this will hopefully change in the future.
+		</para>
+	</section>
+
+
+	<section id="unitTesting_vnc">
+		<title>Tips: running the unit tests on a virtual server</title>
+		<para>On Unix based system you can also run the user interface tests
+			with a virtual display. This makes the execution
+			of the tests faster
+			and allows to developer to continue to work on the same machine.
+		</para>
+		<tip>
+			<para>This step is optional. You can of course run the tests without
+				a virtual
+				server.
+			</para>
+		</tip>
+		<para>
+			The Eclipse platform unit tests starts an Eclipse IDE and
+			visually
+			interacts with it. This screen flickering can
+			be annoying.
+			You can
+			use a virtual server and execute the tests on this virtual
+			device.
+		</para>
+
+		<para>
+			On Ubuntu you can install the virtual server and the client
+			via
+			the
+			following
+			commands. The
+			client is not required to
+			run the unit tests
+			but useful in case you
+			want to view the test execution on the virtual
+			server.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/install.txt" />
+			</programlisting>
+		</para>
+		<para>You start the server with the following parameters.</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/start.txt" />
+			</programlisting>
+		</para>
+		<para>
+			In the Eclipse launch configuration you can define the display
+			which is used for the test execution.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/settingdisplayforunittests.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Setting the Display variable in Eclipse</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you are running a Maven / Tycho build from the command line, you
+			can export the display variable.
+			<para>
+				<programlisting language="bourne">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/display.txt" />
+				</programlisting>
+			</para>
+		</para>
+		<para>
+			If you want to watch the unit tests, you can also connect to the
+			virtual server via the vncclient.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/vncserver/connect.txt" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

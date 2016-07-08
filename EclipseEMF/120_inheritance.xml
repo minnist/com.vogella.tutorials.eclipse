@@ -1,0 +1,125 @@
+<section id="inheritance">
+	<title>Extending an EMF Ecore model (inheritance)</title>
+	<section id="inheritance_overview">
+		<title>Overview</title>
+		<para>
+			EMF allows to extend existing models via inheritance. The
+			following
+			will define a base model and an extension based on this base
+			model.
+			This can for example be used to extend the
+			<ulink url="http://www.vogella.com/tutorials/EclipseE4/article.html"> Eclipse e4</ulink>
+			application model. It will also demonstrate how to work with EMF
+			ecore models
+			directly without using the ecore tools.
+		</para>
+
+	</section>
+	<section id="inheritance_example">
+		<title>Example</title>
+		<para>
+			Create a new EMF project
+			"de.vogella.emf.inheritance".
+			Create a
+			new
+			model by selecting File ->
+			New -> "Eclipse Modeling
+			Framework" ->
+			"Ecore
+			Model". Name the model
+			"base.ecore". Select "EPackage" as the
+			basis and maintain the following
+			properties for this package. </para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend10.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para> Right-click on the package and select New Child -> EClass.
+			Maintain the class "MyBaseClass" with two "EAttributes" of type
+			"EString". Create a new "Ecore" model "extendedmodel.ecore". Maintain
+			"extended" as the package name. Right-click
+			your model and select
+			"Load resource". </para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend40.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend50.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend60.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> Create a new class "MyExtendedClass" and press "ESuperType".
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend70.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> Add your "MyBaseClass".</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend80.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend90.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> Maintain a new EAtribute "detailedField" on "MyExtendedClass".
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/extend100.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para> Create a new genmodel "extended.genmodel" based on
+			extended.ecore. Generated Java code and you will see that the
+			"MyExtendedClass" has extended "MyBaseClass".</para>
+
+
+	</section>
+
+</section>

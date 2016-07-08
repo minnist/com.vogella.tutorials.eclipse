@@ -1,0 +1,117 @@
+<section id="e4commandsin3x" role="wrapper">
+	<title>Adding e4 commands, menus and toolbars to a 3.x API based applications</title>
+
+	<section id="partialmigration_convertmenus">
+		<title>Adding e4 menu entries</title>
+		<para>
+			Menus, handlers and commands can be contributed to an Eclipse application via
+			model fragments.
+			To do this, you only
+			need
+			to know
+			the ID of the element to which you
+			want to
+			contribute. The ID of the Eclipse IDE and Eclipse 3.x RCP
+			applications is hard coded to the
+			<code>org.eclipse.e4.legacy.ide.application</code>
+			value.
+		</para>
+
+		<tip>
+			<para>
+				You can use the model spy from
+				the e4 tools
+				project
+				to identify the ID of the element you want to
+				contribute
+				too. See
+				<xref linkend="modelspyintroduction" />
+				.
+			</para>
+		</tip>
+
+
+		<para>
+			With the correct ID you can create model fragments that contribute to the corresponding application model element.
+			The
+			following screenshot demonstrate how to contribute to the
+			<wordasword>menuContributions</wordasword>
+			feature of the Eclipse IDE.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/modelcontribution10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Contributing to the Eclipse menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After you added a MenuContribution item you can contribute a menu.
+			The
+			<code>Parent-ID</code>
+			must be the ID of the menu your are contributing
+			to.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/modelcontribution20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Contributing to the Eclipse menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/modelcontribution30.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Contributing to the Eclipse menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			The model fragment must be registered in the plugin.xml file via an extension to the
+			<code>org.eclipse.e4.workbench.model</code>
+			extension point, as demonstrated in the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/extend/plugin.xml" />
+			</programlisting>
+		</para>
+
+
+
+	</section>
+
+	<section id="partialmigration_convertmenus_error">
+		<title>Error analysis</title>
+		<para>In case of problems, check the source code of plugin.xml and validate that your model fragment is included.
+			Verify the name of the referred model fragment and ensure all
+			the defined ID are available in the running
+			configuration.
+		</para>
+	</section>
+	<section id="partialmigration_converttoolbar">
+		<title>Adding e4 toolbar entries to the appliation window</title>
+		<para>
+			Similar to menus you can contribute toolbar
+			contributions. This is demonstrated in
+			<xref linkend="firstplugin_migratione4_toolbar" />
+			.
+		</para>
+		<note>
+			<para>This approach does currently not work for view toolbars.</para>
+		</note>
+	</section>
+
+</section>

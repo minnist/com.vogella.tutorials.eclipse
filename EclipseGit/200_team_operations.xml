@@ -1,0 +1,232 @@
+<section id="team_operations" role="wrapper">
+	<title>Performing Git operations in Eclipse</title>
+
+	<section id="team_pullpush">
+		<title>Pull, push and fetch</title>
+		<para>
+			You can use the
+			<guilabel>Git Repositories</guilabel>
+			view to pull, push and fetch to remote repositories. Right click on
+			your repository and select the appropriated operation.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/pullpush10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Pull push and fetch dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="team_basic">
+		<title>Basic team operations</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>add
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>commit
+			</secondary>
+		</indexterm>
+		<para>
+			Once you have placed a project under version control you can
+			start
+			using team operations on your project. The team operations are
+			available via right-click on your project or file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gitcontextmenu10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Context menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<tip>
+			<para>The Team menu is also available from the context menu of an
+				opened editor.
+			</para>
+		</tip>
+		<para>
+
+			The most important
+			operations are described in the following
+			list. Select:
+		</para>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Add to index</guisubmenu>
+						</menuchoice>
+						, to add the selected resource(s) to the Git index
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Commit</guisubmenu>
+						</menuchoice>
+						, to open the commit dialog to create a new commit
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Create Patch...</guisubmenu>
+						</menuchoice>
+						, to create a patch
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Apply Patch...</guisubmenu>
+						</menuchoice>
+						, to apply a patch to your file system
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Ignore</guisubmenu>
+						</menuchoice>
+						, to add a file to the .gitignore file
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<menuchoice>
+							<guimenu>Team</guimenu>
+							<guisubmenu>Show in History</guisubmenu>
+						</menuchoice>
+						, to display the history of the selected resources(s)
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+	</section>
+	<section id="team_project">
+		<title>Team operations available on the project</title>
+		<para>If you select a project you can use
+			additional team
+			operations
+			from the context menu.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gitcontextmenu20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Context menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<itemizedlist>
+			<listitem>
+				<para>
+					<menuchoice>
+						<guimenu>Team</guimenu>
+						<guisubmenu>Pull</guisubmenu>
+					</menuchoice>
+					to pull in changes from your remote Git repository
+
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<menuchoice>
+						<guimenu>Team</guimenu>
+						<guisubmenu>Fetch</guisubmenu>
+					</menuchoice>
+					to fetch the current state from the remote repository
+
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<menuchoice>
+						<guimenu>Team</guimenu>
+						<guisubmenu>Switch To</guisubmenu>
+					</menuchoice>
+					to checkout existing or create new branches
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<menuchoice>
+						<guimenu>Team</guimenu>
+						<guisubmenu>Push</guisubmenu>
+					</menuchoice>
+					to push changes to your remote Git repository
+
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<menuchoice>
+						<guimenu>Team</guimenu>
+						<guisubmenu>Tag</guisubmenu>
+					</menuchoice>
+					to create and manage tags.
+				</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+
+
+	<section id="egit_amend">
+		<title>Amending a commit</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>amend
+			</secondary>
+		</indexterm>
+		<para>
+			Git amend allows adjusting the last commit. For example you can
+			change the commit message or add another modification.
+		</para>
+		<para>
+
+			The
+			<guilabel>Git Staging</guilabel>
+			view
+			allows you to perform
+			the
+			Git amend command via the highlighted
+			button
+			in the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/egitamend10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Git amend in the Git Staging view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+</section>

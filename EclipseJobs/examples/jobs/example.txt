@@ -1,0 +1,25 @@
+// get UISynchronize injected as field
+@Inject UISynchronize sync;
+
+// more code
+
+Job job = new Job("My Job") {
+	@Override
+	protected IStatus run(IProgressMonitor monitor) {
+		// do something long running
+		//... 
+						
+		// If you want to update the UI
+		sync.asyncExec(new Runnable() {
+			@Override
+			public void run() {
+				// do something in the user interface
+				// e.g. set a text field
+			}
+		});
+		return Status.OK_STATUS;
+	}
+};
+
+// Start the Job
+job.schedule();

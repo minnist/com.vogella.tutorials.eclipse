@@ -1,0 +1,141 @@
+<section id="eclipsegerritcontribution_cloneviagerrit" role="wrapper">
+	<title>Clone the selected Eclipse Git repository</title>
+	<section id="eclipsegerritcontribution_cloneviagerrit_server">
+		<title>Finding the correct Git repository</title>
+		<para>Ensure you are logged into the Gerrit server webpage. This will enable you to use SSH or
+			HTTPS for cloning the
+			repository.
+		</para>
+		<para>
+			Go to the
+			<ulink url="https://git.eclipse.org/r/">Gerrit Eclipse homepage</ulink>
+			and select the
+			<menuchoice>
+				<guimenu>Projects</guimenu>
+				<guisubmenu>List</guisubmenu>
+			</menuchoice>
+			menu entry. This opens the
+			<ulink url="https://git.eclipse.org/r/#/admin/projects/">Project search page</ulink>
+			. Afterwards search for the project you want to contribute to. In our example we want to contribute to the
+			platform.ui project.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gerrit_getcloneurl10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Get URL to clone a Gerrit project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Select the correct project. This opens a new webpage.
+			This page contains links for cloning the Git
+			repository. The
+			selection
+			for HTTPS is
+			depicted in the
+			following
+			screenshot. Please note that the URL for you is different, as it
+			contains your user name.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gerrit_getcloneurl30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Get URL to clone a Gerrit project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="eclipsegerritcontribution_cloneviagerrit2">
+		<title>Clone the repository via the Eclipse IDE</title>
+		<para>
+			To clone, select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Import...</guisubmenu>
+				<guisubmenu>Git</guisubmenu>
+				<guisubmenu>Projects from Git</guisubmenu>
+				<guisubmenu>Clone URI</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gerrit_getcloneurl40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Get URL to clone a Gerrit project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gerrit_getcloneurl50.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Get URL to clone a Gerrit project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Enter the URL from the Gerrit webpage in the first line of the wizard. The Eclipse Git tooling removes "git
+			clone" from the clone URI automatically.
+		</para>
+		<para>
+			Note that the URL automatically includes your user name. This makes
+			it
+			easier to push a change to the Eclipse
+			Gerrit
+			review
+			system. If you clone the repository using the Eclipse Git functionality, your local repository is already
+			configured to push changes to Gerrit, no additional setup step is required. You can also clone anonymously via
+			<guilabel>Anonymous HTTP</guilabel>
+			, if you just want to play with
+			the source code locally and do not intend to
+			contribute changes. The following
+			screenshot shows this selection, please the depicted user name with yours.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gerrit_getcloneurl60.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Get URL to clone a Gerrit project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			On the next wizard page you can choose to clone all branches or only the master branch. Finish this wizard by
+			selecting the
+			<guilabel>Next</guilabel>
+			button
+			until you the option
+			<guilabel>Finish</guilabel>
+			option becomes available. You end up with the projects from the repository imported into your workspace.
+		</para>
+
+		<note>
+			<para>
+				In case you cloned a Git repository without using the
+				Gerrit URL or not via Eclipse Git you
+				have to adjust the
+				push URL.
+				See
+				<xref linkend="eclipsegerritcontribution_adjustpush" />
+				for a description how to do that.
+			</para>
+
+		</note>
+
+	</section>
+
+</section>

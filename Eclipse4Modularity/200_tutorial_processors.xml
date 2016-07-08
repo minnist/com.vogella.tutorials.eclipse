@@ -1,0 +1,180 @@
+<section id="contributeprocessors" role="wrapper">
+	<title>Exercise: Implementing a model processor</title>
+	<section id="contributeprocessors_target">
+		<title>Target</title>
+		<para>
+			In this exercise
+			you
+			replace an existing menu entry with another
+			menu entry.
+		</para>
+
+	</section>
+
+	<section id="contributeprocessors_dependencies">
+		<title>Enter the dependencies</title>
+		<para>
+			Continue to use the
+			<code>com.example.e4.rcp.todo.contribute</code>
+			plug-in for this exercise.
+		</para>
+
+		<para>
+			In the
+			<filename>MANIFEST.MF</filename>
+			, add the following plug-ins as dependencies to your
+			<wordasword>contribute</wordasword>
+			plug-in.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.services</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.core.contexts</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.model.workbench</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+	</section>
+	<section id="contributeprocessors_java">
+		<title>Create the Java classes</title>
+		<para> Create the following dialog and handler classes. </para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/processors/ExitDialog.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/processors/ExitHandlerWithCheck.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Create the model processor class. This class removes all menu
+			entries
+			which have "exit" in their ID from the menu with
+			the
+			<code>org.eclipse.ui.file.menu</code>
+			ID. It also adds a new entry.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/processors/MenuProcessor.java" />
+			</programlisting>
+		</para>
+
+		<warning>
+			<para>
+				Ensure that your menu entry labeled with "Exit" in the
+				<filename>Application.e4xmi</filename>
+				file, contains "exit" in its ID.
+			</para>
+		</warning>
+
+	</section>
+
+	<section id="contributeprocessors_extension">
+		<title>Register processor via extension</title>
+		<para>
+			In your
+			<code>contribute</code>
+			plug-in register your
+			<code>processor</code>
+			via the
+			<code>org.eclipse.e4.workbench.model</code>
+			extension.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/processor04.png" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Right-click on the processor and select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>element</guisubmenu>
+			</menuchoice>
+			. The value from the ID parameter is the ID of the model element
+			which is
+			injected
+			into your processor class. Use
+			<parameter>org.eclipse.ui.file.menu</parameter>
+			as
+			<parameter>id*</parameter>
+			parameter.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/processor10.png" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<warning>
+			<para>
+				This assumes that you used
+				<wordasword>org.eclipse.ui.file.menu</wordasword>
+				as
+				ID for your
+				<wordasword>File</wordasword>
+				menu in the main application model.
+			</para>
+		</warning>
+
+		<warning>
+			<para>
+				The ID of the element defined in the extension point must match the
+				<code>@Named</code>
+				value in the processor, otherwise your menu is not injected into the
+				processor.
+			</para>
+		</warning>
+
+	</section>
+	<section id="contributeprocessors_validate">
+		<title>Validating</title>
+		<para>
+			Start your application. In the model fragment exercises, the
+			contribute plug-in was already added to your
+			product.
+		</para>
+		<para>
+			Ensure that the
+			existing "Exit"
+			menu entry is
+			removed and your new
+			menu entry with the
+			"Another Exit"
+			label is
+			added to
+			the file menu.
+		</para>
+	</section>
+
+</section>
+
+
+

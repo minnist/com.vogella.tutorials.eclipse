@@ -1,0 +1,31 @@
+<section id="layout">
+	<title>Example: Using layout manager</title>
+	
+		The following shows an example for the usage of the
+		<code>GridLayout</code>
+		class in the
+		<code>com.example.swt.widgets</code>
+		project.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/gridlayout/GridLayoutSWT.java" />
+		</programlisting>
+	
+	 Start your application, it should look similar to the following
+		screenshot.
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/gridswtlayout.png"/>
+			</imageobject>
+		</mediaobject>
+	
+	Resize the window and see how the arrangement of the widgets
+		change.
+	
+</section>
+

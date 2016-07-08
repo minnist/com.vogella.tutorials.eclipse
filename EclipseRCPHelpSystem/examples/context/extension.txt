@@ -1,0 +1,8 @@
+
+<extension
+      point="org.eclipse.help.contexts">
+   <contexts
+         file="contextDefinitionFile.xml"
+         plugin="de.vogella.helptest">
+   </contexts>
+</extension>

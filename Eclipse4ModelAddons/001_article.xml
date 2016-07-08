@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse 4 Model Add-ons - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009 </year>
+			<year>2010 </year>
+			<year>2011 </year>
+			<year>2012 </year>
+			<year>2013 </year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>04.07.2013</pubdate>
+		<releaseinfo>
+			Version 6.9
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Creating model add-ons for Eclipse plug-ins</title>
+			<para> This tutorial gives an overview about the
+				model add-ons in the Eclipse 4
+				application
+				platform.
+			</para>
+		
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_addons.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_modeladdons.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Eclipse4ModelAddons"?>
+</article>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse Zest -
+			Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year> 2009 - 2011</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>07.06.2011</pubdate>
+		<releaseinfo>
+			<para>Version 1.3</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Zest</title>
+			<para> Eclipse Zest is a visualization toolkit for graphs. This
+				tutorial explains how to create directly a Zest graph and how to use
+				the JFace abstraction.  </para>
+			<para>In this tutorial Eclipse 3.6 (Eclipse Helios) is used.
+			</para>
+
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/140_installation.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_example.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/400_jface.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/420_jfaceexample.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/800_tips.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/900_pde_visualization.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseZest"?>
+</article>

@@ -1,0 +1,4 @@
+
+count = 0; 
+gsh = new Packages.de.vogella.stock.daomock.StockDaoMock(); // create instance of the GetStockHistory class
+stock = gsh.getStockValues(params["StockName"]); //Load the ArrayList

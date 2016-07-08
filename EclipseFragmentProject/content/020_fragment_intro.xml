@@ -1,0 +1,42 @@
+<section id="fragement_overview">
+	<title>What are fragments in OSGi?</title>
+	<indexterm>
+		<primary>Fragments</primary>
+	</indexterm>
+
+	<para>
+		A
+		<wordasword>fragment</wordasword>
+		is an optional attachment to another plug-in. This other plug-in is
+		called the
+		<wordasword>host plug-in</wordasword>
+		. At runtime the
+		fragment
+		is
+		merged with its host
+		plug-in and for the
+		runtime both
+		projects are
+		just
+		one. Fragments are
+		always
+		optional for
+		their host
+		plug-in and the host plug-in doesn't even know that it exists.
+	</para>
+	<para>
+		The Eclipse IDE supports the creation of fragments via
+		<wordasword>fragment projects</wordasword>
+		.
+		To create a fragment project select
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>New</guisubmenu>
+			<guisubmenu>Other...</guisubmenu>
+			<guisubmenu>Plug-in Development</guisubmenu>
+			<guisubmenu>Fragment Project</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+
+</section>

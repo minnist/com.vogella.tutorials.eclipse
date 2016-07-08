@@ -1,0 +1,4 @@
+cd org.eclipse.e4.tools
+mvn clean verify
+
+

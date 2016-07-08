@@ -1,0 +1,141 @@
+<section id="preferencefiledefault" role="wrapper">
+	<title>Eclipse preference settings</title>
+	<section id="preferences_definition">
+		<title>What are preferences?</title>
+		<indexterm>
+			<primary>Preferences</primary>
+		</indexterm>
+		<para>
+			The behavior of the Eclipse IDE can be controlled via key value pairs
+			stores as
+			<wordasword>preference</wordasword>
+			settings. Each Eclipse software component can define such perferences
+			and use the values to configure itself. This allows you for example
+			to configure how long the Eclipse waits before the code completion
+			or if the import statements in your source code should be
+			automatically adjusted if you save your source code.
+		</para>
+		<para>Which preferences are key values stored on the file system, the
+			Eclipse IDE allows the user to configure most of these values via the
+			preference dialog.
+		</para>
+	</section>
+	<section id="preferences_howtochange">
+		<title>Opening the preference dialog</title>
+		<para>
+
+			Select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+			</menuchoice>
+			to open the preference dialog. You can use the filter box
+			to
+			search for
+			specific settings.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/preferencesettings17.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Preference settings</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Correctly configuring Eclipse to your needs can largely improve
+			your productivity. Most of these preference
+			settings
+			are specific to
+			your workspace but some are also valid for all workspaces.
+		</para>
+	</section>
+
+	<section id="eclipse_plugin_customization.ini">
+		<title>Configuring the preference values via the
+			plugin_customization.ini file</title>
+		<para>
+			You can specify default values for preferences via a file which is
+			typically called
+			<filename>plugin_customization.ini</filename>
+			.
+		</para>
+		<para>
+			In this file you enter default values for preference settings.
+			For
+			example, the following will setup a default type filter for the
+			<code>java.awt</code>
+			and
+			<code>javax.swing</code>
+			package.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/preferences/plugin_customization.ini" />
+			</programlisting>
+		</para>
+		<para>
+			You link to this file via your
+			<filename>eclipse.ini</filename>
+			file in your Eclipse
+			installation directory.
+		</para>
+		<para>
+
+			The following example
+			<filename>eclipse.ini</filename>
+			links to the file and it
+			assumes
+			that you created the
+			<filename>plugin_customization.ini</filename>
+			file in the Eclipse installation directory.
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/preferences/eclipse.ini" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="eclipse_keys">
+		<title>Identifying preference setting values</title>
+		<para>
+			To identify a key for a certain preference setting you can export
+			existing preference settings via the following approach.
+
+			<itemizedlist>
+				<listitem>
+					<para>start a new workspace</para>
+				</listitem>
+				<listitem>
+					<para>change the preference</para>
+				</listitem>
+				<listitem>
+					<para>export all
+						preferences
+					</para>
+				</listitem>
+				<listitem>
+					<para>search the key in the exported file</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<note>
+			<para>
+				You need
+				to remove the scope (e.g., /instance/) before
+				copying
+				it into
+				the
+				<filename>plugin_customization.ini</filename>
+				file.
+			</para>
+		</note>
+	</section>
+</section>

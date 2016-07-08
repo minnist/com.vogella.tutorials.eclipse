@@ -1,0 +1,252 @@
+<section id="swt" role="wrapper">
+	<title>SWT Overview</title>
+
+	<section id="swt_overview">
+		<title>What is SWT?</title>
+		<indexterm>
+			<primary>SWT</primary>
+		</indexterm>
+		
+			The Standard Widget Toolkit (
+			<wordasword>SWT</wordasword>
+			)
+			is the default user interface library used by Eclipse. It provides
+			widgets,
+			e.g., buttons and text fields, as well as
+			layout managers.
+			Layout
+			managers are used to arrange the widgets according to a certain
+			rule
+			set.
+		
+		
+			SWT
+			supports several platforms, e.g., Windows, Linux and Mac OS X.
+			The
+			design target of
+			SWT
+			is to stay closely to the operating system (OS)
+			and the
+			SWT
+			API (Application Programming Interface)
+			is very close to the
+			native
+			API
+			of the OS.
+		
+
+		
+			SWT
+			uses the native widgets of the
+			platform whenever possible. The
+			native
+			widgets of
+			the OS are
+			accessed by the SWT
+			framework via the
+			<wordasword>Java Native
+				Interface
+			</wordasword>
+			(JNI)
+			framework. JNI is a
+			programming
+			framework
+			that enables Java code
+			running in a Java
+			Virtual Machine
+			(JVM) to call,
+			and to be called by,
+			native
+			applications and libraries
+			written in other
+			languages such as
+			C,
+			C++
+			and
+			assembler.
+
+		
+		
+			The approach of using native widgets can also be found in
+			<wordasword>AWT</wordasword>
+			, a
+			standard user interface library available in Java.
+			But SWT
+			provides
+			more widgets than
+			AWT, e.g., tree and table widgets.
+			In case a widget
+			is not natively
+			available on one platform, SWT emulates this
+			widget on
+			this platform.
+		
+	</section>
+	<section id="swt_eclipse">
+		<title>Eclipse applications and SWT</title>
+		
+			Eclipse applications typically use
+			SWT
+			for the user interface. If
+			you develop Eclipse plug-ins which extend the Eclipse IDE
+			itself,
+			you
+			have to use
+			SWT
+			as the Eclipse IDE Workbench uses an
+			SWT
+			renderer.
+
+		
+		
+			For RCP applications
+			it is possible to use other user
+			interface
+			toolkits than SWT,
+			like JavaFX. This
+			is
+			possible because the Eclipse
+			platform
+			provides
+			a
+			flexible rendering
+			framework which allows you to
+			replace
+			the
+			user
+			interface toolkit.
+		
+
+	</section>
+	<section id="swt_display">
+		<title>Display and Shell</title>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Display</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Shell</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Shell (SWT)</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Display (SWT)</primary>
+		</indexterm>
+
+		
+			The
+			<code>Display</code>
+			and
+			<code>Shell</code>
+			classes are key components of
+			SWT
+			applications.
+		
+		
+			A
+			<code>org.eclipse.swt.widgets.Shell</code>
+			class
+			represents a window.
+		
+		
+			The
+			<code>org.eclipse.swt.widgets.Display</code>
+			class is responsible for managing event loops, fonts, colors
+			and for
+			controlling the communication between the user interface thread and
+			other
+			threads.
+			<code>Display</code>
+			is therefore the
+			base for
+			all
+			SWT
+			capabilities.
+		
+		
+			Every
+			SWT
+			application requires at
+			least one
+			<code>Display</code>
+			and one
+			or more
+			<code>Shell</code>
+			instances. The main
+			<code>Shell</code>
+			gets,
+			as a default parameter, a
+			<code>Display</code>
+			as a
+			constructor argument. Each
+			<code>Shell</code>
+			is constructed with a
+			<code>Display</code>
+			and if none is provided during construction it will use either the
+			<code>Display</code>
+			which is currently used or a default one.
+		
+
+	</section>
+
+
+	<section id="swt_eventloop">
+		<title>Event loop</title>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Event loop</secondary>
+		</indexterm>
+		An event loop is needed to transfer user input events from
+			the
+			underlying native operating system widgets to the SWT event
+			system.
+		
+		
+			SWT
+			does not provide its own event loop. This means that the
+			programmer explicitly starts and checks the event loop to update the
+			user interface. The loop executes the
+			<code>readAndDispatch()</code>
+			method which reads events from the native OS event queue and
+			dispatches them to the SWT event system. The loop is executed until
+			the
+			main shell is
+			closed. If this loop would be left out, the
+			application would terminate immediately
+		
+		
+			For example the
+			following creates a
+			SWT
+			application which creates
+			and executes the event
+			loop.
+		
+
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/start/loop.txt" />
+			</programlisting>
+		
+		
+			If
+			SWT
+			is used in an
+			Eclipse
+			plug-in
+			or an
+			Eclipse RCP
+			application,
+			this event
+			loop
+			is
+			provided by the
+			Eclipse
+			framework.
+		
+	</section>
+
+</section>

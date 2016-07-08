@@ -1,0 +1,92 @@
+<section id="firstswt">
+	<title>Example: Creating a plug-in project with a dependency to SWT</title>
+	
+		Create a new plug-in project called
+		<code>com.examle.swt.widgets</code>
+		via
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>New</guisubmenu>
+			<guisubmenu>Other...</guisubmenu>
+			<guisubmenu>Plug-in Development</guisubmenu>
+			<guisubmenu>New Plug-in Project</guisubmenu>
+		</menuchoice>
+		.
+	
+
+	
+		Enter the data in the wizard similar to the screenshot below. Make
+		sure
+		you
+		deselect the
+		_This plug-in will make contributions to the UI_
+		and
+		_Generate an activator, a Java class that controls the
+			plug-in's life
+			cycle
+		_
+		checkboxes.
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/swtplugin10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>New Plug-in Projec Wizard Page 1</phrase>
+			</textobject>
+		</mediaobject>
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/swtplugin20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>New Plug-in Projec Wizard Page 2</phrase>
+			</textobject>
+		</mediaobject>
+	
+
+	
+		Press the
+		_Finish_
+		button on the second page of the wizard.
+	
+
+	
+		Open the
+		<code>MANIFEST.MF</code>
+		file
+		in the
+		<filename>META-INF</filename>
+		folder
+		and select the
+		_Dependencies_
+		tab.
+	
+
+	
+		Press the
+		_Add..._
+		button in the
+		_Required Plug-ins_
+		part and enter
+		<code>org.eclipse.swt</code>
+		as dependency.
+
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/swtplugin30.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Adding the dependency to SWT in the Plug-in project</phrase>
+			</textobject>
+		</mediaobject>
+	
+
+	
+</section>

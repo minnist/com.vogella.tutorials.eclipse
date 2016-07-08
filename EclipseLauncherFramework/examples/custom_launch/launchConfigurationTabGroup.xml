@@ -1,0 +1,8 @@
+<extension
+    point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+    <launchConfigurationTabGroup
+        class="com.example.VogellaTabGroup"
+        id="com.example.launchConfigurationTabGroup"
+        type="com.example.launchConfigurationType">
+    </launchConfigurationTabGroup>
+</extension>

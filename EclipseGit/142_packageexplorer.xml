@@ -1,0 +1,156 @@
+<section id="egit_pacakgeexplorerdeco" role="wrapper">
+	<title>Git integration into the Package and the Project Explorer</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>Package Explorer integration
+		</secondary>
+	</indexterm>
+	<para>
+		The
+		<guilabel>Package Explorer</guilabel>
+		view
+		shows indicators on the files to show their status. The most
+		important
+		icon decorators are depicted in the following screenshot.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/jdt_packageexplorer_icondecu10.png"
+					scale="60" />
+			</imageobject>
+			<textobject>
+				<phrase>Icon decorator</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		The file name describes the state of the file from the following
+		table:
+
+		<table frame='all'>
+			<title>Git label decorations</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="3*" />
+				<thead>
+					<row>
+						<entry>State</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>tracked</entry>
+						<entry>File is committed to the Git repository and has not
+							changed.
+						</entry>
+					</row>
+					<row>
+						<entry>untracked</entry>
+						<entry>File is neither staged nor committed. </entry>
+					</row>
+					<row>
+						<entry>ignored</entry>
+						<entry>File is flagged to be ignored by Git operations. </entry>
+					</row>
+					<row>
+						<entry>dirty</entry>
+						<entry>File has changed since the last commit.</entry>
+					</row>
+
+
+					<row>
+						<entry>staged</entry>
+						<entry>
+							Changes in the file will be included in the next
+							commit.
+						</entry>
+					</row>
+					<row>
+						<entry>partially-staged</entry>
+						<entry>
+							The resource has changes which are added
+							to the index and
+							additional unstaged changes in the working tree
+						</entry>
+					</row>
+					<row>
+						<entry>added</entry>
+						<entry>
+							Staged but not yet committed, i.e. snapshot
+							of this
+							file has been
+							stored in the git database. This status is the same
+							as the
+							<wordasword>staged</wordasword>
+							status,
+							but the file wasn't under Git version control before.
+						</entry>
+					</row>
+
+					<row>
+						<entry>removed</entry>
+						<entry>The resource is staged for removal from the Git repository.
+						</entry>
+					</row>
+					<row>
+						<entry>conflict</entry>
+						<entry>A merge conflict exists for the file. </entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+	</para>
+	<para>A combination of the staged and dirty status means: some parts
+		of
+		the changed
+		file have been staged while some are still unstaged.
+		This
+		can
+		happen if
+		you stage a file and then again modify the file
+		before
+		creating the
+		next commit. You can also change the staged parts
+		using
+		the compare
+		editor opened by double clicking files in the staging
+		view.
+	</para>
+	<para>
+		On a project level the explorer
+		view
+		adds the
+		information which Git
+		repository is
+		used to the
+		project name. It also adds
+		the number of
+		commits that are
+		different between
+		local and remote
+		tracking branch.
+		This
+		way you can
+		quickly see if your
+		local branch is
+		ahead or behind the
+		remote branch
+		it is tracking.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/jdt_packageexplorer_icondecu20.png"
+					scale="60" />
+			</imageobject>
+			<textobject>
+				<phrase>Git icon decorator in the Package Explorer</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

@@ -1,0 +1,269 @@
+<section id="intro">
+	<title>Models and Eclipse EMF</title>
+	<section id="overview">
+		<title>Data model</title>
+		<para>
+			A
+			<wordasword>data model</wordasword>
+			, sometimes also called
+			<wordasword>domain model</wordasword>
+			,
+			represents
+			the data
+			you want to
+			work with. For example, if you develop
+			an online flight
+			booking
+			application, you might
+			model your
+			domain model
+			with objects
+			like
+			<code>Person</code>
+			,
+			<code>Flight</code>
+			,
+			<code>Booking</code>
+			etc. The EMF tooling allows you to create UML diagrams.
+		</para>
+		<para>
+			A good practice is to model the data model of an application
+			independently of
+			the
+			application logic or user interface.
+			This approach
+			leads to
+			classes
+			with almost no
+			logic
+			and a lot of properties, e.g., a
+			<code>Person</code>
+			class
+			could have the
+			<property>firstName</property>
+			,
+			<property>lastName</property>
+			,
+			<property>Address</property>
+			properties, etc.
+		</para>
+
+		<para>
+			With EMF you define your domain model explicitly. This helps to
+			provide clear visibility of the model. The code
+			generator for EMF
+			models can be adjusted and in its default setting.
+			It provides change
+			notification
+			functionality to the
+			model in case of
+			model changes.
+			EMF
+			generates interfaces and a factory to create your objects;
+			therefore,
+			it
+			helps you to
+			keep your application clean from the
+			individual
+			implementation classes.
+		</para>
+		<para>
+			Another advantage is that you can regenerate the Java code from
+			the model at any
+			point in time.
+		</para>
+	</section>
+
+	<section id="emfoverview">
+		<title>Eclipse Modeling Framework (EMF)</title>
+		<para>
+			The
+			<wordasword>Eclipse Modeling Framework</wordasword>
+			(EMF) is a set of Eclipse plug-ins which can be used to
+			model a data model and
+			to generated code or other output based
+			on this
+			model.
+			EMF has a
+			distinction
+			between the meta-model and
+			the
+			actual model.
+			The
+			meta-model
+			describes
+			the structure of the
+			model.
+			A
+			model is a concrete
+			instance of
+			this
+			meta-model.
+		</para>
+		<para>
+			EMF allows the developer to create the meta-model via different
+			means, e.g.,
+			XMI,
+			Java annotations, UML or an XML
+			scheme. It also allows to persists the model data; the default
+			implementation
+			uses a data format called
+			<wordasword>XML Metadata Interchange</wordasword>
+			.
+		</para>
+		<para>
+
+		</para>
+	</section>
+
+	<section id="emfoverview_generate">
+		<title>Generate data from an EMF model</title>
+		<para>
+			The information stored in the EMF models can be used to generate
+			derived
+			output. A typical use case is that you
+			use EMF to define the domain model of your application
+			and that you
+			generate the
+			corresponding
+			Java
+			implementation
+			classes
+			from
+			this model.
+			The EMF framework supports that the
+			generated code can be safely
+			extended by hand.
+		</para>
+		<para>
+			The EMF model (which holds real data based on the
+			model structure) can also be used to generate
+			different output,
+			e.g., HTML pages, or it can be
+			interpreted at runtime within an application.
+		</para>
+	</section>
+
+	<section id="intro_emfmodel">
+		<title>Meta models - Ecore and Genmodel</title>
+		<para>
+			The EMF meta-model consists
+			of
+			two parts; the
+			<filename>ecore</filename>
+			and the
+			<filename>genmodel</filename>
+			description files.
+		</para>
+		<para>
+			The
+			<filename>ecore</filename>
+			file contains the
+			information about the defined
+			classes.
+			The
+			<filename>genmodel</filename>
+			file contains
+			additional information for the
+			code
+			generation, e.g.,
+			the
+			path
+			and file information. The
+			<filename>genmodel</filename>
+			file
+			also contains
+			the control
+			parameter how the code should be
+			generated.
+		</para>
+	</section>
+
+	<section id="intro_ecore">
+		<title>Ecore description file</title>
+		<para>
+			The
+			<filename>ecore</filename>
+			file
+			allows to define the following elements.
+		</para>
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>EClass</code>
+						: represents a class, with zero or more attributes and zero or
+						more references.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>EAttribute</code>
+						: represents an attribute which has a name and a
+						type.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>EReference</code>
+						: represents one end of an association between two classes. It has
+						flags to indicate if it represents a containment
+						and a reference
+						class to which it points.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>EDataType</code>
+						: represents the type of an attribute, e.g.,
+						<code>int</code>
+						,
+						<code>float</code>
+						or
+						<code>java.util.Date</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			The
+			<wordasword>Ecore</wordasword>
+			model
+			shows a root object representing the whole
+			model. This model has
+			children which represent the
+			packages, whose
+			children represent the
+			classes, while the
+			children of the classes
+			represent the attributes of
+			these
+			classes.
+		</para>
+	</section>
+	<section id="intro_ecore">
+		<title>Ecore description file</title>
+		<para>
+			You can create a graphical representation of an existing ecore model via the context menu of an .ecore file and by
+			selecting
+			<menuchoice>
+				<guimenu>Initialize Ecore Diagram...</guimenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/initialize-ecore-dialog.png" />
+				</imageobject>
+				<textobject>
+					<phrase>How to create an Ecore dialog from an existing ecore model
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+
+</section>

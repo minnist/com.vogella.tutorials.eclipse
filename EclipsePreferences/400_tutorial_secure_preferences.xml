@@ -1,0 +1,22 @@
+<section id="tutorial_preferences_security">
+	<title>Tutorial: Secure storage of preferences</title>
+	<para>
+		To test the secure storage of preferences create the project
+		<filename>de.vogella.preferences.security</filename>
+		with a
+		view and add the
+		<code>org.eclipse.equinox.security</code>
+		plug-in as a dependency to
+		it.
+	</para>
+
+	<para> Change the code of your view to the following. </para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/security/View.java" />
+		</programlisting>
+	</para>
+
+</section>

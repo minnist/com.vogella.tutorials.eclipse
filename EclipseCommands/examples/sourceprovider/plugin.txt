@@ -1,0 +1,26 @@
+
+<extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <command
+               commandId="de.vogella.rcp.commands.sourceprovider.command1"
+               label="Command1"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="de.vogella.rcp.commands.sourceprovider.active">
+                  <equals
+                        value="ENABLED">
+                  </equals>
+               </with>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="de.vogella.rcp.commands.sourceprovider.command2"
+               label="Command2"
+               style="push">
+         </command>
+      </menuContribution>
+</extension>

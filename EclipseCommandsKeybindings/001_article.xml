@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Define key bindings for Eclipse Commands - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>17.01.2012</pubdate>
+		<releaseinfo>
+			<para>Version 2.7</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Define key bindings for Eclipse Commands</title>
+			<para> This tutorial describes how to define shortcuts for Eclipse
+				commands. This article is based on Eclipse Indigo (3.7) and uses the
+				Eclipse 3.x API.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_introduction.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_prereqs.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/090_tutorial_keybinding.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseCommandsKeybindings"?>
+</article>

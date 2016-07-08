@@ -1,0 +1,59 @@
+<section id="extensionpoints_access">
+	<title>Accessing extensions</title>
+	<indexterm>
+		<primary>IExtensionRegistry</primary>
+	</indexterm>
+	<para>
+		The information about the available extension points and the
+		provided
+		extensions are stored in a class of type
+		<code>IExtensionRegistry</code>
+		.
+	</para>
+	<note>
+		The Eclipse platform reads the
+		extension points and provided extensions
+		once the
+		plug-in is in the
+		<wordasword>RESOLVED</wordasword>
+		life cycle status as defined by the OSGi
+		specification.
+	</note>
+
+	<para>
+		In Eclipse applications you can use the dependency injection mechanism
+		to
+		get
+		the
+		<code>IExtensionRegistry</code>
+		class injected.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/registry/query2.txt" />
+		</programlisting>
+	</para>
+	<para>
+		In Eclipse 3.x based plug-ins you query for a certain extension via
+		static methods of the
+		<code>Platform</code>
+		class. An example is listed in the following code.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/registry/query.txt" />
+		</programlisting>
+	</para>
+	<tip>
+		<para>
+			You can access extensions of all extension points via the
+			<code>IExtensionRegistery</code>
+			.
+		</para>
+	</tip>
+
+</section>
+

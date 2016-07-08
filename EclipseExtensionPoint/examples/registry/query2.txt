@@ -1,0 +1,6 @@
+
+@Inject 
+public void doSomething(IExtensionRegistry registry){
+	// do something
+	registry.getConfigurationElementsFor("yourextension");
+}

@@ -1,0 +1,13 @@
+<section id="cnf">
+	<title>Dialogs in Eclipse</title>
+	<indexterm>
+		<primary>Common Navigator Framework</primary>
+	</indexterm>
+	<para>
+
+		The Common Navigator Framework (CNF) allow to use multiple label and content provider implementations for the same
+		viewer. It is typical used to extend the <
+		<guilabel>Project Explorer</guilabel>
+		but can also be used without it.
+	</para>
+</section>

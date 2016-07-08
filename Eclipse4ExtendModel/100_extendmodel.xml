@@ -1,0 +1,318 @@
+<section id="e4modelextend_model">
+	<title>Exercise: Extend the Eclipse application model</title>
+	<section id="e4modelextend_model_target">
+		<title>Target</title>
+		<para>
+			In this exercise you extend the structure of the Eclipse
+			application model with an additional model element.
+		</para>
+	</section>
+	<section id="e4modelextend_model1">
+		<title>Creating a plug-in and add the dependencies</title>
+		<para>
+			Create a new simple plug-in called
+			<wordasword>com.vogella.e4.appmodel.extensions</wordasword>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/appmodel_projectwizard10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Wizard to create a simple plug-in</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Add a dependency to the plug-ins
+			<code>org.eclipse.e4.ui.model.workbench</code>
+			and
+			<code>org.eclipse.e4.core.contexts</code>
+			in your new plug-in via its
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+	</section>
+	<section id="e4modelextend_model2">
+		<title>Create new model</title>
+		<para>
+			Create a folder called
+			<filename class="directory">model</filename>
+			and create a new EMF model called
+			<filename>UiExtensions.ecore</filename>
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Eclipse Modeling Framework</guisubmenu>
+				<guisubmenu>EMF Model</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emf_appmodel10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create the EMF model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emf_appmodel20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>To create the EMF model, select this page of the wizard</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guibutton>Finish</guibutton>
+			button.
+		</para>
+		<para>
+			Enter the following properties for this plug-in via the
+			<guilabel>Properties</guilabel>
+			view.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emf_appmodel30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Package settings</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="e4modelextend_model3">
+		<title>Define relationships to the Eclipse application model</title>
+		<para>
+			Right-click on the model and select
+			<guilabel>Load Resource...</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel10.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Click on the button
+			<guibutton>Browse Registered Packages</guibutton>
+			and select the
+			<parameter>*UiModel/application</parameter>
+			model from the
+			<parameter>org.eclipse.e4.ui.model.workbench</parameter>
+			plug-in.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Define connections to an existing model, part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Define connections to an existing model, part 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="e4modelextend_model4">
+		<title>Define your custom model extension</title>
+		<para>
+			Create a new
+			<code>EClass</code>
+			model element
+			and add the following
+			<code>Part</code>
+			<parameter>
+				ESuper
+				Types
+			</parameter>
+			to it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel50.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Use
+			<property>BrowserPart</property>
+			as value for the
+			<parameter>Name</parameter>
+			attribute.
+		</para>
+		<para>
+			Right-click on the model element and
+			add an
+			<code>EAttribute</code>
+			called uri with type of
+			<code>EString</code>
+			to it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel54.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			The finished model
+			should look like the
+			following.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel60.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="e4modelextend_model5">
+		<title>Create the Genmodel</title>
+		<para>
+			Right-click your
+			<filename>.ecore</filename>
+			file and select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>EMF Generator model</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			Follow the wizard similar to the following screenshots.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel62.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel64.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel66.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel70.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="e4modelextend_model6">
+		<title>Generate the Java classes</title>
+		<para>
+			Use your
+			<filename>genmodel</filename>
+			to create the Java
+			code. Right-click on it
+			and select
+			<guilabel>Generate Model Code</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/applicationmodel_generatecode10.png"
+						scale="40" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="e4modelextend_model7">
+		<title>Make generated classes available</title>
+		<para>
+			Export all package via
+			the Runtime tab on the
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+		<tip>
+			<para>
+				Please note that the first time you run the model generation, the
+				<filename>plugin.xml</filename>
+				file is created and the
+				<code>org.eclipse.emf.ecore.generated_package</code>
+				extension point
+				is added to the file.
+				This extension point
+				describes
+				your
+				model. It
+				is only added if
+				the
+				<filename>plugin.xml</filename>
+				file needs to get created. If you
+				later
+				adjust settings of your mode,
+				i.e., your
+				package setting,you have
+				to adjust the
+				extension point
+				manually.
+			</para>
+			<para>
+				<programlisting language="xml">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+						parse="text" href="./examples/renderer/plugin.xml" />
+				</programlisting>
+			</para>
+		</tip>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel80.png" scale="30" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Note down the uri from the extension point. You need to
+			define this in
+			your
+			<filename>Application.e4xmi</filename>
+			later.
+		</para>
+	</section>
+</section>

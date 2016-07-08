@@ -1,0 +1,16 @@
+
+# switch to home
+cd ~/
+# create a directory
+mkdir repo01.git
+# switch into it
+cd repo01.git
+# create a new directory
+mkdir datafiles
+# Create a few files
+touch test01
+touch test02
+touch test03
+touch datafiles/data.txt
+# put a little text into the first file
+ls >test01

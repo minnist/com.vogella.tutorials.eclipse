@@ -1,0 +1,27 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_eclipsecommands">
+		<title>Eclipse Commands Resources</title>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/EclipseCommandsAdvanced/article.html"> Eclipse Commands Advanced</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/EclipseCommandsKeybindings/article.html">
+				Key bindings for Commands</ulink>
+		</para>
+		<para>
+			<ulink url="http://wiki.eclipse.org/Platform_Command_Framework"> http://wiki.eclipse.org/Platform_Command_Framework</ulink>
+			Command Framework wiki
+		</para>
+		<para>
+			<ulink url="http://wiki.eclipse.org/Command_Core_Expressions"> http://wiki.eclipse.org/Command_Core_Expressions</ulink>
+			Commands Core Expressions
+		</para>
+
+
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

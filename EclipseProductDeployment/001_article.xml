@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<article>
+	<articleinfo>
+		<title>Eclipse product and application deployment - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>10.03.2016</pubdate>
+
+		<releaseinfo>
+			Version 7.4
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse RCP product deployment</title>
+			<para> This tutorial describes how the product configuration file and
+				the deployment process of Eclipse RCP
+				applications. It is based on
+				Eclipse 4.5 (Eclipse Mars).
+			</para>
+		</abstract>
+	</articleinfo>
+
+	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_product.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_deployment.xml" />
+	<?dbhtml-include href="../../web/adsense/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_deployment.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_problems_export.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="099_tutorial_requirements.xml" />
+	<?dbhtml-include href="../../web/adsense/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_exportproduct.xml" />
+	<?dbhtml-include href="../../web/adsense/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_exercise_feature.xml" />
+
+	<?dbhtml-include href="../../web/adsense/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseProductDeployment"?>
+</article>

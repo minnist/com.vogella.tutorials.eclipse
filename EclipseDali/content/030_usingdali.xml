@@ -1,0 +1,90 @@
+<section id="dali">
+	<title>Using Dali</title>
+	<section id="dali_project">
+		<title>Project</title>
+		<para>
+			Create a new project "de.vogella.dali.first" via File -> New ->
+			Others -> JPA -> JPA Project.
+		</para>
+		<para>
+			<tip> You can also add to an existing project the JPA nature. Use the
+				JPA perspective and the right mouse button on the project and select
+				Configure -> Convert to JPA Project</tip>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali10.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para> Click twice next. </para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali20.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> The JPA perspective should now be opened. </para>
+
+		<para> Create a package "de.vogella.dali.first".</para>
+
+		<para> Select File -> New -> Other -> JPA -> Entity and create the
+			following class.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali25.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/model/Person.java" />
+			</programlisting>
+		</para>
+
+		<para> Annotate now the class with @Entity (before the class name".
+			This will activate the views "JPA Structure" and "JPA Details".
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali30.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> You can now use the right mouse button in the "JPA Structure"
+			view to map your elements.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali40.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para> Now you can use the "JPA Details" view to define for example
+			how the primatry keys should get defined, e.g., via a sequence
+			"SEQUENCE".</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dali50.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+</section>

@@ -1,0 +1,81 @@
+<section id="tutorial_commands_toolbar" role="wrapper">
+	<title>Exercise: Adding a toolbar</title>
+	<section id="tutorial_commands_toolbar1">
+		<title>Target of this exercise</title>
+		<para>In this exercise you add a toolbar to your application. 
+		</para>
+	</section>
+		<section id="tutorial_commands_toolbar2">
+		<title>Adding a toolbar</title>
+
+		<para>
+			Select the
+			<guilabel>TrimBars</guilabel>
+			node under your
+			<wordasword>TrimmedWindow</wordasword>
+			entry and press the
+			<guibutton>Add...</guibutton>
+			button. The
+			<parameter>Side</parameter>
+			attribute should be set to
+			<parameter>Top</parameter>
+			, so that all toolbars assigned to that
+			trimbar
+			appear on the top of
+			the application.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/commands40.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a toolbar</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			Add a
+			<guilabel>ToolBar</guilabel>
+			model element
+			to your TrimBar. Add a
+			<guilabel>Handled ToolItem</guilabel>
+			to this toolbar
+			which
+			points to the
+			<code>org.eclipse.ui.file.saveAll</code>
+			command.
+		</para>
+		<para>
+			Set the label for this entry to
+			<parameter>Save</parameter>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/commands50.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a menu item to the menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	
+
+	<section id="uicomponents_save">
+		<title>Validating</title>
+		<para>
+			Validate that your save handler is called if you select Save
+			from the
+			menu or the toolbar.
+		</para>
+	</section>
+
+</section>

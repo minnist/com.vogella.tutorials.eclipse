@@ -1,0 +1,13 @@
+
+<extension
+      point="org.eclipse.core.expressions.definitions">
+	<definition
+            id="com.example.e4.rcp.todo.selectionset">
+      <with variable="org.eclipse.ui.selection">
+		<iterate ifEmpty="false" operator="or">
+		  <instanceof value="com.example.e4.rcp.todo.model.Todo">
+		  </instanceof>
+		</iterate>
+      </with>
+	</definition>
+</extension>

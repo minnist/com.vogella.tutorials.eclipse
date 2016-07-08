@@ -1,0 +1,9 @@
+<section id="e4ineclipse3xreference">
+	<title>Using the e4 API in Eclipse 3.x based applications</title>
+	<para>
+		See
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plug-in Tutorial</ulink>
+		to learn how to use the Eclipse 4.x API in your Eclipse 3.x API based application.
+	</para>
+
+</section>

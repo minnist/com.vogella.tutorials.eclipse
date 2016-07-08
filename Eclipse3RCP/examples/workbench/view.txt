@@ -1,0 +1,2 @@
+
+IWorkbenchPage page = getViewSite().getPage();

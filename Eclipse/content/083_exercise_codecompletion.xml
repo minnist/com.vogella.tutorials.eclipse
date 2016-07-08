@@ -1,0 +1,190 @@
+<section id="rssfeedreaders" role="wrapper">
+	<title>Exercise: code generation and content assists</title>
+	<section id="rssfeedreaders_intro">
+		<title>Introduction</title>
+		<para>
+			In this exercise you practice the usage of code generation and
+			the
+			usage of the
+			<wordasword>Content Assists</wordasword>
+			functionality.
+		</para>
+	</section>
+	<section id="rssfeedreaders_project">
+		<title>Create project</title>
+
+		<para>
+			Create a project called
+			<code>com.vogella.ide.todo</code>
+			.
+		</para>
+	</section>
+
+	<section id="rssfeedreaders_objectxmlparserlistview">
+		<title>Create class</title>
+		<para>
+			Create the
+			<code>com.vogella.ide.todo</code>
+			package
+			and the
+			following class.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/net/TodoBase.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Select
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate Constructor using Fields...</guisubmenu>
+			</menuchoice>
+			to generate a constructor using all fields.
+		</para>
+		<para>
+			Use the
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate Getter and Setter</guisubmenu>
+			</menuchoice>
+			to create getters and setters for all fields.
+		</para>
+		<para>The resulting class should look like the following listing.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/net/Todo.java" />
+			</programlisting>
+		</para>
+		<para>
+			Use Eclipse to generate a
+			<code>toString()</code>
+			method for the
+			<code>Todo</code>
+			class based on the
+			<parameter>id</parameter>
+			and
+			<parameter>summary</parameter>
+			field.
+
+			This can be done via the Eclipse menu
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate toString()...</guisubmenu>
+			</menuchoice>
+			.
+
+		</para>
+		<para>
+			Also
+			use Eclipse to generate a
+			<code>hashCode()</code>
+			and
+			<code>equals()</code>
+			method based on the
+			<parameter>id</parameter>
+			field. This can be done via the
+			Eclipse menu
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate hashCode() and equals()...</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+	</section>
+
+	<section id="rssfeedreaders_example">
+		<title>Create instances</title>
+		<para>
+			Create a new class called
+			<code>TodoProvider</code>
+			.
+			Create the following static method in your
+			<code>TodoProvider</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/net/TodoProvider.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="rssfeedreaders_validate">
+		<title>Write a test class</title>
+		<para>
+			Write another
+			<code>TodoProviderTest</code>
+			class
+			with a
+			<code>public static void main (String[] args)</code>
+			method.
+		</para>
+		<para>
+			In your main method call the
+			<code>createInitialModel</code>
+			method and validate that the returned number of
+			items is 5.
+		</para>
+		<para>
+			If another number than 5 is returned, throw a
+			<code>RuntimeException</code>
+			. If the correct number is returned, write the String "Correct" to
+			the
+			<guilabel>Console</guilabel>
+			view
+			.
+		</para>
+		<para>
+			Use
+			<wordasword>Content assist</wordasword>
+			to create the
+			<code>System.out.println()</code>
+			based on
+			<code>syso</code>
+			for you.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contentassists10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Content Assists Input</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contentassists20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Content Assists Result</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+	<section id="rssfeedreaders_potentialsolution">
+		<title>Example implementation of TodoProviderTest</title>
+		<para>While this exercise was about code generation and content
+			assits,
+			you might be interested in a potential solution for this exercise. The
+			following listing contains a potential solution.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/net/TodoProviderTest.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

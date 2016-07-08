@@ -1,0 +1,10 @@
+
+# Initialize the local Git repository
+git init
+# Add all (files and directory) to the Git repository
+git add .
+# Make a commit of your file to the local repository
+git commit -m "Initial commit"
+# Show the log file
+git log
+

@@ -1,0 +1,8 @@
+
+IEditorPart editorPart = page.getActiveEditor();
+    if (editorPart != null) {
+      	// save the editor without confirmation
+        page.saveEditor(editorPart, false);
+        // Close the editor and save before saving
+        page.closeEditor(editorPart, true);
+    }

@@ -1,0 +1,218 @@
+<section id="databinding_more" role="wrapper">
+	<title>More on bindings</title>
+
+	<section id="databinding_decorations">
+		<title>ControlDecorators</title>
+		<indexterm>
+			<primary>JFace Data Binding</primary>
+			<secondary>ControlDecorators</secondary>
+		</indexterm>
+		<para>
+			JFace Data Binding allows you to use icon decorators in
+			the user
+			interface which reflect the status of the field
+			validation. This
+			allows you to provide immediate feedback to the user. For the
+			creation of the control decoration you use the return object from the
+			<code>bindvalue()</code>
+			method of
+			<code>DataBindingContext</code>
+			object.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/decorations.java" />
+			</programlisting>
+		</para>
+		<para>The result might look like the following screenshot.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/controldecoration17.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>ControlDecoration with databinding</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="SelectObservableValue">
+		<title>Binding values of a radio button group</title>
+		<para>
+			When using radio buttons each button usually represents a certain
+			value. In order to
+			bind the value according to the selected state in a
+			radio button group, the
+			<code>SelectObservableValue</code>
+			class is the right choice.
+		</para>
+		<para>
+			The following example shows how to bind the currently selected radio
+			value to a
+			<code>Label</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/SelectObservableValue.java" />
+			</programlisting>
+		</para>
+		<para>The result of this snippet, should look like this:</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="./images/SelectObservableValue.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="databinding_listening">
+		<title>Listening to all changes in the binding</title>
+		<indexterm>
+			<primary>JFace Data Binding</primary>
+			<secondary>Listener</secondary>
+		</indexterm>
+		<para>
+			You can register a listener to all bindings of the
+			<code>DataBindingContext</code>
+			class. Your listener will be called when something has changed.
+		</para>
+		<para>
+			For example this can be used to determine the status of a
+			part
+			which
+			behaves like an
+			editor. If its data model changes, this editor
+			marks itself as dirty.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/editor/dirty.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="databinding_writablevalues">
+		<title>Placeholder binding with WritableValue</title>
+		<indexterm>
+			<primary>JFace Data Binding</primary>
+			<secondary>WritableValue</secondary>
+		</indexterm>
+		<para>
+			You can create bindings to a
+			<code>WritableValue</code>
+			object.
+			A
+			<code>WritableValue</code>
+			object
+			can
+			hold a reference to another object.
+		</para>
+		<para>
+			You can exchange this reference in
+			<code>WritableValue</code>
+			and the databinding will use the new (reference) object for its
+			binding.
+			This way you can create the binding once and still exchange
+			the object
+			which is bound by databinding.
+		</para>
+		<para>
+			To bind to a
+			<code>WritableValue</code>
+			you use the
+			<code>observeDetail()</code>
+			method,
+			to inform the framework that you would like to observe
+			the
+			contained
+			object.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/writablevalue.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="databinding_computedvalue">
+		<title>ComputedValue and observable trackers</title>
+		<para>
+			A
+			<code>ComputedValue</code>
+			provides an abstract
+			<code>calculate</code>
+			method, which is able to compute a
+			value from observable trackers,
+			which are referenced in it's
+			<code>calculate</code>
+			method.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/computedvalue/ComputedValuePersonNameImpl.java" />
+			</programlisting>
+		</para>
+		<para>
+			Since Eclipse Neon a new
+			<code>create</code>
+			method has been introduced, which accepts a Supplier that contains
+			the actual implementation of the calculate method.
+		</para>
+		<para>
+			So there's no need any more to derive from
+			<code>ComputedValue</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/computedvalue/ComputedValuePersonNameCreate.java" />
+			</programlisting>
+		</para>
+		<para>So basically ComputedValue can easily combine different
+			observables and is recomputed every time one of the tracked getter
+			are touched.
+		</para>
+		<para>
+			A really popular example of a
+			<code>ComputedValue</code>
+			implementation is the
+			<code>AggregateValidationStatus</code>
+			, which keeps track of all validation statuses, which have been
+			passed to it and aggregates them to one MultiStatus or just returns
+			the one with maximum severity.
+		</para>
+		<para>
+			It is also a great alternative to converter implementations. For
+			instance the previously described
+			<code>AggregateValidationStatus</code>
+			returns an
+			<code>IStatus</code>
+			as value, but if this should be bound to the enable state of a
+			<guilabel>Finish</guilabel>
+			button, having a boolean value would be necessary.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="./examples/computedvalue/ComputedValueButtonValidationEnablement.java" />
+			</programlisting>
+		</para>
+		<para>
+			Applying an IConverter to convert from IStatus to boolean would
+			be far more overhead.
+		</para>
+	</section>
+</section>

@@ -1,0 +1,18 @@
+
+// Update the user interface asynchronously
+Display.getDefault().asyncExec(new Runnable() {
+	public void run() {
+		// ... do any work that updates the screen ...
+	}
+});
+
+// Update the user interface synchronously
+
+Display.getDefault().syncExec(new Runnable() {
+	public void run() {
+		// do any work that updates the screen ...
+		// remember to check if the widget
+		// still exists
+		// might happen if the part was closed
+	}
+});

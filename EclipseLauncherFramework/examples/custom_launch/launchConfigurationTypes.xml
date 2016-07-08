@@ -1,0 +1,8 @@
+<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+    <launchConfigurationType
+        name="Example launch"
+        delegate="com.example.ExampleLaunchConfigurationDelegate"
+        modes="run, debug"               
+        id="com.example.launchConfigurationType">        
+    </launchConfigurationType>
+</extension>

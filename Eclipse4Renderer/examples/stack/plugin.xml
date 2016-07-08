@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+        application="org.eclipse.e4.ui.workbench.swt.E4Application"
+        name="to-do">
+         <property
+               name="applicationXMI"
+               value="com.example.e4.rcp.todo/Application.e4xmi">
+         </property>
+         <property
+               name="appName"
+               value="to-do">
+         </property>
+      <property
+        name="rendererFactoryUri"
+        value="bundleclass://com.example.e4.renderer.swt/[CONTINUE...]
+        com.example.e4.renderer.swt.MyRendererFactory">
+       </property>
+      </product>
+   </extension>
+
+</plugin>

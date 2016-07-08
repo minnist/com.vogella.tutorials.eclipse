@@ -1,0 +1,170 @@
+<section id="menuadvanced" role="wrapper">
+	<title>View, popup and dynamic menus</title>
+	<section id="menuadvanced_views">
+		<title>View menus</title>
+		<indexterm>
+			<primary>Menu</primary>
+			<secondary>View / Part</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>View menu</primary>
+		</indexterm>
+		<para>
+			You can define one menu in a
+			part
+			as a
+			<wordasword>view menu</wordasword>
+			.
+			Please note that the application model allows to define more than one menu but the default Eclipse implementation
+			supports only one
+			menu for a part.
+			To add a
+			view menu
+			entry, select the
+			<guilabel>Menus</guilabel>
+			entry
+			under the part and append a
+			<guilabel>ViewMenu</guilabel>
+			model entry to it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/viewmenu10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a View menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="menuadvanced_popup">
+		<title>Popup menu (context menu)</title>
+		<indexterm>
+			<primary>Menu</primary>
+			<secondary>Popup</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Popup menu</primary>
+		</indexterm>
+		<para>
+			You can also define a popup menu for
+			SWT
+			controls via the application
+			model. To achieve this
+			create a
+			<guilabel>Popup Menu</guilabel>
+			for the
+			part which contains the SWT control.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/popupmenu10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Defining a popupmenu in the application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The popup menu contains entries, as, for example, a
+			HandledMenuItem.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/popupmenu20.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>ID for the popupmenu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After this the pop menu can be assigned to an SWT control with the
+			<code>EMenuService</code>
+			service which can be accessed via dependency injection.
+			This class
+			provides the
+			<code>registerContextMenu(control, id)</code>
+			method for this purpose.
+			The
+			<parameter>id</parameter>
+			parameter
+			of the
+			<code>registerContextMenu</code>
+			method
+			must be the ID attribute
+			of your
+			<guilabel>Popup Menu</guilabel>
+			model element.
+		</para>
+		<para>
+			The following pseudo code shows an example for the registration.
+			It uses a JFace viewer, as the popup menu needs
+			to be registered on
+			the SWT control, the example code demonstrates how to access this
+			control.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/popup/table.java" />
+			</programlisting>
+		</para>
+		<para>
+			If you want to implement this example, your plug-in must have
+			dependencies defined for the
+			<code>org.eclipse.e4.ui.workbench.swt</code>
+			,
+			the
+			<code>org.eclipse.e4.ui.services</code>
+			and the
+			<code>org.eclipse.e4.ui.model.workbench</code>
+			plug-ins in its
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+	</section>
+
+	<section id="menuadvanced_dynamic">
+		<title>Dynamic menu and toolbar entries</title>
+		<indexterm>
+			<primary>Menu</primary>
+			<secondary>Dynamic</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>@AboutToShow</primary>
+		</indexterm>
+		<indexterm>
+			<primary>@AboutToHide</primary>
+		</indexterm>
+
+
+		<para>
+			You can also create menu and toolbar entries at runtime with the
+			<wordasword>DynamicMenuContribution</wordasword>
+			model element.
+		</para>
+		<para>
+			This model element points to a
+			class in which you annotate a method
+			with
+			the
+			<code>@AboutToShow</code>
+			annotation. The annotated method is called if the
+			user selects the
+			user interface element.
+			The
+			<code>@AboutToHide</code>
+			annotation can be used to annotate a method which is
+			called before the
+			menu is hidden.
+		</para>
+		<para>In these methods you can dynamically create menu entries.
+		</para>
+	</section>
+
+</section>

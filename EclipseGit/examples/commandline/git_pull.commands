@@ -1,0 +1,17 @@
+
+# switch to home
+cd ~
+
+# switch to second directory
+cd ~/repo02.git
+# make changes
+echo "A change" > test01
+# commit
+git -commit -a -m "A change"
+# push changes to remote repository
+git push ../remote-repository.git/
+# switch to the first repository can pull in the changes
+cd ~/repo01.git
+git pull ../remote-repository.git/
+# check the changes
+less test01

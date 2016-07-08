@@ -1,0 +1,94 @@
+
+<section id="committingchanges_stagingview">
+	<title>Using the Git Staging view</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>Staging view
+		</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>Git Staging view</primary>
+	</indexterm>
+	<indexterm>
+		<primary>Staging view</primary>
+	</indexterm>
+	<para>
+		Eclipse gives you several options to stage and commit your changes.
+		The
+		<guilabel>Git Staging</guilabel>
+		view
+		provides a convenient compact overview on all changes you have
+		done compared to the current HEAD revision.
+	</para>
+	<para>
+		The
+		<guilabel>Git Staging</guilabel>
+		view
+		is
+		non-modal. You can switch between
+		different repositories or even
+		restart Eclipse without
+		losing a commit
+		message and it allows
+		incremental
+		staging for changes.
+	</para>
+	<para>
+		Open the
+		<guilabel>Git Staging</guilabel>
+		view
+		via the
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Show View</guisubmenu>
+			<guisubmenu>Other...</guisubmenu>
+			<guisubmenu>Git</guisubmenu>
+			<guisubmenu>Git Staging</guisubmenu>
+		</menuchoice>
+		menu.
+	</para>
+	<para>
+		In this
+		view
+		you
+		select all files which have changed and drag them into
+		the
+		<guilabel>Staged Changes</guilabel>
+		area. To commit the staged changes you
+		write a descriptive commit
+		message and press the
+		<guibutton>Commit</guibutton>
+		button which is highlighted in the following screenshot.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/gitstaging10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Git Staging View - Commit</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>Perform these actions for your initial changes. Afterwards the
+		first version of
+		your Java project is
+		under
+		version
+		control. If you don't
+		experience any
+		hardware error your
+		data
+		is now
+		safely stored in your
+		local
+		Git
+		repository and you can
+		always
+		restore
+		your
+		Eclipse project to
+		this
+		initial point.
+	</para>
+</section>

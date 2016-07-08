@@ -1,0 +1,11 @@
+
+Activator.getDefault().getPreferenceStore()
+	.addPropertyChangeListener(new IPropertyChangeListener() {
+		@Override
+		public void propertyChange(PropertyChangeEvent event) {
+			if (event.getProperty() == "MySTRING1") {
+				String value = event.getNewValue().toString()
+				// do something with the new value
+			}
+		}
+	});

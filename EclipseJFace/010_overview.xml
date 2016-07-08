@@ -1,0 +1,67 @@
+<section id="jface">
+	<title>What is Eclipse JFace?</title>
+	<indexterm>
+		<primary>JFace</primary>
+	</indexterm>
+	<para>
+		Eclipse
+		<wordasword>JFace</wordasword>
+		is a set of plug-ins based upon the user interface toolkit
+		SWT. JFace
+		provides classes
+		and frameworks which
+		simplify common
+		SWT
+		use cases.
+		JFace
+		does not hide the
+		SWT
+		API; therefore,
+		SWT
+		knowledge is still required.
+	</para>
+
+
+	<para>
+		JFace
+		provides the
+		<wordasword>viewers</wordasword>
+		framework,
+		which simplifies the mapping of a data model to a visual
+		representation.
+		For
+		example you find viewers for ComboBoxes, Tables and Trees.
+	</para>
+
+	<para>
+		JFace
+		also provides helper classes to effectively manage your
+		system
+		resources,
+		like colors, images and fonts.
+	</para>
+	<para>
+		In addition
+		JFace
+		provides support for handling
+		preferences,
+		preference pages, wizards and dialogs. It also contains functionality
+		to support icon decorations and user-input help for SWT controls.
+
+	</para>
+
+	<para>
+		<wordasword>JFace Data Binding</wordasword>
+		is a framework which connects properties of
+		objects. It is typically
+		used to synchronize fields of the user
+		interface
+		with properties of
+		model objects and allows you to include
+		validation and conversion in
+		this
+		synchronization process.
+	</para>
+</section>
+	
+

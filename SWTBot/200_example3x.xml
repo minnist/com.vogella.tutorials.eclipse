@@ -1,0 +1,114 @@
+<section id="swtbotexample" role="wrapper">
+	<title>Tutorial: Test Eclipse 3.x RCP applications
+	<section id="swtbotexample_project">
+		<title>Create project
+		
+			Create a new
+			Eclipse RCP
+			application called
+			<wordasword>de.vogella.swtbot.app</wordasword>
+			based on the "Eclipse
+			application
+			with a
+			view"
+			template.
+		
+		
+			Change the class View to the following.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/first/View.java" />
+			</programlisting>
+		
+		
+			This
+			view
+			defines two text fields, one of them will be identified by SWTBot
+			via the
+			label and the other through an SWTBot specific ID.
+		
+	</section>
+	<section id="swtbotexample_test">
+		<title>Create test plug-in
+		
+			Create another
+			Eclipse plug-in called
+			<wordasword>de.vogella.swtbot.tests</wordasword>
+			.
+		
+		
+			Add the following dependencies  to the
+			<filename>MANIFEST.MF</filename>
+			file for your test project.
+
+			<itemizedlist>
+				<listitem>
+					org.eclipse.ui
+				</listitem>
+				<listitem>
+					org.junit4
+				</listitem>
+				<listitem>
+					org.hamcrest
+				</listitem>
+				<listitem>
+					org.eclipse.swtbot.swt.finder
+				</listitem>
+				<listitem>
+					org.eclipse.swtbot.eclipse.finder
+				</listitem>
+			</itemizedlist>
+		
+		
+			Create the following class which defines the JUnit test.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/first/UserInterfaceTester1.java" />
+			</programlisting>
+		
+		
+			Right-click on the test and select
+			<menuchoice>
+				<guimenu>Run As </guimenu>
+				<guisubmenu>SWTBot Test</guisubmenu>
+			</menuchoice>
+			. In the
+			launch configuration maintain your application and add the
+			<wordasword>de.vogella.swtbot.tests</wordasword> and <wordasword>de.vogella.swtbot.app</wordasword>
+			plugins
+			as well as
+			their
+			dependencies to the launch configuration.
+		
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/swtbot10.png"/>
+				</imageobject>
+			</mediaobject>
+		
+		
+			If everything runs correctly, you should get a green test.
+			Change
+			your `test()` method to the following to do some real testing.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/first/UserInterfaceTester.java" />
+			</programlisting>
+		
+		 Run your test again and verify that the test runs ok. Change,
+			for
+			example, the content of one text field, re-run the test and verify
+			that
+			the test fails.
+		
+	</section>
+</section>

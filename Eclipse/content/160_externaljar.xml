@@ -1,0 +1,271 @@
+<section id="classpath">
+	<title>Using JARs (libraries) in Eclipse</title>
+	<section id="classpath_jar">
+		<title>Adding a Java library to the project classpath</title>
+		<indexterm>
+			<primary>Java libraries</primary>
+			<secondary>adding to the classpath
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Java libraries</primary>
+			<secondary>using
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>JAR file</primary>
+			<secondary>using
+			</secondary>
+		</indexterm>
+		<para>
+			If the libraries should be distributed with your project, you can
+			store the
+			JAR
+			files directly in your project.
+		</para>
+
+		<para>
+			For example, you can
+			create a new Java project
+			<code>de.vogella.eclipse.ide.jars</code>
+			. Then create
+			a new folder called
+			<code>lib</code>
+			by right-clicking on
+			your project and selecting
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Folder</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jar10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Creating a new folder</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			From the menu select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Import</guisubmenu>
+				<guisubmenu>General</guisubmenu>
+				<guisubmenu>File System</guisubmenu>
+			</menuchoice>
+			.
+			Select the Java library you want to import
+			and select the
+			<filename>lib</filename>
+			folder
+			as target. Alternatively, just copy and paste the
+			<code>jar</code>
+			file into the
+			<filename>lib</filename>
+			folder.
+		</para>
+		<para>
+			You can add this library to your classpath, right-click on the JAR
+			file and select
+			<menuchoice>
+				<guimenu>Build Path</guimenu>
+				<guisubmenu>Add to Build Path</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			To manage your classpath, right-click on your project and select
+			<guilabel>Properties</guilabel>
+			.
+			Under
+			<menuchoice>
+				<guimenu>Java Build Path</guimenu>
+				<guisubmenu>Libraries</guisubmenu>
+			</menuchoice>
+			select the
+			<guibutton>Add JARs</guibutton>
+			button.
+		</para>
+		<para>
+			The following example shows how the result would look like
+			if
+			the
+			<filename>junit-4.4.jar</filename>
+			file
+			had been added to the project.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/externaljars10.gif" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a jar to the current project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After adding it to the classpath, Eclipse allows you to use the
+			classes
+			contained
+			in the
+			JAR
+			file in the project . Outside Eclipse you
+			still need to configure your
+			classpath, e.g., via the
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+	</section>
+	<section id="classpath_jarsource">
+		<title>Attach source code to a Java library</title>
+		<indexterm>
+			<primary>Java library</primary>
+			<secondary>attach source code
+			</secondary>
+		</indexterm>
+		<para>
+			You can open any class by positioning the
+			cursor on
+			the class in
+			an
+			editor and pressing
+			<keycombo>
+				<keycap>F3</keycap>
+			</keycombo>
+			. Alternatively, you
+			can
+			press
+			<keycombo>
+				<keycap>Ctrl</keycap>
+				<keycap>Shift</keycap>
+				<keycap>T</keycap>
+			</keycombo>
+			. This will show a dialog in which you can enter
+			the
+			class name to open
+			it.
+		</para>
+		<para>
+			If the source code is not
+			available,
+			the editor
+			will show the
+			bytecode
+			of that class.
+		</para>
+		<para>
+			This happens, for example, if you open a class from a the standard
+			Java library without attaching the
+			source code to it.
+		</para>
+		<para>
+			To see the source code of such a class, you can
+			attach a source
+			archive or source folder
+			to a Java
+			library. Afterwards, the editor
+			shows
+			the source instead of
+			the
+			bytecode.
+
+		</para>
+		<para>Attaching the source code to a library also allows you to
+			debug
+			this
+			source code.
+		</para>
+		<para>
+			The <guilabel>Source Attachment</guilabel> dialog can be reached in the
+			<guilabel>Java Build Path</guilabel>
+			page of a project. To open this page, right-click on a project and
+			select
+			<menuchoice>
+				<guimenu>Properties</guimenu>
+				<guisubmenu>Java Build Path</guisubmenu>
+			</menuchoice>
+			. On the
+			<guilabel>Libraries</guilabel>
+			tab, expand the library's node, select the
+			<guilabel>Source Attachment</guilabel>
+			attribute and click the
+			<guibutton>Edit</guibutton>
+			button.
+		</para>
+		<para>In the Location path field, enter the path of an archive or a
+			folder containing the source.
+		</para>
+		<para>
+			The following screenshot shows this setting for the standard Java
+			library. If you
+			have
+			the Java Development Kit (JDK) installed, you
+			should find the
+			source
+			in the JDK installation folder. The file is
+			typically called
+			<filename>src.zip</filename>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="50" fileref="images/add_source_to_jar.jpg" />
+				</imageobject>
+				<textobject>
+					<phrase>Maintaining the location of the source attachment to an jar</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="classpath_jarjavadoc">
+		<title>Add Javadoc for a JAR</title>
+			<indexterm>
+			<primary>Java library</primary>
+			<secondary>attach Javadoc
+			</secondary>
+		</indexterm>
+		<para> It is also possible to add Javadoc to a library which you use.
+		</para>
+		<para> Download the Javadoc of the JAR file and put it somewhere in
+			your
+			filesystem.
+		</para>
+		<para>
+			To enter the location of the Javadoc, open the
+			<guilabel>Java Build Path</guilabel>
+			via a
+			right-click on a project and select
+			<menuchoice>
+				<guimenu>Properties</guimenu>
+				<guisubmenu>Java Build Path</guisubmenu>
+			</menuchoice>
+			. On the
+			<guilabel>Libraries</guilabel>
+			tab expand the
+			library's node, select the
+			<parameter>Javadoc location</parameter>
+			attribute and press the
+			<guibutton>Edit</guibutton>
+			button.
+		</para>
+		<para>Enter the location to the file which contains the Javadoc.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="50" fileref="images/javadoc10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Enter the location to the Javadoc file for a jar file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

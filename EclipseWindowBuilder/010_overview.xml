@@ -1,0 +1,35 @@
+<section id="swtdesigner">
+	<title>SWT Designer (WindowBuilder)</title>
+	<indexterm>
+		<primary>SWT Designer</primary>
+	</indexterm>
+	<indexterm>
+		<primary>WindowBuilder</primary>
+	</indexterm>
+
+	<para>
+		<wordasword>SWT Designer</wordasword>
+		is a visual editor used to create graphical user
+		interfaces. It is a
+		two
+		way parser, e.g., you can edit the source code
+		or use a graphical
+		editor
+		to modify the user interface and SWT
+		Designer will synchronize
+		between
+		both representations.
+	</para>
+
+	<para>
+		SWT Designer
+		is part of the WindowBuilder project. WindowBuilder
+		provides the
+		foundation and
+		SWT Designer
+		adds the support for working
+		with SWT based applications.
+		SWT Designer supports Eclipse 3.x and
+		Eclipse 4 RCP applications.
+	</para>
+</section>

@@ -1,0 +1,29 @@
+<section id="swt_ctabfolder">
+	<title>CTabFolder</title>
+	 CTabFolder and CTabItem allow to create the folder experience
+		with different tabs.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ctab/CTabFolderExample.java" />
+		</programlisting>
+	
+	
+		If you run this application you will see several register cards with
+		tabs on
+		them. The
+		<code>SWT.BOTTOM</code>
+		stylebit on the folder widget, makes the tab appear at the bottom.
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/ctabfolder10.png" scale="60" />
+			</imageobject>
+			<textobject>
+				<phrase></phrase>
+			</textobject>
+		</mediaobject>
+	
+</section>

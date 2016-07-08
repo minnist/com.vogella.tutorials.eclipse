@@ -1,0 +1,8 @@
+
+# Switch to first repository
+cd ~/repo01.git
+# 
+git clone --bare . ../remote-repository.git
+
+# Check the content, should be equal to the .git file in repo01.git
+ls ~//remote-repository.git

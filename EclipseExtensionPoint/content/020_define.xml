@@ -1,0 +1,41 @@
+<section id="extensionpoints_definition">
+	<title>Creating an extension point</title>
+
+	<para>
+		A plug-in which declares an extension point must declare the extension
+		point in its
+		<filename>plugin.xml</filename>
+		file. You use the
+		<guilabel>Extension Points</guilabel>
+		tab for the definition.
+	</para>
+
+	<para>
+		Extension points are described via an XML schema file which is
+		referred
+		to in the
+		<filename>plugin.xml</filename>
+		file. This XML schema file defines
+		the
+		details and the contract of the
+		extension point.
+		The
+		following code demonstrates the link to the
+		schema file in the
+		<filename>plugin.xml</filename>
+		file.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/plugin/plugin.xml" />
+		</programlisting>
+	</para>
+	<para> The plug-in  typically contains code to
+		evaluate
+		the
+		extensions for
+		this extension
+		point.
+	</para>
+</section>

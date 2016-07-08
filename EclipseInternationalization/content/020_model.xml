@@ -1,0 +1,49 @@
+<section id="i18n_model">
+	<title>Translating the application model</title>
+	<indexterm>
+		<primary>i18n</primary>
+		<secondary>Application model</secondary>
+	</indexterm>
+	<para>
+        The translation key can be specified in your application model via the
+        <wordasword>%key</wordasword>
+        reference. This usage is demonstrated via the following screenshot of the model data for a part.
+    </para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/modeltranslate.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>How to use external strings in the workbench model</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		Currently the application model tooling includes rudimentary support
+		for
+		extracting Strings. Press the right mouse button on an empty space
+		in the application model
+		editor and select
+		<guilabel>Externalize Strings</guilabel>
+		.
+	</para>
+	<warning>
+		<para>
+			This action extracts all Strings from the application model. If
+			you
+			want to replace only a set of relevant Strings, you have to do
+			this
+			manually. If you do it manually you can use the PDE wizard as
+			described in <xref linkend="i18n_plugin" />
+			to create the
+			<filename>bundle.property</filename>
+			file and the OSGi
+			reference.
+		</para>
+	</warning>
+
+
+
+</section>
+

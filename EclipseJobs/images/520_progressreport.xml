@@ -1,0 +1,28 @@
+<section id="progressreport">
+	<title>Progress report</title>
+	<para> If you perform long running operations you should provide the
+		user some information about the long running job. A good way of doing
+		this is to show a progress indicator or a progress dialog.</para>
+	<para> Create a new project "de.vogella.rcp.intro.progress" with "Hello
+		RCP" as a template. Create the command
+		"de.vogella.rcp.intro.progress.showDialog" with the default handler
+		"de.vogella.rcp.intro.progress.handler.ShowDialog". Create the handler
+		class.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/progressreport/ShowDialog.java" />
+		</programlisting>
+	</para>
+	<para> Add this command to the menu.</para>
+	<para> Run the application. Your command should open a dialog which
+		show the process.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/progress10.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

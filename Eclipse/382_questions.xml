@@ -1,0 +1,72 @@
+<section id="eclipsequestions">
+	<title>Asking (and answering) questions</title>
+	<indexterm>
+		<primary>Online forums for Eclipse</primary>
+	</indexterm>
+	<para> Due to the complexity and extensibility of Eclipse, you will
+		need
+		additional resources to help you solve your specific
+		problems.
+		Fortunately, the web contains several resources which can help
+		you
+		with
+		your Eclipse problems.
+	</para>
+	<para>
+		Currently, the best places to find, ask and answer questions are the
+		<ulink url="http://eclipse.org/forums">Eclipse forums</ulink>
+		and
+		<ulink url="http://stackoverflow.com">Stack Overflow</ulink>
+		. 
+		Try
+		to stay polite with your postings, as the Eclipse community values
+		polite behavior.
+	</para>
+	<para>
+		The
+		<wordasword>Eclipse
+			forums
+		</wordasword>
+		offer several topic-specific forums in which
+		you can post and answer
+		questions. To post or to answer questions in the Eclipse
+		forums, you
+		need a valid
+		user account in the Eclipse bug tracker. The advantage
+		of
+		the Eclipse
+		forums is
+		that, depending on the topic, developers of
+		Eclipse projects
+		(
+		<wordasword>Eclipse committers</wordasword>
+		)
+		are also
+		active there
+		and might directly answer your
+		question.
+	</para>
+	<para>
+		<wordasword>Stack Overflow</wordasword>
+		also requires a user account and its community is also
+		very
+		active.
+		<wordasword>Stack Overflow</wordasword>
+		does not have separate forum sections for
+		specific questions.
+		<wordasword>Stack Overflow</wordasword>
+		allows to tag questions with
+		the relevant keyword, e.g.,
+		<guilabel>Eclipse</guilabel>
+		and people search for them or
+		subscribe to these theses.
+	</para>
+	<note>
+		<para>Ensure that you search the forums and mailing lists for
+			solutions
+			for your problem since often somebody else has asked the
+			same
+			question earlier and the answer is already available.
+		</para>
+	</note>
+</section>

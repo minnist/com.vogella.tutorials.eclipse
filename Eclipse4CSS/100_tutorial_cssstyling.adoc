@@ -1,86 +1,38 @@
-<section id="tutorial_cssstyling" role="wrapper">
-	<title>Exercise: Styling with CSS files
-	<section id="csstodo_css_target">
-		<title>Target
-		In this exercise you style your application with a CSS file.
-		
-	</section>
-	<section id="csstodo_css">
-		<title>Create a CSS file
-		
-			Create
-			a
-			folder called
-			_css_
-			in your
-			`com.example.e4.rcp.todo`
-			plug-in
-			and
-			create
-			the
-			following
-			_default.css_
-			file.
-		
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/default.css" />
-			</programlisting>
-		
-	</section>
-	<section id="css_example">
-		<title>Define the applicationCSS property
-		
-			You can point to your CSS file via your product configuration file. Open your product and select the
-			<guilabel>Customization</guilabel>
-			tab. Use the
-			<guilabel>CSS File</guilabel>
-			entry to select your CSS file.
-		
+== Exercise: Styling with CSS files
+=== 
+In this exercise you style your application with a CSS file.
 
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/cssproductproperty10.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Selecting the extension</phrase>
-				</textobject>
-			</mediaobject>
-		
+=== Create a CSS file
+
+Create a folder called _css_ in your `com.example.e4.rcp.todo` plug-in and create the following _default.css_ file.
+
+[source,css]
+----
+include::rescss/default.css[]
+----
+
+=== Define the applicationCSS property
+
+You can point to your CSS file via your product configuration file. 
+Open your product and select the _Customization_ tab. 
+Use the _CSS File_ entry to select your CSS file.
 
 
-	</section>
-	<section id="css_example_validate">
-		<title>Validating
-		 Start your application. The application should be styled
-			according to your CSS file.
-		
-		
-			After you started the application via the product, the
-			`applicationCSS`
-			property is added to the
-			_plugin.xml_
-			file for the
-			`org.eclipse.core.runtime.products`
-			extension of your application. Check the content of the
-			_plugin.xml_
-			file
-		
-		Change the CSS style sheet and restart
-			your application to see
-			the effect.
-		
+image::cssproductproperty10.png[Selecting the extension]
 
-	</section>
-	<section id="css_build">
-		<title>Adjust the build.properties file
-		
-			Add the created CSS file to your
-			_build.properties_
-			file in the
-			`com.example.e4.rcp.todo`
-			plug-in to make it available in an exported application.
-		
-	</section>
-</section>
+
+
+=== Validating
+Start your application. 
+The application should be styled according to your CSS file.
+
+
+After you started the application via the product, the `applicationCSS` property is added to the _plugin.xml_ file for the `org.eclipse.core.runtime.products` extension of your application. 
+Check the content of the _plugin.xml_ file
+
+Change the CSS style sheet and restart your application to see the effect.
+
+=== Adjust the build.properties file
+
+Add the created CSS file to your _build.properties_ file in the `com.example.e4.rcp.todo` plug-in to make it available in an exported application.
+

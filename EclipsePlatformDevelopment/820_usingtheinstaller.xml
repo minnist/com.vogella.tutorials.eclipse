@@ -1,0 +1,112 @@
+<section id="usingtheinstaller">
+	<title>Using the Eclipse installer for code contributions</title>
+	<para>
+		You can also use the Eclipse installer (which is provided by the Eclipse Oomph project) to automated some of the
+		steps of code contributions. Please note that the
+		Eclipse installer is currently still under heavy development and the
+		user interface might change significantly.
+	</para>
+	<note>
+		<para>Currently the main Eclipse platform projects do not actively configure Oomph, hence the contribution setup via
+			the Eclipse installer may not
+			result in a correct setup.
+		</para>
+	</note>
+	<para>
+		Download for this,
+		the
+		Eclipse installer from
+		<ulink url="https://www.eclipse.org/downloads/">Eclipse installer</ulink>
+		. Depending your operating system you have to extract it, or you can just run the executable.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/eclipseinstaller_download.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Download Eclipse installer</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		Start it and select the
+		<wordasword>Advanced Mode</wordasword>
+		.
+	</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata fileref="images/OomphAdvancedMode.png" scale="30" />
+		</imageobject>
+		<textobject>
+			<phrase>Download Eclipse installer</phrase>
+		</textobject>
+	</mediaobject>
+	<para>
+		Select
+		<wordasword>Eclipse IDE for Java Developers</wordasword>
+		.
+	</para>
+
+	<para>
+		Afterwards you can select the project you want to contribute to. If this project maintains a correct Oomph
+		configuration will clone the corresponding repository
+		and configure your workspace. The following screenshots are from
+		JDT UI, for which the Eclipse installer configuration is valid as the time of this writing.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/oomph_jdt10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>JDT contributions via Ooomph 1</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/oomph_jdt20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>JDT contributions via Oomph 1</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/oomph_jdt30.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>JDT contributions via Oomph 3</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/oomph_jdt40.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>JDT contributions via Oomph 4</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>You end up with a workspace with the existing Git repositories. After this initial setup you should consult the
+		contribution guide of the project to ensure you know their contribution guidelines. </para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/oomph_jdt50.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>JDT contributions via Oomph 5</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+</section>

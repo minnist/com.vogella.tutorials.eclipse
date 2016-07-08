@@ -1,0 +1,254 @@
+<section id="eclipsejavaperspective" role="wrapper">
+	<title>The Eclipse Java perspective</title>
+	<indexterm>
+		<primary>Java perspective</primary>
+	</indexterm>
+	
+	<section id="eclipsejavaperspective_packageexplorer">
+		<title>Package Explorer view</title>
+		<indexterm>
+			<primary>Package Explorer view</primary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Package Explorer</guilabel>
+			view
+			allows you to browse the structure of your projects and to open files
+			in an
+			<wordasword>editor</wordasword>
+			via a
+			double-click on the file.
+		</para>
+		<para>
+			It is also used to change the
+			structure of your
+			project. For
+			example,
+			you can rename files or move
+			files and folders
+			via drag
+			and
+			drop.
+			A
+			right-click on a file or
+			folder shows you the
+			available
+			options.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/packageexplorerview20.png"
+						scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Package Explorer</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			For more info on the Package Explorer see
+			<xref linkend="sourcenavigation_packageexplorer" />
+			and
+			<xref linkend="packageexplorerlinkwitheditor" />
+			.
+		</para>
+	</section>
+	
+	<section id="eclipsejavaperspective_outlineview">
+		<title>Outline view</title>
+		<indexterm>
+			<primary>Outline view</primary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Outline</guilabel>
+			view
+			shows the structure of the currently selected source file.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/outlineview10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Outline View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="eclipsejavaperspective_problems">
+		<title>Problems view</title>
+		<indexterm>
+			<primary>Problems view</primary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Problems</guilabel>
+			view
+			shows errors and warning messages.
+			Sooner or later you will run into problems
+			with your code or
+			your
+			project setup. To view the problems in your
+			project, you can use the
+			<guilabel>Problems</guilabel>
+			view
+			which is part of the standard Java
+			<wordasword>perspective</wordasword>
+			. If this
+			view
+			is closed, you
+			can
+			open it
+			via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Problems</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/problemsview10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Errors in the problem view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			The messages which are displayed in the
+			<guilabel>Problems</guilabel>
+			view can
+			be configured via the drop-down menu of the
+			view
+			. For example, to display the problems
+			from the currently
+			selected
+			project, select
+			<guilabel>Configure Contents</guilabel>
+			and set the Scope to
+			<guilabel>On any element in the same project</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/problemsview20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Drop-down menu of the problems view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/problemsview30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Customizing</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			The
+			<guilabel>Problems</guilabel>
+			view
+			also allows you to trigger a
+			<wordasword>Quick fix</wordasword>
+			via a right mouse-click on several selected messages. See
+			<xref linkend="quickfix" />
+			for details on the
+			<wordasword>Quick fix</wordasword>
+			functionality.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/problemsview40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Customizing</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="eclipsejavaperspective_javadoc">
+		<title>Javadoc view</title>
+		<indexterm>
+			<primary>Javadoc view</primary>
+		</indexterm>
+		<para>
+			The
+			<guilabel>Javadoc</guilabel>
+			view
+			shows the documentation of the selected element in the Java
+			<wordasword>editor</wordasword>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/javadocview12.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Javadoc View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="eclipsejavaperspective_editor">
+		<title>Java editor</title>
+		<indexterm>
+			<primary>Java editor</primary>
+		</indexterm>
+		<para>
+			The Java
+			<wordasword>editor</wordasword>
+			is used to modify the Java source code. Each
+			Java source file is
+			opened in a separate
+			<wordasword>editor</wordasword>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/javaeditorintro10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Java editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>If you click in the left column of the editor, you can configure its
+			properties, for example, that line number should be displayed.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/javaeditorintro20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Java editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+</section>

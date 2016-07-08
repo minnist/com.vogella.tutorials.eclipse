@@ -1,0 +1,56 @@
+
+<section id="tableeditor">
+	<title>Maintaining data in a table</title>
+	<para>Create a table with the following coding.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/createTable2.sql" />
+		</programlisting>
+	</para>
+	<para>Put in some data via SQL</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/createContent2.sql" />
+		</programlisting>
+	</para>
+	<para>
+		Refresh your database and select your new table, right-click
+		on
+		your table and select Data->Edit. Now you can edit the
+		data.
+		</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/table10.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/table20.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		Also note that Eclipse Data Tools Platform allows you to
+		upload /
+		download the data and also to see a sample of the
+		content.
+		</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/table30.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

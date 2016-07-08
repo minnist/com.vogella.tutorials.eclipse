@@ -1,0 +1,122 @@
+<section id="eclipse4_preferences">
+	<title>Preferences and dependency injection</title>
+	<indexterm>
+		<primary>@Preference</primary>
+	</indexterm>
+	<indexterm>
+		<primary>Preferences</primary>
+		<secondary>Dependency injection</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>IEclipsePreference</primary>
+		<seealso>Preferences</seealso>
+	</indexterm>
+	<para>
+		The Eclipse platform allows you to use dependency injection for
+		preferences handling.
+		To access preference you use the
+		<code>@Preference</code>
+		annotation as qualifier for the dependency injection annotation. This means that
+		<code>@Preference</code>
+		must be used together with
+		<code>@Inject</code>
+		or one of the other annotations which implies dependency injection,
+		e.g., the
+		<code>@Execute</code>
+		annotation.
+	</para>
+	<para>
+		The
+		<code>@Preference</code>
+		annotation allows you to specify the
+		<parameter>nodePath</parameter>
+		and the
+		<parameter>value</parameter>
+		as optional parameters.
+	</para>
+
+	<para>
+		The
+		<parameter>nodePath</parameter>
+		is the file name
+		used to save the
+		preference values to disk.
+		By default
+		this is
+		the
+		Bundle-SymbolicName of the plug-in. The
+		<parameter>value</parameter>
+		parameter specifies the preference key for the value which should be
+		injected.
+	</para>
+
+	<para>
+		Eclipse can also inject the
+		<code>IEclipsePreference</code>
+		object. You can use this object for storing values. If you use the
+		<wordasword>value</wordasword>
+		parameter, Eclipse injects the value directly. Use the
+		<wordasword>value</wordasword>
+		parameter for read access, while for storing or changing values, use
+		the
+		<code>IEclipsePreference</code>
+		object.
+	</para>
+
+	<para>
+		The following code snippet demonstrates how to put values into
+		the preferences store. Please note that
+		<code>@Preference</code>
+		is used in combination with
+		<code>@Execute</code>
+		.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/put.txt" />
+		</programlisting>
+	</para>
+
+
+	<para>
+		The next snippet demonstrates the read access of preference
+		values. This time the preference annotation is used a
+		qualifier for
+		<code>@Inject</code>
+		.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/listen.txt" />
+		</programlisting>
+	</para>
+	<para>
+		The Eclipse platform automatically tracks the values and re-injects
+		them
+		into fields and methods if they change.
+		Eclipse
+		tracks
+		changes of
+		preferences
+		in the
+		<code>InstanceScope</code>
+		scope.
+		Preference values
+		in the
+		<code>ConfigurationScope</code>
+		and
+		<code>DefaultScope</code>
+		are not tracked.
+	</para>
+
+	<para>
+		If you use the injected
+		<code>IEclipsePreference</code>
+		to store new preference values, these
+		values are stored in the instance
+		scope.
+	</para>
+
+
+</section>

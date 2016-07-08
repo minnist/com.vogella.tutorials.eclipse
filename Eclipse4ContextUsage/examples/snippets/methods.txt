@@ -1,0 +1,10 @@
+import javax.annotation.PostConstruct;
+
+// more code
+
+@PostConstruct
+public void createControls(Composite parent) {
+	System.out.println(this.getClass().getSimpleName() 
+	+ " @PostConstruct method called.");
+}
+

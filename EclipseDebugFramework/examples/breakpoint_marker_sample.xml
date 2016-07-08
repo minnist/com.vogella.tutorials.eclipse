@@ -1,0 +1,12 @@
+<!-- The id is the same as the referenced "markerType" in the org.eclipse.debug.core.breakpoints 
+	extension point -->
+<extension id="example.breakpoint.marker" point="org.eclipse.core.resources.markers">
+	<!-- persist the marker, so that the referenced breakpoint will be recreated -->
+	<persistent value="true" />
+	<!-- Additional attributes for the marker can be defined, which are also 
+		persisted -->
+	<attribute name="CUSTOM_ADDITIONAL_ATTR_WHICH_IS_ALSO_PERSISTED" />
+	<!-- The org.eclipse.debug.core.breakpointMarker super type indicated that 
+		this marker is used for a breakpoint -->
+	<super type="org.eclipse.debug.core.breakpointMarker" />
+</extension>

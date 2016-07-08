@@ -1,0 +1,114 @@
+<section id="modelservice" role="wrapper">
+	<title>Model Service</title>
+	<section id="modelservice_overview">
+		<title>What is the model service?</title>
+		<indexterm>
+			<primary>Model service</primary>
+		</indexterm>
+		<indexterm>
+			<primary>EModelService</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Snippets</primary>
+		</indexterm>
+
+		<para>
+			The
+			<wordasword>model service</wordasword>
+			gives you access to the application model at runtime and
+			allows you to
+			modify it. For example, you can add and
+			remove
+			model
+			elements. It also
+			contains functionality to clone
+			application model
+			snippets
+			which
+			can be
+			added to the application.
+		</para>
+	</section>
+	<section id="modelservice_access">
+		<title>How to access the model service</title>
+		<para>
+			This service can be accessed via dependency injection. For example,
+			via field injection with the following statement:
+			<code>@Inject EModelService modelService;</code>
+		</para>
+	</section>
+	<section id="modelservice_cloningsnippets">
+		<title>Cloning elements or snippets</title>
+		<para>
+			In the application model you can create
+			<code>Snippet</code>
+			model elements
+			which can be used to create model objects at runtime.
+			It is
+			also
+			possible to copy existing application
+			model elements via
+			the model
+			service.
+		</para>
+		<para>
+			You can use the
+			<code>cloneElement()</code>
+			and
+			<code>cloneSnippet()</code>
+			methods of the model service
+			to copy an existing element or snippet.
+			The resulting object can be assigned to another
+			model
+			element.
+		</para>
+	</section>
+
+	<section id="modelservice_searchingmodelelements">
+		<title>Searching model elements</title>
+		<para>
+			The
+			<code>findElements()</code>
+			method allows you to search for specific model elements. The
+			following
+			code
+			shows an example for using the
+			<code>findElements()</code>
+			method.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/emodelservice/ModelServiceExampleHandler.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Here is an example of how to find the
+			perspective
+			for a
+			part.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/emodelservice/FindPerspectiveHandler.java" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			You can also use the
+			<code>findElements</code>
+			method with a fifth parameter which allows you to specify additional
+			search flags, e.g., IN_ACTIVE_PERSPECTIVE, OUTSIDE_PERSPECTIVE,
+			IN_ANY_PERSPECTIVE. See the Javadoc of the
+			<code>findElements</code>
+			method for further details.
+		</para>
+
+	</section>
+
+
+</section>

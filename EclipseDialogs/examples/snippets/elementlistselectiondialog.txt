@@ -1,0 +1,10 @@
+
+ElementListSelectionDialog dialog = 
+	new ElementListSelectionDialog(shell, new LabelProvider());
+dialog.setElements(new String[] { "Linux", "Mac", "Windows" });
+dialog.setTitle("Which operating system are you using");
+// user pressed cancel
+if (dialog.open() != Window.OK) {
+		return false;
+}
+Object[] result = dialog.getResult();

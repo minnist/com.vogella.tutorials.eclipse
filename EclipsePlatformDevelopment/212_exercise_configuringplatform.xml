@@ -1,0 +1,168 @@
+<section id="platform_repo_errorfixing" role="wrapper">
+	<title>Exercise: Install required plug-ins and configure your workspace</title>
+	<section id="platform_installtools_installationfile">
+		<title>Exercise: Install additional plug-ins via install file</title>
+		<para>
+			The Eclipse Platform UI team provides a file describing all the plugins typically needed for platform
+			development. You can download from the following link this file, stored under version control:
+			http://git.eclipse.org/c/platform/eclipse.platform.ui.git/plain/releng/org.eclipse.ui.releng/platformUiTools.p2f
+		</para>
+		<para>
+			To install all the development plug-ins import the p2f file
+			via the
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Import...</guisubmenu>
+				<guisubmenu>Install</guisubmenu>
+				<guisubmenu>Install Software Items from File</guisubmenu>
+			</menuchoice>
+			menu path.
+		</para>
+	</section>
+
+	<section id="platform_repo_errorfixing_apibaseline">
+		<title>Configure API baseline</title>
+		<para>
+			Eclipse projects frequently needs to ensure that they do not break
+			API,
+			compared to the previous release.
+			For this
+			the
+			API tooling is used,
+			and
+			a missing API baseline is
+			reported as error.
+		</para>
+
+
+		<tip>
+			<para>Handling baseline issues and API is something which the core
+				committers can help with. New contributors
+				can set
+				this error message
+				to warning to have an easy start. This setting is highlighted in the
+				following screenshot.
+			</para>
+
+
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/apibaseline_setwarningtoignore10.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Setting the API baseline to ignore</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</tip>
+		<para>
+			To define and use an API baseline, you need to download and install an official released version of Eclipse.
+			This
+			installation defines your baseline for the API, and you can specify its location in the Eclipse preferences.
+			For this
+			select the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>API Baselines</guisubmenu>
+			</menuchoice>
+			menu entry.
+			Here you can define the Eclipse release to use as
+			baseline. With this system, Eclipse can report API
+			breakage by comparing the code in your workspace with the last released code.
+		</para>
+		<para>For example if you develop for the next Eclipse 4.x+1 release
+			(for example 4.6),
+			you should select
+			the official
+			Eclipse release
+			(for example Eclipse
+			4.5.1) as API
+			baseline. This way the Eclipse API
+			baseline tooling can
+			check if
+			you
+			break
+			existing API and can add error
+			or warning
+			markers
+			to your code.
+			The tooling can also propose quickfixes
+			for
+			such
+			violations.
+		</para>
+		<para>
+			The following screenshots demonstrates how to configure a API
+			baseline. This
+			assumes that the
+			4.5 is the latest official
+			release. In the preference press the
+			<guilabel>Add Baseline...</guilabel>
+			button.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/apibaseline10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting up the API baseline</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Enter a name for this baseline, select the folder which contains the
+			latest official Eclipse release and press the
+			<guibutton>Reset</guibutton>
+			button to use this installation as baseline.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/apibaseline20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Setting up the API baseline</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			For detailed information about the usage of the API baseline,
+			see
+			<ulink url="https://wiki.eclipse.org/Version_Numbering">Eclipse Version Numbering Wiki</ulink>
+			and
+			<ulink url="https://wiki.eclipse.org/PDE/API_Tools/User_Guide">API Tools</ulink>
+			.
+		</para>
+	</section>
+	<section id="platform_repo_errorfixing_closingprojects">
+		<title>Closing projects</title>
+		<para>
+			Sometimes a plug-in give you error messages, which you can't solve. For example, if the plug-in is
+			specific to
+			the Windows operating system API and you are using Linux, you get compiler errors for it.
+		</para>
+		<para>
+			In this case, right-click on the project and select
+			<guilabel>Close Project</guilabel>
+			from the context menu. This will make the Eclipse IDE ignore this plug-in in your workspace.
+		</para>
+	</section>
+	<section id="platform_repo_setupofotherprojects">
+		<title>Setup for other Eclipse projects</title>
+		<para>
+			If you planning to contribute to another Eclipse project, please have a look at their contribution guide. This guide
+			is typically available via the project website, which can be found via the search functionality of the
+			<ulink url="https://projects.eclipse.org">Eclipse project side</ulink>
+			.
+		</para>
+	</section>
+</section>

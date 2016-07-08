@@ -1,0 +1,14 @@
+<section id="writableValue">
+	<title>Tutorial: WritableValue</title>
+	<para>Create a new View in your "de.vogella.databinding.example"
+		plug-in with the following class. Via the buttons you can change the
+		details of the WritableObject.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/writable/ViewWritableValue.java" />
+		</programlisting>
+	</para>
+</section>

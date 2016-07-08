@@ -1,0 +1,11 @@
+
+IViewReference[] views = page.getViewReferences();
+	for (IViewReference view : views) {
+		page.hideView(view);
+	}
+	try {
+		page.showView(View.ID);
+	} catch (PartInitException e) {
+		e.printStackTrace();
+	}
+return null;

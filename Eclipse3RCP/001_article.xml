@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<article>
+	<articleinfo>
+		<title>Eclipse RCP based on the 3.x API - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>10.01.2014</pubdate>
+
+		<releaseinfo>
+			Version 7.2
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse RCP</title>
+			<para> This tutorial describes how to develop Eclipse RCP
+				applications with Eclipse 3.x API.
+			</para>
+		</abstract>
+	</articleinfo>
+
+
+	<?dbhtml-include href="../../lib/adsense/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_eclipse3x.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/101_extensionpoints.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/102_components.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/180_approach.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/230_iapplication.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/240_workbenchparts.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/244_tutorial_view.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/520_perspectives.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/600_systemtray.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/800_workbenchapi.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/820_tips_and_tricks.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/840_access_resources.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Eclipse3RCP"?>
+</article>

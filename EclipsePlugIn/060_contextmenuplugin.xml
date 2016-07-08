@@ -1,0 +1,198 @@
+<section id="contribute">
+	<title>Contribute a menu to existing Part</title>
+	<section id="contribute_overview">
+		<title>Overview</title>
+		<para>
+			In this example we will add a new context menu entry to the
+			<wordasword>Package Explorer</wordasword>
+			part. The context menu is displayed if
+			the user
+			selects a
+			file in
+			the
+			package explorer via a right mouse click.
+			We will
+			offer
+			the option
+			to
+			create a HTML page from a Java source file.
+		</para>
+		<para>
+			To contribute to an existing menu or toolbar, you need to know the
+			corresponding ID. This ID can be found via the
+			<wordasword>Menu Spy</wordasword>
+			. To start the Menu Spy use ALT + Shift + F2 and click on the menu entry you are interested in.
+		</para>
+	</section>
+	<section id="contribute_packageexplorer">
+		<title>Contribute to the Package Explorer</title>
+		<para>
+			Create a new plug-in project called
+			<wordasword>de.vogella.plugin.htmlconverter</wordasword>
+			.
+			Do not use a template.
+		</para>
+
+		<para>
+			Open the
+			<filename>META-INF/MANIFEST.MF</filename>
+			file. Select the
+			<guilabel>Dependencies</guilabel>
+			tab
+			and add the following dependencies to your plug-in.
+			<itemizedlist>
+				<listitem>
+					<para>
+						org.eclipse.jdt.core
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.core.runtime</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.core.resources</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.core.expressions</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			Open the
+			<guilabel>Extensions</guilabel>
+			tab in your editor, or if the tab is not visible, click the
+			<guilabel>Extensions</guilabel>
+			link on the
+			<guilabel>Overview</guilabel>
+			tab.
+			Add a command with the ID
+			<code>de.vogella.plugin.htmlconverter.convert</code>
+			and
+			the default handler
+			<code>de.vogella.plugin.htmlconverter.handler.ConvertHandler</code>
+			to your plug-in.
+		</para>
+		<para>
+			Add
+			this command to the menu via the extension point
+			<code>org.eclipse.ui.menus</code>
+			and use
+			<property>popup:org.eclipse.jdt.ui.PackageExplorer</property>
+			as the
+			<parameter>locationURI</parameter>
+			. Set the label to
+			<parameter>Create HTML</parameter>
+			for this contribution.
+		</para>
+		<para>
+			The resulting file
+			<code>plugin.xml</code>
+			should look like the following.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/pluginsimple.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			Eclipse allows to
+			save additional information for each file. You
+			can
+			use the
+			<code>IResource</code>
+			interface and the
+			<code>setPersistentProperty()</code>
+			and
+			<code>getPersistentProperty()</code>
+			methods. With these functions you can save Strings on files.
+			We use
+			these functions to save a directory for Java source
+			files which
+			were
+			already exported via HTML.
+		</para>
+
+
+		<para>
+			Create the following
+			<code>ConvertHandler</code>
+			class.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/htmlconverter/ConvertHandler.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			If you start this plug-in, you should be able to create
+			HTML
+			output from a Java source file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/html40.gif" scale="60" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="contextmenu_restrict">
+		<title>Restrict the extension - Visible When</title>
+		<para>
+			Currently our context menu is displayed all the time.
+			We would
+			like to
+			show
+			it only if a source
+			file is selected. For
+			this we will use
+			a
+			"visible-when" definition.
+		</para>
+		<para>
+			Add the
+			<code>org.eclipse.core.expressions</code>
+			plug-in as dependency to your plug-in. Select your menu
+			contribution.
+			Using the right mouse add the condition to the
+			command that it should
+			only be visible if a file is selected
+			which represents a
+			<code>ICompilationUnit</code>
+			from the
+			<code>org.eclipse.jdt.core</code>
+			package.
+		</para>
+		<para>
+			For this exercise you use the
+			predefined variable
+			<parameter>activeMenuSelection</parameter>
+			which contains the selection in the menu and iterate over
+			it. If the
+			selection can get adapted to
+			<code>ICompilationUnit</code>
+			,
+			then the contribution will be visible.
+		</para>
+		<para>
+			This will result in the following
+			<filename>plugin.xml</filename>
+			.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/htmlconverter/plugin.xml" />
+			</programlisting>
+		</para>
+		<para>
+			If you now start your plug-in, the menu entry should only be
+			visible if at least one compilation unit has been
+			selected.
+		</para>
+	</section>
+</section>

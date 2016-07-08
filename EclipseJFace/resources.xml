@@ -1,0 +1,40 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resourceslocal.xml" />
+
+	<section id="resources_s1s2a">
+		<title>Other JFace Resources</title>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/SWT/article.html">Eclipse SWT Tutorial</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html">
+				Eclipse JFace Table</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTree/article.html">
+				Eclipse JFace Tree</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.vogella.com/tutorials/EclipseDataBinding/article.html">
+				Eclipse JFace Data Binding</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/EclipseDialogs/article.html">
+				Eclipse JFace Dialogs</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/EclipseWizards/article.html">
+				Eclipse JFace Wizards</ulink>
+		</para>
+
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipsePreferences/article.html">Preferences and Preference pages</ulink>
+
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

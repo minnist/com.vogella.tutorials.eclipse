@@ -1,0 +1,58 @@
+
+<section id="createmodel_genmodel">
+	<title>Create EMF Generator Model</title>
+	<para>
+		If your EMF genmodel is missing you can create one.
+		Right-click your
+		<filename>.ecore</filename>
+		file and select
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>New</guisubmenu>
+			<guisubmenu>Other...</guisubmenu>
+			<guisubmenu>EMF Generator model</guisubmenu>
+		</menuchoice>
+		.
+		Create the
+		<filename>webpage.genmodel</filename>
+		file based on your
+		<wordasword>Ecore model</wordasword>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/genmodel10.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/genmodel20.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/genmodel30.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>Select your model and press load.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/genmodel40.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/genmodel50.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

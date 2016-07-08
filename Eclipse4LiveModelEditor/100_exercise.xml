@@ -1,0 +1,168 @@
+<section id="exercise_modelspy" role="wrapper">
+	<title>Optional Exercise: Using the model spy</title>
+	<section id="exercise_modelspy_target">
+		<title>Target</title>
+		<para>
+			To test the application model dynamics, integrate the model spy
+			and its dependencies into the
+			run
+			configuration of
+			your
+			application.
+		</para>
+
+		<warning>
+			<para>Do not modify your product configuration file for this
+				exercise.
+				You should not
+				include the model spy in your
+				exported
+				application as
+				it
+				is only a test and debug tool. It is
+				not intended to
+				be used by end
+				users.
+			</para>
+		</warning>
+
+		<note>
+			<para>The model spy is a debug tool and not intended to be used in a
+				productive application. So it might happen that
+				this exercise does
+				not
+				work, or that you see additional exceptions in your log file,
+				caused by the tool.
+			</para>
+		</note>
+	</section>
+	<section id="exercise_modelspy_targetplatform">
+		<title>Add the spies to your target platform</title>
+		<para>
+			Add the model spies to your target platform. See
+			<ulink url="tutorial_installation_e4spiesofficial">e4 spies</ulink>
+			for the update site.
+		</para>
+
+	</section>
+	<section id="exercise_modelspy_add">
+		<title>Adding the model spy to your runtime configuration</title>
+		<para>
+			Open the run configuration of your product via the
+			<menuchoice>
+				<guimenu>Run</guimenu>
+				<guisubmenu>Run Configurations...</guisubmenu>
+			</menuchoice>
+			menu entry and
+			add the
+			<code>org.eclipse.e4.tools.model.spy</code>
+			plug-in and its dependencies to it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/adding_liveeditor08.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding the live editor to a run configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you use the filter you have to remove it before the
+			<guilabel>Add Required Plug-ins</guilabel>
+			becomes active again.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/adding_liveeditor10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding the live editor to a run configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			Press the
+			<guilabel>Validate</guilabel>
+			button to ensure that all dependencies are included.
+		</para>
+
+	</section>
+	<section id="exercise_modelspy_using">
+		<title>Use the model spy</title>
+
+		<para>
+			After you have added the new plug-ins to your run
+			configuration press the
+			<guibutton>Run</guibutton>
+			button in the run configuration you just added.
+		</para>
+		<warning>
+			<para>Do not start the application now via the product. Starting via
+				the product resets your changes in the runtime
+				configuration.
+			</para>
+		</warning>
+
+		<para>
+			Start your application and use the
+			<keycombo>
+				<keycap>Shift</keycap>
+				<keycap>Alt</keycap>
+				<keycap>F9</keycap>
+			</keycombo>
+			shortcut to
+			open the model spy.
+		</para>
+
+		<warning>
+			<para>The code of the model spy adds this key binding to your
+				application by modifying your application model at
+				runtime. If you
+				already
+				defined key bindings this process
+				might fail.
+			</para>
+		</warning>
+
+		<para>Use the model spy to change the runtime application model. For
+			example, add a part (with a label) or
+			change the
+			size of the
+			window. All
+			changes should become immediately
+			visible
+			(except new menu entries, these
+			changes are not updated
+			automatically due to a bug).
+		</para>
+	</section>
+
+	<section id="exercise_modelspy_cleanup">
+		<title>Cleanup - remove model spy from your run configuration
+		</title>
+		<para>After testing with the tool enabled, start your application
+			again
+			from your product configuration file to remove
+			the live model
+			editor
+			plug-in from your run configuration.
+		</para>
+		<warning>
+			<para>If you leave the model spy included in your run configuration, it might
+				cause side effects, e.g., in the past
+				it
+				created
+				exceptions if
+				key
+				bindings were present in the application.
+			</para>
+		</warning>
+	</section>
+</section>

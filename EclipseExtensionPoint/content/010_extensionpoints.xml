@@ -1,0 +1,94 @@
+<section id="extensionpoints">
+	<title>Extensions and extension points</title>
+	<indexterm>
+		<primary>Extension points and extensions</primary>
+	</indexterm>
+
+	<para>
+		Eclipse provides the concept of
+		<wordasword>extensions</wordasword>
+		to contribute functionality to a certain type of API
+		by
+		one or more
+		plug-ins. The type of API is defined by another plug-in as
+		<wordasword>extension point</wordasword>
+		.
+	</para>
+
+	<para>
+		These
+		extensions and extension points are defined via
+		the
+		<filename>plugin.xml</filename>
+		file.
+	</para>
+
+	<para> This approach is depicted in the following graphic and the
+		terminology is described in the following table.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/extensionpointconcept10.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Extensions and extension points concept</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		<table frame='all'>
+			<title>Extensions and extension points table</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Term</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Plug-in defines extension point</entry>
+						<entry>
+							The plug-in defines a contract (API) with the definition of
+							an extension point.
+							This allows other plug-ins to add contributions (extensions) to the extension point.
+							The
+							plug-in which
+							defines the
+							extension
+							point is
+							also
+							responsible
+							for
+							evaluating the
+							extensions.
+							Therefore,
+							it typically
+							contains the necessary
+							code
+							to do
+							that.
+						</entry>
+					</row>
+					<row>
+						<entry>A plug-in provides an extension</entry>
+						<entry>
+							This plug-in provides an extension (contribution) based on
+							the
+							contract defined by an existing extension point.
+							Contributions
+							can
+							be code or data.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+</section>
+

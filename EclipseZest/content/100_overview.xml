@@ -1,0 +1,131 @@
+<section id="zest">
+	<title>Eclipse Zest</title>
+	<section id="zest_overview">
+		<title>Overview</title>
+		<para>
+			Eclipse Zest is a visualization toolkit for graphs. It is based
+			on <ulink url="http://www.vogella.com/tutorials/SWT/article.html"> SWT</ulink>
+			/ Draw2D. Zest supports the viewer concept from
+			<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html"> JFace Viewers</ulink>
+			and
+			therefore
+			allows to separate the model from the graphical
+			representation of the
+			model.
+			This article assumes that you are already
+			familiar with
+			<ulink
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP</ulink>
+			or
+			<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plugin development</ulink>
+			.
+		</para>
+	</section>
+	<section id="zest_components">
+		<title>Components</title>
+		<para>
+			Eclipse Zest has the following components:
+			<itemizedlist>
+				<listitem><para>GraphNode - Node in the graph with the properties
+					</para>
+				</listitem>
+				<listitem>
+					<para>GraphConnections - Arrow / Edge of the graph which
+						connections to two nodes
+					</para>
+				</listitem>
+				<listitem>
+					<para>GraphContainer - Use for a graph within a graph
+					</para>
+				</listitem>
+				<listitem><para>Graph - holds the other elements (nodes, connections,
+						container) </para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+	<section id="layoutmanager">
+		<title>Layout Manager</title>
+		<para>
+			Eclipse Zest provides graph layout managers. A graph
+			layout
+			manager
+			determines how the nodes (and the arrows) of a graph
+			are
+			arranged on
+			the screen. The following layout managers are provided:
+
+			<table frame='all'>
+				<title>Layout Manager</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Layout Manager </entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>TreeLayoutAlgorithm</entry>
+							<entry>Graph is displayed in the form of a
+								vertical tree</entry>
+						</row>
+						<row>
+							<entry>HorizontalTreeLayoutAlgorithm</entry>
+							<entry>Similar to TreeLayoutAlgorithm
+								but layout is horizontal
+							</entry>
+						</row>
+						<row>
+							<entry>RadialLayoutAlgorithm</entry>
+							<entry>Root is in the center, the others
+								nodes are placed around
+								this node</entry>
+						</row>
+						<row>
+							<entry>GridLayoutAlgorithm</entry>
+							<entry></entry>
+						</row>
+						<row>
+							<entry>SpringLayoutAlgorithm</entry>
+							<entry>Layout the graph so that
+								all connections should have
+								approx. the same length and that the
+								edges overlap minimal
+							</entry>
+						</row>
+						<row>
+							<entry>HorizontalShift</entry>
+							<entry>Moves overlapping nodes to the right</entry>
+						</row>
+						<row>
+							<entry>CompositeLayoutAlgorithm</entry>
+							<entry>Combines other layout algorithms,
+								for example
+								HorizontalShift can be the second layout algorithm to
+								move nodes
+								which were still overlapping if another algorithm is
+								used</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+	</section>
+	<section id="zest_filter">
+		<title>Filter</title>
+		<para> You can also define filters (org.eclipse.zest.layouts.Filter)
+			on the layout managers via the method setFilter(filter). This defines
+			which nodes
+			and connections should be displayed. The filter receives
+			an
+			LayoutItem,
+			the actual graph element can be received with the method
+			getGraphData(). 
+		</para>
+
+	</section>
+</section>

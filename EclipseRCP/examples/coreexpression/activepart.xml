@@ -1,0 +1,12 @@
+<extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.example.e4.rcp.todo.todooverviewselected">
+         <with
+               variable="myactivePartId">
+            <equals
+                  value="com.example.e4.rcp.todo.part.todooverview">
+            </equals>
+         </with>
+      </definition>
+</extension>

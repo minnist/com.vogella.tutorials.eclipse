@@ -1,0 +1,15 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" 
+	name="com.example.e4.rcp.todo.contextservice.translate">
+ 
+<implementation class="com.example.e4.rcp.todo.contextservice.Test"/>
+   
+ <service>
+   <provide interface="org.eclipse.e4.core.contexts.IContextFunction"/>
+ </service>
+ 
+ <property name="service.context.key" type="String" 
+   value="vogella"/>
+
+</scr:component>

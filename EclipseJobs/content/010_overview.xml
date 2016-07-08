@@ -1,0 +1,248 @@
+<section id="eclipsejobs" role="wrapper">
+	<title>Eclipse background processing</title>
+	<section id="eclipsejobs_uithread">
+		<title>Main thread</title>
+		<indexterm>
+			<primary>SWTException - Invalid thread access</primary>
+		</indexterm>
+		<para>
+			An Eclipse RCP application runs in one process but can create
+			multiple threads.
+		</para>
+		<para>
+			By default the Eclipse framework uses a single
+			thread
+			to run all the
+			code
+			instructions. This
+			thread
+			runs the event
+			loop for the application
+			and is
+			the only thread
+			that is allowed to interact
+			with the user
+			interface (UI).
+			It
+			is
+			called the
+			<wordasword>main thread</wordasword>
+			. Sometimes it is also called the
+			<wordasword>UI thread</wordasword>,
+			but this is a misnomer as it handles all events not only the ui
+			events.
+		</para>
+		<para>
+			If another
+			thread
+			tries to update the UI,
+			the Eclipse
+			framework throws an
+			<code>SWTException</code>
+			exception.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/invalid/error.txt" />
+			</programlisting>
+		</para>
+		<para>
+			All events in the user interface
+			are executed one after another.
+			If you
+			perform a long running operation in the main thread, the
+			application
+			does not respond to user
+			interaction during the execution
+			time of this
+			operation.
+		</para>
+		<para>
+			Blocking the user interaction is considered a bad practice.
+			Therefore
+			it is
+			important to perform all long
+			running
+			operations in a
+			separate thread. Long running operations are, for example,
+			network or
+			file
+			access.
+		</para>
+		<para>
+			As only the main thread is allowed to modify the user interface,
+			the
+			Eclipse framework provides ways for a
+			thread
+			to synchronize itself
+			with
+			the main thread. It also provides
+			the
+			Eclipse Jobs
+			framework
+			which
+			allows you to run operations in the
+			background and providing
+			feedback
+			of the job status
+			to the Eclipse
+			platform.
+		</para>
+	</section>
+
+
+	<section id="eclipsejobs_uisynchronize">
+		<title>Using dependency injection and UISynchronize</title>
+		<indexterm>
+			<primary>UISynchronize</primary>
+		</indexterm>
+		<para>
+			The
+			<code>org.eclipse.e4.ui.di</code>
+			plug-in contains the
+			<code>UISynchronize</code>
+			class. An instance of this class can
+			be injected into an Eclipse
+			application via dependency injection.
+		</para>
+		<para>
+			<code>UISynchronize</code>
+			provides the
+			<code>syncExec()</code>
+			and
+			<code>asyncExec()</code>
+			methods to synchronize with the main thread.
+		</para>
+	</section>
+	<section id="eclipsejobs_jobs">
+		<title>Eclipse Jobs API</title>
+		<indexterm>
+			<primary>Job (Concurrency)</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Concurrency</primary>
+			<secondary>Job</secondary>
+		</indexterm>
+		<para>
+			The Eclipse Jobs API provides support for running background
+			processes and providing feedback
+			about the progress of the
+			<code>Job</code>
+			.
+		</para>
+
+		<para>
+			The important parts of the
+			Job
+			API are:
+			<itemizedlist>
+				<listitem>
+					<para>IJobManager - schedules jobs    </para>
+				</listitem>
+				<listitem>
+					<para>Job - the individual task to perform   </para>
+				</listitem>
+				<listitem>
+					<para>IProgressMonitor - interface to communicate information about
+						the status of your Job.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			The creation and scheduling of a
+			<code>Job</code>
+			is demonstrated in the following code snippet.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/jobs/example.txt" />
+			</programlisting>
+		</para>
+		<para>
+			If you want to update the user interface from a
+			<code>Job</code>,
+			you need to synchronize the corresponding action with the user
+			interface similar to the direct usage of threads.
+		</para>
+	</section>
+
+	<section id="eclipsejobs_prio">
+		<title>Priorities of Jobs</title>
+		<para>
+			You can set the
+			<code>Job</code>
+			priority via the
+			<code>job.setPriority()</code>
+			method. The
+			<code>Job</code>
+			class contains predefined priorities, e.g.
+			<code>Job.SHORT</code>
+			,
+			<code>Job.LONG</code>
+			,
+			<code>Job.BUILD</code>
+			and
+			<code>Job.DECORATE</code>
+			.
+		</para>
+		<para>
+			The Eclipse job scheduler will use these priorities to determine in
+			which
+			order
+			the
+			<code>Jobs</code>
+			are scheduled. For example,
+			jobs
+			with the priority
+			<code>Job.SHORT</code>
+			are scheduled before jobs with the
+			<code>Job.LONG</code>
+			priority
+			.
+			Check the
+			JavaDoc of
+			the
+			<code>Job</code>
+			class for details.
+		</para>
+
+	</section>
+	<section id="busyindicator">
+		<title>Blocking the UI and providing feedback</title>
+		<para>
+			Sometimes
+			you simply want
+			to give the user the feedback that
+			something
+			is running
+			without using threads.
+		</para>
+		<para>
+			The easiest
+			way to provide feedback is to change
+			the
+			cursor via the
+			<code>BusyIndicator.showWhile()</code>
+			method call.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/simple/Busy.java" />
+			</programlisting>
+		</para>
+		<para>
+			If this code is executed, the cursor will change to a
+			busy
+			indicator
+			until the
+			<code>Runnable</code>
+			is done.
+		</para>
+
+	</section>
+</section>

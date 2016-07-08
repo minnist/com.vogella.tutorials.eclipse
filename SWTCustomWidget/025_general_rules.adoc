@@ -1,0 +1,87 @@
+== General rules for custom widgets
+
+Some general rules have to be considered, when developing custom widgets, no matter which
+kind of custom widget is implemented.
+
+=== System resources must be disposed correctly
+
+In case of self drawn widgets you generally need a lot of different system resources,
+like colors, fonts or images, which have to be disposed correctly.
+You can attach a `﻿DisposeListener` to your custom widget by using the
+`﻿addDisposeListener()` method of the `Canvas` or
+`Composite` and dispose the system resources, which have been used by the
+widget. But in case you also use the JFace plug-ins in your application we suggest using
+a `LocalResourceManager` for handling system resources.
+
+[source,java]
+----
+include::res/ResourceManagerCanvas.java[]
+----
+
+[WARNING]
+====
+You must _never_ override the `dispose()` method of the
+`Canvas` or `Composite` in order to dispose your
+system resources. You _must_ always add a
+`DisposeListener` instead, so that the actual disposal can be
+handled by the framework itself.
+====
+
+=== Fail fast
+To fail fast means that the public API of your custom widget should always invoke the
+`checkWidget` method, before it calls any functionality of the custom
+widget. The `checkWidget` method of the `Widget` class checks
+certain pre-conditions for the proper use of a `Widget`, like checking
+whether the widget is not disposed and not accessed from an other `Thread`
+than the SWT `Thread`.
+
+<programlisting language="java">
+<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/CustomWidget.java"/>
+</programlisting>
+
+=== Tell others how big you are
+By overriding the `computeSize` method you give a `Layout` and
+other widgets around your custom widget the chance to get to know the size of your
+custom widget.
+By offering the size the `Layout`, of the parent `Composite`,
+will be able to align its child widgets properly.
+
+[source,java]
+----
+include::res/ComputeSizeWidget.java[]
+----
+
+=== Use SWT errors
+
+In case errors occur inside your custom widget, you should use one of the three static
+error methods of the `SWT` class.
+
+* `public static void error (int code)`
+* `public static void error (int code, Throwable throwable)`
+* `public static void error (int code, Throwable throwable, String detail)`
+
+The <parameter>code</parameter> parameter of each `error` method must be one of
+the `SWT.ERROR_*` constants.
+In case a parameter of a method must not be null you can check this parameter and call
+`SWT.error(SWT.ERROR_NULL_ARGUMENT)` in case this parameter is
+`null`.
+
+image::SWT_ERRORS.png[]
+
+
+[NOTE]
+====
+Also have a look at the other `SWT.ERROR_*` constants, which can be
+used. They are all described in detail in the JavaDoc.
+====
+
+=== Also support ﻿bi-directional behavior
+
+The `SWT` class contains two style flags, which can be passed to a widgets'
+constructor, where you can define the Bi-directional behavior of a widget.
+`﻿SWT.RIGHT_TO_LEFT` is used to write the widgets text and other included
+elements from right to left.`﻿SWT.LEFT_TO_RIGHT` is the default for most
+widgets and is used to write the widgets' text and other included elements from left to
+right.
+
+

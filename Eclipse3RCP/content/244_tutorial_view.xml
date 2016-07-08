@@ -1,0 +1,152 @@
+<section id="viewtutorial">
+	<title>Tutorial: Adding Views to your application</title>
+	<section id="viewtutorial_add">
+		<title>Create a view</title>
+		<para> The
+			following will
+			explain how to add views to your
+			application.
+			We will continue to use the
+			RCP project
+			"de.vogella.rcp.intro.first".
+		</para>
+		<para> Add the extension "org.eclipse.ui.views" to your plugin. Select
+			"<filename>plugin.xml</filename> and the tab "Extentions".
+			Right
+			mouse-click on your new
+			view extension and select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>View</guisubmenu>
+			</menuchoice>.
+			Maintain the id
+			"de.vogella.rcp.intro.view.MyView" and the
+			class
+			"de.vogella.rcp.intro.view.MyView".
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="60" fileref="images/addview80.gif" />
+				</imageobject>
+				<textobject>
+					<phrase>Data for the "org.eclipse.ui.views" extension point</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="60" fileref="images/addview90.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Data for the "org.eclipse.ui.views" extension point</phrase>
+				</textobject>
+
+			</mediaobject>
+		</para>
+		<para>
+			Create the class "MyView" by clicking on the "class"
+			hyperlink
+			and
+			maintain the following code. Afterwards, your view is ready to be
+			used.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/view/MyView.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="viewtutorial_perspective">
+		<title>Add the view to your perspective</title>
+		<para>
+			You have to add the view to your
+			perspective. Add
+			the extension
+			"org.eclipse.ui.perspectiveExtensions" to your plugin.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/addview110.gif" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a view to your perspective via the
+						"org.eclipse.ui.perspectiveExtensions" extension</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Right-click "*(perspectiveExtension)"
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>View</guisubmenu>
+			</menuchoice>.
+			Maintain
+			your view id
+			<property>de.vogella.rcp.intro.first.MyView</property>.
+			Make
+			the view
+			relative
+			to
+			<property>org.eclipse.ui.editors</property>
+			which is the currently
+			invisible
+			editor
+			area
+			and make the view use all the space by selecting
+			the maximum
+			ratio
+			of
+			<property>0.95f</property>.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/addview130.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Maintaining the layout data for the view in the
+						<code>org.eclipse.ui.perspectiveExtensions</code> extension point</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="viewtutorial_result">
+		<title>Result</title>
+		<para>Run your application to see the result.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/addview200.gif" />
+				</imageobject>
+				<textobject>
+					<phrase>Running application with a new view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="viewtutorial_programmically">
+		<title>Add view to perspective via code</title>
+		<para> I personally prefer extension points over code. But instead of
+			using the extension
+			point
+			"org.eclipse.ui.perspectiveExtensions" you
+			could also add the
+			view
+			via
+			code to the perspective. For this modify
+			"Perspective.java" to the following.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/view/Perspective.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

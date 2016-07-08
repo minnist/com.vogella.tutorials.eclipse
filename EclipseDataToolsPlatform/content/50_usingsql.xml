@@ -1,0 +1,64 @@
+<section id="usingsql">
+	<title>Using SQL Statements</title>
+		<para>
+			Switch back to the Java perspective. Create a folder
+			"scripts".
+			Right-click on it, select New -> Other and SQL
+			Development and SQL
+			File.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/sqlfile10.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Maintain the folder "scripts" as a target, name the  file "myscript.sql"
+			and maintain the connection you have created
+			earlier.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/sqlfile20.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Maintain a SQL statement, e.g., the creation of a Database
+			schema, right-click and select "Execute all". After running
+			the script
+			you see the result in the "SQL Results" view.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/sqlfile30.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/sqlfile40.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Switch back to "Database development" perspective, right
+			click on
+			your database and select refresh to see your new
+			schema. You could
+			continue now writing SQL statements to
+			create your database, e.g.
+			creating a table via SQL.
+		</para>
+</section>

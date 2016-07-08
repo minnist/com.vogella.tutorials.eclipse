@@ -1,0 +1,106 @@
+<section id="eclipseplatform_who" role="wrapper">
+	<title>The platform development team</title>
+	<section id="eclipseplatform_contributions2">
+		<title>Who is involved?</title>
+
+		<para>
+			Despite the general assumption that the Eclipse SDK components
+			are
+			developed by an army of developers, the actual
+			core developer
+			team
+			is
+			relatively small.
+		</para>
+		<para>
+			General information about an Eclipse project can be
+			found
+			under
+			<ulink url="http://projects.eclipse.org/">http://projects.eclipse.org/</ulink>
+			. For example
+			via the
+			<guilabel>Who's Involved</guilabel>
+			link you can see an overview of the project activities. For
+			example,
+			the information for
+			the
+			platform
+			project can be found
+			under the
+			<ulink url="https://projects.eclipse.org/projects/eclipse/who">Eclipse project</ulink>
+			link.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseplatformcontributors.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Screenshots of the Eclipse platform contributors</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<tip>
+			<para>
+				To find out how
+				many people contribute to a given Eclipse Git
+				repo
+				you can use the
+				following command on a Linux
+				like system. For
+				example
+				running this
+				command shows 27 on July, 07, 2014 result in 27
+				people
+				contributing
+				to the
+				platform.ui repository.
+			</para>
+			<para>
+				<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitcount/gitcount.txt" />
+				</programlisting>
+			</para>
+
+
+
+		</tip>
+
+		<para>
+			Since the core team of an individual project is relatively small,
+			contributors can really
+			make a difference. For
+			example the following screenshot shows a snapshot of the activities of the
+			<ulink url="https://projects.eclipse.org/projects/eclipse.platform.ui/who">Eclipse platform.ui project</ulink>
+			. 
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/platformcontributions20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Acivities in the Eclipse platform UI project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			An alternative view gives the new dashboard. For example
+			the following
+			screeenshot shows the
+			<ulink url="http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui">Platform.ui dashboard</ulink>
+			link.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dashboard.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Platform.ui dashboard</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

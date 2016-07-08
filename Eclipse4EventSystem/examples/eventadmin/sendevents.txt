@@ -1,0 +1,17 @@
+
+// Constant for event registration
+public static final String TOPIC_NEWDATA = "TOPIC_NEWDATA";
+
+@Execute 
+public void sendEvent(IEventBroker eventBroker){
+	if (eventBroker != null) {
+		// assume there is an object Todo
+		Todo todo = new Todo("Event Broker");
+		todo.setDescription("Details");
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("TEST1", "This is the message of the test1");
+		map.put("NEWTODO", todo);
+		// do now block via post (asynchronously)
+		eventBroker.post(TOPIC_NEWDATA, map);
+	}
+}

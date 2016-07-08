@@ -1,0 +1,172 @@
+<section id="clone_repository">
+	<title>Clone an existing repository</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>clone repository
+		</secondary>
+	</indexterm>
+	<para>
+		Eclipse
+		allows you to clone an existing Git repository and to
+		import existing
+		projects from this repository into your Eclipse
+		workspace by using a wizard.
+	</para>
+
+	<para>
+		Select
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>Import</guisubmenu>
+			<guisubmenu>Git</guisubmenu>
+			<guisubmenu>Project from Git</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import08.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>Importing projects via EGit</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		Select
+		<guilabel>URI</guilabel>
+		in the next dialog.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import09.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>URI selected in EGit</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+
+
+	<para>
+		Enter the URL to your Git repository. Git supports
+		several protocols,
+		e.g.
+		<parameter>git://</parameter>
+		,
+		<parameter>ssh://</parameter>
+		and
+		<parameter>https://</parameter>
+		.
+		You only have to paste the URL to the first line of the dialog, the
+		rest will be filled out automatically.
+	</para>
+	<note>
+		<para>
+			Some proxy servers block the
+			<parameter>git://</parameter>
+			and
+			<parameter>ssh://</parameter>
+			protocols. If you face issues, please try to use the
+			<parameter>https://</parameter>
+			or
+			<parameter>http://</parameter>
+			protocol.
+		</para>
+	</note>
+	<para>
+		For example the following URI
+		can be used to clone the example
+		projects of the Eclipse 4 application development book:
+		git://github.com/vogella/eclipse4book.git
+	</para>
+	<para>The above links uses the git protocol, alternatively you can also
+		use the http protocol: http://github.com/vogella/eclipse4book.git
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>URI entered in the dialog</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		After pressing the
+		<guibutton>Next</guibutton>
+		button the system will allow you to import the
+		existing
+		branches. You
+		should select at least
+		<guilabel>master</guilabel>
+		as this is typically the main development branch.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import20.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>URI entered in the dialog</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para> The next dialog allows you to specify where the repository
+		should
+		be
+		copied to and which local branch should be created initially.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import30.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Define target directory for Git repository</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		After the Git repository is cloned,
+		<wordasword>EGit</wordasword>
+		opens an additional
+		import dialog which allows importing the Eclipse
+		projects from the
+		Git
+		repository.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_import40.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>Importing projects</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para> Once this dialog is completed, you have checked out (cloned) the
+		projects
+		into a local Git repository
+		and you can use Git
+		operation on
+		these
+		projects.
+	</para>
+
+</section>

@@ -1,0 +1,13 @@
+<section id="performance_stats">
+	<title>Performance traces</title>
+	<para>
+		The Eclipse platform supports the creation of performance traces via
+		the
+		<code>PerformanceStats</code>
+		class. See
+		<ulink
+			url="http://eclipse.org/eclipse/platform-core/documents/3.1/perf_stats.html">
+			Gathering performance statistics</ulink>
+		for more details.
+	</para>
+</section>

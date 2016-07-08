@@ -1,0 +1,42 @@
+<section id="sortcolumns">
+	<title>Tutorial: Sort Columns</title>
+	<para>
+		The following example will allow to sort the table based on different columns,
+		therefore our <code>ViewerComparator</code> will have the option to set the sort
+		column.
+	</para>
+	<para>
+		Re-using the project <code>de.vogella.jface.tableviewer</code> from
+		<ulink url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html">
+			JFace Table Tutorial</ulink>
+		create the Class
+		<code>de.vogella.jface.tableviewer.sorter.MyViewerComparator.java</code>
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/sort/MyViewerComparator.java" />
+		</programlisting>
+	</para>
+	<para>
+		In <code>View</code> change the method <code>createTableViewerColumn</code> and
+		create
+		a new method <code>getSelectionAdapter()</code>. This method will
+		add a listener
+		to
+		the columns. If one of the columns is selected, the sorting column in
+		<code>ViewerComparator</code> will be set.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/sort/View.java" />
+		</programlisting>
+	</para>
+	<para>
+		If you run the example and click on a column header, the table
+		should be sorted according to the content of this column. There will
+		also appear a
+		sort-direction in the top of the column.
+	</para>
+</section>

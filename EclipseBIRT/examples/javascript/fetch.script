@@ -1,0 +1,13 @@
+
+if(count < stock.size()){
+       row["columnDate"] = stock.get(count).getDate();
+       row["columnOpen"] = stock.get(count).getOpen();
+       row["columnHigh"] = stock.get(count).getHigh();
+       row["columnLow"] = stock.get(count).getLow();
+       row["columnClose"] = stock.get(count).getClose();
+       row["columnVolume"] = stock.get(count).getVolume();
+       count++;
+       return true;
+}
+
+return false;

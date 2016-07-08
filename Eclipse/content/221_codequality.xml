@@ -1,0 +1,159 @@
+<section id="codequality" role="wrapper">
+	<title>Eclipse code checks and cleanup</title>
+	<section id="codequality_jdt">
+		<title>Java Development Toolkit code checks</title>
+		<indexterm>
+			<primary>Code checks</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Preferences</primary>
+			<secondary>code checks
+			</secondary>
+		</indexterm>
+		<para>
+			You can define how the Java compiler should react to certain
+			common
+			programming problems, e.g., you can define that an assignment
+			of a
+			variable which
+			has no effect, e.g.,
+			<code>x=x</code>
+			, causes an error in
+			Eclipse.
+		</para>
+	</section>
+	<section id="codequality_settings">
+		<title>Configuring the code settings</title>
+
+		<para>
+			You can configure these checks in the Eclipse preferences
+			settings via
+			the
+			<menuchoice>
+				<guimenu>Java</guimenu>
+				<guisubmenu>Compiler</guisubmenu>
+				<guisubmenu>Errors/Warnings</guisubmenu>
+			</menuchoice>
+			entry.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsecodequality10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Code settings</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="codequality_null">
+		<title>Annotation-based Null analysis</title>
+		<para>You can enable annotation-based null checks in Eclipse via the
+			setting highlighted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsecodequality20.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Null annotations</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			After enabling this setting, you can use the
+			<code>@NonNull</code>
+			annotation on method parameters or variable definitions to indicate
+			that these are not allowed to be NULL. You can also use the
+			<code>@Nullable</code>
+			annotation to define that a variable can be NULL.
+		</para>
+	</section>
+
+	<section id="codequality_codeclean">
+		<title>Running a code cleanup and removal of trailing whitespace
+		</title>
+		<para>Eclipse has the option to perform cleanup actions on existing
+			code. This includes the removal of trailing whitespace, the
+			additional of missing annotations but also advanced cleanups like the
+			conversion of code to Java
+			8 lambda expressions.
+		</para>
+
+		<para>
+			To trigger this cleanup, select the Java source file, package or
+			project and select
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Clean-up...</guisubmenu>
+			</menuchoice>
+			from the context menu.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/codecleanup10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Select
+			<guilabel>Use custom profile</guilabel>
+			and press
+			<guibutton>Configure...</guibutton>
+			to configure the actions which should be performed on your code.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/codecleanup20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/codecleanup30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<warning>
+			<para>Ensure to unselect any cleanup action which you do not want to
+				perform.
+			</para>
+		</warning>
+		<para>
+			After finishing the configuration, press
+			<guibutton>OK</guibutton>
+			and the
+			<guibutton>Next</guibutton>
+			button in the cleanup wizard to get a preview of the changes.
+		</para>
+			<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/codecleanup40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,57 @@
+<section id="components_rcp">
+	<title>Main components of an Eclipse RCP application</title>
+	<para> The minimal required plug-ins to create and run an
+		minimal
+		Eclipse RCP
+		application (with UI) are the two plugins
+		"org.eclipse.core.runtime"
+		and
+		"org.eclipse.ui". Based on these
+		components an Eclipse RCP application must define the following
+		elements:
+	</para>
+	<para>
+		<itemizedlist>
+			<listitem>
+				<para>Main program - A RCP main application class implements
+					the
+					interface "IApplication". This class can be
+					viewed as the
+					equivalent
+					to the main method for standard Java
+					application. Eclipse
+					expects
+					that the application
+					class
+					is defined
+					via the extension point
+					"org.eclipse.core.runtime.application".
+				</para>
+			</listitem>
+			<listitem>
+				<para>A Perspective - defines the layout of your application. Must
+					be declared via the extension point
+					"org.eclipse.ui.perspective".
+				</para>
+			</listitem>
+			<listitem>
+				<para>Workbench Advisor- invisible technical component
+					which
+					controls
+					the appearance of the application (menus, toolbars,
+					perspectives,
+					etc)
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		The Eclipse application is the equivalent of the Java
+		<code>main()</code>
+		method. Applications are defined via the extension point
+		<code>org.eclipse.core.runtime.applications</code>
+		and must extend
+		<code>IApplication</code>
+		.
+	</para>
+</section>

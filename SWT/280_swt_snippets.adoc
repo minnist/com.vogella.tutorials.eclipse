@@ -1,0 +1,45 @@
+<section id="swtsniptters">
+	<title>SWT snippets and examples</title>
+	<indexterm>
+		<primary>SWT snippets</primary>
+	</indexterm>
+	<indexterm>
+		<primary>SWT Examples</primary>
+	</indexterm>
+	
+		The
+		<wordasword>SWT Snippets</wordasword>
+		are examples for
+		stand-alone
+		SWT
+		applications using different kinds of
+		SWT widgets.
+		The SWT snippet site
+		is located at the following URL:
+		http://www.eclipse.org/swt/snippets/.
+	
+	
+		You can copy these snippets and paste them directly into a Java
+		package inside of the Eclipse IDE.
+		Eclipse automatically creates the
+		Java class
+		based on the content of the clipboard for
+		you.
+	
+	
+		If you do this on a project which has
+		SWT
+		already available, the
+		snippet can be started immediately.
+	
+	
+		The
+		<ulink url="http://www.eclipse.org/swt/examples.php">SWT Examples</ulink>
+		page
+		provides useful programs that are written in
+		SWT. These are
+		typically much larger and more comprehensive than the SWT
+		Snippets.
+	
+</section>
+

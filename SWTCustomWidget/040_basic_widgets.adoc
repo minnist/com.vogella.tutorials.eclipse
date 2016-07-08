@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section>
+	<title>Custom basic widgets
+	Sometimes you have special requirements for a custom widget, which cannot be delivered by
+		an existing widget or a compound one, so that you must draw it yourself. As noted above we
+		use `Canvas` for self drawn widgets, which do not have children.
+	It is already planed to offer a tutorial for the usage of the SWT graphics context, but
+		until such a tutorial will be available you can have a look at this <ulink
+			url="https://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html">SWT
+			Graphics Context</ulink> or simply do the following exercises, which will also contain
+		custom drawings with the SWT graphics context.
+	<section>
+		<title>Add a PaintListener and use redraw
+		Use the `addPaintListner` method in order to draw on a `Canvas`
+			or `Composite` and use the`redraw` method instead of directly
+			calling your internal paint methods, so that the framework may queue all redraw requests
+			and do them all at once.
+		The result and also how to use the `PaintListenerCanvas` sample below is
+			shown in the screenshot:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/PaintListenerCanvas.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>`PaintListenerCanvas` sample</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/PaintListenerCanvas.java"/>
+				</programlisting>
+		
+	</section>
+	<section>
+		<title>SWT events and listener
+		In most cases the user will also interact with your custom widget. Therefore it must
+			fire events like other widgets also do, i.e. a Button, which fires a
+				`widgetSelected` event to it's attached
+			`SelectionListener`.
+		You can invent new events and listeners in special cases. But in most of the cases it
+			is sufficient to reuse existing SWT events and listeners. Imagine a custom drawn button,
+			which obviously should reuse a default `SelectionListener`.
+		In case you reuse such an existing SWT event, you should either support TypedListener
+			and also use SWT's low level `Listener` API, which can be applied to every
+			widget by using the `addListener(int, Listener)`
+			method.<!--Add sample code here-->
+		For custom drawn widgets you likely want to add custom event listeners, which suit to
+			the widget's special purposes.
+		Say we got a custom Gameboy widget, where we want to be able to listen to the clicks
+			on the Gameboy's buttons.
+		The first thing to do is to define a custom event, which is derived from
+				`java.util.EventObject`.
+		
+			<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/GameboySelectionEvent.java"/>
+				</programlisting>
+		
+		With this event implementation we provide the event information, which button has been
+			selected.
+		Normally you just define a getter for specific event information and just pass the
+			values to the constructor of the custom event.
+		The next thing to do is to provide a listener interface to which the event is passed
+			in case a certain event occurs.
+		
+			<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/GameboySelectionListener.java"/>
+				</programlisting>
+		
+		The last thing to do is simply offering an API to add and remove your custom listener
+			and to fire your custom events, which will be passed to the listener.
+	</section>
+	<section>
+		<title>Positions in custom drawings
+		In custom drawings the positions of the elements inside it should be stored. So the
+			positions of certain elements inside the custom widget can be found after they are
+			drawn.
+		This is especially important, if elements of the drawing should trigger certain
+			events.
+		Now that we know how to draw a custom widget with a `PaintListener` and
+			defined our listener interfaces and events, we need to figure out when those events
+			should be fired.
+		Therefore we need to track the positions of our custom drawings on the
+			widget.<!--Add gameboy widget with vogella cheat button here and explain it.-->
+		In order to do such a tracking we implement a `HoverCheck` class, which
+			will enable us to recognize whenever a certain part of a widget is hovered.
+		
+			<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/HoverCheck.java"/>
+				</programlisting>
+		
+		Inside this class we pass the widget itself, the x, y coordinates and the size of the
+			part, where hovering should be checked. With this information we are able to create a
+				`Rectangle`, which represents the position and size of this special part
+			(i.e. a Gameboy button) and can use the Rectangle's `contains` method in
+			order to check, if the current mouse position is within this Rectangle or not.
+		In the GameboyWidget itself, we can use this HoverCheck class to figure out, if a
+			certain button on the Gameboy was selected.
+		
+			<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/GameboyWidget.java"/>
+				</programlisting>
+		
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gameboy-widget.png"/>
+				</imageobject>
+			</mediaobject>
+		
+	</section>
+</section>

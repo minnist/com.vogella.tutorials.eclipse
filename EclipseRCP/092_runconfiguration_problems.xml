@@ -1,0 +1,309 @@
+<section id="runconfiguration_problems" role="wrapper">
+	<title>Common launch problems</title>
+
+	<section id="runconfiguration_problems2">
+		<title>Checklist for common launch problems</title>
+		<para>
+			Errors in the run configurations of Eclipse RCP application
+			are
+			frequently the source of problems. This chapter describes common
+			problems related to the start of
+			RCP applications. It can be used as
+			a
+			reference in case you face
+			issues during the startup of your
+			application.
+			The following table lists potential problems and
+			solutions.
+
+			<table frame='all'>
+				<title>Run configuration problems</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Problem</entry>
+							<entry>Investigate</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								"Could not
+								resolve module" message during start up.
+							</entry>
+							<entry>
+								<para>
+									Check that all required plug-ins are included in your
+									product
+									configuration. Make sure that your product defines
+									dependencies
+									to
+									all required plug-ins or features. See
+									<xref linkend="runconfiguration_mainproblem" />
+								</para>
+								<para>
+									Bundles may also require a
+									certain version of the Java virtual
+									machine, e.g., a bundle may
+									require Java 1.6 and will therefore
+									not load in a Java 1.5 VM. Check the
+									<filename>MANIFEST.MF</filename>
+									file on the
+									<guilabel>Overview</guilabel>
+									tab in the
+									<guilabel>Execution Environments</guilabel>
+									section which Java version is required.
+								</para>
+							</entry>
+						</row>
+						<row>
+							<entry>
+								""java.lang.RuntimeException: No application id
+								has
+								been
+								found."
+								message during start up.
+							</entry>
+							<entry>
+								<para>
+									See "Could not
+									resolve module" message during start up
+									error. In most cases also triggered by a missing plug-in
+									dependency.
+								</para>
+							</entry>
+						</row>
+
+
+						<row>
+							<entry>Strange behavior but no error message.</entry>
+							<entry>
+								Check if your run configuration includes the
+								<parameter>-consoleLog</parameter>
+								parameter.
+								This
+								option allows you to see errors from Eclipse
+								based
+								applications
+								in the
+								<guilabel>Console</guilabel>
+								view of the Eclipse IDE.
+							</entry>
+						</row>
+						<row>
+							<entry>Runtime configuration is frequently missing required
+								plug-ins
+							</entry>
+							<entry>Make sure that your product or your feature(s) includes
+								all required
+								dependencies.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								A change in the product
+								<guilabel>Dependencies</guilabel>
+								tab is not
+								reflected in the run configuration (e.g., a new
+								plug-in
+								is added
+								but is not included in the run configuration)
+							</entry>
+							<entry>
+								A product updates an existing run configuration if you
+								start the product directly from the product definition file. If
+								you select the run configuration directly, it will not be
+								updated.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								Application model changes are not
+								reflected in the Eclipse
+								4
+								application.
+							</entry>
+							<entry>
+								<para>
+									Eclipse 4 persists user changes in the application in a
+									delta file which is restored at startup.
+									During
+									development this
+									might lead to situations where model
+									changes
+									are
+									not correctly
+									applied to the runtime model, e.g., you
+									define a
+									new
+									menu entry
+									and
+									this entry is not displayed in your
+									application.
+								</para>
+								<para>
+									Either set the
+									<guilabel>Clear</guilabel>
+									flag on the
+									<guilabel>Main</guilabel>
+									tab in your run configuration or add the
+									<parameter>clearPersistedState</parameter>
+									parameter for your product configuration file or run
+									configuration.
+								</para>
+							</entry>
+						</row>
+						<row>
+							<entry>
+								Services, e.g., key bindings or the selection service, are
+								not working in an Eclipse 4
+								application.
+							</entry>
+							<entry>
+								In Eclipse releases before 4.3 every
+								part
+								needed to implement a
+								<code>@Focus</code>
+								method which places the focus on an SWT control. This error does
+								not occur anymore with Eclipse 4.3 or a higher release.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								Menu entries are disabled in the Eclipse application.
+							</entry>
+							<entry>
+								<para>
+									Ensure that the
+									<code>HandlerProcessingAddon</code>
+									class in the package
+									<code>org.eclipse.e4.ui.internal.workbench.addons</code>
+									is registered as model add-on. The bundle
+									symbolic
+									name is
+									<code>org.eclipse.e4.ui.workbench</code>
+									.
+								</para>
+							</entry>
+						</row>
+						<row>
+							<entry>
+								Application "org.eclipse.ant.core.antRunner" could not be
+								found in the registry or Application could not be found in
+								the
+								registry.
+							</entry>
+							<entry>
+								Ensure that you have pressed the
+								<guilabel>New...</guilabel>
+								button in the product configuration file and selected the
+								<code>E4Application</code>
+								as application to start. You can check the current setting in
+								your
+								<filename>plugin.xml</filename>
+								file on the
+								<guilabel>Extensions</guilabel>
+								tab and in the details of the
+								<guilabel>org.eclipse.core.runtime.products</guilabel>
+								extension.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+
+	<section id="runconfiguration_mainproblem">
+		<title>Finding missing plug-in dependencies during a product launch
+		</title>
+		<indexterm>
+			<primary>Finding missing plug-in dependencies during a product launch
+			</primary>
+			<secondary>
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Launch configuration</primary>
+			<secondary>Problems</secondary>
+		</indexterm>
+		<para>
+			The most common problem is that some required plug-ins are
+			missing in
+			your product. If you are using a feature based product
+			configuration,
+			you need to
+			ensure that all plug-ins which are referred
+			to in the
+			MANIFEST.MF
+			file are also included in your features. This error is
+			reported in the
+			<guilabel>Console</guilabel>
+			view, typically it is one of the first error messages and you need to
+			scroll up to see it.
+		</para>
+		<para>The following listing shows how this message typically looks
+			like (formating changed to make the text fit better).
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/launchproblems/dependency.txt" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			After identifying the missing plug-ins ensure that you add them
+			to your product (if the product is plug-in based) or to your features
+			(if the product is feature based).
+		</para>
+
+		<tip>
+			<para>
+				Eclipse can check for missing dependencies automatically before you
+				run the Launch configuration.
+				On
+				the
+				<guilabel>Plug-ins</guilabel>
+				Tab press the
+				<guilabel>Validate Plug-ins</guilabel>
+				button or select the
+				<guilabel>Validate plug-ins automatically prior to launching
+				</guilabel>
+				option.
+				This
+				will
+				check if you have all the required plug-ins
+				in your
+				run
+				configuration.
+			</para>
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scale="35" fileref="images/launchconfiguration30.png" />
+					</imageobject>
+					<textobject>
+						<phrase>Validating the runtime configuration</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</tip>
+
+		<para>
+			Avoid fixing problems with dependencies in the run configuration
+			because
+			the run configuration is created and updated based on the
+			product
+			configuration file. So always ensure that the product file is
+			correctly configured instead of changing the derived information. The
+			product configuration is used for the
+			export of your product, hence
+			an error in the product dependencies results in an
+			exported application which cannot be started.
+		</para>
+	</section>
+</section>

@@ -1,0 +1,3 @@
+
+// Set the timeout to 6 seconds
+SWTBotPreferences.TIMEOUT = 6000;

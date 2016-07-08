@@ -1,0 +1,60 @@
+<section id="dialogs_swt">
+	<title>SWT dialogs</title>
+	<indexterm>
+		<primary>Dialog</primary>
+		<secondary>SWT</secondary>
+	</indexterm>
+	<para>
+		SWT provides an API to use the native dialogs from the OS
+		platform.
+		The
+		default SWT
+		dialogs are listed below.
+
+		<itemizedlist>
+			<listitem>
+				<para>
+					<code>ColorDialog</code>
+					- for selecting a color
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<code>DirectoryDialog</code>
+					- for selecting a directory
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<code>FileDialog</code>
+					- for selecting a file
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<code>FontDialog</code>
+					- for selecting a font
+				</para>
+			</listitem>
+			<listitem>
+				<para>
+					<code>MessageBox</code>
+					- for opening a message dialog
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		The following code demonstrates the usage of the
+		<code>MessageBox</code>
+		class to open a message
+		dialog.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/swt/message.open" />
+		</programlisting>
+	</para>
+</section>

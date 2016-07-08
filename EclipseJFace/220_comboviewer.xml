@@ -1,0 +1,63 @@
+<section id="jfaceviewer_combo">
+	<title>JFace ComboViewer</title>
+
+	<indexterm>
+		<primary>ComboViewer (JFace)</primary>
+	</indexterm>
+
+	<indexterm>
+		<primary>JFace</primary>
+		<secondary>ComboViewer</secondary>
+	</indexterm>
+
+	<para>
+		A simple example for a JFace Viewer framework is the
+		<code>ComboViewer</code>
+		class. Assume the following data model.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/viewer/Person.java" />
+		</programlisting>
+	</para>
+	<para>
+		The following example snippet shows you how you could use this given
+		data model in a
+		<code>ComboViewer</code>
+		.
+	</para>
+
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/viewer/MyView.java" />
+		</programlisting>
+	</para>
+	<para>
+		You can register a listener which is notified whenever the
+		selection of
+		the
+		viewer changes via the following code.
+	</para>
+
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/viewer/SelectionListener.java" />
+		</programlisting>
+	</para>
+
+	<para>You can get and set selections using Java objects based on your
+		domain model.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/viewer/setget.java" />
+		</programlisting>
+	</para>
+
+</section> 

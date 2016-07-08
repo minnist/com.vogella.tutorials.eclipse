@@ -1,0 +1,9 @@
+
+IEclipseContext context = EclipseContextFactory.create();
+
+// add your Java objects to the context
+context.set(MyDataObject.class.getName(), data);
+context.set(MoreStuff.class, moreData);
+
+// dispose the context if you are done with it
+context.dispose();

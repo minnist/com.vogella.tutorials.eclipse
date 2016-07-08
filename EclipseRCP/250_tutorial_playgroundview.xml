@@ -1,0 +1,73 @@
+<section id="tutorial_maps" role="wrapper">
+	<title>Exercise: Using the SWT browser widget</title>
+	<section id="tutorial_mapsimplementation">
+		<title>Implementation</title>
+		<para>
+			In this exercise you will display Google Maps in an SWT
+			<code>Browser</code>
+			widget.
+		</para>
+		<note>
+			<para>
+				This exercise does not always work on a
+				Linux system because on
+				certain Linux versions the
+				<code>Browser</code>
+				widget does not work. See the Eclipse SWT FAQ answered at
+				<ulink url="http://www.eclipse.org/swt/faq.php#browserwebkitgtk">
+					How do I use the WebKit renderer on Linux-GTK</ulink>
+				for details.
+			</para>
+		</note>
+		<para>
+			Change the
+			<code>PlaygroundPart</code>
+			class so the
+			part
+			looks like the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/swtmap10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>SWT Browser Widget example with Google Maps</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		
+		<note>
+			<para>This example might not work, in case Google changes its API.
+			</para>
+		</note>
+
+		<para>If you enter a text in the text field and press the button, the
+			map should center based on the input in the text field. This
+			input
+			should be interpreted as city.
+		</para>
+
+	</section>
+
+	<section id="tutorial_mapsresult">
+		<title>Solution</title>
+
+		<para>
+			Your
+			<code>PlaygroundPart</code>
+			class
+			should look similar to the following code.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/playground/PlaygroundPart.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+</section>

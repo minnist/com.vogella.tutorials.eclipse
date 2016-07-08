@@ -1,0 +1,32 @@
+<section id="swt_datetime">
+	<title>DateTime widget</title>
+	
+		SWT provides
+		<code>DateTime</code>
+		widgets. Create the following class.
+	
+
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/datetime/DateTimeExample.java" />
+		</programlisting>
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/swtdatetime10.png" scale="60" />
+			</imageobject>
+			<textobject>
+				<phrase>Date Time Widget</phrase>
+			</textobject>
+		</mediaobject>
+	
+	
+		Please note that the SWT
+		<code>DateTime</code>
+		widget requires a selection, i.e. you cannot use this widget without a
+		date selection.
+	
+</section>

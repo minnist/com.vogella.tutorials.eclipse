@@ -1,0 +1,25 @@
+<section id="ssh_key_generationviaeclipse">
+	<title>Eclipse support for SSH based authentication</title>
+	<para>
+		The Eclipse IDE allows you to create an SSH key pair for SSH based
+		communication via
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Preferences</guisubmenu>
+			<guisubmenu>General</guisubmenu>
+			<guisubmenu>Network Connection</guisubmenu>
+			<guisubmenu>SSH2</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/eclipseide_sshgen.png" scale="30" />
+			</imageobject>
+			<textobject>
+				<phrase>Generating a SSH key via the Eclipse IDE</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

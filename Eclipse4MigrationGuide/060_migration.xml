@@ -1,0 +1,98 @@
+<section id="migration" role="wrapper">
+	<title>Migration to Eclipse 4</title>
+	<section id="migration1">
+		<title>Migration to Eclipse 4</title>
+		<para>
+			If you want to migrate your Eclipse 3.x RCP application to the
+			Eclipse
+			4 programming model, you can't directly reuse existing
+			<filename>plugin.xml</filename>
+			based user interface components, e.g.
+			views
+			or
+			editors
+			based on the
+			definition in
+			<filename>plugin.xml</filename>
+			.
+		</para>
+		<para>
+			Migrating such components would involve:
+			<itemizedlist>
+				<listitem>
+					<para>Converting existing user interface contributions via
+						extension
+						points to the application model.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Removing the usage of Singleton objects from the Eclipse platform,
+						e.g.
+						<code>Platform</code>
+						or
+						<code>PlatformUI</code>
+						and use
+						the dependency injection
+						programming model.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+
+	<section id="usageof3xcomponentsin4x">
+		<title>Using 3.x components in Eclipse 4 applications</title>
+		<indexterm>
+			<primary>Eclipse 3.x and 4.x plug-ins</primary>
+		</indexterm>
+
+		<para>
+			Mixing Eclipse 4.x and Eclipse 3.x. components is currently not
+			officially supported. See
+			<xref linkend="mixedmode1" />
+			for more information.
+		</para>
+	</section>
+	<section id="migration2">
+		<title>Reuse of platform components</title>
+		<para> Most Eclipse IDE components are still based on the Eclipse 3.x
+			API.
+			The Eclipse platform plans to migrate more and more existing
+			components
+			to the Eclipse 4.x API over time. For customers this means
+			that certain components which could be reused in Eclipse 3.x RCP
+			application are not available by default.
+		</para>
+		<para>
+			Currently most
+			components, for example, the IDE perspective switcher,
+			the
+			view switcher,
+			the
+			<guilabel>Progress</guilabel>
+			view, the new project wizard are based on the Eclipse 3.x API and
+			therefore cannot be used without modifications in an Eclipse 4 RCP
+			application.
+		</para>
+	</section>
+	<section id="usageof3xcomponentsin4xalternatives">
+		<title>Replacements for 3.x components for Eclipse 4.x applications
+		</title>
+		<para>
+			The
+			<ulink url="http://www.vogella.com/company/index.html">vogella GmbH</ulink>
+			provides an Open Source project for an e4 based
+			perspective switcher.
+			See the following URL for details:
+			<ulink
+				url="https://github.com/vogellacompany/e4dashboard-perspective-switcher"></ulink>
+		</para>
+		<para>
+			The Eclipse platform team provides also an Eclipse 4 based progress
+			view. See the following URL for details:
+			<ulink url="https://wiki.eclipse.org/Eclipse4/ProgressView"></ulink>
+		</para>
+
+	</section>
+</section>

@@ -1,0 +1,11 @@
+==  Custom Widgets in SWT
+
+In general a custom widget is an UI element, which offers a certain functionality in the UI, which none of the standard widgets can deliver.
+In some cases the standard SWT widgets, which are delivered by the Eclipse SDK are not sufficient for a certain use case.
+
+The most famous source to find custom widgets is the Eclipse project called Nebula (https://eclipse.org/nebula).
+Here you find several useful custom SWT widgets. 
+Another resource of several custom SWT widgets is the Opal project (https://github.com/lcaron/opal).
+Also the Eclipse SDK itself delivers some custom SWT widgets in the `org.eclipse.swt.custom` package, like `CLabel`, `CCombo`, `StyledText` and others.
+
+Custom SWT widgets are usually created by extending a `Composite`, a `Canvas` or one of their subclasses, because those implementations are portable to other platforms and therefore a lot easier to maintain.

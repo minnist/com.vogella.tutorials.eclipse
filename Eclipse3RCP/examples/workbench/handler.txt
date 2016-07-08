@@ -1,0 +1,2 @@
+
+IWorkbenchPage page = HandlerUtil.getActiveWorkbenchWindow(event).getActivePage();

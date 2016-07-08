@@ -1,0 +1,287 @@
+<section id="eclipsesuiide" role="wrapper">
+	<title>The Eclipse user interface</title>
+
+	<section id="eclipsejavaperspective_toolbar">
+		<title>Toolbar</title>
+		<para>The application toolbar contains actions which you typically
+			perform, e.g., creating Java resources or running
+			Java projects. It
+			also allows you to switch between perspectives.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/javaperspectivetoolbar10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Java Perspective toolbar</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="perspective_ide">
+		<title>Perspectives in Eclipse</title>
+		<para>
+			Eclipse provides different
+			<wordasword>perspectives</wordasword>
+			for different tasks.
+			The available
+			<wordasword>perspectives</wordasword>
+			depend on your installation.
+			For Java development you
+			usually use the
+			<guilabel>Java Perspective</guilabel>
+			, but Eclipse has much more predefined
+			<wordasword>perspectives</wordasword>
+			, e.g., the
+			<guilabel>Debug</guilabel>
+			<wordasword>perspective</wordasword>
+			.
+		</para>
+		<para>
+			Eclipse allows you to
+			switch to another
+			<wordasword>perspective</wordasword>
+			via the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guimenu>Perspective</guimenu>
+				<guisubmenu>Open Perspective</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+		<para>
+			Open
+			editors
+			are typically shared between
+			perspectives, i.e., if you have
+			an
+			editor
+			open in the
+			<guilabel>Java</guilabel>
+			perspective
+			for a certain class and switch to the
+			<guilabel>Debug</guilabel>
+			perspective, this
+			<wordasword>editor</wordasword>
+			stays open.
+		</para>
+		<para>
+
+			You can switch
+			<wordasword>Perspectives</wordasword>
+			via the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guimenu>Perspective</guimenu>
+				<guisubmenu>Open Perspective</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+		<para>
+			The main perspectives used for Java development are the
+			<guilabel>Java</guilabel>
+			perspective
+			and the
+			<guilabel>Debug</guilabel>
+			perspective
+			.
+			The Java perspective can be opened via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guimenu>Perspective</guimenu>
+				<guisubmenu>Open Perspective</guisubmenu>
+				<guisubmenu>Java</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseide_perspective10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Switching perspectives in the Eclipse IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			On the left hand side, this perspective shows the
+			<guilabel>Package Explorer</guilabel>
+			view,
+			which allows you to browse your
+			<wordasword>projects</wordasword>
+			and to select the
+			components you want to open in an editor via a
+			double-click.
+		</para>
+		<para>
+			For example, to open
+			a Java source file, open the tree under
+			<code>src</code>
+			,
+			select the corresponding
+			<filename>.java</filename>
+			file and double-click it. This will open the file in the
+			default Java
+			<wordasword>editor</wordasword>
+			.
+		</para>
+		<para>
+			The following picture shows the default Java
+			perspective. The
+			<guilabel>Package Explorer</guilabel>
+			view
+			is on the left. In the middle
+			you
+			see the
+			open
+			editors. Several
+			editors
+			are stacked in the same container and you can
+			switch between them by
+			clicking on the corresponding tab.
+			Via drag and
+			drop you can move an
+			editor to a new position in the Eclipse IDE.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse_java.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Eclipse Java Perspective</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			To the right and below the editor area you find more
+			<wordasword>views</wordasword>
+			which were considered useful by the developer of the
+			perspective. For
+			example, the
+			<guilabel>Javadoc</guilabel>
+			view
+			shows the Javadoc of the selected class or method.
+		</para>
+	</section>
+
+	<section id="perspective_resetcustomize">
+		<title>Resetting and customizing a perspective</title>
+		<para>
+			A common problem is that you changed the arrangement of views and
+			editors in your
+			<wordasword>perspective</wordasword>
+			and you want to restore Eclipse to its original state. For example,
+			you might have closed a
+			view
+			.
+			You can reset a
+			<wordasword>perspective</wordasword>
+			to its original
+			state
+			via the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Perspective</guisubmenu>
+				<guisubmenu>Reset Perspective...</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+		<para>
+			You can change the layout and content within a
+			perspective
+			by
+			opening or closing
+			parts
+			and by re-arranging them.
+		</para>
+		<para>
+			To open a new
+			part
+			in your current
+			perspective,
+			use the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+			</menuchoice>
+			menu entry. The following
+			<guilabel>Show View</guilabel>
+			dialog allows you to search for certain
+			<guilabel>parts</guilabel>
+			.
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ide_showview10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Show View dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you want to reset your current
+			perspective
+			to its default,
+			use the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Reset Perspective</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+
+		<para>
+			You can save the currently selected
+			perspective
+			via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guimenu>Perspective</guimenu>
+				<guisubmenu>Save Perspective As...</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseide_saveperspective10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Save your perspective configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guimenu>Perspective</guimenu>
+				<guisubmenu>Customize Perspective...</guisubmenu>
+			</menuchoice>
+			menu entry allows you to adjust the selected
+			perspective
+			. For example,
+			you can
+			hide or show toolbar and menu entries.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/perspective_customize10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Customize Perspective</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+</section>

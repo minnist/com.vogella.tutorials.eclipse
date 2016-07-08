@@ -18,12 +18,9 @@ This can also be used to define a fixed styling.
 WARNING: You need to set `cssTheme` otherwise the theming services is available at runtime.
 	
 The switching of themes is demonstrated in the following handler code.
-	
-	
-<programlisting>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-parse="text" href="../examples/css/ThemeSwitchHandler.java" />
-</programlisting>
-	
 
+[source,java]
+----
+include::res/css/ThemeSwitchHandler.java[]
+----
 

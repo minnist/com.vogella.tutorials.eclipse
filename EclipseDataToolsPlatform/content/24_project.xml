@@ -1,0 +1,26 @@
+<section id="project">
+	<title>Project</title>
+	<para>
+		Create a new General Project "de.vogella.dtp.example" via File->
+		New -> Other -> General -> Project. This project will store the SQL
+		files.
+	</para>
+	<para>
+		Add a folder
+		"lib" to your project.
+		Copy the file derby.jar from
+		your Derby download
+		into this folder.
+	</para>
+	<para> The result should look like the following.</para>
+
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/project10.gif" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

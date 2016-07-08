@@ -1,0 +1,60 @@
+<section id="whymigrate" role="wrapper">
+	<title>Running and migrating an Eclipse 3.x RCP application</title>
+	<section id="whymigrate_support">
+		<title>Using the Eclipse 3.x API on top of an 4.x runtime</title>
+		<indexterm>
+			<primary>Eclipse 3.x API support</primary>
+		</indexterm>
+		<para>
+			It is possible to run Eclipse 3.x API based plug-ins and RCP applications
+			on top of the Eclipse 4.x platform. The
+			Eclipse 3.x API has been reworked to use the 4.x underneath. This is sometimes called the
+			<wordasword>compatibility mode</wordasword>
+			.
+			See
+			<xref linkend="compatibiliymode_overview" />
+			for more information about it.
+		</para>
+		<para>The Eclipse platform team plans to
+			support this
+			layer for an unlimited period of time.
+			Therefore, if you have an
+			existing Eclipse 3.x application, you do
+			not
+			have to migrate
+			to the
+			Eclipse 4.x API.
+		</para>
+
+	</section>
+	<section id="whymigrate_features">
+		<title>Technical reasons for migrating to the 4.x API</title>
+		<indexterm>
+			<primary>Migration of Eclipse 3.x RCP applications</primary>
+		</indexterm>
+		<para>The Eclipse 3.x API is
+			effectively
+			frozen, therefore it is recommended to migrate to the latest 4.x API to participate and
+			benefit from further enhancements in the Eclipse platform.
+		</para>
+		<para>Another important technical reason to migrate to the Eclipse 4.x API
+			is
+			that it
+			provides a consistent and well-designed
+			API. The concept of
+			the
+			application model and dependency injection
+			makes your application
+			code
+			concise and flexible.
+			Services and the renderer toolkit can be
+			replaced, which adds more flexibility to your implementation.
+		</para>
+		<para>The event service and the extensible Eclipse context hierarchy
+			provide very powerful ways to communicate within
+			your application.
+		</para>
+		
+	</section>
+
+</section>

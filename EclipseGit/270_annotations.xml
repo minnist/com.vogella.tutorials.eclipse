@@ -1,0 +1,53 @@
+<section id="team_annotations">
+	<title>Blame annotations</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>blame
+		</secondary>
+	</indexterm>
+	<para>
+		The Git tooling in Eclipse allows displaying annotations to see which
+		line
+		was last changed by
+		whom
+		and which commit. To enable this,
+		right-click on your file and
+		select
+		<menuchoice>
+			<guimenu>Team</guimenu>
+			<guisubmenu>Show Annotations</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>Afterwards you can place the mouse on the left side of the editor
+		and a popup dialog
+		shows the commit information and the change applied
+		by the shown commit.
+	</para>
+	
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/blameannotations10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Blame annotations in EGit</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<tip>
+		<para>
+			To ignore whitespace changes in the Git blame annotations in Eclipse, select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Team</guisubmenu>
+				<guisubmenu>Git</guisubmenu>
+			</menuchoice>
+			and select
+			<guilabel>Ignore whitespace changes</guilabel>
+			.
+		</para>
+	</tip>
+
+</section>

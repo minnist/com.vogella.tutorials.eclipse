@@ -1,0 +1,163 @@
+<section id="compatibiliylayer" role="wrapper">
+	<title>Running Eclipse 3.x plug-ins on top of Eclipse 4</title>
+	<section id="compatibiliymode_overview">
+		<title>Using the compatibility mode</title>
+		<indexterm>
+			<primary>Compatibility mode</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Compatibility layer</primary>
+		</indexterm>
+
+		<para>
+			The Eclipse platform team has re-implemented the existing 3.x API on top of the 4.x API. This re-implementation
+			is
+			sometimes called the
+			<wordasword>compatibility
+				mode
+			</wordasword>
+			.
+			Therefore, you can run
+			an Eclipse 3.x RCP application nearly
+			unmodified on
+			the
+			Eclipse 4 runtime. In
+			this case your
+			application code calls the 3.x API. Call to the 3.x API use internally the 4.x
+			API. Relevant extensions
+			are converted
+			into application model elements at runtime.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/compatibilitymode10.png" scale="25" />
+				</imageobject>
+				<textobject>
+					<phrase>Compatibility mode of 3.x API and 4.x API</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			This approach requires that your Eclipse 3.x
+			application is based on released 3.x API. If it uses 3.x
+			internals,
+			you might have to adjust your code as this code might have been
+			changed.
+		</para>
+		<para>
+			If a 3.x RCP application runs on top of an Eclipse 4.x runtime, the
+			platform translates the information contained
+			in the
+			plugin.xml based extension into model elements. For example the extension point
+			information for
+			views is read
+			and
+			part descriptors
+			are
+			generated
+			based on this
+			information.
+		</para>
+
+		<para>In this scenario you can start to convert certain parts of your
+			application
+			into Eclipse 4.x API based parts.
+			Afterwards
+			you have migrated
+			sufficient parts of your application you should switch over
+			completely.
+		</para>
+	</section>
+	<section id="compatibiliylayer_e4runtimeterminology">
+		<title>The e4 API and e4 runtime terminology</title>
+		<indexterm>
+			<primary>e4 API
+			</primary>
+		</indexterm>
+		<indexterm>
+			<primary>e4 runtime
+			</primary>
+		</indexterm>
+		<para>
+			This $book uses the term
+			<wordasword>e4 API</wordasword>
+			as a synonym for
+			<wordasword>Eclipse 4.x API</wordasword>
+			and the term
+			<wordasword>e4 runtime</wordasword>
+			as a synonym
+			for the
+			<wordasword>Eclipse 4.x runtime</wordasword>
+			term.
+		</para>
+	</section>
+	<section id="compatibiliylayer_features">
+		<title>Running 3.x RCP applications on top of an e4 runtime</title>
+		<para>
+			To migrate your Eclipse RCP application to e4 API you have
+			to
+			exchange the target platform to an Eclipse 4.x
+			version.
+		</para>
+		<para>
+			The following features includes the necessary Eclipse platform plug-ins required for this.
+
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.rcp</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.emf.ecore</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.emf.common</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			Add these features (or the included plug-ins) to your product
+			configuration file. Afterwards the Eclipse 3.x API
+			based RCP
+			application starts on top of an e4 runtime without requiring any change in
+			your code.
+		</para>
+		<note>
+			<para>
+				This assumes that your Eclipse 3.x application does not use any
+				3.x
+				internal API. Eclipse marks internal packages with
+				the
+				<parameter>x-internal</parameter>
+				flag in the
+				<filename>MANIFEST.MF</filename>
+				file.
+			</para>
+		</note>
+
+	</section>
+	<section id="compatibiliylayer_value">
+		<title>Benefit of adjusting the runtime to Eclipse 4.x</title>
+		<para>Running your Eclipse 3.x RCP application on top of an e4 runtime allows you to start migrating
+			components
+			of
+			your
+			application to the e4 API.
+		</para>
+		<para>It also ensures
+			that you do not use 3.x internal API and that you
+			benefit from the latest
+			Eclipse platform
+			developments, e.g., security updates.
+		</para>
+	</section>
+
+</section>

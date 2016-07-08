@@ -1,11 +1,6 @@
 == Fixed styling in Eclipse
-<indexterm>
-<primary>CSS</primary>
-<secondary>Styling of Eclipse applications</secondary>
-</indexterm>
-<indexterm>
-<primary>applicationCSS</primary>
-</indexterm>
+(((CSS,Styling of Eclipse applications))))
+(((applicationCSS)))
 
 You can specify a fixed styling of your application. 
 This is done via a property for the `org.eclipse.core.runtime.products` extension point in the _plugin.xml_ file.
@@ -16,10 +11,10 @@ The URI follows the `platform:/plugin/BundleSymbolicName/path/file` convention.
 The following example demonstrates such a URI:
 
 
-<programlisting language="xml">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-parse="text" href="../examples/snippets/cssprop.txt" />
-</programlisting>
+[source,txt]
+----
+platform:/plugin/com.example.e4.rcp.todo/css/default.css
+----
 
 
 The screenshot shows an example of the _plugin.xml_ file with a defined  `applicationCSS` property.
@@ -28,9 +23,8 @@ image::applicationCSSproperty10.png[applicationCSS entered on the product extens
 
 The corresponding file is shown below. 
 
-
-<programlisting language="xml">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-parse="text" href="../examples/css/plugin.xml" />
-</programlisting>
+[source,txt]
+----
+include::res/css/plugin.xml[]
+----
 

@@ -1,0 +1,128 @@
+<section id="recipes_tags">
+	<title>Relevant tags and persisted state keys in the application model</title>
+	<para>The following table lists the most important tags
+		for model
+		elements of
+		Eclipse 4 applications.
+	</para>
+	<para>
+		Additional tags are defined in the
+		<code>IPresentationEngine</code>
+		interface. It is up to the renderer implementation and model add-ons to
+		interpret these tags. Renderer might also
+		define additional tags. You
+		also find more information about the available tags in the Eclipse 4
+		Wiki (see resources for
+		link).
+		<table frame='all'>
+			<title>Relevant tags of application model elements</title>
+			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="1*" />
+				<colspec colname='c3' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Tag</entry>
+						<entry>Model element</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>
+							<parameter>shellMaximized</parameter>
+						</entry>
+						<entry>
+							<wordasword>Window</wordasword>
+							or
+							<wordasword>Trimmed Window</wordasword>
+						</entry>
+						<entry>Window is maximized at start of the application.</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>shellMinimized</parameter>
+						</entry>
+						<entry>
+							<wordasword>Window</wordasword>
+							or
+							<wordasword>Trimmed Window</wordasword>
+						</entry>
+						<entry>Window is minimized at start of the application.</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>NoAutoCollapse</parameter>
+						</entry>
+						<entry>
+							<wordasword>PartStack</wordasword>
+						</entry>
+						<entry>
+							Can be added to a
+							<wordasword>PartStack</wordasword>
+							container. With this flag the
+							<wordasword>PartStack</wordasword>
+							is not collapsed by the
+							<wordasword>MinMax</wordasword>
+							add-on
+							even if you remove all
+							parts from it.
+						</entry>
+					</row>
+					<para>
+						Another tag, which is used frequently, is the
+						<parameter>NoAutoCollapse</parameter>
+						tag which you can add to a
+					</para>
+					<row>
+						<entry>
+							<parameter>FORCE_TEXT</parameter>
+						</entry>
+						<entry>
+							<wordasword>ToolItem</wordasword>
+						</entry>
+						<entry>Enforces that text and icon are shown for a toolbar item.</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>NoMove</parameter>
+						</entry>
+						<entry>Part</entry>
+						<entry>
+							Prevents the user from moving the part. This tag is evaluated by the
+							<wordasword>DnDAddon</wordasword>
+							class which handles drag and drop by default in the Eclipse platform.
+						</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>styleOverride</parameter>
+						</entry>
+						<entry>
+							<wordasword>MWindow</wordasword>
+							or
+							<wordasword>MPartStack</wordasword>
+						</entry>
+						<entry>
+							Allows
+							to define the style bits of the user interface
+							control. For
+							example, to create an SWT shell which cannot be
+							resized,
+							you need to
+							supply the integer value for <![CDATA[SWT.SHELL_TRIM & (~SWT.RESIZE)]]>
+							, which is 1248 on the
+							<wordasword>MWindow</wordasword>
+							application element.
+							If, for example, your
+							<wordasword>MPartStack</wordasword>
+							should
+							render its tab below the
+							parts, use 1024.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+</section>

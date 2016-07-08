@@ -1,0 +1,132 @@
+<section id="source">
+	<title>Source code</title>
+
+	<section id="e4tech_application.xmi">
+		<title>Workbench XMI file</title>
+		<para>
+			The base workbench model for the Eclipse IDE is defined in the
+			"org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
+			In
+			the
+			<code>org.eclipse.platform</code>
+			plug-in you find the
+			<filename>LegacyIDE.e4xmi</filename>
+			file which defines the initial
+			window and some
+			<wordasword>model Add-ons</wordasword>
+			.
+		</para>
+		<para>
+			If Eclipse is started in the compatibility mode, this file is read
+			via
+			the
+			<code>E4Workbench</code>
+			class. This class is part of the
+			<code>org.eclipse.e4.workbench.ui.internal</code>
+			package.
+			<code>E4Workbench</code>
+			will then convert the relevant extension points into elements of the
+			application
+			model.
+		</para>
+	</section>
+	<section id="e4tech_application">
+		<title>Eclipse 4 application - E4Application</title>
+		<para>
+			The
+			<code>org.eclipse.e4.ui.workbench.swt.E4Application</code>
+			application is defined in the extension point
+			<code>org.eclipse.core.runtime.applications</code>
+			in the
+			<code>org.eclipse.e4.ui.workbench.swt</code>
+			plug-in.
+		</para>
+		<para>
+			It points to the
+			<code>org.eclipse.e4.ui.internal.workbench.swt.E4Application
+			</code>
+			class which implements the
+			<code>IApplication</code>
+			interface.
+		</para>
+		<para>
+			The
+			<code>E4Application</code>
+			class, reads the parameter passed to the application, evaluates the
+			model
+			and builds up the context. The
+			<code>loadApplicationModel(IApplicationContext appContext,
+				IEclipseContext eclipseContex)
+			</code>
+			method
+			will load the initial application. The
+			<code>createE4Workbench IApplicationContext
+				applicationContext,
+				Display display)
+			</code>
+			method will process the whole model.
+		</para>
+	</section>
+	<section id="e4tech_resourcehandler">
+		<title>Model Resource Handler</title>
+
+		<para>
+			The
+			<code>org.eclipse.e4.ui.internal.workbench.ResourceHandler</code>
+			class is responsible for loading and saving the model. The
+			<code>loadBaseModel()</code>
+			method will load the
+			<filename>Application.e4xmi</filename>
+			model.
+		</para>
+	</section>
+	<section id="e4tech_other">
+		<title>Other important classes</title>
+
+		<table frame='all'>
+			<title>Important Eclipse 4 classes</title>
+			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' />
+				<colspec colname='c2' />
+				<colspec colname='c3' />
+				<thead>
+					<row>
+						<entry>Class</entry>
+						<entry>Plugin</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>org.eclipse.e4.workbench.ui.internal.E4Workbench</entry>
+						<entry>e4 workbench implementation for the SDK.</entry>
+					</row>
+					<row>
+						<entry>org.eclipse.e4.core.services.internal.annotations.AnnotationsSupport
+						</entry>
+						<entry>Checks for annotations</entry>
+					</row>
+					<row>
+						<entry>org.eclipse.e4.workbench.ui.renderers.swt.WorkbenchRendererFactory
+						</entry>
+						<entry>SWT renderer factory, implements IRendererFactory</entry>
+					</row>
+					<row>
+						<entry>IPresentationEngine with the default implementation of
+							PartRenderingEngine
+						</entry>
+						<entry>Translates the model elements into UI components and
+							reflects all modification in the model in the UI. For example if
+							you change a label in the model this engine will update UI.
+						</entry>
+					</row>
+
+				</tbody>
+			</tgroup>
+		</table>
+
+	</section>
+
+
+
+</section>

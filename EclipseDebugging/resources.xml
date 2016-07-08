@@ -1,0 +1,21 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="links">
+		<title>Debugging Links</title>
+		<para>
+			<ulink url="http://www.amazon.com/dp/3943747042">Eclipse IDE book from Lars Vogel</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.eclipse.org/articles/Article-Debugger/how-to.html">
+				http://www.eclipse.org/articles/Article-Debugger/how-to.html</ulink>
+			How to develop your own debugger
+		</para>
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+
+
+
+
+</section>

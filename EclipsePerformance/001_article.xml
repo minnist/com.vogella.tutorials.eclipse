@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Performance analysis and tracing of Eclipse plug-ins and RCP applications - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>10.04.2016</pubdate>
+		<releaseinfo>
+			<para>Version 2.3</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Tracing Eclipse components</title>
+			<para>
+				This article describes how to trace and perform performance analysis on 
+				Eclipse plug-ins and RCP applications.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_interactiveuiperformance.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_tracing.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_performancestats.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_automatedtests.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_sleak.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_yourkit.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_javamissioncontrol.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="004_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipsePerformance"?>
+</article>

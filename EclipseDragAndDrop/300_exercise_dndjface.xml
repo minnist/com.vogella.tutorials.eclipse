@@ -1,0 +1,83 @@
+[[exercise_dnd]]
+== Exercise: Implement drag and drop
+
+=== Target of this exercise
+
+The following exercise demonstrates the usage of drag and drop for customer domain objects and SWT widgets.
+You will drag and drop between two JFace viewers (a table and a tree).
+			
+=== Create new project
+
+Create a new Eclipse RCP application called `com.vogella.dnd.jface` with two views.
+
+Create the following model class. 
+
+[source,java]
+----
+include::res/model/Todo.java[]
+----
+
+Create the following content providers (Singletons).
+
+[source,java]
+----
+include::res/model/ContentProvider.java[]
+----
+
+[source,java]
+----
+include::res/model/ContentProviderTree.java[]
+----
+
+Create the following label and content provider for your JFace viewers.
+		
+[source,java]
+----
+include::res/viewers/TableContentProvider.java[]
+----	
+
+[source,java]
+----
+include::res/viewers/TreeContentProvider.java[]
+----	
+
+[source,java]
+----
+include::res/viewers/TableLabelProvider.java[]
+----	
+
+[source,java]
+----
+include::res/viewers/TreeLabelProvider.java[]
+----
+			
+=== Drag and drop Listener
+
+Create the following drag and drop listener. 
+These are later assigned to your table and tree widgets.
+
+[source,java]
+----
+include::res/dnd/MyDragListener.java[]
+----	
+
+[source,java]
+----
+include::res/dnd/MyDropListener.java[]
+----	
+
+=== Adjusting your parts
+
+Adjust your views. 
+The first view shows a table and allows the user to drag an elements from it. 
+The second view accepts drops.
+
+[source,java]
+----
+include::res/views/TableView.java[]
+----
+
+[source,java]
+----
+include::res/views/TreeView.java[]
+----		

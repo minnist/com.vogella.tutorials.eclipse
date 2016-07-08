@@ -1,0 +1,29 @@
+<section id="wtp_war">
+	<title>Web Archive - How to create a war file from Eclipse</title>
+	<para>
+		´The following describes how to create a Web Archive (WAR) from
+		Eclipse.
+	</para>
+	<para>Right-click on the project and select <guibutton>Export</guibutton>.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/CreateWar10.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+
+	<para>Specify the target directory and press <guibutton>Finish</guibutton>.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/CreateWar20.gif" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		You can now import the WAR file to your production Tomcat system
+		and
+		test the web application.
+	</para>
+</section>

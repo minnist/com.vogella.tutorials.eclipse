@@ -1,0 +1,21 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<section id="resources_eclipsecommands">
+		<title>Eclipse Resources</title>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/SWT/article.html">
+				SWT Tutorial</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">
+				JFace Overview</ulink>
+		</para>
+
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/EclipseJFace/article.html">
+				JFace Tutorial</ulink>
+		</para>
+	</section>
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

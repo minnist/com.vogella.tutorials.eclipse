@@ -1,0 +1,304 @@
+<section id="architecture" role="wrapper">
+	<title>The Architecture of Eclipse</title>
+	<section id="architecture_overview">
+		<title>Architecture of Eclipse based applications</title>
+		<indexterm>
+			<primary>Eclipse Architecture</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Eclipse high level design</primary>
+		</indexterm>
+		<para>
+			An Eclipse application consists of individual software
+			components. The Eclipse IDE can be viewed as a special
+			Eclipse
+			application with the focus on supporting software development.
+		</para>
+
+		<para>
+			The
+			core components of the
+			Eclipse IDE
+			are depicted in the
+			following graphic. The intention of the graphic is to
+			demonstrate the
+			general
+			concept, the displayed
+			relationships are not
+			100% accurate.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="30" fileref="images/architecture10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Important Eclipse IDE components</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>The most important Eclipse components of this graphic are
+			described in
+			the next section. On top of these base
+			components, the
+			Eclipse IDE adds additional
+			components
+			which are important for an IDE
+			application, for example,
+			the Java
+			development tools (JDT) or version
+			control support (EGit).
+		</para>
+
+		<para>
+			An
+			Eclipse RCP application typically uses the same base
+			components of the
+			Eclipse platform and adds additional
+			application
+			specific components as depicted in the following graphic.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="30" fileref="images/architecture20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Typical components of an Eclipse RCP application</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="architecture_corecomponents">
+		<title>Core components of the Eclipse platform</title>
+		<indexterm>
+			<primary>Eclipse core components</primary>
+		</indexterm>
+		<para>
+			<wordasword>OSGi</wordasword>
+			is a specification to describe a modular approach to develop component-based Java applications. The programming model
+			of OSGi allows you to
+			define
+			dynamic
+			software components, i.e.,
+			OSGi
+			services.
+			<wordasword>Equinox</wordasword>
+			is
+			one
+			implementation of the OSGi specification and is used
+			by the
+			Eclipse
+			platform as its runtime. This
+			Equinox
+			runtime
+			provides the
+			necessary API's and
+			framework to
+			run a modular
+			Eclipse
+			application.
+		</para>
+		<para>
+			<wordasword>SWT</wordasword>
+			is the standard user interface component library used by
+			Eclipse.
+			<wordasword>JFace</wordasword>
+			provides some convenient APIs on top of SWT. The
+			<wordasword>workbench</wordasword>
+			provides
+			the
+			framework for the application. It is
+			responsible for
+			displaying all other user interface components.
+		</para>
+		<para>
+			<wordasword>EMF</wordasword>
+			is the Eclipse Modeling Framework which provides functionality to
+			model a data model and to use this data model at
+			runtime.
+		</para>
+
+	</section>
+
+	<section id="e4overview_api">
+		<title>Eclipse API and internal API</title>
+		<indexterm>
+			<primary>Provisional API</primary>
+			<see>Internal API</see>
+		</indexterm>
+		<indexterm>
+			<primary>Internal API</primary>
+		</indexterm>
+
+		<para>
+			An OSGi runtime allows the developer to mark Java packages as public, provisional or internal APIs. The internal
+			API is private, therefore not visible. The provisional API are to test non-finalized APIs, therefore are visible but
+			non-stable. The public API, or simply API, are the visible and stable API, that can be reused by other components.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_api_definition_overview.png" scale="20" />
+				</imageobject>
+				<textobject>
+					<phrase>API definition in Eclipse</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>The Eclipse platform project marks packages either as public API
+			or as provisional API, to make all Java classes
+			accessible
+			to Eclipse
+			developers. If the Eclipse platform project releases an
+			API, the
+			platform project plans to keep
+			this API stable for as long
+			as
+			possible.
+		</para>
+		<para>
+			If API is internal but accessible, i.e., marked as provisional,
+			the
+			platform team can change this API in the
+			future.
+			If you use
+			such
+			API,
+			you must be
+			prepared that you might have to
+			make some
+			adjustments to
+			your
+			application in a future
+			Eclipse release.
+		</para>
+		<para>
+			If you use unreleased API, you see a
+			<guilabel>Discouraged access: The ...is not API (restriction on
+				required project ...)
+			</guilabel>
+			warning in the Java editor.
+		</para>
+		<tip>
+			<para>
+				You can turn
+				off these warnings for your workspace via
+				<menuchoice>
+					<guimenu>Window</guimenu>
+					<guisubmenu>Preferences</guisubmenu>
+					<guisubmenu>Java</guisubmenu>
+					<guisubmenu>Compiler</guisubmenu>
+					<guisubmenu>Errors/Warnings</guisubmenu>
+				</menuchoice>
+				and by setting the
+				<guilabel>Discouraged reference (access rules)</guilabel>
+				flag
+				to
+				<guilabel>Ignore</guilabel>
+				.
+			</para>
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/warnings10.png" scale="30" />
+					</imageobject>
+					<textobject>
+						<phrase>Turning of the Eclipse warnings</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+			<para>
+				Alternatively you can turn off these warnings on a per project
+				basis,
+				via right-click on the project
+				<menuchoice>
+					<guimenu>Properties</guimenu>
+					<guisubmenu>Java Compiler </guisubmenu>
+				</menuchoice>
+				and afterwards use the same path as for accessing the global
+				settings.
+				You might
+				have
+				to activate the
+				<guilabel>Enable project specific settings</guilabel>
+				checkbox at the top of the Error/Warnings preference page.
+			</para>
+		</tip>
+	</section>
+
+
+	<section id="architecture_configurationfiles">
+		<title>Important configuration files for Eclipse plug-ins</title>
+		<indexterm>
+			<primary>Configuration files of plug-ins</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MANIFEST.MF</primary>
+		</indexterm>
+		<indexterm>
+			<primary>plugin.xml</primary>
+		</indexterm>
+		<para>
+			An Eclipse plug-in has the following main configuration files. These
+			files are defining the API, and the dependencies
+			of the plug-in.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<filename>MANIFEST.MF</filename>
+						- contains the OSGi configuration information.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<filename>plugin.xml</filename>
+						- optional configuration file, contains information about Eclipse
+						specific
+						extension mechanisms.
+					</para>
+				</listitem>
+			</itemizedlist>
+
+		</para>
+
+		<para>
+			An Eclipse plug-in defines its meta data, like its unique identifier, its exported API and its dependencies via the
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+		<para>
+			The
+			<filename>plugin.xml</filename>
+			file provides the possibility to create and contribute to
+			Eclipse
+			specific
+			API. You can add
+			<wordasword>extension points</wordasword>
+			and
+			<wordasword>extensions</wordasword>
+			in this file.
+			<wordasword>Extension-points</wordasword>
+			define interfaces for other
+			plug-ins to contribute functionality.
+			<wordasword>Extensions</wordasword>
+			contribute
+			functionality to these interfaces. Functionality can be
+			code
+			and non-code based. For example a plug-in might
+			contain help
+			content.
+		</para>
+
+
+	</section>
+
+
+
+
+</section>

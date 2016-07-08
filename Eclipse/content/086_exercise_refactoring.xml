@@ -1,0 +1,95 @@
+<section id="exercise_refactoring" role="wrapper">
+	<title>Exercise: Refactoring</title>
+	<section id="exercise_refactoring1">
+		<title>Preparation</title>
+
+		<para>
+			For the next examples change the
+			<code>MyFirstClass</code>
+			class to
+			the following code.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/refactoring/MyFirstClassVrs1.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_refactoring2">
+		<title>Extract method</title>
+		<para>
+			A useful refactoring is to mark code and create a method
+			from
+			the
+			selected code. To use this in this exercise, mark the coding of the
+			"for" loop, right
+			click on the selection and
+			select
+			<menuchoice>
+				<guimenu>Refactoring </guimenu>
+				<guisubmenu>Extract Method</guisubmenu>
+			</menuchoice>
+			. Use
+			<wordasword>calculateSum</wordasword>
+			as the name of the new method.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/refactor20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Extract Method refactoring</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para> After this refactoring the class should look like the following code.</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/refactoring/MyFirstClassVrs2.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="exercise_refactoring3">
+		<title>Extract Constant</title>
+		<para>
+			You can also extract strings and create constants based on the
+			strings. Mark for
+			this example the
+			<code>"Hello Eclipse!"</code>
+			string in your source code, right-click on it and
+			select
+			<menuchoice>
+				<guimenu>Refactor</guimenu>
+				<guisubmenu>Extract Constant</guisubmenu>
+			</menuchoice>
+			. Name your new constant <code>HELLO</code>.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="60" fileref="images/refactor30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Extract Constants</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>The string is now defined as a constant.</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/refactoring/MyFirstClassVrs3.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+</section>

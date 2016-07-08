@@ -1,0 +1,11 @@
+ISWTObservableValue personFirstNameTextObservable = WidgetProperties.text(SWT.Modify)
+    .observe(personFirstNameText);
+ISWTObservableValue personLastNameTextObservable = WidgetProperties.text(SWT.Modify)
+    .observe(personLastNameText);
+
+ISideEffectFactory sideEffectFactory = WidgetSideEffects.createFactory(personFirstNameText);
+
+sideEffectFactory.create(person::getFirstName, personFirstNameText::setText);
+sideEffectFactory.create(personFirstNameTextObservable::getValue, person::setFirstName);
+sideEffectFactory.create(person::getLastName, personLastNameText::setText);
+sideEffectFactory.create(personLastNameTextObservable::getValue, person::setLastName);

@@ -1,0 +1,16 @@
+<section id="jfacetree_prerequisites">
+	<title>Prerequisites</title>
+	<para>
+		Please see
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html">Introduction to JFace</ulink>
+		for an introduction to the
+		concepts behind this example.
+	</para>
+	<para>
+		For an example on how to build JFace Tables please see
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> JFace Table Tutorial</ulink>
+		.
+	</para>
+</section>

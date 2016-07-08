@@ -1,0 +1,199 @@
+<section id="eclipseplatform_contributions" role="wrapper">
+	<title>Contributing to the Eclipse open source project</title>
+	<section id="eclipseplatform_contributions0">
+		<title>Code contributing</title>
+		<para>
+			As the Eclipse project is an open source project, it is possible
+			to get the source code, modify it and provide
+			the change back to the
+			project. Most Eclipse projects use a code review process based on the
+			Gerrit code review system.
+			Some Eclipse projects also use Github for code contributions.
+		</para>
+		<para>
+			Contributing to an Eclipse project has the benefit of getting
+			feedback directly from the core developers. It also
+			allows developers
+			and organizations to fix bugs which affect them and to drive the
+			project into a desired direction.
+		</para>
+		<para>While there are other ways of contributing to an Eclipse project, e.g., via updating the project documentation,
+			this $book focuses on the process of contributing code to an Eclipse project.
+		</para>
+	</section>
+	<section id="contribution_uiguidelines">
+		<title>User interface guidelines</title>
+		<indexterm>
+			<primary>User interface guidelines for Eclipse</primary>
+		</indexterm>
+		<para>
+			Eclipse has a description for its user interface guidelines. These
+			can be found under the following url:
+			<ulink url="https://wiki.eclipse.org/User_Interface_Guidelines">Wiki about UI guidelines</ulink>
+			.
+		</para>
+		<para>
+			It is not expected that you read this guide completely, but in
+			case you
+			want
+			to check what the Eclipse way of doing
+			things is, you can
+			have a
+			look
+			at this (old but still valid) description.
+		</para>
+	</section>
+	<section id="eclipseplatform_committers_contributors">
+		<title>Users, Contributors and Committers</title>
+		<indexterm>
+			<primary>Committer</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Contributor</primary>
+		</indexterm>
+
+		<para>The development of the individual Eclipse projects is done by
+			the
+			Eclipse developers - companies and individuals
+			alike
+			- which
+			develop
+			the code.
+		</para>
+		<para>
+			The Eclipse project distinguishes between the following group of
+			people:
+			<itemizedlist>
+				<listitem>
+					<para>
+						Eclipse User - Using at least one product, e.g., a
+						<filename>JAR</filename>
+						file, of the Eclipse project. Eclipse users consume the software
+						created by the Eclipse
+						developers. Users also
+						report bugs and issue feature requests in Eclipse projects they are using.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Contributors are individuals who contribute code, fixes, tests, documentation, or other work that is part of
+						the project.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Committers have write access to the project's resources (source code repository, bug tracking system,
+						website, build server, downloads, etc.) and are expected to influence the project's development.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>Everyone has read access to the code repositories hosted at
+			eclipse.org.
+		</para>
+
+	</section>
+	
+	<section id="e4overview">
+        <title>Relevant Eclipse projects</title>
+        <para>Eclipse hosts multiple projects but several projects are critical for the development of the Eclipse IDE and RCP
+            applications. These are described here.</para>
+        <section id="e4overview_platform">
+            <title>The Eclipse Platform project</title>
+            <indexterm>
+                <primary>Platform project</primary>
+            </indexterm>
+            <para>
+                The
+                <wordasword>Eclipse Platform</wordasword>
+                project provides the core frameworks and
+                services upon which all
+                Eclipse based applications are created. It also
+                provides the runtime
+                in which
+                Eclipse components are loaded, integrated, and
+                executed. The
+                primary purpose of
+                the
+                <wordasword>Eclipse Platform</wordasword>
+                project is to enable
+                other developers
+                to easily
+                build and deliver
+                integrated tools and applications.
+            </para>
+        </section>
+
+        <section id="e4overview_pde">
+            <title>The Eclipse Plug-in Development Environment (PDE)</title>
+            <indexterm>
+                <primary>PDE</primary>
+            </indexterm>
+            <indexterm>
+                <primary>Plug-in Development Environment</primary>
+            </indexterm>
+            <para>The Eclipse Plug-in Development Environment (PDE) project
+                provides wizards for creating Eclipse RCP applications
+                and plug-ins, editors and other tools to develop
+                Eclipse
+                plug-ins.
+            </para>
+        </section>
+        <section id="e4overview_what">
+            <title>The Eclipse e4 project</title>
+            <indexterm>
+                <primary>e4 project</primary>
+            </indexterm>
+            <para>
+                <wordasword>Eclipse e4</wordasword>
+                is the name used for the
+                <wordasword>Eclipse Platform</wordasword>
+                incubator project. This
+                incubator
+                is used for exploratory projects
+                relating to improving the
+                Eclipse
+                Platform.
+            </para>
+            <para>
+
+                The
+                e4 project includes several technology evaluations.
+                Some of
+                these
+                evaluations have
+                been ported
+                back to
+                the core Eclipse
+                framework.
+                All
+                functionalities described
+                in
+                this
+                document are
+                part of the
+                official
+                Eclipse
+                release,
+                except
+                the
+                <wordasword>Eclipse e4 tooling</wordasword>
+                project.
+            </para>
+
+            <para>
+                The
+                <wordasword>Eclipse e4 tooling</wordasword>
+                project
+                provides tools for developing
+                Eclipse 4 applications. They are very
+                useful, but have not yet been added
+                to
+                the
+                Eclipse platform project.
+            </para>
+        </section>
+
+    </section>
+	
+</section>

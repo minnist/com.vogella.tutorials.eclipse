@@ -1,0 +1,201 @@
+<section id="services" role="wrapper">
+	<title>Eclipse platform services</title>
+	<section id="services_what">
+		<title>What are Eclipse platform services?</title>
+
+		<indexterm>
+			<primary>Eclipse services</primary>
+		</indexterm>
+
+		<para>Services are software
+			components (based on an interface or a
+			class)
+			which provide functionality.
+			The
+			Eclipse platform defines several
+			services.
+			The classes which are created based on the application model
+			can access these services via
+			dependency
+			injection.
+		</para>
+
+		<para>
+			To use an Eclipse service you
+			specify
+			the service dependency via an
+			<code>@Inject</code>
+			annotation and the Eclipse framework injects this component into
+			your
+			object.
+		</para>
+		<para>
+			The typical naming convention for Eclipse service interfaces is to
+			start
+			with an
+			<wordasword>E</wordasword>
+			and end with
+			<wordasword>Service</wordasword>
+			e.g.
+			<wordasword>E*Service</wordasword>
+			.
+		</para>
+	</section>
+	<section id="services_list">
+		<title>Overview of the available platform services</title>
+		<para>
+			The following table gives an overview of the most important available
+			platform
+			services.
+
+			<table frame='all'>
+				<title>Platform services</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="2*" />
+					<colspec colname='c2' colwidth="5*" />
+					<thead>
+						<row>
+							<entry>Service</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>EModelService</entry>
+							<entry> Used to search for elements in the
+								model,
+								create new model
+								elements, clone existing
+								snippets and
+								insert new elements into the
+								runtime application
+								model.
+							</entry>
+						</row>
+						<row>
+							<entry>ESelectionService
+							</entry>
+							<entry>Used to retrieve and set the
+								current active selection in
+								the user interface.
+							</entry>
+						</row>
+						<row>
+							<entry>ECommandService</entry>
+							<entry>Gives access to existing commands and allows you to
+								create
+								and change commands.
+							</entry>
+						</row>
+						<row>
+							<entry>EHandlerService</entry>
+							<entry>Allows you to access, change and trigger handlers.</entry>
+						</row>
+						<row>
+							<entry>EPartService</entry>
+							<entry>
+								Provides API to access and modify parts.
+								It also allows you to
+								switch perspectives and can be used to trigger that a method
+								annotated with
+								<code>@Persist</code>
+								in dirty parts, i.e. if the corresponding part behaves like an editor.
+							</entry>
+						</row>
+						<row>
+							<entry>IEventBroker   </entry>
+							<entry>Provides functionality to send event data and to register
+								for specified events and event topics.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								EContextService
+							</entry>
+							<entry>
+								Activate and deactivate key bindings defined as
+								<code>BindingContext</code>
+								in the application model. The content
+								referred to in this service
+								is the
+								<code>BindingContext</code>
+								and not the
+								<code>IEclipseContext</code>
+								.
+							</entry>
+						</row>
+						<row>
+							<entry>IThemeEngine
+							</entry>
+							<entry>Allows to switch the styling of the
+								application at runtime.
+							</entry>
+						</row>
+						<row>
+							<entry>EMenuService
+							</entry>
+							<entry>Registers a popup menu (MPopupMenu) for an
+								control
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+		<para>
+			Other available services are:
+			<itemizedlist>
+				<listitem>
+					<para>
+						org.eclipse.e4.core.services.Adapter - An adapter can adapt
+						an
+						object to the specified type, allowing clients to request
+						domain-specific
+						behavior for an object. It integrates
+						<code>IAdaptable</code>
+						and
+						<code>IAdapterManager</code>
+						. See the
+						<ulink url="http://wiki.eclipse.org/E4/EAS/Adapting_Objects">Adapter wiki</ulink>
+						for details.
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.core.services.Logger - Provides logging
+						functionality
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>
+						org.eclipse.jface.window.IShellProvider - allows access to a
+						<code>Shell</code>
+						, depends on SWT.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+
+	</section>
+	
+	<section id="platformservice_implementation">
+    <title>How are Eclipse platform services implemented?</title>
+    <para>
+        Usually services
+        have two parts: the interface definition and the
+        implementation. How these two
+        are linked
+        is defined by a
+        context function, an
+        OSGi service or plain context
+        value
+        setting (
+        <code>IEclipseContext</code>
+        ). Please note that there can be more than one service
+        implementation
+        for an interface.
+    </para>
+</section>
+
+</section>

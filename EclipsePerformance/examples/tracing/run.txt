@@ -1,0 +1,3 @@
+# start Eclipse with the test workspace 
+# piping the output into a file
+./eclipse -debug -data ~/test > trace.txt

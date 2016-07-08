@@ -1,0 +1,33 @@
+
+<section id="eclipse_javarequirements">
+	<title>Java requirements of the Eclipse IDE</title>
+	<indexterm>
+		<primary>Java version requirements to run Eclipse</primary>
+	</indexterm>
+	<para>
+		The Eclipse Neon (4.6) release requires Java 8 to run.
+	</para>
+	<para>
+		The Eclipse IDE contains its custom Java compiler hence a JRE is
+		sufficient for most tasks with Eclipse.
+		The
+		<wordasword>JDK</wordasword>
+		version of Java is only
+		required if you compile Java source code
+		on the
+		command line
+		and
+		for
+		advanced
+		development scenarios.
+		For example, if you
+		use
+		automatic
+		builds or if
+		you develop Java web
+		applications.
+	</para>
+	<para>Please note that you need a 64 JVM to run a 64 bit Eclipse and a
+		32 bit JVM to run a 32 bit Eclipse.
+	</para>
+</section>

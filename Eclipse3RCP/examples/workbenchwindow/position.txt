@@ -1,0 +1,9 @@
+
+
+// for further info see https://bugs.eclipse.org/bugs/show_bug.cgi?id=84938
+@Override
+public void postWindowCreate() {
+	Shell shell = getWindowConfigurer().getWindow().getShell();
+	shell.setLocation(100, 400);
+	super.postWindowCreate();
+}

@@ -1,0 +1,14 @@
+<section id="swt_tree">
+	<title>Tree and Menu</title>
+	 Create the following class. 
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/tree/TreeMenuTest.java" />
+		</programlisting>
+	
+	 If you run this application a tree will be display with a menu
+		attached to it. If you select the menu the text of the selected item
+		will be printed to the console. 
+	
+</section>

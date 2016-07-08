@@ -1,0 +1,49 @@
+<section id="jfaceeditor">
+	<title>Tutorial: Editing the table content</title>
+	<para>
+		Create the following new classes
+		in the new
+		<code>de.vogella.jface.tableviewer.edit</code>
+		package.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/editing/FirstNameEditingSupport.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/editing/LastNameEditingSupport.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/editing/GenderEditingSupport.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/editing/MarriedEditingSupport.java" />
+		</programlisting>
+	</para>
+	<para>
+		Now assign <code>EditorSupport</code> objects to your <code>TableColumnViewers</code> in
+		your
+		<code>View</code> class. Replace the existing method <code>createColumns()</code> with the
+		following one and adjust your imports.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/editing/View.java" />
+		</programlisting>
+	</para>
+	<para>
+		Run your application. You should now be able to modify the
+		content of the JFace table.
+	</para>
+</section>

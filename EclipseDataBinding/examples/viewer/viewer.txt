@@ -1,0 +1,15 @@
+
+
+// the MyModel.getPersons() method call returns a List<Person> object
+// the WritableList object wraps this object in an IObservableList
+
+input = new WritableList(MyModel.getPersons(), Person.class);
+
+// The following  creates and binds the data 
+// for the Table based on the provided input
+// no additional label provider / 
+// content provider / setInput required
+
+ViewerSupport.bind(viewer, input, 
+		BeanProperties.
+		values(new String[] { "firstName", "lastName", "married" }));

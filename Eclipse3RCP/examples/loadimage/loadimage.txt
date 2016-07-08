@@ -1,0 +1,5 @@
+
+Bundle bundle = FrameworkUtil.getBundle(this.getClass());
+URL url = FileLocator.find(bundle, 
+	new Path("icons/alt_window_32.gif"), null);
+Image image = ImageDescriptor.createFromURL(url).createImage();

@@ -1,0 +1,9 @@
+
+<extension
+       point="org.eclipse.ui.views">
+    <view
+         name="%View"
+         class="de.vogella.rcp.i18n.View"
+         id="de.vogella.rcp.i18n.view">
+    </view>
+</extension>

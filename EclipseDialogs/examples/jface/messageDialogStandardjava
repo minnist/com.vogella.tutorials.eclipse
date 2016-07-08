@@ -1,0 +1,6 @@
+// standard message dialogs
+MessageDialog.openConfirm(shell, "Confirm", "Please confirm");
+MessageDialog.openError(shell, "Error", "Error occured");
+MessageDialog.openInformation(shell, "Info", "Info for you");
+MessageDialog.openQuestion(shell, "Question", "Really, really?");
+MessageDialog.openWarning(shell, "Warning", "I am warning you!");

@@ -1,0 +1,130 @@
+<section id="commitmessages" role="wrapper">
+	<title>Writing good commit messages</title>
+	<section id="commitmessages_content">
+		<title>Importance of Git commit messages</title>
+		<indexterm>
+			<primary>Commit message</primary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>commit</wordasword>
+			adds a new version to the repository. This version is described by a
+			<wordasword>commit message</wordasword>
+			.
+		</para>
+		<para>
+			The
+			<wordasword>commit message</wordasword>
+			describes the changes recorded in a commit and helps the user to
+			understand the history of the files contained in a Git repository.
+		</para>
+		<para>
+			A commit
+			message should therefore be descriptive and informative
+			without repeating the
+			code changes.
+		</para>
+	</section>
+	<section id="commitmessages_guideline">
+		<title>Guidelines for useful commit messages</title>
+		<para>A commit message should have a header and a body. The header
+			should be less than 50 characters and the body should wrap its text
+			at 72 so that the commit message is displayed well on the command
+			line or in graphical tools displaying the history. The body should be
+			separated from the header by an empty line.
+		</para>
+		<para>The body should
+			mainly describe the reason why the change was
+			made. The changes in the file can be reviewed with the help of Git.
+		</para>
+		<para>The commit message should be in present tense, e.g., "Adds better
+			error handling" instead of "Added better error handling".
+		</para>
+		<para>
+			The last paragraph can also contain
+			<wordasword>metadata</wordasword>
+			as key-value pairs, also referred to as the
+			<wordasword>commit message footer</wordasword>
+			.
+
+
+			This metadata can be used to trigger a certain
+			behavior. For
+			example the
+			<wordasword>Gerrit</wordasword>
+			code review system uses the
+			<parameter>Change-Id</parameter>
+			key followed by a
+			<wordasword>change-id</wordasword>
+			, which does not change across different versions of the same code
+			review. This
+			<wordasword>changed id</wordasword>
+			is used to identify to which review the message
+			belongs.
+		</para>
+		<para>
+			The
+			<wordasword>commit message footer</wordasword>
+			can also have e.g., 'Signed-off-by' and may be used to
+			link to a bug
+			tracking system, e.g., 'Bug: 1234'.
+		</para>
+	</section>
+	<section id="commitmessages_repo">
+		<title>Example message</title>
+		<para>The following can serve as an example for a commit message.
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/message/message.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="commitmessages_history">
+		<title>Good and bad example for a Git history</title>
+
+		<para>
+			The following listing shows the output of the
+			<code>git log --oneline</code>
+			command of a Git repository
+			with
+			bad commit messages. The first value
+			in each line
+			is the shortened SHA-1, the second the commit message.
+			This history
+			is
+			not useful.
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/message/bad.txt" />
+			</programlisting>
+		</para>
+
+
+		<para>The next listing shows the history of another Git repository
+			in
+			which better commit messages have been used. This history already
+			gives
+			a good overview about the activities.
+		</para>
+
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/message/good.txt" />
+			</programlisting>
+		</para>
+		<para>The above example also adds the corresponding bug number to the
+			commit message. Some teams (like the Eclipse platform team) use this
+			approach, others prefer to add
+			the bug number to the commit messages.
+		</para>
+
+	</section>
+
+
+</section>

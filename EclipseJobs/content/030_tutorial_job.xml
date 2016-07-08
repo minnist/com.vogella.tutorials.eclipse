@@ -1,0 +1,70 @@
+<section id="tutorial_jobs">
+	<title>Tutorial: Using Eclipse Jobs</title>
+	<para>
+		Create a new Eclipse plug-in project "de.vogella.jobs.first" with a
+		<code>View</code>
+		and a
+		<code>Button</code>
+		included in this
+		<code>View</code>
+		.
+	</para>
+
+	<para>
+		Create the following
+		<code>MySelectionAdapter</code>
+		class.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/first/MySelectionAdapter.java" />
+		</programlisting>
+	</para>
+
+	<para>
+
+
+
+		Add an instance of
+		<code>MySelectionAdapter</code>
+		as
+		<code>SelectionListener</code>
+		to your
+		<code>Button</code>
+		.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/first/button.java" />
+		</programlisting>
+	</para>
+	<para>
+		To access the
+		<code>Shell</code>
+		in Eclipse 3.x you can use the
+		<code>getSite().getShell()</code>
+		method call. In Eclipse 4  you declare a field and let Eclipse inject
+		the
+		<code>Shell</code>
+		.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/first/injectshell.txt" />
+		</programlisting>
+	</para>
+
+	<para>
+		Start your application or the Eclipse workbench with your plug-in and
+		press the
+		<code>Button</code>
+		.
+		A dialog is opened.
+	</para>
+
+</section>

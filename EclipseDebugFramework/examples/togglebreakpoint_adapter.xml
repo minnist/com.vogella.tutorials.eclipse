@@ -1,0 +1,7 @@
+<extension point="org.eclipse.core.runtime.adapters">
+	<factory adaptableType="com.example.CustomDebugElement"
+		class="com.example.CustomDebugElementAdapterFactory">
+		<adapter type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget">
+		</adapter>
+	</factory>
+</extension>

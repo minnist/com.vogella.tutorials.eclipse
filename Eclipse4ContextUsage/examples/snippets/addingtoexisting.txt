@@ -1,0 +1,20 @@
+
+@Inject
+public void addingContext(IEclipseContext context) {
+
+	// create a new IEclipseContext instance
+	IEclipseContext myContext = EclipseContextFactory.create();
+
+	// add objects to context
+	myContext.set("mykey1", "Hello1");
+	myContext.set("mykey2", "Hello2");
+
+	// adding a parent relationship
+	myContext.setParent(context);
+
+	// alternatively you can create a new
+	// context which has a parent/child 
+	// relationship via the 
+	// context.createChild() method call
+	
+}

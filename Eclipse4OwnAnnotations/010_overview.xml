@@ -1,0 +1,103 @@
+<section id="e4_customannotations">
+	<title>Custom annotations</title>
+
+	<indexterm>
+		<primary>Annotations</primary>
+		<secondary>Custom annotations processors</secondary>
+	</indexterm>
+
+
+	<section id="e4_customannotations1">
+		<title>Custom annotations in Eclipse</title>
+
+		<para>
+			The Eclipse platform uses dependency injection as the primary
+			programming model. This mechanism is
+			extensible with
+			custom
+			annotations.
+			The following code demonstrates how you can define your
+			custom
+			annotation.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/DirectTodo.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="e4_customannotations2">
+		<title>Define an annotation processor via an OSGi service</title>
+		<indexterm>
+			<primary>ExtendedObjectSupplier</primary>
+		</indexterm>
+
+		<para>
+			To process these custom annotations
+			you can register an
+			OSGi
+			service for
+			the abstract
+			<code>ExtendedObjectSupplier</code>
+			class from the
+			<code>org.eclipse.e4.core.di.suppliers</code>
+			package. In this registration you define via
+			the
+			<property>dependency.injection.annotation</property>
+			property the annotation for which the service is
+			responsible.
+		</para>
+
+
+		<para>
+			After this registration the
+			Eclipse framework
+			calls
+			this
+			annotation
+			processor if it encounters
+			the configured annotation.
+		</para>
+		<para>
+			The following snippet shows an example
+			<filename>DirectTodoSupplier.xml</filename>
+			file which registers an
+			<code>ExtendedObjectSupplier</code>
+			for the
+			<code>DirectTodo</code>
+			annotation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/DirectTodoSupplier.xml" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			The annotation processor registered via the
+			<filename>DirectTodoSupplier.xml</filename>
+			file returns an object. The
+			following
+			code
+			shows an example for an
+			annotation processor which
+			returns an instance
+			of an
+			<code>java.util.Optional&lt;Todo&gt;</code>
+			class, in case a proper id is passed to the
+			<code>DirectTodo</code>
+			annotation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/DirectTodoObjectSupplier.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

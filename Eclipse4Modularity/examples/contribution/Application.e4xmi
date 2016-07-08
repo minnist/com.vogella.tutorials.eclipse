@@ -1,0 +1,15 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2008/UIModel" xmi:id="a" id="org.eclipse.e4.ide.application">
+  <children xsi:type="application:Window" xmi:id="_m-KkfC2LEd-RMdxMTPbEkQ" id="_m-KkfC2LEd-RMdxMTPbEkQ" label="Window" width="500" height="400">
+    <children xsi:type="application:PartStack" xmi:id="_Uq3zAC4qEd-CRdAyrDY9Rw" id="_Uq3zAC4qEd-CRdAyrDY9Rw">
+      <children xsi:type="application:Part" xmi:id="_Lzk0cC4lEd-xNPM3xY6yzA" id="de.vogella.e4.rcp.modelcontribution.parts.Part1" URI="platform:/plugin/de.vogella.e4.rcp.modelcontribution/de.vogella.e4.rcp.modelcontribution.parts.Part1" label="My View" iconURI="" tooltip=""/>
+    </children>
+    <mainMenu xmi:id="menu:org.eclipse.ui.main.menu" id="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="application:MenuItem" xmi:id="_lpaKAC4lEd-xNPM3xY6yzA" id="_lpaKAC4lEd-xNPM3xY6yzA" label="File">
+        <children xsi:type="application:DirectMenuItem" xmi:id="_mgPrYC4lEd-xNPM3xY6yzA" id="_mgPrYC4lEd-xNPM3xY6yzA" URI="platform:/plugin/de.vogella.e4.rcp.modelcontribution/de.vogella.e4.rcp.modelcontribution.handlers.ViewAddHandler" label="Add View"/>
+        <children xsi:type="application:DirectMenuItem" xmi:id="_j3-YkDIKEd-Q-NQ8kpP1xQ" id="menu2" URI="platform:/plugin/de.vogella.e4.rcp.modelcontribution/de.vogella.e4.rcp.modelcontribution.handlers.AboutHandler" label="Dialog"/>
+      </children>
+    </mainMenu>
+  </children>
+</application:Application>

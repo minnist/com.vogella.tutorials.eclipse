@@ -1,0 +1,35 @@
+<section id="tutorialswt">
+	<title>Exercise: Using SWT dialogs</title>
+	<para>
+		The following exercise demonstrates how to use the SWT
+		dialogs.
+	</para>
+	<para>
+		Create a new Eclipse plug-in project called
+		<wordasword>de.vogella.rcp.dialogs.swt</wordasword>
+		with one
+		part. Create the following
+		class.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/swt/MyComposite.java" />
+		</programlisting>
+	</para>
+	<para>In the method which creates your user interface, add this
+		composite to your part as demonstrated in the following code.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/snippets/addComposite.txt" />
+		</programlisting>
+	</para>
+	<para>
+		Run the application. If you select your button the
+		<wordasword>Dialogs</wordasword>
+		will be displayed.
+	</para>
+
+</section>

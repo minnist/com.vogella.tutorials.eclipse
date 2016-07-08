@@ -1,0 +1,54 @@
+
+
+<section id="dialogs_jfacemesesage">
+	<title>Selection Dialogs</title>
+
+	<para>
+		Eclipse provides several standard selection
+		<wordasword>Dialogs</wordasword>
+		in Eclipse 3.x. In Eclipse 3.x you can directly use them, in
+		Eclipse
+		4.x you may have to copy them into your plug-in and
+		modify them
+		slightly. I still list them here, so that you can use their code as
+		examples.
+	</para>
+	<para>A release after Eclipse 4.2 might make the dialogs directly
+		available again.
+	</para>
+
+	<para>
+		Here is a list of these
+		<wordasword>Dialogs</wordasword>
+		.
+		<itemizedlist>
+			<listitem>
+				<para>ElementListSelectionDialog</para>
+			</listitem>
+			<listitem>
+				<para>ListDialog</para>
+			</listitem>
+			<listitem>
+				<para>ElementTreeSelectionDialog</para>
+			</listitem>
+			<listitem>
+				<para>CheckTreeSelectionDialog</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+
+	<para>
+		For example
+		<code>ElementListSelectionDialog</code>
+		allows you to select elements from a list where the
+		dialog provides a
+		filter for the elements.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/snippets/elementlistselectiondialog.txt" />
+		</programlisting>
+	</para>
+
+</section>

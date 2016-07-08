@@ -1,0 +1,34 @@
+<section id="oleexcel">
+	<title>Microsoft Excel with Eclipse</title>
+	<section id="oleexcel_project">
+		<title>Create Project</title>
+		<para>
+			Create a new project "ExcelTest". See 
+			<ulink
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
+			> Eclipse RCP</ulink>
+			for details. Use the "RCP with a view" as a
+			template. Run it and see that is working.
+		</para>
+	</section>
+	<section id="oleexcel_view">
+		<title>Change View code</title>
+		<para> Select View.java and replace the code with the following.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/excel/View.java" />
+			</programlisting>
+		</para>
+		<para> Start your application and excel should be displayed.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/excel10.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Extending the Eclipse IDE - Plug-in development - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>08.03.2015</pubdate>
+		<releaseinfo>
+			<para>Version 2.7</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Eclipse Plug-ins tutorial</title>
+			<para> This article describes the creation and deployment of
+				Eclipse
+				plug-ins. The article is based on
+				Eclipse
+				4.4 (Luna)
+				and Java
+				1.6.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="011_ideextensions.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_prerequisites.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./018_download.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="024_commands.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="026_firstplugin.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_localdeployplugin.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="032_tutorial_createfeature.xml" />
+
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="034_tutorial_deployplugin.xml" />
+	
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_parts.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="054_exercise_addingparts.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="055_exercise_addingpartdescriptor.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="056_modeladdons.xml" />
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_contextmenuplugin.xml" />
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_context.xml" />
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_marker.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="210_tutorial_marker.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_adapters.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_resources.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_startupaction.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../lib/adsense/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<?dbhtml-include href="../../web/vgwort/EclipsePlugIn"?>
+</article>

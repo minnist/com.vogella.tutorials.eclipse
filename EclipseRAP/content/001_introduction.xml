@@ -1,0 +1,83 @@
+<section id="rap">
+	<title>Eclipse RAP</title>
+	<section id="rap_introduction">
+		<title>Introduction</title>
+		<para>
+			Eclipse RAP is a Eclipse based platform for Ajax web
+			applications
+			which provides part of the API of
+			Eclipse RCP. Eclipse
+			RAP
+			allows to use Eclipse RCP paradigm for developing
+			Ajax
+			web-applications.
+		</para>
+		<para>
+			RAP is based on the OSGi implementation Equinox. It is possible
+			to run Eclipse RAP
+			applications via the OSGi servlet
+			bridge in a
+			servlet container, e.g.
+			Apache Tomcat
+			or Jetty.
+		</para>
+		<para>Eclipse RAP supports extension points, views, perspectives,
+			selection service,
+			commands, handlers, editors and databinding.
+		</para>
+		<para> Eclipse archives this by providing its own implementations for
+			SWT, JFace and the Workbench. Eclipse RAP replaces SWT
+			with RWT (RAP
+			widget toolkit)
+			layer. This toolkit is based on the qooxdoo Ajax
+			library. RWT is a distributed system; every RWT widget has a client
+			and a server part. These part communicate via Ajax.
+		</para>
+		<para>
+			During development Eclipse RAP applications run in the embedded
+			web server Jetty which is part of the
+			Eclipse RAP
+			development tooling.
+		</para>
+
+	</section>
+	<section id="rap_difference">
+		<title>Differences to Eclipse RCP</title>
+		<para>
+			Eclipse RAP does not provide all the possibilities
+			Eclipse RCP.
+			For example Eclipse RAP has no
+			Graphics Context which can be
+			used in
+			SWT to draw directly onto the
+			SWT widgets.
+		</para>
+		<para> Each Eclipse RAP releases provides more functionality so that
+			the differences between Eclipse RCP and Eclipse RAP are getting
+			smaller every release.
+		</para>
+	</section>
+
+	<section id="rap_workspace">
+		<title>Workspace and Target Platform</title>
+		<para> Eclipse RAP have its own target platform. A target platform
+			contains the artifacts, e.g., plug-ins, against which the Eclipse
+			plug-ins are compiled. For example
+			Eclipse RAP does not rely
+			on SWT but
+			on RWT therefore the target platform must provide these.
+		</para>
+		<para> Typically you should create a new workspace for your Eclipse
+			RAP
+			projects. As you
+			have to change the target
+			platform to
+			compile
+			against
+			Eclipse RAP your
+			existing projects may not
+			work with the RAP
+			target platform and may show syntax errors.
+		</para>
+	</section>
+</section>

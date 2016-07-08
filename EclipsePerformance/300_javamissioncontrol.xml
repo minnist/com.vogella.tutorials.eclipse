@@ -1,0 +1,13 @@
+<section id="performance_javamissioncontrol">
+	<title>Java Mission Control</title>
+	<para>Java Mission Control is set of tools to perform performance
+		analysis of a Java application.
+	</para>
+	<para>
+		See
+		<ulink
+			url="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/index.html"> Java Mission Control homepage</ulink>
+		for details.
+	</para>
+
+</section>  

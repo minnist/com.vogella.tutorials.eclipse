@@ -1,0 +1,30 @@
+
+<section id="shortcuts_run">
+	<title>Start Java programs</title>
+	<para>
+		<table frame='all'>
+			<title>Running programs</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Ctrl + F11</entry>
+						<entry>Run last launched</entry>
+					</row>
+					<row>
+						<entry>Alt + Shift + X, J</entry>
+						<entry>Run current selected class as Java application</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+</section>

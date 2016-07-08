@@ -1,0 +1,15 @@
+<section id="resources">
+
+	<title>Web development resources</title>
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/JavaWebTerminology/article.html">
+			Introduction to Java Web development
+		</ulink>
+	</para>
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/JavaServerFaces/article.html">
+			JavaServer Faces (JSF) development tutorial
+		</ulink>
+	</para>
+</section>
+

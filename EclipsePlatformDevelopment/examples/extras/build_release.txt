@@ -1,0 +1,4 @@
+git checkout tags/R4_3
+git submodule update
+#run the build
+mvn clean verify

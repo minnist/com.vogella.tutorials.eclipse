@@ -1,0 +1,77 @@
+<section id="tutorial_clearpesistence" role="wrapper">
+	<title>Exercise: Configure the deletion of persisted model data</title>
+	<section id="tutorial_clearpesistence_task">
+		<title>Delete the persisted user changes at startup</title>
+
+		<para>
+			To ensure that always the latest version of your application model is
+			used, add the
+			<parameter>-clearPersistedState</parameter>
+			parameter to your product configuration file.
+		</para>
+
+		<para>The following screenshot shows this setting in the product
+			configuration file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/deletepersistedmodel10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Delete persisted Eclipse application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<note>
+			<para>
+				Ensure that you used the
+				<parameter>-</parameter>
+				sign and that the parameter is typed correctly. Is must be:
+			</para>
+			<para>
+				<parameter>-clearPersistedState</parameter>
+			</para>
+		</note>
+
+	</section>
+	<section id="tutorial_clearpesistence_why">
+		<title>Why is this setting necessary?</title>
+
+		<para>
+			At startup of an Eclipse application the Eclipse platform
+			restores the state in which you
+			left the application
+			before the last
+			shutdown.
+			During
+			development
+			this
+			might
+			lead to
+			situations where changes
+			are not
+			correctly
+			applied and
+			displayed, e.g., you define a new menu
+			entry
+			and
+			this entry
+			is not
+			displayed in your application.
+		</para>
+
+
+		<para>
+			Alternatively to the approach described above, you can also set the
+			<guilabel>Clear</guilabel>
+			flag on the
+			<guilabel>Main</guilabel>
+			tab in your Run configuration. This would also delete other persisted
+			data, like for example preference values.
+		</para>
+
+	</section>
+</section>

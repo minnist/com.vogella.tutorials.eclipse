@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension	
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+        name="to-do"
+        application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="to-do">
+         </property>
+ <property
+  	name="lifeCycleURI"
+	value=
+"bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager">
+  </property>
+  <!-- other properties omitted --> 
+      </product>
+   </extension>
+
+</plugin>

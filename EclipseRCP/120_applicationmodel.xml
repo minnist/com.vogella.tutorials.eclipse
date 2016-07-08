@@ -1,0 +1,323 @@
+<section id="applicationmodel" role="wrapper">
+	<title>Eclipse 4 application model</title>
+	<section id="applicationmodel_overview">
+		<title>What is the application model?</title>
+		<indexterm>
+			<primary>Application model</primary>
+		</indexterm>
+
+		<indexterm>
+			<primary>Application.e4xmi</primary>
+		</indexterm>
+
+		<para>
+			The Eclipse platform uses an abstract description, called the
+			<wordasword>application model</wordasword>
+			,
+			to
+			describe the structure of an application. This
+			application
+			model
+			contains the visual
+			elements as well as some
+			non-visual
+			elements of
+			the
+			application.
+		</para>
+
+		<para>
+			The visual parts are, for example,
+			windows, parts (views and
+			editors),
+			menus, toolbars, etc. Examples for
+			non-visual
+			components are
+			handlers,
+			commands
+			and
+			key bindings.
+		</para>
+
+		<para>
+			Each model element has
+			attributes which describe
+			its current
+			state, e.g.
+			the
+			size
+			and
+			the
+			position of a
+			window. The
+			application model
+			also expresses the relationship of the
+			model elements via a hierarchy.
+
+		</para>
+		  <para>
+            The individual user interface widgets, which are displayed in a
+            part,
+            are not defined via the application model,
+            i.e., the
+            content
+            of
+            the
+            part
+            is still defined
+            by
+            your
+            source code.
+
+            If the application model was a house,
+            it would describe the
+            available
+            rooms (parts) and their arrangement
+            (perspectives,
+            part
+            stacks,
+            part sash containers),
+            but not the furniture of the
+            rooms. This
+            is illustrated
+            by the
+            following
+            image.
+        </para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/modeledworkbench10.gif" scale="60" />
+                </imageobject>
+                <textobject>
+                    <phrase>Limits of the modeled workbench</phrase>
+                </textobject>
+            </mediaobject>
+        </para>
+
+		<para>
+			The base of the application
+			model is
+			typically defined
+			as a
+			static file.
+			By default, it is called
+			<code>Application.e4xmi</code>
+			and located in the main directory of the plug-in which
+			defines the
+			product extension.
+			This file is read at application
+			startup and is used to
+			construct the initial application model. Changes made by the user are
+			persisted and re-applied
+			at startup.
+		</para>
+		<para>
+			The application model is extensible, e.g., other plug-ins can
+			contribute
+			to it via
+			<wordasword>model processors</wordasword>
+			and
+			<wordasword>model fragments</wordasword>
+			.
+		</para>
+
+	</section>
+
+
+	<section id="runtime_uri">
+		<title>Connecting model elements to classes and resources</title>
+		<indexterm>
+			<primary>Class URI</primary>
+			<secondary>bundleclass://</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>bundleclass</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Class URI</primary>
+			<secondary>platform:/plugin/</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Class URI</primary>
+		</indexterm>
+
+		<para>
+			Model elements can point to a class or to a static resource via
+			a
+			Uniform
+			Resource
+			Identifier (URI). For this
+			purpose
+			Eclipse defines two
+			URI patterns. Eclipse instantiates the referred objects or resources in most cases lazily.
+			For
+			example,
+			the
+			classes for a part are
+			instantiated when
+			the part gets visible.
+		</para>
+		<para>
+
+			The following table describes the support URI
+			patterns.
+			The
+			example
+			assumes
+			that the bundle is called
+			<wordasword>test</wordasword>
+			to have a short name.
+		</para>
+		<table frame='all'>
+			<title>URI pattern</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="2*" />
+				<colspec colname='c2' colwidth="3*" />
+				<thead>
+					<row>
+						<entry>Pattern</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>
+							<para>
+								<emphasis>bundleclass://</emphasis>
+								BSN/package.classname
+							</para>
+							<para></para>
+							<para>Example:</para>
+							<para>bundleclass://test/test.parts.MySavePart</para>
+							<para></para>
+						</entry>
+						<entry>
+							<para>
+								Identifier for a Java class.
+							</para>
+							<para>
+								It consists of the
+								following
+								parts:
+								<emphasis>bundleclass://</emphasis>
+								is a fixed prefix,
+								BSN stands for Bundle-SymbolicName and is
+								defined in a configuration file called
+								<filename>MANIFEST.MF</filename>
+								file. The Bundle-SymbolicName is followed by a '/' and the fully
+								qualified classname.
+							</para>
+						</entry>
+					</row>
+					<row>
+						<entry>
+							<para>
+								<emphasis>platform:/plugin/</emphasis>
+								BSN/path/filename.extension
+							</para>
+
+							<para></para>
+							<para>Example:</para>
+							<para>
+								platform:/plugin/test/icons/save_edit.gif
+							</para>
+						</entry>
+						<entry>
+							<para>
+								Used to identify resources.
+							</para>
+							<para>
+								Identifier for a resource in a plug-in.
+								<emphasis>platform:/plugin/</emphasis>
+								is a
+								fixed prefix, followed by the
+								BSN stands for
+								Bundle-SymbolicName as defined in the
+								<filename>MANIFEST.MF</filename>
+								file, followed by the
+								path
+								to the file and the filename.
+							</para>
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+
+		<para>
+			For example a part, have
+			a
+			<guilabel>Class URI</guilabel>
+			attribute
+			which points to a Java class via the
+			<code>bundleclass://</code>
+			URI.
+			This
+			class
+			provides the
+			behavior of the
+			part. The corresponding
+			object is created by the Eclipse framework.
+			Using the
+			house/rooms
+			metaphor
+			from
+			earlier, the class is
+			responsible for
+			defining the
+			furnishings,
+			the
+			layout of the room and how
+			the
+			interactive
+			objects
+			behave.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/classuri10.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			An example for a static resource reference is the
+			the
+			<guilabel>Icon URI</guilabel>
+			attribute of a part. This attribute
+			can point to an icon that is used for the part.
+		</para>
+	</section>
+
+    <section id="appmodel_runtime">
+        <title>Runtime application model</title>
+        <para>
+            At runtime of the application the created set of model objects is called the
+            <wordasword>runtime application model</wordasword>
+            .
+            This runtime application model is dynamic, i.e., you can change the
+            model
+            objects and
+            its
+            attributes and these changes
+            are reflected in your
+            application.
+            The
+            Eclipse platform has change listeners registered on
+            the
+            model
+            objects
+            and updates the
+            user interface whenever you change
+            relevant
+            attributes.
+        </para>
+    </section>
+
+</section>

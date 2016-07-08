@@ -1,0 +1,234 @@
+<section id="e4uiconcept" role="wrapper">
+	<title>User interface model elements</title>
+	<para>
+		The following model elements represents the basic elements which
+		you use to create the user interface of your
+		application.
+	</para>
+	<section id="e4uiconcept_window">
+		<title>Window</title>
+		<indexterm>
+			<primary>Window</primary>
+		</indexterm>
+
+		<para>
+			Eclipse applications consist of one or more windows.
+			Typically,
+			an application has only one
+			window,
+			but you are not
+			limited
+			to that,
+			e.g., if you want to support multiple connected monitors.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4window10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Eclipse application showing 2 windows</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040a_eclipseui_parts.xml" />
+
+
+	<section id="e4uiconcept_container">
+		<title>Available part containers</title>
+
+
+		<indexterm>
+			<primary>PartStack</primary>
+		</indexterm>
+		<indexterm>
+			<primary>PartSashContainer</primary>
+		</indexterm>
+
+		<indexterm>
+			<primary>Part sash container</primary>
+			<secondary>Layout weight</secondary>
+		</indexterm>
+
+		<para>
+			Parts
+			can be directly assigned to a
+			window
+			or a perspective. They can
+			also be grouped and arranged via additional model
+			elements, i.e.,
+			via part
+			stack (
+			<wordasword>Part Stack</wordasword>
+			) or via part sash container (
+			<wordasword>Part Sash Container</wordasword>
+			) elements.
+		</para>
+
+		<para>
+			A part stack contains a stack of parts showing the content of
+			one
+			part while displaying only the headers of the
+			other parts. One
+			part
+			is active and
+			the
+			user
+			can
+			switch to another
+			part
+			by
+			selecting the
+			corresponding
+			tab.
+		</para>
+		<para>
+			A part sash container
+			displays all its children at the same time
+			either
+			horizontally or
+			vertically aligned.
+		</para>
+		<para>
+			The following screenshot shows a simple Eclipse application
+			layout using
+			two part sash container
+			and three
+			part
+			stacks.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4uicomponents10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>An example arrangement of Parts in an Eclipse application</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			On the top of this layout there is a horizontal
+			part sash
+			container
+			which contains another
+			part sash container
+			and
+			one
+			part
+			stacks. The part sash container on the next level contains two part
+			stacks. The
+			hierarchy is depicted in the
+			following graphic.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4uicomponents20.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>The hierarchy of Parts using PartStacks and
+						PartSashcontainers.
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			You can use the
+			<parameter>Container Data</parameter>
+			attribute on a child of a part sash container
+			to assign a layout
+			weight.
+			This layout weight is interpreted as the relative space the
+			corresponding child element should get assigned in
+			the
+			part sash container.
+			The setting is depicted in the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/containerdata20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Container data for layouting</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you set the
+			<parameter>Container Data</parameter>
+			for one element, you must define it for
+			all the other elements, too.
+			Otherwise
+			the missing values are interpreted as
+			very high and these
+			elements
+			take
+			up all available space.
+		</para>
+		<tip>
+			<para>
+				The initial total of all the container data values is
+				maintained when elements in the sash are moved. In order
+				to allow
+				fine grained/smooth dragging this total must be similar to the
+				screen resolution. A too low value (i.e., 50 /
+				50) causes the part
+				to
+				be moved multiple pixels per sash unit, which the user will
+				realize
+				as a jerky movement.
+				Therefore, use a
+				sufficient high
+				value,
+				e.g.,
+				10000.
+			</para>
+		</tip>
+	</section>
+
+	<section id="e4uiconcept_perspective">
+		<title>Perspective</title>
+		<indexterm>
+			<primary>Perspective</primary>
+		</indexterm>
+
+		<para>
+			A
+			perspective
+			is an optional container for a set of
+			parts.
+			Perspectives can be used to
+			store different arrangements of parts. For
+			example, the Eclipse IDE
+			uses them to layout the views appropriate to
+			the task (development,
+			debugging, review, ...) the developer wants to
+			perform.
+		</para>
+		<para>
+			You can place
+			perspectives
+			in
+			a perspective stack of the
+			application
+			model.
+			Switching
+			perspectives
+			can be done via the
+			part
+			service
+			provided by the Eclipse platform.
+		</para>
+	</section>
+</section>
+

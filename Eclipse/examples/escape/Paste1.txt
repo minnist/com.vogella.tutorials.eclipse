@@ -1,0 +1,5 @@
+# paste <a href="tutorials/index.html">Tutorials</a>
+# between "" of String s = ""
+
+# results in:
+String s = "<a href=\"tutorials/index.html\">Tutorials</a>";

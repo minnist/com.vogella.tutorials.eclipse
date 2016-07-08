@@ -1,0 +1,53 @@
+
+<section id="systemtray">
+	<title>Tutorial: System Tray</title>
+	<para> The following add an icon for the RCP application to the system
+		tray and adds a menu to this icon. We add the functionality that if
+		the window is minimized
+		then the program is not visible in the taskpane
+		(only via the tray
+		icon).
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systemtray10.gif" />
+
+			</imageobject>
+			<textobject>
+				<phrase>Taskpane showing the application icon</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		Create a new project "de.vogella.rcp.intro.traytest". Use the
+		"Hello RCP" as a template. Open the class
+		"ApplicationWorkbenchWindowAdvisor" and maintain
+		the following code.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text"
+				href="../examples/systemtray/ApplicationWorkbenchWindowAdvisor.java" />
+		</programlisting>
+	</para>
+	<para> Run your application and see that you have a system tray icon.
+		Test the menu and the minimized behavior. If the application is
+		minimized it should not be visible in the taskbar but only in the
+		system
+		tray.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/systemtray20.gif" />
+			</imageobject>
+			<textobject>
+	<phrase>Showing the application icon in the taskpane</phrase>
+</textobject>
+		</mediaobject>
+	</para>
+</section>

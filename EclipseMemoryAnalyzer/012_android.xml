@@ -1,0 +1,23 @@
+
+<section id="eclipsemat_android">
+	<title>Analyzing Android heap dumps with Eclipse</title>
+	<para>
+		Android allows to create heap dumps of an application's heap.
+		This
+		heap dump is stored in a binary format called HPROF.
+		To create a heap
+		dump
+		use the
+		<guibutton>Dump HPROF file</guibutton>
+		button in the
+		<guilabel>DDMS</guilabel>
+		<wordasword>Perspective</wordasword>
+		.
+	</para>
+	<para>
+		The Android heap dump format
+		is similar to the Java heap dump format but not exactly the same. Eclipse MAT can
+		work directly with the Android heap dump format.
+	</para>
+
+</section>

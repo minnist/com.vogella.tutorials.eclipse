@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Defining custom launcher for the Eclipse IDE</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>23.03.2015</pubdate>
+		<releaseinfo>
+			<para>Version 0.1</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Eclipse Launcher Framework</title>
+			<para> This tutorial describes how the define custom launcher for additional programs.
+			</para>
+			<para> In this tutorial Eclipse 4.3 is used.</para>
+			<para>Level of this tutorial: Advanced</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_create_launch_configuration.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_custom_launch_configuration.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_custom_launch_configuration_ui.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+</article>

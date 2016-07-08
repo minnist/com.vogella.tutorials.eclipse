@@ -1,0 +1,64 @@
+<section id="recipes_projectnature">
+	<title>Enable to start your product with right mouse click</title>
+	<para>
+		You can also add the
+		<wordasword>pde nature</wordasword>
+		to your project in which you placed the product configuration file,
+		if
+		you want to
+		be
+		able
+		to start your product via a
+		right-click on the
+		product
+		and by selecting
+		<menuchoice>
+			<guimenu>Run-as</guimenu>
+			<guisubmenu>Eclipse Application</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<note>
+		<para>
+			The
+			<guilabel>Package Explorer</guilabel>
+			view
+			may have a filter set for
+			<wordasword>.*resources</wordasword>
+			. You can modify this filter via the view menu as depicted in the
+			following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/removefilterfordotfiles10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Remove filter</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</note>
+
+	<para>
+		For this
+		purpose
+		remove
+		the filter in the
+		<guilabel>Package Explorer</guilabel>
+		view
+		for files starting with . (dot) and modify the
+		<filename>.project</filename>
+		file to the following.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/firstrcp/project" />
+		</programlisting>
+	</para>
+
+</section>

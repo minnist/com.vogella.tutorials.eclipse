@@ -1,0 +1,100 @@
+<section id="swtbotexample" role="wrapper">
+	<title>Exercise: Write SWTBot test
+	<section id="swtbotexample_installation">
+		<title>Installation
+		
+			Ensure to install SWTBot into your Eclipse IDE. See
+			<xref linkend="swtbotinstallation" />
+			for detailed information.
+		
+	</section>
+	<section id="swtbotexample_project">
+		<title>Create project
+		
+			Create a new plug-in
+			called
+			<wordasword>com.example.e4.rcp.todo.uitest</wordasword>
+			and add the following dependencies to the
+			<filename>MANIFEST.MF</filename>
+			file:
+
+			<itemizedlist>
+				<listitem>
+					org.eclipse.swt
+				</listitem>
+				<listitem>
+					org.junit
+				</listitem>
+				<listitem>
+					org.eclipse.swtbot.go
+				</listitem>
+				<listitem>
+					org.eclipse.swtbot.junit4_x
+				</listitem>
+				<listitem>
+					org.eclipse.swtbot.swt.finder
+				</listitem>
+			</itemizedlist>
+		
+	</section>
+	<section id="swtbotexample_test">
+		<title>Create test
+		
+			Write the following test class.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/eclipse4/ExitHandlerTest.java" />
+			</programlisting>
+		
+	</section>
+	<section id="swtbotexample_launchconfiguration">
+		<title>Adjust launch configuration
+		
+			Right-click on your test class and select
+			<menuchoice>
+				<guimenu>Run</guimenu>
+				<guisubmenu>JUnit Plug-in Test</guisubmenu>
+			</menuchoice>
+			.
+		
+		This test run should fail or result in error messages but it
+			creates a launch configuration which you can adjust.
+		
+		
+			Select
+			<menuchoice>
+				<guimenu>Run</guimenu>
+				<guisubmenu>Run Configurations...</guisubmenu>
+			</menuchoice>
+			and switch to the
+			_Main_
+			tab.
+		
+		Select that your product should be started similar to the
+			following screenshot.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/swtbot_startproduct10.png"
+						scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Select the product which should be started</phrase>
+				</textobject>
+			</mediaobject>
+		
+	</section>
+
+
+	<section id="swtbotexample_validate">
+		<title>Validating
+		 Run your test and verify that the test runs successfully.
+			If you
+			have used different text in your menu, adjust the test until it runs
+			successfully.
+		
+	</section>
+</section>

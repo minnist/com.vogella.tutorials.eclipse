@@ -1,0 +1,29 @@
+<chapter id="exercise_templates">
+	<title>Exercise: Creating and using template</title>
+	<section id="exercise_templates1">
+		<title>Create template for try/catch/finally</title>
+		<para>Create a template which creates the following block.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tryfinally10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Try catch finally template</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Place the cursor after the first bracket after the
+			<code>try</code>
+			statement.
+		</para>
+	</section>
+	<section id="exercise_templates2">
+		<title>Use template</title>
+		<para>Test your template in the Java editor and ensure that it works
+			as
+			expected.
+		</para>
+	</section>
+</chapter>

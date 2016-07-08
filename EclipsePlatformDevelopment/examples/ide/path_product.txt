@@ -1,0 +1,1 @@
+eclipse.platform.releng.tychoeclipsebuilder/sdk/target/products/*

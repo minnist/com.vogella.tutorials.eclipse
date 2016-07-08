@@ -1,0 +1,217 @@
+<section id="eclipsesui" role="wrapper">
+	<title>Important Eclipse terminology</title>
+	<section id="generaluistructoreofide">
+		<title>How is the Eclipse IDE structured?</title>
+		<para>
+			Eclipse provides
+			<wordasword>Perspectives</wordasword>
+			,
+			<wordasword>Views</wordasword>
+			and
+			<wordasword>Editors</wordasword>
+			.
+			<wordasword>Views</wordasword>
+			and
+			<wordasword>Editors</wordasword>
+			are grouped into
+			<wordasword>Perspectives</wordasword>
+			.
+		</para>
+	</section>
+	<section id="workspace">
+		<title>Workspace</title>
+		<indexterm>
+			<primary>Workspace</primary>
+		</indexterm>
+		<para>
+			The
+			<wordasword>workspace</wordasword>
+			is the physical location (file path) you are
+			working in. Your
+			projects,
+			source files, images and other artifacts
+			can be
+			stored and
+			saved in
+			your workspace. The
+			<wordasword>workspace</wordasword>
+			also contains preferences settings, plug-in specific meta data, logs
+			etc.
+		</para>
+		<para>
+			You typically use different
+			<wordasword>workspaces</wordasword>
+			if
+			you require different settings for your project or if you
+			want to
+			divide your projects into separate directories.
+		</para>
+		<note>
+			<para>
+				It is not mandatory that a project resides within the
+				<filename>workspace</filename>
+				directory.
+				It is
+				possible to refer to external
+				resources
+				(e.g.,
+				projects)
+				from
+				the
+				<wordasword>workspace</wordasword>
+				.
+			</para>
+		</note>
+		<para>
+			You can
+			choose the workspace during startup of
+			Eclipse or
+			via the menu
+			(
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Switch Workspace</guisubmenu>
+				<guisubmenu>Others</guisubmenu>
+			</menuchoice>
+			)
+			.
+
+		</para>
+
+	</section>
+	<section id="workspace_project">
+		<title>Eclipse projects</title>
+		<indexterm>
+			<primary>Projects</primary>
+		</indexterm>
+		<para>
+			An Eclipse project contains source, configuration and binary
+			files
+			related to a
+			certain task and groups them into
+			buildable and
+			reusable
+			units. An Eclipse project can have
+			<wordasword>natures</wordasword>
+			assigned to it which describe the purpose of this project. For
+			example, the Java
+			<wordasword>nature</wordasword>
+			defines a project as Java project. Projects can have multiple natures
+			combined to model different technical aspects.
+		</para>
+		<para>
+			<wordasword>Natures</wordasword>
+			for a project are defined via the
+			<filename>.project</filename>
+			file in the project directory.
+		</para>
+		<para>Projects in Eclipse cannot contain other projects. </para>
+	</section>
+
+	<section id="parts_editorviews">
+		<title>Views or editors</title>
+		<indexterm>
+			<primary>Editor</primary>
+		</indexterm>
+		<indexterm>
+			<primary>View</primary>
+		</indexterm>
+		<!-- Screenshot for the Eclipse RCP book -->
+		<!-- Screenshot for the Eclipse IDE book -->
+		<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+			<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+
+
+		<para>
+			Individual elements (part) of the Eclipse UI
+			are typically classified into
+			<wordasword>views</wordasword>
+			and
+			<wordasword>editors</wordasword>
+			.
+		</para>
+		<para>
+			A
+			view
+			is
+			typically
+			used to work on a set of data, which might be a
+			hierarchical
+			structure. If data
+			is
+			changed via the
+			view,
+			this change is
+			typically directly applied to the
+			underlying data
+			structure. A
+			view
+			sometimes allows the user to open
+			an
+			editor
+			for the selected set of data.
+		</para>
+		<para>
+			An example for a
+			view in the Eclipse IDE
+			is the
+			<wordasword>Project Explorer</wordasword>
+			, which allows you to browse the files of Eclipse projects. If you
+			change data in the
+			<wordasword>Project Explorer</wordasword>
+			, e.g.,
+			if you rename a file, the
+			file
+			name
+			is directly changed on the
+			file
+			system.
+		</para>
+		<para>
+			Editors
+			are
+			typically used to modify a single data element, e.g.,
+			the content of a
+			file or a
+			data object. To apply
+			the
+			changes made in an
+			editor to the
+			data
+			structure, the user has to explicitly save the
+			editor content.
+		</para>
+
+		<para>
+
+			For example, the
+			<guilabel>Java</guilabel>
+			editor
+			is used to modify Java source files. Changes to the source file
+			are
+			applied once the user selects the
+			<guilabel>Save</guilabel>
+			button. A dirty editor tab is marked with an asterisk
+			left to the
+			name of the modified file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/dirtyeditor10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Editor marked as dirty</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+
+
+</section>
+
+
+
+

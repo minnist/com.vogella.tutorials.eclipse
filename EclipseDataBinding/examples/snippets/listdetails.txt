@@ -1,0 +1,27 @@
+
+ObservableListContentProvider contentProvider = new ObservableListContentProvider();
+viewer.setContentProvider(contentProvider);
+
+// create the label provider including monitoring of the changes of the
+// labels
+IObservableSet knownElements = contentProvider.getKnownElements();
+final IObservableMap firstNames = BeanProperties.value(Person.class,
+	"firstName").observeDetail(knownElements);
+final IObservableMap lastNames = BeanProperties.value(Person.class,
+	"lastName").observeDetail(knownElements);
+
+IObservableMap[] labelMaps = { firstNames, lastNames };
+
+ILabelProvider labelProvider = new ObservableMapLabelProvider(labelMaps) {
+	public String getText(Object element) {
+		return firstNames.get(element) + " " + lastNames.get(element);
+	}
+};
+
+viewer.setLabelProvider(labelProvider);
+
+// create sample data
+List<Person> persons = MyModel.getPersons();
+input = new WritableList(persons, Person.class);
+// Set the writeableList as input for the viewer
+viewer.setInput(input);

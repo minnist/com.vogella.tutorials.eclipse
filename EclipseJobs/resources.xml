@@ -1,0 +1,25 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<section id="resources_p2">
+		<title>Eclipse Jobs resources</title>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/JavaConcurrency/article.html"> Java Concurrency Tutorial</ulink>
+		</para>
+		<para>
+			<ulink url="http://www.vogella.com/tutorials/SWT/article.html"> SWT Tutorial</ulink>
+		</para>
+
+		<para>
+			<ulink
+				url="http://www.eclipse.org/articles/Article-Concurrency/jobs-api.html">
+				http://www.eclipse.org/articles/Article-Concurrency/jobs-api.html</ulink>
+			Eclipse Jobs API
+		</para>
+
+	</section>
+	
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+
+
+</section>

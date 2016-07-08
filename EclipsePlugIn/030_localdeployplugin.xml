@@ -1,0 +1,243 @@
+<section id="deployplugin" role="wrapper">
+	<title>Local deployment of your plug-in</title>
+	<section id="deployplugin_overview">
+		<title>Options for installing a plug-in</title>
+		<indexterm>
+			<primary>Plug-in deployment</primary>
+		</indexterm>
+
+		<indexterm>
+			<primary>Deployment of plug-ins</primary>
+		</indexterm>
+
+		<para>
+			You have several options to make your plug-in available in your
+			Eclipse IDE. You can:
+			<itemizedlist>
+				<listitem>
+					<para>Install your plug-in directly into your current Eclipse installation, using your Eclipse IDE. This
+						option is
+						useful for
+						a quick
+						installation and a test during development.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Export your plug-in and copy it into the
+						<filename>dropins</filename>
+						folder of your Eclipse installation. This option is useful for a simple distribution scenario,
+						where you only have
+						to
+						provide the exported plug-in to
+						your users. On
+						the other hand it is not very convenient for the end user as it
+						requires manual file copying and
+						provides no simple way to update
+						the plug-in.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Create an update site and use the Eclipse update manager
+						to
+						install it from this site. This is the simplest
+						approach for the end user. It also allows providing updates to all interested users.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+
+	<section id="deployplugin_direct">
+		<title>Installing your plug-in from your Eclipse IDE</title>
+		<indexterm>
+			<primary>Plug-in deployment</primary>
+			<secondary>installation into host IDE
+			</secondary>
+		</indexterm>
+		<para>
+			You can install
+			your plug-in directly into your running Eclipse
+			IDE.
+		</para>
+		<para>
+			The Eclipse plug-in export wizard has an option for this. Open the
+			export wizard via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Export</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Deployable plug-ins and fragments</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideexport10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Export plug-in into host IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			In the export wizard
+			dialog select in this case
+			<guilabel>Install into host. Repository</guilabel>
+			. This is depicted in the following screenshot.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideexport20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Export plug-in into host IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="deployplugin_export">
+		<indexterm>
+			<primary>Dropins folder</primary>
+		</indexterm>
+		<title>Export plug-in and put into dropins folder</title>
+		<indexterm>
+			<primary>Plug-in deployment</primary>
+			<secondary>
+				export and installation into dropins folder
+			</secondary>
+		</indexterm>
+		<para>
+			If you export your plug-in locally, you can put it into the
+			Eclipse
+			<filename class="directory">dropins</filename>
+			folder of your Eclipse installation. After a restart
+			of your Eclipse
+			your plug-in should be available and ready for
+			use.
+		</para>
+
+		<para>
+			Open again the
+			export wizard via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Export</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Deployable plug-ins and fragments</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+
+		<para>
+			Select the plug-in you want to export and the folder to which
+			this plug-in should get exported.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideexport30.png"/>
+
+				</imageobject>
+				<textobject>
+					<phrase>Export plug-in into host IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Press the
+			<guibutton>Finish</guibutton>
+			button.
+			This creates a
+			<filename>JAR</filename>
+			file with the exported plug-in in the selected directory.
+		</para>
+
+		<para>
+			Copy this
+			<filename>JAR</filename>
+			file
+			to
+			the
+			<filename class="directory">dropins</filename>
+			directory in your Eclipse installation directory and
+			restart your
+			running Eclipse.
+		</para>
+		<para>
+			After this restart your new plug-in is available
+			in
+			your
+			Eclipse
+			installation and ready to be used.
+		</para>
+
+	</section>
+
+	<section id="deployplugin_export_updatesite">
+		<title>Deployment using an update site</title>
+		<indexterm>
+			<primary>Update sites</primary>
+		</indexterm>
+		<indexterm>
+			<primary>p2 update site</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Deployment using update sites</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Plug-in deployment</primary>
+			<secondary>
+				Using update sites
+			</secondary>
+		</indexterm>
+
+		<para>
+			You can create an update site for your plug-in. An update
+			site
+			consists of static files, which can be placed on a
+			file server or
+			a
+			web
+			server. Other users can install Eclipse plug-in from this update
+			site
+			by providing them a link to the
+			update site.
+		</para>
+
+		<para>
+			This
+			requires that you create a
+			feature project for the plug-in.
+			You can
+			export this feature project and use the
+			Eclipse update manager
+			to
+			install the
+			feature (with the plug-in).
+		</para>
+
+		<para>
+			By
+			default, the
+			Eclipse update manager shows
+			only features
+			included into a
+			category. Therefore, you
+			should always
+			use a
+			category for your
+			exported
+			feature to make it
+			easy for the user to install your feature.
+		</para>
+	</section>
+</section>

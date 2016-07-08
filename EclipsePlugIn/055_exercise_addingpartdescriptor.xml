@@ -1,0 +1,112 @@
+<section id="exercise_e4partsin3x" role="wrapper">
+	<title>Exercise: Adding e4 part descriptors to 3.x based applications</title>
+
+	<section id="exercise_e4partdescriptor_target">
+		<title>Target</title>
+		<para>In this exercise you add a model based part contribution to an Eclipse 3.x RCP application.
+		</para>
+	</section>
+
+
+	<section id="exercise_usingpartdescriptors">
+		<title>Adding a part descriptor </title>
+		<para>
+			Create a simple plug-in called
+			<code>com.vogella.plugin.partdescriptor</code>
+			.
+		</para>
+		<para>
+			Add the following dependencies to your manifest file.
+
+			<itemizedlist>
+				<listitem>
+					<para>org.eclipse.core.runtime
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.jface
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.ui.model.workbench</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.ui.di</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>Create the following class</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/migration/PartEclipse4x.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Add a new model fragment to this plug-in via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Eclipse 4</guisubmenu>
+				<guisubmenu>Model</guisubmenu>
+				<guisubmenu>New Model Fragment</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ide_partdescriptor10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Adding a part descriptor to the Eclipse IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ide_partdescriptor20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a part descriptor to the Eclipse IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ide_partdescriptor40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Adding a part descriptor to the Eclipse IDE</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="exercise_e4partdescriptor_validate">
+		<title>Validating</title>
+
+		<para>
+			Start an instance of the Eclipse IDE and validate that you can open the parts via the Quick Access box (shortcut
+			Ctrl+3).
+		</para>
+		<note>
+			<para>
+				In Eclipse 4.4 the part descriptor can only be opened via the Quick Access box. In Eclipse
+				4.5 it
+				is planned that it
+				can also be opened via the
+				<menuchoice>
+					<guimenu>Window</guimenu>
+					<guisubmenu>Show View</guisubmenu>
+				</menuchoice>
+				menu entry.
+			</para>
+		</note>
+	</section>
+
+
+</section>

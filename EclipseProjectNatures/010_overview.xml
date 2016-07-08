@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section id="EclipseProjectNatures_overview">
+	<title>Project Natures in Eclipse</title>
+    <para>Project Natures are used in the Eclipse IDE in order to configure projects in the
+        workspace.</para>
+    <para>One project may consist of several project natures. The most popular project nature is
+            <code>org.eclipse.jdt.core.javanature</code>, which is used to specify the project as
+        Java project.</para>
+    <para>Some examples for project natures are:</para>
+    <para>
+        <table frame="all">
+            <title>Examples of Project Natures</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Project Nature's ID</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>org.eclipse.jdt.core.javanature</entry>
+                        <entry>Java Projects</entry>
+                    </row>
+                    <row>
+                        <entry>org.eclipse.buildship.core.gradleprojectnature</entry>
+                        <entry>Gradle Projects</entry>
+                    </row>
+                    <row>
+                        <entry>org.eclipse.m2e.core.maven2Nature</entry>
+                        <entry>Maven Projects</entry>
+                    </row>
+                    <row>
+                        <entry>org.eclipse.pde.core.org.eclipse.pde.PluginNature</entry>
+                        <entry>Eclipse Plugin Projects</entry>
+                    </row>
+                    <row>
+                        <entry>org.eclipse.pde.core.org.eclipse.pde.FeatureNature</entry>
+                        <entry>Eclipse Feature Projects</entry>
+                    </row>
+                    <row>
+                        <entry>org.eclipse.pde.core.org.eclipse.pde.UpdateSiteNature</entry>
+                        <entry>Eclipse Updatesite Projects</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </para>
+    <para>If your Eclipse installation offers some additional project natures, which can be applied
+        to a project, you usually can convert the project via context menu.</para>
+    <para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="images/configure_project_popup.png"/>
+            </imageobject>
+        </mediaobject>
+    </para>
+    <para>
+        <note>
+            <para>The <guimenu>Configure</guimenu> menu is only visible, if there are project
+                natures, which can be applied. Otherwise it is not shown at all.</para>
+        </note>
+    </para>
+</section>

@@ -1,0 +1,5 @@
+org.osgi.framework.BundleException: 
+   Could not resolve module: com.example.e4.rcp.todo.services [9]
+      Unresolved requirement: 
+         Require-Bundle: com.example.e4.rcp.todo.events; 
+            bundle-version="1.0.0"

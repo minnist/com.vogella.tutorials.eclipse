@@ -1,0 +1,2 @@
+
+IEditorPart.getEditorSite().getActionBars();

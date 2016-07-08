@@ -1,0 +1,2 @@
+
+java -classpath myprogram.jar de.vogella.eclipse.ide.first.MyFirstClass

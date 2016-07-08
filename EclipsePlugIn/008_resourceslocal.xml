@@ -1,0 +1,56 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_eclipseplugin">
+		<title>Eclipse plug-in development resources</title>
+		<para>
+			<ulink url="http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ">
+				http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ
+			</ulink>
+			Eclipse Plug-in Development FAQ
+		</para>
+
+
+		<para>
+			<ulink
+				url="https://wiki.eclipse.org/Eclipse_Articles,_Tutorials,_Demos,_Books,_and_More">
+				Wiki with link to Eclipse Articles, Tutorials, Demos, Books
+			</ulink>
+		</para>
+		<para>
+			<ulink url="https://wiki.eclipse.org/Eclipse_Corner">
+				Eclipse tutorials hosted at Eclipse.org.
+			</ulink>
+		</para>
+
+	</section>
+	<section id="resources_eclipsepluginspecial">
+		<title>Special Eclipse plug-in development topics</title>
+
+		<para>
+			<ulink
+				url="http://www.eclipse.org/articles/article.php?file=Article-Adapters/index.html">
+				http://www.eclipse.org/articles/article.php?file=Article-Adapters/index.html
+			</ulink>
+			Adapters in Eclipse
+		</para>
+		<para>
+			<ulink
+				url="http://www.eclipse.org/articles/Article-Resource-deltas/resource-deltas.html">
+				http://www.eclipse.org/articles/Article-Resource-deltas/resource-deltas.html
+			</ulink>
+			How to react to Eclipse resource deltas
+		</para>
+		<para>
+
+			<ulink
+				url="http://www.ibm.com/developerworks/opensource/tutorials/os-eclipse-plugin-guide/"> Using markers, annotations, and decorators in Eclipse (IBM)
+			</ulink>
+			.
+		</para>
+
+
+	</section>
+
+
+</section>

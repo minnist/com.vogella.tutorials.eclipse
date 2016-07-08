@@ -1,0 +1,289 @@
+<section id="commandsmore" role="wrapper">
+	<title>More on commands and handlers</title>
+
+
+	<section id="commands_parameter">
+		<title>Passing parameters to commands</title>
+		<indexterm>
+			<primary>Commands</primary>
+			<secondary>Parameters</secondary>
+		</indexterm>
+		<para>
+			You can also pass parameters to commands. For this select a command
+			and
+			press the
+			<guilabel>Add</guilabel>
+			button in the
+			<guilabel>Parameters</guilabel>
+			section.
+		</para>
+		<para>
+			The ID is the identifier which you can use to get the parameter value
+			injected via
+			the
+			<code>@Named</code>
+			annotation.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_commandpara10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Add a parameter to a command</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			In your HandledMenuItem or HandledToolItem add a parameter and put
+			the ID from the command parameter definition into
+			the
+			<guilabel>Name</guilabel>
+			field. The
+			entry from the
+			<guilabel>Value</guilabel>
+			field is passed to the handler of the command.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_commandpara30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Passing a parameter from a menu entry to a command</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<warning>
+			<para>
+				The ID of the parameter is the important one. This ID must be
+				injected via the
+				<code>@Named</code>
+				annotation and used as
+				<parameter>Name</parameter>
+				(second field) during the definition of the menu or toolbar. This is
+				highlighted in the following picture.
+			</para>
+		</warning>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/parameter_relationship10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Relationship between parameters in command and menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			To get the parameter injected into your handler class you specify the
+			ID of the parameter via the
+			<code>@Named</code>
+			annotation. This is demonstrated in the
+			following code
+			example.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/commandparameter/TestHandler.java" />
+			</programlisting>
+		</para>
+
+
+		<tip>
+			<para>
+				Alternatively to injecting each parameter, you can also inject the
+				<code>ParameterizedCommand</code>
+				command and access
+				the parameters via API.
+			</para>
+			<para>
+				<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+						href="./examples/commandparameter/TestHandlerWithCommandInjected.java" />
+				</programlisting>
+			</para>
+		</tip>
+	</section>
+
+
+
+	<section id="commandsmore_coreexpressions">
+		<title>Usage of core expressions</title>
+		<indexterm>
+			<primary>Core expressions</primary>
+		</indexterm>
+		<para>
+			The visibility of menus, toolbars and their entries can be restricted
+			via
+			<wordasword>core expressions</wordasword>
+			. You add the corresponding attribute in the
+			application model to the
+			ID defined by the
+			<code>org.eclipse.core.expressions.definitions</code>
+			extension point in the
+			<filename>plugin.xml</filename>
+			file.
+		</para>
+		<para>
+			To add this extension point to your application, open the
+			<filename>plugin.xml</filename>
+			file and select the
+			<guilabel>Dependencies</guilabel>
+			tab in the editor. Add the
+			<code>org.eclipse.core.expressions</code>
+			plug-in in the
+			<guilabel>Required Plug-ins</guilabel>
+			section.
+		</para>
+		<para>
+			Afterwards select the
+			<guilabel>Extensions</guilabel>
+			tab, press the
+			<guilabel>Add</guilabel>
+			button
+			and add the
+			<code>org.eclipse.core.expressions.definitions</code>
+			extension. You define an ID under which the core expression can be
+			referred to in the application model.
+		</para>
+		<para>Via right-click on the extension you can start building
+			your
+			expression.
+		</para>
+
+
+		<para>
+			The following example can be used to restrict the visibility of
+			a menu
+			entry based on the type of the current
+			selection. You will later
+			learn how to set the current selection. Please note that
+			the variable
+			for the
+			selection is
+			currently called
+			<code>org.eclipse.ui.selection</code>
+			. In Eclipse 3.x this variable is called
+			<code>selection</code>
+			.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/instanceof.xml" />
+			</programlisting>
+		</para>
+		<para>You can assign this core expression to your menu entry in the
+			application model. It can be used to restrict the
+			visibility of model
+			elements.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_coreexpression10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Enabling the core expression for a menu entry</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_coreexpression12.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Assigning it to the menu entry</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para> This approach is similar to the definition of core expressions
+			in Eclipse 3.x.
+		</para>
+		<para>
+			The values available for Eclipse 3.x are contained in the
+			<code>ISources</code>
+			interface and documented in the
+			<ulink url="http://wiki.eclipse.org/Command_Core_Expressions"> Eclipse
+				core expressions wiki
+			</ulink>
+			. Eclipse 4 does not always support the same variables, but
+			the
+			wiki
+			documentation
+			might still be helpful.
+		</para>
+
+	</section>
+
+	<section id="commandsmore_coreexpressionsown">
+		<title>Evaluate your own values in core expressions</title>
+		<para>
+			You can also place values in the
+			<code>IEclipseContext</code>
+			of your application and use these for your visible-when evaluation.
+		</para>
+		<para>
+			The following code demonstrates an example handler class which places
+			a
+			value for the
+			<parameter>myactivePartId</parameter>
+			key in the context (you will learn more
+			about modifying the
+			<code>IEclipseContext</code>
+			later).
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/coreexpression/putactivePartId.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			The following shows an example core expression which evaluates to
+			<code>true</code>
+			if an
+			<parameter>myactivePartId</parameter>
+			key
+			with the value
+			<code>com.example.e4.rcp.ui.parts.todooverview</code>
+			is found in the context.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/activepart.xml" />
+			</programlisting>
+		</para>
+
+		<para>This core expression can get assigned to a menu entry and
+			control the visibility.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_coreexpression20.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Assigning the visible-when core expression to the menu
+						entry
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+
+</section>

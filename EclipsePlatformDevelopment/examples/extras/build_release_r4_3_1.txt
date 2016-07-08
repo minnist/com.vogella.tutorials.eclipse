@@ -1,0 +1,7 @@
+git checkout tags/R4_3_1
+git submodule update
+
+# run the build
+# command must be issued in one line
+mvn clean verify 
+ -Dlicense-repo.url=http://download.eclipse.org/cbi/updates/license/

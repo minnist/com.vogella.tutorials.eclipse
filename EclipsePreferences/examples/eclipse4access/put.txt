@@ -1,0 +1,15 @@
+
+// get IEclipsePreferences injected to change a value
+@Execute
+public void execute
+	(@Preference(nodePath = "com.example.e4.rcp.todo") IEclipsePreferences prefs) {
+	// more stuff...
+	prefs.put("user", "TestUser");
+	prefs.put("password", "Password");
+	// Persists
+	try {
+	prefs.flush();
+		} catch (BackingStoreException e) {
+			e.printStackTrace();
+		}
+}

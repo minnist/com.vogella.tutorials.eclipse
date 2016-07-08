@@ -1,0 +1,207 @@
+<section id="preferences" role="wrapper">
+	<title>More on preference settings</title>
+	<section id="tips_launchconfiguration">
+		<title>Launch Configuration</title>
+		<indexterm>
+			<primary>Preferences</primary>
+			<secondary>launch previous launched application
+			</secondary>
+		</indexterm>
+		<para>
+			Eclipse allows you to start an application via the
+			<guibutton>Run</guibutton>
+			button in the menu or via the
+			<keycombo>
+				<keycap>Ctrl</keycap>
+				<keycap>F11</keycap>
+			</keycombo>
+			shortcut. By default, Eclipse determines if the currently selected
+			file is executable and try to start that. This is sometimes confusing.
+			You can configure the Eclipse IDE to always start the last started
+			program.
+		</para>
+		<para>
+			To configure this, select
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Run/Debug</guisubmenu>
+				<guisubmenu>Launching</guisubmenu>
+			</menuchoice>
+			and define that the previous launched application should always be
+			launched.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/androideclipsesetup10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Setting the previous launched application</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+	<section id="tips_fileassociation">
+		<title>Configuring the editors for a file extension</title>
+		<indexterm>
+			<primary>Preferences</primary>
+			<secondary>configure editor for given file extension
+			</secondary>
+		</indexterm>
+		<para>
+			The
+			<wordasword>Editors</wordasword>
+			which are available to open a file can be configured via
+			<menuchoice>
+				<guimenu>Window
+				</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>General</guisubmenu>
+				<guisubmenu>Editors</guisubmenu>
+				<guisubmenu>File Associations</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			The
+			<guibutton>Default</guibutton>
+			button in this preference dialog allows you to set the default
+			editor for
+			a certain file extension, e.g., this is the
+			<wordasword>editor</wordasword>
+			which will be used
+			by default if you open a new file with
+			this
+			extension.
+		</para>
+		<para>
+			The other configured
+			<wordasword>editors</wordasword>
+			can be selected if you right-click on a file and select
+			<menuchoice>
+				<guimenu>Open With</guimenu>
+			</menuchoice>
+			In the sub-menu you see the available editors. The available
+			editors
+			depend on your Eclipse installation.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/openeditor27.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Open With</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+
+			Eclipse will remember the last
+			<wordasword>editor</wordasword>
+			you used to open a
+			file and use this
+			<wordasword>editor</wordasword>
+			again the next time you open the file.
+		</para>
+
+	</section>
+
+	<section id="tips_savepreferences">
+		<title>Export and import preference settings</title>
+		<indexterm>
+			<primary>Preferences</primary>
+			<secondary>export and import preferences
+			</secondary>
+		</indexterm>
+		<para>
+			You can export your preference settings from one workspace
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Export</guisubmenu>
+				<guisubmenu>General</guisubmenu>
+				<guisubmenu>Preferences</guisubmenu>
+			</menuchoice>
+			.
+
+		</para>
+		<para>
+			Eclipse does allow you to export some preference settings
+			separately, but
+			for
+			most of
+			them you have to select the
+			<guilabel>Export all</guilabel>
+			flag.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse_exportpreferences10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Export your Eclipse preferences.</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Similarly, you can import
+			them
+			again into another
+			workspace via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Import</guisubmenu>
+				<guisubmenu>General</guisubmenu>
+				<guisubmenu>Preferences</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+	</section>
+	<section id="tips_projectpreferences">
+		<title>Preference settings per project</title>
+		<indexterm>
+			<primary>Preferences</primary>
+			<secondary>settings per project
+			</secondary>
+		</indexterm>
+		<para>
+			You can also configure certain preference settings on a per project
+			basis. To do this, select your project, right-click on it and select
+			<guilabel>Properties</guilabel>
+			. For example, on the
+			<menuchoice>
+				<guimenu>Java Editor</guimenu>
+				<guisubmenu>Save Actions </guisubmenu>
+			</menuchoice>
+			you can select the
+			<guilabel>Enable project specific settings</guilabel>
+			checkbox to configure the save action for the current project only.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/preferencesettingsperproject10.png"
+						scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Preference settings per project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			This creates a
+			<filename>.settings</filename>
+			folder which you can add to your version control system to ensure
+			that every developer uses the same setting.
+		</para>
+	</section>
+</section>

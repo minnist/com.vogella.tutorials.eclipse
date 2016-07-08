@@ -1,0 +1,44 @@
+<section id="pitfalls">
+	<title>Possible pitfalls with SWTBot
+	This section contains possible pitfalls, which might come up when implementing SWTBot
+		tests.
+	<section>
+		<title>Accessing a Link and clicking on it
+		First of all define a `org.eclipse.swt.widgets.Link` to be tested in the UI
+			code.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/swt_link.java"/>
+			</programlisting>
+		
+		So the text applied to the `Link` is
+				<property>&lt;a>www.vogella.com&lt;/a></property>, but in the UI you'll see
+			this:
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/vogella_SWT_Link.png"/>
+				</imageobject>
+			</mediaobject>
+		
+		When this `Link` should now be accessed by the `SWTBot` using
+			the text of this `Link`, <property>&lt;a>www.vogella.com&lt;/a></property>
+			has to be used.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/access_swt_link.java"/>
+			</programlisting>
+		
+		Another pitfall concerning a `SWTBotLink` is that invoking the
+				`click()` might not work properly. Therefore the `SWTBotLink`
+			also provides an overloaded version of the `click()` method with a
+				`String` parameter, which contains the hyperlink text.
+		<para/>
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/click_swt_link.java"/>
+			</programlisting>
+		
+		So the `click(String hyperlinkText)` method should always be used rather than just the simple `click()` method.
+	</section>
+</section>

@@ -1,0 +1,4 @@
+button = new Button(parent, SWT.PUSH);
+GridData gridData = new GridData();
+gridData.horizontalSpan = 2;
+button.setLayoutData(gridData);

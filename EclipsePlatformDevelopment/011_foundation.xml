@@ -1,0 +1,125 @@
+<section id="eclipseproject" role="wrapper">
+	<title>The Eclipse foundation and the Eclipse public license</title>
+	<section id="eclipsefoundation">
+		<title>Eclipse foundation</title>
+		<indexterm>
+			<primary>Eclipse Foundation</primary>
+		</indexterm>
+		<para>
+			The Eclipse projects are governed by the
+			<wordasword>Eclipse Foundation</wordasword>
+			.
+			The
+			Eclipse Foundation
+			is a non-profit, member supported
+			corporation
+			that
+			hosts the Eclipse
+			Open
+			Source
+			projects and helps
+			to cultivate both
+			its open source
+			community and
+			its
+			ecosystem of complementary products
+			and
+			services.
+		</para>
+		<para>
+			The Eclipse Foundation does not work on the Eclipse code base,
+			i.e.,
+			it does not have employee developers working on
+			Eclipse.
+			The mission
+			of the
+			Eclipse Foundation is to
+			<emphasis>enable</emphasis>
+			the development by
+			providing
+			the infrastructure
+			(Git, Gerrit, Hudson
+			build
+			server, the download sites, etc.) and a
+			structured process. Eclipse projects follow a very well defined development process. To learn more about this process see the
+			eclipse.org website under the
+			<ulink url="http://www.eclipse.org/projects/dev_process/development_process.php">Eclipse Development Process Online link
+			</ulink>
+			.
+		</para>
+		<para>
+			There is also an Eclipse Foundation Europe based in Germany. See
+			<ulink url="https://www.eclipse.org/org/press-release/20131029_efe_faq.php ">Eclipse Foundation Europe FAQ</ulink>
+			for details.
+		</para>
+		<para>
+			In 2015 the Eclipse Foundation had approximately 20
+			employees.
+			See
+			<ulink url="http://www.eclipse.org/org/foundation/staff.php">Eclipse Foundation Staff</ulink>
+			for details.
+		</para>
+	</section>
+
+	<section id="eclipsepubliclicense" role="wrapper">
+		<title>The Eclipse Public License</title>
+		<indexterm>
+			<primary>Eclipse Public License</primary>
+		</indexterm>
+		<indexterm>
+			<primary>EPL</primary>
+		</indexterm>
+		<para>
+			The
+			<wordasword>Eclipse Public License</wordasword>
+			(EPL) is an open source software license used
+			by the
+			Eclipse Foundation
+			for its software. The EPL is designed to be
+			business-friendly. EPL
+			licensed programs can be used, modified, copied
+			and distributed free
+			of
+			charge. The consumer of EPL-licensed software
+			can choose to use this
+			software in closed source programs.
+		</para>
+		<para>Only
+			modifications in the original
+			EPL code must also be
+			released
+			as EPL code. This can for example be done by filling a bug report at
+			the public Eclipse bug tracker and by uploading a Gerrit change.
+		</para>
+
+		<para>
+			The
+			Eclipse Foundation
+			validates that source code contributed
+			to
+			Eclipse projects is
+			free
+			of intellectual property (IP) issues. This
+			process is known as IP
+			cleansing. Contributions with more than 1000
+			lines of code require the
+			creation of
+			a Contribution Questionnaire,
+			and
+			a review and approval
+			by the IP
+			team.
+		</para>
+
+		<para>
+			The permissive EPL and the IP cleansing effort of the
+			Eclipse
+			Foundation
+			makes reusing the source code of Eclipse projects
+			attractive
+			to companies.
+		</para>
+
+	</section>
+
+</section>

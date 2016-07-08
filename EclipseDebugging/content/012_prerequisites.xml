@@ -1,0 +1,13 @@
+<section id="prerequisites">
+	<title>Prerequisites</title>
+	<para> The following assumes you know how to develop simple standard
+		Java
+		programs. This article will focus on how to debug Java
+		applications in Eclipse.
+	</para>
+	<para>
+		The installation and usage of Eclipse as Java IDE is described in
+		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse Java IDE Tutorial</ulink>
+		.
+	</para>
+</section>

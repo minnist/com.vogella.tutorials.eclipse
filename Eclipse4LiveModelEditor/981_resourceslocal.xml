@@ -1,0 +1,31 @@
+<section id="webresrouces_eclipse4">
+	<title>Eclipse 4 resources</title>
+
+	<para>
+		<ulink url="http://wiki.eclipse.org/Eclipse4/RCP">Eclipse 4 RCP Wiki</ulink>
+	</para>
+
+	<para>
+		<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/FAQ">Eclipse 4 RCP FAQ</ulink>
+	</para>
+	<para>
+		<ulink url="http://www.vogella.com/eclipse.html"> vogella Eclipse Tutorials</ulink>
+	</para>
+	<para>
+		<ulink url="http://wiki.eclipse.org/Eclipse4/Tutorials"> Eclipse wiki with Eclipse 4 tutorials</ulink>
+	</para>
+	<para>
+		<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection">Eclipse 4 Dependency Injection Wiki</ulink>
+	</para>
+
+	<para>
+		<ulink url="http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags"> Eclipse 4 RCP Wiki for tags for the Application
+			model</ulink>
+	</para>
+	<para>
+		<ulink
+			url="http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html">Eclipse 4 Build Schedule</ulink>
+	</para>
+</section>
+
+	

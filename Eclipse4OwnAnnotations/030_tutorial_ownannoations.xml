@@ -1,0 +1,167 @@
+<section id="customannotations_tutorial" role="wrapper">
+	<title>Exercise: Creating custom annotations</title>
+	<section id="customannotations_tutorial_overview">
+		<title>Target</title>
+		<para>
+			The following exercise demonstrates how to create a custom
+			annotation and a processor for it.
+		</para>
+		<para>
+			The
+			annotation processor is registered for a custom
+			<code>@DirectTodo</code>
+			annotation, which is a qualifier and therefore has to be used
+			together with
+			<code>@Inject</code>
+			. The
+			<code>@DirectTodo</code>
+			annotation can have a id for requesting a Todo with a certain id.
+		</para>
+	</section>
+	<section id="customannotations_tutorial_plugin">
+		<title>Creating a new plug-in </title>
+		<para>
+			Create a new simple plug-in project called
+			<wordasword>com.example.e4.rcp.todo.ownannotation</wordasword>
+			.
+		</para>
+		<para>
+			Add the following plug-ins as dependencies to your new plug-in.
+
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.core.di</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>com.example.e4.rcp.todo.model</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+			Also configure that the
+			<code>javax.inject</code>
+			package should be used.
+		</para>
+	</section>
+
+
+	<section id="customannotations_tutorial_annotation">
+		<title>Define and export annotations</title>
+		<para>
+			Define the following annotation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodo.java" />
+			</programlisting>
+		</para>
+		<para>
+			Export the
+			<code>com.example.e4.rcp.todo.ownannotation</code>
+			package
+			via your
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+	</section>
+
+	<section id="customannotations_enable_ds_annotations">
+		<title>Ensure annotation processing and plug-in activation is active</title>
+		<para>
+			Ensure that OSGi services can be defined via annotations in the class via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>DS annotations</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			Ensure that the
+			<guilabel>Activate this plug-in when one of its classes is loaded</guilabel>
+			flag for the service plug-in is set in the
+			<filename>MANIFEST.MF</filename>
+			file.
+			Depending on your setup, this flag
+			might
+			already be set.
+		</para>
+
+	</section>
+
+	<section id="customannotations_tutorial_class">
+		<title>Create service implementation</title>
+		<para>
+			Create the
+			<code>com.example.e4.rcp.todo.ownannotation.internal</code>
+			package and the following class. Based on the annotation this will register this class as service for the
+			<code>ExtendedObjectSupplier</code>
+			abstract class via OSGi declarative services.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodoObjectSupplier.java" />
+			</programlisting>
+		</para>
+		<note>
+			<para>
+				The
+				<code>ExtendedObjectSupplier</code>
+				class
+				is not yet released as official API. See
+				<xref linkend="e4overview_api" />
+				.
+			</para>
+		</note>
+	</section>
+
+
+	<section id="customannotations_tutorial_dependencies">
+		<title>Add the plug-in as dependency</title>
+		<para>
+			Add your new plug-in as dependency to your
+			<code>com.example.e4.rcp.todo</code>
+			application plug-in via its
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+	</section>
+	<section id="customannotations_tutorial_feature">
+		<title>Update the product configuration (via the features)</title>
+		<para>
+			Include the new plug-in into your feature to make it available
+			for your product.
+		</para>
+
+	</section>
+
+	<section id="customannotations_tutorial_use">
+		<title>Validate: Use your custom annotation</title>
+
+		<para>
+			In order to use your new annotation, add it to a field or
+			method
+			parameter in one of your parts. For example add the
+			following method
+			to your
+			<code>PlaygroundPart</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ParameterDirectTodo.java" />
+			</programlisting>
+		</para>
+		<para>
+			Start your application (via the product as you added a new
+			plug-in).
+			Ensure that you get the Todo with id 1 injected
+			based on your
+			<code>@DirectTodo</code>
+			annotation.
+		</para>
+	</section>
+</section>

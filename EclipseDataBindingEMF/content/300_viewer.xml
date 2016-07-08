@@ -1,0 +1,33 @@
+<section id="example_viewer">
+	<title>EMF and Data Binding for JFace Viewer</title>
+	<para>
+		Create an RCP project called
+		<wordasword>de.vogella.databinding.emf.table</wordasword>
+		based on
+		the
+		<guilabel>RCP
+			application with a
+			view
+		</guilabel>
+		. Add the
+		<code>org.eclipse.emf.ecore</code>
+		plug-in as a
+		plug-in dependency.
+	</para>
+	<para>
+		Create a folder model and an Ecore Model "todo.ecore". Create
+		three
+		EClass. Class Responsible with the String attribute "name". Class
+		Todo
+		and the string attributes "summary" and "description" and a
+		reference
+		"owner" to the class "Responsible". Also make a class "Model"
+		which
+		contains a list of Todos.
+	</para>
+	<para> Change the class "View" to the following..... TODO THIS Part
+		still needs to be written.
+	</para>
+
+
+</section>

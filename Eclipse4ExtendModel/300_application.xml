@@ -1,0 +1,107 @@
+<section id="e4modelextend_rendererusage">
+	<title>Exercise: Use model extensions</title>
+	<section id="renderer_xmi">
+		<title>Exercise: Create the application</title>
+		<para>
+			Create a new Eclipse RCP application called
+			<wordasword>com.vogella.e4.appmodel.app</wordasword>
+			.
+		</para>
+
+		<para>
+			Add
+			a dependency to the following plug-ins:
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>com.vogella.e4.appmodel.extension</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>com.vogella.e4.appmodel.renderer</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<note>
+			<para>You have to manually adjust the application model, as the
+				default editors don't support your new model elements. It is
+				possible
+				to develop custom components in the editor to handle your
+				extensions
+				but that is beyond this description.
+			</para>
+		</note>
+		<para>
+			Add your model name space to the
+			<filename>Application.e4xmi</filename>
+			file. Please note that
+			<parameter>
+				xmlns:extension="http://www.vogella.com/ui/e4/extension"
+			</parameter>
+			defines the
+			UI of your model extension. By this you can use
+			<property>extension:modelelement</property>
+			in the file referring to your custom model
+			elements.
+		</para>
+
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/renderer/Application.e4xmi" />
+			</programlisting>
+		</para>
+
+		<para>Afterwards add your new part implementation to a part, the
+			snippet to add it listed below.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/renderer/Application2.e4xmi" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="renderer_extensionpoint">
+		<title>Register your factory via an extension point</title>
+		<para>
+			As a last step add the property
+			<property>rendererFactoryUri</property>
+			to your
+			product in
+			<filename>plugin.xml</filename>
+			with a link to your new factory:
+			<parameter>platform:/plugin/com.vogella.e4.renderer.maps/com.vogella.e4.renderer.maps.MyRendererFactory</parameter>
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/renderer/plugin2.xml" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="renderer_run">
+		<title>Run your application</title>
+
+		<para>
+			Run your application. The result should display the webpage to which
+			you pointed via the
+			<parameter>uri</parameter>
+			parameter.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/renderermodel90.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,26 @@
+<section id="preferences_use">
+	<title>Tutorial: Preferences via code</title>
+	<para>
+		You can create, store and retrieve preference values directly via
+		your
+		coding. The following gives an example for this. Create an Eclipse
+		composite with three buttons. Use this composite in one of your parts
+		(View or Editor).
+	</para>
+	<para>
+
+		The first
+		<code>Button</code>
+		will set the preference values. The next will display the values and
+		the last will clear the preference values.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/preferences/ButtonComposite.java" />
+		</programlisting>
+	</para>
+	<para> Run and test your program.
+	</para>
+
+</section>

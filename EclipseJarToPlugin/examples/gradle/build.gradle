@@ -1,0 +1,21 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.standardout:bnd-platform:1.2.0'
+	}
+}
+
+apply plugin: 'org.standardout.bnd-platform'
+
+repositories {
+	mavenCentral()
+}
+
+platform {
+        // eclipseHome only required for the "updateSite" task
+	eclipseHome = new File('/home/vogella/dev/eclipse46-2016-01-25/eclipse')
+	// list of JARs to convert to OSGi
+	bundle "org.powermock:powermock-easymock-release-full:1.6.1"
+}

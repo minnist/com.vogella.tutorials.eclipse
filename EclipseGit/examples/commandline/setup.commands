@@ -1,0 +1,5 @@
+
+git config --global user.name "Lars Vogel"
+git config --global user.email "lars.vogel@vogella.com"
+# Set default so that always all changes are pushed to the repository
+git config --global push.default "matching"

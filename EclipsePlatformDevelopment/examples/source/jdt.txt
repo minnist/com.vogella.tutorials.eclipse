@@ -1,0 +1,16 @@
+# the links below are web links intended to be opened by a browser
+# the pages contain URL for cloning the repositories 
+# at the bottom of the page
+
+# NOTE better get the Git URL via http://git.eclipse.org/r because
+# that URL contains also your user. That allows you to contribute back easier
+
+# JDT user interface
+http://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/
+
+# JDT core
+# hosts the Eclipse java compiler
+http://git.eclipse.org/c/jdt/eclipse.jdt.core.git/
+
+# JDT debug
+http://git.eclipse.org/c/jdt/eclipse.jdt.debug.git/ 

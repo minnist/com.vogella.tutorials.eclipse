@@ -1,0 +1,11 @@
+== Creating custom widgets
+There are three common approaches to create a custom SWT widget:
+
+* Compound custom widgets, which contain other existing widgets (`Composite`)
+* Custom basic widgets, which have no children and we simply draw on (`Canvas`)
+* Mixing both (`Composite` and `Canvas`)
+
+[NOTE]
+====
+As a rule for creating custom SWT widgets, you subclass `Composite` for compound widgets and subclass `Canvas` in case the widget should not have any children.
+====

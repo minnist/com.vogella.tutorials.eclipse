@@ -1,0 +1,21 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<para>
+		<ulink url="http://wiki.eclipse.org/E4">Eclipse E4 - Wiki</ulink>
+	</para>
+	<para>
+		<ulink
+			url="http://dirksmetric.wordpress.com/2012/08/01/tutorial-eclipse-rcp-e4-with-3-x-views-like-project-explorer-properties-etc/"> Blog post about using Eclipse 3.x components in Eclipse4</ulink>
+	</para>
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html"> Eclipse RCP</ulink>
+	</para>
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/EclipseEMF/article.html"> Eclipse EMF</ulink>
+	</para>
+	<para>
+		<ulink
+			url="http://www.vogella.com/tutorials/DependencyInjection/article.html">Dependency Injection</ulink>
+	</para>
+</section>

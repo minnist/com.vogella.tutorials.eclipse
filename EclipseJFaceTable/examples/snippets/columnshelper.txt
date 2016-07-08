@@ -1,0 +1,23 @@
+
+// fields for your class
+// assumes that you have these two icons
+// in the "icons" folder
+private final Image CHECKED = getImage("checked.gif");
+private final Image UNCHECKED = getImage("unchecked.gif");
+
+
+
+// more code...
+
+
+// helper method to load the images
+// ensure to dispose the images in your @PreDestroy method
+private static Image getImage(String file) {
+
+    // assume that the current class is called View.java
+	Bundle bundle = FrameworkUtil.getBundle(View.class);
+	URL url = FileLocator.find(bundle, new Path("icons/" + file), null);
+	ImageDescriptor image = ImageDescriptor.createFromURL(url);
+	return image.createImage();
+
+}

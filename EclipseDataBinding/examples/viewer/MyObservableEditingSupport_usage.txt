@@ -1,0 +1,14 @@
+DataBindingContext dbc = new DataBindingContext();
+
+TableViewer personViewer = new TableViewer(parent);
+personViewer.getTable().setHeaderVisible(true);
+
+TableViewerColumn firstNameViewerColumn = new TableViewerColumn(personViewer, SWT.NONE);
+firstNameViewerColumn.getColumn().setText("First name");
+firstNameViewerColumn.getColumn().setWidth(300);
+
+// apply MyObservableEditingSupport to the first name TableViewerColumn
+firstNameViewerColumn.setEditingSupport(new MyObservableEditingSupport(personViewer, dbc));
+
+ViewerSupport.bind(viewer, input, 
+    BeanProperties.value(String.class, "firstName")); 

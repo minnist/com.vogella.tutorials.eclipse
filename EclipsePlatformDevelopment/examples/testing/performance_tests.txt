@@ -1,0 +1,14 @@
+Scenario 
+'org.eclipse.core.tests.runtime.perf.UIStartupTest.testUIApplicationStartup' 
+(average over 1 samples):
+  System Time:          16.037,55d (no confidence)
+  Used Java Heap:           91,25M (no confidence)
+  Working Set:             446M (no confidence)
+  Elapsed Process:          11,93s (no confidence)
+  Kernel time:             750ms (no confidence)
+  CPU Time:                 27,7s (no confidence)
+  Hard Page Faults:         22 (no confidence)
+  Soft Page Faults:        172,24K (no confidence)
+  Text Size:                 4K (no confidence)
+  Data Size:                 0 (no confidence)
+  Library Size:              3,79G (no confidence)

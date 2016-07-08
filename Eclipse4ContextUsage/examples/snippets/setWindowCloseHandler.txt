@@ -1,0 +1,14 @@
+
+@Execute
+public void execute(final Shell shell, EModelService service, 
+	MWindow window) {
+	IWindowCloseHandler handler = new IWindowCloseHandler() {
+		@Override
+		public boolean close(MWindow window) {
+			return MessageDialog.openConfirm(shell, 
+			"Close", 
+			"You will loose data. Really close?");
+		}
+	};
+window.getContext().set(IWindowCloseHandler.class, handler);
+}

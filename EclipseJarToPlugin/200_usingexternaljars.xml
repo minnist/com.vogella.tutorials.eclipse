@@ -1,0 +1,100 @@
+<section id="jartoplugin">
+	<title>Integrating external jars / third party libraries</title>
+	<para>
+		The following gives an example how to convert a standard Java JAR
+		to an Eclipse
+		plug-in.
+	</para>
+	<section id="jartoplugin_create">
+		<title>Creating a plug-in project for your jar</title>
+		<para>
+			Create a new plug-in project by selecting
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Project</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Plug-in from Existing JAR Archives</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/externaljars20.gif"/>
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para> Add the JAR files you want to have in this new plug-in. Press
+			next.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/externaljars25.gif"/>
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Enter a name and a version for your new plug-in. Uncheck the
+			<guilabel>Unzip the JAR archive into the project</guilabel>
+			flag. Unchecking this flag
+			prevents
+			that the class files are extracted
+			from the
+			JAR file which is
+			not
+			necessary to use them.
+		</para>
+		<para>
+			Afterwards press the
+			<guibutton>Finish</guibutton>
+			button in the wizard.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/externaljars30.gif"/>
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			You have created a new plug-in for the selected JAR files. Open
+			the file
+			<filename>MANIFEST.MF</filename>
+			and validate that all required packages are exported on
+			the tab
+			<guilabel>Runtime</guilabel>
+			. All the packages from your JAR files
+			should be
+			included
+			in the
+			exported
+			packages as OSGi will otherwise prevent
+			other plug-ins
+			from
+			accessing
+			them.
+		</para>
+	</section>
+	<section id="jartoplugin_use">
+		<title>Using the new plug-in project</title>
+		<para>
+			In the plug-in project which should access the library, open the
+			<filename>MANIFEST.MF</filename>
+			file and select the
+			<guilabel>Dependencies</guilabel>
+			tab. Add the new plug-in as dependency.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/externaljars40.gif"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

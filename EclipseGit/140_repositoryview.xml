@@ -1,0 +1,173 @@
+<section id="repository_view" role="wrapper">
+	<title>Using the Git Repositories view</title>
+	<section id="repository_view_overview">
+		<title>Using the Git Repositories view</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>repositories
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>Git repositories view
+			</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Git repositories view</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Repositories view</primary>
+		</indexterm>
+		<para>
+			Eclipse Git provides the
+			<guilabel>Git Repositories</guilabel>
+			view
+			which allows you to browse your
+			repositories, add or initialize
+			local repositories or clone remote repositories,
+			checkout projects,
+			manage your branches and much more. You can open this view via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Git</guisubmenu>
+				<guisubmenu>Git Repositories</guisubmenu>
+			</menuchoice>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/showgitrepositoryview10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Show Git Respositories View</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The toolbar entries allow you to add an existing local Git
+			repository
+			to the view, clone a Git repository and to
+			create a new
+			Git
+			repository.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/repositoryview_toolbar10.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Git Repositories view toolbar</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="repository_view_main">
+		<title>Content in the Git Respositories view</title>
+		<para>
+			The content area of the
+			<guilabel>Git Repositories</guilabel>
+			view shows the existing Git repositories and the
+			important data of each repository.
+			The following
+			screenshot shows an
+			example Git repository.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gitrepositoryview10.png" scale="50" />
+
+				</imageobject>
+				<textobject>
+					<phrase>Git repository view</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			A right-click (context menu) on an element in the
+			<guilabel>Git repositories</guilabel>
+			view
+			allows you
+			to
+			perform related Git operations. For example if you
+			right-click
+			on a branch
+			you can checkout the
+			branch or
+			delete it.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/gitrepositoryview20.png"/>
+
+				</imageobject>
+				<textobject>
+					<phrase>Git repository view context menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="repository_navigate">
+		<title>Open a commit</title>
+		<para>
+			If you are in the
+			<guilabel>Git repositories</guilabel>
+			view
+			you can open a commit via the main Eclipse menu. To do this
+			select the
+			<menuchoice>
+				<guimenu>Navigate</guimenu>
+				<guisubmenu>Open Git Commit</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/opengit_commit08.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Open Git Commit dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/opengit_commit10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Open Git Commit dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="repository_gitcommit_operation">
+		<title>Commands available in the Commit Viewer</title>
+		<para>If you open a commit you can create a tag or branch from it. You
+			can also revert it, cherry pick it or check it
+			out. You can also
+			reveal it in the history view.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/opengit_commit20.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Possible operation from a Git commit</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+</section>

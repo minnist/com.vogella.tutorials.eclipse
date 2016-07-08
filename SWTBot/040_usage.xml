@@ -1,0 +1,65 @@
+<section id="swtbot_usage">
+	<title>SWTBot API
+	
+		`SWTBot`
+		is the base class for testing SWT applications.
+	
+
+	
+		The
+		`SWTWorkbenchBot`
+		class provides API to interact with
+		Eclipse 3.x applications.
+		The
+		`SWTWorkbenchBot`
+		class extends
+		`SWTBot`
+		. To test Eclipse 4.x RCP application you use the
+		`SWTBot`
+		class.
+	
+	 An user interface interaction may take some time, e.g., if the
+		application
+		reads some data. Therefore SWTBot waits, by default, 5
+		seconds
+		before throwing
+		an
+		exception. You can
+		change the
+		timeout via the
+		following:
+	
+
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/api/timeout.txt" />
+		</programlisting>
+	
+
+	
+		For details on the API usage please see
+		<ulink url="http://wiki.eclipse.org/SWTBot/UsersGuide">SWTBot wiki</ulink>
+		.
+	
+	<note>
+		The support for Eclipse 4 RCP application is at the time of this
+			writing fairly new. Therefore this chapter is intentionally
+			short, as
+			improvements and changes are expected in the
+			future. Please
+			see the
+			project homepage for the most recent information.
+		
+	</note>
+
+	<warning>
+		
+			Testing an application with a login screen is currently not supported
+			by SWTBot. See
+			<ulink
+				url="http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ</ulink>
+			.
+		
+	</warning>
+</section>

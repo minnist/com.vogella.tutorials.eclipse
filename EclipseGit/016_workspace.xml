@@ -1,0 +1,28 @@
+<section id="egitconfiguration_reposandworkspace">
+	<title>The Eclipse workspace and Git repositories</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>Workspaces and Git repositories
+		</secondary>
+	</indexterm>
+	<para>
+		It is good
+		practice to
+		place your Git
+		repositories
+		outside
+		the
+		Eclipse
+		workspace. This separates
+		your Git repository from any
+		additional
+		meta-data which
+		Eclipse
+		might
+		create. By default, Eclipse Git uses the
+		<filename>git</filename>
+		folder in the users home directory to clone new repositories. This default location can of course be adjusted, see
+		<xref linkend="egitconfiguration_defaultlocation" />
+		for more information on this.
+	</para>
+</section>

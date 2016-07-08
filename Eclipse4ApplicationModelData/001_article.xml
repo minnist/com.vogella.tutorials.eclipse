@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse application model - Tags, persisted state and variables
+			- Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009 </year>
+			<year>2010 </year>
+			<year>2011 </year>
+			<year>2012 </year>
+			<year>2013 </year>
+			<year>2014 </year>
+			<holder> Lars Vogel</holder>
+		</copyright>
+		<pubdate>13.03.2014</pubdate>
+		<releaseinfo>
+			Version 7.1
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Additional model data</title>
+			<para> The application model in Eclipse can hold additional model
+				data. These are described in this tutorial.
+			</para>
+
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../lib/adsense/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_supplementary.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_e4_tags.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_exercise_supplementary.xml" />
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+</article>

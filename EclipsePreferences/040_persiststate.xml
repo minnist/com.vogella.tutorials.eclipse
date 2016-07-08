@@ -1,0 +1,41 @@
+<section id="persiststate">
+	<title>Persistence of part state</title>
+	<indexterm>
+		<primary>@PersistState</primary>
+	</indexterm>
+
+	<para>
+		Eclipse provides the
+		<code>@PersistState</code>
+		annotation. This annotation can be applied to a method in a class
+		referred to a part.
+	</para>
+
+	<para>
+		Such an annotated method can be used to store the instance state of
+		the part.
+		The Eclipse
+		framework calls such a method whenever the part or
+		the application
+		closes. The
+		stored information can be used in the
+		method
+		annotated with the
+		<code>@PostConstruct</code>
+		annotation. A typical use case for such a method would be to store the
+		state of
+		a checkbox.
+
+	</para>
+	<para>The usage of this annotation is demonstrated in the following
+		example code.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/persistsstate/Example.java" />
+		</programlisting>
+	</para>
+
+
+</section>

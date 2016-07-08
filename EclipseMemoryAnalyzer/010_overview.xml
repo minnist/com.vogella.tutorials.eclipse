@@ -1,0 +1,52 @@
+<section id="eclipsemat">
+	<title>Analyzing memory leaks with Eclipse</title>
+	<section id="heapdump">
+		<title>Using heap dumps to get a snapshot of the memory of an application</title>
+		<para>
+			A
+			<wordasword>heap dump</wordasword>
+			is a snapshot of the complete Java object graph on a Java application
+			at a certain point in
+			time. It is stored in a binary format called
+			HPROF.
+		</para>
+		<para>
+			It includes all objects, fields, primitive
+			types and object
+			references.
+		</para>
+
+	</section>
+
+	<section id="eclipsemat_overview">
+		<title>The Eclipse Memory Analyser (MAT) tooling</title>
+		<para>
+			The
+			<wordasword>Eclipse Memory Analyser Tooling</wordasword>
+			(MAT)
+			is a set of plug-ins for the Eclipse IDE which provides tools to analyze heap dumps from Java application and to
+			identify memory problems in the application.
+			This helps
+			the
+			developer to find memory leaks
+			and high memory consumption
+			issues.
+		</para>
+		<para>
+			It visualizes
+			the
+			references to objects
+			based on Java
+			<wordasword>heap dumps</wordasword>
+			and provides
+			tools to
+			identify potential
+			memory
+			leaks.
+		</para>
+	</section>
+
+
+
+
+</section>

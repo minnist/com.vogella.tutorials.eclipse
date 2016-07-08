@@ -1,0 +1,177 @@
+<section id="emfeditor">
+	<title>Create EMF Editor plug-ins</title>
+	<para>
+		EMF can generate plug-ins which provide wizards for creating new
+		model
+		instances and an editor which allows you to
+		enter
+		your
+		model
+		information.
+	</para>
+	<para>
+		The following assumes that you have already have knowledge in
+		developing Eclipse plug-ins.
+		For more information about Eclipse plug-in
+		development please see
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plugin Tutorial</ulink>
+	</para>
+	<section id="emfeditor_generate">
+		<title>Generating edit / editor code</title>
+		<para>
+			Eclipse EMF allow you to create a editor for your model. Select
+			your
+			<filename>.genmodel</filename>
+			file
+			, right-click on it and select
+			<guilabel>Generate Edit
+				Code
+			</guilabel>
+			and
+			afterwards
+			<guilabel>Generate
+				Editor Code
+			</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emfeditor10.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Two
+			<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse plugin</ulink>
+			projects
+			have been created,
+			"de.vogella.emf.webpage.model.edit" and
+			"de.vogella.emf.webpage.model.editor".
+		</para>
+	</section>
+	<section id="emfeditor_run">
+		<title>Run your plugins</title>
+		<para>
+			Select the
+			<code>*.editor</code>
+			project and start a new Eclipse instance with your
+			new
+			plug-in via
+			right mouse-click on it and by selecting
+			<menuchoice>
+				<guimenu>Run-As</guimenu>
+				<guisubmenu>Eclipse application
+				</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			This should start a new Eclipse runtime instance.
+		</para>
+	</section>
+	<section id="emfeditor_createmodel">
+		<title>Create your model</title>
+		<para>
+			In new Eclipse instance create a new project of type
+			<guilabel>General</guilabel>
+			called
+			<wordasword>testing</wordasword>
+			and a
+			folder called
+			<filename>website</filename>
+			.
+		</para>
+		<para>
+			Select this
+			folder, right
+			click on
+			it, select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Example EMF Model Creation Wizards
+				</guisubmenu>
+				<guisubmenu>Webpage Model</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emfeditor20.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Name your model
+			<wordasword>My.webpage</wordasword>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/emfeditor30.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Select as
+			the
+			Model Object "My Web" and press finish.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/EMFEditor50.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="emfeditor_editmodel">
+		<title>Edit your model</title>
+		<para>You should now see a editor for your website.model.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/EMFEditor54.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Right-click on "My Web" and create a new elements. To edit the
+			elements use the "Properties View" which can be found under Window ->
+			Show View -> Properties.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/EMFEditor60.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/EMFEditor70.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Save your created model.
+		</para>
+
+	</section>
+</section>

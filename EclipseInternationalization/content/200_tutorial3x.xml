@@ -1,0 +1,50 @@
+<section id="example">
+	<title>Tutorial: Translate plugin.xml</title>
+
+	<para>Create a new Eclipse RCP application "de.vogella.rcp.i18n" based
+		on the "RCP application with a view" template. Check the
+		contributions to the "org.eclipse.ui.views"
+		extension point in your
+		plugin.xml file and validate that the name of
+		the View is hard coded
+		to "View".
+	</para>
+	<para>
+		Right-click on the <filename>plugin.xml</filename> file and select
+		<menuchoice>
+			<guimenu>PDE Tools</guimenu>
+			<guisubmenu>Externalize Strings</guisubmenu>
+		</menuchoice>
+		. Accept the default and press ok.
+	</para>
+
+	<para> This will create the file bundle.properties and replace the
+		hard-coded string in plugin.xml with a "%key" placeholder, e.g.
+		%View.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/plugin/plugin.xml" />
+		</programlisting>
+	</para>
+
+	<para> Copy <filename>bundle.properties</filename> to "bundle_fr.properties" and
+		"bundle_en.properties" Change the text in the property views for the
+		view.
+	</para>
+
+	<para>Start you application in the different languages and valid that
+		the translation is correctly used.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/plugin/plugin_en.properties" />
+		</programlisting>
+	</para>
+
+
+</section>

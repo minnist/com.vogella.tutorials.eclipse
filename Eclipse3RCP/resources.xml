@@ -1,0 +1,24 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_eclipse">
+		<title>Eclipse Resources</title>
+		<para>
+			<ulink url="http://www.amazon.com/dp/3943747042">Eclipse IDE book from Lars Vogel</ulink>
+		</para>
+		<para>
+			<ulink url="http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ">
+				Eclipse Plug-in Development FAQ</ulink>
+		</para>
+		<para>
+			<ulink
+				url="http://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html">
+				SWT Graphics</ulink>
+
+		</para>
+
+		
+
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

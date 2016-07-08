@@ -1,0 +1,71 @@
+<section id="comparereplace" role="wrapper">
+	<title>Comparing and replacing files based on the Git history</title>
+	<section id="comparereplace_compare">
+		<title>Comparing files</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>compare files
+			</secondary>
+		</indexterm>
+		<para>
+			Eclipse Git allows you to compare a selected file, folder or
+			project
+			with another
+			commit or with the Git index. Use
+			<menuchoice>
+				<guimenu>Team</guimenu>
+				<guisubmenu>Compare with</guisubmenu>
+			</menuchoice>
+			to open the menu. Afterwards select with what you want to compare.
+			The
+			<guilabel>HEAD Revision</guilabel>
+			selection is
+			depicted in the
+			following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/egit_compare10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Compare</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="comparereplace_replace">
+		<title>Replacing files</title>
+		<indexterm>
+			<primary>Eclipse Git</primary>
+			<secondary>replace files
+			</secondary>
+		</indexterm>
+		<para>
+			The
+			<menuchoice>
+				<guimenu>Team</guimenu>
+				<guisubmenu>Replace with</guisubmenu>
+			</menuchoice>
+			menu entry
+			allows you to replace the current selection with the
+			version contained in the selected commit
+			or the
+			Git
+			index.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/egit_replacewith10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Compare</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+</section>

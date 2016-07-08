@@ -1,0 +1,186 @@
+<section id="eclipsegerritcontribution_adjustpush">
+	<title>Appendix: Cloning from the Git server and adjusting the push URL</title>
+	<section id="eclipsegerritcontribution_adjustpush1">
+		<title>Overview</title>
+		<para>
+			If you cloned an Eclipse Git repository directly from the Eclipse Git
+			server (without using the Gerrit server) you
+			have to adjust the push
+			URL to create Gerrit changes. For example, you may have found the
+			clone URL on:
+			<ulink url="https://git.eclipse.org/c/">Eclipse Git web interface</ulink>
+			.
+		</para>
+
+		<para>
+			It is far easier to clone from the Gerrit server as this does not
+			require you to change the push URL. See
+			<xref linkend="eclipsegerritcontribution_cloneviagerrit_server" />
+			for the description how to clone. In case you can use the Gerrit
+			server, this section is not relevant for you.
+		</para>
+
+		<para>The push configuration in the following dialog depends a bit if
+			you want to use SSH or
+			HTTPS. If you want to use
+			SSH
+			ensure to
+			use the
+			29418 port and remove the
+			"gitroot"
+			string from the
+			push-url.
+		</para>
+		<para>
+			The
+			following screenshot
+			demonstrates that for the Eclipse
+			platform
+			UI
+			Git
+			repository.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsegerritcontribution12.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit push configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>If you want to use HTTPS to push to the Gerrit server, you have
+			to
+			use a push URL
+			with an "r" included
+			(For example
+			https://userid@git.eclipse.org/r/platform/eclipse.platform.ui.git).
+			You need to provide in this case your Gerrit
+			password if you want to
+			push to an Eclipse Git repository as depicted in the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse_gerrithttps10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit push configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="eclipsegerritcontribution_pushconfig">
+		<title>Gerrit push configuration</title>
+		<para>
+			The Gerrit server requires that you push using a predefined
+			<wordasword>refspec</wordasword>
+			, called
+			<wordasword>HEAD:refs/for/master</wordasword>
+			. A refspec allows you to configure which remote branch should
+			be used
+			for remote operations.
+		</para>
+		<para>
+			If you clone a Git repository managed by a Gerrit server, this push url is already correctly configured in most
+			cases.
+
+			The icon for repository configured to be used for Gerrit uses a green icon. Also Gerrit
+			specific commands are added to
+			the repository's
+			context menu, e.g.,
+			<guilabel>Push to Gerrit...</guilabel>
+			and
+			<guilabel>Fetch from Gerrit...</guilabel>
+			). In addition, the repository
+			is
+			configured to always add a Change-ID
+			to the commit message.
+			In the
+			following
+			screenshot
+			the repositories configured for
+			Gerrit are
+			highlighted. The
+			<code>eclipse.jdt</code>
+			repository in this screenshot is not configured for Gerrit.
+
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsegerritcontribution14.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit Eclipse configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you have to configure the push URL manually, select your remote repository in the
+			<guilabel>Git Repositories</guilabel>
+			view, right-click on
+			it and select
+			<guilabel>Gerrit configuration</guilabel>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsegerritcontribution10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit Eclipse configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you select the
+			<guilabel>origin</guilabel>
+			entry, right mouse click on it and select
+			<guilabel>Gerrit Configuration...</guilabel>
+			the entry should look like the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsegerritcontribution12.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit Eclipse configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<note>
+			<para>For HTTPS access the URL is different.</para>
+		</note>
+		<para>
+			You can validate the push specification if you select the
+			highlighted
+			node in the following screenshot and check the
+			<guilabel>Remote Push Specification</guilabel>
+			entry in the
+			<guilabel>Properties</guilabel>
+			view.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipsegerritcontribution13.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Gerrit Eclipse configuration</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+
+	</section>
+
+</section>

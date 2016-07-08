@@ -1,0 +1,76 @@
+<section id="deployproductjresheadless" role="wrapper">
+	<title>JRE and headless build</title>
+	<section id="deployproduct_jre">
+		<title>Including the required JRE into the export</title>
+		<indexterm>
+			<primary>Deployment</primary>
+			<secondary>JRE</secondary>
+		</indexterm>
+		<para>
+			You can also deploy your own RCP application bundled with a JRE
+			to
+			make
+			sure that
+			a
+			certain JRE is used. An Eclipse application first
+			searches in
+			the
+			installation directory for a folder called
+			<filename class="directory">jre</filename>
+			and for a
+			contained
+			Java-VM.
+			If it finds one, then this JRE is used to
+			start the
+			Eclipse
+			application.
+		</para>
+		<para>
+			To include the JRE from your running environment, select the
+			<guilabel>Bundle JRE for this environment with the product</guilabel>
+			flag on the
+			<guilabel>Launching</guilabel>
+			tab of your product configuration file.
+		</para>
+	</section>
+	<section id="deployproduct_headless">
+		<title>Headless build</title>
+		<indexterm>
+			<primary>Headless build</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Deployment</primary>
+			<secondary>Headless build</secondary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>headless build</wordasword>
+			is an automatic build without user interaction and without a
+			graphical user interface. It can be triggered from the command line.
+			Typically the build is automatically done via an additional software
+			component called the
+			<wordasword>build server</wordasword>
+			which does so in a clean (and remote) environment.
+		</para>
+		<para>
+			An example for a build server would be the
+			<wordasword>Jenkins</wordasword>
+			continuous integration (system). See the online
+			<ulink url="http://www.vogella.com/tutorials/Jenkins/article.html">Jenkins tutorial</ulink>
+			for an introduction into the setup, configuration and usage of
+			Jenkins.
+		</para>
+		<para>
+			Several solutions exists for building Eclipse RCP applications via a
+			headless build.
+			Currently the most
+			popular
+			approach is based on Apache
+			Maven. See the online
+			<ulink url="http://www.vogella.com/tutorials/EclipseTycho/article.html">Maven Tycho tutorial</ulink>
+			for an introduction into headless builds for Eclipse RCP
+			applications.
+		</para>
+
+	</section>
+</section>

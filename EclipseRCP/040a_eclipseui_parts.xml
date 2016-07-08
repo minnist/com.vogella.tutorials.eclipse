@@ -1,0 +1,128 @@
+<section id="parts">
+	<title>Parts</title>
+	<indexterm>
+		<primary>Part</primary>
+	</indexterm>
+	<indexterm>
+		<primary>Editor</primary>
+	</indexterm>
+	<indexterm>
+		<primary>View</primary>
+	</indexterm>
+
+	<para>
+		Parts
+		are user interface components which allow you to navigate
+		and modify
+		data. A
+		part
+		can have a drop-down menu,
+		context menus and a
+		toolbar.
+		The Parts can be stacked or positioned next to each other
+		depending on the container into
+		which they are dropped.
+	</para>
+	<!-- Screenshot for the Eclipse RCP book -->
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/e4parts10.png" scale="30" />
+			</imageobject>
+			<textobject>
+				<phrase>Eclipse application with a few parts</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<!-- Screenshot for the Eclipse IDE book -->
+	<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+
+
+	<!-- Screenshot for the Eclipse RCP book -->
+	<!-- Screenshot for the Eclipse IDE book -->
+	<!-- <para> <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject> </para> -->
+
+
+	<para>
+		Parts
+		are typically classified as
+		<wordasword>views</wordasword>
+		and
+		<wordasword>editors</wordasword>
+		.
+	</para>
+	<para>
+		A
+		view
+		is
+		typically
+		used to work on a set of data, which might be a
+		hierarchical
+		structure. If data
+		is
+		changed via the
+		view,
+		this change is
+		typically directly applied to the
+		underlying data
+		structure. A
+		view
+		sometimes allows the user to open
+		an
+		editor
+		for the selected set of data.
+		For example, the
+		<wordasword>Package Explorer</wordasword>
+		view allows you to browse the files of Eclipse projects. If you
+		for example rename a file via the
+		<wordasword>Package Explorer</wordasword>
+		view, the
+		file
+		name
+		is directly changed on the
+		file
+		system.
+	</para>
+	<para>
+		Editors
+		are
+		typically used to modify a single data element, e.g.,
+		the content of a
+		file or a
+		data object. To apply the
+		changes made in an
+		editor to the
+		data
+		structure, the user has to explicitly save the
+		editor content.
+	</para>
+
+	<para>
+		For example, the
+		<guilabel>Java</guilabel>
+		editor
+		is used to modify Java source files. Changes to the source file
+		are
+		applied once the user selects the
+		<guilabel>Save</guilabel>
+		button. A dirty editor tab is marked with an asterisk
+		left to the
+		name of the modified file.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/dirtyeditor10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Editor marked as dirty</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+</section>
+
+

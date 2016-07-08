@@ -1,0 +1,18 @@
+<section id="oleexplorer">
+	<title>Microsoft File Explorer with Eclipse</title>
+	<para>
+		Create a new project "de.vogella.microsoft.fileexplorer". See
+		<ulink
+			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
+		> Eclipse RCP</ulink>
+		for details.
+	</para>
+	<para> Add a view to the application and the perspective. To display
+		the file explorer you can use the following code for your view.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/explorer/FileExplorerView.java" />
+		</programlisting>
+	</para>
+</section>

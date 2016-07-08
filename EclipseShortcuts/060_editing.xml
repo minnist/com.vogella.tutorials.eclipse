@@ -1,0 +1,275 @@
+
+<section id="shortcuts_editor">
+	<title>Editing</title>
+	<para>The following lists contains useful keyboard shortcuts if you are
+		inside
+		your Java editor.
+	</para>
+	<para>
+		<table frame='all'>
+			<title>Handling the editor</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Ctrl + 1</entry>
+						<entry>
+							Quickfix; result depending on cursor position
+						</entry>
+
+					</row>
+					<row>
+						<entry>Ctrl + Space</entry>
+						<entry>
+							Content assist/ code completion
+						</entry>
+					</row>
+
+					<row>
+						<entry>Ctrl + T</entry>
+						<entry>Show the inheritance tree of the current Java
+							class or
+							method.
+						</entry>
+					</row>
+					<row>
+						<entry>Ctrl + O </entry>
+						<entry>Show all methods of the current class, press Ctrl + O
+							again
+							to show the inherited methods.
+						</entry>
+					</row>
+					<row>
+						<entry>Ctrl + M</entry>
+						<entry> Maximize active editor or view</entry>
+					</row>
+					<row>
+						<entry>Ctrl + Shift + F</entry>
+						<entry>Format source code</entry>
+					</row>
+					<row>
+						<entry>Ctrl + I</entry>
+						<entry>Correct indentation, e.g.,  format tabs/whitespaces in code </entry>
+					</row>
+					<row>
+						<entry>Ctrl + F</entry>
+						<entry>Opens the find dialog  </entry>
+					</row>
+					<row>
+						<entry>Shift + Enter</entry>
+						<entry>Adds a link break at the end of the line</entry>
+					</row>
+					<row>
+						<entry>Ctrl + Shift + O</entry>
+						<entry> Organize the imports; adds missing import
+							statements and
+							removes unused ones
+						</entry>
+					</row>
+
+					<row>
+						<entry>Ctrl + Alt + Z</entry>
+						<entry> Wrap the select block of code into a block, e.g.
+							try/catch.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+	<para>
+		<table frame='all'>
+			<title>Cursor navigation and text selection</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="3*" />
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Ctrl + &#8592; or Ctrl + &#8594;</entry>
+						<entry>Move one text element in the editor to the left or right
+						</entry>
+					</row>
+					<row>
+						<entry>Ctrl + &#8593; or &#8595; </entry>
+						<entry>Scroll up / down a line in the editor</entry>
+					</row>
+
+					<row>
+						<entry>Ctrl + Shift + P</entry>
+						<entry> Go to the matching bracket</entry>
+					</row>
+					<row>
+						<entry>Shift + Cursor movement</entry>
+						<entry>Select text from the starting position of the cursor
+						</entry>
+					</row>
+
+					<row>
+						<entry>Alt + Shift &#8593; / &#8595;</entry>
+						<entry>Select the previous / next syntactical element</entry>
+					</row>
+					<row>
+						<entry>Alt + Shift  &#8593; / &#8595; / &#8592; / &#8594;</entry>
+						<entry>Extending / reducing the selection of the previous / next
+							syntactical element
+						</entry>
+					</row>
+
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+
+
+	<para>
+		<table frame='all'>
+			<title>Copy and move lines</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Ctrl + Alt + &#8595; </entry>
+						<entry>Copy current line below the line in which the cursor is
+							placed
+						</entry>
+					</row>
+
+					<row>
+						<entry>Ctrl + Alt + &#8593;</entry>
+						<entry>Copy current line above the line in which the cursor is
+							placed
+						</entry>
+					</row>
+
+					<row>
+						<entry>Alt + Up  </entry>
+						<entry>Move line one line up</entry>
+					</row>
+					<row>
+						<entry>Alt + Down </entry>
+						<entry>Move line one line down</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+	<para>
+		<table frame='all'>
+			<title>Delete</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+
+					<row>
+						<entry>Ctrl + D</entry>
+						<entry>Deletes line</entry>
+					</row>
+					<row>
+						<entry>Ctrl + Shift + DEL</entry>
+						<entry>Delete until end of line</entry>
+					</row>
+					<row>
+						<entry>Ctrl + DEL</entry>
+						<entry>Delete next element</entry>
+					</row>
+					<row>
+						<entry>Ctrl + BACKSPACE</entry>
+						<entry>Delete previous element</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+	<para>
+		<table frame='all'>
+			<title>Create new lines</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Shift + Enter </entry>
+						<entry>Adds a blank line below the current line and moves the
+							cursor to the
+							new line. The difference between a regular enter is
+							that the currently line is unchanged, independently of the
+							position of the cursor.
+						</entry>
+					</row>
+
+					<row>
+						<entry>Ctrl+Shift+Enter </entry>
+						<entry>Same as Shift + Enter but above
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+	<para>
+		<table frame='all'>
+			<title>Variable assignment</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*"/>
+				<colspec colname='c2' colwidth="3*"/>
+				<thead>
+					<row>
+						<entry>Shortcut</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+
+					<row>
+						<entry>Ctrl + 2, L</entry>
+						<entry>Assign statement to new local variable</entry>
+					</row>
+					<row>
+						<entry>Ctrl + 2, F</entry>
+						<entry>Assign statement to new field </entry>
+					</row>
+
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+
+</section>

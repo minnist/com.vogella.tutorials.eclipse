@@ -1,0 +1,75 @@
+<section id="workbenchapi">
+	<title>Workbench API</title>
+	<para>To interact with the Workbench you have access to the Workbench
+		API. For example you can access the active editor or view and open or
+		close Views and Editors.
+	</para>
+	<para> Most API calls are done via the WorkbenchPage. </para>
+	<para> A command handler can get access to the WorkbenchPage via:
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/handler.txt" />
+		</programlisting>
+	</para>
+	<para> A view provides access to the Workbench and the WorkbenchWindow
+		via the getViewSite() method. An editor provides the same access via
+		getEditorSite().
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/view.txt" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/editor.txt" />
+		</programlisting>
+	</para>
+	<para> You could also get the Workbench page over the PlatformUI
+		Singleton.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/platformui.txt" />
+		</programlisting>
+	</para>
+	<para> Once you have access to the Page you can call its API. The
+		following demonstrates how to first close all views in the running
+		application and how to open a View with a specific ID.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/example.txt" />
+		</programlisting>
+	</para>
+
+	<para>The following shows how to save an editor and how to close it.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/close.txt" />
+		</programlisting>
+	</para>
+
+	<para> You can also add a PartListener to the page and listen for
+		change in View and Editors. Here is an example how to add such a
+		listener in ApplicationWorkbenchWindowAdvisor.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/workbench/ApplicationWorkbenchWindowAdvisor.txt" />
+		</programlisting>
+	</para>
+</section>

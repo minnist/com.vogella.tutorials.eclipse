@@ -1,0 +1,94 @@
+<section id="eclipsecustomlaunchconfigurationui">
+	<title>Launch Configuration UI</title>
+	<para>
+		The ﻿
+		<code>org.eclipse.debug.ui</code>
+		plugin provides a user interface for the launch
+		configurations.
+	</para>
+	<para>A popular example for java developers is the java launch
+		configuration dialog.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sample_java_application_launch_config_ui.png" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		Previously we created a launch configuration delegate and in order run
+		it from the UI, we
+		can use the
+		<code>org.eclipse.debug.ui.launchConfigurationTabGroups</code>
+		extension
+		point.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/custom_launch/launchConfigurationTabGroup.xml" />
+		</programlisting>
+	</para>
+	<para>
+		Here we reference to the
+		<code>com.example.launchConfigurationType</code>
+		, which we
+		previously created.
+	</para>
+	<para>
+		Before we implement the tab group, we define a custom
+		<code>AbstractLaunchConfigurationTab</code>
+		, which will be placed on the tab
+		group.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/custom_ui_launch/SampleTab.java" />
+		</programlisting>
+	</para>
+	<para>
+		With this tab we can set our
+		<code>SampleLaunchConfigurationAttributes.CONSOLE_TEXT</code>
+		attribute to the
+		<code>ILaunchConfiguration</code>
+		.
+	</para>
+	<para>
+		In the
+		<code>com.example.SampleTabGroup</code>
+		, we can use existing
+		<code>AbstractLaunchConfigurationTab</code>
+		implementations, like the
+		<code>CommonTab</code>
+		, or the
+		<code>SampleTab</code>
+		from above.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/custom_ui_launch/SampleTabGroup.java" />
+		</programlisting>
+	</para>
+	<para>
+		A specific icon for the launch configuration can be defined by using
+		the
+		<code>org.eclipse.debug.ui.launchConfigurationTypeImages</code>
+		extension point.
+	</para>
+		<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/custom_ui_launch/launchConfigurationTypeImages.xml" />
+		</programlisting>
+	</para>
+	<para>The result will look similar to this:</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/vogella_launch_ui.png" />
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

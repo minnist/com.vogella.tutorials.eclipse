@@ -1,0 +1,14 @@
+<section id="resources">
+	<title>Links and Literature
+	
+	<section id="resources_rest">
+		<title>SWTBot Resources
+		
+			<ulink url="http://www.eclipse.org/swtbot/">SWTBot homepage</ulink>
+		
+		
+			<ulink url="http://wiki.eclipse.org/SWTBot/FAQ">SWTBot FAQ</ulink>
+		
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

@@ -1,0 +1,20 @@
+<section id="swt_jface">
+	<title>Relationship to JFace</title>
+	
+		<wordasword>JFace</wordasword>
+		is a set of APIs which builds on top of
+		SWT
+		and provides higher level
+		abstraction APIs and commonly used
+		functions.
+	
+	
+		JFace
+		extends the
+		SWT
+		API for certain uses case but does not hide it.
+		Therefore even if you frequently work with JFace you need a
+		solid understanding of
+		SWT.
+	
+</section>

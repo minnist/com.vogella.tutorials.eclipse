@@ -1,0 +1,320 @@
+<section id="keybindings" role="wrapper">
+	<title>Key bindings</title>
+	<section id="keybindings_overview">
+		<title>Using key bindings in your application</title>
+		<indexterm>
+			<primary>Key bindings</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Binding context</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Binding table</primary>
+		</indexterm>
+		<para>
+			It is also possible to define key bindings (shortcuts) for
+			your
+			Eclipse
+			application. This requires two steps, first you
+			need to enter
+			values
+			for the
+			<wordasword>Binding Context</wordasword>
+			node of your application model.
+		</para>
+		<para>
+			Afterwards you need to enter the key bindings for the relevant
+			binding context in the
+			<wordasword>BindingTable</wordasword>
+			node of your application model. A
+			binding table is always assigned to
+			a specific
+			binding context. A
+			binding context
+			can have several
+			binding
+			tables
+			assigned to it.
+		</para>
+
+		<para>
+			Binding contexts
+			are defined
+			hierarchically, so that
+			key bindings
+			in a child
+			override the matching key binding in the
+			parent.
+		</para>
+		<warning>
+			<para>
+				Even though they sound similar a binding context
+				is used for
+				keybindings while the Eclipse context
+				(
+				<code>IEclipseContext</code>
+				)
+				is used as source for dependency injection.
+			</para>
+		</warning>
+	</section>
+
+	<section id="keybindings_bindingcontext">
+		<title>JFace default values for binding contexts</title>
+		<para>
+			The
+			binding context
+			is identified via its ID. They
+			can get assigned
+			to a window
+			or a
+			part
+			in the application model.
+			This
+			defines which
+			keyboard shortcuts
+			are valid for the window and which
+			are valid for the
+			part.
+		</para>
+		<para>
+			Eclipse JFace uses predefined
+			IDs to identify binding contexts. These
+			IDs are
+			based on the
+			<code>org.eclipse.jface.contexts.IContextIds</code>
+			class. JFace
+			distinguishes between shortcuts for dialogs, windows or
+			both.
+		</para>
+
+		<para>
+			The following table gives an overview of the supported IDs and
+			their validity.
+		</para>
+		<para>
+			<table frame='all'>
+				<title>Default BindingContext values</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="3.0*" />
+					<colspec colname='c2' colwidth="2.0*" />
+					<thead>
+						<row>
+							<entry>Context ID</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								org.eclipse.ui.contexts.dialogAndWindow
+							</entry>
+							<entry>Key bindings valid for dialogs
+								and windows
+							</entry>
+						</row>
+						<row>
+							<entry>
+								org.eclipse.ui.contexts.dialog
+							</entry>
+							<entry>Key bindings valid
+								for dialogs
+							</entry>
+						</row>
+						<row>
+							<entry>
+								org.eclipse.ui.contexts.window
+							</entry>
+							<entry>Key bindings valid for windows</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+
+
+		<para>
+			As an
+			example,
+			<keycombo>
+				<keycap>Ctrl</keycap>
+				<keycap>C</keycap>
+			</keycombo>
+			(Copy) would be defined in
+			<wordasword>dialogAndWindows</wordasword>
+			as it is valid everywhere, but
+			<keycombo>
+				<keycap>F5</keycap>
+			</keycombo>
+			(Refresh) might only be defined for a
+			Window and not for a Dialog.
+		</para>
+
+	</section>
+
+
+	<section id="keybindings_entries">
+		<title>Define Shortcuts</title>
+		<para>
+			The
+			<guilabel>BindingTable</guilabel>
+			node in the application model allows you to create key bindings based
+			on a binding context.
+			For this you create a new
+			<guilabel>BindingTable</guilabel>
+			model element
+			and define a reference to the binding context via its
+			ID.
+		</para>
+
+		<para>
+			In your key binding entry you specify the key
+			sequence
+			and the
+			command
+			associated with this shortcut.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/keybindings20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>How to add the BindingContext Entries</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The control keys are different for each platform, e.g.,
+			on the
+			Mac
+			vs. a Linux system. You can use Ctrl, but this would be
+			hardcoded.
+			It
+			is better to use the M1 - M4 meta keys.
+
+		</para>
+
+		<table frame='all'>
+			<title>Key mapping</title>
+			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<colspec colname='c3' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Control Key</entry>
+						<entry>Mapping for Windows and Linux</entry>
+						<entry>Mapping for Mac</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>M1</entry>
+						<entry>Ctrl</entry>
+						<entry>Command</entry>
+					</row>
+					<row>
+						<entry>M2</entry>
+						<entry>Shift</entry>
+						<entry>Shift</entry>
+					</row>
+					<row>
+						<entry>M3</entry>
+						<entry>Alt</entry>
+						<entry>Alt</entry>
+					</row>
+					<row>
+						<entry>M4</entry>
+						<entry>Undefined</entry>
+						<entry>Ctrl</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+		<para>
+			These values are defined in the
+			<code>SWTKeyLookup</code>
+			class.
+		</para>
+	</section>
+
+
+	<section id="keybindings_validbindings">
+		<title>Activate bindings</title>
+		<indexterm>
+			<primary>Key bindings</primary>
+			<secondary>Activate</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>EContextService</primary>
+		</indexterm>
+		<para>
+			If there are several valid key bindings defined, the
+			<code>ContextSet</code>
+			class
+			is responsible for activating one of them by default.
+			<code>ContextSet</code>
+			uses the
+			binding context
+			hierarchy to determine the lookup order. A
+			binding context
+			is
+			more specific depending on how many ancestors are
+			between it
+			and a
+			root
+			binding context
+			(the number of levels it has). The
+			most specific
+			binding context
+			is considered first, the root
+			one
+			is
+			considered last.
+		</para>
+		<para>
+			You can also use the
+			<code>EContextService</code>
+			service which allows you to explicitly activate and deactivate a
+			binding context
+			via the
+			<code>activateContext()</code>
+			and
+			<code>deactivateContext()</code>
+			methods.
+		</para>
+	</section>
+	<section id="keybindings_partbindings">
+		<title>Key bindings for a part</title>
+		<indexterm>
+			<primary>Key bindings</primary>
+			<secondary>Part</secondary>
+		</indexterm>
+		<para>
+			You can assign a specific
+			binding context
+			to be active while a
+			part is active.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/bindingcontextview10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>BindingContent defined specific for a part</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Key bindings assigned to a part are valid in addition to the key
+			bindings provided by the
+			currently active binding context, i.e. your
+			global key bindings are still active in addition with the key
+			bindings of the part.
+		</para>
+	</section>
+
+</section>

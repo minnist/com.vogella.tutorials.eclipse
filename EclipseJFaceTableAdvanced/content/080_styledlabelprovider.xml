@@ -1,0 +1,30 @@
+<section id="styledlabelprovider">
+	<title>Tutorial: Using a Styled Label Providers</title>
+	<para>
+		First create the following helper class which will determine
+		which occurrence of the search string is in the column.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/highlight/SearchUtil.java" />
+		</programlisting>
+	</para>
+	<para>
+		Change the class <code>View</code> to the following.
+		We will only use
+		<code>StyledCellLabelProvider</code> for the <code>firstName</code>.
+		Most of the code changes
+		are in method <code>createColumns()</code> plus a view variable definitions.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/highlight/View.java" />
+		</programlisting>
+	</para>
+	<para>
+		Run the example. If you search, now the selected content should
+		get highlighted should work.
+	</para>
+</section>

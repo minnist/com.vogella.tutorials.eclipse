@@ -1,0 +1,80 @@
+<section id="eclipsecommunity" role="wrapper">
+	<title>Eclipse online resources</title>
+	<section id="eclipseonlinehelp">
+		<title>Online documentations</title>
+		<indexterm>
+			<primary>Online help for Eclipse</primary>
+		</indexterm>
+		<para>
+			The Eclipse help system is available from within your Eclipse
+			installation as well as online.
+		</para>
+		<para>
+			With your running Eclipse IDE you can access
+			the online help via
+			<menuchoice>
+				<guimenu>Help</guimenu>
+				<guisubmenu>Help Contents</guisubmenu>
+			</menuchoice>
+			. This will start a new window which shows you the help topics for
+			your currently installed components.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/onlinehelp10.png" scale="40"
+						format="PNG" />
+				</imageobject>
+				<textobject>
+					<phrase>Starting the Eclipse help</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			You find the online help for the current release of the Eclipse IDE
+			under the following URL:
+			<ulink url="http://help.eclipse.org">Eclipse online help</ulink>
+			. The online help is version-dependent and
+			contains the help for
+			all
+			Eclipse projects of the simultaneous release.
+		</para>
+	</section>
+
+	<section id="eclipseweb">
+		<title>Web resources</title>
+		<indexterm>
+			<primary>Web resources for Eclipse</primary>
+		</indexterm>
+		<para>
+			The Eclipse webpage also contains a list of relevant resources
+			about
+			Eclipse and Eclipse programming. You find these resources under the
+			following link:
+			<ulink url="http://www.eclipse.org/resources/">Eclipse resources</ulink>
+			and
+			<ulink url="https://wiki.eclipse.org/Eclipse_Corner">Eclipse corner wiki</ulink>
+			.
+		</para>
+		<para>
+			You also find lots of tutorials about the usage of the Eclipse IDE
+			from the vogella GmbH
+			on
+			the
+			following
+			webpage:
+			<ulink url="http://www.vogella.com/tutorials/eclipseide.html">vogella Eclipse IDE tutorials</ulink>
+			.
+		</para>
+
+		<para>
+			Information about Eclipse plug-in and RCP development from the
+			vogella GmbH can be found on
+			the following webpage:
+			<ulink url="http://www.vogella.com/tutorials/eclipse.html">Eclipse Plug-in and RCP tutorials</ulink>
+			.
+		</para>
+	</section>
+</section>

@@ -1,0 +1,27 @@
+
+package com.example.e4.rcp.todo.parts;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.eclipse.e4.core.contexts.IEclipseContext;
+import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+import org.eclipse.swt.widgets.Composite;
+
+
+
+public class TodoDetailsPart {
+	
+	@PostConstruct
+	public void createControls(Composite parent, 
+		MApplication application) {
+		
+		// getting the IEclipseContext of the application
+		// via the MApplication object
+		IEclipseContext context = application.getContext();
+		
+		// add or access objects to and from the application context 
+		// ...
+	}
+
+}

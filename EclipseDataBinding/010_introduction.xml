@@ -1,0 +1,313 @@
+<section id="databinding" role="wrapper">
+	<title>Data binding with JFace</title>
+
+
+	<section id="databinding_overview">
+		<title>Using JFace data binding</title>
+		<indexterm>
+			<primary>Data binding</primary>
+			<seealso>JFace data binding</seealso>
+		</indexterm>
+
+		<indexterm>
+			<primary>Observable (data binding)</primary>
+		</indexterm>
+
+		<para>
+			The
+			<wordasword>JFace data binding</wordasword>
+			framework allows to synchronize changes in
+			properties of
+			objects. Validation and conversion
+			during
+			the
+			synchronization
+			process is supported.
+		</para>
+
+		<para>
+			For example you could bind the String property called
+			<property>firstName</property>
+			of
+			a
+			Java object to a
+			<property>text</property>
+			property of the
+			SWT
+			<code>Text</code>
+			widget. If the user changes the text in the user interface, the
+			corresponding
+			property in the Java object is updated.
+		</para>
+
+		<para>
+			To observe changes in an attribute of a Java object, a
+			data
+			binding framework needs
+			to be able to register itself
+			as a
+			listener to
+			this
+			attribute.
+			JFace data binding provides API to register to changes in SWT widgets and JFace UI elements.
+			Other Java object must
+			implement this support. For example you can implement
+			<code>PropertyChangeSupport</code>
+			according to the Java
+			Bean specification in these Java elements. Or you can use
+			the
+			<code>WritableValue</code>
+			interface from JFace
+			inside the model.
+		</para>
+		<para>
+			The
+			<code>IObservableValue</code>
+			interface is the basis for
+			observing properties in JFace.
+			The
+			<property>Properties API</property>
+			provides factories to create
+			<code>IObservableValue</code>
+			objects.
+			The main factories are to created instances of
+			<code>IObservableValue</code>
+			are listed in the following table.
+
+			<table frame='all' id="databinding_observable_factories">
+				<title>Factories for the creation of an IObservableValue object </title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Factory</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								<code>PojoProperties</code>
+							</entry>
+							<entry>
+								Used to create
+								<code>IObservableValue</code>
+								for Java objects. The term Pojo (Plain old Java object) is used to describe a Java object which
+								does
+								not implement
+								a
+								specific framework API.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>BeanProperties</code>
+							</entry>
+							<entry>
+								Used for Java Beans. A Java Bean is a Java object which follows the Java Bean
+								specification. This specification
+								requires that the class
+								implements
+								<code>getter</code>
+								and
+								<code>setter</code>
+								methods for all its attributes. It must also
+								implement
+								property change
+								support via the
+								<code>PropertyChangeSupport</code>
+								class and propagate changes to registered listeners.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>WidgetProperties</code>
+							</entry>
+							<entry>
+								Used for properties of
+								SWT
+								widgets.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>ViewerProperties</code>
+							</entry>
+							<entry>
+								Used for properties of
+								JFace Viewer.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>Properties</code>
+							</entry>
+							<entry>
+								Used for properties of non specialized types, like Objects, Collections or Maps.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>Observables</code>
+							</entry>
+							<entry>
+								Used for properties of special Objects, Collections, Maps
+								and Entries of an IObservableMap.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+		<para>
+			The following code demonstrates how to create an
+			<code>IObservableValue</code>
+			object
+			for the
+			<property>firstName</property>
+			property of a Java object called
+			<property>person</property>
+			.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/personpojo/View.java" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			The next example demonstrates how to create an
+			<code>IObservableValue</code>
+			for the
+			<property>text</property>
+			property of an SWT
+			<code>Text</code>
+			widget called
+			<property>firstNameText</property>
+			.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/widgetProperties.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			The following plug-ins are required to use
+			JFace Data Binding.
+			<itemizedlist>
+				<listitem>
+					<para>org.eclipse.core.databinding
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						org.eclipse.core.databinding.beans
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>
+						org.eclipse.core.databinding.property
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.jface.databinding
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+	<section id="databinding_generics">
+		<title>JFace data binding and generics</title>
+		<para>
+			In Eclipse 4.6 the data binding framework has been partially generified. This work is planned to be finished in
+			4.7.
+			Currently you need to use
+			<code>@SuppressWarnings("unchecked")</code>
+			sometimes in your data binding code to avoid compiler warnings.
+		</para>
+	</section>
+	<section id="databinding_pojovsbean">
+		<title>Example for a Java bean implementation</title>
+		<indexterm>
+			<primary>POJO</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Java Bean</primary>
+		</indexterm>
+
+		<para>
+			A Java class which provides
+			<code>PropertyChangeSupport</code>
+			looks
+			like the following example.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/ModelObject.java" />
+			</programlisting>
+		</para>
+		<para>Other domain classes could extend this class. The following
+			example demonstrates that.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Person.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+	<section id="databinding_model_writablevalue">
+		<title>Using JFaces WritableValue class to track changes</title>
+		<para>
+			If you are able to use JFace API in your domain model, you can use
+			<code>WritableValue</code>
+			to provide the option to track values.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/writable/Person.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="databinding_pojos">
+		<title>Data binding and Java objects without change notification
+		</title>
+		<para>
+			If you connect two properties and one of these properties cannot be observed, you
+			you
+			can
+			still
+			use data binding for a
+			uni-directional binding.
+			For example, you can connect the
+			<parameter>text</parameter>
+			property of a SWT
+			<code>Text</code>
+			field to the
+			<parameter>summary</parameter>
+			field of a
+			<code>Todo</code>
+			object, even if Todo cannot be observed.
+			In this case, updates in the summary of the
+			<code>Todo</code>
+			object will not update the
+			<code>Text</code>
+			widget. But relevant change in the
+			<code>Text</code>
+			widget
+			user interface will update the
+			<code>Todo</code>
+			property.
+		</para>
+	</section>
+</section>

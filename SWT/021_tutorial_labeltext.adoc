@@ -1,0 +1,35 @@
+<section id="firstswt_label">
+	<title>Label and Text</title>
+	
+		Add
+		a
+		<code>Label</code>
+		and a
+		<code>Text</code>
+		widget to your application.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/first/FirstSWTApplication2.java" />
+		</programlisting>
+	
+	
+		If you now start the application you will get a small
+		<code>Shell</code>
+		with two
+		<code>Widgets</code>
+		included.
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/first.png" scale="80" />
+			</imageobject>
+			<textobject>
+				<phrase></phrase>
+			</textobject>
+		</mediaobject>
+	
+</section>

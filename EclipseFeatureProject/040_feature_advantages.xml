@@ -1,0 +1,36 @@
+<section id="eclipsefeatureproject_usage">
+	<title>Advantages of using features</title>
+	<para>The grouping of plug-ins into logical units makes it easier to
+		handle a set of plug-ins. Instead of adding many
+		individual plug-ins
+		to
+		your product configuration file, you can group
+		them using features. That
+		increases the visibility
+		of your application
+		structure.
+	</para>
+
+	<para>
+		Features can be consumed by the Eclipse update
+		manager,
+		the
+		build
+		process
+		and optionally for the definition of Eclipse
+		products.
+		Features
+		can
+		also be
+		used as basis to define a launch
+		configuration.
+	</para>
+	<para>
+		Eclipse provides several predefined features, e.g.
+		the
+		<code>org.eclipse.e4.rcp</code>
+		for Eclipse RCP applications.
+	</para>
+
+
+</section>

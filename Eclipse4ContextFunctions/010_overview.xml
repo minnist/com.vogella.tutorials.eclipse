@@ -1,0 +1,224 @@
+<section id="icontextfunction" role="wrapper">
+	<title>Context functions</title>
+	<section id="icontextfunction_definition">
+		<title>What are context functions?</title>
+		<indexterm>
+			<primary>Context function</primary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>context function</wordasword>
+			is an OSGi service which has access to the
+			<code>IEclipseContext</code>
+			. It
+			allows you to lazily create an object for a given key if this key
+			is
+			not contained in the relevant
+			<code>IEclipseContext</code>
+			.
+		</para>
+
+		<para>
+			The context
+			function registers itself for a certain key, for
+			example a
+			class
+			name.
+			Whenever the Eclipse
+			dependency
+			injection does not find an
+			existing object
+			under this key, it calls the
+			<code>compute()</code>
+			method of the object registered as context function.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contextfunctionoverview10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Context function query</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			In this
+			<code>compute()</code>
+			method the context function creates
+			the requested
+			object. As input you
+			receive the local
+			<code>IEclipseContext</code>
+			in which the injection was invoked and the requested key.
+		</para>
+
+		<para>
+			It can also
+			persist the created object into the
+			context so that
+			successive calls will return the same generated
+			object.
+		</para>
+
+	</section>
+	<section id="icontextfunction_creation">
+		<title>Creation of a context function</title>
+		<indexterm>
+			<primary>IContextFunction</primary>
+		</indexterm>
+		<para>
+			Context functions
+			are typically contributed as OSGi services. They
+			extend the
+			<code>ContextFunction</code>
+			class from the
+			<code>org.eclipse.e4.core.contexts</code>
+			package. The Eclipse runtime adds
+			context functions
+			by default to the
+			application context.
+		</para>
+		<para>
+			They register itself as OSGi service for the
+			<code>IContextFunction</code>
+			interface.
+		</para>
+		<tip>
+			<para>
+				Question: Why should you register your service for the
+				<code>IContextFunction</code>
+				interface
+				but extend the
+				<code>ContextFunction</code>
+				class?
+			</para>
+			<para>
+				Answer:
+				If the interface gets another method in a later
+				Eclipse
+				release
+				your
+				service continues to work, as the abstract
+				class
+				<code>ContextFunction</code>
+				can provide a default implementation.
+			</para>
+		</tip>
+		<para>
+			You need to specify the key the context function is responsible for. This is done via the
+			<parameter>service.context.key</parameter>
+			property in the service definition.
+		</para>
+		<para>
+			If the key is a class you have to point to the fully qualified class.
+			This key can
+			be used for dependency
+			injection.
+			If
+			you register a key which is not a class name, a consumer of
+			the injection would
+			have to use
+			the
+			<code>@Named</code>
+			annotation to specify the key.
+		</para>
+	</section>
+	<section id="icontextfunction_example">
+		<title>Examples for context function registrations</title>
+		<para>
+			The following example shows the declaration of a
+			context function.
+			This
+			function is available in the application context
+			and responsible
+			for
+			the
+			<code>vogella</code>
+			key.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunctions/component.xml" />
+			</programlisting>
+		</para>
+		<para>This key can be used for dependency injection as demonstrated in
+			the following example.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunctions/Inject.java" />
+			</programlisting>
+		</para>
+
+		<para>The following example demonstrates a possible implementation of
+			this context function which used OSGi DS annotations.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/todo/Todo.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="icontextfunction_evaluation">
+		<title>When to use context functions?</title>
+		<para>
+			Using
+			context functions
+			instead of a OSGi services has the
+			advantage
+			that these functions
+			have
+			access to the
+			<code>IEclipseContext</code>
+			hierarchy. They have access to the context in which the dependency
+			injection was called.
+		</para>
+		<para>
+			This allows them to lazily create objects using values from the
+			context.
+		</para>
+		<para>
+			Standard OSGi services
+			have no direct access to
+			the
+			<code>IEclipseContext</code>
+			.
+		</para>
+
+	</section>
+
+	<section id="icontextfunction_publishingtoosgi">
+		<title>Publishing to the OSGi service registry from a context function
+		</title>
+		<para>
+			OSGi services may need to access the objects created by a
+			context
+			function. In this case you can also publish an
+			OSGi service
+			from a
+			context
+			function.
+		</para>
+		<para>
+			The
+			following example demonstrates how to publish an
+			implementation into
+			the
+			<code>IEclipseContext</code>
+			and to the OSGi service registry.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/todo/TodoServiceContextFunctionOSGi.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+
+</section>

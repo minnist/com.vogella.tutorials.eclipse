@@ -1,0 +1,23 @@
+<section id="eownannotations_restrictions">
+	<title>Restrictions</title>
+	<para>
+		<wordasword>Extended object suppliers</wordasword>
+		do not have access to the
+		<code>IEclipseContext</code>
+		in which they are called. This limits them to search for objects
+		independent of the current Eclipse context. But general Dependency
+		Injection
+		can be used inside an ExtendedObjectSupplier implementation,
+		so that services like the IEventBroker, EModelService and so on can be
+		injected.
+	</para>
+	<para>
+		For example preferences are implemented as
+		<wordasword>extended object suppliers</wordasword>
+		.
+		They look for the preference values on the file system and do not
+		know about the
+		<code>IEclipseContext</code>
+		.
+	</para>
+</section>

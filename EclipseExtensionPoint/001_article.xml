@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Eclipse Extension Points and Extensions - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>27.08.2013</pubdate>
+		<releaseinfo>
+			<para>Version 2.4</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Extension Points</title>
+			<para> This tutorial describes the definition and usage of the
+				Eclipse
+				Extension Points. The article is written for and
+				Eclipse
+				4.2 but you can easily adjust it for Eclipse 3.x.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_extensionpoints.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_define.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_addingextensions.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/050_access.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/060_factories.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_simpleextensionpoint.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseExtensionPoint"?>
+</article>

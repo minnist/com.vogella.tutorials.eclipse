@@ -1,0 +1,170 @@
+<section id="jfacedb" role="wrapper">
+	<title>Data Binding for JFace Viewers</title>
+	<section id="jfacedb_viewer">
+		<title>Binding Viewers</title>
+		<indexterm>
+			<primary>JFace Data Binding</primary>
+			<secondary>Viewer binding</secondary>
+		</indexterm>
+		<para>
+			JFace data binding provides functionality to bind the data of
+			JFace
+			viewers.
+			Data binding for these viewers
+			distinguish between changes in the
+			collection and
+			changes in the
+			individual object.
+		</para>
+		<para>
+			In the case that data binding observes a collection, it requires
+			a content provider which notifies the viewer,
+			once the data in the
+			collection changes.
+		</para>
+		<para>
+			The
+			<code>ObservableListContentProvider</code>
+			class
+			is a content provider
+			which requires a list implementing the
+			<code>IObservableList</code>
+			interface.
+			The
+			<code>Properties</code>
+			class allows you to wrap another list with its
+			<code>selfList()</code>
+			method into an
+			<code>IObservableList</code>
+			.
+		</para>
+		<para>The following snippet demonstrates the usage:</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/listviewer/snippet.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="jfacedb_viewervalues">
+		<title>Observing list details</title>
+
+		<para>
+			You can also use the
+			<code>ObservableMapLabelProvider</code>
+			class
+			to observe changes of the list elements.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/snippets/ObservableMapLabelProvider.txt" />
+			</programlisting>
+		</para>
+
+
+
+	</section>
+	<section id="jfacedb_viewersupport">
+		<title>ViewerSupport</title>
+		<para>
+			<code>ViewerSupport</code>
+			simplifies the setup for JFace viewers in cases where selected columns
+			should be
+			displayed. It
+			registers changes
+			listeners on the collection as
+			well as
+			on
+			the
+			individual
+			elements.
+		</para>
+
+		<para>
+			<code>ViewerSupport</code>
+			creates via the
+			<code>bind()</code>
+			method
+			the
+			<code>LabelProvider</code>
+			and
+			<code>ContentProvider</code>
+			for a viewer
+			automatically.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/viewer/viewer.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="jfacedb_masterdetail">
+		<title>Master Detail binding</title>
+		<para>
+			The
+			<code>ViewerProperties</code>
+			class allows you to create
+			<code>IObservableValue</code>
+			for properties of the viewer. For example you can track the current
+			selection, e.g., which data object is currently
+			selected. This binding
+			is called
+			<wordasword>Master Detail</wordasword>
+			binding as you track the selection of a master.
+		</para>
+		<para>
+			To access fields in the selection you can use the
+			<code>PojoProperties</code>
+			or the
+			<code>BeanProperties</code>
+			class. Both provide the
+			<code>value().observeDetail()</code>
+			method chain,
+			which allows you to observe a detailed value of an
+			<code>IObservableValue</code>
+			object.
+		</para>
+		<para>
+			For example the following will map the
+			<property>summary</property>
+			property of the
+			<code>Todo</code>
+			domain object to a
+			<code>Label</code>
+			based on the selection of a
+			<code>ComboViewer</code>
+			.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/viewerSelection.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+	<section id="jfacedb_chain">
+		<title>Chaining properties</title>
+		<para>You can chain properties together to simplify observing nested
+			properties. The following examples demonstrate
+			this usage.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/chain/listchain.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/chain/chain.java" />
+			</programlisting>
+		</para>
+
+	</section>
+</section>

@@ -1,0 +1,162 @@
+<section id="buildeclipse_additions" role="wrapper">
+	<title>Additional infos about building the Eclipse platform</title>
+	<section id="buildeclipse_additions_questions">
+		<title>Reporting issues or asking questions about the build</title>
+		<para>
+			A good place to post questions about the CBI build is the CBI mailing
+			list. The webinterface for this mailing list can be found under the
+			following URL
+			<ulink url="https://dev.eclipse.org/mailman/listinfo/cbi-dev">CBI mailing list</ulink>
+			.
+		</para>
+	</section>
+	<section id="buildeclipse_additions_hudson">
+		<title>Eclipse platform Hudson builds</title>
+		<para>
+			The Eclipse platform has a Hudson build instance which can be found
+			under the following URL:
+			<ulink url="https://hudson.eclipse.org/platform/">Eclipse platform Hudson</ulink>
+			. This build instance is currently not used for the main build, only
+			to validate Gerrit contributions.
+
+		</para>
+		<para>
+			See
+			<ulink url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=420101">Bug report for migrating the platform build to
+				Hudson
+			</ulink>
+			.
+		</para>
+	</section>
+
+
+	<section id="buildeclipse_additions_releasebuild">
+		<title>Release and milestone builds</title>
+		<para>
+
+			To have a reproducible and stable build, it is possible to
+			switch to
+			a specific version instead of using the newest source code.
+			For this
+			the platform aggregator repository has tags for every
+			release
+			build.
+		</para>
+		<para>
+			To build for example the R4_3 release, you have to checkout this
+			specific tag out and
+			start the build like the following:
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/extras/build_release.txt" />
+			</programlisting>
+		</para>
+		<warning>
+			<para>
+				The CBI build still depends on external resources like p2 update
+				sites. From time to time this resources change or will become
+				unavailable. The R4_3_1 tag for example depends on a removed update
+				site, so you have to add the new URL via a
+				parameter to the build:
+				<programlisting language="bourne">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+						parse="text" href="./examples/extras/build_release_r4_3_1.txt" />
+				</programlisting>
+			</para>
+		</warning>
+
+		<tip>
+			<para>To check which properties can be overridden check the
+				properties fields in the eclipse-platform-parent/pom.xml file.
+			</para>
+		</tip>
+
+	</section>
+
+	<section id="buildeclipse_additions_build_id">
+		<title>Changing build ID</title>
+		<para>
+			A normal CBI Build shows, "Build id: @build@" in the "About Eclipse
+			SDK" window. To define a custom build id use the
+			<code>buildId</code>
+			parameter and the
+			<code>update-branding-plugins</code>
+			profile.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/extras/buildid.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="buildeclipse_additions_single">
+		<title>Build single parts of the aggregator</title>
+		<para>
+			It is also possible to build just single parts of the aggregator
+			repository, by passing the
+			<code>build-individual-bundles</code>
+			profile.
+			The following example shows how to build just the
+			rt.equinox.framework.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/extras/build-individual-bundles.txt" />
+			</programlisting>
+		</para>
+
+		<note>
+			<para>Unfortunately while there
+				are numerous bundles for which the
+				build succeed with this method, there are a
+				couple bundles / features
+				that cannot be built using this method.
+			</para>
+		</note>
+	</section>
+
+
+	<section id="buildeclipse_additions_buildingnatives">
+		<title>Building natives (SWT binary files)</title>
+		<para>The CBI build does not build natives by default (SWT binary
+			files).
+			Instead, the CBI build simply copies pre-built native files
+			from the
+			swt.binaries repository.
+		</para>
+		<para>
+			For Windows/Mac/Linux it is possible to force the CBI build to
+			build
+			these
+			natives by passing the -Dnative pointing to the build.
+			For
+			example the
+			<parameter>-Dnative=gtk.linux.x86_64</parameter>
+			parameter in
+			the
+			case of Linux. List of options available at
+			<ulink
+				url="https://wiki.eclipse.org/Platform-releng/Platform_Build#Building_natives">Building natives</ulink>
+			.
+		</para>
+
+	</section>
+	<section id="buildeclipse_additions_fedora">
+		<title>Fedora Eclipse CBI build</title>
+
+		<para>
+			The Fedora project has removed some non Eclipse IDE related
+			plug-ins
+			to
+			speed up the build process. See the
+			<ulink
+				url="http://pkgs.fedoraproject.org/cgit/eclipse.git/tree/eclipse.spec#n366">Fedora build script</ulink>
+			.
+		</para>
+
+	</section>
+</section>

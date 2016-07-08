@@ -1,0 +1,84 @@
+<section id="contextmenu">
+	<title>Tutorial: Commands and context menus</title>
+	<para>
+		In this example you add a context menu to a SWT table widget.
+		Create a
+		new project
+		called
+		<wordasword>de.vogella.rcp.intro.commands.popup</wordasword>
+		based on the
+		"RCP
+		application
+		with a view" example.
+	</para>
+	<para>
+		Create a new command with the
+		<code>de.vogella.rcp.intro.commands.popup.showSelected</code>
+		ID
+		and the name
+		<guilabel>Show</guilabel>
+		.
+	</para>
+	<para>
+		In this example we will not use the default handler. Therefore
+		add the
+		<code>org.eclipse.ui.handlers</code>
+		extension point
+		to your plugin.xml file
+		and add a handler. The first
+		parameter is the
+		commandId and the
+		second
+		the class for
+		the handler. Use
+		<code>de.vogella.rcp.intro.commands.popup.handler.ShowSelected</code>
+		as class name.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/commands_popup10.png" />
+
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para> Implement now the code for your handler. I just print the
+		selected elements to the console.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+				href="../examples/contextmenu/ShowSelectedHandler.java" />
+		</programlisting>
+	</para>
+	<para>Add a new menuContribution with the locationURI
+		"popup:de.vogella.rcp.intro.commands.popup.view", where
+		"de.vogella.rcp.intro.commands.popup.view" is the ID of your view
+		which has been automatically created for you.
+	</para>
+	<para>Right-click your new menuContribution and select New ->
+		Command.
+		Assign your command to the field "commandId".
+		Label it "One
+		Item
+		selected".
+	</para>
+	<para>
+		Now you have add a MenuManager to your view. Select the
+		<code>View</code>
+		class and change it to the following.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/contextmenu/change10.java" />
+		</programlisting>
+	</para>
+	<para> Run your application. If you perform a right-click on the table, your menu
+		should become
+		visible. If you select it
+		menu then the names of the
+		selected items
+		should be written to the console.
+	</para>
+
+</section>

@@ -1,0 +1,52 @@
+<section id="shortcuts_overview">
+	<title>Quick Access</title>
+	<para>
+		The
+		<keycombo>
+			<keysym>Ctrl</keysym>
+			<keysym>3</keysym>
+		</keycombo>
+		<indexterm>
+			<primary>Shortcuts</primary>
+			<secondary>Quick Access</secondary>
+		</indexterm>
+		shortcut allows you to perform all available actions in Eclipse. This
+		shortcut puts the
+		focus into the
+		<guilabel>Quick Access</guilabel>
+		(quick access)
+		search box which allows you to execute any Eclipse
+		command.
+		For example you
+		can
+		open a
+		<wordasword>Preference</wordasword>
+		, a
+		<wordasword>Wizard</wordasword>
+		, a
+		view
+		and a
+		<wordasword>Preference</wordasword>
+		page.
+	</para>
+	<para>
+		You can also use
+		<wordasword>QuickAccess</wordasword>
+		to search for an opened editor by typing in the name of the resource
+		which the editor shows.
+	</para>
+	<para>
+		The following screenshot shows how you the available commands in quick access
+		for the "New Java" search term.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/short10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Ctrl+3 shortcut dialog</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

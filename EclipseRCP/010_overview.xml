@@ -1,0 +1,20 @@
+<section id="eclipseapplications">
+	<title>What is an Eclipse RCP application?</title>
+	<para>
+		An Eclipse RCP application is a stand-alone application based on
+		Eclipse platform technologies.
+		This $book uses the terms
+		<wordasword>Eclipse based applications</wordasword>
+		,
+		<wordasword>Eclipse application</wordasword>
+		,
+		<wordasword>Eclipse 4 application</wordasword>
+		and
+		<wordasword>Eclipse RCP
+			application
+		</wordasword>
+		interchangeably for referring to such
+		applications.
+	</para>
+</section>
+

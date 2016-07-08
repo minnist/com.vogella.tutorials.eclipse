@@ -1,0 +1,267 @@
+<section id="dialogs_jface">
+	<title>JFace Dialogs</title>
+	<indexterm>
+		<primary>Dialog</primary>
+		<secondary>JFace</secondary>
+	</indexterm>
+	<section id="dialogs_purpose">
+		<title>Dialogs from JFace</title>
+		<para>
+			JFace contains several
+			frequently used dialogs which are not
+			based on the
+			native dialogs as
+			well as
+			a framework for
+			building custom
+			dialogs.
+		</para>
+		<note>
+			<para>Even though JFace dialogs are not native, they follow the
+				native platform semantics for things like the button
+				order.
+			</para>
+		</note>
+	</section>
+
+	<section id="dialogs_jfacemessagedialogstatic">
+		<title>Using the static helper methods of the JFace MessageDialog class</title>
+		<indexterm>
+			<primary>MessageDialog</primary>
+		</indexterm>
+
+
+		<para>
+			The
+			<code>MessageDialog</code>
+			class
+			provides static methods to open commonly used
+			dialogs, for
+			example
+			an
+			information
+			or a warning
+			dialog. The following
+			code demonstrates the
+			usage
+			of
+			these static methods.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialogStandardjava" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="dialogs_jfacemessagedialog">
+		<title>Using the JFace MessageDialog class directly</title>
+
+		<para>
+			The
+			<code>MessageDialog</code>
+			class also allows the customization of the
+			buttons in the dialog.
+			The
+			following code demonstrates its
+			usage.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/messageDialog.java" />
+			</programlisting>
+		</para>
+
+		<para>If you open this dialog, it looks similar to the following
+			screenshot.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jface_customdialog10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>JFace own dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Several of these dialogs return the user selection, e.g.
+			the
+			<code>openConfirm()</code>
+			method returns
+			true if the user selected the
+			<guilabel>OK</guilabel>
+			button.
+			The following example code prompts the user for confirmation
+			and handles the result.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MessageDialog1.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="dialogs_jface_errordialog">
+		<title>ErrorDialog</title>
+		<indexterm>
+			<primary>ErrorDialog</primary>
+		</indexterm>
+		<para>
+			The
+			<code>ErrorDialog</code>
+			class can be used
+			to display one or more errors to the user. If an
+			error
+			contains
+			additional detailed information then a
+			button is
+			automatically
+			added, which shows or hides this information when
+			pressed by the
+			user.
+		</para>
+		<para>
+			The following snippet shows a handler class which
+			uses this
+			dialog.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/ShowErrorDialogHandler.java" />
+			</programlisting>
+		</para>
+
+		<para>If you trigger this handler, the dialog shows the exception
+			messages and the detail page contains the stacktrace,
+			as depicted in
+			the
+			following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/errordialog_jface10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>ErrorDialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="tutorialjface_owndialog">
+		<title>Creating a custom dialog</title>
+		<para>
+			The
+			<code>org.eclipse.jface.dialogs.Dialog</code>
+			class can be extended to create your own
+			dialog implementation. This
+			class creates an
+			area in which you can place
+			controls and add
+			an
+			<guibutton>OK</guibutton>
+			and
+			<guibutton>Cancel</guibutton>
+			button (or other custom buttons).
+		</para>
+		<para>
+			Your class needs to implement the
+			<code>createDialogArea()</code>
+			method. This method gets a
+			<code>Composite</code>
+			which expects to get a
+			<code>GridData</code>
+			object assigned as its layout data. Via the
+			<code>super.createDialogArea(parent)</code>
+			method call, you can create a
+			<code>Composite</code>
+			to which you can add your controls. This is demonstrated by the
+			following example code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyDialog.java" />
+			</programlisting>
+		</para>
+		<tip>
+			<para>
+				The example code demonstrates how to set the title of your custom
+				dialog via the
+				<code>configureShell()</code>
+				method.
+			</para>
+		</tip>
+		<para>If you open this dialog it looks similar to the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jface_customdialog02.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Custom dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="tutorialjface_userdefined">
+		<title>TitleAreaDialog</title>
+		<para>
+			You can also implement your custom
+			dialog
+			based on the
+			<code>TitleAreaDialog</code>
+			class.
+		</para>
+		<para>
+
+			<code>TitleAreaDialog</code>
+			has a reserved space for providing feedback to the user. You can set
+			the text in this space via the
+			<code>setMessage()</code>
+			and
+			<code>setErrorMessage()</code>
+			methods.
+		</para>
+		<para>
+			The following example shows a custom defined
+			<code>TitleAreaDialog</code>
+			.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/MyTitleAreaDialog.java" />
+			</programlisting>
+		</para>
+		<para>This dialog is depicted in the following screenshot.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jface_customdialog20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Custom dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The usage of this dialog is demonstrated in the
+			following code
+			snippet. This code might for example be used in a
+			handler.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jface/OpenMyDialog.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

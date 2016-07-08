@@ -1,0 +1,92 @@
+<section id="import_project_with_git">
+	<title>Import projects from an existing repository</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>import projects from repository
+		</secondary>
+	</indexterm>
+	<para>
+		If you have already an existing Git repository
+		you can add it to
+		Eclipse and import the
+		Eclipse projects into your
+		workspace via the
+		Select
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>Import</guisubmenu>
+			<guisubmenu>Git</guisubmenu>
+			<guisubmenu>Project from Git</guisubmenu>
+		</menuchoice>
+		menu entry.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_importprojects10.png"
+					scale="40" />
+
+			</imageobject>
+			<textobject>
+				<phrase>Importing projects via EGit</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		Select
+		<guilabel>Local</guilabel>
+		if you want to important from a local repository or
+		<guilabel>Clone URL</guilabel>
+		if you first want to clone the repository.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_importprojects20.png"
+					scale="40" />
+
+			</imageobject>
+			<textobject>
+				<phrase>Importing projects via EGit part 2</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		The following screenshot shows several local repositories. To import
+		the project contained in one of them, select one entries and press the
+		<guibutton>Next</guibutton>
+		button. To add a new local repository to this dialog (and the
+		<guilabel>Git repositories</guilabel>
+		view) use the
+		<guibutton>Add...</guibutton>
+		button.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egit_importprojects30.png"
+					scale="40" />
+
+			</imageobject>
+			<textobject>
+				<phrase>Importing projects via EGit part 2</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		The
+		wizard
+		allows you to import existing projects. After this
+		import
+		the
+		Eclipse
+		IDE makes the projects available and is aware that
+		these
+		projects
+		are
+		part of a Git repository.
+	</para>
+</section>

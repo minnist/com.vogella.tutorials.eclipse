@@ -1,0 +1,5 @@
+# turn on debugging for the org.eclipse.core plugin.
+org.eclipse.osgi/debug=true
+
+# turn on loading time for the plug-ins
+org.eclipse.osgi/debug/bundleTime=true

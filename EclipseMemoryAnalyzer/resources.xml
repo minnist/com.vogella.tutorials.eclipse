@@ -1,0 +1,13 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+
+	<section id="resources_mat">
+		<title>MAT Resources</title>
+		<para>
+			<ulink
+				url="http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool">How to acquire a Heap Dump from MAT</ulink>
+		</para>
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

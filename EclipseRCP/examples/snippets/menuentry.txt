@@ -1,0 +1,8 @@
+
+<menus xmi:id="_97aYcEzrEeGWA5PIedy0eQ" elementId="viewmenutest" 
+	label="viewmenutest Label">
+	<tags>ViewMenu</tags>
+    <children xsi:type="menu:HandledMenuItem" xmi:id="_JuWbAEzsEeGWA5PIedy0eQ" 
+    	elementId="handledViewMenu" label="Test" tooltip="kk" 
+    	command="_rR8PMEq3EeGHfpgriXYg9Q"/>
+</menus>

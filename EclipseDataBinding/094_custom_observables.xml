@@ -1,0 +1,180 @@
+<section id="customObservables" role="">
+	<title>Extending data binding with custom observables</title>
+	<section>
+		<title>Developing custom observables</title>
+		<para>
+			Sometimes the observables, which are provided by the factories (see
+			<xref linkend="databinding_observable_factories" />
+			), are not sufficient and you might want to create a custom
+			<code>IObservable</code>
+			.
+		</para>
+		<para>
+			This implementation can extend the
+			<code>AbstractObservable</code>
+			class
+			or one
+			of it's subclasses, like the
+			<code>AbstractObservableValue</code>
+			class.
+		</para>
+		<para>For example the following custom widget allows to set a text.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidget.java" />
+			</programlisting>
+		</para>
+
+		<note>
+			<para>
+				Since there is no predefined
+				<code>IObservable</code>
+				for custom widgets, you have to
+				implement a custom one.
+
+				While is is possible to use
+				<code>PojoProperties</code>
+				class
+				to create an
+				<code>IObservableValue</code>
+				by using
+				<code>PojoProperties.value("text").observe(customWidget)</code>
+				this would not result in an
+				<code>ISWTObservableValue</code>
+				.
+				Only by using an
+				<code>ISWTObservable</code>
+				classes like
+				<code>ControlDecorationSupport</code>
+				would work, because only those offer a
+				<code>public Widget getWidget();</code>
+				method, so that the widget may be
+				decorated.
+			</para>
+		</note>
+	</section>
+	<section>
+		<title>Directly implement IObservable</title>
+		<para>
+			The
+			<code>CustomWidgetObservableValue</code>
+			extends
+			<code>AbstractObservableValue</code>
+			and also implements the
+			<code>ISWTObservableValue</code>
+			interface.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetObservableValue.java" />
+			</programlisting>
+		</para>
+		<para>This observable can then be used like this:</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Observable.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section>
+		<title>Implement an IProperty rather than IObservable directly</title>
+		<para>
+			A better approach is to implement the
+			<code>IProperty</code>
+			interface, like
+			<code>IValueProperty</code>
+			,
+			<code>IWidgetValueProperty</code>
+			and others.
+		</para>
+		<para>
+			So let's implement the solution of the previous section with an
+			<code>IProperty</code>
+			implementation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetProperty.java" />
+			</programlisting>
+		</para>
+		<para>
+			This
+			<code>WidgetValueProperty</code>
+			can be used like this:
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Property.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section>
+		<title>Delegates for common properties of different objects</title>
+		<para>
+			Delegating properties act a bit like a factory for
+			<code>IProperty</code>
+			objects,
+			where the
+			<code>IProperty</code>
+			is not created directly, but at the moment, when the
+			<code>observe</code>
+			method is called. For instance a
+			<code>DelegatingValueProperty</code>
+			creates a
+			<code>IValueProperty</code>
+			according
+			to the object, which should be observed.
+		</para>
+		<para>
+			So you can decision, which
+			<code>IValueProperty</code>
+			is used, is made at the moment, when the
+			<code>observe</code>
+			method is actually called.
+		</para>
+		<para>
+			Imagine, we want such a factory for the
+			<code>IValueProperty</code>
+			classes we created
+			in the former sections. Therefore we can derive from
+			<code>DelegatingValueProperty</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/custom_observable/VogellaDelegatingValueProperty.java" />
+			</programlisting>
+		</para>
+		<para>
+			In order to have a factory like the
+			<code>WidgetProperties</code>
+			class, we could
+			create a
+			<code>VogellaProperties</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaProperties.java" />
+			</programlisting>
+		</para>
+		<para>
+			You might want to have a look at
+			the
+			<code>WidgetProperties</code>
+			, which contains several methods with more sense for
+			those delegates.
+		</para>
+		<para>Here is the code how to use the factory for "vogella" properties and some samples, which fit to the
+			intention of the delegates.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaPropertiesPart.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

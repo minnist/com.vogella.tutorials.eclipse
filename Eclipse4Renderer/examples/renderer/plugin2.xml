@@ -1,0 +1,30 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="de.vogella.e4.renderer.maps"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="de.vogella.e4.renderer.maps">
+         </property>
+         <property
+               name="applicationXMI"
+               value="de.vogella.e4.renderer.maps/Application.e4xmi">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/de.vogella.e4.renderer.maps/css/default.css">
+         </property>
+         <property
+               name="rendererFactoryUri"
+               value="platform:/plugin/de.vogella.e4.renderer.maps/de.vogella.e4.renderer.maps.MyRendererFactory">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

@@ -1,0 +1,21 @@
+ObservableListContentProvider contentProvider = 
+	new ObservableListContentProvider();
+	
+// create the label provider which includes monitoring
+// of changes to update the labels
+
+IObservableSet knownElements = contentProvider.getKnownElements();
+
+final IObservableMap firstNames = BeanProperties.value(Person.class,
+	"firstName").observeDetail(knownElements);
+final IObservableMap lastNames = BeanProperties.value(Person.class,
+	"lastName").observeDetail(knownElements);
+	
+IObservableMap[] labelMaps = { firstNames, lastNames };
+
+ILabelProvider labelProvider = 
+	new ObservableMapLabelProvider(labelMaps) {
+	public String getText(Object element) {
+		return firstNames.get(element) + " " + lastNames.get(element);
+  	}
+};

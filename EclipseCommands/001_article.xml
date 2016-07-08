@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Adding menus, toolbar and popup menus to the Eclipse IDE - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>22.01.2014</pubdate>
+		<releaseinfo>
+			<para>Version 3.1</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Commands tutorial</title>
+			<para> This tutorials describes how to add commands, menus and
+				toolbar entries to the Eclipse IDE.
+			</para>
+			<para>This article is based on Eclipse Kepler (4.3).
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/001_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_commands.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_menus.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_handler.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_tutorial_menu.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_tutorial_toolbar.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/060_tutorial_contextmenu.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/070_advanced.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseCommands"?>
+</article>

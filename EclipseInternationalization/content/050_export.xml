@@ -1,0 +1,21 @@
+<section id="i18n_export">
+	<title>Exporting Plug-ins and Products</title>
+	<indexterm>
+		<primary>i18n</primary>
+		<secondary>Export</secondary>
+	</indexterm>
+	<para>
+		The
+		<filename>build.properties</filename>
+		file in a plug-in defines which of the files are
+		included in the
+		exported product.
+	</para>
+	<para>
+		You must include your property files in the
+		<filename>build.properties</filename>
+		file, otherwise your translations will be missing in the exported
+		product.
+	</para>
+</section>
+

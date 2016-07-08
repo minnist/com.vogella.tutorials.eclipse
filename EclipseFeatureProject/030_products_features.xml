@@ -1,0 +1,54 @@
+<section id="product_dependencies">
+	<title>Feature or plug-in based products</title>
+	<indexterm>
+		<primary>Product configuration file</primary>
+		<secondary>Based on features</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>Product configuration file</primary>
+		<secondary>Based on plug-ins</secondary>
+	</indexterm>
+	<para>
+		A product can either be based on plug-ins or
+		on features. This
+		setting
+		is
+		done on
+		the
+		<guilabel>Overview</guilabel>
+		tab of the product
+		configuration file.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/product48.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Configuration of the product can be based on features or
+					plug-ins</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		On the
+		<guilabel>Contents</guilabel>
+		tab in the product editor you enter the plug-ins or features
+		your
+		products consists of.
+	</para>
+	<para>
+		A
+		product does not perform automatic
+		dependency
+		resolution. If you add a
+		feature
+		to your product
+		and want to
+		add its
+		dependencies, press the
+		<guilabel>Add Required</guilabel>
+		button.
+	</para>
+</section>
+

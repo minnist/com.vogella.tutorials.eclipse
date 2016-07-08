@@ -1,0 +1,58 @@
+<section id="applicationmodel_osgi">
+	<title>Modularity support in Eclipse RCP</title>
+	<indexterm>
+		<primary>Application model</primary>
+		<secondary>Modularity</secondary>
+	</indexterm>
+	<para>Eclipse RCP applications are based on OSGi and therefore support
+		the modularity concept of OSGi. To contribute to the application
+		model, the Eclipse platform implements support for static and dynamic
+		contributions.
+	</para>
+
+	<para>
+		The initial structure of an RCP application is described via the
+		application
+		model in the
+		<filename>Application.e4xmi</filename>
+		file.
+	</para>
+	<para>
+		Other
+		plug-ins can extend this base application model with
+		contributions.
+		Model contributions can be statically defined in files.
+		These extensions are called
+		fragments
+		or
+		<wordasword>model fragments</wordasword>
+		. Model contributions can also extend the model dynamically via code.
+		These extensions are called
+		<wordasword>processors</wordasword>
+		or
+		<wordasword>model processors</wordasword>
+		.
+	</para>
+
+	<para>
+		These model contributions are registered with the Eclipse framework
+		via an extension point. To register your contributions you provide
+		extensions to the
+		<code>org.eclipse.e4.workbench.model</code>
+		extension point.
+	</para>
+	<para>
+		This extension point is defined in the
+		<code>org.eclipse.e4.ui.workbench</code>
+		plug-in.
+	</para>
+
+	<para>
+		The model contributions are read during startup and the
+		contained
+		information
+		is used
+		to build the runtime application model.
+	</para>
+
+</section>

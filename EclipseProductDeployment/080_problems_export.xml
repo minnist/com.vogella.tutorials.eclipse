@@ -1,0 +1,191 @@
+<section id="exportproblems" role="wrapper">
+	<title>Common product export problems</title>
+	<section id="exportproblems_analysis">
+		<title>Problems with the export and log files</title>
+		<indexterm>
+			<primary>Log file</primary>
+			<secondary>Exported RCP application</secondary>
+		</indexterm>
+		<para>
+			During the export or the start of the exported application you may
+			encounter
+			problems. If your application got successfully exported but
+			cannot be started you find
+			a log file
+			ending with the
+			<filename>.log</filename>
+			extension in the
+			<filename>configuration</filename>
+			folder of your application. This file contains the error you
+			encountered.
+		</para>
+		<para>Alternatively the export process may fail. In both cases you can
+			use
+			this chapter as reference to try to find and fix the reason for
+			the failure.
+		</para>
+	</section>
+	<section id="exportproblems_mainproblem">
+		<indexterm>
+			<primary>Deployment</primary>
+			<secondary>Common problems</secondary>
+		</indexterm>
+		<title>Export problem number #1: export folder is not empty</title>
+		<para>
+			The most common problem is that the folder to which you export
+			is not
+			empty.
+			If you export to a certain folder, ensure that the
+			folder
+			is empty. Exporting twice to the same folder may create file locks
+			or
+			results in error messages reporting version conflicts.
+		</para>
+	</section>
+	<section id="exportproblems_checklist">
+		<title>Checklist for common export problems</title>
+		<para>
+			If the export encounters a problem please have a look into the
+			following table
+			for a solution:
+
+			<table frame='all'>
+				<title>Problems with the product export</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Problem</entry>
+							<entry>Possible cause</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Export fails</entry>
+							<entry>Try using an empty target directory, sometimes
+								the export
+								cannot delete the existing files and therefore fails.
+							</entry>
+						</row>
+						<row>
+							<entry>No executable file after the export</entry>
+							<entry>
+								Check the flag "The product
+								includes native
+								launcher
+								artifacts" in
+								your .product file on the
+								<guilabel>Overview</guilabel>
+								tab.
+							</entry>
+						</row>
+						<row>
+							<entry>Product could not be found</entry>
+							<entry>Validate that all dependencies
+								are included in the product.
+								Delete an existing launch
+								configuration and restart the product
+								from the IDE to see if
+								everything is configured correctly.
+							</entry>
+						</row>
+						<row>
+							<entry>Splash screen or other icons are missing</entry>
+							<entry>
+								Check the
+								<filename>build.properties</filename>
+								file to see if all required images and
+								icons are
+								included in
+								the
+								export.
+							</entry>
+						</row>
+						<row>
+							<entry>Splash screen is missing</entry>
+							<entry>Ensure that you have entered the defining plug-in in the
+								"Splash" tab on the product configuration file. If this is not
+								set, the splash screen is not displayed after the export.
+								Unfortunately, it is displayed if you start the plug-in
+								from the
+								Eclipse IDE.
+							</entry>
+						</row>
+						<row>
+							<entry>Issues during start of the application</entry>
+							<entry>Check the log file in the
+								workspace folder of your exported
+								application to see the error messages
+								during the start process.
+								Alternatively
+								add the
+								"-consoleLog" parameter to the ".ini" file
+								in folder
+								of
+								the
+								exported application.
+							</entry>
+						</row>
+						<row>
+							<entry>applicationXMI argument is missing</entry>
+							<entry>
+								Check the
+								<filename>build.properties</filename>
+								file to see if the
+								<filename>Application.e4xmi</filename>
+								and
+								the
+								<filename>plugin.xml</filename>
+								files are
+								included in
+								the export.
+							</entry>
+						</row>
+						<row>
+							<entry>Service could not be found or injected</entry>
+							<entry>
+								Make sure that the bundle which provides the service has the
+								<guilabel>Activate this plug-in when one of its classes is
+									loaded
+								</guilabel>
+								flag set. Also
+								make
+								sure
+								that the
+								<code>org.eclipse.equinox.ds</code>
+								bundle
+								is started automatically with a
+								<guilabel>Start Level</guilabel>
+								less than 4.
+							</entry>
+						</row>
+						<row>
+							<entry>Application ID could not be found</entry>
+							<entry>
+								Define a
+								start
+								level of 1 and set auto-start to true for the
+								<code>org.eclipse.core.runtime</code>
+								plug-in.
+							</entry>
+						</row>
+						<row>
+							<entry>Translations not available in the exported product</entry>
+							<entry>
+								Ensure via the
+								<filename>build.properties</filename>
+								file of the relevant plug-in that the files containing the
+								translations are included in
+								the export.
+							</entry>
+						</row>
+
+
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+	</section>
+</section>

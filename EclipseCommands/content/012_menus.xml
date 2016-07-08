@@ -1,0 +1,143 @@
+<section id="menus">
+	<title>Defining the command usage in the UI</title>
+	<section id="menus_extensionpoint">
+		<title>Menu extension points</title>
+		<para>
+			The
+			<code>org.eclipse.ui.menu</code>
+			extension point is used to define where the command is visible in the
+			application, e.g., you could define that the command is visible in the
+			application menu or in a
+			view
+			menu.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/command62.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			The
+			<guilabel>menuContribution</guilabel>
+			contribution has an ID value which allow to identify the
+			contribution.
+		</para>
+		<para>
+			<guilabel>menuContribution</guilabel>
+			has an
+			<parameter>locationURI</parameter>
+			attribute which allows to
+			define where in the user interface a
+			command
+			is displayed. This different attribute values are summarized in the
+			following table.
+		</para>
+
+		<para>
+			<table frame='all'>
+				<title>Location URIs</title>
+
+				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<colspec colname='c3' />
+					<thead>
+						<row>
+							<entry>Contribution to</entry>
+							<entry>Description</entry>
+							<entry>Uri</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Application menu</entry>
+							<entry>Displays the command in the menu of the
+								application
+							</entry>
+							<entry>menu:org.eclipse.ui.main.menu</entry>
+						</row>
+						<row>
+							<entry>Application toolbar</entry>
+							<entry>displays the command in the toolbar of the
+								application
+							</entry>
+							<entry>toolbar:org.eclipse.ui.main.toolbar
+							</entry>
+						</row>
+						<row>
+							<entry>View toolbar</entry>
+							<entry> displays the command in the toolbar of the view</entry>
+							<entry> toolbar:viewId - For example to display a menu to
+								view
+								with the Id "View1" use "toolbar:View1".
+							</entry>
+						</row>
+						<row>
+							<entry>Context menu / pop-up</entry>
+							<entry>Command is displayed in a context menu, e.g., right
+								mouse
+								click on an object
+							</entry>
+							<entry>popup:ID</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+
+	<section id="menus_position">
+		<title>Defining the position of a menu extension</title>
+		<para>
+			Frequently you want to position a new command behind or before
+			another command. For example the 
+			<guilabel>Save All</guilabel>
+			menu entry should be positioned after the
+			<guilabel>Save</guilabel>
+			menu entry.
+		</para>
+		<para>
+			You can define the relative position of a command in this
+			locationURI
+			by using the
+			pattern
+			<parameter>?before=ID</parameter>
+			or
+			<parameter>?after=ID</parameter>
+			.
+		</para>
+		<para>
+			The ID
+			can
+			be an existing separator
+			name,
+			menu ID, or item ID. The
+			command will
+			then be placed before or
+			after
+			the element with the
+			corresponding ID.
+		</para>
+		<para>
+			For example if you want to add
+			a command to an
+			existing menu with
+			the
+			<parameter>fileMenu</parameter>
+			ID behind the menu
+			entry with the
+			<parameter>oneEntry</parameter>
+			ID use the
+			<parameter>menu:fileMenu?after=oneEntry</parameter>
+			locationURI .
+		</para>
+	</section>
+
+
+
+</section>

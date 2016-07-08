@@ -9,76 +9,49 @@ Eclipse application model elements, e.g., _MPartStack_ or _MPart_ can also be st
 The CSS selectors are based on the Java classes for the model elements. 
 Some examples are given in the following table.
 
-<table frame="all">
-<title>Model elements and CSS selectors
-<tgroup cols="2" align="left" colsep="1" rowsep="1">
-<colspec colname="c1" colwidth="1*" />
-<colspec colname="c2" colwidth="2*" />
-<thead>
-<row>
-<entry>Model Element</entry>
-<entry>CSS Selector</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>MPart</entry>
-<entry>.MPart</entry>
-</row>
-<row>
-<entry>MPartStack</entry>
-<entry>.MPartStack</entry>
-</row>
-<row>
-<entry>MPartSashContainer</entry>
-<entry>.MPartSashContainer</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
 
+
+
+.Table Model elements and CSS selectors
+|===
+|Model Element  |CSS Selector
+
+|MPart
+|.MPart
+
+|MPartStack
+|.MPartStack
+
+|MPartSashContainer
+|.MPartSashContainer
+
+|===
 
 
 For example you could hide the minimize and maximize button of a _MPartStack_ via the following CSS rule.
 
-<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/hideminimize.txt" />
-</programlisting>
-
+[source,txt]
+----
+include::res/css/hideminimize.txt[]
+----
 
 
 Eclipse also supports _CSS pseudo classes_. 
 The following table lists several of these pseudo classes.
 
 
-<table frame="all">
-<title>CSS pseudo classes in Eclipse
-<tgroup cols="2" align="left" colsep="1" rowsep="1">
-<colspec colname="c1" colwidth="1*" />
-<colspec colname="c2" colwidth="2*" />
-<thead>
-<row>
-<entry>CSS pseudo classes </entry>
-<entry>Description</entry>
-</row>
-</thead>
-<tbody>
-<row>
-<entry>Button:checked </entry>
-<entry>Selects checked buttons</entry>
-</row>
-<row>
-<entry>:active</entry>
-<entry>For example shell:active selects the active shell\</entry>
-</row>
-<row>
-<entry>:selected </entry>
-<entry>Allows to style a selected element, e.g., a part in a PartStack.
-</entry>
-</row>
-</tbody>
-</tgroup>
-</table>
+.Table CSS pseudo classes in Eclipse
+|===
+|CSS pseudo classes |Description
+
+|Button:checked
+|Selects checked buttons
+
+|:active
+|For example shell:active selects the active shell
+
+|:selected
+|Allows to style a selected element, e.g., a part in a PartStack.
 
 
 === Styling based on identifiers and classes
@@ -88,28 +61,27 @@ An identifier is supposed to be unique while a class can be assigned to several 
 
 The following example demonstrates how to set the identifier and the class on SWT widgets.
 
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/datatag.txt" />
-</programlisting>
+[source,txt]
+----
+include::res/css/datatag.txt[]
+----
 
 
 Sometimes the `IStylingEngine` cannot be accessed easily.
 For example, if your want to style existing dialog which are not created via dependency injection. 
 In this case you can set a tag on SWT widget directly.
 
-
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/datatag2.txt" />
-</programlisting>
-
+[source,txt]
+----
+include::res/css/datatag2.txt[]
+----
 
 These ids or classes can be addressed in the CSS file via the `#` or the `.` selector.
 
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/cssForDatatag.txt" />
-</programlisting>
-
-
+[source,txt]
+----
+include::res/css/cssForDatatag.txt[]
+----
 
 === Colors and gradients
 
@@ -120,65 +92,38 @@ Styling supports gradients for the background color of user interface widgets.
 Linear and radial gradients are supported. 
 The definition of gradients is demonstrated in the following listing.
 
-
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/gradient.txt" />
-</programlisting>
+[source,txt]
+----
+include::res/css/gradient.txt[]
+----
 
 If you use the optional percentage in the definition, then the color change will be done after the defined percentage. 
 The following picture shows the result of different settings.
 
 
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/cssgradients10.png" scale="50" />
-</imageobject>
-<textobject>
-<phrase>Different Gradient settings</phrase>
-</textobject>
-</mediaobject>
+image::cssgradients10.png[Different Gradient settings]
 
-Using this import results in an application styling similar to
-the following screenshot.
+Using this import results in an application styling similar to the following screenshot.
 
 
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/todo-dark10.png"/>
-</imageobject>
-<textobject>
-<phrase>Dark theming</phrase>
-</textobject>
-</mediaobject>
-
-<note>
-Please note that the current gradient specification is not compliant with the CSS
-specification and that it
-might change in the future.
-
-</note>
-</section>
-<section id="css_importstatement">
-<title>CSS imports
-<indexterm>
-<primary>CSS</primary>
-<secondary>Import statement </secondary>
-</indexterm>
-
-Eclipse supports also the import of existing stylesheets via the
-`@import`
-directive using the platform URI notation.
+image::todo-dark10.png[Dark theming]
 
 
-For example the following stylesheet would import the existing dark
-theme of the
-`org.eclipse.ui.themes`
-plug-in from the Eclipse IDE.
+NOTE:  Please note that the current gradient specification is not compliant with the CSS specification and that it might change in the future.
+
+=== CSS imports
+(((CSS, Import statement)))
+
+Eclipse supports also the import of existing stylesheets via the `@import` directive using the platform URI notation.
+If you import CSS files from another plug-in, it  requires that the plug-in which contains the imported CSS file is included in your product configuration file.
 
 
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/defaultimport.css" />
-</programlisting>
+For example the following stylesheet would import the existing dark theme of the `org.eclipse.ui.themes` plug-in from the Eclipse IDE.
 
-Note: Using CSS import statements requires that the plug-in which contains the imported CSS file is included in your product configuration file.
+[source,txt]
+----
+include::res/css/defaultimport.css[]
+----
+
+
 

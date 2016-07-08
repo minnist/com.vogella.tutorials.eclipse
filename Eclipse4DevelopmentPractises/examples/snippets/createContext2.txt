@@ -1,0 +1,17 @@
+@Inject
+public void createObjectInPart(IEclipseContext ctx) {
+	// create a new local_ context
+	IEclipseContext localCtx =
+				EclipseContextFactory.create();
+	localCtx.set(String.class, "Hello");
+
+	// connect new local context with context hierarchy
+	localCtx.setParent(ctx);
+
+	// create object of type MyJavaObject via DI
+	// uses the localCtx and searches upwards for required objects
+	MyJavaObject o = ContextInjectionFactory.make(MyJavaObject.class,
+				localCtx);
+
+	//TODO do something with the "o" object
+}

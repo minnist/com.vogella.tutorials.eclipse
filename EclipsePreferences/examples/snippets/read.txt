@@ -1,0 +1,9 @@
+
+// read values from the instance scope
+Preferences preferences = InstanceScope.INSTANCE
+	.getNode("com.vogella.eclipse.preferences.test");
+Preferences sub1 = preferences.node("node1");
+Preferences sub2 = preferences.node("node2");
+sub1.get("h1", "default");
+sub1.get("h2", "default");
+sub2.get("h1", "default");

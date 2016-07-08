@@ -1,0 +1,14 @@
+<section id="command">
+	<title>Eclipse Commands</title>
+	<para>
+		The following also assumes that you are familiar with Eclipse
+		Commands.
+		To learn about them you can use the For an introduction
+		please see the
+		<ulink url="http://www.vogella.com/tutorials/EclipseCommands/article.html"> Eclipse Commands Tutorial</ulink>
+		and the
+		<ulink
+			url="http://www.vogella.com/tutorials/EclipseCommandsAdvanced/article.html"> Eclipse Advanced Commands Tutorial</ulink>
+		which contain a introduction into the material.
+	</para>
+</section>

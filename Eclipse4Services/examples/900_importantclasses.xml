@@ -1,0 +1,47 @@
+<section id="keyclasses">
+	<title>Key classes in e4</title>
+	<para>
+		The following is a list of important classes in Eclipse e4.
+	</para>
+
+	<table frame='all'>
+		<title>e4 classes</title>
+		<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+			<colspec colname='c1' />
+			<colspec colname='c2' />
+			<colspec colname='c3' />
+			<thead>
+				<row>
+					<entry>Class</entry>
+					<entry>Plugin</entry>
+					<entry>Description</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry>org.eclipse.e4.ui.internal.workbench.swt.E4Application
+					</entry>
+					<entry>Implementation of the e4 application</entry>
+				</row>
+				<row>
+					<entry>org.eclipse.e4.workbench.ui.internal.E4Workbench</entry>
+					<entry>e4 workbench implementation</entry>
+				</row>
+				<row>
+					<entry>org.eclipse.e4.core.services.internal.annotations.AnnotationsSupport
+					</entry>
+					<entry>Checks for annotations</entry>
+				</row>
+				<row>
+					<entry>org.eclipse.e4.workbench.ui.renderers.swt.WorkbenchRendererFactory
+					</entry>
+					<entry>SWT renderer factory, implements IRendererFactory</entry>
+				</row>
+
+			</tbody>
+		</tgroup>
+	</table>
+
+
+
+</section>

@@ -1,0 +1,81 @@
+<section id="multiprojects" role="wrapper">
+	<title>Working with one or multiple projects in a Git repository</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>multi project repositories
+		</secondary>
+	</indexterm>
+	<section id="multiprojects_workspace">
+		<title>Workspace and projects</title>
+		<para>Eclipse allows working with projects that are not included in
+			the root folder of
+			the workspace.
+		</para>
+		<para>
+			Using this functionality your
+			projects can be stored
+			in the
+			working tree
+			of a Git repository.
+		</para>
+	</section>
+	<section id="multiprojects_create">
+		<title>Adding a new project to a Git repository</title>
+		<para>
+			To can add Eclipse projects to an Git repository. If you do this the project is moved to the Git repository and
+			linked to from the Eclipse workspace..
+		</para>
+		<para>
+			A simple way of adding a project to a Git repository is to specify
+			the file location in the
+			<guilabel>New Project</guilabel>
+			wizard as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/createproject_in_gitrepo10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create project in Git repository</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			If you add the Git repository to your
+			<guilabel>Git repositories</guilabel>
+			view, you can perform the Git team operations on the files of this
+			repository.
+		</para>
+
+		<para>
+			To add a new Eclipse project to an existing Git repository, select
+			the
+			project, right-click on it and select
+			<menuchoice>
+				<guimenu>Team</guimenu>
+				<guisubmenu>Share</guisubmenu>
+				<guisubmenu>Git</guisubmenu>
+
+			</menuchoice>
+			and select the existing Git repository.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/addprojecttogitrepo10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Adding a project to an existing Git repository</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The Eclipse Git functionality moves the projects to the
+			repository and imports the
+			project
+			automatically into your
+			workspace.
+		</para>
+	</section>
+</section>

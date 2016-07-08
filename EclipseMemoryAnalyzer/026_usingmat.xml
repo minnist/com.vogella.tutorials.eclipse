@@ -1,0 +1,79 @@
+
+<section id="eclipsemat_usage">
+	<title>Use the Eclipse Memory Analyzer</title>
+	<para>
+		After a new
+		<wordasword>heap dump</wordasword>
+		with the
+		<filename>.hprof</filename>
+		ending has
+		been created, you can open it via a double-click in
+		Eclipse.
+		If you used MAT to create the heap dump, it
+		should be opened
+		automatically.
+	</para>
+	<para>
+		You may need
+		to
+		refresh your
+		project (F5 on the project).
+		Double-click
+		the
+		file
+		and
+		select the
+		<guilabel>Leak Suspects Report</guilabel>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/matleakreport10.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>Opening a leak report</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		The overview page allows you to start the analysis of the heap
+		dump.
+		The
+		<guilabel>dominator tree</guilabel>
+		gives quickly an overview of the
+		used objects.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/matleakreport20.png"/>
+
+			</imageobject>
+			<textobject>
+				<phrase>Opening the dominator tree</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>In the dominator tree you see the references which are hold.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/matdominatortree10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>MAT dominator tree</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		To find which element is holding the reference to this object, select
+		the entry and select
+		<guilabel>Find shortest path to GC root</guilabel>
+		from the context menu.
+	</para>
+</section>

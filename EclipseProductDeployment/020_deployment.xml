@@ -1,0 +1,249 @@
+<section id="deployproduct" role="wrapper">
+	<title>Deployment of your application</title>
+	<section id="deployproduct_overview">
+		<title>Creating a stand-alone version of the application</title>
+		<indexterm>
+			<primary>Export</primary>
+			<see>Deployment</see>
+		</indexterm>
+		<indexterm>
+			<primary>Deployment</primary>
+		</indexterm>
+		<para>An Eclipse application needs to be exported (also called:
+			deployed) to run outside of Eclipse.
+			Your product configuration file
+			can be used for that purpose.
+			Exporting
+			your product creates
+			a folder
+			with all
+			required
+			artifacts
+			to run your
+			application. This
+			includes
+			a
+			native
+			launcher
+			specific to
+			the
+			platforms,
+			e.g., Windows
+			or
+			Linux, you
+			have
+			exported it
+			for.
+		</para>
+	</section>
+	<section id="deployproduct_howtoexport">
+		<title>Exporting via the product file</title>
+		<para>
+			To export the product switch to your product configuration file,
+			select the
+			<guilabel>Overview</guilabel>
+			tab and click on the
+			<guilabel>Eclipse Product export wizard</guilabel>
+			link.
+			In the wizard you can specify the location of the exported
+			product via
+			the
+			<filename class="directory">Directory</filename>
+			property in the
+			<guilabel>Destination</guilabel>
+			group/section. The export wizard is depicted in the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/pdeexportwizard10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The
+			<property>Root directory</property>
+			property can be used to specify a sub-folder
+			in the destination which
+			contains the complete exported application.
+			This is useful if you
+			export the product as an archive file.
+		</para>
+		<para>
+			The
+			resulting directory can be, for example, compressed (zipped)
+			and
+			shared
+			with others. The
+			export dialog
+			allows you to create an archive
+			file
+			directly,
+			which makes
+			it easier to
+			transfer all files to another
+			machine.
+		</para>
+		<para>
+			If the
+			<guilabel>Generate p2 repository</guilabel>
+			option is selected, an (p2) update site is generated in a folder
+			called
+			<filename>repository</filename>
+			. This folder can be used to update the Eclipse RCP application.
+		</para>
+		<para>
+			If you transfer the content of this directory to another machine
+			(with the same architecture, e.g., Linux 64 bit),
+			your application
+			can
+			start on this machine. Of course the correct Java version must be
+			installed there.
+		</para>
+	</section>
+
+	<section id="deployproduct_buildproperties">
+		<title>Defining which artifacts are included in the export</title>
+		<indexterm>
+			<primary>build.properties</primary>
+		</indexterm>
+		<para>
+			The artifacts which are included in an export are
+			defined by
+			the
+			<filename>build.properties</filename>
+			file of the plug-in. Eclipse provides an graphical editor for this
+			file.
+		</para>
+		<para>
+			Eclipse adds the
+			compiled Java
+			classes by default. You have
+			to
+			add
+			other
+			files manually, e.g.,
+			icons or splash screen images.
+		</para>
+		<para>
+			An Eclipse application started
+			from
+			the Eclipse IDE
+			has access to all
+			resources available in the IDE. But to make them available in the
+			exported application you need to select them
+			in the
+			<filename>build.properties</filename>
+			file.
+		</para>
+		<para>
+			It is good practice to include new required resources immediately in
+			the
+			<filename>build.properties</filename>
+			file. This avoids errors after the export of your
+			application.
+		</para>
+	</section>
+	<section id="deployproduct_mandatoryartifacts">
+		<title>Mandatory plug-in artifacts in build.properties </title>
+		<para>
+			Make sure the following items (if available) are included in each
+			plug-in of the exported application::
+			<itemizedlist>
+				<listitem>
+					<para>META-INF/MANIFEST.MF</para>
+				</listitem>
+				<listitem>
+					<para>plugin.xml</para>
+				</listitem>
+				<listitem>
+					<para>
+						other
+						static
+						files, e.g., icons,
+						splash.bmp, etc.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Application.e4xmi</para>
+				</listitem>
+				<listitem>
+					<para>CSS files</para>
+				</listitem>
+				<listitem>
+					<para>OSGi service definition files</para>
+				</listitem>
+				<listitem>
+					<para>model fragments</para>
+				</listitem>
+				<listitem>
+					<para>translation files</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			The screenshot below shows
+			<filename>build.properties</filename>
+			file for a plug-in with most of these components.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/buildproperties10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="deployment_deltapack">
+		<title>Export for multiple platforms via the delta pack</title>
+		<indexterm>
+			<primary>Deployment</primary>
+			<secondary>Multiple platforms</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Delta pack</primary>
+		</indexterm>
+		<para>
+			The
+			<wordasword>delta pack</wordasword>
+			contains the platform specific features and
+			plug-ins
+			which are
+			required
+			to build and export
+			Eclipse applications for
+			multiple
+			platforms.
+			It also
+			includes binary launchers
+			for all platforms
+			in the
+			<code>org.eclipse.equinox.executable</code>
+			feature.
+		</para>
+		<para>
+			See
+			<ulink url="https://wiki.eclipse.org/Building#Cross-platform_build">Wiki entry for Cross-platform builds</ulink>
+			for the usage. It basically requires that you add the delta pack
+			update site to your target platform via
+			the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Target Platform</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+	</section>
+</section>

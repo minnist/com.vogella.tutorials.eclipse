@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Advanced programming tricks for the Eclipse JFace Table API - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>16.06.2015</pubdate>
+		<releaseinfo>
+			<para>Version 3.4</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse JFace Table</title>
+			<para>
+				This tutorial explains advanced usage of the JFace TableViewer
+				including inline table editing, table filtering and sorting, and
+				model / view interaction. StyledLabelProvider are also discussed.
+			</para>
+			<para> This tutorial is based on Eclipse 4.5.</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/001_intro.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/050_sorter.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/060_jfaceeditor.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/070_filter.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/080_styledlabelprovider.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/099_commands_reqs.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_commands.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="download.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseJFaceTableAdvanced"?>
+</article>

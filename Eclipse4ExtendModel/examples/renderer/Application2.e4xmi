@@ -1,0 +1,5 @@
+<children xsi:type="extensions:BrowserPart" 
+elementId="com.vogella.e4.appmodel.app.part.0" 
+uri="http://www.eclipse.org" 
+label="Test"/>
+          

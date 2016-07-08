@@ -1,0 +1,26 @@
+<section id="team_operations_branch">
+	<title>Branching in Eclipse</title>
+	<indexterm>
+		<primary>Eclipse Git</primary>
+		<secondary>branching
+		</secondary>
+	</indexterm>
+	<para>
+		Right-click your project and select
+		<menuchoice>
+			<guimenu>Team</guimenu>
+			<guisubmenu>Branch</guisubmenu>
+		</menuchoice>
+		to create new branches or to switch between existing
+		branches.
+	</para>
+	<para>
+		You can
+		also switch branches in the
+		<guilabel>History</guilabel>
+		view or the
+		<guilabel>Git repositories</guilabel>
+		view.
+	</para>
+
+</section>

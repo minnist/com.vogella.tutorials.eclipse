@@ -1,0 +1,12 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<section id="resources_features">
+		<title>Eclipse resources</title>
+		<para>
+			<ulink url="http://wiki.eclipse.org/Equinox_p2"> The Eclipse p2 update wiki</ulink>
+			
+		</para>
+		
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

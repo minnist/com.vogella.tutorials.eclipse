@@ -1,0 +1,36 @@
+
+<section id="usingegit_history">
+	<title>Using the Git commit dialog</title>
+
+	<para>
+		You can also commit changes with the Git commit dialog. For this
+		right-click on a resource and select
+		<menuchoice>
+			<guimenu>Team</guimenu>
+			<guisubmenu>Commit</guisubmenu>
+		</menuchoice>
+		from the context menu.
+	</para>
+	<para>The dialog allows you to add changed and new files to the
+		staging area and
+		commit the changes.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/egitcommitdialog10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Adding a file via the EGit commit dialog</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<note>
+		<para>The commit dialog does not allow committing the removal of a
+			file, since the commit dialog ignores the Git index.
+		</para>
+	</note>
+
+</section>
+

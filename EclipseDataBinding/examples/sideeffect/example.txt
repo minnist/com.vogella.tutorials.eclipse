@@ -1,0 +1,7 @@
+IObservableValue<String> username = ...
+Label yourUsername = ...
+
+ISideEffect sideEffect = 
+  ISideEffect.create(
+       () -> {return "Your username is: " + username.getValue();},
+       yourUsername::setText);

@@ -1,0 +1,13 @@
+<section id="swt_globalkeylistener">
+	<title>Define a global keylistener for your Display</title>
+	You can define a global keylistener on your display to listen
+		globally to all key events as long as your application has focus. The
+		following demonstrates this.  
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/listener/GlobalListener.java" />
+		</programlisting>
+	
+
+</section>

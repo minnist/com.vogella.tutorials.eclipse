@@ -1,0 +1,158 @@
+<section id="tutorial_modelelementsjavaclasses" role="wrapper">
+	<title>Exercise: Connect Java classes with the parts</title>
+	<section id="tutorial_modelelements2">
+		<title>Create a new package and some Java classes</title>
+		<para>
+			Create the
+			<code>com.example.e4.rcp.todo.parts</code>
+			package in the application plug-in.
+		</para>
+		<para>
+			Create three Java classes called
+			<wordasword>TodoOverviewPart</wordasword>
+			,
+			<wordasword>TodoDetailsPart</wordasword>
+			and
+			<wordasword>PlaygroundPart</wordasword>
+			in this package.
+		</para>
+		<tip>
+			<para>
+				You can create the classes by clicking on the
+				<guilabel>Class URI</guilabel>
+				hyperlink in the detail pane of the model editor for the part. This also
+				connects the created class to the model
+				object. If you do this, you
+				can skip
+				<xref linkend="tutorial_modelelementsclasses" />
+				of this exercise.
+			</para>
+		</tip>
+		<para>
+			The following code shows the
+			<code>TodoDetailsPart</code>
+			class. All classes
+			should not
+			extend
+			another
+			class, nor do they
+			implement
+			any
+			interface.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/start/TodoDetailsPart.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_modelelementsclasses">
+		<title>Connect the Java classes with your parts</title>
+		<para>
+			Open the
+			<filename>Application.e4xmi</filename>
+			file and connect the class with the
+			corresponding part model element.
+			You can do
+			this via
+			the
+			<property>Class URI</property>
+			property
+			of
+			the
+			part
+			model element.
+		</para>
+
+		<para>The following table gives an overview of which elements should
+			be
+			connected.
+		</para>
+		<para>
+			<table frame='all'>
+				<title>Mapping Java classes with part model element</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Class</entry>
+							<entry>Part ID suffix</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>TodoOverviewPart</entry>
+							<entry>*.todooverview</entry>
+						</row>
+						<row>
+							<entry>TodoDetailsPart</entry>
+							<entry>*.tododetails</entry>
+						</row>
+						<row>
+							<entry>PlaygroundPart</entry>
+							<entry>*.playground</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+		<para>
+			The Eclipse 4 model editor allows you to search for an existing
+			class
+			via the
+			<guibutton>Find...</guibutton>
+			button. The initial list of
+			<guilabel>Contribution Classes</guilabel>
+			is empty, start typing in the
+			<guilabel>Class Name</guilabel>
+			field to see the results.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_model60.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Finding a model class in the Application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The following screenshot shows the result for the overview part.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_model62.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Finding a model class in the Application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="tutorial_modelelements3">
+		<title>Validating</title>
+
+		<para> Run your application. It should start, but you should see no
+			difference in the user interface.
+		</para>
+
+		<para>
+			To validate that the model objects are created by the Eclipse runtime
+			create a no-argument constructor for one of the
+			classes and add a
+			<code>System.out.println()</code>
+			statement.
+
+			Afterwards verify that the constructor is called, once you
+			start the
+			application.
+		</para>
+	</section>
+
+
+</section>

@@ -1,0 +1,66 @@
+<section id="bugtriage" role="wrapper">
+	<title>Using Eclipse Bugzilla</title>
+	<section id="bugtriage1">
+		<title>Target</title>
+		<para>In this exercise you use the Bugzilla system to review some of
+			the Eclipse platform bugs. No action is excepted
+			from you, but if you
+			find an updated bug, you should update the bug report and describe
+			that the problem is solved.
+		</para>
+		<para>This exercise uses the Eclipse platform as example but you can
+			use any Eclipse project of your choice.
+		</para>
+	</section>
+
+	<section id="bugtriage2">
+		<title>Run Bugzilla query</title>
+		<para>
+			Open to
+			<ulink url="https://bugs.eclipse.org/bugs/">Eclipse Bugzilla</ulink>
+			and select the
+			<guilabel>Search</guilabel>
+			button. Select the
+			<guilabel>Advanced Search</guilabel>
+			tab and search for
+			<menuchoice>
+				<guimenu>Eclipse</guimenu>
+				<guisubmenu>Platform</guisubmenu>
+				<guisubmenu>UI</guisubmenu>
+			</menuchoice>
+			for all bugs in status
+			<guilabel>NEW</guilabel>
+			,
+			<guilabel>ASSIGNED</guilabel>
+			,
+			<guilabel>UNCONFIRMED</guilabel>
+			and
+			<guilabel>REOPENED</guilabel>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/bugtriage10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/bugtriage20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Search for bugs</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
+			recommended to look at the latest bugs, e.g., the bugs which have been recently updated.
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,39 @@
+<section id="performance_yourkit">
+	<title>Yourkit</title>
+	<para>Yourkit is a commercial tool for performance tracing and analysis. You
+		require a license to use it but Yourkit
+		offers free licencses to Open Source projects.
+	</para>
+	<para>
+		To install Yourkit, you need to download if from
+		<ulink url="https://www.yourkit.com/download/">Yourkit download</ulink>
+		. Depending your platform you can the installer (Windows) or extract the compressed archive to your system.
+	</para>
+	<para>
+		|
+		On Linux extract it to a folder of your choice. In this folder you find the script
+		<filename>bin/yjp.sh</filename>
+		to start Yourkit. The Yourkit tooling starts and
+		ask you for the
+		license key and with which IDE it
+		should
+		integrate.
+	</para>
+	<para>You also need to install the Eclipse plug-ins from the following
+		update site:
+		http://www.yourkit.com/download/yjp2013_for_eclipse/
+	</para>
+	<para>
+
+		See
+		<ulink url="http://www.yourkit.com/docs/java/help/eclipse.jsp">Yourkit</ulink>
+		and
+		<ulink url="http://www.yourkit.com/docs/java/help/running_with_profiler.jsp"></ulink>
+	</para>
+	<para>
+
+		<ulink url="https://wiki.eclipse.org/Eclipse/Testing#Performance_tests "> Eclipse performance test</ulink>
+	</para>
+
+
+</section>

@@ -1,0 +1,28 @@
+<section id="exercise_eclipse4testing_target">
+	<title>Exercise - Add test dependencies</title>
+	<para>
+		Popular test frameworks, like JUnit, Hamcrest, Mockito and others
+		can be obtained from different updatesites.
+	</para>
+	<para>
+		Eclipse Orbit for example provides a Test category which contains
+		these test frameworks mentioned earlier.
+	</para>
+	<para>
+		In case a target definition file does not exist yet, it needs to
+		be created. For standard RCP applications the following dependies are
+		necessary.
+	</para>
+	<para>
+		The Orbit Repositories can be found here:
+		<ulink url="http://download.eclipse.org/tools/orbit/downloads/">Orbit Downloads</ulink>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="./images/testing-target-platform.png" />
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

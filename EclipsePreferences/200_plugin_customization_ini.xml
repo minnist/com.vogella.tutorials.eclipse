@@ -1,0 +1,63 @@
+
+<section id="preferences_plugin.ini">
+	<title>Setting preferences via plugin_customization.ini</title>
+	<indexterm>
+		<primary>plugin_customization.ini</primary>
+	</indexterm>
+	<indexterm>
+		<primary>Preferences</primary>
+		<secondary>Default values</secondary>
+	</indexterm>
+	<para>
+		You
+		can use a file to set the default values of preferences. The file
+		which
+		contains these defaults is typically named
+		<filename>plugin_customization.ini</filename>
+		.
+	</para>
+	<para>
+		Such a file needs
+		to
+		be registered via the
+		<parameter>preferenceCustomization</parameter>
+		property on the product extension point in the
+		<filename>plugin.xml</filename>
+		file. This is demonstrated in the following screenshot.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/plugin_customization10.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Referring to the plugin_customization.ini file in the
+					product extension</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+
+		The format to use is
+		<code><![CDATA[<plugin id>/<setting>=<value>]]></code>
+		,
+		e.g.
+		<parameter>com.example.e4.rcp.todo/user=vogella</parameter>
+		.
+	</para>
+	<tip>
+		<para>
+			To find the correct keys, just start your Eclipse application,
+			switch
+			to the
+			<filename>.metadata</filename>
+			directory in your workspace directory (by
+			default the directory your
+			application is starting in) and search for
+			files ending with
+			<filename>.pref</filename>
+			.
+		</para>
+	</tip>
+</section>

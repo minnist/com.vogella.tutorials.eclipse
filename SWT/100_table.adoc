@@ -1,0 +1,12 @@
+<section id="swt_table">
+	<title>Table</title>
+	 Create the following class. 
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/table/SWTTable.java" />
+		</programlisting>
+	
+	 If you run this application a table will be displayed. 
+	
+</section>

@@ -1,0 +1,25 @@
+1. Einleitung:
+				-was wird behandelt
+				-was genau ist das Ergebnis
+1.2 Create a Report
+2.JavaKlasse:	
+				-wo kommen die Daten her
+				-Libs
+				-ausgabe
+3. DataSources &DataSet:
+				-was ist open was ist fetch
+				-coding
+3.2 Webservice als Datasource
+4. Create a Table
+------------------------------------------------
+5. Chart		:
+				-multiple Series
+				-sorting
+				-format
+					-date
+					-markers
+					
+6. Parameters
+7. Filter
+8. Deploy to Tomcat
+9. Deploy to a RCP View

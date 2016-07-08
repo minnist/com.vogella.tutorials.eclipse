@@ -1,0 +1,63 @@
+<section id="firstswt_simple">
+	<title>Exercise: Create a simple SWT program</title>
+	
+		Continue to use the
+		<code>com.examle.swt.widgets</code>
+		project.
+	
+	
+		Create
+		the
+		following class for a simple
+		SWT
+		application.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/first/FirstSWTApplication1.java" />
+		</programlisting>
+	
+	
+		To start your application, right-click on your Java class, and select
+		<menuchoice>
+			<guimenu>Run-As</guimenu>
+			<guisubmenu>Java Application</guisubmenu>
+		</menuchoice>
+		.
+		You will receive an empty window (
+		<code>Shell</code>
+		).
+	
+	
+		Change the TODO in the code to the following. Make sure you use
+		<code>org.eclipse.swt</code>
+		and not
+		<code>java.awt</code>
+		when adding the missing imports.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/first/FirstSWTApplication2.java" />
+		</programlisting>
+	
+	
+		If you now start the application you will get a
+		<code>Shell</code>
+		with two
+		<code>Widgets</code>
+		included.
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/firstswt.png" scale="60" />
+			</imageobject>
+			<textobject>
+				<phrase>First running SWT application</phrase>
+			</textobject>
+		</mediaobject>
+	
+</section>

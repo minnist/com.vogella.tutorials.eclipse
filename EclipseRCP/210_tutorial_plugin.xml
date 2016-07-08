@@ -1,0 +1,122 @@
+<section id="e4_plugin" role="wrapper">
+	<title>Exercise: Create an Eclipse plug-in</title>
+	<section id="e4_plugin_target">
+		<title>Target</title>
+		<para>
+			In the following exercise you create a standard Eclipse
+			plug-in.
+			This plug-in is later converted into an Eclipse
+			RCP application.
+		</para>
+		<note>
+			<para>
+				The following description calls this plug-in the
+				<wordasword>application plug-in</wordasword>
+				as this plug-in will contain the main application logic.
+			</para>
+		</note>
+	</section>
+	<section id="e4_plugin_create">
+		<title>Creating a plug-in project</title>
+
+		<para>
+			In Eclipse select
+
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other... </guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Plug-in Project</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_firstrcp08.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Selection the Eclipse Plug-in Wizard</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Give your plug-in the name
+			<wordasword>com.example.e4.rcp.todo</wordasword>
+			and press the
+			<guilabel>Next</guilabel>
+			button.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_firstrcp10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>First page of the Eclipse Plug-in Wizard specifying the
+						project name.
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			On the next wizard page make the following settings. Select
+			<guilabel>No</guilabel>
+			at the
+			<guilabel>Would you like to create a rich client application?</guilabel>
+			option
+			and
+			uncheck
+			<guilabel>This plug-in will make contributions to the UI</guilabel>
+			. Uncheck the
+			<guilabel>Generate an activator, a Java class that controls the plug-in's life cycle</guilabel>
+			option.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_firstrcp20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Second page of the Eclipse Plug-in Wizard specifying the
+						plug-in ID, version, Name, Activator and the RCP
+						type.
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Press the
+			<guilabel>Finish</guilabel>
+			button. If you click the
+			<guilabel>Next</guilabel>
+			button instead of
+			<guilabel>Finish</guilabel>
+			,
+			the wizard shows you
+			a template selection
+			page which you can bypass
+			without a selection.
+		</para>
+	</section>
+	<section id="e4_plugin_validate">
+		<title>Validate the result</title>
+		<para>
+			Open the project and ensure that no Java classes were created in
+			the source folder.
+
+		</para>
+
+		<para>
+			In the manifest
+			editor switch to the
+			<guilabel>Dependencies</guilabel>
+			tab and ensure that there are no entries.
+		</para>
+
+	</section>
+
+</section>

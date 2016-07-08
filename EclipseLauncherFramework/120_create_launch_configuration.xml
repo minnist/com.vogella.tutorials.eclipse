@@ -1,0 +1,93 @@
+<section id="eclipselaunchconfiguration">
+	<title>Launch configuration in general</title>
+	<para>The easiest way to create a launch configuration is using the <guilabel>Run
+			Configuration...</guilabel> dialog.</para>
+	<para>This dialog can be accessed in several ways.</para>
+	<para>
+		<itemizedlist>
+			<listitem>
+				<para>By typing <menuchoice>
+						<guimenu>Run Configurations...</guimenu>
+					</menuchoice> in the Quick Access</para>
+			</listitem>
+			<listitem>
+				<para>By holding <keycode>Ctrl</keycode> while pressing the green launch button.
+						<inlinegraphic fileref="images/run_exc.png"/></para>
+			</listitem>
+			<listitem>
+				<para>By using the drop down menu of the green launch button <inlinegraphic
+						fileref="images/run_exc.png"/> and clicking on  <menuchoice>
+						<guimenu>Run Configurations...</guimenu>
+					</menuchoice> in the menu.</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>In the <guilabel>Run Configuration...</guilabel> you can choose between different launch
+		configuration types:</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/run_configurations.png"/>
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>How to create new launch configurations is described within the picture above.</para>
+	<section>
+		<title>Export a launch configuration</title>
+		<para>Those launch configurations can also be exported to a <filename>*.launch</filename>
+			file.</para>
+		<para>You can reach the export wizard via export command in the file menu or by typing
+				<guilabel>Export (Launch Configuration)</guilabel> in the Quick Access.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/export_launch_configuration.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>When pressing <guibutton>Next</guibutton> you can choose, which launch configuration you
+			want to export and define a location to store the <filename>*.launch</filename>
+			file.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/launch_configuration_export_wizard.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>The exported <filename>Eclipse Application Launch Configuration.launch</filename> file
+			looks like this:</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/Eclipse_Application_Launch_Configuration.launch"/>
+			</programlisting>
+		</para>
+		<para>As you can see your launch configuration is stored in a XML format, which contains the
+			specific settings of your custom launch configuration.</para>
+	</section>
+	<section>
+		<title>Import a launch configuration</title>
+		<para>The exported launch configuration can of cause be imported as well.</para>
+		<para>You can reach the import wizard via import command in the file menu or by typing
+				<guilabel>Import (Launch Configuration)</guilabel> in the Quick Access.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/import_launch_configuration.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>When pressing <guibutton>Next</guibutton> you can look for a
+				<filename>*.launch</filename> file in your file system, and import it.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/launch_configuration_import_wizard.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>After we successfully imported a certain <filename>*.launch</filename> file, we can
+			choose and run this launch configuration with the <guilabel>Run
+				Configuration...</guilabel> dialog.</para>
+	</section>
+</section>

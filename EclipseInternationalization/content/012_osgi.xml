@@ -1,0 +1,63 @@
+<section id="i18n_osgi">
+	<title>OSGi resource bundles</title>
+	<indexterm>
+		<primary>i18n</primary>
+		<secondary>OSGi resource bundles</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>Bundle-Localization</primary>
+	</indexterm>
+	<para>
+		For the translation of the plugin.xml and application model files the
+		Eclipse runtime uses by default OSGi
+		resource
+		bundles.
+		These are
+		property
+		files in a specified location. OSGi
+		expects at least one resource bundle in this
+		location.
+	</para>
+
+	<para>
+		<filename>OSGI-INF/l10n/bundle</filename>
+		is the default location and file prefix which the Eclipse translation service is using.
+		Via the
+		<parameter>Bundle-Localization</parameter>
+		attribute in the
+		manifest
+		file, you can specify an alternative location for the bundle resources. The usage of this
+		attribute is demonstrated in
+		the following
+		listing.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/plugin/MANIFEST.MF" />
+		</programlisting>
+	</para>
+
+
+	<para>
+		Alternative languages are
+		defined
+		via
+		additional property
+		files. The
+		filename of these files can
+		include a language and optional
+		a country
+		variant as described in
+		<xref linkend="i18n_propertyfiles" />
+		. For example
+		<filename>bundle_en.properties</filename>
+		or
+		<filename>bundle_en_UK.properties</filename>
+		.
+
+	</para>
+
+
+</section>
+

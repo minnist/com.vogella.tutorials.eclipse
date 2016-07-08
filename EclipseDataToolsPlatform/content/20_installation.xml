@@ -1,0 +1,33 @@
+<section id="installation">
+	<title>Installation</title>
+	<section id="installation_dtp">
+		<title>Installation of DTP</title>
+		<para>
+			Install the Data Tools Platform via the
+			<ulink
+				url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager">
+				Eclipse update manager</ulink>
+			.
+			Install "Data Tools
+			Platform Enablement Extender SDK"
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/installdtp10.png" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="dtpsetup_derby">
+		<title>Download Apache Derby</title>
+		<para>
+			Download the latest Derby version from the Apache website
+			<ulink url="http://db.apache.org/derby/"> http://db.apache.org/derby/</ulink>
+			. Choose the binary distribution.
+		</para>
+
+	</section>
+
+</section>

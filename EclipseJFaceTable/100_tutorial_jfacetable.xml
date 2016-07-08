@@ -1,0 +1,146 @@
+<section id="tutorial_jfacetable">
+	<title>Tutorial: JFace Table Viewer</title>
+	<section id="tutorial_jfacetableoverview">
+		<title>Overview of the example</title>
+		<para>
+			We will build an
+			Eclipse RCP application
+			which
+			displays data of
+			persons in a JFace table. Each person is
+			displayed in one individual
+			row.
+			This tutorial the basic setup of a
+			JFace Table.
+		</para>
+		<para>The final application will look like this.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jfacetable10.gif" />
+
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="jface_setup">
+		<title>Project creation and data model</title>
+		<para>
+			Create a new RCP Project
+			<code>de.vogella.jface.tableviewer</code>
+			using the
+			"RCP application with a
+			view"
+			as a template. Create a package
+			"de.vogella.jface.tableviewer.model"
+			and the following
+			class "Person".
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/model/Person.java" />
+			</programlisting>
+		</para>
+		<para>
+			The Person
+			<code>class</code>
+			represents the data model for this example.
+			It has
+			also
+			<code>PropertyChange</code>
+			support, which is not
+			necessary for this
+			example
+			but is nice if you
+			would later extend this example with
+			Eclipse Data Binding support.
+		</para>
+		<para>
+			Create the
+			<code>ModelProvider</code>
+			class which is a in-memory
+			representation
+			of your data. This class is
+			defined as a Singleton.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/model/ModelProvider.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+	<section id="tutorial_jfacetableviewer_usage">
+		<title>Define the viewer</title>
+		<para>
+			Change the
+			<code>View</code>
+			class to the following.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/view/View.java" />
+			</programlisting>
+		</para>
+		<para>
+			The
+			<code>createColumns</code>
+			method
+			creates the table columns, headers, sets the size of the
+			columns and
+			makes the columns re-sizable.
+		</para>
+		<note>
+			<para>
+
+				The
+				<code>createTableViewerColumn()</code>
+				method
+				has three parameters. The third is currently not used,
+				but we
+				will use
+				it in the
+				<ulink
+					url="http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html"> advanced tutorial</ulink>
+				.
+			</para>
+		</note>
+		<para>
+			<tip>
+				Please note that we use icons for the married Status. If the
+				<filename>icons</filename>
+				folder
+				does
+				not exists in your project, create it.
+				<ulink
+					url="http://www.vogella.com/tutorials/EclipseJFaceTable/download/checkedpics.zip">
+					Download the
+					icons</ulink>
+				and
+				place the
+				two
+				icons in
+				the
+				folder icons. Alternatively you can only
+				use
+				the
+				<code>setText()</code>
+				method.
+			</tip>
+		</para>
+	</section>
+	<section id="tutorial_jfacetableviewer_run">
+		<title>Run</title>
+		<para>
+			Run the example. The application should display a non-working
+			search
+			field and a table.
+		</para>
+	</section>
+
+</section>

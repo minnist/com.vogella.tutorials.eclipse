@@ -1,0 +1,22 @@
+= SWT Custom Widgets - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Simon Scholz, (c) 2016 vogella GmbH
+Version 0.2, 13.06.2016
+
+[abstract]
+This tutorial describes how to use and implement custom SWT widgets.
+				
+include::010_overview.adoc[]
+include::020_creation.adoc[]
+include::025_general_rules.adoc[]
+include::030_compound_widgets.adoc[]
+include::040_basic_widgets.adoc[]
+include::045_sample_basic_widgets.adoc[]
+
+include::008_resourceslocal.adoc[]
+
+

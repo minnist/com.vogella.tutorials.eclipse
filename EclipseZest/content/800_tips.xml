@@ -1,0 +1,22 @@
+<section id="zesttips">
+	<title>Tips and Tricks</title>
+	<section id="zestmovenodes">
+		<title>Disable that nodes can be moved manually</title>
+		<para> By default the user can move the nodes in Zest. To disable
+			this
+			you have to extend the Graph. </para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/move/NonMovableGraph.java" />
+			</programlisting>
+		</para>
+		
+
+		<para>The usage is demonstrated in project
+			"de.vogella.zest.movenodes".
+	</para>
+
+	</section>
+</section>

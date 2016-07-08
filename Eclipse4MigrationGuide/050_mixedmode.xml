@@ -1,0 +1,38 @@
+	<section id="mixedmode_example">
+		<title>Example for using 3.x components in e4 API based applications</title>
+		<para>
+			If you choose to try this approach despite the warning, you have to
+			define a
+			<filename>LegacyIDE.e4xmi</filename>
+			file similar to the Eclipse IDE and add your
+			model components to this
+			file. This file can be found
+			in the
+			<code>org.eclipse.ui.workbench</code>
+			plug-in.
+		</para>
+		<para>
+			Point to that file via the
+			<parameter>applicationXMI</parameter>
+			parameter in
+			your
+			<code>org.eclipse.core.runtime.products</code>
+			extension.
+		</para>
+		<para>
+			A code example for this approach can be found under the
+			following
+			URL:
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/link.txt" />
+			</programlisting>
+		</para>
+		<para>As said before, this approach is not officially supported by the Eclipse
+			platform team. If you use this approach,
+			you
+			may find hard to solve issues.
+		</para>
+
+	</section>

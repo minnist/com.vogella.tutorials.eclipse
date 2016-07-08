@@ -1,0 +1,10 @@
+
+count = 0;
+
+// create instance of
+// the GetStockHistory class
+gsh = new Packages.de.vogella.birt.stocks.daomock.StockDaoMock(); 
+
+//Load the List
+
+stock = gsh.getStockValues("Java"); 

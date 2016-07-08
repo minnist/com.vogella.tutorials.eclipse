@@ -1,0 +1,9 @@
+
+# switch to home
+cd ~/repo01.git
+# get the log
+git log
+
+# copy one of the older hashcodes and checkout the older revision
+git checkout HASHCODE
+

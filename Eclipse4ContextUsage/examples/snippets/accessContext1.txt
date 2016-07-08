@@ -1,0 +1,15 @@
+
+package com.example.e4.rcp.todo.handlers;
+
+import org.eclipse.e4.core.contexts.IEclipseContext;
+import org.eclipse.e4.core.di.annotations.Execute;
+
+public class ShowMapHandler {
+	@Execute
+	public void execute(IEclipseContext context) {
+		// add objects to the active local context injected into 
+		// this handler
+		// ...
+	}
+
+}

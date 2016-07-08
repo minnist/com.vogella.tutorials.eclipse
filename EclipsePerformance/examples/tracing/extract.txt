@@ -1,0 +1,4 @@
+# extract the lines starting with "End starting"
+grep "End starting" trace.txt  >trace2.txt
+# extract plug-in name and startup time and sort by time
+awk '{print $5 " " $3}' trace2.txt | sort -nr > tracefinal.txt

@@ -1,0 +1,119 @@
+<section id="modelpersistence_overview" role="wrapper">
+	<title>Own persistence for the application model</title>
+
+	<section id="modelpersistence_applicatione4xmi">
+		<title>Specifying the location of the application model file</title>
+		<para>
+			The file name and location of the application
+			model can
+			be specified in
+			the
+			<filename>plugin.xml</filename>
+			file.
+			This is
+			done
+			via the
+			<code>applicationXMI</code>
+			property. The
+			path to
+			the file follows the
+			"bundleSymbolicName"/"filename"
+			pattern, e.g.
+			<filename>test/ApplicationDifferent.e4xmi</filename>
+			.
+		</para>
+		<para>
+			To do this open the
+			<filename>plugin.xml</filename>
+			file, select the
+			<guilabel>Extensions</guilabel>
+			tab and
+			open the
+			<code>org.eclipse.core.runtime.products</code>
+			contribution.
+		</para>
+		<para>
+			Right-click on the
+			<guilabel>product</guilabel>
+			entry and select
+			<menuchoice>
+				<guimenu>New </guimenu>
+				<guisubmenu>Property</guisubmenu>
+			</menuchoice>
+			. Use
+			<parameter>applicationXMI</parameter>
+			as parameter name and
+			<parameter>com.example.e4.rcp.todo/ApplicationNew.e4xmi</parameter>
+			as value. This value
+			consists of the
+			<code>BundleSymbolicName</code>
+			of the corresponding plug-in and the file
+			name of
+			your
+			application model file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_product70.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="modelpersistence_resourcehandler">
+		<title>Custom application model persistence handler</title>
+		<indexterm>
+			<primary>Application model</primary>
+			<secondary>Custom persistence handler</secondary>
+		</indexterm>
+		<para>
+			Eclipse uses an instance of the
+			<code>IModelResourceHandler</code>
+			interface to load and save the application model at startup and
+			shutdown. The
+			default implementation of this interface
+			is provided by
+			the
+			<code>ResourceHandler</code>
+			class from the
+			<code>org.eclipse.e4.ui.internal.workbench</code>
+			package.
+		</para>
+		<para>
+			You can specify the
+			<parameter>modelResourceHandler</parameter>
+			as parameter on your product extension to point to another class via
+			the
+			<code>bundleclass://</code>
+			notation.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/modelresourcehandler.png"/>
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>This allows you to construct the initial application model from
+			any source you desire. For example, you could use
+			property files or
+			construct the application model based on information from a database.
+		</para>
+
+		<para>
+			Implementing this interface requires knowledge about the Eclipse
+			Modeling Framework (EMF). You can use the
+			<code>ResourceHandler</code>
+			as a template to see how the
+			<code>IModelResourceHandler</code>
+			interface could be implemented.
+		</para>
+	</section>
+</section>

@@ -1,0 +1,23 @@
+<section id="swtinstall_plugin">
+	<title>Using SWT in a plug-in project</title>
+	
+		The SWT library
+		is packaged as an Eclipse
+		plug-in.
+		If you create an
+		Eclipse plug-in and want to use SWT you have to specify a dependency
+		to the
+		<code>org.eclipse.swt</code>
+		plug-in
+		in the corresponding manifest file.
+	
+
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/use/MANIFEST.MF" />
+		</programlisting>
+	
+
+</section>
+	

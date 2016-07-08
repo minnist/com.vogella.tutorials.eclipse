@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" 
+xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" 
+xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" 
+xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" 
+xmlns:extensions="http://www.vogella.com/extensions"
+xmi:id="_7VkpUKo8EeO_NLPjBpVjeQ" elementId="org.eclipse.e4.ide.application" 
+bindingContexts="_7VkpWao8EeO_NLPjBpVjeQ">
+... more stuff...

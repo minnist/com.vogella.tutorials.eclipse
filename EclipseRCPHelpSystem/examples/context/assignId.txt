@@ -1,0 +1,2 @@
+
+PlatformUI.getWorkbench().getHelpSystem().setHelp(control, "myId");

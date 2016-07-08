@@ -1,0 +1,24 @@
+<section id="swtbotinstallation">
+	<title>Installation
+	
+		Install SWTBot via the Eclipse Update manager
+		which you find under
+		<menuchoice>
+			<guimenu>Help</guimenu>
+			<guisubmenu>Install New Software...</guisubmenu>
+		</menuchoice>
+		. The update site
+		for the
+		SWTBot
+		is: <parameter>http://download.eclipse.org/technology/swtbot/releases/latest/</parameter>
+	
+	
+		Install the
+		_SWTBot Eclipse Features_
+		and the
+		_SWTBot SWT Features_
+		.
+	
+</section>
+
+

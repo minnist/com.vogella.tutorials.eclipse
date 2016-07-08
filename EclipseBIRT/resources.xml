@@ -1,0 +1,18 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_birt">
+		<title>Eclipse BIRT resources</title>
+		<para>
+			<ulink url="http://wiki.eclipse.org/index.php/BIRT_Project"> http://wiki.eclipse.org/index.php/BIRT_Project
+			</ulink>
+		</para>
+		<para>
+			<ulink
+				url="https://www.eclipse.org/articles/article.php?file=Article-BIRTChartEngine/index.html"> BIRT charting engine
+			</ulink>
+		</para>
+		<para>Eclipse BIRT Wiki</para>
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

@@ -1,0 +1,149 @@
+<section id="tips">
+	<title>Tips and Tricks</title>
+	<section id="tips_loadimages">
+		<title>Load an image from your plugin</title>
+		<para>
+			To load an image from your plug-in your use the
+			<code>AbstractUIPlugin</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/loadimage/loadimageold.txt" />
+			</programlisting>
+		</para>
+		<para>Alternatively you could load the framework directly. </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/loadimage/loadimage.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+	<section id="tips_userlayout">
+		<title>Save users layout</title>
+		<para> To remember the user's layout and window size for the next
+			time
+			you start your application, add
+			configurer.setSaveAndRestore(true);
+			to
+			the initialize method of
+			ApplicationWorkbenchAdvisor.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="../examples/tips/ApplicationWorkbenchAdvisorRememberValues.java" />
+			</programlisting>
+		</para>
+		<para>
+			Eclipse has a pre-defined command to reset the perspective. See
+			<ulink
+				url="http://www.vogella.com/tutorials/EclipseCommands/article.html#standardcommands">Eclipse Commands</ulink>
+			.
+		</para>
+	</section>
+
+	<section id="statusline">
+		<title>Accessing the status line</title>
+		<para>
+			The status line in an RCP application can be used to give the
+			user some information about the running application. The shared
+			message area can be used by all parts of the
+			application to
+			write
+			messages to this area. The whole RCP application has access to the
+			information in the
+			shared
+			status line therefore the information in
+			the
+			shared status line
+			might
+			be
+			overwritten.
+		</para>
+		<para>
+			To show the
+			status line in your RCP application use the
+			"ApplicationWorkbenchWindowAdvisor" and set the status line visible
+			in the
+			method preWindowOpen().
+		</para>
+		<para>
+			<programlisting>
+
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="../examples/statusline/ApplicationWorkbenchWindowAdvisor.java" />
+			</programlisting>
+		</para>
+		<para>
+			The following writes a text to the status line from a view.
+		</para>
+		<para>
+			<programlisting>
+
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/statusline/statuslinesettext.java" />
+			</programlisting>
+		</para>
+		<para>
+			From an editor you can access the status line via the
+			following:
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/statusline/editorstatusline.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="tips_unused_dependencies">
+		<title>Finding unused dependencies</title>
+		<para> In the file plugin.xml (tab dependencies) you define on which
+			plugins your plug-in depends. Of course you should only define the
+			required plugins here. You can check if you have any dependency
+			maintained which is actually not used, by selecting Dependency
+			Analysis -> Find unused dependencies.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="60" fileref="images/unuseddependency10.gif" />
+				</imageobject>
+				<textobject>
+					<phrase>How to remove unused dependencies</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="tips_multiuser">
+		<title>Multi-User settings</title>
+		<para> Eclipse RCP applications save configuration files in the
+			folder
+			".metadata". In the standard settings the
+			Eclipse RCP
+			installation
+			directory will be used for this folder. If several
+			users
+			are using the
+			same installation
+			folder, then you should supply the
+			parameter "-data"
+			to specify an
+			alternative location. If you specify
+			the value
+			"@user.home/applicationname" the configuration will be
+			saved in
+			a user
+			specific folder.
+		</para>
+	</section>
+</section>

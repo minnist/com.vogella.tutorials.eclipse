@@ -1,0 +1,471 @@
+<section id="swtlayout" role="wrapper">
+	<title>Using layout managers in SWT</title>
+	<section id="swtlayout_overview">
+		<title>The role of a layout manager</title>
+		<indexterm>
+			<primary>Layout manager</primary>
+		</indexterm>
+		<indexterm>
+			<primary>AbsoluteLayout</primary>
+		</indexterm>
+		<indexterm>
+			<primary>FillLayout</primary>
+		</indexterm>
+		<indexterm>
+			<primary>RowLayout</primary>
+		</indexterm>
+		<indexterm>
+			<primary>GridLayout</primary>
+		</indexterm>
+		<indexterm>
+			<primary>FormLayout</primary>
+		</indexterm>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Layout manager</secondary>
+		</indexterm>
+		
+			A layout manager is
+			responsible for arranging the user interface
+			components
+			of a
+			container, e.g., a
+			<code>Composite</code>
+			,
+			on
+			the
+			screen.
+			SWT
+			offers several standard layout managers. The
+			following table gives an overview of them. It is sorted
+			by complexity
+			of the layout manager,
+			i.e. the simplest layout manager is listed
+			first and the most complex one as the
+			last entry.
+
+			<table frame='all'>
+				<title>Layout Manager</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Layout Manager</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>AbsoluteLayout</entry>
+							<entry>Allows you to specify the exact position, the width and
+								the height of
+								components. As user interfaces may be
+								used on
+								screens
+								with
+								different
+								sizes this layout manager should be avoided.
+							</entry>
+						</row>
+						<row>
+							<entry>FillLayout</entry>
+							<entry>Arranges
+								equal-sized widgets in a
+								single row or
+								column.
+							</entry>
+						</row>
+						<row>
+							<entry>RowLayout</entry>
+							<entry>Puts the widgets in rows or columns and allows you to
+								control the layout with options, e.g., wrap, spacing,
+								fill and so
+								on.
+							</entry>
+						</row>
+						<row>
+							<entry>GridLayout</entry>
+							<entry>Arranges widgets in a
+								grid.
+							</entry>
+						</row>
+						<row>
+							<entry>FormLayout</entry>
+							<entry>Arranges the widgets with the help of the associated
+								attachments.
+
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+		
+			If you assign a layout manager to a control you do not have to call
+			<code>pack</code>
+			anymore. The only case in which you need to call
+			<code>pack</code>
+			is if control has no layout.
+		
+	</section>
+	<section id="swtlayout_data">
+		<title>Layout Data</title>
+		
+
+			Each SWT widget can have a layout specific settings class assigned to
+			it, e.g.
+			<code>GridData</code>
+			for a
+			<code>GridLayout</code>
+			. This allows the developer to control the arrangement of the widgets
+			within the layout.
+		
+		
+			In the following example you specify that a certain widget
+			should take
+			two columns in a
+			<code>GridLayout</code>
+			.
+		
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/gridDataExample.txt" />
+			</programlisting>
+		
+		<warning>
+			
+				The used
+				layout data
+				must match the
+				layout manager,
+				otherwise an
+				exception is thrown at
+				runtime.
+			
+		</warning>
+		
+			The layout will be automatically calculated when the container is
+			displayed. You can tell a
+			<code>Composite</code>
+			to recalculate the layout with the
+			<code>composite.layout()</code>
+			method.
+		
+		<warning>
+			
+				Layout data
+				objects should not be reused as the
+				layout
+				manager
+				expects that every user interface
+				element has a
+				unique
+				layout
+				data
+				object.
+			
+		</warning>
+	</section>
+	<section id="swtlayout_filllayout">
+		<title>FillLayout</title>
+		
+			<code>FillLayout</code>
+			divides the available space provided by the container equally to all
+			widgets and can be set to
+			arrange the widgets
+			either
+			horizontally (
+			<code>SWT.HORIZONTAL</code>
+			)
+			or vertically (
+			<code>SWT.VERTICAL</code>
+			). It also allows you to set the space between the widgets (attribute
+			<code>spacing</code>
+			) and the margins of the widgets to the container via the
+			<code>marginWidth</code>
+			and
+			<code>marginHeight</code>
+			attributes.
+		
+
+
+	</section>
+	<section id="swtlayout_rowlayout">
+		<title>RowLayout</title>
+		
+			<code>RowLayout</code>
+			orders UI components in a row (
+			<code>SWT.HORIZONTAL</code>
+			) or in a
+			column (
+			<code>SWT.VERTICAL</code>
+			).
+			<code>RowLayout</code>
+			supports wrapping of
+			fields (field
+			<code>wrap</code>
+			) by default. You can define if widgets should have their
+			preferred
+			size
+			(default)
+			or if they should grab the available
+			space
+			via the field
+			<code>pack</code>
+			. It is also possible to set margins at the top, bottom, left and
+			right. If you
+			set
+			<code>justify</code>
+			, the widgets will be spread through
+			the
+			available space.
+		
+		
+			Each element can define its height and width via a
+			<code>RowData</code>
+			element.
+		
+	</section>
+	<section id="layout_gridlayout">
+		<title>GridLayout</title>
+		
+			<code>GridLayout</code>
+			allows you to arrange the user interface components in a Grid with a
+			certain number of columns. It is also possible to
+			specify column and
+			row
+			spanning.
+		
+
+		
+			You can use
+			<code>new GridData()</code>
+			and assign properties to the new object. Alternatively you can use
+			one of its richer constructors to define certain
+			attributes during
+			construction. For example via the following constructor.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/Constructor.java" />
+			</programlisting>
+		
+
+		
+			The most important attributes are defined in the following table.
+
+			<table frame='all'>
+				<title>GridData</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Parameter</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>horizontalAlignment</entry>
+							<entry>
+								Defines how the control is positioned horizontally
+								within a
+								cell
+								(one
+								of:
+								<code>SWT.LEFT</code>
+								,
+								<code>SWT.CENTER</code>
+								,
+								<code>SWT.RIGHT</code>
+								, or
+								<code>SWT.FILL</code>
+								).
+							</entry>
+						</row>
+						<row>
+							<entry>verticalAlignment</entry>
+							<entry>
+								Defines how the control is
+								positioned vertically within a
+								cell
+								(one
+								of:
+
+								<code>SWT.TOP</code>
+								,
+								<code>SWT.CENTER</code>
+								,
+								<code>SWT.END</code>
+								,
+								<code>SWT.BOTTOM</code>
+								(treated the same as SWT.END), or
+								<code>SWT.FILL</code>
+								).
+							</entry>
+						</row>
+						<row>
+							<entry>grabExcessHorizontalSpace</entry>
+							<entry>Defines whether the control is
+								extended by the layout
+								manager to
+								take all
+								the
+								remaining
+								horizontal space.
+							</entry>
+						</row>
+						<row>
+							<entry>grabExcessVerticalSpace</entry>
+							<entry>Defines whether the control grabs any remaining vertical
+								space.
+							</entry>
+						</row>
+						<row>
+							<entry>horizontalSpan</entry>
+							<entry> Defines the number of column cells
+								that the control will
+								take
+								up.
+							</entry>
+						</row>
+						<row>
+							<entry>verticalSpan</entry>
+							<entry>Defines the number of row cells that
+								the control will take
+								up.
+							</entry>
+						</row>
+						<row>
+							<entry>heightHint </entry>
+							<entry>Defines the preferred height in pixels.
+							</entry>
+						</row>
+						<row>
+							<entry>widthHint  </entry>
+							<entry>Defines the preferred width in pixels.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+		
+			If the widget has the
+			<code>grabExcessHorizontalSpace</code>
+			attribute set to true, it will grab available space in its container.
+			<code>SWT.FILL</code>
+			tells the widget to fill the available space.
+			Therefore,
+			<code>grabExcessHorizontalSpace</code>
+			and
+			<code>SWT.FILL</code>
+			are often used together.
+		
+		<tip>
+			
+				The
+				<code>GridDataFactory</code>
+				class provides static methods for creating
+				<code>GridData</code>
+				objects. The Javadoc of this class contains several examples for it.
+			
+		</tip>
+
+
+
+	</section>
+	<section id="swtlayout_gridatafactory">
+		<title>Using GridDataFactory</title>
+		
+			The
+			<code>GridDataFactory</code>
+			class can be used to create
+			<code>GridData</code>
+			objects. This class provides a convenient shorthand for creating and
+			initializing GridData. The following listing
+			demonstrates its usage
+			and compares it with the direct usage of
+			<code>GridData</code>
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/GirdDataFactory.java" />
+			</programlisting>
+		
+
+
+		
+			Unfortunately the
+			_SWT Designer_
+			does currently not support
+			<code>GridDataFactory</code>
+			, hence the following examples avoid using them.
+		
+	</section>
+	<section id="swtlayout_performingarelayout">
+		<title>Triggering a relayout of a Composite</title>
+		
+			The
+			<code>Composite</code>
+			widget defines the
+			<code>layout</code>
+			method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
+		
+		<table frame='all'>
+			<title>Layout flags</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Flag</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>SWT.ALL</entry>
+						<entry>Flag forces all descendents to be marked for layout. AFAIK, there's no good reason to ever use this
+							flag.
+							If it's actually doing something, it could be replaced by a series of calls to requestLayout.
+						</entry>
+					</row>
+					<row>
+						<entry>SWT.CHANGED</entry>
+						<entry>The flag causes
+							subsequent calls to
+							Layout.layout(...) to receive true for the second argument, which
+							forces
+							the layout to recursively
+							flush all caches.
+							There's no good reason to ever do this. If something changed, the
+							layout should have been notified
+							via
+							Layout.flushCache(control) (which is what happens when you invoke
+							requestLayout). This is either a brute-force
+							workaround for a stale layout bug or was just unnecessary.
+							I can't
+							think of any circumstance in which we should keep
+							SWT.CHANGED.
+						</entry>
+					</row>
+					<row>
+						<entry></entry>
+						<entry></entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+
+		-
+
+
+
+	</section>
+</section>	

@@ -1,0 +1,7 @@
+Short summary (less than 50 characters)
+
+Detailed explanation, if required, line break at around 72 characters
+more stuff to describe...
+
+Fixes: bug #8009
+Change-Id: I26b5f96ccb7b2293dc9b7a5cba0760294afba9fd

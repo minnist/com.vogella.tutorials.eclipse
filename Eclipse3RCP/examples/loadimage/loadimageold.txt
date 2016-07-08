@@ -1,0 +1,2 @@
+
+AbstractUIPlugin.imageDescriptorFromPlugin(“YourPluginId”,”/icons/your.gif”).createImage();

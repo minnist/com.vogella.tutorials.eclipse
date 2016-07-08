@@ -1,0 +1,5 @@
+if (eIsProxy()) return super.toString();
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append("Article: ");
+		result.append(name);
+		return result.toString();

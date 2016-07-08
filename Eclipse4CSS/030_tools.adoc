@@ -1,76 +1,26 @@
-<section id="cssstyling">
-	<title>CSS Tools
+== CSS Tools
 
 
-	<section id="css_spy">
-		<title>CSS Spy
+=== CSS Spy
 		
-			The
-			_CSS spy_
-			tool helps to see the possible styling options for selected elements.
-			_CSS spy_
-			is part of the
-			_e4 tooling_
-			project and can be installed from its update site. See the Eclipse 4
-			installation description for details.
-		
-		
-			You can open the
-			_CSS spy_
-			via the
-			<keycombo>
-				<keycap>Shift</keycap>
-				<keycap>Alt</keycap>
-				<keycap>F5</keycap>
-			</keycombo>
-			shortcut.
-		
-		
-			_CSS spy_
-			allows you to see the available properties and the
-			current style
-			settings.
-		
+The _CSS spy_ tool helps to see the possible styling options for selected elements.
+_CSS spy_ is part of the _e4 tooling_ project and can be installed from its update site. 
 
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/css_spy10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>The CSS Spy in action</phrase>
-				</textobject>
-			</mediaobject>
+You can open the _CSS spy_ via the kbd:[Shift+Alt+F5] shortcut.
 		
-	</section>
-	<section id="css_scratchpad">
-		<title>CSS Scratchpad
+_CSS spy_ allows you to see the available properties and the current style settings.
 		
-			The
-			_CSS Scratchpad_
-			allows to change CSS rules interactively.
-			is also part of the
-			_e4 tooling_
-			project.
-		
-		
-			You
-			open
-			it via the
-			<keycombo>
-				<keycap>Ctrl</keycap>
-				<keycap>Shift</keycap>
-				<keycap>Alt</keycap>
-				<keycap>F6</keycap>
-			</keycombo>
-			shortcut.
-		
-		
-			If you click the
-			<guibutton>Apply</guibutton>
-			button, the entered CSS is applied at runtime to your application.
-		
-	</section>
 
-
-</section>
+image::css_spy10.png[The CSS Spy in action]
+		
+=== CSS Scratchpad
+		
+The _CSS Scratchpad_ allows to change CSS rules interactively. 
+It is also part of the _e4 tooling_ project.
+		
+		
+You open it via the kbd:[Ctrl+Shift+Alt+F6] shortcut.
+		
+		
+If you click the btn:[Apply] button, the entered CSS is applied at runtime to your application.

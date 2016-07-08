@@ -1,0 +1,11 @@
+
+public void createPartControl(Composite parent) {
+		viewer = new TableViewer(parent, SWT.MULTI | SWT.H_SCROLL
+				| SWT.V_SCROLL);
+		viewer.setContentProvider(new ViewContentProvider());
+		viewer.setLabelProvider(new ViewLabelProvider());
+		viewer.setInput(getViewSite());
+		// Makes the selection available to the workbench
+		getSite().setSelectionProvider(viewer);
+	}
+	

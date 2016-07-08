@@ -1,0 +1,254 @@
+<section id="context" role="wrapper">
+	<title>Objects available for dependency injection</title>
+
+	<section id="context_searchorder">
+		<title>How are objects selected for dependency injection</title>
+		<para>
+			As described in
+			<xref linkend="dependencyinjection_eclipse" />
+			an object which is created by Eclipse can use annotations to describe
+			its class dependencies.
+		</para>
+		<para>
+			During dependency
+			injection for an object created by Eclipse,
+			the
+			Eclipse framework
+			searches for
+			a
+			fitting object
+			based on the
+			specified
+			key. The
+			search
+			starts in the
+			local context associated with
+			the
+			application
+			model
+			object. If this
+			key
+			is
+			not available, Eclipse
+			continues
+			to
+			search
+			in
+			the
+			parent
+			context.
+			This
+			process continues
+			until the
+			main
+			context
+			has been
+			reached.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contexthierarchy10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Context hierarchy with OSGi</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			As you learn in later chapters the Eclipse context is not the only
+			possible source of objects which can get
+			injected.
+			Other examples
+			which are covered later are OSGi services, preferences, events and
+			custom objects. The search
+			happens (mostly)
+			transparently
+			for the caller
+			of the
+			injection.
+		</para>
+
+	</section>
+
+
+	<section id="context_modelobjectsandclasses">
+		<title>How to access the model objects?</title>
+		<para>
+			For the class references in the application model (see
+			<xref linkend="connectmodeltojava" />
+			), the Eclipse
+			framework
+			creates the corresponding objects when needed.
+			Such an object has access to its
+			corresponding
+			model
+			object (see
+			<xref linkend="importantmodelelement_element" />
+			) via dependency injection.
+		</para>
+		<para>
+			For example, in the implementation of a part you can access the model
+			information of a part via:
+			<code>@Inject MPart part;</code>
+		</para>
+
+	</section>
+	<section id="context_ieclipsecontextdefaults">
+		<title>Default entries in the Eclipse context</title>
+		<para>
+			The Eclipse framework creates several objects in the context.
+			These
+			are:
+			<itemizedlist>
+				<listitem>
+					<para>model objects - contain the data of the application model
+					</para>
+				</listitem>
+				<listitem>
+					<para>services - software components which are
+						defined by
+						the Eclipse platform or via the OSGi service
+						registry
+					</para>
+				</listitem>
+				<listitem>
+					<para>several other objects which have explicitly been added to the
+						context
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			The
+			context
+			can be modified by the application code and the
+			framework.
+			As the Eclipse framework automatically tracks the
+			dependencies of the
+			objects it creates, it can update them as described in
+			<xref linkend="dependencyinjection_reinject" />
+			.
+		</para>
+
+	</section>
+
+
+	<section id="dependencyinjection_activeconstants">
+		<title>Qualifiers for accessing the active part or shell</title>
+		<indexterm>
+			<primary>IServiceConstants</primary>
+			<secondary>ACTIVE_SHELL</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>IServiceConstants</primary>
+			<secondary>ACTIVE_PART</secondary>
+		</indexterm>
+		<para>
+			The Eclipse platform places the part which is currently
+			selected and
+			the active shell into the
+			<code>IEclipseContext</code>
+			of the application object. The related keys are defined in the
+			<code>IServiceConstants</code>
+			interface.
+		</para>
+		<para>For example, the following method would allow you to track the
+			current active part in another part.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActivePart.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			To track the active shell use the
+			<code>IServiceConstants.ACTIVE_SHELL</code>
+			key.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActiveShell.java" />
+			</programlisting>
+		</para>
+		<note>
+			<para>
+				Eclipse uses handlers to define actions which can be triggered via menu or toolbar entries.
+				For a handler
+				implementation class it is not necessary to use
+				these qualifiers, as a handler is executed in the
+				active
+				context of
+				the application.
+			</para>
+		</note>
+
+	</section>
+	<section id="dependencyinjection_active">
+		<title>Tracking a child context with @Active</title>
+		<indexterm>
+			<primary>@Active</primary>
+		</indexterm>
+		<para>
+			The
+			<code>@Active</code>
+			annotation allows you to track values in a child context. The Eclipse
+			framework keeps track of the current active
+			branch in the hierarchy
+			of the
+			<code>IEclipseContext</code>
+			.
+			For example, if the user selects a
+			part,
+			the path
+			in the
+			<code>IEclipseContext</code>
+			hierarchy from the root to the
+			<code>IEclipseContext</code>
+			of the part is the current active branch.
+		</para>
+		<para>
+			With the
+			<code>@Active</code>
+			annotation you can track values in the current active branch of a
+			child element. Whenever the active branch changes
+			and the value of
+			the referred key changes this value is re-injected into the object
+			which uses the
+			<code>@Active</code>
+			annotation.
+		</para>
+
+		<para>
+			The usage of this annotation is demonstrated by the following
+			code snippet.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/MyOwnClass.java" />
+			</programlisting>
+		</para>
+
+		<note>
+			<para>
+				The
+				<code>@Active</code>
+				annotation
+				is currently not used within the
+				Eclipse framework itself
+				and the
+				author of this $book has not yet managed to
+				find a good use
+				case for
+				this
+				annotation.
+			</para>
+		</note>
+
+	</section>
+
+</section>

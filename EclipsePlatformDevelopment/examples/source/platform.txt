@@ -1,0 +1,19 @@
+# the links below are web links intended to be opened by a browser
+# the pages contain URL for cloning the repositories 
+# at the bottom of the page
+
+# NOTE better get the Git URL via http://git.eclipse.org/r because
+# that URL contains also your user. That allows you to contribute back easier
+
+# Eclipse platform UI repository
+# contains JFace, Eclipse user interface, example projects
+# and related tests
+http://git.eclipse.org/c/platform/eclipse.platform.ui.git/
+
+# Eclipse platform runtime 
+# contains the Equinox runtime, the dependency injection engine,
+# the non user interface related services and related tests
+http://git.eclipse.org/c/platform/eclipse.platform.runtime.git/
+
+# Eclipse platform website, for example https://www.eclipse.org/eclipse/platform-ui/
+ssh://git.eclipse.org/c/www.eclipse.org/eclipse.git

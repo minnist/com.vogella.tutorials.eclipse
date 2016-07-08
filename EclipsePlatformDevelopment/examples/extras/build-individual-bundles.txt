@@ -1,0 +1,2 @@
+cd rt.equinox.framework \
+mvn -Pbuild-individual-bundles clean verify

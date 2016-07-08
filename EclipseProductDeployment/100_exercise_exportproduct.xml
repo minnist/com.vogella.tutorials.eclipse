@@ -1,0 +1,234 @@
+<section id="tutorial_exportproduct" role="wrapper">
+	<title>Exercise: Export your product</title>
+	<section id="tutorial_exportproduct1">
+		<title>Export your product</title>
+		<para>
+			Use the
+			product
+			file of your
+			<code>com.example.e4.rcp.wizard</code>
+			plug-in to export your Eclipse application.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/wizarddeploy10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Export product</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Enter a new directory in the
+			<guilabel>Directory</guilabel>
+			field. If in doubt use the
+			<guilabel>Browse</guilabel>
+			button to find a valid directory. The following screenshot shows an
+			example under Ubuntu.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/wizarddeploy20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selecting the output directory in the product export
+						dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guilabel>Finish</guilabel>
+			button to start the export.
+		</para>
+		<warning>
+			<para>The exported directory should be empty. If you export twice to
+				the same directory, delete its content, otherwise the export fails
+				with a dependency conflict. </para>
+		</warning>
+	</section>
+	<section id="tutorial_exportproduct_validate">
+		<title>Validate that the exported application starts</title>
+
+		<para>
+			After the export finishes check the
+			<filename class="directory">Root directory</filename>
+			folder in the
+			<filename class="directory">Directory</filename>
+			folder.
+		</para>
+
+		<para>
+			A
+			double-click on the
+			native
+			launcher starts your
+			application.
+			Ensure that you can start the application from your exported
+			directory.
+		</para>
+		<para>
+			If you face issues during the product export, check the list of
+			common export problems from
+			<xref linkend="exportproblems" />
+			and try to solve
+			the
+			problem.
+		</para>
+	</section>
+	<section id="exercise_splash">
+		<title>Using a static splash screen</title>
+		<para>
+			Add a splash screen to your application. For this create or download
+			a
+			<filename>splash.bmp</filename>
+			bitmap file. You find an example under the following URL:
+			<ulink url="http://download.vogella.com/resources/splash.bmp">Example splash screen</ulink>
+			.
+		</para>
+
+		<para>
+			Add the
+			<filename>splash.bmp</filename>
+			file to the main directory of your
+			application. You can copy and paste
+			it into the
+			<wordasword>Package Explorer</wordasword>
+			view.
+			If you add files outside
+			of the Eclipse IDE, you need to
+			<guilabel>Refresh</guilabel>
+			(via F5)
+			your project in the
+			<wordasword>Package Explorer</wordasword>
+			view, to see the file in Eclipse.
+		</para>
+
+		<para>
+			Afterwards, your project should look like the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/splash_exercise10.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a splash bmp file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<warning>
+			<para>
+				The file name and the location of the file must be correct,
+				otherwise
+				Eclipse
+				will not use your splash screen.
+			</para>
+		</warning>
+		<para>
+			On the
+			<guilabel>Splash</guilabel>
+			tab of your product configuration file, define that your application
+			plug-in
+			contains the splash
+			screen.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorialexport_e4_30.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding splash to the product configuration file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Start your application from the Eclipse IDE and verify that the
+			splash is displayed.
+		</para>
+	</section>
+
+	<section id="exercise_splashexport">
+		<title>Include the splash screen into the exported application</title>
+		<para>
+			Configure that the
+			<filename>splash.bmp</filename>
+			file is included into the exported application by adding it to the
+			<filename>build.properties</filename>
+			file of your application plug-in.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/addsplashtobuildproperties10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Add splash to build properties</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Export your product again and ensure that
+			the splash screen is
+			also shown if you start the exported application.
+		</para>
+		<warning>
+			<para>
+				Make sure that the
+				target directory of the export is empty before you
+				start the export. See
+				<xref linkend="exportproblems" />
+				for details.
+			</para>
+		</warning>
+	</section>
+
+	<section id="exercise_launcher">
+		<title>Change launcher name</title>
+		<para>
+			The Eclipse export wizards uses
+			<wordasword>eclipse</wordasword>
+			as default for your application launcher name,
+			e.g., on MS Windows
+			this
+			results in an
+			<wordasword>eclipse.exe</wordasword>
+			launcher file.
+		</para>
+		<para>
+			Change this launcher name to
+			<wordasword>mywizard</wordasword>
+			on the
+			<guilabel>Launching</guilabel>
+			tab of your product configuration file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorialexport_e4_40.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Change launcher name</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Export your application via the product file again and validate
+			that the launcher name
+			has changed. Ensure that the directory you export to is empty before the export.
+		</para>
+	</section>
+	
+</section>
+	
+

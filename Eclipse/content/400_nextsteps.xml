@@ -1,0 +1,18 @@
+<section id="nextsteps">
+	<title>Next steps</title>
+	<para>
+		To learn how to debug Eclipse Java programs, you can use
+		<ulink url="http://www.vogella.com/tutorials/EclipseDebugging/article.html"> Eclipse Debugging</ulink>.
+	</para>
+	<para>
+		To learn Java Web development, you can use
+		with
+		<ulink url="http://www.vogella.com/tutorials/EclipseWTP/article.html"> Servlet and JSP development</ulink>.
+		If you want to develop rich stand-alone Java clients, you can use
+		<ulink
+			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">Eclipse RCP</ulink>.
+		You can also extend Eclipse with
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-ins</ulink>.
+		</para>
+		<para> Good luck in your journey of learning Java! </para>
+</section>

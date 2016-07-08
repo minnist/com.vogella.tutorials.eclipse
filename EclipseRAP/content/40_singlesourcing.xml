@@ -1,0 +1,36 @@
+<section id="singlesourcing">
+	<title>Single Sourcing</title>
+	<para>
+		With Eclipse RAP it is possible to develop a desktop application
+		<ulink
+			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP</ulink>
+		and a web application with the same source code. This is called single
+		sourcing.
+	</para>
+	<para> To use the same code basis for Eclipse RCP and Eclipse RAP you
+		can use OSGi fragments. Fragments are special OSGi bundles, which
+		extend another bundle and are merged at runtime with the extended
+		bundle. You can put the RCP or RAP specific functionality into a
+		fragment. If you create a RAP application you use the RAP fragment or
+		if you want to create a RCP application you use the RCP fragment.
+	</para>
+	<para>
+		One difference between RCP and RAP is that in RCP you only have
+		one
+		user. In case you are using singletons which should be user
+		specific
+		then you have to use the RAP class SessionSingleBase. In case
+		you have
+		a real singleton for several users you need to consider
+		<ulink url="http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency</ulink>
+		issues. JFace
+		Preference are already correctly supported in
+		RAP.
+	</para>
+	<para>
+		For more on single sourcing check the
+		<ulink url="http://www.eclipse.org/rap"> RAP homepage</ulink>
+		.
+	</para>
+
+</section>

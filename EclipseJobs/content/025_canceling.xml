@@ -1,0 +1,75 @@
+<section id="eclipsejobs_cancel">
+	<title>Handle Job cancellation</title>
+	<para>
+		In Eclipse many user complain about jobs, which are not properly
+		canceled when pressing the red square cancel button in the progess
+		view. Some
+		<code>Job</code>
+		implementations simply just don't care and do not react on the
+		cancellation, which is triggered by the user.
+	</para>
+	<para>
+		This of course concludes in a really poor user experience, which
+		should definitely be avoided.
+	</para>
+	<para>
+		In order to realize that a user has canceled a Job the
+		<code>IProgressMonitor</code>
+		, which is passed to the
+		<code>run</code>
+		method of a Job, can be asked whether the Job has been canceled. This
+		can be done by calling the
+		<code>isCanceled</code>
+		on an
+		<code>IProgressMonitor</code>
+		.
+	</para>
+	<para>This check for cancellation should be done in a frequent manner,
+		so that the user does not have to wait too long until the job will
+		really be canceled.
+	</para>
+	<section id="eclipsejobs_cancel_before_4.6">
+		<title>Handle Job cancellation before Eclipse Neon (4.6)</title>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/progressreport/IsCancelCheck.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="eclipsejobs_cancel_since_4.6">
+		<title>Handling Job cancellation since Eclipse Neon (4.6)</title>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="../examples/progressreport/IsCancelCheckSubmonitorSplit.java" />
+			</programlisting>
+		</para>
+		<para>
+			The new
+			<code>split</code>
+			method can handle the cancellation check automatically and throws an
+			<code>OperationCanceledException</code>
+			in case the
+			<code>IProgressMonitor</code>
+			has been canceled. The
+			<code>OperationCanceledException</code>
+			is automatically caught by a
+			<code>Job</code>
+			, which will just set the
+			<code>Status.CANCEL_STATUS</code>
+			then.
+		</para>
+		<para>
+			<note>
+				Using the new Submonitor's
+				<code>split</code>
+				is not only shorter than the former approach, but also provides
+				better performance since the expensive
+				<code>isCanceled</code>
+				call is only done in case it is really necessary.
+			</note>
+		</para>
+	</section>
+</section>

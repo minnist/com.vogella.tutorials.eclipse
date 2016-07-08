@@ -1,0 +1,16 @@
+<section id="swtbot_usage3x">
+	<title>Resetting the workbench in 3.x
+
+	 JUnit does not require that the tests run in the same order as
+		defined. To ensure that the Eclipse 3.x workbench is in the same state
+		for each
+		test you can use the following command.
+	
+
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/api/reset.txt" />
+		</programlisting>
+	
+</section>

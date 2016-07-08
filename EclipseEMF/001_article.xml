@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<article>
+	<articleinfo>
+		<title>Eclipse Modeling Framework (EMF) - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+
+		<pubdate>02.09.2015</pubdate>
+
+		<releaseinfo>
+			<para>Version 3.5</para>
+		</releaseinfo>
+
+		
+
+		<abstract id="abstract">
+			<title>Eclipse EMF</title>
+			<para>
+				This tutorial describes the usage of Eclipse EMF, a framework
+				for modeling your data model and creating Java code from it. This tutorial is
+                based on
+                Eclipse 4.6 (Eclipse Neon).
+			</para>
+		</abstract>
+	</articleinfo>
+
+    <?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_createmodel.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_emfmodel.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="075_emfeditor.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_javacode.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_javadoc.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_methods.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_inheritance.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_initialvalue.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_creategenmodel.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_nextsteps.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseEMF"?>
+
+</article>

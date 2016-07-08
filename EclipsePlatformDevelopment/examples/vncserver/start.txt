@@ -1,0 +1,2 @@
+# start the server on display #1
+vncserver :1 -name testing -depth 24 -geometry 1280x1024

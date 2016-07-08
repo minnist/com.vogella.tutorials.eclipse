@@ -1,0 +1,90 @@
+<section id="plugin_dependencies" role="wrapper">
+	<title>Enter the dependencies</title>
+
+	<section id="plugin_creatinge4_dependencies">
+		<title>Add the plug-in dependencies</title>
+		<para>
+			In the upcoming exercises you will use
+			the functionality from
+			other
+			Eclipse plug-ins. This requires that you define a dependency to
+			these
+			plug-ins in your application. 
+		</para>
+		<para>
+			Remember that
+			<wordasword>application plug-in</wordasword>
+			is the short form for the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in.
+		</para>
+		<para>
+			Open the
+			<filename>META-INF/MANIFEST.MF</filename>
+			file in your
+			<wordasword>application plug-in</wordasword>
+			and select the
+			<guilabel>Dependencies</guilabel>
+			tab.
+			Use the
+			<guilabel>Add...</guilabel>
+			button in the
+			<guilabel>Required Plug-ins</guilabel>
+			section to
+			add the following plug-ins as
+			dependency.
+		</para>
+
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para>org.eclipse.core.runtime
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.swt
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>org.eclipse.e4.core.di
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.ui.workbench
+					</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.ui.di
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>org.eclipse.e4.core.di.extensions
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+	<section id="package_creatinge4_dependencies">
+		<title>Validating</title>
+
+		<para>The result should be similar to the following screenshot.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product60.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Plug-in Dependencies</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+
+	</section>
+
+
+
+</section>

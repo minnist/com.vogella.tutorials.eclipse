@@ -1,0 +1,20 @@
+<section id="prerequisites">
+	<title>Pre-requisites</title>
+	<para>
+		If you are completely new to Java web
+		development, you may want to
+		read
+		<ulink
+			url="http://www.vogella.com/tutorials/JavaWebTerminology/article.html">
+			Introduction to Java Web development
+		</ulink>
+		tutorial.
+	</para>
+	<para>
+		If you are completely new to the Eclipse IDE, please see the
+		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html">
+			Eclipse IDE tutorial
+		</ulink>
+		.
+	</para>
+</section>

@@ -1,0 +1,21 @@
+
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Todo
+Bundle-SymbolicName: de.vogella.e4.todo
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.ui.workbench.swt,
+ org.eclipse.e4.ui.workbench.renderers.swt,
+ org.eclipse.e4.ui.css.swt.theme,
+ org.eclipse.e4.core.services,
+ org.eclipse.e4.ui.services,
+ javax.inject,
+ javax.annotation,
+ org.eclipse.equinox.ds,
+ org.eclipse.equinox.event,
+ org.eclipse.swt,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.contexts

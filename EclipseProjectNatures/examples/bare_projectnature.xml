@@ -1,0 +1,10 @@
+<extension
+    id="examplenature"
+    name="Example nature"
+    point="org.eclipse.core.resources.natures">
+    <runtime>
+        <run
+            class="com.example.product.ExampleProductNature">
+        </run>
+    </runtime>
+</extension>

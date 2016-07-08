@@ -1,0 +1,147 @@
+	<section id="importantmodelelement_element">
+		<title>Overview of available model objects</title>
+		<indexterm>
+			<primary>Model objects</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MApplication</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MAddon</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MWindow</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MTrimmedWindow</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MPerspective</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MPart</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MDirtyable</primary>
+		</indexterm>
+		<indexterm>
+			<primary>MPartDescriptor</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Snippets</primary>
+		</indexterm>
+
+		<para>
+			During startup the Eclipse framework parses the available information
+			about the application model (Application.e4xmi,
+			persisted user
+			changes and model contributions) and stores this information in Java
+			objects. These objects are called
+			<wordasword>model objects</wordasword>
+			and at runtime they represent the attributes from the model elements.
+		</para>
+
+		<para> The
+			following table lists the types of the important model
+			objects.
+		</para>
+
+		<para>
+			<table frame='all'>
+				<title>Eclipse model elements</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Model element</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>MApplication</entry>
+							<entry>Describes the application object. All other model elements
+								are contained in this object.
+							</entry>
+						</row>
+						<row>
+							<entry>MAddon</entry>
+							<entry>A self-contained component typically without user
+								interface. It can register for events in
+								the application
+								life
+								cycle and handle these events.
+							</entry>
+						</row>
+						<row>
+							<entry>MWindow</entry>
+							<entry>Represents a window in your application.
+							</entry>
+						</row>
+
+						<row>
+							<entry>MTrimmedWindow</entry>
+							<entry>Similar to MWindow but it allows containing toolbars for the
+								windows (via the TrimBars model elements).
+							</entry>
+						</row>
+
+						<row>
+							<entry>MPerspective</entry>
+							<entry>Represents a different layout of parts to be shown inside the window. Should be
+								contained in a
+								MPerspectiveStack.
+							</entry>
+						</row>
+						<row>
+							<entry>MPart</entry>
+							<entry>Represents the model element part, e.g., a view or an
+								editor.
+							</entry>
+						</row>
+						<row>
+							<entry>MDirtyable</entry>
+							<entry>Property of MPart which can be injected. If set to true,
+								this property informs the
+								Eclipse platform that
+								this Part
+								contains
+								unsaved
+								data (is dirty).
+								In a handler you can query this
+								property
+								to provide a save possibility.
+							</entry>
+						</row>
+						<row>
+							<entry>MPartDescriptor</entry>
+							<entry>
+								MPartDescriptor is a template for new parts. A new part based on
+								this part descriptor can be created and
+								shown via the Eclipse framework.
+							</entry>
+						</row>
+						<row>
+							<entry>Snippets</entry>
+							<entry>
+								Snippets can be used to pre-configure model parts which
+								you want
+								to create via your program. You can use the
+								Eclipse
+								framework to clone such a snippet and use the result object
+								to
+								attach it to the application model at
+								runtime.
+							</entry>
+						</row>
+
+
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+	</section>
+
+

@@ -1,0 +1,13 @@
+
+@Inject
+public void addingContext(IEclipseContext context) {
+	// putting in some values
+	context.set("mykey1", "Hello1");
+	context.set("mykey2", "Hello2");
+	
+	// declares the named value as modifiable
+	// by descendants of this context. If the value does not
+	// exist in this context, a null value is added for the name.
+	context.declareModifiable("mykey1");
+
+}

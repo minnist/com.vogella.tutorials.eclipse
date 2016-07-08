@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Reporting with Eclipse BIRT and Java Objects (POJO's)
+			- Tutorial</title>
+		<author>
+			<firstname>Lars Vogel </firstname>
+			<surname> Hendrik Still </surname>
+		</author>
+		<copyright>
+			<year>2008 - 2011</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>26.06.2011</pubdate>
+		<releaseinfo>
+			<para>Version 1.2</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Birt</title>
+			<para> This tutorial describes how to use Eclipse BIRT for reporting
+				on simple Java Objects (POJO's). The
+				tutorial explains also how to deploy the resulting BIRT
+				report
+				into a
+				webcontainer (Tomcat) and how to use it in an Eclipse
+				RCP
+				application. Eclipse 3.7 (Indigo) is used for this tutorial.
+			</para>
+		</abstract>
+	</articleinfo>	
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/10_birtintro.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/15_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/20_birtcreate.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/30_java.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/40_birtdatasource.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/50_birttable.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/60_birtchart.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/80_tomcat.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/84_rcp.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseBIRT"?>
+</article>

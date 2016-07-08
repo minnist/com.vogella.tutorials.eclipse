@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>JFace Data Binding - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>25.05.2016</pubdate>
+		<releaseinfo>
+			<para>Version 4.1</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>JFace Data binding</title>
+			<para> This tutorial explains Eclipse JFace Data Binding which can be
+				used to synchronize data between different objects.
+				This tutorial is
+				based on Eclipse 4.6.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_introduction.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_binding.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_validatorsconvertors.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_moreonbinding.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_jfaceviewers.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="094_custom_observables.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="096_java8datetime.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_prerequisite.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="130_tutorial_swt.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="132_tutorial_writablevalue.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_tutorial_jface.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_tutorial_observablemaplabelprovider.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseDataBinding"?>
+</article>

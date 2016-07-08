@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<articleinfo>
+		<title>Eclipse IDE - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>09.05.2016</pubdate>
+		<releaseinfo>
+			Version 5.1
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Eclipse Java IDE</title>
+			<para> This tutorial describes the usage of Eclipse as a Java IDE. It
+				describes the
+				installation of Eclipse, the
+				creation of Java programs
+				and tips for using Eclipse.
+				This tutorial is based on Eclipse 4.6
+				(Neon).
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="014_ide.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="016_installationrequirements.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="018_download.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_gettingstarted.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_eclipseui.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/044_eclipseui_ide.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/046_javaperspective.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_firstjavaproject.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/062_firstjavaprojectexport.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/074_sourcenavigation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_contentassistsquickfix.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_java8support.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/082_codegenerator.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/083_exercise_codecompletion.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/084_refactoring.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/086_exercise_refactoring.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/090_shortcuts.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/150_projectdependency.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/160_externaljar.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_updatemanager.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/201_marketplace.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/202_updatemanageradvanced.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/210_preferences.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/220_jdt_preferences.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/221_codequality.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/222_preferences.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/230_templates.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/234_exercise_templates.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/240_memorysettings.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/280_localhistory.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/300_workorganization.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/320_tasks.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="340_exportimportprojects.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/380_onlineresources.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="390_questionsbugs.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/400_nextsteps.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Eclipse"?>
+</article>

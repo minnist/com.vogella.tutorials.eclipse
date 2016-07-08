@@ -1,0 +1,70 @@
+<section id="debugging" role="wrapper">
+	<title>Overview</title>
+	<section id="debugging_overview">
+		<title>What is debugging?</title>
+		<indexterm>
+			<primary>Debugging</primary>
+		</indexterm>
+		<para>
+			<wordasword>Debugging</wordasword>
+			allows you to run a program interactively while watching
+			the
+			source
+			code
+			and the variables during the execution.
+		</para>
+		<para>
+			By
+			<wordasword>breakpoints</wordasword>
+			<indexterm>
+				<primary>Breakpoint</primary>
+			</indexterm>
+			in the source code you specify where the execution of the
+			program
+			should stop. To stop the execution only if a field is read or
+			modified, you can specify
+			<wordasword>watchpoints</wordasword>
+			<indexterm>
+				<primary>Watchpoint</primary>
+			</indexterm>
+			.
+		</para>
+		<para>
+			<wordasword>Breakpoints</wordasword>
+			and
+			<wordasword>watchpoints</wordasword>
+			can be summarized as
+			<wordasword>stop points</wordasword>
+			.
+		</para>
+		<para>Once the program is stopped you can investigate variables,
+			change their content, etc.
+		</para>
+	</section>
+	<section id="debugging_eclipse">
+		<title>Debugging support in Eclipse</title>
+		<para>
+			Eclipse allows you to start a Java program
+			in
+			<wordasword>Debug mode</wordasword>
+			.
+		</para>
+		<para>
+			Eclipse has a special
+			<guilabel>Debug</guilabel>
+			<wordasword>perspective</wordasword>
+			which gives you a preconfigured set of
+			<wordasword>views</wordasword>
+			. In this
+			<wordasword>perspective</wordasword>
+			you
+			control the execution
+			process of your program and
+			can
+			investigate the
+			state of
+			the variables.
+		</para>
+
+	</section>
+</section>

@@ -1,0 +1,19 @@
+<section id="firstswt_button">
+	<title>Exercise: SWT Button</title>
+
+	
+		Add a
+		<code>Button</code>
+		widget to your application
+		and assign a
+		<code>SelectionListener</code>
+		to it. If the button is pressed, write "Called!" to the console.
+	
+	
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/events/selection.java" />
+		</programlisting>
+	
+
+</section>

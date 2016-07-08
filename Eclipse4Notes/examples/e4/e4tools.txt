@@ -1,0 +1,5 @@
+# Eclipse e4 tooling
+git clone git://git.eclipse.org/gitroot/e4/org.eclipse.e4.tools.git
+
+# Some e4 demos, not required, not always working
+git clone git://git.eclipse.org/gitroot/e4/org.eclipse.e4.ui.git

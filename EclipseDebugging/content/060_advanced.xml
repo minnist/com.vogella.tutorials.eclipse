@@ -1,0 +1,382 @@
+<section id="advanced" role="wrapper">
+	<title>Advanced Debugging</title>
+	<para> The following section shows more options you have for debugging.
+
+	</para>
+
+	<section id="advanced_properties">
+		<title>Breakpoint properties</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Breakpoint properties
+			</secondary>
+		</indexterm>
+		<para>
+			After setting a breakpoint you can select the
+			properties of the
+			breakpoint, via
+			<menuchoice>
+				<guimenu>right-click</guimenu>
+				<guisubmenu>Breakpoint Properties</guisubmenu>
+			</menuchoice>
+			. Via the breakpoint properties you can
+			define a condition that
+			restricts the activation of this
+			breakpoint.
+		</para>
+		<para>
+			You can for
+			example
+			specify
+			that
+			a breakpoint should only become
+			active
+			after it has reached
+			12 or more times via the
+			<guilabel>Hit Count</guilabel>
+			property.
+		</para>
+		<para>You
+			can also
+			create a
+			conditional
+			expression. The execution of the
+			program only stops at the
+			breakpoint, if the
+			condition
+			evaluates to
+			true. This mechanism can also be used for additional logging, as the
+			code that specifies the condition is executed every time the program
+			execution reaches that point.
+		</para>
+
+		<para>The following screenshot depicts this setting. </para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debug10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Breakpoint Properties</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/debug20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Breakpoint Properties</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="advanced_watchpoint">
+		<title>Watchpoint</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>using Watchpoints
+			</secondary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>watchpoint</wordasword>
+			is a breakpoint set on a field. The debugger
+			will
+			stop whenever that
+			field is
+			read or changed.
+
+		</para>
+
+		<para>
+			You can set a
+			<wordasword>watchpoint</wordasword>
+			by double-clicking on
+			the left margin,
+			next to
+			the field declaration. In
+			the properties of a
+			<wordasword>watchpoint</wordasword>
+			you
+			can
+			configure if
+			the execution should
+			stop during read
+			access (Field
+			Access) or during
+			write access (Field
+			Modification) or both.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/watchpoint10.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Watchpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="advanced_exception">
+		<title>Exception breakpoints</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Exception breakpoints
+			</secondary>
+		</indexterm>
+		<para>
+			You can set breakpoints which are triggered when exceptions in your
+			Java source code
+			are
+			thrown. To define an exception breakpoint click on
+			the
+			<guibutton>Add Java
+				Exception Breakpoint
+			</guibutton>
+			button
+			icon in the
+			<guilabel>Breakpoints</guilabel>
+			view
+			toolbar.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/exception10.gif" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Exception Breakpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para> You can configure if the debugger should stop at caught or
+			uncaught exceptions.
+		</para>
+	</section>
+	<section id="advanced_method">
+		<title>Method breakpoint</title>
+
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Method breakpoint
+			</secondary>
+		</indexterm>
+		<para> A method breakpoint is defined by double-clicking in the left
+			margin of the editor next to the method header.
+		</para>
+
+		<para>
+			You can configure if you want
+			to stop the program before entering
+			or
+			after leaving the method.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/methodbreakpoint10.gif"/>
+				</imageobject>
+				<textobject>
+					<phrase>Method Breakpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="advanced_class">
+		<title>Breakpoints for loading classes</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Class breakpoint
+			</secondary>
+		</indexterm>
+		<para>
+			A class load breakpoint stops when the
+			class is loaded.
+		</para>
+		<para>
+			To set a class load breakpoint, right-click on a class in the
+			<guilabel>Outline</guilabel>
+			view
+			and choose the
+			<guibutton>Toggle Class Load Breakpoint</guibutton>
+			option.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/classloadbreakpoint.gif"
+						scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Toogle class load breakpoint</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Alternative you can double-click in the left border of the Java
+			editor beside the class definition.
+		</para>
+	</section>
+
+	<section id="advanced_stepfilter">
+		<title>Step Filter</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Step filter
+			</secondary>
+		</indexterm>
+		<para>
+			You can define that certain packages should be skipped in debugging.
+			This is
+			for example useful if you use a framework for testing but
+			don't want
+			to step into the test framework classes.
+			These
+			packages can
+			be configured
+			via the
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Java</guisubmenu>
+				<guisubmenu>Debug</guisubmenu>
+				<guisubmenu>Step Filtering</guisubmenu>
+			</menuchoice>
+			menu path.
+		</para>
+	</section>
+	<section id="advanced_hitcount">
+		<title>Hit Count</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>Hit count
+			</secondary>
+		</indexterm>
+		<para> For every breakpoint you can specify a hit
+			count in its
+			properties. The application is stopped once
+			the
+			breakpoint has been
+			reached
+			the number of times defined in the hit
+			count.
+		</para>
+
+	</section>
+	<section id="advanced_remotedebugging">
+		<title>Remote debugging</title>
+		<para>Eclipse allows you to debug applications which runs on
+			another
+			Java virtual machine or even on another machine.
+		</para>
+		<para>To enable remote debugging you need to start your Java
+			application with certain flags, as demonstrated in the following code
+			example.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/remote/remote.txt" />
+			</programlisting>
+		</para>
+		<para>
+			In you Eclipse IDE you can
+			enter the hostname and port to connect for debugging
+			via the
+			<menuchoice>
+				<guimenu>Run</guimenu>
+				<guisubmenu>Debug Configuration...</guisubmenu>
+			</menuchoice>
+			menu.
+		</para>
+		<para>
+			Here you can create a new debug configuration of the
+			<guilabel>Remote Java Application</guilabel>
+			type. This configuration allows you to enter the hostname and port
+			for the connection as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/remotedebugging10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Remote debugging</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<note>
+			<para>Remote debugging requires that you have the source code of the
+				application which is debugged available in your Eclipse IDE.
+			</para>
+		</note>
+
+	</section>
+
+	<section id="advanced_droptoframe">
+		<title>Drop to frame</title>
+		<indexterm>
+			<primary>Debugging</primary>
+			<secondary>drop to frame
+			</secondary>
+		</indexterm>
+		<para>Eclipse allows you to select any level (frame) in the call stack
+			during debugging and set the JVM to restart from that point.
+		</para>
+		<para> This allows you to rerun a part of your program. Be aware that
+			variables which have been modified by code that already run will
+			remain
+			modified.
+		</para>
+
+
+		<para>
+			To use this feature, select a level in your stack and press the
+			<guibutton>Drop
+				to Frame
+			</guibutton>
+			button in the toolbar of the
+			<guilabel>Debug</guilabel>
+			view
+			.
+		</para>
+		<note>
+			<para>
+				Fields and external data may not be affected by the reset.
+				For
+				example if you write a entry to the database and afterward drop to a
+				previous frame, this entry is still in the database.
+			</para>
+		</note>
+		<para>
+			The following screenshot depicts such a reset. If you restart your
+			<code>for</code>
+			loop, the field
+			<code>result</code>
+			is not set to its initial value and therefore the loop is not
+			executed as without resetting the execution to a previous point.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/droptoframe10.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+</section>

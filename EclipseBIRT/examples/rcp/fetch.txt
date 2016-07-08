@@ -1,0 +1,23 @@
+
+count = 0; 
+/*
+ * load and init data reader
+ * import Platform from org.eclipse.core.runtime
+ */
+importPackage(Packages.org.eclipse.core.runtime);
+
+/* load bundle with POJOs and data loading class */
+
+myBundle = Platform.getBundle("de.vogella.birt.stocks");
+
+/* load data reader class */
+readerClass = myBundle.loadClass("de.vogella.birt.stocks.daomock.StockDaoMock");
+
+/* create new instance of DataReader */
+readerInstance = readerClass.newInstance();
+
+
+/* read data */
+stock = readerInstance.getStockValues("Java");
+
+

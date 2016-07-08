@@ -1,0 +1,163 @@
+<section id="startingeclipse" role="wrapper">
+	<title>Eclipse command line configuration</title>
+	<section id="eclipse_memorysettings">
+		<title>Eclipse memory and performance settings</title>
+		<indexterm>
+			<primary>Memory settings for the Eclipse IDE</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Performance optimization for the Eclipse IDE</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Startup configuration</primary>
+			<secondary>Memory
+			</secondary>
+		</indexterm>
+
+		<para>
+			Your Eclipse installation contains a file called
+			<filename>eclipse.ini</filename>
+			which allows you to configure the memory parameters for the
+			Java
+			virtual
+			machine which runs the Eclipse IDE. For
+			example,
+			the
+			<parameter>-Xmx</parameter>
+			parameter can be used to define how large the Java heap size can
+			get.
+			<parameter>-Xms</parameter>
+			defines the initial heap size of the Java virtual machine.
+		</para>
+		<para>
+			The following listing shows an example
+			<filename>eclipse.ini</filename>
+			file. The parameters after -vmargs configure the Java virtual
+			machine.
+			On a modern machine (with at least 8 Gigabyte
+			available memory) assigning 2024 MB or more to
+			the Java
+			virtual
+			machine is a good practice to run Eclipse faster.
+		</para>
+
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/eclipse.ini_memory" />
+			</programlisting>
+		</para>
+		<para>
+			You can in additional also turn of
+			<wordasword>class verification</wordasword>
+			in the JVM. This avoids that the JVM checks if the class data which are loaded is not
+			corrupt or
+			invalid.
+			This check is
+			only
+			really important if
+			byte code in manipulated and adds
+			10-20% additional startup time. To disable this check add
+			the
+			<parameter>-Xverify:none option</parameter>
+			option
+			on your JVM.
+		</para>
+		<note>
+			<para>
+				These options can also be specified per invocation of the Eclipse IDE, e.g., for desktop shortcuts. For example
+				to
+				start Eclipse with 2GB of memory, use the following command line:
+				<code>./eclipse -vmargs -Xmx2024m</code>
+				.
+			</para>
+		</note>
+
+	</section>
+	<section id="workspace_parameter">
+		<title>Eclipse startup parameters</title>
+		<indexterm>
+			<primary>Launch parameter</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Startup configuration</primary>
+		</indexterm>
+		<para>
+			Eclipse allows you to configure it via
+			startup
+			parameters. This
+			requires that you start Eclipse from the
+			command
+			line or that you
+			configure your launcher links to include these
+			parameters.
+		</para>
+		<para>
+			The following table shows important parameters.
+
+			<table frame='all'>
+				<title>Workspace startup parameters</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Parameter</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								-data workspace_path
+							</entry>
+							<entry>Predefine the Eclipse workspace</entry>
+						</row>
+						<row>
+							<entry>
+								-showLocation
+							</entry>
+							<entry>Enables the display of the
+								current
+								workspace
+								directory in the
+								header of the running IDE
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+		<para>
+			For example, if you want to start Eclipse under Microsoft
+			Windows
+			using
+			the
+			<filename>c:\temp</filename>
+			directory as
+			<wordasword>workspace</wordasword>
+			,
+			you can start Eclipse via the following command
+			from the
+			command line.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/workspace.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			Depending on your platform, you may have to put the path name
+			into
+			double quotes.
+		</para>
+		<note>
+			<para>
+				You find all available runtime options in the
+				<ulink url="http://help.eclipse.org/">Eclipse help</ulink>
+				if you search for the "Eclipse runtime options" term.
+			</para>
+		</note>
+	</section>
+</section>

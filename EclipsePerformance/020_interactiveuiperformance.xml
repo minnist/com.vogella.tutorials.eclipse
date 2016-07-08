@@ -1,0 +1,31 @@
+<section id="performance_interactiveuiperformance">
+	<title>Monitoring the interactive UI performance</title>
+	<para>
+		The Eclipse Mars release includes an interactive UI
+		performance measurement feature. If activate a stack trace
+		is written
+		to the
+		<guilabel>Error</guilabel>
+		view.
+	</para>
+	<para>
+		You can activate this tracing via
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Preferences</guisubmenu>
+			<guisubmenu>UI Responsiveness Monitoring</guisubmenu>
+		</menuchoice>
+
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/ui_interactivemonitor.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Monitoring the interactive UI performance
+				</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

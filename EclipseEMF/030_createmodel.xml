@@ -1,0 +1,251 @@
+<section id="createmodel">
+	<title>Example: Define a new EMF models</title>
+	<section id="createmodel_project">
+		<title>Project and initial model creation</title>
+		<para>
+			Create a new project called
+			<wordasword>com.vogella.emf.webpage.model</wordasword>
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Project...</guisubmenu>
+				<guisubmenu>Ecore Modeling Project</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject10.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Enter
+			<filename>webpage.ecore</filename>
+			as the
+			<parameter>Domain File Name</parameter>
+			parameter.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject20.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject30.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			This should open a visual editor for creating EMF models.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject40.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Open the
+			<guilabel>Properties</guilabel>
+			view
+			via the menu
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Properties</guisubmenu>
+			</menuchoice>
+			. This
+			view
+			allows
+			you
+			to modify the attributes of
+			your
+			model elements.
+		</para>
+		<para>
+			Click on
+			<guilabel>Class</guilabel>
+			and click into the editor to create a new
+			class.
+			Create the
+			<code>MyWeb</code>
+			,
+			<code>Webpage</code>
+			,
+			<code>Category</code>
+			and
+			<code>Article</code>
+			EClasses.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject50.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Use the
+			<guilabel>Attribute</guilabel>
+			node to assign the attribute
+			called
+			<parameter>name</parameter>
+			to each object
+			. This attribute should have the
+			<code>EString</code>
+			type.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject60.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			Add the
+			<parameter>title</parameter>
+			,
+			<parameter>description</parameter>
+			and
+			<parameter>keywords</parameter>
+			attributes
+			to the
+			<wordasword>Web</wordasword>
+			and
+			<wordasword>Webpage</wordasword>
+			model elements.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject70.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			We want to use the data type calendar in our model. Select
+			<code>Datatype</code>
+			and drag it into your model.
+			Assign the name
+			<parameter>Calendar</parameter>
+			to it. Use
+			<code>java.util.Calendar</code>
+			as type parameter.
+			Add a new
+			Attribute called
+			<parameter>created</parameter>
+			to
+			<code>Article</code>
+			and use your
+			new type.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject80.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject90.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			Select
+			<guilabel>References</guilabel>
+			and create an arrow similar to the following
+			picture. Make sure the upper bound is set to "-1" (* on the user interface) and that the
+			<property>Containment</property>
+			property is flagged.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject92.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		
+		
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstemfproject94.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+
+	<section id="createmodel_ecore">
+		<title>View Ecore diagram</title>
+		<para>
+			Close the diagram and open the
+			<filename>webpage.ecore</filename>
+			file. The result
+			should look like the following screenshot.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/model96.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+
+
+	<section id="createmodel_package">
+		<title>Set the package</title>
+		<para>
+			Open the
+			<filename>webpage.genmodel</filename>
+			and select the
+			<guilabel>Webpage</guilabel>
+			node. Set the
+			<property>base package</property>
+			property to
+			<parameter>de.vogella.emf.webpage.model</parameter>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/genmodel60.gif" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+
+</section>

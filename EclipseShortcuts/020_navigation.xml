@@ -1,0 +1,176 @@
+
+<section id="shortcuts_navigation">
+	<title>Navigation</title>
+	<indexterm>
+		<primary>Shortcuts</primary>
+		<secondary>Navigation</secondary>
+	</indexterm>
+
+	<section id="shortcuts_navigationgeneral">
+		<title>Globally available navigation shortcuts</title>
+		<para>Eclipse provides shortcuts for opening files or Java artifacts.</para>
+		<para>
+			<table frame='all'>
+				<title>Navigation</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Shortcut</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Ctrl + Shift + R</entry>
+							<entry>Search dialog for resources, e.g., text files</entry>
+						</row>
+						<row>
+							<entry>Ctrl + Shift + T</entry>
+							<entry>Search dialog for Java Types</entry>
+						</row>
+						<row>
+							<entry>Ctrl + E</entry>
+							<entry>Search dialog to select an editor from the currently open
+								editors
+							</entry>
+						</row>
+
+						<row>
+							<entry>Ctrl + F8</entry>
+							<entry>Shortcut for switching perspectives</entry>
+						</row>
+
+
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+
+
+	<section id="shortcuts_navigationeditor">
+		<title>Navigation shortcuts in the editor</title>
+
+		<para>If you are working in the Java editor you can also use certain
+			shortcuts for faster navigation. The following
+			tables lists a few of
+			them.
+		</para>
+		<para>
+			<table frame='all'>
+				<title>Search from an editor</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Shortcut</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+
+						<row>
+							<entry> F3</entry>
+							<entry> Opens editor to selected element (type) or navigate to
+								the declaration of the selected variable
+							</entry>
+						</row>
+						<row>
+							<entry>Ctrl + .</entry>
+							<entry>Go to the next problem / error</entry>
+						</row>
+						<row>
+							<entry>Ctrl + ,</entry>
+							<entry>Go to the previous problem / error</entry>
+						</row>
+						<row>
+							<entry>F4 on a variable</entry>
+							<entry> Show type hierarchy </entry>
+						</row>
+
+
+						<row>
+							<entry>Ctrl + J </entry>
+							<entry>Incremental search without popup dialog, just starting
+								typing to search. Press Ctrl + J to find the next
+								match
+							</entry>
+						</row>
+						<row>
+							<entry>Ctrl + K</entry>
+							<entry>
+								Searches the selected text or if nothing is selected the last
+								search from the
+								<guilabel>Find</guilabel>
+								dialog.
+							</entry>
+						</row>
+
+						<row>
+							<entry>Ctrl + Shift + G</entry>
+							<entry>In the Java editor, s\earch for references in the
+								workspace
+							</entry>
+						</row>
+						<row>
+							<entry>Ctrl + Shift + P</entry>
+							<entry>Select the matching bracket. Cursor needs to be placed
+								before or after a bracket.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+		<para>
+			<table frame='all'>
+				<title>Navigation between editors</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Shortcut</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry> Alt + &#8592;</entry>
+							<entry> Go to previous opened editor. Cursor is placed where it
+								was before you opened the next editor
+							</entry>
+						</row>
+						<row>
+							<entry> Alt + &#8594;</entry>
+							<entry> Similar Alt + &#8592; but opens the next editor</entry>
+						</row>
+						<row>
+							<entry>Ctrl + Q</entry>
+							<entry> Go to editor and the position in this editor where the
+								last edit was done
+							</entry>
+						</row>
+
+						<row>
+							<entry> Ctrl + PageUp </entry>
+							<entry> Switch to previous opened editor</entry>
+						</row>
+						<row>
+							<entry> Ctrl + PageDown </entry>
+							<entry> Switch to next opened editor</entry>
+						</row>
+
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+
+
+	</section>
+
+</section>

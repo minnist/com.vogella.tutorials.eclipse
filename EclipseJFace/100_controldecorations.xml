@@ -1,0 +1,51 @@
+<section id="jface_controldecorations">
+	<title>ControlDecoration</title>
+	<indexterm>
+		<primary>ControlDecoration</primary>
+	</indexterm>
+
+	<indexterm>
+		<primary>JFace</primary>
+		<secondary>ControlDecoration</secondary>
+	</indexterm>
+	<para>
+		The
+		<code>ControlDecoration</code>
+		class allows you to place image decorations on SWT controls to show
+		additional information about the control. These decorations can also
+		have a description text which is displayed once the
+		user places the
+		mouse
+		over them.
+	</para>
+	<para>
+		During the layout of your screen you
+		need to make sure
+		that
+		enough
+		space is
+		available to display these
+		decorations.
+	</para>
+	<para>
+		The following code snippet shows how to create
+		<code>ControlDecoration</code>
+		and how to set a description and an icon to it.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/fieldassists/ControlDecoration.java" />
+		</programlisting>
+	</para>
+	<para>You can hide and show the decoration via the corresponding
+		methods as demonstrated in the following code snippet.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/fieldassists/hide.txt" />
+		</programlisting>
+	</para>
+
+</section>

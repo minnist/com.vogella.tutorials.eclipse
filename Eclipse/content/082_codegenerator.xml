@@ -1,0 +1,97 @@
+<section id="codegenerator">
+	<title>Generating code</title>
+	<indexterm>
+		<primary>Generating code with Eclipse</primary>
+	</indexterm>
+	<para>
+		Eclipse has several possibilities to generate code for you. This
+		can save significant time during development.
+
+	</para>
+	<para>
+		For example, Eclipse can override methods from superclasses and
+		generate the
+		<code>toString()</code>
+		,
+		<code>hashcode()</code>
+		and
+		<code>equals()</code>
+		methods. It
+		can also generate getter and setter methods for attributes
+		of
+		your Java class.
+	</para>
+	<para> You can find these options in the Source menu.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="60" fileref="images/generate10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Code generation</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		To test the source generation, create the following class in your
+		<code>de.vogella.eclipse.ide.first</code>
+		project.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/codegen/Person.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		Select
+		<menuchoice>
+			<guimenu>Source</guimenu>
+			<guisubmenu>Generate Constructor using Fields...</guisubmenu>
+		</menuchoice>
+		, mark both fields and click the
+		<guilabel>OK</guilabel>
+		button.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="60" fileref="images/sourcegenerator10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Generating</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		Select
+		<menuchoice>
+			<guimenu>Source</guimenu>
+			<guisubmenu>Generate Getter and Setter...</guisubmenu>
+		</menuchoice>
+		, select all fields and afterwards click the
+		<guilabel>OK</guilabel>
+		button.
+	</para>
+	<para>
+		Select
+		<menuchoice>
+			<guimenu>Source</guimenu>
+			<guisubmenu>Generate toString()...</guisubmenu>
+		</menuchoice>
+		, mark again all fields and click the
+		<guilabel>OK</guilabel>
+		button.
+
+	</para>
+
+	<para> You created the following class:</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/codegen/Person2.java" />
+		</programlisting>
+	</para>
+
+</section>

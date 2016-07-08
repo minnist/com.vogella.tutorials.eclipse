@@ -1,0 +1,3 @@
+
+// create instance of class
+ContextInjectionFactory.make(MyJavaObject.class, context);

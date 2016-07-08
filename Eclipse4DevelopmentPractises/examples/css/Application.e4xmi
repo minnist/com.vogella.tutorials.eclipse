@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2008/UIModel" xmi:id="org.eclipse.e4.ide.application" id="org.eclipse.e4.ide.application">
+  <children xsi:type="application:Window" xmi:id="_m2gAMSXKEd-_CYGF7uzu5g" id="Window" width="400" height="380">
+    <children xsi:type="application:PartSashContainer" xmi:id="_5WbB4DShEd-GJIPgLgXKaw" id="_5WbB4DShEd-GJIPgLgXKaw" horizontal="true">
+      <children xsi:type="application:PartStack" xmi:id="_-V9zIDSjEd-GJIPgLgXKaw" id="_-V9zIDSjEd-GJIPgLgXKaw">
+        <children xsi:type="application:Part" xmi:id="_KSCOcDSiEd-GJIPgLgXKaw" id="_KSCOcDSiEd-GJIPgLgXKaw" URI="platform:/plugin/de.vogella.e4.rcp.css/de.vogella.e4.rcp.css.parts.View1" label="View1"/>
+        <children xsi:type="application:Part" xmi:id="_KSCOcDSiEd-GJIPgLgXKaw" id="_KSCOcDSiEd-GJIPgLgXKaw" URI="platform:/plugin/de.vogella.e4.rcp.css/de.vogella.e4.rcp.css.parts.View2" label="View2"/>
+      </children>
+    </children>
+    <mainMenu xmi:id="menu:org.eclipse.ui.main.menu" id="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="application:MenuItem" xmi:id="_3vOREzSVEd-GJIPgLgXKaw" id="_3vOREzSVEd-GJIPgLgXKaw" label="File">
+        <children xsi:type="application:DirectMenuItem" xmi:id="de.vogella.e4.rcp.css.handlers.ReSkinnerHandler" id="de.vogella.e4.rcp.css.handlers.ReSkinnerHandler" URI="platform:/plugin/de.vogella.e4.rcp.css/de.vogella.e4.rcp.css.handlers.ReSkinnerHandler" label="Change CSS Style"/>
+        <children xsi:type="application:DirectMenuItem" xmi:id="_nXksIDSgEd-GJIPgLgXKaw" id="_nXksIDSgEd-GJIPgLgXKaw" URI="platform:/plugin/de.vogella.e4.rcp.css/de.vogella.e4.rcp.css.handlers.QuitHandler" label="Exit"/>
+      </children>
+    </mainMenu>
+  </children>
+</application:Application>

@@ -1,0 +1,244 @@
+<section role="wrapper" id="plugin_installation">
+	<title>Updates and installation of plug-ins</title>
+	<section id="updatemanager">
+		<title>Eclipse update manager</title>
+		<indexterm>
+			<primary>Update manager of the Eclipse IDE</primary>
+		</indexterm>
+		<para>
+			The Eclipse IDE contains a software component called
+			<wordasword>Update Manager</wordasword>
+			which allows you
+			to install and
+			update
+			software components. Installable
+			software components are
+			called
+			<code>features</code>
+			and consist of
+			<code>plug-ins</code>
+			.
+		</para>
+
+		<para>
+			These features are contained in so-called
+			<wordasword>update sites</wordasword>
+			or
+			<wordasword>software sites</wordasword>
+			. An
+			<wordasword>update site</wordasword>
+			contains
+			installable software components
+			and additional configuration
+			files. It can be located in various places, e.g., on a web server or
+			on the local filesystem.
+		</para>
+
+		<para>
+			The configuration files
+			provide
+			aggregated information about the
+			software
+			components in the
+			<wordasword>update site</wordasword>
+			.
+			The update functionality in Eclipse uses this
+			information to
+			determine which software components are
+			available in
+			which
+			version. This
+			allows the Eclipse update functionality to download only components
+			which are new or updated.
+		</para>
+
+	</section>
+	<section id="updatemanager_update">
+		<title>Performing an update and install new features</title>
+		<indexterm>
+			<primary>Update manager</primary>
+			<secondary>performing an update
+			</secondary>
+
+		</indexterm>
+		<indexterm>
+			<primary>Update manager</primary>
+			<secondary>install new features
+			</secondary>
+
+		</indexterm>
+		<warning>
+			<para>
+				If you are behind a network proxy, you have to configure your proxy
+				via the
+				<menuchoice>
+					<guimenu>Window</guimenu>
+					<guisubmenu>Preferences</guisubmenu>
+					<guisubmenu>General</guisubmenu>
+					<guisubmenu>Network Connection</guisubmenu>
+				</menuchoice>
+				preference setting. Otherwise, Eclipse may not able to reach the
+				update sites.
+			</para>
+		</warning>
+
+		<para>
+			To update your Eclipse installation, select
+			<menuchoice>
+				<guimenu>Help</guimenu>
+				<guisubmenu>Check for Updates</guisubmenu>
+			</menuchoice>
+			.
+			The system searches for updates of the already installed
+			software
+			components. If it finds updated components, it will ask you
+			to
+			approve
+			the update.
+		</para>
+		<para>
+			To install a new functionality, select
+			<menuchoice>
+				<guimenu>Help</guimenu>
+				<guisubmenu>Install New Software...</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/UpdateManager08.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Selecting an update site in the update manager</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			From the
+			<guilabel>Work with</guilabel>
+			list, select or enter a URL from which you would
+			like
+			to
+			install new
+			software
+			components. Entering a new URL adds this URL automatically
+			to
+			the list of available update sites.
+		</para>
+
+
+		<para>
+			To explicitly add a new update site, press the
+			<guibutton>Add...</guibutton>
+			button
+			and
+			enter
+			the new URL as well
+			as a name for the new update site.
+		</para>
+
+		<para>The following update sites contain the official Eclipse
+			components.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/link/updatesites.txt" />
+			</programlisting>
+		</para>
+		<para>If you select a valid update site, Eclipse allows you to
+			install
+			the available components. Check the components which you want
+			to
+			install.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/UpdateManager10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Selecting an update site in the update manager</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			If you can't find a certain component, uncheck the
+			<guilabel>Group
+				items
+				by category
+			</guilabel>
+			checkbox because
+			not all
+			available plug-ins are categorized. If they
+			are not
+			categorized, they
+			will not be displayed, unless the grouping
+			is
+			disabled.
+		</para>
+	</section>
+
+	<section id="updatemanager_installedcomponents">
+		<title>See the installed components</title>
+		<indexterm>
+			<primary>Update manager</primary>
+			<secondary>see installed components
+			</secondary>
+
+		</indexterm>
+		<para>
+			To see which components are installed, use
+			<menuchoice>
+				<guimenu>Help</guimenu>
+				<guisubmenu>About Eclipse SDK</guisubmenu>
+				<guisubmenu>Installation Details</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse_installationdetails10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Installation details of Eclipse</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+
+
+	<section id="uninstall_plugins">
+		<title>Uninstalling components</title>
+		<indexterm>
+			<primary>Update manager</primary>
+			<secondary>uninstall components
+			</secondary>
+		</indexterm>
+		<para>
+			If you select
+			<menuchoice>
+				<guimenu>Help</guimenu>
+				<guisubmenu>About Eclipse SDK</guisubmenu>
+			</menuchoice>
+			and then the
+			<guibutton>Installation Details</guibutton>
+			button, you can uninstall components from your Eclipse IDE.
+		</para>
+	</section>
+	<section id="restart">
+		<title>Restarting Eclipse</title>
+
+		<para> After an update or an installation of a new software component,
+			you should restart Eclipse to make sure that the changes are
+			applied.
+		</para>
+	</section>
+</section>

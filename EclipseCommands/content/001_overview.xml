@@ -1,0 +1,58 @@
+<section id="commandsextensionpoints">
+	<title>Introduction to commands</title>
+	<para>Eclipse IDE extensions use the commands framework to
+		contribute
+		actions to the user interface. This concept is based on
+		extension
+		points.
+	</para>
+	<para>
+		This description explains the usage of commands in Eclipse IDE
+		extensions. To define and use a command you have to define three
+		extensions.
+		The following extension points are relevant to define a
+		menu
+		or toolbar
+		contribution for an Eclipse plug-in.
+		<table frame='all'>
+			<title></title>
+
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' />
+				<colspec colname='c2' />
+				<thead>
+					<row>
+						<entry>Extension Point</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>org.eclipse.ui.command</entry>
+						<entry>Declarative description of the
+							component
+						</entry>
+					</row>
+					<row>
+						<entry>org.eclipse.ui.handlers</entry>
+						<entry> Defines the behavior, e.g., the Java class which should be
+							called
+						</entry>
+					</row>
+					<row>
+						<entry>org.eclipse.ui.menu</entry>
+						<entry>Where and how should the command be
+							included
+							in the user
+							interface, e.g., menu, popup menu, toolbar, etc.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</para>
+
+
+
+
+</section>

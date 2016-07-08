@@ -1,0 +1,131 @@
+<section id="databindingexecution" role="wrapper">
+	<title>Create bindings</title>
+	<section id="databinding_isideeffect">
+		<title>Using the ISideEffect API </title>
+
+		<para>
+			Eclipse 4.6 introduces the
+			<code>ISideEffect</code>
+			databinding API. It allows you to run code whenever one or more
+			observables change. An ISideEffect is a lot like a
+			listener except
+			that it doesn't need to be attached to anything. Instead, it reacts
+			automatically to changes in the
+			tracked properties.
+		</para>
+		<para>
+
+			For example, the
+			following code updates the label with the value of the user name every time the user name
+			changes.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/sideeffect/example.txt" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			ISideEffects can react to changes in multiple observables, and will
+			avoid performing excessive updates,
+			if the
+			observables fire many change events in a short period of time.
+		</para>
+		<para>
+			You can use the ISideEffectFactory to create several ISideEffect instances that share the same life cycle.
+			For
+			example, all ISideEffect instances that are created by the ISideEffectFactory obtained from the
+			WidgetSideEffects#createFactory(Widget disposableWidget) method are automatically disposed once the corresponding
+			widget is disposed.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/sideeffect/Reuse.txt" />
+			</programlisting>
+		</para>
+
+
+	</section>
+	<section id="databinding_contexte">
+		<title>Connecting properties with the DataBindingContext</title>
+		<indexterm>
+			<primary>DataBindingContext</primary>
+		</indexterm>
+		<para>
+			The
+			<code>DataBindingContext</code>
+			class
+			provides the functionality to connect
+			<code>IObservableValue</code>
+			objects.
+		</para>
+
+		<para>
+			Via the
+			<code>DataBindingContext.bindValue()</code>
+			method two
+			<code>IObservableValue</code>
+			objects are connected. The first parameter is the target and the
+			second is the
+			model. During the initial binding the
+			value from the
+			model
+			is copied to the target. The initial copying from model to target is useful for the
+			initial
+			synchronization. For example if you have an
+			attribute of a
+			<code>Person</code>
+			p
+			object and the text attribute of a
+			<code>Text</code>
+			txtName widget, you typically want to copy the value from p to
+			txtName at the beginning.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/dbc.java" />
+			</programlisting>
+		</para>
+		<para>
+			You can also observe nested model properties, e.g.,
+			attributes of classes which are contained in another class.
+			The
+			following code
+			demonstrates how to access the
+			<property>country</property>
+			property in the
+			<property>address</property>
+			field of the object
+			<property>person</property>
+			.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/nested.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="databinding_properties">
+		<title>Observing map properties</title>
+
+		<para>
+			You can also observe entries of a map via an
+			<code>IObservableMap</code>
+			with the
+			<code>Observables.observeMapEntry()</code>
+			method. This allows you to control the point in time when you want to update or use the values from the map.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/snippets/ObservableMapEntry.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,50 @@
+<section id="javacode">
+	<section id="javacode_save">
+		<title>Example</title>
+		<para>
+			The following is based on the EMF model created in
+			<ulink url="http://www.vogella.com/tutorials/EclipseEMF/article.html"> EMF Tutorial</ulink>
+			 which we are going to persists. Create a new plug-in project "de.vogella.emf.webpage.instance".
+			Add
+			the following dependency to your
+			<filename>plugin.xml</filename>.
+		</para>
+		<para>
+			<itemizedlist>
+				<listitem>org.eclipse.emf.ecore</listitem>
+				<listitem>org.eclipse.emf.ecore.xmi</listitem>
+
+			</itemizedlist>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/CreateSaveTester.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="javacode_load">
+		<title>Load an existing model</title>
+		<para>
+			The following code can be used to load an existing model.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/EMFModelLoad.java" />
+			</programlisting>
+		</para>
+		<para>
+			You can then access the model content via standard Java
+			coding.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/LoadTest.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

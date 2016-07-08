@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<articleinfo>
+		<title>Eclipse framework and model events - Tutorial</title>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<author>
+            <firstname>Lars</firstname>
+            <surname>Vogel</surname>
+        </author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>04.08.2015</pubdate>
+		<releaseinfo>
+			<emphasis>Version 0.2</emphasis>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse application model events</title>
+			<para>
+				This article describes how you can react on changes of the application model.
+			</para>
+		</abstract>
+	</articleinfo>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_examplepartactivation.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_event_information.xml"/>
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_more_convenience_methods.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_exercise_perspective_switch.xml"/>
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml"/>
+	<?dbhtml-include href="../../web/vgwort/Eclipse4ModelEvents"?>
+</article>

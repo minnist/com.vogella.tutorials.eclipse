@@ -1,0 +1,1 @@
+mvn clean verify -DbuildId=foobar -Pupdate-branding-plugins

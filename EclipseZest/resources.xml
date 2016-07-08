@@ -1,0 +1,25 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_jdt">
+		<title>Eclipse Zest Resources</title>
+		<para>
+			<ulink url="http://www.eclipse.org/gef/zest/">
+				Eclipse Zest Homepage</ulink>
+			
+		</para>
+		<para>
+			<ulink url="http://wiki.eclipse.org/index.php/GEF_Zest_Visualization">
+				Eclipse Zest Wiki</ulink>
+			
+		</para>
+
+		<para>
+			<ulink url="http://www.eclipse.org/gef/zest/snippets.php">
+				Eclipse Zest Snippets</ulink>
+			
+		</para>
+
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

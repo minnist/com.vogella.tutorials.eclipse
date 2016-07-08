@@ -1,0 +1,246 @@
+<section id="ownobjects" role="wrapper">
+	<title>Extending the objects available for the dependency injection
+	</title>
+	<section id="ownobjects_overview">
+		<title>Creating and injecting custom objects</title>
+
+		<para>
+			Using dependency injection for your custom objects has two
+			flavors.
+			<orderedlist>
+				<listitem>
+					<para>
+						You
+						want
+						to create objects which declare their
+						dependencies with
+						<code>@Inject</code>
+						based on a an
+						<code>IEclipseContext</code>
+						context. See
+						<xref linkend="customobjects_cif" />
+						for details.
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>
+						You want the Eclipse dependency container to create
+						your
+						custom
+						objects automatically on demand and then get them
+						injected
+						into
+						your
+						model
+						objects. See
+						<xref linkend="ownobjects_difrom" />
+						and
+						<xref linkend="ownobjects_singletons" />
+						.
+					</para>
+				</listitem>
+
+			</orderedlist>
+
+
+		</para>
+	</section>
+
+	<section id="customobjects_cif">
+		<title>Using dependency injection to create objects</title>
+		<indexterm>
+			<primary>Dependency injection</primary>
+			<secondary>Create objects with the Eclipse DI framework</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Dependency injection</primary>
+			<secondary>ContextInjectionFactory</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>ContextInjectionFactory</primary>
+		</indexterm>
+		<indexterm>
+			<primary>CIF</primary>
+		</indexterm>
+
+		<para>
+			Using dependency injection is not limited to the objects created by
+			the
+			Eclipse runtime. You can use the same approach
+			to create an instance of a given class based on a given
+			<code>IEclipseContext</code>
+			. The given class can contain
+			@Inject annotations.
+			For this you use the
+			<code>ContextInjectionFactory</code>
+			class as demonstrated in the following code example.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/injectown.txt" />
+			</programlisting>
+		</para>
+		<para>
+			The
+			<code>ContextInjectionFactory.make()</code>
+			method creates the object. You can also put it into the
+			<code>IEclipseContext</code>
+			hierarchy
+			after the creation. If you place it into the
+			<code>IEclipseContext</code>
+			of the application, the created object is globally available.
+		</para>
+
+		<para>
+			For this you can either use an existing
+			<code>IEclipseContext</code>
+			or create a new
+			<code>IEclipseContext</code>
+			.
+			The new context object can be connected to the context hierarchy.
+			Using a new context might be preferable to
+			avoid
+			collision of keys and
+			to
+			isolate your changes in a local
+			context. Call the
+			<code>dispose</code>
+			method on your local context, if the object is not needed anymore.
+		</para>
+
+		<para>
+			The following code demonstrates how to create a new
+			<code>IEclipseContext</code>
+			object and to place values into it. This context can be used to
+			create a new object.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/createContext.txt" />
+			</programlisting>
+		</para>
+
+		<para>
+			The next code example demonstrates how you can connect your new
+			<code>IEclipseContext</code>
+			object with an existing context hierarchy. The factory searches
+			the
+			hierarchy upwards to find values, requested by the
+			class which is
+			instantiated.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/createContext2.txt" />
+			</programlisting>
+		</para>
+		<para>
+			The
+			<code>ContextInjectionFactory.inject(Object, IEclipseContext)</code>
+			method allows you to perform injection on an existing object. For
+			example, if you created the object with the
+			<code>new()</code>
+			operator, you can
+			still run dependency injection on it.
+		</para>
+	</section>
+	<section id="ownobjects_difrom">
+		<title>Create your custom objects automatically with @Creatable
+		</title>
+		<indexterm>
+			<primary>@Creatable</primary>
+		</indexterm>
+		<para>
+			If you want the Eclipse framework to create your custom objects
+			for
+			you,
+			annotate them with
+			<code>@Creatable</code>
+			. This way you are telling the Eclipse DI container that it should
+			create
+			a new instance of this object if it does not
+			find an instance
+			in the
+			context. The automatically-generated instance is not stored in
+			the context.
+		</para>
+		<para>
+			If you have a non default-constructor, you must use
+			the
+			<code>@Inject</code>
+			annotation
+			on the constructor to indicate that Eclipse should try to
+			run
+			dependency injection on it.
+		</para>
+		<para>For example, assume that you have the following domain model.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/Dependent.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/YourObject.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			As the Eclipse framework is allowed to create instances of the
+			<code>Dependent</code>
+			and the
+			<code>YourObject</code>
+			class, it can create them if an instance is requested via
+			dependency
+			injection. In this example the arguments of the
+			constructors can be
+			satisfied.
+			If no fitting constructor is found, the
+			Eclipse framework
+			throws
+			an
+			exception.
+		</para>
+		<para>
+			Assuming that you have defined the
+			<code>ITodoService</code>
+			OSGi
+			service in your application, you
+			can get an instance of your
+			<code>YourObject</code>
+			class injected into a part. The following example code demonstrates
+			that.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/di_own/usage.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="ownobjects_singletons">
+		<title>Create automatically objects in the application context with @Singleton</title>
+		<indexterm>
+			<primary>@Singleton</primary>
+		</indexterm>
+		<para>
+			If the object should be created in the application context, use the
+			<code>@Singleton</code>
+			annotation in addition to the
+			<code>@Creatable</code>
+			annotation. This ensures that only one instance of the object is
+			created in your application.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/di_own/YourObjectSingleton.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

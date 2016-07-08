@@ -1,0 +1,89 @@
+<section id="runtimeeclipse" role="wrapper">
+	<title>Starting an Eclipse instance (Runtime Eclipse)</title>
+	<section id="runtimeeclipse_introduction">
+		<title>Starting the Eclipse IDE from Eclipse</title>
+		<indexterm>
+			<primary>Runtime Eclipse IDE
+			</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Starting the IDE from the Eclipse IDE
+			</primary>
+		</indexterm>
+
+		<para>
+			During the development of plug-ins targeting the Eclipse IDE you frequently have
+			to
+			deploy your plug-ins into a
+			new Eclipse
+			IDE
+			instance to test your
+			development.
+		</para>
+		<para>
+			As this is a very common requirement, it is possible to start an instance of the Eclipse IDE
+			from another Eclipse IDE
+			instance. This is sometimes called a
+			<wordasword>runtime Eclipse IDE</wordasword>
+			. For this you specify the set of plug-ins which should be included in the Eclispe instance via a run
+			Configuration.
+
+
+		</para>
+	</section>
+	<section id="runtimeeclipse_starting">
+		<title>Starting a new Eclipse instance</title>
+		<para>
+			The easiest way to create a run configuration for an Eclipse IDE is by selecting
+			<menuchoice>
+				<guimenu>Run As</guimenu>
+				<guisubmenu>Eclipse Application</guisubmenu>
+			</menuchoice>
+			from the context menu of an
+			existing plug-in or your manifest file. By default, this takes all
+			the plug-ins from the
+			workspace
+			and
+			the
+			target environment, and start
+			an
+			Eclipse IDE
+			instance with these plug-ins. If a plug-in is available in
+			the workspace and the target environment, the one from the workspace is used.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipseideplugin70.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="runtimeeclipse_debug">
+		<title>Debugging the Eclipse instance</title>
+		<para>
+			You can debug the Eclipse IDE itself.
+			Put a breakpoint in a line of the
+			source code
+			which
+			you want to
+			inspect, right-click
+			your
+			plug-in and select
+			<menuchoice>
+				<guimenu>Debug As</guimenu>
+				<guisubmenu>Eclipse Application</guisubmenu>
+			</menuchoice>
+			. This creates a run configuration if it does not already exist.
+		</para>
+
+		<para>
+			When the flow will reach a statement marked with a breakpoint, the execution stops, and you are able to
+			debug the
+			related statement, and to inspect the current data.
+		</para>
+	</section>
+
+</section>

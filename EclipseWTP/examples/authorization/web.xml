@@ -1,0 +1,48 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>JSPTest01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--  Security -->
+  
+    <security-constraint>
+      <display-name>Websheet Security-Constraint</display-name>
+      <web-resource-collection>
+        <web-resource-name>User-Constraint</web-resource-name>
+        <url-pattern>*.jsp</url-pattern>
+        <url-pattern>*.action</url-pattern>
+        <url-pattern>*.html</url-pattern>
+      </web-resource-collection>
+      <auth-constraint>
+        <role-name>admin</role-name>
+      </auth-constraint>
+    </security-constraint>
+  
+    <login-config>
+      <auth-method>FORM</auth-method>
+      <realm-name>Websheet User-Realm</realm-name>
+      <form-login-config>
+        <form-login-page>/LoginView.jsp</form-login-page>
+        <form-error-page>/LoginErrorView.jsp</form-error-page>
+      </form-login-config>
+    </login-config>
+  
+  <servlet>
+    <description></description>
+    <display-name>basecontroller</display-name>
+    <servlet-name>basecontroller</servlet-name>
+    <servlet-class>controller.basecontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>basecontroller</servlet-name>
+    <url-pattern>/basecontroller</url-pattern>
+  </servlet-mapping>
+</web-app>

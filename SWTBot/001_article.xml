@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>SWTBot for testing Eclipse Applications - Tutorial
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>05.08.2015</pubdate>
+		<releaseinfo>
+			Version 2.5
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>SWTBot
+			 This tutorial describes how to use SWTBot to test Eclipse RCP
+				applications. Within this tutorial Eclipse 4.5 (Mars) is used.
+			
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./020_installation.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./040_usage.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./042_usage3x.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./050_waitoperations.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./060_pitfalls.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./200_example.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./200_example3x.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./300_screenshot.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/SWTBot"?>
+</article>

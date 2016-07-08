@@ -1,0 +1,54 @@
+<section id="usingswt">
+	<title>Using SWT in Java projects</title>
+	<indexterm>
+		<primary>SWT</primary>
+		<secondary>In standard Java projects</secondary>
+	</indexterm>
+
+	
+		SWT is not restricted to Eclipse RCP applications. To use it in normal
+		Java programs you have to add the
+		<filename>JAR</filename>
+		files, which contain the SWT
+		implementation for the corresponding OS,
+		to the classpath of your Java
+		application.
+	
+	
+		To use
+		SWT
+		in stand-alone applications,
+		you need to have the
+		SWT
+		library available. There are
+		several ways of doing this. You can
+		either
+		download the
+		SWT
+		library or create an Eclipse plug-in project and define
+		a dependency
+		in this project.
+	
+	
+		Download the
+		SWT
+		library
+		from the following URL:
+	
+
+	
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/links/SWT.txt" />
+		</programlisting>
+	
+
+	
+		This ZIP file contains a
+		<filename>swt.jar</filename>
+		file which you need to add to the
+		<wordasword>classpath</wordasword>
+		of your SWT
+		project.
+	
+</section>

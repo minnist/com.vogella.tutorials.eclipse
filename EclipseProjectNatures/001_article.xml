@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<articleinfo>
+		<title>Eclipse Project Natures - Tutorial</title>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>20.04.2015</pubdate>
+		<releaseinfo>
+			<emphasis>Version 0.1</emphasis>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Project Natures</title>
+			<para>
+				This article describes how product natures can be implemented and what can be done with a custom project nature.
+			</para>
+		</abstract>
+	</articleinfo>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_define_project_nature.xml"/>
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_exercise_nature_set.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_project_nature_image.xml"/>
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_project_nature_propertypages.xml"/>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="060_exercise_project_nature_propertypages.xml"/>
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml"/>
+	<?dbhtml-include href="../../web/vgwort/EclipseProjectNatures"?>
+</article>

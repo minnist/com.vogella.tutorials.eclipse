@@ -1,0 +1,18 @@
+= SWT - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Simon Scholz, (c) 2016 vogella GmbH
+Version 0.1, 13.06.2016
+
+[abstract]
+This tutorial describes SWT the user interface toolkit used by the Eclipse framework.
+				
+include::010_overview.adoc[]
+
+include::008_resourceslocal.adoc[]
+
+
+

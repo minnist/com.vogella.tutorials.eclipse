@@ -1,0 +1,37 @@
+<section id="tutorial_api" role="wrapper">
+	<title>Exercise: Using @PostConstruct</title>
+	<section id="tutorial_api1">
+		<title>Implement an @PostConstruct method</title>
+		<para>
+			Add the following method to your
+			<code>TodoOverviewPart</code>
+			,
+			<code>TodoDetailsPart</code>
+			and
+			<code>PlaygroundPart</code>
+			classes. In case you created constructors for these classes you can
+			remove them.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/snippets/methods.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="tutorial_api2">
+		<title>Validating</title>
+		<para>
+			Run your application and validate that the
+			<code>@PostConstruct</code>
+			method
+			is
+			called. If this does not work, see
+			<xref linkend="postconstructmethodnotcalled" />
+			for a solution.
+		</para>
+	</section>
+
+
+</section>

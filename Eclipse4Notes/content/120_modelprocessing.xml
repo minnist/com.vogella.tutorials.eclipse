@@ -1,0 +1,10 @@
+<section id="model">
+	<title>Model processing</title>
+	<para>
+		The
+		<code>ModelAssembler</code> class
+		processes the model fragments and processors in its methods.
+	</para>
+
+
+</section>

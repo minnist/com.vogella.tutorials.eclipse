@@ -1,0 +1,375 @@
+<section id="jfacetable_advanced" role="wrapper">
+	<title>JFace Table Features</title>
+	<section id="jfacetable_editor">
+		<title>Column editing support</title>
+		<para>
+			To make a column in a table
+			editable, you need an object
+			of type
+			<code>EditingSupport</code>.
+		</para>
+		<para>
+			The following code shows an example of an
+			<code>EditingSupport</code>
+			implementation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/editing/FirstNameEditingSupport.java" />
+			</programlisting>
+		</para>
+		<para>
+			The
+			<code>EditingSupport</code>
+			implementation defines how the content can be changed.
+			The
+			<code>getCellEditor()</code>
+			method
+			returns an object of type
+			<code>CellEditor</code>.
+			This object
+			creates the controls to change the data.
+		</para>
+		<para>
+			The
+			<code>canEdit()</code>
+			method defines if the cell can be edited. The
+			<code>getValue()</code>
+			method receives the current object and returns the
+			value which should
+			be
+			edited.
+		</para>
+		<para>
+			The method
+			<code>setValue()</code>
+			in
+			<code>EditingSupport</code>
+			receives the changed value based on the user input. In this method
+			you assign the
+			value to your data object.
+		</para>
+		<para>
+			JFace provides the following default implementations for cell
+			editors:
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>TextCellEditor</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>ColorCellEditor</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>CheckboxCellEditor</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>DialogCellEditor</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>ComboBoxViewerCellEditor</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+		<para>
+			You can assign the instance of
+			<code>EditingSupport</code>
+			to your
+			<code>TableColumn</code>
+			via the
+			<code>setEditingSupport()</code>
+			method
+			of your
+			<code>TableViewerColumn</code>
+			object.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/Editing.java" />
+			</programlisting>
+		</para>
+		<para>
+			From an application design perspective, editing within a table
+			can be
+			cumbersome for the user. If the end user has to edit a lot of
+			data,
+			you should also offer a dialog, wizard or
+			part
+			to edit the data.
+		</para>
+	</section>
+
+	<section id="jfacetable_filter">
+		<title>Filtering data</title>
+		<para>
+			A JFace viewer supports filtering of data via the
+			<code>setFilters()</code>
+			or
+			<code>addFilter()</code>
+			methods. These methods expect
+			<code>ViewerFilter</code>
+			objects
+			as arguments.
+		</para>
+		<para>
+			For each registered
+			<code>ViewerFilter</code>
+			object
+			the
+			<code>select()</code>
+			method is called. The method returns
+			<code>true</code>
+			if the data should be shown and
+			<code>false</code>
+			if it should be filtered.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/filter/PersonFilter.java" />
+			</programlisting>
+		</para>
+		<para>
+			All filters are checked
+			whenever the input of the
+			viewer
+			changes, or
+			whenever its
+			<code>refresh()</code>
+			method is called.
+		</para>
+		<para>
+			If more than one filter is defined for a
+			viewer,
+			all filters must
+			return <code>true</code>
+			to display the
+			data.
+		</para>
+	</section>
+
+	<section id="jfacetable_comparator">
+		<title>Sorting data with ViewerComparator</title>
+		<para>
+			JFace supports sorting of the viewer content via the
+			<code>setComparator()</code>
+			method on the viewer object. This method expects a
+			<code>ViewerComparator</code>
+			object. By default, it will sort based on the
+			<code>toString()</code>
+			method of the objects in the viewer.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/compare.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="jfacetable_tablecolumnlayout">
+		<title>TableColumnLayout</title>
+		<para>
+			With the
+			<code>TableColumnLayout</code>
+			class you can define the width of the columns in the table. This can
+			be done based on a fixed or percentage value.
+		</para>
+		<para>
+			Using
+			<code>TableColumnLayout</code>
+			requires a
+			<code>Composite</code>
+			which only contains the table widget. This
+			<code>Composite</code>
+			gets the
+			<code>TableColumnLayout</code>
+			assigned.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/layout/LayoutSetup.java" />
+			</programlisting>
+		</para>
+		<para>
+			The
+			<code>TableColumnLayout</code>
+			requires that you define a fixed or relative size for all columns.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/layout/LayoutColumn.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="jfacetable_styledlabelprovider">
+		<title>StyledCellLabelProvider and OwnerDrawLabelProvider</title>
+		<para>
+			It is possible to use a
+			<code>StyledCellLabelProvider</code>
+			for a very flexible styling of your text.
+			<code>StyledCellLabelProvider</code>
+			extends
+			<code>CellLabelProvider</code>
+			and allows you to style the text which is displayed in the cell.
+		</para>
+		<para>
+			The following example shows how to use a
+			<code>StyledCellLabelProvider</code>.
+			In this example a portion of a pre-defined text is highlighted.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/style.java" />
+			</programlisting>
+		</para>
+		<para>
+			As a result the number "15" will be highlighted as depicted in
+			the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/styledcelllabelprovider10.png"
+						scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Screenshot of a styledLabelProvider</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The
+			<code>OwnerDrawLabelProvider</code>
+			class is a label provider that handles custom draws.
+		</para>
+		<para>
+			The following example draws a text and an
+			image into the cell.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/OwnerDrawLabelProvider.java" />
+			</programlisting>
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ownerdrawviewer10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>OwnerDrawLabelProvider example</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="jfacetable_hideshow">
+		<title>Table column menu and hiding columns</title>
+		<para>
+			You can add a
+			menu
+			to your table. This
+			menu can get a menu entry
+			for each column. This allow you to add arbitrary popup actions to
+			your columns.
+		</para>
+		<para>
+			You can use it, for example, to hide and show
+			columns based on
+			the
+			width
+			setting as demonstrated in the following code snippet.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/showhide/View.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="jfacetable_tooltips">
+		<title>Tooltips for viewers</title>
+		<para>
+			You can
+			use tooltips for the cells of the
+			viewer. To achieve this,
+			you have to activate the tooltips for a viewer.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/tooltips/activate.java" />
+			</programlisting>
+		</para>
+		<para>
+			In your
+			<code>CellLabelProvider</code>
+			you specify the related methods for displaying the tooltip.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/tooltips/CellEditor.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="jfacetable_lazycontentprovider">
+		<title>Virtual tables with LazyContentProvider</title>
+		<para>
+			If you have a huge number of lines which you want to display in the
+			table, you can use a
+			<code>LazyContentProvider</code>.
+			This provider allows you to fetch the data when they are needed
+			instead of loading everything into memory. As a result of the lazy
+			loading you gain a better memory footprint and improve the
+			performance for a large set of data. The
+			following code demonstrates
+			its usage.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/lazycontent/ContentProvider.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/lazycontent/Lazy.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="jfacetable_alternativeimplementations">
+		<title>Alternative table implementations</title>
+		<para>
+			It is possible to use other table implementations. Most notable is
+			the
+			<ulink url="http://www.eclipse.org/nattable/">NatTable</ulink>
+			implementation which is a flexible and powerful framework for
+			creating tables, grids and trees that show great performance for a
+			huge number of rows and columns.
+		</para>
+	</section>
+</section>

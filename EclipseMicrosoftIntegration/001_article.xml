@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Microsoft and Java Integration with Eclipse - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007 - 2009</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>04.05.2009</pubdate>
+		<releaseinfo>
+			<para>Version 0.5</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Eclipse Microsoft Integration</title>
+			<para> This article will demonstrate how Eclipse SWT can be used to
+				integrate / use Microsoft applications. Eclipse is using the SWT GUI
+				framework. SWT does allow to integrated Microsoft application via
+				OLE (Object Linking and Embedding).Microsoft Outlook, Microsoft
+				Excel and the File explorer are used as examples. The examples used
+				are based on Eclipse RCP as this makes it easy to demonstrate the
+				usage but work also with stand-alone Java application (which are
+				using SWT).</para>
+			<para> This article assumes that you are already familiar with using
+				the Eclipse IDE and with developing simple Eclipse RCP applications.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_microsoftole.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_oleoutlook.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/030_oleexcel.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_oleexplorer.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EclipseMicrosoftIntegration"?>
+</article>

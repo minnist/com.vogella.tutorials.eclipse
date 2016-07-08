@@ -58,7 +58,7 @@ Press the Finish button. In order to test if everything worked well you can fetc
 		
 		
 			Even if there is no new commit in the remote repository, the fetch command dcreates the branch
-			<emphasis>github/master</emphasis>
+			_github/master_
 			which points to the same commit as the master branch at the remote tracking branch. This is a so-called
 			remote-tracking-branch.
 		
@@ -94,7 +94,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 		<title>Push to remote
 		
 			Select
-			<emphasis>Push to Upstream</emphasis>
+			_Push to Upstream_
 			in the Git Repositories view or
 			<menuchoice>
 				<guimenu>Team</guimenu>

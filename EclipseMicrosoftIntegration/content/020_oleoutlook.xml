@@ -1,0 +1,46 @@
+<section id="oleoutlook">
+	<title>Microsoft Outlook with Eclipse</title>
+	<para> This example assumes you running an MS operating system and that
+		you have a version of Outlook installed.</para>
+	<section id="oleoutlook_project">
+		<title>Create Project</title>
+		<para>
+			Create a new project "de.vogella.microsoft.outlook". See
+			<ulink
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
+			> Eclipse RCP</ulink>
+			for details. Use the "Hello RCP " as a template.
+		</para>
+	</section>
+	<section id="oleoutlook_command">
+		<title>Create a command</title>
+		<para>
+			Using extensions create the command
+			"de.vogella.microsoft.outlook.sendEmail" and add it to the menu. See
+			<ulink
+				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#commands"
+			> Eclipse command</ulink>
+			for details. Program the default handler
+			"de.vogella.microsoft.outlook.handler.SendEmail"
+		</para>
+		<para>The following code creates and opens the email for the
+			user. It also assumes that you have a file c:\temp\test.txt which
+			will be attached to the email.</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/outlook/SendEmail.java" />
+			</programlisting>
+		</para>
+		<para> If you now start the application and press the button an email
+			should be prepared and shown to the user.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/outlook20.gif" />
+					
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

@@ -1,0 +1,55 @@
+<section id="exercise_debug" role="wrapper">
+	<title>Exercise: Create Project for debugging</title>
+	<section id="exercise_debug1">
+		<title>Create Project</title>
+		<para>
+			To practice debugging create a new Java project called
+			<code>de.vogella.combug.first</code>
+			. Also create
+			the package
+			<code>de.vogella.combug.first</code>
+			and create
+			the following classes.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/first/Counter.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/first/Main.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="exercise_debug2">
+		<title>Debugging</title>
+		<para>
+			Set a breakpoint in the
+			<code>Counter</code>
+			class. Debug your program and follow the execution of the
+			<code>count</code>
+			method.
+		</para>
+		<para>
+			Define a
+			<wordasword>Detailed Formatter</wordasword>
+			for your
+			<code>Counter</code>
+			which uses the
+			<code>getResult</code>
+			method. Debug your program again and verify that your new formatter
+			is used.
+		</para>
+		<para>Delete your breakpoint and add a breakpoint for class loading.
+			Debug your program again and verify that the debugger stops when your
+			class is loaded.
+		</para>
+
+	</section>
+</section>

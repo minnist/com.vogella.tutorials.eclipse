@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_iQb6kH3bEd-B7cg7aErIEA" elementId="org.eclipse.e4.ide.application"
+xmlns:extension="http://www.vogella.com/ui/e4/extension" >
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_iQb6oX3bEd-B7cg7aErIEA" label="de.vogella.e4.renderer.maps" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_iQb6qX3bEd-B7cg7aErIEA">
+      <children xsi:type="advanced:Perspective" xmi:id="_iQb6qn3bEd-B7cg7aErIEA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_iQb6q33bEd-B7cg7aErIEA">
+          <children xsi:type="basic:PartStack" xmi:id="_iQb6rH3bEd-B7cg7aErIEA">
+          	<!-- First Part -->
+						<children xsi:type="extension:GoogleMapContainer" xmi:id="_2P4QMGjBEd-aouR9UfDgRw"
+							elementId="partID" label="My Part">													
+							<children xsi:type="extension:GoogleMap" label="my Map"></children>
+						</children>
+						
+
+		  </children>
+        </children>
+      </children>
+    </children>
+  </children>
+
+  <rootContext xmi:id="_iQb6kX3bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_iQb6kn3bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_iQb6k33bEd-B7cg7aErIEA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <bindingContexts>org.eclipse.ui.contexts.dialogAndWindow</bindingContexts>
+</application:Application>

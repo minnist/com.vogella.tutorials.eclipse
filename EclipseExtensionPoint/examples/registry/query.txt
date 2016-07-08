@@ -1,0 +1,4 @@
+// The following will read all existing extensions 
+// for the defined ID
+Platform.getExtensionRegistry().
+	getConfigurationElementsFor("yourextension");

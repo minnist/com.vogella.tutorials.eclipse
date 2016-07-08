@@ -1,0 +1,119 @@
+<section id="e4-modularity-xpath">
+	<title>XPaths in model fragments</title>
+	<para>XPaths can also be used to define the contributing place in the model for a model fragment. The following table
+		gives several examples how you can use XPath to define the model element you want to extend.
+	</para>
+	<table frame='all'>
+		<title>Sample XPaths for the Application Model</title>
+		<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+			<colspec colname='c1' colwidth="40%" />
+			<colspec colname='c2' colwidth="60%" />
+			<thead>
+				<row>
+					<entry>XPath</entry>
+					<entry>Element in Application Model</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry>/</entry>
+					<entry>The slash (/) always addresses the root element of an XML
+						file, which always is the MApplication element.
+					</entry>
+				</row>
+				<row>
+					<entry>//mainMenu</entry>
+					<entry>Contribute to the main menu.</entry>
+				</row>
+				<row>
+					<entry>//mainMenu/children or //mainMenu/*[1]
+					</entry>
+					<entry>
+						Contribute to the first child of the main menu. In most
+						application this would be the
+						<guimenu>File</guimenu>
+						menu.
+					</entry>
+				</row>
+				<row>
+					<entry>//mainMenu/*[@*[local-name()='type' and .='menu:Menu']]
+					</entry>
+					<entry>
+						<para>
+							Contribute to the first Menu of the main menu. This xpath is more
+							detailed than the one above since it also
+							requires that the main
+							menu child is of type
+							<parameter>menu:Menu</parameter>
+							.
+						</para>
+						<para>
+							In most
+							application this would be the
+							<guimenu>File</guimenu>
+							menu.
+						</para>
+					</entry>
+				</row>
+				<row>
+					<entry>//trimBars[@side="Bottom"]</entry>
+					<entry>Contribute to the bottom trimbar.</entry>
+				</row>
+				<row>
+					<entry>//trimBars[not(@side)]</entry>
+					<entry>
+						Contribute to the top trimbar. When the
+						<code>MTrimBar</code>
+						is on top
+						the side
+						attribute is omitted, therefore
+						<code>not(@side)</code>
+						is used.
+					</entry>
+				</row>
+				<row>
+					<entry>//children[@*[local-name()='type' and .='basic:Part']]
+					</entry>
+					<entry>
+						Contribute to a
+						<code>MPart</code>
+						.
+					</entry>
+				</row>
+				<row>
+					<entry>//children[@*[local-name()='type' and
+						.='basic:Part']][./tags = 'Editor']
+					</entry>
+					<entry>
+						Contribute to a
+						<code>MPart</code>
+						which is tagged with the
+						<parameter>Editor</parameter>
+						tag.
+					</entry>
+				</row>
+			</tbody>
+		</tgroup>
+	</table>
+	<para>
+		From these examples more useful XPaths for navigating the
+		Application Model can be derived.
+	</para>
+	<para>
+		A nice tool for evaluating XPaths is the
+		<ulink url="https://marketplace.eclipse.org/content/eclipse-xpath-evaluation-plugin">Eclipse XPath
+			evaluation plug-in.
+		</ulink>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/eclipse-xpath-plugin.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Eclipse XPath plugin in the marketplace</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

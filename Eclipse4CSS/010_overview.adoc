@@ -9,11 +9,11 @@ CSS selectors used in Eclipse are identifiers, which relate to widgets or other 
 Non-standard properties are prefixed with either `swt-` or `eclipse-`.
 		
 The following example shows a CSS file which defines a styling for an Eclipse application.
-		
-		
-<programlisting>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/css/default.css" />
-</programlisting>
+
+[source,css]
+----
+include::res/css/default.css[]
+----
 		
 
 SWT has certain limitations concerning component styling. 

@@ -1,0 +1,6 @@
+
+Bundle bundle = FrameworkUtil.getBundle(this.getClass());
+// use the org.eclipse.core.runtime.Path as import
+URL url = FileLocator.find(bundle, 
+	new Path("icons/alt_window_32.gif"), null);
+ImageDescriptor imageDescriptor = ImageDescriptor.createFromURL(url);

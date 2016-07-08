@@ -1,0 +1,3 @@
+
+Label label = new Label(parenet, SWT.NONE);
+label.setData("org.eclipse.e4.ui.css.id","MyCSSTagForLabel");

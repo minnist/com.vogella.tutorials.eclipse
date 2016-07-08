@@ -1,0 +1,19 @@
+<section id="dialogs">
+	<title>Dialogs in Eclipse</title>
+	<indexterm>
+		<primary>Dialog</primary>
+	</indexterm>
+	<para>
+		Eclipse allows you to use
+		<wordasword>dialogs</wordasword>
+		to prompt the user for additional information or provide
+		the
+		user
+		with
+		feedback. The Eclipse platform offers several standard
+		dialogs via
+		SWT
+		and
+		JFace.
+	</para>
+</section>

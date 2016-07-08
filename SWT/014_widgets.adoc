@@ -1,0 +1,240 @@
+<section id="widgets" role="wrapper">
+	<title>SWT Widgets</title>
+	<section id="swt_widgets">
+		<title>Available widgets in the SWT library</title>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Widgets</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Widgets (SWT)</primary>
+		</indexterm>
+		
+			SWT
+			widgets are located in the packages
+			<code>org.eclipse.swt.widgets</code>
+			and
+			<code>org.eclipse.swt.custom</code>
+			. Widgets extend either the
+			<code>Widget</code>
+			or the
+			<code>Control</code>
+			class. Several of these widgets are depicted in the following
+			graphic. This graphic is a screenshot of the
+			<ulink url="http://www.eclipse.org/swt/widgets/">SWT widget homepage</ulink>
+			.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/swtwidgetoverview10.png"
+						scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Overview of the SWT widgets</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			While SWT tries to use native widgets as much as possible, it can not
+			fulfill all common requirements with the native widgets.
+
+			Therefore
+			some
+			widgets extend the capabilities
+			of the native platform.
+			These are
+			part of
+			the
+			<code>org.eclipse.swt.custom</code>
+			package
+			and usually start with the additional prefix
+			<code>C</code>
+			to
+			indicate that they
+			are custom
+			widgets, e.g.
+			<code>CCombo</code>
+			.
+		
+		
+			Compared to the
+			<code>Combo</code>
+			class, the
+			<code>CCombo</code>
+			class
+			provides
+			the ability to set the height of the widget.
+		
+		
+			Another
+			example is
+			<code>StyledText</code>
+			, a class which provides
+			advanced features for displaying
+			text, e.g.
+			drawing a background.
+		
+
+		
+			Widgets from the package
+			<code>org.eclipse.swt.custom</code>
+			are
+			implemented in pure Java while widgets from
+			<code>org.eclipse.swt.widgets</code>
+			use native code. Custom widgets are not supposed to use
+			the
+			internal
+			classes of
+			SWT
+			as these classes may be different on
+			the various
+			platforms.
+			Every custom
+			widget must extend the
+			<code>Composite</code>
+			or
+			<code>Canvas</code>
+			class.
+			API compliance is
+			guaranteed only for these base classes.
+		
+
+		
+			If the new
+			custom
+			widget is supposed to contain other widgets, it
+			should extend
+			<code>Composite</code>
+			.
+			Otherwise it should extend the
+			<code>Canvas</code>
+			class.
+		
+		In this $book the words "widget" and
+			"control" are used
+			interchangeable for user interface elements.
+		
+	</section>
+
+	<section id="widets_memory">
+		<title>Memory management</title>
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Memory management</secondary>
+		</indexterm>
+		
+			SWT widgets are not automatically garbage collected. If you release
+			an
+			SWT
+			widget, you have to call its
+			<code>dispose()</code>
+			method. Fortunately if a container is disposed, e.g., a
+			<code>Shell</code>
+			, this container also releases all its children.
+		
+		
+			The automatic release does not work for Color, Cursor, Display,
+			Font,
+			GC, Image, Printer, Region, Widget and subclasses. All of these
+			SWT
+			objects need to be manually disposed. JFace provides a simplification
+			for this via its
+			<code>LocalResourceManager</code>
+			.
+		
+	</section>
+	<section id="widets_creation">
+		<title>Constructing widgets</title>
+		
+			SWT
+			widgets, except the
+			<code>Shell</code>
+			object,
+			are always constructed with a parent widget which
+			contains
+			them. This
+			is similar to AWT and different to Swing, where the
+			<code>add()</code>
+			method is used.
+
+		
+		
+			The second parameter of the widget constructor contains the
+			<wordasword>stylebits</wordasword>
+			.
+			Depending on
+			the
+			provided
+			stylebits the widget
+			adjusts its look
+			and feel
+			as well as its
+			behavior.
+			Each widget documents the supported stylebits
+			in its Javadoc.
+		
+		
+
+			The possible stylebits are predefined in the
+			<code>SWT</code>
+			class.
+			If no
+			special style is required you can pass
+			<code>SWT.NONE</code>
+			.
+		
+		 For example the following code snippet creates a push button.
+		
+
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/start/push.txt" />
+			</programlisting>
+		
+		 The following example creates a checkbox button. The only
+			difference is the usage of another stylebit.
+		
+		
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/start/check.txt" />
+			</programlisting>
+		
+	</section>
+
+	<section id="widets_composites">
+		<title>Basic containers</title>
+
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Composite (SWT)</secondary>
+		</indexterm>
+
+		<indexterm>
+			<primary>SWT</primary>
+			<secondary>Group</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Composite</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Group (SWT)</primary>
+		</indexterm>
+		
+			The
+			<code>Composite</code>
+			class
+			is a container which is capable
+			of containing other widgets.
+
+			The
+			<code>Group</code>
+			class
+			is another container which is able to contain other widgets but
+			it additionally draws a border around itself and allows you to set a
+			header for the grouped widgets.
+		
+	</section>
+</section>

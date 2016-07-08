@@ -1,0 +1,22 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<para>
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Tutorial about Eclipse plug-in development</ulink>
+	</para>
+	<para>
+		<ulink url="https://wiki.eclipse.org/Platform_UI/How_to_Contribute">Eclipse Wike - How to contribute to platform</ulink>
+	</para>
+	<para>
+		<ulink
+			url="https://wiki.eclipse.org/Platform_UI/How_to_Contribute#Setting_up_your_SDK">Eclipse SDK setup</ulink>
+	</para>
+	<para>
+		<ulink
+			url="https://wiki.eclipse.org/Eclipse/API_Central/Deprecation_Policy">Eclipse API deprecation policy</ulink>
+	</para>
+	<para>
+		<ulink
+			url="https://wiki.eclipse.org/Platform_UI/Testing">Eclipse Platform testing</ulink>
+	</para>
+</section>	

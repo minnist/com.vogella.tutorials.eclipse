@@ -1,0 +1,92 @@
+<section id="tutorial_installation" role="wrapper">
+	<title>Install the e4 tools</title>
+	<section id="tutorial_installation_e4tools">
+		<title>Install the e4 tools</title>
+		<indexterm>
+			<primary>Installation</primary>
+			<secondary>e4 tools</secondary>
+		</indexterm>
+		<para>The e4 tools
+			provide the tools to develop
+			Eclipse 4 RCP
+			applications.
+			These
+			tools provide
+			wizards
+			to
+			create
+			Eclipse
+			application artifacts and an
+			application model
+			editor. They can be installed into the Eclipse SDK via the Eclipse
+			default update
+			site.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/installe4tools10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Install the Eclipse 4 tooling</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Install the tools and
+			restart your
+			Eclipse IDE after the
+			installation.
+		</para>
+
+	</section>
+
+	<section id="tutorial_installation_e4spiesofficial">
+		<title>Install the e4 spies from Eclipse.org</title>
+		<para>
+			You can use the following URL to install the latest tools:
+		</para>
+		<para><code>http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest/</code></para>
+		<para>
+			Other versions of the tools can can be
+			found on the
+			<ulink url="http://download.eclipse.org/e4/downloads/">Eclipse.org e4tools site</ulink>
+			.
+			If you click on a
+			<guilabel>Build Name</guilabel>
+			link,
+			you also find the URL for the update site. The following
+			screenshots
+			demonstrate this for a particular build of
+			the e4 tools. Note, that this website might change over time.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/officialupdatesite10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Official update site for e4 tools part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/officialupdatesite20.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Official update site for e4 tools part 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+	
+
+</section>

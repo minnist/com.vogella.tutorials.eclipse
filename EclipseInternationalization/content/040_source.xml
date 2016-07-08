@@ -1,0 +1,175 @@
+<section id="i18n_source" role="wrapper">
+	<title>Source code translation with NLS support</title>
+	<indexterm>
+		<primary>i18n</primary>
+		<secondary>Source code</secondary>
+	</indexterm>
+
+	<section id="i18n_outdated">
+		<title>NLS compared to the Eclipse translation service</title>
+		<warning>
+			<para>
+				This part of the description is included for completeness. It describes the NLS approach for translation. This
+				approach
+				still
+				works
+				but the Eclipse translation
+				mechanism provides
+				more flexibility, e.g., dynamic switching of
+				languages, less
+				memory
+				consumption and a translation service which can be exchanged. This
+				superior
+				approach is
+				described
+				in
+				<xref linkend="eclipse4_i18n1" />
+				.
+			</para>
+		</warning>
+
+
+	</section>
+	<section id="i18n_sourcecustom">
+		<title>Translating your custom code</title>
+		<para>
+			It is possible to translate the Java source with two different
+			approaches, based on Strings and based on constants.
+			The approach
+			based on constants is more reliable and should be preferred. To
+			enable
+			this support you need to configure
+			the
+			<code>org.eclipse.core.runtime</code>
+			plug-in as dependency in your related plug-in.
+		</para>
+		<para>
+			To translate Strings in the source code, select the file you want to
+			translate and
+			select
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Externalize Strings</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/i22n_source10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>Externalizing strings in source files dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Please note that the
+			<guilabel>Use Eclipse's string externalization mechanism</guilabel>
+			option is only visible if you have the
+			<code>org.eclipse.core.runtime</code>
+			plug-in configured as a dependency in your plug-in.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/i22n_source10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Externizing strings in source files dialog</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			In this wizard you
+			can select which Strings should be translated, which should be skipped and
+			which should be
+			marked
+			as not translatable.
+		</para>
+		<para>
+			If you select that a String should not be translated, Eclipse
+			marks
+			the occurrence with a
+			<code>$NON-NLS</code>
+			comment in the source code.
+		</para>
+		<para>
+			As the result a
+			<code>Messages</code>
+			class is generated which serves as an access point for the properties
+			file.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/Messages.java" />
+			</programlisting>
+		</para>
+		<para>
+			In this example the
+			<code>Messages</code>
+			class uses a constant called
+			<code>BUNDLE_NAME</code>
+			to point to the
+			<filename>message*.properties</filename>
+			file in the
+			<code>test</code>
+			package. * is a placeholder for your locale, e.g., _de,_en,
+			etc.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/messages.properties" />
+			</programlisting>
+		</para>
+		<para>
+			In your code you access the translations via the
+			<code>Message</code>
+			class.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/using.txt" />
+			</programlisting>
+		</para>
+		<para>
+			You can also use placeholders in the messages and evaluate them with
+			the
+			<code>NLS.bind()</code>
+			method.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place1.txt" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place2.txt" />
+			</programlisting>
+		</para>
+
+		<para> If translations should be used over several plug-ins to ensure consistency,
+			it is good practice to create separate
+			plug-ins or
+			fragments
+			for the
+			translations. All plug-ins which want to use the translations define
+			a
+			dependency to
+			the
+			corresponding
+			plug-in.
+		</para>
+		<para>
+			Additional languages are typically contributed via Eclipse
+			fragment
+			projects to this message plug-in.
+		</para>
+	</section>
+
+</section>

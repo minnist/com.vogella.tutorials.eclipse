@@ -1,0 +1,181 @@
+<section id="applicationmodel">
+	<title>Contributing to the application model</title>
+
+	<section id="contribute_fragment">
+		<title>Model fragments</title>
+		<indexterm>
+			<primary>Application model</primary>
+			<secondary>Fragments</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Model fragments</primary>
+		</indexterm>
+		<para>
+			A model
+			<wordasword>fragment</wordasword>
+			is a file which typically ends with the
+			<filename>.e4xmi</filename>
+			extension. It statically specifies model elements and the location in
+			the application model
+			to which it should be
+			contributed.
+		</para>
+		<para> For example a
+			fragment
+			can define that
+			it extends a
+			certain menu
+			with additional menu
+			entries.
+		</para>
+		<para>The e4 tools project provides a wizard and an editor for model
+			fragments.
+		</para>
+		<tip>
+			<para>
+				The application model editor also allows you to extract a subtree
+				into a new or existing fragment. Select a model
+				element, right click
+				on it and select
+				<guilabel>Extract into a fragment</guilabel>
+				from the context menu.
+			</para>
+		</tip>
+	</section>
+
+	<section id="contribute_processors">
+		<title>Model processors</title>
+		<indexterm>
+			<primary>Application model</primary>
+			<secondary>Processors</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Model processor</primary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>processor</wordasword>
+			allows you to contribute to the model via program code. This enables
+			the dynamic creation of model
+			elements during the
+			start of the
+			application.
+		</para>
+	</section>
+
+	<section id="applicationmodel_position">
+		<title>Position of new model elements</title>
+		<para>
+			Fragments define the desired position of new model
+			elements
+			via the
+			<parameter>Position in List</parameter>
+			attribute. The following values are allowed:
+		</para>
+		<table frame='all'>
+			<title>Position in list</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="1*" />
+				<colspec colname='c2' colwidth="2*" />
+				<thead>
+					<row>
+						<entry>Value</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>
+							<parameter>first</parameter>
+						</entry>
+						<entry>Positions the element on the beginning of the list.</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>index:theIndex</parameter>
+						</entry>
+						<entry>
+							Places the new model elements at position
+							<parameter>theIndex</parameter>
+							. Example:
+							<parameter>index:0</parameter>
+
+						</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>before:theOtherElementsId</parameter>
+						</entry>
+						<entry>
+							Places the new model elements before the model element with the
+							ID
+							<parameter>theOtherElementsId</parameter>
+							.
+						</entry>
+					</row>
+					<row>
+						<entry>
+							<parameter>after:theotherelementsid</parameter>
+						</entry>
+						<entry>
+							Places the new model elements after the model element with the
+							ID
+							<parameter>theotherelementsid</parameter>
+							.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		<para>
+			fragments
+			of independent plug-ins
+			are processed in arbitrary order by
+			the
+			Eclipse runtime,
+			therefore
+			<parameter>first</parameter>
+			or
+			<parameter>index</parameter>
+			might not always result in the desired outcome.
+		</para>
+	</section>
+
+
+	<section id="applicationmodel_contributingtoids">
+		<title>Usage of IDs</title>
+		<para>If you want to contribute to an element of the application model
+			you must
+			specify the ID of the element to
+			which
+			you are
+			contributing.
+		</para>
+		<tip>
+			<para>In general it is good practice to always specify unique IDs in
+				your
+				application model. If not you may experience
+				strange application
+				behavior.
+			</para>
+		</tip>
+	</section>
+
+	<section id="applicationmodel_eclipse3">
+		<title>Comparison with Eclipse 3.x</title>
+		<para>The programming model of Eclipse 3.x primarily uses extension
+			points to define
+			contributions to the application.
+			These extensions
+			define new
+			parts, new menus,
+			etc. This approach is no longer used
+			in
+			Eclipse 4 RCP
+			applications. All
+			contributions are made via fragments or
+			processors.
+		</para>
+	</section>
+
+</section>

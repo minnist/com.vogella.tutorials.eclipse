@@ -1,0 +1,539 @@
+<section id="plugin_creatinge4" role="wrapper">
+	<title>Exercise: From plug-in to Eclipse 4 application</title>
+	<section id="plugin_creatinge4_target">
+		<title>Target</title>
+		<para>
+			In this chapter you convert the
+			generated plug-in into an
+			Eclipse
+			RCP
+			application.
+		</para>
+	</section>
+	<section id="plugin_creatinge4_productproject">
+		<title>Create a project to host the product configuration file</title>
+		<para>
+			Create a new project called
+			<wordasword>com.example.e4.rcp.todo.product</wordasword>
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Others...</guisubmenu>
+				<guisubmenu>General</guisubmenu>
+				<guisubmenu>Project</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/productproject10.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/productproject12.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="plugin_creatinge4_product">
+		<title>Create a product configuration file</title>
+
+		<para>
+			Right-click on this project and select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Product Configuration</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Create a product configuration file called
+			<filename>todo.product</filename>
+			inside the
+			<filename>com.example.e4.rcp.todo.product</filename>
+			folder.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product20.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press the
+			<guilabel>Finish</guilabel>
+			button. The file is created and opened in an editor.
+		</para>
+
+		<para>
+			Press the
+			<guilabel>New...</guilabel>
+			button on the
+			<guilabel>Overview</guilabel>
+			tab of the
+			product
+			editor.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product28.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Press the new button in the product editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+
+			Enter
+			<wordasword>to-do</wordasword>
+			as the
+			<guilabel>Product Name</guilabel>
+			, your plug-in as the
+			<guilabel>Defining Plug-in</guilabel>
+			,
+			<wordasword>product</wordasword>
+			as the
+			<guilabel>Product ID</guilabel>
+			and select
+			<code>org.eclipse.e4.ui.workbench.swt.E4Application</code>
+			in the
+			<guilabel>Application</guilabel>
+			combo box.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Entering the product details</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="plugin_startlevels">
+		<title>Configure the start levels</title>
+		<indexterm>
+			<primary>Start level in a product
+			</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Product Configuration
+			</primary>
+			<secondary>Start Level
+			</secondary>
+		</indexterm>
+		<para>
+			Switch to the
+			<guilabel>Configuration</guilabel>
+			tab in the product editor and press the
+			<guilabel>Add Recommended...</guilabel>
+			button. These settings are for example used by the
+			Maven/Tycho build system,hence it
+			is good practice to configure
+			them.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/rcpproductstartlevel10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Setting the default start level</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="plugin_feature">
+		<title>Create a feature project</title>
+		<para>
+			Create a new
+			feature project called
+			<wordasword>com.example.e4.rcp.todo.feature</wordasword>
+			via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Feature Project</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			You can press the
+			<guilabel>Finish</guilabel>
+			button
+			on the first wizard page.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product31.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Feature project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Afterwards select the
+			<guilabel>Plug-ins</guilabel>
+			tab in the editor of the
+			<filename>feature.xml</filename>
+			file. Press the
+			<guilabel>Add...</guilabel>
+			button and
+			include the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in into this feature.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product34.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Feature project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<warning>
+			<para>
+				Ensure you have added the plug-in on the
+				<guilabel>Included Plug-ins</guilabel>
+				tab to include it into your feature. Using the
+				<guilabel>Dependencies</guilabel>
+				tab is wrong for this exercise.
+			</para>
+		</warning>
+	</section>
+
+	<section id="plugin_dependencies">
+		<title>Enter the feature as content into the product</title>
+		<para>
+			Open your
+			<filename>todo.product</filename>
+			product file and change your product configuration file to use
+			features.
+		</para>
+		<para>
+			For this select the
+			<guilabel>features</guilabel>
+			option
+			on the
+			<guilabel>Overview</guilabel>
+			tab of the product editor.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_productfeature10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Switching to feature on the product configuration file</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Select the
+			<guilabel>Contents</guilabel>
+			tab
+			and add the following features via the
+			<guibutton>Add...</guibutton>
+			button.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>com.example.e4.rcp.todo.feature</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.rcp</code>
+					</para>
+				</listitem>
+
+				<listitem>
+					<para>
+						<code>org.eclipse.emf.ecore</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.emf.common</code>
+					</para>
+				</listitem>
+
+			</itemizedlist>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_productfeature21.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding the required features to your product</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<note>
+			<para>If you cannot add one of the listed features to
+				your
+				product,
+				ensure
+				that you have
+				changed your product to be based
+				on
+				features.
+			</para>
+		</note>
+	</section>
+	<section id="plugin_versiondependencies">
+		<title>Remove the version dependency from the features in the product
+		</title>
+		<para>
+			To avoid problems with different versions of the
+			<code>org.eclipse.e4.rcp</code>
+			feature, delete the version number from your product.
+			You can
+			do this
+			via
+			the
+			<guilabel>Properties...</guilabel>
+			button on the
+			<guilabel>Contents</guilabel>
+			tab of the product configuration editor.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_productfeature26.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Remove version number</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_productfeature28.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Remove version number</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>If other features have a version dependency, also remove these. The result should look similar to the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/e4_productfeature30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Remove version number via the Properties button</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="plugin_creatinge4_e4xmi">
+		<title>Create an application model</title>
+		<para>
+			Select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>New</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Eclipse 4</guisubmenu>
+				<guisubmenu> Model</guisubmenu>
+				<guisubmenu>New Application Model</guisubmenu>
+			</menuchoice>
+			to open a wizard to create an application model
+			file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product48.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Enter your
+			<code>com.example.e4.rcp.todo</code>
+			application plug-in
+			as the container and use the file name
+			suggested by
+			the
+			wizard.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product50.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Press the
+			<guilabel>Finish</guilabel>
+			button. This triggers the creation of the
+			<filename>Application.e4xmi</filename>
+			file inside the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in and opens it.
+		</para>
+	</section>
+	<section id="plugin_creatinge4_modelelements">
+		<title>Add a window to the application model</title>
+		<para>
+			Add one
+			window
+			to your application model so you have a visual
+			component.
+		</para>
+		<para>
+
+			Right-click on the
+			<wordasword>Windows and Dialogs</wordasword>
+			node, and select
+			<code>Trimmed Window</code>
+			as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_product80.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a trimmed window</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Enter an ID, the position and size of the window and a label as
+			shown in
+			the
+			screenshot below.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_product90.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Enter the data for the TrimmedWindow in the model editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<tip>
+			<para>
+				If you start and close your application the last state of the
+				application is persisted by the framework and restored
+				the next
+				time
+				you start this application. This is
+				undesired during
+				development, as
+				the latest state from the
+				application
+				model file should be
+				used.
+				In
+				<xref linkend="tutorial_clearpesistence_task" />
+				you configure your product to remove all the persisted changes from
+				the last run.
+			</para>
+		</tip>
+	</section>
+
+
+	<section id="plugin_creatinge4_start">
+		<title>Start the application</title>
+		<para>
+			Open the product file and select the
+			<guilabel>Overview</guilabel>
+			tab. Press
+			the
+			<guilabel>Launch an Eclipse application</guilabel>
+			hyperlink in the
+			<guilabel>Testing</guilabel>
+			section.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/training_product40.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Starting the product</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Validate that your application starts. You should see an empty
+			window, which can be moved, resized,
+			minimized,
+			maximized and
+			closed.
+		</para>
+	</section>
+
+</section>

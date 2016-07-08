@@ -1,0 +1,11 @@
+<section id="resources_osgi">
+	<title>Eclipse tracing and performance tools resources</title>
+	<para>
+		<ulink
+			url="https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-eclipse-tracing-api">Enable tracing in your custom plug-in</ulink>
+	</para>
+	<para>
+		<ulink
+			url="https://github.com/ANCIT/eclipse-spykit">Eclipse Spykit</ulink>
+	</para>
+</section>

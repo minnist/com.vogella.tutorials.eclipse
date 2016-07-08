@@ -1,0 +1,88 @@
+<section id="performance_sleak">
+	<title>Eclipse Sleak</title>
+
+	<para>
+		<wordasword>Eclipse Sleak</wordasword>
+		monitors the creation and disposal of SWT graphics
+		resources. Get it from the
+		<ulink
+			url="http://www.eclipse.org/swt/tools.php">
+			SWT Development Tools</ulink>
+		or install the Eclipse Plugin via the
+		<ulink
+			url="http://www.eclipse.org/swt/updatesite.php">
+			SWT Tools Update Sites</ulink>
+		.
+	</para>
+
+	<para>
+		To
+		activate
+		Sleak, you can use the
+		<guilabel>Tracing</guilabel>
+		tab in your Eclipse runtime configuration.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sleaktrace10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase></phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/sleaktrace20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase></phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		Alternatively you can also activate it for your Eclipse IDE. For
+		this
+		you have to start Eclipse with the
+		<parameter>-debug</parameter>
+		option from the command
+		line. You also need to create a
+		<filename>.options</filename>
+		file in the Eclipse installation directory with the following entries.
+	</para>
+	<para>
+		<programlisting language="text">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/sleak/options.txt" />
+		</programlisting>
+	</para>
+
+	<para>
+		If you start your Eclipse IDE, you find the
+		<guilabel>Sleak</guilabel>
+		view
+		under
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Show View</guisubmenu>
+			<guisubmenu>Other ...</guisubmenu>
+			<guisubmenu>SWT Tools</guisubmenu>
+			<guisubmenu>Sleak</guisubmenu>
+		</menuchoice>
+		.`
+	</para>
+
+	<para>
+		<wordasword>Sleak</wordasword>
+		allows you to take a snapshot and create a diff. Clicking on
+		<guilabel>Stacktrace</guilabel>
+		gives you the stacktrace in which the resource was allocated.
+	</para>
+
+
+</section>

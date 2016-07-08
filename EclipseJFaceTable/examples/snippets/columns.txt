@@ -1,0 +1,35 @@
+// create a column for the first name
+TableViewerColumn colFirstName = new TableViewerColumn(viewer, SWT.NONE);
+colFirstName.getColumn().setWidth(200);
+colFirstName.getColumn().setText("Firstname");
+colFirstName.setLabelProvider(new ColumnLabelProvider() {
+	@Override
+	public String getText(Object element) {
+		Person p = (Person) element;
+		return p.getFirstName();
+	}
+});
+
+// create more text columns if required...
+
+// create column for married property of Person
+// uses getImage() method instead of getText()
+// CHECKED and UNCHECK are fields of type Image
+
+TableViewerColumn colMarried = new TableViewerColumn(viewer, SWT.NONE);
+colMarried.getColumn().setWidth(200);
+colMarried.getColumn().setText("Married");
+colMarried.setLabelProvider(new ColumnLabelProvider() {
+@Override
+public String getText(Object element) {
+  return null;  // no string representation, we only want to display the image
+}
+
+@Override
+public Image getImage(Object element) {
+	if (((Person) element).isMarried()) {
+		return CHECKED;
+	} 
+	return UNCHECKED;
+	}
+});

@@ -1,0 +1,20 @@
+<extension
+    point="org.eclipse.debug.ui.launchShortcuts">
+    <shortcut
+        class="com.examole.launcher.LaunchShortcut"
+        icon="icons/vogella.png"
+        id="com.example.sample.shortcut"
+        label="Sample Shortcut"
+        modes="run, debug">
+        <contextualLaunch>
+            <enablement>
+                <with
+                    variable="selection">
+                    <count
+                        value="+">
+                    </count>
+                </with>
+            </enablement>
+        </contextualLaunch>
+    </shortcut>
+</extension>

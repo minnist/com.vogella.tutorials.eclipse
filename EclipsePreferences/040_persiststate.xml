@@ -1,10 +1,10 @@
 
-	<title>Persistence of part state
+== Persistence of part state
 
 
 	
 		Eclipse provides the
-		<code>@PersistState</code>
+		`@PersistState`
 		annotation. This annotation can be applied to a method in a class
 		referred to a part.
 	
@@ -19,7 +19,7 @@
 		stored information can be used in the
 		method
 		annotated with the
-		<code>@PostConstruct</code>
+		`@PostConstruct`
 		annotation. A typical use case for such a method would be to store the
 		state of
 		a checkbox.

@@ -1,6 +1,6 @@
 
-	<title>Commands
-[[commands_overview">
+== Commands
+
 === What are commands?
 		
 			A command in Eclipse is a declarative description of a
@@ -26,11 +26,11 @@
 		
 	
 
-[[commands_process">
+
 === Relevant Extension Points for Commands
 		
 			To define a command you create an extension to the
-			<code>org.eclipse.ui.command</code>
+			`org.eclipse.ui.command`
 			extension point.
 		
 		

@@ -1,19 +1,11 @@
 
-	<title>Eclipse projects responsible for the Java IDE
-[[eclipseplatform_contributions1">
+== Eclipse projects responsible for the Java IDE
+
 === The Eclipse project
-		<indexterm>
-			<primary>Eclipse SDK</primary>
-		</indexterm>
-		<indexterm>
-			<primary>SDK</primary>
-		</indexterm>
-		<indexterm>
-			<primary>JDT</primary>
-		</indexterm>
-		<indexterm>
-			<primary>PDE</primary>
-		</indexterm>
+		
+		
+		
+		
 		
 			The Eclipse IDE is an open source (OS) project. Eclipse.org
 			hosts
@@ -56,7 +48,7 @@
 			ground for new ideas.
 		
 	
-[[eclipseplatform_contributions_subprojects">
+
 === The Eclipse platform projects home pages and Git repositories
 		
 			The following table lists the home pages of these projects along with the developer pages, which list the Git (and

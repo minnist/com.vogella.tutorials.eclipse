@@ -1,14 +1,12 @@
 
-	<title>View, popup and dynamic menus
-[[menuadvanced_views">
+== View, popup and dynamic menus
+
 === View menus
 		<indexterm>
 			<primary>Menu</primary>
 			<secondary>View / Part</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>View menu</primary>
-		</indexterm>
+		
 		
 			You can define one menu in a
 			part
@@ -28,22 +26,17 @@
 			model entry to it.
 		
 		
-image::viewmenu10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a View menu,pdfwidth=60%]
+image::viewmenu10.png" scale="35[Adding a View menu,pdfwidth=60%]
 		
 	
 
-[[menuadvanced_popup">
+
 === Popup menu (context menu)
 		<indexterm>
 			<primary>Menu</primary>
 			<secondary>Popup</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Popup menu</primary>
-		</indexterm>
+		
 		
 			You can also define a popup menu for
 			SWT
@@ -56,34 +49,28 @@ image::viewmenu10.png" scale="35" />
 		
 
 		
-image::popupmenu10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Defining a popupmenu in the application model,pdfwidth=60%]
+image::popupmenu10.png" scale="35[Defining a popupmenu in the application model,pdfwidth=60%]
 		
 		
 			The popup menu contains entries, as, for example, a
 			HandledMenuItem.
 		
 		
-image::popupmenu20.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>ID for the popupmenu,pdfwidth=60%]
+image::popupmenu20.png" scale="35[ID for the popupmenu,pdfwidth=60%]
 		
 		
 			After this the pop menu can be assigned to an SWT control with the
-			<code>EMenuService</code>
+			`EMenuService`
 			service which can be accessed via dependency injection.
 			This class
 			provides the
-			<code>registerContextMenu(control, id)</code>
+			`registerContextMenu(control, id)`
 			method for this purpose.
 			The
 			<parameter>id</parameter>
 			parameter
 			of the
-			<code>registerContextMenu</code>
+			`registerContextMenu`
 			method
 			must be the ID attribute
 			of your
@@ -105,30 +92,26 @@ image::popupmenu20.png" scale="35" />
 		
 			If you want to implement this example, your plug-in must have
 			dependencies defined for the
-			<code>org.eclipse.e4.ui.workbench.swt</code>
+			`org.eclipse.e4.ui.workbench.swt`
 			,
 			the
-			<code>org.eclipse.e4.ui.services</code>
+			`org.eclipse.e4.ui.services`
 			and the
-			<code>org.eclipse.e4.ui.model.workbench</code>
+			`org.eclipse.e4.ui.model.workbench`
 			plug-ins in its
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
 
-[[menuadvanced_dynamic">
+
 === Dynamic menu and toolbar entries
 		<indexterm>
 			<primary>Menu</primary>
 			<secondary>Dynamic</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>@AboutToShow</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@AboutToHide</primary>
-		</indexterm>
+		
+		
 
 
 		
@@ -141,12 +124,12 @@ image::popupmenu20.png" scale="35" />
 			class in which you annotate a method
 			with
 			the
-			<code>@AboutToShow</code>
+			`@AboutToShow`
 			annotation. The annotated method is called if the
 			user selects the
 			user interface element.
 			The
-			<code>@AboutToHide</code>
+			`@AboutToHide`
 			annotation can be used to annotate a method which is
 			called before the
 			menu is hidden.

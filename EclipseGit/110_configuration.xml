@@ -1,7 +1,7 @@
 
-	<title>How to configure the usage of Git in Eclipse
+== How to configure the usage of Git in Eclipse
 
-[[egitconfiguration_interoperability">
+
 === Interoperability of Git command line settings with the Eclipse IDE
 		
 			The Git functionality in the Eclipse IDE uses the same
@@ -15,7 +15,7 @@
 			for details.
 		
 	
-[[egitconfiguration_settings">
+
 === Git user settings in Eclipse
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -39,7 +39,7 @@
 
 		
 			You can add entries to your Git configuration by pressing the
-			<guibutton>Add Entries</guibutton>
+			_Add Entries_
 			button on the
 			_Git Configuration_
 			preference page.
@@ -48,7 +48,7 @@
 
 
 	
-[[egitconfiguration_defaultlocation">
+
 === Default clone location
 		
 			If you clone a new repository via Eclipse Git,
@@ -74,7 +74,7 @@ image::egitconfig30.png[EGit default repository folder,pdfwidth=60%]
 		
 	
 
-[[egitconfiguration_toolbar">
+
 === Configuring the toolbar and the menu for Git usage
 		<indexterm>
 			<primary>Eclipse Git</primary>

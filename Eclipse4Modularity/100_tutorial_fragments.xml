@@ -1,6 +1,6 @@
 
-	<title>Exercise: Contributing via model fragments
-[[contributefragments_target">
+== Exercise: Contributing via model fragments
+
 === Target
 		In this exercise you create a model fragment to contribute a
 			menu
@@ -10,23 +10,23 @@
 		
 	
 
-[[contributefragments_project">
+
 === Create a new plug-in
 		
 			Create a simple plug-in project called
 			_com.example.e4.rcp.todo.contribute_
 			. The following description abbreviates the plug-in name to the
-			<code>contribute</code>
+			`contribute`
 			plug-in.
 		
 	
-[[contributefragments_dependencies">
+
 === Add the dependencies
 		
 			In the
-			<code>MANIFEST.MF</code>
+			`MANIFEST.MF`
 			file, add the following plug-ins as dependencies to your
-			<code>contribute</code>
+			`contribute`
 			plug-in.
 			<itemizedlist>
 				<listitem>
@@ -50,11 +50,11 @@
 			</itemizedlist>
 		
 	
-[[contributefragments_classes">
+
 === Create a handler class
 		
 			Create the
-			<code>com.example.e4.rcp.todo.contribute.handlers</code>
+			`com.example.e4.rcp.todo.contribute.handlers`
 			package and
 			the following class.
 		
@@ -66,7 +66,7 @@
 		
 	
 
-[[contributefragments_model">
+
 === Create a model fragment
 		
 			Use the fragment wizard from the e4 tools project to create a new
@@ -80,9 +80,9 @@ image::fragmentwizard10.png[Creating fragments with the wizard,pdfwidth=60%]
 		
 		
 			Select the
-			<code>contribute</code>
+			`contribute`
 			plug-in as the container and use
-			<filename>fragment.e4xmi</filename>
+			_fragment.e4xmi_
 			as the name for the file.
 		
 		
@@ -96,25 +96,25 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 		
 	
 
-[[contributefragments_extensionpoint">
+
 === Validate that the fragment is registered as extension
 
 		
 			This wizard which creates the fragment also adds the
-			<code>org.eclipse.e4.workbench.model</code>
+			`org.eclipse.e4.workbench.model`
 			extension to your
-			<code>contribute</code>
+			`contribute`
 			plug-in. To review this open the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file.
 		
 
 		<tip>
 			
 				If the
-				<filename>plugin.xml</filename>
+				_plugin.xml_
 				file is missing, open your
-				<filename>MANIFEST.MF</filename>
+				_MANIFEST.MF_
 				file, select the
 				_Overview_
 				tab and click on the
@@ -122,7 +122,7 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 				link. This shows the
 				_Extensions_
 				tab in the editor and once you add an extension in this tab the
-				<filename>plugin.xml</filename>
+				_plugin.xml_
 				file is generated.
 			
 		</tip>
@@ -143,19 +143,16 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 
 		
 image::modelfragment_extensionpoint16.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding the fragment to the extensions,pdfwidth=60%]
+						scale="40[Adding the fragment to the extensions,pdfwidth=60%]
 		
 
 		<tip>
 			
 				If entry in the plugin.xml is missing you can create it by clicking
 				on the
-				<guibutton>Add...</guibutton>
+				_Add..._
 				button and by adding add a new extension for the
-				<code>org.eclipse.e4.workbench.model</code>
+				`org.eclipse.e4.workbench.model`
 				extension point. Afterwards you the right mouse click to add a
 				fragment to it.
 			
@@ -177,17 +174,17 @@ image::modelfragment_extensionpoint16.png"
 
 
 
-[[contributefragments_addingelements">
+
 === Adding model elements
 		
 			Open the
-			<filename>fragment.e4xmi</filename>
+			_fragment.e4xmi_
 			file in its editor.
 			Select the
 			_Model Fragments_
 			node and
 			press the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button.
 		
 		
@@ -199,23 +196,23 @@ image::modelfragment10.png"/>
 		
 		
 			Use
-			<code>com.example.e4.rcp.todo.application</code>
+			`com.example.e4.rcp.todo.application`
 			as the
 			_Element ID_
 			. This is the ID of the
 			<parameter>Application</parameter>
 			model element in
 			your
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file.
 		
 		<warning>
 			
 				Ensure that
-				<code>com.example.e4.rcp.todo.application</code>
+				`com.example.e4.rcp.todo.application`
 				is the ID you
 				are using for the top node in the
-				<filename>Application.e4xmi</filename>
+				_Application.e4xmi_
 				file. Otherwise
 				the
 				contribution does not work. This is because the
@@ -240,7 +237,7 @@ image::modelfragment10.png"/>
 			selected and
 			use
 			the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button to add a
 			_Command_
 			to your model fragment.
@@ -256,11 +253,11 @@ image::modelfragment20.png" scale="35" />
 
 		
 			Use
-			<code>com.example.e4.rcp.todo.contribute.command.openmap</code>
+			`com.example.e4.rcp.todo.contribute.command.openmap`
 			for the
 			_ID_
 			field and
-			<code>Open Map</code>
+			`Open Map`
 			for the
 			_Name_
 			field.
@@ -279,7 +276,7 @@ image::fragment30.png" scale="35" />
 			application ID, the
 			_Featurename_
 			is
-			<code>handlers</code>
+			`handlers`
 			.
 		
 		
@@ -296,19 +293,16 @@ image::fragment32.png" scale="35" />
 		
 		
 			Use
-			<code>com.example.e4.rcp.todo.contribute.handler.openmap</code>
+			`com.example.e4.rcp.todo.contribute.handler.openmap`
 			as ID for the handler.
 			Point to the
 			_Open Map_
 			command and the
-			<code>OpenMapHandler</code>
+			`OpenMapHandler`
 			class.
 		
 		
-image::fragment40.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a handler to the model fragment,pdfwidth=60%]
+image::fragment40.png" scale="30[Adding a handler to the model fragment,pdfwidth=60%]
 		
 
 		
@@ -317,15 +311,15 @@ image::fragment40.png" scale="30" />
 			to contribute a new menu to your application model. Contribute to
 			the
 			main menu of your
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			.
 			If you followed the earlier
 			exericses correctly this should be the
-			<code>org.eclipse.ui.main.menu</code>
+			`org.eclipse.ui.main.menu`
 			ID. The
 			_Featurename_
 			is
-			<code>children</code>
+			`children`
 			.
 		
 		
@@ -335,7 +329,7 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 		<warning>
 			
 				Ensure in your
-				<filename>Application.e4xmi</filename>
+				_Application.e4xmi_
 				file that you are using the
 				same
 				ID
@@ -357,7 +351,7 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 		</warning>
 		
 			In your
-			<filename>fragment.e4xmi</filename>
+			_fragment.e4xmi_
 			file add a
 			_Menu_
 			with the
@@ -384,7 +378,7 @@ image::fragment62.png[Adding a menu entry,pdfwidth=60%]
 			the same as
 			defining menus
 			in the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file. See
 			<xref linkend="part_commands" />
 			for further information. The created entry should be similar to the
@@ -403,13 +397,13 @@ image::fragment70.png"/>
 	
 
 
-[[contributefragments_product">
+
 === Update the product configuration (via the feature)
 		
 			Add the
-			<code>contribute</code>
+			`contribute`
 			plug-in to your
-			<code>com.example.e4.rcp.todo.feature</code>
+			`com.example.e4.rcp.todo.feature`
 			feature.
 		
 
@@ -420,7 +414,7 @@ image::fragment70.png"/>
 		</warning>
 	
 
-[[contributefragments_validate">
+
 === Validating
 
 		
@@ -453,7 +447,7 @@ image::fragment70.png"/>
 
 	
 
-[[contributefragments_view">
+
 === Exercise: Contributing a part
 		<note>
 			This exercise is optional.
@@ -467,7 +461,7 @@ image::fragment70.png"/>
 			. Use the ID of an existing
 			_PartStack_
 			and use
-			<code>children</code>
+			`children`
 			as
 			_FeatureName_
 			.

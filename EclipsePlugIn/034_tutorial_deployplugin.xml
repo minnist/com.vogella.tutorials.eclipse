@@ -1,8 +1,8 @@
 
-	<title>Exercise: Create a feature for your plug-in
+== Exercise: Create a feature for your plug-in
 
 
-[[p2deployplugin_updatesite">
+
 === Create an update site
 		
 			You can create an update site for your feature in a local directory
@@ -28,7 +28,7 @@ image::pluginfeatureexport20.png"/>
 			To use your category, switch to the
 			_Options_
 			tab and select the path to your
-			<filename>category.xml</filename>
+			_category.xml_
 			file in the
 			_Categorize repository_
 			option.
@@ -40,7 +40,7 @@ image::pluginfeatureexport30.png"/>
 		
 	
 
-[[p2deployplugin_install">
+
 === Install feature via the Eclipse update manager
 		
 			Use the Eclipse update manager via
@@ -91,7 +91,7 @@ image::idepluginfeatureinstall30.png"/>
 			
 		</note>
 	
-[[p2deployplugin_validate">
+
 === Validate installation
 
 		

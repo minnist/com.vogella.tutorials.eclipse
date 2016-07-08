@@ -1,14 +1,12 @@
 
-	<title>Application model extensibility
-[[applicationmodelextension_structure">
+== Application model extensibility
+
 === The application model structure
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Extensions</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Extensions of the application model</primary>
-		</indexterm>
+		
 		
 			The application
 			model you create for your Eclipse based
@@ -21,14 +19,14 @@
 			structure
 			defines, for example, that
 			an
-			<code>MPart</code> can
-			be stored in an <code>MPartSashContainer</code>.
+			`MPart` can
+			be stored in an `MPartSashContainer`.
 		
 		
 			The
 			Eclipse platform uses generated Java classes based on this EMF
 			model. These classes are instantiated based on the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file of the application including formation from model fragments,
 			processors and other sources which modify the model, e.g., mode
 			add-ons.
@@ -39,7 +37,7 @@
 			changes.
 		
 	
-[[applicationmodelextension_extensions">
+
 === Using extensions
 		
 			The underlying structure of the application model can be
@@ -61,13 +59,13 @@
 			elements.
 		
 	
-[[e4tools_editor">
+
 === Adding an editor for a custom model elements
 		
 			The
-			<code>org.eclipse.e4.tools.emf.ui</code>
+			`org.eclipse.e4.tools.emf.ui`
 			plug-in defines the
-			<code>org.eclipse.e4.tools.emf.ui.editors</code>
+			`org.eclipse.e4.tools.emf.ui.editors`
 			extension point, which allows registering editors for new model
 			elements.
 		

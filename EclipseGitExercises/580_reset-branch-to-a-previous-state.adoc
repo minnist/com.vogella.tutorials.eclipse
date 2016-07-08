@@ -1,4 +1,4 @@
-[[reset_branch_to_a_previous_state]]
+
 == Reset branch to a previous state
 
 Accidentally committing changes in a wrong branch can happen.

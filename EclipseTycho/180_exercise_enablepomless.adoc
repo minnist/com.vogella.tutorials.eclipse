@@ -1,7 +1,7 @@
-[[exercisetycho_configuration]]
+
 == Exercise: Configure Tycho build
 
-[[exercisetychoplugin_configuration]]
+
 === Target of this exercise
 
 In this exercise you define the meta data to use pomless builds with Tycho. 
@@ -16,7 +16,7 @@ image::projectexplorer_hierarchicalview.png[Project Explorer - hierarchical view
 ====
 
 		
-[[exercisetycho_configuration_rootdirectory]]
+
 === Create a new folder and create a root project in it
 		
 Select or create a new directory for this tutorial. 
@@ -28,7 +28,7 @@ image::new_general_project_tycho2.png[Create new project of type general - Part 
 		
 This root project is supposed to contain all Eclipse components and the main pom file.
 		
-[[exercisetycho_configuration_pomless]]
+
 
 === Enable pomless Tycho build
 		
@@ -41,7 +41,7 @@ The content of the _.mvn/extensions.xml_ must look like the following to enable 
 include::res/polyglot/pomlesstycho-extensions.xml[]
 ----
 
-[[exercisetycho_configuration_parent]]
+
 
 === Create pom for the build configuration
 		
@@ -57,7 +57,7 @@ Create the following _pom.xml_ file in this project.
 include::res/components/parent/pom.xml[]
 ----	
 
-[[exercisetycho_configuration_rootpom]]
+
 === Create pom in the root project
 		
 Create the following _pom.xml_ file in the root project of your build.
@@ -67,7 +67,7 @@ Create the following _pom.xml_ file in the root project of your build.
 include::res/components/parent/rootpom.xml[]
 ----
 
-[[exercisetycho_configuration_validate]]
+
 === Validate build setup
 
 The created directory structure should look like the following.

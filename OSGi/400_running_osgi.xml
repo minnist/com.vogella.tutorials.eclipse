@@ -1,5 +1,5 @@
 
-	<title>Running a stand-alone OSGi server
+== Running a stand-alone OSGi server
 	 This chapter will
 		show how to run Equinox as a
 		OSGi stand-alone runtime.

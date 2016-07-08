@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Using a Styled Label Providers
+== Tutorial: Using a Styled Label Providers
 	
 		First create the following helper class which will determine
 		which occurrence of the search string is in the column.
@@ -11,11 +11,11 @@
 		</programlisting>
 	
 	
-		Change the class <code>View</code> to the following.
+		Change the class `View` to the following.
 		We will only use
-		<code>StyledCellLabelProvider</code> for the <code>firstName</code>.
+		`StyledCellLabelProvider` for the `firstName`.
 		Most of the code changes
-		are in method <code>createColumns()</code> plus a view variable definitions.
+		are in method `createColumns()` plus a view variable definitions.
 	
 	
 		<programlisting language="java">

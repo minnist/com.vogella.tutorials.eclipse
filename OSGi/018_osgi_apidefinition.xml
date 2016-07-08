@@ -1,5 +1,5 @@
 
-	<title>API definition of a plug-in
+== API definition of a plug-in
 
 	<indexterm>
 		<primary>OSGi</primary>
@@ -10,7 +10,7 @@
 
 	
 		In the
-		<filename>MANIFEST.MF</filename>
+		_MANIFEST.MF_
 		file a plug-in also defines its API via the Export-Package
 		Identifier.
 		All packages which are not explicitly exported
@@ -35,7 +35,7 @@
 		All these restrictions are enforced via a
 		specific
 		OSGi
-		<code>classloader</code>
+		`classloader`
 		. Each plug-in has its own classloader. Access to
 		restricted classes
 		is
@@ -53,7 +53,7 @@
 
 	
 		Via the
-		<code>x-internal</code>
+		`x-internal`
 		flag the OSGi runtime can mark an exported package as provisional.
 		This allows other plug-ins to consume the
 		corresponding classes, but indicates that these classes
@@ -61,7 +61,7 @@
 	
 	
 		The following screenshot shows how to set a package as
-		<code>x-internal</code>
+		`x-internal`
 		in the
 		manifest editor.
 	
@@ -131,7 +131,7 @@
 		provisional API
 		without a warning or error message. This can be done
 		via the
-		<code>x-friends</code>
+		`x-friends`
 		directive. This flag is added if you add a plug-in to
 		the
 		_Package Visibility_
@@ -148,9 +148,9 @@
 	
 	
 		The
-		<code>x-friends</code>
+		`x-friends`
 		setting has the same effect as
-		<code>x-internal</code>
+		`x-internal`
 		but all plug-ins mentioned in the x-friends setting can access the
 		package without receiving an error or warning
 		message.

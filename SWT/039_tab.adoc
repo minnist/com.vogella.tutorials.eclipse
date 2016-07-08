@@ -1,10 +1,10 @@
 
-	<title>Tab order of elements
+== Tab order of elements
 	
 		You can specify the tab order of controls via the
-		<code>setTabList()</code>
+		`setTabList()`
 		method of a
-		<code>Composite</code>
+		`Composite`
 		. For this you provide an array of the controls where the order of the
 		controls in the array specify the tab order.
 	

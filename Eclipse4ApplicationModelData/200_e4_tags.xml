@@ -1,5 +1,5 @@
 
-	<title>Relevant tags and persisted state keys in the application model
+== Relevant tags and persisted state keys in the application model
 	The following table lists the most important tags
 		for model
 		elements of
@@ -7,7 +7,7 @@
 	
 	
 		Additional tags are defined in the
-		<code>IPresentationEngine</code>
+		`IPresentationEngine`
 		interface. It is up to the renderer implementation and model add-ons to
 		interpret these tags. Renderer might also
 		define additional tags. You

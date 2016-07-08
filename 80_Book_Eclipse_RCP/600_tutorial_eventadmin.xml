@@ -1,6 +1,6 @@
 <chapter id="tutorial_eventadmin">
-	<title>Exercise: Event notifications
-[[tutorial_eventadmin1">
+== Exercise: Event notifications
+
 === Creating a plug-in for event constants
 		
 			Create a new simple plug-in called
@@ -9,7 +9,7 @@
 		
 		
 			Define the following
-			<code>MyEventConstants</code>
+			`MyEventConstants`
 			interface in this new plug-in. This interface stores the constants
 			for the event topics.
 		
@@ -21,15 +21,15 @@
 		
 		
 			Export the
-			<code>com.example.e4.rcp.todo.events</code>
+			`com.example.e4.rcp.todo.events`
 			package in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file (via the
 			_Runtime_
 			tab) in your new plug-in.
 		
 	
-[[tutorial_eventadminfeature">
+
 === Add the new plug-in to the product via the feature
 		
 			Add the
@@ -40,7 +40,7 @@
 
 	
 
-[[tutorial_eventadmin2">
+
 === Enter the plug-in dependencies
 		
 			Add
@@ -49,7 +49,7 @@
 			to your
 			_com.example.e4.rcp.todo_
 			plug-in via its
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 		Start your application to validate that you did everything
@@ -66,33 +66,33 @@
 			
 		</warning>
 	
-[[tutorial_eventadmin3">
+
 === Send out notifications
 		
 			Ensure that the following two plug-ins are included as
 			dependency into
 			your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.
 			<itemizedlist>
 				<listitem>
-					<code>org.eclipse.e4.core.services</code>
+					`org.eclipse.e4.core.services`
 				</listitem>
 				<listitem>
-					<code>org.eclipse.osgi.services</code>
+					`org.eclipse.osgi.services`
 				</listitem>
 			</itemizedlist>
 
 		
 		
 			Update your
-			<code>NewTodoHandler</code>
+			`NewTodoHandler`
 			and your
-			<code>SaveAllHandler</code>
+			`SaveAllHandler`
 			classes to send out an event to communicate the data change. The
 			following
 			example code demonstrates that for the
-			<code>NewTodoHandler</code>
+			`NewTodoHandler`
 			class.
 		
 
@@ -104,7 +104,7 @@
 		
 
 	
-[[tutorial_eventadmin_listeners">
+
 === Receive updates in your parts
 		
 			Register for this
@@ -113,7 +113,7 @@
 			the
 			event is received, update your user interface. The following code
 			demonstrates that for your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class.
 		
 
@@ -124,31 +124,31 @@
 			</programlisting>
 		
 	
-[[tutorial_eventadmin_validate">
+
 === Validating
 
 		
 			Create a new
-			<code>Todo</code>
+			`Todo`
 			object via your wizard. The table in
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			should get updated automatically, e.g., the new entry should be
 			visible in the table after you finish the wizard.
 		
 	
-[[tutorial_eventadmin_reviewimplementation">
+
 === Review the implementation
 		
 			The current implementation works but is not perfect. Each
 			user
 			interface component, which modifies
-			<code>Todo</code>
+			`Todo`
 			objects,
 			needs to send out events.
 		
 		
 			It would be preferable if the
-			<code>ITodoService</code>
+			`ITodoService`
 			implementation could send out these events directly.
 		
 		
@@ -157,7 +157,7 @@
 			<xref linkend="contextfunctionschapter" />
 			chapter we improve our current solution and move the event sending to
 			the implementation class of the
-			<code>ITodoService</code>
+			`ITodoService`
 			service.
 		
 	

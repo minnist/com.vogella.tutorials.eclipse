@@ -1,10 +1,8 @@
 
-	<title>The Eclipse context
-[[context_ieclipsecontext">
+== The Eclipse context
+
 === What is the Eclipse context?
-		<indexterm>
-			<primary>Eclipse context</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>IEclipseContext</primary>
 			<see>Eclipse context</see>
@@ -13,7 +11,7 @@
 			During startup of an Eclipse application the Eclipse runtime creates
 			an object
 			based on the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			interface. This object is called the
 			_context_
 			or the
@@ -23,7 +21,7 @@
 
 		
 			The context is similar to a
-			<code>Map</code>
+			`Map`
 			data structure,
 			in which
 			objects
@@ -41,7 +39,7 @@
 	
 
 
-[[context_hierarchy">
+
 === Relationship definition in the Eclipse context
 		<indexterm>
 			<primary>Eclipse context</primary>
@@ -50,7 +48,7 @@
 
 		
 			As described earlier the Eclipse context is similar to a
-			<code>Map</code>
+			`Map`
 			data structure. But unlike a map, the Eclipse context is
 			hierarchical
 			and
@@ -108,9 +106,9 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 			example, a
 			part
 			can express a dependency to a
-			<code>Composite</code>
+			`Composite`
 			object via a field declaration similar to:
-			<code>@Inject Composite parent;</code>
+			`@Inject Composite parent;`
 			Since
 			parts
 			have
@@ -118,21 +116,19 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 			local contexts they can receive different
 			objects of the
 			type
-			<code>Composite</code>
+			`Composite`
 			.
 		
 	
 
 
 
-[[context_modelelementswithcontext">
+
 === Which model elements have a local context?
-		<indexterm>
-			<primary>Model objects with context</primary>
-		</indexterm>
+		
 		
 			Currently the following model elements implement the
-			<code>MContext</code>
+			`MContext`
 			interface
 			and therefore have their own context:
 			<itemizedlist>
@@ -158,7 +154,7 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 
 	
 
-[[context_creationprocess">
+
 === Life cycle of the Eclipse context
 		<indexterm>
 			<primary>Eclipse context</primary>
@@ -220,16 +216,16 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 				For
 				example,
 				the
-				<code>ContributedPartRenderer</code>
+				`ContributedPartRenderer`
 				class is the default renderer for part
 				model objects.
 				This renderer
 				creates a
-				<code>Composite</code>
+				`Composite`
 				for every
 				part
 				and puts this
-				<code>Composite</code>
+				`Composite`
 				into the local context of the
 				part.
 			

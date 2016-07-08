@@ -1,6 +1,6 @@
 
-	<title>Exercise: Using model tags and persisted data
-[[exercise_supplementarydata_target">
+== Exercise: Using model tags and persisted data
+
 === Target
 		
 			In this exercise you are about to learn
@@ -13,12 +13,12 @@
 				Use
 				<xref linkend="recipes_tags" />
 				for information on the tags or look directly at the
-				<code>IPresentationEngine</code>
+				`IPresentationEngine`
 				interface.
 			
 		</tip>
 	
-[[exercise_supplementarydata_tags">
+
 === Use tags
 		
 			Add the
@@ -35,7 +35,7 @@
 			stack is not closed.
 		
 	
-[[exercise_supplementarydata_persistedstate">
+
 === Optional: Use persisted state
 		
 			Add to the

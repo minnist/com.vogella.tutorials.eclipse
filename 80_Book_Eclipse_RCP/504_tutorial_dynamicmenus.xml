@@ -1,11 +1,11 @@
 <chapter id="tutorial_dynamicmenus">
-	<title>Optional exercise: Creating dynamic menu entries
+== Optional exercise: Creating dynamic menu entries
 	<indexterm>
 		<primary>DynamicMenuContribution</primary>
 		<secondary>Example
 		</secondary>
 	</indexterm>
-[[tutorial_dynamicmenus1">
+
 === Target of this exercise
 		
 			In this exercise you create dynamic menu
@@ -18,7 +18,7 @@
 		
 	
 
-[[tutorial_dynamicmenus2">
+
 === Create handler class
 		
 			Create the following class in your application plug-in. This
@@ -33,7 +33,7 @@
 			</programlisting>
 		
 	
-[[tutorial_dynamicmenus3">
+
 === Create class for DynamicMenuContribution
 		
 			Create the following implementation for the
@@ -47,7 +47,7 @@
 			</programlisting>
 		
 	
-[[tutorial_dynamicmenus4">
+
 === Add DynamicMenuContribution model element
 		
 			Add to one of for menu another menu entry called "Recently
@@ -56,20 +56,17 @@
 			add a
 			_DynamicMenuContribution_
 			to this menu, pointing to your
-			<code>DynamicMenuEntries.java</code>
+			`DynamicMenuEntries.java`
 			class.
 		
 		
 image::dynamicmenucontributions10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding DynamicMenuContribution to the model,pdfwidth=60%]
+						scale="40[Adding DynamicMenuContribution to the model,pdfwidth=60%]
 		
 	
 
 
-[[tutorial_dynamicmenus_validate">
+
 === Validating
 		
 			Start your application and validate that the menu entries are
@@ -78,10 +75,7 @@ image::dynamicmenucontributions10.png"
 
 		
 image::dynamicmenucontributions20.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding DynamicMenuContribution to the model,pdfwidth=60%]
+						scale="40[Adding DynamicMenuContribution to the model,pdfwidth=60%]
 		
 
 	

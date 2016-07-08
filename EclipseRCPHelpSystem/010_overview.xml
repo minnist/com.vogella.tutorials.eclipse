@@ -1,6 +1,6 @@
 
-	<title>Eclipse Help
-[[help_overview">
+== Eclipse Help
+
 === Overview
 		
 			Eclipse has a build-in help system which allows to start and
@@ -36,10 +36,10 @@
 			</itemizedlist>
 
 			or if you product is feature based add the
-			<code>org.eclipse.help</code>
+			`org.eclipse.help`
 			feature
 			and
-			<code>org.eclipse.ui.forms</code>
+			`org.eclipse.ui.forms`
 			plug-in to your product
 			configuration file.
 		
@@ -64,7 +64,7 @@
 	
 
 
-[[help_plugin">
+
 === Extension point
 		The following shows an example of an extension for
 			"org.eclipse.help.toc". The toc entry which has the primary="true"
@@ -111,7 +111,7 @@
 			</programlisting>
 		
 	
-[[help_i18n">
+
 === Internationalization
 		To support several languages in your help plug-in place the
 			content into a special directory into your plug-in called
@@ -130,7 +130,7 @@
 			plug-in and its fragments are merged to one.
 		
 	
-[[help_generating">
+
 === Generating Eclipse Help
 		Writing the HTML and XML files for the Eclipse help can be time
 			consuming. One frequently used approach is to write Docbook files.
@@ -139,7 +139,7 @@
 			files via the Docbook XSLT stylesheets.
 		
 	
-[[help_contextsensitive">
+
 === Context sensitive help
 		You can add context sensitive help to your application via the
 			extension point "org.eclipse.help.contexts". This extension point
@@ -178,7 +178,7 @@
 		
 
 	
-[[help_activehelp">
+
 === ActiveHelp
 		You can link from the help to Eclipse commands. This feature is
 			called ActiveHelp and requires that you add a small JavaScript

@@ -1,11 +1,11 @@
-[[tutorial_p2update]]
+
 == Exercise: Application update
 
 === Target
 
 Create a sample application, where features can be updated by using an update handler.
 
-[[P2-Update-Preparation]]
+
 === Exercise preparation - Create a update enabled RCP application
 
 Create an Eclipse 4 RCP project called _com.example.p2.core_ based on the _Eclipse 4 wizard_.
@@ -16,7 +16,7 @@ And a feature called _com.example.p2.feature_ which contain the _com.example.p2.
 
 image::new-feature-wizard.png[]
 
-[[tutorial_p2product]]
+
 === Add the p2 feature to the product
 		
 Add the following features to the list of the _Contents_ tab.
@@ -29,14 +29,14 @@ After adding these feature the _Add Required_ button needs to be clicked so that
 
 image::product-features.png[]
 
-[[tutorial_p2dependencies]]
+
 === Add dependencies
 
 Add the plug-in dependencies from <<p2intro_plugins>> to your _com.example.p2.core_	plug-in.
 
 image::app-plugin-p2-dependencies.png[]
 
-[[tutorial_p2ui]]
+
 === Create a user interface
 		
 Create a new _Update_ menu entry in your application.
@@ -49,7 +49,7 @@ include::res/UpdateHandler.java[]
 
 Ensure to adjust the `REPOSITORY_LOC` constant in this code to the actual p2 udpate site location on your file system.
 
-[[tutorial__p2version]]
+
 === Enter a version in your product configuration file
 
 Ensure that you have entered a version number for the product and to append the _".qualifier"_ suffix to the product version.

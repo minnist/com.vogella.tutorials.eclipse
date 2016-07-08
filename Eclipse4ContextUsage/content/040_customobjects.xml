@@ -1,7 +1,7 @@
 
-	<title>Extending the objects available for the dependency injection
+== Extending the objects available for the dependency injection
 	
-[[ownobjects_overview">
+
 === Creating and injecting custom objects
 
 		
@@ -14,9 +14,9 @@
 						want
 						to create objects which declare their
 						dependencies with
-						<code>@Inject</code>
+						`@Inject`
 						based on a an
-						<code>IEclipseContext</code>
+						`IEclipseContext`
 						context. See
 						<xref linkend="customobjects_cif" />
 						for details.
@@ -47,7 +47,7 @@
 		
 	
 
-[[customobjects_cif">
+
 === Using dependency injection to create objects
 		<indexterm>
 			<primary>Dependency injection</primary>
@@ -57,23 +57,19 @@
 			<primary>Dependency injection</primary>
 			<secondary>ContextInjectionFactory</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>ContextInjectionFactory</primary>
-		</indexterm>
-		<indexterm>
-			<primary>CIF</primary>
-		</indexterm>
+		
+		
 
 		
 			Using dependency injection is not limited to the objects created by
 			the
 			Eclipse runtime. You can use the same approach
 			to create an instance of a given class based on a given
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			. The given class can contain
 			@Inject annotations.
 			For this you use the
-			<code>ContextInjectionFactory</code>
+			`ContextInjectionFactory`
 			class as demonstrated in the following code example.
 		
 		
@@ -83,20 +79,20 @@
 		
 		
 			The
-			<code>ContextInjectionFactory.make()</code>
+			`ContextInjectionFactory.make()`
 			method creates the object. You can also put it into the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy
 			after the creation. If you place it into the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			of the application, the created object is globally available.
 		
 
 		
 			For this you can either use an existing
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			or create a new
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 			The new context object can be connected to the context hierarchy.
 			Using a new context might be preferable to
@@ -105,13 +101,13 @@
 			to
 			isolate your changes in a local
 			context. Call the
-			<code>dispose</code>
+			`dispose`
 			method on your local context, if the object is not needed anymore.
 		
 
 		
 			The following code demonstrates how to create a new
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			object and to place values into it. This context can be used to
 			create a new object.
 		
@@ -123,7 +119,7 @@
 
 		
 			The next code example demonstrates how you can connect your new
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			object with an existing context hierarchy. The factory searches
 			the
 			hierarchy upwards to find values, requested by the
@@ -137,26 +133,24 @@
 		
 		
 			The
-			<code>ContextInjectionFactory.inject(Object, IEclipseContext)</code>
+			`ContextInjectionFactory.inject(Object, IEclipseContext)`
 			method allows you to perform injection on an existing object. For
 			example, if you created the object with the
-			<code>new()</code>
+			`new()`
 			operator, you can
 			still run dependency injection on it.
 		
 	
-[[ownobjects_difrom">
+
 === Create your custom objects automatically with @Creatable
 		
-		<indexterm>
-			<primary>@Creatable</primary>
-		</indexterm>
+		
 		
 			If you want the Eclipse framework to create your custom objects
 			for
 			you,
 			annotate them with
-			<code>@Creatable</code>
+			`@Creatable`
 			. This way you are telling the Eclipse DI container that it should
 			create
 			a new instance of this object if it does not
@@ -168,7 +162,7 @@
 		
 			If you have a non default-constructor, you must use
 			the
-			<code>@Inject</code>
+			`@Inject`
 			annotation
 			on the constructor to indicate that Eclipse should try to
 			run
@@ -190,9 +184,9 @@
 
 		
 			As the Eclipse framework is allowed to create instances of the
-			<code>Dependent</code>
+			`Dependent`
 			and the
-			<code>YourObject</code>
+			`YourObject`
 			class, it can create them if an instance is requested via
 			dependency
 			injection. In this example the arguments of the
@@ -206,11 +200,11 @@
 		
 		
 			Assuming that you have defined the
-			<code>ITodoService</code>
+			`ITodoService`
 			OSGi
 			service in your application, you
 			can get an instance of your
-			<code>YourObject</code>
+			`YourObject`
 			class injected into a part. The following example code demonstrates
 			that.
 		
@@ -222,16 +216,14 @@
 		
 
 	
-[[ownobjects_singletons">
+
 === Create automatically objects in the application context with @Singleton
-		<indexterm>
-			<primary>@Singleton</primary>
-		</indexterm>
+		
 		
 			If the object should be created in the application context, use the
-			<code>@Singleton</code>
+			`@Singleton`
 			annotation in addition to the
-			<code>@Creatable</code>
+			`@Creatable`
 			annotation. This ensures that only one instance of the object is
 			created in your application.
 		

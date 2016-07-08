@@ -1,10 +1,10 @@
 
-	<title>Creating an extension point
+== Creating an extension point
 
 	
 		A plug-in which declares an extension point must declare the extension
 		point in its
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. You use the
 		_Extension Points_
 		tab for the definition.
@@ -14,7 +14,7 @@
 		Extension points are described via an XML schema file which is
 		referred
 		to in the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. This XML schema file defines
 		the
 		details and the contract of the
@@ -22,7 +22,7 @@
 		The
 		following code demonstrates the link to the
 		schema file in the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file.
 	
 	

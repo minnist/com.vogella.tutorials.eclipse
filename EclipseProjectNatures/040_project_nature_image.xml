@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Provide an image as decorator for the project
+== Provide an image as decorator for the project
     You may have noticed the _J_ as decorator for a java project.
     
         <mediaobject>
@@ -21,7 +21,7 @@ Version 0.3, 06.07.2016
         </mediaobject>
     
     In order to provide such an decorator image in case your project nature has been applied
-        to a project, you can use the <code>org.eclipse.ui.ide.projectNatureImages</code> extension
+        to a project, you can use the `org.eclipse.ui.ide.projectNatureImages` extension
         point.
     
         <mediaobject>
@@ -30,14 +30,14 @@ Version 0.3, 06.07.2016
             </imageobject>
         </mediaobject>
     
-    So in case the <code>com.example.project.examplenature</code> project nature is applied to
+    So in case the `com.example.project.examplenature` project nature is applied to
         a project, this decorator will also be shown.
     
         <note>
             The size of the image 8x8 is recommended in order to look nice.
         </note>
     
-    When the <code>com.example.project.examplenature</code> is applied to a general
+    When the `com.example.project.examplenature` is applied to a general
             _test_ project it should look like this:
     
         <mediaobject>

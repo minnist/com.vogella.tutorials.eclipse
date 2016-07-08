@@ -1,5 +1,5 @@
 
-	<title>Exercise: Add multiple columns to a tree viewer
+== Exercise: Add multiple columns to a tree viewer
 	<note>
 		
 			This exercise assumes that
@@ -7,20 +7,20 @@
 			has been done, since this exercise is based on it.
 		
 	</note>
-[[multi_column_filebrowser_exercise">
+
 === Using TreeViewerColumns in the file browser
 		
 			To add multiple columns in a
-			<code>TreeViewer</code>
+			`TreeViewer`
 			, the
-			<code>TreeViewerColumn</code>
+			`TreeViewerColumn`
 			class can be used to define columns for the underlying tree.
 		
 		
 			A
-			<code>TreeViewerColumn</code>
+			`TreeViewerColumn`
 			itself is a wrapper around the
-			<code>TreeColumn</code>
+			`TreeColumn`
 			widget
 			from SWT.
 		
@@ -31,17 +31,17 @@
 		
 		
 			Instead of applying a
-			<code>CellLabelProvider</code>
+			`CellLabelProvider`
 			for the whole viewer each
-			<code>TreeViewerColumn</code>
+			`TreeViewerColumn`
 			gets its own
-			<code>CellLabelProivder</code>
+			`CellLabelProivder`
 			assigned. This allows that label for each column can
 			be defined separately. To
 			assign a label provider to the tree
 			viewer column
 			the
-			<code>TreeViewerColumn#setLabelProvider</code>
+			`TreeViewerColumn#setLabelProvider`
 			method is used.
 		
 		
@@ -51,7 +51,7 @@
 			</programlisting>
 		
 	
-[[multi_column_filebrowser_validate">
+
 === Validating
 		Start your new application ensure that you see the content of
 			your file system in your tree.

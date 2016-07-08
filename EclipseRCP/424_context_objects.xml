@@ -1,7 +1,7 @@
 
-	<title>Objects available for dependency injection
+== Objects available for dependency injection
 
-[[context_searchorder">
+
 === How are objects selected for dependency injection
 		
 			As described in
@@ -47,10 +47,7 @@
 		
 
 		
-image::contexthierarchy10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Context hierarchy with OSGi,pdfwidth=60%]
+image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60%]
 		
 
 		
@@ -70,7 +67,7 @@ image::contexthierarchy10.png" scale="30" />
 	
 
 
-[[context_modelobjectsandclasses">
+
 === How to access the model objects?
 		
 			For the class references in the application model (see
@@ -88,11 +85,11 @@ image::contexthierarchy10.png" scale="30" />
 		
 			For example, in the implementation of a part you can access the model
 			information of a part via:
-			<code>@Inject MPart part;</code>
+			`@Inject MPart part;`
 		
 
 	
-[[context_ieclipsecontextdefaults">
+
 === Default entries in the Eclipse context
 		
 			The Eclipse framework creates several objects in the context.
@@ -133,7 +130,7 @@ image::contexthierarchy10.png" scale="30" />
 	
 
 
-[[dependencyinjection_activeconstants">
+
 === Qualifiers for accessing the active part or shell
 		<indexterm>
 			<primary>IServiceConstants</primary>
@@ -147,9 +144,9 @@ image::contexthierarchy10.png" scale="30" />
 			The Eclipse platform places the part which is currently
 			selected and
 			the active shell into the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			of the application object. The related keys are defined in the
-			<code>IServiceConstants</code>
+			`IServiceConstants`
 			interface.
 		
 		For example, the following method would allow you to track the
@@ -163,7 +160,7 @@ image::contexthierarchy10.png" scale="30" />
 
 		
 			To track the active shell use the
-			<code>IServiceConstants.ACTIVE_SHELL</code>
+			`IServiceConstants.ACTIVE_SHELL`
 			key.
 		
 		
@@ -184,38 +181,36 @@ image::contexthierarchy10.png" scale="30" />
 		</note>
 
 	
-[[dependencyinjection_active">
+
 === Tracking a child context with @Active
-		<indexterm>
-			<primary>@Active</primary>
-		</indexterm>
+		
 		
 			The
-			<code>@Active</code>
+			`@Active`
 			annotation allows you to track values in a child context. The Eclipse
 			framework keeps track of the current active
 			branch in the hierarchy
 			of the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 			For example, if the user selects a
 			part,
 			the path
 			in the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy from the root to the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			of the part is the current active branch.
 		
 		
 			With the
-			<code>@Active</code>
+			`@Active`
 			annotation you can track values in the current active branch of a
 			child element. Whenever the active branch changes
 			and the value of
 			the referred key changes this value is re-injected into the object
 			which uses the
-			<code>@Active</code>
+			`@Active`
 			annotation.
 		
 
@@ -232,7 +227,7 @@ image::contexthierarchy10.png" scale="30" />
 		<note>
 			
 				The
-				<code>@Active</code>
+				`@Active`
 				annotation
 				is currently not used within the
 				Eclipse framework itself

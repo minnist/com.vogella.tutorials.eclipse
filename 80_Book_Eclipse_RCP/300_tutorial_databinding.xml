@@ -1,10 +1,10 @@
 <chapter id="tutorial_databinding">
-	<title>Exercise: Data binding for SWT widgets
-[[tutorial_databinding1">
+== Exercise: Data binding for SWT widgets
+
 === Add new plug-in dependencies to the application plug-in
 		
 			In the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			, add the following plug-ins as dependencies to your
 			application
 			plug-in.
@@ -31,32 +31,32 @@
 			</itemizedlist>
 		
 	
-[[tutorial_databinding2">
+
 === Add the plug-in dependencies to the model plug-in
 		
 			Add
-			<code>org.eclipse.core.databinding</code>
+			`org.eclipse.core.databinding`
 			as dependency to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of the
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			plug-in.
 		
 	
-[[tutorial__databinding2">
+
 === Update your Todo data model to be observable
 
 		
 			Add constants for the property name in your
-			<code>Todo</code>
+			`Todo`
 			class for them to use them later in data binding. The constants must reflect the bean property names in the
 			class,
 			otherwise, the data binding will not find the
 			right property
 			to bind to. Also, change your
-			<code>Todo</code>
+			`Todo`
 			class to use
-			<code>WritableValue</code>
+			`WritableValue`
 			for its members.
 		
 		
@@ -67,15 +67,15 @@
 	
 
 
-[[tutorial_databinding3">
+
 === Remove the modification listeners in your code
 		
 			Delete your
-			<code>addModifyListener()</code>
+			`addModifyListener()`
 			methods in the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class. The synchronization between the
-			<code>Todo</code>
+			`Todo`
 			object and the user interface will be handled by the JFace Data
 			Binding framework.
 		
@@ -84,21 +84,21 @@
 				Ensure to remove these listeners. Otherwise you will see "strange"
 				side-effects like jumping cursors. Ensure that you
 				removed it, via a text search for
-				<code>ModifyListener</code>
+				`ModifyListener`
 				term in your
-				<code>TodoDetailsPart</code>
+				`TodoDetailsPart`
 				class.
 			
 		</warning>
 
 	
 
-[[tutorial_databinding4b">
+
 === Implement data binding in TodoDetailsPart
 
 		
 			Change your implementation of the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class
 			to use data binding based on the following example code.
 		
@@ -110,18 +110,15 @@
 		
 
 	
-[[tutorial_databinding_validate">
+
 === Validating
 		
 			Use your wizard to create new
-			<code>Todo</code>
+			`Todo`
 			objects. The following screenshot shows the first page of the wizard.
 		
 		
-image::newtodo_wizard10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::newtodo_wizard10.png[,pdfwidth=60%]
 		
 		
 			Test if your implementation behaves correctly. Ensure that new Todo
@@ -133,10 +130,7 @@ image::newtodo_wizard10.png" />
 			button.
 		
 		
-image::newtodo_wizard20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::newtodo_wizard20.png[,pdfwidth=60%]
 		
 		<note>
 			

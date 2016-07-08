@@ -1,6 +1,6 @@
 
-	<title>Adapters
-[[adapters_overview">
+== Adapters
+
 === What are adapters?
 		
 			Adapters help to display information about objects in view
@@ -19,7 +19,7 @@
 		
 
 	
-[[adapters_example">
+
 === Example
 		
 			We will simply use an adapter to show our data in the property
@@ -40,7 +40,7 @@ image::adapter10.gif" />
 			dependency
 			<parameter>org.eclipse.ui.views</parameter>
 			in tab dependencies of
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			.
 		
 		 Create the following data model.
@@ -52,7 +52,7 @@ image::adapter10.gif" />
 
 		
 			Change the code of
-			<filename>SampleView.java</filename>
+			_SampleView.java_
 			to the following. After this
 			change, you should be able to run your project, open your view and see
 			your to-do items.
@@ -79,9 +79,9 @@ image::adapter10.gif" />
 		
 		
 			Implement the factory and the new class
-			<code>TodoPropertySource</code>
+			`TodoPropertySource`
 			which implements
-			<code>IPropertySource</code>
+			`IPropertySource`
 			.
 		
 

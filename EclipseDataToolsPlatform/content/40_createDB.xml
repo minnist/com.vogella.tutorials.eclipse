@@ -1,6 +1,6 @@
 
-	<title>Working with Databases
-[[createDB">
+== Working with Databases
+
 === Create a new Databases Connection
 		
 			Switch to the perspective "Database Development" and select
@@ -39,7 +39,7 @@ image::dtpdatabase30.gif" />
 		
 
 	
-[[connectDB">
+
 === Create a new Databases Connection
 		 Now your folder Database should have an additional entry. Right
 			it and select

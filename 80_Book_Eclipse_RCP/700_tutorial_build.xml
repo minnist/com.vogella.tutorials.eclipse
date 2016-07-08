@@ -1,6 +1,6 @@
 <chapter id="tutorial_build">
-	<title>Building your Eclipse RCP application
-[[tutorial_build1">
+== Building your Eclipse RCP application
+
 === Exercise: Manual export
 		The following exercise is a repetition. Very early in this
 			$books you have exported your application already.
@@ -18,7 +18,7 @@
 			chapter of this book.
 		
 	
-[[tutorial__build2">
+
 === Exercise: Validate the Tycho tutorial
 		Install Maven. Create a new workspace and follow the two
 			tutorial for building plug-ins and products with Maven Tycho.
@@ -28,12 +28,12 @@
 			components.
 		
 	
-[[tutorial__build3">
+
 === Exercise: Tycho Build for the Todo application
 		
 			Once you have successfully finished a minimal build setup,
 			create
-			<filename>pom.xml</filename>
+			_pom.xml_
 			files for your Todo components.
 		
 		After the setup ensure that you can automatically build your

@@ -1,8 +1,8 @@
 
-	<title>Launch Configuration UI
+== Launch Configuration UI
 	
 		The ﻿
-		<code>org.eclipse.debug.ui</code>
+		`org.eclipse.debug.ui`
 		plugin provides a user interface for the launch
 		configurations.
 	
@@ -19,7 +19,7 @@
 		Previously we created a launch configuration delegate and in order run
 		it from the UI, we
 		can use the
-		<code>org.eclipse.debug.ui.launchConfigurationTabGroups</code>
+		`org.eclipse.debug.ui.launchConfigurationTabGroups`
 		extension
 		point.
 	
@@ -31,13 +31,13 @@
 	
 	
 		Here we reference to the
-		<code>com.example.launchConfigurationType</code>
+		`com.example.launchConfigurationType`
 		, which we
 		previously created.
 	
 	
 		Before we implement the tab group, we define a custom
-		<code>AbstractLaunchConfigurationTab</code>
+		`AbstractLaunchConfigurationTab`
 		, which will be placed on the tab
 		group.
 	
@@ -49,20 +49,20 @@
 	
 	
 		With this tab we can set our
-		<code>SampleLaunchConfigurationAttributes.CONSOLE_TEXT</code>
+		`SampleLaunchConfigurationAttributes.CONSOLE_TEXT`
 		attribute to the
-		<code>ILaunchConfiguration</code>
+		`ILaunchConfiguration`
 		.
 	
 	
 		In the
-		<code>com.example.SampleTabGroup</code>
+		`com.example.SampleTabGroup`
 		, we can use existing
-		<code>AbstractLaunchConfigurationTab</code>
+		`AbstractLaunchConfigurationTab`
 		implementations, like the
-		<code>CommonTab</code>
+		`CommonTab`
 		, or the
-		<code>SampleTab</code>
+		`SampleTab`
 		from above.
 	
 	
@@ -74,7 +74,7 @@
 	
 		A specific icon for the launch configuration can be defined by using
 		the
-		<code>org.eclipse.debug.ui.launchConfigurationTypeImages</code>
+		`org.eclipse.debug.ui.launchConfigurationTypeImages`
 		extension point.
 	
 		

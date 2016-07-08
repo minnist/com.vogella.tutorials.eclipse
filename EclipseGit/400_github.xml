@@ -1,6 +1,6 @@
 
-	<title>Using Eclipse Git with GitHub
-[[github_clone">
+== Using Eclipse Git with GitHub
+
 === Clone project
 		
 			Copy the URL from GitHub and select in Eclipse from the menu the
@@ -21,7 +21,7 @@ image::egit_ssh10.png[SSH settings,pdfwidth=60%]
 
 
 	
-[[github_push">
+
 === Push changes
 		
 			After you made changes and committed them to your local repository,

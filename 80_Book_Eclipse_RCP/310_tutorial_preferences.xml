@@ -1,7 +1,7 @@
 <chapter id="tutorial_preferences">
-	<title>Exercise: Using preferences in the life cycle class
+== Exercise: Using preferences in the life cycle class
 
-[[tutorial_preferencesstorage_target">
+
 === Target
 		In this exercise you store the last logged in user name in the
 			preferences.
@@ -18,27 +18,27 @@
 			dialog.
 		
 	
-[[tutorial_preferenceannotation">
+
 === Dependency
 		
 			The
-			<code>@Preference</code>
+			`@Preference`
 			annotation is provided by the
-			<code>org.eclipse.e4.core.di.extensions</code>
+			`org.eclipse.e4.core.di.extensions`
 			plug-in. Ensure that you have entered a dependency to this plug-in in
 			the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file
 			of your application plug-in. If you followed the previous
 			exercises correctly this dependency is already entered.
 		
 	
 
-[[tutorial_preferencesinterface">
+
 === Create interface for the preference constants
 		
 			Create the
-			<code>com.example.e4.rcp.todo.preferences</code>
+			`com.example.e4.rcp.todo.preferences`
 			package and the following interface in this package.
 		
 		
@@ -51,14 +51,14 @@
 
 	
 
-[[tutorial_preferencesadvanced">
+
 === Using preferences in the life cycle class
 		<tip>
 			This exercise is optional.
 		</tip>
 		
 			Extend the
-			<code>Manager</code>
+			`Manager`
 			class
 			to get the user preference injected during application startup.
 		
@@ -70,7 +70,7 @@
 
 	
 
-[[tutorial_preferences_validatelifecycle">
+
 === Validate life cycle handling
 		Start your application and enter a user. Stop and the
 			application and start the application again. The login

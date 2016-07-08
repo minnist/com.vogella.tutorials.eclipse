@@ -1,35 +1,15 @@
-[[importantmodelelement_element">
+
 === Overview of available model objects
-		<indexterm>
-			<primary>Model objects</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MApplication</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MAddon</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MWindow</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MTrimmedWindow</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MPerspective</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MPart</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MDirtyable</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MPartDescriptor</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Snippets</primary>
-		</indexterm>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 		
 			During startup the Eclipse framework parses the available information

@@ -1,6 +1,6 @@
 
-	<title>Eclipse RAP
-[[rap_introduction">
+== Eclipse RAP
+
 === Introduction
 		
 			Eclipse RAP is a Eclipse based platform for Ajax web
@@ -41,7 +41,7 @@
 		
 
 	
-[[rap_difference">
+
 === Differences to Eclipse RCP
 		
 			Eclipse RAP does not provide all the possibilities
@@ -58,7 +58,7 @@
 		
 	
 
-[[rap_workspace">
+
 === Workspace and Target Platform
 		 Eclipse RAP have its own target platform. A target platform
 			contains the artifacts, e.g., plug-ins, against which the Eclipse

@@ -1,5 +1,5 @@
 
-	<title>Eclipse Sleak
+== Eclipse Sleak
 
 	
 		_Eclipse Sleak_
@@ -52,7 +52,7 @@
 		<parameter>-debug</parameter>
 		option from the command
 		line. You also need to create a
-		<filename>.options</filename>
+		_.options_
 		file in the Eclipse installation directory with the following entries.
 	
 	

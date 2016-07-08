@@ -1,6 +1,6 @@
 
-	<title>Optional Exercise: Using the model spy
-[[exercise_modelspy_target">
+== Optional Exercise: Using the model spy
+
 === Target
 		
 			To test the application model dynamics, integrate the model spy
@@ -36,7 +36,7 @@
 			
 		</note>
 	
-[[exercise_modelspy_targetplatform">
+
 === Add the spies to your target platform
 		
 			Add the model spies to your target platform. See
@@ -45,21 +45,18 @@
 		
 
 	
-[[exercise_modelspy_add">
+
 === Adding the model spy to your runtime configuration
 		
 			Open the run configuration of your product via the
 			menu:Run[Run Configurations...]
 			menu entry and
 			add the
-			<code>org.eclipse.e4.tools.model.spy</code>
+			`org.eclipse.e4.tools.model.spy`
 			plug-in and its dependencies to it.
 		
 		
-image::adding_liveeditor08.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding the live editor to a run configuration,pdfwidth=60%]
+image::adding_liveeditor08.png[Adding the live editor to a run configuration,pdfwidth=60%]
 		
 		
 			If you use the filter you have to remove it before the
@@ -69,10 +66,7 @@ image::adding_liveeditor08.png" />
 
 
 		
-image::adding_liveeditor10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding the live editor to a run configuration,pdfwidth=60%]
+image::adding_liveeditor10.png[Adding the live editor to a run configuration,pdfwidth=60%]
 		
 
 
@@ -83,13 +77,13 @@ image::adding_liveeditor10.png" />
 		
 
 	
-[[exercise_modelspy_using">
+
 === Use the model spy
 
 		
 			After you have added the new plug-ins to your run
 			configuration press the
-			<guibutton>Run</guibutton>
+			_Run_
 			button in the run configuration you just added.
 		
 		<warning>
@@ -133,7 +127,7 @@ image::adding_liveeditor10.png" />
 		
 	
 
-[[exercise_modelspy_cleanup">
+
 === Cleanup - remove model spy from your run configuration
 		
 		After testing with the tool enabled, start your application

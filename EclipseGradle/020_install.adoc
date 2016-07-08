@@ -1,7 +1,7 @@
-[[buildship_install]]
+
 == Install Eclipse Gradle (Buildship) tooling
 
-[[buildship_install_marketplace]]
+
 === Installation via the Marketplace
 	
 The easiest way to install the Gradle tooling for Eclipse is by using the Eclipse Marketplace client and search for _Buildship_.
@@ -9,7 +9,7 @@ The easiest way to install the Gradle tooling for Eclipse is by using the Eclips
 image::marketplace_buildship.png[Eclipse Gradle installation via the Marketplace]
 
 
-[[buildship_install_update]]	
+
 === Installation via the Eclipse update manager
 
 You also can use the menu:Help[Install New Software] menu path to install the Gradle tooling.

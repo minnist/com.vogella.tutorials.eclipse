@@ -1,14 +1,14 @@
-[[mixedmode_example">
+
 === Example for using 3.x components in e4 API based applications
 		
 			If you choose to try this approach despite the warning, you have to
 			define a
-			<filename>LegacyIDE.e4xmi</filename>
+			_LegacyIDE.e4xmi_
 			file similar to the Eclipse IDE and add your
 			model components to this
 			file. This file can be found
 			in the
-			<code>org.eclipse.ui.workbench</code>
+			`org.eclipse.ui.workbench`
 			plug-in.
 		
 		
@@ -16,7 +16,7 @@
 			<parameter>applicationXMI</parameter>
 			parameter in
 			your
-			<code>org.eclipse.core.runtime.products</code>
+			`org.eclipse.core.runtime.products`
 			extension.
 		
 		

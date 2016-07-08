@@ -1,6 +1,6 @@
 
-	<title>Using the GitHub connector
-[[githubconnector_overview">
+== Using the GitHub connector
+
 === GitHub connector
 		<indexterm>
 			<primary>Mylyn</primary>
@@ -10,7 +10,7 @@
 			Pull requests and Gists.
 		
 	
-[[githubconnector_issues">
+
 === GitHub issue integration
 		
 			To integrate the GitHub issues you can use the

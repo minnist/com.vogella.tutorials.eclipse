@@ -1,7 +1,7 @@
 
 
 
-	<title>Selection Dialogs
+== Selection Dialogs
 
 	
 		Eclipse provides several standard selection
@@ -39,7 +39,7 @@
 
 	
 		For example
-		<code>ElementListSelectionDialog</code>
+		`ElementListSelectionDialog`
 		allows you to select elements from a list where the
 		dialog provides a
 		filter for the elements.

@@ -1,5 +1,5 @@
 
-[[javacode_save">
+
 === Example
 		
 			The following is based on the EMF model created in
@@ -7,7 +7,7 @@
 			 which we are going to persists. Create a new plug-in project "de.vogella.emf.webpage.instance".
 			Add
 			the following dependency to your
-			<filename>plugin.xml</filename>.
+			_plugin.xml_.
 		
 		
 			<itemizedlist>
@@ -24,7 +24,7 @@
 			</programlisting>
 		
 	
-[[javacode_load">
+
 === Load an existing model
 		
 			The following code can be used to load an existing model.

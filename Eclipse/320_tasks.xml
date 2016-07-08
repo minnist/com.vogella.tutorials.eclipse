@@ -1,10 +1,8 @@
 
-	<title>Tasks
-[[tasks_definition">
+== Tasks
+
 === Task management
-		<indexterm>
-			<primary>Task management</primary>
-		</indexterm>
+		
 		
 			You can place
 			markers in the
@@ -15,11 +13,11 @@
 		
 		
 			You can use
-			<code>// TODO</code>
+			`// TODO`
 			,
-			<code>// FIXME</code>
+			`// FIXME`
 			or
-			<code>// XXX</code>
+			`// XXX`
 			tags in your code to add task reminders.
 		
 		
@@ -39,7 +37,7 @@
 		
 		
 			For example, add a TODO to your
-			<code>MyFirstClass</code>
+			`MyFirstClass`
 			class to see it in the Tasks
 			view
 			.
@@ -52,7 +50,7 @@
 		
 		
 			Close the editor for the
-			<code>MyFirstClass</code>
+			`MyFirstClass`
 			class. If you now double-click on the
 			tasks, the Java editor opens
 			again and
@@ -61,10 +59,7 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/todo10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/todo10.png[,pdfwidth=60%]
 		
 		<tip>
 			
@@ -78,7 +73,7 @@
 			
 		</tip>
 	
-[[tasks_owntags">
+
 === Own tags
 		
 			You can also define your own tags in the Eclipse preferences via
@@ -90,7 +85,7 @@ image::tasktags10.png[Defining new tasks tags,pdfwidth=60%]
 		
 	
 
-[[tasks_mylyn">
+
 === Mylyn
 		
 			A more advanced tasks management system is available with the

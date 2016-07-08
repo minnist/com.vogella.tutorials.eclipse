@@ -1,7 +1,7 @@
-[[deployment]]
+
 == Automatic deployment of a p2 update site with Maven
 
-[[deployment_ftp_upload]]
+
 You can use the Maven Wagon plug-in to deploy your artifacts, e.g., to an ftp server.
 	
 To define the credentials to login to the server you can  add an entry for the user credentials to your local _~/m2/settings.xml_ file.

@@ -1,8 +1,8 @@
 
-	<title>The purpose of the tabs in the feature editor
+== The purpose of the tabs in the feature editor
 	
 		If you open the
-		<filename>feature.xml</filename>
+		_feature.xml_
 		file you can change the feature
 		properties via a special editor.
 	
@@ -36,7 +36,7 @@
 		The
 		_Build_
 		tab is used for the build process and should include the
-		<filename>feature.xml</filename>
+		_feature.xml_
 		file. The last two tabs give access to the configuration files in text
 		format.
 	

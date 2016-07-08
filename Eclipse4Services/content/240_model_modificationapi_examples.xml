@@ -1,13 +1,13 @@
 
-	<title>Example for changing the application model
+== Example for changing the application model
 
-[[modelservice_example">
+
 === Example: Search for a perspective and change its attributes
 		
 			The following code shows how to access a
-			<code>PartSashContainer</code>
+			`PartSashContainer`
 			with the
-			<code>mypartsashcontainer</code>
+			`mypartsashcontainer`
 			ID. It also demonstrates how to modify model attributes.
 		
 		
@@ -29,11 +29,11 @@
 
 	
 
-[[modeldynamics_example1">
+
 === Example: Dynamically create a new window
 		
 			To create new model objects you can use the
-			<code>createModelElement()</code>
+			`createModelElement()`
 			of the model service. After you created such an object you can add it
 			to your application model at runtime.
 
@@ -49,7 +49,7 @@
 			</programlisting>
 		
 	
-[[modeldynamics_example2">
+
 === Example: Dynamically create a new part
 
 		 The following code demonstrates how to create and add a new
@@ -65,7 +65,7 @@
 		<tip>
 			
 				Typically you would add the part to a pre-defined
-				<code>PartStack</code>
+				`PartStack`
 				. Use the model service to search for the correct one.
 			
 		</tip>

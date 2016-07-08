@@ -1,16 +1,10 @@
 
-	<title>Model Service
-[[modelservice_overview">
+== Model Service
+
 === What is the model service?
-		<indexterm>
-			<primary>Model service</primary>
-		</indexterm>
-		<indexterm>
-			<primary>EModelService</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Snippets</primary>
-		</indexterm>
+		
+		
+		
 
 		
 			The
@@ -29,19 +23,19 @@
 			added to the application.
 		
 	
-[[modelservice_access">
+
 === How to access the model service
 		
 			This service can be accessed via dependency injection. For example,
 			via field injection with the following statement:
-			<code>@Inject EModelService modelService;</code>
+			`@Inject EModelService modelService;`
 		
 	
-[[modelservice_cloningsnippets">
+
 === Cloning elements or snippets
 		
 			In the application model you can create
-			<code>Snippet</code>
+			`Snippet`
 			model elements
 			which can be used to create model objects at runtime.
 			It is
@@ -53,9 +47,9 @@
 		
 		
 			You can use the
-			<code>cloneElement()</code>
+			`cloneElement()`
 			and
-			<code>cloneSnippet()</code>
+			`cloneSnippet()`
 			methods of the model service
 			to copy an existing element or snippet.
 			The resulting object can be assigned to another
@@ -64,16 +58,16 @@
 		
 	
 
-[[modelservice_searchingmodelelements">
+
 === Searching model elements
 		
 			The
-			<code>findElements()</code>
+			`findElements()`
 			method allows you to search for specific model elements. The
 			following
 			code
 			shows an example for using the
-			<code>findElements()</code>
+			`findElements()`
 			method.
 		
 
@@ -100,11 +94,11 @@
 
 		
 			You can also use the
-			<code>findElements</code>
+			`findElements`
 			method with a fifth parameter which allows you to specify additional
 			search flags, e.g., IN_ACTIVE_PERSPECTIVE, OUTSIDE_PERSPECTIVE,
 			IN_ANY_PERSPECTIVE. See the Javadoc of the
-			<code>findElements</code>
+			`findElements`
 			method for further details.
 		
 

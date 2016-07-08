@@ -11,21 +11,18 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Extract event information
-[[Eclipse4ModelEvents_event_tags">
+== Extract event information
+
 === Available event tags
 		
 			The
-			<code>UIEvents.EventTags</code>
+			`UIEvents.EventTags`
 			interface define the possible event tags:
 		
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/event_tags.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>EventTags interface with properties of an Event,pdfwidth=60%]
+					<imagedata fileref="./images/event_tags.png" scale="50[EventTags interface with properties of an Event,pdfwidth=60%]
 		
 	
 	These event tags are explained in the following sections. 
@@ -61,7 +58,7 @@ Version 0.3, 06.07.2016
 					<property>label</property>
 					is an XML attribute and can be
 					found is the source of your
-					<filename>Application.e4xmi</filename>
+					_Application.e4xmi_
 					file.
 				
 				
@@ -99,12 +96,12 @@ Version 0.3, 06.07.2016
 			<note>
 				
 					In the old Eclipse 3.x days, you would have registered an
-					<code>IPerspectiveListener</code>
+					`IPerspectiveListener`
 					for the
-					<code>WorkbenchWindow</code>
+					`WorkbenchWindow`
 					and
 					implement the
-					<code>perspectiveChanged(...)</code>
+					`perspectiveChanged(...)`
 					method. But in Eclipse 4
 					you'd rather have to think in a DOM(Document Object Model) manner, where
 					<emphasis>&lt;ELEMENT ATTNAME="NEW_VALUE"></emphasis>
@@ -127,13 +124,13 @@ Version 0.3, 06.07.2016
 			listen to the change of the
 			<property>selectedElement</property>
 			attribute of the
-			<code>MPerspectiveStack</code>
+			`MPerspectiveStack`
 			and can get the new and old
-			<code>MPerspective</code>
+			`MPerspective`
 			from
-			<code>EventTags.NEW_VALUE</code>
+			`EventTags.NEW_VALUE`
 			and
-			<code>EventTags.OLD_VALUE</code>
+			`EventTags.OLD_VALUE`
 			properties.
 		
 		
@@ -141,7 +138,7 @@ Version 0.3, 06.07.2016
 			<property>selectedElement</property>
 			attribute
 			value of the
-			<code>MPerspectiveStack</code>
+			`MPerspectiveStack`
 			, rather than looking for a "perspective
 			change" event.
 		
@@ -160,7 +157,7 @@ Version 0.3, 06.07.2016
 		
 		
 			The different types can be found in the
-			<code>UIEvents.EventTypes</code>
+			`UIEvents.EventTypes`
 			interface:
 		
 		
@@ -174,7 +171,7 @@ Version 0.3, 06.07.2016
 		
 		
 			The
-			<code>UIEvents</code>
+			`UIEvents`
 			class, also offers convenience methods to check for some
 			types.
 		
@@ -185,9 +182,9 @@ Version 0.3, 06.07.2016
 		
 		
 			The
-			<code>isADD(Event)</code>
+			`isADD(Event)`
 			and
-			<code>isREMOVE(Event)</code>
+			`isREMOVE(Event)`
 			methods apply for both
 			single and many, e.g., ADD and ADD_MANY)
 		
@@ -196,7 +193,7 @@ Version 0.3, 06.07.2016
 			<xref linkend="position_event_tag" />
 		
 	
-[[position_event_tag">
+
 === POSITION event tag
 		
 			The
@@ -217,20 +214,20 @@ Version 0.3, 06.07.2016
 		
 		
 			In case you drag and drop a
-			<code>MPart</code>
+			`MPart`
 			within a
-			<code>MPartStack</code>
+			`MPartStack`
 			, the
-			<code>MPart</code>
+			`MPart`
 			will be removed and afterwards added to the
-			<code>MPartStack</code>
+			`MPartStack`
 			.
 		
 		
 			The details can be seen in the
-			<code>UIEventPublisher.formatData()</code>
+			`UIEventPublisher.formatData()`
 			method from the
-			<code>org.eclipse.e4.ui.internal.workbench</code>
+			`org.eclipse.e4.ui.internal.workbench`
 			package, where the position on is only the for move,
 			add or remove events.
 		
@@ -242,7 +239,7 @@ Version 0.3, 06.07.2016
 			<property>WIDGET</property>
 			event tag can be used to get the underlying widget,
 			e.g., a
-			<code>Composite</code>
+			`Composite`
 			, of the model element, which is concerned in the
 			event.
 		
@@ -251,9 +248,9 @@ Version 0.3, 06.07.2016
 			cases this is not necessary, because
 			the model elements themselves provide the most of
 			the methods to interact with the widget, like
-			<code>setLabel</code>
+			`setLabel`
 			or
-			<code>setVisible</code>
+			`setVisible`
 			methods and so on.
 		
 	

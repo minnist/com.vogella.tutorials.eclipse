@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Using the OSGi service API
+== Tutorial: Using the OSGi service API
 	
 		In the following we will
 		define and
@@ -7,7 +7,7 @@
 		will
 		return "famous quotes".
 	
-[[osgiservice_interface">
+
 === Define the service interface
 		
 			Create a plug-in project "de.vogella.osgi.quote" and the package
@@ -33,7 +33,7 @@ image::firstservice10.gif" />
 			</programlisting>
 		
 	
-[[osgiservice_service">
+
 === Create service
 		 We will now define a bundle which will provide the service.
 		
@@ -64,7 +64,7 @@ image::firstservice20.gif" />
 			</programlisting>
 		
 	
-[[osgiservice_server">
+
 === Install service bundles
 		 Export your bundles and install them on your server. Start the
 			service bundle.
@@ -81,7 +81,7 @@ image::firstservice30.gif" />
 			</tip>
 		
 	
-[[osgiservice_useservice">
+
 === Use your service
 		Create a new plug-in "de.vogella.osgi.quoteconsumer". Add
 			also a
@@ -122,7 +122,7 @@ image::firstservice40.gif" />
 			chapter will use a service tracker to improve this.
 		
 	
-[[osgiservice_servicetracker">
+
 === Use your service with a service tracker
 		 Declare a package dependency to the package
 			"org.osgi.util.tracker" in your bundle.

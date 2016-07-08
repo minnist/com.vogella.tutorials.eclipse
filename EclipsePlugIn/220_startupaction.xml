@@ -1,10 +1,10 @@
 
-	<title>Early startup actions
+== Early startup actions
 	
 		The Eclipse platform provides the
-		<code>org.eclipse.ui.startup</code>
+		`org.eclipse.ui.startup`
 		extension point via the
-		<code>org.eclipse.ui</code>
+		`org.eclipse.ui`
 		plug-in.
 	
 	<note>
@@ -16,13 +16,13 @@
 
 	
 		To implement an extension to this extension point, select
-		<guibutton>Add...</guibutton>
+		_Add..._
 		on the
 		_Extensions_
 		tab of the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		editor and point to a class implementing the
-		<code>IStartup</code>
+		`IStartup`
 		interface.
 	
 

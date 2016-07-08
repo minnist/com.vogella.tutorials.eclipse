@@ -1,19 +1,19 @@
 
-	<title>Migration to Eclipse 4
-[[migration1">
+== Migration to Eclipse 4
+
 === Migration to Eclipse 4
 		
 			If you want to migrate your Eclipse 3.x RCP application to the
 			Eclipse
 			4 programming model, you can't directly reuse existing
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			based user interface components, e.g.
 			views
 			or
 			editors
 			based on the
 			definition in
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			.
 		
 		
@@ -29,9 +29,9 @@
 					
 						Removing the usage of Singleton objects from the Eclipse platform,
 						e.g.
-						<code>Platform</code>
+						`Platform`
 						or
-						<code>PlatformUI</code>
+						`PlatformUI`
 						and use
 						the dependency injection
 						programming model.
@@ -41,11 +41,9 @@
 		
 	
 
-[[usageof3xcomponentsin4x">
+
 === Using 3.x components in Eclipse 4 applications
-		<indexterm>
-			<primary>Eclipse 3.x and 4.x plug-ins</primary>
-		</indexterm>
+		
 
 		
 			Mixing Eclipse 4.x and Eclipse 3.x. components is currently not
@@ -54,7 +52,7 @@
 			for more information.
 		
 	
-[[migration2">
+
 === Reuse of platform components
 		 Most Eclipse IDE components are still based on the Eclipse 3.x
 			API.
@@ -76,7 +74,7 @@
 			application.
 		
 	
-[[usageof3xcomponentsin4xalternatives">
+
 === Replacements for 3.x components for Eclipse 4.x applications
 		
 		

@@ -1,6 +1,6 @@
 
-	<title>Internationalization and localization
-[[i18n_overview">
+== Internationalization and localization
+
 === Translation of a Java applications
 		<indexterm>
 			<primary>Translation</primary>
@@ -10,12 +10,8 @@
 			<primary>Internationalization</primary>
 			<see>i18n</see>
 		</indexterm>
-		<indexterm>
-			<primary>i18n</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Localization</primary>
-		</indexterm>
+		
+		
 		
 			The process of preparing an application for being translated into
 			several languages is called
@@ -32,7 +28,7 @@
 			.
 		
 	
-[[i18n_propertyfiles">
+
 === Property files
 		<indexterm>
 			<primary>i18n</primary>
@@ -101,13 +97,13 @@
 		
 	
 
-[[i18n_encoding">
+
 === Encoding of property files in Java
 		 Resource bundles in Java are always LATIN-1 (ISO 8859-1)
 			encoded. This is defined by the Java specification.
 		
 	
-[[i18n_rcp">
+
 === Relevant files for translation in Eclipse applications
 		
 			The following table lists the relevant elements for translating
@@ -153,7 +149,7 @@
 
 	
 
-[[i18n_bestpractices">
+
 === Where to store the translations?
 		
 		It is not uncommon that a plug-in also contains its translations.
@@ -183,7 +179,7 @@
 		
 	
 
-[[i18n_nlparameter">
+
 === Setting the language in the launch configuration
 		<indexterm>
 			<primary>i18n</primary>
@@ -214,14 +210,14 @@
 		
 	
 
-[[eclipse4_translationservice">
+
 === Translation service
 
 		
 			Eclipse uses a translation service via the
-			<code>TranslationService</code>
+			`TranslationService`
 			interface. The default implementation of this class is the
-			<code>BundleTranslationProvider</code>
+			`BundleTranslationProvider`
 			which uses property files as input for the translations. But you can provide your own OSGi
 			service which uses a
 			different source, e.g., a
@@ -240,7 +236,7 @@
 		
 			By
 			storing it in the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			context hierarchy
 			you can have different translation services for
 			different local

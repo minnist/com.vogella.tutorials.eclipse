@@ -1,6 +1,6 @@
 <chapter id="tutorial_usinghandlerservice">
-	<title>Optional exercise: Using handler service
-[[tutorial_usinghandlerservice_0">
+== Optional exercise: Using handler service
+
 === Enable save in the EditorPart
 		Allow the user to save in the EditorPart directly. Reuse the save all command.
 
@@ -17,17 +17,17 @@
 
 
 	
-[[tutorial_usinghandlerservice_1">
+
 === Delete Todos only via the handler
 		
 			Change your
-			<code>TodoDeletionPart</code>
+			`TodoDeletionPart`
 			class so that it uses the
-			<code>EHandlerService</code>
+			`EHandlerService`
 			to trigger the existing deletion handler to delete the selected
-			<code>Todo</code>
+			`Todo`
 			from the
-			<code>ComboViewer</code>
+			`ComboViewer`
 			.
 		
 		
@@ -35,12 +35,12 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.commands</code>
+						`org.eclipse.e4.core.commands`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.contexts</code>
+						`org.eclipse.e4.core.contexts`
 					
 				</listitem>
 			</itemizedlist>
@@ -48,11 +48,11 @@
 		
 	
 
-[[tutorial_usinghandlerservice_2">
+
 === Implementation
 		
 			Change your
-			<code>TodoDeletionPart</code>
+			`TodoDeletionPart`
 			based on the following example code.
 
 		

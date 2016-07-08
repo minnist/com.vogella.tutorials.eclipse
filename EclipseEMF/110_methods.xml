@@ -1,8 +1,8 @@
 
-	<title>Generating methods
+== Generating methods
 	 By default EMF generates getter and setter for every class. You
 		can also add Operations or for example overwrite methods, e.g., the 
-		<code>toString()</code>
+		`toString()`
 		method. For Article the following toString method was generated
 		in "ArticleImpl
 	

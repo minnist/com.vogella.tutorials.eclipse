@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Exercise: Add a new custom property page
+== Exercise: Add a new custom property page
     In this exercise we want to reuse the project from the previous exercise.
     <section>
         <title>Target
@@ -20,7 +20,7 @@ Version 0.3, 06.07.2016
     
     <section>
         <title>Adding a custom property page
-        Add the <code>org.eclipse.ui.propertyPages</code> extension point and configure the
+        Add the `org.eclipse.ui.propertyPages` extension point and configure the
             page like this:
         
             <mediaobject>
@@ -29,9 +29,9 @@ Version 0.3, 06.07.2016
                 </imageobject>
             </mediaobject>
         
-        The referenced <code>ExamplePropertyPage</code> should extend the
-                <code>org.eclipse.ui.dialogs.PropertyPage</code> class and implement the
-                <code>org.eclipse.ui.IWorkbenchPropertyPage</code> interface.
+        The referenced `ExamplePropertyPage` should extend the
+                `org.eclipse.ui.dialogs.PropertyPage` class and implement the
+                `org.eclipse.ui.IWorkbenchPropertyPage` interface.
         <programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExamplePropertyPage.java"/>
 		</programlisting>

@@ -1,7 +1,7 @@
-[[exercisetycho_unit]]
+
 == Exercise: Tycho build for test plug-ins
 
-[[exercisetycho_unit_target]]
+
 === Target of this exercise
 		
 The following exercise demonstrates how to run unit tests with Tycho. 
@@ -10,7 +10,7 @@ It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercis
 The tests of the implementation belong into a separate plug-in or fragment project.
 We decide that our software tests should test the API defined by the plug-in, therefore we create a plug-in for the unit tests.
 
-[[exercisetycho_unit_testproject]]
+
 
 === Adding the test dependencies
 
@@ -48,7 +48,7 @@ image::tycho-unittest-dependencies.png[Unit test dependencies]
 		
 The default are sufficient for this test plug-in, hence we need no separate pom for the test plug-in.
 
-[[exercisetycho_unit_unittest]]
+
 === Create a unit test
 
 Create the following unit test, as an example. 
@@ -60,7 +60,7 @@ It is only used to demonstrate how Tycho runs the tests.
 include::res/tests/ExampleTest.java[]     
 ----	
 
-[[plugin_unittestrun]]
+
 === Run the build with the tests
         
 Run the build from the main directory. This should work fine.

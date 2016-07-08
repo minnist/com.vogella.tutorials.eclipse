@@ -1,10 +1,10 @@
 
-	<title>Exercise: Connect Java classes with the parts
-[[tutorial_modelelements2">
+== Exercise: Connect Java classes with the parts
+
 === Create a new package and some Java classes
 		
 			Create the
-			<code>com.example.e4.rcp.todo.parts</code>
+			`com.example.e4.rcp.todo.parts`
 			package in the application plug-in.
 		
 		
@@ -30,7 +30,7 @@
 		</tip>
 		
 			The following code shows the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class. All classes
 			should not
 			extend
@@ -47,11 +47,11 @@
 			</programlisting>
 		
 	
-[[tutorial_modelelementsclasses">
+
 === Connect the Java classes with your parts
 		
 			Open the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file and connect the class with the
 			corresponding part model element.
 			You can do
@@ -102,7 +102,7 @@
 			The Eclipse 4 model editor allows you to search for an existing
 			class
 			via the
-			<guibutton>Find...</guibutton>
+			_Find..._
 			button. The initial list of
 			_Contribution Classes_
 			is empty, start typing in the
@@ -120,7 +120,7 @@ image::tutorial_model60.png[Finding a model class in the Application model,pdfwi
 image::tutorial_model62.png[Finding a model class in the Application model,pdfwidth=60%]
 		
 	
-[[tutorial_modelelements3">
+
 === Validating
 
 		 Run your application. It should start, but you should see no
@@ -131,7 +131,7 @@ image::tutorial_model62.png[Finding a model class in the Application model,pdfwi
 			To validate that the model objects are created by the Eclipse runtime
 			create a no-argument constructor for one of the
 			classes and add a
-			<code>System.out.println()</code>
+			`System.out.println()`
 			statement.
 
 			Afterwards verify that the constructor is called, once you

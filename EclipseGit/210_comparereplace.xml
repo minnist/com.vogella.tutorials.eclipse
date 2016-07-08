@@ -1,6 +1,6 @@
 
-	<title>Comparing and replacing files based on the Git history
-[[comparereplace_compare">
+== Comparing and replacing files based on the Git history
+
 === Comparing files
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -25,7 +25,7 @@
 image::egit_compare10.png[Compare,pdfwidth=60%]
 		
 	
-[[comparereplace_replace">
+
 === Replacing files
 		<indexterm>
 			<primary>Eclipse Git</primary>

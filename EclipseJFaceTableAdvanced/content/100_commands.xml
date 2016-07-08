@@ -1,17 +1,17 @@
 
-	<title>Commands
-[[commands_add">
+== Commands
+
 === Add objects to the table
 		
 			This chapter shows how to add persons to the
-			<code>TableViewer</code>.
+			`TableViewer`.
 		
 		
 			You have to make the selection of the
-			<code>Viewer</code>
+			`Viewer`
 			available and also provide public method to refresh the data of to
 			the
-			<code>Viewer</code>
+			`Viewer`
 			so that other components can trigger the refresh process.
 		
 		
@@ -22,12 +22,12 @@
 		
 		
 			Create a
-			<code>Dialog</code>
+			`Dialog`
 			to enter the data for the additional person. Create the
-			<code>de.vogella.jface.tableviewer.dialogs</code>
+			`de.vogella.jface.tableviewer.dialogs`
 			package
 			and the following
-			<code>AddPersonDialog</code>
+			`AddPersonDialog`
 			class.
 		
 		
@@ -38,7 +38,7 @@
 		
 		
 			Create a new
-			<code>View</code>
+			`View`
 			called
 			_ChangeView_
 			to your application and add it to your
@@ -46,13 +46,13 @@
 		
 		
 			This
-			<code>View</code>
+			`View`
 			contains a
-			<code>Button</code>
+			`Button`
 			which allow to start the
-			<code>Dialog</code>,
+			`Dialog`,
 			adds the new Person to the data and refreshes the
-			<code>Viewer</code>.
+			`Viewer`.
 		
 		
 			<programlisting language="java">
@@ -64,13 +64,13 @@
 			When you finished this successfully,
 			you are able to add new persons to
 			your
-			<code>TableViewer</code>
+			`TableViewer`
 			via clicking on the
-			<code>Button</code>.
+			`Button`.
 		
 	
 
-[[commands_delete">
+
 === Delete objects from your table
 		
 			We will implement, that the current selected persons can be
@@ -78,13 +78,13 @@
 		
 		
 			Create the command
-			<code>de.vogella.jface.tableviewer.commands.DeletePerson</code> with the default
-			handler <code>de.vogella.jface.tableviewer.commands.DeletePerson</code>. Add the
+			`de.vogella.jface.tableviewer.commands.DeletePerson` with the default
+			handler `de.vogella.jface.tableviewer.commands.DeletePerson`. Add the
 			command to your menu.
 		
 		
 			Implement class
-			<code>de.vogella.jface.tableviewer.commands.DeletePerson</code>.
+			`de.vogella.jface.tableviewer.commands.DeletePerson`.
 		
 		
 			<programlisting language="java">
@@ -94,11 +94,11 @@
 		
 		
 			Please try to delete entries of the table by selection entries
-			and executing <guibutton>Delete Action</guibutton>.
+			and executing _Delete Action_.
 		
 	
 
-[[commands_copytoclipboard">
+
 === Copy data to the system clipboard
 		
 			This chapter shows how to copy the table data to the system
@@ -106,9 +106,9 @@
 		
 		
 			Create the command
-			<code>de.vogella.jface.tableviewer.commands.CopyPersonClipboard</code> with the
+			`de.vogella.jface.tableviewer.commands.CopyPersonClipboard` with the
 			default handler
-			<code>de.vogella.jface.tableviewer.commands.CopyPersonClipboard</code>. Add the
+			`de.vogella.jface.tableviewer.commands.CopyPersonClipboard`. Add the
 			command to the menu.
 		
 		

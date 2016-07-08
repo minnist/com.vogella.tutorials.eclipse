@@ -1,6 +1,6 @@
 
-	<title>Using the History view
-[[historyview_intro">
+== Using the History view
+
 === Purpose of the history view
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -12,9 +12,7 @@
 			<secondary>History view
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>History view</primary>
-		</indexterm>
+		
 		
 			The
 			_History_
@@ -33,10 +31,7 @@
 			screenshot.
 		
 		
-image::egithistoryview10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>History view of changes,pdfwidth=60%]
+image::egithistoryview10.png" scale="30[History view of changes,pdfwidth=60%]
 		
 
 		
@@ -57,7 +52,7 @@ image::egithistoryview10.png" scale="30" />
 			).
 		
 	
-[[historyview_seechanges">
+
 === Review the repository history via the History view 
 
 		
@@ -89,10 +84,7 @@ image::historytrackselection10.png[Tracking active selection,pdfwidth=60%]
 
 
 		
-image::githistoryview10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>History View,pdfwidth=60%]
+image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 		
 		Via right-click on an individual file you can compare
 			this
@@ -126,7 +118,7 @@ image::githistoryview10.png" scale="30" />
 	
 
 
-[[historyview_settings">
+
 === The History view filters
 
 		
@@ -164,20 +156,14 @@ image::githistoryview10.png" scale="30" />
 			tooltips.
 		
 		
-image::historyview_toolbar10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Toolbar settings in history view,pdfwidth=60%]
+image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdfwidth=60%]
 		
 		The following listing gives an overview of the purpose of the different buttons.
 
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/history-view-buttons.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>History View Buttons</phrase>
+					<imagedata fileref="./images/history-view-buttons.png" scale="60[History View Buttons</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -245,7 +231,7 @@ image::historyview_toolbar10.png" scale="30" />
 	
 
 
-[[historyview_search">
+
 === Using search
 
 		
@@ -294,7 +280,7 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 		</note>
 	
 
-[[historyview_commitdetails">
+
 === Showing details of a commit
 		
 			If you want to see more details about a commit, right-click it and
@@ -306,10 +292,7 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 image::commitviewer10.png[Commit Viewer,pdfwidth=60%]
 		
 		
-image::commitviewer20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Commit Viewer,pdfwidth=60%]
+image::commitviewer20.png" scale="30[Commit Viewer,pdfwidth=60%]
 		
 
 	

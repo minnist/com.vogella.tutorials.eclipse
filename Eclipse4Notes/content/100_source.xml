@@ -1,16 +1,16 @@
 
-	<title>Source code
+== Source code
 
-[[e4tech_application.xmi">
+
 === Workbench XMI file
 		
 			The base workbench model for the Eclipse IDE is defined in the
 			"org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
 			In
 			the
-			<code>org.eclipse.platform</code>
+			`org.eclipse.platform`
 			plug-in you find the
-			<filename>LegacyIDE.e4xmi</filename>
+			_LegacyIDE.e4xmi_
 			file which defines the initial
 			window and some
 			_model Add-ons_
@@ -20,67 +20,67 @@
 			If Eclipse is started in the compatibility mode, this file is read
 			via
 			the
-			<code>E4Workbench</code>
+			`E4Workbench`
 			class. This class is part of the
-			<code>org.eclipse.e4.workbench.ui.internal</code>
+			`org.eclipse.e4.workbench.ui.internal`
 			package.
-			<code>E4Workbench</code>
+			`E4Workbench`
 			will then convert the relevant extension points into elements of the
 			application
 			model.
 		
 	
-[[e4tech_application">
+
 === Eclipse 4 application - E4Application
 		
 			The
-			<code>org.eclipse.e4.ui.workbench.swt.E4Application</code>
+			`org.eclipse.e4.ui.workbench.swt.E4Application`
 			application is defined in the extension point
-			<code>org.eclipse.core.runtime.applications</code>
+			`org.eclipse.core.runtime.applications`
 			in the
-			<code>org.eclipse.e4.ui.workbench.swt</code>
+			`org.eclipse.e4.ui.workbench.swt`
 			plug-in.
 		
 		
 			It points to the
-			<code>org.eclipse.e4.ui.internal.workbench.swt.E4Application
-			</code>
+			`org.eclipse.e4.ui.internal.workbench.swt.E4Application
+			`
 			class which implements the
-			<code>IApplication</code>
+			`IApplication`
 			interface.
 		
 		
 			The
-			<code>E4Application</code>
+			`E4Application`
 			class, reads the parameter passed to the application, evaluates the
 			model
 			and builds up the context. The
-			<code>loadApplicationModel(IApplicationContext appContext,
+			`loadApplicationModel(IApplicationContext appContext,
 				IEclipseContext eclipseContex)
-			</code>
+			`
 			method
 			will load the initial application. The
-			<code>createE4Workbench IApplicationContext
+			`createE4Workbench IApplicationContext
 				applicationContext,
 				Display display)
-			</code>
+			`
 			method will process the whole model.
 		
 	
-[[e4tech_resourcehandler">
+
 === Model Resource Handler
 
 		
 			The
-			<code>org.eclipse.e4.ui.internal.workbench.ResourceHandler</code>
+			`org.eclipse.e4.ui.internal.workbench.ResourceHandler`
 			class is responsible for loading and saving the model. The
-			<code>loadBaseModel()</code>
+			`loadBaseModel()`
 			method will load the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			model.
 		
 	
-[[e4tech_other">
+
 === Other important classes
 
 		<table frame='all'>

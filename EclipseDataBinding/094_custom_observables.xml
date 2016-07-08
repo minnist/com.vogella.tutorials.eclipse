@@ -1,21 +1,21 @@
 
-	<title>Extending data binding with custom observables
+== Extending data binding with custom observables
 	<section>
 === Developing custom observables
 		
 			Sometimes the observables, which are provided by the factories (see
 			<xref linkend="databinding_observable_factories" />
 			), are not sufficient and you might want to create a custom
-			<code>IObservable</code>
+			`IObservable`
 			.
 		
 		
 			This implementation can extend the
-			<code>AbstractObservable</code>
+			`AbstractObservable`
 			class
 			or one
 			of it's subclasses, like the
-			<code>AbstractObservableValue</code>
+			`AbstractObservableValue`
 			class.
 		
 		For example the following custom widget allows to set a text.
@@ -28,26 +28,26 @@
 		<note>
 			
 				Since there is no predefined
-				<code>IObservable</code>
+				`IObservable`
 				for custom widgets, you have to
 				implement a custom one.
 
 				While is is possible to use
-				<code>PojoProperties</code>
+				`PojoProperties`
 				class
 				to create an
-				<code>IObservableValue</code>
+				`IObservableValue`
 				by using
-				<code>PojoProperties.value("text").observe(customWidget)</code>
+				`PojoProperties.value("text").observe(customWidget)`
 				this would not result in an
-				<code>ISWTObservableValue</code>
+				`ISWTObservableValue`
 				.
 				Only by using an
-				<code>ISWTObservable</code>
+				`ISWTObservable`
 				classes like
-				<code>ControlDecorationSupport</code>
+				`ControlDecorationSupport`
 				would work, because only those offer a
-				<code>public Widget getWidget();</code>
+				`public Widget getWidget();`
 				method, so that the widget may be
 				decorated.
 			
@@ -57,11 +57,11 @@
 === Directly implement IObservable
 		
 			The
-			<code>CustomWidgetObservableValue</code>
+			`CustomWidgetObservableValue`
 			extends
-			<code>AbstractObservableValue</code>
+			`AbstractObservableValue`
 			and also implements the
-			<code>ISWTObservableValue</code>
+			`ISWTObservableValue`
 			interface.
 		
 		
@@ -81,16 +81,16 @@
 === Implement an IProperty rather than IObservable directly
 		
 			A better approach is to implement the
-			<code>IProperty</code>
+			`IProperty`
 			interface, like
-			<code>IValueProperty</code>
+			`IValueProperty`
 			,
-			<code>IWidgetValueProperty</code>
+			`IWidgetValueProperty`
 			and others.
 		
 		
 			So let's implement the solution of the previous section with an
-			<code>IProperty</code>
+			`IProperty`
 			implementation.
 		
 		
@@ -100,7 +100,7 @@
 		
 		
 			This
-			<code>WidgetValueProperty</code>
+			`WidgetValueProperty`
 			can be used like this:
 		
 		
@@ -114,32 +114,32 @@
 === Delegates for common properties of different objects
 		
 			Delegating properties act a bit like a factory for
-			<code>IProperty</code>
+			`IProperty`
 			objects,
 			where the
-			<code>IProperty</code>
+			`IProperty`
 			is not created directly, but at the moment, when the
-			<code>observe</code>
+			`observe`
 			method is called. For instance a
-			<code>DelegatingValueProperty</code>
+			`DelegatingValueProperty`
 			creates a
-			<code>IValueProperty</code>
+			`IValueProperty`
 			according
 			to the object, which should be observed.
 		
 		
 			So you can decision, which
-			<code>IValueProperty</code>
+			`IValueProperty`
 			is used, is made at the moment, when the
-			<code>observe</code>
+			`observe`
 			method is actually called.
 		
 		
 			Imagine, we want such a factory for the
-			<code>IValueProperty</code>
+			`IValueProperty`
 			classes we created
 			in the former sections. Therefore we can derive from
-			<code>DelegatingValueProperty</code>
+			`DelegatingValueProperty`
 			.
 		
 		
@@ -150,10 +150,10 @@
 		
 		
 			In order to have a factory like the
-			<code>WidgetProperties</code>
+			`WidgetProperties`
 			class, we could
 			create a
-			<code>VogellaProperties</code>
+			`VogellaProperties`
 			class.
 		
 		
@@ -164,7 +164,7 @@
 		
 			You might want to have a look at
 			the
-			<code>WidgetProperties</code>
+			`WidgetProperties`
 			, which contains several methods with more sense for
 			those delegates.
 		

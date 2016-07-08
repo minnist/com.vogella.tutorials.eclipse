@@ -1,10 +1,8 @@
 
-	<title>Running and migrating an Eclipse 3.x RCP application
-[[whymigrate_support">
+== Running and migrating an Eclipse 3.x RCP application
+
 === Using the Eclipse 3.x API on top of an 4.x runtime
-		<indexterm>
-			<primary>Eclipse 3.x API support</primary>
-		</indexterm>
+		
 		
 			It is possible to run Eclipse 3.x API based plug-ins and RCP applications
 			on top of the Eclipse 4.x platform. The
@@ -27,11 +25,9 @@
 		
 
 	
-[[whymigrate_features">
+
 === Technical reasons for migrating to the 4.x API
-		<indexterm>
-			<primary>Migration of Eclipse 3.x RCP applications</primary>
-		</indexterm>
+		
 		The Eclipse 3.x API is
 			effectively
 			frozen, therefore it is recommended to migrate to the latest 4.x API to participate and

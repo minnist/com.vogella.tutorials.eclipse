@@ -1,0 +1,65 @@
+== Getting started
+
+=== Starting the Eclipse IDE
+		
+To start Eclipse, double-click the
+`eclipse.exe`
+(Microsoft Windows) or
+`eclipse`
+(Linux / Mac) file in the directory where you
+unpacked Eclipse.
+		
+The Eclipse system
+prompts you for a
+_workspace_.
+The
+_workspace_
+is
+the location in your file system where Eclipse stores its
+preferences and other resources. For example your
+projects can be stored in the workspace.
+		
+Select
+an empty directory
+and click the
+_OK_
+button.
+		
+image::starteclipse10.png[Selecting the Workspace,pdfwidth=60%]
+		
+Eclipse starts and shows the
+_Welcome_
+page. Close this
+page
+by
+clicking the
+_x_
+beside
+_Welcome_.
+		
+image::starteclipse20.png[Closing the Eclipse welcome screen,pdfwidth=60%]
+		
+After closing the welcome screen, the application
+should look
+similar to the following screenshot.
+		
+image::starteclipse30.png[Closing the Eclipse welcome screen,pdfwidth=60%]
+		
+=== Appearance
+
+The appearance of Eclipse can be configured. By default, Eclipse
+ships with a few themes but you can also extend Eclipse with new
+themes.
+		
+To change the appearance, select from the menu
+menu:Window[Preferences > General > Appearance].
+		
+The
+_Theme_
+selection allows you to change the appearance of your Eclipse IDE.
+For example you can switch to the
+_Dark_
+theme of Eclipse.
+		
+image::starteclipse40.png[Changing the theme,pdfwidth=60%]
+		

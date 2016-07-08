@@ -1,6 +1,6 @@
 
-	<title>Using JARs (libraries) in Eclipse
-[[classpath_jar">
+== Using JARs (libraries) in Eclipse
+
 === Adding a Java library to the project classpath
 		<indexterm>
 			<primary>Java libraries</primary>
@@ -27,10 +27,10 @@
 		
 			For example, you can
 			create a new Java project
-			<code>de.vogella.eclipse.ide.jars</code>
+			`de.vogella.eclipse.ide.jars`
 			. Then create
 			a new folder called
-			<code>lib</code>
+			`lib`
 			by right-clicking on
 			your project and selecting
 			menu:New[Folder]
@@ -38,10 +38,7 @@
 		
 
 		
-image::jar10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new folder,pdfwidth=60%]
+image::jar10.png[Creating a new folder,pdfwidth=60%]
 		
 		
 			From the menu select
@@ -49,12 +46,12 @@ image::jar10.png" />
 			.
 			Select the Java library you want to import
 			and select the
-			<filename>lib</filename>
+			_lib_
 			folder
 			as target. Alternatively, just copy and paste the
-			<code>jar</code>
+			`jar`
 			file into the
-			<filename>lib</filename>
+			_lib_
 			folder.
 		
 		
@@ -70,22 +67,19 @@ image::jar10.png" />
 			Under
 			menu:Java Build Path[Libraries]
 			select the
-			<guibutton>Add JARs</guibutton>
+			_Add JARs_
 			button.
 		
 		
 			The following example shows how the result would look like
 			if
 			the
-			<filename>junit-4.4.jar</filename>
+			_junit-4.4.jar_
 			file
 			had been added to the project.
 		
 		
-image::externaljars10.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a jar to the current project,pdfwidth=60%]
+image::externaljars10.gif[Adding a jar to the current project,pdfwidth=60%]
 		
 		
 			After adding it to the classpath, Eclipse allows you to use the
@@ -96,11 +90,11 @@ image::externaljars10.gif" />
 			file in the project . Outside Eclipse you
 			still need to configure your
 			classpath, e.g., via the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
-[[classpath_jarsource">
+
 === Attach source code to a Java library
 		<indexterm>
 			<primary>Java library</primary>
@@ -170,7 +164,7 @@ image::externaljars10.gif" />
 			tab, expand the library's node, select the
 			_Source Attachment_
 			attribute and click the
-			<guibutton>Edit</guibutton>
+			_Edit_
 			button.
 		
 		In the Location path field, enter the path of an archive or a
@@ -185,19 +179,16 @@ image::externaljars10.gif" />
 			source
 			in the JDK installation folder. The file is
 			typically called
-			<filename>src.zip</filename>
+			_src.zip_
 			.
 		
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="50" fileref="images/add_source_to_jar.jpg" />
-				</imageobject>
-				<textobject>
-					<phrase>Maintaining the location of the source attachment to an jar,pdfwidth=60%]
+					<imagedata scale="50" fileref="images/add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar,pdfwidth=60%]
 		
 	
-[[classpath_jarjavadoc">
+
 === Add Javadoc for a JAR
 			<indexterm>
 			<primary>Java library</primary>
@@ -222,7 +213,7 @@ image::externaljars10.gif" />
 			library's node, select the
 			<parameter>Javadoc location</parameter>
 			attribute and press the
-			<guibutton>Edit</guibutton>
+			_Edit_
 			button.
 		
 		Enter the location to the file which contains the Javadoc.
@@ -230,9 +221,6 @@ image::externaljars10.gif" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="50" fileref="images/javadoc10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Enter the location to the Javadoc file for a jar file,pdfwidth=60%]
+					<imagedata scale="50" fileref="images/javadoc10.png[Enter the location to the Javadoc file for a jar file,pdfwidth=60%]
 		
 	

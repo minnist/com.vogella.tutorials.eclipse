@@ -1,20 +1,18 @@
 
-	<title>Context functions
-[[icontextfunction_definition">
+== Context functions
+
 === What are context functions?
-		<indexterm>
-			<primary>Context function</primary>
-		</indexterm>
+		
 		
 			A
 			_context function_
 			is an OSGi service which has access to the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			. It
 			allows you to lazily create an object for a given key if this key
 			is
 			not contained in the relevant
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 		
 
@@ -29,7 +27,7 @@
 			injection does not find an
 			existing object
 			under this key, it calls the
-			<code>compute()</code>
+			`compute()`
 			method of the object registered as context function.
 		
 		
@@ -38,12 +36,12 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 
 		
 			In this
-			<code>compute()</code>
+			`compute()`
 			method the context function creates
 			the requested
 			object. As input you
 			receive the local
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			in which the injection was invoked and the requested key.
 		
 
@@ -56,18 +54,16 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 
 	
-[[icontextfunction_creation">
+
 === Creation of a context function
-		<indexterm>
-			<primary>IContextFunction</primary>
-		</indexterm>
+		
 		
 			Context functions
 			are typically contributed as OSGi services. They
 			extend the
-			<code>ContextFunction</code>
+			`ContextFunction`
 			class from the
-			<code>org.eclipse.e4.core.contexts</code>
+			`org.eclipse.e4.core.contexts`
 			package. The Eclipse runtime adds
 			context functions
 			by default to the
@@ -75,16 +71,16 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 		
 			They register itself as OSGi service for the
-			<code>IContextFunction</code>
+			`IContextFunction`
 			interface.
 		
 		<tip>
 			
 				Question: Why should you register your service for the
-				<code>IContextFunction</code>
+				`IContextFunction`
 				interface
 				but extend the
-				<code>ContextFunction</code>
+				`ContextFunction`
 				class?
 			
 			
@@ -95,7 +91,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 				your
 				service continues to work, as the abstract
 				class
-				<code>ContextFunction</code>
+				`ContextFunction`
 				can provide a default implementation.
 			
 		</tip>
@@ -114,11 +110,11 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			the injection would
 			have to use
 			the
-			<code>@Named</code>
+			`@Named`
 			annotation to specify the key.
 		
 	
-[[icontextfunction_example">
+
 === Examples for context function registrations
 		
 			The following example shows the declaration of a
@@ -128,7 +124,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			and responsible
 			for
 			the
-			<code>vogella</code>
+			`vogella`
 			key.
 		
 		
@@ -155,7 +151,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 		
 
 	
-[[icontextfunction_evaluation">
+
 === When to use context functions?
 		
 			Using
@@ -165,7 +161,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			that these functions
 			have
 			access to the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy. They have access to the context in which the dependency
 			injection was called.
 		
@@ -177,13 +173,13 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			Standard OSGi services
 			have no direct access to
 			the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 		
 
 	
 
-[[icontextfunction_publishingtoosgi">
+
 === Publishing to the OSGi service registry from a context function
 		
 		
@@ -200,7 +196,7 @@ image::contextfunctionoverview10.png[Context function query,pdfwidth=60%]
 			following example demonstrates how to publish an
 			implementation into
 			the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			and to the OSGi service registry.
 		
 		

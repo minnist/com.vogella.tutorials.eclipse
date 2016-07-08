@@ -1,10 +1,8 @@
 
-	<title>Eclipse code checks and cleanup
-[[codequality_jdt">
+== Eclipse code checks and cleanup
+
 === Java Development Toolkit code checks
-		<indexterm>
-			<primary>Code checks</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>code checks
@@ -17,12 +15,12 @@
 			of a
 			variable which
 			has no effect, e.g.,
-			<code>x=x</code>
+			`x=x`
 			, causes an error in
 			Eclipse.
 		
 	
-[[codequality_settings">
+
 === Configuring the code settings
 
 		
@@ -35,35 +33,29 @@
 		
 		
 image::eclipsecodequality10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Code settings,pdfwidth=60%]
+						scale="40[Code settings,pdfwidth=60%]
 		
 	
-[[codequality_null">
+
 === Annotation-based Null analysis
 		You can enable annotation-based null checks in Eclipse via the
 			setting highlighted in the following screenshot.
 		
 		
 image::eclipsecodequality20.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Null annotations,pdfwidth=60%]
+						scale="40[Null annotations,pdfwidth=60%]
 		
 		
 			After enabling this setting, you can use the
-			<code>@NonNull</code>
+			`@NonNull`
 			annotation on method parameters or variable definitions to indicate
 			that these are not allowed to be NULL. You can also use the
-			<code>@Nullable</code>
+			`@Nullable`
 			annotation to define that a variable can be NULL.
 		
 	
 
-[[codequality_codeclean">
+
 === Running a code cleanup and removal of trailing whitespace
 		
 		Eclipse has the option to perform cleanup actions on existing
@@ -86,7 +78,7 @@ image::codecleanup10.png[,pdfwidth=60%]
 			Select
 			_Use custom profile_
 			and press
-			<guibutton>Configure...</guibutton>
+			_Configure..._
 			to configure the actions which should be performed on your code.
 		
 		
@@ -103,9 +95,9 @@ image::codecleanup30.png[,pdfwidth=60%]
 		</warning>
 		
 			After finishing the configuration, press
-			<guibutton>OK</guibutton>
+			_OK_
 			and the
-			<guibutton>Next</guibutton>
+			_Next_
 			button in the cleanup wizard to get a preview of the changes.
 		
 			

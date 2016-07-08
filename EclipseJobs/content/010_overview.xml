@@ -1,10 +1,8 @@
 
-	<title>Eclipse background processing
-[[eclipsejobs_uithread">
+== Eclipse background processing
+
 === Main thread
-		<indexterm>
-			<primary>SWTException - Invalid thread access</primary>
-		</indexterm>
+		
 		
 			An Eclipse RCP application runs in one process but can create
 			multiple threads.
@@ -38,7 +36,7 @@
 			tries to update the UI,
 			the Eclipse
 			framework throws an
-			<code>SWTException</code>
+			`SWTException`
 			exception.
 		
 		
@@ -92,34 +90,30 @@
 	
 
 
-[[eclipsejobs_uisynchronize">
+
 === Using dependency injection and UISynchronize
-		<indexterm>
-			<primary>UISynchronize</primary>
-		</indexterm>
+		
 		
 			The
-			<code>org.eclipse.e4.ui.di</code>
+			`org.eclipse.e4.ui.di`
 			plug-in contains the
-			<code>UISynchronize</code>
+			`UISynchronize`
 			class. An instance of this class can
 			be injected into an Eclipse
 			application via dependency injection.
 		
 		
-			<code>UISynchronize</code>
+			`UISynchronize`
 			provides the
-			<code>syncExec()</code>
+			`syncExec()`
 			and
-			<code>asyncExec()</code>
+			`asyncExec()`
 			methods to synchronize with the main thread.
 		
 	
-[[eclipsejobs_jobs">
+
 === Eclipse Jobs API
-		<indexterm>
-			<primary>Job (Concurrency)</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Concurrency</primary>
 			<secondary>Job</secondary>
@@ -128,7 +122,7 @@
 			The Eclipse Jobs API provides support for running background
 			processes and providing feedback
 			about the progress of the
-			<code>Job</code>
+			`Job`
 			.
 		
 
@@ -152,7 +146,7 @@
 		
 		
 			The creation and scheduling of a
-			<code>Job</code>
+			`Job`
 			is demonstrated in the following code snippet.
 		
 
@@ -164,29 +158,29 @@
 		
 		
 			If you want to update the user interface from a
-			<code>Job</code>,
+			`Job`,
 			you need to synchronize the corresponding action with the user
 			interface similar to the direct usage of threads.
 		
 	
 
-[[eclipsejobs_prio">
+
 === Priorities of Jobs
 		
 			You can set the
-			<code>Job</code>
+			`Job`
 			priority via the
-			<code>job.setPriority()</code>
+			`job.setPriority()`
 			method. The
-			<code>Job</code>
+			`Job`
 			class contains predefined priorities, e.g.
-			<code>Job.SHORT</code>
+			`Job.SHORT`
 			,
-			<code>Job.LONG</code>
+			`Job.LONG`
 			,
-			<code>Job.BUILD</code>
+			`Job.BUILD`
 			and
-			<code>Job.DECORATE</code>
+			`Job.DECORATE`
 			.
 		
 		
@@ -194,24 +188,24 @@
 			which
 			order
 			the
-			<code>Jobs</code>
+			`Jobs`
 			are scheduled. For example,
 			jobs
 			with the priority
-			<code>Job.SHORT</code>
+			`Job.SHORT`
 			are scheduled before jobs with the
-			<code>Job.LONG</code>
+			`Job.LONG`
 			priority
 			.
 			Check the
 			JavaDoc of
 			the
-			<code>Job</code>
+			`Job`
 			class for details.
 		
 
 	
-[[busyindicator">
+
 === Blocking the UI and providing feedback
 		
 			Sometimes
@@ -226,7 +220,7 @@
 			way to provide feedback is to change
 			the
 			cursor via the
-			<code>BusyIndicator.showWhile()</code>
+			`BusyIndicator.showWhile()`
 			method call.
 		
 		
@@ -240,7 +234,7 @@
 			busy
 			indicator
 			until the
-			<code>Runnable</code>
+			`Runnable`
 			is done.
 		
 

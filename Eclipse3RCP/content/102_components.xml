@@ -1,5 +1,5 @@
 
-	<title>Main components of an Eclipse RCP application
+== Main components of an Eclipse RCP application
 	 The minimal required plug-ins to create and run an
 		minimal
 		Eclipse RCP
@@ -47,10 +47,10 @@
 	
 	
 		The Eclipse application is the equivalent of the Java
-		<code>main()</code>
+		`main()`
 		method. Applications are defined via the extension point
-		<code>org.eclipse.core.runtime.applications</code>
+		`org.eclipse.core.runtime.applications`
 		and must extend
-		<code>IApplication</code>
+		`IApplication`
 		.
 	

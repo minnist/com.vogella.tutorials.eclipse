@@ -1,4 +1,4 @@
-[[resources_p2]]
+
 == Eclipse p2 update resources
 
 https://wiki.eclipse.org/Equinox/p2 - The Eclipse p2 wiki

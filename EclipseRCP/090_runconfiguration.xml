@@ -1,10 +1,8 @@
 
-	<title>The usage of run configurations
-[[runconfiguration_overview">
+== The usage of run configurations
+
 === What are run configurations?
-		<indexterm>
-			<primary>Run configuration</primary>
-		</indexterm>
+		
 		
 			A
 			_run configuration_
@@ -29,7 +27,7 @@
 			
 		</tip>
 	
-[[runconfiguration_seeing">
+
 === Reviewing run configurations
 		
 			To review and edit your run configurations select
@@ -51,10 +49,7 @@
 			application.
 		
 		
-image::lauchconfiguration20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Shows the run configuration, highlighting the location
+image::lauchconfiguration20.png[Shows the run configuration, highlighting the location
 						setting,pdfwidth=60%]
 		
 
@@ -62,11 +57,9 @@ image::lauchconfiguration20.png" />
 
 
 
-[[runconfigurationpara">
+
 === Run arguments
-		<indexterm>
-			<primary>Run configuration arguments</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Run arguments</primary>
 			<see>Run configuration arguments</see>
@@ -110,10 +103,7 @@ image::lauchconfiguration20.png" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/launchconfiguration40.png" />
-				</imageobject>
-				<textobject>
-					<phrase>-consoleLog in the run configuration,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
 		
 		<tip>
 			
@@ -123,7 +113,7 @@ image::lauchconfiguration20.png" />
 				if you add the argument
 				<parameter>-Dmy.product.loglevel=INFO</parameter>
 				, you can get the "INFO" value with
-				<code>System.getProperties("my.product.loglevel")</code>
+				`System.getProperties("my.product.loglevel")`
 				.
 			
 		</tip>
@@ -151,7 +141,7 @@ image::lauchconfiguration20.png" />
 							Eclipse application
 							are written to
 							standard-out (
-							<code>System.out</code>
+							`System.out`
 							) which can be viewed in
 							the
 							Eclipse IDE

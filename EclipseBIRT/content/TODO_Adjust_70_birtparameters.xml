@@ -1,6 +1,6 @@
 
-	<title>Parameters and Filter
-[[birtparameters_create">
+== Parameters and Filter
+
 === Defining Parameters
 		 We will now introduce the possibility for the user to select
 			the stock which should get displayed. For this purpose we introduce a
@@ -29,7 +29,7 @@ image::SNAG-0032.gif" format="gif" />
 		 Test your report by clicking on the preview tab. You can change
 			the parameter via the button "Show Report Parameter".
 	
-[[birtparameters_filter">
+
 === Filter
 		 We will add now a filter to the report which will allow to
 			filter based on date. For this we need the fromDate and the toDate

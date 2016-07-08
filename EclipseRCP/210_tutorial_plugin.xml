@@ -1,6 +1,6 @@
 
-	<title>Exercise: Create an Eclipse plug-in
-[[e4_plugin_target">
+== Exercise: Create an Eclipse plug-in
+
 === Target
 		
 			In the following exercise you create a standard Eclipse
@@ -16,7 +16,7 @@
 			
 		</note>
 	
-[[e4_plugin_create">
+
 === Creating a plug-in project
 
 		
@@ -26,10 +26,7 @@
 			.
 		
 		
-image::training_firstrcp08.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Selection the Eclipse Plug-in Wizard,pdfwidth=60%]
+image::training_firstrcp08.png[Selection the Eclipse Plug-in Wizard,pdfwidth=60%]
 		
 
 		
@@ -40,10 +37,7 @@ image::training_firstrcp08.png" />
 			button.
 		
 		
-image::training_firstrcp10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>First page of the Eclipse Plug-in Wizard specifying the
+image::training_firstrcp10.png[First page of the Eclipse Plug-in Wizard specifying the
 						project name.
 					,pdfwidth=60%]
 		
@@ -61,10 +55,7 @@ image::training_firstrcp10.png" />
 			option.
 		
 		
-image::training_firstrcp20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Second page of the Eclipse Plug-in Wizard specifying the
+image::training_firstrcp20.png[Second page of the Eclipse Plug-in Wizard specifying the
 						plug-in ID, version, Name, Activator and the RCP
 						type.
 					,pdfwidth=60%]
@@ -84,7 +75,7 @@ image::training_firstrcp20.png" />
 			without a selection.
 		
 	
-[[e4_plugin_validate">
+
 === Validate the result
 		
 			Open the project and ensure that no Java classes were created in

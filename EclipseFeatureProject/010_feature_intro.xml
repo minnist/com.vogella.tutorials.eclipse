@@ -1,5 +1,5 @@
 
-	<title>What are feature projects and features?
+== What are feature projects and features?
 
 
 	
@@ -27,7 +27,7 @@
 		A
 		feature
 		is described via a
-		<filename>feature.xml</filename>
+		_feature.xml_
 		file. The following listing shows an example of such a file.
 	
 	

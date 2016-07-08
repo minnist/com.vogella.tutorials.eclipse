@@ -1,5 +1,5 @@
 
-	<title>User input help with field assistance
+== User input help with field assistance
 
 
 	<indexterm>
@@ -8,7 +8,7 @@
 	</indexterm>
 	
 		The
-		<code>org.eclipse.jface.fieldassist</code>
+		`org.eclipse.jface.fieldassist`
 		package provides
 		assistance to define user-input help for a
 		widget,
@@ -16,7 +16,7 @@
 		text field or
 		combo
 		box. The
-		<code>ContentProposalAdapter</code>
+		`ContentProposalAdapter`
 		class is responsible for
 		providing the possible input values.
 	
@@ -39,7 +39,7 @@
 		The following code demonstrates the usage of the field assistance
 		functionality. It
 		also uses the
-		<code>ControlDecoration</code>
+		`ControlDecoration`
 		class.
 	
 	

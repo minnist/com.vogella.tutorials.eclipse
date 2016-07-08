@@ -1,6 +1,6 @@
 
 
-	<title>Analyzing Android heap dumps with Eclipse
+== Analyzing Android heap dumps with Eclipse
 	
 		Android allows to create heap dumps of an application's heap.
 		This
@@ -8,7 +8,7 @@
 		To create a heap
 		dump
 		use the
-		<guibutton>Dump HPROF file</guibutton>
+		_Dump HPROF file_
 		button in the
 		_DDMS_
 		_Perspective_

@@ -1,42 +1,26 @@
 
-	<title>OSGi metadata
+== OSGi metadata
 
-[[osgiarch_manifest">
+
 === The manifest file (MANIFEST.MF)
-		<indexterm>
-			<primary>MANIFEST.MF</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-Name</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-Version</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-Activator</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-RequiredExecutionEnvironment</primary>
-		</indexterm>
-		<indexterm>
-			<primary>BREE</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-ActivationPolicy</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Bundle-ClassPath</primary>
-		</indexterm>
+		
+		
+		
+		
+		
+		
+		
+		
 		
 			Technically OSGi plug-ins
 			are
-			<filename>.jar</filename>
+			_.jar_
 			files with additional meta
 			information.
 			This meta
 			information is stored
 			in the
-			<filename>META-INF/MANIFEST.MF</filename>
+			_META-INF/MANIFEST.MF_
 			file. This file is called the
 			_manifest_
 			file and
@@ -112,7 +96,7 @@
 								identifier:
 							
 							
-								<code>; singleton:=true</code>
+								`; singleton:=true`
 							
 						</entry>
 					</row>
@@ -129,12 +113,12 @@
 						</entry>
 						<entry>
 							Defines an optional activator class which implements the
-							<code>BundleActivator</code>
+							`BundleActivator`
 							interface. An instance of this class is created when the plug-in
 							gets activated. Its
-							<code>start()</code>
+							`start()`
 							and
-							<code>stop()</code>
+							`stop()`
 							methods are called whenever
 							the plug-in
 							is
@@ -196,15 +180,13 @@
 		</table>
 	
 
-[[osgiarch_identifier">
+
 === Bundle-SymbolicName and Version
-		<indexterm>
-			<primary>Bundle-SymbolicName</primary>
-		</indexterm>
+		
 
 		
 			Each plug-in has a symbolic name which is defined via the
-			<code>Bundle-SymbolicName</code>
+			`Bundle-SymbolicName`
 			property. The name starts by convention
 			with the reverse domain
 			name
@@ -217,27 +199,27 @@
 		
 		
 			Each plug-in has also a version number in the
-			<code>Bundle-Version</code>
+			`Bundle-Version`
 			property.
 		
 		
 			The
-			<code>Bundle-Version</code>
+			`Bundle-Version`
 			and the
-			<code>Bundle-SymbolicName</code>
+			`Bundle-SymbolicName`
 			uniquely
 			identifies
 			a plug-in.
 		
 	
-[[osgiarch_semanticversions">
+
 === Semantic Versioning with OSGi
 		
 			OSGi recommends to use a
 			<parameter><![CDATA[<major>.<minor>.<patch>]]></parameter>
 			schema for the
 			version number which is defined via the
-			<code>Bundle-Version</code>
+			`Bundle-Version`
 			field identifier. If you change your plug-in code you increase the
 			version according to the following rule set.
 			<itemizedlist>

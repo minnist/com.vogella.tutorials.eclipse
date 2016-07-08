@@ -1,7 +1,7 @@
-[[buildship_updating]]
+
 == Updating the Gradle build path and project conversion
 
-[[updategradlebuildpathineclipse]]
+
 === Updating Eclipse with the latest changes in the Gradle build file
 
 Eclipse does currently not automatically update the classpath if the `build.gradle` file is updated. 
@@ -9,7 +9,7 @@ Select menu:Gradle[Refresh Gradle Project] from the context menu of the project 
 		
 image::refreshgradlebuildpath.png[Refresh Gradle buildpath in Eclipse]
 		
-[[addgradlesupporttoexistingeclipseproject]]
+
 === Add Gradle support to existing Eclipse project
 
 To convert a Java project to use Gradle, select menu:Gradle[Add Gradle Nature] from the context menu of the project.

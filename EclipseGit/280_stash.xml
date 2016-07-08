@@ -1,5 +1,5 @@
 
-	<title>Stash via the Git repository view
+== Stash via the Git repository view
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>stash via the Git repositories view
@@ -7,7 +7,7 @@
 	</indexterm>
 	
 		The
-		<code>git stash</code>
+		`git stash`
 		command is available in the
 		__
 		_Git repositories_

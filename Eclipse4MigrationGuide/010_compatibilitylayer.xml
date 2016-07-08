@@ -1,13 +1,9 @@
 
-	<title>Running Eclipse 3.x plug-ins on top of Eclipse 4
-[[compatibiliymode_overview">
+== Running Eclipse 3.x plug-ins on top of Eclipse 4
+
 === Using the compatibility mode
-		<indexterm>
-			<primary>Compatibility mode</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Compatibility layer</primary>
-		</indexterm>
+		
+		
 
 		
 			The Eclipse platform team has re-implemented the existing 3.x API on top of the 4.x API. This re-implementation
@@ -30,10 +26,7 @@
 
 		
 		
-image::compatibilitymode10.png" scale="25" />
-				</imageobject>
-				<textobject>
-					<phrase>Compatibility mode of 3.x API and 4.x API,pdfwidth=60%]
+image::compatibilitymode10.png" scale="25[Compatibility mode of 3.x API and 4.x API,pdfwidth=60%]
 		
 
 		
@@ -67,7 +60,7 @@ image::compatibilitymode10.png" scale="25" />
 			completely.
 		
 	
-[[compatibiliylayer_e4runtimeterminology">
+
 === The e4 API and e4 runtime terminology
 		<indexterm>
 			<primary>e4 API
@@ -90,7 +83,7 @@ image::compatibilitymode10.png" scale="25" />
 			term.
 		
 	
-[[compatibiliylayer_features">
+
 === Running 3.x RCP applications on top of an e4 runtime
 		
 			To migrate your Eclipse RCP application to e4 API you have
@@ -104,17 +97,17 @@ image::compatibilitymode10.png" scale="25" />
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.rcp</code>
+						`org.eclipse.rcp`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.emf.ecore</code>
+						`org.eclipse.emf.ecore`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.emf.common</code>
+						`org.eclipse.emf.common`
 					
 				</listitem>
 			</itemizedlist>
@@ -134,13 +127,13 @@ image::compatibilitymode10.png" scale="25" />
 				the
 				<parameter>x-internal</parameter>
 				flag in the
-				<filename>MANIFEST.MF</filename>
+				_MANIFEST.MF_
 				file.
 			
 		</note>
 
 	
-[[compatibiliylayer_value">
+
 === Benefit of adjusting the runtime to Eclipse 4.x
 		Running your Eclipse 3.x RCP application on top of an e4 runtime allows you to start migrating
 			components

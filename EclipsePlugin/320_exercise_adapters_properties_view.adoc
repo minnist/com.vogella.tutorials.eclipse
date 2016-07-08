@@ -1,4 +1,4 @@
-[[adapters_propertyview_example]]
+
 == Exercise - Adapters for the Properties view
 
 We will simply use an adapter to show our data in the _Properties_ view.

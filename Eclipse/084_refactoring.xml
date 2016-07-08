@@ -1,10 +1,8 @@
 
-	<title>Refactoring
-[[refactoring_intro">
+== Refactoring
+
 === Refactoring
-		<indexterm>
-			<primary>Refactoring</primary>
-		</indexterm>
+		
 		
 			_Refactoring_
 			is the process of restructuring the code without
@@ -14,7 +12,7 @@
 			activity.
 		
 	
-[[refactoring_eclipse">
+
 === Refactoring in Eclipse
 		
 			Eclipse supports several refactoring activities, for example,
@@ -45,10 +43,7 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/refactor10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Renaming a class,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/refactor10.png[Renaming a class,pdfwidth=60%]
 		
 
 		

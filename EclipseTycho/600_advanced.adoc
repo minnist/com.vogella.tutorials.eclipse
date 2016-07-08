@@ -1,7 +1,7 @@
-[[tychoadvanced]]
+
 == More Tycho settings
 
-[[maventycho_rootlevelfeatures]]
+
 === Using root level features
 
 A root level feature is a feature which can be updated or uninstalled independently of the product.
@@ -9,7 +9,7 @@ A root level feature is a feature which can be updated or uninstalled independen
 To define that a feature is a root level feature, add installMode="root" behind the feature in the product definition file.
 You need to use a text editor for this at the moment, the product configuration editor does currently not expose that in its user interface.
 
-[[maventycho_encoding]]
+
 	
 === Source Encoding
         
@@ -29,7 +29,7 @@ If you do not set this encoding property the maven build throws warnings similar
                 
 For further information see Maven FAQ for encoding warning (http://maven.apache.org/general.html#encoding-warning).
 
-[[usingamirror]]
+
 === Using a repository mirror
 
 You can create p2 repository mirrors, e.g., you can create a mirror of an update site of an Eclipse release. 
@@ -47,7 +47,7 @@ To use your mirror, configure Maven to use it via the _settings.xml_ file in you
 include::res/mirror/usemirror.txt[]
 ---- 	
 		
-[[maventycho_compilerwarnigns]]
+
 === Removing compiler warning messages from the build
 		
 You can remove compiler warnings from the Maven build by configuring the `tycho-compiler-plugin`. 
@@ -58,7 +58,7 @@ This is demonstrated with the following snippet.
 include::res/compiler/warning.txt[]
 ----    
         	
-[[maventycho_build_settings]]		
+
 === Using the last Git commit as build qualifier special build settings
 
 You can configure the `tycho-packaging-plugin` to use the last Git commit as build qualifier instead of the build time.
@@ -71,10 +71,10 @@ This only works if the project is in a Git repository.
 include::res/tycho/git_timestamps.xml[]
 ----
   	
-[[maventycho_generatepom]]
+
 === Generating and updating POM files for Eclipse components
 
-[[maventycho_generatepom1]]
+
 ==== Generating POM files
         
 Tycho supports the generation of POM files via its `tycho-pomgenerator-plugin:generate-poms` goal. 
@@ -104,7 +104,7 @@ If you want to include Eclipse components which are not in the current directory
 include::res/gen/gen2.txt[]
 ----
 
-[[maventycho_generatepom2]]
+
 === Update POM files with new version number
 
 You can also update existing pom files with the latest version number via the following command.
@@ -139,7 +139,7 @@ This results in better performance, since those features are not necessary for u
 More information about versioning with Tycho can be found in the https://eclipse.org/tycho/sitedocs/tycho-release/tycho-versions-plugin/plugin-info.html[Tycho version wiki].
 
 
-[[tycho_signing]]
+
 === Signing plug-ins
 
 If the user installs plug-ins which are not signed, the user received a warning that the plug-in is not signed.
@@ -165,7 +165,7 @@ To sign the plug-ins add the configuration for the `maven-jarsigner-plugin`
 include::res/signing/pom-addon.txt[]
 ----
 
-[[tycho_buildingnativecomponents]]
+
 === Building native components
 
 Building native components, for example based on C or C++ code, is typically done via antrunner calling the native build system like make.

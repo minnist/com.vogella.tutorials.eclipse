@@ -1,5 +1,5 @@
 
-	<title>Using native code in OSGI
+== Using native code in OSGI
 	
 		OSGi provides support for resolving and loading shared libraries in Java applications. A plug-in
 		can
@@ -10,7 +10,7 @@
 		header.
 		This
 		header value is then used when loading a DLL through the
-		<code>System.loadLibrary()</code>
+		`System.loadLibrary()`
 		method call.
 	
 	
@@ -37,7 +37,7 @@
 	
 	
 		To make your native library available you have to load it via a call of
-		<code>System.libraryLoad()</code>
+		`System.libraryLoad()`
 		, OSGi handles shared libraries lazy, e.g., it does not eagerly load them.
 	
 

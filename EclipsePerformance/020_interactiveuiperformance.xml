@@ -1,5 +1,5 @@
 
-	<title>Monitoring the interactive UI performance
+== Monitoring the interactive UI performance
 	
 		The Eclipse Mars release includes an interactive UI
 		performance measurement feature. If activate a stack trace

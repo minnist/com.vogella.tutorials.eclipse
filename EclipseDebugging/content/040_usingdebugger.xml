@@ -1,6 +1,6 @@
 
-	<title>Debugging in Eclipse
-[[usedebug_breakpoints">
+== Debugging in Eclipse
+
 === Setting Breakpoints
 		<indexterm>
 			<primary>Debugging</primary>
@@ -27,7 +27,7 @@ image::setbreakpoint10.gif[Setting a breakpoint,pdfwidth=60%]
 			For example in the following screenshot we set a breakpoint on
 			the
 			line
-			<code>Counter counter = new Counter();</code>
+			`Counter counter = new Counter();`
 			.
 		
 		
@@ -36,7 +36,7 @@ image::setbreakpoint12.png[Showing a defined breakpoint,pdfwidth=60%]
 
 
 	
-[[usedebug_start">
+
 === Starting the Debugger
 		<indexterm>
 			<primary>Debugging</primary>
@@ -58,7 +58,7 @@ image::debugstart10.gif[Start the debugger,pdfwidth=60%]
 			After you have started the application once via the context menu, you
 			can
 			use the created launch configuration again via the
-			<guibutton>Debug</guibutton>
+			_Debug_
 			button in the Eclipse toolbar.
 		
 		
@@ -81,7 +81,7 @@ image::debugtoolbar10.png[Debug button,pdfwidth=60%]
 			_perspective_
 			once a stop point is reached.
 			Answer
-			<guibutton>Yes</guibutton>
+			_Yes_
 			in the corresponding dialog.
 		
 		
@@ -99,7 +99,7 @@ image::debugstart08.png[,pdfwidth=60%]
 image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 		
 	
-[[usedebug_control">
+
 === Controlling the program execution
 		<indexterm>
 			<primary>Debugging</primary>
@@ -185,10 +185,7 @@ image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 		
 
 		
-image::debugstart30.gif" scale="80" />
-				</imageobject>
-				<textobject>
-					<phrase>Debug Shortcuts,pdfwidth=60%]
+image::debugstart30.gif" scale="80[Debug Shortcuts,pdfwidth=60%]
 		
 		
 			The call stack shows the parts of the program which are currently
@@ -199,15 +196,12 @@ image::debugstart30.gif" scale="80" />
 			.
 		
 		
-image::stack10.gif" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Showing the stack view,pdfwidth=60%]
+image::stack10.gif" scale="50[Showing the stack view,pdfwidth=60%]
 		
 	
 
 
-[[usedebug_skipbreakpoints">
+
 === Breakpoints view and deactivating breakpoints
 		<indexterm>
 			<primary>Debugging</primary>
@@ -249,7 +243,7 @@ image::breakpointview10.png[Breakpoint view,pdfwidth=60%]
 			If you want to deactivate all your breakpoints you
 			can
 			press the
-			<guibutton>Skip all breakpoints</guibutton>
+			_Skip all breakpoints_
 			button. If you press it again, your breakpoints are
 			reactivated. This
 			button is highlighted in the following screenshot.
@@ -260,7 +254,7 @@ image::skipbreakpoints10.gif[De-activating all breakpoints,pdfwidth=60%]
 	
 
 
-[[usedebug_variables">
+
 === Evaluating variables in the debugger
 		<indexterm>
 			<primary>Debugging</primary>
@@ -283,10 +277,7 @@ image::skipbreakpoints10.gif[De-activating all breakpoints,pdfwidth=60%]
 
 
 		
-image::variables10.gif" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Variables View,pdfwidth=60%]
+image::variables10.gif" scale="50[Variables View,pdfwidth=60%]
 		
 		 Use the drop-down menu to display static variables.
 		
@@ -312,7 +303,7 @@ image::variables30.gif[Showing the actual type of the variables,pdfwidth=60%]
 		
 	
 
-[[usedebug_variablechange">
+
 === Changing variable assignments in the debugger
 			<indexterm>
 			<primary>Debugging</primary>
@@ -329,20 +320,17 @@ image::variables30.gif[Showing the actual type of the variables,pdfwidth=60%]
 		
 		
 image::variablesview_change10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Changing the value of a variable,pdfwidth=60%]
+						scale="40[Changing the value of a variable,pdfwidth=60%]
 		
 	
-[[usedebug_debugger">
+
 === Controlling the display of the variables with Detail Formatter
 		
 			By default the
 			_Variables_
 			view
 			uses the
-			<code>toString()</code>
+			`toString()`
 			method to determine how to display the variable.
 		
 
@@ -356,12 +344,12 @@ image::variablesview_change10.png"
 		
 
 			For example the
-			<code>toString()</code>
+			`toString()`
 			method in the
-			<code>Counter</code>
+			`Counter`
 			class
 			may show meaningless information, e.g.
-			<code>de.vogella.combug.first.Counter@587c94</code>
+			`de.vogella.combug.first.Counter@587c94`
 			. To make this output more readable you can right-click on the
 			corresponding variable
 			and select the
@@ -377,7 +365,7 @@ image::variables40.gif[New Detail Formater Screenshot,pdfwidth=60%]
 		
 			Afterwards you can use a method of this class to determine the
 			output. In this example the
-			<code>getResult()</code>
+			`getResult()`
 			method of this class is used. This setup is depicted in the following
 			screenshot.
 		

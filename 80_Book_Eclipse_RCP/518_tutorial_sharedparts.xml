@@ -1,7 +1,7 @@
 <chapter id="tutorial_using_placeholder">
-	<title>Exercise: Sharing elements between perspectives
+== Exercise: Sharing elements between perspectives
 
-[[tutorial_using_placeholder_target">
+
 === Target
 		
 			This tutorial demonstrates how you can share parts between
@@ -10,7 +10,7 @@
 			, this is reused in this exercise.
 		
 	
-[[tutorial_using_placeholder_sharedpart">
+
 === Using shared parts between perspectives
 		
 			Using the
@@ -45,10 +45,7 @@ image::placeholder02.png[Adding placeholders,pdfwidth=60%]
 		
 
 		
-image::placeholder04.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding placeholders,pdfwidth=60%]
+image::placeholder04.png" scale="35[Adding placeholders,pdfwidth=60%]
 		
 		As result you should have two placeholders pointing to the
 			shared

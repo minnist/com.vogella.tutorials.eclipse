@@ -1,6 +1,6 @@
 
-	<title>The platform development team
-[[eclipseplatform_contributions2">
+== The platform development team
+
 === Who is involved?
 
 		
@@ -31,10 +31,7 @@
 			link.
 		
 		
-image::eclipseplatformcontributors.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Screenshots of the Eclipse platform contributors,pdfwidth=60%]
+image::eclipseplatformcontributors.png" scale="60[Screenshots of the Eclipse platform contributors,pdfwidth=60%]
 		
 
 		<tip>
@@ -82,10 +79,7 @@ image::platformcontributions20.png[Acivities in the Eclipse platform UI project,
 			link.
 		
 		
-image::dashboard.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Platform.ui dashboard,pdfwidth=60%]
+image::dashboard.png" scale="30[Platform.ui dashboard,pdfwidth=60%]
 		
 	
 

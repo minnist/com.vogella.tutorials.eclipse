@@ -1,8 +1,8 @@
 
-	<title>Eclipse Resources
+== Eclipse Resources
 	
 		You can register
-		<code>IResourceChangeListener</code>
+		`IResourceChangeListener`
 		on resources in Eclipse. For example, if you have a project, you can add
 		or remove a resource listener to or from it.
 	

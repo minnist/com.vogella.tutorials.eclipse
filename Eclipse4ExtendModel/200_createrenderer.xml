@@ -1,5 +1,5 @@
 
-	<title>Exercise: Create renderer for new model element
+== Exercise: Create renderer for new model element
 	
 		Define a new simple plug-in called
 		_com.vogella.e4.appmodel.renderer_
@@ -9,30 +9,30 @@
 		Add the following plug-ins as dependencies to your new plug-in.
 		<itemizedlist>
 			<listitem>
-				<code>org.eclipse.e4.ui.workbench.renderers.swt</code>
+				`org.eclipse.e4.ui.workbench.renderers.swt`
 			</listitem>
 			<listitem>
-				<code>com.vogella.e4.appmodel.extensions</code>
+				`com.vogella.e4.appmodel.extensions`
 			</listitem>
 			<listitem>
-				<code>org.eclipse.jface</code>
+				`org.eclipse.jface`
 			</listitem>
 			<listitem>
-				<code>org.eclipse.e4.ui.model.workbench</code>
+				`org.eclipse.e4.ui.model.workbench`
 			</listitem>
 			<listitem>
-				<code>org.eclipse.e4.ui.workbench.swt</code>
+				`org.eclipse.e4.ui.workbench.swt`
 			</listitem>
 			<listitem>
-				<code>org.eclipse.e4.core.contexts</code>
+				`org.eclipse.e4.core.contexts`
 			</listitem>
 		</itemizedlist>
 	
 	
 		Create the following new class called
-		<code>BrowserPartRenderer</code>
+		`BrowserPartRenderer`
 		as renderer for your new
-		<code>BrowserPart</code>
+		`BrowserPart`
 		.
 	
 

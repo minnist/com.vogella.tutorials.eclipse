@@ -1,5 +1,5 @@
 
-	<title>Using Mylyn to integrate with Bugzilla
+== Using Mylyn to integrate with Bugzilla
 	<indexterm>
 		<primary>Mylyn</primary>
 		<secondary>bugzilla integration</secondary>
@@ -20,7 +20,7 @@
 		the following link.
 	
 	
-		<code>https://bugs.eclipse.org/bugs/</code>
+		`https://bugs.eclipse.org/bugs/`
 	
 	
 		Mylyn supports accessing the Eclipse bug database via its

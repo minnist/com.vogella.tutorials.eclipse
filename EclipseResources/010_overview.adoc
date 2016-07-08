@@ -1,4 +1,4 @@
-[[eclipseresourcesproject]]
+
 == Eclipse Resources API
 
 === Overview

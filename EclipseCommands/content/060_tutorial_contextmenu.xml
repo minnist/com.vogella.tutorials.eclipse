@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Commands and context menus
+== Tutorial: Commands and context menus
 	
 		In this example you add a context menu to a SWT table widget.
 		Create a
@@ -13,7 +13,7 @@
 	
 	
 		Create a new command with the
-		<code>de.vogella.rcp.intro.commands.popup.showSelected</code>
+		`de.vogella.rcp.intro.commands.popup.showSelected`
 		ID
 		and the name
 		_Show_
@@ -22,7 +22,7 @@
 	
 		In this example we will not use the default handler. Therefore
 		add the
-		<code>org.eclipse.ui.handlers</code>
+		`org.eclipse.ui.handlers`
 		extension point
 		to your plugin.xml file
 		and add a handler. The first
@@ -31,7 +31,7 @@
 		second
 		the class for
 		the handler. Use
-		<code>de.vogella.rcp.intro.commands.popup.handler.ShowSelected</code>
+		`de.vogella.rcp.intro.commands.popup.handler.ShowSelected`
 		as class name.
 	
 	
@@ -65,7 +65,7 @@
 	
 	
 		Now you have add a MenuManager to your view. Select the
-		<code>View</code>
+		`View`
 		class and change it to the following.
 	
 	

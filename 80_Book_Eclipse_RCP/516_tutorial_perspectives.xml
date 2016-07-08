@@ -1,13 +1,13 @@
 <chapter id="tutorial_using_perspectives">
-	<title>Exercise: Using multiple perspectives
-[[tutorial_usingpartservice_target">
+== Exercise: Using multiple perspectives
+
 === Target of this exercise
 		In this exercise you define another perspective and implement a
 			menu to switch between your perspectives.
 		
 	
 
-[[tutorial_usingpartservice_3">
+
 === Create a new perspective
 
 		
@@ -27,7 +27,7 @@
 			
 		</warning>
 	
-[[tutorial_usingpartservice_menu">
+
 === Create new menu entries
 		Create a command and a handler to switch between perspectives.
 			The handler class for switching perspectives
@@ -70,7 +70,7 @@ image::perspective_switchermenu10.png[Perspective switcher menu,pdfwidth=60%]
 		
 
 	
-[[tutorial_usingpartservice_commandparametes">
+
 === Using command parameters to define the perspective ID
 		<tip>
 			This exercise is optional

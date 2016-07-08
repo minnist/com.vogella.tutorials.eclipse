@@ -1,5 +1,5 @@
 
-	<title>SWT snippets and examples
+== SWT snippets and examples
 
 
 	

@@ -1,5 +1,5 @@
 
-	<title>Advantages of using features
+== Advantages of using features
 	The grouping of plug-ins into logical units makes it easier to
 		handle a set of plug-ins. Instead of adding many
 		individual plug-ins
@@ -28,7 +28,7 @@
 	
 		Eclipse provides several predefined features, e.g.
 		the
-		<code>org.eclipse.e4.rcp</code>
+		`org.eclipse.e4.rcp`
 		for Eclipse RCP applications.
 	
 

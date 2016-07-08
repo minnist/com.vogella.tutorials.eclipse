@@ -11,49 +11,43 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Breakpoints
-[[eclipse_breakpoint_debug_model">
+== Breakpoints
+
 === Eclipse Breakpoint Debug Model
 		Breakpoints in general are used to suspend the execution of an
 			application at a certain point.
 		
 		
 			In Eclipse breakpoint classes are derived from the
-			<code>org.eclipse.debug.core.model.IBreakpoint</code>
+			`org.eclipse.debug.core.model.IBreakpoint`
 			interface. As listed below there are also default implementation for
 			breakpoints, as well as more specific breakpoints, e.g.,
-			<code>ILineBreakpoint</code>
+			`ILineBreakpoint`
 			, which also informs about a certain position in a document.
 		
 		
 image::breakpoint_hierarchy.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Class hierarchy of IBreakpoint,pdfwidth=60%]
+						scale="40[Class hierarchy of IBreakpoint,pdfwidth=60%]
 		
 	
-[[eclipse_breakpoint_debug_extension_points">
+
 === Registering custom breakpoints
 		
 			Eclipse provides the
 			<parameter>org.eclipse.debug.core.breakpoints</parameter>
 			extension point for registering custom
-			<code>IBreakpoint</code>
+			`IBreakpoint`
 			classes.
 		
 		
 image::breakpoint_ext_point.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>IBreakpoint extension point,pdfwidth=60%]
+						scale="40[IBreakpoint extension point,pdfwidth=60%]
 		
 		
 			In this definition a
 			<parameter>markerType</parameter>
 			attribute is used, because breakpoints do have a reference to an
-			<code>IMarker</code>
+			`IMarker`
 			, which represents the breakpoint in the UI and it is also used for
 			the persistence of breakpoints.
 		
@@ -69,43 +63,40 @@ image::breakpoint_ext_point.png"
 			</programlisting>
 		
 	
-[[eclipse_breakpoint_creation">
+
 === Creating breakpoints in the Eclipse IDE
 		
 			The easiest approach to create custom breakpoints is to provide an
 			implementation of
-			<code>org.eclipse.debug.ui.actions.IToggleBreakpointsTarget</code>
+			`org.eclipse.debug.ui.actions.IToggleBreakpointsTarget`
 			.
 		
 		
 image::togglebreakpointstarget_hierarchy.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>IToggleBreakpointsTarget type hierarchy,pdfwidth=60%]
+						scale="40[IToggleBreakpointsTarget type hierarchy,pdfwidth=60%]
 		
 		
 			For instance the
-			<code>IToggleBreakpointsTargetExtension</code>
+			`IToggleBreakpointsTargetExtension`
 			interface provides a
-			<code>public boolean canToggleBreakpoints(IWorkbenchPart part,
+			`public boolean canToggleBreakpoints(IWorkbenchPart part,
 				ISelection selection)
-			</code>
+			`
 			method and a
-			<code>public void toggleBreakpoints(IWorkbenchPart part, ISelection
+			`public void toggleBreakpoints(IWorkbenchPart part, ISelection
 				selection) throws CoreException;
-			</code>
+			`
 			where a breakpoint can be toggled according to the current
-			<code>ISelection</code>
+			`ISelection`
 			and/or
-			<code>IWorkbenchPart</code>
+			`IWorkbenchPart`
 			.
 		
 		
 			These
-			<code>IToggleBreakpointsTarget</code>
+			`IToggleBreakpointsTarget`
 			implementations are often provided as an adapter for custom
-			<code>IDebugElements</code>
+			`IDebugElements`
 			.
 		
 		
@@ -115,15 +106,15 @@ image::togglebreakpointstarget_hierarchy.png"
 			</programlisting>
 		
 	
-[[eclipse_breakpoint_manager">
+
 === Registering breakpoints in the IBreakpointManager
 		
 			When an
-			<code>IBreakpoint</code>
+			`IBreakpoint`
 			is created, e.g., by a
-			<code>IToggleBreakpointsTarget</code>
+			`IToggleBreakpointsTarget`
 			, it must be registered to the workspace's
-			<code>IBreakpointManager</code>
+			`IBreakpointManager`
 			.
 		
 		
@@ -134,19 +125,19 @@ image::togglebreakpointstarget_hierarchy.png"
 		
 		
 			When adding or removing
-			<code>IBreakpoints</code>
+			`IBreakpoints`
 			from the
-			<code>IBreakpointManager</code>
+			`IBreakpointManager`
 			its
-			<code>IBreakpointListener</code>
+			`IBreakpointListener`
 			will be informed about it and can act upon the added or removed
 			breakpoint.
 		
 		
 			An
-			<code>IDebugTarget</code>
+			`IDebugTarget`
 			is an instance of
-			<code>IBreakpointListener</code>
+			`IBreakpointListener`
 			by default and is therefore in charge to manage changes concerning
 			breakpoints.
 		

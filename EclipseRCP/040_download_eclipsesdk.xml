@@ -1,6 +1,6 @@
 
 
-	<title>Download the Eclipse Software Development Kit (SDK)
+== Download the Eclipse Software Development Kit (SDK)
 	<indexterm>
 		<primary>Download</primary>
 		<secondary>Eclipse SDK</secondary>
@@ -14,7 +14,7 @@
 		from the following URL:
 	
 	
-		<code>http://download.eclipse.org/eclipse/downloads/</code>
+		`http://download.eclipse.org/eclipse/downloads/`
 	
 
 	This website should look similar to the following screenshot.
@@ -38,10 +38,10 @@
 		multiple
 		files. This
 		format depends on you platform, Windows the
-		<filename>zip</filename>
+		_zip_
 		format, while Linux and Mac OS uses
 		the
-		<filename>tar.gz</filename>
+		_tar.gz_
 		format.
 	
 

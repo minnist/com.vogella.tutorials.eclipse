@@ -1,4 +1,4 @@
-[[tychodependencies]]
+
 == Defining the repository to find Eclipse dependencies for the build
 
 === Defining build dependencies

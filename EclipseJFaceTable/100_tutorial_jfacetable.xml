@@ -1,6 +1,6 @@
 
-	<title>Tutorial: JFace Table Viewer
-[[tutorial_jfacetableoverview">
+== Tutorial: JFace Table Viewer
+
 === Overview of the example
 		
 			We will build an
@@ -22,11 +22,11 @@ image::jfacetable10.gif" />
 		
 	
 
-[[jface_setup">
+
 === Project creation and data model
 		
 			Create a new RCP Project
-			<code>de.vogella.jface.tableviewer</code>
+			`de.vogella.jface.tableviewer`
 			using the
 			"RCP application with a
 			view"
@@ -43,11 +43,11 @@ image::jfacetable10.gif" />
 		
 		
 			The Person
-			<code>class</code>
+			`class`
 			represents the data model for this example.
 			It has
 			also
-			<code>PropertyChange</code>
+			`PropertyChange`
 			support, which is not
 			necessary for this
 			example
@@ -57,7 +57,7 @@ image::jfacetable10.gif" />
 		
 		
 			Create the
-			<code>ModelProvider</code>
+			`ModelProvider`
 			class which is a in-memory
 			representation
 			of your data. This class is
@@ -72,11 +72,11 @@ image::jfacetable10.gif" />
 	
 
 
-[[tutorial_jfacetableviewer_usage">
+
 === Define the viewer
 		
 			Change the
-			<code>View</code>
+			`View`
 			class to the following.
 		
 		
@@ -87,7 +87,7 @@ image::jfacetable10.gif" />
 		
 		
 			The
-			<code>createColumns</code>
+			`createColumns`
 			method
 			creates the table columns, headers, sets the size of the
 			columns and
@@ -97,7 +97,7 @@ image::jfacetable10.gif" />
 			
 
 				The
-				<code>createTableViewerColumn()</code>
+				`createTableViewerColumn()`
 				method
 				has three parameters. The third is currently not used,
 				but we
@@ -111,7 +111,7 @@ image::jfacetable10.gif" />
 		
 			<tip>
 				Please note that we use icons for the married Status. If the
-				<filename>icons</filename>
+				_icons_
 				folder
 				does
 				not exists in your project, create it.
@@ -127,12 +127,12 @@ image::jfacetable10.gif" />
 				folder icons. Alternatively you can only
 				use
 				the
-				<code>setText()</code>
+				`setText()`
 				method.
 			</tip>
 		
 	
-[[tutorial_jfacetableviewer_run">
+
 === Run
 		
 			Run the example. The application should display a non-working

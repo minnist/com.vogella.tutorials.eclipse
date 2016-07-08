@@ -1,16 +1,13 @@
 
-	<title>OSGi service low-level API
-[[osgiapiservice_overview">
+== OSGi service low-level API
+
 === Using the OSGi service API
 		OSGi provides several means of declaring services. This $book focus on the OSGi declarative service
 			functionality but it is also possible to use other means for defining services. These options are depicted in the
 			following picture. Blueprint and Declarative Services provide high level abstractions for handling services.
 		
 		
-image::osgiserviceoptions.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Options for defining OSGi services,pdfwidth=60%]
+image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfwidth=60%]
 		
 
 
@@ -25,30 +22,30 @@ image::osgiserviceoptions.png" scale="30" />
 			services.
 		
 	
-[[osgiservice_bundlecontext">
+
 === BundleContext
 		
 			Access to the service registry is performed via the
-			<code>BundleContext</code>
+			`BundleContext`
 			class.
 		
 		
 			A bundle can define a
-			<code>Bundle-Activator</code>
+			`Bundle-Activator`
 			(Activator) in its declaration. This class must implement the
-			<code>BundleActivator</code>
+			`BundleActivator`
 			interface.
 		
 		
 			If defined,
 			OSGi injects the
-			<code>BundleContext</code>
+			`BundleContext`
 			into the
-			<code>start()</code>
+			`start()`
 			and
-			<code>stop()</code>
+			`stop()`
 			methods of the implementing
-			<code>Activator</code>
+			`Activator`
 			class.
 		
 		
@@ -58,12 +55,12 @@ image::osgiserviceoptions.png" scale="30" />
 		
 		
 			If you do not have an
-			<code>Activator</code>
+			`Activator`
 			,
 			you can use the
-			<code>FrameworkUtil</code>
+			`FrameworkUtil`
 			class from the OSGi framework which allows you to retrieve the
-			<code>BundleContext</code>
+			`BundleContext`
 			for a
 			class.
 		
@@ -74,15 +71,15 @@ image::osgiserviceoptions.png" scale="30" />
 		
 	
 
-[[osgiservice_register">
+
 === Registering services via API
 		
 			A bundle can also register itself for the events
 			(
-			<code>ServiceEvents</code>
+			`ServiceEvents`
 			)
 			of the
-			<code>BundleContext</code>
+			`BundleContext`
 			.
 			These are, for example, triggered if a new bundle is
 			installed or
@@ -113,9 +110,9 @@ image::osgiserviceoptions.png" scale="30" />
 
 		
 			In the
-			<code>registerService()</code>
+			`registerService()`
 			method from the
-			<code>BundleContext</code>
+			`BundleContext`
 			class you can specify arbitrary properties in the
 			dictionary
 			parameter.
@@ -123,21 +120,21 @@ image::osgiserviceoptions.png" scale="30" />
 		
 			You can
 			use the
-			<code>getProperty()</code>
+			`getProperty()`
 			method of the
-			<code>ServiceReference</code>
+			`ServiceReference`
 			class from the
-			<code>org.osgi.framework</code>
+			`org.osgi.framework`
 			package,
 			to access a specific property.
 		
 	
 
-[[osgiservice_aquire">
+
 === Accessing a service via API
 		
 			A bundle can acquire a service via the
-			<code>BundleContext</code>
+			`BundleContext`
 			class. The following example demonstrates that.
 		
 		
@@ -147,7 +144,7 @@ image::osgiserviceoptions.png" scale="30" />
 		
 	
 
-[[osgiservice_problems">
+
 === Low-level API vs OSGi declarative services
 		 OSGi services can be dynamically started and stopped. If you
 			work with the OSGI low-level API you have to handle

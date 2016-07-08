@@ -1,6 +1,6 @@
 
-	<title>Extending an EMF Ecore model (inheritance)
-[[inheritance_overview">
+== Extending an EMF Ecore model (inheritance)
+
 === Overview
 		
 			EMF allows to extend existing models via inheritance. The
@@ -15,7 +15,7 @@
 		
 
 	
-[[inheritance_example">
+
 === Example
 		
 			Create a new EMF project

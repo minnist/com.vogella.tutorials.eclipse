@@ -1,21 +1,18 @@
 <section id="tutorial_keybindinds" role="wrapper">
-	<title>Exercise: Define key bindings
-[[tutorial_keybindinds_bindingtable">
+== Exercise: Define key bindings
+
 === Create binding context entries
 		
 			Select the
 			_Binding Contexts_
 			entry in your application model.
 			Define a new entry with the
-			<code>org.eclipse.ui.contexts.dialogAndWindow</code>
+			`org.eclipse.ui.contexts.dialogAndWindow`
 			ID. As name use "Windows and Dialogs".
 		
 		
 image::exercise_keybindings10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
 		
 		
 			Afterwards add the following sub-entries:
@@ -47,10 +44,7 @@ image::exercise_keybindings10.png"
 		
 		
 image::exercise_keybindings20.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
 		
 		<warning>
 			The name attribute of a binding context entry is not allowed to
@@ -58,7 +52,7 @@ image::exercise_keybindings20.png"
 			
 		</warning>
 	
-[[tutorial_keybindinds_table">
+
 === Create key bindings for a BindingContext
 		
 			Create a key binding for your Save command to the
@@ -79,18 +73,12 @@ image::exercise_keybindings20.png"
 
 		
 image::tutorial_bindingtable10.png"
-						scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>How to add the Binding Context Entries,pdfwidth=60%]
+						scale="35[How to add the Binding Context Entries,pdfwidth=60%]
 		
 
 		
 image::tutorial_bindingtable20.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
 		
 		Run your program and test it.
 	

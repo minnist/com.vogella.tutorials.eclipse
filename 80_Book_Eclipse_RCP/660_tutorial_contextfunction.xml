@@ -1,14 +1,14 @@
 <chapter id="tutorial_contextfunction">
-	<title>Exercise: Create a context function
-[[tutorial_contextfunction_target">
+== Exercise: Create a context function
+
 === Target
 		
 			OSGi services are created by the OSGi runtime and the OSGi runtime
 			does not support the
-			<code>@Inject</code>
+			`@Inject`
 			annotation. In addition OSGi services do not have direct access to
 			the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy.
 		
 		
@@ -16,7 +16,7 @@
 			you to use dependency
 			injection to create
 			an instance of the
-			<code>ITodoService</code>
+			`ITodoService`
 			service and to persists this instance in the Eclipse context.
 			During the creation the event service is injected into
 			your service instance; this allows you to send
@@ -24,11 +24,11 @@
 		
 
 	
-[[tutorial_contextfunction1">
+
 === Add dependencies to the service plug-in
 		
 			Ensure that the following framework dependencies are present in your
-			<code>com.example.e4.rcp.todo.services</code>
+			`com.example.e4.rcp.todo.services`
 			plug-in. Some of them are already part of your
 			manifest
 			file but the list is complete so that you can use this as a
@@ -72,24 +72,21 @@
 
 		
 			The resulting
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file
 			should look like the following screenshot.
 		
 		
-image::contextfunction02.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Dependencies for the Context Function,pdfwidth=60%]
+image::contextfunction02.png[Dependencies for the Context Function,pdfwidth=60%]
 		
 
 	
 
-[[tutorial_contextfunction2">
+
 === Create a class for the context function
 		
 			Create the following new class in your
-			<code>*.service</code>
+			`*.service`
 			plug-in.
 		
 		
@@ -101,7 +98,7 @@ image::contextfunction02.png" />
 
 	
 
-[[tutorial_contextfunction3_enable_ds_annotations">
+
 === Ensure annotation processing and plug-in activation is active
 		
 			Ensure that OSGi services can be defined via annotations in the class via
@@ -109,34 +106,31 @@ image::contextfunction02.png" />
 			.
 		
 		
-image::activate_pde_ds_annotations.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Activate DS annotation processing
+image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
 					,pdfwidth=60%]
 		
 
 	
 
 
-[[tutorial_contextfunction4">
+
 === Deactivate your ITodoService OSGi service
 		
 			Deactivate your OSGi service for the
-			<code>ITodoService</code>
+			`ITodoService`
 			which you have created in
 			<xref linkend="tutorial_e4services_usage" />
 			. You can do this, by
 			To remove this service, deleting the
 			annotation from the
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			.
 		
 
 		<note>
 			
 				You could leave your OSGi service for the
-				<code>ITodoService</code>
+				`ITodoService`
 				active. Eclipse evaluates
 				context
 				functions
@@ -151,13 +145,13 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		</note>
 
 	
-[[tutorial_contextfunction5">
+
 === Notifications from the ITodoService
 		
 			Change the
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			class to get the
-			<code>IEventBroker</code>
+			`IEventBroker`
 			injected and to send out events in case of changes in the data model.
 		
 		
@@ -168,27 +162,27 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		
 
 	
-[[tutorial_contextfunction6">
+
 === Clean-up your user interface code
 
 		
 			In the previous exercise
 			you send out
 			events directly from your
-			<code>NewTodoHandler</code>
+			`NewTodoHandler`
 			. This is considered bad practice as the user interface would be
 			responsible for sending out updates for data model
 			changes.
 		
 		
 			Now that you move this logic to the implementation of the
-			<code>ITodoService</code>
+			`ITodoService`
 			you can remove this code.
 			Thus remove all event notification calls
 			from
 			your plug-in.
 			The following code shows the new
-			<code>NewTodoHandler</code>
+			`NewTodoHandler`
 			handler implementation.
 		
 		
@@ -200,26 +194,26 @@ image::activate_pde_ds_annotations.png" scale="40" />
 
 	
 
-[[tutorial_contextfunction7">
+
 === Validating
 		
 			Validate that the user interface still receives all events for model
 			changes. For
 			example, does the table in the
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class
 			still update when a new
-			<code>Todo</code>
+			`Todo`
 			is created by the wizard?
 		
 		
 			If you delete a
-			<code>Todo</code>
+			`Todo`
 			object via your menu, this should also update the table.
 		
 	
 
-[[tutorial_contextfunction4a">
+
 === Error analysis in case something does not work
 		
 			The generated component xml file
@@ -254,7 +248,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		
 
 	
-[[tutorial_contextfunction_review">
+
 === Review implementation
 		This implementation is better compared to the event notification
 			via

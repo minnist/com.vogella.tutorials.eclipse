@@ -1,5 +1,5 @@
 
-	<title>Exercise: Contribute a preference page to the Eclipse IDE
+== Exercise: Contribute a preference page to the Eclipse IDE
 	<note>
 		
 			This exercise is specific to the Eclipse IDE and will not work for Eclipse 4 RCP applications. See
@@ -15,20 +15,20 @@
 	
 	
 		Create a new simple plug-in project called
-		<code>com.vogella.preferences.page</code>
+		`com.vogella.preferences.page`
 		. No activator is needed and you do not have to use a template.
 
 	
 	
 		Open the
-		<filename>MANIFEST.MF</filename>
+		_MANIFEST.MF_
 		editor and click on the
 		_Extensions_
 		link on the
 		_Overview_
 		tab.
 		On this tab, add the extension
-		<code>org.eclipse.ui.preferencePages</code>
+		`org.eclipse.ui.preferencePages`
 		with the following settings.
 	
 	
@@ -40,16 +40,16 @@
 	
 	
 		Enter the following code for your class
-		<code>MyPreferencePage1</code>
+		`MyPreferencePage1`
 		.
 		Method
-		<code>init()</code>
+		`init()`
 		sets
 		the preferences store and the method
-		<code>createFieldEditors()</code>
+		`createFieldEditors()`
 		registers pre-defined editors for
 		values.
-		<code>checkState()</code>
+		`checkState()`
 		allows to perform a validations. To get notified about
 		value changes
 		you need to override the propertyChange method.
@@ -82,14 +82,14 @@
 	
 	
 		Add a command
-		<code>showPreferenceValues</code>
+		`showPreferenceValues`
 		with the following
 		handler
 		to the menu. This command demonstrates how to
 		access preferences
 		values from
 		the
-		<code>preferencePage</code>
+		`preferencePage`
 		.
 	
 	
@@ -101,10 +101,10 @@
 	
 		To set the default values for preferences use the extension
 		point
-		<code>org.eclipse.core.runtime.preferences</code>
+		`org.eclipse.core.runtime.preferences`
 		. Create a new
 		initializer with the following class
-		<code>de.vogella.preferences.page.preferencepage.MyInitializer</code>
+		`de.vogella.preferences.page.preferencepage.MyInitializer`
 		.
 	
 	
@@ -120,7 +120,7 @@
 		the preference values. Also
 		register
 		a
-		<code>PropertyChangeListener</code>
+		`PropertyChangeListener`
 		to
 		the preferences store to get informed in case the preference
 		settings

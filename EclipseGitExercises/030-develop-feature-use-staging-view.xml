@@ -1,12 +1,12 @@
-[[develop_another_feature_and_use_staging_view]]
+
 == Develop another feature using the Staging View
 
-[[_create_another_local_feature_branch_and_check_it_out_target]]
+
 ===Target of this exercise
 		
 In this exercise you learn how work on multiple features in parallel. 
 
-[[create_another_local_feature_branch_and_check_it_out]]
+
 === Create another local Feature Branch and check it out
 		
 When you develop independent things in parallel, you should develop them in different local branches. 
@@ -21,7 +21,7 @@ image::create-branch-2.png[Create branch,pdfwidth=60%]
 		
 This creates and checkouts a new branch which starts where the remote tracking branch `refs/remotes/origin/master` points to.
 
-[[_develop_the_new_feature]]
+
 === Develop the new feature
 		
 Develop a `Power` class similar to the `Plus` class in the package `org.eclipse.example.calc.internal.operations`.
@@ -32,7 +32,7 @@ image::power-class.png[Power Class,pdfwidth=60%]
 
 image::register-power.png[Register Power,pdfwidth=60%]	
 	
-[[_do_a_undesired_modification]]
+
 === Do a undesired modification
 		
 Sometimes you want to locally change a file but don&#8217;t want this modification to
@@ -50,7 +50,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 			(only available if FindBugs is installed in your Eclipse).
 		
 	
-[[_open_the_git_staging_view_and_inspect_the_status">
+
 === Open the Git Staging view and inspect the status
 		
 			Open the staging view by selecting
@@ -83,10 +83,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Staging view</phrase>
+					<imagedata fileref="./images/staging-view.png" scale="50[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -100,10 +97,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-2.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Staging view</phrase>
+					<imagedata fileref="./images/staging-view-2.png" scale="50[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -120,14 +114,11 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-3.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Staging view</phrase>
+					<imagedata fileref="./images/staging-view-3.png" scale="50[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
-[[_commit_your_change]]
+
 === Commit your change
 		
 In the _Git Staging_ view enter a commit message in the _Commit message_ field and click on the btn:[Commit] button.
@@ -135,16 +126,13 @@ In the _Git Staging_ view enter a commit message in the _Commit message_ field a
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-4.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Staging view</phrase>
+					<imagedata fileref="./images/staging-view-4.png" scale="50[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
 	
 	
-[[cleanup]]
+
 === Cleanup
 		
 After inspecting your recent change, you decide that this change should be reverted. 

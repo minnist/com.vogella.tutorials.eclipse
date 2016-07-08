@@ -1,6 +1,6 @@
 
-	<title>Exercise: Add a e4 menu and toolbar to the Eclipse IDE
-[[firstplugin_target">
+== Exercise: Add a e4 menu and toolbar to the Eclipse IDE
+
 === Target of this exercise
 		
 			In this exercise you create a plug-in which contributes
@@ -9,12 +9,12 @@
 			3.x based application menu.
 		
 	
-[[firstplugin_create">
+
 === Creating a plug-in project
 
 		
 			Create a new plug-in project called
-			<code>com.vogella.plugin.first</code>
+			`com.vogella.plugin.first`
 			via
 			menu:File[New > Project... > Plug-in Development > Plug-in Project]
 			.
@@ -58,7 +58,7 @@ image::eclipseideplugin30.png"/>
 		
 			In the last page of the wizard you can customize some suggested values. You can leave the default values and
 			press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 		
@@ -91,7 +91,7 @@ image::eclipseideplugin60.png"/>
 		
 
 	
-[[firstplugin_start">
+
 === Starting an Eclipse runtime IDE with your plug-in
 		
 			Start a new Eclipse IDE instance and validate that your menu and toolbar entry are available. See
@@ -118,15 +118,15 @@ image::eclipseideplugin90.png"/>
 	
 
 
-[[firstplugin_migratione4_manifest">
+
 === Adding the plug-in dependencies for the e4 API
 		
 			Add a dependency to the
-			<code>org.eclipse.e4.core.di</code>
+			`org.eclipse.e4.core.di`
 			plug-in in the manifest file of the newly created plug-in.
 		
 	
-[[firstplugin_migratione4_createhandler">
+
 === Creating the handler class
 		Create the following class based on the generated handler class. 
 		
@@ -135,7 +135,7 @@ image::eclipseideplugin90.png"/>
 			</programlisting>
 		
 	
-[[firstplugin_migratione4">
+
 === Creating a model contribution
 
 		
@@ -157,7 +157,7 @@ image::migrategenerated20.png[Create Model Fragment, step 2,pdfwidth=60%]
 
 		
 			Create three model fragment entries in your new file, all of them should be contributing to the
-			<code>org.eclipse.e4.legacy.ide.application</code>
+			`org.eclipse.e4.legacy.ide.application`
 			element id.
 		
 		Use the following screenshots to define the new contribution.
@@ -172,16 +172,10 @@ image::migrategenerated40.png[Create Model Fragment, step 2,pdfwidth=60%]
 image::migrategenerated50.png[Create Model Fragment, step 2,pdfwidth=60%]
 		
 		
-image::migrategenerated60.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::migrategenerated60.png" scale="35[Create Model Fragment, step 2,pdfwidth=60%]
 		
 		
-image::migrategenerated70.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::migrategenerated70.png" scale="35[Create Model Fragment, step 2,pdfwidth=60%]
 		
 		
 image::migrategenerated80.png[Create Model Fragment, step 2,pdfwidth=60%]
@@ -190,21 +184,15 @@ image::migrategenerated80.png[Create Model Fragment, step 2,pdfwidth=60%]
 image::migrategenerated90.png[Create Model Fragment, step 2,pdfwidth=60%]
 		
 		
-image::migrategenerated92.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::migrategenerated92.png" scale="35[Create Model Fragment, step 2,pdfwidth=60%]
 		
 	
 
-[[firstplugin_migratione4_toolbar">
+
 === Adding a toolbar contribution
 		Also add a toolbar contribution for the same command.
 		
-image::toolbarcontribution10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution10.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 
 		<warning>
@@ -227,24 +215,18 @@ image::toolbarcontribution10.png" scale="30" />
 				Parent-ID directly in the xmi. For this switch
 				to
 				the XMI tab of the editor and enter the parent ID directly. Use the
-				<code>org.eclipse.ui.main.toolbar</code>
+				`org.eclipse.ui.main.toolbar`
 				value. The file is only
 				saved, if you enter the information syntactically correct.
 			
 		</warning>
 
 		
-image::toolbarcontribution20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution20.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 
 		
-image::toolbarcontribution24.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution24.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 		Add a toolbar and a handled tool item to your contribution.
 
@@ -252,31 +234,22 @@ image::toolbarcontribution24.png" scale="30" />
 
 
 		
-image::toolbarcontribution30.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution30.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 
 
 		
-image::toolbarcontribution40.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution40.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 	
-[[firstplugin_migratione4_validatetoolbar">
+
 === Validating the presence of the menu and toolbar contribution
 		Start a new instance of the Eclipse IDE and validate that your menu and the toolbar are is contributed. If they
 			are not visible in the window, check
 			via the model spy for potential issues.
 		
 		
-image::toolbarcontribution50.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Create Model Fragment, step 2,pdfwidth=60%]
+image::toolbarcontribution50.png" scale="30[Create Model Fragment, step 2,pdfwidth=60%]
 		
 
 

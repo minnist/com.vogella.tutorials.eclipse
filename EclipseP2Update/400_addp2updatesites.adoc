@@ -1,4 +1,4 @@
-[[addp2updatesites]]
+
 == Adding p2 update sites
 
 If you place a p2.inf file beside your product configuration file you can add update sites to your product. 

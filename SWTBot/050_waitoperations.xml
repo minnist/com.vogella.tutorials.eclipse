@@ -1,5 +1,5 @@
 
-	<title>Waiting for certain conditions
+== Waiting for certain conditions
 
 	During UI tests there may be longer operations, which makes it necessary to wait until a
 		certain condition is fulfilled.

@@ -1,6 +1,6 @@
 
-	<title>Example
-[[addinghelp_total">
+== Example
+
 === Project with help
 		 The following will demonstrate how to create the help in a
 			separated plug-in which contains all help related content.
@@ -68,7 +68,7 @@ image::help10.png" />
 			the help content.
 		
 	
-[[addinghelp_more">
+
 === Adding search and context sensitive help
 		 You can also add a search dialog and context sensitive help to
 			your application. To do this you add the commands

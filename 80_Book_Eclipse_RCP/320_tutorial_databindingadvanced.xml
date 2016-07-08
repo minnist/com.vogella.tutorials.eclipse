@@ -1,21 +1,21 @@
 <chapter id="tutorial_databindingadvanced">
-	<title>Exercise: Data binding for table viewers
-[[tutorial_databindingadvanced1">
+== Exercise: Data binding for table viewers
+
 === Implement data binding for the table viewer
 		
 			Change your implementation of
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			to use data binding.
 		
 		
 			For this you can delete the
-			<code>LabelProvider</code>
+			`LabelProvider`
 			of your
-			<code>TableViewerColumn</code>
+			`TableViewerColumn`
 			objects. Also remove the
-			<code>viewer.setInput()</code>
+			`viewer.setInput()`
 			and the
-			<code>ContentProvider</code>
+			`ContentProvider`
 			.
 		
 		The following code demonstrates this implementation.
@@ -42,16 +42,16 @@
 			</programlisting>
 		
 	
-[[tutorial_databindingadvanced2">
+
 === Clean up old code
 		<warning>
 			
 				You should not have any call to the
-				<code>setInput</code>
+				`setInput`
 				,
-				<code>setContentProvider</code>
+				`setContentProvider`
 				and
-				<code>setLabelProvider</code>
+				`setLabelProvider`
 				methods anymore in your code. Use the text search to validate this
 				in case you are having problems.
 			
@@ -60,7 +60,7 @@
 
 	
 
-[[tutorial_databindingadvanced3">
+
 === Validating
 		
 			Start your application and load the data into the table via the

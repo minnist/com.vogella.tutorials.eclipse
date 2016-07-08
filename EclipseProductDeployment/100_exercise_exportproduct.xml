@@ -1,12 +1,12 @@
 
-	<title>Exercise: Export your product
-[[tutorial_exportproduct1">
+== Exercise: Export your product
+
 === Export your product
 		
 			Use the
 			product
 			file of your
-			<code>com.example.e4.rcp.wizard</code>
+			`com.example.e4.rcp.wizard`
 			plug-in to export your Eclipse application.
 		
 		
@@ -37,14 +37,14 @@ image::wizarddeploy20.png[Selecting the output directory in the product export
 				with a dependency conflict. 
 		</warning>
 	
-[[tutorial_exportproduct_validate">
+
 === Validate that the exported application starts
 
 		
 			After the export finishes check the
-			<filename class="directory">Root directory</filename>
+			<filename class="directory">Root directory_
 			folder in the
-			<filename class="directory">Directory</filename>
+			<filename class="directory">Directory_
 			folder.
 		
 
@@ -66,12 +66,12 @@ image::wizarddeploy20.png[Selecting the output directory in the product export
 			problem.
 		
 	
-[[exercise_splash">
+
 === Using a static splash screen
 		
 			Add a splash screen to your application. For this create or download
 			a
-			<filename>splash.bmp</filename>
+			_splash.bmp_
 			bitmap file. You find an example under the following URL:
 			http://download.vogella.com/resources/splash.bmp">Example splash screen
 			.
@@ -79,7 +79,7 @@ image::wizarddeploy20.png[Selecting the output directory in the product export
 
 		
 			Add the
-			<filename>splash.bmp</filename>
+			_splash.bmp_
 			file to the main directory of your
 			application. You can copy and paste
 			it into the
@@ -99,10 +99,7 @@ image::wizarddeploy20.png[Selecting the output directory in the product export
 			screenshot.
 		
 		
-image::splash_exercise10.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a splash bmp file,pdfwidth=60%]
+image::splash_exercise10.png" scale="50[Adding a splash bmp file,pdfwidth=60%]
 		
 		<warning>
 			
@@ -122,10 +119,7 @@ image::splash_exercise10.png" scale="50" />
 		
 		
 image::tutorialexport_e4_30.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding splash to the product configuration file,pdfwidth=60%]
+						scale="40[Adding splash to the product configuration file,pdfwidth=60%]
 		
 		
 			Start your application from the Eclipse IDE and verify that the
@@ -133,21 +127,18 @@ image::tutorialexport_e4_30.png"
 		
 	
 
-[[exercise_splashexport">
+
 === Include the splash screen into the exported application
 		
 			Configure that the
-			<filename>splash.bmp</filename>
+			_splash.bmp_
 			file is included into the exported application by adding it to the
-			<filename>build.properties</filename>
+			_build.properties_
 			file of your application plug-in.
 		
 		
 image::addsplashtobuildproperties10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Add splash to build properties,pdfwidth=60%]
+						scale="40[Add splash to build properties,pdfwidth=60%]
 		
 
 		
@@ -166,7 +157,7 @@ image::addsplashtobuildproperties10.png"
 		</warning>
 	
 
-[[exercise_launcher">
+
 === Change launcher name
 		
 			The Eclipse export wizards uses
@@ -187,10 +178,7 @@ image::addsplashtobuildproperties10.png"
 		
 		
 image::tutorialexport_e4_40.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Change launcher name,pdfwidth=60%]
+						scale="40[Change launcher name,pdfwidth=60%]
 		
 		
 			Export your application via the product file again and validate

@@ -1,19 +1,19 @@
 
-	<title>Exporting Plug-ins and Products
+== Exporting Plug-ins and Products
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>Export</secondary>
 	</indexterm>
 	
 		The
-		<filename>build.properties</filename>
+		_build.properties_
 		file in a plug-in defines which of the files are
 		included in the
 		exported product.
 	
 	
 		You must include your property files in the
-		<filename>build.properties</filename>
+		_build.properties_
 		file, otherwise your translations will be missing in the exported
 		product.
 	

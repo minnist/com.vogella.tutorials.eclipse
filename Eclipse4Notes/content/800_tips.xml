@@ -1,21 +1,21 @@
 
-	<title>Tips
-[[tips_legacy">
+== Tips
+
 === Where do I find the initial application model of the Eclipse
 			SDK
 		
 			In plug-in "org.eclipse.platform". Here you find the file
 			"LegacyIDE.e4xmi" which defines the initial window and some add-ons.
 			During startup the
-			<code>E4Workbench</code>
+			`E4Workbench`
 			class
 			from the
-			<code>org.eclipse.e4.workbench.ui.internal</code>
+			`org.eclipse.e4.workbench.ui.internal`
 			package is started.
 		
 	
 
-[[model_structure">
+
 === Meta-model of the application model
 		
 			The possible structure of the application model is defined by a
@@ -37,7 +37,7 @@
 			EMF
 			uses
 			an
-			<filename>.ecore</filename>
+			_.ecore_
 			file to define the
 			meta-model.
 		
@@ -45,12 +45,12 @@
 			The meta-model of the Eclipse 4 applications
 			is
 			stored in the
-			<code>org.eclipse.e4.ui.model.workbench</code>
+			`org.eclipse.e4.ui.model.workbench`
 			plug-in inside the
-			<filename class="directory">model</filename>
+			<filename class="directory">model_
 			folder. The base model definition can be found in
 			the
-			<filename>UIElements.ecore</filename>
+			_UIElements.ecore_
 			file. The Eclipse 4 model classes have been
 			generated based on this
 			model.
@@ -71,14 +71,14 @@
 		
 		
 			The
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file, which describes the Eclipse application model, is a persisted
 			version of an EMF model.
 		
 
 	
 
-[[tipsandtricks_menuid">
+
 === Determine the command ID in a handler
 		In the handler class you can determine the command ID if the
 			command was triggered via the user interface. Determining the ID is
@@ -95,18 +95,18 @@
 		
 	
 
-[[bindingcontext">
+
 === BindingContext
 		 Eclipse 4 uses predefined BindingContext identifier which are
 			based on org.eclipse.jface.contexts.IContextIds.
 		
 		
 			These are
-			<code>org.eclipse.ui.contexts.dialog</code>
+			`org.eclipse.ui.contexts.dialog`
 			for dialogs,
-			<code>org.eclipse.ui.contexts.window</code>
+			`org.eclipse.ui.contexts.window`
 			for windows and
-			<code>org.eclipse.ui.contexts.dialogAndWindow</code>
+			`org.eclipse.ui.contexts.dialogAndWindow`
 			for both.
 		
 
@@ -114,7 +114,7 @@
 
 
 
-[[tips_equinox">
+
 === DI in OSGi stand-alone environments
 
 		It is possible to use the DI engine in a standard OSGi
@@ -128,13 +128,13 @@
 		
 	
 
-[[tips_persists">
+
 === Persists user changes
 		
 			Via a startup parameter you can control if Eclipse should persists
 			model changes. For example you want to save the last position of the
 			main application window. This is similar to the
-			<code>setSaveAndRestore(true)</code>
+			`setSaveAndRestore(true)`
 			method call in Eclipse 3.x.
 		
 		
@@ -181,18 +181,18 @@
 		
 	
 
-[[tips_css_workbench">
+
 === Styling the Eclipse 4 IDE
 		
 			The platform style sheets
 			are stored in
 			the
-			<code>org.eclipse.platform</code>
+			`org.eclipse.platform`
 			plug-in .
 			This
 			plugin_contains
 			a
-			<filename>/css</filename>
+			_/css_
 			folder
 			which contains
 			the style
@@ -218,12 +218,12 @@
 			to
 			the
 			plug-in
-			<code>org.eclipse.e4.ui.css.swt.theme</code>
+			`org.eclipse.e4.ui.css.swt.theme`
 			.
 		
 		
 			Contribute a new theme to the
-			<code>org.eclipse.e4.ui.css.swt.theme</code>
+			`org.eclipse.e4.ui.css.swt.theme`
 			extension point
 			Create a CSS file
 			and point

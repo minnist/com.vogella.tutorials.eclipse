@@ -1,11 +1,11 @@
 
-	<title>Exercise: Model add-on to remember the last focused widget
-[[exercise_modeladdons1">
+== Exercise: Model add-on to remember the last focused widget
+
 === Target: Create focus model add-on
 
 		
 			Currently your
-			<code>@Focus</code>
+			`@Focus`
 			methods places the focus on the same widget every time the user
 			switches focus. In this exercise you create a model add-on which
 			places the last selected widget into the context and restores this
@@ -13,7 +13,7 @@
 		
 	
 
-[[exercise_modeladdons_create">
+
 === Implementation: Create the model add-on
 		
 			See

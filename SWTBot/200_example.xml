@@ -1,6 +1,6 @@
 
-	<title>Exercise: Write SWTBot test
-[[swtbotexample_installation">
+== Exercise: Write SWTBot test
+
 === Installation
 		
 			Ensure to install SWTBot into your Eclipse IDE. See
@@ -8,14 +8,14 @@
 			for detailed information.
 		
 	
-[[swtbotexample_project">
+
 === Create project
 		
 			Create a new plug-in
 			called
 			_com.example.e4.rcp.todo.uitest_
 			and add the following dependencies to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file:
 
 			<itemizedlist>
@@ -37,7 +37,7 @@
 			</itemizedlist>
 		
 	
-[[swtbotexample_test">
+
 === Create test
 		
 			Write the following test class.
@@ -49,7 +49,7 @@
 			</programlisting>
 		
 	
-[[swtbotexample_launchconfiguration">
+
 === Adjust launch configuration
 		
 			Right-click on your test class and select
@@ -71,15 +71,12 @@
 		
 		
 image::swtbot_startproduct10.png"
-						scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Select the product which should be started,pdfwidth=60%]
+						scale="30[Select the product which should be started,pdfwidth=60%]
 		
 	
 
 
-[[swtbotexample_validate">
+
 === Validating
 		 Run your test and verify that the test runs successfully.
 			If you

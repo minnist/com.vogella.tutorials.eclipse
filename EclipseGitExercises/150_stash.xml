@@ -1,5 +1,5 @@
 
-	<title>Stashing changes in Eclipse Git
+== Stashing changes in Eclipse Git
 	Stashing in Git refers to taking all changes made in your working directory and committing them to a separate
 		area known as the “stash”. Committing to the stash does not create a new commit on the currently checked out branch
 		but instead creates a new stashed commit which includes changes made in the working directory and staged in the index.
@@ -12,7 +12,7 @@
 	It includes support for listing, creating, applying, and deleting stashed commits from the Git Repositories
 		view.
 	
-[[_stashing_local_changes">
+
 === Stashing local changes
 		<itemizedlist>
 			<listitem>
@@ -56,7 +56,7 @@
 			</inlinemediaobject>
 		
 	
-[[_browsing_stashed_changes">
+
 === Browsing Stashed Changes
 		<itemizedlist>
 			<listitem>
@@ -114,7 +114,7 @@
 			</inlinemediaobject>
 		
 	
-[[_applying_stashed_changes">
+
 === Applying Stashed Changes
 		<itemizedlist>
 			<listitem>

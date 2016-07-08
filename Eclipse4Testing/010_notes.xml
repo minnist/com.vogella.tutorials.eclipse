@@ -1,13 +1,13 @@
 
-	<title>Testing Eclipse 4 application
-[[eclipse4testing_overview">
+== Testing Eclipse 4 application
+
 === General testing
 		In general all Java classes in an Eclipse 4 application can be
 			tested similarly to other Java applications. This description
 			highlights the special Eclipse 4 constructs.
 		
 	
-[[eclipse4testing_fragments">
+
 === Fragment projects
 		<indexterm>
 			<primary>Fragment projects</primary>
@@ -18,7 +18,7 @@
 			plug-in.
 		
 	
-[[eclipse4testing_ui">
+
 === Testing user interface components
 		<indexterm>
 			<primary>Testing</primary>
@@ -67,7 +67,7 @@
 		
 
 	
-[[eclipse4testing_di">
+
 === Testing dependency injection
 		<indexterm>
 			<primary>Testing</primary>
@@ -77,9 +77,9 @@
 			You can include the process of dependency injection into the
 			test.
 			Create your own
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			and use the
-			<code>ContextInjectionFactory.make()</code>
+			`ContextInjectionFactory.make()`
 			method to create the object which should be tested.
 		
 		

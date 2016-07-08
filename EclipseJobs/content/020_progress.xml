@@ -1,36 +1,30 @@
 
-	<title>Reporting Progress
-[[eclipsejobs_submonitor">
+== Reporting Progress
+
 === IProgressMonitor and the SubMonitor
-		<indexterm>
-			<primary>Progress reporting</primary>
-		</indexterm>
-		<indexterm>
-			<primary>SubMonitor</primary>
-		</indexterm>
-		<indexterm>
-			<primary>IProgressMonitor</primary>
-		</indexterm>
+		
+		
+		
 		
 			An instance of an
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			is passed to the run method of a
-			<code>Job</code>
+			`Job`
 			and can be used to monitor the
 			progress of the job. When methods inside the job need to report
 			feedback on the
 			progress, a child of the
-			<code>Submonitor</code>
+			`Submonitor`
 			is passed rather than passing the actual SubMonitor. It is good practice to convert the
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			always
 			to a
-			<code>SubMonitor</code>
+			`SubMonitor`
 			before using it. This allows to use a consistent API for process reporting of child processes and the main process.
 			A
-			<code>SubMonitor</code>
+			`SubMonitor`
 			can be created similar to this:
-			<code>SubMonitor subMonitor = SubMonitor.convert(monitor, 3);</code>
+			`SubMonitor subMonitor = SubMonitor.convert(monitor, 3);`
 		
 
 
@@ -42,18 +36,18 @@
 
 		
 			When using a
-			<code>SubMonitor</code>
+			`SubMonitor`
 			it is not necessary to call the
-			<code>beginTask()</code>
+			`beginTask()`
 			method or the
-			<code>done()</code>
+			`done()`
 			method, since this is done implicitly by the
-			<code>SubMonitor</code>
+			`SubMonitor`
 			implementation.
 		
 	
 
-[[eclipsejobs_submonitor_conditional">
+
 === Taking conditions during progress into account
 		In some cases the amount of work
 			depends on conditions, which
@@ -61,9 +55,9 @@
 		
 		
 			This can be done by using the
-			<code>setWorkRemaining()</code>
+			`setWorkRemaining()`
 			method of the
-			<code>SubMonitor</code>
+			`SubMonitor`
 			.
 		
 
@@ -75,9 +69,9 @@
 
 		
 			In case the code in the
-			<code>taskNeedsPreconfiguration()</code>
+			`taskNeedsPreconfiguration()`
 			if block is run, the
-			<code>setWorkRemaining()</code>
+			`setWorkRemaining()`
 			method actually does nothing. Only in case the code of the if block
 			is skipped it ensures that the process monitoring
 			is done properly.
@@ -85,9 +79,9 @@
 
 		
 			Another use case for using
-			<code>setWorkRemaining()</code>
+			`setWorkRemaining()`
 			is when the actual work is determined later. See
-			<code>workOnTask</code>
+			`workOnTask`
 			method.
 		
 
@@ -100,23 +94,23 @@
 
 		
 			For the loop in the
-			<code>workOnTask</code>
+			`workOnTask`
 			a new child
-			<code>SubMonitor</code>
+			`SubMonitor`
 			, which is supposed to do 80 % of the work, is created. Later on the
 			actual remaining work for this
-			<code>SubMonitor</code>
+			`SubMonitor`
 			is set by the
-			<code>setWorkRemaining()</code>
+			`setWorkRemaining()`
 			.
 		
 	
 
-[[eclipsejobs_progress4x">
+
 === Reporting progress in Eclipse RCP applications
 		
 			In Eclipse applications you can report progress by implementing the
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			interface.
 		
 		
@@ -125,7 +119,7 @@
 			application model. This tool control
 			can
 			implement the
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			interface to show the progress.
 		
 		This is demonstrated in the following example. 
@@ -140,7 +134,7 @@
 
 		
 			This new element can be accessed via the model service and used as an
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			for the job.
 		
 		

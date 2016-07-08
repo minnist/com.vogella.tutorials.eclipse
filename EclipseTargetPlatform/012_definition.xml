@@ -1,5 +1,5 @@
 
-	<title>Defining a target platform
+== Defining a target platform
 	<indexterm>
 		<primary>Target platform</primary>
 		<secondary>Definition</secondary>
@@ -40,7 +40,7 @@
 	
 	
 		You can add new locations via the
-		<guibutton>Add...</guibutton>
+		_Add..._
 		button in the Locations
 		section. To add an Eclipse p2 update site,
 		select
@@ -55,7 +55,7 @@
 		the
 		target platform in your Eclipse IDE. This can be done via
 		the
-		<guibutton>Set as Target Platform</guibutton>
+		_Set as Target Platform_
 		link in the Target definition editor as depicted in the following
 		screenshot.
 	

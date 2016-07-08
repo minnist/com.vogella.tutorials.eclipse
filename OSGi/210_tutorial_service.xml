@@ -1,5 +1,5 @@
 
-	<title>Exercise: Create service bundle
+== Exercise: Create service bundle
 	<section>
 === Target of the exercise
 		 In this exercise you create a plug-in for a service
@@ -28,7 +28,7 @@
 			$book.
 		
 	
-[[services_todo3">
+
 === Create a data model provider plug-in (service plug-in)
 		
 			Create a new simple plug-in (see
@@ -43,26 +43,26 @@
 		<tip>
 			
 				The MacOS operating system treads folders ending with
-				<filename>.service</filename>
+				_.service_
 				special, therefore we use the
-				<filename>.services</filename>
+				_.services_
 				ending.
 			
 		</tip>
 	
-[[services_todo_dependency">
+
 === Define the dependencies in the service plug-in
 		
 			Add the
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			plug-in as dependency to your service plug-in. To achieve this
 			open
 			the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file and select the
 			_Dependencies_
 			tab and add the
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			package
 			to the
 			_Imported Packages_
@@ -70,11 +70,11 @@
 		
 	
 
-[[services_todo_impl">
+
 === Provide an implementation of the ITodoService interface
 		
 			Create the
-			<code>com.example.e4.rcp.todo.services.internal</code>
+			`com.example.e4.rcp.todo.services.internal`
 			package in your service plug-in and create the following class.
 		
 		
@@ -84,28 +84,28 @@
 		
 	
 
-[[services_todo_productconfiguration">
+
 === Update the product configuration (via your feature)
 
 		
 			Add
 			your new
-			<code>*.model</code>
+			`*.model`
 			and
-			<code>*.services</code>
+			`*.services`
 			plug-ins to
 			your
-			<code>com.example.e4.rcp.todo.feature</code>
+			`com.example.e4.rcp.todo.feature`
 			feature. Ensure that you use the
 			_Plug-ins_
 			tab on the
-			<filename>feature.xml</filename>
+			_feature.xml_
 			file.
 		
 		<warning>
 			
 				Every time you create a new plug-in and refer to it in your
-				<filename>MANIFEST.MF</filename>
+				_MANIFEST.MF_
 				file
 				you have to add it to your product configuration file (via
 				your

@@ -1,5 +1,5 @@
 
-	<title>Using the JPA in an OSGi environment
+== Using the JPA in an OSGi environment
 	
 		The usage of JPA to access a database, either embedded or standalone, requires a special setup, as you must
 		configure JPA to run in an OSGi runtime.
@@ -12,7 +12,7 @@
 			<listitem>
 				
 					Tell the
-					<code>PersistenceProvider</code>
+					`PersistenceProvider`
 					, which classloader should be
 					used
 				
@@ -20,11 +20,11 @@
 			<listitem>
 				
 					Place the
-					<filename>persistence.xml</filename>
+					_persistence.xml_
 					in the
-					<filename>META-INF</filename>
+					_META-INF_
 					folder of the bundle, where the
-					<code>EntityManager</code>
+					`EntityManager`
 					is created
 				
 			</listitem>

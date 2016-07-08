@@ -1,8 +1,8 @@
 
-	<title>DateTime widget
+== DateTime widget
 	
 		SWT provides
-		<code>DateTime</code>
+		`DateTime`
 		widgets. Create the following class.
 	
 
@@ -25,7 +25,7 @@
 	
 	
 		Please note that the SWT
-		<code>DateTime</code>
+		`DateTime`
 		widget requires a selection, i.e. you cannot use this widget without a
 		date selection.
 	

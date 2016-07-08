@@ -49,7 +49,7 @@ image::eclipseideplugin80.png[]
 
 image::eclipseideplugin90.png[]
 
-[[firstplugin_migratione4_manifest]]
+
 === Adding the plug-in dependencies for the e4 API
 
 Add a dependency to the `org.eclipse.e4.core.di`

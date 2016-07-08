@@ -1,5 +1,5 @@
 
-	<title>Modularity support in Eclipse RCP
+== Modularity support in Eclipse RCP
 	<indexterm>
 		<primary>Application model</primary>
 		<secondary>Modularity</secondary>
@@ -14,7 +14,7 @@
 		The initial structure of an RCP application is described via the
 		application
 		model in the
-		<filename>Application.e4xmi</filename>
+		_Application.e4xmi_
 		file.
 	
 	
@@ -38,12 +38,12 @@
 		These model contributions are registered with the Eclipse framework
 		via an extension point. To register your contributions you provide
 		extensions to the
-		<code>org.eclipse.e4.workbench.model</code>
+		`org.eclipse.e4.workbench.model`
 		extension point.
 	
 	
 		This extension point is defined in the
-		<code>org.eclipse.e4.ui.workbench</code>
+		`org.eclipse.e4.ui.workbench`
 		plug-in.
 	
 

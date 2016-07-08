@@ -1,7 +1,7 @@
 
-	<title>Toolbars, ToolControls and drop-down tool items
+== Toolbars, ToolControls and drop-down tool items
 
-[[toolbar_advanced_buttons">
+
 === Adding toolbars to parts
 		<indexterm>
 			<primary>Toolbar</primary>
@@ -37,17 +37,12 @@
 			Such an example setup is displayed in the following screenshot.
 		
 		
-image::part_toolbar10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a toolbar to a part,pdfwidth=60%]
+image::part_toolbar10.png[Adding a toolbar to a part,pdfwidth=60%]
 		
 	
-[[toolbar_advanced_toolcontrols">
+
 === ToolControls
-		<indexterm>
-			<primary>ToolControl</primary>
-		</indexterm>
+		
 		
 			_ToolControl_
 			model element points to a Java class which can create controls that
@@ -56,7 +51,7 @@ image::part_toolbar10.png" />
 		
 		
 			For example, the following code creates a
-			<code>Text</code>
+			`Text`
 			field in the toolbar which looks like a search field.
 		
 		
@@ -66,7 +61,7 @@ image::part_toolbar10.png" />
 		
 		
 			You can add such a
-			<code>ToolControl</code>
+			`ToolControl`
 			,
 			for example, to your windows trimbar as depicted in the following
 			screenshot.
@@ -75,26 +70,20 @@ image::part_toolbar10.png" />
 			<mediaobject>
 				<!-- TODO: screenshot shows an old class name com.vogella.e4.rcp.todo.SearchToolItem -->
 				<imageobject>
-					<imagedata fileref="images/toolitem_search04.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a ToolItems to the Window Trim,pdfwidth=60%]
+					<imagedata fileref="images/toolitem_search04.png" scale="30[Adding a ToolItems to the Window Trim,pdfwidth=60%]
 		
 		
 			The following screenshot shows this
-			<code>ToolControl</code>
+			`ToolControl`
 			used in an example RCP application.
 		
 
 		
-image::toolitem_search10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Resulting application with a search Toolitem,pdfwidth=60%]
+image::toolitem_search10.png[Resulting application with a search Toolitem,pdfwidth=60%]
 		
 	
 
-[[toolbar_advanced_menues">
+
 === Drop-down tool items
 		<indexterm>
 			<primary>Toolbar</primary>
@@ -111,10 +100,7 @@ image::toolitem_search10.png" />
 			screenshot.
 		
 		
-image::toolitem_dropdown10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Drop-down menu for a toolitem,pdfwidth=60%]
+image::toolitem_dropdown10.png" scale="40[Drop-down menu for a toolitem,pdfwidth=60%]
 		
 
 	

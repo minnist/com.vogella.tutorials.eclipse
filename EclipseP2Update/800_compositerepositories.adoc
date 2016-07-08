@@ -1,4 +1,4 @@
-[[p2compositerepositories]]
+
 == p2 composite repositories
 
 It is possible to create p2 composite repositories. 

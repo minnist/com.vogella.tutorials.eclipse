@@ -1,6 +1,6 @@
 
-	<title>Tutorial: Using Mylyn
-[[mylyn_tasklist">
+== Tutorial: Using Mylyn
+
 === Task List view
 		<indexterm>
 			<primary>Mylyn</primary>
@@ -26,7 +26,7 @@ image::mylyn10.png[Task List View,pdfwidth=60%]
 		
 	
 
-[[mylyn_createtask">
+
 === Create new tasks
 		<indexterm>
 			<primary>Mylyn</primary>
@@ -34,7 +34,7 @@ image::mylyn10.png[Task List View,pdfwidth=60%]
 		</indexterm>
 		
 			To create a new task press the
-			<guibutton>New Task</guibutton>
+			_New Task_
 			button or right-click in the
 			_Task List_
 			view
@@ -58,7 +58,7 @@ image::mylyn30.png[Selecting local repository,pdfwidth=60%]
 		
 
 	
-[[mylyn_activate">
+
 === Activate a task
 		<indexterm>
 			<primary>Mylyn</primary>
@@ -66,7 +66,7 @@ image::mylyn30.png[Selecting local repository,pdfwidth=60%]
 		</indexterm>
 		
 			To start working on a task, select the
-			<guibutton>Activate task</guibutton>
+			_Activate task_
 			button. If the task has already captured a
 			_context_
 			, Mylyn
@@ -84,7 +84,7 @@ image::mylyn40.png[Activate Tasks in the Package Explorer,pdfwidth=60%]
 			view
 			by
 			clicking the
-			<guibutton>Focus on Active Task</guibutton>
+			_Focus on Active Task_
 			button
 			in the toolbar of this
 			view
@@ -110,7 +110,7 @@ image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
 			it. The context of the task will be restored.
 		
 	
-[[problemsview">
+
 === Create task from Problems view
 		<indexterm>
 			<primary>Mylyn</primary>
@@ -127,13 +127,10 @@ image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
 		
 		
 image::problemsview_marker10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Problems View,pdfwidth=60%]
+						scale="40[Problems View,pdfwidth=60%]
 		
 	
-[[export">
+
 === Export and import your tasks
 		<indexterm>
 			<primary>Mylyn</primary>

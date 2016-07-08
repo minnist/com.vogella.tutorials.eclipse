@@ -1,5 +1,5 @@
 
-	<title>Persisting EMF models via XMI
+== Persisting EMF models via XMI
 	
 		The Eclipse Modelling Framework (EMF) allows to store the model
 		content via the EMF
@@ -31,7 +31,7 @@
 		added
 		explicitly to
 		the
-		<code>resource.getContents().add()</code>
+		`resource.getContents().add()`
 		. If
 		objects are
 		not
@@ -41,7 +41,7 @@
 		relationship an
 		exception is
 		thrown when calling the
-		<code>resource.save()</code>
+		`resource.save()`
 		method.
 	
 

@@ -1,6 +1,6 @@
 
-	<title>Tutorial: Test Eclipse 3.x RCP applications
-[[swtbotexample_project">
+== Tutorial: Test Eclipse 3.x RCP applications
+
 === Create project
 		
 			Create a new
@@ -30,7 +30,7 @@
 			label and the other through an SWTBot specific ID.
 		
 	
-[[swtbotexample_test">
+
 === Create test plug-in
 		
 			Create another
@@ -40,7 +40,7 @@
 		
 		
 			Add the following dependencies  to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file for your test project.
 
 			<itemizedlist>

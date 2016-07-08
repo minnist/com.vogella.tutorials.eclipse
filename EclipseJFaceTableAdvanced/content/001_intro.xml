@@ -1,5 +1,5 @@
 
-	<title>Introduction
+== Introduction
 	
 		Eclipse JFace
 		provides functionality to build tables. The following
@@ -19,7 +19,7 @@
 	
 		We will also
 		learn how to use the
-		<code>StyledCellLabelProvider</code>
+		`StyledCellLabelProvider`
 		class
 		to influence the display of data in the table. The usage of
 		commands and how to hide and sort table columns is demonstrated.

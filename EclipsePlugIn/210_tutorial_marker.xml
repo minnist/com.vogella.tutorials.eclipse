@@ -1,14 +1,14 @@
 
 
-	<title>Tutorial: Create Markers for resources
+== Tutorial: Create Markers for resources
 	
 		Create a plug-in project "de.vogella.plugin.markers". Add the
 		dependency to org.eclipse.core.resources", "org.eclipse.jdt.core" and
 		"org.eclipse.jdt.ui". Create the command
 		"de.vogella.plugin.markers.AddMarker" with the default handler
-		<code>AddMarkerHandler</code>
+		`AddMarkerHandler`
 		in the
-		<code>de.vogella.plugin.markers.handler</code>
+		`de.vogella.plugin.markers.handler`
 		class and add
 		this command to
 		the menu.

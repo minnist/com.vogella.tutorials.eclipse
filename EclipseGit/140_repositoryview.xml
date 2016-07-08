@@ -1,6 +1,6 @@
 
-	<title>Using the Git Repositories view
-[[repository_view_overview">
+== Using the Git Repositories view
+
 === Using the Git Repositories view
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -12,12 +12,8 @@
 			<secondary>Git repositories view
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Git repositories view</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Repositories view</primary>
-		</indexterm>
+		
+		
 		
 			Eclipse Git provides the
 			_Git Repositories_
@@ -41,14 +37,11 @@ image::showgitrepositoryview10.png[Show Git Respositories View,pdfwidth=60%]
 			repository.
 		
 		
-image::repositoryview_toolbar10.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Git Repositories view toolbar,pdfwidth=60%]
+image::repositoryview_toolbar10.png" scale="50[Git Repositories view toolbar,pdfwidth=60%]
 		
 
 	
-[[repository_view_main">
+
 === Content in the Git Respositories view
 		
 			The content area of the
@@ -89,7 +82,7 @@ image::gitrepositoryview20.png"/>
 		
 
 	
-[[repository_navigate">
+
 === Open a commit
 		
 			If you are in the
@@ -108,7 +101,7 @@ image::opengit_commit10.png[Open Git Commit dialog,pdfwidth=60%]
 		
 	
 
-[[repository_gitcommit_operation">
+
 === Commands available in the Commit Viewer
 		If you open a commit you can create a tag or branch from it. You
 			can also revert it, cherry pick it or check it
@@ -116,10 +109,7 @@ image::opengit_commit10.png[Open Git Commit dialog,pdfwidth=60%]
 			reveal it in the history view.
 		
 		
-image::opengit_commit20.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Possible operation from a Git commit,pdfwidth=60%]
+image::opengit_commit20.png" scale="35[Possible operation from a Git commit,pdfwidth=60%]
 		
 	
 

@@ -1,19 +1,19 @@
 
-	<title>Using ObservableListContentProvider and
+== Using ObservableListContentProvider and
 		ObservableMapLabelProvider
 	
 		If you use
-		<code>WritableList</code>
+		`WritableList`
 		and
-		<code>ObservableListContentProvider</code>
+		`ObservableListContentProvider`
 		you only listens to the changes in the list. You
 		can use
-		<code>ObservableMapLabelProvider</code>
+		`ObservableMapLabelProvider`
 		to listen to changes of the individual objects.
 	
 	
 		Change the
-		<code>View.java</code>
+		`View.java`
 		to the following.
 	
 	

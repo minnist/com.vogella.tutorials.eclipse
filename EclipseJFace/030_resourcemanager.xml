@@ -1,5 +1,5 @@
 
-	<title>JFace resource manager for Colors, Fonts and Images
+== JFace resource manager for Colors, Fonts and Images
 
 	<indexterm>
 		<primary>JFace</primary>
@@ -18,10 +18,10 @@
 	
 		Fortunately all widgets which are created based on a parent widget are
 		automatically disposed when the parent
-		<code>Composite</code>
+		`Composite`
 		is disposed.
 		If you develop Eclipse plug-ins, the
-		<code>Composite</code>
+		`Composite`
 		of a
 		part
 		is automatically disposed once the part is closed.
@@ -41,20 +41,20 @@
 		disposed. Fortunately
 		JFace
 		provides the
-		<code>ResourceManager</code>
+		`ResourceManager`
 		and its derived classes.
 	
 
 	
 		An instance of the
-		<code>LocalResourceManager</code>
+		`LocalResourceManager`
 		class
 		is created with a reference to a
-		<code>Control</code>
+		`Control`
 		. If this
-		<code>Control</code>
+		`Control`
 		is disposed, the resources created by the
-		<code>LocalResourceManager</code>
+		`LocalResourceManager`
 		are also disposed.
 	
 
@@ -66,13 +66,13 @@
 	
 	
 		The
-		<code>createImage()</code>
+		`createImage()`
 		method expects an
-		<code>ImageDescriptor</code>
+		`ImageDescriptor`
 		class.
 
 		To get one
-		<code>ImageDescriptor</code>
+		`ImageDescriptor`
 		from an image file stored in your current plug-in use
 		the following:
 	
@@ -84,16 +84,16 @@
 
 	
 		In case you do not have a Control for the
-		<code>ResourceManager</code>
+		`ResourceManager`
 		, the
-		<code>LocalResourceManager</code>
+		`LocalResourceManager`
 		also provides another constructor.
 	
 	
 		A popular example is a
-		<code>LabelProvider</code>
+		`LabelProvider`
 		, where you wouldn't want to pass a
-		<code>Control</code>
+		`Control`
 		to it in order to properly dispose system resources afterwards:
 	
 	
@@ -106,10 +106,10 @@
 		<warning>
 			
 				In case you do not pass a Control, to the
-				<code>LocalResourceManager</code>
+				`LocalResourceManager`
 				you
 				have to dispose the
-				<code>ResourceManager</code>
+				`ResourceManager`
 				yourself.
 			
 		</warning>

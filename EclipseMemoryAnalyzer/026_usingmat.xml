@@ -1,11 +1,11 @@
 
 
-	<title>Use the Eclipse Memory Analyzer
+== Use the Eclipse Memory Analyzer
 	
 		After a new
 		_heap dump_
 		with the
-		<filename>.hprof</filename>
+		_.hprof_
 		ending has
 		been created, you can open it via a double-click in
 		Eclipse.

@@ -1,6 +1,6 @@
 <chapter id="tutorial_imageloader">
-	<title>Optional exercise: Create an image loader service
-[[tutorial_imageloader_target">
+== Optional exercise: Create an image loader service
+
 === Target of this exercise
 		In this exercise you create a service for your application which
 			allows you to load
@@ -14,7 +14,7 @@
 			one service implementation.
 		
 	
-[[tutorial_imageloader_createplugin">
+
 === Creating a new plug-in
 		
 			Create a new simple plug-in called
@@ -27,17 +27,17 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.core.runtime</code>
+						`org.eclipse.core.runtime`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.jface</code>
+						`org.eclipse.jface`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.osgi.services</code>
+						`org.eclipse.osgi.services`
 					
 				</listitem>
 			</itemizedlist>
@@ -46,15 +46,15 @@
 		<note>
 			
 				The
-				<code>org.eclipse.jface</code>
+				`org.eclipse.jface`
 				plug-in re-exports the
-				<code>org.eclipse.swt</code>
+				`org.eclipse.swt`
 				hence if you define a dependency to *.jface you can also use the
 				classes from *.swt.
 			
 		</note>
 	
-[[tutorial_imageloader_conditions">
+
 === Ensure that OSGi DS service functionality is available
 		
 			Ensure that the plug-in is activated and that OSGi DS annotation processing is active.
@@ -64,12 +64,12 @@
 		
 
 	
-[[tutorial_imageloader_interface">
+
 === Creating the service interface
 		
 			Create
 			the following interface called
-			<code>IBundleResourceLoader</code>
+			`IBundleResourceLoader`
 			.
 		
 
@@ -82,12 +82,12 @@
 
 
 	
-[[tutorial_imageloader_serviceimpl">
+
 === Creating a service implementation
 
 		
 			Create the following class which allows, via its
-			<code>getImageDescriptor()</code>
+			`getImageDescriptor()`
 			method, to
 			load an ImageDescriptor from a plug-in based on the class
 			provided as
@@ -104,7 +104,7 @@
 
 	
 
-[[tutorial_imageloader_serviceproduct">
+
 === Adding the new plug-in to your feature project
 		Add the new plug-in to your product
 			configuration
@@ -112,35 +112,35 @@
 			feature project.
 		
 	
-[[tutorial_imageloader_export">
+
 === Exporting the API
 		
 			To use the service in other plug-ins, export the package which
 			contains the
 			interface in the
 			corresponding
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
-[[tutorial_imageloader_dependency">
+
 === Adding the dependencies to the new plug-in
 		
 			Define a dependency to
 			the new
 			package (or the whole
 			plug-in) in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your application plug-in.
 		
 		
 			Also add a dependency to
-			<code>org.eclipse.jface</code>
+			`org.eclipse.jface`
 			to your application manifest.
 		
 
 	
-[[tutorial_imageloader_using">
+
 === Using the new service
 		
 			Create a directory called
@@ -154,7 +154,7 @@
 		
 		
 			Use the image loader service in your
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			class.
 			The following code demonstrates the usage of
 			your service based on the path name from above.
@@ -174,10 +174,7 @@
 		The result might look like the following.
 
 		
-image::imageservice.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Image on Label,pdfwidth=60%]
+image::imageservice.png[Image on Label,pdfwidth=60%]
 		
 		<warning>
 			As you added plug-ins to your product via the feature,
@@ -188,7 +185,7 @@ image::imageservice.png" />
 			
 		</warning>
 	
-[[tutorial_imageloader_review">
+
 === Reviewing the implementation
 		
 			In this example the service interface and the

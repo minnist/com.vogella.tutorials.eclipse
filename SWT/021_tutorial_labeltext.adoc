@@ -1,11 +1,11 @@
 
-	<title>Label and Text
+== Label and Text
 	
 		Add
 		a
-		<code>Label</code>
+		`Label`
 		and a
-		<code>Text</code>
+		`Text`
 		widget to your application.
 	
 	
@@ -16,9 +16,9 @@
 	
 	
 		If you now start the application you will get a small
-		<code>Shell</code>
+		`Shell`
 		with two
-		<code>Widgets</code>
+		`Widgets`
 		included.
 	
 

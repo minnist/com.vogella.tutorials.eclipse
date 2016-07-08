@@ -1,7 +1,7 @@
 
-	<title>Eclipse standard commands
+== Eclipse standard commands
 
-[[standardcommands_overview">
+
 === Overview
 		 Eclipse provides lots of standard commands which you can
 			reuse.
@@ -43,7 +43,7 @@ image::standardcommand10.gif" />
 		
 	
 
-[[standardcommands_example">
+
 === Example
 		
 			You can also use standard command and define a new handler for

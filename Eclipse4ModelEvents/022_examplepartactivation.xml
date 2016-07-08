@@ -1,8 +1,8 @@
 
-	<title>Example: the part activation event
+== Example: the part activation event
 	
 		A topic, which is fired by Eclipse is the
-		<code>UIEvents.UILifeCycle.ACTIVATE</code>
+		`UIEvents.UILifeCycle.ACTIVATE`
 		, which is fired every time a
 		part
 		is activated.
@@ -14,15 +14,15 @@
 	
 	
 		The
-		<code>Event</code>
+		`Event`
 		class contains properties like
-		<code>EventTags.ELEMENT</code>
+		`EventTags.ELEMENT`
 		, from which we can receive the element, which is concerned
 		in this event. But there are more and therefore you should
 		have
 		a look at the
-		<code>UIEvents</code>
+		`UIEvents`
 		class and its internal interfaces like
-		<code>UIEvents.EventTags</code>
+		`UIEvents.EventTags`
 		.
 	

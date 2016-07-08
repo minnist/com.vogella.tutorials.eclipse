@@ -1,4 +1,4 @@
-[[hdpi_support]]
+
 == HDPI support in Eclipse 4.6
 
 Eclipse 4.6 (Neon) support HDPI displays. 

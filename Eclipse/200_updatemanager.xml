@@ -1,10 +1,8 @@
 <section role="wrapper" id="plugin_installation">
-	<title>Updates and installation of plug-ins
-[[updatemanager">
+== Updates and installation of plug-ins
+
 === Eclipse update manager
-		<indexterm>
-			<primary>Update manager of the Eclipse IDE</primary>
-		</indexterm>
+		
 		
 			The Eclipse IDE contains a software component called
 			_Update Manager_
@@ -14,9 +12,9 @@
 			software components. Installable
 			software components are
 			called
-			<code>features</code>
+			`features`
 			and consist of
-			<code>plug-ins</code>
+			`plug-ins`
 			.
 		
 
@@ -53,7 +51,7 @@
 		
 
 	
-[[updatemanager_update">
+
 === Performing an update and install new features
 		<indexterm>
 			<primary>Update manager</primary>
@@ -99,10 +97,7 @@
 			.
 		
 		
-image::UpdateManager08.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Selecting an update site in the update manager,pdfwidth=60%]
+image::UpdateManager08.png[Selecting an update site in the update manager,pdfwidth=60%]
 		
 
 		
@@ -121,7 +116,7 @@ image::UpdateManager08.png" />
 
 		
 			To explicitly add a new update site, press the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button
 			and
 			enter
@@ -146,10 +141,7 @@ image::UpdateManager08.png" />
 		
 
 		
-image::UpdateManager10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Selecting an update site in the update manager,pdfwidth=60%]
+image::UpdateManager10.png[Selecting an update site in the update manager,pdfwidth=60%]
 		
 		
 			If you can't find a certain component, uncheck the
@@ -168,7 +160,7 @@ image::UpdateManager10.png" />
 		
 	
 
-[[updatemanager_installedcomponents">
+
 === See the installed components
 		<indexterm>
 			<primary>Update manager</primary>
@@ -183,17 +175,14 @@ image::UpdateManager10.png" />
 		
 		
 image::eclipse_installationdetails10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Installation details of Eclipse,pdfwidth=60%]
+						scale="40[Installation details of Eclipse,pdfwidth=60%]
 		
 
 	
 
 
 
-[[uninstall_plugins">
+
 === Uninstalling components
 		<indexterm>
 			<primary>Update manager</primary>
@@ -204,11 +193,11 @@ image::eclipse_installationdetails10.png"
 			If you select
 			menu:Help[About Eclipse SDK]
 			and then the
-			<guibutton>Installation Details</guibutton>
+			_Installation Details_
 			button, you can uninstall components from your Eclipse IDE.
 		
 	
-[[restart">
+
 === Restarting Eclipse
 
 		 After an update or an installation of a new software component,

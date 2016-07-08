@@ -1,13 +1,13 @@
 
-	<title>Exercise: Extend the Eclipse application model
-[[e4modelextend_model_target">
+== Exercise: Extend the Eclipse application model
+
 === Target
 		
 			In this exercise you extend the structure of the Eclipse
 			application model with an additional model element.
 		
 	
-[[e4modelextend_model1">
+
 === Creating a plug-in and add the dependencies
 		
 			Create a new simple plug-in called
@@ -16,28 +16,25 @@
 		
 		
 image::appmodel_projectwizard10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Wizard to create a simple plug-in,pdfwidth=60%]
+						scale="40[Wizard to create a simple plug-in,pdfwidth=60%]
 		
 		
 			Add a dependency to the plug-ins
-			<code>org.eclipse.e4.ui.model.workbench</code>
+			`org.eclipse.e4.ui.model.workbench`
 			and
-			<code>org.eclipse.e4.core.contexts</code>
+			`org.eclipse.e4.core.contexts`
 			in your new plug-in via its
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
-[[e4modelextend_model2">
+
 === Create new model
 		
 			Create a folder called
-			<filename class="directory">model</filename>
+			<filename class="directory">model_
 			and create a new EMF model called
-			<filename>UiExtensions.ecore</filename>
+			_UiExtensions.ecore_
 			via
 			menu:File[New > Other... > Eclipse Modeling Framework > EMF Model]
 			.
@@ -50,7 +47,7 @@ image::emf_appmodel20.png[To create the EMF model, select this page of the wizar
 		
 		
 			Press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 		
@@ -62,7 +59,7 @@ image::emf_appmodel20.png[To create the EMF model, select this page of the wizar
 image::emf_appmodel30.png[Package settings,pdfwidth=60%]
 		
 	
-[[e4modelextend_model3">
+
 === Define relationships to the Eclipse application model
 		
 			Right-click on the model and select
@@ -76,7 +73,7 @@ image::renderermodel10.png"/>
 		
 		
 			Click on the button
-			<guibutton>Browse Registered Packages</guibutton>
+			_Browse Registered Packages_
 			and select the
 			<parameter>*UiModel/application</parameter>
 			model from the
@@ -91,14 +88,14 @@ image::renderermodel40.png[Define connections to an existing model, part 2,pdfwi
 		
 	
 
-[[e4modelextend_model4">
+
 === Define your custom model extension
 		
 			Create a new
-			<code>EClass</code>
+			`EClass`
 			model element
 			and add the following
-			<code>Part</code>
+			`Part`
 			<parameter>
 				ESuper
 				Types
@@ -120,9 +117,9 @@ image::renderermodel50.png"/>
 		
 			Right-click on the model element and
 			add an
-			<code>EAttribute</code>
+			`EAttribute`
 			called uri with type of
-			<code>EString</code>
+			`EString`
 			to it.
 		
 		
@@ -141,11 +138,11 @@ image::renderermodel60.png"/>
 			</mediaobject>
 		
 	
-[[e4modelextend_model5">
+
 === Create the Genmodel
 		
 			Right-click your
-			<filename>.ecore</filename>
+			_.ecore_
 			file and select
 			menu:File[New > Other... > EMF Generator model]
 			.
@@ -175,11 +172,11 @@ image::renderermodel70.png"/>
 		
 	
 
-[[e4modelextend_model6">
+
 === Generate the Java classes
 		
 			Use your
-			<filename>genmodel</filename>
+			_genmodel_
 			to create the Java
 			code. Right-click on it
 			and select
@@ -193,20 +190,20 @@ image::applicationmodel_generatecode10.png"
 			</mediaobject>
 		
 	
-[[e4modelextend_model7">
+
 === Make generated classes available
 		
 			Export all package via
 			the Runtime tab on the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 		<tip>
 			
 				Please note that the first time you run the model generation, the
-				<filename>plugin.xml</filename>
+				_plugin.xml_
 				file is created and the
-				<code>org.eclipse.emf.ecore.generated_package</code>
+				`org.eclipse.emf.ecore.generated_package`
 				extension point
 				is added to the file.
 				This extension point
@@ -215,7 +212,7 @@ image::applicationmodel_generatecode10.png"
 				model. It
 				is only added if
 				the
-				<filename>plugin.xml</filename>
+				_plugin.xml_
 				file needs to get created. If you
 				later
 				adjust settings of your mode,
@@ -241,7 +238,7 @@ image::renderermodel80.png" scale="30" />
 			Note down the uri from the extension point. You need to
 			define this in
 			your
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			later.
 		
 	

@@ -1,11 +1,11 @@
 
-	<title>Tutorial: Secure storage of preferences
+== Tutorial: Secure storage of preferences
 	
 		To test the secure storage of preferences create the project
-		<filename>de.vogella.preferences.security</filename>
+		_de.vogella.preferences.security_
 		with a
 		view and add the
-		<code>org.eclipse.equinox.security</code>
+		`org.eclipse.equinox.security`
 		plug-in as a dependency to
 		it.
 	

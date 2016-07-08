@@ -11,16 +11,16 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Define a project nature
-    Project natures are defined with the <code>org.eclipse.core.resources.natures</code>
+== Define a project nature
+    Project natures are defined with the `org.eclipse.core.resources.natures`
         extension point.
     A bare project nature only needs a name, id and a class reference, which implements
-            <code>IProjectNature</code>.
+            `IProjectNature`.
     
         <programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/bare_projectnature.xml"/>
 		</programlisting>
-    The implementation of the referenced <code>ExampleProductNature</code> can look like
+    The implementation of the referenced `ExampleProductNature` can look like
         this:
     
         <programlisting language="java">
@@ -32,7 +32,7 @@ Version 0.3, 06.07.2016
             The acutal id of a project nature consists of the
                     <parameter>Bundle-SymbolicName</parameter> + <parameter>id</parameter>, which is
                 defined for the extension point. See <parameter>NATURE_ID</parameter> in
-                    <code>ExampleProductNature</code>.
+                    `ExampleProductNature`.
         </note>
     
     <section>
@@ -47,7 +47,7 @@ Version 0.3, 06.07.2016
     
     <section>
         <title>Get and set a Project Natures
-        Every <code>IProject</code> has an <code>IProjectDescription</code>, which contains
+        Every `IProject` has an `IProjectDescription`, which contains
             all <parameter>natureIds</parameter>.
         
             <programlisting language="java">
@@ -58,14 +58,14 @@ Version 0.3, 06.07.2016
     <section>
         <title>Using expressions to check for project natures
         The existence of a certain project nature can also be checked with a core expression,
-            which can be defined within the <code>org.eclipse.core.expressions.definitions</code>
+            which can be defined within the `org.eclipse.core.expressions.definitions`
             extension point.
         
             <programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/core_expression_projectnature.xml"/>
 		</programlisting>
         
-        Here you can see that a <code>PropertyTester</code> for project natures is already
+        Here you can see that a `PropertyTester` for project natures is already
             available and you can use the
                 <parameter>org.eclipse.core.resources.projectNature</parameter> property to check
             for a certain project nature.

@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>﻿Exercise: Changing the window title on perspective change
+== ﻿Exercise: Changing the window title on perspective change
 	<section>
 === Target
 		In this exercise we will change the window title according to the active
@@ -50,9 +50,9 @@ Version 0.3, 06.07.2016
 		
 		
 			In the
-			<filename>com.sample.application</filename>
+			_com.sample.application_
 			project you can find the
-			<filename>com.sample.application.product</filename>
+			_com.sample.application.product_
 			, which you should start in order
 			to see a running example of the ﻿e4-perspective-switcher.
 		
@@ -65,14 +65,11 @@ Version 0.3, 06.07.2016
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata fileref="./images/perspective_switch_addon.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Perspective switch addon,pdfwidth=60%]
+					<imagedata fileref="./images/perspective_switch_addon.png[Perspective switch addon,pdfwidth=60%]
 		
 		
 			The implementation of the
-			<code>PerspectiveSwitchAddon</code>
+			`PerspectiveSwitchAddon`
 			looks like
 			this:
 		

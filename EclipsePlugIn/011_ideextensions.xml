@@ -1,5 +1,5 @@
 
-	<title>Extending the Eclipse IDE
+== Extending the Eclipse IDE
 	The Eclipse IDE is basically an Eclipse RCP application to support development activities. Even core
 		functionality of the Eclipse IDE is provided via a plug-in, for example the Java development or the C
 		development tools

@@ -1,6 +1,6 @@
 
-	<title>Application model modifications at runtime
-[[modeldynamics_creating">
+== Application model modifications at runtime
+
 === Creating model elements
 		<indexterm>
 			<primary>Application model</primary>
@@ -25,7 +25,7 @@
 
 	
 
-[[modeldynamics_modification">
+
 === Modifying existing model elements
 		You can also access existing model elements, via the model
 			service or via dependency injection and adjust their attributes.
@@ -42,9 +42,9 @@
 			application, it becomes
 			visible instantly.
 			Or if you inject an MPart object and call its
-			<code>setLabel()</code>
+			`setLabel()`
 			method, the text of the part in a
-			<code>PartStack</code>
+			`PartStack`
 			changes immediately.
 		
 	

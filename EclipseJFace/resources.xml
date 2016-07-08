@@ -1,9 +1,9 @@
 
-	<title>Links and Literature
+== Links and Literature
 	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resourceslocal.adoc[]
 
-[[resources_s1s2a">
+
 === Other JFace Resources
 		
 			http://www.vogella.com/tutorials/SWT/article.html">Eclipse SWT Tutorial

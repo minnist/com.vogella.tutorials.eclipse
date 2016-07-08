@@ -1,7 +1,7 @@
 
-	<title>Running the Eclipse platform unit tests
+== Running the Eclipse platform unit tests
 
-[[unitTestingJFace2">
+
 === Repositories for platform tests
 		
 			Clone the following Git repositories as these contain the existing
@@ -37,7 +37,7 @@
 			.
 		
 	
-[[platformtest_jface">
+
 === Example: JFace tests
 
 		
@@ -91,7 +91,7 @@
 			To test the full JFace TestSuite, you only need to run the
 			_JFace-All Tests.launch_
 			run configuration from the
-			<code>org.eclipse.ui.tests</code>
+			`org.eclipse.ui.tests`
 			plug-in.
 		
 

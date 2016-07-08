@@ -1,6 +1,6 @@
 
-	<title>Eclipse BIRT
-[[intro_overview">
+== Eclipse BIRT
+
 === Overview
 		 Eclipse BIRT allows the creation of reports based on data from
 			different data
@@ -35,7 +35,7 @@
 			reports.
 		
 	
-[[birtintro_report">
+
 === Example
 		
 			In this tutorial we will build a report which will show us

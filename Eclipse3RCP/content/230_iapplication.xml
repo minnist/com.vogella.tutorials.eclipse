@@ -1,24 +1,24 @@
 
-	<title>Application and Advisor Classes
+== Application and Advisor Classes
 	
 		During the startup of an Eclipse RCP application the Eclipse
 		runtime
 		will evaluate which class is defined via the
-		<code>org.eclipse.core.runtime.application</code>
+		`org.eclipse.core.runtime.application`
 		extension point.
 	
 	
 		This is the equivalent of the main class of standard Java
 		programs.
 		This class is responsible for creating the SWT
-		<code>Display</code>
+		`Display`
 		and for starting the event loop for the application.
 	
 	
 		This class is typically called Application
 		and must implement the
 		interface
-		<code>IApplication</code>
+		`IApplication`
 		.
 	
 	
@@ -28,44 +28,44 @@
 		</programlisting>
 	
 	
-		<code>PlatformUI.createAndRunWorkbench()</code>
+		`PlatformUI.createAndRunWorkbench()`
 		creates and runs a
-		<code>Workbench</code>
+		`Workbench`
 		. The
-		<code>Workbench</code>
+		`Workbench`
 		represents the graphical user interface of Eclipse. The visual
 		part of
 		the Workbench is represented via the
-		<code>WorkbenchWindow</code>
+		`WorkbenchWindow`
 		class. A
-		<code>Workbench</code>
+		`Workbench`
 		can have several
-		<code>WorkbenchWindows</code>
+		`WorkbenchWindows`
 		opened. The inner part of the
-		<code>WorkbenchWindow</code>
+		`WorkbenchWindow`
 		is represented via the class
-		<code>WorkbenchPage</code>
+		`WorkbenchPage`
 		.
 	
 	
 		The
-		<code>Workbench</code>
+		`Workbench`
 		is configured via a class of type
-		<code>WorkbenchAdvisor</code>
+		`WorkbenchAdvisor`
 		. This class defines the initial Perspective and defines the
-		<code>WorkbenchWindowAdvisor</code>
+		`WorkbenchWindowAdvisor`
 		class.
 	
 	
-		<code>WorkbenchWindowAdvisor</code>
+		`WorkbenchWindowAdvisor`
 		calls the class
-		<code>ActionBarAdvisor</code>
+		`ActionBarAdvisor`
 		which configures
-		<code>Actions</code>
+		`Actions`
 		for the
-		<code>Workbench</code>
+		`Workbench`
 		and defines initial attribute for the
-		<code>WorkbenchWindow</code>
+		`WorkbenchWindow`
 		as initial size, title and visibility of the statusline.
 	
 	
@@ -76,7 +76,7 @@
 	
 	
 		For example you could set the initial position of the application via
-		<code>postWindowCreate()</code>
+		`postWindowCreate()`
 		method.
 	
 	
@@ -87,18 +87,18 @@
 	
 	
 		The
-		<code>ActionBarAdvisor</code>
+		`ActionBarAdvisor`
 		class is as of Eclipse 3.7 not important any more as the Action
 		framework is replaced by the superior command framework.
 	
 	
 		Each adviser allow to configure certain behavior of the application,
 		e.g., the
-		<code>WorkbenchAdvisor</code>
+		`WorkbenchAdvisor`
 		allows to perform certain actions at startup or shutdown by
 		overriding the
-		<code>preStartUp()</code>
+		`preStartUp()`
 		and
-		<code>preShutdown()</code> methods.
+		`preShutdown()` methods.
 		.
 	

@@ -1,6 +1,6 @@
 
-	<title>Organizing your workspace
-[[workorganization_overview">
+== Organizing your workspace
+
 === Working sets and tasks
 		
 			The Eclipse IDE allows you to organize your project into
@@ -9,11 +9,9 @@
 		
 	
 
-[[tips_workingsets">
+
 === Working sets
-		<indexterm>
-			<primary>Working sets</primary>
-		</indexterm>
+		
 		
 			You will create more and more projects in your development
 			career. Therefore, the data in your
@@ -34,14 +32,11 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/workingset10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Showing the working set,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/workingset10.png[Showing the working set,pdfwidth=60%]
 		
 		
 			Press the
-			<guibutton>New</guibutton>
+			_New_
 			button
 			on the following dialog to create a working set.
 		
@@ -56,25 +51,19 @@ image::workingset20.png" />
 			On the next dialog select
 			_Resource_
 			, press the
-			<guibutton>Next</guibutton>
+			_Next_
 			button and select the
 			projects
 			you
 			would like to see and give it a name.
 		
 		
-image::workingset30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating new working sets,pdfwidth=60%]
+image::workingset30.png[Creating new working sets,pdfwidth=60%]
 		
 
 
 		
-image::workingset40.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating new working sets,pdfwidth=60%]
+image::workingset40.png[Creating new working sets,pdfwidth=60%]
 		
 
 		
@@ -92,10 +81,7 @@ image::workingset50.png"/>
 		
 
 		
-image::workingset60.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Filtering resources for the working set,pdfwidth=60%]
+image::workingset60.png[Filtering resources for the working set,pdfwidth=60%]
 		
 
 		<tip>

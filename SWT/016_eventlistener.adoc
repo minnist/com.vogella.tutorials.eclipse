@@ -1,5 +1,5 @@
 
-	<title>Event Listener
+== Event Listener
 	<indexterm>
 		<primary>SWT</primary>
 		<secondary>Event listener</secondary>
@@ -8,19 +8,19 @@
 	
 		You can register listeners for specific events on SWT controls, e.g.,
 		a
-		<code>ModifyListener</code>
+		`ModifyListener`
 		to listen to changes in a
-		<code>Text</code>
+		`Text`
 		widget
 		or a
-		<code>SelectionLister</code>
+		`SelectionLister`
 		for selection
 		(click) events on a
-		<code>Button</code>
+		`Button`
 		widget. The following code demonstrates the implementation, it uses
-		<code>SelectionAdapter</code>
+		`SelectionAdapter`
 		which is an implementation of the
-		<code>SelectionLister</code>
+		`SelectionLister`
 		interface.
 	
 	
@@ -30,7 +30,7 @@
 		</programlisting>
 	
 	
-		<code>FocusListener</code>
+		`FocusListener`
 		is another
 		examples for such a listener interface.
 	
@@ -55,32 +55,32 @@
 		
 			menu:
 					<parameter>Name</parameter>
-					<code>Listener</code>
+					`Listener`
 				[
 					<parameter>Name</parameter>
-					<code>Adapter</code>
+					`Adapter`
 				]
 		
 		
 			For
 			example
-			<code>SelectionListener</code>
+			`SelectionListener`
 			has
 			the abstract class
-			<code>SelectionAdapter</code>
+			`SelectionAdapter`
 			which pre-implements the methods of
-			<code>SelectionListener</code>
+			`SelectionListener`
 			.
 		
 	</tip>
 	
 		If you want to add a listener to the whole application, you can use
 		the
-		<code>Display</code>
+		`Display`
 		class. For example to add a global mouse listener use
-		<code>addFilter(SWT.MouseMove, listener)</code>
+		`addFilter(SWT.MouseMove, listener)`
 		. If you add filters to the
-		<code>Display</code>
+		`Display`
 		you may interfere with existing listeners. Ensure to test your code
 		accordingly.
 	

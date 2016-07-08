@@ -1,5 +1,5 @@
 
-	<title>XPaths in model fragments
+== XPaths in model fragments
 	XPaths can also be used to define the contributing place in the model for a model fragment. The following table
 		gives several examples how you can use XPath to define the model element you want to extend.
 	
@@ -63,11 +63,11 @@
 					<entry>//trimBars[not(@side)]</entry>
 					<entry>
 						Contribute to the top trimbar. When the
-						<code>MTrimBar</code>
+						`MTrimBar`
 						is on top
 						the side
 						attribute is omitted, therefore
-						<code>not(@side)</code>
+						`not(@side)`
 						is used.
 					</entry>
 				</row>
@@ -76,7 +76,7 @@
 					</entry>
 					<entry>
 						Contribute to a
-						<code>MPart</code>
+						`MPart`
 						.
 					</entry>
 				</row>
@@ -86,7 +86,7 @@
 					</entry>
 					<entry>
 						Contribute to a
-						<code>MPart</code>
+						`MPart`
 						which is tagged with the
 						<parameter>Editor</parameter>
 						tag.

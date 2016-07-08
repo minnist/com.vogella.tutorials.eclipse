@@ -1,4 +1,4 @@
-[[push_to_the_forked_repository]]
+
 
 == Push to the forked repository
 In this exercise you learn how to push commits from your local repository to a remote repository. 
@@ -9,7 +9,7 @@ Another way to achieve the goal would be to create a new clone of the forked rep
 However, having	everything in one repository has many advantages. 
 For example, in eclipse you can then easily	checkout versions of your projects from the two remote repositories
 		
-[[_add_a_new_remote]]
+
 === Add a new remote
 		
 Git allows that you have more than one remote repository for a local repository.
@@ -73,7 +73,7 @@ Press the Finish button. In order to test if everything worked well you can fetc
 			</inlinemediaobject>
 			
 			
-[[_create_a_new_commit_in_a_new_branch]]
+
 === Create a new commit in a new branch
 		
 Create a new commit in your local repository. You should create the local branch based on the new remote, see screenshot below.
@@ -90,7 +90,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 			</inlinemediaobject>
 		
 	
-[[_push_to_remote">
+
 === Push to remote
 		
 			Select

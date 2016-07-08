@@ -1,13 +1,9 @@
 
-	<title>Communication within your Eclipse application
-[[eventsystem_concept">
+== Communication within your Eclipse application
+
 === Event based communication
-		<indexterm>
-			<primary>Events</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Events bus</primary>
-		</indexterm>
+		
+		
 		
 			In your application you frequently have the need to communicate
 			between application components. This communication should be loosely
@@ -28,7 +24,7 @@
 			the event they registered for. .
 		
 	
-[[eventsystem_overview">
+
 === The event bus of Eclipse
 		
 			For this purpose
@@ -44,10 +40,7 @@
 			send out arbitrary events as depicted in the following graphic.
 		
 		
-image::eventbroker10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Sending out events with an event broker,pdfwidth=60%]
+image::eventbroker10.png" scale="30[Sending out events with an event broker,pdfwidth=60%]
 		
 
 		The Eclipse platform will make sure that registered components
@@ -58,11 +51,9 @@ image::eventbroker10.png" scale="30" />
 		
 
 	
-[[eventsystem_eventadmin">
+
 === Event service
-		<indexterm>
-			<primary>Event service</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>IEventBroker</primary>
 			<seealso>Event service</seealso>
@@ -73,7 +64,7 @@ image::eventbroker10.png" scale="30" />
 			communication.
 			This service can be accessed via dependency injection
 			based on the
-			<code>IEventBroker</code>
+			`IEventBroker`
 			interface.
 			This communication service can also be used
 			to
@@ -91,7 +82,7 @@ image::eventbroker10.png" scale="30" />
 
 
 	
-[[eventsystem_requiredplugins">
+
 === Required plug-ins to use the event service
 		
 			The following plug-ins are required to use the
@@ -99,10 +90,10 @@ image::eventbroker10.png" scale="30" />
 			functionality:
 			<itemizedlist>
 				<listitem>
-					<code>org.eclipse.e4.core.services</code>
+					`org.eclipse.e4.core.services`
 				</listitem>
 				<listitem>
-					<code>org.eclipse.osgi.services</code>
+					`org.eclipse.osgi.services`
 				</listitem>
 			</itemizedlist>
 

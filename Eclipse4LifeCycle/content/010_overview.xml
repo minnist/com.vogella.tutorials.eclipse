@@ -1,6 +1,6 @@
 
-	<title>Eclipse application life cycle
-[[lifecycle_overview">
+== Eclipse application life cycle
+
 		<indexterm>
             <primary>Life cycle hooks</primary>
         </indexterm>
@@ -43,7 +43,7 @@
 		
 	
 
-[[lifecycle_iapplicationcontext">
+
 === Accessing application startup parameters
 		<indexterm>
 			<primary>Launch parameters</primary>
@@ -53,18 +53,16 @@
             <primary>Command line parameters</primary>
             <secondary>Access</secondary>
         </indexterm>
-		<indexterm>
-			<primary>IApplicationContext</primary>
-		</indexterm>
+		
 
 		
 			The
-			<code>IApplicationContext</code>
+			`IApplicationContext`
 			object which can be injected into your life cycle class contains
 			information about the startup parameters of your
 			application. You can
 			access these parameters via the
-			<code>getArguments()</code>
+			`getArguments()`
 			method.
 		
 		The access is demonstrated by the following snippet.
@@ -87,7 +85,7 @@
 
 
 	
-[[lifecycle_staticsplash">
+
 === Close static splash screen
 		<indexterm>
 			<primary>Splash screen</primary>
@@ -96,36 +94,26 @@
 		
 			If you configured in your product configuration file that a static
 			splash screen should be used, you can call the
-			<code>applicationRunning()</code>
+			`applicationRunning()`
 			method on the
-			<code>IApplicationContext</code>
+			`IApplicationContext`
 			object. You typically call this method if you want to replace the
 			static splash screen with a dynamic screen developed
 			with SWT.
 		
 	
-[[lifecycle_implementation">
+
 === How to implement a life cycle class
 
-		<indexterm>
-			<primary>@PostContextCreate</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@ProcessAdditions</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@ProcessRemovals</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@PreSave</primary>
-		</indexterm>
-		<indexterm>
-			<primary>lifeCycleURI</primary>
-		</indexterm>
+		
+		
+		
+		
+		
 
 		
 			The
-			<code>org.eclipse.core.runtime.product</code>
+			`org.eclipse.core.runtime.product`
 			extension point allows you to define a
 			class as life cycle callback
 			via a
@@ -133,10 +121,10 @@
 		
 		
 			The key for this property is
-			<code>lifeCycleURI</code>
+			`lifeCycleURI`
 			and it
 			points to the class via the
-			<code>bundleclass://</code>
+			`bundleclass://`
 			schema.
 		
 		
@@ -167,11 +155,11 @@
 							<entry>@PostContextCreate</entry>
 							<entry>
 								Is called after the Application’s
-								<code>IEclipseContext</code>
+								`IEclipseContext`
 								is created, can be used to add objects, services, etc. to the
 								context.
 								This context is created for the
-								<code>MApplication</code>
+								`MApplication`
 								class.
 							</entry>
 						</row>
@@ -199,13 +187,13 @@
 
 
 	
-[[lifecycle_implementationexample">
+
 === Example life cycle implementation
 		
 			The following example shows how to register a class in your
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file as life cycle handler. To avoid that the code wraps we use
-			<code>testing</code>
+			`testing`
 			as BundleSymbolicName and package, you need to replace that with the correct values for your life cycle class.
 		
 		
@@ -216,7 +204,7 @@
 
 		
 			The following class displays a
-			<code>Shell</code>
+			`Shell`
 			until the startup process of your application has finished.
 			You could
 			extend this example to show a progress bar.

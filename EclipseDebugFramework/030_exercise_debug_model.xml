@@ -11,8 +11,8 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Exercise: Creating the Debug Model Elements
-[[debug_creation_exercise_target">
+== Exercise: Creating the Debug Model Elements
+
 === Target
 		In this exercise an example debug model will be created, so
 			that
@@ -48,11 +48,11 @@ Version 0.3, 06.07.2016
 			</note>
 		
 	
-[[debug_create_idebugelement">
+
 === Create a common IDebugElement
 		
 			As mentioned earlier each debug model class is derived from
-			<code>IDebugElement</code>
+			`IDebugElement`
 			and contains methods, which are equal for every debug model class.
 		
 		
@@ -72,10 +72,10 @@ Version 0.3, 06.07.2016
 			</note>
 		
 	
-[[debug_create_istackframe">
+
 === Create an IStackFrame
 		
-			<code>IStackFrames</code>
+			`IStackFrames`
 			are only visible when a thread is suspended, which can also be seen
 			in the following
 			<xref linkend="debug_create_ithread" />
@@ -83,7 +83,7 @@ Version 0.3, 06.07.2016
 		
 		
 			For instance when debugging a Java application the list of
-			<code>IStackFrame</code>
+			`IStackFrame`
 			objects under a thread show the currently suspended Java stacktrace.
 		
 		
@@ -95,40 +95,40 @@ Version 0.3, 06.07.2016
 		
 			For convenience most of the actions in the ExampleStackFrame are
 			delegated to the given
-			<code>IThread</code>
+			`IThread`
 			. For visualization the
-			<code>getName()</code>
+			`getName()`
 			method returns the character and position of the word, which should
 			be
 			spelled. In later sections IVariables will be added to this
-			<code>IStackFrame</code>
+			`IStackFrame`
 			implementation, so that also available variables are shown in the
 			_Variables_
 			view.
 		
 		
-			<code>IStackFrame</code>
+			`IStackFrame`
 			classes should also override the
-			<code>equals</code>
+			`equals`
 			and
-			<code>hashcode</code>
+			`hashcode`
 			methods, because they are usually compared to each other. See
-			<code>getStackFrames()</code>
+			`getStackFrames()`
 			and
-			<code>getTopStackFrame()</code>
+			`getTopStackFrame()`
 			methods in
 			<xref linkend="debug_create_ithread" />
 			.
 		
 	
-[[debug_create_ithread">
+
 === Create an IThread
 		
 			An
-			<code>IThread</code>
+			`IThread`
 			is supposed to be a wrapper around a usual Java thread, which runs
 			within an
-			<code>IDebugTarget</code>
+			`IDebugTarget`
 			.
 		
 		
@@ -138,23 +138,23 @@ Version 0.3, 06.07.2016
 			</programlisting>
 		
 	
-[[debug_create_idebugtarget">
+
 === Create an IDebugTarget
 		
 			The
-			<code>IDebugTarget</code>
+			`IDebugTarget`
 			is supposed to be applied to the
-			<code>org.eclipse.debug.core.ILaunch</code>
+			`org.eclipse.debug.core.ILaunch`
 			object, which is passed to an
-			<code>org.eclipse.debug.core.model.LaunchConfigurationDelegate</code>
+			`org.eclipse.debug.core.model.LaunchConfigurationDelegate`
 			, by using its
-			<code>addDebugTarget(IDebugTarget target)</code>
+			`addDebugTarget(IDebugTarget target)`
 			method.
 			.
 		
 		
 			It can contain several
-			<code>IThreads</code>
+			`IThreads`
 			, which run during a debug session.
 		
 		
@@ -164,7 +164,7 @@ Version 0.3, 06.07.2016
 			</programlisting>
 		
 	
-[[debug_create_validate">
+
 === Validate
 		
 			To validate the result start the ExampleLaunchDelegate, switch
@@ -175,10 +175,7 @@ Version 0.3, 06.07.2016
 		
 		
 image::debug_toolbar_buttons.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Debug toolbar buttons,pdfwidth=60%]
+						scale="40[Debug toolbar buttons,pdfwidth=60%]
 		
 		
 			When passing in "vogella" as String the result should look

@@ -1,7 +1,7 @@
-[[maven_eclipseinstallation]]
+
 == Installation and configuration of Maven for Eclipse
 
-[[maven_eclipseinstallation_m2es]]
+
 === Install the Maven support for Eclipse (m2e)
 		
 Most Eclipse downloads include the Maven tooling already. 
@@ -22,7 +22,7 @@ For Java web development you also want the m2e-wtp entry.
 		
 image::m2einstallation10.png[m2e installation]
 
-[[maven_eclipseinstallation_index]]
+
 === Download the Maven index
 		
 By default, the Maven tooling does not download the Maven index for the Eclipse IDE. 

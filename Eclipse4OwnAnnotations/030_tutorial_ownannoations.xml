@@ -1,6 +1,6 @@
 
-	<title>Exercise: Creating custom annotations
-[[customannotations_tutorial_overview">
+== Exercise: Creating custom annotations
+
 === Target
 		
 			The following exercise demonstrates how to create a custom
@@ -9,16 +9,16 @@
 		
 			The
 			annotation processor is registered for a custom
-			<code>@DirectTodo</code>
+			`@DirectTodo`
 			annotation, which is a qualifier and therefore has to be used
 			together with
-			<code>@Inject</code>
+			`@Inject`
 			. The
-			<code>@DirectTodo</code>
+			`@DirectTodo`
 			annotation can have a id for requesting a Todo with a certain id.
 		
 	
-[[customannotations_tutorial_plugin">
+
 === Creating a new plug-in 
 		
 			Create a new simple plug-in project called
@@ -31,23 +31,23 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.di</code>
+						`org.eclipse.e4.core.di`
 					
 				</listitem>
 				<listitem>
 					
-						<code>com.example.e4.rcp.todo.model</code>
+						`com.example.e4.rcp.todo.model`
 					
 				</listitem>
 			</itemizedlist>
 			Also configure that the
-			<code>javax.inject</code>
+			`javax.inject`
 			package should be used.
 		
 	
 
 
-[[customannotations_tutorial_annotation">
+
 === Define and export annotations
 		
 			Define the following annotation.
@@ -59,15 +59,15 @@
 		
 		
 			Export the
-			<code>com.example.e4.rcp.todo.ownannotation</code>
+			`com.example.e4.rcp.todo.ownannotation`
 			package
 			via your
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
 
-[[customannotations_enable_ds_annotations">
+
 === Ensure annotation processing and plug-in activation is active
 		
 			Ensure that OSGi services can be defined via annotations in the class via
@@ -78,7 +78,7 @@
 			Ensure that the
 			_Activate this plug-in when one of its classes is loaded_
 			flag for the service plug-in is set in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 			Depending on your setup, this flag
 			might
@@ -87,13 +87,13 @@
 
 	
 
-[[customannotations_tutorial_class">
+
 === Create service implementation
 		
 			Create the
-			<code>com.example.e4.rcp.todo.ownannotation.internal</code>
+			`com.example.e4.rcp.todo.ownannotation.internal`
 			package and the following class. Based on the annotation this will register this class as service for the
-			<code>ExtendedObjectSupplier</code>
+			`ExtendedObjectSupplier`
 			abstract class via OSGi declarative services.
 		
 		
@@ -104,7 +104,7 @@
 		<note>
 			
 				The
-				<code>ExtendedObjectSupplier</code>
+				`ExtendedObjectSupplier`
 				class
 				is not yet released as official API. See
 				<xref linkend="e4overview_api" />
@@ -114,17 +114,17 @@
 	
 
 
-[[customannotations_tutorial_dependencies">
+
 === Add the plug-in as dependency
 		
 			Add your new plug-in as dependency to your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			application plug-in via its
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 	
-[[customannotations_tutorial_feature">
+
 === Update the product configuration (via the features)
 		
 			Include the new plug-in into your feature to make it available
@@ -133,7 +133,7 @@
 
 	
 
-[[customannotations_tutorial_use">
+
 === Validate: Use your custom annotation
 
 		
@@ -142,7 +142,7 @@
 			parameter in one of your parts. For example add the
 			following method
 			to your
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			class.
 		
 		
@@ -155,7 +155,7 @@
 			plug-in).
 			Ensure that you get the Todo with id 1 injected
 			based on your
-			<code>@DirectTodo</code>
+			`@DirectTodo`
 			annotation.
 		
 	

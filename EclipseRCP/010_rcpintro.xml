@@ -1,6 +1,6 @@
 
-	<title>Eclipse based Applications
-[[overview_rcp">
+== Eclipse based Applications
+
 === What are Eclipse RCP applications?
 		 Eclipse was originally started as a modular IDE application.
 		
@@ -48,7 +48,7 @@
 		
 	
 
-[[overview_advantages">
+
 === Advantages of Eclipse based applications
 		 The Eclipse platform forms the basis of the most successful
 			Java

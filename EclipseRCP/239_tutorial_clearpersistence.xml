@@ -1,6 +1,6 @@
 
-	<title>Exercise: Configure the deletion of persisted model data
-[[tutorial_clearpesistence_task">
+== Exercise: Configure the deletion of persisted model data
+
 === Delete the persisted user changes at startup
 
 		
@@ -15,10 +15,7 @@
 		
 		
 image::deletepersistedmodel10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Delete persisted Eclipse application model,pdfwidth=60%]
+						scale="40[Delete persisted Eclipse application model,pdfwidth=60%]
 		
 
 		<note>
@@ -33,7 +30,7 @@ image::deletepersistedmodel10.png"
 		</note>
 
 	
-[[tutorial_clearpesistence_why">
+
 === Why is this setting necessary?
 
 		

@@ -11,11 +11,11 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Project Natures in Eclipse
+== Project Natures in Eclipse
     Project Natures are used in the Eclipse IDE in order to configure projects in the
         workspace.
     One project may consist of several project natures. The most popular project nature is
-            <code>org.eclipse.jdt.core.javanature</code>, which is used to specify the project as
+            `org.eclipse.jdt.core.javanature`, which is used to specify the project as
         Java project.
     Some examples for project natures are:
     

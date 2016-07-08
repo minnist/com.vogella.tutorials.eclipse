@@ -1,9 +1,9 @@
-[[_develop_a_feature_bug_fix]]
+
 == Develop a new feature or a bug fix
 
 In this exercise you will learn how to develop a new feature using Git in Eclipse.
 	
-[[egitexercise_create_a_local_feature_branch]]
+
 === Create a local feature branch
 		
 The development of a new feature (or bug-fix) should normally only depend on the submitted state of the project.
@@ -34,7 +34,7 @@ This creates and checks out the new branch.
 
 image::new-branch-checked-out.png[Created branch]			
 
-[[_develop_a_new_feature]]
+
 === Develop a new feature
 
 Start editing the source code and implement a new feature. 
@@ -53,7 +53,7 @@ image::register-divide.png[Register Divide class]
 		
 You may also decide to implement something else like polish the SWT or Swing user interface.
 
-[[_test_your_feature]]
+
 
 == Test your feature
 
@@ -61,7 +61,7 @@ Run the unit tests to ensure that you did not break anything.
 		
 image::run-tests.png[Run Tests, 400, 400]	
 
-[[_commit_your_changes_locally]]
+
 === Commit your changes locally
 		
 Use the Git staging view to store your development in your local repository in your current branch by committing your changes.

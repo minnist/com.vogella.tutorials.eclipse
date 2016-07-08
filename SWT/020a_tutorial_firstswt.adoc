@@ -1,8 +1,8 @@
 
-	<title>Exercise: Create a simple SWT program
+== Exercise: Create a simple SWT program
 	
 		Continue to use the
-		<code>com.examle.swt.widgets</code>
+		`com.examle.swt.widgets`
 		project.
 	
 	
@@ -26,14 +26,14 @@
 		</menuchoice>
 		.
 		You will receive an empty window (
-		<code>Shell</code>
+		`Shell`
 		).
 	
 	
 		Change the TODO in the code to the following. Make sure you use
-		<code>org.eclipse.swt</code>
+		`org.eclipse.swt`
 		and not
-		<code>java.awt</code>
+		`java.awt`
 		when adding the missing imports.
 	
 	
@@ -44,9 +44,9 @@
 	
 	
 		If you now start the application you will get a
-		<code>Shell</code>
+		`Shell`
 		with two
-		<code>Widgets</code>
+		`Widgets`
 		included.
 	
 

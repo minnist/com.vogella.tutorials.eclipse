@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Eclipse Debug Framework Resources
+== Eclipse Debug Framework Resources
 	
 		https://eclipse.org/articles/Article-Debugger/how-to.html">
 			Article about writing a sample debugger for perl.

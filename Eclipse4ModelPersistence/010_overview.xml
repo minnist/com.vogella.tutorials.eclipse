@@ -1,35 +1,35 @@
 
-	<title>Own persistence for the application model
+== Own persistence for the application model
 
-[[modelpersistence_applicatione4xmi">
+
 === Specifying the location of the application model file
 		
 			The file name and location of the application
 			model can
 			be specified in
 			the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file.
 			This is
 			done
 			via the
-			<code>applicationXMI</code>
+			`applicationXMI`
 			property. The
 			path to
 			the file follows the
 			"bundleSymbolicName"/"filename"
 			pattern, e.g.
-			<filename>test/ApplicationDifferent.e4xmi</filename>
+			_test/ApplicationDifferent.e4xmi_
 			.
 		
 		
 			To do this open the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file, select the
 			_Extensions_
 			tab and
 			open the
-			<code>org.eclipse.core.runtime.products</code>
+			`org.eclipse.core.runtime.products`
 			contribution.
 		
 		
@@ -43,7 +43,7 @@
 			<parameter>com.example.e4.rcp.todo/ApplicationNew.e4xmi</parameter>
 			as value. This value
 			consists of the
-			<code>BundleSymbolicName</code>
+			`BundleSymbolicName`
 			of the corresponding plug-in and the file
 			name of
 			your
@@ -53,7 +53,7 @@
 image::tutorial_product70.png[,pdfwidth=60%]
 		
 	
-[[modelpersistence_resourcehandler">
+
 === Custom application model persistence handler
 		<indexterm>
 			<primary>Application model</primary>
@@ -61,15 +61,15 @@ image::tutorial_product70.png[,pdfwidth=60%]
 		</indexterm>
 		
 			Eclipse uses an instance of the
-			<code>IModelResourceHandler</code>
+			`IModelResourceHandler`
 			interface to load and save the application model at startup and
 			shutdown. The
 			default implementation of this interface
 			is provided by
 			the
-			<code>ResourceHandler</code>
+			`ResourceHandler`
 			class from the
-			<code>org.eclipse.e4.ui.internal.workbench</code>
+			`org.eclipse.e4.ui.internal.workbench`
 			package.
 		
 		
@@ -77,7 +77,7 @@ image::tutorial_product70.png[,pdfwidth=60%]
 			<parameter>modelResourceHandler</parameter>
 			as parameter on your product extension to point to another class via
 			the
-			<code>bundleclass://</code>
+			`bundleclass://`
 			notation.
 		
 		
@@ -93,9 +93,9 @@ image::modelresourcehandler.png[,pdfwidth=60%]
 		
 			Implementing this interface requires knowledge about the Eclipse
 			Modeling Framework (EMF). You can use the
-			<code>ResourceHandler</code>
+			`ResourceHandler`
 			as a template to see how the
-			<code>IModelResourceHandler</code>
+			`IModelResourceHandler`
 			interface could be implemented.
 		
 	

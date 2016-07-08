@@ -1,7 +1,7 @@
 
-	<title>Preference handling in Eclipse 3.x
+== Preference handling in Eclipse 3.x
 
-[[preferences_preferencepage">
+
 === Preference Page
 		
 			Eclipse 3.x provides a standard dialog to display and
@@ -14,7 +14,7 @@
 			To add a page to this preference dialog a
 			plug-in must provide an
 			contribution to the
-			<code>org.eclipse.ui.preferencePages</code>
+			`org.eclipse.ui.preferencePages`
 			extension point.
 
 		
@@ -27,47 +27,47 @@
 			This
 			class must
 			implement
-			<code>IWorkbenchPreferencePage</code>
+			`IWorkbenchPreferencePage`
 			and must have a non-parameter constructor.
 		
 		
 			The
-			<code>PreferencePage</code>
+			`PreferencePage`
 			class or one of its subclasses can get extended; a good
 			template is
 			usually
-			<code>FieldEditorPreferencePage</code>
+			`FieldEditorPreferencePage`
 			.
 		
 		
 			To open the Preference dialog, you can use the
-			<code>org.eclipse.ui.window.preferences</code>
+			`org.eclipse.ui.window.preferences`
 			command.
 		
 	
 
-[[preferences_security">
+
 === Secure storage of preferences
 		
 			Eclipse allows to encrypt preference values via the
-			<code>org.eclipse.equinox.security</code>
+			`org.eclipse.equinox.security`
 			plug-in.
 		
 		
 			The key / value pairs will be stored in the
-			<filename>secure.storage</filename>
+			_secure.storage_
 			file in
 			the
-			<filename>.eclipse/org.eclipse.equinox.security</filename>
+			_.eclipse/org.eclipse.equinox.security_
 			folder of the users home
 			directory.
 			Eclipse uses a class of type
-			<code>PasswordProvider</code>
+			`PasswordProvider`
 			for encrypting the preferences and has a default class registered.
 		
 		
 			Via the
-			<code>org.eclipse.equinox.security.secureStorage</code>
+			`org.eclipse.equinox.security.secureStorage`
 			extension point
 			you can register your
 			own
@@ -76,11 +76,11 @@
 
 	
 
-[[preferences_pluginaccess">
+
 === Access Preferences in different plug-ins
 		
 			You can access preferences in other plug-ins via the
-			<code>PreferenceService</code>
+			`PreferenceService`
 			service.
 		
 		
@@ -95,11 +95,11 @@
 		
 	
 
-[[preferences_listener">
+
 === Reacting to changes in the preferences
 		
 			You can register
-			<code>IPropertyChangeListener</code>
+			`IPropertyChangeListener`
 			instances to changes in the preference values.
 			These
 			listener are called by the Eclipse

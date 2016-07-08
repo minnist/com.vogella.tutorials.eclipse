@@ -1,10 +1,8 @@
 
-	<title>Content Assist and Quick Fix
-[[contentassist">
+== Content Assist and Quick Fix
+
 === Content assist
-		<indexterm>
-			<primary>Content assist</primary>
-		</indexterm>
+		
 		
 			_Content assist_
 			is a functionality in Eclipse which allows the developer to get
@@ -22,7 +20,7 @@
 		
 		
 			For example, type
-			<code>syso</code>
+			`syso`
 			in the editor of a Java source file
 			and
 			then press
@@ -31,20 +29,20 @@
 				<keycap>Space</keycap>
 			</keycombo>
 			. This will replace
-			<code>syso</code>
+			`syso`
 			with
-			<code>System.out.println("")</code>
+			`System.out.println("")`
 			.
 		
 		
 			If you have a reference to an object, for example, the object
-			<code>person</code>
+			`person`
 			of the type
-			<code>Person</code>
+			`Person`
 			and
 			need to see its
 			methods, type
-			<code>person.</code>
+			`person.`
 			and
 			press
 			<keycombo>
@@ -54,17 +52,12 @@
 			.
 		
 		
-image::contentassists10.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Content Assists,pdfwidth=60%]
+image::contentassists10.gif[Content Assists,pdfwidth=60%]
 		
 	
-[[quickfix">
+
 === Quick Fix
-		<indexterm>
-			<primary>Quick Fix</primary>
-		</indexterm>
+		
 		
 			Whenever Eclipse detects a problem, it will underline the
 			problematic
@@ -81,7 +74,7 @@ image::contentassists10.gif" />
 		
 		
 			For example, type
-			<code>myBoolean = true;</code>
+			`myBoolean = true;`
 			If myBoolean is not yet
 			defined, Eclipse will highlight it as an
 			error. Select the variable
@@ -98,10 +91,7 @@ image::contentassists10.gif" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/quickfix10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Using Quickfix Example,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/quickfix10.png[Using Quickfix Example,pdfwidth=60%]
 		
 
 		
@@ -113,7 +103,7 @@ image::contentassists10.gif" />
 			classes. Or it
 			can
 			put
-			<code>try/catch</code> statements
+			`try/catch` statements
 			around your exceptions. It
 			can also
 			assign a

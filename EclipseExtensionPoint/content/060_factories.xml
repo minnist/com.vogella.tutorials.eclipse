@@ -1,8 +1,8 @@
 
-	<title>Extension Factories
+== Extension Factories
 	
 		If you create your class directly via the
-		<code>IConfigurationElement</code>
+		`IConfigurationElement`
 		class of the extension you are limited to classes which have a
 		default constructor.
 		To avoid this
@@ -11,7 +11,7 @@
 	
 	
 		To use a factory implement the interface
-		<code>IExecutableExtensionFactory</code>
+		`IExecutableExtensionFactory`
 		in the class attribute of your
 		extension point definition. The factory
 		receives the configuration

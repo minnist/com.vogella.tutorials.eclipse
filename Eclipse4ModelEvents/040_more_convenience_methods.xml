@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Convenience methods for working with events
+== Convenience methods for working with events
 	Besides the convenience methods for the event types, the UIEvents class offers two more
 		convenience methods:
 	
@@ -29,7 +29,7 @@ Version 0.3, 06.07.2016
 === The contains method
 		
 			The
-			<code>contains</code>
+			`contains`
 			method can be used to check whether a certain object is part
 			of an event's property.
 		
@@ -37,14 +37,14 @@ Version 0.3, 06.07.2016
 			Imagine you listen for changed tags on a certain model element and want to determine, if a
 			certain tag is part of the
 			tags of the given model element. In this case the
-			<code>contains</code>
+			`contains`
 			method helps you with that task.
 		
 		
 			An example for this can be found in the
-			<code>subscribeTopicTagsChanged(Event)</code>
+			`subscribeTopicTagsChanged(Event)`
 			method of the
-			<code>ToolBarManagerRenderer</code>
+			`ToolBarManagerRenderer`
 			class from the Eclipse framework.
 		
 		
@@ -55,7 +55,7 @@ Version 0.3, 06.07.2016
 		
 			This code demonstrates how the existence of a certain tag
 			(
-			<code>IPresentationEngine.HIDDEN_EXPLICITLY</code>
+			`IPresentationEngine.HIDDEN_EXPLICITLY`
 			) is checked with the contains
 			method.
 		
@@ -64,9 +64,9 @@ Version 0.3, 06.07.2016
 === The asIterable method
 		
 			The
-			<code>asIterable</code>
+			`asIterable`
 			method can be used to get an
-			<code>Iterable</code>
+			`Iterable`
 			of an
 			event's property.
 		
@@ -75,26 +75,26 @@ Version 0.3, 06.07.2016
 			<xref linkend="position_event_tag" />
 			, where we listened to
 			the
-			<code>UIEvents.ElementContainer.TOPIC_CHILDREN</code>
+			`UIEvents.ElementContainer.TOPIC_CHILDREN`
 			event and checked the new
 			position.
 		
 		
 			This sample lacks in case we add more than one child to the
-			<code>MPartStack</code>
+			`MPartStack`
 			,
 			so that we have the
-			<code>UIEvents.EventTypes.ADD_MANY</code>
+			`UIEvents.EventTypes.ADD_MANY`
 			event type. In this case
 			nothing would be printed to the system out, because we have a list in the
-			<code>EventTags.NEW_VALUE</code>
+			`EventTags.NEW_VALUE`
 			property rather than an
-			<code>MPart</code>
+			`MPart`
 			.
 		
 		
 			So we need to enhance our
-			<code>subscribeTopicElementContainerChildren</code>
+			`subscribeTopicElementContainerChildren`
 			method
 			like this:
 		

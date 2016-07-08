@@ -1,14 +1,14 @@
 <chapter id="exercisecomboviewer">
-	<title>Optional exercise: Using ComboViewer
+== Optional exercise: Using ComboViewer
 	<section>
 === Target
 		
 			In this exercise you create a new
 			part
 			which allows you to delete a
-			<code>Todo</code>
+			`Todo`
 			object from your model based on the selection in your
-			<code>ComboViewer</code>
+			`ComboViewer`
 			. The final
 			part
 			should look similar to the following.
@@ -16,10 +16,7 @@
 
 
 		
-image::tododeletepart10.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>ComboViewer example screenshot,pdfwidth=60%]
+image::tododeletepart10.png" scale="60[ComboViewer example screenshot,pdfwidth=60%]
 		
 
 	
@@ -28,10 +25,10 @@ image::tododeletepart10.png" scale="60" />
 
 		
 			Ensure that the
-			<code>org.eclipse.jface</code>
+			`org.eclipse.jface`
 			plug-in is available as a
 			dependency to your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in. If you followed the previous exercises, this should be
 			already the
 			case.
@@ -39,7 +36,7 @@ image::tododeletepart10.png" scale="60" />
 
 		
 			Create a new class called
-			<code>TodoDeletionPart</code>
+			`TodoDeletionPart`
 			and a new
 			part
 			in your application model
@@ -52,10 +49,10 @@ image::tododeletepart10.png" scale="60" />
 			application
 			contains two
 			parts. The
-			<code>TodoDeletionPart</code>
+			`TodoDeletionPart`
 			part
 			should be below the
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			part.
 		
 		<tip>
@@ -73,7 +70,7 @@ image::tododeletepart10.png" scale="60" />
 
 		
 			Implement a
-			<code>ComboViewer</code>
+			`ComboViewer`
 			which allows you to select a Todo item. Add a
 			button
 			to the
@@ -81,9 +78,9 @@ image::tododeletepart10.png" scale="60" />
 			If this
 			button
 			is pressed the
-			<code>deleteTodo()</code>
+			`deleteTodo()`
 			method of your
-			<code>ITodoService</code>
+			`ITodoService`
 			should be called. You can use the following example code as
 			reference.
 		
@@ -99,13 +96,13 @@ image::tododeletepart10.png" scale="60" />
 				If you face issues with the selection in the viewer or the
 				deletion
 				of a
-				<code>Todo</code>
+				`Todo`
 				object, ensure that
-				<code>equals()</code>
+				`equals()`
 				and
-				<code>hashCode()</code>
+				`hashCode()`
 				methods in
-				<code>Todo</code>
+				`Todo`
 				are
 				correct (they should be based on the
 				<parameter>id</parameter>
@@ -119,16 +116,16 @@ image::tododeletepart10.png" scale="60" />
 === Validation
 		
 			Delete entries in your data model. The
-			<code>ComboViewer</code>
+			`ComboViewer`
 			should be updated automatically.
 		
 		
 			Validate that the number of entries in your data model has been
 			reduced, e.g., by pressing the
-			<guibutton>Load Data</guibutton>
+			_Load Data_
 			button
 			in the
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			part.
 		
 	

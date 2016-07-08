@@ -1,11 +1,9 @@
 
-	<title>JFace Table Viewer
+== JFace Table Viewer
 
-[[jfacetable_viewer">
+
 === Using the JFace TableViewer
-		<indexterm>
-			<primary>TableViewer (JFace)</primary>
-		</indexterm>
+		
 
 		<indexterm>
 			<primary>JFace</primary>
@@ -13,12 +11,12 @@
 		</indexterm>
 		
 			You can use the
-			<code>TableViewer</code>
+			`TableViewer`
 			class to create tables using the JFace framework. The SWT
-			<code>Table</code>
+			`Table`
 			widget
 			is wrapped into the
-			<code>TableViewer</code>
+			`TableViewer`
 			and can still be accessed to set its properties.
 		
 
@@ -32,7 +30,7 @@
 
 
 	
-[[jfacetable_contentprovider">
+
 === Content provider for JFace tables
 		
 			As with other JFace
@@ -40,17 +38,17 @@
 			content provider
 			supplies the data which
 			should be displayed in the
-			<code>TableViewer</code>
+			`TableViewer`
 			.
 		
 		
 			Eclipse provides an implementation
 			of
 			this interface via the
-			<code>ArrayContentProvider</code>
+			`ArrayContentProvider`
 			class.
 			The
-			<code>ArrayContentProvider</code>
+			`ArrayContentProvider`
 			class supports Arrays or Collections as input, containing the
 			domain
 			data. You can implement your own
@@ -58,23 +56,23 @@
 			for a table
 			by implementing
 			the interface
-			<code>IStructuredContentProvider</code>
+			`IStructuredContentProvider`
 			from the
-			<code>org.eclipse.jface.viewers</code>
+			`org.eclipse.jface.viewers`
 			package.
 		
 		
 			The
-			<code>getElements()</code>
+			`getElements()`
 			method of the
 			content provider
 			is used to translate the input of the
 			viewer into an array of elements. Once the
-			<code>setInput()</code>
+			`setInput()`
 			method on the viewer is called, it uses the content provider to
 			convert it. This is the reason why the content provider must be set
 			before the
-			<code>setInput()</code>
+			`setInput()`
 			method is called.
 		
 
@@ -99,24 +97,24 @@
 	
 
 
-[[jfacetable_labelprovider">
+
 === Columns and label provider
 		
 			Columns for a JFace
-			<code>TableViewer</code>
+			`TableViewer`
 			object
 			are defined by creating instances of the
-			<code>TableViewerColumn</code>
+			`TableViewerColumn`
 			class.
 		
 		
 			Each
-			<code>TableViewerColumn</code>
+			`TableViewerColumn`
 			object
 			needs to get a
 			label provider
 			assigned to it via the
-			<code>setLabelProvider()</code>
+			`setLabelProvider()`
 			method. The
 			label provider
 			defines which data is displayed in the
@@ -134,14 +132,14 @@
 		
 		
 			The
-			<code>setLabelProvider()</code>
+			`setLabelProvider()`
 			method on the
-			<code>TableViewerColumn</code>
+			`TableViewerColumn`
 			expects an instance of the abstract
-			<code>CellLabelProvider</code>
+			`CellLabelProvider`
 			class. A default implementation of this class is
 			provided by the
-			<code>ColumnLabelProvider</code>
+			`ColumnLabelProvider`
 			class. Its usage is demonstrated in the following code snippet.
 		
 
@@ -153,12 +151,12 @@
 		
 		
 			The above code uses two fields which contain
-			<code>Image</code>
+			`Image`
 			instances. These fields could for example be initialized via the
 			following
 			code. Using the classes in this code requires a dependency
 			to the
-			<code>org.eclipse.core.runtime</code>
+			`org.eclipse.core.runtime`
 			plug-in.
 		
 		
@@ -170,13 +168,13 @@
 
 	
 
-[[jfacetable_datachanges">
+
 === Reflect data changes in the viewer
 		
 			To reflect data changes in the data model that is displayed by the
 			viewer,
 			you can call the
-			<code>viewer.refresh()</code>
+			`viewer.refresh()`
 			method. This method updates the
 			viewer
 			based on the data which is
@@ -184,20 +182,20 @@
 		
 		
 			To change the data which is displayed use the
-			<code>viewer.setInput()</code>
+			`viewer.setInput()`
 			method.
 		
 	
 
-[[jfacetable_selectionlistener">
+
 === Selection change listener
 		
 			Via the
-			<code>addSelectionChangedListener</code>
+			`addSelectionChangedListener`
 			method you can add a
 			listener to a viewer. This listener is an
 			implementation of the
-			<code>ISelectionChangedListener</code>
+			`ISelectionChangedListener`
 			interface. The following code shows an example that gets the selected
 			element of the viewer.
 		

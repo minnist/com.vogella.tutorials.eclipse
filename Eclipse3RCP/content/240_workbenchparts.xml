@@ -1,18 +1,18 @@
 
-	<title>WorkbenchParts and Perspectives
-[[views_overview">
+== WorkbenchParts and Perspectives
+
 === WorkbenchParts - Views and Editors
 		
 			As described earlier the
-			<code>WorkbenchWindow</code>
+			`WorkbenchWindow`
 			and the
-			<code>WorkbenchPage</code>
+			`WorkbenchPage`
 			represent the visual and inner part of the graphical user interface.
 
 		
 		
 			The
-			<code>WorkbenchPage</code>
+			`WorkbenchPage`
 			contains Parts, which can be
 			_Views_
 			or
@@ -26,18 +26,18 @@
 			be used to change data.
 			_Views_
 			extend the abstract class
-			<code>ViewPart</code>
+			`ViewPart`
 			.
 			_Editors_
 			extend the abstract
-			<code>EditorPart</code>
+			`EditorPart`
 			. Both extend
-			<code>WorkbenchPart</code>
+			`WorkbenchPart`
 			.
 		
 		
 			An
-			<code>editor</code>
+			`editor`
 			typically requires that the user explicitly select "save" to apply
 			the
 			changes to the data while a view typically changes the data
@@ -51,7 +51,7 @@
 			_Views_
 			and
 			_Editors_
-			are defined via extension points in the file <filename>plugin.xml</filename> via the tab
+			are defined via extension points in the file _plugin.xml_ via the tab
 			"Extensions".
 		
 		
@@ -64,41 +64,41 @@
 		
 			_Views_
 			must implement the
-			<code>createPartControl()</code>
+			`createPartControl()`
 			and
-			<code>setFocus()</code>
+			`setFocus()`
 			methods.
 		
 		
 
-			<code>createPartControl()</code>
+			`createPartControl()`
 			is used to create the UI components of the
-			<code>View</code>
+			`View`
 			.
 		
 		
 
 			
 				createPartControl() will get as parameter a
-				<code>Composite</code>
+				`Composite`
 				which can be used to construct the user interface. This composite
 				has
 				by default a
-				<code>FillLayout</code>
+				`FillLayout`
 				layout manager assigned to it. This layout manager assigns the same
 				space to all components
 				equally.
 			
-			<code>setFocus()</code>
+			`setFocus()`
 			must set the focus to a specific UI component.
 		
 
 	
-[[workbenchparts_perspective">
+
 === Perspective
 		
 			A
-			<code>Perspective</code>
+			`Perspective`
 			describes a certain configuration of
 			_Views_
 			and
@@ -107,11 +107,11 @@
 		
 		
 			A
-			<code>Perspective</code>
+			`Perspective`
 			is defined via "org.eclipse.ui.perspectives". The
-			<code>WorkbenchParts</code>
+			`WorkbenchParts`
 			which are part of a
-			<code>Perspective</code>
+			`Perspective`
 			are either defined via a Java class defined in the extension point
 			"org.eclipse.ui.perspectives" or via the
 			"org.eclipse.ui.perspectiveExtensions".
@@ -123,34 +123,34 @@
 			</programlisting>
 		
 		
-			<code>layout.addView()</code>
+			`layout.addView()`
 			adds a view to the perspective.
 
 			You can also add placeholders for
 			views
 			via the
-			<code>layout.addPlaceholder()</code>
+			`layout.addPlaceholder()`
 			method call. This methods accepts wildcards and a
-			<code>View</code>
+			`View`
 			with a matching ID would open in this area. For example if you want
 			to open all views in a specific place you could use the
-			<code>layout.addPlaceholder("*",...)</code>
+			`layout.addPlaceholder("*",...)`
 			method call, or
 
-			<code>layout.addPlaceholder("view_id",....)</code>
+			`layout.addPlaceholder("view_id",....)`
 			to open a View with the "view_id" ID in this placeholder.
 		
 		
 			You can also group view via a
-			<code>IFolderLayout</code>
+			`IFolderLayout`
 			which can be created via
-			<code>layout.createFolder()</code>
+			`layout.createFolder()`
 			call and by adding
 			_Views_
 			to this folder via the
-			<code>addView(id)</code>
+			`addView(id)`
 			method on
-			<code>IFolderLayout</code>
+			`IFolderLayout`
 			.
 		
 

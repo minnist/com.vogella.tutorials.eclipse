@@ -1,5 +1,5 @@
 
-	<title>JFace ComboViewer
+== JFace ComboViewer
 
 
 
@@ -10,7 +10,7 @@
 
 	
 		A simple example for a JFace Viewer framework is the
-		<code>ComboViewer</code>
+		`ComboViewer`
 		class. Assume the following data model.
 	
 	
@@ -22,7 +22,7 @@
 	
 		The following example snippet shows you how you could use this given
 		data model in a
-		<code>ComboViewer</code>
+		`ComboViewer`
 		.
 	
 

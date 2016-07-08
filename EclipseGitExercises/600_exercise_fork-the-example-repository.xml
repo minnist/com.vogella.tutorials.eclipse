@@ -1,4 +1,4 @@
-[[fork_the_example_repository_on_github]]
+
 == Create Github user and fork repository
 
 === Target of this exercise
@@ -16,7 +16,7 @@ In Github, this is called _Forking_ of creating a _fork_.
 				
 As we have already worked with a local clone of a Github repository, this exercise uses the second approach.
 
-[[Sign_up_at_github]]
+
 === Sign up at Github
 		
 Before you can fork a repository at Github, you need to have a account.
@@ -29,7 +29,7 @@ The e-mail address should match the address you used for the Git setup; Github u
 		
 image::githubstart.png[Sign up at Github]
 		
-[[_fork_the_repository]]
+
 === Fork the Repository
 Once you have signed up you can fork an existing repository. 	
 In order to fork a repository open the following URL: https://github.com/vogellacompany/gittraining-sample

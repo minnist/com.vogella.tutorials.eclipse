@@ -1,19 +1,19 @@
-[[exercisetychoplugin]]
+
 == Exercise: Tycho build for plug-ins
 
-[[exercisetychoplugin_overview]]
+
 
 === Target of this exercise
 		
 The following exercise demonstrates how to build Eclipse plug-ins with Maven Tycho.
 		
-[[exercisetychoplugin_pluginsfolder]]
+
 === Creating a folder for your plug-ins
 		
 Create a new folder called _bundles_ in the root project. 
 This folder will contain your Eclipse plug-ins (OSGi bundles).
 
-[[exercisetychoplugin_plugin]]
+
 === Creating a plug-in to build
 		
 In the _bundles_ folder create a new plug-in project called _com.vogella.tycho.plugin1_.
@@ -22,7 +22,7 @@ image::tycho-plugin1-creation.png[Plug-in creation for Tycho]
 		
 This plug-in does not require a pom file, the defaults from pomless are fine for this project.
 		
-[[exercisetychoplugin_bundlespom]]
+
 === Add pom for bundles directory
 		
 Create the following pom in the _bundles_ directory.
@@ -31,7 +31,7 @@ Create the following pom in the _bundles_ directory.
 include::res/components/parent/bundlespom.xml[]
 ----
 
-[[exercisetychoplugin_rootbundlespom]]
+
 === Add bundle to root pom
 
 [source, xml]
@@ -39,7 +39,7 @@ include::res/components/parent/bundlespom.xml[]
 include::res/components/parent/rootpomwithplugin.xml[]		
 ----
  
-[[exercisetychoplugin_build]]
+
 === Run the build and validate the result
 		
 To run the build on the command line from your root directory via `mvn clean verify`. 

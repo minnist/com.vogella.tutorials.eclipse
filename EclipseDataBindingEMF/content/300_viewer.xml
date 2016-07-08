@@ -1,5 +1,5 @@
 
-	<title>EMF and Data Binding for JFace Viewer
+== EMF and Data Binding for JFace Viewer
 	
 		Create an RCP project called
 		_de.vogella.databinding.emf.table_
@@ -10,7 +10,7 @@
 			view
 		_
 		. Add the
-		<code>org.eclipse.emf.ecore</code>
+		`org.eclipse.emf.ecore`
 		plug-in as a
 		plug-in dependency.
 	

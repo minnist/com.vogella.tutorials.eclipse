@@ -1,14 +1,12 @@
 
-	<title>The OSGi declarative services functionality
-[[declarativeservices_overview">
+== The OSGi declarative services functionality
+
 === Defining services the declarative way
 		<indexterm>
 			<primary>OSGi</primary>
 			<secondary>Declarative services</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Declarative services</primary>
-		</indexterm>
+		
 
 		
 			The OSGi
@@ -49,25 +47,25 @@
 			Plug-ins typically define
 			component descriptions in a
 			directory called
-			<filename>OSGI-INF</filename>
+			_OSGI-INF_
 			.
 		
 
 		
 			A reference to the
 			component description file is entered in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file via the
 			<parameter>Service-Component</parameter>
 			property. If the OSGi runtime finds such a reference, the
-			<code>org.eclipse.equinox.ds</code>
+			`org.eclipse.equinox.ds`
 			plug-in creates
 			the corresponding service.
 		
 
 		
 			The following example
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file demonstrates how a reference to a component definition file
 			looks like.
 		
@@ -81,7 +79,7 @@
 
 
 
-[[declarativeservices_annotations">
+
 === Defining OSGi services with annotations
 		
 			Since Eclipse 4.7 the component
@@ -92,17 +90,14 @@
 			.
 		
 		
-image::activate_pde_ds_annotations.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Activate DS annotation processing
+image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
 					,pdfwidth=60%]
 		
 		With this setting activated in the Eclipse IDE, the IDE will generate the require meta data (component file,
 			manifest reference, lazy flag, etc.) automatically.
 
 	
-[[declarativeservices_define">
+
 === Other ways to define OSGi services
 		
 			The preferred way of defining OSGi services should be via annotations, as this is simpler.
@@ -115,9 +110,9 @@ image::activate_pde_ds_annotations.png" scale="40" />
 			the
 			menu:New[Other... > Plug-in Development > Component Definition]
 			menu entry. This wizard also adds the
-			<code>Service-Component</code>
+			`Service-Component`
 			entry to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 		
@@ -137,19 +132,16 @@ image::activate_pde_ds_annotations.png" scale="40" />
 			section.
 		
 		
-image::ds30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Defining the service interface which is provided,pdfwidth=60%]
+image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 		
 
 		
 			For example assume that you want to provide a service for the
 			_ITodoService_
 			interface via the
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			class. A correctly maintained
-			<filename>component.xml</filename>
+			_component.xml_
 			XML file
 			would look like the following.
 		
@@ -161,7 +153,7 @@ image::ds30.png" />
 
 		
 			After the definition of the component your
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file
 			contains an entry to the service component.
 		
@@ -178,7 +170,7 @@ image::ds30.png" />
 		
 	
 
-[[declarativeservices_bundles">
+
 === Required bundles
 		
 			To use declarative services the following plug-ins must be
@@ -187,13 +179,13 @@ image::ds30.png" />
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.equinox.util</code>
+						`org.eclipse.equinox.util`
 						- contains utility classes
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.equinox.ds</code>
+						`org.eclipse.equinox.ds`
 						- is responsible for reading
 						the component
 						metadata and for creating and
@@ -204,7 +196,7 @@ image::ds30.png" />
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.osgi.services</code>
+						`org.eclipse.osgi.services`
 						- service functionality used by declarative services
 					
 				</listitem>

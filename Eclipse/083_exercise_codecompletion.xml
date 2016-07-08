@@ -1,6 +1,6 @@
 
-	<title>Exercise: code generation and content assists
-[[rssfeedreaders_intro">
+== Exercise: code generation and content assists
+
 === Introduction
 		
 			In this exercise you practice the usage of code generation and
@@ -10,21 +10,21 @@
 			functionality.
 		
 	
-[[rssfeedreaders_project">
+
 === Create project
 
 		
 			Create a project called
-			<code>com.vogella.ide.todo</code>
+			`com.vogella.ide.todo`
 			.
 		
 	
 
-[[rssfeedreaders_objectxmlparserlistview">
+
 === Create class
 		
 			Create the
-			<code>com.vogella.ide.todo</code>
+			`com.vogella.ide.todo`
 			package
 			and the
 			following class.
@@ -56,9 +56,9 @@
 		
 		
 			Use Eclipse to generate a
-			<code>toString()</code>
+			`toString()`
 			method for the
-			<code>Todo</code>
+			`Todo`
 			class based on the
 			<parameter>id</parameter>
 			and
@@ -73,9 +73,9 @@
 		
 			Also
 			use Eclipse to generate a
-			<code>hashCode()</code>
+			`hashCode()`
 			and
-			<code>equals()</code>
+			`equals()`
 			method based on the
 			<parameter>id</parameter>
 			field. This can be done via the
@@ -85,14 +85,14 @@
 		
 	
 
-[[rssfeedreaders_example">
+
 === Create instances
 		
 			Create a new class called
-			<code>TodoProvider</code>
+			`TodoProvider`
 			.
 			Create the following static method in your
-			<code>TodoProvider</code>
+			`TodoProvider`
 			class.
 		
 		
@@ -102,25 +102,25 @@
 			</programlisting>
 		
 	
-[[rssfeedreaders_validate">
+
 === Write a test class
 		
 			Write another
-			<code>TodoProviderTest</code>
+			`TodoProviderTest`
 			class
 			with a
-			<code>public static void main (String[] args)</code>
+			`public static void main (String[] args)`
 			method.
 		
 		
 			In your main method call the
-			<code>createInitialModel</code>
+			`createInitialModel`
 			method and validate that the returned number of
 			items is 5.
 		
 		
 			If another number than 5 is returned, throw a
-			<code>RuntimeException</code>
+			`RuntimeException`
 			. If the correct number is returned, write the String "Correct" to
 			the
 			_Console_
@@ -131,9 +131,9 @@
 			Use
 			_Content assist_
 			to create the
-			<code>System.out.println()</code>
+			`System.out.println()`
 			based on
-			<code>syso</code>
+			`syso`
 			for you.
 		
 
@@ -146,7 +146,7 @@ image::contentassists20.png[Content Assists Result,pdfwidth=60%]
 	
 
 
-[[rssfeedreaders_potentialsolution">
+
 === Example implementation of TodoProviderTest
 		While this exercise was about code generation and content
 			assits,

@@ -1,10 +1,8 @@
 <section role="wrapper">
-	<title>Finding information about an Eclipse project
+== Finding information about an Eclipse project
 	<section>
 === The Eclipse project page
-		<indexterm>
-			<primary>Project pages</primary>
-		</indexterm>
+		
 		
 			Additional information about a project can be found under its
 			https://projects.eclipse.org/">Eclipse project page
@@ -25,7 +23,7 @@ image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth
 	
 
 
-[[versioncontrolprojects1">
+
 === Finding the Git repositories for an Eclipse project
 		
 			Eclipse lists
@@ -44,7 +42,7 @@ image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth
 			tab to see all Git repositories of the project.
 		
 	
-[[versioncontrolprojects2">
+
 === Example: Finding the Git repositories for the Eclipse Platform UI project
 		
 			The Eclipse platform UI project is responsible for the user interface, runtime and user assistant components of
@@ -53,10 +51,7 @@ image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth
 		
 
 		
-image::eclipsegitrepos10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse Platform UI search result,pdfwidth=60%]
+image::eclipsegitrepos10.png" scale="30[Eclipse Platform UI search result,pdfwidth=60%]
 		
 		
 			Click on the
@@ -71,14 +66,10 @@ image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=6
 
 	
 
-[[eclipseplatform_dashboard">
+
 === The Eclipse dashboard
-		<indexterm>
-			<primary>Dashboard</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Eclipse dashboard</primary>
-		</indexterm>
+		
+		
 		
 			At the time of this writing the Eclipse foundation is setting up
 			a
@@ -102,10 +93,7 @@ image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=6
 			
 		</note>
 		
-image::eclipsedash10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Project members dash,pdfwidth=60%]
+image::eclipsedash10.png" scale="30[Project members dash,pdfwidth=60%]
 		
 
 		You can select in the top the sub-project to see. For example
@@ -115,9 +103,6 @@ image::eclipsedash10.png" scale="30" />
 		
 
 		
-image::eclipsedash20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse project dashboard,pdfwidth=60%]
+image::eclipsedash20.png" scale="30[Eclipse project dashboard,pdfwidth=60%]
 		
 	

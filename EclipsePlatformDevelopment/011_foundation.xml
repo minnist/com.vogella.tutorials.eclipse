@@ -1,10 +1,8 @@
 
-	<title>The Eclipse foundation and the Eclipse public license
-[[eclipsefoundation">
+== The Eclipse foundation and the Eclipse public license
+
 === Eclipse foundation
-		<indexterm>
-			<primary>Eclipse Foundation</primary>
-		</indexterm>
+		
 		
 			The Eclipse projects are governed by the
 			_Eclipse Foundation_
@@ -61,14 +59,10 @@
 		
 	
 
-[[eclipsepubliclicense" role="wrapper">
+
 === The Eclipse Public License
-		<indexterm>
-			<primary>Eclipse Public License</primary>
-		</indexterm>
-		<indexterm>
-			<primary>EPL</primary>
-		</indexterm>
+		
+		
 		
 			The
 			_Eclipse Public License_

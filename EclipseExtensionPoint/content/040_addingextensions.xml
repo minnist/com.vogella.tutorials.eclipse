@@ -1,5 +1,5 @@
 
-	<title>Adding extensions to extension points
+== Adding extensions to extension points
 	<indexterm>
 		<primary>Extension points and extensions</primary>
 		<secondary>adding extensions
@@ -9,9 +9,9 @@
 	
 		The Eclipse IDE provides an
 		editor for the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. It is the same editor which is used for modifying the
-		<filename>MANIFEST.MF</filename>
+		_MANIFEST.MF_
 		file.
 	
 	
@@ -37,7 +37,7 @@
 	
 	
 		By using the
-		<guibutton>Add...</guibutton>
+		_Add..._
 		button you can add a new extension.
 		After adding one extension
 		you can

@@ -1,16 +1,16 @@
 
-	<title>Tutorial: Sort Columns
+== Tutorial: Sort Columns
 	
 		The following example will allow to sort the table based on different columns,
-		therefore our <code>ViewerComparator</code> will have the option to set the sort
+		therefore our `ViewerComparator` will have the option to set the sort
 		column.
 	
 	
-		Re-using the project <code>de.vogella.jface.tableviewer</code> from
+		Re-using the project `de.vogella.jface.tableviewer` from
 		http://www.vogella.com/tutorials/EclipseJFaceTable/article.html">
 			JFace Table Tutorial
 		create the Class
-		<code>de.vogella.jface.tableviewer.sorter.MyViewerComparator.java</code>
+		`de.vogella.jface.tableviewer.sorter.MyViewerComparator.java`
 	
 	
 		<programlisting>
@@ -19,13 +19,13 @@
 		</programlisting>
 	
 	
-		In <code>View</code> change the method <code>createTableViewerColumn</code> and
+		In `View` change the method `createTableViewerColumn` and
 		create
-		a new method <code>getSelectionAdapter()</code>. This method will
+		a new method `getSelectionAdapter()`. This method will
 		add a listener
 		to
 		the columns. If one of the columns is selected, the sorting column in
-		<code>ViewerComparator</code> will be set.
+		`ViewerComparator` will be set.
 	
 	
 		<programlisting language="java">

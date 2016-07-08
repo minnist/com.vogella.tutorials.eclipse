@@ -1,4 +1,4 @@
-[[buildship_import]]
+
 == Import an existing Gradle project
 	
 Projects can be imported by using the Import wizard via the (menu:File[Import...> Gradle > Gradle Project]) menu entry.

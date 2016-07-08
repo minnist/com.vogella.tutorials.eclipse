@@ -1,5 +1,5 @@
 
-	<title>Exercise: Data binding for a JFace Viewer
+== Exercise: Data binding for a JFace Viewer
 	
 		Create a
 		new
@@ -16,20 +16,20 @@
 	
 	
 		Create the
-		<code>de.vogella.databinding.viewer.model</code>
+		`de.vogella.databinding.viewer.model`
 		package
 		and
 		re-create the
-		<code>Person</code>
+		`Person`
 		and
-		<code>Address</code>
+		`Address`
 		class from the previous example in this $book in this package.
 
 	
 	
 		Create the
 		following
-		<code>MyModel</code> class to get
+		`MyModel` class to get
 		some
 		example data.
 	

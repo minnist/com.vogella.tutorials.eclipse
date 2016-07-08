@@ -1,7 +1,7 @@
-[[maventycho]]
+
 == Using Maven Tycho to build Eclipse components
 
-[[maventycho_overview]]
+
 === What is Tycho?
 
 _Tycho_ is a set of Maven plug-ins for building Eclipse components via the Maven build system. 
@@ -18,7 +18,7 @@ It also enables Maven to understand package types such as eclipse-plugin, eclips
 If you add this plug-in to your Maven build file, the Maven build system downloads Tycho and uses it for building Eclipse components.
 		
 
-[[maventycho_pom]]
+
 === Configuring the pom files for a Tycho build
         
 A Tycho build is configured via the standard Maven configuration files typically called _pom.xml_ or _pom_ files.
@@ -30,7 +30,7 @@ Every Eclipse component can have its individual pom file but Tycho allows also t
 This is based on the Maven polyglot functionality introduced with Maven 3.3.1. 
 If the generated defaults, are not sufficient for an Eclipse component you can always define a specialized pom file for the component. 
         
-[[maventycho_pomless]]
+
 === Enable the generation of default pom files for Eclipse components
         
 To enable the automatic determination of build information for your Eclipse components, add a _.mvn/extensions.xml_ descriptor to the root of your directory. 
@@ -74,7 +74,7 @@ Feature version from feature.xml
 |===
         
 
-[[maventycho_pomcomponent]]
+
 === Defining a specialized pom file for an Eclipse component
  
 If you define a pom file for an Eclipse component, you need to specify the _packaging_ attribute in the pom file.
@@ -144,10 +144,10 @@ Version 0.3, 06.07.2016
 ----
 
 
-[[maventycho_dependencymanagement]]
+
 
 		
-[[maventycho_typicalconfiguration]]
+
 === Good practice for Eclipse components organization
 
 To have some separation of the plug-ins a good practice is to have separate folders on the file system for them.
@@ -164,7 +164,7 @@ The aggregator includes the configuration pom file as parent.
 		
 And the pom files in the different Eclipse projects contain primary the nature of the component (feature, plug-in, product, update site) and the version number from the MANIFEST.MF.
 		
-[[maventycho_build]]
+
 === Starting the build
 		
 After setting up your pom configuration files, you can build your Eclipse components with  the `mvn clean verify` command, 

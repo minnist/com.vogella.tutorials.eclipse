@@ -1,11 +1,11 @@
-[[_merge_rebase_and_resolving_conflictsmerge_rebase_and_resolving_conflicts]]
+
 == Merge, Rebase and resolving conflicts
 
-[[merge_rebase_and_resolving_conflicts_preparation2]]
+
 === Target
 In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.
 
-[[create_a_conflicting_commit]]
+
 === Create a conflicting commit
 
 You may skip this step if you have already created conflicting changes in the previous exercises. 
@@ -18,7 +18,7 @@ Do a different change in the same class on the same line as in the other branch.
 For example, you may add a class `Multiply` and add a corresponding line to the `setupDefaultOperations` method in the `Calculator` class) and commit this change.
 			
 			
-[[_merge_the_feature_branches]]
+
 === Trigger the first merge
 
 		
@@ -35,7 +35,7 @@ Since there was no work done on the `master` branch and `addDivideOperation` poi
 master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
 Inspect this via the `git log --oneline --graph` command.
 				
-[[_trigger_the_second_merge]]
+
 === Trigger the second merge
 
 Merge now the branch which contains the conflicting commit. 
@@ -43,7 +43,7 @@ This merges the	content of this branch into the `master` branch.
 This time the merge operation should  end with a conflicts.
 
 				
-[[resolve-conflicts]]
+
 === Resolving merge conflicts
 
 If a merge generates conflicts the repository is in a special state. 
@@ -59,7 +59,7 @@ Edit the merge conflict until you are happy with the change and use the `git add
 	
 Use `git commit` to finsh the merge. Git creates a default merge commit message.
 			
-[[_undo_merging_with_reset]]
+
 === Undo the merge with with the git reset operation
 		
 After you have done a merge as described above assume that you do not want the merge commit in your branch anymore.

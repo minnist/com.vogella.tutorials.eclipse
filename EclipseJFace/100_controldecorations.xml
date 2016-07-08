@@ -1,5 +1,5 @@
 
-	<title>ControlDecoration
+== ControlDecoration
 
 
 	<indexterm>
@@ -8,7 +8,7 @@
 	</indexterm>
 	
 		The
-		<code>ControlDecoration</code>
+		`ControlDecoration`
 		class allows you to place image decorations on SWT controls to show
 		additional information about the control. These decorations can also
 		have a description text which is displayed once the
@@ -27,7 +27,7 @@
 	
 	
 		The following code snippet shows how to create
-		<code>ControlDecoration</code>
+		`ControlDecoration`
 		and how to set a description and an icon to it.
 	
 	

@@ -1,8 +1,8 @@
 
-	<title>Creating a custom Eclipse IDE build
+== Creating a custom Eclipse IDE build
 
 	
-[[buildeclipse_introduction">
+
 === Building the Eclipse IDE
 		<indexterm>
 			<primary>Eclipse IDE</primary>
@@ -40,7 +40,7 @@
 		
 
 	
-[[buildeclipse_requirements">
+
 === Requirements
 		
 			As the build continuously changes, the
@@ -80,7 +80,7 @@
 
 	
 
-[[buildeclipse_load_source">
+
 === Cloning the SDK repository
 		
 			You download the newest version of the source code by cloning
@@ -97,7 +97,7 @@
 	
 
 
-[[buildeclipse_run">
+
 === Building the Eclipse IDE
 
 		You start the build with the following command.  
@@ -108,7 +108,7 @@
 		
 		
 			If you receive
-			<code>java.lang.OutOfMemoryError</code>
+			`java.lang.OutOfMemoryError`
 			error during the Maven build, you should increase the memory which is available for the build.
 		
 		
@@ -129,7 +129,7 @@
 		
 	
 
-[[buildeclipse_cleanupstepss">
+
 === Cleanup before the next build
 		
 			To ensure that the repository is clean and up to date we execute

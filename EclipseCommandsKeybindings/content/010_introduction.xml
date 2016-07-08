@@ -1,5 +1,5 @@
 
-	<title>Eclipse key bindings
+== Eclipse key bindings
 	
 		Via key bindings you can define shortcuts for your
 		Eclipse
@@ -33,13 +33,13 @@
 	
 	
 		To define a shortcut for a command you use
-		<code>org.eclipse.ui.bindings</code>
+		`org.eclipse.ui.bindings`
 		extension point
 		together with the
-		<code>org.eclipse.ui.defaultAcceleratorConfiguration</code>
+		`org.eclipse.ui.defaultAcceleratorConfiguration`
 		schemeId
 		and the
-		<code>org.eclipse.ui.contexts.window</code>
+		`org.eclipse.ui.contexts.window`
 		contextId.
 	
 	

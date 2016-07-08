@@ -1,13 +1,9 @@
 
-	<title>Eclipse command line configuration
-[[eclipse_memorysettings">
+== Eclipse command line configuration
+
 === Eclipse memory and performance settings
-		<indexterm>
-			<primary>Memory settings for the Eclipse IDE</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Performance optimization for the Eclipse IDE</primary>
-		</indexterm>
+		
+		
 		<indexterm>
 			<primary>Startup configuration</primary>
 			<secondary>Memory
@@ -16,7 +12,7 @@
 
 		
 			Your Eclipse installation contains a file called
-			<filename>eclipse.ini</filename>
+			_eclipse.ini_
 			which allows you to configure the memory parameters for the
 			Java
 			virtual
@@ -31,7 +27,7 @@
 		
 		
 			The following listing shows an example
-			<filename>eclipse.ini</filename>
+			_eclipse.ini_
 			file. The parameters after -vmargs configure the Java virtual
 			machine.
 			On a modern machine (with at least 8 Gigabyte
@@ -67,20 +63,16 @@
 				These options can also be specified per invocation of the Eclipse IDE, e.g., for desktop shortcuts. For example
 				to
 				start Eclipse with 2GB of memory, use the following command line:
-				<code>./eclipse -vmargs -Xmx2024m</code>
+				`./eclipse -vmargs -Xmx2024m`
 				.
 			
 		</note>
 
 	
-[[workspace_parameter">
+
 === Eclipse startup parameters
-		<indexterm>
-			<primary>Launch parameter</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Startup configuration</primary>
-		</indexterm>
+		
+		
 		
 			Eclipse allows you to configure it via
 			startup
@@ -133,7 +125,7 @@
 			Windows
 			using
 			the
-			<filename>c:\temp</filename>
+			_c:\temp_
 			directory as
 			_workspace_
 			,

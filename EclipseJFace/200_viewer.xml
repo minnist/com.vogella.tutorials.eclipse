@@ -1,9 +1,7 @@
 
-	<title>Eclipse JFace Viewers
-[[jface_viewers">
-		<indexterm>
-			<primary>Viewer (JFace)</primary>
-		</indexterm>
+== Eclipse JFace Viewers
+
+		
 
 		<indexterm>
 			<primary>JFace</primary>
@@ -47,14 +45,14 @@
 		
 
 	
-[[jfaceviewers_types">
+
 === Standard JFace viewer
 		
 			JFace provides several standard
 			viewer implementations. These
 			viewers
 			are part of the
-			<code>org.eclipse.jface.viewers</code>
+			`org.eclipse.jface.viewers`
 			package. The following
 			list contains
 			the most important ones.
@@ -62,28 +60,28 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>ComboViewer</code>
+						`ComboViewer`
 					
 				</listitem>
 				<listitem>
 					
-						<code>ListViewer</code>
+						`ListViewer`
 					
 				</listitem>
 				<listitem>
 					
-						<code>TreeViewer</code>
+						`TreeViewer`
 					
 				</listitem>
 				<listitem>
 					
-						<code>TableViewer</code>
+						`TableViewer`
 					
 				</listitem>
 			</itemizedlist>
 		
 	
-[[jfaceviewers_contentandlabel">
+
 === Standard content and label provider
 		
 			The related interfaces for defining a
@@ -114,16 +112,16 @@
 								a
 								default
 								implementation for Collections and Arrays with the
-								<code>ArrayContentProvider</code>
+								`ArrayContentProvider`
 								class. Because the
-								<code>ArrayContentProvider</code>
+								`ArrayContentProvider`
 								class
 								does not store any data, it is possible to share an
 								instance
 								with
 								several viewers. To get a
 								shared instance use the
-								<code>ArrayContentProvider.getInstance()</code>
+								`ArrayContentProvider.getInstance()`
 								method.
 							</entry>
 						</row>

@@ -1,5 +1,5 @@
 
-	<title>CTabFolder
+== CTabFolder
 	 CTabFolder and CTabItem allow to create the folder experience
 		with different tabs.
 	
@@ -13,7 +13,7 @@
 		If you run this application you will see several register cards with
 		tabs on
 		them. The
-		<code>SWT.BOTTOM</code>
+		`SWT.BOTTOM`
 		stylebit on the folder widget, makes the tab appear at the bottom.
 	
 	

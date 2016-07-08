@@ -1,8 +1,8 @@
 
-	<title>Implementing editor like behavior
+== Implementing editor like behavior
 
 
-[[selectedservices_editors">
+
 === Parts which behave similar to editors
 		<indexterm>
 			<primary>Editor</primary>
@@ -32,33 +32,29 @@
 
 	
 
-[[eclipse4editor_persist">
+
 === MDirtyable and @Persist
-		<indexterm>
-			<primary>@Persists</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MDirtyable</primary>
-		</indexterm>
+		
+		
 		
 			A part has the
-			<code>MDirtyable</code>
+			`MDirtyable`
 			attribute
 			which indicates that it can be marked as dirty. Dirty
 			indicates that
 			the part contains data which has been changed but not
 			yet saved. The
-			<code>MDirtyable</code>
+			`MDirtyable`
 			object can get injected into a part.
 		
 		
 			You can use the
-			<code>setDirty(boolean)</code>
+			`setDirty(boolean)`
 			method to mark the part as dirty.
 		
 		
 			The following snippet demonstrates how to use the
-			<code>MDirtyable</code>
+			`MDirtyable`
 			model property in a part to flag it as dirty after a button was
 			pressed.
 		
@@ -92,13 +88,13 @@
 				Every part is responsible for saving itself. Hence every
 				part which
 				behaves like an editor must have one method annotated with
-				<code>@Persist</code>
+				`@Persist`
 				.
 			
 		</note>
 
 	
-[[selectedservices_save">
+
 === Use part service to trigger save in editors
 		<indexterm>
 			<primary>Editor</primary>
@@ -110,23 +106,23 @@
 		</indexterm>
 		
 			The part service allows you to trigger the
-			<code>@Persist</code>
+			`@Persist`
 			method on the dirty parts via the
-			<code>saveAll()</code>
+			`saveAll()`
 			method.
 		
 		
 			The
-			<code>EPartService</code>
+			`EPartService`
 			searches in each part which is marked as dirty for a method annotated
 			with
-			<code>@Persist</code>
+			`@Persist`
 			. This method is called by the framework and has to save the data
 			which the editor holds. If saving the data was successful it should
 			call the
-			<code>setDirty(false)</code>
+			`setDirty(false)`
 			method on the
-			<code>MDirtyable</code>
+			`MDirtyable`
 			object.
 		
 
@@ -145,7 +141,7 @@
 
 	
 
-[[editorinput">
+
 === MPart and multiple editors
 		<indexterm>
 			<primary>Editor</primary>
@@ -157,13 +153,13 @@
 			model element to create multiple editors. Every model element can
 			get
 			persisted data assigned which can be accessed via the
-			<code>getPersistedState()</code>
+			`getPersistedState()`
 			method.
 		
 		
 			In its
 			@PostConstruct method the implementation class can get the
-			<code>MPart</code>
+			`MPart`
 			injected and access
 			its persisted state. This information can be used
 			to configure the editor.
@@ -172,14 +168,12 @@
 
 	
 
-[[minputpart">
+
 === MInputPart
-		<indexterm>
-			<primary>MInputPart</primary>
-		</indexterm>
+		
 		
 			Eclipse used to have the
-			<code>MInputPart</code>
+			`MInputPart`
 			model element. This model element has been deprecated and should not
 			be used anymore.
 			Use the approach described

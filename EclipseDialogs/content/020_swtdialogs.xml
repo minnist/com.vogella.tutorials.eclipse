@@ -1,5 +1,5 @@
 
-	<title>SWT dialogs
+== SWT dialogs
 	<indexterm>
 		<primary>Dialog</primary>
 		<secondary>SWT</secondary>
@@ -14,31 +14,31 @@
 		<itemizedlist>
 			<listitem>
 				
-					<code>ColorDialog</code>
+					`ColorDialog`
 					- for selecting a color
 				
 			</listitem>
 			<listitem>
 				
-					<code>DirectoryDialog</code>
+					`DirectoryDialog`
 					- for selecting a directory
 				
 			</listitem>
 			<listitem>
 				
-					<code>FileDialog</code>
+					`FileDialog`
 					- for selecting a file
 				
 			</listitem>
 			<listitem>
 				
-					<code>FontDialog</code>
+					`FontDialog`
 					- for selecting a font
 				
 			</listitem>
 			<listitem>
 				
-					<code>MessageBox</code>
+					`MessageBox`
 					- for opening a message dialog
 				
 			</listitem>
@@ -46,7 +46,7 @@
 	
 	
 		The following code demonstrates the usage of the
-		<code>MessageBox</code>
+		`MessageBox`
 		class to open a message
 		dialog.
 	

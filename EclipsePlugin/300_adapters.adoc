@@ -1,7 +1,7 @@
-[[adapters]]
+
 == Adapters
 	
-[[adapters_overview]]
+
 === What are adapters?
 
 Adapters help to display information about objects in view without having to adjust the existing views.

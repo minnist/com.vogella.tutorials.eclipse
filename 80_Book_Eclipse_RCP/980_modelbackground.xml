@@ -1,10 +1,10 @@
 <appendix id="modelbackground">
-	<title>Architectural background of the application model
+== Architectural background of the application model
 	This section contains some background information about the
 		design goals of the Eclipse application model and has been
 		contributed by Eric Moffatt, Eclipse 4 SDK development lead.
 	
-[[modelbackground_areas">
+
 === Main areas of the model
 		
 			Conceptually the model
@@ -33,11 +33,11 @@
 								
 								
 									For example
-									<code>MContext</code>
+									`MContext`
 									contains only the reference to the context,
-									<code>MContribution</code>
+									`MContribution`
 									contains the instantiated 'object' and
-									<code>MUILabel</code>
+									`MUILabel`
 									contains attributes to manage labels and images.
 								
 							</entry>
@@ -59,13 +59,13 @@
 									containment
 									rules.
 									For example to allow
-									<code>MParts</code>
+									`MParts`
 									in the
-									<code>MTrim</code>
+									`MTrim`
 									area, you would only have to add the
-									<code>MTrimElement</code>
+									`MTrimElement`
 									interface to
-									<code>MPart</code>
+									`MPart`
 									.
 								
 							</entry>
@@ -88,7 +88,7 @@
 		
 
 	
-[[modelbackground_mixins">
+
 === Advantages of using mix-ins
 		
 			_Mix-ins_
@@ -98,21 +98,21 @@
 			regardless of the concrete class they're a
 			part of. For
 			example the
-			<code>PartRenderingEngine</code>
+			`PartRenderingEngine`
 			class
 			handles all contexts by checking whether the element being
 			rendered
 			is
 			an
-			<code>MContext</code>
+			`MContext`
 			. It also allows via the
-			<code>findElements()</code>
+			`findElements()`
 			method of
-			<code>EModelService</code>
+			`EModelService`
 			to locate all elements in the model of a specific type. This is 
 			useful for
 			finding all
-			<code>MDirtyable</code>
+			`MDirtyable`
 			elements for saving.
 		
 		

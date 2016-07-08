@@ -1,12 +1,12 @@
 
-	<title>Change a series of commits
+== Change a series of commits
 	In this exercise you learn how you can rewrite the local
 		history
 		before you share it with others. After you have
 		committed locally you
 		can still change all commits in your local feature branch.
 	</simpara>
-[[_preparation4">
+
 === Preparation
 		
 			Follow the exercise
@@ -34,7 +34,7 @@
 			</inlinemediaobject>
 		</simpara>
 	
-[[_change_the_first_commit">
+
 === Change the first commit
 		<itemizedlist>
 			<listitem>
@@ -143,7 +143,7 @@
 			</listitem>
 		</itemizedlist>
 	
-[[_cherry_pick_the_rest">
+
 === Cherry-pick the rest
 		<itemizedlist>
 			<listitem>

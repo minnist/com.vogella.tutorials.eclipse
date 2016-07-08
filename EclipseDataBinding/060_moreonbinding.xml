@@ -1,7 +1,7 @@
 
-	<title>More on bindings
+== More on bindings
 
-[[databinding_decorations">
+
 === ControlDecorators
 		<indexterm>
 			<primary>JFace Data Binding</primary>
@@ -14,9 +14,9 @@
 			validation. This
 			allows you to provide immediate feedback to the user. For the
 			creation of the control decoration you use the return object from the
-			<code>bindvalue()</code>
+			`bindvalue()`
 			method of
-			<code>DataBindingContext</code>
+			`DataBindingContext`
 			object.
 		
 		
@@ -28,28 +28,25 @@
 		The result might look like the following screenshot.
 		
 image::controldecoration17.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>ControlDecoration with databinding,pdfwidth=60%]
+						scale="40[ControlDecoration with databinding,pdfwidth=60%]
 		
 
 	
 
-[[SelectObservableValue">
+
 === Binding values of a radio button group
 		
 			When using radio buttons each button usually represents a certain
 			value. In order to
 			bind the value according to the selected state in a
 			radio button group, the
-			<code>SelectObservableValue</code>
+			`SelectObservableValue`
 			class is the right choice.
 		
 		
 			The following example shows how to bind the currently selected radio
 			value to a
-			<code>Label</code>
+			`Label`
 			.
 		
 		
@@ -68,7 +65,7 @@ image::controldecoration17.png"
 		
 	
 
-[[databinding_listening">
+
 === Listening to all changes in the binding
 		<indexterm>
 			<primary>JFace Data Binding</primary>
@@ -76,7 +73,7 @@ image::controldecoration17.png"
 		</indexterm>
 		
 			You can register a listener to all bindings of the
-			<code>DataBindingContext</code>
+			`DataBindingContext`
 			class. Your listener will be called when something has changed.
 		
 		
@@ -96,7 +93,7 @@ image::controldecoration17.png"
 		
 	
 
-[[databinding_writablevalues">
+
 === Placeholder binding with WritableValue
 		<indexterm>
 			<primary>JFace Data Binding</primary>
@@ -104,17 +101,17 @@ image::controldecoration17.png"
 		</indexterm>
 		
 			You can create bindings to a
-			<code>WritableValue</code>
+			`WritableValue`
 			object.
 			A
-			<code>WritableValue</code>
+			`WritableValue`
 			object
 			can
 			hold a reference to another object.
 		
 		
 			You can exchange this reference in
-			<code>WritableValue</code>
+			`WritableValue`
 			and the databinding will use the new (reference) object for its
 			binding.
 			This way you can create the binding once and still exchange
@@ -123,9 +120,9 @@ image::controldecoration17.png"
 		
 		
 			To bind to a
-			<code>WritableValue</code>
+			`WritableValue`
 			you use the
-			<code>observeDetail()</code>
+			`observeDetail()`
 			method,
 			to inform the framework that you would like to observe
 			the
@@ -140,17 +137,17 @@ image::controldecoration17.png"
 		
 	
 
-[[databinding_computedvalue">
+
 === ComputedValue and observable trackers
 		
 			A
-			<code>ComputedValue</code>
+			`ComputedValue`
 			provides an abstract
-			<code>calculate</code>
+			`calculate`
 			method, which is able to compute a
 			value from observable trackers,
 			which are referenced in it's
-			<code>calculate</code>
+			`calculate`
 			method.
 		
 		
@@ -161,13 +158,13 @@ image::controldecoration17.png"
 		
 		
 			Since Eclipse Neon a new
-			<code>create</code>
+			`create`
 			method has been introduced, which accepts a Supplier that contains
 			the actual implementation of the calculate method.
 		
 		
 			So there's no need any more to derive from
-			<code>ComputedValue</code>
+			`ComputedValue`
 			.
 		
 		
@@ -182,9 +179,9 @@ image::controldecoration17.png"
 		
 		
 			A really popular example of a
-			<code>ComputedValue</code>
+			`ComputedValue`
 			implementation is the
-			<code>AggregateValidationStatus</code>
+			`AggregateValidationStatus`
 			, which keeps track of all validation statuses, which have been
 			passed to it and aggregates them to one MultiStatus or just returns
 			the one with maximum severity.
@@ -192,9 +189,9 @@ image::controldecoration17.png"
 		
 			It is also a great alternative to converter implementations. For
 			instance the previously described
-			<code>AggregateValidationStatus</code>
+			`AggregateValidationStatus`
 			returns an
-			<code>IStatus</code>
+			`IStatus`
 			as value, but if this should be bound to the enable state of a
 			_Finish_
 			button, having a boolean value would be necessary.

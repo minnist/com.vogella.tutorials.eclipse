@@ -1,6 +1,6 @@
 
-	<title>Contributing to the Eclipse open source project
-[[eclipseplatform_contributions0">
+== Contributing to the Eclipse open source project
+
 === Code contributing
 		
 			As the Eclipse project is an open source project, it is possible
@@ -21,11 +21,9 @@
 			this $book focuses on the process of contributing code to an Eclipse project.
 		
 	
-[[contribution_uiguidelines">
+
 === User interface guidelines
-		<indexterm>
-			<primary>User interface guidelines for Eclipse</primary>
-		</indexterm>
+		
 		
 			Eclipse has a description for its user interface guidelines. These
 			can be found under the following url:
@@ -43,14 +41,10 @@
 			at this (old but still valid) description.
 		
 	
-[[eclipseplatform_committers_contributors">
+
 === Users, Contributors and Committers
-		<indexterm>
-			<primary>Committer</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Contributor</primary>
-		</indexterm>
+		
+		
 
 		The development of the individual Eclipse projects is done by
 			the
@@ -67,7 +61,7 @@
 				<listitem>
 					
 						Eclipse User - Using at least one product, e.g., a
-						<filename>JAR</filename>
+						_JAR_
 						file, of the Eclipse project. Eclipse users consume the software
 						created by the Eclipse
 						developers. Users also
@@ -94,7 +88,7 @@
 
 	
 	
-[[e4overview">
+
         <title>Relevant Eclipse projects
         Eclipse hosts multiple projects but several projects are critical for the development of the Eclipse IDE and RCP
             applications. These are described here.

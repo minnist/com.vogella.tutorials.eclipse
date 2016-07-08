@@ -1,5 +1,5 @@
 
-	<title>What are Extension Points?
+== What are Extension Points?
 	
 		Extension-points define
 		interfaces for other
@@ -8,7 +8,7 @@
 		non-code).
 	
 	
-		They are defined in the <filename>plugin.xml</filename> file, which must be
+		They are defined in the _plugin.xml_ file, which must be
 		in
 		the root directory of
 		your plug-in project.

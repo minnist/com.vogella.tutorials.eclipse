@@ -1,6 +1,6 @@
 <chapter id="tutorial_e4services_usage">
-	<title>Exercise: Define and use an OSGi service
-[[tutorial_e4services_usagetarget">
+== Exercise: Define and use an OSGi service
+
 === Target of this exercise
 
 		
@@ -8,28 +8,28 @@
 			OSGi declarative services functionality to
 			provide a service. The provided services is for
 			the
-			<code>ITodoService</code>
+			`ITodoService`
 			interface and is implemented by the existing
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			class.
 		
 
 	
 
-[[services_todo_usagedependency">
+
 === Update the plug-in dependencies
 		
 			In the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in
 			define a dependency to:
 
 			<itemizedlist>
 				<listitem>
 					
-						<code>com.example.e4.rcp.todo.model</code>
+						`com.example.e4.rcp.todo.model`
 					
 				</listitem>
 			</itemizedlist>
@@ -37,16 +37,16 @@
 		
 			
 			In the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your
-			<code>com.example.e4.rcp.todo.services</code>
+			`com.example.e4.rcp.todo.services`
 			plug-in
 			define a dependency to:
 
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.osgi.services</code>
+						`org.eclipse.osgi.services`
 					
 				</listitem>
 			</itemizedlist>
@@ -55,7 +55,7 @@
 	
 
 
-[[tutorial_e4services_enable_ds_annotations">
+
 === Enable annotation processing and plug-in activation
 		
 			Ensure that OSGi services can be defined via annotations in the class via
@@ -63,27 +63,24 @@
 			.
 		
 		
-image::activate_pde_ds_annotations.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Activate DS annotation processing
+image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
 					,pdfwidth=60%]
 		
 
 	
 
-[[tutorial_e4services_usage_defineservice">
+
 === Define service
 
 		
 			Add the
-			<code>@Component</code>
+			`@Component`
 			annotation to your class. Eclipse should use this annotation to generate
 			the necessary files to make the
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			class
 			available as OSGi services for the
-			<code>ITodoService.</code>
+			`ITodoService.`
 			interface.
 		
 		
@@ -96,19 +93,19 @@ image::activate_pde_ds_annotations.png" scale="40" />
 
 
 
-[[tutorial_e4services_usage_serviceinjection">
+
 === Get the ITodoService injected
 		
 			Change your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class
 			so that the
-			<code>ITodoService</code>
+			`ITodoService`
 			service implementation
 			is
 			injected
 			into it by using your
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			method. Print the number of todos on the console as demonstrated in
 			the following example.
 		
@@ -120,7 +117,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		
 	
 
-[[services_todo_test">
+
 === Validate your implementation
 		
 			Start your application via the product and ensure that you see
@@ -131,7 +128,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 	
 
 
-[[tutorial_e4services_usage6">
+
 === Error analysis in case the injection did not work
 		
 			Ensure you have saved everything (ensure that the Save All
@@ -155,19 +152,19 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		
 		
 			If the
-			<code>ITodoService</code>
+			`ITodoService`
 			object cannot be injected ensure that the
 			_Activate this plug-in when one of its classes is loaded
 			_
 			flag for the plug-in has been set in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your service plug-in.
 		
 		
 			Also ensure that the
-			<code>com.example.e4.rcp.todo.services</code>
+			`com.example.e4.rcp.todo.services`
 			and
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			plug-ins are part of your feature project and that you started the
 			application via the product file.
 		
@@ -177,7 +174,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 			generate component xml
 			should look like the following example. This file should also be automatically included into
 			your
-			<filename>build.properties</filename>
+			_build.properties_
 			.
 		
 		
@@ -187,10 +184,10 @@ image::activate_pde_ds_annotations.png" scale="40" />
 		
 		
 			Eclipse also adds a reference to the
-			<filename>component.xml</filename>
+			_component.xml_
 			file
 			in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file under the Service-Component reference.
 		
 		
@@ -201,7 +198,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 
 	
 
-[[tutorial_e4services_usagereview">
+
 === Reflect on your current service usage design
 		
 			With this setup you have completely hidden the concrete
@@ -211,10 +208,7 @@ image::activate_pde_ds_annotations.png" scale="40" />
 			in the following screenshot.
 		
 		
-image::tutorial_osgidependencies10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Implicit dependencies with OSGi service,pdfwidth=60%]
+image::tutorial_osgidependencies10.png[Implicit dependencies with OSGi service,pdfwidth=60%]
 		
 		
 			The current service

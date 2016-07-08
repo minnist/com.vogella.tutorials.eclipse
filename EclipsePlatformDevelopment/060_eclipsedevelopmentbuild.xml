@@ -1,6 +1,6 @@
 
-	<title>Installation description
-[[eclipse4_developmentbuild_integrationbuild">
+== Installation description
+
 === Download the latest integration build
 		
 			You can download the latest integration build for the next Eclipse
@@ -30,7 +30,7 @@ image::download_developmentbuilds10.png[Download development builds,pdfwidth=60%
 		</note>
 
 	
-[[eclipse4_installtools1">
+
 === Install the Git tooling into the Eclipse IDE
 		After you downloaded a recent build for the Eclipse IDE, you need to install a few more plug-ins, most notable
 			the Eclipse Git tooling.

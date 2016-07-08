@@ -1,5 +1,5 @@
 
-	<title>Exercise: Data model plug-in
+== Exercise: Data model plug-in
 	<section>
 === Target of the exercise
 		 In this exercise you create a plug-in for the
@@ -13,7 +13,7 @@
 		
 	
 
-[[services_todo0">
+
 === Create the plug-in for the data model
 		
 			Create a simple plug-in project (see
@@ -34,18 +34,15 @@
 		
 		
 image::osgi_simpleplugin10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a simple plug-in,pdfwidth=60%]
+						scale="40[Creating a simple plug-in,pdfwidth=60%]
 		
 	
 
-[[services_todo1">
+
 === Create the base class
 		
 			Create the
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			package
 			and the
 			following model class.
@@ -65,7 +62,7 @@ image::osgi_simpleplugin10.png"
 			
 		</note>
 	
-[[services_todo_constructor">
+
 === Generate constructors
 		
 			Select
@@ -86,7 +83,7 @@ image::osgi_simpleplugin10.png"
 		</warning>
 	
 
-[[services_todo_gettersetter">
+
 === Generate getter and setter methods
 		
 			Use the
@@ -102,21 +99,18 @@ image::osgi_simpleplugin10.png"
 		</note>
 		
 image::osgi_model_settergetter10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Getter and setter generation,pdfwidth=60%]
+						scale="40[Getter and setter generation,pdfwidth=60%]
 		
 	
-[[services_todo_gettersetteradjust">
+
 === Adjust the generated getter and setter methods
 		
 			Adjust the generated getter and setter for the
-			<code>dueDate()</code>
+			`dueDate()`
 			field to make defensive copies. The
-			<code>Date</code>
+			`Date`
 			class is not immutable and we want to avoid that an instance of
-			<code>Todo</code>
+			`Todo`
 			can be changed from outside without the corresponding setter.
 		
 		
@@ -139,30 +133,30 @@ image::osgi_model_settergetter10.png"
 				Why is the
 				<parameter>id</parameter>
 				field marked as final? We will use this field to generate the
-				<code>equals</code>
+				`equals`
 				and
-				<code>hashCode()</code>
+				`hashCode()`
 				methods therefore it should not be mutable. Changing a field which
 				is used in the
-				<code>equals</code>
+				`equals`
 				and
-				<code>hashCode()</code>
+				`hashCode()`
 				methods can create bugs which are hard to identify, i.e., an object
 				is
 				contained in a
-				<code>HashMap</code>
+				`HashMap`
 				but not found.
 			
 		</note>
 	
 
-[[services_todo_tostringhashcode">
+
 === Generate toString(), hashCode() and equals() methods
 		
 			Use Eclipse to generate a
-			<code>toString()</code>
+			`toString()`
 			method for the
-			<code>Todo</code>
+			`Todo`
 			class based on the
 			<parameter>id</parameter>
 			and
@@ -175,9 +169,9 @@ image::osgi_model_settergetter10.png"
 		
 			Also
 			use Eclipse to generate a
-			<code>hashCode()</code>
+			`hashCode()`
 			and
-			<code>equals()</code>
+			`equals()`
 			method based on the
 			<parameter>id</parameter>
 			field. This can be done via the
@@ -187,11 +181,11 @@ image::osgi_model_settergetter10.png"
 		
 
 	
-[[services_todo_additionalmethods">
+
 === Write a copy() method
 		
 			Add the following
-			<code>copy()</code>
+			`copy()`
 			method to the class.
 		
 		
@@ -205,7 +199,7 @@ image::osgi_model_settergetter10.png"
 	<section>
 === Create a Tag class
 		
-			The following <code>Tag</code> class is used to group <code>Todo</code> objects.
+			The following `Tag` class is used to group `Todo` objects.
 		
 		
 			<programlisting language="java">
@@ -215,11 +209,11 @@ image::osgi_model_settergetter10.png"
 		
 	
 
-[[services_todo1a">
+
 === Create the interface for the todo service
 		
 			Create the following
-			<code>ITodoService</code>
+			`ITodoService`
 			interface.
 		
 		
@@ -230,27 +224,24 @@ image::osgi_model_settergetter10.png"
 		
 	
 
-[[services_todo2">
+
 === Define the API of the model plug-in
 		
 			Export the
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			package to define it as API.
 			For this
 			open the
-			<code>MANIFEST.MF</code>
+			`MANIFEST.MF`
 			file and select the
 			_Runtime_
 			tab. Add
-			<code>com.example.e4.rcp.todo.model</code>
+			`com.example.e4.rcp.todo.model`
 			to the exported packages.
 		
 		
 image::osgi_model_exportedapi.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Exported API,pdfwidth=60%]
+						scale="40[Exported API,pdfwidth=60%]
 		
 	
 

@@ -1,4 +1,4 @@
-[[eclipseresources]]
+
 == Eclipse Resources
 
 You can register `IResourceChangeListener` on resources in Eclipse.

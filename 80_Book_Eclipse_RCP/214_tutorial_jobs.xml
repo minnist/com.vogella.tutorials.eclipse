@@ -1,17 +1,17 @@
 <chapter>
-	<title>Exercise: Using asynchronous processing
+== Exercise: Using asynchronous processing
 	<section>
 === Simulate delayed access
 		
 			Change your
-			<code>getTodos(Consumer&lt;List&lt;Todo&gt;&gt; todosConsumer)</code>
+			`getTodos(Consumer&lt;List&lt;Todo&gt;&gt; todosConsumer)`
 			method in the
-			<code>MyTodoServiceImpl</code>
+			`MyTodoServiceImpl`
 			class
 			to the following example code. This code simulates a slow server
 			access
 			with the
-			<code>TimeUnit</code>
+			`TimeUnit`
 			class.
 		
 		
@@ -22,7 +22,7 @@
 		
 		
 			Start your application. What happens if you press the
-			<code>Button</code>
+			`Button`
 			to fill the JFace table?
 		
 	
@@ -32,11 +32,11 @@
 			You have a
 			_Load Data_
 			button in your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			.
 			Write a
 			custom
-			<code>Job</code>
+			`Job`
 			implementation
 			to load the data in the background whenever this button
 			is pressed.
@@ -80,12 +80,12 @@
 
 		
 			Use the wizard to create a new
-			<code>Todo</code>
+			`Todo`
 			object. Press the
 			_Load Data_
 			button to update the table. The application should be usable and the
 			table should update after the delay defined in the
-			<code>ITodoService</code>
+			`ITodoService`
 			implementation class.
 		
 	

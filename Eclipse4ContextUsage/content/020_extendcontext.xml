@@ -1,10 +1,8 @@
 
-	<title>Accessing and extending the Eclipse context
-[[extentcontext_access">
+== Accessing and extending the Eclipse context
+
 === Accessing the context
-		<indexterm>
-			<primary>MContext</primary>
-		</indexterm>
+		
 
 		<indexterm>
 			<primary>Eclipse context</primary>
@@ -12,7 +10,7 @@
 		</indexterm>
 		
 			You can place objects directly in the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy to make them available to other model objects.
 		
 		
@@ -27,7 +25,7 @@
 			for
 			all model objects. The following code demonstrates how to get access
 			to the active
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			, in which the handler is called.
 		
 
@@ -39,20 +37,20 @@
 
 		
 			If a model object implements
-			<code>MContext</code>
+			`MContext`
 			,
 			you can use dependency injection to get the model object injected
 			and
 			call the
-			<code>getContext()</code>
+			`getContext()`
 			method to access its context. For example, MPart, MWindow,
 			MApplication and MPerspective extend MContext.
 		
 		
 			The following code demonstrates how to get the
-			<code>MApplication</code>
+			`MApplication`
 			injected and how to access its
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 		
 
@@ -64,28 +62,26 @@
 	
 
 
-[[icontextvariables">
+
 === Objects and context variables
-		<indexterm>
-			<primary>Context variables</primary>
-		</indexterm>
+		
 		
 			You can add key / value pairs directly to the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 		
 		
 			Adding objects to
 			a context can be done via
 			the
-			<code>set()</code>
+			`set()`
 			method of the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			interface.
 			The following example creates a new context via the
-			<code>EclipseContextFactory.create()</code>
+			`EclipseContextFactory.create()`
 			factory method call and adds some objects to it. Via the
-			<code>setParent()</code>
+			`setParent()`
 			method call, the new context is connected to the context hierarchy.
 		
 
@@ -110,7 +106,7 @@
 			declared as
 			_modifiable_
 			via the
-			<code>declareModifiable(key)</code>
+			`declareModifiable(key)`
 			method call.
 		
 
@@ -124,29 +120,29 @@
 
 		
 			Context variables are added to particular levels of the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy and can also be modified using the
-			<code>modify()</code>
+			`modify()`
 			method rather than
-			<code>set()</code>
+			`set()`
 			method of the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			.
 			The
-			<code>modify()</code>
+			`modify()`
 			method searches up the chain to find the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			defining the variable. If no entry is found in the context hierarchy,
 			the value will be
 			set in the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			in which the call started.
 
 			If the key already exists in the context,
 			then
-			<code>modify()</code>
+			`modify()`
 			requires that the key has been set to modifiable with the
-			<code>declareModifiable()</code>
+			`declareModifiable()`
 			method, if not, the method
 			throws an
 			exception.
@@ -161,17 +157,13 @@
 	
 
 
-[[extentcontext_modify">
+
 === Replacing existing objects in the IEclipseContext
-		<indexterm>
-			<primary>IWindowCloseHandler</primary>
-		</indexterm>
-		<indexterm>
-			<primary>ISaveHandler</primary>
-		</indexterm>
+		
+		
 		
 			Instead of adding new objects to the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy, you can also override existing objects by using
 			the same
 			key.
@@ -184,31 +176,31 @@
 			the context of the
 			_MWindow_
 			model element. Its
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			is originally created by the
-			<code>WBWRenderer</code>
+			`WBWRenderer`
 			class. By default it puts an instance
 			of the
-			<code>IWindowCloseHandler</code>
+			`IWindowCloseHandler`
 			and the
-			<code>ISaveHandler</code>
+			`ISaveHandler`
 			interface
 			into the local context of the
 			_MWindow_
 			model element. The
-			<code>IWindowCloseHandler</code>
+			`IWindowCloseHandler`
 			object is responsible for
 			the
 			behavior once the
 			_MWindow_
 			model element is closed. The default
-			<code>IWindowCloseHandler</code>
+			`IWindowCloseHandler`
 			prompts the user if he wants to save
 			dirty parts (editors with changed
 			content). You can change this default
 			implementation by replacing the
 			object in the context. The following example shows an
-			<code>@Execute</code>
+			`@Execute`
 			method in a handler implementation which overrides this class at
 			runtime.
 		
@@ -223,23 +215,23 @@
 			
 				You could use this example in your life cycle handler and subscribe
 				to the
-				<code>UIEvents.UILifeCycle.APP_STARTUP_COMPLETE</code>
+				`UIEvents.UILifeCycle.APP_STARTUP_COMPLETE`
 				event. In the event handler you would replace the
-				<code>IWindowCloseHandler</code>
+				`IWindowCloseHandler`
 				handler in the context.
 			
 		</tip>
 	
 
-[[extentcontext_adding">
+
 === Accessing the IEclipseContext hierarchy from OSGi services
 		
 		
 			OSGi services are not directly part of the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			hierarchy and are created by the OSGi runtime. The OSGi runtime does
 			not support dependency injection based on the
-			<code>@Inject</code>
+			`@Inject`
 			annotation.
 		
 		
@@ -247,28 +239,26 @@
 		
 			The Eclipse framework
 			registers the implementation of the
-			<code>MApplication</code>
+			`MApplication`
 			interface
 			also as an OSGi service. This allows OSGi services to use
 			the OSGi API to access the
-			<code>MApplication</code>
+			`MApplication`
 			and its context via the
-			<code>getContext()</code>
+			`getContext()`
 			method. As the
-			<code>EModelService</code>
+			`EModelService`
 			is part of the
-			<code>MApplication</code>
+			`MApplication`
 			context you can search for other context elements via
 			it.
 		
 
 	
 
-[[extentcontext_modeladdons">
+
 === Model add-ons
-		<indexterm>
-			<primary>Model add-ons</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Add-ons</secondary>
@@ -283,7 +273,7 @@
 			referred to by the
 			model add-ons can
 			access and modify the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			or
 			interact with other services,
 			e.g., the event system.
@@ -293,15 +283,12 @@
 			in the application model.
 		
 		
-image::modeladdon10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Registering a model add-on,pdfwidth=60%]
+image::modeladdon10.png" scale="30[Registering a model add-on,pdfwidth=60%]
 		
 		
 			The following code shows an example implementation for the model
 			addon class. This addon places an object into the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 		
 		
 			<programlisting language="java">
@@ -311,33 +298,31 @@ image::modeladdon10.png" scale="30" />
 
 
 	
-[[extentcontext_turnandtrack">
+
 === RunAndTrack
-		<indexterm>
-			<primary>RunAndTrack</primary>
-		</indexterm>
+		
 		
 			The
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			allows you via the
-			<code>runAndTrack()</code>
+			`runAndTrack()`
 			method to register a Java object of type
-			<code>RunAndTrack</code>
+			`RunAndTrack`
 			.
 		
 		
 			A
-			<code>RunAndTrack</code>
+			`RunAndTrack`
 			object
 			is basically a
-			<code>Runnable</code>
+			`Runnable`
 			which has access to the context.
 
 		
 
 		
 			If the context changes, the
-			<code>RunAndTrack</code>
+			`RunAndTrack`
 			is called by the Eclipse framework.
 			The runnable does not need to be
 			explicitly unregistered from
@@ -347,12 +332,12 @@ image::modeladdon10.png" scale="30" />
 			longer
 			interested in tracking changes. If
 			the
-			<code>RunAndTrack</code>
+			`RunAndTrack`
 			is invoked by the Eclipse platform and it
 			returns
-			<code>false</code>
+			`false`
 			from its
-			<code>RunAndTrack.changed()</code>
+			`RunAndTrack.changed()`
 			method, it is
 			automatically unregistered
 			from change tracking on
@@ -361,7 +346,7 @@ image::modeladdon10.png" scale="30" />
 		
 		
 			Such a
-			<code>RunAndTrack</code>
+			`RunAndTrack`
 			object
 			allows a client to keep some external state
 			synchronized

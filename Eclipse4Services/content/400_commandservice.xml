@@ -1,15 +1,11 @@
 
-	<title>Command and Handler service
+== Command and Handler service
 
-[[commandservice1">
+
 
 === Purpose of the command and handler service
-		<indexterm>
-			<primary>Command service</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Handler service</primary>
-		</indexterm>
+		
+		
 
 		
 			The command and handler
@@ -27,24 +23,20 @@
 	
 
 
-[[commandservice_access">
+
 === Access to command and handler service
-		<indexterm>
-			<primary>ECommandService</primary>
-		</indexterm>
-		<indexterm>
-			<primary>EHandlerService</primary>
-		</indexterm>
+		
+		
 		
 			You can use dependency injection to access the services. The relevant
 			interfaces are
-			<code>ECommandService</code>
+			`ECommandService`
 			and
-			<code>EHandlerService</code>
+			`EHandlerService`
 			.
 		
 	
-[[commandservice_example1">
+
 === Example for executing a command
 
 		
@@ -60,13 +52,13 @@
 		
 
 	
-[[commandservice_example">
+
 === Example for assigning a handler to a command
 
 		
 			The following example shows how to add a new handler to an existing
 			command. It assumes that the
-			<code>AboutHandler</code>
+			`AboutHandler`
 			class already exists.
 		
 

@@ -1,4 +1,4 @@
-[[adapters_workbenchlabelprovider_example]]
+
 == Exercise - Adapters and the WorkbenchLabelProvider
 
 The _de.vogella.plugin.adapter_ plug-in from <<adapters_propertyview_example>> should be reused for this exercise.

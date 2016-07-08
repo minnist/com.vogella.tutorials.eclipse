@@ -1,11 +1,9 @@
 
-	<title>Eclipse platform services
-[[services_what">
+== Eclipse platform services
+
 === What are Eclipse platform services?
 
-		<indexterm>
-			<primary>Eclipse services</primary>
-		</indexterm>
+		
 
 		Services are software
 			components (based on an interface or a
@@ -24,7 +22,7 @@
 			To use an Eclipse service you
 			specify
 			the service dependency via an
-			<code>@Inject</code>
+			`@Inject`
 			annotation and the Eclipse framework injects this component into
 			your
 			object.
@@ -41,7 +39,7 @@
 			.
 		
 	
-[[services_list">
+
 === Overview of the available platform services
 		
 			The following table gives an overview of the most important available
@@ -98,7 +96,7 @@
 								It also allows you to
 								switch perspectives and can be used to trigger that a method
 								annotated with
-								<code>@Persist</code>
+								`@Persist`
 								in dirty parts, i.e. if the corresponding part behaves like an editor.
 							</entry>
 						</row>
@@ -114,13 +112,13 @@
 							</entry>
 							<entry>
 								Activate and deactivate key bindings defined as
-								<code>BindingContext</code>
+								`BindingContext`
 								in the application model. The content
 								referred to in this service
 								is the
-								<code>BindingContext</code>
+								`BindingContext`
 								and not the
-								<code>IEclipseContext</code>
+								`IEclipseContext`
 								.
 							</entry>
 						</row>
@@ -152,9 +150,9 @@
 						object to the specified type, allowing clients to request
 						domain-specific
 						behavior for an object. It integrates
-						<code>IAdaptable</code>
+						`IAdaptable`
 						and
-						<code>IAdapterManager</code>
+						`IAdapterManager`
 						. See the
 						http://wiki.eclipse.org/E4/EAS/Adapting_Objects">Adapter wiki
 						for details.
@@ -169,7 +167,7 @@
 				<listitem>
 					
 						org.eclipse.jface.window.IShellProvider - allows access to a
-						<code>Shell</code>
+						`Shell`
 						, depends on SWT.
 					
 				</listitem>
@@ -179,7 +177,7 @@
 
 	
 	
-[[platformservice_implementation">
+
     <title>How are Eclipse platform services implemented?
     
         Usually services
@@ -191,7 +189,7 @@
         OSGi service or plain context
         value
         setting (
-        <code>IEclipseContext</code>
+        `IEclipseContext`
         ). Please note that there can be more than one service
         implementation
         for an interface.

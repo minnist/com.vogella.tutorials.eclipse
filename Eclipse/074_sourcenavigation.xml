@@ -1,6 +1,6 @@
 
-	<title>Source navigation in the Eclipse IDE
-[[sourcenavigation_packageexplorer">
+== Source navigation in the Eclipse IDE
+
 === Package Explorer or Project Explorer
 		<indexterm>
 			<primary>Package Explorer view</primary>
@@ -23,10 +23,7 @@
 			tree hierarchy.
 		
 		
-image::packageexplorer10_display.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Package Explorer display,pdfwidth=60%]
+image::packageexplorer10_display.png" scale="40[Package Explorer display,pdfwidth=60%]
 		
 
 		
@@ -38,22 +35,16 @@ image::packageexplorer10_display.png" scale="40" />
 		
 
 		
-image::packageexplorer20_filter.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Filter in the package explorer,pdfwidth=60%]
+image::packageexplorer20_filter.png" scale="40[Filter in the package explorer,pdfwidth=60%]
 		
 
 		
-image::packageexplorer22_filter.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Filter in the package explorer,pdfwidth=60%]
+image::packageexplorer22_filter.png" scale="40[Filter in the package explorer,pdfwidth=60%]
 		
 
 	
 
-[[packageexplorerlinkwitheditor">
+
 === Link Package Explorer with editor
 		<indexterm>
 			<primary>Package Explorer view</primary>
@@ -68,14 +59,14 @@ image::packageexplorer22_filter.png" scale="40" />
 			the
 			currently selected
 			editor. For example, if you are working on the
-			<code>Foo.java</code>
+			`Foo.java`
 			file in the Java
 			_editor_
 			and
 			switch to the Java
 			_editor_
 			of the
-			<code>Var.java</code>
+			`Var.java`
 			file,
 			then the corresponding file will be selected in
 			the
@@ -85,7 +76,7 @@ image::packageexplorer22_filter.png" scale="40" />
 
 		
 			To activate this behavior, press the
-			<guibutton>Link with Editor</guibutton>
+			_Link with Editor_
 			button in
 			the
 			_Package
@@ -96,10 +87,7 @@ image::packageexplorer22_filter.png" scale="40" />
 		
 
 		
-image::editorsyncpackage10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Synchronize the package explorer selectioni with the
+image::editorsyncpackage10.png" scale="40[Synchronize the package explorer selectioni with the
 						current selected
 						editor
 					,pdfwidth=60%]
@@ -108,7 +96,7 @@ image::editorsyncpackage10.png" scale="40" />
 
 
 
-[[classnavigation">
+
 === Opening a class
 		
 			You can navigate between the classes in your project via the
@@ -142,10 +130,7 @@ image::editorsyncpackage10.png" scale="40" />
 			it.
 		
 		
-image::classopen10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Opening a class</phrase>
+image::classopen10.png[Opening a class</phrase>
 
 				</textobject>
 			</mediaobject>
@@ -180,10 +165,7 @@ image::classopen10.png" />
 		</tip>
 
 		
-image::classopen20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Opening a class with package name,pdfwidth=60%]
+image::classopen20.png[Opening a class with package name,pdfwidth=60%]
 		
 		
 			The
@@ -193,7 +175,7 @@ image::classopen20.png" />
 			like
 			search, e.g., it matches capital letters in the class name. For
 			example, if you would search for the
-			<code>OnTouchListener</code>
+			`OnTouchListener`
 			class you could use
 			<parameter>OTL</parameter>
 			or
@@ -202,10 +184,7 @@ image::classopen20.png" />
 		
 
 		
-image::classopen30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Opening a class with CamelCase,pdfwidth=60%]
+image::classopen30.png[Opening a class with CamelCase,pdfwidth=60%]
 		
 		<tip>
 			
@@ -214,23 +193,21 @@ image::classopen30.png" />
 				example, you can type
 				<parameter>Selection</parameter>
 				(there is a space after selection) to match the
-				<code>Selection</code>
+				`Selection`
 				class but not the
-				<code>SelectionListener</code>
+				`SelectionListener`
 				class. Wildcards like * are also supported.
 			
 		</tip>
 	
-[[resourcenavigation_openresourcedialog">
+
 === Open Resource dialog to open arbitrary files
 		<indexterm>
 			<primary>Resource</primary>
 			<secondary>opening dialog
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Open Resource dialog</primary>
-		</indexterm>
+		
 		
 			You can open any file from your open projects via the
 			_Open Resource_
@@ -245,19 +222,14 @@ image::classopen30.png" />
 			screenshot demonstrate the usage to open a pom.xml file from your workspace.
 		
 		
-image::openresourceeclipse10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Open resources in Eclipse,pdfwidth=60%]
+image::openresourceeclipse10.png" scale="40[Open resources in Eclipse,pdfwidth=60%]
 		
 
 	
 
-[[sourcenavigation_quickoutline">
+
 === Quick Outline
-		<indexterm>
-			<primary>Quick Outline</primary>
-		</indexterm>
+		
 		
 			_Quick Outline_
 			shows you an structured overview of the file you are editing.
@@ -300,7 +272,7 @@ image::openresourceeclipse10.png" scale="40" />
 			.
 		
 	
-[[sourcenavigation_type_hierarchy">
+
 === Open Type Hierarchy
 		<indexterm>
 			<primary>Type Hierarchy</primary>
@@ -337,11 +309,9 @@ image::openresourceeclipse10.png" scale="40" />
 			).
 		
 	
-[[sourcenavigation_textsearch">
+
 === Full text search
-		<indexterm>
-			<primary>Search dialog</primary>
-		</indexterm>
+		
 		
 			You frequently need to find files containing certain text or other meta data. Via the
 			menu:
@@ -356,10 +326,7 @@ Search[Search]
 			tab to search for text with the option to use regular expressions and also to replace matching entries.
 		
 		
-image::javasearchdialog30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Text search,pdfwidth=60%]
+image::javasearchdialog30.png[Text search,pdfwidth=60%]
 		
 
 		
@@ -373,22 +340,16 @@ image::javasearchdialog30.png" />
 
 
 		
-image::customizesearch10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Customize search,pdfwidth=60%]
+image::customizesearch10.png[Customize search,pdfwidth=60%]
 		
 
 		
-image::customizesearch20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Customize search,pdfwidth=60%]
+image::customizesearch20.png[Customize search,pdfwidth=60%]
 		
 
 	
 
-[[sourcenavigation_othersearch">
+
 === Java search and other specialized searches
 
 		
@@ -404,10 +365,7 @@ image::customizesearch20.png" />
 			methods.
 		
 		
-image::javasearchdialog10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Text search,pdfwidth=60%]
+image::javasearchdialog10.png[Text search,pdfwidth=60%]
 		
 		
 			The
@@ -425,19 +383,14 @@ image::javasearchdialog10.png" />
 			border of the editor.
 		
 		
-image::javasearchdialog20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Text search,pdfwidth=60%]
+image::javasearchdialog20.png[Text search,pdfwidth=60%]
 		
 
 	
 
-[[sourcenavigation_incrementalfind">
+
 === Inline search in an editor
-		<indexterm>
-			<primary>Incremental find</primary>
-		</indexterm>
+		
 		
 			You can use the
 			<keycombo>
@@ -459,10 +412,7 @@ image::javasearchdialog20.png" />
 		
 
 		
-image::incrementalsearch10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Incrementation search,pdfwidth=60%]
+image::incrementalsearch10.png" scale="30[Incrementation search,pdfwidth=60%]
 		
 		The advantage of this search is that no pop-up dialog is opened
 			which blocks other elements in the Eclipse IDE.
@@ -483,7 +433,7 @@ image::incrementalsearch10.png" scale="30" />
 			for the previous element.
 		
 	
-[[sourcenavigation_annotations">
+
 === Annotation navigations
 		You can also navigate via the annotation buttons, e.g., for
 			jumping
@@ -492,10 +442,7 @@ image::incrementalsearch10.png" scale="30" />
 		
 
 		
-image::navigation_annotations10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Annotation navigation,pdfwidth=60%]
+image::navigation_annotations10.png" scale="40[Annotation navigation,pdfwidth=60%]
 		
 		
 			By pressing the buttons you can navigate to the related
@@ -522,10 +469,7 @@ image::navigation_annotations10.png" scale="40" />
 			annotation buttons.
 		
 		
-image::annotationsnavigation30.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Moving in the source code,pdfwidth=60%]
+image::annotationsnavigation30.png" scale="40[Moving in the source code,pdfwidth=60%]
 		
 		Which annotations are relevant for navigation can be configured
 			via the drop-down menu of the toolbar. This
@@ -533,13 +477,10 @@ image::annotationsnavigation30.png" scale="40" />
 			in the following screenshot.
 		
 		
-image::navigation_annotations20.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Annotation navigation,pdfwidth=60%]
+image::navigation_annotations20.png" scale="40[Annotation navigation,pdfwidth=60%]
 		
 	
-[[sourcenavigation_mouse">
+
 === Mouse and keyboard navigation
 		
 			In a lot of cases you can also use the mouse to navigate to or
@@ -569,16 +510,14 @@ image::navigation_annotations20.png" scale="40" />
 			key to go into a class.
 		
 	
-[[sourcenavigation_breadcrumb">
+
 === Show in Breadcrumb
 		<indexterm>
 			<primary>Java editor</primary>
 			<secondary>breadcrumb
 			</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Breadcrumb</primary>
-		</indexterm>
+		
 		
 			You can also activate the
 			_breadcrumb_
@@ -594,19 +533,13 @@ image::navigation_annotations20.png" scale="40" />
 			entry.
 		
 		
-image::breadcrumb10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Show in Breadcrumb,pdfwidth=60%]
+image::breadcrumb10.png[Show in Breadcrumb,pdfwidth=60%]
 		
 		This allows you to navigate the source code from the editor as
 			depicted in the following screenshot.
 		
 		
-image::breadcrumb20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Breadcrumb view,pdfwidth=60%]
+image::breadcrumb20.png[Breadcrumb view,pdfwidth=60%]
 		
 		
 			To hide it again, right-click on a breadcrump entry and select
@@ -615,13 +548,10 @@ image::breadcrumb20.png" />
 		
 
 		
-image::breadcrumb30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Breadcrumb view,pdfwidth=60%]
+image::breadcrumb30.png[Breadcrumb view,pdfwidth=60%]
 		
 	
-[[sourcenavigation_shortcuts">
+
 === Shortcuts
 		
 			There are a lot of shortcuts available for navigation.
@@ -635,7 +565,7 @@ image::breadcrumb30.png" />
 		
 	
 
-[[packageexplorer_closeprojects">
+
 === Closing and opening projects
 		<indexterm>
 			<primary>Package Explorer view</primary>

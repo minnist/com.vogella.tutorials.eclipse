@@ -1,10 +1,8 @@
 
-	<title>Eclipse preference settings
-[[preferences_definition">
+== Eclipse preference settings
+
 === What are preferences?
-		<indexterm>
-			<primary>Preferences</primary>
-		</indexterm>
+		
 		
 			The behavior of the Eclipse IDE can be controlled via key value pairs
 			stores as
@@ -20,7 +18,7 @@
 			preference dialog.
 		
 	
-[[preferences_howtochange">
+
 === Opening the preference dialog
 		
 
@@ -34,10 +32,7 @@
 
 		
 image::preferencesettings17.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Preference settings,pdfwidth=60%]
+						scale="40[Preference settings,pdfwidth=60%]
 		
 		Correctly configuring Eclipse to your needs can largely improve
 			your productivity. Most of these preference
@@ -47,22 +42,22 @@ image::preferencesettings17.png"
 		
 	
 
-[[eclipse_plugin_customization.ini">
+
 === Configuring the preference values via the
 			plugin_customization.ini file
 		
 			You can specify default values for preferences via a file which is
 			typically called
-			<filename>plugin_customization.ini</filename>
+			_plugin_customization.ini_
 			.
 		
 		
 			In this file you enter default values for preference settings.
 			For
 			example, the following will setup a default type filter for the
-			<code>java.awt</code>
+			`java.awt`
 			and
-			<code>javax.swing</code>
+			`javax.swing`
 			package.
 		
 
@@ -74,18 +69,18 @@ image::preferencesettings17.png"
 		
 		
 			You link to this file via your
-			<filename>eclipse.ini</filename>
+			_eclipse.ini_
 			file in your Eclipse
 			installation directory.
 		
 		
 
 			The following example
-			<filename>eclipse.ini</filename>
+			_eclipse.ini_
 			links to the file and it
 			assumes
 			that you created the
-			<filename>plugin_customization.ini</filename>
+			_plugin_customization.ini_
 			file in the Eclipse installation directory.
 		
 		
@@ -96,7 +91,7 @@ image::preferencesettings17.png"
 		
 
 	
-[[eclipse_keys">
+
 === Identifying preference setting values
 		
 			To identify a key for a certain preference setting you can export
@@ -126,7 +121,7 @@ image::preferencesettings17.png"
 				copying
 				it into
 				the
-				<filename>plugin_customization.ini</filename>
+				_plugin_customization.ini_
 				file.
 			
 		</note>

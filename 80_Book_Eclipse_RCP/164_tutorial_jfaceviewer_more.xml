@@ -1,5 +1,5 @@
 <chapter>
-	<title>Exercise: Using more viewer functionality
+== Exercise: Using more viewer functionality
 	<note>
 		The following exercise is optional.
 	</note>
@@ -14,10 +14,7 @@
 
 		
 image::jfacetable_filterbox10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a filter to the Table,pdfwidth=60%]
+						scale="40[Adding a filter to the Table,pdfwidth=60%]
 		
 		The following code snippet can be used as a starting point.
 		

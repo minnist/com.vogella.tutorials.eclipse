@@ -1,6 +1,6 @@
 
-	<title>Exercise: make a change and push a review
-[[eclipsegerritcontribution_codechange">
+== Exercise: make a change and push a review
+
 === Make a code change
 		
 			Find a very simple change for your first contribution. For
@@ -13,7 +13,7 @@
 			, these are candidates for initial contributions.
 		
 	
-[[eclipsegerritcontribution_push">
+
 === Push to the Gerrit review system
 		
 			Use the
@@ -63,7 +63,7 @@ image::eclipsegerritcontribution20.png[Eclipse Signed-off-by,pdfwidth=60%]
 			
 		</warning>
 	
-[[eclipsegerritcontribution_reviewupdating">
+
 === Updating the Gerrit review
 		
 			You may get review comments asking to improve the Gerrit change. Or you find a better way of doing the change.

@@ -1,5 +1,5 @@
 
-	<title>Launch configuration in general
+== Launch configuration in general
 	The easiest way to create a launch configuration is using the _Run
 			Configuration..._ dialog.
 	This dialog can be accessed in several ways.
@@ -34,7 +34,7 @@
 	How to create new launch configurations is described within the picture above.
 	<section>
 === Export a launch configuration
-		Those launch configurations can also be exported to a <filename>*.launch</filename>
+		Those launch configurations can also be exported to a _*.launch_
 			file.
 		You can reach the export wizard via export command in the file menu or by typing
 				_Export (Launch Configuration)_ in the Quick Access.
@@ -43,15 +43,15 @@ image::export_launch_configuration.png"/>
 				</imageobject>
 			</mediaobject>
 		
-		When pressing <guibutton>Next</guibutton> you can choose, which launch configuration you
-			want to export and define a location to store the <filename>*.launch</filename>
+		When pressing _Next_ you can choose, which launch configuration you
+			want to export and define a location to store the _*.launch_
 			file.
 		
 image::launch_configuration_export_wizard.png"/>
 				</imageobject>
 			</mediaobject>
 		
-		The exported <filename>Eclipse Application Launch Configuration.launch</filename> file
+		The exported _Eclipse Application Launch Configuration.launch_ file
 			looks like this:
 		
 			<programlisting language="xml">
@@ -71,14 +71,14 @@ image::import_launch_configuration.png"/>
 				</imageobject>
 			</mediaobject>
 		
-		When pressing <guibutton>Next</guibutton> you can look for a
-				<filename>*.launch</filename> file in your file system, and import it.
+		When pressing _Next_ you can look for a
+				_*.launch_ file in your file system, and import it.
 		
 image::launch_configuration_import_wizard.png"/>
 				</imageobject>
 			</mediaobject>
 		
-		After we successfully imported a certain <filename>*.launch</filename> file, we can
+		After we successfully imported a certain _*.launch_ file, we can
 			choose and run this launch configuration with the _Run
 				Configuration..._ dialog.
 	

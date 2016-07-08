@@ -1,9 +1,9 @@
 
-	<title>Tutorial: Using a Filter
+== Tutorial: Using a Filter
 	
 		The following adds a filter to the table based on the
 		_Search_
-		<code>Text</code>
+		`Text`
 		widget.
 		The user can enter search pattern in this text field
 		and
@@ -18,16 +18,16 @@
 		</programlisting>
 	
 	
-		Add to your search text field a <code>keyListener</code>
+		Add to your search text field a `keyListener`
 		which updates the filter
 		and
 		the
 		viewer. You need also to define a new
-		<code>private PersonFilter
+		`private PersonFilter
 			filter;
-		</code>
+		`
 		field and change the
-		<code>createPartControl()</code>
+		`createPartControl()`
 		method.
 	
 	

@@ -1,6 +1,6 @@
 
-	<title>Exercise: Adding menus
-[[uicomponents_overview">
+== Exercise: Adding menus
+
 === Target of this exercise
 		In this exercise you create commands and handlers for your
 			application. Afterwards you will create menu entries
@@ -8,28 +8,25 @@
 			these commands.
 		
 	
-[[tutorial_menu_command">
+
 === Create command model elements
 		
 
 			Open
 			the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file of your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in and select the
 			_Commands_
 			entry. This selection is highlighted in the following screenshot.
 		
 		
-image::commands10.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding commands to your application,pdfwidth=60%]
+image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60%]
 		
 		
 			Via the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button
 			you can create new commands. The name and the ID are
 			the
@@ -79,18 +76,18 @@ image::commands10.png" scale="50" />
 
 	
 
-[[tutorial_menu_handlerclasses">
+
 === Creating the handler classes
 		
 			Create the
-			<code>com.example.e4.rcp.todo.handlers</code>
+			`com.example.e4.rcp.todo.handlers`
 			package for your handler classes.
 		
 		
 			All handler classes implement an
-			<code>execute()</code>
+			`execute()`
 			method annotated with
-			<code>@Execute</code>
+			`@Execute`
 			.
 		
 
@@ -124,7 +121,7 @@ image::commands10.png" scale="50" />
 		</itemizedlist>
 
 	
-[[tutorial_menu_handlers">
+
 === Creating handler model elements
 
 		
@@ -139,7 +136,7 @@ image::commands10.png" scale="50" />
 		
 		
 			Use the
-			<code>com.example.e4.rcp.todo.handler</code>
+			`com.example.e4.rcp.todo.handler`
 			prefix for all IDs of the handlers.
 		
 		
@@ -195,7 +192,7 @@ image::commands10.png" scale="50" />
 			The application model editor shows both the name and the ID of
 			the
 			command. The class URI follows the
-			<code>bundleclass://</code>
+			`bundleclass://`
 			schema, the table only defines the class name to make the table more
 			readable. For example, for the save handler this looks like the
 			following:
@@ -213,12 +210,12 @@ image::handler10.png[Defining a handler in Eclipse 4,pdfwidth=60%]
 		
 
 	
-[[tutorial_menu_menu">
+
 === Adding a menu
 
 		
 			In your
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file select your
 			_TrimmedWindow_
 			entry in the model and flag the
@@ -233,7 +230,7 @@ image::menu04.png"/>
 		
 		
 			Assign the
-			<code>org.eclipse.ui.main.menu</code>
+			`org.eclipse.ui.main.menu`
 			ID to your main menu.
 		
 		<warning>
@@ -264,10 +261,7 @@ image::menu04.png"/>
 			menu.
 		
 		
-image::commands20.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a menu,pdfwidth=60%]
+image::commands20.png" scale="50[Creating a menu,pdfwidth=60%]
 		
 		
 			Add a
@@ -282,10 +276,7 @@ image::commands20.png" scale="50" />
 			attribute.
 		
 		
-image::commands30.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a menu item to the menu,pdfwidth=60%]
+image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
 		
 
 		
@@ -302,11 +293,11 @@ image::commands30.png" scale="30" />
 
 	
 	
-[[tutorial_menu_close">
+
 === Implement a handler class for exit
 		
 			To test if your handler is working, change your
-			<code>ExitHandler</code>
+			`ExitHandler`
 			class, so that it closes your application, once selected.
 		
 		
@@ -317,7 +308,7 @@ image::commands30.png" scale="30" />
 		
 	
 
-[[tutorial_menu_validate">
+
 === Validating
 		
 			Validate that your save handler is called if you select Save
@@ -331,7 +322,7 @@ image::commands30.png" scale="30" />
 		
 	
 
-[[tutorial_menu_macissue">
+
 === Possible issue: Exit menu entry on a MacOS
 		If you use the "org.eclipse.ui.file.exit" ID for your exit
 			command, the Eclipse framework tries to map the exit command to its

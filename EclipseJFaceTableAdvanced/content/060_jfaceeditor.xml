@@ -1,9 +1,9 @@
 
-	<title>Tutorial: Editing the table content
+== Tutorial: Editing the table content
 	
 		Create the following new classes
 		in the new
-		<code>de.vogella.jface.tableviewer.edit</code>
+		`de.vogella.jface.tableviewer.edit`
 		package.
 	
 	
@@ -31,9 +31,9 @@
 		</programlisting>
 	
 	
-		Now assign <code>EditorSupport</code> objects to your <code>TableColumnViewers</code> in
+		Now assign `EditorSupport` objects to your `TableColumnViewers` in
 		your
-		<code>View</code> class. Replace the existing method <code>createColumns()</code> with the
+		`View` class. Replace the existing method `createColumns()` with the
 		following one and adjust your imports.
 	
 	

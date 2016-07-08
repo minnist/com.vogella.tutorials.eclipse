@@ -1,6 +1,6 @@
 
 
-	<title>Calling commands directly via code
+== Calling commands directly via code
 	 You can call a command directly. For example if you have a
 		command "add.command" defined you can call it via the following
 		coding.

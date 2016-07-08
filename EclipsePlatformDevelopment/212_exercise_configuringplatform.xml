@@ -1,6 +1,6 @@
 
-	<title>Exercise: Install required plug-ins and configure your workspace
-[[platform_installtools_installationfile">
+== Exercise: Install required plug-ins and configure your workspace
+
 === Exercise: Install additional plug-ins via install file
 		
 			The Eclipse Platform UI team provides a file describing all the plugins typically needed for platform
@@ -15,7 +15,7 @@
 		
 	
 
-[[platform_repo_errorfixing_apibaseline">
+
 === Configure API baseline
 		
 			Eclipse projects frequently needs to ensure that they do not break
@@ -101,7 +101,7 @@ image::apibaseline10.png[Setting up the API baseline,pdfwidth=60%]
 		
 			Enter a name for this baseline, select the folder which contains the
 			latest official Eclipse release and press the
-			<guibutton>Reset</guibutton>
+			_Reset_
 			button to use this installation as baseline.
 		
 
@@ -119,7 +119,7 @@ image::apibaseline20.png[Setting up the API baseline,pdfwidth=60%]
 			.
 		
 	
-[[platform_repo_errorfixing_closingprojects">
+
 === Closing projects
 		
 			Sometimes a plug-in give you error messages, which you can't solve. For example, if the plug-in is
@@ -132,7 +132,7 @@ image::apibaseline20.png[Setting up the API baseline,pdfwidth=60%]
 			from the context menu. This will make the Eclipse IDE ignore this plug-in in your workspace.
 		
 	
-[[platform_repo_setupofotherprojects">
+
 === Setup for other Eclipse projects
 		
 			If you planning to contribute to another Eclipse project, please have a look at their contribution guide. This guide

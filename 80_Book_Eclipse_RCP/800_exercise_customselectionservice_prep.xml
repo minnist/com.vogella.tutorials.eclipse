@@ -1,6 +1,6 @@
 <chapter id="exercise_customselectionservicepre">
-	<title>Optional exercise: Using the selection service
-[[exercise_customselectionservice1">
+== Optional exercise: Using the selection service
+
 === Create project and use the Eclipse selection service
 		<note>
 			This exercise is optional.
@@ -12,7 +12,7 @@
 		
 		
 			Add another part to your application pointing to the
-			<code>ListenerPart</code>
+			`ListenerPart`
 			class, which should look similar to the following listing.
 		
 		
@@ -23,7 +23,7 @@
 		
 		
 			Adjust your
-			<code>SamplePart</code>
+			`SamplePart`
 			to send out the selection.
 		
 		
@@ -36,7 +36,7 @@
 			part is propagated to the second part.
 		
 	
-[[exercise_customselectionservice2">
+
 === Understand Eclipse selection service
 		The Eclipse selection service sets the selection for the current
 			window. Verify that by adding a new perspective your
@@ -44,10 +44,7 @@
 		
 		
 image::CustomSelectionService_twoPerspectives10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Two perspectives,pdfwidth=60%]
+						scale="40[Two perspectives,pdfwidth=60%]
 		
 		Set the selection and switch between these perspectives with
 			following handler.
@@ -62,7 +59,7 @@ image::CustomSelectionService_twoPerspectives10.png"
 
 		
 			Verify that the selection in both parts based on
-			<code>ListenerPart</code>
+			`ListenerPart`
 			is the same.
 		
 

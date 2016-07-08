@@ -1,7 +1,7 @@
-[[rebaseexercise]]
+
 == Rebase
 
-[[rebaseexercise_ontonanotherbranc]]
+
 === Rebasing a branch onto another
 
 Now do a rebase of the conflicting commit instead of a merge.
@@ -51,12 +51,12 @@ You may hide or show the additional references such as `ORIG_HEAD`	and	`FETCH_HE
 image::show-additional-refs.png[Show Additional Refs,400,400]
 ====
 
-[[rebase_interactiverebase_edit]]
+
 === Using interactive rebase to edit the commit message
 		
 Reword on of your commit messages via a right-click on it in the _History_ view and select menu:Modify[Reword]to change the commit message.
 
-[[rebase_interactiverebase_squash]]
+
 === Squash two commits
 
 Do another commit by adding a comment in the code to your last change. Commit this change via a new commit.
@@ -67,7 +67,7 @@ You can squash several commits by selecting them in the _History_ view and by us
 
 image::rebase_interactive_squaschcommits10.png[Squash a commit,400,400]
 		
-[[rebase_interactiverebase_remove]]
+
 === Remove a commit
 		
 Do two more commits, A followed by B. 

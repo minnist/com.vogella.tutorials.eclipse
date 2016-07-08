@@ -1,4 +1,4 @@
-[[buildship_projectcreation]]
+
 == Create a new Gradle project
 
 The Eclipse Gradle tooling provides  a  wizard for the creation of  Java based Gradle projects.

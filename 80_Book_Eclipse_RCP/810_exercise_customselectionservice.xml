@@ -1,6 +1,6 @@
 <chapter id="exercise_customselectionservice">
-	<title>Exercise: Development a custom selection service
-[[exercise_customselectionservice3">
+== Exercise: Development a custom selection service
+
 === Develop custom selection service
 		<note>
 			
@@ -26,7 +26,7 @@
 			</programlisting>
 		
 	
-[[exercise_customselectionservice4">
+
 === Create the context function implementation
 
 		Create the following class which will be used as context
@@ -40,7 +40,7 @@
 		
 	
 
-[[exercise_customselectionservice5">
+
 === Register the context function via a model add-on
 		Define the following class. 
 		
@@ -56,13 +56,10 @@
 		
 		
 image::customselection_serviceaddon.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating an add-on,pdfwidth=60%]
+						scale="40[Creating an add-on,pdfwidth=60%]
 		
 	
-[[exercise_customselectionservice6">
+
 === Update your parts to use the new selection service
 		Adjust your parts, so that they use the new service.
 		
@@ -73,7 +70,7 @@ image::customselection_serviceaddon.png"
 		
 		
 			Adjust your
-			<code>SamplePart</code>
+			`SamplePart`
 			to send out the selection.
 		
 		

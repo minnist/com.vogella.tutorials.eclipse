@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Using services via declarative services
+== Tutorial: Using services via declarative services
 	 Of course you can also define the consumption of services via
 		DS.
 	
@@ -24,7 +24,7 @@
 	
 	
 		Create the
-		<filename>OSGI-INF</filename>
+		_OSGI-INF_
 		folder and create a new
 		_Component Definition_
 		in this folder.
@@ -54,11 +54,11 @@
 
 	
 		Make the relationship to the
-		<code>bind()</code>
+		`bind()`
 		and
-		<code>bind()</code>
+		`bind()`
 		method by selecting your entry can by pressing the
-		<guibutton>Edit</guibutton>
+		_Edit_
 		button.
 	
 

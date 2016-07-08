@@ -1,13 +1,13 @@
-[[exercisetychoproduct]]
+
 == Exercise: Tycho build for products
 
-[[exercisetychoproduct_target]]
+
 === Target of this exercise
 		
 The following exercise demonstrates how to build Eclipse products with Maven Tycho.
 It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
 
-[[exercisetychoproduct_product]]
+
 === Creating a plug-in and the product project
 		
 Use the menu:File[New > Other...>Plug-in Development>Plug-in Project] menu entry and create a plug-in in the _bundles_ folder. 
@@ -23,14 +23,14 @@ Move your .product file from the com.vogella.tycho.rcp file into this new projec
 
 image::tycho_productsetup10.png[Tycho product setup]		
 
-[[exercisetychoproduct_enterid]]
+
 === Enter ID in the product
 		
 To build your product with Tycho, you need to enter the ID on the product configuration file.
 		
 image::tycho_productid10.png[Entering the product ID in the product configuration file]
 
-[[exercisetychoproduct_createpomfile]]
+
 === Create poms
 		
 You do not need to create a pom file for your `com.vogella.tycho.rcp` plug-in as the default pom is sufficient.
@@ -42,7 +42,7 @@ Default pom for products are not yet supported (see https://bugs.eclipse.org/bug
 include::res/rcp/pom.xml[]     
 ----
 
-[[exercisetychoproduct_switchtofeatures]]
+
 === Change product to use features
 
 Change your product configuration file to be based on features.
@@ -51,7 +51,7 @@ image::tycho_productid20.png[Switch product to features]
 
 image::tycho_productid30.png[Switch product to features]
 
-[[exercisetychoproduct_feature]]
+
 === Enable separate update of the custom feature
 		
 Open the product file and add `installMode="root"`for the feature. 
@@ -62,7 +62,7 @@ This allows to update the feature separately.
 include::res/rcp/com.vogella.tycho.rcp.product[]     
 ----	
 		
-[[exercisetychoproduct_startlevel]]		
+
 === Enter start-level in the product
 
 To ensure that your product can be executed after the build, set the start levels and the auto-start flag for important plug-ins.
@@ -73,7 +73,7 @@ You can do this via the product configuration file on the _Configuration_ tab.
 include::res/rcp/startlevel.txt[]     
 ----    
 
-[[exercise_rcp_updatereleng]]
+
 === Update releng pom
 
 [source,xml]
@@ -83,7 +83,7 @@ include::res/rcp/relengpom.xml[]
 
 <1> Add the project with the product configuration to the build
 
-[[exercise_rcp_updatebundles]]
+
 === Update bundles pom to include the new rcp plug-in
 
 [source,xml]
@@ -93,7 +93,7 @@ include::res/exercise/rcp/bundlespomrcp.xml[]
 
 <1> Adds the rcp plug-in to the bundles build
 
-[[plugin_aggregatorproduct]]
+
 === Validate setup
 
 Run the build and after the build you find zip and extracted versions of your product in the target/products folder.

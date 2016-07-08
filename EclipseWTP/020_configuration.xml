@@ -1,6 +1,6 @@
 
-	<title>Web server configuration in Eclipse
-[[webserver_configuration_runtime">
+== Web server configuration in Eclipse
+
 === Setting up runtime environments
 		
 			To configure Eclipse WTP, select from the menu
@@ -38,7 +38,7 @@ image::WTPConfig30.png" />
 		
 		
 			Press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			and afterwards OK.
 		
 		You are now ready to use Tomcat
@@ -46,7 +46,7 @@ image::WTPConfig30.png" />
 		
 	
 
-[[webserver_configuration_starting">
+
 === Starting a web server
 		
 			Once you have configure a local Tomcat server the

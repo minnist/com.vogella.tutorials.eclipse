@@ -1,25 +1,25 @@
 <chapter id="tutorial_wizard">
-	<title>Exercise: Create a wizard
-[[tutorial_wizard1">
+== Exercise: Create a wizard
+
 === Create classes for the wizard
 		
 			In this exercise you create a wizard in your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in which allows you to create a new Todo item.
 			This exercise
 			demonstrates how you can reuse your part implementation in a wizard.
 		
 		
 			Create the
-			<code>com.example.e4.rcp.todo.wizards</code>
+			`com.example.e4.rcp.todo.wizards`
 			package in your application plug-in.
 		
 		
 			Create the following
-			<code>TodoWizardPage1</code>
+			`TodoWizardPage1`
 			class which is your first wizard page. This page
 			reuses the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			for defining the user interface.
 		
 
@@ -32,7 +32,7 @@
 		<note>
 			
 				As you create this instance of the
-				<code>TodoDetailsPart</code>
+				`TodoDetailsPart`
 				class, there is no automatic dependency injection performed by the
 				framework. Therefore the above code calls the methods directly to
 				construct the user interface.
@@ -51,7 +51,7 @@
 				You will get a temporary compile error once you get this class
 				because it uses
 				the
-				<code>TodoWizard</code>
+				`TodoWizard`
 				class which you create in the next step.
 			
 		</warning>
@@ -64,13 +64,13 @@
 
 		
 			Create the
-			<code>TodoWizard</code>
+			`TodoWizard`
 			class which extends the
-			<code>Wizard</code>
+			`Wizard`
 			class and add
-			<code>TodoWizardPage1</code>
+			`TodoWizardPage1`
 			and
-			<code>TodoWizardPage2</code>
+			`TodoWizardPage2`
 			as pages to it.
 		
 
@@ -83,22 +83,22 @@
 
 	
 
-[[tutorial_wizard2">
+
 === Adjust part
 		
 			To capture the changes in the user interface in your
-			<code>Todo</code>
+			`Todo`
 			object you need to extend your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class.
 		
 		
 			Add a
-			<code>ModifyListener</code>
+			`ModifyListener`
 			to your text fields in your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class and write the content of the text fields back to the
-			<code>Todo</code>
+			`Todo`
 			object if the text fields are modified.
 		
 
@@ -114,20 +114,20 @@
 				You could also add similar listeners to your
 				check button
 				and
-				<code>DateTime</code>
+				`DateTime`
 				widget to write changes in these widgets back to the
-				<code>Todo</code>
+				`Todo`
 				object. We skip this step here because in
 				<xref linkend="databindingpart" />
 				you learn an easier way to do this.
 			
 		</note>
 	
-[[tutorial_wizard3">
+
 === Adjust handler implementation
 		
 			Call the wizard from your
-			<code>NewTodoHandler</code>
+			`NewTodoHandler`
 			class, which you already added to the menu in an earlier exercise.
 		
 
@@ -139,14 +139,14 @@
 
 		
 	
-[[tutorial_wizard4">
+
 === Validating
 		
 			Validate that you can create new Todo objects via your wizard. Start
 			your
 			application
 			and create a new
-			<code>Todo</code>
+			`Todo`
 			via the
 			wizard.
 		

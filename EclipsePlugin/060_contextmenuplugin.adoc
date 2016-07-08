@@ -1,7 +1,7 @@
-[[contribute]]
+
 == Contribute a menu to existing Part
 
-[[contribute_overview]]
+
 === Overview
 
 In this example we will add a new context menu entry to the _Package Explorer_ part.
@@ -12,7 +12,7 @@ To contribute to an existing menu or toolbar, you need to know the corresponding
 This ID can be found via the _Menu Spy_.
 To start the Menu Spy use ALT + Shift + F2 and click on the menu entry you are interested in.
 
-[[contribute_packageexplorer]]
+
 === Contribute to the Package Explorer
 Create a new plug-in project called _de.vogella.plugin.htmlconverter_.
 Do not use a template.
@@ -53,7 +53,7 @@ If you start this plug-in, you should be able to create HTML output from a Java 
 
 image::html40.png[]
 
-[[contextmenu_restrict]]
+
 === Restrict the extension - Visible When
 
 Currently our context menu is displayed all the time.

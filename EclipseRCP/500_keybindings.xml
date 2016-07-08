@@ -1,16 +1,10 @@
 
-	<title>Key bindings
-[[keybindings_overview">
+== Key bindings
+
 === Using key bindings in your application
-		<indexterm>
-			<primary>Key bindings</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Binding context</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Binding table</primary>
-		</indexterm>
+		
+		
+		
 		
 			It is also possible to define key bindings (shortcuts) for
 			your
@@ -52,14 +46,14 @@
 				is used for
 				keybindings while the Eclipse context
 				(
-				<code>IEclipseContext</code>
+				`IEclipseContext`
 				)
 				is used as source for dependency injection.
 			
 		</warning>
 	
 
-[[keybindings_bindingcontext">
+
 === JFace default values for binding contexts
 		
 			The
@@ -82,7 +76,7 @@
 			IDs to identify binding contexts. These
 			IDs are
 			based on the
-			<code>org.eclipse.jface.contexts.IContextIds</code>
+			`org.eclipse.jface.contexts.IContextIds`
 			class. JFace
 			distinguishes between shortcuts for dialogs, windows or
 			both.
@@ -154,7 +148,7 @@
 	
 
 
-[[keybindings_entries">
+
 === Define Shortcuts
 		
 			The
@@ -176,10 +170,7 @@
 			associated with this shortcut.
 		
 		
-image::keybindings20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>How to add the BindingContext Entries,pdfwidth=60%]
+image::keybindings20.png" scale="30[How to add the BindingContext Entries,pdfwidth=60%]
 		
 		The control keys are different for each platform, e.g.,
 			on the
@@ -231,27 +222,25 @@ image::keybindings20.png" scale="30" />
 
 		
 			These values are defined in the
-			<code>SWTKeyLookup</code>
+			`SWTKeyLookup`
 			class.
 		
 	
 
 
-[[keybindings_validbindings">
+
 === Activate bindings
 		<indexterm>
 			<primary>Key bindings</primary>
 			<secondary>Activate</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>EContextService</primary>
-		</indexterm>
+		
 		
 			If there are several valid key bindings defined, the
-			<code>ContextSet</code>
+			`ContextSet`
 			class
 			is responsible for activating one of them by default.
-			<code>ContextSet</code>
+			`ContextSet`
 			uses the
 			binding context
 			hierarchy to determine the lookup order. A
@@ -272,17 +261,17 @@ image::keybindings20.png" scale="30" />
 		
 		
 			You can also use the
-			<code>EContextService</code>
+			`EContextService`
 			service which allows you to explicitly activate and deactivate a
 			binding context
 			via the
-			<code>activateContext()</code>
+			`activateContext()`
 			and
-			<code>deactivateContext()</code>
+			`deactivateContext()`
 			methods.
 		
 	
-[[keybindings_partbindings">
+
 === Key bindings for a part
 		<indexterm>
 			<primary>Key bindings</primary>
@@ -296,10 +285,7 @@ image::keybindings20.png" scale="30" />
 		
 		
 image::bindingcontextview10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>BindingContent defined specific for a part,pdfwidth=60%]
+						scale="40[BindingContent defined specific for a part,pdfwidth=60%]
 		
 		Key bindings assigned to a part are valid in addition to the key
 			bindings provided by the

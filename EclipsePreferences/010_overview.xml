@@ -1,10 +1,8 @@
 
-	<title>Eclipse Preference basics
-[[preferences_overview">
+== Eclipse Preference basics
+
 === Preferences and scopes
-		<indexterm>
-			<primary>Preferences</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Preferences</primary>
 			<secondary>Instance scope</secondary>
@@ -43,9 +41,9 @@
 
 		
 			The preference support in Eclipse is based on the
-			<code>Preferences</code>
+			`Preferences`
 			class from the
-			<code>org.osgi.service.prefs</code>
+			`org.osgi.service.prefs`
 			package. Eclipse
 			preferences
 			are
@@ -122,7 +120,7 @@
 								Similar to the default scope, these values are not written to disk.
 								They are read from a
 								file, typically named
-								<filename>preferences.ini</filename>
+								_preferences.ini_
 								.
 							</entry>
 						</row>
@@ -131,16 +129,16 @@
 			</table>
 		
 	
-[[preferences_stores">
+
 === Storage of the preferences
 		
 			Eclipse stores the preferences in the workspace of your
 			application in
 			the
-			<filename>.metadata/.plugins/org.eclipse.core.runtime/.settings/
-			</filename>
+			_.metadata/.plugins/org.eclipse.core.runtime/.settings/
+			_
 			directory in the
-			<filename><![CDATA[<nodePath>.prefs]]></filename>
+			_<![CDATA[<nodePath>.prefs]]>_
 			file.
 		
 		
@@ -163,38 +161,38 @@
 			parameter setting.
 		
 	
-[[preferences_api">
+
 === Eclipse preference API
 		
 			You can create and manipulate preferences directly via
 			Singletons
 			provided by the Eclipse runtime. You have the
-			<code>InstanceScope</code>
+			`InstanceScope`
 			,
-			<code>ConfigurationScope</code>
+			`ConfigurationScope`
 			and
-			<code>DefaultScope</code>
+			`DefaultScope`
 			classes which give access to the corresponding instance via the
-			<code>INSTANCE</code>
+			`INSTANCE`
 			field.
 		
 
 		
 			Preference values are read and saved by
-			<code>get()</code>
+			`get()`
 			and
-			<code>put()</code>
+			`put()`
 			methods. In the
-			<code>get()</code>
+			`get()`
 			method you specify a default value in case the key can not be
 			found.
 			The
-			<code>clear()</code>
+			`clear()`
 			method removes all preferences and the
-			<code>remove()</code>
+			`remove()`
 			method allows you
 			to delete a selected preference value. Via the
-			<code>flush()</code>
+			`flush()`
 			method you persist the preferences to the file system.
 		
 

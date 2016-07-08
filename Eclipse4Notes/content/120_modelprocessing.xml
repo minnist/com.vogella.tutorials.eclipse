@@ -1,8 +1,8 @@
 
-	<title>Model processing
+== Model processing
 	
 		The
-		<code>ModelAssembler</code> class
+		`ModelAssembler` class
 		processes the model fragments and processors in its methods.
 	
 

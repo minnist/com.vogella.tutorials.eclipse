@@ -1,6 +1,6 @@
 
 
-	<title>Setting preferences via plugin_customization.ini
+== Setting preferences via plugin_customization.ini
 
 	<indexterm>
 		<primary>Preferences</primary>
@@ -11,7 +11,7 @@
 		can use a file to set the default values of preferences. The file
 		which
 		contains these defaults is typically named
-		<filename>plugin_customization.ini</filename>
+		_plugin_customization.ini_
 		.
 	
 	
@@ -20,7 +20,7 @@
 		be registered via the
 		<parameter>preferenceCustomization</parameter>
 		property on the product extension point in the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. This is demonstrated in the following screenshot.
 	
 	
@@ -38,7 +38,7 @@
 	
 
 		The format to use is
-		<code><![CDATA[<plugin id>/<setting>=<value>]]></code>
+		`<![CDATA[<plugin id>/<setting>=<value>]]>`
 		,
 		e.g.
 		<parameter>com.example.e4.rcp.todo/user=vogella</parameter>
@@ -49,12 +49,12 @@
 			To find the correct keys, just start your Eclipse application,
 			switch
 			to the
-			<filename>.metadata</filename>
+			_.metadata_
 			directory in your workspace directory (by
 			default the directory your
 			application is starting in) and search for
 			files ending with
-			<filename>.pref</filename>
+			_.pref_
 			.
 		
 	</tip>

@@ -1,14 +1,14 @@
 
-	<title>Information about the e4 tools
+== Information about the e4 tools
 
-[[e4tools_interview">
+
 === e4 tools and committer
 		The e4 tools project provides tools for developing Eclipse 4
 			based applications. The following follows more or less the same
 			guidelines as the Eclipse platform team.
 		
 	
-[[e4tools_git">
+
 === Git repository for the e4 tools
 		
 			The e4 tools are also available via their Git repository.
@@ -20,28 +20,28 @@
 			</programlisting>
 		
 	
-[[e4tools_infos">
+
 === Infos about the e4 tools
 		
 			Most e4 tools project contain a
-			<filename>README.md</filename>
+			_README.md_
 			file which describes their usage and important classes.
 		
 	
 
-[[e4tools_editor">
+
 === Adding an editor for a custom model elements
 		
 			The
-			<code>org.eclipse.e4.tools.emf.ui</code>
+			`org.eclipse.e4.tools.emf.ui`
 			plug-in defines the
-			<code>org.eclipse.e4.tools.emf.ui.editors</code>
+			`org.eclipse.e4.tools.emf.ui.editors`
 			extension point, which allows registering editors for new model
 			elements.
 		
 	
 
-[[e4toolsbuild">
+
 === Building the e4 tools
 		
 			You can build

@@ -1,6 +1,6 @@
 
-	<title>Microsoft Excel with Eclipse
-[[oleexcel_project">
+== Microsoft Excel with Eclipse
+
 === Create Project
 		
 			Create a new project "ExcelTest". See 
@@ -11,7 +11,7 @@
 			template. Run it and see that is working.
 		
 	
-[[oleexcel_view">
+
 === Change View code
 		 Select View.java and replace the code with the following.
 		

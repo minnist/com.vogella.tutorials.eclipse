@@ -163,7 +163,7 @@
 		<chapter>
 	=== Deployment of your RCP application
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/020_deployment.adoc[]
-		[[deployproduct_targetplatform">
+		
 		=== More about the target platform
 				
 					See
@@ -595,7 +595,7 @@
 	=== Eclipse platform services
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/010_overview.adoc[]
 
-		[[platformservice_implementation_references">
+		
 		=== How are Eclipse services implemented?
 				
 					How context functions are implemented as OSGI services is described
@@ -638,7 +638,7 @@
 	=== Implementing editors
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/310_partservicespersists.adoc[]
 
-		[[chapter_editorsexamples">
+		
 		=== Code examples for editor implementations
 				
 					How to implement editor like behavior in a part is demonstrated in

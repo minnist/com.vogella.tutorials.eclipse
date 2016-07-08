@@ -1,6 +1,6 @@
 
-	<title>Appendix: Cloning from the Git server and adjusting the push URL
-[[eclipsegerritcontribution_adjustpush1">
+== Appendix: Cloning from the Git server and adjusting the push URL
+
 === Overview
 		
 			If you cloned an Eclipse Git repository directly from the Eclipse Git
@@ -59,7 +59,7 @@ image::eclipse_gerrithttps10.png[Gerrit push configuration,pdfwidth=60%]
 		
 
 	
-[[eclipsegerritcontribution_pushconfig">
+
 === Gerrit push configuration
 		
 			The Gerrit server requires that you push using a predefined
@@ -91,7 +91,7 @@ image::eclipse_gerrithttps10.png[Gerrit push configuration,pdfwidth=60%]
 			the repositories configured for
 			Gerrit are
 			highlighted. The
-			<code>eclipse.jdt</code>
+			`eclipse.jdt`
 			repository in this screenshot is not configured for Gerrit.
 
 		
@@ -134,10 +134,7 @@ image::eclipsegerritcontribution12.png[Gerrit Eclipse configuration,pdfwidth=60%
 			view.
 		
 		
-image::eclipsegerritcontribution13.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Gerrit Eclipse configuration,pdfwidth=60%]
+image::eclipsegerritcontribution13.png" scale="30[Gerrit Eclipse configuration,pdfwidth=60%]
 		
 
 

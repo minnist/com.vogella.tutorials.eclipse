@@ -1,7 +1,7 @@
-[[tycho_unittesting]]
+
 == Executing plug-in unit tests with Tycho
 
-[[tycho_unittestingoverview]]
+
 === Using the Tycho Surfire plug-in for execution plug-in tests
 
 In Eclipse it is common practice to have a separate test plug-in or fragment project for your tests.
@@ -99,7 +99,7 @@ If you define a dependency you include also their transitive dependencies, to th
 </project>
 ----
 
-[[tycho_unittesting_testselection]]
+
 === Test selection
 		
 Similar to the Maven Surfire plug-in, Tycho Surfile selects, by default, all test classes matching the _**/Test*.java_, _**/*Test.java_ and _**/*TestCase.java_ for the test run.
@@ -159,7 +159,7 @@ This requires setting the `TestSuite` to the Bundle-Symbolic-Name of the plug-in
 </build>
 ----
 
-[[tycho_unittesting_javaversion]]
+
 === Using the correct JRE for the test execution
 
 		

@@ -1,5 +1,5 @@
 
-	<title>Introduction to commands
+== Introduction to commands
 	Eclipse IDE extensions use the commands framework to
 		contribute
 		actions to the user interface. This concept is based on

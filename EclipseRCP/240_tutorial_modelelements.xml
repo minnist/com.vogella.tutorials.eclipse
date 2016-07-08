@@ -1,6 +1,6 @@
 
-	<title>Exercise: Modeling a User Interface
-[[tutorial_modelelements1">
+== Exercise: Modeling a User Interface
+
 === Desired user interface
 		
 			In the following exercises you create the basis of the application user interface. At the end of this exercise
@@ -10,17 +10,14 @@
 			similar to the following screenshot.
 		
 		
-image::tutorial_model50.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Screenshot of the application,pdfwidth=60%]
+image::tutorial_model50.png" scale="50[Screenshot of the application,pdfwidth=60%]
 		
 	
-[[tutorial_modelelements_openeditor">
+
 === Open the Application.e4xmi file
 		
 			Open the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file in
 			the
 			_Eclipse 4 model editor_
@@ -34,7 +31,7 @@ image::tutorial_model50.png" scale="50" />
 			.
 		
 	
-[[tutorial_modelelements_perspective">
+
 === Add a perspective
 		
 			Add a perspective stack with one perspective
@@ -46,7 +43,7 @@ image::tutorial_model50.png" scale="50" />
 		
 			Navigate to your
 			window inside the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file. Select the
 			_Controls_
 			node.
@@ -77,10 +74,7 @@ image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP applica
 			button.
 		
 		
-image::tutorial_model04.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a Perspective,pdfwidth=60%]
+image::tutorial_model04.png" scale="35[Adding a Perspective,pdfwidth=60%]
 		
 		
 			Enter the
@@ -101,7 +95,7 @@ image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application,pd
 		
 	
 
-[[tutorial_modelelements1a">
+
 === Add part sash and part stack containers
 		
 			Select
@@ -126,10 +120,7 @@ image::tutorial_model12.png[Add PartSashContainer,pdfwidth=60%]
 		
 
 		
-image::tutorial_model20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Change the orientation attribute,pdfwidth=60%]
+image::tutorial_model20.png" scale="30[Change the orientation attribute,pdfwidth=60%]
 		
 		
 			Add a
@@ -156,15 +147,12 @@ image::tutorial_model20.png" scale="30" />
 			following screenshot.
 		
 		
-image::tutorial_model30.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Application model structure,pdfwidth=60%]
+image::tutorial_model30.png" scale="60[Application model structure,pdfwidth=60%]
 		
 
 	
 
-[[tutorial_modelelements1b">
+
 === Create the parts
 		
 			Add a
@@ -173,7 +161,7 @@ image::tutorial_model30.png" scale="60" />
 			to each part stack. As ID for the parts
 			use the
 			prefix
-			<code>com.example.e4.rcp.todo.part</code>
+			`com.example.e4.rcp.todo.part`
 			and the suffix from the following table. Also put the label from the
 			table into the appropriate field of the part
 			editor.
@@ -216,14 +204,11 @@ image::tutorial_model30.png" scale="60" />
 			shows the detailed data of the overview part inside the detail pane of the application model editor.
 		
 		
-image::tutorial_model40.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Part data,pdfwidth=60%]
+image::tutorial_model40.png" scale="30[Part data,pdfwidth=60%]
 		
 
 	
-[[tutorial_modelelement_validate">
+
 === Validate the user interface
 		
 			Start your product and validate that the user interface looks as

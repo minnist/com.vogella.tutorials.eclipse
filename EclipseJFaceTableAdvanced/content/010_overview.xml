@@ -1,16 +1,16 @@
 
-	<title>JFace Table Features
-[[jfacetable_editor">
+== JFace Table Features
+
 === Column editing support
 		
 			To make a column in a table
 			editable, you need an object
 			of type
-			<code>EditingSupport</code>.
+			`EditingSupport`.
 		
 		
 			The following code shows an example of an
-			<code>EditingSupport</code>
+			`EditingSupport`
 			implementation.
 		
 		
@@ -21,21 +21,21 @@
 		
 		
 			The
-			<code>EditingSupport</code>
+			`EditingSupport`
 			implementation defines how the content can be changed.
 			The
-			<code>getCellEditor()</code>
+			`getCellEditor()`
 			method
 			returns an object of type
-			<code>CellEditor</code>.
+			`CellEditor`.
 			This object
 			creates the controls to change the data.
 		
 		
 			The
-			<code>canEdit()</code>
+			`canEdit()`
 			method defines if the cell can be edited. The
-			<code>getValue()</code>
+			`getValue()`
 			method receives the current object and returns the
 			value which should
 			be
@@ -43,9 +43,9 @@
 		
 		
 			The method
-			<code>setValue()</code>
+			`setValue()`
 			in
-			<code>EditingSupport</code>
+			`EditingSupport`
 			receives the changed value based on the user input. In this method
 			you assign the
 			value to your data object.
@@ -56,27 +56,27 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>TextCellEditor</code>
+						`TextCellEditor`
 					
 				</listitem>
 				<listitem>
 					
-						<code>ColorCellEditor</code>
+						`ColorCellEditor`
 					
 				</listitem>
 				<listitem>
 					
-						<code>CheckboxCellEditor</code>
+						`CheckboxCellEditor`
 					
 				</listitem>
 				<listitem>
 					
-						<code>DialogCellEditor</code>
+						`DialogCellEditor`
 					
 				</listitem>
 				<listitem>
 					
-						<code>ComboBoxViewerCellEditor</code>
+						`ComboBoxViewerCellEditor`
 					
 				</listitem>
 			</itemizedlist>
@@ -84,14 +84,14 @@
 
 		
 			You can assign the instance of
-			<code>EditingSupport</code>
+			`EditingSupport`
 			to your
-			<code>TableColumn</code>
+			`TableColumn`
 			via the
-			<code>setEditingSupport()</code>
+			`setEditingSupport()`
 			method
 			of your
-			<code>TableViewerColumn</code>
+			`TableViewerColumn`
 			object.
 		
 		
@@ -111,28 +111,28 @@
 		
 	
 
-[[jfacetable_filter">
+
 === Filtering data
 		
 			A JFace viewer supports filtering of data via the
-			<code>setFilters()</code>
+			`setFilters()`
 			or
-			<code>addFilter()</code>
+			`addFilter()`
 			methods. These methods expect
-			<code>ViewerFilter</code>
+			`ViewerFilter`
 			objects
 			as arguments.
 		
 		
 			For each registered
-			<code>ViewerFilter</code>
+			`ViewerFilter`
 			object
 			the
-			<code>select()</code>
+			`select()`
 			method is called. The method returns
-			<code>true</code>
+			`true`
 			if the data should be shown and
-			<code>false</code>
+			`false`
 			if it should be filtered.
 		
 		
@@ -147,28 +147,28 @@
 			viewer
 			changes, or
 			whenever its
-			<code>refresh()</code>
+			`refresh()`
 			method is called.
 		
 		
 			If more than one filter is defined for a
 			viewer,
 			all filters must
-			return <code>true</code>
+			return `true`
 			to display the
 			data.
 		
 	
 
-[[jfacetable_comparator">
+
 === Sorting data with ViewerComparator
 		
 			JFace supports sorting of the viewer content via the
-			<code>setComparator()</code>
+			`setComparator()`
 			method on the viewer object. This method expects a
-			<code>ViewerComparator</code>
+			`ViewerComparator`
 			object. By default, it will sort based on the
-			<code>toString()</code>
+			`toString()`
 			method of the objects in the viewer.
 		
 		
@@ -179,23 +179,23 @@
 		
 	
 
-[[jfacetable_tablecolumnlayout">
+
 === TableColumnLayout
 		
 			With the
-			<code>TableColumnLayout</code>
+			`TableColumnLayout`
 			class you can define the width of the columns in the table. This can
 			be done based on a fixed or percentage value.
 		
 		
 			Using
-			<code>TableColumnLayout</code>
+			`TableColumnLayout`
 			requires a
-			<code>Composite</code>
+			`Composite`
 			which only contains the table widget. This
-			<code>Composite</code>
+			`Composite`
 			gets the
-			<code>TableColumnLayout</code>
+			`TableColumnLayout`
 			assigned.
 		
 		
@@ -206,7 +206,7 @@
 		
 		
 			The
-			<code>TableColumnLayout</code>
+			`TableColumnLayout`
 			requires that you define a fixed or relative size for all columns.
 		
 		
@@ -217,20 +217,20 @@
 		
 	
 
-[[jfacetable_styledlabelprovider">
+
 === StyledCellLabelProvider and OwnerDrawLabelProvider
 		
 			It is possible to use a
-			<code>StyledCellLabelProvider</code>
+			`StyledCellLabelProvider`
 			for a very flexible styling of your text.
-			<code>StyledCellLabelProvider</code>
+			`StyledCellLabelProvider`
 			extends
-			<code>CellLabelProvider</code>
+			`CellLabelProvider`
 			and allows you to style the text which is displayed in the cell.
 		
 		
 			The following example shows how to use a
-			<code>StyledCellLabelProvider</code>.
+			`StyledCellLabelProvider`.
 			In this example a portion of a pre-defined text is highlighted.
 		
 
@@ -246,14 +246,11 @@
 		
 		
 image::styledcelllabelprovider10.png"
-						scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Screenshot of a styledLabelProvider,pdfwidth=60%]
+						scale="60[Screenshot of a styledLabelProvider,pdfwidth=60%]
 		
 		
 			The
-			<code>OwnerDrawLabelProvider</code>
+			`OwnerDrawLabelProvider`
 			class is a label provider that handles custom draws.
 		
 		
@@ -271,7 +268,7 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 		
 	
 
-[[jfacetable_hideshow">
+
 === Table column menu and hiding columns
 		
 			You can add a
@@ -296,7 +293,7 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 		
 	
 
-[[jfacetable_tooltips">
+
 === Tooltips for viewers
 		
 			You can
@@ -312,7 +309,7 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 		
 		
 			In your
-			<code>CellLabelProvider</code>
+			`CellLabelProvider`
 			you specify the related methods for displaying the tooltip.
 		
 		
@@ -323,12 +320,12 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 		
 	
 
-[[jfacetable_lazycontentprovider">
+
 === Virtual tables with LazyContentProvider
 		
 			If you have a huge number of lines which you want to display in the
 			table, you can use a
-			<code>LazyContentProvider</code>.
+			`LazyContentProvider`.
 			This provider allows you to fetch the data when they are needed
 			instead of loading everything into memory. As a result of the lazy
 			loading you gain a better memory footprint and improve the
@@ -350,7 +347,7 @@ image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
 		
 	
 
-[[jfacetable_alternativeimplementations">
+
 === Alternative table implementations
 		
 			It is possible to use other table implementations. Most notable is

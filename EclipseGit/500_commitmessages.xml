@@ -1,10 +1,8 @@
 
-	<title>Writing good commit messages
-[[commitmessages_content">
+== Writing good commit messages
+
 === Importance of Git commit messages
-		<indexterm>
-			<primary>Commit message</primary>
-		</indexterm>
+		
 		
 			A
 			_commit_
@@ -25,7 +23,7 @@
 			code changes.
 		
 	
-[[commitmessages_guideline">
+
 === Guidelines for useful commit messages
 		A commit message should have a header and a body. The header
 			should be less than 50 characters and the body should wrap its text
@@ -70,7 +68,7 @@
 			tracking system, e.g., 'Bug: 1234'.
 		
 	
-[[commitmessages_repo">
+
 === Example message
 		The following can serve as an example for a commit message.
 		
@@ -82,12 +80,12 @@
 		
 
 	
-[[commitmessages_history">
+
 === Good and bad example for a Git history
 
 		
 			The following listing shows the output of the
-			<code>git log --oneline</code>
+			`git log --oneline`
 			command of a Git repository
 			with
 			bad commit messages. The first value

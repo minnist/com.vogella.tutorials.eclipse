@@ -1,6 +1,6 @@
 
-	<title>Adding Eclipse 4.x parts and perspectives to 3.x based applications
-[[partialmigration_convertviews">
+== Adding Eclipse 4.x parts and perspectives to 3.x based applications
+
 === Adding Eclipse 4.x parts to Eclipse 3.x applications
 		As a reminder, the term POJO (Plan Old Java Object) is used to
 			describe a Java class without inheritance of a
@@ -8,7 +8,7 @@
 		
 		
 			As of the Eclipse 4.4 release you can also use a POJO in an extension for the
-			<code>org.eclipse.ui.views</code>
+			`org.eclipse.ui.views`
 			extension point. Use the
 			_e4view_
 			entry in the context menu of the extension to archive this.
@@ -21,13 +21,13 @@
 			toolbar to
 			your e4view, get
 			the
-			<code>MToolbar</code>
+			`MToolbar`
 			injected into its implementation and construct the entries in your source code.
 		
 
 	
 
-[[partialmigration_usingpartdescriptors">
+
 === Supporting part descriptors in an Eclipse 4.5 IDE
 		
 			The Eclipse 4.5 IDE release will support the
@@ -56,7 +56,7 @@
 
 	
 
-[[partialmigration_perspectives">
+
 === Adding perspectives to the Eclipse IDE via model snippets
 		
 		

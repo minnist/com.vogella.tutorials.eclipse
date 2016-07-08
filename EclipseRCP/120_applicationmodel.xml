@@ -1,14 +1,10 @@
 
-	<title>Eclipse 4 application model
-[[applicationmodel_overview">
-=== What is the application model?
-		<indexterm>
-			<primary>Application model</primary>
-		</indexterm>
+== Eclipse 4 application model
 
-		<indexterm>
-			<primary>Application.e4xmi</primary>
-		</indexterm>
+=== What is the application model?
+		
+
+		
 
 		
 			The Eclipse platform uses an abstract description, called the
@@ -102,7 +98,7 @@
 			as a
 			static file.
 			By default, it is called
-			<code>Application.e4xmi</code>
+			`Application.e4xmi`
 			and located in the main directory of the plug-in which
 			defines the
 			product extension.
@@ -125,22 +121,18 @@
 	
 
 
-[[runtime_uri">
+
 === Connecting model elements to classes and resources
 		<indexterm>
 			<primary>Class URI</primary>
 			<secondary>bundleclass://</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>bundleclass</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Class URI</primary>
 			<secondary>platform:/plugin/</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Class URI</primary>
-		</indexterm>
+		
 
 		
 			Model elements can point to a class or to a static resource via
@@ -204,7 +196,7 @@
 								is a fixed prefix,
 								BSN stands for Bundle-SymbolicName and is
 								defined in a configuration file called
-								<filename>MANIFEST.MF</filename>
+								_MANIFEST.MF_
 								file. The Bundle-SymbolicName is followed by a '/' and the fully
 								qualified classname.
 							
@@ -234,7 +226,7 @@
 								fixed prefix, followed by the
 								BSN stands for
 								Bundle-SymbolicName as defined in the
-								<filename>MANIFEST.MF</filename>
+								_MANIFEST.MF_
 								file, followed by the
 								path
 								to the file and the filename.
@@ -252,7 +244,7 @@
 			_Class URI_
 			attribute
 			which points to a Java class via the
-			<code>bundleclass://</code>
+			`bundleclass://`
 			URI.
 			This
 			class
@@ -277,10 +269,7 @@
 		
 
 		
-image::classuri10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::classuri10.png[,pdfwidth=60%]
 		
 		
 			An example for a static resource reference is the

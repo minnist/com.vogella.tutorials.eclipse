@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Translate plugin.xml
+== Tutorial: Translate plugin.xml
 
 	Create a new Eclipse RCP application "de.vogella.rcp.i18n" based
 		on the "RCP application with a view" template. Check the
@@ -10,7 +10,7 @@
 		to "View".
 	
 	
-		Right-click on the <filename>plugin.xml</filename> file and select
+		Right-click on the _plugin.xml_ file and select
 		menu:
 			<guimenu>PDE Tools</guimenu>
 			<guisubmenu>Externalize Strings</guisubmenu>
@@ -30,7 +30,7 @@
 		</programlisting>
 	
 
-	 Copy <filename>bundle.properties</filename> to "bundle_fr.properties" and
+	 Copy _bundle.properties_ to "bundle_fr.properties" and
 		"bundle_en.properties" Change the text in the property views for the
 		view.
 	

@@ -1,23 +1,23 @@
 <section id="recipes_wrapper" role="wrapper">
-	<title>Code receipts
+== Code receipts
 	
-[[recipes_loadimage">
+
 === Loading images from a plug-in
 		
 			The
-			<code>ImageDescriptor</code>
+			`ImageDescriptor`
 			class has a static method to
 			create an
-			<code>ImageDescriptor</code>
+			`ImageDescriptor`
 			instance
 			directly from a URL.
-			<code>ImageDescriptor</code>
+			`ImageDescriptor`
 			is a light-weight representation of an
-			<code>Image</code>
+			`Image`
 			. Via the
-			<code>createImage()</code>
+			`createImage()`
 			you can create the
-			<code>Image</code>
+			`Image`
 			instance.
 		
 		

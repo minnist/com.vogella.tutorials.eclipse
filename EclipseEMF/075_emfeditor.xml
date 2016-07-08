@@ -1,5 +1,5 @@
 
-	<title>Create EMF Editor plug-ins
+== Create EMF Editor plug-ins
 	
 		EMF can generate plug-ins which provide wizards for creating new
 		model
@@ -16,12 +16,12 @@
 		development please see
 		http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plugin Tutorial
 	
-[[emfeditor_generate">
+
 === Generating edit / editor code
 		
 			Eclipse EMF allow you to create a editor for your model. Select
 			your
-			<filename>.genmodel</filename>
+			_.genmodel_
 			file
 			, right-click on it and select
 			_Generate Edit
@@ -49,11 +49,11 @@ image::emfeditor10.gif" />
 			"de.vogella.emf.webpage.model.editor".
 		
 	
-[[emfeditor_run">
+
 === Run your plugins
 		
 			Select the
-			<code>*.editor</code>
+			`*.editor`
 			project and start a new Eclipse instance with your
 			new
 			plug-in via
@@ -66,7 +66,7 @@ image::emfeditor10.gif" />
 			This should start a new Eclipse runtime instance.
 		
 	
-[[emfeditor_createmodel">
+
 === Create your model
 		
 			In new Eclipse instance create a new project of type
@@ -75,7 +75,7 @@ image::emfeditor10.gif" />
 			_testing_
 			and a
 			folder called
-			<filename>website</filename>
+			_website_
 			.
 		
 		
@@ -118,7 +118,7 @@ image::EMFEditor50.gif" />
 			</mediaobject>
 		
 	
-[[emfeditor_editmodel">
+
 === Edit your model
 		You should now see a editor for your website.model.
 		

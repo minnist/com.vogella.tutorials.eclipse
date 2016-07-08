@@ -1,5 +1,5 @@
 
-	<title>Creating JavaDoc
+== Creating JavaDoc
 	 You can also generate Javadoc for your classes and methods. EMF
 		uses annotations for this with a certain property key. The easiest way
 		of adding this is again the diagram. Select a class and maintain the

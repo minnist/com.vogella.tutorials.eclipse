@@ -1,5 +1,5 @@
 
-	<title>Exercise - Add test dependencies
+== Exercise - Add test dependencies
 	
 		Popular test frameworks, like JUnit, Hamcrest, Mockito and others
 		can be obtained from different updatesites.

@@ -1,6 +1,6 @@
 
-	<title>Models and Eclipse EMF
-[[overview">
+== Models and Eclipse EMF
+
 === Data model
 		
 			A
@@ -19,11 +19,11 @@
 			domain model
 			with objects
 			like
-			<code>Person</code>
+			`Person`
 			,
-			<code>Flight</code>
+			`Flight`
 			,
-			<code>Booking</code>
+			`Booking`
 			etc. The EMF tooling allows you to create UML diagrams.
 		
 		
@@ -37,7 +37,7 @@
 			with almost no
 			logic
 			and a lot of properties, e.g., a
-			<code>Person</code>
+			`Person`
 			class
 			could have the
 			<property>firstName</property>
@@ -74,7 +74,7 @@
 		
 	
 
-[[emfoverview">
+
 === Eclipse Modeling Framework (EMF)
 		
 			The
@@ -116,7 +116,7 @@
 		
 	
 
-[[emfoverview_generate">
+
 === Generate data from an EMF model
 		
 			The information stored in the EMF models can be used to generate
@@ -144,25 +144,25 @@
 		
 	
 
-[[intro_emfmodel">
+
 === Meta models - Ecore and Genmodel
 		
 			The EMF meta-model consists
 			of
 			two parts; the
-			<filename>ecore</filename>
+			_ecore_
 			and the
-			<filename>genmodel</filename>
+			_genmodel_
 			description files.
 		
 		
 			The
-			<filename>ecore</filename>
+			_ecore_
 			file contains the
 			information about the defined
 			classes.
 			The
-			<filename>genmodel</filename>
+			_genmodel_
 			file contains
 			additional information for the
 			code
@@ -170,7 +170,7 @@
 			the
 			path
 			and file information. The
-			<filename>genmodel</filename>
+			_genmodel_
 			file
 			also contains
 			the control
@@ -179,11 +179,11 @@
 		
 	
 
-[[intro_ecore">
+
 === Ecore description file
 		
 			The
-			<filename>ecore</filename>
+			_ecore_
 			file
 			allows to define the following elements.
 		
@@ -191,21 +191,21 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>EClass</code>
+						`EClass`
 						: represents a class, with zero or more attributes and zero or
 						more references.
 					
 				</listitem>
 				<listitem>
 					
-						<code>EAttribute</code>
+						`EAttribute`
 						: represents an attribute which has a name and a
 						type.
 					
 				</listitem>
 				<listitem>
 					
-						<code>EReference</code>
+						`EReference`
 						: represents one end of an association between two classes. It has
 						flags to indicate if it represents a containment
 						and a reference
@@ -214,13 +214,13 @@
 				</listitem>
 				<listitem>
 					
-						<code>EDataType</code>
+						`EDataType`
 						: represents the type of an attribute, e.g.,
-						<code>int</code>
+						`int`
 						,
-						<code>float</code>
+						`float`
 						or
-						<code>java.util.Date</code>
+						`java.util.Date`
 					
 				</listitem>
 			</itemizedlist>
@@ -241,7 +241,7 @@
 			classes.
 		
 	
-[[intro_ecore">
+
 === Ecore description file
 		
 			You can create a graphical representation of an existing ecore model via the context menu of an .ecore file and by
@@ -251,10 +251,7 @@
 			.
 		
 		
-image::initialize-ecore-dialog.png" />
-				</imageobject>
-				<textobject>
-					<phrase>How to create an Ecore dialog from an existing ecore model
+image::initialize-ecore-dialog.png[How to create an Ecore dialog from an existing ecore model
 					,pdfwidth=60%]
 		
 

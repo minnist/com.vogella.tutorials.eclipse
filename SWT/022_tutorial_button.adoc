@@ -1,12 +1,12 @@
 
-	<title>Exercise: SWT Button
+== Exercise: SWT Button
 
 	
 		Add a
-		<code>Button</code>
+		`Button`
 		widget to your application
 		and assign a
-		<code>SelectionListener</code>
+		`SelectionListener`
 		to it. If the button is pressed, write "Called!" to the console.
 	
 	

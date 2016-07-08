@@ -1,6 +1,6 @@
 
-	<title>Local history for files
-[[localhistory_overview">
+== Local history for files
+
 === Local history
 		Eclipse keeps a local history of files which have changed.
 			Every time an editable file is saved, the Eclipse
@@ -14,7 +14,7 @@
 			changes or to compare against a previous version.
 		
 	
-[[localhistory_compare">
+
 === Compare files based on local history
 		
 			To compare the current version of a file with a local version stored
@@ -31,13 +31,10 @@
 			shows the differences as depicted in the following screenshot.
 		
 		
-image::localcompare10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Local compare view,pdfwidth=60%]
+image::localcompare10.png" scale="30[Local compare view,pdfwidth=60%]
 		
 	
-[[localhistory_replace">
+
 === Replace files based on local history
 		
 			You can replace files based on the local history. Right-click on

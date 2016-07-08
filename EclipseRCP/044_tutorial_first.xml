@@ -1,7 +1,7 @@
 
-	<title>Exercise: Wizard to create an RCP application
+== Exercise: Wizard to create an RCP application
 
-[[tutorial_e4wizard_target">
+
 === Target
 		
 			The following exercise demonstrates how to create an Eclipse RCP application based on a template.
@@ -13,7 +13,7 @@
 			chapters.
 		
 	
-[[tutorial_e4wizard_project">
+
 === Create project
 		
 			Select
@@ -32,7 +32,7 @@ image::wizard10.png" scale="35" />
 
 			Create a
 			project called
-			<code>com.example.e4.rcp.wizard</code>
+			`com.example.e4.rcp.wizard`
 			.
 			Use the settings similar to the following
 			screenshots, most of them are the default settings.
@@ -74,12 +74,8 @@ image::rcpwizard50.png" scale="35" />
 				</imageobject>
 			</mediaobject>
 		
-		<indexterm>
-			<primary>clearPersistedState</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Create sample content (parts, menu etc.)</primary>
-		</indexterm>
+		
+		
 
 		<note>
 			
@@ -97,7 +93,7 @@ image::rcpwizard50.png" scale="35" />
 		</note>
 	
 
-[[wizward_launch">
+
 === Launch your Eclipse application via the product file
 		
 			Open the generated
@@ -130,7 +126,7 @@ image::wizard52.png" />
 					<phrase>Starting the Eclipse 4 application,pdfwidth=60%]
 		
 	
-[[wizward_validate">
+
 === Validating
 
 		As a result your Eclipse application should start. The

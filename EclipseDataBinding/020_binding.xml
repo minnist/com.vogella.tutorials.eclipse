@@ -1,11 +1,11 @@
 
-	<title>Create bindings
-[[databinding_isideeffect">
+== Create bindings
+
 === Using the ISideEffect API 
 
 		
 			Eclipse 4.6 introduces the
-			<code>ISideEffect</code>
+			`ISideEffect`
 			databinding API. It allows you to run code whenever one or more
 			observables change. An ISideEffect is a lot like a
 			listener except
@@ -47,25 +47,23 @@
 
 
 	
-[[databinding_contexte">
+
 === Connecting properties with the DataBindingContext
-		<indexterm>
-			<primary>DataBindingContext</primary>
-		</indexterm>
+		
 		
 			The
-			<code>DataBindingContext</code>
+			`DataBindingContext`
 			class
 			provides the functionality to connect
-			<code>IObservableValue</code>
+			`IObservableValue`
 			objects.
 		
 
 		
 			Via the
-			<code>DataBindingContext.bindValue()</code>
+			`DataBindingContext.bindValue()`
 			method two
-			<code>IObservableValue</code>
+			`IObservableValue`
 			objects are connected. The first parameter is the target and the
 			second is the
 			model. During the initial binding the
@@ -75,10 +73,10 @@
 			initial
 			synchronization. For example if you have an
 			attribute of a
-			<code>Person</code>
+			`Person`
 			p
 			object and the text attribute of a
-			<code>Text</code>
+			`Text`
 			txtName widget, you typically want to copy the value from p to
 			txtName at the beginning.
 		
@@ -110,14 +108,14 @@
 
 	
 
-[[databinding_properties">
+
 === Observing map properties
 
 		
 			You can also observe entries of a map via an
-			<code>IObservableMap</code>
+			`IObservableMap`
 			with the
-			<code>Observables.observeMapEntry()</code>
+			`Observables.observeMapEntry()`
 			method. This allows you to control the point in time when you want to update or use the values from the map.
 		
 		

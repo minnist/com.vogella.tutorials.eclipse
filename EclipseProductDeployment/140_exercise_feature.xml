@@ -1,7 +1,7 @@
 
-	<title>Exercise: Export your product
+== Exercise: Export your product
 
-[[tutorial_exportproduct5">
+
 === Create a feature project for your generated RCP application
 
 		
@@ -12,10 +12,7 @@
 			. The following screenshot shows the first wizard page.
 		
 		
-image::createfeature10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a feature,pdfwidth=60%]
+image::createfeature10.png[Creating a feature,pdfwidth=60%]
 		
 		
 			Press
@@ -27,28 +24,25 @@ image::createfeature10.png" />
 		
 
 	
-[[tutorial_exportproduct_includeplugin">
+
 === Include your plug-in into the feature project
 		
 			Include the
-			<code>com.example.e4.rcp.wizard</code>
+			`com.example.e4.rcp.wizard`
 			plug-in into the new feature. For this open the
-			<filename>feature.xml</filename>
+			_feature.xml_
 			file, select the
 			_Plug-ins_
 			tab and press the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button.
 		
 
 		
-image::createfeature20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Include plug-in into a feature,pdfwidth=60%]
+image::createfeature20.png[Include plug-in into a feature,pdfwidth=60%]
 		
 	
-[[tutorial_exportproduct6">
+
 === Change the product configuration file to use features
 
 
@@ -63,13 +57,10 @@ image::createfeature20.png" />
 
 		
 		
-image::tuturiale4_featurewizard10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Switching to features in the product configuration file.,pdfwidth=60%]
+image::tuturiale4_featurewizard10.png[Switching to features in the product configuration file.,pdfwidth=60%]
 		
 	
-[[tutorial_exportproduct7">
+
 === Add the features as content to your product
 		
 			Switch to the
@@ -77,23 +68,20 @@ image::tuturiale4_featurewizard10.png" />
 			tab in your product editor. Add the
 			_com.example.e4.rcp.wizard.feature_
 			feature to your product with the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button.
 		
 		
 			Afterwards add the
-			<code>org.eclipse.e4.rcp</code>
+			`org.eclipse.e4.rcp`
 			feature and press the
-			<guibutton>Add Required</guibutton>
+			_Add Required_
 			button to add the dependencies of the
-			<code>org.eclipse.e4.rcp</code>
+			`org.eclipse.e4.rcp`
 			feature to the product.
 		
 		
-image::tuturiale4_featurewizard20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Switching to features in the product configuration file.,pdfwidth=60%]
+image::tuturiale4_featurewizard20.png[Switching to features in the product configuration file.,pdfwidth=60%]
 		
 		Ensure that you have the four
 			features from the screenshot included
@@ -104,7 +92,7 @@ image::tuturiale4_featurewizard20.png" />
 	
 
 
-[[tutorial_exportproduct8">
+
 === Start the application via the product
 		Start your application via the product configuration file and
 			ensure that the application starts correctly.

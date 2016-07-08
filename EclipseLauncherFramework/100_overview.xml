@@ -1,5 +1,5 @@
 
-	<title>Eclipse Launching Framework
+== Eclipse Launching Framework
 
 	
 		The Eclipse IDE supports launching of other programs. Launching in this context is
@@ -22,9 +22,9 @@
 	
 	
 		The
-		<code>org.eclipse.debug.core</code>
+		`org.eclipse.debug.core`
 		plug-in is responsible for of creating and persisting launch configurations on behalf of the configuration
 		type and
-		<code>org.eclipse.debug.ui</code>
+		`org.eclipse.debug.ui`
 		provides the base functionality to display and change an existing launch configuration.
 	

@@ -1,7 +1,7 @@
 
-	<title>Common launch problems
+== Common launch problems
 
-[[runconfiguration_problems2">
+
 === Checklist for common launch problems
 		
 			Errors in the run configurations of Eclipse RCP application
@@ -49,7 +49,7 @@
 									machine, e.g., a bundle may
 									require Java 1.6 and will therefore
 									not load in a Java 1.5 VM. Check the
-									<filename>MANIFEST.MF</filename>
+									_MANIFEST.MF_
 									file on the
 									_Overview_
 									tab in the
@@ -165,7 +165,7 @@
 								In Eclipse releases before 4.3 every
 								part
 								needed to implement a
-								<code>@Focus</code>
+								`@Focus`
 								method which places the focus on an SWT control. This error does
 								not occur anymore with Eclipse 4.3 or a higher release.
 							</entry>
@@ -177,13 +177,13 @@
 							<entry>
 								
 									Ensure that the
-									<code>HandlerProcessingAddon</code>
+									`HandlerProcessingAddon`
 									class in the package
-									<code>org.eclipse.e4.ui.internal.workbench.addons</code>
+									`org.eclipse.e4.ui.internal.workbench.addons`
 									is registered as model add-on. The bundle
 									symbolic
 									name is
-									<code>org.eclipse.e4.ui.workbench</code>
+									`org.eclipse.e4.ui.workbench`
 									.
 								
 							</entry>
@@ -199,10 +199,10 @@
 								Ensure that you have pressed the
 								_New..._
 								button in the product configuration file and selected the
-								<code>E4Application</code>
+								`E4Application`
 								as application to start. You can check the current setting in
 								your
-								<filename>plugin.xml</filename>
+								_plugin.xml_
 								file on the
 								_Extensions_
 								tab and in the details of the
@@ -216,7 +216,7 @@
 		
 	
 
-[[runconfiguration_mainproblem">
+
 === Finding missing plug-in dependencies during a product launch
 		
 		<indexterm>

@@ -3,7 +3,7 @@
 === Development
 This tutorial assumes that you are already familiar with http://www.vogella.com/tutorials/JavaIntroduction/article.html[standard Java development] and with the http://www.vogella.com/tutorials/Eclipse/article.html[Eclipse IDE].
 
-[[modelspyintroduction]]
+
 === Model spy
 
 See http://www.vogella.com/tutorials/Eclipse4LiveModelEditor/article.html[Eclipse Model Spy] to learn about the model spy.

@@ -1,19 +1,15 @@
 
-	<title>Part service and editor like behavior
+== Part service and editor like behavior
 
-[[selectedservices_partservice1">
+
 === What is the part service?
-		<indexterm>
-			<primary>Part service</primary>
-		</indexterm>
+		
 
 		<indexterm>
 			<primary>Perspective</primary>
 			<secondary>Switching with the part service</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>EPartService</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>Parts</primary>
 			<secondary>Creating at runtime</secondary>
@@ -38,17 +34,17 @@
 		
 	
 
-[[selectedservices_access">
+
 === How to access the part service
 		
 			Use dependency injection to get access to the part service. For
 			example via the
-			<code>@Inject EPartService partService;</code>
+			`@Inject EPartService partService;`
 			statement.
 		
 	
 
-[[selectedservices_partservice2">
+
 === Example: Showing and hiding parts
 		
 			The following example shows how you can find
@@ -60,9 +56,9 @@
 			part
 			was initially set
 			to
-			<code>false</code>
+			`false`
 			(not visible), you need to call the
-			<code>setVisible(true)</code>
+			`setVisible(true)`
 			method of the model element
 			to ensure that the
 			part
@@ -76,7 +72,7 @@
 			</programlisting>
 		
 	
-[[selectedservices_partservice4">
+
 === Example: Switching perspectives
 		
 			The following example shows how you can switch to another
@@ -91,11 +87,9 @@
 		
 	
 
-[[selectedservices_partdescriptors">
+
 === Using part descriptors
-		<indexterm>
-			<primary>Part descriptor</primary>
-		</indexterm>
+		
 		<indexterm>
 			<primary>PartDescriptor</primary>
 			<see>Part descriptor</see>
@@ -120,19 +114,16 @@
 			following screenshot.
 		
 		
-image::partdescripter_service10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a PartDescripter to the model,pdfwidth=60%]
+image::partdescripter_service10.png" scale="35[Adding a PartDescripter to the model,pdfwidth=60%]
 		
 	
 
-[[selectedservices_partservice5">
+
 === Example: Part descriptors and creating parts dynamically
 		
 			If you define a part descriptor 
 			in your application model, you can use the
-			<code>EPartService</code>
+			`EPartService`
 			to create a
 			part
 			from it.
@@ -146,10 +137,7 @@ image::partdescripter_service10.png" scale="35" />
 		
 		
 image::partdescripter_service10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a PartDescripter to the model,pdfwidth=60%]
+						scale="40[Adding a PartDescripter to the model,pdfwidth=60%]
 		
 		The part service allows you to create a new part based on this
 			template. This is demonstrated by the following example code.

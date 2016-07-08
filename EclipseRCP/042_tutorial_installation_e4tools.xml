@@ -1,6 +1,6 @@
 
-	<title>Install the e4 tools
-[[tutorial_installation_e4tools">
+== Install the e4 tools
+
 === Install the e4 tools
 		<indexterm>
 			<primary>Installation</primary>
@@ -24,10 +24,7 @@
 		
 
 		
-image::installe4tools10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Install the Eclipse 4 tooling,pdfwidth=60%]
+image::installe4tools10.png[Install the Eclipse 4 tooling,pdfwidth=60%]
 		
 
 		
@@ -39,12 +36,12 @@ image::installe4tools10.png" />
 
 	
 
-[[tutorial_installation_e4spiesofficial">
+
 === Install the e4 spies from Eclipse.org
 		
 			You can use the following URL to install the latest tools:
 		
-		<code>http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest/</code>
+		`http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest/`
 		
 			Other versions of the tools can can be
 			found on the
@@ -60,17 +57,11 @@ image::installe4tools10.png" />
 		
 
 		
-image::officialupdatesite10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Official update site for e4 tools part 1,pdfwidth=60%]
+image::officialupdatesite10.png[Official update site for e4 tools part 1,pdfwidth=60%]
 		
 
 		
-image::officialupdatesite20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Official update site for e4 tools part 2,pdfwidth=60%]
+image::officialupdatesite20.png" scale="30[Official update site for e4 tools part 2,pdfwidth=60%]
 		
 
 

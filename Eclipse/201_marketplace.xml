@@ -1,5 +1,5 @@
 
-	<title>Eclipse Marketplace
+== Eclipse Marketplace
 	<indexterm>
 		<primary>Update manager</primary>
 		<secondary>Eclipse Marketplace
@@ -71,7 +71,7 @@
 		You can use the
 		_Find_
 		box to search for components. Pressing the
-		<guibutton>Install</guibutton>
+		_Install_
 		button starts the
 		installation process.
 	

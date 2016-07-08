@@ -1,11 +1,11 @@
 
-	<title>Exercise: Extend the Eclipse application model
+== Exercise: Extend the Eclipse application model
 	
 		Create another model element called
 		_MyOwnPartStack_
 		with the
 		supertype
-		<code>PartStack</code>
+		`PartStack`
 		The finished model
 		should look like the
 		following.
@@ -27,21 +27,21 @@
 		</programlisting>
 	
 	
-[[renderer_factory">
+
 === Define your renderer and the renderer factory
 		
 			Create an
-			<filename class="directory">html</filename>
+			<filename class="directory">html_
 			folder in your
-			<code>com.vogella.e4.renderer.maps</code>
+			`com.vogella.e4.renderer.maps`
 			plug-in and create the following
-			<filename>map.html</filename>
+			_map.html_
 			file in it.
 		
 		<!--  TODO: map.html is not yet listed -->
 		
 			In the
-			<code>com.vogella.e4.renderer.maps</code>
+			`com.vogella.e4.renderer.maps`
 			plug-in
 			create the following class.
 		
@@ -52,8 +52,8 @@
 			</programlisting>
 		
 		
-			<code>MyMapRenderer</code>
-			will load <filename>map.html</filename> and display it.
+			`MyMapRenderer`
+			will load _map.html_ and display it.
 		
 		
 			Create the following factory

@@ -1,5 +1,5 @@
 
-	<title>Detached Head and Reflog
+== Detached Head and Reflog
 	Once you get used to git you appreciate that git does not throw away anything which is added to the
 		repository.
 		For example, if a commit is not reachable from any branch or reference, it is still there in the repository.
@@ -8,7 +8,7 @@
 	In this exercise you create such an unreferenced commit by committing with a detached head. There are other
 		scenarios where a commit gets lost, e.g. after an amend or a reset.
 	
-[[_detach_your_head">
+
 === Detach your head
 		A simple way to create a detached head is to check out a remote tracking branch. This is a common scenario.
 			You may want to test the state in the remote repository.
@@ -50,7 +50,7 @@
 			</inlinemediaobject>
 		
 	
-[[_loose_your_commit">
+
 === "Loose" your commit
 		The next morning you come back to your office and you urgently have to fix a bug. Checkout another branch.
 		
@@ -66,7 +66,7 @@
 			</inlinemediaobject>
 		
 	
-[[_find_it_again_in_the_reflog">
+
 === Find it again in the reflog
 		Git has not only kept the commit in the repository, it has even written a log entry that the HEAD had pointed
 			to it.

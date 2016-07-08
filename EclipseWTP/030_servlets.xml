@@ -1,6 +1,6 @@
 
-	<title>Exercise: Create and run a servlet
-[[servlets_target">
+== Exercise: Create and run a servlet
+
 === Target
 		In this exercise you create a servlet
 			which works as a webpage
@@ -13,7 +13,7 @@
 			file.
 		
 	
-[[servlets_project">
+
 === Create web project
 		
 			Create a
@@ -49,7 +49,7 @@ image::wtp_first_project30.png" />
 		
 		
 			Afterwards press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 		
@@ -62,7 +62,7 @@ image::wtp_first_project30.png" />
 			a
 			Java
 			web application. The
-			<filename class="directory">WEB-INF/lib</filename>
+			<filename class="directory">WEB-INF/lib_
 			directory holds all
 			the JAR files that the Java web
 			application
@@ -70,7 +70,7 @@ image::wtp_first_project30.png" />
 		
 	
 
-[[servlets_dao">
+
 === Creating Data Access Object
 		
 			Create a new package called
@@ -89,7 +89,7 @@ image::wtp_first_project30.png" />
 		
 	
 
-[[servlets_createservlet">
+
 === Creating the Servlet
 		
 			Create a servlet. Right-click on your project and select
@@ -112,11 +112,11 @@ image::wtp_first_project50.png" />
 			You could also create a servlet without the wizard. The wizard
 			creates a Java class
 			which extends the
-			<code>javax.servlet.http.HttpServlet</code>
+			`javax.servlet.http.HttpServlet`
 			and
 			adds the servlet
 			settings to the
-			<filename>web.xml</filename>
+			_web.xml_
 			file.
 		
 		Enter the following code.
@@ -133,7 +133,7 @@ image::wtp_first_project50.png" />
 		
 	
 
-[[servlets_runservlet">
+
 === Deployment of the servlet
 		
 			You application must be deployed to the server and started there.
@@ -166,11 +166,11 @@ image::wtp_first_project70.png" />
 		</note>
 		
 			Press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 	
-[[servlets_validatedeployment">
+
 === Validate the deployment
 		
 			If the deployment was successfully you should be able to

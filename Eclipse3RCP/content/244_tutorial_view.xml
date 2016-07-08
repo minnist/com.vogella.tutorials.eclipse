@@ -1,6 +1,6 @@
 
-	<title>Tutorial: Adding Views to your application
-[[viewtutorial_add">
+== Tutorial: Adding Views to your application
+
 === Create a view
 		 The
 			following will
@@ -11,7 +11,7 @@
 			"de.vogella.rcp.intro.first".
 		
 		 Add the extension "org.eclipse.ui.views" to your plugin. Select
-			"<filename>plugin.xml</filename> and the tab "Extentions".
+			"_plugin.xml_ and the tab "Extentions".
 			Right
 			mouse-click on your new
 			view extension and select
@@ -24,18 +24,12 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/addview80.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/addview80.gif[Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
 		
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/addview90.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Data for the "org.eclipse.ui.views" extension point</phrase>
+					<imagedata scale="60" fileref="images/addview90.png[Data for the "org.eclipse.ui.views" extension point</phrase>
 				</textobject>
 
 			</mediaobject>
@@ -54,7 +48,7 @@
 			</programlisting>
 		
 	
-[[viewtutorial_perspective">
+
 === Add the view to your perspective
 		
 			You have to add the view to your
@@ -63,10 +57,7 @@
 			"org.eclipse.ui.perspectiveExtensions" to your plugin.
 		
 		
-image::addview110.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a view to your perspective via the
+image::addview110.gif[Adding a view to your perspective via the
 						"org.eclipse.ui.perspectiveExtensions" extension,pdfwidth=60%]
 		
 		
@@ -91,25 +82,19 @@ image::addview110.gif" />
 			<property>0.95f</property>.
 		
 		
-image::addview130.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Maintaining the layout data for the view in the
-						<code>org.eclipse.ui.perspectiveExtensions</code> extension point,pdfwidth=60%]
+image::addview130.png[Maintaining the layout data for the view in the
+						`org.eclipse.ui.perspectiveExtensions` extension point,pdfwidth=60%]
 		
 	
-[[viewtutorial_result">
+
 === Result
 		Run your application to see the result.
 		
-image::addview200.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Running application with a new view,pdfwidth=60%]
+image::addview200.gif[Running application with a new view,pdfwidth=60%]
 		
 
 	
-[[viewtutorial_programmically">
+
 === Add view to perspective via code
 		 I personally prefer extension points over code. But instead of
 			using the extension

@@ -1,12 +1,12 @@
 
-	<title>Example
-[[example_project">
+== Example
+
 === Create Project
 		
 			Create the Java project called
 			_com.vogella.mat.first_
 			and the
-			<code>com.vogella.mat.first</code>
+			`com.vogella.mat.first`
 			package. Create the following class.
 		
 
@@ -17,7 +17,7 @@
 			</programlisting>
 		
 	
-[[example_run">
+
 === Run project and create heap dump
 		
 			In Eclipse add the
@@ -38,7 +38,7 @@ image::dumpparameter10.gif" scale="40"/>
 
 	
 
-[[example_analyse">
+
 === Use MAT to analyze the heap dump
 		Open the heap dump in MAT and get familiar with using the MAT tooling.
 		

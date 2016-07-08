@@ -1,13 +1,13 @@
 
-	<title>Exercise: Adding e4view based parts to 3.x based applications
-[[exercise_e4partextension_target">
+== Exercise: Adding e4view based parts to 3.x based applications
+
 === Target
 		In this exercise you create an Eclipse 3.x RCP application and add a POJO part to it based on the e4view element
 			available to contribute an extension point based view.
 		
 
 	
-[[exercise_e4partextension">
+
 === Using e4part and the org.eclipse.ui.views extension point
 		
 			Create an Eclipse 3.x RCP application based on the
@@ -29,7 +29,7 @@ image::eclipse3rcp_e4viewexample30.png[,pdfwidth=60%]
 		
 		
 			Add
-			<code>org.eclipse.e4.ui.di</code>
+			`org.eclipse.e4.ui.di`
 			as a dependency to the manifest of your new plug-in.
 		
 
@@ -45,12 +45,12 @@ image::eclipse3rcp_e4viewexample30.png[,pdfwidth=60%]
 			Afterwards add an
 			_e4view_
 			extension for the
-			<code>org.eclipse.ui.views</code>
+			`org.eclipse.ui.views`
 			extension point. For this use the
 			_Extensions_
 			tab
 			of the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			editor.
 		
 		
@@ -58,13 +58,10 @@ image::eclipse3view14.png[Adding e4view entry,pdfwidth=60%]
 		
 
 		
-image::eclipse3view20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse 4.x based view,pdfwidth=60%]
+image::eclipse3view20.png" scale="30[Eclipse 4.x based view,pdfwidth=60%]
 		
 	
-[[exercise_e4partextension_perspective">
+
 === Add the view to a perspective extension
 		To be able to see the new view, add it to the existing perspective extension as depicted in the following
 			screenshot.
@@ -73,7 +70,7 @@ image::eclipse3view20.png" scale="30" />
 image::e4integrateintoperspective.png[Adding a view to an existing perspective,pdfwidth=60%]
 		
 	
-[[exercise_e4partextension_validate">
+
 === Validating
 		
 			Start your Eclipse 3.x application and validate that the new part is displayed.

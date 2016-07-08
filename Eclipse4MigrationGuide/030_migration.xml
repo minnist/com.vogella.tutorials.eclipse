@@ -1,10 +1,10 @@
 
-	<title>Migrating to an e4 API application without 3.x API usage
-[[migration1">
+== Migrating to an e4 API application without 3.x API usage
+
 === Migrating an Eclipse 3.x application completely to the e4 API
 		
 			If you want to migrate your Eclipse 3.x RCP application completely to the e4 API, you can't directly reuse existing
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			based user interface components, e.g., 3.x API based views or editors.
 		
 		
@@ -20,9 +20,9 @@
 					
 						Removing the usage of Singleton objects of the Eclipse platform,
 						e.g.
-						<code>Platform</code>
+						`Platform`
 						or
-						<code>PlatformUI</code>
+						`PlatformUI`
 						and use
 						the dependency injection
 						programming model.
@@ -32,11 +32,9 @@
 		
 	
 
-[[usageof3xcomponentsin4x">
+
 === Using 3.x components in e4 API based applications
-		<indexterm>
-			<primary>Eclipse 3.x and 4.x plug-ins</primary>
-		</indexterm>
+		
 
 		Using Eclipse 3.x. API based components in e4 API based application is currently not
 			officially supported.
@@ -61,7 +59,7 @@
 			for a small example project.
 		
 	
-[[migration2">
+
 === Reusing platform components
 		 Most Eclipse IDE components are still based on the Eclipse 3.x
 			API.
@@ -86,7 +84,7 @@
 			e4 API based application.
 		
 	
-[[usageof3xcomponentsin4xalternatives">
+
 === Existing replacements for 3.x components for e4 API based applications
 		
 			The

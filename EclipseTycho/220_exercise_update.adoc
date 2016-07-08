@@ -1,13 +1,13 @@
-[[exercise_tychoupdatesite]]
+
 == Exercise: Tycho build for update sites
 
-[[exercise_tychoupdatesite_target]]
+
 === Target of this exercise
 		
 The following exercise demonstrates how to build Eclipse p2 update sites with Maven Tycho. 
 It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
 		
-[[exercise_updatesite_categorydefinition]]
+
 === Create a category definition file for the update site
 
 In your _releng_ folder, create a new project of type _General_. called _com.vogella.tycho.update_.
@@ -24,7 +24,7 @@ Press the _Add Feature..._ button and include your feature project into the cate
 
 image::tycho_updatesite20.png[Adding a feature to a category]
 
-[[exercise_updatesite_updatepom]]
+
 === Create pom file for the releng folder
 
 Create the following pom file in the releng folder.
@@ -34,7 +34,7 @@ Create the following pom file in the releng folder.
 include::res/exercise/updatesite/releng.xml[]     
 ----
 
-[[exercise_updatesite_pom]]
+
 === Create pom for the update site
 
 Create the following pom file for your update site project.
@@ -44,7 +44,7 @@ Create the following pom file for your update site project.
 include::res/exercise/updatesite/updatesitepom.xml[]     
 ----
 
-[[exercise_updatesite_aggregator]]
+
 === Update the root pom
 		
 Add your new module to your root pom file.
@@ -57,7 +57,7 @@ include::res/components/parent/rootpomwithupdatesite.xml[]
 
 <1> Adds the releng pom to the aggregator build
 
-[[exercise_updatesite_aggregatorrun]]
+
 === Run aggregator build and validate the update site build result
 		
 Run the build from your main directory. 

@@ -1,7 +1,7 @@
-[[history_view]]
+
 == Using the History View
 
-[[history_view_filters]]
+
 === Use filters and search
 		
 Ensure you have the  History View open.
@@ -10,7 +10,7 @@ With the help of filters and search find out which commits have been done to pac
 Select a commit and find out who has done this commit which files have been touched in this commit.
 Find out how many branches are known which have commits changing `Calculator.java`.
 		
-[[_actions_on_commits]]
+
 === Actions on Commits
 			If you double-click on a file touched by a commit in the History View
 			you will get an editor with the content of that file in that commit.

@@ -1,5 +1,5 @@
 
-	<title>Tree and Menu
+== Tree and Menu
 	 Create the following class. 
 	
 		<programlisting>

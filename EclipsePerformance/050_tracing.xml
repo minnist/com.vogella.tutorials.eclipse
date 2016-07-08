@@ -1,10 +1,8 @@
 
-	<title>Using the build-in tracing facilities of Eclipse
-[[tracing1">
+== Using the build-in tracing facilities of Eclipse
+
 === What is tracing?
-		<indexterm>
-			<primary>Tracing in Eclipse</primary>
-		</indexterm>
+		
 		
 			Eclipse provides a tracing facility which can be activated on demand. If turned on,
 			the Eclipse IDE
@@ -12,7 +10,7 @@
 			additional information to a specified log file or the console.
 		
 	
-[[tracing2">
+
 === Turning on tracing via an options file
 		To turn tracing on, you need to create a trace-options file that
 			contains key-value pairs for the tracing options
@@ -92,7 +90,7 @@
 
 	
 
-[[tracing_runonatruntime">
+
 === Turning on tracing at runtime
 
 		It is also possible to turn on some tracing options at runtime
@@ -103,14 +101,11 @@
 		
 
 		
-image::enabletracing10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Enable Tracing at runtime.,pdfwidth=60%]
+image::enabletracing10.png[Enable Tracing at runtime.,pdfwidth=60%]
 		
 
 	
-[[tracing_implementtracing">
+
 === Implement tracing for your plug-in
 		
 			Can you also implement tracing for your custom plug-in, see
@@ -118,9 +113,9 @@ image::enabletracing10.png" />
 			. To add your tracing options to the preference preference page, to allow users to turn them on at run time, use
 			extension point
 			the
-			<code>org.eclipse.ui.trace.traceComponents</code>
+			`org.eclipse.ui.trace.traceComponents`
 			. See
-			<code>TracingPreferencePage</code>
+			`TracingPreferencePage`
 			for the implementation of this.
 		
 	

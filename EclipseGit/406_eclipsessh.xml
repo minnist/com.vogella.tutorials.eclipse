@@ -1,5 +1,5 @@
 
-	<title>Eclipse support for SSH based authentication
+== Eclipse support for SSH based authentication
 	
 		The Eclipse IDE allows you to create an SSH key pair for SSH based
 		communication via

@@ -1,14 +1,14 @@
 
-	<title>Exercise: Using @PostConstruct
-[[tutorial_api1">
+== Exercise: Using @PostConstruct
+
 === Implement an @PostConstruct method
 		
 			Add the following method to your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			,
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			and
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			classes. In case you created constructors for these classes you can
 			remove them.
 		
@@ -20,11 +20,11 @@
 		
 	
 
-[[tutorial_api2">
+
 === Validating
 		
 			Run your application and validate that the
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			method
 			is
 			called. If this does not work, see

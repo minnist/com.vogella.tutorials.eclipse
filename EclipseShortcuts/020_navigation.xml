@@ -1,12 +1,12 @@
 
 
-	<title>Navigation
+== Navigation
 	<indexterm>
 		<primary>Shortcuts</primary>
 		<secondary>Navigation</secondary>
 	</indexterm>
 
-[[shortcuts_navigationgeneral">
+
 === Globally available navigation shortcuts
 		Eclipse provides shortcuts for opening files or Java artifacts.
 		
@@ -50,7 +50,7 @@
 	
 
 
-[[shortcuts_navigationeditor">
+
 === Navigation shortcuts in the editor
 
 		If you are working in the Java editor you can also use certain

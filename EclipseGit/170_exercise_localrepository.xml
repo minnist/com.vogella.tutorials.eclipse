@@ -1,6 +1,6 @@
 
-	<title>Exercise: Working with a local Git repository in Eclipse
-[[usingegit_overview">
+== Exercise: Working with a local Git repository in Eclipse
+
 === Target: Using Eclipse Git for a local repository
 
 		 The following section explains how to create a local Git
@@ -17,7 +17,7 @@
 		
 	
 
-[[usingegit_create_repository">
+
 === Create a new Git repository via Eclipse
 		<indexterm>
 			<primary>Git in Eclipse</primary>
@@ -32,23 +32,17 @@
 			option.
 		
 		
-image::egit_gitinit10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit10.png[Git init with Eclipse Git,pdfwidth=60%]
 		
 
 		
 			Select a new directory outside of your workspace. By convention this
 			directory should be a subdirectory in the
-			<filename>git</filename>
+			_git_
 			folder of the users home directory.
 		
 		
-image::egit_gitinit20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit20.png[Git init with Eclipse Git,pdfwidth=60%]
 		
 		
 			If you press the
@@ -62,20 +56,17 @@ image::egit_gitinit20.png" />
 		
 
 		
-image::egit_gitinit30.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
 		
 
 	
 
-[[firstegit_gitignore">
+
 === Create .gitignore file
 		
 			You want to configure Git to ignore the generated bin folder with the
 			class files. Create for this purpose a
-			<filename>.gitignore </filename>
+			_.gitignore _
 			file in your Git repository
 			with the following
 			content. Unfortunately Eclipse Git does not allow to create a file
@@ -95,20 +86,20 @@ image::egit_gitinit30.png" scale="50" />
 			ignored by
 			_Git_
 			. In this example all files in the
-			<filename class="directory">bin</filename>
+			<filename class="directory">bin_
 			are
 			be ignored.
 		
 		
 			You can also create a local
-			<filename>.gitignore</filename>
+			_.gitignore_
 			file by right-clicking on a resource (file or folder)
 			and by selecting
 			the
 			menu:Team[Ignore]
 			context menu entry. Excluding individual files can be time consuming.
 			Preferably you define a pattern in your
-			<filename>.gitignore</filename>
+			_.gitignore_
 			file in the root directory of the repository.
 		
 		<note>
@@ -128,14 +119,14 @@ image::egit_gitinit30.png" scale="50" />
 		</note>
 	
 
-[[usingegit_createproject">
+
 === Creating an Eclipse project
 		
 			Create a new Java project called
 			_com.vogella.git.first_
 			in
 			Eclipse. Create the
-			<code>com.vogella.git.first</code>
+			`com.vogella.git.first`
 			package and the following
 			class.
 		
@@ -146,7 +137,7 @@ image::egit_gitinit30.png" scale="50" />
 			</programlisting>
 		
 	
-[[usingegit_shareproject">
+
 === Put project under version control
 
 		
@@ -165,22 +156,16 @@ image::egit_gitinit30.png" scale="50" />
 		
 
 		
-image::gitfirst02.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git repository creation wizard - Step 1,pdfwidth=60%]
+image::gitfirst02.png[Git repository creation wizard - Step 1,pdfwidth=60%]
 		
 		
 			On the next dialog select your existing Git repository from the
 			drop-down list and press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 		
-image::gitfirst10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git repository creation wizard - Step 1,pdfwidth=60%]
+image::gitfirst10.png[Git repository creation wizard - Step 1,pdfwidth=60%]
 		
 
 		
@@ -189,24 +174,21 @@ image::gitfirst10.png" />
 			this
 			case directly stored in the specified
 			folder in a
-			<filename class="directory">.git</filename>
+			<filename class="directory">.git_
 			folder. The following screenshot shows the generated directory
 			structure. The
-			<filename>.git</filename>
+			_.git_
 			directory contains the Git repository, the other
 			directories contain
 			the files of the working tree.
 		
 		
-image::gitfirst40.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git repository creation result,pdfwidth=60%]
+image::gitfirst40.png[Git repository creation result,pdfwidth=60%]
 		
 	
 
 
-[[usingegit_initialcommit">
+
 === Using the Git Staging view for the initial commit
 		
 			Using the
@@ -216,21 +198,18 @@ image::gitfirst40.png" />
 			area, write a meaningful commit message and press the commit button.
 		
 		
-image::gitstaging10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Initial commit,pdfwidth=60%]
+image::gitstaging10.png[Initial commit,pdfwidth=60%]
 		
 
 	
-[[usingegit_commitchanges">
+
 === Using the Git Staging view for committing changes
 
 		
 			Change the
-			<code>System.out.println</code>
+			`System.out.println`
 			message in your
-			<code>GitTest</code>
+			`GitTest`
 			class.
 		
 
@@ -242,15 +221,15 @@ image::gitstaging10.png" />
 
 		
 			Also create a new file called
-			<filename>Readme.md</filename>
+			_Readme.md_
 		
 		
 			In this example you should commit the changes
 			of the
-			<code>GitTest</code>
+			`GitTest`
 			class
 			but not add and commit the
-			<filename>Readme.md</filename>
+			_Readme.md_
 			file to the Git repository.
 		
 		
@@ -258,37 +237,34 @@ image::gitstaging10.png" />
 			_Git Staging_
 			view
 			drag only the
-			<code>GitTest</code>
+			`GitTest`
 			class into the
 			_Staged Changes_
 			area, write a meaningful commit message and press the commit button.
 		
 		
-image::gitstaging30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Git Staging View - Add to staging area,pdfwidth=60%]
+image::gitstaging30.png[Git Staging View - Add to staging area,pdfwidth=60%]
 		
 
 		
 			This change is now also stored in your local
 			_Git_
 			repository. The
-			<filename>Readme.md</filename>
+			_Readme.md_
 			file
 			is neither staged nor committed to the Git repository.
 		
 	
-[[usingegit_commitchanges2">
+
 === Commit more files
 		
 			Commit the
-			<filename>Readme.md</filename>
+			_Readme.md_
 			file. By now you should know that you have to stage the file and
 			commit it.
 		
 	
-[[usingegit_commitchanges_validate">
+
 === Review your commit history via the History view
 		
 			Open the
@@ -322,12 +298,12 @@ image::gitstaging30.png" />
 			</inlinemediaobject>
 		
 	
-[[usingegit_commitchanges_openolderversion">
+
 === Open an older version of a file via the History view
 
 		
 			Open the version for the first commit of
-			<code>GitTest</code>
+			`GitTest`
 			via the
 			_History_
 			view.
@@ -335,17 +311,14 @@ image::gitstaging30.png" />
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/exericse_historyview30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>History View</phrase>
+					<imagedata fileref="./images/exericse_historyview30.png[History View</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
 
 	
 
-[[usingegit_multiprojects">
+
 === Add more projects to your Git repository
 		
 			You can of course have more than one Eclipse project in your Git repository.
@@ -368,7 +341,7 @@ image::gitstaging30.png" />
 		
 			Select your Git repository outside
 			and add both projects to this repository and press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 		
 		

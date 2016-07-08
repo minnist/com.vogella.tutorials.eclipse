@@ -1,6 +1,6 @@
 <section id="exercise_modeladdonclose" role="wrapper">
-	<title>Optional exercise: Changing the close behavior via an add-on
-[[exercise_modeladdonclose1">
+== Optional exercise: Changing the close behavior via an add-on
+
 === Target
 		
 			In this exercise you ensure that the user is prompted if he
@@ -11,11 +11,11 @@
 		
 	
 
-[[exercise_modeladdonclose_create">
+
 === Creating a plug-in
 		
 			Create a new simple plug-in called
-			<code>com.vogella.e4.addon.exitconfirmation</code>
+			`com.vogella.e4.addon.exitconfirmation`
 			.
 		
 		
@@ -49,7 +49,7 @@
 			</itemizedlist>
 		
 	
-[[exercise_modeladdonclose_createclass">
+
 === Creating the model add-on
 		Define the following class which is used as model add-on 
 		

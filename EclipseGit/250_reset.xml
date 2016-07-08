@@ -1,6 +1,6 @@
 
-	<title>Git reset and Git reflog
-[[team_reset1">
+== Git reset and Git reflog
+
 === git reset
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -21,7 +21,7 @@
 image::egit_reset10.png[Reset in EGit,pdfwidth=60%]
 		
 	
-[[team_reset2">
+
 === Finding "invisible" commits with the Reflog view
 		Commits are not visible in the Git history if they can't be
 			reached from a
@@ -41,7 +41,7 @@ image::egit_reset10.png[Reset in EGit,pdfwidth=60%]
 			allows
 			you to find a commit again,
 			e.g., if you used the
-			<code>git reset --hard</code>
+			`git reset --hard`
 			command to remove certain commits.
 		
 	

@@ -1,7 +1,7 @@
-[[editors]]
+
 == Eclipse Editors
 
-[[editors_overview]]
+
 === Overview
 
 Eclipse uses editors and views to maintain data.
@@ -10,7 +10,7 @@ An editor typically requires that the user explicitly select "save" to apply the
 All editors are opened in the same area.
 Via the perspective you can configure if the editor area is visible or not.
 
-[[editors_process]]
+
 === Steps required to create an editor
 
 The following steps are required to create and use an editor within an RCP application.
@@ -20,7 +20,7 @@ The following steps are required to create and use an editor within an RCP appli
 * Define an extension for the "org.eclipse.ui.editors" extension point
 * Implement the class for the editor, this class must implement IEditorPart
 
-[[editor_ieditorinput]]
+
 === IEditorInput
 
 IEditorInput serves as the model for the editor and is supposed to be a light-weight representation of the model.
@@ -30,7 +30,7 @@ For example the Eclipse IDE uses IEditorInput objects to identify files without 
 
 Based on the equals() method of the IEditorInput the system will determine if the corresponding editor is already open or if a new editor must be opened.
 
-[[editor_editorpart]]
+
 === IEditorPart and EditorPart
 
 The editor is defined via the extension point "org.eclipse.ui.editors".
@@ -42,7 +42,7 @@ It must set the input via the setInput() method and the side via the setSite() m
 
 init() is called before createPartControl() therefore you can use the input during your UI creation (which happens in createPartControl()).
 
-[[editor_titel]]
+
 === Setting the Editor Title and Tooltip
 
 By default the editor will use the tooltip and title from the `IEditorInput`.
@@ -53,7 +53,7 @@ Use setPartName() to set the title of the Editor.
 To set the tooltip you have to override the method getTitleToolTip() (despite the Javadoc description).
 See Bug https://bugs.eclipse.org/bugs/show_bug.cgi?id=107772[https://bugs.eclipse.org/bugs/show_bug.cgi?id=107772] for details.
 
-[[editor_save]]
+
 === Saving the Editor Content
 
 In an editor the method isDirty() is used to inform the workbench if the content of the editor is changed.
@@ -64,7 +64,7 @@ For inform the workbench that the dirty property of the editor has changed you f
 include::./res/save/change.txt[]
 ----
 
-[[editor_perspective]]
+
 === Editor area
 
 In a standalone RCP application you can make the editor area visible by changing your Perspective.java.
@@ -74,7 +74,7 @@ In a standalone RCP application you can make the editor area visible by changing
 include::./res/editor/Perspective.java[]
 ----
 
-[[editor_api]]
+
 === API for working with Editors
 
 You can open an Editor via the current active page.

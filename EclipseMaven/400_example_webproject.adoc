@@ -1,12 +1,12 @@
-[[maven_webeproject]]
+
 == Exercise: Create a Java web project in Eclipse using Maven
 
-[[maven_webeproject_target]]
+
 == Target of this exercise
 This exercise demonstrates how to create a web application in Eclipse which uses Maven. 
 It assumes that you have already configured Eclipse for the creation of web applications.
 
-[[maven_webeproject_project]]
+
 === Create Maven web project project
 		
 Create a new Maven project called _com.vogella.javaweb.maven.first_ via the menu:File[New>Other>Maven>Maven Project] entry.
@@ -27,13 +27,13 @@ To fix this, right click on your project and select _Properties_.
 On the _Targeted Runtimes_ select your web server entry, e.g., Tomcat.
 ====
 
-[[maven_webeproject_projectbuild]]
+
 === Build your project
 		
 Similar to <<example_eclipsemavenproject_runningthebuild>> run your `mvn clean verify` build command from Eclipse.
 Validate that there are no issues with the build.
 
-[[maven_webeproject_runserver]]
+
 === Run on the server
 		
 Right-click your project and select the menu:Run As[Run on Server] menu entry.

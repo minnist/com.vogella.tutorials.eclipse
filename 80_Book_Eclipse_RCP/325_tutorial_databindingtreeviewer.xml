@@ -1,10 +1,10 @@
 <chapter id="tutorial_databindingtreeviewer_exercise">
-	<title>Exercise: Data Binding for the tree viewers
-[[tutorial_databindingtreeviewer">
+== Exercise: Data Binding for the tree viewers
+
 === Implement data binding for the tree viewer of your tags
 		
 			Change your implementation of the
-			<code>TagOverviewPart</code>
+			`TagOverviewPart`
 			to use data binding.
 		
 		The following code demonstrates this implementation.
@@ -26,20 +26,20 @@
 		</tip>
 		
 			Before changing the actual
-			<code>TagOverviewPart</code>
+			`TagOverviewPart`
 			is changed some helper classes are necessary to let the databinding
 			work properly.
 		
 		
 			The
-			<code>ObservableListTreeContentProvider</code>
+			`ObservableListTreeContentProvider`
 			, which will be used as
-			<code>ContentProvider</code>
+			`ContentProvider`
 			for the TreeViewer must be able to figure out, where to find the
 			children of a given input. Therefore a
-			<code>DelegatingListProperty</code>
+			`DelegatingListProperty`
 			subclass, which is passed to the
-			<code>ObservableListTreeContentProvider</code>
+			`ObservableListTreeContentProvider`
 			, is created.
 		
 		
@@ -50,10 +50,10 @@
 		
 		
 			To keep track on changes, which are rendered by a
-			<code>TreeViewerColumns</code>
-			<code>CellLabelProvider</code>
+			`TreeViewerColumns`
+			`CellLabelProvider`
 			, a subclass of the
-			<code>ObservableMapCellLabelProvider</code>
+			`ObservableMapCellLabelProvider`
 			is created.
 		
 		
@@ -65,18 +65,18 @@
 		
 		
 			To provide the right values for the different model elements
-			<code>Tag</code>
+			`Tag`
 			and
-			<code>Todo</code>
+			`Todo`
 			the
-			<code>DelegatingObservableCellLabelProvider</code>
+			`DelegatingObservableCellLabelProvider`
 			needs to have the right
-			<code>IValueProperty</code>
+			`IValueProperty`
 			in order to get the values to be displayed.
 		
 		
 			After the helper classes are created the
-			<code>TagOverviewPart</code>
+			`TagOverviewPart`
 			can be changed accordingly.
 		
 		
@@ -99,7 +99,7 @@
 		
 	
 
-[[tutorial_databindingtreeviewer_validating">
+
 === Validating
 		
 			Start your application and ensure that the data is displayed

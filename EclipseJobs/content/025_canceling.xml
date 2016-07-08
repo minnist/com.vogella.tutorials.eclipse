@@ -1,10 +1,10 @@
 
-	<title>Handle Job cancellation
+== Handle Job cancellation
 	
 		In Eclipse many user complain about jobs, which are not properly
 		canceled when pressing the red square cancel button in the progess
 		view. Some
-		<code>Job</code>
+		`Job`
 		implementations simply just don't care and do not react on the
 		cancellation, which is triggered by the user.
 	
@@ -14,21 +14,21 @@
 	
 	
 		In order to realize that a user has canceled a Job the
-		<code>IProgressMonitor</code>
+		`IProgressMonitor`
 		, which is passed to the
-		<code>run</code>
+		`run`
 		method of a Job, can be asked whether the Job has been canceled. This
 		can be done by calling the
-		<code>isCanceled</code>
+		`isCanceled`
 		on an
-		<code>IProgressMonitor</code>
+		`IProgressMonitor`
 		.
 	
 	This check for cancellation should be done in a frequent manner,
 		so that the user does not have to wait too long until the job will
 		really be canceled.
 	
-[[eclipsejobs_cancel_before_4.6">
+
 === Handle Job cancellation before Eclipse Neon (4.6)
 		
 			<programlisting language="java">
@@ -37,7 +37,7 @@
 			</programlisting>
 		
 	
-[[eclipsejobs_cancel_since_4.6">
+
 === Handling Job cancellation since Eclipse Neon (4.6)
 		
 			<programlisting language="java">
@@ -48,26 +48,26 @@
 		
 		
 			The new
-			<code>split</code>
+			`split`
 			method can handle the cancellation check automatically and throws an
-			<code>OperationCanceledException</code>
+			`OperationCanceledException`
 			in case the
-			<code>IProgressMonitor</code>
+			`IProgressMonitor`
 			has been canceled. The
-			<code>OperationCanceledException</code>
+			`OperationCanceledException`
 			is automatically caught by a
-			<code>Job</code>
+			`Job`
 			, which will just set the
-			<code>Status.CANCEL_STATUS</code>
+			`Status.CANCEL_STATUS`
 			then.
 		
 		
 			<note>
 				Using the new Submonitor's
-				<code>split</code>
+				`split`
 				is not only shorter than the former approach, but also provides
 				better performance since the expensive
-				<code>isCanceled</code>
+				`isCanceled`
 				call is only done in case it is really necessary.
 			</note>
 		

@@ -1,31 +1,19 @@
 
-	<title>Menu and toolbar application objects
+== Menu and toolbar application objects
 
-[[commands_menu">
+
 === Adding menu and toolbar entries
-		<indexterm>
-			<primary>Menu</primary>
-		</indexterm>
+		
 
-		<indexterm>
-			<primary>Toolbar</primary>
-		</indexterm>
+		
 
-		<indexterm>
-			<primary>Direct MenuItem</primary>
-		</indexterm>
+		
 
-		<indexterm>
-			<primary>Direct ToolItem</primary>
-		</indexterm>
+		
 
-		<indexterm>
-			<primary>Handled MenuItem</primary>
-		</indexterm>
+		
 
-		<indexterm>
-			<primary>Handled ToolItem</primary>
-		</indexterm>
+		
 		
 			You can add menus and toolbars to your RCP application via the
 			application
@@ -43,20 +31,12 @@
 			.
 		
 	
-[[commands_overview">
+
 === The usage of commands and handlers
-		<indexterm>
-			<primary>Command</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Commands</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Handler</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Handlers</primary>
-		</indexterm>
+		
+		
+		
+		
 		
 			The Eclipse application model allows you to specify
 			_commands_
@@ -106,7 +86,7 @@
 			element points to
 			a
 			class (handler class) via the
-			<code>contributionURI</code>
+			`contributionURI`
 			property of the handler. This attribute is displayed as
 			_Class URI_
 			in the model editor.
@@ -136,25 +116,21 @@
 		
 	
 
-[[commands_behaviorannotations">
+
 === Behavior annotations and dependency injection for handler classes
 		<indexterm>
 			<primary>Behavior annotations</primary>
 			<secondary>Handler</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>@Execute</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@CanExecute</primary>
-		</indexterm>
+		
+		
 		
 			In a handler class exactly one
 			method must be annotated
 			with the
-			<code>@Execute</code>
+			`@Execute`
 			annotation. In additional, you can also annotate one method with the
-			<code>@CanExecute</code>
+			`@CanExecute`
 			annotation. If you annotate more than one method with the same annotation, the framework calls only one of them.
 			The
 			Eclipse runtime uses dependency injection to provide the
@@ -206,7 +182,7 @@
 									the handler class can be executed. If a handler
 									class
 									returns
-									<code>false</code>
+									`false`
 									in this method,
 									Eclipse
 									disables
@@ -215,7 +191,7 @@
 									button is active if
 									the handler
 									class returns true in the
-									<code>@CanExecute</code>
+									`@CanExecute`
 									method.
 								
 								
@@ -224,7 +200,7 @@
 									class can always be executed, it does not need
 									to
 									implement a
-									<code>@CanExecute</code>
+									`@CanExecute`
 									method.
 								
 							</entry>
@@ -247,7 +223,7 @@
 
 		
 			A handler instance does not have its own Eclipse context (
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			).
 			It is executed with the
 			Eclipse context of the active model element which has a Eclipse context. In most
@@ -265,7 +241,7 @@
 			method
 			annotated
 			with
-			<code>@Execute</code>
+			`@Execute`
 			, as you want the handler class to retrieve its
 			runtime
 			information
@@ -281,7 +257,7 @@
 
 	
 
-[[commands_valid">
+
 === Determining the relevant handler for a command
 		If a
 			command is
@@ -323,16 +299,16 @@
 	
 
 
-[[commands_evalationofcanexecute">
+
 === Evaluation of @CanExecute
 		
 			A method annotated with
-			<code>@CanExecute</code>
+			`@CanExecute`
 			is called by the framework, if a change in the Eclipse context happens. For example, if you select a new part.
 			If the
 			method
 			returns
-			<code>false</code>
+			`false`
 			, the framework
 			disables any menu and
 			tool
@@ -341,7 +317,7 @@
 
 		
 			You can request the re-evaluation of the
-			<code>@CanExecute</code>
+			`@CanExecute`
 			methods by sending out an event via the event broker.
 		
 
@@ -356,11 +332,9 @@
 
 
 
-[[commands_accessibility">
+
 === Mnemonics
-		<indexterm>
-			<primary>Mnemonics</primary>
-		</indexterm>
+		
 		
 			The application model allows you to define
 			_mnemonics_
@@ -402,7 +376,7 @@
 	
 
 
-[[commands_ids">
+
 === Naming schema for command and handler IDs
 		<indexterm>
 			<primary>Naming conventions</primary>
@@ -426,16 +400,16 @@
 			For
 			example, if you implement a
 			command with the
-			<code>com.example.contacts.commands.show</code>
+			`com.example.contacts.commands.show`
 			ID, you should use
-			<code>com.example.contacts.handler.show</code>
+			`com.example.contacts.handler.show`
 			as the ID for the handler. If you have more than one handler for one
 			command,
 			add
 			another suffix to it, describing its
 			purpose,
 			e.g.
-			<code>com.example.contacts.handler.show.details</code>
+			`com.example.contacts.handler.show.details`
 			.
 		
 		
@@ -449,7 +423,7 @@
 			under the first menu).
 			A more complete list of command IDs
 			is available in
-			<code>org.eclipse.ui.IWorkbenchCommandConstants</code>
+			`org.eclipse.ui.IWorkbenchCommandConstants`
 			.
 		
 

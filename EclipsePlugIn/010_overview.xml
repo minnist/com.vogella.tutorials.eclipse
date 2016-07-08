@@ -1,14 +1,10 @@
 
-	<title>Eclipse plug-ins and applications
+== Eclipse plug-ins and applications
 
-[[plugin_introducion_def">
-		<indexterm>
-			<primary>Plug-in development</primary>
-		</indexterm>
+
+		
 === Eclipse software components - Plug-ins
-		<indexterm>
-			<primary>Plug-in</primary>
-		</indexterm>
+		
 		
 			An Eclipse application consists of several Eclipse
 			components. A
@@ -42,7 +38,7 @@
 
 	
 
-[[overview_advantages">
+
 === Advantages of developing Eclipse plug-ins
 		 The Eclipse platform forms the basis of the most successful
 			Java
@@ -79,14 +75,10 @@
 		
 	
 
-[[overview_rcp">
+
 === What is the Eclipse Rich Client Platform (Eclipse RCP)?
-		<indexterm>
-			<primary>History</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Eclipse RCP</primary>
-		</indexterm>
+		
+		
 
 		 The Eclipse IDE version 2.0 started as a modular IDE
 			application.

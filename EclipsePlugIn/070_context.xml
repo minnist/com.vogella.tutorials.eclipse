@@ -1,8 +1,8 @@
 
-	<title>Accessing the IEclipseContext from 3.x API
+== Accessing the IEclipseContext from 3.x API
 	
 		The Eclipse 4.x IDE uses the
-		<code>IEclipseContext</code>
+		`IEclipseContext`
 		data structure
 		to store central
 		information about the IDE. You can access this information also via

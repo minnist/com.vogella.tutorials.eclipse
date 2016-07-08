@@ -1,5 +1,5 @@
 <chapter>
-	<title>
+== 
 		Exercise: Implement a UI for TodoDetailsPart
 	
 
@@ -7,19 +7,16 @@
 === TodoDetailsPart
 		
 			Change the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class
 			so that you create a user interface similar to the following.
 			Use a
-			<code>DateTime</code>
+			`DateTime`
 			widget for the "Due Date" selection.
 		
 		
 image::tododetails-userinterface.png"
-						scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a Todo user interface,pdfwidth=60%]
+						scale="50[Creating a Todo user interface,pdfwidth=60%]
 		
 		
 			See
@@ -56,7 +53,7 @@ image::tododetails-userinterface.png"
 			
 				If you forget to put focus on an SWT widget in your method annotated
 				with
-				<code>@Focus</code>
+				`@Focus`
 				the framework call this method twice in certain situations. This
 				is
 				done by the Eclipse
@@ -70,14 +67,14 @@ image::tododetails-userinterface.png"
 
 		
 			Ensure that you also put the focus on an SWT widget in your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class.
 		
 
 	
 
 
-[[swt_tododetailspart_solution">
+
 === Example code for TodoDetailsPart
 		The following listing contains a possible implementation of this
 			exercise as reference for the reader.

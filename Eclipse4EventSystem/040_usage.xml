@@ -1,6 +1,6 @@
 
-	<title>Sending and receiving events
-[[eventsystem_usagesend">
+== Sending and receiving events
+
 === Sending
 		<indexterm>
 			<primary>Event service</primary>
@@ -23,7 +23,7 @@
 			The following code examples assume that you have a class named
 			_MyEventConstants_
 			defined which contains a static final field (constant) for the
-			<code>TOPIC_TODO_NEW</code>
+			`TOPIC_TODO_NEW`
 			string.
 		
 		
@@ -56,7 +56,7 @@
 			bus.
 		
 	
-[[eventsystem_annotations">
+
 === Annotations for receiving events
 		<indexterm>
 			<primary>Event service</primary>
@@ -66,12 +66,8 @@
 			<primary>Event service</primary>
 			<secondary>Receiving events via annotations</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>@UIEventTopic</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@EventTopic</primary>
-		</indexterm>
+		
+		
 		
 			You can use dependency injection to register and respond to
 			events.
@@ -85,12 +81,12 @@
 		
 		
 			The
-			<code>@EventTopic</code>
+			`@EventTopic`
 			and
-			<code>@UIEventTopic</code>
+			`@UIEventTopic`
 			annotations tag methods and fields that should be notified on event
 			changes. The
-			<code>@UIEventTopic</code>
+			`@UIEventTopic`
 			ensures the event notification is
 			performed
 			in the user interface
@@ -105,7 +101,7 @@
 		
 
 	
-[[eventsystem_listeners">
+
 === Registering listeners for events
 		<indexterm>
 			<primary>Event service</primary>
@@ -113,17 +109,17 @@
 		</indexterm>
 		
 			An object can also register an instance of the
-			<code>org.osgi.service.event.EventHandler</code>
+			`org.osgi.service.event.EventHandler`
 			directly with
 			the
-			<code>IEventBroker</code>
+			`IEventBroker`
 			interface
 			via the
-			<code>subscribe()</code>
+			`subscribe()`
 			method. But this subscription has also to be unsubscribed manually
 			afterward by using
 			the
-			<code>unsubscribe()</code>
+			`unsubscribe()`
 			method.
 		
 		<tip>
@@ -148,7 +144,7 @@
 			</programlisting>
 		
 	
-[[eventsystem_objectstobesendout">
+
 === Which objects should be send out?
 		
 			The event system allows sending and receiving objects of an arbitrary
@@ -156,15 +152,15 @@
 			In Eclipse applications it is good
 			practice to send out events
 			with a
-			<code>java.util.Map</code>
+			`java.util.Map`
 			type because a similar type is also used by the Eclipse framework for
 			sending out events. A
-			<code>Map</code>
+			`Map`
 			class can be configured with properties to contain more data about
 			the event.
 		
 	
-[[eventsystem_eventsubscription">
+
 === Subscribing to sub-topics
 		<indexterm>
 			<primary>Event service</primary>
@@ -174,9 +170,9 @@
 			You can subscribe to specific topics or use wildcards to
 			subscribe to
 			all sub-events. Sub-events are separated by
-			<code>/</code>
+			`/`
 			. The following example code defines several topics and also the
-			<code>TOPIC_TODO_ALLTOPICS</code>
+			`TOPIC_TODO_ALLTOPICS`
 			constant which can be used to register for all sub-events.
 		
 		

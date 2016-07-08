@@ -1,5 +1,5 @@
 
-	<title>Fragment extension elements
+== Fragment extension elements
 	
 		In fragments you contribute to an existing model element which is
 		defined via its ID. You also have to specify the

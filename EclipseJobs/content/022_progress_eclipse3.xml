@@ -1,12 +1,12 @@
 
-	<title>Reporting Progress in Eclipse 3.x
+== Reporting Progress in Eclipse 3.x
 	
 		To activate progress reporting in the status line in Eclipse 3.x you
 		have to activate
 		progress reporting in
-		<code>preWindowOpen()</code>
+		`preWindowOpen()`
 		method of the
-		<code>WorkbenchWindowAdvisor</code>
+		`WorkbenchWindowAdvisor`
 		.
 	
 

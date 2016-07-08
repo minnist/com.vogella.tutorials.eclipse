@@ -1,6 +1,6 @@
 
-	<title>Exporting and importing projects
-[[exportingprojects">
+== Exporting and importing projects
+
 === Exporting projects
 		You can export and import Eclipse projects. This allows you to
 			share projects with other people and to import existing projects.
@@ -19,7 +19,7 @@ image::exportprojects10.png[Exporting project,pdfwidth=60%]
 image::exportprojects20.png[Exporting projects part 2,pdfwidth=60%]
 		
 	
-[[importingprojects">
+
 === Importing projects
 		
 			To import projects, select

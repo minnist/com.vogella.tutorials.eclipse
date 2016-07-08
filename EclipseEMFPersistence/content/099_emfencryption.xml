@@ -1,5 +1,5 @@
 
-	<title>Appendix: Encryption
+== Appendix: Encryption
 	
 		EMF has the possibility to encrypt the data model before writing
 		it and to decrypt it before loading. The following demonstrates this. 

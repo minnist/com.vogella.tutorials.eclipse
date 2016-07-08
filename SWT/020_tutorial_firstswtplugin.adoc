@@ -1,8 +1,8 @@
 
-	<title>Example: Creating a plug-in project with a dependency to SWT
+== Example: Creating a plug-in project with a dependency to SWT
 	
 		Create a new plug-in project called
-		<code>com.examle.swt.widgets</code>
+		`com.examle.swt.widgets`
 		via
 		menu:
 			<guimenu>File</guimenu>
@@ -57,10 +57,10 @@
 
 	
 		Open the
-		<code>MANIFEST.MF</code>
+		`MANIFEST.MF`
 		file
 		in the
-		<filename>META-INF</filename>
+		_META-INF_
 		folder
 		and select the
 		_Dependencies_
@@ -73,7 +73,7 @@
 		button in the
 		_Required Plug-ins_
 		part and enter
-		<code>org.eclipse.swt</code>
+		`org.eclipse.swt`
 		as dependency.
 
 	

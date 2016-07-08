@@ -20,7 +20,7 @@ The following class will serve as a data model content provider.
 include::./res/model/TaskService.java[]
 ----
 
-[[editor_editorinput]]
+
 
 === Editor Input
 
@@ -31,7 +31,7 @@ Create the following new class `TaskEditorInput` which implements `IEditorInput`
 include::./res/editor/TaskEditorInput.java[]
 ----
 
-[[editor_editor]]
+
 === Adding the editor
 
 Go to _plugin.xml_ and add the extension _org.eclipse.ui.editors_.
@@ -51,7 +51,7 @@ Make sure the variable _ID_ matches the ID of the editor extension.
 include::./res/editor/TaskEditor.java[]
 ----
 
-[[editor_command]]
+
 === Command for opening the editor
 
 Create a http://www.vogella.com/tutorials/EclipseCommands/article.html[command] _com.vogella.rcp.editor.example.openEditor_ with the default handler _com.vogella.rcp.editor.example.handler.CallEditor_.
@@ -65,7 +65,7 @@ Create the following class "com.vogella.rcp.editor.example.handler.CallEditor".
 include::./res/editor/CallEditor.java[]
 ----
 
-[[editor_view]]
+
 === Task overview part
 
 We will create the class `TaskOverview` to use http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[JFace Viewers] and add a double-click listener to call the command.

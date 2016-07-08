@@ -1,26 +1,26 @@
 
-	<title>Life cycle hook and a login screen
-[[tutorial_lifecycle_target">
+== Life cycle hook and a login screen
+
 === Target
 		
 			In this exercise you create a splash screen which allows the user to
 			enter his or her
 			credentials. This assumes that you have created a
-			<code>PasswordDialog</code>
+			`PasswordDialog`
 			class  which allows the user to enter this user and password.
 		
 	
-[[tutorial_lifecycle1">
+
 === Create a new class
 
 		
 			The following development is done again in the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.
 		
 		
 			Create the
-			<code>com.example.e4.rcp.todo.lifecycle</code>
+			`com.example.e4.rcp.todo.lifecycle`
 			package and add the following class.
 		
 		
@@ -40,18 +40,18 @@
 		</note>
 
 	
-[[tutorial_lifecycle2">
+
 === Register life cycle hook
 		
 			Register the
-			<code>Manager</code>
+			`Manager`
 			class as life cycle handler in your
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file.
 		
 		
 			For this, open the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			in your application plug-in and select the
 			_Extensions_
 			tab.
@@ -59,7 +59,7 @@
 
 		
 			Open the
-			<code>org.eclipse.core.runtime.products</code>
+			`org.eclipse.core.runtime.products`
 			extension,
 			right click on the existing entry and create a new
 			property.
@@ -67,28 +67,22 @@
 		
 		
 image::lifecycleregistration10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Lifecycle registration in the product extension part 1,pdfwidth=60%]
+						scale="40[Lifecycle registration in the product extension part 1,pdfwidth=60%]
 		
 
 		
 			Enter
 			_lifeCycleURI_
 			as name for the property and use
-			<code>bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager
-			</code>
+			`bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager
+			`
 			as the value.
 		
 
 
 		
 image::lifecycleregistration20.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Life cycle registration in the product extension part 1,pdfwidth=60%]
+						scale="40[Life cycle registration in the product extension part 1,pdfwidth=60%]
 		
 
 		
@@ -105,13 +99,13 @@ image::lifecycleregistration20.png"
 
 	
 
-[[tutorial_lifecycle3">
+
 === Validating
 		
 			Start your application. The login dialog should get displayed and
 			your
 			application should be started after the user selects the
-			<guibutton>Login</guibutton>
+			_Login_
 			button.
 		
 	

@@ -1,6 +1,6 @@
 
-	<title>Exercise: From plug-in to Eclipse 4 application
-[[plugin_creatinge4_target">
+== Exercise: From plug-in to Eclipse 4 application
+
 === Target
 		
 			In this chapter you convert the
@@ -10,7 +10,7 @@
 			application.
 		
 	
-[[plugin_creatinge4_productproject">
+
 === Create a project to host the product configuration file
 		
 			Create a new project called
@@ -21,21 +21,15 @@
 		
 
 		
-image::productproject10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::productproject10.png[,pdfwidth=60%]
 		
 
 		
-image::productproject12.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::productproject12.png[,pdfwidth=60%]
 		
 	
 
-[[plugin_creatinge4_product">
+
 === Create a product configuration file
 
 		
@@ -45,23 +39,17 @@ image::productproject12.png" />
 		
 
 		
-image::training_product10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::training_product10.png" scale="35[,pdfwidth=60%]
 		
 		
 			Create a product configuration file called
-			<filename>todo.product</filename>
+			_todo.product_
 			inside the
-			<filename>com.example.e4.rcp.todo.product</filename>
+			_com.example.e4.rcp.todo.product_
 			folder.
 		
 		
-image::training_product20.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::training_product20.png" scale="35[,pdfwidth=60%]
 		
 		
 			Press the
@@ -80,10 +68,7 @@ image::training_product20.png" scale="35" />
 		
 
 		
-image::training_product28.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Press the new button in the product editor,pdfwidth=60%]
+image::training_product28.png[Press the new button in the product editor,pdfwidth=60%]
 		
 
 		
@@ -99,21 +84,18 @@ image::training_product28.png" />
 			as the
 			_Product ID_
 			and select
-			<code>org.eclipse.e4.ui.workbench.swt.E4Application</code>
+			`org.eclipse.e4.ui.workbench.swt.E4Application`
 			in the
 			_Application_
 			combo box.
 		
 		
-image::training_product30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Entering the product details,pdfwidth=60%]
+image::training_product30.png[Entering the product details,pdfwidth=60%]
 		
 
 	
 
-[[plugin_startlevels">
+
 === Configure the start levels
 		<indexterm>
 			<primary>Start level in a product
@@ -137,14 +119,11 @@ image::training_product30.png" />
 
 		
 		
-image::rcpproductstartlevel10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Setting the default start level,pdfwidth=60%]
+image::rcpproductstartlevel10.png[Setting the default start level,pdfwidth=60%]
 		
 	
 
-[[plugin_feature">
+
 === Create a feature project
 		
 			Create a new
@@ -161,29 +140,23 @@ image::rcpproductstartlevel10.png" />
 			on the first wizard page.
 		
 		
-image::training_product31.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Feature project,pdfwidth=60%]
+image::training_product31.png[Feature project,pdfwidth=60%]
 		
 		
 			Afterwards select the
 			_Plug-ins_
 			tab in the editor of the
-			<filename>feature.xml</filename>
+			_feature.xml_
 			file. Press the
 			_Add..._
 			button and
 			include the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in into this feature.
 		
 
 		
-image::training_product34.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Feature project,pdfwidth=60%]
+image::training_product34.png[Feature project,pdfwidth=60%]
 		
 		<warning>
 			
@@ -196,11 +169,11 @@ image::training_product34.png" />
 		</warning>
 	
 
-[[plugin_dependencies">
+
 === Enter the feature as content into the product
 		
 			Open your
-			<filename>todo.product</filename>
+			_todo.product_
 			product file and change your product configuration file to use
 			features.
 		
@@ -213,10 +186,7 @@ image::training_product34.png" />
 			tab of the product editor.
 		
 		
-image::e4_productfeature10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Switching to feature on the product configuration file,pdfwidth=60%]
+image::e4_productfeature10.png[Switching to feature on the product configuration file,pdfwidth=60%]
 		
 
 		
@@ -224,28 +194,28 @@ image::e4_productfeature10.png" />
 			_Contents_
 			tab
 			and add the following features via the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button.
 			<itemizedlist>
 				<listitem>
 					
-						<code>com.example.e4.rcp.todo.feature</code>
+						`com.example.e4.rcp.todo.feature`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.rcp</code>
+						`org.eclipse.e4.rcp`
 					
 				</listitem>
 
 				<listitem>
 					
-						<code>org.eclipse.emf.ecore</code>
+						`org.eclipse.emf.ecore`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.emf.common</code>
+						`org.eclipse.emf.common`
 					
 				</listitem>
 
@@ -253,10 +223,7 @@ image::e4_productfeature10.png" />
 		
 
 		
-image::e4_productfeature21.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding the required features to your product,pdfwidth=60%]
+image::e4_productfeature21.png[Adding the required features to your product,pdfwidth=60%]
 		
 
 		<note>
@@ -271,12 +238,12 @@ image::e4_productfeature21.png" />
 			
 		</note>
 	
-[[plugin_versiondependencies">
+
 === Remove the version dependency from the features in the product
 		
 		
 			To avoid problems with different versions of the
-			<code>org.eclipse.e4.rcp</code>
+			`org.eclipse.e4.rcp`
 			feature, delete the version number from your product.
 			You can
 			do this
@@ -288,32 +255,23 @@ image::e4_productfeature21.png" />
 			tab of the product configuration editor.
 		
 		
-image::e4_productfeature26.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Remove version number,pdfwidth=60%]
+image::e4_productfeature26.png[Remove version number,pdfwidth=60%]
 		
 
 		
-image::e4_productfeature28.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Remove version number,pdfwidth=60%]
+image::e4_productfeature28.png[Remove version number,pdfwidth=60%]
 		
 
 		If other features have a version dependency, also remove these. The result should look similar to the following
 			screenshot.
 		
 		
-image::e4_productfeature30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Remove version number via the Properties button,pdfwidth=60%]
+image::e4_productfeature30.png[Remove version number via the Properties button,pdfwidth=60%]
 		
 
 	
 
-[[plugin_creatinge4_e4xmi">
+
 === Create an application model
 		
 			Select
@@ -322,15 +280,12 @@ image::e4_productfeature30.png" />
 			file.
 		
 		
-image::training_product48.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::training_product48.png[,pdfwidth=60%]
 		
 
 		
 			Enter your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			application plug-in
 			as the container and use the file name
 			suggested by
@@ -338,23 +293,20 @@ image::training_product48.png" />
 			wizard.
 		
 		
-image::training_product50.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::training_product50.png[,pdfwidth=60%]
 		
 
 		
 			Press the
 			_Finish_
 			button. This triggers the creation of the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file inside the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in and opens it.
 		
 	
-[[plugin_creatinge4_modelelements">
+
 === Add a window to the application model
 		
 			Add one
@@ -367,14 +319,11 @@ image::training_product50.png" />
 			Right-click on the
 			_Windows and Dialogs_
 			node, and select
-			<code>Trimmed Window</code>
+			`Trimmed Window`
 			as depicted in the following screenshot.
 		
 		
-image::tutorial_product80.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a trimmed window,pdfwidth=60%]
+image::tutorial_product80.png[Adding a trimmed window,pdfwidth=60%]
 		
 		Enter an ID, the position and size of the window and a label as
 			shown in
@@ -382,10 +331,7 @@ image::tutorial_product80.png" />
 			screenshot below.
 		
 		
-image::tutorial_product90.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Enter the data for the TrimmedWindow in the model editor,pdfwidth=60%]
+image::tutorial_product90.png" scale="35[Enter the data for the TrimmedWindow in the model editor,pdfwidth=60%]
 		
 
 		<tip>
@@ -410,7 +356,7 @@ image::tutorial_product90.png" scale="35" />
 	
 
 
-[[plugin_creatinge4_start">
+
 === Start the application
 		
 			Open the product file and select the
@@ -423,10 +369,7 @@ image::tutorial_product90.png" scale="35" />
 			section.
 		
 		
-image::training_product40.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Starting the product,pdfwidth=60%]
+image::training_product40.png[Starting the product,pdfwidth=60%]
 		
 
 		

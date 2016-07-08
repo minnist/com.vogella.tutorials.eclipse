@@ -1,11 +1,11 @@
 
-	<title>Accessing extensions
+== Accessing extensions
 
 	
 		The information about the available extension points and the
 		provided
 		extensions are stored in a class of type
-		<code>IExtensionRegistry</code>
+		`IExtensionRegistry`
 		.
 	
 	<note>
@@ -23,7 +23,7 @@
 		to
 		get
 		the
-		<code>IExtensionRegistry</code>
+		`IExtensionRegistry`
 		class injected.
 	
 
@@ -36,7 +36,7 @@
 	
 		In Eclipse 3.x based plug-ins you query for a certain extension via
 		static methods of the
-		<code>Platform</code>
+		`Platform`
 		class. An example is listed in the following code.
 	
 	
@@ -48,7 +48,7 @@
 	<tip>
 		
 			You can access extensions of all extension points via the
-			<code>IExtensionRegistery</code>
+			`IExtensionRegistery`
 			.
 		
 	</tip>

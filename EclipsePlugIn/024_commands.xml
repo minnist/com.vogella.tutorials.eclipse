@@ -1,7 +1,7 @@
 
-	<title>Adding e4 commands, menus and toolbars to a 3.x API based applications
+== Adding e4 commands, menus and toolbars to a 3.x API based applications
 
-[[partialmigration_convertmenus">
+
 === Adding e4 menu entries
 		
 			Menus, handlers and commands can be contributed to an Eclipse application via
@@ -13,7 +13,7 @@
 			want to
 			contribute. The ID of the Eclipse IDE and Eclipse 3.x RCP
 			applications is hard coded to the
-			<code>org.eclipse.e4.legacy.ide.application</code>
+			`org.eclipse.e4.legacy.ide.application`
 			value.
 		
 
@@ -45,7 +45,7 @@ image::modelcontribution10.png[Contributing to the Eclipse menu,pdfwidth=60%]
 		
 			After you added a MenuContribution item you can contribute a menu.
 			The
-			<code>Parent-ID</code>
+			`Parent-ID`
 			must be the ID of the menu your are contributing
 			to.
 		
@@ -54,15 +54,12 @@ image::modelcontribution20.png[Contributing to the Eclipse menu,pdfwidth=60%]
 		
 
 		
-image::modelcontribution30.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Contributing to the Eclipse menu,pdfwidth=60%]
+image::modelcontribution30.png" scale="35[Contributing to the Eclipse menu,pdfwidth=60%]
 		
 
 		
 			The model fragment must be registered in the plugin.xml file via an extension to the
-			<code>org.eclipse.e4.workbench.model</code>
+			`org.eclipse.e4.workbench.model`
 			extension point, as demonstrated in the following listing.
 		
 		
@@ -75,7 +72,7 @@ image::modelcontribution30.png" scale="35" />
 
 	
 
-[[partialmigration_convertmenus_error">
+
 === Error analysis
 		In case of problems, check the source code of plugin.xml and validate that your model fragment is included.
 			Verify the name of the referred model fragment and ensure all
@@ -83,7 +80,7 @@ image::modelcontribution30.png" scale="35" />
 			configuration.
 		
 	
-[[partialmigration_converttoolbar">
+
 === Adding e4 toolbar entries to the appliation window
 		
 			Similar to menus you can contribute toolbar

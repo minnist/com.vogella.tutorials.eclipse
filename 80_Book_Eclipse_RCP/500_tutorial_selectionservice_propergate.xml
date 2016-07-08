@@ -1,36 +1,36 @@
 <chapter id="tutorial_usingeselectionservice">
-	<title>Exercise: Selection service
-[[tutorial_usinge4service_0">
+== Exercise: Selection service
+
 === Target of this exercise
 		
 			In this section you propagate the selection of the
-			<code>TableViewer</code>
+			`TableViewer`
 			in the
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			to your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			.
 		
 		
 			The
-			<code>org.eclipse.e4.ui.services</code>
+			`org.eclipse.e4.ui.services`
 			plug-in must be defined as dependency in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your application plug-in. You have done this in
 			<xref linkend="tutorial_api" />
 			.
 			Validate that this is the case.
 		
 	
-[[tutorial_usinge4service_1">
+
 === Retrieving the selection service
 
 		
 			In your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class,
 			acquire the
-			<code>ESelectionService</code>
+			`ESelectionService`
 			service via dependency injection.
 		
 		
@@ -41,7 +41,7 @@
 		
 	
 
-[[tutorial_usinge4service_2">
+
 === Setting the selection in TodoOverviewPart
 		
 			Use the selection service to set the selection, once the user
@@ -56,14 +56,14 @@
 			</programlisting>
 		
 	
-[[tutorial_usinge4service_3">
+
 === Review TodoDetailsPart
 		
 			If you followed the exercises in
 			<xref linkend="tutorial_api" />
 			,
 			your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class should already be correctly implemented. The relevant part of
 			the code is repeated in the following snippet.
 		
@@ -75,30 +75,30 @@
 			</programlisting>
 		
 	
-[[tutorial_usinge4service_4">
+
 === Validate selection propagation
 		
 			Start your application.
 			If you select a row in the JFace table, the
 			corresponding
-			<code>Todo</code>
+			`Todo`
 			object is propagated
 			via the selection
 			service
 			to the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class.
 		
 		<warning>
 
 			
 				Please keep in mind that ALL injections run before
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				, e.g., the annotated constructor, the annotated fields and the
 				annotated setter methods.
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				is executed afterwards. Hence the
-				<code>updateUserInterface()</code>
+				`updateUserInterface()`
 				method needs to
 				check if
 				your user
@@ -109,9 +109,9 @@
 		<note>
 			
 				It might also happen that
-				<code>setTodo()</code>
+				`setTodo()`
 				is called before the
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				method. For example, your part may be in a stack but is not
 				selected.
 				Eclipse does not construct the object for the part before
@@ -119,14 +119,14 @@
 				selected by the user. If the selection is set before the
 				part is
 				constructed, its @Inject method is called before the
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				method is called.
 			
 			
 				The
-				<code>updateUserInterface()</code>
+				`updateUserInterface()`
 				method call at the end of your
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				method covers this case.
 			
 		</note>
@@ -134,13 +134,13 @@
 			
 				If you see unwanted updates of Todo items in your table, you did not
 				implement the data binding correctly in the
-				<code>TodoOverviewPart</code>
+				`TodoOverviewPart`
 				class.
 				Ensure that
 				you call the
-				<code>dispose()</code>
+				`dispose()`
 				method on your instance of the
-				<code>DataBindingContext</code>
+				`DataBindingContext`
 				before creating a new binding. Otherwise the binding between the
 				user interface widgets and the old Todo objects stays
 				active. A new Todo will

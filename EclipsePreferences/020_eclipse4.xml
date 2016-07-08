@@ -1,5 +1,5 @@
 
-	<title>Preferences and dependency injection
+== Preferences and dependency injection
 
 	<indexterm>
 		<primary>Preferences</primary>
@@ -13,19 +13,19 @@
 		The Eclipse platform allows you to use dependency injection for
 		preferences handling.
 		To access preference you use the
-		<code>@Preference</code>
+		`@Preference`
 		annotation as qualifier for the dependency injection annotation. This means that
-		<code>@Preference</code>
+		`@Preference`
 		must be used together with
-		<code>@Inject</code>
+		`@Inject`
 		or one of the other annotations which implies dependency injection,
 		e.g., the
-		<code>@Execute</code>
+		`@Execute`
 		annotation.
 	
 	
 		The
-		<code>@Preference</code>
+		`@Preference`
 		annotation allows you to specify the
 		<parameter>nodePath</parameter>
 		and the
@@ -50,23 +50,23 @@
 
 	
 		Eclipse can also inject the
-		<code>IEclipsePreference</code>
+		`IEclipsePreference`
 		object. You can use this object for storing values. If you use the
 		_value_
 		parameter, Eclipse injects the value directly. Use the
 		_value_
 		parameter for read access, while for storing or changing values, use
 		the
-		<code>IEclipsePreference</code>
+		`IEclipsePreference`
 		object.
 	
 
 	
 		The following code snippet demonstrates how to put values into
 		the preferences store. Please note that
-		<code>@Preference</code>
+		`@Preference`
 		is used in combination with
-		<code>@Execute</code>
+		`@Execute`
 		.
 	
 	
@@ -80,7 +80,7 @@
 		The next snippet demonstrates the read access of preference
 		values. This time the preference annotation is used a
 		qualifier for
-		<code>@Inject</code>
+		`@Inject`
 		.
 	
 
@@ -98,19 +98,19 @@
 		changes of
 		preferences
 		in the
-		<code>InstanceScope</code>
+		`InstanceScope`
 		scope.
 		Preference values
 		in the
-		<code>ConfigurationScope</code>
+		`ConfigurationScope`
 		and
-		<code>DefaultScope</code>
+		`DefaultScope`
 		are not tracked.
 	
 
 	
 		If you use the injected
-		<code>IEclipsePreference</code>
+		`IEclipsePreference`
 		to store new preference values, these
 		values are stored in the instance
 		scope.

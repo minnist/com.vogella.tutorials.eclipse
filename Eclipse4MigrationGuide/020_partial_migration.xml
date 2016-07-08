@@ -1,6 +1,6 @@
 
-	<title>Using e4 API in 3.x applications
-[[partialmigration_overview">
+== Using e4 API in 3.x applications
+
 === Using e4 API based components in a 3.x applications
 		<indexterm>
 			<primary>Migration</primary>
@@ -19,7 +19,7 @@
 			chapters.
 		
 	
-[[partialmigration_ideextensions">
+
 === Extending the Eclipse IDE
 		The Eclipse IDE uses the same
 			approach as an Eclipse 3.x application on top of an e4 runtime. The e4 API based

@@ -1,7 +1,7 @@
-[[eclipsegit_clonecalculatorexample]]
+
 ==  Git exercise preparation
 
-[[clone_the_example_repository_and_import_projects_into_eclipse]]
+
 === Clone the repository and import the projects into Eclipse
 
 Use the `git clone` command to clone the Git repo from:
@@ -19,7 +19,7 @@ Both projects contain launch configurations which can be used from the Eclipse I
 Use them to start the calculator or run the unit tests.
 For Mac there is a specific launch configuration with _Mac_ in the name.
 
-[[git_repositories_view]]    		
+
 === Analyze the Git repository      
 
 Use the `git log` command to get an overview of the history of the Git repository.

@@ -1,6 +1,6 @@
 
-	<title>Exercise: Use model extensions
-[[renderer_xmi">
+== Exercise: Use model extensions
+
 === Exercise: Create the application
 		
 			Create a new Eclipse RCP application called
@@ -14,12 +14,12 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>com.vogella.e4.appmodel.extension</code>
+						`com.vogella.e4.appmodel.extension`
 					
 				</listitem>
 				<listitem>
 					
-						<code>com.vogella.e4.appmodel.renderer</code>
+						`com.vogella.e4.appmodel.renderer`
 					
 				</listitem>
 			</itemizedlist>
@@ -36,7 +36,7 @@
 		</note>
 		
 			Add your model name space to the
-			<filename>Application.e4xmi</filename>
+			_Application.e4xmi_
 			file. Please note that
 			<parameter>
 				xmlns:extension="http://www.vogella.com/ui/e4/extension"
@@ -66,14 +66,14 @@
 		
 	
 
-[[renderer_extensionpoint">
+
 === Register your factory via an extension point
 		
 			As a last step add the property
 			<property>rendererFactoryUri</property>
 			to your
 			product in
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			with a link to your new factory:
 			<parameter>platform:/plugin/com.vogella.e4.renderer.maps/com.vogella.e4.renderer.maps.MyRendererFactory</parameter>
 		
@@ -85,7 +85,7 @@
 		
 	
 
-[[renderer_run">
+
 === Run your application
 
 		

@@ -1,6 +1,6 @@
 
-	<title>Your first Eclipse RAP application
-[[firstrap_project">
+== Your first Eclipse RAP application
+
 === Create Project
 		
 			Create a new plug-in project "de.vogella.rap.first" via File ->
@@ -30,9 +30,9 @@ image::firstrap30.gif" />
 		
 	
 
-[[firstrap_run">
+
 === Run
-		 Select your <filename>MANIFEST.MF</filename>, right-click on it, select Run-as->
+		 Select your _MANIFEST.MF_, right-click on it, select Run-as->
 			Rap Application. 
 		
 			This should start your first RAP application. 
@@ -51,7 +51,7 @@ image::firstrap40.gif" />
 	
 
 
-[[firstrap_entrypoint">
+
 === Entrypoint
 		 Eclipse RAP requires an entrypoint similar to
 			"org.eclipse.core.runtime.applications" for Eclipse RCP applications.
@@ -60,7 +60,7 @@ image::firstrap40.gif" />
 		
 
 		 View your Entrypoint via the entension
-			"org.eclipse.rap.ui.workbench.entrypoint" in the file <filename>MANIFEST.MF</filename>
+			"org.eclipse.rap.ui.workbench.entrypoint" in the file _MANIFEST.MF_
 			.
 			Please note that the parameter
 			"default" is used in your runtime
@@ -70,7 +70,7 @@ image::firstrap40.gif" />
 	
 	
 
-[[firstrap_view">
+
 === Extending your UI
 		
 			Create now a view.

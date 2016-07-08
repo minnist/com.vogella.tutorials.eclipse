@@ -1,5 +1,5 @@
 
-	<title>Generating code
+== Generating code
 
 	
 		Eclipse has several possibilities to generate code for you. This
@@ -9,11 +9,11 @@
 	
 		For example, Eclipse can override methods from superclasses and
 		generate the
-		<code>toString()</code>
+		`toString()`
 		,
-		<code>hashcode()</code>
+		`hashcode()`
 		and
-		<code>equals()</code>
+		`equals()`
 		methods. It
 		can also generate getter and setter methods for attributes
 		of
@@ -32,7 +32,7 @@
 	
 	
 		To test the source generation, create the following class in your
-		<code>de.vogella.eclipse.ide.first</code>
+		`de.vogella.eclipse.ide.first`
 		project.
 	
 	

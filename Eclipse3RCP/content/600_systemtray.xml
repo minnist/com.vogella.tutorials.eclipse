@@ -1,6 +1,6 @@
 
 
-	<title>Tutorial: System Tray
+== Tutorial: System Tray
 	 The following add an icon for the RCP application to the system
 		tray and adds a menu to this icon. We add the functionality that if
 		the window is minimized

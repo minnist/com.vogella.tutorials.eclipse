@@ -1,11 +1,11 @@
 
-	<title>Exercise: Refactoring
-[[exercise_refactoring1">
+== Exercise: Refactoring
+
 === Preparation
 
 		
 			For the next examples change the
-			<code>MyFirstClass</code>
+			`MyFirstClass`
 			class to
 			the following code.
 		
@@ -16,7 +16,7 @@
 			</programlisting>
 		
 	
-[[exercise_refactoring2">
+
 === Extract method
 		
 			A useful refactoring is to mark code and create a method
@@ -33,10 +33,7 @@
 		
 
 		
-image::refactor20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Extract Method refactoring,pdfwidth=60%]
+image::refactor20.png[Extract Method refactoring,pdfwidth=60%]
 		
 		 After this refactoring the class should look like the following code.
 		
@@ -47,26 +44,23 @@ image::refactor20.png" />
 		
 
 	
-[[exercise_refactoring3">
+
 === Extract Constant
 		
 			You can also extract strings and create constants based on the
 			strings. Mark for
 			this example the
-			<code>"Hello Eclipse!"</code>
+			`"Hello Eclipse!"`
 			string in your source code, right-click on it and
 			select
 			menu:Refactor[Extract Constant]
-			. Name your new constant <code>HELLO</code>.
+			. Name your new constant `HELLO`.
 		
 
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/refactor30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Extract Constants,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/refactor30.png[Extract Constants,pdfwidth=60%]
 		
 
 		The string is now defined as a constant.

@@ -1,13 +1,13 @@
 
-	<title>Eclipse Logging
+== Eclipse Logging
 	
 		The
-		<code>org.eclipse.e4.core.services</code>
+		`org.eclipse.e4.core.services`
 		plug-in contains the
-		<code>Logger</code>
+		`Logger`
 		class which can get injected via dependency injection. The default
 		implementation is provided by the
-		<code>WorkbenchLogger</code>
+		`WorkbenchLogger`
 		class.
 	
 	
@@ -20,9 +20,9 @@
 
 	
 		The
-		<code>Logger</code>
+		`Logger`
 		implementation wraps the
-		<code>IStatus</code>
+		`IStatus`
 		into an simpler interface and provides several methods to log info,
 		warning or error message. The following code shows example calls.
 	
@@ -35,14 +35,14 @@
 
 	
 		Customers can replace the
-		<code>WorkbenchLogger</code>
+		`WorkbenchLogger`
 		implementation in the Context with there own implementation. For
 		example this way customers could log to the Eclipse system as well as
 		to other external log systems.
 	
 	
 		The log level can be setup in the
-		<filename>config.ini</filename>
+		_config.ini_
 		file of your application via the
 		<parameter>eclipse.log.level</parameter>
 		parameter. The value can be set to

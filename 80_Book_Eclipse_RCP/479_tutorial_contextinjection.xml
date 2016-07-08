@@ -1,6 +1,6 @@
 <chapter id="exercise_contextinjection">
-	<title>Optional exercise: Dependency injection for your objects
-[[exercise_contextinjectiontarget">
+== Optional exercise: Dependency injection for your objects
+
 === Target of this exercise
 
 		 The following demonstrates the usage of dependency injection
@@ -9,19 +9,19 @@
 		
 		
 			In this exercise you create an instance of the
-			<code>TodoWizard</code>
+			`TodoWizard`
 			via the
-			<code>ContextInjectionFactory.make()</code>
+			`ContextInjectionFactory.make()`
 			method.
 		
 	
-[[exercise_contextinjection_prepare">
+
 === Prepare the wizard classes for dependency injection 
 		
 			Add the
-			<code>@Inject</code>
+			`@Inject`
 			annotation to the constructor of your
-			<code>TodoWizardPage1</code>
+			`TodoWizardPage1`
 			class.
 		
 		
@@ -34,7 +34,7 @@
 
 		
 			Add the
-			<code>@Inject</code>
+			`@Inject`
 			annotation to the constructor of your wizard and to the two fields
 			for the wizard pages.
 		
@@ -46,33 +46,33 @@
 			</programlisting>
 		
 	
-[[exercise_doit">
+
 === Create the wizard via dependency injection 
 		
 			In your handle which opens the wizard get the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			injected and
 			create a new
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			with the
-			<code>createChild()</code>
+			`createChild()`
 			method.
 		
 		
 			Create a new Todo via the
-			<code>new()</code>
+			`new()`
 			Operator.
 			Add the new
-			<code>Todo</code>
+			`Todo`
 			to your local context under the
-			<code>Todo.class</code>
+			`Todo.class`
 			key.
 		
 
 		
 			Also create the two wizard pages and add them to the created
 			IEclipseContext. Afterwards created the wizard via the
-			<code>ContextInjectionFactory</code>
+			`ContextInjectionFactory`
 			class as demonstrated by the following code.
 		
 		

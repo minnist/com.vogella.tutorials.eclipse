@@ -1,11 +1,11 @@
 
-	<title>Working with one or multiple projects in a Git repository
+== Working with one or multiple projects in a Git repository
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>multi project repositories
 		</secondary>
 	</indexterm>
-[[multiprojects_workspace">
+
 === Workspace and projects
 		Eclipse allows working with projects that are not included in
 			the root folder of
@@ -19,7 +19,7 @@
 			of a Git repository.
 		
 	
-[[multiprojects_create">
+
 === Adding a new project to a Git repository
 		
 			To can add Eclipse projects to an Git repository. If you do this the project is moved to the Git repository and

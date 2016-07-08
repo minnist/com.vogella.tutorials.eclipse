@@ -1,13 +1,13 @@
 <chapter id="tutorial_usingeselectionservice_deletion">
-	<title>Optinal exercise: Selection service for deleting data
+== Optinal exercise: Selection service for deleting data
 
-[[tutorial_usinge4service_5">
+
 === Implement the RemoveTodoHandler handler
 		
 			Implement
-			<code>RemoveTodoHandler</code>
+			`RemoveTodoHandler`
 			so that the selected
-			<code>Todo</code>
+			`Todo`
 			is deleted.
 		
 
@@ -17,7 +17,7 @@
 			</programlisting>
 		
 	
-[[tutorial_usinge4service_validate">
+
 === Validate that the deletion works
 
 		
@@ -30,7 +30,7 @@
 		
 			Press the "Load Data" button to update the table. Validate that the
 			selected
-			<code>Todo</code>
+			`Todo`
 			is not available anymore.
 		
 		<note>
@@ -40,7 +40,7 @@
 				and you have to press the
 				_Load Data_
 				button in your
-				<code>TodoOverviewPart</code>
+				`TodoOverviewPart`
 				part.
 				You will fix that after you learned about the event bus of
 				Eclipse in
@@ -51,7 +51,7 @@
 
 	
 
-[[tutorial_usinge4service_6">
+
 === Test the context menu for deletion
 		<tip>
 			This exercise is optional
@@ -61,14 +61,14 @@
 			<xref linkend="tutorial_commandscontextmenu" />
 			you defined a context (popup) menu for your table.
 			As the
-			<code>RemoveTodoHandler</code>
+			`RemoveTodoHandler`
 			class is already
 			correctly implemented, you should be able to delete
 			selected items
 			with the
 			_Delete_
 			context menu without any changes in the
-			<code>RemoveTodoHandler</code>
+			`RemoveTodoHandler`
 			handler class.
 		
 		

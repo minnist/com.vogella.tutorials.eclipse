@@ -1,6 +1,6 @@
 
-	<title>Analyzing memory leaks with Eclipse
-[[heapdump">
+== Analyzing memory leaks with Eclipse
+
 === Using heap dumps to get a snapshot of the memory of an application
 		
 			A
@@ -18,7 +18,7 @@
 
 	
 
-[[eclipsemat_overview">
+
 === The Eclipse Memory Analyser (MAT) tooling
 		
 			The

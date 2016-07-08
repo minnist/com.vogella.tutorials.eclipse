@@ -1,5 +1,5 @@
 <section role="wrapper">
-	<title>Exercise: Getting started with SWT Designer
+== Exercise: Getting started with SWT Designer
 	<section>
 === Installation
 		
@@ -12,7 +12,7 @@
 === Building an user interface
 		
 			Right-click on your
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			class and select
 			menu:Open With[WindowBuilder Editor]
 			.
@@ -20,10 +20,10 @@
 		<note>
 			
 				WindowBuilder uses the
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				method to identify that a class is an Eclipse part. This method
 				needs to specify at least a
-				<code>Composite</code>
+				`Composite`
 				as parameter.
 			
 			
@@ -42,25 +42,19 @@
 		
 
 		
-image::wb_designtab.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Switch to design tab in the SWT Designer,pdfwidth=60%]
+image::wb_designtab.png[Switch to design tab in the SWT Designer,pdfwidth=60%]
 		
 		
 			Use SWT Designer to change the layout of the
-			<code>Composite</code>
+			`Composite`
 			of the
 			part
 			to a
-			<code>GridLayout</code>
+			`GridLayout`
 			.
 		
 		
-image::wb_changelayout.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Changing the layout with WB,pdfwidth=60%]
+image::wb_changelayout.png[Changing the layout with WB,pdfwidth=60%]
 		
 		
 			Click in the Palette on
@@ -71,23 +65,17 @@ image::wb_changelayout.png" />
 		
 
 		
-image::wb_button.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding buttons,pdfwidth=60%]
+image::wb_button.png[Adding buttons,pdfwidth=60%]
 		
 		
 			Add a
-			<code>Label</code>
+			`Label`
 			and a
-			<code>Text</code>
+			`Text`
 			field.
 		
 		
-image::wb_labeltext.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding label and text,pdfwidth=60%]
+image::wb_labeltext.png[Adding label and text,pdfwidth=60%]
 		
 	
 	<section>
@@ -96,7 +84,7 @@ image::wb_labeltext.png" />
 			Assign an SelectionLister (event handler)
 			to one of your
 			buttons for the
-			<code>widgetSelected</code>
+			`widgetSelected`
 			.
 			You can to this via a right-click on the
 			button. Select
@@ -104,10 +92,7 @@ image::wb_labeltext.png" />
 			.
 		
 		
-image::wb_eventhandler10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Assign an EventHandler to your Button,pdfwidth=60%]
+image::wb_eventhandler10.png[Assign an EventHandler to your Button,pdfwidth=60%]
 		
 
 	

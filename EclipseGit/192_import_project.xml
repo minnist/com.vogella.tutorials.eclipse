@@ -1,5 +1,5 @@
 
-	<title>Import projects from an existing repository
+== Import projects from an existing repository
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>import projects from repository
@@ -56,11 +56,11 @@
 	
 		The following screenshot shows several local repositories. To import
 		the project contained in one of them, select one entries and press the
-		<guibutton>Next</guibutton>
+		_Next_
 		button. To add a new local repository to this dialog (and the
 		_Git repositories_
 		view) use the
-		<guibutton>Add...</guibutton>
+		_Add..._
 		button.
 	
 

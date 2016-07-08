@@ -1,6 +1,6 @@
 
-	<title>Exercise: Configuring the IDE for an improved development experience
-[[tutorial_eclipsesetup_configuration">
+== Exercise: Configuring the IDE for an improved development experience
+
 === Why adjusting the Eclipse default configuration?
 		
 			The Eclipse IDE is relatively conservative configured to avoid
@@ -19,7 +19,7 @@
 		
 	
 
-[[tutorial_eclipsesetup_linkwitheditor">
+
 === Link Java editor with the Package Explorer view
 		
 			You can synchronize the currently selected
@@ -36,15 +36,12 @@
 			view.
 		
 		
-image::linkwitheditor10.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Editor,pdfwidth=60%]
+image::linkwitheditor10.png" scale="60[Editor,pdfwidth=60%]
 		
 	
 
 
-[[preferences_semicolon">
+
 === Automatic placement of semicolon
 		<indexterm>
 			<primary>Preferences</primary>
@@ -71,10 +68,7 @@ image::linkwitheditor10.png" scale="60" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="50" fileref="images/wayofworking10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Type Assists which allow setting the semicolon to the
+					<imagedata scale="50" fileref="images/wayofworking10.png[Type Assists which allow setting the semicolon to the
 						right
 						position
 					,pdfwidth=60%]
@@ -86,7 +80,7 @@ image::linkwitheditor10.png" scale="60" />
 		
 	
 
-[[tips_escape">
+
 === Auto-escape text pasted into Strings
 		<indexterm>
 			<primary>Preferences</primary>
@@ -125,7 +119,7 @@ image::linkwitheditor10.png" scale="60" />
 
 	
 
-[[tips_brackets">
+
 === Bracket highlighting
 		<indexterm>
 			<primary>Preferences</primary>
@@ -137,10 +131,7 @@ image::linkwitheditor10.png" scale="60" />
 		
 
 		
-image::jdtbrackets10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Highlight the enclosing brackets in JDT,pdfwidth=60%]
+image::jdtbrackets10.png" scale="30[Highlight the enclosing brackets in JDT,pdfwidth=60%]
 		
 		Before the change you would not see the enclosing brackets.
 			Afterwards, they will be slightly highlighted. This
@@ -148,21 +139,15 @@ image::jdtbrackets10.png" scale="30" />
 			which block you are.
 		
 		
-image::jdtbrackets20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Without highlight the enclosing brackets in JDT,pdfwidth=60%]
+image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT,pdfwidth=60%]
 		
 
 		
-image::jdtbrackets30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>With highlight the enclosing brackets in JDT,pdfwidth=60%]
+image::jdtbrackets30.png[With highlight the enclosing brackets in JDT,pdfwidth=60%]
 		
 	
 
-[[tips_autoformatimport">
+
 === Code cleanup during save via save actions
 		<indexterm>
 			<primary>Preferences</primary>
@@ -189,10 +174,7 @@ image::jdtbrackets30.png" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="50" fileref="images/wayofworking30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Save Actions,pdfwidth=60%]
+					<imagedata scale="50" fileref="images/wayofworking30.png[Save Actions,pdfwidth=60%]
 		
 		
 			Import statements are only automatically created if
@@ -214,7 +196,7 @@ image::jdtbrackets30.png" />
 		
 	
 
-[[tutorial_eclipsesetup_launchconfig">
+
 === Launch configuration
 		
 			In the Eclipse preferences dialog select the
@@ -224,14 +206,11 @@ image::jdtbrackets30.png" />
 			setting.
 		
 		
-image::exercise_lauchprevious11.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Launch previous launched application,pdfwidth=60%]
+image::exercise_lauchprevious11.png" scale="30[Launch previous launched application,pdfwidth=60%]
 		
 
 	
-[[tips_filterimports">
+
 === Type Filters
 		<indexterm>
 			<primary>Preferences</primary>
@@ -270,16 +249,13 @@ image::exercise_lauchprevious11.png" scale="30" />
 		
 		
 			The following shows the available packages for the
-			<code>List</code>
+			`List`
 			class in the
 			_Organize Imports_
 			dialog.
 		
 		
-image::importpackages10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Dialog for selecting the correct import statement,pdfwidth=60%]
+image::importpackages10.png[Dialog for selecting the correct import statement,pdfwidth=60%]
 		
 		
 			If you never use certain packages, for example AWT or Swing, you can
@@ -290,10 +266,10 @@ image::importpackages10.png" />
 		
 		
 			Press the
-			<guibutton>Add packages</guibutton>
+			_Add packages_
 			button
 			to add a specific package or the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button
 			to use
 			wildcards. The setting in the following screenshot
@@ -306,10 +282,7 @@ image::importpackages10.png" />
 			in Eclipse.
 		
 		
-image::importpackages20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Filtering packages from the Eclipse import,pdfwidth=60%]
+image::importpackages20.png[Filtering packages from the Eclipse import,pdfwidth=60%]
 		
 		Please note that Eclipse shows (in its default configuration)
 			only the packages that are
@@ -321,7 +294,7 @@ image::importpackages20.png" />
 			project.
 		
 	
-[[tips_completion">
+
 === Completion overwrites and insert guessed method arguments
 		
 		<indexterm>
@@ -338,10 +311,7 @@ image::importpackages20.png" />
 		
 
 		
-image::jdt_completion04.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>JDT completion,pdfwidth=60%]
+image::jdt_completion04.png" scale="30[JDT completion,pdfwidth=60%]
 		
 
 		
@@ -356,31 +326,22 @@ image::jdt_completion04.png" scale="30" />
 		
 
 		
-image::jdt_completion08.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Trigger code completion,pdfwidth=60%]
+image::jdt_completion08.png[Trigger code completion,pdfwidth=60%]
 		
 		Without this setting you would get the following result, which
 			results in a syntax error.
 		
 		
-image::jdt_completion20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>JDT completion,pdfwidth=60%]
+image::jdt_completion20.png[JDT completion,pdfwidth=60%]
 		
 		With this setting you get the following result.
 		
-image::jdt_completion10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Result,pdfwidth=60%]
+image::jdt_completion10.png[Result,pdfwidth=60%]
 		
 
 	
 
-[[tips_codecompletionactivationkey">
+
 === Auto activation key for code completion
 
 		
@@ -395,10 +356,7 @@ image::jdt_completion10.png" />
 			.
 		
 		
-image::jdt_contentassists20.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Auto activation key for code completion,pdfwidth=60%]
+image::jdt_contentassists20.png" scale="40[Auto activation key for code completion,pdfwidth=60%]
 		
 	
 

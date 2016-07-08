@@ -1,6 +1,6 @@
 
-	<title>Constructing the runtime application model
-[[contributecomponents_userchanges">
+== Constructing the runtime application model
+
 === User Changes
 		
 			Changes
@@ -21,9 +21,9 @@
 			recorded and
 			saved
 			independently in a
-			<filename>workbench.xmi</filename>
+			_workbench.xmi_
 			file in the
-			<filename>.metadata/.plugins/org.eclipse.e4.workbench</filename>
+			_.metadata/.plugins/org.eclipse.e4.workbench_
 			folder.
 		
 		<tip>
@@ -35,7 +35,7 @@
 			
 		</tip>
 	
-[[contributecomponents_overview">
+
 === Runtime application model
 		
 			At runtime the application model of an Eclipse application

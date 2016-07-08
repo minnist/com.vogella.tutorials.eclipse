@@ -1,36 +1,36 @@
 <chapter id="tutorial_commandscontextmenu">
-	<title>Exercise: Add a context menu to a table
-[[tutorial_commandscontextmenu_target">
+== Exercise: Add a context menu to a table
+
 === Target
 		
 			Implement a context menu for the table in your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			and connect it with the command for deleting todo items.
 		
 	
-[[tutorial_commandscontextmenu_dependencies">
+
 === Adding dependencies
 		
 			Add the following
 			plug-ins as dependencies to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your application
 			plug-in.
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.workbench.swt</code>
+						`org.eclipse.e4.ui.workbench.swt`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.model.workbench</code>
+						`org.eclipse.e4.ui.model.workbench`
 					
 				</listitem>
 			</itemizedlist>
 		
 	
-[[tutorial_commandscontextmenu_impl">
+
 === Implementation
 
 		
@@ -43,14 +43,14 @@
 		
 		
 			Change the
-			<code>RemoveTodoHandler</code>
+			`RemoveTodoHandler`
 			so that it writes, "Soon, I will really delete your todo".
 		
 
 		<note>
 			
 				You will change the
-				<code>RemoveTodoHandler</code>
+				`RemoveTodoHandler`
 				to delete the selected Todo once you have learned about the
 				selection
 				service in

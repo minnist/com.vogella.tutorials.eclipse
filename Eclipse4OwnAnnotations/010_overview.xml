@@ -1,5 +1,5 @@
 
-	<title>Custom annotations
+== Custom annotations
 
 	<indexterm>
 		<primary>Annotations</primary>
@@ -7,7 +7,7 @@
 	</indexterm>
 
 
-[[e4_customannotations1">
+
 === Custom annotations in Eclipse
 
 		
@@ -29,11 +29,9 @@
 		
 	
 
-[[e4_customannotations2">
+
 === Define an annotation processor via an OSGi service
-		<indexterm>
-			<primary>ExtendedObjectSupplier</primary>
-		</indexterm>
+		
 
 		
 			To process these custom annotations
@@ -41,9 +39,9 @@
 			OSGi
 			service for
 			the abstract
-			<code>ExtendedObjectSupplier</code>
+			`ExtendedObjectSupplier`
 			class from the
-			<code>org.eclipse.e4.core.di.suppliers</code>
+			`org.eclipse.e4.core.di.suppliers`
 			package. In this registration you define via
 			the
 			<property>dependency.injection.annotation</property>
@@ -63,11 +61,11 @@
 		
 		
 			The following snippet shows an example
-			<filename>DirectTodoSupplier.xml</filename>
+			_DirectTodoSupplier.xml_
 			file which registers an
-			<code>ExtendedObjectSupplier</code>
+			`ExtendedObjectSupplier`
 			for the
-			<code>DirectTodo</code>
+			`DirectTodo`
 			annotation.
 		
 		
@@ -80,7 +78,7 @@
 
 		
 			The annotation processor registered via the
-			<filename>DirectTodoSupplier.xml</filename>
+			_DirectTodoSupplier.xml_
 			file returns an object. The
 			following
 			code
@@ -88,9 +86,9 @@
 			annotation processor which
 			returns an instance
 			of an
-			<code>java.util.Optional&lt;Todo&gt;</code>
+			`java.util.Optional&lt;Todo&gt;`
 			class, in case a proper id is passed to the
-			<code>DirectTodo</code>
+			`DirectTodo`
 			annotation.
 		
 		

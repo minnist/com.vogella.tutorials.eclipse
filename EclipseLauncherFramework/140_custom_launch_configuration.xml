@@ -1,26 +1,26 @@
 
-	<title>How a launch can be triggered
+== How a launch can be triggered
 	Three different ways to trigger a launch exist.
 	
 		<itemizedlist>
 			<listitem>
-				Pass a launch configuration to an <code>﻿ILaunchConfigurationDelegate</code>, which runs
+				Pass a launch configuration to an `﻿ILaunchConfigurationDelegate`, which runs
 					the launch configuration
 			</listitem>
 			<listitem>
-				Use an <code>﻿ILaunchShortcut</code> and determine with an IEditorPart how a
+				Use an `﻿ILaunchShortcut` and determine with an IEditorPart how a
 					launch should be done
 			</listitem>
 			<listitem>
-				Use an <code>﻿ILaunchShortcut</code> and determine with an ISelection how a
+				Use an `﻿ILaunchShortcut` and determine with an ISelection how a
 					launch should be done
 			</listitem>
 		</itemizedlist>
 	
 	<section>
 === Creating a new launch configuration type
-		﻿The <code>org.eclipse.debug.core</code> plugin provides the
-				<code>﻿org.eclipse.debug.core.launchConfigurationTypes</code> extension point, where
+		﻿The `org.eclipse.debug.core` plugin provides the
+				`﻿org.eclipse.debug.core.launchConfigurationTypes` extension point, where
 			a new launch configuration type can be added.
 		The extension point can be configured as follows.
 		
@@ -28,48 +28,48 @@
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchConfigurationTypes.xml"/>
 			</programlisting>
 		
-		The different <property>modes</property> are <code>ILaunchManager.RUN_MODE</code>,
-				<code>ILaunchManager.DEBUG_MODE</code> and
-			<code>ILaunchManager.PROFILE_MODE</code>.
+		The different <property>modes</property> are `ILaunchManager.RUN_MODE`,
+				`ILaunchManager.DEBUG_MODE` and
+			`ILaunchManager.PROFILE_MODE`.
 		You can set one or more of these modes, as depicted in the programlisting above.
 		The <property>delegate</property> must be an implementation of the
-				﻿<code>ILaunchConfigurationDelegate</code> interface, which contains just one
+				﻿`ILaunchConfigurationDelegate` interface, which contains just one
 			method.
 		This method is responsible for the actual launch. The
-				<code>ILaunchConfiguration</code> contains launching attributes, which can be read
-			by using one the its <code>getAttribute</code> methods.
+				`ILaunchConfiguration` contains launching attributes, which can be read
+			by using one the its `getAttribute` methods.
 		Therefore we also specify an interface with key constants for the custom attributes:
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfigurationAttributes.java"/>
 			</programlisting>
 		
-		The <code>LaunchConfigurationDelegate</code> implementation, which works with this attribute may look like this:
+		The `LaunchConfigurationDelegate` implementation, which works with this attribute may look like this:
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfiguration.java"/>
 			</programlisting>
 		
-		Usually a <code>ILaunchConfigurationDelegate</code> is invoked by the UI of
-                ﻿<code>org.eclipse.debug.ui</code>, which is covered in <xref
+		Usually a `ILaunchConfigurationDelegate` is invoked by the UI of
+                ﻿`org.eclipse.debug.ui`, which is covered in <xref
                 linkend="eclipsecustomlaunchconfigurationui"/>.
 	
 	<section>
 === Using the ﻿ILaunchShortcut for ISelections and IEditorParts
 		In some cases, one would rather create a default launch configuration from an
-				<code>ISelection</code> or an <code>IEditorPart</code>, than manually configuring a
+				`ISelection` or an `IEditorPart`, than manually configuring a
 			launch configuration.
 		With this approach it is up to the programmer to determine how a launch should be done
-			according the current <code>ISelection</code> or <code>IEditorPart</code>.
-		Such an <code>ILaunchShortcut</code> can be defined with the
-				<code>﻿org.eclipse.debug.ui.launchShortcuts</code> extension point.
+			according the current `ISelection` or `IEditorPart`.
+		Such an `ILaunchShortcut` can be defined with the
+				`﻿org.eclipse.debug.ui.launchShortcuts` extension point.
 				
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchShortcut.xml"/>
 			</programlisting>
 		
-		The referenced <code>﻿LaunchShortcut</code> class must implement
-				﻿<code>ILaunchShortcut</code>.
+		The referenced `﻿LaunchShortcut` class must implement
+				﻿`ILaunchShortcut`.
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/LaunchShortcut.java"/>

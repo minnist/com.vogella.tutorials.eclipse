@@ -1,6 +1,6 @@
 
-	<title>Using and configuring templates and the code formatter
-[[tips_templates">
+== Using and configuring templates and the code formatter
+
 === Templates
 		<indexterm>
 			<primary>Preferences</primary>
@@ -19,7 +19,7 @@
 		
 		
 			For example, assume that you are frequently creating
-			<code>public void name(){}</code>
+			`public void name(){}`
 			methods. You could define a template which creates the
 			method body
 			for
@@ -31,28 +31,22 @@
 			.
 		
 		
-image::templates10.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Maintaining code templates,pdfwidth=60%]
+image::templates10.gif[Maintaining code templates,pdfwidth=60%]
 		
 
 		
 			Press the
-			<guibutton>New</guibutton>
+			_New_
 			button. Create the template shown in the following
 			screenshot.
 		
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/templates30.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Creating a new code template,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/templates30.gif[Creating a new code template,pdfwidth=60%]
 		
 		
-			<code>${cursor}</code>
+			`${cursor}`
 			indicates
 			that the cursor should be placed at this
 			position after
@@ -82,14 +76,11 @@ image::templates10.gif" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/templates40.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Using code templates,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/templates40.gif[Using code templates,pdfwidth=60%]
 		
 
 	
-[[tips_codeformater">
+
 === Code Formatter
 		<indexterm>
 			<primary>Preferences</primary>
@@ -112,9 +103,9 @@ image::templates10.gif" />
 		
 		
 			Press the
-			<guibutton>New</guibutton>
+			_New_
 			button to create a new set of formatting rules or press the
-			<guibutton>Edit</guibutton>
+			_Edit_
 			button to adjust an exising profile.
 		
 
@@ -123,7 +114,7 @@ image::codeformatter10.png[Code formatter,pdfwidth=60%]
 		
 	
 
-[[tips_codetemplates">
+
 === Code Templates
 		<indexterm>
 			<primary>Preferences</primary>
@@ -143,7 +134,7 @@ image::codeformatter10.png[Code formatter,pdfwidth=60%]
 			In the code tree you have the templates. Select, for example,
 			menu:Code [Method Body]
 			and press the
-			<guibutton>Edit</guibutton>
+			_Edit_
 			button to edit this template and to remove the "todo"
 			comment.
 		
@@ -151,9 +142,6 @@ image::codeformatter10.png[Code formatter,pdfwidth=60%]
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/codetemplates10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Removing the todos from the Java code templates,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/codetemplates10.png[Removing the todos from the Java code templates,pdfwidth=60%]
 		
 	

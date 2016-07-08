@@ -1,18 +1,18 @@
 
-	<title>Using syncExec() and asyncExec()
+== Using syncExec() and asyncExec()
 	
 		In Eclipse 3.x API based plug-ins you cannot use dependency injection
 		to get the
-		<code>UISynchronize</code>
+		`UISynchronize`
 		instance injected.
 	
 	
 		In this case you can use the
-		<code>Display</code>
+		`Display`
 		class which provides the 
-		<code>syncExec()</code>
+		`syncExec()`
 		and
-		<code>asyncExec()</code>
+		`asyncExec()`
 		methods to update the user interface from another
 		thread.
 	

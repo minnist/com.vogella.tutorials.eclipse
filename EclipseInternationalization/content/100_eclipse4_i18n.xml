@@ -1,10 +1,8 @@
 
-	<title>Eclipse 4 internationalization
-[[eclipse4_i18n1">
+== Eclipse 4 internationalization
+
 === Translation with POJOs
-		<indexterm>
-			<primary>Translation service</primary>
-		</indexterm>
+		
 		
 		
 		To define your translations you simply define a Java object with
@@ -21,9 +19,9 @@
 		
 			The fields of such a Java object are initialized when an instance is
 			injected via the
-			<code>@Translation</code>
+			`@Translation`
 			annotation. The
-			<code>org.eclipse.e4.core.services</code>
+			`org.eclipse.e4.core.services`
 			plug-in contains the annotations which are used for translations.
 		
 		
@@ -38,7 +36,7 @@
 			section.
 		
 	
-[[eclipse4_i18_searchprocess">
+
 === Search process for translation files
 
 		
@@ -86,11 +84,11 @@
 			</orderedlist>
 		
 
-	[[eclipse4_i18_messagesannotation">
+	
 	=== Using the optional @Message annotation
 			
 				The optional
-				<code>@Message</code>
+				`@Message`
 				annotation
 				can be used to define
 				the location of the
@@ -99,17 +97,17 @@
 				should be cached by
 				the Eclipse platform.
 				See the Javadoc of the
-				<code>@Message</code>
+				`@Message`
 				annotation for more information on this topic.
 			
 
 		
 
-	[[eclipse4_i18_postconstruct">
+	
 	=== Using the optional @PostConstruct in message POJOs
 			
 				It is possible to initialize fields via the
-				<code>@PostConstruct</code>
+				`@PostConstruct`
 				method in a message object as demonstrated in the following snippet.
 			
 			
@@ -120,7 +118,7 @@
 			
 			<note>
 				
-					<code>@PostConstruct</code>
+					`@PostConstruct`
 					does not support parameter
 					injection in the context of a message
 					object.
@@ -130,13 +128,13 @@
 		
 
 	
-[[eclipse4_i18n2">
+
 === Dynamic language switch
 		
 			The currently active
 			locale, e.g., "de" or "en", is represented by an
 			object of type
-			<code>Locale</code>
+			`Locale`
 			.
 			The Eclipse runtime supports a dynamic switch of this locale at
 			runtime.
@@ -144,7 +142,7 @@
 		<note>
 			
 				The type of the
-				<code>TranslationService.LOCALE</code>
+				`TranslationService.LOCALE`
 				key was changed from String to Locale in Eclipse 4.4.2.
 			
 		</note>
@@ -175,7 +173,7 @@
 		
 			To change the active
 			locale at runtime use the
-			<code>ILocaleChangeService</code>
+			`ILocaleChangeService`
 			service. This is demonstrated by the following class which could be
 			used as part of a tool control.
 		
@@ -197,35 +195,35 @@
 
 	
 
-[[eclipse4_MessageRegistry">
+
 === Using the BaseMessageRegistry&lt;M&gt; to track language
 			changes
 		
 		
 			Instead of implementing a method to receive the
-			<code>Message</code>
+			`Message`
 			object on locale change in a part, like
-			<code>@Inject public void translate(@Translation Messages messages)
-			</code>
+			`@Inject public void translate(@Translation Messages messages)
+			`
 			, a
-			<code>BaseMessageRegistry&lt;M&gt;</code>
+			`BaseMessageRegistry&lt;M&gt;`
 			can be implemented.
 		
 		
 			The
-			<code>BaseMessageRegistry&lt;M&gt;</code>
+			`BaseMessageRegistry&lt;M&gt;`
 			contains methods to register controls, which are supposed to be
 			translated. So basically the
-			<code>BaseMessageRegistry&lt;M&gt;</code>
+			`BaseMessageRegistry&lt;M&gt;`
 			will be informed about new
-			<code>Message</code>
+			`Message`
 			objects and applies the new values to its registered controls.
 		
 		
 			The
-			<code>BaseMessageRegistry&lt;M&gt;</code>
+			`BaseMessageRegistry&lt;M&gt;`
 			itself gets the
-			<code>Message</code>
+			`Message`
 			object injected.
 		
 		
@@ -236,12 +234,12 @@
 		
 		
 			Because the
-			<code>MessagesRegistry</code>
+			`MessagesRegistry`
 			class is annoted with
-			<code>@Creatable</code>
+			`@Creatable`
 			, it is instanciated by the framework and can directly be injected into
 			the
-			<code>postConstruct</code>
+			`postConstruct`
 			method.
 		
 		

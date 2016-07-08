@@ -1,10 +1,8 @@
 
-	<title>JFace TreeViewer
-[[jfacetreeoverview">
+== JFace TreeViewer
+
 === Using viewers to display a tree
-		<indexterm>
-			<primary>TreeViewer (JFace)</primary>
-		</indexterm>
+		
 
 		<indexterm>
 			<primary>JFace</primary>
@@ -12,44 +10,44 @@
 		</indexterm>
 		
 			The
-			<code>TreeViewer</code>
+			`TreeViewer`
 			class provides viewer support for displaying trees. The usage of this
 			class is
 			similar to the
-			<code>TableViewer</code>
+			`TableViewer`
 			class.
 			The main difference
 			is
 			that the
-			<code>TreeViewer</code>
+			`TreeViewer`
 			class
 			requires a structured
 			content provider.
 			Typically your content
 			provider has to implement the
-			<code>ITreeContentProvider</code>
+			`ITreeContentProvider`
 			interface to be used with your
-			<code>TreeViewer</code>
+			`TreeViewer`
 			class.
 		
 
 		
 			The usage of the
-			<code>TreeViewer</code>
+			`TreeViewer`
 			class is demonstrated in
 			<xref linkend="jfacefilebrowser" />
 			.
 		
 
 	
-[[jfacetreeselectionlistener">
+
 === Selection and double-click listener
 
 		
 			JFace allows you to access the SWT controls to define listeners on
 			your viewer. For example you can
 			add a
-			<code>SelectionListener</code>
+			`SelectionListener`
 			implementation
 			to the
 			SWT
@@ -73,7 +71,7 @@
 			The
 			following
 			example shows how to expand an instance of a
-			<code>TreeViewer</code>
+			`TreeViewer`
 			with a
 			double
 			click.
@@ -87,7 +85,7 @@
 	
 	<section>
 === Adjusting tree columns TreeColumns on expand
-		In case a <code>TreeViewer</code> has multiple columns it does not look good, if the first
+		In case a `TreeViewer` has multiple columns it does not look good, if the first
 			column, which contains the expandable items is clipped.
 		
 image::ClippedTreeColumn.png" scale="40"/>
@@ -96,14 +94,14 @@ image::ClippedTreeColumn.png" scale="40"/>
 		
 		
 		In order to let a column fit to it's contents width you can invoke the columns
-				<code>pack</code> method like that.
+				`pack` method like that.
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/swt/ExpandlistenerWithPack.java"/>
 			</programlisting>
 		
-		With this code every column of the <code>Tree</code> will have the appropriate width,
-			when an <code>TreeItem</code> is expaned, so that the contents of the column is not
+		With this code every column of the `Tree` will have the appropriate width,
+			when an `TreeItem` is expaned, so that the contents of the column is not
 			clipped.
 	
 

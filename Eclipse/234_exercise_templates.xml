@@ -1,21 +1,18 @@
 <chapter id="exercise_templates">
-	<title>Exercise: Creating and using template
-[[exercise_templates1">
+== Exercise: Creating and using template
+
 === Create template for try/catch/finally
 		Create a template which creates the following block.
 		
-image::tryfinally10.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Try catch finally template,pdfwidth=60%]
+image::tryfinally10.png" scale="60[Try catch finally template,pdfwidth=60%]
 		
 		
 			Place the cursor after the first bracket after the
-			<code>try</code>
+			`try`
 			statement.
 		
 	
-[[exercise_templates2">
+
 === Use template
 		Test your template in the Java editor and ensure that it works
 			as

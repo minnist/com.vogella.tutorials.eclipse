@@ -1,8 +1,8 @@
 
-	<title>More on commands and handlers
+== More on commands and handlers
 
 
-[[commands_parameter">
+
 === Passing parameters to commands
 		<indexterm>
 			<primary>Commands</primary>
@@ -21,15 +21,12 @@
 			The ID is the identifier which you can use to get the parameter value
 			injected via
 			the
-			<code>@Named</code>
+			`@Named`
 			annotation.
 		
 
 		
-image::e4_commandpara10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Add a parameter to a command,pdfwidth=60%]
+image::e4_commandpara10.png" scale="35[Add a parameter to a command,pdfwidth=60%]
 		
 		
 			In your HandledMenuItem or HandledToolItem add a parameter and put
@@ -42,10 +39,7 @@ image::e4_commandpara10.png" scale="35" />
 			field is passed to the handler of the command.
 		
 		
-image::e4_commandpara30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Passing a parameter from a menu entry to a command,pdfwidth=60%]
+image::e4_commandpara30.png[Passing a parameter from a menu entry to a command,pdfwidth=60%]
 		
 
 
@@ -53,7 +47,7 @@ image::e4_commandpara30.png" />
 			
 				The ID of the parameter is the important one. This ID must be
 				injected via the
-				<code>@Named</code>
+				`@Named`
 				annotation and used as
 				<parameter>Name</parameter>
 				(second field) during the definition of the menu or toolbar. This is
@@ -62,16 +56,13 @@ image::e4_commandpara30.png" />
 		</warning>
 
 		
-image::parameter_relationship10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Relationship between parameters in command and menu,pdfwidth=60%]
+image::parameter_relationship10.png" scale="35[Relationship between parameters in command and menu,pdfwidth=60%]
 		
 
 		
 			To get the parameter injected into your handler class you specify the
 			ID of the parameter via the
-			<code>@Named</code>
+			`@Named`
 			annotation. This is demonstrated in the
 			following code
 			example.
@@ -87,7 +78,7 @@ image::parameter_relationship10.png" scale="35" />
 		<tip>
 			
 				Alternatively to injecting each parameter, you can also inject the
-				<code>ParameterizedCommand</code>
+				`ParameterizedCommand`
 				command and access
 				the parameters via API.
 			
@@ -102,11 +93,9 @@ image::parameter_relationship10.png" scale="35" />
 
 
 
-[[commandsmore_coreexpressions">
+
 === Usage of core expressions
-		<indexterm>
-			<primary>Core expressions</primary>
-		</indexterm>
+		
 		
 			The visibility of menus, toolbars and their entries can be restricted
 			via
@@ -114,18 +103,18 @@ image::parameter_relationship10.png" scale="35" />
 			. You add the corresponding attribute in the
 			application model to the
 			ID defined by the
-			<code>org.eclipse.core.expressions.definitions</code>
+			`org.eclipse.core.expressions.definitions`
 			extension point in the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file.
 		
 		
 			To add this extension point to your application, open the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file and select the
 			_Dependencies_
 			tab in the editor. Add the
-			<code>org.eclipse.core.expressions</code>
+			`org.eclipse.core.expressions`
 			plug-in in the
 			_Required Plug-ins_
 			section.
@@ -137,7 +126,7 @@ image::parameter_relationship10.png" scale="35" />
 			_Add_
 			button
 			and add the
-			<code>org.eclipse.core.expressions.definitions</code>
+			`org.eclipse.core.expressions.definitions`
 			extension. You define an ID under which the core expression can be
 			referred to in the application model.
 		
@@ -157,9 +146,9 @@ image::parameter_relationship10.png" scale="35" />
 			for the
 			selection is
 			currently called
-			<code>org.eclipse.ui.selection</code>
+			`org.eclipse.ui.selection`
 			. In Eclipse 3.x this variable is called
-			<code>selection</code>
+			`selection`
 			.
 		
 		
@@ -174,17 +163,11 @@ image::parameter_relationship10.png" scale="35" />
 		
 
 		
-image::e4_coreexpression10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Enabling the core expression for a menu entry,pdfwidth=60%]
+image::e4_coreexpression10.png" scale="40[Enabling the core expression for a menu entry,pdfwidth=60%]
 		
 
 		
-image::e4_coreexpression12.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Assigning it to the menu entry,pdfwidth=60%]
+image::e4_coreexpression12.png" scale="30[Assigning it to the menu entry,pdfwidth=60%]
 		
 
 		 This approach is similar to the definition of core expressions
@@ -192,7 +175,7 @@ image::e4_coreexpression12.png" scale="30" />
 		
 		
 			The values available for Eclipse 3.x are contained in the
-			<code>ISources</code>
+			`ISources`
 			interface and documented in the
 			http://wiki.eclipse.org/Command_Core_Expressions"> Eclipse
 				core expressions wiki
@@ -206,11 +189,11 @@ image::e4_coreexpression12.png" scale="30" />
 
 	
 
-[[commandsmore_coreexpressionsown">
+
 === Evaluate your own values in core expressions
 		
 			You can also place values in the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			of your application and use these for your visible-when evaluation.
 		
 		
@@ -220,7 +203,7 @@ image::e4_coreexpression12.png" scale="30" />
 			<parameter>myactivePartId</parameter>
 			key in the context (you will learn more
 			about modifying the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			later).
 		
 		
@@ -232,12 +215,12 @@ image::e4_coreexpression12.png" scale="30" />
 
 		
 			The following shows an example core expression which evaluates to
-			<code>true</code>
+			`true`
 			if an
 			<parameter>myactivePartId</parameter>
 			key
 			with the value
-			<code>com.example.e4.rcp.ui.parts.todooverview</code>
+			`com.example.e4.rcp.ui.parts.todooverview`
 			is found in the context.
 		
 
@@ -251,10 +234,7 @@ image::e4_coreexpression12.png" scale="30" />
 			control the visibility.
 		
 		
-image::e4_coreexpression20.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Assigning the visible-when core expression to the menu
+image::e4_coreexpression20.png" scale="35[Assigning the visible-when core expression to the menu
 						entry
 					,pdfwidth=60%]
 		

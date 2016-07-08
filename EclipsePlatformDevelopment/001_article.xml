@@ -44,7 +44,7 @@ Version 0.3, 06.07.2016
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-contribution.txt"?>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_contributingtoeclipse.adoc[]
-[[prereq">
+
 === Prerequisites
 		
 			This tutorial assumes that you have already Eclipse plug-in

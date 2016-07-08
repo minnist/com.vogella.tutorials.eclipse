@@ -1,6 +1,6 @@
 <chapter id="tutorial_preferences_application">
-	<title>Exercise: Using preferences in a handler and in a part
-[[tutorial_preferences_application_target">
+== Exercise: Using preferences in a handler and in a part
+
 === Target
 		
 			In this exercise you modify the handler within the
@@ -17,17 +17,17 @@
 			
 		</note>
 	
-[[tutorial_preferencesstorage">
+
 === Using preferences in your handler
 		
 			Extend your
-			<code>EnterCredentialsHandler</code>
+			`EnterCredentialsHandler`
 			handler to get and store the user via
 			the preference
 			values. As
 			<parameter>nodePath</parameter>
 			is not explicitly set for the
-			<code>@Execugte</code>
+			`@Execugte`
 			method, it uses 
 			_com.example.e4.rcp.todo_, 
 			which is the Bundle-SymbolicName of your application plug-in.
@@ -47,7 +47,7 @@
 		<note>
 			
 				The
-				<code>@Preference</code>
+				`@Preference`
 				annotation
 				is not yet released as official API. See
 				<xref linkend="e4overview_api" />
@@ -67,11 +67,11 @@
 			</programlisting>
 		
 	
-[[tutorial_preferences_validate">
+
 === Validating the implementation
 		
 			Start your application. Use the menu entry which uses the
-			<code>EnterCredentialsHandler</code>
+			`EnterCredentialsHandler`
 			handler and enter a user into the dialog.
 			Close the dialog and open
 			it

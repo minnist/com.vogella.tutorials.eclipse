@@ -1,6 +1,6 @@
 
-	<title>Defining the dependencies of the plug-in
-[[osgiarch_dependencies">
+== Defining the dependencies of the plug-in
+
 === Specifying plug-in dependencies via the manifest file
 		<indexterm>
 			<primary>OSGi</primary>
@@ -15,7 +15,7 @@
 			OSGi prevents access to classes
 			without a defined
 			dependency and throws a
-			<code>ClassNotFoundException</code>
+			`ClassNotFoundException`
 			. The only exception are packages from the Java runtime
 			environment (based on the Bundle-RequiredExecutionEnvironment
 			definition of the plug-in);
@@ -29,7 +29,7 @@
 			If you add a dependency to your manifest file, the Eclipse IDE
 			automatically adds the
 			corresponding
-			<filename>JAR</filename>
+			_JAR_
 			file to your project classpath.
 		
 		You can define dependencies either as plug-in dependencies or
@@ -78,7 +78,7 @@ image::osgi_dependency_definition10.png[Dependency management,pdfwidth=60%]
 		
 	
 
-[[osgiarch_livecycle">
+
 === Life cycle of plug-ins in OSGi
 		<indexterm>
 			<primary>OSGi</primary>
@@ -129,14 +129,11 @@ image::osgi_dependency_definition10.png[Dependency management,pdfwidth=60%]
 		
 		This life cycle is depicted in the following graphic.
 		
-image::osgi_livecycle10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>OSGi life cycle,pdfwidth=60%]
+image::osgi_livecycle10.png" scale="30[OSGi life cycle,pdfwidth=60%]
 		
 	
 
-[[osgiarch_dynamic">
+
 === Dynamic imports of packages
 		
 			For legacy reasons OSGi supports a dynamic import of

@@ -1,7 +1,7 @@
 
-	<title>Enter the dependencies
+== Enter the dependencies
 
-[[plugin_creatinge4_dependencies">
+
 === Add the plug-in dependencies
 		
 			In the upcoming exercises you will use
@@ -15,12 +15,12 @@
 			Remember that
 			_application plug-in_
 			is the short form for the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.
 		
 		
 			Open the
-			<filename>META-INF/MANIFEST.MF</filename>
+			_META-INF/MANIFEST.MF_
 			file in your
 			_application plug-in_
 			and select the
@@ -66,7 +66,7 @@
 			</itemizedlist>
 		
 	
-[[package_creatinge4_dependencies">
+
 === Validating
 
 		The result should be similar to the following screenshot.

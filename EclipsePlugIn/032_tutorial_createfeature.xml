@@ -1,7 +1,7 @@
 
-	<title>Exercise: Create a feature for your plug-in
+== Exercise: Create a feature for your plug-in
 
-[[p2deployplugin_feature">
+
 === Create a feature project
 		
 			Create a
@@ -23,7 +23,7 @@ image::pluginfeature10.png[Creating a feature project for the plug-in export,pdf
 image::pluginfeature20.png[Creating a feature project for the plug-in export,pdfwidth=60%]
 		
 	
-[[p2deployplugin_categorydefinition">
+
 === Create a category definition
 		
 			In your feature project create a new category definition, via the menu entry
@@ -37,7 +37,7 @@ image::categorydefinition10.png"/>
 		
 		
 			Press the
-			<guibutton>New Category</guibutton>
+			_New Category_
 			button and create a category with a name which
 			describes your
 			functionality. Add your feature to this category.

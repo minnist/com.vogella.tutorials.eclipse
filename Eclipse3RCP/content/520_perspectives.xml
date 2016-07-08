@@ -1,8 +1,8 @@
 
-	<title>Tutorial: Adding an Perspectives
+== Tutorial: Adding an Perspectives
 	 Create a new RCP project called
 		"de.vogella.rcp.intro.perspective". Use the "RCP application with a
-		view" as a template. In <filename>plugin.xml</filename> add a new extension point
+		view" as a template. In _plugin.xml_ add a new extension point
 		"org.eclipse.ui.perspectives". Give the perspective with the id
 		"de.vogella.rcp.intro.perspective.perspective" and the name
 		"vogella.com Perspective". Change the class name to
@@ -20,7 +20,7 @@
 		</mediaobject>
 	
 	 Click on the "class*" link to create the class. The 
-		<code>createInitialLayout()</code> method in your new class is
+		`createInitialLayout()` method in your new class is
 		responsible for creating the
 		new perspective. We reuse the existing
 		view in the coding. After this

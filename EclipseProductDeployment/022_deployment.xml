@@ -1,6 +1,6 @@
 
-	<title>JRE and headless build
-[[deployproduct_jre">
+== JRE and headless build
+
 === Including the required JRE into the export
 		<indexterm>
 			<primary>Deployment</primary>
@@ -16,7 +16,7 @@
 			searches in
 			the
 			installation directory for a folder called
-			<filename class="directory">jre</filename>
+			<filename class="directory">jre_
 			and for a
 			contained
 			Java-VM.
@@ -33,11 +33,9 @@
 			tab of your product configuration file.
 		
 	
-[[deployproduct_headless">
+
 === Headless build
-		<indexterm>
-			<primary>Headless build</primary>
-		</indexterm>
+		
 
 		<indexterm>
 			<primary>Deployment</primary>

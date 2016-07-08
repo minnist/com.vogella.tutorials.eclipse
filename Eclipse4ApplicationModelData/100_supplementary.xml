@@ -1,11 +1,9 @@
 
 
-	<title>Persisted model attributes
-[[supplementary_elements">
+== Persisted model attributes
+
 === Adding additional information on the model elements
-		<indexterm>
-			<primary>Supplementary data</primary>
-		</indexterm>
+		
 		
 			The
 			_Supplementary_
@@ -17,11 +15,9 @@
 		
 	
 
-[[supplementary_tags">
+
 === Tags
-		<indexterm>
-			<primary>Tags</primary>
-		</indexterm>
+		
 		
 			All model elements can have
 			_tags_
@@ -37,9 +33,9 @@
 			are automatically persisted by the Eclipse runtime between
 			application restarts and are
 			represented as a
-			<code>List</code>
+			`List`
 			of type
-			<code>String</code>
+			`String`
 			.
 		
 		<tip>
@@ -54,7 +50,7 @@
 				based on
 				this with the
 				selector
-				<code>.MPartStack.active</code>
+				`.MPartStack.active`
 				. If you want to use tag as CSS selectors, don't use whitespace in
 				them.
 			
@@ -95,7 +91,7 @@ image::supplementary10.png[Supplementary info for a Window to set it to maximize
 		
 	
 
-[[supplementary_variables">
+
 === Variables
 		
 			You can also define
@@ -116,11 +112,9 @@ image::supplementary10.png[Supplementary info for a Window to set it to maximize
 		
 	
 
-[[supplementary_persistence">
+
 === Persisted state
-		<indexterm>
-			<primary>Persisted state</primary>
-		</indexterm>
+		
 		
 			Model elements can have persisted state key/value pairs assigned
 			to them. If you
@@ -146,18 +140,16 @@ image::supplementary10.png[Supplementary info for a Window to set it to maximize
 		
 	
 
-[[transientdata">
+
 === Transient data
-		<indexterm>
-			<primary>Transient data</primary>
-		</indexterm>
+		
 		
 			Each model element can also attach transient data to it.
 			This
 			transient data is based on a
-			<code><![CDATA[Map<String , Object>]]></code>
+			`<![CDATA[Map<String , Object>]]>`
 			structure and can be accessed on the model object via the
-			<code>getTransientData()</code>
+			`getTransientData()`
 			method.
 		
 		
@@ -169,7 +161,7 @@ image::supplementary10.png[Supplementary info for a Window to set it to maximize
 			As transient data is not persisted, it can not be assigned to
 			model
 			elements via the application model editor, you need to use the
-			<code>getTransientData()</code>
+			`getTransientData()`
 			method.
 		
 	

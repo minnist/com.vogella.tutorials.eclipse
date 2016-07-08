@@ -1,5 +1,5 @@
 <chapter>
-	<title>Exercise: Build a first SWT UI
+== Exercise: Build a first SWT UI
 
 	<section>
 === TodoOverviewPart
@@ -7,7 +7,7 @@
 			Add a
 			button
 			to your
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			class. Besides the button add a
 			label
 			with the default text set to:
@@ -15,12 +15,12 @@
 		
 		
 			Attach a
-			<code>SelectionListener</code>
+			`SelectionListener`
 			to the
 			button. If the button
 			is pressed, read the number of Todos from
 			your
-			<code>ITodoService</code>
+			`ITodoService`
 			service and assign the number to
 			the text of the label.
 		
@@ -45,20 +45,17 @@
 				<imageobject>
 					<!-- TODO: old screenshot, space between items:9 missing -->
 					<imagedata fileref="images/todo-overview-first.png"
-						scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+						scale="60[,pdfwidth=60%]
 		
 	
 
 
 
-[[swtuserinterface_solution">
+
 === Example code for TodoOverviewPart
 		
 			Your resulting implementation of
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			should be similar to the following classes.
 		
 

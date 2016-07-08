@@ -1,8 +1,8 @@
 
-	<title>Eclipse development good practices
+== Eclipse development good practices
 
 
-[[bestpractices_packagename">
+
 === Project, package and class names
 		<indexterm>
 			<primary>Naming conventions</primary>
@@ -19,7 +19,7 @@
 			domain
 			_mycompany.com_
 			you package name space would start with
-			<code>com.mycompany</code>
+			`com.mycompany`
 			. This avoids name collision with packages contributed by other
 			plug-ins.
 		
@@ -55,12 +55,12 @@
 							components. For
 							example,
 							the
-							<code>com.example</code>
+							`com.example`
 							package
 							may have the
-							<code>com.example.parts</code>
+							`com.example.parts`
 							and
-							<code>com.example.handler</code>
+							`com.example.handler`
 							sub-package.
 						</entry>
 					</row>
@@ -73,7 +73,7 @@
 							name. For example, a class used as a part
 							implementation,
 							should be called
-							<code>[PurposeDescription]Part</code>
+							`[PurposeDescription]Part`
 							.
 						</entry>
 					</row>
@@ -82,7 +82,7 @@
 		</table>
 	
 
-[[e4modelids_requirements">
+
 === Naming conventions for model identifiers (IDs)
 		<indexterm>
 			<primary>Naming conventions</primary>
@@ -151,7 +151,7 @@
 
 	
 
-[[bestpractices_components">
+
 === Create isolated components
 		
 			It is important to separate your application components into
@@ -187,7 +187,7 @@
 
 
 
-[[bestpracticese_extensionpoints">
+
 === Usage of your custom extension points
 		
 			The programming model of Eclipse 4 has reduced the need for
@@ -210,7 +210,7 @@
 	
 
 
-[[bestpractices_minimizeapi">
+
 === Avoid releasing unnecessary API
 		
 			Eclipse plug-ins explicitly declare their API via their exported
@@ -225,7 +225,7 @@
 		
 	
 
-[[bestpractices_dependencies">
+
 === Packages vs. plug-in dependencies
 		OSGi allows you to define dependencies via plug-ins (Require-Bundle) or via packages (Import-Package) in the
 			manifest file.

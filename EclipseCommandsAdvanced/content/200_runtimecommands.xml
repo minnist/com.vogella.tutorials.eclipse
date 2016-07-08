@@ -1,5 +1,5 @@
 
-	<title>Defining commands at runtime
+== Defining commands at runtime
 	You can create commands at runtime. Create project
 		"de.vogella.rcp.commands.runtimecommands" using the "Hello RCP"
 		template. 

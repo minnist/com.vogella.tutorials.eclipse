@@ -1,5 +1,5 @@
 
-	<title>Notifications and Adapters with Adapter and
+== Notifications and Adapters with Adapter and
 		EContentAdapter
 	
 		EMF has the possibility to inform observers / listeners about
@@ -33,14 +33,14 @@
 	
 
 		Create the following to two classes
-		<code>ElementObserver</code>
+		`ElementObserver`
 		and
-		<code>TotalObserver</code>
+		`TotalObserver`
 		. The
-		<code>ElementObserver</code>
+		`ElementObserver`
 		instance listens to changes of the list (delete, insert items)
 		and an
-		<code>TotalObserver</code>
+		`TotalObserver`
 		instance
 		listens also in addition to changes of the attributes of the
 		elements

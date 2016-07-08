@@ -1,11 +1,11 @@
 
-	<title>Eclipse API best practice
-[[bestpractise_eventadmin">
+== Eclipse API best practice
+
 === Application communication
 		
 			A simple way of propagating user interface selections is the
 			selection service (
-			<code>ESelectionService</code>
+			`ESelectionService`
 			) of the Eclipse platform. Use this service to
 			propagate the current
 			selection of a window.
@@ -14,12 +14,12 @@
 			For general scoped communication it is recommended to use the
 			Eclipse
 			context (
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			).
 		
 		
 			The event service (
-			<code>IEventBroker</code>
+			`IEventBroker`
 			)
 			is a good choice, if there is no scope involved in the
 			communication
@@ -43,7 +43,7 @@
 		
 
 	
-[[bestpracticese_eventcontextvariable">
+
 === Example: Using events together with the IEclipseContext
 		
 			The following example demonstrates the registration for events
@@ -55,7 +55,7 @@
 			variable called
 			<parameter>myactivePartId</parameter>
 			into the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			. This can be done via the following code.
 		
 		
@@ -78,15 +78,12 @@
 		
 
 		
-image::event_visibility10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Restrict the visibility of a command,pdfwidth=60%]
+image::event_visibility10.png" scale="35[Restrict the visibility of a command,pdfwidth=60%]
 		
 
 	
 
-[[bestpractices_osig">
+
 === Which dependency injection approach to use for your implementation
 		
 			The application can add or modify the behavior of the dependency injection
@@ -165,7 +162,7 @@ image::event_visibility10.png" scale="35" />
 			model. A
 			model add-on registers itself typically to
 			events from the
-			<code>IEclipseBroker</code>
+			`IEclipseBroker`
 			and
 			can contribute functionality based on these events.
 		

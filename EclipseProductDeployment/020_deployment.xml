@@ -1,14 +1,12 @@
 
-	<title>Deployment of your application
-[[deployproduct_overview">
+== Deployment of your application
+
 === Creating a stand-alone version of the application
 		<indexterm>
 			<primary>Export</primary>
 			<see>Deployment</see>
 		</indexterm>
-		<indexterm>
-			<primary>Deployment</primary>
-		</indexterm>
+		
 		An Eclipse application needs to be exported (also called:
 			deployed) to run outside of Eclipse.
 			Your product configuration file
@@ -36,7 +34,7 @@
 			for.
 		
 	
-[[deployproduct_howtoexport">
+
 === Exporting via the product file
 		
 			To export the product switch to your product configuration file,
@@ -48,7 +46,7 @@
 			In the wizard you can specify the location of the exported
 			product via
 			the
-			<filename class="directory">Directory</filename>
+			<filename class="directory">Directory_
 			property in the
 			_Destination_
 			group/section. The export wizard is depicted in the following
@@ -86,7 +84,7 @@ image::pdeexportwizard10.png[,pdfwidth=60%]
 			_Generate p2 repository_
 			option is selected, an (p2) update site is generated in a folder
 			called
-			<filename>repository</filename>
+			_repository_
 			. This folder can be used to update the Eclipse RCP application.
 		
 		
@@ -99,16 +97,14 @@ image::pdeexportwizard10.png[,pdfwidth=60%]
 		
 	
 
-[[deployproduct_buildproperties">
+
 === Defining which artifacts are included in the export
-		<indexterm>
-			<primary>build.properties</primary>
-		</indexterm>
+		
 		
 			The artifacts which are included in an export are
 			defined by
 			the
-			<filename>build.properties</filename>
+			_build.properties_
 			file of the plug-in. Eclipse provides an graphical editor for this
 			file.
 		
@@ -130,18 +126,18 @@ image::pdeexportwizard10.png[,pdfwidth=60%]
 			resources available in the IDE. But to make them available in the
 			exported application you need to select them
 			in the
-			<filename>build.properties</filename>
+			_build.properties_
 			file.
 		
 		
 			It is good practice to include new required resources immediately in
 			the
-			<filename>build.properties</filename>
+			_build.properties_
 			file. This avoids errors after the export of your
 			application.
 		
 	
-[[deployproduct_mandatoryartifacts">
+
 === Mandatory plug-in artifacts in build.properties 
 		
 			Make sure the following items (if available) are included in each
@@ -181,7 +177,7 @@ image::pdeexportwizard10.png[,pdfwidth=60%]
 
 		
 			The screenshot below shows
-			<filename>build.properties</filename>
+			_build.properties_
 			file for a plug-in with most of these components.
 		
 		
@@ -190,15 +186,13 @@ image::buildproperties10.png[,pdfwidth=60%]
 
 	
 
-[[deployment_deltapack">
+
 === Export for multiple platforms via the delta pack
 		<indexterm>
 			<primary>Deployment</primary>
 			<secondary>Multiple platforms</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Delta pack</primary>
-		</indexterm>
+		
 		
 			The
 			_delta pack_
@@ -214,7 +208,7 @@ image::buildproperties10.png[,pdfwidth=60%]
 			includes binary launchers
 			for all platforms
 			in the
-			<code>org.eclipse.equinox.executable</code>
+			`org.eclipse.equinox.executable`
 			feature.
 		
 		

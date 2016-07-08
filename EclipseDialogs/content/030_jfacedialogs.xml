@@ -1,10 +1,10 @@
 
-	<title>JFace Dialogs
+== JFace Dialogs
 	<indexterm>
 		<primary>Dialog</primary>
 		<secondary>JFace</secondary>
 	</indexterm>
-[[dialogs_purpose">
+
 === Dialogs from JFace
 		
 			JFace contains several
@@ -24,16 +24,14 @@
 		</note>
 	
 
-[[dialogs_jfacemessagedialogstatic">
+
 === Using the static helper methods of the JFace MessageDialog class
-		<indexterm>
-			<primary>MessageDialog</primary>
-		</indexterm>
+		
 
 
 		
 			The
-			<code>MessageDialog</code>
+			`MessageDialog`
 			class
 			provides static methods to open commonly used
 			dialogs, for
@@ -54,12 +52,12 @@
 			</programlisting>
 		
 	
-[[dialogs_jfacemessagedialog">
+
 === Using the JFace MessageDialog class directly
 
 		
 			The
-			<code>MessageDialog</code>
+			`MessageDialog`
 			class also allows the customization of the
 			buttons in the dialog.
 			The
@@ -83,7 +81,7 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 		
 			Several of these dialogs return the user selection, e.g.
 			the
-			<code>openConfirm()</code>
+			`openConfirm()`
 			method returns
 			true if the user selected the
 			_OK_
@@ -97,14 +95,12 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 			</programlisting>
 		
 	
-[[dialogs_jface_errordialog">
+
 === ErrorDialog
-		<indexterm>
-			<primary>ErrorDialog</primary>
-		</indexterm>
+		
 		
 			The
-			<code>ErrorDialog</code>
+			`ErrorDialog`
 			class can be used
 			to display one or more errors to the user. If an
 			error
@@ -138,33 +134,33 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
 		
 	
-[[tutorialjface_owndialog">
+
 === Creating a custom dialog
 		
 			The
-			<code>org.eclipse.jface.dialogs.Dialog</code>
+			`org.eclipse.jface.dialogs.Dialog`
 			class can be extended to create your own
 			dialog implementation. This
 			class creates an
 			area in which you can place
 			controls and add
 			an
-			<guibutton>OK</guibutton>
+			_OK_
 			and
-			<guibutton>Cancel</guibutton>
+			_Cancel_
 			button (or other custom buttons).
 		
 		
 			Your class needs to implement the
-			<code>createDialogArea()</code>
+			`createDialogArea()`
 			method. This method gets a
-			<code>Composite</code>
+			`Composite`
 			which expects to get a
-			<code>GridData</code>
+			`GridData`
 			object assigned as its layout data. Via the
-			<code>super.createDialogArea(parent)</code>
+			`super.createDialogArea(parent)`
 			method call, you can create a
-			<code>Composite</code>
+			`Composite`
 			to which you can add your controls. This is demonstrated by the
 			following example code.
 		
@@ -177,7 +173,7 @@ image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
 			
 				The example code demonstrates how to set the title of your custom
 				dialog via the
-				<code>configureShell()</code>
+				`configureShell()`
 				method.
 			
 		</tip>
@@ -189,28 +185,28 @@ image::jface_customdialog02.png[Custom dialog,pdfwidth=60%]
 		
 	
 
-[[tutorialjface_userdefined">
+
 === TitleAreaDialog
 		
 			You can also implement your custom
 			dialog
 			based on the
-			<code>TitleAreaDialog</code>
+			`TitleAreaDialog`
 			class.
 		
 		
 
-			<code>TitleAreaDialog</code>
+			`TitleAreaDialog`
 			has a reserved space for providing feedback to the user. You can set
 			the text in this space via the
-			<code>setMessage()</code>
+			`setMessage()`
 			and
-			<code>setErrorMessage()</code>
+			`setErrorMessage()`
 			methods.
 		
 		
 			The following example shows a custom defined
-			<code>TitleAreaDialog</code>
+			`TitleAreaDialog`
 			.
 		
 

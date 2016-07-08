@@ -1,5 +1,5 @@
 <section id="e4services_osgiown">
-	<title>OSGi services and Eclipse dependency injection
+== OSGi services and Eclipse dependency injection
 	
 		OSGi services are available for dependency injection in Eclipse
 		applications.
@@ -40,7 +40,7 @@
 
 	
 		For example, if you have an OSGi service declared for the
-		<code>ITodoService</code>
+		`ITodoService`
 		interface you can inject it via the following code snippet into a
 		field of an Eclipse part.
 	

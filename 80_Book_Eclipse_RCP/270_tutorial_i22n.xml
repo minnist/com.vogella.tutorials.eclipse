@@ -1,25 +1,25 @@
 <chapter id="tutorial_i22n">
-	<title>Optional Exercise: Internationalization for the application model
+== Optional Exercise: Internationalization for the application model
 
-[[tutorial_i22n_target">
+
 === Target
 		In this exercise you translate the relevant parts of your
 			application model and use the translation service.
 		
 	
 
-[[tutorial_i22n_translation_modeltext">
+
 === Create the translations for the application model
 		
 			Create the
-			<filename>OSGI-INF/l10n</filename>
+			_OSGI-INF/l10n_
 			folder in your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.
 		
 		
 			Create the
-			<filename>bundle.properties</filename>
+			_bundle.properties_
 			file with key/values for the parts in your application model in this
 			folder. The file might look like the following.
 		
@@ -32,23 +32,23 @@
 			Create at least one additional translation file for another language. For example, if English is your default
 			language,
 			create the
-			<filename>bundle_de.properties</filename>
+			_bundle_de.properties_
 			file to provide a German translation. Ensure that the translation values are different.
 		
 	
 
 
-[[tutorial_i22n_translation_buildproperties">
+
 === Adjust the build.properties file
 		
 			Add the created property files to your build.properties file in the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in to make
 			it available in an exported application.
 		
 	
 
-[[tutorial_i22n_translation_model">
+
 === Translate the application model
 		Use the defined keys with the % prefix in your application
 			model. The following screenshot demonstrates that for
@@ -61,7 +61,7 @@ image::exercise_appmodel_translation10.png[Using the translation keys in the app
 
 	
 
-[[tutorial_i22n_translation_model_test">
+
 === Test the translation of the application model
 		
 
@@ -87,7 +87,7 @@ image::exercise_appmodel_translation10.png[Using the translation keys in the app
 			
 		</warning>
 	
-[[tutorial_i22n_note">
+
 === Application model and translations
 		
 			By default, it is not possible to define that the translations for the

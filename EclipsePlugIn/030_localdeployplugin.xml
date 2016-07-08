@@ -1,14 +1,10 @@
 
-	<title>Local deployment of your plug-in
-[[deployplugin_overview">
-=== Options for installing a plug-in
-		<indexterm>
-			<primary>Plug-in deployment</primary>
-		</indexterm>
+== Local deployment of your plug-in
 
-		<indexterm>
-			<primary>Deployment of plug-ins</primary>
-		</indexterm>
+=== Options for installing a plug-in
+		
+
+		
 
 		
 			You have several options to make your plug-in available in your
@@ -25,7 +21,7 @@
 				<listitem>
 					
 						Export your plug-in and copy it into the
-						<filename>dropins</filename>
+						_dropins_
 						folder of your Eclipse installation. This option is useful for a simple distribution scenario,
 						where you only have
 						to
@@ -49,7 +45,7 @@
 		
 	
 
-[[deployplugin_direct">
+
 === Installing your plug-in from your Eclipse IDE
 		<indexterm>
 			<primary>Plug-in deployment</primary>
@@ -83,10 +79,8 @@ image::eclipseideexport20.png[Export plug-in into host IDE,pdfwidth=60%]
 
 	
 
-[[deployplugin_export">
-		<indexterm>
-			<primary>Dropins folder</primary>
-		</indexterm>
+
+		
 === Export plug-in and put into dropins folder
 		<indexterm>
 			<primary>Plug-in deployment</primary>
@@ -97,7 +91,7 @@ image::eclipseideexport20.png[Export plug-in into host IDE,pdfwidth=60%]
 		
 			If you export your plug-in locally, you can put it into the
 			Eclipse
-			<filename class="directory">dropins</filename>
+			<filename class="directory">dropins_
 			folder of your Eclipse installation. After a restart
 			of your Eclipse
 			your plug-in should be available and ready for
@@ -126,20 +120,20 @@ image::eclipseideexport30.png"/>
 
 		
 			Press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 			This creates a
-			<filename>JAR</filename>
+			_JAR_
 			file with the exported plug-in in the selected directory.
 		
 
 		
 			Copy this
-			<filename>JAR</filename>
+			_JAR_
 			file
 			to
 			the
-			<filename class="directory">dropins</filename>
+			<filename class="directory">dropins_
 			directory in your Eclipse installation directory and
 			restart your
 			running Eclipse.
@@ -154,17 +148,11 @@ image::eclipseideexport30.png"/>
 
 	
 
-[[deployplugin_export_updatesite">
+
 === Deployment using an update site
-		<indexterm>
-			<primary>Update sites</primary>
-		</indexterm>
-		<indexterm>
-			<primary>p2 update site</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Deployment using update sites</primary>
-		</indexterm>
+		
+		
+		
 		<indexterm>
 			<primary>Plug-in deployment</primary>
 			<secondary>

@@ -1,4 +1,4 @@
-[[_use_the_emphasis_git_blame_emphasis_feature]]
+
 == Use the git blame feature
 	
 Using the History View and filtering the history is a useful tool for inspecting the project history. 

@@ -1,10 +1,8 @@
 
-	<title>Eclipse online resources
-[[eclipseonlinehelp">
+== Eclipse online resources
+
 === Online documentations
-		<indexterm>
-			<primary>Online help for Eclipse</primary>
-		</indexterm>
+		
 		
 			The Eclipse help system is available from within your Eclipse
 			installation as well as online.
@@ -19,10 +17,7 @@
 
 		
 image::onlinehelp10.png" scale="40"
-						format="PNG" />
-				</imageobject>
-				<textobject>
-					<phrase>Starting the Eclipse help,pdfwidth=60%]
+						format="PNG[Starting the Eclipse help,pdfwidth=60%]
 		
 
 		
@@ -36,11 +31,9 @@ image::onlinehelp10.png" scale="40"
 		
 	
 
-[[eclipseweb">
+
 === Web resources
-		<indexterm>
-			<primary>Web resources for Eclipse</primary>
-		</indexterm>
+		
 		
 			The Eclipse webpage also contains a list of relevant resources
 			about

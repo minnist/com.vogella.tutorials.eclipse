@@ -1,6 +1,6 @@
 
-	<title>Theming
-[[theming_overview">
+== Theming
+
 === Overview
 		A Eclipse RAP application look similar to a Eclipse RCP
 			application running in a browser. While this is cool, it is not
@@ -12,7 +12,7 @@
 			files. The following will give an demonstration how to do this.
 		
 	
-[[theming_example">
+
 === Example
 		Create a new Eclipse RAP project "de.vogella.rap.theming". Use
 			the "RAP Mail Template" as template.  

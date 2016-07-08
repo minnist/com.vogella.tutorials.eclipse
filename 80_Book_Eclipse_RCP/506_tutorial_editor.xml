@@ -1,33 +1,33 @@
 <chapter id="tutorial_editorpartservice">
-	<title>Exercise: Implement an editor
+== Exercise: Implement an editor
 
-[[tutorial_editorpartservice0">
+
 === Add the plug-in dependencies
 		<note>
 			
 				If you did the optional exercise
 				<xref linkend="tutorial_commandscontextmenu" />
 				you should have already the required dependencies in your
-				<code>com.example.e4.rcp.todo</code>
+				`com.example.e4.rcp.todo`
 				plug-in. Skip this step in this case.
 			
 		</note>
 		
 			Add the following
 			plug-ins as dependency to the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.model.workbench</code>
+						`org.eclipse.e4.ui.model.workbench`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.workbench.swt</code>
+						`org.eclipse.e4.ui.workbench.swt`
 					
 				</listitem>
 
@@ -35,13 +35,13 @@
 		
 	
 
-[[tutorial_editorpartservice1">
+
 === Convert TodoDetailsPart to an editor
 		
 			Use the
-			<code>MDirtyable</code>
+			`MDirtyable`
 			attribute to mark the
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			as dirty once the user changes data via the user interface.
 		
 		
@@ -72,7 +72,7 @@
 
 		
 			Add the following method to your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class to save the changed data. This method will be used by the part
 			service.
 		
@@ -85,14 +85,14 @@
 			</programlisting>
 		
 	
-[[tutorial_editorpartservice2">
+
 === Implement the save handler
 		
 			Change your
-			<code>SaveAllHandler</code>
+			`SaveAllHandler`
 			handler class, so that the part service is used to
 			call the
-			<code>@Persist</code>
+			`@Persist`
 			method of all parts which are marked as dirty.
 		
 
@@ -112,7 +112,7 @@
 	
 
 
-[[tutorial_editorpartservice_validate">
+
 === Validating
 		
 			Start your application and select an entry in the table of your
@@ -120,7 +120,7 @@
 			element.
 			Modify the
 			selected
-			<code>Todo</code>
+			`Todo`
 			in the
 			_Details_
 			part. Ensure that the part is marked as dirty.
@@ -135,12 +135,12 @@
 		
 		
 			Create a new
-			<code>Todo</code>
+			`Todo`
 			item, with the wizard and ensure that the wizard still works.
 		
 	
 
-[[tutorial_editorpartservice3">
+
 === Confirmation dialog for modified data
 		<note>
 			This exercise is optional. It is a repetition of the usage of
@@ -152,15 +152,15 @@
 		
 		
 			In your
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			class
 			trigger
 			a JFace confirmation dialog if the selection in the table
 			of
-			<code>TodoOverviewPart</code>
+			`TodoOverviewPart`
 			changes
 			and if
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			contains
 			modified data. See
 			<xref linkend="dialogs_jfacemessagedialogstatic" />
@@ -168,7 +168,7 @@
 		
 		
 			The confirmation dialog should allow the user to prevent an update in
-			<code>TodoDetailsPart</code>
+			`TodoDetailsPart`
 			in case it has unsaved data.
 		
 

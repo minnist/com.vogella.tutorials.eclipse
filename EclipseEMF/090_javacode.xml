@@ -1,6 +1,6 @@
 
-	<title>Using the model code
-[[javacode_overview">
+== Using the model code
+
 === Overview
 		
 			The generated model code is standard Java code and can be used
@@ -11,14 +11,14 @@
 		
 
 	
-[[javacode_usage">
+
 === Example
 		
 			Create a new plug-in project called
 			_de.vogella.emf.webpage.usingmodel_
 			.
 			Add the following dependency to your
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			.
 		
 		
@@ -39,7 +39,7 @@
 		
 			<tip>
 				The
-				<code>*PackageImpl.init()</code>
+				`*PackageImpl.init()`
 				method needs
 				to
 				be

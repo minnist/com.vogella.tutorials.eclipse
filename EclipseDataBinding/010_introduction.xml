@@ -1,17 +1,15 @@
 
-	<title>Data binding with JFace
+== Data binding with JFace
 
 
-[[databinding_overview">
+
 === Using JFace data binding
 		<indexterm>
 			<primary>Data binding</primary>
 			<seealso>JFace data binding</seealso>
 		</indexterm>
 
-		<indexterm>
-			<primary>Observable (data binding)</primary>
-		</indexterm>
+		
 
 		
 			The
@@ -34,7 +32,7 @@
 			<property>text</property>
 			property of the
 			SWT
-			<code>Text</code>
+			`Text`
 			widget. If the user changes the text in the user interface, the
 			corresponding
 			property in the Java object is updated.
@@ -52,26 +50,26 @@
 			JFace data binding provides API to register to changes in SWT widgets and JFace UI elements.
 			Other Java object must
 			implement this support. For example you can implement
-			<code>PropertyChangeSupport</code>
+			`PropertyChangeSupport`
 			according to the Java
 			Bean specification in these Java elements. Or you can use
 			the
-			<code>WritableValue</code>
+			`WritableValue`
 			interface from JFace
 			inside the model.
 		
 		
 			The
-			<code>IObservableValue</code>
+			`IObservableValue`
 			interface is the basis for
 			observing properties in JFace.
 			The
 			<property>Properties API</property>
 			provides factories to create
-			<code>IObservableValue</code>
+			`IObservableValue`
 			objects.
 			The main factories are to created instances of
-			<code>IObservableValue</code>
+			`IObservableValue`
 			are listed in the following table.
 
 			<table frame='all' id="databinding_observable_factories">
@@ -88,11 +86,11 @@
 					<tbody>
 						<row>
 							<entry>
-								<code>PojoProperties</code>
+								`PojoProperties`
 							</entry>
 							<entry>
 								Used to create
-								<code>IObservableValue</code>
+								`IObservableValue`
 								for Java objects. The term Pojo (Plain old Java object) is used to describe a Java object which
 								does
 								not implement
@@ -102,27 +100,27 @@
 						</row>
 						<row>
 							<entry>
-								<code>BeanProperties</code>
+								`BeanProperties`
 							</entry>
 							<entry>
 								Used for Java Beans. A Java Bean is a Java object which follows the Java Bean
 								specification. This specification
 								requires that the class
 								implements
-								<code>getter</code>
+								`getter`
 								and
-								<code>setter</code>
+								`setter`
 								methods for all its attributes. It must also
 								implement
 								property change
 								support via the
-								<code>PropertyChangeSupport</code>
+								`PropertyChangeSupport`
 								class and propagate changes to registered listeners.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>WidgetProperties</code>
+								`WidgetProperties`
 							</entry>
 							<entry>
 								Used for properties of
@@ -132,7 +130,7 @@
 						</row>
 						<row>
 							<entry>
-								<code>ViewerProperties</code>
+								`ViewerProperties`
 							</entry>
 							<entry>
 								Used for properties of
@@ -141,7 +139,7 @@
 						</row>
 						<row>
 							<entry>
-								<code>Properties</code>
+								`Properties`
 							</entry>
 							<entry>
 								Used for properties of non specialized types, like Objects, Collections or Maps.
@@ -149,7 +147,7 @@
 						</row>
 						<row>
 							<entry>
-								<code>Observables</code>
+								`Observables`
 							</entry>
 							<entry>
 								Used for properties of special Objects, Collections, Maps
@@ -163,7 +161,7 @@
 
 		
 			The following code demonstrates how to create an
-			<code>IObservableValue</code>
+			`IObservableValue`
 			object
 			for the
 			<property>firstName</property>
@@ -181,11 +179,11 @@
 
 		
 			The next example demonstrates how to create an
-			<code>IObservableValue</code>
+			`IObservableValue`
 			for the
 			<property>text</property>
 			property of an SWT
-			<code>Text</code>
+			`Text`
 			widget called
 			<property>firstNameText</property>
 			.
@@ -223,28 +221,24 @@
 			</itemizedlist>
 		
 	
-[[databinding_generics">
+
 === JFace data binding and generics
 		
 			In Eclipse 4.6 the data binding framework has been partially generified. This work is planned to be finished in
 			4.7.
 			Currently you need to use
-			<code>@SuppressWarnings("unchecked")</code>
+			`@SuppressWarnings("unchecked")`
 			sometimes in your data binding code to avoid compiler warnings.
 		
 	
-[[databinding_pojovsbean">
+
 === Example for a Java bean implementation
-		<indexterm>
-			<primary>POJO</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Java Bean</primary>
-		</indexterm>
+		
+		
 
 		
 			A Java class which provides
-			<code>PropertyChangeSupport</code>
+			`PropertyChangeSupport`
 			looks
 			like the following example.
 		
@@ -265,11 +259,11 @@
 	
 
 
-[[databinding_model_writablevalue">
+
 === Using JFaces WritableValue class to track changes
 		
 			If you are able to use JFace API in your domain model, you can use
-			<code>WritableValue</code>
+			`WritableValue`
 			to provide the option to track values.
 		
 		
@@ -279,7 +273,7 @@
 		
 	
 
-[[databinding_pojos">
+
 === Data binding and Java objects without change notification
 		
 		
@@ -292,21 +286,21 @@
 			For example, you can connect the
 			<parameter>text</parameter>
 			property of a SWT
-			<code>Text</code>
+			`Text`
 			field to the
 			<parameter>summary</parameter>
 			field of a
-			<code>Todo</code>
+			`Todo`
 			object, even if Todo cannot be observed.
 			In this case, updates in the summary of the
-			<code>Todo</code>
+			`Todo`
 			object will not update the
-			<code>Text</code>
+			`Text`
 			widget. But relevant change in the
-			<code>Text</code>
+			`Text`
 			widget
 			user interface will update the
-			<code>Todo</code>
+			`Todo`
 			property.
 		
 	

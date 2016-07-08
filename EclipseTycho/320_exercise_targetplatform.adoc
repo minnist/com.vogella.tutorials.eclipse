@@ -1,4 +1,4 @@
-[[exerise_tychotargetplatform]]
+
 == Exercise: Using a target platform for the build
 
 === Create project and target definition file

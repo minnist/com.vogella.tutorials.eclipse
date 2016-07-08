@@ -1,8 +1,8 @@
 
-	<title>Tutorial: Using the Activator and exporting your bundle
+== Tutorial: Using the Activator and exporting your bundle
 	
 		In this exercise you create another bundle which uses an
-		<code>Activator</code>
+		`Activator`
 		. You also run it within Eclipse
 		At the
 		end of this chapter you will
@@ -12,7 +12,7 @@
 		later in a
 		stand-alone OSGi server.
 	
-[[createbundle">
+
 === Create a new Bundle
 		
 			Create a new simple plug-in project
@@ -21,7 +21,7 @@
 			.
 		
 	
-[[codebundle">
+
 === Coding
 		 Create the following thread class.
 		
@@ -38,11 +38,11 @@
 			</programlisting>
 		
 	
-[[runbundle">
+
 === Run
 		
 			Select your
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file, right-click it and select
 			menu:Run As[Run
 					Configuration
@@ -56,7 +56,7 @@
 			_
 			.
 			This adds the
-			<code>org.eclipse.osgi</code>
+			`org.eclipse.osgi`
 			bundle to your run configuration.
 		
 		
@@ -91,7 +91,7 @@ image::firstbundle40.gif" />
 			</tip>
 		
 	
-[[exportbundle">
+
 === Export your bundle
 		Export your bundle. This will allow you to install it into a
 			OSGi runtime. Select your bundle and choose File -> Export -> Plug-in

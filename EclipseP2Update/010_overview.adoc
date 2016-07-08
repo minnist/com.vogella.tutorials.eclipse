@@ -1,7 +1,7 @@
-[[p2intro]]
+
 == Eclipse application updates with p2
 
-[[p2intro_overview]]
+
 === Eclipse application updates
 
 (((Application updates)))
@@ -15,7 +15,7 @@ The update and installation of functions with p2 is typical based on _feature pr
 It is possible to update complete products or individual features.
 In the terminology of p2 these features are _installable units_.
 		
-[[p2intro_creating]]
+
 === Creating p2 update sites
 		
 Installable units can be grouped into a p2 repository. 

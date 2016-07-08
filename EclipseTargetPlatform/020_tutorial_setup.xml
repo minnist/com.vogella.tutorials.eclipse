@@ -1,6 +1,6 @@
 
-	<title>Exercise: Setting up a target platform
-[[tuturial_targetplatform_project">
+== Exercise: Setting up a target platform
+
 === Creating a target definition file
 		
 			Create a new project called
@@ -13,24 +13,18 @@
 		
 
 		
-image::targetdefinitionproject10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Create a project for your target definition file,pdfwidth=60%]
+image::targetdefinitionproject10.png[Create a project for your target definition file,pdfwidth=60%]
 		
 		
 			Create a new target definition file via the
 			menu:File[New > Other... > Plug-in Development > Target Definition]
 			menu path. Use the
-			<code>com.example.rcp.target</code>
+			`com.example.rcp.target`
 			as file name.
 		
 
 		
-image::tutorial_targetdefinition10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Define target definition file,pdfwidth=60%]
+image::tutorial_targetdefinition10.png[Define target definition file,pdfwidth=60%]
 		
 		
 			Press the
@@ -39,10 +33,7 @@ image::tutorial_targetdefinition10.png" />
 		
 
 		
-image::tutorial_targetdefinition20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Add content to target definition file,pdfwidth=60%]
+image::tutorial_targetdefinition20.png[Add content to target definition file,pdfwidth=60%]
 		
 		
 			Select
@@ -50,14 +41,11 @@ image::tutorial_targetdefinition20.png" />
 			in the following dialog.
 		
 		
-image::tutorial_targetdefinition30.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Add content to target definition file,pdfwidth=60%]
+image::tutorial_targetdefinition30.png[Add content to target definition file,pdfwidth=60%]
 		
 		
 			Press the
-			<guibutton>Next</guibutton>
+			_Next_
 			button and enter the update site URL of the target release
 			in the Work with selection box. This is for example:
 			http://download.eclipse.org/releases/neon
@@ -109,16 +97,13 @@ image::tutorial_targetdefinition30.png" />
 
 
 		
-image::tutorial_targetdefinition40.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::tutorial_targetdefinition40.png[,pdfwidth=60%]
 		
 
 	
 
 
-[[tuturial_targetplatform_activate">
+
 === Activate your target platform
 		
 			Afterwards press the
@@ -130,12 +115,12 @@ image::tutorial_targetdefinition40.png" />
 		
 		
 			To check if your definition is active, try to open the
-			<code>SpyHandler</code>
+			`SpyHandler`
 			class via Ctrl+Shift+T (Open Type). This should not be possible.
 		
 	
 
-[[tuturial_targetplatform_solvingissues">
+
 === Solving potential issues for development
 		Your target platform depends on external update sites and their
 			packaging of plug-ins. Theses update sites might
@@ -150,10 +135,7 @@ image::tutorial_targetdefinition40.png" />
 			.
 		
 		
-image::tutorial_targetdefinition60.png" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::tutorial_targetdefinition60.png[,pdfwidth=60%]
 		
 
 		<note>

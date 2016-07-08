@@ -1,10 +1,10 @@
 
-	<title>Tips and Tricks
-[[tips_loadimages">
+== Tips and Tricks
+
 === Load an image from your plugin
 		
 			To load an image from your plug-in your use the
-			<code>AbstractUIPlugin</code>
+			`AbstractUIPlugin`
 			.
 		
 		
@@ -24,7 +24,7 @@
 	
 
 
-[[tips_userlayout">
+
 === Save users layout
 		 To remember the user's layout and window size for the next
 			time
@@ -49,7 +49,7 @@
 		
 	
 
-[[statusline">
+
 === Accessing the status line
 		
 			The status line in an RCP application can be used to give the
@@ -104,7 +104,7 @@
 		
 	
 
-[[tips_unused_dependencies">
+
 === Finding unused dependencies
 		 In the file plugin.xml (tab dependencies) you define on which
 			plugins your plug-in depends. Of course you should only define the
@@ -116,13 +116,10 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="60" fileref="images/unuseddependency10.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>How to remove unused dependencies,pdfwidth=60%]
+					<imagedata scale="60" fileref="images/unuseddependency10.gif[How to remove unused dependencies,pdfwidth=60%]
 		
 	
-[[tips_multiuser">
+
 === Multi-User settings
 		 Eclipse RCP applications save configuration files in the
 			folder

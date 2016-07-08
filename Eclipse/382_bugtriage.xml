@@ -1,6 +1,6 @@
 
-	<title>Using Eclipse Bugzilla
-[[bugtriage1">
+== Using Eclipse Bugzilla
+
 === Target
 		In this exercise you use the Bugzilla system to review some of
 			the Eclipse platform bugs. No action is excepted
@@ -13,7 +13,7 @@
 		
 	
 
-[[bugtriage2">
+
 === Run Bugzilla query
 		
 			Open to
@@ -35,16 +35,10 @@
 			.
 		
 		
-image::bugtriage10.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>,pdfwidth=60%]
+image::bugtriage10.png" scale="30[,pdfwidth=60%]
 		
 		
-image::bugtriage20.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Search for bugs,pdfwidth=60%]
+image::bugtriage20.png" scale="30[Search for bugs,pdfwidth=60%]
 		
 		In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
 			recommended to look at the latest bugs, e.g., the bugs which have been recently updated.

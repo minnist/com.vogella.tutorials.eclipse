@@ -1,19 +1,17 @@
 
-	<title>Update strategy, converters and validators
+== Update strategy, converters and validators
 
-[[databinding_updatestrategy">
+
 === UpdateValueStrategy
-		<indexterm>
-			<primary>UpdateValueStrategy</primary>
-		</indexterm>
+		
 		
 			The
-			<code>bindValue()</code>
+			`bindValue()`
 			method from
-			<code>DataBindingContext</code>
+			`DataBindingContext`
 			allows you
 			to specify
-			<code>UpdateValueStrategy</code>
+			`UpdateValueStrategy`
 			objects as third and fourth parameters. These objects allow you to
 			control
 			how and when the values are updated. The
@@ -33,7 +31,7 @@
 					<tbody>
 						<row>
 							<entry>
-								<code>UpdateValueStrategy.POLICY_NEVER</code>
+								`UpdateValueStrategy.POLICY_NEVER`
 							</entry>
 							<entry>Policy constant denoting that the source observable's state should not be
 								tracked and that the destination
@@ -42,7 +40,7 @@
 						</row>
 						<row>
 							<entry>
-								<code>UpdateValueStrategy.POLICY_ON_REQUEST</code>
+								`UpdateValueStrategy.POLICY_ON_REQUEST`
 							</entry>
 							<entry>
 								Policy constant denoting that the source observable's state should not be
@@ -50,20 +48,20 @@
 								conversion and updating the destination observable's value should be performed when
 								explicitly requested. You can
 								call
-								<code>DataBindingContext.updateModels()</code>
+								`DataBindingContext.updateModels()`
 								or
-								<code>DataBindingContext.updateTargets()</code>
+								`DataBindingContext.updateTargets()`
 								to update all bindings at once. Or you can call
-								<code>Binding.updateTargetToModel()</code>
+								`Binding.updateTargetToModel()`
 								or
-								<code>Binding.updateModelToTarget()</code>
+								`Binding.updateModelToTarget()`
 								to update a
 								single binding.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>UpdateValueStrategy.POLICY_CONVERT</code>
+								`UpdateValueStrategy.POLICY_CONVERT`
 							</entry>
 							<entry>Policy constant denoting that the source observable's state should be
 								tracked, including validating changes
@@ -74,7 +72,7 @@
 						</row>
 						<row>
 							<entry>
-								<code>UpdateValueStrategy.POLICY_UPDATE</code>
+								`UpdateValueStrategy.POLICY_UPDATE`
 							</entry>
 							<entry>Policy constant denoting that the source observable's state should be
 								tracked, and that
@@ -94,17 +92,17 @@
 		
 		
 			If no
-			<code>UpdateValueStrategy</code>
+			`UpdateValueStrategy`
 			is specified, the
-			<code>UpdateValueStrategy.POLICY_UPDATE</code>
+			`UpdateValueStrategy.POLICY_UPDATE`
 			is used by default.
 			You can register converters and validators in the
-			<code>UpdateValueStrategy</code>
+			`UpdateValueStrategy`
 			object.
 		
 
 	
-[[databinding_converter">
+
 === Converter
 		<indexterm>
 			<primary>JFace Data Binding</primary>
@@ -113,17 +111,17 @@
 		
 			_Converters_
 			allow to convert the values between the observed properties. Converters are defined based on the
-			<code>IConverter</code>
+			`IConverter`
 			interface.
 		
 		
-			<code>UpdateValueStrategy.setConverter()</code>
+			`UpdateValueStrategy.setConverter()`
 			allows to set the converter.
 			The
-			<code>IConverter.create(Object, Object, Function)</code>
+			`IConverter.create(Object, Object, Function)`
 			allows to create a converter using a lambda
 			expression. The static
-			<code>UpdateValueStrategy.create(IConverter)</code>
+			`UpdateValueStrategy.create(IConverter)`
 			method allows to create
 			an update strategy with a converter.
 		
@@ -131,9 +129,9 @@
 		
 		
 			For example, assume you have a
-			<code>Person</code>
+			`Person`
 			object with a
-			<code>programmingSkills</code>
+			`programmingSkills`
 			property.
 		
 		
@@ -143,14 +141,14 @@
 		
 		
 			The entries of
-			<code>programmingSkills</code>
+			`programmingSkills`
 			should be shown in the
-			<code>Text</code>
+			`Text`
 			widget as text separated by comma. Therefore a conversion is necessary.
 		
 		
 			In order to apply these converters an
-			<code>UpdateValueStrategy</code>
+			`UpdateValueStrategy`
 			for the
 			binding needs to be defined and applied.
 		
@@ -161,7 +159,7 @@
 		
 	
 
-[[databinding_validator">
+
 === Validator
 
 		<indexterm>
@@ -176,7 +174,7 @@
 			wants to provide this
 			functionality must
 			implement the
-			<code>org.eclipse.core.databinding.validation.IValidator</code>
+			`org.eclipse.core.databinding.validation.IValidator`
 			interface.
 		
 
@@ -189,7 +187,7 @@
 		<tip>
 			
 				The
-				<code>WizardPageSupport</code>
+				`WizardPageSupport`
 				class provides support to connect the result from the given data
 				binding
 				context to the given wizard page, updating

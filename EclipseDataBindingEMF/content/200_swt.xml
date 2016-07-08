@@ -1,5 +1,5 @@
 
-	<title>EMF and Data Binding for SWT controls
+== EMF and Data Binding for SWT controls
 	
 		Create an RCP project called
 		_de.vogella.databinding.emf.swt_
@@ -9,7 +9,7 @@
 			application with a view
 		_
 		. Add the
-		<code>org.eclipse.emf.ecore</code>
+		`org.eclipse.emf.ecore`
 		and the JFace data binding plug-ins
 		as a
 		plug-in dependency.
@@ -58,7 +58,7 @@
 	
 	
 		Change the
-		<code>View</code>
+		`View`
 		class according to the following listing. The code demonstrates
 		how
 		you can use

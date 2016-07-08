@@ -1,25 +1,25 @@
 
-	<title>Reading resources from plug-ins
+== Reading resources from plug-ins
 	
 		You can access files in your plug-in via two different
 		approaches: via
 		the
-		<code>FileLocator</code>
+		`FileLocator`
 		class or via an Eclipse specific URL. Both approaches require
 		that your
 		plug-in defines a dependency to the
-		<code>org.eclipse.core.runtime</code>
+		`org.eclipse.core.runtime`
 		plug-in.
 	
 	
 		Both approaches return a URL which can be used to get an
-		<code>InputStream</code>
+		`InputStream`
 		.
 	
 
 	
 		The following code shows an example with
-		<code>FileLocator</code>
+		`FileLocator`
 		.
 	
 
@@ -46,7 +46,7 @@
 
 	
 		Using the URL to create an
-		<code>InputStream</code>
+		`InputStream`
 		and to read the file is demonstrated in the next code example.
 	
 	

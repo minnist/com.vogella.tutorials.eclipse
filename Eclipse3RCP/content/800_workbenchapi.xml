@@ -1,5 +1,5 @@
 
-	<title>Workbench API
+== Workbench API
 	To interact with the Workbench you have access to the Workbench
 		API. For example you can access the active editor or view and open or
 		close Views and Editors.

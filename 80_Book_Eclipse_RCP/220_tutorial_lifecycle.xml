@@ -1,18 +1,18 @@
 <section id="tutorial_lifecycle" role="wrapper">
-	<title>Exercise: Styling the widgets created by the life cycle class
-[[tutorial_lifecyclestyling_target">
+== Exercise: Styling the widgets created by the life cycle class
+
 === Target
 		
 			In this exercise you will ensure that the widget created by the
 			life cycle handler of your application are also styled.
 		
 	
-[[tutorial_lifecycle_style">
+
 === Implement styling
 
 		
 			Change your
-			<code>Manager</code>
+			`Manager`
 			class to the following to one of your CSS files for the widgets
 			created in this class.
 		
@@ -27,7 +27,7 @@
 	
 
 
-[[tutorial_lifecycle_style_validate">
+
 === Validating
 		
 			Start your application and ensure the splash screen is styled

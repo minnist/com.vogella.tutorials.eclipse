@@ -1,16 +1,14 @@
 
-	<title>Java 8 support in Eclipse
-[[eclipsejava8_overview">
+== Java 8 support in Eclipse
+
 === Eclipse and Java 8
-		<indexterm>
-			<primary>Java 8</primary>
-		</indexterm>
+		
 		
 			The Eclipse IDE has full support for Java 8. You can use content assists, quick fixes and refactoring for Java
 			8.
 		
 	
-[[eclipsejava8_annouymoustolambda">
+
 === Example: Converting anonymous inner classes to lambda expressions and vice versa
 		
 			This section demonstrates the quick fix for converting anonymous inner classes to lambda expressions.

@@ -1,5 +1,5 @@
 
-	<title>Configuration
+== Configuration
 	 The following will create a connection for an embedded Derby.
 	
 	 Define the driver for the derby access. Go to Window->
@@ -17,7 +17,7 @@
 		</mediaobject>
 	
 
-	Select then the tab jar press <guibutton>Add...</guibutton> and select the derby.jar from
+	Select then the tab jar press _Add..._ and select the derby.jar from
 		your project folder "lib".
 	
 		<mediaobject>

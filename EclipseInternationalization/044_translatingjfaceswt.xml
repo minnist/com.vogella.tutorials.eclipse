@@ -1,5 +1,5 @@
 
-	<title>Translating SWT and JFace code
+== Translating SWT and JFace code
 	The SWT and JFace plug-ins include their resource translation
 		files. You can change these default texts and their
 		translations
@@ -37,19 +37,19 @@
 			<listitem>
 				
 					Create the
-					<code>org.eclipse.jface</code>
+					`org.eclipse.jface`
 					and
-					<code>org.eclipse.swt.internal</code>
+					`org.eclipse.swt.internal`
 					packages in the corresponding fragments.
 				
 			</listitem>
 			<listitem>
 				
 					Copy the
-					<filename>org/eclipse/jface/message.properties</filename>
+					_org/eclipse/jface/message.properties_
 					file from the org.eclipse.jface plug-in and the
-					<filename>org/eclipse/swt/internal/SWTMessage.properties
-					</filename>
+					_org/eclipse/swt/internal/SWTMessage.properties
+					_
 					file
 					from the SWT plug-in to
 					the
@@ -72,14 +72,14 @@
 	<warning>
 		
 			The original
-			<filename>message.properties</filename>
+			_message.properties_
 			in JFace or
-			<filename>SWTMessage.properties</filename>
+			_SWTMessage.properties_
 			in SWT cannot be overridden by a
 			fragment.
 			Therefore, you can only
 			provide additional
-			<filename>*.properties</filename>
+			_*.properties_
 			files
 			for a
 			certain locale like
@@ -90,15 +90,15 @@
 		You can translate selected
 		properties of the
 		original
-		<filename>message.properties</filename>
+		_message.properties_
 		file.
 		The
 		following listing shows how you
 		would override the buttons of a
 		JFace
-		<code>Wizard</code>
+		`Wizard`
 		class in a
-		<filename>message_de.properties</filename>
+		_message_de.properties_
 		file.
 	
 	

@@ -1,6 +1,6 @@
 
-	<title>Your first Zest Project
-[[zestfirst_started">
+== Your first Zest Project
+
 === Getting started
 		
 			Create a new Eclipse RCP application "de.vogella.zest.first".
@@ -31,7 +31,7 @@ image::simple10.gif" />
 			</mediaobject>
 		
 	
-[[zestfirst_commands">
+
 === Select layout manager via a command
 		
 			Create a

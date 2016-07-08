@@ -1,5 +1,5 @@
 
-	<title>Run Java program outside Eclipse
+== Run Java program outside Eclipse
 	<indexterm>
 		<primary>Java projects</primary>
 		<secondary>Export
@@ -15,15 +15,15 @@
 		<secondary>create
 		</secondary>
 	</indexterm>
-[[firstjava_export">
+
 === Create JAR file
 		
 			To run the Java program outside of the Eclipse IDE, you need to
 			export
 			it as a
-			<filename>JAR</filename>
+			_JAR_
 			file. A
-			<filename>JAR</filename>
+			_JAR_
 			file is the standard distribution format for Java applications.
 		
 		
@@ -32,50 +32,41 @@
 			menu entry.
 		
 		
-image::firstgany90.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Export wizard for Java project,pdfwidth=60%]
+image::firstgany90.gif[Export wizard for Java project,pdfwidth=60%]
 		
 		
 			Select
 			_JAR file_
 			and select the
-			<guibutton>Next</guibutton>
+			_Next_
 			button.
 			Select your project and enter
 			the
 			export destination and a
 			name
 			for the
-			<filename>JAR</filename>
+			_JAR_
 			file. I named it
-			<code>myprogram.jar</code>
+			`myprogram.jar`
 			.
 		
 		
-image::firstgany100.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Export wizard for Java project, Part II,pdfwidth=60%]
+image::firstgany100.gif[Export wizard for Java project, Part II,pdfwidth=60%]
 		
 		
-image::firstgany110.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Export wizard for Java project, Part III,pdfwidth=60%]
+image::firstgany110.gif[Export wizard for Java project, Part III,pdfwidth=60%]
 		
 		
 			Press The
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button. This creates a
-			<filename>JAR</filename>
+			_JAR_
 			file in your selected output
 			directory.
 		
 
 	
-[[firstjava_runconsole">
+
 === Run your program outside Eclipse
 		<indexterm>
 			<primary>Java projects</primary>
@@ -91,20 +82,20 @@ image::firstgany110.gif" />
 			Open a command shell, e.g., under Microsoft Windows select
 			menu:Start[Run]
 			and type
-			<code>cmd</code>
+			`cmd`
 			and press the Enter key. This should open a console window.
 		
 		
 			Switch to the directory which contains the
-			<filename>JAR</filename>
+			_JAR_
 			file
 			, by
 			typing
-			<code>cd path</code>
+			`cd path`
 			. For example, if
 			your
-			<filename>JAR</filename> is located in
-			<filename>c:\temp</filename>,
+			_JAR_ is located in
+			_c:\temp_,
 			use the following command.
 		
 		
@@ -117,7 +108,7 @@ image::firstgany110.gif" />
 
 		
 			To run this program, include the
-			<filename>JAR</filename>
+			_JAR_
 			file
 			in your
 			_classpath_
@@ -126,7 +117,7 @@ image::firstgany110.gif" />
 			defines which Java classes are available to the Java
 			runtime. You can
 			add a
-			<filename>JAR</filename>
+			_JAR_
 			file to the classpath with the
 			<parameter>-classpath</parameter>
 			option.
@@ -144,10 +135,7 @@ image::firstgany110.gif" />
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="50" fileref="images/firstgany120.gif" />
-				</imageobject>
-				<textobject>
-					<phrase>Running application outside Eclipse,pdfwidth=60%]
+					<imagedata scale="50" fileref="images/firstgany120.gif[Running application outside Eclipse,pdfwidth=60%]
 		
 
 	

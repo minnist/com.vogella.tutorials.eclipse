@@ -1,13 +1,9 @@
 
-	<title>Using annotations to define behavior
-[[programmingmodel_api">
+== Using annotations to define behavior
+
 === API definition
-		<indexterm>
-			<primary>Application Programming Interface</primary>
-		</indexterm>
-		<indexterm>
-			<primary>API</primary>
-		</indexterm>
+		
+		
 
 		
 			If you use a framework in your application, you need to have a
@@ -44,7 +40,7 @@
 		
 
 	
-[[programmingmodel_inheritance">
+
 === API definition via inheritance
 		The "traditional" way of defining an API
 			is via inheritance. This
@@ -62,7 +58,7 @@
 			toolbar button the method
 			might be
 			called
-			<code>execute()</code>
+			`execute()`
 			and the framework knows that this method must be called once the
 			button is clicked.
 		
@@ -78,7 +74,7 @@
 		
 	
 
-[[programmingmodel_annotation">
+
 === API definition via annotations
 		<indexterm>
 			<primary>Behavior annotations</primary>
@@ -88,21 +84,11 @@
 			<primary>Annotations</primary>
 			<secondary>Behavior</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>@PostContruct</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@Execute</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@PreDestroy</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@Persist</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@PersistState</primary>
-		</indexterm>
+		
+		
+		
+		
+		
 		
 			The Eclipse 4.x platform API is based on annotations, e.g.,
 			annotations are used to
@@ -186,19 +172,19 @@
 
 		
 			The
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			,
-			<code>@PreDestroy</code>
+			`@PreDestroy`
 			annotations are included in the
-			<code>javax.annotation</code>
+			`javax.annotation`
 			package.
-			<code>@Persist</code>
+			`@Persist`
 			,
-			<code>@PersistState</code>
+			`@PersistState`
 			and
-			<code>@Focus</code>
+			`@Focus`
 			are part of the
-			<code>org.eclipse.e4.ui.di</code>
+			`org.eclipse.e4.ui.di`
 			package.
 		
 		
@@ -208,7 +194,7 @@
 			chapters.
 		
 	
-[[programmingmodel_annotationinject">
+
 === Behavior annotations imply method dependency injection
 		
 			Behavior annotations imply that the framework needs to
@@ -220,7 +206,7 @@
 			method dependency
 			injection.
 			If you also add the
-			<code>@Inject</code>
+			`@Inject`
 			annotation, the method is called twice, first
 			during the
 			dependency injection phase and later for the behavior
@@ -231,13 +217,13 @@
 
 	
 
-[[programmingmodel_postconstruct">
+
 === Use the @PostConstruct method to build the user interface
 		
 		
 			It is recommended to construct the user interface of a part in a
 			method annotated with the
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			annotation. It would also be possible to create the user interface
 			in
 			the
@@ -252,24 +238,22 @@
 		
 			Creating the user interface
 			in an
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			method
 			requires that
-			<code>@Inject</code>
+			`@Inject`
 			methods
 			are aware that the user interface might not have been created
 			yet.
 		
 	
 
-[[postconstructmethodnotcalled">
+
 === Why is the @PostConstruct method not called?
-		<indexterm>
-			<primary>@PostConstruct method not called</primary>
-		</indexterm>
+		
 		
 			Both Java 7 and the Eclipse platform expose the
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			annotation. In your Eclipse application you need to tell
 			the framework
 			that the annotation from the Eclipse platform
@@ -278,37 +262,37 @@
 		<note>
 			
 				Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the
-				<code>javax.annotation</code>
+				`javax.annotation`
 				package anymore.
 			
 		</note>
 		
 			In case your
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			method is not called, ensure that you have defined a
 			dependency to
-			<code>org.eclipse.core.runtime</code>
+			`org.eclipse.core.runtime`
 			in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file. See
 			http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
 		
 		<note>
 			
-				<code>org.eclipse.core.runtime</code>
+				`org.eclipse.core.runtime`
 				exports
-				<code>javax.annotation</code>
+				`javax.annotation`
 				in the correct version. If you have a dependency to
-				<code>org.eclipse.core.runtime</code>
+				`org.eclipse.core.runtime`
 				in your
-				<filename>MANIFEST.MF</filename>
+				_MANIFEST.MF_
 				file, no additional package dependency is needed. If, for some
 				reasons, you want to avoid a dependency to
-				<code>org.eclipse.core.runtime</code>
+				`org.eclipse.core.runtime`
 				, you
 				could define a package
 				dependency to the
-				<code>javax.annotation</code>
+				`javax.annotation`
 				package and set the version to 1.0.0.
 			
 		</note>

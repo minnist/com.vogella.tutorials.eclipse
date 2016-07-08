@@ -1,5 +1,5 @@
 
-	<title>Extensions and extension points
+== Extensions and extension points
 
 
 	
@@ -17,7 +17,7 @@
 		These
 		extensions and extension points are defined via
 		the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file.
 	
 

@@ -1,12 +1,12 @@
 <section id="exercise_prespectiveresetter" role="wrapper">
-	<title>Optional exercise: Saving and restoring a perspective
-[[exercise_prespectiveresetter_target">
+== Optional exercise: Saving and restoring a perspective
+
 === Target of this exercise
 		
 			In this exercise you learn how to save a certain state of an perspective and restore this state afterwards.
 		
 	
-[[exercise_prespectiveresetter_applicationmodel">
+
 === Create application model elements
 		
 			We want to provide those actions in the main menu of the application.
@@ -16,10 +16,7 @@
 			as depicted in the following screenshot.
 		
 		
-image::perpective_reset_applicationmodel.png" scale="50" />
-				</imageobject>
-				<textobject>
-					<phrase>Application model requirements for resetting the perspective,pdfwidth=60%]
+image::perpective_reset_applicationmodel.png" scale="50[Application model requirements for resetting the perspective,pdfwidth=60%]
 		
 		
 			Please also make sure to add some parts inside the perspective,
@@ -29,7 +26,7 @@ image::perpective_reset_applicationmodel.png" scale="50" />
 			so that the previously saved perspective can be restored afterwards.
 		
 	
-[[exercise_prespectiveresetter_save_implementation">
+
 === Dynamically creating and saving new perspectives
 		
 			The perspective save handler gets the currently active perspective from the EModelService
@@ -41,7 +38,7 @@ image::perpective_reset_applicationmodel.png" scale="50" />
 			save the snippet
 			application wide,
 			by passing the MApplication to the
-			<code>cloneElement</code>
+			`cloneElement`
 			method as second parameter.
 		
 		
@@ -51,7 +48,7 @@ image::perpective_reset_applicationmodel.png" scale="50" />
 			</programlisting>
 		
 	
-[[exercise_prespectiveresetter_restore_implementation">
+
 === Implement restoring the state of a perspective
 		
 			Implement the following class as handler and create a new menu entry for it in your application model.
@@ -76,7 +73,7 @@ image::perpective_reset_applicationmodel.png" scale="50" />
 	
 
 
-[[exercise_prespectiveresetter_validate">
+
 === Validating
 		
 			Start your application, invoke the save perspective handler

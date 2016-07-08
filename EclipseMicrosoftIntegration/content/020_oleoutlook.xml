@@ -1,8 +1,8 @@
 
-	<title>Microsoft Outlook with Eclipse
+== Microsoft Outlook with Eclipse
 	 This example assumes you running an MS operating system and that
 		you have a version of Outlook installed.
-[[oleoutlook_project">
+
 === Create Project
 		
 			Create a new project "de.vogella.microsoft.outlook". See
@@ -12,7 +12,7 @@
 			for details. Use the "Hello RCP " as a template.
 		
 	
-[[oleoutlook_command">
+
 === Create a command
 		
 			Using extensions create the command

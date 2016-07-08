@@ -1,5 +1,5 @@
 
-	<title>Relationship to JFace
+== Relationship to JFace
 	
 		_JFace_
 		is a set of APIs which builds on top of

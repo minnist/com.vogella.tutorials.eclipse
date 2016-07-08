@@ -1,7 +1,7 @@
 
-	<title>Performing Git operations in Eclipse
+== Performing Git operations in Eclipse
 
-[[team_pullpush">
+
 === Pull, push and fetch
 		
 			You can use the
@@ -14,7 +14,7 @@ image::pullpush10.png[Pull push and fetch dialog,pdfwidth=60%]
 		
 
 	
-[[team_basic">
+
 === Basic team operations
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -107,7 +107,7 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 		
 
 	
-[[team_project">
+
 === Team operations available on the project
 		If you select a project you can use
 			additional team
@@ -172,7 +172,7 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 	
 
 
-[[egit_amend">
+
 === Amending a commit
 		<indexterm>
 			<primary>Eclipse Git</primary>

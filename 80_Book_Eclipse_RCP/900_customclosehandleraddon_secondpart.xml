@@ -1,6 +1,6 @@
 <chapter id="exercise_modeladdonclose_ide">
-	<title>Optional Exercise: Model add-on to change the close behavior of the IDE
-[[exercise_modeladdonclose_idetarget">
+== Optional Exercise: Model add-on to change the close behavior of the IDE
+
 === Target
 		
 			In this exercise you register an existing model add-on created in
@@ -12,22 +12,16 @@
 		
 	
 
-[[exercise_modeladdonclose_idefragment">
+
 === Register model add-on via model fragment with the Eclipse IDE
 		Create a model fragment which contributes the add-on to the application of the Eclipse IDE.
 		
 		
-image::modeladdonide10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
+image::modeladdonide10.png" scale="35[Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
 		
 
 		
-image::modeladdonide20.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
+image::modeladdonide20.png" scale="35[Adding a model add-on to the Eclipse IDE,pdfwidth=60%]
 		
 
 
@@ -35,7 +29,7 @@ image::modeladdonide20.png" scale="35" />
 	
 
 
-[[exercise_modeladdonverifyintheide">
+
 === Verifying the model add-on in the Eclipse IDE 
 		Start a runtime Eclipse IDE with your plug-in included in the launch configuration. Ensure that your new close
 			dialog is used if you try to close

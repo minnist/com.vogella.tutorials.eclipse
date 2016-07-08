@@ -1,10 +1,8 @@
 
-	<title>Overview
-[[debugging_overview">
+== Overview
+
 === What is debugging?
-		<indexterm>
-			<primary>Debugging</primary>
-		</indexterm>
+		
 		
 			_Debugging_
 			allows you to run a program interactively while watching
@@ -41,7 +39,7 @@
 			change their content, etc.
 		
 	
-[[debugging_eclipse">
+
 === Debugging support in Eclipse
 		
 			Eclipse allows you to start a Java program

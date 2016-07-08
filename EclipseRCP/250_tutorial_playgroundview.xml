@@ -1,10 +1,10 @@
 
-	<title>Exercise: Using the SWT browser widget
-[[tutorial_mapsimplementation">
+== Exercise: Using the SWT browser widget
+
 === Implementation
 		
 			In this exercise you will display Google Maps in an SWT
-			<code>Browser</code>
+			`Browser`
 			widget.
 		
 		<note>
@@ -12,7 +12,7 @@
 				This exercise does not always work on a
 				Linux system because on
 				certain Linux versions the
-				<code>Browser</code>
+				`Browser`
 				widget does not work. See the Eclipse SWT FAQ answered at
 				http://www.eclipse.org/swt/faq.php#browserwebkitgtk">
 					How do I use the WebKit renderer on Linux-GTK
@@ -21,16 +21,13 @@
 		</note>
 		
 			Change the
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			class so the
 			part
 			looks like the following screenshot.
 		
 		
-image::swtmap10.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>SWT Browser Widget example with Google Maps,pdfwidth=60%]
+image::swtmap10.png" scale="60[SWT Browser Widget example with Google Maps,pdfwidth=60%]
 		
 		
 		<note>
@@ -46,12 +43,12 @@ image::swtmap10.png" scale="60" />
 
 	
 
-[[tutorial_mapsresult">
+
 === Solution
 
 		
 			Your
-			<code>PlaygroundPart</code>
+			`PlaygroundPart`
 			class
 			should look similar to the following code.
 		

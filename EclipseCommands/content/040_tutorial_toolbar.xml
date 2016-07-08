@@ -1,11 +1,11 @@
 
-	<title>Tutorial: Commands and toolbars
-[[toolbar_overview"> 
+== Tutorial: Commands and toolbars
+
 === Overview
 		 You can add commands to the application toolbar and to a view
 			toolbar. 
 	
-[[toolbar_applicationtoolbar">
+
 === Application toolbar (coolbar)
 		
 			Create a new project
@@ -69,7 +69,7 @@ image::commandcoolbar30.gif" />
 			</mediaobject>
 		
 	
-[[toolbar__viewtoolbar">
+
 === Contribution to the View Toolbar
 		You can also add a command directly to a view toolbar. For
 			this
@@ -103,7 +103,7 @@ image::commandview20.gif" />
 			</mediaobject>
 		
 	
-[[commands_toolbardropdown">
+
 === Drop down list
 		The following adds a dropdown list to the application
 			coolbar.

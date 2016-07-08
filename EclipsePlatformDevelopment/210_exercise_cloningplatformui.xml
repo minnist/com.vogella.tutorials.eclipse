@@ -1,6 +1,6 @@
 
-	<title>Clone the selected Eclipse Git repository
-[[eclipsegerritcontribution_cloneviagerrit_server">
+== Clone the selected Eclipse Git repository
+
 === Finding the correct Git repository
 		Ensure you are logged into the Gerrit server webpage. This will enable you to use SSH or
 			HTTPS for cloning the
@@ -35,7 +35,7 @@ image::gerrit_getcloneurl30.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 		
 
 	
-[[eclipsegerritcontribution_cloneviagerrit2">
+
 === Clone the repository via the Eclipse IDE
 		
 			To clone, select

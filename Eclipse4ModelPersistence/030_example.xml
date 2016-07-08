@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Replace persistence of the application model
+== Tutorial: Replace persistence of the application model
 	
 		Create a plain OSGi bundle without
 		_Activator_
@@ -9,6 +9,6 @@
 	
 	
 		Add the
-		<code>org.eclipse.e4.ui.workbench</code>
+		`org.eclipse.e4.ui.workbench`
 		plug-in as dependency to this new plug-in.
 	

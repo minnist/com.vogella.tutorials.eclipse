@@ -1,13 +1,9 @@
 
-	<title>Renderer Framework
-[[renderer_overview">
+== Renderer Framework
+
 === Renderer
-		<indexterm>
-			<primary>Renderer</primary>
-		</indexterm>
-		<indexterm>
-			<primary>WorkbenchRendererFactory</primary>
-		</indexterm>
+		
+		
 		
 			An Eclipse application is modeled without a hard dependency to a
 			specific user interface toolkit. Eclipse allows you
@@ -39,20 +35,18 @@
 			default the
 			Eclipse platform
 			uses the SWT based
-			<code>WorkbenchRendererFactory</code>
+			`WorkbenchRendererFactory`
 			as renderer factory.
 			The
-			<code>org.eclipse.e4.ui.workbench.renderers.swt</code>
+			`org.eclipse.e4.ui.workbench.renderers.swt`
 			plug-in contains this default implementation.
 		
 
 
 	
-[[renderer_factories">
+
 === Renderer factory and renderer objects
-		<indexterm>
-			<primary>IRendererFactory</primary>
-		</indexterm>
+		
 		
 
 			The
@@ -67,25 +61,25 @@
 
 		
 			Renderer factories implement the
-			<code>IRendererFactory</code>
+			`IRendererFactory`
 			interface. In the
-			<code>getRenderer()</code>
+			`getRenderer()`
 			method it returns a renderer object of type
-			<code>AbstractPartRenderer</code>
+			`AbstractPartRenderer`
 			.
 		
 
 		
 			For example, if the model element is an instance of
-			<code>MPart</code>
+			`MPart`
 			,
 			then an instance of the
-			<code>ContributedPartRenderer</code>
+			`ContributedPartRenderer`
 			class
 			is created by the default Eclipse
 			renderer factory. The relevant
 			code in the
-			<code>WorkbenchRendererFactory</code>
+			`WorkbenchRendererFactory`
 			class is shown below.
 		
 		
@@ -95,36 +89,34 @@
 		
 
 	
-[[renderer_context">
+
 === Context creation of model objects
 		
 			During the rendering the
-			<code>IEclipseContext</code>
+			`IEclipseContext`
 			of those model elements which
 			extend
-			<code>MContext</code>
+			`MContext`
 			(MApplication, MPart, etc) is created and populated.
 		
 		
 			For
 			example an object of type
-			<code>ContributedPartRenderer</code>
+			`ContributedPartRenderer`
 			is the default renderer for a
-			<code>MPart</code>
+			`MPart`
 			model element. This object creates a
-			<code>Composite</code>
+			`Composite`
 			and injects it into the local context of each part.
 		
 	
-[[renderer_customfactory">
+
 === Using a custom renderer
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>Custom implementation</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>rendererFactoryUri</primary>
-		</indexterm>
+		
 
 		
 			The Eclipse platform allows you
@@ -174,20 +166,20 @@
 		</tip>
 		
 			The custom renderer factory is registered via the
-			<code>org.eclipse.core.runtime.products</code>
+			`org.eclipse.core.runtime.products`
 			extension point. You use an additional property called
-			<code>rendererFactoryUri</code>
+			`rendererFactoryUri`
 			to point to the new factory class.
 		
 	
 
-[[renderer_customfactory_modelspecific">
+
 === Using a custom renderer for one model element
 		
 			If you want to replace the renderer for only one model element,
 			there
 			is a key
-			<code>CUSTOM_RENDERER_URI</code>
+			`CUSTOM_RENDERER_URI`
 			which you can add to the persistentData map of a model element. The
 			'value' for this key would be the
 			URI of the

@@ -1,13 +1,9 @@
 
-	<title>Using model add-ons
-[[modeladdons_overview">
+== Using model add-ons
+
 === What are model add-ons?
-		<indexterm>
-			<primary>Model Add-ons</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Add-ons</primary>
-		</indexterm>
+		
+		
 		
 			The application model allows you to create
 			model objects called
@@ -53,13 +49,13 @@
 			point to Java classes via their
 			_Class URI_
 			attribute using the
-			<code>bundleclass://</code>
+			`bundleclass://`
 			URI convention.
 		
 
 	
 
-[[modeladdons_standard">
+
 === Add-ons from the Eclipse framework
 		<indexterm>
 			<primary>Model add-ons</primary>
@@ -81,44 +77,44 @@
 			<itemizedlist>
 				<listitem>
 					
-						<code>CommandServiceAddon</code>
+						`CommandServiceAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>ContextServiceAddon</code>
+						`ContextServiceAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>BindingServiceAddon</code>
+						`BindingServiceAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>HandlerProcessingAddon</code>
+						`HandlerProcessingAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>CommandProcessingAddon</code>
+						`CommandProcessingAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>ContextProcessingAddon</code>
+						`ContextProcessingAddon`
 					
 				</listitem>
 				<listitem>
 					
-						<code>BindingProcessingAddon</code>
+						`BindingProcessingAddon`
 					
 				</listitem>
 			</itemizedlist>
 
 		
 	
-[[modeladdons_swtaddons">
+
 === Additional SWT add-ons
 		<indexterm>
 			<primary>Model add-ons</primary>
@@ -139,31 +135,31 @@
 			To support drag and drop for
 			parts
 			you need to add the
-			<code>org.eclipse.e4.ui.workbench.addons.swt</code>
+			`org.eclipse.e4.ui.workbench.addons.swt`
 			plug-in to your product configuration file. Then you can use the
-			<code>DnDAddon</code>
+			`DnDAddon`
 			and the
-			<code>CleanupAddon</code>
+			`CleanupAddon`
 			classes
 			from this bundle as
 			add-ons
 			in your application model. This
 			plug-in
 			contains also the
-			<code>MinMaxAddon</code>
+			`MinMaxAddon`
 			class which allows adding the functionality to minimize or maximize your
 			application.
 		
 		
 			The
-			<code>org.eclipse.e4.ui.workbench.addons.swt</code>
+			`org.eclipse.e4.ui.workbench.addons.swt`
 			plug-in contributes these add-ons automatically to your application
 			model via a model
 			processor at runtime.
 		
 	
 
-[[modeladdons_lifecycle">
+
 === Relationship to other services
 		
 			Add-ons
@@ -185,7 +181,7 @@
 			engine.
 
 			For example, the
-			<code>MinMaxAddon</code>
+			`MinMaxAddon`
 			add-on
 			changes the tab folders
 			created for the part stacks

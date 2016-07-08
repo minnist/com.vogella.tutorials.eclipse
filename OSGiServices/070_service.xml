@@ -1,6 +1,6 @@
 
-	<title>OSGi Services
-[[osgiservice_overview">
+== OSGi Services
+
 === What are OSGi services?
 		<indexterm>
 			<primary>OSGi</primary>
@@ -10,12 +10,8 @@
 			<primary>Services (OSGi)</primary>
 			<seealso>Eclipse services</seealso>
 		</indexterm>
-		<indexterm>
-			<primary>OSGi service properties</primary>
-		</indexterm>
-		<indexterm>
-			<primary>OSGi service priorities</primary>
-		</indexterm>
+		
+		
 		
 			A
 			_service_
@@ -81,13 +77,13 @@
 		
 		
 			The
-			<code>Constants</code>
+			`Constants`
 			class from the
-			<code>org.osgi.framework</code>
+			`org.osgi.framework`
 			package defines the
 			<parameter>service.ranking</parameter>
 			value via the
-			<code>Constants.SERVICE_RANKING</code>
+			`Constants.SERVICE_RANKING`
 			constant. This constant can be used to
 			set the
 			integer property of the
@@ -96,11 +92,11 @@
 		
 
 	
-[[osgiservice_active">
+
 === Life cycle status for providing services
 		
 			To provide a service a plug-in needs to be in the
-			<code>ACTIVE</code>
+			`ACTIVE`
 			life cycle status of OSGi.
 		
 		
@@ -111,13 +107,10 @@
 			file.
 		
 		
-image::osgi_dsservices_activateflag10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Activate flag for services,pdfwidth=60%]
+image::osgi_dsservices_activateflag10.png" scale="40[Activate flag for services,pdfwidth=60%]
 		
 	
-[[osgiservice_definition">
+
 === Best practices for defining services
 		
 			It is good practice to define a

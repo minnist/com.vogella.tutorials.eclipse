@@ -1,6 +1,6 @@
 
-	<title>Data Binding with SWT controls
-[[swtdatabinding_simple">
+== Data Binding with SWT controls
+
 === First example
 		
 			Create a new
@@ -12,7 +12,7 @@
 
 		
 			Create the
-			<code>de.vogella.databinding.person.model</code>
+			`de.vogella.databinding.person.model`
 			package and the
 			following model classes.
 		
@@ -35,7 +35,7 @@
 		
 		
 			Change the
-			<code>View</code>
+			`View`
 			class to the following.
 		
 		
@@ -57,7 +57,7 @@
 			over the symbol you see the error message.
 		
 	
-[[swtdatabinding_validation">
+
 === More Customer Validations and ControlDecoration
 
 		
@@ -87,7 +87,7 @@ image::validation10.png" />
 		
 		
 			Create the following
-			<code>StringLongerThenTwo</code>
+			`StringLongerThenTwo`
 			class.
 		
 		
@@ -100,7 +100,7 @@ image::validation10.png" />
 		
 		
 			The following shows the new  code for
-			<code>View.java</code>
+			`View.java`
 			.
 		
 		

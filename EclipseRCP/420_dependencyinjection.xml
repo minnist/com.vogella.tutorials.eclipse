@@ -1,7 +1,7 @@
 
-	<title>Dependency injection and annotations
+== Dependency injection and annotations
 
-[[dependencyinjection_eclipse">
+
 === Define class dependencies in Eclipse
 		
 			The programming model in Eclipse supports constructor, method
@@ -25,7 +25,7 @@
 			correct. For example, if
 			you specify that you
 			want to have an object of type
-			<code>Todo</code>
+			`Todo`
 			for the "xyz" key, as shown in
 			the following field declaration, the
 			framework will only inject an
@@ -39,21 +39,13 @@
 			</programlisting>
 		
 	
-[[dependencyinjection_eclipseannotations">
-=== Annotations to define class dependencies in Eclipse
-		<indexterm>
-			<primary>@Inject</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@Named</primary>
-		</indexterm>
-		<indexterm>
-			<primary>@Optional</primary>
-		</indexterm>
 
-		<indexterm>
-			<primary>@GroupUpdates</primary>
-		</indexterm>
+=== Annotations to define class dependencies in Eclipse
+		
+		
+		
+
+		
 
 		
 			The following table gives an overview of dependency injection related
@@ -95,7 +87,7 @@
 								the
 								key. Several keys for default values are defined as
 								constants in the
-								<code>IServiceConstants</code>
+								`IServiceConstants`
 								interface.
 							</entry>
 						</row>
@@ -116,13 +108,13 @@
 								
 								
 									The specific behavior depends on where the
-									<code>@Optional</code>
+									`@Optional`
 									is placed. The following description is based on the key. If the key cannot be resolved the following happens:
 									<itemizedlist>
 										<listitem>
 											
 												for parameters: a
-												<code>null</code>
+												`null`
 												value will be injected;
 											
 										</listitem>
@@ -138,7 +130,7 @@
 									Note that null is an acceptable value to be set in the context, and it is different from a key being
 									removed
 									from the context. For example, if the following is called
-									<code>context.set(SOMEKEY, null)</code>
+									`context.set(SOMEKEY, null)`
 									,
 									anybody listening for SOMEKEY will be injected with null.
 								
@@ -156,9 +148,9 @@
 								,
 								the update is
 								triggered by the
-								<code>processWaiting()</code>
+								`processWaiting()`
 								method of the
-								<code>IEclipseContext</code>
+								`IEclipseContext`
 								object. This annotation is intended to be used by the platform for
 								performance optimization and should rarely be
 								necessary in RCP
@@ -193,7 +185,7 @@
 	
 
 
-[[dependencyinjection_container">
+
 === On which objects does Eclipse perform dependency injection?
 		
 		
@@ -217,12 +209,12 @@
 		
 			Eclipse does not automatically perform dependency injection on objects
 			which are created in your code with the
-			<code>new</code>
+			`new`
 			operator.
 		
 	
 
-[[dependencyinjection_reinject">
+
 === Dynamic dependency injection based on key / value changes
 		The Eclipse framework tracks which object expressed a dependency
 			to which key and type. If the value to which a
@@ -245,7 +237,7 @@
 			For
 			example, you can
 			define via
-			<code>@Inject</code>
+			`@Inject`
 			that you want to get the
 			current
 			selection
@@ -261,14 +253,14 @@
 			The re-injection only works on methods and fields which are
 			marked
 			with
-			<code>@Inject</code>
+			`@Inject`
 			. It will not work on
 			parameters injected into
 			constructors and
 			methods
 			which are marked
 			with
-			<code>@PostConstruct</code>
+			`@PostConstruct`
 			, as
 			these methods are only executed once.
 			This will be explained
@@ -284,12 +276,12 @@
 				which the key points. For example if the
 				<parameter>mykey1</parameter>
 				key points to a
-				<code>Todo</code>
+				`Todo`
 				object as value, and the key points to a new object, this triggers
 				the re-injection of the value to all objects which
 				have a relevant
 				class dependency. But if a field inside the existing
-				<code>Todo</code>
+				`Todo`
 				object changes, it does not trigger a
 				re-injection.
 			

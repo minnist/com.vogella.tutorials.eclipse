@@ -1,6 +1,6 @@
 <chapter id="tutorial_modeldynamics">
-	<title>Optional exercise: Dynamic creation of parts based on a part descriptor
-[[tutorial_modeldynamics1">
+== Optional exercise: Dynamic creation of parts based on a part descriptor
+
 === Create a class for the part descriptor
 
 		Create the following new class.
@@ -10,7 +10,7 @@
 			</programlisting>
 		
 	
-[[tutorial_modeldynamics_descriptor">
+
 === Create the part descriptor model element
 		
 			Create a
@@ -22,14 +22,11 @@
 			ID. In the
 			_Class URI_
 			field point to your new
-			<code>DynamicPart</code>
+			`DynamicPart`
 			class.
 		
 		
-image::partdescriptor10.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Defining a Part Descriptor,pdfwidth=60%]
+image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
 		
 		
 			The
@@ -37,7 +34,7 @@ image::partdescriptor10.png" scale="35" />
 			attribute should be flagged.
 		
 	
-[[tutorial_modeldynamics2">
+
 === Create a handler for creating new parts
 
 

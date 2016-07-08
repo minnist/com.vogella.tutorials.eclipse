@@ -1,6 +1,6 @@
 
-	<title>Exercise: Defining a renderer
-[[renderer_customrenderer_target">
+== Exercise: Defining a renderer
+
 === Target
 		The following exercise serves as a simple example for creating a
 			custom
@@ -10,59 +10,59 @@
 			instead of "*" to mark an editor dirty.
 		
 	
-[[renderer_customrenderer_plugin">
+
 === Creating a plug-in
 
 		
 			Create a new simple plug-in called
 			_com.example.e4.renderer.swt_
 			. This plug-in is called the
-			<code>renderer</code>
+			`renderer`
 			plug-in in the following description.
 		
 	
 
-[[renderer_customrenderer_dependencies">
+
 === Enter the dependencies
 		
 			Add the following plug-ins as dependencies to your
-			<code>renderer</code>
+			`renderer`
 			plug-in.
 
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.contexts</code>
+						`org.eclipse.e4.core.contexts`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.workbench.renderers.swt</code>
+						`org.eclipse.e4.ui.workbench.renderers.swt`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.workbench.swt</code>
+						`org.eclipse.e4.ui.workbench.swt`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.workbench</code>
+						`org.eclipse.e4.ui.workbench`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.services</code>
+						`org.eclipse.e4.core.services`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.model.workbench</code>
+						`org.eclipse.e4.ui.model.workbench`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.swt</code>
+						`org.eclipse.swt`
 					
 				</listitem>
 
@@ -70,13 +70,13 @@
 
 		
 	
-[[renderer_customrenderer_implementation">
+
 === Create the renderer implementation
 		
 			In your
-			<code>renderer</code>
+			`renderer`
 			plug-in create the
-			<code>com.example.e4.renderer.swt</code>
+			`com.example.e4.renderer.swt`
 			package and the following classes. The new stack renderer extends
 			the
 			stack renderer from the Eclipse platform.
@@ -92,20 +92,20 @@
 			</programlisting>
 		
 	
-[[renderer_own3">
+
 === Register the renderer
 
 		
 			Register your renderer in the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file of your
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in. For this create a new
 			property on the extension for your product. Use
 			<property>rendererFactoryUri</property>
 			as name and
-			<code>bundleclass://com.example.e4.renderer.swt/com.example.e4.renderer.swt.MyRendererFactory
-			</code>
+			`bundleclass://com.example.e4.renderer.swt/com.example.e4.renderer.swt.MyRendererFactory
+			`
 			as value. This setting is similar to the setting of the
 			<property>applicationCSS</property>
 			or the
@@ -120,13 +120,13 @@
 		
 
 	
-[[renderer_dirtyvalidation">
+
 === Validating
 		
 			Start your application and change a
-			<code>Todo</code>
+			`Todo`
 			in your
-			<code>TodoDetailPart</code>
+			`TodoDetailPart`
 			. The dirty indicator should now be different as indicated in the
 			following screenshot.
 		

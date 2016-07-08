@@ -1,13 +1,13 @@
 <section id="tutorial_confirmationdialog">
-	<title>Confirmation dialog at exit
+== Confirmation dialog at exit
 	
 		Ensure that the
-		<code>org.eclipse.jface</code>
+		`org.eclipse.jface`
 		plug-in is defined as dependency of your application plug-in.
 	
 	
 		In your
-		<code>ExitHandler</code>
+		`ExitHandler`
 		class ensure that the user wants to exit the application via a
 		confirmation dialog. This is done in the following code.
 	
@@ -28,7 +28,7 @@
 			in a handler does only work for special cases, i.e.
 			objects
 			provided by an
-			<code>ExtendedObjectSupplier</code>.
+			`ExtendedObjectSupplier`.
 		
 	</warning>
 

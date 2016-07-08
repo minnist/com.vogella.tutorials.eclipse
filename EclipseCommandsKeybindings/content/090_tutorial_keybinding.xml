@@ -1,6 +1,6 @@
 
-	<title>Tutorial: Defining key bindings for Commands
-[[keybinding_shortcut">
+== Tutorial: Defining key bindings for Commands
+
 === Keybinding using the default scheme
 		 Create a new project "de.vogella.rcp.intro.commands.keybinding"
 			using the "Hello RCP" template, declare command
@@ -25,7 +25,7 @@ image::keybinding10.gif" />
 		 If you now run it the keybinding should work and if you press
 			Ctrll+1 the message on the console should be visible.
 	
-[[keybinding_scheme">
+
 === Defining your own scheme
 		 Add now another key binding "Ctrl+N" to the command
 			"de.vogella.rcp.intro.commands.keybinding.hello". Try it. This will

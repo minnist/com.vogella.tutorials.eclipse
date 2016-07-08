@@ -1,10 +1,10 @@
 
-	<title>Example: Using layout manager
+== Example: Using layout manager
 	
 		The following shows an example for the usage of the
-		<code>GridLayout</code>
+		`GridLayout`
 		class in the
-		<code>com.example.swt.widgets</code>
+		`com.example.swt.widgets`
 		project.
 	
 	

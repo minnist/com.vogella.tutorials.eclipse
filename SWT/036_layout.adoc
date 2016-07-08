@@ -1,25 +1,13 @@
 
-	<title>Using layout managers in SWT
-[[swtlayout_overview">
+== Using layout managers in SWT
+
 === The role of a layout manager
-		<indexterm>
-			<primary>Layout manager</primary>
-		</indexterm>
-		<indexterm>
-			<primary>AbsoluteLayout</primary>
-		</indexterm>
-		<indexterm>
-			<primary>FillLayout</primary>
-		</indexterm>
-		<indexterm>
-			<primary>RowLayout</primary>
-		</indexterm>
-		<indexterm>
-			<primary>GridLayout</primary>
-		</indexterm>
-		<indexterm>
-			<primary>FormLayout</primary>
-		</indexterm>
+		
+		
+		
+		
+		
+		
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Layout manager</secondary>
@@ -30,7 +18,7 @@
 			components
 			of a
 			container, e.g., a
-			<code>Composite</code>
+			`Composite`
 			,
 			on
 			the
@@ -103,21 +91,21 @@
 		
 		
 			If you assign a layout manager to a control you do not have to call
-			<code>pack</code>
+			`pack`
 			anymore. The only case in which you need to call
-			<code>pack</code>
+			`pack`
 			is if control has no layout.
 		
 	
-[[swtlayout_data">
+
 === Layout Data
 		
 
 			Each SWT widget can have a layout specific settings class assigned to
 			it, e.g.
-			<code>GridData</code>
+			`GridData`
 			for a
-			<code>GridLayout</code>
+			`GridLayout`
 			. This allows the developer to control the arrangement of the widgets
 			within the layout.
 		
@@ -125,7 +113,7 @@
 			In the following example you specify that a certain widget
 			should take
 			two columns in a
-			<code>GridLayout</code>
+			`GridLayout`
 			.
 		
 		
@@ -147,9 +135,9 @@
 		
 			The layout will be automatically calculated when the container is
 			displayed. You can tell a
-			<code>Composite</code>
+			`Composite`
 			to recalculate the layout with the
-			<code>composite.layout()</code>
+			`composite.layout()`
 			method.
 		
 		<warning>
@@ -167,44 +155,44 @@
 			
 		</warning>
 	
-[[swtlayout_filllayout">
+
 === FillLayout
 		
-			<code>FillLayout</code>
+			`FillLayout`
 			divides the available space provided by the container equally to all
 			widgets and can be set to
 			arrange the widgets
 			either
 			horizontally (
-			<code>SWT.HORIZONTAL</code>
+			`SWT.HORIZONTAL`
 			)
 			or vertically (
-			<code>SWT.VERTICAL</code>
+			`SWT.VERTICAL`
 			). It also allows you to set the space between the widgets (attribute
-			<code>spacing</code>
+			`spacing`
 			) and the margins of the widgets to the container via the
-			<code>marginWidth</code>
+			`marginWidth`
 			and
-			<code>marginHeight</code>
+			`marginHeight`
 			attributes.
 		
 
 
 	
-[[swtlayout_rowlayout">
+
 === RowLayout
 		
-			<code>RowLayout</code>
+			`RowLayout`
 			orders UI components in a row (
-			<code>SWT.HORIZONTAL</code>
+			`SWT.HORIZONTAL`
 			) or in a
 			column (
-			<code>SWT.VERTICAL</code>
+			`SWT.VERTICAL`
 			).
-			<code>RowLayout</code>
+			`RowLayout`
 			supports wrapping of
 			fields (field
-			<code>wrap</code>
+			`wrap`
 			) by default. You can define if widgets should have their
 			preferred
 			size
@@ -212,25 +200,25 @@
 			or if they should grab the available
 			space
 			via the field
-			<code>pack</code>
+			`pack`
 			. It is also possible to set margins at the top, bottom, left and
 			right. If you
 			set
-			<code>justify</code>
+			`justify`
 			, the widgets will be spread through
 			the
 			available space.
 		
 		
 			Each element can define its height and width via a
-			<code>RowData</code>
+			`RowData`
 			element.
 		
 	
-[[layout_gridlayout">
+
 === GridLayout
 		
-			<code>GridLayout</code>
+			`GridLayout`
 			allows you to arrange the user interface components in a Grid with a
 			certain number of columns. It is also possible to
 			specify column and
@@ -240,7 +228,7 @@
 
 		
 			You can use
-			<code>new GridData()</code>
+			`new GridData()`
 			and assign properties to the new object. Alternatively you can use
 			one of its richer constructors to define certain
 			attributes during
@@ -276,13 +264,13 @@
 								cell
 								(one
 								of:
-								<code>SWT.LEFT</code>
+								`SWT.LEFT`
 								,
-								<code>SWT.CENTER</code>
+								`SWT.CENTER`
 								,
-								<code>SWT.RIGHT</code>
+								`SWT.RIGHT`
 								, or
-								<code>SWT.FILL</code>
+								`SWT.FILL`
 								).
 							</entry>
 						</row>
@@ -295,15 +283,15 @@
 								(one
 								of:
 
-								<code>SWT.TOP</code>
+								`SWT.TOP`
 								,
-								<code>SWT.CENTER</code>
+								`SWT.CENTER`
 								,
-								<code>SWT.END</code>
+								`SWT.END`
 								,
-								<code>SWT.BOTTOM</code>
+								`SWT.BOTTOM`
 								(treated the same as SWT.END), or
-								<code>SWT.FILL</code>
+								`SWT.FILL`
 								).
 							</entry>
 						</row>
@@ -355,22 +343,22 @@
 		
 		
 			If the widget has the
-			<code>grabExcessHorizontalSpace</code>
+			`grabExcessHorizontalSpace`
 			attribute set to true, it will grab available space in its container.
-			<code>SWT.FILL</code>
+			`SWT.FILL`
 			tells the widget to fill the available space.
 			Therefore,
-			<code>grabExcessHorizontalSpace</code>
+			`grabExcessHorizontalSpace`
 			and
-			<code>SWT.FILL</code>
+			`SWT.FILL`
 			are often used together.
 		
 		<tip>
 			
 				The
-				<code>GridDataFactory</code>
+				`GridDataFactory`
 				class provides static methods for creating
-				<code>GridData</code>
+				`GridData`
 				objects. The Javadoc of this class contains several examples for it.
 			
 		</tip>
@@ -378,18 +366,18 @@
 
 
 	
-[[swtlayout_gridatafactory">
+
 === Using GridDataFactory
 		
 			The
-			<code>GridDataFactory</code>
+			`GridDataFactory`
 			class can be used to create
-			<code>GridData</code>
+			`GridData`
 			objects. This class provides a convenient shorthand for creating and
 			initializing GridData. The following listing
 			demonstrates its usage
 			and compares it with the direct usage of
-			<code>GridData</code>
+			`GridData`
 			.
 		
 		
@@ -403,17 +391,17 @@
 			Unfortunately the
 			_SWT Designer_
 			does currently not support
-			<code>GridDataFactory</code>
+			`GridDataFactory`
 			, hence the following examples avoid using them.
 		
 	
-[[swtlayout_performingarelayout">
+
 === Triggering a relayout of a Composite
 		
 			The
-			<code>Composite</code>
+			`Composite`
 			widget defines the
-			<code>layout</code>
+			`layout`
 			method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
 		
 		<table frame='all'>

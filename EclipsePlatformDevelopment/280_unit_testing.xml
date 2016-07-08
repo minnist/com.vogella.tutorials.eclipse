@@ -1,6 +1,6 @@
 
-	<title>Eclipse and tests
-[[unitTestingJFace1">
+== Eclipse and tests
+
 === Eclipse projects and their test suite
 		
 			Most Eclipse projects provide a test suite which can be used to
@@ -24,7 +24,7 @@
 	
 
 
-[[unitTesting_version">
+
 === Version of JUnit
 		
 			At the time of this writing, lots of unit tests of the Eclipse
@@ -40,7 +40,7 @@
 	
 
 
-[[unitTesting_vnc">
+
 === Tips: running the unit tests on a virtual server
 		On Unix based system you can also run the user interface tests
 			with a virtual display. This makes the execution
@@ -91,10 +91,7 @@
 			which is used for the test execution.
 		
 		
-image::settingdisplayforunittests.png" scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Setting the Display variable in Eclipse,pdfwidth=60%]
+image::settingdisplayforunittests.png" scale="30[Setting the Display variable in Eclipse,pdfwidth=60%]
 		
 		
 			If you are running a Maven / Tycho build from the command line, you

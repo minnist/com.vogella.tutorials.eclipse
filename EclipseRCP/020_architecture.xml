@@ -1,13 +1,9 @@
 
-	<title>The Architecture of Eclipse
-[[architecture_overview">
+== The Architecture of Eclipse
+
 === Architecture of Eclipse based applications
-		<indexterm>
-			<primary>Eclipse Architecture</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Eclipse high level design</primary>
-		</indexterm>
+		
+		
 		
 			An Eclipse application consists of individual software
 			components. The Eclipse IDE can be viewed as a special
@@ -31,10 +27,7 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="30" fileref="images/architecture10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Important Eclipse IDE components,pdfwidth=60%]
+					<imagedata scale="30" fileref="images/architecture10.png[Important Eclipse IDE components,pdfwidth=60%]
 		
 
 		The most important Eclipse components of this graphic are
@@ -62,17 +55,12 @@
 		
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="30" fileref="images/architecture20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Typical components of an Eclipse RCP application,pdfwidth=60%]
+					<imagedata scale="30" fileref="images/architecture20.png[Typical components of an Eclipse RCP application,pdfwidth=60%]
 		
 	
-[[architecture_corecomponents">
+
 === Core components of the Eclipse platform
-		<indexterm>
-			<primary>Eclipse core components</primary>
-		</indexterm>
+		
 		
 			_OSGi_
 			is a specification to describe a modular approach to develop component-based Java applications. The programming model
@@ -120,15 +108,13 @@
 
 	
 
-[[e4overview_api">
+
 === Eclipse API and internal API
 		<indexterm>
 			<primary>Provisional API</primary>
 			<see>Internal API</see>
 		</indexterm>
-		<indexterm>
-			<primary>Internal API</primary>
-		</indexterm>
+		
 
 		
 			An OSGi runtime allows the developer to mark Java packages as public, provisional or internal APIs. The internal
@@ -136,10 +122,7 @@
 			non-stable. The public API, or simply API, are the visible and stable API, that can be reused by other components.
 		
 		
-image::osgi_api_definition_overview.png" scale="20" />
-				</imageobject>
-				<textobject>
-					<phrase>API definition in Eclipse,pdfwidth=60%]
+image::osgi_api_definition_overview.png" scale="20[API definition in Eclipse,pdfwidth=60%]
 		
 
 
@@ -225,17 +208,11 @@ image::osgi_api_definition_overview.png" scale="20" />
 	
 
 
-[[architecture_configurationfiles">
+
 === Important configuration files for Eclipse plug-ins
-		<indexterm>
-			<primary>Configuration files of plug-ins</primary>
-		</indexterm>
-		<indexterm>
-			<primary>MANIFEST.MF</primary>
-		</indexterm>
-		<indexterm>
-			<primary>plugin.xml</primary>
-		</indexterm>
+		
+		
+		
 		
 			An Eclipse plug-in has the following main configuration files. These
 			files are defining the API, and the dependencies
@@ -243,13 +220,13 @@ image::osgi_api_definition_overview.png" scale="20" />
 			<itemizedlist>
 				<listitem>
 					
-						<filename>MANIFEST.MF</filename>
+						_MANIFEST.MF_
 						- contains the OSGi configuration information.
 					
 				</listitem>
 				<listitem>
 					
-						<filename>plugin.xml</filename>
+						_plugin.xml_
 						- optional configuration file, contains information about Eclipse
 						specific
 						extension mechanisms.
@@ -261,12 +238,12 @@ image::osgi_api_definition_overview.png" scale="20" />
 
 		
 			An Eclipse plug-in defines its meta data, like its unique identifier, its exported API and its dependencies via the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 		
 			The
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file provides the possibility to create and contribute to
 			Eclipse
 			specific

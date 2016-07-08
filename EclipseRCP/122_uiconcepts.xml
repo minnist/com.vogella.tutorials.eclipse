@@ -1,15 +1,13 @@
 
-	<title>User interface model elements
+== User interface model elements
 	
 		The following model elements represents the basic elements which
 		you use to create the user interface of your
 		application.
 	
-[[e4uiconcept_window">
+
 === Window
-		<indexterm>
-			<primary>Window</primary>
-		</indexterm>
+		
 
 		
 			Eclipse applications consist of one or more windows.
@@ -22,26 +20,19 @@
 			e.g., if you want to support multiple connected monitors.
 		
 		
-image::e4window10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Eclipse application showing 2 windows,pdfwidth=60%]
+image::e4window10.png[Eclipse application showing 2 windows,pdfwidth=60%]
 		
 	
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040a_eclipseui_parts.adoc[]
 
 
-[[e4uiconcept_container">
+
 === Available part containers
 
 
-		<indexterm>
-			<primary>PartStack</primary>
-		</indexterm>
-		<indexterm>
-			<primary>PartSashContainer</primary>
-		</indexterm>
+		
+		
 
 		<indexterm>
 			<primary>Part sash container</primary>
@@ -97,10 +88,7 @@ image::e4window10.png" />
 		
 
 		
-image::e4uicomponents10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>An example arrangement of Parts in an Eclipse application,pdfwidth=60%]
+image::e4uicomponents10.png[An example arrangement of Parts in an Eclipse application,pdfwidth=60%]
 		
 
 		
@@ -119,10 +107,7 @@ image::e4uicomponents10.png" />
 		
 
 		
-image::e4uicomponents20.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>The hierarchy of Parts using PartStacks and
+image::e4uicomponents20.png" scale="60[The hierarchy of Parts using PartStacks and
 						PartSashcontainers.
 					,pdfwidth=60%]
 		
@@ -142,10 +127,7 @@ image::e4uicomponents20.png" scale="60" />
 			screenshot.
 		
 		
-image::containerdata20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Container data for layouting,pdfwidth=60%]
+image::containerdata20.png[Container data for layouting,pdfwidth=60%]
 		
 		
 			If you set the
@@ -180,11 +162,9 @@ image::containerdata20.png" />
 		</tip>
 	
 
-[[e4uiconcept_perspective">
+
 === Perspective
-		<indexterm>
-			<primary>Perspective</primary>
-		</indexterm>
+		
 
 		
 			A

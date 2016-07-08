@@ -1,11 +1,11 @@
-[[_merge_rebase_and_resolving_conflictsmerge_rebase_and_resolving_conflicts]]
+
 == Merge, Rebase and resolving conflicts
 
-[[merge_rebase_and_resolving_conflicts_preparation2]]
+
 === Target
 In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.
 
-[[create_a_conflicting_commit]]
+
 === Create a conflicting commit
 
 You may skip this step if you have already created conflicting changes in the previous exercises. 
@@ -20,7 +20,7 @@ For example, you may add a class `Multiply` and add a corresponding line to the 
 image::history-view-4.png[History View, 400,400]			
 			
 			
-[[_merge_the_feature_branches]]
+
 === Trigger the first merge from the history view
 		
 Now you would like to have both new features in the master branch.
@@ -41,7 +41,7 @@ image::merge.png[Trigger merge via History view,600,600]
 				
 image::fast-forward-merge.png[Fast Forward Merge]
 
-[[_trigger_the_second_merge]]
+
 === Trigger the second merge
 				
 In the History View, select _Merge_	in the context menu of the branch which contains the conflicting commit. 
@@ -53,7 +53,7 @@ image::merge-2.png[Trigger Merge conflict, ,600,600]
 image::merge-with-conflicts.png[Merge conflict]	
 				
 				
-[[resolve-conflicts]]
+
 === Resolving merge conflicts
 
 If a merge generates conflicts the repository is in a special state. 
@@ -98,7 +98,7 @@ When you have done it for all such files the repository state changes from _Conf
 Press the _Commit_ button in the _Git Staging_ view. 
 Note that there is already a commit message proposed by Git. Leave it as it is.
 				
-[[_undo_merging_with_reset]]
+
 === Undo the merge with with the git reset operation
 		
 After you have done a merge as described above assume that you do not want the merge commit in your branch anymore.

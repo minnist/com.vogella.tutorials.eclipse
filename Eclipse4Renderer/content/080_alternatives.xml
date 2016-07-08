@@ -1,6 +1,6 @@
 
-	<title>Alternative renderer
-[[alternativerenderer_overview">
+== Alternative renderer
+
 === Alternatives to SWT
 		You can use any user interface technology for your RCP
 			application, as long as you provide a renderer implementation for it.
@@ -61,15 +61,13 @@
 			choice.
 		
 	
-[[alternativerenderer_own1">
+
 === Vaadin renderer - Vaaeclipse
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>Vaadin</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Vaadin</primary>
-		</indexterm>
+		
 		
 			Vaaclipse is a framework for building web applications using the
 			Eclipse 4
@@ -94,15 +92,13 @@ image::vaadinrenderer10.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
 image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
 		
 	
-[[alternativerenderer_javafxs">
+
 === JavaFX renderer - e(fx)clipse
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>JavaFX</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>JavaFX</primary>
-		</indexterm>
+		
 		
 			The e(fx)clipse provides a JavaFX renderer for Eclipse 4 RCP
 			application. For more information see the
@@ -114,15 +110,13 @@ image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
 image::lose_klein.png[JavaFX renderer example,pdfwidth=60%]
 		
 	
-[[alternativerenderer_rap">
+
 === Eclipse RAP
 		<indexterm>
 			<primary>Renderer</primary>
 			<secondary>RAP</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>RAP</primary>
-		</indexterm>
+		
 		Eclipse RAP is an approach to provide a web implementation for
 			the SWT API and makes it relatively easy to run an Eclipse 3.x RCP
 			application in the web without code modifications.
@@ -146,23 +140,13 @@ image::lose_klein.png[JavaFX renderer example,pdfwidth=60%]
 			.
 		
 	
-[[alternativerenderer_controls">
+
 === Additional UI toolkits
-		<indexterm>
-			<primary>jo-widget</primary>
-		</indexterm>
-		<indexterm>
-			<primary>XWT</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Sapphire</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Wazzabi</primary>
-		</indexterm>
-		<indexterm>
-			<primary>EMF Parsley</primary>
-		</indexterm>
+		
+		
+		
+		
+		
 		Writing source code is the current default approach
 			by the
 			Eclipse platform

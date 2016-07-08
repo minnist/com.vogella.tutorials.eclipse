@@ -1,6 +1,6 @@
 
-	<title>Additional infos about building the Eclipse platform
-[[buildeclipse_additions_questions">
+== Additional infos about building the Eclipse platform
+
 === Reporting issues or asking questions about the build
 		
 			A good place to post questions about the CBI build is the CBI mailing
@@ -10,7 +10,7 @@
 			.
 		
 	
-[[buildeclipse_additions_hudson">
+
 === Eclipse platform Hudson builds
 		
 			The Eclipse platform has a Hudson build instance which can be found
@@ -30,7 +30,7 @@
 	
 
 
-[[buildeclipse_additions_releasebuild">
+
 === Release and milestone builds
 		
 
@@ -73,14 +73,14 @@
 
 	
 
-[[buildeclipse_additions_build_id">
+
 === Changing build ID
 		
 			A normal CBI Build shows, "Build id: @build@" in the "About Eclipse
 			SDK" window. To define a custom build id use the
-			<code>buildId</code>
+			`buildId`
 			parameter and the
-			<code>update-branding-plugins</code>
+			`update-branding-plugins`
 			profile.
 		
 		
@@ -92,12 +92,12 @@
 
 	
 
-[[buildeclipse_additions_single">
+
 === Build single parts of the aggregator
 		
 			It is also possible to build just single parts of the aggregator
 			repository, by passing the
-			<code>build-individual-bundles</code>
+			`build-individual-bundles`
 			profile.
 			The following example shows how to build just the
 			rt.equinox.framework.
@@ -120,7 +120,7 @@
 	
 
 
-[[buildeclipse_additions_buildingnatives">
+
 === Building natives (SWT binary files)
 		The CBI build does not build natives by default (SWT binary
 			files).
@@ -145,7 +145,7 @@
 		
 
 	
-[[buildeclipse_additions_fedora">
+
 === Fedora Eclipse CBI build
 
 		

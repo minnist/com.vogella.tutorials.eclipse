@@ -1,6 +1,6 @@
 
-	<title>Deploying in Tomcat
-[[tomcat_overview">
+== Deploying in Tomcat
+
 === Overview
 		
 			The following explains how to use BIRT reports in Tomcat. In general
@@ -26,7 +26,7 @@
 			</itemizedlist>
 		
 	
-[[tomcat_birtinstall">
+
 === Install BIRT in Tomcat
 		
 			We will use a stand-alone Tomcat 6.0 which we assume is already
@@ -58,7 +58,7 @@ image::SNAG-0039.gif" format="gif" />
 			</mediaobject>
 		
 	
-[[birtdeploying_tomcat">
+
 === Install your BIRT reports in Tomcat
 		 To run your own reports you have to copy the .rptdesign file in
 			the root of the birt folder in Tomcat. To make your Java classes

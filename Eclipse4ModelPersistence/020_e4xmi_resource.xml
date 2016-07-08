@@ -1,7 +1,7 @@
 
-	<title>Saving and restoring parts of the application model
+== Saving and restoring parts of the application model
 
-[[modelpersistence_e4xmi_resource_save">
+
 === Store certain model elements
 		
 			By default the Eclipse platform stores and restores the complete runtime application model, unless the startup
@@ -13,7 +13,7 @@
 			It is possible to store
 			selected
 			model elements via the
-			<code>E4XMIResourceFactory</code>
+			`E4XMIResourceFactory`
 			class. This allows a more flexible handling of the model persistence.
 		
 		
@@ -29,13 +29,13 @@
 			</programlisting>
 		
 	
-[[modelpersistence_e4xmi_resource_load">
+
 === Load stored model elements
 		
 			The previously stored xmi file can be restored by using the
-			<code>load</code>
+			`load`
 			method of the
-			<code>Resource</code>
+			`Resource`
 			class.
 		
 		

@@ -1,10 +1,10 @@
 
-	<title>Generating the domain classes
-[[emfmodel_code">
+== Generating the domain classes
+
 === Generating Java code
 		
 			Based on the
-			<filename>.genmodel</filename>
+			_.genmodel_
 			files, you can generate
 			Java
 			code.
@@ -12,7 +12,7 @@
 		
 			Right-click
 			on the root node of the
-			<filename>.genmodel</filename>
+			_.genmodel_
 			file
 			and select
 			_Generate Model Code_
@@ -32,24 +32,24 @@ image::EMFCodeGen10.gif" />
 		
 	
 
-[[emfmodel_codereview">
+
 === Review the generated code
 		
 			The generated code will consist of the following:
 			<itemizedlist>
 				<listitem>
-					<filename>model</filename> -- Interfaces and the Factory to create
+					_model_ -- Interfaces and the Factory to create
 						the Java classes
 					
 				</listitem>
 				<listitem>
-					<filename>model.impl</filename> -- Concrete implementation of the
+					_model.impl_ -- Concrete implementation of the
 						interfaces
 						defined in model
 					
 				</listitem>
 				<listitem>
-					<filename>model.util</filename> -- The AdapterFactory
+					_model.util_ -- The AdapterFactory
 				</listitem>
 			</itemizedlist>
 		
@@ -57,17 +57,17 @@ image::EMFCodeGen10.gif" />
 			The central factory has methods for creating all defined
 			objects
 			via
-			<code>createObjectName()</code>
+			`createObjectName()`
 			methods.
 		
 		
 			For each attribute the generated interface and its
 			implementation
 			contain
-			<code>getter</code>
+			`getter`
 			and (if allowed in the model
 			definition)
-			<code>setter</code>
+			`setter`
 			methods. Each setter also has a generated
 			notification to observers of
 			the model. This means that other objects
@@ -79,18 +79,18 @@ image::EMFCodeGen10.gif" />
 
 		
 			Each generated interface extends the
-			<code>EObject</code>
+			`EObject`
 			interface.
-			<code>EObject</code>
+			`EObject`
 			is the
 			base of every EMF class and is the EMF
 			equivalent of
-			<code>java.lang.Object</code>
+			`java.lang.Object`
 			.
-			<code>EObject</code>
+			`EObject`
 			and its corresponding
 			implementation class
-			<code>EObjectImpl</code>
+			`EObjectImpl`
 			provide a lightweight base
 			class that
 			lets the generated
@@ -104,7 +104,7 @@ image::EMFCodeGen10.gif" />
 
 		
 			Every generated method is tagged with
-			<code>@generated</code>
+			`@generated`
 			. If you
 			want to
 			manually adjust the method
@@ -117,14 +117,14 @@ image::EMFCodeGen10.gif" />
 		
 
 	
-[[emfmodel_update">
+
 === Updating the model
 		
 			If you change your
-			<filename>.ecore</filename>
+			_.ecore_
 			model then you can
 			update the
-			<filename>.genmodel</filename>
+			_.genmodel_
 			simply by
 			reloading.
 image::EMFModel70.gif" />

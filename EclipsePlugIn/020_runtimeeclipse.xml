@@ -1,6 +1,6 @@
 
-	<title>Starting an Eclipse instance (Runtime Eclipse)
-[[runtimeeclipse_introduction">
+== Starting an Eclipse instance (Runtime Eclipse)
+
 === Starting the Eclipse IDE from Eclipse
 		<indexterm>
 			<primary>Runtime Eclipse IDE
@@ -31,7 +31,7 @@
 
 		
 	
-[[runtimeeclipse_starting">
+
 === Starting a new Eclipse instance
 		
 			The easiest way to create a run configuration for an Eclipse IDE is by selecting
@@ -56,7 +56,7 @@ image::eclipseideplugin70.png"/>
 		
 	
 
-[[runtimeeclipse_debug">
+
 === Debugging the Eclipse instance
 		
 			You can debug the Eclipse IDE itself.

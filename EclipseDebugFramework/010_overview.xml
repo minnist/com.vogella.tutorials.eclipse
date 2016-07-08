@@ -11,11 +11,11 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Eclipse Debug Framework
+== Eclipse Debug Framework
 	<!-- - Used when the launch framework is used in debug mode - Describe debug 
 		model and IDebugElements - Communication between the Debug Framework and 
 		the VM or interpreter - A thread only has stack frames when it is suspended. -->
-[[eclipse_debug_framework_prerequisites">
+
 === Prerequisites for this tutorial
 		
 			This tutorial assumes that you have basic understanding of
@@ -34,7 +34,7 @@ Version 0.3, 06.07.2016
 			tutorial, which should be read beforehand.
 		
 	
-[[eclipse_debug_model">
+
 === Eclipse Debug Model
 		
 			The Eclipse Debug Model is represented by a hierarchy of model
@@ -50,34 +50,34 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 		
 		
 			Every debug model element is derived from
-			<code>org.eclipse.debug.core.model.IDebugElement</code>
+			`org.eclipse.debug.core.model.IDebugElement`
 			interface.
 		
 		
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.debug.core.model.IDebugTarget</code>
+						`org.eclipse.debug.core.model.IDebugTarget`
 					
 					<itemizedlist>
 						<listitem>
 							
-								<code>org.eclipse.debug.core.model.IThread</code>
+								`org.eclipse.debug.core.model.IThread`
 							
 							<itemizedlist>
 								<listitem>
 									
-										<code>org.eclipse.debug.core.model.IStackFrame</code>
+										`org.eclipse.debug.core.model.IStackFrame`
 									
 									<itemizedlist>
 										<listitem>
 											
-												<code>org.eclipse.debug.core.model.IVariable</code>
+												`org.eclipse.debug.core.model.IVariable`
 											
 											<itemizedlist>
 												<listitem>
 													
-														<code>org.eclipse.debug.core.model.IValue</code>
+														`org.eclipse.debug.core.model.IValue`
 													
 												</listitem>
 											</itemizedlist>
@@ -93,15 +93,15 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 		<note>
 			
 				The debug framework also offers an abstract
-				<code>org.eclipse.debug.core.model.DebugElement</code>
+				`org.eclipse.debug.core.model.DebugElement`
 				class as default implementation of
-				<code>IDebugElement</code>
+				`IDebugElement`
 				interface, which should should be used for implementing these custom
 				debug model elements.
 			
 		</note>
 	
-[[eclipse_debug_operations">
+
 === Debug Model Communication
 		The Debug Model Communication is based on events, due to the
 			asynchronous nature of the communication between the model and the
@@ -109,16 +109,16 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 		
 		
 			For example the
-			<code>IDebugTarget</code>
+			`IDebugTarget`
 			implements the
-			<code>org.eclipse.debug.core.model.ISuspendResume</code>
+			`org.eclipse.debug.core.model.ISuspendResume`
 			interface with method like
-			<code>suspend()</code>
+			`suspend()`
 			and
-			<code>resume()</code>
+			`resume()`
 			, which are called synchronously, but are immediately returned. So
 			the actual result comes back asynchronously by sending an
-			<code>org.eclipse.debug.core.DebugEvent</code>
+			`org.eclipse.debug.core.DebugEvent`
 			.
 		
 		
@@ -127,18 +127,18 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 			done in
 			different threads so that the UI won't be blocked. But for
 			convenience the
-			<code>org.eclipse.debug.core.DebugEvent</code>
+			`org.eclipse.debug.core.DebugEvent`
 			objects should be used by deriving the debug model elements from
-			<code>org.eclipse.debug.core.model.DebugElement</code>
+			`org.eclipse.debug.core.model.DebugElement`
 			, which offers default implementations for firing
-			<code>DebugEvents</code>
+			`DebugEvents`
 			.
 		
 	
 	<section>
 === Attach the IDebugTarget to the launch delegate
 		
-			<code>IDebugTargets</code>
+			`IDebugTargets`
 			are added to the launch procedure like this:
 		
 		

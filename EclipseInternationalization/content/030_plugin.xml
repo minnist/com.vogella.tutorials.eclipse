@@ -1,5 +1,5 @@
 
-	<title>Translating plugin.xml
+== Translating plugin.xml
 	<indexterm>
 		<primary>i22n</primary>
 		<secondary>plugin.xml</secondary>
@@ -7,13 +7,13 @@
 
 	
 		Similar to the usage of keys in the application model, you can use the key prefixed with % in the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. The Eclipse tooling supports extracting existing
-		<code>String</code>
+		`String`
 		values from the
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file. Select your
-		<filename>plugin.xml</filename>
+		_plugin.xml_
 		file, right-click on it and select
 		menu:
 			<guimenu>Plug-in Tools</guimenu>

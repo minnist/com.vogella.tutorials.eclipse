@@ -1,16 +1,12 @@
 
-	<title>Selection service
-[[selectedservices_selectionservice_usage">
+== Selection service
+
 === Usage of the selection service
-		<indexterm>
-			<primary>Selection services</primary>
-		</indexterm>
-		<indexterm>
-			<primary>ESelectionService</primary>
-		</indexterm>
+		
+		
 		
 			The
-			<code>ESelectionService</code>
+			`ESelectionService`
 			service allows you to retrieve and set the global
 			selection in
 			your
@@ -26,25 +22,25 @@
 			client
 			can get
 			the selection service via:
-			<code>@Inject ESelectionService</code>
+			`@Inject ESelectionService`
 			.
 		
 		<tip>
 			
 				The selection is window specific, i.e. stored in the context of the
-				<code>MWindow</code>
+				`MWindow`
 				model object.
 			
 		</tip>
 
 	
-[[selectedservices_selectionservice_changing">
+
 === Changing the current selection
 		
 			You can change the current selection with the
-			<code>setSelection()</code>
+			`setSelection()`
 			method of the
-			<code>ESelectionService</code>
+			`ESelectionService`
 			class. This is demonstrated in the following code.
 		
 		
@@ -54,16 +50,16 @@
 			</programlisting>
 		
 	
-[[selectedservices_selectionservice_getting">
+
 === Getting the selection
 		
 			A client can retrieve the last selection for the current window
 			directly from the
-			<code>ESelectionService</code>
+			`ESelectionService`
 			via the
-			<code>getSelection()</code>
+			`getSelection()`
 			method. The
-			<code>getSelection(partId)</code>
+			`getSelection(partId)`
 			method allows you to retrieve the selection of a specific
 			part.
 
@@ -73,7 +69,7 @@
 				The possibility of retrieving the selection of a part is based on
 				the
 				hierarchy of the
-				<code>IEclipseContext</code>
+				`IEclipseContext`
 				. With this hierarchy it is possible to store a selection per window
 				and also per part.
 			
@@ -83,10 +79,10 @@
 			uses dependency injection to retrieve
 			the selection. The selection is
 			stored under the key based on the
-			<code>IServiceConstants.ACTIVE_SELECTION</code>
+			`IServiceConstants.ACTIVE_SELECTION`
 			constant.
 			This key can be specified via the
-			<code>@Named</code>
+			`@Named`
 			annotation. The Eclipse framework ensures that
 			selections are
 			only
@@ -95,7 +91,7 @@
 
 		
 			The usage of the
-			<code>@Named</code>
+			`@Named`
 			annotation to retrieve the selection is demonstrated with the
 			following method.
 		

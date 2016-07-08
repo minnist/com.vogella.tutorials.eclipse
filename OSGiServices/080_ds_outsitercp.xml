@@ -1,10 +1,10 @@
 
-	<title>Setting the start level for declarative services
+== Setting the start level for declarative services
 	
 		If you use OSGi DS services outside Eclipse RCP applications,
 		you
 		need to ensure that the
-		<code>org.eclipse.equinox.ds</code>
+		`org.eclipse.equinox.ds`
 		plug-ins is started before any application
 		plug-in
 		which

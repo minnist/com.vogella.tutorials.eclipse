@@ -1,9 +1,9 @@
 
-	<title>Restrictions
+== Restrictions
 	
 		_Extended object suppliers_
 		do not have access to the
-		<code>IEclipseContext</code>
+		`IEclipseContext`
 		in which they are called. This limits them to search for objects
 		independent of the current Eclipse context. But general Dependency
 		Injection
@@ -17,6 +17,6 @@
 		.
 		They look for the preference values on the file system and do not
 		know about the
-		<code>IEclipseContext</code>
+		`IEclipseContext`
 		.
 	

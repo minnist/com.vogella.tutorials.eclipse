@@ -1,5 +1,5 @@
 
-	<title>Clone an existing repository
+== Clone an existing repository
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>clone repository
@@ -103,7 +103,7 @@
 	
 	
 		After pressing the
-		<guibutton>Next</guibutton>
+		_Next_
 		button the system will allow you to import the
 		existing
 		branches. You

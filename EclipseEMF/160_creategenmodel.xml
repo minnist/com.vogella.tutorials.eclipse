@@ -1,10 +1,10 @@
 
 
-	<title>Create EMF Generator Model
+== Create EMF Generator Model
 	
 		If your EMF genmodel is missing you can create one.
 		Right-click your
-		<filename>.ecore</filename>
+		_.ecore_
 		file and select
 		menu:
 			<guimenu>File</guimenu>
@@ -14,7 +14,7 @@
 		</menuchoice>
 		.
 		Create the
-		<filename>webpage.genmodel</filename>
+		_webpage.genmodel_
 		file based on your
 		_Ecore model_
 		.

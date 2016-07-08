@@ -1,20 +1,18 @@
 
-	<title>Contributing to the application model
+== Contributing to the application model
 
-[[contribute_fragment">
+
 === Model fragments
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Fragments</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Model fragments</primary>
-		</indexterm>
+		
 		
 			A model
 			_fragment_
 			is a file which typically ends with the
-			<filename>.e4xmi</filename>
+			_.e4xmi_
 			extension. It statically specifies model elements and the location in
 			the application model
 			to which it should be
@@ -43,15 +41,13 @@
 		</tip>
 	
 
-[[contribute_processors">
+
 === Model processors
 		<indexterm>
 			<primary>Application model</primary>
 			<secondary>Processors</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Model processor</primary>
-		</indexterm>
+		
 		
 			A
 			_processor_
@@ -63,7 +59,7 @@
 		
 	
 
-[[applicationmodel_position">
+
 === Position of new model elements
 		
 			Fragments define the desired position of new model
@@ -142,7 +138,7 @@
 	
 
 
-[[applicationmodel_contributingtoids">
+
 === Usage of IDs
 		If you want to contribute to an element of the application model
 			you must
@@ -161,7 +157,7 @@
 		</tip>
 	
 
-[[applicationmodel_eclipse3">
+
 === Comparison with Eclipse 3.x
 		The programming model of Eclipse 3.x primarily uses extension
 			points to define

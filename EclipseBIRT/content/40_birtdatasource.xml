@@ -1,11 +1,11 @@
 
-	<title>Datasource and Dataset
+== Datasource and Dataset
 	To use Java Objects (POJO's) as datasource in Eclipse BIRT you
 		have to map the fields of your Java classes to
 		JavaScript. This
 		JavaScript is used in your report and will access the Java
 		Object.
-[[data_source">
+
 === Create Data Source
 		 The data source connects your data with your report. BIRT
 			provides different types of data sources, we use the "Scripted Data
@@ -25,7 +25,7 @@ image::datasource20.gif" format="gif" />
 			</mediaobject>
 		
 	
-[[data_dataset">
+
 === The Dataset
 		
 			The dataset defines the mapping for the datasource data and the
@@ -52,7 +52,7 @@ image::dataset30.gif" format="gif" />
 			</mediaobject>
 		
 	
-[[data_javascript">
+
 === JavaScript
 		 Now we have to write the JavaScript for our dataset. Select the dataset and
 			choose "open" as script. The open script is called before the first

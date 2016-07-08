@@ -1,7 +1,7 @@
-[[rebaseexercise]]
+
 == Rebase
 
-[[rebaseexercise_ontonanotherbranc]]
+
 === Rebasing a branch onto another
 
 Now do a rebase of the conflicting commit instead of a merge. 
@@ -19,21 +19,21 @@ Note that there is a reference called `ORIG_HEAD` pointing to the commit which w
 You may revert the rebase operation with reset as described above.
 
 
-[[rebase_interactiverebase_edit]]
+
 === Using interactive rebase to edit the commit message
 		
 Use `git rebase -i HEAD~4`.
 
 Reword one of your commit messages.
 
-[[rebase_interactiverebase_squash]]
+
 === Squash two commits
 
 Do another commit by adding a comment in the code to your last change. Commit this change via a new commit.
 		
 You realize that you wanted to combine the last two commits. Use Use the `git rebase -i` command to combine both commits.
 		
-[[rebase_interactiverebase_remove]]
+
 === Remove a commit
 		
 Do two more commits, A followed by B. 

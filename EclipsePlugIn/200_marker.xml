@@ -1,5 +1,5 @@
 
-	<title>Resources and Marker
+== Resources and Marker
 	
 		Eclipse represents Resources like
 		_Projects_,
@@ -7,7 +7,7 @@
 		_Folders_,
 		_Packages_
 		as
-		<code>IResource</code>
+		`IResource`
 		.
 	
 	

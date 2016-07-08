@@ -1,6 +1,6 @@
 
-	<title>Exercise: Implementing a model processor
-[[contributeprocessors_target">
+== Exercise: Implementing a model processor
+
 === Target
 		
 			In this exercise
@@ -11,41 +11,41 @@
 
 	
 
-[[contributeprocessors_dependencies">
+
 === Enter the dependencies
 		
 			Continue to use the
-			<code>com.example.e4.rcp.todo.contribute</code>
+			`com.example.e4.rcp.todo.contribute`
 			plug-in for this exercise.
 		
 
 		
 			In the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			, add the following plug-ins as dependencies to your
 			_contribute_
 			plug-in.
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.services</code>
+						`org.eclipse.e4.ui.services`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.contexts</code>
+						`org.eclipse.e4.core.contexts`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.ui.model.workbench</code>
+						`org.eclipse.e4.ui.model.workbench`
 					
 				</listitem>
 			</itemizedlist>
 		
 
 	
-[[contributeprocessors_java">
+
 === Create the Java classes
 		 Create the following dialog and handler classes. 
 
@@ -67,7 +67,7 @@
 			entries
 			which have "exit" in their ID from the menu with
 			the
-			<code>org.eclipse.ui.file.menu</code>
+			`org.eclipse.ui.file.menu`
 			ID. It also adds a new entry.
 		
 
@@ -81,22 +81,22 @@
 		<warning>
 			
 				Ensure that your menu entry labeled with "Exit" in the
-				<filename>Application.e4xmi</filename>
+				_Application.e4xmi_
 				file, contains "exit" in its ID.
 			
 		</warning>
 
 	
 
-[[contributeprocessors_extension">
+
 === Register processor via extension
 		
 			In your
-			<code>contribute</code>
+			`contribute`
 			plug-in register your
-			<code>processor</code>
+			`processor`
 			via the
-			<code>org.eclipse.e4.workbench.model</code>
+			`org.eclipse.e4.workbench.model`
 			extension.
 		
 
@@ -140,14 +140,14 @@ image::processor10.png" />
 		<warning>
 			
 				The ID of the element defined in the extension point must match the
-				<code>@Named</code>
+				`@Named`
 				value in the processor, otherwise your menu is not injected into the
 				processor.
 			
 		</warning>
 
 	
-[[contributeprocessors_validate">
+
 === Validating
 		
 			Start your application. In the model fragment exercises, the

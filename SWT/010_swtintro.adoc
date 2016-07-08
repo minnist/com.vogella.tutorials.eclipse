@@ -1,11 +1,9 @@
 
-	<title>SWT Overview
+== SWT Overview
 
-[[swt_overview">
+
 === What is SWT?
-		<indexterm>
-			<primary>SWT</primary>
-		</indexterm>
+		
 		
 			The Standard Widget Toolkit (
 			_SWT_
@@ -82,7 +80,7 @@
 			this platform.
 		
 	
-[[swt_eclipse">
+
 === Eclipse applications and SWT
 		
 			Eclipse applications typically use
@@ -118,7 +116,7 @@
 		
 
 	
-[[swt_display">
+
 === Display and Shell
 		<indexterm>
 			<primary>SWT</primary>
@@ -128,37 +126,33 @@
 			<primary>SWT</primary>
 			<secondary>Shell</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Shell (SWT)</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Display (SWT)</primary>
-		</indexterm>
+		
+		
 
 		
 			The
-			<code>Display</code>
+			`Display`
 			and
-			<code>Shell</code>
+			`Shell`
 			classes are key components of
 			SWT
 			applications.
 		
 		
 			A
-			<code>org.eclipse.swt.widgets.Shell</code>
+			`org.eclipse.swt.widgets.Shell`
 			class
 			represents a window.
 		
 		
 			The
-			<code>org.eclipse.swt.widgets.Display</code>
+			`org.eclipse.swt.widgets.Display`
 			class is responsible for managing event loops, fonts, colors
 			and for
 			controlling the communication between the user interface thread and
 			other
 			threads.
-			<code>Display</code>
+			`Display`
 			is therefore the
 			base for
 			all
@@ -170,29 +164,29 @@
 			SWT
 			application requires at
 			least one
-			<code>Display</code>
+			`Display`
 			and one
 			or more
-			<code>Shell</code>
+			`Shell`
 			instances. The main
-			<code>Shell</code>
+			`Shell`
 			gets,
 			as a default parameter, a
-			<code>Display</code>
+			`Display`
 			as a
 			constructor argument. Each
-			<code>Shell</code>
+			`Shell`
 			is constructed with a
-			<code>Display</code>
+			`Display`
 			and if none is provided during construction it will use either the
-			<code>Display</code>
+			`Display`
 			which is currently used or a default one.
 		
 
 	
 
 
-[[swt_eventloop">
+
 === Event loop
 		<indexterm>
 			<primary>SWT</primary>
@@ -208,7 +202,7 @@
 			does not provide its own event loop. This means that the
 			programmer explicitly starts and checks the event loop to update the
 			user interface. The loop executes the
-			<code>readAndDispatch()</code>
+			`readAndDispatch()`
 			method which reads events from the native OS event queue and
 			dispatches them to the SWT event system. The loop is executed until
 			the

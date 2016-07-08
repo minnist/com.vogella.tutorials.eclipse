@@ -1,7 +1,7 @@
 
-	<title>Exericse: Eclipse user creation and Gerrit server configuration
+== Exericse: Eclipse user creation and Gerrit server configuration
 
-[[eclipsecontribution_usersetup_creation">
+
 === Create an Eclipse user account
 
 		
@@ -20,7 +20,7 @@
 			.
 		
 	
-[[eclipsecontribution_usersetup_cla">
+
 === Sign the Contributor License Agreement (CLA)
 		You also need to confirm to the Eclipse foundation that you have the right to contribute your code to
 			the Eclipse
@@ -56,7 +56,7 @@
 		</tip>
 	
 
-[[eclipsegerrit_configuration_user">
+
 === Configure your Eclipse Gerrit user
 		
 			You need to configure Gerrit if you want to use SSH or HTTPS to upload your contributions. The Gerrit user is
@@ -102,7 +102,7 @@ image::eclipsegerritsettings10.png[Gerrit settings for Eclipse,pdfwidth=60%]
 	
 
 
-[[eclipsegerrit_configuration_https">
+
 === Authentication via HTTPS
 		
 			The web page of the Gerrit review system enables you to generate an HTTP password.
@@ -131,7 +131,7 @@ image::gerrit_eclipsehttps.png[Eclipse Gerrit HTTPS access,pdfwidth=60%]
 
 	
 
-[[eclipsegerrit_configuration_ssh">
+
 === Authentication via SSH
 		
 			You need to upload your SSH key to the Gerrit installation so that

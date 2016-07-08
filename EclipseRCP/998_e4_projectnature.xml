@@ -1,5 +1,5 @@
 
-	<title>Enable to start your product with right mouse click
+== Enable to start your product with right mouse click
 	
 		You can also add the
 		_pde nature_
@@ -30,10 +30,7 @@
 		
 		
 image::removefilterfordotfiles10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Remove filter,pdfwidth=60%]
+						scale="40[Remove filter,pdfwidth=60%]
 		
 
 
@@ -47,7 +44,7 @@ image::removefilterfordotfiles10.png"
 		_Package Explorer_
 		view
 		for files starting with . (dot) and modify the
-		<filename>.project</filename>
+		_.project_
 		file to the following.
 	
 	

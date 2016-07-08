@@ -1,6 +1,6 @@
 
 
-	<title>Using the Git Staging view
+== Using the Git Staging view
 	<indexterm>
 		<primary>Eclipse Git</primary>
 		<secondary>Staging view
@@ -53,7 +53,7 @@
 		area. To commit the staged changes you
 		write a descriptive commit
 		message and press the
-		<guibutton>Commit</guibutton>
+		_Commit_
 		button which is highlighted in the following screenshot.
 	
 	

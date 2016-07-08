@@ -1,5 +1,5 @@
 <chapter>
-	<title>Optional exercise: Implementing a tree to view the todos grouped by tags
+== Optional exercise: Implementing a tree to view the todos grouped by tags
 	<section>
 === Target of this exercise
 		
@@ -10,11 +10,11 @@
 === Add dependencies
 		
 			Ensure that 
-			<code>org.eclipse.jface</code>
+			`org.eclipse.jface`
 			and
-			<code>org.eclipse.e4.ui.dialogs</code>
+			`org.eclipse.e4.ui.dialogs`
 			plug-in are available as dependency in the
-			<code>com.example.e4.rcp.todo</code>
+			`com.example.e4.rcp.todo`
 			plug-in.  You might have added these dependencies already in another exercise.
 		
 	
@@ -22,11 +22,11 @@
 === Create part implementation
 		
 			Create the following part implementation with the
-			<code>label</code>
+			`label`
 			or
-			<code>summary</code>
+			`summary`
 			and
-			<code>description</code>
+			`description`
 			fields as tree
 			columns.
 			This part should also have a "Load Data" button to load the data into the
@@ -48,10 +48,7 @@
 		The result should look similar to the following screenshot.
 		
 		
-image::filteredtree_tutorial.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Result Part after the implementation of the JFace Table,pdfwidth=60%]
+image::filteredtree_tutorial.png" scale="40[Result Part after the implementation of the JFace Table,pdfwidth=60%]
 		
 		<tip>
 			The "Load Data" button is later used, once you implement the

@@ -1,13 +1,13 @@
 
-	<title>Usage of the event system
+== Usage of the event system
 
 	
 		The
-		<code>IEventBroker</code>
+		`IEventBroker`
 		is a global event bus and is unaware of the
-		<code>IEclipseContext</code>
+		`IEclipseContext`
 		hierarchy. The
-		<code>IEventBroker</code>
+		`IEventBroker`
 		service supports
 		sending event
 		information without

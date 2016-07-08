@@ -1,5 +1,5 @@
 
-	<title>Example: DateTime Widget and Java 8 time API
+== Example: DateTime Widget and Java 8 time API
 	
 		With Java 8, you have a redesigned Data and Time API. JFace data binding does currently not support not based
 		on Java 8 therefore this
@@ -8,7 +8,7 @@
 	
 	
 		To use it, you have to implement your custom
-		<code>WidgetValueProperty</code>
+		`WidgetValueProperty`
 		.
 	
 	
@@ -18,18 +18,18 @@
 	
 	
 		Here we implement a binding between the
-		<code>DateTime</code>
+		`DateTime`
 		SWT widget and a
-		<code>TemporalAccessor</code>
+		`TemporalAccessor`
 		, which for instance can be a
-		<code>java.time.LocalDate</code>
+		`java.time.LocalDate`
 		or
-		<code>java.time.LocalTime</code>
+		`java.time.LocalTime`
 		.
 	
 	
 		The usage of the
-		<code>DateTimeSelectionProperty</code>
+		`DateTimeSelectionProperty`
 		is demonstrated by the following listing.
 	
 	
@@ -39,26 +39,26 @@
 	
 	
 		In this sample we bind the
-		<code>DateTime</code>
+		`DateTime`
 		widget to a
-		<code>WritableValue</code>
+		`WritableValue`
 		,
 		which contains a
-		<code>TemporalAccessor</code>
+		`TemporalAccessor`
 		instance and this
-		<code>WritableValue</code>
+		`WritableValue`
 		is changed by selecting a date in the
-		<code>TableViewer</code>
+		`TableViewer`
 		. The
-		<code>dateTimeObservableValue</code>
+		`dateTimeObservableValue`
 		is also bound to a label, in order to see the
 		changes by manually manipulating to the
-		<code>DateTime</code>
+		`DateTime`
 		widget.
 	
 	
 		The result of manually manipulating to the
-		<code>DateTime</code>
+		`DateTime`
 		widget looks like this:
 		<mediaobject>
 			<imageobject>
@@ -68,13 +68,13 @@
 	
 	
 		If you select a date in the
-		<code>TableViewer</code>
+		`TableViewer`
 		, this updates the
-		<code>WritableValue</code>
+		`WritableValue`
 		and therefore also the
-		<code>DateTime</code>
+		`DateTime`
 		widget and also
 		the
-		<code>Label</code>
+		`Label`
 		, because all these are bound together.
 	

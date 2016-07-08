@@ -1,6 +1,6 @@
 
-	<title>Contribute a menu to existing Part
-[[contribute_overview">
+== Contribute a menu to existing Part
+
 === Overview
 		
 			In this example we will add a new context menu entry to the
@@ -24,7 +24,7 @@
 			. To start the Menu Spy use ALT + Shift + F2 and click on the menu entry you are interested in.
 		
 	
-[[contribute_packageexplorer">
+
 === Contribute to the Package Explorer
 		
 			Create a new plug-in project called
@@ -35,7 +35,7 @@
 
 		
 			Open the
-			<filename>META-INF/MANIFEST.MF</filename>
+			_META-INF/MANIFEST.MF_
 			file. Select the
 			_Dependencies_
 			tab
@@ -67,16 +67,16 @@
 			_Overview_
 			tab.
 			Add a command with the ID
-			<code>de.vogella.plugin.htmlconverter.convert</code>
+			`de.vogella.plugin.htmlconverter.convert`
 			and
 			the default handler
-			<code>de.vogella.plugin.htmlconverter.handler.ConvertHandler</code>
+			`de.vogella.plugin.htmlconverter.handler.ConvertHandler`
 			to your plug-in.
 		
 		
 			Add
 			this command to the menu via the extension point
-			<code>org.eclipse.ui.menus</code>
+			`org.eclipse.ui.menus`
 			and use
 			<property>popup:org.eclipse.jdt.ui.PackageExplorer</property>
 			as the
@@ -87,7 +87,7 @@
 		
 		
 			The resulting file
-			<code>plugin.xml</code>
+			`plugin.xml`
 			should look like the following.
 		
 		
@@ -101,11 +101,11 @@
 			save additional information for each file. You
 			can
 			use the
-			<code>IResource</code>
+			`IResource`
 			interface and the
-			<code>setPersistentProperty()</code>
+			`setPersistentProperty()`
 			and
-			<code>getPersistentProperty()</code>
+			`getPersistentProperty()`
 			methods. With these functions you can save Strings on files.
 			We use
 			these functions to save a directory for Java source
@@ -117,7 +117,7 @@
 
 		
 			Create the following
-			<code>ConvertHandler</code>
+			`ConvertHandler`
 			class.
 		
 
@@ -139,7 +139,7 @@ image::html40.gif" scale="60" />
 			</mediaobject>
 		
 	
-[[contextmenu_restrict">
+
 === Restrict the extension - Visible When
 		
 			Currently our context menu is displayed all the time.
@@ -154,16 +154,16 @@ image::html40.gif" scale="60" />
 		
 		
 			Add the
-			<code>org.eclipse.core.expressions</code>
+			`org.eclipse.core.expressions`
 			plug-in as dependency to your plug-in. Select your menu
 			contribution.
 			Using the right mouse add the condition to the
 			command that it should
 			only be visible if a file is selected
 			which represents a
-			<code>ICompilationUnit</code>
+			`ICompilationUnit`
 			from the
-			<code>org.eclipse.jdt.core</code>
+			`org.eclipse.jdt.core`
 			package.
 		
 		
@@ -173,13 +173,13 @@ image::html40.gif" scale="60" />
 			which contains the selection in the menu and iterate over
 			it. If the
 			selection can get adapted to
-			<code>ICompilationUnit</code>
+			`ICompilationUnit`
 			,
 			then the contribution will be visible.
 		
 		
 			This will result in the following
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			.
 		
 		

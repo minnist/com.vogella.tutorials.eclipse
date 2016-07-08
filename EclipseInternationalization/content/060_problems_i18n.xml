@@ -1,5 +1,5 @@
 
-	<title>Common problems with i18n
+== Common problems with i18n
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>Problems</secondary>
@@ -12,7 +12,7 @@
 					property
 					files are included in the export.
 					You do this via the
-					<filename>build.properties</filename>
+					_build.properties_
 					file of the plug-in which provides the property
 					files.
 				

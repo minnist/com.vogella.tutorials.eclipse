@@ -1,6 +1,6 @@
 
-	<title>Introduction
-[[dtpintro_dtp">
+== Introduction
+
 === Eclipse Data Tools Platform
 		 The Eclipse DTP project provide tools for performing
 			database
@@ -8,7 +8,7 @@
 			or a database browser.
 		
 	
-[[dtpintro_derby">
+
 === Derby - Java DB
 		
 			In this article
@@ -28,7 +28,7 @@
 			PostgreSQL, HSQLDB.
 		
 	
-[[dtpintro_ide">
+
 === Using Eclipse
 		
 			The following assumes that you already have knowledge in using

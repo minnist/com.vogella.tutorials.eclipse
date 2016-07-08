@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 <section>
-	<title>Custom basic widgets
+== Custom basic widgets
 	Sometimes you have special requirements for a custom widget, which cannot be delivered by
 		an existing widget or a compound one, so that you must draw it yourself. As noted above we
 		use `Canvas` for self drawn widgets, which do not have children.

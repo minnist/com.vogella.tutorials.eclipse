@@ -1,5 +1,5 @@
 
-	<title>Download the Eclipse SDK
+== Download the Eclipse SDK
 
 	If you plan to add functionalities to the Eclipse platform, you should download the latest Eclipse release.
 		Official releases have stable APIs, therefore are a good foundation for adding your plug-ins and features.

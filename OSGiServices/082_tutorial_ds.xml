@@ -1,5 +1,5 @@
 
-	<title>Tutorial: Define a declarative OSGi Service
+== Tutorial: Define a declarative OSGi Service
 	 The following will define a DS service based on the quote
 		example. It is therefore required that you have created
 		the
@@ -16,7 +16,7 @@
 	
 	
 		Create the
-		<filename>OSGI-INF</filename>
+		_OSGI-INF_
 		folder in your project. Create a new
 		component definition as described earlier. The implementing class is
 		de.vogella.osgi.ds.quoteservice.QuoteService which provides the

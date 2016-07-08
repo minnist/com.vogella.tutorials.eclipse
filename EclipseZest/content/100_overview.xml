@@ -1,6 +1,6 @@
 
-	<title>Eclipse Zest
-[[zest_overview">
+== Eclipse Zest
+
 === Overview
 		
 			Eclipse Zest is a visualization toolkit for graphs. It is based
@@ -21,7 +21,7 @@
 			.
 		
 	
-[[zest_components">
+
 === Components
 		
 			Eclipse Zest has the following components:
@@ -44,7 +44,7 @@
 			</itemizedlist>
 		
 	
-[[layoutmanager">
+
 === Layout Manager
 		
 			Eclipse Zest provides graph layout managers. A graph
@@ -115,7 +115,7 @@
 
 		
 	
-[[zest_filter">
+
 === Filter
 		 You can also define filters (org.eclipse.zest.layouts.Filter)
 			on the layout managers via the method setFilter(filter). This defines

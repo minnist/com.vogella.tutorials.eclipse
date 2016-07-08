@@ -1,17 +1,17 @@
 <chapter id="tutorial_usingpartservice">
-	<title>Exercise: Enable handlers and avoiding data loss
+== Exercise: Enable handlers and avoiding data loss
 
-[[tutorial_usingpartservice_save">
+
 === Enable the save handler only if necessary
 		
 			Change your
-			<code>SaveAllHandler</code>
+			`SaveAllHandler`
 			class so that the
 			_save_
 			handler is only active if there is a
 			part
 			in the model which has its
-			<code>dirty</code>
+			`dirty`
 			attribute set to true.
 		
 		
@@ -23,7 +23,7 @@
 
 	
 
-[[tutorial_usingpartservice_deletion">
+
 === Enable the deletion handler only if necessary
 		<note>
 			This exercise is optional.
@@ -32,16 +32,16 @@
 			Similar to
 			<xref linkend="tutorial_usingpartservice_save" />
 			enable the deletion handler for todos only if a
-			<code>Todo</code>
+			`Todo`
 			is selected.
 		
 	
 
-[[tutorial_usingpartservice_2">
+
 === Avoid data loss in your ExitHandler
 		
 			Change your
-			<code>ExitHandler</code>
+			`ExitHandler`
 			class so that in the case of a dirty editor the user is prompted
 			if he
 			wants to save the data.

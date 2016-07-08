@@ -1,24 +1,22 @@
 
-	<title>SWT Widgets
-[[swt_widgets">
+== SWT Widgets
+
 === Available widgets in the SWT library
 		<indexterm>
 			<primary>SWT</primary>
 			<secondary>Widgets</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Widgets (SWT)</primary>
-		</indexterm>
+		
 		
 			SWT
 			widgets are located in the packages
-			<code>org.eclipse.swt.widgets</code>
+			`org.eclipse.swt.widgets`
 			and
-			<code>org.eclipse.swt.custom</code>
+			`org.eclipse.swt.custom`
 			. Widgets extend either the
-			<code>Widget</code>
+			`Widget`
 			or the
-			<code>Control</code>
+			`Control`
 			class. Several of these widgets are depicted in the following
 			graphic. This graphic is a screenshot of the
 			http://www.eclipse.org/swt/widgets/">SWT widget homepage
@@ -26,10 +24,7 @@
 		
 		
 image::swtwidgetoverview10.png"
-						scale="30" />
-				</imageobject>
-				<textobject>
-					<phrase>Overview of the SWT widgets,pdfwidth=60%]
+						scale="30[Overview of the SWT widgets,pdfwidth=60%]
 		
 		
 			While SWT tries to use native widgets as much as possible, it can not
@@ -42,22 +37,22 @@ image::swtwidgetoverview10.png"
 			These are
 			part of
 			the
-			<code>org.eclipse.swt.custom</code>
+			`org.eclipse.swt.custom`
 			package
 			and usually start with the additional prefix
-			<code>C</code>
+			`C`
 			to
 			indicate that they
 			are custom
 			widgets, e.g.
-			<code>CCombo</code>
+			`CCombo`
 			.
 		
 		
 			Compared to the
-			<code>Combo</code>
+			`Combo`
 			class, the
-			<code>CCombo</code>
+			`CCombo`
 			class
 			provides
 			the ability to set the height of the widget.
@@ -65,7 +60,7 @@ image::swtwidgetoverview10.png"
 		
 			Another
 			example is
-			<code>StyledText</code>
+			`StyledText`
 			, a class which provides
 			advanced features for displaying
 			text, e.g.
@@ -74,10 +69,10 @@ image::swtwidgetoverview10.png"
 
 		
 			Widgets from the package
-			<code>org.eclipse.swt.custom</code>
+			`org.eclipse.swt.custom`
 			are
 			implemented in pure Java while widgets from
-			<code>org.eclipse.swt.widgets</code>
+			`org.eclipse.swt.widgets`
 			use native code. Custom widgets are not supposed to use
 			the
 			internal
@@ -88,9 +83,9 @@ image::swtwidgetoverview10.png"
 			platforms.
 			Every custom
 			widget must extend the
-			<code>Composite</code>
+			`Composite`
 			or
-			<code>Canvas</code>
+			`Canvas`
 			class.
 			API compliance is
 			guaranteed only for these base classes.
@@ -101,10 +96,10 @@ image::swtwidgetoverview10.png"
 			custom
 			widget is supposed to contain other widgets, it
 			should extend
-			<code>Composite</code>
+			`Composite`
 			.
 			Otherwise it should extend the
-			<code>Canvas</code>
+			`Canvas`
 			class.
 		
 		In this $book the words "widget" and
@@ -113,7 +108,7 @@ image::swtwidgetoverview10.png"
 		
 	
 
-[[widets_memory">
+
 === Memory management
 		<indexterm>
 			<primary>SWT</primary>
@@ -124,9 +119,9 @@ image::swtwidgetoverview10.png"
 			an
 			SWT
 			widget, you have to call its
-			<code>dispose()</code>
+			`dispose()`
 			method. Fortunately if a container is disposed, e.g., a
-			<code>Shell</code>
+			`Shell`
 			, this container also releases all its children.
 		
 		
@@ -136,22 +131,22 @@ image::swtwidgetoverview10.png"
 			SWT
 			objects need to be manually disposed. JFace provides a simplification
 			for this via its
-			<code>LocalResourceManager</code>
+			`LocalResourceManager`
 			.
 		
 	
-[[widets_creation">
+
 === Constructing widgets
 		
 			SWT
 			widgets, except the
-			<code>Shell</code>
+			`Shell`
 			object,
 			are always constructed with a parent widget which
 			contains
 			them. This
 			is similar to AWT and different to Swing, where the
-			<code>add()</code>
+			`add()`
 			method is used.
 
 		
@@ -173,11 +168,11 @@ image::swtwidgetoverview10.png"
 		
 
 			The possible stylebits are predefined in the
-			<code>SWT</code>
+			`SWT`
 			class.
 			If no
 			special style is required you can pass
-			<code>SWT.NONE</code>
+			`SWT.NONE`
 			.
 		
 		 For example the following code snippet creates a push button.
@@ -200,7 +195,7 @@ image::swtwidgetoverview10.png"
 		
 	
 
-[[widets_composites">
+
 === Basic containers
 
 		<indexterm>
@@ -212,21 +207,17 @@ image::swtwidgetoverview10.png"
 			<primary>SWT</primary>
 			<secondary>Group</secondary>
 		</indexterm>
-		<indexterm>
-			<primary>Composite</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Group (SWT)</primary>
-		</indexterm>
+		
+		
 		
 			The
-			<code>Composite</code>
+			`Composite`
 			class
 			is a container which is capable
 			of containing other widgets.
 
 			The
-			<code>Group</code>
+			`Group`
 			class
 			is another container which is able to contain other widgets but
 			it additionally draws a border around itself and allows you to set a

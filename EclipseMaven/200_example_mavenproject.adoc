@@ -1,12 +1,12 @@
-[[example_eclipsemavenproject]]
+
 == Exercise: Create a new Maven enabled project via Eclipse
 
-[[example_eclipsemavenproject1]]
+
 === Target of this exercise
 
 This exercise demonstrates the creation of a new Maven enabled project in Eclipse.
 
-[[example_eclipsemavenproject2]]
+
 === Create Maven project
 		
 Create a new Maven project via menu:File[New>Other...>Maven>Maven Project].
@@ -29,7 +29,7 @@ On the last tab enter the GAV of your project similar to the following screensho
 image::m2e_newmavenproject40.png[Create Maven project in Eclipse - Part 4]
 	
 	
-[[example_eclipsemavenproject_runningthebuild]]
+
 === Run the build
 		
 Validate that the generate setup works correctly by running the build. 
@@ -43,7 +43,7 @@ Enter `clean verify` in the _Goals:_ field and press the _Run_ button.
 image::m2e_newmavenproject60.png[Run Maven project in Eclipse]	
 				
 		
-[[example_eclipsemavenproject_dependency]]
+
 === Adding dependencies to your project
 		
 The Eclipse Maven tooling makes adding dependencies to the classpath of your project simple. 
@@ -61,7 +61,7 @@ If the Maven index was downloaded (See <<maven_eclipseinstallation_index>> you c
 image::me2_adddependency30.png[]	
 
 
-[[example_eclipsemavenproject_usage]]
+
 === Use library
 		
 Change or create the `App.java` class in your `src/main/java` folder. 

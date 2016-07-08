@@ -1,5 +1,5 @@
 
-	<title>Translating the application model
+== Translating the application model
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>Application model</secondary>
@@ -37,7 +37,7 @@
 			manually. If you do it manually you can use the PDE wizard as
 			described in <xref linkend="i18n_plugin" />
 			to create the
-			<filename>bundle.property</filename>
+			_bundle.property_
 			file and the OSGi
 			reference.
 		

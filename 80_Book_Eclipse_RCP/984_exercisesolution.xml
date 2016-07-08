@@ -1,13 +1,9 @@
 <section id="exercisesolution" role="wrapper">
-	<title>Solutions for the exercises
-[[exercisesolution1">
+== Solutions for the exercises
+
 === Getting the example implementation
-		<indexterm>
-			<primary>Example code</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Solutions for the exercises</primary>
-		</indexterm>
+		
+		
 		
 			The solutions for this version of the book are currently
 			contained in the
@@ -56,11 +52,9 @@ image::eclipse4bookgit30.png[Importing the Eclipse 4 sample solution via Git, Pa
 		
 
 	
-[[exercisesolution2">
+
 === More information about Git and Eclipse
-		<indexterm>
-			<primary>Git</primary>
-		</indexterm>
+		
 		
 			See
 			http://www.vogella.com/tutorials/EclipseGit/article.html">Eclipse Git tutorial

@@ -1,18 +1,18 @@
-[[exercisetychofeature]]
+
 == Exercise: Tycho build for Eclipse features
 
-[[tychofeaturesexercise_target]]
+
 === Target of this exercise
 		
 The following description demonstrates how to build Eclipse features with Maven Tycho. 
 It is based on <<exercisetychoplugin>>.
 		
-[[tychofeaturesexercise_featuredirectorycreate]]		
+
 === Create _features_ directory
 
 Create a new directory called _features_ in your main directory.
 
-[[tychofeaturesexercise_featurecreate]]		
+
 === Create feature to build
 
 Create a new feature project called _com.vogella.tycho.feature_ in the _features_ folder.
@@ -23,7 +23,7 @@ Add the _com.vogella.tycho.plugin1_ plug-in to the feature.
 
 image::tycho-feature-creation2.png[Add plug-in to feature]
 
-[[tychofeaturesexercise_create]]
+
 === Create pom for feature folder
 
 Create the following pom in the _features_ directory.
@@ -35,7 +35,7 @@ include::res/components/parent/featurespom.xml[]
 
 The _com.vogella.tycho.feature_ feature does not require an separate pom file, as we can use the generated defaults. 
 
-[[tychofeaturesexercise_addfeaturetoroot]]		
+
 === Add feature to root pom
 
 [source,xml]
@@ -45,7 +45,7 @@ include::res/components/parent/rootpomwithfeatures.xml[]
 
 <1> Adds the features pom to the build
 
-[[plugin_featurerun]]
+
 === Run the build
 		
 Run the build from the main directory. This should work fine.

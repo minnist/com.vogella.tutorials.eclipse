@@ -1,7 +1,7 @@
 
-	<title>Adjusting the history with interactive rebase
+== Adjusting the history with interactive rebase
 
-[[interactiverebase_egitsupport">
+
 === Support for interactive rebase in Eclipse
 		<indexterm>
 			<primary>Eclipse Git
@@ -20,7 +20,7 @@
 		
 
 	
-[[interactiverebase_historyview">
+
 === Actions available via the History view
 		<indexterm>
 			<primary>Eclipse Git
@@ -54,7 +54,7 @@ image::rebase_interactive_squaschcommits10.png[Squash a commit,pdfwidth=60%]
 			rebase.
 		
 	
-[[interactiverebase_interactiverebaseview">
+
 === Using the Git Interactive Rebase view
 		<indexterm>
 			<primary>Eclipse Git
@@ -95,7 +95,7 @@ image::egitinteractive_rebase08.png[Interactive Rebase EGit,pdfwidth=60%]
 			modified
 			in topological order in the sequence they will
 			be processed. This order is the reverse order which you see via the
-			<code>git log</code>
+			`git log`
 			command or in the
 			_History_
 			view.

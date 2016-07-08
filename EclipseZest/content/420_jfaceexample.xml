@@ -1,6 +1,6 @@
 
-	<title>Zest and JFace Example
-[[jfaceexample_project">
+== Zest and JFace Example
+
 === Create Project
 		
 			Create a new RCP application "de.vogella.zest.jface".
@@ -20,7 +20,7 @@
 		
 	
 
-[[jfaceexample_model">
+
 === Model
 		 Create the following model. Please note that the model can be
 			anything as long as you can
@@ -50,7 +50,7 @@
 		
 
 	
-[[jfaceexample_provides">
+
 === Providers
 		Create the following content and label providers. 
 
@@ -67,7 +67,7 @@
 			</programlisting>
 		
 	
-[[jfaceexample_view">
+
 === View
 
 		 Change the view to the following.
@@ -87,7 +87,7 @@ image::ZestFinal10.gif" />
 			</mediaobject>
 		
 	
-[[jfaceexample_filter">
+
 === Filter
 
 		 You can define a filter on the viewer via setFilters();

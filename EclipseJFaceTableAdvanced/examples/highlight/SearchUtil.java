@@ -8,7 +8,7 @@ public class SearchUtil {
 	/**
 	 * Searches "searchTerm" in "content" and returns an array of int pairs
 	 * (index, length) for each occurrence. The search is case-sensitive. The
-	 * consecutive occurrences are merged together.<code>
+	 * consecutive occurrences are merged together.`
 	Examples:
 	 content = "123123x123"
 	 searchTerm = "1"
@@ -16,7 +16,7 @@ public class SearchUtil {
 	 content = "123123x123"
 	 searchTerm = "123"
 	 --> [0, 6, 7, 3]
-	</code>
+	`
 	 * 
 	 * @param searchTerm
 	 *            can be null or empty. int[0] is returned in this case!

@@ -1,6 +1,6 @@
 
-	<title>Exercise: Create and evaluate an extension point
-[[tutorialextensionpoint_overview">
+== Exercise: Create and evaluate an extension point
+
 === Target for this exercise
 		
 			In this exercise you create two new plug-ins. The first one
@@ -16,7 +16,7 @@
 			feature.
 		
 	
-[[tutorialextensionpoint_extensionprovider">
+
 === Creating a plug-in for the extension point definition
 		
 			Create a new plug-in project called
@@ -42,14 +42,14 @@ image::extensionpoint_projectwizard20.png"/>
 
 	
 
-[[tutorialextensionpoint_defineextension">
+
 === Create an extension point
 		
 			Open the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file
 			or the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file and select the
 			_Extension Points_
 			tab.
@@ -63,7 +63,7 @@ image::extensionpoint10.png"/>
 		
 
 			Press the
-			<guibutton>Add...</guibutton>
+			_Add..._
 			button.
 		
 		
@@ -87,7 +87,7 @@ image::extensionpoint20.png"/>
 		
 		
 			Press the
-			<guibutton>Finish</guibutton>
+			_Finish_
 			button.
 			The definition of the extension is generated and the
 			schema
@@ -112,18 +112,15 @@ image::extensionpoint40.png[Add Elements to Extension,pdfwidth=60%]
 		
 		
 			Select the "client" element and press
-			<guibutton>New Attribute</guibutton>
+			_New Attribute_
 			. Give the
 			new
 			element the name "class" and the type "java". Enter
-			<code>com.vogella.extensionpoint.definition.IGreeter</code>
+			`com.vogella.extensionpoint.definition.IGreeter`
 			as interface name
 		
 		
-image::extensionpoint50.png" scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Add Attribute to Extension,pdfwidth=60%]
+image::extensionpoint50.png" scale="35[Add Attribute to Extension,pdfwidth=60%]
 		
 		
 			This interface doesn't exit yet. Press on the
@@ -178,18 +175,18 @@ image::extensionpoint92.png"/>
 			</mediaobject>
 		
 	
-[[tutorialextensionpoint_export">
+
 === Export the package
 		
 			Select the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file switch to the
 			_Runtime_
 			tab and
 			export
 			the
 			package which contains the
-			<code>IGreeter</code>
+			`IGreeter`
 			interface.
 		
 		
@@ -200,29 +197,29 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		
 
 	
-[[tutorialextensionpoint_dependencies">
+
 === Add dependencies
 		
 			Add the following dependencies via the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your new plug-in:
 
 			<itemizedlist>
 				<listitem>
 					
-						<code>org.eclipse.core.runtime</code>
+						`org.eclipse.core.runtime`
 					
 				</listitem>
 				<listitem>
 					
-						<code>org.eclipse.e4.core.di</code>
+						`org.eclipse.e4.core.di`
 					
 				</listitem>
 			</itemizedlist>
 			.
 		
 	
-[[tutorialextensionpoint_readingextension">
+
 === Evaluating the registered extensions
 		
 			The defining plug-in also evaluates the existing extension
@@ -240,36 +237,36 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		
 			The code above uses
 			the
-			<code>ISafeRunnable</code>
+			`ISafeRunnable`
 			interface. This interface protects the plug-in which defines
 			the
 			extension point from malfunction extensions. If an
 			extension throws an
-			<code>Exception</code>
+			`Exception`
 			, it will be caught by
-			<code>ISafeRunnable</code>
+			`ISafeRunnable`
 			and
 			the remaining extensions will still get executed.
 		
 
 		
 			Review the
-			<filename>.exsd</filename>
+			_.exsd_
 			schema file and
 			the
 			reference to this file in the
-			<filename>plugin.xml</filename>
+			_plugin.xml_
 			file.
 		
 	
-[[tutorialextensionpoint_handler">
+
 === Create a menu entry and add it to your product
 		
 			Add a dependency to the
-			<code>com.vogella.extensionpoint.definition</code>
+			`com.vogella.extensionpoint.definition`
 			plug-in
 			in the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file of your application plug-in.
 		
 		
@@ -277,7 +274,7 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 			_Evaluate extensions_
 			and define a command and handler for this menu entry. In the handler
 			point to the
-			<code>EvaluateContributionsHandler</code>
+			`EvaluateContributionsHandler`
 			class.
 		
 		Also update your product (via your features) so that the new
@@ -292,7 +289,7 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		</note>
 	
 
-[[tutorialextensionpoint_usingextension">
+
 === Providing an extension
 		
 			Create a new simple plug-in called
@@ -302,15 +299,15 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 
 		
 			Open the
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			editor of this new plug-in and select the
 			_Dependencies_
 			tab.
 
 			Add the
-			<code>com.vogella.extensionpoint.definition</code>
+			`com.vogella.extensionpoint.definition`
 			and
-			<code>org.eclipse.core.runtime</code>
+			`org.eclipse.core.runtime`
 			plug-ins
 			as dependencies. Make sure
 			your plug-in has
@@ -320,7 +317,7 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 			set on the
 			_Overview_
 			tab for your
-			<filename>MANIFEST.MF</filename>
+			_MANIFEST.MF_
 			file.
 		
 
@@ -334,7 +331,7 @@ image::extensionpoint110.png"/>
 			Switch to the
 			_Extensions_
 			tab and select
-			<guibutton>Add...</guibutton>
+			_Add..._
 			. Select your custom
 			extension point
 			and press the
@@ -365,7 +362,7 @@ image::extensionpoint140.png"/>
 
 		
 			Create the
-			<code>GreeterGerman</code>
+			`GreeterGerman`
 			class
 			with the
 			following code.
@@ -377,16 +374,16 @@ image::extensionpoint140.png"/>
 			</programlisting>
 		
 	
-[[tutorialextensionpoint_add">
+
 === Add the plug-in to your product
 		
 			Add the
-			<code>com.vogella.extensionpoint.definition</code>
+			`com.vogella.extensionpoint.definition`
 			plug-in
 			to your product (via your features).
 		
 	
-[[tutorialextensionpoint_validate">
+
 === Validating
 		Start your application via the product configuration file to
 			update the plug-ins included in the run

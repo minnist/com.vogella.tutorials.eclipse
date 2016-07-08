@@ -1,5 +1,5 @@
 
-	<title>SWTBot API
+== SWTBot API
 	
 		`SWTBot`
 		is the base class for testing SWT applications.

@@ -1,5 +1,5 @@
 
-	<title>Using parameters in commands
+== Using parameters in commands
 	You can also define parameters in commands. Create project
 		"de.vogella.rcp.commands.parameterfirst" using the "Hello RCP"
 		template. 

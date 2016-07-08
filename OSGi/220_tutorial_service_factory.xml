@@ -1,6 +1,6 @@
 
-	<title>Exercise: Create service bundle
-[[services_todo4">
+== Exercise: Create service bundle
+
 === Create a factory to access your service implementation
 		
 			In
@@ -13,7 +13,7 @@
 			Create a new class called
 			_TodoServiceFactory_
 			in the
-			<code>com.example.e4.rcp.todo.services</code>
+			`com.example.e4.rcp.todo.services`
 			package. For this you might need the following tip.
 		
 
@@ -44,12 +44,12 @@
 
 		
 			The class provides access to your
-			<code>ITodoService</code>
+			`ITodoService`
 			implementation via a static method. It can be
 			considered to be a
 			_factory_
 			for the
-			<code>ITodoService</code>
+			`ITodoService`
 			interface.
 			A factory hides the creation of the concrete
 			instance of
@@ -63,14 +63,14 @@
 		
 
 	
-[[osgi_services_todo_exportpackage">
+
 === Export the package in the service plug-in
 
 		
 			Export the
-			<code>com.example.e4.rcp.todo.services</code>
+			`com.example.e4.rcp.todo.services`
 			package via the
-			<code>MANIFEST.MF</code>
+			`MANIFEST.MF`
 			file on the
 			_Runtime_
 			tab, so that it is available for other

@@ -1,5 +1,5 @@
 
-	<title>Screenshot
+== Screenshot
 	 SWTBot can
 		automatically generate screenshots of the running
 		application if a test fails. To
@@ -9,7 +9,7 @@
 		dependencies of your test
 		project. Annotate your class test with
 		`@RunWith(SWTBotJunit4ClassRunner.class)`. This will automatically
-		generated screenshots in the <filename>screenshots</filename> folder or your test
+		generated screenshots in the _screenshots_ folder or your test
 		projects. If you do not see this
 		folder in your project, try refreshing
 		the project (F5).

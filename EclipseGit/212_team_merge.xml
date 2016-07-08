@@ -1,6 +1,6 @@
 
-	<title>Starting a merge operation in Eclipse
-[[team_merge">
+== Starting a merge operation in Eclipse
+
 === Merge
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -22,21 +22,15 @@
 			to start the merge dialog.
 		
 		
-image::egit_mergeoperation10.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Team Merge menu,pdfwidth=60%]
+image::egit_mergeoperation10.png" scale="40[Team Merge menu,pdfwidth=60%]
 		
 		
-image::egit_mergeoperation20.png" scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Team Merge menu,pdfwidth=60%]
+image::egit_mergeoperation20.png" scale="40[Team Merge menu,pdfwidth=60%]
 		
 
 
 	
-[[team_mergeconflicts">
+
 === Solving merge conflicts
 		<indexterm>
 			<primary>Eclipse Git</primary>
@@ -92,10 +86,7 @@ image::egit_mergeoperation20.png" scale="40" />
 			on the right side.
 		
 		
-image::egitmerge08.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Selecting the merge model,pdfwidth=60%]
+image::egitmerge08.png[Selecting the merge model,pdfwidth=60%]
 		
 		
 			You can manually edit the text on
@@ -104,16 +95,10 @@ image::egitmerge08.png" />
 			button to copy the changes from right to left.
 		
 		
-image::egitmerge10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Seeing merge conflicts,pdfwidth=60%]
+image::egitmerge10.png[Seeing merge conflicts,pdfwidth=60%]
 		
 		
-image::egitmerge20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Copy changes from right to left,pdfwidth=60%]
+image::egitmerge20.png[Copy changes from right to left,pdfwidth=60%]
 		
 		
 			Eclipse also allows to show the common ancestor of both commits to make the merge easier. Press the
@@ -122,16 +107,10 @@ image::egitmerge20.png" />
 			following screenshots.
 		
 		
-image::threewaycomparemode10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Three way merge view in Eclipse,pdfwidth=60%]
+image::threewaycomparemode10.png[Three way merge view in Eclipse,pdfwidth=60%]
 		
 		
-image::threewaycomparemode20.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Three way merge view in Eclipse,pdfwidth=60%]
+image::threewaycomparemode20.png[Three way merge view in Eclipse,pdfwidth=60%]
 		
 		
 			Once you have manually merged the changes, select

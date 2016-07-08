@@ -1,10 +1,10 @@
 
-	<title>Defining the command usage in the UI
-[[menus_extensionpoint">
+== Defining the command usage in the UI
+
 === Menu extension points
 		
 			The
-			<code>org.eclipse.ui.menu</code>
+			`org.eclipse.ui.menu`
 			extension point is used to define where the command is visible in the
 			application, e.g., you could define that the command is visible in the
 			application menu or in a
@@ -89,7 +89,7 @@ image::command62.gif" />
 		
 	
 
-[[menus_position">
+
 === Defining the position of a menu extension
 		
 			Frequently you want to position a new command behind or before

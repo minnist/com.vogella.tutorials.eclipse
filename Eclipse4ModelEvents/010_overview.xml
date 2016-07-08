@@ -11,7 +11,7 @@ Version 0.3, 06.07.2016
 
 [abstract]
 
-	<title>Listening to Eclipse framework events
+== Listening to Eclipse framework events
 	<indexterm>
 		<primary>Event service</primary>
 		<secondary>Framework events</secondary>
@@ -24,7 +24,7 @@ Version 0.3, 06.07.2016
 
 	
 		For example the
-		<code>UIEvents.UILifeCycle.APP_STARTUP_COMPLETE</code>
+		`UIEvents.UILifeCycle.APP_STARTUP_COMPLETE`
 		event is triggered once the application has started. Application components can register to this event and are called
 		by the framework once this happens.
 	
@@ -37,9 +37,9 @@ Version 0.3, 06.07.2016
 	
 	
 		The central class which defines the Eclipse framework events is the
-		<code>UIEvents</code>
+		`UIEvents`
 		class from the
-		<code>org.eclipse.e4.ui.workbench</code>
+		`org.eclipse.e4.ui.workbench`
 		package. It contains most of the events or topics and also helper methods to work with the
 		events. This class also
 		contains information
@@ -47,7 +47,7 @@ Version 0.3, 06.07.2016
 		Javadoc. The Eclipse
 		framework sends
 		out objects of type
-		<code>org.osgi.service.event.Event</code>
+		`org.osgi.service.event.Event`
 		.
 	
 

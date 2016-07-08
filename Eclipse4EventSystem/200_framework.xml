@@ -1,5 +1,5 @@
 
-	<title>Eclipse framework events
+== Eclipse framework events
 
 	
 		The framework also uses the event service for model changes and other framework events. See

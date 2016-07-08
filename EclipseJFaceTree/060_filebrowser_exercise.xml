@@ -1,6 +1,6 @@
 
-	<title>Exercise: File browser via a TreeViewer
-[[filebrowser_project">
+== Exercise: File browser via a TreeViewer
+
 === Create a new application
 		
 			This exercise is a stand-alone exercise and can be used to
@@ -21,13 +21,10 @@
 		
 		
 image::filebrowser_exercise10.png"
-						scale="35" />
-				</imageobject>
-				<textobject>
-					<phrase>Empty content,pdfwidth=60%]
+						scale="35[Empty content,pdfwidth=60%]
 		
 	
-[[filebrowser_gif">
+
 === Add an image file
 		
 			Download or create an icon called folder.png and place it into
@@ -45,19 +42,19 @@ image::filebrowser_exercise10.png"
 			http://www.famfamfam.com/lab/icons/silk/">FamFamFam icons
 		
 	
-[[filebrowser_part">
+
 === Create a part
 		
 			Add a part stack with a
 			part
 			to your application model and display a
-			<code>TreeViewer</code>
+			`TreeViewer`
 			in this
 			part.
 		
 		
 			Implement a class for the
-			<code>ITreeContentProvider</code>
+			`ITreeContentProvider`
 			interface
 			which allows you to browse the file system. Review the
 			Javadoc
@@ -66,12 +63,12 @@ image::filebrowser_exercise10.png"
 		
 		
 			Also implement your custom
-			<code>LabelProvider</code>
+			`LabelProvider`
 			for the tree.
 		
 		
 			Use
-			<code>viewer.setInput(File.listRoots());</code>
+			`viewer.setInput(File.listRoots());`
 			to set the initial input to the
 			viewer.
 		
@@ -81,7 +78,7 @@ image::filebrowser_exercise10.png"
 			this
 			exercise. It assumes that you added the "folder.png" icon to the
 			"icons" folder. It also demonstrates the usage of a
-			<code>ViewLabelProvider</code>
+			`ViewLabelProvider`
 			.
 		
 		
@@ -95,7 +92,7 @@ image::filebrowser_exercise10.png"
 		
 
 	
-[[filebrowser_validate">
+
 === Validating
 		Start your new application ensure that you see the content of
 			your file system in your tree.

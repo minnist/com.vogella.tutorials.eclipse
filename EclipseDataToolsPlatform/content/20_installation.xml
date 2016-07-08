@@ -1,6 +1,6 @@
 
-	<title>Installation
-[[installation_dtp">
+== Installation
+
 === Installation of DTP
 		
 			Install the Data Tools Platform via the
@@ -18,7 +18,7 @@ image::installdtp10.png" />
 			</mediaobject>
 		
 	
-[[dtpsetup_derby">
+
 === Download Apache Derby
 		
 			Download the latest Derby version from the Apache website

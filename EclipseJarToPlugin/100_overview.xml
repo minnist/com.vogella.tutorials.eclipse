@@ -1,8 +1,8 @@
 
-	<title>JAR files without OSGi meta-data
+== JAR files without OSGi meta-data
 	
 		If a JAR file does not contain the OSGi meta-data in the
-		<filename>META-INF/MANIFEST.MF</filename>
+		_META-INF/MANIFEST.MF_
 		file, it cannot be directly consumed by other Eclipse plug-ins.
 	
 	

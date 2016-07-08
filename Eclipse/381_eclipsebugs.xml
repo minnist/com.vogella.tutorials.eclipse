@@ -1,8 +1,8 @@
 
-	<title>Eclipse bug reports and feature requests
+== Eclipse bug reports and feature requests
 
 
-[[eclipsebugs1">
+
 === Reporting bugs and feature requests
 
 		
@@ -30,7 +30,7 @@
 
 
 	
-[[eclipsebugzilla_usaging">
+
 === Using the Eclipse bugzilla system
 		
 			This
@@ -82,7 +82,7 @@ image::bugzilla10.png[Opening an account at Eclipse bugzilla,pdfwidth=60%]
 
 	
 
-[[eclipsebugs_priorities">
+
 === Eclipse bug priorities
 		
 			The Eclipse Bugzilla system allows you and the Eclipse committer

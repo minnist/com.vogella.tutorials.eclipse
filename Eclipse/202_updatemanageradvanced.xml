@@ -1,6 +1,6 @@
 <section role="wrapper" id="plugin_installation">
-	<title>Advanced Eclipse Update manager options
-[[dropins">
+== Advanced Eclipse Update manager options
+
 === Manual installation of plug-ins (dropins folder)
 
 		<indexterm>
@@ -11,7 +11,7 @@
 
 		
 			Eclipse plug-ins are distributed as
-			<filename>jar</filename>
+			_jar_
 			files.
 			If you want to use an Eclipse plug-in directly or do not
 			know
@@ -22,7 +22,7 @@
 			for it,
 			you
 			can place it in the
-			<filename>dropins</filename>
+			_dropins_
 			folder of your Eclipse installation
 			directory. Eclipse monitors this
 			directory and during a (re-)start of your IDE, the Eclipse update
@@ -33,20 +33,20 @@
 		
 			You should not modify
 			the content of the Eclipse
-			<filename>plugins</filename>
+			_plugins_
 			directory directly. If you want to install plug-ins, put them into the
-			<filename>dropins</filename>
+			_dropins_
 			folder. If you want to remove it, delete the JAR from this folder.
 		
 		
 			Plug-ins are typically distributed as
-			<filename>jar</filename>
+			_jar_
 			files. To add a
 			plug-in to your Eclipse installation, put the plug-in
 			.jar file into
 			the
 			Eclipse
-			<filename>dropins</filename>
+			_dropins_
 			folder
 			and
 			restart Eclipse. Eclipse should detect
@@ -58,13 +58,13 @@
 		
 		
 			If you remove plug-ins from the
-			<filename>dropins</filename>
+			_dropins_
 			folder and restart Eclipse, these plug-ins are automatically removed
 			from your Eclipse installation.
 		
 	
 
-[[p2_export">
+
 === Exporting and importing the installed components
 		<indexterm>
 			<primary>Update manager</primary>
@@ -96,10 +96,7 @@
 			description file.
 		
 		
-image::descriptionfile10.png" />
-				</imageobject>
-				<textobject>
-					<phrase>Exporting a description file for p2,pdfwidth=60%]
+image::descriptionfile10.png[Exporting a description file for p2,pdfwidth=60%]
 		
 		
 			To install the described components in another Eclipse
@@ -111,7 +108,7 @@ image::descriptionfile10.png" />
 		
 	
 
-[[director">
+
 === Installing features via the command line
 		<indexterm>
 			<primary>Update manager</primary>
@@ -131,7 +128,7 @@ image::descriptionfile10.png" />
 			an Eclipse instance. You need to start this command
 			in the command line and it assumes that you are in a directory which
 			contains your Eclipse installation in a folder called
-			<filename>eclipse</filename>
+			_eclipse_
 			.
 		
 
@@ -147,9 +144,6 @@ image::descriptionfile10.png" />
 		
 		
 image::eclipse_installcommandline10.png"
-						scale="40" />
-				</imageobject>
-				<textobject>
-					<phrase>Getting the feature name,pdfwidth=60%]
+						scale="40[Getting the feature name,pdfwidth=60%]
 		
 	

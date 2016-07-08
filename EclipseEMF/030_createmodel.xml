@@ -1,6 +1,6 @@
 
-	<title>Example: Define a new EMF models
-[[createmodel_project">
+== Example: Define a new EMF models
+
 === Project and initial model creation
 		
 			Create a new project called
@@ -16,7 +16,7 @@ image::firstemfproject10.png" />
 		
 		
 			Enter
-			<filename>webpage.ecore</filename>
+			_webpage.ecore_
 			as the
 			<parameter>Domain File Name</parameter>
 			parameter.
@@ -63,13 +63,13 @@ image::firstemfproject40.png" />
 			and click into the editor to create a new
 			class.
 			Create the
-			<code>MyWeb</code>
+			`MyWeb`
 			,
-			<code>Webpage</code>
+			`Webpage`
 			,
-			<code>Category</code>
+			`Category`
 			and
-			<code>Article</code>
+			`Article`
 			EClasses.
 		
 
@@ -86,7 +86,7 @@ image::firstemfproject50.png" />
 			<parameter>name</parameter>
 			to each object
 			. This attribute should have the
-			<code>EString</code>
+			`EString`
 			type.
 		
 		
@@ -118,18 +118,18 @@ image::firstemfproject70.png" />
 
 		
 			We want to use the data type calendar in our model. Select
-			<code>Datatype</code>
+			`Datatype`
 			and drag it into your model.
 			Assign the name
 			<parameter>Calendar</parameter>
 			to it. Use
-			<code>java.util.Calendar</code>
+			`java.util.Calendar`
 			as type parameter.
 			Add a new
 			Attribute called
 			<parameter>created</parameter>
 			to
-			<code>Article</code>
+			`Article`
 			and use your
 			new type.
 		
@@ -171,11 +171,11 @@ image::firstemfproject94.png" />
 	
 
 
-[[createmodel_ecore">
+
 === View Ecore diagram
 		
 			Close the diagram and open the
-			<filename>webpage.ecore</filename>
+			_webpage.ecore_
 			file. The result
 			should look like the following screenshot.
 		
@@ -190,11 +190,11 @@ image::model96.png" />
 
 
 
-[[createmodel_package">
+
 === Set the package
 		
 			Open the
-			<filename>webpage.genmodel</filename>
+			_webpage.genmodel_
 			and select the
 			_Webpage_
 			node. Set the

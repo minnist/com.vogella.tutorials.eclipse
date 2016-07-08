@@ -1,11 +1,11 @@
 
-	<title>Source code translation with NLS support
+== Source code translation with NLS support
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>Source code</secondary>
 	</indexterm>
 
-[[i18n_outdated">
+
 === NLS compared to the Eclipse translation service
 		<warning>
 			
@@ -30,7 +30,7 @@
 
 
 	
-[[i18n_sourcecustom">
+
 === Translating your custom code
 		
 			It is possible to translate the Java source with two different
@@ -40,7 +40,7 @@
 			enable
 			this support you need to configure
 			the
-			<code>org.eclipse.core.runtime</code>
+			`org.eclipse.core.runtime`
 			plug-in as dependency in your related plug-in.
 		
 		
@@ -51,16 +51,13 @@
 			.
 		
 		
-image::i22n_source10.png" scale="60" />
-				</imageobject>
-				<textobject>
-					<phrase>Externalizing strings in source files dialog,pdfwidth=60%]
+image::i22n_source10.png" scale="60[Externalizing strings in source files dialog,pdfwidth=60%]
 		
 		
 			Please note that the
 			_Use Eclipse's string externalization mechanism_
 			option is only visible if you have the
-			<code>org.eclipse.core.runtime</code>
+			`org.eclipse.core.runtime`
 			plug-in configured as a dependency in your plug-in.
 		
 
@@ -79,12 +76,12 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 			If you select that a String should not be translated, Eclipse
 			marks
 			the occurrence with a
-			<code>$NON-NLS</code>
+			`$NON-NLS`
 			comment in the source code.
 		
 		
 			As the result a
-			<code>Messages</code>
+			`Messages`
 			class is generated which serves as an access point for the properties
 			file.
 		
@@ -95,13 +92,13 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 		
 		
 			In this example the
-			<code>Messages</code>
+			`Messages`
 			class uses a constant called
-			<code>BUNDLE_NAME</code>
+			`BUNDLE_NAME`
 			to point to the
-			<filename>message*.properties</filename>
+			_message*.properties_
 			file in the
-			<code>test</code>
+			`test`
 			package. * is a placeholder for your locale, e.g., _de,_en,
 			etc.
 		
@@ -112,7 +109,7 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 		
 		
 			In your code you access the translations via the
-			<code>Message</code>
+			`Message`
 			class.
 		
 
@@ -124,7 +121,7 @@ image::i22n_source10.png[Externizing strings in source files dialog,pdfwidth=60%
 		
 			You can also use placeholders in the messages and evaluate them with
 			the
-			<code>NLS.bind()</code>
+			`NLS.bind()`
 			method.
 		
 

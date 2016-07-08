@@ -1,5 +1,5 @@
 
-	<title>OSGi resource bundles
+== OSGi resource bundles
 	<indexterm>
 		<primary>i18n</primary>
 		<secondary>OSGi resource bundles</secondary>
@@ -18,7 +18,7 @@
 	
 
 	
-		<filename>OSGI-INF/l10n/bundle</filename>
+		_OSGI-INF/l10n/bundle_
 		is the default location and file prefix which the Eclipse translation service is using.
 		Via the
 		<parameter>Bundle-Localization</parameter>
@@ -49,9 +49,9 @@
 		variant as described in
 		<xref linkend="i18n_propertyfiles" />
 		. For example
-		<filename>bundle_en.properties</filename>
+		_bundle_en.properties_
 		or
-		<filename>bundle_en_UK.properties</filename>
+		_bundle_en_UK.properties_
 		.
 
 	

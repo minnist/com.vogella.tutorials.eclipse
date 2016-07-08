@@ -1,6 +1,6 @@
 
 
-	<title>Using declarative services in RCP applications
+== Using declarative services in RCP applications
 	<indexterm>
 		<primary>Product configuration file</primary>
 		<secondary>Start level</secondary>
@@ -18,11 +18,11 @@
 
 	
 		A plug-in which provides service in an Eclipse RCP application must be in its
-		<code>ACTIVE</code>
+		`ACTIVE`
 		life cycle status. Therefore, ensure that the
 		_Activate this plug-in when one of its classes is loaded_
 		flag is set on the
-		<filename>MANIFEST.MF</filename>
+		_MANIFEST.MF_
 		file. The DS Annotation support in Eclipse allows that this is done automatically. See
 		<xref linkend="declarativeservices_annotations" />
 		and

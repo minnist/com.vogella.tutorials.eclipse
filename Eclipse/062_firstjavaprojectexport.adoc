@@ -1,0 +1,101 @@
+== Run Java program outside Eclipse
+
+=== Create JAR file
+		
+To run the Java program outside of the Eclipse IDE, you need to
+export
+it as a
+_JAR_
+file. A
+_JAR_
+file is the standard distribution format for Java applications.
+		
+Select your project, right-click it and select the
+_Export_
+menu entry.
+		
+image::firstgany90.gif[Export wizard for Java project,pdfwidth=60%]
+		
+Select
+_JAR file_
+and select the
+_Next_
+button.
+Select your project and enter
+the
+export destination and a
+name
+for the
+_JAR_
+file. I named it
+`myprogram.jar`
+.
+		
+image::firstgany100.gif[Export wizard for Java project, Part II,pdfwidth=60%]
+		
+image::firstgany110.gif[Export wizard for Java project, Part III,pdfwidth=60%]
+		
+Press The
+_Finish_
+button. This creates a
+_JAR_
+file in your selected output
+directory.
+		
+=== Run your program outside Eclipse
+		
+Open a command shell, e.g., under Microsoft Windows select
+menu:Start[Run]
+and type
+`cmd`
+and press the Enter key. This should open a console window.
+		
+Switch to the directory which contains the
+_JAR_
+file
+, by
+typing
+`cd path`
+. For example, if
+your
+_JAR_ is located in
+_c:\temp_,
+use the following command.
+		
+[source,txt]
+----
+include::res/snippets/cd.txt[]
+----
+		
+To run this program, include the
+_JAR_
+file
+in your
+_classpath_
+. The
+_classpath_
+defines which Java classes are available to the Java
+runtime. You can
+add a
+_JAR_
+file to the classpath with the
+_-classpath_
+option.
+		
+		
+<programlisting>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="../examples/firstexample/run.txt" />
+</programlisting>
+		
+		 Type the above command in the directory you used for the export
+and you see the "Hello Eclipse!" output in your
+command shell.
+		
+		
+<mediaobject>
+	<imageobject>
+		<imagedata scale="50" fileref="images/firstgany120.gif[Running application outside Eclipse,pdfwidth=60%]
+		
+
+	

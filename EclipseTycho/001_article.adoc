@@ -7,35 +7,34 @@
 :tychoversion: 0.25.0
 Lars Vogel, Simon Scholz (c) 2011 - 2016 vogella GmbH
 Version 2.6, 31.03.2016
+:docinfodir: ../
+:vgwort: EclipseTycho
 
 [abstract]
 This tutorial describes the usage of Eclipse Tycho to build Eclipse plug-ins and Eclipse RCP applications. It uses Tycho is version {tychoversion}.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::008_prereqs.adoc[]
 include::010_overview.adoc[]
 include::040_targetplatform.adoc[]
 include::060_unittesting.adoc[]
-
+include::../web/advertisement/inBetween01.adoc[]
 // Exercises // 
 include::180_exercise_enablepomless.adoc[]
 include::200_exercise_plugins.adoc[]
 include::210_exercise_features.adoc[]
 include::220_exercise_update.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::300_exercise_productbuild.adoc[]
 include::320_exercise_targetplatform.adoc[]
 include::400_exercise_unittesting.adoc[]
-
+include::../web/advertisement/inBetween03.adoc[]
 include::500_convertjars.adoc[]
 include::600_advanced.adoc[]
 include::700_ftp_upload.adoc[]
 include::720_deployment.adoc[]
-
-
-
-
-
-
-
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
 

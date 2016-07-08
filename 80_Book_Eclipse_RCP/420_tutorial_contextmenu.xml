@@ -1,0 +1,62 @@
+<chapter id="tutorial_commandscontextmenu">
+	<title>Exercise: Add a context menu to a table</title>
+	<section id="tutorial_commandscontextmenu_target">
+		<title>Target</title>
+		<para>
+			Implement a context menu for the table in your
+			<code>TodoOverviewPart</code>
+			and connect it with the command for deleting todo items.
+		</para>
+	</section>
+	<section id="tutorial_commandscontextmenu_dependencies">
+		<title>Adding dependencies</title>
+		<para>
+			Add the following
+			plug-ins as dependencies to the
+			<filename>MANIFEST.MF</filename>
+			file of your application
+			plug-in.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.workbench.swt</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.model.workbench</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+	<section id="tutorial_commandscontextmenu_impl">
+		<title>Implementation</title>
+
+		<para>
+			For the implementation of a popup menu, check
+			<xref linkend="menuadvanced_popup" />
+			to learn how
+			to create popup (context) menus
+			and assign them to SWT
+			controls.
+		</para>
+		<para>
+			Change the
+			<code>RemoveTodoHandler</code>
+			so that it writes, "Soon, I will really delete your todo".
+		</para>
+
+		<note>
+			<para>
+				You will change the
+				<code>RemoveTodoHandler</code>
+				to delete the selected Todo once you have learned about the
+				selection
+				service in
+				<xref linkend="tutorial_usingeselectionservice" />
+				.
+			</para>
+		</note>
+	</section>
+</chapter>

@@ -1,0 +1,76 @@
+<chapter id="tutorial_usinghandlerservice">
+	<title>Optional exercise: Using handler service</title>
+	<section id="tutorial_usinghandlerservice_0">
+		<title>Enable save in the EditorPart</title>
+		<para>Allow the user to save in the EditorPart directly. Reuse the save all command.</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/editor/EditorPartSave.java" />
+			</programlisting>
+		</para>
+		<note>
+			<para>You could also specify a parameter for your command with the id of the todo item should be saved and pass that
+				as value for the parameter in the handler.
+			</para>
+		</note>
+
+
+	</section>
+	<section id="tutorial_usinghandlerservice_1">
+		<title>Delete Todos only via the handler</title>
+		<para>
+			Change your
+			<code>TodoDeletionPart</code>
+			class so that it uses the
+			<code>EHandlerService</code>
+			to trigger the existing deletion handler to delete the selected
+			<code>Todo</code>
+			from the
+			<code>ComboViewer</code>
+			.
+		</para>
+		<para>
+			Add the following dependencies to your application plug-in:
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.core.commands</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.core.contexts</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+
+		</para>
+	</section>
+
+	<section id="tutorial_usinghandlerservice_2">
+		<title>Implementation</title>
+		<para>
+			Change your
+			<code>TodoDeletionPart</code>
+			based on the following example code.
+
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/handler/TodoDeletionPart.java" />
+			</programlisting>
+		</para>
+
+		<note>
+			<para>
+				The handler and command service have not been
+				released as official API. See
+				<xref linkend="e4overview_api" />
+				.
+			</para>
+		</note>
+	</section>
+
+</chapter>

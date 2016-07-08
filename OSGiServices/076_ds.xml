@@ -1,0 +1,234 @@
+<section id="declarativeservices" role="wrapper">
+	<title>The OSGi declarative services functionality</title>
+	<section id="declarativeservices_overview">
+		<title>Defining services the declarative way</title>
+		<indexterm>
+			<primary>OSGi</primary>
+			<secondary>Declarative services</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Declarative services</primary>
+		</indexterm>
+
+		<para>
+			The OSGi
+			<wordasword>declarative services</wordasword>
+			(DS) functionality allows you to define and consume
+			services
+			via
+			metadata (XML) without any dependency in your source
+			code to the OSGi
+			framework. Alternatively you can also use annotations in your source code to generated this meta-data
+			at build time automatically. This is supported as of Eclipse 4.7.
+		</para>
+		<para>
+			The
+			<wordasword>OSGi service component</wordasword>
+			is responsible for starting the
+			service (service component). For the
+			service consumer it is not
+			visible if the service
+			has
+			been created via
+			declarative services or by
+			other means.
+			Service
+			components
+			consist of an XML description (component
+			description)
+			and an
+			object (component instance). The component
+			description contains
+			all
+			information about the service
+			component, e.g.,
+			the class name of
+			the
+			component instance and the
+			service interface it provides.
+			Plug-ins typically define
+			component descriptions in a
+			directory called
+			<filename>OSGI-INF</filename>
+			.
+		</para>
+
+		<para>
+			A reference to the
+			component description file is entered in the
+			<filename>MANIFEST.MF</filename>
+			file via the
+			<parameter>Service-Component</parameter>
+			property. If the OSGi runtime finds such a reference, the
+			<code>org.eclipse.equinox.ds</code>
+			plug-in creates
+			the corresponding service.
+		</para>
+
+		<para>
+			The following example
+			<filename>MANIFEST.MF</filename>
+			file demonstrates how a reference to a component definition file
+			looks like.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/componentdescription.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+
+	<section id="declarativeservices_annotations">
+		<title>Defining OSGi services with annotations</title>
+		<para>
+			Since Eclipse 4.7 the component
+			description can be automatically created, based on annotations in the class. For
+			this
+			you must activate the corresponding setting in
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>DS annotations</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/activate_pde_ds_annotations.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Activate DS annotation processing
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>With this setting activated in the Eclipse IDE, the IDE will generate the require meta data (component file,
+			manifest reference, lazy flag, etc.) automatically.</para>
+
+	</section>
+	<section id="declarativeservices_define">
+		<title>Other ways to define OSGi services</title>
+		<para>
+			The preferred way of defining OSGi services should be via annotations, as this is simpler.
+			But
+			you can also define the
+			component definition file
+			manually.
+
+			The Eclipse IDE provides a wizard for creating such files via
+			the
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>Component Definition</guisubmenu>
+			</menuchoice>
+			menu entry. This wizard also adds the
+			<code>Service-Component</code>
+			entry to the
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+		<para>
+			On the first page of the wizard, you can enter the filename of
+			the
+			component definition file, a component name
+			and the
+			class which
+			implements
+			the service interface.
+			In the editor you can specify the provided and required
+			service on
+			the
+			<guilabel>Services</guilabel>
+			tab. For example, the provided service can be found under the
+			<guilabel>Provided Services</guilabel>
+			section.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/ds30.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Defining the service interface which is provided</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			For example assume that you want to provide a service for the
+			<wordasword>ITodoService</wordasword>
+			interface via the
+			<code>MyTodoServiceImpl</code>
+			class. A correctly maintained
+			<filename>component.xml</filename>
+			XML file
+			would look like the following.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.xml" />
+			</programlisting>
+		</para>
+
+		<para>
+			After the definition of the component your
+			<filename>MANIFEST.MF</filename>
+			file
+			contains an entry to the service component.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/MANIFEST.MF" />
+			</programlisting>
+		</para>
+		<para>
+			OSGi also provides a low-level API for starting, stopping and
+			tracking services. See
+			<xref linkend="osgiapiservice_overview" />
+			for a reference.
+		</para>
+	</section>
+
+	<section id="declarativeservices_bundles">
+		<title>Required bundles</title>
+		<para>
+			To use declarative services the following plug-ins must be
+			available
+			at runtime.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.equinox.util</code>
+						- contains utility classes
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.equinox.ds</code>
+						- is responsible for reading
+						the component
+						metadata and for creating and
+						registering the services
+						based this
+						information
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.osgi.services</code>
+						- service functionality used by declarative services
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+
+
+</section>

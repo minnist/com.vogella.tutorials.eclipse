@@ -1,0 +1,14 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<section id="resources_s1s2a">
+		<title>Mylyn Resources</title>
+		<para>
+			<ulink url="http://www.eclipse.org/mylyn/"> www.eclipse.org/mylyn/</ulink>
+			Mylyn Homepage
+		</para>
+		<para>
+			<ulink url="http://blog.vogella.com/2009/10/05/modifying-mylyn-context/"> Blog post about modifying Mylyn Context</ulink>
+		</para>
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

@@ -1,0 +1,164 @@
+<section id="osgi_dependencymanagement" role="wrapper">
+	<title>Defining the dependencies of the plug-in</title>
+	<section id="osgiarch_dependencies">
+		<title>Specifying plug-in dependencies via the manifest file</title>
+		<indexterm>
+			<primary>OSGi</primary>
+			<secondary>Dependencies</secondary>
+		</indexterm>
+		<para>
+			A plug-in can define
+			dependencies to
+			other software components
+			via its
+			manifest file.
+			OSGi prevents access to classes
+			without a defined
+			dependency and throws a
+			<code>ClassNotFoundException</code>
+			. The only exception are packages from the Java runtime
+			environment (based on the Bundle-RequiredExecutionEnvironment
+			definition of the plug-in);
+			these
+			packages are
+			always available to a plug-in without an explicitly
+			defined dependency.
+		</para>
+
+		<para>
+			If you add a dependency to your manifest file, the Eclipse IDE
+			automatically adds the
+			corresponding
+			<filename>JAR</filename>
+			file to your project classpath.
+		</para>
+		<para>You can define dependencies either as plug-in dependencies or
+			package dependencies. If you define a plug-in
+			dependency your plug-in
+			can access
+			all exported packages of this plug-in. If you
+			specify a
+			package dependency you can
+			access this package. Using package
+			dependencies allows you to exchange the plug-in which
+			provides this
+			package at a
+			later point in time. If you require this flexibility
+			prefer the usage of package dependencies.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_dependency_definition10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Dependency management</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			A plug-in can define that it depends on a
+			certain version (or a
+			range) of another bundle, e.g., plug-in A can
+			define that it depends
+			on
+			plug-in C in version 2.0, while plug-in B
+			defines that it depends on
+			version 1.0 of plug-in C.
+		</para>
+		<para>
+			The OSGi runtime ensures that all dependencies are present
+			before it
+			starts a plug-in.
+			OSGi reads the
+			manifest
+			file
+			of a plug-in
+			during its
+			installation.
+			It ensures that all dependent
+			plug-ins
+			are also
+			resolved and, if necessary, activates
+			them before the plug-in starts.
+		</para>
+	</section>
+
+	<section id="osgiarch_livecycle">
+		<title>Life cycle of plug-ins in OSGi</title>
+		<indexterm>
+			<primary>OSGi</primary>
+			<secondary>Life cycle</secondary>
+		</indexterm>
+
+		<para> With the installation of a plug-in in the OSGi runtime the
+			plug-in is persisted in a local bundle cache. The
+			OSGi runtime then
+			tries to resolve its dependencies.
+		</para>
+		<para>
+			If all required
+			dependencies are resolved, the plug-in is in the
+
+			<wordasword>RESOLVED</wordasword>
+			status
+			otherwise it stays in the
+			<wordasword>INSTALLED</wordasword>
+			status.
+		</para>
+		<para>
+			In case several plug-ins exist which
+			can satisfy the dependency, the
+			plug-in
+			with the highest valid
+			version is used.
+		</para>
+		<para>
+			If the
+			versions are the
+			same,
+			the
+			plug-in with
+			the lowest unique identifier (ID) is used. Every plug-in
+			gets this
+			ID
+			assigned by
+			the framework during the
+			installation.
+		</para>
+		<para>
+			When the plug-in starts, its status is
+			<wordasword>STARTING</wordasword>
+			. After a successful start, it becomes
+			<wordasword>ACTIVE</wordasword>
+			.
+		</para>
+		<para>This life cycle is depicted in the following graphic.</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_livecycle10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>OSGi life cycle</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="osgiarch_dynamic">
+		<title>Dynamic imports of packages</title>
+		<para>
+			For legacy reasons OSGi supports a dynamic import of
+			packages.
+			See
+			<ulink url="http://wiki.osgi.org/wiki/DynamicImport-Package">OSGi Wiki for dynamic imports</ulink>
+			for
+			details.
+			You should not use this feature, it is a symptom of a
+			non-modular design.
+		</para>
+	</section>
+
+</section>

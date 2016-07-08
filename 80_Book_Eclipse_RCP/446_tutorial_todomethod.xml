@@ -1,0 +1,110 @@
+<chapter id="tutorial_api">
+	<title>Exercise: Prepare TodoDetailsPart for data</title>
+	<section id="tutorial_settodo1">
+		<title>Preparing for data</title>
+		<para>
+			The
+			<code>TodoDetailsPart</code>
+			class
+			will be used to modify data of
+			<code>Todo</code>
+			objects. In this exercise we prepare the class so it contains a
+			<code>Todo</code>
+			setter method, which can be called by the Eclipse framework.
+		</para>
+	</section>
+
+	<section id="tutorial_settodo2">
+		<title>Add dependency</title>
+		<para>
+			Add the
+			<code>org.eclipse.e4.ui.services</code>
+			plug-in as dependency to your application plug-in via
+			the
+			<filename>MANIFEST.MF</filename>
+			file. This is required to use the
+			<code>IServiceConstants</code>
+			interface in the next section.
+		</para>
+	</section>
+	<section id="tutorial_settodo3">
+		<title>Prepare for dependency injection</title>
+		<para>
+			To be able to set the
+			<code>Todo</code>
+			object from outside create a
+			<code>setTodo(Todo todo)</code>
+			method in the
+			<code>TodoDetailsPart</code>
+			class.
+		</para>
+		<para>
+			Use the following example code to create the method.
+			This method uses
+			annotations so that the current active
+			selected
+			<code>Todo</code>
+			object can be injected into it.
+			It uses a special String key defined
+			by the
+			<code>IServiceConstants.ACTIVE_SELECTION</code>
+			constant. The
+			<code>setTodo</code>
+			method updates your user interface
+			via the
+			<code>updateUserInterface(Todo todo)</code>
+			method,
+			whenever a
+			<code>Todo</code>
+			object is set.
+			It also disables the widgets if the Todo object is not
+			yet
+			set.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="../examples/selection/TodoDetailsPartWithoutDataBinding.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			In this method
+			you have to check the availability
+			of the SWT widgets
+			because
+			you
+			cannot be
+			sure that the
+			<code>@PostConstruct</code>
+			method has
+			already
+			been called.
+		</para>
+	</section>
+	<section id="tutorial_settodo4">
+		<title>Usage of this method</title>
+		<para>
+			At the moment the
+			<code>setTodo()</code>
+			method
+			is not called with a
+			<code>Todo</code>
+			object.
+			Neither by the Eclipse
+			framework, nor by your coding.
+			You
+			call
+			this method in
+			<xref linkend="tutorial_wizard" />
+			and the Eclipse framework uses this method
+			after you implement the
+			changes in
+			<xref linkend="tutorial_usingeselectionservice" />
+			.
+		</para>
+	</section>
+
+</chapter>

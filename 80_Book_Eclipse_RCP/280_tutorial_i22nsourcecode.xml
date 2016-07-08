@@ -1,0 +1,165 @@
+<chapter id="tutorial_i22n_source">
+	<title>Optional exercise: Internationalization for the source code</title>
+
+	<section id="tutorial_i22n_source_target">
+		<title>Target</title>
+		<para>In this exercise you translate the relevant parts of your
+			application source code via the Eclipse 4 translation
+			service.
+		</para>
+	</section>
+
+	<section id="tutorial_i22n_plugin">
+		<title>Creating a plug-in to host the translations</title>
+		<para>
+			Create a new simple plug-in called
+			<wordasword>com.example.e4.rcp.todo.i18n</wordasword>
+			. Add the dependency
+			<code>org.eclipse.core.runtime</code>
+			to the new plug-in in its
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+
+	</section>
+
+
+
+
+	<section id="tutorial_i22n_source_messageclass">
+		<title>Create a Message class for the source code translations</title>
+		<para>
+			Create a
+			<code>Messages</code>
+			class which contains your translation keys. This might look like the
+			following (keys are just examples).
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/Messages.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="tutorial_i22n_translation_sourcetext">
+		<title>Create the translations for the source code</title>
+		<para>
+			Create the
+			<filename>OSGI-INF/l10n</filename>
+			folder in your
+			<code>com.example.e4.rcp.todo.i18n</code>
+			plug-in.
+		</para>
+		<warning>
+			<para>The first letter in a lower case "L" followed by the number 10. This is sometimes hard to identify as "l" and
+				"1"
+				look very similar.
+			</para>
+		</warning>
+		<para>
+			Create a
+			<filename>bundle.properties</filename>
+			file with key/values for the text in your source code. The file might
+			look like the following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle2.properties" />
+			</programlisting>
+		</para>
+		<para>
+			Create one additional translation file for another language, e.g., via
+			a
+			<filename>bundle_de.properties</filename>
+			file. Ensure that the translation values are different.
+		</para>
+		<note>
+			<para>
+				The translations for the application model as created in
+				<xref linkend="tutorial_i22n" />
+				cannot be moved to this new plug-in. See
+				<xref linkend="tutorial_i22n_note" />
+				as reminder.
+			</para>
+		</note>
+	</section>
+
+	<section id="tutorial_i22n_source_buildproperties">
+		<title>Adjust the build.properties file</title>
+		<para>
+			Add the created property files to your build.properties file of your new plug-in
+			it available in an exported
+			application.
+		</para>
+	</section>
+	<section id="tutorial_i22n_source_api">
+		<title>Export the translations as API </title>
+
+		<para>
+			Publish the
+			<code>com.example.e4.rcp.todo.i18n</code>
+			package as API via the
+			<filename>MANIFEST.MF</filename>
+			file of the translation plug-in.
+		</para>
+
+	</section>
+	<section id="tutorial_i22n_source_dependencies">
+		<title>Define dependencies to the translation plug-in</title>
+
+		<para>
+			Open the
+			<filename>MANIFEST.MF</filename>
+			file
+			of the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in. Add a dependency to the
+			<code>com.example.e4.rcp.todo.i18n</code>
+			plug-in.
+		</para>
+
+	</section>
+	<section id="tutorial_i22n_product">
+		<title>Update the product (via the feature)</title>
+		<para>
+			Add the
+			<code>com.example.e4.rcp.todo.i18n</code>
+			plug-in to your feature project. This includes it in
+			your
+			product.
+		</para>
+		<para>Start your application via the product configuration file and
+			validate that the application still starts and
+			works correctly.
+		</para>
+	</section>
+
+	<section id="tutorial_i22n_source_code">
+		<title>Using @Translation to get the messages injected</title>
+		<para>
+			Use dependency inject to the translations injected. Prepare your
+			<code>TodoOverviewPart</code>
+			for a dynamic language switch.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/TodoOverviewPart.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+	<section id="tutorial_i22n_test">
+		<title>Test your translation</title>
+		<para>
+			Repeat the test as described in
+			<xref linkend="tutorial_i22n_translation_model_test" />
+			but this time ensure that your source code is correctly translated.
+		</para>
+	</section>
+
+
+
+</chapter>
+	
+	

@@ -1,0 +1,63 @@
+<section id="e4services_osgiown">
+	<title>OSGi services and Eclipse dependency injection</title>
+	<para>
+		OSGi services are available for dependency injection in Eclipse
+		applications.
+		If you define your custom OSGi
+		services, you can inject
+		them
+		into
+		your
+		model
+		objects.
+		This removes the need to create singleton or factory implementations
+		in your
+		application to access data.
+	</para>
+
+	<para>
+		If a requested key is not found in the Eclipse context hierarchy,
+		the
+		Eclipse framework
+		dynamically queries for a
+		fitting
+		OSGi
+		service in the
+		OSGi
+		registry.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/contexthierarchy_withosgi12.png" scale="30" />
+			</imageobject>
+			<textobject>
+				<phrase>Context hierarchy with OSGi</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		For example, if you have an OSGi service declared for the
+		<code>ITodoService</code>
+		interface you can inject it via the following code snippet into a
+		field of an Eclipse part.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/field.java" />
+		</programlisting>
+	</para>
+	<para>Alternatively you can inject the service into a method of such a Eclipse part as
+		demonstrated in the following
+		listings.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/method.java" />
+		</programlisting>
+	</para>
+
+
+</section>

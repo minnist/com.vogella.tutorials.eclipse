@@ -1,0 +1,111 @@
+<chapter id="tutorial_preferences">
+	<title>Exercise: Using preferences in the life cycle class</title>
+
+	<section id="tutorial_preferencesstorage_target">
+		<title>Target</title>
+		<para>In this exercise you store the last logged in user name in the
+			preferences.
+		</para>
+		<para>
+			You continue to use the dialog which you created in
+			<xref linkend="tutorial_passworddialog" />
+			.
+			In this exercise you modify your life cycle handler
+			so
+			that the previously
+			entered user is displayed again in the
+			password
+			dialog.
+		</para>
+	</section>
+	<section id="tutorial_preferenceannotation">
+		<title>Dependency</title>
+		<para>
+			The
+			<code>@Preference</code>
+			annotation is provided by the
+			<code>org.eclipse.e4.core.di.extensions</code>
+			plug-in. Ensure that you have entered a dependency to this plug-in in
+			the
+			<filename>MANIFEST.MF</filename>
+			file
+			of your application plug-in. If you followed the previous
+			exercises correctly this dependency is already entered.
+		</para>
+	</section>
+
+	<section id="tutorial_preferencesinterface">
+		<title>Create interface for the preference constants</title>
+		<para>
+			Create the
+			<code>com.example.e4.rcp.todo.preferences</code>
+			package and the following interface in this package.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/preferences/PreferenceConstants.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+	<section id="tutorial_preferencesadvanced">
+		<title>Using preferences in the life cycle class</title>
+		<tip>
+			<para>This exercise is optional.</para>
+		</tip>
+		<para>
+			Extend the
+			<code>Manager</code>
+			class
+			to get the user preference injected during application startup.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/Manager.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="tutorial_preferences_validatelifecycle">
+		<title>Validate life cycle handling</title>
+		<para>Start your application and enter a user. Stop and the
+			application and start the application again. The login
+			dialog should
+			display the last
+			entered user.
+		</para>
+		<tip>
+			<para>If persisting the user does not work, you potentially have an
+				incorrect setting in your launch configuration.
+			</para>
+			<para>
+				Ensure that the
+				<guilabel>Clear</guilabel>
+				flag in the
+				<menuchoice>
+					<guimenu>Project</guimenu>
+					<guisubmenu>Run Configurations...</guisubmenu>
+				</menuchoice>
+				is not set. Otherwise your preference data
+				is deleted during the
+				start of the application.
+			</para>
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/deletelaunch_prefs10.png" scale="35" />
+					</imageobject>
+					<textobject>
+						<phrase>Clear flag in the run configuration</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</tip>
+	</section>
+
+
+</chapter>

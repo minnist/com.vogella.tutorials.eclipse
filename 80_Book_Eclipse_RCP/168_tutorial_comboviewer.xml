@@ -1,0 +1,139 @@
+<chapter id="exercisecomboviewer">
+	<title>Optional exercise: Using ComboViewer</title>
+	<section>
+		<title>Target</title>
+		<para>
+			In this exercise you create a new
+			part
+			which allows you to delete a
+			<code>Todo</code>
+			object from your model based on the selection in your
+			<code>ComboViewer</code>
+			. The final
+			part
+			should look similar to the following.
+		</para>
+
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tododeletepart10.png" scale="60" />
+				</imageobject>
+				<textobject>
+					<phrase>ComboViewer example screenshot</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section>
+		<title>Implementation</title>
+
+		<para>
+			Ensure that the
+			<code>org.eclipse.jface</code>
+			plug-in is available as a
+			dependency to your
+			<code>com.example.e4.rcp.todo</code>
+			plug-in. If you followed the previous exercises, this should be
+			already the
+			case.
+		</para>
+
+		<para>
+			Create a new class called
+			<code>TodoDeletionPart</code>
+			and a new
+			part
+			in your application model
+			which refers to this new class.
+		</para>
+
+
+		<para>
+			Rearrange the user interface so that the left area of your
+			application
+			contains two
+			parts. The
+			<code>TodoDeletionPart</code>
+			part
+			should be below the
+			<code>TodoOverviewPart</code>
+			part.
+		</para>
+		<tip>
+			<para>If a certain part of your user interface is not displayed,
+				check
+				the container data of your model elements in the
+				application
+				model. If
+				one of the children of
+				a container uses container data, all
+				elements
+				need to define container data.
+			</para>
+		</tip>
+
+		<para>
+			Implement a
+			<code>ComboViewer</code>
+			which allows you to select a Todo item. Add a
+			button
+			to the
+			part.
+			If this
+			button
+			is pressed the
+			<code>deleteTodo()</code>
+			method of your
+			<code>ITodoService</code>
+			should be called. You can use the following example code as
+			reference.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/viewer/TodoDeletionPart.java" />
+			</programlisting>
+		</para>
+
+		<tip>
+			<para>
+				If you face issues with the selection in the viewer or the
+				deletion
+				of a
+				<code>Todo</code>
+				object, ensure that
+				<code>equals()</code>
+				and
+				<code>hashCode()</code>
+				methods in
+				<code>Todo</code>
+				are
+				correct (they should be based on the
+				<parameter>id</parameter>
+				field, see
+				<xref linkend="services_todo_tostringhashcode" />
+				).
+			</para>
+		</tip>
+	</section>
+	<section>
+		<title>Validation</title>
+		<para>
+			Delete entries in your data model. The
+			<code>ComboViewer</code>
+			should be updated automatically.
+		</para>
+		<para>
+			Validate that the number of entries in your data model has been
+			reduced, e.g., by pressing the
+			<guibutton>Load Data</guibutton>
+			button
+			in the
+			<code>TodoOverviewPart</code>
+			part.
+		</para>
+	</section>
+</chapter>

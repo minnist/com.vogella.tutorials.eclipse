@@ -1,0 +1,16 @@
+<section id="bndtools">
+	<title>Bndtools</title>
+	<para>
+		Eclipse use the PDE tooling to manage bundles. Alternatively you
+		can
+		use Bndtools hosted at
+		<ulink url="http://bndtools.org/"> http://bndtools.org/</ulink>
+		.
+	</para>
+	<para>
+		Please see
+		<ulink url="http://bndtools.org/tutorial.html"> Bndtools tutorial</ulink>
+		for an introduction.
+	</para>
+
+</section>

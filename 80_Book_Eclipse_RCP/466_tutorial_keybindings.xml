@@ -1,0 +1,113 @@
+<section id="tutorial_keybindinds" role="wrapper">
+	<title>Exercise: Define key bindings</title>
+	<section id="tutorial_keybindinds_bindingtable">
+		<title>Create binding context entries</title>
+		<para>
+			Select the
+			<guilabel>Binding Contexts</guilabel>
+			entry in your application model.
+			Define a new entry with the
+			<code>org.eclipse.ui.contexts.dialogAndWindow</code>
+			ID. As name use "Windows and Dialogs".
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/exercise_keybindings10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>How to add the Binding Context Entries</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Afterwards add the following sub-entries:
+			<table frame='all'>
+				<title>Binding context entries</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>ID</entry>
+							<entry>Name</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>org.eclipse.ui.contexts.dialog</entry>
+							<entry>Dialogs</entry>
+						</row>
+						<row>
+							<entry>org.eclipse.ui.contexts.window</entry>
+							<entry>Windows</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+		<para>The resulting entry is depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/exercise_keybindings20.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>How to add the Binding Context Entries</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<warning>
+			<para>The name attribute of a binding context entry is not allowed to
+				be empty.
+			</para>
+		</warning>
+	</section>
+	<section id="tutorial_keybindinds_table">
+		<title>Create key bindings for a BindingContext</title>
+		<para>
+			Create a key binding for your Save command to the
+			<keycombo>
+				<keycap>M1</keycap>
+				<keycap>S</keycap>
+			</keycombo>
+			shortcut.
+			Afterwards create a keybinding for your Exit command to the
+			<keycombo>
+				<keycap>M1</keycap>
+				<keycap>X</keycap>
+			</keycombo>
+			shortcut.
+		</para>
+		<para>The required entries are depicted in the following screenshots.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_bindingtable10.png"
+						scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>How to add the Binding Context Entries</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_bindingtable20.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>How to add the Binding Context Entries</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Run your program and test it.</para>
+	</section>
+</section>

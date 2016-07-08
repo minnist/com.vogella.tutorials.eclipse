@@ -1,0 +1,50 @@
+<chapter>
+	<title>Exercise: Using more viewer functionality</title>
+	<note>
+		<para>The following exercise is optional.</para>
+	</note>
+	<section>
+		<title>Add a filter to the table</title>
+		<para>
+			Add also a filter text box to the part. Use the text in the
+			filter text box as filter for the displayed items in the table.
+			Ensure that you only show the table entries which contain the text of
+			the filter box in the their summary or description field.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jfacetable_filterbox10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding a filter to the Table</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>The following code snippet can be used as a starting point.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/viewer/filter.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section>
+		<title>Sort the table based on summary</title>
+		<para>
+			Ensure that the table is sorted by the
+			<parameter>summary</parameter>
+			column.
+		</para>
+		<para>
+			See
+			<xref linkend="jfacetable_comparator" />
+			for information how to implement this.
+		</para>
+	</section>
+</chapter>

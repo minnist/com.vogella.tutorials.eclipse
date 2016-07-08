@@ -1,0 +1,149 @@
+<appendix id="modelbackground">
+	<title>Architectural background of the application model</title>
+	<para>This section contains some background information about the
+		design goals of the Eclipse application model and has been
+		contributed by Eric Moffatt, Eclipse 4 SDK development lead.
+	</para>
+	<section id="modelbackground_areas">
+		<title>Main areas of the model</title>
+		<para>
+			Conceptually the model
+			is structured into three areas which are
+			described in the following
+			table.
+			<table frame='all'>
+				<title>Architectural areas of the model</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Area</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Mix-ins</entry>
+							<entry>
+								<para>Abstract
+									interfaces containing the attributes necessary to
+									support their
+									specific roles in some derived concrete types.
+								</para>
+								<para>
+									For example
+									<code>MContext</code>
+									contains only the reference to the context,
+									<code>MContribution</code>
+									contains the instantiated 'object' and
+									<code>MUILabel</code>
+									contains attributes to manage labels and images.
+								</para>
+							</entry>
+						</row>
+						<row>
+							<entry>Containment Types</entry>
+							<entry>
+								<para>Every concrete container specifies a specific interface as
+									its containment type. It allows the generic to be a specific
+									type
+									and the compiler to generate a compile time error if an
+									attempt
+									is made to add an invalid element to a container.
+								</para>
+								<para>
+									It also means that when creating a domain specific model (or
+									changing
+									the base model) it is relatively easy to loosen the
+									containment
+									rules.
+									For example to allow
+									<code>MParts</code>
+									in the
+									<code>MTrim</code>
+									area, you would only have to add the
+									<code>MTrimElement</code>
+									interface to
+									<code>MPart</code>
+									.
+								</para>
+							</entry>
+						</row>
+
+						<row>
+							<entry>Concrete Classes</entry>
+							<entry>Elements that the application model itself
+								contains,
+								defined by a combination of various mix-ins and
+								containment
+								types. These are further sub-divided based into packages in the
+								model definition model.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+
+		</para>
+
+	</section>
+	<section id="modelbackground_mixins">
+		<title>Advantages of using mix-ins</title>
+		<para>
+			<wordasword>Mix-ins</wordasword>
+			allow the Eclipse 4 internal code to manage the
+			mix-ins
+			specifically,
+			regardless of the concrete class they're a
+			part of. For
+			example the
+			<code>PartRenderingEngine</code>
+			class
+			handles all contexts by checking whether the element being
+			rendered
+			is
+			an
+			<code>MContext</code>
+			. It also allows via the
+			<code>findElements()</code>
+			method of
+			<code>EModelService</code>
+			to locate all elements in the model of a specific type. This is 
+			useful for
+			finding all
+			<code>MDirtyable</code>
+			elements for saving.
+		</para>
+		<para>
+			Mix-ins
+			make
+			domain specific modeling
+			simpler. The Eclipse 4 team
+			anticipate
+			that more
+			sophisticated
+			clients
+			create domain specific
+			models
+			(and the
+			corresponding
+			renderers) so that
+			they could work
+			directly
+			against their
+			own element
+			types.
+		</para>
+		<para>
+			Having the
+			mix-ins
+			in place makes this much simpler as well as
+			being able to
+			reuse
+			existing code written to manage a particular
+			mix-in.
+		</para>
+
+	</section>
+</appendix>

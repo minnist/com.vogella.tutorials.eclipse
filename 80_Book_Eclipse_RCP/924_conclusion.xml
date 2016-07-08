@@ -1,0 +1,55 @@
+<chapter id="eclipse4conclusion">
+	<title>Closing words</title>
+	<para>I hope you enjoyed your learning experience with the Eclipse RCP framework.
+	</para>
+	<para> The Eclipse platform provides a modern, flexible and
+		powerful programming model. Building
+		your
+		application based on
+		this framework enables you
+		to leverage these
+		capabilities and to create
+		powerful native
+		applications.
+	</para>
+	<para>
+		The Eclipse platform is also under active development. With developers from Google, Redhat, IBM and smaller
+		companies and individuals the frameworks gets extended and improved in every release.
+	</para>
+	<para>
+		The development
+		team
+		is also open for
+		feedback and code contributions, so you can help to enhance the framework in a
+		direction you find important.
+	</para>
+	<para>
+		Please use the Eclipse
+		Forum or the
+		Eclipse bug
+		tracker
+		to
+		provide
+		feedback and bug
+		reports and the Eclipse Gerrit code
+		review
+		system to provide code contributions.
+	</para>
+	<para>I am personally very impressed by the ability of our Eclipse
+		development community in providing this level of code
+		stability combined with this level of innovation. I believe this
+		ability and the existing ecosystem will ensure that
+		the Eclipse
+		programming model will remain one
+		of the strongest programming models
+		for creating native clients.
+	</para>
+	<para>
+		<literallayout>
+			Lars Vogel
+			Eclipse Platform UI and e4 Co-Lead
+			vogella GmbH CEO
+		</literallayout>
+	</para>
+</chapter>
+

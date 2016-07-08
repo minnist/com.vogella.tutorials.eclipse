@@ -1,0 +1,2 @@
+
+context.ungetService(serviceReference);

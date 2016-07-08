@@ -1,0 +1,89 @@
+<section id="tutorial_ds">
+	<title>Tutorial: Define a declarative OSGi Service</title>
+	<para> The following will define a DS service based on the quote
+		example. It is therefore required that you have created
+		the
+		"de.vogella.osgi.quote" project which contains the interface
+		definition.
+	</para>
+	<para>
+		Create a new plug-in project "de.vogella.osgi.ds.quoteservice".
+		Do not use a template, do not create an activator.
+		Import package
+		"de.vogella.osgi.quote" in MANIFST.MF on the tab
+		<guilabel>Dependencies</guilabel>
+		.
+	</para>
+	<para>
+		Create the
+		<filename>OSGI-INF</filename>
+		folder in your project. Create a new
+		component definition as described earlier. The implementing class is
+		de.vogella.osgi.ds.quoteservice.QuoteService which provides the
+		service for IQuoteService.
+	</para>
+	<para>Create the class "QuoteService" which implements
+		the
+		interface
+		IQuoteService.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/QuoteService.java" />
+		</programlisting>
+	</para>
+
+	<para> Open component.xml and select the tab "Source". The final result
+		should look like the following.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.xml" />
+		</programlisting>
+	</para>
+	<para> Copy the "org.eclipse.equinox.ds*.jar",
+		"org.eclipse.osgi.services.jar" and "org.eclipse.equinox.util*.jar"
+		from
+		your Eclipse/plugin
+		installation directory into a folder, e.g.
+		"C:\temp\bundles\plugins"
+		and install the bundle into your
+		OSGi
+		runtime
+		via.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/installds.txt" />
+		</programlisting>
+	</para>
+	<para> Start the bundles manually so that declarative services are
+		available.
+	</para>
+	<para> Export your own bundle to "de.vogella.osgi.ds.quoteservice.jar".
+		and install it via:
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/servicedsinstall.txt" />
+		</programlisting>
+	</para>
+
+	<para> To check if your service was registered use the command
+		"services". This will list all installed and available
+		services.
+	</para>
+	<para> If you stop / uninstall the old service provider and start the
+		new one your service should be picked up by the
+		consumer.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/ds50.gif" />
+
+			</imageobject>
+		</mediaobject>
+	</para>
+</section>

@@ -1,0 +1,88 @@
+<chapter id="exercise_contextinjection">
+	<title>Optional exercise: Dependency injection for your objects</title>
+	<section id="exercise_contextinjectiontarget">
+		<title>Target of this exercise</title>
+
+		<para> The following demonstrates the usage of dependency injection
+			framework of Eclipse
+			for creating objects.
+		</para>
+		<para>
+			In this exercise you create an instance of the
+			<code>TodoWizard</code>
+			via the
+			<code>ContextInjectionFactory.make()</code>
+			method.
+		</para>
+	</section>
+	<section id="exercise_contextinjection_prepare">
+		<title>Prepare the wizard classes for dependency injection </title>
+		<para>
+			Add the
+			<code>@Inject</code>
+			annotation to the constructor of your
+			<code>TodoWizardPage1</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizardPage1.java" />
+			</programlisting>
+		</para>
+
+
+		<para>
+			Add the
+			<code>@Inject</code>
+			annotation to the constructor of your wizard and to the two fields
+			for the wizard pages.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizard.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_doit">
+		<title>Create the wizard via dependency injection </title>
+		<para>
+			In your handle which opens the wizard get the
+			<code>IEclipseContext</code>
+			injected and
+			create a new
+			<code>IEclipseContext</code>
+			with the
+			<code>createChild()</code>
+			method.
+		</para>
+		<para>
+			Create a new Todo via the
+			<code>new()</code>
+			Operator.
+			Add the new
+			<code>Todo</code>
+			to your local context under the
+			<code>Todo.class</code>
+			key.
+		</para>
+
+		<para>
+			Also create the two wizard pages and add them to the created
+			IEclipseContext. Afterwards created the wizard via the
+			<code>ContextInjectionFactory</code>
+			class as demonstrated by the following code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/wizardcreatedwithdependencyinjection/NewTodoHandler.java" />
+			</programlisting>
+		</para>
+
+
+
+	</section>
+</chapter>

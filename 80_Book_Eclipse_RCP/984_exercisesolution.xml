@@ -1,0 +1,105 @@
+<section id="exercisesolution" role="wrapper">
+	<title>Solutions for the exercises</title>
+	<section id="exercisesolution1">
+		<title>Getting the example implementation</title>
+		<indexterm>
+			<primary>Example code</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Solutions for the exercises</primary>
+		</indexterm>
+		<para>
+			The solutions for this version of the book are currently
+			contained in the
+			master
+			branch as well as in a branch
+			specific for the related Eclipse release. If a next
+			edition of this book is published, the master branch will point to
+			the
+			latest solution but the release pointer branch will still be available.
+		</para>
+
+		<para>
+			If you have the Git tooling for Eclipse installed, you can clone the
+			repository via
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Import</guisubmenu>
+				<guisubmenu>Git</guisubmenu>
+				<guisubmenu>Projects from Git</guisubmenu>
+
+			</menuchoice>
+			. Select
+			<guilabel>URI</guilabel>
+			in the next wizard page and press the
+			<guilabel>Next</guilabel>
+			button. In the following wizard page enter
+			git://github.com/vogella/eclipse4book.git in the
+			first line of the
+			dialog.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse4bookgit10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Importing the Eclipse 4 sample solution via Git, Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Select all branches your are interested in for the example solutions to the exercises
+			of this book.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse4bookgit20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Importing the Eclipse 4 sample solution via Git, Part 2</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Continue the wizard. At some point, the wizard will prompt you
+			to import the project
+			from
+			your local clone.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/eclipse4bookgit30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Importing the Eclipse 4 sample solution via Git, Part 3</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+	<section id="exercisesolution2">
+		<title>More information about Git and Eclipse</title>
+		<indexterm>
+			<primary>Git</primary>
+		</indexterm>
+		<para>
+			See
+			<ulink url="http://www.vogella.com/tutorials/EclipseGit/article.html">Eclipse Git tutorial</ulink>
+			to learn more about the usage of the Eclipse Git tooling.
+		</para>
+		<para>
+			To learn about the concepts behind Git and its usage on the
+			command
+			line, see the
+			<wordasword>Distributed Version Control with Git: Mastering the Git
+				command line
+			</wordasword>
+			book (ISBN-10: 3943747069) from Lars Vogel.
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Using native code in OSGi - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>30.04.2015</pubdate>
+		<releaseinfo>
+			<para>Version 4.8</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Using native code in OSGI via the Bundle-NativeCode</title>
+			<para> This tutorial explains the usage of native code in OSGi bundles.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/OSGiNativeCode"?>
+</article>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<book>
+	<bookinfo>
+		<title>Installation description for Eclipse RCP training</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>Lars Vogel</holder>
+		</copyright>
+		<pubdate>10.03.2016</pubdate>
+
+		<releaseinfo>Third edition</releaseinfo>
+		<mediaobject role="cover">
+			<imageobject id="cover-image">
+				<imagedata fileref="images/cover.png" align="center" />
+			</imageobject>
+		</mediaobject>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.xml" />
+
+	</bookinfo>
+
+	<!-- <dedication> <para>For Jennifer, Kiran, Liam</para> </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+		href="./004_foreword.xml" /> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.xml" /> -->
+
+	<part>
+		<title>Setting up an Eclipse RCP development environment</title>
+		<chapter id="javainstallation">
+			<title>Install Java for Eclipse RCP development</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.xml" />
+		</chapter>
+
+		<chapter id="eclipseskdinstallationforrcp">
+			<title>Install Eclipse IDE for RCP development</title>
+			<indexterm>
+				<primary>Installation</primary>
+			</indexterm>
+			<para>The following description explains
+				how to install the Eclipse
+				IDE and the required tools to develop Eclipse RCP
+				applications.
+			</para>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/022_gettingstarted.xml" />
+
+
+
+		</chapter>
+		<chapter>
+            <title>Install the e4 tools</title>
+            <section>
+                <title>Requirements</title>
+                <para>
+                    To install the tools required for Eclipse RCP development you
+                    need
+                    to know how to use the Eclipse update manager.
+                    Open
+                    <menuchoice>
+                        <guimenu>Help</guimenu>
+                        <guisubmenu>Install new software...</guisubmenu>
+                    </menuchoice>
+                    for this.
+                </para>
+            </section>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.xml" />
+        </chapter>
+
+		
+		<chapter>
+			<title>Exercise: Enable Java access to all plug-ins</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Defining a target platform</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.xml" />
+		</chapter>
+	</part>
+</book>

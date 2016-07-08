@@ -1,0 +1,29 @@
+<section id="installation">
+	<title>Installation</title>
+	<indexterm>
+		<primary>Mylyn</primary>
+		<secondary>installation</secondary>
+	</indexterm>
+	<para>
+		Most Eclipse downloads contain Mylyn already. If you need to install
+		it you can use the
+		<guilabel>update manager</guilabel>
+		via
+		<menuchoice>
+			<guimenu>Help</guimenu>
+			<guisubmenu>Install new Software...</guisubmenu>
+		</menuchoice>
+		and install Mylyn from the update site or your release. The following
+		screenshot shows this for the Kepler release.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylyninstall10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Installing Mylyn</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

@@ -1,0 +1,111 @@
+<chapter id="tutorial_i22n">
+	<title>Optional Exercise: Internationalization for the application model</title>
+
+	<section id="tutorial_i22n_target">
+		<title>Target</title>
+		<para>In this exercise you translate the relevant parts of your
+			application model and use the translation service.
+		</para>
+	</section>
+
+	<section id="tutorial_i22n_translation_modeltext">
+		<title>Create the translations for the application model</title>
+		<para>
+			Create the
+			<filename>OSGI-INF/l10n</filename>
+			folder in your
+			<code>com.example.e4.rcp.todo</code>
+			plug-in.
+		</para>
+		<para>
+			Create the
+			<filename>bundle.properties</filename>
+			file with key/values for the parts in your application model in this
+			folder. The file might look like the following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle.properties" />
+			</programlisting>
+		</para>
+		<para>
+			Create at least one additional translation file for another language. For example, if English is your default
+			language,
+			create the
+			<filename>bundle_de.properties</filename>
+			file to provide a German translation. Ensure that the translation values are different.
+		</para>
+	</section>
+
+
+	<section id="tutorial_i22n_translation_buildproperties">
+		<title>Adjust the build.properties file</title>
+		<para>
+			Add the created property files to your build.properties file in the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in to make
+			it available in an exported application.
+		</para>
+	</section>
+
+	<section id="tutorial_i22n_translation_model">
+		<title>Translate the application model</title>
+		<para>Use the defined keys with the % prefix in your application
+			model. The following screenshot demonstrates that for
+			a part.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/exercise_appmodel_translation10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Using the translation keys in the application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+
+	<section id="tutorial_i22n_translation_model_test">
+		<title>Test the translation of the application model</title>
+		<para>
+
+			Ensure that the
+			application works well for the languages you provided translations for. You can set the language in
+			your
+			launch
+			configuration by
+			using the
+			<parameter class="option">-nl</parameter>
+			start parameter as described in
+			<xref linkend="i18n_nlparameter" />
+		</para>
+		<warning>
+			<para>
+				You have to change the launch configuration. Setting the language via the product file does not work, as the nl
+				parameter is
+				currently
+				not
+				correctly transferred to the launch configuration. See
+				<ulink url="https://bugs.eclipse.org/bugs/show_bug.cgi?id=461371">PDE Bug report</ulink>
+				for details.
+			</para>
+		</warning>
+	</section>
+	<section id="tutorial_i22n_note">
+		<title>Application model and translations</title>
+		<para>
+			By default, it is not possible to define that the translations for the
+			application model
+			are located in another
+			plug-in. If you want
+			this, you have to implement
+			your custom translation service.
+		</para>
+
+	</section>
+</chapter>
+	
+	

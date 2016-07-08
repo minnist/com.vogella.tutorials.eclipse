@@ -1,0 +1,93 @@
+<section id="mylyn">
+	<title>Task management with Mylyn</title>
+		<indexterm>
+			<primary>Mylyn</primary>
+		</indexterm>
+		<para>
+			Eclipse Mylyn is a software component packaged with the Eclipse
+			IDE.
+			The idea of Mylyn is to integrate
+			<wordasword>tasks</wordasword>
+			into the Eclipse IDE
+			and connect the current state of the
+			Eclipse IDE,
+			e.g. the
+			<wordasword>context</wordasword>
+			with such a task.
+		</para>
+
+		<para> Software developers perform a variety of activities. They
+			write
+			source code for new functionality, fix bugs,
+			write documentation,
+			answer questions, attend meetings and much more.
+		</para>
+		<para>
+			Developing software in the Eclipse IDE
+			involves writing new
+			classes or
+			methods and modifying existing code.
+		</para>
+		<para>
+			For example the
+			procedure of
+			fixing a bug may involve writing unit
+			tests,
+			refactoring existing
+			code, reading and searching
+			involved code
+			and
+			finally fixing the
+			affected code. If the activity of the
+			developer
+			during this task is
+			interrupted or if
+			the developer has to work on
+			another
+			task, e.g. an urgent
+			bug, he loses
+			the
+			<wordasword>context</wordasword>
+			he built while working on the previous task, i.e. all the involved
+			classes which he has opened in the Eclipse
+			IDE.
+		</para>
+
+		<para>
+			Eclipse Mylyn allows the developer to record his activities in such a
+			task while he is working on it. Each task has a
+			<wordasword>context</wordasword>
+			which captures the involved classes, methods and the cursor position
+			in the opened Java or text
+			<wordasword>editor</wordasword>
+			.
+		</para>
+		<para>
+			When switching between tasks, the corresponding context is
+			restored and the editors which belong to this tasks
+			are opened and
+			the others are closed.
+		</para>
+		<para>
+			Mylyn
+			can also filter information in the IDE. For example,
+			the
+			<guilabel>Package
+				Explorer
+			</guilabel>
+			view
+			can be set to show only the files relevant for
+			the
+			current
+			task.
+
+		</para>
+		<para>
+			This functionality sounds simple but helps finding the right
+			information much
+			faster during a task switch of the
+			developer.
+		</para>
+	</section>
+
+

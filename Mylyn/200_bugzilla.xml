@@ -1,0 +1,156 @@
+<section id="mylynbugzillaintegration">
+	<title>Using Mylyn to integrate with Bugzilla</title>
+	<indexterm>
+		<primary>Mylyn</primary>
+		<secondary>bugzilla integration</secondary>
+	</indexterm>
+
+	<para>
+		The following description explains how you can use Mylyn to
+		work on
+		bugs and feature requests which are tracked in the
+		Eclipse
+		<wordasword>Bugzilla</wordasword>
+		installation.
+	</para>
+	<para>
+		All known Eclipse bugs and feature requests are stored in the
+		Eclipse Bugzilla
+		database which can be found under
+		the following link.
+	</para>
+	<para>
+		<code>https://bugs.eclipse.org/bugs/</code>
+	</para>
+	<para>
+		Mylyn supports accessing the Eclipse bug database via its
+		Bugzilla connector.
+	</para>
+	<tip>
+		<para>
+			Some packaged version of Eclipse have the Eclipse Bugzilla
+			preconfigured. If you open the
+			<guilabel>Task Repositories</guilabel>
+			view via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Show View</guisubmenu>
+				<guisubmenu>Other...</guisubmenu>
+				<guisubmenu>Mylyn</guisubmenu>
+				<guisubmenu>Task Repositories</guisubmenu>
+			</menuchoice>
+			menu.
+		</para>
+		<para>
+			If the
+			<guilabel>Eclipse Bugzilla</guilabel>
+			does not exists here, select
+			<guilabel>Add Task Repository</guilabel>
+			from the view menu and enter the URL to Bugzilla and your
+			credentials similar to the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/mylyneclipsebugzilla10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Eclipse Bugzilla connection in Mylyn</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</tip>
+
+	<para>
+		Afterwards
+		right
+		click in the
+		<guilabel>Task List</guilabel>
+		view
+		and select
+		<menuchoice>
+			<guimenu>New</guimenu>
+			<guisubmenu>Query</guisubmenu>
+		</menuchoice>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylynbugzilla10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Creating a bugzilla query in Mylyn - Part 1</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		Select the
+		<guilabel>Eclipse</guilabel>
+		entry and press the
+		<guilabel>Next</guilabel>
+		button.
+
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylynbugzilla20.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Creating a bugzilla query in Mylyn - Part 2</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+
+		Select the
+		<guilabel>Create query</guilabel>
+		entry and
+		<guilabel>Create query using form</guilabel>
+		.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylynbugzilla30.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para> If for example you want to see all open bugs in
+		Platform - UI
+		then you could enter a query as depicted in the
+		following screenshot.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylynbugzilla40.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Creating a bugzilla query in Mylyn - Part 4</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para> If you now activate a task, you can use Mylyn to work on
+		Eclipse
+		bugs.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/mylynbugzilla50.png" scale="30" />
+			</imageobject>
+			<textobject>
+				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+</section>

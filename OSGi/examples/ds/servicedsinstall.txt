@@ -1,0 +1,2 @@
+
+install file:c:\temp\bundles\plugins\de.vogella.osgi.ds.quoteservice.jar

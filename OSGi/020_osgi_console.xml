@@ -1,0 +1,243 @@
+<section id="osgiconsole" role="wrapper">
+	<title>Using the OSGi console</title>
+	<section id="osgiconsole_commands">
+		<title>The OSGi console</title>
+		<indexterm>
+			<primary>OSGi console</primary>
+		</indexterm>
+
+		<para>
+			The OSGi console is
+			like a command-line shell.
+			In this console you
+			can
+			type a command to perform
+			an OSGi
+			action.
+			This
+			can be useful to
+			analyze problems on the OSGi layer of your
+			application.
+		</para>
+		<para>
+			Use, for example, the command
+			<code>ss</code>
+			to get an overview of all
+			bundles, their status and bundle-id.
+			The
+			following table is a
+			reference of the most important
+			OSGi commands.
+		</para>
+
+		<para>
+			<table frame='all'>
+				<title>OSGi commands</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					<thead>
+						<row>
+							<entry>Command</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>help</entry>
+							<entry>Lists the available commands.</entry>
+						</row>
+						<row>
+							<entry>ss</entry>
+							<entry>Lists the installed bundles and
+								their
+								status.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								ss
+								<parameter>vogella</parameter>
+							</entry>
+							<entry>
+								Lists bundles and their status
+								that have
+								<parameter>vogella</parameter>
+								within
+								their name.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								start
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>
+								Starts the bundle with the
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+								ID.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								stop
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>
+								Stops the bundle with the
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+								ID.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								diag
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>Diagnoses a particular bundle. It lists all missing
+								dependencies.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								install
+								<parameter>URL</parameter>
+							</entry>
+							<entry>Installs a bundle from a URL.</entry>
+						</row>
+						<row>
+							<entry>
+								uninstall
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>
+								Uninstalls the bundle with the
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+								ID.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								bundle
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>
+								Shows information about the bundle with the
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+								ID,
+								including the
+								registered
+								and used services.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								headers
+								<parameter><![CDATA[<bundle-id>]]></parameter>
+							</entry>
+							<entry>
+								Shows the MANIFST.MF information for a bundle.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								services
+								<parameter>filter</parameter>
+							</entry>
+							<entry>
+								Shows all available services and their consumer. Filter is
+								an optional LDAP filter, e.g., to see all
+								services which provide
+								a
+								ManagedService implementation use the "services
+								(objectclass=*ManagedService)" command.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+	<section id="osgiintro_bundles">
+		<title>Required bundles</title>
+		<para>
+			You have to add the
+			following
+			bundles to your runtime configuration to
+			use the OSGi
+			console.
+			<itemizedlist>
+				<listitem>
+					<para>org.eclipse.equinox.console</para>
+				</listitem>
+				<listitem>
+					<para>org.apache.felix.gogo.command</para>
+				</listitem>
+				<listitem>
+					<para>org.apache.felix.gogo.runtime</para>
+				</listitem>
+				<listitem>
+					<para>org.apache.felix.gogo.shell</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+
+	</section>
+
+	<section id="osgiintro_telnet">
+		<title>Telnet</title>
+		<para>
+			If you specify the
+			<parameter>-console</parameter>
+			parameter in your launch configuration Eclipse will allow you to
+			interact with the OSGi console. An OSGi launch
+			configuration created
+			with the Eclipse IDE contains
+			this
+			parameter by default. Via the following parameter
+			you can open a
+			port to which you can connect via the telnet protocol.
+		</para>
+		<para>
+			<parameter>-console 5555</parameter>
+		</para>
+		<para>
+			If you open a
+			telnet session to
+			the OSGi console, you can use tab
+			completion and a
+			history of the
+			commands similar to the
+			<wordasword>Bash</wordasword>
+			shell under Linux.
+		</para>
+	</section>
+	<section id="osgiintro_console">
+		<title>Access to the Eclipse OSGi console</title>
+		<para>
+			You can also access the OSGi console of your running Eclipse
+			IDE. In
+			the
+			<guilabel>Console</guilabel>
+			<wordasword>
+				View
+			</wordasword>
+			you find a menu entry with the
+			tooltip
+			<guilabel>Open Console</guilabel>
+			.
+			If you select
+			<guilabel>Host OSGi Console</guilabel>
+			,
+			you will have access
+			to
+			your running OSGi instance.
+		</para>
+		<para>
+			Please note that interfering with your running Eclipse IDE via
+			the OSGi console, may put the Eclipse IDE into a
+			bad state.
+		</para>
+	</section>
+
+</section>

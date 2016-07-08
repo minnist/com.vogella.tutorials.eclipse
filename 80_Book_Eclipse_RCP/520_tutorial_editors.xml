@@ -1,0 +1,168 @@
+<chapter id="tutorial_multipleeditors">
+	<title>Optional exercise: Implementing multiple editors</title>
+	<section id="tutorial_multipleeditors_prerequisites">
+		<title>Prerequisites</title>
+		<para>
+			This optional exercise is based on
+			<xref linkend="tutorial_commandscontextmenu" />
+			as it reuses the context menu of the table you created there. If you
+			skipped this exercise, you need to go back and
+			perform the exercise
+			before going on with this one.
+		</para>
+
+	</section>
+	<section id="tutorial_multipleeditors_menu">
+		<title>Adding new menu entries</title>
+		<para>
+			Create a new command called
+			<wordasword>Open Editor</wordasword>
+			, create a new handler for it, pointing to the following new class
+			<code>OpenEditorHandler</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/editor/OpenEditorHandlerFirst.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Add another entry to the context menu of the table which you have
+			created
+			and
+			registered with the SWT table in
+			<xref linkend="tutorial_commandscontextmenu" />
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/openneweditor10.png" scale="30" />
+				</imageobject>
+				<textobject>
+					<phrase>Context menu to open a new editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="tutorial_multipleeditors_partstack">
+		<title>Validating the ID of the part stack</title>
+		<para>
+			Your editors should be opened in the right lower corner of the part
+			stack.
+			Ensure that the ID of the part stack in the
+			application model
+			is
+			set to
+			<code>com.example.e4.rcp.todo.partstack.bottom</code>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/openneweditor20.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Validate PartStack ID</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="tutorial_multipleeditors_implementation">
+		<title>Adding a part implementation</title>
+		<para>
+			Create the following implementation for the part which
+			represents the
+			editor. It is based on the
+			<code>TodoDetailsPart</code>
+			code but avoids listening to the current active selection.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/editor/EditorPart.java" />
+			</programlisting>
+		</para>
+		<para>
+			Create a part descriptor in the application model, where this
+			<code>EditorPart</code>
+			is referenced.
+		</para>
+		
+		<para>
+			<mediaobject>
+				<imageobject><imagedata fileref="images/editor-part-descriptor.png"></imagedata></imageobject>
+			</mediaobject>
+		</para>
+		<tip>
+			<para>
+				You could also adjust the
+				<code>TodoDetailsPart</code>
+				code to handle both use cases. The approach to create a new class
+				for the multiple editors has been chosen in this
+				book to "protect"
+				your existing implementation, i.e. if you make an error in this
+				exercise, the rest of your
+				application should still work fine.
+			</para>
+		</tip>
+		<para>
+			This implementation uses the
+			<code>getPersistedState()</code>
+			to retrieve the
+			<code>Todo</code>
+			id which will be passed to it via the handler.
+		</para>
+
+	</section>
+	<section id="tutorial_multipleeditors_implementation_handler">
+		<title>Adjusting handler implementation</title>
+		<para>
+			Change your handler to open a new editor, if a corresponding
+			editor is not already open. If the editor is
+			already open, set the
+			focus to it.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/editor/OpenEditorHandler.java" />
+			</programlisting>
+		</para>
+
+
+
+	</section>
+	<section id="tutorial_multipleeditors_test">
+		<title>Validating the implementation</title>
+		<para>Ensure that you can open multiple instances of your editor with
+			your context menu and that an existing editor
+			gets focused if you
+			re-select it. The result should look similar to the following
+			screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/editor_in_action10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Editor in action</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Change a
+			<code>Todo</code>
+			in the new editor and save. Reload the data in your table via your
+			<guilabel>Load Data</guilabel>
+			button and ensure
+			that the data has changed.
+		</para>
+	</section>
+</chapter>

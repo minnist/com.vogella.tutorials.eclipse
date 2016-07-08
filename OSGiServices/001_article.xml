@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>OSGi Services - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>18.07.2014</pubdate>
+		<releaseinfo>
+			<para>Version 5.1</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>OSGi services with Eclipse Equinox</title>
+			<para> This tutorial explains the usage of OSGi services primary
+				focusing on the usage of declarative services.
+				Eclipse Equinox is
+				used as an
+				stand-alone OSGi
+				server. For
+				this tutorial Eclipse 4.4
+				(Luna) is
+				used.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_prerequisites.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_service.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="076_ds.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_ds_outsitercp.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="081_eclipse4_osgiservices.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="082_tutorial_ds.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="090_dsconsumer.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_serviceapi.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="110_tutorial_serviceapi.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_bndtools.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/OSGiServices"?>
+</article>

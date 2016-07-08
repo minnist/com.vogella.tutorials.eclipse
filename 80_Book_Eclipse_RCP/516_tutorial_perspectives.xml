@@ -1,0 +1,99 @@
+<chapter id="tutorial_using_perspectives">
+	<title>Exercise: Using multiple perspectives</title>
+	<section id="tutorial_usingpartservice_target">
+		<title>Target of this exercise</title>
+		<para>In this exercise you define another perspective and implement a
+			menu to switch between your perspectives.
+		</para>
+	</section>
+
+	<section id="tutorial_usingpartservice_3">
+		<title>Create a new perspective</title>
+
+		<para>
+			Define a new perspective called
+			<wordasword>Manager</wordasword>
+			in your application. You should know by
+			now how to do this, therefore it is not described in this exercise.
+			Ensure that
+			your new perspective has at least one
+			part in it
+			(contained in a PartStack so that the part label is
+			visible).
+		</para>
+		<warning>
+			<para>Ensure to add the perspective to the existing
+				PerspectiveStack.
+			</para>
+		</warning>
+	</section>
+	<section id="tutorial_usingpartservice_menu">
+		<title>Create new menu entries</title>
+		<para>Create a command and a handler to switch between perspectives.
+			The handler class for switching perspectives
+			might
+			look
+			like
+			the
+			following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/perspectives/PerspectiveSwitchHandler.java" />
+			</programlisting>
+		</para>
+		<para>
+			Create or update a
+			<guilabel>Windows</guilabel>
+			menu entry in your menu main with a sub-menu called
+			<guilabel>Switch Perspective</guilabel>
+			.
+
+		</para>
+
+
+		<para>
+			Add a new menu
+			entry in your application model to switch
+			between
+			your
+			perspectives.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/perspective_switchermenu10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Perspective switcher menu</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>Test if you can switch between your perspectives with your new
+			handler.
+		</para>
+
+	</section>
+	<section id="tutorial_usingpartservice_commandparametes">
+		<title>Using command parameters to define the perspective ID</title>
+		<tip>
+			<para>This exercise is optional</para>
+		</tip>
+
+		<para>
+			Currently your perspective switcher only allows to switch
+			between two
+			perspectives. Use parameters in your command and
+			menu
+			entries to
+			specify to which perspective you want to switch. See
+			<xref linkend="commands_parameter" />
+			for an example how to do this.
+		</para>
+
+	</section>
+
+</chapter>

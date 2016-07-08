@@ -1,0 +1,56 @@
+<section id="tutorial_confirmationdialog">
+	<title>Confirmation dialog at exit</title>
+	<para>
+		Ensure that the
+		<code>org.eclipse.jface</code>
+		plug-in is defined as dependency of your application plug-in.
+	</para>
+	<para>
+		In your
+		<code>ExitHandler</code>
+		class ensure that the user wants to exit the application via a
+		confirmation dialog. This is done in the following code.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/dialog/ExitHandler.java" />
+		</programlisting>
+	</para>
+	<warning>
+		<para>
+			A handler is executed in the context in which it is called.
+			It should
+			receive all its input via its @Execute method.
+			Field or
+			constructor
+			injection
+			in a handler does only work for special cases, i.e.
+			objects
+			provided by an
+			<code>ExtendedObjectSupplier</code>.
+		</para>
+	</warning>
+
+	<para>
+		Test your implementation. If you select the
+		<guilabel>Cancel</guilabel>
+		button
+		on the confirmation dialog the application should not
+		terminate.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/tutorial_dialogclose.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Confirmation dialog</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+
+
+</section>

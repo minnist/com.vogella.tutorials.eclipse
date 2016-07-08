@@ -1,0 +1,45 @@
+<section id="running_osgi">
+	<title>Running a stand-alone OSGi server</title>
+	<para> This chapter will
+		show how to run Equinox as a
+		OSGi stand-alone runtime.</para>
+	<para>In your Eclipse installation directory identify the file
+		org.eclipse.osgi*.jar. This file should be in the "plugin" folder.
+		Copy this jar file to a new place, e.g., c:\temp\osgi-server. Rename
+		the file to "org.eclipse.osgi.jar".</para>
+	<para> Start your OSGi server via the following command.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/startOSGi.txt" />
+		</programlisting>
+	</para>
+	<para>You can use "install URL" to install a bundle
+		from a
+		certain URL.
+		For example to install your bundle from "c:\temp\bundles" use:</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/installbundle.txt" />
+		</programlisting>
+	</para>
+	<para>
+		<tip> You probably need to correct the path and the bundle name on
+			your system. </tip>
+	</para>
+	<para> You can start then the bundle with start and the id.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/firstbundle70.png" />
+				
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para>
+		<tip>You can remove all installed bundles with the -clean
+			parameter.
+		</tip>
+	</para>
+</section>

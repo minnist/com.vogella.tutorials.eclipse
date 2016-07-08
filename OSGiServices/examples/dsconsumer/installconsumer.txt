@@ -1,0 +1,2 @@
+
+install file:c:\temp\bundles\plugins\de.vogella.osgi.ds.quoteconsumer_1.0.0.jar

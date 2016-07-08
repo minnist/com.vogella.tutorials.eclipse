@@ -1,0 +1,101 @@
+<chapter>
+	<title>Exercise: Using asynchronous processing</title>
+	<section>
+		<title>Simulate delayed access</title>
+		<para>
+			Change your
+			<code>getTodos(Consumer&lt;List&lt;Todo&gt;&gt; todosConsumer)</code>
+			method in the
+			<code>MyTodoServiceImpl</code>
+			class
+			to the following example code. This code simulates a slow server
+			access
+			with the
+			<code>TimeUnit</code>
+			class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/delay.java" />
+			</programlisting>
+		</para>
+		<para>
+			Start your application. What happens if you press the
+			<code>Button</code>
+			to fill the JFace table?
+		</para>
+	</section>
+	<section>
+		<title>Use asynchronous processing</title>
+		<para>
+			You have a
+			<guilabel>Load Data</guilabel>
+			button in your
+			<code>TodoOverviewPart</code>
+			.
+			Write a
+			custom
+			<code>Job</code>
+			implementation
+			to load the data in the background whenever this button
+			is pressed.
+			Once
+			the
+			data is loaded, update the
+			table
+			with the new data.
+			Make sure
+			that
+			this table update happens in the
+			main interface
+			thread.
+		</para>
+
+		<para>The following example code can help. </para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/job/JobSnippets.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section>
+		<title>Validating</title>
+		<note>
+			<para>
+				If you start your application, it takes longer to start if you
+				still
+				read the data somewhere synchronously during startup. This is done
+				for example if you implemented
+				<xref linkend="exercisecomboviewer" />
+				. If you want to avoid this you need to perform this reading also
+				asynchronously. We leave this
+				change as an optional exercise to the
+				reader.
+			</para>
+		</note>
+
+		<para>
+			Use the wizard to create a new
+			<code>Todo</code>
+			object. Press the
+			<guilabel>Load Data</guilabel>
+			button to update the table. The application should be usable and the
+			table should update after the delay defined in the
+			<code>ITodoService</code>
+			implementation class.
+		</para>
+	</section>
+
+	<section>
+		<title>Remove delay</title>
+		<para>
+			After finishing this exercise and validating that everything
+			works correctly, change the delay to one second so avoid delays
+			during future exercises.
+		</para>
+	</section>
+</chapter>

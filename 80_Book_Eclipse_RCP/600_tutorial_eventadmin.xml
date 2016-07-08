@@ -1,0 +1,165 @@
+<chapter id="tutorial_eventadmin">
+	<title>Exercise: Event notifications</title>
+	<section id="tutorial_eventadmin1">
+		<title>Creating a plug-in for event constants</title>
+		<para>
+			Create a new simple plug-in called
+			<wordasword>com.example.e4.rcp.todo.events</wordasword>
+			.
+		</para>
+		<para>
+			Define the following
+			<code>MyEventConstants</code>
+			interface in this new plug-in. This interface stores the constants
+			for the event topics.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../../Eclipse4EventSystem/examples/events/MyEventConstants.java" />
+			</programlisting>
+		</para>
+		<para>
+			Export the
+			<code>com.example.e4.rcp.todo.events</code>
+			package in the
+			<filename>MANIFEST.MF</filename>
+			file (via the
+			<guilabel>Runtime</guilabel>
+			tab) in your new plug-in.
+		</para>
+	</section>
+	<section id="tutorial_eventadminfeature">
+		<title>Add the new plug-in to the product via the feature</title>
+		<para>
+			Add the
+			<wordasword>event</wordasword>
+			plug-in to your feature so that it is available in your product
+			configuration file.
+		</para>
+
+	</section>
+
+	<section id="tutorial_eventadmin2">
+		<title>Enter the plug-in dependencies</title>
+		<para>
+			Add
+			<wordasword>com.example.e4.rcp.todo.events</wordasword>
+			as a dependency
+			to your
+			<wordasword>com.example.e4.rcp.todo</wordasword>
+			plug-in via its
+			<filename>MANIFEST.MF</filename>
+			file.
+		</para>
+		<para>Start your application to validate that you did everything
+			correctly.
+		</para>
+		<warning>
+			<para>
+				Remember to start your application via the product to update
+				the
+				runtime configuration. If it fails ensure that you have added
+				the
+				<wordasword>*.todo.events</wordasword>
+				plug-in to the feature.
+			</para>
+		</warning>
+	</section>
+	<section id="tutorial_eventadmin3">
+		<title>Send out notifications</title>
+		<para>
+			Ensure that the following two plug-ins are included as
+			dependency into
+			your
+			<code>com.example.e4.rcp.todo</code>
+			plug-in.
+			<itemizedlist>
+				<listitem>
+					<code>org.eclipse.e4.core.services</code>
+				</listitem>
+				<listitem>
+					<code>org.eclipse.osgi.services</code>
+				</listitem>
+			</itemizedlist>
+
+		</para>
+		<para>
+			Update your
+			<code>NewTodoHandler</code>
+			and your
+			<code>SaveAllHandler</code>
+			classes to send out an event to communicate the data change. The
+			following
+			example code demonstrates that for the
+			<code>NewTodoHandler</code>
+			class.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/event/NewTodoHandler.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="tutorial_eventadmin_listeners">
+		<title>Receive updates in your parts</title>
+		<para>
+			Register for this
+			event in all relevant parts of your
+			application. If
+			the
+			event is received, update your user interface. The following code
+			demonstrates that for your
+			<code>TodoOverviewPart</code>
+			class.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/event/TodoOverviewPart.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_eventadmin_validate">
+		<title>Validating</title>
+
+		<para>
+			Create a new
+			<code>Todo</code>
+			object via your wizard. The table in
+			<code>TodoOverviewPart</code>
+			should get updated automatically, e.g., the new entry should be
+			visible in the table after you finish the wizard.
+		</para>
+	</section>
+	<section id="tutorial_eventadmin_reviewimplementation">
+		<title>Review the implementation</title>
+		<para>
+			The current implementation works but is not perfect. Each
+			user
+			interface component, which modifies
+			<code>Todo</code>
+			objects,
+			needs to send out events.
+		</para>
+		<para>
+			It would be preferable if the
+			<code>ITodoService</code>
+			implementation could send out these events directly.
+		</para>
+		<para>
+			In
+			the
+			<xref linkend="contextfunctionschapter" />
+			chapter we improve our current solution and move the event sending to
+			the implementation class of the
+			<code>ITodoService</code>
+			service.
+		</para>
+	</section>
+
+</chapter>

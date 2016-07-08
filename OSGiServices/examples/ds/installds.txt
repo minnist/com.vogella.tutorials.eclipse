@@ -1,0 +1,4 @@
+
+install file:c:\temp\bundles\plugins\org.eclipse.equinox.ds.jar
+install file:c:\temp\bundles\plugins\org.eclipse.equinox.util.jar
+install file:c:\temp\bundles\plugins\org.eclipse.osgi.services.jar

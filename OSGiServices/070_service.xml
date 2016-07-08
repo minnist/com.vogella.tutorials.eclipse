@@ -1,0 +1,145 @@
+<section id="osgiservice" role="wrapper">
+	<title>OSGi Services</title>
+	<section id="osgiservice_overview">
+		<title>What are OSGi services?</title>
+		<indexterm>
+			<primary>OSGi</primary>
+			<secondary>Services</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Services (OSGi)</primary>
+			<seealso>Eclipse services</seealso>
+		</indexterm>
+		<indexterm>
+			<primary>OSGi service properties</primary>
+		</indexterm>
+		<indexterm>
+			<primary>OSGi service priorities</primary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>service</wordasword>
+			in OSGi is defined by a standard Java class or an
+			interface.
+			The first step to define an OSGi service is to define the
+			class
+			or interface for which you want to provide a
+			service.
+			This is called the
+			<wordasword>service interface</wordasword>
+			.
+		</para>
+		<para>As a second step you write the implementation
+			class for the service interface.
+		</para>
+		<para>
+			You can
+			register services implementations and consume existing services via the OSGi
+			runtime.
+			OSGi provides
+			a
+			central
+			<wordasword>service registry</wordasword>
+			for this purpose.
+		</para>
+
+		<para>
+			A
+			service
+			can be dynamically started and stopped,
+			and plug-ins
+			which use
+			services
+			must be able to handle this dynamic
+			behavior.
+			The
+			plug-ins can
+			register
+			listeners
+			to be informed if a service
+			is
+			started
+			or
+			stopped.
+		</para>
+		<para>During the declaration of a service it is possible to specify
+			key / values which can be used to configure the
+			service.
+		</para>
+		<para>
+			It is possible to define a service ranking for a service via a
+			service
+			property.
+			OSGi
+			assigns by default a
+			value of
+			zero as the service
+			ranking. The higher the ranking the better. Frameworks like the
+			Eclipse dependency injection
+			framework automatically inject the
+			service with the highest service ranking.
+		</para>
+		<para>
+			The
+			<code>Constants</code>
+			class from the
+			<code>org.osgi.framework</code>
+			package defines the
+			<parameter>service.ranking</parameter>
+			value via the
+			<code>Constants.SERVICE_RANKING</code>
+			constant. This constant can be used to
+			set the
+			integer property of the
+			service
+			ranking.
+		</para>
+
+	</section>
+	<section id="osgiservice_active">
+		<title>Life cycle status for providing services</title>
+		<para>
+			To provide a service a plug-in needs to be in the
+			<code>ACTIVE</code>
+			life cycle status of OSGi.
+		</para>
+		<para>
+			This requires that the service plug-in has the
+			<wordasword>Activate this plug-in when one of its classes is loaded</wordasword>
+			flag set in the
+			manifest
+			file.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_dsservices_activateflag10.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Activate flag for services</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="osgiservice_definition">
+		<title>Best practices for defining services</title>
+		<para>
+			It is good practice to define a
+			service
+			via a plug-in
+			which
+			only
+			contains the interface definition. Another
+			plug-in
+			would provide
+			the
+			implementation for this service. This allows
+			you to
+			change
+			the
+			implementation of the service via a
+			different plug-in.
+		</para>
+	</section>
+
+</section>

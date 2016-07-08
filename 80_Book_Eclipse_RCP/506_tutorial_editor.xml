@@ -1,0 +1,181 @@
+<chapter id="tutorial_editorpartservice">
+	<title>Exercise: Implement an editor</title>
+
+	<section id="tutorial_editorpartservice0">
+		<title>Add the plug-in dependencies</title>
+		<note>
+			<para>
+				If you did the optional exercise
+				<xref linkend="tutorial_commandscontextmenu" />
+				you should have already the required dependencies in your
+				<code>com.example.e4.rcp.todo</code>
+				plug-in. Skip this step in this case.
+			</para>
+		</note>
+		<para>
+			Add the following
+			plug-ins as dependency to the
+			<filename>MANIFEST.MF</filename>
+			file of the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.model.workbench</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>org.eclipse.e4.ui.workbench.swt</code>
+					</para>
+				</listitem>
+
+			</itemizedlist>
+		</para>
+	</section>
+
+	<section id="tutorial_editorpartservice1">
+		<title>Convert TodoDetailsPart to an editor</title>
+		<para>
+			Use the
+			<code>MDirtyable</code>
+			attribute to mark the
+			<code>TodoDetailsPart</code>
+			as dirty once the user changes data via the user interface.
+		</para>
+		<para>
+			The
+			following example code shows how to get the attribute and how
+			you
+			can
+			define a listener to your existing data binding
+			(which you created
+			in
+			<xref linkend="tutorial_databinding" />
+			).
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/dirty/Dirty.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Basically we need a flag for evaluating the dirty state, which
+			is updated once the a new todo has been set for the master detail
+			binding. Note that the dirty state for the dirtable is set inside the
+			ISideEffect.
+		</para>
+
+		<para>
+			Add the following method to your
+			<code>TodoDetailsPart</code>
+			class to save the changed data. This method will be used by the part
+			service.
+		</para>
+
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/dirty/Persist.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_editorpartservice2">
+		<title>Implement the save handler</title>
+		<para>
+			Change your
+			<code>SaveAllHandler</code>
+			handler class, so that the part service is used to
+			call the
+			<code>@Persist</code>
+			method of all parts which are marked as dirty.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/dirty/SaveAllHandler.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			In
+			<xref linkend="tutorial_usingpartservice_save" />
+			you implement that the save handler can only be executed if a dirty
+			editor exists.
+		</para>
+	</section>
+
+
+	<section id="tutorial_editorpartservice_validate">
+		<title>Validating</title>
+		<para>
+			Start your application and select an entry in the table of your
+			<guilabel>TodoOverviewPart</guilabel>
+			element.
+			Modify the
+			selected
+			<code>Todo</code>
+			in the
+			<guilabel>Details</guilabel>
+			part. Ensure that the part is marked as dirty.
+		</para>
+		<para>
+			Select
+			<menuchoice>
+				<guimenu>File</guimenu>
+				<guisubmenu>Save</guisubmenu>
+			</menuchoice>
+			and validate that the editor is not marked as dirty anymore.
+		</para>
+		<para>Reload the data in the table to ensure that the data was
+			correctly saved.
+		</para>
+		<para>
+			Create a new
+			<code>Todo</code>
+			item, with the wizard and ensure that the wizard still works.
+		</para>
+	</section>
+
+	<section id="tutorial_editorpartservice3">
+		<title>Confirmation dialog for modified data</title>
+		<note>
+			<para>This exercise is optional. It is a repetition of the usage of
+				dialogs.
+			</para>
+		</note>
+		<para>
+
+		</para>
+		<para>
+			In your
+			<code>TodoDetailsPart</code>
+			class
+			trigger
+			a JFace confirmation dialog if the selection in the table
+			of
+			<code>TodoOverviewPart</code>
+			changes
+			and if
+			<code>TodoDetailsPart</code>
+			contains
+			modified data. See
+			<xref linkend="dialogs_jfacemessagedialogstatic" />
+			for information how to create a confirmation dialog.
+		</para>
+		<para>
+			The confirmation dialog should allow the user to prevent an update in
+			<code>TodoDetailsPart</code>
+			in case it has unsaved data.
+		</para>
+
+	</section>
+
+
+</chapter>

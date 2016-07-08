@@ -1,0 +1,38 @@
+
+<section id="resources_osgiservice">
+	<title>OSGi Resources</title>
+	<para>
+		<ulink url="http://www.osgi.org"> http://www.osgi.org</ulink>
+		OSGi Homepage
+	</para>
+	<para>
+		<ulink url="http://www.eclipse.org/equinox"> http://www.eclipse.org/equinox</ulink>
+		Equinox Homepage
+	</para>
+	<para>
+		<ulink
+			url="http://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider"> OSGi remote RESTFul service tutorial</ulink>
+		Equinox Homepage
+	</para>
+	<para>
+		<ulink
+			url="http://www.eclipse.org/community/eclipse_newsletter/2013/july/article3.php"> OSGi remove service tutorial with ECF</ulink>
+		Equinox Homepage
+	</para>
+	<para>
+		<ulink url="http://www.eclipse.org/equinox"> http://www.eclipse.org/equinox</ulink>
+		Equinox Homepage
+	</para>
+
+	<para>
+		<ulink url="http://www.eclipse.org/equinox/documents/quickstart.php">
+			http://www.eclipse.org/equinox/documents/quickstart.php</ulink>
+		Equinox Quickstart guide
+	</para>
+	<para>
+		<ulink
+			url="http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/">
+			http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/</ulink>
+		OSGi Blueprint services
+	</para>
+</section>

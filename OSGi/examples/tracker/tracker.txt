@@ -1,0 +1,10 @@
+
+MyQuoteServiceTrackerCustomizer customer = 
+	new MyQuoteServiceTrackerCustomizer(context);
+	
+serviceTracker = new ServiceTracker(
+		context, 
+		IQuoteService.class.getName(), 
+		customer);
+		
+serviceTracker.open();

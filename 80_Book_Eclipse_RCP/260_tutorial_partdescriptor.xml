@@ -1,0 +1,84 @@
+<chapter id="tutorial_modeldynamics">
+	<title>Optional exercise: Dynamic creation of parts based on a part descriptor</title>
+	<section id="tutorial_modeldynamics1">
+		<title>Create a class for the part descriptor</title>
+
+		<para>Create the following new class.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/dynamics/DynamicPart.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="tutorial_modeldynamics_descriptor">
+		<title>Create the part descriptor model element</title>
+		<para>
+			Create a
+			part descriptor
+			model element
+			in your application model using
+			the
+			<parameter>com.example.e4.rcp.todo.partdescriptor.dynamic</parameter>
+			ID. In the
+			<guilabel>Class URI</guilabel>
+			field point to your new
+			<code>DynamicPart</code>
+			class.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/partdescriptor10.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Defining a Part Descriptor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The
+			<parameter>Multiple</parameter>
+			attribute should be flagged.
+		</para>
+	</section>
+	<section id="tutorial_modeldynamics2">
+		<title>Create a handler for creating new parts</title>
+
+
+		<para>
+			Add a new handler and a new command for creating a new
+			part to
+			your application model. The code for
+			the
+			handler
+			class should be
+			similar to the following code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="../examples/dynamics/DynamicPartHandler.java" />
+			</programlisting>
+		</para>
+		<para>
+			Add a new menu called
+			<wordasword>Dynamic Contributions</wordasword>
+			to your application model.
+		</para>
+		<para>Also add a new menu entry to your new menu, pointing to your new
+			command.
+		</para>
+
+		<para>
+			Start your application and validate that you can dynamically
+			create
+			and display
+			new
+			parts. As you have set the
+			<parameter>Multiple</parameter>
+			flag on the part descriptor, you can also open multiple instances of
+			the part.
+		</para>
+
+	</section>
+</chapter>

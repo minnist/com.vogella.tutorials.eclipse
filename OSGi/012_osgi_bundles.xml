@@ -1,0 +1,274 @@
+<section id="osgiarch" role="wrapper">
+	<title>OSGi metadata</title>
+
+	<section id="osgiarch_manifest">
+		<title>The manifest file (MANIFEST.MF)</title>
+		<indexterm>
+			<primary>MANIFEST.MF</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-Name</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-Version</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-Activator</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-RequiredExecutionEnvironment</primary>
+		</indexterm>
+		<indexterm>
+			<primary>BREE</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-ActivationPolicy</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Bundle-ClassPath</primary>
+		</indexterm>
+		<para>
+			Technically OSGi plug-ins
+			are
+			<filename>.jar</filename>
+			files with additional meta
+			information.
+			This meta
+			information is stored
+			in the
+			<filename>META-INF/MANIFEST.MF</filename>
+			file. This file is called the
+			<wordasword>manifest</wordasword>
+			file and
+			is part of the standard Java
+			specification and
+			OSGi adds
+			additional
+			metadata to it. According to the Java
+			specification, any
+			Java
+			runtime
+			must
+			ignore
+			unknown metadata. Therefore,
+			plug-ins can be
+			used
+			without
+			restrictions in other
+			Java
+			environments.
+		</para>
+		<para>
+			The following listing
+			is
+			an example
+			for a manifest file.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/bundles/MANIFEST.MF" />
+			</programlisting>
+		</para>
+
+		<para>
+			The following table gives an explanation of the identifiers
+			in the
+			manifest
+			file. For additional information on the
+			unique
+			identifier see
+			<xref linkend="osgiarch_identifier" />
+			and for information on the version schema which is typically used in
+			OSGi see
+			<xref linkend="osgiarch_semanticversions" />
+			.
+		</para>
+		<table frame='all'>
+			<title>OSGi identifiers in the manifest file</title>
+			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+				<colspec colname='c1' colwidth="2*" />
+				<colspec colname='c2' colwidth="4*" />
+				<thead>
+					<row>
+						<entry>Identifier</entry>
+						<entry>Description</entry>
+					</row>
+				</thead>
+				<tbody>
+					<row>
+						<entry>Bundle-Name</entry>
+						<entry>Short description of the plug-in.</entry>
+					</row>
+					<row>
+						<entry>Bundle-SymbolicName</entry>
+						<entry>
+							<para>
+								The unique identifier of the plug-in. If this plug-in is using
+								the
+								extension point functionality of Eclipse,
+								it must be marked as
+								Singleton. You do this by adding the following
+								statement after the Bundle-SymbolicName
+								identifier:
+							</para>
+							<para>
+								<code>; singleton:=true</code>
+							</para>
+						</entry>
+					</row>
+					<row>
+						<entry>Bundle-Version</entry>
+						<entry>Defines the plug-in version and must be incremented if
+							a new
+							version of the plug-in is published.
+						</entry>
+					</row>
+					<row>
+						<entry>
+							Bundle-Activator
+						</entry>
+						<entry>
+							Defines an optional activator class which implements the
+							<code>BundleActivator</code>
+							interface. An instance of this class is created when the plug-in
+							gets activated. Its
+							<code>start()</code>
+							and
+							<code>stop()</code>
+							methods are called whenever
+							the plug-in
+							is
+							started or
+							stopped. An
+							OSGi
+							activator can be used to configure the plug-in
+							during
+							startup. The execution of an activator
+							increases the startup time of the
+							application, therefore this functionality should be used carefully.
+						</entry>
+					</row>
+					<row>
+						<entry>Bundle-RequiredExecutionEnvironment (BREE)</entry>
+						<entry>Specify which Java version is required to run the plug-in.
+							If
+							this
+							requirement is not fulfilled, then the OSGi
+							runtime does
+							not
+							load
+							the
+							plug-in.
+						</entry>
+					</row>
+					<row>
+						<entry>Bundle-ActivationPolicy</entry>
+						<entry>
+							Setting this to
+							<parameter>lazy</parameter>
+							will tell the OSGi runtime that this
+							plug-in should only be
+							activated if one of its components, i.e.
+							classes and
+							interfaces
+							are used by other plug-ins. If not set, the Equinox runtime does
+							not activate the plug-in, i.e.,
+							services provided by this plug-in
+							are not available.
+						</entry>
+					</row>
+					<row>
+						<entry>Bundle-ClassPath</entry>
+						<entry>
+							The Bundle-ClassPath specifies where to load classes from
+							the
+							bundle. The default is '.' which allows classes to be
+							loaded from
+							the root of the bundle. You can also add JAR files to
+							it, these
+							are called
+							<wordasword>nested JAR files</wordasword>
+							.
+						</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</section>
+
+	<section id="osgiarch_identifier">
+		<title>Bundle-SymbolicName and Version</title>
+		<indexterm>
+			<primary>Bundle-SymbolicName</primary>
+		</indexterm>
+
+		<para>
+			Each plug-in has a symbolic name which is defined via the
+			<code>Bundle-SymbolicName</code>
+			property. The name starts by convention
+			with the reverse domain
+			name
+			of
+			the plug-in author, e.g., if you own the
+			"example.com" domain
+			then the
+			symbolic name would start with
+			"com.example".
+		</para>
+		<para>
+			Each plug-in has also a version number in the
+			<code>Bundle-Version</code>
+			property.
+		</para>
+		<para>
+			The
+			<code>Bundle-Version</code>
+			and the
+			<code>Bundle-SymbolicName</code>
+			uniquely
+			identifies
+			a plug-in.
+		</para>
+	</section>
+	<section id="osgiarch_semanticversions">
+		<title>Semantic Versioning with OSGi</title>
+		<para>
+			OSGi recommends to use a
+			<parameter><![CDATA[<major>.<minor>.<patch>]]></parameter>
+			schema for the
+			version number which is defined via the
+			<code>Bundle-Version</code>
+			field identifier. If you change your plug-in code you increase the
+			version according to the following rule set.
+			<itemizedlist>
+				<listitem>
+					<para>
+						<parameter><![CDATA[<patch>]]></parameter>
+						is increased if all changes are backwards compatible.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<parameter><![CDATA[<minor>]]></parameter>
+						is increased if public API has changed but all changes are
+						backwards compatible.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<parameter><![CDATA[<major>]]></parameter>
+						is increased if changes are not backwards compatible.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			For more information on this version scheme see the
+			<ulink url="https://wiki.eclipse.org/Version_Numbering">Eclipse Version Numbering Wiki</ulink>
+			.
+		</para>
+
+	</section>
+
+
+</section>

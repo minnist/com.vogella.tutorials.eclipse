@@ -1,0 +1,33 @@
+<section id="recipes_wrapper" role="wrapper">
+	<title>Code receipts</title>
+	
+	<section id="recipes_loadimage">
+		<title>Loading images from a plug-in</title>
+		<para>
+			The
+			<code>ImageDescriptor</code>
+			class has a static method to
+			create an
+			<code>ImageDescriptor</code>
+			instance
+			directly from a URL.
+			<code>ImageDescriptor</code>
+			is a light-weight representation of an
+			<code>Image</code>
+			. Via the
+			<code>createImage()</code>
+			you can create the
+			<code>Image</code>
+			instance.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/snippets/loadimage.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+
+</section>

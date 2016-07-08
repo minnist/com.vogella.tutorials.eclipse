@@ -1,0 +1,164 @@
+<section id="osgi_dependencymanagement">
+	<title>API definition of a plug-in</title>
+
+	<indexterm>
+		<primary>OSGi</primary>
+		<secondary>provisional API</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>x-internal</primary>
+	</indexterm>
+	<indexterm>
+		<primary>x-friends</primary>
+	</indexterm>
+
+	<para>
+		In the
+		<filename>MANIFEST.MF</filename>
+		file a plug-in also defines its API via the Export-Package
+		Identifier.
+		All packages which are not explicitly exported
+		are not
+		visible to
+		other
+		plug-ins.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/osgi_api_definition10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Dependency management</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		All these restrictions are enforced via a
+		specific
+		OSGi
+		<code>classloader</code>
+		. Each plug-in has its own classloader. Access to
+		restricted classes
+		is
+		not
+		possible.
+	</para>
+	<para>Unfortunately OSGi can not prevent you from using Java
+		reflection to access these classes. This is because OSGi
+		is
+		based on
+		the Java runtime which does not yet support a modularity layer.
+	</para>
+
+
+
+	<para>
+		Via the
+		<code>x-internal</code>
+		flag the OSGi runtime can mark an exported package as provisional.
+		This allows other plug-ins to consume the
+		corresponding classes, but indicates that these classes
+		are not considered as official API.
+	</para>
+	<para>
+		The following screenshot shows how to set a package as
+		<code>x-internal</code>
+		in the
+		manifest editor.
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/x-internal10.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Setting the x-internal flag</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para> This is how the corresponding manifest file looks like.</para>
+
+	<para>
+		<programlisting language="bourne">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/mani.txt" />
+		</programlisting>
+	</para>
+
+	<para>
+		You can configure how the Eclipse Java editor shows the usage of
+		provisional API. Such an access can be
+		configured
+		to
+		be displayed as, error, warning
+		or if such access should be result in no additional message.
+	</para>
+	<para>
+		The
+		default
+		is to display
+		a warning message. You
+		can adjust
+		this in
+		the
+		Eclipse
+		preferences via
+		the
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Preferences</guisubmenu>
+			<guisubmenu>Java</guisubmenu>
+			<guisubmenu>Compiler</guisubmenu>
+			<guisubmenu>Errors/Warnings</guisubmenu>
+		</menuchoice>
+		preference setting.
+	</para>
+
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/x-internal30.png" />
+			</imageobject>
+			<textobject>
+				<phrase>Settings in Eclipse for warnings for deprecated API usage</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+
+	<para>
+		You can define that a set of plug-ins can access
+		provisional API
+		without a warning or error message. This can be done
+		via the
+		<code>x-friends</code>
+		directive. This flag is added if you add a plug-in to
+		the
+		<guilabel>Package Visibility</guilabel>
+		section on the
+		<guilabel>Runtime</guilabel>
+		tab of the
+		manifest editor.
+	</para>
+
+	<para>
+		<programlisting language="common">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/friends.txt" />
+		</programlisting>
+	</para>
+	<para>
+		The
+		<code>x-friends</code>
+		setting has the same effect as
+		<code>x-internal</code>
+		but all plug-ins mentioned in the x-friends setting can access the
+		package without receiving an error or warning
+		message.
+	</para>
+
+
+</section>

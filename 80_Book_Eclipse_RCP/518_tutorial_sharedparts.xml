@@ -1,0 +1,99 @@
+<chapter id="tutorial_using_placeholder">
+	<title>Exercise: Sharing elements between perspectives</title>
+
+	<section id="tutorial_using_placeholder_target">
+		<title>Target</title>
+		<para>
+			This tutorial demonstrates how you can share parts between
+			perspectives. You created already an perspective in
+			<xref linkend="tutorial_using_perspectives" />
+			, this is reused in this exercise.
+		</para>
+	</section>
+	<section id="tutorial_using_placeholder_sharedpart">
+		<title>Using shared parts between perspectives</title>
+		<para>
+			Using the
+			<wordasword>Placeholder</wordasword>
+			model element you are able to define elements which should be shared
+			between
+			perspectives. In this exercise you define
+			a shared part which
+			is
+			displayed in both perspectives.
+		</para>
+		<para>
+			Add a
+			part
+			as
+			<guilabel>Shared Elements</guilabel>
+			to your application model.
+
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/placeholder02.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Adding placeholders</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+		<para>
+			Add a
+			<guilabel>Placeholder</guilabel>
+			entry to both perspectives into a stack. Point to
+			the
+			<guilabel>Shared Elements</guilabel>
+			part in this placeholder.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/placeholder04.png" scale="35" />
+				</imageobject>
+				<textobject>
+					<phrase>Adding placeholders</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>As result you should have two placeholders pointing to the
+			shared
+			element.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/placeholder10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Adding placeholders to the application model</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			If you switch between your perspectives, this
+			part
+			should be the
+			same.
+		</para>
+		<tip>
+			<para>By using this approach the part displayed in two perspectives
+				is
+				the same instance, i.e. the data in the part is
+				the same. If you
+				define two parts using the same
+				class reference, the
+				Eclipse runtime
+				creates two instances
+				(objects).
+			</para>
+		</tip>
+	</section>
+
+</chapter>

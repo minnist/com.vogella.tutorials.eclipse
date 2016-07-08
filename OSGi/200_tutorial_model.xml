@@ -1,0 +1,280 @@
+<section id="datamodel_plugin" role="wrapper">
+	<title>Exercise: Data model plug-in</title>
+	<section>
+		<title>Target of the exercise</title>
+		<para> In this exercise you create a plug-in for the
+			definition of
+			your
+			data model. You also
+			make this
+			data model available
+			to
+			other plug-ins.
+		</para>
+	</section>
+
+	<section id="services_todo0">
+		<title>Create the plug-in for the data model</title>
+		<para>
+			Create a simple plug-in project (see
+			<xref linkend="simpleplugin" />
+			) called
+			<wordasword>com.example.e4.rcp.todo.model</wordasword>
+			.
+		</para>
+
+		<para>
+			The following screenshot depicts the second page of the plug-in
+			project wizard and its corresponding settings.
+			Press
+			the
+			<guilabel>Finish</guilabel>
+			button on this page
+			to avoid the usage of templates.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_simpleplugin10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Creating a simple plug-in</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+
+	<section id="services_todo1">
+		<title>Create the base class</title>
+		<para>
+			Create the
+			<code>com.example.e4.rcp.todo.model</code>
+			package
+			and the
+			following model class.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/TodoSimple.java" />
+			</programlisting>
+		</para>
+		<note>
+			<para>
+				You see an error for your final id field. This error is solved
+				in the
+				<xref linkend="services_todo_constructor" />
+				section.
+			</para>
+		</note>
+	</section>
+	<section id="services_todo_constructor">
+		<title>Generate constructors</title>
+		<para>
+			Select
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate Constructor using Fields...</guisubmenu>
+			</menuchoice>
+			to generate a constructor using all fields. Use the same approach to
+			create another constructor using only the
+			<parameter>id</parameter>
+			field.
+		</para>
+
+		<warning>
+			<para>
+				Ensure that you have created both constructors, because
+				they are
+				required
+				in the following exercises.
+			</para>
+		</warning>
+	</section>
+
+	<section id="services_todo_gettersetter">
+		<title>Generate getter and setter methods</title>
+		<para>
+			Use the
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate Getter and Setter...</guisubmenu>
+			</menuchoice>
+			menu
+			to create getters and setters for your fields.
+		</para>
+		<note>
+			The
+			<parameter>id</parameter>
+			is final and therefore Eclipse creates only a getter. This is correct
+			and desired.
+		</note>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_model_settergetter10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Getter and setter generation</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="services_todo_gettersetteradjust">
+		<title>Adjust the generated getter and setter methods</title>
+		<para>
+			Adjust the generated getter and setter for the
+			<code>dueDate()</code>
+			field to make defensive copies. The
+			<code>Date</code>
+			class is not immutable and we want to avoid that an instance of
+			<code>Todo</code>
+			can be changed from outside without the corresponding setter.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/getDueDate.java" />
+			</programlisting>
+		</para>
+		<para>
+			The resulting class should look like the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/Todo.java" />
+			</programlisting>
+		</para>
+		<note>
+			<para>
+				Why is the
+				<parameter>id</parameter>
+				field marked as final? We will use this field to generate the
+				<code>equals</code>
+				and
+				<code>hashCode()</code>
+				methods therefore it should not be mutable. Changing a field which
+				is used in the
+				<code>equals</code>
+				and
+				<code>hashCode()</code>
+				methods can create bugs which are hard to identify, i.e., an object
+				is
+				contained in a
+				<code>HashMap</code>
+				but not found.
+			</para>
+		</note>
+	</section>
+
+	<section id="services_todo_tostringhashcode">
+		<title>Generate toString(), hashCode() and equals() methods</title>
+		<para>
+			Use Eclipse to generate a
+			<code>toString()</code>
+			method for the
+			<code>Todo</code>
+			class based on the
+			<parameter>id</parameter>
+			and
+			<parameter>summary</parameter>
+			field.
+			This can be done via the Eclipse menu
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate toString()...</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			Also
+			use Eclipse to generate a
+			<code>hashCode()</code>
+			and
+			<code>equals()</code>
+			method based on the
+			<parameter>id</parameter>
+			field. This can be done via the
+			Eclipse menu
+			<menuchoice>
+				<guimenu>Source</guimenu>
+				<guisubmenu>Generate hashCode() and equals()...</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+
+	</section>
+	<section id="services_todo_additionalmethods">
+		<title>Write a copy() method</title>
+		<para>
+			Add the following
+			<code>copy()</code>
+			method to the class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/Copy.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section>
+		<title>Create a Tag class</title>
+		<para>
+			The following <code>Tag</code> class is used to group <code>Todo</code> objects.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/Tag.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="services_todo1a">
+		<title>Create the interface for the todo service</title>
+		<para>
+			Create the following
+			<code>ITodoService</code>
+			interface.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/datamodel/ITodoService.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="services_todo2">
+		<title>Define the API of the model plug-in</title>
+		<para>
+			Export the
+			<code>com.example.e4.rcp.todo.model</code>
+			package to define it as API.
+			For this
+			open the
+			<code>MANIFEST.MF</code>
+			file and select the
+			<guilabel>Runtime</guilabel>
+			tab. Add
+			<code>com.example.e4.rcp.todo.model</code>
+			to the exported packages.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/osgi_model_exportedapi.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Exported API</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

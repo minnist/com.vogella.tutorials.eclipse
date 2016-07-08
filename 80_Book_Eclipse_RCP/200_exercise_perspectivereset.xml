@@ -1,0 +1,94 @@
+<section id="exercise_prespectiveresetter" role="wrapper">
+	<title>Optional exercise: Saving and restoring a perspective</title>
+	<section id="exercise_prespectiveresetter_target">
+		<title>Target of this exercise</title>
+		<para>
+			In this exercise you learn how to save a certain state of an perspective and restore this state afterwards.
+		</para>
+	</section>
+	<section id="exercise_prespectiveresetter_applicationmodel">
+		<title>Create application model elements</title>
+		<para>
+			We want to provide those actions in the main menu of the application.
+			Therefore we define the necessary commands,
+			handler, and menu
+			contributions in the application model,
+			as depicted in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/perpective_reset_applicationmodel.png" scale="50" />
+				</imageobject>
+				<textobject>
+					<phrase>Application model requirements for resetting the perspective</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Please also make sure to add some parts inside the perspective,
+			which you can move around or close in order to
+			modify the perspective
+			layout,
+			so that the previously saved perspective can be restored afterwards.
+		</para>
+	</section>
+	<section id="exercise_prespectiveresetter_save_implementation">
+		<title>Dynamically creating and saving new perspectives</title>
+		<para>
+			The perspective save handler gets the currently active perspective from the EModelService
+			and clones it in the window
+			model
+			element, which implements MSnippetContainer.
+			As MApplication also implements the MSnippetContainer interface you
+			also may
+			save the snippet
+			application wide,
+			by passing the MApplication to the
+			<code>cloneElement</code>
+			method as second parameter.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/perspectives/SavePerspectiveHandler.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="exercise_prespectiveresetter_restore_implementation">
+		<title>Implement restoring the state of a perspective</title>
+		<para>
+			Implement the following class as handler and create a new menu entry for it in your application model.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/perspectives/RestorePerspectiveHandler.java" />
+			</programlisting>
+		</para>
+		<para>Create a snippet in your application model for the default of a certain perspective. Use the same ID as the
+			perspective you want to be able to reset.
+		</para>
+		<para>The RestorePerspectiveHandler can only be executed, if the current perspective is available as snippet (based on
+			the identical ID).
+			When
+			restoring a perspective
+			the current perspective is removed from the application model,
+			the
+			entries from the snippet are added to the perspective stack and the new perspective is activated.
+		</para>
+	</section>
+
+
+	<section id="exercise_prespectiveresetter_validate">
+		<title>Validating</title>
+		<para>
+			Start your application, invoke the save perspective handler
+			and modify the perspective by moving parts around or
+			closing parts.
+		</para>
+		<para>
+			To make parts closable the close attribute of a part in the application model has to be checked.
+		</para>
+	</section>
+</section>

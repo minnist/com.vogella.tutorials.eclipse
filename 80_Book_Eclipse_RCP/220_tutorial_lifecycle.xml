@@ -1,0 +1,47 @@
+<section id="tutorial_lifecycle" role="wrapper">
+	<title>Exercise: Styling the widgets created by the life cycle class</title>
+	<section id="tutorial_lifecyclestyling_target">
+		<title>Target</title>
+		<para>
+			In this exercise you will ensure that the widget created by the
+			life cycle handler of your application are also styled.
+		</para>
+	</section>
+	<section id="tutorial_lifecycle_style">
+		<title>Implement styling</title>
+
+		<para>
+			Change your
+			<code>Manager</code>
+			class to the following to one of your CSS files for the widgets
+			created in this class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/csslifecycle/Manager.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+
+	<section id="tutorial_lifecycle_style_validate">
+		<title>Validating</title>
+		<para>
+			Start your application and ensure the splash screen is styled
+			according to your settings.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/splashstyled10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Styled splash screen</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

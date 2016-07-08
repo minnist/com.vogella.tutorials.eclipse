@@ -1,0 +1,258 @@
+<chapter id="tutorial_e4services_usage">
+	<title>Exercise: Define and use an OSGi service</title>
+	<section id="tutorial_e4services_usagetarget">
+		<title>Target of this exercise</title>
+
+		<para>
+			In this exercise you use the
+			OSGi declarative services functionality to
+			provide a service. The provided services is for
+			the
+			<code>ITodoService</code>
+			interface and is implemented by the existing
+			<code>MyTodoServiceImpl</code>
+			class.
+		</para>
+
+	</section>
+
+	<section id="services_todo_usagedependency">
+		<title>Update the plug-in dependencies</title>
+		<para>
+			In the
+			<filename>MANIFEST.MF</filename>
+			file of your
+			<code>com.example.e4.rcp.todo</code>
+			plug-in
+			define a dependency to:
+
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>com.example.e4.rcp.todo.model</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		
+			<para>
+			In the
+			<filename>MANIFEST.MF</filename>
+			file of your
+			<code>com.example.e4.rcp.todo.services</code>
+			plug-in
+			define a dependency to:
+
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>org.eclipse.osgi.services</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		
+	</section>
+
+
+	<section id="tutorial_e4services_enable_ds_annotations">
+		<title>Enable annotation processing and plug-in activation</title>
+		<para>
+			Ensure that OSGi services can be defined via annotations in the class via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>DS annotations</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/activate_pde_ds_annotations.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Activate DS annotation processing
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="tutorial_e4services_usage_defineservice">
+		<title>Define service</title>
+
+		<para>
+			Add the
+			<code>@Component</code>
+			annotation to your class. Eclipse should use this annotation to generate
+			the necessary files to make the
+			<code>MyTodoServiceImpl</code>
+			class
+			available as OSGi services for the
+			<code>ITodoService.</code>
+			interface.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples//osgi/TodoServiceImplOsgiDs.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+
+	<section id="tutorial_e4services_usage_serviceinjection">
+		<title>Get the ITodoService injected</title>
+		<para>
+			Change your
+			<code>TodoOverviewPart</code>
+			class
+			so that the
+			<code>ITodoService</code>
+			service implementation
+			is
+			injected
+			into it by using your
+			<code>@PostConstruct</code>
+			method. Print the number of todos on the console as demonstrated in
+			the following example.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/PostConstruct.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="services_todo_test">
+		<title>Validate your implementation</title>
+		<para>
+			Start your application via the product and ensure that you see
+			the
+			number of tasks printed to the console. See
+			next section for potentials areas of problem in case this does not work.
+		</para>
+	</section>
+
+
+	<section id="tutorial_e4services_usage6">
+		<title>Error analysis in case the injection did not work</title>
+		<para>
+			Ensure you have saved everything (ensure that the Save All
+			button is
+			inactive).
+		</para>
+		<para>
+			If you get compile errors trying to access your classes, ensure
+			that and that you have exported the
+			required
+			packages as API.
+		</para>
+		<para>
+			If you get an error during start up, ensure that
+			you have
+			added
+			the two new plug-ins to your feature
+			you have used
+			the product to start your
+			application
+		</para>
+		<para>
+			If the
+			<code>ITodoService</code>
+			object cannot be injected ensure that the
+			<guilabel>Activate this plug-in when one of its classes is loaded
+			</guilabel>
+			flag for the plug-in has been set in the
+			<filename>MANIFEST.MF</filename>
+			file of your service plug-in.
+		</para>
+		<para>
+			Also ensure that the
+			<code>com.example.e4.rcp.todo.services</code>
+			and
+			<code>com.example.e4.rcp.todo.model</code>
+			plug-ins are part of your feature project and that you started the
+			application via the product file.
+		</para>
+		<para>
+			Based on your annotations Eclipse creates the necessary OSGi DS files at build time. Review the generated files.
+			The
+			generate component xml
+			should look like the following example. This file should also be automatically included into
+			your
+			<filename>build.properties</filename>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tutorialservice/component.xml" />
+			</programlisting>
+		</para>
+		<para>
+			Eclipse also adds a reference to the
+			<filename>component.xml</filename>
+			file
+			in the
+			<filename>MANIFEST.MF</filename>
+			file under the Service-Component reference.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/servicereference.txt" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="tutorial_e4services_usagereview">
+		<title>Reflect on your current service usage design</title>
+		<para>
+			With this setup you have completely hidden the concrete
+			implementation of the service
+			from the usage. This design
+			is depicted
+			in the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/tutorial_osgidependencies10.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Implicit dependencies with OSGi service</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			The current service
+			implementation does not persist
+			the data, as it is
+			just a test
+			service. You could replace it
+			with
+			another
+			service implementation
+			without changing
+			your source code or the dependencies
+			in
+			the consuming plug-ins. The
+			only change required to use another service implementation in your
+			application is to
+			exchange
+			the
+			corresponding service
+			plug-in in your
+			product configuration
+			file
+			(via your
+			feature).
+		</para>
+	</section>
+
+</chapter>

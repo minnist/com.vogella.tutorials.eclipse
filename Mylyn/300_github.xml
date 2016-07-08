@@ -1,0 +1,82 @@
+<section id="githubconnector" role="wrapper">
+	<title>Using the GitHub connector</title>
+	<section id="githubconnector_overview">
+		<title>GitHub connector</title>
+		<indexterm>
+			<primary>Mylyn</primary>
+			<secondary>GitHub integration</secondary>
+		</indexterm>
+		<para>The Mylyn GitHub connector allows integrating GitHub issues,
+			Pull requests and Gists.
+		</para>
+	</section>
+	<section id="githubconnector_issues">
+		<title>GitHub issue integration</title>
+		<para>
+			To integrate the GitHub issues you can use the
+			<wordasword>Task List</wordasword>
+			view and define a new repository and a new query as described via the
+			following screenshots.
+		</para>
+		<para>You first need to define the GitHub repository you want to use.
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githubissue10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a GitHub repository - Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githubissue20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a GitHub repository - Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githubissue30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a GitHub repository - Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Afterwards you can directly create a new query.</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githubissue40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a GitHub repository - Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/githubissue50.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a GitHub repository - Part 1</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+
+	</section>
+</section>

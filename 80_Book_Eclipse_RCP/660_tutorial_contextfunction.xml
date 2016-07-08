@@ -1,0 +1,289 @@
+<chapter id="tutorial_contextfunction">
+	<title>Exercise: Create a context function</title>
+	<section id="tutorial_contextfunction_target">
+		<title>Target</title>
+		<para>
+			OSGi services are created by the OSGi runtime and the OSGi runtime
+			does not support the
+			<code>@Inject</code>
+			annotation. In addition OSGi services do not have direct access to
+			the
+			<code>IEclipseContext</code>
+			hierarchy.
+		</para>
+		<para>
+			In this exercise you create a context function via OSGi declarative services using OSGi DS annotations. This allows
+			you to use dependency
+			injection to create
+			an instance of the
+			<code>ITodoService</code>
+			service and to persists this instance in the Eclipse context.
+			During the creation the event service is injected into
+			your service instance; this allows you to send
+			events from this service.
+		</para>
+
+	</section>
+	<section id="tutorial_contextfunction1">
+		<title>Add dependencies to the service plug-in</title>
+		<para>
+			Ensure that the following framework dependencies are present in your
+			<code>com.example.e4.rcp.todo.services</code>
+			plug-in. Some of them are already part of your
+			manifest
+			file but the list is complete so that you can use this as a
+			reference
+			for other implementations.
+			<itemizedlist>
+				<listitem>
+					<para>org.eclipse.core.runtime</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.core.services</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.core.contexts</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.e4.core.di</para>
+				</listitem>
+
+				<listitem>
+					<para>org.eclipse.e4.ui.model.workbench</para>
+				</listitem>
+				<listitem>
+					<para>org.eclipse.osgi.services</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			For this exercise the service plug-in also needs to import the following packages (or plug-ins):
+			<itemizedlist>
+				<listitem>
+					<para>com.example.e4.rcp.todo.model</para>
+				</listitem>
+				<listitem>
+					<para>com.example.e4.rcp.todo.events</para>
+				</listitem>
+
+			</itemizedlist>
+		</para>
+
+
+		<para>
+			The resulting
+			<filename>MANIFEST.MF</filename>
+			file
+			should look like the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/contextfunction02.png" />
+				</imageobject>
+				<textobject>
+					<phrase>Dependencies for the Context Function</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+	<section id="tutorial_contextfunction2">
+		<title>Create a class for the context function</title>
+		<para>
+			Create the following new class in your
+			<code>*.service</code>
+			plug-in.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/contextfunction/TodoServiceContextFunction.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="tutorial_contextfunction3_enable_ds_annotations">
+		<title>Ensure annotation processing and plug-in activation is active</title>
+		<para>
+			Ensure that OSGi services can be defined via annotations in the class via
+			<menuchoice>
+				<guimenu>Window</guimenu>
+				<guisubmenu>Preferences</guisubmenu>
+				<guisubmenu>Plug-in Development</guisubmenu>
+				<guisubmenu>DS annotations</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/activate_pde_ds_annotations.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Activate DS annotation processing
+					</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+	</section>
+
+
+	<section id="tutorial_contextfunction4">
+		<title>Deactivate your ITodoService OSGi service</title>
+		<para>
+			Deactivate your OSGi service for the
+			<code>ITodoService</code>
+			which you have created in
+			<xref linkend="tutorial_e4services_usage" />
+			. You can do this, by
+			To remove this service, deleting the
+			annotation from the
+			<code>MyTodoServiceImpl</code>
+			.
+		</para>
+
+		<note>
+			<para>
+				You could leave your OSGi service for the
+				<code>ITodoService</code>
+				active. Eclipse evaluates
+				context
+				functions
+				before checking for
+				other OSGi
+				services. But it is good
+				practice to
+				remove
+				things which
+				are not used anymore.
+			</para>
+		</note>
+
+	</section>
+	<section id="tutorial_contextfunction5">
+		<title>Notifications from the ITodoService</title>
+		<para>
+			Change the
+			<code>MyTodoServiceImpl</code>
+			class to get the
+			<code>IEventBroker</code>
+			injected and to send out events in case of changes in the data model.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/contextfunction/MyTodoServiceImpl.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="tutorial_contextfunction6">
+		<title>Clean-up your user interface code</title>
+
+		<para>
+			In the previous exercise
+			you send out
+			events directly from your
+			<code>NewTodoHandler</code>
+			. This is considered bad practice as the user interface would be
+			responsible for sending out updates for data model
+			changes.
+		</para>
+		<para>
+			Now that you move this logic to the implementation of the
+			<code>ITodoService</code>
+			you can remove this code.
+			Thus remove all event notification calls
+			from
+			your plug-in.
+			The following code shows the new
+			<code>NewTodoHandler</code>
+			handler implementation.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/contextfunction/NewTodoHandler.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="tutorial_contextfunction7">
+		<title>Validating</title>
+		<para>
+			Validate that the user interface still receives all events for model
+			changes. For
+			example, does the table in the
+			<code>TodoOverviewPart</code>
+			class
+			still update when a new
+			<code>Todo</code>
+			is created by the wizard?
+		</para>
+		<para>
+			If you delete a
+			<code>Todo</code>
+			object via your menu, this should also update the table.
+		</para>
+	</section>
+
+	<section id="tutorial_contextfunction4a">
+		<title>Error analysis in case something does not work</title>
+		<para>
+			The generated component xml file
+			file should look similar to the following (except the additional
+			whitespace).
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunction/service.xml" />
+			</programlisting>
+		</para>
+
+		<para>Every service defined by OSGi declarative services must have a
+			unique name.
+		</para>
+		<para>Start your application. If you see the error that your have
+			duplicate names, change the name of the new
+			service
+			to
+			avoid a name
+			collision with
+			your
+			existing OSGi service.
+		</para>
+
+		<para>
+			If the service still fails ensure that the service property is
+			correctly entered. See
+			<xref linkend="tutorial_contextfunction_servicekey" />
+			for details.
+		</para>
+
+	</section>
+	<section id="tutorial_contextfunction_review">
+		<title>Review implementation</title>
+		<para>This implementation is better compared to the event notification
+			via
+			the user interface code. It places the
+			responsibility of sending
+			out the relevant
+			events
+			into the corresponding service.
+		</para>
+		<para>The developer needs only to register for the
+			correct events to
+			update the relevant user interface controls.
+		</para>
+
+
+	</section>
+</chapter>
+
+

@@ -1,0 +1,74 @@
+<chapter id="exercise_customselectionservicepre">
+	<title>Optional exercise: Using the selection service</title>
+	<section id="exercise_customselectionservice1">
+		<title>Create project and use the Eclipse selection service</title>
+		<note>
+			<para>This exercise is optional.</para>
+		</note>
+		<para>
+			Create a new Eclipse 4 RCP application using the wizard and
+			ensure that the
+			sample content is created.
+		</para>
+		<para>
+			Add another part to your application pointing to the
+			<code>ListenerPart</code>
+			class, which should look similar to the following listing.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/replaceselectionservice/ListenerPartFirst.java" />
+			</programlisting>
+		</para>
+		<para>
+			Adjust your
+			<code>SamplePart</code>
+			to send out the selection.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/replaceselectionservice/SamplePartFirst.java" />
+			</programlisting>
+		</para>
+		<para>Start your application and ensure the text entered in the first
+			part is propagated to the second part.
+		</para>
+	</section>
+	<section id="exercise_customselectionservice2">
+		<title>Understand Eclipse selection service</title>
+		<para>The Eclipse selection service sets the selection for the current
+			window. Verify that by adding a new perspective your
+			application.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/CustomSelectionService_twoPerspectives10.png"
+						scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Two perspectives</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>Set the selection and switch between these perspectives with
+			following handler.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text"
+					href="./examples/replaceselectionservice/SwitchPerspectiveHandler.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			Verify that the selection in both parts based on
+			<code>ListenerPart</code>
+			is the same.
+		</para>
+
+	</section>
+</chapter>

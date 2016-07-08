@@ -1,0 +1,68 @@
+<chapter>
+	<title>Optional exercise: Implementing a tree to view the todos grouped by tags</title>
+	<section>
+		<title>Target of this exercise</title>
+		<para>
+			In this exercise you create a part with displays a tree with the todo items structured by there tags.
+		</para>
+	</section>
+	<section>
+		<title>Add dependencies</title>
+		<para>
+			Ensure that 
+			<code>org.eclipse.jface</code>
+			and
+			<code>org.eclipse.e4.ui.dialogs</code>
+			plug-in are available as dependency in the
+			<code>com.example.e4.rcp.todo</code>
+			plug-in.  You might have added these dependencies already in another exercise.
+		</para>
+	</section>
+	<section>
+		<title>Create part implementation</title>
+		<para>
+			Create the following part implementation with the
+			<code>label</code>
+			or
+			<code>summary</code>
+			and
+			<code>description</code>
+			fields as tree
+			columns.
+			This part should also have a "Load Data" button to load the data into the
+			viewer.
+		</para>
+
+		<para>You can use the following example code as base for this
+			exercise.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/viewer/TagOverviewPart.java" />
+			</programlisting>
+		</para>
+
+
+
+		<para>The result should look similar to the following screenshot.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/filteredtree_tutorial.png" scale="40" />
+				</imageobject>
+				<textobject>
+					<phrase>Result Part after the implementation of the JFace Table</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<tip>
+			<para>The "Load Data" button is later used, once you implement the
+				possibility to delete data.
+			</para>
+		</tip>
+	</section>
+
+
+</chapter>

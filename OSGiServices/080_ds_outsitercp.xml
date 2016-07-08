@@ -1,0 +1,31 @@
+<section id="declarativeservices_startlevel">
+	<title>Setting the start level for declarative services</title>
+	<para>
+		If you use OSGi DS services outside Eclipse RCP applications,
+		you
+		need to ensure that the
+		<code>org.eclipse.equinox.ds</code>
+		plug-ins is started before any application
+		plug-in
+		which
+		wants to consume a service.
+	</para>
+	<para>
+		You can ensure this in your
+		launch
+		configuration by setting the
+		<guilabel>auto-start</guilabel>
+		field to true and the start level lower than 4 (4 is the default value) for the org.eclipse.equinox.ds plug-in
+	</para>
+
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/osgids_startlevel.png" scale="30" />
+			</imageobject>
+			<textobject>
+				<phrase>Defining the OSGi startlevel for ds</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

@@ -1,0 +1,94 @@
+<section id="dataservice_plugin_usage">
+	<title>Exercise: Create service bundle</title>
+	<section id="services_todo4">
+		<title>Create a factory to access your service implementation</title>
+		<para>
+			In
+			<xref linkend="dataservice_plugin" />
+			you create two plug-ins. To provide the service implementation to consumers the best solution is to use
+			<ulink url="http://www.vogella.com/tutorials/OSGiServices/article.html">OSGi services</ulink>
+			but to keep this description, simple we use a factory in this exercise.
+		</para>
+		<para>
+			Create a new class called
+			<wordasword>TodoServiceFactory</wordasword>
+			in the
+			<code>com.example.e4.rcp.todo.services</code>
+			package. For this you might need the following tip.
+		</para>
+
+		<tip>
+			<para>
+				In its default configuration the Eclipse IDE hides parent
+				packages if they don't contain any classes. During the
+				specification
+				of your class you
+				can
+				define the correct package. This
+				is depicted in
+				the following
+				screenshot.
+			</para>
+
+			<para>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="images/tutorial_servicepackage10.png" />
+					</imageobject>
+					<textobject>
+						<phrase>Specify the package for the creation of a class</phrase>
+					</textobject>
+				</mediaobject>
+			</para>
+		</tip>
+
+		<para>
+			The class provides access to your
+			<code>ITodoService</code>
+			implementation via a static method. It can be
+			considered to be a
+			<wordasword>factory</wordasword>
+			for the
+			<code>ITodoService</code>
+			interface.
+			A factory hides the creation of the concrete
+			instance of
+			a
+			certain interface.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/server/TodoServiceFactory.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="osgi_services_todo_exportpackage">
+		<title>Export the package in the service plug-in</title>
+
+		<para>
+			Export the
+			<code>com.example.e4.rcp.todo.services</code>
+			package via the
+			<code>MANIFEST.MF</code>
+			file on the
+			<guilabel>Runtime</guilabel>
+			tab, so that it is available for other
+			plug-ins.
+		</para>
+		<note>
+			<para>Please note that the
+				Eclipse tooling does not support the export
+				of empty packages. You
+				have
+				to create at
+				least one
+				class in the
+				package
+				before you are able
+				to
+				export it.
+			</para>
+		</note>
+	</section>
+</section>

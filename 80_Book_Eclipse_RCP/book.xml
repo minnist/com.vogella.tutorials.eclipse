@@ -1,0 +1,1155 @@
+<?xml version="1.0"?>
+<book>
+	<bookinfo>
+		<title>Eclipse Rich Client Platform</title>
+		<subtitle>The complete guide to Eclipse application development
+		</subtitle>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2007</year>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<year>2015</year>
+			<year>2016</year>
+			<holder>Lars Vogel</holder>
+		</copyright>
+		<pubdate>10.03.2016</pubdate>
+
+		<releaseinfo>Third edition</releaseinfo>
+		<mediaobject role="cover">
+			<imageobject id="cover-image">
+				<imagedata fileref="images/cover.png" align="center" />
+			</imageobject>
+		</mediaobject>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.xml" />
+
+	</bookinfo>
+
+	<!-- <dedication> <para>For Jennifer, Kiran, Liam</para> </dedication> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" 
+		href="./004_foreword.xml" /> <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./006_preface.xml" /> -->
+
+
+	<part>
+		<title>The concepts behind Eclipse and Eclipse based applications</title>
+		<chapter>
+			<title>Introduction to the Eclipse project</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlatformDevelopment/011_foundation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/010_overview.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Eclipse plug-ins and applications</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/010_overview.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/010_overview.xml" />
+		</chapter>
+		<chapter>
+			<title>Architecture of Eclipse</title>
+			<para>
+				The
+				following chapter gives an overview of the Eclipse architecture,
+				explains
+				the term
+				<wordasword>plug-ins</wordasword>
+				and what extensions and extension
+				points are.
+			</para>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/020_architecture.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Using a target platform for development</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/012_definition.xml" />
+		</chapter>
+
+	</part>
+	<part>
+		<title>Setting up an Eclipse RCP development environment</title>
+		<chapter id="javainstallation">
+			<title>Install Java for Eclipse RCP development</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.xml" />
+		</chapter>
+
+		<chapter id="eclipseskdinstallationforrcp">
+			<title>Install Eclipse IDE for RCP development</title>
+			<indexterm>
+				<primary>Installation</primary>
+			</indexterm>
+			<para>The following description explains
+				how to install the Eclipse
+				IDE and the required tools to develop Eclipse RCP
+				applications.
+			</para>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/040_download_eclipsesdk.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/020_installation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/022_gettingstarted.xml" />
+
+
+
+		</chapter>
+		<chapter>
+			<title>Install the e4 tools</title>
+			<section>
+				<title>Requirements</title>
+				<para>
+					To install the tools required for Eclipse RCP development you
+					need
+					to know how to use the Eclipse update manager.
+					Open
+					<menuchoice>
+						<guimenu>Help</guimenu>
+						<guisubmenu>Install new software...</guisubmenu>
+					</menuchoice>
+					for this.
+				</para>
+			</section>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/042_tutorial_installation_e4tools.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Enable Java access to all plug-ins</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/032_addtosearch.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Defining a target platform</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseTargetPlatform/020_tutorial_setup.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>Creating and exporting Eclipse applications</title>
+		<chapter>
+			<title>Product configuration file</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/010_product.xml" />
+		</chapter>
+
+		<chapter>
+			<title>The usage of run configurations</title>
+			<para>
+				This chapter describes the usage of the
+				<wordasword>run configuration</wordasword>
+				and highlights
+				typical
+				problems with them.
+			</para>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/090_runconfiguration.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/091_runconfiguration_product.xml" />
+		</chapter>
+		<chapter>
+			<title>Common launch problems</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/092_runconfiguration_problems.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Features and feature projects</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/010_feature_intro.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/020_feature_create.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/030_products_features.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFeatureProject/040_feature_advantages.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Deployment of your RCP application</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/020_deployment.xml" />
+			<section id="deployproduct_targetplatform">
+				<title>More about the target platform</title>
+				<para>
+					See
+					<xref linkend="parttargetplatform" />
+					for more information about the target platform configuration.
+				</para>
+			</section>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/022_deployment.xml" />
+		</chapter>
+		<chapter id="exportproblems">
+			<title>Common product export problems</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/080_problems_export.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Create and run an RCP application</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/044_tutorial_first.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/140_exercise_feature.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Export your product</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/100_exercise_exportproduct.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>Application model</title>
+		<chapter>
+			<title>Eclipse application model</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/120_applicationmodel.xml" />
+
+		</chapter>
+		<chapter>
+			<title>Model objects and the runtime application model</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/140_modelelements.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/122_uiconcepts.xml" />
+		</chapter>
+
+		<chapter id="partlivemodeleditor">
+			<title>Using the model spy</title>
+
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/010_overview.xml" />
+			<section>
+				<title>Installation requirements</title>
+			</section>
+			<para>
+				The usage of the model spy requires the installation of the
+				Eclipse 4
+				- Core Tools as described in
+				<xref linkend="tutorial_installation_e4tools" />
+				.
+			</para>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/012_ide.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Create an Eclipse plug-in</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/210_tutorial_plugin.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: From plug-in to Eclipse RCP</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/220_tutorial_e4_application.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Configure the deletion of persisted model data
+			</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/239_tutorial_clearpersistence.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Modeling a user interface</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/240_tutorial_modelelements.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Enter the dependencies</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/242_tutorial_e4_dependencies.xml" />
+			<section>
+				<title>More on dependencies</title>
+				<para>
+					The exact details of applying this
+					modular approach is covered in
+					<xref linkend="osgipart" />
+					.
+				</para>
+			</section>
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Connect Java classes with the parts</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/244_tutorial_modelelemenentjava.xml" />
+		</chapter>
+
+
+		<chapter>
+			<title>Optional Exercise: Using the model spy</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/100_exercise.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>Using dependency injection</title>
+
+		<chapter id="dependencyinjectionchapter">
+			<title>The concept of dependency injection</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/010_dependencyinjection.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/011_annotations.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/012_dependencyinjection_types.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/014_dependencyinjection_order.xml" />
+		</chapter>
+
+		<chapter id="dependencyinjectione4">
+			<title>Dependency injection in Eclipse</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/420_dependencyinjection.xml" />
+		</chapter>
+
+		<chapter>
+			<title>The Eclipse context</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/422_context.xml" />
+		</chapter>
+		<chapter>
+			<title>Object selection during dependency injection</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/424_context_objects.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Using annotations to define behavior</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/430_programmingmodel.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Using @PostConstruct</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/444_tutorial_programmingmodel.xml" />
+		</chapter>
+	</part>
+
+
+
+
+	<part id="osgipart">
+		<title>Eclipse modularity based on OSGi</title>
+		<chapter>
+			<title>Software modularity with OSGi</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/010_osgi_introduction.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseCodeAccess/034_findplugin.xml" />
+
+		</chapter>
+
+		<chapter>
+			<title>OSGi metadata</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/012_osgi_bundles.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/016_osgi_dependencymanagement.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/018_osgi_apidefinition.xml" />
+
+		</chapter>
+		<chapter>
+			<title>Using the OSGi console</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/020_osgi_console.xml" />
+		</chapter>
+
+		<chapter>
+			<title>OSGi fragments and fragment projects</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFragmentProject/content/020_fragment_intro.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseFragmentProject/content/040_fragment_usage.xml" />
+		</chapter>
+
+		<chapter>
+			<title>OSGi service introduction</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/070_service.xml" />
+
+		</chapter>
+
+		<chapter>
+			<title>Defining OSGi services</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/076_ds.xml" />
+		</chapter>
+		<chapter>
+			<title>Eclipse RCP and OSGi services</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/081_eclipse4_osgiservices.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="121_eclipse4_osgids_context.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Create data model plug-in</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/200_tutorial_model.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Create service plug-in</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/210_tutorial_service.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_tutorial_ownservice.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="230_tutorial_imageloaderservice.xml" />
+
+
+	</part>
+
+	<part>
+
+		<title>User interface development with SWT and JFace</title>
+		<chapter>
+			<title>Standard Widget Toolkit</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/010_swtintro.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/011_relationship.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/013_install.xml" />
+		</chapter>
+		<chapter>
+			<title>Using SWT widgets</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/014_widgets.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/016_eventlistener.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Using layout managers in SWT</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/036_layout.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/039_tab.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/038_layout_tutorial.xml" />
+		</chapter>
+
+		<chapter>
+			<title>SWT widget examples and controls</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/280_swt_snippets.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/300_nebula_opal.xml" />
+		</chapter>
+
+		<chapter>
+			<title>SWT Designer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder//010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder//020_installation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder/030_usage.xml" />
+		</chapter>
+
+
+		<chapter>
+			<title>Exercise: Getting started with SWT Designer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWindowBuilder/100_tutorial_windowbuilder.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="105_tutorial_swt_todooverviewpart.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="106_tutorial_swt_tododetailspart.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="446_tutorial_todomethod.xml" />
+		<chapter>
+			<title>Exercise: Using the SWT Browser widget</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/250_tutorial_playgroundview.xml" />
+		</chapter>
+
+		<chapter>
+			<title>JFace</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/030_resourcemanager.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/100_controldecorations.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/120_jfacefieldassists.xml" />
+
+		</chapter>
+		<chapter>
+			<title>The JFace viewer framework</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/200_viewer.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/220_comboviewer.xml" />
+		</chapter>
+		<chapter>
+			<title>Implementing JFace tables</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTable/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTableAdvanced/content/010_overview.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Implementing JFace trees</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/010_overview.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="160_tutorial_jfaceviewer.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="164_tutorial_jfaceviewer_more.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="165_tutorial_jfacetreeviewer.xml" />
+
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="168_tutorial_comboviewer.xml" />
+
+
+		<chapter id="jfacefilebrowser">
+			<title>Optional exercises: Using tree viewer to build a file explorer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/060_filebrowser_exercise.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/065_filebrowser_columns_exercise.xml" />
+		</chapter>
+
+	</part>
+	<part id="part_commands">
+		<title>Defining menus, toolbars and key bindings</title>
+
+		<chapter>
+			<title>Menu and toolbar application objects</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/450_commands.xml" />
+			<section>
+				<title>Learn about the event system</title>
+				<para>
+					See
+					<xref linkend="part_eventbroker" />
+					to learn more about sending out events in your Eclipse application.
+				</para>
+			</section>
+
+		</chapter>
+
+		<chapter>
+			<title>More on menus and toolbars</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/461_menu_advanced.xml" />
+			<section>
+				<title>Creating dynamic menu entries</title>
+				<para>
+					See
+					<xref linkend="tutorial_dynamicmenus" />
+					for information about creating and changing application model
+					elements dynamically.
+				</para>
+			</section>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/462_toolbar_advanced.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/463_more_commands.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Key bindings</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/500_keybindings.xml" />
+
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Adding a menu and menu entries</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/480_tutorial_commands_menu.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="420_tutorial_contextmenu.xml" />
+
+		<chapter>
+			<title>Exercise: Adding a toolbar</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/484_tutorial_commands_toolbar.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Define key bindings</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="466_tutorial_keybindings.xml" />
+		</chapter>
+	</part>
+
+
+
+	<part>
+		<title>Dialogs and wizards</title>
+		<chapter>
+			<title>Dialogs</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/020_swtdialogs.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/030_jfacedialogs.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Wizards</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseWizards/content/010_overview.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Dialogs</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="239_tutorial_dialog.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDialogs/content/220_tutorial_passworddialog.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="240_tutorial_wizard.xml" />
+	</part>
+
+	<part id="databindingpart">
+		<title>Using data binding</title>
+		<chapter>
+			<title>Data binding with JFace</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/010_introduction.xml" />
+		</chapter>
+		<chapter>
+			<title>Create bindings</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/020_binding.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Updates, convertors and validators</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/040_validatorsconvertors.xml" />
+		</chapter>
+
+		<chapter>
+			<title>More on bindings</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/060_moreonbinding.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Data binding for JFace viewer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/090_jfaceviewers.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_tutorial_databinding.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="320_tutorial_databindingadvanced.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="325_tutorial_databindingtreeviewer.xml" />
+
+		<chapter>
+			<title>Extending data binding with custom observables</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/094_custom_observables.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/096_java8datetime.xml" />
+		</chapter>
+
+
+	</part>
+
+	<part>
+		<title>Using Eclipse platform services</title>
+
+		<chapter>
+			<title>Eclipse platform services</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/010_overview.xml" />
+
+			<section id="platformservice_implementation_references">
+				<title>How are Eclipse services implemented?</title>
+				<para>
+					How context functions are implemented as OSGI services is described
+					in
+					<xref linkend="contextfunctionschapter" />
+					. The dedicated section
+					<xref linkend="bestpractices" />
+					summarize the different approaches for communicating inside your
+					application.
+				</para>
+			</section>
+		</chapter>
+		<chapter>
+			<title>Selection service</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/100_selectionservice.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Model service</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/200_modelservices.xml" />
+		</chapter>
+		<chapter>
+			<title>Modifying the application model at runtime</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/220_model_modificationapi.xml" />
+		</chapter>
+		<chapter>
+			<title>Example for application model modifications</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/240_model_modificationapi_examples.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="504_tutorial_dynamicmenus.xml" />
+
+		<chapter>
+			<title>Using the part service</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/300_partservices.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Implementing editors</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/310_partservicespersists.xml" />
+
+			<section id="chapter_editorsexamples">
+				<title>Code examples for editor implementations</title>
+				<para>
+					How to implement editor like behavior in a part is demonstrated in
+					<xref linkend="tutorial_editorpartservice" />
+					. An example implementation of multiple editors can be found in
+					exercise
+					<xref linkend="tutorial_multipleeditors" />
+					.
+				</para>
+			</section>
+		</chapter>
+
+		<chapter>
+			<title>Command and handler service</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Services/content/400_commandservice.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="500_tutorial_selectionservice_propergate.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="501_tutorial_selectionservice_delete.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="506_tutorial_editor.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="510_tutorial_partservice.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="516_tutorial_perspectives.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="518_tutorial_sharedparts.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/260_tutorial_partdescriptor.xml" />
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/520_tutorial_editors.xml" />
+
+		<chapter>
+			<title>Optional exercise: Saving and restoring a perspective</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_exercise_perspectivereset.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/520_tutorial_handlerservice.xml" />
+
+
+	</part>
+
+	<part>
+		<title>Asynchronous processing</title>
+		<chapter>
+			<title>Threading in Eclipse</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaConcurrency/010_concurrency.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJobs/content/010_overview.xml" />
+
+
+		</chapter>
+		<chapter>
+			<title>Progress reporting</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJobs/content/020_progress.xml" />
+		</chapter>
+
+
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="214_tutorial_jobs.xml" />
+	</part>
+
+	<part id="part_eventbroker">
+		<title>Event service for message communication</title>
+
+		<chapter>
+			<title>Eclipse event notifications</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/040_usage.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/060_evaluation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/100_async.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Eclipse framework events</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/022_examplepartactivation.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/030_event_information.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelEvents/040_more_convenience_methods.xml" />
+		</chapter>
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="600_tutorial_eventadmin.xml" />
+
+	</part>
+
+
+
+	<part>
+		<title>Extending and modifying the Eclipse context</title>
+
+		<chapter id="chaptereclipsecontext">
+			<title>Accessing and extending the Eclipse context</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextUsage/content/020_extendcontext.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Using dependency injection for your Java objects</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextUsage/content/040_customobjects.xml" />
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="479_tutorial_contextinjection.xml" />
+
+	</part>
+
+	<part id="contextfunctionschapter">
+		<title>Eclipse context functions</title>
+		<chapter>
+			<title>Context functions</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextFunctions/010_overview.xml" />
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="660_tutorial_contextfunction.xml" />
+	</part>
+
+	<part>
+		<title>Model add-ons and supplementary application model data</title>
+		<chapter>
+			<title>Using model add-ons</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelAddons/010_addons.xml" />
+		</chapter>
+
+		<chapter id="exercise_modeladdonclose">
+			<title>Exercise: Model add-on to change the close behavior</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./900_customclosehandleraddon_firstpart.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Supplementary model data</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/100_supplementary.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/200_e4_tags.xml" />
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./920_toolbarsperspectivespecific.xml" />
+		<chapter>
+			<title>Exercise: Using model tags and persisted data</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ApplicationModelData/400_exercise_supplementary.xml" />
+		</chapter>
+
+	</part>
+
+
+
+	<part>
+		<title>Application model modularity</title>
+		<chapter>
+			<title>Contributing to the application model</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/010_modularity.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/020_approach.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/030_merging.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/032_fragmentextensions.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/040_xpaths.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Contributing via model fragments</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/100_tutorial_fragments.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Implementing a model processor</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Modularity/200_tutorial_processors.xml" />
+		</chapter>
+
+	</part>
+
+	<part>
+		<title>Eclipse application life cycle</title>
+
+		<chapter>
+			<title>Registering for the application life cycle</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LifeCycle/content/010_overview.xml" />
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="640_tutorial_lifecycle.xml" />
+	</part>
+
+	<part>
+		<title>Handling preferences</title>
+		<chapter>
+			<title>Eclipse preference basics</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/010_overview.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/200_plugin_customization_ini.xml" />
+		</chapter>
+		<chapter>
+			<title>Preferences and dependency injection</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/020_eclipse4.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePreferences/040_persiststate.xml" />
+
+		</chapter>
+
+
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="310_tutorial_preferences.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="313_tutorial_preferencesadvanced.xml" />
+	</part>
+
+
+	<part>
+		<title>Internationalization</title>
+		<chapter>
+			<title>Internationalization and localization in Eclipse</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/010_overview.xml" />
+
+		</chapter>
+		<chapter>
+			<title>Translating the application model and plugin.xml</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/012_osgi.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/020_model.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/030_plugin.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Source code translation with the Eclipse translation service
+			</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/100_eclipse4_i18n.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Source code translation with NLS support</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/040_source.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/044_translatingjfaceswt.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exporting and common problems with translations</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/050_export.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/content/060_problems_i18n.xml" />
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="270_tutorial_i22n.xml" />
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="280_tutorial_i22nsourcecode.xml" />
+	</part>
+
+	<part>
+		<title>Using custom annotations for dependency injection</title>
+		<chapter>
+			<title>Usage of custom annotations for dependency injection</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/012_restrictions.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/020_usage.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Defining custom annotations</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4OwnAnnotations/030_tutorial_ownannoations.xml" />
+		</chapter>
+	</part>
+
+
+	<part id="osgi_javalibraries">
+		<title>Using Java libraries in Eclipse applications</title>
+		<chapter>
+			<title>Defining and using libraries in Java</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaLibraries/010_overview.xml" />
+		</chapter>
+		<chapter>
+			<title>Using JAR files in Eclipse applications</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJarToPlugin/100_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJarToPlugin/200_usingexternaljars.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>The Eclipse adapter pattern</title>
+
+		<chapter>
+			<title>The adapter pattern in generalI</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DesignPatternAdapter/010_overview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DesignPatternAdapter/200_adapter_example.xml" />
+		</chapter>
+		<chapter>
+			<title>Adapter in Eclipse RCP</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Adapter/020_eclipse_adapter.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>Using custom extension points</title>
+
+		<chapter>
+			<title>Creating and evaluating extension points</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/010_extensionpoints.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/020_define.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/040_addingextensions.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/050_access.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/060_factories.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Create and evaluate extension point</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseExtensionPoint/content/100_simpleextensionpoint.xml" />
+		</chapter>
+	</part>
+
+	<part>
+		<title>Eclipse styling with CSS</title>
+
+		<chapter>
+			<title>Introduction to CSS styling</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/010_overview.xml" />
+		</chapter>
+
+		<chapter>
+			<title>How to style in Eclipse</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/012_fixed.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/014_themes.xml" />
+		</chapter>
+		<chapter>
+			<title>More details on Eclipse styling</title>
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/020_styling.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/030_tools.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Styling with CSS files</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/100_tutorial_cssstyling.xml" />
+
+		</chapter>
+		<chapter>
+			<title>Exercise: Using the theme service</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/content/200_tutorial_thememanager.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Styling the widgets created by the life cycle class
+			</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./220_tutorial_lifecycle.xml" />
+		</chapter>
+
+
+
+	</part>
+
+
+	<part>
+		<title>The renderer framework</title>
+
+		<chapter id="rendererchapter">
+			<title>The usage of renderer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/010_renderer.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Existing alternative renderer implementations</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/080_alternatives.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Exercise: Defining a renderer</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/020_ownrenderer.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/040_browser.xml" />
+		</chapter>
+
+	</part>
+
+	<part>
+		<title>Application model persistence and model extensions</title>
+		<chapter>
+			<title>Custom persistence for the application model</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelPersistence/010_overview.xml" />
+		</chapter>
+		<chapter>
+			<title>Saving and restoring parts of the application model</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelPersistence/020_e4xmi_resource.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Extend the Eclipse application model</title>
+			<para>
+				It is also possible to extend the application model. This requires knowledge about the Eclipse EMF framework.
+				Describing EMF is currently
+				out of scope for this book. See
+				<ulink url="http://www.vogella.com/tutorials/Eclipse4ExtendModel/article.html">Extending the Eclipse 4 application model</ulink>
+				for an introduction into the concepts.
+			</para>
+		</chapter>
+
+	</part>
+
+
+	<part id="bestpractices">
+		<title>Good development practices</title>
+		<chapter>
+			<title>Eclipse development good practices</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4DevelopmentPractises/920_besteclipse4practice.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Application communication and context usage</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4DevelopmentPractises/921_besteclipse4practice.xml" />
+		</chapter>
+	</part>
+
+
+	<part>
+		<title>Migrating Eclipse 3.x components and RCP applications</title>
+		<chapter>
+			<title>Why migrating an Eclipse 3.x RCP application?</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/001_purpose.xml" />
+		</chapter>
+		<chapter>
+			<title>Running Eclipse 3.x plug-ins on top of Eclipse 4</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/010_compatibilitylayer.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Excursion: Extending the Eclipse IDE</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/011_ideextensions.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/020_runtimeeclipse.xml" />
+		</chapter>
+
+		<chapter>
+			<title>Partial migrating to the Eclipse 4.x API</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/020_partial_migration.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/024_commands.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/050_parts.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/070_context.xml" />
+		</chapter>
+
+
+		<chapter>
+			<title>Exercise: Adding an e4 menu and toolbar to a 3.x based application</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/026_firstplugin.xml" />
+		</chapter>
+		<chapter>
+			<title>Exercise: Using POJOs to contribute views to a 3.x based application</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/054_exercise_addingparts.xml" />
+
+		</chapter>
+		<chapter>
+			<title>Exercise: Adding e4 part descriptors to 3.x based applications</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/055_exercise_addingpartdescriptor.xml" />
+
+		</chapter>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="900_customclosehandleraddon_secondpart.xml" />
+
+
+		<chapter>
+			<title>Migrating to an e4 API application without 3.x API usage</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/030_migration.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4MigrationGuide/050_mixedmode.xml" />
+		</chapter>
+
+
+
+	</part>
+
+
+
+	<part id="questions">
+		<title>Questions, feedback and closing words</title>
+		<chapter>
+			<title>Questions, feedback</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/381_eclipsebugs.xml" />
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/382_questions.xml" />
+
+		</chapter>
+
+	</part>
+	<part>
+		<title>Appendix</title>
+		<appendix>
+			<title>Eclipse annotations, extension points</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./content/960_annotationoverview.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="992_e4_extensionpoints.xml" />
+		</appendix>
+		<appendix id="exercisesolution">
+			<title>Solutions for the exercises</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="984_exercisesolution.xml" />
+		</appendix>
+
+		<appendix>
+			<title>Using the update manager</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/content/200_updatemanager.xml" />
+		</appendix>
+
+		<appendix>
+			<title>Recipes</title>
+			<para>This chapter contains a few
+				recipes for typical development
+				tasks and some additional background
+				material.
+			</para>
+
+
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse3RCP/content/840_access_resources.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="990_recipes.xml" />
+
+		</appendix>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="980_modelbackground.xml" />
+
+		<appendix>
+			<title>OSGi low level service API</title>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/100_serviceapi.xml" />
+		</appendix>
+
+		<appendix id="webresources">
+			<title>Links and web resources</title>
+			<indexterm>
+				<primary>Web resources</primary>
+			</indexterm>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/008_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/008_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/008_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGi/006_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../OSGiServices/008_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../SWT/resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFace/resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseDataBinding/resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJobs/008_resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseInternationalization/resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4CSS/resourceslocal.xml" />
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="999a_webresources_log.xml" />
+		</appendix>
+	</part>
+	<index />
+</book>

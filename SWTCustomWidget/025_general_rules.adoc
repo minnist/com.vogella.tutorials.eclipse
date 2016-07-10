@@ -35,16 +35,15 @@ certain pre-conditions for the proper use of a `Widget`, like checking
 whether the widget is not disposed and not accessed from an other `Thread`
 than the SWT `Thread`.
 
-<programlisting language="java">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/CustomWidget.java"/>
-</programlisting>
+[source,java]
+----
+include::res/CustomWidget.java[]
+----
 
 === Tell others how big you are
-By overriding the `computeSize` method you give a `Layout` and
-other widgets around your custom widget the chance to get to know the size of your
-custom widget.
-By offering the size the `Layout`, of the parent `Composite`,
-will be able to align its child widgets properly.
+
+By overriding the `computeSize` method you give a `Layout` and other widgets around your custom widget the chance to get to know the size of your custom widget.
+By offering the size the `Layout`, of the parent `Composite`, will be able to align its child widgets properly.
 
 [source,java]
 ----

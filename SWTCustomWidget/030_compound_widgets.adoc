@@ -12,8 +12,7 @@ include::res/LabeledTextWidget.java[]
 [WARNING]
 ====
 Make sure that you pass `this` to the child widgets of your compound
-custom widget. It is a common mistake that the <property>parent</property>
-`Composite`, which is passed to the constructor of the custom widget, is
-also used for the children.
+custom widget. 
+It is a common mistake that the `parent` `Composite`, which is passed to the constructor of the custom widget, is also used for the children.
 ====
 

@@ -1,6 +1,5 @@
 == Exercise: Styling with CSS files
-=== 
-In this exercise you style your application with a CSS file.
+===  In this exercise you style your application with a CSS file.
 
 === Create a CSS file
 
@@ -8,7 +7,7 @@ Create a folder called _css_ in your `com.example.e4.rcp.todo` plug-in and creat
 
 [source,css]
 ----
-include::rescss/default.css[]
+include::res/css/default.css[]
 ----
 
 === Define the applicationCSS property

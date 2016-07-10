@@ -1,138 +1,54 @@
 == Exercise: Dynamic style switching with themes
 === Target
 
-The following exercise assumes that you have already implemented
-CSS
-support for your application based on the last exercise.
-In this
-exercise you use the
-`IThemeEngine`
-to introduce the ability
-to switch the
-application
-styling at
-runtime.
+In this exercise you use the `IThemeEngine` to introduce the ability to switch the application styling at runtime.
+
+=== Add dependencies
 
 
+Add the `org.eclipse.e4.ui.css.swt.theme` plug-in as dependency to your application plug-in.
 
-<title>Add dependencies
-
-
-Add the
-`org.eclipse.e4.ui.css.swt.theme`
-plug-in
-as dependency to your application plug-in.
+=== Create a CSS file
 
 
+Create the following _css/rainbow.css_ file.
 
-<title>Create a CSS file
+[source,css]
+----
+include::res/css/rainbow.css[]
+----
 
+=== Remove the applicationCSS property
 
-Create the following
-_css/rainbow.css_
-file.
+Remove the `applicationCSS` property from your product extension. 
+For this select the property and press the _Remove_ button as depicted in the following screenshot.
 
+image::theme05.png[Remove applicationCSS]
 
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-parse="text" href="../examples/css/rainbow.css" />
-</programlisting>
+=== Create the theme extensions
 
-
-
-<title>Remove the applicationCSS property
-
-Remove the
-`applicationCSS`
-property from your product extension. For this select the property
-and press the
-_Remove_
-button as depicted in the following screenshot.
+Select the _Extensions_ tab in the _plugin.xml_ editor and create two extensions for the `org.eclipse.e4.ui.css.swt.theme` extension point.
 
 
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/theme05.png"/>
-</imageobject>
-<textobject>
-<phrase>Remove applicationCSS</phrase>
-</textobject>
-</mediaobject>
+You create an extension in the _Extensions_ tab by pressing the _Add..._ button.
 
-
-
-
-
-<title>Create the theme extensions
-
-Select the
-_Extensions_
-tab in the 
-_plugin.xml_ editor
-and create two
-extensions for the
-`org.eclipse.e4.ui.css.swt.theme`
-extension point.
-
-
-You create an extension in the
-_Extensions_
-tab by
-pressing the
-_Add..._
-button.
-
-
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/theme06.png"/>
-</imageobject>
-<textobject>
-<phrase>Add button in extension points</phrase>
-</textobject>
-</mediaobject>
-
+image::theme06.png[Add button in extension points]
 
 Select the `org.eclipse.e4.ui.css.swt.theme` extension point and press the _Finish_ button.
 
-
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/theme08.png"/>
-</imageobject>
-<textobject>
-<phrase>Selecting</phrase>
-</textobject>
-</mediaobject>
+image::theme08.png[Selecting]
 
 
-Right-click on the
-`org.eclipse.e4.ui.css.swt.theme`
-extension to create a new theme. The following screenshots show the
-extensions which you should create.
+Right-click on the `org.eclipse.e4.ui.css.swt.theme` extension to create a new theme. 
+The following screenshots show the extensions which you should create.
+
+image::theme10.png[]
+
+image::theme20.png[]
 
 
 
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/theme10.png"/>
-
-</imageobject>
-</mediaobject>
-
-
-
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/theme20.png"/>
-
-</imageobject>
-</mediaobject>
-
-
-The relevant part in the
-_plugin.xml_
-file should look like the following.
+The relevant part in the _plugin.xml_ file should look like the following.
 
 [source,java]
 ----
@@ -200,10 +116,10 @@ plug-in to your feature.
 Create the following file called _dark.css_ in your _css_ folder.
 
 
-<programlisting>
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-parse="text" href="../examples/css/dark.css" />
-</programlisting>
+[source,java]
+----
+include::res/css/dark.css[]
+----
 
 
 Create a new theme pointing to the following new CSS file. Start
@@ -211,9 +127,5 @@ your application and validate that you can switch to the dark theme.
 
 === Adjust the build.properties file
 
-Ensure that all CSS files are selected in your
-_build.properties_
-file in the
-`com.example.e4.rcp.todo`
-plug-in to make them available in an exported application.
+Ensure that all CSS files are selected in your _build.properties_ file in the `com.example.e4.rcp.todo` plug-in to make them available in an exported application.
 

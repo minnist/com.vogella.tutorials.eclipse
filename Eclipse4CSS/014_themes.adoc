@@ -4,19 +4,18 @@
 (((IThemeEngine,CSS)))
 (((cssTheme)))
 	
-You can define multiples _themes_ via an extension in the _plugin.xml_ file.
-The Eclipse platform provides the theme service with an instance of the `IThemeEngine` interface. 
-Via this instance you can change the active theme at runtime.
-	
+You can define _themes_ for styling your application.
+This can be done via extensions in the _plugin.xml_ file.
 To create new themes you define extensions for the `org.eclipse.e4.ui.css.swt.theme` extension point. 
 Such an extension defines an ID for the style and a pointer to the CSS file.
-	
-	
-You must also define the default theme via the `cssTheme` property in your `org.eclipse.core.runtime.products` extension. 
+
+You can define the default theme via the `cssTheme` property in your `org.eclipse.core.runtime.products` extension. 
 This can also be used to define a fixed styling.
 
 WARNING: You need to set `cssTheme` otherwise the theming services is available at runtime.
-	
+
+The Eclipse platform provides the theme service with an instance of the `IThemeEngine` interface. 
+Via this instance you can change the active theme at runtime.	
 The switching of themes is demonstrated in the following handler code.
 
 [source,java]
@@ -24,3 +23,33 @@ The switching of themes is demonstrated in the following handler code.
 include::res/css/ThemeSwitchHandler.java[]
 ----
 
+
+[NOTE]
+====
+
+You can also specify a fixed styling of your application. 
+This is done via a property for the `org.eclipse.core.runtime.products` extension point in the _plugin.xml_ file.
+
+
+The value of the `applicationCSS` property should point to your CSS file via an URI.
+The URI follows the `platform:/plugin/BundleSymbolicName/path/file` convention. 
+The following example demonstrates such a URI:
+
+
+[source,txt]
+----
+platform:/plugin/com.example.e4.rcp.todo/css/default.css
+----
+
+The screenshot shows an example of the _plugin.xml_ file with a defined  `applicationCSS` property.
+
+image::applicationCSSproperty10.png[applicationCSS entered on the product extension]
+
+The corresponding file is shown below. 
+
+[source,txt]
+----
+include::res/css/plugin.xml[]
+----
+
+====

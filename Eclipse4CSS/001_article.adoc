@@ -11,13 +11,12 @@ Version 6.2, 23.06.2016
 This tutorial gives an introduction into the CSS styling capabilities of Eclipse 4.
 
 include::010_overview.adoc[]
-include::012_fixed.adoc[]
 include::014_themes.adoc[]
 include::020_styling.adoc[]
 include::025_styling_custom.adoc[]
 include::030_tools.adoc[]
 include::100_tutorial_cssstyling.adoc[]
 include::200_tutorial_thememanager.adoc[]
-include::300_tutorial_custom_css_properties.adoc
+include::300_tutorial_custom_css_properties.adoc[]
 include::008_resources.adoc[]
 

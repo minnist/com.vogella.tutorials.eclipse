@@ -24,3 +24,4 @@ You open it via the kbd:[Ctrl+Shift+Alt+F6] shortcut.
 		
 		
 If you click the btn:[Apply] button, the entered CSS is applied at runtime to your application.
+

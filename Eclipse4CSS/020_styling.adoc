@@ -5,11 +5,9 @@
 The CSS attributes for SWT widgets which can be styled are listed under the following
 link: http://wiki.eclipse.org/E4/CSS/SWT_Mapping
 
-Eclipse application model elements, e.g., _MPartStack_ or _MPart_ can also be styled. 
+Model elements of your Eclipse application, e.g., _MPartStack_ or _MPart_ can also be used a selectors for styling. 
 The CSS selectors are based on the Java classes for the model elements. 
 Some examples are given in the following table.
-
-
 
 
 .Table Model elements and CSS selectors
@@ -36,8 +34,9 @@ include::res/css/hideminimize.txt[]
 ----
 
 
-Eclipse also supports _CSS pseudo classes_. 
-The following table lists several of these pseudo classes.
+Eclipse also supports _CSS pseudo classes_ but these are disabled by default. 
+See https://bugs.eclipse.org/bugs/show_bug.cgi?id=362532 for details.
+The following table lists several of the available pseudo classes.
 
 
 .Table CSS pseudo classes in Eclipse
@@ -52,11 +51,11 @@ The following table lists several of these pseudo classes.
 
 |:selected
 |Allows to style a selected element, e.g., a part in a PartStack.
-
+|===
 
 === Styling based on identifiers and classes
 
-You can specify an identifier or a class on widgets in your source code and use these as selectors for styling.
+You can specify an _identifier_ or a _class_ on widgets in your source code and use these as selectors for styling.
 An identifier is supposed to be unique while a class can be assigned to several elements.
 
 The following example demonstrates how to set the identifier and the class on SWT widgets.
@@ -103,11 +102,6 @@ The following picture shows the result of different settings.
 
 image::cssgradients10.png[Different Gradient settings]
 
-Using this import results in an application styling similar to the following screenshot.
-
-
-image::todo-dark10.png[Dark theming]
-
 
 NOTE:  Please note that the current gradient specification is not compliant with the CSS specification and that it might change in the future.
 
@@ -124,6 +118,13 @@ For example the following stylesheet would import the existing dark theme of the
 ----
 include::res/css/defaultimport.css[]
 ----
+
+
+Using this import results in an application styling similar to the following screenshot.
+
+
+image::todo-dark10.png[Dark theming]
+
 
 
 

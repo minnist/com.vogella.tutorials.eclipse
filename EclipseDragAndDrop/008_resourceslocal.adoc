@@ -1,4 +1,3 @@
-
 == Eclipse drag and drop resources
 
 http://www.eclipse.org/articles/Article-SWT-DND/DND-in-SWT.html - SWT Drag and Drop

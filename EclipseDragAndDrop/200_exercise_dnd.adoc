@@ -4,18 +4,20 @@ Create the following class.
 	
 [source,java]
 ----
-include::res/dnd/PhotoShuffler.java[]
+include::res/dndswt/PhotoShuffler.java[]
 ----
 
 Create the following DragSource and DragTarget Listener.
 
 [source,java]
 ----
-include::res/dnd/MyDropTargetListener.java[]
+include::res/dndset/MyDropTargetListener.java[]
 ----
 	
 [source,java]
 ----
-include::res/dnd/MyDragSourceListener.java[]
+include::res/dndswt/MyDragSourceListener.java[]
 ----
+
+
 	

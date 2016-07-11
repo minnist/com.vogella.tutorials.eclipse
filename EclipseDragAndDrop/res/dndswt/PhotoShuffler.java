@@ -1,4 +1,3 @@
-
 package de.vogella.swt.dnd;
 
 import org.eclipse.swt.SWT;
@@ -17,8 +16,6 @@ import org.eclipse.swt.widgets.Shell;
 
 import de.vogella.swt.dnd.MyDragSourceListener;
 import de.vogella.swt.dnd.MyDropTargetListener;
-
-
 
 public class PhotoShuffler {
 

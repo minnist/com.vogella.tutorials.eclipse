@@ -1,0 +1,38 @@
+== Approach
+
+If you teach programming you basically have two extreme choices.
+The
+first approach is that you
+explain everything first and then do it.
+The
+second choice is that you first do everything and then explain what
+you
+have done.
+
+The following description tends towards the second approach.
+
+We will develop
+a small RCP application, create a product and
+launch it,
+before
+explaining the project structure, the involved classes
+and what a
+product
+or a launch configuration is.
+
+In my experience its easier to understand an explanation, if you
+have already created an example.
+
+The risk associated with that
+approach is that if you run into a
+problem you do not know how to solve
+it.
+
+Therefore if you
+have problem starting your product, I suggest to
+read
+the chapter about
+launch configurations and if that does not help,
+check the "Products and Branding"
+chapter.
+

@@ -1,0 +1,93 @@
+
+== Tutorial: Adding Views to your application
+
+=== Create a view
+
+The
+following will
+explain how to add views to your
+application.
+We will continue to use the
+RCP project
+"de.vogella.rcp.intro.first".
+		
+Add the extension "org.eclipse.ui.views" to your plugin. Select
+"_plugin.xml_ and the tab "Extentions".
+Right
+mouse-click on your new
+view extension and select
+menu:New[View].
+Maintain the id
+"de.vogella.rcp.intro.view.MyView" and the
+class
+"de.vogella.rcp.intro.view.MyView".
+		
+image::addview80.gif[Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+		
+image::addview90.png[Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+		
+Create the class "MyView" by clicking on the "class"
+hyperlink
+and
+maintain the following code. Afterwards, your view is ready to be
+used.
+		
+[source,java]
+----
+include::res/view/MyView.java[]
+----
+
+=== Add the view to your perspective
+
+You have to add the view to your
+perspective. Add
+the extension
+"org.eclipse.ui.perspectiveExtensions" to your plugin.
+		
+image::addview110.gif[Adding a view to your perspective via the "org.eclipse.ui.perspectiveExtensions" extension,pdfwidth=60%]
+		
+Right-click "*(perspectiveExtension)"
+menu:New[View].
+Maintain
+your view id
+`de.vogella.rcp.intro.first.MyView`.
+Make
+the view
+relative
+to
+`org.eclipse.ui.editors`
+which is the currently
+invisible
+editor
+area
+and make the view use all the space by selecting
+the maximum
+ratio
+of
+`0.95f`.
+		
+image::addview130.png[Maintaining the layout data for the view in the `org.eclipse.ui.perspectiveExtensions` extension point,pdfwidth=60%]
+
+=== Result
+		
+Run your application to see the result.
+		
+image::addview200.gif[Running application with a new view,pdfwidth=60%]
+
+=== Add view to perspective via code
+
+I personally prefer extension points over code. But instead of
+using the extension
+point
+"org.eclipse.ui.perspectiveExtensions" you
+could also add the
+view
+via
+code to the perspective. For this modify
+"Perspective.java" to the following.
+		
+[source,java]
+----
+include::res/view/Perspective.java[]
+----
+

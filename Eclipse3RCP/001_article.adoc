@@ -1,0 +1,36 @@
+= Eclipse RCP based on the 3.x API - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2007, 2016 vogella GmbH
+Version 7.3, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse3RCP
+
+[abstract]
+Eclipse RCP.
+This tutorial describes how to develop Eclipse RCP applications with Eclipse 3.x API.
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../EclipsePlugIn/010_overview.adoc[]
+include::012_eclipse3x.adoc[]
+include::101_extensionpoints.adoc[]
+include::102_components.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::180_approach.adoc[]
+include::230_iapplication.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::240_workbenchparts.adoc[]
+include::244_tutorial_view.adoc[]
+include::520_perspectives.adoc[]
+include::600_systemtray.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::800_workbenchapi.adoc[]
+include::820_tips_and_tricks.adoc[]
+include::840_access_resources.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

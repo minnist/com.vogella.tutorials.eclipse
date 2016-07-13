@@ -1,0 +1,90 @@
+== Application and Advisor Classes
+	
+During the startup of an Eclipse RCP application the Eclipse
+runtime
+will evaluate which class is defined via the
+`org.eclipse.core.runtime.application`
+extension point.
+	
+	
+This is the equivalent of the main class of standard Java
+programs.
+This class is responsible for creating the SWT
+`Display`
+and for starting the event loop for the application.
+	
+This class is typically called Application
+and must implement the
+interface
+`IApplication`
+.
+[source,text]
+----
+include::res/application/start.txt[]
+----
+	
+`PlatformUI.createAndRunWorkbench()`
+creates and runs a
+`Workbench`
+. The
+`Workbench`
+represents the graphical user interface of Eclipse. The visual
+part of
+the Workbench is represented via the
+`WorkbenchWindow`
+class. A
+`Workbench`
+can have several
+`WorkbenchWindows`
+opened. The inner part of the
+`WorkbenchWindow`
+is represented via the class
+`WorkbenchPage`.
+	
+The
+`Workbench`
+is configured via a class of type
+`WorkbenchAdvisor`
+. This class defines the initial Perspective and defines the
+`WorkbenchWindowAdvisor`
+class.
+	
+`WorkbenchWindowAdvisor`
+calls the class
+`ActionBarAdvisor`
+which configures
+`Actions`
+for the
+`Workbench`
+and defines initial attribute for the
+`WorkbenchWindow`
+as initial size, title and visibility of the statusline.
+	
+[source,text]
+----
+include::res/workbenchwindow/advisor.txt[]
+----
+	
+For example you could set the initial position of the application via
+`postWindowCreate()`
+method.
+	
+[source,text]
+----
+include::res/workbenchwindow/position.txt[]
+----
+	
+The
+`ActionBarAdvisor`
+class is as of Eclipse 3.7 not important any more as the Action
+framework is replaced by the superior command framework.
+	
+Each adviser allow to configure certain behavior of the application,
+e.g., the
+`WorkbenchAdvisor`
+allows to perform certain actions at startup or shutdown by
+overriding the
+`preStartUp()`
+and
+`preShutdown()` methods.
+	

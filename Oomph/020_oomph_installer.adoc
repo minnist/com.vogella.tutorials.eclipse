@@ -31,7 +31,7 @@ But it is also able to identify user defined profiles like the _Vogella-Setup_.
 
 Additional user setups can be added by using the green plus button besides the _filter text_.
 
-Depending on the chosen profiles there will be some extra varibles for the installation on the next page.
+Depending on the chosen profiles there will be some extra variables for the installation on the next page.
 
 image::oomph-installer-variables.png[]
 

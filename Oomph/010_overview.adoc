@@ -5,5 +5,6 @@ For an Eclipse novice it can be hard to setup Eclipse according to their or the 
 Often there are specific plug-ins, which should be installed, and preference settings, e.g, for the java compiler, and many more things, which need to be considered. 
 Doing all this manually can be a hard and long job, even if a nice college has documented how to setup all necessary plugins and preference settings.
 
-Oomph provides the possibility to implement a profile, which contains all the tasks for setting up Eclipse, so that one only has to run the Oomph installer and choose this profile and every setting from that profile will be applied automatically.
+Oomph provides the possibility to implement a profile, which contains all the tasks for setting up Eclipse.
+So that one only has to run the Oomph installer and choose this profile and every setting from that profile will be applied automatically.
 

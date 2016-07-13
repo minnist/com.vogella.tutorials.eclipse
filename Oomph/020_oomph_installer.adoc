@@ -4,9 +4,13 @@
 
 The Oomph installer can be found on http://www.eclipse.org/downloads/
 
-image::oomph-download.png[]
+image::oomph-download10.png[]
+
+image::oomph-download20.png[]
 
 The oomph installer itself is a small Eclipse application and about 44 MB in terms of size. 
+
+=== Use the Oomph installer
 
 When starting the Oomph installer a certain EPP can be chosen and configured.
 

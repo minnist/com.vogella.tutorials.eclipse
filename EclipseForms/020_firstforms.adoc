@@ -4,7 +4,7 @@
 
 Create a new Eclipse RCP project called _de.vogella.rcp.intro.forms_. 
 Use the "RCP Application with a view" as a template. 
-Add a dependency to "org.eclipse.ui.forms" in your manifest file via the _Dependencies_tab. 
+Add a dependency to "org.eclipse.ui.forms" in your manifest file via the _Dependencies_ tab. 
 
 Change the generated `View` class to the following. 
 This creates a re-sizable table in a form with a button on the right side of it.

@@ -14,3 +14,4 @@ Existing UI elements can be enhanced to the form API via the method adapt(Compos
 `FormToolkit` provides `Form` or `ScrollForm` which serve as the frame for the user interface elements. 
 They provide a header, a toolbar and a body. 
 The body can get accessed via the `getBody()` method and can contain other user interface elements.
+

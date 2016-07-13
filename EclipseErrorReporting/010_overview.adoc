@@ -1,0 +1,10 @@
+== AERI overview
+
+Source code is locate in https://git.eclipse.org/r/#/admin/projects/epp/org.eclipse.epp.logging
+
+Add add org.eclipse.epp.logging.aeri.feature to your product
+
+To send error reports to your customer endpoint you have to specify the end-point url in your RCP client by setting a system property org.eclipse.epp.logging.aeri.ui.serverUrl [4] in your product eclipse.ini.
+
+The configuration contains various settings and urls like aboutUrl, submitUrl, problemsUrl etc. These values need to point to your urls where you accept user requests.
+

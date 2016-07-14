@@ -6,17 +6,25 @@
 :imagesdir: ./img
 Lars Vogel (c) 2009 - 2016 vogella GmbH
 Version 6.2, 23.06.2016
+:docinfodir: ../
+:vgwort: Eclipse4CSS
 
 [abstract]
 This tutorial gives an introduction into the CSS styling capabilities of Eclipse 4.
 
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::014_themes.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::020_styling.adoc[]
 include::025_styling_custom.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::030_tools.adoc[]
 include::100_tutorial_cssstyling.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::200_tutorial_thememanager.adoc[]
 include::300_tutorial_custom_css_properties.adoc[]
-include::008_resources.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 

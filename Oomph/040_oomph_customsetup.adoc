@@ -1,0 +1,35 @@
+== Oomph custom setup
+
+
+=== Using a new profile
+
+Out of the box the installer provides certain default categories containing different profiles, e.g., for _Eclipse Projects_.
+But it is also able to identify user defined profiles like the _Vogella-Setup_.
+
+Additional user setups can be added by using the green plus button besides the _filter text_.
+
+Depending on the chosen profiles there will be some extra variables for the installation on the next page.
+
+image::oomph-installer-variables.png[]
+
+After the variables are configured properly the last wizard page will give an overview about the setup tasks.
+
+image::oomph-installer-setup-tasks.png[]
+
+
+=== Creating a new profile
+
+This requires that you install the Oomph installer into your Eclipse IDE.
+You can use the update manager for that.
+
+Select menu:File[New->Others...|Setup Project Model].
+
+image::oomph_customprofile10.png[]
+
+image::oomph_customprofile20.png[]
+
+image::oomph_customprofile30.png[]
+
+
+See https://wiki.eclipse.org/Eclipse_Oomph_Authoring for detailed information about the detailed configuration.
+

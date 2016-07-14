@@ -82,13 +82,15 @@
 			stack renderer from the Eclipse platform.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/MyStackRenderer.java[]
+[source,java]
+----
+include::res/stack/MyStackRenderer.java[]
 ----
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/MyRendererFactory.java[]
+[source,java]
+----
+include::res/stack/MyRendererFactory.java[]
 ----
 		
 	
@@ -114,8 +116,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/stack/plugin.adoc[]
+[source,java]
+----
+include::res/stack/plugin.adoc[]
 			</programlisting>
 		
 

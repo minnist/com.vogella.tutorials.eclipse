@@ -5,8 +5,9 @@
 		Allow the user to save in the EditorPart directly. Reuse the save all command.
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/editor/EditorPartSave.java[]
+[source,java]
+----
+include::res/editor/EditorPartSave.java[]
 ----
 		
 		NOTE:
@@ -58,8 +59,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/handler/TodoDeletionPart.java[]
+[source,java]
+----
+include::res/handler/TodoDeletionPart.java[]
 ----
 		
 

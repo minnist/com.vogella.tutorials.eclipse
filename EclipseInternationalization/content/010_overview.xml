@@ -45,8 +45,9 @@
 			value. The following listing demonstrates an example content of such a file.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/osgi/bundle.properties[]
+[source,java]
+----
+include::res/osgi/bundle.properties[]
 ----
 		
 		

@@ -12,8 +12,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/delete/RemoveTodoHandler.java[]
+[source,java]
+----
+include::res/delete/RemoveTodoHandler.java[]
 ----
 		
 	

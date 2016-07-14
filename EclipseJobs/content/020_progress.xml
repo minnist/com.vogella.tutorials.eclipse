@@ -125,9 +125,9 @@
 		This is demonstrated in the following example. 
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/progressbar/ProgressMonitorControl.java[]
+[source,java]
+----
+include::res/progressbar/ProgressMonitorControl.java[]
 ----
 		
 
@@ -138,9 +138,9 @@
 			for the job.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/progressbar/setProgressMonitor.java[]
+[source,java]
+----
+include::res/progressbar/setProgressMonitor.java[]
 ----
 		
 

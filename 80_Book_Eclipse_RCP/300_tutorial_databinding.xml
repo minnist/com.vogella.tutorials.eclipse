@@ -60,8 +60,9 @@
 			for its members.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Todo.java[]
+[source,java]
+----
+include::res/databinding/Todo.java[]
 ----
 		
 	
@@ -104,8 +105,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/databinding/Binding.java[]
+[source,java]
+----
+include::res/databinding/Binding.java[]
 ----
 		
 

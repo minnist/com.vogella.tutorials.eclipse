@@ -24,8 +24,9 @@
 			folder. The file might look like the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle.properties[]
+[source,java]
+----
+include::res/i18n/bundle.properties[]
 ----
 		
 		

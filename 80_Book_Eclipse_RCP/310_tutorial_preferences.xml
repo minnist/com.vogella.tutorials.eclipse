@@ -42,9 +42,9 @@
 			package and the following interface in this package.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/preferences/PreferenceConstants.java[]
+[source,java]
+----
+include::res/preferences/PreferenceConstants.java[]
 ----
 		
 
@@ -63,8 +63,9 @@
 			to get the user preference injected during application startup.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/preferences/Manager.java[]
+[source,java]
+----
+include::res/preferences/Manager.java[]
 ----
 		
 

@@ -1,0 +1,174 @@
+== Extending the objects available for the dependency injection
+
+=== Creating and injecting custom objects
+		
+Using dependency injection for your custom objects has two
+flavors.
+		
+* You want to create objects which declare their dependencies with `@Inject` based on a an `IEclipseContext` context. 
+See chapter: Using dependency injection to create objects for details.	
+* You want the Eclipse dependency container to create
+your
+custom
+objects automatically on demand and then get them
+injected
+into
+your
+model
+objects. See
+chapter: Create your custom objects automatically with @Creatable
+and
+chapter: Create automatically objects in the application context with @Singleton.
+
+
+=== Using dependency injection to create objects
+		
+Using dependency injection is not limited to the objects created by
+the
+Eclipse runtime. You can use the same approach
+to create an instance of a given class based on a given
+`IEclipseContext`
+. The given class can contain
+@Inject annotations.
+For this you use the
+`ContextInjectionFactory`
+class as demonstrated in the following code example.
+		
+[source,java]
+----
+include::res/snippets/injectown.txt[]
+----
+		
+The
+`ContextInjectionFactory.make()`
+method creates the object. You can also put it into the
+`IEclipseContext`
+hierarchy
+after the creation. If you place it into the
+`IEclipseContext`
+of the application, the created object is globally available.
+		
+For this you can either use an existing
+`IEclipseContext`
+or create a new
+`IEclipseContext`
+.
+The new context object can be connected to the context hierarchy.
+Using a new context might be preferable to
+avoid
+collision of keys and
+to
+isolate your changes in a local
+context. Call the
+`dispose`
+method on your local context, if the object is not needed anymore.
+		
+The following code demonstrates how to create a new
+`IEclipseContext`
+object and to place values into it. This context can be used to
+create a new object.
+		
+[source,java]
+----
+include::res/snippets/createContext.txt[]
+----
+		
+The next code example demonstrates how you can connect your new
+`IEclipseContext`
+object with an existing context hierarchy. The factory searches
+the
+hierarchy upwards to find values, requested by the
+class which is
+instantiated.
+		
+[source,java]
+----
+include::res/snippets/createContext2.txt[]
+----
+		
+The
+`ContextInjectionFactory.inject(Object, IEclipseContext)`
+method allows you to perform injection on an existing object. For
+example, if you created the object with the
+`new()`
+operator, you can
+still run dependency injection on it.
+
+=== Create your custom objects automatically with @Creatable
+		
+If you want the Eclipse framework to create your custom objects
+for
+you,
+annotate them with
+`@Creatable`
+. This way you are telling the Eclipse DI container that it should
+create
+a new instance of this object if it does not
+find an instance
+in the
+context. The automatically-generated instance is not stored in
+the context.
+		
+If you have a non default-constructor, you must use
+the
+`@Inject`
+annotation
+on the constructor to indicate that Eclipse should try to
+run
+dependency injection on it.
+		
+For example, assume that you have the following domain model.
+
+[source,java]
+----
+include::res/di_own/Dependent.java[]
+----
+		
+[source,java]
+----
+include::res/di_own/YourObject.java[]
+----
+		
+As the Eclipse framework is allowed to create instances of the
+`Dependent`
+and the
+`YourObject`
+class, it can create them if an instance is requested via
+dependency
+injection. In this example the arguments of the
+constructors can be
+satisfied.
+If no fitting constructor is found, the
+Eclipse framework
+throws
+an
+exception.
+		
+Assuming that you have defined the
+`ITodoService`
+OSGi
+service in your application, you
+can get an instance of your
+`YourObject`
+class injected into a part. The following example code demonstrates
+that.
+		
+[source,java]
+----
+include::res/di_own/usage.java[]
+----
+
+=== Create automatically objects in the application context with @Singleton
+		
+If the object should be created in the application context, use the
+`@Singleton`
+annotation in addition to the
+`@Creatable`
+annotation. This ensures that only one instance of the object is
+created in your application.
+		
+[source,java]
+----
+include::res/di_own/YourObjectSingleton.java[]
+----
+

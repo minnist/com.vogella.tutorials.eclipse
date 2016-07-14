@@ -5,8 +5,9 @@
 
 		Create the following new class.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/dynamics/DynamicPart.java[]
+[source,java]
+----
+include::res/dynamics/DynamicPart.java[]
 ----
 		
 	
@@ -48,9 +49,9 @@ image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
 			similar to the following code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="../examples/dynamics/DynamicPartHandler.java[]
+[source,java]
+----
+include::res/dynamics/DynamicPartHandler.java[]
 ----
 		
 		

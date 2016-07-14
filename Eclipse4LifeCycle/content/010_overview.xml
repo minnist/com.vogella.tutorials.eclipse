@@ -67,8 +67,9 @@
 		
 		The access is demonstrated by the following snippet.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/access.java[]
+[source,java]
+----
+include::res/arguments/access.java[]
 ----
 		
 		A parameter can be a flag or can have a parameter and a value.
@@ -76,8 +77,9 @@
 			evaluate this.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/arguments/getValue.java[]
+[source,java]
+----
+include::res/arguments/getValue.java[]
 ----
 		
 
@@ -197,8 +199,9 @@
 			as BundleSymbolicName and package, you need to replace that with the correct values for your life cycle class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/plugin.adoc[]
+[source,java]
+----
+include::res/life/plugin.adoc[]
 			</programlisting>
 		
 
@@ -211,8 +214,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/life/LifeCycleManager.java[]
+[source,java]
+----
+include::res/life/LifeCycleManager.java[]
 ----
 		
 

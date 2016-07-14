@@ -35,8 +35,9 @@
 			following (keys are just examples).
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/Messages.java[]
+[source,java]
+----
+include::res/i18n/Messages.java[]
 ----
 		
 	
@@ -63,8 +64,9 @@
 			look like the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/bundle2.properties[]
+[source,java]
+----
+include::res/i18n/bundle2.properties[]
 ----
 		
 		
@@ -142,8 +144,9 @@
 			for a dynamic language switch.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/i18n/TodoOverviewPart.java[]
+[source,java]
+----
+include::res/i18n/TodoOverviewPart.java[]
 ----
 		
 	

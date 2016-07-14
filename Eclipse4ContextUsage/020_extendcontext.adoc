@@ -1,0 +1,283 @@
+== Accessing and extending the Eclipse context
+
+=== Accessing the context
+
+You can place objects directly in the
+`IEclipseContext`
+hierarchy to make them available to other model objects.
+
+To access an
+existing
+context you can use dependency injection if
+the
+relevant
+object is
+managed by the Eclipse runtime.
+This is the case
+for
+all model objects. The following code demonstrates how to get access
+to the active
+`IEclipseContext`
+, in which the handler is called.
+
+[source,java]
+----
+include::res/snippets/accessContext1.txt[]
+----
+
+If a model object implements
+`MContext`
+,
+you can use dependency injection to get the model object injected
+and
+call the
+`getContext()`
+method to access its context. For example, MPart, MWindow,
+MApplication and MPerspective extend MContext.
+
+The following code demonstrates how to get the
+`MApplication`
+injected and how to access its
+`IEclipseContext`
+.
+
+[source,java]
+----
+include::res/snippets/accessContext3.txt[]
+----
+
+=== Objects and context variables
+
+You can add key / value pairs directly to the
+`IEclipseContext`
+.
+
+Adding objects to
+a context can be done via
+the
+`set()`
+method of the
+`IEclipseContext`
+interface.
+The following example creates a new context via the
+`EclipseContextFactory.create()`
+factory method call and adds some objects to it. Via the
+`setParent()`
+method call, the new context is connected to the context hierarchy.
+
+[source,java]
+----
+include::res/snippets/addingtoexisting.txt[]
+----
+
+Such a context can be used to instantiate an object via the
+Eclipse
+framework.
+
+A
+_context variable_
+is a key which is
+declared as
+_modifiable_
+via the
+`declareModifiable(key)`
+method call.
+
+[source,java]
+----
+include::res/snippets/makecontextvariable.txt[]
+----
+
+Context variables are added to particular levels of the
+`IEclipseContext`
+hierarchy and can also be modified using the
+`modify()`
+method rather than
+`set()`
+method of the
+`IEclipseContext`
+.
+The
+`modify()`
+method searches up the chain to find the
+`IEclipseContext`
+defining the variable. If no entry is found in the context hierarchy,
+the value will be
+set in the
+`IEclipseContext`
+in which the call started.
+
+If the key already exists in the context,
+then
+`modify()`
+requires that the key has been set to modifiable with the
+`declareModifiable()`
+method, if not, the method
+throws an
+exception.
+
+You can add key/value pairs and
+_Context variables_
+at different levels of the context hierarchy to supply different
+objects in your application.
+
+=== Replacing existing objects in the IEclipseContext
+
+Instead of adding new objects to the
+`IEclipseContext`
+hierarchy, you can also override existing objects by using
+the same
+key.
+
+You can change behavior of your application by overriding
+certain
+entries in the context.
+For example, you can modify
+the context of the
+_MWindow_
+model element. Its
+`IEclipseContext`
+is originally created by the
+`WBWRenderer`
+class. By default it puts an instance
+of the
+`IWindowCloseHandler`
+and the
+`ISaveHandler`
+interface
+into the local context of the
+_MWindow_
+model element. The
+`IWindowCloseHandler`
+object is responsible for
+the
+behavior once the
+_MWindow_
+model element is closed. The default
+`IWindowCloseHandler`
+prompts the user if he wants to save
+dirty parts (editors with changed
+content). You can change this default
+implementation by replacing the
+object in the context. The following example shows an
+`@Execute`
+method in a handler implementation which overrides this class at
+runtime.
+
+[source,java]
+----
+include::res/snippets/setWindowCloseHandler.txt[]
+----
+
+TIP: You could use this example in your life cycle handler and subscribe
+to the
+`UIEvents.UILifeCycle.APP_STARTUP_COMPLETE`
+event. In the event handler you would replace the
+`IWindowCloseHandler`
+handler in the context.
+
+=== Accessing the IEclipseContext hierarchy from OSGi services
+
+OSGi services are not directly part of the
+`IEclipseContext`
+hierarchy and are created by the OSGi runtime. The OSGi runtime does
+not support dependency injection based on the
+`@Inject`
+annotation.
+
+The Eclipse framework
+registers the implementation of the
+`MApplication`
+interface
+also as an OSGi service. This allows OSGi services to use
+the OSGi API to access the
+`MApplication`
+and its context via the
+`getContext()`
+method. As the
+`EModelService`
+is part of the
+`MApplication`
+context you can search for other context elements via
+it.
+
+=== Model add-ons
+
+To participate in dependency injection with your custom Java
+objects
+you can add them as model add-ons
+to the
+application model.
+The classes
+referred to by the
+model add-ons can
+access and modify the
+`IEclipseContext`
+or
+interact with other services,
+e.g., the event system.
+
+The following screenshot shows a custom model add-on registered
+in the application model.
+
+image::modeladdon10.png[Registering a model add-on,pdfwidth=30%]
+
+The following code shows an example implementation for the model
+addon class. This addon places an object into the
+`IEclipseContext`
+
+[source,java]
+----
+include::res/modeladdon/MyModelAddon.java[]
+----
+
+=== RunAndTrack
+
+The
+`IEclipseContext`
+allows you via the
+`runAndTrack()`
+method to register a Java object of type
+`RunAndTrack`
+.
+
+A
+`RunAndTrack`
+object
+is basically a
+`Runnable`
+which has access to the context.
+
+If the context changes, the
+`RunAndTrack`
+is called by the Eclipse framework.
+The runnable does not need to be
+explicitly unregistered from
+this
+context when it is
+no
+longer
+interested in tracking changes. If
+the
+`RunAndTrack`
+is invoked by the Eclipse platform and it
+returns
+`false`
+from its
+`RunAndTrack.changed()`
+method, it is
+automatically unregistered
+from change tracking on
+this
+context.
+
+Such a
+`RunAndTrack`
+object
+allows a client to keep some external state
+synchronized
+with
+one
+or more values
+in this context.
+

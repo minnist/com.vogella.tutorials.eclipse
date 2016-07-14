@@ -48,8 +48,9 @@ Version 0.3, 06.07.2016
 			class from the Eclipse framework.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ui_events_contains_example.java[]
+[source,java]
+----
+include::res/ui_events_contains_example.java[]
 ----
 		
 		
@@ -99,9 +100,9 @@ Version 0.3, 06.07.2016
 			like this:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/ui_events_asIterable_example.java[]
+[source,java]
+----
+include::res/ui_events_asIterable_example.java[]
 ----
 		
 	

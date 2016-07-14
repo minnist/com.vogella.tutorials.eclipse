@@ -78,8 +78,9 @@
 			package in your service plug-in and create the following class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/server/MyTodoServiceImpl.java[]
+[source,java]
+----
+include::res/server/MyTodoServiceImpl.java[]
 ----
 		
 	

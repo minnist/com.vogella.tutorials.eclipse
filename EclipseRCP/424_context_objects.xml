@@ -153,8 +153,9 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 			current active part in another part.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActivePart.java[]
+[source,java]
+----
+include::res/active/receiveActivePart.java[]
 ----
 		
 
@@ -164,8 +165,9 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 			key.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/receiveActiveShell.java[]
+[source,java]
+----
+include::res/active/receiveActiveShell.java[]
 ----
 		
 		NOTE:
@@ -219,8 +221,9 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 			code snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/active/MyOwnClass.java[]
+[source,java]
+----
+include::res/active/MyOwnClass.java[]
 ----
 		
 

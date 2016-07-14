@@ -59,8 +59,9 @@
 			. This can be done via the following code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/activate2.java[]
+[source,java]
+----
+include::res/eventadmin/activate2.java[]
 ----
 		
 
@@ -72,8 +73,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eventadmin/plugin.adoc[]
+[source,java]
+----
+include::res/eventadmin/plugin.adoc[]
 			</programlisting>
 		
 

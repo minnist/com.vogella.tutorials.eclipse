@@ -35,8 +35,9 @@
 			looks like this:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options.txt[]
+[source,java]
+----
+include::res/tracing/options.txt[]
 ----
 		
 		
@@ -58,8 +59,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/run.txt[]
+[source,java]
+----
+include::res/tracing/run.txt[]
 ----
 		
 		
@@ -75,15 +77,17 @@
 			of each bundle and sort the bundles by this time.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/extract.txt[]
+[source,java]
+----
+include::res/tracing/extract.txt[]
 ----
 		
 
 		The following is another example for an .option file in which you trace the resources.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tracing/options_resources.txt[]
+[source,java]
+----
+include::res/tracing/options_resources.txt[]
 ----
 		
 

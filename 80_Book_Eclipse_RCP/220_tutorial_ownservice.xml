@@ -84,9 +84,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			interface.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples//osgi/TodoServiceImplOsgiDs.java[]
+[source,java]
+----
+include::res//osgi/TodoServiceImplOsgiDs.java[]
 ----
 		
 	
@@ -111,8 +111,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/PostConstruct.java[]
+[source,java]
+----
+include::res/service/PostConstruct.java[]
 ----
 		
 	
@@ -178,8 +179,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/tutorialservice/component.adoc[]
+[source,java]
+----
+include::res/tutorialservice/component.adoc[]
 			</programlisting>
 		
 		
@@ -191,8 +193,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			file under the Service-Component reference.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/servicereference.txt[]
+[source,java]
+----
+include::res/osgi/servicereference.txt[]
 ----
 		
 

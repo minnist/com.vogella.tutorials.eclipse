@@ -49,8 +49,9 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/activator.java[]
+[source,java]
+----
+include::res/context/activator.java[]
 ----
 		
 		
@@ -65,8 +66,9 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/context/getBundleContext.java[]
+[source,java]
+----
+include::res/context/getBundleContext.java[]
 ----
 		
 	
@@ -88,8 +90,9 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 
 		 To publish a service in your bundle use: 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/register.java[]
+[source,java]
+----
+include::res/service/register.java[]
 ----
 		
 
@@ -103,8 +106,9 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 			this by:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/unregisterservice.java[]
+[source,java]
+----
+include::res/service/unregisterservice.java[]
 ----
 		
 
@@ -138,8 +142,9 @@ image::osgiserviceoptions.png" scale="30[Options for defining OSGi services,pdfw
 			class. The following example demonstrates that.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/getservice.java[]
+[source,java]
+----
+include::res/service/getservice.java[]
 ----
 		
 	

@@ -74,9 +74,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/service/IBundleResourceLoader.java[]
+[source,java]
+----
+include::res/service/IBundleResourceLoader.java[]
 ----
 		
 
@@ -95,9 +95,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/service/BundleResourceLoaderImpl.java[]
+[source,java]
+----
+include::res/service/BundleResourceLoaderImpl.java[]
 ----
 		
 
@@ -165,8 +165,9 @@
 			to learn more about the code snippet.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/service/LabelAssign.java[]
+[source,java]
+----
+include::res/service/LabelAssign.java[]
 ----
 		
 

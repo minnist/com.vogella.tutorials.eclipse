@@ -216,8 +216,9 @@
 			handler class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/command/Example.java[]
+[source,java]
+----
+include::res/command/Example.java[]
 ----
 		
 
@@ -322,9 +323,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/canexecutetrigger/triggerevent.java[]
+[source,java]
+----
+include::res/canexecutetrigger/triggerevent.java[]
 ----
 		
 	

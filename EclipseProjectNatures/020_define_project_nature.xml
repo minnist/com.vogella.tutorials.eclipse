@@ -23,8 +23,9 @@ Version 0.3, 06.07.2016
     The implementation of the referenced `ExampleProductNature` can look like
         this:
     
-        <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExampleProjectNature.java"/>
+        [source,java]
+----
+include::res/ExampleProjectNature.java"/>
 		</programlisting>
     
     
@@ -50,8 +51,9 @@ Version 0.3, 06.07.2016
         Every `IProject` has an `IProjectDescription`, which contains
             all _natureIds_.
         
-            <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/GetAndSetProjectNatures.java"/>
+            [source,java]
+----
+include::res/GetAndSetProjectNatures.java"/>
 		</programlisting>
         
     

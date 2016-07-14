@@ -90,9 +90,9 @@ image::contextfunction02.png[Dependencies for the Context Function,pdfwidth=60%]
 			plug-in.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/TodoServiceContextFunction.java[]
+[source,java]
+----
+include::res/contextfunction/TodoServiceContextFunction.java[]
 ----
 		
 
@@ -155,9 +155,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			injected and to send out events in case of changes in the data model.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/MyTodoServiceImpl.java[]
+[source,java]
+----
+include::res/contextfunction/MyTodoServiceImpl.java[]
 ----
 		
 
@@ -186,9 +186,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			handler implementation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/contextfunction/NewTodoHandler.java[]
+[source,java]
+----
+include::res/contextfunction/NewTodoHandler.java[]
 ----
 		
 
@@ -222,8 +222,9 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/contextfunction/service.adoc[]
+[source,java]
+----
+include::res/contextfunction/service.adoc[]
 			</programlisting>
 		
 

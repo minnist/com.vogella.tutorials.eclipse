@@ -96,8 +96,9 @@ image::ClippedTreeColumn.png" scale="40"/>
 		In order to let a column fit to it's contents width you can invoke the columns
 				`pack` method like that.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/swt/ExpandlistenerWithPack.java"/>
+[source,java]
+----
+include::res/swt/ExpandlistenerWithPack.java"/>
 			</programlisting>
 		
 		With this code every column of the `Tree` will have the appropriate width,

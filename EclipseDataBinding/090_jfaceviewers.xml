@@ -57,9 +57,9 @@
 			to observe changes of the list elements.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/snippets/ObservableMapLabelProvider.txt[]
+[source,java]
+----
+include::res/snippets/ObservableMapLabelProvider.txt[]
 ----
 		
 
@@ -141,8 +141,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/viewerSelection.java[]
+[source,java]
+----
+include::res/snippets/viewerSelection.java[]
 ----
 		
 
@@ -155,14 +156,16 @@
 			this usage.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/chain/listchain.java[]
+[source,java]
+----
+include::res/chain/listchain.java[]
 ----
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/chain/chain.java[]
+[source,java]
+----
+include::res/chain/chain.java[]
 ----
 		
 

@@ -85,8 +85,9 @@ image::popupmenu20.png" scale="35[ID for the popupmenu,pdfwidth=60%]
 			control.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/popup/table.java[]
+[source,java]
+----
+include::res/popup/table.java[]
 ----
 		
 		

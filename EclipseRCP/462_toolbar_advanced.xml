@@ -55,8 +55,9 @@ image::part_toolbar10.png[Adding a toolbar to a part,pdfwidth=60%]
 			field in the toolbar which looks like a search field.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/toolitem/SearchToolItem.java[]
+[source,java]
+----
+include::res/toolitem/SearchToolItem.java[]
 ----
 		
 		

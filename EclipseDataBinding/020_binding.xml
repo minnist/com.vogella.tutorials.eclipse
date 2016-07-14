@@ -20,8 +20,9 @@
 			changes.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/sideeffect/example.txt[]
+[source,java]
+----
+include::res/sideeffect/example.txt[]
 ----
 		
 
@@ -40,8 +41,9 @@
 			widget is disposed.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/sideeffect/Reuse.txt[]
+[source,java]
+----
+include::res/sideeffect/Reuse.txt[]
 ----
 		
 
@@ -82,8 +84,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/dbc.java[]
+[source,java]
+----
+include::res/snippets/dbc.java[]
 ----
 		
 		
@@ -101,8 +104,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/nested.java[]
+[source,java]
+----
+include::res/snippets/nested.java[]
 ----
 		
 
@@ -119,9 +123,9 @@
 			method. This allows you to control the point in time when you want to update or use the values from the map.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/snippets/ObservableMapEntry.java[]
+[source,java]
+----
+include::res/snippets/ObservableMapEntry.java[]
 ----
 		
 	

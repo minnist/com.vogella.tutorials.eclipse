@@ -24,8 +24,9 @@
 			a new launch configuration type can be added.
 		The extension point can be configured as follows.
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchConfigurationTypes.xml"/>
+[source,xml]
+----
+include::res/custom_launch/launchConfigurationTypes.xml"/>
 			</programlisting>
 		
 		The different <property>modes</property> are `ILaunchManager.RUN_MODE`,
@@ -40,14 +41,16 @@
 			by using one the its `getAttribute` methods.
 		Therefore we also specify an interface with key constants for the custom attributes:
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfigurationAttributes.java"/>
+[source,java]
+----
+include::res/custom_launch/SampleLaunchConfigurationAttributes.java"/>
 			</programlisting>
 		
 		The `LaunchConfigurationDelegate` implementation, which works with this attribute may look like this:
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/SampleLaunchConfiguration.java"/>
+[source,java]
+----
+include::res/custom_launch/SampleLaunchConfiguration.java"/>
 			</programlisting>
 		
 		Usually a `ILaunchConfigurationDelegate` is invoked by the UI of
@@ -64,15 +67,17 @@
 		Such an `ILaunchShortcut` can be defined with the
 				`﻿org.eclipse.debug.ui.launchShortcuts` extension point.
 				
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/launchShortcut.xml"/>
+[source,xml]
+----
+include::res/custom_launch/launchShortcut.xml"/>
 			</programlisting>
 		
 		The referenced `﻿LaunchShortcut` class must implement
 				﻿`ILaunchShortcut`.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_launch/LaunchShortcut.java"/>
+[source,java]
+----
+include::res/custom_launch/LaunchShortcut.java"/>
 			</programlisting>
 		
         After implementing this, you can run the <guimenuitem>Sample Shortcut</guimenuitem>

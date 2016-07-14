@@ -47,8 +47,9 @@ Version 0.3, 06.07.2016
         
         In the _ExampleProjectNature(run)_ we reference the
                 `ExampleProjectNature` class:
-        <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExampleProjectNature.java"/>
+        [source,java]
+----
+include::res/ExampleProjectNature.java"/>
 		</programlisting>
     
     <section>
@@ -64,8 +65,9 @@ Version 0.3, 06.07.2016
                 `com.example.product.examplenature.command` command. The class for the
             handler is `ExampleProjectNatureHandler` and looks like this:
         
-            <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExampleProjectNatureHandler.java"/>
+            [source,java]
+----
+include::res/ExampleProjectNatureHandler.java"/>
 		</programlisting>
         
     

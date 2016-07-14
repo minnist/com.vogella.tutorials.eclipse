@@ -1,0 +1,18 @@
+<section id="e4modularity_prereq">
+	<title>Prerequisites</title>
+	<para>
+		The following assumes that you have already a basic understanding of how Android applications are created. See the
+		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android Tutorial</ulink>
+		for details. Also the following description assume that you know the basis of the Android build system based on
+		Gradle. See
+		<ulink url="http://www.vogella.com/tutorials/AndroidBuild/article.html"> Building Android applications with Gradle Tutorial</ulink>
+		for an introduction.
+	</para>
+	<para>
+		For more information about Gradle see the
+		<ulink url="http://www.vogella.com/tutorials/Gradle/article.html"> Gradle Tutorial</ulink>
+		.
+
+	</para>
+
+</section>

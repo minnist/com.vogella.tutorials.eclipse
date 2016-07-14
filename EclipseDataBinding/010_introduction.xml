@@ -190,8 +190,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/widgetProperties.java[]
+[source,java]
+----
+include::res/snippets/widgetProperties.java[]
 ----
 		
 
@@ -244,16 +245,18 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/ModelObject.java[]
+[source,java]
+----
+include::res/beans/ModelObject.java[]
 ----
 		
 		Other domain classes could extend this class. The following
 			example demonstrates that.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/beans/Person.java[]
+[source,java]
+----
+include::res/beans/Person.java[]
 ----
 		
 	
@@ -267,8 +270,9 @@
 			to provide the option to track values.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/writable/Person.java[]
+[source,java]
+----
+include::res/writable/Person.java[]
 ----
 		
 	

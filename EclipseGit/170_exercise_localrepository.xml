@@ -210,8 +210,9 @@ image::gitstaging10.png[Initial commit,pdfwidth=60%]
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/change/GitTest.java[]
+[source,java]
+----
+include::res/change/GitTest.java[]
 ----
 		
 

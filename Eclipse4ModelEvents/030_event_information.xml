@@ -42,8 +42,9 @@ Version 0.3, 06.07.2016
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/attname_label.java[]
+[source,java]
+----
+include::res/attname_label.java[]
 ----
 		
 		
@@ -114,9 +115,9 @@ Version 0.3, 06.07.2016
 			perspective change.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspective_stack_selected_element_event.java[]
+[source,java]
+----
+include::res/perspective_stack_selected_element_event.java[]
 ----
 		
 		
@@ -208,8 +209,9 @@ Version 0.3, 06.07.2016
 			children of an element container like this:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/position_event_tag.java[]
+[source,java]
+----
+include::res/position_event_tag.java[]
 ----
 		
 		

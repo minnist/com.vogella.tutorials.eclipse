@@ -53,9 +53,9 @@
 === Creating the model add-on
 		Define the following class which is used as model add-on 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/modeladdon/WindowCloseListenerAddon.java[]
+[source,java]
+----
+include::res/modeladdon/WindowCloseListenerAddon.java[]
 ----
 		
 

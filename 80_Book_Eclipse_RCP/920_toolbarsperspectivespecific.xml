@@ -14,9 +14,9 @@
 		Create the following new class for the model add-on.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/addon/ToolbarsVisiblePerPerspectiveAddon.java[]
+[source,java]
+----
+include::res/addon/ToolbarsVisiblePerPerspectiveAddon.java[]
 ----
 		
 

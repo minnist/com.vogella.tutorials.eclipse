@@ -54,8 +54,9 @@ image::launch_configuration_export_wizard.png"/>
 		The exported _Eclipse Application Launch Configuration.launch_ file
 			looks like this:
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/Eclipse_Application_Launch_Configuration.launch"/>
+[source,xml]
+----
+include::res/Eclipse_Application_Launch_Configuration.launch"/>
 			</programlisting>
 		
 		As you can see your launch configuration is stored in a XML format, which contains the

@@ -7,8 +7,9 @@
 		First of all define a `org.eclipse.swt.widgets.Link` to be tested in the UI
 			code.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/swt_link.java"/>
+[source,java]
+----
+include::res/pitfalls/swt_link.java"/>
 			</programlisting>
 		
 		So the text applied to the `Link` is
@@ -23,8 +24,9 @@ image::vogella_SWT_Link.png"/>
 			the text of this `Link`, <property>&lt;a>www.vogella.com&lt;/a></property>
 			has to be used.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/access_swt_link.java"/>
+[source,java]
+----
+include::res/pitfalls/access_swt_link.java"/>
 			</programlisting>
 		
 		Another pitfall concerning a `SWTBotLink` is that invoking the
@@ -33,8 +35,9 @@ image::vogella_SWT_Link.png"/>
 				`String` parameter, which contains the hyperlink text.
 		<para/>
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/pitfalls/click_swt_link.java"/>
+[source,java]
+----
+include::res/pitfalls/click_swt_link.java"/>
 			</programlisting>
 		
 		So the `click(String hyperlinkText)` method should always be used rather than just the simple `click()` method.

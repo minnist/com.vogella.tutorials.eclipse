@@ -42,9 +42,9 @@ image::perpective_reset_applicationmodel.png" scale="50[Application model requir
 			method as second parameter.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspectives/SavePerspectiveHandler.java[]
+[source,java]
+----
+include::res/perspectives/SavePerspectiveHandler.java[]
 ----
 		
 	
@@ -54,9 +54,9 @@ image::perpective_reset_applicationmodel.png" scale="50[Application model requir
 			Implement the following class as handler and create a new menu entry for it in your application model.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/perspectives/RestorePerspectiveHandler.java[]
+[source,java]
+----
+include::res/perspectives/RestorePerspectiveHandler.java[]
 ----
 		
 		Create a snippet in your application model for the default of a certain perspective. Use the same ID as the

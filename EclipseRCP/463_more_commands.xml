@@ -68,9 +68,9 @@ image::parameter_relationship10.png" scale="35[Relationship between parameters i
 			example.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/commandparameter/TestHandler.java[]
+[source,java]
+----
+include::res/commandparameter/TestHandler.java[]
 ----
 		
 
@@ -152,8 +152,9 @@ image::parameter_relationship10.png" scale="35[Relationship between parameters i
 			.
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/instanceof.adoc[]
+[source,xml]
+----
+include::res/coreexpression/instanceof.adoc[]
 			</programlisting>
 		
 		You can assign this core expression to your menu entry in the
@@ -207,9 +208,9 @@ image::e4_coreexpression12.png" scale="30[Assigning it to the menu entry,pdfwidt
 			later).
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/coreexpression/putactivePartId.txt[]
+[source,java]
+----
+include::res/coreexpression/putactivePartId.txt[]
 ----
 		
 
@@ -225,8 +226,9 @@ image::e4_coreexpression12.png" scale="30[Assigning it to the menu entry,pdfwidt
 		
 
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/coreexpression/activepart.adoc[]
+[source,xml]
+----
+include::res/coreexpression/activepart.adoc[]
 			</programlisting>
 		
 

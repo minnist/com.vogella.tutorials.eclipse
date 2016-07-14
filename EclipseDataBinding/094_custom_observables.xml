@@ -20,8 +20,9 @@
 		
 		For example the following custom widget allows to set a text.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidget.java[]
+[source,java]
+----
+include::res/custom_observable/CustomWidget.java[]
 ----
 		
 
@@ -65,15 +66,16 @@
 			interface.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetObservableValue.java[]
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableValue.java[]
 ----
 		
 		This observable can then be used like this:
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Observable.java[]
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableSamplePart_Observable.java[]
 ----
 		
 	
@@ -94,8 +96,9 @@
 			implementation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/CustomWidgetProperty.java[]
+[source,java]
+----
+include::res/custom_observable/CustomWidgetProperty.java[]
 ----
 		
 		
@@ -104,9 +107,9 @@
 			can be used like this:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/CustomWidgetObservableSamplePart_Property.java[]
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableSamplePart_Property.java[]
 ----
 		
 	
@@ -143,9 +146,9 @@
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/custom_observable/VogellaDelegatingValueProperty.java[]
+[source,java]
+----
+include::res/custom_observable/VogellaDelegatingValueProperty.java[]
 ----
 		
 		
@@ -157,8 +160,9 @@
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaProperties.java[]
+[source,java]
+----
+include::res/custom_observable/VogellaProperties.java[]
 ----
 		
 		
@@ -172,8 +176,9 @@
 			intention of the delegates.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/custom_observable/VogellaPropertiesPart.java[]
+[source,java]
+----
+include::res/custom_observable/VogellaPropertiesPart.java[]
 ----
 		
 	

@@ -53,8 +53,9 @@
 			Define the following annotation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodo.java[]
+[source,java]
+----
+include::res/DirectTodo.java[]
 ----
 		
 		
@@ -97,8 +98,9 @@
 			abstract class via OSGi declarative services.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/DirectTodoObjectSupplier.java[]
+[source,java]
+----
+include::res/DirectTodoObjectSupplier.java[]
 ----
 		
 		NOTE:
@@ -146,8 +148,9 @@
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ParameterDirectTodo.java[]
+[source,java]
+----
+include::res/ParameterDirectTodo.java[]
 ----
 		
 		

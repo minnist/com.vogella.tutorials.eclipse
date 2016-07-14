@@ -32,8 +32,9 @@ Version 0.3, 06.07.2016
         The referenced `ExamplePropertyPage` should extend the
                 `org.eclipse.ui.dialogs.PropertyPage` class and implement the
                 `org.eclipse.ui.IWorkbenchPropertyPage` interface.
-        <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ExamplePropertyPage.java"/>
+        [source,java]
+----
+include::res/ExamplePropertyPage.java"/>
 		</programlisting>
     
     <section>

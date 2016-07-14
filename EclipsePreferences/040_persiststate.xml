@@ -1,4 +1,3 @@
-
 == Persistence of part state
 
 
@@ -29,10 +28,10 @@
 		example code.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/persistsstate/Example.java" />
-		</programlisting>
+[source,java]
+----
+include::res/persistsstate/Example.java[]
+----
 	
 
 

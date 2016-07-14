@@ -1,4 +1,3 @@
-
 == Exercise: Add Maven support to a Java project in Eclipse
 
 === Target of this exercise

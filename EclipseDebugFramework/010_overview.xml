@@ -10,7 +10,6 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-
 == Eclipse Debug Framework
 	<!-- - Used when the launch framework is used in debug mode - Describe debug 
 		model and IDebugElements - Communication between the Debug Framework and 

@@ -1,4 +1,3 @@
-
 == Example: the part activation event
 	
 		A topic, which is fired by Eclipse is the
@@ -9,8 +8,8 @@
 	
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activate.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/activate.java[]
+----
 	
 	
 		The

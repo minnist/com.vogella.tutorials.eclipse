@@ -1,4 +1,3 @@
-
 == Preferences and dependency injection
 
 	<indexterm>
@@ -71,8 +70,8 @@
 	
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/put.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/put.txt[]
+----
 	
 
 
@@ -86,8 +85,8 @@
 
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/listen.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/listen.txt[]
+----
 	
 	
 		The Eclipse platform automatically tracks the values and re-injects

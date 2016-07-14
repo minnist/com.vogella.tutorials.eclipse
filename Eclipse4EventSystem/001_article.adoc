@@ -1,0 +1,30 @@
+= Eclipse 4 event system (EventAdmin) - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 6.5, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4EventSystem
+
+[abstract]
+Using the Eclipse event system within your application.
+This tutorial gives an overview about the event system of the Eclipse application platform.
+			
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../10_Include/Eclipse/e4_prerequisites.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::010_overview.adoc[]
+include::040_usage.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::060_evaluation.adoc[]
+include::100_async.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

@@ -1,4 +1,3 @@
-
 == Exercise: Extend the Eclipse application model
 	
 		Create another model element called
@@ -23,8 +22,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/renderer/MyOwnStackRenderer.java" />
-		</programlisting>
+				parse="text" href="../examples/renderer/MyOwnStackRenderer.java[]
+----
 	
 	
 

@@ -1,4 +1,3 @@
-
 == Early startup actions
 
 The Eclipse platform provides the `org.eclipse.ui.startup` extension point via the `org.eclipse.ui` plug-in.

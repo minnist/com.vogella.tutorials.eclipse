@@ -1,5 +1,4 @@
 
-
 == Analyzing Android heap dumps with Eclipse
 	
 		Android allows to create heap dumps of an application's heap.

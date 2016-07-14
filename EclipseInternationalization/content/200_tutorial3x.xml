@@ -1,4 +1,3 @@
-
 == Tutorial: Translate plugin.xml
 
 	Create a new Eclipse RCP application "de.vogella.rcp.i18n" based
@@ -42,8 +41,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/plugin/plugin_en.properties" />
-		</programlisting>
+				parse="text" href="../examples/plugin/plugin_en.properties[]
+----
 	
 
 

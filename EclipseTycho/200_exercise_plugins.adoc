@@ -1,4 +1,3 @@
-
 == Exercise: Tycho build for plug-ins
 
 

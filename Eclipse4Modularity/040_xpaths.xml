@@ -1,4 +1,3 @@
-
 == XPaths in model fragments
 	XPaths can also be used to define the contributing place in the model for a model fragment. The following table
 		gives several examples how you can use XPath to define the model element you want to extend.

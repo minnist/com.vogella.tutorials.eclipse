@@ -1,0 +1,6 @@
+== Eclipse framework events
+	
+The framework also uses the event service for model changes and other framework events. See
+http://www.vogella.com/tutorials/Eclipse4ModelEvents/article.html - Eclipse model and application events
+for a tutorial.
+	

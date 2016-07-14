@@ -1,4 +1,3 @@
-
 == Using SWT in a plug-in project
 	
 		The SWT library
@@ -15,8 +14,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/use/MANIFEST.MF" />
-		</programlisting>
+				parse="text" href="./examples/use/MANIFEST.MF[]
+----
 	
 
 

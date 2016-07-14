@@ -1,5 +1,4 @@
 
-
 == Calling commands directly via code
 	 You can call a command directly. For example if you have a
 		command "add.command" defined you can call it via the following
@@ -8,8 +7,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/button/button.java" />
-		</programlisting>
+				parse="text" href="../examples/button/button.java[]
+----
 	
 	 The code above is called within a view which provides access
 		to the site and to services. You can also get the service via the

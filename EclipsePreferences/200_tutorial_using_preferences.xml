@@ -1,4 +1,3 @@
-
 == Tutorial: Preferences via code
 	
 		You can create, store and retrieve preference values directly via
@@ -17,8 +16,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/preferences/ButtonComposite.java" />
-		</programlisting>
+				parse="text" href="./examples/preferences/ButtonComposite.java[]
+----
 	
 	 Run and test your program.
 	

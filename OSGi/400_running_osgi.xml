@@ -1,4 +1,3 @@
-
 == Running a stand-alone OSGi server
 	 This chapter will
 		show how to run Equinox as a
@@ -11,8 +10,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/startOSGi.txt" />
-		</programlisting>
+				parse="text" href="./examples/startOSGi.txt[]
+----
 	
 	You can use "install URL" to install a bundle
 		from a
@@ -21,8 +20,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/installbundle.txt" />
-		</programlisting>
+				parse="text" href="./examples/installbundle.txt[]
+----
 	
 	
 		TIP: You probably need to correct the path and the bundle name on

@@ -1,5 +1,4 @@
-
-== Reset branch to a previous state
+== Reset branch to a previous state
 
 Accidentally committing changes in a wrong branch can happen.
 For example you may switch between several branches, forget to checkout the branch in which you plan to continue your work and then commit in a wrong branch. 

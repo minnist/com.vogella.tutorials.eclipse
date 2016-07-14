@@ -1,4 +1,3 @@
-
 == Automatic conversion of JARS to OSGi bundles
 
 In order to convert JARS to OSGi bundles several solutions

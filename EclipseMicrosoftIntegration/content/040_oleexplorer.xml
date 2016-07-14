@@ -1,4 +1,3 @@
-
 == Microsoft File Explorer with Eclipse
 	
 		Create a new project "de.vogella.microsoft.fileexplorer". See
@@ -12,6 +11,6 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/explorer/FileExplorerView.java" />
-		</programlisting>
+				parse="text" href="../examples/explorer/FileExplorerView.java[]
+----
 	

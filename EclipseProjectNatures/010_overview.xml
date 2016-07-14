@@ -10,7 +10,6 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-
 == Project Natures in Eclipse
     Project Natures are used in the Eclipse IDE in order to configure projects in the
         workspace.

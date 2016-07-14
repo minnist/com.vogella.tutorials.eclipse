@@ -1,4 +1,3 @@
-
 == DateTime widget
 	
 		SWT provides
@@ -9,8 +8,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/datetime/DateTimeExample.java" />
-		</programlisting>
+				parse="text" href="./examples/datetime/DateTimeExample.java[]
+----
 	
 
 	

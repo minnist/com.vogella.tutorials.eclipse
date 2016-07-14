@@ -1,5 +1,4 @@
-
-== Create Github user and fork repository
+== Create Github user and fork repository
 	<section>
 === Target of this exercise
 		In the following exercises you work with remote repositories.

@@ -1,4 +1,3 @@
-
 == Android support
 
 Currently the Buildship tooling does not support setting up the classpath for Android project. 

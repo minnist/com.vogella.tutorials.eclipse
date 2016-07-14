@@ -1,4 +1,3 @@
-
 == Exercise: Create a simple SWT program
 	
 		Continue to use the
@@ -15,8 +14,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/FirstSWTApplication1.java" />
-		</programlisting>
+				parse="text" href="./examples/first/FirstSWTApplication1.java[]
+----
 	
 	
 		To start your application, right-click on your Java class, and select
@@ -39,8 +38,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/FirstSWTApplication2.java" />
-		</programlisting>
+				parse="text" href="./examples/first/FirstSWTApplication2.java[]
+----
 	
 	
 		If you now start the application you will get a

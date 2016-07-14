@@ -1,4 +1,3 @@
-
 == Using native code in OSGI
 	
 		OSGi provides support for resolving and loading shared libraries in Java applications. A plug-in

@@ -1,4 +1,3 @@
-
 == Links and Literature
 	
 
@@ -7,4 +6,4 @@
 			http://www.vogella.com/tutorials/EclipseCommands/article.html">Introduction to Eclipse Commands
 		
 	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
+include::../10_Include/resources.adoc[]

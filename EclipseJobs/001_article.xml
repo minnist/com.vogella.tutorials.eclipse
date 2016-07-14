@@ -57,10 +57,10 @@ Version 0.3, 06.07.2016
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.adoc[]
+include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4EventSystem/100_async.adoc[]
+include::../Eclipse4EventSystem/100_async.adoc[]
 include::020_progress.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::022_progress_eclipse3.adoc[]
@@ -68,7 +68,7 @@ include::025_canceling.adoc[]
 include::030_tutorial_job.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::200_display.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

@@ -1,4 +1,3 @@
-
 == Required plug-ins for updates
 	
 The following table lists the core plug-ins and the feature which provide the non-user interface functionality of p2.

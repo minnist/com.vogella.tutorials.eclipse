@@ -1,4 +1,3 @@
-
 == Links and Literature
 
 === Mylyn Resources
@@ -10,4 +9,4 @@
 			http://blog.vogella.com/2009/10/05/modifying-mylyn-context/"> Blog post about modifying Mylyn Context
 		
 	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
+include::../10_Include/resources.adoc[]

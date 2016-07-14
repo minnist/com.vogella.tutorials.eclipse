@@ -1,5 +1,4 @@
-
-== Synchronizing with a share remote repository
+== Synchronizing with a share remote repository
 	In this exercise you learn a typical workflow, when you work with others at the same remote repository.
 		All
 		developers push to the same branch. Typically this branch has evolved since you started your local feature and a push

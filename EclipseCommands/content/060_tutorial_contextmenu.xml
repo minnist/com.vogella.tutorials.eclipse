@@ -1,4 +1,3 @@
-
 == Tutorial: Commands and context menus
 	
 		In this example you add a context menu to a SWT table widget.
@@ -48,8 +47,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="../examples/contextmenu/ShowSelectedHandler.java" />
-		</programlisting>
+				href="../examples/contextmenu/ShowSelectedHandler.java[]
+----
 	
 	Add a new menuContribution with the locationURI
 		"popup:de.vogella.rcp.intro.commands.popup.view", where
@@ -70,8 +69,8 @@
 	
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/contextmenu/change10.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/contextmenu/change10.java[]
+----
 	
 	 Run your application. If you perform a right-click on the table, your menu
 		should become

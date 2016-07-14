@@ -1,4 +1,3 @@
-
 == Links and Literature
 	
 
@@ -9,4 +8,4 @@
 				url="http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool">How to acquire a Heap Dump from MAT
 		
 	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
+include::../10_Include/resources.adoc[]

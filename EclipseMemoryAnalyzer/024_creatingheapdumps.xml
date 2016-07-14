@@ -1,5 +1,4 @@
 
-
 == Creating heap dumps for Java programs
 	
 		It is possible to instruct the JVM to create automatically a

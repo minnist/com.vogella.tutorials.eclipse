@@ -1,4 +1,3 @@
-
 == Exercise: Create a new Maven enabled project via Eclipse
 
 

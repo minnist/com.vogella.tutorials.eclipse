@@ -1,4 +1,3 @@
-
 == Datasource and Dataset
 	To use Java Objects (POJO's) as datasource in Eclipse BIRT you
 		have to map the fields of your Java classes to

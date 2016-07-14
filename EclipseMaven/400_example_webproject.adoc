@@ -1,6 +1,4 @@
-
 == Exercise: Create a Java web project in Eclipse using Maven
-
 
 == Target of this exercise
 This exercise demonstrates how to create a web application in Eclipse which uses Maven. 

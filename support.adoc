@@ -1,5 +1,4 @@
 include::web/advertisement/beforeSupport.adoc[]
-
 == About this website
 
 ++++

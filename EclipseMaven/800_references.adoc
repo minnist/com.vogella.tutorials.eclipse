@@ -1,4 +1,3 @@
-
 == References for Webdevelopment with Eclipse
 	
 To use Maven in Eclipse for Java web development, you should also install an configure the Eclipse web development tools (WTP).

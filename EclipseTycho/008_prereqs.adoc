@@ -1,4 +1,3 @@
-
 == Pre-requirements for this tutorial
 	
 This tutorial assumes that you are familiar with Eclipse plug-ins and RCP development.

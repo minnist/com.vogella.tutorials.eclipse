@@ -1,4 +1,3 @@
-
 == Generating methods
 	 By default EMF generates getter and setter for every class. You
 		can also add Operations or for example overwrite methods, e.g., the 
@@ -9,8 +8,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/method/toString.txt" />
-		</programlisting>
+				parse="text" href="./examples/method/toString.txt[]
+----
 	
 	To overwrite this, add a "EOperation" to your model with the name
 		toString. Maintain in the properties "EType" EString as return type.
@@ -47,8 +46,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/method/newtoString.txt" />
-		</programlisting>
+				parse="text" href="./examples/method/newtoString.txt[]
+----
 	
 	 You can also generate methods with input parameter, just add
 		parameter with their type to your EOperation.  

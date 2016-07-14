@@ -1,4 +1,3 @@
-
 == Source navigation in the Eclipse IDE
 
 === Package Explorer or Project Explorer

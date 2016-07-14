@@ -10,7 +10,6 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-
 == Convenience methods for working with events
 	Besides the convenience methods for the event types, the UIEvents class offers two more
 		convenience methods:

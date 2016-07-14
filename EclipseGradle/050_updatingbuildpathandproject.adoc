@@ -1,4 +1,3 @@
-
 == Updating the Gradle build path and project conversion
 
 

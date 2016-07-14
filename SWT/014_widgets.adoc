@@ -1,4 +1,3 @@
-
 == SWT Widgets
 
 === Available widgets in the SWT library

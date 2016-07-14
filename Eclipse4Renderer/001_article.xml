@@ -48,7 +48,7 @@ include::../web/advertisement/inBetween01.adoc[]
 include::040_browser.adoc[]
 include::080_alternatives.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

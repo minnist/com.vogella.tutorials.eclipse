@@ -1,4 +1,3 @@
-
 == Example: Creating a plug-in project with a dependency to SWT
 	
 		Create a new plug-in project called

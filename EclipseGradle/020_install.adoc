@@ -1,4 +1,3 @@
-
 == Install Eclipse Gradle (Buildship) tooling
 
 

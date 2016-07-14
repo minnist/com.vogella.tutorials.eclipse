@@ -1,4 +1,3 @@
-
 == Executing plug-in unit tests with Tycho
 
 

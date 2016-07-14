@@ -1,4 +1,3 @@
-
 == Contributions to JDT
 
 The contribution process is described in the following pages: https://wiki.eclipse.org/JDT_UI/How_to_Contribute

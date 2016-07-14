@@ -1,4 +1,3 @@
-
 == Tutorial: Using a Styled Label Providers
 	
 		First create the following helper class which will determine
@@ -7,8 +6,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/highlight/SearchUtil.java" />
-		</programlisting>
+				parse="text" href="../examples/highlight/SearchUtil.java[]
+----
 	
 	
 		Change the class `View` to the following.
@@ -20,8 +19,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/highlight/View.java" />
-		</programlisting>
+				parse="text" href="../examples/highlight/View.java[]
+----
 	
 	
 		Run the example. If you search, now the selected content should

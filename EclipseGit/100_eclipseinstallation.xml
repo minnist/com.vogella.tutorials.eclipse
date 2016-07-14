@@ -1,4 +1,3 @@
-
 == Installation of Git support into Eclipse
 
 	
@@ -33,8 +32,8 @@
 	
 		<programlisting language="bourne">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/links/p2.txt" />
-		</programlisting>
+				parse="text" href="./examples/links/p2.txt[]
+----
 	
 	The dialog to install the Eclipse Git team provider is depicted
 		in the following

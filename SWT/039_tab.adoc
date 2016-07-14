@@ -1,4 +1,3 @@
-
 == Tab order of elements
 	
 		You can specify the tab order of controls via the
@@ -12,8 +11,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/tab/TabExample.java" />
-		</programlisting>
+				parse="text" href="./examples/tab/TabExample.java[]
+----
 	
 	TIP:
 		Defining a tab order for your controls is important to increase

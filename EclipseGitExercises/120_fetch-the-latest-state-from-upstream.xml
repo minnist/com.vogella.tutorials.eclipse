@@ -1,5 +1,4 @@
-
-== Fetch the latest state from your remote repository
+== Fetch the latest state from your remote repository
 	In this exercise you learn how to use the git fetch command to get the latest state from
 		a remote repository.
 		Fetching the

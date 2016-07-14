@@ -1,5 +1,4 @@
-
-== Merge, Rebase and resolving conflicts
+== Merge, Rebase and resolving conflicts
 
 
 === Target

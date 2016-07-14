@@ -10,7 +10,6 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-
 == Define a project nature
     Project natures are defined with the `org.eclipse.core.resources.natures`
         extension point.

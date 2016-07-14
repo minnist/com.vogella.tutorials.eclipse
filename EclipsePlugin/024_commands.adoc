@@ -1,4 +1,3 @@
-
 == Adding e4 commands, menus and toolbars to a 3.x API based applications
 
 === Adding e4 menu entries

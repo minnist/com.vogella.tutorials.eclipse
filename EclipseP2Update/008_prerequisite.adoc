@@ -1,4 +1,3 @@
-
 == Prerequisites
 
 This tutorial assumes that you have a basic understanding of development for the Eclipse platform.

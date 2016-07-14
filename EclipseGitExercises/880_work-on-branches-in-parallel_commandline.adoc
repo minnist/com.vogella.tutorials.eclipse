@@ -1,5 +1,4 @@
-
-== Work on branches in parallel
+== Work on branches in parallel
 	
 In this exercise you learn how to change commits using the `amend` option of Git for commits.
 This is for example useful if you work in different branches in parallel and you want to temporarily save your work. 

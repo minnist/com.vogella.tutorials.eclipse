@@ -1,4 +1,3 @@
-
 == Using parameters in commands
 	You can also define parameters in commands. Create project
 		"de.vogella.rcp.commands.parameterfirst" using the "Hello RCP"
@@ -39,8 +38,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/parameter/HelloName.java" />
-		</programlisting>
+				parse="text" href="../examples/parameter/HelloName.java[]
+----
 	
 
 	 Add this command to the menu. On the command, right-click and

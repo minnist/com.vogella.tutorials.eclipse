@@ -1,4 +1,3 @@
-
 == Finding predefined problem ids
 
 The `IProblem` interface contains a huge amount of potential problem ids, where a quick fix could be used to resolve a certain problem.

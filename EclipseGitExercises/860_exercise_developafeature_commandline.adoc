@@ -1,4 +1,3 @@
-
 == Develop a new feature or a bug fix
 
 In this exercise you will learn how to develop a new feature using Git in Eclipse.

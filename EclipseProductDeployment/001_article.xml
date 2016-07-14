@@ -49,16 +49,16 @@ Version 0.3, 06.07.2016
 
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_product.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_deployment.adoc[]
+include::010_product.adoc[]
+include::020_deployment.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_deployment.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_problems_export.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="099_tutorial_requirements.adoc[]
+include::022_deployment.adoc[]
+include::080_problems_export.adoc[]
+include::099_tutorial_requirements.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_exercise_exportproduct.adoc[]
+include::100_exercise_exportproduct.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_exercise_feature.adoc[]
+include::140_exercise_feature.adoc[]
 
 	<?dbhtml-include href="../../web/adsense/beforeSupport"?>
 include::../support.adoc[]

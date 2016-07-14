@@ -1,4 +1,3 @@
-
 == Example usage
 	An example for using your custom annotations would be the Java
 		Persistence API (JPA). You could create a custom

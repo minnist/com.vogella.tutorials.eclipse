@@ -1,4 +1,3 @@
-
 == Exercise: Data binding for a JFace Viewer
 	
 		Create a
@@ -37,8 +36,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/MyModel.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/MyModel.java[]
+----
 	
 
 	
@@ -52,8 +51,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/ViewTable.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/ViewTable.java[]
+----
 	
 	 In this example the user interface is updated if you delete and
 		element

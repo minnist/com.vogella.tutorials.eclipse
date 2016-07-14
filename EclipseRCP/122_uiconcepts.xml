@@ -1,4 +1,3 @@
-
 == User interface model elements
 	
 		The following model elements represents the basic elements which
@@ -24,7 +23,7 @@ image::e4window10.png[Eclipse application showing 2 windows,pdfwidth=60%]
 		
 	
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040a_eclipseui_parts.adoc[]
+include::040a_eclipseui_parts.adoc[]
 
 
 

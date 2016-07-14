@@ -1,4 +1,3 @@
-
 == HDPI support in Eclipse 4.6
 
 Eclipse 4.6 (Neon) support HDPI displays. 
@@ -25,7 +24,6 @@ NOTE: the swt.autoScale property is not meant to be used by end users. It's just
 
 
 On Windows 7, there's no good way to test this other than using the Display control panel to choose a percentage or set a custom text size (DPI), and then logging out.
-
 == Using GTK2 on Eclipse
 
 You can instruct Eclipse to use GTK2 instead of GTK3 via the following export.
@@ -35,7 +33,6 @@ You can instruct Eclipse to use GTK2 instead of GTK3 via the following export.
 export SWT_GTK3=0
 ./eclipse
 ----
-
 
 == SVG to png conversion
 

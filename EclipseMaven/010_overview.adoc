@@ -1,4 +1,3 @@
-
 == Using Maven with the Eclipse IDE
 
 The Eclipse IDE provides excellent support for the Maven. 

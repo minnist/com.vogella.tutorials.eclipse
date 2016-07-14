@@ -1,4 +1,3 @@
-
 == Tutorial: Using a Filter
 	
 		The following adds a filter to the table based on the
@@ -14,8 +13,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/filter/PersonFilter.java" />
-		</programlisting>
+				parse="text" href="../examples/filter/PersonFilter.java[]
+----
 	
 	
 		Add to your search text field a `keyListener`
@@ -33,7 +32,7 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/filter/View.java" />
-		</programlisting>
+				parse="text" href="../examples/filter/View.java[]
+----
 	
 	Run the example, filtering should work.

@@ -1,4 +1,3 @@
-
 == Resources and Marker
 
 Eclipse represents Resources like _Projects_, _Files_, _Folders_, _Packages_ as `IResource`.

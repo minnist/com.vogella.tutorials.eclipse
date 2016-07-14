@@ -1,4 +1,3 @@
-
 == Keyboard-Tabbing
 	
 		This chapter shows how to implement the functionality to navigate from cell to cell
@@ -11,8 +10,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/TabNav.java" />
-		</programlisting>
+				parse="text" href="../examples/TabNav.java[]
+----
 	
 	
 		You can now navigate using your TAB-key. Unfortunately the tabbing stops at the "is Married?"-column.

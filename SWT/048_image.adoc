@@ -1,4 +1,3 @@
-
 == Image
 	Images can be displayed via labels. The following class
 		demonstrates that using some system images.
@@ -7,8 +6,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/image/Photo.java" />
-		</programlisting>
+				parse="text" href="./examples/image/Photo.java[]
+----
 	
 	 The result should look similar to
 		the following.

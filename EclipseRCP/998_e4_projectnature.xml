@@ -1,4 +1,3 @@
-
 == Enable to start your product with right mouse click
 	
 		You can also add the
@@ -50,7 +49,7 @@ image::removefilterfordotfiles10.png"
 	
 		<programlisting language="xml">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/firstrcp/project" />
-		</programlisting>
+				parse="text" href="./examples/firstrcp/project[]
+----
 	
 

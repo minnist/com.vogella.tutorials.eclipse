@@ -1,4 +1,3 @@
-
 == Progress report
 	 If you perform long running operations you should provide the
 		user some information about the long running job. A good way of doing
@@ -11,8 +10,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/progressreport/ShowDialog.java" />
-		</programlisting>
+				parse="text" href="../examples/progressreport/ShowDialog.java[]
+----
 	
 	 Add this command to the menu.
 	 Run the application. Your command should open a dialog which

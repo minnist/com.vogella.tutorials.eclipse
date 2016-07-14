@@ -1,4 +1,3 @@
-
 == Develop a new feature or a bug fix
 
 In this exercise you will learn how to develop a new feature using Git in Eclipse.
@@ -52,7 +51,6 @@ image::register-divide.png[Register Divide class]
 		
 		
 You may also decide to implement something else like polish the SWT or Swing user interface.
-
 
 
 == Test your feature

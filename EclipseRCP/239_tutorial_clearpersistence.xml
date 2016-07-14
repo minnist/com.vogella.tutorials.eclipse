@@ -1,4 +1,3 @@
-
 == Exercise: Configure the deletion of persisted model data
 
 === Delete the persisted user changes at startup

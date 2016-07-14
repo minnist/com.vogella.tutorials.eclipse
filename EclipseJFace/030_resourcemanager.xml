@@ -1,4 +1,3 @@
-
 == JFace resource manager for Colors, Fonts and Images
 
 	<indexterm>
@@ -61,8 +60,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/resource/LocalResourceMananger.txt" />
-		</programlisting>
+				href="./examples/resource/LocalResourceMananger.txt[]
+----
 	
 	
 		The
@@ -78,8 +77,8 @@
 	
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/resource/loadimage.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/resource/loadimage.txt[]
+----
 	
 
 	
@@ -99,8 +98,8 @@
 	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/resource/LocalResourceManangerSelfdispose.java" />
-		</programlisting>
+				href="./examples/resource/LocalResourceManangerSelfdispose.java[]
+----
 	
 	
 		<warning>

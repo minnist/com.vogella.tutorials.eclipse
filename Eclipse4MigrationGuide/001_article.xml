@@ -51,15 +51,15 @@ Version 0.3, 06.07.2016
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="001_purpose.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_compatibilitylayer.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_partial_migration.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="022_reference.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_migration.adoc[]
+include::001_purpose.adoc[]
+include::010_compatibilitylayer.adoc[]
+include::020_partial_migration.adoc[]
+include::022_reference.adoc[]
+include::030_migration.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_mixedmode.adoc[]
+include::050_mixedmode.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

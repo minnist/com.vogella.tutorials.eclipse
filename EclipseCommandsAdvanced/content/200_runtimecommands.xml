@@ -1,4 +1,3 @@
-
 == Defining commands at runtime
 	You can create commands at runtime. Create project
 		"de.vogella.rcp.commands.runtimecommands" using the "Hello RCP"
@@ -21,8 +20,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/runtime/DefineCommands.java" />
-		</programlisting>
+				parse="text" href="../examples/runtime/DefineCommands.java[]
+----
 	
 
 	Run the example, your application should have the Exit command in

@@ -1,4 +1,3 @@
-
 == Using the Gradle Tasks view
 
 After successfully importing a Gradle project, the project is shown in the _Gradle Tasks_ view.

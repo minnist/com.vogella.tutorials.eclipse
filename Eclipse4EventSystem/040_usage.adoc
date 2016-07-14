@@ -1,0 +1,138 @@
+== Sending and receiving events
+
+=== Sending
+
+The
+event
+service can be injected via dependency injection.
+
+[source,text]
+----
+include::res/eventadmin/inject.txt[]
+----
+
+The following code examples assume that you have a class named
+_MyEventConstants_
+defined which contains a static final field (constant) for the
+`TOPIC_TODO_NEW`
+string.
+
+The event service collects all events and
+sends them
+to the
+registered components.
+This can be done
+asynchronously or
+synchronously.
+
+[source,java]
+----
+include::res/eventadmin/asend.java[]
+----
+
+[source,java]
+----
+include::res/eventadmin/ssend.java[]
+----
+
+
+You can now send arbitrary Java objects or primitives through
+the
+event
+bus.
+
+=== Annotations for receiving events
+
+You can use dependency injection to register and respond to
+events.
+If dependency injection is used, the Eclipse framework
+automatically
+removes all
+event subscriptions
+when the model class
+is
+disposed.
+
+The
+`@EventTopic`
+and
+`@UIEventTopic`
+annotations tag methods and fields that should be notified on event
+changes. The
+`@UIEventTopic`
+ensures the event notification is
+performed
+in the user interface
+thread.
+
+[source,java]
+----
+include::res/events/register.java[]
+----
+
+=== Registering listeners for events
+
+An object can also register an instance of the
+`org.osgi.service.event.EventHandler`
+directly with
+the
+`IEventBroker`
+interface
+via the
+`subscribe()`
+method. But this subscription has also to be unsubscribed manually
+afterward by using
+the
+`unsubscribe()`
+method.
+
+TIP:Using dependency injection for subscribing should be
+preferred
+compared to the direct subscription as this way the
+framework handles
+the listener registration and de-registration
+automatically for you.
+
+While using dependency injection is usually the better approach,
+it is sometimes useful to control when to listening to events. An
+example is the situation, when an event should result in a certain
+behavior only once.
+
+[source,java]
+----
+include::res/events/LazyLoadingAddon.java[]
+----
+
+=== Which objects should be send out?
+
+The event system allows sending and receiving objects of an arbitrary
+type.
+In Eclipse applications it is good
+practice to send out events
+with a
+`java.util.Map`
+type because a similar type is also used by the Eclipse framework for
+sending out events. A
+`Map`
+class can be configured with properties to contain more data about
+the event.
+
+=== Subscribing to sub-topics
+
+You can subscribe to specific topics or use wildcards to
+subscribe to
+all sub-events. Sub-events are separated by
+`/`
+. The following example code defines several topics and also the
+`TOPIC_TODO_ALLTOPICS`
+constant which can be used to register for all sub-events.
+
+[source,java]
+----
+include::res/events/MyEventConstants.java[]
+----
+
+
+
+
+

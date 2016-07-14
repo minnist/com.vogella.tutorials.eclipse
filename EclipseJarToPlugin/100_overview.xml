@@ -1,4 +1,3 @@
-
 == JAR files without OSGi meta-data
 	
 		If a JAR file does not contain the OSGi meta-data in the

@@ -1,0 +1,71 @@
+== Communication within your Eclipse application
+
+=== Event based communication
+
+In your application you frequently have the need to communicate
+between application components. This communication should be loosely
+coupled, to remove dependency between the components and to increase
+reuse of these components.
+		
+This can be archived by the subscriber/ publisher model
+implemented as an event system.
+Software
+components
+can
+register for
+specified events and other
+components
+can
+send
+events out. The event system ensures that all registered components receive
+the event they registered for. .
+
+=== The event bus of Eclipse
+		
+For this purpose
+the Eclipse platform
+provides a global event
+based
+communication system, called the
+_event bus_.
+
+Any software component which has access to the event system can
+send out arbitrary events as depicted in the following graphic.
+		
+image::eventbroker10.png[Sending out events with an event broker,pdfwidth=30%]
+		
+The Eclipse platform will make sure that registered components
+receive the messages. The Eclipse platform uses this event system for
+the
+internal
+communication.
+
+=== Event service
+		
+The Eclipse framework provides the event service for event
+communication.
+This service can be accessed via dependency injection
+based on the
+`IEventBroker`
+interface.
+This communication service can also be used
+to
+communicate
+between your
+own application components.
+		
+The Eclipse
+event service
+is based on the OSGi
+_EventAdmin_
+service but has been wrapped with a simpler API.
+
+=== Required plug-ins to use the event service
+		
+The following plug-ins are required to use the
+event service
+functionality:
+
+* `org.eclipse.e4.core.services`
+* `org.eclipse.osgi.services`
+

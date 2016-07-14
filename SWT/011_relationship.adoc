@@ -1,4 +1,3 @@
-
 == Relationship to JFace
 	
 		_JFace_

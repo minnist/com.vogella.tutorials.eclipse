@@ -1,4 +1,3 @@
-
 == User input help with field assistance
 
 
@@ -45,8 +44,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fieldassists/MyView.java" />
-		</programlisting>
+				parse="text" href="./examples/fieldassists/MyView.java[]
+----
 	
 	 If used the result should look similar to the following.
 	

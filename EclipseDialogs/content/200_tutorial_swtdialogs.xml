@@ -1,4 +1,3 @@
-
 == Exercise: Using SWT dialogs
 	
 		The following exercise demonstrates how to use the SWT
@@ -14,8 +13,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/swt/MyComposite.java" />
-		</programlisting>
+				parse="text" href="../examples/swt/MyComposite.java[]
+----
 	
 	In the method which creates your user interface, add this
 		composite to your part as demonstrated in the following code.
@@ -23,8 +22,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/snippets/addComposite.txt" />
-		</programlisting>
+				parse="text" href="../examples/snippets/addComposite.txt[]
+----
 	
 	
 		Run the application. If you select your button the

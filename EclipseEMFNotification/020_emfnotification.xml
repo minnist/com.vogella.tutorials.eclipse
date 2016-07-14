@@ -1,4 +1,3 @@
-
 == Notifications and Adapters with Adapter and
 		EContentAdapter
 	
@@ -18,15 +17,15 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/IPerson.java" />
-		</programlisting>
+				parse="text" href="./examples/notification/IPerson.java[]
+----
 	
 
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/IPersonList.java" />
-		</programlisting>
+				parse="text" href="./examples/notification/IPersonList.java[]
+----
 	
 
 
@@ -52,15 +51,15 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/ElementObserver.java" />
-		</programlisting>
+				parse="text" href="./examples/notification/ElementObserver.java[]
+----
 	
 
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/TotalObserver.java" />
-		</programlisting>
+				parse="text" href="./examples/notification/TotalObserver.java[]
+----
 	
 	
 		Create a main class to test the different behavior and run the
@@ -70,8 +69,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/Main.java" />
-		</programlisting>
+				parse="text" href="./examples/notification/Main.java[]
+----
 	
 
 

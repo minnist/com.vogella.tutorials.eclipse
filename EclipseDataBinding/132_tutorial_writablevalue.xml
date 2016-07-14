@@ -1,4 +1,3 @@
-
 == Tutorial: WritableValue
 	Create a new View in your "de.vogella.databinding.example"
 		plug-in with the following class. Via the buttons you can change the
@@ -8,6 +7,6 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/writable/ViewWritableValue.java" />
-		</programlisting>
+				parse="text" href="./examples/writable/ViewWritableValue.java[]
+----
 	

@@ -1,4 +1,3 @@
-
 == Setting the start level for declarative services
 	
 		If you use OSGi DS services outside Eclipse RCP applications,

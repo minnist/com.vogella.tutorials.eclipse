@@ -1,4 +1,3 @@
-
 == Deploy p2 updatesite to Nexus
 
 === Setup Distribution Management

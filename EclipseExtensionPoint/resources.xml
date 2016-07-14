@@ -1,4 +1,3 @@
-
 == Links and Literature
 	
 
@@ -10,4 +9,4 @@
 			url="http://angelozerr.wordpress.com/2010/09/14/eclipse-extension-points-and-extensions-without-osgi/">Angelo Zerr describes how to use Extension points without OSGi
 	
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
+include::../10_Include/resources.adoc[]

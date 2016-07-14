@@ -1,4 +1,3 @@
-
 == Creating JavaDoc
 	 You can also generate Javadoc for your classes and methods. EMF
 		uses annotations for this with a certain property key. The easiest way

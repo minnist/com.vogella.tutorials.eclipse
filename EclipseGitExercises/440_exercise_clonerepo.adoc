@@ -1,4 +1,3 @@
-
 == Eclipse Git exercise preparation
 
 
@@ -32,7 +31,6 @@ In the _Directory_ field, choose a path where to store the local repository.
 Make sure the _Import all existing projects after clone finishes_ checkbox is selected and click the _Finish_ button.
 		
 image::finish-clone.png[Finish Git clone, 400, 400]    
-
 
 
 == Get familiar with the example projects

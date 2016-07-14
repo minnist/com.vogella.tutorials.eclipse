@@ -40,10 +40,10 @@ Version 0.3, 06.07.2016
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/eclipse3xapi.adoc[]
+include::../10_Include/Eclipse/eclipse3xapi.adoc[]
 include::010_introduction.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/prerequisites/eclipse_prerequisite.adoc[]
+include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]
 include::020_prereqs.adoc[]
 include::090_tutorial_keybinding.adoc[]
 

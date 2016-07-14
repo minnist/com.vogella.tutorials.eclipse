@@ -1,4 +1,3 @@
-
 == Custom install actions (touchpoints) in p2
 	
 The Eclipse p2 functionality invokes actions (touchpoints) when an installable unit is installed, configured, or uninstalled. 

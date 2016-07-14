@@ -1,4 +1,3 @@
-
 == Updating Eclipse RCP applications
 	
 To update your Eclipse 4 application you use the p2 API.

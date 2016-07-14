@@ -1,4 +1,3 @@
-
 == Appendix: Encryption
 	
 		EMF has the possibility to encrypt the data model before writing
@@ -10,15 +9,15 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/IPerson.java" />
-		</programlisting>
+				parse="text" href="../examples/encryption/IPerson.java[]
+----
 	
 	 Create the following factory which sets the option for encryption.
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/MyXMIFactoryImpl.java" />
-		</programlisting>
+				parse="text" href="../examples/encryption/MyXMIFactoryImpl.java[]
+----
 	
 	
 	 Create the following test class. 
@@ -26,8 +25,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/Create.java" />
-		</programlisting>
+				parse="text" href="../examples/encryption/Create.java[]
+----
 	
 
 

@@ -1,4 +1,3 @@
-
 == Convert JAR files to OSGi bundles with Gradle
 	
 		You can also use the Gradle build system to convert JARs to OSGi bundles.
@@ -7,8 +6,8 @@
 	
 	
 		<programlisting language="groovy">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gradle/build.gradle" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gradle/build.gradle[]
+----
 	
 	Run `gradle bundles` to create OSGi bundles from the specified JAR files.
 		Use the `gradle updateSite` task to

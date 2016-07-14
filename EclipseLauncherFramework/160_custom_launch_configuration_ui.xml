@@ -1,4 +1,3 @@
-
 == Launch Configuration UI
 	
 		The ﻿
@@ -42,10 +41,10 @@
 		group.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/custom_ui_launch/SampleTab.java" />
-		</programlisting>
+[source,java]
+----
+include::res/custom_ui_launch/SampleTab.java[]
+----
 	
 	
 		With this tab we can set our
@@ -66,10 +65,10 @@
 		from above.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/custom_ui_launch/SampleTabGroup.java" />
-		</programlisting>
+[source,java]
+----
+include::res/custom_ui_launch/SampleTabGroup.java[]
+----
 	
 	
 		A specific icon for the launch configuration can be defined by using

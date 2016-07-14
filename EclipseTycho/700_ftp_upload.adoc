@@ -1,4 +1,3 @@
-
 == Automatic deployment of a p2 update site with Maven
 
 

@@ -1,5 +1,4 @@
-[eclipsegradle_overview]
-== Eclipse Gradle support
+[eclipsegradle_overview]== Eclipse Gradle support
 
 Gradle Inc., the company behind the Gradle build framework provides Gradle tooling for the Eclipse IDE. 
 This tooling allows to create and import Gradle enabled projects into the Eclipse IDE.

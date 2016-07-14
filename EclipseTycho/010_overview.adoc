@@ -1,4 +1,3 @@
-
 == Using Maven Tycho to build Eclipse components
 
 

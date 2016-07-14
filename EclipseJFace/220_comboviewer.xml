@@ -1,4 +1,3 @@
-
 == JFace ComboViewer
 
 
@@ -16,8 +15,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/Person.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/Person.java[]
+----
 	
 	
 		The following example snippet shows you how you could use this given
@@ -30,8 +29,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/MyView.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/MyView.java[]
+----
 	
 	
 		You can register a listener which is notified whenever the
@@ -44,8 +43,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/SelectionListener.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/SelectionListener.java[]
+----
 	
 
 	You can get and set selections using Java objects based on your
@@ -54,8 +53,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/setget.java" />
-		</programlisting>
+				parse="text" href="./examples/viewer/setget.java[]
+----
 	
 
  

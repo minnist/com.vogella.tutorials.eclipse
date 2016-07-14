@@ -1,4 +1,3 @@
-
 == CTabFolder
 	 CTabFolder and CTabItem allow to create the folder experience
 		with different tabs.
@@ -6,8 +5,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/ctab/CTabFolderExample.java" />
-		</programlisting>
+				parse="text" href="./examples/ctab/CTabFolderExample.java[]
+----
 	
 	
 		If you run this application you will see several register cards with

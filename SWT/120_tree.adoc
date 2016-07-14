@@ -1,11 +1,10 @@
-
 == Tree and Menu
 	 Create the following class. 
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/tree/TreeMenuTest.java" />
-		</programlisting>
+				parse="text" href="./examples/tree/TreeMenuTest.java[]
+----
 	
 	 If you run this application a tree will be display with a menu
 		attached to it. If you select the menu the text of the selected item

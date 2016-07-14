@@ -1,4 +1,3 @@
-
 == Tutorial: Define a declarative OSGi Service
 	 The following will define a DS service based on the quote
 		example. It is therefore required that you have created
@@ -29,8 +28,8 @@
 	
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/QuoteService.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/QuoteService.java[]
+----
 	
 
 	 Open component.xml and select the tab "Source". The final result
@@ -55,8 +54,8 @@
 
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/installds.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/installds.txt[]
+----
 	
 	 Start the bundles manually so that declarative services are
 		available.
@@ -66,8 +65,8 @@
 	
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/servicedsinstall.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/servicedsinstall.txt[]
+----
 	
 
 	 To check if your service was registered use the command

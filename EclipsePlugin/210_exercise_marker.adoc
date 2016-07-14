@@ -1,4 +1,3 @@
-
 == Exercise: Create Markers for resources
 
 Create a plug-in project _de.vogella.plugin.markers_.

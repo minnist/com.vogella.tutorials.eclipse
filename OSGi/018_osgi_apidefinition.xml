@@ -1,4 +1,3 @@
-
 == API definition of a plug-in
 
 	<indexterm>
@@ -81,8 +80,8 @@
 
 	
 		<programlisting language="bourne">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/mani.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/mani.txt[]
+----
 	
 
 	
@@ -143,8 +142,8 @@
 
 	
 		<programlisting language="common">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/friends.txt" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/friends.txt[]
+----
 	
 	
 		The

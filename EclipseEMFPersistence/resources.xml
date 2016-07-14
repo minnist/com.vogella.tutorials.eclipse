@@ -1,7 +1,6 @@
-
 == Links and Literature
 	
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/emf-resources.adoc[]
+include::../10_Include/Eclipse/emf-resources.adoc[]
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.adoc[]
+include::../10_Include/resources.adoc[]

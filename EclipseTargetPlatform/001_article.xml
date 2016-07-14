@@ -55,11 +55,11 @@ Version 0.3, 06.07.2016
 
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_definition.adoc[]
+include::010_overview.adoc[]
+include::012_definition.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_tutorial_setup.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::020_tutorial_setup.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

@@ -1,4 +1,3 @@
-
 == Exercise: Contribute a preference page to the Eclipse IDE
 	NOTE:
 		
@@ -58,8 +57,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/preferencepage/MyPreferencePage1.java" />
-		</programlisting>
+				href="./examples/preferencepage/MyPreferencePage1.java[]
+----
 	
 
 	 Start a runtime Eclipse IDE with your plug-in and ensure that
@@ -95,8 +94,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/preferencepage/ShowPreferenceValues.java" />
-		</programlisting>
+				href="./examples/preferencepage/ShowPreferenceValues.java[]
+----
 	
 	
 		To set the default values for preferences use the extension
@@ -110,8 +109,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/preferencepage/MyInitializer.java" />
-		</programlisting>
+				href="./examples/preferencepage/MyInitializer.java[]
+----
 	
 	
 		Finally create a new
@@ -128,6 +127,6 @@
 	
 	
 		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferencepage/View.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferencepage/View.java[]
+----
 	

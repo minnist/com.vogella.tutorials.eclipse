@@ -1,4 +1,3 @@
-
 ==  Git exercise preparation
 
 
@@ -7,7 +6,6 @@
 Use the `git clone` command to clone the Git repo from:
 		
 https://github.com/vogellacompany/gittraining-sample.git
-
 == Get familiar with the example projects
 
 The example repository contains two projects:

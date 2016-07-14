@@ -1,5 +1,4 @@
-
-== Detached Head and Reflog
+== Detached Head and Reflog
 	Once you get used to git you appreciate that git does not throw away anything which is added to the
 		repository.
 		For example, if a commit is not reachable from any branch or reference, it is still there in the repository.

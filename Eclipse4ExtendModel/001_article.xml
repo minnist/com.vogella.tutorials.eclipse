@@ -44,14 +44,14 @@ Version 0.3, 06.07.2016
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_prerequisites.adoc[]
+include::010_overview.adoc[]
+include::020_prerequisites.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_extendmodel.adoc[]
+include::100_extendmodel.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_createrenderer.adoc[]
+include::200_createrenderer.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="300_application.adoc[]
+include::300_application.adoc[]
 	
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

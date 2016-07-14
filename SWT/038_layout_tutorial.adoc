@@ -1,4 +1,3 @@
-
 == Example: Using layout manager
 	
 		The following shows an example for the usage of the
@@ -10,8 +9,8 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/gridlayout/GridLayoutSWT.java" />
-		</programlisting>
+				parse="text" href="./examples/gridlayout/GridLayoutSWT.java[]
+----
 	
 	 Start your application, it should look similar to the following
 		screenshot.

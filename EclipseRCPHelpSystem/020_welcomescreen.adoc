@@ -1,2 +1,1 @@
-
 == Contribute to the welcome screen

@@ -1,4 +1,3 @@
-
 == Eclipse Tycho resources
 
 https://wiki.eclipse.org/Tycho/Release_Notes - Tycho release notes

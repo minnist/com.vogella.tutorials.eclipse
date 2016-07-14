@@ -10,7 +10,6 @@ Version 0.3, 06.07.2016
 :vgwort: 
 
 [abstract]
-
 == Properties of a Project
     Each project also has properties, which can be configured.
     You can access these properties from the last menu item of the context menu of a project,

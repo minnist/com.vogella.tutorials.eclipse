@@ -1,4 +1,3 @@
-
 == Using the JPA in an OSGi environment
 	
 		The usage of JPA to access a database, either embedded or standalone, requires a special setup, as you must
@@ -32,8 +31,8 @@
 	
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/osgi_jpa.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/osgi/osgi_jpa.java[]
+----
 	
 	
 		<mediaobject>

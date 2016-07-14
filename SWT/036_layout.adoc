@@ -1,4 +1,3 @@
-
 == Using layout managers in SWT
 
 === The role of a layout manager

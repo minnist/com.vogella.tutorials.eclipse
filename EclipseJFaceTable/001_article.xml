@@ -45,18 +45,18 @@ Version 0.3, 06.07.2016
 	</articleinfo>
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_prerequisites.adoc[]
+include::010_overview.adoc[]
+include::012_prerequisites.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_tutorial_jfacetable.adoc[]
+include::100_tutorial_jfacetable.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/Eclipse/e4info.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="download.adoc[]
+include::download.adoc[]
 
 
 adoc[]

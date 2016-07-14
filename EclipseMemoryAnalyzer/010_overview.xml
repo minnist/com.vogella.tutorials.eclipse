@@ -1,4 +1,3 @@
-
 == Analyzing memory leaks with Eclipse
 
 === Using heap dumps to get a snapshot of the memory of an application

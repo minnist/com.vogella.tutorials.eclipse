@@ -1,0 +1,7 @@
+== Tycho and m2e
+
+To use the Eclipse m2e plug-in easily with Tycho, it is recommended to install the M2E Tycho connectors.
+
+You find the latest version of this connector via the following update site:
+
+http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.0/N/LATEST/

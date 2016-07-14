@@ -1,0 +1,17 @@
+== Eclipse 4 resources
+
+http://wiki.eclipse.org/Eclipse4/RCP - Eclipse 4 RCP Wiki
+	
+http://wiki.eclipse.org/Eclipse4/RCP/FAQ - Eclipse 4 RCP FAQ
+	
+http://www.vogella.com/eclipse.html - vogella Eclipse Tutorials
+	
+http://wiki.eclipse.org/Eclipse4/Tutorials - Eclipse wiki with Eclipse 4 tutorials
+	
+http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection -Eclipse 4 Dependency Injection Wiki
+	
+http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags - Eclipse 4 RCP Wiki for tags for the Application model
+	
+http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html - Eclipse 4 Build Schedule
+	
+	

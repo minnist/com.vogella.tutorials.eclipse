@@ -1,0 +1,137 @@
+== Eclipse API best practice
+
+=== Application communication
+
+A simple way of propagating user interface selections is the
+selection service (
+`ESelectionService`
+) of the Eclipse platform. Use this service to
+propagate the current
+selection of a window.
+
+For general scoped communication it is recommended to use the
+Eclipse
+context (
+`IEclipseContext`
+).
+
+The event service (
+`IEventBroker`
+)
+is a good choice, if there is no scope involved in the
+communication
+and if the events should not be persisted in the
+Eclipse context. The
+strengths of
+the event service
+is
+that arbitrary
+listeners can listen to
+events and that the
+publish
+and
+subscribe mechanism is relatively
+simple.
+
+Frequently the event service is also used together with a
+modification of the Eclipse context. The following
+section contains
+an example for this.
+
+=== Example: Using events together with the IEclipseContext
+
+The following example demonstrates the registration for events
+and how the provided information is used to modify
+the context.
+
+Assume that on every change of the active part you want to place a
+variable called
+_myactivePartId_
+into the
+`IEclipseContext`
+. This can be done via the following code.
+
+[source,java]
+----
+include::res/eventadmin/activate2.java[]
+----
+
+This context variable can be used
+to define a visible-when clause
+which can be used to
+restrict the visibility of
+menus and toolbars.
+
+[source,xml]
+----
+include::res/eventadmin/plugin.xml[]
+----
+
+image::event_visibility10.png[Restrict the visibility of a command,pdfwidth=35%]
+
+=== Which dependency injection approach to use for your implementation
+
+The application can add or modify the behavior of the dependency injection
+mechanisms. You
+have several options for
+this. The most common approaches are the following:
+
+* OSGi services
+* Context modifications of the Eclipse context 
+* Context functions
+* Extended object suppliers for custom annotations
+* Model add-ons
+
+All are valid options for your implementation. 
+The programming model of Eclipse 4 makes it easy to
+create and
+use OSGi services. OSGi services do not have access
+to the Eclipse
+application context.
+OSGi services are a good approach for
+infrastructure
+services.
+
+Context functions allow you to create objects based on the
+Eclipse context. They also allow you to persist the
+created object
+in the context hierarchy.
+If access to the context is required, you use
+context functions instead
+of
+pure
+OSGi services.
+
+Storing the key/value pairs in the Eclipse context (as context elements or
+context variables)
+allows you to persist
+them in the hierarchy and to
+propagate them to
+elements down in the relevant hierarchy. You can
+also replace
+(override)
+Eclipse platform implementations in the
+context. For
+example you can change the default
+window
+close handler.
+
+Via extended object suppliers you can define your custom
+annotations and provide processors for them. Extended
+object
+supplier do not have access to the Eclipse context, but can access
+data from different sources. For example, you
+could implement a
+provider for preferences which are stored in the network instead of
+the file system.
+
+Model add-ons
+allow you to contribute Java objects to the
+application
+model. A
+model add-on registers itself typically to
+events from the
+`IEclipseBroker`
+and
+can contribute functionality based on these events.
+

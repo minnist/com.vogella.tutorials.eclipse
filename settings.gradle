@@ -30,4 +30,4 @@ include 'Eclipse3RCP'
 include 'Eclipse4ApplicationModelData'
 include 'Eclipse4ContextFunctions'
 include 'Eclipse4ContextUsage'
-
+include 'Eclipse4DevelopmentPractises'

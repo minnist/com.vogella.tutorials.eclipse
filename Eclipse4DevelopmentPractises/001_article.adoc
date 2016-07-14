@@ -1,0 +1,26 @@
+= Eclipse 4 development practices - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 7.1, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4DevelopmentPractises
+
+[abstract]
+Eclipse application development practices.
+This tutorial gives an overview about development practices with the Eclipse 4 application platform.
+			
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::920_besteclipse4practice.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::921_besteclipse4practice.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+	
+

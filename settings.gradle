@@ -27,4 +27,5 @@ include 'EclipseJDT'
 include 'Eclipse4Adapter'
 include 'Eclipse'
 include 'Eclipse3RCP'
+include 'Eclipse4ApplicationModelData'
 

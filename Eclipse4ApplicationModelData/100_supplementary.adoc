@@ -1,0 +1,128 @@
+== Persisted model attributes
+
+=== Adding additional information on the model elements
+
+The
+_Supplementary_
+tab in the application model editor allows you to enter additional
+information
+about the selected
+model element. This data can also be
+modified and accessed via Eclipse API.
+
+=== Tags
+
+All model elements can have
+_tags_
+assigned to them.
+These
+tags
+can be used by the Eclipse platform or by
+other code to trigger
+functionality.
+
+Tags
+are automatically persisted by the Eclipse runtime between
+application restarts and are
+represented as a
+`List`
+of type
+`String`
+.
+
+[TIP]
+==== 
+Tags are also available to the CSS Engine as additional class
+selectors.
+For
+example, the currently active part is tagged as
+_active_
+at runtime
+and the CSS engine allows to style components
+based on
+this with the
+selector
+`.MPartStack.active`
+. If you want to use tag as CSS selectors, don't use whitespace in
+them.
+
+You can define your own tags and define CSS for this. This is a
+great way to allow custom CSS to be
+integrated into
+the
+model.
+====
+
+By default, Eclipse uses some predefined
+_tags_
+to determine the state of certain model elements. For example, the
+_shellMaximized_
+and
+_shellMinimized_
+tag on a
+_Window_
+is used by Eclipse to determine if the
+_Window_
+should be maximized or minimized.
+
+The following screenshot shows how to define the
+maximization of a
+_Window_
+model element.
+
+image::supplementary10.png[Supplementary info for a Window to set it to maximize.,pdfwidth=60%]
+
+=== Variables
+
+You can also define
+_Variables_
+in the
+_Supplementary_
+tab which can be used as
+_context variables_
+. If you use this approach, Eclipse creates keys in the context which
+are marked as modifiable (by descendants).
+See the Eclipse RCP tutorial 
+for the concept of dependency injection.
+
+=== Persisted state
+
+Model elements can have persisted state key/value pairs assigned
+to them. If you
+retrieve the model element, you can get and set this
+persisted state.
+
+[source,java]
+----
+include::res/supplementary/persists.java[]
+----
+
+Persisted data for model elements is automatically restored by
+the Eclipse
+application between application restarts and allows to
+store key/values pairs based on Strings.
+
+Persisted state data can also be used by the Eclipse framework
+to
+define or change the application behavior.
+
+=== Transient data
+
+Each model element can also attach transient data to it.
+This
+transient data is based on a
+`<![CDATA[Map<String , Object>]]>`
+structure and can be accessed on the model object via the
+`getTransientData()`
+method.
+
+Transient data is not persisted between application restarts and
+needs to be generated at
+runtime.
+
+As transient data is not persisted, it can not be assigned to
+model
+elements via the application model editor, you need to use the
+`getTransientData()`
+method.
+

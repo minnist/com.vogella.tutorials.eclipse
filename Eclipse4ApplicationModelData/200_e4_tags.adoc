@@ -1,0 +1,63 @@
+== Relevant tags and persisted state keys in the application model
+
+The following table lists the most important tags
+for model
+elements of
+Eclipse 4 applications.
+
+Additional tags are defined in the
+`IPresentationEngine`
+interface. It is up to the renderer implementation and model add-ons to
+interpret these tags. Renderer might also
+define additional tags. You
+also find more information about the available tags in the Eclipse 4
+Wiki (see resources for
+link).
+
+.Relevant tags of application model elements
+|===
+|Tag |Model element |Description
+
+|_shellMaximized_
+|_Window_ or _Trimmed Window_
+|Window is maximized at start of the application.
+
+|_shellMinimized_
+|_Window_ or _Trimmed Window_
+|Window is minimized at start of the application.
+
+|_NoAutoCollapse_
+|_PartStack_
+|Can be added to a _PartStack_ container. 
+With this flag the _PartStack_ is not collapsed by the _MinMax_ add-on even if you remove allparts from it.
+Another tag, which is used frequently, is the
+_NoAutoCollapse_
+tag which you can add to a
+
+|_FORCE_TEXT_
+|_ToolItem_
+|Enforces that text and icon are shown for a toolbar item.
+
+|_NoMove_
+|Part
+|Prevents the user from moving the part. This tag is evaluated by the
+_DnDAddon_
+class which handles drag and drop by default in the Eclipse platform.
+
+|_styleOverride_
+|_MWindow_ or _MPartStack_
+|Allows to define the style bits of the user interface control. For
+example, to create an SWT shell which cannot be
+resized,
+you need to
+supply the integer value for <![CDATA[SWT.SHELL_TRIM & (~SWT.RESIZE)]]>
+, which is 1248 on the
+_MWindow_
+application element.
+If, for example, your
+_MPartStack_
+should
+render its tab below the
+parts, use 1024.
+|===
+

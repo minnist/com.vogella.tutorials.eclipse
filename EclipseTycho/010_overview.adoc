@@ -112,18 +112,6 @@ The following listing contains an example pom file for a plug-in.
         
 [source,xml]
 ----
-= Android - Tutorial
-:linkcss:
-:sectnums:                                                          
-:experimental:
-:icons:
-:imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
-:docinfodir: ../
-:vgwort: 
-
-[abstract]
 <project>
     <modelVersion>4.0.0</modelVersion>
 
@@ -142,15 +130,10 @@ Version 0.3, 06.07.2016
 </project>
 ----
 
-
-
-
-		
-
 === Good practice for Eclipse components organization
 
 To have some separation of the plug-ins a good practice is to have separate folders on the file system for them.
-		
+
 image::tychosetup10.png[Tycho project setup]
 		
 In a Tycho build it is good practice to create a configuration pom file. 

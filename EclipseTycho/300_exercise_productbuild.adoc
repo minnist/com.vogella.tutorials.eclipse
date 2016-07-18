@@ -66,12 +66,19 @@ include::res/rcp/com.vogella.tycho.rcp.product[]
 
 To ensure that your product can be executed after the build, set the start levels and the auto-start flag for important plug-ins.
 You can do this via the product configuration file on the _Configuration_ tab.
-		
+
 [source,plain]
 ----
-include::res/rcp/startlevel.txt[]     
-----    
+include::res/rcp/startlevel.txt[]
+----
 
+image::product-start-level.png[]
+
+NOTE: If you get the following stack trace, when starting the built product, you likely have an incorrect start-level configuration.
+[source, java]
+----
+include::res/rcp/start-level-incorrect-trace.txt[]
+----
 
 === Update releng pom
 

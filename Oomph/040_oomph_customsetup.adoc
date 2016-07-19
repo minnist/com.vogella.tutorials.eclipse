@@ -10,11 +10,11 @@ Additional user setups can be added by using the green plus button besides the _
 
 Depending on the chosen profiles there will be some extra variables for the installation on the next page.
 
-image::oomph-installer-variables.png[]
+image::oomph-installer-variables.png[pdfwidth=40%]
 
 After the variables are configured properly the last wizard page will give an overview about the setup tasks.
 
-image::oomph-installer-setup-tasks.png[]
+image::oomph-installer-setup-tasks.png[pdfwidth=40%]
 
 
 === Creating a new profile
@@ -24,11 +24,11 @@ You can use the update manager for that.
 
 Select menu:File[New->Others...|Setup Project Model].
 
-image::oomph_customprofile10.png[]
+image::oomph_customprofile10.png[pdfwidth=40%]
 
-image::oomph_customprofile20.png[]
+image::oomph_customprofile20.png[pdfwidth=40%]
 
-image::oomph_customprofile30.png[]
+image::oomph_customprofile30.png[pdfwidth=40%]
 
 
 See https://wiki.eclipse.org/Eclipse_Oomph_Authoring for detailed information about the detailed configuration.

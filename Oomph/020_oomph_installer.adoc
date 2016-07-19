@@ -4,9 +4,9 @@
 
 The Oomph installer can be found on http://www.eclipse.org/downloads/
 
-image::oomph-download10.png[]
+image::oomph-download10.png[pdfwidth=40%]
 
-image::oomph-download20.png[]
+image::oomph-download20.png[pdfwidth=40%]
 
 The oomph installer itself is a small Eclipse application and about 44 MB in terms of size. 
 
@@ -14,17 +14,17 @@ The oomph installer itself is a small Eclipse application and about 44 MB in ter
 
 When starting the Oomph installer a certain EPP can be chosen and configured.
 
-image::oomph-installer.png[]
+image::oomph-installer.png[pdfwidth=40%]
 
 === Chose and use profiles
 
 In order to work with the previously mentioned profiles, one can switch to the _ADVANCED MODE..._
 
-image::oomph-installer-advanced.png[]
+image::oomph-installer-advanced.png[pdfwidth=40%]
 
 In the advanced mode a certain EPP can also be chosen and when pressing btn:[Next >] a certain profile can be chosen.
 
-image::oomph-installer-profiles.png[]
+image::oomph-installer-profiles.png[pdfwidth=40%]
 
 
 Once btn:[Finish] has been clicked all the tasks will be processed and a pre-configured Eclipse installation will be started.

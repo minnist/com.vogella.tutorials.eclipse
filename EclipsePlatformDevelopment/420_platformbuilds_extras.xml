@@ -138,8 +138,7 @@
 			parameter in
 			the
 			case of Linux. List of options available at
-			<ulink
-				url="https://wiki.eclipse.org/Platform-releng/Platform_Build#Building_natives">Building natives
+https://wiki.eclipse.org/Platform-releng/Platform_Build#Building_natives">Building natives
 			.
 		
 
@@ -152,8 +151,7 @@
 			plug-ins
 			to
 			speed up the build process. See the
-			<ulink
-				url="http://pkgs.fedoraproject.org/cgit/eclipse.git/tree/eclipse.spec#n366">Fedora build script
+http://pkgs.fedoraproject.org/cgit/eclipse.git/tree/eclipse.spec#n366">Fedora build script
 			.
 		
 

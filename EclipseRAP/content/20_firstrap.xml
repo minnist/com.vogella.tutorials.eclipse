@@ -80,8 +80,7 @@ image::firstrap40.gif" />
 			"de.vogella.rap.first.View". The procedure is the
 			same as for Eclipse
 			RCP application which is described in 
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#views"> Adding views to Eclipse RCP applications
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#views"> Adding views to Eclipse RCP applications
 			.
 		
 
@@ -108,11 +107,9 @@ image::firstrap40.gif" />
 			you want
 			to learn how you can extend your Eclipse RAP application
 			you can review
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP Tutorial
+http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP Tutorial
 			or
-			<ulink
-				url="http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
 		
 		 Of course Eclipse RAP does only support a subset of these API
 			(but this is

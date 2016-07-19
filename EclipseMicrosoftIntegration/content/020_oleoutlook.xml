@@ -5,8 +5,7 @@
 === Create Project
 		
 			Create a new project "de.vogella.microsoft.outlook". See
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
 			> Eclipse RCP
 			for details. Use the "Hello RCP " as a template.
 		
@@ -16,8 +15,7 @@
 		
 			Using extensions create the command
 			"de.vogella.microsoft.outlook.sendEmail" and add it to the menu. See
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#commands"
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#commands"
 			> Eclipse command
 			for details. Program the default handler
 			"de.vogella.microsoft.outlook.handler.SendEmail"

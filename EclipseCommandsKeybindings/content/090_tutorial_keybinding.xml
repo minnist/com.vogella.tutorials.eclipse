@@ -46,8 +46,7 @@ image::keybinding30.gif" />
 		
 		
 			Define a product. See
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#product">
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#product">
 				Defining a product for Eclipse RCP
 			for details. Create the following file "plugin_customization.ini" and put it
 			in your main directory

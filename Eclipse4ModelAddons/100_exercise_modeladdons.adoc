@@ -1,0 +1,21 @@
+== Exercise: Model add-on to remember the last focused widget
+
+=== Target: Create focus model add-on
+		
+Currently your
+`@Focus`
+methods places the focus on the same widget every time the user
+switches focus. In this exercise you create a model add-on which
+places the last selected widget into the context and restores this
+last user selection.
+
+=== Implementation: Create the model add-on
+		
+See
+http://blog.vogella.com/2013/11/21/the-small-details-in-life-the-focus-restore/ - vogella blog post for a description how to create this new model add-on. 
+
+		
+
+	
+
+

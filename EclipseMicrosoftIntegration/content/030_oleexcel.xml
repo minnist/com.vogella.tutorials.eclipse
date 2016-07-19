@@ -3,8 +3,7 @@
 === Create Project
 		
 			Create a new project "ExcelTest". See 
-			<ulink
-				url="http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
 			> Eclipse RCP
 			for details. Use the "RCP with a view" as a
 			template. Run it and see that is working.

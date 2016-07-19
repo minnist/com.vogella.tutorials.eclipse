@@ -56,8 +56,7 @@ include::res/api/timeout.txt[]
 		
 			Testing an application with a login screen is currently not supported
 			by SWTBot. See
-			<ulink
-				url="http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ
+http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ
 			.
 		
 	</warning>

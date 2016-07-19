@@ -5,26 +5,22 @@ include::../10_Include/resources.adoc[]
 
 === Eclipse RAP
 		
-			<ulink
-				url="http://www.eclipse.org/rap">
+http://www.eclipse.org/rap">
 				http://www.eclipse.org/rap
 			Eclipse RAP homepage
 		
 		
-			<ulink
-				url="http://wiki.eclipse.org/RAP">
+http://wiki.eclipse.org/RAP">
 				http://wiki.eclipse.org/RAP
 			Eclipse RAP Wiki
 		
 		
-			<ulink
-				url="http://wiki.eclipse.org/RAP_Theming">
+http://wiki.eclipse.org/RAP_Theming">
 				http://wiki.eclipse.org/RAP_Theming
 			Eclipse RAP Theming Wiki
 		
 		
-			<ulink
-				url="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/">
+http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/">
 				http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/
 			Eclipse RAP article Part from IBU
 		

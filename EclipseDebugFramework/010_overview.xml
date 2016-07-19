@@ -28,8 +28,7 @@ Version 0.3, 06.07.2016
 		
 		
 			In addition to the basics another requirement is the
-			<ulink
-				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
+http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
 			tutorial, which should be read beforehand.
 		
 	
@@ -150,8 +149,7 @@ include::res/RegisterDebugTarget.java[]
 			A general overview concerning the launcher framework can be found
 			in
 			the
-			<ulink
-				url="http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
+http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining custom launcher for the Eclipse IDE
 			tutorial.
 		
 	

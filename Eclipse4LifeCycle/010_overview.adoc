@@ -1,0 +1,146 @@
+== Eclipse application life cycle
+
+=== Connecting to the Eclipse application life cycle
+
+If an
+application is
+started or stopped, it typically requires
+some
+central setup or shutdown. For example you want
+to connect to a
+database or
+close the database connection.
+
+The Eclipse platform allows you
+to register a class for
+predefined events
+of
+this
+life cycle.
+For example
+you can
+use
+these
+life
+cycle
+hooks to create a
+login
+screen or an interactive splash screen
+before
+the
+application is
+started.
+
+=== Accessing application startup parameters
+
+The
+`IApplicationContext`
+object which can be injected into your life cycle class contains
+information about the startup parameters of your
+application. You can
+access these parameters via the
+`getArguments()`
+method.
+
+The access is demonstrated by the following snippet.
+
+[source,java]
+----
+include::res/arguments/access.java[]
+----
+
+A parameter can be a flag or can have a parameter and a value.
+You can use a method similar to the following to
+evaluate this.
+
+[source,java]
+----
+include::res/arguments/getValue.java[]
+----
+
+=== Close static splash screen
+
+If you configured in your product configuration file that a static
+splash screen should be used, you can call the
+`applicationRunning()`
+method on the
+`IApplicationContext`
+object. You typically call this method if you want to replace the
+static splash screen with a dynamic screen developed
+with SWT.
+
+=== How to implement a life cycle class
+
+The
+`org.eclipse.core.runtime.product`
+extension point allows you to define a
+class as life cycle callback
+via a
+property.
+
+The key for this property is
+`lifeCycleURI`
+and it
+points to the class via the
+`bundleclass://`
+schema.
+
+In the class
+you can annotate methods with the following
+annotations. These
+methods are called by the framework
+depending on
+the
+life cycle of
+your application.
+
+.Life cycle annotations
+|===
+|Annotation |Description
+
+|@PostContextCreate
+|Is called after the Application’s
+`IEclipseContext`
+is created, can be used to add objects, services, etc. to the
+context.
+This context is created for the
+`MApplication`
+class.
+
+|@ProcessAdditions
+|Is called directly before the model is passed to the
+renderer, can be used to add additional elements to
+the model.
+
+|@ProcessRemovals
+|Same as @ProcessAdditions but for removals.
+
+|@PreSave
+|Is called before the application model is saved. You can
+modify the model before it is persisted.
+|===
+
+=== Example life cycle implementation
+
+The following example shows how to register a class in your
+_plugin.xml_
+file as life cycle handler. To avoid that the code wraps we use
+`testing`
+as BundleSymbolicName and package, you need to replace that with the correct values for your life cycle class.
+
+[source,xml]
+----
+include::res/life/plugin.xml[]
+----
+
+The following class displays a
+`Shell`
+until the startup process of your application has finished.
+You could
+extend this example to show a progress bar.
+
+[source,java]
+----
+include::res/life/LifeCycleManager.java[]
+----
+

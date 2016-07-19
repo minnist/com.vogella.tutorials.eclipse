@@ -6,3 +6,140 @@ It can also define that it accepts a transfer type as destination.
 Eclipse provides several pre-defined transfer types. 
 To define your custom transfer type it is recommended to subclass the `org.eclipse.swt.dnd.ByteArrayTransfer` class.
 
+A `drag source` is the provider of the drag and drop data as well as the originator of the drag and drop operation. 
+A `drop target` receives data in a drag and drop operation. 
+The drop target receives the data provided by the drag source.
+it can be another location in the same widget, a different widget, or a different application. 
+For example, you can drag text from your application and drop it on an email application, or you could drag an item in a tree and drop it below a different node in the same tree.
+
+The following demonstrates how to provide text data from a label.
+
+[source,java]
+----
+import org.eclipse.swt.dnd.*;
+ 
+// Enable a label as a Drag Source
+final Label dragLabel = new Label(shell, SWT.BORDER);
+dragLabel.setText("text to be transferred");
+	 
+// Allow data to be copied or moved from the drag source
+int operations = DND.DROP_MOVE | DND.DROP_COPY;
+DragSource source = new DragSource(dragLabel, operations);
+
+// Provide data in Text format
+Transfer[] types = new Transfer[] {TextTransfer.getInstance()};
+source.setTransfer(types);
+ 
+source.addDragListener(new DragSourceListener() {
+public void dragStart(DragSourceEvent event) {
+   // Only start the drag if there is actually text in the
+   // label - this text will be what is dropped on the target.
+   if (dragLabel.getText().length() == 0) {
+           event.doit = false;      
+   }
+  }
+	   public void dragSetData(DragSourceEvent event) {
+	     // Provide the data of the requested type.
+	     if (TextTransfer.getInstance().isSupportedType(event.dataType)) {
+	          event.data = dragLabel.getText();
+	     }
+	   }
+	   public void dragFinished(DragSourceEvent event) {
+	     // If a move operation has been performed, remove the data
+	     // from the source
+	     if (event.detail == DND.DROP_MOVE)
+	         dragLabel.setText("");
+	     }
+	   }
+});
+----
+
+[source,java]
+----
+import org.eclipse.swt.dnd.*;
+2	 
+3	// Enable a table as a Drop Target
+4	final Table dropTable = new Table(shell, SWT.BORDER);
+5	for (int i = 0; i < 10; i++) {
+6	    TableItem item = new TableItem(dropTable, SWT.NONE);
+7	    item.setText("item" + I);
+8	}
+9	 
+10	// Allow data to be copied or moved to the drop target
+11	operations = DND.DROP_MOVE | DND.DROP_COPY | DND.DROP_DEFAULT;
+12	DropTarget target = new DropTarget(dropTable, operations);
+13	 
+14	// Receive data in Text or File format
+15	final TextTransfer textTransfer = TextTransfer.getInstance();
+16	final FileTransfer fileTransfer = FileTransfer.getInstance();
+17	types = new Transfer[] {fileTransfer, textTransfer};
+18	target.setTransfer(types);
+19	 
+20	target.addDropListener(new DropTargetListener() {
+21	  public void dragEnter(DropTargetEvent event) {
+22	     if (event.detail == DND.DROP_DEFAULT) {
+23	         if ((event.operations & DND.DROP_COPY) != 0) {
+24	             event.detail = DND.DROP_COPY;
+25	         } else {
+26	             event.detail = DND.DROP_NONE;
+27	         }
+28	     }
+29	     // will accept text but prefer to have files dropped
+30	     for (int i = 0; i < event.dataTypes.length; i++) {
+31	         if (fileTransfer.isSupportedType(event.dataTypes[i])){
+32	             event.currentDataType = event.dataTypes[i];
+33	             // files should only be copied
+34	             if (event.detail != DND.DROP_COPY) {
+35	                 event.detail = DND.DROP_NONE;
+36	             }
+37	             break;
+38	         }
+39	     }
+40	   }
+41	   public void dragOver(DropTargetEvent event) {
+42	        event.feedback = DND.FEEDBACK_SELECT | DND.FEEDBACK_SCROLL;
+43	        if (textTransfer.isSupportedType(event.currentDataType)) {
+44	            // NOTE: on unsupported platforms this will return null
+45	            Object o = textTransfer.nativeToJava(event.currentDataType);
+46	            String t = (String)o;
+47	            if (t != null) System.out.println(t);
+48	        }
+50	    }
+51	    public void dragOperationChanged(DropTargetEvent event) {
+52	        if (event.detail == DND.DROP_DEFAULT) {
+53	            if ((event.operations & DND.DROP_COPY) != 0) {
+54	                event.detail = DND.DROP_COPY;
+55	            } else {
+56	                event.detail = DND.DROP_NONE;
+57	            }
+58	        }
+59	        // allow text to be moved but files should only be copied
+60	        if (fileTransfer.isSupportedType(event.currentDataType)){
+61	            if (event.detail != DND.DROP_COPY) {
+62	                event.detail = DND.DROP_NONE;
+63	            }
+64	        }
+65	    }
+66	    public void dragLeave(DropTargetEvent event) {
+67	    }
+68	    public void dropAccept(DropTargetEvent event) {
+69	    }
+70	    public void drop(DropTargetEvent event) {
+71	        if (textTransfer.isSupportedType(event.currentDataType)) {
+72	            String text = (String)event.data;
+73	            TableItem item = new TableItem(dropTable, SWT.NONE);
+74	            item.setText(text);
+75	        }
+76	        if (fileTransfer.isSupportedType(event.currentDataType)){
+77	            String[] files = (String[])event.data;
+78	            for (int i = 0; i < files.length; i++) {
+79	                TableItem item = new TableItem(dropTable, SWT.NONE);
+80	                item.setText(files[i]);
+81	            }
+82	        }
+83	    }
+84	});
+-----
+
+
+

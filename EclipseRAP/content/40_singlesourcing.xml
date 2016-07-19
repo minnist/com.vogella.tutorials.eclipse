@@ -1,8 +1,7 @@
 == Single Sourcing
 	
 		With Eclipse RAP it is possible to develop a desktop application
-		<ulink
-			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
+http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
 		and a web application with the same source code. This is called single
 		sourcing.
 	

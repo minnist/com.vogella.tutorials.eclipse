@@ -1,38 +1,32 @@
 == Eclipse i18n resources
 	
-		<ulink
-			url="http://blog.vogella.com/2013/05/03/eclipse-internationalization-part-14-current-situation-by-dirk-fauth/">
+http://blog.vogella.com/2013/05/03/eclipse-internationalization-part-14-current-situation-by-dirk-fauth/">
 			Eclipse 4 internationalization by Dirk Fauth - Part 1
 		
 	
 	
-		<ulink
-			url="http://blog.vogella.com/2013/05/22/eclipse-internationalization-part-24-new-message-extension-by-dirk-fauth-and-tom-schindl/">
+http://blog.vogella.com/2013/05/22/eclipse-internationalization-part-24-new-message-extension-by-dirk-fauth-and-tom-schindl/">
 			Eclipse 4 internationalization by Dirk Fauth - Part 2
 		
 	
 
 	
-		<ulink
-			url="http://blog.vogella.com/2013/06/25/eclipse-internationalization-part-34-migration-by-dirk-fauth/">
+http://blog.vogella.com/2013/06/25/eclipse-internationalization-part-34-migration-by-dirk-fauth/">
 			Eclipse 4 internationalization by Dirk Fauth - Part 3
 		
 	
 	
-		<ulink
-			url="http://blog.vogella.com/2013/08/12/eclipse-internationalization-part-44-new-features-by-dirk-fauth/">
+http://blog.vogella.com/2013/08/12/eclipse-internationalization-part-44-new-features-by-dirk-fauth/">
 			Eclipse 4 internationalization by Dirk Fauth - Part 4
 		
 	
 	
-		<ulink
-			url="http://code.google.com/javadevtools/wbpro/features/internationalization.html">
+http://code.google.com/javadevtools/wbpro/features/internationalization.html">
 			Internationalization with the WindowBuilder
 		
 	
 	
-		<ulink
-			url="http://www.eclipse.org/articles/Article-Internationalization/how2I18n.html">
+http://www.eclipse.org/articles/Article-Internationalization/how2I18n.html">
 			How to Internationalize your Eclipse Plug-In
 		
 	
@@ -43,8 +37,7 @@
 		
 	
 	
-		<ulink
-			url="http://git.eclipse.org/c/platform/eclipse.platform.ui.git/tree/bundles/org.eclipse.jface/src/org/eclipse/jface/messages.properties">
+http://git.eclipse.org/c/platform/eclipse.platform.ui.git/tree/bundles/org.eclipse.jface/src/org/eclipse/jface/messages.properties">
 			Git location of the JFace message.properties
 		
 	

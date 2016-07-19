@@ -4,12 +4,10 @@
 		_Eclipse Sleak_
 		monitors the creation and disposal of SWT graphics
 		resources. Get it from the
-		<ulink
-			url="http://www.eclipse.org/swt/tools.php">
+http://www.eclipse.org/swt/tools.php">
 			SWT Development Tools
 		or install the Eclipse Plugin via the
-		<ulink
-			url="http://www.eclipse.org/swt/updatesite.php">
+http://www.eclipse.org/swt/updatesite.php">
 			SWT Tools Update Sites
 		.
 	

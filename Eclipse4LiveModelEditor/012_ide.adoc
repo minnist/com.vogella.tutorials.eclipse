@@ -1,0 +1,11 @@
+== Model spy and the Eclipse IDE
+	
+If installed you can also use the model spy to see the application
+model of the running Eclipse IDE itself. You can
+open it via
+the
+kbd:[Alt+Shift+F9] shortcut.
+
+WARNING: If you modify the Eclipse IDE model, you should be careful as this might put the running Eclipse IDE into a bad state. 
+To fix such issues, start the Eclipse IDE from the command line with the _-clearPersistedState_ parameter.
+

@@ -1,8 +1,7 @@
 == Automated tests
 	
 		The Eclipse project supports
-		<ulink
-			url="https://wiki.eclipse.org/Performance/Automated_Tests">
+https://wiki.eclipse.org/Performance/Automated_Tests">
 			automated tests
 		to continuously run benchmarks.
 	

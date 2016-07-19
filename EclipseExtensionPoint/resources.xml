@@ -3,10 +3,8 @@
 
 === Extension points related tutorials
 		
-		<ulink
-			url="http://www.vogella.com/tutorials/RichClientPlatform/article.html">OSGi Tutorial
-		<ulink
-			url="http://angelozerr.wordpress.com/2010/09/14/eclipse-extension-points-and-extensions-without-osgi/">Angelo Zerr describes how to use Extension points without OSGi
+http://www.vogella.com/tutorials/RichClientPlatform/article.html">OSGi Tutorial
+http://angelozerr.wordpress.com/2010/09/14/eclipse-extension-points-and-extensions-without-osgi/">Angelo Zerr describes how to use Extension points without OSGi
 	
 
 include::../10_Include/resources.adoc[]

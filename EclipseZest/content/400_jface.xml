@@ -1,6 +1,5 @@
 == Zest and JFace
-	
-		http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace
+http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace
 		provides viewers to encapsulate the data from the presentation.
 		For an
 		introduction to JFace viewer please see

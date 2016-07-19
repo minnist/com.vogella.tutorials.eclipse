@@ -18,9 +18,7 @@
 	
 	<!-- Screenshot for the Eclipse RCP book -->
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/e4parts10.png" scale="30" />
+image::e4parts10.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Eclipse application with a few parts</phrase>
@@ -105,9 +103,7 @@
 		name of the modified file.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/dirtyeditor10.png" />
+image::dirtyeditor10.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Editor marked as dirty</phrase>

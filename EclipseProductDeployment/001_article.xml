@@ -48,7 +48,7 @@ Version 0.3, 06.07.2016
 	</articleinfo>
 
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
-	<?dbhtml-include href="../../web/adsense/afterTableOfContent"?>
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_product.adoc[]
 include::020_deployment.adoc[]
 	<?dbhtml-include href="../../web/adsense/inBetween01"?>

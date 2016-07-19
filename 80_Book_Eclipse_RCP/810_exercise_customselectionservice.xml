@@ -20,9 +20,9 @@
 			selection.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/MySelectionService.java[]
+[source,java]
+----
+include::res/replaceselectionservice/MySelectionService.java[]
 ----
 		
 	
@@ -33,9 +33,9 @@
 			function.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/MyContextFunction.java[]
+[source,java]
+----
+include::res/replaceselectionservice/MyContextFunction.java[]
 ----
 		
 	
@@ -63,9 +63,9 @@ image::customselection_serviceaddon.png"
 === Update your parts to use the new selection service
 		Adjust your parts, so that they use the new service.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/ListenerPart.java[]
+[source,java]
+----
+include::res/replaceselectionservice/ListenerPart.java[]
 ----
 		
 		
@@ -74,9 +74,9 @@ image::customselection_serviceaddon.png"
 			to send out the selection.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/replaceselectionservice/SamplePart.java[]
+[source,java]
+----
+include::res/replaceselectionservice/SamplePart.java[]
 ----
 		
 	

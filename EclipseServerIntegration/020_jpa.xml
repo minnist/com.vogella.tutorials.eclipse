@@ -35,11 +35,7 @@
 ----
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/persistence.xml-location.png" />
-			</imageobject>
-		</mediaobject>
+image::persistence.xml-location.png[pdfwidth=60%]
 	
 
 	

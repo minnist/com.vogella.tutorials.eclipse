@@ -1,0 +1,5 @@
+== Prerequisites
+	
+The following description assumes that you already have experience with
+Eclipse EMF, Eclipse 4 and the rendering framework of Eclipse 4.
+	

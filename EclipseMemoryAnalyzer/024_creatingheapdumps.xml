@@ -25,9 +25,7 @@
 		acquire a memory dump.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mat_getheapdump10.png"/>
+image::mat_getheapdump10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Creating a heap dump</phrase>
@@ -54,9 +52,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/matperspective20.png"/>
+image::matperspective20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Opening the MAT perspective</phrase>

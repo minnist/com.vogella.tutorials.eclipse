@@ -24,9 +24,7 @@
 		terminology is described in the following table.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/extensionpointconcept10.png"
+image::extensionpointconcept10.png"
 					scale="40" />
 			</imageobject>
 			<textobject>

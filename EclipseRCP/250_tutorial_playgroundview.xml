@@ -53,9 +53,9 @@ image::swtmap10.png" scale="60[SWT Browser Widget example with Google Maps,pdfwi
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/playground/PlaygroundPart.java[]
+[source,java]
+----
+include::res/playground/PlaygroundPart.java[]
 ----
 		
 

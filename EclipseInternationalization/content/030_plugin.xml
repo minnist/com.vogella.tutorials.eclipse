@@ -22,9 +22,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/pdetools10.png" scale="60" />
+image::pdetools10.png" scale="60" />
 			</imageobject>
 			<textobject>
 				<phrase>Eclipse PDE Wizard for externizing plugin.xml</phrase>

@@ -4,9 +4,9 @@
 		which occurrence of the search string is in the column.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/highlight/SearchUtil.java[]
+[source,java]
+----
+include::res/highlight/SearchUtil.java[]
 ----
 	
 	
@@ -17,9 +17,9 @@
 		are in method `createColumns()` plus a view variable definitions.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/highlight/View.java[]
+[source,java]
+----
+include::res/highlight/View.java[]
 ----
 	
 	

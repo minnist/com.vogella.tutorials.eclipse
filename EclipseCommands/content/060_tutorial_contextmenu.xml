@@ -34,9 +34,7 @@
 		as class name.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/commands_popup10.png" />
+image::commands_popup10.png" />
 
 			</imageobject>
 		</mediaobject>

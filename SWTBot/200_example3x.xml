@@ -16,9 +16,9 @@
 			Change the class View to the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/View.java[]
+[source,java]
+----
+include::res/first/View.java[]
 ----
 		
 		
@@ -65,9 +65,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/UserInterfaceTester1.java[]
+[source,java]
+----
+include::res/first/UserInterfaceTester1.java[]
 ----
 		
 		
@@ -83,9 +83,7 @@
 		
 
 		
-image::swtbot10.png"/>
-				</imageobject>
-			</mediaobject>
+image::swtbot10.png[pdfwidth=60%]
 		
 		
 			If everything runs correctly, you should get a green test.
@@ -93,9 +91,9 @@ image::swtbot10.png"/>
 			your `test()` method to the following to do some real testing.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/first/UserInterfaceTester.java[]
+[source,java]
+----
+include::res/first/UserInterfaceTester.java[]
 ----
 		
 		 Run your test again and verify that the test runs ok. Change,

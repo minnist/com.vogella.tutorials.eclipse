@@ -55,9 +55,9 @@ Version 0.3, 06.07.2016
 			and contains methods, which are equal for every debug model class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleDebugElement.java[]
+[source,java]
+----
+include::res/ExampleDebugElement.java[]
 ----
 		
 		
@@ -86,9 +86,9 @@ Version 0.3, 06.07.2016
 			objects under a thread show the currently suspended Java stacktrace.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleStackFrame.java[]
+[source,java]
+----
+include::res/ExampleStackFrame.java[]
 ----
 		
 		
@@ -131,9 +131,9 @@ Version 0.3, 06.07.2016
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleThread.java[]
+[source,java]
+----
+include::res/ExampleThread.java[]
 ----
 		
 	
@@ -157,9 +157,9 @@ Version 0.3, 06.07.2016
 			, which run during a debug session.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/ExampleDebugTarget.java[]
+[source,java]
+----
+include::res/ExampleDebugTarget.java[]
 ----
 		
 	

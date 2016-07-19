@@ -19,9 +19,9 @@
 			object.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/decorations.java[]
+[source,java]
+----
+include::res/snippets/decorations.java[]
 ----
 		
 		The result might look like the following screenshot.
@@ -49,9 +49,9 @@ image::controldecoration17.png"
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/SelectObservableValue.java[]
+[source,java]
+----
+include::res/snippets/SelectObservableValue.java[]
 ----
 		
 		The result of this snippet, should look like this:
@@ -85,9 +85,9 @@ image::controldecoration17.png"
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/editor/dirty.java[]
+[source,java]
+----
+include::res/editor/dirty.java[]
 ----
 		
 	
@@ -129,9 +129,9 @@ image::controldecoration17.png"
 			object.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/writablevalue.java[]
+[source,java]
+----
+include::res/snippets/writablevalue.java[]
 ----
 		
 	
@@ -150,9 +150,9 @@ image::controldecoration17.png"
 			method.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/computedvalue/ComputedValuePersonNameImpl.java[]
+[source,java]
+----
+include::res/computedvalue/ComputedValuePersonNameImpl.java[]
 ----
 		
 		
@@ -167,9 +167,9 @@ image::controldecoration17.png"
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/computedvalue/ComputedValuePersonNameCreate.java[]
+[source,java]
+----
+include::res/computedvalue/ComputedValuePersonNameCreate.java[]
 ----
 		
 		So basically ComputedValue can easily combine different

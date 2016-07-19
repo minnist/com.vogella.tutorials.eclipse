@@ -15,9 +15,7 @@
 		screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/cherrypick10.png"/>
+image::cherrypick10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -30,9 +28,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/cherrypick20.png"/>
+image::cherrypick20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -42,9 +38,7 @@
 
 	Afterwards you can cherry-pick the good commit.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/cherrypick30.png"/>
+image::cherrypick30.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -52,9 +46,7 @@
 		</mediaobject>
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/cherrypick40.png"/>
+image::cherrypick40.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>

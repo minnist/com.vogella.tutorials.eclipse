@@ -13,9 +13,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/parameter10.gif" />
+image::parameter10.gif" />
 				
 			</imageobject>
 		</mediaobject>
@@ -25,9 +23,7 @@
 		"de.vogella.rcp.commands.parameterfirst.commandParameter1"
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/parameter20.gif" />
+image::parameter20.gif" />
 				
 			</imageobject>
 		</mediaobject>
@@ -45,9 +41,7 @@
 	 Add this command to the menu. On the command, right-click and
 		select New -> Parameter
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/parameter30.gif" />
+image::parameter30.gif" />
 				
 			</imageobject>
 		</mediaobject>
@@ -55,9 +49,7 @@
 	 As name enter the name of the parameter, pass as value the
 		value you want to use in your handler.  
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/parameter40.gif" />
+image::parameter40.gif" />
 				
 			</imageobject>
 		</mediaobject>

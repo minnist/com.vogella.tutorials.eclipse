@@ -91,8 +91,8 @@ image::help10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context.adoc[]
-			</programlisting>
+					parse="text" href="./examples/context.xml[]
+----
 		
 		 You then have to define an extension
 			"org.eclipse.help.contexts" which points to the file "context.xml".
@@ -100,8 +100,8 @@ image::help10.png" />
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin.adoc[]
-			</programlisting>
+					parse="text" href="./examples/plugin.xml[]
+----
 		
 		 After this you can assign the help to individual controls. For
 			example you can assign the help to your table control.

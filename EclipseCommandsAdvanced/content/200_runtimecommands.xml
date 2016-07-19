@@ -8,9 +8,7 @@
 		contribution. 
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/runtime10.gif" />
+image::runtime10.gif" />
 				
 			</imageobject>
 		</mediaobject>

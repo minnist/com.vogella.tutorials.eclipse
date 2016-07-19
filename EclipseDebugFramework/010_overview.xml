@@ -141,9 +141,9 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 			are added to the launch procedure like this:
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/RegisterDebugTarget.java[]
+[source,java]
+----
+include::res/RegisterDebugTarget.java[]
 ----
 		
 		

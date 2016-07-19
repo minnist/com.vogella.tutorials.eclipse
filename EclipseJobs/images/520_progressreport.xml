@@ -17,9 +17,7 @@
 	 Run the application. Your command should open a dialog which
 		show the process.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/progress10.gif" />
+image::progress10.gif" />
 				
 			</imageobject>
 		</mediaobject>

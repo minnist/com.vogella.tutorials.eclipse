@@ -23,9 +23,7 @@
 		file. This is demonstrated in the following screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/plugin_customization10.png"
+image::plugin_customization10.png"
 					scale="40" />
 			</imageobject>
 			<textobject>

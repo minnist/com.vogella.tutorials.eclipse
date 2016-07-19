@@ -82,9 +82,7 @@ include::res/custom_launch/LaunchShortcut.java"/>
         After implementing this, you can run the <guimenuitem>Sample Shortcut</guimenuitem>
             from a editor's popup menu or on a ISelection, such as a Java class file.
 		
-image::run_as_sample_shortcut.png"/>
-				</imageobject>
-			</mediaobject>
+image::run_as_sample_shortcut.png[pdfwidth=60%]
 		
 	
 

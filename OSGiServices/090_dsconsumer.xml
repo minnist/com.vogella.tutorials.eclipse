@@ -30,9 +30,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/dsconsumer10.gif" />
+image::dsconsumer10.gif" />
 
 			</imageobject>
 		</mediaobject>
@@ -43,9 +41,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/dsconsumer20.gif" />
+image::dsconsumer20.gif" />
 
 			</imageobject>
 		</mediaobject>
@@ -62,9 +58,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/dsconsumer30.gif" />
+image::dsconsumer30.gif" />
 
 			</imageobject>
 		</mediaobject>

@@ -15,9 +15,7 @@ include::res/pitfalls/swt_link.java"/>
 				<property>&lt;a>www.vogella.com&lt;/a></property>, but in the UI you'll see
 			this:
 		
-image::vogella_SWT_Link.png"/>
-				</imageobject>
-			</mediaobject>
+image::vogella_SWT_Link.png[pdfwidth=60%]
 		
 		When this `Link` should now be accessed by the `SWTBot` using
 			the text of this `Link`, <property>&lt;a>www.vogella.com&lt;/a></property>

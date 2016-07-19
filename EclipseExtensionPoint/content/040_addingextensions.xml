@@ -25,9 +25,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/pluginextensions08.png"/>
+image::pluginextensions08.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Extensions defines by plug-in</phrase>

@@ -56,9 +56,7 @@
 		button which is highlighted in the following screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/gitstaging10.png"/>
+image::gitstaging10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Git Staging View - Commit</phrase>

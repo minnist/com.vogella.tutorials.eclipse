@@ -224,8 +224,8 @@ include::res/contextfunction/NewTodoHandler.java[]
 		
 [source,java]
 ----
-include::res/contextfunction/service.adoc[]
-			</programlisting>
+include::res/contextfunction/service.xml[]
+----
 		
 
 		Every service defined by OSGi declarative services must have a

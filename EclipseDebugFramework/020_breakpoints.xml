@@ -56,10 +56,10 @@ image::breakpoint_ext_point.png"
 			extension point is used.
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/breakpoint_marker_sample.adoc[]
-			</programlisting>
+[source,xml]
+----
+include::res/breakpoint_marker_sample.xml[]
+----
 		
 	
 
@@ -99,10 +99,10 @@ image::togglebreakpointstarget_hierarchy.png"
 			.
 		
 		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/togglebreakpoint_adapter.adoc[]
-			</programlisting>
+[source,xml]
+----
+include::res/togglebreakpoint_adapter.xml[]
+----
 		
 	
 
@@ -117,9 +117,9 @@ image::togglebreakpointstarget_hierarchy.png"
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/RegisterBreakpoint.java[]
+[source,java]
+----
+include::res/RegisterBreakpoint.java[]
 ----
 		
 		

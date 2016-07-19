@@ -6,27 +6,27 @@
 		package.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/editing/FirstNameEditingSupport.java[]
+[source,java]
+----
+include::res/editing/FirstNameEditingSupport.java[]
 ----
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/editing/LastNameEditingSupport.java[]
+[source,java]
+----
+include::res/editing/LastNameEditingSupport.java[]
 ----
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/editing/GenderEditingSupport.java[]
+[source,java]
+----
+include::res/editing/GenderEditingSupport.java[]
 ----
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/editing/MarriedEditingSupport.java[]
+[source,java]
+----
+include::res/editing/MarriedEditingSupport.java[]
 ----
 	
 	
@@ -36,9 +36,9 @@
 		following one and adjust your imports.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/editing/View.java[]
+[source,java]
+----
+include::res/editing/View.java[]
 ----
 	
 	

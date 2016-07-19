@@ -19,9 +19,7 @@
 		as depicted in the following screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_rebase10.png"/>
+image::egit_rebase10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Rebase in EGit</phrase>
@@ -32,9 +30,7 @@
 		want to rebase.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_rebase20.png"/>
+image::egit_rebase20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Rebase in EGit, selecting the branch for rebase</phrase>

@@ -17,9 +17,7 @@
 
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/ui_interactivemonitor.png" />
+image::ui_interactivemonitor.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Monitoring the interactive UI performance

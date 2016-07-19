@@ -117,8 +117,8 @@ include::res/stack/MyRendererFactory.java[]
 		
 [source,java]
 ----
-include::res/stack/plugin.adoc[]
-			</programlisting>
+include::res/stack/plugin.xml[]
+----
 		
 
 	

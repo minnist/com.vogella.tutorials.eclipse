@@ -21,9 +21,9 @@
 
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/viewer.java[]
+[source,java]
+----
+include::res/snippets/viewer.java[]
 ----
 		
 
@@ -88,9 +88,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/contentprovider.java[]
+[source,java]
+----
+include::res/snippets/contentprovider.java[]
 ----
 		
 	
@@ -143,9 +143,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/columns.txt[]
+[source,java]
+----
+include::res/snippets/columns.txt[]
 ----
 		
 		
@@ -159,9 +159,9 @@
 			plug-in.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/columnshelper.txt[]
+[source,java]
+----
+include::res/snippets/columnshelper.txt[]
 ----
 		
 
@@ -200,9 +200,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/listener.java[]
+[source,java]
+----
+include::res/snippets/listener.java[]
 ----
 		
 

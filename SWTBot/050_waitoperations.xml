@@ -33,9 +33,7 @@
 	General `org.hamcrest.Matcher&lt;T&gt;` objects for those
 			`Conditions` are:
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swt_bot_matcher.png"/>
+image::swt_bot_matcher.png"/>
 			</imageobject>
 		</mediaobject>
 	

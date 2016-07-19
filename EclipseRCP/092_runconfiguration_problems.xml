@@ -247,9 +247,9 @@
 			like (formating changed to make the text fit better).
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/launchproblems/dependency.txt[]
+[source,java]
+----
+include::res/launchproblems/dependency.txt[]
 ----
 		
 

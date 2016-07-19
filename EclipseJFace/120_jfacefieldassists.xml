@@ -50,9 +50,7 @@
 	 If used the result should look similar to the following.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/fieldassists10.png"/>
+image::fieldassists10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Running application with ControlDecoration and FieldAssists</phrase>

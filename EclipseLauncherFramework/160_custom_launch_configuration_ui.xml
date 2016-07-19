@@ -8,11 +8,7 @@
 	A popular example for java developers is the java launch
 		configuration dialog.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sample_java_application_launch_config_ui.png" />
-			</imageobject>
-		</mediaobject>
+image::sample_java_application_launch_config_ui.png[pdfwidth=60%]
 	
 	
 		Previously we created a launch configuration delegate and in order run
@@ -84,10 +80,6 @@ include::res/custom_ui_launch/SampleTabGroup.java[]
 	
 	The result will look similar to this:
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/vogella_launch_ui.png" />
-			</imageobject>
-		</mediaobject>
+image::vogella_launch_ui.png[pdfwidth=60%]
 	
 

@@ -12,9 +12,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/eclipseide_sshgen.png" scale="30" />
+image::eclipseide_sshgen.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Generating a SSH key via the Eclipse IDE</phrase>

@@ -91,9 +91,9 @@ image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/SaveAllHandler.java[]
+[source,java]
+----
+include::res/snippets/SaveAllHandler.java[]
 ----
 		
 
@@ -223,9 +223,7 @@ image::handler10.png[Defining a handler in Eclipse 4,pdfwidth=60%]
 		
 
 		
-image::menu04.png"/>
-				</imageobject>
-			</mediaobject>
+image::menu04.png[pdfwidth=60%]
 		
 		
 			Assign the
@@ -300,9 +298,9 @@ image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
 			class, so that it closes your application, once selected.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/command/ExitHandler.java[]
+[source,java]
+----
+include::res/command/ExitHandler.java[]
 ----
 		
 	

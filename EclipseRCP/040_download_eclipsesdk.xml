@@ -23,9 +23,7 @@
 		section.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/downloadeclipse.png"/>
+image::downloadeclipse.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Eclipse.org Download Page</phrase>

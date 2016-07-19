@@ -9,9 +9,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/rap_install10.png" />
+image::rap_install10.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Installation of the Eclipse RAP Target Platform</phrase>
@@ -25,9 +23,7 @@
 	 Use the Eclipse update manager to install the tooling from the
 		Eclipse update.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/rap_install20.png"/>
+image::rap_install20.png"/>
 			</imageobject>
 		</mediaobject>
 	

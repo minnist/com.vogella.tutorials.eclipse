@@ -28,9 +28,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/targetdefinition10.png"/>
+image::targetdefinition10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Define File name for Target Definition</phrase>
@@ -59,9 +57,7 @@
 		screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/targetdefinition20.png"/>
+image::targetdefinition20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Setting the new defined target definition as target for
@@ -84,9 +80,7 @@
 		target platform.
     
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/tutorial_targetdefinition50.png"/>
+image::tutorial_targetdefinition50.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Definition of a target definition file</phrase>
@@ -107,9 +101,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/targetdefinition30.png" />
+image::targetdefinition30.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Setting the target definition via the Eclipse Preferences</phrase>

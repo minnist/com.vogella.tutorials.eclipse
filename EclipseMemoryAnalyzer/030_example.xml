@@ -25,9 +25,7 @@
 			runtime configuration.
 		
 		
-image::dumpparameter10.gif" scale="40"/>
-				</imageobject>
-			</mediaobject>
+image::dumpparameter10.gif" scale="40[pdfwidth=60%]
 		
 		
 			Run the project. It crashes and writes an

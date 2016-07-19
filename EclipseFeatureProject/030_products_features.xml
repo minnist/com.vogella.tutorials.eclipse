@@ -19,9 +19,7 @@
 		configuration file.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/product48.png" />
+image::product48.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Configuration of the product can be based on features or

@@ -77,8 +77,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/plugin.adoc[]
-			</programlisting>
+					parse="text" href="./examples/plugin/plugin.xml[]
+----
 		
 		 The primary toc file defines anchor points to which other toc
 			files can contribute content. For example the following "toc.xml"
@@ -159,8 +159,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/contextDefinitionFile.adoc[]
-			</programlisting>
+					parse="text" href="./examples/context/contextDefinitionFile.xml[]
+----
 		
 		 To assign these id to your SWT controls you can use the
 			following code:

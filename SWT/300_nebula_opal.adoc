@@ -10,9 +10,7 @@
 		several visualization widgets as depicted in the following screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/visualizationwidgets.png"
+image::visualizationwidgets.png"
 					scale="40" />
 			</imageobject>
 			<textobject>
@@ -26,9 +24,7 @@
 		. The following screenshot shows a widgets for displaying two lists.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/opalexample10.png" scale="30" />
+image::opalexample10.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Opal  widgets</phrase>

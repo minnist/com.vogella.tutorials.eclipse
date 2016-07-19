@@ -12,9 +12,9 @@
 		confirmation dialog. This is done in the following code.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/dialog/ExitHandler.java" />
+[source,java]
+----
+include::res/dialog/ExitHandler.java" />
 		</programlisting>
 	
 	<warning>
@@ -40,9 +40,7 @@
 		terminate.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/tutorial_dialogclose.png"
+image::tutorial_dialogclose.png"
 					scale="40" />
 			</imageobject>
 			<textobject>

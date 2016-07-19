@@ -48,9 +48,7 @@
 	
 	 The result should look similar to the following. 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/emfdb10.png" />
+image::emfdb10.png" />
 
 			</imageobject>
 		</mediaobject>

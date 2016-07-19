@@ -19,9 +19,7 @@
 		event handlers for your widgets.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swtdesigner10.png" scale="30" />
+image::swtdesigner10.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Showing SWT Designer main perspective</phrase>
@@ -58,9 +56,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swtdesigner20.png"/>
+image::swtdesigner20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>SWT Designer in Action</phrase>

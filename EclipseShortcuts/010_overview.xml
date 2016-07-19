@@ -39,9 +39,7 @@
 		for the "New Java" search term.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/short10.png" />
+image::short10.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Ctrl+3 shortcut dialog</phrase>

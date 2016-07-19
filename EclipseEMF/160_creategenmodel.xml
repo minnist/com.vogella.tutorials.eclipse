@@ -19,39 +19,19 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/genmodel10.gif" />
-			</imageobject>
-		</mediaobject>
+image::genmodel10.gif[pdfwidth=60%]
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/genmodel20.gif" />
-			</imageobject>
-		</mediaobject>
+image::genmodel20.gif[pdfwidth=60%]
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/genmodel30.gif" />
-			</imageobject>
-		</mediaobject>
+image::genmodel30.gif[pdfwidth=60%]
 	
 	Select your model and press load.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/genmodel40.gif" />
-			</imageobject>
-		</mediaobject>
+image::genmodel40.gif[pdfwidth=60%]
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/genmodel50.gif" />
-			</imageobject>
-		</mediaobject>
+image::genmodel50.gif[pdfwidth=60%]
 	
 

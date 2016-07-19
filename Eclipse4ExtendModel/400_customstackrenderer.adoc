@@ -1,0 +1,54 @@
+== Exercise: Extend the Eclipse application model
+
+Create another model element called
+_MyOwnPartStack_
+with the
+supertype
+`PartStack`
+The finished model
+should look like the
+following.
+
+image::stackrenderermodel60.png[pdfwidth=60%]
+
+Create the following class.
+
+[source,java]
+----
+include::res/renderer/MyOwnStackRenderer.java[]
+----
+
+=== Define your renderer and the renderer factory
+
+Create an
+_html_
+folder in your
+`com.vogella.e4.renderer.maps`
+plug-in and create the following
+_map.html_
+file in it.
+
+// TODO: map.html is not yet listed
+
+In the
+`com.vogella.e4.renderer.maps`
+plug-in
+create the following class.
+
+[source,java]
+----
+include::res/renderer/MyMapRenderer.java[]
+----
+
+`MyMapRenderer`
+will load _map.html_ and display it.
+
+Create the following factory
+to define a new renderer for your
+widgets.
+
+[source,java]
+----
+include::res/renderer/MyRendererFactory.java[]
+----
+

@@ -22,9 +22,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/first.png" scale="80" />
+image::first.png" scale="80" />
 			</imageobject>
 			<textobject>
 				<phrase></phrase>

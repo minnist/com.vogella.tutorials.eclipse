@@ -20,7 +20,5 @@
 	
 		<mediaobject>
 			<imageobject>
-				<imagedata fileref="./images/testing-target-platform.png" />
-			</imageobject>
-		</mediaobject>
+				<imagedata fileref="./images/testing-target-platform.png[pdfwidth=60%]
 	

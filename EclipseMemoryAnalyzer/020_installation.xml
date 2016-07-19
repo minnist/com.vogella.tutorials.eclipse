@@ -15,9 +15,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/matinstallation10.png"/>
+image::matinstallation10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Installation of MAT</phrase>

@@ -22,18 +22,14 @@
 		
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/table10.gif" />
+image::table10.gif" />
 				
 			</imageobject>
 		</mediaobject>
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/table20.gif" />
+image::table20.gif" />
 				
 			</imageobject>
 		</mediaobject>
@@ -45,9 +41,7 @@
 		content.
 		
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/table30.gif" />
+image::table30.gif" />
 				
 			</imageobject>
 		</mediaobject>

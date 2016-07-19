@@ -44,9 +44,9 @@
 		filter for the elements.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/snippets/elementlistselectiondialog.txt[]
+[source,java]
+----
+include::res/snippets/elementlistselectiondialog.txt[]
 ----
 	
 

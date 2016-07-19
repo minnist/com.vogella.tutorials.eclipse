@@ -181,8 +181,8 @@ include::res/service/PostConstruct.java[]
 		
 [source,java]
 ----
-include::res/tutorialservice/component.adoc[]
-			</programlisting>
+include::res/tutorialservice/component.xml[]
+----
 		
 		
 			Eclipse also adds a reference to the

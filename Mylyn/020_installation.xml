@@ -16,9 +16,7 @@
 		screenshot shows this for the Kepler release.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylyninstall10.png"/>
+image::mylyninstall10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Installing Mylyn</phrase>

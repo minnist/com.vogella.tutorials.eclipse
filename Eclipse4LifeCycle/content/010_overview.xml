@@ -200,8 +200,8 @@ include::res/arguments/getValue.java[]
 		
 [source,java]
 ----
-include::res/life/plugin.adoc[]
-			</programlisting>
+include::res/life/plugin.xml[]
+----
 		
 
 		

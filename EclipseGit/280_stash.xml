@@ -15,9 +15,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_stash10.png" scale="25" />
+image::egit_stash10.png" scale="25" />
 			</imageobject>
 			<textobject>
 				<phrase>Stash changes in EGit</phrase>
@@ -25,9 +23,7 @@
 		</mediaobject>
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_stash20.png"/>
+image::egit_stash20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Stash changes in EGit</phrase>
@@ -35,9 +31,7 @@
 		</mediaobject>
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_stash30.png"/>
+image::egit_stash30.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Stash changes in EGit</phrase>

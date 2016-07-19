@@ -1,0 +1,59 @@
+== Application model extensibility
+
+=== The application model structure
+		
+The application
+model you create for your Eclipse based
+application is
+based on
+an Eclipse Modeling Framework (EMF) model
+defined by
+the
+Eclipse platform. This
+structure
+defines, for example, that
+an
+`MPart` can
+be stored in an `MPartSashContainer`.
+		
+The
+Eclipse platform uses generated Java classes based on this EMF
+model. These classes are instantiated based on the
+_Application.e4xmi_
+file of the application including formation from model fragments,
+processors and other sources which modify the model, e.g., mode
+add-ons.
+		
+The Eclipse platform registers listeners on the attributes of
+these objects, so that it can react immediately if a model property
+changes.
+
+=== Using extensions
+		
+The underlying structure of the application model can be
+extended
+by customers using
+standard EMF functionality. As
+the
+renderer
+framework
+is
+responsible for
+handling the
+model elements, you
+have to
+define a
+renderer which is
+responsible for
+the new model
+elements.
+		
+=== Adding an editor for a custom model elements
+		
+The
+`org.eclipse.e4.tools.emf.ui`
+plug-in defines the
+`org.eclipse.e4.tools.emf.ui.editors`
+extension point, which allows registering editors for new model
+elements.
+

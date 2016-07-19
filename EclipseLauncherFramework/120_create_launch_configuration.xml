@@ -24,9 +24,7 @@
 	In the _Run Configuration..._ you can choose between different launch
 		configuration types:
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/run_configurations.png"/>
+image::run_configurations.png"/>
 			</imageobject>
 		</mediaobject>
 	
@@ -38,17 +36,13 @@
 		You can reach the export wizard via export command in the file menu or by typing
 				_Export (Launch Configuration)_ in the Quick Access.
 		
-image::export_launch_configuration.png"/>
-				</imageobject>
-			</mediaobject>
+image::export_launch_configuration.png[pdfwidth=60%]
 		
 		When pressing _Next_ you can choose, which launch configuration you
 			want to export and define a location to store the _*.launch_
 			file.
 		
-image::launch_configuration_export_wizard.png"/>
-				</imageobject>
-			</mediaobject>
+image::launch_configuration_export_wizard.png[pdfwidth=60%]
 		
 		The exported _Eclipse Application Launch Configuration.launch_ file
 			looks like this:
@@ -67,16 +61,12 @@ include::res/Eclipse_Application_Launch_Configuration.launch"/>
 		You can reach the import wizard via import command in the file menu or by typing
 				_Import (Launch Configuration)_ in the Quick Access.
 		
-image::import_launch_configuration.png"/>
-				</imageobject>
-			</mediaobject>
+image::import_launch_configuration.png[pdfwidth=60%]
 		
 		When pressing _Next_ you can look for a
 				_*.launch_ file in your file system, and import it.
 		
-image::launch_configuration_import_wizard.png"/>
-				</imageobject>
-			</mediaobject>
+image::launch_configuration_import_wizard.png[pdfwidth=60%]
 		
 		After we successfully imported a certain _*.launch_ file, we can
 			choose and run this launch configuration with the _Run

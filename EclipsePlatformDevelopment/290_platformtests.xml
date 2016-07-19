@@ -94,9 +94,7 @@
 			plug-in.
 		
 
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/Junit.png"/>
+image::Junit.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Screenshot of the JFace JUnit run</phrase>

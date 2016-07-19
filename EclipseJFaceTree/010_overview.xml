@@ -58,9 +58,9 @@
 			mouse click.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/swt/expand.java[]
+[source,java]
+----
+include::res/swt/expand.java[]
 ----
 		
 
@@ -76,9 +76,9 @@
 			click.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/swt/expanddouble.java[]
+[source,java]
+----
+include::res/swt/expanddouble.java[]
 ----
 		
 	
@@ -87,9 +87,7 @@
 		In case a `TreeViewer` has multiple columns it does not look good, if the first
 			column, which contains the expandable items is clipped.
 		
-image::ClippedTreeColumn.png" scale="40"/>
-				</imageobject>
-			</mediaobject>
+image::ClippedTreeColumn.png" scale="40[pdfwidth=60%]
 		
 		
 		In order to let a column fit to it's contents width you can invoke the columns

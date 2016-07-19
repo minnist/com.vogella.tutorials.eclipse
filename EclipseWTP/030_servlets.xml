@@ -81,9 +81,9 @@ image::wtp_first_project30.png" />
 			counter value to and from the file.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/counter/FileDao.java[]
+[source,java]
+----
+include::res/counter/FileDao.java[]
 ----
 		
 	
@@ -120,9 +120,9 @@ image::wtp_first_project50.png" />
 		
 		Enter the following code.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/counter/FileCounter.java[]
+[source,java]
+----
+include::res/counter/FileCounter.java[]
 ----
 		
 		
@@ -186,11 +186,7 @@ image::wtp_first_project70.png" />
 		increase.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/wtp_first_project80.png" />
-			</imageobject>
-		</mediaobject>
+image::wtp_first_project80.png[pdfwidth=60%]
 	
 	
 		Congratulations. You created your first working servlet with

@@ -5,9 +5,7 @@
 		documentation in the "GenModel Doc". 
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/javadoc10.png" />
+image::javadoc10.png" />
 				
 			</imageobject>
 		</mediaobject>
@@ -18,9 +16,7 @@
 		"http://www.eclipse.org/emf/2002/GenModel" is necessary and
 		the key on the details enty must be "documentation".  
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/javadoc20.png" />
+image::javadoc20.png" />
 				
 			</imageobject>
 		</mediaobject>

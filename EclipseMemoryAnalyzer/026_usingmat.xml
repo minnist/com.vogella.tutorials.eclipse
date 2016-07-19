@@ -26,9 +26,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/matleakreport10.png"/>
+image::matleakreport10.png"/>
 
 			</imageobject>
 			<textobject>
@@ -45,9 +43,7 @@
 		used objects.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/matleakreport20.png"/>
+image::matleakreport20.png"/>
 
 			</imageobject>
 			<textobject>
@@ -60,9 +56,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/matdominatortree10.png"/>
+image::matdominatortree10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>MAT dominator tree</phrase>

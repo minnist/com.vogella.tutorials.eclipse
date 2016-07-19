@@ -25,9 +25,9 @@
 			class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizardPage1.java[]
+[source,java]
+----
+include::res/wizardcreatedwithdependencyinjection/TodoWizardPage1.java[]
 ----
 		
 
@@ -40,9 +40,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/TodoWizard.java[]
+[source,java]
+----
+include::res/wizardcreatedwithdependencyinjection/TodoWizard.java[]
 ----
 		
 	
@@ -76,9 +76,9 @@
 			class as demonstrated by the following code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/wizardcreatedwithdependencyinjection/NewTodoHandler.java[]
+[source,java]
+----
+include::res/wizardcreatedwithdependencyinjection/NewTodoHandler.java[]
 ----
 		
 

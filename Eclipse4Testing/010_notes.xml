@@ -37,9 +37,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/TodoOverviewPart.java[]
+[source,java]
+----
+include::res/snippets/TodoOverviewPart.java[]
 ----
 		
 
@@ -52,9 +52,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/TodoOverviewPartTest.java[]
+[source,java]
+----
+include::res/snippets/TodoOverviewPartTest.java[]
 ----
 		
 		The above code can be easily changed to a unit test. Your test
@@ -91,9 +91,9 @@
 			test.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/CreateContextText.java[]
+[source,java]
+----
+include::res/snippets/CreateContextText.java[]
 ----
 		
 

@@ -1,0 +1,30 @@
+= Extending the Eclipse 4 application model- Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 6.6, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4ExtendModel
+
+[abstract]
+How to extend the Eclipse 4 application model.
+This tutorial gives an overview on how to extend the Eclipse 4 application model and how to define a new renderer for new model elements. 
+It also covers how to create custom editor implementations for these new model elements.
+			
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_prerequisites.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_extendmodel.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::200_createrenderer.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::300_application.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+	
+	

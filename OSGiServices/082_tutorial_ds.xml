@@ -78,9 +78,7 @@
 		consumer.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/ds50.gif" />
+image::ds50.gif" />
 
 			</imageobject>
 		</mediaobject>

@@ -50,9 +50,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/firstswt.png" scale="60" />
+image::firstswt.png" scale="60" />
 			</imageobject>
 			<textobject>
 				<phrase>First running SWT application</phrase>

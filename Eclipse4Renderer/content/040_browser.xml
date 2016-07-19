@@ -9,9 +9,9 @@
 		
 	</warning>
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/browser/MyPartRenderer.java[]
+[source,java]
+----
+include::res/browser/MyPartRenderer.java[]
 ----
 	
 	
@@ -21,9 +21,9 @@
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/browser/MyRendererFactory.java[]
+[source,java]
+----
+include::res/browser/MyRendererFactory.java[]
 ----
 	
 
@@ -38,9 +38,7 @@
 	</note>
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/stackrenderer20.png" scale="30" />
+image::stackrenderer20.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Using a Browser Renderer for the Parts</phrase>

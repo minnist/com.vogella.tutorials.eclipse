@@ -17,9 +17,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/method10.png" />
+image::method10.png" />
 				
 			</imageobject>
 		</mediaobject>
@@ -35,9 +33,7 @@
 		you find it listed below.
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/method20.png" />
+image::method20.png" />
 				
 			</imageobject>
 		</mediaobject>
@@ -52,17 +48,13 @@
 	 You can also generate methods with input parameter, just add
 		parameter with their type to your EOperation.  
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/method30.png" />
+image::method30.png" />
 				
 			</imageobject>
 		</mediaobject>
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/method40.png" />
+image::method40.png" />
 				
 			</imageobject>
 		</mediaobject>

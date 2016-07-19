@@ -17,9 +17,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/gridswtlayout.png"/>
+image::gridswtlayout.png"/>
 			</imageobject>
 		</mediaobject>
 	

@@ -16,9 +16,7 @@
 		stylebit on the folder widget, makes the tab appear at the bottom.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/ctabfolder10.png" scale="60" />
+image::ctabfolder10.png" scale="60" />
 			</imageobject>
 			<textobject>
 				<phrase></phrase>

@@ -14,9 +14,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/jdt_packageexplorer_icondecu10.png"
+image::jdt_packageexplorer_icondecu10.png"
 					scale="60" />
 			</imageobject>
 			<textobject>
@@ -142,9 +140,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/jdt_packageexplorer_icondecu20.png"
+image::jdt_packageexplorer_icondecu20.png"
 					scale="60" />
 			</imageobject>
 			<textobject>

@@ -7,9 +7,7 @@
 		update site.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/install_swt_designer10.png"
+image::install_swt_designer10.png"
 					scale="40" />
 			</imageobject>
 			<textobject>

@@ -8,9 +8,9 @@
 		the new `Listener`
 		for the `Sorting` the following:
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/TabNav.java[]
+[source,java]
+----
+include::res/TabNav.java[]
 ----
 	
 	

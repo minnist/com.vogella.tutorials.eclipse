@@ -146,8 +146,8 @@ image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.adoc[]
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.xml[]
+----
 		
 
 		

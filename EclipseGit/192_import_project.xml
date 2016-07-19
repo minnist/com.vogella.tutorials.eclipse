@@ -20,9 +20,7 @@
 		menu entry.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_importprojects10.png"
+image::egit_importprojects10.png"
 					scale="40" />
 
 			</imageobject>
@@ -41,9 +39,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_importprojects20.png"
+image::egit_importprojects20.png"
 					scale="40" />
 
 			</imageobject>
@@ -64,9 +60,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_importprojects30.png"
+image::egit_importprojects30.png"
 					scale="40" />
 
 			</imageobject>

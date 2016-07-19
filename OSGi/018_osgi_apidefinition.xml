@@ -20,9 +20,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/osgi_api_definition10.png" />
+image::osgi_api_definition10.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Dependency management</phrase>
@@ -66,9 +64,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/x-internal10.png" />
+image::x-internal10.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Setting the x-internal flag</phrase>
@@ -115,9 +111,7 @@
 
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/x-internal30.png" />
+image::x-internal30.png" />
 			</imageobject>
 			<textobject>
 				<phrase>Settings in Eclipse for warnings for deprecated API usage</phrase>

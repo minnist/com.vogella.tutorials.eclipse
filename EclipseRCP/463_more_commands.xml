@@ -153,8 +153,8 @@ include::res/commandparameter/TestHandler.java[]
 		
 [source,xml]
 ----
-include::res/coreexpression/instanceof.adoc[]
-			</programlisting>
+include::res/coreexpression/instanceof.xml[]
+----
 		
 		You can assign this core expression to your menu entry in the
 			application model. It can be used to restrict the
@@ -227,8 +227,8 @@ include::res/coreexpression/putactivePartId.txt[]
 		
 [source,xml]
 ----
-include::res/coreexpression/activepart.adoc[]
-			</programlisting>
+include::res/coreexpression/activepart.xml[]
+----
 		
 
 		This core expression can get assigned to a menu entry and

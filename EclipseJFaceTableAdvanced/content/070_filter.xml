@@ -11,9 +11,9 @@
 	
 	Create the following new class.
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/filter/PersonFilter.java[]
+[source,java]
+----
+include::res/filter/PersonFilter.java[]
 ----
 	
 	
@@ -30,9 +30,9 @@
 		method.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/filter/View.java[]
+[source,java]
+----
+include::res/filter/View.java[]
 ----
 	
 	Run the example, filtering should work.

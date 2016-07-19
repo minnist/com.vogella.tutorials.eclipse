@@ -5,20 +5,12 @@
 	
 	Right-click on the project and select _Export_.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/CreateWar10.gif" />
-			</imageobject>
-		</mediaobject>
+image::CreateWar10.gif[pdfwidth=60%]
 	
 
 	Specify the target directory and press _Finish_.
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/CreateWar20.gif" />
-			</imageobject>
-		</mediaobject>
+image::CreateWar20.gif[pdfwidth=60%]
 	
 	
 		You can now import the WAR file to your production Tomcat system

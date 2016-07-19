@@ -10,9 +10,9 @@
 		class.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/getLogger.java[]
+[source,java]
+----
+include::res/getLogger.java[]
 ----
 	
 
@@ -26,9 +26,9 @@
 		warning or error message. The following code shows example calls.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/log.java[]
+[source,java]
+----
+include::res/log.java[]
 ----
 	
 

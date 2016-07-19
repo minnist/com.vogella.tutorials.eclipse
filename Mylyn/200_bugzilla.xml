@@ -62,9 +62,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylynbugzilla10.png"/>
+image::mylynbugzilla10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 1</phrase>
@@ -80,9 +78,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylynbugzilla20.png"/>
+image::mylynbugzilla20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 2</phrase>
@@ -98,9 +94,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylynbugzilla30.png"/>
+image::mylynbugzilla30.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
@@ -114,9 +108,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 		following screenshot.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylynbugzilla40.png"/>
+image::mylynbugzilla40.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 4</phrase>
@@ -129,9 +121,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 		bugs.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/mylynbugzilla50.png" scale="30" />
+image::mylynbugzilla50.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>

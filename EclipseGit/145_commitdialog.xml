@@ -16,9 +16,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egitcommitdialog10.png"/>
+image::egitcommitdialog10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Adding a file via the EGit commit dialog</phrase>

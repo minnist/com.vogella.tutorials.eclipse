@@ -18,9 +18,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/osgids_startlevel.png" scale="30" />
+image::osgids_startlevel.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Defining the OSGi startlevel for ds</phrase>

@@ -15,9 +15,7 @@
 
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/project10.gif" />
+image::project10.gif" />
 				
 			</imageobject>
 		</mediaobject>

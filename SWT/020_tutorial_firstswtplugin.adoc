@@ -27,9 +27,7 @@
 		checkboxes.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swtplugin10.png"/>
+image::swtplugin10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>New Plug-in Projec Wizard Page 1</phrase>
@@ -38,9 +36,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swtplugin20.png"/>
+image::swtplugin20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>New Plug-in Projec Wizard Page 2</phrase>
@@ -77,9 +73,7 @@
 
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/swtplugin30.png"/>
+image::swtplugin30.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Adding the dependency to SWT in the Plug-in project</phrase>

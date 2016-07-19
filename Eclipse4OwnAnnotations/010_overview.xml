@@ -21,9 +21,9 @@
 		
 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/DirectTodo.java[]
+[source,java]
+----
+include::res/DirectTodo.java[]
 ----
 		
 	
@@ -68,10 +68,10 @@
 			annotation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/DirectTodoSupplier.adoc[]
-			</programlisting>
+[source,java]
+----
+include::res/DirectTodoSupplier.xml[]
+----
 		
 
 
@@ -91,9 +91,9 @@
 			annotation.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/DirectTodoObjectSupplier.java[]
+[source,java]
+----
+include::res/DirectTodoObjectSupplier.java[]
 ----
 		
 	

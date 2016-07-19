@@ -16,9 +16,9 @@
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/first/MySelectionAdapter.java[]
+[source,java]
+----
+include::res/first/MySelectionAdapter.java[]
 ----
 	
 
@@ -52,9 +52,9 @@
 		.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/first/injectshell.txt[]
+[source,java]
+----
+include::res/first/injectshell.txt[]
 ----
 	
 

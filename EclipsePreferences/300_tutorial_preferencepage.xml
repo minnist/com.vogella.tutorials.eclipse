@@ -31,11 +31,7 @@
 		with the following settings.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/preferences10.gif" />
-			</imageobject>
-		</mediaobject>
+image::preferences10.gif[pdfwidth=60%]
 	
 	
 		Enter the following code for your class
@@ -72,9 +68,7 @@
 		application.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/preferences20.gif" />
+image::preferences20.gif" />
 
 			</imageobject>
 		</mediaobject>

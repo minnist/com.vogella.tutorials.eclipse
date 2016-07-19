@@ -23,9 +23,7 @@
 		.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import08.png"/>
+image::egit_import08.png"/>
 
 			</imageobject>
 			<textobject>
@@ -40,9 +38,7 @@
 		in the next dialog.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import09.png"/>
+image::egit_import09.png"/>
 
 			</imageobject>
 			<textobject>
@@ -91,9 +87,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import10.png"/>
+image::egit_import10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>URI entered in the dialog</phrase>
@@ -112,9 +106,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import20.png"/>
+image::egit_import20.png"/>
 
 			</imageobject>
 			<textobject>
@@ -129,9 +121,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import30.png"/>
+image::egit_import30.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Define target directory for Git repository</phrase>
@@ -148,9 +138,7 @@
 		repository.
 	
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/egit_import40.png"/>
+image::egit_import40.png"/>
 
 			</imageobject>
 			<textobject>

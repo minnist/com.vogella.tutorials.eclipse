@@ -91,8 +91,8 @@ image::lifecycleregistration20.png"
 		
 [source,java]
 ----
-include::res/event/plugin.adoc[]
-			</programlisting>
+include::res/event/plugin.xml[]
+----
 		
 
 

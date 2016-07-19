@@ -113,18 +113,18 @@ image::osgi_model_settergetter10.png"
 			can be changed from outside without the corresponding setter.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/getDueDate.java[]
+[source,java]
+----
+include::res/datamodel/getDueDate.java[]
 ----
 		
 		
 			The resulting class should look like the following listing.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Todo.java[]
+[source,java]
+----
+include::res/datamodel/Todo.java[]
 ----
 		
 		NOTE:
@@ -188,9 +188,9 @@ image::osgi_model_settergetter10.png"
 			method to the class.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Copy.java[]
+[source,java]
+----
+include::res/datamodel/Copy.java[]
 ----
 		
 	
@@ -201,9 +201,9 @@ image::osgi_model_settergetter10.png"
 			The following `Tag` class is used to group `Todo` objects.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/datamodel/Tag.java[]
+[source,java]
+----
+include::res/datamodel/Tag.java[]
 ----
 		
 	

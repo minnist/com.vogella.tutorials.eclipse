@@ -23,9 +23,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sleaktrace10.png"/>
+image::sleaktrace10.png"/>
 			</imageobject>
 			<textobject>
 				<phrase></phrase>
@@ -34,9 +32,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/sleaktrace20.png"/>
+image::sleaktrace20.png"/>
 			</imageobject>
 			<textobject>
 				<phrase></phrase>

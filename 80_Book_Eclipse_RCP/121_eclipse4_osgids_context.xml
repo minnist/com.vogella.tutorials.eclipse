@@ -28,9 +28,7 @@
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/contexthierarchy_withosgi12.png" scale="30" />
+image::contexthierarchy_withosgi12.png" scale="30" />
 			</imageobject>
 			<textobject>
 				<phrase>Context hierarchy with OSGi</phrase>

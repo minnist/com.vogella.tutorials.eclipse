@@ -1,0 +1,21 @@
+[[partialmigration]]
+== Using e4 API in 3.x applications
+
+=== Using e4 API based components in a 3.x applications
+		
+It is possible to define new e4 API based components and use them in an application which still uses the
+Eclipse 3.x
+API.
+This allows contributing e4 API based views, menus
+and toolbars to such an application.
+By using this approach, you
+can convert
+these 3.x components step by step to e4 API. How this can be done is shown in the following
+chapters.
+
+=== Extending the Eclipse IDE
+
+The Eclipse IDE uses the same
+approach as an Eclipse 3.x application on top of an e4 runtime. The e4 API based
+extensions described in this chapter can, of course, also be used to extend the Eclipse IDE.
+		

@@ -1,0 +1,103 @@
+== Running Eclipse 3.x plug-ins on top of Eclipse 4
+
+=== Using the compatibility mode
+
+The Eclipse platform team has re-implemented the existing 3.x API on top of the 4.x API. This re-implementation
+is
+sometimes called the
+_compatibility mode_.
+Therefore, you can run
+an Eclipse 3.x RCP application nearly
+unmodified on
+the
+Eclipse 4 runtime. In
+this case your
+application code calls the 3.x API. Call to the 3.x API use internally the 4.x
+API. Relevant extensions
+are converted
+into application model elements at runtime.
+
+image::compatibilitymode10.png[Compatibility mode of 3.x API and 4.x API,pdfwidth=25%]
+
+This approach requires that your Eclipse 3.x
+application is based on released 3.x API. If it uses 3.x
+internals,
+you might have to adjust your code as this code might have been
+changed.
+
+If a 3.x RCP application runs on top of an Eclipse 4.x runtime, the
+platform translates the information contained
+in the
+plugin.xml based extension into model elements. For example the extension point
+information for
+views is read
+and
+part descriptors
+are
+generated
+based on this
+information.
+
+In this scenario you can start to convert certain parts of your
+application
+into Eclipse 4.x API based parts.
+Afterwards
+you have migrated
+sufficient parts of your application you should switch over
+completely.
+
+=== The e4 API and e4 runtime terminology
+
+This $book uses the term
+_e4 API_
+as a synonym for
+_Eclipse 4.x API_
+and the term
+_e4 runtime_
+as a synonym
+for the
+_Eclipse 4.x runtime_
+term.
+
+=== Running 3.x RCP applications on top of an e4 runtime
+
+To migrate your Eclipse RCP application to e4 API you have
+to
+exchange the target platform to an Eclipse 4.x
+version.
+
+The following features includes the necessary Eclipse platform plug-ins required for this.
+
+* `org.eclipse.rcp`
+* `org.eclipse.emf.ecore`
+* `org.eclipse.emf.common`
+
+Add these features (or the included plug-ins) to your product
+configuration file. Afterwards the Eclipse 3.x API
+based RCP
+application starts on top of an e4 runtime without requiring any change in
+your code.
+
+NOTE: This assumes that your Eclipse 3.x application does not use any
+3.x
+internal API. Eclipse marks internal packages with
+the
+_x-internal_
+flag in the
+_MANIFEST.MF_
+file.
+
+=== Benefit of adjusting the runtime to Eclipse 4.x
+
+Running your Eclipse 3.x RCP application on top of an e4 runtime allows you to start migrating
+components
+of
+your
+application to the e4 API.
+
+It also ensures
+that you do not use 3.x internal API and that you
+benefit from the latest
+Eclipse platform
+developments, e.g., security updates.
+

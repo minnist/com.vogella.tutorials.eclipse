@@ -1,0 +1,38 @@
+= Migrating Eclipse 3.x plug-ins and RCP applications to Eclipse 4 - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 6.2, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4MigrationGuide
+
+[abstract]
+Migrating Eclipse 3.x components and applications to Eclipse 4.
+This tutorial gives an overview on how to migrate Eclipse
+components and application based on the Eclipse 3.x application
+model to Eclipse 4. This also includes using the
+compatibility
+layer
+in the
+Eclipse platform to run plug-ins
+based on the Eclipse
+3.x API.
+			
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::001_purpose.adoc[]
+include::010_compatibilitylayer.adoc[]
+include::020_partial_migration.adoc[]
+include::022_reference.adoc[]
+include::030_migration.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::050_mixedmode.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

@@ -1,0 +1,70 @@
+== Migrating to an e4 API application without 3.x API usage
+
+=== Migrating an Eclipse 3.x application completely to the e4 API
+
+If you want to migrate your Eclipse 3.x RCP application completely to the e4 API, you can't directly reuse existing
+_plugin.xml_
+based user interface components, e.g., 3.x API based views or editors.
+
+
+Migrating these components involves:
+* Converting existing user interface contributions via extension points to the application model.
+* Removing the usage of Singleton objects of the Eclipse platform, e.g. `Platform` or `PlatformUI` and use the dependency injection programming model.
+
+=== Using 3.x components in e4 API based applications
+
+Using Eclipse 3.x. API based components in e4 API based application is currently not
+officially supported.
+Customers which are willing to
+debug and fix potential issues can still use this approach.
+As the potential issues
+depend on the plug-ins which are
+re-used and as this approach is officially not supported, it is hard to predict which
+issues are encountered.
+
+NOTE: The difference to
+<<partialmigration>>
+is that in the scenario described in this chapter you have an application that uses only the e4 API, i.e., the
+compatibility layer is not present.
+
+While not supported, some implementations still use this approach which various workarounds. See
+<<mixedmode_example>>
+for a small example project.
+
+=== Reusing platform components
+ 
+Most Eclipse IDE components are still based on the Eclipse 3.x
+API.
+The Eclipse platform plans to migrate more
+and more existing
+components
+to the e4 API in future releases. This means
+that certain components which
+could be reused
+in Eclipse 3.x RCP
+application are not available by default.
+
+Currently most
+components, for example, the IDE perspective switcher,
+the
+view switcher,
+the
+_Progress_
+view, the new project wizard are based on the Eclipse 3.x API and
+therefore cannot be used without modifications in an
+e4 API based application.
+
+=== Existing replacements for 3.x components for e4 API based applications
+
+The
+http://www.vogella.com/company/index.html - vogella GmbH
+provides an Open Source project for an e4 based
+perspective switcher.
+See the following URL for details:
+https://github.com/vogellacompany/e4-perspective-switcher - e4 API based perspective switcher
+
+
+The Eclipse platform team provides also an Eclipse 4 based progress
+view. See the following URL for details:
+https://wiki.eclipse.org/Eclipse4/ProgressView
+

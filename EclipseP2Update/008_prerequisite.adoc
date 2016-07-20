@@ -2,7 +2,7 @@
 
 This tutorial assumes that you have a basic understanding of development for the Eclipse platform.
 
-Please see http://www.vogella.com/tutorials/EclipseRCP/article.html and  http://www.vogella.com/tutorials/EclipsePlugIn/article.html for an introduction.
+Please see http://www.vogella.com/tutorials/EclipseRCP/article.html and  http://www.vogella.com/tutorials/EclipsePlugin/article.html for an introduction.
 It also assumes that you know how to create Eclipse feature projects. 
 See http://www.vogella.com/tutorials/EclipseFeatureProject/article.html for an introduction into features.
 	

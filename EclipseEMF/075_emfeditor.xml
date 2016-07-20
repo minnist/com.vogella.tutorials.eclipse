@@ -13,7 +13,7 @@
 		developing Eclipse plug-ins.
 		For more information about Eclipse plug-in
 		development please see
-		http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Eclipse Plugin Tutorial
+		http://www.vogella.com/tutorials/EclipsePlugin/article.html">Eclipse Plugin Tutorial
 	
 
 === Generating edit / editor code
@@ -41,7 +41,7 @@ image::emfeditor10.gif" />
 		
 		
 			Two
-			http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse plugin
+			http://www.vogella.com/tutorials/EclipsePlugin/article.html"> Eclipse plugin
 			projects
 			have been created,
 			"de.vogella.emf.webpage.model.edit" and

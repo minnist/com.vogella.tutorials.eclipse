@@ -1,7 +1,7 @@
 == Pre-requirements for this tutorial
 	
 This tutorial assumes that you are familiar with Eclipse plug-ins and RCP development.
-Check http://www.vogella.com/tutorials/EclipsePlugIn/article.html[Eclipse Plug-in Tutorial] and
+Check http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plug-in Tutorial] and
 http://www.vogella.com/tutorials/RichClientPlatform/article.html[Eclipse RCP Tutorial] to learn about it. 
 Also, see http://www.vogella.com/tutorials/EclipseFeatureProject/article.html[Eclipse Feature Project] to learn how to create feature projects.
 	

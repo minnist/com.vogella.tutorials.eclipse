@@ -49,7 +49,7 @@ include::010_contributingtoeclipse.adoc[]
 		
 			This tutorial assumes that you have already Eclipse plug-in
 			development experience. See the
-			http://www.vogella.com/tutorials/EclipsePlugIn/article.html"> Eclipse Plug-in development tutorial
+			http://www.vogella.com/tutorials/EclipsePlugin/article.html"> Eclipse Plug-in development tutorial
 			for details.
 		
 

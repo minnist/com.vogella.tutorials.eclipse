@@ -17,7 +17,7 @@ include::res/AddPackage.java[]
 ----
 
 TIP: This will add the package with the Java project name to all open projects in the workspace. Make you sure you really want this. You could also add the action to the context menu of the package explorer and apply it only for the selected project.
-You can learn how to do this in http://www.vogella.com/tutorials/EclipsePlugIn/article.html#packageexplorer[Extending the Package Explorer].
+You can learn how to do this in http://www.vogella.com/tutorials/EclipsePlugin/article.html#packageexplorer[Extending the Package Explorer].
 
 An example can be found on the source page in project _de.vogella.jdt.packageexplorer_.
 Have a look at the command handler _AddPackage.java_.

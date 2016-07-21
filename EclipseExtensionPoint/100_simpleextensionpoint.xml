@@ -377,7 +377,7 @@ image::extensionpoint140.png"/>
 === Add the plug-in to your product
 		
 			Add the
-			`com.vogella.extensionpoint.definition`
+			`com.vogella.extensionpoint.contribution`
 			plug-in
 			to your product (via your features).
 		

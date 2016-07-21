@@ -35,11 +35,7 @@ image::emf_appmodel20.png[To create the EMF model, select this page of the wizar
 
 Press the _Finish_ button.
 
-Enter the following properties for this plug-in via the
-_Properties_
-view.
-
-image::emf_appmodel30.png[Package settings,pdfwidth=60%]
+Check the properties for this plug-in via the _Properties_ view.
 
 === Define relationships to the Eclipse application model
 

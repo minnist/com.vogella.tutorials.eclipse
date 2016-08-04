@@ -1,0 +1,15 @@
+== Listening to Eclipse framework events
+
+If the application model changes the Eclipse framework sends out notifications.
+The Eclipse 4 framework allows to notify event listeners if this happens.
+
+For example the `UIEvents.UILifeCycle.APP_STARTUP_COMPLETE` event is triggered once the application has started.
+Application components can register to this event and are called by the framework once this happens.
+
+Also if your application model changes like your windows, perspectives, parts and their containers, e.g., application, perspective stacks, part sash container or part stacks, an event is propagated by the IEventBroker.
+
+The central class which defines the Eclipse framework events is the `UIEvents` class from the `org.eclipse.e4.ui.workbench` package.
+It contains most of the events or topics and also helper methods to work with the events.
+This class also contains information about the purpose of events in its Javadoc.
+The Eclipse framework sends out objects of type `org.osgi.service.event.Event`.
+

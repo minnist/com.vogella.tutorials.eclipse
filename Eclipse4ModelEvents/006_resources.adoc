@@ -1,0 +1,5 @@
+== Links and Literature
+	
+include::008_resourceslocal.adoc[]
+include::../10_Include/resources.adoc[]
+

@@ -1,0 +1,73 @@
+== Using custom Regions for Widgets
+
+Nowadays users often want some eye candy, e.g., having some nice shapes for certain shells.
+
+In order to apply a custom shape for a `Control` the `Region` class can be used.
+
+=== Regions are Resources
+
+A `Region` is derived from `org.eclipse.swt.graphics.Resource`, which means that it *is necessary* to dispose them, once they are not needed any more.
+
+[source, java]
+----
+Region region = new Region();
+
+// apply region shape
+
+control.setRegion(region);
+
+region.dispose();
+
+----
+
+=== Specifying a Region for a Control
+
+The `Control` class offers a `setRegion` method, where a `Region` can be applied.
+
+The most important methods of a `Region` are `add`, `intersect` and `subtract` where the shape can be defined by either a rectangle or an array of points.
+
+Here is an example where the Shell gets a shape of a crown:
+
+[source, java]
+----
+include::res/CrownRegion.java[]
+----
+
+NOTE: The  x and y coordinates  of the `Region` are relative to the Control´s position and not relative to the display like the shell. That´s why the region rectangle (`region.add(0, 0, 300, 150);`) starts at 0, 0.
+
+=== Adding controls to a "regionized" Shell
+
+When adding controls to a shell, which has an applied `Region`, the area, which is not part of the region, should be considered.
+
+For example by simply adding a `Button` it usually won´t show up, because it would be rendered in the area between the spikes of the crown.
+
+Therefore the layout data, e.g. `GridData`, can be used to specify an indent for the `Control`.
+
+[source, java]
+----
+include::res/CrownRegionWithButton.java[]
+----
+
+In this case an indent is added to the `GridData` of the `Button`.
+
+The result should look similar to this:
+
+image::crown-close-btn.png[]
+
+=== Examples from SWT Snippets
+
+The SWT snippets are always a nice source for more advanced examples like Snippet 134:
+
+[source, java]
+----
+include::res/Snippet134.java[]
+----
+
+And as mentioned before the `setRegion` method belongs to the `Control` class, which means that a `Region` can also be applied for other `Controls` like a `Button`:
+
+[source, java]
+----
+include::res/Snippet294.java[]
+----
+
+

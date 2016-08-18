@@ -1,4 +1,4 @@
-= Eclipse Tycho for building Eclipse Plug-ins, OSGi bundles and RCP applications - Tutorial
+== Eclipse Tycho for building Eclipse Plug-ins, OSGi bundles and RCP applications - Tutorial
 :linkcss:
 :sectnums:
 :experimental:
@@ -28,6 +28,7 @@ include::../web/advertisement/inBetween02.adoc[]
 include::300_exercise_productbuild.adoc[]
 include::320_exercise_targetplatform.adoc[]
 include::400_exercise_unittesting.adoc[]
+include::420_exercise_swt_bot.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::500_convertjars.adoc[]
 include::600_advanced.adoc[]

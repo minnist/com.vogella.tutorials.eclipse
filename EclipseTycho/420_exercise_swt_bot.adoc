@@ -1,0 +1,64 @@
+== Exercise: Tycho build for SWTBot tests
+
+=== Target of this exercise
+		
+The following exercise demonstrates how to run SWTBot tests with Tycho. 
+It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
+		
+The tests of the implementation belong into a separate plug-in or fragment project.
+We decide that our software tests should test the API defined by the plug-in, therefore we create a plug-in for the unit tests.
+
+=== Adding the test dependencies
+
+The dependencies for JUnit, Hamcrest and Mockito will be reused in this exercise.
+
+The latest version of SWT bot can be obtained from this update site:
+http://download.eclipse.org/technology/swtbot/releases/latest/
+
+image::swt-bot-target-definition.png[]
+
+=== Create a new plug-in for the tests
+		
+Create a new plug-in fragment project called _com.vogella.tycho.rcp.it.tests_, where "it" stands for integration test.
+
+image::new-swtbot-test-plugin.png[SWTBot test plugin for Tycho]
+		
+Define a dependency to `org.junit;bundle-version="4.12.0`, `org.hamcrest;bundle-version="1.3.0"`, `org.eclipse.swtbot.junit4_x;bundle-version="2.3.0"` and `org.eclipse.swtbot.swt.finder;bundle-version="2.3.0"` in its _MANIFEST.MF_ file.
+
+image::tycho-swtbot-test-dependencies.png[SWTBot test dependencies]
+
+=== Create a unit test
+
+Create the following SWTBot test.
+
+[source, java]
+----
+include::res/swtbot/TestMenus.java[]
+----
+
+In the `@BeforeClass` method a static reference to a `SWTBot` instance, which will be used for all test methods, is created.
+
+SWTBot needs a special test runner, which is applied by annotating the test class with `@RunWith(SWTBotJunit4ClassRunner.class)` for using the SWTBot test runner.
+
+=== Pom file for SWTBot tests
+
+Another difference for integration tests, like SWTBot tests, is that the https://eclipse.org/tycho/sitedocs/tycho-surefire/tycho-surefire-plugin/plugin-info.html[Tycho Surefire plug-in] has to be configured, so that the SWTBot test can run properly.
+
+[source, xml]
+----
+include::res/swtbot/pom.xml[Test pom for SWTBot tests]
+----
+
+=== Add the SWTBot test to the build
+
+The `com.vogella.tycho.rcp.it.tests` plug-in has to be added to the _pom.xml_ of the tests folder to take part in the overall build.
+
+[source,xml]
+----
+include::res/swtbot/aggregatorpom.xml[]     
+----
+
+=== Run the build with the tests
+
+Run the build from the main directory. This should work fine.
+

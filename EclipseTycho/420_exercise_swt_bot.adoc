@@ -49,6 +49,19 @@ Another difference for integration tests, like SWTBot tests, is that the https:/
 include::res/swtbot/pom.xml[Test pom for SWTBot tests]
 ----
 
+=== Adding org.eclipse.equinox.event as extra requirement
+
+In most of the cases the `org.eclipse.equinox.event` plug-in is used in an Eclipse RCP application. Unfortunately it sometimes is not loaded properly for an integration test, even though it is part of the target platform of the product and mentioned in the _start level configuration_. Due to this it needs to be specified in the configuration of the target-platform-configuration plugin.
+
+[source, xml]
+----
+include::res/swtbot/target-platform-config-pom.xml[]
+----
+
+<1> Add the `org.eclipse.equinox.event` plug-in as extra requirement in the dependency resolution.
+
+Also see https://bugs.eclipse.org/bugs/show_bug.cgi?id=499587.
+
 === Add the SWTBot test to the build
 
 The `com.vogella.tycho.rcp.it.tests` plug-in has to be added to the _pom.xml_ of the tests folder to take part in the overall build.

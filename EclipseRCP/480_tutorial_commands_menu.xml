@@ -101,23 +101,23 @@ include::res/snippets/SaveAllHandler.java[]
 			classes.
 		
 		<itemizedlist>
-			<listitem>
+			*
 				SaveAllHandler
-			</listitem>
-			<listitem>
+			
+			*
 				ExitHandler
-			</listitem>
-			<listitem>
+			
+			*
 				NewTodoHandler
-			</listitem>
-			<listitem>
+			
+			*
 				RemoveTodoHandler
-			</listitem>
+			
 
-			<listitem>
+			*
 				TestHandler
-			</listitem>
-		</itemizedlist>
+			
+		
 
 	
 

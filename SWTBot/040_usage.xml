@@ -1,62 +1,75 @@
 == SWTBot API
 	
-		`SWTBot`
-		is the base class for testing SWT applications.
+`SWTBot` is the base class for testing SWT applications.
 	
-
+The `SWTWorkbenchBot` class provides API to interact with Eclipse 3.x applications.
+The `SWTWorkbenchBot` class extends `SWTBot`. 
+To test Eclipse 4.x RCP application you use the `SWTBot` class.
 	
-		The
-		`SWTWorkbenchBot`
-		class provides API to interact with
-		Eclipse 3.x applications.
-		The
-		`SWTWorkbenchBot`
-		class extends
-		`SWTBot`
-		. To test Eclipse 4.x RCP application you use the
-		`SWTBot`
-		class.
+An user interface interaction may take some time, e.g., if the application reads some data. 
+Therefore, SWTBot waits, by default, 5 seconds before throwing an exception. 
+You can change the timeout via the following:
 	
-	 An user interface interaction may take some time, e.g., if the
-		application
-		reads some data. Therefore SWTBot waits, by default, 5
-		seconds
-		before throwing
-		an
-		exception. You can
-		change the
-		timeout via the
-		following:
-	
-
 	
 [source,java]
 ----
 include::res/api/timeout.txt[]
 ----
 	
-
 	
-		For details on the API usage please see
-		http://wiki.eclipse.org/SWTBot/UsersGuide">SWTBot wiki
-		.
+For details on the API usage please see http://wiki.eclipse.org/SWTBot/UsersGuide[SWTBot wiki].
 	
-	NOTE:
-		The support for Eclipse 4 RCP application is at the time of this
-			writing fairly new. Therefore this chapter is intentionally
-			short, as
-			improvements and changes are expected in the
-			future. Please
-			see the
-			project homepage for the most recent information.
-		
-	</note>
+NOTE:
+Testing an application with a login screen is currently not supported by SWTBot. See
+http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot[SWTBot FAQ].
 
-	<warning>
-		
-			Testing an application with a login screen is currently not supported
-			by SWTBot. See
-http://wiki.eclipse.org/SWTBot/FAQ#How_do_I_test_a_login_dialog_using_SWTBot">SWTBot FAQ
-			.
-		
-	</warning>
+=== Resetting the workbench in 3.x
+
+JUnit does not require that the tests run in the same order as defined. 
+To ensure that the Eclipse 3.x workbench is in the same state for each test you can use the following command.
+    
+
+    
+[source,java]
+----
+include::res/api/reset.txt[]
+----
+
+=== Waiting for certain conditions
+
+During UI tests there may be longer operations, which makes it necessary to wait until a certain condition is fulfilled.
+Therefore a `SWTBot` contains different overloaded methods like `waitUntil`, `waitWhile` and `waitUntilWidgetAppears`.
+All these methods expect an instance of the `ICondition` interface, where the condition for the wait operation is specified.
+The following snippet showns how such a condition can be defined for `waitUntil` and `waitWhile`:
+
+
+[source,java]
+----
+include::res/wait/custom_icondition.java[]
+----
+
+Fortunately `IConditions` for the most use cases are predefined by the SWTBot framework.
+For 3.x application the `org.eclipse.swtbot.eclipse.finder.waits.Conditions` class and for E4 applications the `org.eclipse.swtbot.e4.finder.waits.Conditions` class can be used. 
+Both classes are derived from `org.eclipse.swtbot.swt.finder.waits.Conditions`, which contains general SWT conditions.
+
+[source,java]
+----
+include::res/wait/table_row_condition.java[]
+----
+
+The `Conditions` classes also contain lots of generalized methods, which expect an `org.hamcrest.Matcher` instances in order to test a condition.
+General `org.hamcrest.Matcher` objects for those `Conditions` are:
+
+image::swt_bot_matcher.png[]
+
+
+
+An example for the `WithText` matcher is to wait for a `Shell`:
+
+[source,java]
+----
+include::res/wait/wait_for_shell_matcher.java[]
+----
+
+
+    

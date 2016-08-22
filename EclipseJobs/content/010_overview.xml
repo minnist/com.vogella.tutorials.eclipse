@@ -130,18 +130,18 @@
 			Job
 			API are:
 			<itemizedlist>
-				<listitem>
+				*
 					IJobManager - schedules jobs    
-				</listitem>
-				<listitem>
+				
+				*
 					Job - the individual task to perform   
-				</listitem>
-				<listitem>
+				
+				*
 					IProgressMonitor - interface to communicate information about
 						the status of your Job.
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			The creation and scheduling of a

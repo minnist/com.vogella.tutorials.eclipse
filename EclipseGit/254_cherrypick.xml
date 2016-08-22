@@ -16,11 +16,11 @@
 	
 	
 image::cherrypick10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	For this you would make a hard reset on the commit of
@@ -29,29 +29,29 @@ image::cherrypick10.png"/>
 
 	
 image::cherrypick20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	Afterwards you can cherry-pick the good commit.
 	
 image::cherrypick30.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 image::cherrypick40.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	This results in a history without the bad commit. 
 	NOTE:

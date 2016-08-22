@@ -32,8 +32,8 @@
 	
 image::dsconsumer10.gif" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	 This time we will use a service. Maintain the "Referenced
@@ -43,8 +43,8 @@ image::dsconsumer10.gif" />
 	
 image::dsconsumer20.gif" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	
@@ -60,8 +60,8 @@ image::dsconsumer20.gif" />
 	
 image::dsconsumer30.gif" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	 The result component.xml should look like: 

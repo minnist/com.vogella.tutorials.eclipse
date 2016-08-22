@@ -196,29 +196,29 @@ image::e4_productfeature10.png[Switching to feature on the product configuration
 			_Add..._
 			button.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`com.example.e4.rcp.todo.feature`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.rcp`
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					
 						`org.eclipse.emf.ecore`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.emf.common`
 					
-				</listitem>
+				
 
-			</itemizedlist>
+			
 		
 
 		

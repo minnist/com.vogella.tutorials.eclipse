@@ -131,23 +131,23 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 			interface
 			and therefore have their own context:
 			<itemizedlist>
-				<listitem>
+				*
 					MApplication
-				</listitem>
-				<listitem>
+				
+				*
 					MWindow
-				</listitem>
-				<listitem>
+				
+				*
 					MPerspective
-				</listitem>
-				<listitem>
+				
+				*
 					MPart
-				</listitem>
+				
 
-				<listitem>
+				*
 					MPopupMenu
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 

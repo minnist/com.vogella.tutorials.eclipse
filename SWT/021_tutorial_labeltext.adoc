@@ -23,9 +23,9 @@
 
 	
 image::first.png" scale="80" />
-			</imageobject>
+			
 			<textobject>
 				<phrase></phrase>
 			</textobject>
-		</mediaobject>
+		
 	

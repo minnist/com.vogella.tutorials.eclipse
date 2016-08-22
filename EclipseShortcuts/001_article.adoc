@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 				shortcuts. It is based on
 				Eclipse 4.4 (Luna).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]

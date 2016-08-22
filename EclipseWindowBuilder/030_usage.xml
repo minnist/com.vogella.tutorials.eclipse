@@ -20,11 +20,11 @@
 	
 	
 image::swtdesigner10.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Showing SWT Designer main perspective</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
@@ -57,11 +57,11 @@ image::swtdesigner10.png" scale="30" />
 
 	
 image::swtdesigner20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>SWT Designer in Action</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		SWT Designer

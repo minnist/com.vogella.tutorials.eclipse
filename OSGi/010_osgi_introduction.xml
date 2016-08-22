@@ -197,20 +197,20 @@
 			_simple bundle_
 			.
 			<itemizedlist>
-				<listitem>
+				*
 					No Activator
-				</listitem>
-				<listitem>
+				
+				*
 					No contributions to the user interface
 					
-				</listitem>
-				<listitem>
+				
+				*
 					Not a rich client application
-				</listitem>
-				<listitem>
+				
+				*
 					Generated without a template
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 	

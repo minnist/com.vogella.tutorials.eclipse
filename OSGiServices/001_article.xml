@@ -45,8 +45,8 @@ Version 0.3, 06.07.2016
 				(Luna) is
 				used.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_prerequisites.adoc[]
 include::070_service.adoc[]

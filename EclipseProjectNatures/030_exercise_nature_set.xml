@@ -21,19 +21,19 @@ Version 0.3, 06.07.2016
         Create a plugin project and add the following dependencies to it:
         
             <itemizedlist>
-                <listitem>
+                *
                     org.eclipse.core.runtime
-                </listitem>
-                <listitem>
+                
+                *
                     org.eclipse.core.resources
-                </listitem>
-                <listitem>
+                
+                *
                     org.eclipse.ui.ide
-                </listitem>
-                <listitem>
+                
+                *
                     org.eclipse.ui
-                </listitem>
-            </itemizedlist>
+                
+            
         
         In the plugin.xml you need to add the `org.eclipse.core.resources.natures`
             extension point.
@@ -41,8 +41,8 @@ Version 0.3, 06.07.2016
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_extension.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         In the _ExampleProjectNature(run)_ we reference the
                 `ExampleProjectNature` class:
@@ -82,8 +82,8 @@ include::res/ExampleProjectNatureHandler.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_convert_menucontribution.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
     
     
@@ -97,8 +97,8 @@ include::res/ExampleProjectNatureHandler.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_core_expression.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         The _id_ of the definition should be
                 `com.example.project.hasNature`, which adapts
@@ -110,8 +110,8 @@ include::res/ExampleProjectNatureHandler.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_propertytester.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         Now we only need to reference this definition in a _visibleWhen_
             definition for the _menuContribution_.
@@ -119,8 +119,8 @@ include::res/ExampleProjectNatureHandler.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_visibleWhen_expression.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         Do not forget to define _(not)_ and then reference the
                 `com.example.project.hasNature` definition. The

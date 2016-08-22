@@ -36,8 +36,8 @@ Version 0.3, 06.07.2016
 			
 			 In this tutorial Eclipse 4.3 is used.
 			Level of this tutorial: Advanced
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::100_overview.adoc[]
 include::120_create_launch_configuration.adoc[]

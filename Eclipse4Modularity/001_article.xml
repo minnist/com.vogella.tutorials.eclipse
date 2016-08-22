@@ -40,8 +40,8 @@ Version 0.3, 06.07.2016
 				application model via other
 				plug-ins.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/Eclipse/e4_prerequisites.adoc[]

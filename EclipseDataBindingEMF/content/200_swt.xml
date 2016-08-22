@@ -29,29 +29,29 @@
 		properties:
 
 		<itemizedlist>
-			<listitem>
+			*
 				firstName - String    
-			</listitem>
-			<listitem>
+			
+			*
 				lastName - String   
-			</listitem>
-			<listitem>
+			
+			*
 				gender - String      
-			</listitem>
-			<listitem>
+			
+			*
 				isMarried - boolean    
-			</listitem>
-			<listitem>
+			
+			*
 				phone - Phone    
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	 The result should look similar to the following. 
 	
 image::emfdb10.png" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	
 		Change the

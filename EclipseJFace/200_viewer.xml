@@ -57,27 +57,27 @@
 			the most important ones.
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`ComboViewer`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`ListViewer`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`TreeViewer`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`TableViewer`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

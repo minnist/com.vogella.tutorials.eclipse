@@ -9,22 +9,22 @@
 			listed below.
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.releng.git
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.ui.git
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						git://git.eclipse.org/gitroot/platform/eclipse.platform.runtime.git
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			In case you want to contribute Gerrit patches to these
@@ -61,27 +61,27 @@
 		
 			To run theses tests, import the following required plug-ins:
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.tests.harness from the
 					eclipse.platform.runtime repository
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.core.tests.runtime from the
 					eclipse.platform.runtime repository
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.test.performance from the
 					eclipse.platform.releng repository
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.ui.tests from the eclipse.platform.ui
 					repository
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.ui.tests.harness from the eclipse.platform.ui
 					repository
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 
@@ -95,10 +95,10 @@
 		
 
 image::Junit.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Screenshot of the JFace JUnit run</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

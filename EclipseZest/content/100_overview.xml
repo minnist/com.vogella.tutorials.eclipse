@@ -24,22 +24,22 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
 		
 			Eclipse Zest has the following components:
 			<itemizedlist>
-				<listitem>GraphNode - Node in the graph with the properties
+				*GraphNode - Node in the graph with the properties
 					
-				</listitem>
-				<listitem>
+				
+				*
 					GraphConnections - Arrow / Edge of the graph which
 						connections to two nodes
 					
-				</listitem>
-				<listitem>
+				
+				*
 					GraphContainer - Use for a graph within a graph
 					
-				</listitem>
-				<listitem>Graph - holds the other elements (nodes, connections,
+				
+				*Graph - holds the other elements (nodes, connections,
 						container) 
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

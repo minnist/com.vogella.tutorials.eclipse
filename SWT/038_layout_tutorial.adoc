@@ -18,8 +18,8 @@
 
 	
 image::gridswtlayout.png"/>
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	Resize the window and see how the arrangement of the widgets
 		change.

@@ -64,27 +64,27 @@ include::res/osgi/bundle.properties[]
 		
 			For example:
 			<itemizedlist>
-				<listitem>
+				*
 					messages.properties: default language file, if nothing else
 						is available
 					
-				</listitem>
-				<listitem>
+				
+				*
 					messages_de.properties: used for German
 					
-				</listitem>
-				<listitem>
+				
+				*
 					messages_en.properties: default for English
-				</listitem>
-				<listitem>
+				
+				*
 					messages_en_US.properties: US English file
-				</listitem>
-				<listitem>
+				
+				*
 					messages_en_UK.properties: British English file 
-				</listitem>
+				
 
 
-			</itemizedlist>
+			
 		
 
 

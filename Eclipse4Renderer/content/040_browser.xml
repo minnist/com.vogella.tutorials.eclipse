@@ -39,11 +39,11 @@ include::res/browser/MyRendererFactory.java[]
 
 	
 image::stackrenderer20.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Using a Browser Renderer for the Parts</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	<warning>
 		

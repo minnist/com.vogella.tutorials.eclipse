@@ -17,22 +17,22 @@
 		While you could use native code without this header, its usage has two advantages.
 
 		<itemizedlist>
-			<listitem>
+			*
 				a plug-in does not resolve if there is no matching clause for the current platform. If you don’t include the
 					optional specifier (the trailing asterisk), this avoids an
 					UnsatisfiedLinkError.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				 OSGi resolves the library name, e.g., "mydll" to the appropriate DLLs for the platform,
 					and
 					manages
 					the loading
 					and unloading of the shared library
 				
-			</listitem>
+			
 
-		</itemizedlist>
+		
 	
 	
 		To make your native library available you have to load it via a call of

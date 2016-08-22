@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 			In this tutorial Eclipse 3.6 (Eclipse Helios) is used.
 			
 
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::100_overview.adoc[]
 include::140_installation.adoc[]

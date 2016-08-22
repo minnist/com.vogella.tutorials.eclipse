@@ -99,11 +99,11 @@ image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/comparemode10.png"/>
-					</imageobject>
+					
 					<textobject>
 						<phrase>Compare mode</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</tip>
 	
@@ -160,13 +160,13 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 		
 		Depending on your use case you may want to select the following option:
 		<orderedlist numeration="loweralpha">
-			<listitem>
+			*
 				
 					show only those commits which are reachable from the current
 					branch. Hide all commits on other topic branches.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					see only those commits which changed the selected resource
 					(file, project, subfolder) or it’s children. E.g.
@@ -175,8 +175,8 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 					selection is shown in the top right
 					corner of the History view.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					see only those commits which changed anything in the parent
 					folder of the selected resource (file, project,
@@ -185,20 +185,20 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 					package as the selected java
 					source.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					see only those commits which changed anything in the same
 					project as the selected resource or it’s children.
 					Used when you
 					are working in a repository which contains multiple projects.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					don’t filter at all. Show all commits of the current repository
 				
-			</listitem>
+			
 		</orderedlist>
 		The options b., c. and d. are tied to the currently selected
 			resource.
@@ -262,11 +262,11 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/gitsearch10.png"/>
-					</imageobject>
+					
 					<textobject>
 						<phrase>Git search</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</note>
 	

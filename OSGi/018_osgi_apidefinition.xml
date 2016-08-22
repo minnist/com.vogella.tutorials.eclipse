@@ -21,11 +21,11 @@
 
 	
 image::osgi_api_definition10.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Dependency management</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
@@ -65,11 +65,11 @@ image::osgi_api_definition10.png" />
 
 	
 image::x-internal10.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Setting the x-internal flag</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	 This is how the corresponding manifest file looks like.
@@ -112,11 +112,11 @@ image::x-internal10.png" />
 
 	
 image::x-internal30.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Settings in Eclipse for warnings for deprecated API usage</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	

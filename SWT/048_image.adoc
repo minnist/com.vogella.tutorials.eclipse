@@ -15,6 +15,6 @@
 	
 image::swtimages10.png" scale="60"/>
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	

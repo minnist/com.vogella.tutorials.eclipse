@@ -25,12 +25,12 @@
 	
 image::plugin_customization10.png"
 					scale="40" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Referring to the plugin_customization.ini file in the
 					product extension</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 

@@ -164,19 +164,19 @@
 			use the OSGi
 			console.
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.equinox.console
-				</listitem>
-				<listitem>
+				
+				*
 					org.apache.felix.gogo.command
-				</listitem>
-				<listitem>
+				
+				*
 					org.apache.felix.gogo.runtime
-				</listitem>
-				<listitem>
+				
+				*
 					org.apache.felix.gogo.shell
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 	

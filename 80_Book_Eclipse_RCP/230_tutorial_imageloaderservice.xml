@@ -25,22 +25,22 @@
 			Add the following plug-ins as dependencies to your new plug-in.
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.core.runtime`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.jface`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.osgi.services`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 		NOTE:

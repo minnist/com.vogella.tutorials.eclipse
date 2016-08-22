@@ -1,53 +1,25 @@
-= Android - Tutorial
+= SWTBot for testing Eclipse Applications - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
+Lars Vogel, Simon Scholz (c) 2010, 2016 vogella GmbH
 Version 0.3, 06.07.2016
 :docinfodir: ../
 :vgwort: 
 
 [abstract]
-
-
-=== SWTBot for testing Eclipse Applications - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<author>
-			<firstname>Simon</firstname>
-			<surname>Scholz</surname>
-		</author>
-		<copyright>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2015</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>05.08.2015</pubdate>
-		<releaseinfo>
-			Version 2.5
-		</releaseinfo>
-		
-		<abstract id="abstract">
-	=== SWTBot
-			 This tutorial describes how to use SWTBot to test Eclipse RCP
-				applications. Within this tutorial Eclipse 4.5 (Mars) is used.
+This tutorial describes how to use SWTBot to test Eclipse RCP applications. 
+Within this tutorial Eclipse 4.6 is used.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::./010_overview.adoc[]
 include::./020_installation.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::./040_usage.adoc[]
-include::./042_usage3x.adoc[]
-include::./050_waitoperations.adoc[]
 include::./060_pitfalls.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]

@@ -1,21 +1,10 @@
 == Screenshot
-	 SWTBot can
-		automatically generate screenshots of the running
-		application if a test fails. To
-		use
-		this feature include the plug-in _org.eclipse.swtbot.junit4_x_ into
-		the
-		dependencies of your test
-		project. Annotate your class test with
-		`@RunWith(SWTBotJunit4ClassRunner.class)`. This will automatically
-		generated screenshots in the _screenshots_ folder or your test
-		projects. If you do not see this
-		folder in your project, try refreshing
-		the project (F5).
-	
 
+SWTBot can automatically generate screenshots of the running application if a test fails. 
+To use this feature include the plug-in _org.eclipse.swtbot.junit4_x_ into the dependencies of your test project. 
+Annotate your class test with `@RunWith(SWTBotJunit4ClassRunner.class)`. 
+This generates screenshots in the _screenshots_ folder or your test projects. 
+If you do not see this folder in your project, try refreshing the project (F5).
 	
-		You can trigger
-		a screenshot in your code via the method
-		`bot.captureScreenshot(fileName)`.
+You can trigger a screenshot in your code via the method `bot.captureScreenshot(fileName)`.
 	

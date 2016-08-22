@@ -28,17 +28,17 @@
 			Add the following plug-ins as dependencies to your new plug-in.
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.e4.core.di`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`com.example.e4.rcp.todo.model`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 			Also configure that the
 			`javax.inject`
 			package should be used.

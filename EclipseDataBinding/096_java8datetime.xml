@@ -62,8 +62,8 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="./images/java8_DateTime_binding.png"/>
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	
 		If you select a date in the

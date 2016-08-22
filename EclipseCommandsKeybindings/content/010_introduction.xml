@@ -44,23 +44,23 @@
 	
 		To define and use your own scheme you need:
 		<itemizedlist>
-			<listitem>
+			*
 				Define a new scheme via extension point
 					"org.eclipse.ui.bindings"
 				
-			</listitem>
-			<listitem>
+			
+			*
 				Assign this scheme to the key bindings you defined
 				
-			</listitem>
-			<listitem>
+			
+			*
 				Have a product created
-			</listitem>
-			<listitem>
+			
+			*
 				Define the file "plugin_customization.ini" and set the
 					scheme
 					for the product via a property.
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	

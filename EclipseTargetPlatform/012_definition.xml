@@ -29,11 +29,11 @@
 	
 	
 image::targetdefinition10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Define File name for Target Definition</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		You can add new locations via the
@@ -58,13 +58,13 @@ image::targetdefinition10.png"/>
 	
 	
 image::targetdefinition20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Setting the new defined target definition as target for
 					the
 					development</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	TIP:
 		Wait until the target platform is completely resolved before setting it as target platform.
@@ -81,11 +81,11 @@ image::targetdefinition20.png"/>
     
 	
 image::tutorial_targetdefinition50.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Definition of a target definition file</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 			
 	
@@ -102,11 +102,11 @@ image::tutorial_targetdefinition50.png"/>
 	
 	
 image::targetdefinition30.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Setting the target definition via the Eclipse Preferences</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	

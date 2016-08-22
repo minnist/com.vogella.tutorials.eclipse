@@ -10,11 +10,11 @@
 
 	
 image::rap_install10.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Installation of the Eclipse RAP Target Platform</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	 Check that the target platform got activated under Window ->
 		Preferences ->
@@ -24,8 +24,8 @@ image::rap_install10.png" />
 		Eclipse update.
 	
 image::rap_install20.png"/>
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	 After the installation is finished restart your Eclipse.
 

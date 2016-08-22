@@ -83,11 +83,11 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/modeledworkbench10.gif" scale="60" />
-                </imageobject>
+                
                 <textobject>
                     <phrase>Limits of the modeled workbench</phrase>
                 </textobject>
-            </mediaobject>
+            
         
 
 		

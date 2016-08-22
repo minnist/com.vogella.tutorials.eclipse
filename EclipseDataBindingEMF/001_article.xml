@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 				EMF,
 				This article is based on Eclipse 4.2 (Juno).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::100_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

@@ -222,26 +222,26 @@
 			field identifier. If you change your plug-in code you increase the
 			version according to the following rule set.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						_<![CDATA[<patch>]]>_
 						is increased if all changes are backwards compatible.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						_<![CDATA[<minor>]]>_
 						is increased if public API has changed but all changes are
 						backwards compatible.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						_<![CDATA[<major>]]>_
 						is increased if changes are not backwards compatible.
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			For more information on this version scheme see the

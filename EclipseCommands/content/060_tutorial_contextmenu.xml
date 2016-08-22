@@ -36,8 +36,8 @@
 	
 image::commands_popup10.png" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	 Implement now the code for your handler. I just print the
 		selected elements to the console.

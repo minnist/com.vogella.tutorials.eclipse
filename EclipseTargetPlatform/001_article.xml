@@ -50,8 +50,8 @@ Version 0.3, 06.07.2016
 				RCP
 				development.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]

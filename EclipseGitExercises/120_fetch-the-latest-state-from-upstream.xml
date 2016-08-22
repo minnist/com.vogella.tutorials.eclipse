@@ -20,12 +20,12 @@
 		for your local changes.
 	
 	<itemizedlist>
-		<listitem>
+		*
 			
 				Go to the Git Repositories view
 			
-		</listitem>
-		<listitem>
+		
+		*
 			
 				Select your repository and click
 				_Fetch from Upstream_
@@ -34,19 +34,19 @@
 				<inlinemediaobject>
 					<imageobject>
 						<imagedata fileref="./images/fetch-from-upstream.png" scale="50" />
-					</imageobject>
+					
 					<textobject>
 						<phrase>Fetch from Upstream</phrase>
 					</textobject>
 				</inlinemediaobject>
 			
-		</listitem>
-		<listitem>
+		
+		*
 			
 				The "Fetch Results" dialog displays the result of the fetch action
 			
 			<itemizedlist>
-				<listitem>
+				*
 					
 						If new changes have been fetched it looks like this:
 					
@@ -54,14 +54,14 @@
 						<inlinemediaobject>
 							<imageobject>
 								<imagedata fileref="./images/fetch-results.png" scale="50" />
-							</imageobject>
+							
 							<textobject>
 								<phrase>Fetch Results</phrase>
 							</textobject>
 						</inlinemediaobject>
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						If you already have the latest state available on the server it
 						shows the message "everything up to date" and
@@ -71,16 +71,16 @@
 						<inlinemediaobject>
 							<imageobject>
 								<imagedata fileref="./images/fetch-results-up-to-date.png" scale="50" />
-							</imageobject>
+							
 							<textobject>
 								<phrase>Fetch Results up to Date</phrase>
 							</textobject>
 						</inlinemediaobject>
 					
-				</listitem>
-			</itemizedlist>
-		</listitem>
-	</itemizedlist>
+				
+			
+		
+	
 
 	
 		Now, after the remote tracking branch

@@ -42,21 +42,21 @@
 			different
 			components:
 			<itemizedlist>
-				<listitem>
+				*
 					Application model - By default defined via the
 						Application.e4xmi file
 					
-				</listitem>
-				<listitem>
+				
+				*
 					Model contributions - Based on fragments and processors
 					
-				</listitem>
-				<listitem>
+				
+				*
 					User changes - Changes the user did to the user interface
 						during his last usage
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			These different components of the runtime application model need

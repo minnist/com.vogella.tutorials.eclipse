@@ -12,29 +12,29 @@
 		_Web, XML, Java EE Developmentand OSGi Enterprise Development_
 		category.
 		<itemizedlist>
-			<listitem>
+			*
 				Eclipse Java EE Developer Tools
-			</listitem>
-			<listitem>
+			
+			*
 				Eclipse Java Web Developer Tools
-			</listitem>
-			<listitem>
+			
+			*
 				Eclipse Web Developer Tools
-			</listitem>
-			<listitem>
+			
+			*
 				JST Server Adapters
-			</listitem>
-			<listitem>
+			
+			*
 				JST Server Adapters Extensions
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	
 image::eclipsewtp_installation10.png"
 					scale="40" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Eclipse WTP installation</phrase>
 			</textobject>
-		</mediaobject>
+		
 	

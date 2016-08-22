@@ -25,11 +25,11 @@
 	
 image::egit_import08.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Importing projects via EGit</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
@@ -40,11 +40,11 @@ image::egit_import08.png"/>
 	
 image::egit_import09.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>URI selected in EGit</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 
@@ -88,11 +88,11 @@ image::egit_import09.png"/>
 
 	
 image::egit_import10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>URI entered in the dialog</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		After pressing the
@@ -108,11 +108,11 @@ image::egit_import10.png"/>
 	
 image::egit_import20.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>URI entered in the dialog</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	 The next dialog allows you to specify where the repository
 		should
@@ -122,11 +122,11 @@ image::egit_import20.png"/>
 
 	
 image::egit_import30.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Define target directory for Git repository</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		After the Git repository is cloned,
@@ -140,11 +140,11 @@ image::egit_import30.png"/>
 	
 image::egit_import40.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Importing projects</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	 Once this dialog is completed, you have checked out (cloned) the

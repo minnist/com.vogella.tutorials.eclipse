@@ -284,11 +284,11 @@ include::res/launchproblems/dependency.txt[]
 				<mediaobject>
 					<imageobject>
 						<imagedata scale="35" fileref="images/launchconfiguration30.png" />
-					</imageobject>
+					
 					<textobject>
 						<phrase>Validating the runtime configuration</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</tip>
 

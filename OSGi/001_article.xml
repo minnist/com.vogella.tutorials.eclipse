@@ -40,8 +40,8 @@ Version 0.3, 06.07.2016
 				layer.
 				For this tutorial Eclipse 4.5 (Luna) is used.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_osgi_introduction.adoc[]
 include::012_osgi_bundles.adoc[]

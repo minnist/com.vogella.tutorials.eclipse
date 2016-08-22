@@ -70,8 +70,8 @@ image::preferences10.gif[pdfwidth=60%]
 	
 image::preferences20.gif" />
 
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	
 		Add a command

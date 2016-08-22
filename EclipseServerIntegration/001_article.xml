@@ -37,8 +37,8 @@ Version 0.3, 06.07.2016
 			 This tutorial describes options how to integration a server with Eclipse. A 2-tier and 3-tier layer is
 				described.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_jpa.adoc[]

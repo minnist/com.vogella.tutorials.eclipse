@@ -75,13 +75,13 @@
 			`com.example.e4.rcp.todo`
 			plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					`org.eclipse.e4.core.services`
-				</listitem>
-				<listitem>
+				
+				*
 					`org.eclipse.osgi.services`
-				</listitem>
-			</itemizedlist>
+				
+			
 
 		
 		

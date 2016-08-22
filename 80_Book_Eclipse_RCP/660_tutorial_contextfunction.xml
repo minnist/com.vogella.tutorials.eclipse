@@ -35,38 +35,38 @@
 			reference
 			for other implementations.
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.runtime
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.services
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.contexts
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.di
-				</listitem>
+				
 
-				<listitem>
+				*
 					org.eclipse.e4.ui.model.workbench
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.osgi.services
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			For this exercise the service plug-in also needs to import the following packages (or plug-ins):
 			<itemizedlist>
-				<listitem>
+				*
 					com.example.e4.rcp.todo.model
-				</listitem>
-				<listitem>
+				
+				*
 					com.example.e4.rcp.todo.events
-				</listitem>
+				
 
-			</itemizedlist>
+			
 		
 
 

@@ -26,13 +26,13 @@
 		
 		
 image::wtp_first_project10.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::wtp_first_project20.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Press twice the
@@ -43,8 +43,8 @@ image::wtp_first_project20.png" />
 		
 		
 image::wtp_first_project30.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Afterwards press the
@@ -98,13 +98,13 @@ include::res/counter/FileDao.java[]
 		
 		
 image::wtp_first_project40.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::wtp_first_project50.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Press finish.
 		
@@ -142,8 +142,8 @@ include::res/counter/FileCounter.java[]
 		
 		
 image::wtp_first_project60.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
@@ -152,8 +152,8 @@ image::wtp_first_project60.png" />
 		
 		
 image::wtp_first_project70.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		NOTE:

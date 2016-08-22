@@ -8,21 +8,21 @@
 		
 image::dtpdatabase06.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::dtpdatabase10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Select Derby.
 		
 image::dtpdatabase20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Maintain a Database location where the new database should be
 			stored on your file system. The flag "Create database (if required)"
@@ -31,8 +31,8 @@ image::dtpdatabase20.gif" />
 		
 image::dtpdatabase30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Congratulation! You have created a new database.
 		
@@ -46,16 +46,16 @@ image::dtpdatabase30.gif" />
 		
 image::dtpdatabase50.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Open then tree to see the content of your new database.
 		
 		
 image::dtpdatabase60.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Congratulation. You have connected yourself to the new database.
 		

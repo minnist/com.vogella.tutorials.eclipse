@@ -2,19 +2,19 @@
 	Three different ways to trigger a launch exist.
 	
 		<itemizedlist>
-			<listitem>
+			*
 				Pass a launch configuration to an `﻿ILaunchConfigurationDelegate`, which runs
 					the launch configuration
-			</listitem>
-			<listitem>
+			
+			*
 				Use an `﻿ILaunchShortcut` and determine with an IEditorPart how a
 					launch should be done
-			</listitem>
-			<listitem>
+			
+			*
 				Use an `﻿ILaunchShortcut` and determine with an ISelection how a
 					launch should be done
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	<section>
 === Creating a new launch configuration type

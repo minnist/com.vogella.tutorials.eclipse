@@ -36,8 +36,8 @@ Version 0.3, 06.07.2016
 		<abstract id="abstract">
 	=== Using Eclipse Mylyn for task management
 			 This tutorial describes the usage of Mylyn for Eclipse.
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]

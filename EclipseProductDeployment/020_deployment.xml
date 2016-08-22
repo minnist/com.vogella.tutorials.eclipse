@@ -142,36 +142,36 @@ image::pdeexportwizard10.png[,pdfwidth=60%]
 			Make sure the following items (if available) are included in each
 			plug-in of the exported application::
 			<itemizedlist>
-				<listitem>
+				*
 					META-INF/MANIFEST.MF
-				</listitem>
-				<listitem>
+				
+				*
 					plugin.xml
-				</listitem>
-				<listitem>
+				
+				*
 					
 						other
 						static
 						files, e.g., icons,
 						splash.bmp, etc.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					Application.e4xmi
-				</listitem>
-				<listitem>
+				
+				*
 					CSS files
-				</listitem>
-				<listitem>
+				
+				*
 					OSGi service definition files
-				</listitem>
-				<listitem>
+				
+				*
 					model fragments
-				</listitem>
-				<listitem>
+				
+				*
 					translation files
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 		

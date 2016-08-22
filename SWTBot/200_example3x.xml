@@ -2,19 +2,9 @@
 
 === Create project
 		
-			Create a new
-			Eclipse RCP
-			application called
-			_de.vogella.swtbot.app_
-			based on the "Eclipse
-			application
-			with a
-			view"
-			template.
+Create a new Eclipse RCP application called _de.vogella.swtbot.app_ based on the _Eclipse application with a view_ template.
 		
-		
-			Change the class View to the following.
-		
+Change the `View` class  to the following.
 		
 [source,java]
 ----
@@ -22,73 +12,36 @@ include::res/first/View.java[]
 ----
 		
 		
-			This
-			view
-			defines two text fields, one of them will be identified by SWTBot
-			via the
-			label and the other through an SWTBot specific ID.
-		
-	
+This view defines two text fields, one of them will be identified by SWTBot via the label and the other through an SWTBot specific ID.
 
 === Create test plug-in
 		
-			Create another
-			Eclipse plug-in called
-			_de.vogella.swtbot.tests_
-			.
+Create another Eclipse plug-in called _de.vogella.swtbot.tests_.
 		
-		
-			Add the following dependencies  to the
-			_MANIFEST.MF_
-			file for your test project.
+Add the following dependencies to the _MANIFEST.MF_ file for your test project.
 
-			<itemizedlist>
-				<listitem>
-					org.eclipse.ui
-				</listitem>
-				<listitem>
-					org.junit4
-				</listitem>
-				<listitem>
-					org.hamcrest
-				</listitem>
-				<listitem>
-					org.eclipse.swtbot.swt.finder
-				</listitem>
-				<listitem>
-					org.eclipse.swtbot.eclipse.finder
-				</listitem>
-			</itemizedlist>
+* org.eclipse.ui
+* org.junit4
+* org.hamcrest
+* org.eclipse.swtbot.swt.finder
+* org.eclipse.swtbot.eclipse.finder
 		
-		
-			Create the following class which defines the JUnit test.
-		
-
+Create the following class which defines the JUnit test.
 		
 [source,java]
 ----
 include::res/first/UserInterfaceTester1.java[]
 ----
 		
+Right-click on the test and select menu:Run As [SWTBot Test]. 
+In the launch configuration select your application and add the _de.vogella.swtbot.tests_ and _de.vogella.swtbot.app_ plugins and their dependencies to the launch configuration.
 		
-			Right-click on the test and select
-			menu:Run As [SWTBot Test]
-			. In the
-			launch configuration maintain your application and add the
-			_de.vogella.swtbot.tests_ and _de.vogella.swtbot.app_
-			plugins
-			as well as
-			their
-			dependencies to the launch configuration.
-		
-
 		
 image::swtbot10.png[pdfwidth=60%]
 		
 		
-			If everything runs correctly, you should get a green test.
-			Change
-			your `test()` method to the following to do some real testing.
+If everything runs correctly, you should get a green test.
+Change your `test()` method to the following to do some real testing.
 		
 		
 [source,java]
@@ -96,10 +49,8 @@ image::swtbot10.png[pdfwidth=60%]
 include::res/first/UserInterfaceTester.java[]
 ----
 		
-		 Run your test again and verify that the test runs ok. Change,
-			for
-			example, the content of one text field, re-run the test and verify
-			that
-			the test fails.
+Run your test again and verify that the test run successfully. 
+
+Change, for example, the content of one text field, re-run the test and verify that the test fails.
 		
 	

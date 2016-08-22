@@ -11,8 +11,8 @@
 		
 		
 image::WTPConfig10.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Select your version of Tomcat and select the
@@ -21,8 +21,8 @@ image::WTPConfig10.png" />
 		
 		
 image::WTPConfig20.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			You can instruct Eclipse to download Tomcat into a local
@@ -30,8 +30,8 @@ image::WTPConfig20.png" />
 		
 		
 image::WTPConfig30.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 		
@@ -56,8 +56,8 @@ image::WTPConfig30.png" />
 		
 		
 image::wtp_tomcatserver10.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			You can stop and start the
@@ -67,7 +67,7 @@ image::wtp_tomcatserver10.png" />
 		
 		
 image::wtp_tomcatserver20.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	

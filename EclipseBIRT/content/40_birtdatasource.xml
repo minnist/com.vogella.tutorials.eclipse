@@ -17,11 +17,11 @@
 		
 			Create a new datasource, named "srcStocks" in your report.
 image::datasource10.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 image::datasource20.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -33,13 +33,13 @@ image::datasource20.gif" format="gif" />
 
 		
 image::dataset10.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::dataset20.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 
 		
 		
@@ -47,8 +47,8 @@ image::dataset20.gif" format="gif" />
 		
 		
 image::dataset30.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -65,8 +65,8 @@ image::dataset30.gif" format="gif" />
 		
 		
 image::javascript10.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			<programlisting>
@@ -86,7 +86,7 @@ image::javascript10.gif" format="gif" />
 			on the dataset -> Preview Result.
 		
 image::SNAG-0011.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	

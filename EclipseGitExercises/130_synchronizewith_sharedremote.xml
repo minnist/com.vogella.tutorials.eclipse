@@ -29,7 +29,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/configure_push_to_master.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Configure Push to Origin</phrase>
 				</textobject>
@@ -50,7 +50,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/refspec_master.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Push Refspec</phrase>
 				</textobject>
@@ -75,7 +75,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/push_rejected.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Push Rejected</phrase>
 				</textobject>
@@ -97,7 +97,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/rebaseontop.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Rebase on top</phrase>
 				</textobject>
@@ -115,7 +115,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/after_push.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>After push</phrase>
 				</textobject>

@@ -9,8 +9,8 @@
 		
 image::sqlfile10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Maintain the folder "scripts" as a target, name the  file "myscript.sql"
@@ -20,8 +20,8 @@ image::sqlfile10.gif" />
 		
 image::sqlfile20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Maintain a SQL statement, e.g., the creation of a Database
@@ -33,15 +33,15 @@ image::sqlfile20.gif" />
 		
 image::sqlfile30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::sqlfile40.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Switch back to "Database development" perspective, right

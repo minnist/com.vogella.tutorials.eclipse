@@ -9,13 +9,13 @@
 			has "Java" as a default value.
 		
 image::SNAG-0031.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::SNAG-0032.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Now you can use the variable params["StockName"] in the Javascript of
@@ -37,27 +37,27 @@ image::SNAG-0032.gif" format="gif" />
 			with data type "Date".
 		
 image::SNAG-0033.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Select the dataset "setStocks" and double-click it.
 		
 image::SNAG-0034.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Select the menu point "Filters". Press "News" and add a new
 			filter with the options in the screenshot.
 		
 image::SNAG-0036.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Click on Review to see the report.
 		
 image::SNAG-0037.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			TIP: Make sure to input the dates in the correct format

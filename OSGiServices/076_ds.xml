@@ -176,13 +176,13 @@ image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 			available
 			at runtime.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.equinox.util`
 						- contains utility classes
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.equinox.ds`
 						- is responsible for reading
@@ -192,14 +192,14 @@ image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 						based this
 						information
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.osgi.services`
 						- service functionality used by declarative services
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

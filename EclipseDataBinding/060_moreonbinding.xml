@@ -59,8 +59,8 @@ include::res/snippets/SelectObservableValue.java[]
 			<mediaobject>
 				<imageobject>
 					<imagedata fileref="./images/SelectObservableValue.png" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 

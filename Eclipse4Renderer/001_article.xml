@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 				introduced in
 				Eclipse 4.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_renderer.adoc[]

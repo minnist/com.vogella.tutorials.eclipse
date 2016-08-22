@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 			 This tutorial given an introduction how to replace the
 				persistence of the application model.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::./010_overview.adoc[]

@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 			 This article describes how to add help to an Eclipse 3.x RCP
 				application. It is based on Eclipse Neon (4.6).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]

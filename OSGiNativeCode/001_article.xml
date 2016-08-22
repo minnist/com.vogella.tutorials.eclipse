@@ -30,8 +30,8 @@ Version 0.3, 06.07.2016
 	=== Using native code in OSGI via the Bundle-NativeCode
 			 This tutorial explains the usage of native code in OSGi bundles.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview" />
 include::../support.adoc[]

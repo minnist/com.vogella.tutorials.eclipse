@@ -27,13 +27,13 @@
 	
 		To change the text supplied by SWT and JFace do the following:
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Create two fragments projects, which will hold the translations. One with org.eclipse.jface and one with org.eclipse.swt as
 					Host-Plug-in.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Create the
 					`org.eclipse.jface`
@@ -41,8 +41,8 @@
 					`org.eclipse.swt.internal`
 					packages in the corresponding fragments.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Copy the
 					_org/eclipse/jface/message.properties_
@@ -57,16 +57,16 @@
 					location in the
 					Eclipse Git repository.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				Provide the files with your desired language extensions, e.g.
 					message_de.properties.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				Edit the files to contain your text properties.
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	<warning>
 		
@@ -109,9 +109,9 @@
 	<mediaobject>
 		<imageobject>
 			<imagedata fileref="images/jface_translation_fragment_packagestructure.png" scale="60" />
-		</imageobject>
+		
 		<textobject>
 			<phrase>Package structure of the JFace fragment</phrase>
 		</textobject>
-	</mediaobject>
+	
 

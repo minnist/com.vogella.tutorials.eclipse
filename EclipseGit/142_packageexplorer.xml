@@ -16,11 +16,11 @@
 	
 image::jdt_packageexplorer_icondecu10.png"
 					scale="60" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Icon decorator</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		The file name describes the state of the file from the following
@@ -142,10 +142,10 @@ image::jdt_packageexplorer_icondecu10.png"
 	
 image::jdt_packageexplorer_icondecu20.png"
 					scale="60" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Git icon decorator in the Package Explorer</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

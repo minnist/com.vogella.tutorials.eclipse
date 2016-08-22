@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 			 This tutorial describes the purpose and usage of
 				Eclipse fragment projects
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::020_fragment_intro.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

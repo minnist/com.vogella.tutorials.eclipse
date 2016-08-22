@@ -5,7 +5,7 @@
 	</indexterm>
 	
 		<itemizedlist>
-			<listitem>
+			*
 				
 					If the translations are not available in the exported product, ensure that the
 					property
@@ -15,15 +15,15 @@
 					file of the plug-in which provides the property
 					files.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					If the translations are not displayed in the application, select
 					_Clear Configuration_
 					in your launch configuration. OSGi caches text
 					information sometimes.
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 

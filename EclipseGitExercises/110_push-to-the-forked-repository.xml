@@ -49,7 +49,7 @@ Press the Finish button. In order to test if everything worked well you can fetc
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/github_fetch.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Fetch from Github</phrase>
 				</textobject>
@@ -65,7 +65,7 @@ Press the Finish button. In order to test if everything worked well you can fetc
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/github_fetch_result.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Github fetch result</phrase>
 				</textobject>
@@ -82,7 +82,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/createbranchgithub.png" scale="60" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Local branch</phrase>
 				</textobject>
@@ -106,7 +106,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/push_github_login.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Push login</phrase>
 				</textobject>
@@ -117,7 +117,7 @@ When you do this, the Git push operation pushes this branch to the new remote re
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/github_pushresult.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Push result</phrase>
 				</textobject>
@@ -130,7 +130,7 @@ Note that Git created a new remote tracking branch:
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/github_remote_tracking.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Remote tracking branch</phrase>
 				</textobject>

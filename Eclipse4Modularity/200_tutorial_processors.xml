@@ -25,22 +25,22 @@
 			_contribute_
 			plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.e4.ui.services`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.core.contexts`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.ui.model.workbench`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 	
@@ -102,8 +102,8 @@
 		
 image::processor04.png" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
@@ -122,8 +122,8 @@ image::processor04.png" />
 		
 image::processor10.png" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		<warning>
 			

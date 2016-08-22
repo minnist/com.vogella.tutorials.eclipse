@@ -71,10 +71,10 @@
 		
 			On the software-side the following software is required:
 			<itemizedlist>
-				<listitem>Git</listitem>
-				<listitem>Maven Version 3.3.1</listitem>
-				<listitem>Oracle 1.8 JDK or higher</listitem>
-			</itemizedlist>
+				*Git
+				*Maven Version 3.3.1
+				*Oracle 1.8 JDK or higher
+			
 		
 
 	

@@ -9,19 +9,19 @@
 		
 			BIRT provides for example the following data sources:
 			<itemizedlist>
-				<listitem>
+				*
 					Databases (via JDBC)
-				</listitem>
-				<listitem>
+				
+				*
 					Text Files (cvs, XML)
-				</listitem>
-				<listitem>
+				
+				*
 					WebServices (via WSDL-Files)
-				</listitem>
-				<listitem>
+				
+				*
 					Scripting Data sources
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		 You use in BIRT "Data sets" to
 			defines queries on data source. These data sets can be used in a report.
@@ -43,7 +43,7 @@
 			with detailed information. The result should look like this:
 image::finalresult10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	

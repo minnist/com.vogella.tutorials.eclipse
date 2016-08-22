@@ -22,9 +22,9 @@
 		
 		
 			<itemizedlist>
-				<listitem>org.eclipse.emf.ecore</listitem>
-				<listitem>com.vogella.emf.webpage.model</listitem>
-			</itemizedlist>
+				*org.eclipse.emf.ecore
+				*com.vogella.emf.webpage.model
+			
 		
 		 Create the following class.
 

@@ -20,18 +20,18 @@
 			`com.example.e4.rcp.todo`
 			plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.e4.ui.model.workbench`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.ui.workbench.swt`
 					
-				</listitem>
+				
 
-			</itemizedlist>
+			
 		
 	
 

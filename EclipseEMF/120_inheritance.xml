@@ -32,8 +32,8 @@
 		
 image::extend10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Right-click on the package and select New Child -> EClass.
 			Maintain the class "MyBaseClass" with two "EAttributes" of type
@@ -45,22 +45,22 @@ image::extend10.gif" />
 		
 image::extend40.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::extend50.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::extend60.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 Create a new class "MyExtendedClass" and press "ESuperType".
@@ -69,23 +69,23 @@ image::extend60.gif" />
 		
 image::extend70.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 Add your "MyBaseClass".
 		
 image::extend80.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::extend90.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 Maintain a new EAtribute "detailedField" on "MyExtendedClass".
@@ -95,8 +95,8 @@ image::extend90.gif" />
 		
 image::extend100.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Create a new genmodel "extended.genmodel" based on
 			extended.ecore. Generated Java code and you will see that the

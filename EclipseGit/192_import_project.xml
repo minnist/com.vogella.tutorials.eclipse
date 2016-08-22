@@ -23,11 +23,11 @@
 image::egit_importprojects10.png"
 					scale="40" />
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Importing projects via EGit</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
@@ -42,11 +42,11 @@ image::egit_importprojects10.png"
 image::egit_importprojects20.png"
 					scale="40" />
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Importing projects via EGit part 2</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		The following screenshot shows several local repositories. To import
@@ -63,11 +63,11 @@ image::egit_importprojects20.png"
 image::egit_importprojects30.png"
 					scale="40" />
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Importing projects via EGit part 2</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		The

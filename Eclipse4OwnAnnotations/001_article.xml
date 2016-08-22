@@ -41,8 +41,8 @@ Version 0.3, 06.07.2016
 			 This tutorial explains how to create and evaluate your own
 				annotations in Eclipse 4 for the purpose of dependency injection.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/Eclipse/e4_prerequisites.adoc[]

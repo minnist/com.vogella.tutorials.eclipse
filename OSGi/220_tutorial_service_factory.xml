@@ -33,11 +33,11 @@
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/tutorial_servicepackage10.png" />
-					</imageobject>
+					
 					<textobject>
 						<phrase>Specify the package for the creation of a class</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</tip>
 

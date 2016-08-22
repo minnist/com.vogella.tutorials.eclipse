@@ -15,8 +15,8 @@
 	
 image::parameter10.gif" />
 				
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	 Use the following id for the parameter
@@ -25,8 +25,8 @@ image::parameter10.gif" />
 	
 image::parameter20.gif" />
 				
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	In the handler you have to evaluate the parameter.
@@ -43,16 +43,16 @@ image::parameter20.gif" />
 	
 image::parameter30.gif" />
 				
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	 As name enter the name of the parameter, pass as value the
 		value you want to use in your handler.  
 	
 image::parameter40.gif" />
 				
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 
 	 Add the same command again to the menu and pass another

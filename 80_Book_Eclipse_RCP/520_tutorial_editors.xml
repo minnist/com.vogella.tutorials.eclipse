@@ -81,8 +81,8 @@ include::res/editor/EditorPart.java[]
 		
 		
 			<mediaobject>
-				<imageobject><imagedata fileref="images/editor-part-descriptor.png"></imagedata></imageobject>
-			</mediaobject>
+				<imageobject><imagedata fileref="images/editor-part-descriptor.png"></imagedata>
+			
 		
 		TIP:
 			

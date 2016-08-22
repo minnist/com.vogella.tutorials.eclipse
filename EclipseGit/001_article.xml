@@ -42,8 +42,8 @@ Version 0.3, 06.07.2016
 				based on
 				Eclipse 4.5 (Mars).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-ide.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::008_about.adoc[]

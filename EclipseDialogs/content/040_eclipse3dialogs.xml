@@ -21,19 +21,19 @@
 		_Dialogs_
 		.
 		<itemizedlist>
-			<listitem>
+			*
 				ElementListSelectionDialog
-			</listitem>
-			<listitem>
+			
+			*
 				ListDialog
-			</listitem>
-			<listitem>
+			
+			*
 				ElementTreeSelectionDialog
-			</listitem>
-			<listitem>
+			
+			*
 				CheckTreeSelectionDialog
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 
 	

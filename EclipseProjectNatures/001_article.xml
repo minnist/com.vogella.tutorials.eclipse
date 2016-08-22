@@ -31,8 +31,8 @@ Version 0.3, 06.07.2016
 			
 				This article describes how product natures can be implemented and what can be done with a custom project nature.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::010_overview.xml"/>
 include::020_define_project_nature.xml"/>
 include::../web/advertisement/inBetween01.adoc[]

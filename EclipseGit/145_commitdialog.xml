@@ -17,11 +17,11 @@
 
 	
 image::egitcommitdialog10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Adding a file via the EGit commit dialog</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	NOTE:
 		The commit dialog does not allow committing the removal of a

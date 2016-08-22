@@ -28,20 +28,20 @@
 	
 	
 image::swtplugin10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>New Plug-in Projec Wizard Page 1</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
 image::swtplugin20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>New Plug-in Projec Wizard Page 2</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
@@ -74,11 +74,11 @@ image::swtplugin20.png"/>
 	
 	
 image::swtplugin30.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Adding the dependency to SWT in the Plug-in project</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	

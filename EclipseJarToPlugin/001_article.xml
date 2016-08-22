@@ -41,8 +41,8 @@ Version 0.3, 06.07.2016
 				bundles) from standard Java libraries delivered as JAR files. This
 				article is based on Eclipse 4.5.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::100_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

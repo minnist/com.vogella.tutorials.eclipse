@@ -41,8 +41,8 @@ Version 0.3, 06.07.2016
 				model / view interaction. StyledLabelProvider are also discussed.
 			
 			 This tutorial is based on Eclipse 4.5.
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::001_intro.adoc[]

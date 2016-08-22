@@ -20,8 +20,8 @@ Version 0.3, 06.07.2016
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/minimal_project_properties.png"/>
-            </imageobject>
-        </mediaobject>
+            
+        
     
     The `org.eclipse.ui.propertyPages` extension point can be used to add new
         property pages to the project's properties dialog.

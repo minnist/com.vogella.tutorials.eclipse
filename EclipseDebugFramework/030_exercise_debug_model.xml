@@ -38,11 +38,11 @@ Version 0.3, 06.07.2016
 						<imageobject>
 							<imagedata fileref="images/vogella_launch_ui.png"
 								scale="40" />
-						</imageobject>
+						
 						<textobject>
 							<phrase>Vogella launch UI</phrase>
 						</textobject>
-					</mediaobject>
+					
 				
 			</note>
 		

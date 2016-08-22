@@ -39,8 +39,8 @@ Version 0.3, 06.07.2016
 			 This article assumes that you are already familiar with using
 				the Eclipse IDE and with developing simple Eclipse RCP applications.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_microsoftole.adoc[]
 include::020_oleoutlook.adoc[]

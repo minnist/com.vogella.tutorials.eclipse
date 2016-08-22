@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 			 This tutorial describes the purpose and usage of
 				Eclipse feature projects and Fragments.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_feature_intro.adoc[]

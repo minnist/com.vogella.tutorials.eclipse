@@ -26,8 +26,8 @@
 		
 		
 image::EMFCodeGen10.gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -36,21 +36,21 @@ image::EMFCodeGen10.gif" />
 		
 			The generated code will consist of the following:
 			<itemizedlist>
-				<listitem>
+				*
 					_model_ -- Interfaces and the Factory to create
 						the Java classes
 					
-				</listitem>
-				<listitem>
+				
+				*
 					_model.impl_ -- Concrete implementation of the
 						interfaces
 						defined in model
 					
-				</listitem>
-				<listitem>
+				
+				*
 					_model.util_ -- The AdapterFactory
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			The central factory has methods for creating all defined
@@ -127,8 +127,8 @@ image::EMFCodeGen10.gif" />
 			simply by
 			reloading.
 image::EMFModel70.gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 

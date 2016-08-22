@@ -14,41 +14,41 @@
 
 === Stashing local changes
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Open BinaryOperation.java from the org.eclipse.example.calc package in the org.eclipse.example.calc project in
 					an
 					editor
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Add a new line with the contents “@since 1.0” to the interface Javadoc header after the “Binary operation
 					interface”
 					line
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Open the Git Repositories view
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Select the Stash Changes option from the context menu available on the egit-training repository.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					The editor should now be updated with the “@since 1.0” line removed
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 		
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/stash1.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Stash a change</phrase>
 				</textobject>
@@ -58,55 +58,55 @@
 
 === Browsing Stashed Changes
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Expand the egit-training node in the Git Repositories view
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Expand the Stashed Changes node
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					The Stashed Commits node should have a single commit called stash@{0} which is the commit that contains the
 					stashed
 					changes.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Double-click the stash@{0} node to open it in the commit viewer
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					The opened commit should contain the BinaryOperation.java file in the Files section of the editor
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Select the Compare with Working Directory option from the context menu available on the BinaryOperation.java
 					file in the
 					Files section
 				
 				<itemizedlist>
-					<listitem>
+					*
 						
 							The opened compare editor should display the line addition of “@since 1.0” that was stashed in the previous
 							step and
 							is no longer present in the working directory file.
 						
-					</listitem>
-				</itemizedlist>
-			</listitem>
-		</itemizedlist>
+					
+				
+			
+		
 		
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/stash2.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Browse stashed changes</phrase>
 				</textobject>
@@ -116,35 +116,35 @@
 
 === Applying Stashed Changes
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Select the Switch To &gt; New Branch&#8230; option from the context menu available on the egit-training
 					repository.
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Enter “javadoc” in the Branch Name: field and select the Finish button
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Select the Apply Stashed Changes option from the context menu available on the stash@{0} node under the
 					Stashed Commits
 					node
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					The BinaryOperation.java should now contain your previous addition of “@since 1.0” to the header comment
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 		
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/stash3.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>Apply stashed change</phrase>
 				</textobject>

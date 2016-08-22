@@ -11,10 +11,10 @@
 		
 		
 			<itemizedlist>
-				<listitem>org.eclipse.emf.ecore</listitem>
-				<listitem>org.eclipse.emf.ecore.xmi</listitem>
+				*org.eclipse.emf.ecore
+				*org.eclipse.emf.ecore.xmi
 
-			</itemizedlist>
+			
 		
 
 		

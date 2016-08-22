@@ -13,15 +13,15 @@
 		
 image::dali10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Click twice next. 
 		
 image::dali20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 The JPA perspective should now be opened. 
@@ -33,8 +33,8 @@ image::dali20.gif" />
 		
 image::dali25.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			<programlisting>
@@ -49,8 +49,8 @@ image::dali25.gif" />
 		
 image::dali30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 You can now use the right mouse button in the "JPA Structure"
@@ -58,8 +58,8 @@ image::dali30.gif" />
 		
 image::dali40.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 Now you can use the "JPA Details" view to define for example
@@ -68,8 +68,8 @@ image::dali40.gif" />
 		
 image::dali50.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 

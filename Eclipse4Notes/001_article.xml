@@ -37,8 +37,8 @@ Version 0.3, 06.07.2016
 			 Just some notes about Eclipse 4 for my personal use.
 			
 
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[] 
 include::100_source.adoc[]
 include::120_modelprocessing.adoc[]

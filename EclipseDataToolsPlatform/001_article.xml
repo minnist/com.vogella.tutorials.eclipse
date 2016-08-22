@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 			
 				This article is based on Eclipse Luna (Eclipse 4.4).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::10_dtpintro.adoc[]
 include::20_installation.adoc[]

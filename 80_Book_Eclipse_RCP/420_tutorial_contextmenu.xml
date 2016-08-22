@@ -17,17 +17,17 @@
 			file of your application
 			plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.e4.ui.workbench.swt`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.ui.model.workbench`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

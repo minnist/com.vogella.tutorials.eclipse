@@ -34,9 +34,9 @@ Version 0.3, 06.07.2016
 			 This tutorial describes the usage of WindowBuilder for
 				creating user interfaces.
 			
-		</abstract>
+		
 
-	</articleinfo>
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]

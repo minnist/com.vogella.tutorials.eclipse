@@ -111,20 +111,20 @@ include::res/snippets/namedfield.txt[]
 									`@Optional`
 									is placed. The following description is based on the key. If the key cannot be resolved the following happens:
 									<itemizedlist>
-										<listitem>
+										*
 											
 												for parameters: a
 												`null`
 												value will be injected;
 											
-										</listitem>
-										<listitem>
+										
+										*
 											for methods: the method calls will be skipped
-										</listitem>
-										<listitem>
+										
+										*
 											for fields: the values will not be injected. 
-										</listitem>
-									</itemizedlist>
+										
+									
 								
 								
 									Note that null is an acceptable value to be set in the context, and it is different from a key being

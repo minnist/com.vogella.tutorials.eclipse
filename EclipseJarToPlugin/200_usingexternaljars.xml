@@ -14,8 +14,8 @@
 		
 image::externaljars20.gif"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Add the JAR files you want to have in this new plug-in. Press
 			next.
@@ -23,8 +23,8 @@ image::externaljars20.gif"/>
 		
 image::externaljars25.gif"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Enter a name and a version for your new plug-in. Uncheck the
@@ -45,8 +45,8 @@ image::externaljars25.gif"/>
 		
 image::externaljars30.gif"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			You have created a new plug-in for the selected JAR files. Open

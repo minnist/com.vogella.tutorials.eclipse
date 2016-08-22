@@ -2,21 +2,21 @@
 	
 		To communicate wit a server, typically Eclipse RCP clients uses one of the following technologies to communicate.
 		<itemizedlist>
-			<listitem>
+			*
 				REST based services
-			</listitem>
-			<listitem>
+			
+			*
 				SOAP based services
-			</listitem>
-			<listitem>
+			
+			*
 				RMI
-			</listitem>
-			<listitem>
+			
+			*
 				
 					HTTPRemoteInvoker (Spring)
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	
 		As REST is a de-facto standard based on web technologies, it is recommend to this approach. A very efficient

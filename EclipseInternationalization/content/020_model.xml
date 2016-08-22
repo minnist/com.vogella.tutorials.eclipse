@@ -10,11 +10,11 @@
     
 	
 image::modeltranslate.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>How to use external strings in the workbench model</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Currently the application model tooling includes rudimentary support

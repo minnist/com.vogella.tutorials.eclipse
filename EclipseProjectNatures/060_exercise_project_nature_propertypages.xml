@@ -25,8 +25,8 @@ Version 0.3, 06.07.2016
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_property_page.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         The referenced `ExamplePropertyPage` should extend the
                 `org.eclipse.ui.dialogs.PropertyPage` class and implement the
@@ -48,8 +48,8 @@ include::res/ExamplePropertyPage.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/property_page_enablement.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
     
     <section>
@@ -62,8 +62,8 @@ include::res/ExamplePropertyPage.java"/>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/exercise_project_nature_property_page_sample.png"/>
-                </imageobject>
-            </mediaobject>
+                
+            
         
         In case you have also done the optional exercises the _Example
                 Settings_should only be visible, if the

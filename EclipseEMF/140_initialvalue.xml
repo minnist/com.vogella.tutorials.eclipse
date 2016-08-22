@@ -6,19 +6,19 @@
 		following.
 
 		<itemizedlist>
-			<listitem>Select the Attribute
+			*Select the Attribute
 		    
-			</listitem>
-			<listitem>
+			
+			*
 				Im the Property View click into the value field of "Default
 					Value Literal"
 				
-			</listitem>
-			<listitem>
+			
+			*
 				Do not enter something. 
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	 To remove this empty value again, click "Restore Default Value"
 		in the toolbar. 

@@ -199,26 +199,26 @@ include::res/snippets/widgetProperties.java[]
 			The following plug-ins are required to use
 			JFace Data Binding.
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.databinding
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						org.eclipse.core.databinding.beans
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					
 						org.eclipse.core.databinding.property
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.jface.databinding
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

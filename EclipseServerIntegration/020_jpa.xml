@@ -8,15 +8,15 @@
 	
 	
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Tell the
 					`PersistenceProvider`
 					, which classloader should be
 					used
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Place the
 					_persistence.xml_
@@ -26,8 +26,8 @@
 					`EntityManager`
 					is created
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	
 		<programlisting language="java">

@@ -43,11 +43,11 @@
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/apibaseline_setwarningtoignore10.png"/>
-					</imageobject>
+					
 					<textobject>
 						<phrase>Setting the API baseline to ignore</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</tip>
 		

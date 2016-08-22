@@ -4,29 +4,29 @@
 	This dialog can be accessed in several ways.
 	
 		<itemizedlist>
-			<listitem>
+			*
 				By typing menu:
 						<guimenu>Run Configurations...</guimenu>
 					</menuchoice> in the Quick Access
-			</listitem>
-			<listitem>
+			
+			*
 				By holding <keycode>Ctrl</keycode> while pressing the green launch button.
 						<inlinegraphic fileref="images/run_exc.png"/>
-			</listitem>
-			<listitem>
+			
+			*
 				By using the drop down menu of the green launch button <inlinegraphic
 						fileref="images/run_exc.png"/> and clicking on  menu:
 						<guimenu>Run Configurations...</guimenu>
 					</menuchoice> in the menu.
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	In the _Run Configuration..._ you can choose between different launch
 		configuration types:
 	
 image::run_configurations.png"/>
-			</imageobject>
-		</mediaobject>
+			
+		
 	
 	How to create new launch configurations is described within the picture above.
 	<section>

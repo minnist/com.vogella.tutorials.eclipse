@@ -28,25 +28,25 @@
 			`contribute`
 			plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.runtime
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.swt
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.jface
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.di
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.workbench
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.di
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 
@@ -189,7 +189,7 @@ image::modelfragment_extensionpoint16.png"
 		
 image::modelfragment10.png"/>
 
-				</imageobject>
+				
 				<textobject>
 					<phrase>Adding a model fragment,pdfwidth=60%]
 		
@@ -329,11 +329,11 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/fragment52.png"/>
-					</imageobject>
+					
 					<textobject>
 						<phrase>Adding a fragment for the menu</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</warning>
 		
@@ -376,7 +376,7 @@ image::fragment62.png[Adding a menu entry,pdfwidth=60%]
 		
 image::fragment70.png"/>
 
-				</imageobject>
+				
 				<textobject>
 					<phrase>Adding a menu item to the menu,pdfwidth=60%]
 		

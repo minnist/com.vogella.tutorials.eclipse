@@ -16,8 +16,8 @@ Version 0.3, 06.07.2016
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_java_images.png"/>
-            </imageobject>
-        </mediaobject>
+            
+        
     
     In order to provide such an decorator image in case your project nature has been applied
         to a project, you can use the `org.eclipse.ui.ide.projectNatureImages` extension
@@ -26,8 +26,8 @@ Version 0.3, 06.07.2016
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_images_extension_point.png"/>
-            </imageobject>
-        </mediaobject>
+            
+        
     
     So in case the `com.example.project.examplenature` project nature is applied to
         a project, this decorator will also be shown.
@@ -42,7 +42,7 @@ Version 0.3, 06.07.2016
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/project_nature_image_example.png"/>
-            </imageobject>
-        </mediaobject>
+            
+        
     
 

@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 				RCP
 				application. Eclipse 3.7 (Indigo) is used for this tutorial.
 			
-		</abstract>
-	</articleinfo>	
+		
+		
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::10_birtintro.adoc[]
 include::15_installation.adoc[]

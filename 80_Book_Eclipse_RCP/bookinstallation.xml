@@ -25,8 +25,8 @@
 		<mediaobject role="cover">
 			<imageobject id="cover-image">
 				<imagedata fileref="images/cover.png" align="center" />
-			</imageobject>
-		</mediaobject>
+			
+		
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.adoc[]
 
 	</bookinfo>

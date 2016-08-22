@@ -15,8 +15,8 @@
 		
 image::selection10.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
@@ -25,16 +25,16 @@ image::selection10.gif" />
 
 
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.help.ui      
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.help.webapp    
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.equinox.http.jetty     
-				</listitem>
-			</itemizedlist>
+				
+			
 
 		
 		
@@ -55,8 +55,8 @@ image::selection10.gif" />
 		
 image::help10.png" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		To understand the structure of the help file check your

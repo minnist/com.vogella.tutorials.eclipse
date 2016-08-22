@@ -5,24 +5,24 @@
 			The following explains how to use BIRT reports in Tomcat. In general
 			you have to:
 			<itemizedlist>
-				<listitem>
+				*
 					Install the BIRT webviewer in Tomcat
-				</listitem>
-				<listitem>
+				
+				*
 					Export your BIRT project into a .jar file
-				</listitem>
-				<listitem>
+				
+				*
 					Move the .jar file to the
 						birt-install-directory/WEB-INF/lib directory
-				</listitem>
-				<listitem>
+				
+				*
 					Move the report design file into the root directory of
 						birt in tomcat
-				</listitem>
-				<listitem>
+				
+				*
 					Restart Tomcat
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 
@@ -53,8 +53,8 @@
 			Tomcat an your Web Viewer should work correct.
 		
 image::SNAG-0039.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -64,18 +64,18 @@ image::SNAG-0039.gif" format="gif" />
 			available export your project into a jar file.
 		
 image::SNAG-0040.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::SNAG-0041.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::SNAG-0042.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 After that the jar file has to be copied to the Tomcat
 			webapps/birt/WEB-INF/lib/ directory. Restart the Tomcat and navigate
@@ -85,8 +85,8 @@ image::SNAG-0042.gif" format="gif" />
 		
 		
 image::SNAG-0043.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			TIP:

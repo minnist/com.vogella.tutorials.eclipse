@@ -48,8 +48,8 @@ Version 0.3, 06.07.2016
                 based on
                 Eclipse 4.6 (Eclipse Neon).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 
     <?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
 include::010_overview.adoc[]

@@ -1,85 +1,49 @@
 == Exercise: Write SWTBot test
 
 === Installation
-		
-			Ensure to install SWTBot into your Eclipse IDE. See
-			<xref linkend="swtbotinstallation" />
-			for detailed information.
-		
-	
+
+Ensure to install SWTBot into your Eclipse IDE. See <<swtbotinstallation>> for detailed information.
+
 
 === Create project
-		
-			Create a new plug-in
-			called
-			_com.example.e4.rcp.todo.uitest_
-			and add the following dependencies to the
-			_MANIFEST.MF_
-			file:
 
-			<itemizedlist>
-				<listitem>
-					org.eclipse.swt
-				</listitem>
-				<listitem>
-					org.junit
-				</listitem>
-				<listitem>
-					org.eclipse.swtbot.go
-				</listitem>
-				<listitem>
-					org.eclipse.swtbot.junit4_x
-				</listitem>
-				<listitem>
-					org.eclipse.swtbot.swt.finder
-				</listitem>
-			</itemizedlist>
-		
+Create a new plug-in called _com.example.e4.rcp.todo.uitest_ and add the following dependencies to the _MANIFEST.MF_ file:
+
+* org.eclipse.swt
+* org.junit
+* org.eclipse.swtbot.go
+* org.eclipse.swtbot.junit4_x
+* org.eclipse.swtbot.swt.finder
 	
 
 === Create test
-		
-			Write the following test class.
-		
-		
+
+Write the following test class.
+
+
 [source,java]
 ----
 include::res/eclipse4/ExitHandlerTest.java[]
 ----
-		
-	
 
 === Adjust launch configuration
-		
-			Right-click on your test class and select
-			menu:Run[JUnit Plug-in Test]
-			.
-		
-		This test run should fail or result in error messages but it
-			creates a launch configuration which you can adjust.
-		
-		
-			Select
-			menu:Run[Run Configurations...]
-			and switch to the
-			_Main_
-			tab.
-		
-		Select that your product should be started similar to the
-			following screenshot.
-		
-		
-image::swtbot_startproduct10.png"
-						scale="30[Select the product which should be started,pdfwidth=60%]
-		
-	
 
+Right-click on your test class and select menu:Run[JUnit Plug-in Test].
+
+This test run should fail or result in error messages but it creates a launch configuration which you can adjust.
+
+
+Select menu:Run[Run Configurations...] and switch to the _Main_ tab.
+
+Select that your product should be started similar to the following screenshot.
+
+
+image::swtbot_startproduct10.png[Select the product which should be started,pdfwidth=60%]
 
 
 === Validating
-		 Run your test and verify that the test runs successfully.
-			If you
-			have used different text in your menu, adjust the test until it runs
-			successfully.
-		
+
+Run your test and verify that the test runs successfully.
+If you have used different text in your menu, adjust the test until it runs successfully.
+
 	

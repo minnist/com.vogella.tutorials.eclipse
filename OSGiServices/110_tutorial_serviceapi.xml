@@ -21,8 +21,8 @@
 		
 image::firstservice10.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Create the following interface "IQuoteService".
 		
@@ -45,8 +45,8 @@ image::firstservice10.gif" />
 		
 image::firstservice20.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Create the following class "QuoteService".
 		
@@ -71,8 +71,8 @@ image::firstservice20.gif" />
 		
 image::firstservice30.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			TIP:Nothing fancy happens, as we are not yet consuming our
@@ -89,8 +89,8 @@ image::firstservice30.gif" />
 		
 image::firstservice35.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			TIP: Please note that we have added the dependency against the
@@ -113,8 +113,8 @@ image::firstservice35.gif" />
 		
 image::firstservice40.gif" />
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 The reason for this is that OSGi is a very dynamic environment
 			and service may be registered and de-registered any time. The next

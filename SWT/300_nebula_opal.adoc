@@ -12,11 +12,11 @@
 	
 image::visualizationwidgets.png"
 					scale="40" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Nebula visualization widgets</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Another source for SWT widgets is the
@@ -25,11 +25,11 @@ image::visualizationwidgets.png"
 	
 	
 image::opalexample10.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Opal  widgets</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

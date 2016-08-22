@@ -1,0 +1,10 @@
+== Installation
+	
+Install SWTBot via the Eclipse Update manager (Help[Install New Software...]). 
+The update site for the SWTBot is: _http://download.eclipse.org/technology/swtbot/releases/latest/_
+	
+Install the _SWTBot Eclipse Features_ and the _SWTBot SWT Features_.
+	
+
+
+

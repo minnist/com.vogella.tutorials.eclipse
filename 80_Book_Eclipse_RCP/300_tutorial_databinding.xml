@@ -10,25 +10,25 @@
 			plug-in.
 
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.databinding
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						org.eclipse.core.databinding.beans
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						org.eclipse.core.databinding.property
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.jface.databinding
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

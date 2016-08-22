@@ -26,11 +26,11 @@
 	
 	
 image::mat_getheapdump10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a heap dump</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Select the process for a heap dump in the following dialog and press
@@ -53,11 +53,11 @@ image::mat_getheapdump10.png"/>
 	
 	
 image::matperspective20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Opening the MAT perspective</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

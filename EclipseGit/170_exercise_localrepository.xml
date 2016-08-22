@@ -286,7 +286,7 @@ image::gitstaging30.png[Git Staging View - Add to staging area,pdfwidth=60%]
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/exericse_historyview20.png" />
-				</imageobject>
+				
 				<textobject>
 					`
 					<phrase>History View</phrase>

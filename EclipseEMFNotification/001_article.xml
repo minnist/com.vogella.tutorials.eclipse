@@ -41,8 +41,8 @@ Version 0.3, 06.07.2016
 				This article describes the notification functionality of
 				Eclipse EMF.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

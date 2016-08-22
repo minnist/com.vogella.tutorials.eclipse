@@ -26,7 +26,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/history-view-8.png"/>
-				</imageobject>
+				
 				<textobject>
 					<phrase>History View</phrase>
 				</textobject>
@@ -36,7 +36,7 @@
 
 === Change the first commit
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Create a new branch that points to the commit you want to change,
 					in
@@ -52,7 +52,7 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-9.png" scale="40"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>History View</phrase>
 						</textobject>
@@ -62,27 +62,27 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-10.png"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>History View</phrase>
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Edit the files in the workspace, e.g. add a class comment for the
 					_Multiply_
 					class.
 				</simpara>
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Now create a new commit with the combined changes of your first
 					commit and your current changes:
 				</simpara>
 				<itemizedlist>
-					<listitem>
+					*
 						
 							Select your project in the Package Explorer and select
 							_Team &gt; Commit_
@@ -90,8 +90,8 @@
 							_Commit_
 							in the Git Toolbar.
 						</simpara>
-					</listitem>
-					<listitem>
+					
+					*
 						
 							Press the
 							_Amend_
@@ -101,21 +101,21 @@
 							<inlinemediaobject>
 								<imageobject>
 									<imagedata fileref="./images/commit-changes-with-amend-2.png"/>
-								</imageobject>
+								
 								<textobject>
 									<phrase>Commit Changes with Amend</phrase>
 								</textobject>
 							</inlinemediaobject>
 						</simpara>
-					</listitem>
-					<listitem>
+					
+					*
 						
 							Click the Commit button
 						</simpara>
-					</listitem>
-				</itemizedlist>
-			</listitem>
-			<listitem>
+					
+				
+			
+			*
 				
 					Now your history should look like this:
 				</simpara>
@@ -123,7 +123,7 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-11.png"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>History View</phrase>
 						</textobject>
@@ -139,13 +139,13 @@
 					e.g.
 					a branch or a tag).
 				</simpara>
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 
 === Cherry-pick the rest
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Select
 					_Cherry Pick_
@@ -157,14 +157,14 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/cherry-pick.png" scale="40"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>Cherry Pick</phrase>
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-			</listitem>
-			<listitem>
+			
+			*
 				
 					You may have to resolve conflicts
 				</simpara>
@@ -172,7 +172,7 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/cherry-pick-conflicts.png" scale="40"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>Cherry Pick Conflicts</phrase>
 						</textobject>
@@ -187,8 +187,8 @@
 					
 					.
 				</simpara>
-			</listitem>
-			<listitem>
+			
+			*
 				
 					The result should look like this:
 				</simpara>
@@ -196,14 +196,14 @@
 					<inlinemediaobject>
 						<imageobject>
 							<imagedata fileref="./images/history-view-12.png"/>
-						</imageobject>
+						
 						<textobject>
 							<phrase>History View</phrase>
 						</textobject>
 					</inlinemediaobject>
 				</simpara>
-			</listitem>
-		</itemizedlist>
+			
+		
 		
 			If you want to change more than one commit in a series git offers the
 			powerful tool

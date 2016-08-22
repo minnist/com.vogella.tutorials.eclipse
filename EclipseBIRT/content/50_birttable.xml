@@ -10,34 +10,34 @@
 			"Layout".
 		
 image::SNAG-0012.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Drag and drop the table element on the report.
 		
 image::SNAG-0015.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Define the following settings for the table.
 		
 image::table40.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Change back to the "Data Explorer". And drag
 			and drop the
 			dataset columns into the "Details row" of the table. 
 		
 image::table50.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		The result should look like the following.
 		
 image::table60.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Done. You can
 			see a preview of the report if you click on the
@@ -45,7 +45,7 @@ image::table60.gif" format="gif" />
 			result should look like the following:
 		
 image::table70.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	

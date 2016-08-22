@@ -19,10 +19,10 @@
 
 	
 image::osgids_startlevel.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Defining the OSGi startlevel for ds</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

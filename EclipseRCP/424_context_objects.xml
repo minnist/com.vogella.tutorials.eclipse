@@ -95,23 +95,23 @@ image::contexthierarchy10.png" scale="30[Context hierarchy with OSGi,pdfwidth=60
 			These
 			are:
 			<itemizedlist>
-				<listitem>
+				*
 					model objects - contain the data of the application model
 					
-				</listitem>
-				<listitem>
+				
+				*
 					services - software components which are
 						defined by
 						the Eclipse platform or via the OSGi service
 						registry
 					
-				</listitem>
-				<listitem>
+				
+				*
 					several other objects which have explicitly been added to the
 						context
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 		

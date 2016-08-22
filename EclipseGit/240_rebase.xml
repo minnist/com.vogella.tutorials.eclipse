@@ -20,22 +20,22 @@
 	
 	
 image::egit_rebase10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Rebase in EGit</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	In the following dialog you can select the branch onto which you
 		want to rebase.
 	
 	
 image::egit_rebase20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Rebase in EGit, selecting the branch for rebase</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	TIP:
 		

@@ -9,29 +9,29 @@
 		 Choose the Line Chart with the standard settings.
 		
 image::chart10.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Press Next and select your data set.
 		
 image::chart20.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 At the next step we have to assign the columns to the axis. We
 			assign the date to the x axis and the open value to the y axis via
 			drag and drop.
 		
 image::chart30.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Define 5 series in total. Assign the columns to these series by
 			dragging the column to the Sum sign.
 		
 image::chart40.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Currently the x axis shows first the
 			newest date. Reverse the x axis by
@@ -39,15 +39,15 @@ image::chart40.gif" format="gif" />
 		
 		
 image::chart50.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Go to the next tab and give titles to your columns. Hide the
 			last one.
 		
 image::chart60.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 The display of the dates use a long format, we would like to
@@ -55,14 +55,14 @@ image::chart60.gif" format="gif" />
 			the x axis
 		
 image::chart70.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Change the display of the lines via the following.
 		
 image::chart80.gif" format="gif" />
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Press finish to include your chart into your report.
 		

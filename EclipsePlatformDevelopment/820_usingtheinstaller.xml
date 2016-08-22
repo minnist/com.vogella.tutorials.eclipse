@@ -20,11 +20,11 @@
 	
 	
 image::eclipseinstaller_download.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Download Eclipse installer</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Start it and select the
@@ -34,11 +34,11 @@ image::eclipseinstaller_download.png"/>
 	<mediaobject>
 		<imageobject>
 			<imagedata fileref="images/OomphAdvancedMode.png" scale="30" />
-		</imageobject>
+		
 		<textobject>
 			<phrase>Download Eclipse installer</phrase>
 		</textobject>
-	</mediaobject>
+	
 	
 		Select
 		_Eclipse IDE for Java Developers_
@@ -53,47 +53,47 @@ image::eclipseinstaller_download.png"/>
 	
 	
 image::oomph_jdt10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>JDT contributions via Ooomph 1</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
 image::oomph_jdt20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>JDT contributions via Oomph 1</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 image::oomph_jdt30.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>JDT contributions via Oomph 3</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	
 image::oomph_jdt40.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>JDT contributions via Oomph 4</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	You end up with a workspace with the existing Git repositories. After this initial setup you should consult the
 		contribution guide of the project to ensure you know their contribution guidelines. 
 	
 image::oomph_jdt50.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>JDT contributions via Oomph 5</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

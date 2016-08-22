@@ -37,8 +37,8 @@
 		
 image::commandcoolbar10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Add the command
 			"de.vogella.rcp.intro.commands.toolbar.Hello" to
@@ -47,8 +47,8 @@ image::commandcoolbar10.gif" />
 		
 image::commandcoolbar20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		Activate the application toolbar via
 			ApplicationWorkbenchWindowAdvisor.java and set the
@@ -64,8 +64,8 @@ image::commandcoolbar20.gif" />
 		
 image::commandcoolbar30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -91,15 +91,15 @@ image::commandcoolbar30.gif" />
 		
 image::commandview10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Run the application to see your new view contribution.
 		
 image::commandview20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -116,8 +116,8 @@ image::commandview20.gif" />
 		
 image::commanddropdown06.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Add a new menucontribution to the "org.eclipse.ui.menus"
 			extension point. Set the location URI to
@@ -128,8 +128,8 @@ image::commanddropdown06.gif" />
 		
 image::commanddropdown10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Create a new menucontribution and set the locationURI to:
 			"menu:referenceToMenuId"
@@ -143,16 +143,16 @@ image::commanddropdown10.gif" />
 		
 image::commanddropdown20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Run your application, it should now have a drop-down list in
 			the application toolbar.
 		
 image::commanddropdown30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			TIP: Add the command "referenceToMenuId" to your existing view

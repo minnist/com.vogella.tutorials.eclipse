@@ -40,8 +40,8 @@ Version 0.3, 06.07.2016
 			 This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
 			
 
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-contribution.txt"?>
 include::010_contributingtoeclipse.adoc[]
 

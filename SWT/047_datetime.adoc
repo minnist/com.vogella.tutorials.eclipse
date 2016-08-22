@@ -14,11 +14,11 @@
 
 	
 image::swtdatetime10.png" scale="60" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Date Time Widget</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Please note that the SWT

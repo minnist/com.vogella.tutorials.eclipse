@@ -53,40 +53,40 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 		
 		
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.debug.core.model.IDebugTarget`
 					
 					<itemizedlist>
-						<listitem>
+						*
 							
 								`org.eclipse.debug.core.model.IThread`
 							
 							<itemizedlist>
-								<listitem>
+								*
 									
 										`org.eclipse.debug.core.model.IStackFrame`
 									
 									<itemizedlist>
-										<listitem>
+										*
 											
 												`org.eclipse.debug.core.model.IVariable`
 											
 											<itemizedlist>
-												<listitem>
+												*
 													
 														`org.eclipse.debug.core.model.IValue`
 													
-												</listitem>
-											</itemizedlist>
-										</listitem>
-									</itemizedlist>
-								</listitem>
-							</itemizedlist>
-						</listitem>
-					</itemizedlist>
-				</listitem>
-			</itemizedlist>
+												
+											
+										
+									
+								
+							
+						
+					
+				
+			
 		
 		NOTE:
 			

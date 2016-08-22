@@ -25,7 +25,7 @@
 		
 image::extensionpoint_projectwizard10.png"/>
 
-				</imageobject>
+				
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
 						extension,pdfwidth=60%]
@@ -33,7 +33,7 @@ image::extensionpoint_projectwizard10.png"/>
 		
 image::extensionpoint_projectwizard20.png"/>
 
-				</imageobject>
+				
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
 						extension,pdfwidth=60%]
@@ -56,8 +56,8 @@ image::extensionpoint_projectwizard20.png"/>
 		
 image::extensionpoint10.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 
@@ -80,7 +80,7 @@ image::extensionpoint10.png"/>
 		
 image::extensionpoint20.png"/>
 
-				</imageobject>
+				
 				<textobject>
 					<phrase>Define Extension Point,pdfwidth=60%]
 		
@@ -151,27 +151,27 @@ image::extensionpoint50.png" scale="35[Add Attribute to Extension,pdfwidth=60%]
 		
 image::extensionpoint70.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::extensionpoint80.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::extensionpoint90.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 image::extensionpoint92.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 	
 
@@ -192,7 +192,7 @@ image::extensionpoint92.png"/>
 image::extensionpoint100.png[Export IGreeter package</phrase>
 				</textobject>
 
-			</mediaobject>
+			
 		
 
 	
@@ -204,17 +204,17 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 			file of your new plug-in:
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.core.runtime`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`org.eclipse.e4.core.di`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 			.
 		
 	
@@ -323,8 +323,8 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 		
 image::extensionpoint110.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Switch to the
@@ -340,23 +340,23 @@ image::extensionpoint110.png"/>
 		
 image::extensionpoint120.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		Add a client to your extension point via right-click.
 		
 image::extensionpoint130.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		
 image::extensionpoint140.png"/>
 
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		

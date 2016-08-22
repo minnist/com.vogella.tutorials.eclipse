@@ -57,7 +57,7 @@
 			The Eclipse project distinguishes between the following group of
 			people:
 			<itemizedlist>
-				<listitem>
+				*
 					
 						Eclipse User - Using at least one product, e.g., a
 						_JAR_
@@ -66,20 +66,20 @@
 						developers. Users also
 						report bugs and issue feature requests in Eclipse projects they are using.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						Contributors are individuals who contribute code, fixes, tests, documentation, or other work that is part of
 						the project.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						Committers have write access to the project's resources (source code repository, bug tracking system,
 						website, build server, downloads, etc.) and are expected to influence the project's development.
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		Everyone has read access to the code repositories hosted at
 			eclipse.org.

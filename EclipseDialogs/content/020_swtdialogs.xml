@@ -11,37 +11,37 @@
 		dialogs are listed below.
 
 		<itemizedlist>
-			<listitem>
+			*
 				
 					`ColorDialog`
 					- for selecting a color
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					`DirectoryDialog`
 					- for selecting a directory
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					`FileDialog`
 					- for selecting a file
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					`FontDialog`
 					- for selecting a font
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					`MessageBox`
 					- for opening a message dialog
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 	
 		The following code demonstrates the usage of the

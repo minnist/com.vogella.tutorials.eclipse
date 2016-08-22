@@ -37,8 +37,8 @@ Version 0.3, 06.07.2016
 				commands. This article is based on Eclipse Indigo (3.7) and uses the
 				Eclipse 3.x API.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/Eclipse/eclipse3xapi.adoc[]
 include::010_introduction.adoc[]

@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 			 This article describes the usage of Eclipse preferences and
 				preference pages. Within this tutorial Eclipse 4.5 (Mars) is used.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_eclipse4.adoc[]

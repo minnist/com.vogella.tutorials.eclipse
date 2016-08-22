@@ -42,7 +42,7 @@ include::res/eclipse4/Usage.java[]
 			The default translation service searches for property files with the
 			translations in the following order.
 			<orderedlist>
-				<listitem>
+				*
 					
 						Check the @Message annotation in the Messages class for the
 						correct location. This annotation allows defining the
@@ -52,8 +52,8 @@ include::res/eclipse4/Usage.java[]
 						. If not present, go to the next
 						step.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					Check if a property file with a corresponding name is
 						available relatively to the Message
 						class. If not
@@ -62,8 +62,8 @@ include::res/eclipse4/Usage.java[]
 						next
 						step.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						Check if a property file is configured via the
 						OSGi-ResourceBundle
@@ -79,7 +79,7 @@ include::res/eclipse4/Usage.java[]
 						<xref linkend="i18n_osgi" />
 						).
 					
-				</listitem>
+				
 			</orderedlist>
 		
 

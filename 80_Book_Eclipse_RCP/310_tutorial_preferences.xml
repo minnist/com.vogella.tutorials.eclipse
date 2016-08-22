@@ -99,11 +99,11 @@ include::res/preferences/Manager.java[]
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/deletelaunch_prefs10.png" scale="35" />
-					</imageobject>
+					
 					<textobject>
 						<phrase>Clear flag in the run configuration</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 		</tip>
 	

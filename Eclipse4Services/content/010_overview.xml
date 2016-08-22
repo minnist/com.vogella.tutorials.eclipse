@@ -142,7 +142,7 @@
 		
 			Other available services are:
 			<itemizedlist>
-				<listitem>
+				*
 					
 						org.eclipse.e4.core.services.Adapter - An adapter can adapt
 						an
@@ -156,21 +156,21 @@
 						http://wiki.eclipse.org/E4/EAS/Adapting_Objects">Adapter wiki
 						for details.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.services.Logger - Provides logging
 						functionality
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					
 						org.eclipse.jface.window.IShellProvider - allows access to a
 						`Shell`
 						, depends on SWT.
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 

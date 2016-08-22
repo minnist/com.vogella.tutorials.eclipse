@@ -19,21 +19,21 @@
 	<!-- Screenshot for the Eclipse RCP book -->
 	
 image::e4parts10.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Eclipse application with a few parts</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	<!-- Screenshot for the Eclipse IDE book -->
-	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
-		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject>  -->
+	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" />  
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject>   -->
 
 
 	<!-- Screenshot for the Eclipse RCP book -->
 	<!-- Screenshot for the Eclipse IDE book -->
-	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" /> </imageobject> 
-		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject> </mediaobject>  -->
+	<!--  <mediaobject> <imageobject> <imagedata fileref="images/eclipseide_partsoverview21.png" scale="40" />  
+		<textobject> <phrase>Eclipse application with a few parts</phrase> </textobject>   -->
 
 
 	
@@ -104,11 +104,11 @@ image::e4parts10.png" scale="30" />
 	
 	
 image::dirtyeditor10.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Editor marked as dirty</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

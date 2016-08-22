@@ -21,19 +21,19 @@
 
 	
 image::egit_createpatch10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Create Patch via EGit menu path</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 image::egit_createpatch20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Create Patch via Eclipse Git</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		The resulting file can be used to get applied to another Git

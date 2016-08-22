@@ -9,12 +9,12 @@
 		
 		In Github there are two ways to get a repository.
 		<itemizedlist>
-			<listitem>
+			*
 				
 					Create a new one and push the initial content from a local repository
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					Create a copy of an existing repository hosted at Github. In Github, this is called
 					_Forking_
@@ -22,8 +22,8 @@
 					_fork_
 					.
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 		
 			As we have already worked with a local clone of a Github repository, this exercise uses the second approach.
 		
@@ -44,7 +44,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/githubstart.png" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Sign up at Github</phrase>
 				</textobject>
@@ -58,7 +58,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/fork_button.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Fork Help</phrase>
 				</textobject>
@@ -80,7 +80,7 @@
 			<inlinemediaobject>
 				<imageobject>
 					<imagedata fileref="./images/fork-button2.png" scale="50" />
-				</imageobject>
+				
 				<textobject>
 					<phrase>Fork Button</phrase>
 				</textobject>

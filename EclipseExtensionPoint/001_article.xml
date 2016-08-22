@@ -39,8 +39,8 @@ Version 0.3, 06.07.2016
 				Eclipse
 				4.2 but you can easily adjust it for Eclipse 3.x.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]

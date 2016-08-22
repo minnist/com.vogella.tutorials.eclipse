@@ -181,11 +181,11 @@ image::osgi_api_definition_overview.png" scale="20[API definition in Eclipse,pdf
 				<mediaobject>
 					<imageobject>
 						<imagedata fileref="images/warnings10.png" scale="30" />
-					</imageobject>
+					
 					<textobject>
 						<phrase>Turning of the Eclipse warnings</phrase>
 					</textobject>
-				</mediaobject>
+				
 			
 			
 				Alternatively you can turn off these warnings on a per project
@@ -217,21 +217,21 @@ image::osgi_api_definition_overview.png" scale="20[API definition in Eclipse,pdf
 			files are defining the API, and the dependencies
 			of the plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					
 						_MANIFEST.MF_
 						- contains the OSGi configuration information.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						_plugin.xml_
 						- optional configuration file, contains information about Eclipse
 						specific
 						extension mechanisms.
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 
 		
 

@@ -38,8 +38,8 @@ Version 0.3, 06.07.2016
 				model. 
 			  This tutorial is based on Eclipse 3.7 (Indigo).
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::001_introduction.adoc[]
 include::010_tutorial_rap_installation.adoc[]

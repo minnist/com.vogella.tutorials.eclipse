@@ -45,8 +45,8 @@ Version 0.3, 06.07.2016
 				This tutorial is
 				based on Eclipse 4.6.
 			
-		</abstract>
-	</articleinfo>
+		
+	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_introduction.adoc[]
 include::020_binding.adoc[]

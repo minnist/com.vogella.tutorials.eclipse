@@ -39,7 +39,7 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 		
 		
 			<itemizedlist>
-				<listitem>
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -47,8 +47,8 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to add the selected resource(s) to the Git index
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -56,9 +56,9 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to open the commit dialog to create a new commit
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -66,8 +66,8 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to create a patch
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -75,8 +75,8 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to apply a patch to your file system
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -84,8 +84,8 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to add a file to the .gitignore file
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						menu:
 							<guimenu>Team</guimenu>
@@ -93,8 +93,8 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 						</menuchoice>
 						, to display the history of the selected resources(s)
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 	
@@ -111,7 +111,7 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 		
 
 		<itemizedlist>
-			<listitem>
+			*
 				
 					menu:
 						<guimenu>Team</guimenu>
@@ -120,8 +120,8 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 					to pull in changes from your remote Git repository
 
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					menu:
 						<guimenu>Team</guimenu>
@@ -130,8 +130,8 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 					to fetch the current state from the remote repository
 
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					menu:
 						<guimenu>Team</guimenu>
@@ -139,8 +139,8 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 					</menuchoice>
 					to checkout existing or create new branches
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					menu:
 						<guimenu>Team</guimenu>
@@ -149,8 +149,8 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 					to push changes to your remote Git repository
 
 				
-			</listitem>
-			<listitem>
+			
+			*
 				
 					menu:
 						<guimenu>Team</guimenu>
@@ -158,8 +158,8 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 					</menuchoice>
 					to create and manage tags.
 				
-			</listitem>
-		</itemizedlist>
+			
+		
 	
 
 

@@ -1,0 +1,14 @@
+== User interface testing with SWTBot
+(((Testing, SWTBot)))
+(((Testing, User interface testing)))
+
+	
+_SWTBot_ is an Eclipse project which supports testing the user interface of an SWT based application.
+SWTBot provides an API which allows you to interact with the user interface of the application.
+It supports validation of certain conditions on the user interface.
+	
+The Eclipse or SWT application is started and controlled by SWTBot.
+	
+If SWTBot is used to test Eclipse based applications, you need to run the JUnit test with a _JUnit Plug-in Test_ run configuration.
+A JUnit plug-in test allows you to start and test Eclipse bundles.
+	

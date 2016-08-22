@@ -36,33 +36,33 @@
 
 		
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.runtime
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.swt
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					org.eclipse.e4.core.di
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.workbench
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.di
 					
-				</listitem>
+				
 
-				<listitem>
+				*
 					org.eclipse.e4.core.di.extensions
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

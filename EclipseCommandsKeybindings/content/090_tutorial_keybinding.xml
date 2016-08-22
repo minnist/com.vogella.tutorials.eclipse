@@ -18,8 +18,8 @@
 		
 image::keybinding10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 If you now run it the keybinding should work and if you press
 			Ctrll+1 the message on the console should be visible.
@@ -34,15 +34,15 @@ image::keybinding10.gif" />
 		
 image::keybinding20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Assign the scheme id to your commands.
 		
 image::keybinding30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		
 			Define a product. See
@@ -60,8 +60,8 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#product">
 		
 image::keybinding40.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		If you now run your product the "Ctrl+N" shortcut should work.
 		

@@ -40,10 +40,10 @@
 	
 	
 image::short10.png" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Ctrl+3 shortcut dialog</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 

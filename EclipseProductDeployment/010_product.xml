@@ -135,11 +135,11 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/product60.png" />
-                </imageobject>
+                
                 <textobject>
                     <phrase>Show the tab splash from the product configuration file</phrase>
                 </textobject>
-            </mediaobject>
+            
         
         
             The predefined name and location of the splash screen image can be
@@ -226,11 +226,11 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/product80.png"/>
-                </imageobject>
+                
                 <textobject>
                     <phrase>Highlighting the section where the icons are maintained.</phrase>
                 </textobject>
-            </mediaobject>
+            
         
 
     

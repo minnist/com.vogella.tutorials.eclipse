@@ -188,21 +188,21 @@
 		
 		
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`EClass`
 						: represents a class, with zero or more attributes and zero or
 						more references.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`EAttribute`
 						: represents an attribute which has a name and a
 						type.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`EReference`
 						: represents one end of an association between two classes. It has
@@ -210,8 +210,8 @@
 						and a reference
 						class to which it points.
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`EDataType`
 						: represents the type of an attribute, e.g.,
@@ -221,8 +221,8 @@
 						or
 						`java.util.Date`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			The

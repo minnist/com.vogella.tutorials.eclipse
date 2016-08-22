@@ -28,11 +28,11 @@
 	
 image::matleakreport10.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Opening a leak report</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		The overview page allows you to start the analysis of the heap
@@ -45,11 +45,11 @@ image::matleakreport10.png"/>
 	
 image::matleakreport20.png"/>
 
-			</imageobject>
+			
 			<textobject>
 				<phrase>Opening the dominator tree</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	In the dominator tree you see the references which are hold.
@@ -57,11 +57,11 @@ image::matleakreport20.png"/>
 
 	
 image::matdominatortree10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>MAT dominator tree</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		To find which element is holding the reference to this object, select

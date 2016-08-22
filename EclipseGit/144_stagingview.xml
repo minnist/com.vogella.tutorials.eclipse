@@ -57,11 +57,11 @@
 	
 	
 image::gitstaging10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Git Staging View - Commit</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	Perform these actions for your initial changes. Afterwards the
 		first version of

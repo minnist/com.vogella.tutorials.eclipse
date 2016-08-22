@@ -23,8 +23,8 @@
 		
 image::theming08.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 		 Add the extension point "org.eclipse.rap.ui.themes". Use the
 			following settings. 
@@ -32,8 +32,8 @@ image::theming08.gif" />
 		
 image::theming10.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 Create now the following file "theme.css" in the folder themes.
@@ -54,8 +54,8 @@ image::theming10.gif" />
 		
 image::theming20.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 		 This will result in the following rap application display.
@@ -64,8 +64,8 @@ image::theming20.gif" />
 		
 image::theming30.gif" />
 					
-				</imageobject>
-			</mediaobject>
+				
+			
 		
 
 

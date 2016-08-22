@@ -21,32 +21,32 @@
 		
 			Add the following dependencies to your plug-in.
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.core.runtime
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.di
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.model.workbench
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.ui.workbench
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.di
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.jface
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.e4.core.contexts
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.osgi.services
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

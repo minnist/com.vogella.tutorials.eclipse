@@ -22,17 +22,17 @@
 			product:
 
 			<itemizedlist>
-				<listitem>
+				*
 					org.eclipse.help.ui
 					
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.help.webapp   
-				</listitem>
-				<listitem>
+				
+				*
 					org.eclipse.equinox.http.jetty   
-				</listitem>
-			</itemizedlist>
+				
+			
 
 			or if you product is feature based add the
 			`org.eclipse.help`
@@ -46,19 +46,19 @@
 			Eclipse defines several predefined commands which you can use in your
 			RCP application.
 			<itemizedlist>
-				<listitem>
+				*
 					"org.eclipse.ui.help.displayHelp" - Opens the help    
-				</listitem>
-				<listitem>
+				
+				*
 					"org.eclipse.ui.help.helpSearch" - Open the Search
 					
-				</listitem>
-				<listitem>
+				
+				*
 					"org.eclipse.ui.help.dynamicHelp" - Opens the Help specific
 						for the current selection if this is configured in the application
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 	
 

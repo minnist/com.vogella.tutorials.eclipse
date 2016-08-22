@@ -53,32 +53,32 @@ include::res/editing/FirstNameEditingSupport.java[]
 			JFace provides the following default implementations for cell
 			editors:
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`TextCellEditor`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`ColorCellEditor`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`CheckboxCellEditor`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`DialogCellEditor`
 					
-				</listitem>
-				<listitem>
+				
+				*
 					
 						`ComboBoxViewerCellEditor`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 
 		

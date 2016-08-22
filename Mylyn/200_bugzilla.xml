@@ -63,11 +63,11 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 	
 	
 image::mylynbugzilla10.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 1</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 		Select the
@@ -79,11 +79,11 @@ image::mylynbugzilla10.png"/>
 	
 	
 image::mylynbugzilla20.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 2</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 	
 
@@ -95,11 +95,11 @@ image::mylynbugzilla20.png"/>
 	
 	
 image::mylynbugzilla30.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	 If for example you want to see all open bugs in
@@ -109,11 +109,11 @@ image::mylynbugzilla30.png"/>
 	
 	
 image::mylynbugzilla40.png"/>
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 4</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 	 If you now activate a task, you can use Mylyn to work on
@@ -122,11 +122,11 @@ image::mylynbugzilla40.png"/>
 	
 	
 image::mylynbugzilla50.png" scale="30" />
-			</imageobject>
+			
 			<textobject>
 				<phrase>Creating a bugzilla query in Mylyn - Part 3</phrase>
 			</textobject>
-		</mediaobject>
+		
 	
 
 

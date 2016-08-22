@@ -27,12 +27,12 @@
 			define a dependency to:
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`com.example.e4.rcp.todo.model`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 			
@@ -44,12 +44,12 @@
 			define a dependency to:
 
 			<itemizedlist>
-				<listitem>
+				*
 					
 						`org.eclipse.osgi.services`
 					
-				</listitem>
-			</itemizedlist>
+				
+			
 		
 		
 	

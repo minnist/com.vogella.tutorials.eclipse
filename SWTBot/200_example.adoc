@@ -1,6 +1,6 @@
 == Exercise: Write SWTBot test
 
-=== Installation
+=== Install SWTBot
 
 Ensure to install SWTBot into your Eclipse IDE. See <<swtbotinstallation>> for detailed information.
 

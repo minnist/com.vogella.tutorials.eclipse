@@ -1,0 +1,13 @@
+<section id="prerequisite">
+	<title>Prerequisites for this tutorial</title>
+	<para>
+		This tutorial assumes that you have basic understanding of
+		development
+		for the Eclipse platform.
+		Please see
+		<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html">Eclipse RCP Tutorial</ulink>
+		or
+		<ulink url="http://www.vogella.com/tutorials/EclipsePlugin/article.html">Eclipse Plug-in Tutorial</ulink>
+		if you need any basic information.
+	</para>
+</section>

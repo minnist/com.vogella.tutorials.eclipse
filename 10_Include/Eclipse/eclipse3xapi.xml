@@ -1,17 +1,17 @@
 <section id="eclipse3xapi">
 	<warning>
-		<para>
+		
 			This tutorial describes the Eclipse 3.x API which is used
 			for
 			Eclipse IDE plug-in development.
-		</para>
-		<para>
+		
+		
 			For Eclipse RCP you should use the
 			new Eclipse 4 API which is
 			described in the
 			<ulink url="http://www.vogella.com/tutorials/EclipseRCP/article.html">Eclipse RCP tutorial</ulink>
 			.
-		</para>
+		
 	</warning>
 
 </section>

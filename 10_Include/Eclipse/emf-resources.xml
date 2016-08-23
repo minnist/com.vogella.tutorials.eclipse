@@ -1,24 +1,24 @@
 <section id="resources_emf">
-	<title>EMF Resources</title>
+	<title>EMF Resources
 
-	<para>
+	
 		<ulink url="http://www.eclipse.org/modeling/emf">
 			Eclipse EMF Homepage</ulink>
-	</para>
+	
 
-	<para>
+	
 		<ulink url="http://www.eclipse.org/modeling/emf/docs/">
 			EMF Documentation</ulink>
-	</para>
+	
 
-	<para>
+	
 		<ulink url="https://www.eclipse.org/ecoretools/doc/index.html">
 			Ecore translation</ulink>
-	</para>
+	
 
-	<para>
+	
 		<ulink url="http://www.eclipse.org/atl/">
 			Eclipse ATL</ulink>
 		- allows model to model transformation for EMF
-	</para>
+	
 </section> 

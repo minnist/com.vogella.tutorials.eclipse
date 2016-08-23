@@ -1,12 +1,12 @@
 <section id="resources_eclipse">
-	<title>Eclipse Bug Tracker and Eclipse Forum</title>
-	<para>
+	<title>Eclipse Bug Tracker and Eclipse Forum
+	
 		<ulink url="http://eclipse.org/forums">Eclipse Forum</ulink>
 		for asking questions and providing feedback.
-	</para>
-	<para>
+	
+	
 		<ulink url="https://bugs.eclipse.org/bugs/">Eclipse Bug Tracker</ulink>
 		for reporting errors or feature requests.
-	</para>
+	
 
 </section>

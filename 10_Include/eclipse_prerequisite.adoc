@@ -1,6 +1,6 @@
 <section id="prerequisite">
-	<title>Prerequisites for this tutorial</title>
-	<para>
+	<title>Prerequisites for this tutorial
+	
 		This tutorial assumes that you have basic understanding of
 		development
 		for the Eclipse platform.
@@ -9,5 +9,5 @@
 		or
 		<ulink url="http://www.vogella.com/tutorials/EclipsePlugin/article.html">Eclipse Plug-in Tutorial</ulink>
 		if you need any basic information.
-	</para>
+	
 </section>

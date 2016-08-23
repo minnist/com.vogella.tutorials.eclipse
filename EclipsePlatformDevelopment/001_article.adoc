@@ -1,56 +1,24 @@
-= Android - Tutorial
+= Eclipse IDE platform development - tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
+Lars Vogel, (c) 2009, 2016 vogella GmbH
+Version 6.8, 06.07.2016
 :docinfodir: ../
 :vgwort: 
 
 [abstract]
+This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
 
 
-=== Eclipse IDE platform development - tutorial
-		<subtitle>Contributing to the Eclipse open source project
-		</subtitle>
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2009</year>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<year>2015</year>
-			<year>2016</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>09.05.2016</pubdate>
-		<releaseinfo>
-			Version 6.8
-		</releaseinfo>
-
-		<abstract id="abstract">
-	=== Eclipse platform development
-			 This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
-			
-
-		
-	
-	<?dbhtml-include href="../../web/kindle/eclipse-contribution.txt"?>
 include::010_contributingtoeclipse.adoc[]
 
 === Prerequisites
 		
-			This tutorial assumes that you have already Eclipse plug-in
-			development experience. See the
-			http://www.vogella.com/tutorials/EclipsePlugin/article.html"> Eclipse Plug-in development tutorial
-			for details.
+This tutorial assumes that you have already Eclipse plug-indevelopment experience. 
+See the http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plug-in development tutorial] for details.
 		
 
 	
@@ -76,4 +44,4 @@ include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 include::006_localresources.adoc[]
 
-adoc[]
+

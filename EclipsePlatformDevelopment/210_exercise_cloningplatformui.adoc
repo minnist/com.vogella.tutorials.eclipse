@@ -2,32 +2,32 @@
 
 === Finding the correct Git repository
 		Ensure you are logged into the Gerrit server webpage. This will enable you to use SSH or
-			HTTPS for cloning the
-			repository.
+HTTPS for cloning the
+repository.
 		
 		
-			Go to the
-			https://git.eclipse.org/r/">Gerrit Eclipse homepage
-			and select the
-			menu:Projects[List]
-			menu entry. This opens the
-			https://git.eclipse.org/r/#/admin/projects/">Project search page
-			. Afterwards search for the project you want to contribute to. In our example we want to contribute to the
-			platform.ui project.
+Go to the
+https://git.eclipse.org/r/">Gerrit Eclipse homepage
+and select the
+menu:Projects[List]
+menu entry. This opens the
+https://git.eclipse.org/r/#/admin/projects/">Project search page
+. Afterwards search for the project you want to contribute to. In our example we want to contribute to the
+platform.ui project.
 		
 		
 image::gerrit_getcloneurl10.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 		
 		
-			Select the correct project. This opens a new webpage.
-			This page contains links for cloning the Git
-			repository. The
-			selection
-			for HTTPS is
-			depicted in the
-			following
-			screenshot. Please note that the URL for you is different, as it
-			contains your user name.
+Select the correct project. This opens a new webpage.
+This page contains links for cloning the Git
+repository. The
+selection
+for HTTPS is
+depicted in the
+following
+screenshot. Please note that the URL for you is different, as it
+contains your user name.
 		
 		
 image::gerrit_getcloneurl30.png[Get URL to clone a Gerrit project,pdfwidth=60%]
@@ -37,59 +37,32 @@ image::gerrit_getcloneurl30.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 
 === Clone the repository via the Eclipse IDE
 		
-			To clone, select
-			menu:File[Import... > Git > Projects from Git > Clone URI]
-			.
-		
-
+To clone, select menu:File[Import... > Git > Projects from Git > Clone URI].
 		
 image::gerrit_getcloneurl40.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 		
-		
 image::gerrit_getcloneurl50.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 		
-		Enter the URL from the Gerrit webpage in the first line of the wizard. The Eclipse Git tooling removes "git
-			clone" from the clone URI automatically.
+Enter the URL from the Gerrit webpage in the first line of the wizard. 
+The Eclipse Git tooling removes "git clone" from the clone URI automatically.
 		
-		
-			Note that the URL automatically includes your user name. This makes
-			it
-			easier to push a change to the Eclipse
-			Gerrit
-			review
-			system. If you clone the repository using the Eclipse Git functionality, your local repository is already
-			configured to push changes to Gerrit, no additional setup step is required. You can also clone anonymously via
-			_Anonymous HTTP_
-			, if you just want to play with
-			the source code locally and do not intend to
-			contribute changes. The following
-			screenshot shows this selection, please the depicted user name with yours.
-		
+Note that the URL automatically includes your user name. 
+This makes it easier to push a change to the Eclipse Gerrit review system. 
+If you clone the repository using the Eclipse Git functionality, your local repository is already configured to push changes to Gerrit, no additional setup step is required. 
+The following screenshot shows this selection, please the depicted user name with yours.
 		
 image::gerrit_getcloneurl60.png[Get URL to clone a Gerrit project,pdfwidth=60%]
 		
 		
-			On the next wizard page you can choose to clone all branches or only the master branch. Finish this wizard by
-			selecting the
-			_Next_
-			button
-			until you the option
-			_Finish_
-			option becomes available. You end up with the projects from the repository imported into your workspace.
-		
+On the next wizard page you can select to clone all branches.
+Most Eclipse projects work in the master branch for any new development but getting all tracking branches does not harm.
+Finish this wizard by selecting the _Next_ button until you the option _Finish_ option becomes available. 
+You end up with the projects from the repository imported into your workspace.
+	
+NOTE: You can also clone anonymously via _Anonymous HTTP_ , if you just want to play with the source code locally and do not intend to contribute changes. 
+In case you cloned a Git repository without using the Gerrit URL or not via Eclipse Git you have to adjust the push URL to provide Gerrit changes.
+See <<eclipsegerritcontribution_adjustpush>> for a description how to do that.
 
-		NOTE:
-			
-				In case you cloned a Git repository without using the
-				Gerrit URL or not via Eclipse Git you
-				have to adjust the
-				push URL.
-				See
-				<xref linkend="eclipsegerritcontribution_adjustpush" />
-				for a description how to do that.
-			
-
-		</note>
 
 	
 

@@ -2,93 +2,43 @@
 
 === Code contributing
 		
-			As the Eclipse project is an open source project, it is possible
-			to get the source code, modify it and provide
-			the change back to the
-			project. Most Eclipse projects use a code review process based on the
-			Gerrit code review system.
-			Some Eclipse projects also use Github for code contributions.
+The development of the individual Eclipse projects is done by the Eclipse developers - companies and individuals alike - which develop the code.
+
+As the Eclipse project is an open source project, it is possible to get the source code, modify it and provide the change back to the project. 
+Most Eclipse projects use a code review process based on the Gerrit code review system.
+Some Eclipse projects also use Github for code contributions.
 		
+Contributing to an Eclipse project has the benefit of getting feedback directly from the core developers. 
+It also allows developers and organizations to fix bugs which affect them and to drive the project into a desired direction.
 		
-			Contributing to an Eclipse project has the benefit of getting
-			feedback directly from the core developers. It also
-			allows developers
-			and organizations to fix bugs which affect them and to drive the
-			project into a desired direction.
-		
-		While there are other ways of contributing to an Eclipse project, e.g., via updating the project documentation,
-			this $book focuses on the process of contributing code to an Eclipse project.
-		
+This $book focuses on the process of contributing code to an Eclipse project.
+If case you do not want to contribute code, there are other ways of contributing, e.g., via updating the project documentation, but these are not covered here.
 	
 
 === User interface guidelines
 		
+Eclipse has a description for its user interface guidelines. These
+can be found under the following URL: https://wiki.eclipse.org/User_Interface_Guidelines[Wiki about UI guidelines].
 		
-			Eclipse has a description for its user interface guidelines. These
-			can be found under the following url:
-			https://wiki.eclipse.org/User_Interface_Guidelines">Wiki about UI guidelines
-			.
-		
-		
-			It is not expected that you read this guide completely, but in
-			case you
-			want
-			to check what the Eclipse way of doing
-			things is, you can
-			have a
-			look
-			at this (old but still valid) description.
-		
+It is not expected that you read this UI guide completely.
+But in case you want to check what the Eclipse way of doing things is, you can have a look at this (old but still valid) description.
 	
 
 === Users, Contributors and Committers
 		
 		
+The Eclipse project distinguishes between the following group of people:
 
-		The development of the individual Eclipse projects is done by
-			the
-			Eclipse developers - companies and individuals
-			alike
-			- which
-			develop
-			the code.
-		
-		
-			The Eclipse project distinguishes between the following group of
-			people:
-			<itemizedlist>
-				*
-					
-						Eclipse User - Using at least one product, e.g., a
-						_JAR_
-						file, of the Eclipse project. Eclipse users consume the software
-						created by the Eclipse
-						developers. Users also
-						report bugs and issue feature requests in Eclipse projects they are using.
-					
-				
-				*
-					
-						Contributors are individuals who contribute code, fixes, tests, documentation, or other work that is part of
-						the project.
-					
-				
-				*
-					
-						Committers have write access to the project's resources (source code repository, bug tracking system,
-						website, build server, downloads, etc.) and are expected to influence the project's development.
-					
-				
-			
-		
-		Everyone has read access to the code repositories hosted at
-			eclipse.org.
-		
-
+* Eclipse User - Using at least one product, e.g., a _JAR_ file, of the Eclipse project. Eclipse users consume the software created by the Eclipse developers. 
+Users also report bugs and issue feature requests in Eclipse projects they are using.
 	
+* Contributors are individuals who contribute code, fixes, tests, documentation, or other work that is part of the project.
 	
-
-        <title>Relevant Eclipse projects
+* Committers have write access to the project's resources (source code repository, bug tracking system, website, build server, downloads, etc.) and are expected to influence the project's development.
+		
+Everyone has read access to the code repositories hosted at eclipse.org.
+		
+=== Relevant Eclipse projects
         Eclipse hosts multiple projects but several projects are critical for the development of the Eclipse IDE and RCP
             applications. These are described here.
         

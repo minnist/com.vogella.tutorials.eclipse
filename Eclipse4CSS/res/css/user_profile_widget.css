@@ -1,4 +1,4 @@
-UserProfileWidget {
-   header-background-color: red;
+UserProfileWidget { #<1>
+   header-background-color: red; #<2>
 }
 

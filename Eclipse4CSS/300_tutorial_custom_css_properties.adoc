@@ -21,6 +21,9 @@ Add the following CSS to your CSS file, which is used in your application plug-i
 include::res/css/user_profile_widget.css[]
 ----
 
+<1> Custom CSS selector
+<2> Custom CSS property
+
 === Create the user profile widget
 In order to learn how to implement customizations for CSS we also need a custom widget, which should be styled. 
 So we implement a really simple custom widget, which is a `Composite` that consists of three other `Composites` for the header, image and description area.

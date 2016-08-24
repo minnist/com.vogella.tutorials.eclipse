@@ -77,6 +77,24 @@ Feature version from feature.xml
 === Defining a specialized pom file for an Eclipse component
  
 If you define a pom file for an Eclipse component, you need to specify the _packaging_ attribute in the pom file.
+
+[TIP]
+====
+The build requires that the version numbers of each single Maven artifacts and it's Eclipse plug-ins are in sync. 
+Sometimes (this is rare these days) developers forget to update the Maven version numbers. 
+In this case the
+build complains about a version
+mismatch. Run the following command to correct
+existing
+inconsistencies.
+
+[source,console]
+----
+mvn -Dtycho.mode=maven org.eclipse.tycho:tycho-versions-plugin:update-pom  
+----
+====
+
+
 This attribute defines what kind of Eclipse component you are building.
 For example, a plug-in must set this attribute to `eclipse-plugin`. 
 

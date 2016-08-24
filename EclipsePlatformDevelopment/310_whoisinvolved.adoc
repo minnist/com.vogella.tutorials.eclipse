@@ -2,83 +2,37 @@
 
 === Who is involved?
 
-		
-			Despite the general assumption that the Eclipse SDK components
-			are
-			developed by an army of developers, the actual
-			core developer
-			team
-			is
-			relatively small.
-		
-		
-			General information about an Eclipse project can be
-			found
-			under
-			http://projects.eclipse.org/">http://projects.eclipse.org/
-			. For example
-			via the
-			_Who's Involved_
-			link you can see an overview of the project activities. For
-			example,
-			the information for
-			the
-			platform
-			project can be found
-			under the
-			https://projects.eclipse.org/projects/eclipse/who">Eclipse project
-			link.
-		
-		
+
+Despite the general assumption that the Eclipse SDK components are developed by an army of developers, the actual core developer team is relatively small.
+The _Who's Involved_on the http://projects.eclipse.org/[project page] from can be used to get an overview of the project activities. 
+For example, the information of the platform
+project is available under https://projects.eclipse.org/projects/eclipse/who[Eclipse platform project page].
+
+
 image::eclipseplatformcontributors.png" scale="60[Screenshots of the Eclipse platform contributors,pdfwidth=60%]
-		
 
-		TIP:
-			
-				To find out how
-				many people contribute to a given Eclipse Git
-				repo
-				you can use the
-				following command on a Linux
-				like system. For
-				example
-				running this
-				command shows 27 on July, 07, 2014 result in 27
-				people
-				contributing
-				to the
-				platform.ui repository.
-			
-			
-				<programlisting language="java">
-					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gitcount/gitcount.txt" />
-				</programlisting>
-			
+[TIP]
+====
+To find out how many people contribute to a given Eclipse Git repo you can use the following command on a Linux like system. 
+
+[source,console]
+----
+git log --since='last 3 month' --raw | grep "^Author: " | sort | uniq -c | wc -l
+----
+====
 
 
+Since the core team of an individual project is relatively small, contributors can really make a difference. 
+For example the following screenshot shows a snapshot of the activities of the https://projects.eclipse.org/projects/eclipse.platform.ui/who[Eclipse platform.ui] project. 
 
-		</tip>
 
-		
-			Since the core team of an individual project is relatively small,
-			contributors can really
-			make a difference. For
-			example the following screenshot shows a snapshot of the activities of the
-			https://projects.eclipse.org/projects/eclipse.platform.ui/who">Eclipse platform.ui project
-			. 
-		
-		
 image::platformcontributions20.png[Acivities in the Eclipse platform UI project,pdfwidth=60%]
-		
-		
-			An alternative view gives the new dashboard. For example
-			the following
-			screeenshot shows the
-			http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui">Platform.ui dashboard
-			link.
-		
-		
+
+
+An alternative view gives the new dashboard. 
+For example the following screeenshot shows the http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui[Platform UI] dashboard link.
+
 image::dashboard.png" scale="30[Platform.ui dashboard,pdfwidth=60%]
-		
-	
+
+
 

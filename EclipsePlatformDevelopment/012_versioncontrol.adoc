@@ -1,107 +1,54 @@
-<section role="wrapper">== Finding information about an Eclipse project
-	<section>
+== Finding information about an Eclipse project
+
 === The Eclipse project page
 		
+
+Eclipse lists all project repositories under their project page. 
+This page can be found via the main https://projects.eclipse.org[Eclipse projects page].
+        
 		
-			Additional information about a project can be found under its
-			https://projects.eclipse.org/">Eclipse project page
-			. This includes information about future developments plans,
-			documentation, wiki pages, developer mailing lists and
-			the project
-			charter.
+Use the project page you can search for an Eclipse project.
+The individual project page includes information about future developments plans, documentation, wiki pages, developer mailing lists and the project charter.
+If you click on the _Learn more_ in one of the search results you are taken to the project homepage. 
+Click on the _Developer resources_ tab to see all Git repositories of the project.
 		
-		
-			The following screenshot depicts the website for the JDT UI
-			project. This project page can be found under
-			https://projects.eclipse.org/projects/eclipse.jdt.ui">JDT UI project page
-			.
+The following screenshot depicts the website for the https://projects.eclipse.org/projects/eclipse.jdt.ui[JDT UI project]. 
 		
 		
 image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth=60%]
-		
-	
 
-
-
-=== Finding the Git repositories for an Eclipse project
-		
-			Eclipse lists
-			all
-			project repositories under their project
-			page. This page can be found via the main
-			https://projects.eclipse.org/">Eclipse projects page
-			.
-		
-		
-			Use this page to search for an Eclipse project.
-			If you click on the
-			_Learn more_
-			in one of the search results you are taken to the project homepage. Click on the
-			_Developer resources_
-			tab to see all Git repositories of the project.
-		
-	
 
 === Example: Finding the Git repositories for the Eclipse Platform UI project
 		
-			The Eclipse platform UI project is responsible for the user interface, runtime and user assistant components of
-			the
-			Eclipse platform. In this example search for "Platform UI".
+The Eclipse platform UI project is responsible for the user interface, runtime, text and user assistant components of the Eclipse platform. 
+In this example search for "Platform UI".
 		
-
 		
 image::eclipsegitrepos10.png" scale="30[Eclipse Platform UI search result,pdfwidth=60%]
 		
 		
-			Click on the
-			_Learn more_
-			link and select the
-			_Developer resources_
-			tab.
+Click on the _Learn more_ link and select the _Developer resources_ tab.
 		
 		
 image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=60%]
 		
 
-	
-
-
 === The Eclipse dashboard
 		
 		
-		
-			At the time of this writing the Eclipse foundation is setting up
-			a
-			new
-			http://dashboard.eclipse.org/">dashboard
-			.
+The Eclipse foundation provides also http://dashboard.eclipse.org[Dashboards].
 		
 		
-			For example
-			http://dashboard.eclipse.org/its-contributors.html">
-			gives an overview of Eclipse contributions. The dashboard allows
-			you
-			to drill down as depicted in the following
-			screenshot.
+For example http://dashboard.eclipse.org/its-contributors.html gives an overview of Eclipse contributions. 
+The dashboard allows you to drill down as depicted in the following screenshot.
 		
-		NOTE:
-			
-				The URL and appearance may still change. See
-				https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792">Bug 405792
-				for details.
-			
-		</note>
+NOTE: The URL and appearance may still change over time. See https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792[Bug 405792] for details.
 		
 image::eclipsedash10.png" scale="30[Project members dash,pdfwidth=60%]
 		
 
-		You can select in the top the sub-project to see. For example
-			the reporting for the Eclipse project is depicted
-			in the following
-			screenshot.
-		
-
+You can select in the top the sub-project to see. 
+For example the reporting for the Eclipse project is depicted in the following screenshot.
 		
 image::eclipsedash20.png" scale="30[Eclipse project dashboard,pdfwidth=60%]
 		
-	

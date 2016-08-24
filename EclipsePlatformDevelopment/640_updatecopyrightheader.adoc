@@ -2,35 +2,25 @@
 
 
 === Why updating the copyright header of a changed file?
-		<indexterm>
-			<primary>Copyright header update
-			</primary>
-		</indexterm>
-		Most Eclipse projects insists that you update the last changed date in the copyright header if you change the
-			file. You can do this manually but the Eclipse releng project also provides tooling for that.
+(((Copyright header update)))
+
+The Eclipse project allows you optionally to update the last changed date in the copyright header, if you change the file. 
+You can do this manually but the Eclipse releng project also provides tooling for that.
 		
+NOTE: This used to be mandatory but become an optional step in 2016.
 
-	
-
-		<indexterm>
-			<primary>Copyright header update tool
-			</primary>
-		</indexterm>
 === Using the Eclipse releng tooling for updating the copyright header
 		
-			You need to install the copyright header tool from the following update site:
-			http://download.eclipse.org/eclipse/updates/4.5
+You need to install the copyright header tool from the following update site:
+http://download.eclipse.org/eclipse/updates/4.6
 		
-		Adjust the number "4.5" to the number matching your eclipse
-			version.
+Adjust the number "4.6" to the number matching your eclipse version.
 		
 		
 image::copyrightheadertool10.png[Installing the copyright header tool,pdfwidth=60%]
 		
 
-		After the installation you can select the entry from the context menu of a project or source folder. 
+After the installation you can select the entry from the context menu of a project or source folder. 
 		
 image::copyrightheadertool20.png[Using the fix copyright header tool,pdfwidth=60%]
 		
-	
-

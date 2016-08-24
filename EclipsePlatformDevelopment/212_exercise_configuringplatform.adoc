@@ -2,7 +2,7 @@
 
 === Exercise: Install additional plug-ins via install file
 
-The Eclipse Platform UI team provides a file describing all the plugins typically needed for platform development. 
+The Eclipse Platform UI team provides a file describing all the plug-ins typically needed for platform development. 
 You can download from the following link this file, stored under version control:
 http://git.eclipse.org/c/platform/eclipse.platform.ui.git/plain/releng/org.eclipse.ui.releng/platformUiTools.p2f
 
@@ -20,15 +20,8 @@ Handling baseline issues and API is something which the core committers can help
 New contributors can set this error message to warning to have an easy start. 
 This setting is highlighted in the following screenshot.
 
+image::apibaseline_setwarningtoignore10.png[Setting the API baseline to ignore]
 
-	<mediaobject>
-<imageobject>
-<imagedata fileref="images/apibaseline_setwarningtoignore10.png"/>
-
-<textobject>
-<phrase>Setting the API baseline to ignore</phrase>
-</textobject>
-	
 ====
 
 

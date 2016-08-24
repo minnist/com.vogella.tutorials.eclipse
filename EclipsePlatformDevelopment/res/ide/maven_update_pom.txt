@@ -1,1 +1,0 @@
-mvn -Dtycho.mode=maven org.eclipse.tycho:tycho-versions-plugin:update-pom  

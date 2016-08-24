@@ -1,99 +1,47 @@
+[[usingtheinstaller]]
 == Using the Eclipse installer for code contributions
-	
-		You can also use the Eclipse installer (which is provided by the Eclipse Oomph project) to automated some of the
-		steps of code contributions. Please note that the
-		Eclipse installer is currently still under heavy development and the
-		user interface might change significantly.
-	
-	NOTE:
-		Currently the main Eclipse platform projects do not actively configure Oomph, hence the contribution setup via
-			the Eclipse installer may not
-			result in a correct setup.
-		
-	</note>
-	
-		Download for this,
-		the
-		Eclipse installer from
-		https://www.eclipse.org/downloads/">Eclipse installer
-		. Depending your operating system you have to extract it, or you can just run the executable.
-	
-	
-image::eclipseinstaller_download.png"/>
-			
-			<textobject>
-				<phrase>Download Eclipse installer</phrase>
-			</textobject>
-		
-	
-	
-		Start it and select the
-		_Advanced Mode_
-		.
-	
-	<mediaobject>
-		<imageobject>
-			<imagedata fileref="images/OomphAdvancedMode.png" scale="30" />
-		
-		<textobject>
-			<phrase>Download Eclipse installer</phrase>
-		</textobject>
-	
-	
-		Select
-		_Eclipse IDE for Java Developers_
-		.
-	
 
-	
-		Afterwards you can select the project you want to contribute to. If this project maintains a correct Oomph
-		configuration will clone the corresponding repository
-		and configure your workspace. The following screenshots are from
-		JDT UI, for which the Eclipse installer configuration is valid as the time of this writing.
-	
-	
-image::oomph_jdt10.png"/>
-			
-			<textobject>
-				<phrase>JDT contributions via Ooomph 1</phrase>
-			</textobject>
-		
-	
+You can also use the Eclipse installer (which is provided by the Eclipse Oomph project) to automated some of the
+steps of code contributions. Please note that the
+Eclipse installer is currently still under heavy development and the
+user interface might change significantly.
 
-	
-image::oomph_jdt20.png"/>
-			
-			<textobject>
-				<phrase>JDT contributions via Oomph 1</phrase>
-			</textobject>
-		
-	
-	
-image::oomph_jdt30.png"/>
-			
-			<textobject>
-				<phrase>JDT contributions via Oomph 3</phrase>
-			</textobject>
-		
-	
+Download for this, the Eclipse installer from https://www.eclipse.org/downloads[Eclipse installer].
+Depending your operating system you have to extract it, or you can just run the executable.
 
-	
-image::oomph_jdt40.png"/>
-			
-			<textobject>
-				<phrase>JDT contributions via Oomph 4</phrase>
-			</textobject>
-		
-	
-	You end up with a workspace with the existing Git repositories. After this initial setup you should consult the
-		contribution guide of the project to ensure you know their contribution guidelines. 
-	
-image::oomph_jdt50.png"/>
-			
-			<textobject>
-				<phrase>JDT contributions via Oomph 5</phrase>
-			</textobject>
-		
-	
+
+image::eclipseinstaller_download.png[Download Eclipse installer]
+
+
+Start it and select the _Advanced Mode_.
+
+image::OomphAdvancedMode.png[Download Eclipse installer]
+
+
+Select _Eclipse IDE for Java Developers_.
+
+
+Afterwards you can select the project you want to contribute to. 
+If this project maintains a correct Oomph configuration will clone the corresponding repository and configure your workspace. 
+The following screenshots are from JDT UI, for which the Eclipse installer configuration is valid as the time of this writing.
+
+image::oomph_jdt10.png[JDT contributions via Ooomph 1]
+
+
+image::oomph_jdt20.png[JDT contributions via Oomph 1]
+
+
+image::oomph_jdt30.png[JDT contributions via Oomph 3]
+
+
+image::oomph_jdt40.png[JDT contributions via Oomph 4]
+
+
+You end up with a workspace with the existing Git repositories. 
+After this initial setup you should consult the contribution guide of the project to ensure you know their contribution guidelines. 
+
+image::oomph_jdt50.png[JDT contributions via Oomph 5]
+
+
 
 

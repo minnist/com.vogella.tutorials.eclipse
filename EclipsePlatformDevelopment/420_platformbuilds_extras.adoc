@@ -2,29 +2,29 @@
 
 === Reporting issues or asking questions about the build
 		
-			A good place to post questions about the CBI build is the CBI mailing
-			list. The webinterface for this mailing list can be found under the
-			following URL
-			https://dev.eclipse.org/mailman/listinfo/cbi-dev">CBI mailing list
-			.
+A good place to post questions about the CBI build is the CBI mailing
+list. The webinterface for this mailing list can be found under the
+following URL
+https://dev.eclipse.org/mailman/listinfo/cbi-dev">CBI mailing list
+.
 		
 	
 
 === Eclipse platform Hudson builds
 		
-			The Eclipse platform has a Hudson build instance which can be found
-			under the following URL:
-			https://hudson.eclipse.org/platform/">Eclipse platform Hudson
-			. This build instance is currently not used for the main build, only
-			to validate Gerrit contributions.
+The Eclipse platform has a Hudson build instance which can be found
+under the following URL:
+https://hudson.eclipse.org/platform/">Eclipse platform Hudson
+. This build instance is currently not used for the main build, only
+to validate Gerrit contributions.
 
 		
 		
-			See
-			https://bugs.eclipse.org/bugs/show_bug.cgi?id=420101">Bug report for migrating the platform build to
-				Hudson
-			
-			.
+See
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=420101">Bug report for migrating the platform build to
+	Hudson
+
+.
 		
 	
 
@@ -33,41 +33,41 @@
 === Release and milestone builds
 		
 
-			To have a reproducible and stable build, it is possible to
-			switch to
-			a specific version instead of using the newest source code.
-			For this
-			the platform aggregator repository has tags for every
-			release
-			build.
+To have a reproducible and stable build, it is possible to
+switch to
+a specific version instead of using the newest source code.
+For this
+the platform aggregator repository has tags for every
+release
+build.
 		
 		
-			To build for example the R4_3 release, you have to checkout this
-			specific tag out and
-			start the build like the following:
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/build_release.txt[]
+To build for example the R4_3 release, you have to checkout this
+specific tag out and
+start the build like the following:
+<programlisting language="bourne">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/extras/build_release.txt[]
 ----
 		
 		<warning>
-			
-				The CBI build still depends on external resources like p2 update
-				sites. From time to time this resources change or will become
-				unavailable. The R4_3_1 tag for example depends on a removed update
-				site, so you have to add the new URL via a
-				parameter to the build:
-				<programlisting language="bourne">
-					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-						parse="text" href="./examples/extras/build_release_r4_3_1.txt" />
-				</programlisting>
-			
+
+	The CBI build still depends on external resources like p2 update
+	sites. From time to time this resources change or will become
+	unavailable. The R4_3_1 tag for example depends on a removed update
+	site, so you have to add the new URL via a
+	parameter to the build:
+	<programlisting language="bourne">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+parse="text" href="./examples/extras/build_release_r4_3_1.txt" />
+	</programlisting>
+
 		</warning>
 
 		TIP:
-			To check which properties can be overridden check the
-				properties fields in the eclipse-platform-parent/pom.xml file.
-			
+To check which properties can be overridden check the
+	properties fields in the eclipse-platform-parent/pom.xml file.
+
 		</tip>
 
 	
@@ -75,17 +75,17 @@
 
 === Changing build ID
 		
-			A normal CBI Build shows, "Build id: @build@" in the "About Eclipse
-			SDK" window. To define a custom build id use the
-			`buildId`
-			parameter and the
-			`update-branding-plugins`
-			profile.
+A normal CBI Build shows, "Build id: @build@" in the "About Eclipse
+SDK" window. To define a custom build id use the
+`buildId`
+parameter and the
+`update-branding-plugins`
+profile.
 		
 		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/buildid.txt[]
+<programlisting language="bourne">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/extras/buildid.txt[]
 ----
 		
 
@@ -94,27 +94,27 @@
 
 === Build single parts of the aggregator
 		
-			It is also possible to build just single parts of the aggregator
-			repository, by passing the
-			`build-individual-bundles`
-			profile.
-			The following example shows how to build just the
-			rt.equinox.framework.
+It is also possible to build just single parts of the aggregator
+repository, by passing the
+`build-individual-bundles`
+profile.
+The following example shows how to build just the
+rt.equinox.framework.
 		
 		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/extras/build-individual-bundles.txt[]
+<programlisting language="bourne">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+		parse="text" href="./examples/extras/build-individual-bundles.txt[]
 ----
 		
 
 		NOTE:
-			Unfortunately while there
-				are numerous bundles for which the
-				build succeed with this method, there are a
-				couple bundles / features
-				that cannot be built using this method.
-			
+Unfortunately while there
+	are numerous bundles for which the
+	build succeed with this method, there are a
+	couple bundles / features
+	that cannot be built using this method.
+
 		</note>
 	
 
@@ -122,24 +122,24 @@
 
 === Building natives (SWT binary files)
 		The CBI build does not build natives by default (SWT binary
-			files).
-			Instead, the CBI build simply copies pre-built native files
-			from the
-			swt.binaries repository.
+files).
+Instead, the CBI build simply copies pre-built native files
+from the
+swt.binaries repository.
 		
 		
-			For Windows/Mac/Linux it is possible to force the CBI build to
-			build
-			these
-			natives by passing the -Dnative pointing to the build.
-			For
-			example the
-			_-Dnative=gtk.linux.x86_64_
-			parameter in
-			the
-			case of Linux. List of options available at
+For Windows/Mac/Linux it is possible to force the CBI build to
+build
+these
+natives by passing the -Dnative pointing to the build.
+For
+example the
+_-Dnative=gtk.linux.x86_64_
+parameter in
+the
+case of Linux. List of options available at
 https://wiki.eclipse.org/Platform-releng/Platform_Build#Building_natives">Building natives
-			.
+.
 		
 
 	
@@ -147,12 +147,12 @@ https://wiki.eclipse.org/Platform-releng/Platform_Build#Building_natives">Buildi
 === Fedora Eclipse CBI build
 
 		
-			The Fedora project has removed some non Eclipse IDE related
-			plug-ins
-			to
-			speed up the build process. See the
+The Fedora project has removed some non Eclipse IDE related
+plug-ins
+to
+speed up the build process. See the
 http://pkgs.fedoraproject.org/cgit/eclipse.git/tree/eclipse.spec#n366">Fedora build script
-			.
+.
 		
 
 	

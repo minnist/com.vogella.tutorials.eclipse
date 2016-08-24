@@ -1,1 +1,0 @@
-git log --since='last 3 month' --raw | grep "^Author: " | sort | uniq -c | wc -l

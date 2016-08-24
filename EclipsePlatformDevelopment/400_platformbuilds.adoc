@@ -3,159 +3,79 @@
 	
 
 === Building the Eclipse IDE
-		<indexterm>
-			<primary>Eclipse IDE</primary>
-			<secondary>custom build</secondary>
-		</indexterm>
-		
-			Eclipse uses a Maven based build system for automated build
-			using the Maven Tycho plug-in. Using this build
-			system you can create your custom build of the
-			Eclipse IDE. If you building the Eclipse IDE from the current master
-			branch you get an
-			IDE
-			based
-			on
-			the latest developments of the Eclipse development team.
-		
-		
-			This effort is
-			part of the
-			Common Build
-			Infrastructure (CBI) project which provide tools to simplify and
-			standardize the
-			Eclipse build process.
-		
-		
-			The
-			results of
-			this
-			build
-			are archive
-			files for the different
-			platforms,
-			which include
-			everything to run an Eclipse IDE.
-		
+(((Eclipse IDE build)))
 
-	
+Eclipse uses a Maven based build system for automated builds using the Maven Tycho plug-in. 
+Using this build system, you can create your custom build of the Eclipse IDE. 
+If you building the Eclipse IDE from the current master branch you get an IDE based on the latest developments of the Eclipse development team.
+
+The results of an Tycho build are archive files for the different platforms, which include everything to run an Eclipse IDE.
+
 
 === Requirements
-		
-			As the build continuously changes, the
-			results
-			and
-			requirement of
-			the
-			build might be slightly changed at the time you
-			read
-			this. See
-			<xref linkend="buildeclipse_additions_questions" />
-			for finding additional information.
-		
-		
-			Depending on your network connection and your machine power the build of the Eclipse IDE takes around 2 hours on
-			a Core i5 machine with
-			SSD, so of course time is required for this.
-			Also, approximately 25
-			Gigs
-			of free space and 4 Gigs
-			of RAM are required on the
-			hardware-side.
-			Building of an Eclipse IDE
-			is possible on Windows, OS X
-			and Linux
-			based
-			distributions. This tutorial is tested with Linux.
-		
-		
-			On the software-side the following software is required:
-			<itemizedlist>
-				*Git
-				*Maven Version 3.3.1
-				*Oracle 1.8 JDK or higher
-			
-		
 
-	
+As the build continuously changes, the results and requirement of the build might be slightly changed at the time you read this. 
+See <<buildeclipse_additions_questions>> for finding additional information.
 
 
-=== Cloning the SDK repository
-		
-			You download the newest version of the source code by cloning
-			the
-			following
-			repository
-			and it's submodules via Git.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clone.txt[]
+Depending on your network connection and your machine power the build of the Eclipse IDE takes around 2 hours on
+a Core i5 machine with
+SSD, so of course time is required for this.
+Also, approximately 25
+Gigs
+of free space and 4 Gigs
+of RAM are required on the
+hardware-side.
+Building of an Eclipse IDE
+is possible on Windows, OS X
+and Linux
+based
+distributions. 
+This tutorial is tested with Linux.
+
+
+On the software-side the following software is required:
+
+* Git
+* Maven Version 3.3.1
+* Oracle 1.8 JDK or higher
+
+
+=== Building the Eclipse IDE from source
+
+You download the newest version of the source code by cloning the following repository and it's submodules via Git.
+Afterwards you can start a build.
+
+[source,console]
 ----
-		
-	
-
-
-
-=== Building the Eclipse IDE
-
-		You start the build with the following command.  
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/build.txt[]
+git clone -b master 
+   --recursive git://git.eclipse.org/gitroot/platform/eclipse.platform.releng.aggregator.git
+mvn clean verify
 ----
-		
-		
-			If you receive
-			`java.lang.OutOfMemoryError`
-			error during the Maven build, you should increase the memory which is available for the build.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_memory.txt[]
+
+If you receive `java.lang.OutOfMemoryError` error during the Maven build, you should increase the memory which is available for the build.
+
+[source,console]
 ----
-		
-		
-			If the build is successful, the Eclipse SDK is packaged as archive
-			files
-			for all supported platforms. These packages
-			can be found in the
-			Git
-			repository in the following folder:
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/path_product.txt[]
+export MAVEN_OPTS="-Xmx2048m"
 ----
-		
-	
+
+
+If the build is successful, the Eclipse SDK is packaged as archive files for all supported platforms. 
+These packages can be found in the Git repository in the eclipse.platform.releng.tychoeclipsebuilder/sdk/target/products/* folder:
 
 
 === Cleanup before the next build
-		
-			To ensure that the repository is clean and up to date we execute
-			the following Git commands.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/clean.txt[]
+
+To ensure that the repository is clean and up to date we execute the following Git commands.
+
+[source,console]
 ----
-		
-		
-			The build requires that the version numbers of each single
-			Maven artifacts and it's Eclipse plug-ins are in
-			sync. But sometimes
-			(this is rare these days)
-			developers forget to update the Maven
-			version
-			numbers. In this case the
-			build complains about a version
-			mismatch. Run the following command to correct
-			existing
-			inconsistencies.
-		
-		
-			<programlisting language="bourne">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ide/maven_update_pom.txt[]
+git submodule foreach git clean -f -d -x
+git submodule foreach git reset --hard HEAD
+git clean -f -d -x
+git reset --hard HEAD
 ----
-		
+
 	
 

@@ -17,15 +17,13 @@ If case you do not want to contribute code, there are other ways of contributing
 
 === User interface guidelines
 		
-Eclipse has a description for its user interface guidelines. These
-can be found under the following URL: https://wiki.eclipse.org/User_Interface_Guidelines[Wiki about UI guidelines].
+Eclipse has a description for its user interface guidelines. See https://wiki.eclipse.org/User_Interface_Guidelines[Eclpise UI guidelines Wiki].
 		
 It is not expected that you read this UI guide completely.
 But in case you want to check what the Eclipse way of doing things is, you can have a look at this (old but still valid) description.
 	
 
 === Users, Contributors and Committers
-		
 		
 The Eclipse project distinguishes between the following group of people:
 
@@ -39,104 +37,35 @@ Users also report bugs and issue feature requests in Eclipse projects they are u
 Everyone has read access to the code repositories hosted at eclipse.org.
 		
 === Relevant Eclipse projects
-        Eclipse hosts multiple projects but several projects are critical for the development of the Eclipse IDE and RCP
-            applications. These are described here.
+
+Eclipse hosts multiple projects but several projects are critical for the development of the Eclipse IDE and RCP applications. 
+These are described here.
         
-            <title>The Eclipse Platform project
-            <indexterm>
-                <primary>Platform project</primary>
-            </indexterm>
-            
-                The
-                _Eclipse Platform_
-                project provides the core frameworks and
-                services upon which all
-                Eclipse based applications are created. It also
-                provides the runtime
-                in which
-                Eclipse components are loaded, integrated, and
-                executed. The
-                primary purpose of
-                the
-                _Eclipse Platform_
-                project is to enable
-                other developers
-                to easily
-                build and deliver
-                integrated tools and applications.
-            
-        
+==== The Eclipse Platform project
+(((Platform project)))
+
+The _Eclipse Platform_ project provides the core frameworks and services upon which all Eclipse based applications are created. 
+It also provides the runtime in which Eclipse components are loaded, integrated, and executed. 
+The primary purpose of the _Eclipse Platform_ project is to enable other developers to easily build and deliver integrated tools and applications.
+
+==== The Eclipse Plug-in Development Environment (PDE)
+(((PDE))) ((((Plug-in Development Environment)))
+
+The Eclipse Plug-in Development Environment (PDE) project provides wizards for creating Eclipse RCP applications and plug-ins, editors and other tools to develop Eclipse plug-ins.
 
         
-            <title>The Eclipse Plug-in Development Environment (PDE)
-            <indexterm>
-                <primary>PDE</primary>
-            </indexterm>
-            <indexterm>
-                <primary>Plug-in Development Environment</primary>
-            </indexterm>
-            The Eclipse Plug-in Development Environment (PDE) project
-                provides wizards for creating Eclipse RCP applications
-                and plug-ins, editors and other tools to develop
-                Eclipse
-                plug-ins.
-            
-        
-        
-            <title>The Eclipse e4 project
-            <indexterm>
-                <primary>e4 project</primary>
-            </indexterm>
-            
-                _Eclipse e4_
-                is the name used for the
-                _Eclipse Platform_
-                incubator project. This
-                incubator
-                is used for exploratory projects
-                relating to improving the
-                Eclipse
-                Platform.
-            
-            
+==== The Eclipse e4 project
+((((e4 project)))
 
-                The
-                e4 project includes several technology evaluations.
-                Some of
-                these
-                evaluations have
-                been ported
-                back to
-                the core Eclipse
-                framework.
-                All
-                functionalities described
-                in
-                this
-                document are
-                part of the
-                official
-                Eclipse
-                release,
-                except
-                the
-                _Eclipse e4 tooling_
-                project.
-            
+_Eclipse e4_ is the name used for the _Eclipse Platform_ incubator project.
+This incubator is used for exploratory projects relating to improving the Eclipse Platform.
 
-            
-                The
-                _Eclipse e4 tooling_
-                project
-                provides tools for developing
-                Eclipse 4 applications. They are very
-                useful, but have not yet been added
-                to
-                the
-                Eclipse platform project.
-            
-        
 
-    
+The e4 project includes several technology evaluations.
+Some of these evaluations have been ported back to the core Eclipse framework.
+All functionalities described in this document are part of the official Eclipse release, except the _Eclipse e4 tooling_ project.
+
+The _Eclipse e4 tooling_ project provides tools for developing Eclipse 4 applications. 
+They are very useful, but have not yet been added to any main Eclipse  project.
 	
 

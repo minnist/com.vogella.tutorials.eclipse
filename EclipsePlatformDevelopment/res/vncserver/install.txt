@@ -1,5 +1,3 @@
-# install the server 
+# install the virtual server and client 
 sudo apt-get install vnc4server
-
-# optionally install the client
-sudo apt-get install xtightvncviewer 
+sudo apt-get install xtightvncviewer # <1>

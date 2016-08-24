@@ -1,3 +1,4 @@
+<<<<<<< Upstream, based on branch 'master' of https://github.com/vogellacompany/com.vogella.tutorials.eclipse
 == Eclipse framework and model events - Tutorial
 :linkcss:
 :sectnums:                                                          
@@ -25,3 +26,31 @@ include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
 
 include::006_resources.adoc[]
+=======
+= Eclipse framework and model events - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+(c) 2009, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4ModelEvents
+
+[abstract]
+Eclipse application model events.
+This article describes how you can react on changes of the application model.
+			
+include::010_overview.adoc[]
+include::022_examplepartactivation.adoc[]
+include::030_event_information.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_more_convenience_methods.adoc[]
+include::050_exercise_perspective_switch.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+>>>>>>> 9c10de0 Eclipse4Model Events conversion

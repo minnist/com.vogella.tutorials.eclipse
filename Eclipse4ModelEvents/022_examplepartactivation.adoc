@@ -1,4 +1,5 @@
 == Example: the part activation event
+<<<<<<< Upstream, based on branch 'master' of https://github.com/vogellacompany/com.vogella.tutorials.eclipse
 
 A topic, which is fired by Eclipse is the `UIEvents.UILifeCycle.ACTIVATE` , which is fired every time a part is activated.
 
@@ -10,3 +11,30 @@ include::./examples/activate.java[]
 The `Event` class contains properties like `EventTags.ELEMENT`, from which we can receive the element, which is concerned in this event.
 But there are more and therefore you should have a look at the `UIEvents` class and its internal interfaces like `UIEvents.EventTags`.
 
+=======
+	
+A topic, which is fired by Eclipse is the
+`UIEvents.UILifeCycle.ACTIVATE`
+, which is fired every time a
+part
+is activated.
+	
+[source,java]
+----
+include::res/activate.java[]
+----
+	
+The
+`Event`
+class contains properties like
+`EventTags.ELEMENT`
+, from which we can receive the element, which is concerned
+in this event. But there are more and therefore you should
+have
+a look at the
+`UIEvents`
+class and its internal interfaces like
+`UIEvents.EventTags`
+.
+	
+>>>>>>> 9c10de0 Eclipse4Model Events conversion

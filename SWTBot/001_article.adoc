@@ -7,7 +7,7 @@
 Lars Vogel, Simon Scholz (c) 2010, 2016 vogella GmbH
 Version 0.3, 06.07.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: SWTBot
 
 [abstract]
 This tutorial describes how to use SWTBot to test Eclipse RCP applications. 

@@ -102,7 +102,7 @@ The definition of gradients is demonstrated in the following listing.
 
 [source, css]
 ----
-include::res/css/gradient.txt[]
+include::res/css/gradient.css[]
 ----
 
 If you use the optional percentage in the definition, then the color change will be done after the defined percentage. 

@@ -1,0 +1,9 @@
+Text {
+	color: COLOR-CYAN;
+	background-color: COLOR-WIDGET-BACKGROUND;
+}
+
+.MPart .InfoPane {
+	color: COLOR-INFO-FOREGROUND;
+	background-color: COLOR-INFO-BACKGROUND;
+}

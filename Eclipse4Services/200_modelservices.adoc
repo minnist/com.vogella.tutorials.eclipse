@@ -1,0 +1,43 @@
+== Model Service
+
+=== What is the model service?
+
+The _model service_ gives you access to the application model at runtime and allows you to modify it.
+For example, you can add and remove model elements.
+It also contains functionality to clone application model snippets which can be added to the application.
+
+=== How to access the model service
+
+This service can be accessed via dependency injection.
+For example, via field injection with the following statement:
+
+`@Inject EModelService modelService;`
+
+=== Cloning elements or snippets
+
+In the application model you can create `Snippet` model elements which can be used to create model objects at runtime.
+It is also possible to copy existing application model elements via the model service.
+
+You can use the `cloneElement()` and `cloneSnippet()` methods of the model service to copy an existing element or snippet.
+The resulting object can be assigned to another model element.
+
+=== Searching model elements
+
+The `findElements()` method allows you to search for specific model elements.
+The following code shows an example for using the `findElements()` method.
+
+[source,java]
+----
+include::res/emodelservice/ModelServiceExampleHandler.java[]
+----
+
+Here is an example of how to find the perspective for a part.
+
+[source,java]
+----
+include::res/emodelservice/FindPerspectiveHandler.java[]
+----
+
+You can also use the `findElements` method with a fifth parameter which allows you to specify additional search flags, e.g., IN_ACTIVE_PERSPECTIVE, OUTSIDE_PERSPECTIVE, IN_ANY_PERSPECTIVE.
+See the Javadoc of the `findElements` method for further details.
+

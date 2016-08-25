@@ -1,0 +1,65 @@
+== Implementing editor like behavior
+
+=== Parts which behave similar to editors
+
+An editor is a part which requires that the user triggers a save operation to persist data changes in the editor.
+Editors that contain data, which can be saved, are typically called _dirty_.
+
+The part service allows you to save dirty parts.
+Every part can mark itself as dirty, hence behave like an editor.
+
+=== MDirtyable and @Persist
+
+A part has the `MDirtyable` attribute 	which indicates that it can be marked as dirty.
+Dirty indicates that the part contains data which has been changed but not yet saved.
+The `MDirtyable` object can get injected into a part.
+
+You can use the `setDirty(boolean)` method to mark the part as dirty.
+
+The following snippet demonstrates how to use the `MDirtyable` model property in a part to flag it as dirty after a button was pressed.
+
+[source,java]
+----
+include::res/model/dirty.java[]
+----
+
+The part service allows you to query the dirty parts and to call a method annotated with _@Persist_ on the dirty parts.
+This method saves the data of the part and sets the dirty flag back to false if the save operation was successful.
+
+[source,java]
+----
+include::res/dirty/persists.java[]
+----
+
+NOTE:Every part is responsible for saving itself.
+Hence every part which behaves like an editor must have one method annotated with `@Persist`.
+
+=== Use part service to trigger save in editors
+
+The part service allows you to trigger the `@Persist` method on the dirty parts via the `saveAll()` method.
+
+The `EPartService` searches in each part which is marked as dirty for a method annotated with `@Persist`.
+This method is called by the framework and has to save the data which the editor holds.
+If saving the data was successful it should call the `setDirty(false)` method on the `MDirtyable` object.
+
+The following example demonstrates that.
+
+[source,java]
+----
+include::res/partservice/SaveHandler.java[]
+----
+
+=== MPart and multiple editors
+
+You can use the _MPart_ model element to create multiple editors.
+Every model element can get persisted data assigned which can be accessed via the `getPersistedState()` method.
+
+In its @PostConstruct method the implementation class can get the `MPart` injected and access its persisted state.
+This information can be used to configure the editor.
+
+=== MInputPart
+
+Eclipse used to have the `MInputPart` model element.
+This model element has been deprecated and should not be used anymore.
+Use the approach described in <xref linkend="editorinput" />.
+

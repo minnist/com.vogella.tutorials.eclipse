@@ -1,0 +1,68 @@
+== Eclipse platform services
+
+=== What are Eclipse platform services?
+
+Services are software components (based on an interface or a class) which provide functionality.
+The Eclipse platform defines several services.
+The classes which are created based on the application model can access these services via dependency injection.
+
+To use an Eclipse service you specify the service dependency via an `@Inject` annotation and the Eclipse framework injects this component into your object.
+
+The typical naming convention for Eclipse service interfaces is to start with an _E_ and end with _Service_ e.g. _E*Service_.
+
+=== Overview of the available platform services
+
+The following table gives an overview of the most important available platform services.
+
+=== Platform services
+
+Platform services
+|===
+|Service |Description
+
+|EModelService
+|Used to search for elements in the model, create new model elements, clone existing snippets and insert new elements into the runtime application model.
+
+|ESelectionService
+|Used to retrieve and set the current active selection in the user interface.
+
+|ECommandService
+|Gives access to existing commands and allows you to create and change commands.
+
+|EHandlerService
+|Allows you to access, change and trigger handlers.
+
+|EPartService
+|Provides API to access and modify parts.
+It also allows you to switch perspectives and can be used to trigger that a method annotated with `@Persist` in dirty parts, i.e. if the corresponding part behaves like an editor.
+
+|IEventBroker
+|Provides functionality to send event data and to register for specified events and event topics.
+
+|EContextService
+|Activate and deactivate key bindings defined as `BindingContext` in the application model.
+The content referred to in this service is the `BindingContext` and not the `IEclipseContext`.
+
+|IThemeEngine
+|Allows to switch the styling of the application at runtime.
+
+|EMenuService
+|Registers a popup menu (MPopupMenu) for a control.
+|===
+
+Other available services are:
+
+* org.eclipse.e4.core.services.Adapter - An adapter can adapt an object to the specified type, allowing clients to request domain-specific behavior for an object. It integrates `IAdaptable` and `IAdapterManager`.
+See the http://wiki.eclipse.org/E4/EAS/Adapting_Objects Adapter wiki for details.
+
+* org.eclipse.e4.core.services.Logger - Provides logging functionality
+
+* org.eclipse.jface.window.IShellProvider - allows access to a `Shell`, depends on SWT.
+
+=== How are Eclipse platform services implemented?
+
+Usually services have two parts: the interface definition and the implementation.
+How these two are linked is defined by a context function, an OSGi service or plain context value setting (`IEclipseContext`).
+Please note that there can be more than one service implementation for an interface.
+
+

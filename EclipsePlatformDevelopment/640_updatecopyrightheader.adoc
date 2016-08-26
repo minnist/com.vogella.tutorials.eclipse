@@ -1,7 +1,22 @@
-== Updating the copyright header of a source file
+== Tips and tricks
+
+=== "Out-of-office" for Gerrit and Bugzilla
+
+A trick to show other committers and contributors that you are on vacation. 
+Gerrit and Bugzilla do not offer that out of the box, but as a nice trick you can change your last name for Eclipse.org to show that.
+
+Go to https://dev.eclipse.org/site_login/myaccount.php#open_tab_profile[Eclipse user profile] and click btn:[edit] for your last name.
+
+image::gerrit-out-of-office10.png[Gerrit out of office]
+
+Here is an example how this looks like (using another user).
+
+image::gerrit-out-of-office20.png[Gerrit out of office]
 
 
-=== Why updating the copyright header of a changed file?
+
+
+=== Updating the copyright header of a source file
 (((Copyright header update)))
 
 The Eclipse project allows you optionally to update the last changed date in the copyright header, if you change the file. 

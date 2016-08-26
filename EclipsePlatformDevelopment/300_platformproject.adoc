@@ -21,84 +21,32 @@ It also serves as a testing ground for new ideas.
 
 === The Eclipse platform projects home pages and Git repositories
 
-The following table lists the home pages of these projects along with the developer pages, which list the Git (and
-Gerrit) repositories.
-<table frame='all'>
-=== Eclipse projects
-	<tgroup cols='3' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*" />
-<colspec colname='c2' colwidth="2*" />
-<colspec colname='c3' colwidth="3*" />
-<thead>
-<row>
-	<entry>Project</entry>
-	<entry>Home page</entry>
-	<entry>Developer pages with Git repositories </entry>
-</row>
-</thead>
-<tbody>
-<row>
-	<entry>Platform</entry>
-	<entry>
-http://www.eclipse.org/eclipse/">
-Eclipse platform project
+The following table lists the home pages of these projects along with the developer pages, which list the Git (and Gerrit) repositories.
 
-	</entry>
-	<entry>
-Not relevant, as platform is only the top project
-	</entry>
-</row>
-<row>
-	<entry>Platform UI</entry>
-	<entry>
-https://www.eclipse.org/eclipse/platform-ui/">
-Eclipse platform UI project
 
-	</entry>
-	<entry>
-https://projects.eclipse.org/projects/eclipse.platform.ui/developer"> Platform UI developer page
+.Eclipse projects
+[cols="1,2,3"]
+|===
+|Project |Home page | Developer pages with Git repositories
 
-	</entry>
-</row>
-<row>
-	<entry>Java development tools (JDT)</entry>
-	<entry>
-http://www.eclipse.org/jdt">
-JDT project
+|Platform
+|http://www.eclipse.org/eclipse/
+|Not relevant, as platform is only the top project
 
-	</entry>
-	<entry>
-https://projects.eclipse.org/projects/eclipse.jdt.ui/developer"> JDT UI developer page
-and
-https://projects.eclipse.org/projects/eclipse.jdt.core/developer"> JDT core developer page
-	</entry>
-</row>
-<row>
-	<entry>Plug-in Development Environment (PDE)</entry>
-	<entry>
-http://www.eclipse.org/pde/">
-PDE project
+|Platform UI
+|https://www.eclipse.org/eclipse/platform-ui/
+|https://projects.eclipse.org/projects/eclipse.platform.ui/developer
 
-	</entry>
-	<entry>
-https://projects.eclipse.org/projects/eclipse.pde/developer">PDE developer page
-	</entry>
+|Java development tools (JDT)
+|http://www.eclipse.org/jdt
+|https://projects.eclipse.org/projects/eclipse.jdt.ui/developer
+https://projects.eclipse.org/projects/eclipse.jdt.core/developer
 
-</row>
-<row>
-	<entry>e4</entry>
-	<entry>
-http://www.eclipse.org/e4/">
-e4 project
+|Plug-in Development Environment (PDE)
+|http://www.eclipse.org/pde
+|https://projects.eclipse.org/projects/eclipse.pde/developer
 
-	</entry>
-	<entry>
-https://projects.eclipse.org/projects/eclipse.e4/developer">e4 developer page
-	</entry>
-</row>
-</tbody>
-	</tgroup>
-</table>
+|===
 
 	
 

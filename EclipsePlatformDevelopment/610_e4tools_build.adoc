@@ -1,82 +1,21 @@
 == Information about the e4 tools
 
+=== e4 tools
 
-=== e4 tools and committer
-The e4 tools project provides tools for developing Eclipse 4
-	based applications. The following follows more or less the same
-	guidelines as the Eclipse platform team.
+The e4 tools project provides tools for developing Eclipse 4 based applications. 
+The following follows more or less the same guidelines as the Eclipse platform team.
 
-	
+The e4 tools are also available via their `eclipse.platform.ui.tools` Git repository.
 
-=== Git repository for the e4 tools
-
-	The e4 tools are also available via their Git repository.
-
-
-	<programlisting language="bourne">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-	parse="text" href="./examples/source/e4tools.txt[]
-----
-
-	
-
-=== Infos about the e4 tools
-
-	Most e4 tools project contain a
-	_README.md_
-	file which describes their usage and important classes.
-
-	
+Some projects in this reposiotory contain a _README.md_ file which describes their usage and important classes.
 
 
 === Adding an editor for a custom model elements
 
-	The
-	`org.eclipse.e4.tools.emf.ui`
-	plug-in defines the
-	`org.eclipse.e4.tools.emf.ui.editors`
-	extension point, which allows registering editors for new model
-	elements.
-
-	
+The `org.eclipse.e4.tools.emf.ui` plug-in defines the `org.eclipse.e4.tools.emf.ui.editors` extension point, which allows registering editors for new model elements.
 
 
-=== Building the e4 tools
-
-	You can build
-	the e4 tools
-	locally via Maven Tycho. If you have
-	Maven installed on
-	your machine, the build process is trivial.
-
-Clone the e4 tools project with the following command.
-
-	<programlisting language="bourne">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-	parse="text" href="./examples/build/releng[]
-----
+You can build the e4 tools via Maven Tycho, see the 'README.md' file in the repository for instructions.
 
 
-
-	Afterwards, you can build the e4 tools via Maven on the command
-	line.
-
-
-	<programlisting language="bourne">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-	parse="text" href="./examples/build/tools[]
-----
-
-
-	After the build finishes successfully, you find a p2 update site
-	in the following
-	folder.
-
-
-	<programlisting language="bourne">
-<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-	parse="text" href="./examples/build/target[]
-----
-
-	
 

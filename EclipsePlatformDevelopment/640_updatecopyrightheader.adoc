@@ -9,10 +9,13 @@ Go to https://dev.eclipse.org/site_login/myaccount.php#open_tab_profile[Eclipse 
 
 image::gerrit-out-of-office10.png[Gerrit out of office]
 
+After you changed your last name, press btn[Update Account].
+
 Here is an example how this looks like (using another user).
 
 image::gerrit-out-of-office20.png[Gerrit out of office]
 
+TIP: Remember to reset your name, after you returned from vacation.
 
 
 

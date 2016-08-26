@@ -11,7 +11,7 @@
 				`com.example.e4.rcp.todo`
 				plug-in. Skip this step in this case.
 			
-		</note>
+		
 		
 			Add the following
 			plug-ins as dependency to the
@@ -146,7 +146,7 @@ include::res/dirty/SaveAllHandler.java[]
 			This exercise is optional. It is a repetition of the usage of
 				dialogs.
 			
-		</note>
+		
 		
 
 		

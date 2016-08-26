@@ -27,7 +27,7 @@ image::egitcommitdialog10.png"/>
 		The commit dialog does not allow committing the removal of a
 			file, since the commit dialog ignores the Git index.
 		
-	</note>
+	
 
 
 

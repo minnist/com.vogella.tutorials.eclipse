@@ -97,7 +97,7 @@ image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
 				interface, which should should be used for implementing these custom
 				debug model elements.
 			
-		</note>
+		
 	
 
 === Debug Model Communication

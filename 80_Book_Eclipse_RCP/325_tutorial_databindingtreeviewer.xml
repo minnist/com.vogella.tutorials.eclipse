@@ -23,7 +23,7 @@
 				the
 				popup menu, a filter or more.
 			
-		</tip>
+		
 		
 			Before changing the actual
 			`TagOverviewPart`
@@ -112,7 +112,7 @@ include::res/databinding/TagOverviewPart.java[]
 				<xref linkend="tutorial_usingeselectionservice" />
 				.
 			
-		</note>
+		
 	
 
 </chapter>

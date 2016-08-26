@@ -90,7 +90,7 @@ include::res/databinding/Todo.java[]
 				`TodoDetailsPart`
 				class.
 			
-		</warning>
+		
 
 	
 
@@ -143,6 +143,6 @@ image::newtodo_wizard20.png[,pdfwidth=60%]
 				databinding. This will be change
 				in a later exercise.
 			
-		</note>
+		
 	
 </chapter>

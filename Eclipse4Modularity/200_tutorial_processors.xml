@@ -83,7 +83,7 @@
 				_Application.e4xmi_
 				file, contains "exit" in its ID.
 			
-		</warning>
+		
 
 	
 
@@ -134,7 +134,7 @@ image::processor10.png" />
 				_File_
 				menu in the main application model.
 			
-		</warning>
+		
 
 		<warning>
 			
@@ -143,7 +143,7 @@ image::processor10.png" />
 				value in the processor, otherwise your menu is not injected into the
 				processor.
 			
-		</warning>
+		
 
 	
 

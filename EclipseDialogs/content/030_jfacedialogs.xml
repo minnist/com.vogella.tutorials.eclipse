@@ -20,7 +20,7 @@
 				native platform semantics for things like the button
 				order.
 			
-		</note>
+		
 	
 
 
@@ -176,7 +176,7 @@ include::res/jface/MyDialog.java[]
 				`configureShell()`
 				method.
 			
-		</tip>
+		
 		If you open this dialog it looks similar to the following
 			screenshot.
 		

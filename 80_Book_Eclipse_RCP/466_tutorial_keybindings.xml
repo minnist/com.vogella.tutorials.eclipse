@@ -50,7 +50,7 @@ image::exercise_keybindings20.png"
 			The name attribute of a binding context entry is not allowed to
 				be empty.
 			
-		</warning>
+		
 	
 
 === Create key bindings for a BindingContext

@@ -290,7 +290,7 @@ include::res/launchproblems/dependency.txt[]
 					</textobject>
 				
 			
-		</tip>
+		
 
 		
 			Avoid fixing problems with dependencies in the run configuration

@@ -228,7 +228,7 @@ image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
 				into the local context of the
 				part.
 			
-		</note>
+		
 
 		After the initial creation of the Eclipse context hierarchy, the
 			framework or the application code can change the

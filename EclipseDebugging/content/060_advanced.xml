@@ -228,7 +228,7 @@ image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 			Remote debugging requires that you have the source code of the
 				application which is debugged available in your Eclipse IDE.
 			
-		</note>
+		
 
 	
 
@@ -262,7 +262,7 @@ image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 				example if you write a entry to the database and afterward drop to a
 				previous frame, this entry is still in the database.
 			
-		</note>
+		
 		
 			The following screenshot depicts such a reset. If you restart your
 			`for`

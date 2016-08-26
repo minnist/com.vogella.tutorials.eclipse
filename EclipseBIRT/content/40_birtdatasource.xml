@@ -12,7 +12,7 @@
 			perspective and select the "Data Explorer" View.
 		
 			TIP: You have to select your report to display the content of the
-				datasource view.</tip>
+				datasource view.
 		
 		
 			Create a new datasource, named "srcStocks" in your report.
@@ -61,7 +61,7 @@ image::dataset30.gif" format="gif" />
 			Java class name.
 		
 			TIP: In case you do not see the script please node that the editor
-				for the report has several tab. One of it is labeled "source".</tip>
+				for the report has several tab. One of it is labeled "source".
 		
 		
 image::javascript10.gif" format="gif" />

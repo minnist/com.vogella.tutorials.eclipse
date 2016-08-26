@@ -34,7 +34,7 @@ image::wizarddeploy20.png[Selecting the output directory in the product export
 			The exported directory should be empty. If you export twice to
 				the same directory, delete its content, otherwise the export fails
 				with a dependency conflict. 
-		</warning>
+		
 	
 
 === Validate that the exported application starts
@@ -107,7 +107,7 @@ image::splash_exercise10.png" scale="50[Adding a splash bmp file,pdfwidth=60%]
 				Eclipse
 				will not use your splash screen.
 			
-		</warning>
+		
 		
 			On the
 			_Splash_
@@ -153,7 +153,7 @@ image::addsplashtobuildproperties10.png"
 				<xref linkend="exportproblems" />
 				for details.
 			
-		</warning>
+		
 	
 
 

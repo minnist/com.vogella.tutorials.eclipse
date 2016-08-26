@@ -33,7 +33,7 @@ include::res/ExampleProjectNature.java"/>
                     _Bundle-SymbolicName_ + _id_, which is
                 defined for the extension point. See _NATURE_ID_ in
                     `ExampleProductNature`.
-        </note>
+        
     
     <section>
         <title>Require a certain project nature as precondition

@@ -39,7 +39,7 @@
 					</textobject>
 				
 			
-		</tip>
+		
 
 		
 			The class provides access to your
@@ -89,6 +89,6 @@ include::res/server/TodoServiceFactory.java[]
 				to
 				export it.
 			
-		</note>
+		
 	
 

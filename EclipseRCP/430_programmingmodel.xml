@@ -264,7 +264,7 @@
 				`javax.annotation`
 				package anymore.
 			
-		</note>
+		
 		
 			In case your
 			`@PostConstruct`
@@ -294,7 +294,7 @@
 				`javax.annotation`
 				package and set the version to 1.0.0.
 			
-		</note>
+		
 	
 
 

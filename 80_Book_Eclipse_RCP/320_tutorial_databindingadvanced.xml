@@ -34,7 +34,7 @@
 				the
 				popup menu, a filter or more.
 			
-		</tip>
+		
 		
 [source,java]
 ----
@@ -55,7 +55,7 @@ include::res/databinding/TodoOverviewPart.java[]
 				methods anymore in your code. Use the text search to validate this
 				in case you are having problems.
 			
-		</warning>
+		
 
 
 	
@@ -74,7 +74,7 @@ include::res/databinding/TodoOverviewPart.java[]
 				<xref linkend="tutorial_usingeselectionservice" />
 				.
 			
-		</note>
+		
 	
 
 </chapter>

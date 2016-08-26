@@ -15,7 +15,7 @@
 				Maven Tycho support only p2 update sites,
 				it is recommended to use only these.
 			
-		</tip>
+		
 	
 		A target definition file can be created via
 		menu:
@@ -68,7 +68,7 @@ image::targetdefinition20.png"/>
 	
 	TIP:
 		Wait until the target platform is completely resolved before setting it as target platform.
-	</tip>
+	
 	
 	
 		All plug-ins you are planning to use in your application and test code must be included in the target definition. For example, if you want, for example, use SWTBot for unit tests, add

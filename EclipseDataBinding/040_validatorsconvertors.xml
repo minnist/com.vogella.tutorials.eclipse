@@ -196,7 +196,7 @@ include::res/snippets/validator.java[]
 				the wizard page's
 				completion state and its error message accordingly.
 			
-		</tip>
+		
 
 	
 

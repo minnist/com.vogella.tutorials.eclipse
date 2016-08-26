@@ -18,4 +18,4 @@
 		Defining a tab order for your controls is important to increase
 			the accessibility and to allow advanced users a quick navigation.
 		
-	</tip>
+	

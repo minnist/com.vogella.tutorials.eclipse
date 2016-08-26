@@ -25,7 +25,7 @@
 			Ensure to add the perspective to the existing
 				PerspectiveStack.
 			
-		</warning>
+		
 	
 
 === Create new menu entries
@@ -74,7 +74,7 @@ image::perspective_switchermenu10.png[Perspective switcher menu,pdfwidth=60%]
 === Using command parameters to define the perspective ID
 		TIP:
 			This exercise is optional
-		</tip>
+		
 
 		
 			Currently your perspective switcher only allows to switch

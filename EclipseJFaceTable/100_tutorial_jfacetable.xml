@@ -106,7 +106,7 @@ image::jfacetable10.gif" />
 					url="http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html"> advanced tutorial
 				.
 			
-		</note>
+		
 		
 			TIP:
 				Please note that we use icons for the married Status. If the
@@ -128,7 +128,7 @@ image::jfacetable10.gif" />
 				the
 				`setText()`
 				method.
-			</tip>
+			
 		
 	
 

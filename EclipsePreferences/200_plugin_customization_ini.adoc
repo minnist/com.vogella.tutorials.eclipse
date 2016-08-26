@@ -54,5 +54,5 @@ image::plugin_customization10.png"
 			_.pref_
 			.
 		
-	</tip>
+	
 

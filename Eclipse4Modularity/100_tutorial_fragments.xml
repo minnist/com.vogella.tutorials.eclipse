@@ -124,13 +124,13 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 				_plugin.xml_
 				file is generated.
 			
-		</tip>
+		
 		<warning>
 			At the time of this writing the wizard deletes existing content
 				in the plugin.xml, if you create a new fragment. This is a bug and
 				might already be solved once you read this.
 			
-		</warning>
+		
 
 		
 			On the
@@ -155,7 +155,7 @@ image::modelfragment_extensionpoint16.png"
 				extension point. Afterwards you the right mouse click to add a
 				fragment to it.
 			
-		</tip>
+		
 		
 			The resulting
 			plugin.xml
@@ -220,7 +220,7 @@ image::modelfragment10.png"/>
 				the correct model element to contribute
 				to.
 			
-		</warning>
+		
 		
 			You
 			also need to
@@ -335,7 +335,7 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 					</textobject>
 				
 			
-		</warning>
+		
 		
 			In your
 			_fragment.e4xmi_
@@ -398,7 +398,7 @@ image::fragment70.png"/>
 			Ensure that you added this new plug-in to your feature and
 				saved the changes.
 			
-		</warning>
+		
 	
 
 
@@ -411,7 +411,7 @@ image::fragment70.png"/>
 			Remember to start via the product to update the launch
 				configuration.
 			
-		</warning>
+		
 
 		
 			You should
@@ -438,7 +438,7 @@ image::fragment70.png"/>
 === Exercise: Contributing a part
 		NOTE:
 			This exercise is optional.
-		</note>
+		
 		
 			Define a new model fragment which
 			contributes a

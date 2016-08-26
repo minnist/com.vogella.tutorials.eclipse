@@ -68,7 +68,7 @@ include::res/progressreport/IsCancelCheck.java[]
 				better performance since the expensive
 				`isCanceled`
 				call is only done in case it is really necessary.
-			</note>
+			
 		
 	
 

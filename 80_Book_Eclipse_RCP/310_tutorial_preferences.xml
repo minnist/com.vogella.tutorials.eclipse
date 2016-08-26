@@ -55,7 +55,7 @@ include::res/preferences/PreferenceConstants.java[]
 === Using preferences in the life cycle class
 		TIP:
 			This exercise is optional.
-		</tip>
+		
 		
 			Extend the
 			`Manager`
@@ -105,7 +105,7 @@ include::res/preferences/Manager.java[]
 					</textobject>
 				
 			
-		</tip>
+		
 	
 
 

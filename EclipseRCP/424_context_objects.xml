@@ -179,7 +179,7 @@ include::res/active/receiveActiveShell.java[]
 				context of
 				the application.
 			
-		</note>
+		
 
 	
 
@@ -240,7 +240,7 @@ include::res/active/MyOwnClass.java[]
 				this
 				annotation.
 			
-		</note>
+		
 
 	
 

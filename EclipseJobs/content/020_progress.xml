@@ -151,7 +151,7 @@ include::res/progressbar/setProgressMonitor.java[]
 				interface via the
 				event service.
 			
-		</tip>
+		
 
 	
 

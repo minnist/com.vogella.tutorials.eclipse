@@ -4,7 +4,7 @@
 === Create project and use the Eclipse selection service
 		NOTE:
 			This exercise is optional.
-		</note>
+		
 		
 			Create a new Eclipse 4 RCP application using the wizard and
 			ensure that the

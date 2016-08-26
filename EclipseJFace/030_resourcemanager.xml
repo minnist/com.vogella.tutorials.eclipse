@@ -111,7 +111,7 @@
 				`ResourceManager`
 				yourself.
 			
-		</warning>
+		
 	
 	
 		In general you should always use a JFace ResouceManager in order

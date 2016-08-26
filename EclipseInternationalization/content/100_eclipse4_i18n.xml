@@ -122,7 +122,7 @@ include::res/eclipse4/Usage.java[]
 					injection in the context of a message
 					object.
 				
-			</note>
+			
 
 		
 
@@ -144,7 +144,7 @@ include::res/eclipse4/Usage.java[]
 				`TranslationService.LOCALE`
 				key was changed from String to Locale in Eclipse 4.4.2.
 			
-		</note>
+		
 
 
 		

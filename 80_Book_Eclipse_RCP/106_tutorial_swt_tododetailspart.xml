@@ -63,7 +63,7 @@ include::res/focus/onFocus.java[]
 				method is only called once
 				if the part is activated by the user.
 			
-		</note>
+		
 
 		
 			Ensure that you also put the focus on an SWT widget in your

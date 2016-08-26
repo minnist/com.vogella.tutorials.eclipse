@@ -46,7 +46,7 @@
 				into Tomcat. Download this lib from
 				http://commons.apache.org/logging/">http://commons.apache.org/logging/
 				and put the jars into the lib folder of Tomcat.
-			</tip>
+			
 		
 		 The Birt example should be available under
 			http://localhost:8080/birt/.If you see something like this, your
@@ -97,6 +97,6 @@ image::SNAG-0043.gif" format="gif" />
 				) . Copy the iText.jar in
 				"/birt-viewer/WEB-INF/platform/plugins/com.lowagie.itext/lib". Now
 				restart the Tomcat.
-			</tip>
+			
 		
 	

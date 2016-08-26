@@ -44,7 +44,7 @@ Version 0.3, 06.07.2016
 						</textobject>
 					
 				
-			</note>
+			
 		
 	
 
@@ -68,7 +68,7 @@ include::res/ExampleDebugElement.java[]
 					necessary to use the plug-in's id to make everything work
 					correctly.
 				
-			</note>
+			
 		
 	
 

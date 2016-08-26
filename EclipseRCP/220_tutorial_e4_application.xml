@@ -165,7 +165,7 @@ image::training_product34.png[Feature project,pdfwidth=60%]
 				_Dependencies_
 				tab is wrong for this exercise.
 			
-		</warning>
+		
 	
 
 
@@ -235,7 +235,7 @@ image::e4_productfeature21.png[Adding the required features to your product,pdfw
 				on
 				features.
 			
-		</note>
+		
 	
 
 === Remove the version dependency from the features in the product
@@ -351,7 +351,7 @@ image::tutorial_product90.png" scale="35[Enter the data for the TrimmedWindow in
 				you configure your product to remove all the persisted changes from
 				the last run.
 			
-		</tip>
+		
 	
 
 

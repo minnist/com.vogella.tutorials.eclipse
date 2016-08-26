@@ -43,7 +43,7 @@ image::egit_rebase20.png"/>
 			_Branches_
 			node of the tree directly.
 		
-	</tip>
+	
 	
 		If the rebase was successful a dialog is shown. You have to resolve
 		rebase conflicts if they occur. After resolving them, select

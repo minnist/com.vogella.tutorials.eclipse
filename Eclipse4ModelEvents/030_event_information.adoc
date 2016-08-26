@@ -180,7 +180,7 @@ you'd rather have to think in a DOM(Document Object Model) manner, where
 are manipulated and
 fired within events.
 
-</note>
+
 
 A example for using the values of an attribute in the model is a listener for a
 perspective change.

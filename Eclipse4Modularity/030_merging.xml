@@ -32,7 +32,7 @@
 				parameter as a launch parameter. In most cases this is undesired behavior for an exported application and only used
 				during development.
 			
-		</tip>
+		
 	
 
 === Runtime application model
@@ -102,6 +102,6 @@
 				_clearPersistedState_
 				parameter to avoid the processing of user changes at startup.
 			
-		</note>
+		
 	
 

@@ -95,7 +95,7 @@ include::res/editor/EditorPart.java[]
 				exercise, the rest of your
 				application should still work fine.
 			
-		</tip>
+		
 		
 			This implementation uses the
 			`getPersistedState()`

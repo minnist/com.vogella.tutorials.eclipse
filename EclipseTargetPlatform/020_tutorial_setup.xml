@@ -140,6 +140,6 @@ image::tutorial_targetdefinition60.png[,pdfwidth=60%]
 		NOTE:
 			If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch
 				back to your definition. That sometimes solves target resolution issues.
-		</note>
+		
 	
 

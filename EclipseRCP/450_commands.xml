@@ -253,7 +253,7 @@ include::res/command/Example.java[]
 				ALWAYS get the required values injected as
 				parameters into your methods annotated with @Execute or @CanExecute.
 			
-		</warning>
+		
 
 	
 

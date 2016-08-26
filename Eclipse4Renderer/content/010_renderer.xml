@@ -162,7 +162,7 @@
 				re-written in JavaFX to work together with a
 				JavaFX Renderer.
 			
-		</tip>
+		
 		
 			The custom renderer factory is registered via the
 			`org.eclipse.core.runtime.products`

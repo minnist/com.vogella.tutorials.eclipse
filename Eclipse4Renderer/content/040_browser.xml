@@ -7,7 +7,7 @@
 		This example might not work on Linux, as the SWT browser widget
 			sometimes has issues on Linux.
 		
-	</warning>
+	
 	
 [source,java]
 ----
@@ -35,7 +35,7 @@ include::res/browser/MyRendererFactory.java[]
 			renderer to access for example tags at the parts to determine the
 			URLs which should be used.
 		
-	</note>
+	
 
 	
 image::stackrenderer20.png" scale="30" />
@@ -54,6 +54,6 @@ image::stackrenderer20.png" scale="30" />
 			file of your application plug-in, so that your application works
 			again as before. 
 		
-	</warning>
+	
 
 

@@ -181,7 +181,7 @@ include::res/snippets/namedfield.txt[]
 				<xref linkend="eclipse4_annotations" />
 				.
 			
-		</note>
+		
 	
 
 
@@ -285,5 +285,5 @@ include::res/snippets/namedfield.txt[]
 				object changes, it does not trigger a
 				re-injection.
 			
-		</note>
+		
 	

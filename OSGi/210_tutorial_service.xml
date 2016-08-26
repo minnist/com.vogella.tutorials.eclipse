@@ -47,7 +47,7 @@
 				_.services_
 				ending.
 			
-		</tip>
+		
 	
 
 === Define the dependencies in the service plug-in
@@ -111,7 +111,7 @@ include::res/server/MyTodoServiceImpl.java[]
 				your
 				feature project).
 			
-		</warning>
+		
 	
 
 

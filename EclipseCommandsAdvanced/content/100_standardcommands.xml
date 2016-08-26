@@ -31,7 +31,7 @@ image::standardcommand10.gif" />
 				in your menu. For example the
 				following made the reset perspective
 				and welcome command active.
-		</tip>
+		
 		
 		
 			<programlisting>
@@ -57,7 +57,7 @@ image::standardcommand10.gif" />
 				can you the
 				<ulink
 					url="http://www.vogella.com/tutorials/EclipseCodeAccess/article.html#pluginspy"> Eclipse Plugin Spy.
-			</tip>
+			
 		
 
 
@@ -75,7 +75,7 @@ image::standardcommand10.gif" />
 				special then the standard binding. To use for example
 				delete in several views with different handlers use "activeWhen"
 				with the variable "activePartId" and as the value your view id.
-			</tip>
+			
 		
 
 		 Create a new RCP application

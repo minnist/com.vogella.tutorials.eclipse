@@ -59,7 +59,7 @@ image::osgi_simpleplugin10.png"
 				<xref linkend="services_todo_constructor" />
 				section.
 			
-		</note>
+		
 	
 
 === Generate constructors
@@ -79,7 +79,7 @@ image::osgi_simpleplugin10.png"
 				required
 				in the following exercises.
 			
-		</warning>
+		
 	
 
 
@@ -95,7 +95,7 @@ image::osgi_simpleplugin10.png"
 			_id_
 			is final and therefore Eclipse creates only a getter. This is correct
 			and desired.
-		</note>
+		
 		
 image::osgi_model_settergetter10.png"
 						scale="40[Getter and setter generation,pdfwidth=60%]
@@ -146,7 +146,7 @@ include::res/datamodel/Todo.java[]
 				`HashMap`
 				but not found.
 			
-		</note>
+		
 	
 
 

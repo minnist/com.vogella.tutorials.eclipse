@@ -27,7 +27,7 @@ include::res/snippets/cansave.txt[]
 === Enable the deletion handler only if necessary
 		NOTE:
 			This exercise is optional.
-		</note>
+		
 		
 			Similar to
 			<xref linkend="tutorial_usingpartservice_save" />

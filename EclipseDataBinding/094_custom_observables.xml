@@ -51,7 +51,7 @@ include::res/custom_observable/CustomWidget.java[]
 				method, so that the widget may be
 				decorated.
 			
-		</note>
+		
 	
 	<section>
 === Directly implement IObservable

@@ -25,7 +25,7 @@
 	
 	
 		TIP: You probably need to correct the path and the bundle name on
-			your system. </tip>
+			your system. 
 	
 	 You can start then the bundle with start and the id.
 	
@@ -37,5 +37,5 @@ image::firstbundle70.png" />
 	
 		TIP:You can remove all installed bundles with the -clean
 			parameter.
-		</tip>
+		
 	

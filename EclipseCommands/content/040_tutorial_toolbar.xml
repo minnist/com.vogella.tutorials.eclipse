@@ -135,7 +135,7 @@ image::commanddropdown10.gif" />
 			"menu:referenceToMenuId"
 		
 			TIP:referenceToMenuId is the ID we used earlier in
-				the command.</tip>
+				the command.
 		
 		 Add your exiting command
 			"de.vogella.rcp.intro.commands.toolbar.Hello" two times to this menu.
@@ -157,6 +157,6 @@ image::commanddropdown30.gif" />
 		
 			TIP: Add the command "referenceToMenuId" to your existing view
 				toolbar contribution to get the drop-down menu also in your view.
-			</tip>
+			
 		
 	

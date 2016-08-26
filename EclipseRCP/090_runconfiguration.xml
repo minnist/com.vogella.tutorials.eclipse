@@ -24,7 +24,7 @@
 			If you are starting an Eclipse runtime IDE for testing, and clear the workspace location the next run will
 				prompt you to choose a workspace.
 			
-		</tip>
+		
 	
 
 === Reviewing run configurations
@@ -113,7 +113,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 				`System.getProperties("my.product.loglevel")`
 				.
 			
-		</tip>
+		
 
 		The following table lists several useful launch arguments.
 

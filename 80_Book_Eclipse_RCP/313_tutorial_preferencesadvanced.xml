@@ -15,7 +15,7 @@
 			We do not persists the password in this exercises, because
 				persisting passwords without encryption is a security risk.
 			
-		</note>
+		
 	
 
 === Using preferences in your handler
@@ -43,7 +43,7 @@ include::res/preferences/EnterCredentialsHandler.java[]
 			
 
 			
-		</note>
+		
 		NOTE:
 			
 				The
@@ -53,7 +53,7 @@ include::res/preferences/EnterCredentialsHandler.java[]
 				<xref linkend="e4overview_api" />
 				.
 			
-		</note>
+		
 
 		
 			For test purpose listen to preference changes in your playground

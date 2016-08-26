@@ -62,7 +62,7 @@ image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP applica
 				button on the detail page to add child elements to the selected
 				element.
 			
-		</tip>
+		
 
 		
 			After creating the perspective stack add a

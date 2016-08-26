@@ -30,7 +30,7 @@ include::res/dialog/ExitHandler.java" />
 			provided by an
 			`ExtendedObjectSupplier`.
 		
-	</warning>
+	
 
 	
 		Test your implementation. If you select the

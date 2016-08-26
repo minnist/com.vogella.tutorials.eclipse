@@ -87,7 +87,7 @@ image::firstbundle40.gif" />
 				via the osgi.bundles=reference\:file\ statement. This way you can
 				update your bundles in the running OSGi environment directly without
 				any deployment.
-			</tip>
+			
 		
 	
 

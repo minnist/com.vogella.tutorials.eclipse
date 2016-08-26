@@ -52,7 +52,7 @@
 				hence if you define a dependency to *.jface you can also use the
 				classes from *.swt.
 			
-		</note>
+		
 	
 
 === Ensure that OSGi DS service functionality is available
@@ -184,7 +184,7 @@ image::imageservice.png[Image on Label,pdfwidth=60%]
 				Using the existing run
 				configuration does not work.
 			
-		</warning>
+		
 	
 
 === Reviewing the implementation

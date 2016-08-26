@@ -105,7 +105,7 @@ image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 					</textobject>
 				
 			
-		</tip>
+		
 	
 
 
@@ -218,7 +218,7 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 				<emphasis>Show all changes in repository</emphasis>
 				(e) is selected.
 			
-		</tip>
+		
 	
 
 
@@ -268,7 +268,7 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 					</textobject>
 				
 			
-		</note>
+		
 	
 
 

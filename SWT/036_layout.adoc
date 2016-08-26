@@ -130,7 +130,7 @@
 				exception is thrown at
 				runtime.
 			
-		</warning>
+		
 		
 			The layout will be automatically calculated when the container is
 			displayed. You can tell a
@@ -152,7 +152,7 @@
 				data
 				object.
 			
-		</warning>
+		
 	
 
 === FillLayout
@@ -361,7 +361,7 @@ include::res/gridlayout/Constructor.java[]
 				`GridData`
 				objects. The Javadoc of this class contains several examples for it.
 			
-		</tip>
+		
 
 
 

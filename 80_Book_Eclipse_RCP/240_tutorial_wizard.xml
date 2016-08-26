@@ -37,7 +37,7 @@ include::res/wizards/TodoWizardPage1.java[]
 				framework. Therefore the above code calls the methods directly to
 				construct the user interface.
 			
-		</note>
+		
 		
 			Create the following class for the second page
 			of the wizard. It
@@ -54,7 +54,7 @@ include::res/wizards/TodoWizardPage1.java[]
 				`TodoWizard`
 				class which you create in the next step.
 			
-		</warning>
+		
 		
 [source,java]
 ----
@@ -121,7 +121,7 @@ include::res/wizards/ModifyListener.java[]
 				<xref linkend="databindingpart" />
 				you learn an easier way to do this.
 			
-		</note>
+		
 	
 
 === Adjust handler implementation
@@ -157,7 +157,7 @@ include::res/wizards/NewTodoHandler.java[]
 			If you did not implement the modification listeners correctly,
 				you may get a new empty in the table.
 			
-		</warning>
+		
 
 		NOTE:
 			
@@ -168,6 +168,6 @@ include::res/wizards/NewTodoHandler.java[]
 				immediately
 				after a change in the data model.
 			
-		</note>
+		
 	
 </chapter>

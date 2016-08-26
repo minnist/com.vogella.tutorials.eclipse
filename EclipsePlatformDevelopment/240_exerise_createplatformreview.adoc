@@ -44,7 +44,7 @@ _Signed-off-by_
 message
 with a new-line character.
 
-</warning>
+
 
 
 === Updating the Gerrit review

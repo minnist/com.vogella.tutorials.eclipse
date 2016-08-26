@@ -1,6 +1,5 @@
 == Creating a custom Eclipse IDE build
 
-	
 
 === Building the Eclipse IDE
 (((Eclipse IDE build)))
@@ -10,6 +9,9 @@ Using this build system, you can create your custom build of the Eclipse IDE.
 If you building the Eclipse IDE from the current master branch you get an IDE based on the latest developments of the Eclipse development team.
 
 The results of an Tycho build are archive files for the different platforms, which include everything to run an Eclipse IDE.
+
+A good place to post questions about the CBI build is the https://dev.eclipse.org/mailman/listinfo/cbi-dev[CBI mailing list].
+
 
 
 === Requirements

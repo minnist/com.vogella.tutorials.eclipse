@@ -24,8 +24,6 @@ You can do this manually but the Eclipse releng project also provides tooling fo
 		
 NOTE: This used to be mandatory but become an optional step in 2016.
 
-=== Using the Eclipse releng tooling for updating the copyright header
-		
 You need to install the copyright header tool from the following update site:
 http://download.eclipse.org/eclipse/updates/4.6
 		

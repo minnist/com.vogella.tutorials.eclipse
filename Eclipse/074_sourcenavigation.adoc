@@ -202,23 +202,15 @@ kbd:[Ctrl+T]
 
 === Full text search
 
-You frequently need to find files containing certain text or other meta data. Via the
-menu:
-Search[Search]
-menu (Shortcut:
-kbd:[Ctrl+H]
-) you can open the search dialog of Eclipse. Use the
-_File Search_
-tab to search for text with the option to use regular expressions and also to replace matching entries.
+You frequently need to find files containing certain text or other meta data. 
+Via the menu:Search[Search...] (Shortcut: kbd:[Ctrl+H]) you can open the search dialog of Eclipse. 
+Use the _File Search_ tab to search for text with the option to use regular expressions and also to replace matching entries.
 
 image::javasearchdialog30.png[Text search,pdfwidth=60%]
 
-Eclipse associates file extensions with the default tab. You can
-customize the available search tabs via the
-_Customize_
-button in the Search dialog. Via the
-_Remember the last used page_
-you can configure Eclipse to use your last tab as default.
+Eclipse associates file extensions with the default tab. 
+You can customize the available search tabs via the _Customize_ button in the Search dialog. 
+Via the _Remember the last used page_ you can configure Eclipse to use your last tab as default.
 
 image::customizesearch10.png[Customize search,pdfwidth=60%]
 
@@ -226,97 +218,50 @@ image::customizesearch20.png[Customize search,pdfwidth=60%]
 
 === Java search and other specialized searches
 
-The Search functionality (
-kbd:[Ctrl+H]
-) others specialized searches for more complex use cases.
-For example, use the
-_Java Search_
-tab to search for Java elements, e.g.,
-methods.
+The Search functionality (kbd:[Ctrl+H]) offers specialized searches for more complex use cases.
+For example, use the _Java Search_ tab to search for Java elements, e.g., methods.
 
 image::javasearchdialog10.png[Text search,pdfwidth=60%]
 
-The
-_Search_
-view
-shows the search results for the selected scope. You can
-double-click
-on a
-search
-entry to navigate to the
-corresponding
-position in the
-editor. The currently selected search result is also indicated via an
-arrow in the left
-border of the editor.
+The _Search_ view shows the search results for the selected scope. 
+You can double-click on a search entry to navigate to the corresponding position in the editor. 
+The currently selected search result is also indicated via an arrow in the left border of the editor.
 
 image::javasearchdialog20.png[Text search,pdfwidth=60%]
 
 === Inline search in an editor
 
-You can use the
-kbd:[Ctrl+J]
-shortcut to activate
-_Incremental Find_
-. This allows you to search in the current active editor for a text
-which is displayed in the status line as depicted
-by the following
-screenshot. Repeat
-kbd:[Ctrl+J]
-in order to move to the next
-occurrence of the current search term.
+You can use the kbd:[Ctrl+J] shortcut to activate _Incremental Find_.
+This allows you to search in the current active editor for a text which is displayed in the status line as depicted by the following screenshot. 
+Repeat kbd:[Ctrl+J] in order to move to the next occurrence of the current search term.
 
 image::incrementalsearch10.png[Incrementation search,pdfwidth=30%,width=30%]
 
-The advantage of this search is that no pop-up dialog is opened
-which blocks other elements in the Eclipse IDE.
+The advantage of this search is that no pop-up dialog is opened which blocks other elements in the Eclipse IDE.
 
-If you have selected an element in the editor, you can use the
-kbd:[Ctrl+K]
-shortcut to search for the next occurrence of the selected text and
-kbd:[Ctrl+Shift+K]
-for the previous element.
+If you have selected an element in the editor, you can use the kbd:[Ctrl+K] shortcut to search for the next occurrence of the selected text and kbd:[Ctrl+Shift+K] for the previous element.
 
 === Annotation navigations
 
-You can also navigate via the annotation buttons, e.g., for
-jumping
-to the next error or warning in your source
-code.
+You can also navigate via the annotation buttons, e.g., for jumping to the next error or warning in your source code.
 
 image::navigation_annotations10.png[Annotation navigation,pdfwidth=40%]
 
-By pressing the buttons you can navigate to the related
-annotations.
-You can also use the keyboard shortcut
-kbd:[Ctrl+.]
-(Ctrl plus the dot sign)
-for selecting the next annotation or
-kbd:[Ctrl+,]
-(Ctrl plus the comma sign)
-for selecting the previous annotation.
+By pressing the buttons you can navigate to the related annotations.
+You can also use the keyboard shortcut kbd:[Ctrl+.] (Ctrl plus the dot sign) for selecting the next annotation or kbd:[Ctrl+,] (Ctrl plus the comma sign) for selecting the previous annotation.
 
-The following screenshot shows source code with two warnings
-and
-one error and you can navigate between the
-corresponding code via the
-annotation buttons.
+The following screenshot shows source code with two warnings and one error and you can navigate between the corresponding code via the annotation buttons.
 
 image::annotationsnavigation30.png[Moving in the source code,pdfwidth=40%]
 
-Which annotations are relevant for navigation can be configured
-via the drop-down menu of the toolbar. This
-selection is highlighted
-in the following screenshot.
+Which annotations are relevant for navigation can be configured via the drop-down menu of the toolbar.
+This selection is highlighted in the following screenshot.
 
 image::navigation_annotations20.png[Annotation navigation,pdfwidth=40%]
 
 === Mouse and keyboard navigation
 
-In a lot of cases you can also use the mouse to navigate to or
-into an
-element if you press the
-kbd:[Ctrl]
+In a lot of cases you can also use the mouse to navigate to or into an element if you press the kbd:[Ctrl]
 key. For example, press the
 kbd:[Ctrl]
 key and (left) click with the mouse on the name of a class to jump

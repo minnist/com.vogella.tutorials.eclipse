@@ -2,126 +2,57 @@
 
 === Package Explorer view
 		
-The
-_Package Explorer_
-view
-allows you to browse the structure of your projects and to open files
-in an
-_editor_
-via a
-double-click on the file.
+The _Package Explorer_ view allows you to browse the structure of your projects and to open files in an _editor_ via a double-click on the file.
 		
-It is also used to change the
-structure of your
-project. For
-example,
-you can rename files or move
-files and folders
-via drag
-and
-drop.
-A
-right-click on a file or
-folder shows you the
-available
-options.
-
+It is also used to change the structure of your project. 
+For example, you can rename files or move files and folders via drag and drop.
+A right-click on a file or folder shows you the available options.
 		
 image::packageexplorerview20.png[Package Explorer,pdfwidth=50%,width=50%]
-		
 		
 For more info on the Package Explorer see Chapter _Source Navigation_ and _Link Package Explorer with editor_.
 		
 === Outline view
 		
-The
-_Outline_
-view
-shows the structure of the currently selected source file.
+The _Outline_ view shows the structure of the currently selected source file.
 		
 image::outlineview10.png[Outline View,pdfwidth=60%]
 
 === Problems view
 		
-The
-_Problems_
-view
-shows errors and warning messages.
-Sooner or later you will run into problems
-with your code or
-your
-project setup. To view the problems in your
-project, you can use the
-_Problems_
-view
-which is part of the standard Java
-_perspective_
-. If this
-view
-is closed, you
-can
-open it
-via
-menu:Window[Show View > Problems].
+The _Problems_ view shows errors and warning messages.
+Sooner or later you will run into problems with your code or your project setup. 
+To view the problems in your project, you can use the _Problems_ view which is part of the standard Java _perspective_. 
+If this view is closed, you can open it via menu:Window[Show View > Problems].
 		
 image::problemsview10.png[Errors in the problem view,pdfwidth=30%,width=30%]
 		
-The messages which are displayed in the
-_Problems_
-view can
-be configured via the drop-down menu of the
-view
-. For example, to display the problems
-from the currently
-selected
-project, select
-_Configure Contents_
-and set the Scope to
-_On any element in the same project_
-.
+The messages which are displayed in the _Problems_ view can be configured via the drop-down menu of the view. 
+For example, to display the problems from the currently selected project, select _Configure Contents_ and set the Scope to _On any element in the same project_.
 		
 image::problemsview20.png[Drop-down menu of the problems view,pdfwidth=60%]
 		
 image::problemsview30.png[Customizing,pdfwidth=60%]
 		
-The
-_Problems_
-view
-also allows you to trigger a
-_Quick fix_
-via a right mouse-click on several selected messages. See
-chapter _Quick Fix_
-for details on the
-_Quick fix_
-functionality.
+The _Problems_ view also allows you to trigger a _Quick fix_ via a right mouse-click on several selected messages. 
+See chapter _Quick Fix_ for details on the _Quick fix_ functionality.
 		
 image::problemsview40.png[Customizing,pdfwidth=60%]
 
 === Javadoc view
 		
-The
-_Javadoc_
-view
-shows the documentation of the selected element in the Java
-_editor_
-.
+The _Javadoc_ view shows the documentation of the selected element in the Java _editor_.
 		
 image::javadocview12.png[Javadoc View,pdfwidth=60%]
 
 === Java editor
 		
-The Java
-_editor_
-is used to modify the Java source code. Each
-Java source file is
-opened in a separate
-_editor_
-.
+The Java _editor_ is used to modify the Java source code. 
+Each Java source file is opened in a separate _editor_.
 		
 image::javaeditorintro10.png[Java editor,pdfwidth=60%]
 		
-If you click in the left column of the editor, you can configure its
-properties, for example, that line number should be displayed.
+If you click in the left column of the editor, you can configure its properties, for example, that line number should be displayed.
 		
 image::javaeditorintro20.png[Java editor,pdfwidth=60%]
 		

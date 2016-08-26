@@ -121,62 +121,24 @@ shows the Javadoc of the selected class or method.
 		
 === Resetting and customizing a perspective
 		
-A common problem is that you changed the arrangement of views and
-editors in your
-_perspective_
-and you want to restore Eclipse to its original state. For example,
-you might have closed a
-view
-.
-You can reset a
-_perspective_
-to its original
-state
-via the
-menu:Window[Perspective > Reset Perspective...]
-menu entry.
+A common problem is that you changed the arrangement of views and editors in your _perspective_ and you want to restore its original state. 
+For example, you might have closed a view.
+You can reset a _perspective_ to its original state via the menu:Window[Perspective > Reset Perspective...] menu entry.
 		
-You can change the layout and content within a
-perspective
-by
-opening or closing
-parts
-and by re-arranging them.
+You can change the layout and content within a perspective by opening or closing parts and by re-arranging them.
 		
-To open a new
-part
-in your current
-perspective,
-use the
-menu:Window[Show View > Other...]
-menu entry. The following
-_Show View_
-dialog allows you to search for certain
-_parts_
-.
+To open a new part in your current perspective, use the menu:Window[Show View > Other...] menu entry. 
+This opens the _Show View_ dialog which allows you to search for certain _parts_.
+
 image::ide_showview10.png[Show View dialog,pdfwidth=60%]
 		
-If you want to reset your current
-perspective
-to its default,
-use the
-menu:Window[Reset Perspective]
-menu entry.
+If you want to reset your current perspective to its default, use the menu:Window[Reset Perspective] menu entry.
 		
-You can save the currently selected
-perspective
-via
-menu:Window+Perspective[Save Perspective As...].
+You can save the currently selected perspective via menu:Window+Perspective[Save Perspective As...].
 		
 image::eclipseide_saveperspective10.png[Save your perspective configuration,pdfwidth=40%]
 		
-The
-menu:Window+Perspective[Customize Perspective...]
-menu entry allows you to adjust the selected
-perspective
-. For example,
-you can
-hide or show toolbar and menu entries.
+The menu:Window+Perspective[Customize Perspective...] menu entry allows you to adjust the selected perspective. For example, you can hide or show toolbar and menu entries.
 		
 image::perspective_customize10.png[Customize Perspective,pdfwidth=40%]
 		

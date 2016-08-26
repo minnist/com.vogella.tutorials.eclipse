@@ -1,43 +1,26 @@
 == Eclipse Marketplace
+
+=== Using the Marketplace client 
 	
-Eclipse also contains a client which allows installing software
-components from the Eclipse
-_Marketplace client_
-. The advantage of this client
-is
-that you can search for components,
-discover popular
-extensions and
-see descriptions and ratings.
+Eclipse also contains a client which allows installing software components from the Eclipse _Marketplace client_. 
+The advantage of this client is that you can search for components, discover popular extensions and see descriptions and ratings.
 	
-Compared to the update manager, you do not have to know
-the
-URL
-for
-the
-_software site_
-which contains the installable software components.
+Compared to the update manager, you do not have to know the URL for the _software site_ which contains the installable software components.
 	
-Not all Eclipse distributions contain the
-_Marketplace client_
-by
-default. You may need to install the
-_Marketplace client_
-software component into Eclipse before you can use it. The following
-screenshot shows how to install it from one of the official Eclipse
-update sites.
+Most Eclipse distributions contain the _Marketplace client_ by default. 
+You may need to install the _Marketplace client_ software component into Eclipse before you can use it. 
+The following screenshot shows how to install it from one of the official Eclipse update sites, via the menu:Help[Install New Software...] dialog.
 	
 image::installmpc10.png[Installing the MPC,pdfwidth=60%]
 	
-To open the Eclipse Marketplace, select
-menu:Help[Eclipse Marketplace].
+To open the Eclipse Marketplace, select menu:Help[Eclipse Marketplace...].
 	
 image::marketclient10.png[Showing the Eclipse Marketplace Client,pdfwidth=60%]
 	
-You can use the
-_Find_
-box to search for components. Pressing the
-_Install_
-button starts the
-installation process.
+You can use the _Find_ box to search for components. 
+Pressing the _Install_ button starts the installation process.
 
+=== Maintaining your Favorites
+
+The marketplace client allows to install your favorite plug-ins directy. 
+For this, go to the http://marketplace.eclipse.org/[Eclipse Marketplace website] and login with your Eclipse.org account.

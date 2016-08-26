@@ -24,3 +24,18 @@ Pressing the _Install_ button starts the installation process.
 
 The marketplace client allows to install your favorite plug-ins directy. 
 For this, go to the http://marketplace.eclipse.org/[Eclipse Marketplace website] and login with your Eclipse.org account.
+
+image::marketplacefavorites10.png[Login to the Marketplace]
+
+Now search on the website for your favorite and press the _*_ sign.
+
+image::marketplacefavorites20.png[Adds as favorite]
+
+Afterwards, select the _Favorites_ tab in the Eclipse Marketplace client and login to be able to install your favorites.
+
+image::marketplacefavorites30.png[Adds as favorite]
+
+image::marketplacefavorites40.png[Adds as favorite]
+
+image::marketplacefavorites50.png[Adds as favorite]
+

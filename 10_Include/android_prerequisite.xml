@@ -1,9 +1,9 @@
 <section id="android_requisites">
-	<title>Prerequisites for this tutorial
+== Prerequisites for this tutorial
 	
 		The following assumes that you have already basic knowledge in Android
 		development. Please check the
-		<ulink url="http://www.vogella.com/tutorials/Android/article.html"> Android development tutorial</ulink>
+		http://www.vogella.com/tutorials/Android/article.html"> Android development tutorial</ulink>
 		to learn the basics.
 	
 

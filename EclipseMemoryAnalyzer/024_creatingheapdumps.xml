@@ -25,7 +25,7 @@
 		acquire a memory dump.
 	
 	
-image::mat_getheapdump10.png"/>
+image::mat_getheapdump10.png[]
 			
 			<textobject>
 				<phrase>Creating a heap dump</phrase>
@@ -52,7 +52,7 @@ image::mat_getheapdump10.png"/>
 		.
 	
 	
-image::matperspective20.png"/>
+image::matperspective20.png[]
 			
 			<textobject>
 				<phrase>Opening the MAT perspective</phrase>

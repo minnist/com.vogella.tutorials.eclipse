@@ -17,7 +17,7 @@
 	
 
 	
-image::method10.png" />
+image::method10.png[]
 				
 			
 		
@@ -33,7 +33,7 @@ image::method10.png" />
 		you find it listed below.
 
 	
-image::method20.png" />
+image::method20.png[]
 				
 			
 		
@@ -48,13 +48,13 @@ image::method20.png" />
 	 You can also generate methods with input parameter, just add
 		parameter with their type to your EOperation.  
 	
-image::method30.png" />
+image::method30.png[]
 				
 			
 		
 	
 	
-image::method40.png" />
+image::method40.png[]
 				
 			
 		

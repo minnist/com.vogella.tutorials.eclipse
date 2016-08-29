@@ -17,7 +17,7 @@
 	
 
 	
-image::gridswtlayout.png"/>
+image::gridswtlayout.png[]
 			
 		
 	

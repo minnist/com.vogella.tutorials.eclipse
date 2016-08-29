@@ -11,8 +11,9 @@
 		.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/java8/DateTimeSelectionProperty.java[]
+[source,java]
+----
+include::res/java8/DateTimeSelectionProperty.java[]
 ----
 	
 	
@@ -32,8 +33,9 @@
 		is demonstrated by the following listing.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/java8/Java8DateTimePart.java[]
+[source,java]
+----
+include::res/java8/Java8DateTimePart.java[]
 ----
 	
 	
@@ -61,7 +63,7 @@
 		widget looks like this:
 		<mediaobject>
 			<imageobject>
-				<imagedata fileref="./images/java8_DateTime_binding.png"/>
+				<imagedata fileref="./images/java8_DateTime_binding.png[]
 			
 		
 	

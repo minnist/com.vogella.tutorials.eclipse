@@ -15,7 +15,7 @@ Version 0.3, 06.07.2016
     
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/project_nature_java_images.png"/>
+                <imagedata fileref="images/project_nature_java_images.png[]
             
         
     
@@ -25,7 +25,7 @@ Version 0.3, 06.07.2016
     
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/project_nature_images_extension_point.png"/>
+                <imagedata fileref="images/project_nature_images_extension_point.png[]
             
         
     
@@ -41,7 +41,7 @@ Version 0.3, 06.07.2016
     
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/project_nature_image_example.png"/>
+                <imagedata fileref="images/project_nature_image_example.png[]
             
         
     

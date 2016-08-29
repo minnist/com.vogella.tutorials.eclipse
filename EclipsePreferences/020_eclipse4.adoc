@@ -69,8 +69,9 @@
 		.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/put.txt[]
+[source,java]
+----
+include::res/eclipse4access/put.txt[]
 ----
 	
 
@@ -84,8 +85,9 @@
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/eclipse4access/listen.txt[]
+[source,java]
+----
+include::res/eclipse4access/listen.txt[]
 ----
 	
 	

@@ -56,9 +56,7 @@ include::res/snippets/SelectObservableValue.java[]
 		
 		The result of this snippet, should look like this:
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="./images/SelectObservableValue.png" />
+image::SelectObservableValue.png[]
 				
 			
 		

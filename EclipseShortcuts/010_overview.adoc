@@ -39,7 +39,7 @@
 		for the "New Java" search term.
 	
 	
-image::short10.png" />
+image::short10.png[]
 			
 			<textobject>
 				<phrase>Ctrl+3 shortcut dialog</phrase>

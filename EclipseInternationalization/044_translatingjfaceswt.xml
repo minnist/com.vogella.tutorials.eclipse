@@ -101,8 +101,9 @@
 		file.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/jface/message.example[]
+[source,java]
+----
+include::res/jface/message.example[]
 ----
 	
 

@@ -44,8 +44,8 @@ image::contexthierarchy_withosgi12.png" scale="30" />
 	
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/field.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/field.java[]
+----
 	
 	Alternatively you can inject the service into a method of such a Eclipse part as
 		demonstrated in the following
@@ -53,8 +53,8 @@ image::contexthierarchy_withosgi12.png" scale="30" />
 	
 	
 		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/method.java" />
-		</programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/method.java[]
+----
 	
 
 

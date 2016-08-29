@@ -28,7 +28,7 @@
 		.
 	
 	
-image::targetdefinition10.png"/>
+image::targetdefinition10.png[]
 			
 			<textobject>
 				<phrase>Define File name for Target Definition</phrase>
@@ -57,7 +57,7 @@ image::targetdefinition10.png"/>
 		screenshot.
 	
 	
-image::targetdefinition20.png"/>
+image::targetdefinition20.png[]
 			
 			<textobject>
 				<phrase>Setting the new defined target definition as target for
@@ -80,7 +80,7 @@ image::targetdefinition20.png"/>
 		target platform.
     
 	
-image::tutorial_targetdefinition50.png"/>
+image::tutorial_targetdefinition50.png[]
 			
 			<textobject>
 				<phrase>Definition of a target definition file</phrase>
@@ -101,7 +101,7 @@ image::tutorial_targetdefinition50.png"/>
 		.
 	
 	
-image::targetdefinition30.png" />
+image::targetdefinition30.png[]
 			
 			<textobject>
 				<phrase>Setting the target definition via the Eclipse Preferences</phrase>

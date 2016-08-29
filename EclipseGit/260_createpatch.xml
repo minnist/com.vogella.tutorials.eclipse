@@ -20,7 +20,7 @@
 	
 
 	
-image::egit_createpatch10.png"/>
+image::egit_createpatch10.png[]
 			
 			<textobject>
 				<phrase>Create Patch via EGit menu path</phrase>
@@ -28,7 +28,7 @@ image::egit_createpatch10.png"/>
 		
 	
 	
-image::egit_createpatch20.png"/>
+image::egit_createpatch20.png[]
 			
 			<textobject>
 				<phrase>Create Patch via Eclipse Git</phrase>

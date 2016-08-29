@@ -40,7 +40,7 @@ Version 0.3, 06.07.2016
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_extension.png"/>
+                    <imagedata fileref="images/exercise_project_nature_extension.png[]
                 
             
         
@@ -81,7 +81,7 @@ include::res/ExampleProjectNatureHandler.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_convert_menucontribution.png"/>
+                    <imagedata fileref="images/exercise_convert_menucontribution.png[]
                 
             
         
@@ -96,7 +96,7 @@ include::res/ExampleProjectNatureHandler.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_core_expression.png"/>
+                    <imagedata fileref="images/exercise_core_expression.png[]
                 
             
         
@@ -109,7 +109,7 @@ include::res/ExampleProjectNatureHandler.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_propertytester.png"/>
+                    <imagedata fileref="images/exercise_project_nature_propertytester.png[]
                 
             
         
@@ -118,7 +118,7 @@ include::res/ExampleProjectNatureHandler.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_visibleWhen_expression.png"/>
+                    <imagedata fileref="images/exercise_visibleWhen_expression.png[]
                 
             
         

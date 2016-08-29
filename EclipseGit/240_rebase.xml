@@ -19,7 +19,7 @@
 		as depicted in the following screenshot.
 	
 	
-image::egit_rebase10.png"/>
+image::egit_rebase10.png[]
 			
 			<textobject>
 				<phrase>Rebase in EGit</phrase>
@@ -30,7 +30,7 @@ image::egit_rebase10.png"/>
 		want to rebase.
 	
 	
-image::egit_rebase20.png"/>
+image::egit_rebase20.png[]
 			
 			<textobject>
 				<phrase>Rebase in EGit, selecting the branch for rebase</phrase>

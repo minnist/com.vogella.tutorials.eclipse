@@ -25,7 +25,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/history-view-8.png"/>
+					<imagedata fileref="./images/history-view-8.png[]
 				
 				<textobject>
 					<phrase>History View</phrase>
@@ -61,7 +61,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/history-view-10.png"/>
+							<imagedata fileref="./images/history-view-10.png[]
 						
 						<textobject>
 							<phrase>History View</phrase>
@@ -100,7 +100,7 @@
 						
 							<inlinemediaobject>
 								<imageobject>
-									<imagedata fileref="./images/commit-changes-with-amend-2.png"/>
+									<imagedata fileref="./images/commit-changes-with-amend-2.png[]
 								
 								<textobject>
 									<phrase>Commit Changes with Amend</phrase>
@@ -122,7 +122,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/history-view-11.png"/>
+							<imagedata fileref="./images/history-view-11.png[]
 						
 						<textobject>
 							<phrase>History View</phrase>
@@ -195,7 +195,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/history-view-12.png"/>
+							<imagedata fileref="./images/history-view-12.png[]
 						
 						<textobject>
 							<phrase>History View</phrase>

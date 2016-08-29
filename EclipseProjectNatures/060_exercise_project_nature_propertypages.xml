@@ -24,7 +24,7 @@ Version 0.3, 06.07.2016
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_property_page.png"/>
+                    <imagedata fileref="images/exercise_project_nature_property_page.png[]
                 
             
         
@@ -47,7 +47,7 @@ include::res/ExamplePropertyPage.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/property_page_enablement.png"/>
+                    <imagedata fileref="images/property_page_enablement.png[]
                 
             
         
@@ -61,7 +61,7 @@ include::res/ExamplePropertyPage.java"/>
         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_property_page_sample.png"/>
+                    <imagedata fileref="images/exercise_project_nature_property_page_sample.png[]
                 
             
         

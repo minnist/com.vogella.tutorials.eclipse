@@ -9,7 +9,7 @@
 	
 
 	
-image::rap_install10.png" />
+image::rap_install10.png[]
 			
 			<textobject>
 				<phrase>Installation of the Eclipse RAP Target Platform</phrase>
@@ -23,7 +23,7 @@ image::rap_install10.png" />
 	 Use the Eclipse update manager to install the tooling from the
 		Eclipse update.
 	
-image::rap_install20.png"/>
+image::rap_install20.png[]
 			
 		
 	

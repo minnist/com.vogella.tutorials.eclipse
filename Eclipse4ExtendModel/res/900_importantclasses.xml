@@ -1,11 +1,11 @@
 <section id="keyclasses">
-	<title>Key classes in e4
+== Key classes in e4
 	
 		The following is a list of important classes in Eclipse e4.
 	
 
 	<table frame='all'>
-		<title>e4 classes
+=== e4 classes
 		<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 			<colspec colname='c1' />
 			<colspec colname='c2' />

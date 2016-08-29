@@ -816,7 +816,7 @@ The Gists will synchronize to the newly created query folder in the Task List vi
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github15.png"/>
+  <imagedata fileref="./images/github15.png[]
   
   <textobject><phrase>github15.png</phrase></textobject>
 </inlinemediaobject>
@@ -836,7 +836,7 @@ This Gist contains a code snippet for creating Gists using the GitHub Java API
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github16.png"/>
+  <imagedata fileref="./images/github16.png[]
   
   <textobject><phrase>github16.png</phrase></textobject>
 </inlinemediaobject>
@@ -881,7 +881,7 @@ The Mylyn Task editor will be opened for the newly created Gist
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github17.png"/>
+  <imagedata fileref="./images/github17.png[]
   
   <textobject><phrase>github17.png</phrase></textobject>
 </inlinemediaobject>

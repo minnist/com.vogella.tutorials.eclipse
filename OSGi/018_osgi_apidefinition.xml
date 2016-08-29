@@ -20,7 +20,7 @@
 	
 
 	
-image::osgi_api_definition10.png" />
+image::osgi_api_definition10.png[]
 			
 			<textobject>
 				<phrase>Dependency management</phrase>
@@ -64,7 +64,7 @@ image::osgi_api_definition10.png" />
 	
 
 	
-image::x-internal10.png" />
+image::x-internal10.png[]
 			
 			<textobject>
 				<phrase>Setting the x-internal flag</phrase>
@@ -111,7 +111,7 @@ image::x-internal10.png" />
 
 
 	
-image::x-internal30.png" />
+image::x-internal30.png[]
 			
 			<textobject>
 				<phrase>Settings in Eclipse for warnings for deprecated API usage</phrase>

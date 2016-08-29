@@ -43,7 +43,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/githubstart.png" />
+					<imagedata fileref="./images/githubstart.png[]
 				
 				<textobject>
 					<phrase>Sign up at Github</phrase>

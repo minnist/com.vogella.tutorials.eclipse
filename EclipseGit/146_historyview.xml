@@ -98,7 +98,7 @@ image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 			
 				<mediaobject>
 					<imageobject>
-						<imagedata fileref="images/comparemode10.png"/>
+						<imagedata fileref="images/comparemode10.png[]
 					
 					<textobject>
 						<phrase>Compare mode</phrase>
@@ -261,7 +261,7 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 			
 				<mediaobject>
 					<imageobject>
-						<imagedata fileref="images/gitsearch10.png"/>
+						<imagedata fileref="images/gitsearch10.png[]
 					
 					<textobject>
 						<phrase>Git search</phrase>

@@ -187,7 +187,7 @@ image::modelfragment_extensionpoint16.png"
 			button.
 		
 		
-image::modelfragment10.png"/>
+image::modelfragment10.png[]
 
 				
 				<textobject>
@@ -328,7 +328,7 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 			
 				<mediaobject>
 					<imageobject>
-						<imagedata fileref="images/fragment52.png"/>
+						<imagedata fileref="images/fragment52.png[]
 					
 					<textobject>
 						<phrase>Adding a fragment for the menu</phrase>
@@ -374,7 +374,7 @@ image::fragment62.png[Adding a menu entry,pdfwidth=60%]
 
 
 		
-image::fragment70.png"/>
+image::fragment70.png[]
 
 				
 				<textobject>

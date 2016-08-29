@@ -25,12 +25,12 @@
 			.
 		
 		
-image::wtp_first_project10.png" />
+image::wtp_first_project10.png[]
 				
 			
 		
 		
-image::wtp_first_project20.png" />
+image::wtp_first_project20.png[]
 				
 			
 		
@@ -42,7 +42,7 @@ image::wtp_first_project20.png" />
 			on the last page.
 		
 		
-image::wtp_first_project30.png" />
+image::wtp_first_project30.png[]
 				
 			
 		
@@ -97,12 +97,12 @@ include::res/counter/FileDao.java[]
 			Enter the following data.
 		
 		
-image::wtp_first_project40.png" />
+image::wtp_first_project40.png[]
 				
 			
 		
 		
-image::wtp_first_project50.png" />
+image::wtp_first_project50.png[]
 				
 			
 		
@@ -141,7 +141,7 @@ include::res/counter/FileCounter.java[]
 			from the context menu and select your existing server.
 		
 		
-image::wtp_first_project60.png" />
+image::wtp_first_project60.png[]
 				
 			
 		
@@ -151,7 +151,7 @@ image::wtp_first_project60.png" />
 			server.
 		
 		
-image::wtp_first_project70.png" />
+image::wtp_first_project70.png[]
 				
 			
 		

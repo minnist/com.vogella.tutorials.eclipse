@@ -14,8 +14,8 @@
 	
 [source,java]
 ----
-include::res/dialog/ExitHandler.java" />
-		</programlisting>
+include::res/dialog/ExitHandler.java[]
+----
 	
 	<warning>
 		

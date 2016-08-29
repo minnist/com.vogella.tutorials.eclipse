@@ -23,7 +23,7 @@
 		.
 	
 	
-image::egit_import08.png"/>
+image::egit_import08.png[]
 
 			
 			<textobject>
@@ -38,7 +38,7 @@ image::egit_import08.png"/>
 		in the next dialog.
 	
 	
-image::egit_import09.png"/>
+image::egit_import09.png[]
 
 			
 			<textobject>
@@ -87,7 +87,7 @@ image::egit_import09.png"/>
 	
 
 	
-image::egit_import10.png"/>
+image::egit_import10.png[]
 			
 			<textobject>
 				<phrase>URI entered in the dialog</phrase>
@@ -106,7 +106,7 @@ image::egit_import10.png"/>
 	
 
 	
-image::egit_import20.png"/>
+image::egit_import20.png[]
 
 			
 			<textobject>
@@ -121,7 +121,7 @@ image::egit_import20.png"/>
 	
 
 	
-image::egit_import30.png"/>
+image::egit_import30.png[]
 			
 			<textobject>
 				<phrase>Define target directory for Git repository</phrase>
@@ -138,7 +138,7 @@ image::egit_import30.png"/>
 		repository.
 	
 	
-image::egit_import40.png"/>
+image::egit_import40.png[]
 
 			
 			<textobject>

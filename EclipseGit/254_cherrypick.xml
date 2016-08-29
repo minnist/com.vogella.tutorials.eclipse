@@ -15,7 +15,7 @@
 		screenshot.
 	
 	
-image::cherrypick10.png"/>
+image::cherrypick10.png[]
 			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -28,7 +28,7 @@ image::cherrypick10.png"/>
 	
 
 	
-image::cherrypick20.png"/>
+image::cherrypick20.png[]
 			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -38,7 +38,7 @@ image::cherrypick20.png"/>
 
 	Afterwards you can cherry-pick the good commit.
 	
-image::cherrypick30.png"/>
+image::cherrypick30.png[]
 			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>
@@ -46,7 +46,7 @@ image::cherrypick30.png"/>
 		
 	
 	
-image::cherrypick40.png"/>
+image::cherrypick40.png[]
 			
 			<textobject>
 				<phrase>Situation before the cherry pick</phrase>

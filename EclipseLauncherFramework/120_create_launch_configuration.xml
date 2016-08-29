@@ -11,11 +11,11 @@
 			
 			*
 				By holding <keycode>Ctrl</keycode> while pressing the green launch button.
-						<inlinegraphic fileref="images/run_exc.png"/>
+						<inlinegraphic fileref="images/run_exc.png[]
 			
 			*
 				By using the drop down menu of the green launch button <inlinegraphic
-						fileref="images/run_exc.png"/> and clicking on  menu:
+						fileref="images/run_exc.png[] and clicking on  menu:
 						<guimenu>Run Configurations...</guimenu>
 					</menuchoice> in the menu.
 			
@@ -24,7 +24,7 @@
 	In the _Run Configuration..._ you can choose between different launch
 		configuration types:
 	
-image::run_configurations.png"/>
+image::run_configurations.png[]
 			
 		
 	

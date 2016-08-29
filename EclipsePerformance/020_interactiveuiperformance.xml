@@ -10,10 +10,7 @@
 	
 		You can activate this tracing via
 		menu:
-			<guimenu>Window</guimenu>
-			<guisubmenu>Preferences</guisubmenu>
-			<guisubmenu>UI Responsiveness Monitoring</guisubmenu>
-		</menuchoice>
+			<guimenu>Window[Preferences > UI Responsiveness Monitoring]
 
 	
 	

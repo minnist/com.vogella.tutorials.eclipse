@@ -15,11 +15,7 @@
 	
 		Select
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>Import</guisubmenu>
-			<guisubmenu>Git</guisubmenu>
-			<guisubmenu>Project from Git</guisubmenu>
-		</menuchoice>
+			<guimenu>File[Import > Git > Project from Git]
 		.
 	
 	

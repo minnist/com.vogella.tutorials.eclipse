@@ -9,9 +9,7 @@
 		_update manager_
 		via
 		menu:
-			<guimenu>Help</guimenu>
-			<guisubmenu>Install new Software...</guisubmenu>
-		</menuchoice>
+			<guimenu>Help[Install new Software...]
 		and install Mylyn from the update site or your release. The following
 		screenshot shows this for the Kepler release.
 	

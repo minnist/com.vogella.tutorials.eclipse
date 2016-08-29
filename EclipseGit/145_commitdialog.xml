@@ -5,9 +5,7 @@
 		You can also commit changes with the Git commit dialog. For this
 		right-click on a resource and select
 		menu:
-			<guimenu>Team</guimenu>
-			<guisubmenu>Commit</guisubmenu>
-		</menuchoice>
+			<guimenu>Team[Commit]
 		from the context menu.
 	
 	The dialog allows you to add changed and new files to the

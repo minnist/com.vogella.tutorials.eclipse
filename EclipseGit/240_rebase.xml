@@ -48,27 +48,21 @@ image::egit_rebase20.png[]
 		If the rebase was successful a dialog is shown. You have to resolve
 		rebase conflicts if they occur. After resolving them, select
 		menu:
-			<guimenu>Rebase</guimenu>
-			<guisubmenu>Continue</guisubmenu>
-		</menuchoice>
+			<guimenu>Rebase[Continue]
 		.
 	
 	
 		If you want to skip the conflicting commit and continue with the
 		rebase operation use
 		menu:
-			<guimenu>Rebase</guimenu>
-			<guisubmenu>Skip</guisubmenu>
-		</menuchoice>
+			<guimenu>Rebase[Skip]
 		.
 
 	
 	
 		To cancel the rebase operation select
 		menu:
-			<guimenu>Rebase</guimenu>
-			<guisubmenu>Abort</guisubmenu>
-		</menuchoice>
+			<guimenu>Rebase[Abort]
 		.
 	
 

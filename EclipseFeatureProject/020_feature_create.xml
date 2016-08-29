@@ -4,14 +4,9 @@
 		menu:
 			<guimenu>
 				File
-			</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>Plug-in
+			[New > Other... > Plug-in
 				Development
-			</guisubmenu>
-			<guisubmenu>Feature Project</guisubmenu>
-		</menuchoice>
+			 > Feature Project]
 		.
 	
 

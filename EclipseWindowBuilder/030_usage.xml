@@ -44,14 +44,7 @@ image::swtdesigner10.png" scale="30" />
 		`Composite`
 		select
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>WindowBuilder</guisubmenu>
-			<guisubmenu>SWT Designer</guisubmenu>
-			<guisubmenu>SWT</guisubmenu>
-			<guisubmenu>Composite</guisubmenu>
-		</menuchoice>
+			<guimenu>File[New > Other... > WindowBuilder > SWT Designer > SWT > Composite]
 		.
 	
 

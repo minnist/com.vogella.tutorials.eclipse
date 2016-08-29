@@ -3,9 +3,7 @@
 		Install _EMF_ via the
 		_Eclipse Update manager_ from
 		menu:
-			<guimenu>Help</guimenu>
-			<guisubmenu>Install New Software...</guisubmenu>
-		</menuchoice>
+			<guimenu>Help[Install New Software...]
 		. Select
 		_Modeling_
 		and install

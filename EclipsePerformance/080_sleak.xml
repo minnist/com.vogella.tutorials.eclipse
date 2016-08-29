@@ -61,12 +61,7 @@ image::sleaktrace20.png[]
 		view
 		under
 		menu:
-			<guimenu>Window</guimenu>
-			<guisubmenu>Show View</guisubmenu>
-			<guisubmenu>Other ...</guisubmenu>
-			<guisubmenu>SWT Tools</guisubmenu>
-			<guisubmenu>Sleak</guisubmenu>
-		</menuchoice>
+			<guimenu>Window[Show View > Other ... > SWT Tools > Sleak]
 		.`
 	
 

@@ -13,9 +13,7 @@
 		right-click on your file and
 		select
 		menu:
-			<guimenu>Team</guimenu>
-			<guisubmenu>Show Annotations</guisubmenu>
-		</menuchoice>
+			<guimenu>Team[Show Annotations]
 		.
 	
 	Afterwards you can place the mouse on the left side of the editor

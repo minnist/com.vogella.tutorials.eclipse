@@ -15,9 +15,7 @@
 		_plugin.xml_
 		file, right-click on it and select
 		menu:
-			<guimenu>Plug-in Tools</guimenu>
-			<guisubmenu>Externalize Strings</guisubmenu>
-		</menuchoice>
+			<guimenu>Plug-in Tools[Externalize Strings]
 		.
 	
 
@@ -32,9 +30,7 @@ image::pdetools10.png" scale="60" />
 	
 		Via
 		menu:
-			<guimenu>PDE Tools</guimenu>
-			<guisubmenu>Internationalize</guisubmenu>
-		</menuchoice>
+			<guimenu>PDE Tools[Internationalize]
 		you can also directly create
 		one or several fragments for the result of
 		the internationalization.

@@ -24,9 +24,7 @@
 		Start this manager
 		via the
 		menu:
-			<guimenu>Help</guimenu>
-			<guisubmenu>Install new Software...</guisubmenu>
-		</menuchoice>
+			<guimenu>Help[Install new Software...]
 		menu entry by using the following update site URL:
 	
 	

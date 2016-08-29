@@ -20,9 +20,7 @@
 	
 		To start your application, right-click on your Java class, and select
 		menu:
-			<guimenu>Run-As</guimenu>
-			<guisubmenu>Java Application</guisubmenu>
-		</menuchoice>
+			<guimenu>Run-As[Java Application]
 		.
 		You will receive an empty window (
 		`Shell`

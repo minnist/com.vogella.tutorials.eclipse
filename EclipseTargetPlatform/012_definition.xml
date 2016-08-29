@@ -19,12 +19,7 @@
 	
 		A target definition file can be created via
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>Plug-in Development</guisubmenu>
-			<guisubmenu>Target Definition</guisubmenu>
-		</menuchoice>
+			<guimenu>File[New > Other... > Plug-in Development > Target Definition]
 		.
 	
 	
@@ -93,11 +88,7 @@ image::tutorial_targetdefinition50.png[]
 		You can switch the target platform in the Eclipse Preferences.
 		Select
 		menu:
-			<guimenu>Window</guimenu>
-			<guisubmenu>Preferences</guisubmenu>
-			<guisubmenu>Plug-in Development</guisubmenu>
-			<guisubmenu>Target Platform</guisubmenu>
-		</menuchoice>
+			<guimenu>Window[Preferences > Plug-in Development > Target Platform]
 		.
 	
 	

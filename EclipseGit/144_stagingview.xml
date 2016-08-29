@@ -34,12 +34,7 @@
 		view
 		via the
 		menu:
-			<guimenu>Window</guimenu>
-			<guisubmenu>Show View</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>Git</guisubmenu>
-			<guisubmenu>Git Staging</guisubmenu>
-		</menuchoice>
+			<guimenu>Window[Show View > Other... > Git > Git Staging]
 		menu.
 	
 	

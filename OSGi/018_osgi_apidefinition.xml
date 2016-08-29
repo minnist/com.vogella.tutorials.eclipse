@@ -100,12 +100,7 @@ image::x-internal10.png[]
 		preferences via
 		the
 		menu:
-			<guimenu>Window</guimenu>
-			<guisubmenu>Preferences</guisubmenu>
-			<guisubmenu>Java</guisubmenu>
-			<guisubmenu>Compiler</guisubmenu>
-			<guisubmenu>Errors/Warnings</guisubmenu>
-		</menuchoice>
+			<guimenu>Window[Preferences > Java > Compiler > Errors/Warnings]
 		preference setting.
 	
 

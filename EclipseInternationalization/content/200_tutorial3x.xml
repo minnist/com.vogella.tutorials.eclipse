@@ -11,9 +11,7 @@
 	
 		Right-click on the _plugin.xml_ file and select
 		menu:
-			<guimenu>PDE Tools</guimenu>
-			<guisubmenu>Externalize Strings</guisubmenu>
-		</menuchoice>
+			<guimenu>PDE Tools[Externalize Strings]
 		. Accept the default and press ok.
 	
 

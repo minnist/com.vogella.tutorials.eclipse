@@ -13,9 +13,7 @@
 		right
 		click and select
 		menu:
-			<guimenu>Team</guimenu>
-			<guisubmenu>Create Patch</guisubmenu>
-		</menuchoice>
+			<guimenu>Team[Create Patch]
 		.
 	
 
@@ -39,9 +37,7 @@ image::egit_createpatch20.png[]
 		The resulting file can be used to get applied to another Git
 		repository, via
 		menu:
-			<guimenu>Team</guimenu>
-			<guisubmenu>Apply Patch</guisubmenu>
-		</menuchoice>
+			<guimenu>Team[Apply Patch]
 		. You can also apply the patch on a system where Git isn't installed
 		at all, i.e., you don't need a Git repository to apply a patch.
 	

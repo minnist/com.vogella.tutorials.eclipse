@@ -15,12 +15,7 @@
 	
 		Use the
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>Other</guisubmenu>
-			<guisubmenu>Heap Dump</guisubmenu>
-		</menuchoice>
+			<guimenu>File[New > Other... > Other > Heap Dump]
 		menu entry to open a dialog to select for which process you want to
 		acquire a memory dump.
 	
@@ -46,9 +41,7 @@ image::mat_getheapdump10.png[]
 		_Memory Analysis_
 		perspective via
 		menu:
-			<guimenu>Open Perspective</guimenu>
-			<guisubmenu>Other...</guisubmenu>
-		</menuchoice>
+			<guimenu>Open Perspective[Other...]
 		.
 	
 	

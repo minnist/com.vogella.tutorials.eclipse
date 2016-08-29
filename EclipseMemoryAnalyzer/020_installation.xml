@@ -2,9 +2,7 @@
 	
 		Install Eclipse MAT via the
 		menu:
-			<guimenu>Help</guimenu>
-			<guisubmenu>Install New Software...</guisubmenu>
-		</menuchoice>
+			<guimenu>Help[Install New Software...]
 		menu entry.
 		Select the update site of your release from the drop-down box and once its content is downloaded, select
 		_General Purpose Tools_

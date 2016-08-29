@@ -56,9 +56,7 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn,pdfwidth=
 		view
 		and select
 		menu:
-			<guimenu>New</guimenu>
-			<guisubmenu>Query</guisubmenu>
-		</menuchoice>
+			<guimenu>New[Query]
 		.
 	
 	

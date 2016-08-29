@@ -27,12 +27,7 @@
 		.
 		To create a fragment project select
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>Plug-in Development</guisubmenu>
-			<guisubmenu>Fragment Project</guisubmenu>
-		</menuchoice>
+			<guimenu>File[New > Other... > Plug-in Development > Fragment Project]
 		.
 	
 

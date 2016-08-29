@@ -12,9 +12,7 @@
 		product
 		and by selecting
 		menu:
-			<guimenu>Run-as</guimenu>
-			<guisubmenu>Eclipse Application</guisubmenu>
-		</menuchoice>
+			<guimenu>Run-as[Eclipse Application]
 		.
 	
 	NOTE:

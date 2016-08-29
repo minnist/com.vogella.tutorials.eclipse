@@ -6,11 +6,7 @@
 		_.ecore_
 		file and select
 		menu:
-			<guimenu>File</guimenu>
-			<guisubmenu>New</guisubmenu>
-			<guisubmenu>Other...</guisubmenu>
-			<guisubmenu>EMF Generator model</guisubmenu>
-		</menuchoice>
+			<guimenu>File[New > Other... > EMF Generator model]
 		.
 		Create the
 		_webpage.genmodel_

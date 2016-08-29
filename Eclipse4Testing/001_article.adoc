@@ -7,7 +7,7 @@
 Lars Vogel, Simon Scholz (c) 2009, 2016 vogella GmbH
 Version 0.3, 06.09.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: Eclipse4Testing
 
 [abstract]
 This tutorial gives an overview how to test Eclipse 4 components.

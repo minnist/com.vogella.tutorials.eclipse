@@ -1,0 +1,10 @@
+== Installation
+	
+Install Eclipse MAT via the menu:Help[Install New Software...] menu entry.
+Select the update site of your release from the drop-down box and once its content is downloaded, select _General Purpose Tools_ and its sub-entries _Memory Analyzer_ and _Memory Analyzer(Charts)_.
+	
+	
+image::matinstallation10.png[Installation of MAT]
+	
+	
+

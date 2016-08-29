@@ -68,35 +68,36 @@ include::res/start/TodoDetailsPart.java[]
 		The following table gives an overview of which elements should
 			be
 			connected.
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Mapping Java classes with part model element
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Class</entry>
-							<entry>Part ID suffix</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>TodoOverviewPart</entry>
-							<entry>*.todooverview</entry>
-						</row>
-						<row>
-							<entry>TodoDetailsPart</entry>
-							<entry>*.tododetails</entry>
-						</row>
-						<row>
-							<entry>PlaygroundPart</entry>
-							<entry>*.playground</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+					
+						
+|Class
+|Part ID suffix
+						
+					
+					
+						
+|TodoOverviewPart
+|*.todooverview
+						
+						
+|TodoDetailsPart
+|*.tododetails
+						
+						
+|PlaygroundPart
+|*.playground
+						
+					
+				
+			|===
 		
 		
 			The Eclipse 4 model editor allows you to search for an existing

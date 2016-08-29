@@ -6,222 +6,225 @@
 		contains a link to the chapter which covers this annotation. This list
 		is sorted by importance of the annotations, please see the index for
 		an alphanumeric sorting.
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Annotations for dependency injection
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
-				<thead>
-					<row>
-						<entry>Annotation</entry>
-						<entry>Link</entry>
-					</row>
+				
+					
+|Annotation
+|Link
+					
 					Description
-				</thead>
-				<tbody>
-					<row>
-						<entry> @javax.inject.Inject</entry>
-						<entry>
+				
+				
+					
+| @javax.inject.Inject
+|
 							See
 							<xref linkend="dependencyinjection_eclipse" />
 							.
 
-						</entry>
-					</row>
-					<row>
-						<entry>@javax.inject.Named</entry>
-						<entry>
+						
+					
+					
+|@javax.inject.Named
+|
 							See
 							<xref linkend="dependencyinjection_eclipse" />
 							.
-						</entry>
-					</row>
-					<row>
-						<entry>@Optional</entry>
-						<entry>
+						
+					
+					
+|@Optional
+|
 							
 								See
 								<xref linkend="dependencyinjection_eclipse" />
 								.
 							
-						</entry>
-					</row>
+						
+					
 
-					<row>
-						<entry>@Execute</entry>
-						<entry>
+					
+|@Execute
+|
 							
 								See
 								<xref linkend="commands_behaviorannotations" />
 								.
 							
-						</entry>
-					</row>
+						
+					
 
-					<row>
-						<entry>@CanExecute</entry>
-						<entry>
+					
+|@CanExecute
+|
 							
 								See
 								<xref linkend="commands_behaviorannotations" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@AboutToShow</entry>
-						<entry>
+						
+					
+					
+|@AboutToShow
+|
 							
 								See
 								<xref linkend="menuadvanced_dynamic" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@AboutToHide</entry>
-						<entry>
+						
+					
+					
+|@AboutToHide
+|
 							
 								See
 								<xref linkend="menuadvanced_dynamic" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@Persist</entry>
-						<entry>
+						
+					
+					
+|@Persist
+|
 							
 								See
 								<xref linkend="eclipse4editor_persist" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@UIEventTopic</entry>
-						<entry>
+						
+					
+					
+|@UIEventTopic
+|
 							
 								See
 								<xref linkend="eventsystem_annotations" />
 								.
 							
-						</entry>
-					</row>
+						
+					
 
-					<row>
-						<entry>@EventTopic</entry>
-						<entry>
+					
+|@EventTopic
+|
 							
 								See
 								<xref linkend="eventsystem_annotations" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@Preference</entry>
-						<entry>
+						
+					
+					
+|@Preference
+|
 							
 								See
 								<xref linkend="eclipse4_preferences" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@PersistState</entry>
-						<entry>
+						
+					
+					
+|@PersistState
+|
 							
 								See
 								<xref linkend="persiststate" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@PostContextCreate</entry>
-						<entry>
+						
+					
+					
+|@PostContextCreate
+|
 							
 								See
 								<xref linkend="lifecycle_implementation" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@PreSave</entry>
-						<entry>
+						
+					
+					
+|@PreSave
+|
 							
 								See
 								<xref linkend="lifecycle_implementation" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@ProcessAdditions</entry>
-						<entry>
+						
+					
+					
+|@ProcessAdditions
+|
 							
 								See
 								<xref linkend="lifecycle_implementation" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@ProcessRemovals</entry>
-						<entry>
+						
+					
+					
+|@ProcessRemovals
+|
 							
 								See
 								<xref linkend="lifecycle_implementation" />
 								.
 							
-						</entry>
-					</row>
+						
+					
 
-					<row>
-						<entry>@Creatable</entry>
-						<entry>
+					
+|@Creatable
+|
 							
 								See
 								<xref linkend="ownobjects_difrom" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@Singleton</entry>
-						<entry>
+						
+					
+					
+|@Singleton
+|
 							
 								See
 								<xref linkend="ownobjects_difrom" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@GroupUpdates</entry>
-						<entry>
+						
+					
+					
+|@GroupUpdates
+|
 							
 								See
 								<xref linkend="dependencyinjection_eclipse" />
 								.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>@Active</entry>
-						<entry>
+						
+					
+					
+|@Active
+|
 							
 								See
 								<xref linkend="dependencyinjection_active" />
 								.
 							
-						</entry>
-					</row>
+						
+					
 
-				</tbody>
-			</tgroup>
-		</table>
+				
+			
+		|===
 	

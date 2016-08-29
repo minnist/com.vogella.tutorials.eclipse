@@ -25,134 +25,134 @@
 			following table is a
 			reference of the most important
 			OSGi commands.
-		
 
-		
-			<table frame='all'>
+.Table Title
+|===
+
 		=== OSGi commands
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Command</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>help</entry>
-							<entry>Lists the available commands.</entry>
-						</row>
-						<row>
-							<entry>ss</entry>
-							<entry>Lists the installed bundles and
+					
+						
+|Command
+|Description
+						
+					
+					
+						
+|help
+|Lists the available commands.
+						
+						
+|ss
+|Lists the installed bundles and
 								their
 								status.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								ss
 								_vogella_
-							</entry>
-							<entry>
+							
+|
 								Lists bundles and their status
 								that have
 								_vogella_
 								within
 								their name.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								start
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>
+							
+|
 								Starts the bundle with the
 								_<![CDATA[<bundle-id>]]>_
 								ID.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								stop
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>
+							
+|
 								Stops the bundle with the
 								_<![CDATA[<bundle-id>]]>_
 								ID.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								diag
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>Diagnoses a particular bundle. It lists all missing
+							
+|Diagnoses a particular bundle. It lists all missing
 								dependencies.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								install
 								_URL_
-							</entry>
-							<entry>Installs a bundle from a URL.</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Installs a bundle from a URL.
+						
+						
+|
 								uninstall
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>
+							
+|
 								Uninstalls the bundle with the
 								_<![CDATA[<bundle-id>]]>_
 								ID.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								bundle
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>
+							
+|
 								Shows information about the bundle with the
 								_<![CDATA[<bundle-id>]]>_
 								ID,
 								including the
 								registered
 								and used services.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								headers
 								_<![CDATA[<bundle-id>]]>_
-							</entry>
-							<entry>
+							
+|
 								Shows the MANIFST.MF information for a bundle.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								services
 								_filter_
-							</entry>
-							<entry>
+							
+|
 								Shows all available services and their consumer. Filter is
 								an optional LDAP filter, e.g., to see all
 								services which provide
 								a
 								ManagedService implementation use the "services
 								(objectclass=*ManagedService)" command.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 	
 

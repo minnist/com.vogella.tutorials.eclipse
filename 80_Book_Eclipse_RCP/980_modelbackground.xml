@@ -11,21 +11,24 @@
 			is structured into three areas which are
 			described in the following
 			table.
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Architectural areas of the model
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Area</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Mix-ins</entry>
-							<entry>
+					
+						
+|Area
+|Description
+						
+					
+					
+						
+|Mix-ins
+|
 								Abstract
 									interfaces containing the attributes necessary to
 									support their
@@ -40,11 +43,11 @@
 									`MUILabel`
 									contains attributes to manage labels and images.
 								
-							</entry>
-						</row>
-						<row>
-							<entry>Containment Types</entry>
-							<entry>
+							
+						
+						
+|Containment Types
+|
 								Every concrete container specifies a specific interface as
 									its containment type. It allows the generic to be a specific
 									type
@@ -68,22 +71,22 @@
 									`MPart`
 									.
 								
-							</entry>
-						</row>
+							
+						
 
-						<row>
-							<entry>Concrete Classes</entry>
-							<entry>Elements that the application model itself
+						
+|Concrete Classes
+|Elements that the application model itself
 								contains,
 								defined by a combination of various mix-ins and
 								containment
 								types. These are further sub-divided based into packages in the
 								model definition model.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 
 		
 

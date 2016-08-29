@@ -23,40 +23,40 @@ Version 0.3, 06.07.2016
             <tgroup cols="2">
                 <colspec colname="c1" colnum="1" colwidth="1.0*"/>
                 <colspec colname="c2" colnum="2" colwidth="1.0*"/>
-                <thead>
-                    <row>
-                        <entry>Project Nature's ID</entry>
-                        <entry>Description</entry>
-                    </row>
-                </thead>
-                <tbody>
-                    <row>
-                        <entry>org.eclipse.jdt.core.javanature</entry>
-                        <entry>Java Projects</entry>
-                    </row>
-                    <row>
-                        <entry>org.eclipse.buildship.core.gradleprojectnature</entry>
-                        <entry>Gradle Projects</entry>
-                    </row>
-                    <row>
-                        <entry>org.eclipse.m2e.core.maven2Nature</entry>
-                        <entry>Maven Projects</entry>
-                    </row>
-                    <row>
-                        <entry>org.eclipse.pde.core.org.eclipse.pde.PluginNature</entry>
-                        <entry>Eclipse Plugin Projects</entry>
-                    </row>
-                    <row>
-                        <entry>org.eclipse.pde.core.org.eclipse.pde.FeatureNature</entry>
-                        <entry>Eclipse Feature Projects</entry>
-                    </row>
-                    <row>
-                        <entry>org.eclipse.pde.core.org.eclipse.pde.UpdateSiteNature</entry>
-                        <entry>Eclipse Updatesite Projects</entry>
-                    </row>
-                </tbody>
-            </tgroup>
-        </table>
+                
+                    
+|Project Nature's ID
+|Description
+                    
+                
+                
+                    
+|org.eclipse.jdt.core.javanature
+|Java Projects
+                    
+                    
+|org.eclipse.buildship.core.gradleprojectnature
+|Gradle Projects
+                    
+                    
+|org.eclipse.m2e.core.maven2Nature
+|Maven Projects
+                    
+                    
+|org.eclipse.pde.core.org.eclipse.pde.PluginNature
+|Eclipse Plugin Projects
+                    
+                    
+|org.eclipse.pde.core.org.eclipse.pde.FeatureNature
+|Eclipse Feature Projects
+                    
+                    
+|org.eclipse.pde.core.org.eclipse.pde.UpdateSiteNature
+|Eclipse Updatesite Projects
+                    
+                
+            
+        |===
     
     If your Eclipse installation offers some additional project natures, which can be applied
         to a project, you usually can convert the project via context menu.

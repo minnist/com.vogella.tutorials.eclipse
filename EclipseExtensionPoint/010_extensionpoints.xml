@@ -30,24 +30,24 @@ image::extensionpointconcept10.png"
 			<textobject>
 				<phrase>Extensions and extension points concept</phrase>
 			</textobject>
-		
-	
-	
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Extensions and extension points table
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
-				<thead>
-					<row>
-						<entry>Term</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>Plug-in defines extension point</entry>
-						<entry>
+				
+					
+|Term
+|Description
+					
+				
+				
+					
+|Plug-in defines extension point
+|
 							The plug-in defines a contract (API) with the definition of
 							an extension point.
 							This allows other plug-ins to add contributions (extensions) to the extension point.
@@ -67,22 +67,22 @@ image::extensionpointconcept10.png"
 							code
 							to do
 							that.
-						</entry>
-					</row>
-					<row>
-						<entry>A plug-in provides an extension</entry>
-						<entry>
+						
+					
+					
+|A plug-in provides an extension
+|
 							This plug-in provides an extension (contribution) based on
 							the
 							contract defined by an existing extension point.
 							Contributions
 							can
 							be code or data.
-						</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+				
+			
+		|===
 	
 
 

@@ -13,44 +13,47 @@ http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace
 
 	
 		Standard Zest Content providers are:
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Zest JFace Content Provider
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
-				<thead>
-					<row>
-						<entry>Content Provider</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>IGraphContentProvider</entry>
-						<entry>Based on the connections. The connections contain the
+				
+					
+|Content Provider
+|Description
+					
+				
+				
+					
+|IGraphContentProvider
+|Based on the connections. The connections contain the
 							information
 							which nodes they refer to. Cannot display nodes
-							without connections.</entry>
-					</row>
-					<row>
-						<entry>IGraphEntityContentProvider</entry>
-						<entry>Based on the Node which
+							without connections.
+					
+					
+|IGraphEntityContentProvider
+|Based on the Node which
 							contain the information
 							about which
 							relationship they have. These relationship are available in the
-							label provider as EntityConnectionData objects. </entry>
-					</row>
-					<row>
-						<entry>IGraphEntityRelationshipContentProvider </entry>
-						<entry>Node based, the content provider defines
+							label provider as EntityConnectionData objects. 
+					
+					
+|IGraphEntityRelationshipContentProvider 
+|Node based, the content provider defines
 							getRelationShips(sourceNode, destinationNode) which determines
 							the connections. The advantages compared with
 							IGraphEntityContentProvider is that you decide which objects you
-							return. </entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+							return. 
+					
+				
+			
+		|===
 
 	
 

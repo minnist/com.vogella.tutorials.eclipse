@@ -56,32 +56,34 @@ image::tutorial_targetdefinition30.png[Add content to target definition file,pdf
 			_Group by Category_
 			flag and add the following components:
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Target components
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Component</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Eclipse Platform SDK</entry>
-							<entry>Components for RCP</entry>
-						</row>
-						<row>
-							<entry>Equinox Target Components</entry>
-							<entry>The native launchers for the platform, ensure to select
+					
+						
+|Component
+|Description
+						
+					
+					
+						
+|Eclipse Platform SDK
+|Components for RCP
+						
+						
+|Equinox Target Components
+|The native launchers for the platform, ensure to select
 								the non "black and white" entry if this exists. This entry is
 								empty.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 
 		
 

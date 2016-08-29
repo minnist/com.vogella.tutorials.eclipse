@@ -65,26 +65,28 @@
 			OSGi see
 			<xref linkend="osgiarch_semanticversions" />
 			.
-		
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== OSGi identifiers in the manifest file
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="2*" />
 				<colspec colname='c2' colwidth="4*" />
-				<thead>
-					<row>
-						<entry>Identifier</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>Bundle-Name</entry>
-						<entry>Short description of the plug-in.</entry>
-					</row>
-					<row>
-						<entry>Bundle-SymbolicName</entry>
-						<entry>
+				
+					
+|Identifier
+|Description
+					
+				
+				
+					
+|Bundle-Name
+|Short description of the plug-in.
+					
+					
+|Bundle-SymbolicName
+|
 							
 								The unique identifier of the plug-in. If this plug-in is using
 								the
@@ -97,20 +99,20 @@
 							
 								`; singleton:=true`
 							
-						</entry>
-					</row>
-					<row>
-						<entry>Bundle-Version</entry>
-						<entry>Defines the plug-in version and must be incremented if
+						
+					
+					
+|Bundle-Version
+|Defines the plug-in version and must be incremented if
 							a new
 							version of the plug-in is published.
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							Bundle-Activator
-						</entry>
-						<entry>
+						
+|
 							Defines an optional activator class which implements the
 							`BundleActivator`
 							interface. An instance of this class is created when the plug-in
@@ -129,11 +131,11 @@
 							startup. The execution of an activator
 							increases the startup time of the
 							application, therefore this functionality should be used carefully.
-						</entry>
-					</row>
-					<row>
-						<entry>Bundle-RequiredExecutionEnvironment (BREE)</entry>
-						<entry>Specify which Java version is required to run the plug-in.
+						
+					
+					
+|Bundle-RequiredExecutionEnvironment (BREE)
+|Specify which Java version is required to run the plug-in.
 							If
 							this
 							requirement is not fulfilled, then the OSGi
@@ -142,11 +144,11 @@
 							load
 							the
 							plug-in.
-						</entry>
-					</row>
-					<row>
-						<entry>Bundle-ActivationPolicy</entry>
-						<entry>
+						
+					
+					
+|Bundle-ActivationPolicy
+|
 							Setting this to
 							_lazy_
 							will tell the OSGi runtime that this
@@ -158,11 +160,11 @@
 							not activate the plug-in, i.e.,
 							services provided by this plug-in
 							are not available.
-						</entry>
-					</row>
-					<row>
-						<entry>Bundle-ClassPath</entry>
-						<entry>
+						
+					
+					
+|Bundle-ClassPath
+|
 							The Bundle-ClassPath specifies where to load classes from
 							the
 							bundle. The default is '.' which allows classes to be
@@ -172,11 +174,11 @@
 							are called
 							_nested JAR files_
 							.
-						</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+				
+			
+		|===
 	
 
 

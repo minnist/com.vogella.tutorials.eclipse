@@ -32,45 +32,46 @@ image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60
 			important
 			fields. Create the following
 			commands.
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Commands
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>ID</entry>
-							<entry>Name</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>org.eclipse.ui.file.saveAll</entry>
-							<entry>Save</entry>
-						</row>
-						<row>
-							<entry>
+					
+						
+|ID
+|Name
+						
+					
+					
+						
+|org.eclipse.ui.file.saveAll
+|Save
+						
+						
+|
 								org.eclipse.ui.file.exit
-							</entry>
-							<entry>Exit</entry>
-						</row>
-						<row>
-							<entry>com.example.e4.rcp.todo.command.new</entry>
-							<entry>New Todo</entry>
-						</row>
-						<row>
-							<entry>com.example.e4.rcp.todo.command.remove</entry>
-							<entry>Remove Todo</entry>
-						</row>
-						<row>
-							<entry>com.example.e4.rcp.todo.command.test</entry>
-							<entry>For testing</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+|Exit
+						
+						
+|com.example.e4.rcp.todo.command.new
+|New Todo
+						
+						
+|com.example.e4.rcp.todo.command.remove
+|Remove Todo
+						
+						
+|com.example.e4.rcp.todo.command.test
+|For testing
+						
+					
+				
+			|===
 		
 
 	
@@ -137,53 +138,53 @@ include::res/snippets/SaveAllHandler.java[]
 			Use the
 			`com.example.e4.rcp.todo.handler`
 			prefix for all IDs of the handlers.
-		
-		
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Handlers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
 					<colspec colname='c3' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Handler ID</entry>
-							<entry>Command</entry>
-							<entry>Class</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>.saveall</entry>
-							<entry>Save</entry>
-							<entry>SaveAllHandler</entry>
-						</row>
-						<row>
-							<entry>
+					
+						
+|Handler ID
+|Command
+|Class
+						
+					
+					
+						
+|.saveall
+|Save
+|SaveAllHandler
+						
+						
+|
 								.exit
-							</entry>
-							<entry>Exit</entry>
-							<entry>ExitHandler</entry>
-						</row>
-						<row>
-							<entry>.new</entry>
-							<entry>New Todo</entry>
-							<entry>NewTodoHandler</entry>
-						</row>
-						<row>
-							<entry>.remove</entry>
-							<entry>Remove Todo</entry>
-							<entry>RemoveTodoHandler</entry>
-						</row>
-						<row>
-							<entry>.test</entry>
-							<entry>For testing</entry>
-							<entry>TestHandler</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+|Exit
+|ExitHandler
+						
+						
+|.new
+|New Todo
+|NewTodoHandler
+						
+						
+|.remove
+|Remove Todo
+|RemoveTodoHandler
+						
+						
+|.test
+|For testing
+|TestHandler
+						
+					
+				
+			|===
 
 		
 

@@ -66,62 +66,64 @@
 			via the
 			_Position in List_
 			attribute. The following values are allowed:
-		
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Position in list
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
-				<thead>
-					<row>
-						<entry>Value</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>
+				
+					
+|Value
+|Description
+					
+				
+				
+					
+|
 							_first_
-						</entry>
-						<entry>Positions the element on the beginning of the list.</entry>
-					</row>
-					<row>
-						<entry>
+						
+|Positions the element on the beginning of the list.
+					
+					
+|
 							_index:theIndex_
-						</entry>
-						<entry>
+						
+|
 							Places the new model elements at position
 							_theIndex_
 							. Example:
 							_index:0_
 
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							_before:theOtherElementsId_
-						</entry>
-						<entry>
+						
+|
 							Places the new model elements before the model element with the
 							ID
 							_theOtherElementsId_
 							.
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							_after:theotherelementsid_
-						</entry>
-						<entry>
+						
+|
 							Places the new model elements after the model element with the
 							ID
 							_theotherelementsid_
 							.
-						</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+				
+			
+		|===
 		
 			fragments
 			of independent plug-ins

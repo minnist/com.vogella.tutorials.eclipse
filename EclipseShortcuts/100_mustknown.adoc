@@ -1,71 +1,72 @@
 == Minimum
 	The following shortcuts are the absolute minimum a developer
 		should be familiar with to work efficient in Eclipse.
-	
-	
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Must known shortcuts
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
-				<thead>
-					<row>
-						<entry>Shortcut</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>Ctrl + S</entry>
-						<entry>Saves current editor</entry>
-					</row>
-					<row>
-						<entry>Ctrl + 1</entry>
-						<entry>Quickfix; shows potential fixes for warnings, errors or
+				
+					
+|Shortcut
+|Description
+					
+				
+				
+					
+|Ctrl + S
+|Saves current editor
+					
+					
+|Ctrl + 1
+|Quickfix; shows potential fixes for warnings, errors or
 							shows possible actions
-						</entry>
-					</row>
-					<row>
-						<entry>Ctrl + Space</entry>
-						<entry>Content assist/ code completion </entry>
-					</row>
-					<row>
-						<entry>Ctrl + Q </entry>
-						<entry>Goes to the last edited position
-						</entry>
-					</row>
-					<row>
-						<entry>Ctrl+ D</entry>
-						<entry>Deletes current line in the editor
-						</entry>
-					</row>
-					<row>
-						<entry>Ctrl + Shift + O</entry>
-						<entry>Adjusts the imports statements in the current Java source
+						
+					
+					
+|Ctrl + Space
+|Content assist/ code completion 
+					
+					
+|Ctrl + Q 
+|Goes to the last edited position
+						
+					
+					
+|Ctrl+ D
+|Deletes current line in the editor
+						
+					
+					
+|Ctrl + Shift + O
+|Adjusts the imports statements in the current Java source
 							file
-						</entry>
-					</row>
-					<row>
-						<entry>Ctrl + 2, L or F </entry>
-						<entry>Assign statement to new local variable or field
-						</entry>
-					</row>
+						
+					
+					
+|Ctrl + 2, L or F 
+|Assign statement to new local variable or field
+						
+					
 
-					<row>
-						<entry>Ctrl + Shift + T</entry>
-						<entry>Open Type Dialog</entry>
-					</row>
-					<row>
-						<entry>Ctrl + O</entry>
-						<entry>Shows quick outline of a class</entry>
-					</row>
-					<row>
-						<entry>Ctrl + F11</entry>
-						<entry>Run last launched application</entry>
-					</row>
+					
+|Ctrl + Shift + T
+|Open Type Dialog
+					
+					
+|Ctrl + O
+|Shows quick outline of a class
+					
+					
+|Ctrl + F11
+|Run last launched application
+					
 
-				</tbody>
-			</tgroup>
-		</table>
+				
+			
+		|===
 	
 

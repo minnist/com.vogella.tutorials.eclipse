@@ -68,21 +68,23 @@
 			as
 			explained in the following table.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Eclipse Preference scope
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Scope</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Instance scope</entry>
-							<entry>Preferences in this scope are specific to a single Eclipse workspace.
+					
+						
+|Scope
+|Description
+						
+					
+					
+						
+|Instance scope
+|Preferences in this scope are specific to a single Eclipse workspace.
 								If the user runs start same Eclipse
 								application
 								for different workspaces, the
@@ -90,20 +92,20 @@
 								between the
 								applications
 								can be different.
-							</entry>
-						</row>
+							
+						
 
-						<row>
-							<entry>Configuration scope</entry>
-							<entry>Settings for identical for the same installation.
+						
+|Configuration scope
+|Settings for identical for the same installation.
 								Preferences stored in this scope are shared across all
 								workspaces.
-							</entry>
+							
 
-						</row>
-						<row>
-							<entry>Default scope</entry>
-							<entry>Default values can not be changed.
+						
+						
+|Default scope
+|Default values can not be changed.
 								This scope is not stored on disk at all but can be used to store
 								default
 								values for all your keys.
@@ -111,21 +113,21 @@
 								are supplied via
 								configuration files in plug-ins and product
 								definitions.
-							</entry>
-						</row>
-						<row>
-							<entry>BundleDefaultsScope</entry>
-							<entry>
+							
+						
+						
+|BundleDefaultsScope
+|
 								Similar to the default scope, these values are not written to disk.
 								They are read from a
 								file, typically named
 								_preferences.ini_
 								.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 	
 

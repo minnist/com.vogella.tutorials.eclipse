@@ -13,42 +13,45 @@
 		menu
 		or toolbar
 		contribution for an Eclipse plug-in.
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== 
 
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
-				<thead>
-					<row>
-						<entry>Extension Point</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>org.eclipse.ui.command</entry>
-						<entry>Declarative description of the
+				
+					
+|Extension Point
+|Description
+					
+				
+				
+					
+|org.eclipse.ui.command
+|Declarative description of the
 							component
-						</entry>
-					</row>
-					<row>
-						<entry>org.eclipse.ui.handlers</entry>
-						<entry> Defines the behavior, e.g., the Java class which should be
+						
+					
+					
+|org.eclipse.ui.handlers
+| Defines the behavior, e.g., the Java class which should be
 							called
-						</entry>
-					</row>
-					<row>
-						<entry>org.eclipse.ui.menu</entry>
-						<entry>Where and how should the command be
+						
+					
+					
+|org.eclipse.ui.menu
+|Where and how should the command be
 							included
 							in the user
 							interface, e.g., menu, popup menu, toolbar, etc.
-						</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+				
+			
+		|===
 	
 
 

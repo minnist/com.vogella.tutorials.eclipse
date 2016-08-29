@@ -16,32 +16,34 @@
 			how and when the values are updated. The
 			following values are permitted:
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== UpdateValueStrategy
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
-					<thead>
-						<row>
-							<entry>Value</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
+					
+						
+|Value
+|Description
+						
+					
+					
+						
+|
 								`UpdateValueStrategy.POLICY_NEVER`
-							</entry>
-							<entry>Policy constant denoting that the source observable's state should not be
+							
+|Policy constant denoting that the source observable's state should not be
 								tracked and that the destination
 								observable's value should never be updated.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`UpdateValueStrategy.POLICY_ON_REQUEST`
-							</entry>
-							<entry>
+							
+|
 								Policy constant denoting that the source observable's state should not be
 								tracked, but that validation,
 								conversion and updating the destination observable's value should be performed when
@@ -56,24 +58,24 @@
 								`Binding.updateModelToTarget()`
 								to update a
 								single binding.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`UpdateValueStrategy.POLICY_CONVERT`
-							</entry>
-							<entry>Policy constant denoting that the source observable's state should be
+							
+|Policy constant denoting that the source observable's state should be
 								tracked, including validating changes
 								except for validateBeforeSet(Object), but that the destination observable's
 								value should only be updated on
 								request.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`UpdateValueStrategy.POLICY_UPDATE`
-							</entry>
-							<entry>Policy constant denoting that the source observable's state should be
+							
+|Policy constant denoting that the source observable's state should be
 								tracked, and that
 								validation,
 								conversion and
@@ -82,11 +84,11 @@
 								change of the
 								source
 								observable value.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 
 		
 		

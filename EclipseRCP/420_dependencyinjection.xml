@@ -51,21 +51,24 @@ include::res/snippets/namedfield.txt[]
 			The following table gives an overview of dependency injection related
 			annotations based on JSR330 and the Eclipse
 			specific ones.
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Basic annotations for dependency injection
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="3*" />
-					<thead>
-						<row>
-							<entry> Annotation</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>@javax.inject.Inject</entry>
-							<entry>
+					
+						
+| Annotation
+|Description
+						
+					
+					
+						
+|@javax.inject.Inject
+|
 								Defined by JSR330, can be added to a field, a constructor or a
 								method. The Eclipse
 								framework
@@ -73,11 +76,11 @@ include::res/snippets/namedfield.txt[]
 								the corresponding
 								objects into the
 								fields or the parameters of the instance.
-							</entry>
-						</row>
-						<row>
-							<entry>@javax.inject.Named</entry>
-							<entry>
+							
+						
+						
+|@javax.inject.Named
+|
 								Defined by JSR330, defines the key for the value
 								which should be
 								injected. By
@@ -89,11 +92,11 @@ include::res/snippets/namedfield.txt[]
 								constants in the
 								`IServiceConstants`
 								interface.
-							</entry>
-						</row>
-						<row>
-							<entry>@Optional</entry>
-							<entry>
+							
+						
+						
+|@Optional
+|
 								
 									Eclipse specific annotation, marks an injected value
 									to
@@ -134,12 +137,12 @@ include::res/snippets/namedfield.txt[]
 									,
 									anybody listening for SOMEKEY will be injected with null.
 								
-							</entry>
-						</row>
+							
+						
 
-						<row>
-							<entry>@GroupUpdates</entry>
-							<entry>
+						
+|@GroupUpdates
+|
 								Eclipse specific annotation, indicates that updates for this
 								@Inject should be batched.
 								If you
@@ -155,14 +158,14 @@ include::res/snippets/namedfield.txt[]
 								performance optimization and should rarely be
 								necessary in RCP
 								applications.
-							</entry>
+							
 
-						</row>
+						
 
 
-					</tbody>
-				</tgroup>
-			</table>
+					
+				
+			|===
 		
 
 

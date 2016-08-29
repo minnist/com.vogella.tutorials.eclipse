@@ -82,47 +82,49 @@
 
 === Other important classes
 
-		<table frame='all'>
+.Table Title
+|===
+
 	=== Important Eclipse 4 classes
 			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
 				<colspec colname='c3' />
-				<thead>
-					<row>
-						<entry>Class</entry>
-						<entry>Plugin</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>org.eclipse.e4.workbench.ui.internal.E4Workbench</entry>
-						<entry>e4 workbench implementation for the SDK.</entry>
-					</row>
-					<row>
-						<entry>org.eclipse.e4.core.services.internal.annotations.AnnotationsSupport
-						</entry>
-						<entry>Checks for annotations</entry>
-					</row>
-					<row>
-						<entry>org.eclipse.e4.workbench.ui.renderers.swt.WorkbenchRendererFactory
-						</entry>
-						<entry>SWT renderer factory, implements IRendererFactory</entry>
-					</row>
-					<row>
-						<entry>IPresentationEngine with the default implementation of
+				
+					
+|Class
+|Plugin
+|Description
+					
+				
+				
+					
+|org.eclipse.e4.workbench.ui.internal.E4Workbench
+|e4 workbench implementation for the SDK.
+					
+					
+|org.eclipse.e4.core.services.internal.annotations.AnnotationsSupport
+						
+|Checks for annotations
+					
+					
+|org.eclipse.e4.workbench.ui.renderers.swt.WorkbenchRendererFactory
+						
+|SWT renderer factory, implements IRendererFactory
+					
+					
+|IPresentationEngine with the default implementation of
 							PartRenderingEngine
-						</entry>
-						<entry>Translates the model elements into UI components and
+						
+|Translates the model elements into UI components and
 							reflects all modification in the model in the UI. For example if
 							you change a label in the model this engine will update UI.
-						</entry>
-					</row>
+						
+					
 
-				</tbody>
-			</tgroup>
-		</table>
+				
+			
+		|===
 
 	
 

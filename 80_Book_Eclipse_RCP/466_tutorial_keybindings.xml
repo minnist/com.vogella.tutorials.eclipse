@@ -16,29 +16,32 @@ image::exercise_keybindings10.png"
 		
 		
 			Afterwards add the following sub-entries:
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Binding context entries
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>ID</entry>
-							<entry>Name</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>org.eclipse.ui.contexts.dialog</entry>
-							<entry>Dialogs</entry>
-						</row>
-						<row>
-							<entry>org.eclipse.ui.contexts.window</entry>
-							<entry>Windows</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+					
+						
+|ID
+|Name
+						
+					
+					
+						
+|org.eclipse.ui.contexts.dialog
+|Dialogs
+						
+						
+|org.eclipse.ui.contexts.window
+|Windows
+						
+					
+				
+			|===
 		
 		The resulting entry is depicted in the following screenshot.
 		

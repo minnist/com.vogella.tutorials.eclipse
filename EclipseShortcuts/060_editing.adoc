@@ -40,145 +40,145 @@ The following lists contains useful keyboard shortcuts if you are inside your Ja
 
 |===
 
+.Table Title
+|===
 
-<table frame='all'>
 === Cursor navigation and text selection
 <tgroup cols='2' align='left' colsep='1' rowsep='1'>
 <colspec colname='c1' colwidth="1*" />
 <colspec colname='c2' colwidth="3*" />
-<thead>
-<row>
+
+
 Shortcut
 Description
-</row>
-</thead>
-<tbody>
-<row>
+
+
+
+
 Ctrl + &#8592; or Ctrl + &#8594;
 Move one text element in the editor to the left or right
 
-</row>
-<row>
+
+
 Ctrl + &#8593; or &#8595; 
 Scroll up / down a line in the editor
-</row>
 
-<row>
+
+
 Ctrl + Shift + P
  Go to the matching bracket
-</row>
-<row>
+
+
 Shift + Cursor movement
 Select text from the starting position of the cursor
 
-</row>
 
-<row>
+
+
 Alt + Shift &#8593; / &#8595;
 Select the previous / next syntactical element
-</row>
-<row>
+
+
 Alt + Shift  &#8593; / &#8595; / &#8592; / &#8594;
 Extending / reducing the selection of the previous / next
 syntactical element
 
-</row>
-
-</tbody>
-</tgroup>
-</table>
 
 
 
 
+|===
 
-<table frame='all'>
+.Table Title
+|===
+
 === Copy and move lines
 <tgroup cols='2' align='left' colsep='1' rowsep='1'>
 <colspec colname='c1' colwidth="1*"/>
 <colspec colname='c2' colwidth="3*"/>
-<thead>
-<row>
+
+
 Shortcut
 Description
-</row>
-</thead>
-<tbody>
-<row>
+
+
+
+
 Ctrl + Alt + &#8595; 
 Copy current line below the line in which the cursor is
 placed
 
-</row>
 
-<row>
+
+
 Ctrl + Alt + &#8593;
 Copy current line above the line in which the cursor is
 placed
 
-</row>
 
-<row>
+
+
 Alt + Up  
 Move line one line up
-</row>
-<row>
+
+
 Alt + Down 
 Move line one line down
-</row>
-</tbody>
-</tgroup>
-</table>
 
 
 
-<table frame='all'>
+|===
+
+.Table Title
+|===
+
 === Delete
 <tgroup cols='2' align='left' colsep='1' rowsep='1'>
 <colspec colname='c1' colwidth="1*"/>
 <colspec colname='c2' colwidth="3*"/>
-<thead>
-<row>
+
+
 Shortcut
 Description
-</row>
-</thead>
-<tbody>
 
-<row>
+
+
+
+
 Ctrl + D
 Deletes line
-</row>
-<row>
+
+
 Ctrl + Shift + DEL
 Delete until end of line
-</row>
-<row>
+
+
 Ctrl + DEL
 Delete next element
-</row>
-<row>
+
+
 Ctrl + BACKSPACE
 Delete previous element
-</row>
-</tbody>
-</tgroup>
-</table>
 
 
-<table frame='all'>
+
+|===
+
+.Table Title
+|===
+
 === Create new lines
 <tgroup cols='2' align='left' colsep='1' rowsep='1'>
 <colspec colname='c1' colwidth="1*"/>
 <colspec colname='c2' colwidth="3*"/>
-<thead>
-<row>
+
+
 Shortcut
 Description
-</row>
-</thead>
-<tbody>
-<row>
+
+
+
+
 Shift + Enter 
 Adds a blank line below the current line and moves the
 cursor to the
@@ -186,44 +186,44 @@ new line. The difference between a regular enter is
 that the currently line is unchanged, independently of the
 position of the cursor.
 
-</row>
 
-<row>
+
+
 Ctrl+Shift+Enter 
 Same as Shift + Enter but above
 
-</row>
-</tbody>
-</tgroup>
-</table>
 
 
 
-<table frame='all'>
+|===
+
+.Table Title
+|===
+
 === Variable assignment
 <tgroup cols='2' align='left' colsep='1' rowsep='1'>
 <colspec colname='c1' colwidth="1*"/>
 <colspec colname='c2' colwidth="3*"/>
-<thead>
-<row>
+
+
 Shortcut
 Description
-</row>
-</thead>
-<tbody>
 
-<row>
+
+
+
+
 Ctrl + 2, L
 Assign statement to new local variable
-</row>
-<row>
+
+
 Ctrl + 2, F
 Assign statement to new field 
-</row>
 
-</tbody>
-</tgroup>
-</table>
+
+
+
+|===
 
 
 

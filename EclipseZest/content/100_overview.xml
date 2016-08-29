@@ -53,63 +53,65 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
 			arranged on
 			the screen. The following layout managers are provided:
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Layout Manager
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Layout Manager </entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>TreeLayoutAlgorithm</entry>
-							<entry>Graph is displayed in the form of a
-								vertical tree</entry>
-						</row>
-						<row>
-							<entry>HorizontalTreeLayoutAlgorithm</entry>
-							<entry>Similar to TreeLayoutAlgorithm
+					
+						
+|Layout Manager 
+|Description
+						
+					
+					
+						
+|TreeLayoutAlgorithm
+|Graph is displayed in the form of a
+								vertical tree
+						
+						
+|HorizontalTreeLayoutAlgorithm
+|Similar to TreeLayoutAlgorithm
 								but layout is horizontal
-							</entry>
-						</row>
-						<row>
-							<entry>RadialLayoutAlgorithm</entry>
-							<entry>Root is in the center, the others
+							
+						
+						
+|RadialLayoutAlgorithm
+|Root is in the center, the others
 								nodes are placed around
-								this node</entry>
-						</row>
-						<row>
-							<entry>GridLayoutAlgorithm</entry>
-							<entry></entry>
-						</row>
-						<row>
-							<entry>SpringLayoutAlgorithm</entry>
-							<entry>Layout the graph so that
+								this node
+						
+						
+|GridLayoutAlgorithm
+|
+						
+						
+|SpringLayoutAlgorithm
+|Layout the graph so that
 								all connections should have
 								approx. the same length and that the
 								edges overlap minimal
-							</entry>
-						</row>
-						<row>
-							<entry>HorizontalShift</entry>
-							<entry>Moves overlapping nodes to the right</entry>
-						</row>
-						<row>
-							<entry>CompositeLayoutAlgorithm</entry>
-							<entry>Combines other layout algorithms,
+							
+						
+						
+|HorizontalShift
+|Moves overlapping nodes to the right
+						
+						
+|CompositeLayoutAlgorithm
+|Combines other layout algorithms,
 								for example
 								HorizontalShift can be the second layout algorithm to
 								move nodes
 								which were still overlapping if another algorithm is
-								used</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+								used
+						
+					
+				
+			|===
 
 		
 	

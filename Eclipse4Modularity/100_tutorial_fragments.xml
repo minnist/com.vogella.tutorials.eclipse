@@ -324,11 +324,8 @@ image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 				The following
 				screenshot
 				highlights this entry.
-			
-			
-				<mediaobject>
-					<imageobject>
-						<imagedata fileref="images/fragment52.png[]
+
+image::fragment52.png[]
 					
 					<textobject>
 						<phrase>Adding a fragment for the menu</phrase>

@@ -109,42 +109,43 @@ include::res/osgi/bundle.properties[]
 			The following table lists the relevant elements for translating
 			an
 			Eclipse RCP application.
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Translation relevant entities for Eclipse plug-ins
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Entity</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>application model (Application.e4xmi and model fragment
+					
+						
+|Entity
+|Description
+						
+					
+					
+						
+|application model (Application.e4xmi and model fragment
 								files)
-							</entry>
-							<entry>Describes
+							
+|Describes
 								the application model in Eclipse RCP.
-							</entry>
-						</row>
-						<row>
-							<entry>plugin.xml</entry>
-							<entry>Primarily important for Eclipse 3.x based plug-ins.
-							</entry>
-						</row>
-						<row>
-							<entry>Source Code</entry>
-							<entry>The source code contains text, e.g., labels which
+							
+						
+						
+|plugin.xml
+|Primarily important for Eclipse 3.x based plug-ins.
+							
+						
+						
+|Source Code
+|The source code contains text, e.g., labels which
 								must be translated.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 
 	

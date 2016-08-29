@@ -105,56 +105,56 @@
 			available
 			behavior annotations for
 			parts.
-		
 
-		
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Eclipse life cycle annotations for parts
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="2.0*" />
 					<colspec colname='c2' colwidth="5.0*" />
-					<thead>
-						<row>
-							<entry>Annotation</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>@PostConstruct</entry>
-							<entry>Is called after the class is constructed
+					
+						
+|Annotation
+|Description
+						
+					
+					
+						
+|@PostConstruct
+|Is called after the class is constructed
 								and
 								the field and
 								method injection has been performed.
-							</entry>
-						</row>
+							
+						
 
-						<row>
-							<entry>@PreDestroy</entry>
-							<entry>Is called before the class is destroyed.
+						
+|@PreDestroy
+|Is called before the class is destroyed.
 								Can
 								be used to
 								clean up resources.
-							</entry>
-						</row>
-						<row>
-							<entry>@Focus</entry>
-							<entry>
+							
+						
+						
+|@Focus
+|
 								Is called whenever the part
 								gets
 								the focus.
-							</entry>
-						</row>
+							
+						
 
-						<row>
-							<entry>@Persist</entry>
-							<entry>Is called if a save request on the part is
+						
+|@Persist
+|Is called if a save request on the part is
 								triggered by the Eclipse framework.
-							</entry>
-						</row>
-						<row>
-							<entry>@PersistState</entry>
-							<entry>Is called before the model object is
+							
+						
+						
+|@PersistState
+|Is called before the model object is
 								disposed, so that the
 								part
 								is able to save
@@ -162,11 +162,11 @@
 								method is called
 								before the @PreDestroy
 								method.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 
 		

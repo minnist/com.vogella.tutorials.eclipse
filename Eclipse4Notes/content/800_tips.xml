@@ -135,35 +135,35 @@ include::res/command/getid.java[]
 			main application window. This is similar to the
 			`setSaveAndRestore(true)`
 			method call in Eclipse 3.x.
-		
-		
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Sample Table
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Parameter</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>-persistState false|true</entry>
-							<entry>Default is false, if set to false user changes are not
+					
+						
+|Parameter
+|Description
+						
+					
+					
+						
+|-persistState false|true
+|Default is false, if set to false user changes are not
 								recorded.
-							</entry>
-						</row>
-						<row>
-							<entry>-clearPersistedState</entry>
-							<entry>will delete the recorded delta of the last session.
-							</entry>
-						</row>
-						<row>
-							<entry>-deltaRestore true|false</entry>
-							<entry>Controls how the deltas are stored. a) Store deltas and
+							
+						
+						
+|-clearPersistedState
+|will delete the recorded delta of the last session.
+							
+						
+						
+|-deltaRestore true|false
+|Controls how the deltas are stored. a) Store deltas and
 								apply
 								them on startup using the Reconciler. This way new
 								contribution
@@ -172,11 +172,11 @@ include::res/command/getid.java[]
 								model (this is similar to 3.x saveAndRestore(true))
 								and
 								deserialize from XMI.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 	
 

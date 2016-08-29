@@ -88,24 +88,26 @@
 			are described in
 			the following table.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Content providers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
 					<colspec colname='c3' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Interface</entry>
-							<entry>Default implementation</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>IStructuredContentProvider</entry>
-							<entry>ArrayContentProvider</entry>
-							<entry>
+					
+						
+|Interface
+|Default implementation
+|Description
+						
+					
+					
+						
+|IStructuredContentProvider
+|ArrayContentProvider
+|
 								Used for the List-, Combo- and TableViewer.
 								JFace provides
 								a
@@ -122,58 +124,60 @@
 								shared instance use the
 								`ArrayContentProvider.getInstance()`
 								method.
-							</entry>
-						</row>
-						<row>
-							<entry> ITreeContentProvider</entry>
-							<entry>Not available</entry>
-							<entry>Used for the TreeViewer class. Has additional
+							
+						
+						
+| ITreeContentProvider
+|Not available
+|Used for the TreeViewer class. Has additional
 								methods
 								to
 								determine the
 								children and the parents of the elements.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 
 		
 			Important standard label providers are listed in the following table.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Label providers
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="1*" />
 					<colspec colname='c3' colwidth="3*" />
-					<thead>
-						<row>
-							<entry>Required class</entry>
-							<entry>Standard label providers </entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>ILabelProvider</entry>
-							<entry>LabelProvider</entry>
-							<entry>Used for lists and trees,
+					
+						
+|Required class
+|Standard label providers 
+|Description
+						
+					
+					
+						
+|ILabelProvider
+|LabelProvider
+|Used for lists and trees,
 								can return an icon and a label
 								per element.
-							</entry>
-						</row>
-						<row>
-							<entry>CellLabelProvider</entry>
-							<entry>ColumnLabelProvider</entry>
-							<entry>Used for tables.
+							
+						
+						
+|CellLabelProvider
+|ColumnLabelProvider
+|Used for tables.
 								Defines a label provider per column.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 
 		
 	

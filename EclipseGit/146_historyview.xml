@@ -94,11 +94,8 @@ image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
 				click a file
 				to compare it to the previous
 				version.
-			
-			
-				<mediaobject>
-					<imageobject>
-						<imagedata fileref="images/comparemode10.png[]
+
+image::comparemode10.png[]
 					
 					<textobject>
 						<phrase>Compare mode</phrase>
@@ -257,11 +254,8 @@ image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
 				need
 				to also display the
 				history.
-			
-			
-				<mediaobject>
-					<imageobject>
-						<imagedata fileref="images/gitsearch10.png[]
+
+image::gitsearch10.png[]
 					
 					<textobject>
 						<phrase>Git search</phrase>

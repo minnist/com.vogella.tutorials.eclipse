@@ -33,58 +33,58 @@ image::command62.gif" />
 			command
 			is displayed. This different attribute values are summarized in the
 			following table.
-		
 
-		
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Location URIs
 
 				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
 					<colspec colname='c3' />
-					<thead>
-						<row>
-							<entry>Contribution to</entry>
-							<entry>Description</entry>
-							<entry>Uri</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>Application menu</entry>
-							<entry>Displays the command in the menu of the
+					
+						
+|Contribution to
+|Description
+|Uri
+						
+					
+					
+						
+|Application menu
+|Displays the command in the menu of the
 								application
-							</entry>
-							<entry>menu:org.eclipse.ui.main.menu</entry>
-						</row>
-						<row>
-							<entry>Application toolbar</entry>
-							<entry>displays the command in the toolbar of the
+							
+|menu:org.eclipse.ui.main.menu
+						
+						
+|Application toolbar
+|displays the command in the toolbar of the
 								application
-							</entry>
-							<entry>toolbar:org.eclipse.ui.main.toolbar
-							</entry>
-						</row>
-						<row>
-							<entry>View toolbar</entry>
-							<entry> displays the command in the toolbar of the view</entry>
-							<entry> toolbar:viewId - For example to display a menu to
+							
+|toolbar:org.eclipse.ui.main.toolbar
+							
+						
+						
+|View toolbar
+| displays the command in the toolbar of the view
+| toolbar:viewId - For example to display a menu to
 								view
 								with the Id "View1" use "toolbar:View1".
-							</entry>
-						</row>
-						<row>
-							<entry>Context menu / pop-up</entry>
-							<entry>Command is displayed in a context menu, e.g., right
+							
+						
+						
+|Context menu / pop-up
+|Command is displayed in a context menu, e.g., right
 								mouse
 								click on an object
-							</entry>
-							<entry>popup:ID</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+|popup:ID
+						
+					
+				
+			|===
 		
 	
 

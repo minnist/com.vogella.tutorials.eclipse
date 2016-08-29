@@ -84,45 +84,46 @@
 		
 			The following table gives an overview of the supported IDs and
 			their validity.
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Default BindingContext values
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="3.0*" />
 					<colspec colname='c2' colwidth="2.0*" />
-					<thead>
-						<row>
-							<entry>Context ID</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
+					
+						
+|Context ID
+|Description
+						
+					
+					
+						
+|
 								org.eclipse.ui.contexts.dialogAndWindow
-							</entry>
-							<entry>Key bindings valid for dialogs
+							
+|Key bindings valid for dialogs
 								and windows
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								org.eclipse.ui.contexts.dialog
-							</entry>
-							<entry>Key bindings valid
+							
+|Key bindings valid
 								for dialogs
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								org.eclipse.ui.contexts.window
-							</entry>
-							<entry>Key bindings valid for windows</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+|Key bindings valid for windows
+						
+					
+				
+			|===
 
 		
 
@@ -174,45 +175,45 @@ image::keybindings20.png" scale="30[How to add the BindingContext Entries,pdfwid
 			It
 			is better to use the M1 - M4 meta keys.
 
-		
+.Table Title
+|===
 
-		<table frame='all'>
 	=== Key mapping
 			<tgroup cols='3' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
 				<colspec colname='c3' colwidth="2*" />
-				<thead>
-					<row>
-						<entry>Control Key</entry>
-						<entry>Mapping for Windows and Linux</entry>
-						<entry>Mapping for Mac</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>M1</entry>
-						<entry>Ctrl</entry>
-						<entry>Command</entry>
-					</row>
-					<row>
-						<entry>M2</entry>
-						<entry>Shift</entry>
-						<entry>Shift</entry>
-					</row>
-					<row>
-						<entry>M3</entry>
-						<entry>Alt</entry>
-						<entry>Alt</entry>
-					</row>
-					<row>
-						<entry>M4</entry>
-						<entry>Undefined</entry>
-						<entry>Ctrl</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+				
+					
+|Control Key
+|Mapping for Windows and Linux
+|Mapping for Mac
+					
+				
+				
+					
+|M1
+|Ctrl
+|Command
+					
+					
+|M2
+|Shift
+|Shift
+					
+					
+|M3
+|Alt
+|Alt
+					
+					
+|M4
+|Undefined
+|Ctrl
+					
+				
+			
+		|===
 
 		
 			These values are defined in the

@@ -31,21 +31,23 @@
 			first and the most complex one as the
 			last entry.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Layout Manager
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Layout Manager</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>AbsoluteLayout</entry>
-							<entry>Allows you to specify the exact position, the width and
+					
+						
+|Layout Manager
+|Description
+						
+					
+					
+						
+|AbsoluteLayout
+|Allows you to specify the exact position, the width and
 								the height of
 								components. As user interfaces may be
 								used on
@@ -53,40 +55,40 @@
 								with
 								different
 								sizes this layout manager should be avoided.
-							</entry>
-						</row>
-						<row>
-							<entry>FillLayout</entry>
-							<entry>Arranges
+							
+						
+						
+|FillLayout
+|Arranges
 								equal-sized widgets in a
 								single row or
 								column.
-							</entry>
-						</row>
-						<row>
-							<entry>RowLayout</entry>
-							<entry>Puts the widgets in rows or columns and allows you to
+							
+						
+						
+|RowLayout
+|Puts the widgets in rows or columns and allows you to
 								control the layout with options, e.g., wrap, spacing,
 								fill and so
 								on.
-							</entry>
-						</row>
-						<row>
-							<entry>GridLayout</entry>
-							<entry>Arranges widgets in a
+							
+						
+						
+|GridLayout
+|Arranges widgets in a
 								grid.
-							</entry>
-						</row>
-						<row>
-							<entry>FormLayout</entry>
-							<entry>Arranges the widgets with the help of the associated
+							
+						
+						
+|FormLayout
+|Arranges the widgets with the help of the associated
 								attachments.
 
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 		
 			If you assign a layout manager to a control you do not have to call
@@ -244,21 +246,23 @@ include::res/gridlayout/Constructor.java[]
 		
 			The most important attributes are defined in the following table.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== GridData
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Parameter</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>horizontalAlignment</entry>
-							<entry>
+					
+						
+|Parameter
+|Description
+						
+					
+					
+						
+|horizontalAlignment
+|
 								Defines how the control is positioned horizontally
 								within a
 								cell
@@ -272,11 +276,11 @@ include::res/gridlayout/Constructor.java[]
 								, or
 								`SWT.FILL`
 								).
-							</entry>
-						</row>
-						<row>
-							<entry>verticalAlignment</entry>
-							<entry>
+							
+						
+						
+|verticalAlignment
+|
 								Defines how the control is
 								positioned vertically within a
 								cell
@@ -293,53 +297,53 @@ include::res/gridlayout/Constructor.java[]
 								(treated the same as SWT.END), or
 								`SWT.FILL`
 								).
-							</entry>
-						</row>
-						<row>
-							<entry>grabExcessHorizontalSpace</entry>
-							<entry>Defines whether the control is
+							
+						
+						
+|grabExcessHorizontalSpace
+|Defines whether the control is
 								extended by the layout
 								manager to
 								take all
 								the
 								remaining
 								horizontal space.
-							</entry>
-						</row>
-						<row>
-							<entry>grabExcessVerticalSpace</entry>
-							<entry>Defines whether the control grabs any remaining vertical
+							
+						
+						
+|grabExcessVerticalSpace
+|Defines whether the control grabs any remaining vertical
 								space.
-							</entry>
-						</row>
-						<row>
-							<entry>horizontalSpan</entry>
-							<entry> Defines the number of column cells
+							
+						
+						
+|horizontalSpan
+| Defines the number of column cells
 								that the control will
 								take
 								up.
-							</entry>
-						</row>
-						<row>
-							<entry>verticalSpan</entry>
-							<entry>Defines the number of row cells that
+							
+						
+						
+|verticalSpan
+|Defines the number of row cells that
 								the control will take
 								up.
-							</entry>
-						</row>
-						<row>
-							<entry>heightHint </entry>
-							<entry>Defines the preferred height in pixels.
-							</entry>
-						</row>
-						<row>
-							<entry>widthHint  </entry>
-							<entry>Defines the preferred width in pixels.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+						
+|heightHint 
+|Defines the preferred height in pixels.
+							
+						
+						
+|widthHint  
+|Defines the preferred width in pixels.
+							
+						
+					
+				
+			|===
 		
 		
 			If the widget has the
@@ -404,29 +408,31 @@ include::res/gridlayout/GirdDataFactory.java[]
 			widget defines the
 			`layout`
 			method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
-		
-		<table frame='all'>
+
+.Table Title
+|===
+
 	=== Layout flags
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="2*" />
-				<thead>
-					<row>
-						<entry>Flag</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>SWT.ALL</entry>
-						<entry>Flag forces all descendents to be marked for layout. AFAIK, there's no good reason to ever use this
+				
+					
+|Flag
+|Description
+					
+				
+				
+					
+|SWT.ALL
+|Flag forces all descendents to be marked for layout. AFAIK, there's no good reason to ever use this
 							flag.
 							If it's actually doing something, it could be replaced by a series of calls to requestLayout.
-						</entry>
-					</row>
-					<row>
-						<entry>SWT.CHANGED</entry>
-						<entry>The flag causes
+						
+					
+					
+|SWT.CHANGED
+|The flag causes
 							subsequent calls to
 							Layout.layout(...) to receive true for the second argument, which
 							forces
@@ -441,15 +447,15 @@ include::res/gridlayout/GirdDataFactory.java[]
 							I can't
 							think of any circumstance in which we should keep
 							SWT.CHANGED.
-						</entry>
-					</row>
-					<row>
-						<entry></entry>
-						<entry></entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+					
+|
+|
+					
+				
+			
+		|===
 
 
 		-

@@ -137,24 +137,24 @@
 			The purpose of these annotations are
 			described in
 			the following table.
-		
 
-		
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Behavior annotations for handler classes
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1.0*" />
 					<colspec colname='c2' colwidth="4.0*" />
-					<thead>
-						<row>
-							<entry>Annotation</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>@Execute</entry>
-							<entry>
+					
+						
+|Annotation
+|Description
+						
+					
+					
+						
+|@Execute
+|
 								
 
 									Marks the method which is responsible for the action
@@ -169,11 +169,11 @@
 
 								
 
-							</entry>
-						</row>
-						<row>
-							<entry>@CanExecute</entry>
-							<entry>
+							
+						
+						
+|@CanExecute
+|
 								
 									Marks a method to be
 									visited by the Eclipse framework to
@@ -202,13 +202,13 @@
 									`@CanExecute`
 									method.
 								
-							</entry>
-						</row>
+							
+						
 
 
-					</tbody>
-				</tgroup>
-			</table>
+					
+				
+			|===
 		
 
 		The following example demonstrates the implementation of a
@@ -421,79 +421,80 @@ include::res/canexecutetrigger/triggerevent.java[]
 			is available in
 			`org.eclipse.ui.IWorkbenchCommandConstants`
 			.
-		
 
-		<table frame='all'>
+.Table Title
+|===
+
 	=== Default IDs for commonly used commands
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
-				<thead>
-					<row>
-						<entry>Command</entry>
-						<entry>ID</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>Save</entry>
-						<entry>org.eclipse.ui.file.save</entry>
-					</row>
-					<row>
-						<entry>Save All</entry>
-						<entry>org.eclipse.ui.file.saveAll</entry>
-					</row>
-					<row>
-						<entry>Undo</entry>
-						<entry>org.eclipse.ui.edit.undo</entry>
-					</row>
-					<row>
-						<entry>Redo</entry>
-						<entry>org.eclipse.ui.edit.redo</entry>
-					</row>
-					<row>
-						<entry>Cut</entry>
-						<entry>org.eclipse.ui.edit.cut</entry>
-					</row>
-					<row>
-						<entry>Copy</entry>
-						<entry>org.eclipse.ui.edit.copy</entry>
-					</row>
-					<row>
-						<entry>Paste</entry>
-						<entry>org.eclipse.ui.edit.paste</entry>
-					</row>
-					<row>
-						<entry>Delete</entry>
-						<entry> org.eclipse.ui.edit.delete</entry>
-					</row>
-					<row>
-						<entry>Import</entry>
-						<entry>org.eclipse.ui.file.import</entry>
-					</row>
-					<row>
-						<entry>Export</entry>
-						<entry>org.eclipse.ui.file.export</entry>
-					</row>
-					<row>
-						<entry>Select All</entry>
-						<entry>org.eclipse.ui.edit.selectAll</entry>
-					</row>
-					<row>
-						<entry>About</entry>
-						<entry>org.eclipse.ui.help.aboutAction</entry>
-					</row>
-					<row>
-						<entry>Preferences</entry>
-						<entry>org.eclipse.ui.window.preferences</entry>
-					</row>
-					<row>
-						<entry>Exit</entry>
-						<entry>org.eclipse.ui.file.exit</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+				
+					
+|Command
+|ID
+					
+				
+				
+					
+|Save
+|org.eclipse.ui.file.save
+					
+					
+|Save All
+|org.eclipse.ui.file.saveAll
+					
+					
+|Undo
+|org.eclipse.ui.edit.undo
+					
+					
+|Redo
+|org.eclipse.ui.edit.redo
+					
+					
+|Cut
+|org.eclipse.ui.edit.cut
+					
+					
+|Copy
+|org.eclipse.ui.edit.copy
+					
+					
+|Paste
+|org.eclipse.ui.edit.paste
+					
+					
+|Delete
+| org.eclipse.ui.edit.delete
+					
+					
+|Import
+|org.eclipse.ui.file.import
+					
+					
+|Export
+|org.eclipse.ui.file.export
+					
+					
+|Select All
+|org.eclipse.ui.edit.selectAll
+					
+					
+|About
+|org.eclipse.ui.help.aboutAction
+					
+					
+|Preferences
+|org.eclipse.ui.window.preferences
+					
+					
+|Exit
+|org.eclipse.ui.file.exit
+					
+				
+			
+		|===
 
 	
 

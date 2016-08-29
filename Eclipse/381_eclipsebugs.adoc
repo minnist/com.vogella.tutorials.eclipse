@@ -74,7 +74,10 @@ to
 project
 will occur. The following rules can
 be used as guideline.
-<table frame='all'>
+
+.Table Title
+|===
+
 .Bug priorities
 |===
 |Priority |Description

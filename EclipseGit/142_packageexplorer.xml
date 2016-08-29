@@ -26,56 +26,58 @@ image::jdt_packageexplorer_icondecu10.png"
 		The file name describes the state of the file from the following
 		table:
 
-		<table frame='all'>
+.Table Title
+|===
+
 	=== Git label decorations
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="1*" />
 				<colspec colname='c2' colwidth="3*" />
-				<thead>
-					<row>
-						<entry>State</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>tracked</entry>
-						<entry>File is committed to the Git repository and has not
+				
+					
+|State
+|Description
+					
+				
+				
+					
+|tracked
+|File is committed to the Git repository and has not
 							changed.
-						</entry>
-					</row>
-					<row>
-						<entry>untracked</entry>
-						<entry>File is neither staged nor committed. </entry>
-					</row>
-					<row>
-						<entry>ignored</entry>
-						<entry>File is flagged to be ignored by Git operations. </entry>
-					</row>
-					<row>
-						<entry>dirty</entry>
-						<entry>File has changed since the last commit.</entry>
-					</row>
+						
+					
+					
+|untracked
+|File is neither staged nor committed. 
+					
+					
+|ignored
+|File is flagged to be ignored by Git operations. 
+					
+					
+|dirty
+|File has changed since the last commit.
+					
 
 
-					<row>
-						<entry>staged</entry>
-						<entry>
+					
+|staged
+|
 							Changes in the file will be included in the next
 							commit.
-						</entry>
-					</row>
-					<row>
-						<entry>partially-staged</entry>
-						<entry>
+						
+					
+					
+|partially-staged
+|
 							The resource has changes which are added
 							to the index and
 							additional unstaged changes in the working tree
-						</entry>
-					</row>
-					<row>
-						<entry>added</entry>
-						<entry>
+						
+					
+					
+|added
+|
 							Staged but not yet committed, i.e. snapshot
 							of this
 							file has been
@@ -84,21 +86,21 @@ image::jdt_packageexplorer_icondecu10.png"
 							_staged_
 							status,
 							but the file wasn't under Git version control before.
-						</entry>
-					</row>
+						
+					
 
-					<row>
-						<entry>removed</entry>
-						<entry>The resource is staged for removal from the Git repository.
-						</entry>
-					</row>
-					<row>
-						<entry>conflict</entry>
-						<entry>A merge conflict exists for the file. </entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+					
+|removed
+|The resource is staged for removal from the Git repository.
+						
+					
+					
+|conflict
+|A merge conflict exists for the file. 
+					
+				
+			
+		|===
 
 	
 	A combination of the staged and dirty status means: some parts

@@ -1,43 +1,45 @@
 == XPaths in model fragments
 	XPaths can also be used to define the contributing place in the model for a model fragment. The following table
 		gives several examples how you can use XPath to define the model element you want to extend.
-	
-	<table frame='all'>
+
+.Table Title
+|===
+
 === Sample XPaths for the Application Model
 		<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 			<colspec colname='c1' colwidth="40%" />
 			<colspec colname='c2' colwidth="60%" />
-			<thead>
-				<row>
-					<entry>XPath</entry>
-					<entry>Element in Application Model</entry>
-				</row>
-			</thead>
-			<tbody>
-				<row>
-					<entry>/</entry>
-					<entry>The slash (/) always addresses the root element of an XML
+			
+				
+|XPath
+|Element in Application Model
+				
+			
+			
+				
+|/
+|The slash (/) always addresses the root element of an XML
 						file, which always is the MApplication element.
-					</entry>
-				</row>
-				<row>
-					<entry>//mainMenu</entry>
-					<entry>Contribute to the main menu.</entry>
-				</row>
-				<row>
-					<entry>//mainMenu/children or //mainMenu/*[1]
-					</entry>
-					<entry>
+					
+				
+				
+|//mainMenu
+|Contribute to the main menu.
+				
+				
+|//mainMenu/children or //mainMenu/*[1]
+					
+|
 						Contribute to the first child of the main menu. In most
 						application this would be the
 						<guimenu>File</guimenu>
 						menu.
-					</entry>
-				</row>
-				<row>
-					<entry>//mainMenu/*[@*[local-name()='type' and .='menu:Menu']]
-					</entry>
-					<entry>
+					
+				
+				
+|//mainMenu/*[@*[local-name()='type' and .='menu:Menu']]
+					
+|
 						
 							Contribute to the first Menu of the main menu. This xpath is more
 							detailed than the one above since it also
@@ -52,15 +54,15 @@
 							<guimenu>File</guimenu>
 							menu.
 						
-					</entry>
-				</row>
-				<row>
-					<entry>//trimBars[@side="Bottom"]</entry>
-					<entry>Contribute to the bottom trimbar.</entry>
-				</row>
-				<row>
-					<entry>//trimBars[not(@side)]</entry>
-					<entry>
+					
+				
+				
+|//trimBars[@side="Bottom"]
+|Contribute to the bottom trimbar.
+				
+				
+|//trimBars[not(@side)]
+|
 						Contribute to the top trimbar. When the
 						`MTrimBar`
 						is on top
@@ -68,32 +70,32 @@
 						attribute is omitted, therefore
 						`not(@side)`
 						is used.
-					</entry>
-				</row>
-				<row>
-					<entry>//children[@*[local-name()='type' and .='basic:Part']]
-					</entry>
-					<entry>
+					
+				
+				
+|//children[@*[local-name()='type' and .='basic:Part']]
+					
+|
 						Contribute to a
 						`MPart`
 						.
-					</entry>
-				</row>
-				<row>
-					<entry>//children[@*[local-name()='type' and
+					
+				
+				
+|//children[@*[local-name()='type' and
 						.='basic:Part']][./tags = 'Editor']
-					</entry>
-					<entry>
+					
+|
 						Contribute to a
 						`MPart`
 						which is tagged with the
 						_Editor_
 						tag.
-					</entry>
-				</row>
-			</tbody>
-		</tgroup>
-	</table>
+					
+				
+			
+		
+	|===
 	
 		From these examples more useful XPaths for navigating the
 		Application Model can be derived.

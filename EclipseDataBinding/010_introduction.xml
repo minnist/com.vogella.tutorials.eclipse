@@ -76,18 +76,18 @@
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Factory</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
+					
+						
+|Factory
+|Description
+						
+					
+					
+						
+|
 								`PojoProperties`
-							</entry>
-							<entry>
+							
+|
 								Used to create
 								`IObservableValue`
 								for Java objects. The term Pojo (Plain old Java object) is used to describe a Java object which
@@ -95,13 +95,13 @@
 								not implement
 								a
 								specific framework API.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`BeanProperties`
-							</entry>
-							<entry>
+							
+|
 								Used for Java Beans. A Java Bean is a Java object which follows the Java Bean
 								specification. This specification
 								requires that the class
@@ -115,47 +115,47 @@
 								support via the
 								`PropertyChangeSupport`
 								class and propagate changes to registered listeners.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`WidgetProperties`
-							</entry>
-							<entry>
+							
+|
 								Used for properties of
 								SWT
 								widgets.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`ViewerProperties`
-							</entry>
-							<entry>
+							
+|
 								Used for properties of
 								JFace Viewer.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`Properties`
-							</entry>
-							<entry>
+							
+|
 								Used for properties of non specialized types, like Objects, Collections or Maps.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`Observables`
-							</entry>
-							<entry>
+							
+|
 								Used for properties of special Objects, Collections, Maps
 								and Entries of an IObservableMap.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 
 		

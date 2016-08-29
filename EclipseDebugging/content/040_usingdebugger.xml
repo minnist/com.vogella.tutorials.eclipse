@@ -103,40 +103,42 @@ image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 			The
 			meaning of these keys is explained in the following table.
 
-			<table frame='all'>
+.Table Title
+|===
+
 		=== Debugging key bindings / shortcuts
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' colwidth="1*" />
 					<colspec colname='c2' colwidth="4*" />
-					<thead>
-						<row>
-							<entry>Key</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>F5 </entry>
-							<entry>Executes the currently selected line and goes to the next
+					
+						
+|Key
+|Description
+						
+					
+					
+						
+|F5 
+|Executes the currently selected line and goes to the next
 								line in
 								your program. If the selected line is a method call the
 								debugger steps into the
 								associated
 								code.
-							</entry>
-						</row>
-						<row>
-							<entry>F6 </entry>
-							<entry>F6
+							
+						
+						
+|F6 
+|F6
 								steps over the call, i.e. it executes a method
 								without
 								stepping into it in
 								the debugger.
-							</entry>
-						</row>
-						<row>
-							<entry>F7</entry>
-							<entry>F7 steps out to the caller of the
+							
+						
+						
+|F7
+|F7 steps out to the caller of the
 								currently executed
 								method.
 								This
@@ -146,20 +148,20 @@ image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 								the
 								caller of
 								this method.
-							</entry>
-						</row>
-						<row>
-							<entry>F8</entry>
-							<entry>F8 tells the Eclipse debugger to resume the execution of
+							
+						
+						
+|F8
+|F8 tells the Eclipse debugger to resume the execution of
 								the
 								program code until is reaches the next breakpoint or
 								watchpoint.
-							</entry>
-						</row>
+							
+						
 
-					</tbody>
-				</tgroup>
-			</table>
+					
+				
+			|===
 		
 
 		

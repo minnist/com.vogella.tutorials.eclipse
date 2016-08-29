@@ -27,12 +27,8 @@
 				is depicted in
 				the following
 				screenshot.
-			
 
-			
-				<mediaobject>
-					<imageobject>
-						<imagedata fileref="images/tutorial_servicepackage10.png[]
+image::tutorial_servicepackage10.png[]
 					
 					<textobject>
 						<phrase>Specify the package for the creation of a class</phrase>

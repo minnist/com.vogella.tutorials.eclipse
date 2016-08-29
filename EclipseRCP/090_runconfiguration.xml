@@ -117,23 +117,25 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 
 		The following table lists several useful launch arguments.
 
-		<table frame='all'>
+.Table Title
+|===
+
 	=== Launch parameters
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' colwidth="2*" />
 				<colspec colname='c2' colwidth="5*" />
-				<thead>
-					<row>
-						<entry>Parameter</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>
+				
+					
+|Parameter
+|Description
+					
+				
+				
+					
+|
 							<parameter class='option'>consoleLog_
-						</entry>
-						<entry>
+						
+|
 							Error messages of the running
 							Eclipse application
 							are written to
@@ -144,13 +146,13 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 							Eclipse IDE
 							_Console_
 							view that started the RCP application.
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							<parameter class='option'>nl_
-						</entry>
-						<entry>
+						
+|
 							
 								Specifies
 								the locale used for
@@ -171,43 +173,43 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 								useful
 								for testing translations.
 							
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							<parameter class='option'>console_
-						</entry>
-						<entry>Provides access to an
+						
+|Provides access to an
 							OSGi
 							console where you can check the
 							status of
 							your application.
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							<parameter class='option'>noExit_
-						</entry>
-						<entry>Keeps the OSGi console open
+						
+|Keeps the OSGi console open
 							even if the
 							application
 							crashes.
 							This allows to analyze the application
 							dependencies even if the
 							application crashes during startup.
-						</entry>
-					</row>
-					<row>
-						<entry>
+						
+					
+					
+|
 							<parameter class='option'>clearPersistedState_
-						</entry>
-						<entry>Deletes cached runtime changes of the Eclipse 4 application
+						
+|Deletes cached runtime changes of the Eclipse 4 application
 							model.
-						</entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+						
+					
+				
+			
+		|===
 
 
 	

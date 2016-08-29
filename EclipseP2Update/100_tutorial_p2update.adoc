@@ -16,6 +16,11 @@ And a feature called _com.example.p2.feature_ which contain the _com.example.p2.
 image::new-feature-wizard.png[]
 
 
+=== Ensure the exported product works
+    
+Export or run your build system to create a deployable application.
+Ensure that the exported application starts correctly outside of the Eclipse IDE.
+
 === Add the p2 feature to the product
 		
 Add the following features to the list of the _Contents_ tab.

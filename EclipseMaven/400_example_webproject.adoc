@@ -1,14 +1,13 @@
 == Exercise: Create a Java web project in Eclipse using Maven
 
-== Target of this exercise
+=== Target of this exercise
+
 This exercise demonstrates how to create a web application in Eclipse which uses Maven. 
 It assumes that you have already configured Eclipse for the creation of web applications.
-
 
 === Create Maven web project project
 		
 Create a new Maven project called _com.vogella.javaweb.maven.first_ via the menu:File[New>Other>Maven>Maven Project] entry.
-		
 On the archetype selection, select the _maven-archetype-webapp_ entry and click the _Next_ button.
 		
 image::maven_webproject10.png[Webproject archetype with Maven]
@@ -42,7 +41,6 @@ image::maven_webproject40.png[Start Maven project on server]
 	
 image::maven_webproject50.png[Start Maven project on server]	
 			
-
 image::maven_webproject60.png[Start Maven project on server]	
 			
 		

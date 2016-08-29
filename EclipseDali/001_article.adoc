@@ -1,47 +1,25 @@
-= Android - Tutorial
+= JPA with Eclipse Dali - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 0.2, 29.08.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: EclipseDali
 
 [abstract]
-
-
-=== JPA with Eclipse Dali - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2009</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>07.07.2009</pubdate>
-		<releaseinfo>
-			Version 0.1
-		</releaseinfo>
-		
-		<abstract id="abstract">
-	=== Eclipse Dali
-			 This article describes how to use Eclipse Dali for JPA
-				mapping.
-			
-
-			This article is based on Eclipse 3.5 (Eclipse Galileo). 
-		
-	
+Eclipse Dali.
+This article describes how to use Eclipse Dali for JPA
+mapping.
+This article is based on Eclipse 3.5 (Eclipse Galileo). 
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_installation.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::030_usingdali.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	

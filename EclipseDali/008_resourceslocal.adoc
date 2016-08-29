@@ -1,3 +1,3 @@
 == Links and Literature
 	
-include::../10_Include/resources.adoc[]
+Nothing listed.

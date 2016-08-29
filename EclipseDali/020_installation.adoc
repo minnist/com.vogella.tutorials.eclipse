@@ -1,16 +1,10 @@
 == Installation
 	
-		Use the update manager to install from "Web, XML, and Java
-		Development" the "Dali Java Persistence Tools" and "Dali Java
-		Persistence Tools - EclipseLink Support (Optional)". Install also
-		"EclipseLink JPA" from "EclipseRT Target Platform Components".
-		.
+Use the update manager to install from "Web, XML, and Java
+Development" the "Dali Java Persistence Tools" and "Dali Java
+Persistence Tools - EclipseLink Support (Optional)". Install also
+"EclipseLink JPA" from "EclipseRT Target Platform Components".
 	
-	
-		Please see
-http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager">
-			Using the Eclipse Update Manager
-		.
-	
-
+Please see
+http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager[Using the Eclipse Update Manager].
 

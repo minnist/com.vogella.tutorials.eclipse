@@ -1,72 +1,40 @@
-
 == Use the Eclipse Memory Analyzer
-	
-		After a new
-		_heap dump_
-		with the
-		_.hprof_
-		ending has
-		been created, you can open it via a double-click in
-		Eclipse.
-		If you used MAT to create the heap dump, it
-		should be opened
-		automatically.
-	
-	
-		You may need
-		to
-		refresh your
-		project (F5 on the project).
-		Double-click
-		the
-		file
-		and
-		select the
-		_Leak Suspects Report_
-		.
-	
-	
-image::matleakreport10.png[]
 
-			
-			<textobject>
-				<phrase>Opening a leak report</phrase>
-			</textobject>
-		
-	
-	
-		The overview page allows you to start the analysis of the heap
-		dump.
-		The
-		_dominator tree_
-		gives quickly an overview of the
-		used objects.
-	
-	
-image::matleakreport20.png[]
+=== Reviewing a heap dump
 
-			
-			<textobject>
-				<phrase>Opening the dominator tree</phrase>
-			</textobject>
-		
-	
+After a new _heap dump_ with the _.hprof_ ending has been created, you can open it via a double-click in Eclipse.
+If you used MAT to create the heap dump, it should be opened automatically.
 
-	In the dominator tree you see the references which are hold.
-	
+You may need to refresh your project (F5 on the project).
+Double-click the file and select the _Leak Suspects Report_.
 
-	
-image::matdominatortree10.png[]
-			
-			<textobject>
-				<phrase>MAT dominator tree</phrase>
-			</textobject>
-		
-	
-	
-		To find which element is holding the reference to this object, select
-		the entry and select
-		_Find shortest path to GC root_
-		from the context menu.
-	
+image::matleakreport10.png[Opening a leak report]
+
+
+The overview page allows you to start the analysis of the heap dump.
+The _dominator tree_ gives quickly an overview of the used objects.
+
+
+image::matleakreport20.png[Opening the dominator tree]
+
+
+In the dominator tree you see the references which are hold.
+
+
+image::matdominatortree10.png[MAT dominator tree]
+
+
+To find which element is holding the reference to this object, select the entry and select _Find shortest path to GC root_ from the context menu.
+
+
+=== Analyzing Android heap dumps with Eclipse
+    
+Android allows to create heap dumps of an application's heap.
+This heap dump is stored in a binary format called HPROF.
+To create a heap dump use the _Dump HPROF file_ button in the _DDMS_ _Perspective_.
+    
+The Android heap dump format is similar to the Java heap dump format but not exactly the same.
+Eclipse MAT can work directly with the Android heap dump format.
+
+
 

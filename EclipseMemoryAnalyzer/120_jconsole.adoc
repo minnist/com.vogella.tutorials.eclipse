@@ -1,27 +1,12 @@
 == jconsole
-	
-		You can also interactively create a
-		_heap dumps_
-		via the
-		_jconsole_
-		, a tool which is included in the JDK.
-		Type
-		_jconsole_
-		in the command line
-		to start it.
-	
-	 To
-		allow a Java program the access of jconsole use the
-		-Dcom.sun.management.jmxremote start option.
-	
-	Use them MBeans |
-		com.sun.management | HotSpotDiagnostics |
-		Operations |DumpHeap .
-	
-	
-		More info can be found in
-http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">JConsole
-		and
-http://java.sun.com/j2se/1.5.0/docs/guide/management/jconsole.html"> JConsole Tutorial
-		.
-	
+
+You can also interactively create a _heap dumps_ via the _jconsole_, a tool which is included in the JDK.
+Type _jconsole_ in the command line to start it.
+
+To allow a Java program the access of jconsole use the -Dcom.sun.management.jmxremote start option.
+
+Use them MBeans | com.sun.management | HotSpotDiagnostics | Operations |DumpHeap .
+
+
+More info can be found in http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html[JConsole] and http://java.sun.com/j2se/1.5.0/docs/guide/management/jconsole.html[JConsole Tutorial].
+

@@ -15,7 +15,6 @@ This article describes the usage of the Eclipse Memory Analyzer (MAT) to identif
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::012_android.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::020_installation.adoc[]
 include::024_creatingheapdumps.adoc[]

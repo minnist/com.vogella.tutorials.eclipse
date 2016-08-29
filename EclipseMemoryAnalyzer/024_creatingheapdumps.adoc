@@ -1,59 +1,23 @@
 
 == Creating heap dumps for Java programs
 
-It is possible to instruct the JVM to create automatically a
-_heap dump_
-in case that it runs out of memory, i.e. in case of a
-`OutOfMemoryError`
-error. To instruct the JVM to create a
-_heap dump_
-in such a situation, start your Java application with the
-_-XX:+HeapDumpOnOutOfMemoryError_
-option.
+It is possible to instruct the JVM to create automatically a _heap dump_ in case that it runs out of memory, i.e. in case of a `OutOfMemoryError` error. 
+To instruct the JVM to create a _heap dump_ in such a situation, start your Java application with the _-XX:+HeapDumpOnOutOfMemoryError_ option.
+
+Use the menu:File[New > Other...> Other> Heap Dump] menu entry to open a dialog to select for which process you want to acquire a memory dump.
 
 
-
-Use the
-menu:
-<guimenu>File</guimenu>
-<guisubmenu>New</guisubmenu>
-<guisubmenu>Other...</guisubmenu>
-<guisubmenu>Other</guisubmenu>
-<guisubmenu>Heap Dump</guisubmenu>
-</menuchoice>
-menu entry to open a dialog to select for which process you want to
-acquire a memory dump.
+image::mat_getheapdump10.png[Creating a heap dump]
 
 
-image::mat_getheapdump10.png[]
+Select the process for a heap dump in the following dialog and press the _Finish_ button.
+    
 
-<textobject>
-<phrase>Creating a heap dump</phrase>
-</textobject>
-
-
-
-Select the process for a heap dump in the following dialog and press
-the
-_Finish_
-button.
+Alternatively you can also interactively create a heap dump via Eclipse. 
+For this, open the _Memory Analysis_ perspective via menu:Perspective[Open Perspective > Other...].
 
 
-
-Alternatively you can also interactively create a heap dump via
-Eclipse. For this
-open the
-_Memory Analysis_
-perspective via
-menu:
-<guimenu>Open Perspective</guimenu>
-<guisubmenu>Other...</guisubmenu>
-</menuchoice>
-.
-
-
-image::matperspective20.png[Opening the MAT perspective]
-
+image::matperspective10.png[Opening the MAT perspective]
 
 
 If you trigger the creation of the heap manually the JVM performs sa garbage collector run before it writes the heap dump.

@@ -2,41 +2,22 @@
 
 === Create Project
 		
-			Create the Java project called
-			_com.vogella.mat.first_
-			and the
-			`com.vogella.mat.first`
-			package. Create the following class.
+Create the Java project called _com.vogella.mat.first_ and the `com.vogella.mat.first` package. 
+Create the following class.
 		
-
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/simple/Main.java[]
+[source,java]
 ----
-		
+include::res/simple/Main.java[]
+----
 	
-
-=== Run project and create heap dump
+=== Create heap dump and analysis
 		
-			In Eclipse add the
-			_-XX:+HeapDumpOnOutOfMemoryError_
-			to the
-			runtime configuration.
-		
+In Eclipse add the _-XX:+HeapDumpOnOutOfMemoryError_ to the runtime configuration.
 		
 image::dumpparameter10.gif" scale="40[pdfwidth=60%]
 		
+Run the project. It crashes and writes an _heap dump_.
 		
-			Run the project. It crashes and writes an
-			_heap dump_
-			.
-		
-
-	
-
-
-=== Use MAT to analyze the heap dump
-		Open the heap dump in MAT and get familiar with using the MAT tooling.
+Open the heap dump in MAT and get familiar with using the MAT tooling.
 		
 	

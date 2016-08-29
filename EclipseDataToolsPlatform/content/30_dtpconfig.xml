@@ -8,7 +8,7 @@
 		displayed.
 	
 	
-image::dtpconfig10.gif" />
+image::dtpconfig10.gif[]
 				
 			
 		
@@ -17,7 +17,7 @@ image::dtpconfig10.gif" />
 	Select then the tab jar press _Add..._ and select the derby.jar from
 		your project folder "lib".
 	
-image::dtpconfig20.gif" />
+image::dtpconfig20.gif[]
 				
 			
 		

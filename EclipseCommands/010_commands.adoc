@@ -1,0 +1,29 @@
+== Commands
+
+=== What are commands?
+		
+A command in Eclipse is a declarative description of a
+component
+and
+is
+independent from the implementation details.
+		
+A
+command can be
+categorized, assigned
+to
+the user
+interface and a
+key
+binding can be defined for the
+command.
+The behavior
+of a command is
+defined via a handler.
+
+=== Relevant Extension Points for Commands
+		
+To define a command you create an extension to the
+`org.eclipse.ui.command`
+extension point.
+

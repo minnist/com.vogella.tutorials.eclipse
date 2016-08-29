@@ -9,19 +9,19 @@
 			"Palette". Select the tab
 			"Layout".
 		
-image::SNAG-0012.gif" format="gif" />
+image::SNAG-0012.gif" format="gif[]
 				
 			
 		
 		 Drag and drop the table element on the report.
 		
-image::SNAG-0015.gif" format="gif" />
+image::SNAG-0015.gif" format="gif[]
 				
 			
 		
 		 Define the following settings for the table.
 		
-image::table40.gif" format="gif" />
+image::table40.gif" format="gif[]
 				
 			
 		
@@ -29,13 +29,13 @@ image::table40.gif" format="gif" />
 			and drop the
 			dataset columns into the "Details row" of the table. 
 		
-image::table50.gif" format="gif" />
+image::table50.gif" format="gif[]
 				
 			
 		
 		The result should look like the following.
 		
-image::table60.gif" format="gif" />
+image::table60.gif" format="gif[]
 				
 			
 		
@@ -44,7 +44,7 @@ image::table60.gif" format="gif" />
 			"Review" Tab. The
 			result should look like the following:
 		
-image::table70.gif" format="gif" />
+image::table70.gif" format="gif[]
 				
 			
 		

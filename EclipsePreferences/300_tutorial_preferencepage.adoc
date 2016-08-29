@@ -68,7 +68,7 @@ image::preferences10.gif[pdfwidth=60%]
 		application.
 	
 	
-image::preferences20.gif" />
+image::preferences20.gif[]
 
 			
 		

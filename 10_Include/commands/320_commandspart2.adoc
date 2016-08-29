@@ -1,0 +1,53 @@
+=== Using commands in menus
+
+The command which we defined should be used in a
+menu. Add a extension
+to the
+`org.eclipse.ui.menus`
+extension point.
+Right-click on the
+extension point and select
+menu:New[menuContribution].
+	
+image::command62.gif[]
+	
+Create a new menu contribution with the
+"menu:org.eclipse.ui.main.menu" locationURI. Make sure this URL is
+correct spelled,
+otherwise your menu will not be shown.
+	
+image::command80.gif[]
+	
+Right-click your menucontribution and select
+menu:New[Menu]
+.
+Add a
+menu with the "File" label and the "fileMenu" ID.
+	
+image::commandmenu10.gif[]
+	
+image::commandmenu20.gif[]
+	
+Select your menu, right-click on it, select New->
+Command.
+Maintain your commandID. Set the label
+to
+"Exit" and the tooltip to
+"Exits the application".
+	
+image::commandmenu30.gif[]
+	
+This should result in a `plugin.xml` file which looks like
+the
+following.
+	
+[source,xml]
+----
+include::res/commands/pluginfileexit.xml[]
+----
+	
+Run the example. You should see menu with the file and if you
+select the "Exit" entry you application should exit.
+	
+image::commandmenu40.gif[]
+	

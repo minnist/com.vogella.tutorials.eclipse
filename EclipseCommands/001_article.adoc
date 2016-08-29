@@ -1,44 +1,19 @@
-= Android - Tutorial
+= Adding menus, toolbar and popup menus to the Eclipse IDE - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
+Lars Vogel, (c) 2009, 2016 vogella GmbH
+Version 3.2, 29.08.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: EclipseCommands
 
 [abstract]
-
-
-=== Adding menus, toolbar and popup menus to the Eclipse IDE - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2009</year>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>22.01.2014</pubdate>
-		<releaseinfo>
-			Version 3.1
-		</releaseinfo>
-		
-		<abstract id="abstract">
-	=== Eclipse Commands tutorial
-			 This tutorials describes how to add commands, menus and
-				toolbar entries to the Eclipse IDE.
-			
-			This article is based on Eclipse Kepler (4.3).
-			
-		
+Eclipse Commands tutorial.
+This tutorials describes how to add commands, menus and
+toolbar entries to the Eclipse IDE.
+This article is based on Eclipse Kepler (4.3).
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::001_overview.adoc[]
@@ -53,11 +28,9 @@ include::040_tutorial_toolbar.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::060_tutorial_contextmenu.adoc[]
 include::070_advanced.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
 
 
 
-adoc[]

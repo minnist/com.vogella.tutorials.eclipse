@@ -1,0 +1,5 @@
+== Tutorial: Commands and menus
+
+include::../10_Include/commands/320_commandspart1.adoc[]
+include::../10_Include/commands/320_commandspart2.adoc[]
+

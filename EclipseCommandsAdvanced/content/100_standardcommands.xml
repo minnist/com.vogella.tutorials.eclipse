@@ -14,7 +14,7 @@
 		 The advantage of using standard commands is that you get the
 			keybinding, icons, etc for free.
 		
-image::standardcommand10.gif" />
+image::standardcommand10.gif[]
 					
 				
 			
@@ -86,14 +86,14 @@ image::standardcommand10.gif" />
 			"org.eclipse.ui.edit.delete" to the menu. 
 
 		
-image::standardcommand20.gif" />
+image::standardcommand20.gif[]
 					
 				
 			
 		
 
 		
-image::standardcommand30.gif" />
+image::standardcommand30.gif[]
 					
 				
 			
@@ -102,7 +102,7 @@ image::standardcommand30.gif" />
 		 The result should look like the following.
 
 		
-image::standardcommand40.gif" />
+image::standardcommand40.gif[]
 					
 				
 			

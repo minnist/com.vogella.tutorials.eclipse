@@ -1,0 +1,5 @@
+== Advanced Commands
+	
+For more advanced usages of Eclipse Commands please see
+http://www.vogella.com/tutorials/EclipseCommandsAdvanced/article.html[Eclipse Commands Advanced].
+	

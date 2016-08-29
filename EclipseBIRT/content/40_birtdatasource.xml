@@ -16,10 +16,10 @@
 		
 		
 			Create a new datasource, named "srcStocks" in your report.
-image::datasource10.gif" format="gif" />
+image::datasource10.gif" format="gif[]
 				
 			
-image::datasource20.gif" format="gif" />
+image::datasource20.gif" format="gif[]
 				
 			
 		
@@ -32,12 +32,12 @@ image::datasource20.gif" format="gif" />
 		
 
 		
-image::dataset10.gif" format="gif" />
+image::dataset10.gif" format="gif[]
 				
 			
 		
 		
-image::dataset20.gif" format="gif" />
+image::dataset20.gif" format="gif[]
 				
 			
 
@@ -46,7 +46,7 @@ image::dataset20.gif" format="gif" />
 			Press next and define the columns for your report.
 		
 		
-image::dataset30.gif" format="gif" />
+image::dataset30.gif" format="gif[]
 				
 			
 		
@@ -64,7 +64,7 @@ image::dataset30.gif" format="gif" />
 				for the report has several tab. One of it is labeled "source".
 		
 		
-image::javascript10.gif" format="gif" />
+image::javascript10.gif" format="gif[]
 				
 			
 		
@@ -85,7 +85,7 @@ image::javascript10.gif" format="gif" />
 		 Check if your Script works by doubleclicking
 			on the dataset -> Preview Result.
 		
-image::SNAG-0011.gif" format="gif" />
+image::SNAG-0011.gif" format="gif[]
 				
 			
 		

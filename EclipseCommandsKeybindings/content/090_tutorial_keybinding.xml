@@ -16,7 +16,7 @@
 			created. The sequence is the shortcut key for calling the command. M1
 			represents the Ctrl key.
 		
-image::keybinding10.gif" />
+image::keybinding10.gif[]
 					
 				
 			
@@ -32,14 +32,14 @@ image::keybinding10.gif" />
 		 Right-click in this extension point "org.eclipse.ui.bindings",
 			select New-> Scheme. Create a schema with the id "MyScheme".
 		
-image::keybinding20.gif" />
+image::keybinding20.gif[]
 					
 				
 			
 		
 		 Assign the scheme id to your commands.
 		
-image::keybinding30.gif" />
+image::keybinding30.gif[]
 					
 				
 			
@@ -58,7 +58,7 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#product">
 		
 
 		
-image::keybinding40.gif" />
+image::keybinding40.gif[]
 					
 				
 			

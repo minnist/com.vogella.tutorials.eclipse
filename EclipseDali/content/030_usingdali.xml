@@ -11,14 +11,14 @@
 				Configure -> Convert to JPA Project
 		
 		
-image::dali10.gif" />
+image::dali10.gif[]
 					
 				
 			
 		
 		 Click twice next. 
 		
-image::dali20.gif" />
+image::dali20.gif[]
 					
 				
 			
@@ -31,7 +31,7 @@ image::dali20.gif" />
 		 Select File -> New -> Other -> JPA -> Entity and create the
 			following class.
 		
-image::dali25.gif" />
+image::dali25.gif[]
 					
 				
 			
@@ -47,7 +47,7 @@ image::dali25.gif" />
 			This will activate the views "JPA Structure" and "JPA Details".
 		
 		
-image::dali30.gif" />
+image::dali30.gif[]
 					
 				
 			
@@ -56,7 +56,7 @@ image::dali30.gif" />
 		 You can now use the right mouse button in the "JPA Structure"
 			view to map your elements.
 		
-image::dali40.gif" />
+image::dali40.gif[]
 					
 				
 			
@@ -66,7 +66,7 @@ image::dali40.gif" />
 			how the primatry keys should get defined, e.g., via a sequence
 			"SEQUENCE".
 		
-image::dali50.gif" />
+image::dali50.gif[]
 					
 				
 			

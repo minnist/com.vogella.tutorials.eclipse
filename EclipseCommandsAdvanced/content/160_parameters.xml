@@ -13,7 +13,7 @@
 	
 
 	
-image::parameter10.gif" />
+image::parameter10.gif[]
 				
 			
 		
@@ -23,7 +23,7 @@ image::parameter10.gif" />
 		"de.vogella.rcp.commands.parameterfirst.commandParameter1"
 
 	
-image::parameter20.gif" />
+image::parameter20.gif[]
 				
 			
 		
@@ -41,7 +41,7 @@ image::parameter20.gif" />
 	 Add this command to the menu. On the command, right-click and
 		select New -> Parameter
 	
-image::parameter30.gif" />
+image::parameter30.gif[]
 				
 			
 		
@@ -49,7 +49,7 @@ image::parameter30.gif" />
 	 As name enter the name of the parameter, pass as value the
 		value you want to use in your handler.  
 	
-image::parameter40.gif" />
+image::parameter40.gif[]
 				
 			
 		

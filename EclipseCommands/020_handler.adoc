@@ -1,0 +1,62 @@
+== Handler
+
+=== Command Handler
+		
+The
+`org.eclipse.ui.handlers`
+extension point connects the command to a certain class which is
+called once the command is executed.
+		
+The behavior of a command is
+defined via
+handlers. The handler is
+the
+class which is executed once the command is
+called and must
+implement
+the
+`IHandler`
+interface from the
+`org.eclipse.core.commands`
+package.
+		
+In most cases you extend the
+`org.eclipse.core.commands.AbstractHandler`
+class which
+provides a
+default
+implementation for the
+`IHandler`
+interface.
+		
+The
+`execute()`
+method is called if the handler is executed.
+		
+In the
+`execute()`
+method you get access to frequently used values
+and services via the
+`HandlerUtil`
+class.
+
+=== Validity of handlers
+		
+Handler can be defined with conditions (activeWhen) under which
+define the conditions under which
+the handlers are valid for a
+command.
+You can define
+several
+handlers for a
+command
+but only
+handler can
+be
+valid for a
+command
+at a
+certain point.
+Otherwise the Eclipse runtime
+will not enabled the command.
+	

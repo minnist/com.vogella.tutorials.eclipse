@@ -8,12 +8,12 @@
 			the data explorer. The parameter should called StockName and should
 			has "Java" as a default value.
 		
-image::SNAG-0031.gif" format="gif" />
+image::SNAG-0031.gif" format="gif[]
 				
 			
 		
 		
-image::SNAG-0032.gif" format="gif" />
+image::SNAG-0032.gif" format="gif[]
 				
 			
 		
@@ -36,26 +36,26 @@ image::SNAG-0032.gif" format="gif" />
 		Create therefore the two parameters fromDate and toDate
 			with data type "Date".
 		
-image::SNAG-0033.gif" format="gif" />
+image::SNAG-0033.gif" format="gif[]
 				
 			
 		
 		 Select the dataset "setStocks" and double-click it.
 		
-image::SNAG-0034.gif" format="gif" />
+image::SNAG-0034.gif" format="gif[]
 				
 			
 		
 		 Select the menu point "Filters". Press "News" and add a new
 			filter with the options in the screenshot.
 		
-image::SNAG-0036.gif" format="gif" />
+image::SNAG-0036.gif" format="gif[]
 				
 			
 		
 		 Click on Review to see the report.
 		
-image::SNAG-0037.gif" format="gif" />
+image::SNAG-0037.gif" format="gif[]
 				
 			
 		

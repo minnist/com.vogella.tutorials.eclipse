@@ -52,7 +52,7 @@
 			http://localhost:8080/birt/.If you see something like this, your
 			Tomcat an your Web Viewer should work correct.
 		
-image::SNAG-0039.gif" format="gif" />
+image::SNAG-0039.gif" format="gif[]
 				
 			
 		
@@ -63,17 +63,17 @@ image::SNAG-0039.gif" format="gif" />
 			the root of the birt folder in Tomcat. To make your Java classes
 			available export your project into a jar file.
 		
-image::SNAG-0040.gif" format="gif" />
+image::SNAG-0040.gif" format="gif[]
 				
 			
 		
 		
-image::SNAG-0041.gif" format="gif" />
+image::SNAG-0041.gif" format="gif[]
 				
 			
 		
 		
-image::SNAG-0042.gif" format="gif" />
+image::SNAG-0042.gif" format="gif[]
 				
 			
 		
@@ -84,7 +84,7 @@ image::SNAG-0042.gif" format="gif" />
 			http://localhost:8080/birt/frameset?__report=stock_report.rptdesign
 		
 		
-image::SNAG-0043.gif" format="gif" />
+image::SNAG-0043.gif" format="gif[]
 				
 			
 		

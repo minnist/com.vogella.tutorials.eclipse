@@ -80,9 +80,7 @@
             image.
         
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/modeledworkbench10.gif" scale="60" />
+            image::modeledworkbench10.gif" scale="60" />
                 
                 <textobject>
                     <phrase>Limits of the modeled workbench</phrase>

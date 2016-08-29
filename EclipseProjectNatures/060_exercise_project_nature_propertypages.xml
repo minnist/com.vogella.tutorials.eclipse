@@ -22,9 +22,7 @@ Version 0.3, 06.07.2016
         Add the `org.eclipse.ui.propertyPages` extension point and configure the
             page like this:
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_property_page.png[]
+            image::exercise_project_nature_property_page.png[]
                 
             
         
@@ -45,9 +43,7 @@ include::res/ExamplePropertyPage.java"/>
             created in the previous optional exercise. See <xref
                 linkend="optional_project_nature_definition"/>
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/property_page_enablement.png[]
+            image::property_page_enablement.png[]
                 
             
         
@@ -59,9 +55,7 @@ include::res/ExamplePropertyPage.java"/>
         Then select _Example Settings_ and the result should look like
             this:
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/exercise_project_nature_property_page_sample.png[]
+            image::exercise_project_nature_property_page_sample.png[]
                 
             
         

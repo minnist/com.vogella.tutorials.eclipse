@@ -132,9 +132,7 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
         
 
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/product60.png[]
+            image::product60.png[]
                 
                 <textobject>
                     <phrase>Show the tab splash from the product configuration file</phrase>
@@ -223,9 +221,7 @@ image::product55.png[Product definition file show the overview tab,pdfwidth=60%]
         
 
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/product80.png[]
+            image::product80.png[]
                 
                 <textobject>
                     <phrase>Highlighting the section where the icons are maintained.</phrase>

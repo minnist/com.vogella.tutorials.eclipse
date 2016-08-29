@@ -1,0 +1,6 @@
+== Dialogs in Eclipse
+
+The Common Navigator Framework (CNF) allow to use multiple label and content provider implementations for the same
+viewer. It is typically used to extend the _Project Explorer_
+but can also be used without it.
+	

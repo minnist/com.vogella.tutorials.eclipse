@@ -1,0 +1,28 @@
+= Define key bindings for Eclipse Commands - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 2.8, 29.08.2016
+:docinfodir: ../
+:vgwort: EclipseCommandsKeybindings
+
+[abstract]
+Define key bindings for Eclipse Commands.
+This tutorial describes how to define shortcuts for Eclipse
+commands. This article is based on Eclipse Indigo (3.7) and uses the
+Eclipse 3.x API.
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../10_Include/Eclipse/eclipse3xapi.adoc[]
+include::010_introduction.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]
+include::020_prereqs.adoc[]
+include::090_tutorial_keybinding.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

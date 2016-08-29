@@ -1,0 +1,46 @@
+== Eclipse key bindings
+	
+Via key bindings you can define shortcuts for your
+Eclipse
+Commands.
+	
+Eclipse uses a default key configuration scheme. If your
+application
+uses existing plug-ins where key bindings are already
+defined
+these
+key bindings will also be active in your Eclipse RCP
+application.
+If
+that is not desired then you can configure your product
+to use
+another scheme.
+
+The following describes first how to create
+key bindings
+using this
+default
+configuration scheme. Afterwards I
+how to
+overwrite the
+default
+key
+binding scheme of Eclipse.
+	
+To define a shortcut for a command you use
+`org.eclipse.ui.bindings`
+extension point
+together with the
+`org.eclipse.ui.defaultAcceleratorConfiguration`
+schemeId
+and the
+`org.eclipse.ui.contexts.window`
+contextId.
+	
+To define and use your own scheme you need:
+
+* Define a new scheme via extension point "org.eclipse.ui.bindings"
+* Assign this scheme to the key bindings you defined
+* Have a product created
+* Define the file "plugin_customization.ini" and set the scheme for the product via a property.
+

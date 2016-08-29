@@ -1,0 +1,51 @@
+== Tutorial: Defining key bindings for Commands
+
+=== Keybinding using the default scheme
+
+Create a new project "de.vogella.rcp.intro.commands.keybinding"
+using the "Hello RCP" template, declare command
+"de.vogella.rcp.intro.commands.keybinding.hello" with a default
+handler "de.vogella.rcp.intro.commands.keybinding.HelloHandler" which
+prints out "Hello" to the console
+Add the extension point "org.eclipse.ui.bindings" to your
+project. Right-click in this extension point, select New-> Key.
+
+Select as schemeID
+"org.eclipse.ui.defaultAcceleratorConfiguration" this is the
+workbench default and will make sure you keybinding is valid in the
+whole application. The commandId is the ID of the command you just
+created. The sequence is the shortcut key for calling the command. M1
+represents the Ctrl key.
+
+image::keybinding10.gif[]
+
+If you now run it the keybinding should work and if you press btn:[Ctrll+1] the message on the console should be visible.
+
+=== Defining your own scheme
+
+Add now another key binding btn:[Ctrl+N] to the command
+"de.vogella.rcp.intro.commands.keybinding.hello". Try it. This will
+not work as it is conflicting with the Eclipse default schema.
+Right-click in this extension point "org.eclipse.ui.bindings",
+select New-> Scheme. Create a schema with the id "MyScheme".
+
+image::keybinding20.gif[]
+
+Assign the scheme id to your commands.
+
+image::keybinding30.gif[]
+
+Define a product. See
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#product[Defining a product for Eclipse RCP]
+for details. Create the following file "plugin_customization.ini" and put it
+in your main directory
+
+[source,text]
+----
+include::res/keybinding/plugin_customization.ini[]
+----
+
+image::keybinding40.gif[]
+
+If you now run your product the btn:[Ctrl+N] shortcut should work.
+	

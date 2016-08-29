@@ -1,0 +1,11 @@
+== Prerequisites for this tutorial
+
+This tutorial assumes that you have basic understanding of
+development
+for the Eclipse platform.
+Please see
+http://www.vogella.com/tutorials/EclipseRCP/article.html[Eclipse RCP Tutorial]
+or
+http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plug-in Tutorial]
+if you need any basic information.
+

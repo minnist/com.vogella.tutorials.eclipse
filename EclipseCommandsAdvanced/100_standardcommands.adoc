@@ -1,0 +1,73 @@
+== Eclipse standard commands
+
+=== Overview
+Eclipse provides lots of standard commands which you can
+reuse.
+Just press on the "Browse button" while defining your
+commandId to see
+the available standard commands. For example the
+screenshot shows the
+usage of the standard about dialog command.
+
+The advantage of using standard commands is that you get the
+keybinding, icons, etc for free.
+		
+image::standardcommand10.gif[]
+		
+TIP: Standard commands sometimes map to actions which are
+contributed
+via ActionFactory in the class
+ApplicationActionBarAdvisor. If the
+ActionFactory returns an IAction
+you need to register this action.
+If
+not these commands are inactive
+in your menu. For example the
+following made the reset perspective
+and welcome command active.
+		
+[source,java]
+----
+include::res/standardcommands/ApplicationActionBarAdvisor.java[]
+----
+
+=== Example
+		
+You can also use standard command and define a new handler for
+this
+command, e.g., you can use the standard Eclipse delete command
+(org.eclipse.ui.edit.delete). 
+		
+TIP:
+To find the id of existing commands you
+can you the
+http://www.vogella.com/tutorials/EclipseCodeAccess/article.html#pluginspy[Eclipse Plugin Spy].
+
+You can use the extension point "org.eclipse.ui.handlers"
+to define new handlers for the standard commands. 
+		
+TIP:
+Eclipse requires
+you to have only one active handler at the time
+therefore you have to
+use the "activeWhen" restriction on the handler
+to make it more
+special then the standard binding. To use for example
+delete in several views with different handlers use "activeWhen"
+with the variable "activePartId" and as the value your view id.
+
+Create a new RCP application
+"de.vogella.rcp.commands.standardcommands" with the template "Hello
+RCP". 
+Create a handler for the command "org.eclipse.ui.edit.delete"
+which display a message box. Add the command
+"org.eclipse.ui.edit.delete" to the menu. 
+		
+image::standardcommand20.gif[]
+		
+image::standardcommand30.gif[]
+
+The result should look like the following.
+		
+image::standardcommand40.gif[]
+	

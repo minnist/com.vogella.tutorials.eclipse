@@ -1,0 +1,22 @@
+== Defining commands at runtime
+
+You can create commands at runtime. Create project
+"de.vogella.rcp.commands.runtimecommands" using the "Hello RCP"
+template. 
+	
+Define a menu contribution. Maintain the class
+"de.vogella.rcp.commands.runtimecommands.DefineCommands" in this menu
+contribution. 
+	
+image::runtime10.gif[]
+
+Create the following class. 
+	
+[source,java]
+----
+include::res/runtime/DefineCommands.java[]
+----
+
+Run the example, your application should have the Exit command in
+the menu.  
+

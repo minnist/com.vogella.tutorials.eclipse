@@ -1,0 +1,6 @@
+WARNING: This tutorial describes the Eclipse 3.x API which is used for Eclipse IDE plug-in development.
+For Eclipse RCP you should use the
+new Eclipse 4 API which is
+described in the
+http://www.vogella.com/tutorials/EclipseRCP/article.html[Eclipse RCP tutorial].
+

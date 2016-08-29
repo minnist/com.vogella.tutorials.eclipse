@@ -1,0 +1,34 @@
+= Eclipse Commands Advanced - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2007, 2016 vogella GmbH
+Version 2.3, 29.08.2016
+:docinfodir: ../
+:vgwort: EclipseCommandsAdvanced
+
+[abstract]
+Eclipse Advanced Commands.
+This article describes use cases for Eclipse commands
+which go
+beyond the simple one for adding commands to menus,
+toolbars, etc.
+This article is based on Eclipse Indigo (3.7).
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../10_Include/Eclipse/eclipse3xapi.adoc[]
+include::010_introduction.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_standardcommands.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::120_code.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::160_parameters.adoc[]
+include::200_runtimecommands.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+
+

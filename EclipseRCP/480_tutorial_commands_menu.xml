@@ -198,9 +198,9 @@ include::res/snippets/SaveAllHandler.java[]
 			following:
 		
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/snippets/bundleclass.txt[]
+[source,text]
+----
+include::res/snippets/bundleclass.txt[]
 ----
 		
 

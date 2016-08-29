@@ -99,9 +99,9 @@ image::github_import10.png[Importing projects from GitHub into EclipseF,pdfwidth
 			following webpage.
 		
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/links/mylyn.txt[]
+[source,text]
+----
+include::res/links/mylyn.txt[]
 ----
 		
 

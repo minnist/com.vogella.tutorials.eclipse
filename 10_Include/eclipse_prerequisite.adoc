@@ -10,4 +10,3 @@
 		http://www.vogella.com/tutorials/EclipsePlugin/article.html">Eclipse Plug-in Tutorial</ulink>
 		if you need any basic information.
 	
-</section>

@@ -72,9 +72,9 @@
 		The following can serve as an example for a commit message.
 		
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/message.txt[]
+[source,text]
+----
+include::res/message/message.txt[]
 ----
 		
 
@@ -95,9 +95,9 @@
 			not useful.
 		
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/bad.txt[]
+[source,text]
+----
+include::res/message/bad.txt[]
 ----
 		
 
@@ -110,9 +110,9 @@
 		
 
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/message/good.txt[]
+[source,text]
+----
+include::res/message/good.txt[]
 ----
 		
 		The above example also adds the corresponding bug number to the

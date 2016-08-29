@@ -1,0 +1,11 @@
+== Launch configuration and Eclipse products
+
+The launch configuration stores the settings from the product configuration file.
+The launch configuration is created or updated every time you start your application via the product.
+
+You can use the created run configuration directly for starting the application again.
+In this case changes in the product configuration file are not considered.
+
+
+WARNING: Using an existing run configuration is a common source of frustration and time consuming error analysis. To ensure that you use the latest configuration from your product, start your application via the product file.
+

@@ -1,0 +1,74 @@
+== The Eclipse context
+
+=== What is the Eclipse context?
+
+(((IEclipseContext, Eclipse context)))
+
+During startup of an Eclipse application the Eclipse runtime creates an object based on the `IEclipseContext` interface.
+This object is called the _context_ or the _Eclipse context_.
+
+The context is similar to a `Map` data structure, in which objects can be placed under a certain key.
+The key is a String and in several cases the fully qualified class name is used as key.
+The value (to which the key points) can be injected into other objects.
+
+=== Relationship definition in the Eclipse context
+
+(((Eclipse context, Hierarchy)))
+
+As described earlier the Eclipse context is similar to a `Map` data structure.
+But unlike a map, the Eclipse context is hierarchical and can also dynamically compute values for requested keys.
+
+For certain model objects (see <xref linkend="context_modelelementswithcontext" />) a local context is created.
+Such a context is associated with an application model object.
+
+The different context objects are connected to form a hierarchical tree structure based on the structure of your application model.
+The highest level in this hierarchy is the application context.
+
+A sample context hierarchy is depicted in the following picture.
+
+image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
+
+Objects can be placed at different levels in the context hierarchy.
+This allows that the same key points to different objects in the hierarchy.
+
+For example, a part can express a dependency to a `Composite` object via a field declaration similar to: `@Inject Composite parent;`
+Since parts have different local contexts they can receive different objects of the type `Composite`.
+
+=== Which model elements have a local context?
+
+Currently the following model elements implement the `MContext` interface and therefore have their own context:
+
+* MApplication
+* MWindow
+* MPerspective
+* MPart
+* MPopupMenu
+
+=== Life cycle of the Eclipse context
+
+(((Eclipse context, Life cycle)))
+
+The Eclipse framework creates the context hierarchy based on the application model during the start process.
+By default, it places certain objects under predefined keys into the context, e.g., services to control the Eclipse framework functionality.
+
+The model objects and the created objects based on the _class URI_ attributes are created by the Eclipse platform.
+For each model element with a custom context the Eclipse framework determines which objects should be available in the local context of the model object.
+If required, it also creates the required Java objects referred by the _Class URI_ property of the model elements. This is for example the case if a part is visible to the user.
+
+
+[NOTE]
+====
+The renderer framework is responsible for creating the local context of the UI related model elements.
+This framework allows you to define classes which are responsible for setting up the UI implementation of the model objects.
+A class responsible for a model element is called the _renderer_ for this model element.
+
+For example, the `ContributedPartRenderer` class is the default renderer for part model objects.
+This renderer creates a `Composite` for every part and puts this `Composite` into the local context of the part.
+====
+
+After the initial creation of the Eclipse context hierarchy, the framework or the application code can change the key-value pairs stored in the context.
+In this case objects which were created with the related Eclipse
+functionality (for example by the Eclipse dependency injection framework) are updated with the new values.
+
+Objects in the context are persisted in memory (transient), i.e., once the application is stopped the context gets destroyed.
+

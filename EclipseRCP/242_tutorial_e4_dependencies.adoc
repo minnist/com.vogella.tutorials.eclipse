@@ -1,0 +1,26 @@
+== Enter the dependencies
+
+=== Add the plug-in dependencies
+
+In the upcoming exercises you will use the functionality from other Eclipse plug-ins.
+This requires that you define a dependency to
+these plug-ins in your application. 
+
+Remember that _application plug-in_ is the short form for the `com.example.e4.rcp.todo` plug-in.
+
+Open the _META-INF/MANIFEST.MF_ file in your _application plug-in_ and select the _Dependencies_ tab.
+Use the btn:[Add...] button in the _Required Plug-ins_ section to add the following plug-ins as dependency.
+
+* org.eclipse.core.runtime
+* org.eclipse.swt
+* org.eclipse.e4.core.di
+* org.eclipse.e4.ui.workbench
+* org.eclipse.e4.ui.di
+* org.eclipse.e4.core.di.extensions
+
+=== Validating
+
+The result should be similar to the following screenshot.
+
+image::training_product60.png[Plug-in Dependencies,pdfwidth=60%]
+

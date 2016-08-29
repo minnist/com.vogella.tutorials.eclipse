@@ -1,0 +1,145 @@
+== Exercise: Adding menus
+
+=== Target of this exercise
+
+In this exercise you create commands and handlers for your application.
+Afterwards you will create menu entries using these commands.
+
+=== Create command model elements
+
+Open the _Application.e4xmi_ file of your `com.example.e4.rcp.todo` plug-in and select the _Commands_ entry.
+This selection is highlighted in the following screenshot.
+
+image::commands10.png[Adding commands to your application]
+
+Via the btn:[Add...] button you can create new commands. The name and the ID are the important fields.
+Create the following commands.
+
+.Commands
+|===
+|ID |Name
+
+|org.eclipse.ui.file.saveAll
+|Save
+
+|org.eclipse.ui.file.exit
+|Exit
+
+|com.example.e4.rcp.todo.command.new
+|New Todo
+
+|com.example.e4.rcp.todo.command.remove
+|Remove Todo
+
+|com.example.e4.rcp.todo.command.test
+|For testing
+|===
+
+=== Creating the handler classes
+
+Create the `com.example.e4.rcp.todo.handlers` package for your handler classes.
+
+All handler classes implement an `execute()` method annotated with `@Execute`.
+
+[source,java]
+----
+include::res/snippets/SaveAllHandler.java[]
+----
+
+Using this template for all classes, implement the following classes.
+
+* SaveAllHandler
+* ExitHandler
+* NewTodoHandler
+* RemoveTodoHandler
+* TestHandler
+
+=== Creating handler model elements
+
+Select the application-scoped _Handlers_ entry in your application model and create the handlers from the following table for your commands. For the definition of handlers the ID, command and class are the relevant information.
+
+Use the `com.example.e4.rcp.todo.handler` prefix for all IDs of the handlers.
+
+.Handlers
+|===
+|Handler ID |Command |Class
+
+|saveall
+|Save
+|SaveAllHandler
+
+|.exit
+|Exit
+|ExitHandler
+
+|.new
+|New Todo
+|NewTodoHandler
+
+|.remove
+|Remove Todo
+|RemoveTodoHandler
+
+|.test
+|For testing
+|TestHandler
+|===
+
+The application model editor shows both the name and the ID of the command.
+The class URI follows the `bundleclass://` schema, the table only defines the class name to make the table more readable.
+For example, for the save handler this looks like the following:
+
+[source, java]
+----
+include::./res/snippets/bundleclass.txt[]
+----
+
+image::handler10.png[Defining a handler in Eclipse 4]
+
+=== Adding a menu
+
+In your _Application.e4xmi_ file select your _TrimmedWindow_ entry in the model and flag the _Main Menu_ attribute.
+
+image::menu04.png[]
+
+Assign the `org.eclipse.ui.main.menu` ID to your main menu.
+
+WARNING:Ensure that this ID of the main menu is correct.
+You use it later to contribute another menu entry via another plug-in.
+
+Add two menus, one with the name "File" and the other one with the name "Edit" in the _Label_ attribute.
+
+Also set the _org.eclipse.ui.file.menu_ ID for the File menu.
+Use _com.example.e4.rcp.todo.menu.edit_ as ID for the Edit menu.
+
+image::commands20.png[Creating a menu]
+
+Add a _Handled MenuItem_ model element to the menu:File[] menu.
+This item should point to the _Save_ command via the _Command_ attribute.
+
+image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
+
+Add a _Separator_ after the Save menu item and after that add an entry for the Exit command.
+
+Add all other commands to the Edit menu.
+
+=== Implement a handler class for exit
+
+To test if your handler is working, change your `ExitHandler` class, so that it closes your application, once selected.
+
+[source,java]
+----
+include::res/command/ExitHandler.java[]
+----
+
+=== Validating
+
+Validate that your save handler is called if you select Save from the menu.
+
+Also check that you can exit the application via the _Exit_ menu entry.
+
+=== Possible issue: Exit menu entry on a MacOS
+
+If you use the "org.eclipse.ui.file.exit" ID for your exit command, the Eclipse framework tries to map the exit command to its default menu location on the MacOS.
+If you don't see your exit menu, in its defined position, check this location.
+

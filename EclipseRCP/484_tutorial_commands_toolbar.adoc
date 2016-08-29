@@ -1,0 +1,24 @@
+== Exercise: Adding a toolbar
+
+=== Target of this exercise
+
+In this exercise you add a toolbar to your application. 
+
+=== Adding a toolbar
+
+Select the _TrimBars_ node under your _TrimmedWindow_ entry and press the btn:[Add...] button.
+The _Side_ attribute should be set to _Top_ , so that all toolbars assigned to that trimbar appear on the top of the application.
+
+image::commands40.png" scale="30[Adding a toolbar,pdfwidth=60%]
+
+Add a _ToolBar_ model element to your TrimBar.
+Add a _Handled ToolItem_ to this toolbar which points to the `org.eclipse.ui.file.saveAll` command.
+
+Set the label for this entry to _Save_.
+
+image::commands50.png" scale="35[Adding a menu item to the menu,pdfwidth=60%]
+
+=== Validating
+
+Validate that your save handler is called if you select Save from the menu or the toolbar.
+

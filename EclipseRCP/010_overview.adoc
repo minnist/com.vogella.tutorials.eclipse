@@ -1,0 +1,5 @@
+== What is an Eclipse RCP application?
+
+An Eclipse RCP application is a stand-alone application based on Eclipse platform technologies.
+This $book uses the terms _Eclipse based applications_, _Eclipse application_, _Eclipse 4 application_ and _Eclipse RCP application_ interchangeably for referring to such applications.
+

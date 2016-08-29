@@ -1,0 +1,63 @@
+== The usage of run configurations
+
+=== What are run configurations?
+
+A _run configuration_ defines the environment which will be used to execute a generic launch.
+For example, it defines arguments to the Java virtual machine (VM), plug-in (classpath) dependencies, etc.
+
+If you start an Eclipse application the corresponding run configuration is automatically created or updated.
+
+TIP: If you are starting an Eclipse runtime IDE for testing, and clear the workspace location the next run will prompt you to choose a workspace.
+
+=== Reviewing run configurations
+
+To review and edit your run configurations select menu:Run[Run Configurations...] from the Eclipse menu.
+
+On the _Main_ tab in the field _Location_, you specify where the Eclipse IDE creates the files necessary to start your Eclipse based application.
+
+image::lauchconfiguration20.png[Shows the run configuration, highlighting the location setting,pdfwidth=60%]
+
+=== Run arguments
+
+(((Run arguments, Run configuration arguments)))
+(((Run configuration arguments, consoleLog)))
+(((Run configuration arguments, console)))
+(((Run configuration arguments, nl)))
+(((Run configuration arguments, noExit)))
+(((Run configuration arguments, clearPersistedState)))
+
+The run configuration allows you to add additional start arguments for your application on the _Arguments_ tab.
+By default Eclipse includes already several parameters, e.g. parameters for _-os_,_-ws_
+and _-arch_ to specify the architecture on which the application is running.
+
+image::launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
+
+TIP:To pass system properties to your Eclipse application, you can add launch parameters using the -D switch.
+As example, if you add the argument _-Dmy.product.loglevel=INFO_, you can get the "INFO" value with `System.getProperties("my.product.loglevel")`.
+
+The following table lists several useful launch arguments.
+
+.Launch parameters
+|===
+|Parameter|Description
+
+|_consoleLog_
+|Error messages of the running Eclipse application are written to standard-out (`System.out`) which can be viewed in the Eclipse IDE _Console_ view that started the RCP application.
+
+|_nl_
+|Specifies the locale used for your application.
+The locale defines the language specific settings, i.e., which translation is used and the number, date and currency formatting.
+For example _-nl en_ starts your application using the English language.
+This is useful for testing translations.
+
+|_console_
+|Provides access to an OSGi console where you can check the status of your application.
+
+|_noExit_
+|Keeps the OSGi console open even if the application crashes.
+This allows to analyze the application dependencies even if the application crashes during startup.
+
+|_clearPersistedState_
+|Deletes cached runtime changes of the Eclipse 4 application model.
+|===
+

@@ -7,7 +7,7 @@ This happens automatically.
 For testing you can also define the scale factor manually.
 On GTK you can us the GDK_DPI_SCALE environment variable before launching eclipse, e.g. for 150%:
 
-[source,terminal]
+[source,console]
 ----
 export GDK_DPI_SCALE=1.5 
 ./eclipse
@@ -15,7 +15,7 @@ export GDK_DPI_SCALE=1.5
  
 To only change the SWT scale factor (but not the fonts that get scaled by the OS), you would use the following:
 
-[source,terminal]
+[source,console]
 ----
 ./eclipse -vmargs -Dswt.autoScale=200
 ----
@@ -28,7 +28,7 @@ On Windows 7, there's no good way to test this other than using the Display cont
 
 You can instruct Eclipse to use GTK2 instead of GTK3 via the following export.
 
-[source,terminal]
+[source,console]
 ----
 export SWT_GTK3=0
 ./eclipse

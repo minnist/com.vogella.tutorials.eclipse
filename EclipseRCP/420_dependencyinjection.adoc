@@ -79,7 +79,10 @@ The re-injection only works on methods and fields which are marked with `@Inject
 It will not work on parameters injected into constructors and methods which are marked with `@PostConstruct` , as these methods are only executed once.
 This will be explained later in <xref linkend="context_creationprocess" />.
 
-NOTE:This does not mean that Eclipse tracks the fields of the value to which the key points.
+[NOTE]
+====
+This does not mean that Eclipse tracks the fields of the value to which the key points.
 For example if the _mykey1_ key points to a `Todo` object as value, and the key points to a new object, this triggers the re-injection of the value to all objects which have a relevant class dependency.
 But if a field inside the existing `Todo` object changes, it does not trigger a re-injection.
+====
 

@@ -80,12 +80,19 @@ Creating the user interface in an `@PostConstruct` method requires that `@Inject
 Both Java 7 and the Eclipse platform expose the `@PostConstruct` annotation.
 In your Eclipse application you need to tell the framework that the annotation from the Eclipse platform should be used.
 
-NOTE:Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the `javax.annotation` package anymore.
+[NOTE]
+====
+Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the `javax.annotation` package anymore.
+====
 
 In case your `@PostConstruct` method is not called, ensure that you have defined a dependency to `org.eclipse.core.runtime` in the _MANIFEST.MF_ file.
  See http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
 
-NOTE:`org.eclipse.core.runtime` exports `javax.annotation` in the correct version.
+[NOTE]
+====
+`org.eclipse.core.runtime` exports `javax.annotation` in the correct version.
 If you have a dependency to `org.eclipse.core.runtime` in your _MANIFEST.MF_ file, no additional package dependency is needed.
+====
+
 If, for some reasons, you want to avoid a dependency to `org.eclipse.core.runtime` , you could define a package dependency to the `javax.annotation` package and set the version to 1.0.0.
 

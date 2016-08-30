@@ -17,7 +17,10 @@ Change the `PlaygroundPart` class so the part looks like the following screensho
 
 image::swtmap10.png[SWT Browser Widget example with Google Maps]
 
-NOTE: This example might not work, in case Google changes its API.
+[NOTE]
+====
+This example might not work, in case Google changes its API.
+====
 
 If you enter a text in the text field and press the button, the map should center based on the input in the text field.
 This input should be interpreted as city.

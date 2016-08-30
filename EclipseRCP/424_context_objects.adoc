@@ -57,8 +57,11 @@ To track the active shell use the `IServiceConstants.ACTIVE_SHELL` key.
 include::res/active/receiveActiveShell.java[]
 ----
 
-NOTE:Eclipse uses handlers to define actions which can be triggered via menu or toolbar entries.
+[NOTE]
+====
+Eclipse uses handlers to define actions which can be triggered via menu or toolbar entries.
 For a handler implementation class it is not necessary to use these qualifiers, as a handler is executed in the active context of the application.
+====
 
 === Tracking a child context with @Active
 
@@ -76,5 +79,8 @@ The usage of this annotation is demonstrated by the followingcode snippet.
 include::res/active/MyOwnClass.java[]
 ----
 
-NOTE:The `@Active` annotation is currently not used within the Eclipse framework itself and the author of this $book has not yet managed to find a good use case for this annotation.
+[NOTE]
+====
+The `@Active` annotation is currently not used within the Eclipse framework itself and the author of this $book has not yet managed to find a good use case for this annotation.
+====
 

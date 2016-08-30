@@ -8,8 +8,12 @@ The following screenshot shows this setting in the product configuration file.
 
 image::deletepersistedmodel10.png[Delete persisted Eclipse application model,pdfwidth=60%]
 
-NOTE:Ensure that you used the _-_ sign and that the parameter is typed correctly.
+
+[NOTE]
+====
+Ensure that you used the _-_ sign and that the parameter is typed correctly.
 Is must be: _-clearPersistedState_
+====
 
 === Why is this setting necessary?
 

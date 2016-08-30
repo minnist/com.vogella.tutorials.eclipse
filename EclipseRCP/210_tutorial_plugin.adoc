@@ -7,7 +7,11 @@ plug-in.
 This plug-in is later converted into an Eclipse
 RCP application.
 
-NOTE:The following description calls this plug-in the _application plug-in_ as this plug-in will contain the main application logic.
+
+[NOTE]
+====
+The following description calls this plug-in the _application plug-in_ as this plug-in will contain the main application logic.
+====
 
 === Creating a plug-in project
 

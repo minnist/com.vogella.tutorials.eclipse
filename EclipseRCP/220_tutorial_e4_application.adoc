@@ -74,7 +74,11 @@ btn:[Add...] button.
 
 image::e4_productfeature21.png[Adding the required features to your product,pdfwidth=60%]
 
-NOTE:If you cannot add one of the listed features to your product, ensure that you have changed your product to be based on features.
+
+[NOTE]
+====
+If you cannot add one of the listed features to your product, ensure that you have changed your product to be based on features.
+====
 
 === Remove the version dependency from the features in the product
 

@@ -117,7 +117,7 @@ image::commands20.png[Creating a menu]
 Add a _Handled MenuItem_ model element to the menu:File[] menu.
 This item should point to the _Save_ command via the _Command_ attribute.
 
-image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
+image::commands30.png[Adding a menu item to the menu]
 
 Add a _Separator_ after the Save menu item and after that add an entry for the Exit command.
 

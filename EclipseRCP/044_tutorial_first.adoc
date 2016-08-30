@@ -23,7 +23,7 @@ image::wizard40.png[]
 On the last wizard page, select the _Create sample content (parts, menu etc.)_ flag.
 Via this flag you configure that the generated application has example content, e.g., a view and some menu and toolbar entries.
 
-image::rcpwizard50.png" scale="35" />
+image::rcpwizard50.png[]
 
 
 [NOTE]

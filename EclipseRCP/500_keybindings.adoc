@@ -49,7 +49,7 @@ For this you create a new _BindingTable_ model element and define a reference to
 
 In your key binding entry you specify the key sequence and the command associated with this shortcut.
 
-image::keybindings20.png" scale="30[How to add the BindingContext Entries,pdfwidth=60%]
+image::keybindings20.png[How to add the BindingContext Entries]
 
 The control keys are different for each platform, e.g., on the Mac vs. a Linux system. You can use Ctrl, but this would be hardcoded.
 It is better to use the M1 - M4 meta keys.

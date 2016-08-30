@@ -1,10 +1,6 @@
+== Features and Products
 
-<section>== Features and Products
-	
-		The following description uses feature projects and products, please
-		see
-http://www.vogella.com/tutorials/EclipseFeatureProject/article.html">Feature projects
-		and
-http://www.vogella.com/tutorials/EclipseProductDeployment/article.html">Eclipse Products and Deployment
-		for a description of these topics.
-	
+The following description uses feature projects and products, please see
+http://www.vogella.com/tutorials/EclipseFeatureProject/article.html[Feature projects] and
+http://www.vogella.com/tutorials/EclipseProductDeployment/article.html[Eclipse Products and Deployment] for a description of these topics.
+

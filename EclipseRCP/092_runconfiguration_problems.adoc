@@ -49,6 +49,7 @@ The bundle symbolic name is `org.eclipse.e4.ui.workbench`.
 |Application "org.eclipse.ant.core.antRunner" could not be found in the registry or Application could not be found in the registry.
 |Ensure that you have pressed the _New..._ button in the product configuration file and selected the `E4Application` as application to start.
 You can check the current setting in your _plugin.xml_ file on the _Extensions_ tab and in the details of the _org.eclipse.core.runtime.products_ extension.
+|===
 
 === Finding missing plug-in dependencies during a product launch
 

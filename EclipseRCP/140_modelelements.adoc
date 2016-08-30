@@ -39,4 +39,4 @@ A new part based on this part descriptor can be created and shown via the Eclips
 |Snippets
 |Snippets can be used to pre-configure model parts which you want to create via your program.
 You can use the Eclipse framework to clone such a snippet and use the result object to attach it to the application model at runtime.
-
+|===

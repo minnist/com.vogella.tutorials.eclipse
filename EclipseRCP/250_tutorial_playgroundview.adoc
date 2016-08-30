@@ -15,7 +15,7 @@ How do I use the WebKit renderer on Linux-GTK for details.
 
 Change the `PlaygroundPart` class so the part looks like the following screenshot.
 
-image::swtmap10.png" scale="60[SWT Browser Widget example with Google Maps,pdfwidth=60%]
+image::swtmap10.png[SWT Browser Widget example with Google Maps]
 
 NOTE: This example might not work, in case Google changes its API.
 

@@ -4,7 +4,7 @@
 
 In the following exercises you create the basis of the application user interface. At the end of this exercise your user interface should look similar to the following screenshot.
 
-image::tutorial_model50.png" scale="50[Screenshot of the application,pdfwidth=60%]
+image::tutorial_model50.png[Screenshot of the application]
 
 === Open the Application.e4xmi file
 
@@ -23,7 +23,7 @@ TIP:Alternatively to the context menu you can also use the btn:[Add...] button o
 
 After creating the perspective stack add a _Perspective_ to it, either via the context menu or the btn:[Add...] button.
 
-image::tutorial_model04.png" scale="35[Adding a Perspective,pdfwidth=60%]
+image::tutorial_model04.png[Adding a Perspective]
 
 Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.perspective_ value in the _ID_ field.
 
@@ -37,7 +37,7 @@ image::tutorial_model12.png[Add PartSashContainer,pdfwidth=60%]
 
 Change its _Orientation_ attribute to _Horizontal_ and enter into the ID field the _com.example.e4.rcp.todo.partsashcontainer.main_ value.
 
-image::tutorial_model20.png" scale="30[Change the orientation attribute,pdfwidth=60%]
+image::tutorial_model20.png[Change the orientation attribute]
 
 Add a part stack as the first child to your part sash container element.
 
@@ -46,7 +46,7 @@ Now add two part stacks to the second part sash container.
 
 After these changes your application model should look similar to the following screenshot.
 
-image::tutorial_model30.png" scale="60[Application model structure,pdfwidth=60%]
+image::tutorial_model30.png[Application model structure]
 
 === Create the parts
 
@@ -71,7 +71,7 @@ Also put the label from the table into the appropriate field of the part editor.
 The final structure of your application model should be similar to the following screenshot.
 The screenshot also shows the detailed data of the overview part inside the detail pane of the application model editor.
 
-image::tutorial_model40.png" scale="30[Part data,pdfwidth=60%]
+image::tutorial_model40.png[Part data]
 
 === Validate the user interface
 

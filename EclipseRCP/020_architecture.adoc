@@ -38,7 +38,7 @@ An OSGi runtime allows the developer to mark Java packages as public, provisiona
 The internal API is private, therefore not visible. The provisional API are to test non-finalized APIs, therefore are visible but non-stable.
 The public API, or simply API, are the visible and stable API, that can be reused by other components.
 
-image::osgi_api_definition_overview.png" scale="20[API definition in Eclipse,pdfwidth=60%]
+image::osgi_api_definition_overview.png[API definition in Eclipse]
 
 The Eclipse platform project marks packages either as public API or as provisional API, to make all Java classes accessible to Eclipse developers.
 If the Eclipse platform project releases an API, the platform project plans to keep this API stable for as long as possible.

@@ -16,18 +16,18 @@ image::productproject12.png[,pdfwidth=60%]
 
 Right-click on this project and select menu:New[Product Configuration].
 
-image::training_product10.png" scale="35[,pdfwidth=60%]
+image::training_product10.png[]
 
 Create a product configuration file called _todo.product_ inside the _com.example.e4.rcp.todo.product_ folder.
 
-image::training_product20.png" scale="35[,pdfwidth=60%]
+image::training_product20.png[]
 
 Press the btn:[Finish] button.
 The file is created and opened in an editor.
 
 Press the btn:[New...] button on the _Overview_ tab of the product editor.
 
-image::training_product28.png[Press the new button in the product editor,pdfwidth=60%]
+image::training_product28.png[Press the new button in the product editor]
 
 Enter _to-do_ as the _Product Name_ , your plug-in as the _Defining Plug-in_ , _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
 

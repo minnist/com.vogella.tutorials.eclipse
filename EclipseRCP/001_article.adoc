@@ -43,7 +43,7 @@ include::250_tutorial_playgroundview.adoc[]
 
 === Introduction to dependency injection
 
-See http://www.vogella.com/tutorials/DependencyInjection/article.html Dependency injection in Java for an introduction into the concept of dependency injection,
+See http://www.vogella.com/tutorials/DependencyInjection/article.html[Dependency injection in Java] for an introduction into the concept of dependency injection,
 
 include::420_dependencyinjection.adoc[]
 include::422_context.adoc[]

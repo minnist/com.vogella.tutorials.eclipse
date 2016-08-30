@@ -1,0 +1,27 @@
+= Eclipse Target Platform - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 7.6, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseTargetPlatform
+
+[abstract]
+Eclipse Target Platform.
+Via a target platform you define which set of plug-ins and what version of Eclipse you develop against.
+This tutorial describes how to setup your target platform for Eclipse Plug-in and RCP development.
+	
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_definition.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::020_tutorial_setup.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

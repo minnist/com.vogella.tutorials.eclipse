@@ -1,0 +1,4 @@
+== Target platform resources
+
+https://wiki.eclipse.org/PDE/Target_Definitions[Target definition wiki]
+

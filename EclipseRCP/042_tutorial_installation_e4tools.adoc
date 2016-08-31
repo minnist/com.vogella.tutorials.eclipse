@@ -12,6 +12,7 @@ Install the tools and restart your Eclipse IDE after the installation.
 
 === Install the e4 spies from Eclipse.org
 
+To install the tools required for Eclipse RCP development open the Eclipse update manager via Open menu:Help[Install new software...].
 You can use the following URL to install the latest tools:
 
 http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest/

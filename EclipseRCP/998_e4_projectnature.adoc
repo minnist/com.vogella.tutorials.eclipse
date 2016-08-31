@@ -11,5 +11,8 @@ image::removefilterfordotfiles10.png[Remove filter]
 
 For this purpose remove the filter in the _Package Explorer_ view for files starting with . (dot) and modify the _.project_ file to the following.
 
+[source, xml]
+----
 include::./res/firstrcp/project[]
+----
 

@@ -1,7 +1,7 @@
 == Exercise: Create a simple SWT program
 	
 		Continue to use the
-		`com.examle.swt.widgets`
+		`com.example.swt.widgets`
 		project.
 	
 	

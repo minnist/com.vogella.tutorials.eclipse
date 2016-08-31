@@ -1,7 +1,7 @@
 == Example: Creating a plug-in project with a dependency to SWT
 	
 		Create a new plug-in project called
-		`com.examle.swt.widgets`
+		`com.example.swt.widgets`
 		via
 		menu:
 			<guimenu>File[New > Other... > Plug-in Development > New Plug-in Project]

@@ -119,7 +119,7 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			Deactivate your OSGi service for the
 			`ITodoService`
 			which you have created in
-			<xref linkend="tutorial_e4services_usage" />
+			<<tutorial_e4services_usage" />
 			. You can do this, by
 			To remove this service, deleting the
 			annotation from the
@@ -244,7 +244,7 @@ include::res/contextfunction/service.xml[]
 		
 			If the service still fails ensure that the service property is
 			correctly entered. See
-			<xref linkend="tutorial_contextfunction_servicekey" />
+			<<tutorial_contextfunction_servicekey" />
 			for details.
 		
 

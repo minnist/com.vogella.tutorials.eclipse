@@ -1,0 +1,169 @@
+== OSGi metadata
+
+=== The manifest file (MANIFEST.MF)
+
+Technically OSGi plug-ins
+are
+_.jar_
+files with additional meta
+information.
+This meta
+information is stored
+in the
+_META-INF/MANIFEST.MF_
+file. This file is called the
+_manifest_
+file and
+is part of the standard Java
+specification and
+OSGi adds
+additional
+metadata to it. According to the Java
+specification, any
+Java
+runtime
+must
+ignore
+unknown metadata. Therefore,
+plug-ins can be
+used
+without
+restrictions in other
+Java
+environments.
+
+The following listing
+is
+an example
+for a manifest file.
+
+[source,text]
+----
+include::res/bundles/MANIFEST.MF[]
+----
+
+The following table gives an explanation of the identifiers
+in the
+manifest
+file. For additional information on the
+unique
+identifier see
+<<osgiarch_identifier>>
+and for information on the version schema which is typically used in
+OSGi see
+<<osgiarch_semanticversions>>.
+
+.OSGi identifiers in the manifest file
+|===
+|Identifier |Description
+
+|Bundle-Name
+|Short description of the plug-in.
+
+|Bundle-SymbolicName
+|The unique identifier of the plug-in. If this plug-in is using
+the
+extension point functionality of Eclipse,
+it must be marked as
+Singleton. You do this by adding the following
+statement after the Bundle-SymbolicName
+identifier:
+`; singleton:=true`
+
+|Bundle-Version
+|Defines the plug-in version and must be incremented if a new version of the plug-in is published.
+
+|Bundle-Activator
+|Defines an optional activator class which implements the `BundleActivator` interface. 
+An instance of this class is created when the plug-in gets activated. 
+Its `start()` and `stop()` methods are called whenever the plug-in is started or stopped. 
+An OSGi activator can be used to configure the plug-in
+during
+startup. The execution of an activator
+increases the startup time of the
+application, therefore this functionality should be used carefully.
+
+|Bundle-RequiredExecutionEnvironment (BREE)
+|Specify which Java version is required to run the plug-in.
+If
+this
+requirement is not fulfilled, then the OSGi
+runtime does
+not
+load
+the
+plug-in.
+
+|Bundle-ActivationPolicy
+|Setting this to
+_lazy_
+will tell the OSGi runtime that this
+plug-in should only be
+activated if one of its components, i.e.
+classes and
+interfaces
+are used by other plug-ins. If not set, the Equinox runtime does
+not activate the plug-in, i.e.,
+services provided by this plug-in
+are not available.
+
+|Bundle-ClassPath
+|The Bundle-ClassPath specifies where to load classes from
+the
+bundle. The default is '.' which allows classes to be
+loaded from
+the root of the bundle. You can also add JAR files to
+it, these
+are called
+_nested JAR files_
+.
+
+|===
+
+=== Bundle-SymbolicName and Version
+
+Each plug-in has a symbolic name which is defined via the
+`Bundle-SymbolicName`
+property. The name starts by convention
+with the reverse domain
+name
+of
+the plug-in author, e.g., if you own the
+"example.com" domain
+then the
+symbolic name would start with
+"com.example".
+
+Each plug-in has also a version number in the
+`Bundle-Version`
+property.
+
+The
+`Bundle-Version`
+and the
+`Bundle-SymbolicName`
+uniquely
+identifies
+a plug-in.
+
+=== Semantic Versioning with OSGi
+
+OSGi recommends to use a
+_<major>.<minor>.<patch>_
+schema for the
+version number which is defined via the
+`Bundle-Version`
+field identifier. If you change your plug-in code you increase the
+version according to the following rule set.
+
+* _<patch>_
+is increased if all changes are backwards compatible.
+* _<minor>_
+is increased if public API has changed but all changes are
+backwards compatible.
+*_<major>_
+is increased if changes are not backwards compatible.
+
+For more information on this version scheme see the
+https://wiki.eclipse.org/Version_Numbering[Eclipse Version Numbering Wiki].
+

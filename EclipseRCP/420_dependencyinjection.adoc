@@ -3,7 +3,7 @@
 === Define class dependencies in Eclipse
 
 The programming model in Eclipse supports constructor, method and field injection according to the Java Specification Request 330 (JSR330). Eclipse also defines additional annotations for the purpose of dependency injection.
-The most important annotations are covered in <xref linkend="dependencyinjection_eclipseannotations" /> , other more special annotations are covered in there corresponding chapters.
+The most important annotations are covered in <<dependencyinjection_eclipseannotations" /> , other more special annotations are covered in there corresponding chapters.
 
 The Eclipse dependency framework ensures that the key and the type of the injected object is correct.
 For example, if you specify that you want to have an object of type `Todo` for the "xyz" key, as shown in the following field declaration, the framework will only inject an object if it finds one with an assignable type.
@@ -54,7 +54,7 @@ If you change such objects in the Eclipse context , the update is triggered by t
 [NOTE]
 ====
 The Eclipse platform supports additional annotations for special purposes, e.g., for receiving events (sent by the event service) or working with preferences.
-For a summary of all standard annotations defined in the Eclipse platform see <xref linkend="eclipse4_annotations" />
+For a summary of all standard annotations defined in the Eclipse platform see <<eclipse4_annotations" />
 ====
 
 === On which objects does Eclipse perform dependency injection?
@@ -77,7 +77,7 @@ If the selection changes, the Eclipse framework will inject the new value.
 
 The re-injection only works on methods and fields which are marked with `@Inject`.
 It will not work on parameters injected into constructors and methods which are marked with `@PostConstruct` , as these methods are only executed once.
-This will be explained later in <xref linkend="context_creationprocess" />.
+This will be explained later in <<context_creationprocess" />.
 
 [NOTE]
 ====

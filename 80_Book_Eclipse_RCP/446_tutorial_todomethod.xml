@@ -98,11 +98,11 @@
 			You
 			call
 			this method in
-			<xref linkend="tutorial_wizard" />
+			<<tutorial_wizard" />
 			and the Eclipse framework uses this method
 			after you implement the
 			changes in
-			<xref linkend="tutorial_usingeselectionservice" />
+			<<tutorial_usingeselectionservice" />
 			.
 		
 	

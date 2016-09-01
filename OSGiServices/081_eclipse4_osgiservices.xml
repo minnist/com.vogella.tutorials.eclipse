@@ -23,9 +23,9 @@
 		flag is set on the
 		_MANIFEST.MF_
 		file. The DS Annotation support in Eclipse allows that this is done automatically. See
-		<xref linkend="declarativeservices_annotations" />
+		<<declarativeservices_annotations" />
 		and
-		<xref linkend="osgiservice_active" />
+		<<osgiservice_active" />
 		for details.
 	
 

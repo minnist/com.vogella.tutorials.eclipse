@@ -50,7 +50,7 @@ include::res/preferences/EnterCredentialsHandler.java[]
 				`@Preference`
 				annotation
 				is not yet released as official API. See
-				<xref linkend="e4overview_api" />
+				<<e4overview_api" />
 				.
 			
 		

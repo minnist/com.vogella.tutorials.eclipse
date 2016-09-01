@@ -4,7 +4,7 @@
 === Prerequisites
 		
 			This optional exercise is based on
-			<xref linkend="tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu" />
 			as it reuses the context menu of the table you created there. If you
 			skipped this exercise, you need to go back and
 			perform the exercise
@@ -33,7 +33,7 @@ include::res/editor/OpenEditorHandlerFirst.java[]
 			created
 			and
 			registered with the SWT table in
-			<xref linkend="tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu" />
 			.
 		
 		

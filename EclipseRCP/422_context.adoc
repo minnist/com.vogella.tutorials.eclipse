@@ -18,7 +18,7 @@ The value (to which the key points) can be injected into other objects.
 As described earlier the Eclipse context is similar to a `Map` data structure.
 But unlike a map, the Eclipse context is hierarchical and can also dynamically compute values for requested keys.
 
-For certain model objects (see <xref linkend="context_modelelementswithcontext" />) a local context is created.
+For certain model objects (see <<context_modelelementswithcontext" />) a local context is created.
 Such a context is associated with an application model object.
 
 The different context objects are connected to form a hierarchical tree structure based on the structure of your application model.

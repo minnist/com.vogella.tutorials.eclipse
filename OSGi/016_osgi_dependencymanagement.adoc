@@ -1,0 +1,122 @@
+== Defining the dependencies of the plug-in
+
+=== Specifying plug-in dependencies via the manifest file
+		
+A plug-in can define
+dependencies to
+other software components
+via its
+manifest file.
+OSGi prevents access to classes
+without a defined
+dependency and throws a
+`ClassNotFoundException`
+. The only exception are packages from the Java runtime
+environment (based on the Bundle-RequiredExecutionEnvironment
+definition of the plug-in);
+these
+packages are
+always available to a plug-in without an explicitly
+defined dependency.
+		
+If you add a dependency to your manifest file, the Eclipse IDE
+automatically adds the
+corresponding
+_JAR_
+file to your project classpath.
+		
+You can define dependencies either as plug-in dependencies or
+package dependencies. If you define a plug-in
+dependency your plug-in
+can access
+all exported packages of this plug-in. If you
+specify a
+package dependency you can
+access this package. Using package
+dependencies allows you to exchange the plug-in which
+provides this
+package at a
+later point in time. If you require this flexibility
+prefer the usage of package dependencies.
+		
+image::osgi_dependency_definition10.png[Dependency management]
+		
+A plug-in can define that it depends on a
+certain version (or a
+range) of another bundle, e.g., plug-in A can
+define that it depends
+on
+plug-in C in version 2.0, while plug-in B
+defines that it depends on
+version 1.0 of plug-in C.
+		
+The OSGi runtime ensures that all dependencies are present
+before it
+starts a plug-in.
+OSGi reads the
+manifest
+file
+of a plug-in
+during its
+installation.
+It ensures that all dependent
+plug-ins
+are also
+resolved and, if necessary, activates
+them before the plug-in starts.
+
+=== Life cycle of plug-ins in OSGi
+		
+With the installation of a plug-in in the OSGi runtime the
+plug-in is persisted in a local bundle cache. The
+OSGi runtime then
+tries to resolve its dependencies.
+		
+If all required
+dependencies are resolved, the plug-in is in the
+
+_RESOLVED_
+status
+otherwise it stays in the
+_INSTALLED_
+status.
+		
+In case several plug-ins exist which
+can satisfy the dependency, the
+plug-in
+with the highest valid
+version is used.
+		
+If the
+versions are the
+same,
+the
+plug-in with
+the lowest unique identifier (ID) is used. Every plug-in
+gets this
+ID
+assigned by
+the framework during the
+installation.
+		
+When the plug-in starts, its status is
+_STARTING_
+. After a successful start, it becomes
+_ACTIVE_
+.
+		
+This life cycle is depicted in the following graphic.
+		
+image::osgi_livecycle10.png" scale="30[OSGi life cycle]
+
+=== Dynamic imports of packages
+		
+For legacy reasons OSGi supports a dynamic import of
+packages.
+See
+http://wiki.osgi.org/wiki/DynamicImport-Package[OSGi Wiki for dynamic imports]
+for
+details.
+You should not use this feature, it is a symptom of a
+non-modular design.
+

@@ -266,7 +266,7 @@ image::gitstaging30.png[Git Staging View - Add to staging area,pdfwidth=60%]
 			Open the
 			_History_
 			view to browse the commit history of your repository. See
-			<xref linkend="githistoryview" />
+			<<githistoryview" />
 			for information how to use this view. Review which files were
 			included in
 			your individual commits.

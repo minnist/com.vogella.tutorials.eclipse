@@ -109,7 +109,7 @@ include::res/databinding/TagOverviewPart.java[]
 			
 				Currently the selection of the tree is not sent to the
 				TodoDetailsPart. This will be implemented in
-				<xref linkend="tutorial_usingeselectionservice" />
+				<<tutorial_usingeselectionservice" />
 				.
 			
 		

@@ -164,7 +164,7 @@ image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
 		
 			OSGi also provides a low-level API for starting, stopping and
 			tracking services. See
-			<xref linkend="osgiapiservice_overview" />
+			<<osgiapiservice_overview" />
 			for a reference.
 		
 	

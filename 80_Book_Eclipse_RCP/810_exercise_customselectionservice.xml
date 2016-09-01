@@ -5,13 +5,13 @@
 		NOTE:
 			
 				This exercise is optional and based on
-				<xref linkend="exercise_customselectionservice1" />
+				<<exercise_customselectionservice1" />
 				.
 			
 		
 		
 			In the project you created in
-			<xref linkend="exercise_customselectionservice1" />
+			<<exercise_customselectionservice1" />
 			create the following class, which is a simple
 			version of a new
 			custom

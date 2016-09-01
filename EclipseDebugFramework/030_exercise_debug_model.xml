@@ -77,7 +77,7 @@ include::res/ExampleDebugElement.java[]
 			`IStackFrames`
 			are only visible when a thread is suspended, which can also be seen
 			in the following
-			<xref linkend="debug_create_ithread" />
+			<<debug_create_ithread" />
 			section.
 		
 		
@@ -116,7 +116,7 @@ include::res/ExampleStackFrame.java[]
 			and
 			`getTopStackFrame()`
 			methods in
-			<xref linkend="debug_create_ithread" />
+			<<debug_create_ithread" />
 			.
 		
 	

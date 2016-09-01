@@ -83,7 +83,7 @@ image::perspective_switchermenu10.png[Perspective switcher menu,pdfwidth=60%]
 			menu
 			entries to
 			specify to which perspective you want to switch. See
-			<xref linkend="commands_parameter" />
+			<<commands_parameter" />
 			for an example how to do this.
 		
 

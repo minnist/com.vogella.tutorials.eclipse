@@ -17,7 +17,7 @@
 			plug-in must be defined as dependency in the
 			_MANIFEST.MF_
 			file of your application plug-in. You have done this in
-			<xref linkend="tutorial_api" />
+			<<tutorial_api" />
 			.
 			Validate that this is the case.
 		
@@ -60,7 +60,7 @@ include::res/selection/ViewerSetSelection.java[]
 === Review TodoDetailsPart
 		
 			If you followed the exercises in
-			<xref linkend="tutorial_api" />
+			<<tutorial_api" />
 			,
 			your
 			`TodoDetailsPart`

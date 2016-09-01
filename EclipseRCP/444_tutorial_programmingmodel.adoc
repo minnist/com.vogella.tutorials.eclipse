@@ -13,5 +13,5 @@ include::res/snippets/methods.java[]
 === Validating
 
 Run your application and validate that the `@PostConstruct` method is called.
-If this does not work, see <xref linkend="postconstructmethodnotcalled" /> for a solution.
+If this does not work, see <<postconstructmethodnotcalled" /> for a solution.
 

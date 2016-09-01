@@ -45,7 +45,7 @@ include::res/delete/RemoveTodoHandler.java[]
 				part.
 				You will fix that after you learned about the event bus of
 				Eclipse in
-				<xref linkend="part_eventbroker" />
+				<<part_eventbroker" />
 				.
 			
 		
@@ -59,7 +59,7 @@ include::res/delete/RemoveTodoHandler.java[]
 		
 		
 			In
-			<xref linkend="tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu" />
 			you defined a context (popup) menu for your table.
 			As the
 			`RemoveTodoHandler`

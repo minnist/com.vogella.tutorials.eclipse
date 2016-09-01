@@ -108,7 +108,7 @@ include::res/viewer/TodoDeletionPart.java[]
 				correct (they should be based on the
 				_id_
 				field, see
-				<xref linkend="services_todo_tostringhashcode" />
+				<<services_todo_tostringhashcode" />
 				).
 			
 		

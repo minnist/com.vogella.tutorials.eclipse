@@ -14,7 +14,7 @@ https://git.eclipse.org/c/">Eclipse Git web interface
 
 It is far easier to clone from the Gerrit server as this does not
 require you to change the push URL. See
-<xref linkend="eclipsegerritcontribution_cloneviagerrit_server" />
+<<eclipsegerritcontribution_cloneviagerrit_server" />
 for the description how to clone. In case you can use the Gerrit
 server, this section is not relevant for you.
 

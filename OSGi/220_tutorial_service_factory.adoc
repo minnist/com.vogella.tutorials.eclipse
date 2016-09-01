@@ -1,0 +1,59 @@
+== Exercise: Create service bundle
+
+=== Create a factory to access your service implementation
+
+In <<dataservice_plugin>>
+you create two plug-ins. To provide the service implementation to consumers the best solution is to use
+http://www.vogella.com/tutorials/OSGiServices/article.html[OSGi services]
+but to keep this description, simple we use a factory in this exercise.
+
+Create a new class called
+_TodoServiceFactory_
+in the
+`com.example.e4.rcp.todo.services`
+package. For this you might need the following tip.
+
+TIP: In its default configuration the Eclipse IDE hides parent
+packages if they don't contain any classes. During the
+specification
+of your class you
+can
+define the correct package. This
+is depicted in
+the following
+screenshot.
+
+image::tutorial_servicepackage10.png[Specify the package for the creation of a class]
+
+The class provides access to your
+`ITodoService`
+implementation via a static method. It can be
+considered to be a
+_factory_
+for the
+`ITodoService`
+interface.
+A factory hides the creation of the concrete
+instance of
+a
+certain interface.
+
+[source,java]
+----
+include::res/server/TodoServiceFactory.java[]
+----
+
+=== Export the package in the service plug-in
+
+Export the
+`com.example.e4.rcp.todo.services`
+package via the
+`MANIFEST.MF`
+file on the
+_Runtime_
+tab, so that it is available for other
+plug-ins.
+
+NOTE: Please note that the Eclipse tooling does not support the export of empty packages. 
+You have to create at least one class in the package before you are able to export it.
+

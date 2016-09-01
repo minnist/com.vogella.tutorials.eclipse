@@ -183,7 +183,7 @@ git://github.com/vogella/eclipse4book.git
 
 
 See
-<xref linkend="exercisesolution" />
+<<exercisesolution" />
 for a description how to import the exercise solutions into your
 Eclipse
 workspace.

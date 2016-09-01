@@ -46,7 +46,7 @@
 		include a language and optional
 		a country
 		variant as described in
-		<xref linkend="i18n_propertyfiles" />
+		<<i18n_propertyfiles" />
 		. For example
 		_bundle_en.properties_
 		or

@@ -11,7 +11,7 @@ Create three Java classes called _TodoOverviewPart_, _TodoDetailsPart_ and _Play
 ====
 You can create the classes by clicking on the _Class URI_ hyperlink in the detail pane of the model editor for the part.
 This also connects the created class to the model object.
-If you do this, you can skip <xref linkend="tutorial_modelelementsclasses" /> of this exercise.
+If you do this, you can skip <<tutorial_modelelementsclasses" /> of this exercise.
 ====
 
 The following code shows the `TodoDetailsPart` class.

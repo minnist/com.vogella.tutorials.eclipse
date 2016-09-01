@@ -3,7 +3,7 @@
 
 === How are objects selected for dependency injection
 
-As described in <xref linkend="dependencyinjection_eclipse" /> an object which is created by Eclipse can use annotations to describe its class dependencies.
+As described in <<dependencyinjection_eclipse" /> an object which is created by Eclipse can use annotations to describe its class dependencies.
 
 During dependency injection for an object created by Eclipse, the Eclipse framework searches for a fitting object based on the specified key.
 The search starts in the local context associated with the application model object.
@@ -19,8 +19,8 @@ The search happens (mostly) transparently for the caller of the injection.
 
 === How to access the model objects?
 
-For the class references in the application model (see <xref linkend="connectmodeltojava" /> ), the Eclipse framework creates the corresponding objects when needed.
-Such an object has access to its corresponding model object (see <xref linkend="importantmodelelement_element" />) via dependency injection.
+For the class references in the application model (see <<connectmodeltojava" /> ), the Eclipse framework creates the corresponding objects when needed.
+Such an object has access to its corresponding model object (see <<importantmodelelement_element" />) via dependency injection.
 
 For example, in the implementation of a part you can access the model information of a part via: `@Inject MPart part;`
 
@@ -34,7 +34,7 @@ These are:
 * several other objects which have explicitly been added to the context
 
 The context can be modified by the application code and the framework.
-As the Eclipse framework automatically tracks the dependencies of the objects it creates, it can update them as described in <xref linkend="dependencyinjection_reinject" />.
+As the Eclipse framework automatically tracks the dependencies of the objects it creates, it can update them as described in <<dependencyinjection_reinject" />.
 
 === Qualifiers for accessing the active part or shell
 

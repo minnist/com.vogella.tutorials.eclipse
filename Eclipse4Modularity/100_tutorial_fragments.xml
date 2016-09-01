@@ -364,7 +364,7 @@ image::fragment62.png[Adding a menu entry,pdfwidth=60%]
 			in the
 			_Application.e4xmi_
 			file. See
-			<xref linkend="part_commands" />
+			<<part_commands" />
 			for further information. The created entry should be similar to the
 			following screenshot.
 		

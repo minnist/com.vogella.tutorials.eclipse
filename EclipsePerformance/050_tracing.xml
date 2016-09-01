@@ -42,7 +42,7 @@ include::res/tracing/options.txt[]
 		
 			You can use the corresponding preference dialog to find the values
 			you want to enable. See
-			<xref linkend="tracing_runonatruntime" />
+			<<tracing_runonatruntime" />
 			.
 		
 		

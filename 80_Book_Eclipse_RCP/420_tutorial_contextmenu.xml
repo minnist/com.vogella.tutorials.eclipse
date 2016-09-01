@@ -35,7 +35,7 @@
 
 		
 			For the implementation of a popup menu, check
-			<xref linkend="menuadvanced_popup" />
+			<<menuadvanced_popup" />
 			to learn how
 			to create popup (context) menus
 			and assign them to SWT
@@ -54,7 +54,7 @@
 				to delete the selected Todo once you have learned about the
 				selection
 				service in
-				<xref linkend="tutorial_usingeselectionservice" />
+				<<tutorial_usingeselectionservice" />
 				.
 			
 		

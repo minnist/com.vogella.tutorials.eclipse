@@ -30,7 +30,7 @@ include::res/snippets/cansave.txt[]
 		
 		
 			Similar to
-			<xref linkend="tutorial_usingpartservice_save" />
+			<<tutorial_usingpartservice_save" />
 			enable the deletion handler for todos only if a
 			`Todo`
 			is selected.

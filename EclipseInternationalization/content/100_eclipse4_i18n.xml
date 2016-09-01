@@ -48,7 +48,7 @@ include::res/eclipse4/Usage.java[]
 						correct location. This annotation allows defining the
 						location of
 						the file, see
-						<xref linkend="eclipse4_i18_messagesannotation" />
+						<<eclipse4_i18_messagesannotation" />
 						. If not present, go to the next
 						step.
 					
@@ -76,7 +76,7 @@ include::res/eclipse4/Usage.java[]
 						Such a property file
 						is called OSGi resource
 						bundle (see
-						<xref linkend="i18n_osgi" />
+						<<i18n_osgi" />
 						).
 					
 				

@@ -118,7 +118,7 @@ include::res/wizards/ModifyListener.java[]
 				widget to write changes in these widgets back to the
 				`Todo`
 				object. We skip this step here because in
-				<xref linkend="databindingpart" />
+				<<databindingpart" />
 				you learn an easier way to do this.
 			
 		
@@ -162,7 +162,7 @@ include::res/wizards/NewTodoHandler.java[]
 		NOTE:
 			
 				In
-				<xref linkend="part_eventbroker" />
+				<<part_eventbroker" />
 				you learn how to update all components of your
 				application
 				immediately

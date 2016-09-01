@@ -26,7 +26,7 @@
 | @javax.inject.Inject
 |
 							See
-							<xref linkend="dependencyinjection_eclipse" />
+							<<dependencyinjection_eclipse" />
 							.
 
 						
@@ -35,7 +35,7 @@
 |@javax.inject.Named
 |
 							See
-							<xref linkend="dependencyinjection_eclipse" />
+							<<dependencyinjection_eclipse" />
 							.
 						
 					
@@ -44,7 +44,7 @@
 |
 							
 								See
-								<xref linkend="dependencyinjection_eclipse" />
+								<<dependencyinjection_eclipse" />
 								.
 							
 						
@@ -55,7 +55,7 @@
 |
 							
 								See
-								<xref linkend="commands_behaviorannotations" />
+								<<commands_behaviorannotations" />
 								.
 							
 						
@@ -66,7 +66,7 @@
 |
 							
 								See
-								<xref linkend="commands_behaviorannotations" />
+								<<commands_behaviorannotations" />
 								.
 							
 						
@@ -76,7 +76,7 @@
 |
 							
 								See
-								<xref linkend="menuadvanced_dynamic" />
+								<<menuadvanced_dynamic" />
 								.
 							
 						
@@ -86,7 +86,7 @@
 |
 							
 								See
-								<xref linkend="menuadvanced_dynamic" />
+								<<menuadvanced_dynamic" />
 								.
 							
 						
@@ -96,7 +96,7 @@
 |
 							
 								See
-								<xref linkend="eclipse4editor_persist" />
+								<<eclipse4editor_persist" />
 								.
 							
 						
@@ -106,7 +106,7 @@
 |
 							
 								See
-								<xref linkend="eventsystem_annotations" />
+								<<eventsystem_annotations" />
 								.
 							
 						
@@ -117,7 +117,7 @@
 |
 							
 								See
-								<xref linkend="eventsystem_annotations" />
+								<<eventsystem_annotations" />
 								.
 							
 						
@@ -127,7 +127,7 @@
 |
 							
 								See
-								<xref linkend="eclipse4_preferences" />
+								<<eclipse4_preferences" />
 								.
 							
 						
@@ -137,7 +137,7 @@
 |
 							
 								See
-								<xref linkend="persiststate" />
+								<<persiststate" />
 								.
 							
 						
@@ -147,7 +147,7 @@
 |
 							
 								See
-								<xref linkend="lifecycle_implementation" />
+								<<lifecycle_implementation" />
 								.
 							
 						
@@ -157,7 +157,7 @@
 |
 							
 								See
-								<xref linkend="lifecycle_implementation" />
+								<<lifecycle_implementation" />
 								.
 							
 						
@@ -167,7 +167,7 @@
 |
 							
 								See
-								<xref linkend="lifecycle_implementation" />
+								<<lifecycle_implementation" />
 								.
 							
 						
@@ -177,7 +177,7 @@
 |
 							
 								See
-								<xref linkend="lifecycle_implementation" />
+								<<lifecycle_implementation" />
 								.
 							
 						
@@ -188,7 +188,7 @@
 |
 							
 								See
-								<xref linkend="ownobjects_difrom" />
+								<<ownobjects_difrom" />
 								.
 							
 						
@@ -198,7 +198,7 @@
 |
 							
 								See
-								<xref linkend="ownobjects_difrom" />
+								<<ownobjects_difrom" />
 								.
 							
 						
@@ -208,7 +208,7 @@
 |
 							
 								See
-								<xref linkend="dependencyinjection_eclipse" />
+								<<dependencyinjection_eclipse" />
 								.
 							
 						
@@ -218,7 +218,7 @@
 |
 							
 								See
-								<xref linkend="dependencyinjection_active" />
+								<<dependencyinjection_active" />
 								.
 							
 						

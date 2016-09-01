@@ -14,7 +14,7 @@ The following table lists potential problems and solutions.
 
 |"Could not resolve module" message during start up.
 |Check that all required plug-ins are included in your product configuration.
-Make sure that your product defines dependencies to all required plug-ins or features. See <xref linkend="runconfiguration_mainproblem" />
+Make sure that your product defines dependencies to all required plug-ins or features. See <<runconfiguration_mainproblem" />
 
 Bundles may also require a certain version of the Java virtual machine, e.g., a bundle may require Java 1.6 and will therefore not load in a Java 1.5 VM. Check the _MANIFEST.MF_ file on the _Overview_ tab in the _Execution Environments_ section which Java version is required.
 

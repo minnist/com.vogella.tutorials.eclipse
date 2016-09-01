@@ -154,7 +154,7 @@ include::res/event/TodoOverviewPart.java[]
 		
 			In
 			the
-			<xref linkend="contextfunctionschapter" />
+			<<contextfunctionschapter" />
 			chapter we improve our current solution and move the event sending to
 			the implementation class of the
 			`ITodoService`

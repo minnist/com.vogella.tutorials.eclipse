@@ -69,7 +69,7 @@ include::res/handler/TodoDeletionPart.java[]
 			
 				The handler and command service have not been
 				released as official API. See
-				<xref linkend="e4overview_api" />
+				<<e4overview_api" />
 				.
 			
 		

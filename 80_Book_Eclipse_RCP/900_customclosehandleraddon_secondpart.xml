@@ -4,10 +4,10 @@
 === Target
 		
 			In this exercise you register an existing model add-on created in
-			<xref linkend="exercise_modeladdonclose" />
+			<<exercise_modeladdonclose" />
 			with the Eclipse IDE.
 			This is done similar to the approach described in
-			<xref linkend="firstplugin_migratione4" />
+			<<firstplugin_migratione4" />
 			, the only difference is that you contribute a model add-on.
 		
 	

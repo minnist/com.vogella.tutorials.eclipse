@@ -167,7 +167,7 @@
 		=== More about the target platform
 				
 					See
-					<xref linkend="parttargetplatform" />
+					<<parttargetplatform" />
 					for more information about the target platform configuration.
 				
 			
@@ -215,7 +215,7 @@
 				The usage of the model spy requires the installation of the
 				Eclipse 4
 				- Core Tools as described in
-				<xref linkend="tutorial_installation_e4tools" />
+				<<tutorial_installation_e4tools" />
 				.
 			
 
@@ -251,7 +251,7 @@
 				
 					The exact details of applying this
 					modular approach is covered in
-					<xref linkend="osgipart" />
+					<<osgipart" />
 					.
 				
 			
@@ -475,7 +475,7 @@
 		=== Learn about the event system
 				
 					See
-					<xref linkend="part_eventbroker" />
+					<<part_eventbroker" />
 					to learn more about sending out events in your Eclipse application.
 				
 			
@@ -489,7 +489,7 @@
 		=== Creating dynamic menu entries
 				
 					See
-					<xref linkend="tutorial_dynamicmenus" />
+					<<tutorial_dynamicmenus" />
 					for information about creating and changing application model
 					elements dynamically.
 				
@@ -600,9 +600,9 @@
 				
 					How context functions are implemented as OSGI services is described
 					in
-					<xref linkend="contextfunctionschapter" />
+					<<contextfunctionschapter" />
 					. The dedicated section
-					<xref linkend="bestpractices" />
+					<<bestpractices" />
 					summarize the different approaches for communicating inside your
 					application.
 				
@@ -642,10 +642,10 @@
 		=== Code examples for editor implementations
 				
 					How to implement editor like behavior in a part is demonstrated in
-					<xref linkend="tutorial_editorpartservice" />
+					<<tutorial_editorpartservice" />
 					. An example implementation of multiple editors can be found in
 					exercise
-					<xref linkend="tutorial_multipleeditors" />
+					<<tutorial_multipleeditors" />
 					.
 				
 			

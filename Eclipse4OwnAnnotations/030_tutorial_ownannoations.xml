@@ -108,7 +108,7 @@ include::res/DirectTodoObjectSupplier.java[]
 				`ExtendedObjectSupplier`
 				class
 				is not yet released as official API. See
-				<xref linkend="e4overview_api" />
+				<<e4overview_api" />
 				.
 			
 		

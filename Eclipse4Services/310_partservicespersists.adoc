@@ -61,5 +61,5 @@ This information can be used to configure the editor.
 
 Eclipse used to have the `MInputPart` model element.
 This model element has been deprecated and should not be used anymore.
-Use the approach described in <xref linkend="editorinput" />.
+Use the approach described in <<editorinput" />.
 

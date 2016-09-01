@@ -70,7 +70,7 @@ include::res/job/JobSnippets.java[]
 				still
 				read the data somewhere synchronously during startup. This is done
 				for example if you implemented
-				<xref linkend="exercisecomboviewer" />
+				<<exercisecomboviewer" />
 				. If you want to avoid this you need to perform this reading also
 				asynchronously. We leave this
 				change as an optional exercise to the

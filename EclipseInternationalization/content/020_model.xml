@@ -32,7 +32,7 @@ image::modeltranslate.png[]
 			want to replace only a set of relevant Strings, you have to do
 			this
 			manually. If you do it manually you can use the PDE wizard as
-			described in <xref linkend="i18n_plugin" />
+			described in <<i18n_plugin" />
 			to create the
 			_bundle.property_
 			file and the OSGi

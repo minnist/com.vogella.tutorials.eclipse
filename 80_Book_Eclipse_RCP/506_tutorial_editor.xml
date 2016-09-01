@@ -6,7 +6,7 @@
 		NOTE:
 			
 				If you did the optional exercise
-				<xref linkend="tutorial_commandscontextmenu" />
+				<<tutorial_commandscontextmenu" />
 				you should have already the required dependencies in your
 				`com.example.e4.rcp.todo`
 				plug-in. Skip this step in this case.
@@ -52,7 +52,7 @@
 			define a listener to your existing data binding
 			(which you created
 			in
-			<xref linkend="tutorial_databinding" />
+			<<tutorial_databinding" />
 			).
 		
 
@@ -105,7 +105,7 @@ include::res/dirty/SaveAllHandler.java[]
 
 		
 			In
-			<xref linkend="tutorial_usingpartservice_save" />
+			<<tutorial_usingpartservice_save" />
 			you implement that the save handler can only be executed if a dirty
 			editor exists.
 		
@@ -163,7 +163,7 @@ include::res/dirty/SaveAllHandler.java[]
 			`TodoDetailsPart`
 			contains
 			modified data. See
-			<xref linkend="dialogs_jfacemessagedialogstatic" />
+			<<dialogs_jfacemessagedialogstatic" />
 			for information how to create a confirmation dialog.
 		
 		

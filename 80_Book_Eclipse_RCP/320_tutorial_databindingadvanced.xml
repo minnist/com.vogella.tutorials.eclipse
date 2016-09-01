@@ -71,7 +71,7 @@ include::res/databinding/TodoOverviewPart.java[]
 			
 				Currently the selection of the table is not sent to the
 				TodoDetailsPart. This will be implemented in
-				<xref linkend="tutorial_usingeselectionservice" />
+				<<tutorial_usingeselectionservice" />
 				.
 			
 		

@@ -3,7 +3,7 @@
 === Developing custom observables
 		
 			Sometimes the observables, which are provided by the factories (see
-			<xref linkend="databinding_observable_factories" />
+			<<databinding_observable_factories" />
 			), are not sufficient and you might want to create a custom
 			`IObservable`
 			.

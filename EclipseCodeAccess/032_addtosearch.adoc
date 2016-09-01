@@ -5,7 +5,7 @@
 The Eclipse Java tools limit the scope of search related activities based on your projects.
 By default, Eclipse includes elements from opened projects including their dependencies as well as elements from the standard Java library.
 
-For example, the Open Type dialog (kbd:[Ctrl + Shift + T]) does not find the `ISources` interface, if it is not referred to by project in your workspace. 
+For example, the Open Type dialog kbd:[Ctrl + Shift + T] does not find the `ISources` interface, if it is not referred to by project in your workspace. 
 
 As plug-in developer you want to have access to all classes in your current _target platform_.
 The _target platform_ is the set of plug-ins against you develop.

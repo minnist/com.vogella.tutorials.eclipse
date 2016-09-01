@@ -2,7 +2,7 @@
 
 You frequently have to find the plug-in for a given class.
 The Eclipse IDE makes it easy to find the plug-in for a class.
-After enabling the _Include all plug-ins from target into Java Search_ setting in the Eclipse IDE preferences you can use the _Open Type_ dialog (kbd:[Ctrl + Shift + T]) to find the plug-in for a class.
+After enabling the _Include all plug-ins from target into Java Search_ setting in the Eclipse IDE preferences you can use the _Open Type_ dialog kbd:[Ctrl + Shift + T] to find the plug-in for a class.
 The _JAR_ file is shown in this dialog and the prefix of the JAR file is typically the plug-in which contains this class.
 
 image::findplugin08.png[Open Type Dialog]

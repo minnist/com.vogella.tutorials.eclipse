@@ -1,0 +1,4 @@
+== Eclipse product and export resources
+	
+http://tomsondev.bestsolution.at/2007/06/26/branding-for-windows-how-to-create-ico-files-automatically/[How to create ico files automatically]
+

@@ -1,0 +1,147 @@
+== Deployment of your application
+
+=== Creating a stand-alone version of the application
+
+An Eclipse application needs to be exported (also called:
+deployed) to run outside of Eclipse.
+Your product configuration file can be used for that purpose.
+Exporting your product creates a folder with all required artifacts to run your application. 
+This includes a native launcher specific to the platforms, e.g., Windows or Linux, you have exported it for.
+
+=== Exporting via the product file
+
+To export the product switch to your product configuration file,
+select the
+_Overview_
+tab and click on the
+_Eclipse Product export wizard_
+link.
+In the wizard you can specify the location of the exported
+product via
+the
+`Directory`
+property in the
+_Destination_
+group/section. The export wizard is depicted in the following
+screenshot.
+
+image::pdeexportwizard10.png[]
+
+The
+`Root directory`
+property can be used to specify a sub-folder
+in the destination which
+contains the complete exported application.
+This is useful if you
+export the product as an archive file.
+
+The
+resulting directory can be, for example, compressed (zipped)
+and
+shared
+with others. The
+export dialog
+allows you to create an archive
+file
+directly,
+which makes
+it easier to
+transfer all files to another
+machine.
+
+If the
+_Generate p2 repository_
+option is selected, an (p2) update site is generated in a folder
+called
+_repository_
+. This folder can be used to update the Eclipse RCP application.
+
+If you transfer the content of this directory to another machine
+(with the same architecture, e.g., Linux 64 bit),
+your application
+can
+start on this machine. Of course the correct Java version must be
+installed there.
+
+=== Defining which artifacts are included in the export
+
+The artifacts which are included in an export are
+defined by
+the
+_build.properties_
+file of the plug-in. Eclipse provides an graphical editor for this
+file.
+
+Eclipse adds the
+compiled Java
+classes by default. You have
+to
+add
+other
+files manually, e.g.,
+icons or splash screen images.
+
+An Eclipse application started
+from
+the Eclipse IDE
+has access to all
+resources available in the IDE. But to make them available in the
+exported application you need to select them
+in the
+_build.properties_
+file.
+
+It is good practice to include new required resources immediately in
+the
+_build.properties_
+file. This avoids errors after the export of your
+application.
+
+=== Mandatory plug-in artifacts in build.properties 
+
+Make sure the following items (if available) are included in each
+plug-in of the exported application::
+
+* META-INF/MANIFEST.MF
+* plugin.xml
+* other static files, e.g., icons, splash.bmp, etc.
+* Application.e4xmi
+* CSS files
+* OSGi service definition files
+* model fragments
+* translation files
+
+The screenshot below shows
+_build.properties_
+file for a plug-in with most of these components.
+
+image::buildproperties10.png[]
+
+=== Export for multiple platforms via the delta pack
+
+The
+_delta pack_
+contains the platform specific features and
+plug-ins
+which are
+required
+to build and export
+Eclipse applications for
+multiple
+platforms.
+It also
+includes binary launchers
+for all platforms
+in the
+`org.eclipse.equinox.executable`
+feature.
+
+See
+https://wiki.eclipse.org/Building#Cross-platform_build[] Wiki entry for Cross-platform builds
+for the usage. It basically requires that you add the delta pack
+update site to your target platform via
+the
+menu:Window[Preferences > Plug-in Development > Target Platform]
+menu entry.
+
+

@@ -1,0 +1,85 @@
+== Exercise: Export your product
+
+=== Create a feature project for your generated RCP application
+
+Create a new feature project called
+_com.example.e4.rcp.wizard.feature_
+via
+menu:File[New > Other... > Plug-in Development > Feature Project]. 
+The following screenshot shows the first wizard page.
+
+image::createfeature10.png[Creating a feature]
+
+Press
+_Finish_
+on this first wizard page. This leaves the plug-in selection empty,
+you fill
+that in the next
+part of this exercise.
+
+=== Include your plug-in into the feature project
+
+Include the
+`com.example.e4.rcp.wizard`
+plug-in into the new feature. For this open the
+_feature.xml_
+file, select the
+_Plug-ins_
+tab and press the
+_Add..._
+button.
+
+image::createfeature20.png[Include plug-in into a feature]
+
+=== Change the product configuration file to use features
+
+Open your product configuration file and select the
+_Overview_
+tab. Select the option that it is based
+on
+features as depicted in the
+following
+screenshot.
+
+image::tuturiale4_featurewizard10.png[Switching to features in the product configuration file]
+
+=== Add the features as content to your product
+
+Switch to the
+_Contents_
+tab in your product editor. Add the
+_com.example.e4.rcp.wizard.feature_
+feature to your product with the
+_Add..._
+button.
+
+Afterwards add the
+`org.eclipse.e4.rcp`
+feature and press the
+_Add Required_
+button to add the dependencies of the
+`org.eclipse.e4.rcp`
+feature to the product.
+
+image::tuturiale4_featurewizard20.png[Switching to features in the product configuration file]
+
+Ensure that you have the four
+features from the screenshot included
+in
+your
+product.
+
+=== Start the application via the product
+
+Start your application via the product configuration file and
+ensure that the application starts correctly.
+
+If the application does not start, check that you
+have included all four
+features and that you start your
+application via the product configuration and NOT with an existing launch
+configuration
+to
+ensure that your new product
+configuration is used.
+

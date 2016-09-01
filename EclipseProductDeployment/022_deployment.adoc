@@ -1,0 +1,57 @@
+== JRE and headless build
+
+=== Including the required JRE into the export
+		
+You can also deploy your own RCP application bundled with a JRE
+to
+make
+sure that
+a
+certain JRE is used. An Eclipse application first
+searches in
+the
+installation directory for a folder called
+`jre`
+and for a
+contained
+Java-VM.
+If it finds one, then this JRE is used to
+start the
+Eclipse
+application.
+		
+To include the JRE from your running environment, select the
+_Bundle JRE for this environment with the product_
+flag on the
+_Launching_
+tab of your product configuration file.
+
+=== Headless build
+		
+A
+_headless build_
+is an automatic build without user interaction and without a
+graphical user interface. It can be triggered from the command line.
+Typically, the build is automatically done via an additional software
+component called the
+_build server_
+which does so in a clean (and remote) environment.
+		
+Different solutions exist to do a
+headless build.
+Currently the most
+popular
+approach for building Eclipse RCP applications is based on
+Maven Tycho. Describing a headless build is beyond the scope of this
+description but you can see the online
+http://www.vogella.com/tutorials/EclipseTycho/article.html[Maven Tycho tutorial]
+for an introduction into headless builds for Eclipse RCP
+applications.
+		
+An example for a build server would be the
+_Jenkins_
+continuous integration (system). See the online
+http://www.vogella.com/tutorials/Jenkins/article.html[Jenkins tutorial]
+for an introduction into the setup, configuration and usage of
+Jenkins.
+	

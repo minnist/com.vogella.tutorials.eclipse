@@ -1,0 +1,31 @@
+= Eclipse product and application deployment - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel(c) 2007, 2016 vogella GmbH
+Version 7.5, 01.09.2016
+:docinfodir: ../
+:vgwort: EclipseProductDeployment
+
+[abstract]
+Eclipse RCP product deployment.
+This tutorial describes how the product configuration file and the deployment process of Eclipse RCP applications. 
+It is based on Eclipse 4.5 (Eclipse Mars).
+
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_product.adoc[]
+include::020_deployment.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::022_deployment.adoc[]
+include::080_problems_export.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::100_exercise_exportproduct.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::140_exercise_feature.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

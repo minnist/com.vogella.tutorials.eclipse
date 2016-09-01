@@ -1,0 +1,16 @@
+[[swtdesignerinstallation]]
+== Install SWT Designer
+
+You can install
+SWT Designer
+via the Eclipse update manager from the main
+Eclipse 
+update site.
+
+image::install_swt_designer10.png[Install SWT Designer]
+
+TIP: The latest release of SWT Designer
+can be found on the following
+website:
+http://www.eclipse.org/windowbuilder/download.php[WindowBuilder download].
+

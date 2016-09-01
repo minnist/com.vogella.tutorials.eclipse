@@ -1,0 +1,31 @@
+== Using SWT Designer
+
+SWT Designer allows you to open Java components in a special
+editor. This editor can work with parts, SWT and JFace dialogs, JFace
+wizards, etc.
+
+SWT Designer
+allows
+to
+drag-and-drop
+SWT
+components into an existing
+layout,
+change
+layout
+settings and create
+event handlers for your widgets.
+
+image::swtdesigner10.png[Showing SWT Designer main perspective]
+
+You can also use the SWT and JFace templates which SWT Designer contributes to the Eclipse IDE. 
+For example you can use it to create `Composites` and add these to the Eclipse user interface. 
+To create a new `Composite` select menu:File[New > Other... > WindowBuilder > SWT Designer > SWT > Composite].
+
+image::swtdesigner20.png[SWT Designer in Action]
+
+SWT Designer
+has excellent support to establish data binding
+between your data model and your user interface components via the
+JFace Data Binding framework.
+

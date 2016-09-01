@@ -1,4 +1,4 @@
-<section id="prerequisite">
+[[prerequisite">
 == Prerequisites for this tutorial
 	
 		This tutorial assumes that you have basic understanding of

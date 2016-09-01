@@ -1,9 +1,7 @@
 == Branching in Eclipse
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>branching
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,branching)))
+	
 	
 		Right-click your project and select
 		menu:

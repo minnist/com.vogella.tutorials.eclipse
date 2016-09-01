@@ -1,14 +1,13 @@
 == What is Git for Eclipse (EGit)?
 
-	<indexterm>
-		<primary>EGit</primary>
+	
+		(((EGit)))
 		<see>Eclipse Git</see>
-	</indexterm>
+	
 
-	<indexterm>
-		<primary>Git support in Eclipse</primary>
-		<see>Eclipse Git</see>
-	</indexterm>
+	
+		(((Git support in Eclipse,see=Eclipse Git)))
+	
 	
 		The Eclipse IDE has excellent support for the Git version control system.
 		This support is provided via a set of

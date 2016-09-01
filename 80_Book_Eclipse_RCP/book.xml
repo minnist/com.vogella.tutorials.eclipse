@@ -82,9 +82,9 @@
 
 		<chapter id="eclipseskdinstallationforrcp">
 	=== Install Eclipse IDE for RCP development
-			<indexterm>
-				<primary>Installation</primary>
-			</indexterm>
+			
+				(((Installation)))
+			
 			The following description explains
 				how to install the Eclipse
 				IDE and the required tools to develop Eclipse RCP
@@ -1134,9 +1134,9 @@
 
 		<appendix id="webresources">
 	=== Links and web resources
-			<indexterm>
-				<primary>Web resources</primary>
-			</indexterm>
+			
+				(((Web resources)))
+			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/008_resourceslocal.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipsePlugIn/008_resourceslocal.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/008_resourceslocal.adoc[]

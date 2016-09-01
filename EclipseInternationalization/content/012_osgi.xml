@@ -1,8 +1,7 @@
 == OSGi resource bundles
-	<indexterm>
-		<primary>i18n</primary>
-		<secondary>OSGi resource bundles</secondary>
-	</indexterm>
+	
+		(((i18n,OSGi resource bundles)))
+	
 
 	
 		For the translation of the plugin.xml and application model files the

@@ -1,10 +1,8 @@
 == Data Binding for JFace Viewers
 
 === Binding Viewers
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>Viewer binding</secondary>
-		</indexterm>
+(((JFace Data Binding,Viewer binding)))
+		
 		
 			JFace data binding provides functionality to bind the data of
 			JFace

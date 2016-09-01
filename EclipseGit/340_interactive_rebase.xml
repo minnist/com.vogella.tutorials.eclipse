@@ -2,12 +2,8 @@
 
 
 === Support for interactive rebase in Eclipse
-		<indexterm>
-			<primary>Eclipse Git
-			</primary>
-			<secondary>Interactive rebase
-			</secondary>
-		</indexterm>
+(((Eclipse Git,Interactive rebase)))
+		
 		
 			Git allows to adjust the existing commit history the interactive rebase functionality. Eclipse supports this
 			functionality
@@ -21,12 +17,8 @@
 	
 
 === Actions available via the History view
-		<indexterm>
-			<primary>Eclipse Git
-			</primary>
-			<secondary>Interactive rebase via the History view
-			</secondary>
-		</indexterm>
+(((Eclipse Git,Interactive rebase via the History view)))
+		
 		
 			To reword a commit, right-click on it in the
 			_History_
@@ -55,12 +47,8 @@ image::rebase_interactive_squaschcommits10.png[Squash a commit,pdfwidth=60%]
 	
 
 === Using the Git Interactive Rebase view
-		<indexterm>
-			<primary>Eclipse Git
-			</primary>
-			<secondary>Interactive rebase via the Git Interactive Rebase view
-			</secondary>
-		</indexterm>
+(((Eclipse Git,Interactive rebase via the Git Interactive Rebase view)))
+		
 		
 			The
 			_Git Interactive Rebase_

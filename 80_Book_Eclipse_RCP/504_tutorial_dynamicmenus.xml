@@ -1,10 +1,8 @@
 <chapter id="tutorial_dynamicmenus">
 == Optional exercise: Creating dynamic menu entries
-	<indexterm>
-		<primary>DynamicMenuContribution</primary>
-		<secondary>Example
-		</secondary>
-	</indexterm>
+	
+		(((DynamicMenuContribution,Example)))
+	
 
 === Target of this exercise
 		

@@ -5,14 +5,41 @@
 :icons:
 :imagesdir: ./img
 Simon Scholz, (c) 2016 vogella GmbH
-Version 0.1, 13.06.2016
+Version 0.2, 01.09.2016
+:docinfodir: ../
+:vgwort: SWT
 
 [abstract]
 This tutorial describes SWT the user interface toolkit used by the Eclipse framework.
-				
-include::010_overview.adoc[]
 
+include::../web/advertisement/afterTableOfContent.adoc[]				
+include::010_swtintro.adoc[]
+include::011_relationship.adoc[]
+include::012_usingswt.adoc[]
+include::013_install.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::014_widgets.adoc[]
+include::016_eventlistener.adoc[]
+include::020_tutorial_firstswtplugin.adoc[]
+include::020a_tutorial_firstswt.adoc[]
+include::021_tutorial_labeltext.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::022_tutorial_button.adoc[]
+include::036_layout.adoc[]
+include::038_layout_tutorial.adoc[]
+include::039_tab.adoc[]
+include::047_datetime.adoc[]
+include::048_image.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::100_table.adoc[]
+include::120_tree.adoc[]
+include::130_ctabfolder.adoc[]
+include::../EclipseDragAndDrop/200_exercise_dnd.adoc[]
+include::210_globalkeylistener.adoc[]
+include::280_swt_snippets.adoc[]
+include::300_nebula_opal.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
-
+include::../copyright.adoc[]
 

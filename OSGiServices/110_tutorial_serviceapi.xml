@@ -26,9 +26,9 @@ image::firstservice10.gif[]
 		
 		Create the following interface "IQuoteService".
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/IQuoteService.java[]
+[source,java]
+----
+include::res/service/IQuoteService.java[]
 ----
 		
 	
@@ -50,16 +50,16 @@ image::firstservice20.gif[]
 		
 		 Create the following class "QuoteService".
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/QuoteService.java[]
+[source,java]
+----
+include::res/service/QuoteService.java[]
 ----
 		
 		 Register the service in the class Activator.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorService.java[]
+[source,java]
+----
+include::res/service/ActivatorService.java[]
 ----
 		
 	
@@ -100,9 +100,9 @@ image::firstservice35.gif[]
 		
 		 Lets register directly to the service and use it.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorConsument.java[]
+[source,java]
+----
+include::res/service/ActivatorConsument.java[]
 ----
 		
 		Export this bundle, install it and start and stop it.
@@ -130,18 +130,18 @@ image::firstservice40.gif[]
 			"MyQuoteServiceTrackerCustomizer"
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/MyQuoteServiceTrackerCustomizer.java[]
+[source,java]
+----
+include::res/service/MyQuoteServiceTrackerCustomizer.java[]
 ----
 		
 		 You also need to register a service tracker in your activator
 			of your serviceconsumer.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/service/ActivatorServiceTracker.java[]
+[source,java]
+----
+include::res/service/ActivatorServiceTracker.java[]
 ----
 		
 		 Export your bundle again. Start the OSGi console. Use the

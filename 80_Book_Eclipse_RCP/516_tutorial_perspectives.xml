@@ -21,7 +21,7 @@
 			(contained in a PartStack so that the part label is
 			visible).
 		
-		<warning>
+		WARNING:
 			Ensure to add the perspective to the existing
 				PerspectiveStack.
 			

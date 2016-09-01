@@ -1,9 +1,8 @@
 
 == Using declarative services in RCP applications
-	<indexterm>
-		<primary>Product configuration file</primary>
-		<secondary>Start level</secondary>
-	</indexterm>
+	
+		(((Product configuration file,Start level)))
+	
 	
 		The Eclipse RCP framework automatically starts the required
 		plug-ins for using declarative OSGi service.

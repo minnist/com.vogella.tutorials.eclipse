@@ -62,10 +62,8 @@
 	
 
 === Vaadin renderer - Vaaeclipse
-		<indexterm>
-			<primary>Renderer</primary>
-			<secondary>Vaadin</secondary>
-		</indexterm>
+(((Renderer,Vaadin)))
+		
 		
 		
 			Vaaclipse is a framework for building web applications using the
@@ -93,10 +91,8 @@ image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
 	
 
 === JavaFX renderer - e(fx)clipse
-		<indexterm>
-			<primary>Renderer</primary>
-			<secondary>JavaFX</secondary>
-		</indexterm>
+(((Renderer,JavaFX)))
+		
 		
 		
 			The e(fx)clipse provides a JavaFX renderer for Eclipse 4 RCP
@@ -111,10 +107,8 @@ image::lose_klein.png[JavaFX renderer example,pdfwidth=60%]
 	
 
 === Eclipse RAP
-		<indexterm>
-			<primary>Renderer</primary>
-			<secondary>RAP</secondary>
-		</indexterm>
+(((Renderer,RAP)))
+		
 		
 		Eclipse RAP is an approach to provide a web implementation for
 			the SWT API and makes it relatively easy to run an Eclipse 3.x RCP

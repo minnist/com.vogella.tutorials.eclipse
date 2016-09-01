@@ -3,10 +3,8 @@
 === Using viewers to display a tree
 		
 
-		<indexterm>
-			<primary>JFace</primary>
-			<secondary>TreeViewer</secondary>
-		</indexterm>
+(((JFace,TreeViewer)))
+		
 		
 			The
 			`TreeViewer`

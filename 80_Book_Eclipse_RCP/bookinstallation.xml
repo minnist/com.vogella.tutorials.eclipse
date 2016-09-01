@@ -44,9 +44,9 @@
 
 		<chapter id="eclipseskdinstallationforrcp">
 	=== Install Eclipse IDE for RCP development
-			<indexterm>
-				<primary>Installation</primary>
-			</indexterm>
+			
+				(((Installation)))
+			
 			The following description explains
 				how to install the Eclipse
 				IDE and the required tools to develop Eclipse RCP

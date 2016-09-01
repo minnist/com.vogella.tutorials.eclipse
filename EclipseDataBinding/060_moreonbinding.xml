@@ -2,10 +2,8 @@
 
 
 === ControlDecorators
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>ControlDecorators</secondary>
-		</indexterm>
+(((JFace Data Binding,ControlDecorators)))
+		
 		
 			JFace Data Binding allows you to use icon decorators in
 			the user
@@ -64,10 +62,8 @@ image::SelectObservableValue.png[]
 
 
 === Listening to all changes in the binding
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>Listener</secondary>
-		</indexterm>
+(((JFace Data Binding,Listener)))
+		
 		
 			You can register a listener to all bindings of the
 			`DataBindingContext`
@@ -92,10 +88,8 @@ include::res/editor/dirty.java[]
 
 
 === Placeholder binding with WritableValue
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>WritableValue</secondary>
-		</indexterm>
+(((JFace Data Binding,WritableValue)))
+		
 		
 			You can create bindings to a
 			`WritableValue`

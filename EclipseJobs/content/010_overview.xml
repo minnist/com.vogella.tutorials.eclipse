@@ -113,10 +113,8 @@
 
 === Eclipse Jobs API
 		
-		<indexterm>
-			<primary>Concurrency</primary>
-			<secondary>Job</secondary>
-		</indexterm>
+(((Concurrency,Job)))
+		
 		
 			The Eclipse Jobs API provides support for running background
 			processes and providing feedback

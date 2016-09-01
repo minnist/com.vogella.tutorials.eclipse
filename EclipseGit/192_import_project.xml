@@ -1,9 +1,7 @@
 == Import projects from an existing repository
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>import projects from repository
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,import projects from repository)))
+	
 	
 		If you have already an existing Git repository
 		you can add it to

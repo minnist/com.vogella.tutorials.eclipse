@@ -4,10 +4,8 @@
 === Using the JFace TableViewer
 		
 
-		<indexterm>
-			<primary>JFace</primary>
-			<secondary>TableViewer</secondary>
-		</indexterm>
+(((JFace,TableViewer)))
+		
 		
 			You can use the
 			`TableViewer`

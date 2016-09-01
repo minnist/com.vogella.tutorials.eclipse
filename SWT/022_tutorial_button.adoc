@@ -1,17 +1,14 @@
 == Exercise: SWT Button
-
 	
-		Add a
-		`Button`
-		widget to your application
-		and assign a
-		`SelectionListener`
-		to it. If the button is pressed, write "Called!" to the console.
+Add a
+`Button`
+widget to your application
+and assign a
+`SelectionListener`
+to it. If the button is pressed, write "Called!" to the console.
 	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/events/selection.java[]
+[source,text]
 ----
-	
+include::res/events/selection.java[]
+----
 

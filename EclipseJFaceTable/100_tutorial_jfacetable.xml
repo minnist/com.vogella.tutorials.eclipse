@@ -35,9 +35,9 @@ image::jfacetable10.gif[]
 			class "Person".
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Person.java[]
+[source,java]
+----
+include::res/model/Person.java[]
 ----
 		
 		
@@ -63,9 +63,9 @@ image::jfacetable10.gif[]
 			defined as a Singleton.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/ModelProvider.java[]
+[source,text]
+----
+include::res/model/ModelProvider.java[]
 ----
 		
 	
@@ -79,9 +79,9 @@ image::jfacetable10.gif[]
 			class to the following.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/view/View.java[]
+[source,text]
+----
+include::res/view/View.java[]
 ----
 		
 		

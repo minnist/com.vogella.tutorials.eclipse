@@ -34,9 +34,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/MyModel.java[]
+[source,java]
+----
+include::res/viewer/MyModel.java[]
 ----
 	
 
@@ -49,9 +49,9 @@
 		ViewTable.java to the following.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/ViewTable.java[]
+[source,java]
+----
+include::res/viewer/ViewTable.java[]
 ----
 	
 	 In this example the user interface is updated if you delete and

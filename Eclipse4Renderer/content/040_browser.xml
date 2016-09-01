@@ -3,7 +3,7 @@
 		all parts with an SWT
 		browser widget.
 	
-	<warning>
+	WARNING:
 		This example might not work on Linux, as the SWT browser widget
 			sometimes has issues on Linux.
 		
@@ -45,7 +45,7 @@ image::stackrenderer20.png" scale="30" />
 			</textobject>
 		
 	
-	<warning>
+	WARNING:
 		
 			After finishing the test, remove the
 			`rendererFactoryUri`

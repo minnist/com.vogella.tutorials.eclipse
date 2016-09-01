@@ -2,8 +2,6 @@
 
 I hope you enjoyed this tutorial. You find this tutorial and much more
 information also in the
-http://www.vogella.com/books/eclipsercp.html - Eclipse 4 RCP book
-from this author.
-
+http://www.vogella.com/books/eclipsercp.html[Eclipse 4 RCP book].
 		
 		

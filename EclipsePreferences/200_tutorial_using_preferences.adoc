@@ -14,9 +14,9 @@
 		the last will clear the preference values.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/preferences/ButtonComposite.java[]
+[source,java]
+----
+include::res/preferences/ButtonComposite.java[]
 ----
 	
 	 Run and test your program.

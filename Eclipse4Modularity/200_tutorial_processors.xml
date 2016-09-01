@@ -49,15 +49,15 @@
 		 Create the following dialog and handler classes. 
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/ExitDialog.java[]
+[source,java]
+----
+include::res/processors/ExitDialog.java[]
 ----
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/ExitHandlerWithCheck.java[]
+[source,java]
+----
+include::res/processors/ExitHandlerWithCheck.java[]
 ----
 		
 
@@ -71,13 +71,13 @@
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/processors/MenuProcessor.java[]
+[source,java]
+----
+include::res/processors/MenuProcessor.java[]
 ----
 		
 
-		<warning>
+		WARNING:
 			
 				Ensure that your menu entry labeled with "Exit" in the
 				_Application.e4xmi_
@@ -125,7 +125,7 @@ image::processor10.png[]
 				
 			
 		
-		<warning>
+		WARNING:
 			
 				This assumes that you used
 				_org.eclipse.ui.file.menu_
@@ -136,7 +136,7 @@ image::processor10.png[]
 			
 		
 
-		<warning>
+		WARNING:
 			
 				The ID of the element defined in the extension point must match the
 				`@Named`

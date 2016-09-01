@@ -5,10 +5,8 @@
 			<keysym>Ctrl</keysym>
 			<keysym>3</keysym>
 		</keycombo>
-		<indexterm>
-			<primary>Shortcuts</primary>
-			<secondary>Quick Access</secondary>
-		</indexterm>
+(((Shortcuts,Quick Access)))
+		
 		shortcut allows you to perform all available actions in Eclipse. This
 		shortcut puts the
 		focus into the

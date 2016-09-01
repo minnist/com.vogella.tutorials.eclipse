@@ -89,7 +89,7 @@ include::res/selection/ViewerSetSelection.java[]
 			`TodoDetailsPart`
 			class.
 		
-		<warning>
+		WARNING:
 
 			
 				Please keep in mind that ALL injections run before

@@ -1,8 +1,7 @@
 == Modularity support in Eclipse RCP
-	<indexterm>
-		<primary>Application model</primary>
-		<secondary>Modularity</secondary>
-	</indexterm>
+	
+		(((Application model,Modularity)))
+	
 	Eclipse RCP applications are based on OSGi and therefore support
 		the modularity concept of OSGi. To contribute to the application
 		model, the Eclipse platform implements support for static and dynamic

@@ -1,14 +1,12 @@
 == Internationalization and localization
 
 === Translation of a Java applications
-		<indexterm>
-			<primary>Translation</primary>
+(((Translation)))
 			<see>i18n</see>
-		</indexterm>
-		<indexterm>
-			<primary>Internationalization</primary>
+		
+(((Internationalization)))
 			<see>i18n</see>
-		</indexterm>
+		
 		
 		
 		
@@ -29,10 +27,8 @@
 	
 
 === Property files
-		<indexterm>
-			<primary>i18n</primary>
-			<secondary>Property files</secondary>
-		</indexterm>
+(((i18n,Property files)))
+		
 		
 			Java applications are typically translated via
 			_property_
@@ -182,10 +178,8 @@ include::res/osgi/bundle.properties[]
 
 
 === Setting the language in the launch configuration
-		<indexterm>
-			<primary>i18n</primary>
-			<secondary>Setting the language via launch parameter</secondary>
-		</indexterm>
+(((i18n,Setting the language via launch parameter)))
+		
 		
 			By default Eclipse uses
 			the

@@ -1,57 +1,42 @@
 == Exercise: Create a simple SWT program
 	
-		Continue to use the
-		`com.example.swt.widgets`
-		project.
+Continue to use the
+`com.example.swt.widgets`
+project.
 	
+Create
+the
+following class for a simple
+SWT
+application.
 	
-		Create
-		the
-		following class for a simple
-		SWT
-		application.
-	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/FirstSWTApplication1.java[]
+[source,java]
+----
+include::res/first/FirstSWTApplication1.java[]
 ----
 	
+To start your application, right-click on your Java class, and select
+menu:Run-As[Java Application].
+You will receive an empty window (
+`Shell`
+).
 	
-		To start your application, right-click on your Java class, and select
-		menu:
-			<guimenu>Run-As[Java Application]
-		.
-		You will receive an empty window (
-		`Shell`
-		).
+Change the TODO in the code to the following. Make sure you use
+`org.eclipse.swt`
+and not
+`java.awt`
+when adding the missing imports.
 	
-	
-		Change the TODO in the code to the following. Make sure you use
-		`org.eclipse.swt`
-		and not
-		`java.awt`
-		when adding the missing imports.
-	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/FirstSWTApplication2.java[]
+[source,java]
+----
+include::res/first/FirstSWTApplication2.java[]
 ----
 	
+If you now start the application you will get a
+`Shell`
+with two
+`Widgets`
+included.
 	
-		If you now start the application you will get a
-		`Shell`
-		with two
-		`Widgets`
-		included.
-	
+image::firstswt.png[First running SWT application]
 
-	
-image::firstswt.png" scale="60" />
-			
-			<textobject>
-				<phrase>First running SWT application</phrase>
-			</textobject>
-		
-	

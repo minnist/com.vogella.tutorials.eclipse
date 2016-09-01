@@ -1,28 +1,18 @@
 == DateTime widget
-	
-		SWT provides
-		`DateTime`
-		widgets. Create the following class.
-	
 
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/datetime/DateTimeExample.java[]
+SWT provides
+`DateTime`
+widgets. Create the following class.
+
+[source,java]
 ----
-	
+include::res/datetime/DateTimeExample.java[]
+----
 
-	
-image::swtdatetime10.png" scale="60" />
-			
-			<textobject>
-				<phrase>Date Time Widget</phrase>
-			</textobject>
-		
-	
-	
-		Please note that the SWT
-		`DateTime`
-		widget requires a selection, i.e. you cannot use this widget without a
-		date selection.
-	
+image::swtdatetime10.png[Date Time Widget]
+
+Please note that the SWT
+`DateTime`
+widget requires a selection, i.e. you cannot use this widget without a
+date selection.
+

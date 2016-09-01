@@ -54,10 +54,8 @@ image::tutorial_product70.png[,pdfwidth=60%]
 	
 
 === Custom application model persistence handler
-		<indexterm>
-			<primary>Application model</primary>
-			<secondary>Custom persistence handler</secondary>
-		</indexterm>
+(((Application model,Custom persistence handler)))
+		
 		
 			Eclipse uses an instance of the
 			`IModelResourceHandler`

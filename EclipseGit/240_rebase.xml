@@ -1,9 +1,7 @@
 == Rebasing a branch onto another branch via Eclipse
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>rebase
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,rebase)))
+	
 	
 		The
 		_Git Repositories_

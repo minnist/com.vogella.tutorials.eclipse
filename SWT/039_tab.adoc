@@ -1,21 +1,16 @@
 == Tab order of elements
-	
-		You can specify the tab order of controls via the
-		`setTabList()`
-		method of a
-		`Composite`
-		. For this you provide an array of the controls where the order of the
-		controls in the array specify the tab order.
-	
 
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/tab/TabExample.java[]
+You can specify the tab order of controls via the
+`setTabList()`
+method of a
+`Composite`
+. For this you provide an array of the controls where the order of the
+controls in the array specify the tab order.
+
+[source,java]
 ----
-	
-	TIP:
-		Defining a tab order for your controls is important to increase
-			the accessibility and to allow advanced users a quick navigation.
-		
-	
+include::res/tab/TabExample.java[]
+----
+
+TIP: Defining a tab order for your controls is important to increase the accessibility and to allow advanced users a quick navigation.
+

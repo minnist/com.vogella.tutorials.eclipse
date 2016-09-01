@@ -51,7 +51,7 @@ include::res/i18n/Messages.java[]
 			`com.example.e4.rcp.todo.i18n`
 			plug-in.
 		
-		<warning>
+		WARNING:
 			The first letter in a lower case "L" followed by the number 10. This is sometimes hard to identify as "l" and
 				"1"
 				look very similar.

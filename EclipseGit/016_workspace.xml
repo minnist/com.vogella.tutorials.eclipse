@@ -1,9 +1,7 @@
 == The Eclipse workspace and Git repositories
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>Workspaces and Git repositories
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,Workspaces and Git repositories)))
+	
 	
 		It is good
 		practice to

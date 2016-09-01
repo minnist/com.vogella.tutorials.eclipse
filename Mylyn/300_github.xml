@@ -1,10 +1,8 @@
 == Using the GitHub connector
 
 === GitHub connector
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>GitHub integration</secondary>
-		</indexterm>
+(((Mylyn,GitHub integration)))
+		
 		The Mylyn GitHub connector allows integrating GitHub issues,
 			Pull requests and Gists.
 		

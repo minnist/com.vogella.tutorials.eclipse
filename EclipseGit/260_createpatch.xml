@@ -1,9 +1,7 @@
 == Creating patches
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>patch
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,patch)))
+	
 	
 		To create a patch for a set of changes with Eclipse Git, select the
 		resources

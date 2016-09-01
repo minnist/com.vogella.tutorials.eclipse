@@ -1,9 +1,7 @@
 == Adding extensions to extension points
-	<indexterm>
-		<primary>Extension points and extensions</primary>
-		<secondary>adding extensions
-		</secondary>
-	</indexterm>
+	
+		(((Extension points and extensions,adding extensions)))
+	
 
 	
 		The Eclipse IDE provides an

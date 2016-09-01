@@ -2,10 +2,8 @@
 
 		
 
-		<indexterm>
-			<primary>JFace</primary>
-			<secondary>Viewer</secondary>
-		</indexterm>
+(((JFace,Viewer)))
+		
 === Purpose of the JFace viewer framework
 		
 			The

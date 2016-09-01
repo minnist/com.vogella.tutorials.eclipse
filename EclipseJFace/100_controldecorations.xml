@@ -1,10 +1,9 @@
 == ControlDecoration
 
 
-	<indexterm>
-		<primary>JFace</primary>
-		<secondary>ControlDecoration</secondary>
-	</indexterm>
+	
+		(((JFace,ControlDecoration)))
+	
 	
 		The
 		`ControlDecoration`
@@ -30,18 +29,18 @@
 		and how to set a description and an icon to it.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fieldassists/ControlDecoration.java[]
+[source,java]
+----
+include::res/fieldassists/ControlDecoration.java[]
 ----
 	
 	You can hide and show the decoration via the corresponding
 		methods as demonstrated in the following code snippet.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fieldassists/hide.txt[]
+[source,text]
+----
+include::res/fieldassists/hide.txt[]
 ----
 	
 

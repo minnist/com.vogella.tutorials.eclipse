@@ -2,10 +2,8 @@
 
 
 === Model fragments
-		<indexterm>
-			<primary>Application model</primary>
-			<secondary>Fragments</secondary>
-		</indexterm>
+(((Application model,Fragments)))
+		
 		
 		
 			A model
@@ -42,10 +40,8 @@
 
 
 === Model processors
-		<indexterm>
-			<primary>Application model</primary>
-			<secondary>Processors</secondary>
-		</indexterm>
+(((Application model,Processors)))
+		
 		
 		
 			A

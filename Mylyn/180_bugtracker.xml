@@ -1,8 +1,7 @@
 == Using Mylyn for bug tracker integration
-	<indexterm>
-		<primary>Mylyn</primary>
-		<secondary>task tracker integration</secondary>
-	</indexterm>
+	
+		(((Mylyn,task tracker integration)))
+	
 	
 		Mylyn allows connecting the Eclipse IDE to bug tracking software. Mylyn
 		supports many bug trackers, e.g., GitHub,

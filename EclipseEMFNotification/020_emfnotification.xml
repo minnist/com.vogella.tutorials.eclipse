@@ -15,16 +15,14 @@
 		generate the model code from it.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/IPerson.java[]
+[source,java]
+----
+include::res/notification/IPerson.java[]
 ----
 	
-
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/IPersonList.java[]
+[source,java]
+----
+include::res/notification/IPersonList.java[]
 ----
 	
 
@@ -49,16 +47,16 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/ElementObserver.java[]
+[source,java]
+----
+include::res/notification/ElementObserver.java[]
 ----
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/TotalObserver.java[]
+[source,java]
+----
+include::res/notification/TotalObserver.java[]
 ----
 	
 	
@@ -67,9 +65,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/notification/Main.java[]
+[source,java]
+----
+include::res/notification/Main.java[]
 ----
 	
 

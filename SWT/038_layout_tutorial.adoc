@@ -1,28 +1,20 @@
 == Example: Using layout manager
 	
-		The following shows an example for the usage of the
-		`GridLayout`
-		class in the
-		`com.example.swt.widgets`
-		project.
+The following shows an example for the usage of the
+`GridLayout`
+class in the
+`com.example.swt.widgets`
+project.
 	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/gridlayout/GridLayoutSWT.java[]
+[source,java]
+----
+include::res/gridlayout/GridLayoutSWT.java[]
 ----
 	
-	 Start your application, it should look similar to the following
-		screenshot.
-	
-
+Start your application, it should look similar to the following
+screenshot.
 	
 image::gridswtlayout.png[]
-			
-		
 	
-	Resize the window and see how the arrangement of the widgets
-		change.
-	
-
+Resize the window and see how the arrangement of the widgets change.
 

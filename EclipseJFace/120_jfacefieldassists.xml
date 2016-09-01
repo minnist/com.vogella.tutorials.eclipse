@@ -1,10 +1,9 @@
 == User input help with field assistance
 
 
-	<indexterm>
-		<primary>JFace</primary>
-		<secondary>Field assistance</secondary>
-	</indexterm>
+	
+		(((JFace,Field assistance)))
+	
 	
 		The
 		`org.eclipse.jface.fieldassist`
@@ -42,9 +41,9 @@
 		class.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fieldassists/MyView.java[]
+[source,java]
+----
+include::res/fieldassists/MyView.java[]
 ----
 	
 	 If used the result should look similar to the following.

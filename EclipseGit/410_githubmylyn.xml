@@ -1,14 +1,10 @@
 == Eclipse integration with GitHub
-	<indexterm>
-		<primary>GitHub</primary>
-		<secondary> Mylyn integration
-		</secondary>
-	</indexterm>
-	<indexterm>
-		<primary>Mylyn</primary>
-		<secondary> GitHub integration
-		</secondary>
-	</indexterm>
+	
+		(((GitHub, Mylyn integration)))
+	
+	
+		(((Mylyn, GitHub integration)))
+	
 
 === The Eclipse Mylyn plug-in
 		

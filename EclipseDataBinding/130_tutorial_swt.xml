@@ -16,15 +16,15 @@
 			following model classes.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Person.java[]
+[source,java]
+----
+include::res/model/Person.java[]
 ----
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/model/Address.java[]
+[source,java]
+----
+include::res/model/Address.java[]
 ----
 		
 		
@@ -38,9 +38,9 @@
 			class to the following.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/person/View.java[]
+[source,java]
+----
+include::res/person/View.java[]
 ----
 		
 
@@ -90,9 +90,9 @@ image::validation10.png[]
 			class.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/validator/StringLongerThenTwo.java[]
+[source,java]
+----
+include::res/validator/StringLongerThenTwo.java[]
 ----
 		
 		
@@ -103,9 +103,9 @@ image::validation10.png[]
 			.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/validator/View.java[]
+[source,java]
+----
+include::res/validator/View.java[]
 ----
 		
 	

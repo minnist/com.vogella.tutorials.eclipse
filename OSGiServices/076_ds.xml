@@ -1,10 +1,8 @@
 == The OSGi declarative services functionality
 
 === Defining services the declarative way
-		<indexterm>
-			<primary>OSGi</primary>
-			<secondary>Declarative services</secondary>
-		</indexterm>
+(((OSGi,Declarative services)))
+		
 		
 
 		

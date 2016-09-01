@@ -12,9 +12,9 @@
 	
 	 Create the following class. 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/dsconsumer/QuoteConsumer.java[]
+[source,java]
+----
+include::res/dsconsumer/QuoteConsumer.java[]
 ----
 	
 
@@ -67,17 +67,17 @@ image::dsconsumer30.gif[]
 	 The result component.xml should look like: 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/dsconsumer/component.adoc[]
+[source,xml]
+----
+include::res/dsconsumer/component.xml[]
 		</programlisting>
 	
 	 The result MANIFEST.MF should look like: 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/dsconsumer/MANIFEST.MF[]
+[source,text]
+----
+include::res/dsconsumer/MANIFEST.MF[]
 ----
 	
 	 Export your plug-in and install it via:

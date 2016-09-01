@@ -1,10 +1,9 @@
 
 == Setting preferences via plugin_customization.ini
 
-	<indexterm>
-		<primary>Preferences</primary>
-		<secondary>Default values</secondary>
-	</indexterm>
+	
+		(((Preferences,Default values)))
+	
 	
 		You
 		can use a file to set the default values of preferences. The file

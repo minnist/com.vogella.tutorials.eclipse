@@ -1,9 +1,7 @@
 == Clone an existing repository
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>clone repository
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,clone repository)))
+	
 	
 		Eclipse
 		allows you to clone an existing Git repository and to

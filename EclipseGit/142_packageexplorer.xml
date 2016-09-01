@@ -1,9 +1,7 @@
 == Git integration into the Package and the Project Explorer
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>Package Explorer integration
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,Package Explorer integration)))
+	
 	
 		The
 		_Package Explorer_

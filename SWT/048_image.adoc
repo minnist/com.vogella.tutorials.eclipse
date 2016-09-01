@@ -1,20 +1,15 @@
 == Image
-	Images can be displayed via labels. The following class
-		demonstrates that using some system images.
 	
-
+Images can be displayed via labels. The following class
+demonstrates that using some system images.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/image/Photo.java[]
+[source,java]
+----
+include::res/image/Photo.java[]
 ----
 	
-	 The result should look similar to
-		the following.
+The result should look similar to
+the following.
 	
-	
-image::swtimages10.png" scale="60"/>
-
-			
-		
+image::swtimages10.png[]
 	

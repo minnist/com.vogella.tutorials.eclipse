@@ -1,36 +1,16 @@
 == The Nebula and Opal widgets
 
-
-
+The
+http://eclipse.org/nebula/[Eclipse Nebula]
+project provides additional
+widgets for SWT. For example, it provides
+several visualization widgets as depicted in the following screenshot.
 	
-		The
-		http://eclipse.org/nebula/">Eclipse Nebula
-		project provides additional
-		widgets for SWT. For example, it provides
-		several visualization widgets as depicted in the following screenshot.
+image::visualizationwidgets.png[Nebula visualization widgets]
 	
+Another source for SWT widgets is the
+http://code.google.com/a/eclipselabs.org/p/opal/[Opal widget homepage]
+. The following screenshot shows a widgets for displaying two lists.
 	
-image::visualizationwidgets.png"
-					scale="40" />
-			
-			<textobject>
-				<phrase>Nebula visualization widgets</phrase>
-			</textobject>
-		
-	
-	
-		Another source for SWT widgets is the
-		http://code.google.com/a/eclipselabs.org/p/opal/">Opal widget homepage
-		. The following screenshot shows a widgets for displaying two lists.
-	
-	
-image::opalexample10.png" scale="30" />
-			
-			<textobject>
-				<phrase>Opal  widgets</phrase>
-			</textobject>
-		
-	
-
-
+image::opalexample10.png[Opal  widgets]
 

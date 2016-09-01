@@ -17,7 +17,7 @@
 include::res/dialog/ExitHandler.java[]
 ----
 	
-	<warning>
+	WARNING:
 		
 			A handler is executed in the context in which it is called.
 			It should

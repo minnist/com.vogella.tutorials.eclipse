@@ -1,9 +1,8 @@
 
 == Navigation
-	<indexterm>
-		<primary>Shortcuts</primary>
-		<secondary>Navigation</secondary>
-	</indexterm>
+	
+		(((Shortcuts,Navigation)))
+	
 
 
 === Globally available navigation shortcuts

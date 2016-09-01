@@ -111,10 +111,8 @@
 	
 
 === Using a custom renderer
-		<indexterm>
-			<primary>Renderer</primary>
-			<secondary>Custom implementation</secondary>
-		</indexterm>
+(((Renderer,Custom implementation)))
+		
 		
 
 		

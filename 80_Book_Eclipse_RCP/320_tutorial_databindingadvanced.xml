@@ -44,7 +44,7 @@ include::res/databinding/TodoOverviewPart.java[]
 	
 
 === Clean up old code
-		<warning>
+		WARNING:
 			
 				You should not have any call to the
 				`setInput`

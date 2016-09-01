@@ -58,9 +58,9 @@
 			the following class.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/fragments/OpenMapHandler.java[]
+[source,java]
+----
+include::res/fragments/OpenMapHandler.java[]
 ----
 		
 	
@@ -125,7 +125,7 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 				file is generated.
 			
 		
-		<warning>
+		WARNING:
 			At the time of this writing the wizard deletes existing content
 				in the plugin.xml, if you create a new fragment. This is a bug and
 				might already be solved once you read this.
@@ -164,9 +164,9 @@ image::modelfragment_extensionpoint16.png"
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/fragments/plugin.xml[]
+[source,xml]
+----
+include::res/fragments/plugin.xml[]
 ----
 		
 	
@@ -205,7 +205,7 @@ image::modelfragment10.png[]
 			_Application.e4xmi_
 			file.
 		
-		<warning>
+		WARNING:
 			
 				Ensure that
 				`com.example.e4.rcp.todo.application`
@@ -313,7 +313,7 @@ image::fragment40.png" scale="30[Adding a handler to the model fragment,pdfwidth
 image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
 		
 
-		<warning>
+		WARNING:
 			
 				Ensure in your
 				_Application.e4xmi_
@@ -391,7 +391,7 @@ image::fragment70.png[]
 			feature.
 		
 
-		<warning>
+		WARNING:
 			Ensure that you added this new plug-in to your feature and
 				saved the changes.
 			
@@ -404,7 +404,7 @@ image::fragment70.png[]
 		
 			Start your application.
 		
-		<warning>
+		WARNING:
 			Remember to start via the product to update the launch
 				configuration.
 			

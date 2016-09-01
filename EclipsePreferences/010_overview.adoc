@@ -2,22 +2,14 @@
 
 === Preferences and scopes
 		
-		<indexterm>
-			<primary>Preferences</primary>
-			<secondary>Instance scope</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Preferences</primary>
-			<secondary>Configuration scope</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Preferences</primary>
-			<secondary>Default scope</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Preferences</primary>
-			<secondary>BundleDefaultsScope</secondary>
-		</indexterm>
+(((Preferences,Instance scope)))
+		
+(((Preferences,Configuration scope)))
+		
+(((Preferences,Default scope)))
+		
+(((Preferences,BundleDefaultsScope)))
+		
 		
 			The Eclipse platform supports
 			_preferences_

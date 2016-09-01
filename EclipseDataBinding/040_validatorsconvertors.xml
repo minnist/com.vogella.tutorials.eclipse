@@ -105,10 +105,8 @@
 	
 
 === Converter
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>Converter</secondary>
-		</indexterm>
+(((JFace Data Binding,Converter)))
+		
 		
 			_Converters_
 			allow to convert the values between the observed properties. Converters are defined based on the
@@ -165,10 +163,8 @@ include::res/snippets/Converter.java[]
 
 === Validator
 
-		<indexterm>
-			<primary>JFace Data Binding</primary>
-			<secondary>Validator</secondary>
-		</indexterm>
+(((JFace Data Binding,Validator)))
+		
 		
 			A _validator_
 			allows you to implement validation of the data before it is propagated

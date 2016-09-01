@@ -6,9 +6,9 @@
 		in "ArticleImpl
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/method/toString.txt[]
+[source,text]
+----
+include::res/method/toString.txt[]
 ----
 	
 	To overwrite this, add a "EOperation" to your model with the name
@@ -40,9 +40,9 @@ image::method20.png[]
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/method/newtoString.txt[]
+[source,text]
+----
+include::res/method/newtoString.txt[]
 ----
 	
 	 You can also generate methods with input parameter, just add

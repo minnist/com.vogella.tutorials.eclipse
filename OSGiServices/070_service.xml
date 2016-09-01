@@ -1,14 +1,10 @@
 == OSGi Services
 
 === What are OSGi services?
-		<indexterm>
-			<primary>OSGi</primary>
-			<secondary>Services</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Services (OSGi)</primary>
-			<seealso>Eclipse services</seealso>
-		</indexterm>
+(((OSGi,Services)))
+		
+(((Services (OSGi),seealso=Eclipse services)))
+		
 		
 		
 		

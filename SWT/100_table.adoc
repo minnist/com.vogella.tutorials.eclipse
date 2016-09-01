@@ -1,10 +1,11 @@
 == Table
-	 Create the following class. 
+
+Create the following class. 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/table/SWTTable.java[]
+[source,java]
+----
+include::res/table/SWTTable.java[]
 ----
 	
-	 If you run this application a table will be displayed. 
+If you run this application a table will be displayed. 
 	

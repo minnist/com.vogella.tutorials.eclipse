@@ -75,9 +75,9 @@
 			describes the content.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/plugin.xml[]
+[source,xml]
+----
+include::res/plugin/plugin.xml[]
 ----
 		
 		 The primary toc file defines anchor points to which other toc
@@ -93,9 +93,9 @@
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/toc.txt[]
+[source,text]
+----
+include::res/plugin/toc.txt[]
 ----
 		
 		The following shows the non primary ""tocgettingstarted.xml"
@@ -104,9 +104,9 @@
 			the primary toc.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/plugin/tocgettingstarted.txt[]
+[source,text]
+----
+include::res/plugin/tocgettingstarted.txt[]
 ----
 		
 	
@@ -146,9 +146,9 @@
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/extension.txt[]
+[source,text]
+----
+include::res/context/extension.txt[]
 ----
 		
 		 This file defines Id's and links to the HTML pages of the help
@@ -157,18 +157,18 @@
 			Editor".
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/contextDefinitionFile.xml[]
+[source,xml]
+----
+include::res/context/contextDefinitionFile.xml[]
 ----
 		
 		 To assign these id to your SWT controls you can use the
 			following code:
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/context/assignId.txt[]
+[source,text]
+----
+include::res/context/assignId.txt[]
 ----
 		
 		 If the user opens the dynamic help via the command

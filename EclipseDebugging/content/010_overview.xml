@@ -13,17 +13,17 @@
 		
 			By
 			_breakpoints_
-			<indexterm>
-				<primary>Breakpoint</primary>
-			</indexterm>
+			
+				(((Breakpoint)))
+			
 			in the source code you specify where the execution of the
 			program
 			should stop. To stop the execution only if a field is read or
 			modified, you can specify
 			_watchpoints_
-			<indexterm>
-				<primary>Watchpoint</primary>
-			</indexterm>
+			
+				(((Watchpoint)))
+			
 			.
 		
 		

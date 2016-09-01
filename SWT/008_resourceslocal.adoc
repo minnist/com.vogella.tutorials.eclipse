@@ -1,0 +1,20 @@
+== Eclipse SWT resources
+
+http://www.eclipse.org/swt/widgets/[SWT Widgets]
+	
+http://www.eclipse.org/swt/snippets/[SWT Snippets (Examples)]
+	
+http://www.eclipse.org/articles/article.php?file=Article-Understanding-Layouts/index.html[Understanding Layout in SWT by Wayne Beaton]
+	
+http://www.eclipse.org/articles/swt-design-2/swt-design-2.html[SWT design]
+	
+http://eclipse.org/nebula/[Eclipse Nebula Project with additional SWT widgets]
+	
+http://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html[SWT Graphics]
+	
+http://eclipsesource.com/blogs/2014/03/24/how-to-use-swt-with-java-8/[SWT and Java8]
+
+http://sourceforge.net/apps/trac/yari/[YARI tool suite to debug, spy, spider, inspect and navigate Eclipse based application GUIs (Workbench or RCP).]
+	
+http://www.eclipse.org/swt/tools.php[SWT Development Tools, include Sleak (analyze memory leaks in SWT graphic resources) and SWT Spy plug-in which prints out the info about the SWT widget under the cursor.]
+		

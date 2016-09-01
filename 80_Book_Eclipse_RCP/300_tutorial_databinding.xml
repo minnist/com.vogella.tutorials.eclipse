@@ -80,7 +80,7 @@ include::res/databinding/Todo.java[]
 			object and the user interface will be handled by the JFace Data
 			Binding framework.
 		
-		<warning>
+		WARNING:
 			
 				Ensure to remove these listeners. Otherwise you will see "strange"
 				side-effects like jumping cursors. Ensure that you

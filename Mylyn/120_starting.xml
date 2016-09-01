@@ -1,10 +1,8 @@
 == Tutorial: Using Mylyn
 
 === Task List view
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>Task List view</secondary>
-		</indexterm>
+(((Mylyn,Task List view)))
+		
 		
 			The
 			_Task List_
@@ -27,10 +25,8 @@ image::mylyn10.png[Task List View,pdfwidth=60%]
 
 
 === Create new tasks
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>create tasks</secondary>
-		</indexterm>
+(((Mylyn,create tasks)))
+		
 		
 			To create a new task press the
 			_New Task_
@@ -59,10 +55,8 @@ image::mylyn30.png[Selecting local repository,pdfwidth=60%]
 	
 
 === Activate a task
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>activate tasks</secondary>
-		</indexterm>
+(((Mylyn,activate tasks)))
+		
 		
 			To start working on a task, select the
 			_Activate task_
@@ -111,10 +105,8 @@ image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
 	
 
 === Create task from Problems view
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>create task from Problems views</secondary>
-		</indexterm>
+(((Mylyn,create task from Problems views)))
+		
 		
 			You can create a new Mylyn task from the
 			_Problems_
@@ -131,10 +123,8 @@ image::problemsview_marker10.png"
 	
 
 === Export and import your tasks
-		<indexterm>
-			<primary>Mylyn</primary>
-			<secondary>export and import tasks</secondary>
-		</indexterm>
+(((Mylyn,export and import tasks)))
+		
 		
 			Mylyn allows you to export and import your local tasks. Select
 			your

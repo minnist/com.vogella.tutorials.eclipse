@@ -1,13 +1,12 @@
 == Preferences and dependency injection
 
-	<indexterm>
-		<primary>Preferences</primary>
-		<secondary>Dependency injection</secondary>
-	</indexterm>
-	<indexterm>
-		<primary>IEclipsePreference</primary>
+	
+		(((Preferences,Dependency injection)))
+	
+	
+		(((IEclipsePreference)))
 		<seealso>Preferences</seealso>
-	</indexterm>
+	
 	
 		The Eclipse platform allows you to use dependency injection for
 		preferences handling.

@@ -1,9 +1,7 @@
 == Stash via the Git repository view
-	<indexterm>
-		<primary>Eclipse Git</primary>
-		<secondary>stash via the Git repositories view
-		</secondary>
-	</indexterm>
+	
+		(((Eclipse Git,stash via the Git repositories view)))
+	
 	
 		The
 		`git stash`

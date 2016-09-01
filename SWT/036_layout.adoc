@@ -1,466 +1,314 @@
 == Using layout managers in SWT
 
 === The role of a layout manager
-		
-		
-		
-		
-		
-		
-		<indexterm>
-			<primary>SWT</primary>
-			<secondary>Layout manager</secondary>
-		</indexterm>
-		
-			A layout manager is
-			responsible for arranging the user interface
-			components
-			of a
-			container, e.g., a
-			`Composite`
-			,
-			on
-			the
-			screen.
-			SWT
-			offers several standard layout managers. The
-			following table gives an overview of them. It is sorted
-			by complexity
-			of the layout manager,
-			i.e. the simplest layout manager is listed
-			first and the most complex one as the
-			last entry.
+(((SWT,Layout manager)))
 
-.Table Title
+A layout manager is
+responsible for arranging the user interface
+components
+of a
+container, e.g., a
+`Composite`
+,
+on
+the
+screen.
+SWT
+offers several standard layout managers. The
+following table gives an overview of them. It is sorted
+by complexity
+of the layout manager,
+i.e. the simplest layout manager is listed
+first and the most complex one as the
+last entry.
+
+.Layout Manager
 |===
+|Layout Manager |Description
 
-		=== Layout Manager
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					
-						
-|Layout Manager
-|Description
-						
-					
-					
-						
 |AbsoluteLayout
 |Allows you to specify the exact position, the width and
-								the height of
-								components. As user interfaces may be
-								used on
-								screens
-								with
-								different
-								sizes this layout manager should be avoided.
-							
-						
-						
+the height of
+components. As user interfaces may be
+used on
+screens
+with
+different
+sizes this layout manager should be avoided.
+
 |FillLayout
-|Arranges
-								equal-sized widgets in a
-								single row or
-								column.
-							
-						
-						
+|Arranges equal-sized widgets in a single row or column.
+
 |RowLayout
 |Puts the widgets in rows or columns and allows you to
-								control the layout with options, e.g., wrap, spacing,
-								fill and so
-								on.
-							
-						
-						
+control the layout with options, e.g., wrap, spacing,
+fill and so
+on.
+
 |GridLayout
 |Arranges widgets in a
-								grid.
-							
-						
-						
+grid.
+
 |FormLayout
 |Arranges the widgets with the help of the associated
-								attachments.
+attachments.
 
-							
-						
-					
-				
-			|===
-		
-		
-			If you assign a layout manager to a control you do not have to call
-			`pack`
-			anymore. The only case in which you need to call
-			`pack`
-			is if control has no layout.
-		
-	
+|===
+
+If you assign a layout manager to a control you do not have to call
+`pack`
+anymore. The only case in which you need to call
+`pack`
+is if control has no layout.
 
 === Layout Data
-		
 
-			Each SWT widget can have a layout specific settings class assigned to
-			it, e.g.
-			`GridData`
-			for a
-			`GridLayout`
-			. This allows the developer to control the arrangement of the widgets
-			within the layout.
-		
-		
-			In the following example you specify that a certain widget
-			should take
-			two columns in a
-			`GridLayout`
-			.
-		
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gridlayout/gridDataExample.txt[]
+Each SWT widget can have a layout specific settings class assigned to
+it, e.g.
+`GridData`
+for a
+`GridLayout`
+. This allows the developer to control the arrangement of the widgets
+within the layout.
+
+In the following example you specify that a certain widget
+should take
+two columns in a
+`GridLayout`
+.
+
+[source,text]
 ----
-		
-		<warning>
-			
-				The used
-				layout data
-				must match the
-				layout manager,
-				otherwise an
-				exception is thrown at
-				runtime.
-			
-		
-		
-			The layout will be automatically calculated when the container is
-			displayed. You can tell a
-			`Composite`
-			to recalculate the layout with the
-			`composite.layout()`
-			method.
-		
-		<warning>
-			
-				Layout data
-				objects should not be reused as the
-				layout
-				manager
-				expects that every user interface
-				element has a
-				unique
-				layout
-				data
-				object.
-			
-		
-	
+include::res/gridlayout/gridDataExample.txt[]
+----
+
+WARNING: The used layout data must match the layout manager, otherwise an exception is thrown at runtime.
+
+The layout will be automatically calculated when the container is
+displayed. You can tell a
+`Composite`
+to recalculate the layout with the
+`composite.layout()`
+method.
+
+WARNING: Layout data objects should not be reused as the layout manager expects that every user interface
+element has a unique layout data object.
 
 === FillLayout
-		
-			`FillLayout`
-			divides the available space provided by the container equally to all
-			widgets and can be set to
-			arrange the widgets
-			either
-			horizontally (
-			`SWT.HORIZONTAL`
-			)
-			or vertically (
-			`SWT.VERTICAL`
-			). It also allows you to set the space between the widgets (attribute
-			`spacing`
-			) and the margins of the widgets to the container via the
-			`marginWidth`
-			and
-			`marginHeight`
-			attributes.
-		
 
-
-	
+`FillLayout`
+divides the available space provided by the container equally to all
+widgets and can be set to
+arrange the widgets
+either
+horizontally (
+`SWT.HORIZONTAL`
+)
+or vertically (
+`SWT.VERTICAL`
+). It also allows you to set the space between the widgets (attribute
+`spacing`
+) and the margins of the widgets to the container via the
+`marginWidth`
+and
+`marginHeight`
+attributes.
 
 === RowLayout
-		
-			`RowLayout`
-			orders UI components in a row (
-			`SWT.HORIZONTAL`
-			) or in a
-			column (
-			`SWT.VERTICAL`
-			).
-			`RowLayout`
-			supports wrapping of
-			fields (field
-			`wrap`
-			) by default. You can define if widgets should have their
-			preferred
-			size
-			(default)
-			or if they should grab the available
-			space
-			via the field
-			`pack`
-			. It is also possible to set margins at the top, bottom, left and
-			right. If you
-			set
-			`justify`
-			, the widgets will be spread through
-			the
-			available space.
-		
-		
-			Each element can define its height and width via a
-			`RowData`
-			element.
-		
-	
+
+`RowLayout`
+orders UI components in a row (
+`SWT.HORIZONTAL`
+) or in a
+column (
+`SWT.VERTICAL`
+).
+`RowLayout`
+supports wrapping of
+fields (field
+`wrap`
+) by default. You can define if widgets should have their
+preferred
+size
+(default)
+or if they should grab the available
+space
+via the field
+`pack`
+. It is also possible to set margins at the top, bottom, left and
+right. If you
+set
+`justify`
+, the widgets will be spread through
+the
+available space.
+
+Each element can define its height and width via a
+`RowData`
+element.
 
 === GridLayout
-		
-			`GridLayout`
-			allows you to arrange the user interface components in a Grid with a
-			certain number of columns. It is also possible to
-			specify column and
-			row
-			spanning.
-		
 
-		
-			You can use
-			`new GridData()`
-			and assign properties to the new object. Alternatively you can use
-			one of its richer constructors to define certain
-			attributes during
-			construction. For example via the following constructor.
-		
+`GridLayout`
+allows you to arrange the user interface components in a Grid with a
+certain number of columns. It is also possible to
+specify column and
+row
+spanning.
 
-		
+You can use
+`new GridData()`
+and assign properties to the new object. Alternatively you can use
+one of its richer constructors to define certain
+attributes during
+construction. For example via the following constructor.
+
 [source,java]
 ----
 include::res/gridlayout/Constructor.java[]
 ----
-		
 
-		
-			The most important attributes are defined in the following table.
+The most important attributes are defined in the following table.
 
-.Table Title
+.GridData
 |===
+|Parameter |Description
 
-		=== GridData
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					
-						
-|Parameter
-|Description
-						
-					
-					
-						
 |horizontalAlignment
-|
-								Defines how the control is positioned horizontally
-								within a
-								cell
-								(one
-								of:
-								`SWT.LEFT`
-								,
-								`SWT.CENTER`
-								,
-								`SWT.RIGHT`
-								, or
-								`SWT.FILL`
-								).
-							
-						
-						
-|verticalAlignment
-|
-								Defines how the control is
-								positioned vertically within a
-								cell
-								(one
-								of:
+|Defines how the control is positioned horizontally
+within a
+cell
+(one
+of:
+`SWT.LEFT`
+,
+`SWT.CENTER`
+,
+`SWT.RIGHT`
+, or
+`SWT.FILL`
+).
 
-								`SWT.TOP`
-								,
-								`SWT.CENTER`
-								,
-								`SWT.END`
-								,
-								`SWT.BOTTOM`
-								(treated the same as SWT.END), or
-								`SWT.FILL`
-								).
-							
-						
-						
+|verticalAlignment
+|Defines how the control is
+positioned vertically within a
+cell
+(one
+of:
+`SWT.TOP`
+,
+`SWT.CENTER`
+,
+`SWT.END`
+,
+`SWT.BOTTOM`
+(treated the same as SWT.END), or
+`SWT.FILL`
+).
+
 |grabExcessHorizontalSpace
 |Defines whether the control is
-								extended by the layout
-								manager to
-								take all
-								the
-								remaining
-								horizontal space.
-							
-						
-						
+extended by the layout
+manager to
+take all
+the
+remaining
+horizontal space.
+
 |grabExcessVerticalSpace
 |Defines whether the control grabs any remaining vertical
-								space.
-							
-						
-						
+space.
+
 |horizontalSpan
 | Defines the number of column cells
-								that the control will
-								take
-								up.
-							
-						
-						
+that the control will
+take
+up.
+
 |verticalSpan
 |Defines the number of row cells that
-								the control will take
-								up.
-							
-						
-						
+the control will take
+up.
+
 |heightHint 
 |Defines the preferred height in pixels.
-							
-						
-						
+
 |widthHint  
 |Defines the preferred width in pixels.
-							
-						
-					
-				
-			|===
-		
-		
-			If the widget has the
-			`grabExcessHorizontalSpace`
-			attribute set to true, it will grab available space in its container.
-			`SWT.FILL`
-			tells the widget to fill the available space.
-			Therefore,
-			`grabExcessHorizontalSpace`
-			and
-			`SWT.FILL`
-			are often used together.
-		
-		TIP:
-			
-				The
-				`GridDataFactory`
-				class provides static methods for creating
-				`GridData`
-				objects. The Javadoc of this class contains several examples for it.
-			
-		
 
+|===
 
+If the widget has the
+`grabExcessHorizontalSpace`
+attribute set to true, it will grab available space in its container.
+`SWT.FILL`
+tells the widget to fill the available space.
+Therefore,
+`grabExcessHorizontalSpace`
+and
+`SWT.FILL`
+are often used together.
 
-	
+TIP: The `GridDataFactory` class provides static methods for creating `GridData` objects. 
+The Javadoc of this class contains several examples for it.
 
 === Using GridDataFactory
-		
-			The
-			`GridDataFactory`
-			class can be used to create
-			`GridData`
-			objects. This class provides a convenient shorthand for creating and
-			initializing GridData. The following listing
-			demonstrates its usage
-			and compares it with the direct usage of
-			`GridData`
-			.
-		
-		
+
+The
+`GridDataFactory`
+class can be used to create
+`GridData`
+objects. This class provides a convenient shorthand for creating and
+initializing GridData. The following listing
+demonstrates its usage
+and compares it with the direct usage of
+`GridData`
+.
+
 [source,java]
 ----
 include::res/gridlayout/GirdDataFactory.java[]
 ----
-		
 
-
-		
-			Unfortunately the
-			_SWT Designer_
-			does currently not support
-			`GridDataFactory`
-			, hence the following examples avoid using them.
-		
-	
+Unfortunately the
+_SWT Designer_
+does currently not support
+`GridDataFactory`
+, hence the following examples avoid using them.
 
 === Triggering a relayout of a Composite
-		
-			The
-			`Composite`
-			widget defines the
-			`layout`
-			method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
 
-.Table Title
+The
+`Composite`
+widget defines the
+`layout`
+method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
+
+.Layout flags
 |===
+|Flag |Description
 
-	=== Layout flags
-			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-				<colspec colname='c1' colwidth="1*" />
-				<colspec colname='c2' colwidth="2*" />
-				
-					
-|Flag
-|Description
-					
-				
-				
-					
 |SWT.ALL
 |Flag forces all descendents to be marked for layout. AFAIK, there's no good reason to ever use this
-							flag.
-							If it's actually doing something, it could be replaced by a series of calls to requestLayout.
-						
-					
-					
+flag.
+If it's actually doing something, it could be replaced by a series of calls to requestLayout.
+
 |SWT.CHANGED
 |The flag causes
-							subsequent calls to
-							Layout.layout(...) to receive true for the second argument, which
-							forces
-							the layout to recursively
-							flush all caches.
-							There's no good reason to ever do this. If something changed, the
-							layout should have been notified
-							via
-							Layout.flushCache(control) (which is what happens when you invoke
-							requestLayout). This is either a brute-force
-							workaround for a stale layout bug or was just unnecessary.
-							I can't
-							think of any circumstance in which we should keep
-							SWT.CHANGED.
-						
-					
-					
-|
-|
-					
-				
-			
-		|===
+subsequent calls to
+Layout.layout(...) to receive true for the second argument, which
+forces
+the layout to recursively
+flush all caches.
+There's no good reason to ever do this. If something changed, the
+layout should have been notified
+via
+Layout.flushCache(control) (which is what happens when you invoke
+requestLayout). This is either a brute-force
+workaround for a stale layout bug or was just unnecessary.
+I can't
+think of any circumstance in which we should keep
+SWT.CHANGED.
 
+|===
 
-		-
-
-
-
-	
-	

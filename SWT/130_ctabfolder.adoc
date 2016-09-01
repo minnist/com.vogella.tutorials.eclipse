@@ -1,25 +1,19 @@
 == CTabFolder
-	 CTabFolder and CTabItem allow to create the folder experience
-		with different tabs.
+	 
+CTabFolder and CTabItem allow to create the folder experience
+with different tabs.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/ctab/CTabFolderExample.java[]
+[source,java]
+----
+include::res/ctab/CTabFolderExample.java[]
 ----
 	
+If you run this application you will see several register cards with
+tabs on
+them. The
+`SWT.BOTTOM`
+stylebit on the folder widget, makes the tab appear at the bottom.
 	
-		If you run this application you will see several register cards with
-		tabs on
-		them. The
-		`SWT.BOTTOM`
-		stylebit on the folder widget, makes the tab appear at the bottom.
-	
-	
-image::ctabfolder10.png" scale="60" />
-			
-			<textobject>
-				<phrase></phrase>
-			</textobject>
-		
+image::ctabfolder10.png[]
 	

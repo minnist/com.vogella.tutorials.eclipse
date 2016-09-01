@@ -2,10 +2,9 @@
 
 
 
-	<indexterm>
-		<primary>JFace</primary>
-		<secondary>ComboViewer</secondary>
-	</indexterm>
+	
+		(((JFace,ComboViewer)))
+	
 
 	
 		A simple example for a JFace Viewer framework is the
@@ -13,9 +12,9 @@
 		class. Assume the following data model.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/Person.java[]
+[source,java]
+----
+include::res/viewer/Person.java[]
 ----
 	
 	
@@ -27,9 +26,9 @@
 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/MyView.java[]
+[source,java]
+----
+include::res/viewer/MyView.java[]
 ----
 	
 	
@@ -41,9 +40,9 @@
 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/SelectionListener.java[]
+[source,java]
+----
+include::res/viewer/SelectionListener.java[]
 ----
 	
 
@@ -51,9 +50,9 @@
 		domain model.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/viewer/setget.java[]
+[source,java]
+----
+include::res/viewer/setget.java[]
 ----
 	
 

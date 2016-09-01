@@ -49,7 +49,7 @@ image::exercise_keybindings10.png"
 image::exercise_keybindings20.png"
 						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
 		
-		<warning>
+		WARNING:
 			The name attribute of a binding context entry is not allowed to
 				be empty.
 			

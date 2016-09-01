@@ -1,8 +1,7 @@
 == Exporting Plug-ins and Products
-	<indexterm>
-		<primary>i18n</primary>
-		<secondary>Export</secondary>
-	</indexterm>
+	
+		(((i18n,Export)))
+	
 	
 		The
 		_build.properties_

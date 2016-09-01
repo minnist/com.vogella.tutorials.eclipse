@@ -11,7 +11,7 @@ Create the following DragSource and DragTarget Listener.
 
 [source,java]
 ----
-include::res/dndset/MyDropTargetListener.java[]
+include::res/dndswt/MyDropTargetListener.java[]
 ----
 	
 [source,java]

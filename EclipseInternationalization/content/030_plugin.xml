@@ -1,8 +1,7 @@
 == Translating plugin.xml
-	<indexterm>
-		<primary>i22n</primary>
-		<secondary>plugin.xml</secondary>
-	</indexterm>
+	
+		(((i22n,plugin.xml)))
+	
 
 	
 		Similar to the usage of keys in the application model, you can use the key prefixed with % in the

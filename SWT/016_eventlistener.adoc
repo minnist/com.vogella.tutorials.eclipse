@@ -1,86 +1,72 @@
 == Event Listener
-	<indexterm>
-		<primary>SWT</primary>
-		<secondary>Event listener</secondary>
-	</indexterm>
+(((SWT,Event listener)))
 
-	
-		You can register listeners for specific events on SWT controls, e.g.,
-		a
-		`ModifyListener`
-		to listen to changes in a
-		`Text`
-		widget
-		or a
-		`SelectionLister`
-		for selection
-		(click) events on a
-		`Button`
-		widget. The following code demonstrates the implementation, it uses
-		`SelectionAdapter`
-		which is an implementation of the
-		`SelectionLister`
-		interface.
-	
-	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/events/selection.java[]
+You can register listeners for specific events on SWT controls, e.g.,
+a
+`ModifyListener`
+to listen to changes in a
+`Text`
+widget
+or a
+`SelectionLister`
+for selection
+(click) events on a
+`Button`
+widget. The following code demonstrates the implementation, it uses
+`SelectionAdapter`
+which is an implementation of the
+`SelectionLister`
+interface.
+
+[source,java]
 ----
-	
-	
-		`FocusListener`
-		is another
-		examples for such a listener interface.
-	
-	TIP:
-		
+include::res/events/selection.java[]
+----
 
-			The Listener interfaces sometimes contain several methods and
-			you
-			only want to implement one of them. For this purpose Eclipse
-			provides
-			empty
-			default implementations for these interfaces.
-			This
-			allows
-			you to
-			implement only the methods you are
-			interested in.
-			These
-			implementations follow the
-			naming convention:
-		
-		
-			menu:
-					_Name_
-					`Listener`
-				[
-					_Name_
-					`Adapter`
-				]
-		
-		
-			For
-			example
-			`SelectionListener`
-			has
-			the abstract class
-			`SelectionAdapter`
-			which pre-implements the methods of
-			`SelectionListener`
-			.
-		
-	
-	
-		If you want to add a listener to the whole application, you can use
-		the
-		`Display`
-		class. For example to add a global mouse listener use
-		`addFilter(SWT.MouseMove, listener)`
-		. If you add filters to the
-		`Display`
-		you may interfere with existing listeners. Ensure to test your code
-		accordingly.
-	
+`FocusListener`
+is another
+examples for such a listener interface.
+
+TIP: The Listener interfaces sometimes contain several methods and
+you
+only want to implement one of them. For this purpose Eclipse
+provides
+empty
+default implementations for these interfaces.
+This
+allows
+you to
+implement only the methods you are
+interested in.
+These
+implementations follow the
+naming convention:
+
+menu:
+_Name_
+`Listener`
+[
+_Name_
+`Adapter`
+]
+
+For
+example
+`SelectionListener`
+has
+the abstract class
+`SelectionAdapter`
+which pre-implements the methods of
+`SelectionListener`
+.
+
+If you want to add a listener to the whole application, you can use
+the
+`Display`
+class. For example to add a global mouse listener use
+`addFilter(SWT.MouseMove, listener)`
+. If you add filters to the
+`Display`
+you may interfere with existing listeners. Ensure to test your code
+accordingly.
 

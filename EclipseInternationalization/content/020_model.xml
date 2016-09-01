@@ -1,8 +1,7 @@
 == Translating the application model
-	<indexterm>
-		<primary>i18n</primary>
-		<secondary>Application model</secondary>
-	</indexterm>
+	
+		(((i18n,Application model)))
+	
 	
         The translation key can be specified in your application model via the
         _%key_
@@ -25,7 +24,7 @@ image::modeltranslate.png[]
 		_Externalize Strings_
 		.
 	
-	<warning>
+	WARNING:
 		
 			This action extracts all Strings from the application model. If
 			you

@@ -1,8 +1,7 @@
 == Using Mylyn to integrate with Bugzilla
-	<indexterm>
-		<primary>Mylyn</primary>
-		<secondary>bugzilla integration</secondary>
-	</indexterm>
+	
+		(((Mylyn,bugzilla integration)))
+	
 
 	
 		The following description explains how you can use Mylyn to

@@ -177,7 +177,7 @@ include::res/service/LabelAssign.java[]
 		
 image::imageservice.png[Image on Label,pdfwidth=60%]
 		
-		<warning>
+		WARNING:
 			As you added plug-ins to your product via the feature,
 				remember
 				to start via the product configuration file.

@@ -42,7 +42,7 @@ Version 0.3, 06.07.2016
 			
 		
 	
-	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/Eclipse/e4_prerequisites.adoc[]
 include::010_modularity.adoc[]

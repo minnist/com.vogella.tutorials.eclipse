@@ -1,0 +1,37 @@
+== The purpose of the tabs in the feature editor
+	
+If you open the
+_feature.xml_
+file you can change the feature
+properties via a special editor.
+	
+The
+_Information_
+tab allows you to enter a description and copyright related
+information for this feature.
+	
+The
+_Included Plug-ins_
+tab
+allows you to change the included plug-ins
+in
+the feature. If you want to add a plug-in to a feature, use this
+tab. A
+frequent error of new Eclipse developers is to add it to the
+_Dependencies_
+tab.
+	
+The
+_Included Features_
+tab allows you to include other features into this feature. Via the
+_Dependencies_
+tab you can define other features which must be present to use this
+feature.
+	
+The
+_Build_
+tab is used for the build process and should include the
+_feature.xml_
+file. The last two tabs give access to the configuration files in text
+format.
+

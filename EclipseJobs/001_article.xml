@@ -55,7 +55,7 @@ Version 0.3, 06.07.2016
 			
 		
 	
-	<?dbhtml-include href="../../web/kindle/eclipse-rcp.txt"?>
+include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]
 include::010_overview.adoc[]

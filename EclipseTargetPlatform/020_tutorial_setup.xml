@@ -1,0 +1,147 @@
+== Exercise: Setting up a target platform
+
+=== Creating a target definition file
+		
+			Create a new project called
+			_com.example.rcp.target_
+			of type
+			_General_
+			via
+			menu:File[New > Other... > General > Project]
+			.
+		
+
+		
+image::targetdefinitionproject10.png[Create a project for your target definition file,pdfwidth=60%]
+		
+		
+			Create a new target definition file via the
+			menu:File[New > Other... > Plug-in Development > Target Definition]
+			menu path. Use the
+			`com.example.rcp.target`
+			as file name.
+		
+
+		
+image::tutorial_targetdefinition10.png[Define target definition file,pdfwidth=60%]
+		
+		
+			Press the
+			_Add..._
+			button.
+		
+
+		
+image::tutorial_targetdefinition20.png[Add content to target definition file,pdfwidth=60%]
+		
+		
+			Select
+			_Software site_
+			in the following dialog.
+		
+		
+image::tutorial_targetdefinition30.png[Add content to target definition file,pdfwidth=60%]
+		
+		
+			Press the
+			_Next_
+			button and enter the update site URL of the target release
+			in the Work with selection box. This is for example:
+			http://download.eclipse.org/releases/neon
+			for the Eclipse 4.6 (Neon) release.
+		
+
+		
+			Remove the
+			_Group by Category_
+			flag and add the following components:
+
+.Table Title
+|===
+
+		=== Target components
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="2*" />
+					
+						
+|Component
+|Description
+						
+					
+					
+						
+|Eclipse Platform SDK
+|Components for RCP
+						
+						
+|Equinox Target Components
+|The native launchers for the platform, ensure to select
+								the non "black and white" entry if this exists. This entry is
+								empty.
+							
+						
+					
+				
+|===
+
+		
+
+		After you close this dialog, the target definition is resolved,
+			which will take a while. The result should look
+			similar to the
+			following
+			screenshot.
+			Please note that your version numbers might be
+			different.
+		
+
+
+		
+image::tutorial_targetdefinition40.png[,pdfwidth=60%]
+		
+
+	
+
+
+
+=== Activate your target platform
+		
+			Afterwards press the
+			_Set as Target Platform_
+			to activate it. See
+			<xref linkend="tuturial_targetplatform_solvingissues" />
+			in case
+			you have problems with your new target platform.
+		
+		
+			To check if your definition is active, try to open the
+			`SpyHandler`
+			class via Ctrl+Shift+T (Open Type). This should not be possible.
+		
+	
+
+
+=== Solving potential issues for development
+		Your target platform depends on external update sites and their
+			packaging of plug-ins. Theses update sites might
+			change over time, so
+			you should be able to revert your target platform settings in case
+			you face issues.
+		
+		
+			You can switch back to your
+			Eclipse IDE as target platform via
+			menu:Window[Preferences > Plug-in Development > Target Platform]
+			.
+		
+		
+image::tutorial_targetdefinition60.png[,pdfwidth=60%]
+		
+
+		NOTE:
+			If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch
+				back to your definition. That sometimes solves target resolution issues.
+		
+	
+

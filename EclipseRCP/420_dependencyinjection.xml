@@ -1,0 +1,292 @@
+== Dependency injection and annotations
+
+
+=== Define class dependencies in Eclipse
+		
+			The programming model in Eclipse supports constructor, method
+			and
+			field injection according to the Java Specification
+			Request 330
+			(JSR330). Eclipse also defines additional annotations for the purpose
+			of dependency injection. The most
+			important annotations are covered
+			in
+			<xref linkend="dependencyinjection_eclipseannotations" />
+			, other more special annotations are covered in there corresponding
+			chapters.
+		
+
+
+		
+			The Eclipse dependency framework ensures that the key and the
+			type of
+			the injected object is
+			correct. For example, if
+			you specify that you
+			want to have an object of type
+			`Todo`
+			for the "xyz" key, as shown in
+			the following field declaration, the
+			framework will only inject an
+			object if it finds one
+			with an
+			assignable type.
+		
+		
+[source,java]
+----
+include::res/snippets/namedfield.txt[]
+----
+		
+	
+
+=== Annotations to define class dependencies in Eclipse
+		
+		
+		
+
+		
+
+		
+			The following table gives an overview of dependency injection related
+			annotations based on JSR330 and the Eclipse
+			specific ones.
+
+.Table Title
+|===
+
+		=== Basic annotations for dependency injection
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					
+						
+| Annotation
+|Description
+						
+					
+					
+						
+|@javax.inject.Inject
+|
+								Defined by JSR330, can be added to a field, a constructor or a
+								method. The Eclipse
+								framework
+								tries to inject
+								the corresponding
+								objects into the
+								fields or the parameters of the instance.
+							
+						
+						
+|@javax.inject.Named
+|
+								Defined by JSR330, defines the key for the value
+								which should be
+								injected. By
+								default, the fully
+								qualified class
+								name is used as
+								the
+								key. Several keys for default values are defined as
+								constants in the
+								`IServiceConstants`
+								interface.
+							
+						
+						
+|@Optional
+|
+								
+									Eclipse specific annotation, marks an injected value
+									to
+									be
+									optional. If no valid object
+									can be
+									determined for
+									the given key
+									(and type), the framework
+									does not
+									throw an exception.
+								
+								
+									The specific behavior depends on where the
+									`@Optional`
+									is placed. The following description is based on the key. If the key cannot be resolved the following happens:
+									<itemizedlist>
+										*
+											
+												for parameters: a
+												`null`
+												value will be injected;
+											
+										
+										*
+											for methods: the method calls will be skipped
+										
+										*
+											for fields: the values will not be injected. 
+										
+									
+								
+								
+									Note that null is an acceptable value to be set in the context, and it is different from a key being
+									removed
+									from the context. For example, if the following is called
+									`context.set(SOMEKEY, null)`
+									,
+									anybody listening for SOMEKEY will be injected with null.
+								
+							
+						
+
+						
+|@GroupUpdates
+|
+								Eclipse specific annotation, indicates that updates for this
+								@Inject should be batched.
+								If you
+								change such objects
+								in the Eclipse context
+								,
+								the update is
+								triggered by the
+								`processWaiting()`
+								method of the
+								`IEclipseContext`
+								object. This annotation is intended to be used by the platform for
+								performance optimization and should rarely be
+								necessary in RCP
+								applications.
+							
+
+						
+
+
+					
+				
+|===
+		
+
+
+		NOTE:
+			
+				The Eclipse platform supports additional annotations for
+				special
+				purposes, e.g., for receiving events (sent by the
+				event service)
+				or
+				working with preferences.
+				For a summary of all standard
+				annotations
+				defined in the
+				Eclipse platform see
+				<xref linkend="eclipse4_annotations" />
+				.
+			
+		
+	
+
+
+
+=== On which objects does Eclipse perform dependency injection?
+		
+		
+			The Eclipse runtime creates objects for the Java classes
+			referred by
+			the application model.
+			During this
+			instantiation the
+			Eclipse
+			runtime
+			scans the
+			class definition
+			for
+			annotations.
+			Based on
+			these
+			annotations the Eclipse framework
+			performs the
+			injection.
+		
+		
+			Eclipse does not automatically perform dependency injection on objects
+			which are created in your code with the
+			`new`
+			operator.
+		
+	
+
+
+=== Dynamic dependency injection based on key / value changes
+		The Eclipse framework tracks which object expressed a dependency
+			to which key and type. If the value to which a
+			key points changes,
+			the Eclipse
+			framework
+			re-injects the new value in the object which
+			expressed a
+			dependency to the
+			corresponding type.
+			This means
+			applications
+			can be
+			freed from
+			having to install (and remove)
+			listeners.
+		
+
+		
+			For
+			example, you can
+			define via
+			`@Inject`
+			that you want to get the
+			current
+			selection
+			injected. If the
+			selection
+			changes, the Eclipse
+			framework
+			will inject the
+			new
+			value.
+		
+		
+			The re-injection only works on methods and fields which are
+			marked
+			with
+			`@Inject`
+			. It will not work on
+			parameters injected into
+			constructors and
+			methods
+			which are marked
+			with
+			`@PostConstruct`
+			, as
+			these methods are only executed once.
+			This will be explained
+			later
+			in
+			<xref linkend="context_creationprocess" />
+			.
+		
+		NOTE:
+			
+				This does not mean that Eclipse tracks the fields of the value
+				to
+				which the key points. For example if the
+				_mykey1_
+				key points to a
+				`Todo`
+				object as value, and the key points to a new object, this triggers
+				the re-injection of the value to all objects which
+				have a relevant
+				class dependency. But if a field inside the existing
+				`Todo`
+				object changes, it does not trigger a
+				re-injection.
+			
+		
+	

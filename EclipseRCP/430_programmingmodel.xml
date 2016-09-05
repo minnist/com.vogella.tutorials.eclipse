@@ -1,0 +1,300 @@
+== Using annotations to define behavior
+
+=== API definition
+		
+		
+
+		
+			If you use a framework in your application, you need to have a
+			convention for how your application interacts with
+			the
+			framework.
+			For
+			example, if
+			a Java object is responsible for
+			handling a
+			toolbar button
+			click, the framework needs to know
+			which
+			method of this
+			object needs to
+			be called.
+		
+		For this purpose every framework defines an Application
+			Programming
+			Interface
+			(API). This API defines how you can
+			interact with the framework
+			from your code.
+			The API also defines the interaction
+			of application objects
+			created
+			or
+			controlled by the framework.
+			Typically,
+			a framework uses
+			inheritance
+			or
+			annotations for this purpose.
+		
+
+	
+
+=== API definition via inheritance
+		The "traditional" way of defining an API
+			is via inheritance. This
+			approach requires that your classes extend
+			or
+			implement framework
+			classes and interfaces. The Eclipse 3.x platform API used this
+			approach.
+		
+		
+			The framework defines, for example, an abstract class which defines
+			methods to be
+			implemented.
+			In the example of the
+			toolbar button the method
+			might be
+			called
+			`execute()`
+			and the framework knows that this method must be called once the
+			button is clicked.
+		
+		API definition via inheritance is a simple way to define an API,
+			but
+			it also couples the classes tightly to the
+			framework. For example,
+			testing the class without the framework is difficult. It also makes
+			extending or updating the
+			framework difficult as such an update may
+			affect clients. This is why the Eclipse 4.x does not use this approach
+			anymore.
+		
+	
+
+
+=== API definition via annotations
+		<indexterm>
+			<primary>Behavior annotations</primary>
+			<secondary>Parts</secondary>
+		</indexterm>
+		<indexterm>
+			<primary>Annotations</primary>
+			<secondary>Behavior</secondary>
+		</indexterm>
+		
+		
+		
+		
+		
+		
+			The Eclipse 4.x platform API is based on annotations, e.g.,
+			annotations are used to
+			identify which methods should
+			be
+			called at a
+			certain point in
+			time. These annotations are called
+			_behavior annotations_
+			.
+		
+		
+			The
+			following table lists the
+			available
+			behavior annotations for
+			parts.
+
+.Table Title
+|===
+
+		=== Eclipse life cycle annotations for parts
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="2.0*" />
+					<colspec colname='c2' colwidth="5.0*" />
+					
+						
+|Annotation
+|Description
+						
+					
+					
+						
+|@PostConstruct
+|Is called after the class is constructed
+								and
+								the field and
+								method injection has been performed.
+							
+						
+
+						
+|@PreDestroy
+|Is called before the class is destroyed.
+								Can
+								be used to
+								clean up resources.
+							
+						
+						
+|@Focus
+|
+								Is called whenever the part
+								gets
+								the focus.
+							
+						
+
+						
+|@Persist
+|Is called if a save request on the part is
+								triggered by the Eclipse framework.
+							
+						
+						
+|@PersistState
+|Is called before the model object is
+								disposed, so that the
+								part
+								is able to save
+								its instance state. This
+								method is called
+								before the @PreDestroy
+								method.
+							
+						
+					
+				
+|===
+		
+
+		
+			The
+			`@PostConstruct`
+			,
+			`@PreDestroy`
+			annotations are included in the
+			`javax.annotation`
+			package.
+			`@Persist`
+			,
+			`@PersistState`
+			and
+			`@Focus`
+			are part of the
+			`org.eclipse.e4.ui.di`
+			package.
+		
+		
+			Eclipse defines additional behavior annotations for commands and
+			for the application life cycle which are covered
+			in the respective
+			chapters.
+		
+	
+
+=== Behavior annotations imply method dependency injection
+		
+			Behavior annotations imply that the framework needs to
+			provide the
+			specified parameters to the method, i.e., the
+			framework
+			also
+			performs
+			method dependency
+			injection.
+			If you also add the
+			`@Inject`
+			annotation, the method is called twice, first
+			during the
+			dependency injection phase and later for the behavior
+			annotation.
+			This
+			is typically undesired and therefore an error.
+		
+
+	
+
+
+=== Use the @PostConstruct method to build the user interface
+		
+		
+			It is recommended to construct the user interface of a part in a
+			method annotated with the
+			`@PostConstruct`
+			annotation. It would also be possible to create the user interface
+			in
+			the
+			constructor, but this is not recommended as
+			field
+			and method
+			injection have not been
+			done
+			at
+			this point.
+		
+		
+			Creating the user interface
+			in an
+			`@PostConstruct`
+			method
+			requires that
+			`@Inject`
+			methods
+			are aware that the user interface might not have been created
+			yet.
+		
+	
+
+
+=== Why is the @PostConstruct method not called?
+		
+		
+			Both Java 7 and the Eclipse platform expose the
+			`@PostConstruct`
+			annotation. In your Eclipse application you need to tell
+			the framework
+			that the annotation from the Eclipse platform
+			should be used.
+		
+		NOTE:
+			
+				Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the
+				`javax.annotation`
+				package anymore.
+			
+		
+		
+			In case your
+			`@PostConstruct`
+			method is not called, ensure that you have defined a
+			dependency to
+			`org.eclipse.core.runtime`
+			in the
+			_MANIFEST.MF_
+			file. See
+			http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
+		
+		NOTE:
+			
+				`org.eclipse.core.runtime`
+				exports
+				`javax.annotation`
+				in the correct version. If you have a dependency to
+				`org.eclipse.core.runtime`
+				in your
+				_MANIFEST.MF_
+				file, no additional package dependency is needed. If, for some
+				reasons, you want to avoid a dependency to
+				`org.eclipse.core.runtime`
+				, you
+				could define a package
+				dependency to the
+				`javax.annotation`
+				package and set the version to 1.0.0.
+			
+		
+	
+
+

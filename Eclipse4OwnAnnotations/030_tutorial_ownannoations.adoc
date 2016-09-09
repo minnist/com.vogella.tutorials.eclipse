@@ -1,0 +1,114 @@
+== Exercise: Creating custom annotations
+
+=== Target
+
+The following exercise demonstrates how to create a custom
+annotation and a processor for it.
+
+The
+annotation processor is registered for a custom
+`@DirectTodo`
+annotation, which is a qualifier and therefore has to be used
+together with
+`@Inject`
+. The
+`@DirectTodo`
+annotation can have a id for requesting a Todo with a certain id.
+
+=== Creating a new plug-in 
+
+Create a new simple plug-in project called
+_com.example.e4.rcp.todo.ownannotation_.
+
+Add the following plug-ins as dependencies to your new plug-in.
+
+* `org.eclipse.e4.core.di`
+* `com.example.e4.rcp.todo.model`
+
+Also configure that the
+`javax.inject`
+package should be used.
+
+=== Define and export annotations
+
+Define the following annotation.
+
+[source,java]
+----
+include::res/DirectTodo.java[]
+----
+
+Export the
+`com.example.e4.rcp.todo.ownannotation`
+package
+via your
+_MANIFEST.MF_
+file.
+
+=== Ensure annotation processing and plug-in activation is active
+
+Ensure that OSGi services can be defined via annotations in the class via
+menu:Window[Preferences > Plug-in Development > DS annotations].
+
+Ensure that the
+_Activate this plug-in when one of its classes is loaded_
+flag for the service plug-in is set in the
+_MANIFEST.MF_
+file.
+Depending on your setup, this flag
+might
+already be set.
+
+=== Create service implementation
+
+Create the
+`com.example.e4.rcp.todo.ownannotation.internal`
+package and the following class. Based on the annotation this will register this class as service for the
+`ExtendedObjectSupplier`
+abstract class via OSGi declarative services.
+
+[source,java]
+----
+include::res/DirectTodoObjectSupplier.java[]
+----
+
+NOTE: The `ExtendedObjectSupplier` class
+is not yet released as official API. See
+<<e4overview_api>>.
+
+=== Add the plug-in as dependency
+
+Add your new plug-in as dependency to your
+`com.example.e4.rcp.todo`
+application plug-in via its
+_MANIFEST.MF_
+file.
+
+=== Update the product configuration (via the features)
+
+Include the new plug-in into your feature to make it available
+for your product.
+
+=== Validate: Use your custom annotation
+
+In order to use your new annotation, add it to a field or
+method
+parameter in one of your parts. For example add the
+following method
+to your
+`PlaygroundPart`
+class.
+
+[source,java]
+----
+include::res/ParameterDirectTodo.java[]
+----
+
+Start your application (via the product as you added a new
+plug-in).
+Ensure that you get the Todo with id 1 injected
+based on your
+`@DirectTodo`
+annotation.
+
+

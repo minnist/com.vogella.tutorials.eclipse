@@ -1,0 +1,188 @@
+== Tips
+
+=== Where do I find the initial application model of the Eclipse SDK
+
+In plug-in "org.eclipse.platform". Here you find the file
+"LegacyIDE.e4xmi" which defines the initial window and some add-ons.
+During startup the
+`E4Workbench`
+class
+from the
+`org.eclipse.e4.workbench.ui.internal`
+package is started.
+
+
+=== Meta-model of the application model
+
+The possible structure of the application model is defined by a
+meta-model created with the Eclipse Modeling Framework (EMF). A
+meta-model describes the structure of a data model, e.g., it defines
+which properties a Part has.
+
+EMF is a popular general purpose
+modeling
+framework and is the
+basis for
+lots of Eclipse based projects. EMF allows
+to generate Java
+classes from a meta-model.
+
+Eclipse
+EMF
+uses
+an
+_.ecore_
+file to define the
+meta-model.
+
+The meta-model of the Eclipse 4 applications
+is
+stored in the
+`org.eclipse.e4.ui.model.workbench`
+plug-in inside the
+_model_
+folder. The base model definition can be found in
+the
+_UIElements.ecore_
+file. The Eclipse 4 model classes have been
+generated based on this
+model.
+
+If you want to investigate this model, you could install the EMF
+tooling via the Eclipse update manager and import the defining
+plug-in into your workspace. To import a plug-in from your current
+Target
+Platform (default is the Eclipse IDE) into your workspace, use
+the
+_Plug-ins_
+view
+, right-click on a plug-in and select
+menu:Import As[Source Project].
+
+The
+_Application.e4xmi_
+file, which describes the Eclipse application model, is a persisted
+version of an EMF model.
+
+=== Determine the command ID in a handler
+
+In the handler class you can determine the command ID if the
+command was triggered via the user interface. Determining the ID is
+not possible, if it was triggered via the command service. The
+following code snippet shows how to get the command
+ID.
+
+[source,java]
+----
+include::res/command/getid.java[]
+----
+
+=== BindingContext
+
+Eclipse 4 uses predefined BindingContext identifier which are
+based on org.eclipse.jface.contexts.IContextIds.
+
+These are
+`org.eclipse.ui.contexts.dialog`
+for dialogs,
+`org.eclipse.ui.contexts.window`
+for windows and
+`org.eclipse.ui.contexts.dialogAndWindow`
+for both.
+
+=== DI in OSGi stand-alone environments
+
+It is possible to use the DI engine in a standard OSGi
+environment
+
+[source,java]
+----
+include::res/osgi/standard.java[]
+----
+
+=== Persists user changes
+
+Via a startup parameter you can control if Eclipse should persists
+model changes. For example you want to save the last position of the
+main application window. This is similar to the
+`setSaveAndRestore(true)`
+method call in Eclipse 3.x.
+
+.Sample Table
+|===
+
+|Parameter |Description
+
+|-persistState false|true
+|Default is false, if set to false user changes are not recorded.
+
+|-clearPersistedState
+|will delete the recorded delta of the last session.
+
+|-deltaRestore true|false
+|Controls how the deltas are stored. a) Store deltas and them on startup using the Reconciler. This way new
+contribution
+will be shown in your application. b) Serialize the
+complete
+model (this is similar to 3.x saveAndRestore(true))
+and
+deserialize from XMI.
+	
+|===
+
+=== Styling the Eclipse 4 IDE
+
+The platform style sheets
+are stored in
+the
+`org.eclipse.platform`
+plug-in .
+This
+plugin_contains
+a
+_/css_
+folder
+which contains
+the style
+sheets for the
+individual
+platforms (os
+based).
+
+You can use the ThemeManager to style the Eclipse 4 IDE itself.
+In the
+Eclipse the theme can be selected via
+menu:Window[Preferences > General > Appearance]
+.
+
+You can also contribute a new theme
+via a separate plug-in. Create
+a
+plug-in project (no activator required)
+which has a
+dependency
+to
+the
+plug-in
+`org.eclipse.e4.ui.css.swt.theme`.
+
+Contribute a new theme to the
+`org.eclipse.e4.ui.css.swt.theme`
+extension point
+Create a CSS file
+and point
+the theme to this file.
+
+Export the plug-in
+(including the CSS
+file) and put it into
+your
+Eclipse
+installation folder into the "dropins" folder you
+should be
+able
+to
+select
+your new theme after restarting the Eclipse
+IDE.
+

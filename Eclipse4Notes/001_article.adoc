@@ -1,0 +1,27 @@
+= Eclipse RCP and plug-in development - Notes
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 5.9, 06.07.2016
+:docinfodir: ../
+:vgwort: Eclipse4Notes
+
+[abstract]
+Eclipse e4 notes.
+Just some notes about Eclipse 4 for my personal use.
+	
+include::../web/advertisement/afterTableOfContent.adoc[] 
+include::100_source.adoc[]
+include::120_modelprocessing.adoc[]
+include::610_e4tools_build.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::800_tips.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

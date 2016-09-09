@@ -1,0 +1,106 @@
+== Contributing to the application model
+
+=== Model fragments
+(((Application model,Fragments)))
+		
+A model
+_fragment_
+is a file which typically ends with the
+_.e4xmi_
+extension. It statically specifies model elements and the location in
+the application model
+to which it should be
+contributed.
+		
+For example a
+fragment
+can define that
+it extends a
+certain menu
+with additional menu
+entries.
+		
+The e4 tools project provides a wizard and an editor for model
+fragments.
+		
+TIP: The application model editor also allows you to extract a subtree
+into a new or existing fragment. Select a model
+element, right click
+on it and select
+_Extract into a fragment_ from the context menu.
+
+=== Model processors
+(((Application model,Processors)))
+		
+A
+_processor_
+allows you to contribute to the model via program code. This enables
+the dynamic creation of model
+elements during the
+start of the
+application.
+
+=== Position of new model elements
+		
+Fragments define the desired position of new model
+elements
+via the
+_Position in List_
+attribute. The following values are allowed:
+
+.Position in list
+|===
+|Value |Description
+		
+|_first_
+|Positions the element on the beginning of the list.
+		
+|_index:theIndex_
+|Places the new model elements at position _theIndex_. Example: _index:0_
+		
+|_before:theOtherElementsId_
+|Places the new model elements before the model element with the ID _theOtherElementsId_.
+		
+|_after:theotherelementsid_
+|Places the new model elements after the model element with the ID _theotherelementsid_.
+
+|===
+		
+fragments
+of independent plug-ins
+are processed in arbitrary order by
+the
+Eclipse runtime,
+therefore
+_first_
+or
+_index_
+might not always result in the desired outcome.
+
+=== Usage of IDs
+
+If you want to contribute to an element of the application model
+you must
+specify the ID of the element to
+which
+you are
+contributing.
+		
+TIP: In general it is good practice to always specify unique IDs in your application model. 
+If not you may experience strange application behavior.
+
+=== Comparison with Eclipse 3.x
+
+The programming model of Eclipse 3.x primarily uses extension
+points to define
+contributions to the application.
+These extensions
+define new
+parts, new menus,
+etc. This approach is no longer used
+in
+Eclipse 4 RCP
+applications. All
+contributions are made via fragments or
+processors.
+		

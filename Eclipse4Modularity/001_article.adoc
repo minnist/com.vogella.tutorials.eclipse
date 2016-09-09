@@ -1,46 +1,17 @@
-= Android - Tutorial
+= Eclipse application model modularity with fragments and processors - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
+Lars Vogel(c) 2009, 2016 vogella GmbH
+Version 6.1, 06.07.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: Eclipse4Modularity
 
 [abstract]
-
-
-=== Eclipse application model modularity with fragments and
-			processors - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2009</year>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<year>2015</year>
-			<year>2016</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>04.04.2016</pubdate>
-		<releaseinfo>
-			Version 6.0
-		</releaseinfo>
-		
-		<abstract id="abstract">
-	=== Eclipse Application Model contributions
-			 This tutorial explains how to contribute to the Eclipse
-				application model via other
-				plug-ins.
-			
-		
+Eclipse Application Model contributions.
+This tutorial explains how to contribute to the Eclipse application model via other plug-ins.
 	
 include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
@@ -60,5 +31,4 @@ include::../10_Include/Eclipse/e4info.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
 

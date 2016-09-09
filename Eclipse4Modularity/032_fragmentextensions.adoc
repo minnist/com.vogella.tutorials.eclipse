@@ -1,0 +1,39 @@
+== Fragment extension elements
+	
+In fragments you contribute to an existing model element which is
+defined via its ID. You also have to specify the
+_Featurename_
+to which you want to contribute. A
+_Featurename_
+is a direct link to the structure of the application model.
+	
+The following table lists some
+_Featurename_
+values and their purposes.
+
+.Contribution, Featurename and Element id
+|===
+|You want to contribute to a |Featurename |Element Id
+
+|Command to the application
+|commands
+|ID of your application
+
+|Handler to the application
+|handlers
+|ID of your application
+
+|New MenuItem / HandledMenuItem to existing menu
+|children
+|ID of the menu
+
+|New menu to the main menu of the window
+|children
+|ID of your main menu
+
+|New Part to existing PartStack
+|children
+|ID of your PartStack
+
+|===
+

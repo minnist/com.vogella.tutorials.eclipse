@@ -1,0 +1,64 @@
+== XPaths in model fragments
+
+XPaths can also be used to define the contributing place in the model for a model fragment. The following table
+gives several examples how you can use XPath to define the model element you want to extend.
+
+.Sample XPaths for the Application Model
+|===
+|XPath |Element in Application Model
+
+|/
+|The slash (/) always addresses the root element of an XML
+file, which always is the MApplication element.
+
+|//mainMenu
+|Contribute to the main menu.
+
+|//mainMenu/children or //mainMenu/*[1]
+|Contribute to the first child of the main menu. In most
+application this would be the
+menu:File menu.
+
+|//mainMenu/*[@*[local-name()='type' and .='menu:Menu']]
+|Contribute to the first Menu of the main menu. This xpath is more
+detailed than the one above since it also
+requires that the main
+menu child is of type
+_menu:Menu_. In most
+application this would be the
+menu:File menu.
+
+|//trimBars[@side="Bottom"]
+|Contribute to the bottom trimbar.
+
+|//trimBars[not(@side)]
+|Contribute to the top trimbar. When the
+`MTrimBar`
+is on top
+the side
+attribute is omitted, therefore
+`not(@side)`
+is used.
+
+|//children[@*[local-name()='type' and .='basic:Part']]
+|Contribute to a
+`MPart`.
+
+|//children[@*[local-name()='type' and
+.='basic:Part']][./tags = 'Editor']
+|Contribute to a
+`MPart`
+which is tagged with the
+_Editor_
+tag.
+
+|===
+
+From these examples more useful XPaths for navigating the
+Application Model can be derived.
+
+A nice tool for evaluating XPaths is the
+https://marketplace.eclipse.org/content/eclipse-xpath-evaluation-plugin[Eclipse XPath evaluation plug-in]..
+
+image::eclipse-xpath-plugin.png[Eclipse XPath plugin in the marketplace]
+

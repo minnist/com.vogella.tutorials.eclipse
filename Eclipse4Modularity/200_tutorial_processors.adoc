@@ -1,0 +1,108 @@
+== Exercise: Implementing a model processor
+
+=== Target
+
+In this exercise
+you
+replace an existing menu entry with another
+menu entry.
+
+=== Enter the dependencies
+
+Continue to use the
+`com.example.e4.rcp.todo.contribute`
+plug-in for this exercise.
+
+In the
+_MANIFEST.MF_
+, add the following plug-ins as dependencies to your
+_contribute_
+plug-in.
+
+* `org.eclipse.e4.ui.services`
+* `org.eclipse.e4.core.contexts`
+* `org.eclipse.e4.ui.model.workbench`
+
+=== Create the Java classes
+
+Create the following dialog and handler classes. 
+
+[source,java]
+----
+include::res/processors/ExitDialog.java[]
+----
+
+[source,java]
+----
+include::res/processors/ExitHandlerWithCheck.java[]
+----
+
+Create the model processor class. This class removes all menu
+entries
+which have "exit" in their ID from the menu with
+the
+`org.eclipse.ui.file.menu`
+ID. It also adds a new entry.
+
+[source,java]
+----
+include::res/processors/MenuProcessor.java[]
+----
+
+WARNING: Ensure that your menu entry labeled with "Exit" in the
+_Application.e4xmi_
+file, contains "exit" in its ID.
+
+=== Register processor via extension
+
+In your
+`contribute`
+plug-in register your
+`processor`
+via the
+`org.eclipse.e4.workbench.model`
+extension.
+
+image::processor04.png[]
+
+Right-click on the processor and select
+menu:New[element]
+. The value from the ID parameter is the ID of the model element
+which is
+injected
+into your processor class. Use
+_org.eclipse.ui.file.menu_
+as
+_id*_
+parameter.
+
+image::processor10.png[]
+
+WARNING: This assumes that you used
+_org.eclipse.ui.file.menu_
+as
+ID for your
+_File_
+menu in the main application model.
+
+WARNING: The ID of the element defined in the extension point must match the
+`@Named`
+value in the processor, otherwise your menu is not injected into the
+processor.
+
+=== Validating
+
+Start your application. In the model fragment exercises, the
+contribute plug-in was already added to your
+product.
+
+Ensure that the
+existing "Exit"
+menu entry is
+removed and your new
+menu entry with the
+"Another Exit"
+label is
+added to
+the file menu.
+

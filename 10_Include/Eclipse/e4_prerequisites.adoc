@@ -4,6 +4,5 @@ The following assumes that you have already basic Eclipse RCP
 development experience. See the
 http://www.vogella.com/tutorials/Eclipse4RCP/article.html - Eclipse RCP Tutorial
 for details.
-.
 	
 	

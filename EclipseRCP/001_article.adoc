@@ -1,4 +1,4 @@
-== Eclipse RCP (Rich Client Platform) - Tutorial
+= Eclipse RCP (Rich Client Platform) - Tutorial
 :linkcss:
 :sectnums:
 :experimental:
@@ -7,10 +7,10 @@
 (c) 2009, 2016 vogella GmbH
 Version 0.3, 06.07.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: EclipseRCP
 
 [abstract]
-=== Building Eclipse based applications
+Building Eclipse based applications
 
 This tutorial gives an overview about the Eclipse application platform using the Eclipse 4 (e4) programming model.
 

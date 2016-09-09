@@ -1,0 +1,4 @@
+== Renderer resources
+	
+https://wiki.eclipse.org/Efxclipse/Runtime/Recipes[Receipes for Efxclipse for JavaFX]
+	

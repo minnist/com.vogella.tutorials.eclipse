@@ -1,0 +1,166 @@
+== Alternative renderer
+
+=== Alternatives to SWT
+
+You can use any user interface technology for your RCP
+application, as long as you provide a renderer implementation for it.
+There are already several
+default implementations besides SWT
+available. This
+section
+lists the most
+popular ones.
+
+A popular misconception about a different renderer is that you
+can
+port your SWT applications unchanged to it, for example to Vaadin
+or
+JavaFX. That
+is not the case. Alternative renderer implementations
+do
+not
+port automatically your user interface implementation which
+relate
+to code. For example in the exercises of this $book your parts
+or
+your tool controls
+are implemented with SWT classes.
+
+You have to
+re-implement these user interface
+components.
+The
+value
+of
+alternative
+renderer implementations lies in
+the fact that you
+have an
+application
+framework with a
+modeled
+application and dependency
+injection
+of which
+your user
+interface
+framework
+can take advantage.
+This
+allows you to
+use the
+Eclipse
+4
+application
+framework with the
+user
+interface toolkit of
+your
+choice.
+
+=== Vaadin renderer - Vaaeclipse
+(((Renderer,Vaadin)))
+
+Vaaclipse is a framework for building web applications using the
+Eclipse 4
+platform and Vaadin. It allows to use the power of the
+Eclipse framework in
+web development.
+
+You find more information about this
+project on the
+following homepage:
+https://github.com/semanticsoft/vaaclipse/wiki[Vaaclipse]
+
+The following screenshots show demo applications of Vaaclipse.
+
+image::vaadinrenderer10.png[Vaadin renderer for Eclipse 4]
+
+image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4]
+
+=== JavaFX renderer - e(fx)clipse
+(((Renderer,JavaFX)))
+
+The e(fx)clipse provides a JavaFX renderer for Eclipse 4 RCP
+application. For more information see the
+http://www.efxclipse.org/[e(fx)clipse homepage]
+. The following screenshot shows an example Eclipse RCP application
+using JavaFX as a renderer.
+
+image::lose_klein.png[JavaFX renderer example]
+
+=== Eclipse RAP
+(((Renderer,RAP)))
+
+Eclipse RAP is an approach to provide a web implementation for
+the SWT API and makes it relatively easy to run an Eclipse 3.x RCP
+application in the web without code modifications.
+
+Eclipse RAP is special case as the renderer is still the default
+SWT renderer but
+there is a translation
+layer between SWT and the
+actual widget that
+is
+produced. This allows you to reuse your SWT user
+interface code to run as a web application.
+
+Currently the Eclipse RAP team does not officially support
+the Eclipse
+4 API
+but several open source ports have been made. See for
+example
+http://wiki.eclipse.org/RAP/Eclipse4[Eclipse 4 on RAP wiki].
+
+=== Additional UI toolkits
+
+Writing source code is the current default approach
+by the
+Eclipse platform
+to create your user interfaces.
+
+Currently several
+open source frameworks are developed to
+simplify the
+creation of
+user
+interface components or to remove a hard
+dependency to
+a specific
+rendering framework. The following description
+is
+a
+limited
+selection
+of
+possible approaches.
+
+The jo-widget project provides components which can be
+rendered to
+SWT,
+Swing and JavaFX. See the
+https://code.google.com/p/jo-widgets/[jo-widget homepage]
+for more information.
+
+The Eclipse XWT project supports the creation of user interface
+components based on XML files. See the
+http://wiki.eclipse.org/E4/XWT[XWT wiki]
+for documentation.
+
+The Eclipse Sapphire project allows you to create user interfaces
+based
+on a property editor. See the
+http://www.eclipse.org/sapphire/[Eclipse Sapphire homepage]
+for details.
+
+The Wazzabi project provides functionality to model the user
+interface via EMF and to generate the SWT user interface at runtime
+based on this model. See the
+http://eclipse.org/wazaabi/[Wazzabi homepage]
+for more information.
+
+The EMF Parsley project plans to provide model based user interface
+components. See the
+http://www.eclipse.org/emf-parsley[EMF Parsley project page]
+for more information.
+

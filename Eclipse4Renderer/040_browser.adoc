@@ -1,0 +1,39 @@
+== Exercise: A custom part renderer
+
+In this exercise you create a custom part renderer which renders
+all parts with an SWT
+browser widget.
+
+WARNING: This example might not work on Linux, as the SWT browser widget
+sometimes has issues on Linux.
+
+[source,java]
+----
+include::res/browser/MyPartRenderer.java[]
+----
+
+Extend the
+`MyRendererFactory`
+to the following to use your own part renderer.
+
+[source,java]
+----
+include::res/browser/MyRendererFactory.java[]
+----
+
+Run your application and test that every part is now rendered as
+browser.
+
+NOTE: Currently all parts show the same URL, but you could extend your
+renderer to access for example tags at the parts to determine the
+URLs which should be used.
+
+image::stackrenderer20.png[Using a Browser Renderer for the Parts]
+
+WARNING: After finishing the test, remove the
+`rendererFactoryUri`
+property from the
+_plugin.xml_
+file of your application plug-in, so that your application works
+again as before. 
+

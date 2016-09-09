@@ -7,6 +7,7 @@
 Lars Vogel (c) 2016 vogella GmbH
 Version 0.4, 23.06.2016
 :docinfodir: ../
+:vgwort: EclipseErrorReporting
 
 [abstract]
 This tutorial gives an overview about the Eclipse automatic error reporting tools integration into RCP application.

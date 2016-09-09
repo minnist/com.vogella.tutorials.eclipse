@@ -6,6 +6,8 @@
 :imagesdir: ./img
 Lars Vogel, (c) 2008, 2016 vogella GmbH
 Version 1.4, 29.05.2016
+:docinfodir: ../
+:vgwort: EclipseDragAndDrop
 
 [abstract]
 This tutorial describes the usage of drag and drop in the Eclipse framework.

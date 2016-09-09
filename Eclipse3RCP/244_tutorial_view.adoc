@@ -21,9 +21,9 @@ Maintain the id
 class
 "de.vogella.rcp.intro.view.MyView".
 		
-image::addview80.gif[Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+image::addview80.gif[Data for the "org.eclipse.ui.views" extension point]
 		
-image::addview90.png[Data for the "org.eclipse.ui.views" extension point,pdfwidth=60%]
+image::addview90.png[Data for the "org.eclipse.ui.views" extension point]
 		
 Create the class "MyView" by clicking on the "class"
 hyperlink
@@ -43,7 +43,7 @@ perspective. Add
 the extension
 "org.eclipse.ui.perspectiveExtensions" to your plugin.
 		
-image::addview110.gif[Adding a view to your perspective via the "org.eclipse.ui.perspectiveExtensions" extension,pdfwidth=60%]
+image::addview110.gif[Adding a view to your perspective via the "org.eclipse.ui.perspectiveExtensions" extension]
 		
 Right-click "*(perspectiveExtension)"
 menu:New[View].
@@ -65,13 +65,13 @@ ratio
 of
 `0.95f`.
 		
-image::addview130.png[Maintaining the layout data for the view in the `org.eclipse.ui.perspectiveExtensions` extension point,pdfwidth=60%]
+image::addview130.png[Maintaining the layout data for the view in the `org.eclipse.ui.perspectiveExtensions` extension point]
 
 === Result
 		
 Run your application to see the result.
 		
-image::addview200.gif[Running application with a new view,pdfwidth=60%]
+image::addview200.gif[Running application with a new view]
 
 === Add view to perspective via code
 

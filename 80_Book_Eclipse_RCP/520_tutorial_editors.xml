@@ -37,7 +37,7 @@ include::res/editor/OpenEditorHandlerFirst.java[]
 			.
 		
 		
-image::openneweditor10.png" scale="30[Context menu to open a new editor,pdfwidth=60%]
+image::openneweditor10.png" scale="30[Context menu to open a new editor]
 		
 	
 
@@ -53,7 +53,7 @@ image::openneweditor10.png" scale="30[Context menu to open a new editor,pdfwidth
 			.
 		
 		
-image::openneweditor20.png[Validate PartStack ID,pdfwidth=60%]
+image::openneweditor20.png[Validate PartStack ID]
 		
 	
 
@@ -133,7 +133,7 @@ include::res/editor/OpenEditorHandler.java[]
 			screenshot.
 		
 		
-image::editor_in_action10.png[Editor in action,pdfwidth=60%]
+image::editor_in_action10.png[Editor in action]
 		
 		
 			Change a

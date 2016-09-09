@@ -8,7 +8,7 @@ view" as a template. In _plugin.xml_ add a new extension point
 "vogella.com Perspective". Change the class name to
 "de.vogella.rcp.intro.perspective.Perspective".
 	
-image::perspective20.png[Maintaining the "org.eclipse.ui.perspectives" perspective extension point,pdfwidth=60%]
+image::perspective20.png[Maintaining the "org.eclipse.ui.perspectives" perspective extension point]
 	
 Click on the "class*" link to create the class. The 
 `createInitialLayout()` method in your new class is
@@ -44,7 +44,7 @@ include::res/perspective/ApplicationWorkbenchWindowAdvisor[]
 You should now be able to select your perspective
 interactively.
 	
-image::perspective40.gif[Selecting the perspective in the running application,pdfwidth=60%]
+image::perspective40.gif[Selecting the perspective in the running application]
 	
 In addition you could reuse the Eclipse command
 "org.eclipse.ui.perspectives.showPerspective" which allows to switch

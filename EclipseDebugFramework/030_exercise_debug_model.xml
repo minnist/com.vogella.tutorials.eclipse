@@ -174,14 +174,14 @@ include::res/ExampleDebugTarget.java[]
 		
 		
 image::debug_toolbar_buttons.png"
-						scale="40[Debug toolbar buttons,pdfwidth=60%]
+						scale="40[Debug toolbar buttons]
 		
 		
 			When passing in "vogella" as String the result should look
 			similar to this:
 		
 		
-image::debug_view_result.png[Debug view result,pdfwidth=60%]
+image::debug_view_result.png[Debug view result]
 		
 	
 

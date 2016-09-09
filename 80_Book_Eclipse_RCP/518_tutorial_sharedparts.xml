@@ -31,7 +31,7 @@
 
 		
 		
-image::placeholder02.png[Adding placeholders,pdfwidth=60%]
+image::placeholder02.png[Adding placeholders]
 		
 
 
@@ -45,14 +45,14 @@ image::placeholder02.png[Adding placeholders,pdfwidth=60%]
 		
 
 		
-image::placeholder04.png" scale="35[Adding placeholders,pdfwidth=60%]
+image::placeholder04.png" scale="35[Adding placeholders]
 		
 		As result you should have two placeholders pointing to the
 			shared
 			element.
 		
 		
-image::placeholder10.png[Adding placeholders to the application model,pdfwidth=60%]
+image::placeholder10.png[Adding placeholders to the application model]
 		
 
 		

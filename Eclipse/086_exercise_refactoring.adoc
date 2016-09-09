@@ -26,7 +26,7 @@ menu:Refactoring [Extract Method]
 _calculateSum_
 as the name of the new method.
 		
-image::refactor20.png[Extract Method refactoring,pdfwidth=60%]
+image::refactor20.png[Extract Method refactoring]
 		
 After this refactoring the class should look like the following code.
 		
@@ -46,7 +46,7 @@ select
 menu:Refactor[Extract Constant]
 . Name your new constant `HELLO`.
 		
-image::refactor30.png[Extract Constants,pdfwidth=60%]
+image::refactor30.png[Extract Constants]
 
 The string is now defined as a constant.
 		

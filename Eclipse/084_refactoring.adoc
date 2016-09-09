@@ -32,7 +32,7 @@ _Rename_
 refactoring for a class. The cursor is positioned on the class and
 the context menu is activated via a right-click on the class.
 
-image::refactor10.png[Renaming a class,pdfwidth=60%]
+image::refactor10.png[Renaming a class]
 
 The most important refactorings are listed in the following
 table.

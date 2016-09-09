@@ -58,7 +58,7 @@
 			field.
 		
 		
-image::egitconfig30.png[EGit default repository folder,pdfwidth=60%]
+image::egitconfig30.png[EGit default repository folder]
 		
 
 		You can also use Eclipse configuration variables to define
@@ -86,7 +86,7 @@ image::egitconfig30.png[EGit default repository folder,pdfwidth=60%]
 			tab.
 		
 		
-image::git_toolbar10.png[Git toolbar buttons,pdfwidth=60%]
+image::git_toolbar10.png[Git toolbar buttons]
 		
 		
 			Afterwards you can configure which Git operations should be available
@@ -98,7 +98,7 @@ image::git_toolbar10.png[Git toolbar buttons,pdfwidth=60%]
 		
 
 		
-image::git_toolbar20.png[Git toolbar buttons,pdfwidth=60%]
+image::git_toolbar20.png[Git toolbar buttons]
 		
 	
 

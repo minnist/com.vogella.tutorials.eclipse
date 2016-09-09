@@ -26,7 +26,7 @@ Version 0.3, 06.07.2016
 		
 		
 image::breakpoint_hierarchy.png"
-						scale="40[Class hierarchy of IBreakpoint,pdfwidth=60%]
+						scale="40[Class hierarchy of IBreakpoint]
 		
 	
 
@@ -40,7 +40,7 @@ image::breakpoint_hierarchy.png"
 		
 		
 image::breakpoint_ext_point.png"
-						scale="40[IBreakpoint extension point,pdfwidth=60%]
+						scale="40[IBreakpoint extension point]
 		
 		
 			In this definition a
@@ -72,7 +72,7 @@ include::res/breakpoint_marker_sample.xml[]
 		
 		
 image::togglebreakpointstarget_hierarchy.png"
-						scale="40[IToggleBreakpointsTarget type hierarchy,pdfwidth=60%]
+						scale="40[IToggleBreakpointsTarget type hierarchy]
 		
 		
 			For instance the

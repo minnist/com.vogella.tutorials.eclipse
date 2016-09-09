@@ -38,7 +38,7 @@ Select menu:Run[Run Configurations...] and switch to the _Main_ tab.
 Select that your product should be started similar to the following screenshot.
 
 
-image::swtbot_startproduct10.png[Select the product which should be started,pdfwidth=60%]
+image::swtbot_startproduct10.png[Select the product which should be started]
 
 
 === Validating

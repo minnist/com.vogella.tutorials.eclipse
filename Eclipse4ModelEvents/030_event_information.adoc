@@ -5,7 +5,7 @@
 <<<<<<< Upstream, based on branch 'master' of https://github.com/vogellacompany/com.vogella.tutorials.eclipse
 The `UIEvents.EventTags` interface define the possible event tags:
 
-image::./images/event_tags.png[EventTags interface with properties of an Event,pdfwidth=60%]
+image::./images/event_tags.png[EventTags interface with properties of an Event]
 
 These event tags are explained in the following sections.
 
@@ -20,7 +20,7 @@ So if you for instance listen to changes of a model element's label, the `ATTNAM
 include::res/attname_label.java[]
 ----
 
-image::./images/label_attname.png[Label ATTNAME,pdfwidth=60%]
+image::./images/label_attname.png[Label ATTNAME]
 
 NOTE: The `label` 	is an XML attribute and can be found is the source of your _Application.e4xmi_ file.
 
@@ -64,13 +64,13 @@ With the `TYPE` event tag you may determine what action has been done to the app
 
 The different types can be found in the `UIEvents.EventTypes` interface:
 
-image::./images/event_types.png[EventTypes interface for changes to the application model,pdfwidth=60%]
+image::./images/event_types.png[EventTypes interface for changes to the application model]
 
 With these event types you are able to figure out, whether a model element was added, created, moved, removed or an attribute was set.
 
 The `UIEvents` class, also offers convenience methods to check for some types.
 
-image::./images/event_type_convenience.png[Convenience methods for event types.,pdfwidth=60%]
+image::./images/event_type_convenience.png[Convenience methods for event types.]
 
 The `isADD(Event)` and `isREMOVE(Event)` methods apply for both single and many, e.g., ADD and ADD_MANY)
 
@@ -124,7 +124,7 @@ of the event will be
 include::res/attname_label.java[]
 ----
 
-image::label_attname.png[Label ATTNAME,pdfwidth=60%]
+image::label_attname.png[Label ATTNAME]
 
 
 [NOTE]
@@ -235,7 +235,7 @@ interface:
 
 <mediaobject>
 <imageobject>
-<imagedata fileref="./images/event_types.png[EventTypes interface for changes to the application model,pdfwidth=60%]
+<imagedata fileref="./images/event_types.png[EventTypes interface for changes to the application model]
 
 With these event types you are able to figure out, whether a model element was added,
 created, moved, removed or
@@ -250,7 +250,7 @@ types.
 
 <mediaobject>
 <imageobject>
-<imagedata fileref="./images/event_type_convenience.png[Convenience methods for event types.,pdfwidth=60%]
+<imagedata fileref="./images/event_type_convenience.png[Convenience methods for event types.]
 
 
 The

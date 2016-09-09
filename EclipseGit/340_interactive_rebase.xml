@@ -27,7 +27,7 @@
 			to change the commit message.
 		
 		
-image::reword_commitmesage_egit10.png[Reword a commit message in Eclipse,pdfwidth=60%]
+image::reword_commitmesage_egit10.png[Reword a commit message in Eclipse]
 		
 		
 			You can squash several commits by selecting them in the
@@ -39,7 +39,7 @@ image::reword_commitmesage_egit10.png[Reword a commit message in Eclipse,pdfwidt
 
 
 		
-image::rebase_interactive_squaschcommits10.png[Squash a commit,pdfwidth=60%]
+image::rebase_interactive_squaschcommits10.png[Squash a commit]
 		
 		The above options are simplified ways to do an interactive
 			rebase.
@@ -73,7 +73,7 @@ image::rebase_interactive_squaschcommits10.png[Squash a commit,pdfwidth=60%]
 			to.
 		
 		
-image::egitinteractive_rebase08.png[Interactive Rebase EGit,pdfwidth=60%]
+image::egitinteractive_rebase08.png[Interactive Rebase EGit]
 		
 		
 			This opens the
@@ -90,7 +90,7 @@ image::egitinteractive_rebase08.png[Interactive Rebase EGit,pdfwidth=60%]
 		
 
 		
-image::egitinteractive_rebase10.png[Interactive Rebase EGit,pdfwidth=60%]
+image::egitinteractive_rebase10.png[Interactive Rebase EGit]
 		
 
 		
@@ -165,7 +165,7 @@ image::egitinteractive_rebase10.png[Interactive Rebase EGit,pdfwidth=60%]
 		
 
 		
-image::egitinteractive_rebase30.png[Interactive Rebase EGit,pdfwidth=60%]
+image::egitinteractive_rebase30.png[Interactive Rebase EGit]
 		
 
 		
@@ -186,7 +186,7 @@ image::egitinteractive_rebase30.png[Interactive Rebase EGit,pdfwidth=60%]
 		
 
 		
-image::egitinteractive_rebase40.png[Interactive Rebase EGit,pdfwidth=60%]
+image::egitinteractive_rebase40.png[Interactive Rebase EGit]
 		
 
 		
@@ -196,7 +196,7 @@ image::egitinteractive_rebase40.png[Interactive Rebase EGit,pdfwidth=60%]
 		
 
 		
-image::egitinteractive_rebase50.png[Interactive Rebase EGit,pdfwidth=60%]
+image::egitinteractive_rebase50.png[Interactive Rebase EGit]
 		
 
 		TIP:

@@ -8,9 +8,9 @@ In this chapter you convert the generated plug-in into an Eclipse RCP applicatio
 
 Create a new project called _com.example.e4.rcp.todo.product_ via menu:File[New > Others... > General > Project].
 
-image::productproject10.png[,pdfwidth=60%]
+image::productproject10.png[]
 
-image::productproject12.png[,pdfwidth=60%]
+image::productproject12.png[]
 
 === Create a product configuration file
 
@@ -31,7 +31,7 @@ image::training_product28.png[Press the new button in the product editor]
 
 Enter _to-do_ as the _Product Name_ , your plug-in as the _Defining Plug-in_ , _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
 
-image::training_product30.png[Entering the product details,pdfwidth=60%]
+image::training_product30.png[Entering the product details]
 
 === Configure the start levels
 (((Start level in a product)))
@@ -40,7 +40,7 @@ image::training_product30.png[Entering the product details,pdfwidth=60%]
 Switch to the _Configuration_ tab in the product editor and press the btn:[Add Recommended...] button.
 These settings are for example used by the Maven/Tycho build system,hence it is good practice to configure them.
 
-image::rcpproductstartlevel10.png[Setting the default start level,pdfwidth=60%]
+image::rcpproductstartlevel10.png[Setting the default start level]
 
 === Create a feature project
 
@@ -48,11 +48,11 @@ Create a new feature project called _com.example.e4.rcp.todo.feature_ via menu:F
 
 You can press the btn:[Finish] button on the first wizard page.
 
-image::training_product31.png[Feature project,pdfwidth=60%]
+image::training_product31.png[Feature project]
 
 Afterwards select the _Plug-ins_ tab in the editor of the _feature.xml_ file. Press the _Add..._ button and include the `com.example.e4.rcp.todo` plug-in into this feature.
 
-image::training_product34.png[Feature project,pdfwidth=60%]
+image::training_product34.png[Feature project]
 
 WARNING:Ensure you have added the plug-in on the _Included Plug-ins_ tab to include it into your feature.
 Using the _Dependencies_ tab is wrong for this exercise.
@@ -62,7 +62,7 @@ Open your _todo.product_ product file and change your product configuration file
 
 For this select the _features_ option on the _Overview_ tab of the product editor.
 
-image::e4_productfeature10.png[Switching to feature on the product configuration file,pdfwidth=60%]
+image::e4_productfeature10.png[Switching to feature on the product configuration file]
 
 Select the _Contents_ tab and add the following features via the
 btn:[Add...] button.
@@ -72,7 +72,7 @@ btn:[Add...] button.
 * `org.eclipse.emf.ecore`
 * `org.eclipse.emf.common`
 
-image::e4_productfeature21.png[Adding the required features to your product,pdfwidth=60%]
+image::e4_productfeature21.png[Adding the required features to your product]
 
 
 [NOTE]
@@ -85,23 +85,23 @@ If you cannot add one of the listed features to your product, ensure that you ha
 To avoid problems with different versions of the `org.eclipse.e4.rcp` feature, delete the version number from your product.
 You can do this via the btn:[Properties...] button on the _Contents_ tab of the product configuration editor.
 
-image::e4_productfeature26.png[Remove version number,pdfwidth=60%]
+image::e4_productfeature26.png[Remove version number]
 
-image::e4_productfeature28.png[Remove version number,pdfwidth=60%]
+image::e4_productfeature28.png[Remove version number]
 
 If other features have a version dependency, also remove these. The result should look similar to the following screenshot.
 
-image::e4_productfeature30.png[Remove version number via the Properties button,pdfwidth=60%]
+image::e4_productfeature30.png[Remove version number via the Properties button]
 
 === Create an application model
 
 Select menu:File[New > Other... > Eclipse 4 >  Model > New Application Model] to open a wizard to create an application model file.
 
-image::training_product48.png[,pdfwidth=60%]
+image::training_product48.png[]
 
 Enter your `com.example.e4.rcp.todo` application plug-in as the container and use the file name suggested by the wizard.
 
-image::training_product50.png[,pdfwidth=60%]
+image::training_product50.png[]
 
 Press the _Finish_ button.
 This triggers the creation of the _Application.e4xmi_ file inside the `com.example.e4.rcp.todo` plug-in and opens it.
@@ -112,11 +112,11 @@ Add one window to your application model so you have a visual component.
 
 Right-click on the _Windows and Dialogs_ node, and select `Trimmed Window` as depicted in the following screenshot.
 
-image::tutorial_product80.png[Adding a trimmed window,pdfwidth=60%]
+image::tutorial_product80.png[Adding a trimmed window]
 
 Enter an ID, the position and size of the window and a label as shown in the screenshot below.
 
-image::tutorial_product90.png[Enter the data for the TrimmedWindow in the model editor,pdfwidth=60%]
+image::tutorial_product90.png[Enter the data for the TrimmedWindow in the model editor]
 
 
 [TIP]
@@ -131,7 +131,7 @@ In <<tutorial_clearpesistence_task" /> you configure your product to remove all 
 Open the product file and select the _Overview_ tab.
 Press the _Launch an Eclipse application_ hyperlink in the _Testing_ section.
 
-image::training_product40.png[Starting the product,pdfwidth=60%]
+image::training_product40.png[Starting the product]
 
 Validate that your application starts. You should see an empty window, which can be moved, resized, minimized, maximized and closed.
 

@@ -1,0 +1,84 @@
+== Own persistence for the application model
+
+=== Specifying the location of the application model file
+
+The file name and location of the application
+model can
+be specified in
+the
+_plugin.xml_
+file.
+This is
+done
+via the
+`applicationXMI`
+property. The
+path to
+the file follows the
+"bundleSymbolicName"/"filename"
+pattern, e.g.
+_test/ApplicationDifferent.e4xmi_.
+
+To do this open the
+_plugin.xml_
+file, select the
+_Extensions_
+tab and
+open the
+`org.eclipse.core.runtime.products`
+contribution.
+
+Right-click on the
+_product_
+entry and select
+menu:New [Property]
+. Use
+_applicationXMI_
+as parameter name and
+_com.example.e4.rcp.todo/ApplicationNew.e4xmi_
+as value. This value
+consists of the
+`BundleSymbolicName`
+of the corresponding plug-in and the file
+name of
+your
+application model file.
+
+image::tutorial_product70.png[]
+
+=== Custom application model persistence handler
+(((Application model,Custom persistence handler)))
+
+Eclipse uses an instance of the
+`IModelResourceHandler`
+interface to load and save the application model at startup and
+shutdown. The
+default implementation of this interface
+is provided by
+the
+`ResourceHandler`
+class from the
+`org.eclipse.e4.ui.internal.workbench`
+package.
+
+You can specify the
+_modelResourceHandler_
+as parameter on your product extension to point to another class via
+the
+`bundleclass://`
+notation.
+
+image::modelresourcehandler.png[]
+
+This allows you to construct the initial application model from
+any source you desire. For example, you could use
+property files or
+construct the application model based on information from a database.
+
+Implementing this interface requires knowledge about the Eclipse
+Modeling Framework (EMF). You can use the
+`ResourceHandler`
+as a template to see how the
+`IModelResourceHandler`
+interface could be implemented.
+	

@@ -10,7 +10,7 @@ The search starts in the local context associated with the application model obj
 If this key is not available, Eclipse continues to search in the parent context.
 This process continues until the main context has been reached.
 
-image::contexthierarchy10.png[Context hierarchy with OSGi,pdfwidth=60%]
+image::contexthierarchy10.png[Context hierarchy with OSGi]
 
 As you learn in later chapters the Eclipse context is not the only possible source of objects which can get injected.
 Other examples which are covered later are OSGi services, preferences, events and

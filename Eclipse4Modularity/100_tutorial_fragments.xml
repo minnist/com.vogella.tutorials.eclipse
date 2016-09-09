@@ -75,7 +75,7 @@ include::res/fragments/OpenMapHandler.java[]
 			.
 		
 		
-image::fragmentwizard10.png[Creating fragments with the wizard,pdfwidth=60%]
+image::fragmentwizard10.png[Creating fragments with the wizard]
 		
 		
 			Select the
@@ -85,7 +85,7 @@ image::fragmentwizard10.png[Creating fragments with the wizard,pdfwidth=60%]
 			as the name for the file.
 		
 		
-image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=60%]
+image::fragmentwizard20.png[Creating fragments with the wizard, Part 2]
 		
 
 		
@@ -142,7 +142,7 @@ image::fragmentwizard20.png[Creating fragments with the wizard, Part 2,pdfwidth=
 
 		
 image::modelfragment_extensionpoint16.png"
-						scale="40[Adding the fragment to the extensions,pdfwidth=60%]
+						scale="40[Adding the fragment to the extensions]
 		
 
 		TIP:
@@ -191,7 +191,7 @@ image::modelfragment10.png[]
 
 				
 				<textobject>
-					<phrase>Adding a model fragment,pdfwidth=60%]
+					<phrase>Adding a model fragment]
 		
 		
 			Use
@@ -243,7 +243,7 @@ image::modelfragment10.png[]
 		
 
 		
-image::modelfragment20.png" scale="35[Adding a model fragment,pdfwidth=60%]
+image::modelfragment20.png" scale="35[Adding a model fragment]
 		
 
 		
@@ -258,7 +258,7 @@ image::modelfragment20.png" scale="35[Adding a model fragment,pdfwidth=60%]
 			field.
 		
 		
-image::fragment30.png" scale="35[Adding a command to the model fragment,pdfwidth=60%]
+image::fragment30.png" scale="35[Adding a command to the model fragment]
 		
 		
 			Create a new model fragment for the handler. The
@@ -276,7 +276,7 @@ image::fragment30.png" scale="35[Adding a command to the model fragment,pdfwidth
 			to this model fragment.
 		
 		
-image::fragment32.png" scale="35[Adding a handler to the model fragment,pdfwidth=60%]
+image::fragment32.png" scale="35[Adding a handler to the model fragment]
 		
 		
 			Use
@@ -289,7 +289,7 @@ image::fragment32.png" scale="35[Adding a handler to the model fragment,pdfwidth
 			class.
 		
 		
-image::fragment40.png" scale="30[Adding a handler to the model fragment,pdfwidth=60%]
+image::fragment40.png" scale="30[Adding a handler to the model fragment]
 		
 
 		
@@ -310,7 +310,7 @@ image::fragment40.png" scale="30[Adding a handler to the model fragment,pdfwidth
 			.
 		
 		
-image::fragment50.png[Adding a fragment for the menu,pdfwidth=60%]
+image::fragment50.png[Adding a fragment for the menu]
 		
 
 		WARNING:
@@ -345,10 +345,10 @@ image::fragment52.png[]
 			label.
 		
 		
-image::fragment60.png[Adding a menu entry,pdfwidth=60%]
+image::fragment60.png[Adding a menu entry]
 		
 		
-image::fragment62.png[Adding a menu entry,pdfwidth=60%]
+image::fragment62.png[Adding a menu entry]
 		
 		
 			Add a
@@ -375,7 +375,7 @@ image::fragment70.png[]
 
 				
 				<textobject>
-					<phrase>Adding a menu item to the menu,pdfwidth=60%]
+					<phrase>Adding a menu item to the menu]
 		
 
 	

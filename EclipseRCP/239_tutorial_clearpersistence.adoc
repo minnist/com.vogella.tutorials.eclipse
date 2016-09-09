@@ -6,7 +6,7 @@ To ensure that always the latest version of your application model is used, add 
 
 The following screenshot shows this setting in the product configuration file.
 
-image::deletepersistedmodel10.png[Delete persisted Eclipse application model,pdfwidth=60%]
+image::deletepersistedmodel10.png[Delete persisted Eclipse application model]
 
 
 [NOTE]

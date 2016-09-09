@@ -45,7 +45,7 @@ include::res/snippets/btn.java[]
 				<imageobject>
 					<!-- TODO: old screenshot, space between items:9 missing -->
 					<imagedata fileref="images/todo-overview-first.png"
-						scale="60[,pdfwidth=60%]
+						scale="60[]
 		
 	
 

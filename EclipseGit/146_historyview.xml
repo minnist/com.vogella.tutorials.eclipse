@@ -22,7 +22,7 @@
 			screenshot.
 		
 		
-image::egithistoryview10.png" scale="30[History view of changes,pdfwidth=60%]
+image::egithistoryview10.png" scale="30[History view of changes]
 		
 
 		
@@ -66,7 +66,7 @@ image::egithistoryview10.png" scale="30[History view of changes,pdfwidth=60%]
 			that.
 		
 		
-image::historytrackselection10.png[Tracking active selection,pdfwidth=60%]
+image::historytrackselection10.png[Tracking active selection]
 		
 
 		If you select a commit you see the commit message and the
@@ -75,7 +75,7 @@ image::historytrackselection10.png[Tracking active selection,pdfwidth=60%]
 
 
 		
-image::githistoryview10.png" scale="30[History View,pdfwidth=60%]
+image::githistoryview10.png" scale="30[History View]
 		
 		Via right-click on an individual file you can compare
 			this
@@ -144,7 +144,7 @@ image::comparemode10.png[]
 			tooltips.
 		
 		
-image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdfwidth=60%]
+image::historyview_toolbar10.png" scale="30[Toolbar settings in history view]
 		
 		The following listing gives an overview of the purpose of the different buttons.
 
@@ -235,7 +235,7 @@ image::historyview_toolbar10.png" scale="30[Toolbar settings in history view,pdf
 			explained above.
 		
 		
-image::egithistoryview30.png[Search in the Git history view,pdfwidth=60%]
+image::egithistoryview30.png[Search in the Git history view]
 		
 		NOTE:
 			
@@ -274,10 +274,10 @@ image::gitsearch10.png[]
 			entry.
 		
 		
-image::commitviewer10.png[Commit Viewer,pdfwidth=60%]
+image::commitviewer10.png[Commit Viewer]
 		
 		
-image::commitviewer20.png" scale="30[Commit Viewer,pdfwidth=60%]
+image::commitviewer20.png" scale="30[Commit Viewer]
 		
 
 	

@@ -21,7 +21,7 @@ image::popupmenu10.png[Defining a popupmenu in the application model]
 
 The popup menu contains entries, as, for example, a HandledMenuItem.
 
-image::popupmenu20.png[ID for the popupmenu,pdfwidth=60%]
+image::popupmenu20.png[ID for the popupmenu]
 
 After this the pop menu can be assigned to an SWT control with the `EMenuService` service which can be accessed via dependency injection.
 This class provides the `registerContextMenu(control, id)` method for this purpose.

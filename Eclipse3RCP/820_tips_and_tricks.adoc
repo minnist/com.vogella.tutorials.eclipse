@@ -87,7 +87,7 @@ required plugins here. You can check if you have any dependency
 maintained which is actually not used, by selecting Dependency
 Analysis -> Find unused dependencies.
 		
-image::unuseddependency10.gif[How to remove unused dependencies,pdfwidth=60%]
+image::unuseddependency10.gif[How to remove unused dependencies]
 
 === Multi-User settings
 		 

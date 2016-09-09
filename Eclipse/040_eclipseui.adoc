@@ -152,5 +152,5 @@ button. A dirty editor tab is marked with an asterisk
 left to the
 name of the modified file.
 
-image::dirtyeditor10.png[Editor marked as dirty,pdfwidth=60%]
+image::dirtyeditor10.png[Editor marked as dirty]
 

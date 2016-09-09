@@ -19,7 +19,7 @@
 			.
 		
 		
-image::mylyn10.png[Task List View,pdfwidth=60%]
+image::mylyn10.png[Task List View]
 		
 	
 
@@ -40,7 +40,7 @@ image::mylyn10.png[Task List View,pdfwidth=60%]
 
 
 		
-image::mylyn20.png[Selecting local repository,pdfwidth=60%]
+image::mylyn20.png[Selecting local repository]
 		
 		
 			Select the
@@ -49,7 +49,7 @@ image::mylyn20.png[Selecting local repository,pdfwidth=60%]
 			screenshot.
 		
 		
-image::mylyn30.png[Selecting local repository,pdfwidth=60%]
+image::mylyn30.png[Selecting local repository]
 		
 
 	
@@ -68,7 +68,7 @@ image::mylyn30.png[Selecting local repository,pdfwidth=60%]
 			view.
 		
 		
-image::mylyn40.png[Activate Tasks in the Package Explorer,pdfwidth=60%]
+image::mylyn40.png[Activate Tasks in the Package Explorer]
 		
 
 		
@@ -93,7 +93,7 @@ image::mylyn40.png[Activate Tasks in the Package Explorer,pdfwidth=60%]
 			task.
 		
 		
-image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
+image::mylyn50.png[Focus on active tasks]
 		
 		Once you have identified all necessary elements, you can
 			focus
@@ -118,7 +118,7 @@ image::mylyn50.png[Focus on active tasks,pdfwidth=60%]
 		
 		
 image::problemsview_marker10.png"
-						scale="40[Problems View,pdfwidth=60%]
+						scale="40[Problems View]
 		
 	
 
@@ -139,7 +139,7 @@ image::problemsview_marker10.png"
 		
 
 		
-image::mylyn_export10.png[Export Mylyn tasks,pdfwidth=60%]
+image::mylyn_export10.png[Export Mylyn tasks]
 		
 	
 

@@ -77,7 +77,7 @@
 			should look like the following screenshot.
 		
 		
-image::contextfunction02.png[Dependencies for the Context Function,pdfwidth=60%]
+image::contextfunction02.png[Dependencies for the Context Function]
 		
 
 	
@@ -107,7 +107,7 @@ include::res/contextfunction/TodoServiceContextFunction.java[]
 		
 		
 image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
-					,pdfwidth=60%]
+					]
 		
 
 	

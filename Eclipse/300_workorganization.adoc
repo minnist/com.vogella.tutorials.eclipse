@@ -22,14 +22,14 @@ set up
 your working set, select the
 menu:Package Explorer[open the drop-down menu > Select Working Set...]
 
-image::workingset10.png[Showing the working set,pdfwidth=60%]
+image::workingset10.png[Showing the working set]
 
 Press the
 _New_
 button
 on the following dialog to create a working set.
 
-image::workingset20.png[Creating new working sets,pdfwidth=60%]
+image::workingset20.png[Creating new working sets]
 
 On the next dialog select
 _Resource_
@@ -40,17 +40,17 @@ projects
 you
 would like to see and give it a name.
 
-image::workingset30.png[Creating new working sets,pdfwidth=60%]
+image::workingset30.png[Creating new working sets]
 
-image::workingset40.png[Creating new working sets,pdfwidth=60%]
+image::workingset40.png[Creating new working sets]
 
-image::workingset50.png[Creating new working sets,pdfwidth=60%]
+image::workingset50.png[Creating new working sets]
 
 You can now filter the displayed files in the
 _Package Explorer_
 based on the created working set.
 
-image::workingset60.png[Filtering resources for the working set,pdfwidth=60%]
+image::workingset60.png[Filtering resources for the working set]
 
 
 [TIP]
@@ -62,8 +62,8 @@ from the context menu of the
 _Package Explorer_
 view.
 
-image::workingset70.png[Structure by working set,pdfwidth=60%]
+image::workingset70.png[Structure by working set]
 
-image::workingset80.png[Structure by working set,pdfwidth=60%]
+image::workingset80.png[Structure by working set]
 ====
 

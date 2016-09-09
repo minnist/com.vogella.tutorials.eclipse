@@ -27,7 +27,7 @@ include::res/dynamics/DynamicPart.java[]
 			class.
 		
 		
-image::partdescriptor10.png" scale="35[Defining a Part Descriptor,pdfwidth=60%]
+image::partdescriptor10.png" scale="35[Defining a Part Descriptor]
 		
 		
 			The

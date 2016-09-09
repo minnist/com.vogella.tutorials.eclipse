@@ -82,11 +82,11 @@
 		The following screenshots show demo applications of Vaaclipse.
 		
 		
-image::vaadinrenderer10.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
+image::vaadinrenderer10.png[Vaadin renderer for Eclipse 4]
 		
 
 		
-image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
+image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4]
 		
 	
 
@@ -102,7 +102,7 @@ image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4,pdfwidth=60%]
 			using JavaFX as a renderer.
 		
 		
-image::lose_klein.png[JavaFX renderer example,pdfwidth=60%]
+image::lose_klein.png[JavaFX renderer example]
 		
 	
 

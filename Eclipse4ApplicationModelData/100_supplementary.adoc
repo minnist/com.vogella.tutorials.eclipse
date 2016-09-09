@@ -70,7 +70,7 @@ maximization of a
 _Window_
 model element.
 
-image::supplementary10.png[Supplementary info for a Window to set it to maximize.,pdfwidth=60%]
+image::supplementary10.png[Supplementary info for a Window to set it to maximize.]
 
 === Variables
 

@@ -25,7 +25,7 @@ include::res/snippets/decorations.java[]
 		The result might look like the following screenshot.
 		
 image::controldecoration17.png"
-						scale="40[ControlDecoration with databinding,pdfwidth=60%]
+						scale="40[ControlDecoration with databinding]
 		
 
 	

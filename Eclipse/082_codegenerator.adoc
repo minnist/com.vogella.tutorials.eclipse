@@ -17,7 +17,7 @@ your Java class.
 	
 You can find these options in the Source menu.
 	
-image::generate10.png[Code generation,pdfwidth=60%]
+image::generate10.png[Code generation]
 	
 To test the source generation, create the following class in your
 `de.vogella.eclipse.ide.first`
@@ -31,7 +31,7 @@ include::res/codegen/Person.java[]
 Select
 menu:Source[Generate Constructor using Fields...], mark both fields and click the _OK_ button.
 	
-image::sourcegenerator10.png[Generating,pdfwidth=60%]
+image::sourcegenerator10.png[Generating]
 	
 Select
 menu:Source[Generate Getter and Setter...], select all fields and afterwards click the _OK_ button.

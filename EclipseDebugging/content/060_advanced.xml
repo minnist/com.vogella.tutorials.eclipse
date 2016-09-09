@@ -44,10 +44,10 @@
 
 		The following screenshot depicts this setting. 
 		
-image::debug10.png[Breakpoint Properties,pdfwidth=60%]
+image::debug10.png[Breakpoint Properties]
 		
 		
-image::debug20.png[Breakpoint Properties,pdfwidth=60%]
+image::debug20.png[Breakpoint Properties]
 		
 
 	
@@ -87,7 +87,7 @@ image::debug20.png[Breakpoint Properties,pdfwidth=60%]
 		
 
 		
-image::watchpoint10.gif[Watchpoint,pdfwidth=60%]
+image::watchpoint10.gif[Watchpoint]
 		
 	
 
@@ -110,7 +110,7 @@ image::watchpoint10.gif[Watchpoint,pdfwidth=60%]
 		
 
 		
-image::exception10.gif" scale="50[Exception Breakpoint,pdfwidth=60%]
+image::exception10.gif" scale="50[Exception Breakpoint]
 		
 
 		 You can configure if the debugger should stop at caught or
@@ -132,7 +132,7 @@ image::exception10.gif" scale="50[Exception Breakpoint,pdfwidth=60%]
 			after leaving the method.
 		
 		
-image::methodbreakpoint10.gif[Method Breakpoint,pdfwidth=60%]
+image::methodbreakpoint10.gif[Method Breakpoint]
 		
 	
 
@@ -153,7 +153,7 @@ image::methodbreakpoint10.gif[Method Breakpoint,pdfwidth=60%]
 		
 		
 image::classloadbreakpoint.gif"
-						scale="30[Toogle class load breakpoint,pdfwidth=60%]
+						scale="30[Toogle class load breakpoint]
 		
 		Alternative you can double-click in the left border of the Java
 			editor beside the class definition.
@@ -221,7 +221,7 @@ include::res/remote/remote.txt[]
 			for the connection as depicted in the following screenshot.
 		
 		
-image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
+image::remotedebugging10.png[Remote debugging]
 		
 
 		NOTE:
@@ -273,7 +273,7 @@ image::remotedebugging10.png[Remote debugging,pdfwidth=60%]
 		
 
 		
-image::droptoframe10.png" scale="50[,pdfwidth=60%]
+image::droptoframe10.png" scale="50[]
 		
 
 	

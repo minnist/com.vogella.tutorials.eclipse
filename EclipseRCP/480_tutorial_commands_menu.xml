@@ -21,7 +21,7 @@
 			entry. This selection is highlighted in the following screenshot.
 		
 		
-image::commands10.png" scale="50[Adding commands to your application,pdfwidth=60%]
+image::commands10.png" scale="50[Adding commands to your application]
 		
 		
 			Via the
@@ -206,7 +206,7 @@ include::res/snippets/bundleclass.txt[]
 
 
 		
-image::handler10.png[Defining a handler in Eclipse 4,pdfwidth=60%]
+image::handler10.png[Defining a handler in Eclipse 4]
 		
 
 	
@@ -259,7 +259,7 @@ image::menu04.png[pdfwidth=60%]
 			menu.
 		
 		
-image::commands20.png" scale="50[Creating a menu,pdfwidth=60%]
+image::commands20.png" scale="50[Creating a menu]
 		
 		
 			Add a
@@ -274,7 +274,7 @@ image::commands20.png" scale="50[Creating a menu,pdfwidth=60%]
 			attribute.
 		
 		
-image::commands30.png" scale="30[Adding a menu item to the menu,pdfwidth=60%]
+image::commands30.png" scale="30[Adding a menu item to the menu]
 		
 
 		

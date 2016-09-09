@@ -46,7 +46,7 @@ tasks, the Java editor opens
 again and
 the TODO comment is selected.
 
-image::todo10.png[,pdfwidth=60%]
+image::todo10.png[]
 
 TIP:The _Task_ view shows only the tasks from the currently open projects. 
 
@@ -55,7 +55,7 @@ TIP:The _Task_ view shows only the tasks from the currently open projects.
 You can also define your own tags in the Eclipse preferences via
 menu:Window[Preferences > Java > Compiler > Task Tags].
 
-image::tasktags10.png[Defining new tasks tags,pdfwidth=60%]
+image::tasktags10.png[Defining new tasks tags]
 
 === Mylyn
 

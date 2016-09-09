@@ -22,5 +22,5 @@ Use the btn:[Add...] button in the _Required Plug-ins_ section to add the follow
 
 The result should be similar to the following screenshot.
 
-image::training_product60.png[Plug-in Dependencies,pdfwidth=60%]
+image::training_product60.png[Plug-in Dependencies]
 

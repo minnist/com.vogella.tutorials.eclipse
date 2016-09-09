@@ -16,7 +16,7 @@
 		
 
 		
-image::setbreakpoint10.gif[Setting a breakpoint,pdfwidth=60%]
+image::setbreakpoint10.gif[Setting a breakpoint]
 		
 		
 			For example in the following screenshot we set a breakpoint on
@@ -26,7 +26,7 @@ image::setbreakpoint10.gif[Setting a breakpoint,pdfwidth=60%]
 			.
 		
 		
-image::setbreakpoint12.png[Showing a defined breakpoint,pdfwidth=60%]
+image::setbreakpoint12.png[Showing a defined breakpoint]
 		
 
 
@@ -43,7 +43,7 @@ image::setbreakpoint12.png[Showing a defined breakpoint,pdfwidth=60%]
 		
 
 		
-image::debugstart10.gif[Start the debugger,pdfwidth=60%]
+image::debugstart10.gif[Start the debugger]
 		
 		
 			After you have started the application once via the context menu, you
@@ -53,7 +53,7 @@ image::debugstart10.gif[Start the debugger,pdfwidth=60%]
 			button in the Eclipse toolbar.
 		
 		
-image::debugtoolbar10.png[Debug button,pdfwidth=60%]
+image::debugtoolbar10.png[Debug button]
 		
 
 		
@@ -76,7 +76,7 @@ image::debugtoolbar10.png[Debug button,pdfwidth=60%]
 			in the corresponding dialog.
 		
 		
-image::debugstart08.png[,pdfwidth=60%]
+image::debugstart08.png[]
 		
 		
 			Afterwards Eclipse opens this
@@ -87,7 +87,7 @@ image::debugstart08.png[,pdfwidth=60%]
 
 		
 		
-image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
+image::debugstart20.gif[Switch to perspective]
 		
 	
 
@@ -174,7 +174,7 @@ image::debugstart20.gif[Switch to perspective,pdfwidth=60%]
 		
 
 		
-image::debugstart30.gif" scale="80[Debug Shortcuts,pdfwidth=60%]
+image::debugstart30.gif" scale="80[Debug Shortcuts]
 		
 		
 			The call stack shows the parts of the program which are currently
@@ -185,7 +185,7 @@ image::debugstart30.gif" scale="80[Debug Shortcuts,pdfwidth=60%]
 			.
 		
 		
-image::stack10.gif" scale="50[Showing the stack view,pdfwidth=60%]
+image::stack10.gif" scale="50[Showing the stack view]
 		
 	
 
@@ -218,7 +218,7 @@ image::stack10.gif" scale="50[Showing the stack view,pdfwidth=60%]
 			toolbar. These options are depicted in the following screenshot.
 		
 		
-image::breakpointview10.png[Breakpoint view,pdfwidth=60%]
+image::breakpointview10.png[Breakpoint view]
 		
 		
 			If you want to deactivate all your breakpoints you
@@ -230,7 +230,7 @@ image::breakpointview10.png[Breakpoint view,pdfwidth=60%]
 			button is highlighted in the following screenshot.
 		
 		
-image::skipbreakpoints10.gif[De-activating all breakpoints,pdfwidth=60%]
+image::skipbreakpoints10.gif[De-activating all breakpoints]
 		
 	
 
@@ -254,11 +254,11 @@ image::skipbreakpoints10.gif[De-activating all breakpoints,pdfwidth=60%]
 
 
 		
-image::variables10.gif" scale="50[Variables View,pdfwidth=60%]
+image::variables10.gif" scale="50[Variables View]
 		
 		 Use the drop-down menu to display static variables.
 		
-image::variables20.gif[Drop-down menu for static variables,pdfwidth=60%]
+image::variables20.gif[Drop-down menu for static variables]
 		
 
 		
@@ -276,7 +276,7 @@ image::variables20.gif[Drop-down menu for static variables,pdfwidth=60%]
 			.
 		
 		
-image::variables30.gif[Showing the actual type of the variables,pdfwidth=60%]
+image::variables30.gif[Showing the actual type of the variables]
 		
 	
 
@@ -293,7 +293,7 @@ image::variables30.gif[Showing the actual type of the variables,pdfwidth=60%]
 		
 		
 image::variablesview_change10.png"
-						scale="40[Changing the value of a variable,pdfwidth=60%]
+						scale="40[Changing the value of a variable]
 		
 	
 
@@ -332,7 +332,7 @@ image::variablesview_change10.png"
 		
 
 		
-image::variables40.gif[New Detail Formater Screenshot,pdfwidth=60%]
+image::variables40.gif[New Detail Formater Screenshot]
 		
 
 		
@@ -344,7 +344,7 @@ image::variables40.gif[New Detail Formater Screenshot,pdfwidth=60%]
 		
 
 		
-image::variables50.gif[Detailled formater example,pdfwidth=60%]
+image::variables50.gif[Detailled formater example]
 		
 
 	

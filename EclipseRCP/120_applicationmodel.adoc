@@ -59,7 +59,7 @@ This class provides the behavior of the part.
 The corresponding object is created by the Eclipse framework.
 Using the house/rooms metaphor from earlier, the class is responsible for defining the furnishings, the layout of the room and how the interactive objects behave.
 
-image::classuri10.png[,pdfwidth=60%]
+image::classuri10.png[]
 
 An example for a static resource reference is the the _Icon URI_ attribute of a part.
 This attribute can point to an icon that is used for the part.

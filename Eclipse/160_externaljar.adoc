@@ -18,7 +18,7 @@ your project and selecting
 menu:New[Folder]
 .
 
-image::jar10.png[Creating a new folder,pdfwidth=60%]
+image::jar10.png[Creating a new folder]
 
 From the menu select
 menu:File[Import > General > File System]
@@ -54,7 +54,7 @@ _junit-4.4.jar_
 file
 had been added to the project.
 
-image::externaljars10.gif[Adding a jar to the current project,pdfwidth=60%]
+image::externaljars10.gif[Adding a jar to the current project]
 
 After adding it to the classpath, Eclipse allows you to use the
 classes
@@ -137,7 +137,7 @@ typically called
 _src.zip_
 .
 
-image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar,pdfwidth=60%]
+image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar]
 
 === Add Javadoc for a JAR
  
@@ -163,5 +163,5 @@ button.
 
 Enter the location to the file which contains the Javadoc.
 
-image::javadoc10.png[Enter the location to the Javadoc file for a jar file,pdfwidth=60%]
+image::javadoc10.png[Enter the location to the Javadoc file for a jar file]
 	

@@ -165,7 +165,7 @@
 			associated with this shortcut.
 		
 		
-image::keybindings20.png" scale="30[How to add the BindingContext Entries,pdfwidth=60%]
+image::keybindings20.png" scale="30[How to add the BindingContext Entries]
 		
 		The control keys are different for each platform, e.g.,
 			on the
@@ -280,7 +280,7 @@ image::keybindings20.png" scale="30[How to add the BindingContext Entries,pdfwid
 		
 		
 image::bindingcontextview10.png"
-						scale="40[BindingContent defined specific for a part,pdfwidth=60%]
+						scale="40[BindingContent defined specific for a part]
 		
 		Key bindings assigned to a part are valid in addition to the key
 			bindings provided by the

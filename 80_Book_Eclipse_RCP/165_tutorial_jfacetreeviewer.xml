@@ -49,7 +49,7 @@ include::res/viewer/TagOverviewPart.java[]
 		The result should look similar to the following screenshot.
 		
 		
-image::filteredtree_tutorial.png" scale="40[Result Part after the implementation of the JFace Table,pdfwidth=60%]
+image::filteredtree_tutorial.png" scale="40[Result Part after the implementation of the JFace Table]
 		
 		TIP:
 			The "Load Data" button is later used, once you implement the

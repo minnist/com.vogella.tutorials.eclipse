@@ -9,7 +9,7 @@
 			your repository and select the appropriated operation.
 		
 		
-image::pullpush10.png[Pull push and fetch dialog,pdfwidth=60%]
+image::pullpush10.png[Pull push and fetch dialog]
 		
 
 	
@@ -24,7 +24,7 @@ image::pullpush10.png[Pull push and fetch dialog,pdfwidth=60%]
 			available via right-click on your project or file.
 		
 		
-image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
+image::gitcontextmenu10.png[Context menu]
 		
 		TIP:
 			The Team menu is also available from the context menu of an
@@ -107,7 +107,7 @@ image::gitcontextmenu10.png[Context menu,pdfwidth=60%]
 		
 
 		
-image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
+image::gitcontextmenu20.png[Context menu]
 		
 
 		<itemizedlist>
@@ -183,7 +183,7 @@ image::gitcontextmenu20.png[Context menu,pdfwidth=60%]
 			screenshot.
 		
 		
-image::egitamend10.png[Git amend in the Git Staging view,pdfwidth=60%]
+image::egitamend10.png[Git amend in the Git Staging view]
 		
 	
 

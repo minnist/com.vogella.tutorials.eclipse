@@ -62,7 +62,7 @@ include::res/perspectives/PerspectiveSwitchHandler.java[]
 		
 
 		
-image::perspective_switchermenu10.png[Perspective switcher menu,pdfwidth=60%]
+image::perspective_switchermenu10.png[Perspective switcher menu]
 		
 
 		Test if you can switch between your perspectives with your new

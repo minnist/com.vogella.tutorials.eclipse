@@ -38,7 +38,7 @@ By defining a common set of attributes via such a blueprint it is possible to cr
 Via the _Multiple_ of the part descriptor you configure if multiple instances of this part can be created or not.
 Such a model element is depicted in the following screenshot.
 
-image::partdescripter_service10.png" scale="35[Adding a PartDescripter to the model,pdfwidth=60%]
+image::partdescripter_service10.png" scale="35[Adding a PartDescripter to the model]
 
 === Example: Part descriptors and creating parts dynamically
 
@@ -47,7 +47,7 @@ If you define a part descriptor in your application model, you can use the `EPar
 The following screenshot shows the definition of a part descriptor in the application model.
 As the _Multiple_ parameter is set, it is possible to create several parts based on this template.
 
-image::partdescripter_service10.png[Adding a PartDescripter to the model,pdfwidth=60%]
+image::partdescripter_service10.png[Adding a PartDescripter to the model]
 
 The part service allows you to create a new part based on this template.
 This is demonstrated by the following example code.

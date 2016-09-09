@@ -112,9 +112,9 @@ based on
 `syso`
 for you.
 		
-image::contentassists10.png[Content Assists Input,pdfwidth=60%]
+image::contentassists10.png[Content Assists Input]
 		
-image::contentassists20.png[Content Assists Result,pdfwidth=60%]
+image::contentassists20.png[Content Assists Result]
 		
 === Example implementation of TodoProviderTest
 		

@@ -17,14 +17,14 @@ you.
 To create a template for this, select the menu
 menu:Window[Preferences > Java > Editor >  Templates].
 		
-image::templates10.gif[Maintaining code templates,pdfwidth=60%]
+image::templates10.gif[Maintaining code templates]
 		
 Press the
 _New_
 button. Create the template shown in the following
 screenshot.
 		
-image::templates30.gif[Creating a new code template,pdfwidth=60%]
+image::templates30.gif[Creating a new code template]
 		
 `${cursor}`
 indicates
@@ -47,7 +47,7 @@ system will allow you to replace your keyword with
 your
 template.
 		
-image::templates40.gif[Using code templates,pdfwidth=60%]
+image::templates40.gif[Using code templates]
 
 === Code Formatter
 
@@ -70,7 +70,7 @@ button to create a new set of formatting rules or press the
 _Edit_
 button to adjust an exising profile.
 		
-image::codeformatter10.png[Code formatter,pdfwidth=60%]
+image::codeformatter10.png[Code formatter]
 
 === Code Templates
 
@@ -88,5 +88,5 @@ _Edit_
 button to edit this template and to remove the "todo"
 comment.
 		
-image::codetemplates10.png[Removing the todos from the Java code templates,pdfwidth=60%]
+image::codetemplates10.png[Removing the todos from the Java code templates]
 		

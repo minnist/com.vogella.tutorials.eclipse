@@ -1,0 +1,11 @@
+== Tutorial: Replace persistence of the application model
+	
+Create a plain OSGi bundle without
+_Activator_
+called
+_com.example.e4.rcp.todo.appmodelprovider_.
+	
+Add the
+`org.eclipse.e4.ui.workbench`
+plug-in as dependency to this new plug-in.
+	

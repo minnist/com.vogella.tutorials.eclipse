@@ -175,7 +175,7 @@ include::res/service/LabelAssign.java[]
 		The result might look like the following.
 
 		
-image::imageservice.png[Image on Label,pdfwidth=60%]
+image::imageservice.png[Image on Label]
 		
 		WARNING:
 			As you added plug-ins to your product via the feature,

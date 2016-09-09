@@ -43,7 +43,7 @@ to start the download. The links which are displayed depend on your
 operating system.
 	
 	
-image::eclipsedownload10.png[Eclipse Download page,pdfwidth=60%]
+image::eclipsedownload10.png[Eclipse Download page]
 	
 The download is a zip file, which is a compressed archive of
 multiple

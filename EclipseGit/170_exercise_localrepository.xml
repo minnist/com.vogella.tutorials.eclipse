@@ -27,7 +27,7 @@
 			option.
 		
 		
-image::egit_gitinit10.png[Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit10.png[Git init with Eclipse Git]
 		
 
 		
@@ -37,7 +37,7 @@ image::egit_gitinit10.png[Git init with Eclipse Git,pdfwidth=60%]
 			folder of the users home directory.
 		
 		
-image::egit_gitinit20.png[Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit20.png[Git init with Eclipse Git]
 		
 		
 			If you press the
@@ -51,7 +51,7 @@ image::egit_gitinit20.png[Git init with Eclipse Git,pdfwidth=60%]
 		
 
 		
-image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
+image::egit_gitinit30.png" scale="50[Git init with Eclipse Git]
 		
 
 	
@@ -151,7 +151,7 @@ image::egit_gitinit30.png" scale="50[Git init with Eclipse Git,pdfwidth=60%]
 		
 
 		
-image::gitfirst02.png[Git repository creation wizard - Step 1,pdfwidth=60%]
+image::gitfirst02.png[Git repository creation wizard - Step 1]
 		
 		
 			On the next dialog select your existing Git repository from the
@@ -160,7 +160,7 @@ image::gitfirst02.png[Git repository creation wizard - Step 1,pdfwidth=60%]
 			button.
 		
 		
-image::gitfirst10.png[Git repository creation wizard - Step 1,pdfwidth=60%]
+image::gitfirst10.png[Git repository creation wizard - Step 1]
 		
 
 		
@@ -178,7 +178,7 @@ image::gitfirst10.png[Git repository creation wizard - Step 1,pdfwidth=60%]
 			the files of the working tree.
 		
 		
-image::gitfirst40.png[Git repository creation result,pdfwidth=60%]
+image::gitfirst40.png[Git repository creation result]
 		
 	
 
@@ -193,7 +193,7 @@ image::gitfirst40.png[Git repository creation result,pdfwidth=60%]
 			area, write a meaningful commit message and press the commit button.
 		
 		
-image::gitstaging10.png[Initial commit,pdfwidth=60%]
+image::gitstaging10.png[Initial commit]
 		
 
 	
@@ -239,7 +239,7 @@ include::res/change/GitTest.java[]
 			area, write a meaningful commit message and press the commit button.
 		
 		
-image::gitstaging30.png[Git Staging View - Add to staging area,pdfwidth=60%]
+image::gitstaging30.png[Git Staging View - Add to staging area]
 		
 
 		

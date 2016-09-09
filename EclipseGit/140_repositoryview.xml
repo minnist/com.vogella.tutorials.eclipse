@@ -18,7 +18,7 @@
 		
 
 		
-image::showgitrepositoryview10.png[Show Git Respositories View,pdfwidth=60%]
+image::showgitrepositoryview10.png[Show Git Respositories View]
 		
 		The toolbar entries allow you to add an existing local Git
 			repository
@@ -28,7 +28,7 @@ image::showgitrepositoryview10.png[Show Git Respositories View,pdfwidth=60%]
 			repository.
 		
 		
-image::repositoryview_toolbar10.png" scale="50[Git Repositories view toolbar,pdfwidth=60%]
+image::repositoryview_toolbar10.png" scale="50[Git Repositories view toolbar]
 		
 
 	
@@ -45,7 +45,7 @@ image::repositoryview_toolbar10.png" scale="50[Git Repositories view toolbar,pdf
 		
 
 		
-image::gitrepositoryview10.png" scale="50[Git repository view,pdfwidth=60%]
+image::gitrepositoryview10.png" scale="50[Git repository view]
 		
 		
 			A right-click (context menu) on an element in the
@@ -65,7 +65,7 @@ image::gitrepositoryview20.png[]
 
 				
 				<textobject>
-					<phrase>Git repository view context menu,pdfwidth=60%]
+					<phrase>Git repository view context menu]
 		
 
 	
@@ -81,10 +81,10 @@ image::gitrepositoryview20.png[]
 			menu entry.
 		
 		
-image::opengit_commit08.png[Open Git Commit dialog,pdfwidth=60%]
+image::opengit_commit08.png[Open Git Commit dialog]
 		
 		
-image::opengit_commit10.png[Open Git Commit dialog,pdfwidth=60%]
+image::opengit_commit10.png[Open Git Commit dialog]
 		
 	
 
@@ -96,7 +96,7 @@ image::opengit_commit10.png[Open Git Commit dialog,pdfwidth=60%]
 			reveal it in the history view.
 		
 		
-image::opengit_commit20.png" scale="35[Possible operation from a Git commit,pdfwidth=60%]
+image::opengit_commit20.png" scale="35[Possible operation from a Git commit]
 		
 	
 

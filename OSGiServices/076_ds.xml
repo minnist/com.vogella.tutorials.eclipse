@@ -88,7 +88,7 @@
 		
 		
 image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
-					,pdfwidth=60%]
+					]
 		
 		With this setting activated in the Eclipse IDE, the IDE will generate the require meta data (component file,
 			manifest reference, lazy flag, etc.) automatically.
@@ -129,7 +129,7 @@ image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation process
 			section.
 		
 		
-image::ds30.png[Defining the service interface which is provided,pdfwidth=60%]
+image::ds30.png[Defining the service interface which is provided]
 		
 
 		

@@ -23,7 +23,7 @@ Enable this by selecting the corresponding button in the
 _Package Explorer_
 view.
 		
-image::linkwitheditor10.png[Editor,pdfwidth=60%]
+image::linkwitheditor10.png[Editor]
 	
 === Java editor settings
 		
@@ -46,7 +46,7 @@ image::tutorial_eclipseidepreferences10.png[Setting the positioning of the Eclip
 In the Eclipse preferences activate bracket highlighting for
 _Enclosing brackets_.
 		
-image::jdtbrackets10.png[Bracket highlighting,pdfwidth=60%]
+image::jdtbrackets10.png[Bracket highlighting]
 		
 === Launch configuration
 		
@@ -76,7 +76,7 @@ button and add the
 packages as depicted in the following screenshot.
 		
 		
-image::e4_typefilters.png[Filtering AWT and Swing packages,pdfwidth=60%]
+image::e4_typefilters.png[Filtering AWT and Swing packages]
 	
 === Activate Save Actions
 		

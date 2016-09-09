@@ -49,7 +49,7 @@
 		
 		
 image::lauchconfiguration20.png[Shows the run configuration, highlighting the location
-						setting,pdfwidth=60%]
+						setting]
 		
 
 	
@@ -100,7 +100,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 			the application is running.
 		
 		
-			image::launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
+			image::launchconfiguration40.png[-consoleLog in the run configuration]
 		
 		TIP:
 			

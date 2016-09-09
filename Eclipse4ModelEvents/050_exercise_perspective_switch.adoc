@@ -8,7 +8,7 @@ In this exercise we will change the window title according to the active perspec
 
 In order to have a running example with different perspectives you should clone the e4-perspective-switcher git@github.com:vogellacompany/e4-perspective-switcher.git into a new workspace.
 
-image::./images/clone_e4_perspective_switcher.png[Clone the ﻿e4-perspective-switcher,pdfwidth=60%]
+image::./images/clone_e4_perspective_switcher.png[Clone the ﻿e4-perspective-switcher]
 
 After you cloned the e4-perspective-switcher, you should have 3 projects in your workspace:
 
@@ -21,7 +21,7 @@ In the _com.sample.application_ project you can find the _com.sample.application
 === Add a new model add-on
 Now we add a new add-on to the application model, which will be used to listen for the perspective change event.
 
-image::./images/perspective_switch_addon.png[Perspective switch addon,pdfwidth=60%]
+image::./images/perspective_switch_addon.png[Perspective switch addon]
 
 The implementation of the `PerspectiveSwitchAddon` looks like this:
 
@@ -36,6 +36,6 @@ Start your application again and make sure that you used the _-clearPersistedSta
 
 The result should look similar to this one, where you can see that the window title has been changed to the name of the currently selected perspective:
 
-image::./images/perspective_switch_addon_result_app.png[Perspective switch addon result,pdfwidth=60%]
+image::./images/perspective_switch_addon_result_app.png[Perspective switch addon result]
 
 

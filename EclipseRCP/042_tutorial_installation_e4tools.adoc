@@ -6,7 +6,7 @@ The e4 tools provide the tools to develop Eclipse 4 RCP applications.
 These tools provide wizards to create Eclipse application artifacts and an application model editor. 
 They can be installed into the Eclipse SDK via the Eclipse default update site.
 
-image::installe4tools10.png[Install the Eclipse 4 tooling,pdfwidth=60%]
+image::installe4tools10.png[Install the Eclipse 4 tooling]
 
 Install the tools and restart your Eclipse IDE after the installation.
 
@@ -22,7 +22,7 @@ If you click on a _Build Name_ link, you also find the URL for the update site.
 The following screenshots demonstrate this for a particular build of the e4 tools. 
 Note, that this website might change over time.
 
-image::officialupdatesite10.png[Official update site for e4 tools part 1,pdfwidth=60%]
+image::officialupdatesite10.png[Official update site for e4 tools part 1]
 
-image::officialupdatesite20.png[Official update site for e4 tools part 2,pdfwidth=60%]
+image::officialupdatesite20.png[Official update site for e4 tools part 2]
 

@@ -10,7 +10,7 @@ and do them all at once.
 
 The result and also how to use the `PaintListenerCanvas` sample below is shown in the screenshot:
 
-image::PaintListenerCanvas.png[`PaintListenerCanvas` sample,pdfwidth=60%]
+image::PaintListenerCanvas.png[`PaintListenerCanvas` sample]
 
 [source,java]
 ----

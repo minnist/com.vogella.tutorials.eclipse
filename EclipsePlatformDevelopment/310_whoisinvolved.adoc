@@ -9,7 +9,7 @@ For example, the information of the platform
 project is available under https://projects.eclipse.org/projects/eclipse/who[Eclipse platform project page].
 
 
-image::eclipseplatformcontributors.png" scale="60[Screenshots of the Eclipse platform contributors,pdfwidth=60%]
+image::eclipseplatformcontributors.png" scale="60[Screenshots of the Eclipse platform contributors]
 
 [TIP]
 ====
@@ -26,13 +26,13 @@ Since the core team of an individual project is relatively small, contributors c
 For example the following screenshot shows a snapshot of the activities of the https://projects.eclipse.org/projects/eclipse.platform.ui/who[Eclipse platform.ui] project. 
 
 
-image::platformcontributions20.png[Acivities in the Eclipse platform UI project,pdfwidth=60%]
+image::platformcontributions20.png[Acivities in the Eclipse platform UI project]
 
 
 An alternative view gives the new dashboard. 
 For example the following screeenshot shows the http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui[Platform UI] dashboard link.
 
-image::dashboard.png" scale="30[Platform.ui dashboard,pdfwidth=60%]
+image::dashboard.png" scale="30[Platform.ui dashboard]
 
 
 

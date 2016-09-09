@@ -26,7 +26,7 @@ The highest level in this hierarchy is the application context.
 
 A sample context hierarchy is depicted in the following picture.
 
-image::contexthierarchy03.png[Context hierarchy,pdfwidth=60%]
+image::contexthierarchy03.png[Context hierarchy]
 
 Objects can be placed at different levels in the context hierarchy.
 This allows that the same key points to different objects in the hierarchy.

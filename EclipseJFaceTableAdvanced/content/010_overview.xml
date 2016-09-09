@@ -245,7 +245,7 @@ include::res/snippets/style.java[]
 		
 		
 image::styledcelllabelprovider10.png"
-						scale="60[Screenshot of a styledLabelProvider,pdfwidth=60%]
+						scale="60[Screenshot of a styledLabelProvider]
 		
 		
 			The
@@ -263,7 +263,7 @@ include::res/snippets/OwnerDrawLabelProvider.java[]
 ----
 		
 		
-image::ownerdrawviewer10.png[OwnerDrawLabelProvider example,pdfwidth=60%]
+image::ownerdrawviewer10.png[OwnerDrawLabelProvider example]
 		
 	
 

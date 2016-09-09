@@ -7,7 +7,7 @@ The aim is to apply custom styling to the custom widget, called `UserProfileWidg
 You will define a new  `UserProfileWidget` CSS selector and a  new `header-background-color` CSS property.
 The result may look like that, where the user profile widget is embedded in a `Tooltip`:
 
-image::user_profile_widget.png[UserProfileWidget sample,pdfwidth=60%]
+image::user_profile_widget.png[UserProfileWidget sample]
 
 === Add dependencies
 Add the `org.eclipse.e4.ui.css.core` and the `org.eclipse.e4.ui.css.swt` plug-ins as dependency to your application. 
@@ -43,11 +43,11 @@ Afterwards you should set a certain header-text, an image and a description-text
 Select the _Extensions_ tab in the editor for the _plugin.xml_ file and add the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point. 
 You create an extension in the _Extensions_ tab by pressing the _Add..._ button. 
 
-image::theme06.png[Add button in extension points,pdfwidth=60%]
+image::theme06.png[Add button in extension points]
 
 Select the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point and press the _Finish_ button. 
 
-image::propertyHandler_extension.png[Selecting,pdfwidth=60%]
+image::propertyHandler_extension.png[Selecting]
 
 image::propertyHandler_handler_definition.png[pdfwidth=60%]
 

@@ -44,7 +44,7 @@ In the sub-menu you see the available editors. The available
 editors
 depend on your Eclipse installation.
 		
-image::openeditor27.png[Open With,pdfwidth=60%]
+image::openeditor27.png[Open With]
 
 Eclipse will remember the last
 _editor_

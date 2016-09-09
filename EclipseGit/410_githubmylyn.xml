@@ -28,7 +28,7 @@
 		
 
 		
-image::github_mylyn10.png[Install Mylyn GitHub connector,pdfwidth=60%]
+image::github_mylyn10.png[Install Mylyn GitHub connector]
 		
 	
 
@@ -40,7 +40,7 @@ image::github_mylyn10.png[Install Mylyn GitHub connector,pdfwidth=60%]
 		
 
 		
-image::github_import08.png[Importing tasks into Eclipse,pdfwidth=60%]
+image::github_import08.png[Importing tasks into Eclipse]
 		
 	
 
@@ -53,19 +53,19 @@ image::github_import08.png[Importing tasks into Eclipse,pdfwidth=60%]
 			view. This is demonstrated via the following screenshots.
 		
 		
-image::githubpullrequests10.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+image::githubpullrequests10.png[Integrating Gitpull requests into Eclipse]
 		
 		
-image::githubpullrequests20.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+image::githubpullrequests20.png[Integrating Gitpull requests into Eclipse]
 		
 		
-image::githubpullrequests30.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+image::githubpullrequests30.png[Integrating Gitpull requests into Eclipse]
 		
 		
-image::githubpullrequests40.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+image::githubpullrequests40.png[Integrating Gitpull requests into Eclipse]
 		
 		
-image::githubpullrequests50.png[Integrating Gitpull requests into Eclipse,pdfwidth=60%]
+image::githubpullrequests50.png[Integrating Gitpull requests into Eclipse]
 		
 		NOTE:
 			Unfortunately the GitHub connect does currently not support
@@ -81,7 +81,7 @@ image::githubpullrequests50.png[Integrating Gitpull requests into Eclipse,pdfwid
 		
 
 		
-image::github_import10.png[Importing projects from GitHub into EclipseF,pdfwidth=60%]
+image::github_import10.png[Importing projects from GitHub into EclipseF]
 		
 	
 

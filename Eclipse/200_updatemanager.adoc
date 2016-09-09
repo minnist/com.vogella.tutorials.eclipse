@@ -65,7 +65,7 @@ To install a new functionality, select
 menu:Help[Install New Software...]
 .
 
-image::UpdateManager08.png[Selecting an update site in the update manager,pdfwidth=60%]
+image::UpdateManager08.png[Selecting an update site in the update manager]
 
 From the
 _Work with_
@@ -100,7 +100,7 @@ the available components. Check the components which you want
 to
 install.
 
-image::UpdateManager10.png[Selecting an update site in the update manager,pdfwidth=60%]
+image::UpdateManager10.png[Selecting an update site in the update manager]
 
 If you can't find a certain component, uncheck the
 _Group

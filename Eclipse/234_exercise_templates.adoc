@@ -4,7 +4,7 @@
 
 Create a template which creates the following block.
 
-image::tryfinally10.png[Try catch finally template,pdfwidth=60%]
+image::tryfinally10.png[Try catch finally template]
 
 Place the cursor after the first bracket after the
 `try`

@@ -15,7 +15,7 @@ Click on the _Developer resources_ tab to see all Git repositories of the projec
 The following screenshot depicts the website for the https://projects.eclipse.org/projects/eclipse.jdt.ui[JDT UI project]. 
 		
 		
-image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage,pdfwidth=60%]
+image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage]
 
 
 === Example: Finding the Git repositories for the Eclipse Platform UI project
@@ -24,13 +24,13 @@ The Eclipse platform UI project is responsible for the user interface, runtime, 
 In this example search for "Platform UI".
 		
 		
-image::eclipsegitrepos10.png" scale="30[Eclipse Platform UI search result,pdfwidth=60%]
+image::eclipsegitrepos10.png" scale="30[Eclipse Platform UI search result]
 		
 		
 Click on the _Learn more_ link and select the _Developer resources_ tab.
 		
 		
-image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`,pdfwidth=60%]
+image::eclipsegitrepos20.png[Eclipse Platform UI developer resources`]
 		
 
 === The Eclipse dashboard
@@ -44,11 +44,11 @@ The dashboard allows you to drill down as depicted in the following screenshot.
 		
 NOTE: The URL and appearance may still change over time. See https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792[Bug 405792] for details.
 		
-image::eclipsedash10.png" scale="30[Project members dash,pdfwidth=60%]
+image::eclipsedash10.png" scale="30[Project members dash]
 		
 
 You can select in the top the sub-project to see. 
 For example the reporting for the Eclipse project is depicted in the following screenshot.
 		
-image::eclipsedash20.png" scale="30[Eclipse project dashboard,pdfwidth=60%]
+image::eclipsedash20.png" scale="30[Eclipse project dashboard]
 		

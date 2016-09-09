@@ -15,7 +15,7 @@ To review and edit your run configurations select menu:Run[Run Configurations...
 
 On the _Main_ tab in the field _Location_, you specify where the Eclipse IDE creates the files necessary to start your Eclipse based application.
 
-image::lauchconfiguration20.png[Shows the run configuration, highlighting the location setting,pdfwidth=60%]
+image::lauchconfiguration20.png[Shows the run configuration, highlighting the location setting]
 
 === Run arguments
 
@@ -30,7 +30,7 @@ The run configuration allows you to add additional start arguments for your appl
 By default Eclipse includes already several parameters, e.g. parameters for _-os_,_-ws_
 and _-arch_ to specify the architecture on which the application is running.
 
-image::launchconfiguration40.png[-consoleLog in the run configuration,pdfwidth=60%]
+image::launchconfiguration40.png[-consoleLog in the run configuration]
 
 TIP:To pass system properties to your Eclipse application, you can add launch parameters using the -D switch.
 As example, if you add the argument _-Dmy.product.loglevel=INFO_, you can get the "INFO" value with `System.getProperties("my.product.loglevel")`.

@@ -44,7 +44,7 @@ http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html">Defining
 			Eclipse IDE.
 		
 		
-image::debug_model_ui.png[Debug model in the UI,pdfwidth=60%]
+image::debug_model_ui.png[Debug model in the UI]
 		
 		
 			Every debug model element is derived from

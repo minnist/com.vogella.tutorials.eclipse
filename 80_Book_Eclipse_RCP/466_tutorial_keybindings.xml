@@ -12,7 +12,7 @@
 		
 		
 image::exercise_keybindings10.png"
-						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries]
 		
 		
 			Afterwards add the following sub-entries:
@@ -47,7 +47,7 @@ image::exercise_keybindings10.png"
 		
 		
 image::exercise_keybindings20.png"
-						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries]
 		
 		WARNING:
 			The name attribute of a binding context entry is not allowed to
@@ -70,12 +70,12 @@ image::exercise_keybindings20.png"
 
 		
 image::tutorial_bindingtable10.png"
-						scale="35[How to add the Binding Context Entries,pdfwidth=60%]
+						scale="35[How to add the Binding Context Entries]
 		
 
 		
 image::tutorial_bindingtable20.png"
-						scale="40[How to add the Binding Context Entries,pdfwidth=60%]
+						scale="40[How to add the Binding Context Entries]
 		
 		Run your program and test it.
 	

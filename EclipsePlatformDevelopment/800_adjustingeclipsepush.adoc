@@ -40,7 +40,7 @@ Git
 repository.
 
 
-image::eclipsegerritcontribution12.png[Gerrit push configuration,pdfwidth=60%]
+image::eclipsegerritcontribution12.png[Gerrit push configuration]
 
 If you want to use HTTPS to push to the Gerrit server, you have
 to
@@ -54,7 +54,7 @@ push to an Eclipse Git repository as depicted in the following
 screenshot.
 
 
-image::eclipse_gerrithttps10.png[Gerrit push configuration,pdfwidth=60%]
+image::eclipse_gerrithttps10.png[Gerrit push configuration]
 
 
 	
@@ -96,7 +96,7 @@ repository in this screenshot is not configured for Gerrit.
 
 
 
-image::eclipsegerritcontribution14.png[Gerrit Eclipse configuration,pdfwidth=60%]
+image::eclipsegerritcontribution14.png[Gerrit Eclipse configuration]
 
 
 If you have to configure the push URL manually, select your remote repository in the
@@ -108,7 +108,7 @@ _Gerrit configuration_
 
 
 
-image::eclipsegerritcontribution10.png[Gerrit Eclipse configuration,pdfwidth=60%]
+image::eclipsegerritcontribution10.png[Gerrit Eclipse configuration]
 
 
 If you select the
@@ -118,7 +118,7 @@ _Gerrit Configuration..._
 the entry should look like the following screenshot.
 
 
-image::eclipsegerritcontribution12.png[Gerrit Eclipse configuration,pdfwidth=60%]
+image::eclipsegerritcontribution12.png[Gerrit Eclipse configuration]
 
 NOTE: For HTTPS access the URL is different.
 
@@ -131,7 +131,7 @@ _Properties_
 view.
 
 
-image::eclipsegerritcontribution13.png" scale="30[Gerrit Eclipse configuration,pdfwidth=60%]
+image::eclipsegerritcontribution13.png" scale="30[Gerrit Eclipse configuration]
 
 
 

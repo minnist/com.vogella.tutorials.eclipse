@@ -28,7 +28,7 @@ image::extensionpoint_projectwizard10.png[]
 				
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
-						extension,pdfwidth=60%]
+						extension]
 		
 		
 image::extensionpoint_projectwizard20.png[]
@@ -36,7 +36,7 @@ image::extensionpoint_projectwizard20.png[]
 				
 				<textobject>
 					<phrase>Project Wizard to create the plug-in which defines the
-						extension,pdfwidth=60%]
+						extension]
 		
 
 	
@@ -82,7 +82,7 @@ image::extensionpoint20.png[]
 
 				
 				<textobject>
-					<phrase>Define Extension Point,pdfwidth=60%]
+					<phrase>Define Extension Point]
 		
 		
 			Press the
@@ -96,7 +96,7 @@ image::extensionpoint20.png[]
 			tab.
 		
 		
-image::extensionpoint30.png[Extension Point Schema Editor,pdfwidth=60%]
+image::extensionpoint30.png[Extension Point Schema Editor]
 		
 		
 			Add attributes
@@ -107,7 +107,7 @@ image::extensionpoint30.png[Extension Point Schema Editor,pdfwidth=60%]
 			button. Give the new element the name "client".
 		
 		
-image::extensionpoint40.png[Add Elements to Extension,pdfwidth=60%]
+image::extensionpoint40.png[Add Elements to Extension]
 		
 		
 			Select the "client" element and press
@@ -119,7 +119,7 @@ image::extensionpoint40.png[Add Elements to Extension,pdfwidth=60%]
 			as interface name
 		
 		
-image::extensionpoint50.png" scale="35[Add Attribute to Extension,pdfwidth=60%]
+image::extensionpoint50.png" scale="35[Add Attribute to Extension]
 		
 		
 			This interface doesn't exit yet. Press on the

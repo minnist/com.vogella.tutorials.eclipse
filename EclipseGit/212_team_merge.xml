@@ -17,10 +17,10 @@
 			to start the merge dialog.
 		
 		
-image::egit_mergeoperation10.png" scale="40[Team Merge menu,pdfwidth=60%]
+image::egit_mergeoperation10.png" scale="40[Team Merge menu]
 		
 		
-image::egit_mergeoperation20.png" scale="40[Team Merge menu,pdfwidth=60%]
+image::egit_mergeoperation20.png" scale="40[Team Merge menu]
 		
 
 
@@ -77,7 +77,7 @@ image::egit_mergeoperation20.png" scale="40[Team Merge menu,pdfwidth=60%]
 			on the right side.
 		
 		
-image::egitmerge08.png[Selecting the merge model,pdfwidth=60%]
+image::egitmerge08.png[Selecting the merge model]
 		
 		
 			You can manually edit the text on
@@ -86,10 +86,10 @@ image::egitmerge08.png[Selecting the merge model,pdfwidth=60%]
 			button to copy the changes from right to left.
 		
 		
-image::egitmerge10.png[Seeing merge conflicts,pdfwidth=60%]
+image::egitmerge10.png[Seeing merge conflicts]
 		
 		
-image::egitmerge20.png[Copy changes from right to left,pdfwidth=60%]
+image::egitmerge20.png[Copy changes from right to left]
 		
 		
 			Eclipse also allows to show the common ancestor of both commits to make the merge easier. Press the
@@ -98,10 +98,10 @@ image::egitmerge20.png[Copy changes from right to left,pdfwidth=60%]
 			following screenshots.
 		
 		
-image::threewaycomparemode10.png[Three way merge view in Eclipse,pdfwidth=60%]
+image::threewaycomparemode10.png[Three way merge view in Eclipse]
 		
 		
-image::threewaycomparemode20.png[Three way merge view in Eclipse,pdfwidth=60%]
+image::threewaycomparemode20.png[Three way merge view in Eclipse]
 		
 		
 			Once you have manually merged the changes, select

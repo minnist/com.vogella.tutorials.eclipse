@@ -81,7 +81,7 @@ include::res/vncserver/start.txt[]
 In the Eclipse launch configuration you can define the display which is used for the test execution.
 
 
-image::settingdisplayforunittests.png" scale="30[Setting the Display variable in Eclipse,pdfwidth=60%]
+image::settingdisplayforunittests.png" scale="30[Setting the Display variable in Eclipse]
 
 
 If you are running a Maven / Tycho build from the command line, you can export the display variable.

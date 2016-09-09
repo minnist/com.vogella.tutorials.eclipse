@@ -11,11 +11,11 @@ Most Eclipse distributions contain the _Marketplace client_ by default.
 You may need to install the _Marketplace client_ software component into Eclipse before you can use it. 
 The following screenshot shows how to install it from one of the official Eclipse update sites, via the menu:Help[Install New Software...] dialog.
 	
-image::installmpc10.png[Installing the MPC,pdfwidth=60%]
+image::installmpc10.png[Installing the MPC]
 	
 To open the Eclipse Marketplace, select menu:Help[Eclipse Marketplace...].
 	
-image::marketclient10.png[Showing the Eclipse Marketplace Client,pdfwidth=60%]
+image::marketclient10.png[Showing the Eclipse Marketplace Client]
 	
 You can use the _Find_ box to search for components. 
 Pressing the _Install_ button starts the installation process.

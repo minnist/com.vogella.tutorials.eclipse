@@ -39,7 +39,7 @@ This can be done via your registered email address and password via the top righ
 
 Afterwards select _Settings_ as highlighted in the following screenshot.
 
-image::eclipsegerritsettings10.png[Gerrit settings for Eclipse,pdfwidth=60%]
+image::eclipsegerritsettings10.png[Gerrit settings for Eclipse]
 
 You can either use SSH or HTTPS to push to Gerrit. 
 See <<eclipsegerrit_configuration_https>> for the configuration of HTTPS and <<eclipsegerrit_configuration_ssh>> for the configuration of the SSH access.
@@ -54,7 +54,7 @@ The web page of the Gerrit review system enables you to generate an HTTP passwor
 Select the _HTTP password_ in the Gerrit user settings and generate a password. 
 This setting is depicted in the following screenshot (the password is obfuscated).
 
-image::gerrit_eclipsehttps.png[Eclipse Gerrit HTTPS access,pdfwidth=60%]
+image::gerrit_eclipsehttps.png[Eclipse Gerrit HTTPS access]
 
 Take note or copy the password, as it will be needed to push your changes to the Eclipse Gerrit system. 
 In contrast to SSH, when using HTTPS you will have to enter your password for each operation with Gerrit. 
@@ -69,6 +69,6 @@ You need to upload your SSH key to the Gerrit installation so that you can push 
 Once you have created a SSH key pair, upload your public SSH key to Gerrit to be able to push to it.
 
 
-image::eclipsegerritsettings30.png[Upload SSH key,pdfwidth=60%]
+image::eclipsegerritsettings30.png[Upload SSH key]
 
 	

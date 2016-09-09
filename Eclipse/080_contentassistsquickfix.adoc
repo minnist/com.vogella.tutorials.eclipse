@@ -37,7 +37,7 @@ press
 kbd:[Ctrl+Space]
 .
 		
-image::contentassists10.gif[Content Assists,pdfwidth=60%]
+image::contentassists10.gif[Content Assists]
 
 === Quick Fix
 		
@@ -61,7 +61,7 @@ Eclipse will
 suggest creating a field or
 local variable.
 
-image::quickfix10.png[Using Quickfix Example,pdfwidth=60%]
+image::quickfix10.png[Using Quickfix Example]
 		
 _Quick Fix_
 is extremely powerful. For example, it allows you to

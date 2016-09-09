@@ -29,7 +29,7 @@
 			wizard as depicted in the following screenshot.
 		
 		
-image::createproject_in_gitrepo10.png[Create project in Git repository,pdfwidth=60%]
+image::createproject_in_gitrepo10.png[Create project in Git repository]
 		
 
 		
@@ -49,7 +49,7 @@ image::createproject_in_gitrepo10.png[Create project in Git repository,pdfwidth=
 			and select the existing Git repository.
 		
 		
-image::addprojecttogitrepo10.png[Adding a project to an existing Git repository,pdfwidth=60%]
+image::addprojecttogitrepo10.png[Adding a project to an existing Git repository]
 		
 		The Eclipse Git functionality moves the projects to the
 			repository and imports the

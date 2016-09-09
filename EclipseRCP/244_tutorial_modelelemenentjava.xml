@@ -112,13 +112,13 @@ include::res/start/TodoDetailsPart.java[]
 		
 
 		
-image::tutorial_model60.png[Finding a model class in the Application model,pdfwidth=60%]
+image::tutorial_model60.png[Finding a model class in the Application model]
 		
 		The following screenshot shows the result for the overview part.
 		
 
 		
-image::tutorial_model62.png[Finding a model class in the Application model,pdfwidth=60%]
+image::tutorial_model62.png[Finding a model class in the Application model]
 		
 	
 

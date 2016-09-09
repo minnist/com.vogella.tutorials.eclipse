@@ -8,14 +8,14 @@ The Eclipse IDE can be viewed as a special Eclipse application with the focus on
 The core components of the Eclipse IDE are depicted in the following graphic.
 The intention of the graphic is to demonstrate the general concept, the displayed relationships are not 100% accurate.
 
-image::img/architecture10.png[Important Eclipse IDE components,pdfwidth=60%]
+image::img/architecture10.png[Important Eclipse IDE components]
 
 The most important Eclipse components of this graphic are described in the next section. 
 On top of these base components, the Eclipse IDE adds additional components which are important for an IDE application, for example, the Java development tools (JDT) or version control support (EGit).
 
 An Eclipse RCP application typically uses the same base components of the Eclipse platform and adds additional application specific components as depicted in the following graphic.
 
-image::./architecture20.png[Typical components of an Eclipse RCP application,pdfwidth=60%]
+image::./architecture20.png[Typical components of an Eclipse RCP application]
 
 === Core components of the Eclipse platform
 

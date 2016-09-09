@@ -25,7 +25,7 @@ and click the
 _OK_
 button.
 		
-image::starteclipse10.png[Selecting the Workspace,pdfwidth=60%]
+image::starteclipse10.png[Selecting the Workspace]
 		
 Eclipse starts and shows the
 _Welcome_
@@ -37,13 +37,13 @@ _x_
 beside
 _Welcome_.
 		
-image::starteclipse20.png[Closing the Eclipse welcome screen,pdfwidth=60%]
+image::starteclipse20.png[Closing the Eclipse welcome screen]
 		
 After closing the welcome screen, the application
 should look
 similar to the following screenshot.
 		
-image::starteclipse30.png[Closing the Eclipse welcome screen,pdfwidth=60%]
+image::starteclipse30.png[Closing the Eclipse welcome screen]
 		
 === Appearance
 
@@ -61,5 +61,5 @@ For example you can switch to the
 _Dark_
 theme of Eclipse.
 		
-image::starteclipse40.png[Changing the theme,pdfwidth=60%]
+image::starteclipse40.png[Changing the theme]
 		

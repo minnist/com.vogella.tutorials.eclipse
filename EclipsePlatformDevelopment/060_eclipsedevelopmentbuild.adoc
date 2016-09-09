@@ -6,7 +6,7 @@ You can download the latest integration build from the http://download.eclipse.o
 This webpage is despicted in the following screenshot.
 
 
-image::download_developmentbuilds10.png[Download development builds,pdfwidth=60%]
+image::download_developmentbuilds10.png[Download development builds]
 
 
 This is sometimes necessary to test the latest features or to test a build which is later promoted to M or RC build by the Eclipse platform team.

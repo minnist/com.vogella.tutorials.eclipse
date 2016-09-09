@@ -17,7 +17,7 @@ Add a perspective stack with one perspective to your application model so that y
 Navigate to your window inside the _Application.e4xmi_ file. Select the _Controls_ node.
 Add a _Perspective Stack_ via the context menu on the _Controls_ entry as indicated in the following screenshot.
 
-image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application,pdfwidth=60%]
+image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application]
 
 TIP:Alternatively to the context menu you can also use the btn:[Add...] button on the detail page to add child elements to the selected element.
 
@@ -27,13 +27,13 @@ image::tutorial_model04.png[Adding a Perspective]
 
 Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.perspective_ value in the _ID_ field.
 
-image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application,pdfwidth=60%]
+image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application]
 
 === Add part sash and part stack containers
 
 Select _Controls_ below the newly created perspective and add a part sash container element.
 
-image::tutorial_model12.png[Add PartSashContainer,pdfwidth=60%]
+image::tutorial_model12.png[Add PartSashContainer]
 
 Change its _Orientation_ attribute to _Horizontal_ and enter into the ID field the _com.example.e4.rcp.todo.partsashcontainer.main_ value.
 

@@ -14,7 +14,7 @@ Select your project, right-click it and select the
 _Export_
 menu entry.
 		
-image::firstgany90.gif[Export wizard for Java project,pdfwidth=60%]
+image::firstgany90.gif[Export wizard for Java project]
 		
 Select
 _JAR file_
@@ -31,9 +31,9 @@ file. I named it
 `myprogram.jar`
 .
 		
-image::firstgany100.gif[Export wizard for Java project, Part II,pdfwidth=60%]
+image::firstgany100.gif[Export wizard for Java project, Part II]
 		
-image::firstgany110.gif[Export wizard for Java project, Part III,pdfwidth=60%]
+image::firstgany110.gif[Export wizard for Java project, Part III]
 		
 Press The
 _Finish_
@@ -91,5 +91,5 @@ Type the above command in the directory you used for the export
 and you see the "Hello Eclipse!" output in your
 command shell.
 		
-image::firstgany120.gif[Running application outside Eclipse,pdfwidth=60%]
+image::firstgany120.gif[Running application outside Eclipse]
 		

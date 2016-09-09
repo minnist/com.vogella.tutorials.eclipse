@@ -24,7 +24,7 @@ The _Add Change-Id_ push button allows you to include a Change-Id entry to the c
 Both buttons are highlighted in the following screenshot.
 
 
-image::eclipsegerritcontribution20.png[Eclipse Signed-off-by,pdfwidth=60%]
+image::eclipsegerritcontribution20.png[Eclipse Signed-off-by]
 
 [NOTE]
 ====

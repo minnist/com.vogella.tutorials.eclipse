@@ -74,7 +74,7 @@
 		
 
 		
-image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
+image::jface_customdialog10.png[JFace own dialog]
 		
 		
 			Several of these dialogs return the user selection, e.g.
@@ -129,7 +129,7 @@ image::jface_customdialog10.png[JFace own dialog,pdfwidth=60%]
 			following screenshot.
 		
 		
-image::errordialog_jface10.png[ErrorDialog,pdfwidth=60%]
+image::errordialog_jface10.png[ErrorDialog]
 		
 	
 
@@ -180,7 +180,7 @@ include::res/jface/MyDialog.java[]
 			screenshot.
 		
 		
-image::jface_customdialog02.png[Custom dialog,pdfwidth=60%]
+image::jface_customdialog02.png[Custom dialog]
 		
 	
 
@@ -216,7 +216,7 @@ image::jface_customdialog02.png[Custom dialog,pdfwidth=60%]
 		
 		This dialog is depicted in the following screenshot.
 		
-image::jface_customdialog20.png[Custom dialog,pdfwidth=60%]
+image::jface_customdialog20.png[Custom dialog]
 		
 		
 			The usage of this dialog is demonstrated in the

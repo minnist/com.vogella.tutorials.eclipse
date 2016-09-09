@@ -73,7 +73,7 @@ menu:File[Export > Install > Installed Software Items to File]
 and select the components which should be included in your
 description file.
 
-image::descriptionfile10.png[Exporting a description file for p2,pdfwidth=60%]
+image::descriptionfile10.png[Exporting a description file for p2]
 
 To install the described components in another Eclipse
 installation,

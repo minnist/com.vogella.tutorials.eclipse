@@ -120,7 +120,7 @@ include::res/databinding/Binding.java[]
 			objects. The following screenshot shows the first page of the wizard.
 		
 		
-image::newtodo_wizard10.png[,pdfwidth=60%]
+image::newtodo_wizard10.png[]
 		
 		
 			Test if your implementation behaves correctly. Ensure that new Todo
@@ -132,7 +132,7 @@ image::newtodo_wizard10.png[,pdfwidth=60%]
 			button.
 		
 		
-image::newtodo_wizard20.png[,pdfwidth=60%]
+image::newtodo_wizard20.png[]
 		
 		NOTE:
 			

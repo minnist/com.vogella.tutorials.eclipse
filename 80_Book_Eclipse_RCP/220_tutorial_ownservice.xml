@@ -64,7 +64,7 @@
 		
 		
 image::activate_pde_ds_annotations.png" scale="40[Activate DS annotation processing
-					,pdfwidth=60%]
+					]
 		
 
 	
@@ -211,7 +211,7 @@ include::res/osgi/servicereference.txt[]
 			in the following screenshot.
 		
 		
-image::tutorial_osgidependencies10.png[Implicit dependencies with OSGi service,pdfwidth=60%]
+image::tutorial_osgidependencies10.png[Implicit dependencies with OSGi service]
 		
 		
 			The current service

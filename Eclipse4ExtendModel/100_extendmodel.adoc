@@ -29,9 +29,9 @@ _UiExtensions.ecore_
 via
 menu:File[New > Other... > Eclipse Modeling Framework > EMF Model].
 
-image::emf_appmodel10.png[Create the EMF model,pdfwidth=60%]
+image::emf_appmodel10.png[Create the EMF model]
 
-image::emf_appmodel20.png[To create the EMF model, select this page of the wizard,pdfwidth=60%]
+image::emf_appmodel20.png[To create the EMF model, select this page of the wizard]
 
 Press the _Finish_ button.
 
@@ -52,9 +52,9 @@ model from the
 _org.eclipse.e4.ui.model.workbench_
 plug-in.
 
-image::renderermodel30.png[Define connections to an existing model, part 1,pdfwidth=60%]
+image::renderermodel30.png[Define connections to an existing model, part 1]
 
-image::renderermodel40.png[Define connections to an existing model, part 2,pdfwidth=60%]
+image::renderermodel40.png[Define connections to an existing model, part 2]
 
 === Define your custom model extension
 

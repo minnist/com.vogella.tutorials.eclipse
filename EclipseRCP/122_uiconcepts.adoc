@@ -8,7 +8,7 @@ The following model elements represents the basic elements which you use to crea
 Eclipse applications consist of one or more windows.
 Typically, an application has only one window, but you are not limited to that, e.g., if you want to support multiple connected monitors.
 
-image::e4window10.png[Eclipse application showing 2 windows,pdfwidth=60%]
+image::e4window10.png[Eclipse application showing 2 windows]
 
 include::040a_eclipseui_parts.adoc[]
 
@@ -30,19 +30,19 @@ vertically aligned.
 
 The following screenshot shows a simple Eclipse application layout using two part sash container and three part stacks.
 
-image::e4uicomponents10.png[An example arrangement of Parts in an Eclipse application,pdfwidth=60%]
+image::e4uicomponents10.png[An example arrangement of Parts in an Eclipse application]
 
 On the top of this layout there is a horizontal part sash container which contains another part sash container and one part stacks.
 The part sash container on the next level contains two part stacks.
 The hierarchy is depicted in the following graphic.
 
-image::e4uicomponents20.png[The hierarchy of Parts using PartStacks and PartSashcontainers.,pdfwidth=60%]
+image::e4uicomponents20.png[The hierarchy of Parts using PartStacks and PartSashcontainers.]
 
 You can use the _Container Data_ attribute on a child of a part sash container to assign a layout weight.
 This layout weight is interpreted as the relative space the corresponding child element should get assigned in the part sash container.
 The setting is depicted in the following screenshot.
 
-image::containerdata20.png[Container data for layouting,pdfwidth=60%]
+image::containerdata20.png[Container data for layouting]
 
 If you set the _Container Data_ for one element, you must define it for all the other elements, too.
 Otherwise the missing values are interpreted as very high and these

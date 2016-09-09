@@ -30,7 +30,7 @@ Enable this by selecting the corresponding button in the
 _Package Explorer_
 view.
 
-image::linkwitheditor10.png[Editor,pdfwidth=60%]
+image::linkwitheditor10.png[Editor]
 
 === Automatic placement of semicolon
  
@@ -94,9 +94,9 @@ Afterwards, they will be slightly highlighted. This
 helps to see in
 which block you are.
 
-image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT,pdfwidth=60%]
+image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT]
 
-image::jdtbrackets30.png[With highlight the enclosing brackets in JDT,pdfwidth=60%]
+image::jdtbrackets30.png[With highlight the enclosing brackets in JDT]
 
 === Code cleanup during save via save actions
 
@@ -166,7 +166,7 @@ class in the
 _Organize Imports_
 dialog.
 
-image::importpackages10.png[Dialog for selecting the correct import statement,pdfwidth=60%]
+image::importpackages10.png[Dialog for selecting the correct import statement]
 
 If you never use certain packages, for example AWT or Swing, you can
 exclude
@@ -190,7 +190,7 @@ search
 functionality
 in Eclipse.
 
-image::importpackages20.png[Filtering packages from the Eclipse import,pdfwidth=60%]
+image::importpackages20.png[Filtering packages from the Eclipse import]
 
 Please note that Eclipse shows (in its default configuration)
 only the packages that are
@@ -218,16 +218,16 @@ statement via the
 kbd:[Ctrl+Space]
 code assists shortcut.
 
-image::jdt_completion08.png[Trigger code completion,pdfwidth=60%]
+image::jdt_completion08.png[Trigger code completion]
 
 Without this setting you would get the following result, which
 results in a syntax error.
 
-image::jdt_completion20.png[JDT completion,pdfwidth=60%]
+image::jdt_completion20.png[JDT completion]
 
 With this setting you get the following result.
 
-image::jdt_completion10.png[Result,pdfwidth=60%]
+image::jdt_completion10.png[Result]
 
 === Auto activation key for code completion
 

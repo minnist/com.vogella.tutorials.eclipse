@@ -133,7 +133,7 @@ include::res/stack/plugin.xml[]
 			following screenshot.
 		
 		
-image::stackrenderer10.png[Stack renderer with alternative dirty implementation,pdfwidth=60%]
+image::stackrenderer10.png[Stack renderer with alternative dirty implementation]
 		
 
 	

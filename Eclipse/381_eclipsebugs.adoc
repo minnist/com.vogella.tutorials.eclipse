@@ -41,7 +41,7 @@ the
 _Create a New Account_
 link.
 
-image::bugzilla10.png[Opening an account at Eclipse bugzilla,pdfwidth=60%]
+image::bugzilla10.png[Opening an account at Eclipse bugzilla]
 
 Once you have a user account, you can login to the Eclipse
 bug

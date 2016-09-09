@@ -100,6 +100,6 @@ tab from the
 https://www.eclipse.org/downloads">Eclipse download page
 .
 		
-image::epp_developerbuilds10.png[Eclipse download page - Developer builds,pdfwidth=60%]
+image::epp_developerbuilds10.png[Eclipse download page - Developer builds]
 		
 	

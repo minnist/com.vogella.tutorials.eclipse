@@ -69,7 +69,7 @@ perspective
 The Java perspective can be opened via
 menu:Window+Perspective[Open Perspective > Java].
 		
-image::eclipseide_perspective10.png[Switching perspectives in the Eclipse IDE,pdfwidth=60%]
+image::eclipseide_perspective10.png[Switching perspectives in the Eclipse IDE]
 		
 On the left hand side, this perspective shows the
 _Package Explorer_
@@ -108,7 +108,7 @@ Via drag and
 drop you can move an
 editor to a new position in the Eclipse IDE.
 		
-image::eclipse_java.png[Eclipse Java Perspective,pdfwidth=60%]
+image::eclipse_java.png[Eclipse Java Perspective]
 		
 To the right and below the editor area you find more
 _views_
@@ -130,7 +130,7 @@ You can change the layout and content within a perspective by opening or closing
 To open a new part in your current perspective, use the menu:Window[Show View > Other...] menu entry. 
 This opens the _Show View_ dialog which allows you to search for certain _parts_.
 
-image::ide_showview10.png[Show View dialog,pdfwidth=60%]
+image::ide_showview10.png[Show View dialog]
 		
 If you want to reset your current perspective to its default, use the menu:Window[Reset Perspective] menu entry.
 		

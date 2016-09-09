@@ -1,0 +1,27 @@
+= Eclipse 4 Model Persistence - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2012, 2016 vogella GmbH
+Version 1.2, 09.09.2016
+:docinfodir: ../
+:vgwort: Eclipse4ModelPersistence
+
+[abstract]
+Constructing the Eclipse application model.
+This tutorial given an introduction how to replace the
+persistence of the application model.
+	
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::./010_overview.adoc[]
+include::./020_e4xmi_resource.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

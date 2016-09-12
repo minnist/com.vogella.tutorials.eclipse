@@ -2,11 +2,7 @@
 
 === What are commands?
 		
-A command in Eclipse is a declarative description of a
-component
-and
-is
-independent from the implementation details.
+A command in Eclipse is a declarative description of a component and is independent from the implementation details.
 		
 A
 command can be
@@ -23,7 +19,5 @@ defined via a handler.
 
 === Relevant Extension Points for Commands
 		
-To define a command you create an extension to the
-`org.eclipse.ui.command`
-extension point.
+To define a command you create an extension to the `org.eclipse.ui.command` extension point.
 

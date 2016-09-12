@@ -1,18 +1,11 @@
 == Introduction to commands
 
-Eclipse IDE extensions use the commands framework to
-contribute
-actions to the user interface. This concept is based on
-extension
-points.
+Eclipse IDE extensions use the commands framework to contribute actions to the user interface. 
+This concept is based on extension points.
 	
-This description explains the usage of commands in Eclipse IDE
-extensions. To define and use a command you have to define three
-extensions.
-The following extension points are relevant to define a
-menu
-or toolbar
-contribution for an Eclipse plug-in.
+This description explains the usage of commands in Eclipse IDE extensions. 
+To define and use a command you have to define three extensions.
+The following extension points are relevant to define a menu or toolbar contribution for an Eclipse plug-in.
 
 .Table
 |===

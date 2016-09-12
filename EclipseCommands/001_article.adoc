@@ -11,9 +11,8 @@ Version 3.2, 29.08.2016
 
 [abstract]
 Eclipse Commands tutorial.
-This tutorials describes how to add commands, menus and
-toolbar entries to the Eclipse IDE.
-This article is based on Eclipse Kepler (4.3).
+This tutorials describes how to add commands, menus and toolbar entries to the Eclipse IDE.
+This article is based on Eclipse Neon (4.7).
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::001_overview.adoc[]
@@ -27,7 +26,6 @@ include::020_tutorial_menu.adoc[]
 include::040_tutorial_toolbar.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::060_tutorial_contextmenu.adoc[]
-include::070_advanced.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]

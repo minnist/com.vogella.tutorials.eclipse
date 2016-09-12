@@ -1,0 +1,78 @@
+[[jfacefilebrowser]]
+== Exercise: File browser via a TreeViewer
+
+=== Create a new application
+
+This exercise is a stand-alone exercise and can be used to
+repeat the steps of creating an Eclipse 4 application.
+
+Use the
+_Eclipse 4 wizard_
+from
+menu:File[New > Other... > Eclipse 4 > Eclipse 4 Application Project]
+to create a new Eclipse 4 application without sample data called
+_com.example.e4.filebrowser_.
+
+The important selection in the last wizard page is highlighted
+in the following screenshot.
+
+image::filebrowser_exercise10.png[Empty content]
+
+=== Add an image file
+
+Download or create an icon called folder.png and place it into
+the
+"icons" folder of your plug-in.
+
+You find an example icon under the
+following URL:
+http://download.vogella.com/resources/folder.png[Folder icon].
+
+This icon is taken from the following icon collection:
+http://www.famfamfam.com/lab/icons/silk/[FamFamFam icons].
+
+=== Create a part
+
+Add a part stack with a
+part
+to your application model and display a
+`TreeViewer`
+in this
+part.
+
+Implement a class for the
+`ITreeContentProvider`
+interface
+which allows you to browse the file system. Review the
+Javadoc
+of
+this class to understand the methods of this interface.
+
+Also implement your custom
+`LabelProvider`
+for the tree.
+
+Use
+`viewer.setInput(File.listRoots());`
+to set the initial input to the
+viewer.
+
+The following listing contains an example implementation for
+this
+exercise. It assumes that you added the "folder.png" icon to the
+"icons" folder. It also demonstrates the usage of a
+`ViewLabelProvider`.
+
+[source,java]
+----
+include::res/filebrowser/FileBrowserPart.java[]
+----
+
+Link
+from your part in the application model to your new class.
+
+=== Validating
+
+Start your new application ensure that you see the content of
+your file system in your tree.
+

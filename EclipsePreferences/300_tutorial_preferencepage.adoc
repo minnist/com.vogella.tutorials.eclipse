@@ -31,7 +31,7 @@
 		with the following settings.
 	
 	
-image::preferences10.gif[pdfwidth=60%]
+image::preferences10.gif[]
 	
 	
 		Enter the following code for your class

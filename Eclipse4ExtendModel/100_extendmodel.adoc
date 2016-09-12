@@ -42,7 +42,7 @@ Check the properties for this plug-in via the _Properties_ view.
 Right-click on the model and select
 _Load Resource..._.
 
-image::renderermodel10.png[pdfwidth=60%]
+image::renderermodel10.png[]
 
 Click on the button
 _Browse Registered Packages_
@@ -69,7 +69,7 @@ Types
 _
 to it.
 
-image::renderermodel50.png[pdfwidth=60%]
+image::renderermodel50.png[]
 
 Use
 _BrowserPart_
@@ -84,13 +84,13 @@ called uri with type of
 `EString`
 to it.
 
-image::renderermodel54.png[pdfwidth=60%]
+image::renderermodel54.png[]
 
 The finished model
 should look like the
 following.
 
-image::renderermodel60.png[pdfwidth=60%]
+image::renderermodel60.png[]
 
 === Create the Genmodel
 
@@ -101,13 +101,13 @@ menu:File[New > Other... > EMF Generator model].
 
 Follow the wizard similar to the following screenshots.
 
-image::renderermodel62.png[pdfwidth=60%]
+image::renderermodel62.png[]
 
-image::renderermodel64.png[pdfwidth=60%]
+image::renderermodel64.png[]
 
-image::renderermodel66.png[pdfwidth=60%]
+image::renderermodel66.png[]
 
-image::renderermodel70.png[pdfwidth=60%]
+image::renderermodel70.png[]
 
 === Generate the Java classes
 
@@ -157,7 +157,7 @@ include::res/renderer/plugin.xml[]
 ----
 ====
 
-image::renderermodel80.png[pdfwidth=60%]
+image::renderermodel80.png[]
 
 Note down the uri from the extension point. You need to
 define this in

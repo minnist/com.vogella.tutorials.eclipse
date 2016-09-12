@@ -37,7 +37,7 @@ Right-click on the test and select menu:Run As [SWTBot Test].
 In the launch configuration select your application and add the _de.vogella.swtbot.tests_ and _de.vogella.swtbot.app_ plugins and their dependencies to the launch configuration.
 		
 		
-image::swtbot10.png[pdfwidth=60%]
+image::swtbot10.png[]
 		
 		
 If everything runs correctly, you should get a green test.

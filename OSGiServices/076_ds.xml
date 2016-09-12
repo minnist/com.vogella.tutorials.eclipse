@@ -143,8 +143,9 @@ image::ds30.png[Defining the service interface which is provided]
 			would look like the following.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.xml[]
+[source,text]
+----
+include::res/ds/component.xml[]
 ----
 		
 
@@ -155,8 +156,9 @@ image::ds30.png[Defining the service interface which is provided]
 			contains an entry to the service component.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/MANIFEST.MF[]
+[source,text]
+----
+include::res/ds/MANIFEST.MF[]
 ----
 		
 		

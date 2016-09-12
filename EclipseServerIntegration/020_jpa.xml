@@ -36,7 +36,7 @@ include::res/osgi/osgi_jpa.java[]
 ----
 	
 	
-image::persistence.xml-location.png[pdfwidth=60%]
+image::persistence.xml-location.png[]
 	
 
 	

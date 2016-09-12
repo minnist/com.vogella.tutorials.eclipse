@@ -25,8 +25,8 @@
 		
 [source,xml]
 ----
-include::res/custom_launch/launchConfigurationTypes.xml"/>
-			</programlisting>
+include::res/custom_launch/launchConfigurationTypes.xml[]
+----
 		
 		The different <property>modes</property> are `ILaunchManager.RUN_MODE`,
 				`ILaunchManager.DEBUG_MODE` and
@@ -42,15 +42,15 @@ include::res/custom_launch/launchConfigurationTypes.xml"/>
 		
 [source,java]
 ----
-include::res/custom_launch/SampleLaunchConfigurationAttributes.java"/>
-			</programlisting>
+include::res/custom_launch/SampleLaunchConfigurationAttributes.java[]
+----
 		
 		The `LaunchConfigurationDelegate` implementation, which works with this attribute may look like this:
 		
 [source,java]
 ----
-include::res/custom_launch/SampleLaunchConfiguration.java"/>
-			</programlisting>
+include::res/custom_launch/SampleLaunchConfiguration.java[]
+----
 		
 		Usually a `ILaunchConfigurationDelegate` is invoked by the UI of
                 ﻿`org.eclipse.debug.ui`, which is covered in <xref
@@ -68,21 +68,21 @@ include::res/custom_launch/SampleLaunchConfiguration.java"/>
 				
 [source,xml]
 ----
-include::res/custom_launch/launchShortcut.xml"/>
-			</programlisting>
+include::res/custom_launch/launchShortcut.xml[]
+----
 		
 		The referenced `﻿LaunchShortcut` class must implement
 				﻿`ILaunchShortcut`.
 		
 [source,java]
 ----
-include::res/custom_launch/LaunchShortcut.java"/>
-			</programlisting>
+include::res/custom_launch/LaunchShortcut.java[]
+----
 		
         After implementing this, you can run the <guimenuitem>Sample Shortcut</guimenuitem>
             from a editor's popup menu or on a ISelection, such as a Java class file.
 		
-image::run_as_sample_shortcut.png[pdfwidth=60%]
+image::run_as_sample_shortcut.png[]
 		
 	
 

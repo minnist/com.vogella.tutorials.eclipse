@@ -50,7 +50,7 @@ project and select
 menu:Source[Clean-up...]
 from the context menu.
 		
-image::codecleanup10.png[pdfwidth=60%]
+image::codecleanup10.png[]
 		
 Select
 _Use custom profile_
@@ -58,9 +58,9 @@ and press
 _Configure..._
 to configure the actions which should be performed on your code.
 		
-image::codecleanup20.png[pdfwidth=60%]
+image::codecleanup20.png[]
 		
-image::codecleanup30.png[pdfwidth=60%]
+image::codecleanup30.png[]
 
 WARNING: Ensure to unselect any cleanup action which you do not want to perform.
 		
@@ -70,5 +70,5 @@ and the
 _Next_
 button in the cleanup wizard to get a preview of the changes.
 
-image::codecleanup40.png[pdfwidth=60%]
+image::codecleanup40.png[]
 

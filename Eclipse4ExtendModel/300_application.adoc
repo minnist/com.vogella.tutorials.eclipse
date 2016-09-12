@@ -63,5 +63,5 @@ you pointed via the
 _uri_
 parameter.
 
-image::renderermodel90.png[pdfwidth=60%]
+image::renderermodel90.png[]
 

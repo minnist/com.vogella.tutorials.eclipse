@@ -1,0 +1,9 @@
+== Prerequisites
+	
+Please see
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[Introduction to JFace]
+for an introduction to the concepts behind this example.
+	
+For an example on how to build JFace Tables please see
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[JFace Table Tutorial].
+	

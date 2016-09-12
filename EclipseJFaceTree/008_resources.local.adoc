@@ -1,0 +1,8 @@
+== Links and Literature
+
+=== JFace Resources
+		
+http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html[Building and delivering a table editor with SWT/JFace]
+			
+http://wiki.eclipse.org/index.php/JFaceSnippets[JFace snippets, e.g., small code examples]
+	

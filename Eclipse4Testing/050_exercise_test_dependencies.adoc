@@ -12,5 +12,5 @@ For standard RCP applications the following dependencies are necessary.
 	
 The Orbit Repositories can be found on the http://download.eclipse.org/tools/orbit/downloads[Orbit Downloads] website.
 	
-image::testing-target-platform.png[pdfwidth=60%]
+image::testing-target-platform.png[]
 	

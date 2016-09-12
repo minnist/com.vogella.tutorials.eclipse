@@ -49,12 +49,12 @@ Select the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point and p
 
 image::propertyHandler_extension.png[Selecting]
 
-image::propertyHandler_handler_definition.png[pdfwidth=60%]
+image::propertyHandler_handler_definition.png[]
 
 By clicking on the `adapter` hyperlink of the handler in the _plugin.xml_ a "New Java Class" dialog appears, where you define the `CompositeElement` as superclass. 
 Call the class itself `UserProfileElementAdapter` and place it into a css package.
 
-image::new_class_dialog_user_profile_element_adapter.png[pdfwidth=60%]
+image::new_class_dialog_user_profile_element_adapter.png[]
 
 The `UserProfileElementAdapter` class should look like this:
 
@@ -67,7 +67,7 @@ In this case we only have a custom composite, which needs to be adapted.
 The `propertyHandler` needs a `handler`, which has to be an implementation of the `ICSSPropertyHandler` interface. 
 Therefore we need to click on the `handler` hyperlink in the _plugin.xml_ and the following "New Java Class" dialog appears:
 
-image::new_class_dialog_user_profile_css_handler.png[pdfwidth=60%]
+image::new_class_dialog_user_profile_css_handler.png[]
 
 The `AbstractCSSPropertySWTHandler` is an abstraction of the `ICSSPropertyHandler` interface for SWT widgets. 
 It handles the cast to a	SWT Control, which is then passed to the `applyCSSProperty` and `retrieveCSSProperty` methods.
@@ -96,12 +96,12 @@ image::property_handler_property_name.png[pdfwidth=80%]
 === Adding the org.eclipse.e4.ui.css.core.elementProvider extension point
 Now the second and last extension point has to be added:
 
-image::element_provider_extension.png[pdfwidth=60%]
+image::element_provider_extension.png[]
 
 After adding the `org.eclipse.e4.ui.css.core.elementProvider` extension point we can add an `IElementProvider` to it.
 For this, click on the `class` hyperlink and give the class the name `UserProfileWidgetElementProvider`.
 
-image::element_provider_provider_definition.png[pdfwidth=60%]
+image::element_provider_provider_definition.png[]
 
 The `widget` property you can see in the screenshot above points to the full qualified name of the `UserProfileWidget` `(com.vogella.rcp.css.custom.widget.UserProfileWidget)`. 
 The `widget` property may be used several times, so that one `IElementProvider` implementation can be in charge of several widgets.

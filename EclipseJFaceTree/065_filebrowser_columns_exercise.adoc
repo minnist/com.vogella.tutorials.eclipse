@@ -1,0 +1,50 @@
+== Exercise: Add multiple columns to a tree viewer
+
+NOTE: This exercise assumes that <<jfacefilebrowser>> has been done, since this exercise is based on it.
+
+=== Using TreeViewerColumns in the file browser
+
+To add multiple columns in a
+`TreeViewer`
+, the
+`TreeViewerColumn`
+class can be used to define columns for the underlying tree.
+
+A
+`TreeViewerColumn`
+itself is a wrapper around the
+`TreeColumn`
+widget
+from SWT.
+
+[source,java]
+----
+include::res/treeColumn/TreeColumn.java[]
+----
+
+Instead of applying a
+`CellLabelProvider`
+for the whole viewer each
+`TreeViewerColumn`
+gets its own
+`CellLabelProivder`
+assigned. This allows that label for each column can
+be defined separately. To
+assign a label provider to the tree
+viewer column
+the
+`TreeViewerColumn#setLabelProvider`
+method is used.
+
+[source,java]
+----
+include::res/filebrowser/MultiColumnFileBrowserPart.java[]
+----
+
+=== Validating
+
+Start your new application ensure that you see the content of
+your file system in your tree.
+
+image::Multiple_Column_FileBrowser.png[]
+	

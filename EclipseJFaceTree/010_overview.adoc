@@ -1,0 +1,86 @@
+== JFace TreeViewer
+
+=== Using viewers to display a tree
+(((JFace,TreeViewer)))
+
+The
+`TreeViewer`
+class provides viewer support for displaying trees. The usage of this
+class is
+similar to the
+`TableViewer`
+class.
+The main difference
+is
+that the
+`TreeViewer`
+class
+requires a structured
+content provider.
+Typically your content
+provider has to implement the
+`ITreeContentProvider`
+interface to be used with your
+`TreeViewer`
+class.
+
+The usage of the
+`TreeViewer`
+class is demonstrated in
+<<jfacefilebrowser>>.
+
+=== Selection and double-click listener
+
+JFace allows you to access the SWT controls to define listeners on
+your viewer. For example you can
+add a
+`SelectionListener`
+implementation
+to the
+SWT
+control which is wrapped in the JFace object.
+The following code snippet
+demonstrates how to
+expand a tree
+with a
+mouse click.
+
+[source,java]
+----
+include::res/swt/expand.java[]
+----
+
+Viewers
+allows you to add certain listeners directly to them.
+The
+following
+example shows how to expand an instance of a
+`TreeViewer`
+with a
+double
+click.
+
+[source,java]
+----
+include::res/swt/expanddouble.java[]
+----
+
+=== Adjusting tree columns TreeColumns on expand
+
+In case a `TreeViewer` has multiple columns it does not look good, if the first
+column, which contains the expandable items is clipped.
+
+image::ClippedTreeColumn.png[]
+
+In order to let a column fit to it's contents width you can invoke the columns
+`pack` method like that.
+
+[source,java]
+----
+include::res/swt/ExpandlistenerWithPack.java[]
+----
+
+With this code every column of the `Tree` will have the appropriate width,
+when an `TreeItem` is expaned, so that the contents of the column is not
+clipped.
+

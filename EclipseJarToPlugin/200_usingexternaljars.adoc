@@ -36,7 +36,7 @@ Otherwise OSGi prevents other plug-ins from accessing them.
 In the plug-in project which should access the library, open the _MANIFEST.MF_ file and select the _Dependencies_ tab. 
 Add the new plug-in as dependency.
 
-image::externaljars40.gif[pdfwidth=60%]
+image::externaljars40.gif[]
 
 
 

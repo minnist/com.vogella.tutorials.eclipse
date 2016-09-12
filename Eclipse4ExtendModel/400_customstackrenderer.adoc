@@ -9,7 +9,7 @@ The finished model
 should look like the
 following.
 
-image::stackrenderermodel60.png[pdfwidth=60%]
+image::stackrenderermodel60.png[]
 
 Create the following class.
 

@@ -8,15 +8,15 @@ In this exercise a JDT Quickfix will be created and the previously created _com.
 
 Press the btn:[Add] button in the _Extensions_ tab of the _plugin.xml_ editor and choose org.eclipse.jdt.ui.quickFixProcessors.
 
-image::add-quickfix-extensionpoint.png[pdfwidth=60%]
+image::add-quickfix-extensionpoint.png[]
 
 Pressing the btn:[Finish] button will result in the extension point being added and already containing an entry.
 
-image::added-quickfix-extensionpoint.png[pdfwidth=60%]
+image::added-quickfix-extensionpoint.png[]
 
 By clicking on the [underline]#class*:# link a class creation wizard will appear.
 
-image::quickfix-class-wizard.png[pdfwidth=60%]
+image::quickfix-class-wizard.png[]
 
 Just stick to the defaults and press the btn:[Finish] button.
 

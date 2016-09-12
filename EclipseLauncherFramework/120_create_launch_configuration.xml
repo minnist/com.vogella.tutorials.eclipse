@@ -36,21 +36,21 @@ image::run_configurations.png[]
 		You can reach the export wizard via export command in the file menu or by typing
 				_Export (Launch Configuration)_ in the Quick Access.
 		
-image::export_launch_configuration.png[pdfwidth=60%]
+image::export_launch_configuration.png[]
 		
 		When pressing _Next_ you can choose, which launch configuration you
 			want to export and define a location to store the _*.launch_
 			file.
 		
-image::launch_configuration_export_wizard.png[pdfwidth=60%]
+image::launch_configuration_export_wizard.png[]
 		
 		The exported _Eclipse Application Launch Configuration.launch_ file
 			looks like this:
 		
 [source,xml]
 ----
-include::res/Eclipse_Application_Launch_Configuration.launch"/>
-			</programlisting>
+include::res/Eclipse_Application_Launch_Configuration.launch[]
+----
 		
 		As you can see your launch configuration is stored in a XML format, which contains the
 			specific settings of your custom launch configuration.
@@ -61,12 +61,12 @@ include::res/Eclipse_Application_Launch_Configuration.launch"/>
 		You can reach the import wizard via import command in the file menu or by typing
 				_Import (Launch Configuration)_ in the Quick Access.
 		
-image::import_launch_configuration.png[pdfwidth=60%]
+image::import_launch_configuration.png[]
 		
 		When pressing _Next_ you can look for a
 				_*.launch_ file in your file system, and import it.
 		
-image::launch_configuration_import_wizard.png[pdfwidth=60%]
+image::launch_configuration_import_wizard.png[]
 		
 		After we successfully imported a certain _*.launch_ file, we can
 			choose and run this launch configuration with the _Run

@@ -1,0 +1,102 @@
+== JFace resource manager for Colors, Fonts and Images
+(((JFace,Resource manager)))
+	
+SWT
+is based on the native widgets of the OS. Whenever an
+SWT
+widget is allocated, a corresponding OS specific
+widget is
+created.
+The Java garbage collector cannot automatically clean-up these
+OS-specific widget references.
+	
+Fortunately all widgets which are created based on a parent widget are
+automatically disposed when the parent
+`Composite`
+is disposed.
+If you develop Eclipse plug-ins, the
+`Composite`
+of a
+part
+is automatically disposed once the part is closed.
+Therefore,
+these
+SWT
+widgets are
+handled automatically in
+Eclipse plug-in projects.
+	
+This rule does not apply for colors, fonts, images and curcors, as these
+may be
+reused in other places. For this reason
+they need to be
+explicitly
+disposed. Fortunately
+JFace
+provides the
+`ResourceManager`
+and its derived classes.
+	
+An instance of the
+`LocalResourceManager`
+class
+is created with a reference to a
+`Control`
+. If this
+`Control`
+is disposed, the resources created by the
+`LocalResourceManager`
+are also disposed.
+	
+[source,java]
+----
+include::res/resource/LocalResourceMananger.txt[]
+----
+	
+The
+`createImage()`
+method expects an
+`ImageDescriptor`
+class.
+
+To get one
+`ImageDescriptor`
+from an image file stored in your current plug-in use
+the following:
+	
+[source,text]
+----
+include::res/resource/loadimage.txt[]
+----
+	
+In case you do not have a Control for the
+`ResourceManager`
+, the
+`LocalResourceManager`
+also provides another constructor.
+
+A popular example is a
+`LabelProvider`
+, where you wouldn't want to pass a
+`Control`
+to it in order to properly dispose system resources afterwards:
+	
+[source,java]
+----
+include::res/resource/LocalResourceManangerSelfdispose.java[]
+----
+	
+WARNING: In case you do not pass a Control, to the
+`LocalResourceManager`
+you
+have to dispose the
+`ResourceManager`
+yourself.
+	
+In general you should always use a JFace ResouceManager in order
+to avoid
+problems with system resources or even
+a
+"No more handles"
+SWTException.
+	

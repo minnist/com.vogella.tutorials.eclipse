@@ -120,7 +120,8 @@ image::preferences20.gif[]
 		change.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/preferencepage/View.java[]
+[source,java]
+----
+include::res/preferencepage/View.java[]
 ----
 	

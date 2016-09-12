@@ -27,8 +27,9 @@
 		IQuoteService.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/QuoteService.java[]
+[source,text]
+----
+include::res/ds/QuoteService.java[]
 ----
 	
 
@@ -36,8 +37,9 @@
 		should look like the following.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/component.adoc[]
+[source,text]
+----
+include::res/ds/component.xml[]
 		</programlisting>
 	
 	 Copy the "org.eclipse.equinox.ds*.jar",
@@ -53,8 +55,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/installds.txt[]
+[source,text]
+----
+include::res/ds/installds.txt[]
 ----
 	
 	 Start the bundles manually so that declarative services are
@@ -64,8 +67,9 @@
 		and install it via:
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/ds/servicedsinstall.txt[]
+[source,text]
+----
+include::res/ds/servicedsinstall.txt[]
 ----
 	
 

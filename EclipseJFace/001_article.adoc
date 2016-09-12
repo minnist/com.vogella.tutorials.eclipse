@@ -1,0 +1,33 @@
+= Eclipse JFace Overview - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2008, 2016 vogella GmbH
+Version 3.0, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseJFace
+
+[abstract]
+Eclipse JFace Tutorial.
+This tutorial gives a overview about Eclipse JFace. 
+It discusses the base concept of JFace Viewers and the JFace LocalResourceManager. 
+The tutorial is based on Eclipse 4.4 (Luna).
+	
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::030_resourcemanager.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::100_controldecorations.adoc[]
+include::120_jfacefieldassists.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::200_viewer.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::220_comboviewer.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

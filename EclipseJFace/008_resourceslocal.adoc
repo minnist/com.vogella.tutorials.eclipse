@@ -1,0 +1,24 @@
+== Links and Literature
+
+=== JFace resources
+
+http://wiki.eclipse.org/index.php/JFaceSnippets[JFace snippets, e.g., small code examples]
+
+http://eclipse.org/nattable/[NatTable - Flexible Table / Data Grid]
+
+=== Other JFace Resources
+
+http://www.vogella.com/tutorials/SWT/article.html[Eclipse SWT Tutorial]
+
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[Eclipse JFace Table]
+
+http://www.vogella.com/tutorials/EclipseJFaceTree/article.html[Eclipse JFace Tree]
+
+http://www.vogella.com/tutorials/EclipseDataBinding/article.html[Eclipse JFace Data Binding]
+
+http://www.vogella.com/tutorials/EclipseDialogs/article.html[Eclipse JFace Dialogs]
+
+http://www.vogella.com/tutorials/EclipseWizards/article.html[Eclipse JFace Wizards]
+
+http://www.vogella.com/tutorials/EclipsePreferences/article.html[Preferences and Preference pages]
+

@@ -1,0 +1,40 @@
+== JFace ComboViewer
+(((JFace,ComboViewer)))
+	
+A simple example for a JFace Viewer framework is the
+`ComboViewer`
+class. Assume the following data model.
+	
+[source,java]
+----
+include::res/viewer/Person.java[]
+----
+	
+The following example snippet shows you how you could use this given
+data model in a
+`ComboViewer`.
+	
+[source,java]
+----
+include::res/viewer/MyView.java[]
+----
+	
+You can register a listener which is notified whenever the
+selection of
+the
+viewer changes via the following code.
+	
+[source,java]
+----
+include::res/viewer/SelectionListener.java[]
+----
+	
+You can get and set selections using Java objects based on your
+domain model.
+
+[source,java]
+----
+include::res/viewer/setget.java[]
+----
+	
+ 

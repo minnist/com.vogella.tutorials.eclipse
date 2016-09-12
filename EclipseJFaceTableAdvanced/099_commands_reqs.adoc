@@ -1,0 +1,7 @@
+== Commands Prerequisite
+	
+If you are not familiar with Eclipse Commands, please have a
+look at
+the following tutorial:
+http://www.vogella.com/tutorials/EclipseCommands/article.html[Eclipse Commands Tutorial]
+

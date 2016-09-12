@@ -1,0 +1,277 @@
+== JFace Table Features
+
+=== Column editing support
+
+To make a column in a table
+editable, you need an object
+of type
+`EditingSupport`.
+
+The following code shows an example of an
+`EditingSupport`
+implementation.
+
+[source,java]
+----
+include::res/editing/FirstNameEditingSupport.java[]
+----
+
+The
+`EditingSupport`
+implementation defines how the content can be changed.
+The
+`getCellEditor()`
+method
+returns an object of type
+`CellEditor`.
+This object
+creates the controls to change the data.
+
+The
+`canEdit()`
+method defines if the cell can be edited. The
+`getValue()`
+method receives the current object and returns the
+value which should
+be
+edited.
+
+The method
+`setValue()`
+in
+`EditingSupport`
+receives the changed value based on the user input. In this method
+you assign the
+value to your data object.
+
+JFace provides the following default implementations for cell
+editors:
+
+* `TextCellEditor`
+* `ColorCellEditor`
+* `CheckboxCellEditor`
+* `DialogCellEditor`
+* `ComboBoxViewerCellEditor`
+
+You can assign the instance of
+`EditingSupport`
+to your
+`TableColumn`
+via the
+`setEditingSupport()`
+method
+of your
+`TableViewerColumn`
+object.
+
+[source,java]
+----
+include::res/snippets/Editing.java[]
+----
+
+From an application design perspective, editing within a table
+can be
+cumbersome for the user. If the end user has to edit a lot of
+data,
+you should also offer a dialog, wizard or
+part
+to edit the data.
+
+=== Filtering data
+
+A JFace viewer supports filtering of data via the
+`setFilters()`
+or
+`addFilter()`
+methods. These methods expect
+`ViewerFilter`
+objects
+as arguments.
+
+For each registered
+`ViewerFilter`
+object
+the
+`select()`
+method is called. The method returns
+`true`
+if the data should be shown and
+`false`
+if it should be filtered.
+
+[source,java]
+----
+include::res/filter/PersonFilter.java[]
+----
+
+All filters are checked
+whenever the input of the
+viewer
+changes, or
+whenever its
+`refresh()`
+method is called.
+
+If more than one filter is defined for a
+viewer,
+all filters must
+return `true`
+to display the
+data.
+
+=== Sorting data with ViewerComparator
+
+JFace supports sorting of the viewer content via the
+`setComparator()`
+method on the viewer object. This method expects a
+`ViewerComparator`
+object. By default, it will sort based on the
+`toString()`
+method of the objects in the viewer.
+
+[source,java]
+----
+include::res/snippets/compare.java[]
+----
+
+=== TableColumnLayout
+
+With the
+`TableColumnLayout`
+class you can define the width of the columns in the table. This can
+be done based on a fixed or percentage value.
+
+Using
+`TableColumnLayout`
+requires a
+`Composite`
+which only contains the table widget. This
+`Composite`
+gets the
+`TableColumnLayout`
+assigned.
+
+[source,java]
+----
+include::res/layout/LayoutSetup.java[]
+----
+
+The
+`TableColumnLayout`
+requires that you define a fixed or relative size for all columns.
+
+[source,java]
+----
+include::res/layout/LayoutColumn.java[]
+----
+
+=== StyledCellLabelProvider and OwnerDrawLabelProvider
+
+It is possible to use a
+`StyledCellLabelProvider`
+for a very flexible styling of your text.
+`StyledCellLabelProvider`
+extends
+`CellLabelProvider`
+and allows you to style the text which is displayed in the cell.
+
+The following example shows how to use a
+`StyledCellLabelProvider`.
+In this example a portion of a pre-defined text is highlighted.
+
+[source,java]
+----
+include::res/snippets/style.java[]
+----
+
+As a result the number "15" will be highlighted as depicted in
+the following screenshot.
+
+image::styledcelllabelprovider10.png[[Screenshot of a styledLabelProvider]
+
+The
+`OwnerDrawLabelProvider`
+class is a label provider that handles custom draws.
+
+The following example draws a text and an
+image into the cell.
+
+[source,java]
+----
+include::res/snippets/OwnerDrawLabelProvider.java[]
+----
+
+image::ownerdrawviewer10.png[OwnerDrawLabelProvider example]
+
+=== Table column menu and hiding columns
+
+You can add a
+menu
+to your table. This
+menu can get a menu entry
+for each column. This allow you to add arbitrary popup actions to
+your columns.
+
+You can use it, for example, to hide and show
+columns based on
+the
+width
+setting as demonstrated in the following code snippet.
+
+[source,java]
+----
+include::res/showhide/View.java[]
+----
+
+=== Tooltips for viewers
+
+You can
+use tooltips for the cells of the
+viewer. To achieve this,
+you have to activate the tooltips for a viewer.
+
+[source,java]
+----
+include::res/tooltips/activate.java[]
+----
+
+In your
+`CellLabelProvider`
+you specify the related methods for displaying the tooltip.
+
+[source,java]
+----
+include::res/tooltips/CellEditor.java[]
+----
+
+=== Virtual tables with LazyContentProvider
+
+If you have a huge number of lines which you want to display in the
+table, you can use a
+`LazyContentProvider`.
+This provider allows you to fetch the data when they are needed
+instead of loading everything into memory. As a result of the lazy
+loading you gain a better memory footprint and improve the
+performance for a large set of data. The
+following code demonstrates
+its usage.
+
+[source,java]
+----
+include::res/lazycontent/ContentProvider.java[]
+----
+
+[source,java]
+----
+include::res/lazycontent/Lazy.java[]
+----
+
+=== Alternative table implementations
+
+It is possible to use other table implementations. Most notable is
+the
+http://www.eclipse.org/nattable/[NatTable]
+implementation which is a flexible and powerful framework for
+creating tables, grids and trees that show great performance for a
+huge number of rows and columns.
+

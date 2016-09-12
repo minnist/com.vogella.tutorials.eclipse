@@ -36,9 +36,9 @@ include::res/first/MySelectionAdapter.java[]
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/first/button.java[]
+[source,text]
+----
+include::res/first/button.java[]
 ----
 	
 	

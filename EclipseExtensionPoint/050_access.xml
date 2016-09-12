@@ -27,9 +27,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/registry/query2.txt[]
+[source,text]
+----
+include::res/registry/query2.txt[]
 ----
 	
 	
@@ -39,9 +39,9 @@
 		class. An example is listed in the following code.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/registry/query.txt[]
+[source,text]
+----
+include::res/registry/query.txt[]
 ----
 	
 	TIP:

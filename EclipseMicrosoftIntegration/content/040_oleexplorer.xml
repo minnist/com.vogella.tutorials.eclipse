@@ -8,8 +8,8 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
 	 Add a view to the application and the perspective. To display
 		the file explorer you can use the following code for your view.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/explorer/FileExplorerView.java[]
+[source,text]
+----
+include::res/explorer/FileExplorerView.java[]
 ----
 	

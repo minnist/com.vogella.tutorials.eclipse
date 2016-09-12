@@ -1,0 +1,35 @@
+== Tutorial: Using a Filter
+	
+The following adds a filter to the table based on the
+_Search_
+`Text`
+widget.
+The user can enter search pattern in this text field
+and
+data
+which fits to the entered pattern will be displayed.
+	
+Create the following new class.
+	
+[source,java]
+----
+include::res/filter/PersonFilter.java[]
+----
+	
+Add to your search text field a `keyListener`
+which updates the filter
+and
+the
+viewer. You need also to define a new
+`private PersonFilter filter;`
+field and change the
+`createPartControl()`
+method.
+	
+[source,java]
+----
+include::res/filter/View.java[]
+----
+
+Run the example, filtering should work.
+

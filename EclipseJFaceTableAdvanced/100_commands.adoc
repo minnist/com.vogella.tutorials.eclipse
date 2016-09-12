@@ -1,0 +1,101 @@
+== Commands
+
+=== Add objects to the table
+		
+This chapter shows how to add persons to the
+`TableViewer`.
+		
+You have to make the selection of the
+`Viewer`
+available and also provide public method to refresh the data of to
+the
+`Viewer`
+so that other components can trigger the refresh process.
+		
+[source,java]
+----
+include::res/commands/createPartControlSelection.java[]
+----
+		
+Create a
+`Dialog`
+to enter the data for the additional person. Create the
+`de.vogella.jface.tableviewer.dialogs`
+package
+and the following
+`AddPersonDialog`
+class.
+		
+[source,java]
+----
+include::res/commands/AddPersonDialog.java[]
+----
+		
+Create a new
+`View`
+called
+_ChangeView_
+to your application and add it to your
+perspective.
+		
+This
+`View`
+contains a
+`Button`
+which allow to start the
+`Dialog`,
+adds the new Person to the data and refreshes the
+`Viewer`.
+		
+[source,java]
+----
+include::res/commands/ChangeView.java[]
+----
+		
+When you finished this successfully,
+you are able to add new persons to
+your
+`TableViewer`
+via clicking on the
+`Button`.
+
+=== Delete objects from your table
+		
+We will implement, that the current selected persons can be
+deleted from the list.
+		
+Create the command
+`de.vogella.jface.tableviewer.commands.DeletePerson` with the default
+handler `de.vogella.jface.tableviewer.commands.DeletePerson`. Add the
+command to your menu.
+		
+Implement class
+`de.vogella.jface.tableviewer.commands.DeletePerson`.
+		
+[source,java]
+----
+include::res/commands/DeletePerson.java[]
+----
+		
+Please try to delete entries of the table by selection entries
+and executing _Delete Action_.
+
+=== Copy data to the system clipboard
+		
+This chapter shows how to copy the table data to the system
+clipboard via a command.
+		
+Create the command
+`de.vogella.jface.tableviewer.commands.CopyPersonClipboard` with the
+default handler
+`de.vogella.jface.tableviewer.commands.CopyPersonClipboard`. Add the
+command to the menu.
+		
+[source,java]
+----
+include::res/commands/CopyPersonClipboard.java[]
+----
+		
+Run your application, select a few persons, run your command
+and paste the result in a text editor, e.g., notepad.
+	

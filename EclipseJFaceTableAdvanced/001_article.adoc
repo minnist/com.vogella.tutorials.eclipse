@@ -1,0 +1,37 @@
+= Advanced programming tricks for the Eclipse JFace Table API - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel(c) 2008, 2016 vogella GmbH
+Version 3.5, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseJFaceTableAdvanced
+
+[abstract]
+Eclipse JFace Table.
+This tutorial explains advanced usage of the JFace TableViewer
+including inline table editing, table filtering and sorting, and
+model / view interaction. StyledLabelProvider are also discussed.
+This tutorial is based on Eclipse 4.5.
+	
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::001_intro.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::050_sorter.adoc[]
+include::060_jfaceeditor.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::070_filter.adoc[]
+include::080_styledlabelprovider.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::099_commands_reqs.adoc[]
+include::100_commands.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::download.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

@@ -1,0 +1,21 @@
+== Introduction
+	
+Eclipse JFace
+provides functionality to build tables. The following
+tutorial is based
+on the
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[JFace Table Tutorial].
+Please finish that tutorial before continuing with this one.
+	
+This tutorial demonstrates how to sort based on table columns,
+how to make table columns
+editable
+and how to filter the displayed data.
+	
+We will also
+learn how to use the
+`StyledCellLabelProvider`
+class
+to influence the display of data in the table. The usage of
+commands and how to hide and sort table columns is demonstrated.
+	

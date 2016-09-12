@@ -1,47 +1,40 @@
 == Tutorial: Editing the table content
 	
-		Create the following new classes
-		in the new
-		`de.vogella.jface.tableviewer.edit`
-		package.
-	
+Create the following new classes
+in the new
+`de.vogella.jface.tableviewer.edit`
+package.
 	
 [source,java]
 ----
 include::res/editing/FirstNameEditingSupport.java[]
 ----
 	
-	
 [source,java]
 ----
 include::res/editing/LastNameEditingSupport.java[]
 ----
-	
 	
 [source,java]
 ----
 include::res/editing/GenderEditingSupport.java[]
 ----
 	
-	
 [source,java]
 ----
 include::res/editing/MarriedEditingSupport.java[]
 ----
 	
-	
-		Now assign `EditorSupport` objects to your `TableColumnViewers` in
-		your
-		`View` class. Replace the existing method `createColumns()` with the
-		following one and adjust your imports.
-	
+Now assign `EditorSupport` objects to your `TableColumnViewers` in
+your
+`View` class. Replace the existing method `createColumns()` with the
+following one and adjust your imports.
 	
 [source,java]
 ----
 include::res/editing/View.java[]
 ----
 	
-	
-		Run your application. You should now be able to modify the
-		content of the JFace table.
+Run your application. You should now be able to modify the
+content of the JFace table.
 	

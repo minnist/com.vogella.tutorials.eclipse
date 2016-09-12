@@ -11,18 +11,18 @@
 		class.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/swt/MyComposite.java[]
+[source,text]
+----
+include::res/swt/MyComposite.java[]
 ----
 	
 	In the method which creates your user interface, add this
 		composite to your part as demonstrated in the following code.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/snippets/addComposite.txt[]
+[source,text]
+----
+include::res/snippets/addComposite.txt[]
 ----
 	
 	

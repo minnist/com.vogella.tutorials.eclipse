@@ -21,9 +21,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/plugin/plugin.adoc[]
+[source,text]
+----
+include::res/plugin/plugin.adoc[]
 		</programlisting>
 	
 
@@ -37,9 +37,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/plugin/plugin_en.properties[]
+[source,text]
+----
+include::res/plugin/plugin_en.properties[]
 ----
 	
 

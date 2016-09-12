@@ -8,9 +8,9 @@
 		"de.vogella.rcp.intro.progress.handler.ShowDialog". Create the handler
 		class.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/progressreport/ShowDialog.java[]
+[source,text]
+----
+include::res/progressreport/ShowDialog.java[]
 ----
 	
 	 Add this command to the menu.

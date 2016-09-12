@@ -25,9 +25,9 @@
 		file.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/plugin/plugin.adoc[]
+[source,text]
+----
+include::res/plugin/plugin.adoc[]
 		</programlisting>
 	
 	 The plug-in  typically contains code to

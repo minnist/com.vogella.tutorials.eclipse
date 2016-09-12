@@ -7,25 +7,25 @@
 		Create an model based on the following interface.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/IPerson.java[]
+[source,text]
+----
+include::res/encryption/IPerson.java[]
 ----
 	
 	 Create the following factory which sets the option for encryption.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/MyXMIFactoryImpl.java[]
+[source,text]
+----
+include::res/encryption/MyXMIFactoryImpl.java[]
 ----
 	
 	
 	 Create the following test class. 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/encryption/Create.java[]
+[source,text]
+----
+include::res/encryption/Create.java[]
 ----
 	
 

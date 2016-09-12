@@ -2,16 +2,16 @@
 == Maintaining data in a table
 	Create a table with the following coding.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/createTable2.sql[]
+[source,text]
+----
+include::res/createTable2.sql[]
 ----
 	
 	Put in some data via SQL
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/createContent2.sql[]
+[source,text]
+----
+include::res/createContent2.sql[]
 ----
 	
 	

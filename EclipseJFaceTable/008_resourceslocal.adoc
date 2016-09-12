@@ -1,0 +1,12 @@
+== JFace Resources
+
+http://www.vogella.com/tutorials/EclipseJFace/article.html[Eclipse JFace]
+	
+http://www.vogella.com/tutorials/EclipseJFaceTableAdvanced/article.html[Eclipse JFace Table]
+	
+http://www.vogella.com/tutorials/EclipseJFaceTree/article.html[JFace Tree Tutorial]
+	
+http://www.vogella.com/tutorials/EclipseDataBinding/article.html[JFace Data Binding]
+	
+http://www.eclipse.org/articles/Article-Table-viewer/table_viewer.html[Building and delivering a table editor with SWT/JFace]
+	

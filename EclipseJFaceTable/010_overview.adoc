@@ -1,0 +1,165 @@
+== JFace Table Viewer
+
+=== Using the JFace TableViewer
+(((JFace,TableViewer)))
+		
+You can use the
+`TableViewer`
+class to create tables using the JFace framework. The SWT
+`Table`
+widget
+is wrapped into the
+`TableViewer`
+and can still be accessed to set its properties.
+		
+[source,java]
+----
+include::res/snippets/viewer.java[]
+----
+
+=== Content provider for JFace tables
+		
+As with other JFace
+viewers a
+content provider
+supplies the data which
+should be displayed in the
+`TableViewer`.
+		
+Eclipse provides an implementation
+of
+this interface via the
+`ArrayContentProvider`
+class.
+The
+`ArrayContentProvider`
+class supports Arrays or Collections as input, containing the
+domain
+data. You can implement your own
+content provider
+for a table
+by implementing
+the interface
+`IStructuredContentProvider`
+from the
+`org.eclipse.jface.viewers`
+package.
+		
+The
+`getElements()`
+method of the
+content provider
+is used to translate the input of the
+viewer into an array of elements. Once the
+`setInput()`
+method on the viewer is called, it uses the content provider to
+convert it. This is the reason why the content provider must be set
+before the
+`setInput()`
+method is called.
+		
+Each object in the Array returned by the content provider is
+displayed as individual element by the
+viewer. In case of the table
+viewer each object is displayed in an
+individual row.
+		
+The usage of the content provider is demonstrated with the
+following code snippet.
+		
+[source,java]
+----
+include::res/snippets/contentprovider.java[]
+----
+
+=== Columns and label provider
+		
+Columns for a JFace
+`TableViewer`
+object
+are defined by creating instances of the
+`TableViewerColumn`
+class.
+		
+Each
+`TableViewerColumn`
+object
+needs to get a
+label provider
+assigned to it via the
+`setLabelProvider()`
+method. The
+label provider
+defines which data is displayed in the
+column. The label provider for a table viewer column is called
+per row
+and gets the corresponding object as input. It uses this
+input to
+determine which data is displayed in the column for this
+row.
+		
+Typically the label provider returns a String, but more complex
+implementations
+are possible.
+		
+The
+`setLabelProvider()`
+method on the
+`TableViewerColumn`
+expects an instance of the abstract
+`CellLabelProvider`
+class. A default implementation of this class is
+provided by the
+`ColumnLabelProvider`
+class. Its usage is demonstrated in the following code snippet.
+		
+[source,java]
+----
+include::res/snippets/columns.txt[]
+----
+		
+The above code uses two fields which contain
+`Image`
+instances. These fields could for example be initialized via the
+following
+code. Using the classes in this code requires a dependency
+to the
+`org.eclipse.core.runtime`
+plug-in.
+		
+[source,java]
+----
+include::res/snippets/columnshelper.txt[]
+----
+
+=== Reflect data changes in the viewer
+		
+To reflect data changes in the data model that is displayed by the
+viewer,
+you can call the
+`viewer.refresh()`
+method. This method updates the
+viewer
+based on the data which is
+assigned to it.
+		
+To change the data which is displayed use the
+`viewer.setInput()`
+method.
+
+=== Selection change listener
+		
+Via the
+`addSelectionChangedListener`
+method you can add a
+listener to a viewer. This listener is an
+implementation of the
+`ISelectionChangedListener`
+interface. The following code shows an example that gets the selected
+element of the viewer.
+		
+[source,java]
+----
+include::res/snippets/listener.java[]
+----
+

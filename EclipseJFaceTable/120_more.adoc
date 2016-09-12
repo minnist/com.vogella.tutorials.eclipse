@@ -1,0 +1,18 @@
+== Prerequisites
+	
+The following
+provides an
+example how to build a table with the
+JFace Viewer
+framework.
+	
+It assume that you are familiar with creating
+http://www.vogella.com/tutorials/EclipseRCP/article.html[Eclipse RCP applications] or
+http://www.vogella.com/tutorials/EclipsePlugin/article.html[ Eclipse Plug-ins].
+	
+Please
+see
+http://www.vogella.com/tutorials/EclipseJFace/article.html[Introduction to JFace]
+for an introduction to the
+concepts behind this example.
+

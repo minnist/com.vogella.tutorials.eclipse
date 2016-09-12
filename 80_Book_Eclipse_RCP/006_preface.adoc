@@ -160,7 +160,7 @@ continue at the position of
 === Exercise and example code
 
 It is suggested to use a new workspace for the exercises of
-this $book to avoid any side effects of your
+this {textselfreference} to avoid any side effects of your
 developments with
 existing
 projects.

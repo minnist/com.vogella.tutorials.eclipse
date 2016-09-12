@@ -72,7 +72,7 @@ image::e4_coreexpression12.png[Assigning it to the menu entry]
 
 This approach is similar to the definition of core expressions in Eclipse 3.x.
 
-The values available for Eclipse 3.x are contained in the `ISources` interface and documented in the http://wiki.eclipse.org/Command_Core_Expressions"> Eclipse core expressions wiki.
+The values available for Eclipse 3.x are contained in the `ISources` interface and documented in the http://wiki.eclipse.org/Command_Core_Expressions[Eclipse core expressions wiki].
 Eclipse 4 does not always support the same variables, but the wiki documentation might still be helpful.
 
 === Evaluate your own values in core expressions

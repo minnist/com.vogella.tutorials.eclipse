@@ -1,8 +1,9 @@
 == Exercise: Modeling a User Interface
 
-=== Desired user interface
+=== Target: Build the following user interface
 
-In the following exercises you create the basis of the application user interface. At the end of this exercise your user interface should look similar to the following screenshot.
+In the this exercise, you create the basis of the application user interface. 
+At the end of this exercise, your user interface should look similar to the following screenshot.
 
 image::tutorial_model50.png[Screenshot of the application]
 
@@ -12,14 +13,17 @@ Open the _Application.e4xmi_ file in the _Eclipse 4 model editor_ via a double-c
 
 === Add a perspective
 
-Add a perspective stack with one perspective to your application model so that you can later easily add more of them.
+Add a perspective stack with one perspective to your application model.
 
 Navigate to your window inside the _Application.e4xmi_ file. Select the _Controls_ node.
 Add a _Perspective Stack_ via the context menu on the _Controls_ entry as indicated in the following screenshot.
 
 image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application]
 
-TIP:Alternatively to the context menu you can also use the btn:[Add...] button on the detail page to add child elements to the selected element.
+[TIP]
+====
+Alternatively to the context menu you can also use the btn:[Add...] button on the detail page to add child elements to the selected element.
+====
 
 After creating the perspective stack add a _Perspective_ to it, either via the context menu or the btn:[Add...] button.
 

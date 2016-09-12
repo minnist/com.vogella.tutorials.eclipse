@@ -1,4 +1,4 @@
-== Features and Products
+== More to learn about Features and Products
 
 The following description uses feature projects and products, please see
 http://www.vogella.com/tutorials/EclipseFeatureProject/article.html[Feature projects] and

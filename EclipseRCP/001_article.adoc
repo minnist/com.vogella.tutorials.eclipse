@@ -8,14 +8,10 @@
 Version 0.3, 06.07.2016
 :docinfodir: ../
 :vgwort: EclipseRCP
+:textselfreference: tutorial
 
 [abstract]
-Building Eclipse based applications
-
-This tutorial gives an overview about the Eclipse application platform using the Eclipse 4 (e4) programming model.
-
-This tutorial describes the creation of Eclipse based applications, e.g., Eclipse RCP applications.
-It describes the modeled application concept and the new programming model which is based on annotations and dependency injection.
+This tutorial gives an overview about creating Eclipse RCP applications.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
@@ -35,7 +31,6 @@ include::208_featureproduct.adoc[]
 include::210_tutorial_plugin.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::220_tutorial_e4_application.adoc[]
-include::239_tutorial_clearpersistence.adoc[]
 include::240_tutorial_modelelements.adoc[]
 include::242_tutorial_e4_dependencies.adoc[]
 include::244_tutorial_modelelemenentjava.adoc[]
@@ -47,7 +42,6 @@ See http://www.vogella.com/tutorials/DependencyInjection/article.html[Dependency
 
 include::420_dependencyinjection.adoc[]
 include::422_context.adoc[]
-include::424_context_objects.adoc[]
 include::430_programmingmodel.adoc[]
 include::444_tutorial_programmingmodel.adoc[]
 include::450_commands.adoc[]

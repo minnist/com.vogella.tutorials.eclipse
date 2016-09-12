@@ -2,9 +2,8 @@
 
 === Add the plug-in dependencies
 
-In the upcoming exercises you will use the functionality from other Eclipse plug-ins.
-This requires that you define a dependency to
-these plug-ins in your application. 
+In the source code of you new plug-in, you will later use the API from other Eclipse plug-ins.
+The Eclipse programming model requires that you define a dependency to these plug-ins in your new plug-in. 
 
 Remember that _application plug-in_ is the short form for the `com.example.e4.rcp.todo` plug-in.
 

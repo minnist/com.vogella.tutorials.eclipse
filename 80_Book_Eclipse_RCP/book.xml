@@ -234,10 +234,6 @@
 		</chapter>
 
 		<chapter>
-	=== Exercise: Configure the deletion of persisted model data
-			
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/239_tutorial_clearpersistence.adoc[]
-		</chapter>
 		<chapter>
 	=== Exercise: Modeling a user interface
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/240_tutorial_modelelements.adoc[]
@@ -291,12 +287,7 @@
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/422_context.adoc[]
 		</chapter>
 		<chapter>
-	=== Object selection during dependency injection
-
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/424_context_objects.adoc[]
-		</chapter>
-
-		<chapter>
+		
 	=== Using annotations to define behavior
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/430_programmingmodel.adoc[]
 		</chapter>

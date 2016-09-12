@@ -54,8 +54,11 @@ Afterwards select the _Plug-ins_ tab in the editor of the _feature.xml_ file. Pr
 
 image::training_product34.png[Feature project]
 
-WARNING:Ensure you have added the plug-in on the _Included Plug-ins_ tab to include it into your feature.
+[WARNING]
+====
+Ensure you have added the plug-in on the _Included Plug-ins_ tab to include it into your feature.
 Using the _Dependencies_ tab is wrong for this exercise.
+====
 
 === Enter the feature as content into the product
 Open your _todo.product_ product file and change your product configuration file to use features.
@@ -103,7 +106,7 @@ Enter your `com.example.e4.rcp.todo` application plug-in as the container and us
 
 image::training_product50.png[]
 
-Press the _Finish_ button.
+Press the btn:[Finish] button.
 This triggers the creation of the _Application.e4xmi_ file inside the `com.example.e4.rcp.todo` plug-in and opens it.
 
 === Add a window to the application model
@@ -118,13 +121,23 @@ Enter an ID, the position and size of the window and a label as shown in the scr
 
 image::tutorial_product90.png[Enter the data for the TrimmedWindow in the model editor]
 
+=== Ensure to delete the persisted user interface state at startup
 
-[TIP]
-====
 If you start and close your application the last state of the application is persisted by the framework and restored the next time you start this application.
 This is undesired during development, as the latest state from the application model file should be used.
-In <<tutorial_clearpesistence_task" /> you configure your product to remove all the persisted changes from the last run.
+To ensure that always the latest version of your application model is used, add the _-clearPersistedState_ parameter to your product configuration file.
+
+The following screenshot shows this setting in the product configuration file.
+
+image::deletepersistedmodel10.png[Delete persisted Eclipse application model]
+
+
+[WARNING]
 ====
+Ensure that you used the _-_ sign and that the parameter is typed correctly.
+Is must be: _-clearPersistedState_
+====
+
 
 === Start the application
 

@@ -1,25 +1,24 @@
 == Eclipse RCP resources
 
-
 === Eclipse Bug Tracker and Eclipse forum
 
-http://eclipse.org/forums Eclipse Forum for asking questions and providing feedback.
+http://eclipse.org/forums[Eclipse Forum for asking questions and providing feedback]
 
-https://bugs.eclipse.org/bugs/ Eclipse Bug Tracker for reporting errors or feature requests.
+https://bugs.eclipse.org/bugs[Eclipse Bug Tracker for reporting errors or feature requests]
 
 === Eclipse RCP development resources
 
-http://wiki.eclipse.org/Eclipse4/RCP Eclipse 4 RCP Wiki
+http://wiki.eclipse.org/Eclipse4/RCP[Eclipse 4 RCP Wiki]
 
-http://wiki.eclipse.org/Eclipse4/RCP/FAQ Eclipse 4 RCP FAQ
+http://wiki.eclipse.org/Eclipse4/RCP/FAQ[Eclipse 4 RCP FAQ]
 
-http://www.vogella.com/eclipse.html vogella Eclipse Tutorials
+http://www.vogella.com/eclipse.html[vogella Eclipse Tutorials]
 
-http://wiki.eclipse.org/Eclipse4/Tutorials Eclipse wiki with Eclipse 4 tutorials
+http://wiki.eclipse.org/Eclipse4/Tutorials[Eclipse wiki with Eclipse 4 tutorials]
 
-http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection Eclipse 4 dependency injection wiki
+http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection[Eclipse 4 dependency injection wiki]
 
-http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags Eclipse 4 RCP Wiki for tags for the application model
+http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags[Eclipse 4 RCP Wiki for tags for the application model]
 
-http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html Eclipse 4 Build Schedule
+http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html[Eclipse 4 Build Schedule]
 

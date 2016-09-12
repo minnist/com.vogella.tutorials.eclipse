@@ -43,6 +43,7 @@ The Eclipse runtime uses dependency injection to provide the parameters of the m
 The purpose of these annotations are described in the following table.
 
 .Behavior annotations for handler classes
+[cols="1,4"]
 |===
 |Annotation |Description
 
@@ -55,6 +56,7 @@ The framework executes this method once the related user interface element, e.g.
 If a handler class returns `false` in this method, Eclipse disables the corresponding user interface element.
 For example, the save button is active if the handler class returns true in the `@CanExecute` method.
 The default for this method is true, which means, if the handler class can always be executed, it does not need to implement a `@CanExecute` method.
+|===
 
 The following example demonstrates the implementation of a handler class.
 
@@ -83,7 +85,7 @@ The application model allows you to create a handler for the application, a wind
 Each command can have only one valid handler for a given scope.
 The Eclipse framework selects the handler most specific to the model element.
 
- For example, if you have two handlers for the "Copy" command, one for the window and another one for the part then the runtime selects the handlers closest to model element which is currently selected by the user.
+For example, if you have two handlers for the "Copy" command, one for the window and another one for the part then the runtime selects the handlers closest to model element which is currently selected by the user.
 
 === Evaluation of @CanExecute
 
@@ -103,8 +105,8 @@ include::res/canexecutetrigger/triggerevent.java[]
 The application model allows you to define _mnemonics_.
 A mnemonic appears as an underlined letter in the menu when the user presses and holds the kbd:[ALT] key and allows the user to quickly access menu entries by keyboard.
 
-You specify mnemonics by prefixing the letter intended to be the mnemonic with an ampersand (<![CDATA[&]]>) in the label definition.
-For example, the label <![CDATA[&Save]]> with the S underlined (<emphasis role="underline">S</emphasis>) when the kbd:[Alt] key is pressed.
+You specify mnemonics by prefixing the letter intended to be the mnemonic with an ampersand (`&`) in the label definition.
+For example, if you use the the label _&Save_, the S will be underlined if the kbd:[Alt] key is pressed.
 
 === Naming schema for command and handler IDs
 
@@ -166,4 +168,5 @@ A more complete list of command IDs is available in `org.eclipse.ui.IWorkbenchCo
 
 |Exit
 |org.eclipse.ui.file.exit
+|===
 

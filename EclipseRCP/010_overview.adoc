@@ -1,5 +1,33 @@
-== What is an Eclipse RCP application?
+== Eclipse RCP applications
+
+=== What are Eclipse RCP applications?
 
 An Eclipse RCP application is a stand-alone application based on Eclipse platform technologies.
-This $book uses the terms _Eclipse based applications_, _Eclipse application_, _Eclipse 4 application_ and _Eclipse RCP application_ interchangeably for referring to such applications.
+This {textselfreference} uses the terms _Eclipse based applications_, _Eclipse application_, _Eclipse 4 application_ and _Eclipse RCP application_ interchangeably for referring to such applications.
+
+=== History of Eclipse RCP
+
+Eclipse was originally started as a modular IDE application.
+
+In 2004 Eclipse version 3.0 was released.
+The Eclipse 3.0 release supported reusing of the Eclipse platform to build stand-alone applications based on the same technology as the Eclipse IDE.
+
+At this point the term _Eclipse RCP_ was coined.
+Eclipse RCP is short for _Eclipse Rich Client Platform_ and indicates that the Eclipse platform is used as a basis to create feature-rich stand-alone applications.
+
+The release of Eclipse in version 4.x simplified and unified the Eclipse programming model which is now based on state of the art technologies, like a logical model for the application date, dependency injection as primary programming model and declarative styling via CSS files.
+The Eclipse 4 release also supports that the user interface technology is replaced, for example you can exchange the SWT toolkit with JavaFX or GWT.
+
+=== Advantages of Eclipse based applications
+
+The Eclipse platform forms the basis of the most successful Java IDE and therefore is very stable and broadly used.
+
+It uses native user interface components which are fast and reliable. It has a strong modular approach it allows developers to design component based systems.
+
+Companies such as IBM, SAP and Google use the Eclipse framework as a basis for their products and therefore ensure that Eclipse is flexible, fast and continues to evolve.
+
+The Eclipse platform also fosters a large community of individuals which provide support, information and extensions to the Eclipse framework.
+
+Tapping into this ecosystem allows you to find required resources and information.
+
 

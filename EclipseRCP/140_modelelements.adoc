@@ -1,11 +1,13 @@
 === Overview of available model objects
 		
-During startup the Eclipse framework parses the available information about the application model (Application.e4xmi, persisted user changes and model contributions) and stores this information in Java objects.
+During startup the Eclipse framework parses the available information about the application model (Application.e4xmi, persisted user changes and model contributions).
+It stores this information in Java objects during runtime.
 These objects are called _model objects_ and at runtime they represent the attributes from the model elements.
 
- The following table lists the types of the important model objects.
+The following table lists the types of the important model objects.
 
 .Eclipse model elements
+[cols="1,3"]
 |===
 |Model element |Description
 

@@ -5,23 +5,23 @@
 Create the `com.example.e4.rcp.todo.parts` package in the application plug-in.
 
 Create three Java classes called _TodoOverviewPart_, _TodoDetailsPart_ and _PlaygroundPart_ in this package.
-
+All classes should not extend another class, nor should they implement any interface.
 
 [TIP]
 ====
 You can create the classes by clicking on the _Class URI_ hyperlink in the detail pane of the model editor for the part.
 This also connects the created class to the model object.
-If you do this, you can skip <<tutorial_modelelementsclasses" /> of this exercise.
+If you do this, you can skip <<tutorial_modelelementsclasses>>.
 ====
 
 The following code shows the `TodoDetailsPart` class.
-All classes should not extend another class, nor do they implement any interface.
 
 [source,java]
 ----
 include::res/start/TodoDetailsPart.java[]
 ----
 
+[[tutorial_modelelementsclasses]]
 === Connect the Java classes with your parts
 		
 Open the _Application.e4xmi_ file and connect the class with the corresponding part model element.
@@ -31,8 +31,7 @@ The following table gives an overview of which elements should be connected.
 
 .Mapping Java classes with part model element
 |===
-|Class
-|Part ID suffix
+|Class |Part ID suffix
 
 |TodoOverviewPart
 |*.todooverview
@@ -44,7 +43,7 @@ The following table gives an overview of which elements should be connected.
 |*.playground
 |===
 
-The Eclipse 4 model editor allows you to search for an existing class via the btn[Find...] button.
+The Eclipse 4 model editor allows you to search for an existing class via the btn:[Find...] button.
 The initial list of _Contribution Classes_ is empty, start typing in the _Class Name_ field to see the results.
 
 image::tutorial_model60.png[Finding a model class in the Application model]
@@ -55,10 +54,9 @@ image::tutorial_model62.png[Finding a model class in the Application model]
 
 === Validating
 
- Run your application.
- It should start, but you should see no difference in the user interface.
+Start your application.
+It should start, but you should see no difference in the user interface.
 
 To validate that the model objects are created by the Eclipse runtime create a no-argument constructor for one of the classes and add a `System.out.println()` statement.
-
-Afterwards verify that the constructor is called, once you start the application.
+Verify that the constructor is called, once you start the application.
 

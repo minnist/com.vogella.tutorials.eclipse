@@ -1,17 +1,12 @@
 == Parts
 
 Parts are user interface components which allow you to navigate and modify data.
+Parts can be stacked or positioned next to each other depending on the container into which they are dropped.
 A part can have a drop-down menu, context menus and a toolbar.
-
-The Parts can be stacked or positioned next to each other depending on the container into which they are dropped.
 
 image::e4parts10.png[Eclipse application with a few parts]
 
-image::./eclipseide_partsoverview21.png[Eclipse application with a few parts]
-
-image::./eclipseide_partsoverview21.png[Eclipse application with a few parts]
-
-Parts are typically classified as _views_ and _editors_.
+Parts can be classified as _views_ and _editors_.
 
 A view is typically used to work on a set of data, which might be a hierarchical structure.
 If data is changed via the view, this change is typically directly applied to the underlying data structure.

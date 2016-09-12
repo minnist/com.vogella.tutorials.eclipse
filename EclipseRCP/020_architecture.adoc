@@ -2,18 +2,16 @@
 
 === Architecture of Eclipse based applications
 
-An Eclipse application consists of individual software components.
+An Eclipse RCP application consists of individual software components.
+Eclipse applications are based on some basic components, other components use them and provided extended functionality on top of them.
+
 The Eclipse IDE can be viewed as a special Eclipse application with the focus on supporting software development.
+For example, the Java development tools (JDT) provide the functionality to develop Java applications.
 
-The core components of the Eclipse IDE are depicted in the following graphic.
-The intention of the graphic is to demonstrate the general concept, the displayed relationships are not 100% accurate.
+image::architecture10.png[Important Eclipse IDE components]
 
-image::img/architecture10.png[Important Eclipse IDE components]
-
-The most important Eclipse components of this graphic are described in the next section. 
-On top of these base components, the Eclipse IDE adds additional components which are important for an IDE application, for example, the Java development tools (JDT) or version control support (EGit).
-
-An Eclipse RCP application typically uses the same base components of the Eclipse platform and adds additional application specific components as depicted in the following graphic.
+An Eclipse RCP application typically uses the same base components as the Eclipse IDE.
+On top of these, they add application specific components as depicted in the following graphic.
 
 image::./architecture20.png[Typical components of an Eclipse RCP application]
 

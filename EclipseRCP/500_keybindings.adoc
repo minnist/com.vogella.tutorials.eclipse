@@ -11,7 +11,10 @@ A binding context can have several binding tables assigned to it.
 
 Binding contexts are defined hierarchically, so that key bindings in a child override the matching key binding in the parent.
 
-WARNING:Even though they sound similar a binding context is used for keybindings while the Eclipse context (`IEclipseContext`) is used as source for dependency injection.
+[WARNING]
+====
+Even though they sound similar a binding context is used for keybindings while the Eclipse context (`IEclipseContext`) is used as source for dependency injection.
+====
 
 === JFace default values for binding contexts
 

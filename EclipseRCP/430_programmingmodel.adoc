@@ -36,18 +36,21 @@ These annotations are called _behavior annotations_.
 The following table lists the available behavior annotations for parts.
 
 .Eclipse life cycle annotations for parts
+[cols="1,3"]
 |===
 |Annotation |Description
 
 |@PostConstruct
-|Is called after the class is constructed and the field and method injection has been performed.
+|
+Is called after the class is constructed and the field and method injection has been performed.
 
-|@PreDestroy
-|Is called before the class is destroyed.
+| @PreDestroy
+|
+Is called before the class is destroyed.
 Can be used to clean up resources.
 
-|@Focus
-Is called whenever the part gets the focus.
+| @Focus
+| Is called whenever the part gets the focus.
 
 |@Persist
 |Is called if a save request on the part is triggered by the Eclipse framework.
@@ -62,11 +65,13 @@ The `@PostConstruct`, `@PreDestroy` annotations are included in the `javax.annot
 
 Eclipse defines additional behavior annotations for commands and for the application life cycle which are covered in the respective chapters.
 
-=== Behavior annotations imply method dependency injection
 
+[NOTE]
+====
 Behavior annotations imply that the framework needs to provide the specified parameters to the method, i.e., the framework also performs method dependency injection.
 If you also add the `@Inject` annotation, the method is called twice, first during the dependency injection phase and later for the behavior annotation.
 This is typically undesired and therefore an error.
+====
 
 === Use the @PostConstruct method to build the user interface
 
@@ -75,24 +80,17 @@ It would also be possible to create the user interface in the constructor, but t
 
 Creating the user interface in an `@PostConstruct` method requires that `@Inject` methods are aware that the user interface might not have been created yet.
 
-=== Why is the @PostConstruct method not called?
+.Why is the @PostConstruct method not called?
+[NOTE]
+====
+The following description is only valid for Eclipse versions before the Eclipse 4.6 (Eclipse Neon) release.
+As of Eclipse 4.6 the framework uses the Java version of `@PostConstruct` and the problem described here, cannot happen anymore.
 
-Both Java 7 and the Eclipse platform expose the `@PostConstruct` annotation.
+Before Eclipse 4.6, both Java 7 and the Eclipse platform exposed the `@PostConstruct` annotation.
 In your Eclipse application you need to tell the framework that the annotation from the Eclipse platform should be used.
-
-[NOTE]
-====
-Eclipse 4.6 (Neon) fixed that. In Eclipse Neon you do not need a versionized import for the `javax.annotation` package anymore.
-====
-
-In case your `@PostConstruct` method is not called, ensure that you have defined a dependency to `org.eclipse.core.runtime` in the _MANIFEST.MF_ file.
- See http://wiki.eclipse.org/Eclipse4/RCP/FAQ for details on this issue.
-
-[NOTE]
-====
 `org.eclipse.core.runtime` exports `javax.annotation` in the correct version.
-If you have a dependency to `org.eclipse.core.runtime` in your _MANIFEST.MF_ file, no additional package dependency is needed.
+If, for some reasons, you want to avoid a dependency to `org.eclipse.core.runtime` , you could define a package dependency to the `javax.annotation` package and set the version to 1.0.0.
+See  http://wiki.eclipse.org/Eclipse4/RCP/FAQ[Eclipse 4 RCP FAQ] for details on this issue.
 ====
 
-If, for some reasons, you want to avoid a dependency to `org.eclipse.core.runtime` , you could define a package dependency to the `javax.annotation` package and set the version to 1.0.0.
 

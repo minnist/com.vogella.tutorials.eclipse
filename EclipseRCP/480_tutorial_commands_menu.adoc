@@ -104,8 +104,11 @@ image::menu04.png[]
 
 Assign the `org.eclipse.ui.main.menu` ID to your main menu.
 
-WARNING:Ensure that this ID of the main menu is correct.
+[WARNING]
+====
+Ensure that this ID of the main menu is correct.
 You use it later to contribute another menu entry via another plug-in.
+====
 
 Add two menus, one with the name "File" and the other one with the name "Edit" in the _Label_ attribute.
 

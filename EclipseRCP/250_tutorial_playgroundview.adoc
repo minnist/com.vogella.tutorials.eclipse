@@ -2,15 +2,12 @@
 
 === Implementation
 
-In this exercise you will display Google Maps in an SWT `Browser` widget.
-
+In this exercise you use several SWT widgets to allow to search and display cities on Google maps.
 		
 [NOTE]
 ====
 This exercise does not always work on a Linux system because on certain Linux versions the `Browser` widget does not work.
-See the Eclipse SWT FAQ answered at http://www.eclipse.org/swt/faq.php#browserwebkitgtk
-
-How do I use the WebKit renderer on Linux-GTK for details.
+See the Eclipse SWT FAQ answered at http://www.eclipse.org/swt/faq.php#browserwebkitgtk[How do I use the WebKit renderer on Linux-GTK for details].
 ====
 
 Change the `PlaygroundPart` class so the part looks like the following screenshot.

@@ -1,0 +1,83 @@
+== Data Binding with SWT controls
+
+=== First example
+		
+Create a new
+Eclipse RCP
+project "de.vogella.databinding.example"
+using the template "RCP
+application with a View".
+		
+Create the
+`de.vogella.databinding.person.model`
+package and the
+following model classes.
+		
+[source,java]
+----
+include::res/model/Person.java[]
+----
+		
+[source,java]
+----
+include::res/model/Address.java[]
+----
+		
+Add the JFace Data Binding plug-ins as dependency to your plug-in.
+		
+Change the
+`View`
+class to the following.
+		
+[source,java]
+----
+include::res/person/View.java[]
+----
+
+Run the example and test it. Each time you change the UI
+element
+then model changes automatically. If you change the model
+then
+the UI
+will also update. Try to input something else then a number iN
+the age
+field you will get an error symbol in the UI and if the mouse
+hovers
+over the symbol you see the error message.
+
+=== More Customer Validations and ControlDecoration
+		
+The following extends the example with the usage of
+_Validators_
+and
+_Decorators_.
+		
+In this example the
+_Validators_
+ensures that the firstName has at
+least 2
+characters. A new
+label
+displays the
+validation status via a
+_Decorator_
+.
+		
+image::validation10.png[]
+		
+Create the following
+`StringLongerThenTwo`
+class.
+		
+[source,java]
+----
+include::res/validator/StringLongerThenTwo.java[]
+----
+		
+The following shows the new  code for `View.java`.
+		
+[source,java]
+----
+include::res/validator/View.java[]
+----
+

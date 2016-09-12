@@ -23,11 +23,11 @@ application="org.eclipse.e4.ui.workbench.swt.E4Application"
         <property
               name="appName"
               value="Todo">
-        </property>
+        `
         <property
               name="applicationXMI"
               value="de.vogella.e4.todo/Application.e4xmi">
-        </property>
+        `
      </product>
   </extension>
 

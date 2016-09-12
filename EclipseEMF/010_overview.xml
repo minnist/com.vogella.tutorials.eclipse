@@ -39,11 +39,11 @@
 			`Person`
 			class
 			could have the
-			<property>firstName</property>
+			`firstName`
 			,
-			<property>lastName</property>
+			`lastName`
 			,
-			<property>Address</property>
+			`Address`
 			properties, etc.
 		
 

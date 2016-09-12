@@ -15,7 +15,7 @@ Version 0.3, 06.07.2016
     <section>
         <title>Target
         Add a custom property page to the properties of those projects, which have
-                <property>com.example.project.examplenature</property> as project nature.
+                `com.example.project.examplenature` as project nature.
     
     <section>
         <title>Adding a custom property page
@@ -37,9 +37,9 @@ include::res/ExamplePropertyPage.java"/>
     <section>
         <title>Optional - Reuse project nature definition
         We only want to add the custom property page, in case the
-                <property>com.example.project.examplenature</property> project nature is set.
-        Therefore we define a <property>enabledWhen</property> definition, with the
-                <property>com.example.project.hasNature</property> expression, which has been
+                `com.example.project.examplenature` project nature is set.
+        Therefore we define a `enabledWhen` definition, with the
+                `com.example.project.hasNature` expression, which has been
             created in the previous optional exercise. See <xref
                 linkend="optional_project_nature_definition"/>
         
@@ -61,7 +61,7 @@ include::res/ExamplePropertyPage.java"/>
         
         In case you have also done the optional exercises the _Example
                 Settings_should only be visible, if the
-                <property>com.example.project.examplenature</property> project nature is applied to
+                `com.example.project.examplenature` project nature is applied to
             the project.
     
     

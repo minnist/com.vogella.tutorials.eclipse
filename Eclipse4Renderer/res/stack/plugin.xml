@@ -22,16 +22,16 @@ Version 0.3, 06.07.2016
          <property
                name="applicationXMI"
                value="com.example.e4.rcp.todo/Application.e4xmi">
-         </property>
+         `
          <property
                name="appName"
                value="to-do">
-         </property>
+         `
       <property
         name="rendererFactoryUri"
         value="bundleclass://com.example.e4.renderer.swt/[CONTINUE...]
         com.example.e4.renderer.swt.MyRendererFactory">
-       </property>
+       `
       </product>
    </extension>
 

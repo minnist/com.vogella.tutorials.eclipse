@@ -50,10 +50,9 @@ image::CustomSelectionService_twoPerspectives10.png"
 			following handler.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text"
-					href="./examples/replaceselectionservice/SwitchPerspectiveHandler.java[]
+[source,java]
+----
+include::res/replaceselectionservice/SwitchPerspectiveHandler.java[]
 ----
 		
 

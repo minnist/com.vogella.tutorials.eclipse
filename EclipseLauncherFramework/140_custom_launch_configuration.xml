@@ -28,11 +28,11 @@
 include::res/custom_launch/launchConfigurationTypes.xml[]
 ----
 		
-		The different <property>modes</property> are `ILaunchManager.RUN_MODE`,
+		The different `modes` are `ILaunchManager.RUN_MODE`,
 				`ILaunchManager.DEBUG_MODE` and
 			`ILaunchManager.PROFILE_MODE`.
 		You can set one or more of these modes, as depicted in the programlisting above.
-		The <property>delegate</property> must be an implementation of the
+		The `delegate` must be an implementation of the
 				﻿`ILaunchConfigurationDelegate` interface, which contains just one
 			method.
 		This method is responsible for the actual launch. The

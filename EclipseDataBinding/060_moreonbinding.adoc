@@ -1,0 +1,160 @@
+== More on bindings
+
+=== ControlDecorators
+(((JFace Data Binding,ControlDecorators)))
+		
+JFace Data Binding allows you to use icon decorators in
+the user
+interface which reflect the status of the field
+validation. This
+allows you to provide immediate feedback to the user. For the
+creation of the control decoration you use the return object from the
+`bindvalue()`
+method of
+`DataBindingContext`
+object.
+		
+[source,java]
+----
+include::res/snippets/decorations.java[]
+----
+		
+The result might look like the following screenshot.
+		
+image::controldecoration17.png[ControlDecoration with databinding]
+
+=== Binding values of a radio button group
+		
+When using radio buttons each button usually represents a certain
+value. In order to
+bind the value according to the selected state in a
+radio button group, the
+`SelectObservableValue`
+class is the right choice.
+		
+The following example shows how to bind the currently selected radio
+value to a
+`Label`.
+		
+[source,java]
+----
+include::res/snippets/SelectObservableValue.java[]
+----
+		
+The result of this snippet, should look like this:
+		
+image::SelectObservableValue.png[]
+
+=== Listening to all changes in the binding
+(((JFace Data Binding,Listener)))
+		
+You can register a listener to all bindings of the
+`DataBindingContext`
+class. Your listener will be called when something has changed.
+		
+For example this can be used to determine the status of a
+part
+which
+behaves like an
+editor. If its data model changes, this editor
+marks itself as dirty.
+		
+[source,java]
+----
+include::res/editor/dirty.java[]
+----
+
+=== Placeholder binding with WritableValue
+(((JFace Data Binding,WritableValue)))
+		
+You can create bindings to a
+`WritableValue`
+object.
+A
+`WritableValue`
+object
+can
+hold a reference to another object.
+		
+You can exchange this reference in
+`WritableValue`
+and the databinding will use the new (reference) object for its
+binding.
+This way you can create the binding once and still exchange
+the object
+which is bound by databinding.
+		
+To bind to a
+`WritableValue`
+you use the
+`observeDetail()`
+method,
+to inform the framework that you would like to observe
+the
+contained
+object.
+		
+[source,java]
+----
+include::res/snippets/writablevalue.java[]
+----
+
+=== ComputedValue and observable trackers
+		
+A
+`ComputedValue`
+provides an abstract
+`calculate`
+method, which is able to compute a
+value from observable trackers,
+which are referenced in it's
+`calculate`
+method.
+		
+[source,java]
+----
+include::res/computedvalue/ComputedValuePersonNameImpl.java[]
+----
+		
+Since Eclipse Neon a new
+`create`
+method has been introduced, which accepts a Supplier that contains
+the actual implementation of the calculate method.
+		
+So there's no need any more to derive from
+`ComputedValue`.
+		
+[source,java]
+----
+include::res/computedvalue/ComputedValuePersonNameCreate.java[]
+----
+		
+So basically ComputedValue can easily combine different
+observables and is recomputed every time one of the tracked getter
+are touched.
+		
+A really popular example of a
+`ComputedValue`
+implementation is the
+`AggregateValidationStatus`
+, which keeps track of all validation statuses, which have been
+passed to it and aggregates them to one MultiStatus or just returns
+the one with maximum severity.
+		
+It is also a great alternative to converter implementations. For
+instance the previously described
+`AggregateValidationStatus`
+returns an
+`IStatus`
+as value, but if this should be bound to the enable state of a
+_Finish_
+button, having a boolean value would be necessary.
+		
+[source,java]
+----
+include::res/computedvalue/ComputedValueButtonValidationEnablement.java[]
+----
+		
+Applying an IConverter to convert from IStatus to boolean would
+be far more overhead.
+	

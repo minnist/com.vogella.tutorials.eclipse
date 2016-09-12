@@ -1,0 +1,201 @@
+== Data binding with JFace
+
+=== Using JFace data binding
+(((Data binding, seealso=JFace data binding)))
+
+The
+_JFace data binding_
+framework allows to synchronize changes in
+properties of
+objects. Validation and conversion
+during
+the
+synchronization
+process is supported.
+
+For example you could bind the String property called
+`firstName`
+of
+a
+Java object to a
+`text`
+property of the
+SWT
+`Text`
+widget. If the user changes the text in the user interface, the
+corresponding
+property in the Java object is updated.
+
+To observe changes in an attribute of a Java object, a
+data
+binding framework needs
+to be able to register itself
+as a
+listener to
+this
+attribute.
+JFace data binding provides API to register to changes in SWT widgets and JFace UI elements.
+Other Java object must
+implement this support. For example you can implement
+`PropertyChangeSupport`
+according to the Java
+Bean specification in these Java elements. Or you can use
+the
+`WritableValue`
+interface from JFace
+inside the model.
+
+The
+`IObservableValue`
+interface is the basis for
+observing properties in JFace.
+The
+`Properties API`
+provides factories to create
+`IObservableValue`
+objects.
+The main factories are to created instances of
+`IObservableValue`
+are listed in the following table.
+
+[[databinding_observable_factories]]
+.Factories for the creation of an IObservableValue object 
+|===
+|Factory |Description
+
+|`PojoProperties`
+|Used to create `IObservableValue` for Java objects. 
+The term Pojo (Plain old Java object) is used to describe a Java object which does not implement a specific framework API.
+
+|`BeanProperties`
+|Used for Java Beans. A Java Bean is a Java object which follows the Java Bean
+specification. This specification
+requires that the class
+implements
+`getter`
+and
+`setter`
+methods for all its attributes. It must also
+implement
+property change
+support via the
+`PropertyChangeSupport`
+class and propagate changes to registered listeners.
+
+|`WidgetProperties`
+|Used for properties of SWT widgets.
+
+|`ViewerProperties`
+|Used for properties of JFace Viewer.
+
+|`Properties`
+|Used for properties of non specialized types, like Objects, Collections or Maps.
+
+|`Observables`
+|Used for properties of special Objects, Collections, Maps
+and Entries of an IObservableMap.
+
+|===
+
+The following code demonstrates how to create an
+`IObservableValue`
+object
+for the
+`firstName`
+property of a Java object called
+`person`.
+
+[source,java]
+----
+include::res/personpojo/View.java[]
+----
+
+The next example demonstrates how to create an
+`IObservableValue`
+for the
+`text`
+property of an SWT
+`Text`
+widget called
+`firstNameText`.
+
+[source,java]
+----
+include::res/snippets/widgetProperties.java[]
+----
+
+The following plug-ins are required to use
+JFace Data Binding.
+
+* org.eclipse.core.databinding
+* org.eclipse.core.databinding.beans
+* org.eclipse.core.databinding.property
+* org.eclipse.jface.databinding
+
+=== JFace data binding and generics
+
+In Eclipse 4.6 the data binding framework has been partially generified. This work is planned to be finished in
+4.7.
+Currently you need to use
+`@SuppressWarnings("unchecked")`
+sometimes in your data binding code to avoid compiler warnings.
+
+=== Example for a Java bean implementation
+
+A Java class which provides
+`PropertyChangeSupport`
+looks
+like the following example.
+
+[source,java]
+----
+include::res/beans/ModelObject.java[]
+----
+
+Other domain classes could extend this class. The following
+example demonstrates that.
+
+[source,java]
+----
+include::res/beans/Person.java[]
+----
+
+=== Using JFaces WritableValue class to track changes
+
+If you are able to use JFace API in your domain model, you can use
+`WritableValue`
+to provide the option to track values.
+
+[source,java]
+----
+include::res/writable/Person.java[]
+----
+
+=== Data binding and Java objects without change notification
+
+If you connect two properties and one of these properties cannot be observed, you
+you
+can
+still
+use data binding for a
+uni-directional binding.
+For example, you can connect the
+_text_
+property of a SWT
+`Text`
+field to the
+_summary_
+field of a
+`Todo`
+object, even if Todo cannot be observed.
+In this case, updates in the summary of the
+`Todo`
+object will not update the
+`Text`
+widget. But relevant change in the
+`Text`
+widget
+user interface will update the
+`Todo`
+property.
+

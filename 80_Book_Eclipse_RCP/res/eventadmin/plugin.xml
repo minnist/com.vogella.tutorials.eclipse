@@ -12,11 +12,11 @@
          <property
           name="applicationXMI"
           value="com.example.e4.rcp.todo/Application.e4xmi">
-         </property>
+         `
          <property
                name="appName"
                value="to-do">
-         </property>
+         `
       </product>
    </extension>
    

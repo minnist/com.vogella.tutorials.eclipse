@@ -8,12 +8,12 @@
          <property
                name="appName"
                value="to-do">
-         </property>
+         `
  <property
   	name="lifeCycleURI"
 	value=
 "bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager">
-  </property>
+  `
   <!-- other properties omitted --> 
       </product>
    </extension>

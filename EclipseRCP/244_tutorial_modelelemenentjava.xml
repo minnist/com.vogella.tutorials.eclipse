@@ -57,7 +57,7 @@ include::res/start/TodoDetailsPart.java[]
 			You can do
 			this via
 			the
-			<property>Class URI</property>
+			`Class URI`
 			property
 			of
 			the

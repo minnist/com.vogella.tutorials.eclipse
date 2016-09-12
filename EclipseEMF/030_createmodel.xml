@@ -150,7 +150,7 @@ image::firstemfproject90.png[]
 			_References_
 			and create an arrow similar to the following
 			picture. Make sure the upper bound is set to "-1" (* on the user interface) and that the
-			<property>Containment</property>
+			`Containment`
 			property is flagged.
 		
 
@@ -197,7 +197,7 @@ image::model96.png[]
 			and select the
 			_Webpage_
 			node. Set the
-			<property>base package</property>
+			`base package`
 			property to
 			_de.vogella.emf.webpage.model_
 			.

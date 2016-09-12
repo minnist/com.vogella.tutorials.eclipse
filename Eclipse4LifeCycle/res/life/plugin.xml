@@ -9,19 +9,19 @@
          <property
             name="appName"
             value="testing">
-         </property>
+         `
          <property
            name="applicationXMI"
            value="testing/Application.e4xmi">
-         </property>
+         `
          <property
            name="applicationCSS"
            value="platform:/plugin/testing/css/default.css">
-         </property>
+         `
          <property
            name="lifeCycleURI"
            value="bundleclass://testing/testing.LifeCycleManager">
-         </property>
+         `
       </product>
    </extension>
 

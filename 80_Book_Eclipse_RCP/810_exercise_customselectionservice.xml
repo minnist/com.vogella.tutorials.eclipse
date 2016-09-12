@@ -44,10 +44,9 @@ include::res/replaceselectionservice/MyContextFunction.java[]
 === Register the context function via a model add-on
 		Define the following class. 
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text"
-					href="./examples/replaceselectionservice/ReplaceSelectionService.java[]
+[source,java]
+----
+include::res/replaceselectionservice/ReplaceSelectionService.java[]
 ----
 		
 

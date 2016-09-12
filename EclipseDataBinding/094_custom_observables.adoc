@@ -1,0 +1,156 @@
+== Extending data binding with custom observables
+
+=== Developing custom observables
+
+Sometimes the observables, which are provided by the factories (see
+<<databinding_observable_factories>>
+), are not sufficient and you might want to create a custom
+`IObservable`.
+
+This implementation can extend the
+`AbstractObservable`
+class
+or one
+of it's subclasses, like the
+`AbstractObservableValue`
+class.
+
+For example the following custom widget allows to set a text.
+
+[source,java]
+----
+include::res/custom_observable/CustomWidget.java[]
+----
+
+
+NOTE: Since there is no predefined
+`IObservable`
+for custom widgets, you have to
+implement a custom one.
+While is is possible to use
+`PojoProperties`
+class
+to create an
+`IObservableValue`
+by using
+`PojoProperties.value("text").observe(customWidget)`
+this would not result in an
+`ISWTObservableValue`.
+Only by using an
+`ISWTObservable`
+classes like
+`ControlDecorationSupport`
+would work, because only those offer a
+`public Widget getWidget();`
+method, so that the widget may be
+decorated.
+
+=== Directly implement IObservable
+
+The
+`CustomWidgetObservableValue`
+extends
+`AbstractObservableValue`
+and also implements the
+`ISWTObservableValue`
+interface.
+
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableValue.java[]
+----
+
+This observable can then be used like this:
+
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableSamplePart_Observable.java[]
+----
+
+=== Implement an IProperty rather than IObservable directly
+
+A better approach is to implement the
+`IProperty`
+interface, like
+`IValueProperty`
+,
+`IWidgetValueProperty`
+and others.
+
+So let's implement the solution of the previous section with an
+`IProperty`
+implementation.
+
+[source,java]
+----
+include::res/custom_observable/CustomWidgetProperty.java[]
+----
+
+This
+`WidgetValueProperty`
+can be used like this:
+
+[source,java]
+----
+include::res/custom_observable/CustomWidgetObservableSamplePart_Property.java[]
+----
+
+=== Delegates for common properties of different objects
+
+Delegating properties act a bit like a factory for
+`IProperty`
+objects,
+where the
+`IProperty`
+is not created directly, but at the moment, when the
+`observe`
+method is called. For instance a
+`DelegatingValueProperty`
+creates a
+`IValueProperty`
+according
+to the object, which should be observed.
+
+So you can decision, which
+`IValueProperty`
+is used, is made at the moment, when the
+`observe`
+method is actually called.
+
+Imagine, we want such a factory for the
+`IValueProperty`
+classes we created
+in the former sections. Therefore we can derive from
+`DelegatingValueProperty`.
+
+[source,java]
+----
+include::res/custom_observable/VogellaDelegatingValueProperty.java[]
+----
+
+In order to have a factory like the
+`WidgetProperties`
+class, we could
+create a
+`VogellaProperties`
+class.
+
+[source,java]
+----
+include::res/custom_observable/VogellaProperties.java[]
+----
+
+You might want to have a look at
+the
+`WidgetProperties`
+, which contains several methods with more sense for
+those delegates.
+
+Here is the code how to use the factory for "vogella" properties and some samples, which fit to the
+intention of the delegates.
+
+[source,java]
+----
+include::res/custom_observable/VogellaPropertiesPart.java[]
+----
+

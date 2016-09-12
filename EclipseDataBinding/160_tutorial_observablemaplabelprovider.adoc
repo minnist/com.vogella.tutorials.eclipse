@@ -1,0 +1,20 @@
+== Using ObservableListContentProvider and ObservableMapLabelProvider
+	
+If you use
+`WritableList`
+and
+`ObservableListContentProvider`
+you only listens to the changes in the list. You
+can use
+`ObservableMapLabelProvider`
+to listen to changes of the individual objects.
+	
+Change the
+`View.java`
+to the following.
+	
+[source,java]
+----
+include::res/viewer/View.java[]
+----
+	

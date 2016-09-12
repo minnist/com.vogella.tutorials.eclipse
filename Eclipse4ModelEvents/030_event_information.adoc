@@ -158,9 +158,9 @@ concerned in the event. For an example see
 === NEW_VALUE and OLD_VALUE event tags
 
 The
-<property>NEW_VALUE</property>
+`NEW_VALUE`
 and
-<property>OLD_VALUE</property>
+`OLD_VALUE`
 properties
 contain the changed value of the element's attribute.
 
@@ -194,7 +194,7 @@ include::res/perspective_stack_selected_element_event.java[]
 
 In case you want to listen to a kind of "perspective changed" event, you need to
 listen to the change of the
-<property>selectedElement</property>
+`selectedElement`
 attribute of the
 `MPerspectiveStack`
 and can get the new and old
@@ -207,7 +207,7 @@ properties.
 
 
 So you actually listen to the changed
-<property>selectedElement</property>
+`selectedElement`
 attribute
 value of the
 `MPerspectiveStack`
@@ -223,7 +223,7 @@ occur within the application model.
 === TYPE event tag
 
 With the
-<property>TYPE</property>
+`TYPE`
 event tag you may determine what action has been
 done to the application model.
 
@@ -269,7 +269,7 @@ For an example see
 === POSITION event tag
 
 The
-<property>POSITION</property>
+`POSITION`
 event tag contains the new position of model
 elements. So this property is only set in case a collection of elements
 is
@@ -309,7 +309,7 @@ add or remove events.
 === WIDGET event tag
 
 The
-<property>WIDGET</property>
+`WIDGET`
 event tag can be used to get the underlying widget,
 e.g., a
 `Composite`

@@ -10,16 +10,16 @@
          <property
                name="applicationCSS"
                value="platform:/plugin/com.vogella.e4.appmodel.app/css/default.css">
-         </property>
+         `
          <property
                name="appName"
                value="com.vogella.e4.appmodel.app">
-         </property>
+         `
          <property
                name="rendererFactoryUri"
                value="bundleclass://com.vogella.e4.appmodel.renderer/[LINEBREAK]
                com.vogella.e4.appmodel.renderer.MyRendererFactory">
-         </property>
+         `
       </product>
    </extension>
 

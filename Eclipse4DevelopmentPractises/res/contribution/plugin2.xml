@@ -11,7 +11,7 @@
          <property
                name="applicationXMI"
                value="de.vogella.e4.rcp.modelcontribution/Application.e4xmi">
-         </property>
+         `
       </product>
    </extension>
  

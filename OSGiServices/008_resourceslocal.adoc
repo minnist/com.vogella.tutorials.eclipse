@@ -1,0 +1,16 @@
+== OSGi Resources
+
+http://www.osgi.org[OSGi Homepage]
+	
+http://www.eclipse.org/equinox[Equinox Homepage]
+	
+http://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider[OSGi remote RESTFul service tutorial Equinox Homepage]
+	
+http://www.eclipse.org/community/eclipse_newsletter/2013/july/article3.php[OSGi remove service tutorial with ECF Equinox Homepage]
+	
+http://www.eclipse.org/equinox[Equinox Homepage]
+
+http://www.eclipse.org/equinox/documents/quickstart.php[Equinox Quickstart guide]
+	
+http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/[OSGi Blueprint services]
+	

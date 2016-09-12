@@ -1,0 +1,7 @@
+== Prerequisite
+	
+The following assumes that you are familiar with the OSGi runtime
+and
+its modularity layer as described in
+http://www.vogella.com/tutorials/OSGi/article.html[OSGi modularity].
+

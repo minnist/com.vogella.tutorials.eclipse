@@ -1,0 +1,11 @@
+== Bndtools
+	
+Eclipse use the PDE tooling to manage bundles. Alternatively you
+can
+use Bndtools hosted at
+http://bndtools.org/.
+	
+Please see
+http://bndtools.org/tutorial.html[Bndtools tutorial]
+for an introduction.
+

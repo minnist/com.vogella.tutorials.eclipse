@@ -1,0 +1,65 @@
+== Tutorial: Using services via declarative services
+
+Of course you can also define the consumption of services via DS.
+
+Create a new plug-in "de.vogella.osgi.ds.quoteconsumer". Do not
+use a
+template, do not create an activator. Import the package
+"de.vogella.osgi.quote" in MANIFEST.MF on the
+_Dependencies_
+tab.
+
+Create the following class. 
+
+[source,java]
+----
+include::res/dsconsumer/QuoteConsumer.java[]
+----
+
+TIP: Note that this class has no dependency to OSGi.
+
+Create the
+_OSGI-INF_
+folder and create a new
+_Component Definition_
+in this folder.
+
+image::dsconsumer10.gif[]
+
+This time we will use a service. Maintain the "Referenced Services".
+
+image::dsconsumer20.gif[]
+
+Make the relationship to the
+`bind()`
+and
+`bind()`
+method by selecting your entry can by pressing the
+_Edit_
+button.
+
+image::dsconsumer30.gif[]
+
+The result component.xml should look like: 
+
+[source,xml]
+----
+include::res/dsconsumer/component.xml[]
+----
+
+The result MANIFEST.MF should look like: 
+
+[source,text]
+----
+include::res/dsconsumer/MANIFEST.MF[]
+----
+
+Export your plug-in and install it via:
+install
+file:c:\temp\bundles\plugins
+\de.vogella.osgi.ds.quoteconsumer.jar
+
+"If you start the bundle now with "start id_of_your_bundle" you
+should get the feedback that the service was set and one quote should
+be returned
+

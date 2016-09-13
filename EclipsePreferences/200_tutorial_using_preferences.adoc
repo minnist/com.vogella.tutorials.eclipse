@@ -1,24 +1,21 @@
 == Tutorial: Preferences via code
 	
-		You can create, store and retrieve preference values directly via
-		your
-		coding. The following gives an example for this. Create an Eclipse
-		composite with three buttons. Use this composite in one of your parts
-		(View or Editor).
-	
+You can create, store and retrieve preference values directly via
+your
+coding. The following gives an example for this. Create an Eclipse
+composite with three buttons. Use this composite in one of your parts
+(View or Editor).
 	
 
-		The first
-		`Button`
-		will set the preference values. The next will display the values and
-		the last will clear the preference values.
-	
+The first
+`Button`
+will set the preference values. The next will display the values and
+the last will clear the preference values.
 	
 [source,java]
 ----
 include::res/preferences/ButtonComposite.java[]
 ----
-	
-	 Run and test your program.
-	
 
+Run and test your program.
+	

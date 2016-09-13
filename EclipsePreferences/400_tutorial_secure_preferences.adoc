@@ -1,20 +1,17 @@
 == Tutorial: Secure storage of preferences
 	
-		To test the secure storage of preferences create the project
-		_de.vogella.preferences.security_
-		with a
-		view and add the
-		`org.eclipse.equinox.security`
-		plug-in as a dependency to
-		it.
+To test the secure storage of preferences create the project
+_de.vogella.preferences.security_
+with a
+view and add the
+`org.eclipse.equinox.security`
+plug-in as a dependency to
+it.
 	
-
-	 Change the code of your view to the following. 
-
+Change the code of your view to the following. 
 	
 [source,java]
 ----
 include::res/security/View.java[]
 ----
-	
 

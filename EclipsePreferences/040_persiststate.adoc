@@ -1,37 +1,29 @@
 == Persistence of part state
-
-
 	
-		Eclipse provides the
-		`@PersistState`
-		annotation. This annotation can be applied to a method in a class
-		referred to a part.
+Eclipse provides the
+`@PersistState`
+annotation. This annotation can be applied to a method in a class
+referred to a part.
 	
-
+Such an annotated method can be used to store the instance state of
+the part.
+The Eclipse
+framework calls such a method whenever the part or
+the application
+closes. The
+stored information can be used in the
+method
+annotated with the
+`@PostConstruct`
+annotation. A typical use case for such a method would be to store the
+state of
+a checkbox.
 	
-		Such an annotated method can be used to store the instance state of
-		the part.
-		The Eclipse
-		framework calls such a method whenever the part or
-		the application
-		closes. The
-		stored information can be used in the
-		method
-		annotated with the
-		`@PostConstruct`
-		annotation. A typical use case for such a method would be to store the
-		state of
-		a checkbox.
-
-	
-	The usage of this annotation is demonstrated in the following
-		example code.
-	
+The usage of this annotation is demonstrated in the following
+example code.
 	
 [source,java]
 ----
 include::res/persistsstate/Example.java[]
 ----
-	
-
 

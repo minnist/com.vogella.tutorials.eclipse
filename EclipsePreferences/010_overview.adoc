@@ -1,206 +1,154 @@
 == Eclipse Preference basics
 
 === Preferences and scopes
-		
 (((Preferences,Instance scope)))
-		
 (((Preferences,Configuration scope)))
-		
 (((Preferences,Default scope)))
-		
 (((Preferences,BundleDefaultsScope)))
-		
-		
-			The Eclipse platform supports
-			_preferences_
-			for persisting data between application restarts. Preferences are
-			stored as
-			key / value
-			pairs. The key is an
-			arbitrary
-			String. The value
-			can be a
-			boolean, String, int or
-			another
-			primitive type. For
-			example the
-			_user_
-			key may point to the value
-			_vogella_
-			.
-		
 
-		
-			The preference support in Eclipse is based on the
-			`Preferences`
-			class from the
-			`org.osgi.service.prefs`
-			package. Eclipse
-			preferences
-			are
-			very
-			similar to the standard Java
-			preferences API but use the
-			Eclipse
-			framework
-			to save and
-			retrieve
-			the
-			configuration and support
-			_scopes_
-			.
-		
+The Eclipse platform supports
+_preferences_
+for persisting data between application restarts. Preferences are
+stored as
+key / value
+pairs. The key is an
+arbitrary
+String. The value
+can be a
+boolean, String, int or
+another
+primitive type. For
+example the
+_user_
+key may point to the value
+_vogella_.
 
+The preference support in Eclipse is based on the
+`Preferences`
+class from the
+`org.osgi.service.prefs`
+package. Eclipse
+preferences
+are
+very
+similar to the standard Java
+preferences API but use the
+Eclipse
+framework
+to save and
+retrieve
+the
+configuration and support
+_scopes_.
 
-		
-			The scope defines
-			how the
-			preference data is stored and how it is
-			changeable. The Eclipse runtime defines three scopes
-			as
-			explained in the following table.
+The scope defines
+how the
+preference data is stored and how it is
+changeable. The Eclipse runtime defines three scopes
+as
+explained in the following table.
 
-.Table Title
+.Eclipse Preference scope
 |===
+|Scope |Description
 
-		=== Eclipse Preference scope
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					
-						
-|Scope
-|Description
-						
-					
-					
-						
 |Instance scope
 |Preferences in this scope are specific to a single Eclipse workspace.
-								If the user runs start same Eclipse
-								application
-								for different workspaces, the
-								settings
-								between the
-								applications
-								can be different.
-							
-						
+If the user runs start same Eclipse
+application
+for different workspaces, the
+settings
+between the
+applications
+can be different.
 
-						
 |Configuration scope
 |Settings for identical for the same installation.
-								Preferences stored in this scope are shared across all
-								workspaces.
-							
+Preferences stored in this scope are shared across all
+workspaces.
 
-						
-						
 |Default scope
 |Default values can not be changed.
-								This scope is not stored on disk at all but can be used to store
-								default
-								values for all your keys.
-								These preferences
-								are supplied via
-								configuration files in plug-ins and product
-								definitions.
-							
-						
-						
+This scope is not stored on disk at all but can be used to store
+default
+values for all your keys.
+These preferences
+are supplied via
+configuration files in plug-ins and product
+definitions.
+
 |BundleDefaultsScope
-|
-								Similar to the default scope, these values are not written to disk.
-								They are read from a
-								file, typically named
-								_preferences.ini_
-								.
-							
-						
-					
-				
-|===
-		
+|Similar to the default scope, these values are not written to disk.
+They are read from a
+file, typically named
+_preferences.ini_.
 	
+|===
 
 === Storage of the preferences
-		
-			Eclipse stores the preferences in the workspace of your
-			application in
-			the
-			_.metadata/.plugins/org.eclipse.core.runtime/.settings/
-			_
-			directory in the
-			_<![CDATA[<nodePath>.prefs]]>_
-			file.
-		
-		
-			The <![CDATA[<nodePath>]]>
-			is by default the Bundle-SymbolicName of the plug-in but can be
-			specified via the preference API.
-			The workspace is by
-			default the
-			directory
-			in which the
-			application starts.
-		
-		
-			You can configure the storage location of the preferences
-			via the
-			_-data path_
-			launch parameter in Eclipse. To place the preferences in the user
-			home directory use the
-			_-data @user.home_
-			parameter setting.
-		
-	
+
+Eclipse stores the preferences in the workspace of your
+application in
+the
+_.metadata/.plugins/org.eclipse.core.runtime/.settings/_
+directory in the
+_<nodePath>.prefs_ file.
+
+The _<nodePath>_
+is by default the Bundle-SymbolicName of the plug-in but can be
+specified via the preference API.
+The workspace is by
+default the
+directory
+in which the
+application starts.
+
+You can configure the storage location of the preferences
+via the
+_-data path_
+launch parameter in Eclipse. To place the preferences in the user
+home directory use the
+_-data @user.home_
+parameter setting.
 
 === Eclipse preference API
-		
-			You can create and manipulate preferences directly via
-			Singletons
-			provided by the Eclipse runtime. You have the
-			`InstanceScope`
-			,
-			`ConfigurationScope`
-			and
-			`DefaultScope`
-			classes which give access to the corresponding instance via the
-			`INSTANCE`
-			field.
-		
 
-		
-			Preference values are read and saved by
-			`get()`
-			and
-			`put()`
-			methods. In the
-			`get()`
-			method you specify a default value in case the key can not be
-			found.
-			The
-			`clear()`
-			method removes all preferences and the
-			`remove()`
-			method allows you
-			to delete a selected preference value. Via the
-			`flush()`
-			method you persist the preferences to the file system.
-		
+You can create and manipulate preferences directly via
+Singletons
+provided by the Eclipse runtime. You have the
+`InstanceScope`
+,
+`ConfigurationScope`
+and
+`DefaultScope`
+classes which give access to the corresponding instance via the
+`INSTANCE`
+field.
 
-		
+Preference values are read and saved by
+`get()`
+and
+`put()`
+methods. In the
+`get()`
+method you specify a default value in case the key can not be
+found.
+The
+`clear()`
+method removes all preferences and the
+`remove()`
+method allows you
+to delete a selected preference value. Via the
+`flush()`
+method you persist the preferences to the file system.
+
 [source,java]
 ----
 include::res/snippets/putconfigurationscope.txt[]
 ----
-		
 
-		
 [source,java]
 ----
 include::res/snippets/read.txt[]
 ----
-		
-	
 

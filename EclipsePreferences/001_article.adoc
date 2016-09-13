@@ -1,44 +1,18 @@
-= Android - Tutorial
+= Eclipse Preferences - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 2.3, 06.07.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: EclipsePreferences
 
 [abstract]
-
-
-=== Eclipse Preferences - Tutorial
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2009</year>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<year>2015</year>
-			<year>2016</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>10.04.2016</pubdate>
-		<releaseinfo>
-			Version 2.2
-		</releaseinfo>
-		
-		<abstract id="abstract">
-	=== Eclipse Preferences
-			 This article describes the usage of Eclipse preferences and
-				preference pages. Within this tutorial Eclipse 4.5 (Mars) is used.
-			
-		
+Eclipse Preferences.
+This article describes the usage of Eclipse preferences and preference pages. 
+Within this tutorial Eclipse 4.5 (Mars) is used.
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
@@ -53,9 +27,7 @@ include::../web/advertisement/inBetween03.adoc[]
 include::200_tutorial_using_preferences.adoc[]
 include::300_tutorial_preferencepage.adoc[]
 include::400_tutorial_secure_preferences.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
 

@@ -1,71 +1,68 @@
 == Preferences and dependency injection
-
+(((Preferences,Dependency injection)))
 	
-		(((Preferences,Dependency injection)))
-	
-	
-		(((IEclipsePreference)))
-		<seealso>Preferences</seealso>
+(((IEclipsePreference)))
+<seealso>Preferences</seealso>
 	
 	
-		The Eclipse platform allows you to use dependency injection for
-		preferences handling.
-		To access preference you use the
-		`@Preference`
-		annotation as qualifier for the dependency injection annotation. This means that
-		`@Preference`
-		must be used together with
-		`@Inject`
-		or one of the other annotations which implies dependency injection,
-		e.g., the
-		`@Execute`
-		annotation.
+The Eclipse platform allows you to use dependency injection for
+preferences handling.
+To access preference you use the
+`@Preference`
+annotation as qualifier for the dependency injection annotation. This means that
+`@Preference`
+must be used together with
+`@Inject`
+or one of the other annotations which implies dependency injection,
+e.g., the
+`@Execute`
+annotation.
 	
 	
-		The
-		`@Preference`
-		annotation allows you to specify the
-		_nodePath_
-		and the
-		_value_
-		as optional parameters.
+The
+`@Preference`
+annotation allows you to specify the
+_nodePath_
+and the
+_value_
+as optional parameters.
 	
 
 	
-		The
-		_nodePath_
-		is the file name
-		used to save the
-		preference values to disk.
-		By default
-		this is
-		the
-		Bundle-SymbolicName of the plug-in. The
-		_value_
-		parameter specifies the preference key for the value which should be
-		injected.
+The
+_nodePath_
+is the file name
+used to save the
+preference values to disk.
+By default
+this is
+the
+Bundle-SymbolicName of the plug-in. The
+_value_
+parameter specifies the preference key for the value which should be
+injected.
 	
 
 	
-		Eclipse can also inject the
-		`IEclipsePreference`
-		object. You can use this object for storing values. If you use the
-		_value_
-		parameter, Eclipse injects the value directly. Use the
-		_value_
-		parameter for read access, while for storing or changing values, use
-		the
-		`IEclipsePreference`
-		object.
+Eclipse can also inject the
+`IEclipsePreference`
+object. You can use this object for storing values. If you use the
+_value_
+parameter, Eclipse injects the value directly. Use the
+_value_
+parameter for read access, while for storing or changing values, use
+the
+`IEclipsePreference`
+object.
 	
 
 	
-		The following code snippet demonstrates how to put values into
-		the preferences store. Please note that
-		`@Preference`
-		is used in combination with
-		`@Execute`
-		.
+The following code snippet demonstrates how to put values into
+the preferences store. Please note that
+`@Preference`
+is used in combination with
+`@Execute`
+.
 	
 	
 [source,java]
@@ -76,11 +73,11 @@ include::res/eclipse4access/put.txt[]
 
 
 	
-		The next snippet demonstrates the read access of preference
-		values. This time the preference annotation is used a
-		qualifier for
-		`@Inject`
-		.
+The next snippet demonstrates the read access of preference
+values. This time the preference annotation is used a
+qualifier for
+`@Inject`
+.
 	
 
 	
@@ -90,30 +87,30 @@ include::res/eclipse4access/listen.txt[]
 ----
 	
 	
-		The Eclipse platform automatically tracks the values and re-injects
-		them
-		into fields and methods if they change.
-		Eclipse
-		tracks
-		changes of
-		preferences
-		in the
-		`InstanceScope`
-		scope.
-		Preference values
-		in the
-		`ConfigurationScope`
-		and
-		`DefaultScope`
-		are not tracked.
+The Eclipse platform automatically tracks the values and re-injects
+them
+into fields and methods if they change.
+Eclipse
+tracks
+changes of
+preferences
+in the
+`InstanceScope`
+scope.
+Preference values
+in the
+`ConfigurationScope`
+and
+`DefaultScope`
+are not tracked.
 	
 
 	
-		If you use the injected
-		`IEclipsePreference`
-		to store new preference values, these
-		values are stored in the instance
-		scope.
+If you use the injected
+`IEclipsePreference`
+to store new preference values, these
+values are stored in the instance
+scope.
 	
 
 

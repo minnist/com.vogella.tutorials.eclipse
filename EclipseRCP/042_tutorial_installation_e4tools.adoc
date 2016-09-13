@@ -17,7 +17,7 @@ You can use the following URL to install the latest tools:
 
 http://download.eclipse.org/e4/snapshots/org.eclipse.e4.tools/latest/
 
-Other versions of the tools can can be found on the http://download.eclipse.org/e4/downloads/">Eclipse.org e4tools site.
+Other versions of the tools can can be found on the http://download.eclipse.org/e4/downloads/[Eclipse.org e4tools site].
 If you click on a _Build Name_ link, you also find the URL for the update site. 
 The following screenshots demonstrate this for a particular build of the e4 tools. 
 Note, that this website might change over time.

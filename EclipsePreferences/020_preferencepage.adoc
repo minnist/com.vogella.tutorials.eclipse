@@ -1,6 +1,5 @@
 == Preference handling in Eclipse 3.x
 
-
 === Preference Page
 		
 Eclipse 3.x provides a standard dialog to display and
@@ -9,14 +8,11 @@ preference values via a preference dialog.
 Please note
 that this dialog does not work for Eclipse 4 RCP applications.
 		
-		
 To add a page to this preference dialog a
 plug-in must provide an
 contribution to the
 `org.eclipse.ui.preferencePages`
 extension point.
-
-		
 		
 This extension point defines a class which
 is
@@ -30,7 +26,6 @@ implement
 and must have a non-parameter constructor. 
 The _keywordReference id_ attribute in this extension point can be used to define search terms for the Eclipse IDE search field for preferences.
 		
-		
 The
 `PreferencePage`
 class or one of its subclasses can get extended; a good
@@ -39,20 +34,15 @@ usually
 `FieldEditorPreferencePage`
 .
 		
-		
 To open the Preference dialog, you can use the
 `org.eclipse.ui.window.preferences`
 command.
-		
-	
-
 
 === Secure storage of preferences
 		
 Eclipse allows to encrypt preference values via the
 `org.eclipse.equinox.security`
 plug-in.
-		
 		
 The key / value pairs will be stored in the
 _secure.storage_
@@ -65,45 +55,33 @@ Eclipse uses a class of type
 `PasswordProvider`
 for encrypting the preferences and has a default class registered.
 		
-		
 Via the
 `org.eclipse.equinox.security.secureStorage`
 extension point
 you can register your
 own
 PasswordProvider.
-		
-
-	
-
 
 === Access Preferences in different plug-ins
 		
 You can access preferences in other plug-ins via the `PreferenceService` service.
 		
-		
 For example, to access the "MySTRING1" preference in the
 "de.vogella.preferences.page" plug-in, you can use the
 following:
-		
 		
 [source,java]
 ----
 include::res/access/AccessPreferences.java[]
 ----
-		
-
 
 === Reacting to changes in the preferences
 		
 You can register `IPropertyChangeListener` instances to changes in the preference values.
 These listener are called by the Eclipse framework if the reference value changes.
 		
-		
 [source,java]
 ----
 include::res/snippets/listener.txt[]
 ----
-		
-	
 

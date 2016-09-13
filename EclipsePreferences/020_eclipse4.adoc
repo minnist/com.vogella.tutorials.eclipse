@@ -1,9 +1,7 @@
 == Preferences and dependency injection
 (((Preferences,Dependency injection)))
 	
-(((IEclipsePreference)))
-<seealso>Preferences</seealso>
-	
+(((IEclipsePreference, seealso=Preferences)))
 	
 The Eclipse platform allows you to use dependency injection for
 preferences handling.
@@ -18,7 +16,6 @@ e.g., the
 `@Execute`
 annotation.
 	
-	
 The
 `@Preference`
 annotation allows you to specify the
@@ -26,8 +23,6 @@ _nodePath_
 and the
 _value_
 as optional parameters.
-	
-
 	
 The
 _nodePath_
@@ -42,8 +37,6 @@ _value_
 parameter specifies the preference key for the value which should be
 injected.
 	
-
-	
 Eclipse can also inject the
 `IEclipsePreference`
 object. You can use this object for storing values. If you use the
@@ -55,8 +48,6 @@ the
 `IEclipsePreference`
 object.
 	
-
-	
 The following code snippet demonstrates how to put values into
 the preferences store. Please note that
 `@Preference`
@@ -64,14 +55,10 @@ is used in combination with
 `@Execute`
 .
 	
-	
 [source,java]
 ----
 include::res/eclipse4access/put.txt[]
 ----
-	
-
-
 	
 The next snippet demonstrates the read access of preference
 values. This time the preference annotation is used a
@@ -79,13 +66,10 @@ qualifier for
 `@Inject`
 .
 	
-
-	
 [source,java]
 ----
 include::res/eclipse4access/listen.txt[]
 ----
-	
 	
 The Eclipse platform automatically tracks the values and re-injects
 them
@@ -104,13 +88,9 @@ and
 `DefaultScope`
 are not tracked.
 	
-
-	
 If you use the injected
 `IEclipsePreference`
 to store new preference values, these
 values are stored in the instance
 scope.
-	
-
 

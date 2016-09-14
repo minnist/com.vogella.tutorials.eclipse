@@ -1,0 +1,12 @@
+== Completely new to Git?
+	
+In case you are completely new to the Git version control system you
+might want to read more about its concepts. For a
+detailed description
+of the Git concepts and
+different options
+please see the corresponding
+http://www.vogella.com/books/git.html[Git book from Lars Vogel]
+or the
+http://www.vogella.com/tutorials/Git/article.html[Git online tutorial].
+

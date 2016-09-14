@@ -88,7 +88,7 @@ include::res/preferences/Manager.java[]
 				_Clear_
 				flag in the
 				menu:
-					<guimenu>Project</guimenu>
+					[Project</guimenu>
 					<guisubmenu>Run Configurations...</guisubmenu>
 				</menuchoice>
 				is not set. Otherwise your preference data
@@ -98,7 +98,7 @@ include::res/preferences/Manager.java[]
 			
 				<mediaobject>
 					<imageobject>
-						<imagedata fileref="images/deletelaunch_prefs10.png" scale="35" />
+						<imagedata fileref="images/deletelaunch_prefs10.png" />
 					
 					<textobject>
 						<phrase>Clear flag in the run configuration</phrase>

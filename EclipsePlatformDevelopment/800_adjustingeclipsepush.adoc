@@ -131,7 +131,7 @@ _Properties_
 view.
 
 
-image::eclipsegerritcontribution13.png" scale="30[Gerrit Eclipse configuration]
+image::eclipsegerritcontribution13.png[Gerrit Eclipse configuration]
 
 
 

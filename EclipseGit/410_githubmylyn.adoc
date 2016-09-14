@@ -1,0 +1,68 @@
+== Eclipse integration with GitHub
+(((GitHub, Mylyn integration)))
+(((Mylyn, GitHub integration)))
+
+=== The Eclipse Mylyn plug-in
+		
+Eclipse Mylyn provides task integration for GitHub issues,
+GitHub
+pull
+and Gist (short text snippets) into the Eclipse IDE.
+		
+There is a GitHub connector
+for
+Mylyn available, please see
+http://wiki.eclipse.org/EGit/GitHub/UserGuide[GitHub Mylyn User Guide]
+for details.
+		
+You install it via
+menu:Help[Install new Software]
+and the update site of your release.
+		
+image::github_mylyn10.png[Install Mylyn GitHub connector]
+
+=== GitHub issue integration
+		
+You can integrate your GitHub issues into Eclipse via
+menu:File[Import... > Task > GitHub Task Repositories]
+and by following the wizard.
+		
+image::github_import08.png[Importing tasks into Eclipse]
+
+=== Manage pull requests in Eclipse
+		
+You can integrate your pull requests at GitHub into Eclipse by
+creating a new query from the
+_Task List_
+view. This is demonstrated via the following screenshots.
+		
+image::githubpullrequests10.png[Integrating Gitpull requests into Eclipse]
+		
+image::githubpullrequests20.png[Integrating Gitpull requests into Eclipse]
+		
+image::githubpullrequests30.png[Integrating Gitpull requests into Eclipse]
+		
+image::githubpullrequests40.png[Integrating Gitpull requests into Eclipse]
+		
+image::githubpullrequests50.png[Integrating Gitpull requests into Eclipse]
+		
+NOTE:Unfortunately the GitHub connect does currently not support that you merge the pull request.
+
+=== Import projects directly from GitHub
+		
+You can also import now directly projects from GitHub repositories.
+		
+image::github_import10.png[Importing projects from GitHub into EclipseF]
+
+=== More infos about the GitHub Mylyn integration
+		
+For a
+detailed description of the Mylyn and EGit integration
+please see the
+following webpage.
+
+[source,text]
+----
+include::res/links/mylyn.txt[]
+----
+

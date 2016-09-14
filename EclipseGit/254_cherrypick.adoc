@@ -1,0 +1,33 @@
+== Using git cherry-pick
+
+In the
+_History_
+view, you can cherry-pick a commit via the context menu.
+
+A combination of git reset and git cherry-pick allows you to
+move
+the changes done in a commit to anther branch. Assume you have a
+bad
+commit which you would like to
+remove from the history of branch
+followed by a good commit. This
+situation is depicted in the following
+screenshot.
+
+image::cherrypick10.png[Situation before the cherry pick]
+
+For this you would make a hard reset on the commit of
+origin/master.
+
+image::cherrypick20.png[Situation before the cherry pick]
+
+Afterwards you can cherry-pick the good commit.
+
+image::cherrypick30.png[Situation before the cherry pick]
+
+image::cherrypick40.png[Situation before the cherry pick]
+
+This results in a history without the bad commit. 
+
+NOTE: You can do the same with interactive rebase.
+

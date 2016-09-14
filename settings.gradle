@@ -1,5 +1,6 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
+include 'EclipseGit'
 include 'EclipseExtensionPoint'
 include 'EclipseErrorReporting'
 include 'EclipseEMFPersistence'

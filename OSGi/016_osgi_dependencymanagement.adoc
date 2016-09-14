@@ -107,7 +107,7 @@ _ACTIVE_
 		
 This life cycle is depicted in the following graphic.
 		
-image::osgi_livecycle10.png" scale="30[OSGi life cycle]
+image::osgi_livecycle10.png[OSGi life cycle]
 
 === Dynamic imports of packages
 		

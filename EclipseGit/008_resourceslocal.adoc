@@ -1,0 +1,6 @@
+== EGit Resources
+
+http://wiki.eclipse.org/EGit/User_Guide[EGit User Guide]
+	
+http://wiki.eclipse.org/EGit/Contributor_Guide[EGit contributor guide]
+

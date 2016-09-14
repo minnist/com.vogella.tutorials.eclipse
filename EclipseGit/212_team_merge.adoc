@@ -1,0 +1,91 @@
+== Starting a merge operation in Eclipse
+
+=== Merge
+		
+Eclipse supports merging of branches to add the changes
+committed on
+one branch into another branch.
+		
+Checkout the branch into which you
+want to merge the
+changes into and
+select your project
+and
+menu:Team[Merge]
+to start the merge dialog.
+		
+image::egit_mergeoperation10.png[Team Merge menu]
+		
+image::egit_mergeoperation20.png[Team Merge menu]
+
+=== Solving merge conflicts
+		
+If during a Git operation, two changes are conflicting, you
+have to
+solve these conflicts manually.
+Eclipse Git
+highlights the affected
+files in the
+_Package Explorer_
+or
+_Project Explorer_
+view.
+		
+Eclipse Git supports the resolution
+of these merge
+conflicts. To
+trigger this via the explorer views, right-click on a
+file with merge
+conflicts and select
+menu:Team[Merge Tool].
+		
+You can also use the
+_Git staging_
+view
+to find the conflicting files. In large
+projects this is usually
+faster
+than navigating the
+_Package Explorer_
+or
+_Project Explorer_
+view.
+		
+This opens a dialog, asking you which merge mode you would like to
+use.
+The easiest way to see the conflicting changes
+is
+to use the
+_Use HEAD (the last local version) of conflicting files_
+as merge mode. This way you see the original changes on the left
+side
+and the conflicting and non-conflicting changes
+on the right side.
+		
+image::egitmerge08.png[Selecting the merge model]
+		
+You can manually edit the text on
+the left side or use the
+_Copy current change from right to left_
+button to copy the changes from right to left.
+		
+image::egitmerge10.png[Seeing merge conflicts]
+		
+image::egitmerge20.png[Copy changes from right to left]
+		
+Eclipse also allows to show the common ancestor of both commits to make the merge easier. Press the
+btn:[Hide/Show Ancestor Pane]
+button for that. This is demonstrated by the
+following screenshots.
+		
+image::threewaycomparemode10.png[Three way merge view in Eclipse]
+		
+image::threewaycomparemode20.png[Three way merge view in Eclipse]
+		
+Once you have manually merged the changes, select
+menu:Team[Add]
+from the context menu of the resource to mark the conflicts as
+resolved and
+commit the merge commit via
+menu:Team[Commit].
+

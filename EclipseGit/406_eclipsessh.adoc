@@ -1,0 +1,6 @@
+== Eclipse support for SSH based authentication
+	
+The Eclipse IDE allows you to create an SSH key pair for SSH based
+communication via
+menu:Window[Preferences > General > Network Connection > SSH2].
+	

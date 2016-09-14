@@ -1,0 +1,64 @@
+== Using the Git Staging view
+(((Eclipse Git,Staging view)))
+	
+Eclipse gives you several options to stage and commit your changes.
+The
+_Git Staging_
+view
+provides a convenient compact overview on all changes you have
+done compared to the current HEAD revision.
+	
+The
+_Git Staging_
+view
+is
+non-modal. You can switch between
+different repositories or even
+restart Eclipse without
+losing a commit
+message and it allows
+incremental
+staging for changes.
+	
+Open the
+_Git Staging_
+view
+via the
+menu:Window[Show View > Other... > Git > Git Staging]
+menu.
+	
+In this
+view
+you
+select all files which have changed and drag them into
+the
+_Staged Changes_
+area. To commit the staged changes you
+write a descriptive commit
+message and press the
+btn:[Commit]
+button which is highlighted in the following screenshot.
+	
+image::gitstaging10.png[Git Staging View - Commit]
+	
+Perform these actions for your initial changes. Afterwards the
+first version of
+your Java project is
+under
+version
+control. If you don't
+experience any
+hardware error your
+data
+is now
+safely stored in your
+local
+Git
+repository and you can
+always
+restore
+your
+Eclipse project to
+this
+initial point.
+	

@@ -32,7 +32,7 @@ image::platformcontributions20.png[Acivities in the Eclipse platform UI project]
 An alternative view gives the new dashboard. 
 For example the following screeenshot shows the http://dashboard.eclipse.org/project.html?project=eclipse.platform.ui[Platform UI] dashboard link.
 
-image::dashboard.png" scale="30[Platform.ui dashboard]
+image::dashboard.png[Platform.ui dashboard]
 
 
 

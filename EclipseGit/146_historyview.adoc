@@ -1,0 +1,193 @@
+== Using the History view
+
+=== Purpose of the history view
+
+The
+_History_
+view
+allows you to analyze the history of your Git repository and to
+see to
+which commits the branches and tags points.
+This view displays author, date, commit message and
+the modified
+files of a commits.
+
+This view is
+depicted
+in the
+following
+screenshot.
+
+image::egithistoryview10.png[History view of changes]
+
+You can open this view via
+menu:Window[Show View > Other... > Team > History].
+Alternatively you can open
+it via
+the
+repository node in the
+_Git Repositories_
+View. For this
+click on the
+menu:Show In[History]
+entry. Some views, e.g., in the Java EE-Perspective, do not have this
+shortcut, in this case use
+menu:Team[Show in History].
+
+=== Review the repository history via the History view 
+
+To see the history of a resource, select your project, a file or a
+folder, right-click on it and select the
+menu:Show in [History]
+context menu entry.
+Alternative you
+can use the
+kbd:[Alt+Shift+W] shortcut and
+select the
+_History_
+entry.
+
+You can also configure the
+_History_
+view to display the history of the current selection. Select the
+highlighted button in the following screenshot for
+that.
+
+image::historytrackselection10.png[Tracking active selection]
+
+If you select a commit you see the commit message and the
+involved files.
+
+image::githistoryview10.png[History View]
+
+Via right-click on an individual file you can compare
+this
+file
+with its ancestor (the commit before that) or with
+the current
+version
+in the workspace.
+
+TIP: If the "compare mode" toggle is selected from the view menu of the
+_History_
+view
+you can also double
+click a file
+to compare it to the previous
+version.
+
+image::comparemode10.png[Compare mode]
+
+=== The History view filters
+
+The
+_History_
+view has quite some options to configure
+which commits are displayed.
+Its toolbar allows you to customize which commits
+are displayed. By default,
+the
+_History_
+view filters the history based on the current selection and shows
+only the active branch.
+
+If you work with several branches, e.g., because you are using
+Gerrit for code reviews, you typically want to see
+all branch
+information and remove the filter based on the resource.
+
+The
+_History_
+view
+allows you to filter based on resources. See the tooltips of the
+toolbar
+for the meaning of the different filter
+options. In order to
+see all commits click the highlighted buttons with the
+_Show all changes in this repository_
+and
+_Show all branches and tags_
+tooltips.
+
+image::historyview_toolbar10.png[Toolbar settings in history view]
+
+The following listing gives an overview of the purpose of the different buttons.
+
+image::history-view-buttons.png[History View Buttons]
+
+Depending on your use case you may want to select the following option:
+
+a. show only those commits which are reachable from the current
+branch. Hide all commits on other topic branches.
+b. see only those commits which changed the selected resource
+(file, project, subfolder) or it’s children. E.g.
+display only
+those commits which touched the selected java file. The current
+selection is shown in the top right
+corner of the History view.
+c. see only those commits which changed anything in the parent
+folder of the selected resource (file, project,
+subfolder) or it’s
+children. E.g. display only those commits which changed the same
+package as the selected java
+source.
+d. see only those commits which changed anything in the same
+project as the selected resource or it’s children.
+Used when you
+are working in a repository which contains multiple projects.
+e. don’t filter at all. Show all commits of the current repository
+
+The options b., c. and d. are tied to the currently selected
+resource.
+Button g. allows that the history view
+automatically updates when you
+change the selection.
+
+TIP: If you got lost with the different filters and the history
+doesn’t show what you expect, set it back to show
+everything.
+Therefore make sure that
+*Show all branches and tags*
+(a) is turned on and *Show all changes in repository* (e) is selected.
+
+=== Using search
+
+You can also search for commits based
+on committer, author, ID or
+comment. For this turn on the
+*Show Find toolbar*
+(f) and type in a search string in the
+*Find*
+field. The
+commits fitting to your search
+are highlighted. You can combine this search with the filters
+explained above.
+
+image::egithistoryview30.png[Search in the Git history view]
+
+NOTE:The
+_Git Search_
+available in the
+menu:Search[Search]
+menu is much more
+powerful and
+consumes less
+memory since it
+doesn't
+need
+to also display the
+history.
+
+image::gitsearch10.png[Git search]
+
+=== Showing details of a commit
+
+If you want to see more details about a commit, right-click it and
+select the
+_Open in Commit Viewer_
+entry.
+
+image::commitviewer10.png[Commit Viewer]
+
+image::commitviewer20.png[Commit Viewer]
+

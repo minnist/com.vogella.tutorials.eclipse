@@ -1,0 +1,39 @@
+== Working with one or multiple projects in a Git repository
+(((Eclipse Git,multi project repositories)))
+
+=== Workspace and projects
+Eclipse allows working with projects that are not included in the root folder of the workspace.
+
+Using this functionality your projects can be stored in the working tree of a Git repository.
+
+=== Adding a new project to a Git repository
+
+To can add Eclipse projects to an Git repository. If you do this the project is moved to the Git repository and
+linked to from the Eclipse workspace..
+
+A simple way of adding a project to a Git repository is to specify
+the file location in the
+_New Project_
+wizard as depicted in the following screenshot.
+
+image::createproject_in_gitrepo10.png[Create project in Git repository]
+
+If you add the Git repository to your
+_Git repositories_
+view, you can perform the Git team operations on the files of this
+repository.
+
+To add a new Eclipse project to an existing Git repository, select
+the
+project, right-click on it and select
+menu:Team[Share > Git]
+and select the existing Git repository.
+
+image::addprojecttogitrepo10.png[Adding a project to an existing Git repository]
+
+The Eclipse Git functionality moves the projects to the
+repository and imports the
+project
+automatically into your
+workspace.
+

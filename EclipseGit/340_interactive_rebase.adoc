@@ -1,0 +1,142 @@
+== Adjusting the history with interactive rebase
+
+=== Support for interactive rebase in Eclipse
+(((Eclipse Git,Interactive rebase)))
+
+Git allows to adjust the existing commit history the interactive rebase functionality. Eclipse supports this
+functionality
+rebase via the
+_History_
+view and the
+_Git Interactive Rebase_
+view.
+
+=== Actions available via the History view
+(((Eclipse Git,Interactive rebase via the History view)))
+
+To reword a commit, right-click on it in the
+_History_
+view and select
+menu:Modify[Reword]
+to change the commit message.
+
+image::reword_commitmesage_egit10.png[Reword a commit message in Eclipse]
+
+You can squash several commits by selecting them in the
+_History_
+view and by using the
+menu:Modify[Squash]
+menu entry from the context menu.
+
+image::rebase_interactive_squaschcommits10.png[Squash a commit]
+
+The above options are simplified ways to do an interactive
+rebase.
+
+=== Using the Git Interactive Rebase view
+(((Eclipse Git,Interactive rebase via the Git Interactive Rebase view)))
+
+The
+_Git Interactive Rebase_
+view allow you to change the order of commits, combine or remove commits, adjust commits and change the commit
+message.
+
+To start the full interactive rebase open the
+_History_
+view and click
+menu:Rebase Interactive[]
+on the context menu of the commit
+preceding the
+oldest
+commit you want
+to
+rewrite. Often this
+is the one
+origin/master
+points
+to.
+
+image::egitinteractive_rebase08.png[Interactive Rebase EGit]
+
+This opens the
+_Git Interactive Rebase_
+view. It shows the rebase plan populated with the commits to be
+modified
+in topological order in the sequence they will
+be processed. This order is the reverse order which you see via the
+`git log`
+command or in the
+_History_
+view.
+The initial action for all commits is "Pick".
+
+image::egitinteractive_rebase10.png[Interactive Rebase EGit]
+
+The Eclipse Git tooling supports the following actions.
+
+.Interactive rebase actions
+|===
+|Action |Description
+
+|pick
+|includes the selected commit, moving pick entries enables reordering of commits
+
+|skip
+|removes a commit
+
+|edit
+|amends the commit
+
+|squash
+|combines the changes of the commit with the previous commit and combines their commit messages
+
+|fixup
+|squashes the changes of a commit into the previous commit discarding the squashed commit's message
+
+|reword
+|similar to pick but allows modifying the commit message
+
+|===
+
+Use this view to finalize the rebase plan. For example you
+can
+reorder commits with the arrow buttons and select
+the rebase
+action you
+want to apply to the commit. The following screenshot
+demonstrates a
+possible selection.
+
+image::egitinteractive_rebase30.png[Interactive Rebase EGit]
+
+When the rebase plan is finalized, click the
+btn:[Start]
+button to start the interactive rebase command.
+Eclipse Git processes
+the
+plan. It stops at all commits with an action
+which
+needs
+user
+feedback, for example the reword action which requires entering
+the new
+commit message. The dialog for
+changing the commit message is depicted
+in the following screenshot.
+
+image::egitinteractive_rebase40.png[Interactive Rebase EGit]
+
+Here is the result of the rebase operation displayed in the
+_History_
+view.
+
+image::egitinteractive_rebase50.png[Interactive Rebase EGit]
+
+TIP: If something goes wrong during the rebase operation you can
+select
+_Abort_
+in order to stop the rebase operation and
+roll back to the
+starting
+point.
+

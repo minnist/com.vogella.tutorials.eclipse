@@ -24,7 +24,7 @@ The Eclipse platform UI project is responsible for the user interface, runtime, 
 In this example search for "Platform UI".
 		
 		
-image::eclipsegitrepos10.png" scale="30[Eclipse Platform UI search result]
+image::eclipsegitrepos10.png[Eclipse Platform UI search result]
 		
 		
 Click on the _Learn more_ link and select the _Developer resources_ tab.
@@ -44,11 +44,11 @@ The dashboard allows you to drill down as depicted in the following screenshot.
 		
 NOTE: The URL and appearance may still change over time. See https://bugs.eclipse.org/bugs/show_bug.cgi?id=405792[Bug 405792] for details.
 		
-image::eclipsedash10.png" scale="30[Project members dash]
+image::eclipsedash10.png[Project members dash]
 		
 
 You can select in the top the sub-project to see. 
 For example the reporting for the Eclipse project is depicted in the following screenshot.
 		
-image::eclipsedash20.png" scale="30[Eclipse project dashboard]
+image::eclipsedash20.png[Eclipse project dashboard]
 		

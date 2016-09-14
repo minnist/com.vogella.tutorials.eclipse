@@ -1,0 +1,83 @@
+== How to configure the usage of Git in Eclipse
+
+
+=== Interoperability of Git command line settings with the Eclipse IDE
+		
+The Git functionality in the Eclipse IDE uses the same
+configuration files as the Git command
+line tools. This
+makes it
+easier to use the Eclipse Git tooling and the command line tooling for Git interchangeable. One notable
+exception is
+currently the support of gitattributes. See
+https://bugs.eclipse.org/bugs/show_bug.cgi?id=342372[Bug 342372 - support gitattributes]
+for details.
+
+=== Git user settings in Eclipse
+		
+To use Git you must configure your full name and email
+address.
+This information is used to fill the author and
+committer information
+of
+commits
+you create. These Git configuration settings can be adjusted via the Eclipse
+preference
+setting.
+Select
+menu:Window[Preferences > Team > Git > Configuration]
+to see the current configuration and to change it.
+		
+You can add entries to your Git configuration by pressing the
+btn:[Add Entries]
+button on the
+_Git Configuration_
+preference page.
+	
+[[egitconfiguration_defaultlocation]]
+=== Default clone location
+		
+If you clone a new repository via Eclipse Git,
+it
+will create by default a new sub-folder for the new Git repository in
+a default directory.
+This default path can be configured
+via the
+menu:Windows[Preferences > Team > Git]
+entry in the
+_Default Repository folder_
+field.
+		
+image::egitconfig30.png[EGit default repository folder]
+
+You can also use Eclipse configuration variables to define
+this
+path, e.g., if you want to store repositories in
+the folder "git"
+under the Eclipse workspace you may use ${workspace_loc}/git.
+
+=== Configuring the toolbar and the menu for Git usage
+		
+To simplify access to the common Git operations you can activate the
+Git toolbar. For this select
+menu:Window[Perspective > Customize perspective...]
+and check the
+_Git_
+and
+_Git Navigation Actions_
+entries in
+the
+_Action Set Availability_
+tab.
+		
+image::git_toolbar10.png[Git toolbar buttons]
+		
+Afterwards you can configure which Git operations should be available
+via the
+_Tool Bar Visibility_
+or the
+_Menu Visibility_
+tab.
+		
+image::git_toolbar20.png[Git toolbar buttons]
+

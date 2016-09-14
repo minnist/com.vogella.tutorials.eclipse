@@ -1,0 +1,46 @@
+== Import projects from an existing repository
+	
+(((Eclipse Git,import projects from repository)))
+	
+If you have already an existing Git repository
+you can add it to
+Eclipse and import the
+Eclipse projects into your
+workspace via the
+Select
+menu:File[Import > Git > Project from Git]
+menu entry.
+	
+image::egit_importprojects10.png[Importing projects via EGit]
+	
+Select
+_Local_
+if you want to important from a local repository or
+_Clone URL_
+if you first want to clone the repository.
+	
+image::egit_importprojects20.png[Importing projects via EGit part 2]
+	
+The following screenshot shows several local repositories. To import
+the project contained in one of them, select one entries and press the
+btn:[Next]
+button. To add a new local repository to this dialog (and the
+_Git repositories_
+view) use the
+btn:[Add...]
+button.
+	
+image::egit_importprojects30.png[Importing projects via EGit part 2]
+	
+The
+wizard
+allows you to import existing projects. After this
+import
+the
+Eclipse
+IDE makes the projects available and is aware that
+these
+projects
+are
+part of a Git repository.
+

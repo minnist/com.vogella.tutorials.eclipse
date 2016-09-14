@@ -1,0 +1,55 @@
+= Git version control with Eclipse (EGit) - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 4.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseGit
+
+[abstract]
+Git with Eclipse (EGit).
+This tutorial describes the usage of EGit; an Eclipse plug-in to use the distributed version control system Git.
+This tutorial is based on Eclipse 4.5 (Mars).
+	
+include::../web/kindle/eclipse-ide.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::008_about.adoc[]
+include::010_overview.adoc[]
+include::016_workspace.adoc[]
+include::020_commandline_git.adoc[]
+include::100_eclipseinstallation.adoc[]
+include::110_configuration.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::140_repositoryview.adoc[]
+include::142_packageexplorer.adoc[]
+include::144_stagingview.adoc[]
+include::145_commitdialog.adoc[]
+include::146_historyview.adoc[]
+include::160_multiprojects.adoc[]
+include::170_exercise_localrepository.adoc[]
+include::190_clone_repository.adoc[]
+include::192_import_project.adoc[]
+include::200_team_operations.adoc[]
+include::210_team_operations_branch.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::212_team_merge.adoc[]
+include::240_rebase.adoc[]
+include::250_reset.adoc[]
+include::254_cherrypick.adoc[]
+include::260_createpatch.adoc[]
+include::270_annotations.adoc[]
+include::280_stash.adoc[]
+include::340_interactive_rebase.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::400_github.adoc[]
+include::406_eclipsessh.adoc[]
+include::410_githubmylyn.adoc[]
+include::500_commitmessages.adoc[]
+include::800_egitsource.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

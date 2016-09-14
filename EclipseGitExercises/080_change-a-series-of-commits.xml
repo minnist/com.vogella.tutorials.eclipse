@@ -51,7 +51,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/history-view-9.png" scale="40"/>
+							<imagedata fileref="./images/history-view-9.png"/>
 						
 						<textobject>
 							<phrase>History View</phrase>
@@ -156,7 +156,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/cherry-pick.png" scale="40"/>
+							<imagedata fileref="./images/cherry-pick.png"/>
 						
 						<textobject>
 							<phrase>Cherry Pick</phrase>
@@ -171,7 +171,7 @@
 				
 					<inlinemediaobject>
 						<imageobject>
-							<imagedata fileref="./images/cherry-pick-conflicts.png" scale="40"/>
+							<imagedata fileref="./images/cherry-pick-conflicts.png"/>
 						
 						<textobject>
 							<phrase>Cherry Pick Conflicts</phrase>

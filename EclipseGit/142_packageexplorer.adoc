@@ -1,0 +1,93 @@
+== Git integration into the Package and the Project Explorer
+(((Eclipse Git,Package Explorer integration)))
+
+The
+_Package Explorer_
+view
+shows indicators on the files to show their status. The most
+important
+icon decorators are depicted in the following screenshot.
+
+image::jdt_packageexplorer_icondecu10.png[Icon decorator]
+
+The file name describes the state of the file from the following
+table:
+
+.Git label decorations
+|===
+|State |Description
+
+|tracked
+|File is committed to the Git repository and has not changed.
+
+|untracked
+|File is neither staged nor committed. 
+
+|ignored
+|File is flagged to be ignored by Git operations. 
+
+|dirty
+|File has changed since the last commit.
+
+|staged
+|Changes in the file will be included in the next commit.
+
+|partially-staged
+|The resource has changes which are added to the index and additional unstaged changes in the working tree
+
+|added
+|Staged but not yet committed, i.e. snapshot
+of this
+file has been
+stored in the git database. This status is the same
+as the
+_staged_
+status,
+but the file wasn't under Git version control before.
+
+|removed
+|The resource is staged for removal from the Git repository.
+
+|conflict
+|A merge conflict exists for the file. 
+
+|===
+
+A combination of the staged and dirty status means: some parts
+of
+the changed
+file have been staged while some are still unstaged.
+This
+can
+happen if
+you stage a file and then again modify the file
+before
+creating the
+next commit. You can also change the staged parts
+using
+the compare
+editor opened by double clicking files in the staging
+view.
+
+On a project level the explorer
+view
+adds the
+information which Git
+repository is
+used to the
+project name. It also adds
+the number of
+commits that are
+different between
+local and remote
+tracking branch.
+This
+way you can
+quickly see if your
+local branch is
+ahead or behind the
+remote branch
+it is tracking.
+
+image::jdt_packageexplorer_icondecu20.png[Git icon decorator in the Package Explorer]
+

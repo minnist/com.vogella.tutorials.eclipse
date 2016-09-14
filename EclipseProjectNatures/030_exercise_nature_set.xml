@@ -14,7 +14,7 @@ Version 0.3, 06.07.2016
     <section>
         <title>Target
         Add a <guimenuitem>Convert to example project</guimenuitem> menu item to the
-                <guimenu>Configure</guimenu> menu of a projects context menu.
+                [Configure</guimenu> menu of a projects context menu.
     
     <section>
         <title>Define an example project nature
@@ -70,7 +70,7 @@ include::res/ExampleProjectNatureHandler.java"/>
     
     <section>
         <title>Add the menu contribution for the conversion
-        The id of the <guimenu>Configure</guimenu> menu in a projects context menu is
+        The id of the [Configure</guimenu> menu in a projects context menu is
                 `org.eclipse.ui.projectConfigure` and therefore the
                 _locationURI_ of the _menuContribution_
             must be `popup:org.eclipse.ui.projectConfigure`. In this
@@ -84,7 +84,7 @@ include::res/ExampleProjectNatureHandler.java"/>
     
     
         <title>Optional - Add a core expression
-        As I already mentioned the <guimenu>Configure</guimenu> menu is only visible, in case
+        As I already mentioned the [Configure</guimenu> menu is only visible, in case
             it has elements in it, we should only apply the _menuContribution_
             to it, if the nature has not already been set.
         Therefore we want to add a core expression with the
@@ -121,10 +121,10 @@ include::res/ExampleProjectNatureHandler.java"/>
     <section>
         <title>Validate
         Start your plug-in within the Eclipse IDE and create a new _General
-                Project_ and then right click the project and click on <guimenu>Configure
+                Project_ and then right click the project and click on [Configure
                 > Convert to Example Project</guimenu>. In case you have done the optional part, the
                 <guimenuitem>Convert to Example Project</guimenuitem>  menu item should not appear
-            any more in the <guimenu>Configure</guimenu> menu.
+            any more in the [Configure</guimenu> menu.
     
   
 

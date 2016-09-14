@@ -1,0 +1,65 @@
+== Performing Git operations in Eclipse
+
+=== Pull, push and fetch
+
+You can use the
+_Git Repositories_
+view to pull, push and fetch to remote repositories. Right click on
+your repository and select the appropriated operation.
+
+image::pullpush10.png[Pull push and fetch dialog]
+
+=== Basic team operations
+
+Once you have placed a project under version control you can
+start
+using team operations on your project. The team operations are
+available via right-click on your project or file.
+
+image::gitcontextmenu10.png[Context menu]
+
+TIP: The Team menu is also available from the context menu of an opened editor.
+
+The most important
+operations are described in the following
+list. Select:
+
+* menu:Team[Add to index], to add the selected resource(s) to the Git index
+* menu:Team[Commit], to open the commit dialog to create a new commit
+* menu:Team[Create Patch...], to create a patch
+* menu:Team[Apply Patch...], to apply a patch to your file system
+* menu:Team[Ignore], to add a file to the .gitignore file
+* menu:Team[Show in History], to display the history of the selected resources(s)
+
+=== Team operations available on the project
+
+If you select a project you can use
+additional team
+operations
+from the context menu.
+
+image::gitcontextmenu20.png[Context menu]
+
+* menu:Team[Pull] to pull in changes from your remote Git repository
+* menu:Team[Fetch] to fetch the current state from the remote repository
+* menu:Team[Switch To] to checkout existing or create new branches
+* menu:Team[Push] to push changes to your remote Git repository
+* menu:Team[Tag] to create and manage tags.
+
+=== Amending a commit
+
+Git amend allows adjusting the last commit. For example you can
+change the commit message or add another modification.
+
+The
+_Git Staging_
+view
+allows you to perform
+the
+Git amend command via the highlighted
+button
+in the following
+screenshot.
+
+image::egitamend10.png[Git amend in the Git Staging view]
+

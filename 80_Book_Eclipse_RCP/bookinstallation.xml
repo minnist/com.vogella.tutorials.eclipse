@@ -70,7 +70,7 @@
                     to know how to use the Eclipse update manager.
                     Open
                     menu:
-                        <guimenu>Help</guimenu>
+                        [Help</guimenu>
                         <guisubmenu>Install new software...</guisubmenu>
                     </menuchoice>
                     for this.

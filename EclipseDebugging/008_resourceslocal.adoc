@@ -1,0 +1,8 @@
+== Links and Literature
+
+=== Debugging Links
+		
+http://www.amazon.com/dp/3943747042[Eclipse IDE book from Lars Vogel]
+		
+http://www.eclipse.org/articles/Article-Debugger/how-to.html[How to develop your own debugger]
+

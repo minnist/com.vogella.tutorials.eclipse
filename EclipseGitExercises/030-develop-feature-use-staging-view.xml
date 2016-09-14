@@ -82,7 +82,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view.png" scale="50[Staging view</phrase>
+					<imagedata fileref="./images/staging-view.png[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -96,7 +96,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-2.png" scale="50[Staging view</phrase>
+					<imagedata fileref="./images/staging-view-2.png[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -113,7 +113,7 @@ Sometimes you want to locally change a file but don&#8217;t want this modificati
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-3.png" scale="50[Staging view</phrase>
+					<imagedata fileref="./images/staging-view-3.png[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		
@@ -125,7 +125,7 @@ In the _Git Staging_ view enter a commit message in the _Commit message_ field a
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/staging-view-4.png" scale="50[Staging view</phrase>
+					<imagedata fileref="./images/staging-view-4.png[Staging view</phrase>
 				</textobject>
 			</inlinemediaobject>
 		

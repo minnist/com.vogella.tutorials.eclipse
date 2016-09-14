@@ -1,0 +1,30 @@
+= Java Debugging with Eclipse - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 2.3, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseDebugging
+
+[abstract]
+Eclipse Debugging.
+This article describes how to debug a Java application in Eclipse.
+This article is based on Eclipse 4.2 (Eclipse Juno). 
+		
+	
+include::../web/kindle/eclipse-ide.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_prerequisites.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_usingdebugger.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::060_advanced.adoc[]
+include::080_example.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

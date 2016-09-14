@@ -61,7 +61,7 @@ _* https://github.com/eclipse/eclipse.platform.swt/downloads[https://github.com/
 * You can also select to watch a repository and you will be notified in your dashboard when a new tag or branch is created.
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github1.png" scale="50"/>
+  <imagedata fileref="./images/github1.png"/>
   
   <textobject><phrase>github1.png</phrase></textobject>
 </inlinemediaobject>
@@ -172,7 +172,7 @@ Select Finish
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github2.png" scale="50"/>
+  <imagedata fileref="./images/github2.png"/>
   
   <textobject><phrase>github2.png</phrase></textobject>
 </inlinemediaobject>
@@ -208,7 +208,7 @@ Select Commit
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github3.png" scale="50"/>
+  <imagedata fileref="./images/github3.png"/>
   
   <textobject><phrase>github3.png</phrase></textobject>
 </inlinemediaobject>
@@ -234,7 +234,7 @@ Select Create repository
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github4.png" scale="50"/>
+  <imagedata fileref="./images/github4.png"/>
   
   <textobject><phrase>github4.png</phrase></textobject>
 </inlinemediaobject>
@@ -270,7 +270,7 @@ Select OK
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github5.png" scale="50"/>
+  <imagedata fileref="./images/github5.png"/>
   
   <textobject><phrase>github5.png</phrase></textobject>
 </inlinemediaobject>
@@ -300,7 +300,7 @@ Replace &lt;username&gt; with your GitHub login name
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github6.png" scale="50"/>
+  <imagedata fileref="./images/github6.png"/>
   
   <textobject><phrase>github6.png</phrase></textobject>
 </inlinemediaobject>
@@ -323,7 +323,7 @@ A Push Results dialog will be displayed stating the master branch was created on
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github7.png" scale="50"/>
+  <imagedata fileref="./images/github7.png"/>
   
   <textobject><phrase>github7.png</phrase></textobject>
 </inlinemediaobject>
@@ -369,7 +369,7 @@ Select Commit
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github8.png" scale="50"/>
+  <imagedata fileref="./images/github8.png"/>
   
   <textobject><phrase>github8.png</phrase></textobject>
 </inlinemediaobject>
@@ -387,7 +387,7 @@ A Push Results dialog will be displayed showing the commit pushed
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github9.png" scale="50"/>
+  <imagedata fileref="./images/github9.png"/>
   
   <textobject><phrase>github9.png</phrase></textobject>
 </inlinemediaobject>
@@ -455,7 +455,7 @@ Select Finish
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github10.png" scale="50"/>
+  <imagedata fileref="./images/github10.png"/>
   
   <textobject><phrase>github10.png</phrase></textobject>
 </inlinemediaobject>
@@ -495,7 +495,7 @@ Select Finish
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github11.png" scale="50"/>
+  <imagedata fileref="./images/github11.png"/>
   
   <textobject><phrase>github11.png</phrase></textobject>
 </inlinemediaobject>
@@ -543,7 +543,7 @@ The issue will be created and the editor will update with the new issue number
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github12.png" scale="50"/>
+  <imagedata fileref="./images/github12.png"/>
   
   <textobject><phrase>github12.png</phrase></textobject>
 </inlinemediaobject>
@@ -593,7 +593,7 @@ Select the kevinsawicki/http-request project from the result table
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github13.png" scale="50"/>
+  <imagedata fileref="./images/github13.png"/>
   
   <textobject><phrase>github13.png</phrase></textobject>
 </inlinemediaobject>
@@ -736,7 +736,7 @@ Select Finish
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/github14.png" scale="50"/>
+  <imagedata fileref="./images/github14.png"/>
   
   <textobject><phrase>github14.png</phrase></textobject>
 </inlinemediaobject>

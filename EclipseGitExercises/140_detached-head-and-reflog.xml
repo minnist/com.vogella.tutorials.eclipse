@@ -16,7 +16,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/checkout_remote.png" scale="50" />
+					<imagedata fileref="./images/checkout_remote.png" />
 				
 				<textobject>
 					<phrase>Check out remote tracking branch</phrase>
@@ -27,7 +27,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/detached_head.png" scale="50"/>
+					<imagedata fileref="./images/detached_head.png"/>
 				
 				<textobject>
 					<phrase>Detached head</phrase>
@@ -41,7 +41,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/detached_head2.png" scale="50" />
+					<imagedata fileref="./images/detached_head2.png" />
 				
 				<textobject>
 					<phrase>Detached head history view</phrase>
@@ -57,7 +57,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/detached_head3.png" scale="50" />
+					<imagedata fileref="./images/detached_head3.png" />
 				
 				<textobject>
 					<phrase>Detached head history view after checkout</phrase>
@@ -76,7 +76,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/reflog1.png" scale="50"/>
+					<imagedata fileref="./images/reflog1.png"/>
 				
 				<textobject>
 					<phrase>reflog1.png</phrase>
@@ -90,7 +90,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/reflog2.png" scale="50"/>
+					<imagedata fileref="./images/reflog2.png"/>
 				
 				<textobject>
 					<phrase>reflog2.png</phrase>

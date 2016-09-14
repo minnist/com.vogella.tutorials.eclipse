@@ -1,0 +1,214 @@
+== Advanced Debugging
+ 
+The following section shows more options you have for debugging.
+
+=== Breakpoint properties
+
+After setting a breakpoint you can select the
+properties of the
+breakpoint, via
+menu:right-click[Breakpoint Properties]
+. Via the breakpoint properties you can
+define a condition that
+restricts the activation of this
+breakpoint.
+
+You can for
+example
+specify
+that
+a breakpoint should only become
+active
+after it has reached
+12 or more times via the
+_Hit Count_
+property.
+
+You
+can also
+create a
+conditional
+expression. The execution of the
+program only stops at the
+breakpoint, if the
+condition
+evaluates to
+true. This mechanism can also be used for additional logging, as the
+code that specifies the condition is executed every time the program
+execution reaches that point.
+
+The following screenshot depicts this setting. 
+
+image::debug10.png[Breakpoint Properties]
+
+image::debug20.png[Breakpoint Properties]
+
+=== Watchpoint
+
+A
+_watchpoint_
+is a breakpoint set on a field. The debugger
+will
+stop whenever that
+field is
+read or changed.
+
+You can set a
+_watchpoint_
+by double-clicking on
+the left margin,
+next to
+the field declaration. In
+the properties of a
+_watchpoint_
+you
+can
+configure if
+the execution should
+stop during read
+access (Field
+Access) or during
+write access (Field
+Modification) or both.
+
+image::watchpoint10.gif[Watchpoint]
+
+=== Exception breakpoints
+
+You can set breakpoints which are triggered when exceptions in your
+Java source code
+are
+thrown. To define an exception breakpoint click on
+the
+_Add Java
+Exception Breakpoint
+_
+button
+icon in the
+_Breakpoints_
+view
+toolbar.
+
+image::exception10.gif[Exception Breakpoint]
+
+You can configure if the debugger should stop at caught or
+uncaught exceptions.
+
+=== Method breakpoint
+
+A method breakpoint is defined by double-clicking in the left
+margin of the editor next to the method header.
+
+You can configure if you want
+to stop the program before entering
+or
+after leaving the method.
+
+image::methodbreakpoint10.gif[Method Breakpoint]
+
+=== Breakpoints for loading classes
+
+A class load breakpoint stops when the
+class is loaded.
+
+To set a class load breakpoint, right-click on a class in the
+_Outline_
+view
+and choose the
+_Toggle Class Load Breakpoint_
+option.
+
+image::classloadbreakpoint.gif[Toogle class load breakpoint]
+
+Alternative you can double-click in the left border of the Java
+editor beside the class definition.
+
+=== Step Filter
+
+You can define that certain packages should be skipped in debugging.
+This is
+for example useful if you use a framework for testing but
+don't want
+to step into the test framework classes.
+These
+packages can
+be configured
+via the
+menu:Window[Preferences > Java > Debug > Step Filtering]
+menu path.
+
+=== Hit Count
+
+For every breakpoint you can specify a hit
+count in its
+properties. The application is stopped once
+the
+breakpoint has been
+reached
+the number of times defined in the hit
+count.
+
+=== Remote debugging
+
+Eclipse allows you to debug applications which runs on
+another
+Java virtual machine or even on another machine.
+
+To enable remote debugging you need to start your Java
+application with certain flags, as demonstrated in the following code
+example.
+
+[source,java]
+----
+include::res/remote/remote.txt[]
+----
+
+In you Eclipse IDE you can
+enter the hostname and port to connect for debugging
+via the
+menu:Run[Debug Configuration...]
+menu.
+
+Here you can create a new debug configuration of the
+_Remote Java Application_
+type. This configuration allows you to enter the hostname and port
+for the connection as depicted in the following screenshot.
+
+image::remotedebugging10.png[Remote debugging]
+
+NOTE:Remote debugging requires that you have the source code of the
+application which is debugged available in your Eclipse IDE.
+
+=== Drop to frame
+
+Eclipse allows you to select any level (frame) in the call stack
+during debugging and set the JVM to restart from that point.
+
+This allows you to rerun a part of your program. Be aware that
+variables which have been modified by code that already run will
+remain
+modified.
+
+To use this feature, select a level in your stack and press the
+_Drop
+to Frame
+_
+button in the toolbar of the
+_Debug_
+view
+.
+
+NOTE: Fields and external data may not be affected by the reset.
+For
+example if you write a entry to the database and afterward drop to a
+previous frame, this entry is still in the database.
+
+The following screenshot depicts such a reset. If you restart your
+`for`
+loop, the field
+`result`
+is not set to its initial value and therefore the loop is not
+executed as without resetting the execution to a previous point.
+
+image::droptoframe10.png[]
+

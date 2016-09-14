@@ -73,7 +73,7 @@ This option is shown in the screenshot below and should always be selected whene
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/submodules1.png" scale="50"/>
+  <imagedata fileref="./images/submodules1.png"/>
   
   <textobject><phrase>submodules1.png</phrase></textobject>
 </inlinemediaobject>
@@ -91,7 +91,7 @@ Once cloning completes you will see a new Submodules node available in the Git R
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/submodules2.png" scale="50"/>
+  <imagedata fileref="./images/submodules2.png"/>
   
   <textobject><phrase>submodules2.png</phrase></textobject>
 </inlinemediaobject>
@@ -187,7 +187,7 @@ The jquery repository should now show a commit is available to push and the src/
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/submodules3.png" scale="50"/>
+  <imagedata fileref="./images/submodules3.png"/>
   
   <textobject><phrase>submodules3.png</phrase></textobject>
 </inlinemediaobject>
@@ -248,7 +248,7 @@ Once cloning completes the time submodule should be visible under the Submodules
 
 <inlinemediaobject>
   <imageobject>
-  <imagedata fileref="./images/submodules3.png" scale="50"/>
+  <imagedata fileref="./images/submodules3.png"/>
   
   <textobject><phrase>submodules3.png</phrase></textobject>
 </inlinemediaobject>

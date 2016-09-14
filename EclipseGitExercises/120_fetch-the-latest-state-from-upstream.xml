@@ -33,7 +33,7 @@
 			
 				<inlinemediaobject>
 					<imageobject>
-						<imagedata fileref="./images/fetch-from-upstream.png" scale="50" />
+						<imagedata fileref="./images/fetch-from-upstream.png" />
 					
 					<textobject>
 						<phrase>Fetch from Upstream</phrase>
@@ -53,7 +53,7 @@
 					
 						<inlinemediaobject>
 							<imageobject>
-								<imagedata fileref="./images/fetch-results.png" scale="50" />
+								<imagedata fileref="./images/fetch-results.png" />
 							
 							<textobject>
 								<phrase>Fetch Results</phrase>
@@ -70,7 +70,7 @@
 					
 						<inlinemediaobject>
 							<imageobject>
-								<imagedata fileref="./images/fetch-results-up-to-date.png" scale="50" />
+								<imagedata fileref="./images/fetch-results-up-to-date.png" />
 							
 							<textobject>
 								<phrase>Fetch Results up to Date</phrase>

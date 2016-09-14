@@ -1,0 +1,12 @@
+== Project
+	
+Create a new General Project _de.vogella.dtp.example_ via menu:File[New > Other > General > Project]. 
+This project will store the SQL files.
+	
+Add a folder _lib_ to your project.
+Copy the file derby.jar from your Derby download into this folder.
+	
+The result should look like the following.
+	
+image::project10.gif[]
+	

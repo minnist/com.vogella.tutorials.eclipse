@@ -1,0 +1,31 @@
+= Managing databases with Eclipse and the Database Tools - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 1.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseDataToolsPlatform
+
+[abstract]
+Eclipse Data tools Platform.
+The Eclipse Data Tools Platform (DTP) provides tools to simplify the handling of databases. 
+This article demonstrates the usage of the Eclipse DTP.
+This article is based on Eclipse Luna (Eclipse 4.4).
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::10_dtpintro.adoc[]
+include::20_installation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::24_project.adoc[]
+include::30_dtpconfig.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::40_createDB.adoc[]
+include::50_usingsql.adoc[]
+include::60_tableeditor.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

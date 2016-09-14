@@ -1,0 +1,20 @@
+== Configuration
+
+The following will create a connection for an embedded Derby.
+
+Define the driver for the derby access. 
+Go to menu:Window[Preferences > Data Management > Connectivity > Driver Definition]. 
+Press btn:[Add]. Select Derby and the version you want to use.
+If your Derby version is not listed selected the highest number
+displayed.
+
+image::dtpconfig10.gif[]
+
+Select then the tab jar press btn:[Add...] and select the derby.jar from
+your project folder _lib_.
+
+image::dtpconfig20.gif[]
+
+
+
+

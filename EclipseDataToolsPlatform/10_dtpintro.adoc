@@ -1,0 +1,28 @@
+== Introduction
+
+=== Eclipse Data Tools Platform
+
+The Eclipse DTP project provide tools for performing database
+tasks. For example the project provides an editor for SQL statements
+or a database browser.
+
+=== Derby - Java DB
+		
+In this article
+http://www.vogella.com/tutorials/ApacheDerby/article.html[Apache Derby]
+is used as the example database. Derby is an open-source, freely
+available, pure Java database.
+See
+http://www.vogella.com/tutorials/ApacheDerby/article.html[Apache Derby Tutorial]
+to learn more about Apache Derby.
+
+Eclipse DTP contains connectors for lots of other databases, e.g. MySQL, PostgreSQL, HSQLDB.
+
+=== Using Eclipse
+		
+The following assumes that you already have knowledge in using
+the
+http://www.vogella.com/tutorials/Eclipse/article.html[Eclipse IDE]. 
+See the http://www.vogella.com/tutorials/Eclipse/article.html[Eclipse Java IDE Tutorial]
+in case you lacking this knowledge.
+	

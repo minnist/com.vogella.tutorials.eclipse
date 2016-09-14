@@ -18,8 +18,7 @@
 image::cherrypick10.png[]
 			
 			<textobject>
-				<phrase>Situation before the cherry pick</phrase>
-			</textobject>
+				<phrase>Situation before the cherry pick]
 		
 	
 
@@ -31,8 +30,7 @@ image::cherrypick10.png[]
 image::cherrypick20.png[]
 			
 			<textobject>
-				<phrase>Situation before the cherry pick</phrase>
-			</textobject>
+				<phrase>Situation before the cherry pick]
 		
 	
 
@@ -41,16 +39,14 @@ image::cherrypick20.png[]
 image::cherrypick30.png[]
 			
 			<textobject>
-				<phrase>Situation before the cherry pick</phrase>
-			</textobject>
+				<phrase>Situation before the cherry pick]
 		
 	
 	
 image::cherrypick40.png[]
 			
 			<textobject>
-				<phrase>Situation before the cherry pick</phrase>
-			</textobject>
+				<phrase>Situation before the cherry pick]
 		
 	
 	This results in a history without the bad commit. 

@@ -84,8 +84,9 @@ image::i22n_source10.png[Externizing strings in source files dialog]
 			file.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/Messages.java[]
+[source,text]
+----
+include::res/source/Messages.java[]
 ----
 		
 		
@@ -101,8 +102,9 @@ image::i22n_source10.png[Externizing strings in source files dialog]
 			etc.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/messages.properties[]
+[source,text]
+----
+include::res/source/messages.properties[]
 ----
 		
 		
@@ -112,8 +114,9 @@ image::i22n_source10.png[Externizing strings in source files dialog]
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/using.txt[]
+[source,text]
+----
+include::res/source/using.txt[]
 ----
 		
 		
@@ -124,13 +127,15 @@ image::i22n_source10.png[Externizing strings in source files dialog]
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place1.txt[]
+[source,text]
+----
+include::res/source/place1.txt[]
 ----
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/source/place2.txt[]
+[source,text]
+----
+include::res/source/place2.txt[]
 ----
 		
 

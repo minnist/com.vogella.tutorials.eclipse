@@ -1,0 +1,187 @@
+== JFace Dialogs
+(((Dialog,JFace)))
+
+=== Dialogs from JFace
+
+JFace contains several
+frequently used dialogs which are not
+based on the
+native dialogs as
+well as
+a framework for
+building custom
+dialogs.
+
+NOTE: Even though JFace dialogs are not native, they follow the native platform semantics for things like the button order.
+
+=== Using the static helper methods of the JFace MessageDialog class
+
+The
+`MessageDialog`
+class
+provides static methods to open commonly used
+dialogs, for
+example
+an
+information
+or a warning
+dialog. The following
+code demonstrates the
+usage
+of
+these static methods.
+
+[source,java]
+----
+include::res/jface/messageDialogStandardjava[]
+----
+
+=== Using the JFace MessageDialog class directly
+
+The
+`MessageDialog`
+class also allows the customization of the
+buttons in the dialog.
+The
+following code demonstrates its
+usage.
+
+[source,java]
+----
+include::res/jface/messageDialog.java[]
+----
+
+If you open this dialog, it looks similar to the following
+screenshot.
+
+image::jface_customdialog10.png[JFace own dialog]
+
+Several of these dialogs return the user selection, e.g.
+the
+`openConfirm()`
+method returns
+true if the user selected the
+btn:[OK]
+button.
+The following example code prompts the user for confirmation
+and handles the result.
+
+[source,java]
+----
+include::res/jface/MessageDialog1.java[]
+----
+
+=== ErrorDialog
+
+The
+`ErrorDialog`
+class can be used
+to display one or more errors to the user. If an
+error
+contains
+additional detailed information then a
+button is
+automatically
+added, which shows or hides this information when
+pressed by the
+user.
+
+The following snippet shows a handler class which
+uses this
+dialog.
+
+[source,java]
+----
+include::res/jface/ShowErrorDialogHandler.java[]
+----
+
+If you trigger this handler, the dialog shows the exception
+messages and the detail page contains the stacktrace,
+as depicted in
+the
+following screenshot.
+
+image::errordialog_jface10.png[ErrorDialog]
+
+=== Creating a custom dialog
+
+The
+`org.eclipse.jface.dialogs.Dialog`
+class can be extended to create your own
+dialog implementation. This
+class creates an
+area in which you can place
+controls and add
+an
+_OK_
+and
+_Cancel_
+button (or other custom buttons).
+
+Your class needs to implement the
+`createDialogArea()`
+method. This method gets a
+`Composite`
+which expects to get a
+`GridData`
+object assigned as its layout data. Via the
+`super.createDialogArea(parent)`
+method call, you can create a
+`Composite`
+to which you can add your controls. This is demonstrated by the
+following example code.
+
+[source,java]
+----
+include::res/jface/MyDialog.java[]
+----
+
+TIP: The example code demonstrates how to set the title of your custom
+dialog via the
+`configureShell()`
+method.
+
+If you open this dialog it looks similar to the following
+screenshot.
+
+image::jface_customdialog02.png[Custom dialog]
+
+=== TitleAreaDialog
+
+You can also implement your custom
+dialog
+based on the
+`TitleAreaDialog`
+class.
+
+`TitleAreaDialog`
+has a reserved space for providing feedback to the user. You can set
+the text in this space via the
+`setMessage()`
+and
+`setErrorMessage()`
+methods.
+
+The following example shows a custom defined
+`TitleAreaDialog`
+.
+
+[source,java]
+----
+include::res/jface/MyTitleAreaDialog.java[]
+----
+
+This dialog is depicted in the following screenshot.
+
+image::jface_customdialog20.png[Custom dialog]
+
+The usage of this dialog is demonstrated in the
+following code
+snippet. This code might for example be used in a
+handler.
+
+[source,java]
+----
+include::res/jface/OpenMyDialog.java[]
+----
+

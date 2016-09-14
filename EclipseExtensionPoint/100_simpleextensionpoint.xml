@@ -130,8 +130,9 @@ image::extensionpoint50.png" scale="35[Add Attribute to Extension]
 			following code.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/IGreeter.java[]
+[source,text]
+----
+include::res/simple/IGreeter.java[]
 ----
 		
 
@@ -368,8 +369,9 @@ image::extensionpoint140.png[]
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/simple/GreeterGerman.java[]
+[source,text]
+----
+include::res/simple/GreeterGerman.java[]
 ----
 		
 	

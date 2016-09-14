@@ -28,8 +28,9 @@
 
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitor.java[]
+[source,text]
+----
+include::res/jobs/monitor.java[]
 ----
 		
 
@@ -61,8 +62,9 @@
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/jobs/monitorCondition.java[]
+[source,text]
+----
+include::res/jobs/monitorCondition.java[]
 ----
 		
 

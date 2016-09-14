@@ -19,11 +19,7 @@
 	
 
 	
-image::pdetools10.png" scale="60" />
-			
-			<textobject>
-				<phrase>Eclipse PDE Wizard for externizing plugin.xml</phrase>
-			</textobject>
+image::pdetools10.png[Eclipse PDE Wizard for externizing plugin.xml]
 		
 	
 	

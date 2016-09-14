@@ -1,0 +1,28 @@
+== Exercise: Using SWT dialogs
+
+The following exercise demonstrates how to use the SWT
+dialogs.
+
+Create a new Eclipse plug-in project called
+_de.vogella.rcp.dialogs.swt_
+with one
+part. Create the following
+class.
+
+[source,java]
+----
+include::res/swt/MyComposite.java[]
+----
+
+In the method which creates your user interface, add this
+composite to your part as demonstrated in the following code.
+
+[source,text]
+----
+include::res/snippets/addComposite.txt[]
+----
+
+Run the application. If you select your button the
+_Dialogs_
+will be displayed.
+

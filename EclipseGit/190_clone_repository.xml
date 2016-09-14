@@ -21,8 +21,7 @@ image::egit_import08.png[]
 
 			
 			<textobject>
-				<phrase>Importing projects via EGit</phrase>
-			</textobject>
+				<phrase>Importing projects via EGit]
 		
 	
 
@@ -36,8 +35,7 @@ image::egit_import09.png[]
 
 			
 			<textobject>
-				<phrase>URI selected in EGit</phrase>
-			</textobject>
+				<phrase>URI selected in EGit]
 		
 	
 
@@ -84,8 +82,7 @@ image::egit_import09.png[]
 image::egit_import10.png[]
 			
 			<textobject>
-				<phrase>URI entered in the dialog</phrase>
-			</textobject>
+				<phrase>URI entered in the dialog]
 		
 	
 	
@@ -104,8 +101,7 @@ image::egit_import20.png[]
 
 			
 			<textobject>
-				<phrase>URI entered in the dialog</phrase>
-			</textobject>
+				<phrase>URI entered in the dialog]
 		
 	
 	 The next dialog allows you to specify where the repository
@@ -118,8 +114,7 @@ image::egit_import20.png[]
 image::egit_import30.png[]
 			
 			<textobject>
-				<phrase>Define target directory for Git repository</phrase>
-			</textobject>
+				<phrase>Define target directory for Git repository]
 		
 	
 	
@@ -136,8 +131,7 @@ image::egit_import40.png[]
 
 			
 			<textobject>
-				<phrase>Importing projects</phrase>
-			</textobject>
+				<phrase>Importing projects]
 		
 	
 

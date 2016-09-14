@@ -1,0 +1,14 @@
+== Dialogs in Eclipse
+	
+Eclipse allows you to use
+_dialogs_
+to prompt the user for additional information or provide
+the
+user
+with
+feedback. The Eclipse platform offers several standard
+dialogs via
+SWT
+and
+JFace.
+	

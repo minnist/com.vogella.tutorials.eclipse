@@ -1,0 +1,25 @@
+== SWT dialogs
+(((Dialog,SWT)))
+
+SWT provides an API to use the native dialogs from the OS
+platform.
+The
+default SWT
+dialogs are listed below.
+
+* `ColorDialog` - for selecting a color
+* `DirectoryDialog` - for selecting a directory
+* `FileDialog` - for selecting a file
+* `FontDialog` - for selecting a font
+* `MessageBox` - for opening a message dialog
+
+The following code demonstrates the usage of the
+`MessageBox`
+class to open a message
+dialog.
+
+[source,text]
+----
+include::res/swt/message.open[]
+----
+

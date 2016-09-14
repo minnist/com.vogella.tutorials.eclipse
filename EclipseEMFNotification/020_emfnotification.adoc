@@ -1,0 +1,56 @@
+== Notifications and Adapters with Adapter and EContentAdapter
+	
+EMF has the possibility to inform observers / listeners about
+changes in the model. You can listen to changes of an individual
+object and to changes to all objects in a collection.
+	
+To test this notification create a new Java Project called
+_com.vogella.emf.notifications_.
+	
+Create the model based on the following two interfaces and
+generate the model code from it.
+	
+[source,java]
+----
+include::res/notification/IPerson.java[]
+----
+	
+[source,java]
+----
+include::res/notification/IPersonList.java[]
+----
+
+Create the following to two classes
+`ElementObserver`
+and
+`TotalObserver`
+. The
+`ElementObserver`
+instance listens to changes of the list (delete, insert items)
+and an
+`TotalObserver`
+instance
+listens also in addition to changes of the attributes of the
+elements
+which are contained in
+the
+list.
+	
+[source,java]
+----
+include::res/notification/ElementObserver.java[]
+----
+	
+[source,java]
+----
+include::res/notification/TotalObserver.java[]
+----
+
+Create a main class to test the different behavior and run the
+main method.
+	
+[source,java]
+----
+include::res/notification/Main.java[]
+----
+

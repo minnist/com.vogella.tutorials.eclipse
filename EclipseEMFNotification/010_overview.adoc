@@ -1,0 +1,7 @@
+== Models and Eclipse EMF
+	
+For a general introduction into Eclipse EMF please see
+http://www.vogella.com/tutorials/EclipseEMF/article.html[Eclipse EMF Tutorial]
+	
+This article focus on the observer / notification functionality of Eclipse EMF.
+

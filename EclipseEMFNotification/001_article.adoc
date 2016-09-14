@@ -1,0 +1,23 @@
+= Eclipse Modeling Framework (EMF) -  Notifications and Adapters - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2010, 2016 vogella GmbH
+Version 0.3, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseEMFNotification
+
+[abstract]
+Eclipse Adapters and Notification.
+This article describes the notification functionality of Eclipse EMF.
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::020_emfnotification.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

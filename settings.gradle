@@ -1,5 +1,6 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
+include 'EclipseErrorReporting'
 include 'EclipseEMFPersistence'
 include 'EclipseEMFNotification'
 include 'EclipseEMF'

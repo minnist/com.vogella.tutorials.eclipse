@@ -1,0 +1,128 @@
+== Exercise: Creating the Debug Model Elements
+
+=== Target
+In this exercise an example debug model will be created, so that a debug session can be started.
+
+In this debug session a given String will be printed to the
+console char by char. The running application can be suspended at the
+char, which is currently in the work queue.
+
+NOTE: This exercise is based on
+http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui[Launch Configuration UI]
+and will make use of the tab and launch delegate, which is created
+in the
+http://www.vogella.com/tutorials/EclipseLauncherFramework/article.html#eclipsecustomlaunchconfigurationui[Defining custom launcher for the Eclipse IDE tutorial].
+	
+image::vogella_launch_ui.png[Vogella launch UI]
+
+=== Create a common IDebugElement
+
+As mentioned earlier each debug model class is derived from
+`IDebugElement`
+and contains methods, which are equal for every debug model class.
+
+[source,java]
+----
+include::res/ExampleDebugElement.java[]
+----
+
+NOTE: A custom model identifier may also be used. This means it is
+not
+necessary to use the plug-in's id to make everything work
+correctly.
+
+=== Create an IStackFrame
+
+`IStackFrames`
+are only visible when a thread is suspended, which can also be seen
+in the following
+<<debug_create_ithread>>
+section.
+
+For instance when debugging a Java application the list of
+`IStackFrame`
+objects under a thread show the currently suspended Java stacktrace.
+
+[source,java]
+----
+include::res/ExampleStackFrame.java[]
+----
+
+For convenience most of the actions in the ExampleStackFrame are
+delegated to the given
+`IThread`
+. For visualization the
+`getName()`
+method returns the character and position of the word, which should
+be
+spelled. In later sections IVariables will be added to this
+`IStackFrame`
+implementation, so that also available variables are shown in the
+_Variables_
+view.
+
+`IStackFrame`
+classes should also override the
+`equals`
+and
+`hashcode`
+methods, because they are usually compared to each other. See
+`getStackFrames()`
+and
+`getTopStackFrame()`
+methods in
+<<debug_create_ithread>>
+.
+	
+[[debug_create_ithread]]
+=== Create an IThread
+
+An
+`IThread`
+is supposed to be a wrapper around a usual Java thread, which runs
+within an
+`IDebugTarget`
+.
+
+[source,java]
+----
+include::res/ExampleThread.java[]
+----
+
+=== Create an IDebugTarget
+
+The
+`IDebugTarget`
+is supposed to be applied to the
+`org.eclipse.debug.core.ILaunch`
+object, which is passed to an
+`org.eclipse.debug.core.model.LaunchConfigurationDelegate`
+, by using its
+`addDebugTarget(IDebugTarget target)`
+method.
+.
+
+It can contain several
+`IThreads`
+, which run during a debug session.
+
+[source,java]
+----
+include::res/ExampleDebugTarget.java[]
+----
+
+=== Validate
+
+To validate the result start the ExampleLaunchDelegate, switch
+to the
+debug perspective and use the toolbar controls below to
+suspend,
+resume, step over or terminate the debug session.
+
+image::debug_toolbar_buttons.png[Debug toolbar buttons]
+
+When passing in "vogella" as String the result should look
+similar to this:
+
+image::debug_view_result.png[Debug view result]
+

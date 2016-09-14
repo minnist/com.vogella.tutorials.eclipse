@@ -1,0 +1,8 @@
+== Eclipse Debug Framework Resources
+	
+https://eclipse.org/articles/Article-Debugger/how-to.html[Article about writing a sample debugger for perl]
+	
+https://www.eclipsecon.org/2005/presentations/EclipseCon2005_Tutorial21.zip[Tutorial about the Eclipse Debug Framework from Bjorn Freeman-Benson, Darin Wright at EclipseCon 2005]
+	
+https://www.eclipse.org/eclipse/debug/documents.php[Overview for documents concerning debug functionality]
+

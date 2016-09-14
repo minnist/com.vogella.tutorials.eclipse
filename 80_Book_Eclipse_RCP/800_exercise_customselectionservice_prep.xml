@@ -43,8 +43,7 @@ include::res/replaceselectionservice/SamplePartFirst.java[]
 			application.
 		
 		
-image::CustomSelectionService_twoPerspectives10.png"
-						scale="40[Two perspectives]
+image::CustomSelectionService_twoPerspectives10.png[Two perspectives]
 		
 		Set the selection and switch between these perspectives with
 			following handler.

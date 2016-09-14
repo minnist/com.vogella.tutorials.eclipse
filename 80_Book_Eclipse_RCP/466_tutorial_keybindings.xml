@@ -11,8 +11,7 @@
 			ID. As name use "Windows and Dialogs".
 		
 		
-image::exercise_keybindings10.png"
-						scale="40[How to add the Binding Context Entries]
+image::exercise_keybindings10.png[How to add the Binding Context Entries]
 		
 		
 			Afterwards add the following sub-entries:
@@ -46,8 +45,7 @@ image::exercise_keybindings10.png"
 		The resulting entry is depicted in the following screenshot.
 		
 		
-image::exercise_keybindings20.png"
-						scale="40[How to add the Binding Context Entries]
+image::exercise_keybindings20.png[How to add the Binding Context Entries]
 		
 		WARNING:
 			The name attribute of a binding context entry is not allowed to
@@ -74,8 +72,7 @@ image::tutorial_bindingtable10.png"
 		
 
 		
-image::tutorial_bindingtable20.png"
-						scale="40[How to add the Binding Context Entries]
+image::tutorial_bindingtable20.png[How to add the Binding Context Entries]
 		
 		Run your program and test it.
 	

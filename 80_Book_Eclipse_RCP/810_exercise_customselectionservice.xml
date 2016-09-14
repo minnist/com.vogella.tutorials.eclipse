@@ -54,8 +54,7 @@ include::res/replaceselectionservice/ReplaceSelectionService.java[]
 			add-on.
 		
 		
-image::customselection_serviceaddon.png"
-						scale="40[Creating an add-on]
+image::customselection_serviceaddon.png[Creating an add-on]
 		
 	
 

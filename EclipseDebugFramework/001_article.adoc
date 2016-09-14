@@ -1,0 +1,22 @@
+= Implementing Debug behavior in the Eclipse IDE - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Simon Scholz(c) 2015, 2016 vogella GmbH
+Version 0.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseDebugFramework
+
+[abstract]
+Eclipse Debug Framework.
+This article describes how to implement debugging behavior in Eclipse.
+	
+include::010_overview.adoc[]
+include::020_breakpoints.adoc[]
+include::030_exercise_debug_model.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

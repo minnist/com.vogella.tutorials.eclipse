@@ -1,0 +1,29 @@
+== Adding extensions to extension points
+(((Extension points and extensions,adding extensions)))
+	
+The Eclipse IDE provides an
+editor for the
+_plugin.xml_
+file. It is the same editor which is used for modifying the
+_MANIFEST.MF_
+file.
+	
+Select the
+_Extensions_
+tab in this editor to create new
+extensions.
+On the
+_Extension Points_
+tab you can define new
+extension points.
+	
+image::pluginextensions08.png[Extensions defines by plug-in]
+	
+By using the btn:[Add...]
+button you can add a new extension.
+After adding one extension
+you can
+right-click on it
+to add elements or
+attributes.
+

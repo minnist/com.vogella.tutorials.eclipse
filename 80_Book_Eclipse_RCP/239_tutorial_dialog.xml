@@ -40,11 +40,7 @@ include::res/dialog/ExitHandler.java[]
 		terminate.
 	
 	
-image::tutorial_dialogclose.png"
-					scale="40" />
-			
-			<textobject>
-				<phrase>Confirmation dialog]
+image::tutorial_dialogclose.png[Confirmation dialog]
 		
 	
 

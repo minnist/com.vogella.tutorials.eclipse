@@ -1,0 +1,278 @@
+== Exercise: Create and evaluate an extension point
+
+=== Target for this exercise
+
+In this exercise you create two new plug-ins. The first one
+contains an extension point and the second
+contributes an
+extension
+to
+this new extension point. This exercise is to demo the creation and
+usage of extension
+points. The result
+is not intended to
+be a realistic
+feature.
+
+=== Creating a plug-in for the extension point definition
+
+Create a new plug-in project called
+_com.vogella.extensionpoint.definition_
+based on the settings of the following screenshot.
+
+image::extensionpoint_projectwizard10.png[Project Wizard to create the plug-in which defines the extension]
+
+image::extensionpoint_projectwizard20.png[Project Wizard to create the plug-in which defines the extension]
+
+=== Create an extension point
+
+Open the
+_MANIFEST.MF_
+file
+or the
+_plugin.xml_
+file and select the
+_Extension Points_
+tab.
+
+image::extensionpoint10.png[]
+
+Press the btn:[Add...] button.
+
+Enter
+"com.vogella.extensionpoint.definition.greeter" as
+_Extension Point ID_
+and
+"Greeter" as
+_Extension Point Name_
+in the dialog. The
+_Extension Point Schema_
+field is automatically
+populated based on your input.
+
+image::extensionpoint20.png[Define Extension Point]
+
+Press the
+_Finish_
+button.
+The definition of the extension is generated and the
+schema
+editor
+opens. Switch to the
+_Definition_
+tab.
+
+image::extensionpoint30.png[Extension Point Schema Editor]
+
+Add attributes
+to the extension point. For that click
+on
+the
+btn:[New Element]
+button. Give the new element the name "client".
+
+image::extensionpoint40.png[Add Elements to Extension]
+
+Select the "client" element and press
+_New Attribute_
+. Give the
+new
+element the name "class" and the type "java". Enter
+`com.vogella.extensionpoint.definition.IGreeter`
+as interface name
+
+image::extensionpoint50.png[Add Attribute to Extension]
+
+This interface doesn't exit yet. Press on the
+hyperlink called
+_Implements_
+to
+create it based on the
+following code.
+
+[source,java]
+----
+include::res/simple/IGreeter.java[]
+----
+
+Go back to your extension point definition and add a choice to
+the
+extension point. For this select the
+_extension_
+entry, right-click on it and select
+menu:New[Choice]
+.
+This defines how often the extension "client" can
+be provided by
+contributing plug-ins. We will set no restrictions
+(unbound).
+
+image::extensionpoint70.png[]
+
+image::extensionpoint80.png[]
+
+image::extensionpoint90.png[]
+
+image::extensionpoint92.png[]
+
+=== Export the package
+
+Select the
+_MANIFEST.MF_
+file switch to the
+_Runtime_
+tab and
+export
+the
+package which contains the
+`IGreeter`
+interface.
+
+image::extensionpoint100.png[Export IGreeter package]
+
+=== Add dependencies
+
+Add the following dependencies via the
+_MANIFEST.MF_
+file of your new plug-in:
+
+* `org.eclipse.core.runtime`
+* `org.eclipse.e4.core.di`
+
+=== Evaluating the registered extensions
+
+The defining plug-in also evaluates the existing extension
+points. In the following example you create a handler
+class which can
+evaluate the existing extensions.
+
+Create the following class.
+
+[source,java]
+----
+include::res/simple/EvaluateContributionsHandler.java[]
+----
+
+The code above uses
+the
+`ISafeRunnable`
+interface. This interface protects the plug-in which defines
+the
+extension point from malfunction extensions. If an
+extension throws an
+`Exception`
+, it will be caught by
+`ISafeRunnable`
+and
+the remaining extensions will still get executed.
+
+Review the
+_.exsd_
+schema file and
+the
+reference to this file in the
+_plugin.xml_
+file.
+
+=== Create a menu entry and add it to your product
+
+Add a dependency to the
+`com.vogella.extensionpoint.definition`
+plug-in
+in the
+_MANIFEST.MF_
+file of your application plug-in.
+
+Afterwards create a new menu entry called
+_Evaluate extensions_
+and define a command and handler for this menu entry. In the handler
+point to the
+`EvaluateContributionsHandler`
+class.
+
+Also update your product (via your features) so that the new
+plug-in is part of your application.
+
+NOTE: A better approach would be to add the menu entry via a model
+fragment or a model processor, but I leave that as
+an additional
+exercise to the reader.
+
+=== Providing an extension
+
+Create a new simple plug-in called
+_com.vogella.extensionpoint.contribution_.
+
+Open the
+_MANIFEST.MF_
+editor of this new plug-in and select the
+_Dependencies_
+tab.
+
+Add the
+`com.vogella.extensionpoint.definition`
+and
+`org.eclipse.core.runtime`
+plug-ins
+as dependencies. Make sure
+your plug-in has
+the
+_This plug-in is a singleton_
+flag
+set on the
+_Overview_
+tab for your
+_MANIFEST.MF_
+file.
+
+image::extensionpoint110.png[]
+
+Switch to the
+_Extensions_
+tab and select
+btn:[Add...]
+. Select your custom
+extension point
+and press the
+btn:[Finish] button.
+
+image::extensionpoint120.png[]
+
+Add a client to your extension point via right-click.
+
+image::extensionpoint130.png[]
+
+image::extensionpoint140.png[]
+
+Create the
+`GreeterGerman`
+class
+with the
+following code.
+
+[source,java]
+----
+include::res/simple/GreeterGerman.java[]
+----
+
+=== Add the plug-in to your product
+
+Add the
+`com.vogella.extensionpoint.contribution`
+plug-in
+to your product (via your features).
+
+=== Validating
+Start your application via the product configuration file to
+update the plug-ins included in the run
+configuration.
+
+In your running application
+select
+your new menu entry.
+The handler
+class write the output of your extensions to the
+_Console_
+view
+of your Eclipse IDE.
+

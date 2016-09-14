@@ -1,0 +1,39 @@
+== Accessing extensions
+
+The information about the available extension points and the
+provided
+extensions are stored in a class of type
+`IExtensionRegistry`.
+
+NOTE: The Eclipse platform reads the
+extension points and provided extensions
+once the
+plug-in is in the
+_RESOLVED_
+life cycle status as defined by the OSGi
+specification.
+
+In Eclipse applications you can use the dependency injection mechanism
+to
+get
+the
+`IExtensionRegistry`
+class injected.
+
+[source,text]
+----
+include::res/registry/query2.txt[]
+----
+
+In Eclipse 3.x based plug-ins you query for a certain extension via
+static methods of the
+`Platform`
+class. An example is listed in the following code.
+
+[source,text]
+----
+include::res/registry/query.txt[]
+----
+
+TIP: You can access extensions of all extension points via the `IExtensionRegistery`.
+

@@ -5,7 +5,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
+Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 0.3, 06.07.2016
 :docinfodir: ../
 :vgwort: Eclipse4ModelEvents
@@ -33,7 +33,7 @@ include::006_resources.adoc[]
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
+Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 0.3, 06.07.2016
 :docinfodir: ../
 :vgwort: Eclipse4ModelEvents

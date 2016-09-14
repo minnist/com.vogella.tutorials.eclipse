@@ -1,0 +1,34 @@
+== Example
+		
+The following is based on the EMF model created in
+http://www.vogella.com/tutorials/EclipseEMF/article.html[EMF Tutorial]
+ which we are going to persists. Create a new plug-in project "de.vogella.emf.webpage.instance".
+Add
+the following dependency to your
+_plugin.xml_.
+		
+*org.eclipse.emf.ecore
+*org.eclipse.emf.ecore.xmi
+		
+[source,java]
+----
+include::res/CreateSaveTester.java[]
+----
+
+=== Load an existing model
+		
+The following code can be used to load an existing model.
+		
+[source,java]
+----
+include::res/EMFModelLoad.java[]
+----
+		
+You can then access the model content via standard Java
+coding.
+		
+[source,java]
+----
+include::res/LoadTest.java[]
+----
+

@@ -1,7 +1,7 @@
 == Single Sourcing
 	
 		With Eclipse RAP it is possible to develop a desktop application
-http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
+http://www.vogella.com/tutorials/RichClientPlatform/article.html[Eclipse RCP
 		and a web application with the same source code. This is called single
 		sourcing.
 	
@@ -20,7 +20,7 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
 		then you have to use the RAP class SessionSingleBase. In case
 		you have
 		a real singleton for several users you need to consider
-		http://www.vogella.com/tutorials/JavaConcurrency/article.html">concurrency
+		http://www.vogella.com/tutorials/JavaConcurrency/article.html[concurrency
 		issues. JFace
 		Preference are already correctly supported in
 		RAP.

@@ -107,9 +107,9 @@ include::res/firstrap/Perspective.java[]
 			you want
 			to learn how you can extend your Eclipse RAP application
 			you can review
-http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP Tutorial
+http://www.vogella.com/tutorials/RichClientPlatform/article.html[Eclipse RCP Tutorial
 			or
-http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
+http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[Eclipse JFace TableViewer
 		
 		 Of course Eclipse RAP does only support a subset of these API
 			(but this is

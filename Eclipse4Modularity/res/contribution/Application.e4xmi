@@ -1,16 +1,4 @@
-
-= Android - Tutorial
-:linkcss:
-:sectnums:                                                          
-:experimental:
-:icons:
-:imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
-:docinfodir: ../
-:vgwort: 
-
-[abstract]
+<?xml version="1.0" encoding="utf-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2008/UIModel" xmi:id="a" id="org.eclipse.e4.ide.application">
   <children xsi:type="application:Window" xmi:id="_m-KkfC2LEd-RMdxMTPbEkQ" id="_m-KkfC2LEd-RMdxMTPbEkQ" label="Window" width="500" height="400">
     <children xsi:type="application:PartStack" xmi:id="_Uq3zAC4qEd-CRdAyrDY9Rw" id="_Uq3zAC4qEd-CRdAyrDY9Rw">

@@ -1,10 +1,10 @@
 == Zest and JFace
-http://www.vogella.com/tutorials/EclipseJFace/article.html">JFace
+http://www.vogella.com/tutorials/EclipseJFace/article.html[JFace
 		provides viewers to encapsulate the data from the presentation.
 		For an
 		introduction to JFace viewer please see
-		http://www.vogella.com/tutorials/EclipseJFaceTable/article.html"> Eclipse JFace TableViewer
-		or 		http://www.vogella.com/tutorials/EclipseJFaceTreeViewer/article.html"> Eclipse JFace TreeViewer. A JFace viewer requires a content provider and a label provider.
+		http://www.vogella.com/tutorials/EclipseJFaceTable/article.html[Eclipse JFace TableViewer
+		or 		http://www.vogella.com/tutorials/EclipseJFaceTreeViewer/article.html[Eclipse JFace TreeViewer. A JFace viewer requires a content provider and a label provider.
 		Zest provides as a viewer the class "GraphViewer".
 		Content provider in
 		Zest are either based on the connections or on the

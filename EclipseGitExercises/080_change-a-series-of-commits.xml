@@ -9,7 +9,7 @@
 === Preparation
 		
 			Follow the exercise
-			merge-rebase-and-resolving-conflicts.html">
+			merge-rebase-and-resolving-conflicts.html[
 				Merge, Rebase and Resolving Conflicts
 			
 			. After the rebase you end up
@@ -182,7 +182,7 @@
 					In that case, edit the conflicting files, add the changes and
 					commit
 					like in the exercise
-					merge-rebase-and-resolving-conflicts.html">
+					merge-rebase-and-resolving-conflicts.html[
 						Merge, Rebase and Resolving Conflicts
 					
 					.

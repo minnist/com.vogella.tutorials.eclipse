@@ -1,0 +1,26 @@
+== Appendix: Encryption
+	
+EMF has the possibility to encrypt the data model before writing
+it and to decrypt it before loading. The following demonstrates this. 
+	
+Create an model based on the following interface.
+	
+[source,text]
+----
+include::res/encryption/IPerson.java[]
+----
+	
+Create the following factory which sets the option for encryption.
+	
+[source,text]
+----
+include::res/encryption/MyXMIFactoryImpl.java[]
+----
+
+Create the following test class. 
+	
+[source,text]
+----
+include::res/encryption/Create.java[]
+----
+

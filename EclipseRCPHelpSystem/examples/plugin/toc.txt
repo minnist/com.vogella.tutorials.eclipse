@@ -1,19 +1,7 @@
-
-= Android - Tutorial
-:linkcss:
-:sectnums:                                                          
-:experimental:
-:icons:
-:imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
-:docinfodir: ../
-:vgwort: 
-
-[abstract]
+<?xml version="1.0" encoding="utf-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
 
-<toc label="Address Book Help" topic="html/toc.html">
+<toc label="Address Book Help" topic="html/toc.html[
    <topic label="Getting Started">
       <anchor id="gettingstarted"/>
    </topic>

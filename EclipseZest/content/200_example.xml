@@ -34,7 +34,7 @@ image::simple10.gif[]
 === Select layout manager via a command
 		
 			Create a
-			http://www.vogella.com/tutorials/EclipseCommands/article.html"> command
+			http://www.vogella.com/tutorials/EclipseCommands/article.html[command
 			with the following default handler
 			"de.vogella.zest.first.handler.ChangeLayout" which will change
 			the

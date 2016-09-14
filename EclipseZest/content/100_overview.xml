@@ -3,9 +3,9 @@
 === Overview
 		
 			Eclipse Zest is a visualization toolkit for graphs. It is based
-			on http://www.vogella.com/tutorials/SWT/article.html"> SWT
+			on http://www.vogella.com/tutorials/SWT/article.html[SWT
 			/ Draw2D. Zest supports the viewer concept from
-			http://www.vogella.com/tutorials/EclipseJFace/article.html"> JFace Viewers
+			http://www.vogella.com/tutorials/EclipseJFace/article.html[JFace Viewers
 			and
 			therefore
 			allows to separate the model from the graphical
@@ -13,9 +13,9 @@
 			model.
 			This article assumes that you are already
 			familiar with
-http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
+http://www.vogella.com/tutorials/RichClientPlatform/article.html[Eclipse RCP
 			or
-			http://www.vogella.com/tutorials/EclipsePlugin/article.html"> Eclipse Plugin development
+			http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plugin development
 			.
 		
 	

@@ -1,0 +1,38 @@
+== Display the data in a table
+
+=== Overview
+
+We will now display the data in a table.
+
+=== Create a table
+
+Switch from "Data Explorer" to the "Palette". 
+Select the tab "Layout".
+
+image::SNAG-0012.gif[]
+
+Drag and drop the table element on the report.
+
+image::SNAG-0015.gif[]
+
+Define the following settings for the table.
+
+image::table40.gif[]
+
+Change back to the "Data Explorer". And drag
+and drop the
+dataset columns into the "Details row" of the table. 
+
+image::table50.gif[]
+
+The result should look like the following.
+
+image::table60.gif[]
+
+Done. You can
+see a preview of the report if you click on the
+"Review" Tab. The
+result should look like the following:
+
+image::table70.gif[]
+

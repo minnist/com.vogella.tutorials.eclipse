@@ -1,0 +1,34 @@
+= Reporting with Eclipse BIRT and Java Objects (POJO's) - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Hendrik Still (c) 2008, 2016 vogella GmbH
+Version 1.3, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseBIRT
+
+[abstract]
+Eclipse Birt.
+This tutorial describes how to use Eclipse BIRT for reporting on simple Java Objects (POJO's). 
+The tutorial explains also how to deploy the resulting BIRT report into a
+webcontainer (Tomcat) and how to use it in an Eclipse RCP application. Eclipse 3.7 (Indigo) is used for this tutorial.
+		
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::10_birtintro.adoc[]
+include::15_installation.adoc[]
+include::20_birtcreate.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::30_java.adoc[]
+include::40_birtdatasource.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::50_birttable.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::60_birtchart.adoc[]
+include::80_tomcat.adoc[]
+include::84_rcp.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

@@ -12,9 +12,9 @@
 			stand-alone view).
 			
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/Perspective.java[]
+[source,text]
+----
+include::res/jface/Perspective.java[]
 ----
 		
 	
@@ -26,25 +26,25 @@
 			logically convert it into a connected Graph. 
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/MyNode.java[]
+[source,text]
+----
+include::res/jface/MyNode.java[]
 ----
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/MyConnection.java[]
+[source,text]
+----
+include::res/jface/MyConnection.java[]
 ----
 		
 
 		 Also build this class which provides an instance of the data
 			model. 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/NodeModelContentProvider.java[]
+[source,text]
+----
+include::res/jface/NodeModelContentProvider.java[]
 ----
 		
 
@@ -54,15 +54,15 @@
 		Create the following content and label providers. 
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ZestNodeContentProvider.java[]
+[source,text]
+----
+include::res/jface/ZestNodeContentProvider.java[]
 ----
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ZestLabelProvider.java[]
+[source,text]
+----
+include::res/jface/ZestLabelProvider.java[]
 ----
 		
 	
@@ -71,9 +71,9 @@
 
 		 Change the view to the following.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/View.java[]
+[source,text]
+----
+include::res/jface/View.java[]
 ----
 		
 		 The result should look like the following.
@@ -93,16 +93,16 @@ image::ZestFinal10.gif[]
 		
 		 For example define the following filter.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/NodeFilter.java[]
+[source,text]
+----
+include::res/jface/NodeFilter.java[]
 ----
 		
 		 Apply the filter to the view to filter all elements.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/jface/ViewFilter.java[]
+[source,text]
+----
+include::res/jface/ViewFilter.java[]
 ----
 		
 		

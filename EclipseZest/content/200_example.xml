@@ -16,9 +16,9 @@
 		Change the code of "View.java" to the following. This code
 			creates a simple graph and connects its elements.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/first/View.java[]
+[source,text]
+----
+include::res/first/View.java[]
 ----
 		
 		 Run you application and you should see the graph. 
@@ -41,9 +41,9 @@ image::simple10.gif[]
 			layout for the graph. Assign the command to the menu.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/first/ChangeLayout.java[]
+[source,text]
+----
+include::res/first/ChangeLayout.java[]
 ----
 		
 

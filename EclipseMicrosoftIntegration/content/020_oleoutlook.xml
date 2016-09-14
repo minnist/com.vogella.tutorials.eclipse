@@ -24,9 +24,9 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#commands"
 			user. It also assumes that you have a file c:\temp\test.txt which
 			will be attached to the email.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/outlook/SendEmail.java[]
+[source,text]
+----
+include::res/outlook/SendEmail.java[]
 ----
 		
 		 If you now start the application and press the button an email

@@ -14,9 +14,9 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp"
 		 Select View.java and replace the code with the following.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/excel/View.java[]
+[source,text]
+----
+include::res/excel/View.java[]
 ----
 		
 		 Start your application and excel should be displayed.

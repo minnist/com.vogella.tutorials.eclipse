@@ -86,17 +86,17 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html#views"> Adding 
 
 		 Create the following view class. 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/firstrap/View.java[]
+[source,text]
+----
+include::res/firstrap/View.java[]
 ----
 		
 		 Add the view to the perspective by changing Perspective.java to
 			the following. 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/firstrap/Perspective.java[]
+[source,text]
+----
+include::res/firstrap/Perspective.java[]
 ----
 		
 		 Run your application and see your new view in actions.

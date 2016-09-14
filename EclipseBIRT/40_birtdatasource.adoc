@@ -1,0 +1,66 @@
+== Datasource and Dataset
+
+To use Java Objects (POJO's) as datasource in Eclipse BIRT you
+have to map the fields of your Java classes to
+JavaScript. This
+JavaScript is used in your report and will access the Java
+Object.
+
+=== Create Data Source
+
+The data source connects your data with your report. BIRT
+provides different types of data sources, we use the "Scripted Data
+Source". Go back to your stocks_report, use the "Report Design"
+perspective and select the "Data Explorer" View.
+
+TIP: You have to select your report to display the content of the datasource view.
+
+Create a new datasource, named "srcStocks" in your report.
+
+image::datasource10.gif[]
+
+image::datasource20.gif[]
+
+=== The Dataset
+
+The dataset defines the mapping for the datasource data and the
+BIRT data. Create a new dataset named "dataSetSocks".
+
+image::dataset10.gif[]
+
+image::dataset20.gif[]
+
+Press next and define the columns for your report.
+
+image::dataset30.gif[]
+
+=== JavaScript
+
+Now we have to write the JavaScript for our dataset. Select the dataset and
+choose "open" as script. The open script is called before the first
+access to the dataset. We use this to load our List with the stock
+objects. To access a Java class you only have to use the following
+syntax: Packages.myJavaClass where myJavaClass is the full qualified
+Java class name.
+
+TIP: In case you do not see the script please node that the editor for the report has several tab. One of it is labeled "source".
+
+image::javascript10.gif[]
+
+[source,text]
+----
+include::res/javascript/open.script[]
+----
+
+Place the following coding in the fetch script.
+
+[source,text]
+----
+include::res/javascript/fetch.script[]
+----
+
+Check if your Script works by doubleclicking
+on the dataset -> Preview Result.
+
+image::SNAG-0011.gif[]
+

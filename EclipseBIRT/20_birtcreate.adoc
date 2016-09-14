@@ -1,0 +1,19 @@
+== Create Project and REport
+
+Create a new Java Project with the name _de.vogella.birt.stocks_. 
+	
+Create a new report _stock_report.rptdesign_
+via menu:File[New > Other > Business Intelligence and Reporting > Report].
+	
+image::createreport10.gif[]
+	
+image::createreport20.gif[]
+	
+image::createreport30.gif[]
+	
+The new report is displayed in the _Report Design_ perspective. 
+Delete everything in the example report except the report header. 
+The result should look like the following.
+
+image::createreport40.gif[]
+	

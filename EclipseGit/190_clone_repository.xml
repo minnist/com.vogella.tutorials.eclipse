@@ -12,8 +12,7 @@
 
 	
 		Select
-		menu:
-			<guimenu>File[Import > Git > Project from Git]
+		menu:File[Import > Git > Project from Git]
 		.
 	
 	
@@ -79,10 +78,7 @@ image::egit_import09.png[]
 	
 
 	
-image::egit_import10.png[]
-			
-			<textobject>
-				<phrase>URI entered in the dialog]
+image::egit_import10.png[URI entered in the dialog]
 		
 	
 	
@@ -111,10 +107,7 @@ image::egit_import20.png[]
 	
 
 	
-image::egit_import30.png[]
-			
-			<textobject>
-				<phrase>Define target directory for Git repository]
+image::egit_import30.png[Define target directory for Git repository]
 		
 	
 	

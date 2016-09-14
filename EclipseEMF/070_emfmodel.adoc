@@ -1,0 +1,103 @@
+== Generating the domain classes
+
+=== Generating Java code
+
+Based on the
+_.genmodel_
+files, you can generate
+Java
+code.
+
+Right-click
+on the root node of the
+_.genmodel_
+file
+and select
+_Generate Model Code_
+. This
+creates the
+Java
+implementation of the
+EMF model in
+the
+current
+project.
+
+image::EMFCodeGen10.gif[]
+
+=== Review the generated code
+
+The generated code will consist of the following:
+
+* _model_ -- Interfaces and the Factory to create the Java classes
+* _model.impl_ -- Concrete implementation of the interfaces defined in model
+* _model.util_ -- The AdapterFactory
+
+The central factory has methods for creating all defined
+objects
+via
+`createObjectName()`
+methods.
+
+For each attribute the generated interface and its
+implementation
+contain
+`getter`
+and (if allowed in the model
+definition)
+`setter`
+methods. Each setter also has a generated
+notification to observers of
+the model. This means that other objects
+can attach them to
+the model
+and
+react to changes in the model.
+
+Each generated interface extends the
+`EObject`
+interface.
+`EObject`
+is the
+base of every EMF class and is the EMF
+equivalent of
+`java.lang.Object`
+.
+`EObject`
+and its corresponding
+implementation class
+`EObjectImpl`
+provide a lightweight base
+class that
+lets the generated
+interfaces and
+classes
+participate in the EMF
+notification and
+persistence
+frameworks.
+
+Every generated method is tagged with
+`@generated`
+. If you
+want to
+manually adjust the method
+and have
+EMF overwrite the
+method during the next generation run,
+you
+need to
+remove this tag.
+
+=== Updating the model
+
+If you change your
+_.ecore_
+model then you can
+update the
+_.genmodel_
+simply by
+reloading.
+
+image::EMFModel70.gif[]
+

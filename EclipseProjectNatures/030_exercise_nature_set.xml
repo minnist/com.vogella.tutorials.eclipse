@@ -20,7 +20,7 @@ Version 0.3, 06.07.2016
         <title>Define an example project nature
         Create a plugin project and add the following dependencies to it:
         
-            <itemizedlist>
+            
                 *
                     org.eclipse.core.runtime
                 

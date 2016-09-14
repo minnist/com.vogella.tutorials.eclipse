@@ -9,7 +9,7 @@
 			application
 			plug-in.
 
-			<itemizedlist>
+			
 				*
 					org.eclipse.core.databinding
 					

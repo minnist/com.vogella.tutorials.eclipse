@@ -1,0 +1,16 @@
+== Creating JavaDoc
+
+You can also generate Javadoc for your classes and methods. EMF
+uses annotations for this with a certain property key. The easiest way
+of adding this is again the diagram. Select a class and maintain the
+documentation in the "GenModel Doc". 
+	
+image::javadoc10.png[]
+
+The ecore model looks now like the following. The key in the
+annotation
+"http://www.eclipse.org/emf/2002/GenModel" is necessary and
+the key on the details enty must be "documentation".  
+	
+image::javadoc20.png[]
+

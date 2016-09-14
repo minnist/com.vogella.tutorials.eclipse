@@ -16,7 +16,7 @@
 			_MANIFEST.MF_
 			file of your application
 			plug-in.
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.e4.ui.workbench.swt`

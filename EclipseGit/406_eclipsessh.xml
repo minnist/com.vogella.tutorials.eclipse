@@ -2,8 +2,7 @@
 	
 		The Eclipse IDE allows you to create an SSH key pair for SSH based
 		communication via
-		menu:
-			<guimenu>Window[Preferences > General > Network Connection > SSH2]
+		menu:Window[Preferences > General > Network Connection > SSH2]
 		.
 	
 	

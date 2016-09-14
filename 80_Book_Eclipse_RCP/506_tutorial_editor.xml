@@ -19,7 +19,7 @@
 			file of the
 			`com.example.e4.rcp.todo`
 			plug-in.
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.e4.ui.model.workbench`

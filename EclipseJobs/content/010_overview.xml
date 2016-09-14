@@ -127,7 +127,7 @@ include::res/invalid/error.txt[]
 			The important parts of the
 			Job
 			API are:
-			<itemizedlist>
+			
 				*
 					IJobManager - schedules jobs    
 				

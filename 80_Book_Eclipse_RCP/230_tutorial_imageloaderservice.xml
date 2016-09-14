@@ -24,7 +24,7 @@
 		
 			Add the following plug-ins as dependencies to your new plug-in.
 
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.core.runtime`

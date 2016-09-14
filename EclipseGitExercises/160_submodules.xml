@@ -8,7 +8,7 @@ Submodule support includes support for adding, updating, syncing, and cloning su
 
 <title>Cloning Submodules
 Cloning a repository with submodules requires cloning all submodule repositories after the parent repository clone completes to ensure all necessary files and folders are present in the working directory once cloning completes.
-<itemizedlist>
+
 *
 
 Open the Git Repositories view
@@ -28,7 +28,7 @@ Select URI and click the Next &gt; button
 
 Paste the following value into the URI: field and click the Next &gt; button
 
-<itemizedlist>
+
 *
 
 git://github.com/jquery/jquery.git
@@ -38,7 +38,7 @@ git://github.com/jquery/jquery.git
 
 jQuery is being used as an example repository since it contains two submodules
 
-<itemizedlist>
+
 *
 
 src/sizzle
@@ -62,7 +62,7 @@ Select the Next &gt; button on the Branch Selection wizard page
 
 Check the Clone Submodules box on the Local Destination wizard page and click Finish
 
-<itemizedlist>
+
 *
 
 This option is shown in the screenshot below and should always be selected whenever cloning a repository with submodules.
@@ -77,7 +77,7 @@ This option is shown in the screenshot below and should always be selected whene
   
   <textobject><phrase>submodules1.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 The cloning operation will be displayed in the Progress view
@@ -102,7 +102,7 @@ Submodules present in the Git Repositories view have the same actions available 
 Each Git parent repository tracks the commit that should be checked out in each configured submodule.  Performing a submodule update checks out that specific revision in the submodule’s Git repository.  You commonly perform this task after you pull a change in the parent repository that updates the revision checked out in the submodule.  You would then fetch the latest changes in the submodule’s Git repository and perform a submodule update in the parent repository to check out the current revision referenced in the parent repository.
 Performing a submodule update is also useful when you want to restore your submodule’s repository to the current commit tracked by the parent repository.  This is common when you are experimenting with different checked out branches or tags in the submodule and you want to restore it back to the commit tracked by the parent repository.
 You can also change the commit that is checked out in each submodule by performing a checkout in the submodule repository and then committing the change in the parent repository.
-<itemizedlist>
+
 *
 
 Open  the Git Repositories view
@@ -132,7 +132,7 @@ Expand the Tags node
 
 Double click the 1.5 tag node
 
-<itemizedlist>
+
 *
 
 The submodule repository will now reflect that commit b36f29f is currently checked out
@@ -144,7 +144,7 @@ The submodule repository will now reflect that commit b36f29f is currently check
 
 Select the Update Submodule option from the context menu available on the src/sizzle repository node
 
-<itemizedlist>
+
 *
 
 This resets the submodule back to the original commit configured in the parent repository
@@ -176,7 +176,7 @@ Check the src/sizzle node in the Files section of the dialog
 
 Click the Commit button
 
-<itemizedlist>
+
 *
 
 The jquery repository should now show a commit is available to push and the src/sizzle repository now have commit 112ff17 checked out.
@@ -195,7 +195,7 @@ The jquery repository should now show a commit is available to push and the src/
 
 <title>Adding a Submodule
 You can add a new submodule to a Git repository by specifying a path in the working directory to place the submodule in and specifying a URL to clone from.  The submodule will be registered in the parent repository’s .gitmodules file as well as the parent repository’s .git/config file.
-<itemizedlist>
+
 *
 
 Open the Git Repositories view
@@ -220,7 +220,7 @@ Select Next &gt;
 
 Enter the following into the URI: field
 
-<itemizedlist>
+
 *
 
 git://github.com/rmm5t/jquery-timeago.git
@@ -232,7 +232,7 @@ git://github.com/rmm5t/jquery-timeago.git
 
 Select Finish
 
-<itemizedlist>
+
 *
 
 The cloning operation should appear in the Progress view
@@ -252,7 +252,7 @@ Once cloning completes the time submodule should be visible under the Submodules
   
   <textobject><phrase>submodules3.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Select the Commit&#8230; option from the context menu available on the jquery repository node
@@ -277,7 +277,7 @@ Check the .gitmodules node in the Files section of the dialog
 
 Click the Commit button
 
-<itemizedlist>
+
 *
 
 The new time submodule has now been added to the parent jquery repository

@@ -26,7 +26,7 @@
 			plug-in
 			define a dependency to:
 
-			<itemizedlist>
+			
 				*
 					
 						`com.example.e4.rcp.todo.model`
@@ -43,7 +43,7 @@
 			plug-in
 			define a dependency to:
 
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.osgi.services`

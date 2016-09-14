@@ -1,7 +1,6 @@
 == Eclipse Git documentation
 	
 		The Eclipse Git user guide is bundled with the Eclipse Git feature, invoke it via
-		menu:
-			<guimenu>Help[Help Contents >  EGit Documentation]
+		menu:Help[Help Contents >  EGit Documentation]
 		.
 	

@@ -1,0 +1,27 @@
+== Using the model code
+
+=== Overview
+
+The generated model code is standard Java code and can be used
+as such. The following demonstrates how you create
+objects based on
+the
+generated code.
+
+=== Example
+
+Create a new plug-in project called _de.vogella.emf.webpage.usingmodel_.
+Add the following dependency to your _MANIFEST.MF_.
+
+* org.eclipse.emf.ecore
+* com.vogella.emf.webpage.model
+
+Create the following class.
+
+[source,java]
+----
+include::res/using/UsingEMFModel.java[]
+----
+
+TIP: The `*PackageImpl.init()` method needs to be called before doing anything else as this method initializes the model and the listeners.
+

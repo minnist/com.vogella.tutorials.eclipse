@@ -21,7 +21,7 @@
 			their dependencies to your
 			product:
 
-			<itemizedlist>
+			
 				*
 					org.eclipse.help.ui
 					
@@ -45,7 +45,7 @@
 		
 			Eclipse defines several predefined commands which you can use in your
 			RCP application.
-			<itemizedlist>
+			
 				*
 					"org.eclipse.ui.help.displayHelp" - Opens the help    
 				

@@ -4,8 +4,7 @@
 	
 	
 		Right-click your project and select
-		menu:
-			<guimenu>Team[Branch]
+		menu:Team[Branch]
 		to create new branches or to switch between existing
 		branches.
 	

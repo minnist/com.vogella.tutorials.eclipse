@@ -23,7 +23,7 @@ http://www.vogella.com/tutorials/RichClientPlatform/article.html"> Eclipse RCP
 === Components
 		
 			Eclipse Zest has the following components:
-			<itemizedlist>
+			
 				*GraphNode - Node in the graph with the properties
 					
 				

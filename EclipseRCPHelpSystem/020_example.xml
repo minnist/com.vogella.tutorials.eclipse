@@ -24,7 +24,7 @@ image::selection10.gif[]
 			"de.vogella.rcp.help.content" plugin.
 
 
-			<itemizedlist>
+			
 				*
 					org.eclipse.help.ui      
 				

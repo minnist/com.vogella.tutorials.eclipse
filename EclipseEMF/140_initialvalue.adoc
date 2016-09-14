@@ -1,0 +1,14 @@
+== Setting the empty string as default value
+
+It is not obvious how to set an empty string as a default value
+for an
+EMF string attribute. To set an empty string as default value do the
+following.
+
+* Select the Attribute
+* Im the Property View click into the value field of "Default Value Literal"
+* Do not enter something. 
+
+To remove this empty value again, click "Restore Default Value"
+in the toolbar. 
+

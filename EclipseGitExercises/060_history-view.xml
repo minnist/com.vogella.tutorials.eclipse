@@ -25,7 +25,7 @@ Find out how many branches are known which have commits changing `Calculator.jav
 			context menu
 			offers a lot of operations you can do on a commit.
 		</simpara>
-		<itemizedlist>
+		
 			*
 				
 					Create a new branch starting from the commit with id

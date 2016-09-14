@@ -59,7 +59,7 @@ include::res/osgi/bundle.properties[]
 		
 		
 			For example:
-			<itemizedlist>
+			
 				*
 					messages.properties: default language file, if nothing else
 						is available

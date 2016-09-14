@@ -16,7 +16,7 @@
 
 		While you could use native code without this header, its usage has two advantages.
 
-		<itemizedlist>
+		
 			*
 				a plug-in does not resolve if there is no matching clause for the current platform. If you don’t include the
 					optional specifier (the trailing asterisk), this avoids an

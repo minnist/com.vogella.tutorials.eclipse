@@ -4,8 +4,7 @@
 	
 		You can also commit changes with the Git commit dialog. For this
 		right-click on a resource and select
-		menu:
-			<guimenu>Team[Commit]
+		menu:Team[Commit]
 		from the context menu.
 	
 	The dialog allows you to add changed and new files to the
@@ -14,10 +13,7 @@
 	
 
 	
-image::egitcommitdialog10.png[]
-			
-			<textobject>
-				<phrase>Adding a file via the EGit commit dialog]
+image::egitcommitdialog10.png[Adding a file via the EGit commit dialog]
 		
 	
 	NOTE:

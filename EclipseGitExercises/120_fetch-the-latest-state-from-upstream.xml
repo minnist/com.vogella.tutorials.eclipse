@@ -19,7 +19,7 @@
 		which will be the base
 		for your local changes.
 	
-	<itemizedlist>
+	
 		*
 			
 				Go to the Git Repositories view
@@ -45,7 +45,7 @@
 			
 				The "Fetch Results" dialog displays the result of the fetch action
 			
-			<itemizedlist>
+			
 				*
 					
 						If new changes have been fetched it looks like this:

@@ -11,26 +11,19 @@
 
 		Right-click on a
 		repository node and select
-		menu:
-			<guimenu>Rebase</guimenu>
+		menu:Rebase</guimenu>
 		</menuchoice>
 		as depicted in the following screenshot.
 	
 	
-image::egit_rebase10.png[]
-			
-			<textobject>
-				<phrase>Rebase in EGit]
+image::egit_rebase10.png[Rebase in EGit]
 		
 	
 	In the following dialog you can select the branch onto which you
 		want to rebase.
 	
 	
-image::egit_rebase20.png[]
-			
-			<textobject>
-				<phrase>Rebase in EGit, selecting the branch for rebase]
+image::egit_rebase20.png[Rebase in EGit, selecting the branch for rebase]
 		
 	
 	TIP:
@@ -43,22 +36,19 @@ image::egit_rebase20.png[]
 	
 		If the rebase was successful a dialog is shown. You have to resolve
 		rebase conflicts if they occur. After resolving them, select
-		menu:
-			<guimenu>Rebase[Continue]
+		menu:Rebase[Continue]
 		.
 	
 	
 		If you want to skip the conflicting commit and continue with the
 		rebase operation use
-		menu:
-			<guimenu>Rebase[Skip]
+		menu:Rebase[Skip]
 		.
 
 	
 	
 		To cancel the rebase operation select
-		menu:
-			<guimenu>Rebase[Abort]
+		menu:Rebase[Abort]
 		.
 	
 

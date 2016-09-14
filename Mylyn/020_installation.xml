@@ -7,15 +7,11 @@
 		it you can use the
 		_update manager_
 		via
-		menu:
-			<guimenu>Help[Install new Software...]
+		menu:Help[Install new Software...]
 		and install Mylyn from the update site or your release. The following
 		screenshot shows this for the Kepler release.
 	
 	
-image::mylyninstall10.png[]
-			
-			<textobject>
-				<phrase>Installing Mylyn]
+image::mylyninstall10.png[Installing Mylyn]
 		
 	

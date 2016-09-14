@@ -15,10 +15,7 @@
 		screenshot.
 	
 	
-image::cherrypick10.png[]
-			
-			<textobject>
-				<phrase>Situation before the cherry pick]
+image::cherrypick10.png[Situation before the cherry pick]
 		
 	
 
@@ -27,26 +24,17 @@ image::cherrypick10.png[]
 	
 
 	
-image::cherrypick20.png[]
-			
-			<textobject>
-				<phrase>Situation before the cherry pick]
+image::cherrypick20.png[Situation before the cherry pick]
 		
 	
 
 	Afterwards you can cherry-pick the good commit.
 	
-image::cherrypick30.png[]
-			
-			<textobject>
-				<phrase>Situation before the cherry pick]
+image::cherrypick30.png[Situation before the cherry pick]
 		
 	
 	
-image::cherrypick40.png[]
-			
-			<textobject>
-				<phrase>Situation before the cherry pick]
+image::cherrypick40.png[Situation before the cherry pick]
 		
 	
 	This results in a history without the bad commit. 

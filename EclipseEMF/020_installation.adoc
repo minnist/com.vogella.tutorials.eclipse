@@ -1,0 +1,16 @@
+== Installation
+	
+Install _EMF_ via the
+_Eclipse Update manager_ from
+menu:Help[Install New Software...]
+. Select
+_Modeling_
+and install
+_EMF - Eclipse Modeling Framework SDK_
+and the 
+_Diagram Editor for Ecore (SDK)_. The second entry 
+allows you to create
+models based on diagrams. Restart your Eclipse IDE after the installation.
+	
+image::emf_installation10.png[EMF Installation]
+	

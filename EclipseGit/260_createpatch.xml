@@ -10,30 +10,22 @@
 		view,
 		right
 		click and select
-		menu:
-			<guimenu>Team[Create Patch]
+		menu:Team[Create Patch]
 		.
 	
 
 	
-image::egit_createpatch10.png[]
-			
-			<textobject>
-				<phrase>Create Patch via EGit menu path]
+image::egit_createpatch10.png[Create Patch via EGit menu path]
 		
 	
 	
-image::egit_createpatch20.png[]
-			
-			<textobject>
-				<phrase>Create Patch via Eclipse Git]
+image::egit_createpatch20.png[Create Patch via Eclipse Git]
 		
 	
 	
 		The resulting file can be used to get applied to another Git
 		repository, via
-		menu:
-			<guimenu>Team[Apply Patch]
+		menu:Team[Apply Patch]
 		. You can also apply the patch on a system where Git isn't installed
 		at all, i.e., you don't need a Git repository to apply a patch.
 	

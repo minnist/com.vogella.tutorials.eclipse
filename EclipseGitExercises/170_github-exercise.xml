@@ -7,7 +7,7 @@ GitHub is the world’s largest source code repository with over 2 million Git r
 
 <title>Installation
 GitHub Mylyn Connector can be installed from the following update sites:
-<itemizedlist>
+
 *
 
 Main Eclipse Git repository: http://download.eclipse.org/egit/github/updates[http://download.eclipse.org/egit/github/updates]
@@ -71,7 +71,7 @@ _* https://github.com/eclipse/eclipse.platform.swt/downloads[https://github.com/
 This task will have you publish an Eclipse project on GitHub as a new Git repository.
 
 <title>Create a new Eclipse project
-<itemizedlist>
+
 *
 
 Select the File &gt; New &gt; Project&#8230; menu
@@ -91,7 +91,7 @@ Enter HelloGitHub as the project name and select Finish
 
 
 <title>Create a Java class
-<itemizedlist>
+
 *
 
 Select the HelloGitHub/src folder from the Package Explorer view
@@ -121,7 +121,7 @@ Select Finish
 
 Implement the main(String[] args) method in the Main class
 
-<itemizedlist>
+
 *
 
 System.out.println(“Hello GitHub!”);
@@ -138,7 +138,7 @@ Select Save
 
 
 <title>Create Git repository for HelloGitHub project
-<itemizedlist>
+
 *
 
 Select the HelloGitHub project from the Package Explorer view
@@ -179,7 +179,7 @@ Select Finish
 
 
 <title>Commit HelloGitHub project to new Git repository
-<itemizedlist>
+
 *
 
 Select the HelloGitHub project in the Package Explorer view
@@ -215,7 +215,7 @@ Select Commit
 
 
 <title>Create a new repository on GitHub
-<itemizedlist>
+
 *
 
 Open a web browser to https://github.com/repositories/new[https://github.com/repositories/new]
@@ -241,7 +241,7 @@ Select Create repository
 
 
 <title>Push local Git repository to GitHub
-<itemizedlist>
+
 *
 
 Expand the HelloGitHub repository node from the Git Repositories view
@@ -274,7 +274,7 @@ Select OK
   
   <textobject><phrase>github5.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Select the Change&#8230; button in the URI group in the Configure Push wizard
@@ -284,7 +284,7 @@ Select the Change&#8230; button in the URI group in the Configure Push wizard
 
 Enter the following in the URI text box
 
-<itemizedlist>
+
 *
 
 https://username@github.com/username/HelloGitHub.git[https://username@github.com/username/HelloGitHub.git]
@@ -304,7 +304,7 @@ Replace &lt;username&gt; with your GitHub login name
   
   <textobject><phrase>github6.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Select Finish
@@ -330,7 +330,7 @@ A Push Results dialog will be displayed stating the master branch was created on
 
 
 <title>Make a second commit and push the change upstream
-<itemizedlist>
+
 *
 
 Open Main.java from the HelloGitHub project in the Eclipse editor
@@ -373,7 +373,7 @@ Select Commit
   
   <textobject><phrase>github8.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Select the Team &gt; Push to Upstream menu
@@ -394,7 +394,7 @@ A Push Results dialog will be displayed showing the commit pushed
 
 
 <title>Monitor the repository’s issues
-<itemizedlist>
+
 *
 
 Open the Mylyn Task Repositories view
@@ -414,7 +414,7 @@ Select GitHub Issues and select Next &gt;
 
 Enter the repository’s URL in the URL text box
 
-<itemizedlist>
+
 *
 
 http://github.com/username/HelloGitHub[http://github.com/username/HelloGitHub]
@@ -459,7 +459,7 @@ Select Finish
   
   <textobject><phrase>github10.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Open the Mylyn Task List view
@@ -474,7 +474,7 @@ Select New &gt; Query&#8230; from the view’s menu
 
 Select the username/HelloGitHub repository and select Next &gt;
 
-<itemizedlist>
+
 *
 
 Replace &lt;username&gt; with your GitHub login name
@@ -502,7 +502,7 @@ Select Finish
 
 
 <title>Create a new issue
-<itemizedlist>
+
 *
 
 Open the Mylyn Task List view
@@ -517,7 +517,7 @@ Select New &gt; Task&#8230; from the view’s menu
 
 Select the username/HelloGitHub repository
 
-<itemizedlist>
+
 *
 
 Replace &lt;username&gt; with your GitHub login name
@@ -554,7 +554,7 @@ The issue will be created and the editor will update with the new issue number
 The GitHub Mylyn connector supports cloning repositories from GitHub and registering them in the EGit Git Repositories view.  This can be used to track libraries you are building against or using.  The cloned repository will be wired to pull from GitHub so that you can stay up-to-date as future changes are made to the repositories.
 
 <title>Clone an existing repository
-<itemizedlist>
+
 *
 
 Select the File &gt; Import&#8230; menu
@@ -597,12 +597,12 @@ Select the kevinsawicki/http-request project from the result table
   
   <textobject><phrase>github13.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Select Finish
 
-<itemizedlist>
+
 *
 
 A clone operation will start and displayed in the Progress view
@@ -614,7 +614,7 @@ A clone operation will start and displayed in the Progress view
 
 Open the Git Repositories view
 
-<itemizedlist>
+
 *
 
 http-request will be visible after the clone operation completes
@@ -626,7 +626,7 @@ http-request will be visible after the clone operation completes
 
 
 <title>Import the project
-<itemizedlist>
+
 *
 
 Open the Git Repositories view
@@ -651,7 +651,7 @@ Select Next &gt;
 
 Select Finish
 
-<itemizedlist>
+
 *
 
 The http-request project will  be present in the Package Explorer view
@@ -663,7 +663,7 @@ The http-request project will  be present in the Package Explorer view
 
 
 <title>Pulling Changes
-<itemizedlist>
+
 *
 
 Open the Git Repositories view
@@ -692,7 +692,7 @@ A Push Results dialog will display showing which commits were fetched and which 
 The GitHub Mylyn connector supports creating, editing, and cloning GitHub Gists. Gists are snippets that are versioned in a Git repository that can contain or more files.  They can be browsed, edited, and commented on from the Mylyn Task editor.  The Gist task editor allows you to open Gist files in a local Eclipse editor as well as clone Gists into a local Git repository.
 
 <title>Adding a Gist Task repository
-<itemizedlist>
+
 *
 
 Open the Mylyn Task Repositories view
@@ -743,7 +743,7 @@ Select Finish
 
 
 <title>Viewing your own Gists
-<itemizedlist>
+
 *
 
 Open the Mylyn Task List view
@@ -763,7 +763,7 @@ Select the Gists repository and select Next &gt;
 
 Select Finish
 
-<itemizedlist>
+
 *
 
 The Gists will synchronize to the newly created query folder in the Task List view
@@ -775,7 +775,7 @@ The Gists will synchronize to the newly created query folder in the Task List vi
 
 
 <title>Tracking Another User’s Gists
-<itemizedlist>
+
 *
 
 Open the Mylyn Task List view
@@ -805,7 +805,7 @@ Enter “kevinsawicki” in the User text box
 
 Select Finish
 
-<itemizedlist>
+
 *
 
 The Gists will synchronize to the newly created query folder in the Task List view
@@ -820,12 +820,12 @@ The Gists will synchronize to the newly created query folder in the Task List vi
   
   <textobject><phrase>github15.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Open Gist 977763 in the Mylyn Task editor from the Task List view
 
-<itemizedlist>
+
 *
 
 This Gist contains a code snippet for creating Gists using the GitHub Java API
@@ -843,7 +843,7 @@ This Gist contains a code snippet for creating Gists using the GitHub Java API
 
 
 <title>Creating a Gist
-<itemizedlist>
+
 *
 
 Open the Main.java class from the HelloGitHub project in the Eclipse editor
@@ -858,7 +858,7 @@ Select one or more lines of text
 
 Select the GitHub &gt; Create Public Gist menu
 
-<itemizedlist>
+
 *
 
 A Gist will be created in a background job
@@ -870,7 +870,7 @@ A Gist will be created in a background job
 
 Select the hyperlink from the Gist noficiation popup
 
-<itemizedlist>
+
 *
 
 The Mylyn Task editor will be opened for the newly created Gist
@@ -885,7 +885,7 @@ The Mylyn Task editor will be opened for the newly created Gist
   
   <textobject><phrase>github17.png</phrase></textobject>
 </inlinemediaobject>
-<itemizedlist>
+
 *
 
 Note: You can also create Gists by selecting text in the Eclipse Console view.

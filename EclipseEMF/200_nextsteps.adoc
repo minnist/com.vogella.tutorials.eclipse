@@ -1,0 +1,4 @@
+== Next steps
+
+Please check the appendix for pointers to more advanced Eclipse EMF topics. 
+

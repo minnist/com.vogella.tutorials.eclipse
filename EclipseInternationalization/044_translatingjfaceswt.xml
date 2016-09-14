@@ -26,7 +26,7 @@
 	
 	
 		To change the text supplied by SWT and JFace do the following:
-		<itemizedlist>
+		
 			*
 				
 					Create two fragments projects, which will hold the translations. One with org.eclipse.jface and one with org.eclipse.swt as

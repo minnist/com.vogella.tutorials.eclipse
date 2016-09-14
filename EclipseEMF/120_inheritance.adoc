@@ -1,0 +1,56 @@
+== Extending an EMF Ecore model (inheritance)
+
+=== Overview
+		
+EMF allows to extend existing models via inheritance. The
+following
+will define a base model and an extension based on this base
+model.
+This can for example be used to extend the
+http://www.vogella.com/tutorials/EclipseE4/article.html[Eclipse e4]
+application model. It will also demonstrate how to work with EMF
+ecore models
+directly without using the ecore tools.
+
+=== Example
+		
+Create a new EMF project
+"de.vogella.emf.inheritance".
+Create a
+new
+model by selecting menu:File[New > Eclipse Modeling Framework > Ecore Model]. 
+Name the model "base.ecore". Select "EPackage" as the basis and maintain the following properties for this package. 
+		
+image::extend10.gif[]
+		
+Right-click on the package and select menu:New Child[EClass].
+Maintain the class "MyBaseClass" with two "EAttributes" of type
+"EString". Create a new "Ecore" model "extendedmodel.ecore". Maintain
+"extended" as the package name. Right-click
+your model and select
+"Load resource". 
+		
+image::extend40.gif[]
+		
+image::extend50.gif[]
+		
+image::extend60.gif[]
+
+Create a new class "MyExtendedClass" and press "ESuperType".
+		
+image::extend70.gif[]
+
+Add your "MyBaseClass".
+		
+image::extend80.gif[]
+		
+image::extend90.gif[]
+
+Maintain a new EAtribute "detailedField" on "MyExtendedClass".
+		
+image::extend100.gif[]
+		
+Create a new genmodel "extended.genmodel" based on
+extended.ecore. Generated Java code and you will see that the
+"MyExtendedClass" has extended "MyBaseClass".
+

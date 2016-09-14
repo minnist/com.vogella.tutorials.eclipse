@@ -35,7 +35,7 @@
 	
 
 === Change the first commit
-		<itemizedlist>
+		
 			*
 				
 					Create a new branch that points to the commit you want to change,
@@ -81,7 +81,7 @@
 					Now create a new commit with the combined changes of your first
 					commit and your current changes:
 				</simpara>
-				<itemizedlist>
+				
 					*
 						
 							Select your project in the Package Explorer and select
@@ -144,7 +144,7 @@
 	
 
 === Cherry-pick the rest
-		<itemizedlist>
+		
 			*
 				
 					Select

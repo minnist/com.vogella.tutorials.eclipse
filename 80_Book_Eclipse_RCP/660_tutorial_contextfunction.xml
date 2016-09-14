@@ -34,7 +34,7 @@
 			file but the list is complete so that you can use this as a
 			reference
 			for other implementations.
-			<itemizedlist>
+			
 				*
 					org.eclipse.core.runtime
 				
@@ -58,7 +58,7 @@
 		
 		
 			For this exercise the service plug-in also needs to import the following packages (or plug-ins):
-			<itemizedlist>
+			
 				*
 					com.example.e4.rcp.todo.model
 				

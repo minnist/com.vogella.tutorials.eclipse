@@ -13,7 +13,7 @@
 	
 
 === Stashing local changes
-		<itemizedlist>
+		
 			*
 				
 					Open BinaryOperation.java from the org.eclipse.example.calc package in the org.eclipse.example.calc project in
@@ -57,7 +57,7 @@
 	
 
 === Browsing Stashed Changes
-		<itemizedlist>
+		
 			*
 				
 					Expand the egit-training node in the Git Repositories view
@@ -91,7 +91,7 @@
 					file in the
 					Files section
 				
-				<itemizedlist>
+				
 					*
 						
 							The opened compare editor should display the line addition of “@since 1.0” that was stashed in the previous
@@ -115,7 +115,7 @@
 	
 
 === Applying Stashed Changes
-		<itemizedlist>
+		
 			*
 				
 					Select the Switch To &gt; New Branch&#8230; option from the context menu available on the egit-training

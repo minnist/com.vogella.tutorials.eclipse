@@ -204,7 +204,7 @@ image::extensionpoint100.png[Export IGreeter package</phrase>
 			_MANIFEST.MF_
 			file of your new plug-in:
 
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.core.runtime`

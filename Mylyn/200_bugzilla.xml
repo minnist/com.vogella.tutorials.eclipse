@@ -54,15 +54,11 @@ image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn]
 		_Task List_
 		view
 		and select
-		menu:
-			<guimenu>New[Query]
+		menu:New[Query]
 		.
 	
 	
-image::mylynbugzilla10.png[]
-			
-			<textobject>
-				<phrase>Creating a bugzilla query in Mylyn - Part 1]
+image::mylynbugzilla10.png[Creating a bugzilla query in Mylyn - Part 1]
 		
 	
 	
@@ -74,10 +70,7 @@ image::mylynbugzilla10.png[]
 
 	
 	
-image::mylynbugzilla20.png[]
-			
-			<textobject>
-				<phrase>Creating a bugzilla query in Mylyn - Part 2]
+image::mylynbugzilla20.png[Creating a bugzilla query in Mylyn - Part 2]
 		
 	
 	
@@ -89,10 +82,7 @@ image::mylynbugzilla20.png[]
 		.
 	
 	
-image::mylynbugzilla30.png[]
-			
-			<textobject>
-				<phrase>Creating a bugzilla query in Mylyn - Part 3]
+image::mylynbugzilla30.png[Creating a bugzilla query in Mylyn - Part 3]
 		
 	
 
@@ -102,10 +92,7 @@ image::mylynbugzilla30.png[]
 		following screenshot.
 	
 	
-image::mylynbugzilla40.png[]
-			
-			<textobject>
-				<phrase>Creating a bugzilla query in Mylyn - Part 4]
+image::mylynbugzilla40.png[Creating a bugzilla query in Mylyn - Part 4]
 		
 	
 

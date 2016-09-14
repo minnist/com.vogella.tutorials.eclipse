@@ -22,17 +22,11 @@ http://www.eclipse.org/swt/updatesite.php">
 
 	
 image::sleaktrace10.png[]
-			
-			<textobject>
-				<phrase>]
 		
 	
 
 	
 image::sleaktrace20.png[]
-			
-			<textobject>
-				<phrase>]
 		
 	
 
@@ -58,8 +52,7 @@ image::sleaktrace20.png[]
 		_Sleak_
 		view
 		under
-		menu:
-			<guimenu>Window[Show View > Other ... > SWT Tools > Sleak]
+		menu:Window[Show View > Other ... > SWT Tools > Sleak]
 		.`
 	
 

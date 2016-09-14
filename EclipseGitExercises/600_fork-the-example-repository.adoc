@@ -8,7 +8,7 @@
 			write access. Such a repository can easily be created at Github.
 		
 		In Github there are two ways to get a repository.
-		<itemizedlist>
+		
 			*
 				
 					Create a new one and push the initial content from a local repository

@@ -9,15 +9,11 @@
 	
 	
 		You can activate this tracing via
-		menu:
-			<guimenu>Window[Preferences > UI Responsiveness Monitoring]
+		menu:Window[Preferences > UI Responsiveness Monitoring]
 
 	
 	
-image::ui_interactivemonitor.png[]
-			
-			<textobject>
-				<phrase>Monitoring the interactive UI performance
+image::ui_interactivemonitor.png[Monitoring the interactive UI performance
 				]
 		
 	

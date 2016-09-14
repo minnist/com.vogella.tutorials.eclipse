@@ -33,7 +33,7 @@ include::res/editor/EditorPartSave.java[]
 		
 		
 			Add the following dependencies to your application plug-in:
-			<itemizedlist>
+			
 				*
 					
 						`org.eclipse.e4.core.commands`

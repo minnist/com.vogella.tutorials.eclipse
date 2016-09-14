@@ -1,7 +1,7 @@
 == How a launch can be triggered
 	Three different ways to trigger a launch exist.
 	
-		<itemizedlist>
+		
 			*
 				Pass a launch configuration to an `﻿ILaunchConfigurationDelegate`, which runs
 					the launch configuration

@@ -10,7 +10,7 @@
 			_plugin.xml_.
 		
 		
-			<itemizedlist>
+			
 				*org.eclipse.emf.ecore
 				*org.eclipse.emf.ecore.xmi
 

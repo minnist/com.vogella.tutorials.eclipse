@@ -10,8 +10,7 @@
 		and which commit. To enable this,
 		right-click on your file and
 		select
-		menu:
-			<guimenu>Team[Show Annotations]
+		menu:Team[Show Annotations]
 		.
 	
 	Afterwards you can place the mouse on the left side of the editor
@@ -21,10 +20,7 @@
 	
 	
 	
-image::blameannotations10.png[]
-			
-			<textobject>
-				<phrase>Blame annotations in EGit]
+image::blameannotations10.png[Blame annotations in EGit]
 		
 	
 	TIP:

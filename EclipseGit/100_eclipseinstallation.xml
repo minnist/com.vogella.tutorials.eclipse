@@ -23,8 +23,7 @@
 		manager. 
 		Start this manager
 		via the
-		menu:
-			<guimenu>Help[Install new Software...]
+		menu:Help[Install new Software...]
 		menu entry by using the following update site URL:
 	
 	
@@ -38,10 +37,7 @@
 		screenshot.
 	
 	
-image::egitinstallation10.png[]
-			
-			<textobject>
-				<phrase>Installing EGit]
+image::egitinstallation10.png[Installing EGit]
 		
 	
 

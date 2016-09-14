@@ -1,0 +1,58 @@
+== Typical use cases for fragments
+
+Fragments can be used to contain test classes. This
+way
+the
+tests
+can access
+the host plug-in classes, even if the
+host
+plug-in
+does
+not
+define them
+as external API. Sometimes tests are also
+contained
+in
+normal plug-ins,
+in this case they can
+only test the
+external
+API of
+other plug-ins.
+
+Fragments can also be used to contribute property files for
+additional
+translations. This allows contributing
+support for a
+new
+language without the need to adjust
+any other part
+of
+the code.
+
+In
+addition, fragments can also supply native code which is
+specific
+to a
+certain
+system environment.
+
+A platform filter can be used to define a fragment as valid for a certain platform.
+The Eclipse user interface
+library
+SWT
+uses this
+approach.
+More information on the platform filter can be
+found in the
+Eclipse help
+system if you search for
+the following term: "OSGi Bundle Manifest Headers".
+
+Last but not the least, fragments can be used to contain resources
+like icon sets or other images. This allows you
+to
+customize your
+application icons via the provided fragment.
+

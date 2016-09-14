@@ -1,0 +1,23 @@
+= Eclipse Fragment Projects - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 2.4, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseFragmentProject
+
+[abstract]
+Eclipse Feature Project.
+This tutorial describes the purpose and usage of Eclipse fragment projects
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::020_fragment_intro.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_fragment_usage.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

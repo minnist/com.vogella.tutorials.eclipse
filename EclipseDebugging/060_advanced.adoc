@@ -75,24 +75,12 @@ image::watchpoint10.gif[Watchpoint]
 
 === Exception breakpoints
 
-You can set breakpoints which are triggered when exceptions in your
-Java source code
-are
-thrown. To define an exception breakpoint click on
-the
-_Add Java
-Exception Breakpoint
-_
-button
-icon in the
-_Breakpoints_
-view
-toolbar.
+You can set breakpoints for thrown exceptions. 
+To define an exception breakpoint click on the btn:[Add Java Exception Breakpoint] button icon in the _Breakpoints_ view toolbar.
 
 image::exception10.gif[Exception Breakpoint]
 
-You can configure if the debugger should stop at caught or
-uncaught exceptions.
+You can configure, if the debugger should stop at caught or uncaught exceptions.
 
 === Method breakpoint
 

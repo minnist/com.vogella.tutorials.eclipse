@@ -2,7 +2,7 @@
 
 The following gives an example how to convert a standard Java JAR to an Eclipse plug-in via the user interface.
 
-
+[[jartoplugin]]
 === Creating a plug-in project for your jar
 
 Create a new plug-in project by selecting menu:File[New > Project > Plug-in Development > Plug-in from Existing JAR Archives].

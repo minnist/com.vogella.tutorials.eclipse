@@ -1,0 +1,31 @@
+== Exercise: Tycho build for products with root files
+
+=== Target of this exercise
+
+In some cases it is helpful, if additional static files, like a readme.txt or logback.xml file, can be added to the built product. The easiest way to archive this, is to use root properties in the _build.properties_ file a feature project.
+
+Tip: Further information about root file properties can be found here: http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.pde.doc.user%2Ftasks%2Fpde_rootfiles.htm[Adding Files to the Root of a Build]
+
+=== Adding a static file to a feature
+
+Create a _readme.txt_ file in the _com.vogella.tycho.feature_ project.
+
+image::tycho_productbuild_create_readme.png[File wizard for readme.txt file]
+
+=== Include the readme.txt file
+
+To include this file into the product, the existing _build.properties_ file of the _com.vogella.tycho.feature_ project has to be adjusted by a root file property.
+
+[source, properties]
+----
+bin.includes = feature.xml
+root = file:readme.txt
+
+----
+
+=== Validate
+
+Run the `mvn clean verify` command. Inside the built product should be a readme.txt file.
+
+image::tycho_productbuild_readme.png[Built product with readme.txt in root folder]
+

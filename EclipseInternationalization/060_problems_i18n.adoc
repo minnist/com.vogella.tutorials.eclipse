@@ -1,0 +1,16 @@
+== Common problems with i18n
+(((i18n,Problems)))
+
+* If the translations are not available in the exported product, ensure that the
+property
+files are included in the export.
+You do this via the
+_build.properties_
+file of the plug-in which provides the property
+files.
+
+* If the translations are not displayed in the application, select
+_Clear Configuration_
+in your launch configuration. OSGi caches text
+information sometimes.
+

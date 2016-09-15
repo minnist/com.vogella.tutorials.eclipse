@@ -1,0 +1,162 @@
+== Internationalization and localization
+
+=== Translation of a Java applications
+(((Translation,see=i18n)))
+(((Internationalization,see=i18n)))
+
+The process of preparing an application for being translated into
+several languages is called
+_internationalization_. 
+This term is typically abbreviated to _i18n_.
+
+The process of translating the application is called
+_localization_
+and is abbreviated to _l10n_.
+
+[[i18n_propertyfiles]]
+=== Property files
+(((i18n,Property files)))
+
+Java applications are typically translated via
+_property_
+files. Such a file
+contains key/values. The key can be used in your application
+and is
+substituted at runtime with the
+corresponding
+value. The following listing demonstrates an example content of such a file.
+
+[source,java]
+----
+include::res/osgi/bundle.properties[]
+----
+
+Based on the language of the user, the Java runtime searches
+for the corresponding resource bundle using
+language
+identifiers. If
+a
+certain language identifier is not provided, the Java runtime will
+fall
+back to the next
+general
+resource bundle.
+
+For example:
+
+* messages.properties: default language file, if nothing else is available
+* messages_de.properties: used for German
+* messages_en.properties: default for English
+* messages_en_US.properties: US English file
+* messages_en_UK.properties: British English file 
+
+The Eclipse platform provides functionality to support translations based on properties files but also allows
+the usage of alternative approaches.
+
+=== Encoding of property files in Java
+
+Resource bundles in Java are always LATIN-1 (ISO 8859-1)
+encoded. This is defined by the Java specification.
+
+=== Relevant files for translation in Eclipse applications
+
+The following table lists the relevant elements for translating
+an
+Eclipse RCP application.
+
+.Translation relevant entities for Eclipse plug-ins
+|===
+|Entity |Description
+
+|application model (Application.e4xmi and model fragment files)
+|Describes the application model in Eclipse RCP.
+
+|plugin.xml
+|Primarily important for Eclipse 3.x based plug-ins.
+
+|Source Code
+|The source code contains text, e.g., labels which must be translated.
+
+|===
+
+=== Where to store the translations?
+
+It is not uncommon that a plug-in also contains its translations.
+
+If a translation should be used by several plug-ins it is good
+practice to have one central plug-in which
+contains
+the
+translations.
+This plug-in contains at least the main language and potentially
+more.
+
+It is also possible to provide
+translation files
+via fragment
+projects. Fragment projects
+extend
+their host
+plug-in.
+This
+approach allows that
+the text files can
+be maintained in separate plug-ins, which is sometimes easier to handle for
+the translation team. This approach
+also allows configuring the included languages via the product
+configuration file.
+
+=== Setting the language in the launch configuration
+(((i18n,Setting the language via launch parameter)))
+
+By default Eclipse uses
+the
+language configured in the operating
+system of the user.
+
+For testing you can set the language manually.
+In your Eclipse
+launch
+configuration on the
+_Arguments_
+tab
+you
+can
+specify the
+runtime
+parameter
+_-nl_
+to select the language, e.g.
+_-nl en_.
+
+=== Translation service
+
+Eclipse uses a translation service via the
+`TranslationService`
+interface. The default implementation of this class is the
+`BundleTranslationProvider`
+which uses property files as input for the translations. But you can provide your own OSGi
+service which uses a
+different source, e.g., a
+database to get the
+translations.
+
+This service is stored in the application context. You can
+replace it
+there, e.g., via a life cycle hook or via a
+model-addon
+which modifies
+the application context once the application startup is
+completed.
+
+By
+storing it in the
+`IEclipseContext`
+context hierarchy
+you can have different translation services for
+different local
+contexts, e.g., for different windows
+you can use different
+translation
+services.
+

@@ -39,10 +39,9 @@ include::res/progressreport/IsCancelCheck.java[]
 
 === Handling Job cancellation since Eclipse Neon (4.6)
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text"
-					href="../examples/progressreport/IsCancelCheckSubmonitorSplit.java[]
+[source,java]
+----
+include::res/progressreport/IsCancelCheckSubmonitorSplit.java[]
 ----
 		
 		

@@ -1,0 +1,27 @@
+== Translating the application model
+
+(((i18n,Application model)))
+
+
+The translation key can be specified in your application model via the
+_%key_ reference. This usage is demonstrated via the following screenshot of the model data for a part.
+
+image::modeltranslate.png[How to use external strings in the workbench model]
+
+Currently the application model tooling includes rudimentary support for
+extracting Strings. Press the right mouse button on an empty space
+in the application model
+editor and select
+_Externalize Strings_.
+
+WARNING: This action extracts all Strings from the application model. If
+you
+want to replace only a set of relevant Strings, you have to do
+this
+manually. If you do it manually you can use the PDE wizard as
+described in <<i18n_plugin>>
+to create the
+_bundle.property_
+file and the OSGi
+reference.
+

@@ -1,0 +1,23 @@
+[[i18n_plugin]]
+== Translating plugin.xml
+(((i22n,plugin.xml)))
+	
+Similar to the usage of keys in the application model, you can use the key prefixed with % in the
+_plugin.xml_
+file. The Eclipse tooling supports extracting existing
+`String`
+values from the
+_plugin.xml_
+file. Select your
+_plugin.xml_
+file, right-click on it and select
+menu:Plug-in Tools[Externalize Strings].
+	
+image::pdetools10.png[Eclipse PDE Wizard for externizing plugin.xml]
+	
+Via
+menu:PDE Tools[Internationalize]
+you can also directly create
+one or several fragments for the result of
+the internationalization.
+

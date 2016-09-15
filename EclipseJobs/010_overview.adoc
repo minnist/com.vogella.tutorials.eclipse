@@ -1,0 +1,191 @@
+== Eclipse background processing
+
+=== Main thread
+
+An Eclipse RCP application runs in one process but can create
+multiple threads.
+
+By default the Eclipse framework uses a single
+thread
+to run all the
+code
+instructions. This
+thread
+runs the event
+loop for the application
+and is
+the only thread
+that is allowed to interact
+with the user
+interface (UI).
+It
+is
+called the
+_main thread_
+. Sometimes it is also called the
+_UI thread_,
+but this is a misnomer as it handles all events not only the ui
+events.
+
+If another
+thread
+tries to update the UI,
+the Eclipse
+framework throws an
+`SWTException`
+exception.
+
+[source,text]
+----
+include::res/invalid/error.txt[]
+----
+
+All events in the user interface
+are executed one after another.
+If you
+perform a long running operation in the main thread, the
+application
+does not respond to user
+interaction during the execution
+time of this
+operation.
+
+Blocking the user interaction is considered a bad practice.
+Therefore
+it is
+important to perform all long
+running
+operations in a
+separate thread. Long running operations are, for example,
+network or
+file
+access.
+
+As only the main thread is allowed to modify the user interface,
+the
+Eclipse framework provides ways for a
+thread
+to synchronize itself
+with
+the main thread. It also provides
+the
+Eclipse Jobs
+framework
+which
+allows you to run operations in the
+background and providing
+feedback
+of the job status
+to the Eclipse
+platform.
+
+=== Using dependency injection and UISynchronize
+
+The
+`org.eclipse.e4.ui.di`
+plug-in contains the
+`UISynchronize`
+class. An instance of this class can
+be injected into an Eclipse
+application via dependency injection.
+
+`UISynchronize`
+provides the
+`syncExec()`
+and
+`asyncExec()`
+methods to synchronize with the main thread.
+
+=== Eclipse Jobs API
+(((Concurrency,Job)))
+
+The Eclipse Jobs API provides support for running background
+processes and providing feedback
+about the progress of the
+`Job`.
+
+The important parts of the
+Job
+API are:
+
+* IJobManager - schedules jobs    
+* Job - the individual task to perform   
+* IProgressMonitor - interface to communicate information about the status of your Job.
+
+The creation and scheduling of a
+`Job`
+is demonstrated in the following code snippet.
+
+[source,text]
+----
+include::res/jobs/example.txt[]
+----
+
+If you want to update the user interface from a
+`Job`,
+you need to synchronize the corresponding action with the user
+interface similar to the direct usage of threads.
+
+=== Priorities of Jobs
+
+You can set the
+`Job`
+priority via the
+`job.setPriority()`
+method. The
+`Job`
+class contains predefined priorities, e.g.
+`Job.SHORT`
+,
+`Job.LONG`
+,
+`Job.BUILD`
+and
+`Job.DECORATE`.
+
+The Eclipse job scheduler will use these priorities to determine in
+which
+order
+the
+`Jobs`
+are scheduled. For example,
+jobs
+with the priority
+`Job.SHORT`
+are scheduled before jobs with the
+`Job.LONG`
+priority.
+Check the
+JavaDoc of
+the
+`Job`
+class for details.
+
+=== Blocking the UI and providing feedback
+
+Sometimes
+you simply want
+to give the user the feedback that
+something
+is running
+without using threads.
+
+The easiest
+way to provide feedback is to change
+the
+cursor via the
+`BusyIndicator.showWhile()`
+method call.
+
+[source,java]
+----
+include::res/simple/Busy.java[]
+----
+
+If this code is executed, the cursor will change to a
+busy
+indicator
+until the
+`Runnable`
+is done.
+

@@ -1,0 +1,48 @@
+== Tutorial: Using Eclipse Jobs
+	
+Create a new Eclipse plug-in project "de.vogella.jobs.first" with a
+`View`
+and a
+`Button`
+included in this
+`View`.
+	
+Create the following
+`MySelectionAdapter`
+class.
+	
+[source,java]
+----
+include::res/first/MySelectionAdapter.java[]
+----
+
+Add an instance of
+`MySelectionAdapter`
+as
+`SelectionListener`
+to your
+`Button`.
+	
+[source,java]
+----
+include::res/first/button.java[]
+----
+	
+To access the
+`Shell`
+in Eclipse 3.x you can use the
+`getSite().getShell()`
+method call. In Eclipse 4  you declare a field and let Eclipse inject
+the
+`Shell`.
+	
+[source,java]
+----
+include::res/first/injectshell.txt[]
+----
+	
+Start your application or the Eclipse workbench with your plug-in and
+press the
+btn:[Button].
+A dialog is opened.
+

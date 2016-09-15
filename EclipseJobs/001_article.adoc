@@ -1,0 +1,35 @@
+= Eclipse Jobs and Background Processing - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2009, 2016 vogella GmbH
+Version 3.6, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseJobs
+
+[abstract]
+Background processing in Eclipse Plug-ins.
+This tutorial describes how to do asynchronous work within Eclipse plug-ins and RCP applications.
+It explains the usage of the Jobs API for performing asynchronous tasks.
+This tutorial can be used for Eclipse 3.x and Eclipse 4.x based plug-ins.
+	
+include::../web/kindle/eclipse-rcp.adoc[]
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::../10_Include/prerequisites/eclipse_prerequisite.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::../Eclipse4EventSystem/100_async.adoc[]
+include::020_progress.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::022_progress_eclipse3.adoc[]
+include::025_canceling.adoc[]
+include::030_tutorial_job.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::200_display.adoc[]
+include::../10_Include/Eclipse/e4info.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

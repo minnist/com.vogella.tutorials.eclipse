@@ -1,0 +1,61 @@
+== Handle Job cancellation
+
+In Eclipse many user complain about jobs, which are not properly
+canceled when pressing the red square cancel button in the progess
+view. Some
+`Job`
+implementations simply just don't care and do not react on the
+cancellation, which is triggered by the user.
+
+This of course concludes in a really poor user experience, which
+should definitely be avoided.
+
+In order to realize that a user has canceled a Job the
+`IProgressMonitor`
+, which is passed to the
+`run`
+method of a Job, can be asked whether the Job has been canceled. This
+can be done by calling the
+`isCanceled`
+on an
+`IProgressMonitor`.
+
+This check for cancellation should be done in a frequent manner,
+so that the user does not have to wait too long until the job will
+really be canceled.
+
+=== Handle Job cancellation before Eclipse Neon (4.6)
+
+[source,java]
+----
+include::res/progressreport/IsCancelCheck.java[]
+----
+
+=== Handling Job cancellation since Eclipse Neon (4.6)
+
+[source,java]
+----
+include::res/progressreport/IsCancelCheckSubmonitorSplit.java[]
+----
+
+The new
+`split`
+method can handle the cancellation check automatically and throws an
+`OperationCanceledException`
+in case the
+`IProgressMonitor`
+has been canceled. The
+`OperationCanceledException`
+is automatically caught by a
+`Job`
+, which will just set the
+`Status.CANCEL_STATUS`
+then.
+
+NOTE: Using the new Submonitor's
+`split`
+is not only shorter than the former approach, but also provides
+better performance since the expensive
+`isCanceled`
+call is only done in case it is really necessary.
+

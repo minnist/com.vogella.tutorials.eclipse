@@ -5,27 +5,13 @@
 The base workbench model for the Eclipse IDE is defined in the "org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
 In the `org.eclipse.platform` plug-in you find the _LegacyIDE.e4xmi_ file which defines the initial window and some _model Add-ons_.
 
-If Eclipse is started in the compatibility mode, this file is read
-via
-the
-`E4Workbench`
-class. This class is part of the
-`org.eclipse.e4.workbench.ui.internal`
-package.
-`E4Workbench`
-will then convert the relevant extension points into elements of the
-application
-model.
+If Eclipse is started in the compatibility mode, this file is read via the `E4Workbench` class. 
+This class is part of the `org.eclipse.e4.workbench.ui.internal` package.
+`E4Workbench` will then convert the relevant extension points into elements of the application model.
 
 === Eclipse 4 application - E4Application
 
-The
-`org.eclipse.e4.ui.workbench.swt.E4Application`
-application is defined in the extension point
-`org.eclipse.core.runtime.applications`
-in the
-`org.eclipse.e4.ui.workbench.swt`
-plug-in.
+The `org.eclipse.e4.ui.workbench.swt.E4Application` application is defined in the extension point `org.eclipse.core.runtime.applications` in the `org.eclipse.e4.ui.workbench.swt` plug-in.
 
 It points to the
 `org.eclipse.e4.ui.internal.workbench.swt.E4Application`
@@ -33,11 +19,8 @@ class which implements the
 `IApplication`
 interface.
 
+The `E4Application` class, reads the parameter passed to the application, evaluates the model and builds up the context. 
 The
-`E4Application`
-class, reads the parameter passed to the application, evaluates the
-model
-and builds up the context. The
 `loadApplicationModel(IApplicationContext appContext, IEclipseContext eclipseContex)`
 method
 will load the initial application. The
@@ -46,13 +29,8 @@ method will process the whole model.
 
 === Model Resource Handler
 
-The
-`org.eclipse.e4.ui.internal.workbench.ResourceHandler`
-class is responsible for loading and saving the model. The
-`loadBaseModel()`
-method will load the
-_Application.e4xmi_
-model.
+The `org.eclipse.e4.ui.internal.workbench.ResourceHandler` class is responsible for loading and saving the model. 
+The `loadBaseModel()` method will load the _Application.e4xmi_ model.
 
 === Other important classes
 

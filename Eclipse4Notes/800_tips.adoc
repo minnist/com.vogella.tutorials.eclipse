@@ -14,60 +14,22 @@ package is started.
 
 === Meta-model of the application model
 
-The possible structure of the application model is defined by a
-meta-model created with the Eclipse Modeling Framework (EMF). A
-meta-model describes the structure of a data model, e.g., it defines
-which properties a Part has.
+The structure of the application model is defined by a meta-model created with the http://www.vogella.com/tutorials/EclipseEMF/article.html[Eclipse Modeling Framework (EMF)]. 
+A meta-model describes the structure of a data model, e.g., it defines which properties a part has.
 
-EMF is a popular general purpose
-modeling
-framework and is the
-basis for
-lots of Eclipse based projects. EMF allows
-to generate Java
-classes from a meta-model.
 
-Eclipse
-EMF
-uses
-an
-_.ecore_
-file to define the
-meta-model.
+The meta-model of the Eclipse 4 applications is stored in the `org.eclipse.e4.ui.model.workbench` plug-in inside the _model_ folder.
+The base model definition can be found in the _UIElements.ecore_ file. 
+The Eclipse 4 model classes have been generated based on this model.
 
-The meta-model of the Eclipse 4 applications
-is
-stored in the
-`org.eclipse.e4.ui.model.workbench`
-plug-in inside the
-_model_
-folder. The base model definition can be found in
-the
-_UIElements.ecore_
-file. The Eclipse 4 model classes have been
-generated based on this
-model.
+If you want to investigate this model, you should install the EMF tooling.
 
-If you want to investigate this model, you could install the EMF
-tooling via the Eclipse update manager and import the defining
-plug-in into your workspace. To import a plug-in from your current
-Target
-Platform (default is the Eclipse IDE) into your workspace, use
-the
-_Plug-ins_
-view
-, right-click on a plug-in and select
-menu:Import As[Source Project].
-
-The
-_Application.e4xmi_
-file, which describes the Eclipse application model, is a persisted
-version of an EMF model.
+The _Application.e4xmi_ file, which describes the Eclipse application model, is a persisted version of an EMF model.
 
 === Determine the command ID in a handler
 
-In the handler class you can determine the command ID if the
-command was triggered via the user interface. Determining the ID is
+In the handler class you can determine the command ID if the command was triggered via the user interface
+ Determining the ID is
 not possible, if it was triggered via the command service. The
 following code snippet shows how to get the command
 ID.

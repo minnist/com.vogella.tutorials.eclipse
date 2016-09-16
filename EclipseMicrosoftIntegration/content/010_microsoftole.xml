@@ -1,7 +1,0 @@
-== Microsoft Object Linking and Embedding
-	 Windows applications use OLE (Object Linking and Embedding) to
-		allow applications to control other application objects. The following
-		will show how to do this using a few examples.
-	 Obviously the following examples assume that your are running on
-		Microsoft Windows and have the application which is discussed
-		installed.

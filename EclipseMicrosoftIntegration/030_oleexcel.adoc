@@ -1,0 +1,21 @@
+== Microsoft Excel with Eclipse
+
+=== Create Project
+		
+
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#firstrcp[Eclipse RCP]
+for details. Use the "RCP with a view" as a template. Run it and see that is working.
+
+=== Change View code
+
+Select View.java and replace the code with the following.
+		
+[source,java]
+----
+include::res/excel/View.java[]
+----
+		
+Start your application and excel should be displayed.
+		
+image::excel10.gif[]
+	

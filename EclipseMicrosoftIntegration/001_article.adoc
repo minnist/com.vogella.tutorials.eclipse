@@ -1,0 +1,35 @@
+= Microsoft and Java Integration with Eclipse - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 0.6, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseMicrosoftIntegration
+
+[abstract]
+Eclipse Microsoft Integration.
+This article will demonstrate how Eclipse SWT can be used to
+integrate / use Microsoft applications. Eclipse is using the SWT GUI
+framework. SWT does allow to integrated Microsoft application via
+OLE (Object Linking and Embedding).Microsoft Outlook, Microsoft
+Excel and the File explorer are used as examples. The examples used
+are based on Eclipse RCP as this makes it easy to demonstrate the
+usage but work also with stand-alone Java application (which are
+using SWT).
+This article assumes that you are already familiar with using
+the Eclipse IDE and with developing simple Eclipse RCP applications.
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_microsoftole.adoc[]
+include::020_oleoutlook.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_oleexcel.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::040_oleexplorer.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

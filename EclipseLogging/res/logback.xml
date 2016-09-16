@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- With a context scope the ${LOG_DIR} variable can be obtained from the LoggerContext -->
+	<!-- By using :- in the value attribute a default can be specified -->
+	<property scope="context" name="LOG_DIRECTORY" value="${LOG_DIR}:-\home\default-log-dir" />
+
+	<!-- Make use of the LOG_DIRECTORY property for the general xml configuration of Logback -->
+
+</configuration>

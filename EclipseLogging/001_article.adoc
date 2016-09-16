@@ -4,8 +4,8 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 1.2, 06.07.2016
+Lars Vogel, Simon Scholz (c) 2009, 2016 vogella GmbH
+Version 1.2, 16.09.2016
 :docinfodir: ../
 :vgwort: EclipseLogging
 
@@ -16,6 +16,7 @@ This tutorial gives an overview how to do logging in an Eclipse application.
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
+include::020_slf4j.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	

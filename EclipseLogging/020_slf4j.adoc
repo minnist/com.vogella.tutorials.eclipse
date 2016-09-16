@@ -1,0 +1,73 @@
+== SLF4J in eclipse applications
+
+Most java developers are more familiar with the http://www.slf4j.org/[SLF4J logging facade], which is also more powerful than Eclipse's default logger.
+
+=== Obtaining the SLF4J library from Orbit
+
+The http://www.eclipse.org/orbit/[Eclipse Orbit Project] provides many different open source libraries, which can be obtained as OSGi bundles from Obrit's p2 update sites.
+This makes it easy to use third party open source libraries for target definitions and a Maven Tycho build.
+
+image::slf4j-orbit-updatesite.png[] 
+
+One of the most popular slf4j implementations is the http://logback.qos.ch/[Logback logger], which is also available on Orbit's p2 update site.
+
+image::logback-orbit-updatesite.png[] 
+
+
+[CAUTION]
+====
+The Orbit p2 update sites URLs change quite regularly.
+Therefore it is recommended to look in the http://download.eclipse.org/tools/orbit/downloads/[Orbit downloads section] to find the right p2 update site URL.
+====
+
+=== Using SLF4J
+
+The SLF4J dependencies just have to be added to the desired bundle.
+
+image::slf4j-package-import.png[Use org.slf4j as imported package] 
+
+After doing this the SLF4J logger API can be used in the classes of the bundle.
+
+[source, java]
+----
+private static final Logger LOG = LoggerFactory.getLogger(ClassWithInfosToBeLogged.class);
+----
+
+TIP: It saves a lot of effort, when a Template for the creation of this `LOG` instance is created.
+
+=== Configuring Logback
+
+Usually Logback is configured by a _logback.xml_ or _logback-test.xml_ file. (see http://logback.qos.ch/manual/configuration.html[Logback configuration manual])
+
+In an OSGi environment it is not that easy for Logback to automatically determine where the _logback.xml_ logger configuration is stored.
+
+For Logback the `ch.qos.logback.classic.joran.JoranConfigurator` is used to parse the _logback.xml_ configuration file.
+
+By obtaining the `ch.qos.logback.classic.LoggerContext` and using the `JoranConfigurator` the location of the _logback.xml_ file can be set programmatically.
+
+[source, java]
+----
+include::res/ActivatorInBundleLogbackConfig.java[]
+----
+
+In some cases it is pretty handy to have this _logback.xml_ logger configuration in the _configuration_ folder of the RCP application rather than bundled in a JAR file.
+So _logback.xml_ logger configuration can easily be changed in a production environment if necessary.
+
+[source, java]
+----
+include::res/ActivatorExternalLogbackConfig.java[]
+----
+
+[TIP]
+====
+How to provide external static files like a _logback.xml_ file for a product build with Maven Tycho can be found here: http://www.vogella.com/tutorials/EclipseTycho/article.html#exercise-tycho-build-for-products-with-root-files[Eclipse Tycho Tutorial]
+====
+
+The _LOG_DIR_ property, which is overridden in the code above, can be obtained like this:
+
+[source, xml]
+----
+include::res/logback.xml[]
+----
+
+

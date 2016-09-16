@@ -2,16 +2,8 @@
 
 === Workbench XMI file
 
-The base workbench model for the Eclipse IDE is defined in the
-"org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
-In
-the
-`org.eclipse.platform`
-plug-in you find the
-_LegacyIDE.e4xmi_
-file which defines the initial
-window and some
-_model Add-ons_.
+The base workbench model for the Eclipse IDE is defined in the "org.eclipse.ui.workbench" plug-in in the "LegacyIDE.e4xmi" file.
+In the `org.eclipse.platform` plug-in you find the _LegacyIDE.e4xmi_ file which defines the initial window and some _model Add-ons_.
 
 If Eclipse is started in the compatibility mode, this file is read
 via

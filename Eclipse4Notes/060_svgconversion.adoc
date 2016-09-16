@@ -1,0 +1,61 @@
+== HDPI support in Eclipse 4.6
+
+Eclipse 4.6 (Neon) support HDPI displays. 
+SWT will scale images and text according to the screen density.
+This happens automatically.
+
+For testing you can also define the scale factor manually.
+On GTK you can us the GDK_DPI_SCALE environment variable before launching eclipse, e.g. for 150%:
+
+[source,console]
+----
+export GDK_DPI_SCALE=1.5 
+./eclipse
+----
+ 
+To only change the SWT scale factor (but not the fonts that get scaled by the OS), you would use the following:
+
+[source,console]
+----
+./eclipse -vmargs -Dswt.autoScale=200
+----
+
+By default, Windows only supports scaling factors of 100%, e.g. 1x, 2x,etc. 
+You can instruct the scaling enging to support steps of 25 with the following parameter
+
+[source,console]
+----
+./eclipse -vmargs -Dswt.autoScale=quarter
+----
+
+[NOTE]
+====
+the swt.autoScale property is not meant to be used by end users. 
+It's just there as a fallback in case the automatic detection somehow went terribly wrong.
+====
+
+On Windows 7, there's no good way to test this other than using the Display control panel to choose a percentage or set a custom text size (DPI), and then logging out.
+
+== Using GTK2 on Eclipse
+
+You can instruct Eclipse to use GTK2 instead of GTK3 via the following export.
+
+[source,console]
+----
+export SWT_GTK3=0
+./eclipse
+----
+
+== SVG to png conversion
+
+The Eclipse Platform contains a Maven plug-in which can be used to convert SVG graphics to png.
+
+Clone the Eclipse Platform UI repo to use it. You find the clone URI on the following website: 
+
+https://git.eclipse.org/r/#/admin/projects/platform/eclipse.platform.images
+
+Here you find the org.eclipse.images.renderer plug-ins. 
+See its Readme how to convert SVG to png. 
+The generated png can be included into your Eclipse RCP application.
+
+

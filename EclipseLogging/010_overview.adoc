@@ -1,0 +1,50 @@
+== Eclipse Logging
+	
+The
+`org.eclipse.e4.core.services`
+plug-in contains the
+`Logger`
+class which can get injected via dependency injection. The default
+implementation is provided by the
+`WorkbenchLogger`
+class.
+	
+[source,java]
+----
+include::res/getLogger.java[]
+----
+	
+The
+`Logger`
+implementation wraps the
+`IStatus`
+into an simpler interface and provides several methods to log info,
+warning or error message. The following code shows example calls.
+	
+[source,java]
+----
+include::res/log.java[]
+----
+	
+Customers can replace the
+`WorkbenchLogger`
+implementation in the Context with there own implementation. For
+example this way customers could log to the Eclipse system as well as
+to other external log systems.
+
+The log level can be setup in the
+_config.ini_
+file of your application via the
+_eclipse.log.level_
+parameter. The value can be set to
+_INFO_
+,
+_WARNING_
+and
+_ERROR_
+.
+_INFO_
+will for example show all log message.
+	
+By default Eclipse logs all messages.
+

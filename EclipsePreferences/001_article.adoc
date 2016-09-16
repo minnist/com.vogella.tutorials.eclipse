@@ -16,6 +16,7 @@ Within this tutorial Eclipse 4.5 (Mars) is used.
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
+include::015_workspace_location.adoc[]
 include::020_eclipse4.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::020_preferencepage.adoc[]

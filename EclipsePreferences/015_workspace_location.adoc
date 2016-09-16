@@ -1,0 +1,51 @@
+== Workspace Location
+
+When starting the Eclipse IDE first of all a workspace location has to be specified.
+There are several ways to specify a workspace location in an RCP application as well, which might be more suitable for an end user than having a dialog, which asks for a workspace location.
+
+[NOTE]
+====
+The default workspace location is the install location of the Eclipse RCP application.
+====
+
+=== Using the osgi.instance.area.default property
+
+The `osgi.instance.area.default` property can be used to declaratively define an alternative workspace location.
+
+The property can be specified in the _config.ini_ file of the RCP application. 
+
+Usually properties of the _config.ini_ file are specified in a product configuration:
+
+image::osgi-instance-area-property.png[Product configuration with the osgi.instance.area.default property] 
+
+[TIP]
+====
+It is also possible to use variables like `@user.home` as value.
+This is especially useful when an enviroment like Citrix is used, where several users might use the same application, but should have a different workspace.
+====
+
+=== Setting the workspace location programmatically
+
+Many RCP applications have a login screen at startup and the actual workspace location should be set according to the user being logged in.
+
+In E4 applications a login screen is usually created in a lifecycle class in the method annotated with `@PostContextCreate`.
+
+[source, java]
+----
+include::res/workspace/LifeCycleManager.java[]
+----
+
+[CAUTION]
+====
+The instance location can only be set once! Therefore the if statement with `if(Platform.getInstanceLocation().isSet())` is used.
+====
+
+[TIP]
+====
+When running the RCP application during development from the Eclipse IDE there usually already is a workspace in the run configuration.
+To be able to set the location during development the _Location_ field must be empty.
+
+image::empty-workspace-location.png[Empty workspace location in run configuration] 
+
+====
+

@@ -1,0 +1,70 @@
+== Exercise - SLF4J and Logback in Eclipse applications
+
+=== Target
+
+Make use of http://www.slf4j.org/[SLF4J] and http://logback.qos.ch/[Logback] in an RCP application.
+
+=== Obtaining the SLF4J and Logback library from Orbit
+
+Install SLF4J and Logback into your IDE and reuse the IDE's target platform or create a target definition file and add all necessary features, like eclipse SDK and logger libs, to it.
+
+See <<slf4j-logback-from-orbit>> for the SLF4J and Logback dependencies.
+
+=== Create a plugin using SLF4J
+
+Create a _com.vogella.logging.rcp_ plug-in project, which uses the E4 Application template.
+
+Add the SLF4J dependencies:
+
+image::slf4j-package-import.png[Use org.slf4j as imported package] 
+
+Use a `Logger` in the generated `AboutHandler` class and log some debug messages or throw some `Exceptions`, which are logged.
+
+[source, java]
+----
+include::res/AboutHandler.java[]
+----
+
+TIP: It saves a lot of effort, when a Template for the creation of this `LOG` instance is created.
+
+=== Creating a plug-in that configures Logback
+
+Create a _com.vogella.logging.config_ plug-in project with an Activator.
+
+The root folder of this plug-in should contain the following _logback.xml_ file:
+
+[source, xml]
+----
+include::res/exercise-logback.xml[] 
+----
+
+The following dependencies are required to configure Logback.
+
+image::logback-dependencies.png[] 
+
+[NOTE]
+====
+Also using _Imported Packages_ for the Logback dependencies would be preferable, but unfortunately Logback has so many packages that they won't fit on the screenshot.
+====
+
+The `Activator` is supposed to initialize the Logback configuration.
+
+[source, java]
+----
+include::res/ActivatorInBundleLogbackConfigSimple.java[]
+----
+
+=== Startup the logging config bundle
+
+The configuration of the SLF4J implementation (Logback) should be seperated from the other bundles.
+So that no dependency to the _com.vogella.logging.config_ bundle is necessary and other bundles just need to import the org.slf4j package, like it is done _com.vogella.logging.rcp_.
+
+Due to that the _com.vogella.logging.config_ bundle will not be started automatically.
+Therefore it must be added to the _Start Levels_ in the product configuration.
+
+image::logging-start-levels-config.png[Configure Start Levels in the Product] 
+
+=== Validate
+
+Start the sample RCP application and see whether the logging looks like expected according to your _logback.xml_ configuration.
+

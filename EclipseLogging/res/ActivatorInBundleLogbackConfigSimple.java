@@ -34,10 +34,6 @@ public class Activator implements BundleActivator {
 		jc.setContext(context);
 		context.reset();
 
-		// overriding the log directory property programmatically
-		String logDirProperty = // ... get alternative log directory location
-		context.putProperty("LOG_DIR", logDirProperty);
-		
 		// this assumes that the logback.xml file is in the root of the bundle.
 		URL logbackConfigFileUrl = FileLocator.find(bundle, new Path("logback.xml"),null);
 		jc.doConfigure(logbackConfigFileUrl.openStream());

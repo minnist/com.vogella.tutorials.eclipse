@@ -1,7 +1,8 @@
 == SLF4J in eclipse applications
 
-Most java developers are more familiar with the http://www.slf4j.org/[SLF4J logging facade], which is also more powerful than Eclipse's default logger.
+Many Java developers are more familiar with the http://www.slf4j.org/[SLF4J logging facade], which is more powerful than Eclipse's default logger.
 
+[[slf4j-logback-from-orbit]]
 === Obtaining the SLF4J library from Orbit
 
 The http://www.eclipse.org/orbit/[Eclipse Orbit Project] provides many different open source libraries, which can be obtained as OSGi bundles from Obrit's p2 update sites.

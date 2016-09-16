@@ -7,11 +7,10 @@
 Lars Vogel, (c) 2009, 2016 vogella GmbH
 Version 6.8, 06.07.2016
 :docinfodir: ../
-:vgwort: 
+:vgwort: EclipsePlatformDevelopment
 
 [abstract]
 This tutorial explains how to contribute to the Eclipse open source project for the Eclipse IDE.
-
 
 include::010_contributingtoeclipse.adoc[]
 
@@ -19,10 +18,6 @@ include::010_contributingtoeclipse.adoc[]
 		
 This tutorial assumes that you have already Eclipse plug-indevelopment experience. 
 See the http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plug-in development tutorial] for details.
-		
-
-	
-
 
 include::011_foundation.adoc[]
 include::012_versioncontrol.adoc[]
@@ -41,6 +36,4 @@ include::820_usingtheinstaller.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::006_localresources.adoc[]
-
 

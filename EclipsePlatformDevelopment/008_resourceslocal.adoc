@@ -12,4 +12,6 @@ https://wiki.eclipse.org/Eclipse/API_Central/Deprecation_Policy[Eclipse API depr
 	
 https://wiki.eclipse.org/Platform_UI/Testing[Eclipse Platform testing]
 	
-https://wiki.eclipse.org/index.php/How_to_report_a_deadlock[How to report a deadlock in Eclipse]	
+https://wiki.eclipse.org/index.php/How_to_report_a_deadlock[How to report a deadlock in Eclipse]
+
+	

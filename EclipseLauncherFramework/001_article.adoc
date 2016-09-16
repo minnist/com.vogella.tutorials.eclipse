@@ -1,0 +1,26 @@
+= Defining custom launcher for the Eclipse IDE - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2015, 2016 vogella GmbH
+Version 0.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseLauncherFramework
+
+[abstract]
+Eclipse Launcher Framework.
+This tutorial describes how the define custom launcher for additional programs.
+In this tutorial Eclipse 4.3 is used.
+Level of this tutorial: Advanced
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::100_overview.adoc[]
+include::120_create_launch_configuration.adoc[]
+include::140_custom_launch_configuration.adoc[]
+include::160_custom_launch_configuration_ui.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

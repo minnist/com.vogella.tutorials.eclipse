@@ -1,0 +1,75 @@
+[[eclipsecustomlaunchconfigurationui]]
+== Launch Configuration UI
+
+The ﻿
+`org.eclipse.debug.ui`
+plugin provides a user interface for the launch
+configurations.
+
+A popular example for java developers is the java launch
+configuration dialog.
+
+image::sample_java_application_launch_config_ui.png[]
+
+Previously we created a launch configuration delegate and in order run
+it from the UI, we
+can use the
+`org.eclipse.debug.ui.launchConfigurationTabGroups`
+extension
+point.
+
+[source,xml]
+----
+include::res/custom_launch/launchConfigurationTabGroup.xml[]
+----
+
+Here we reference to the
+`com.example.launchConfigurationType`
+, which we
+previously created.
+
+Before we implement the tab group, we define a custom
+`AbstractLaunchConfigurationTab`
+, which will be placed on the tab
+group.
+
+[source,java]
+----
+include::res/custom_ui_launch/SampleTab.java[]
+----
+
+With this tab we can set our
+`SampleLaunchConfigurationAttributes.CONSOLE_TEXT`
+attribute to the
+`ILaunchConfiguration`
+.
+
+In the
+`com.example.SampleTabGroup`
+, we can use existing
+`AbstractLaunchConfigurationTab`
+implementations, like the
+`CommonTab`
+, or the
+`SampleTab`
+from above.
+
+[source,java]
+----
+include::res/custom_ui_launch/SampleTabGroup.java[]
+----
+
+A specific icon for the launch configuration can be defined by using
+the
+`org.eclipse.debug.ui.launchConfigurationTypeImages`
+extension point.
+
+[source,xml]
+----
+include::res/custom_ui_launch/launchConfigurationTypeImages.xml[]
+----
+
+The result will look similar to this:
+
+image::vogella_launch_ui.png[]
+

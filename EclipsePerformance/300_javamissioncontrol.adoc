@@ -1,0 +1,10 @@
+== Java Mission Control
+
+Java Mission Control is set of tools to perform performance
+analysis of a Java application.
+
+See
+http://www.oracle.com/technetwork/java/javaseproducts/mission-control/index.html[Java Mission Control homepage]
+for details.
+
+  

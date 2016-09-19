@@ -1,6 +1,6 @@
 <chapter>
 == Exercise: Using asynchronous processing
-	<section>
+	
 === Simulate delayed access
 		
 			Change your
@@ -26,7 +26,7 @@ include::res/snippets/delay.java[]
 			to fill the JFace table?
 		
 	
-	<section>
+	
 === Use asynchronous processing
 		
 			You have a
@@ -62,7 +62,7 @@ include::res/job/JobSnippets.java[]
 		
 
 	
-	<section>
+	
 === Validating
 		NOTE:
 			
@@ -90,7 +90,7 @@ include::res/job/JobSnippets.java[]
 		
 	
 
-	<section>
+	
 === Remove delay
 		
 			After finishing this exercise and validating that everything

@@ -3,7 +3,7 @@
 		Exercise: Implement a UI for TodoDetailsPart
 	
 
-	<section>
+	
 === TodoDetailsPart
 		
 			Change the
@@ -25,7 +25,7 @@ image::tododetails-userinterface.png"
 		
 
 	
-	<section>
+	
 === Implement focus setting for one of your widgets
 		
 			Ensure that your @Focus method sets the focus to one of the

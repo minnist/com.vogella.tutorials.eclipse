@@ -1,12 +1,12 @@
 <chapter>
 == Optional exercise: Implementing a tree to view the todos grouped by tags
-	<section>
+	
 === Target of this exercise
 		
 			In this exercise you create a part with displays a tree with the todo items structured by there tags.
 		
 	
-	<section>
+	
 === Add dependencies
 		
 			Ensure that 
@@ -18,7 +18,7 @@
 			plug-in.  You might have added these dependencies already in another exercise.
 		
 	
-	<section>
+	
 === Create part implementation
 		
 			Create the following part implementation with the

@@ -1,0 +1,27 @@
+= Eclipse Project Natures - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Simon Scholz (c) 2015, 2016 vogella GmbH
+Version 0.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseProjectNatures
+
+[abstract]
+Eclipse Project Natures
+This article describes how product natures can be implemented and what can be done with a custom project nature.
+	
+include::010_overview.adoc[]
+include::020_define_project_nature.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_exercise_nature_set.adoc[]
+include::040_project_nature_image.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::050_project_nature_propertypages.adoc[]
+include::060_exercise_project_nature_propertypages.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

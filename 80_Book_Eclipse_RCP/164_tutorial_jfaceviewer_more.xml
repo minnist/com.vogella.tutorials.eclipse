@@ -3,7 +3,7 @@
 	NOTE:
 		The following exercise is optional.
 	
-	<section>
+	
 === Add a filter to the table
 		
 			Add also a filter text box to the part. Use the text in the
@@ -26,7 +26,7 @@ include::res/viewer/filter.java[]
 
 	
 
-	<section>
+	
 === Sort the table based on summary
 		
 			Ensure that the table is sorted by the

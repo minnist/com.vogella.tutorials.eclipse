@@ -1,6 +1,6 @@
 <chapter id="exercisecomboviewer">
 == Optional exercise: Using ComboViewer
-	<section>
+	
 === Target
 		
 			In this exercise you create a new
@@ -20,7 +20,7 @@ image::tododeletepart10.png" scale="60[ComboViewer example screenshot]
 		
 
 	
-	<section>
+	
 === Implementation
 
 		
@@ -113,7 +113,7 @@ include::res/viewer/TodoDeletionPart.java[]
 			
 		
 	
-	<section>
+	
 === Validation
 		
 			Delete entries in your data model. The

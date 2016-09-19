@@ -1,0 +1,41 @@
+== Project Natures in Eclipse
+
+Project Natures are used in the Eclipse IDE in order to configure projects in the
+workspace.
+One project may consist of several project natures. The most popular project nature is
+`org.eclipse.jdt.core.javanature`, which is used to specify the project as
+Java project.
+Some examples for project natures are:
+
+.Examples of Project Natures
+|===
+|Project Nature's ID |Description
+
+|org.eclipse.jdt.core.javanature
+|Java Projects
+
+|org.eclipse.buildship.core.gradleprojectnature
+|Gradle Projects
+
+|org.eclipse.m2e.core.maven2Nature
+|Maven Projects
+
+|org.eclipse.pde.core.org.eclipse.pde.PluginNature
+|Eclipse Plugin Projects
+
+|org.eclipse.pde.core.org.eclipse.pde.FeatureNature
+|Eclipse Feature Projects
+
+|org.eclipse.pde.core.org.eclipse.pde.UpdateSiteNature
+|Eclipse Updatesite Projects
+
+|===
+
+If your Eclipse installation offers some additional project natures, which can be applied
+to a project, you usually can convert the project via context menu.
+
+image::configure_project_popup.png[]
+
+NOTE: The Configure menu is only visible, if there are project
+natures, which can be applied. Otherwise it is not shown at all.
+

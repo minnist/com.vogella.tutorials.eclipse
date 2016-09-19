@@ -154,7 +154,7 @@ concerned in the event. For an example see
 <<active_sample_event" />
 
 
-<section>
+
 === NEW_VALUE and OLD_VALUE event tags
 
 The
@@ -219,7 +219,7 @@ the changes, which can
 occur within the application model.
 
 
-<section>
+
 === TYPE event tag
 
 With the
@@ -305,7 +305,7 @@ package, where the position on is only the for move,
 add or remove events.
 
 
-<section>
+
 === WIDGET event tag
 
 The

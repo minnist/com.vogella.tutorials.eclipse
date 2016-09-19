@@ -1,0 +1,15 @@
+== Properties of a Project
+
+Each project also has properties, which can be configured.
+You can access these properties from the last menu item of the context menu of a project,
+which is called _Properties_.
+For a general project called _test_ the properties might look like
+this:
+
+image::minimal_project_properties.png[]
+
+The `org.eclipse.ui.propertyPages` extension point can be used to add new
+property pages to the project's properties dialog.
+In general a property page extends `org.eclipse.ui.dialogs.PropertyPage` class
+and also implements the `org.eclipse.ui.IWorkbenchPropertyPage` interface.
+

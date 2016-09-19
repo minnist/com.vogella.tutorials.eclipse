@@ -1,0 +1,96 @@
+== Exercise: Apply a project nature to a project
+
+=== Target
+
+Add a _Convert to example project_ menu item to the Configure menu of a projects context menu.
+
+=== Define an example project nature
+
+Create a plugin project and add the following dependencies to it:
+
+* org.eclipse.core.runtime
+* org.eclipse.core.resources
+* org.eclipse.ui.ide
+* org.eclipse.ui
+
+In the plugin.xml you need to add the `org.eclipse.core.resources.natures`
+extension point.
+
+image::exercise_project_nature_extension.png[]
+
+In the _ExampleProjectNature(run)_ we reference the
+`ExampleProjectNature` class:
+
+[source,java]
+----
+include::res/ExampleProjectNature.java[]
+----
+
+=== Add a convert command
+
+Now use the `org.eclipse.ui.commands` extension point and add a command
+with `com.example.product.examplenature.command`  as
+_id_ and `Convert to Example Project` as
+_name_.
+
+=== Add a convert handler
+
+Add the `org.eclipse.ui.handlers` extension point and add a handler for the
+`com.example.product.examplenature.command` command. The class for the
+handler is `ExampleProjectNatureHandler` and looks like this:
+
+[source,java]
+----
+include::res/ExampleProjectNatureHandler.java[]
+----
+
+=== Add the menu contribution for the conversion
+
+The id of the _Configure_ menu in a projects context menu is
+`org.eclipse.ui.projectConfigure` and therefore the
+_locationURI_ of the _menuContribution_
+must be `popup:org.eclipse.ui.projectConfigure`. In this
+_menuContribution_ we then reference the defined
+command.
+
+image::exercise_convert_menucontribution.png[]
+
+[[optional_project_nature_definition]]
+=== Optional - Add a core expression
+
+As already mentioned the _Configure_ menu is only visible, in case
+it has elements in it, we should only apply the _menuContribution_
+to it, if the nature has not already been set.
+Therefore we want to add a core expression with the
+`org.eclipse.core.expressions.definitions` extension point.
+
+image::exercise_core_expression.png[]
+
+The _id_ of the definition should be
+`com.example.project.hasNature`, which adapts
+`org.eclipse.core.resources.IProject` as _type_ and
+reuses a predefined `PropertyTester`, which is able to check for certain
+project natures. The _property_ of the `PropertyTester`
+is `org.eclipse.core.resources.projectNature`.
+
+image::exercise_project_nature_propertytester.png[]
+
+Now we only need to reference this definition in a _visibleWhen_
+definition for the _menuContribution_.
+
+image::exercise_visibleWhen_expression.png[]
+
+Do not forget to define _(not)_ and then reference the
+`com.example.project.hasNature` definition. The
+_(not)_ is not directly part of the definition itself, because
+we want to reuse this definition later on, where we want to ensure that the
+`com.example.project.examplenature` is applied to a project.
+
+=== Validate
+
+Start your plug-in within the Eclipse IDE and create a new _General
+Project_ and then right click the project and click on menu:Configure[Convert to Example Project]. 
+In case you have done the optional part, the
+_Convert to Example Project_  menu item should not appear
+any more in the _Configure_ menu.
+

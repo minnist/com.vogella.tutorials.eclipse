@@ -1,6 +1,6 @@
 <chapter>
 == Exercise: Using TableViewer
-	<section>
+	
 === Create a JFace TableViewer for the Todo items
 		
 			In this exercise you create a JFace table in the
@@ -10,7 +10,7 @@
 			items.
 		
 	
-	<section>
+	
 === Add dependencies
 		
 			Ensure that the
@@ -20,7 +20,7 @@
 			plug-in. You might have added this dependency already in another exercise.
 		
 	
-	<section>
+	
 === Create implementation
 		
 			Create a JFace table implementation with the

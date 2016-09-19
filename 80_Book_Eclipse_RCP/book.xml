@@ -100,7 +100,7 @@
 		</chapter>
 		<chapter>
 	=== Install the e4 tools
-			<section>
+			
 		=== Requirements
 				
 					To install the tools required for Eclipse RCP development you
@@ -208,7 +208,7 @@
 
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4LiveModelEditor/010_overview.adoc[]
-			<section>
+			
 		=== Installation requirements
 			
 			
@@ -242,7 +242,7 @@
 		<chapter>
 	=== Exercise: Enter the dependencies
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/242_tutorial_e4_dependencies.adoc[]
-			<section>
+			
 		=== More on dependencies
 				
 					The exact details of applying this
@@ -462,7 +462,7 @@
 		<chapter>
 	=== Menu and toolbar application objects
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/450_commands.adoc[]
-			<section>
+			
 		=== Learn about the event system
 				
 					See
@@ -476,7 +476,7 @@
 		<chapter>
 	=== More on menus and toolbars
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/461_menu_advanced.adoc[]
-			<section>
+			
 		=== Creating dynamic menu entries
 				
 					See

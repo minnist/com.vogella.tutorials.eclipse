@@ -1,0 +1,44 @@
+== Exercise: Add a new custom property page
+
+In this exercise we want to reuse the project from the previous exercise.
+
+=== Target
+
+Add a custom property page to the properties of those projects, which have `com.example.project.examplenature` as project nature.
+
+=== Adding a custom property page
+Add the `org.eclipse.ui.propertyPages` extension point and configure the page like this:
+
+image::exercise_project_nature_property_page.png[]
+
+The referenced `ExamplePropertyPage` should extend the `org.eclipse.ui.dialogs.PropertyPage` class and implement the
+`org.eclipse.ui.IWorkbenchPropertyPage` interface.
+
+[source,java]
+----
+include::res/ExamplePropertyPage.java[]
+----
+
+=== Optional - Reuse project nature definition
+
+We only want to add the custom property page, in case the `com.example.project.examplenature` project nature is set.
+Therefore we define a `enabledWhen` definition, with the `com.example.project.hasNature` expression, which has been
+created in the previous optional exercise. 
+See <<optional_project_nature_definition>>
+
+image::property_page_enablement.png[]
+
+=== Validate
+
+Start your plug-in within the Eclipse IDE, right click your project and click on the
+_Properties_ menu item.
+Then select _Example Settings_ and the result should look like
+this:
+
+image::exercise_project_nature_property_page_sample.png[]
+
+In case you have also done the optional exercises the _Example
+Settings_should only be visible, if the
+`com.example.project.examplenature` project nature is applied to
+the project.
+

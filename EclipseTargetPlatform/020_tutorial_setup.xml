@@ -110,7 +110,7 @@ image::tutorial_targetdefinition40.png[]
 			Afterwards press the
 			_Set as Target Platform_
 			to activate it. See
-			<xref linkend="tuturial_targetplatform_solvingissues" />
+			<<tuturial_targetplatform_solvingissues" />
 			in case
 			you have problems with your new target platform.
 		

@@ -1,0 +1,75 @@
+== Task management with Mylyn
+		
+Eclipse Mylyn is a software component packaged with the Eclipse
+IDE.
+The idea of Mylyn is to integrate
+_tasks_
+into the Eclipse IDE
+and connect the current state of the
+Eclipse IDE,
+e.g. the
+_context_
+with such a task.
+		
+Software developers perform a variety of activities. They
+write
+source code for new functionality, fix bugs,
+write documentation,
+answer questions, attend meetings and much more.
+		
+Developing software in the Eclipse IDE
+involves writing new
+classes or
+methods and modifying existing code.
+		
+For example the
+procedure of
+fixing a bug may involve writing unit
+tests,
+refactoring existing
+code, reading and searching
+involved code
+and
+finally fixing the
+affected code. If the activity of the
+developer
+during this task is
+interrupted or if
+the developer has to work on
+another
+task, e.g. an urgent
+bug, he loses
+the
+_context_
+he built while working on the previous task, i.e. all the involved
+classes which he has opened in the Eclipse
+IDE.
+		
+Eclipse Mylyn allows the developer to record his activities in such a
+task while he is working on it. Each task has a
+_context_
+which captures the involved classes, methods and the cursor position
+in the opened Java or text
+_editor_
+.
+		
+When switching between tasks, the corresponding context is
+restored and the editors which belong to this tasks
+are opened and
+the others are closed.
+		
+Mylyn
+can also filter information in the IDE. For example,
+the
+_Package Explorer_
+view
+can be set to show only the files relevant for
+the
+current
+task.
+		
+This functionality sounds simple but helps finding the right
+information much
+faster during a task switch of the
+developer.
+

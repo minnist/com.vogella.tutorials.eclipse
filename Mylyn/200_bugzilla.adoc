@@ -1,0 +1,72 @@
+== Using Mylyn to integrate with Bugzilla
+(((Mylyn,bugzilla integration)))
+
+The following description explains how you can use Mylyn to
+work on
+bugs and feature requests which are tracked in the
+Eclipse
+_Bugzilla_
+installation.
+
+All known Eclipse bugs and feature requests are stored in the
+Eclipse Bugzilla
+database which can be found under
+the following link: https://bugs.eclipse.org/bugs/
+
+Mylyn supports accessing the Eclipse bug database via its
+Bugzilla connector.
+
+TIP: Some packaged version of Eclipse have the Eclipse Bugzilla
+preconfigured. If you open the
+_Task Repositories_
+view via
+menu:Window[Show View > Other... > Mylyn > Task Repositories]
+menu.
+
+If the
+_Eclipse Bugzilla_
+does not exists here, select
+_Add Task Repository_
+from the view menu and enter the URL to Bugzilla and your
+credentials similar to the following screenshot.
+
+image::mylyneclipsebugzilla10.png[Eclipse Bugzilla connection in Mylyn]
+
+Afterwards
+right
+click in the
+_Task List_
+view
+and select
+menu:New[Query].
+
+image::mylynbugzilla10.png[Creating a bugzilla query in Mylyn - Part 1]
+
+Select the
+_Eclipse_
+entry and press the
+btn:[Next]
+button.
+
+image::mylynbugzilla20.png[Creating a bugzilla query in Mylyn - Part 2]
+
+Select the
+_Create query_
+entry and
+_Create query using form_.
+
+image::mylynbugzilla30.png[Creating a bugzilla query in Mylyn - Part 3]
+
+If for example you want to see all open bugs in
+Platform - UI
+then you could enter a query as depicted in the
+following screenshot.
+
+image::mylynbugzilla40.png[Creating a bugzilla query in Mylyn - Part 4]
+
+If you now activate a task, you can use Mylyn to work on
+Eclipse
+bugs.
+
+image::mylynbugzilla50.png[Creating a bugzilla query in Mylyn - Part 3]
+

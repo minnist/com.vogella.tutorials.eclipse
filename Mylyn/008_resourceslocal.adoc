@@ -1,0 +1,8 @@
+== Links and Literature
+
+=== Mylyn Resources
+		
+http://www.eclipse.org/mylyn/[Mylyn Homepage]
+		
+http://blog.vogella.com/2009/10/05/modifying-mylyn-context/[Blog post about modifying Mylyn Context]
+		

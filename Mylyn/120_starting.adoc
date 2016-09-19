@@ -1,0 +1,108 @@
+== Tutorial: Using Mylyn
+
+=== Task List view
+(((Mylyn,Task List view)))
+		
+The
+_Task List_
+view
+is part of the standard Java
+_perspective_.
+		
+In case you closed the
+view
+, you can re-open it via
+menu:Window[Show View > Mylyn > Task List].
+		
+image::mylyn10.png[Task List View]
+
+=== Create new tasks
+(((Mylyn,create tasks)))
+		
+To create a new task press the
+_New Task_
+button or right-click in the
+_Task List_
+view
+and select
+menu:New[Task].
+		
+image::mylyn20.png[Selecting local repository]
+		
+Select the
+_Local_
+repository, as depicted in the following
+screenshot.
+		
+image::mylyn30.png[Selecting local repository]
+
+=== Activate a task
+(((Mylyn,activate tasks)))
+		
+To start working on a task, select the
+_Activate task_
+button. If the task has already captured a
+_context_
+, Mylyn
+filters the visible elements in the
+_Package Explorer_
+view.
+		
+image::mylyn40.png[Activate Tasks in the Package Explorer]
+		
+You can remove the filter in the
+_Package Explorer_
+view
+by
+clicking the
+_Focus on Active Task_
+button
+in the toolbar of this
+view
+. Afterwards
+all files
+are displayed.
+		
+If you open a file while having an activated task, this file
+is
+added to
+the context of
+the
+task.
+		
+image::mylyn50.png[Focus on active tasks]
+		
+Once you have identified all necessary elements, you can
+focus
+again on the task to filter out the unnecessary elements.
+		
+If you have to switch to another task you simply can activate
+it. The context of the task will be restored.
+
+=== Create task from Problems view
+(((Mylyn,create task from Problems views)))
+		
+You can create a new Mylyn task from the
+_Problems_
+view
+, by
+right-clicking on a problem and selecting
+_New Task from Marker..._
+from the context menu.
+		
+image::problemsview_marker10.png[Problems View]
+
+=== Export and import your tasks
+(((Mylyn,export and import tasks)))
+		
+Mylyn allows you to export and import your local tasks. Select
+your
+categories or tasks in the
+_Task List_
+view
+, right-click on them and select
+_Export and Import_
+from the context menu.
+		
+image::mylyn_export10.png[Export Mylyn tasks]
+

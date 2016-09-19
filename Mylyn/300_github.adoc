@@ -2,42 +2,28 @@
 
 === GitHub connector
 (((Mylyn,GitHub integration)))
-		
-		The Mylyn GitHub connector allows integrating GitHub issues,
-			Pull requests and Gists.
-		
-	
+
+The Mylyn GitHub connector allows integrating GitHub issues,
+Pull requests and Gists.
 
 === GitHub issue integration
-		
-			To integrate the GitHub issues you can use the
-			_Task List_
-			view and define a new repository and a new query as described via the
-			following screenshots.
-		
-		You first need to define the GitHub repository you want to use.
-		
 
-		
+To integrate the GitHub issues you can use the
+_Task List_
+view and define a new repository and a new query as described via the
+following screenshots.
+
+You first need to define the GitHub repository you want to use.
+
 image::githubissue10.png[Creating a GitHub repository - Part 1]
-		
 
-		
 image::githubissue20.png[Creating a GitHub repository - Part 1]
-		
 
-		
 image::githubissue30.png[Creating a GitHub repository - Part 1]
-		
-		Afterwards you can directly create a new query.
 
-		
+Afterwards you can directly create a new query.
+
 image::githubissue40.png[Creating a GitHub repository - Part 1]
-		
 
-		
 image::githubissue50.png[Creating a GitHub repository - Part 1]
-		
 
-
-	

@@ -41,33 +41,34 @@ The example assumes that the bundle is called _test_ to have a short name.
 |===
 |Pattern |Description
 
-|_bundleclass://_BSN/package.classname
-Example: bundleclass://test/test.parts.MySavePart
+|`bundleclass://_BSN/package.classname`
+
+Example: `bundleclass://test/test.parts.MySavePart`
 |Identifier for a Java class.
-It consists of the following parts: _bundleclass://_ is a fixed prefix, BSN stands for Bundle-SymbolicName and is defined in a configuration file called _MANIFEST.MF_ file.
+It consists of the following parts: `bundleclass://` is a fixed prefix, BSN stands for Bundle-SymbolicName and is defined in a configuration file called _MANIFEST.MF_ file.
 The Bundle-SymbolicName is followed by a '/' and the fully qualified classname.
 
-|_platform:/plugin/_BSN/path/filename.extension
-Example:platform:/plugin/test/icons/save_edit.gif
+|`platform:/plugin/_BSN/path/filename.extension`
+
+Example: `platform:/plugin/test/icons/save_edit.gif`
 |Used to identify resources.
 Identifier for a resource in a plug-in.
-_platform:/plugin/_ is a fixed prefix, followed by the BSN stands for Bundle-SymbolicName as defined in the _MANIFEST.MF_ file, followed by the path to the file and the filename.
+`platform:/plugin/` is a fixed prefix, followed by the BSN stands for Bundle-SymbolicName as defined in the _MANIFEST.MF_ file, followed by the path to the file and the filename.
 |===
 
-For example a part, have a _Class URI_ attribute which points to a Java class via the `bundleclass://` URI.
+For example a part, have a `Class URI` attribute which points to a Java class via the `bundleclass://` URI.
 This class provides the behavior of the part.
 The corresponding object is created by the Eclipse framework.
 Using the house/rooms metaphor from earlier, the class is responsible for defining the furnishings, the layout of the room and how the interactive objects behave.
 
 image::classuri10.png[]
 
-An example for a static resource reference is the the _Icon URI_ attribute of a part.
+An example for a static resource reference is the the `Icon URI` attribute of a part.
 This attribute can point to an icon that is used for the part.
 
 === Runtime application model
 
 At runtime of the application the created set of model objects is called the _runtime application model_.
 This runtime application model is dynamic, i.e., you can change the model objects and its attributes and these changes are reflected in your application.
-The Eclipse platform has change listeners registered on the model objects and updates the user interface whenever you change
-relevant attributes.
+The Eclipse platform has change listeners registered on the model objects and updates the user interface whenever you change relevant attributes.
 

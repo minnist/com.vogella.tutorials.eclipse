@@ -1,4 +1,4 @@
-=== Overview of available model objects
+== Overview of available model objects
 		
 During startup the Eclipse framework parses the available information about the application model (Application.e4xmi, persisted user changes and model contributions).
 It stores this information in Java objects during runtime.

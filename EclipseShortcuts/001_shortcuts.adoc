@@ -1,35 +1,22 @@
 == Shortcuts
 
-
 === Using shortcuts in Eclipse
-		Using shortcuts make a developer more productive.
-			Eclipse
-			provides keyboard shortcuts for the most common actions.
-			Using
-			shortcuts is usually preferable as you can perform actions
-			much
-			faster.
-		
-		
-			Eclipse supports of course the typical shortcuts, e.g.
-			kbd:[Ctrl+S]
-			for saving,
-			kbd:[Ctrl+C]
-			for copying the selected text or file and
-			kbd:[Ctrl+V</keycap>
 
-			</keycombo>
-			for pasting the element currently in the clipboard.
-		
+Using shortcuts make a developer more productive.
+Eclipse provides keyboard shortcuts for the most common actions.
+Using shortcuts is usually preferable as you can perform actions much faster.
 
-
-	
+Eclipse supports of course the typical shortcuts, e.g.
+kbd:[Ctrl+S]
+for saving,
+kbd:[Ctrl+C]
+for copying the selected text or file and
+kbd:[Ctrl+V]
+for pasting the element currently in the clipboard.
 
 === Shortcuts on Mac OS
 
-		This description uses the shortcuts based on Windows and Linux.
-			Mac OS uses the Cmd key frequently instead of the
-			Ctrl key.
-		
-	
+This description uses the shortcuts based on Windows and Linux.
+Mac OS uses the btn:[Cmd] key frequently instead of the
+btn:[Ctrl] key.
 

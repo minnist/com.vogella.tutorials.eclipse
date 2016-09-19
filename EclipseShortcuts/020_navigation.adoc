@@ -1,176 +1,83 @@
-
 == Navigation
-	
-		(((Shortcuts,Navigation)))
-	
-
+(((Shortcuts,Navigation)))
 
 === Globally available navigation shortcuts
-		Eclipse provides shortcuts for opening files or Java artifacts.
 
-.Table Title
+Eclipse provides shortcuts for opening files or Java artifacts.
+
+.Navigation
 |===
+|Shortcut |Description
 
-		=== Navigation
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="3*" />
-					
-						
-|Shortcut
-|Description
-						
-					
-					
-						
-|Ctrl + Shift + R
+a|kbd:[Ctrl + Shift + R]
 |Search dialog for resources, e.g., text files
-						
-						
-|Ctrl + Shift + T
+
+a|kbd:[Ctrl + Shift + T]
 |Search dialog for Java Types
-						
-						
-|Ctrl + E
-|Search dialog to select an editor from the currently open
-								editors
-							
-						
 
-						
-|Ctrl + F8
+a|kbd:[Ctrl + E]
+|Search dialog to select an editor from the currently open editors
+
+a|kbd:[Ctrl + F8]
 |Shortcut for switching perspectives
-						
 
-
-					
-				
 |===
-		
-	
-
-
 
 === Navigation shortcuts in the editor
 
-		If you are working in the Java editor you can also use certain
-			shortcuts for faster navigation. The following
-			tables lists a few of
-			them.
+If you are working in the Java editor you can also use certain
+shortcuts for faster navigation. The following
+tables lists a few of
+them.
 
-.Table Title
+.Search from an editor
 |===
+|Shortcut |Description
 
-		=== Search from an editor
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="3*" />
-					
-						
-|Shortcut
-|Description
-						
-					
-					
+a|kbd:[F3]
+|Opens editor to selected element (type) or navigate to the declaration of the selected variable
 
-						
-| F3
-| Opens editor to selected element (type) or navigate to
-								the declaration of the selected variable
-							
-						
-						
-|Ctrl + .
+a|kbd:[Ctrl + .]
 |Go to the next problem / error
-						
-						
-|Ctrl + ,
+
+a|kbd:[Ctrl+,]
 |Go to the previous problem / error
-						
-						
-|F4 on a variable
-| Show type hierarchy 
-						
 
+a|kbd:[F4] on a variable
+|Show type hierarchy 
 
-						
-|Ctrl + J 
-|Incremental search without popup dialog, just starting
-								typing to search. Press Ctrl + J to find the next
-								match
-							
-						
-						
-|Ctrl + K
-|
-								Searches the selected text or if nothing is selected the last
-								search from the
-								_Find_
-								dialog.
-							
-						
+a|kbd:[Ctrl+J] 
+|Incremental search without popup dialog, just starting typing to search. Press kbd[Ctrl+J] to find the next match
 
-						
-|Ctrl + Shift + G
-|In the Java editor, s\earch for references in the
-								workspace
-							
-						
-						
-|Ctrl + Shift + P
-|Select the matching bracket. Cursor needs to be placed
-								before or after a bracket.
-							
-						
-					
-				
+a|kbd:[Ctrl+K]
+|Searches the selected text or if nothing is selected the last search from the _Find_ dialog.
+
+a|kbd:[Ctrl+Shift+G]
+|In the Java editor, s\earch for references in the workspace
+
+a|kbd:[Ctrl+Shift+P]
+|Select the matching bracket. Cursor needs to be placed before or after a bracket.
+
 |===
 
-.Table Title
+.Navigation between editors
 |===
+|Shortcut |Description
 
-		=== Navigation between editors
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="3*" />
-					
-						
-|Shortcut
-|Description
-						
-					
-					
-						
-| Alt + &#8592;
-| Go to previous opened editor. Cursor is placed where it
-								was before you opened the next editor
-							
-						
-						
-| Alt + &#8594;
-| Similar Alt + &#8592; but opens the next editor
-						
-						
-|Ctrl + Q
-| Go to editor and the position in this editor where the
-								last edit was done
-							
-						
+a|kbd:[Alt + &#8592;]
+|Go to previous opened editor. Cursor is placed where it was before you opened the next editor
 
-						
-| Ctrl + PageUp 
-| Switch to previous opened editor
-						
-						
-| Ctrl + PageDown 
-| Switch to next opened editor
-						
+a|kbd:[Alt + &#8594]
+|Similar Alt + &#8592; but opens the next editor
 
-					
-				
+a|kbd:[Ctrl+Q]
+|Go to editor and the position in this editor where the last edit was done
+
+a|kbd:[Ctrl + PageUp] 
+|Switch to previous opened editor
+
+a|kbd:[Ctrl + PageDown] 
+|Switch to next opened editor
+
 |===
-		
-
-
-	
 

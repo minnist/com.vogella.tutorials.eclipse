@@ -1,31 +1,15 @@
-
 == Start Java programs
 
-.Table Title
+.Running programs
 |===
-
-	=== Running programs
-			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-				<colspec colname='c1' colwidth="1*"/>
-				<colspec colname='c2' colwidth="3*"/>
-				
+|Shortcut |Description
 					
-|Shortcut
-|Description
-					
-				
-				
-					
-|Ctrl + F11
+a|kbd:[Ctrl + F11]
 |Run last launched
 					
 					
-|Alt + Shift + X, J
+a|kbd:[Alt + Shift + X, J]
 |Run current selected class as Java application
-					
-				
-			
-|===
-	
 
+|===
 

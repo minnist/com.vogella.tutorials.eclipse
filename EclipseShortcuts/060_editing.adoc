@@ -5,226 +5,123 @@ The following lists contains useful keyboard shortcuts if you are inside your Ja
 |===
 |Shortcut |Description
 
-|Ctrl + 1
+a|kbd:[Ctrl + 1]
 |Quickfix; result depending on cursor position
 
-|Ctrl + Space
+a|kbd:[Ctrl + Space]
 |Content assist/ code completion
 
-|Ctrl + T
+a|kbd:[Ctrl + T]
 |Show the inheritance tree of the current Java class or method.
 
-|Ctrl + O 
+a|kbd:[Ctrl + O]
 |Show all methods of the current class, press Ctrl + O again to show the inherited methods.
 
-|Ctrl + M
+a|kbd:[Ctrl + M]
 |Maximize active editor or view
 
-|Ctrl + Shift + F
+a|kbd:[Ctrl + Shift + F]
 |Format source code
 
-|Ctrl + I
+a|kbd:[Ctrl + I]
 |Correct indentation, e.g.,  format tabs/whitespaces in code 
 
-|Ctrl + F
+a|kbd:[Ctrl + F]
 |Opens the find dialog  
 
-|Shift + Enter
+a|kbd:[Shift + Enter]
 |Adds a link break at the end of the line
 
-|Ctrl + Shift + O
+a|kbd:[Ctrl + Shift + O]
 |Organize the imports; adds missing import statements and removes unused ones
 
-|kbd:[Alt+Shift+Z] 
+a|kbd:[Alt+Shift+Z] 
 | Wrap the select block of code into a block, e.g. try/catch.
 
 |===
 
-.Table Title
+.Cursor navigation and text selection
 |===
+|Shortcut |Description
 
-=== Cursor navigation and text selection
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*" />
-<colspec colname='c2' colwidth="3*" />
+a|kbd:[Ctrl + &#8592;] or kbd:[Ctrl + &#8594;]
+|Move one text element in the editor to the left or right
 
+a|kbd:[Ctrl + &#8593;] or kdb:[&#8595;]
+|Scroll up / down a line in the editor
 
-Shortcut
-Description
+a|kbd:[Ctrl + Shift + P]
+|Go to the matching bracket
 
+a|kbd:[Shift + Cursor movement]
+|Select text from the starting position of the cursor
 
+a|kbd:[Alt + Shift &#8593; / &#8595;]
+|Select the previous / next syntactical element
 
-
-Ctrl + &#8592; or Ctrl + &#8594;
-Move one text element in the editor to the left or right
-
-
-
-Ctrl + &#8593; or &#8595; 
-Scroll up / down a line in the editor
-
-
-
-Ctrl + Shift + P
- Go to the matching bracket
-
-
-Shift + Cursor movement
-Select text from the starting position of the cursor
-
-
-
-
-Alt + Shift &#8593; / &#8595;
-Select the previous / next syntactical element
-
-
-Alt + Shift  &#8593; / &#8595; / &#8592; / &#8594;
-Extending / reducing the selection of the previous / next
-syntactical element
-
-
-
-
+a|kbd:[Alt + Shift  &#8593; / &#8595; / &#8592; / &#8594;]
+|Extending / reducing the selection of the previous / next syntactical element
 
 |===
 
-.Table Title
+.Copy and move lines
 |===
+|Shortcut |Description
 
-=== Copy and move lines
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*"/>
-<colspec colname='c2' colwidth="3*"/>
+a|kbd:[Ctrl + Alt + &#8595;] 
+|Copy current line below the line in which the cursor is placed
 
+a|kbd:[Ctrl + Alt + &#8593;]
+|Copy current line above the line in which the cursor is placed
 
-Shortcut
-Description
+a|kbd:[Alt + Up]  
+|Move line one line up
 
-
-
-
-Ctrl + Alt + &#8595; 
-Copy current line below the line in which the cursor is
-placed
-
-
-
-
-Ctrl + Alt + &#8593;
-Copy current line above the line in which the cursor is
-placed
-
-
-
-
-Alt + Up  
-Move line one line up
-
-
-Alt + Down 
-Move line one line down
-
-
+a|kbd:[Alt + Down] 
+|Move line one line down
 
 |===
 
-.Table Title
+.Delete
 |===
+|Shortcut |Description
 
-=== Delete
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*"/>
-<colspec colname='c2' colwidth="3*"/>
+a|kbd:[Ctrl + D]
+|Deletes line
 
+a|kbd:[Ctrl + Shift + DEL]
+|Delete until end of line
 
-Shortcut
-Description
+a|kbd:[Ctrl + DEL]
+|Delete next element
 
-
-
-
-
-Ctrl + D
-Deletes line
-
-
-Ctrl + Shift + DEL
-Delete until end of line
-
-
-Ctrl + DEL
-Delete next element
-
-
-Ctrl + BACKSPACE
-Delete previous element
-
-
+a|kbd:[Ctrl + BACKSPACE]
+|Delete previous element
 
 |===
 
-.Table Title
+.Create new lines
 |===
+|Shortcut |Description
 
-=== Create new lines
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*"/>
-<colspec colname='c2' colwidth="3*"/>
+a|kbd:[Shift + Enter] 
+|Adds a blank line below the current line and moves the cursor to the new line. 
+The difference between a regular enter is that the currently line is unchanged, independently of the position of the cursor.
 
-
-Shortcut
-Description
-
-
-
-
-Shift + Enter 
-Adds a blank line below the current line and moves the
-cursor to the
-new line. The difference between a regular enter is
-that the currently line is unchanged, independently of the
-position of the cursor.
-
-
-
-
-Ctrl+Shift+Enter 
-Same as Shift + Enter but above
-
-
-
+a|kbd:[Ctrl+Shift+Enter] 
+|Same as Shift + Enter but above
 
 |===
 
-.Table Title
+.Variable assignment
 |===
+|Shortcut |Description
 
-=== Variable assignment
-<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-<colspec colname='c1' colwidth="1*"/>
-<colspec colname='c2' colwidth="3*"/>
+a|kbd:[Ctrl + 2, L]
+|Assign statement to new local variable
 
-
-Shortcut
-Description
-
-
-
-
-
-Ctrl + 2, L
-Assign statement to new local variable
-
-
-Ctrl + 2, F
-Assign statement to new field 
-
-
-
+a|kbd:[Ctrl + 2, F]
+|Assign statement to new field 
 
 |===
-
-
-
 

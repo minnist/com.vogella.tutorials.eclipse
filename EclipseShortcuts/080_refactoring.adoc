@@ -1,38 +1,17 @@
-
-
 == Refactoring
 
-.Table Title
+.Refactoring
 |===
-
-	=== Refactoring
-			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-				<colspec colname='c1' colwidth="1*"/>
-				<colspec colname='c2' colwidth="3*"/>
-				
+|Shortcut |Description
 					
-|Shortcut
-|Description
-					
-				
-				
-					
-|Alt + Shift + R 
+a|kbd:[Alt + Shift + R]
 |Rename
 					
-					
-|Ctrl + 2, R
+a|kbd:[Ctrl + 2, R]
 |Rename locally (in file), faster than Alt + Shift + R
-						
 					
-					
-|Alt + Shift + T
+a|kbd:[Alt + Shift + T]
 |Opens the context-sensitive refactoring menu, e.g., displays
-						
-					
-
-				
 			
 |===
-	
 

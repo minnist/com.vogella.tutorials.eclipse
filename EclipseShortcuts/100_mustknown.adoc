@@ -1,72 +1,41 @@
 == Minimum
-	The following shortcuts are the absolute minimum a developer
-		should be familiar with to work efficient in Eclipse.
 
-.Table Title
+The following shortcuts are the absolute minimum a developer
+should be familiar with to work efficient in Eclipse.
+
+.Must known shortcuts
 |===
-
-	=== Must known shortcuts
-			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-				<colspec colname='c1' />
-				<colspec colname='c2' />
-				
+|Shortcut |Description
 					
-|Shortcut
-|Description
-					
-				
-				
-					
-|Ctrl + S
+a|kbd:[Ctrl + S]
 |Saves current editor
 					
+a|kbd:[Ctrl + 1]
+|Quickfix; shows potential fixes for warnings, errors or shows possible actions
 					
-|Ctrl + 1
-|Quickfix; shows potential fixes for warnings, errors or
-							shows possible actions
-						
-					
-					
-|Ctrl + Space
+a|kbd:[Ctrl + Space]
 |Content assist/ code completion 
-					
-					
-|Ctrl + Q 
-|Goes to the last edited position
-						
-					
-					
-|Ctrl+ D
-|Deletes current line in the editor
-						
-					
-					
-|Ctrl + Shift + O
-|Adjusts the imports statements in the current Java source
-							file
-						
-					
-					
-|Ctrl + 2, L or F 
-|Assign statement to new local variable or field
-						
-					
 
+a|kbd:[Ctrl + Q] 
+|Goes to the last edited position
 					
-|Ctrl + Shift + T
+a|kbd:[Ctrl+ D
+|Deletes current line in the editor
+					
+a|kbd:[Ctrl + Shift + O
+|Adjusts the imports statements in the current Java source file
+					
+a|kbd:[Ctrl + 2, L or F] 
+|Assign statement to new local variable or field
+					
+a|kbd:[Ctrl + Shift + T]
 |Open Type Dialog
 					
-					
-|Ctrl + O
+a|kbd:[Ctrl + O]
 |Shows quick outline of a class
 					
-					
-|Ctrl + F11
+a|kbd:[Ctrl + F11]
 |Run last launched application
-					
-
-				
 			
 |===
-	
 

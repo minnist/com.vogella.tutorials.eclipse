@@ -1,5 +1,6 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
+include 'EclipseZest'
 include 'EclipseWTP'
 include 'EclipseShortcuts'
 include 'EclipseServerIntegration'

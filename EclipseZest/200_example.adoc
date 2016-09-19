@@ -1,0 +1,43 @@
+== Your first Zest Project
+
+=== Getting started
+
+Create a new Eclipse RCP application "de.vogella.zest.first".
+Use
+the
+"Eclipse RCP with a view" as a template.
+Add
+"org.eclipse.zest.core"
+and "org.eclipse.zest.layouts" as
+dependencies
+to your MANIFEST.MF.
+
+Change the code of "View.java" to the following. This code
+creates a simple graph and connects its elements.
+
+[source,java]
+----
+include::res/first/View.java[]
+----
+
+Run you application and you should see the graph. 
+
+image::simple10.gif[]
+
+=== Select layout manager via a command
+
+Create a
+http://www.vogella.com/tutorials/EclipseCommands/article.html[command]
+with the following default handler
+"de.vogella.zest.first.handler.ChangeLayout" which will change
+the
+layout for the graph. Assign the command to the menu.
+
+[source,java]
+----
+include::res/first/ChangeLayout.java[]
+----
+
+Run your application, if you select your command the layout of
+your view should change.
+

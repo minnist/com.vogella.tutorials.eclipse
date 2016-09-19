@@ -1,0 +1,15 @@
+== Tips and Tricks
+
+=== Disable that nodes can be moved manually
+
+By default the user can move the nodes in Zest. To disable
+this
+you have to extend the Graph. 
+
+[source,java]
+----
+include::res/move/NonMovableGraph.java[]
+----
+
+The usage is demonstrated in project "de.vogella.zest.movenodes".
+	

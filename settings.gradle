@@ -1,5 +1,6 @@
 rootProject.name = 'com.vogella.tutorials.eclipse'
 
+include 'OSGiNativeCode'
 include 'Mylyn'
 include 'EclipseZest'
 include 'EclipseWTP'

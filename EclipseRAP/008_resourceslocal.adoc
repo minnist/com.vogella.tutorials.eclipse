@@ -1,0 +1,12 @@
+== Links and Literature
+
+=== Eclipse RAP
+		
+http://www.eclipse.org/rap[Eclipse RAP homepage]
+		
+http://wiki.eclipse.org/RAP[Eclipse RAP Wiki]
+		
+http://wiki.eclipse.org/RAP_Theming[Eclipse RAP Theming Wiki]
+		
+http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax2/[Eclipse RAP article Part from IBU]
+

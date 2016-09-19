@@ -1,0 +1,50 @@
+== Theming
+
+=== Overview
+
+A Eclipse RAP application look similar to a Eclipse RCP
+application running in a browser. While this is cool, it is not
+necessary always what you want if you develop a web application.
+
+ Eclipse RAP therefore provides the possibility to change the
+look of the application via theming. Themes can be defined in css
+like
+files. The following will give an demonstration how to do this.
+
+=== Example
+
+Create a new Eclipse RAP project "de.vogella.rap.theming". Use
+the "RAP Mail Template" as template.  
+Create a new folder "themes" in your project. 
+
+Add the directory themes to your build.properties. Otherwise
+the files from themes will not get included in an exported product.
+
+image::theming08.gif[]
+
+Add the extension point "org.eclipse.rap.ui.themes". Use the
+following settings. 
+
+image::theming10.gif[]
+
+Create now the following file "theme.css" in the folder themes.
+
+[source,text]
+----
+include::res/themes/theme.css[]
+----
+
+Add now the "org.eclipse.rap.ui.branding" extension point which
+the following settings. Important is the servletName "rap" as this is
+used in your runtime configuration, your entrypoint and the theme you
+want to use.  
+
+image::theming20.gif[]
+
+This will result in the following rap application display.
+
+image::theming30.gif[]
+
+For additional properties in the style sheet check the RAP
+Theming Wiki (link below). 
+

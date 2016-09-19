@@ -1,0 +1,140 @@
+== Exercise: Create and run a servlet
+
+=== Target
+
+In this exercise you create a servlet
+which works as a webpage
+counter. This
+servlet keeps track of the
+number of visitors of a
+webpage. The
+servlet persists the number
+of visitors in a text
+file.
+
+=== Create web project
+
+Create a
+new
+_Dynamic Web Project_
+called
+_com.vogella.web.filecounter_
+by selecting
+menu:File[New > Other... > Web > Dynamic Web Project].
+
+image::wtp_first_project10.png[]
+
+image::wtp_first_project20.png[]
+
+Press twice the
+btn:[Next]
+button and select the
+_Generate web.xml deployment descriptor_
+on the last page.
+
+image::wtp_first_project30.png[]
+
+Afterwards press the
+btn:[Finish]
+button.
+
+If Eclipse asks you, to switch to the
+_Java EE Perspective_
+answer yes.
+
+A new project has been created with the standard structure of
+a
+Java
+web application. The
+_WEB-INF/lib_
+directory holds all
+the JAR files that the Java web
+application
+requires.
+
+=== Creating Data Access Object
+
+Create a new package called
+_com.vogella.web.filecounter.dao_.
+
+Create the following new Java class to read and write the
+counter value to and from the file.
+
+[source,java]
+----
+include::res/counter/FileDao.java[]
+----
+
+=== Creating the Servlet
+
+Create a servlet. Right-click on your project and select
+menu:New[Servlet].
+
+Enter the following data.
+
+image::wtp_first_project40.png[]
+
+image::wtp_first_project50.png[]
+
+Press btn:[finish].
+
+You could also create a servlet without the wizard. The wizard
+creates a Java class
+which extends the
+`javax.servlet.http.HttpServlet`
+and
+adds the servlet
+settings to the
+_web.xml_
+file.
+
+Enter the following code.
+
+[source,java]
+----
+include::res/counter/FileCounter.java[]
+----
+
+This code will read the counter from a file on the server and
+return plain text to the browser. The servlet will increase the
+counter if the user was inactive for 5 seconds.
+
+=== Deployment of the servlet
+
+You application must be deployed to the server and started there.
+Select your servlet or your project, right-click on it and select
+menu:Run As[Run on Server]
+from the context menu and select your existing server.
+
+image::wtp_first_project60.png[]
+
+Ensure your servlet is selected to run on the server.
+
+image::wtp_first_project70.png[]
+
+NOTE: In case you get the error "The Tomcat server configuration at
+\Servers\Tomcat v7.0 Server at localhost-config is missing. Check
+the server for errors.", simply delete the existing server
+configuration and create a new one.
+
+Press the btn:[Finish] button.
+
+=== Validate the deployment
+
+If the deployment was successfully you should be able to
+access
+your servlet via the following URL:
+http://localhost:8080/com.vogella.web.filecounter/FileCounter
+
+The servlet you return the number of times it was accessed. If
+you
+wait 5 seconds and
+refresh the browser, the
+number should
+increase.
+
+image::wtp_first_project80.png[]
+
+Congratulations. You created your first working servlet with
+Eclipse WTP!
+

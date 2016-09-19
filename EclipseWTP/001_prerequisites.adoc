@@ -1,0 +1,10 @@
+== Pre-requisites
+
+If you are completely new to Java web
+development, you may want to
+read
+http://www.vogella.com/tutorials/JavaWebTerminology/article.html[Introduction to Java Web development tutorial].
+
+If you are completely new to the Eclipse IDE, please see the
+http://www.vogella.com/tutorials/Eclipse/article.html[Eclipse IDE tutorial.
+

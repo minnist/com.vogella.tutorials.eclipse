@@ -1,0 +1,12 @@
+== Server integration
+
+To communicate wit a server, typically Eclipse RCP clients uses one of the following technologies to communicate.
+
+* REST based services
+* SOAP based services
+* RMI
+* HTTPRemoteInvoker (Spring)
+
+As REST is a de-facto standard based on web technologies, it is recommend to this approach. A very efficient
+library for accessing REST based services is the Retrofit library.
+

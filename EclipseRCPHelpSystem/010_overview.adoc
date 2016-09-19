@@ -1,0 +1,147 @@
+== Eclipse Help
+
+=== Overview
+
+Eclipse has a build-in help system which allows to start and
+access
+the help system directly from your Eclipse RCP application. The
+Eclipse help system is based on HTML, the "org.eclipse.help.toc"
+extension points and additional XML files which point to the HTML
+files.
+
+Via the extension point you describe the first level structure
+and point to XML files. These XML files contain references to the
+relevant HTML files.
+
+Typically help content is delivered via separate plug-ins. To
+use help
+in your Eclipse RCP project either add the following plug-ins and
+their dependencies to your
+product:
+
+* org.eclipse.help.ui
+* org.eclipse.help.webapp   
+* org.eclipse.equinox.http.jetty   
+or if you product is feature based add the
+`org.eclipse.help`
+feature
+and
+`org.eclipse.ui.forms`
+plug-in to your product
+configuration file.
+
+Eclipse defines several predefined commands which you can use in your
+RCP application.
+
+* "org.eclipse.ui.help.displayHelp" - Opens the help    
+* "org.eclipse.ui.help.helpSearch" - Open the Search
+* "org.eclipse.ui.help.dynamicHelp" - Opens the Help specific for the current selection if this is configured in the application
+
+=== Extension point
+
+The following shows an example of an extension for
+"org.eclipse.help.toc". The toc entry which has the primary="true"
+flag set will be treated as a main entry in the help, all others will
+be treated as subtopics. Topics not flagged as "primary" will not
+show up in the help hierarchy unless they are linked to from at least
+one
+primary toc file. The file attribute points to the XML file which
+describes the content.
+
+[source,xml]
+----
+include::res/plugin/plugin.xml[]
+----
+
+The primary toc file defines anchor points to which other toc
+files can contribute content. For example the following "toc.xml"
+defines two anchor points "gettingstarted" and "samples". This
+approach is called "bottom-up composition". Eclipse help files can
+also be build with a "top-down nesting" approach but this tutorial
+not only use "bottom-up composition". "Bottom-up composition" allow
+that the top level toc does not know who is extending its anchors.
+New plug-ins could add new content to these anchors without the need
+to change the primary toc. This concept is very close to the
+extension point mechanism in Eclipse.
+
+[source,text]
+----
+include::res/plugin/toc.txt[]
+----
+
+The following shows the non primary ""tocgettingstarted.xml"
+file. Via the href attribute this toc file links the chapters to
+actual HTML files. The "link_to" attribute points to the anchors of
+the primary toc.
+
+[source,text]
+----
+include::res/plugin/tocgettingstarted.txt[]
+----
+
+=== Internationalization
+
+To support several languages in your help plug-in place the
+content into a special directory into your plug-in called
+"nl/language/country" thereby country is optional. For example to
+provide English and German content use "nl/en" and "nl/de".
+
+The help system will first search in the "nl/language/country"
+directory, afterwards in the "nl/language" directory and if it
+does
+not find anything there then it searches in the root folder of
+the
+plug-in directory.
+
+Typically translations of help content are provides via
+Fragment projects for the primary help plug-in. At runtime the host
+plug-in and its fragments are merged to one.
+
+=== Generating Eclipse Help
+
+Writing the HTML and XML files for the Eclipse help can be time
+consuming. One frequently used approach is to write Docbook files.
+Docbook source files can be converted into PDF, HTML and
+Eclipse help
+files via the Docbook XSLT stylesheets.
+
+=== Context sensitive help
+
+You can add context sensitive help to your application via the
+extension point "org.eclipse.help.contexts". This extension point
+defines a file for a certain plug-in.
+
+[source,text]
+----
+include::res/context/extension.txt[]
+----
+
+This file defines Id's and links to the HTML pages of the help
+system. The file can be maintained with the specialized "Context Help Editor".
+
+[source,xml]
+----
+include::res/context/contextDefinitionFile.xml[]
+----
+
+To assign these id to your SWT controls you can use the
+following code:
+
+[source,text]
+----
+include::res/context/assignId.txt[]
+----
+
+If the user opens the dynamic help via the command
+"org.eclipse.ui.help.dynamicHelp" then the corresponding help is
+displayed.
+
+=== ActiveHelp
+
+You can link from the help to Eclipse commands. This feature is
+called ActiveHelp and requires that you add a small JavaScript
+snippet
+to your HTML code. You find an example for how to use this in
+the
+Eclipse help. Search for "Active Help".
+

@@ -1,0 +1,18 @@
+== Using the JPA in an OSGi environment
+
+The usage of JPA to access a database, either embedded or standalone, requires a special setup, as you must
+configure JPA to run in an OSGi runtime.
+
+In case JPA should be used within an OSGi environment, e.g., an Eclipse RCP application,
+some rules have to be considered.
+
+* Tell the `PersistenceProvider`, which classloader should be used
+* Place the _persistence.xml_ in the _META-INF_ folder of the bundle, where the `EntityManager` is created
+
+[source,java]
+----
+include::res/osgi/osgi_jpa.java[]
+----
+
+You find an example for this on https://github.com/wolkenschieber/e4JPA[Github].
+

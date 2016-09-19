@@ -1,0 +1,4 @@
+== Eclipse product and export resources
+
+http://square.github.io/retrofit/[Retrofit library to access REST based services]
+

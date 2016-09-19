@@ -1,0 +1,23 @@
+= Eclipse server integration - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 2.2, 06.07.2016
+:docinfodir: ../
+:vgwort: EclipseServerIntegration
+
+[abstract]
+Eclipse server integration
+This tutorial describes options how to integration a server with Eclipse. A 2-tier and 3-tier layer is described.
+	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_jpa.adoc[]
+include::040_serverintegration.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

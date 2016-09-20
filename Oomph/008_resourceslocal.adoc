@@ -1,7 +1,8 @@
 == Oomph resources
 
-https://www.youtube.com/watch?v=a3h76AQQKN0 - Oomph introduction video
+https://www.youtube.com/watch?v=a3h76AQQKN0[Oomph introduction video]
 
-https://www.youtube.com/watch?v=liJh0SOgN_g - Oomph: Eclipse the Way You Want It video
+https://www.youtube.com/watch?v=liJh0SOgN_g[Oomph: Eclipse the Way You Want It video]
 
-https://github.com/diffplug/goomph - Gradle extension to provision an Eclipse IDE
+https://github.com/diffplug/goomph[Gradle extension to provision an Eclipse IDE]
+

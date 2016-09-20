@@ -1,4 +1,4 @@
 == Links and Literature
 	
-http://www.eclipse.org/articles/Article-Forms/article.html - Article about Eclipse Forms
+http://www.eclipse.org/articles/Article-Forms/article.html[Article about Eclipse Forms]
 		

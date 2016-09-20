@@ -1,0 +1,6 @@
+== Links and Literature
+
+=== MAT Resources
+		
+http://community.bonitasoft.com/blog/acquire-heap-dump-mat-memory-analyzer-tool[How to acquire a Heap Dump from MAT]
+	

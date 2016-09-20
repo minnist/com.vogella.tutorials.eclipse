@@ -1,2 +1,5 @@
-[resources_jdtrefactoring]== Eclipse JDT refactoring resources
+[[resources_jdtrefactoring]]
+== Eclipse JDT refactoring resources
+
 http://www.eclipsecon.org/2012/sites/eclipsecon.org.2012/files/How%20To%20Train%20the%20JDT%20Dragon%20combined.pdf[Presentation about JDT extensions from EclipseCon 2012]
+

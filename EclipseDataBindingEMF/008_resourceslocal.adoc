@@ -6,7 +6,7 @@ http://wiki.eclipse.org/index.php/JFace_Data_Binding[Wiki about the JFace Data B
 
 http://tomsondev.bestsolution.at/2009/06/06/galileo-emf-databinding-part-1/[Galileo: EMF-Data Binding – Part 1 from Tom Schindl]
 
-http://tomsondev.bestsolution.at/2009/06/07/galileo-emf-databinding-part-2/[Eclipse EMF Data Binding and the Properties API - Part 2 from Tom Schindl]
+http://tomsondev.bestsolution.at/2009/06/07/galileo-emf-databinding-part-2/[Eclipse EMF Data Binding and the Properties API[Part 2 from Tom Schindl]
 
-http://tomsondev.bestsolution.at/2009/06/08/galileo-emf-databinding-%E2%80%93-part-3/[Setting up a TreeViewer with EMF-Data Binding - Part 3 from  Tom Schindl]
+http://tomsondev.bestsolution.at/2009/06/08/galileo-emf-databinding-%E2%80%93-part-3/[Setting up a TreeViewer with EMF-Data Binding[Part 3 from  Tom Schindl]
 

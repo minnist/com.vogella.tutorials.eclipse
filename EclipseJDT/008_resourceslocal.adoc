@@ -2,13 +2,13 @@
 
 === Eclipse JDT Resources
 
-http://www.eclipsecon.org/2005/presentations/EclipseCON2005_Tutorial29.pdf[http://www.eclipsecon.org/2005/presentations/EclipseCON2005_Tutorial29.pdf - Presentation about using Eclipse JDT]
+http://www.eclipsecon.org/2005/presentations/EclipseCON2005_Tutorial29.pdf[http://www.eclipsecon.org/2005/presentations/EclipseCON2005_Tutorial29.pdf[Presentation about using Eclipse JDT]
 
 http://sdqweb.ipd.kit.edu/wiki/JDT_Tutorial:_Creating_Eclipse_Java_Projects_Programmatically[Creating Java projects with JDT API]
 
-http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html[http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html - Java Code Manipulation AST]
+http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html[http://www.eclipse.org/articles/article.php?file=Article-JavaCodeManipulation_AST/index.html[Java Code Manipulation AST]
 
-http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html[http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html - Article about using the JDT Refactoring API]
+http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html[http://www.eclipse.org/articles/article.php?file=Article-Unleashing-the-Power-of-Refactoring/index.html[Article about using the JDT Refactoring API]
 
-http://www.ibm.com/developerworks/opensource/library/os-ast/[http://www.ibm.com/developerworks/opensource/library/os-ast/ - IBM Article about the AST]
+http://www.ibm.com/developerworks/opensource/library/os-ast/[http://www.ibm.com/developerworks/opensource/library/os-ast/[IBM Article about the AST]
 

@@ -2,9 +2,9 @@
 
 === Eclipse Resources
 		
-http://www.amazon.com/dp/3943747042 - Eclipse IDE book from Lars Vogel
+http://www.amazon.com/dp/3943747042[Eclipse IDE book from Lars Vogel]
 		
-http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ - Eclipse Plug-in Development FAQ
+http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ[Eclipse Plug-in Development FAQ]
 		
-http://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html - SWT Graphics
+http://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html[SWT Graphics]
 

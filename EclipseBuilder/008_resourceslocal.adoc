@@ -2,7 +2,7 @@
 	
 === Eclipse Builder
 		
-http://www.eclipse.org/articles/Article-Builders/builders.html - Eclipse Builder
+http://www.eclipse.org/articles/Article-Builders/builders.html[Eclipse Builder]
 
-http://codeandme.blogspot.de/2012/10/integrating-custom-builder.html - Creating a custom builder
+http://codeandme.blogspot.de/2012/10/integrating-custom-builder.html[Creating a custom builder]
 		

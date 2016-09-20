@@ -1,6 +1,6 @@
 == Links and Literature
 	
-http://wiki.eclipse.org/E4[Eclipse E4 - Wiki]
+http://wiki.eclipse.org/E4[Eclipse E4 Wiki]
 	
 http://www.vogella.com/tutorials/EclipseRCP/article.html[Eclipse RCP]
 	

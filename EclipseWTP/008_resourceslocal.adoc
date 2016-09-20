@@ -1,5 +1,5 @@
-
 == Web development resources
+
 http://www.vogella.com/tutorials/JavaWebTerminology/article.html[Introduction to Java Web development]
 	
 http://www.vogella.com/tutorials/JavaServerFaces/article.html[JavaServer Faces (JSF) development tutorial]

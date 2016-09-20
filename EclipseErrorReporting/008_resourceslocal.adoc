@@ -1,8 +1,8 @@
 == Links and Literature
 
-https://dev.eclipse.org/mhonarc/lists/epp-dev/msg03808.html Email about integration AERI into RCP
+https://dev.eclipse.org/mhonarc/lists/epp-dev/msg03808.html[Email about integration AERI into RCP]
 
-https://plus.google.com/events/cjr3okskd4oo8qhlvfak9nvicvs Video about integration
+https://plus.google.com/events/cjr3okskd4oo8qhlvfak9nvicvs[Video about integration]
 
-https://wiki.eclipse.org/EPP/Logging AERI logging
+https://wiki.eclipse.org/EPP/Logging[AERI logging]
 

@@ -7,3 +7,4 @@ https://projects.eclipse.org/projects/tools.buildship[Gradle Eclipse (Buildship)
 http://www.slideshare.net/simonscholz/eclipse-buildship-jug-hamburg[Slides of the Eclipse Buildship Talk at a Java User Group meetup in Hamburg 2015]
 
 https://dev.eclipse.org/mailman/listinfo/buildship-dev[buildship-dev mailing list]
+

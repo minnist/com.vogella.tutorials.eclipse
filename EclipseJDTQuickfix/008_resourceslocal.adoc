@@ -1,12 +1,12 @@
- - resources_jdtquickfixes== Eclipse JDT Resources
+[resources_jdtquickfixes== Eclipse JDT Resources
 
-http://www.eclipsecon.org/2012/sites/eclipsecon.org.2012/files/How%20To%20Train%20the%20JDT%20Dragon%20combined.pdf - Presentation about JDT extensions from EclipseCon 2012
+http://www.eclipsecon.org/2012/sites/eclipsecon.org.2012/files/How%20To%20Train%20the%20JDT%20Dragon%20combined.pdf[Presentation about JDT extensions from EclipseCon 2012]
 
-http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Fguide%2Fjdt_api_contributing_a_cleanup.htm Contributing a cleanup action
+http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Fguide%2Fjdt_api_contributing_a_cleanup.htm Contributing a cleanup action]
 
-http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Fguide%2Fjdt_api_contributing_a_cleanup.htm Contributing a quick fix and quick assists for Java code
+http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Fguide%2Fjdt_api_contributing_a_cleanup.htm Contributing a quick fix and quick assists for Java code]
 
-http://www.jave.de/eclipse/poormansquickfix/ - Plug-in for creating custom quickfixes based on regular expressions
+http://www.jave.de/eclipse/poormansquickfix/[Plug-in for creating custom quickfixes based on regular expressions]
 
-https://jaxenter.de/eclipse-jdt-um-eigene-quickfixes-erweitern-9425 - Create custom quick fixes for Eclipse JDT (German)
+https://jaxenter.de/eclipse-jdt-um-eigene-quickfixes-erweitern-9425[Create custom quick fixes for Eclipse JDT (German)]
 

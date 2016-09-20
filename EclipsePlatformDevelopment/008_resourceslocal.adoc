@@ -2,7 +2,7 @@
 	
 http://www.vogella.com/tutorials/EclipsePlugin/article.html[Tutorial about Eclipse plug-in development]
 	
-https://wiki.eclipse.org/Platform_UI/How_to_Contribute[Eclipse Wiki - How to contribute to platform]
+https://wiki.eclipse.org/Platform_UI/How_to_Contribute[Eclipse Wiki How to contribute to platform]
 	
 https://www.eclipse.org/articles/Article-API-Use/index.html[API definition and usage in the Eclipse platform project]
 	

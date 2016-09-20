@@ -18,9 +18,9 @@
 		
 			If you have the Git tooling for Eclipse installed, you can clone the
 			repository via
-			menu:File[Import > Git > Projects from Git</guisubmenu>
+			menu:File[Import > Git > Projects from Git]
 
-			</menuchoice>
+			
 			. Select
 			_URI_
 			in the next wizard page and press the

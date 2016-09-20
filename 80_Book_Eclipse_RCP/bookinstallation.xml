@@ -69,10 +69,8 @@
                     need
                     to know how to use the Eclipse update manager.
                     Open
-                    menu:
-                        [Help</guimenu>
-                        <guisubmenu>Install new software...</guisubmenu>
-                    </menuchoice>
+                    menu:[Help > Install new software...]
+                    
                     for this.
                 
             

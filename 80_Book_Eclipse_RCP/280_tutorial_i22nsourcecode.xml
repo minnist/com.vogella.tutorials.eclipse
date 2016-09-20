@@ -1,4 +1,4 @@
-<chapter id="tutorial_i22n_source">
+[[tutorial_i22n_source">
 == Optional exercise: Internationalization for the source code
 
 
@@ -78,9 +78,9 @@ include::res/i18n/bundle2.properties[]
 		NOTE:
 			
 				The translations for the application model as created in
-				<<tutorial_i22n" />
+				<<tutorial_i22n>>
 				cannot be moved to this new plug-in. See
-				<<tutorial_i22n_note" />
+				<<tutorial_i22n_note>>
 				as reminder.
 			
 		
@@ -156,7 +156,7 @@ include::res/i18n/TodoOverviewPart.java[]
 === Test your translation
 		
 			Repeat the test as described in
-			<<tutorial_i22n_translation_model_test" />
+			<<tutorial_i22n_translation_model_test>>
 			but this time ensure that your source code is correctly translated.
 		
 	

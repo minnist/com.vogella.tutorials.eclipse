@@ -1,4 +1,4 @@
-<chapter id="tutorial_imageloader">
+[[tutorial_imageloader">
 == Optional exercise: Create an image loader service
 
 === Target of this exercise
@@ -59,7 +59,7 @@
 		
 			Ensure that the plug-in is activated and that OSGi DS annotation processing is active.
 			similar to
-			<<tutorial_e4services_enable_ds_annotations" />
+			<<tutorial_e4services_enable_ds_annotations>>
 			.
 		
 
@@ -159,9 +159,9 @@ include::res/service/BundleResourceLoaderImpl.java[]
 			The following code demonstrates the usage of
 			your service based on the path name from above.
 			See
-			<<swt_overview" />
+			<<swt_overview>>
 			and
-			<<jface_localresoucemanager" />
+			<<jface_localresoucemanager>>
 			to learn more about the code snippet.
 		
 		

@@ -1,4 +1,4 @@
-<chapter id="tutorial_databindingtreeviewer_exercise">
+[[tutorial_databindingtreeviewer_exercise">
 == Exercise: Data Binding for the tree viewers
 
 === Implement data binding for the tree viewer of your tags
@@ -108,7 +108,7 @@ include::res/databinding/TagOverviewPart.java[]
 			
 				Currently the selection of the tree is not sent to the
 				TodoDetailsPart. This will be implemented in
-				<<tutorial_usingeselectionservice" />
+				<<tutorial_usingeselectionservice>>
 				.
 			
 		

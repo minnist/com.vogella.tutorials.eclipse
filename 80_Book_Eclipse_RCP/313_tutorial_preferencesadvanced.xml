@@ -1,4 +1,4 @@
-<chapter id="tutorial_preferences_application">
+[[tutorial_preferences_application">
 == Exercise: Using preferences in a handler and in a part
 
 === Target
@@ -50,7 +50,7 @@ include::res/preferences/EnterCredentialsHandler.java[]
 				`@Preference`
 				annotation
 				is not yet released as official API. See
-				<<e4overview_api" />
+				<<e4overview_api>>
 				.
 			
 		

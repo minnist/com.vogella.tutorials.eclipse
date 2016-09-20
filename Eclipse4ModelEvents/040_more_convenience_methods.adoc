@@ -23,7 +23,7 @@ This code demonstrates how the existence of a certain tag (`IPresentationEngine.
 
 The _asIterable_ method can be used to get an `Iterable` of an event's property.
 
-Let's take the example from <<position_event_tag" /> , where we listened to the `UIEvents.ElementContainer.TOPIC_CHILDREN` event and checked the new position.
+Let's take the example from <<position_event_tag>> , where we listened to the `UIEvents.ElementContainer.TOPIC_CHILDREN` event and checked the new position.
 
 This sample lacks in case we add more than one child to the `MPartStack`, so that we have the `UIEvents.EventTypes.ADD_MANY` event type.
 In this case nothing would be printed to the system out, because we have a list in the `EventTags.NEW_VALUE` property rather than an `MPart`.

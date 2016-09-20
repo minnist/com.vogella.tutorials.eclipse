@@ -1,4 +1,4 @@
-<chapter id="exercisecomboviewer">
+[[exercisecomboviewer">
 == Optional exercise: Using ComboViewer
 	
 === Target
@@ -108,7 +108,7 @@ include::res/viewer/TodoDeletionPart.java[]
 				correct (they should be based on the
 				_id_
 				field, see
-				<<services_todo_tostringhashcode" />
+				<<services_todo_tostringhashcode>>
 				).
 			
 		

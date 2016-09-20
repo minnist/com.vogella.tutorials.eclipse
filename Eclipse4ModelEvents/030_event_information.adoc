@@ -36,7 +36,7 @@ NOTE: The `label` 	is an XML attribute and can be found is the source of your _A
 === ELEMENT event tag
 
 The `ELEMENT` event tag in general is the model element, which is concerned in the event.
-For an example see <<active_sample_event" />
+For an example see <<active_sample_event>>
 
 === NEW_VALUE and OLD_VALUE event tags
 
@@ -74,7 +74,7 @@ image::./images/event_type_convenience.png[Convenience methods for event types.]
 
 The `isADD(Event)` and `isREMOVE(Event)` methods apply for both single and many, e.g., ADD and ADD_MANY)
 
-			For an example see <<position_event_tag" />
+			For an example see <<position_event_tag>>
 
 === POSITION event tag
 
@@ -151,7 +151,7 @@ The
 `ELEMENT`
 event tag in general is the model element, which is
 concerned in the event. For an example see
-<<active_sample_event" />
+<<active_sample_event>>
 
 
 
@@ -262,7 +262,7 @@ single and many, e.g., ADD and ADD_MANY)
 
 
 For an example see
-<<position_event_tag" />
+<<position_event_tag>>
 
 
 

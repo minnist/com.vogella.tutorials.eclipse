@@ -42,8 +42,9 @@ image::contexthierarchy_withosgi12.png" />
 		field of an Eclipse part.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/field.java[]
+[source,java]
+----
+include::res/diosgi/field.java[]
 ----
 	
 	Alternatively you can inject the service into a method of such a Eclipse part as
@@ -51,8 +52,9 @@ image::contexthierarchy_withosgi12.png" />
 		listings.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/diosgi/method.java[]
+[source,java]
+----
+include::res/diosgi/method.java[]
 ----
 	
 

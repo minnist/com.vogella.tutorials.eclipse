@@ -35,7 +35,7 @@ include::res/viewer/filter.java[]
 		
 		
 			See
-			<<jfacetable_comparator" />
+			<<jfacetable_comparator>>
 			for information how to implement this.
 		
 	

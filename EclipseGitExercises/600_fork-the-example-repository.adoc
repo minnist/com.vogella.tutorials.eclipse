@@ -57,7 +57,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/fork_button.png" />
+					<imagedata fileref="./images/fork_button.png>>
 				
 				<textobject>
 					<phrase>Fork Help</phrase>
@@ -79,7 +79,7 @@
 		
 			<inlinemediaobject>
 				<imageobject>
-					<imagedata fileref="./images/fork-button2.png" />
+					<imagedata fileref="./images/fork-button2.png>>
 				
 				<textobject>
 					<phrase>Fork Button</phrase>

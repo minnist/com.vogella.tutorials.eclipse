@@ -1,4 +1,4 @@
-<chapter id="tutorial_usingpartservice">
+[[tutorial_usingpartservice">
 == Exercise: Enable handlers and avoiding data loss
 
 
@@ -30,7 +30,7 @@ include::res/snippets/cansave.txt[]
 		
 		
 			Similar to
-			<<tutorial_usingpartservice_save" />
+			<<tutorial_usingpartservice_save>>
 			enable the deletion handler for todos only if a
 			`Todo`
 			is selected.

@@ -1,4 +1,4 @@
-<chapter id="tutorial_dynamicmenus">
+[[tutorial_dynamicmenus">
 == Optional exercise: Creating dynamic menu entries
 	
 		(((DynamicMenuContribution,Example)))
@@ -11,7 +11,7 @@
 			service. For this you use the
 			_DynamicMenuContribution_
 			model element which was introduced in the
-			<<menuadvanced_dynamic" />
+			<<menuadvanced_dynamic>>
 			chapter.
 		
 	

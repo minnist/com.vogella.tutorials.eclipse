@@ -1,10 +1,10 @@
-<chapter id="tutorial_multipleeditors">
+[[tutorial_multipleeditors">
 == Optional exercise: Implementing multiple editors
 
 === Prerequisites
 		
 			This optional exercise is based on
-			<<tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu>>
 			as it reuses the context menu of the table you created there. If you
 			skipped this exercise, you need to go back and
 			perform the exercise
@@ -33,7 +33,7 @@ include::res/editor/OpenEditorHandlerFirst.java[]
 			created
 			and
 			registered with the SWT table in
-			<<tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu>>
 			.
 		
 		

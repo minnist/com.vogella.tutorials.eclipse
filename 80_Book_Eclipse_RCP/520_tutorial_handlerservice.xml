@@ -1,4 +1,4 @@
-<chapter id="tutorial_usinghandlerservice">
+[[tutorial_usinghandlerservice">
 == Optional exercise: Using handler service
 
 === Enable save in the EditorPart
@@ -69,7 +69,7 @@ include::res/handler/TodoDeletionPart.java[]
 			
 				The handler and command service have not been
 				released as official API. See
-				<<e4overview_api" />
+				<<e4overview_api>>
 				.
 			
 		

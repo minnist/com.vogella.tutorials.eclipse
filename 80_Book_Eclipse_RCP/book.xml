@@ -26,7 +26,7 @@
 		<releaseinfo>Third edition</releaseinfo>
 		<mediaobject role="cover">
 			<imageobject id="cover-image">
-				<imagedata fileref="images/cover.png" align="center" />
+				<imagedata fileref="images/cover.png" align="center>>
 			
 		
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.adoc[]
@@ -74,13 +74,13 @@
 	</part>
 	<part>
 === Setting up an Eclipse RCP development environment
-		<chapter id="javainstallation">
+		[[javainstallation">
 	=== Install Java for Eclipse RCP development
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.adoc[]
 		</chapter>
 
-		<chapter id="eclipseskdinstallationforrcp">
+		[[eclipseskdinstallationforrcp">
 	=== Install Eclipse IDE for RCP development
 			
 				(((Installation)))
@@ -167,13 +167,13 @@
 		=== More about the target platform
 				
 					See
-					<<parttargetplatform" />
+					<<parttargetplatform>>
 					for more information about the target platform configuration.
 				
 			
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/022_deployment.adoc[]
 		</chapter>
-		<chapter id="exportproblems">
+		[[exportproblems">
 	=== Common product export problems
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseProductDeployment/080_problems_export.adoc[]
 		</chapter>
@@ -203,7 +203,7 @@
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/122_uiconcepts.adoc[]
 		</chapter>
 
-		<chapter id="partlivemodeleditor">
+		[[partlivemodeleditor">
 	=== Using the model spy
 
 
@@ -215,7 +215,7 @@
 				The usage of the model spy requires the installation of the
 				Eclipse 4
 				- Core Tools as described in
-				<<tutorial_installation_e4tools" />
+				<<tutorial_installation_e4tools>>
 				.
 			
 
@@ -247,7 +247,7 @@
 				
 					The exact details of applying this
 					modular approach is covered in
-					<<osgipart" />
+					<<osgipart>>
 					.
 				
 			
@@ -268,7 +268,7 @@
 	<part>
 === Using dependency injection
 
-		<chapter id="dependencyinjectionchapter">
+		[[dependencyinjectionchapter">
 	=== The concept of dependency injection
 
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/010_dependencyinjection.adoc[]
@@ -277,7 +277,7 @@
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../DependencyInjection/content/014_dependencyinjection_order.adoc[]
 		</chapter>
 
-		<chapter id="dependencyinjectione4">
+		[[dependencyinjectione4">
 	=== Dependency injection in Eclipse
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseRCP/420_dependencyinjection.adoc[]
 		</chapter>
@@ -449,7 +449,7 @@
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="168_tutorial_comboviewer.adoc[]
 
 
-		<chapter id="jfacefilebrowser">
+		[[jfacefilebrowser">
 	=== Optional exercises: Using tree viewer to build a file explorer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/060_filebrowser_exercise.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../EclipseJFaceTree/065_filebrowser_columns_exercise.adoc[]
@@ -466,7 +466,7 @@
 		=== Learn about the event system
 				
 					See
-					<<part_eventbroker" />
+					<<part_eventbroker>>
 					to learn more about sending out events in your Eclipse application.
 				
 			
@@ -480,7 +480,7 @@
 		=== Creating dynamic menu entries
 				
 					See
-					<<tutorial_dynamicmenus" />
+					<<tutorial_dynamicmenus>>
 					for information about creating and changing application model
 					elements dynamically.
 				
@@ -591,9 +591,9 @@
 				
 					How context functions are implemented as OSGI services is described
 					in
-					<<contextfunctionschapter" />
+					<<contextfunctionschapter>>
 					. The dedicated section
-					<<bestpractices" />
+					<<bestpractices>>
 					summarize the different approaches for communicating inside your
 					application.
 				
@@ -633,10 +633,10 @@
 		=== Code examples for editor implementations
 				
 					How to implement editor like behavior in a part is demonstrated in
-					<<tutorial_editorpartservice" />
+					<<tutorial_editorpartservice>>
 					. An example implementation of multiple editors can be found in
 					exercise
-					<<tutorial_multipleeditors" />
+					<<tutorial_multipleeditors>>
 					.
 				
 			
@@ -719,7 +719,7 @@
 	<part>
 === Extending and modifying the Eclipse context
 
-		<chapter id="chaptereclipsecontext">
+		[[chaptereclipsecontext">
 	=== Accessing and extending the Eclipse context
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ContextUsage/content/020_extendcontext.adoc[]
 		</chapter>
@@ -748,7 +748,7 @@
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4ModelAddons/010_addons.adoc[]
 		</chapter>
 
-		<chapter id="exercise_modeladdonclose">
+		[[exercise_modeladdonclose">
 	=== Exercise: Model add-on to change the close behavior
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./900_customclosehandleraddon_firstpart.adoc[]
 		</chapter>
@@ -963,7 +963,7 @@
 	<part>
 === The renderer framework
 
-		<chapter id="rendererchapter">
+		[[rendererchapter">
 	=== The usage of renderer
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse4Renderer/content/010_renderer.adoc[]
 		</chapter>
@@ -998,7 +998,7 @@
 				It is also possible to extend the application model. This requires knowledge about the Eclipse EMF framework.
 				Describing EMF is currently
 				out of scope for this book. See
-				http://www.vogella.com/tutorials/Eclipse4ExtendModel/article.html">Extending the Eclipse 4 application model
+				http://www.vogella.com/tutorials/Eclipse4ExtendModel/article.html[Extending the Eclipse 4 application model
 				for an introduction into the concepts.
 			
 		</chapter>

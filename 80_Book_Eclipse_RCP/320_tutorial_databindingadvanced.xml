@@ -1,4 +1,4 @@
-<chapter id="tutorial_databindingadvanced">
+[[tutorial_databindingadvanced">
 == Exercise: Data binding for table viewers
 
 === Implement data binding for the table viewer
@@ -71,7 +71,7 @@ include::res/databinding/TodoOverviewPart.java[]
 			
 				Currently the selection of the table is not sent to the
 				TodoDetailsPart. This will be implemented in
-				<<tutorial_usingeselectionservice" />
+				<<tutorial_usingeselectionservice>>
 				.
 			
 		

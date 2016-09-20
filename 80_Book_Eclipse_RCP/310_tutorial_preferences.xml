@@ -1,4 +1,4 @@
-<chapter id="tutorial_preferences">
+[[tutorial_preferences">
 == Exercise: Using preferences in the life cycle class
 
 
@@ -8,7 +8,7 @@
 		
 		
 			You continue to use the dialog which you created in
-			<<tutorial_passworddialog" />
+			<<tutorial_passworddialog>>
 			.
 			In this exercise you modify your life cycle handler
 			so
@@ -88,17 +88,13 @@ include::res/preferences/Manager.java[]
 				_Clear_
 				flag in the
 				menu:
-					[Project</guimenu>
-					<guisubmenu>Run Configurations...</guisubmenu>
-				</menuchoice>
+					[Project[Run Configurations...]
 				is not set. Otherwise your preference data
 				is deleted during the
 				start of the application.
 			
 			
-				<mediaobject>
-					<imageobject>
-						<imagedata fileref="images/deletelaunch_prefs10.png" />
+image::deletelaunch_prefs10.png>>
 					
 					<textobject>
 						<phrase>Clear flag in the run configuration</phrase>

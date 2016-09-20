@@ -24,7 +24,7 @@
 		<releaseinfo>Third edition</releaseinfo>
 		<mediaobject role="cover">
 			<imageobject id="cover-image">
-				<imagedata fileref="images/cover.png" align="center" />
+				<imagedata fileref="images/cover.png" align="center>>
 			
 		
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../001_Books_Shared/legalnotice.adoc[]
@@ -36,13 +36,13 @@
 
 	<part>
 === Setting up an Eclipse RCP development environment
-		<chapter id="javainstallation">
+		[[javainstallation">
 	=== Install Java for Eclipse RCP development
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../Eclipse/016_installationrequirements.adoc[]
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../JavaIntroduction/012_installation.adoc[]
 		</chapter>
 
-		<chapter id="eclipseskdinstallationforrcp">
+		[[eclipseskdinstallationforrcp">
 	=== Install Eclipse IDE for RCP development
 			
 				(((Installation)))

@@ -1,4 +1,4 @@
-<chapter id="tutorial_databinding">
+[[tutorial_databinding">
 == Exercise: Data binding for SWT widgets
 
 === Add new plug-in dependencies to the application plug-in

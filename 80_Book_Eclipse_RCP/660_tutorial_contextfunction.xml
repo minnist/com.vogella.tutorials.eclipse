@@ -1,4 +1,4 @@
-<chapter id="tutorial_contextfunction">
+[[tutorial_contextfunction">
 == Exercise: Create a context function
 
 === Target
@@ -119,7 +119,7 @@ image::activate_pde_ds_annotations.png[Activate DS annotation processing
 			Deactivate your OSGi service for the
 			`ITodoService`
 			which you have created in
-			<<tutorial_e4services_usage" />
+			<<tutorial_e4services_usage>>
 			. You can do this, by
 			To remove this service, deleting the
 			annotation from the
@@ -244,7 +244,7 @@ include::res/contextfunction/service.xml[]
 		
 			If the service still fails ensure that the service property is
 			correctly entered. See
-			<<tutorial_contextfunction_servicekey" />
+			<<tutorial_contextfunction_servicekey>>
 			for details.
 		
 

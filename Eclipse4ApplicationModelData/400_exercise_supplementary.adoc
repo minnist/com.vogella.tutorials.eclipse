@@ -7,7 +7,7 @@ how to use tags and
 persisted state
 data on the application model elements.
 		
-TIP: Use <<recipes_tags" />
+TIP: Use <<recipes_tags>>
 	for information on the tags or look directly at the
 	`IPresentationEngine`
 	interface.

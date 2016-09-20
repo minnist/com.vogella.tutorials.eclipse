@@ -1,4 +1,4 @@
-<chapter id="tutorial_i22n">
+[[tutorial_i22n]]
 == Optional Exercise: Internationalization for the application model
 
 
@@ -74,7 +74,7 @@ image::exercise_appmodel_translation10.png[Using the translation keys in the app
 			using the
 			<parameter class="option">-nl_
 			start parameter as described in
-			<<i18n_nlparameter" />
+			<<i18n_nlparameter>>
 		
 		WARNING:
 			

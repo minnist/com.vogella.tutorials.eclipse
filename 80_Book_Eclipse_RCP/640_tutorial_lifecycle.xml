@@ -1,4 +1,4 @@
-<chapter id="tutorial_lifecycle">
+[[tutorial_lifecycle">
 == Exercise: Life cycle hook and a login screen
 
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"

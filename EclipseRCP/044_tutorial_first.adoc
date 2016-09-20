@@ -31,7 +31,7 @@ image::rcpwizard50.png[]
 ====
 The wizard adds also the _clearPersistedState_ flag to the product configuration file.
 This ensures that changes during development in your application model are always visible. 
-See <<tutorial_clearpesistence_task" /> for more information.
+See <<tutorial_clearpesistence_task>> for more information.
 ====
 
 === Launch your Eclipse application via the product file

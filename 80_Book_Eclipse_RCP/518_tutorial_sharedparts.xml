@@ -1,4 +1,4 @@
-<chapter id="tutorial_using_placeholder">
+[[tutorial_using_placeholder">
 == Exercise: Sharing elements between perspectives
 
 
@@ -6,7 +6,7 @@
 		
 			This tutorial demonstrates how you can share parts between
 			perspectives. You created already an perspective in
-			<<tutorial_using_perspectives" />
+			<<tutorial_using_perspectives>>
 			, this is reused in this exercise.
 		
 	

@@ -1,4 +1,4 @@
-<chapter id="tutorial_usingeselectionservice_deletion">
+[[tutorial_usingeselectionservice_deletion">
 == Optinal exercise: Selection service for deleting data
 
 
@@ -45,7 +45,7 @@ include::res/delete/RemoveTodoHandler.java[]
 				part.
 				You will fix that after you learned about the event bus of
 				Eclipse in
-				<<part_eventbroker" />
+				<<part_eventbroker>>
 				.
 			
 		
@@ -59,7 +59,7 @@ include::res/delete/RemoveTodoHandler.java[]
 		
 		
 			In
-			<<tutorial_commandscontextmenu" />
+			<<tutorial_commandscontextmenu>>
 			you defined a context (popup) menu for your table.
 			As the
 			`RemoveTodoHandler`

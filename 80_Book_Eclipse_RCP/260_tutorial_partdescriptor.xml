@@ -1,4 +1,4 @@
-<chapter id="tutorial_modeldynamics">
+[[tutorial_modeldynamics]]
 == Optional exercise: Dynamic creation of parts based on a part descriptor
 
 === Create a class for the part descriptor

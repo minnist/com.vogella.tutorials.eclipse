@@ -1,4 +1,4 @@
-<chapter id="tutorial_api">
+[[tutorial_api">
 == Exercise: Prepare TodoDetailsPart for data
 
 === Preparing for data
@@ -97,11 +97,11 @@ include::res/selection/TodoDetailsPartWithoutDataBinding.java[]
 			You
 			call
 			this method in
-			<<tutorial_wizard" />
+			<<tutorial_wizard>>
 			and the Eclipse framework uses this method
 			after you implement the
 			changes in
-			<<tutorial_usingeselectionservice" />
+			<<tutorial_usingeselectionservice>>
 			.
 		
 	

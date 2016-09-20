@@ -1,7 +1,0 @@
-@CanExecute
-boolean canExecute(EPartService partService) {
-	if (partService != null) {
-		return !partService.getDirtyParts().isEmpty();
-	}
-	return false;
-}

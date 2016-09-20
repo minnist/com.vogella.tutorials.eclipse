@@ -14,9 +14,12 @@ This tutorial describes the usage of drag and drop in the Eclipse framework.
 The article assumes that you are familiar with Eclipse plug-in or Eclipse RCP development. 
 This tutorial is based on Eclipse 4.6 (Eclipse Neon).
 				
+include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::200_exercise_dnd.adoc[]
 include::300_exercise_dndjface.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-
+include::../copyright.adoc[]	
 

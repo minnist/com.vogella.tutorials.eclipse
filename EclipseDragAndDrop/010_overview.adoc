@@ -1,4 +1,5 @@
 == Using drag and drop in SWT
+
 SWT supports drag and drop based on transfer types defined based on the `org.eclipse.swt.dnd.Transfer` class.
 Every widget element can define that it provides a certain transfer type as source.
 It can also define that it accepts a transfer type as destination.
@@ -18,7 +19,7 @@ The following demonstrates how to provide text data from a label.
 ----
 import org.eclipse.swt.dnd.*;
  
-// Enable a label as a Drag Source
+//Enable a label as a Drag Source
 final Label dragLabel = new Label(shell, SWT.BORDER);
 dragLabel.setText("text to be transferred");
 	 
@@ -139,7 +140,5 @@ import org.eclipse.swt.dnd.*;
 82	        }
 83	    }
 84	});
------
-
-
+----
 

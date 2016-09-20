@@ -1,6 +1,6 @@
-= AOSGi Services - Tutorial
+= OSGi Services - Tutorial
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: ./img

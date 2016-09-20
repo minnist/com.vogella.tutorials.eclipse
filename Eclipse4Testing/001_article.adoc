@@ -1,4 +1,4 @@
-== Eclipse 4 Testing - Tutorial
+= Eclipse 4 Testing - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -11,8 +11,6 @@ Version 0.3, 06.09.2016
 
 [abstract]
 This tutorial gives an overview how to test Eclipse 4 components.
-			
-		
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_notes.adoc[]
@@ -20,6 +18,6 @@ include::050_exercise_test_dependencies.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::../10_Include/Eclipse/e4info.adoc[]
 include::../support.adoc[]
+include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
 

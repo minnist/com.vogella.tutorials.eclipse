@@ -26,8 +26,7 @@ _feature.xml_
 file, select the
 _Plug-ins_
 tab and press the
-_Add..._
-button.
+btn:[Add...] button.
 
 image::createfeature20.png[Include plug-in into a feature]
 
@@ -50,14 +49,12 @@ _Contents_
 tab in your product editor. Add the
 _com.example.e4.rcp.wizard.feature_
 feature to your product with the
-_Add..._
-button.
+btn:[Add...] button.
 
 Afterwards add the
 `org.eclipse.e4.rcp`
 feature and press the
-_Add Required_
-button to add the dependencies of the
+btn:[Add Required] button to add the dependencies of the
 `org.eclipse.e4.rcp`
 feature to the product.
 

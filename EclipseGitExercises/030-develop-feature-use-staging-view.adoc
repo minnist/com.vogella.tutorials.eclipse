@@ -12,7 +12,7 @@ Make sure to set the starting point of these branches correctly.
 Right-click on your Project and select menu:Team[Switch to>New branch].
 Select as _source ref the remote tracking branch `refs/remotes/origin/master`. 
 Use _addPowerOperation_ as branch name. 
-Check the _Checkout new branch_ checkbox and press the _Finish_ button.
+Check the _Checkout new branch_ checkbox and press the btn:[Finish] button.
 
 image::create-branch-2.png[Create branch]
 		

@@ -30,7 +30,7 @@ Editors are typically used to modify a single data element, e.g., the content of
 To apply the changes made in an editor to the data structure, the user has to explicitly save the editor content.
 
 For example, the _Java_ editor is used to modify Java source files.
-Changes to the source file are applied once the user selects the _Save_ button.
+Changes to the source file are applied once the user selects the btn:[Save] button.
 A dirty editor tab is marked with an asterisk left to the name of the modified file.
 
 image::dirtyeditor10.png[Editor marked as dirty]

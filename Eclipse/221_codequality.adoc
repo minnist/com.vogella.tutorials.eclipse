@@ -53,9 +53,9 @@ from the context menu.
 image::codecleanup10.png[]
 		
 Select
-_Use custom profile_
+btn:[Use custom profile]
 and press
-_Configure..._
+btn:[Configure...]
 to configure the actions which should be performed on your code.
 		
 image::codecleanup20.png[]
@@ -65,9 +65,9 @@ image::codecleanup30.png[]
 WARNING: Ensure to unselect any cleanup action which you do not want to perform.
 		
 After finishing the configuration, press
-_OK_
+btn:[OK]
 and the
-_Next_
+btn:[Next]
 button in the cleanup wizard to get a preview of the changes.
 
 image::codecleanup40.png[]

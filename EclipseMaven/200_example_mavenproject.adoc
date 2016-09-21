@@ -37,7 +37,7 @@ For this right-click the _pom.xml_ file and select menu:Run As[Maven build].
 image::m2e_newmavenproject50.png[Run Maven project in Eclipse]	
 		
 This opens a dialog which allows to define the parameters for the start. 
-Enter `clean verify` in the _Goals:_ field and press the _Run_ button.
+Enter `clean verify` in the _Goals:_ field and press the btn:[Run] button.
 		
 image::m2e_newmavenproject60.png[Run Maven project in Eclipse]	
 				
@@ -48,7 +48,7 @@ image::m2e_newmavenproject60.png[Run Maven project in Eclipse]
 The Eclipse Maven tooling makes adding dependencies to the classpath of your project simple. 
 In can directly add it to your pom file, or use the _Dependencies_ tab of the pom editor.
 		
-Switch to the _Dependencies_ tab and press the _Add_ button.
+Switch to the _Dependencies_ tab and press the btn:[Add] button.
 
 image::me2_adddependency20.png[]
 		

@@ -14,11 +14,11 @@ Enter the data as depicted in the following screenshots.
 
 image::eclipseideplugin10.png[]
 
-Press the _Next_ button.
+Press the btn:[Next] button.
 
 image::eclipseideplugin20.png[]
 
-Press the _Next_ button.
+Press the btn:[Next] button.
 
 Select the _Hello, World Command_ template and press the _Next_ button. This template uses the 3.x API, which you convert to the e4 API in <<firstplugin_migratione4>>.
 
@@ -70,7 +70,7 @@ Select menu:New[Other... > Eclipse 4 > Model >New Model Fragment] from the conte
 
 image::migrategenerated10.png[Create Model Fragment, step 1]
 
-Press the _Finish_ button.
+Press the btn:[Finish] button.
 
 image::migrategenerated20.png[Create Model Fragment, step 2]
 

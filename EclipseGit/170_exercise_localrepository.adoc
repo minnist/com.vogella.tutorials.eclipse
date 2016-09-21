@@ -32,8 +32,7 @@ folder of the users home directory.
 image::egit_gitinit20.png[Git init with Eclipse Git]
 
 If you press the
-_Finish_
-button this dialog creates the directory and adds a reference to the
+btn:[Finish] button this dialog creates the directory and adds a reference to the
 new Git
 repository
 to the

@@ -47,8 +47,7 @@ _Package Explorer_
 view.
 
 To activate this behavior, press the
-_Link with Editor_
-button in
+btn:[Link with Editor] button in
 the
 _Package explorer_ view
 as depicted in the following screenshot.
@@ -207,7 +206,7 @@ Use the _File Search_ tab to search for text with the option to use regular expr
 image::javasearchdialog30.png[Text search]
 
 Eclipse associates file extensions with the default tab. 
-You can customize the available search tabs via the _Customize_ button in the Search dialog. 
+You can customize the available search tabs via the btn:[Customize] button in the Search dialog. 
 Via the _Remember the last used page_ you can configure Eclipse to use your last tab as default.
 
 image::customizesearch10.png[Customize search]

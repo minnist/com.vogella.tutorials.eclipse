@@ -42,7 +42,7 @@ _Properties_.
 Under
 menu:Java Build Path[Libraries]
 select the
-_Add JARs_
+btn:[Add JARs]
 button.
 
 The following example shows how the result would look like
@@ -118,7 +118,7 @@ _Libraries_
 tab, expand the library's node, select the
 _Source Attachment_
 attribute and click the
-_Edit_
+btn:[Edit]
 button.
 
 In the Location path field, enter the path of an archive or a
@@ -155,7 +155,7 @@ tab expand the
 library's node, select the
 _Javadoc location_
 attribute and press the
-_Edit_
+btn:[Edit]
 button.
 
 Enter the location to the file which contains the Javadoc.

@@ -147,8 +147,7 @@ instance the previously described
 returns an
 `IStatus`
 as value, but if this should be bound to the enable state of a
-_Finish_
-button, having a boolean value would be necessary.
+btn:[Finish] button, having a boolean value would be necessary.
 		
 [source,java]
 ----

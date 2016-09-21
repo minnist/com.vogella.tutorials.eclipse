@@ -18,7 +18,7 @@ To open the Eclipse Marketplace, select menu:Help[Eclipse Marketplace...].
 image::marketclient10.png[Showing the Eclipse Marketplace Client]
 	
 You can use the _Find_ box to search for components. 
-Pressing the _Install_ button starts the installation process.
+Pressing the btn:[Install] button starts the installation process.
 
 === Maintaining your Favorites
 

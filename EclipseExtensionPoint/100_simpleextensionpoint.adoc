@@ -53,8 +53,7 @@ populated based on your input.
 image::extensionpoint20.png[Define Extension Point]
 
 Press the
-_Finish_
-button.
+btn:[Finish] button.
 The definition of the extension is generated and the
 schema
 editor

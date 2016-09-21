@@ -35,8 +35,7 @@ Make the relationship to the
 and
 `bind()`
 method by selecting your entry can by pressing the
-_Edit_
-button.
+btn:[Edit] button.
 
 image::dsconsumer30.gif[]
 

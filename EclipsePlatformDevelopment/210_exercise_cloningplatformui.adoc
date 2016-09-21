@@ -49,7 +49,7 @@ On the next wizard page you can select to clone all branches.
 The Eclipse platform project uses the `master` branch for all bug fixes and feature work.
 Individual bug fixes are downported to maintenance branches but you should always first fix the issue in the master branch.
 
-Finish this wizard by selecting the _Next_ button until you the option _Finish_ option becomes available. 
+Finish this wizard by selecting the btn:[Next] button until you the option _Finish_ option becomes available. 
 You end up with the projects from the repository imported into your workspace.
 	
 NOTE: You can also clone anonymously via _Anonymous HTTP_ , if you just want to play with the source code locally and do not intend to contribute changes. 

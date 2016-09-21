@@ -25,7 +25,7 @@ In the new branch dialog:
 * enter a name for the local feature branch into the _Branch Name_ field (this is just a local name that is not exposed to anybody else)
 * ensure that the _Pull Strategy_ is set to _Rebase_
 * keep the _Checkout new branch_ flag selected
-* confirm the dialog by clicking on the _Finish_ button
+* confirm the dialog by clicking on the btn:[Finish] button
 
 image::create-branch-dialog.png[Create branch in Eclipse Git part II]			
 		

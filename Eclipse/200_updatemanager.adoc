@@ -49,8 +49,7 @@ preference setting. Otherwise, Eclipse may not able to reach the
 update sites.
 
 To update your Eclipse installation, select
-menu:Help[Check for Updates]
-.
+menu:Help[Check for Updates].
 The system searches for updates of the already installed
 software
 components. If it finds updated components, it will ask you
@@ -59,8 +58,7 @@ approve
 the update.
 
 To install a new functionality, select
-menu:Help[Install New Software...]
-.
+menu:Help[Install New Software...].
 
 image::UpdateManager08.png[Selecting an update site in the update manager]
 
@@ -76,7 +74,7 @@ to
 the list of available update sites.
 
 To explicitly add a new update site, press the
-_Add..._
+btn:[Add...]
 button
 and
 enter
@@ -116,8 +114,7 @@ disabled.
 === See the installed components
 
 To see which components are installed, use
-menu:Help[About Eclipse SDK > Installation Details]
-.
+menu:Help[About Eclipse SDK > Installation Details].
 
 image::eclipse_installationdetails10.png[Installation details of Eclipse,pdfwidth=40%]
 
@@ -126,7 +123,7 @@ image::eclipse_installationdetails10.png[Installation details of Eclipse,pdfwidt
 If you select
 menu:Help[About Eclipse SDK]
 and then the
-_Installation Details_
+btn:[Installation Details]
 button, you can uninstall components from your Eclipse IDE.
 
 === Restarting Eclipse

@@ -21,7 +21,7 @@ include::res/css/rainbow.css[]
 === Remove the applicationCSS property
 
 Remove the `applicationCSS` property from your product extension. 
-For this select the property and press the _Remove_ button as depicted in the following screenshot.
+For this select the property and press the btn:[Remove] button as depicted in the following screenshot.
 
 image::theme05.png[Remove applicationCSS]
 
@@ -30,11 +30,11 @@ image::theme05.png[Remove applicationCSS]
 Select the _Extensions_ tab in the _plugin.xml_ editor and create two extensions for the `org.eclipse.e4.ui.css.swt.theme` extension point.
 
 
-You create an extension in the _Extensions_ tab by pressing the _Add..._ button.
+You create an extension in the _Extensions_ tab by pressing the btn:[Add...] button.
 
 image::theme06.png[Add button in extension points]
 
-Select the `org.eclipse.e4.ui.css.swt.theme` extension point and press the _Finish_ button.
+Select the `org.eclipse.e4.ui.css.swt.theme` extension point and press the btn:[Finish] button.
 
 image::theme08.png[Selecting]
 

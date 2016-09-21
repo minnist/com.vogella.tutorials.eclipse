@@ -67,6 +67,5 @@ include::res/event/plugin.xml[]
 Start your application. The login dialog should get displayed and
 your
 application should be started after the user selects the
-_Login_
-button.
+btn:[Login] button.
 

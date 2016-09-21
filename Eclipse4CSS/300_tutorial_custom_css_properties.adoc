@@ -41,11 +41,11 @@ Afterwards you should set a certain header-text, an image and a description-text
 === Adding the org.eclipse.e4.ui.css.core.propertyHandler extension point
 
 Select the _Extensions_ tab in the editor for the _plugin.xml_ file and add the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point. 
-You create an extension in the _Extensions_ tab by pressing the _Add..._ button. 
+You create an extension in the _Extensions_ tab by pressing the btn:[Add...] button. 
 
 image::theme06.png[Add button in extension points]
 
-Select the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point and press the _Finish_ button. 
+Select the `﻿org.eclipse.e4.ui.css.core.propertyHandler` extension point and press the btn:[Finish] button. 
 
 image::propertyHandler_extension.png[Selecting]
 

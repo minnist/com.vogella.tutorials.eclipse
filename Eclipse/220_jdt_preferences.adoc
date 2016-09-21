@@ -109,7 +109,7 @@ settings under
 menu:Window[Preferences+Java[Editor > Save Actions].
 
 Here you can define the actions which should be performed during save and via the
-_Configure..._
+btn:[Configure...]
 button you can configure the code cleanup actions which should be performed.
 
 image::wayofworking30.png[Save Actions,pdfwidth=50%,width=50%]
@@ -175,10 +175,10 @@ menu:Window[Preferences > Java > Appearance > Type Filters]
 setting.
 
 Press the
-_Add packages_
+btn:[Add packages]
 button
 to add a specific package or the
-_Add..._
+btn:[Add...]
 button
 to use
 wildcards. The setting in the following screenshot

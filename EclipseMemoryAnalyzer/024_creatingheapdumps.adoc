@@ -10,7 +10,7 @@ Use the menu:File[New > Other...> Other> Heap Dump] menu entry to open a dialog 
 image::mat_getheapdump10.png[Creating a heap dump]
 
 
-Select the process for a heap dump in the following dialog and press the _Finish_ button.
+Select the process for a heap dump in the following dialog and press the btn:[Finish] button.
     
 
 Alternatively you can also interactively create a heap dump via Eclipse. 

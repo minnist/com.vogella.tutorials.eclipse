@@ -69,7 +69,7 @@ Exclude the AWT and Swing packages from the Eclipse Java tools
 via the
 menu:Window[Preferences > Java > Appearance > Type Filters]
 setting. Press the
-_Add Packages..._
+btn:[Add Packages...]
 button and add the
 `java.awt` and `javax.swing`
 

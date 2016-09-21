@@ -53,15 +53,13 @@ becomes active again.
 image::adding_liveeditor10.png[Adding the live editor to a run configuration]
 
 Press the
-_Validate_
-button to ensure that all dependencies are included.
+btn:[Validate] button to ensure that all dependencies are included.
 
 === Use the model spy
 
 After you have added the new plug-ins to your run
 configuration press the
-_Run_
-button in the run configuration you just added.
+btn:[Run] button in the run configuration you just added.
 
 WARNING:
 Do not start the application now via the product. Starting via

@@ -16,8 +16,7 @@ use any Eclipse project of your choice.
 Open to
 https://bugs.eclipse.org/bugs/ - Eclipse Bugzilla
 and select the
-_Search_
-button. Select the
+btn:[Search] button. Select the
 _Advanced Search_
 tab and search for
 menu:Eclipse[Platform > UI]

@@ -8,7 +8,7 @@ It assumes that you have already configured Eclipse for the creation of web appl
 === Create Maven web project project
 		
 Create a new Maven project called _com.vogella.javaweb.maven.first_ via the menu:File[New>Other>Maven>Maven Project] entry.
-On the archetype selection, select the _maven-archetype-webapp_ entry and click the _Next_ button.
+On the archetype selection, select the _maven-archetype-webapp_ entry and click the btn:[Next] button.
 		
 image::maven_webproject10.png[Webproject archetype with Maven]
 		

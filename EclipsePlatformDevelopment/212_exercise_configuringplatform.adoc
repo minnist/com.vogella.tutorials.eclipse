@@ -38,11 +38,11 @@ The tooling can also propose quickfixes for such violations.
 
 The following screenshots demonstrates how to configure a API baseline. 
 This assumes that the 4.5 is the latest official release. 
-In the preference press the _Add Baseline..._ button.
+In the preference press the btn:[Add Baseline...] button.
 
 image::apibaseline10.png[Setting up the API baseline]
 
-Enter a name for this baseline, select the folder which contains the latest official Eclipse release and press the _Reset_ button to use this installation as baseline.
+Enter a name for this baseline, select the folder which contains the latest official Eclipse release and press the btn:[Reset] button to use this installation as baseline.
 
 image::apibaseline20.png[Setting up the API baseline]
 

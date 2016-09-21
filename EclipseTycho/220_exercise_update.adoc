@@ -15,11 +15,11 @@ image::tycho-updatesite-creation.png[Project creation for update site]
 			
 Right-click on this project and select menu:File[New > Other...>Plug-in Development>Category Definition].
 		
-Press the _New Category_ button and create a new category with the "tychoexample" ID and "Tycho example" name.
+Press the btn:[New Category] button and create a new category with the "tychoexample" ID and "Tycho example" name.
 
 image::tycho_updatesite10.png[Adding a category]
 		
-Press the _Add Feature..._ button and include your feature project into the category.
+Press the btn:[Add Feature...] button and include your feature project into the category.
 
 image::tycho_updatesite20.png[Adding a feature to a category]
 

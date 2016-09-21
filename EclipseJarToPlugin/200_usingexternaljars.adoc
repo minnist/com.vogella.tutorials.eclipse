@@ -19,7 +19,7 @@ Enter a name and a version for your new plug-in.
 Uncheck the _Unzip the JAR archive into the project_ flag. 
 Unchecking this flag prevents that the class files are extracted from the JAR file which is not necessary to use them.
 
-Afterwards press the _Finish_ button in the wizard.
+Afterwards press the btn:[Finish] button in the wizard.
 
 image::externaljars30.gif[]
 

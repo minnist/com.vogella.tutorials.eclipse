@@ -19,7 +19,7 @@ image::firstgany90.gif[Export wizard for Java project]
 Select
 _JAR file_
 and select the
-_Next_
+btn:[Next]
 button.
 Select your project and enter
 the
@@ -35,7 +35,7 @@ image::firstgany100.gif[Export wizard for Java project, Part II]
 image::firstgany110.gif[Export wizard for Java project, Part III]
 		
 Press The
-_Finish_
+btn:[Finish]
 button. This creates a
 _JAR_
 file in your selected output

@@ -16,7 +16,7 @@ Create a new branch from the _History_ view.
 image::create-branch-from-history-view.png[Create Branch from History View, 700].
 		
 Enter "addMultiplyOperation" as the name of the new branch. 
-Make sure the _checkout new branch_	checkbox is selected and click on the _Finish_ button.
+Make sure the _checkout new branch_	checkbox is selected and click on the btn:[Finish] button.
 		
 Ensure that you don’t see the changes of the first exercise anymore in your workspace.
 		
@@ -32,7 +32,7 @@ image::register-multiply.png[Register Multiply].
 
 Now you want to switch to another branch but you want to continue working at your new feature later on. 
 The easiest thing to do is to just commit your work in progress and change that commit later on.
-Use the _Git Staging_ view to enter a preliminary message, e.g. "[Unfinished] Add multiply operation", stage the files and click on _Commit_ button.
+Use the _Git Staging_ view to enter a preliminary message, e.g. "[Unfinished] Add multiply operation", stage the files and click the btn:[Commit] button.
 				
 				
 Now you can switch to the first feature branch "addDivideOperation". 
@@ -60,7 +60,7 @@ This shows you the changes you will add on top of the first commit.
 Compare your changed project with the parent commit of your first, preliminary commit by selecting menu:Compare With[Previous revision].
 This shows you the changes you will have in your new commit after the next step.
 				
-Create a new commit with the combined changes of your first, preliminary commit and your current changes by pressing the _Amend_ button in the staging view and by adding the new changes.
+Create a new commit with the combined changes of your first, preliminary commit and your current changes by pressing the btn:[Amend] button in the staging view and by adding the new changes.
 						
 Leave the commit messages as it is, e.g., do not remove the [UNFINISHED] prefix.
 						
@@ -73,7 +73,7 @@ image::history-view-3.png[History View, 500, 500]
 
 The amend feature is often used to fix the commit message of what you just committed.
 
-Now, change the commit message to something meaningful (e.g remove [UNFINISHED]) and click the _Commit_ button.		
+Now, change the commit message to something meaningful (e.g remove [UNFINISHED]) and click the btn:[Commit] button.		
 				
-In order to change the commit message of the last commit, press the _Amend_ button in the _Git Staging_ view.
-Change the commit message and press the _Commit_ button.
+In order to change the commit message of the last commit, press the btn:[Amend] button in the _Git Staging_ view.
+Change the commit message and press the btn:[Commit] button.

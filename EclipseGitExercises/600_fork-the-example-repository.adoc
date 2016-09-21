@@ -73,8 +73,7 @@
 		
 		
 			Now you can create your own fork by pressing the
-			_Fork_
-			button:
+			btn:[Fork] button:
 		
 		
 			<inlinemediaobject>

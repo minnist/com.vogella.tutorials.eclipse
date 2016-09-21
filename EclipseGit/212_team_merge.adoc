@@ -66,8 +66,7 @@ image::egitmerge08.png[Selecting the merge model]
 		
 You can manually edit the text on
 the left side or use the
-_Copy current change from right to left_
-button to copy the changes from right to left.
+btn:[Copy current change from right to left] button to copy the changes from right to left.
 		
 image::egitmerge10.png[Seeing merge conflicts]
 		

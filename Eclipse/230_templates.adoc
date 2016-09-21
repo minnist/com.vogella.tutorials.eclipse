@@ -20,7 +20,7 @@ menu:Window[Preferences > Java > Editor >  Templates].
 image::templates10.gif[Maintaining code templates]
 		
 Press the
-_New_
+btn:[New]
 button. Create the template shown in the following
 screenshot.
 		

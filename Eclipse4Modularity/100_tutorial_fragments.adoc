@@ -98,8 +98,7 @@ image::modelfragment_extensionpoint16.png[Adding the fragment to the extensions]
 
 TIP: If entry in the plugin.xml is missing you can create it by clicking
 on the
-_Add..._
-button and by adding add a new extension for the
+btn:[Add...] button and by adding add a new extension for the
 `org.eclipse.e4.workbench.model`
 extension point. Afterwards you the right mouse click to add a
 fragment to it.
@@ -123,8 +122,7 @@ Select the
 _Model Fragments_
 node and
 press the
-_Add..._
-button.
+btn:[Add...] button.
 
 image::modelfragment10.png[Adding a model fragment]
 
@@ -164,8 +162,7 @@ _Model Fragment_
 selected and
 use
 the
-_Add..._
-button to add a
+btn:[Add...] button to add a
 _Command_
 to your model fragment.
 

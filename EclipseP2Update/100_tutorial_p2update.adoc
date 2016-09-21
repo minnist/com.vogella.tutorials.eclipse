@@ -29,7 +29,7 @@ Add the following features to the list of the _Contents_ tab.
 * org.eclipse.e4.rcp
 * org.eclipse.equinox.p2.core.feature
 					
-After adding these feature the _Add Required_ button needs to be clicked so that the required features listed below are available as well.
+After adding these feature the btn:[Add Required] button needs to be clicked so that the required features listed below are available as well.
 
 image::product-features.png[]
 

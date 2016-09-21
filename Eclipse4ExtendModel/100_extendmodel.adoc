@@ -33,7 +33,7 @@ image::emf_appmodel10.png[Create the EMF model]
 
 image::emf_appmodel20.png[To create the EMF model, select this page of the wizard]
 
-Press the _Finish_ button.
+Press the btn:[Finish] button.
 
 Check the properties for this plug-in via the _Properties_ view.
 

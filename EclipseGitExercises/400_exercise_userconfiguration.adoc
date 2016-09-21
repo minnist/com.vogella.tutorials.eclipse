@@ -9,7 +9,7 @@ In your Eclipse IDE, select the menu:Window[Preferences>Team>Git>Configuration] 
 Ensure that your full name and email is available in the user settings.
 
 The user is stored under the `user.name` key with the full name as value. 
-If it is not available press the _Add Entry..._	button and add it.
+If it is not available press the btn:[Add Entry...] button and add it.
 Repeat the procedure for your email address via the  `user.email` key.
 
 image::egitconfig10.png[Configuration of EGit, 400, 400]

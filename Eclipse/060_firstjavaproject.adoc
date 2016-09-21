@@ -28,7 +28,7 @@ _Create separate folders for sources and class files_ flag.
 image::firstgany10.gif[New Java Project Wizard]
 
 Press the
-_Finish_
+btn:[Finish]
 button to create the project. A new project is created
 and
 displayed as
@@ -70,8 +70,7 @@ in the
 package because this is the reverse URL of the vogella GmbH company.
 
 Enter the name of your new package in the dialog and press the
-_Finish_
-button.
+btn:[Finish] button.
 
 image::firstgany40.gif[Create a package Dialog]
 
@@ -95,7 +94,7 @@ checkbox.
 image::firstgany60.gif[Create a new class selection]
 
 Press the
-_Finish_
+btn:[Finish]
 button.
 
 This creates a new file and opens the Java

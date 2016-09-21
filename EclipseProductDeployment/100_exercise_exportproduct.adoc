@@ -13,15 +13,13 @@ image::wizarddeploy10.png[Export product]
 Enter a new directory in the
 _Directory_
 field. If in doubt use the
-_Browse_
-button to find a valid directory. The following screenshot shows an
+btn:[Browse] button to find a valid directory. The following screenshot shows an
 example under Ubuntu.
 		
 image::wizarddeploy20.png[Selecting the output directory in the product export dialog]
 		
 Press the
-_Finish_
-button to start the export.
+btn:[Finish] button to start the export.
 		
 WARNING: The exported directory should be empty. 
 If you export twice to the same directory, delete its content, otherwise the export fails with a dependency conflict. 

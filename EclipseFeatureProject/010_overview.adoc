@@ -81,8 +81,7 @@ to your product
 and want to
 add its
 dependencies, press the
-_Add Required_
-button.
+btn:[Add Required] button.
 
 
 === Creating a feature

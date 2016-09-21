@@ -8,7 +8,7 @@ Open the _Git Repositories_	view via the menu:Window[Show View>Other>Git>Git Rep
 image::img/git-repositories-view.png[Git repositories view, 400, 400]
 
 		
-Click the _Clone a Git repository_ button in this view (see Tooltips for the correct button).
+Click the btn:[Clone a Git repository] button in this view (see Tooltips for the correct button).
 
 This opens the dialog to clone a Git repository. Enter the following URI in the URI field:
 		
@@ -16,7 +16,7 @@ https://github.com/vogellacompany/gittraining-sample.git
 
 image::img/clone-git-repository.png[Screenshot of cloning the repository, 400, 400]
 		
-Click the _Next_ button.
+Click the btn:[Next] button.
 
 On the next page you see the branches in this repository. 
 Ensure all branches are selected.
@@ -24,11 +24,11 @@ The branches you see may differ from the following screenshot.
 		
 image::branch-selection.png[Branch selection, 400, 400]		
 
-Click the _Next_ button.
+Click the btn:[Next] button.
 
 In the _Directory_ field, choose a path where to store the local repository.
 		
-Make sure the _Import all existing projects after clone finishes_ checkbox is selected and click the _Finish_ button.
+Make sure the _Import all existing projects after clone finishes_ checkbox is selected and click the btn:[Finish] button.
 		
 image::finish-clone.png[Finish Git clone, 400, 400]    
 

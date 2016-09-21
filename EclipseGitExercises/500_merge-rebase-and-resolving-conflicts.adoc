@@ -94,7 +94,7 @@ image::merge-tool-resolved-conflict.png[Merge Tool with resolved conflict, 400,4
 
 Use the _Git Staging_ view to stage the files  which had conflicts. 
 When you have done it for all such files the repository state changes from _Conflicts_ to _Merged_. 
-Press the _Commit_ button in the _Git Staging_ view. 
+Press the btn:[Commit] button in the _Git Staging_ view. 
 Note that there is already a commit message proposed by Git. Leave it as it is.
 				
 

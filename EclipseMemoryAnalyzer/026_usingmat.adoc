@@ -31,7 +31,7 @@ To find which element is holding the reference to this object, select the entry 
     
 Android allows to create heap dumps of an application's heap.
 This heap dump is stored in a binary format called HPROF.
-To create a heap dump use the _Dump HPROF file_ button in the _DDMS_ _Perspective_.
+To create a heap dump use the btn:[Dump HPROF file] button in the _DDMS_ _Perspective_.
     
 The Android heap dump format is similar to the Java heap dump format but not exactly the same.
 Eclipse MAT can work directly with the Android heap dump format.

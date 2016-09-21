@@ -21,8 +21,7 @@ The following screenshot depicts the second page of the plug-in
 project wizard and its corresponding settings.
 Press
 the
-_Finish_
-button on this page
+btn:[Finish] button on this page
 to avoid the usage of templates.
 
 image::osgi_simpleplugin10.png[Creating a simple plug-in]

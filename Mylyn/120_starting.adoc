@@ -20,8 +20,7 @@ image::mylyn10.png[Task List View]
 (((Mylyn,create tasks)))
 		
 To create a new task press the
-_New Task_
-button or right-click in the
+btn:[New Task] button or right-click in the
 _Task List_
 view
 and select
@@ -40,8 +39,7 @@ image::mylyn30.png[Selecting local repository]
 (((Mylyn,activate tasks)))
 		
 To start working on a task, select the
-_Activate task_
-button. If the task has already captured a
+btn:[Activate task] button. If the task has already captured a
 _context_
 , Mylyn
 filters the visible elements in the
@@ -55,8 +53,7 @@ _Package Explorer_
 view
 by
 clicking the
-_Focus on Active Task_
-button
+btn:[Focus on Active Task] button
 in the toolbar of this
 view
 . Afterwards

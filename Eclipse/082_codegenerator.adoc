@@ -29,18 +29,18 @@ include::res/codegen/Person.java[]
 ----
 	
 Select
-menu:Source[Generate Constructor using Fields...], mark both fields and click the _OK_ button.
+menu:Source[Generate Constructor using Fields...], mark both fields and click the btn:[OK] button.
 	
 image::sourcegenerator10.png[Generating]
 	
 Select
-menu:Source[Generate Getter and Setter...], select all fields and afterwards click the _OK_ button.
+menu:Source[Generate Getter and Setter...], select all fields and afterwards click the btn:[OK] button.
 	
 	
 Select
 menu:Source[Generate toString()...]
 , mark again all fields and click the
-_OK_
+btn:[OK]
 button.
 
 You created the following class:

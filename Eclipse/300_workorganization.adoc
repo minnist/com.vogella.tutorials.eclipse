@@ -25,8 +25,7 @@ menu:Package Explorer[open the drop-down menu > Select Working Set...]
 image::workingset10.png[Showing the working set]
 
 Press the
-_New_
-button
+btn:[New] button
 on the following dialog to create a working set.
 
 image::workingset20.png[Creating new working sets]
@@ -34,8 +33,7 @@ image::workingset20.png[Creating new working sets]
 On the next dialog select
 _Resource_
 , press the
-_Next_
-button and select the
+btn:[Next] button and select the
 projects
 you
 would like to see and give it a name.

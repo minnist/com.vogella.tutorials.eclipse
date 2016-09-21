@@ -22,7 +22,7 @@ projects can be stored in the workspace.
 Select
 an empty directory
 and click the
-_OK_
+btn:[OK]
 button.
 		
 image::starteclipse10.png[Selecting the Workspace]

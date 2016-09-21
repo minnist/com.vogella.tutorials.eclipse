@@ -115,8 +115,7 @@ controls and add
 an
 _OK_
 and
-_Cancel_
-button (or other custom buttons).
+btn:[Cancel] button (or other custom buttons).
 
 Your class needs to implement the
 `createDialogArea()`

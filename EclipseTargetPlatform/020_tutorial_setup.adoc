@@ -32,8 +32,7 @@ in the following dialog.
 image::tutorial_targetdefinition30.png[Add content to target definition file]
 
 Press the
-_Next_
-button and enter the update site URL of the target release
+btn:[Next] button and enter the update site URL of the target release
 in the Work with selection box. This is for example:
 http://download.eclipse.org/releases/neon
 for the Eclipse 4.6 (Neon) release.

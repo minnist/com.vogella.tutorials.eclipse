@@ -38,7 +38,7 @@ image::m2e_javaconverttomaven20.png[Run Maven build from Eclipse]
 		
 Enter "clean install" as Goal.
 
-NOTE: You have to enter the goals manually. The _Select..._ button does not work, the dialog it displays is always empty.
+NOTE: You have to enter the goals manually. The btn:[Select...] button does not work, the dialog it displays is always empty.
 			
 		
 Press the btn:[Finish] button.

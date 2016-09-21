@@ -50,7 +50,7 @@ You can press the btn:[Finish] button on the first wizard page.
 
 image::training_product31.png[Feature project]
 
-Afterwards select the _Plug-ins_ tab in the editor of the _feature.xml_ file. Press the _Add..._ button and include the `com.example.e4.rcp.todo` plug-in into this feature.
+Afterwards select the _Plug-ins_ tab in the editor of the _feature.xml_ file. Press the btn:[Add...] button and include the `com.example.e4.rcp.todo` plug-in into this feature.
 
 image::training_product34.png[Feature project]
 

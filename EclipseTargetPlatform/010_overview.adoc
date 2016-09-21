@@ -1,4 +1,4 @@
-=== Target platform for defining available plug-ins for development
+== Target platform for defining available plug-ins for development
 
 The set of plug-ins
 which you can use for your development or your

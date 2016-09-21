@@ -33,8 +33,7 @@ image::debugstart10.gif[Start the debugger]
 After you have started the application once via the context menu, you
 can
 use the created launch configuration again via the
-_Debug_
-button in the Eclipse toolbar.
+btn:[Debug] button in the Eclipse toolbar.
 
 image::debugtoolbar10.png[Debug button]
 
@@ -146,8 +145,7 @@ image::breakpointview10.png[Breakpoint view]
 If you want to deactivate all your breakpoints you
 can
 press the
-_Skip all breakpoints_
-button. If you press it again, your breakpoints are
+btn:[Skip all breakpoints] button. If you press it again, your breakpoints are
 reactivated. This
 button is highlighted in the following screenshot.
 

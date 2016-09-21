@@ -41,7 +41,7 @@ You may also decide to implement something else like polish the SWT or Swing use
 Use `git add` and `git commit` to store your development in your local repository in your current branch by committing your changes.
 		
 Enter a commit message explaining why the change was done.
-Stage all files that you want to commit and click the _Commit_ button.
+Stage all files that you want to commit and click the btn:[Commit] button.
 
 As result your changes are committed in your local repository, validate that via the `git log` command.
 		

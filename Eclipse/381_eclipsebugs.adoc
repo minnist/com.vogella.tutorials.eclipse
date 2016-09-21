@@ -74,12 +74,10 @@ project
 will occur. The following rules can
 be used as guideline.
 
-.Table Title
-|===
-
 .Bug priorities
 |===
-|Priority |Description
+|Priority |Description 
+
 |blocker
 |The bug blocks development or testing of the build and no workaround is known.
 
@@ -101,5 +99,6 @@ Implies some loss of functionality under specific circumstances, typically the c
 
 |enhancement
 |Represents a request for enhancement (also for "major" features that would be really nice to have).
+
 |===
 

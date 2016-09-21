@@ -1,7 +1,7 @@
 == Convenience methods for working with events
 Besides the convenience methods for the event types, the UIEvents class offers two more convenience methods:
 
-image::./images/ui_events_convenience.png[Additional convenience methods of the UIEvents class.]
+image::ui_events_convenience.png[Additional convenience methods of the UIEvents class.]
 
 === The contains method
 

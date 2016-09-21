@@ -32,7 +32,7 @@ _event bus_.
 Any software component which has access to the event system can
 send out arbitrary events as depicted in the following graphic.
 		
-image::eventbroker10.png[Sending out events with an event broker,pdfwidth=30%]
+image::eventbroker10.png[Sending out events with an event broker]
 		
 The Eclipse platform will make sure that registered components
 receive the messages. The Eclipse platform uses this event system for

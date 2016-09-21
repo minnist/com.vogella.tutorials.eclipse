@@ -87,7 +87,7 @@ include::res/escape/Paste1.txt[]
 You can configure Eclipse to highlight the matching brackets of
 a code block in the source code editor.
 
-image::jdtbrackets10.png[Highlight the enclosing brackets in JDT,pdfwidth=30%,width=30%]
+image::jdtbrackets10.png[Highlight the enclosing brackets in JDT,width=30%]
 
 Before the change you would not see the enclosing brackets.
 Afterwards, they will be slightly highlighted. This
@@ -134,7 +134,7 @@ option in the
 menu:Run/Debug[Launching]
 setting.
 
-image::exercise_lauchprevious11.png[Launch previous launched application,pdfwidth=30%,width=30%]
+image::exercise_lauchprevious11.png[Launch previous launched application,width=30%]
 
 === Type Filters
 
@@ -210,7 +210,7 @@ guess
 the correct actual
 parameters for a method call.
 
-image::jdt_completion04.png[JDT completion,pdfwidth=30%,width=30%]
+image::jdt_completion04.png[JDT completion,width=30%]
 
 With the first setting you can override methods in the middle of
 a

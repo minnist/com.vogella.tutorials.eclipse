@@ -233,7 +233,7 @@ You can use the kbd:[Ctrl+J] shortcut to activate _Incremental Find_.
 This allows you to search in the current active editor for a text which is displayed in the status line as depicted by the following screenshot. 
 Repeat kbd:[Ctrl+J] in order to move to the next occurrence of the current search term.
 
-image::incrementalsearch10.png[Incrementation search,pdfwidth=30%,width=30%]
+image::incrementalsearch10.png[Incrementation search,width=30%]
 
 The advantage of this search is that no pop-up dialog is opened which blocks other elements in the Eclipse IDE.
 

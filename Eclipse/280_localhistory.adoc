@@ -27,7 +27,7 @@ _Compare_
 view
 shows the differences as depicted in the following screenshot.
 
-image::localcompare10.png[Local compare view,pdfwidth=30%]
+image::localcompare10.png[Local compare view]
 
 === Replace files based on local history
 

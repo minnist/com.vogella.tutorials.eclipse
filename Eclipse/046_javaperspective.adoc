@@ -25,7 +25,7 @@ Sooner or later you will run into problems with your code or your project setup.
 To view the problems in your project, you can use the _Problems_ view which is part of the standard Java _perspective_. 
 If this view is closed, you can open it via menu:Window[Show View > Problems].
 		
-image::problemsview10.png[Errors in the problem view,pdfwidth=30%,width=30%]
+image::problemsview10.png[Errors in the problem view,width=30%]
 		
 The messages which are displayed in the _Problems_ view can be configured via the drop-down menu of the view. 
 For example, to display the problems from the currently selected project, select _Configure Contents_ and set the Scope to _On any element in the same project_.

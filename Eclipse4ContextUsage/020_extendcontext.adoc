@@ -217,7 +217,7 @@ e.g., the event system.
 The following screenshot shows a custom model add-on registered
 in the application model.
 
-image::modeladdon10.png[Registering a model add-on,pdfwidth=30%]
+image::modeladdon10.png[Registering a model add-on]
 
 The following code shows an example implementation for the model
 addon class. This addon places an object into the

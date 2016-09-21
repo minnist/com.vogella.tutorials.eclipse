@@ -30,9 +30,9 @@ _UNCONFIRMED_
 and
 _REOPENED_.
 
-image::bugtriage10.png[,pdfwidth=30%]
+image::bugtriage10.png[]
 
-image::bugtriage20.png[Search for bugs,pdfwidth=30%]
+image::bugtriage20.png[Search for bugs]
 
 In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
 recommended to look at the latest bugs, e.g., the bugs which have been recently updated.

@@ -39,7 +39,7 @@ A good search term is
 _semicolon_
 as depicted in the following screenshot.
 		
-image::tutorial_eclipseidepreferences10.png[Setting the positioning of the Eclipse preferences,pdfwidth=30%,width=30%]
+image::tutorial_eclipseidepreferences10.png[Setting the positioning of the Eclipse preferences,width=30%]
 	
 === Bracket highlighting
 		
@@ -56,7 +56,7 @@ option in the
 menu:Run/Debug[Launching]
 setting.
 		
-image::exercise_lauchprevious11.png[Launch previous launched application,pdfwidth=30%,width=30%]
+image::exercise_lauchprevious11.png[Launch previous launched application,width=30%]
 		
 === Use Type Filters
 
@@ -92,6 +92,6 @@ should be
 organized at every save action.
 		
 		
-image::exercise_saveactions11.png[Activating Save Actions,pdfwidth=30%,width=30%]
+image::exercise_saveactions11.png[Activating Save Actions,width=30%]
 		
 	

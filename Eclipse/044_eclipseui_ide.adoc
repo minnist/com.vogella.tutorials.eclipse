@@ -7,7 +7,7 @@ perform, e.g., creating Java resources or running
 Java projects. It
 also allows you to switch between perspectives.
 		
-image::javaperspectivetoolbar10.png[Java Perspective toolbar,pdfwidth=30%,width=30%]
+image::javaperspectivetoolbar10.png[Java Perspective toolbar,width=30%]
 
 === Perspectives in Eclipse
 		

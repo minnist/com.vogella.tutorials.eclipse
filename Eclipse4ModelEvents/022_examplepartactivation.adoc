@@ -4,7 +4,7 @@ A topic, which is fired by Eclipse is the `UIEvents.UILifeCycle.ACTIVATE` , whic
 
 [source, java]
 ----
-include::./examples/activate.java[]
+include::./res/activate.java[]
 ----	
 
 The `Event` class contains properties like `EventTags.ELEMENT`, from which we can receive the element, which is concerned in this event.

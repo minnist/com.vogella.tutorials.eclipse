@@ -28,8 +28,7 @@ name
 for the
 _JAR_
 file. I named it
-`myprogram.jar`
-.
+`myprogram.jar`.
 		
 image::firstgany100.gif[Export wizard for Java project, Part II]
 		
@@ -55,8 +54,7 @@ _JAR_
 file
 , by
 typing
-`cd path`
-. For example, if
+`cd path`. For example, if
 your
 _JAR_ is located in
 _c:\temp_,

@@ -116,8 +116,7 @@ which has been changed.
 So if you for instance listen to changes of a model element's label, the
 `ATTNAME`
 of the event will be
-`label`
-.
+`label`.
 
 [source,java]
 ----
@@ -293,8 +292,7 @@ within a
 , the
 `MPart`
 will be removed and afterwards added to the
-`MPartStack`
-.
+`MPartStack`.
 
 
 The details can be seen in the

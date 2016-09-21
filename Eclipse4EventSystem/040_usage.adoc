@@ -122,8 +122,7 @@ the event.
 You can subscribe to specific topics or use wildcards to
 subscribe to
 all sub-events. Sub-events are separated by
-`/`
-. The following example code defines several topics and also the
+`/`. The following example code defines several topics and also the
 `TOPIC_TODO_ALLTOPICS`
 constant which can be used to register for all sub-events.
 

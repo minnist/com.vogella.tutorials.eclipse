@@ -95,8 +95,7 @@ https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-e
 . To add your tracing options to the preference preference page, to allow users to turn them on at run time, use
 extension point
 the
-`org.eclipse.ui.trace.traceComponents`
-. See
+`org.eclipse.ui.trace.traceComponents`. See
 `TracingPreferencePage`
 for the implementation of this.
 		

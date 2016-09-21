@@ -78,8 +78,8 @@ include::res/stack/plugin.xml[]
 Start your application and change a
 `Todo`
 in your
-`TodoDetailPart`
-. The dirty indicator should now be different as indicated in the
+`TodoDetailPart`. 
+The dirty indicator should now be different as indicated in the
 following screenshot.
 
 image::stackrenderer10.png[Stack renderer with alternative dirty implementation]

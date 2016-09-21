@@ -60,8 +60,7 @@ interface.
 is the
 base of every EMF class and is the EMF
 equivalent of
-`java.lang.Object`
-.
+`java.lang.Object`.
 `EObject`
 and its corresponding
 implementation class
@@ -77,8 +76,7 @@ persistence
 frameworks.
 
 Every generated method is tagged with
-`@generated`
-. If you
+`@generated`. If you
 want to
 manually adjust the method
 and have

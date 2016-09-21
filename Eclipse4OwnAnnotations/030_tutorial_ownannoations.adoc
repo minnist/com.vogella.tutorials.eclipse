@@ -10,8 +10,7 @@ annotation processor is registered for a custom
 `@DirectTodo`
 annotation, which is a qualifier and therefore has to be used
 together with
-`@Inject`
-. The
+`@Inject`. The
 `@DirectTodo`
 annotation can have a id for requesting a Todo with a certain id.
 

@@ -111,8 +111,7 @@ property of the
 domain object to a
 `Label`
 based on the selection of a
-`ComboViewer`
-.
+`ComboViewer`.
 
 [source,java]
 ----

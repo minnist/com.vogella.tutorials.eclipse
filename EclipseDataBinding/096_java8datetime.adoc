@@ -41,8 +41,7 @@ which contains a
 instance and this
 `WritableValue`
 is changed by selecting a date in the
-`TableViewer`
-. The
+`TableViewer`. The
 `dateTimeObservableValue`
 is also bound to a label, in order to see the
 changes by manually manipulating to the

@@ -31,8 +31,7 @@ The
 class or one of its subclasses can get extended; a good
 template is
 usually
-`FieldEditorPreferencePage`
-.
+`FieldEditorPreferencePage`.
 		
 To open the Preference dialog, you can use the
 `org.eclipse.ui.window.preferences`

@@ -50,9 +50,8 @@ include::res/ExampleStackFrame.java[]
 
 For convenience most of the actions in the ExampleStackFrame are
 delegated to the given
-`IThread`
-. For visualization the
-`getName()`
+`IThread`. 
+For visualization the `getName()`
 method returns the character and position of the word, which should
 be
 spelled. In later sections IVariables will be added to this
@@ -81,8 +80,7 @@ An
 `IThread`
 is supposed to be a wrapper around a usual Java thread, which runs
 within an
-`IDebugTarget`
-.
+`IDebugTarget`.
 
 [source,java]
 ----

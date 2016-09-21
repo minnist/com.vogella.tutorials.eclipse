@@ -41,8 +41,7 @@ include::res/custom_ui_launch/SampleTab.java[]
 With this tab we can set our
 `SampleLaunchConfigurationAttributes.CONSOLE_TEXT`
 attribute to the
-`ILaunchConfiguration`
-.
+`ILaunchConfiguration`.
 
 In the
 `com.example.SampleTabGroup`

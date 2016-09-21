@@ -27,8 +27,7 @@ application restarts and are
 represented as a
 `List`
 of type
-`String`
-.
+`String`.
 
 [TIP]
 ==== 
@@ -42,8 +41,7 @@ and the CSS engine allows to style components
 based on
 this with the
 selector
-`.MPartStack.active`
-. If you want to use tag as CSS selectors, don't use whitespace in
+`.MPartStack.active`. If you want to use tag as CSS selectors, don't use whitespace in
 them.
 
 You can define your own tags and define CSS for this. This is a

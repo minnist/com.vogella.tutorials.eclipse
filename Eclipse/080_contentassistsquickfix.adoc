@@ -21,8 +21,7 @@ kbd:[Ctrl+Space]
 . This will replace
 `syso`
 with
-`System.out.println("")`
-.
+`System.out.println("")`.
 		
 If you have a reference to an object, for example, the object
 `person`

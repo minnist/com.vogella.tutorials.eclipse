@@ -10,8 +10,8 @@ manifest file.
 OSGi prevents access to classes
 without a defined
 dependency and throws a
-`ClassNotFoundException`
-. The only exception are packages from the Java runtime
+`ClassNotFoundException`. 
+The only exception are packages from the Java runtime
 environment (based on the Bundle-RequiredExecutionEnvironment
 definition of the plug-in);
 these

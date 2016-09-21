@@ -1,8 +1,7 @@
 == Tutorial: Using the Activator and exporting your bundle
 
 In this exercise you create another bundle which uses an
-`Activator`
-. You also run it within Eclipse
+`Activator`. You also run it within Eclipse
 At the
 end of this chapter you will
 also export

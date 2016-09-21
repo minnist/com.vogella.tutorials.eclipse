@@ -52,8 +52,7 @@ The following code snippet demonstrates how to put values into
 the preferences store. Please note that
 `@Preference`
 is used in combination with
-`@Execute`
-.
+`@Execute`.
 	
 [source,java]
 ----
@@ -63,8 +62,7 @@ include::res/eclipse4access/put.txt[]
 The next snippet demonstrates the read access of preference
 values. This time the preference annotation is used a
 qualifier for
-`@Inject`
-.
+`@Inject`.
 	
 [source,java]
 ----

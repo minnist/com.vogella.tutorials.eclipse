@@ -57,15 +57,13 @@ has
 the abstract class
 `SelectionAdapter`
 which pre-implements the methods of
-`SelectionListener`
-.
+`SelectionListener`.
 
 If you want to add a listener to the whole application, you can use
 the
 `Display`
 class. For example to add a global mouse listener use
-`addFilter(SWT.MouseMove, listener)`
-. If you add filters to the
+`addFilter(SWT.MouseMove, listener)`. If you add filters to the
 `Display`
 you may interfere with existing listeners. Ensure to test your code
 accordingly.

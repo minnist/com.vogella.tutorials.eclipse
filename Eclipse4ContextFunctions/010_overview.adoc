@@ -4,9 +4,8 @@
 
 A _context function_
 is an OSGi service which has access to the
-`IEclipseContext`
-. It
-allows you to lazily create an object for a given key if this key
+`IEclipseContext`. 
+It allows you to lazily create an object for a given key if this key
 is
 not contained in the relevant
 `IEclipseContext`.
@@ -146,8 +145,7 @@ context.
 Standard OSGi services
 have no direct access to
 the
-`IEclipseContext`
-.
+`IEclipseContext`.
 
 === Publishing to the OSGi service registry from a context function
 

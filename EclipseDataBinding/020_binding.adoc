@@ -80,8 +80,7 @@ demonstrates how to access the
 property in the
 `address`
 field of the object
-`person`
-.
+`person`.
 		
 [source,java]
 ----

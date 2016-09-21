@@ -8,8 +8,8 @@ image::osgi_api_definition10.png[Dependency management]
 All these restrictions are enforced via a
 specific
 OSGi
-`classloader`
-. Each plug-in has its own classloader. Access to
+`classloader`. 
+Each plug-in has its own classloader. Access to
 restricted classes
 is
 not

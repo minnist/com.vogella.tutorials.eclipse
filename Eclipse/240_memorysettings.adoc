@@ -49,8 +49,7 @@ on your JVM.
 NOTE: These options can also be specified per invocation of the Eclipse IDE, e.g., for desktop shortcuts. For example
 to
 start Eclipse with 2GB of memory, use the following command line:
-`./eclipse -vmargs -Xmx2024m`
-.
+`./eclipse -vmargs -Xmx2024m`.
 
 === Eclipse startup parameters
 

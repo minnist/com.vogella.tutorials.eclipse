@@ -59,8 +59,7 @@ image::wb_labeltext.png[Adding label and text]
 Assign an SelectionLister (event handler)
 to one of your
 buttons for the
-`widgetSelected`
-.
+`widgetSelected`.
 You can to this via a right-click on the
 button. Select
 menu:Add event handler[selection > widgetSelected].

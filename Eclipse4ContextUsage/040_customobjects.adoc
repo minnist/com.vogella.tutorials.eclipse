@@ -27,8 +27,7 @@ Using dependency injection is not limited to the objects created by
 the
 Eclipse runtime. You can use the same approach
 to create an instance of a given class based on a given
-`IEclipseContext`
-. The given class can contain
+`IEclipseContext`. The given class can contain
 @Inject annotations.
 For this you use the
 `ContextInjectionFactory`
@@ -51,8 +50,7 @@ of the application, the created object is globally available.
 For this you can either use an existing
 `IEclipseContext`
 or create a new
-`IEclipseContext`
-.
+`IEclipseContext`.
 The new context object can be connected to the context hierarchy.
 Using a new context might be preferable to
 avoid
@@ -100,8 +98,7 @@ If you want the Eclipse framework to create your custom objects
 for
 you,
 annotate them with
-`@Creatable`
-. This way you are telling the Eclipse DI container that it should
+`@Creatable`. This way you are telling the Eclipse DI container that it should
 create
 a new instance of this object if it does not
 find an instance

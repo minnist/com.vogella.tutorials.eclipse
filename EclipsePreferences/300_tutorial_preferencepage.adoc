@@ -27,8 +27,7 @@ with the following settings.
 image::preferences10.gif[]
 	
 Enter the following code for your class
-`MyPreferencePage1`
-.
+`MyPreferencePage1`.
 Method
 `init()`
 sets
@@ -66,8 +65,7 @@ to the menu. This command demonstrates how to
 access preferences
 values from
 the
-`preferencePage`
-.
+`preferencePage`.
 	
 [source,java]
 ----
@@ -76,11 +74,9 @@ include::res/preferencepage/ShowPreferenceValues.java[]
 	
 To set the default values for preferences use the extension
 point
-`org.eclipse.core.runtime.preferences`
-. Create a new
+`org.eclipse.core.runtime.preferences`. Create a new
 initializer with the following class
-`de.vogella.preferences.page.preferencepage.MyInitializer`
-.
+`de.vogella.preferences.page.preferencepage.MyInitializer`.
 	
 [source,java]
 ----

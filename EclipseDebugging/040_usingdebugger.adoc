@@ -219,8 +219,7 @@ method in the
 `Counter`
 class
 may show meaningless information, e.g.
-`de.vogella.combug.first.Counter@587c94`
-. To make this output more readable you can right-click on the
+`de.vogella.combug.first.Counter@587c94`. To make this output more readable you can right-click on the
 corresponding variable
 and select the
 menu:New Detail Formater...[]

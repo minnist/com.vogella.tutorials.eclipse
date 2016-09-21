@@ -41,8 +41,7 @@ An instance of the
 `LocalResourceManager`
 class
 is created with a reference to a
-`Control`
-. If this
+`Control`. If this
 `Control`
 is disposed, the resources created by the
 `LocalResourceManager`

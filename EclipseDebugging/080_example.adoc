@@ -3,8 +3,7 @@
 === Create Project
 
 To practice debugging create a new Java project called
-`de.vogella.combug.first`
-. Also create
+`de.vogella.combug.first`. Also create
 the package
 `de.vogella.combug.first`
 and create

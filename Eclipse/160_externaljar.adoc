@@ -9,8 +9,7 @@ files directly in your project.
 
 For example, you can
 create a new Java project
-`de.vogella.eclipse.ide.jars`
-. Then create
+`de.vogella.eclipse.ide.jars`. Then create
 a new folder called
 `lib`
 by right-clicking on

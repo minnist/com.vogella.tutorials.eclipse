@@ -38,8 +38,7 @@ MApplication and MPerspective extend MContext.
 The following code demonstrates how to get the
 `MApplication`
 injected and how to access its
-`IEclipseContext`
-.
+`IEclipseContext`.
 
 [source,java]
 ----
@@ -49,8 +48,7 @@ include::res/snippets/accessContext3.txt[]
 === Objects and context variables
 
 You can add key / value pairs directly to the
-`IEclipseContext`
-.
+`IEclipseContext`.
 
 Adding objects to
 a context can be done via
@@ -95,8 +93,7 @@ hierarchy and can also be modified using the
 method rather than
 `set()`
 method of the
-`IEclipseContext`
-.
+`IEclipseContext`.
 The
 `modify()`
 method searches up the chain to find the
@@ -238,8 +235,7 @@ The
 allows you via the
 `runAndTrack()`
 method to register a Java object of type
-`RunAndTrack`
-.
+`RunAndTrack`.
 
 A
 `RunAndTrack`

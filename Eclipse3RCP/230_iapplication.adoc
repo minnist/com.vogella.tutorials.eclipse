@@ -16,8 +16,7 @@ and for starting the event loop for the application.
 This class is typically called Application
 and must implement the
 interface
-`IApplication`
-.
+`IApplication`.
 [source,text]
 ----
 include::res/application/start.txt[]
@@ -25,8 +24,7 @@ include::res/application/start.txt[]
 	
 `PlatformUI.createAndRunWorkbench()`
 creates and runs a
-`Workbench`
-. The
+`Workbench`. The
 `Workbench`
 represents the graphical user interface of Eclipse. The visual
 part of
@@ -44,8 +42,7 @@ is represented via the class
 The
 `Workbench`
 is configured via a class of type
-`WorkbenchAdvisor`
-. This class defines the initial Perspective and defines the
+`WorkbenchAdvisor`. This class defines the initial Perspective and defines the
 `WorkbenchWindowAdvisor`
 class.
 	

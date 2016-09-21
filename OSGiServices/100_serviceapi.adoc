@@ -69,8 +69,7 @@ A bundle can also register itself for the events
 `ServiceEvents`
 )
 of the
-`BundleContext`
-.
+`BundleContext`.
 These are, for example, triggered if a new bundle is
 installed or
 de-installed or if a new service is registered.

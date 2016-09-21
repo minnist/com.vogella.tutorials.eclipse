@@ -67,15 +67,13 @@ Each SWT widget can have a layout specific settings class assigned to
 it, e.g.
 `GridData`
 for a
-`GridLayout`
-. This allows the developer to control the arrangement of the widgets
+`GridLayout`. This allows the developer to control the arrangement of the widgets
 within the layout.
 
 In the following example you specify that a certain widget
 should take
 two columns in a
-`GridLayout`
-.
+`GridLayout`.
 
 [source,text]
 ----
@@ -134,8 +132,7 @@ size
 or if they should grab the available
 space
 via the field
-`pack`
-. It is also possible to set margins at the top, bottom, left and
+`pack`. It is also possible to set margins at the top, bottom, left and
 right. If you
 set
 `justify`
@@ -262,8 +259,7 @@ objects. This class provides a convenient shorthand for creating and
 initializing GridData. The following listing
 demonstrates its usage
 and compares it with the direct usage of
-`GridData`
-.
+`GridData`.
 
 [source,java]
 ----

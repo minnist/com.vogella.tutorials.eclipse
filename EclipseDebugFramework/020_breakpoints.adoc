@@ -43,8 +43,7 @@ include::res/breakpoint_marker_sample.xml[]
 
 The easiest approach to create custom breakpoints is to provide an
 implementation of
-`org.eclipse.debug.ui.actions.IToggleBreakpointsTarget`
-.
+`org.eclipse.debug.ui.actions.IToggleBreakpointsTarget`.
 
 image::togglebreakpointstarget_hierarchy.png[IToggleBreakpointsTarget type hierarchy]
 
@@ -61,14 +60,12 @@ selection) throws CoreException;
 where a breakpoint can be toggled according to the current
 `ISelection`
 and/or
-`IWorkbenchPart`
-.
+`IWorkbenchPart`.
 
 These
 `IToggleBreakpointsTarget`
 implementations are often provided as an adapter for custom
-`IDebugElements`
-.
+`IDebugElements`.
 
 [source,xml]
 ----
@@ -82,8 +79,7 @@ When an
 is created, e.g., by a
 `IToggleBreakpointsTarget`
 , it must be registered to the workspace's
-`IBreakpointManager`
-.
+`IBreakpointManager`.
 
 [source,java]
 ----

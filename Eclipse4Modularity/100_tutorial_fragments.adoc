@@ -189,8 +189,7 @@ is again your
 application ID, the
 _Featurename_
 is
-`handlers`
-.
+`handlers`.
 
 Add a
 _Handler_
@@ -221,8 +220,7 @@ exericses correctly this should be the
 ID. The
 _Featurename_
 is
-`children`
-.
+`children`.
 
 image::fragment50.png[Adding a fragment for the menu]
 

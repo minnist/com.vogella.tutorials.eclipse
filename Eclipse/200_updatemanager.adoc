@@ -12,8 +12,7 @@ software components are
 called
 `features`
 and consist of
-`plug-ins`
-.
+`plug-ins`.
 
 These features are contained in so-called
 _update sites_

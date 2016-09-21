@@ -23,9 +23,8 @@ include::res/notification/IPersonList.java[]
 Create the following to two classes
 `ElementObserver`
 and
-`TotalObserver`
-. The
-`ElementObserver`
+`TotalObserver`. 
+The `ElementObserver`
 instance listens to changes of the list (delete, insert items)
 and an
 `TotalObserver`

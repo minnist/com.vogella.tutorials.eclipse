@@ -163,8 +163,7 @@ and
 methods.
 
 The following example shows a custom defined
-`TitleAreaDialog`
-.
+`TitleAreaDialog`.
 
 [source,java]
 ----

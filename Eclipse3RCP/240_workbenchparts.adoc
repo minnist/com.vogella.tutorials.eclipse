@@ -21,12 +21,10 @@ can also
 be used to change data.
 _Views_
 extend the abstract class
-`ViewPart`
-.
+`ViewPart`.
 _Editors_
 extend the abstract
-`EditorPart`
-. Both extend
+`EditorPart`. Both extend
 `WorkbenchPart`.
 
 An
@@ -61,8 +59,7 @@ methods.
 
 `createPartControl()`
 is used to create the UI components of the
-`View`
-.
+`View`.
 
 createPartControl() will get as parameter a
 `Composite`
@@ -132,6 +129,5 @@ _Views_
 to this folder via the
 `addView(id)`
 method on
-`IFolderLayout`
-.
+`IFolderLayout`.
 

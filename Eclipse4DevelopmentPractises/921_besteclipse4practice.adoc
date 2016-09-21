@@ -48,8 +48,7 @@ Assume that on every change of the active part you want to place a
 variable called
 _myactivePartId_
 into the
-`IEclipseContext`
-. This can be done via the following code.
+`IEclipseContext`. This can be done via the following code.
 
 [source,java]
 ----

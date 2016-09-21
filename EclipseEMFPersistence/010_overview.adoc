@@ -28,9 +28,8 @@ relationship" must be
 added
 explicitly to
 the
-`resource.getContents().add()`
-. If
-objects are
+`resource.getContents().add()`. 
+If objects are
 not
 added and not
 included in

@@ -3,8 +3,7 @@
 You can specify the tab order of controls via the
 `setTabList()`
 method of a
-`Composite`
-. For this you provide an array of the controls where the order of the
+`Composite`. For this you provide an array of the controls where the order of the
 controls in the array specify the tab order.
 
 [source,java]

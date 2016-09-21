@@ -11,8 +11,7 @@ functionality.
 === Create project
 		
 Create a project called
-`com.vogella.ide.todo`
-.
+`com.vogella.ide.todo`.
 
 === Create class
 		
@@ -71,8 +70,7 @@ menu:Source[Generate hashCode() and equals()...]
 === Create instances
 		
 Create a new class called
-`TodoProvider`
-.
+`TodoProvider`.
 Create the following static method in your
 `TodoProvider`
 class.
@@ -97,8 +95,7 @@ method and validate that the returned number of
 items is 5.
 		
 If another number than 5 is returned, throw a
-`RuntimeException`
-. If the correct number is returned, write the String "Correct" to
+`RuntimeException`. If the correct number is returned, write the String "Correct" to
 the
 _Console_
 view

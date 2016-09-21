@@ -61,17 +61,10 @@ the
 `org.eclipse.e4.rcp`
 for Eclipse RCP applications.
 
-== Feature or plug-in based products
+=== Feature or plug-in based products
     
-A product can either be based on plug-ins or
-on features. This
-setting
-is
-done on
-the
-_Overview_
-tab of the product
-configuration file.
+A product can either be based on plug-ins or on features.
+This setting is done on the _Overview_ tab of the product configuration file.
     
 On the
 _Contents_
@@ -92,7 +85,7 @@ _Add Required_
 button.
 
 
-== Creating a feature
+=== Creating a feature
 
 You can create a new feature project via the following menu path:
 menu:File[New > Other... > Plug-in Development > Feature Project].

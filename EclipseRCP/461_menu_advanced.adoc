@@ -1,7 +1,6 @@
 == View, popup and dynamic menus
 
 === View menus
-
 (((Menu, View / Part)))
 
 You can define one menu in a part as a _view menu_.
@@ -11,7 +10,6 @@ To add a view menu entry, select the _Menus_ entry under the part and append a _
 image::viewmenu10.png[Adding a View menu]
 
 === Popup menu (context menu)
-
 (((Menu, Popup)))
 
 You can also define a popup menu for SWT controls via the application model.
@@ -38,7 +36,6 @@ include::res/popup/table.java[]
 If you want to implement this example, your plug-in must have dependencies defined for the `org.eclipse.e4.ui.workbench.swt`, the `org.eclipse.e4.ui.services` and the `org.eclipse.e4.ui.model.workbench` plug-ins in its _MANIFEST.MF_ file.
 
 === Dynamic menu and toolbar entries
-
 (((Menu, Dynamic)))
 
 You can also create menu and toolbar entries at runtime with the _DynamicMenuContribution_ model element.

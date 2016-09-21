@@ -18,7 +18,6 @@ On the _Main_ tab in the field _Location_, you specify where the Eclipse IDE cre
 image::lauchconfiguration20.png[Shows the run configuration, highlighting the location setting]
 
 === Defining arguments
-
 (((Run arguments, Run configuration arguments)))
 (((Run configuration arguments, consoleLog)))
 (((Run configuration arguments, console)))

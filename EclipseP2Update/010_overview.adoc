@@ -2,7 +2,6 @@
 
 
 === Eclipse application updates
-
 (((Application updates)))
 (((Updates)))
 (((p2 updates)))

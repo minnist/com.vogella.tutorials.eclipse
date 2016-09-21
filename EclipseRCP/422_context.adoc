@@ -1,7 +1,6 @@
 == The Eclipse context
 
 === What is the Eclipse context?
-
 (((IEclipseContext, Eclipse context)))
 
 During startup of an Eclipse application the Eclipse runtime creates an object based on the `IEclipseContext` interface.
@@ -39,7 +38,6 @@ Currently the following model elements implement the `MContext` interface and th
 * MPopupMenu
 
 === Life cycle of the Eclipse context
-
 (((Eclipse context, Life cycle)))
 
 The Eclipse framework creates the context hierarchy based on the application model during the start process.
@@ -104,7 +102,6 @@ The context can be modified by the application code and the framework.
 As the Eclipse framework automatically tracks the dependencies of the objects it creates, it can update them as described in <<dependencyinjection_reinject>>.
 
 === Qualifiers for accessing the active part or shell
-
 (((IServiceConstants, ACTIVE_SHELL)))
 (((IServiceConstants, ACTIVE_PART)))
 

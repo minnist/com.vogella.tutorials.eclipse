@@ -1,5 +1,4 @@
 == Translating the application model
-
 (((i18n,Application model)))
 
 

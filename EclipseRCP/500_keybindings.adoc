@@ -81,7 +81,6 @@ It is better to use the M1 - M4 meta keys.
 These values are defined in the `SWTKeyLookup` class.
 
 === Activate bindings
-
 (((Key bindings, Activate)))
 
 If there are several valid key bindings defined, the `ContextSet` class is responsible for activating one of them by default.
@@ -92,7 +91,6 @@ The most specific binding context is considered first, the root one is considere
 You can also use the `EContextService` service which allows you to explicitly activate and deactivate a binding context via the `activateContext()` and `deactivateContext()` methods.
 
 === Key bindings for a part
-
 (((Key bindings, Part)))
 
 You can assign a specific binding context to be active while a part is active.

@@ -33,7 +33,6 @@ Prefer the usage of commands over the usage of direct (menu or tool) items.
 Using commands together with handlers allows you to define different handlers for different scopes (applications or part) and you can define key bindings for the handler's associated commands.
 
 === Behavior annotations and dependency injection for handler classes
-
 (((Behavior annotations, Handler)))
 
 In a handler class exactly one method must be annotated with the `@Execute` annotation.
@@ -109,7 +108,6 @@ You specify mnemonics by prefixing the letter intended to be the mnemonic with a
 For example, if you use the the label _&Save_, the S will be underlined if the kbd:[Alt] key is pressed.
 
 === Naming schema for command and handler IDs
-
 (((Naming conventions, Command IDs)))
 (((Naming conventions, Handler IDs)))
 

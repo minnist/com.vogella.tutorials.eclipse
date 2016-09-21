@@ -8,7 +8,6 @@ the
 source
 code
 and the variables during the execution.
-
 (((Breakpoint)))		
 By
 _breakpoints_

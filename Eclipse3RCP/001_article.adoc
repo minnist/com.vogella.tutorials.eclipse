@@ -14,7 +14,7 @@ Eclipse RCP.
 This tutorial describes how to develop Eclipse RCP applications with Eclipse 3.x API.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::../EclipsePlugIn/010_overview.adoc[]
+include::../EclipsePlugin/010_overview.adoc[]
 include::012_eclipse3x.adoc[]
 include::101_extensionpoints.adoc[]
 include::102_components.adoc[]

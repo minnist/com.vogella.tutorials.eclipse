@@ -62,7 +62,7 @@ The Eclipse open source project has a simultaneous release every
 year. Eclipse projects can choose to join this
 release but must
 fulfill the requirements described in the
-https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements - Release requirements wiki.
+https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[Release requirements wiki].
 		
 This simultaneous release includes new versions of the Eclipse
 IDE distributions.

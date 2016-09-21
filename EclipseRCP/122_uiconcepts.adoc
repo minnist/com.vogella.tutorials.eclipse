@@ -37,7 +37,6 @@ image::dirtyeditor10.png[Editor marked as dirty]
 
 
 === Available part containers
-
 (((Part sash container, Layout weight)))
 
 Parts can be directly assigned to a window or a perspective.

@@ -1,5 +1,4 @@
 == Download the Eclipse Software Development Kit (SDK)
-
 (((Download, Eclipse SDK)))
 
 The following description is based on the latest Eclipse 4.6 release.

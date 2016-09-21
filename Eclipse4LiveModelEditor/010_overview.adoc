@@ -1,6 +1,6 @@
-= Using the application model spy
+== Using the application model spy
 
-== Analyzing the application model with the model spy
+=== Analyzing the application model with the model spy
 	
 The application model of an Eclipse application is available at runtime.
 The application can access the model and change it via a defined API.
@@ -11,7 +11,7 @@ Most changes are directly applied, e.g., if you change the orientation of a part
 	
 In the model spy, you can select a part in the application model, right click on it and select _Show Control_ to get the part highlighted.
 	
-== Model spy and the Eclipse IDE
+=== Model spy and the Eclipse IDE
 	
 If installed you can also use the model spy to see the application model of the running Eclipse IDE itself. 
 You can open it via the kbd:[Alt+Shift+F9] shortcut.

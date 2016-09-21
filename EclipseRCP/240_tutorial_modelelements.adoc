@@ -1,4 +1,4 @@
-== Exercise: Modeling a User Interface
+== Modeling a User Interface
 
 === Target: Build the following user interface
 

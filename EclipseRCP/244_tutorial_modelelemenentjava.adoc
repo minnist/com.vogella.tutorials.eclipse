@@ -1,4 +1,4 @@
-== Exercise: Connect Java classes with the parts
+== Connect Java classes with the parts
 
 === Create a new package and some Java classes
 

@@ -1,14 +1,10 @@
-== Links and Literature
-	
-=== Eclipse plug-in development resources
+==  Eclipse plug-in development resources
 
 http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ[http://wiki.eclipse.org/Eclipse_Plug-in_Development_FAQ[Eclipse Plug-in Development FAQ]
 
 https://wiki.eclipse.org/Eclipse_Articles,_Tutorials,_Demos,_Books,_and_More[Wiki with link to Eclipse Articles, Tutorials, Demos, Books]
 
 https://wiki.eclipse.org/Eclipse_Corner[Eclipse tutorials hosted at Eclipse.org]
-
-=== Special Eclipse plug-in development topics
 
 http://www.eclipse.org/articles/article.php?file=Article-Adapters/index.html[Adapters in Eclipse]
 

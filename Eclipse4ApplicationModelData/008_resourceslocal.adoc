@@ -20,7 +20,7 @@ http://wiki.eclipse.org/Eclipse4/Tutorials[Eclipse wiki with Eclipse 4 tutorials
 		
 http://wiki.eclipse.org/Eclipse4/RCP/Dependency_Injection[Eclipse 4 dependency injection wiki]
 		
-http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags[Eclipse 4 RCP Wiki for tags for the application model]
+http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags[Eclipse application model tags wiki]
 
 http://www.eclipse.org/eclipse/platform-releng/buildSchedule.html[Eclipse 4 Build Schedule]
 		

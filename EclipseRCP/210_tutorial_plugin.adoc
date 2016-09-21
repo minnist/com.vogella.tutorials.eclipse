@@ -1,11 +1,9 @@
-== Exercise: Create an Eclipse plug-in
+== Create an Eclipse plug-in
 
 === Target
 
-In the following exercise you create a standard Eclipse
-plug-in.
-This plug-in is later converted into an Eclipse
-RCP application.
+In the following exercise you create a standard Eclipse plug-in.
+This plug-in is later converted into an Eclipse RCP application.
 
 
 [NOTE]

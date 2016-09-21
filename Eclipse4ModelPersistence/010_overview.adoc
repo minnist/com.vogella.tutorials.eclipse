@@ -48,7 +48,6 @@ image::tutorial_product70.png[]
 
 === Custom application model persistence handler
 (((Application model,Custom persistence handler)))
-
 Eclipse uses an instance of the
 `IModelResourceHandler`
 interface to load and save the application model at startup and

@@ -5,7 +5,6 @@
 (((Application updates)))
 (((Updates)))
 (((p2 updates)))
-		
 The Eclipse platform provides an installation and update mechanism called _Eclipse p2_ (short: p2).
 This update mechanism allows you to update Eclipse applications and to install new functions.
 		

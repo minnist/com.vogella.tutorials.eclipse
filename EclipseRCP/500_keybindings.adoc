@@ -82,7 +82,6 @@ These values are defined in the `SWTKeyLookup` class.
 
 === Activate bindings
 (((Key bindings, Activate)))
-
 If there are several valid key bindings defined, the `ContextSet` class is responsible for activating one of them by default.
 `ContextSet` uses the binding context hierarchy to determine the lookup order.
 A binding context is more specific depending on how many ancestors are between it and a root binding context (the number of levels it has).
@@ -92,7 +91,6 @@ You can also use the `EContextService` service which allows you to explicitly ac
 
 === Key bindings for a part
 (((Key bindings, Part)))
-
 You can assign a specific binding context to be active while a part is active.
 
 image::bindingcontextview10.png[BindingContent defined specific for a part]

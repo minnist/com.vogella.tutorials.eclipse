@@ -2,7 +2,6 @@
 
 === git reset
 (((Eclipse Git,reset)))
-		
 The
 _History_
 view

@@ -3,7 +3,6 @@
 (((CSS,Theming of Eclipse applications)))
 (((IThemeEngine,CSS)))
 (((cssTheme)))
-	
 You can define _themes_ for styling your application.
 This can be done via extensions in the _plugin.xml_ file.
 To create new themes you define extensions for the `org.eclipse.e4.ui.css.swt.theme` extension point. 

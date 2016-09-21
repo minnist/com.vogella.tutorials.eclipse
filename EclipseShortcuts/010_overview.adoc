@@ -2,7 +2,6 @@
 	
 The kbd:[Ctrl+3]
 (((Shortcuts,Quick Access)))
-
 shortcut allows you to perform all available actions in Eclipse. 
 This shortcut puts the focus into the _Quick Access_ (quick access)
 search box which allows you to execute any Eclipse

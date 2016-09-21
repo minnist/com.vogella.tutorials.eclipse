@@ -2,7 +2,6 @@
 
 === The role of a layout manager
 (((SWT,Layout manager)))
-
 A layout manager is
 responsible for arranging the user interface
 components

@@ -97,7 +97,6 @@ methods to synchronize with the main thread.
 
 === Eclipse Jobs API
 (((Concurrency,Job)))
-
 The Eclipse Jobs API provides support for running background
 processes and providing feedback
 about the progress of the

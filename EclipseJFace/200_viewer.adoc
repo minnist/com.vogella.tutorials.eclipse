@@ -1,6 +1,5 @@
 == Eclipse JFace Viewers
 (((JFace,Viewer)))
-
 === Purpose of the JFace viewer framework
 
 The

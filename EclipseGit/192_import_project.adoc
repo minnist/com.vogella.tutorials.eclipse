@@ -1,7 +1,6 @@
 == Import projects from an existing repository
 	
 (((Eclipse Git,import projects from repository)))
-	
 If you have already an existing Git repository
 you can add it to
 Eclipse and import the

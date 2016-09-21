@@ -1,6 +1,5 @@
 == Rebasing a branch onto another branch via Eclipse
 (((Eclipse Git,rebase)))
-
 The
 _Git Repositories_
 view

@@ -2,7 +2,6 @@
 
 === Using viewers to display a tree
 (((JFace,TreeViewer)))
-
 The
 `TreeViewer`
 class provides viewer support for displaying trees. The usage of this

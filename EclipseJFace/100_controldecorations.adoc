@@ -1,6 +1,5 @@
 == ControlDecoration
 (((JFace,ControlDecoration)))
-	
 The
 `ControlDecoration`
 class allows you to place image decorations on SWT controls to show

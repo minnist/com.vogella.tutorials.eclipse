@@ -1,6 +1,5 @@
 == Exporting Plug-ins and Products
 (((i18n,Export)))
-	
 The
 _build.properties_
 file in a plug-in defines which of the files are

@@ -14,12 +14,10 @@ This tutorial describes SWT the user interface toolkit used by the Eclipse frame
 
 include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_swtintro.adoc[]
-include::011_relationship.adoc[]
 include::012_usingswt.adoc[]
 include::013_install.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::014_widgets.adoc[]
-include::016_eventlistener.adoc[]
 include::020_tutorial_firstswtplugin.adoc[]
 include::020a_tutorial_firstswt.adoc[]
 include::021_tutorial_labeltext.adoc[]

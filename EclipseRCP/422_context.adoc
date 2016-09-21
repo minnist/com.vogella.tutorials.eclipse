@@ -2,7 +2,6 @@
 
 === What is the Eclipse context?
 (((IEclipseContext, Eclipse context)))
-
 During startup of an Eclipse application the Eclipse runtime creates an object based on the `IEclipseContext` interface.
 This object is called the _context_ or the _Eclipse context_.
 
@@ -39,7 +38,6 @@ Currently the following model elements implement the `MContext` interface and th
 
 === Life cycle of the Eclipse context
 (((Eclipse context, Life cycle)))
-
 The Eclipse framework creates the context hierarchy based on the application model during the start process.
 By default, it places certain objects under predefined keys into the context, e.g., services to control the Eclipse framework functionality.
 
@@ -104,7 +102,6 @@ As the Eclipse framework automatically tracks the dependencies of the objects it
 === Qualifiers for accessing the active part or shell
 (((IServiceConstants, ACTIVE_SHELL)))
 (((IServiceConstants, ACTIVE_PART)))
-
 The Eclipse platform places the part which is currently selected and the active shell into the `IEclipseContext` of the application object. The related keys are defined in the `IServiceConstants` interface.
 
 For example, the following method would allow you to track the current active part in another part.

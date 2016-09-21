@@ -1,6 +1,5 @@
 == Clone an existing repository
 (((Eclipse Git,clone repository)))
-
 Eclipse
 allows you to clone an existing Git repository and to
 import existing

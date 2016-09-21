@@ -28,7 +28,6 @@ _model fragments_.
 === Connecting model elements to classes and resources
 (((Class URI, bundleclass://)))
 (((Class URI, platform:/plugin/)))
-
 Model elements can point to a class or to a static resource via a Uniform Resource Identifier (URI).
 For this purpose Eclipse defines two URI patterns.
 Eclipse instantiates the referred objects or resources in most cases lazily.

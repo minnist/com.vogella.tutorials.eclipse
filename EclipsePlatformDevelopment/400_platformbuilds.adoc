@@ -3,7 +3,6 @@
 
 === Building the Eclipse IDE
 (((Eclipse IDE build)))
-
 Eclipse uses a Maven based build system for automated builds using the Maven Tycho plug-in. 
 Using this build system, you can create your custom build of the Eclipse IDE. 
 If you building the Eclipse IDE from the current master branch you get an IDE based on the latest developments of the Eclipse development team.

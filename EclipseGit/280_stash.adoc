@@ -1,6 +1,5 @@
 == Stash via the Git repository view
 (((Eclipse Git,stash via the Git repositories view)))
-	
 The `git stash` command is available in the _Git repositories_ view. 
 Right-click on your Git repository and select _Stash Changes_.
 	

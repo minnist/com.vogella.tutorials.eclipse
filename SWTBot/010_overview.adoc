@@ -1,8 +1,6 @@
 == User interface testing with SWTBot
 (((Testing, SWTBot)))
 (((Testing, User interface testing)))
-
-	
 _SWTBot_ is an Eclipse project which supports testing the user interface of an SWT based application.
 SWTBot provides an API which allows you to interact with the user interface of the application.
 It supports validation of certain conditions on the user interface.

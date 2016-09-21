@@ -1,6 +1,5 @@
 == The Eclipse workspace and Git repositories
 (((Eclipse Git,Workspaces and Git repositories)))
-	
 It is good
 practice to
 place your Git

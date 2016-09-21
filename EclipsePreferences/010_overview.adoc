@@ -5,7 +5,6 @@
 (((Preferences,Configuration scope)))
 (((Preferences,Default scope)))
 (((Preferences,BundleDefaultsScope)))
-
 The Eclipse platform supports
 _preferences_
 for persisting data between application restarts. Preferences are

@@ -1,7 +1,6 @@
 == Eclipse integration with GitHub
 (((GitHub, Mylyn integration)))
 (((Mylyn, GitHub integration)))
-
 === The Eclipse Mylyn plug-in
 		
 Eclipse Mylyn provides task integration for GitHub issues,

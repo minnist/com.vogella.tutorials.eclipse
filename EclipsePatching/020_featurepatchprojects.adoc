@@ -2,7 +2,6 @@
 
 === Feature patch projects
 (((Feature patch projects)))
-
 If you want to modify standard Eclipse plug-ins, you can use _Feature Patch Projects_.
 A Feature Patch Project	can contain plug-ins which replace existing plug-ins. 
 This would allow you to create an update site for this feature and users can use your version of the modified code.

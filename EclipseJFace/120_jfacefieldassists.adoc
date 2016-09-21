@@ -1,6 +1,5 @@
 == User input help with field assistance
 (((JFace,Field assistance)))
-	
 The
 `org.eclipse.jface.fieldassist`
 package provides

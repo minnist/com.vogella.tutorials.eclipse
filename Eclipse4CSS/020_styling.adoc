@@ -115,7 +115,6 @@ NOTE:  Please note that the current gradient specification is not compliant with
 
 === CSS imports
 (((CSS, Import statement)))
-
 Eclipse supports also the import of existing stylesheets via the `@import` directive using the platform URI notation.
 If you import CSS files from another plug-in, it  requires that the plug-in which contains the imported CSS file is included in your product configuration file.
 

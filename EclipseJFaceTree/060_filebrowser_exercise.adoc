@@ -1,5 +1,5 @@
 [[jfacefilebrowser]]
-== Exercise: File browser via a TreeViewer
+== Optional Exercise: File browser via a TreeViewer
 
 === Create a new application
 

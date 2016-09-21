@@ -5,7 +5,6 @@
 (((Eclipse styling, CSS)))
 (((CSS,Styling of Eclipse applications))))
 (((applicationCSS)))
-		
 The visual appearance of your Eclipse application can be styled via external files similar to the CSS 2.1 standard.
 CSS selectors used in Eclipse are identifiers, which relate to widgets or other elements, for example predefined pseudo classes. 
 Non-standard properties are prefixed with either `swt-` or `eclipse-`.

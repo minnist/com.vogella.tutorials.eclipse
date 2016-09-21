@@ -2,7 +2,6 @@
 
 === Defining services the declarative way
 (((OSGi,Declarative services)))
-
 The OSGi
 _declarative services_
 (DS) functionality allows you to define and consume

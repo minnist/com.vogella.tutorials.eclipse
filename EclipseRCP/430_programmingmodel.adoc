@@ -28,7 +28,6 @@ This is why the Eclipse 4.x does not use this approach anymore.
 === API definition via annotations
 (((Behavior annotations, Parts)))
 (((Annotations, Behavior)))
-
 The Eclipse 4.x platform API is based on annotations, e.g., annotations are used to identify which methods should be called at a certain point in time.
 These annotations are called _behavior annotations_.
 

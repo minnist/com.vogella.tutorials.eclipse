@@ -70,7 +70,6 @@ object.
 
 === Converter
 (((JFace Data Binding,Converter)))
-
 _Converters_
 allow to convert the values between the observed properties. Converters are defined based on the
 `IConverter`
@@ -117,7 +116,6 @@ include::res/snippets/Converter.java[]
 
 === Validator
 (((JFace Data Binding,Validator)))
-
 A _validator_
 allows you to implement validation of the data before it is propagated
 to

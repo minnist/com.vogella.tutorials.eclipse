@@ -8,14 +8,12 @@ This description highlights the special Eclipse 4 constructs.
 
 === Fragment projects
 (((Fragment projects,Tests)))
-
 Tests for Eclipse plug-ins are typically contained in a fragment project. 
 This way the tests can access all classes in their host plug-in.
 
 
 === Testing user interface components
 (((Testing,User interface components)))
-
 Eclipse classes that are using the application model have no hard dependency on the Eclipse framework. 
 Therefore you can test these components directly with JUnit.
 
@@ -42,7 +40,6 @@ Your test class can create the class, provide the required dependencies and run 
 
 === Testing dependency injection
 (((Testing,Using dependency injection in your tests)))
-
 You can include the process of dependency injection into the test.
 Create your own `IEclipseContext` and use the `ContextInjectionFactory.make()` method to create the object which should be tested.
 

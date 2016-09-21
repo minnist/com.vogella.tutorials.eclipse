@@ -1,6 +1,5 @@
 == Navigation
 (((Shortcuts,Navigation)))
-
 === Globally available navigation shortcuts
 
 Eclipse provides shortcuts for opening files or Java artifacts.

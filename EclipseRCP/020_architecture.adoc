@@ -31,7 +31,6 @@ _EMF_ is the Eclipse Modeling Framework which provides functionality to model a 
 
 === Eclipse API and internal API
 (((Provisional API, Internal API)))
-
 An OSGi runtime allows the developer to mark Java packages as public, provisional or internal APIs.
 The internal API is private, therefore not visible. The provisional API are to test non-finalized APIs, therefore are visible but non-stable.
 The public API, or simply API, are the visible and stable API, that can be reused by other components.

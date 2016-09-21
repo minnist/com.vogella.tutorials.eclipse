@@ -2,7 +2,6 @@
 
 === Support for interactive rebase in Eclipse
 (((Eclipse Git,Interactive rebase)))
-
 Git allows to adjust the existing commit history the interactive rebase functionality. Eclipse supports this
 functionality
 rebase via the
@@ -13,7 +12,6 @@ view.
 
 === Actions available via the History view
 (((Eclipse Git,Interactive rebase via the History view)))
-
 To reword a commit, right-click on it in the
 _History_
 view and select
@@ -35,7 +33,6 @@ rebase.
 
 === Using the Git Interactive Rebase view
 (((Eclipse Git,Interactive rebase via the Git Interactive Rebase view)))
-
 The
 _Git Interactive Rebase_
 view allow you to change the order of commits, combine or remove commits, adjust commits and change the commit

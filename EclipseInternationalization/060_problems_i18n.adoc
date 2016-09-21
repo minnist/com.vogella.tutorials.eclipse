@@ -1,6 +1,5 @@
 == Common problems with i18n
 (((i18n,Problems)))
-
 * If the translations are not available in the exported product, ensure that the
 property
 files are included in the export.

@@ -1,7 +1,6 @@
 == Installation
 	
 (((Mylyn,installation)))
-	
 Most Eclipse downloads contain Mylyn already. If you need to install
 it you can use the
 _update manager_

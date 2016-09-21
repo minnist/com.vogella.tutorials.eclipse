@@ -1,6 +1,5 @@
 == Using Mylyn to integrate with Bugzilla
 (((Mylyn,bugzilla integration)))
-
 The following description explains how you can use Mylyn to
 work on
 bugs and feature requests which are tracked in the

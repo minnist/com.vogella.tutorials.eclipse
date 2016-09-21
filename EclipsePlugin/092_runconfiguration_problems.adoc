@@ -55,7 +55,6 @@ You can check the current setting in your _plugin.xml_ file on the _Extensions_ 
 === Finding missing plug-in dependencies during a product launch
 (((Finding missing plug-in dependencies during a product launch)))
 (((Launch configuration, Problems)))
-
 The most common problem is that some required plug-ins are missing in your product.
 If you are using a feature based product configuration, you need to ensure that all plug-ins which are referred to in the MANIFEST.MF file are also included in your features. This error is reported in the _Console_ view, typically it is one of the first error messages and you need to scroll up to see it.
 

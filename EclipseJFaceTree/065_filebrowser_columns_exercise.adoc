@@ -1,4 +1,4 @@
-== Exercise: Add multiple columns to a tree viewer
+== Optional exercise: Add multiple columns to a tree viewer
 
 NOTE: This exercise assumes that <<jfacefilebrowser>> has been done, since this exercise is based on it.
 

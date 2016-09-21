@@ -1,7 +1,5 @@
 == Translating the application model
 (((i18n,Application model)))
-
-
 The translation key can be specified in your application model via the
 _%key_ reference. This usage is demonstrated via the following screenshot of the model data for a part.
 

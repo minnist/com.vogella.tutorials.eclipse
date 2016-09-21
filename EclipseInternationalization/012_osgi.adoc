@@ -1,7 +1,6 @@
 [[i18n_osgi]]
 == OSGi resource bundles
 (((i18n,OSGi resource bundles)))
-	
 For the translation of the plugin.xml and application model files the
 Eclipse runtime uses by default OSGi
 resource

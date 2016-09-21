@@ -3,7 +3,6 @@
 
 === Using the update manager
 (((Installation,e4 tools)))
-
 The e4 tools provide the tools to develop Eclipse 4 RCP applications.
 These tools provide wizards to create Eclipse application artifacts and an application model editor. 
 They can be installed into the Eclipse SDK via the Eclipse default update site.

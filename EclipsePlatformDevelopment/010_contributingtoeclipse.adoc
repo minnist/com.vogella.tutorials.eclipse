@@ -43,20 +43,18 @@ These are described here.
         
 ==== The Eclipse Platform project
 (((Platform project)))
-
 The _Eclipse Platform_ project provides the core frameworks and services upon which all Eclipse based applications are created. 
 It also provides the runtime in which Eclipse components are loaded, integrated, and executed. 
 The primary purpose of the _Eclipse Platform_ project is to enable other developers to easily build and deliver integrated tools and applications.
 
 ==== The Eclipse Plug-in Development Environment (PDE)
-(((PDE))) ((((Plug-in Development Environment)))
-
+(((PDE)))
+((((Plug-in Development Environment)))
 The Eclipse Plug-in Development Environment (PDE) project provides wizards for creating Eclipse RCP applications and plug-ins, editors and other tools to develop Eclipse plug-ins.
 
         
 ==== The Eclipse e4 project
 ((((e4 project)))
-
 _Eclipse e4_ is the name used for the _Eclipse Platform_ incubator project.
 This incubator is used for exploratory projects relating to improving the Eclipse Platform.
 

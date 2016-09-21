@@ -1,6 +1,5 @@
 == JFace resource manager for Colors, Fonts and Images
 (((JFace,Resource manager)))
-	
 SWT
 is based on the native widgets of the OS. Whenever an
 SWT

@@ -1,6 +1,5 @@
 == Source code translation with NLS support
 (((i18n,Source code)))
-
 === NLS compared to the Eclipse translation service
 
 WARNING: This part of the description is included for completeness. It describes the NLS approach for translation. This

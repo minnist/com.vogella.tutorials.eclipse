@@ -3,7 +3,6 @@
 === Translation of a Java applications
 (((Translation,see=i18n)))
 (((Internationalization,see=i18n)))
-
 The process of preparing an application for being translated into
 several languages is called
 _internationalization_. 
@@ -16,7 +15,6 @@ and is abbreviated to _l10n_.
 [[i18n_propertyfiles]]
 === Property files
 (((i18n,Property files)))
-
 Java applications are typically translated via
 _property_
 files. Such a file
@@ -108,7 +106,6 @@ configuration file.
 
 === Setting the language in the launch configuration
 (((i18n,Setting the language via launch parameter)))
-
 By default Eclipse uses
 the
 language configured in the operating

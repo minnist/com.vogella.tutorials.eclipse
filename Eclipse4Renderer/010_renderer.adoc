@@ -89,7 +89,6 @@ and injects it into the local context of each part.
 
 === Using a custom renderer
 (((Renderer,Custom implementation)))
-
 The Eclipse platform allows you
 to extend or exchange the
 default

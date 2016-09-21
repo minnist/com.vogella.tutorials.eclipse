@@ -1,7 +1,6 @@
 [[i18n_plugin]]
 == Translating plugin.xml
 (((i22n,plugin.xml)))
-	
 Similar to the usage of keys in the application model, you can use the key prefixed with % in the
 _plugin.xml_
 file. The Eclipse tooling supports extracting existing

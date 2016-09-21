@@ -1,6 +1,5 @@
 == Using declarative services in RCP applications
 (((Product configuration file,Start level)))
-	
 The Eclipse RCP framework automatically starts the required
 plug-ins for using declarative OSGi service.
 It is not

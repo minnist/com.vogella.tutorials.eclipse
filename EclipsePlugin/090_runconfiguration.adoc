@@ -24,7 +24,6 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 (((Run configuration arguments, nl)))
 (((Run configuration arguments, noExit)))
 (((Run configuration arguments, clearPersistedState)))
-
 The run configuration allows you to add additional start arguments for your application on the _Arguments_ tab.
 By default Eclipse includes already several parameters, e.g. parameters for _-os_,_-ws_
 and _-arch_ to specify the architecture on which the application is running.

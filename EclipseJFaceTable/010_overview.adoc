@@ -2,7 +2,6 @@
 
 === Using the JFace TableViewer
 (((JFace,TableViewer)))
-		
 You can use the
 `TableViewer`
 class to create tables using the JFace framework. The SWT

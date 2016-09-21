@@ -1,6 +1,5 @@
 == SWT dialogs
 (((Dialog,SWT)))
-
 SWT provides an API to use the native dialogs from the OS
 platform.
 The

@@ -1,6 +1,5 @@
 == Blame annotations
 (((Eclipse Git,blame)))
-
 The Git tooling in Eclipse allows displaying annotations to see which
 line
 was last changed by

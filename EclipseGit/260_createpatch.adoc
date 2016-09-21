@@ -1,6 +1,5 @@
 == Creating patches
 (((Eclipse Git,patch)))
-	
 To create a patch for a set of changes with Eclipse Git, select the
 resources
 for which you want to create a patch in the

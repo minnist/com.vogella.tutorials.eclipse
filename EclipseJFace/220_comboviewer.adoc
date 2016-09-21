@@ -1,6 +1,5 @@
 == JFace ComboViewer
 (((JFace,ComboViewer)))
-	
 A simple example for a JFace Viewer framework is the
 `ComboViewer`
 class. Assume the following data model.

@@ -1,6 +1,5 @@
 == Adding extensions to extension points
 (((Extension points and extensions,adding extensions)))
-	
 The Eclipse IDE provides an
 editor for the
 _plugin.xml_

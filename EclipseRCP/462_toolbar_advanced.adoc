@@ -2,7 +2,6 @@
 
 === Adding toolbars to parts
 (((Toolbar, View / Part)))
-
 Toolbars in the application model are defined within the _Trimbars_ model element.
 A trimbar can be defined for _TrimmedWindow_ model elements.
 Via its _Side_ attribute you define if the trimbar should be placed on the top, left, right or bottom corner of the resulting window.
@@ -34,7 +33,6 @@ image::toolitem_search10.png[Resulting application with a search Toolitem]
 
 === Drop-down tool items
 (((Toolbar, Drop-down)))
-
 Set the _Menu_ attribute on an toolitem to be able to define a menu similar to the btn:[Run As...] button in the Eclipse IDE.
 This button is depicted in the following screenshot.
 

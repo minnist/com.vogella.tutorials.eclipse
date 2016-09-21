@@ -1,6 +1,5 @@
 == Using the Git Staging view
 (((Eclipse Git,Staging view)))
-	
 Eclipse gives you several options to stage and commit your changes.
 The
 _Git Staging_

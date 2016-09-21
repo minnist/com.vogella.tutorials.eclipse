@@ -8,7 +8,7 @@ the
 source
 code
 and the variables during the execution.
-(((Breakpoint)))		
+(((Breakpoint)))
 By
 _breakpoints_
 in the source code you specify where the execution of the

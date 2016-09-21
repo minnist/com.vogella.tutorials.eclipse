@@ -1,6 +1,5 @@
 == Branching in Eclipse
 (((Eclipse Git,branching)))
-	
 Right-click your project and select
 menu:Team[Branch]
 to create new branches or to switch between existing

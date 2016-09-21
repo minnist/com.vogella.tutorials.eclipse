@@ -21,7 +21,6 @@ TIP: Remember to reset your name, after you returned from vacation.
 
 === Updating the copyright header of a source file
 (((Copyright header update)))
-
 The Eclipse project allows you optionally to update the last changed date in the copyright header, if you change the file. 
 You can do this manually but the Eclipse releng project also provides tooling for that.
 		

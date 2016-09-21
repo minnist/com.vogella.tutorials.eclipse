@@ -34,7 +34,6 @@ Using commands together with handlers allows you to define different handlers fo
 
 === Behavior annotations and dependency injection for handler classes
 (((Behavior annotations, Handler)))
-
 In a handler class exactly one method must be annotated with the `@Execute` annotation.
 In additional, you can also annotate one method with the `@CanExecute` annotation.
 If you annotate more than one method with the same annotation, the framework calls only one of them.
@@ -110,7 +109,6 @@ For example, if you use the the label _&Save_, the S will be underlined if the k
 === Naming schema for command and handler IDs
 (((Naming conventions, Command IDs)))
 (((Naming conventions, Handler IDs)))
-
 A good convention is to start IDs with the _top level package name_ of your project and to use only lower case letters.
 
 The IDs of commands and handlers should reflect their relationship.

@@ -1,37 +1,18 @@
 == OSGi Services
 
 === What are OSGi services?
-(((OSGi,Services)))	
-(((Services (OSGi),seealso=Eclipse services)))
-		
+(((OSGi,Services)))
+(((Services, OSGi)))
 A _service_ in OSGi is defined by a standard Java class or an interface.
-The first step to define an OSGi service is to define the
-class
-or interface for which you want to provide a
-service.
-This is called the
-_service interface_.
+The first step to define an OSGi service is to define the class or interface for which you want to provide a service.
+This is called the _service interface_.
 		
-As a second step you write the implementation
-class for the service interface.
+As a second step you write the implementation class for the service interface.
 		
-You can
-register services implementations and consume existing services via the OSGi
-runtime.
-OSGi provides
-a
-central
-_service registry_
-for this purpose.
+You can register services implementations and consume existing services via the OSGi runtime.
+OSGi provides a central _service registry_ for this purpose.
 		
-A
-service
-can be dynamically started and stopped,
-and plug-ins
-which use
-services
-must be able to handle this dynamic
-behavior.
+A service can be dynamically started and stopped, and plug-ins which use services must be able to handle this dynamic behavior.
 The
 plug-ins can
 register

@@ -1,6 +1,5 @@
 == JFace Dialogs
 (((Dialog,JFace)))
-
 === Dialogs from JFace
 
 JFace contains several

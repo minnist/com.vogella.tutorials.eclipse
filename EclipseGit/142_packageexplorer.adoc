@@ -1,6 +1,5 @@
 == Git integration into the Package and the Project Explorer
 (((Eclipse Git,Package Explorer integration)))
-
 The
 _Package Explorer_
 view

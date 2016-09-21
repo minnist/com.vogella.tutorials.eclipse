@@ -2,7 +2,6 @@
 
 === Using JFace data binding
 (((Data binding, seealso=JFace data binding)))
-
 The
 _JFace data binding_
 framework allows to synchronize changes in

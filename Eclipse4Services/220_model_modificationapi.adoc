@@ -2,7 +2,6 @@
 
 === Creating model elements
 (((Application model, Runtime modification)))
-
 As the application model is interactive, you can change it at runtime.
 For example you can add parts to your application or remove menu entries.
 

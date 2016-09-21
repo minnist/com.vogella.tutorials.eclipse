@@ -36,7 +36,6 @@ image::training_product30.png[Entering the product details]
 === Configure the start levels
 (((Start level in a product)))
 (((Product Configuration, Start Level)))
-
 Switch to the _Configuration_ tab in the product editor and press the btn:[Add Recommended...] button.
 These settings are for example used by the Maven/Tycho build system,hence it is good practice to configure them.
 

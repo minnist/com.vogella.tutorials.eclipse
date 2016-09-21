@@ -2,7 +2,6 @@
 
 === ControlDecorators
 (((JFace Data Binding,ControlDecorators)))
-		
 JFace Data Binding allows you to use icon decorators in
 the user
 interface which reflect the status of the field
@@ -47,7 +46,6 @@ image::SelectObservableValue.png[]
 
 === Listening to all changes in the binding
 (((JFace Data Binding,Listener)))
-		
 You can register a listener to all bindings of the
 `DataBindingContext`
 class. Your listener will be called when something has changed.
@@ -66,7 +64,6 @@ include::res/editor/dirty.java[]
 
 === Placeholder binding with WritableValue
 (((JFace Data Binding,WritableValue)))
-		
 You can create bindings to a
 `WritableValue`
 object.

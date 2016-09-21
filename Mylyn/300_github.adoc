@@ -2,7 +2,6 @@
 
 === GitHub connector
 (((Mylyn,GitHub integration)))
-
 The Mylyn GitHub connector allows integrating GitHub issues,
 Pull requests and Gists.
 

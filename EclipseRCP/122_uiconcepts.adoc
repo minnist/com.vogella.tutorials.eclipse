@@ -38,7 +38,6 @@ image::dirtyeditor10.png[Editor marked as dirty]
 
 === Available part containers
 (((Part sash container, Layout weight)))
-
 Parts can be directly assigned to a window or a perspective.
 They can also be grouped and arranged via additional model elements, i.e., via part stack (_Part Stack_) or via part sash container (_Part Sash Container_) elements.
 

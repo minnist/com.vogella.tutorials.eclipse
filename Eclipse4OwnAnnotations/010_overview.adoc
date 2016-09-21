@@ -1,6 +1,5 @@
 == Custom annotations
 (((Annotations,Custom annotations processors)))
-
 === Custom annotations in Eclipse
 		
 The Eclipse platform uses dependency injection as the primary

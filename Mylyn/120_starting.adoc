@@ -2,7 +2,6 @@
 
 === Task List view
 (((Mylyn,Task List view)))
-		
 The
 _Task List_
 view
@@ -18,7 +17,6 @@ image::mylyn10.png[Task List View]
 
 === Create new tasks
 (((Mylyn,create tasks)))
-		
 To create a new task press the
 btn:[New Task] button or right-click in the
 _Task List_
@@ -37,7 +35,6 @@ image::mylyn30.png[Selecting local repository]
 
 === Activate a task
 (((Mylyn,activate tasks)))
-		
 To start working on a task, select the
 btn:[Activate task] button. If the task has already captured a
 _context_
@@ -78,7 +75,6 @@ it. The context of the task will be restored.
 
 === Create task from Problems view
 (((Mylyn,create task from Problems views)))
-		
 You can create a new Mylyn task from the
 _Problems_
 view
@@ -91,7 +87,6 @@ image::problemsview_marker10.png[Problems View]
 
 === Export and import your tasks
 (((Mylyn,export and import tasks)))
-		
 Mylyn allows you to export and import your local tasks. Select
 your
 categories or tasks in the

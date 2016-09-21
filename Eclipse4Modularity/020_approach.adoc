@@ -2,7 +2,6 @@
 
 === Model fragments
 (((Application model,Fragments)))
-		
 A model
 _fragment_
 is a file which typically ends with the
@@ -31,7 +30,6 @@ _Extract into a fragment_ from the context menu.
 
 === Model processors
 (((Application model,Processors)))
-		
 A
 _processor_
 allows you to contribute to the model via program code. This enables

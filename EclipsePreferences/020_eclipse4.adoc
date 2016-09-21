@@ -1,8 +1,6 @@
 == Preferences and dependency injection
 (((Preferences,Dependency injection)))
-	
 (((IEclipsePreference, seealso=Preferences)))
-	
 The Eclipse platform allows you to use dependency injection for
 preferences handling.
 To access preference you use the

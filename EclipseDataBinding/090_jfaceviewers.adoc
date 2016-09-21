@@ -2,7 +2,6 @@
 
 === Binding Viewers
 (((JFace Data Binding,Viewer binding)))
-
 JFace data binding provides functionality to bind the data of
 JFace
 viewers.

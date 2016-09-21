@@ -1,12 +1,8 @@
-== Links and Literature
-
-=== JFace resources
+== JFace resources
 
 http://wiki.eclipse.org/index.php/JFaceSnippets[JFace snippets, e.g., small code examples]
 
 http://eclipse.org/nattable/[NatTable[Flexible Table / Data Grid]
-
-=== Other JFace Resources
 
 http://www.vogella.com/tutorials/SWT/article.html[Eclipse SWT Tutorial]
 

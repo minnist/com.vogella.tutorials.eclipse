@@ -66,19 +66,7 @@ properties of the
 original
 _message.properties_
 file.
-The
-following listing shows how you
-would override the buttons of a
-JFace
-`Wizard`
-class in a
-_message_de.properties_
-file.
 
-[source,java]
-----
-include::res/jface/message.example[]
-----
 
-image::jface_translation_fragment_packagestructure.png[width=60,Package structure of the JFace fragment]
+image::jface_translation_fragment_packagestructure.png[Package structure of the JFace fragment]
 

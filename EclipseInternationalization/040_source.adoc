@@ -35,7 +35,7 @@ translate and
 select
 menu:Source[Externalize Strings].
 		
-image::i22n_source10.png[Externalizing strings in source files dialog,width=60]
+image::i22n_source10.png[Externalizing strings in source files dialog]
 		
 Please note that the
 _Use Eclipse's string externalization mechanism_

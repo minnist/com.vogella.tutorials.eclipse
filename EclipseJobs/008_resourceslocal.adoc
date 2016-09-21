@@ -1,6 +1,4 @@
-== Links and Literature
-
-=== Eclipse Jobs resources
+== Eclipse Jobs resources
 		
 http://www.vogella.com/tutorials/JavaConcurrency/article.html[Java Concurrency Tutorial]
 		

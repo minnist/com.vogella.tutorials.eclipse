@@ -2,41 +2,16 @@
 
 === Application communication
 
-A simple way of propagating user interface selections is the
-selection service (
-`ESelectionService`
-) of the Eclipse platform. Use this service to
-propagate the current
-selection of a window.
+A simple way of propagating user interface selections is the selection service (`ESelectionService`) of the Eclipse platform. 
+Use this service to propagate the current selection of a window.
 
-For general scoped communication it is recommended to use the
-Eclipse
-context (
-`IEclipseContext`
-).
+For general scoped communication it is recommended to use the Eclipse context (`IEclipseContext`).
 
-The event service (
-`IEventBroker`
-)
-is a good choice, if there is no scope involved in the
-communication
-and if the events should not be persisted in the
-Eclipse context. The
-strengths of
-the event service
-is
-that arbitrary
-listeners can listen to
-events and that the
-publish
-and
-subscribe mechanism is relatively
-simple.
+The event service (`IEventBroker`)is a good choice, if there is no scope involved in the communication and if the events should not be persisted in the Eclipse context.
+The strengths of the event service is that arbitrary listeners can listen to  events and that the publish and subscribe mechanism is relatively simple.
 
-Frequently the event service is also used together with a
-modification of the Eclipse context. The following
-section contains
-an example for this.
+Frequently the event service is also used together with a modification of the Eclipse context. 
+The following section contains an example for this.
 
 === Example: Using events together with the IEclipseContext
 

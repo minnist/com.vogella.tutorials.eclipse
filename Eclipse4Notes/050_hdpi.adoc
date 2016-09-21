@@ -51,7 +51,10 @@ export SWT_GTK3=0
 
 The Eclipse platform has been extended to support HDPI icons. 
 If you provide only one size of the icons, the platform will scale the icon.
-You can provide icons with different sizes by using the @2x convension.
+You can provide png icons with different sizes by using the @2x convension.
+
+NOTE: Use png icons instead of gif icons to support real transparency needed for dark themes.
+
 Your 16x16 pixel icon would be the default and your 32x32 pixel icon would be picked on HDPI displays.
 
 For example:

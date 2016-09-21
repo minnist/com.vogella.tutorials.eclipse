@@ -63,8 +63,7 @@ by using the
 pattern
 _?before=ID_
 or
-_?after=ID_
-.
+_?after=ID_.
 		
 The ID
 can

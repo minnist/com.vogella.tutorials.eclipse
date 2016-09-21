@@ -12,8 +12,7 @@ or
 editors
 based on the
 definition in
-_plugin.xml_
-.
+_plugin.xml_.
 		
 		
 Migrating such components would involve:

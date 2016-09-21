@@ -13,8 +13,7 @@ A release after Eclipse 4.2 might make the dialogs directly
 available again.
 
 Here is a list of these
-_Dialogs_
-.
+_Dialogs_.
 
 * ElementListSelectionDialog
 * ListDialog

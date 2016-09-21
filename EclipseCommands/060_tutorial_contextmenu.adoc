@@ -14,8 +14,7 @@ Create a new command with the
 `de.vogella.rcp.intro.commands.popup.showSelected`
 ID
 and the name
-_Show_
-.
+_Show_.
 	
 In this example we will not use the default handler. Therefore
 add the

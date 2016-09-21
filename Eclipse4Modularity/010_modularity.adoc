@@ -19,8 +19,7 @@ Model contributions can be statically defined in files.
 These extensions are called
 fragments
 or
-_model fragments_
-. Model contributions can also extend the model dynamically via code.
+_model fragments_. Model contributions can also extend the model dynamically via code.
 These extensions are called
 _processors_
 or

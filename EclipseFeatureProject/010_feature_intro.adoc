@@ -4,8 +4,7 @@ Using the Eclipse wizards you can create feature projects, similarly on how you 
 An
 Eclipse
 feature project contains
-_features_
-.
+_features_.
 	
 A
 feature

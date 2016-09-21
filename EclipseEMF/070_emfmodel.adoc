@@ -13,8 +13,7 @@ on the root node of the
 _.genmodel_
 file
 and select
-_Generate Model Code_
-. This
+_Generate Model Code_. This
 creates the
 Java
 implementation of the

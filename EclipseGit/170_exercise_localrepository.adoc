@@ -62,8 +62,7 @@ directories which apply to the pattern described
 in this
 file will be
 ignored by
-_Git_
-. In this example all files in the
+_Git_. In this example all files in the
 _bin_
 are
 be ignored.
@@ -228,16 +227,14 @@ To validate that, create two more Java
 projects called
 _com.vogella.egit.multi.java1_
 and
-_com.vogella.egit.multi.java2_
-. Create at least one Java class in each project.
+_com.vogella.egit.multi.java2_. Create at least one Java class in each project.
 
 Afterwards
 select both projects, right-click on
 them and select
 menu:Team[Share Project... > Git]
 . If asked by the Eclipse IDE, select that you want to use
-_Git_
-.
+_Git_.
 
 Select your Git repository outside
 and add both projects to this repository and press the

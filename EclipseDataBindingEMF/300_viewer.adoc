@@ -4,8 +4,7 @@ Create an RCP project called
 _de.vogella.databinding.emf.table_
 based on
 the
-_RCP application with a view_
-. Add the
+_RCP application with a view_. Add the
 `org.eclipse.emf.ecore`
 plug-in as a
 plug-in dependency.

@@ -28,8 +28,7 @@ and
 afterwards
 _Generate
 Editor Code
-_
-.
+_.
 
 image::emfeditor10.gif[]
 

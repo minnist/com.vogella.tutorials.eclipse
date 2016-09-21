@@ -115,8 +115,7 @@ loaded from
 the root of the bundle. You can also add JAR files to
 it, these
 are called
-_nested JAR files_
-.
+_nested JAR files_.
 
 |===
 

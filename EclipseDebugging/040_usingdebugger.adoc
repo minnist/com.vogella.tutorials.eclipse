@@ -8,8 +8,7 @@ margin in your
 source
 code editor
 and select
-_Toggle Breakpoint_
-. Alternatively you can
+_Toggle Breakpoint_. Alternatively you can
 double-click
 on this position.
 

@@ -4,8 +4,7 @@
 		
 The application model allows you to create
 model objects called
-_add-ons_
-. These components
+_add-ons_. These components
 can
 enhance
 the

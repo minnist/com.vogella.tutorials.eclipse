@@ -71,8 +71,7 @@ To run this program, include the
 _JAR_
 file
 in your
-_classpath_
-. The
+_classpath_. The
 _classpath_
 defines which Java classes are available to the Java
 runtime. You can

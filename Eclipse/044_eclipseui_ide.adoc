@@ -24,8 +24,7 @@ _Java Perspective_
 _perspectives_
 , e.g., the
 _Debug_
-_perspective_
-.
+_perspective_.
 		
 Eclipse allows you to
 switch to another
@@ -88,8 +87,7 @@ select the corresponding
 _.java_
 file and double-click it. This will open the file in the
 default Java
-_editor_
-.
+_editor_.
 		
 The following picture shows the default Java
 perspective. The

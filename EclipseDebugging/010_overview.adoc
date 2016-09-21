@@ -24,8 +24,7 @@ _Breakpoints_
 and
 _watchpoints_
 can be summarized as
-_stop points_
-.
+_stop points_.
 		
 Once the program is stopped you can investigate variables,
 change their content, etc.
@@ -34,15 +33,13 @@ change their content, etc.
 		
 Eclipse allows you to start a Java program
 in
-_Debug mode_
-.
+_Debug mode_.
 		
 Eclipse has a special
 _Debug_
 _perspective_
 which gives you a preconfigured set of
-_views_
-. In this
+_views_. In this
 _perspective_
 you
 control the execution

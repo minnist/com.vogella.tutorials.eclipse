@@ -116,8 +116,7 @@ The predefined name and location of the splash screen image can be
 changed via the
 _osgi.splashPath_
 parameter, the file name can be changed with the
-_-showsplash path_to_file_
-.
+_-showsplash path_to_file_.
 
 === Icons, launcher name and program arguments
 

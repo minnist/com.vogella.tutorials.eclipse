@@ -21,8 +21,7 @@ interface (UI).
 It
 is
 called the
-_main thread_
-. Sometimes it is also called the
+_main thread_. Sometimes it is also called the
 _UI thread_,
 but this is a misnomer as it handles all events not only the ui
 events.

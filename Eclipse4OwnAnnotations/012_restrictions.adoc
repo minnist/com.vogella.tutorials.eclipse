@@ -11,8 +11,7 @@ so that services like the IEventBroker, EModelService and so on can be
 injected.
 	
 For example preferences are implemented as
-_extended object suppliers_
-.
+_extended object suppliers_.
 They look for the preference values on the file system and do not
 know about the
 `IEclipseContext`.

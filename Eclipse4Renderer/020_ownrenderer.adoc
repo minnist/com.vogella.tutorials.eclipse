@@ -12,8 +12,7 @@ instead of "*" to mark an editor dirty.
 === Creating a plug-in
 
 Create a new simple plug-in called
-_com.example.e4.renderer.swt_
-. This plug-in is called the
+_com.example.e4.renderer.swt_. This plug-in is called the
 `renderer`
 plug-in in the following description.
 

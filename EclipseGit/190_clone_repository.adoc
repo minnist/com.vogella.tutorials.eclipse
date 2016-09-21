@@ -22,8 +22,7 @@ _git://_
 ,
 _ssh://_
 and
-_https://_
-.
+_https://_.
 You only have to paste the URL to the first line of the dialog, the
 rest will be filled out automatically.
 

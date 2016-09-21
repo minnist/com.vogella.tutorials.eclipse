@@ -52,8 +52,7 @@ tab and add the
 `com.example.e4.rcp.todo.model`
 package
 to the
-_Imported Packages_
-.
+_Imported Packages_.
 
 === Provide an implementation of the ITodoService interface
 

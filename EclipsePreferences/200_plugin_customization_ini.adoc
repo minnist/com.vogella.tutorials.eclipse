@@ -5,8 +5,7 @@ You
 can use a file to set the default values of preferences. The file
 which
 contains these defaults is typically named
-_plugin_customization.ini_
-.
+_plugin_customization.ini_.
 
 Such a file needs
 to
@@ -32,5 +31,4 @@ directory in your workspace directory (by
 default the directory your
 application is starting in) and search for
 files ending with
-_.pref_
-.
+_.pref_.

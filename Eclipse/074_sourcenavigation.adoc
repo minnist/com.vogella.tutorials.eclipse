@@ -101,8 +101,7 @@ _org.eclipse.swt.widgets.Button_
 or
 _o.e.s.w.Button_
 or
-_o.Button_
-.
+_o.Button_.
 
 image::classopen20.png[Opening a class with package name]
 
@@ -173,8 +172,7 @@ _Quick Outline_
 view
 of the
 _Java_
-_perspective_
-.
+_perspective_.
 
 === Open Type Hierarchy
 
@@ -297,8 +295,7 @@ depicted in the following screenshot.
 image::breadcrumb20.png[Breadcrumb view]
 
 To hide it again, right-click on a breadcrump entry and select
-_Hide Breadcrumb_
-.
+_Hide Breadcrumb_.
 
 image::breadcrumb30.png[Breadcrumb view]
 
@@ -337,8 +334,7 @@ To open a
 closed project double-click on it, or right-click it
 and
 select
-_Open Project_
-.
+_Open Project_.
 
 You can
 use the filter functionality for the

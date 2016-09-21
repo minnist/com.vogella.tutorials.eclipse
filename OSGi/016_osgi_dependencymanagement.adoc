@@ -100,10 +100,8 @@ the framework during the
 installation.
 		
 When the plug-in starts, its status is
-_STARTING_
-. After a successful start, it becomes
-_ACTIVE_
-.
+_STARTING_. After a successful start, it becomes
+_ACTIVE_.
 		
 This life cycle is depicted in the following graphic.
 		

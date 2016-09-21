@@ -5,8 +5,7 @@
 An Eclipse application is modeled without a hard dependency to a
 specific user interface toolkit. Eclipse allows you
 to define a
-_renderer factory_
-. This
+_renderer factory_. This
 renderer factory
 determines for every model element the
 responsible

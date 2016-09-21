@@ -9,8 +9,7 @@ plug-ins in your
 workspace in addition with the plug-ins
 defined by
 your
-_target platform_
-.
+_target platform_.
 For example your plug-ins use classes from the SWT and JFace
 plug-ins.
 By default the plug-in installed in

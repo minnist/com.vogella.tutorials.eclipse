@@ -159,8 +159,7 @@ options
 a
 _simple plug-in_
 or
-_simple bundle_
-.
+_simple bundle_.
 
 * No Activator
 * No contributions to the user interface

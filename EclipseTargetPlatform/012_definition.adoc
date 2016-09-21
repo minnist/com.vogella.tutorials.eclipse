@@ -1,8 +1,7 @@
 == Defining a target platform
 
 You can specify your target platform with a
-_target definition file_
-. With such a file you define the available plug-ins and features.
+_target definition file_. With such a file you define the available plug-ins and features.
 
 TIP: A target platform can be defined based on software sites (p2 update sites) or other means. 
 As build systems like Maven Tycho support only p2 update sites, it is recommended to use only these.

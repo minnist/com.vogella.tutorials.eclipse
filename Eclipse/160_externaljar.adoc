@@ -39,8 +39,7 @@ menu:Build Path[Add to Build Path]
 .
 
 To manage your classpath, right-click on your project and select
-_Properties_
-.
+_Properties_.
 Under
 menu:Java Build Path[Libraries]
 select the
@@ -134,8 +133,7 @@ should find the
 source
 in the JDK installation folder. The file is
 typically called
-_src.zip_
-.
+_src.zip_.
 
 image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar]
 

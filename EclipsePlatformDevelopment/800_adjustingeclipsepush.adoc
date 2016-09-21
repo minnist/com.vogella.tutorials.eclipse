@@ -64,8 +64,7 @@ image::eclipse_gerrithttps10.png[Gerrit push configuration]
 The Gerrit server requires that you push using a predefined
 _refspec_
 , called
-_HEAD:refs/for/master_
-. A refspec allows you to configure which remote branch should
+_HEAD:refs/for/master_. A refspec allows you to configure which remote branch should
 be used
 for remote operations.
 
@@ -103,8 +102,7 @@ If you have to configure the push URL manually, select your remote repository in
 _Git Repositories_
 view, right-click on
 it and select
-_Gerrit configuration_
-.
+_Gerrit configuration_.
 
 
 

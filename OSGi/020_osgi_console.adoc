@@ -112,8 +112,7 @@ View
 _
 you find a menu entry with the
 tooltip
-_Open Console_
-.
+_Open Console_.
 If you select
 _Host OSGi Console_
 ,

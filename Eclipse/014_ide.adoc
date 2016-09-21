@@ -18,10 +18,8 @@ extended
 with
 additional software components.
 Eclipse calls these software components
-_plug-ins_
-. Plug-in can be grouped into
-_features_
-.
+_plug-ins_. Plug-in can be grouped into
+_features_.
 		
 Several 
 projects and

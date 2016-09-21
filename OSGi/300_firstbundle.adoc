@@ -46,8 +46,7 @@ all bundles
 except your de.vogella.osgi.firstbundle. Afterwards press the
 _Add
 Required
-bundles_
-.
+bundles_.
 This adds the
 `org.eclipse.osgi`
 bundle to your run configuration.

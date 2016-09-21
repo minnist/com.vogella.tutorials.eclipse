@@ -128,8 +128,7 @@ _Webpage_
 node. Set the
 `base package`
 property to
-_de.vogella.emf.webpage.model_
-.
+_de.vogella.emf.webpage.model_.
 		
 image::genmodel60.gif[]
 

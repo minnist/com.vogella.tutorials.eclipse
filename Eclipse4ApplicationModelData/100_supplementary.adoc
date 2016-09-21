@@ -79,8 +79,7 @@ _Variables_
 in the
 _Supplementary_
 tab which can be used as
-_context variables_
-. If you use this approach, Eclipse creates keys in the context which
+_context variables_. If you use this approach, Eclipse creates keys in the context which
 are marked as modifiable (by descendants).
 See the Eclipse RCP tutorial 
 for the concept of dependency injection.

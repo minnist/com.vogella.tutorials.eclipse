@@ -123,8 +123,7 @@ is similar to AWT and different to Swing, where the
 method is used.
 		
 The second parameter of the widget constructor contains the
-_stylebits_
-.
+_stylebits_.
 Depending on
 the
 provided

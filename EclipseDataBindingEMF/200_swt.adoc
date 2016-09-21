@@ -4,8 +4,7 @@ Create an RCP project called
 _de.vogella.databinding.emf.swt_
 based on
 the
-_RCP application with a view_
-. Add the
+_RCP application with a view_. Add the
 `org.eclipse.emf.ecore`
 and the JFace data binding plug-ins
 as a
@@ -13,8 +12,7 @@ plug-in dependency.
 
 
 Create an EMF model called
-_person.ecore_
-. Create a class called
+_person.ecore_. Create a class called
 _Phone_
 with the
 _number_

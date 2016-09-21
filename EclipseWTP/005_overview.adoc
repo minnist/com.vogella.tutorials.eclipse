@@ -22,8 +22,7 @@ debugged.
 
 In Eclipse
 WTP you create
-_Dynamic Web Projects_
-.
+_Dynamic Web Projects_.
 These projects
 provide
 the

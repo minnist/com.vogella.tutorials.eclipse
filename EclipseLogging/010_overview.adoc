@@ -41,8 +41,7 @@ _INFO_
 ,
 _WARNING_
 and
-_ERROR_
-.
+_ERROR_.
 _INFO_
 will for example show all log message.
 	

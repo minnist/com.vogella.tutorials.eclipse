@@ -60,8 +60,7 @@ characters. A new
 label
 displays the
 validation status via a
-_Decorator_
-.
+_Decorator_.
 		
 image::validation10.png[]
 		

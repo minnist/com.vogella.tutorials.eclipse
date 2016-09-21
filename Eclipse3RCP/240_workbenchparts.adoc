@@ -87,8 +87,7 @@ A
 describes a certain configuration of
 _Views_
 and
-_Editors_
-.
+_Editors_.
 
 
 A

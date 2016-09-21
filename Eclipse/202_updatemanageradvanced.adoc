@@ -95,8 +95,7 @@ Mylyn and EMF into
 an Eclipse instance. You need to start this command
 in the command line and it assumes that you are in a directory which
 contains your Eclipse installation in a folder called
-_eclipse_
-.
+_eclipse_.
 
 [source,bourne]
 ----

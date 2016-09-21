@@ -28,8 +28,7 @@ _ASSIGNED_
 ,
 _UNCONFIRMED_
 and
-_REOPENED_
-.
+_REOPENED_.
 
 image::bugtriage10.png[,pdfwidth=30%]
 

@@ -50,8 +50,7 @@ task while he is working on it. Each task has a
 _context_
 which captures the involved classes, methods and the cursor position
 in the opened Java or text
-_editor_
-.
+_editor_.
 		
 When switching between tasks, the corresponding context is
 restored and the editors which belong to this tasks

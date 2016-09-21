@@ -1,6 +1,5 @@
 == Exercise: Create application
 	
 Create an Eclipse 4 RCP application in a plug-in called
-_com.example.e4.rcp.wizard_
-.
+_com.example.e4.rcp.wizard_.
 

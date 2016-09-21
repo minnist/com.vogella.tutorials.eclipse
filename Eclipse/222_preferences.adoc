@@ -81,8 +81,7 @@ menu:File[Import > General > Preferences]
 		
 You can also configure certain preference settings on a per project
 basis. To do this, select your project, right-click on it and select
-_Properties_
-. For example, on the
+_Properties_. For example, on the
 menu:Java Editor[Save Actions]
 you can select the
 _Enable project specific settings_

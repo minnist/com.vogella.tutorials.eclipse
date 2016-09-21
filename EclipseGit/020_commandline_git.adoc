@@ -1,8 +1,7 @@
 == Command line Git
 	
 This tutorial describes the usage of
-_EGit_
-. If you want to learn about
+_EGit_. If you want to learn about
 the usage of the Git command line, you can
 use the
 http://www.vogella.com/tutorials/Git/article.html[Git Tutorial]

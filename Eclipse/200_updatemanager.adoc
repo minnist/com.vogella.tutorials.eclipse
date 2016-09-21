@@ -18,8 +18,7 @@ and consist of
 These features are contained in so-called
 _update sites_
 or
-_software sites_
-. An
+_software sites_. An
 _update site_
 contains
 installable software components
@@ -32,8 +31,7 @@ provide
 aggregated information about the
 software
 components in the
-_update site_
-.
+_update site_.
 The update functionality in Eclipse uses this
 information to
 determine which software components are

@@ -11,8 +11,7 @@ your application model.
 === Create a new plug-in
 
 Create a simple plug-in project called
-_com.example.e4.rcp.todo.contribute_
-. The following description abbreviates the plug-in name to the
+_com.example.e4.rcp.todo.contribute_. The following description abbreviates the plug-in name to the
 `contribute`
 plug-in.
 
@@ -132,8 +131,7 @@ image::modelfragment10.png[Adding a model fragment]
 Use
 `com.example.e4.rcp.todo.application`
 as the
-_Element ID_
-. This is the ID of the
+_Element ID_. This is the ID of the
 _Application_
 model element in
 your
@@ -160,8 +158,7 @@ to which feature
 you will be adding to. For
 _Featurename_
 , specify the value
-_commands_
-.
+_commands_.
 Make sure you have the
 _Model Fragment_
 selected and
@@ -217,8 +214,7 @@ _Model Fragment_
 to contribute a new menu to your application model. Contribute to
 the
 main menu of your
-_Application.e4xmi_
-.
+_Application.e4xmi_.
 If you followed the earlier
 exericses correctly this should be the
 `org.eclipse.ui.main.menu`
@@ -317,8 +313,7 @@ Define a new model fragment which
 contributes a
 part
 to an existing
-_PartStack_
-. Use the ID of an existing
+_PartStack_. Use the ID of an existing
 _PartStack_
 and use
 `children`

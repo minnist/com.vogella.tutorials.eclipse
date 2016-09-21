@@ -7,8 +7,7 @@ _Perspectives_
 ,
 _Views_
 and
-_Editors_
-.
+_Editors_.
 _Views_
 and
 _Editors_
@@ -48,8 +47,7 @@ resources
 projects)
 from
 the
-_workspace_
-.
+_workspace_.
 
 You can
 choose the workspace during startup of
@@ -90,8 +88,7 @@ Individual elements (part) of the Eclipse UI
 are typically classified into
 _views_
 and
-_editors_
-.
+_editors_.
 
 A
 view

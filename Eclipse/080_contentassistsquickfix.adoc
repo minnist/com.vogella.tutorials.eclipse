@@ -47,8 +47,7 @@ text in the editor. Select the underlined text and press
 kbd:[Ctrl+1]
 to see proposals how to solve this problem. This functionality is
 called
-_Quick Fix_
-.
+_Quick Fix_.
 		
 For example, type
 `myBoolean = true;`

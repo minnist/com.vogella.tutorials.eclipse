@@ -8,8 +8,7 @@ The Eclipse bug and feature tracker is using the open source
 _Bugzilla_
 project
 from
-_Mozilla_
-. In this system, you enter Eclipse error reports. You can also request new
+_Mozilla_. In this system, you enter Eclipse error reports. You can also request new
 features or improvements
 of
 existing

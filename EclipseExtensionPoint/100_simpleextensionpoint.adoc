@@ -74,8 +74,7 @@ button. Give the new element the name "client".
 image::extensionpoint40.png[Add Elements to Extension]
 
 Select the "client" element and press
-_New Attribute_
-. Give the
+_New Attribute_. Give the
 new
 element the name "class" and the type "java". Enter
 `com.vogella.extensionpoint.definition.IGreeter`

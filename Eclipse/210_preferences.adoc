@@ -36,8 +36,7 @@ your workspace but some are also valid for all workspaces.
 
 You can specify default values for preferences via a file which is
 typically called
-_plugin_customization.ini_
-.
+_plugin_customization.ini_.
 
 In this file you enter default values for preference settings.
 For

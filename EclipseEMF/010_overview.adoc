@@ -99,8 +99,7 @@ Java annotations, UML or an XML
 scheme. It also allows to persists the model data; the default
 implementation
 uses a data format called
-_XML Metadata Interchange_
-.
+_XML Metadata Interchange_.
 
 === Generate data from an EMF model
 

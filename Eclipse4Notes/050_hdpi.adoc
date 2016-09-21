@@ -46,8 +46,26 @@ export SWT_GTK3=0
 ./eclipse
 ----
 
-== SVG to png conversion
+[[providing_hdpi_icons]]
+== Providing HDPI images in your plug-in
 
+The Eclipse platform has been extended to support HDPI icons. 
+If you provide only one size of the icons, the platform will scale the icon.
+You can provide icons with different sizes by using the @2x convension.
+Your 16x16 pixel icon would be the default and your 32x32 pixel icon would be picked on HDPI displays.
+
+For example:
+
+[source,console]
+----
+org.eclipse.jdt.astview/icons/e/clear.png                    
+org.eclipse.jdt.astview/icons/e/clear@2x.png
+----
+
+The platform will pick the correct icon automatically.
+
+[NOTE]
+====    
 The Eclipse Platform contains a Maven plug-in which can be used to convert SVG graphics to png.
 
 Clone the Eclipse Platform UI repo to use it. You find the clone URI on the following website: 
@@ -58,4 +76,4 @@ Here you find the org.eclipse.images.renderer plug-ins.
 See its Readme how to convert SVG to png. 
 The generated png can be included into your Eclipse RCP application.
 
-
+====

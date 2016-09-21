@@ -46,16 +46,4 @@ export SWT_GTK3=0
 ./eclipse
 ----
 
-== SVG to png conversion
-
-The Eclipse Platform contains a Maven plug-in which can be used to convert SVG graphics to png.
-
-Clone the Eclipse Platform UI repo to use it. You find the clone URI on the following website: 
-
-https://git.eclipse.org/r/#/admin/projects/platform/eclipse.platform.images
-
-Here you find the org.eclipse.images.renderer plug-ins. 
-See its Readme how to convert SVG to png. 
-The generated png can be included into your Eclipse RCP application.
-
 

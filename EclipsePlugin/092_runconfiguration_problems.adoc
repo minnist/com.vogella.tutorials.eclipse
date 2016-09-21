@@ -9,7 +9,6 @@ application.
 The following table lists potential problems and solutions.
 
 .Run configuration problems
-[cols="1,2"]
 |===
 |Problem |Investigate
 

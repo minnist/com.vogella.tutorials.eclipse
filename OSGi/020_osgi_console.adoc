@@ -106,10 +106,7 @@ shell under Linux.
 You can also access the OSGi console of your running Eclipse
 IDE. In
 the
-_Console_
-_
-View
-_
+_Console View_
 you find a menu entry with the
 tooltip
 _Open Console_.

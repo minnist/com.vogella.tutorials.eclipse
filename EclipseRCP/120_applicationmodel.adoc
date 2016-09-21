@@ -37,23 +37,30 @@ For example, the classes for a part are instantiated when the part gets visible.
 The following table describes the support URI patterns.
 The example assumes that the bundle is called _test_ to have a short name.
 
-.URI pattern
+.URI pattern for class and static file references
+[cols="3,2"]
 |===
 |Pattern |Description
 
-|`bundleclass://_BSN/package.classname`
+|`bundleclass://Bundle-SymbolicName/package.classname`
 
-Example: `bundleclass://test/test.parts.MySavePart`
+Example: 
+
+`bundleclass://test/test.parts.MySavePart`
 |Identifier for a Java class.
-It consists of the following parts: `bundleclass://` is a fixed prefix, BSN stands for Bundle-SymbolicName and is defined in a configuration file called _MANIFEST.MF_ file.
+It consists of the following parts: `bundleclass://` is a fixed prefix.
+Bundle-SymbolicName is defined in _MANIFEST.MF_ file.
 The Bundle-SymbolicName is followed by a '/' and the fully qualified classname.
 
-|`platform:/plugin/_BSN/path/filename.extension`
+|`platform:/plugin/Bundle-SymbolicName/path/filename.extension`
 
-Example: `platform:/plugin/test/icons/save_edit.gif`
+Example: 
+
+`platform:/plugin/com.example.plugin/icons/save_edit.gif`
+
 |Used to identify resources.
 Identifier for a resource in a plug-in.
-`platform:/plugin/` is a fixed prefix, followed by the BSN stands for Bundle-SymbolicName as defined in the _MANIFEST.MF_ file, followed by the path to the file and the filename.
+`platform:/plugin/` is a fixed prefix, followed by the Bundle-SymbolicName, followed by the path to the file and the filename.
 |===
 
 For example a part, have a `Class URI` attribute which points to a Java class via the `bundleclass://` URI.

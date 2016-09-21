@@ -1,4 +1,4 @@
-= Register for the Eclipse 4 application life cycle - Tutorial
+= Register a life cycle hook in Eclipse RCP applications - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -17,6 +17,7 @@ include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_eventmanager.adoc[]
+include::220_tutorial_lifecycle.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::../10_Include/Eclipse/e4info.adoc[]
 include::../support.adoc[]

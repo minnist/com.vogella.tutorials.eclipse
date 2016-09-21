@@ -1,35 +1,24 @@
+= Using the application model spy
+
 == Analyzing the application model with the model spy
 	
-The application model of an Eclipse application is available at
-runtime. The
-application can access the model and
-change it via a
-defined API.
+The application model of an Eclipse application is available at runtime.
+The application can access the model and change it via a defined API.
 	
-To analyzing this application model and for testing model changes, you can use a test tool from the e4 tools
-project
-which
-allows modifying the application model interactively.
-This tool is called
-_Model Spy_
-(used to be called: Live model editor) and can be
-integrated
-into your
-RCP
-application. Most changes are directly applied, e.g., if you
-change
-the
-orientation of a part sash container,
-your user interface is updated automatically.
+To analyzing and modify the runtime model, you can use a test tool from the e4 tools project which allows modifying the application model interactively.
+This tool is called _Model Spy_ (used to be called: Live model editor) and can be integrated into your RCP application. 
+Most changes are directly applied, e.g., if you change the orientation of a part sash container, your user interface is updated automatically.
 	
-In the model spy, you can select a
-part
-in the application model, right
-click on
-it and
-select
-_Show Control_
-to get the
-part
-highlighted.
+In the model spy, you can select a part in the application model, right click on it and select _Show Control_ to get the part highlighted.
+	
+== Model spy and the Eclipse IDE
+	
+If installed you can also use the model spy to see the application model of the running Eclipse IDE itself. 
+You can open it via the kbd:[Alt+Shift+F9] shortcut.
+
+[WARNING]
+====
+If you modify the Eclipse IDE model, you should be careful as this might put the running Eclipse IDE into a bad state. 
+To fix such issues, start the Eclipse IDE from the command line with the _-clearPersistedState_ parameter.
+====
 	

@@ -44,6 +44,7 @@ The example assumes that the bundle is called _test_ to have a short name.
 
 |`bundleclass://Bundle-SymbolicName/package.classname`
 
+<<<
 Example: 
 
 `bundleclass://test/test.parts.MySavePart`
@@ -54,6 +55,7 @@ The Bundle-SymbolicName is followed by a '/' and the fully qualified classname.
 
 |`platform:/plugin/Bundle-SymbolicName/path/filename.extension`
 
+<<<
 Example: 
 
 `platform:/plugin/com.example.plugin/icons/save_edit.gif`

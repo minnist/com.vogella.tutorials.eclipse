@@ -1,6 +1,6 @@
-= Using fragment projects
+== Using fragment projects
 
-== What are fragments in OSGi?
+=== What are fragments in OSGi?
 	
 A _fragment_ is an optional attachment to another plug-in. 
 This other plug-in is called the _host plug-in_. 
@@ -12,7 +12,7 @@ _fragment projects_.
 To create a fragment project select
 menu:File[New > Other... > Plug-in Development > Fragment Project].
 
-== Typical use cases for fragments
+=== Typical use cases for fragments
 
 Fragments can be used to contain test classes. This
 way

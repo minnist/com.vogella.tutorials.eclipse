@@ -1,3 +1,4 @@
+[[tutorial_installation_e4tools]]
 == Install the e4 tools
 
 === Using the update manager

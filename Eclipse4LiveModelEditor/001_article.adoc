@@ -16,7 +16,6 @@ This tutorial gives an description how to use the model spy in Eclipse RCP appli
 include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::012_ide.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::100_exercise.adoc[]
 include::../10_Include/Eclipse/e4info.adoc[]

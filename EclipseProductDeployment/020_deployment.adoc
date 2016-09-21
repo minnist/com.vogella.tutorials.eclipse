@@ -29,34 +29,17 @@ Of course, the correct Java version must be installed on the target machine.
 
 === Defining which artifacts are included in the export
 
-The artifacts which are included in an export are
-defined by
-the
-_build.properties_
-file of the plug-in. Eclipse provides an graphical editor for this
-file.
+The artifacts which are included in an export are defined by the _build.properties_ file of the plug-in.
+Eclipse provides an graphical editor for this file.
 
 Eclipse adds the compiled Java classes by default. 
 Other files must be added manually, e.g., icons or splash screen images.
 
-_
+An Eclipse application started from the Eclipse IDE has access to all resources available in the IDE.
+But to make them available in the exported application you need to select them in the _build.properties_ file.
 
-
-An Eclipse application started
-from
-the Eclipse IDE
-has access to all
-resources available in the IDE. But to make them available in the
-exported application you need to select them
-in the
-_build.properties_
-file.
-
-It is good practice to include new required resources immediately in
-the
-_build.properties_
-file. This avoids errors after the export of your
-application.
+It is good practice to include new required resources immediately in the _build.properties_ file. 
+This avoids errors after the export of your application.
 
 === Mandatory plug-in artifacts in build.properties 
 

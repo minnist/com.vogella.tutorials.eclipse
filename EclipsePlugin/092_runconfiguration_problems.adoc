@@ -64,7 +64,11 @@ The following listing shows how this message typically looks like (formating cha
 
 [source,java]
 ----
-include::res/launchproblems/dependency.txt[]
+org.osgi.framework.BundleException: 
+   Could not resolve module: com.example.e4.rcp.todo.services [9]
+      Unresolved requirement: 
+         Require-Bundle: com.example.e4.rcp.todo.events; 
+            bundle-version="1.0.0"
 ----
 
 After identifying the missing plug-ins ensure that you add them to your product (if the product is plug-in based) or to your features (if the product is feature based).

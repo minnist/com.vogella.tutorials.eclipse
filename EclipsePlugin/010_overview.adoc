@@ -35,3 +35,16 @@ The release of Eclipse in version 4.x simplified and unified the Eclipse program
 
 Eclipse RCP applications benefit from the existing user interface and the internal framework, and can reuse existing plug-ins and features.
 
+== Extending the Eclipse IDE
+
+The Eclipse IDE is basically an Eclipse RCP application to support development activities.
+Even core functionality of the Eclipse IDE is provided via a plug-in, for example the Java development or the C development tools are contributed as a set of plug-ins.
+Only if these plug-ins are present the Java or C development capabilities are available.
+
+The Eclipse IDE functionality is heavily based on the concept of extensions and extension points.
+For example the Java Development Tools provide an extension point to register new code templates for the Java editor.
+
+Via additional plug-ins you can contribute to an existing functionality, for example new menu entries, new toolbar entries or provide completely new functionality.
+But you can also create completely new programming environments.
+
+

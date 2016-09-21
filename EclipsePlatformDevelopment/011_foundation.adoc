@@ -13,7 +13,7 @@ Eclipse projects follow a very well defined development process.
 To learn more about this process see the http://www.eclipse.org/projects/dev_process/development_process.php[Eclipse development process description].
 
 
-There is also an https://www.eclipse.org/org/press-release/20131029_efe_faq.php[Eclipse Foundation Europe] based in Germany. 
+There is also an Eclipse Foundation Europe based in Germany. 
 
 In 2016 the Eclipse Foundation had approximately 30 employees. See http://www.eclipse.org/org/foundation/staff.php[Eclipse Foundation Staff] for details.
 

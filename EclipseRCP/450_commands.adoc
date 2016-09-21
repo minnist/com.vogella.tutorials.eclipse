@@ -42,7 +42,7 @@ The Eclipse runtime uses dependency injection to provide the parameters of the m
 The purpose of these annotations are described in the following table.
 
 .Behavior annotations for handler classes
-[cols="1,4"]
+[cols="1,4",options="header"]
 |===
 |Annotation |Description
 

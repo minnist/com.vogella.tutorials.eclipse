@@ -19,7 +19,7 @@ include::res/snippets/namedfield.txt[]
 The following table gives an overview of dependency injection related annotations based on JSR330 and the Eclipse specific ones.
 
 .Basic annotations for dependency injection
-[cols="1,3"]
+[cols="1,3",options="header"]
 |===
 |Annotation |Description
 

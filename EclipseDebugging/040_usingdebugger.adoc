@@ -75,7 +75,7 @@ The
 meaning of these keys is explained in the following table.
 
 .Debugging key bindings / shortcuts
-[cols="1,3"]
+[cols="1,3",options="header"]
 |===
 |Key |Description
 

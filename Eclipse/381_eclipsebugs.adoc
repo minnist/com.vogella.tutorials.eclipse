@@ -64,17 +64,12 @@ Bug report for the Eclipse platform.
 
 === Eclipse bug priorities
 
-The Eclipse Bugzilla system allows you and the Eclipse committer
-to
-enter the bug priority. But overall, it is up to
-each project do
-decide how they handle bugs so some variation from project
-to
-project
-will occur. The following rules can
-be used as guideline.
+The Eclipse Bugzilla system allows you and the Eclipse committer to enter the bug priority. 
+But overall, it is up to each project do decide how they handle bugs so some variation from project to project will occur. 
+The following rules can be used as guideline.
 
 .Bug priorities
+[cols="1,2",options="header"]
 |===
 |Priority |Description 
 

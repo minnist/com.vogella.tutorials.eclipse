@@ -15,7 +15,7 @@ The individual user interface widgets, which are displayed in a part, are not de
 If the application model was a house, it would describe the available rooms (parts) and their arrangement (perspectives, part stacks, part sash containers), but not the furniture of the rooms.
 This is illustrated by the following image.
 
-image::./modeledworkbench10.gif[Limits of the modeled workbench]
+image::./modeledworkbench10.png[Limits of the modeled workbench]
 
 The base of the application model is typically defined as a static file.
 By default, it is called `Application.e4xmi` and located in the main directory of the plug-in which defines the product extension.

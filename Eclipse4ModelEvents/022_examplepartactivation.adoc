@@ -9,7 +9,5 @@ include::./res/activate.java[]
 
 The `Event` class contains properties like `EventTags.ELEMENT`, from which we can receive the element, which is concerned in this event.
 But there are more and therefore you should have a look at the `UIEvents` class and its internal interfaces like `UIEvents.EventTags`.
-
-=======
 	
 	

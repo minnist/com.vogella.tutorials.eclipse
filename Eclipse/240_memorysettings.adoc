@@ -97,6 +97,6 @@ into
 double quotes.
 
 NOTE: You find all available runtime options in the
-http://help.eclipse.org/">Eclipse help
+http://help.eclipse.org[Eclipse help]
 if you search for the "Eclipse runtime options" term.
 

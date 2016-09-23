@@ -7,8 +7,7 @@ server (without using the Gerrit server) you
 have to adjust the push
 URL to create Gerrit changes. For example, you may have found the
 clone URL on:
-https://git.eclipse.org/c/">Eclipse Git web interface
-.
+https://git.eclipse.org/c/[Eclipse Git web interface].
 
 
 

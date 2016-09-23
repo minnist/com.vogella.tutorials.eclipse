@@ -95,8 +95,7 @@ link.
 The packaged solutions are also available as developer release. You find them by clicking on the
 _Developer Builds_
 tab from the
-https://www.eclipse.org/downloads">Eclipse download page
-.
+https://www.eclipse.org/downloads[Eclipse download page].
 		
 image::epp_developerbuilds10.png[Eclipse download page - Developer builds]
 		

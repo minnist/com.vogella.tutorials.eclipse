@@ -60,7 +60,6 @@ This instructs the Eclipse IDE to ignore this plug-in in your workspace.
 
 If you planning to contribute to another Eclipse project, please have a look at their contribution guide. This guide
 is typically available via the project website, which can be found via the search functionality of the
-https://projects.eclipse.org">Eclipse project side
-.
+https://projects.eclipse.org[Eclipse project side].
 
 	

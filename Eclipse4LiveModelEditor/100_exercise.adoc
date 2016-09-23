@@ -31,9 +31,8 @@ caused by the tool.
 
 === Add the spies to your target platform
 
-Add the model spies to your target platform. See
-tutorial_installation_e4spiesofficial">e4 spies
-for the update site.
+Add the model spies to your target platform. 
+See tutorial_installation_e4spiesofficial[e4 spies]for the update site.
 
 === Adding the model spy to your runtime configuration
 

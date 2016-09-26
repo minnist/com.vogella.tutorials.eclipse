@@ -2,8 +2,7 @@
 
 === Load an image from your plugin
 		
-To load an image from your plug-in your use the
-`AbstractUIPlugin`.
+To load an image from your plug-in your use the `AbstractUIPlugin`.
 		
 [source,java]
 ----
@@ -19,39 +18,21 @@ include::res/loadimage/loadimage.txt[]
 
 === Save users layout
 		 
-To remember the user's layout and window size for the next
-time
-you start your application, add
-configurer.setSaveAndRestore(true);
-to
-the initialize method of
-ApplicationWorkbenchAdvisor.
+To remember the user's layout and window size for the next time you start your application, add `configurer.setSaveAndRestore(true);` to the initialize method of `ApplicationWorkbenchAdvisor`.
 		
 [source,java]
 ----
 include::res/tips/ApplicationWorkbenchAdvisorRememberValues.java[]
 ----
 		
-Eclipse has a pre-defined command to reset the perspective. See
-http://www.vogella.com/tutorials/EclipseCommands/article.html#standardcommands - Eclipse Commands
-.
+Eclipse has a pre-defined command to reset the perspective. 
+See the http://www.vogella.com/tutorials/EclipseCommands/article.html#standardcommands[Eclipse Commands tutorial].
 
 === Accessing the status line
 		
-The status line in an RCP application can be used to give the
-user some information about the running application. The shared
-message area can be used by all parts of the
-application to
-write
-messages to this area. The whole RCP application has access to the
-information in the
-shared
-status line therefore the information in
-the
-shared status line
-might
-be
-overwritten.
+The status line in an RCP application can be used to give the user some information about the running application. 
+The shared message area can be used by all parts of the application to write messages to this area. 
+The whole RCP application has access to the information in the shared status line therefore the information in the shared status line might be overwritten.
 		
 To show the
 status line in your RCP application use the

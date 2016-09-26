@@ -16,7 +16,7 @@ The following table suggests good practices for naming
 conventions for projects, packages and classes.
 
 .Naming conventions
-
+[cols="1,2",options="header"]
 |===
 |Object |Description
 
@@ -104,50 +104,21 @@ more for historical reasons.
 
 === Create isolated components
 
-It is important to separate your application components into
-isolated
-modules. This reduces the complexity of
-development and
-allows you to reuse these components in different
-applications.
+It is important to separate your application components into isolated modules.
+This reduces the complexity of development and allows you to reuse these components in different applications.
 
-User interface
-related and core functionalities
-should be
-separated
-into
-different
-plug-ins. For example, if you
-develop a new SWT
-widget, you should place this widget in a separate plug-in.
+User interface related and core functionalities should be separated into different plug-ins. 
+For example, if you develop a new SWT widget, you should place this widget in a separate plug-in.
 
-The
-data model
-of the application should be kept in its own
-plug-in. Almost all
-plug-ins
-will depend on this plug-in,
-therefore
-keep it as small as
-possible.
+The data model of the application should be kept in its own plug-in. 
+Almost all application plug-ins will depend on this plug-in, therefore keep it as small as possible.
 
 === Usage of your custom extension points
 
-The programming model of Eclipse 4 has reduced the need for
-using extensions and extension points but they still
-have
-valid use
-cases.
+The programming model of Eclipse 4.x API has reduced the need for using extensions and extension points.
+But custom extension points still have valid use cases.
 
-If you
-have multiple
-plug-ins which should contribute to a defined
-API,
-you
-can still define and use
-your own
-extension
-points.
+If you have multiple plug-ins which should contribute to a defined API, you can still define and use your own extension points.
 
 === Avoid releasing unnecessary API
 
@@ -163,40 +134,13 @@ packages just for testing.
 
 === Packages vs. plug-in dependencies
 
-OSGi allows you to define dependencies via plug-ins (Require-Bundle) or via packages (Import-Package) in the
-manifest file.
+OSGi allows you to define dependencies via plug-ins (Require-Bundle) or via packages (Import-Package) in the manifest file.
 
-Dependencies based on packages express an API dependency as
-they
-allow you to
-exchange the implementing plug-in.
-Dependencies based on
-plug-ins imply a dependency on
-an implementation.
+Dependencies based on packages express an API dependency, as they allow you to exchange the implementing plug-in.
+Dependencies based on plug-ins imply a dependency on an implementation.
 
-Use package
-dependencies
-whenever
-you intend to
-exchange the
-implementing
-plug-in.
+Prefer the usage of package dependencies whenever you intend to exchange the implementing plug-in.
 
-Package dependencies add complexity to the setup as you usually
-have
-more packages than plug-ins.
-
-Therefore
-use plug-in
-dependencies,
-if
-there is only one
-implementing
-plug-in and
-an
-exchange of this
-plug-in in
-the near
-future is
-unlikely.
+Package dependencies add some complexity to the setup as you usually have more packages than plug-ins.
+Therefore some people use plug-in dependencies, if there is only one implementing plug-in and an exchange of this plug-in in the near future is unlikely.
 

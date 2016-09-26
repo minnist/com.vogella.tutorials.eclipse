@@ -1,5 +1,8 @@
 == Exercise: Styling with CSS files
-===  In this exercise you style your application with a CSS file.
+
+===  Target
+
+In this exercise you style your application with a CSS file.
 
 === Create a CSS file
 
@@ -20,8 +23,8 @@ Use the _CSS File_ entry to select your CSS file.
 image::cssproductproperty10.png[Selecting the extension]
 
 
-
 === Validating
+
 Start your application. 
 The application should be styled according to your CSS file.
 

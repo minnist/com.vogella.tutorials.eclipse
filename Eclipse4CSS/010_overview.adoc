@@ -1,6 +1,5 @@
 == Eclipse and declarative styling
 
-=== Styling Eclipse applications
 (((CSS, Eclipse)))
 (((Eclipse styling, CSS)))
 (((CSS,Styling of Eclipse applications))))
@@ -23,3 +22,10 @@ For example, it is not possible to style menus and table headers because this is
 In addition some platforms do not allow the styling of certain widgets.
 For example, the SWT implementation for Windows does not allow to set the background color of the  `Button` and the `ScrollBar` widget.
 
+[NOTE]
+====
+In most cases it is possible to overcome the styling restrictions of SWT in RCP applications.
+For example, you can use `NatTable` to display your tables.
+NatTable is a flexible table and tree implementation which allows full styling.
+For other components you can use custom widgets or use a `PaintListener` to draw on top of the widget.
+====

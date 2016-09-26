@@ -1,6 +1,4 @@
-== Own persistence for the application model
-
-=== Specifying the location of the application model file
+== Specifying the location of the application model file
 
 The file name and location of the application
 model can
@@ -46,7 +44,7 @@ application model file.
 
 image::tutorial_product70.png[]
 
-=== Custom application model persistence handler
+== Custom application model persistence handler
 (((Application model,Custom persistence handler)))
 Eclipse uses an instance of the
 `IModelResourceHandler`

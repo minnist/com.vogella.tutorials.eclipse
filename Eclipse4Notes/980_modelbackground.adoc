@@ -1,0 +1,116 @@
+[[modelbackground]]
+== Architectural background of the application model
+
+This section contains some background information about the
+design goals of the Eclipse application model and has been
+contributed by Eric Moffatt, Eclipse 4 SDK development lead.
+
+[[modelbackground_areas]]
+=== Main areas of the model
+
+Conceptually the model
+is structured into three areas which are
+described in the following
+table.
+
+.Architectural areas of the model
+|===
+|Area |Description
+
+|Mix-ins
+|Abstract
+interfaces containing the attributes necessary to
+support their
+specific roles in some derived concrete types.
+For example
+`MContext`
+contains only the reference to the context,
+`MContribution`
+contains the instantiated `object` and
+`MUILabel`
+contains attributes to manage labels and images.
+
+|Containment Types
+|Every concrete container specifies a specific interface as
+its containment type. It allows the generic to be a specific
+type
+and the compiler to generate a compile time error if an
+attempt
+is made to add an invalid element to a container.
+It also means that when creating a domain specific model (or
+changing
+the base model) it is relatively easy to loosen the
+containment
+rules.
+For example to allow
+`MParts`
+in the
+`MTrim`
+area, you would only have to add the
+`MTrimElement`
+interface to
+`MPart`.
+
+|Concrete Classes
+|Elements that the application model itself
+contains,
+defined by a combination of various mix-ins and
+containment
+types. These are further sub-divided based into packages in the
+model definition model.
+
+|===
+
+[[modelbackground_mixins]]
+=== Advantages of using mix-ins
+
+_Mix-ins_
+allow the Eclipse 4 internal code to manage the
+mix-ins
+specifically,
+regardless of the concrete class they`re a
+part of. For
+example the
+`PartRenderingEngine`
+class
+handles all contexts by checking whether the element being
+rendered
+is
+an
+`MContext`. It also allows via the
+`findElements()`
+method of
+`EModelService`
+to locate all elements in the model of a specific type. This is 
+useful for
+finding all
+`MDirtyable`
+elements for saving.
+
+Mix-ins
+make
+domain specific modeling
+simpler. The Eclipse 4 team
+anticipate
+that more
+sophisticated
+clients
+create domain specific
+models
+(and the
+corresponding
+renderers) so that
+they could work
+directly
+against their
+own element
+types.
+
+Having the
+mix-ins
+in place makes this much simpler as well as
+being able to
+reuse
+existing code written to manage a particular
+mix-in.
+

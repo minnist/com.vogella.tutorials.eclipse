@@ -1,4 +1,4 @@
-=== Eclipse Data Binding resources
+== Eclipse Data Binding resources
 		
 http://wiki.eclipse.org/index.php/JFace_Data_Binding[Wiki about the JFace Data Binding]
 		

@@ -21,6 +21,7 @@ include::120_modelprocessing.adoc[]
 include::610_e4tools_build.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::800_tips.adoc[]
+include::980_modelbackground.adoc[]
 include::../10_Include/Eclipse/e4info.adoc[]
 
 include::../support.adoc[]

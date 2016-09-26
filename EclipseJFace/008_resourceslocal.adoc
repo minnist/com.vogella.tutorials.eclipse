@@ -2,7 +2,7 @@
 
 http://wiki.eclipse.org/index.php/JFaceSnippets[JFace snippets, e.g., small code examples]
 
-http://eclipse.org/nattable/[NatTable[Flexible Table / Data Grid]
+http://eclipse.org/nattable/[NatTable for flexible table or data grid]
 
 http://www.vogella.com/tutorials/SWT/article.html[Eclipse SWT Tutorial]
 

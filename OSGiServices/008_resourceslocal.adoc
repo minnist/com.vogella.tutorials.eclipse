@@ -1,8 +1,8 @@
 == OSGi services resources
 
-http://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider[OSGi remote RESTFul service tutorial Equinox Homepage]
+http://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider[OSGi remote RESTFul service tutorial]
 	
-http://www.eclipse.org/community/eclipse_newsletter/2013/july/article3.php[OSGi remove service tutorial with ECF Equinox Homepage]
+http://www.eclipse.org/community/eclipse_newsletter/2013/july/article3.php[OSGi remove service tutorial with ECF]
 	
 http://www.ibm.com/developerworks/opensource/library/os-osgiblueprint/[OSGi Blueprint services]
 	

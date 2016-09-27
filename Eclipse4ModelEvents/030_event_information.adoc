@@ -4,7 +4,7 @@
 
 The `UIEvents.EventTags` interface define the possible event tags.
 
-image::event_tags.png[EventTags interface with properties of an Event]
+image::event_tags.png[EventTags interface with properties of an Event, pdfwidth="40%"]
 
 These event tags are explained in the following sections.
 

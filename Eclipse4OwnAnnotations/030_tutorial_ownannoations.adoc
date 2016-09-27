@@ -50,9 +50,11 @@ Based on the annotation this registers this class as service for the `ExtendedOb
 include::res/DirectTodoObjectSupplier.java[]
 ----
 
-NOTE: The `ExtendedObjectSupplier` class
-is not yet released as official API. See
-<<e4overview_api>>.
+[NOTE]
+====
+The `ExtendedObjectSupplier` class is not yet released as official API. 
+See <<e4overview_api>>.
+====
 
 === Add the plug-in as dependency
 

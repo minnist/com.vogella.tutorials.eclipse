@@ -2,44 +2,27 @@
 
 === Creating a target definition file
 
-Create a new project called
-_com.example.rcp.target_
-of type
-_General_
-via
-menu:File[New > Other... > General > Project].
+Create a new project called _com.example.rcp.target_ of type _General_ via menu:File[New > Other... > General > Project].
 
 image::targetdefinitionproject10.png[Create a project for your target definition file]
 
-Create a new target definition file via the
-menu:File[New > Other... > Plug-in Development > Target Definition]
-menu path. Use the
-`com.example.rcp.target`
-as file name.
+Create a new target definition file via the menu:File[New > Other... > Plug-in Development > Target Definition] menu path.
+Use the `com.example.rcp.target` as file name.
 
 image::tutorial_targetdefinition10.png[Define target definition file]
 
-Press the
-btn:[Add...]
-button.
+Press the btn:[Add...] button.
 
 image::tutorial_targetdefinition20.png[Add content to target definition file]
 
-Select
-_Software site_
-in the following dialog.
+Select _Software site_ in the following dialog.
 
 image::tutorial_targetdefinition30.png[Add content to target definition file]
 
-Press the
-btn:[Next] button and enter the update site URL of the target release
-in the Work with selection box. This is for example:
-http://download.eclipse.org/releases/neon
-for the Eclipse 4.6 (Neon) release.
+Press the btn:[Next] button and enter the update site URL of the target release in the Work with selection box.
+This is for example: http://download.eclipse.org/releases/neon for the Eclipse 4.6 (Neon) release.
 
-Remove the
-_Group by Category_
-flag and add the following components:
+Remove the _Group by Category_ flag and add the following components:
 
 .Target components
 |===
@@ -50,46 +33,35 @@ flag and add the following components:
 
 |Equinox Target Components
 |The native launchers for the platform, ensure to select
-the non "black and white" entry if this exists. This entry is
-empty.
+the non "black and white" entry if this exists. This entry is empty.
 
 |===
 
-After you close this dialog, the target definition is resolved,
-which will take a while. The result should look
-similar to the
-following
-screenshot.
-Please note that your version numbers might be
-different.
+After you close this dialog, the target definition is resolved, which will take a while. 
+The result should look similar to the following screenshot.
+Please note that your version numbers might be different.
 
 image::tutorial_targetdefinition40.png[]
 
 === Activate your target platform
 
-Afterwards press the
-_Set as Target Platform_
-to activate it.
+Afterwards press the _Set as Target Platform_ to activate it.
 
-To check if your definition is active, try to open the
-`SpyHandler`
-class via Ctrl+Shift+T (Open Type). This should not be possible.
+To check if your definition is active, try to open the `SpyHandler`class via Ctrl+Shift+T (Open Type).This should not be possible.
 
 === Solving potential issues for development
 
-Your target platform depends on external update sites and their
-packaging of plug-ins. Theses update sites might
-change over time, so
-you should be able to revert your target platform settings in case
-you face issues.
+Your target platform depends on external update sites and there packaging of plug-ins.
+Theses update sites might change over time, so you should be able to revert your target platform settings in case you face issues.
 
-You can switch back to your
-Eclipse IDE as target platform via
-menu:Window[Preferences > Plug-in Development > Target Platform]
-.
+You can switch back to your Eclipse IDE as target platform via menu:Window[Preferences > Plug-in Development > Target Platform].
 
 image::tutorial_targetdefinition60.png[]
 
-NOTE: If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch
-back to your definition. That sometimes solves target resolution issues.
+[TIP]
+====
+If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch back to your definition. 
+
+That sometimes solves target resolution issues.
+====
 

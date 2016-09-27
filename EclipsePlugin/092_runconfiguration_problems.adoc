@@ -1,11 +1,43 @@
-== Common launch problems
+== Checklist for common launch problems
 
-=== Checklist for common launch problems
 
 Errors in the run configurations of Eclipse RCP application are frequently the source of problems.
 This chapter describes common problems related to the start of RCP applications.
-It can be used as a reference in case you face issues during the startup of your
-application.
+It can be used as a reference in case you face issues during the startup of your application.
+
+
+The most common problem is that some required plug-ins are missing in your product.
+If you are using a feature based product configuration, you need to ensure that all plug-ins which are referred to in the MANIFEST.MF file are also included in your features. This error is reported in the _Console_ view, typically it is one of the first error messages and you need to scroll up to see it.
+
+The following listing shows how this message typically looks like (formating changed to make the text fit better).
+
+[source,java]
+----
+org.osgi.framework.BundleException: 
+   Could not resolve module: com.example.e4.rcp.todo.services [9]
+      Unresolved requirement: 
+         Require-Bundle: com.example.e4.rcp.todo.events; 
+            bundle-version="1.0.0"
+----
+
+After identifying the missing plug-ins ensure that you add them to your product (if the product is plug-in based) or to your features (if the product is feature based).
+
+
+[TIP]
+====
+Eclipse can check for missing dependencies automatically before you run the Launch configuration.
+On the _Plug-ins_ Tab press the btn:[Validate Plug-ins] button or select the _Validate plug-ins automatically prior to launching_ option.
+This will check if you have all the required plug-ins in your run configuration.
+
+image::./launchconfiguration30.png[Validating the runtime configuration]
+====
+
+Avoid fixing problems with dependencies in the run configuration because the run configuration is created and updated based on the product configuration file.
+So always ensure that the product file is correctly configured instead of changing the derived information.
+The product configuration is used for the export of your product, hence an error in the product dependencies results in an exported application which cannot be started.
+
+
+
 The following table lists potential problems and solutions.
 
 .Run configuration problems
@@ -15,7 +47,7 @@ The following table lists potential problems and solutions.
 
 |"Could not resolve module" message during start up.
 |Check that all required plug-ins are included in your product configuration.
-Make sure that your product defines dependencies to all required plug-ins or features. See <<runconfiguration_mainproblem>>
+Make sure that your product defines dependencies to all required plug-ins or features. See the beginning of this section for a description how to solve the problem.
 
 Bundles may also require a certain version of the Java virtual machine, e.g., a bundle may require Java 1.6 and will therefore not load in a Java 1.5 VM. Check the _MANIFEST.MF_ file on the _Overview_ tab in the _Execution Environments_ section which Java version is required.
 
@@ -51,38 +83,4 @@ The bundle symbolic name is `org.eclipse.e4.ui.workbench`.
 |Ensure that you have pressed the btn:[New...] button in the product configuration file and selected the `E4Application` as application to start.
 You can check the current setting in your _plugin.xml_ file on the _Extensions_ tab and in the details of the _org.eclipse.core.runtime.products_ extension.
 |===
-
-[[runconfiguration_mainproblem]]
-=== Finding missing plug-in dependencies during a product launch
-(((Finding missing plug-in dependencies during a product launch)))
-(((Launch configuration, Problems)))
-The most common problem is that some required plug-ins are missing in your product.
-If you are using a feature based product configuration, you need to ensure that all plug-ins which are referred to in the MANIFEST.MF file are also included in your features. This error is reported in the _Console_ view, typically it is one of the first error messages and you need to scroll up to see it.
-
-The following listing shows how this message typically looks like (formating changed to make the text fit better).
-
-[source,java]
-----
-org.osgi.framework.BundleException: 
-   Could not resolve module: com.example.e4.rcp.todo.services [9]
-      Unresolved requirement: 
-         Require-Bundle: com.example.e4.rcp.todo.events; 
-            bundle-version="1.0.0"
-----
-
-After identifying the missing plug-ins ensure that you add them to your product (if the product is plug-in based) or to your features (if the product is feature based).
-
-
-[TIP]
-====
-Eclipse can check for missing dependencies automatically before you run the Launch configuration.
-On the _Plug-ins_ Tab press the btn:[Validate Plug-ins] button or select the _Validate plug-ins automatically prior to launching_ option.
-This will check if you have all the required plug-ins in your run configuration.
-
-image::./launchconfiguration30.png[Validating the runtime configuration]
-====
-
-Avoid fixing problems with dependencies in the run configuration because the run configuration is created and updated based on the product configuration file.
-So always ensure that the product file is correctly configured instead of changing the derived information.
-The product configuration is used for the export of your product, hence an error in the product dependencies results in an exported application which cannot be started.
 

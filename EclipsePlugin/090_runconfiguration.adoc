@@ -25,8 +25,7 @@ image::lauchconfiguration20.png[Shows the run configuration, highlighting the lo
 (((Run configuration arguments, noExit)))
 (((Run configuration arguments, clearPersistedState)))
 The run configuration allows you to add additional start arguments for your application on the _Arguments_ tab.
-By default Eclipse includes already several parameters, e.g. parameters for _-os_,_-ws_
-and _-arch_ to specify the architecture on which the application is running.
+By default Eclipse includes already several parameters, e.g. parameters for _-os_,_-ws_ and _-arch_ to specify the architecture on which the application is running.
 
 image::launchconfiguration40.png[-consoleLog in the run configuration]
 
@@ -67,23 +66,7 @@ This allows to analyze the application dependencies even if the application cras
 === Launch configuration and Eclipse products
 
 If you are developing Eclipse RCP applications, the launch configuration is created based on the product configuration file.
-The launch configuration is also updated every time you start your application via the product.
-
-You can use the created run configuration directly for starting the application again.
-In this case changes in the product configuration file are not considered.
-
-
-[WARNING] 
-====
-Using an existing run configuration is a common source of frustration and time consuming error analysis. 
-To ensure that you use the latest configuration from your product, start your application via the product file.
-====
-
-
-=== Launch configuration and Eclipse products
-
-The launch configuration stores the settings from the product configuration file.
-The launch configuration is created or updated every time you start your application via the product.
+The launch configuration is updated every time you start your application via the product.
 
 You can use the created run configuration directly for starting the application again.
 In this case changes in the product configuration file are not considered.

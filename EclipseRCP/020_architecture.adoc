@@ -1,6 +1,4 @@
-== The Architecture of Eclipse
-
-=== Architecture of Eclipse based applications
+== Architecture of Eclipse based applications
 
 An Eclipse RCP application consists of individual software components.
 Eclipse applications are based on some basic components, other components use them and provided extended functionality on top of them.
@@ -15,7 +13,7 @@ On top of these, they add application specific components as depicted in the fol
 
 image::./architecture20.png[Typical components of an Eclipse RCP application]
 
-=== Core components of the Eclipse platform
+== Core components of the Eclipse platform
 
 _OSGi_ is a specification to describe a modular approach to develop component-based Java applications.
 The programming model of OSGi allows you to define dynamic software components, i.e., OSGi services.
@@ -30,7 +28,8 @@ It is responsible for displaying all other user interface components.
 _EMF_ is the Eclipse Modeling Framework which provides functionality to model a data model and to use this data model at runtime.
 
 [e4overview_api]
-=== Eclipse API and internal API
+== Eclipse API and internal API
+
 (((Provisional API, Internal API)))
 An OSGi runtime allows the developer to mark Java packages as public, provisional or internal APIs.
 The internal API is private, therefore not visible. The provisional API are to test non-finalized APIs, therefore are visible but non-stable.
@@ -57,7 +56,7 @@ Alternatively you can turn off these warnings on a per project basis, via right-
 You might have to activate the _Enable project specific settings_ checkbox at the top of the Error/Warnings preference page.
 ====
 
-=== Important configuration files for Eclipse plug-ins
+== Important configuration files for Eclipse plug-ins
 
 An Eclipse plug-in has the following main configuration files.
 These files are defining the API, and the dependencies of the plug-in.
@@ -70,5 +69,6 @@ An Eclipse plug-in defines its meta data, like its unique identifier, its export
 The _plugin.xml_ file provides the possibility to create and contribute to Eclipse specific API.
 You can add _extension points_ and _extensions_ in this file.
 _Extension-points_ define interfaces for other plug-ins to contribute functionality.
-_Extensions_ contribute functionality to these interfaces. Functionality can be code and non-code based. For example a plug-in might contain help content.
+_Extensions_ contribute functionality to these interfaces. Functionality can be code and non-code based. 
+For example, a plug-in might contain help content.
 

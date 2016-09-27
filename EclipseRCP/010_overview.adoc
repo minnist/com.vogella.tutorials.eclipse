@@ -5,6 +5,18 @@
 An Eclipse RCP application is a stand-alone application based on Eclipse platform technologies.
 This {textselfreference} uses the terms _Eclipse based applications_, _Eclipse application_, _Eclipse 4 application_ and _Eclipse RCP application_ interchangeably for referring to such applications.
 
+The Eclipse IDE version 2.0 started as a modular IDE application.
+In 2004 Eclipse version 3.0 was released. 
+Eclipse 3.0 supported reusing components of the Eclipse platform to build stand-alone applications based on the same technology as the Eclipse IDE.
+
+At this point, the term _Eclipse RCP_ was coined.
+Eclipse RCP is short for _Eclipse Rich Client Platform_ and indicates that the Eclipse platform is used as a basis to create feature-rich stand-alone applications.
+
+The release of Eclipse in version 4.x simplified and unified the Eclipse programming model which is now based on state-of-the-art technologies, like dependency injection and declarative styling via CSS files.
+
+Eclipse RCP applications benefit from the existing user interface and the internal framework, and can reuse existing plug-ins and features.
+
+
 === History of Eclipse RCP
 
 Eclipse was originally started as a modular IDE application.

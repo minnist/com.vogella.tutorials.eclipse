@@ -1,5 +1,8 @@
 === Enter the dependencies
 
+To use classes from other plug-ins (their API) in the code of your plug-in you need to declare this in the _MANIFEST.MF_ file.
+In this part of the exercise you prepare your API dependencies.
+
 ==== Add the plug-in dependencies
 
 In the source code of you new plug-in, you will later use the API from other Eclipse plug-ins.

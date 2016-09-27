@@ -1,7 +1,5 @@
 === From plug-in to Eclipse 4 application
 
-==== Target
-
 In this chapter you convert the generated plug-in into an Eclipse RCP application.
 
 ==== Create a project to host the product configuration file

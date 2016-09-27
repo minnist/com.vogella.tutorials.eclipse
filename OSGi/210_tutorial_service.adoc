@@ -1,56 +1,26 @@
 == Exercise: Create service bundle
 
-=== Target of the exercise
-In this exercise you create a plug-in for a service
-implementation which provides access to the data.
+In this exercise you create a plug-in for a service implementation which provides access to the data.
 
-This service implementation uses transient data storage, i.e.,
-the
-data is not persisted between
-application
-restarts. To persist
-the
-data you could extend this class
-to store the data for example in
-a
-database or
-the file system.
-As this
-storage is
-not
-special for
-Eclipse
-RCP
-applications, it is not covered
-in
-this
-{textselfreference}.
+This service implementation uses transient data storage, i.e., the data is not persisted between application restarts. 
+To persist the data you could extend this class to store the data for example in a database or the file system.
+As this storage is not special for Eclipse RCP applications, it is not covered in this {textselfreference}.
 
 === Create a data model provider plug-in (service plug-in)
 
-Create a new simple plug-in (see
-<<simpleplugin>>
-) project called
-_com.example.e4.rcp.todo.services_.
-This plug-in is called
-_todo service_
-plug-in in the following description.
+Create a new simple plug-in (see <<simpleplugin>>) project called _com.example.e4.rcp.todo.services_.
+This plug-in is called _todo service_ plug-in in the following description.
 
-TIP: The MacOS operating system treads folders ending with _.service_ special, therefore we use the _.services_ ending.
+[NOTE]
+====
+The MacOS operating system treads folders ending with _.service_ special, therefore we use the _.services_ ending.
+====
 
 === Define the dependencies in the service plug-in
 
-Add the
-`com.example.e4.rcp.todo.model`
-plug-in as dependency to your service plug-in. To achieve this
-open
-the
-_MANIFEST.MF_
-file and select the
-_Dependencies_
-tab and add the
-`com.example.e4.rcp.todo.model`
-package
+Add the `com.example.e4.rcp.todo.model` plug-in as dependency to your service plug-in. 
+To achieve this, open the _MANIFEST.MF_ file. 
+Afterwards select the _Dependencies_ tab and add the `com.example.e4.rcp.todo.model` package
 to the
 _Imported Packages_.
 

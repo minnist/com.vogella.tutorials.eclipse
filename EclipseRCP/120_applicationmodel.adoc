@@ -25,7 +25,9 @@ Changes made by the user are persisted and re-applied at startup.
 The application model is extensible, e.g., other plug-ins can contribute to it via _model processors_ and
 _model fragments_.
 
+<<context_modelelementswithcontext>>
 === Connecting model elements to classes and resources
+
 (((Class URI, bundleclass://)))
 (((Class URI, platform:/plugin/)))
 Model elements can point to a class or to a static resource via a Uniform Resource Identifier (URI).
@@ -43,7 +45,6 @@ The example assumes that the bundle is called _test_ to have a short name.
 
 |`bundleclass://Bundle-SymbolicName/package.classname`
 
-<<<
 Example: 
 
 `bundleclass://test/test.parts.MySavePart`
@@ -54,7 +55,6 @@ The Bundle-SymbolicName is followed by a '/' and the fully qualified classname.
 
 |`platform:/plugin/Bundle-SymbolicName/path/filename.extension`
 
-<<<
 Example: 
 
 `platform:/plugin/com.example.plugin/icons/save_edit.gif`

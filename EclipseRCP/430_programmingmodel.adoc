@@ -1,6 +1,6 @@
 == Using annotations to define behavior
 
-=== API definition
+=== API definition in a framework
 
 If you use a framework in your application, you need to have a convention for how your application interacts with the framework.
 For example, if a Java object is responsible for handling a toolbar button click, the framework needs to know which method of this object needs to be called.

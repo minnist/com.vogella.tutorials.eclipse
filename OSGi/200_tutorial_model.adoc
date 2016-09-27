@@ -1,38 +1,20 @@
 == Exercise: Data model plug-in
 
-=== Target of the exercise
-In this exercise you create a plug-in for the
-definition of
-your
-data model. You also
-make this
-data model available
-to
-other plug-ins.
+In this exercise you create a plug-in for the definition of your data model. 
+You also make this data model available to other plug-ins.
 
 === Create the plug-in for the data model
 
-Create a simple plug-in project (see
-<<simpleplugin>>
-) called
-_com.example.e4.rcp.todo.model_.
+Create a simple plug-in project (see <<simpleplugin>>) called _com.example.e4.rcp.todo.model_.
 
-The following screenshot depicts the second page of the plug-in
-project wizard and its corresponding settings.
-Press
-the
-btn:[Finish] button on this page
-to avoid the usage of templates.
+The following screenshot depicts the second page of the plug-in project wizard and its corresponding settings.
+Press the btn:[Finish] button on this page to avoid the usage of templates.
 
 image::osgi_simpleplugin10.png[Creating a simple plug-in]
 
 === Create the base class
 
-Create the
-`com.example.e4.rcp.todo.model`
-package
-and the
-following model class.
+Create the `com.example.e4.rcp.todo.model` package and the following model class.
 
 [source,java]
 ----
@@ -52,7 +34,18 @@ WARNING: Ensure that you have created both constructors, because they are requir
 
 Use the menu:Source[Generate Getter and Setter...] menu to create getters and setters for your fields.
 
-NOTE: The _id_ is final and therefore Eclipse creates only a getter. This is correct and desired.
+.Why is the _id_ field marked as final? 
+[NOTE]
+====
+
+The _id_ is final and therefore Eclipse creates only a getter.
+This is correct and desired.
+We will use this field to generate the `equals` and `hashCode()` methods therefore it should not be mutable. 
+Changing a field which is used in the `equals` and `hashCode()` methods can create bugs which are hard to identify, i.e., an object
+is contained in a `HashMap` but not found.
+====
+
+
 
 image::osgi_model_settergetter10.png[Getter and setter generation]
 
@@ -72,15 +65,6 @@ The resulting class should look like the following listing.
 ----
 include::res/datamodel/Todo.java[]
 ----
-
-.Why is the _id_ field marked as final? 
-[NOTE]
-====
-
-We will use this field to generate the `equals` and `hashCode()` methods therefore it should not be mutable. 
-Changing a field which is used in the `equals` and `hashCode()` methods can create bugs which are hard to identify, i.e., an object
-is contained in a `HashMap` but not found.
-====
 
 === Generate toString(), hashCode() and equals() methods
 

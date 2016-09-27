@@ -1,8 +1,6 @@
 === Modeling a User Interface
 
-==== Target: Build the following user interface
-
-In the this exercise, you create the basis of the application user interface. 
+In the this part of the exercise, you create the basis of the application user interface. 
 At the end of this exercise, your user interface should look similar to the following screenshot.
 
 image::tutorial_model50.png[Screenshot of the application]
@@ -24,6 +22,7 @@ image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP applica
 ====
 Alternatively to the context menu you can also use the btn:[Add...] button on the detail page to add child elements to the selected element.
 ====
+
 
 After creating the perspective stack add a _Perspective_ to it, either via the context menu or the btn:[Add...] button.
 

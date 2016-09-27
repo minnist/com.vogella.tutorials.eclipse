@@ -26,6 +26,7 @@ This allows that the same key points to different objects in the hierarchy.
 For example, a part can express a dependency to a `Composite` object via a field declaration similar to: `@Inject Composite parent;`
 Since parts have different local contexts they can receive different objects of the type `Composite`.
 
+[[context_modelelementswithcontext]]
 === Which model elements have a local context?
 
 Currently the following model elements implement the `MContext` interface and therefore have their own context:
@@ -83,7 +84,7 @@ The search happens (mostly) transparently for the caller of the injection.
 === How to access the model objects?
 
 For the class references in the application model (see <<connectmodeltojava>> ), the Eclipse framework creates the corresponding objects when needed.
-Such an object has access to its corresponding model object (see <<importantmodelelement_element>>) via dependency injection.
+Such an object has access to its corresponding model object via dependency injection.
 
 For example, in the implementation of a part you can access the model information of a part via: `@Inject MPart part;`
 

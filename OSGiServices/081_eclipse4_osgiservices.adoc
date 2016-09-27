@@ -1,22 +1,11 @@
-== Using declarative services in RCP applications
+=== Using declarative services in RCP applications
 (((Product configuration file,Start level)))
-The Eclipse RCP framework automatically starts the required
-plug-ins for using declarative OSGi service.
-It is not
-required to
-manually set a start level
-in your
-product configuration file.
+
+The Eclipse RCP framework automatically starts the required plug-ins for using declarative OSGi service.
+It is not required to manually set a start level in your product configuration file.
 	
-A plug-in which provides service in an Eclipse RCP application must be in its
-`ACTIVE`
-life cycle status. Therefore, ensure that the
-_Activate this plug-in when one of its classes is loaded_
-flag is set on the
-_MANIFEST.MF_
-file. The DS Annotation support in Eclipse allows that this is done automatically. See
-<<declarativeservices_annotations>>
-and
-<<osgiservice_active>>
-for details.
+A plug-in which provides service in an Eclipse RCP application must be in its `ACTIVE` life cycle status. 
+Therefore, ensure that the _Activate this plug-in when one of its classes is loaded_ flag is set on the _MANIFEST.MF_ file. 
+The DS annotation support in Eclipse allows that this is done automatically.
+See <<declarativeservices_annotations>> and<<osgiservice_active>> for details.
 

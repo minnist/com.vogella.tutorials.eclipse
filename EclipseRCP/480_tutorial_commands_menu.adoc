@@ -1,7 +1,5 @@
 == Exercise: Adding menus
 
-=== Target of this exercise
-
 In this exercise you create commands and handlers for your application.
 Afterwards you will create menu entries using these commands.
 

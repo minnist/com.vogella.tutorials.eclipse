@@ -1,10 +1,7 @@
 == Create your first Java program
 
-=== Target of this exercise
-
-The following section describes how to create a minimal Java
-application
-using Eclipse. It is tradition in the programming world to
+The following section describes how to create a minimal Java application using Eclipse. 
+It is tradition in the programming world to
 create a
 small program which writes "Hello World" to the console. We
 will

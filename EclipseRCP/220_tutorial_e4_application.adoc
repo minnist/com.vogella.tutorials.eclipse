@@ -109,7 +109,7 @@ image::training_product50.png[]
 Press the btn:[Finish] button.
 This triggers the creation of the _Application.e4xmi_ file inside the `com.example.e4.rcp.todo` plug-in and opens it.
 
-=== Add a window to the application model
+==== Add a window to the application model
 
 Add one window to your application model so you have a visual component.
 

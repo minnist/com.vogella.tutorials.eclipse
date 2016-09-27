@@ -48,6 +48,7 @@ as
 explained in the following table.
 
 .Eclipse Preference scope
+[cols="1,2",options="header"]
 |===
 |Scope |Description
 

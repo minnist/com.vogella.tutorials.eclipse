@@ -1,20 +1,14 @@
 == Relevant tags and persisted state keys in the application model
 
-The following table lists the most important tags
-for model
-elements of
-Eclipse 4 applications.
+The following table lists the most important tags for Eclipse model elements.
 
-Additional tags are defined in the
-`IPresentationEngine`
-interface. It is up to the renderer implementation and model add-ons to
-interpret these tags. Renderer might also
-define additional tags. You
-also find more information about the available tags in the Eclipse 4
-Wiki (see resources for
-link).
+Additional tags are defined in the `IPresentationEngine` interface. 
+It is up to the renderer implementation and model add-ons to interpret these tags. 
+Renderer might also define additional tags. 
+You also find more information about the available tags in the http://wiki.eclipse.org/Eclipse4/RCP/Modeled_UI/Tags[Eclipse tags wiki].
 
 .Relevant tags of application model elements
+[cols="1,2,2",options="header"]
 |===
 |Tag |Model element |Description
 

@@ -78,31 +78,13 @@ parameter.
 
 image::processor10.png[]
 
-WARNING: This assumes that you used
-_org.eclipse.ui.file.menu_
-as
-ID for your
-_File_
-menu in the main application model.
+WARNING: This assumes that you used _org.eclipse.ui.file.menu_ as ID for your _File_ menu in the main application model.
 
-WARNING: The ID of the element defined in the extension point must match the
-`@Named`
-value in the processor, otherwise your menu is not injected into the
-processor.
+WARNING: The ID of the element defined in the extension point must match the `@Named` value in the processor, otherwise your menu is not injected into the processor.
 
 === Validating
 
-Start your application. In the model fragment exercises, the
-contribute plug-in was already added to your
-product.
+Start your application. In the model fragment exercises, the contribute plug-in was already added to your product.
 
-Ensure that the
-existing "Exit"
-menu entry is
-removed and your new
-menu entry with the
-"Another Exit"
-label is
-added to
-the file menu.
+Ensure that the existing _Exit_ menu entry is removed and your new menu entry with the _Another Exit_ label is added to the file menu.
 

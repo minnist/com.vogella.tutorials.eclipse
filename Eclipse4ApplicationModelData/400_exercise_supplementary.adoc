@@ -2,45 +2,30 @@
 
 === Target
 		
-In this exercise you are about to learn
-how to use tags and
-persisted state
-data on the application model elements.
+In this exercise you are about to learn how to use tags and persisted state data on the application model elements.
 		
-TIP: Use <<recipes_tags>>
-	for information on the tags or look directly at the
-	`IPresentationEngine`
-	interface.
+[TIP]
+====
+See <<recipes_tags>> for information on the tags or look directly at the `IPresentationEngine` interface.
+====
 
 
 === Use tags
 		
-Add the
-_NoMove_
-tag to your parts and ensure that you cannot move it via
-drag and
-drag.
+Add the _NoMove_ tag to your parts and ensure that you cannot move it via drag and drag.
 		
 		
 Make all your parts closable via the corresponding model attribute.
-Assign the
-_NoAutoCollapse_
-to a stack and close all parts in this stack. Validate that your
-stack is not closed.
+Assign the _NoAutoCollapse_ to a stack and close all parts in this stack. 
+Validate that your stack is not closed.
 		
 	
 
 === Optional: Use persisted state
 		
-Add to the
-_styleOverride_
-parameter with the value 1024 as
-_Persisted State_
-to on of your
-_PartStacks_
-model elements.
+Add to the _styleOverride_ parameter with the value 1024 as _Persisted State_ to on of your _PartStacks_ model elements.
 		
-		This causes this part stack to render its tabs at the bottom.
+This causes this part stack to render its tabs at the bottom.
 		
 	
 

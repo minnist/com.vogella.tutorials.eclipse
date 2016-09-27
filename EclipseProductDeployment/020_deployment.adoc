@@ -84,6 +84,7 @@ Exporting twice to the same folder may create file locks or results in error mes
 If the export encounters a problem please have a look into the following table for a solution:
 
 .Problems with the product export
+[cols="1,2",options="header"]
 |===
 |Problem |Possible cause
 

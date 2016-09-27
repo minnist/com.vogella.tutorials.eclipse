@@ -58,6 +58,146 @@ The screenshot below shows the _build.properties_ file for a plug-in with most o
 
 image::buildproperties10.png[]
 
+
+
+
+[[exportproblems]]
+=== Common product export problems
+
+==== Problems with the export and log files
+
+During the export or the start of the exported application you may encounter problems. 
+If your application got successfully exported but cannot be started you find a log file ending with the _.log_ extension in the _configuration_ folder of your application. 
+This file contains the error you encountered.
+
+Alternatively the export process may fail. 
+In both cases you can use this chapter as reference to try to find and fix the reason for the failure.
+
+==== Export problem number #1: export folder is not empty
+
+The most common problem is that the folder to which you export is not empty.
+If you export to a certain folder, ensure that the folder is empty. 
+Exporting twice to the same folder may create file locks or results in error messages reporting version conflicts.
+
+==== Checklist for common export problems
+
+If the export encounters a problem please have a look into the following table for a solution:
+
+.Problems with the product export
+|===
+|Problem |Possible cause
+
+|Export fails
+|Try using an empty target directory, sometimes
+the export
+cannot delete the existing files and therefore fails.
+
+|No executable file after the export
+|Check the flag "The product
+includes native
+launcher
+artifacts" in
+your .product file on the
+_Overview_
+tab.
+
+|Product could not be found
+|Validate that all dependencies
+are included in the product.
+Delete an existing launch
+configuration and restart the product
+from the IDE to see if
+everything is configured correctly.
+
+|Splash screen or other icons are missing
+|Check the
+_build.properties_
+file to see if all required images and
+icons are
+included in
+the
+export.
+
+|Splash screen is missing
+|Ensure that you have entered the defining plug-in in the
+"Splash" tab on the product configuration file. If this is not
+set, the splash screen is not displayed after the export.
+Unfortunately, it is displayed if you start the plug-in
+from the
+Eclipse IDE.
+
+|Issues during start of the application
+|Check the log file in the
+workspace folder of your exported
+application to see the error messages
+during the start process.
+Alternatively
+add the
+"-consoleLog" parameter to the ".ini" file
+in folder
+of
+the
+exported application.
+
+|applicationXMI argument is missing
+|Check the
+_build.properties_
+file to see if the
+_Application.e4xmi_
+and
+the
+_plugin.xml_
+files are
+included in
+the export.
+
+|Service could not be found or injected
+|Make sure that the bundle which provides the service has the
+_Activate this plug-in when one of its classes is
+loaded
+_
+flag set. Also
+make
+sure
+that the
+`org.eclipse.equinox.ds`
+bundle
+is started automatically with a
+_Start Level_
+less than 4.
+
+|Application ID could not be found
+|Define a
+start
+level of 1 and set auto-start to true for the
+`org.eclipse.core.runtime`
+plug-in.
+
+|Translations not available in the exported product
+|Ensure via the
+_build.properties_
+file of the relevant plug-in that the files containing the
+translations are included in
+the export.
+    
+|===
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 === Export for multiple platforms via the delta pack
 
 The _delta pack_ contains the platform specific features and plug-ins which are required to build and export Eclipse applications for multiple platforms.
@@ -94,32 +234,16 @@ tab of your product configuration file.
 
 === Headless build
         
-A
-_headless build_
-is an automatic build without user interaction and without a
-graphical user interface. It can be triggered from the command line.
-Typically, the build is automatically done via an additional software
-component called the
-_build server_
-which does so in a clean (and remote) environment.
+A _headless build_ is an automatic build without user interaction and without a graphical user interface. 
+It can be triggered from the command line.
+Typically, the build is automatically done via an additional software component called the _build server_ which does so in a clean (and remote) environment.
         
-Different solutions exist to do a
-headless build.
-Currently the most
-popular
-approach for building Eclipse RCP applications is based on
-Maven Tycho. Describing a headless build is beyond the scope of this
-description but you can see the online
-http://www.vogella.com/tutorials/EclipseTycho/article.html[Maven Tycho tutorial]
-for an introduction into headless builds for Eclipse RCP
-applications.
+Different solutions exist to do a headless build.
+Currently the most popular approach for building Eclipse RCP applications is based on Maven Tycho.
+Describing a headless build is beyond the scope of this description but you can see the online http://www.vogella.com/tutorials/EclipseTycho/article.html[Maven Tycho tutorial] for an introduction into headless builds for Eclipse RCP applications.
         
-An example for a build server would be the
-_Jenkins_
-continuous integration (system). See the online
-http://www.vogella.com/tutorials/Jenkins/article.html[Jenkins tutorial]
-for an introduction into the setup, configuration and usage of
-Jenkins.
+An example for a build server would be the _Jenkins_ continuous integration (system). 
+See the online http://www.vogella.com/tutorials/Jenkins/article.html[Jenkins tutorial] for an introduction into the setup, configuration and usage of Jenkins.
     
 
 

@@ -25,8 +25,11 @@ include::122_uiconcepts.adoc[]
 include::140_modelelements.adoc[]
 include::208_featureproduct.adoc[]
 
-include::210_tutorial_plugin.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
+
+== Exercise: Creating an Eclipse RCP application 
+
+include::210_tutorial_plugin.adoc[]
 include::220_tutorial_e4_application.adoc[]
 include::240_tutorial_modelelements.adoc[]
 include::242_tutorial_e4_dependencies.adoc[]

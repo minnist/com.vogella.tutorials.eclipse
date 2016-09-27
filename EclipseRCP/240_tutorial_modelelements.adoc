@@ -1,13 +1,13 @@
-== Modeling a User Interface
+=== Modeling a User Interface
 
-=== Target: Build the following user interface
+==== Target: Build the following user interface
 
 In the this exercise, you create the basis of the application user interface. 
 At the end of this exercise, your user interface should look similar to the following screenshot.
 
 image::tutorial_model50.png[Screenshot of the application]
 
-=== Open the Application.e4xmi file
+==== Open the Application.e4xmi file
 
 Open the _Application.e4xmi_ file in the _Eclipse 4 model editor_ via a double-click or right-click on it and select menu:Open With[Eclipse 4 model editor].
 
@@ -33,7 +33,7 @@ Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.pe
 
 image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application]
 
-=== Add part sash and part stack containers
+==== Add part sash and part stack containers
 
 Select _Controls_ below the newly created perspective and add a part sash container element.
 
@@ -52,7 +52,7 @@ After these changes your application model should look similar to the following 
 
 image::tutorial_model30.png[Application model structure]
 
-=== Create the parts
+==== Create the parts
 
 Add a part model element to each part stack.
 As ID for the parts use the prefix `com.example.e4.rcp.todo.part` and the suffix from the following table.
@@ -77,7 +77,7 @@ The screenshot also shows the detailed data of the overview part inside the deta
 
 image::tutorial_model40.png[Part data]
 
-=== Validate the user interface
+==== Validate the user interface
 
 Start your product and validate that the user interface looks as planned.
 Reassign your model elements if required.

@@ -1,6 +1,6 @@
-== Create an Eclipse plug-in
+=== Create an Eclipse plug-in
 
-=== Target
+==== Target
 
 In the following exercise you create a standard Eclipse plug-in.
 This plug-in is later converted into an Eclipse RCP application.
@@ -11,7 +11,7 @@ This plug-in is later converted into an Eclipse RCP application.
 The following description calls this plug-in the _application plug-in_ as this plug-in will contain the main application logic.
 ====
 
-=== Creating a plug-in project
+==== Creating a plug-in project
 
 In Eclipse select menu:File[New > Other...  > Plug-in Development > Plug-in Project].
 
@@ -31,7 +31,7 @@ image::training_firstrcp20.png[Second page of the Eclipse Plug-in Wizard specify
 Press the btn:[Finish] button.
 If you click the btn:[Next] button instead of btn:[Finish], the wizard shows you a template selection page which you can bypass without a selection.
 
-=== Validate the result
+==== Validate the result
 
 Open the project and ensure that no Java classes were created in the source folder.
 

@@ -1,6 +1,6 @@
-== Enter the dependencies
+=== Enter the dependencies
 
-=== Add the plug-in dependencies
+==== Add the plug-in dependencies
 
 In the source code of you new plug-in, you will later use the API from other Eclipse plug-ins.
 The Eclipse programming model requires that you define a dependency to such plug-ins or packages in your new plug-in. 
@@ -17,7 +17,7 @@ Use the btn:[Add...] button in the _Required Plug-ins_ section to add the follow
 * org.eclipse.e4.ui.di
 * org.eclipse.e4.core.di.extensions
 
-=== Validating
+==== Validating
 
 The result should be similar to the following screenshot.
 

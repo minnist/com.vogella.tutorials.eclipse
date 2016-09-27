@@ -1,6 +1,6 @@
-== Connect Java classes with the parts
+=== Connect Java classes with the parts
 
-=== Create a new package and some Java classes
+==== Create a new package and some Java classes
 
 Create the `com.example.e4.rcp.todo.parts` package in the application plug-in.
 
@@ -22,7 +22,7 @@ include::res/start/TodoDetailsPart.java[]
 ----
 
 [[tutorial_modelelementsclasses]]
-=== Connect the Java classes with your parts
+==== Connect the Java classes with your parts
 		
 Open the _Application.e4xmi_ file and connect the class with the corresponding part model element.
 You can do this via the _Class URI_ property of the part model element.
@@ -52,7 +52,7 @@ The following screenshot shows the result for the overview part.
 
 image::tutorial_model62.png[Finding a model class in the Application model]
 
-=== Validating
+==== Validating
 
 Start your application.
 It should start, but you should see no difference in the user interface.

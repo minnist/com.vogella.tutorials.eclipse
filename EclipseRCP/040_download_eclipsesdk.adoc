@@ -1,6 +1,7 @@
 == Download the Eclipse Software Development Kit (SDK)
+
 (((Download, Eclipse SDK)))
-The following description is based on the latest Eclipse 4.6 release.
+The following description is based on the latest Eclipse 4.6 (Neon) release.
 Download the latest version of the _Eclipse SDK_ build from the following URL:
 
 `http://download.eclipse.org/eclipse/downloads/`
@@ -11,6 +12,5 @@ Click on the link of the latest released version (the release version with the h
 image::downloadeclipse.png[Eclipse.org Download Page]
 
 The download is a compressed archive  of multiple files.
-This format depends on you platform, Windows the _zip_ format, while Linux and Mac OS uses
-the _tar.gz_ format.
+This format depends on you platform, Windows the _zip_ format, while Linux and Mac OS uses the _tar.gz_ format.
 

@@ -3,37 +3,20 @@
 === Java requirements of the Eclipse IDE
 	
 The Eclipse Neon (4.6) release requires Java 8 to run.
-	
-The Eclipse IDE contains its custom Java compiler hence a JRE is
-sufficient for most tasks with Eclipse.
-The
-_JDK_
-version of Java is only
-required if you compile Java source code
-on the
-command line
-and
-for
-advanced
-development scenarios.
-For example, if you
-use
-automatic
-builds or if
-you develop Java web
-applications.
-	
-Please note that you need a 64 JVM to run a 64 bit Eclipse and a
-32 bit JVM to run a 32 bit Eclipse.
-	
 
+[NOTE]
+====    
+Please note that you need a 64 JVM to run a 64 bit Eclipse and a 32 bit JVM to run a 32 bit Eclipse.
+====    
+
+	
+The Eclipse IDE contains its custom Java compiler hence a JRE is sufficient for most tasks with Eclipse.
+The _JDK_ version of Java is only required if you compile Java source code on the command line and for advanced development scenarios.
+For example, if you use automatic builds or if you develop Java web applications.
 
 === Install the Eclipse IDE
 
-After you downloaded the
-file with the Eclipse distribution, unpack it
-to a local
-directory.
+After you downloaded the file with the Eclipse distribution, unpack it to a local directory.
 Most operating systems can
 extract
 zip or tar.gz
@@ -65,23 +48,20 @@ additional
 installation procedure is
 required.
 
-=== Solving exit code=13 while starting the Eclipse IDE
+=== What to do if the Eclipse IDE does not start
 
-A common startup error happens when the user tries to launch a 64-bit version of Eclipse using a 32 bit JVM or vice
-versa. In this
-case Eclipse does not start and the user gets a message containing exit code=13. This happens when the
-version of
-Eclipse is not
-matching the JVM version. A 32-bit Eclipse must run with Java 32 bit, and 64-bit Eclipse must
-use a
-64-bit JVM.
+A common startup error happens when the user tries to launch a 64-bit version of Eclipse using a 32 bit JVM or vice versa. 
+In this case Eclipse does not start and the user gets a message containing *exit code=13*. 
+This happens when the version of Eclipse is not matching the JVM version. 
+A 32-bit Eclipse must run with Java 32 bit, and 64-bit Eclipse must use a 64-bit JVM.
+
 Use
 
-[source]
+[source, console]
 ----
 java -version
 ----
 
-on the command line and if the output does not contain the word "Server" you are using the 32 bit version of Java and
-must use a 32 bit version of Eclipse.
+on the command line. 
+If the output does not contain the word "Server" you are using the 32 bit version of Java and must use a 32 bit version of Eclipse.
 

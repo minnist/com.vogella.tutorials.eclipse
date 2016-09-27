@@ -1,12 +1,6 @@
 == Example usage
 	
-An example for using your custom annotations would be the Java
-Persistence API (JPA). You could create a custom
-annotation for the
-JPA persistence manager. The JPA persistence manager could be
-injected
-into the Eclipse 4 application
-based on that custom annotation and a
-corresponding
-annotation processor.
+An example for using your custom annotations would be the Java Persistence API (JPA). 
+You could create a custom annotation for the JPA persistence manager. 
+The JPA persistence manager could be injected into the Eclipse 4 application based on that custom annotation and a corresponding annotation processor.
 	

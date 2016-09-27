@@ -1,15 +1,10 @@
 == Custom annotations
-(((Annotations,Custom annotations processors)))
+
 === Custom annotations in Eclipse
-		
-The Eclipse platform uses dependency injection as the primary
-programming model. This mechanism is
-extensible with
-custom
-annotations.
-The following code demonstrates how you can define your
-custom
-annotation.
+(((Annotations,Custom annotations processors)))
+The Eclipse platform uses dependency injection as the primary programming model. 
+This mechanism is extensible with custom annotations.
+The following code demonstrates how you can define your custom annotation.
 		
 [source,java]
 ----
@@ -18,8 +13,7 @@ include::res/DirectTodo.java[]
 
 === Define an annotation processor via an OSGi service
 		
-To process these custom annotations
-you can register an
+To process these custom annotations you can register an
 OSGi
 service for
 the abstract
@@ -71,4 +65,16 @@ annotation.
 ----
 include::res/DirectTodoObjectSupplier.java[]
 ----
+
+=== Restrictions
+    
+Dependency injection can be used inside an ExtendedObjectSupplier implementation, so that services like the IEventBroker, EModelService and so on can be injected.
+But _Extended object suppliers_ do not have access to the `IEclipseContext` in which they are called. 
+This limits them to search for objects independent of the current Eclipse context. 
+    
+For example preferences are implemented as _extended object suppliers_.
+They look for the preference values on the file system and do not know about the `IEclipseContext`.
+    
+
 		
+

@@ -1,4 +1,4 @@
-== Exercise: Export your product
+== Exercise: Create a feature based product
 
 === Create a feature project for your generated RCP application
 

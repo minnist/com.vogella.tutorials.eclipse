@@ -1,4 +1,4 @@
-== Exercise: Wizard to create an RCP application
+== Exercise: Create an RCP application with the wizard
 
 === Target
 

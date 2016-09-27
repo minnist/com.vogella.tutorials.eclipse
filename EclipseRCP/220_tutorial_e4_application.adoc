@@ -120,6 +120,7 @@ Enter an ID, the position and size of the window and a label as shown in the scr
 
 image::tutorial_product90.png[Enter the data for the TrimmedWindow in the model editor]
 
+[[tutorial_clearpesistence_task]]
 === Ensure to delete the persisted user interface state at startup
 
 If you start and close your application the last state of the application is persisted by the framework and restored the next time you start this application.

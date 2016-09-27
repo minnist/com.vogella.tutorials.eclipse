@@ -142,7 +142,7 @@ include::res/active/MyOwnClass.java[]
 
 [NOTE]
 ====
-The `@Active` annotation is currently not used within the Eclipse framework itself and the author of this $book has not yet managed to find a good use case for this annotation.
+The `@Active` annotation is currently not used within the Eclipse framework itself and the author of this {textselfreference} has not yet managed to find a good use case for this annotation.
 ====
 
 

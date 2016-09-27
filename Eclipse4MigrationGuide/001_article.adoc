@@ -8,6 +8,7 @@ Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 6.2, 06.07.2016
 :docinfodir: ../
 :vgwort: Eclipse4MigrationGuide
+:textselfreference: tutorial
 
 [abstract]
 Migrating Eclipse 3.x components and applications to Eclipse 4.

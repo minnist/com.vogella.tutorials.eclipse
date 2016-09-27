@@ -21,7 +21,7 @@ re-create the
 `Person`
 and
 `Address`
-class from the previous example in this $book in this package.
+class from the previous example in this {textselfreference} in this package.
 	
 Create the
 following

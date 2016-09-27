@@ -83,7 +83,7 @@ Otherwise it should extend the
 `Canvas`
 class.
 		
-In this $book the words "widget" and
+In this {textselfreference} the words "widget" and
 "control" are used
 interchangeable for user interface elements.
 

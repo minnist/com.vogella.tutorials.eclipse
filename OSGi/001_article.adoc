@@ -8,6 +8,7 @@ Lars Vogel (c) 2008, 2016 vogella GmbH
 Version 5.1, 06.07.2016
 :docinfodir: ../
 :vgwort: OSGi
+:textselfreference: script
 
 [abstract]
 OSGi with Eclipse Equinox.

@@ -11,7 +11,7 @@ Some Eclipse projects also use Github for code contributions.
 Contributing to an Eclipse project has the benefit of getting feedback directly from the core developers. 
 It also allows developers and organizations to fix bugs which affect them and to drive the project into a desired direction.
 		
-This $book focuses on the process of contributing code to an Eclipse project.
+This {textselfreference} focuses on the process of contributing code to an Eclipse project.
 If case you do not want to contribute code, there are other ways of contributing, e.g., via updating the project documentation, but these are not covered here.
 	
 

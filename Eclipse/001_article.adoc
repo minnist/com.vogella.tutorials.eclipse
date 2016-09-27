@@ -8,6 +8,7 @@
 Version 5.2, 08.07.2016
 :docinfodir: ../
 :vgwort: Eclipse
+:textselfreference: tutorial
 
 [abstract]
 Eclipse Java IDE.

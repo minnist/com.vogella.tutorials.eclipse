@@ -8,6 +8,7 @@ Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 6.6, 06.07.2016
 :docinfodir: ../
 :vgwort: Eclipse4ExtendModel
+:textselfreference: tutorial
 
 [abstract]
 How to extend the Eclipse 4 application model.

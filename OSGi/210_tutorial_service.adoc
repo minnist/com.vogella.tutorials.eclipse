@@ -24,7 +24,7 @@ RCP
 applications, it is not covered
 in
 this
-$book.
+{textselfreference}.
 
 === Create a data model provider plug-in (service plug-in)
 

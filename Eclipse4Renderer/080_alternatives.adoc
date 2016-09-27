@@ -21,27 +21,11 @@ do
 not
 port automatically your user interface implementation which
 relate
-to code. For example in the exercises of this $book your parts
-or
-your tool controls
-are implemented with SWT classes.
+to code. 
+In the exercises of this {textselfreference} your parts or your tool controls are implemented with SWT classes.
 
-You have to
-re-implement these user interface
-components.
-The
-value
-of
-alternative
-renderer implementations lies in
-the fact that you
-have an
-application
-framework with a
-modeled
-application and dependency
-injection
-of which
+You have to re-implement these user interface components.
+The value of alternative renderer implementations lies in the fact that you have an application framework with a modeled application and dependency injection of which
 your user
 interface
 framework

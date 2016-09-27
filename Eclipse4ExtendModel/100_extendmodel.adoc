@@ -7,27 +7,19 @@ application model with an additional model element.
 
 === Creating a plug-in and add the dependencies
 
-Create a new simple plug-in called
-_com.vogella.e4.appmodel.extensions_.
+Create a new simple plug-in called _com.vogella.e4.appmodel.extensions_.
 
 image::appmodel_projectwizard10.png[Wizard to create a simple plug-in,pdfwidth=40%]
 
-Add a dependency to the plug-ins
-`org.eclipse.e4.ui.model.workbench`
-and
-`org.eclipse.e4.core.contexts`
-in your new plug-in via its
-_MANIFEST.MF_
-file.
+Add a dependency in your new plug-in to the following plug-ins via its _MANIFEST.MF_ file.
+
+* `org.eclipse.e4.ui.model.workbench`
+* `org.eclipse.e4.core.contexts`
+
 
 === Create new model
 
-Create a folder called
-_model_
-and create a new EMF model called
-_UiExtensions.ecore_
-via
-menu:File[New > Other... > Eclipse Modeling Framework > EMF Model].
+Create a folder called _model  and create a new EMF model called _UiExtensions.ecore_ via menu:File[New > Other... > Eclipse Modeling Framework > EMF Model].
 
 image::emf_appmodel10.png[Create the EMF model]
 
@@ -44,13 +36,7 @@ _Load Resource..._.
 
 image::renderermodel10.png[]
 
-Click on the button
-_Browse Registered Packages_
-and select the
-_*UiModel/application_
-model from the
-_org.eclipse.e4.ui.model.workbench_
-plug-in.
+Click on the button _Browse Registered Packages_ and select the _*UiModel/application_ model from the _org.eclipse.e4.ui.model.workbench_ plug-in.
 
 image::renderermodel30.png[Define connections to an existing model, part 1]
 

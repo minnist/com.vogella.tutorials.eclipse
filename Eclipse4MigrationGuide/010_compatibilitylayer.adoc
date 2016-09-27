@@ -48,16 +48,7 @@ completely.
 
 === The e4 API and e4 runtime terminology
 
-This $book uses the term
-_e4 API_
-as a synonym for
-_Eclipse 4.x API_
-and the term
-_e4 runtime_
-as a synonym
-for the
-_Eclipse 4.x runtime_
-term.
+This {textselfreference} uses the term _e4 API_ as a synonym for _Eclipse 4.x API_ and the term _e4 runtime_ as a synonym for the _Eclipse 4.x runtime_ term.
 
 === Running 3.x RCP applications on top of an e4 runtime
 

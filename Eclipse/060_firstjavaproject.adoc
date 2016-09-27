@@ -15,8 +15,7 @@ console.
 
 === Create project
 
-This $book uses the naming convention that the project is named
-the same as the top-level package in the project.
+This {textselfreference} uses the naming convention that the project is named the same as the top-level package in the project.
 
 Select
 menu:File[New > Java project]

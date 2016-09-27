@@ -3,7 +3,7 @@
 
 === Using the OSGi service API
 
-OSGi provides several means of declaring services. This $book focus on the OSGi declarative service
+OSGi provides several means of declaring services. This {textselfreference} focus on the OSGi declarative service
 functionality but it is also possible to use other means for defining services. These options are depicted in the
 following picture. Blueprint and Declarative Services provide high level abstractions for handling services.
 

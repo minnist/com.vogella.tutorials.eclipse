@@ -18,7 +18,7 @@ website.
 	
 There are a huge variety of available issue trackers
 it is beyond
-the scope of this $book to cover all of them.
+the scope of this {textselfreference} to cover all of them.
 Information
 about the
 integration with the different trackers can be

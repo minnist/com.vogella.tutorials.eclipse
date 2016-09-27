@@ -301,13 +301,7 @@ image::breadcrumb30.png[Breadcrumb view]
 === Shortcuts
 
 There are a lot of shortcuts available for navigation.
-Please
-check
-the appendix of this $book for these shortcuts or
-open
-menu:Window+Preferences[General > Keys]
-to find and redefine shortcuts at
-runtime.
+Please check the appendix of this {textselfreference} for these shortcuts or open menu:Window+Preferences[General > Keys] to find and redefine shortcuts at runtime.
 
 === Closing and opening projects
 

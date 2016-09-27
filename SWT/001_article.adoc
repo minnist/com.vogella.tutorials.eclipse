@@ -8,6 +8,7 @@ Simon Scholz, (c) 2016 vogella GmbH
 Version 0.2, 01.09.2016
 :docinfodir: ../
 :vgwort: SWT
+:textselfreference: script
 
 [abstract]
 This tutorial describes SWT the user interface toolkit used by the Eclipse framework.

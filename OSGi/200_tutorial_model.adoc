@@ -39,25 +39,18 @@ following model class.
 include::res/datamodel/TodoSimple.java[]
 ----
 
-NOTE: You see an error for your final id field. This error is solved in the <<services_todo_constructor>> section.
+NOTE: You see an error for your final id field. This error is solved in the next section.
 
 === Generate constructors
 
-Select
-menu:Source[Generate Constructor using Fields...]
-to generate a constructor using all fields. Use the same approach to
-create another constructor using only the
-_id_
-field.
+Select menu:Source[Generate Constructor using Fields...] to generate a constructor using all fields. 
+Use the same approach to create another constructor using only the _id_ field.
 
 WARNING: Ensure that you have created both constructors, because they are required in the following exercises.
 
 === Generate getter and setter methods
 
-Use the
-menu:Source[Generate Getter and Setter...]
-menu
-to create getters and setters for your fields.
+Use the menu:Source[Generate Getter and Setter...] menu to create getters and setters for your fields.
 
 NOTE: The _id_ is final and therefore Eclipse creates only a getter. This is correct and desired.
 
@@ -65,13 +58,8 @@ image::osgi_model_settergetter10.png[Getter and setter generation]
 
 === Adjust the generated getter and setter methods
 
-Adjust the generated getter and setter for the
-`dueDate()`
-field to make defensive copies. The
-`Date`
-class is not immutable and we want to avoid that an instance of
-`Todo`
-can be changed from outside without the corresponding setter.
+Adjust the generated getter and setter for the `dueDate()` field to make defensive copies.
+The `Date` class is not immutable and we want to avoid that an instance of `Todo` can be changed from outside without the corresponding setter.
 
 [source,java]
 ----
@@ -85,10 +73,14 @@ The resulting class should look like the following listing.
 include::res/datamodel/Todo.java[]
 ----
 
-NOTE: Why is the _id_ field marked as final? 
+.Why is the _id_ field marked as final? 
+[NOTE]
+====
+
 We will use this field to generate the `equals` and `hashCode()` methods therefore it should not be mutable. 
 Changing a field which is used in the `equals` and `hashCode()` methods can create bugs which are hard to identify, i.e., an object
 is contained in a `HashMap` but not found.
+====
 
 === Generate toString(), hashCode() and equals() methods
 

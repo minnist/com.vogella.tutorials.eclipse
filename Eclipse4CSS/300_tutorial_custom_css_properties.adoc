@@ -1,6 +1,5 @@
 == Exercise: Define a custom CSS selector and CSS property
 
-=== Target
 In this exercise you will implement your custom CSS selector and property for styling the header of an user profile widget. 
 The aim is to apply custom styling to the custom widget, called `UserProfileWidget`.
 
@@ -10,6 +9,7 @@ The result may look like that, where the user profile widget is embedded in a `T
 image::user_profile_widget.png[UserProfileWidget sample]
 
 === Add dependencies
+
 Add the `org.eclipse.e4.ui.css.core` and the `org.eclipse.e4.ui.css.swt` plug-ins as dependency to your application. 
 
 === Adjust custom CSS to your CSS file

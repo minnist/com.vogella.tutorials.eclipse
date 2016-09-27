@@ -1,9 +1,5 @@
 == Exercise: Tycho build for plug-ins
 
-
-
-=== Target of this exercise
-		
 The following exercise demonstrates how to build Eclipse plug-ins with Maven Tycho.
 		
 

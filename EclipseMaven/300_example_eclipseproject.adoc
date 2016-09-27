@@ -1,6 +1,5 @@
 == Exercise: Add Maven support to a Java project in Eclipse
 
-=== Target of this exercise
 This exercise demonstrates how to convert a Java project to a Maven project.
 
 === Create Java project

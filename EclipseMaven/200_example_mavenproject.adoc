@@ -1,8 +1,5 @@
 == Exercise: Create a new Maven enabled project via Eclipse
 
-
-=== Target of this exercise
-
 This exercise demonstrates the creation of a new Maven enabled project in Eclipse.
 
 

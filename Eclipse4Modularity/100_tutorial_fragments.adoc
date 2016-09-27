@@ -1,27 +1,15 @@
 == Exercise: Contributing via model fragments
 
-=== Target
-
-In this exercise you create a model fragment to contribute a
-menu
-entry, a command and a
-handler to
-your application model.
+In this exercise you create a model fragment to contribute a menu entry, a command and a handler to your application model.
 
 === Create a new plug-in
 
-Create a simple plug-in project called
-_com.example.e4.rcp.todo.contribute_. The following description abbreviates the plug-in name to the
-`contribute`
-plug-in.
+Create a simple plug-in project called _com.example.e4.rcp.todo.contribute_. 
+The following description abbreviates the plug-in name to the `contribute` plug-in.
 
 === Add the dependencies
 
-In the
-`MANIFEST.MF`
-file, add the following plug-ins as dependencies to your
-`contribute`
-plug-in.
+In the `MANIFEST.MF` file, add the following plug-ins as dependencies to your `contribute` plug-in.
 
 * org.eclipse.core.runtime
 * org.eclipse.swt
@@ -32,10 +20,7 @@ plug-in.
 
 === Create a handler class
 
-Create the
-`com.example.e4.rcp.todo.contribute.handlers`
-package and
-the following class.
+Create the `com.example.e4.rcp.todo.contribute.handlers` package and the following class.
 
 [source,java]
 ----
@@ -44,18 +29,11 @@ include::res/fragments/OpenMapHandler.java[]
 
 === Create a model fragment
 
-Use the fragment wizard from the e4 tools project to create a new
-model fragment via the following
-menu:
-menu:File[New > Other... > Eclipse 4 > Model > New Model Fragment].
+Use the fragment wizard from the e4 tools project to create a new model fragment via the  menu:File[New > Other... > Eclipse 4 > Model > New Model Fragment] menu entry.
 
 image::fragmentwizard10.png[Creating fragments with the wizard]
 
-Select the
-`contribute`
-plug-in as the container and use
-_fragment.e4xmi_
-as the name for the file.
+Select the `contribute` plug-in as the container and use _fragment.e4xmi_ as the name for the file.
 
 image::fragmentwizard20.png[Creating fragments with the wizard, Part 2]
 
@@ -103,10 +81,7 @@ btn:[Add...] button and by adding add a new extension for the
 extension point. Afterwards you the right mouse click to add a
 fragment to it.
 
-The resulting
-plugin.xml
-file should look similar to the following
-code.
+The resulting plugin.xml file should look similar to the following code.
 
 [source,xml]
 ----

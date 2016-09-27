@@ -1,9 +1,6 @@
 [[tutorial_lifecycle]]
 == Exercise: Styling the widgets created by the life cycle class
 
-[[tutorial_lifecyclestyling_target]]
-=== Target
-
 In this exercise you will ensure that the widget created by the life cycle handler of your application are also styled.
 
 [[tutorial_lifecycle_style]]

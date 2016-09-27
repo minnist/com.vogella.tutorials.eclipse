@@ -1,9 +1,7 @@
 == Using Eclipse Bugzilla
 
-=== Target
-
-In this exercise you use the Bugzilla system to review some of
-the Eclipse platform bugs. No action is excepted
+In this exercise you use the Bugzilla system to review some of the Eclipse platform bugs. 
+No action is excepted
 from you, but if you
 find an updated bug, you should update the bug report and describe
 that the problem is solved.

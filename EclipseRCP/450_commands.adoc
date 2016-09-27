@@ -120,6 +120,7 @@ A more complete list of command IDs is available in `org.eclipse.ui.IWorkbenchCo
 		
 
 .Default IDs for commonly used commands
+[cols="1,2",options="header"]
 |===
 |Command |ID
 

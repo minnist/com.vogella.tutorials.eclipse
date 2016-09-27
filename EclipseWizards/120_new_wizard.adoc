@@ -1,7 +1,5 @@
 == Exercise: Eclipse IDE New Wizard
 
-=== Target
-
 Provide a wizard in the _New_ dialog of the Eclipse IDE.
 
 === Using the org.eclipse.ui.newWizards extension point

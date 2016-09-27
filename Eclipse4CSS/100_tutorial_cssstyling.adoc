@@ -1,7 +1,5 @@
 == Exercise: Styling with CSS files
 
-===  Target
-
 In this exercise you style your application with a CSS file.
 
 === Create a CSS file

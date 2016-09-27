@@ -1,5 +1,4 @@
 == Exercise: Dynamic style switching with themes
-=== Target
 
 In this exercise you use the `IThemeEngine` to introduce the ability to switch the application styling at runtime.
 

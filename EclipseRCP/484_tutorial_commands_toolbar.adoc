@@ -1,7 +1,5 @@
 == Exercise: Adding a toolbar
 
-=== Target of this exercise
-
 In this exercise you add a toolbar to your application. 
 
 === Adding a toolbar

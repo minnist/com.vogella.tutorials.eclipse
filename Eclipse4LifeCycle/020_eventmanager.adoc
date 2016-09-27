@@ -1,12 +1,7 @@
 == Life cycle hook and a login screen
 
-=== Target
-
-In this exercise you create a splash screen which allows the user to
-enter his or her
-credentials. This assumes that you have created a
-`PasswordDialog`
-class  which allows the user to enter this user and password.
+In this exercise you create a splash screen which allows the user to enter his or her credentials. 
+This assumes that you have created a `PasswordDialog` class  which allows the user to enter this user and password.
 
 === Create a new class
 

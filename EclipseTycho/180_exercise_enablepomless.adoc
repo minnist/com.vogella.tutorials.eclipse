@@ -1,8 +1,5 @@
 == Exercise: Configure Tycho build
 
-
-=== Target of this exercise
-
 In this exercise you define the meta data to use pomless builds with Tycho. 
 You also create the directory structure and the Eclipse projects to contain the main and configuration pom.
 
@@ -13,7 +10,6 @@ The _Project Explorer_ view allows to see hierarchical projects. See screenshot 
 
 image::projectexplorer_hierarchicalview.png[Project Explorer - hierarchical view]
 ====
-
 		
 
 === Create a new folder and create a root project in it

@@ -1,9 +1,6 @@
 == Exercise: Extend the Eclipse application model
 
-=== Target
-
-In this exercise you extend the structure of the Eclipse
-application model with an additional model element.
+In this exercise you extend the structure of the Eclipse application model with an additional model element.
 
 === Creating a plug-in and add the dependencies
 

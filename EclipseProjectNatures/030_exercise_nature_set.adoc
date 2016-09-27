@@ -1,7 +1,5 @@
 == Exercise: Apply a project nature to a project
 
-=== Target
-
 Add a _Convert to example project_ menu item to the Configure menu of a projects context menu.
 
 === Define an example project nature

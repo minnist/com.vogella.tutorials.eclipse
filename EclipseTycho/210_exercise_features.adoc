@@ -1,8 +1,6 @@
 == Exercise: Tycho build for Eclipse features
 
 
-=== Target of this exercise
-		
 The following description demonstrates how to build Eclipse features with Maven Tycho. 
 It is based on <<exercisetychoplugin>>.
 		

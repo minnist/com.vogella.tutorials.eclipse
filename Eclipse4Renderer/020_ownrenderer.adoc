@@ -1,26 +1,16 @@
 == Exercise: Defining a renderer
 
-=== Target
-
-The following exercise serves as a simple example for creating a
-custom
-renderer. It implements a custom stack
-renderer which uses "*
-Demo *"
-instead of "*" to mark an editor dirty.
+The following exercise serves as a simple example for creating a custom renderer. 
+It implements a custom stack renderer which uses "*Demo *" instead of "*" to mark an editor dirty.
 
 === Creating a plug-in
 
-Create a new simple plug-in called
-_com.example.e4.renderer.swt_. This plug-in is called the
-`renderer`
-plug-in in the following description.
+Create a new simple plug-in called _com.example.e4.renderer.swt_.
+This plug-in is called the `renderer` plug-in in the following description.
 
 === Enter the dependencies
 
-Add the following plug-ins as dependencies to your
-`renderer`
-plug-in.
+Add the following plug-ins as dependencies to your `renderer` plug-in.
 
 * `org.eclipse.e4.core.contexts`
 * `org.eclipse.e4.ui.workbench.renderers.swt`
@@ -32,13 +22,8 @@ plug-in.
 
 === Create the renderer implementation
 
-In your
-`renderer`
-plug-in create the
-`com.example.e4.renderer.swt`
-package and the following classes. The new stack renderer extends
-the
-stack renderer from the Eclipse platform.
+In your  `renderer` plug-in create the `com.example.e4.renderer.swt` package and the following classes. 
+The new stack renderer extends the stack renderer from the Eclipse platform.
 
 [source,java]
 ----

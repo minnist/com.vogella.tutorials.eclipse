@@ -1,18 +1,10 @@
 == Exercise: Creating custom annotations
 
-=== Target
-
 The following exercise demonstrates how to create a custom
 annotation and a processor for it.
 
-The
-annotation processor is registered for a custom
-`@DirectTodo`
-annotation, which is a qualifier and therefore has to be used
-together with
-`@Inject`. The
-`@DirectTodo`
-annotation can have a id for requesting a Todo with a certain id.
+The annotation processor is registered for a custom `@DirectTodo` annotation, which is a qualifier and therefore has to be used together with `@Inject`.
+The `@DirectTodo` annotation can have a id for requesting a Todo with a certain id.
 
 === Creating a new plug-in 
 

@@ -22,6 +22,7 @@ first and the most complex one as the
 last entry.
 
 .Layout Manager
+[cols="1,2",options="header"]
 |===
 |Layout Manager |Description
 
@@ -167,6 +168,7 @@ include::res/gridlayout/Constructor.java[]
 The most important attributes are defined in the following table.
 
 .GridData
+[cols="1,2",options="header"]
 |===
 |Parameter |Description
 
@@ -271,15 +273,16 @@ does currently not support
 `GridDataFactory`
 , hence the following examples avoid using them.
 
-=== Triggering a relayout of a Composite
+=== Triggering a re-layout of a Composite
 
-The
-`Composite`
-widget defines the
-`layout`
-method. This method accepts also child widgets and flags. These flags should rarely be used in client code.
+As of Eclipse 4.7 you should use the `requestLayout()` method call on the `Composite` class , as this triggers an asynchronous layout call.
+
+The `Composite` widget defines also the `layout` method which triggers a synchronous layout and should be avoided.. 
+This method accepts also child widgets and flags. 
+These flags should rarely be used in client code.
 
 .Layout flags
+[cols="1,2",options="header"]
 |===
 |Flag |Description
 

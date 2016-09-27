@@ -1,7 +1,5 @@
 == Exercise: Tycho build for products with root files
 
-=== Target of this exercise
-
 In some cases it is helpful, if additional static files, like a readme.txt or logback.xml file, can be added to the built product. The easiest way to archive this, is to use root properties in the _build.properties_ file a feature project.
 
 Tip: Further information about root file properties can be found here: http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.pde.doc.user%2Ftasks%2Fpde_rootfiles.htm[Adding Files to the Root of a Build]

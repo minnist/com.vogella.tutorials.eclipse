@@ -1,7 +1,5 @@
 == Exercise: Implement drag and drop
 
-=== Target of this exercise
-
 The following exercise demonstrates the usage of drag and drop for customer domain objects and SWT widgets.
 You will drag and drop between two JFace viewers (a table and a tree).
 			

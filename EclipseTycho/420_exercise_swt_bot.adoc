@@ -1,7 +1,5 @@
 == Exercise: Tycho build for SWTBot tests
 
-=== Target of this exercise
-		
 The following exercise demonstrates how to run SWTBot tests with Tycho. 
 It is based on the  <<exercisetychoplugin>> and <<exercisetychofeature>> exercises.
 		

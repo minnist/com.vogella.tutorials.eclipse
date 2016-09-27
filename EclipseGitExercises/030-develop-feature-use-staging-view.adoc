@@ -1,7 +1,5 @@
 == Develop another feature using the Staging View
 
-===Target of this exercise
-		
 In this exercise you learn how work on multiple features in parallel. 
 
 === Create another local Feature Branch and check it out

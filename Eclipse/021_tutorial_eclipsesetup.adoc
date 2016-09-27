@@ -1,35 +1,28 @@
-== Exercise: IDE preference settings
+== Exercise: Optimizing the Eclipse IDE settings
 
 === Configuration
 		
-Certain settings in the Eclipse IDE allow you to use it more
-efficiently. In this exercise you make changes to the default Eclipse
-IDE
-settings to improve the usability of the Eclipse IDE.
+Certain settings in the Eclipse IDE allow you to use it more efficiently. 
+In this exercise you make changes to the default Eclipse IDE settings to improve the usability of the Eclipse IDE.
 		
-TIP: Feel free to disagree with these recommendations. There is not a single correct setting for everyone in the world.
+[TIP]
+====
+Feel free to disagree with these recommendations. 
+There is not a single correct setting for everyone in the world.
+====
 
-=== Link Java editor with the Package Explorer view
+=== Link Java editor with the Project Explorer or Package Explorer view
 		
-You can synchronize the currently selected
-Java editor with the
-selection in the
-_Package Explorer_
-view. This gives you a clearer visibility which object you are
-currently
-editing.
+You can synchronize the currently selected Java editor with the selection in the _Project Explorer_ or the _Package Explorer_ view. 
+This gives you a clearer visibility which object you are currently editing.
 		
-Enable this by selecting the corresponding button in the
-_Package Explorer_
-view.
+Enable this by selecting the corresponding button in the view.
 		
 image::linkwitheditor10.png[Editor]
 	
 === Java editor settings
 		
-Open the Eclipse preferences with the
-menu:Window[Preferences]
-menu.
+Open the Eclipse preferences with the menu:Window[Preferences] menu.
 		
 Ensure that Eclipse places the semicolon and the braces automatically
 at the right

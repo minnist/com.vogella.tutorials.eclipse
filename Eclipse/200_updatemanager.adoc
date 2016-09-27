@@ -2,22 +2,10 @@
 
 === Eclipse update manager
 
-The Eclipse IDE contains a software component called
-_Update Manager_
-which allows you
-to install and
-update
-software components. Installable
-software components are
-called
-`features`
-and consist of
-`plug-ins`.
+The Eclipse IDE contains a software component called _Update Manager_ which allows you to install and update software components. 
+Installable software components are `features` or `plug-ins`.
 
-These features are contained in so-called
-_update sites_
-or
-_software sites_. An
+These features are located in _update sites_ or _software sites_. An
 _update site_
 contains
 installable software components

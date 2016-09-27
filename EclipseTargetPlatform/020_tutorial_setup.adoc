@@ -1,16 +1,24 @@
 == Exercise: Setting up a target platform
 
-=== Creating a target definition file
+In this exercise you create a target definition which is used to develop an Eclipse RCP application.
+
+=== Creating a project of type general
 
 Create a new project called _com.example.rcp.target_ of type _General_ via menu:File[New > Other... > General > Project].
 
 image::targetdefinitionproject10.png[Create a project for your target definition file]
 
+=== Creating a target definition file
+
 Create a new target definition file via the menu:File[New > Other... > Plug-in Development > Target Definition] menu path.
-Use the `com.example.rcp.target` as file name.
+
+image::tutorial_targetdefinition06.png[Wizard path for target file]
+
+Use the `com.example.rcp.target` as file name and press the btn:[Finish] button.
 
 image::tutorial_targetdefinition10.png[Define target definition file]
 
+This creates a new file and opens the _Target Definition" editor.
 Press the btn:[Add...] button.
 
 image::tutorial_targetdefinition20.png[Add content to target definition file]
@@ -37,31 +45,47 @@ the non "black and white" entry if this exists. This entry is empty.
 
 |===
 
+image::tutorial_targetdefinition22.png[Remove Group by]
+
+
 After you close this dialog, the target definition is resolved, which will take a while. 
-The result should look similar to the following screenshot.
+
+[WARNING]
+====
+Avoid using the Eclipse IDE until the target is resolved.
+Resolving targets is using the network and you do not want to interrupt this, as this might result in an inconsistent target definition.
+====
+
+After the target is resolved, press the _Set as Target Platform_ to activate it.
 Please note that your version numbers might be different.
 
 image::tutorial_targetdefinition40.png[]
 
-=== Activate your target platform
+=== Validate setup
 
-Afterwards press the _Set as Target Platform_ to activate it.
-
-To check if your definition is active, try to open the `SpyHandler`class via Ctrl+Shift+T (Open Type).This should not be possible.
+To check if your target definition is active, try to open the `IReconcilingStrategy`class via Ctrl+Shift+T (Open Type).
+This should not be possible, as this class is not part of your target platform.
 
 === Solving potential issues for development
 
-Your target platform depends on external update sites and there packaging of plug-ins.
+Your target platform depends on external update sites and the availability of the network.
 Theses update sites might change over time, so you should be able to revert your target platform settings in case you face issues.
-
-You can switch back to your Eclipse IDE as target platform via menu:Window[Preferences > Plug-in Development > Target Platform].
-
-image::tutorial_targetdefinition60.png[]
 
 [TIP]
 ====
-If you face issues with your target platform, try switching to the IDE as target platform and afterwards switch back to your definition. 
+If you face issues with your target platform, switch to the IDE as target platform and afterwards switch back to your target definition. 
 
 That sometimes solves target resolution issues.
 ====
+
+[TIP]
+====
+If the target definition does not work, e.g. because of network issues,  you can use your Eclipse IDE as target platform via menu:Window[Preferences > Plug-in Development > Target Platform].
+
+image::tutorial_targetdefinition60.png[]
+====
+
+
+
+
 

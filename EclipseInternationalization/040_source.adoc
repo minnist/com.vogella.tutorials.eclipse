@@ -1,22 +1,13 @@
 == Source code translation with NLS support
-(((i18n,Source code)))
-=== NLS compared to the Eclipse translation service
 
-WARNING: This part of the description is included for completeness. It describes the NLS approach for translation. This
-approach
-still
-works
-but the Eclipse translation
-mechanism provides
-more flexibility, e.g., dynamic switching of
-languages, less
-memory
-consumption and a translation service which can be exchanged. This
-superior
-approach is
-described
-in
-<<eclipse4_i18n1>>.
+=== NLS compared to the Eclipse translation service
+(((i18n,Source code)))
+[WARNING]
+====
+This part of the description is included for completeness. It describes the NLS approach for translation. 
+This approach still works but the Eclipse translation mechanism provides more flexibility, e.g., dynamic switching of languages, less memory consumption and a translation service which can be exchanged. 
+This superior approach is described in <<eclipse4_i18n1>>.
+====
 
 === Translating your custom code
 		

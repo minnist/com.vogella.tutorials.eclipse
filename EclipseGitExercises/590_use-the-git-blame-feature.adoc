@@ -16,7 +16,7 @@ image::show-annotations.png[Show Annotations in Eclipse]
 			
 A new _annotations_ column appears in the editor window
 			
-Right click the _annotations_ column and choose _Revisions &gt; Show Author_
+Right click the _annotations_ column and choose _Revisions > Show Author_
 
 image::show-author.png[Show Author]
 

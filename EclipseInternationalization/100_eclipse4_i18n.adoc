@@ -139,28 +139,23 @@ To get notified you can use dependency injection.
 include::res/eclipse4/Notification.java[]
 ----
 
-=== Using the BaseMessageRegistry&lt;M&gt; to track language changes
+=== Using the BaseMessageRegistry to track language changes
 
-Instead of implementing a method to receive the
-`Message`
+Instead of implementing a method to receive the `Message`
 object on locale change in a part, like
-`@Inject public void translate(@Translation Messages messages)
-`
-, a
-`BaseMessageRegistry&lt;M&gt;`
-can be implemented.
+`@Inject public void translate(@Translation Messages messages)`, a `BaseMessageRegistry` can be implemented.
 
 The
-`BaseMessageRegistry&lt;M&gt;`
+`BaseMessageRegistry<M>`
 contains methods to register controls, which are supposed to be
 translated. So basically the
-`BaseMessageRegistry&lt;M&gt;`
+`BaseMessageRegistry<M>`
 will be informed about new
 `Message`
 objects and applies the new values to its registered controls.
 
 The
-`BaseMessageRegistry&lt;M&gt;`
+`BaseMessageRegistry<M>`
 itself gets the
 `Message`
 object injected.

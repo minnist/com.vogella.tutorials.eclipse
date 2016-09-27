@@ -4,7 +4,7 @@
 
 Eclipse has its own enhanced adapter framework, which let's the object itself provide certain adapters by implementing the `org.eclipse.core.runtime.IAdaptable` interface.
 
-The `IAdaptable` interface provides a `public &lt;T&gt; T getAdapter(Class&lt;T&gt; adapter);` method, which can be used to obtain an adapter or null in case there is no adapter for the passed in class object.
+The `IAdaptable` interface provides a `public <T> T getAdapter(Class<T> adapter);` method, which can be used to obtain an adapter or null in case there is no adapter for the passed in class object.
 
 So the `GermanPlugConnector` itself can provide an adapter for the `UKPlugConnector`
 
@@ -67,7 +67,7 @@ NOTE: `org.eclipse.core.runtime.Platform.getAdapterManager().getAdapter()` or `o
 But you should prefer the usuage of the Eclipse 4 service.
 Eclipse 4.6 also introduces the `org.eclipse.core.runtime.Adapters.adapt` method.
 
-The `org.eclipse.core.runtime.Adapters.adapt(Object, Class&lt;T&gt;)` method first does a null check and returns `null`, if the given sourceObject is null.
+The `org.eclipse.core.runtime.Adapters.adapt(Object, Class<T>)` method first does a null check and returns `null`, if the given sourceObject is null.
 
 Secondly it checks whether the sourceObject already is an instance of the desired adapter.
 

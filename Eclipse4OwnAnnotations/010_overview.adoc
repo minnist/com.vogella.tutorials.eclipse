@@ -56,7 +56,7 @@ shows an example for an
 annotation processor which
 returns an instance
 of an
-`java.util.Optional&lt;Todo&gt;`
+`java.util.Optional<Todo>`
 class, in case a proper id is passed to the
 `DirectTodo`
 annotation.

@@ -18,15 +18,15 @@ Eclipse RCP is short for _Eclipse Rich Client Platform_ and indicates that the E
 The release of Eclipse in version 4.x simplified and unified the Eclipse programming model which is now based on state of the art technologies, like a logical model for the application date, dependency injection as primary programming model and declarative styling via CSS files.
 The Eclipse 4 release also supports that the user interface technology is replaced, for example you can exchange the SWT toolkit with JavaFX or GWT.
 
-=== Advantages of Eclipse based applications
+=== Why are customers selecting Eclipse RCP ?
 
-The Eclipse platform forms the basis of the most successful Java IDE and therefore is very stable and broadly used.
+Customers use Eclipse RCP because of:
 
-It uses native user interface components which are fast and reliable. It has a strong modular approach it allows developers to design component based systems.
-
-Companies such as IBM, SAP and Google use the Eclipse framework as a basis for their products and therefore ensure that Eclipse is flexible, fast and continues to evolve.
-
-The Eclipse platform also fosters a large community of individuals which provide support, information and extensions to the Eclipse framework.
+* The Eclipse platform forms the basis of the most successful Java IDE and therefore is very stable and broadly used.
+* By default, it provides native user interface components which are fast and reliable. 
+* It has a strong modular approach it allows developers to design component based systems.
+* Companies such as IBM, SAP and Google use the Eclipse framework as a basis for their products and therefore ensure that Eclipse is flexible, fast and continues to evolve.
+* The Eclipse platform also fosters a large community of individuals which provide support, information and extensions to the Eclipse framework.
 
 Tapping into this ecosystem allows you to find required resources and information.
 

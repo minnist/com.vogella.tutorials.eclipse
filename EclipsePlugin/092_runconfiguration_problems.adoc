@@ -52,6 +52,7 @@ The bundle symbolic name is `org.eclipse.e4.ui.workbench`.
 You can check the current setting in your _plugin.xml_ file on the _Extensions_ tab and in the details of the _org.eclipse.core.runtime.products_ extension.
 |===
 
+[[runconfiguration_mainproblem]]
 === Finding missing plug-in dependencies during a product launch
 (((Finding missing plug-in dependencies during a product launch)))
 (((Launch configuration, Problems)))
@@ -75,7 +76,7 @@ After identifying the missing plug-ins ensure that you add them to your product 
 [TIP]
 ====
 Eclipse can check for missing dependencies automatically before you run the Launch configuration.
-On the _Plug-ins_ Tab press the btn:[Validate Plug-ins] button or select the _Validate plug-ins automatically prior to launching option.
+On the _Plug-ins_ Tab press the btn:[Validate Plug-ins] button or select the _Validate plug-ins automatically prior to launching_ option.
 This will check if you have all the required plug-ins in your run configuration.
 
 image::./launchconfiguration30.png[Validating the runtime configuration]

@@ -40,108 +40,48 @@ runtime.
 
 === Creating a new product configuration file
 		
-A product is typically created in a separate project. In the
-_Plug-in Development_
-perspective you can create a new
-product
-configuration file via a
-right-click on
-a
-project and by
-selecting
-menu:New[Product Configuration]
-.
+A product is typically created in a separate project.
+In the _Plug-in Development_ perspective you can create a new product configuration file via a right-click on a project and by selecting menu:New[Product Configuration].
 
 === Using the product editor
 		
-You can edit the product file via a special editor. The product
-extension and the containing plug-in can be defined in the
-_Product Definition_
-section.
+You can edit the product file via a special editor.
+The product extension and the containing plug-in can be defined in the _Product Definition_ section.
 		
 image::product50.png[Product extension definition]
 		
-On the
-_Overview_
-tab of this editor you can start the product.
-Pressing the
-_Synchronize_
-link writes the relevant
-product
-configuration
-information into the
-_plugin.xml_
-file. Both settings are highlighted in the following screenshot.
+On the _Overview_ tab of this editor you can start the product.
+Pressing the _Synchronize_ link writes the relevant product configuration information into the _plugin.xml_ file.
+Both settings are highlighted in the following screenshot.
 		
 image::product55.png[Product definition file show the overview tab]
 
-It is possible to enter an ID for the product. Avoid using the
-same ID for the product as for a plug-in as
-this might create
-problems
-during a product export. Convention is to add the .product
-extension
-to
-the ID.
+It is possible to enter an ID for the product. 
+Avoid using the same ID for the product as for a plug-in as this might create problems during a product export.
+Convention is to add the .product extension to the ID.
 		
-On the
-_Contents_
-tab you can define the set of plug-ins or features which are included in the
-product,
-e.g., the plug-ins that are included if you start or export your product.
+On the _Contents_ tab you can define the set of plug-ins or features which are included in the product, e.g., the plug-ins that are included if you start or export your product.
 	
 
 === Splash screen
 
-The
-_Splash_
-tab allows you to specify the plug-in which
-contains the splash
-screen. The name is predefined as
-_splash.bmp_
-and it must be located in the root of the plug-in directory.
-Therefore, you need to put a file called
-_splash.bmp_
-file
-into the project main
-directory. Currently Eclipse supports only
-Bitmap (
-_.bmp_
-)
-files.
+The _Splash_ tab allows you to specify the plug-in which contains the splash screen.
+The name is predefined as _splash.bmp_ and it must be located in the root of the plug-in directory.
+Therefore, you need to put a file called _splash.bmp_ file into the project main directory. 
+Currently Eclipse supports only Bitmap (_.bmp_) files.
 
 image::product60.png[Show the tab splash from the product configuration file]
 
-The predefined name and location of the splash screen image can be
-changed via the
-_osgi.splashPath_
-parameter, the file name can be changed with the
-_-showsplash path_to_file_.
+The predefined name and location of the splash screen image can be changed via the _osgi.splashPath_ parameter, the file name can be changed with the _-showsplash path_to_file_.
 
 === Icons, launcher name and program arguments
 
-You can configure the launcher name and icon for your
-product. The
-launcher is the executable program that is
-created during
-the
-deployment of the product. A launcher is
-platform specific. For
-example the default launcher is called
-_eclipse.exe_
-on the
-MS Windows platform. This
-launcher has also
-an
-icon associated with
-it. To
-change the name and the
-icon, select
-the
-_Launching_
-tab of
-your product
-configuration.
+You can configure the launcher name and icon for your product.
+The launcher is the executable program that is created during the deployment of the product. 
+A launcher is platform specific. 
+For example, the default launcher is called _eclipse.exe_ on the MS Windows platform.
+This launcher has also an icon associated with it. 
+To change the name and the icon, select the _Launching_ tab of your product configuration.
 
 Here you can specify the file name of the launcher
 and the icon
@@ -150,37 +90,20 @@ Make sure the format of the icons is correct,
 otherwise
 Eclipse will not use them.
 
-TIP:
+[TIP]
+====
 The icon configuration depends on the platform you are using.
 Eclipse allows you to export your application for multiple platforms
 and uses the correct ones based on your product configuration.
+====
 
-In the
-_Launching Arguments_
-section you can specify parameters for your
-Eclipse application
-and
-arguments for the Java runtime environment.
-_Program Arguments_
-are parameters passed to the Eclipse application.
+In the _Launching Arguments_ section you can specify parameters for your Eclipse application and arguments for the Java runtime environment.
+_Program Arguments_ are parameters passed to the Eclipse application.
 
 image::product80.png[Highlighting the section where the icons are maintained.]
 
 === Product configuration limitations
 
-Currently the splash handlers, which can be registered via the
-_Customization_
-part of the
-_Splash_
-tab are not supported by the Eclipse 4 standard. Also,
-the
-configuration
-in the
-_About Dialog_
-and the
-_Welcome Page_
-section
-on the
-_Branding_
-tab is not directly supported in Eclipse 4 RCP applications.
+Currently the splash handlers, which can be registered via the _Customization_ part of the _Splash_ tab are not supported by the Eclipse 4 standard. 
+Also, the configuration in the _About Dialog_ and the _Welcome Page_ section on the _Branding_ tab is not directly supported in Eclipse 4 RCP applications.
 

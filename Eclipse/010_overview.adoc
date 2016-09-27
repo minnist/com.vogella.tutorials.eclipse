@@ -1,88 +1,82 @@
-== What is Eclipse?
-
-=== The Eclipse IDE, other projects and a short history
+== The Eclipse IDE, other projects and a short history
 		
-While the Eclipse IDE for Java development is widely known, the
-Eclipse open source
-community is much bigger. Currently
-it consists of more
-than
-150
-projects
-covering
-different aspects
-of
-software development. For
-example,
-Eclipse projects
-provide tooling for JavaScript development
-and runtime components, like
-the
-popular
-_Jetty_
-webserver.
+While the Eclipse IDE for Java development is widely known, the Eclipse open source community is much bigger.
+Currently it consists of more than 150 projects covering different aspects of software development.
+For example, Eclipse projects provide tooling for JavaScript development and runtime components, like the popular _Jetty_ webserver.
 		
-The roots of Eclipse go
-back to 2001. The initial code base was
-provided by IBM. In November 2001, a consortium
-was formed to support
-the development of Eclipse as open source software. This consortium
-was controlled by IBM.
+The roots of Eclipse go back to 2001. 
+The initial code base was provided by IBM. 
+In November 2001, a consortium was formed to support the development of Eclipse as open source software. 
+This consortium was controlled by IBM.
 		
 		
-In 2004 it became the
-_Eclipse Foundation_
-, which is a vendor neutral foundation where no single company
-has
-control of the direction.
+In 2004 it became the _Eclipse Foundation_ , which is a vendor neutral foundation where no single company has control of the direction.
 		
-The
-_Eclipse_
-name at this time was viewed by many as declaration of war against
-_Sun Microsystems_
-, the company responsible for developing the Java
-programming
-language. IBM stated that the name was targeting at
-"Eclipsing"
-Microsoft. See
-http://www.eweek.com/c/a/Application-Development/Eclipse-Behind-the-Name/[Eclipse: Behind the Name]
-for details.
+The _Eclipse_ name at this time was viewed by many as declaration of war against _Sun Microsystems_ , the company responsible for developing the Java programming language. 
+IBM stated that the name was targeting at "Eclipsing" Microsoft. See http://www.eweek.com/c/a/Application-Development/Eclipse-Behind-the-Name/[Eclipse: Behind the Name] for details.
 		
-With the purchase of
-_Sun Microsystems_
-by Oracle this conflict finally went away. Oracle is currently
-among
-the 5 largest contributor companies of the Eclipse
-project.
+With the purchase of _Sun Microsystems_ by Oracle this conflict finally went away.
+Oracle is currently among the 5 largest contributor companies of the Eclipse project.
 		
 
-=== Eclipse releases
+== Eclipse releases
 		
-The Eclipse open source project has a simultaneous release every
-year. Eclipse projects can choose to join this
-release but must
-fulfill the requirements described in the
-https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[Release requirements wiki].
+The Eclipse open source project has a simultaneous release every year. 
+Eclipse projects can choose to join this release but must fulfill the requirements described in the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[Release requirements wiki].
 		
-This simultaneous release includes new versions of the Eclipse
-IDE distributions.
-Before
-2012
-Eclipse was
-released in
-version 3.x, e.g.
-Eclipse 3.6,
-Eclipse 3.7.
-These releases
-and the corresponding API are
-referred to
-as
-Eclipse
-3.x.
+This simultaneous release includes new versions of the Eclipse IDE distributions.
+Before 2012 Eclipse was released in version 3.x, e.g., Eclipse 3.6, Eclipse 3.7.
+These releases and the corresponding API are referred to as Eclipse 3.x.
 		
-As of 2012 the main Eclipse release carried the major
-version
-number 4, e.g., Eclipse 4.2 in the year 2012,
-Eclipse 4.3 in
-2013, Eclipse 4.4. in 2014, Eclipse 4.5 in 2015 and Eclipse 4.6 in 2016.
+As of 2012 the main Eclipse release carried the major version number 4:
+
+.Eclipse releases
+[cols="1, 2",options="header"]
+|===
+| Release | Release year
+| 4.2 | 2012
+| 4.3 | 2013
+| 4.4 | 2014
+| 4.5 | 2015
+| 4.6 | 2016
+| 4.7 | 2017
+|===
+
+== Eclipse foundation
+
+The Eclipse projects are governed by the _Eclipse Foundation_.
+The Eclipse Foundation is a non-profit, member supported corporation that hosts the Eclipse Open Source projects.
+It helps to cultivate both its open source community and its ecosystem of complementary products and services.
+
+
+The Eclipse Foundation does not work on the Eclipse code base, i.e., it does not have employee developers working on Eclipse.
+The mission of the Eclipse Foundation is *enable* the development by providing the infrastructure (Git, Gerrit, Hudson build server, the download sites, etc.) and a structured process. 
+Eclipse projects follow a very well defined development process. 
+To learn more about this process see the http://www.eclipse.org/projects/dev_process/development_process.php[Eclipse development process description].
+
+
+There is also an Eclipse Foundation Europe based in Germany. 
+
+In 2016 the Eclipse Foundation had approximately 30 employees. See http://www.eclipse.org/org/foundation/staff.php[Eclipse Foundation Staff] for details.
+
+
+== The Eclipse Public License
+
+The _Eclipse Public License_ (EPL) is an open source software license.
+The EPL is designed to be business-friendly. 
+EPL licensed programs can be used, modified, copied and distributed free of charge. 
+The consumer of EPL-licensed software can choose to use this software in closed source programs.
+
+Only modifications in the original EPL code must be released as EPL code. 
+This can for example be done by filling a bug report at the public Eclipse bug tracker and by uploading a Gerrit change.
+
+
+The Eclipse Foundation validates that source code contributed to Eclipse projects is free of intellectual property (IP) issues. 
+This process is known as IP cleansing. 
+Contributions with more than 1000 lines of code require the creation of a Contribution Questionnaire, and a review and approval by the IP team.
+
+
+The permissive EPL and the IP cleansing effort of the Eclipse Foundation makes reusing the source code of Eclipse projects attractive to companies.
+
+
 		

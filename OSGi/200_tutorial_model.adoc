@@ -126,17 +126,10 @@ include::res/datamodel/ITodoService.java[]
 
 === Define the API of the model plug-in
 
-Export the
-`com.example.e4.rcp.todo.model`
-package to define it as API.
-For this
-open the
-`MANIFEST.MF`
-file and select the
-_Runtime_
-tab. Add
-`com.example.e4.rcp.todo.model`
-to the exported packages.
+Export the `com.example.e4.rcp.todo.model` package to define it as API.
+
+For this, open the `MANIFEST.MF` file and select the _Runtime_ tab. 
+Add `com.example.e4.rcp.todo.model` to the exported packages.
 
 image::osgi_model_exportedapi.png[Exported API]
 

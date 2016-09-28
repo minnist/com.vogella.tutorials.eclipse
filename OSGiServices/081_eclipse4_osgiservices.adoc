@@ -7,5 +7,5 @@ It is not required to manually set a start level in your product configuration f
 A plug-in which provides service in an Eclipse RCP application must be in its `ACTIVE` life cycle status. 
 Therefore, ensure that the _Activate this plug-in when one of its classes is loaded_ flag is set on the _MANIFEST.MF_ file. 
 The DS annotation support in Eclipse allows that this is done automatically.
-See <<declarativeservices_annotations>> and<<osgiservice_active>> for details.
+See <<declarativeservices_annotations>> and <<osgiservice_active>> for details.
 

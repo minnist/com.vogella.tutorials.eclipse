@@ -27,6 +27,14 @@ include::res/start/TodoDetailsPart.java[]
 Open the _Application.e4xmi_ file and connect the class with the corresponding part model element.
 You can do this via the _Class URI_ property of the part model element.
 
+[TIP]
+====
+The Eclipse 4 model editor allows you to search for an existing class via the btn:[Find...] button.
+The initial list of _Contribution Classes_ is empty, start typing in the _Class Name_ field to see the results.
+
+image::tutorial_model60.png[Finding a model class in the Application model]
+====
+
 The following table gives an overview of which elements should be connected.
 
 .Mapping Java classes with part model element
@@ -43,10 +51,6 @@ The following table gives an overview of which elements should be connected.
 |*.playground
 |===
 
-The Eclipse 4 model editor allows you to search for an existing class via the btn:[Find...] button.
-The initial list of _Contribution Classes_ is empty, start typing in the _Class Name_ field to see the results.
-
-image::tutorial_model60.png[Finding a model class in the Application model]
 
 The following screenshot shows the result for the overview part.
 

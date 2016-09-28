@@ -42,18 +42,11 @@ for a manifest file.
 include::res/bundles/MANIFEST.MF[]
 ----
 
-The following table gives an explanation of the identifiers
-in the
-manifest
-file. For additional information on the
-unique
-identifier see
-<<osgiarch_identifier>>
-and for information on the version schema which is typically used in
-OSGi see
-<<osgiarch_semanticversions>>.
+The following table gives an explanation of the identifiers in the manifest file. 
+For information on the version schema which is typically used in OSGi see <<osgiarch_semanticversions>>.
 
 .OSGi identifiers in the manifest file
+[cols="1,2",options="header"]
 |===
 |Identifier |Description
 
@@ -145,6 +138,7 @@ uniquely
 identifies
 a plug-in.
 
+[[osgiarch_semanticversions]]
 === Semantic Versioning with OSGi
 
 OSGi recommends to use a
@@ -155,13 +149,9 @@ version number which is defined via the
 field identifier. If you change your plug-in code you increase the
 version according to the following rule set.
 
-* _<patch>_
-is increased if all changes are backwards compatible.
-* _<minor>_
-is increased if public API has changed but all changes are
-backwards compatible.
-*_<major>_
-is increased if changes are not backwards compatible.
+* _<patch>_ is increased if all changes are backwards compatible.
+* _<minor>_ is increased if public API has changed but all changes are backwards compatible.
+* _<major>_ is increased if changes are not backwards compatible.
 
 For more information on this version scheme see the
 https://wiki.eclipse.org/Version_Numbering[Eclipse Version Numbering Wiki].

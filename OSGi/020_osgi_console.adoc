@@ -24,6 +24,7 @@ reference of the most important
 OSGi commands.
 
 .OSGi commands
+[cols="1,2",options="header"]
 |===
 |Command |Description
 

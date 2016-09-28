@@ -5,33 +5,17 @@ All packages which are not explicitly exported are not visible to other plug-ins
 	
 image::osgi_api_definition10.png[Dependency management]
 	
-All these restrictions are enforced via a
-specific
-OSGi
-`classloader`. 
-Each plug-in has its own classloader. Access to
-restricted classes
-is
-not
-possible.
+All these restrictions are enforced via a specific OSGi `classloader`. 
+Each plug-in has its own classloader. 
+Access to restricted classes is not possible without using reflection.s
 	
-Unfortunately OSGi can not prevent you from using Java
-reflection to access these classes. This is because OSGi
-is
-based on
-the Java runtime which does not yet support a modularity layer.
+Unfortunately OSGi can not prevent you from using Java reflection to access these classes. 
+This is because OSGi is based on the Java runtime which does not yet support a modularity layer.
 	
-Via the
-`x-internal`
-flag the OSGi runtime can mark an exported package as provisional.
-This allows other plug-ins to consume the
-corresponding classes, but indicates that these classes
-are not considered as official API.
+Via the `x-internal` flag the OSGi runtime can mark an exported package as provisional.
+This allows other plug-ins to consume the corresponding classes, but indicates that these classes are not considered as official API.
 	
-The following screenshot shows how to set a package as
-`x-internal`
-in the
-manifest editor.
+The following screenshot shows how to set a package as `x-internal` in the manifest editor.
 	
 image::x-internal10.png[Setting the x-internal flag]
 	
@@ -42,51 +26,22 @@ This is how the corresponding manifest file looks like.
 include::res/snippets/mani.txt[]
 ----
 	
-You can configure how the Eclipse Java editor shows the usage of
-provisional API. Such an access can be
-configured
-to
-be displayed as, error, warning
-or if such access should be result in no additional message.
+You can configure how the Eclipse Java editor shows the usage of provisional API. 
+Such an access can be configured to be displayed as, error, warning or if such access should be result in no additional message.
 	
-The
-default
-is to display
-a warning message. You
-can adjust
-this in
-the
-Eclipse
-preferences via
-the
-menu:Window[Preferences > Java > Compiler > Errors/Warnings]
-preference setting.
+The default is to display a warning message. 
+You can adjust this in the Eclipse preferences via the menu:Window[Preferences > Java > Compiler > Errors/Warnings] preference setting.
 	
 image::x-internal30.png[Settings in Eclipse for warnings for deprecated API usage]
 	
-You can define that a set of plug-ins can access
-provisional API
-without a warning or error message. This can be done
-via the
-`x-friends`
-directive. This flag is added if you add a plug-in to
-the
-_Package Visibility_
-section on the
-_Runtime_
-tab of the
-manifest editor.
+You can define that a set of plug-ins can access provisional API without a warning or error message. 
+This can be done via the `x-friends` directive. 
+This flag is added if you add a plug-in to the _Package Visibility_ section on the _Runtime_ tab of the manifest editor.
 	
 [source,text]
 ----
 include::res/snippets/friends.txt[]
 ----
 	
-The
-`x-friends`
-setting has the same effect as
-`x-internal`
-but all plug-ins mentioned in the x-friends setting can access the
-package without receiving an error or warning
-message.
+The `x-friends` setting has the same effect as `x-internal` but all plug-ins mentioned in the x-friends setting can access the package without receiving an error or warning message.
 

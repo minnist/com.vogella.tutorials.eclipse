@@ -1,23 +1,9 @@
-== Defining the dependencies of the plug-in
-
 === Specifying plug-in dependencies via the manifest file
 		
-A plug-in can define
-dependencies to
-other software components
-via its
-manifest file.
-OSGi prevents access to classes
-without a defined
-dependency and throws a
-`ClassNotFoundException`. 
-The only exception are packages from the Java runtime
-environment (based on the Bundle-RequiredExecutionEnvironment
-definition of the plug-in);
-these
-packages are
-always available to a plug-in without an explicitly
-defined dependency.
+A plug-in can define dependencies to other software components via its manifest file.
+OSGi prevents access to classes without a defined dependency and throws a `ClassNotFoundException`. 
+The only exception are packages from the Java runtime environment (based on the Bundle-RequiredExecutionEnvironment definition of the plug-in).
+The JRE packages are always available to a plug-in without an explicitly defined dependency.
 		
 If you add a dependency to your manifest file, the Eclipse IDE
 automatically adds the

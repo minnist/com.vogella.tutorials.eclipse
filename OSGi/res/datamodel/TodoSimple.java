@@ -8,6 +8,6 @@ public class Todo {
 	private String summary = "";
 	private String description = "";
 	private boolean done = false;
-	private Date dueDate;
+	private Date dueDate = new Date();
 
 }

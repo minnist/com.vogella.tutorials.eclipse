@@ -25,7 +25,12 @@ image::tutorial_model20.png[Change the orientation attribute]
 
 Add a part stack as the first child to your part sash container element.
 
-Re-select the parent part sash container and add another part sash container element.
+Re-select the parent part sash container and add another *part sash container* element.
+Add to stacks to this new element.
+
+After these changes your application model should look similar to the following screenshot.
+
+image::tutorial_model28.png[Application model structure]
 
 ==== Create the parts
 
@@ -37,8 +42,12 @@ image::tutorial_model30.png[Application model structure]
 
 Use the ID and label from the following table.
 
+[TIP]
+====
+Enter the name first, the ID should be adjusted based on the name, if the label was empty.
+====
+
 .Label and ID for the parts
-[cols="1,3",options="header"]
 |===
 |ID Suffix |Label
 

@@ -66,6 +66,7 @@ The resulting class should look like the following listing.
 include::res/datamodel/Todo.java[]
 ----
 
+[[services_todo_tostringhashcode]]
 === Generate toString(), hashCode() and equals() methods
 
 Use Eclipse to generate a

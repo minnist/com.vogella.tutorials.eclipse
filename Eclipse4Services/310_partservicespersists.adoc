@@ -8,6 +8,7 @@ Editors that contain data, which can be saved, are typically called _dirty_.
 The part service allows you to save dirty parts.
 Every part can mark itself as dirty, hence behave like an editor.
 
+[[eclipse4editor_persist]]
 === MDirtyable and @Persist
 
 A part has the `MDirtyable` attribute 	which indicates that it can be marked as dirty.

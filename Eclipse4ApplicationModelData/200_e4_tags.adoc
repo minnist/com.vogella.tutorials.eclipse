@@ -1,3 +1,4 @@
+[[recipes_tags]]
 == Relevant tags and persisted state keys in the application model
 
 The following table lists the most important tags for Eclipse model elements.

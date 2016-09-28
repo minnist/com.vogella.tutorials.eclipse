@@ -1,4 +1,4 @@
-[jface_localresoucemanager]
+[[jface_localresoucemanager]]
 == JFace resource manager for Colors, Fonts and Images
 
 (((JFace,Resource manager)))

@@ -41,6 +41,7 @@ the
 event
 bus.
 
+[[eventsystem_annotations]]
 === Annotations for receiving events
 
 You can use dependency injection to register and respond to

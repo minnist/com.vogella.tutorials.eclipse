@@ -7,7 +7,6 @@ To do this, you only need to know the ID of the element to which you want to con
 The ID of the Eclipse IDE and Eclipse 3.x RCP applications is hard coded to the `org.eclipse.e4.legacy.ide.application` value.
 
 TIP: You can use the model spy from the e4 tools project to identify the ID of the element you want to contribute too.
-See <<modelspyintroduction>>.
 
 With the correct ID you can create model fragments that contribute to the corresponding application model element.
 The following screenshot demonstrate how to contribute to the _menuContributions_ feature of the Eclipse IDE.

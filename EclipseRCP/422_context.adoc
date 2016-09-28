@@ -83,7 +83,7 @@ The search happens (mostly) transparently for the caller of the injection.
 
 === How to access the model objects?
 
-For the class references in the application model (see <<connectmodeltojava>> ), the Eclipse framework creates the corresponding objects when needed.
+For the class references in the application model, the Eclipse framework creates the corresponding objects when needed.
 Such an object has access to its corresponding model object via dependency injection.
 
 For example, in the implementation of a part you can access the model information of a part via: `@Inject MPart part;`
@@ -125,6 +125,7 @@ Eclipse uses handlers to define actions which can be triggered via menu or toolb
 For a handler implementation class it is not necessary to use these qualifiers, as a handler is executed in the active context of the application.
 ====
 
+[[dependencyinjection_active]]
 === Tracking a child context with @Active
 
 The `@Active` annotation allows you to track values in a child context.

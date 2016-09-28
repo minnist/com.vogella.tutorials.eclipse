@@ -92,6 +92,7 @@ example, if you created the object with the
 operator, you can
 still run dependency injection on it.
 
+[[ownobjects_difrom]]
 === Create your custom objects automatically with @Creatable
 		
 If you want the Eclipse framework to create your custom objects

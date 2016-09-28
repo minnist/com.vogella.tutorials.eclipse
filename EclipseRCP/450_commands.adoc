@@ -32,7 +32,9 @@ Commands are used by the _Handled MenuItem_ and _Handled ToolItem_ model element
 Prefer the usage of commands over the usage of direct (menu or tool) items.
 Using commands together with handlers allows you to define different handlers for different scopes (applications or part) and you can define key bindings for the handler's associated commands.
 
+[[commands_behaviorannotations]]
 === Behavior annotations and dependency injection for handler classes
+
 (((Behavior annotations, Handler)))
 In a handler class exactly one method must be annotated with the `@Execute` annotation.
 In additional, you can also annotate one method with the `@CanExecute` annotation.

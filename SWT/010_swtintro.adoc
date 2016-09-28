@@ -1,6 +1,6 @@
 == SWT Overview
 
-[swt_overview]
+[[swt_overview]]
 === What is SWT?
 		
 The Standard Widget Toolkit (_SWT_) is the default user interface library used by Eclipse. 

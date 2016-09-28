@@ -35,7 +35,6 @@ NOTE: The `label` 	is an XML attribute and can be found is the source of your _A
 === ELEMENT event tag
 
 The `ELEMENT` event tag in general is the model element, which is concerned in the event.
-For an example see <<active_sample_event>>
 
 === NEW_VALUE and OLD_VALUE event tags
 

@@ -119,6 +119,7 @@ return `true`
 to display the
 data.
 
+[[jfacetable_comparator]]
 === Sorting data with ViewerComparator
 
 JFace supports sorting of the viewer content via the

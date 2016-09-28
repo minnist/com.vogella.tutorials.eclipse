@@ -1,6 +1,7 @@
 == Start Java programs
 
 .Running programs
+[cols="1,2",options="header"]
 |===
 |Shortcut |Description
 					

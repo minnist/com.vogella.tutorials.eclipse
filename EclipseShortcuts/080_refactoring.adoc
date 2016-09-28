@@ -1,6 +1,7 @@
 == Refactoring
 
 .Refactoring
+[cols="1,2",options="header"]
 |===
 |Shortcut |Description
 					

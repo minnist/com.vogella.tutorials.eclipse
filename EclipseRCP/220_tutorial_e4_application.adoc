@@ -8,11 +8,13 @@ Create a new project called _com.example.e4.rcp.todo.product_ via menu:File[New 
 
 image::productproject10.png[]
 
+Enter the project name and press btn:[Finish].
+
 image::productproject12.png[]
 
 ==== Create a product configuration file
 
-Right-click on this project and select menu:New[Product Configuration].
+Right-click on this project and select menu:File[New > Others... > Plug-in Development > Product Configuration].
 
 image::training_product10.png[]
 
@@ -27,7 +29,7 @@ Press the btn:[New...] button on the _Overview_ tab of the product editor.
 
 image::training_product28.png[Press the new button in the product editor]
 
-Enter _to-do_ as the _Product Name_ , your plug-in as the _Defining Plug-in_ , _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
+Enter _to-do_ as the _Product Name_, your plug-in as the _Defining Plug-in_ , _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
 
 image::training_product30.png[Entering the product details]
 
@@ -48,7 +50,8 @@ You can press the btn:[Finish] button on the first wizard page.
 
 image::training_product31.png[Feature project]
 
-Afterwards select the _Plug-ins_ tab in the editor of the _feature.xml_ file. Press the btn:[Add...] button and include the `com.example.e4.rcp.todo` plug-in into this feature.
+Afterwards select the _Included Plug-ins_ tab in the editor of the _feature.xml_ file. 
+Press the btn:[Add...] button and include the `com.example.e4.rcp.todo` plug-in into this feature.
 
 image::training_product34.png[Feature project]
 
@@ -83,14 +86,15 @@ If you cannot add one of the listed features to your product, ensure that you ha
 
 ==== Remove the version dependency from the features in the product
 
-To avoid problems with different versions of the `org.eclipse.e4.rcp` feature, delete the version number from your product.
+To avoid problems with different versions of your features, delete the version number from your product.
 You can do this via the btn:[Properties...] button on the _Contents_ tab of the product configuration editor.
 
 image::e4_productfeature26.png[Remove version number]
 
 image::e4_productfeature28.png[Remove version number]
 
-If other features have a version dependency, also remove these. The result should look similar to the following screenshot.
+Remove the version dependency from all features.
+The result should look similar to the following screenshot.
 
 image::e4_productfeature30.png[Remove version number via the Properties button]
 
@@ -115,7 +119,7 @@ Right-click on the _Windows and Dialogs_ node, and select `Trimmed Window` as de
 
 image::tutorial_product80.png[Adding a trimmed window]
 
-Enter an ID, the position and size of the window and a label as shown in the screenshot below.
+Enter an ID with the `taskmanager` suffix, the position and size of the window and a label as shown in the screenshot below.
 
 image::tutorial_product90.png[Enter the data for the TrimmedWindow in the model editor]
 

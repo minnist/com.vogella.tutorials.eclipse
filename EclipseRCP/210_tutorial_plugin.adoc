@@ -1,7 +1,5 @@
 === Create an Eclipse plug-in
 
-==== Target
-
 In the following exercise you create a standard Eclipse plug-in.
 This plug-in is later converted into an Eclipse RCP application.
 
@@ -33,7 +31,7 @@ If you click the btn:[Next] button instead of btn:[Finish], the wizard shows you
 
 ==== Validate the result
 
-Open the project and ensure that no Java classes were created in the source folder.
+Open the project and ensure that no Java classes were created in the _src_ folder.
 
 In the manifest editor switch to the _Dependencies_ tab and ensure that there are no entries.
 

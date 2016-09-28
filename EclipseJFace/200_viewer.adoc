@@ -1,20 +1,9 @@
 == Eclipse JFace Viewers
-(((JFace,Viewer)))
+
 === Purpose of the JFace viewer framework
 
-The
-JFace viewer
-framework
-allows you to display a domain model in
-a standard SWT widget
-like
-list,
-combo, tree or table
-without
-converting
-the domain
-model
-beforehand.
+(((JFace,Viewer)))
+The JFace viewer framework allows you to display a domain model in a standard SWT widget like list, combo, tree or table without converting the domain model beforehand.
 
 A viewer allows you to set a
 _content provider_

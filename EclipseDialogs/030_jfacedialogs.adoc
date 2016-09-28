@@ -1,15 +1,9 @@
 == JFace Dialogs
-(((Dialog,JFace)))
+
 === Dialogs from JFace
 
-JFace contains several
-frequently used dialogs which are not
-based on the
-native dialogs as
-well as
-a framework for
-building custom
-dialogs.
+(((Dialog,JFace)))
+JFace contains several frequently used dialogs which are not based on the native dialogs as well as a framework for building custom dialogs.
 
 NOTE: Even though JFace dialogs are not native, they follow the native platform semantics for things like the button order.
 

@@ -1,7 +1,5 @@
 == Exercise: Create an RCP application with the wizard
 
-=== Target
-
 The following exercise demonstrates how to create an Eclipse RCP application based on a template.
 It also shows how to start the application via the Eclipse IDE.
 You learn all the details of what happened here in later chapters.

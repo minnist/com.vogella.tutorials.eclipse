@@ -9,32 +9,13 @@ image::tutorial_model50.png[Screenshot of the application]
 
 Open the _Application.e4xmi_ file in the _Eclipse 4 model editor_ via a double-click or right-click on it and select menu:Open With[Eclipse 4 model editor].
 
-==== Add a perspective
-
-Add a perspective stack with one perspective to your application model.
-
-Navigate to your window inside the _Application.e4xmi_ file. Select the _Controls_ node.
-Add a _Perspective Stack_ via the context menu on the _Controls_ entry as indicated in the following screenshot.
-
-image::tutorial_model02.png[Adding a PerspectiveStack to the Eclipse RCP application]
-
-[TIP]
-====
-Alternatively to the context menu you can also use the btn:[Add...] button on the detail page to add child elements to the selected element.
-====
-
-
-After creating the perspective stack add a _Perspective_ to it, either via the context menu or the btn:[Add...] button.
-
-image::tutorial_model04.png[Adding a Perspective]
-
-Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.perspective_ value in the _ID_ field.
+Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.perspective_ value in the _ID_ field, either via the context menu or the btn:[Add...] button.
 
 image::tutorial_model10.png[Adding a Perspective to the Eclipse 4 application]
 
 ==== Add part sash and part stack containers
 
-Select _Controls_ below the newly created perspective and add a part sash container element.
+Select _Controls_ below the window and add a part sash container element.
 
 image::tutorial_model12.png[Add PartSashContainer]
 
@@ -45,30 +26,30 @@ image::tutorial_model20.png[Change the orientation attribute]
 Add a part stack as the first child to your part sash container element.
 
 Re-select the parent part sash container and add another part sash container element.
-Now add two part stacks to the second part sash container.
+
+==== Create the parts
+
+Add one part to the first sash container and two parts to the second sash container.
 
 After these changes your application model should look similar to the following screenshot.
 
 image::tutorial_model30.png[Application model structure]
 
-==== Create the parts
+Use the ID and label from the following table.
 
-Add a part model element to each part stack.
-As ID for the parts use the prefix `com.example.e4.rcp.todo.part` and the suffix from the following table.
-Also put the label from the table into the appropriate field of the part editor.
-
-.Label and ID from the Parts
+.Label and ID for the parts
+[cols="1,3",options="header"]
 |===
 |ID Suffix |Label
 
-|.todooverview
+|com.example.e4.rcp.todo.part.todooverview
 |Overview
 
-|.tododetails
+|com.example.e4.rcp.todo.part.tododetails
 |Details
 
-|.playground
-|playground
+|com.example.e4.rcp.todo.part.playground
+|Playground
 |===
 
 The final structure of your application model should be similar to the following screenshot.

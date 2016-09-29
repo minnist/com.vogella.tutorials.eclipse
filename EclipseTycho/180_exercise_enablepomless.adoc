@@ -32,7 +32,7 @@ The content of the _.mvn/extensions.xml_ must look like the following to enable 
 
 
 [source,xml,subs="specialchars,attributes"]
-----	
+----
 include::res/polyglot/pomlesstycho-extensions.xml[]
 ----
 
@@ -48,9 +48,9 @@ image::new_general_project_configuration_tycho.png[Create new project for the Ty
 Create the following _pom.xml_ file in this project.
 
 [source,xml,subs="specialchars,attributes"]
-----	
+----
 include::res/components/parent/pom.xml[]
-----	
+----
 
 
 === Create pom in the root project
@@ -58,7 +58,7 @@ include::res/components/parent/pom.xml[]
 Create the following _pom.xml_ file in the root project of your build.
 		
 [source,xml]
-----	
+----
 include::res/components/parent/rootpom.xml[]
 ----
 

@@ -55,3 +55,4 @@ In order to use this p2 update site inside this zip file you can create a virtua
 See https://wiki.eclipse.org/Tycho/Nexus_Unzip_Plugin[Tycho/Nexus Unzip] plugin for more information.
 
 See http://projects.reficio.org/p2-maven-plugin for more information on the usage of the p2-maven-plugin.
+

@@ -55,7 +55,4 @@ You can also run the build from the _bundles_ directory or the directory of the 
 This build should also run successfully.
 ====
 
-		
 
-		
-		

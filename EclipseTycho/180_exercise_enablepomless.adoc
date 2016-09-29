@@ -72,3 +72,4 @@ image::tychodirectory_buildsetup.png[Directory after first build setup]
 
 Run the build via `mvn clean verify`, this build should be successful. 
 No build artifact is created.
+

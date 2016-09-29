@@ -171,22 +171,9 @@ header for the grouped widgets.
 
 === Event Listener
 (((SWT,Event listener)))
-You can register listeners for specific events on SWT controls, e.g.,
-a
-`ModifyListener`
-to listen to changes in a
-`Text`
-widget
-or a
-`SelectionLister`
-for selection
-(click) events on a
-`Button`
-widget. The following code demonstrates the implementation, it uses
-`SelectionAdapter`
-which is an implementation of the
-`SelectionLister`
-interface.
+You can register listeners for specific events on SWT controls.
+For example, a `ModifyListener` to listen to changes in a `Text` widget or a `SelectionLister` for selection (click) events on a `Button` widget. 
+The following code demonstrates the implementation, it uses `SelectionAdapter` which is an implementation of the `SelectionLister` interface.
 
 [source,java]
 ----

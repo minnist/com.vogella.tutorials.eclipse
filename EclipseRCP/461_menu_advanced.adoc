@@ -8,7 +8,9 @@ To add a view menu entry, select the _Menus_ entry under the part and append a _
 
 image::viewmenu10.png[Adding a View menu]
 
+[[menuadvanced_popup]]
 === Popup menu (context menu)
+
 (((Menu, Popup)))
 You can also define a popup menu for SWT controls via the application model.
 To achieve this create a _Popup Menu_ for the part which contains the SWT control.

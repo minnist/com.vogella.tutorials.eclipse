@@ -2,75 +2,25 @@
 
 === Available widgets in the SWT library
 		
-SWT
-widgets are located in the packages
-`org.eclipse.swt.widgets`
-and
-`org.eclipse.swt.custom`. 
-Widgets extend either the `Widget`
-or the
-`Control`
-class. Several of these widgets are depicted in the following
-graphic. This graphic is a screenshot of the
-http://www.eclipse.org/swt/widgets/[SWT widget homepage].
+SWT widgets are located in the packages `org.eclipse.swt.widgets` and `org.eclipse.swt.custom`. 
+Widgets extend either the `Widget` or the `Control` class. 
+Several of these widgets are depicted in the following graphic. 
+This graphic is a screenshot of the http://www.eclipse.org/swt/widgets/[SWT widget homepage].
 		
 image::swtwidgetoverview10.png[Overview of the SWT widgets]
 		
-While SWT tries to use native widgets as much as possible, it can not
-fulfill all common requirements with the native widgets.
+While SWT tries to use native widgets as much as possible, it can not fulfill all common requirements with the native widgets.
 
-Therefore
-some
-widgets extend the capabilities
-of the native platform.
-These are
-part of
-the
-`org.eclipse.swt.custom`
-package
-and usually start with the additional prefix
-`C`
-to
-indicate that they
-are custom
-widgets, e.g.
-`CCombo`.
+Therefore some widgets extend the capabilities of the native platform.
+These are part of the `org.eclipse.swt.custom` package and usually start with the additional prefix `C` to indicate that they are custom widgets, e.g. `CCombo`.
 		
-Compared to the
-`Combo`
-class, the
-`CCombo`
-class
-provides
-the ability to set the height of the widget.
+Compared to the `Combo` class, the `CCombo` class provides the ability to set the height of the widget.
 		
-Another
-example is
-`StyledText`
-, a class which provides
-advanced features for displaying
-text, e.g.
-drawing a background.
+Another example is `StyledText`, a class which provides advanced features for displaying text, e.g. drawing a background.
 		
-Widgets from the package
-`org.eclipse.swt.custom`
-are
-implemented in pure Java while widgets from
-`org.eclipse.swt.widgets`
-use native code. Custom widgets are not supposed to use
-the
-internal
-classes of
-SWT
-as these classes may be different on
-the various
-platforms.
-Every custom
-widget must extend the
-`Composite`
-or
-`Canvas`
-class.
+Widgets from the package `org.eclipse.swt.custom` are implemented in pure Java while widgets from `org.eclipse.swt.widgets` use native code.
+Custom widgets are not supposed to use the internal classes of SWT as these classes may be different on the various platforms.
+Every custom widget must extend the `Composite` or `Canvas` class.
 API compliance is
 guaranteed only for these base classes.
 		
@@ -199,29 +149,30 @@ These
 implementations follow the
 naming convention:
 
-menu:
-_Name_
-`Listener`
-[
-_Name_
-`Adapter`
-]
+menu:_Name_`Listener`[_Name_`Adapter`]
 
-For
-example
-`SelectionListener`
-has
-the abstract class
-`SelectionAdapter`
-which pre-implements the methods of
-`SelectionListener`.
+For example, `SelectionListener` has the abstract class `SelectionAdapter` which pre-implements the methods of `SelectionListener`.
 
-If you want to add a listener to the whole application, you can use
-the
-`Display`
-class. For example to add a global mouse listener use
-`addFilter(SWT.MouseMove, listener)`. If you add filters to the
-`Display`
-you may interfere with existing listeners. Ensure to test your code
-accordingly.
+If you want to add a listener to the whole application, you can use the `Display` class. 
+For example, to add a global mouse listener use `addFilter(SWT.MouseMove, listener)`. 
+If you add filters to the `Display` you may interfere with existing listeners. 
+Ensure to test your code accordingly.
+
+== Colors in SWT
+
+You can define colors in SWT.
+
+[source,java]
+----
+Device device = Display.getCurrent ();
+Color red = new Color (device, 255, 0, 0);
+
+// Using system colors
+
+Display display = Display.getCurrent();
+Color blue = display.getSystemColor(SWT.COLOR_BLUE);
+Color listBackground = display.getSystemColor(SWT.COLOR_LIST_BACKGROUND);
+----
+
+If you create non system colors, you have to call `dispose` on them, if they are not needed anymore.
 

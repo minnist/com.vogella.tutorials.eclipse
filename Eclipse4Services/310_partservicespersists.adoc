@@ -58,9 +58,3 @@ Every model element can get persisted data assigned which can be accessed via th
 In its @PostConstruct method the implementation class can get the `MPart` injected and access its persisted state.
 This information can be used to configure the editor.
 
-=== MInputPart
-
-Eclipse used to have the `MInputPart` model element.
-This model element has been deprecated and should not be used anymore.
-Use the approach described in <<editorinput>>.
-

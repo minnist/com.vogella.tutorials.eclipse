@@ -18,7 +18,8 @@ image::eclipseideplugin20.png[]
 
 Press the btn:[Next] button.
 
-Select the _Hello, World Command_ template and press the btn:[Next] button. This template uses the 3.x API, which you convert to the e4 API in <<firstplugin_migratione4>>.
+Select the _Hello, World Command_ template and press the btn:[Next] button. 
+This template uses the 3.x API, which you convert later in this exercise to the e4 API.
 
 image::eclipseideplugin30.png[]
 

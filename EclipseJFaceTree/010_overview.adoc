@@ -23,11 +23,6 @@ interface to be used with your
 `TreeViewer`
 class.
 
-The usage of the
-`TreeViewer`
-class is demonstrated in
-<<jfacefilebrowser>>.
-
 === Selection and double-click listener
 
 JFace allows you to access the SWT controls to define listeners on

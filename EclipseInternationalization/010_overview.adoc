@@ -104,6 +104,7 @@ the translation team. This approach
 also allows configuring the included languages via the product
 configuration file.
 
+[[i18n_nlparameter]]
 === Setting the language in the launch configuration
 (((i18n,Setting the language via launch parameter)))
 By default Eclipse uses

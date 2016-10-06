@@ -7,7 +7,11 @@ The _Eclipse IDE for Java Developers_ distribution is specifically designed for 
 It contains typical required packages, like support for the Maven and Gradle build system and support for the Git version control system.
 	
 Download the _Eclipse IDE for Java Developers_ package from the following URL: `https://eclipse.org/downloads/eclipse-packages/`
+
+[TIP]
+====
 Ensure that you download the correct version for your Java installation, e.g., 32 bit or 64 bit.
+====
 
 The following screenshot shows the Eclipse download website for a Linux system.
 Press on the link beside the package description, for example _Linux 64-Bit_ to start the download. 
@@ -16,7 +20,5 @@ The links which are displayed depend on your operating system.
 	
 image::eclipsedownload10.png[Eclipse Download page]
 	
-The download is a zip file, which is a compressed archive of
-multiple
-files.
+The download is a zip file, which is a compressed archive of multiple files.
 	

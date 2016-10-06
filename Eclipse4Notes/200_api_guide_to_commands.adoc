@@ -1,0 +1,5 @@
+== API guide to the commands framework
+
+See MenuHelper
+
+See also the org.eclipse.e4.ui.menu.tests test suite

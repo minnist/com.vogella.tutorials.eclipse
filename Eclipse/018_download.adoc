@@ -1,46 +1,17 @@
 == Download the Eclipse IDE for Java Developers
 
-The Eclipse IDE consists of several components. The Eclipse.org
-website
-provides
-pre-packaged Eclipse
-distributions
-to provide downloads
-for
-typical
-use cases.
+The Eclipse IDE consists of several components. 
+The Eclipse.org website provides pre-packaged Eclipse distributions to provide downloads for typical use cases.
 	
-The
-_Eclipse IDE for Java Developers_
-distribution is specifically designed for
-standard Java development.
-It
-contains typical required packages, like the
-Maven build system
-or
-support for the Git version control system.
+The _Eclipse IDE for Java Developers_ distribution is specifically designed for standard Java development.
+It contains typical required packages, like support for the Maven and Gradle build system and support for the Git version control system.
 	
-Download the
-_Eclipse IDE for Java Developers_
-package
-from
-the following URL. Ensure that you download the correct
-version for your Java installation, e.g., 32 bit or
-64 bit.
+Download the _Eclipse IDE for Java Developers_ package from the following URL: `https://eclipse.org/downloads/eclipse-packages/`
+Ensure that you download the correct version for your Java installation, e.g., 32 bit or 64 bit.
 
-[source,txt]
-----
-include::res/download/link.txt[]
-----
-	
-The following screenshot shows the Eclipse download website for a
-Linux system.
-Press on the link beside the package
-description, for
-example
-_Linux 64-Bit_
-to start the download. The links which are displayed depend on your
-operating system.
+The following screenshot shows the Eclipse download website for a Linux system.
+Press on the link beside the package description, for example _Linux 64-Bit_ to start the download. 
+The links which are displayed depend on your operating system.
 	
 	
 image::eclipsedownload10.png[Eclipse Download page]

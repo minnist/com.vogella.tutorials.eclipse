@@ -9,8 +9,6 @@ image::tutorial_model50.png[Screenshot of the application]
 
 Open the _Application.e4xmi_ file in the _Eclipse 4 model editor_ via a double-click or right-click on it and select menu:Open With[Eclipse 4 model editor].
 
-Enter the _To-do_ value in the _Label_ field and the _com.example.e4.rcp.todo.perspective_ value in the _ID_ field, either via the context menu or the btn:[Add...] button.
-
 ==== Add part sash and part stack containers
 
 Select _Controls_ below the window and add a part sash container element.

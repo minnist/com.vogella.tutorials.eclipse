@@ -30,13 +30,7 @@ image::tutorial_model28.png[Application model structure]
 
 ==== Create the parts
 
-Add one part to the first sash container and two parts to the second sash container.
-
-After these changes your application model should look similar to the following screenshot.
-
-image::tutorial_model30.png[Application model structure]
-
-Use the ID and label from the following table.
+Add one part to each stack. Use the ID's and labels from the following table.
 
 [TIP]
 ====

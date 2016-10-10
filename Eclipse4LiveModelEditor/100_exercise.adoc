@@ -14,7 +14,7 @@ So it might happen that this exercise does not work, or that you see additional 
 Add the model spies to your target platform. 
 See <<tutorial_installation_e4tools>> for the update site.
 
-image:model_spy_targetplatform.png[Adding model spy to target platform]
+image:model_spy_targetplatform.png[Adding model spy to target platform, pdfwidth=40%]
 
 
 [WARNING]

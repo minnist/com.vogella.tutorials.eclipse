@@ -16,9 +16,9 @@ include::res/java8/Java8Example.java[]
 		
 You can use a quick fix for the conversion as demonstrated via the following screenshots.
 		
-image::/convertannoymoustolambda10.png[]
+image::convertannoymoustolambda10.png[]
 		
-image::/convertannoymoustolambda20.png[]
+image::convertannoymoustolambda20.png[]
 		
-image::/convertannoymoustolambda30.png[pdfwidth=40%]
+image::convertannoymoustolambda30.png[pdfwidth=40%]
 		

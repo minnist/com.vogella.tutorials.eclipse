@@ -36,7 +36,7 @@ Since there was no work done on the `master` branch and `addDivideOperation` poi
 master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
 Inspect this in the History View.
 				
-image::merge.png[Trigger merge via History view,600,600]
+image::merge.png[Trigger merge via History view]
 				
 image::fast-forward-merge.png[Fast Forward Merge]
 

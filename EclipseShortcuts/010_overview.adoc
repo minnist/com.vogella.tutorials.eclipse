@@ -26,5 +26,5 @@ which the editor shows.
 The following screenshot shows how you the available commands in quick access
 for the "New Java" search term.
 	
-image::short10.png[kbd:[Ctrl+3] shortcut dialog]
+image::short10.png[Ctrl+3 shortcut dialog]
 

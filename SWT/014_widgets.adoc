@@ -45,8 +45,7 @@ SWT
 widget, you have to call its
 `dispose()`
 method. Fortunately if a container is disposed, e.g., a
-`Shell`
-, this container also releases all its children.
+`Shell`, this container also releases all its children.
 		
 The automatic release does not work for Color, Cursor, Display,
 Font,

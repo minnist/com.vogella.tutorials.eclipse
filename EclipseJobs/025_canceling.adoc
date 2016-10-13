@@ -11,8 +11,7 @@ This of course concludes in a really poor user experience, which
 should definitely be avoided.
 
 In order to realize that a user has canceled a Job the
-`IProgressMonitor`
-, which is passed to the
+`IProgressMonitor`, which is passed to the
 `run`
 method of a Job, can be asked whether the Job has been canceled. This
 can be done by calling the
@@ -47,8 +46,7 @@ in case the
 has been canceled. The
 `OperationCanceledException`
 is automatically caught by a
-`Job`
-, which will just set the
+`Job`, which will just set the
 `Status.CANCEL_STATUS`
 then.
 

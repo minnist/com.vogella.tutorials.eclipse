@@ -19,8 +19,7 @@ otherwise your menu will not be shown.
 image::command80.gif[]
 	
 Right-click your menucontribution and select
-menu:New[Menu]
-.
+menu:New[Menu].
 Add a
 menu with the "File" label and the "fileMenu" ID.
 	

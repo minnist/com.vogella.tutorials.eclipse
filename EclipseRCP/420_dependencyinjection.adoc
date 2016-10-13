@@ -49,7 +49,7 @@ For example, if the following is called `context.set(SOMEKEY, null)`, anybody li
 |@GroupUpdates
 |Eclipse specific annotation, indicates that updates for this
 @Inject should be batched.
-If you change such objects in the Eclipse context , the update is triggered by the `processWaiting()` method of the `IEclipseContext` object. This annotation is intended to be used by the platform for performance optimization and should rarely be necessary in RCP applications.
+If you change such objects in the Eclipse context, the update is triggered by the `processWaiting()` method of the `IEclipseContext` object. This annotation is intended to be used by the platform for performance optimization and should rarely be necessary in RCP applications.
 |===
 
 
@@ -79,7 +79,7 @@ For example, you can define via `@Inject` that you want to get the current selec
 If the selection changes, the Eclipse framework will inject the new value.
 
 The re-injection only works on methods and fields which are marked with `@Inject`.
-It will not work on parameters injected into constructors and methods which are marked with `@PostConstruct` , as these methods are only executed once.
+It will not work on parameters injected into constructors and methods which are marked with `@PostConstruct`, as these methods are only executed once.
 
 [NOTE]
 ====

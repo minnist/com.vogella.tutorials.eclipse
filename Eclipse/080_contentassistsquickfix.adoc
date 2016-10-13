@@ -2,39 +2,14 @@
 
 === Content assist
 		
-_Content assist_
-is a functionality in Eclipse which allows the developer to get
-context-sensitive code
-completion in an editor upon user request.
+_Content assist_ is a functionality in Eclipse which allows the developer to get context-sensitive code completion in an editor upon user request.
 		
-It can
-be invoked by pressing
-kbd:[Ctrl+Space]
-.
+It can be invoked by pressing kbd:[Ctrl+Space].
 		
-For example, type
-`syso`
-in the editor of a Java source file
-and
-then press
-kbd:[Ctrl+Space]
-. This will replace
-`syso`
-with
-`System.out.println("")`.
+For example, type `syso` in the editor of a Java source file and then press kbd:[Ctrl+Space]. 
+This will replace `syso` with `System.out.println("")`.
 		
-If you have a reference to an object, for example, the object
-`person`
-of the type
-`Person`
-and
-need to see its
-methods, type
-`person.`
-and
-press
-kbd:[Ctrl+Space]
-.
+If you have a reference to an object, for example, the object `person` of the type `Person` and need to see its methods, type `person.` and press kbd:[Ctrl+Space].
 		
 image::contentassists10.gif[Content Assists]
 

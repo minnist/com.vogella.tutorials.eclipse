@@ -231,8 +231,7 @@ _com.vogella.egit.multi.java2_. Create at least one Java class in each project.
 Afterwards
 select both projects, right-click on
 them and select
-menu:Team[Share Project... > Git]
-. If asked by the Eclipse IDE, select that you want to use
+menu:Team[Share Project... > Git]. If asked by the Eclipse IDE, select that you want to use
 _Git_.
 
 Select your Git repository outside

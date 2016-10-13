@@ -79,8 +79,7 @@ and
 _summary_
 field.
 This can be done via the Eclipse menu
-menu:Source[Generate toString()...]
-.
+menu:Source[Generate toString()...].
 
 Also
 use Eclipse to generate a
@@ -91,8 +90,7 @@ method based on the
 _id_
 field. This can be done via the
 Eclipse menu
-menu:Source[Generate hashCode() and equals()...]
-.
+menu:Source[Generate hashCode() and equals()...].
 
 === Write a copy() method
 

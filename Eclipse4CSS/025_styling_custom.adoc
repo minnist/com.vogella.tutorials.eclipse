@@ -14,7 +14,7 @@ You find some predefined implementations for SWT in the `org.eclipse.e4.ui.css.s
 === The org.eclipse.e4.ui.css.core.elementProvider extension point
 
 Under this extension you can specific for which entries in the CSS style sheet the `IElementProvider` is responsible.
-The `org.eclipse.e4.ui.css.core.elementProvider` extension defines an `IElementProvider` , which returns the widgets adapter(`ElementAdapter`). 
+The `org.eclipse.e4.ui.css.core.elementProvider` extension defines an `IElementProvider`, which returns the widgets adapter(`ElementAdapter`). 
 `IElementProvider` returns an `org.w3c.dom.Element`.
 
 image::css_elementprovider.png[ElementAdapter type hierarchy]

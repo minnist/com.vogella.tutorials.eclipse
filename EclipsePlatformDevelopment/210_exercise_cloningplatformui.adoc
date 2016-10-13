@@ -52,7 +52,7 @@ Individual bug fixes are downported to maintenance branches but you should alway
 Finish this wizard by selecting the btn:[Next] button until you the option _Finish_ option becomes available. 
 You end up with the projects from the repository imported into your workspace.
 	
-NOTE: You can also clone anonymously via _Anonymous HTTP_ , if you just want to play with the source code locally and do not intend to contribute changes. 
+NOTE: You can also clone anonymously via _Anonymous HTTP_, if you just want to play with the source code locally and do not intend to contribute changes. 
 In case you cloned a Git repository without using the Gerrit URL or not via Eclipse Git you have to adjust the push URL to provide Gerrit changes.
 See <<eclipsegerritcontribution_adjustpush>> for a description how to do that.
 

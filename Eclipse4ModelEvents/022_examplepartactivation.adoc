@@ -1,6 +1,6 @@
 == Example: the part activation event
 
-A topic, which is fired by Eclipse is the `UIEvents.UILifeCycle.ACTIVATE` , which is fired every time a part is activated.
+A topic, which is fired by Eclipse is the `UIEvents.UILifeCycle.ACTIVATE`, which is fired every time a part is activated.
 
 [source, java]
 ----

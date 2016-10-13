@@ -5,7 +5,7 @@ In this exercise you add a toolbar to your application.
 === Adding a toolbar
 
 Select the _TrimBars_ node under your _TrimmedWindow_ entry and press the btn:[Add...] button.
-The _Side_ attribute should be set to _Top_ , so that all toolbars assigned to that trimbar appear on the top of the application.
+The _Side_ attribute should be set to _Top_, so that all toolbars assigned to that trimbar appear on the top of the application.
 
 image::commands40.png[Adding a toolbar]
 

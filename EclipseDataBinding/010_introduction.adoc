@@ -57,8 +57,7 @@ The main factories are to created instances of
 `IObservableValue`
 are listed in the following table.
 
-[[databinding_observable_factories]]
-.Factories for the creation of an IObservableValue object 
+[[databinding_observable_factories]].Factories for the creation of an IObservableValue object 
 [cols="1,2",options="header"]
 |===
 |Factory |Description

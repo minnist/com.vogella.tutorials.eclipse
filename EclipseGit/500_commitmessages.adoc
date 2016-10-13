@@ -42,8 +42,7 @@ _Gerrit_
 code review system uses the
 _Change-Id_
 key followed by a
-_change-id_
-, which does not change across different versions of the same code
+_change-id_, which does not change across different versions of the same code
 review. This
 _changed id_
 is used to identify to which review the message

@@ -55,27 +55,13 @@ again the next time you open the file.
 
 === Export and import preference settings
 		
-You can export your preference settings from one workspace
-via
-menu:File[Export > General > Preferences]
-.
+You can export your preference settings from one workspace via menu:File[Export > General > Preferences].
 		
-Eclipse does allow you to export some preference settings
-separately, but
-for
-most of
-them you have to select the
-_Export all_
-flag.
+Eclipse does allow you to export some preference settings separately, but for most of them you have to select the _Export all_ flag.
 		
 image::eclipse_exportpreferences10.png[Export your Eclipse preferences.,pdfwidth=40%]
 		
-Similarly, you can import
-them
-again into another
-workspace via
-menu:File[Import > General > Preferences]
-.
+Similarly, you can import them again into another workspace via menu:File[Import > General > Preferences].
 
 === Preference settings per project
 		

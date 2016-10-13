@@ -24,6 +24,5 @@ the loading
 and unloading of the shared library
 
 To make your native library available you have to load it via a call of
-`System.libraryLoad()`
-, OSGi handles shared libraries lazy, e.g., it does not eagerly load them.
+`System.libraryLoad()`, OSGi handles shared libraries lazy, e.g., it does not eagerly load them.
 

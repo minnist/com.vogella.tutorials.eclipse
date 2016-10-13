@@ -33,7 +33,7 @@ include::res/resource/loadimage.txt[]
 	
 In case you do not have an instance of `Control`, the`LocalResourceManager` also provides another constructor.
 
-A popular example is a `LabelProvider` , where you wouldn't want to pass a `Control` to it in order to properly dispose system resources afterwards:
+A popular example is a `LabelProvider`, where you wouldn't want to pass a `Control` to it in order to properly dispose system resources afterwards:
 	
 [source,java]
 ----

@@ -14,8 +14,7 @@ Continue to use the
 plug-in for this exercise.
 
 In the
-_MANIFEST.MF_
-, add the following plug-ins as dependencies to your
+_MANIFEST.MF_, add the following plug-ins as dependencies to your
 _contribute_
 plug-in.
 
@@ -66,8 +65,7 @@ extension.
 image::processor04.png[]
 
 Right-click on the processor and select
-menu:New[element]
-. The value from the ID parameter is the ID of the model element
+menu:New[element]. The value from the ID parameter is the ID of the model element
 which is
 injected
 into your processor class. Use

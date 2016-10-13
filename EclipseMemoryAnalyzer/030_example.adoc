@@ -14,7 +14,7 @@ include::res/simple/Main.java[]
 		
 In Eclipse add the _-XX:+HeapDumpOnOutOfMemoryError_ to the runtime configuration.
 		
-image::dumpparameter10.gif" scale="40[]
+image::dumpparameter10.gif[pdfwidth=40%]
 		
 Run the project. It crashes and writes an _heap dump_.
 		

@@ -2,16 +2,10 @@
 
 === Task management
 
-You can place
-markers in the
-code which you can later access via the
-_Task_
-view
-.
+You can place markers in the code which you can later access via the _Task_ view.
 
 You can use
-`// TODO`
-,
+`// TODO`,
 `// FIXME`
 or
 `// XXX`
@@ -59,7 +53,5 @@ image::tasktags10.png[Defining new tasks tags]
 
 === Mylyn
 
-A more advanced tasks management system is available with the
-_Mylyn_
-plug-in.
+A more advanced tasks management system is available with the _Mylyn_ plug-in.
 

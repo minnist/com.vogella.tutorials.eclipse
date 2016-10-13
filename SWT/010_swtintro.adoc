@@ -33,8 +33,7 @@ and
 assembler.
 		
 The approach of using native widgets can also be found in
-_AWT_
-, a
+_AWT_, a
 standard user interface library available in Java.
 But SWT
 provides

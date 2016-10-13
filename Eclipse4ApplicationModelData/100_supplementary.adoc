@@ -108,7 +108,7 @@ define or change the application behavior.
 Each model element can also attach transient data to it.
 This
 transient data is based on a
-`<![CDATA[Map<String , Object>]]>`
+`<![CDATA[Map<String, Object>]]>`
 structure and can be accessed on the model object via the
 `getTransientData()`
 method.

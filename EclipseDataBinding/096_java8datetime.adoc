@@ -16,8 +16,7 @@ include::res/java8/DateTimeSelectionProperty.java[]
 Here we implement a binding between the
 `DateTime`
 SWT widget and a
-`TemporalAccessor`
-, which for instance can be a
+`TemporalAccessor`, which for instance can be a
 `java.time.LocalDate`
 or
 `java.time.LocalTime`.
@@ -34,8 +33,7 @@ include::res/java8/Java8DateTimePart.java[]
 In this sample we bind the
 `DateTime`
 widget to a
-`WritableValue`
-,
+`WritableValue`,
 which contains a
 `TemporalAccessor`
 instance and this
@@ -55,13 +53,11 @@ widget looks like this:
 image::java8_DateTime_binding.png[]
 	
 If you select a date in the
-`TableViewer`
-, this updates the
+`TableViewer`, this updates the
 `WritableValue`
 and therefore also the
 `DateTime`
 widget and also
 the
-`Label`
-, because all these are bound together.
+`Label`, because all these are bound together.
 	

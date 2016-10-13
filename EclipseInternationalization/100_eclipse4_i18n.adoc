@@ -168,8 +168,7 @@ include::res/eclipse4/MessagesRegistry.java[]
 Because the
 `MessagesRegistry`
 class is annoted with
-`@Creatable`
-, it is instanciated by the framework and can directly be injected into
+`@Creatable`, it is instanciated by the framework and can directly be injected into
 the
 `postConstruct`
 method.

@@ -112,8 +112,7 @@ you find a menu entry with the
 tooltip
 _Open Console_.
 If you select
-_Host OSGi Console_
-,
+_Host OSGi Console_,
 you will have access
 to
 your running OSGi instance.

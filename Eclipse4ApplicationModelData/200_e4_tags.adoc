@@ -45,8 +45,7 @@ class which handles drag and drop by default in the Eclipse platform.
 example, to create an SWT shell which cannot be
 resized,
 you need to
-supply the integer value for <![CDATA[SWT.SHELL_TRIM & (~SWT.RESIZE)]]>
-, which is 1248 on the
+supply the integer value for <![CDATA[SWT.SHELL_TRIM & (~SWT.RESIZE)]]>, which is 1248 on the
 _MWindow_
 application element.
 If, for example, your

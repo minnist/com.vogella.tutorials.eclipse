@@ -75,14 +75,10 @@ class name
 to open
 it.
 
-
 image::classopen10.png[Opening a class]
 
-
 You can also search for package names. Each part of the package name
-must end with a
-`.`
-(the
+must end with a `.` (the
 _dot_
 character)
 so that the
@@ -144,19 +140,10 @@ image::openresourceeclipse10.png[Open resources in Eclipse,pdfwidth=40%]
 
 === Quick Outline
 
-_Quick Outline_
-shows you an structured overview of the file you are editing.
-For example, for a Java class you see its methods with
-the
-option
-to filter.
-The shortcut for opening the
-_Quick Outline_
-is
-kbd:[Ctrl+O]
-. You can also reach this option, via right-click in an editor via the
-_Quick Outline_
-option.
+_Quick Outline_ shows you an structured overview of the file you are editing.
+For example, for a Java class you see its methods with the option to filter.
+The shortcut for opening the _Quick Outline_ is kbd:[Ctrl+O]. 
+You can also reach this option, via right-click in an editor via the _Quick Outline_ option.
 
 By default,
 _Quick Outline_
@@ -266,8 +253,7 @@ into the class
 declaration.
 
 Similar to the left mouse click combined with the
-kbd:[Ctrl]
-,
+kbd:[Ctrl],
 you can use the
 kbd:[F3]
 key to go into a class.

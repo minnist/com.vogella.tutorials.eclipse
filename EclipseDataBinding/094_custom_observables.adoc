@@ -72,8 +72,7 @@ include::res/custom_observable/CustomWidgetObservableSamplePart_Observable.java[
 A better approach is to implement the
 `IProperty`
 interface, like
-`IValueProperty`
-,
+`IValueProperty`,
 `IWidgetValueProperty`
 and others.
 
@@ -142,8 +141,7 @@ include::res/custom_observable/VogellaProperties.java[]
 
 You might want to have a look at
 the
-`WidgetProperties`
-, which contains several methods with more sense for
+`WidgetProperties`, which contains several methods with more sense for
 those delegates.
 
 Here is the code how to use the factory for "vogella" properties and some samples, which fit to the

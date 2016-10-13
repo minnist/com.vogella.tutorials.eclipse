@@ -53,8 +53,7 @@ method it returns a renderer object of type
 `AbstractPartRenderer`.
 
 For example, if the model element is an instance of
-`MPart`
-,
+`MPart`,
 then an instance of the
 `ContributedPartRenderer`
 class

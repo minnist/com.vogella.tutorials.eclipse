@@ -52,17 +52,11 @@ image::templates40.gif[Using code templates]
 === Code Formatter
 
 		
-Eclipse allows you also to specify the rules for the code
-formatter.
+Eclipse allows you also to specify the rules for the code formatter.
 These rules are used by Eclipse to format your source code.
-This
-allows you, for example, to define the settings for the usage of
-whitespace or for line wrapping.
+This allows you, for example, to define the settings for the usage of whitespace or for line wrapping.
 		
-You find
-the settings under
-menu:Window[Preferences > Java > Code Style > Formatter]
-.
+You find the settings under menu:Window[Preferences > Java > Code Style > Formatter].
 		
 Press the
 btn:[New]

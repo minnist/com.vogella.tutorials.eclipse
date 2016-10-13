@@ -5,8 +5,7 @@ NOTE: This exercise assumes that <<jfacefilebrowser>> has been done, since this 
 === Using TreeViewerColumns in the file browser
 
 To add multiple columns in a
-`TreeViewer`
-, the
+`TreeViewer`, the
 `TreeViewerColumn`
 class can be used to define columns for the underlying tree.
 

@@ -14,5 +14,5 @@ http://www.eclipse.org/articles/Article-SWT-graphics/SWT_graphics.html[SWT Graph
 
 http://sourceforge.net/apps/trac/yari/[YARI tool suite] Tools to debug, spy, spider, inspect and navigate Eclipse based application GUIs (Workbench or RCP).]
 	
-http://www.eclipse.org/swt/tools.php[SWT Development Tools] , Tools include Sleak (analyze memory leaks in SWT graphic resources) and SWT Spy plug-in which prints out the info about the SWT widget under the cursor.]
+http://www.eclipse.org/swt/tools.php[SWT Development Tools], Tools include Sleak (analyze memory leaks in SWT graphic resources) and SWT Spy plug-in which prints out the info about the SWT widget under the cursor.]
 		

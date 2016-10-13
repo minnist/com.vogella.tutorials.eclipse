@@ -37,8 +37,7 @@ _config.ini_
 file of your application via the
 _eclipse.log.level_
 parameter. The value can be set to
-_INFO_
-,
+_INFO_,
 _WARNING_
 and
 _ERROR_.

@@ -16,8 +16,7 @@ with the default
 handler
 "de.vogella.rcp.intro.commands.toolbar.handler.Hello". This handler
 will open a
-http://www.vogella.com/tutorials/EclipseDialogs/article.html[JFace Dialog]
-.
+http://www.vogella.com/tutorials/EclipseDialogs/article.html[JFace Dialog].
 
 [source,java]
 ----

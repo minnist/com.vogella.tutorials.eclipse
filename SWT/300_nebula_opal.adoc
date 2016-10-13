@@ -9,8 +9,7 @@ several visualization widgets as depicted in the following screenshot.
 image::visualizationwidgets.png[Nebula visualization widgets]
 	
 Another source for SWT widgets is the
-http://code.google.com/a/eclipselabs.org/p/opal/[Opal widget homepage]
-. The following screenshot shows a widgets for displaying two lists.
+http://code.google.com/a/eclipselabs.org/p/opal/[Opal widget homepage]. The following screenshot shows a widgets for displaying two lists.
 	
 image::opalexample10.png[Opal  widgets]
 

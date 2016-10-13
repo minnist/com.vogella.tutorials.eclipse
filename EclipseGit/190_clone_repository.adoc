@@ -17,8 +17,7 @@ image::egit_import09.png[URI selected in EGit]
 Enter the URL to your Git repository. Git supports
 several protocols,
 e.g.
-_git://_
-,
+_git://_,
 _ssh://_
 and
 _https://_.

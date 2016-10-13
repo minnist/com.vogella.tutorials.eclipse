@@ -5,8 +5,7 @@ can save significant time during development.
 	
 For example, Eclipse can override methods from superclasses and
 generate the
-`toString()`
-,
+`toString()`,
 `hashcode()`
 and
 `equals()`
@@ -38,8 +37,7 @@ menu:Source[Generate Getter and Setter...], select all fields and afterwards cli
 	
 	
 Select
-menu:Source[Generate toString()...]
-, mark again all fields and click the
+menu:Source[Generate toString()...], mark again all fields and click the
 btn:[OK]
 button.
 

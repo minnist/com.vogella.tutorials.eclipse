@@ -29,8 +29,7 @@ contribution.
 Right-click on the
 _product_
 entry and select
-menu:New [Property]
-. Use
+menu:New [Property]. Use
 _applicationXMI_
 as parameter name and
 _com.example.e4.rcp.todo/ApplicationNew.e4xmi_

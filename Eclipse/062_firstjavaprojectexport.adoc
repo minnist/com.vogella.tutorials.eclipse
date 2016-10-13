@@ -51,8 +51,7 @@ and press the Enter key. This should open a console window.
 		
 Switch to the directory which contains the
 _JAR_
-file
-, by
+file, by
 typing
 `cd path`. For example, if
 your

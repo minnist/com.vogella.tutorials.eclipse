@@ -69,7 +69,7 @@ A handler instance does not have its own Eclipse context ( `IEclipseContext`).
 It is executed with the Eclipse context of the active model element which has a Eclipse context.
 In most common cases this is the context of the active part.
 
-All required parameters should be injected into the method annotated with `@Execute` , as you want the handler class to retrieve its runtime information during execution.
+All required parameters should be injected into the method annotated with `@Execute`, as you want the handler class to retrieve its runtime information during execution.
 
 
 [WARNING]

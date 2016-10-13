@@ -51,8 +51,7 @@ To create the
 `de.vogella.eclipse.ide.first`
 package, select the
 `src`
-folder
-, right-click on it and select menu:New[Package].
+folder, right-click on it and select menu:New[Package].
 
 image::firstgany30.gif[Right mouse click to create a package]
 
@@ -115,11 +114,8 @@ menu:Run-as[Java application].
 
 image::firstgany70.gif[Run project]
 
-Eclipse will run your Java program. You should see the output in
-the
-_Console_
-view
-.
+Eclipse will run your Java program. 
+You should see the output in the _Console_ view.
 
 image::firstgany80.gif[Result of the running application]
 

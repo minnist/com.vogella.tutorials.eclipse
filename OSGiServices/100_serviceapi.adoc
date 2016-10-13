@@ -48,8 +48,7 @@ include::res/context/activator.java[]
 ----
 
 If you do not have an
-`Activator`
-,
+`Activator`,
 you can use the
 `FrameworkUtil`
 class from the OSGi framework which allows you to retrieve the

@@ -31,8 +31,7 @@ on the following dialog to create a working set.
 image::workingset20.png[Creating new working sets]
 
 On the next dialog select
-_Resource_
-, press the
+_Resource_, press the
 btn:[Next] button and select the
 projects
 you

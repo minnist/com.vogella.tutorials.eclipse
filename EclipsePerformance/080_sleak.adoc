@@ -35,8 +35,7 @@ If you start your Eclipse IDE, you find the
 _Sleak_
 view
 under
-menu:Window[Show View > Other ... > SWT Tools > Sleak]
-.
+menu:Window[Show View > Other ... > SWT Tools > Sleak].
 	
 _Sleak_
 allows you to take a snapshot and create a diff. Clicking on

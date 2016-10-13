@@ -1,6 +1,8 @@
 == Working with one or multiple projects in a Git repository
 (((Eclipse Git,multi project repositories)))
+
 === Workspace and projects
+
 Eclipse allows working with projects that are not included in the root folder of the workspace.
 
 Using this functionality your projects can be stored in the working tree of a Git repository.

@@ -5,8 +5,7 @@
 You can place markers in the code which you can later access via the _Task_ view.
 
 You can use
-`// TODO`
-,
+`// TODO`,
 `// FIXME`
 or
 `// XXX`

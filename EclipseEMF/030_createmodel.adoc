@@ -40,10 +40,8 @@ _Class_
 and click into the editor to create a new
 class.
 Create the
-`MyWeb`
-,
-`Webpage`
-,
+`MyWeb`,
+`Webpage`,
 `Category`
 and
 `Article`
@@ -64,8 +62,7 @@ type.
 image::firstemfproject60.png[]
 		
 Add the
-_title_
-,
+_title_,
 _description_
 and
 _keywords_

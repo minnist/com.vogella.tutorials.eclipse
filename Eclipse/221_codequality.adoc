@@ -8,8 +8,7 @@ programming problems, e.g., you can define that an assignment
 of a
 variable which
 has no effect, e.g.,
-`x=x`
-, causes an error in
+`x=x`, causes an error in
 Eclipse.
 
 === Configuring the code settings

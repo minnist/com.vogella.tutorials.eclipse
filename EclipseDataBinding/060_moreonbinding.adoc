@@ -133,8 +133,7 @@ are touched.
 A really popular example of a
 `ComputedValue`
 implementation is the
-`AggregateValidationStatus`
-, which keeps track of all validation statuses, which have been
+`AggregateValidationStatus`, which keeps track of all validation statuses, which have been
 passed to it and aggregates them to one MultiStatus or just returns
 the one with maximum severity.
 		

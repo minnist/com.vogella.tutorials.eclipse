@@ -51,8 +51,7 @@ To create the
 `de.vogella.eclipse.ide.first`
 package, select the
 `src`
-folder
-, right-click on it and select menu:New[Package].
+folder, right-click on it and select menu:New[Package].
 
 image::firstgany30.gif[Right mouse click to create a package]
 

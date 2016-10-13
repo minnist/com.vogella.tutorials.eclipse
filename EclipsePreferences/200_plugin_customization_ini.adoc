@@ -17,8 +17,7 @@ file. This is demonstrated in the following screenshot.
 image::plugin_customization10.png[Referring to the plugin_customization.ini file in the product extension]
 
 The format to use is
-`<plugin id>/<setting>=<value>`
-,
+`<plugin id>/<setting>=<value>`,
 e.g.
 _com.example.e4.rcp.todo/user=vogella_.
 

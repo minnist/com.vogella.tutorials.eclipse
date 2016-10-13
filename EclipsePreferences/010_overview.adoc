@@ -116,8 +116,7 @@ parameter setting.
 You can create and manipulate preferences directly via
 Singletons
 provided by the Eclipse runtime. You have the
-`InstanceScope`
-,
+`InstanceScope`,
 `ConfigurationScope`
 and
 `DefaultScope`

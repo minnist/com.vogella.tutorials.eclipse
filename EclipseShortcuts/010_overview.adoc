@@ -9,10 +9,8 @@ command.
 For example you
 can
 open a
-_Preference_
-, a
-_Wizard_
-, a
+_Preference_, a
+_Wizard_, a
 view
 and a
 _Preference_

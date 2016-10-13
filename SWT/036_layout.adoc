@@ -7,8 +7,7 @@ responsible for arranging the user interface
 components
 of a
 container, e.g., a
-`Composite`
-,
+`Composite`,
 on
 the
 screen.
@@ -135,8 +134,7 @@ via the field
 `pack`. It is also possible to set margins at the top, bottom, left and
 right. If you
 set
-`justify`
-, the widgets will be spread through
+`justify`, the widgets will be spread through
 the
 available space.
 
@@ -178,12 +176,9 @@ within a
 cell
 (one
 of:
-`SWT.LEFT`
-,
-`SWT.CENTER`
-,
-`SWT.RIGHT`
-, or
+`SWT.LEFT`,
+`SWT.CENTER`,
+`SWT.RIGHT`, or
 `SWT.FILL`
 ).
 
@@ -193,12 +188,9 @@ positioned vertically within a
 cell
 (one
 of:
-`SWT.TOP`
-,
-`SWT.CENTER`
-,
-`SWT.END`
-,
+`SWT.TOP`,
+`SWT.CENTER`,
+`SWT.END`,
 `SWT.BOTTOM`
 (treated the same as SWT.END), or
 `SWT.FILL`
@@ -270,12 +262,11 @@ include::res/gridlayout/GirdDataFactory.java[]
 Unfortunately the
 _SWT Designer_
 does currently not support
-`GridDataFactory`
-, hence the following examples avoid using them.
+`GridDataFactory`, hence the following examples avoid using them.
 
 === Triggering a re-layout of a Composite
 
-As of Eclipse 4.7 you should use the `requestLayout()` method call on the `Composite` class , as this triggers an asynchronous layout call.
+As of Eclipse 4.7 you should use the `requestLayout()` method call on the `Composite` class, as this triggers an asynchronous layout call.
 
 The `Composite` widget defines also the `layout` method which triggers a synchronous layout and should be avoided.. 
 This method accepts also child widgets and flags. 

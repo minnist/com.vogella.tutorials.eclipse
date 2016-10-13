@@ -72,8 +72,7 @@ your project followed by a group descriptor and a name which
 gives an
 idea about the purpose of the element. For
 example,
-_com.example.e4.rcp.todo.part.todooverview_
-, where
+_com.example.e4.rcp.todo.part.todooverview_, where
 _com.example.e4.rcp.todo_
 is the top level
 package,

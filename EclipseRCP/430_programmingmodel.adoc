@@ -87,7 +87,7 @@ As of Eclipse 4.6 the framework uses the Java version of `@PostConstruct` and th
 Before Eclipse 4.6, both Java 7 and the Eclipse platform exposed the `@PostConstruct` annotation.
 In your Eclipse application you need to tell the framework that the annotation from the Eclipse platform should be used.
 `org.eclipse.core.runtime` exports `javax.annotation` in the correct version.
-If, for some reasons, you want to avoid a dependency to `org.eclipse.core.runtime` , you could define a package dependency to the `javax.annotation` package and set the version to 1.0.0.
+If, for some reasons, you want to avoid a dependency to `org.eclipse.core.runtime`, you could define a package dependency to the `javax.annotation` package and set the version to 1.0.0.
 See  http://wiki.eclipse.org/Eclipse4/RCP/FAQ[Eclipse 4 RCP FAQ] for details on this issue.
 ====
 

@@ -74,8 +74,7 @@ include::res/jobs/monitorLoopRemainingWork.java[]
 For the loop in the
 `workOnTask`
 a new child
-`SubMonitor`
-, which is supposed to do 80 % of the work, is created. Later on the
+`SubMonitor`, which is supposed to do 80 % of the work, is created. Later on the
 actual remaining work for this
 `SubMonitor`
 is set by the

@@ -3,10 +3,8 @@
 === Data model
 
 A
-_data model_
-, sometimes also called
-_domain model_
-,
+_data model_, sometimes also called
+_domain model_,
 represents
 the data
 you want to
@@ -18,10 +16,8 @@ model your
 domain model
 with objects
 like
-`Person`
-,
-`Flight`
-,
+`Person`,
+`Flight`,
 `Booking`
 etc. The EMF tooling allows you to create UML diagrams.
 
@@ -38,10 +34,8 @@ and a lot of properties, e.g., a
 `Person`
 class
 could have the
-`firstName`
-,
-`lastName`
-,
+`firstName`,
+`lastName`,
 `Address`
 properties, etc.
 

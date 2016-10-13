@@ -157,8 +157,7 @@ interface. This interface protects the plug-in which defines
 the
 extension point from malfunction extensions. If an
 extension throws an
-`Exception`
-, it will be caught by
+`Exception`, it will be caught by
 `ISafeRunnable`
 and
 the remaining extensions will still get executed.

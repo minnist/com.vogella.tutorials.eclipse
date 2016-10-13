@@ -57,8 +57,7 @@ files
 from one area to the other.
 		
 Git Staging view should list three files
-_.project_
-,
+_.project_,
 _Calculator.java_
 and
 _Power.java_

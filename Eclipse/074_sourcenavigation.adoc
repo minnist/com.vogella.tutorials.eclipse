@@ -253,8 +253,7 @@ into the class
 declaration.
 
 Similar to the left mouse click combined with the
-kbd:[Ctrl]
-,
+kbd:[Ctrl],
 you can use the
 kbd:[F3]
 key to go into a class.

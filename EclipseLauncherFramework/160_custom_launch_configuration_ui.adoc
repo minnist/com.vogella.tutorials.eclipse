@@ -24,13 +24,11 @@ include::res/custom_launch/launchConfigurationTabGroup.xml[]
 ----
 
 Here we reference to the
-`com.example.launchConfigurationType`
-, which we
+`com.example.launchConfigurationType`, which we
 previously created.
 
 Before we implement the tab group, we define a custom
-`AbstractLaunchConfigurationTab`
-, which will be placed on the tab
+`AbstractLaunchConfigurationTab`, which will be placed on the tab
 group.
 
 [source,java]
@@ -44,12 +42,10 @@ attribute to the
 `ILaunchConfiguration`.
 
 In the
-`com.example.SampleTabGroup`
-, we can use existing
+`com.example.SampleTabGroup`, we can use existing
 `AbstractLaunchConfigurationTab`
 implementations, like the
-`CommonTab`
-, or the
+`CommonTab`, or the
 `SampleTab`
 from above.
 

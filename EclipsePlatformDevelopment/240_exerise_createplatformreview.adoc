@@ -8,8 +8,7 @@ projects
 frequently tag bugs with the keyword
 _bugday_
 or
-_helpwanted_
-, these are candidates for initial contributions.
+_helpwanted_, these are candidates for initial contributions.
 
 
 

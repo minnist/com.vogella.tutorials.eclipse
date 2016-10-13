@@ -19,8 +19,7 @@ http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plugin Tutor
 Eclipse EMF allow you to create a editor for your model. Select
 your
 _.genmodel_
-file
-, right-click on it and select
+file, right-click on it and select
 _Generate Edit
 Code
 _

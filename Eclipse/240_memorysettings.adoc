@@ -81,8 +81,7 @@ using
 the
 _c:\temp_
 directory as
-_workspace_
-,
+_workspace_,
 you can start Eclipse via the following command
 from the
 command line.

@@ -133,10 +133,8 @@ priority via the
 method. The
 `Job`
 class contains predefined priorities, e.g.
-`Job.SHORT`
-,
-`Job.LONG`
-,
+`Job.SHORT`,
+`Job.LONG`,
 `Job.BUILD`
 and
 `Job.DECORATE`.

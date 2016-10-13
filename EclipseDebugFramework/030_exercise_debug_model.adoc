@@ -94,15 +94,13 @@ The
 is supposed to be applied to the
 `org.eclipse.debug.core.ILaunch`
 object, which is passed to an
-`org.eclipse.debug.core.model.LaunchConfigurationDelegate`
-, by using its
+`org.eclipse.debug.core.model.LaunchConfigurationDelegate`, by using its
 `addDebugTarget(IDebugTarget target)`
 method.
 .
 
 It can contain several
-`IThreads`
-, which run during a debug session.
+`IThreads`, which run during a debug session.
 
 [source,java]
 ----

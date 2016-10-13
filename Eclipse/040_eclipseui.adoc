@@ -3,8 +3,7 @@
 === How is the Eclipse IDE structured?
 
 Eclipse provides
-_Perspectives_
-,
+_Perspectives_,
 _Views_
 and
 _Editors_.
@@ -110,11 +109,9 @@ for the selected set of data.
 An example for a
 view in the Eclipse IDE
 is the
-_Project Explorer_
-, which allows you to browse the files of Eclipse projects. If you
+_Project Explorer_, which allows you to browse the files of Eclipse projects. If you
 change data in the
-_Project Explorer_
-, e.g.,
+_Project Explorer_, e.g.,
 if you rename a file, the
 file
 name

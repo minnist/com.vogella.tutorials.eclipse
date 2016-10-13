@@ -57,8 +57,7 @@ in the corresponding dialog.
 image::debugstart08.png[]
 
 Afterwards Eclipse opens this
-_perspective_
-, which
+_perspective_, which
 looks
 similar to the following screenshot.
 
@@ -118,8 +117,7 @@ The
 _Breakpoints_
 view
 allows you to delete and deactivate
-_stop points_
-, i.e.
+_stop points_, i.e.
 _breakpoints_
 and
 _watchpoints_

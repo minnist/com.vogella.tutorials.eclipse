@@ -17,8 +17,7 @@ This is the case
 for
 all model objects. The following code demonstrates how to get access
 to the active
-`IEclipseContext`
-, in which the handler is called.
+`IEclipseContext`, in which the handler is called.
 
 [source,java]
 ----
@@ -26,8 +25,7 @@ include::res/snippets/accessContext1.txt[]
 ----
 
 If a model object implements
-`MContext`
-,
+`MContext`,
 you can use dependency injection to get the model object injected
 and
 call the

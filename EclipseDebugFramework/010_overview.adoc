@@ -63,8 +63,7 @@ implements the
 interface with method like
 `suspend()`
 and
-`resume()`
-, which are called synchronously, but are immediately returned. So
+`resume()`, which are called synchronously, but are immediately returned. So
 the actual result comes back asynchronously by sending an
 `org.eclipse.debug.core.DebugEvent`.
 
@@ -75,8 +74,7 @@ different threads so that the UI won't be blocked. But for
 convenience the
 `org.eclipse.debug.core.DebugEvent`
 objects should be used by deriving the debug model elements from
-`org.eclipse.debug.core.model.DebugElement`
-, which offers default implementations for firing
+`org.eclipse.debug.core.model.DebugElement`, which offers default implementations for firing
 `DebugEvents`.
 
 === Attach the IDebugTarget to the launch delegate

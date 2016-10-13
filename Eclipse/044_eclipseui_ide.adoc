@@ -19,10 +19,8 @@ _perspectives_
 depend on your installation.
 For Java development you
 usually use the
-_Java Perspective_
-, but Eclipse has much more predefined
-_perspectives_
-, e.g., the
+_Java Perspective_, but Eclipse has much more predefined
+_perspectives_, e.g., the
 _Debug_
 _perspective_.
 		
@@ -81,8 +79,7 @@ double-click.
 		
 For example, to open
 a Java source file, open the tree under
-`src`
-,
+`src`,
 select the corresponding
 _.java_
 file and double-click it. This will open the file in the

@@ -29,7 +29,7 @@ Press the btn:[New...] button on the _Overview_ tab of the product editor.
 
 image::training_product28.png[Press the new button in the product editor]
 
-Enter _to-do_ as the _Product Name_, your plug-in as the _Defining Plug-in_ , _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
+Enter _to-do_ as the _Product Name_, your plug-in as the _Defining Plug-in_, _product_ as the _Product ID_ and select `org.eclipse.e4.ui.workbench.swt.E4Application` in the _Application_ combo box.
 
 image::training_product30.png[Entering the product details]
 

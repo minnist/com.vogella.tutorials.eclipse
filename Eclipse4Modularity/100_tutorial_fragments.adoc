@@ -129,8 +129,7 @@ also need to
 define
 to which feature
 you will be adding to. For
-_Featurename_
-, specify the value
+_Featurename_, specify the value
 _commands_.
 Make sure you have the
 _Model Fragment_

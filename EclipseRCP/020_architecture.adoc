@@ -27,7 +27,7 @@ It is responsible for displaying all other user interface components.
 
 _EMF_ is the Eclipse Modeling Framework which provides functionality to model a data model and to use this data model at runtime.
 
-[e4overview_api]
+[[e4overview_api]]
 == Eclipse API and internal API
 
 (((Provisional API, Internal API)))

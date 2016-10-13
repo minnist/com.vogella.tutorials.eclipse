@@ -108,31 +108,19 @@ include::res/events/LazyLoadingAddon.java[]
 
 The event system allows sending and receiving objects of an arbitrary
 type.
-In Eclipse applications it is good
-practice to send out events
-with a
-`java.util.Map`
-type because a similar type is also used by the Eclipse framework for
-sending out events. A
-`Map`
-class can be configured with properties to contain more data about
-the event.
+Often it is sufficient to send the desired object through an event.
+But it is good practice to specify a custom wrapper for sending events, which may contain additional meta data or just to have a common interface for events.
 
 === Subscribing to sub-topics
 
-You can subscribe to specific topics or use wildcards to
-subscribe to
-all sub-events. Sub-events are separated by
-`/`. The following example code defines several topics and also the
-`TOPIC_TODO_ALLTOPICS`
-constant which can be used to register for all sub-events.
+You can subscribe to specific topics or use wildcards to subscribe to all sub-events.
+Sub-events are separated by `/`.
+The following example code defines several topics and also the `TOPIC_TODO_ALLTOPICS` constant which can be used to register for all sub-events.
 
-[source,java]
+[source, java]
 ----
 include::res/events/MyEventConstants.java[]
 ----
-
-
 
 
 

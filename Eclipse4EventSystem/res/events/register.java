@@ -7,7 +7,7 @@ import java.util.Map;
 @Optional
 private void subscribeTopicTodoUpdated
 	(@UIEventTopic(MyEventConstants.TOPIC_TODO_UPDATE) 
-		Map data) {
+		Todo todo) {
 	if (viewer!=null) {
 	    // this example assumes that you do not use data binding
 		todoService.getTodos(viewer::setInput);

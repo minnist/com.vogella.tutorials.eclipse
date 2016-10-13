@@ -11,26 +11,13 @@ use any Eclipse project of your choice.
 
 === Run Bugzilla query
 
-Open to
-https://bugs.eclipse.org/bugs/ - Eclipse Bugzilla
-and select the
-btn:[Search] button. Select the
-_Advanced Search_
-tab and search for
-menu:Eclipse[Platform > UI]
-for all bugs in status
-_NEW_
-,
-_ASSIGNED_
-,
-_UNCONFIRMED_
-and
-_REOPENED_.
+Open to https://bugs.eclipse.org/bugs/[Eclipse Bugzilla] and select the btn:[Search] button. 
+Select the _Advanced Search_ tab and search for menu:Eclipse[Platform > UI] for all bugs in status _NEW_, _ASSIGNED_, _UNCONFIRMED_ and _REOPENED_.
 
 image::bugtriage10.png[]
 
 image::bugtriage20.png[Search for bugs]
 
-In most cases Eclipse project have tons of unsolved bugs. If you are looking for existing software bugs, it is
-recommended to look at the latest bugs, e.g., the bugs which have been recently updated.
+In most cases Eclipse project have tons of unsolved bugs. 
+If you are looking for existing software bugs, it is recommended to look at the latest bugs, e.g., the bugs which have been recently updated.
 

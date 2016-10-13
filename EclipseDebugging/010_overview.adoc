@@ -15,9 +15,8 @@ in the source code you specify where the execution of the
 program
 should stop. To stop the execution only if a field is read or
 modified, you can specify
-_watchpoints_
+_watchpoints_.
 (((Watchpoint)))
-.
 		
 _Breakpoints_
 and

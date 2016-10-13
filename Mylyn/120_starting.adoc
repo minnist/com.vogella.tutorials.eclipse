@@ -8,10 +8,7 @@ view
 is part of the standard Java
 _perspective_.
 		
-In case you closed the
-view
-, you can re-open it via
-menu:Window[Show View > Mylyn > Task List].
+In case you closed the view, you can re-open it via menu:Window[Show View > Mylyn > Task List].
 		
 image::mylyn10.png[Task List View]
 
@@ -35,27 +32,13 @@ image::mylyn30.png[Selecting local repository]
 
 === Activate a task
 (((Mylyn,activate tasks)))
-To start working on a task, select the
-btn:[Activate task] button. If the task has already captured a
-_context_
-, Mylyn
-filters the visible elements in the
-_Package Explorer_
-view.
+To start working on a task, select the btn:[Activate task] button. 
+If the task has already captured a _context_, Mylyn filters the visible elements in the _Package Explorer_ view.
 		
 image::mylyn40.png[Activate Tasks in the Package Explorer]
 		
-You can remove the filter in the
-_Package Explorer_
-view
-by
-clicking the
-btn:[Focus on Active Task] button
-in the toolbar of this
-view
-. Afterwards
-all files
-are displayed.
+You can remove the filter in the _Package Explorer_ view by clicking the btn:[Focus on Active Task] button in the toolbar of this view. 
+Afterwards all files are displayed.
 		
 If you open a file while having an activated task, this file
 is
@@ -75,13 +58,7 @@ it. The context of the task will be restored.
 
 === Create task from Problems view
 (((Mylyn,create task from Problems views)))
-You can create a new Mylyn task from the
-_Problems_
-view
-, by
-right-clicking on a problem and selecting
-_New Task from Marker..._
-from the context menu.
+You can create a new Mylyn task from the _Problems_ view, by right-clicking on a problem and selecting _New Task from Marker..._ from the context menu.
 		
 image::problemsview_marker10.png[Problems View]
 
@@ -91,8 +68,7 @@ Mylyn allows you to export and import your local tasks. Select
 your
 categories or tasks in the
 _Task List_
-view
-, right-click on them and select
+view, right-click on them and select
 _Export and Import_
 from the context menu.
 		

@@ -22,15 +22,8 @@ you typically receive more support from them.
 
 === Using the Eclipse bugzilla system
 
-This
-bug tracker can be
-found under
-https://bugs.eclipse.org/bugs/ - Eclipse Bugzilla
-.
-Here you
-can
-search for
-existing bugs and review them.
+This bug tracker can be found under https://bugs.eclipse.org/bugs/[Eclipse Bugzilla].
+Here you can search for existing bugs and review them.
 
 To participate actively in the Eclipse bug tracker, you need to
 create

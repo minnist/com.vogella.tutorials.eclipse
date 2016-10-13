@@ -33,16 +33,8 @@ had been added to the project.
 
 image::externaljars10.gif[Adding a jar to the current project]
 
-After adding it to the classpath, Eclipse allows you to use the
-classes
-contained
-in the
-JAR
-file in the project . Outside Eclipse you
-still need to configure your
-classpath, e.g., via the
-_MANIFEST.MF_
-file.
+After adding it to the classpath, Eclipse allows you to use the classes contained in the JAR file in the project. 
+Outside Eclipse you still need to configure your classpath, e.g., via the _MANIFEST.MF_ file.
 
 === Attach source code to a Java library
 

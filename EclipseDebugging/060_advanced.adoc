@@ -176,14 +176,7 @@ variables which have been modified by code that already run will
 remain
 modified.
 
-To use this feature, select a level in your stack and press the
-_Drop
-to Frame
-_
-button in the toolbar of the
-_Debug_
-view
-.
+To use this feature, select a level in your stack and press the _Drop to Frame_ button in the toolbar of the _Debug_ view.
 
 NOTE: Fields and external data may not be affected by the reset.
 For

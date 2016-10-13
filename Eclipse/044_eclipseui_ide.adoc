@@ -63,8 +63,8 @@ _Java_
 perspective
 and the
 _Debug_
-perspective
-.
+perspective.
+
 The Java perspective can be opened via
 menu:Window+Perspective[Open Perspective > Java].
 		

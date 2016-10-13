@@ -115,11 +115,8 @@ menu:Run-as[Java application].
 
 image::firstgany70.gif[Run project]
 
-Eclipse will run your Java program. You should see the output in
-the
-_Console_
-view
-.
+Eclipse will run your Java program. 
+You should see the output in the _Console_ view.
 
 image::firstgany80.gif[Result of the running application]
 

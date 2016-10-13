@@ -91,8 +91,7 @@ image::enabletracing10.png[Enable Tracing at runtime.]
 === Implement tracing for your plug-in
 		
 Can you also implement tracing for your custom plug-in, see
-https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-eclipse-tracing-api[Using Eclipse Tracing API]
-. To add your tracing options to the preference preference page, to allow users to turn them on at run time, use
+https://www.winklerweb.net/index.php/blog/12-eclipse/10-finding-the-almost-new-eclipse-tracing-api[Using Eclipse Tracing API]. To add your tracing options to the preference preference page, to allow users to turn them on at run time, use
 extension point
 the
 `org.eclipse.ui.trace.traceComponents`. See

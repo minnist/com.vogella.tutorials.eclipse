@@ -181,8 +181,7 @@ you can show
 the
 actual type of each variable
 declaration. For this select
-menu:Layout[Select Columns... > Type]
-.
+menu:Layout[Select Columns... > Type].
 
 image::variables30.gif[Showing the actual type of the variables]
 

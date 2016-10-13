@@ -2,8 +2,7 @@
 	
 Install _EMF_ via the
 _Eclipse Update manager_ from
-menu:Help[Install New Software...]
-. Select
+menu:Help[Install New Software...]. Select
 _Modeling_
 and install
 _EMF - Eclipse Modeling Framework SDK_

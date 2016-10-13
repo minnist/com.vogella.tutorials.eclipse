@@ -2,40 +2,19 @@
 
 === Adding a Java library to the project classpath
 
-If the libraries should be distributed with your project, you can
-store the
-JAR
-files directly in your project.
+If the libraries should be distributed with your project, you can store the JAR files directly in your project.
 
-For example, you can
-create a new Java project
-`de.vogella.eclipse.ide.jars`. Then create
-a new folder called
-`lib`
-by right-clicking on
-your project and selecting
-menu:New[Folder]
-.
+For example, you can create a new Java project `de.vogella.eclipse.ide.jars`. 
+Then create a new folder called `lib` by right-clicking on your project and selecting menu:New[Folder].
 
 image::jar10.png[Creating a new folder]
 
-From the menu select
-menu:File[Import > General > File System]
-.
-Select the Java library you want to import
-and select the
-_lib_
-folder
-as target. Alternatively, just copy and paste the
-`jar`
-file into the
-_lib_
-folder.
+From the menu select menu:File[Import > General > File System].
 
-You can add this library to your classpath, right-click on the JAR
-file and select
-menu:Build Path[Add to Build Path]
-.
+Select the Java library you want to import and select the _lib_ folder as target. 
+Alternatively, just copy and paste the `jar` file into the _lib_ folder.
+
+You can add this library to your classpath, right-click on the JAR file and select menu:Build Path[Add to Build Path].
 
 To manage your classpath, right-click on your project and select
 _Properties_.
@@ -72,12 +51,11 @@ cursor on
 the class in
 an
 editor and pressing
-kbd:[F3]
-. Alternatively, you
+kbd:[F3]. 
+Alternatively, you
 can
 press
-kbd:[Ctrl+Shift+T]
-. This will show a dialog in which you can enter
+kbd:[Ctrl+Shift+T]. This will show a dialog in which you can enter
 the
 class name to open
 it.
@@ -112,8 +90,7 @@ The _Source Attachment_ dialog can be reached in the
 _Java Build Path_
 page of a project. To open this page, right-click on a project and
 select
-menu:Properties[Java Build Path]
-. On the
+menu:Properties[Java Build Path]. On the
 _Libraries_
 tab, expand the library's node, select the
 _Source Attachment_
@@ -148,8 +125,7 @@ To enter the location of the Javadoc, open the
 _Java Build Path_
 via a
 right-click on a project and select
-menu:Properties[Java Build Path]
-. On the
+menu:Properties[Java Build Path]. On the
 _Libraries_
 tab expand the
 library's node, select the

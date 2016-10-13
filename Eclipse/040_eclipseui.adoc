@@ -53,10 +53,7 @@ You can
 choose the workspace during startup of
 Eclipse or
 via the menu
-(
-menu:File[Switch Workspace > Others]
-)
-.
+(menu:File[Switch Workspace > Others]).
 
 === Eclipse projects
 

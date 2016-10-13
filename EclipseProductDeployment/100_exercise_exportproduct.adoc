@@ -53,8 +53,7 @@ Add a splash screen to your application. For this create or download
 a
 _splash.bmp_
 bitmap file. You find an example under the following URL:
-http://download.vogella.com/resources/splash.bmp[Example splash screen]
-.
+http://download.vogella.com/resources/splash.bmp[Example splash screen].
 		
 Add the
 _splash.bmp_

@@ -98,8 +98,7 @@ the
 extension point. For this select the
 _extension_
 entry, right-click on it and select
-menu:New[Choice]
-.
+menu:New[Choice].
 This defines how often the extension "client" can
 be provided by
 contributing plug-ins. We will set no restrictions
@@ -228,8 +227,7 @@ image::extensionpoint110.png[]
 Switch to the
 _Extensions_
 tab and select
-btn:[Add...]
-. Select your custom
+btn:[Add...]. Select your custom
 extension point
 and press the
 btn:[Finish] button.

@@ -43,8 +43,7 @@ btn:[Run automatically]
 === Open the Git Staging view and inspect the status
 		
 Open the staging view by selecting
-menu:Window[Show View > Other… > Git Staging]
-.
+menu:Window[Show View > Other… > Git Staging].
 This view presents which files you have touched and which files will be
 in the
 next commit.

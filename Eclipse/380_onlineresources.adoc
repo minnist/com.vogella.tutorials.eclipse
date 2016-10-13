@@ -7,8 +7,7 @@ installation as well as online.
 		
 With your running Eclipse IDE you can access
 the online help via
-menu:Help[Help Contents]
-. This will start a new window which shows you the help topics for
+menu:Help[Help Contents]. This will start a new window which shows you the help topics for
 your currently installed components.
 		
 image::onlinehelp10.png[Starting the Eclipse help,pdfwidth=40%]

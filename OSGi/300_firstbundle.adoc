@@ -39,8 +39,7 @@ _MANIFEST.MF_
 file, right-click it and select
 menu:Run As[Run
 Configuration
-]
-. Create an OSGi Framework launch configuration. deselect
+]. Create an OSGi Framework launch configuration. deselect
 all bundles
 except your de.vogella.osgi.firstbundle. Afterwards press the
 _Add

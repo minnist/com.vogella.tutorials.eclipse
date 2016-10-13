@@ -34,19 +34,10 @@ image::linkwitheditor10.png[Editor]
 
 === Automatic placement of semicolon
  
-Eclipse can make typing more efficient by placing semicolons
-at
-the correct position in your source code.
+Eclipse can make typing more efficient by placing semicolons at the correct position in your source code.
 
-In the Preference setting select
-menu:Java[Editor > Typing]
-. In the
-_Automatically insert at correct position_
-selection
-enable
-the
-_Semicolons_
-checkbox.
+In the Preference setting select menu:Java[Editor > Typing]. 
+In the _Automatically insert at correct position_ selection enable the _Semicolons_ checkbox.
 
 image::wayofworking10.png[Type Assists which allow setting the semicolon to the right position,pdfwidth=50%,width=50%]
 

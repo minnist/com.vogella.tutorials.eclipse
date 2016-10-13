@@ -114,8 +114,7 @@ based).
 You can use the ThemeManager to style the Eclipse 4 IDE itself.
 In the
 Eclipse the theme can be selected via
-menu:Window[Preferences > General > Appearance]
-.
+menu:Window[Preferences > General > Appearance].
 
 You can also contribute a new theme
 via a separate plug-in. Create

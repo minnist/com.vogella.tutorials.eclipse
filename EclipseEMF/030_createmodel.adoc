@@ -27,8 +27,7 @@ Open the
 _Properties_
 view
 via the menu
-menu:Window[Show View > Other... > Properties]
-. This
+menu:Window[Show View > Other... > Properties]. This
 view
 allows
 you

@@ -65,8 +65,7 @@ image::vaadinrenderer20.png[Vaadin renderer for Eclipse 4]
 (((Renderer,JavaFX)))
 The e(fx)clipse provides a JavaFX renderer for Eclipse 4 RCP
 application. For more information see the
-http://www.efxclipse.org/[e(fx)clipse homepage]
-. The following screenshot shows an example Eclipse RCP application
+http://www.efxclipse.org/[e(fx)clipse homepage]. The following screenshot shows an example Eclipse RCP application
 using JavaFX as a renderer.
 
 image::lose_klein.png[JavaFX renderer example]

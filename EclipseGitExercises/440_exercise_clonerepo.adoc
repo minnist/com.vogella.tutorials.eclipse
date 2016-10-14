@@ -5,7 +5,7 @@
 
 Open the _Git Repositories_	view via the menu:Window[Show View>Other>Git>Git Repositories] menu entry.
 
-image::img/git-repositories-view.png[Git repositories view]
+image::git-repositories-view.png[Git repositories view]
 
 		
 Click the btn:[Clone a Git repository] button in this view (see Tooltips for the correct button).
@@ -14,7 +14,7 @@ This opens the dialog to clone a Git repository. Enter the following URI in the 
 		
 https://github.com/vogellacompany/gittraining-sample.git
 
-image::img/clone-git-repository.png[Screenshot of cloning the repository, 400, 400]
+image::clone-git-repository.png[Screenshot of cloning the repository, 400, 400]
 		
 Click the btn:[Next] button.
 

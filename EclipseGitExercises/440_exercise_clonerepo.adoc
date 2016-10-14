@@ -5,7 +5,7 @@
 
 Open the _Git Repositories_	view via the menu:Window[Show View>Other>Git>Git Repositories] menu entry.
 
-image::img/git-repositories-view.png[Git repositories view, 400, 400]
+image::img/git-repositories-view.png[Git repositories view]
 
 		
 Click the btn:[Clone a Git repository] button in this view (see Tooltips for the correct button).
@@ -22,7 +22,7 @@ On the next page you see the branches in this repository.
 Ensure all branches are selected.
 The branches you see may differ from the following screenshot. 
 		
-image::branch-selection.png[Branch selection, 400, 400]		
+image::branch-selection.png[Branch selection]		
 
 Click the btn:[Next] button.
 
@@ -30,7 +30,7 @@ In the _Directory_ field, choose a path where to store the local repository.
 		
 Make sure the _Import all existing projects after clone finishes_ checkbox is selected and click the btn:[Finish] button.
 		
-image::finish-clone.png[Finish Git clone, 400, 400]    
+image::finish-clone.png[Finish Git clone]    
 
 
 == Get familiar with the example projects
@@ -44,7 +44,7 @@ Both projects contain launch configurations.
 Use them to start the calculator or run the unit tests.
 For Mac there is a specific launch configuration with _Mac_ in the name.
 
-image::launch-sample-application.png[Launch Sample Application, 350, 350]    		
+image::launch-sample-application.png[Launch Sample Application]    		
 		
 image::sample-application.png[Sample application for Git exercise]          
         
@@ -55,7 +55,7 @@ image::sample-application.png[Sample application for Git exercise]
 To get an overview of the history of your Git repository, right-click on one of the example projects and select the menu:Show in[Git Repositories] entry from the context menu.
 This opens the _Git repository_ view.
         
-image::git-repositories-view-2.png[Git Repositories View,400, 400]    
+image::git-repositories-view-2.png[Git Repositories View]    
 
         
 Under menu:Remotes[origin] you see the fetch and the push configuration. 
@@ -63,5 +63,5 @@ To see more details, right-click on the repository entryand select menu:Show In[
         
 To see the complete repository configuration, select the menu:Properties menu entry from the repository context menu.
 
-image::repository-properties.png[Repository Properties, 400, 400] 
+image::repository-properties.png[Repository Properties] 
         

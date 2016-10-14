@@ -14,6 +14,7 @@ Add the following plug-ins as dependencies to your new plug-in.
 
 * `org.eclipse.e4.core.di`
 * `com.example.e4.rcp.todo.model`
+* `org.eclipse.osgi.services`
 
 Also configure that the `javax.inject` package should be used.
 

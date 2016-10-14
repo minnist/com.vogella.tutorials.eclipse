@@ -34,7 +34,7 @@ So the Eclipse Platform can also simply pass around `IAdaptable` objects to obta
 In some cases the `IAdaptable` interface cannot be implemented by a class for instance when using third party plug-ins.
 Or the plug-in where the class comes from does not know about the actual type, which should be adapted due to different plug-in dependencies.
 
-For those situations the Eclipse Platform provides an adapter manager, which can be extended by an `org.eclipse.core.runtime.IAdapterFactory` .
+For those situations the Eclipse Platform provides an adapter manager, which can be extended by an `org.eclipse.core.runtime.IAdapterFactory`.
 Such an `IAdapterFactory` can be registered with the _org.eclipse.core.runtime.adapters_ extension point.
 
 [source, java]

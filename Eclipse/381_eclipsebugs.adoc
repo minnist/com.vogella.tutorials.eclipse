@@ -52,8 +52,7 @@ different user data is used.
 As example you can report bugs for the Eclipse
 platform via the
 following link:
-https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform - 
-Bug report for the Eclipse platform.
+https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Platform[Bug report for the Eclipse platform].
 
 === Eclipse bug priorities
 

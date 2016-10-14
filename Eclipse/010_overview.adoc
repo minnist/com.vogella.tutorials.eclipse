@@ -9,7 +9,6 @@ The initial code base was provided by IBM.
 In November 2001, a consortium was formed to support the development of Eclipse as open source software. 
 This consortium was controlled by IBM.
 		
-		
 In 2004 it became the _Eclipse Foundation_, which is a vendor neutral foundation where no single company has control of the direction.
 		
 The _Eclipse_ name at this time was viewed by many as declaration of war against _Sun Microsystems_, the company responsible for developing the Java programming language. 
@@ -17,7 +16,6 @@ IBM stated that the name was targeting at "Eclipsing" Microsoft. See http://www.
 		
 With the purchase of _Sun Microsystems_ by Oracle this conflict finally went away.
 Oracle is currently among the 5 largest contributor companies of the Eclipse project.
-		
 
 == Eclipse releases
 		
@@ -48,17 +46,14 @@ The Eclipse projects are governed by the _Eclipse Foundation_.
 The Eclipse Foundation is a non-profit, member supported corporation that hosts the Eclipse Open Source projects.
 It helps to cultivate both its open source community and its ecosystem of complementary products and services.
 
-
 The Eclipse Foundation does not work on the Eclipse code base, i.e., it does not have employee developers working on Eclipse.
 The mission of the Eclipse Foundation is *enable* the development by providing the infrastructure (Git, Gerrit, Hudson build server, the download sites, etc.) and a structured process. 
 Eclipse projects follow a very well defined development process. 
 To learn more about this process see the http://www.eclipse.org/projects/dev_process/development_process.php[Eclipse development process description].
 
-
 There is also an Eclipse Foundation Europe based in Germany. 
 
 In 2016 the Eclipse Foundation had approximately 30 employees. See http://www.eclipse.org/org/foundation/staff.php[Eclipse Foundation Staff] for details.
-
 
 == The Eclipse Public License
 
@@ -69,7 +64,6 @@ The consumer of EPL-licensed software can choose to use this software in closed 
 
 Only modifications in the original EPL code must be released as EPL code. 
 This can for example be done by filling a bug report at the public Eclipse bug tracker and by uploading a Gerrit change.
-
 
 The Eclipse Foundation validates that source code contributed to Eclipse projects is free of intellectual property (IP) issues. 
 This process is known as IP cleansing. 

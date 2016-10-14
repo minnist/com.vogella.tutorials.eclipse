@@ -8,17 +8,10 @@ can still change all commits in your local feature branch.
 
 === Preparation
 
-Follow the exercise
-merge-rebase-and-resolving-conflicts.html[
-Merge, Rebase and Resolving Conflicts. 
-After the rebase you end up
-with a branch which is two commits ahead of the remote branch
-_origin/master_, it&#8217;s the local
-_master_
-branch in the screenshot
-below. Now you realize that you want to change the first commit and
-keep the second one on top
-of the changed commit.
+Follow the exercise merge-rebase-and-resolving-conflicts.html[ Merge, Rebase and Resolving Conflicts. 
+After the rebase you end up with a branch which is two commits ahead of the remote branch _origin/master_, it&#8217;s the local _master_ branch in the screenshot below. 
+Now you realize that you want to change the first commit and keep the second one on top of the changed commit.
+
 image::history-view-8.png[History View]
 
 === Change the first commit

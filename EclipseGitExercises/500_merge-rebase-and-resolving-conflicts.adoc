@@ -33,7 +33,7 @@ created.
 In the History View, select _Merge_ from in the context menu of the `addDivideOperation` branch. 
 This merges the content of the`addDivdeOperation` branch into the `master` branch. 
 Since there was no work done on the `master` branch and `addDivideOperation` points to a successor commit of the commit in
-master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
+master Git simply advances the `master`	branch to the same commit as the `addDivideOperation` branch. 
 Inspect this in the History View.
 				
 image::merge.png[Trigger merge via History view]
@@ -47,7 +47,7 @@ In the History View, select _Merge_	in the context menu of the branch which cont
 This merges the	content of this branch into the `master` branch. 
 This time the merge operation should  end with a conflicts.
 
-image::merge-2.png[Trigger Merge conflict,,600,600]		
+image::merge-2.png[Trigger Merge conflict,600,600]		
 
 image::merge-with-conflicts.png[Merge conflict]	
 				

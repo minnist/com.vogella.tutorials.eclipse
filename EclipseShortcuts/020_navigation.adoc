@@ -1,8 +1,5 @@
-== Navigation
+== Navigation and text selection
 === Globally available navigation shortcuts
-
-(((Shortcuts,Navigation)))
-Eclipse provides shortcuts for opening files or Java artifacts.
 
 .Navigation
 [cols="1,2",options="header"]
@@ -23,43 +20,6 @@ a|kbd:[Ctrl + F8]
 
 |===
 
-=== Navigation shortcuts in the editor
-
-If you are working in the Java editor you can also use certain
-shortcuts for faster navigation. The following
-tables lists a few of
-them.
-
-.Search from an editor
-[cols="1,2",options="header"]
-|===
-|Shortcut |Description
-
-a|kbd:[F3]
-|Opens editor to selected element (type) or navigate to the declaration of the selected variable
-
-a|kbd:[Ctrl + .]
-|Go to the next problem / error
-
-a|kbd:[Ctrl+,]
-|Go to the previous problem / error
-
-a|kbd:[F4] on a variable
-|Show type hierarchy 
-
-a|kbd:[Ctrl+J] 
-|Incremental search without popup dialog, just starting typing to search. Press kbd[Ctrl+J] to find the next match
-
-a|kbd:[Ctrl+K]
-|Searches the selected text or if nothing is selected the last search from the _Find_ dialog.
-
-a|kbd:[Ctrl+Shift+G]
-|In the Java editor, s\earch for references in the workspace
-
-a|kbd:[Ctrl+Shift+P]
-|Select the matching bracket. Cursor needs to be placed before or after a bracket.
-
-|===
 
 .Navigation between editors
 [cols="1,2",options="header"]

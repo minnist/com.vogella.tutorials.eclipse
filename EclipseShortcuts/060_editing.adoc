@@ -1,15 +1,25 @@
-== Editing
-The following lists contains useful keyboard shortcuts if you are inside your Java editor.
+== Editing in the Java editor
+
 
 .Table Handling the editor
 [cols="1,2",options="header"]
 |===
 |Shortcut |Description
 
-a|kbd:[Ctrl + 1]
+|kbd:[Shift + Alt + ↑ selects enclosing elements.]
 |Quickfix; result depending on cursor position
 
-a|kbd:[Ctrl + Space]
+|===
+
+.Table Handling the editor
+[cols="1,2",options="header"]
+|===
+|Shortcut |Description
+
+|kbd:[Ctrl + 1]
+|Quickfix; result depending on cursor position
+
+|kbd:[Ctrl + Space]
 |Content assist/ code completion
 
 a|kbd:[Ctrl + T]

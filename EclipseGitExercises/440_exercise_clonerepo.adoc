@@ -32,7 +32,7 @@ Make sure the _Import all existing projects after clone finishes_ checkbox is se
 image::finish-clone.png[Finish Git clone]    
 
 
-== Get familiar with the example projects
+=== Get familiar with the example projects
 
 The example repository contains two projects:
 
@@ -60,7 +60,7 @@ image::git-repositories-view-2.png[Git Repositories View]
 Under menu:Remotes[origin] you see the fetch and the push configuration. 
 To see more details, right-click on the repository entryand select menu:Show In[Properties].
         
-To see the complete repository configuration, select the menu:Properties menu entry from the repository context menu.
+To see the complete repository configuration, select the menu:Properties[] menu entry from the repository context menu.
 
 image::repository-properties.png[Repository Properties] 
         

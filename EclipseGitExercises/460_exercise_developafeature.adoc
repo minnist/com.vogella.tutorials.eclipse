@@ -1,21 +1,9 @@
-== Develop new features or a provide a bug fix
+== Develop something
 
-In this exercise you will learn how to develop a new feature using Git in Eclipse.
-	
 === Create a local feature branch
 		
-The development of a new feature (or bug-fix) should normally only depend on the submitted state of the project.
-It should not depend on other pending changes that might or might not pass the code review. 
-This is why new features or bug-fixes should be developed in isolation on its own branch. 
-This branch is usually created based on the latest state of the master branch available on the remote repository used for integrating the changes of different developers.
-This is the remote tracking branch called `origin/master` in your local clone.
-		
-		
 Go to the _Git Repositories_ view.
-		
-		
 Right click on menu:Branches[Remote Tracking>origin/master] and select _Create Branch_.
-		
 		
 image::create-branch.png[Create branch in Eclipse Git]
 		
@@ -36,10 +24,19 @@ image::new-branch-checked-out.png[Created branch]
 === Develop a new feature
 
 Start editing the source code and implement a new feature. 
-In this example project implement a divide operation.
+In this example you implement a divide operation.
+
+[NOTE]
+====
+It is not necessary to correctly implement the divide operation to learn the usage of Git.
+Feel free to do other changes, e.g., a change in a code comment.
+====
 		
 For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package.
-This class should implements the interface `org.eclipse.example.calc.BinaryOperation` and extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
+This class should:
+
+* implements the interface `org.eclipse.example.calc.BinaryOperation` and 
+* extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
 
 image::divide-class.png[Divide Class]				
 		
@@ -49,9 +46,6 @@ To register the new operation add a corresponding line to the `Calculator.setupD
 image::register-divide.png[Register Divide class]	
 		
 		
-You may also decide to implement something else like polish the SWT or Swing user interface.
-
-
 === Test your feature
 
 Run the unit tests to ensure that you did not break anything.
@@ -59,14 +53,17 @@ Run the unit tests to ensure that you did not break anything.
 image::run-tests.png[Run Tests, 400, 400]	
 
 
-
-
 [[_commit_your_changes_locally]]
 === Commit your changes locally
 
 Use the Staging View to commit your changes in your current branch.
 Open the staging view by selecting menu:Window[Show View > Other… > Git Staging].
-Verify that `Author` and `Committer` contain both your full name and your correct e-mail address in the following format: `John Doe &lt;john.doe@example.org&gt;'
+Verify that `Author` and `Committer` contain both your full name and your correct e-mail address in the following format:
+
+[source]
+----
+John Doe <john.doe@example.org>
+----
 
 [NOTE]
 ====

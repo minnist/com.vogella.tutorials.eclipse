@@ -126,18 +126,15 @@ By now you should know that you have to stage the file and commit it.
 
 === Review your commit history via the History view
 
-Open the History view to browse the commit history of your repository. 
+Open the _History_ view to browse the commit history of your repository. 
 Review which files were included in your individual commits.
 
-In the
-_History_
-view click all toggle buttons as shown in the
-screenshot (Link with Editor and Selection, Show
-all
-changes in repository
-containing the
-selected
-resources, Compare Mode, Show all Branches and Tags)
+In the _History_ view click all toggle buttons as shown in the screenshot
+
+* Link with Editor and Selection
+* Show all changes in repository containing the selected resources
+* Compare Mode
+* Show all Branches and Tags
 
 image::exericse_historyview20.png[History View]
 

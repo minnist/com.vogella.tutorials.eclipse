@@ -55,16 +55,10 @@ to.
 
 image::egitinteractive_rebase08.png[Interactive Rebase EGit]
 
-This opens the
-_Git Interactive Rebase_
-view. It shows the rebase plan populated with the commits to be
-modified
-in topological order in the sequence they will
-be processed. This order is the reverse order which you see via the
-`git log`
-command or in the
-_History_
-view.
+This opens the _Git Interactive Rebase_ view. 
+It shows the rebase plan populated with the commits to be modified. 
+They are sorted in topological order of the sequence in which they will be processed. 
+This order is the reverse order which you see via the `git log` command or in the _History_ view.
 The initial action for all commits is "Pick".
 
 image::egitinteractive_rebase10.png[Interactive Rebase EGit]
@@ -72,6 +66,7 @@ image::egitinteractive_rebase10.png[Interactive Rebase EGit]
 The Eclipse Git tooling supports the following actions.
 
 .Interactive rebase actions
+[cols="1,3",options="header"]
 |===
 |Action |Description
 
@@ -129,11 +124,8 @@ view.
 
 image::egitinteractive_rebase50.png[Interactive Rebase EGit]
 
-TIP: If something goes wrong during the rebase operation you can
-select
-_Abort_
-in order to stop the rebase operation and
-roll back to the
-starting
-point.
+[TIP]
+====
+If something goes wrong during the rebase operation you can select _Abort_ in order to stop the rebase operation and roll back to the  starting point.
+====
 

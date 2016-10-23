@@ -68,7 +68,8 @@ John Doe <john.doe@example.org>
 [NOTE]
 ====
 If author and committer are not preset correctly you need to change the Git configuration parameters `user.name` and/or `user.email`.
-In this case cancel the dialog and open menu:Window[Preferences > Team > Git > Configuration > User Settings` and correct the values for `user.name` and `user.email`.
+In this case cancel the dialog and open menu:Window[Preferences > Team > Git > Configuration > User Settings].
+Correct the values for `user.name` and `user.email`.
 ====
 
 

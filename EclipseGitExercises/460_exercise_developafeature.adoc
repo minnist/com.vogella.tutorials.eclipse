@@ -86,9 +86,6 @@ In this exercise you learn how work on multiple features in parallel.
 
 === Create another local Feature Branch and check it out
 		
-When you develop independent things in parallel, you should develop them in different local branches. 
-This way you isolate the changes via branches.
-Make sure to set the starting point of these branches correctly. 
 Right-click on your Project and select menu:Team[Switch to>New branch].
 Select as _source ref the remote tracking branch `refs/remotes/origin/master`. 
 Use _addPowerOperation_ as branch name. 

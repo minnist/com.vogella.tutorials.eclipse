@@ -1,6 +1,5 @@
 == Git user configuration for the Eclipse IDE
 
-
 === Validate your Git user settings
 
 In case you have not used Git before on a computer, you need to configure at least your user and email address for the usage of Git.
@@ -20,8 +19,6 @@ image::egitconfig10.png[Configuration of EGit, 400, 400]
 Unless you have a different opinion about rebase and merge commits, also set the `branch.autosetuprebase` parameter to `always`.
 This is common setting for Git repositories.  
 It avoids merge commits if you pull from a remote repository and have divergent changes and instead rebases your local branch on the remote branch it tracks.
-
-
 
 === Validate the setup
 

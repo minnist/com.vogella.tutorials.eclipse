@@ -1,9 +1,8 @@
-== Work on branches in parallel
+== Work on branches in parallel
 	
 In this exercise you learn how to change commits using the `amend` option of Git for commits.
 This is for example useful if you work in different branches in parallel and you want to temporarily save your work. 
 You can commit an unfinished change and later on replace this commit with a new, refined commit using the `amend` option of Git.
-
 
 === Start working on another feature
 		
@@ -20,14 +19,12 @@ Make sure the _checkout new branch_	checkbox is selected and click on the btn:[F
 		
 Ensure that you don’t see the changes of the first exercise anymore in your workspace.
 		
-		
 Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
 
 image::multiply-class.png[Multiply Class].	
 		
 image::register-multiply.png[Register Multiply].
 		
-
 === Switch branches
 
 Now you want to switch to another branch but you want to continue working at your new feature later on. 
@@ -45,9 +42,7 @@ You could now continue working here.
 For example: you may want to fix the division by zero issue if it is not already handled. 
 If you do any changes in the "addDivideOperation" branch don’t forget to commit them with amend before the next step
 				
-				
 Switch back to the "addMultiplyOperation" branch
-
 
 === Continue working on the branch adding Multiply
 				
@@ -77,3 +72,4 @@ Now, change the commit message to something meaningful (e.g remove [UNFINISHED])
 				
 In order to change the commit message of the last commit, press the btn:[Amend] button in the _Git Staging_ view.
 Change the commit message and press the btn:[Commit] button.
+

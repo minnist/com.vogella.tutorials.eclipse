@@ -2,7 +2,6 @@
 
 In this exercise you will learn how to develop a new feature using Git in Eclipse.
 	
-
 === Create a local feature branch
 		
 The development of a new feature (or bug-fix) should normally only depend on the submitted state of the project.
@@ -183,5 +182,4 @@ image::staging-view-4.png[Staging view[]
 After inspecting your recent change, you decide that this change should be reverted. 
 Revert your change by right-clicking on the _.project_ file in the _Git Staging_ view. 
 Select the menu:[Replace with File in Git Index] entry
-
 

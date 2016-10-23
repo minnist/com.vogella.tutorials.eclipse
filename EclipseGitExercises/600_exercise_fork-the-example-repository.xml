@@ -1,4 +1,4 @@
-== Create Github user and fork repository
+== Create Github user and fork repository
 
 === Target of this exercise
 
@@ -38,3 +38,4 @@ If you are logged into Github, press the _Fork_ button and create your own copy 
 image::fork-button2.png[Fork Button]
 		
 You have now created your own copy of the training repository on Github.
+

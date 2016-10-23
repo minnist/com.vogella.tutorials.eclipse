@@ -1,4 +1,4 @@
-== Use the git blame feature
+== Use the git blame feature
 	
 Using the History View and filtering the history is a useful tool for inspecting the project history. 
 However, if you look at a particular file and find a bug in a particular line of code you would like to instantly know who was the last person who changed this line of code.

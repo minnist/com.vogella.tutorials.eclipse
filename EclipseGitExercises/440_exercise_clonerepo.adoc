@@ -1,6 +1,5 @@
 == Eclipse Git exercise preparation
 
-
 === Clone the repository and import the projects into Eclipse
 
 Open the _Git Repositories_	view via the menu:Window[Show View>Other>Git>Git Repositories] menu entry.

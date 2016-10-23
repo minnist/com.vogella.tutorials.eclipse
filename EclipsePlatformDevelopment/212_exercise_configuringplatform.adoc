@@ -58,8 +58,7 @@ This instructs the Eclipse IDE to ignore this plug-in in your workspace.
 
 === Setup for other Eclipse projects
 
-If you planning to contribute to another Eclipse project, please have a look at their contribution guide. This guide
-is typically available via the project website, which can be found via the search functionality of the
-https://projects.eclipse.org[Eclipse project side].
+If you planning to contribute to another Eclipse project, please have a look at their contribution guide. 
+This guide is typically available via the corresponding project entry in http://projects.eclipse.org[Eclipse project side].
 
 	

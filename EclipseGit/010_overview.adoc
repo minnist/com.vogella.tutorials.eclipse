@@ -8,3 +8,15 @@ This support is provided via a set of plug-ins (software component) from the EGi
 The _EGit_ functionality is based on the JGit_library.
 JGit_is a library which implements the_Git functionality in Java.
 	
+	
+The Eclipse Git user guide is bundled with the Eclipse Git feature, invoke it via menu:Help[Help Contents >  EGit Documentation].
+
+.The Eclipse workspace and Git repositories
+[TIP]
+====
+(((Eclipse Git,Workspaces and Git repositories)))
+It is good practice to place your Git repositories outside the Eclipse workspace. 
+This separates your Git repository from any additional meta-data which Eclipse might create. 
+By default, Eclipse Git uses the _git_ folder in the users home directory to clone new repositories. 
+This default location can of course be adjusted, see <<egitconfiguration_defaultlocation>> for more information on this.
+====

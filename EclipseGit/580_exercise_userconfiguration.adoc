@@ -11,7 +11,7 @@ The user is stored under the `user.name` key with the full name as value.
 If it is not available press the btn:[Add Entry...] button and add it.
 Repeat the procedure for your email address via the  `user.email` key.
 
-image::egitconfig10.png[Configuration of EGit, 400, 400]
+image::egitconfig10.png[Configuration of EGit]
 
 
 === Configure Git to rebase during pull operations
@@ -24,5 +24,5 @@ It avoids merge commits if you pull from a remote repository and have divergent 
 
 After this setup, the configuration should look similar to the following screenshot.
 
-image::egitconfig20.png[Configuration of EGit user and email defaults, 400, 400]
+image::egitconfig20.png[Configuration of EGit user and email defaults]
 

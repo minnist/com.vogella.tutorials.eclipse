@@ -13,7 +13,6 @@ Version 0.1, 24.05.2016
 This tutorial contains exercises for the usage of Git.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::400_exercise_userconfiguration.adoc[]
 include::440_exercise_clonerepo.adoc[]
 include::460_exercise_developafeature.adoc[]
 include::480_work-on-branches-in-parallel.adoc[]

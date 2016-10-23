@@ -180,5 +180,5 @@ image::staging-view-4.png[Staging view[]
 		
 After inspecting your recent change, you decide that this change should be reverted. 
 Revert your change by right-clicking on the _.project_ file in the _Git Staging_ view. 
-Select the menu:[Replace with File in Git Index] entry
+Select the menu:Replace\ wit\h File\ in\ Git\ Index[] entry.
 

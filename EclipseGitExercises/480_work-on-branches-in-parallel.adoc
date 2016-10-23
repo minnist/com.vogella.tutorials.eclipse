@@ -7,12 +7,12 @@ You can commit an unfinished change and later on replace this commit with a new,
 === Start working on another feature
 		
 Create a new local branch based on the remote tracking branch `origin/master`. 
-You can do this as described in <<egitexercise_create_a_local_feature_branch>> or you can use the _History_	view as described in this chapter.
+You can do this as described earlier or you can use the _History_	view as described in this chapter.
 		
 		
 Create a new branch from the _History_ view.
 
-image::create-branch-from-history-view.png[Create Branch from History View, 700].
+image::create-branch-from-history-view.png[Create Branch from History View].
 		
 Enter "addMultiplyOperation" as the name of the new branch. 
 Make sure the _checkout new branch_	checkbox is selected and click on the btn:[Finish] button.

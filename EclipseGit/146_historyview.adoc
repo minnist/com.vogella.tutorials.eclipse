@@ -16,8 +16,8 @@ Some views, e.g., in the Java EE-Perspective, do not have this shortcut, in this
 
 === Review the repository history via the History view 
 
-To see the history of a resource, select your project, a file or a folder, right-click on it and select the menu:Show\ in\ [History] context menu entry.
-Alternative you can use the kbd:[Alt+Shift+W] shortcut and select the _History_entry.
+To see the history of a resource, select your project, a file or a folder, right-click on it and select the menu:Show/ in/ [History] context menu entry.
+Alternative you can use the kbd:[Alt+Shift+W] shortcut and select the _History_ entry.
 
 You can also configure the_History_ view to display the history of the current selection. 
 Select the highlighted button in the following screenshot for that.

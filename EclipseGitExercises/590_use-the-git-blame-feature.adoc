@@ -33,3 +33,4 @@ image::annotation-info.png[Annotation Info]
 Click on the commit-id in order to see full details of the commit.
 
 image::commit-details.png[Commit Details] 		
+

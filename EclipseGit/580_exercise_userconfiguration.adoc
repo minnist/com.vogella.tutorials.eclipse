@@ -1,4 +1,4 @@
-== Git user configuration for the Eclipse IDE
+== Exercise: Git user configuration for the Eclipse IDE
 
 === Validate your Git user settings
 

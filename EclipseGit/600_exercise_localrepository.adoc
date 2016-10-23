@@ -95,7 +95,7 @@ image::gitfirst40.png[Git repository creation result]
 === Using the Git Staging view for the initial commit
 
 Open the _Git Staging_ view, if it is not yet open via menu:Window[Show View > Other... > Git > Git Staging].
-In this view drag all files into the _Staged Changes_area, write a meaningful commit message and press the commit button.
+In this view drag all files into the _Staged Changes_ area, write a meaningful commit message and press the commit button.
 
 image::gitstaging10.png[Initial commit]
 
@@ -112,12 +112,12 @@ Create a new file called `Readme.md`.
 
 Commit the changes of the `GitTest` class but do not add and commit the `Readme.md` file to the Git repository.
 
-In the _Git Staging_view drag only the `GitTest` class into the _Staged Changes_area, write a meaningful commit message and press the commit button.
+In the Git Staging view drag only the `GitTest` class into the _Staged Changes_ area, write a meaningful commit message and press the commit button.
 
 image::gitstaging30.png[Git Staging View - Add to staging area]
 
-This change is now also stored in your local _Git_repository. 
-The _Readme.md_file is neither staged nor committed to the Git repository.
+This change is now also stored in your local Git_repository. 
+The `Readme.md` file is neither staged nor committed to the Git repository.
 
 === Commit more files
 
@@ -126,7 +126,7 @@ By now you should know that you have to stage the file and commit it.
 
 === Review your commit history via the History view
 
-Open the _History_ view to browse the commit history of your repository. 
+Open the History view to browse the commit history of your repository. 
 Review which files were included in your individual commits.
 
 In the
@@ -141,16 +141,16 @@ resources, Compare Mode, Show all Branches and Tags)
 
 image::exericse_historyview20.png[History View]
 
-=== Open an older version of a file via the History view
+=== Open an older version with the current version of a file via the History view
 
-Open the version for the first commit of `GitTest` via the _History_view.
+Open the version for the first commit of `GitTest` via the _History__view.
 
 image::exericse_historyview30.png[History View]
 
 === Add more projects to your Git repository
 
 You can of course have more than one Eclipse project in your Git repository.
-To validate that, create two more Java projects called `com.vogella.egit.multi.java1` and_`com.vogella.egit.multi.java2`. 
+To validate that, create two more Java projects called `com.vogella.egit.multi.java1` and `com.vogella.egit.multi.java2`. 
 Create at least one Java class in each project.
 
 Afterwards select both projects, right-click on them and select menu:Team[Share Project... > Git]. 

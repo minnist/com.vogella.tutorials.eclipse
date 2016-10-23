@@ -58,3 +58,4 @@ image::history-view-12.png[History View]
 
 If you want to change more than one commit in a series Git offers the interactive rebase.
 
+

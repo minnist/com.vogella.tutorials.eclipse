@@ -12,7 +12,7 @@ You can do this as described earlier or you can use the _History_	view as descri
 		
 Create a new branch from the _History_ view.
 
-image::create-branch-from-history-view.png[Create Branch from History View].
+image::create-branch-from-history-view.png[Create Branch from History View]
 		
 Enter "addMultiplyOperation" as the name of the new branch. 
 Make sure the _checkout new branch_	checkbox is selected and click on the btn:[Finish] button.
@@ -21,9 +21,9 @@ Ensure that you don’t see the changes of the first exercise anymore in your wo
 		
 Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
 
-image::multiply-class.png[Multiply Class].	
+image::multiply-class.png[Multiply Class]
 		
-image::register-multiply.png[Register Multiply].
+image::register-multiply.png[Register Multiply]
 		
 === Switch branches
 

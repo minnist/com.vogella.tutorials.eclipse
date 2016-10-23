@@ -35,21 +35,8 @@ _Multiply_
 class.
 
 * Now create a new commit with the combined changes of your first
-commit and your current changes:
-
-* Select your project in the Package Explorer and select
-menu:Team[Commit]
-or click
-_Commit_
-in the Git Toolbar.
-
-* Press the
-btn:[Amend]
-button as shown below:
-+
-image::commit-changes-with-amend-2.png[Commit Changes with Amend]
-
-* Click the Commit button
+commit and your current changes. 
+Use the Amend option in the Staging view for this.
 
 * Now your history should look like this:
 
@@ -72,7 +59,7 @@ _Cherry Pick_
 on the other commit. This will add the
 difference of this commit compared to its parent on top of your new
 commit.
-+
+
 image::cherry-pick.png[Cherry Pick]
 
 * You may have to resolve conflicts
@@ -86,7 +73,7 @@ merge-rebase-and-resolving-conflicts.html[
 Merge, Rebase and Resolving Conflicts.
 
 * The result should look like this:
-+
+
 image::history-view-12.png[History View]
 
 If you want to change more than one commit in a series git offers the

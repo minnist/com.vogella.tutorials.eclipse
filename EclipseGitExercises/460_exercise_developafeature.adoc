@@ -121,8 +121,12 @@ right-click on
 your project and select
 menu:Properties[FindBugs]
 and select the button
-btn:[Run automatically]
-(only available if FindBugs is installed in your Eclipse).
+btn:[Run automatically].
+
+[NOTE]
+====
+This option is only available if FindBugs is installed in your Eclipse.
+====
 
 === Open the Git Staging view and inspect the status
 		

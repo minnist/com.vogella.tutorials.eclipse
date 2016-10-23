@@ -1,0 +1,187 @@
+== Develop new features or a provide a bug fix
+
+In this exercise you will learn how to develop a new feature using Git in Eclipse.
+	
+
+=== Create a local feature branch
+		
+The development of a new feature (or bug-fix) should normally only depend on the submitted state of the project.
+It should not depend on other pending changes that might or might not pass the code review. 
+This is why new features or bug-fixes should be developed in isolation on its own branch. 
+This branch is usually created based on the latest state of the master branch available on the remote repository used for integrating the changes of different developers.
+This is the remote tracking branch called `origin/master` in your local clone.
+		
+		
+Go to the _Git Repositories_ view.
+		
+		
+Right click on menu:Branches[Remote Tracking>origin/master] and select _Create Branch_.
+		
+		
+image::create-branch.png[Create branch in Eclipse Git]
+		
+In the new branch dialog:
+
+* enter a name for the local feature branch into the _Branch Name_ field (this is just a local name that is not exposed to anybody else)
+* ensure that the _Pull Strategy_ is set to _Rebase_
+* keep the _Checkout new branch_ flag selected
+* confirm the dialog by clicking on the btn:[Finish] button
+
+image::create-branch-dialog.png[Create branch in Eclipse Git part II]			
+		
+This creates and checks out the new branch.
+
+image::new-branch-checked-out.png[Created branch]			
+
+
+=== Develop a new feature
+
+Start editing the source code and implement a new feature. 
+In this example project implement a divide operation.
+		
+For this, create a new class called `Divide.java` in the  `org.eclipse.example.calc.internal.operations` package.
+This class should implements the interface `org.eclipse.example.calc.BinaryOperation` and extends the  `org.eclipse.example.calc.internal.operations.AbstractOperation` class.
+
+image::divide-class.png[Divide Class]				
+		
+		
+To register the new operation add a corresponding line to the `Calculator.setupDefaultOperations` method.
+	
+image::register-divide.png[Register Divide class]	
+		
+		
+You may also decide to implement something else like polish the SWT or Swing user interface.
+
+
+=== Test your feature
+
+Run the unit tests to ensure that you did not break anything.
+		
+image::run-tests.png[Run Tests, 400, 400]	
+
+
+
+
+[[_commit_your_changes_locally]]
+=== Commit your changes locally
+
+Use the Staging View to commit your changes in your current branch.
+Open the staging view by selecting menu:Window[Show View > Other… > Git Staging].
+Verify that `Author` and `Committer` contain both your full name and your correct e-mail address in the following format: `John Doe &lt;john.doe@example.org&gt;'
+
+[NOTE]
+====
+If author and committer are not preset correctly you need to change the Git configuration parameters `user.name` and/or `user.email`.
+In this case cancel the dialog and open menu:Window[Preferences > Team > Git > Configuration > User Settings` and correct the values for `user.name` and `user.email`.
+====
+
+
+* Select all files that you want to commit
+* Enter a commit message explaining why the change was done
+* Click `Commit`. 
+
+As result your changes are committed in your `local` repository
+
+
+== Develop another feature using the Staging View
+
+In this exercise you learn how work on multiple features in parallel. 
+
+=== Create another local Feature Branch and check it out
+		
+When you develop independent things in parallel, you should develop them in different local branches. 
+This way you isolate the changes via branches.
+Make sure to set the starting point of these branches correctly. 
+Right-click on your Project and select menu:Team[Switch to>New branch].
+Select as _source ref the remote tracking branch `refs/remotes/origin/master`. 
+Use _addPowerOperation_ as branch name. 
+Check the _Checkout new branch_ checkbox and press the btn:[Finish] button.
+
+image::create-branch-2.png[Create branch]
+		
+This creates and checkouts a new branch which starts where the remote tracking branch `refs/remotes/origin/master` points to.
+
+=== Develop another new feature
+		
+Develop a `Power` class similar to the `Plus` class in the package `org.eclipse.example.calc.internal.operations`.
+This should be done in the _org.eclipse.example.calc_ project.
+Register the new class in the `Calculator.setupDefaultOperations()` method.
+		
+image::power-class.png[Power Class]
+
+image::register-power.png[Register Power]	
+
+=== Do a undesired modification
+		
+Sometimes you want to locally change a file but don&#8217;t want this modification to
+be included in the next commit.
+E.g. certain project modifications are
+important to you but others shouldn&#8217;t see them. To simulate
+this
+right-click on
+your project and select
+menu:Properties[FindBugs]
+and select the button
+btn:[Run automatically]
+(only available if FindBugs is installed in your Eclipse).
+
+=== Open the Git Staging view and inspect the status
+		
+Open the staging view by selecting
+menu:Window[Show View > Other… > Git Staging].
+This view presents which files you have touched and which files will be
+in the
+next commit.
+_Unstaged Changes_
+lists those changes which you have done locally
+but which you have not yet added to the index.
+_Staged Changes_
+list those
+changes which you already have added to the index. You can drag and drop
+files
+from one area to the other.
+		
+Git Staging view should list three files
+_.project_,
+_Calculator.java_
+and
+_Power.java_
+(
+_.project_
+appears only if you have configured FindBugs
+to run automatically).
+		
+image::staging-view.png[Staging view[]
+		
+Double-click on
+_.project_
+to inspect which changes you have done. This opens the
+_Compare_
+editor for this file.
+		
+image::staging-view-2.png[Staging view[]
+		
+Drag and drop
+_Calculator.java_
+and
+_Power.java_
+to the
+_Staged Changes_
+area
+to mark that they should be included in the next commit.
+		
+image::staging-view-3.png[Staging view[]
+
+=== Commit your change
+		
+In the _Git Staging_ view enter a commit message in the _Commit message_ field and click on the btn:[Commit] button.
+		
+image::staging-view-4.png[Staging view[]
+
+=== Cleanup
+		
+After inspecting your recent change, you decide that this change should be reverted. 
+Revert your change by right-clicking on the _.project_ file in the _Git Staging_ view. 
+Select the menu:[Replace with File in Git Index] entry
+
+

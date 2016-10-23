@@ -1,0 +1,25 @@
+==  Git exercise preparation
+
+
+=== Clone the repository and import the projects into Eclipse
+
+Use the `git clone` command to clone the Git repo from:
+		
+https://github.com/vogellacompany/gittraining-sample.git
+== Get familiar with the example projects
+
+The example repository contains two projects:
+
+* `org.eclipse.example.calc`- contains a simple calculator
+* `org.eclipse.example.calc.test` - contains unit tests
+				
+Both projects contain launch configurations which can be used from the Eclipse IDE.
+Use them to start the calculator or run the unit tests.
+For Mac there is a specific launch configuration with _Mac_ in the name.
+
+
+=== Analyze the Git repository      
+
+Use the `git log` command to get an overview of the history of the Git repository.
+
+        

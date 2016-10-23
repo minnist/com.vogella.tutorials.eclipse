@@ -1,0 +1,140 @@
+
+== Push to the forked repository
+In this exercise you learn how to push commits from your local repository to a remote repository. 
+You will reuse your already cloned repository and add the fork as another remote repository.
+	
+
+Another way to achieve the goal would be to create a new clone of the forked repository. 
+However, having	everything in one repository has many advantages. 
+For example, in eclipse you can then easily	checkout versions of your projects from the two remote repositories
+		
+
+=== Add a new remote
+		
+Git allows that you have more than one remote repository for a local repository.
+In the local repository you can address each remote repository by a shortcut.
+This shortcut is simply called _remote_.
+For such a remote several properties can be specified, e.g. URL, branches to fetch or branches to push. 
+When you cloned your repository, Git already created a default remote called _origin_. 
+
+You now create a second remote for your fork at Github.
+		
+You will need the URL. Copy it to the clipboard from Github.
+	
+image::copyurl.png[Copy URL from Github]
+		
+		
+In the Git Repositories view, select _Create Remote_  on the _Remotes_ node of your clone.
+		
+image::createremote.png[Create Remote]		
+		
+		
+In the next dialog, enter a name and select the _Configure fetch_ radiobutton.
+
+image::remote_github.png[Configure Remote]		
+		
+		
+Now press the button _Change_ next to the URL field.
+
+image::githubconfigurefetch.png[Configure Fetch]		
+		
+The URL is  automatically taken from the clipboard in the next dialog.
+
+image::githubdestination.png[Fetch URL]			
+		
+		
+Press the Finish button. In order to test if everything worked well you can fetch from your new remote.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/github_fetch.png" />
+				
+				<textobject>
+					<phrase>Fetch from Github</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		
+			Even if there is no new commit in the remote repository, the fetch command dcreates the branch
+			_github/master_
+			which points to the same commit as the master branch at the remote tracking branch. This is a so-called
+			remote-tracking-branch.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/github_fetch_result.png" />
+				
+				<textobject>
+					<phrase>Github fetch result</phrase>
+				</textobject>
+			</inlinemediaobject>
+			
+			
+
+=== Create a new commit in a new branch
+		
+Create a new commit in your local repository. You should create the local branch based on the new remote, see screenshot below.
+When you do this, the Git push operation pushes this branch to the new remote repository per default.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/createbranchgithub.png" scale="60" />
+				
+				<textobject>
+					<phrase>Local branch</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	
+
+=== Push to remote
+		
+			Select
+			_Push to Upstream_
+			in the Git Repositories view or
+			menu:Team[Push to Upstream]
+			in the Package Explorer or Project Explorer.
+			Now Github needs your username and password. Note that you could clone
+			and fetch without
+			authentication,
+			but in order to push, you need valid user credentials.
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/push_github_login.png" />
+				
+				<textobject>
+					<phrase>Push login</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+		Once you have successfully pushed, you see the following result dialog:
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/github_pushresult.png" />
+				
+				<textobject>
+					<phrase>Push result</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+By default, Eclipse pushes the currently checked out branch to the branch with the same name in the remote.
+Note that Git created a new remote tracking branch:
+		
+		
+			<inlinemediaobject>
+				<imageobject>
+					<imagedata fileref="./images/github_remote_tracking.png" />
+				
+				<textobject>
+					<phrase>Remote tracking branch</phrase>
+				</textobject>
+			</inlinemediaobject>
+		
+	
+

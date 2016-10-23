@@ -1,0 +1,897 @@
+
+<title>GitHub Integration with Eclipse
+
+<title>Introduction
+GitHub is the world’s largest source code repository with over 2 million Git repositories and 1 million people.  You can use it to share code and collaborate with others on projects.  The Eclipse organization on GitHub mirrors over 240 of the Git repositories available from Eclipse.org.  This training will involve setting up a project to be shared on GitHub, importing a project from GitHub using EGit, and how GitHub can be used to share code snippets with other developers.
+
+
+<title>Installation
+GitHub Mylyn Connector can be installed from the following update sites:
+
+*
+
+Main Eclipse Git repository: http://download.eclipse.org/egit/github/updates[http://download.eclipse.org/egit/github/updates]
+
+
+*
+
+Luna repository (*): http://download.eclipse.org/releases/luna[http://download.eclipse.org/releases/kepler]
+
+
+*
+
+Via the Eclipse Marketplace
+
+
+*
+
+http://download.eclipse.org/egit/github/updates[http://download.eclipse.org/egit/github/updates] 
+
+
+
+The feature is listed under the Collaboration category
+Select to install Eclipse EGit Mylyn GitHub Feature
+Restart Eclipse
+
+
+<title>Create a GitHub Account
+This step will take you through creating and setting up a GitHub account.  You may skip this step if you already have a GitHub account.
+* Open any web browser and navigate to https://github.com/signup/free[https://github.com/signup/free]
+* Enter the required information and select the  Create an account button
+* Verify you can successfully log in to your newly created account
+* Optionally create and associate a Gravatar with the e-mail address you registered your account with
+<emphasis role="strong[ http://gravatar.com/site/signup/">http://gravatar.com/site/signup/]
+_ The image associated will be displayed on GitHub when viewing your commits, issues, comments and on your profile page.
+
+
+<title>Exploring the Eclipse Repository on GitHub
+The Eclipse mirrored repositories on GitHub allow you to explore and track what is happening in the over 240 Eclipse Git repositories.
+* Navigate in a web browser to https://github.com/eclipse[https://github.com/eclipse] to see a listing of all the repositories
+* You can explore bookmark different URLs for projects and views you are interested in such as:
+<emphasis role="strong"> All of Matthias Sohn’s EGit commits
+_* https://github.com/eclipse/egit/commits/master?author=msohn[https://github.com/eclipse/egit/commits/master?author=msohn]
+<emphasis role="strong"> All of the Orion server branches
+_* https://github.com/eclipse/orion.server/branches[https://github.com/eclipse/orion.server/branches]
+<emphasis role="strong"> Impact chart for the Tycho project
+_* https://github.com/eclipse/tycho/graphs/impact[https://github.com/eclipse/tycho/graphs/impact]
+<emphasis role="strong"> See what changed between the EGit 1.0 and 1.1 releases
+_* https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r[https://github.com/eclipse/egit/compare/v1.0.0.201106090707-r\.\.\.v1.1.0.201109151100-r]
+<emphasis role="strong"> Download the latest SWT platform source code
+_* https://github.com/eclipse/eclipse.platform.swt/downloads[https://github.com/eclipse/eclipse.platform.swt/downloads]
+* You can also select to watch a repository and you will be notified in your dashboard when a new tag or branch is created.
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github1.png"/>
+  
+  <textobject><phrase>github1.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Sharing a Project on GitHub from Eclipse
+This task will have you publish an Eclipse project on GitHub as a new Git repository.
+
+<title>Create a new Eclipse project
+
+*
+
+Select the File &gt; New &gt; Project&#8230; menu
+
+
+*
+
+Select Java Project and select Next &gt;
+
+
+*
+
+Enter HelloGitHub as the project name and select Finish
+
+
+
+
+
+<title>Create a Java class
+
+*
+
+Select the HelloGitHub/src folder from the Package Explorer view
+
+
+*
+
+Select  the File &gt; New &gt; Class menu
+
+
+*
+
+Enter Main as the class name
+
+
+*
+
+Check the public static void main(String[] args) box
+
+
+*
+
+Select Finish
+
+
+*
+
+Implement the main(String[] args) method in the Main class
+
+
+*
+
+System.out.println(“Hello GitHub!”);
+
+
+*
+
+Select Save
+
+
+
+
+
+
+
+<title>Create Git repository for HelloGitHub project
+
+*
+
+Select the HelloGitHub project from the Package Explorer view
+
+
+*
+
+Select the Team &gt; Share Project&#8230; menu
+
+
+*
+
+Select Git and select Next &gt;
+
+
+*
+
+Select Create&#8230; next to the Repository combo box
+
+
+*
+
+Enter HelloGitHub in the Name text box
+
+
+*
+
+Select Finish
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github2.png"/>
+  
+  <textobject><phrase>github2.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Commit HelloGitHub project to new Git repository
+
+*
+
+Select the HelloGitHub project in the Package Explorer view
+
+
+*
+
+Select the Team &gt; Commit&#8230; menu
+
+
+*
+
+Enter a commit message in the Commit message section
+
+
+*
+
+Check all files in the Files section table
+
+
+*
+
+Select Commit
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github3.png"/>
+  
+  <textobject><phrase>github3.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Create a new repository on GitHub
+
+*
+
+Open a web browser to https://github.com/repositories/new[https://github.com/repositories/new]
+
+
+*
+
+Enter HelloGitHub in the Project Name field
+
+
+*
+
+Select Create repository
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github4.png"/>
+  
+  <textobject><phrase>github4.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Push local Git repository to GitHub
+
+*
+
+Expand the HelloGitHub repository node from the Git Repositories view
+
+
+*
+
+Select the Remotes node
+
+
+*
+
+Select the Create Remote&#8230; menu
+
+
+*
+
+Enter “origin” in the Remote name text box
+
+
+*
+
+Select OK
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github5.png"/>
+  
+  <textobject><phrase>github5.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Select the Change&#8230; button in the URI group in the Configure Push wizard
+
+
+*
+
+Enter the following in the URI text box
+
+
+*
+
+https://username@github.com/username/HelloGitHub.git[https://username@github.com/username/HelloGitHub.git]
+
+
+*
+
+Replace &lt;username&gt; with your GitHub login name
+
+
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github6.png"/>
+  
+  <textobject><phrase>github6.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Select Finish
+
+
+*
+
+Select Save and Push from the Configure Push wizard
+
+
+*
+
+A Push Results dialog will be displayed stating the master branch was created on the remote repository
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github7.png"/>
+  
+  <textobject><phrase>github7.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Make a second commit and push the change upstream
+
+*
+
+Open Main.java from the HelloGitHub project in the Eclipse editor
+
+
+*
+
+Delete the “!” character from the “Hello GitHub!” string
+
+
+*
+
+Select Save
+
+
+*
+
+Select the HelloGitHub project from the Package Explorer view
+
+
+*
+
+Select Team &gt; Commit&#8230;
+
+
+*
+
+Enter a message of in the Commit message sectino
+
+
+*
+
+Select Commit
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github8.png"/>
+  
+  <textobject><phrase>github8.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Select the Team &gt; Push to Upstream menu
+
+
+*
+
+A Push Results dialog will be displayed showing the commit pushed
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github9.png"/>
+  
+  <textobject><phrase>github9.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Monitor the repository’s issues
+
+*
+
+Open the Mylyn Task Repositories view
+
+
+*
+
+Select Add Task Repository&#8230; from the view’s toolbar
+
+
+*
+
+Select GitHub Issues and select Next &gt;
+
+
+*
+
+Enter the repository’s URL in the URL text box
+
+
+*
+
+http://github.com/username/HelloGitHub[http://github.com/username/HelloGitHub]
+
+
+*
+
+Replace &lt;username&gt; with your GitHub login name
+
+
+
+
+*
+
+Enter your GitHub login name in the User ID text box
+
+
+*
+
+Enter your GitHub password in the Password text box
+
+
+*
+
+Check the Save Password check box
+
+
+*
+
+Select Validate Settings and verify the wizard status message is Sucess!
+
+
+*
+
+Select Finish
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github10.png"/>
+  
+  <textobject><phrase>github10.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Open the Mylyn Task List view
+
+
+*
+
+Select New &gt; Query&#8230; from the view’s menu
+
+
+*
+
+Select the username/HelloGitHub repository and select Next &gt;
+
+
+*
+
+Replace &lt;username&gt; with your GitHub login name
+
+
+
+
+*
+
+Enter All Issues in the Title text box
+
+
+*
+
+Select Finish
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github11.png"/>
+  
+  <textobject><phrase>github11.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Create a new issue
+
+*
+
+Open the Mylyn Task List view
+
+
+*
+
+Select New &gt; Task&#8230; from the view’s menu
+
+
+*
+
+Select the username/HelloGitHub repository
+
+
+*
+
+Replace &lt;username&gt; with your GitHub login name
+
+
+
+
+*
+
+Enter “Internationalize strings” in the summary text box at the top of the task editor
+
+
+*
+
+Select Submit
+
+
+*
+
+The issue will be created and the editor will update with the new issue number
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github12.png"/>
+  
+  <textobject><phrase>github12.png</phrase></textobject>
+</inlinemediaobject>
+
+
+
+<title>Importing Projects from GitHub
+The GitHub Mylyn connector supports cloning repositories from GitHub and registering them in the EGit Git Repositories view.  This can be used to track libraries you are building against or using.  The cloned repository will be wired to pull from GitHub so that you can stay up-to-date as future changes are made to the repositories.
+
+<title>Clone an existing repository
+
+*
+
+Select the File &gt; Import&#8230; menu
+
+
+*
+
+Expand the Git category folder
+
+
+*
+
+Select Repositories from GitHub and select Next &gt;
+
+
+*
+
+Select Java from the language combo box
+
+
+*
+
+Enter “http-request” in the search text box
+
+
+*
+
+Select Search
+
+
+*
+
+Select the kevinsawicki/http-request project from the result table
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github13.png"/>
+  
+  <textobject><phrase>github13.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Select Finish
+
+
+*
+
+A clone operation will start and displayed in the Progress view
+
+
+
+
+*
+
+Open the Git Repositories view
+
+
+*
+
+http-request will be visible after the clone operation completes
+
+
+
+
+
+
+
+<title>Import the project
+
+*
+
+Open the Git Repositories view
+
+
+*
+
+Select the http-request repository node
+
+
+*
+
+Select the Import Projects&#8230; menu
+
+
+*
+
+Select Next &gt;
+
+
+*
+
+Select Finish
+
+
+*
+
+The http-request project will  be present in the Package Explorer view
+
+
+
+
+
+
+
+<title>Pulling Changes
+
+*
+
+Open the Git Repositories view
+
+
+*
+
+Select the http-request repository node
+
+
+*
+
+Select the Pull menu
+
+
+*
+
+A Push Results dialog will display showing which commits were fetched and which ones were merged from the remote repository
+
+
+
+
+
+
+<title>Sharing Snippets from Eclipse
+The GitHub Mylyn connector supports creating, editing, and cloning GitHub Gists. Gists are snippets that are versioned in a Git repository that can contain or more files.  They can be browsed, edited, and commented on from the Mylyn Task editor.  The Gist task editor allows you to open Gist files in a local Eclipse editor as well as clone Gists into a local Git repository.
+
+<title>Adding a Gist Task repository
+
+*
+
+Open the Mylyn Task Repositories view
+
+
+*
+
+Select Add Task Repository&#8230; from the view’s toolbar
+
+
+*
+
+Select GitHub Gists and select Next &gt;
+
+
+*
+
+Enter your GitHub login name in the User ID text box
+
+
+*
+
+Enter your GitHub password in the Password text box
+
+
+*
+
+Check the Save Password check box
+
+
+*
+
+Select Validate Settings and verify the wizard status message is Sucess!
+
+
+*
+
+Select Finish
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github14.png"/>
+  
+  <textobject><phrase>github14.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Viewing your own Gists
+
+*
+
+Open the Mylyn Task List view
+
+
+*
+
+Select New &gt; Query&#8230; from the view’s menu
+
+
+*
+
+Select the Gists repository and select Next &gt;
+
+
+*
+
+Select Finish
+
+
+*
+
+The Gists will synchronize to the newly created query folder in the Task List view
+
+
+
+
+
+
+
+<title>Tracking Another User’s Gists
+
+*
+
+Open the Mylyn Task List view
+
+
+*
+
+Select New &gt; Query&#8230; from the view’s menu
+
+
+*
+
+Select the Gists repository and select Next &gt;
+
+
+*
+
+Enter “Kevin Sawicki’s Gists” in the Title text box
+
+
+*
+
+Enter “kevinsawicki” in the User text box
+
+
+*
+
+Select Finish
+
+
+*
+
+The Gists will synchronize to the newly created query folder in the Task List view
+
+
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github15.png[]
+  
+  <textobject><phrase>github15.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Open Gist 977763 in the Mylyn Task editor from the Task List view
+
+
+*
+
+This Gist contains a code snippet for creating Gists using the GitHub Java API
+
+
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github16.png[]
+  
+  <textobject><phrase>github16.png</phrase></textobject>
+</inlinemediaobject>
+
+
+<title>Creating a Gist
+
+*
+
+Open the Main.java class from the HelloGitHub project in the Eclipse editor
+
+
+*
+
+Select one or more lines of text
+
+
+*
+
+Select the GitHub &gt; Create Public Gist menu
+
+
+*
+
+A Gist will be created in a background job
+
+
+
+
+*
+
+Select the hyperlink from the Gist noficiation popup
+
+
+*
+
+The Mylyn Task editor will be opened for the newly created Gist
+
+
+
+
+
+<inlinemediaobject>
+  <imageobject>
+  <imagedata fileref="./images/github17.png[]
+  
+  <textobject><phrase>github17.png</phrase></textobject>
+</inlinemediaobject>
+
+*
+
+Note: You can also create Gists by selecting text in the Eclipse Console view.
+
+
+
+
+
+

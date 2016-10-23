@@ -1,0 +1,65 @@
+== Work on branches in parallel
+	
+In this exercise you learn how to change commits using the `amend` option of Git for commits.
+This is for example useful if you work in different branches in parallel and you want to temporarily save your work. 
+You can commit an unfinished change and later on replace this commit with a new, refined commit using the `amend` option of Git.
+
+
+=== Start working on another feature
+		
+Create a new local branch called `addMultiplyOperation` based on the remote tracking branch `origin/master`. 
+
+Ensure that you don’t see the changes of the first exercise anymore in your workspace.
+		
+		
+Start working on a change, e.g. add a `Multiply` operation, do not commit yet, first read on.
+
+image::multiply-class.png[Multiply Class]	
+		
+image::register-multiply.png[Register Multiply]
+		
+
+=== Switch branches
+
+Now you want to switch to another branch but you want to continue working at your new feature later on. 
+The easiest thing to do is to just commit your work in progress and change that commit later on.
+
+Use the `git add` and the `git commit` command to commmit the changes with  a preliminary message, e.g. "[Unfinished] Add multiply operation".
+				
+				
+Now you can switch to the first feature branch "addDivideOperation" with the `git checkout addDivideOperation` command.
+
+				
+Check that your workspace contains the changes you committed in your first feature (implementing divide) branch. 
+You could now continue working here. 
+For example: you may want to fix the division by zero issue if it is not already handled. 
+If you do any changes in the "addDivideOperation" branch don’t forget to commit them with amend before the next step
+				
+				
+Switch back to the "addMultiplyOperation" branch with the `git checkout addDivideOperation` command.
+
+
+=== Continue working on the branch adding Multiply
+				
+Do another change in the Java class Multiply to improve it.
+				
+Compare your changed project with the first, preliminary commit with the `git diff` command.
+This shows you the changes you will add on top of the first commit.
+				
+				
+Compare your changed project with the parent commit of your first, preliminary commit with the `git diff HEAD~` command.
+This shows you the changes you will have in your new commit after the next step.
+				
+Create a new commit with the combined changes of your first, preliminary commit and your current changes by using the `git add` and `git commit --amend command.
+						
+						
+Use `git log` to review the commit history. See that your first, preliminary commit was replaced by the new one.
+
+
+=== Fixing the commit message
+
+The amend feature is often used to fix the commit message of what you just committed.
+
+Now, change the commit message to something meaningful (e.g remove [UNFINISHED]) and via the `git commit --amend -m "New commit message".		
+
+Use `git log` to review the commit history. See that your first, preliminary commit was replaced by the new one.				

@@ -1,0 +1,91 @@
+== Fetch the latest state from your remote repository
+	In this exercise you learn how to use the git fetch command to get the latest state from
+		a remote repository.
+		Fetching the
+		latest state updates the
+		remote tracking
+		branches in your local repository. It will not change
+		your
+		local
+		branches or your
+		working tree.
+	
+	
+		Before starting to develop a feature or doing a bug-fix you should
+		fetch the latest state from the central repository.
+		This will update
+		the remote tracking branch
+		_origin/master_
+		which will be the base
+		for your local changes.
+	
+	
+		*
+			
+				Go to the Git Repositories view
+			
+		
+		*
+			
+				Select your repository and click
+				_Fetch from Upstream_
+			
+			
+				<inlinemediaobject>
+					<imageobject>
+						<imagedata fileref="./images/fetch-from-upstream.png" />
+					
+					<textobject>
+						<phrase>Fetch from Upstream</phrase>
+					</textobject>
+				</inlinemediaobject>
+			
+		
+		*
+			
+				The "Fetch Results" dialog displays the result of the fetch action
+			
+			
+				*
+					
+						If new changes have been fetched it looks like this:
+					
+					
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="./images/fetch-results.png" />
+							
+							<textobject>
+								<phrase>Fetch Results</phrase>
+							</textobject>
+						</inlinemediaobject>
+					
+				
+				*
+					
+						If you already have the latest state available on the server it
+						shows the message "everything up to date" and
+						the list is empty.
+					
+					
+						<inlinemediaobject>
+							<imageobject>
+								<imagedata fileref="./images/fetch-results-up-to-date.png" />
+							
+							<textobject>
+								<phrase>Fetch Results up to Date</phrase>
+							</textobject>
+						</inlinemediaobject>
+					
+				
+			
+		
+	
+
+	
+		Now, after the remote tracking branch
+		_origin/master_
+		has been updated,
+		it is a good basis for creating a new local feature branch.
+	
+

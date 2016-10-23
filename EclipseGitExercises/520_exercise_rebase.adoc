@@ -1,0 +1,75 @@
+== Rebase
+
+
+=== Rebasing a branch onto another
+
+Now do a rebase of the conflicting commit instead of a merge.
+		
+In the History View, select _Rebase on Top of_ from the context menu on the second feature branch (the first one is checked out):
+				
+image::rebase.png[Rebase, 600,600]
+
+				
+The rebase stops because of a conflict. You see a dialog:
+
+image::rebase-with-conflicts.png[Rebase]			
+				
+Click _OK_ to start the merge tool.
+				
+Click _OK_ to start conflict resolution (using pre-merged option).
+
+image::merge-mode.png[Merge Mode]		
+				
+image::merge-tool-2.png[Merge Tool,400,400]				
+				
+Edit the left side until you are happy with the change and save
+				
+image::merge-tool-resolved-conflict-2.png[Merge Tool with resolved conflict,400,400]						
+				
+Use the Git Staging View to do this in one step by drag and drop
+				
+				
+In the Repositories View select your repository and click menu:Rebase[Continue].
+
+				
+image::rebase-continue.png[Rebase Continue,400,400]					
+				
+				
+Now the version graph should look like this:
+
+image::history-view-5.png[History View]			
+				
+				
+Note that there is a reference called `ORIG_HEAD` pointing to the commit which was checked out before the rebase operation. 
+You may revert the rebase operation with reset as described above.
+
+[TIP]
+====
+You may hide or show the additional references such as `ORIG_HEAD`	and	`FETCH_HEAD` from the History View by selecting menu:Show[Additional Refs] in the drop-down menu.
+			
+image::show-additional-refs.png[Show Additional Refs,400,400]
+====
+
+
+=== Using interactive rebase to edit the commit message
+		
+Reword on of your commit messages via a right-click on it in the _History_ view and select menu:Modify[Reword]to change the commit message.
+
+
+=== Squash two commits
+
+Do another commit by adding a comment in the code to your last change. Commit this change via a new commit.
+		
+You realize that you wanted to combine the last two commits. 
+Use the _History_ view to combine them.
+You can squash several commits by selecting them in the _History_ view and by using the menu:Modify[Squash]	menu entry from the context menu.
+
+image::rebase_interactive_squaschcommits10.png[Squash a commit,400,400]
+		
+
+=== Remove a commit
+		
+Do two more commits, A followed by B. 
+You want to remove the commit A from your history. 
+Use the interactive rebase to perform this operation.
+		

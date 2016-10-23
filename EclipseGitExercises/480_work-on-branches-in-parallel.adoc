@@ -14,7 +14,7 @@ Create a new branch from the _History_ view.
 
 image::create-branch-from-history-view.png[Create Branch from History View]
 		
-Enter "addMultiplyOperation" as the name of the new branch. 
+Enter `addMultiplyOperation` as the name of the new branch. 
 Make sure the _checkout new branch_	checkbox is selected and click on the btn:[Finish] button.
 		
 Ensure that you don’t see the changes of the first exercise anymore in your workspace.
@@ -32,15 +32,15 @@ The easiest thing to do is to just commit your work in progress and change that 
 Use the _Git Staging_ view to enter a preliminary message, e.g. "[Unfinished] Add multiply operation", stage the files and click the btn:[Commit] button.
 				
 				
-Now you can switch to the first feature branch "addDivideOperation". 
+Now you can switch to the `addDivideOperation` feature branch . 
 This can be done by double clicking on the branch node in the Git Repositories View via the context menu by selecting menu:Team[Switch To addDivideOperation].
-Alternatively you can also select the _Checkout_ entry from the context menu on the "addDivideOperation" branch in the History View.
+Alternatively you can also select the _Checkout_ entry from the context menu on the `addDivideOperation` branch in the History View.
 				
 				
 Check that your workspace contains the changes you committed in your first feature (implementing divide) branch. 
 You could now continue working here. 
 For example: you may want to fix the division by zero issue if it is not already handled. 
-If you do any changes in the "addDivideOperation" branch don’t forget to commit them with amend before the next step
+If you do any changes in the `addDivideOperation` branch don’t forget to commit them with amend before the next step
 				
 Switch back to the "addMultiplyOperation" branch
 

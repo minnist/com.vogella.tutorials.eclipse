@@ -10,9 +10,9 @@ You create a new local branch for this purpose _fixWarnings_.
 However, let’s pretend that you forgot to checkout the _fixWarnings_ branch. 
 Instead you are on the _addDivideOperation_.
 
-To simulate that,create a new branch called _fixWarnings_ based on the _origin/master_branch. 
-But make sure the_checkout new branch_checkbox is deselected. 
-The new branch gets created but the _addDivideOperation_ branch is still checked out.
+To simulate that, create a new branch called _fixWarnings_ based on the _origin/master_branch. 
+But make sure the _checkout new branch_ checkbox is deselected. 
+The new branch gets created but the `addDivideOperation` branch is still checked out.
 
 image::create-branch-3.png[Create Branch]
 
@@ -20,9 +20,15 @@ Remove the field _serialVersionUID_ from _org.eclipse.example.calc.internal.ui.s
 Commit the changes. 
 This updates the _addDivideOperation_ branch.
 
-Realize that you committed changes in a wrong branch. Don’t panic.
+Realize that you committed changes in a wrong branch. 
 
-Reset the _addDivideOperation_ branch back to its previous state but keep the changes in the working tree. 
+[TIP]
+====
+Don’t panic.
+Git allow you to solve this.
+====
+
+Reset the `addDivideOperation` branch back to its previous state but keep the changes in the working tree. 
 You can do this, via the _History View_. 
 Find the parent commit of the tip of the _addDivideOperation_ branch and select menu:Reset[Mixed] from the context menu.
 
@@ -34,3 +40,4 @@ However, the fix for the warning is still in the working tree!
 Now, checkout the correct branch, the _fixWarnings_ branch.
 The changes are still in the working tree. 
 Commit the changes.
+

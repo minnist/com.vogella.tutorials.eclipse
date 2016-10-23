@@ -127,46 +127,23 @@ This option is only available if FindBugs is installed in your Eclipse.
 		
 Open the staging view by selecting
 menu:Window[Show View > Other… > Git Staging].
-This view presents which files you have touched and which files will be
-in the
-next commit.
-_Unstaged Changes_
-lists those changes which you have done locally
-but which you have not yet added to the index.
-_Staged Changes_
-list those
-changes which you already have added to the index. You can drag and drop
-files
-from one area to the other.
 		
-Git Staging view should list three files
-_.project_,
-_Calculator.java_
-and
-_Power.java_
-(
-_.project_
-appears only if you have configured FindBugs
-to run automatically).
+Git Staging view should list three files:
+
+*_`.project`
+* `Calculator.java`
+* `Power.java`
+
+`.project` appears only if you have configured FindBugs to run automatically.
 		
 image::staging-view.png[Staging view[]
 		
-Double-click on
-_.project_
-to inspect which changes you have done. This opens the
-_Compare_
-editor for this file.
+Double-click on `.project`to inspect which changes you have done. 
+This opens the _Compare_ editor for this file.
 		
 image::staging-view-2.png[Staging view[]
 		
-Drag and drop
-_Calculator.java_
-and
-_Power.java_
-to the
-_Staged Changes_
-area
-to mark that they should be included in the next commit.
+Drag and drop `Calculator.java` and `Power.java` to the _Staged Changes_ area to mark that they should be included in the next commit.
 		
 image::staging-view-3.png[Staging view[]
 

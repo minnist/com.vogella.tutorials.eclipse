@@ -1,10 +1,7 @@
 == Change a series of commits
 
-In this exercise you learn how you can rewrite the local
-history
-before you share it with others. After you have
-committed locally you
-can still change all commits in your local feature branch.
+In this exercise you learn how you can rewrite the local history before you share it with others. 
+After you have committed locally you can still change all commits in your local feature branch.
 
 === Preparation
 
@@ -16,23 +13,13 @@ image::history-view-8.png[History View]
 
 === Change the first commit
 
-* Create a new branch that points to the commit you want to change,
-in
-the screenshot below it&#8217;s the
-_Add multiply operation_
-commit. Use
-_Create Branch_
-to create a new branch, e.g. named
-_newMaster_
-.
-+
+* Create a new branch that points to the commit you want to change, in the screenshot below it is the `Add multiply operation` commit. 
+Use _Create Branch_to create a new branch, e.g. named `newMaster`.
+
 image::history-view-9.png[History View]
-+
 image::history-view-10.png[History View]
 
-* Edit the files in the workspace, e.g. add a class comment for the
-_Multiply_
-class.
+* Edit the files in the workspace, e.g. add a class comment for the _Multiply_class.
 
 * Now create a new commit with the combined changes of your first
 commit and your current changes. 
@@ -54,31 +41,20 @@ a branch or a tag).
 
 === Cherry-pick the rest
 
-* Select
-_Cherry Pick_
-on the other commit. This will add the
-difference of this commit compared to its parent on top of your new
-commit.
+* Select _Cherry Pick_ on the other commit. 
+This adds the difference of this commit compared to its parent on top of your new commit.
 
 image::cherry-pick.png[Cherry Pick]
 
 * You may have to resolve conflicts
-+
+
 image::cherry-pick-conflicts.png[Cherry Pick Conflicts]
-+
-In that case, edit the conflicting files, add the changes and
-commit
-like in the exercise
-merge-rebase-and-resolving-conflicts.html[
-Merge, Rebase and Resolving Conflicts.
+
+In that case, edit the conflicting files, add the changes and commit.
 
 * The result should look like this:
 
 image::history-view-12.png[History View]
 
-If you want to change more than one commit in a series git offers the
-powerful tool
-_git rebase --interactive_
-. This is not yet available in
-EGit, but can be used from the Git commandline.
+If you want to change more than one commit in a series Git offers the interactive rebase.
 

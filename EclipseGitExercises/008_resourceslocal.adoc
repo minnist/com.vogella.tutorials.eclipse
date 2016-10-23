@@ -1,4 +1,0 @@
-== EclipseGitExercises resources
-
-Nothing listed.
-

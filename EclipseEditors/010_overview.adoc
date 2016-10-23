@@ -60,7 +60,7 @@ For inform the workbench that the dirty property of the editor has changed you f
 
 [source, java]
 ----
-include::./res/save/change.txt[]
+include::res/save/change.txt[]
 ----
 
 
@@ -70,7 +70,7 @@ In a standalone RCP application you can make the editor area visible by changing
 
 [source, java]
 ----
-include::./res/editor/Perspective.java[]
+include::res/editor/Perspective.java[]
 ----
 
 
@@ -81,13 +81,13 @@ For this you need the EditorInput object and the ID for the editor which is defi
 
 [source, java]
 ----
-include::./res/api/openeditor.txt[]
+include::res/api/openeditor.txt[]
 ----
 
 To get the page you can use:
 
 [source, java]
 ----
-include::./res/api/page.txt[]
+include::res/api/page.txt[]
 ----
 

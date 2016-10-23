@@ -89,7 +89,7 @@ For example, for the save handler this looks like the following:
 
 [source, java]
 ----
-include::./res/snippets/bundleclass.txt[]
+include::res/snippets/bundleclass.txt[]
 ----
 
 image::handler10.png[Defining a handler in Eclipse 4]

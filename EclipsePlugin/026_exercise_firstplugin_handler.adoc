@@ -60,7 +60,7 @@ Create the following class based on the generated handler class.
 
 [source, java]
 ----
-include::./res/first/SampleE4Handler.java[]
+include::res/first/SampleE4Handler.java[]
 ----
 
 === Creating a model contribution

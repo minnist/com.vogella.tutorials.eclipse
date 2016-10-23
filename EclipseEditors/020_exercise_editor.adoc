@@ -10,14 +10,14 @@ Create the package _com.vogella.rcp.editor.example.model_ and create the followi
 
 [source, java]
 ----
-include::./res/model/Task.java[]
+include::res/model/Task.java[]
 ----
 
 The following class will serve as a data model content provider.
 
 [source, java]
 ----
-include::./res/model/TaskService.java[]
+include::res/model/TaskService.java[]
 ----
 
 
@@ -28,7 +28,7 @@ Create the following new class `TaskEditorInput` which implements `IEditorInput`
 
 [source, java]
 ----
-include::./res/editor/TaskEditorInput.java[]
+include::res/editor/TaskEditorInput.java[]
 ----
 
 
@@ -48,7 +48,7 @@ Make sure the variable _ID_ matches the ID of the editor extension.
 
 [source, java]
 ----
-include::./res/editor/TaskEditor.java[]
+include::res/editor/TaskEditor.java[]
 ----
 
 
@@ -62,7 +62,7 @@ Create the following class "com.vogella.rcp.editor.example.handler.CallEditor".
 
 [source, java]
 ----
-include::./res/editor/CallEditor.java[]
+include::res/editor/CallEditor.java[]
 ----
 
 
@@ -77,7 +77,7 @@ Whenever possible use the site to access Workbench objects.
 
 [source, java]
 ----
-include::./res/parts/TaskOverview.java[]
+include::res/parts/TaskOverview.java[]
 ----
 
 Add the _org.eclipse.ui.views_ extension point to the _plugin.xml_ and configure the _com.vogella.rcp.editor.example.taskoverview_ like this:

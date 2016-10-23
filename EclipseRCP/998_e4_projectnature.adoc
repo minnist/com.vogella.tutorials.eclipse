@@ -13,6 +13,6 @@ For this purpose remove the filter in the _Package Explorer_ view for files star
 
 [source, xml]
 ----
-include::./res/firstrcp/project[]
+include::res/firstrcp/project[]
 ----
 

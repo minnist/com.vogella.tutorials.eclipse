@@ -31,7 +31,7 @@ At first we create a `TaskSourceViewerConfiguration`, which extends `TextSourceV
 
 [source, java]
 ----
-include::./res/editor/text/config/TaskSourceViewerConfiguration.java[]
+include::res/editor/text/config/TaskSourceViewerConfiguration.java[]
 ----
 
 Here we configure a `ContentAssistant` so that it can be returned by the `getContentAssistant(ISourceViewer sourceViewer)` method.
@@ -42,7 +42,7 @@ Therefore we implement `computeCompletionProposals(ITextViewer viewer, int offse
 
 [source, java]
 ----
-include::./res/editor/text/config/TaskCompletionProcessor.java[]
+include::res/editor/text/config/TaskCompletionProcessor.java[]
 ----
 
 We also applied some rules for the content assist, so that it is a little bit context sensitive and only allows completion proposals at the beginning of a line and only those proposals, which are not already present in the document.
@@ -53,7 +53,7 @@ To apply this `TaskSourceViewerConfiguration` to our `TaskTextEditor`, we set it
 
 [source, java]
 ----
-include::./res/editor/text/TaskTextEditor.java[]
+include::res/editor/text/TaskTextEditor.java[]
 ----
 
 === Validating

@@ -68,6 +68,6 @@ You can visit this page later if you forgot the password.
 You need to upload your SSH key to the Gerrit installation so that you can push changes to Gerrit via SSH.
 Once you have created a SSH key pair, upload your public SSH key to Gerrit to be able to push to it.
 
-image::eclipsegerritsettings30.png[Upload SSH key, pdfwidth=40%]
+image::eclipsegerritsettings30.png[Upload SSH key, pdfwidth=20%]
 
 	

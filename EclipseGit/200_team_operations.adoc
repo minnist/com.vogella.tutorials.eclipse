@@ -2,12 +2,10 @@
 
 === Pull, push and fetch
 
-You can use the
-_Git Repositories_
-view to pull, push and fetch to remote repositories. Right click on
-your repository and select the appropriated operation.
+You can use the _Git Repositories_ view to pull, push and fetch to remote repositories. 
+Right click on your repository and select the appropriated operation.
 
-image::pullpush10.png[Pull push and fetch dialog]
+image::pullpush10.png[Pull push and fetch dialog, pdfwidth=40%]
 
 === Basic team operations
 

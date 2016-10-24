@@ -1,5 +1,4 @@
-== Rebase
-
+== Rebase
 
 === Rebasing a branch onto another
 

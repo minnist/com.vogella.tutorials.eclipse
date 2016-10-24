@@ -1,6 +1,5 @@
 == Rebase
 
-
 === Rebasing a branch onto another
 
 Now do a rebase of the conflicting commit instead of a merge.

@@ -1,4 +1,4 @@
-== Work on branches in parallel
+== Work on branches in parallel
 	
 In this exercise you learn how to change commits using the `amend` option of Git for commits.
 This is for example useful if you work in different branches in parallel and you want to temporarily save your work. 
@@ -63,3 +63,4 @@ The amend feature is often used to fix the commit message of what you just commi
 Now, change the commit message to something meaningful (e.g remove [UNFINISHED]) and via the `git commit --amend -m "New commit message".		
 
 Use `git log` to review the commit history. See that your first, preliminary commit was replaced by the new one.				
+

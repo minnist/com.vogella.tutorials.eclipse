@@ -31,7 +31,6 @@ Make sure the _Import all existing projects after clone finishes_ checkbox is se
 		
 image::finish-clone.png[Finish Git clone]    
 
-
 === Get familiar with the example projects
 
 The example repository contains two projects:

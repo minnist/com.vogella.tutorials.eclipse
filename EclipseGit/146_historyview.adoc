@@ -150,12 +150,9 @@ image::gitsearch10.png[Git search]
 
 === Showing details of a commit
 
-If you want to see more details about a commit, right-click it and
-select the
-_Open in Commit Viewer_
-entry.
+If you want to see more details about a commit, right-click it and select the _Open in Commit Viewer_ entry.
 
-image::commitviewer10.png[Commit Viewer]
+image::commitviewer10.png[Commit Viewer,pdfwidth=40%]
 
 image::commitviewer20.png[Commit Viewer]
 

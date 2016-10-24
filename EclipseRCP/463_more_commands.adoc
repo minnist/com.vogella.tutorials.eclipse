@@ -3,7 +3,6 @@
 [[commands_parameter]]
 === Passing parameters to commands
 (((Commands, Parameters)))
-
 You can also pass parameters to commands.
 For this select a command and press the btn:[Add] button in the _Parameters_ section.
 

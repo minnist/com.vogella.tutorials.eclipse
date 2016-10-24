@@ -1,8 +1,8 @@
 == Merge, Rebase and resolving conflicts
 
 === Target
-In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.
 
+In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.
 
 === Create a conflicting commit
 
@@ -14,25 +14,20 @@ Create a new local branch based on the remote tracking branch `origin/master`.
 
 Do a different change in the same class on the same line as in the other branch.
 For example, you may add a class `Multiply` and add a corresponding line to the `setupDefaultOperations` method in the `Calculator` class) and commit this change.
-			
-			
 
 === Trigger the first merge
-
 		
 Now you would like to have both new features in the master branch.
 One possibility to achieve that is to merge the branches into the master branch, one after the other. 
 Later in this exercise you will use the other option, the _rebase_ operation.
 		
-Ensure that you have checked out the  `master` branch where you want to have the merged state, i.e. where the merge commit will be
-created.
+Ensure that you have checked out the  `master` branch where you want to have the merged state, i.e. where the merge commit will be created.
 				
 Use the `git merge addDivideOperation` command.		
 This merges the content of the`addDivdeOperation` branch into the `master` branch. 
 Since there was no work done on the `master` branch and `addDivideOperation` points to a successor commit of the commit in
 master Git simply advances the `master`	branch to the same commit as the `addDivideOperation `branch. 
 Inspect this via the `git log --oneline --graph` command.
-				
 
 === Trigger the second merge
 
@@ -40,15 +35,12 @@ Merge now the branch which contains the conflicting commit.
 This merges the	content of this branch into the `master` branch. 
 This time the merge operation should  end with a conflicts.
 
-				
-
 === Resolving merge conflicts
 
 If a merge generates conflicts the repository is in a special state. 
 The conflicts have to be resolved until normal work can go on.
 		
 You can find the conflicting files by the `git status` command.
-		
 				
 If you open the conflicting file in an editor you will find the conflict markers there. 
 You can directly edit the file here.
@@ -56,7 +48,6 @@ You can directly edit the file here.
 Edit the merge conflict until you are happy with the change and use the `git add` command to stage the file which was resolved.
 	
 Use `git commit` to finsh the merge. Git creates a default merge commit message.
-			
 
 === Undo the merge with with the git reset operation
 		
@@ -65,6 +56,4 @@ You can easily undo the merge with the reset operation.
 he same can also be done if the merge is not finished but your repository is in state `Conflicting` or `Merged`.
 		
 To undo the merge, use the `git reset --hard HEAD~` command.
-				
-				
 				

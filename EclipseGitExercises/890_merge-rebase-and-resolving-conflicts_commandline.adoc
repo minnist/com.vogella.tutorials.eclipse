@@ -1,5 +1,4 @@
-== Merge, Rebase and resolving conflicts
-
+== Merge, Rebase and resolving conflicts
 
 === Target
 In this exercise you learn how to combine the work done in different branches and how to resolve the conflicts which can occur during that process.

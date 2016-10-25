@@ -68,36 +68,29 @@ paste
 HTML code
 containing a link into a string literal.
 
-<[source,java]
+[source,java]
 ----
 include::res/escape/Paste1.txt[]
 ----
 
 === Bracket highlighting
 
-You can configure Eclipse to highlight the matching brackets of
-a code block in the source code editor.
+You can configure Eclipse to highlight the matching brackets of a code block in the source code editor.
 
 image::jdtbrackets10.png[Highlight the enclosing brackets in JDT,width=30%]
 
 Before the change you would not see the enclosing brackets.
-Afterwards, they will be slightly highlighted. This
-helps to see in
-which block you are.
+Afterwards, they will be slightly highlighted. 
+This helps to see in which block you are.
 
-image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT]
+image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT, pdfwidth=40%]
 
-image::jdtbrackets30.png[With highlight the enclosing brackets in JDT]
+image::jdtbrackets30.png[With highlight the enclosing brackets in JDT, pdfwidth=40%]
 
 === Code cleanup during save via save actions
 
-Eclipse can cleanup your code and format it automatically during save (shortcut:
-kbd:[Ctrl+S]
-).
-You can find
-the corresponding
-settings under
-menu:Window[Preferences+Java[Editor > Save Actions].
+Eclipse can cleanup your code and format it automatically during save (shortcut: kbd:[Ctrl+S]).
+You can find the corresponding settings under menu:Window[Preferences+Java[Editor > Save Actions].
 
 Here you can define the actions which should be performed during save and via the
 btn:[Configure...]

@@ -83,9 +83,9 @@ Before the change you would not see the enclosing brackets.
 Afterwards, they will be slightly highlighted. 
 This helps to see in which block you are.
 
-image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT, pdfwidth=40%]
+image::jdtbrackets20.png[Without highlight the enclosing brackets in JDT, pdfwidth=20%]
 
-image::jdtbrackets30.png[With highlight the enclosing brackets in JDT, pdfwidth=40%]
+image::jdtbrackets30.png[With highlight the enclosing brackets in JDT, pdfwidth=20%]
 
 === Code cleanup during save via save actions
 

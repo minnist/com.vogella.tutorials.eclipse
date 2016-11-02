@@ -51,13 +51,8 @@ image::gitrepositoryview20.png[Git repository view context menu]
 
 === Open a commit
 
-If you are in the
-_Git repositories_
-view
-you can open a commit via the main Eclipse menu. To do this
-select the
-menu:Navigate[Open Git Commit]
-menu entry.
+If you are in the _Git repositories_ view you can open a commit via the main Eclipse menu. 
+To do this select the menu:Navigate[Open Git Commit] menu entry.
 
 image::opengit_commit08.png[Open Git Commit dialog]
 

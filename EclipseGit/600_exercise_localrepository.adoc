@@ -2,49 +2,29 @@
 
 === Target: Using Eclipse Git for a local repository
 
-The following section explains how to create a local Git
-repository for
-one
-project with Eclipse. This allows you
-to keep
-track
-of your changes in the project and allows you to
-revert to another
-state at a
-later
-point in time.
+The following section explains how to create a local Git repository for one project with Eclipse. 
+This allows you to keep track of your changes in the project.
+It also allows you to revert to another state at a later point in time.
 
 === Create a new Git repository via Eclipse
 
-Open the
-_Git Repositories_
-view and select the
-_Create a new Git repository and add it to this view_
-option.
+Open the _Git Repositories_ view and select the _Create a new Git repository and add it to this view_ option.
 
 image::egit_gitinit10.png[Git init with Eclipse Git]
 
-Select a new directory outside of your workspace. By convention this
-directory should be a subdirectory in the
-_git_
-folder of the users home directory.
+Select a new directory outside of your workspace. 
+By convention this directory is a subdirectory in the _git_ folder of the users home directory.
 
 image::egit_gitinit20.png[Git init with Eclipse Git]
 
-If you press the
-btn:[Finish] button this dialog creates the directory and adds a reference to the
-new Git
-repository
-to the
-_Git Repositories_
-view.
+If you press the btn:[Finish] button this dialog creates the directory and adds a reference to the new Git repository to the _Git Repositories_ view.
 
 image::egit_gitinit30.png[Git init with Eclipse Git]
 
 === Create .gitignore file
 
-You want to configure Git to ignore the generated bin folder with the
-class files. Create for this purpose a _.gitignore_ file in your Git repository with the following content. 
+You want to configure Git to ignore the generated bin folder with the class files. 
+Create for this purpose a _.gitignore_ file in your Git repository with the following content. 
 
 [NOTE]
 ====
@@ -58,11 +38,13 @@ include::res/gitignore/gitignore[]
 ----
 
 All files and directories which apply to the pattern described in this file will be ignored by Git. 
-In this example all files in the_bin_are ignored.
+In this example, all files in the _bin_ are ignored.
 
 
-NOTE:You can also configure Eclipse to automatically ignore derived resources, e.g., class files via the
-menu:Window[Preferences > Team > Git > Projects > Automatically ignore derived resources ..] setting.
+[NOTE]
+====
+You can also configure Eclipse to automatically ignore derived resources, e.g., class files via the menu:Window[Preferences > Team > Git > Projects > Automatically ignore derived resources ..] setting.
+====
 
 === Creating an Eclipse project
 
@@ -140,7 +122,7 @@ image::exericse_historyview20.png[History View]
 
 === Open an older version with the current version of a file via the History view
 
-Open the version for the first commit of `GitTest` via the _History__view.
+Open the version for the first commit of `GitTest` via the _History_ view.
 
 image::exericse_historyview30.png[History View]
 

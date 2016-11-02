@@ -32,21 +32,21 @@ The easiest thing to do is to just commit your work in progress and change that 
 Use the _Git Staging_ view to enter a preliminary message, e.g. "[Unfinished] Add multiply operation", stage the files and click the btn:[Commit] button.
 				
 				
-Now you can switch to the `addDivideOperation` feature branch . 
-This can be done by double clicking on the branch node in the Git Repositories View via the context menu by selecting menu:Team[Switch To addDivideOperation].
-Alternatively you can also select the _Checkout_ entry from the context menu on the `addDivideOperation` branch in the History View.
+Now you can switch to the `addDivideOperation` feature branch. 
+This can be done by double clicking on the branch node in the _Git Repositories_ view via the context menu by selecting menu:Team[Switch To addDivideOperation].
+Alternatively, you can also select the _Checkout_ entry from the context menu on the `addDivideOperation` branch in the _History_ view.
 				
 				
 Check that your workspace contains the changes you committed in your first feature (implementing divide) branch. 
 You could now continue working here. 
-For example: you may want to fix the division by zero issue if it is not already handled. 
+For example, you may want to fix the division by zero issue if it is not already handled. 
 If you do any changes in the `addDivideOperation` branch don’t forget to commit them with amend before the next step
 				
-Switch back to the "addMultiplyOperation" branch
+Switch back to the `addMultiplyOperation` branch
 
-=== Continue working on the branch adding Multiply
+=== Continue working on the `addMultiplyOperation` branch 
 				
-Do another change in the workspace improving Multiply.
+Do another change in the workspace improving the multiply functionality.
 				
 Compare your changed project with the first, preliminary commit by selecting menu:Compare With[HEAD revision]. 
 This shows you the changes you will add on top of the first commit.

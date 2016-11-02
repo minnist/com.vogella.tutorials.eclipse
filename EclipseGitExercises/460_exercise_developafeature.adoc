@@ -46,18 +46,18 @@ To register the new operation add a corresponding line to the `Calculator.setupD
 image::register-divide.png[Register Divide class]	
 		
 		
-=== Test your feature
+=== Test your new developed feature
 
 Run the unit tests to ensure that you did not break anything.
 		
 image::run-tests.png[Run Tests, 400, 400]	
 
 
-[[_commit_your_changes_locally]]
+[[commit_your_changes_locally]]
 === Commit your changes locally
 
 Use the Staging View to commit your changes in your current branch.
-Open the staging view by selecting menu:Window[Show View > Other… > Git Staging].
+Open the staging view by selecting menu:Window[Show View> Other… > Git Staging].
 Verify that `Author` and `Committer` contain both your full name and your correct e-mail address in the following format:
 
 [source]
@@ -79,16 +79,15 @@ Correct the values for `user.name` and `user.email`.
 
 As result your changes are committed in your `local` repository
 
-
-== Develop another feature using the Staging View
+== Develop another feature
 
 In this exercise you learn how work on multiple features in parallel. 
 
-=== Create another local Feature Branch and check it out
+=== Create another local feature branch and check it out
 		
 Right-click on your Project and select menu:Team[Switch to>New branch].
-Select as _source ref the remote tracking branch `refs/remotes/origin/master`. 
-Use _addPowerOperation_ as branch name. 
+Select as source ref the remote tracking branch `refs/remotes/origin/master`. 
+Use `addPowerOperation` as branch name. 
 Check the _Checkout new branch_ checkbox and press the btn:[Finish] button.
 
 image::create-branch-2.png[Create branch]
@@ -107,30 +106,23 @@ image::register-power.png[Register Power]
 
 === Do a undesired modification
 		
-Sometimes you want to locally change a file but don&#8217;t want this modification to
-be included in the next commit.
-E.g. certain project modifications are
-important to you but others shouldn&#8217;t see them. To simulate
-this
-right-click on
-your project and select
-menu:Properties[FindBugs]
-and select the button
-btn:[Run automatically].
+Sometimes you want to locally change a file but do not want this modification to be included in the next commit.
+E.g. certain project modifications are important to you but others should not see them. 
+To simulate this right-click on your project and select menu:Properties[FindBugs] and select the button btn:[Run automatically].
 
 [NOTE]
 ====
-This option is only available if FindBugs is installed in your Eclipse.
+This option is only available, if FindBugs is installed in your Eclipse.
+If you did not install Findbugs, simply create a new text file.
 ====
 
 === Open the Git Staging view and inspect the status
 		
-Open the staging view by selecting
-menu:Window[Show View > Other… > Git Staging].
+If the staging view is closed, reopen it by selecting menu:Window[Show View > Other… > Git Staging].
 		
 Git Staging view should list three files:
 
-*_`.project`
+* `.project`
 * `Calculator.java`
 * `Power.java`
 
@@ -143,7 +135,8 @@ This opens the _Compare_ editor for this file.
 		
 image::staging-view-2.png[Staging view[]
 		
-Drag and drop `Calculator.java` and `Power.java` to the _Staged Changes_ area to mark that they should be included in the next commit.
+Drag and drop `Calculator.java` and `Power.java` to the _Staged Changes_ area.
+This marks them to be included in the next commit.
 		
 image::staging-view-3.png[Staging view[]
 

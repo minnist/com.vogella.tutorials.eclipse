@@ -1,33 +1,20 @@
 [[_push_to_the_forked_repository]]
 == Push to the forked repository
 
-In this exercise you learn how to push commits from your local repository
-to a remote repository. You will
-reuse
-your already cloned repository and add
-the fork as another remote repository.
+In this exercise you learn how to push commits from your local repository to a remote repository. 
+You use your already cloned repository and add the fork as another remote repository.
 
-NOTE: Another way to achieve the goal would be
-to create a new clone of the forked repository. However, having
-everything in one
-repository has many advantages. For example, in eclipse you can then easily
-checkout versions of your
-projects from the two remote repositories
+[NOTE]
+====
+Another way to achieve the goal would be to create a new clone of the forked repository. 
+However, having everything in one repository has many advantages. 
+For example, in Eclipse you can then easily checkout versions of your projects from the two remote repositories
+====
 
 [[_add_a_new_remote]]
 === Add a new remote
 
-Git allows that you have more than one remote repository for a local repository.
-In the
-local repository you can
-address each remote repository by a shortcut.
-This shortcut is simply called
-`remote`. 
-For such a remote several properties can be
-specified, e.g. URL, branches to fetch or branches to push. When you
-cloned your repository, Bit already created
-a default remote called
-`origin`. 
+When you cloned your repository, Git already created a default remote called `origin`. 
 You now create a second remote for your fork at Github.
 
 You will need the URL. Copy it to the clipboard from Github.

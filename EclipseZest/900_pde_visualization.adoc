@@ -1,9 +1,5 @@
 == PDE Dependency Visualization
 	
-A good and extensive example for the usage of Zest for
-visualization of
-plug-in dependencies is the PDE Incubator Dependency
-Visualization. See
-http://www.eclipse.org/pde/incubator/dependency-visualization/getsource.php[here]
-to see how to get the source code.
+A good and extensive example for the usage of Zest for visualization of plug-in dependencies is the PDE Incubator Dependency Visualization. 
+See https://marketplace.eclipse.org/content/pde-incubator-dependency-visualization[PDE Incubator Dependency Visualization] for details.
 

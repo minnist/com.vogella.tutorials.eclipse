@@ -6,5 +6,5 @@ http://www.eclipse.org/gef/zest/[Eclipse Zest Homepage]
 
 http://wiki.eclipse.org/index.php/GEF_Zest_Visualization[Eclipse Zest Wiki]
 
-http://www.eclipse.org/gef/zest/snippets.php[Eclipse Zest Snippets]
+http://www.eclipse.org/mylyn/sandbox/zest/zest_snippets.php[Eclipse Zest Snippets]
 

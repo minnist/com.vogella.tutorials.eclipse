@@ -13,6 +13,8 @@ public class MyNonModularDialog extends Dialog {
 
 	public MyNonModularDialog(Shell parentShell) {
 		super(parentShell);
+		setShellStyle(SWT.CLOSE | SWT.MODELESS | SWT.BORDER | SWT.TITLE);
+		setBlockOnOpen(false);
 	}
 
 	@Override
@@ -27,11 +29,5 @@ public class MyNonModularDialog extends Dialog {
 	@Override
 	protected Point getInitialSize() {
 		return new Point(450, 300);
-	}
-
-	@Override
-	protected void setShellStyle(int newShellStyle) {
-		super.setShellStyle(SWT.CLOSE | SWT.MODELESS | SWT.BORDER | SWT.TITLE);
-		setBlockOnOpen(false);
 	}
 }

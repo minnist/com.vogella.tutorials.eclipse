@@ -32,6 +32,13 @@ Unfortunately Eclipse Git does not allow to create a file directly in the reposi
 You have to do this step outside of the Eclipse IDE, either via the command line or via your system project explorer.
 ====
 
+[TIP]
+====
+Recent versions of MS Windows decided to prevent you from renaming a file in the file explorer without using a file extension.
+Create a file in _Notepad_ or _Editor_ (new name for Notepad) and select Save-As.
+Ensure you have removed the .txt extension.
+====
+
 [source,text]
 ----
 include::res/gitignore/gitignore[]

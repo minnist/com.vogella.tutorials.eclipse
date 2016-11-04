@@ -2,80 +2,60 @@
 == Synchronizing with a share remote repository
 
 In this exercise you learn a typical workflow, when you work with others at the same remote repository.
-All
-developers push to the same branch. Typically this branch has evolved since you started your local feature and a push
-will fail.
+All developers push to the same branch. 
+Typically, this branch has evolved since you started your local feature and a push fails.
 Here you learn how you can handle this common situation.
 
 [[_preparation6]]
 === Preparation
 
-For this exercise, we use the a new repository at
-https://github.com/vogella/gittraining-shared.git. 
+For this exercise, we use the a new repository at https://github.com/vogella/gittraining-shared.git. 
 Clone this repository and import the existing project into your workspace.
 
-Ask the trainers to add you as a coworker to this repository. Otherwise you are not authorized to push.
+Ask the trainers to add you as a coworker to this repository. 
+Otherwise you are not authorized to push.
 
-Change one of the existing files and create new files and use the Git Staging view to create a new commit
-in your
-local repository.
+Change one of the existing files and create new files and use the Git Staging view to create a new commit in your local repository.
 
 [[_configure_push]]
 === Configure push
 
-First you have to configure that a push to origin pushes to the master branch. Select `Configure Push&#8230;`
+First you have to configure that a push to origin pushes to the master branch. Select `Configure Push...`.
+Afterwards press the btn:[Add...] button.
 
 image::configure_push_to_master.png[pdfwidth=50%, Configure Push to Origin]
 
-Now enter master into the
-`Remote branch`
-field. Leave
-`HEAD`
-in the
-`Local branch`
-field. This means that always the currently checked out
-commit will be pushed to master (and of course all its
-ancestors which are not yet in the remote repository).
+Now enter master into the `Remote branch` field. 
+Leave `HEAD` in the `Local branch` field. 
+This means that always the currently checked out commit will be pushed to master (and of course all its ancestors which are not yet in the remote repository).
 
 image::refspec_master.png[pdfwidth=50%, Push Refspec]
 
 [[_try_to_push_to_origin]]
 === Try to push to origin
 
-Try to push. If you are the first one to push the push is successful. If someone else have pushed a commit
-into
-the master branch of the central repository your push fails.
+Try to push. If you are the first one to push the push is successful. 
+If someone else have pushed a commit into the master branch of the central repository your push fails.
 
-Select
-`Push to Upstream`
-in the Git Repositories view or
-`Team &gt; Push to Upstream`
-in the package explorer.
+Select `Push to Upstream` in the Git Repositories view or`Team &gt; Push to Upstream` in the package explorer.
 You should get the following error dialog, in case someone else pushed before you:
 
 image::push_rejected.png[pdfwidth=50%, Push Rejected]
 
-This means that git cannot incorporate your commit into the master branch, because your commit is not based
-on
-its
-latest state. You first have to fetch the latest state and rebase your local branch on top of it.
+This means that git cannot incorporate your commit into the master branch, because your commit is not based on its latest state. 
+You first have to fetch the latest state and rebase your local branch on top of it.
 
 [[_fetch_from_origin_and_rebase]]
 === Fetch from origin and rebase
 
-Fetch the latest change from the remote repository and integrate the latest change into your local repository
-by
-merging or rebasing it and resolving any possible merge conflict.
+Fetch the latest change from the remote repository and integrate the latest change into your local repository by merging or rebasing it and resolving any possible merge conflict.
 
 image::rebaseontop.png[pdfwidth=50%, Rebase on top]
 
 [[_push]]
 === Push
 
-Now you can try to push again. If you are lucky and no other training participant has successfully pushed in
-the
-meantime,
-your push will succeed.
+Now you can try to push again. If you are lucky and no other training participant has successfully pushed in the meantime, your push will succeed.
 
 image::after_push.png[pdfwidth=50%, After push]
 

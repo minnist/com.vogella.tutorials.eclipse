@@ -1,99 +1,53 @@
 == Create your first Java program
 
 The following section describes how to create a minimal Java application using Eclipse. 
-It is tradition in the programming world to
-create a
-small program which writes "Hello World" to the console. We
-will
-adapt
-this tradition and will
-write "Hello Eclipse!" to the
-console.
+It is tradition in the programming world to create a small program which writes "Hello World" to the console. 
+We will adapt this tradition and will write "Hello Eclipse!" to the console.
 
 === Create project
 
 This {textselfreference} uses the naming convention that the project is named the same as the top-level package in the project.
 
-Select
-menu:File[New > Java project]
-from the menu. Enter
-`de.vogella.eclipse.ide.first`
-as the project name. Select the
-_Create separate folders for sources and class files_ flag.
+Select menu:File[New > Java project] from the menu. 
+Enter `de.vogella.eclipse.ide.first` as the project name. 
+Select the _Create separate folders for sources and class files_ flag.
 
 image::firstgany10.gif[New Java Project Wizard]
 
-Press the
-btn:[Finish]
-button to create the project. A new project is created
-and
-displayed as
-a folder. Open the
-`de.vogella.eclipse.ide.first`
-folder and explore the content of this folder.
+Press the btn:[Finish] button to create the project. 
+A new project is created and displayed as a folder. 
+Open the `de.vogella.eclipse.ide.first` folder and explore the content of this folder.
 
 === Create package
 
-In the following step you create a new
-`package`. A good convention for the project and package name is to use the
-same name
-for the top level package
-and
-the
-project. For example, if you
-name your project
-`com.example.javaproject`
-you should also use
-`com.example.javaproject`
-as the top-level package name.
+In the following step you create a new `package`. 
+A good convention for the project and package name is to use the same name for the top level package and the project. 
+For example, if you name your project `com.example.javaproject` you should also use `com.example.javaproject` as the top-level package name.
 
-To create the
-`de.vogella.eclipse.ide.first`
-package, select the
-`src`
-folder, right-click on it and select menu:New[Package].
+To create the `de.vogella.eclipse.ide.first` package, select the `src` folder, right-click on it and select menu:New[Package].
 
 image::firstgany30.gif[Right mouse click to create a package]
 
-TIP: Reverse domain names should be used for packages to prevent
-name
-clashes. It is relatively unlikely that another company defines a
-class called
-`test`
-in the
-`com.vogella`
-package because this is the reverse URL of the vogella GmbH company.
+TIP: Reverse domain names should be used for packages to prevent name clashes. 
+It is relatively unlikely that another company defines a class called `test` in the `com.vogella` package because this is the reverse URL of the vogella GmbH company.
 
-Enter the name of your new package in the dialog and press the
-btn:[Finish] button.
+Enter the name of your new package in the dialog and press the btn:[Finish] button.
 
 image::firstgany40.gif[Create a package Dialog]
 
 === Create Java class
 
-Create a Java class. Right-click on your package and
-select
-menu:New[Class].
+Create a Java class. Right-click on your package and select menu:New[Class].
 
 image::firstgany50.gif[Create a new class selection]
 
-Enter
-`MyFirstClass`
-as the class name and
-select the
-_public static void main
-(String[] args)
-_
-checkbox.
+Enter `MyFirstClass` as the class name and select the _public static void main (String[] args)_ checkbox.
 
 image::firstgany60.gif[Create a new class selection]
 
-Press the
-btn:[Finish]
-button.
+Press the btn:[Finish] button.
 
-This creates a new file and opens the Java
-_editor_.
+This creates a new file and opens the Java _editor_.
 Change the class based on the following listing.
 
 [source,java]
@@ -101,16 +55,13 @@ Change the class based on the following listing.
 include::res/firstexample/MyFirstClass.java[]
 ----
 
-You could also directly create new packages via this dialog. If
-you enter a new package in this dialog, it is created automatically.
+You could also directly create new packages via this dialog. 
+If you enter a new package in this dialog, it is created automatically.
 
 === Run your project in Eclipse
 
-Now run your code. Either right-click on your Java class in the
-_Package Explorer_
-or right-click in the Java class and
-select
-menu:Run-as[Java application].
+Now run your code. 
+Either right-click on your Java class in the _Package Explorer_ or right-click in the Java class and select menu:Run-as[Java application].
 
 image::firstgany70.gif[Run project]
 
@@ -119,8 +70,5 @@ You should see the output in the _Console_ view.
 
 image::firstgany80.gif[Result of the running application]
 
-Congratulations! You created your first Java project, a
-package,
-a Java class and you ran this program inside
-Eclipse.
+Congratulations! You created your first Java project, a package, a Java class and you ran this program inside Eclipse.
 

@@ -2,22 +2,12 @@
 
 === Package Explorer or Project Explorer
 
-The primary way of navigating through your project is the
-_Package Explorer_
-or alternatively the
-_Project Explorer_
-view. You can open nodes in the tree and open a file in an editor
-by
-double-clicking on the corresponding entry in the
-tree hierarchy.
+The primary way of navigating through your project is the _Package Explorer_ or alternatively the _Project Explorer_ view. 
+You can open nodes in the tree and open a file in an editor by double-clicking on the corresponding entry in the tree hierarchy.
 
 image::packageexplorer10_display.png[Package Explorer display,pdfwidth=40%]
 
-The drop-down menu in the
-_Package Explorer_
-allows you to filter
-the resources which should be displayed or
-hidden.
+The drop-down menu in the _Package Explorer_ allows you to filter the resources which should be displayed or hidden.
 
 image::packageexplorer20_filter.png[Filter in the package explorer,pdfwidth=40%]
 
@@ -25,116 +15,48 @@ image::packageexplorer22_filter.png[Filter in the package explorer,pdfwidth=40%]
 
 === Link Package Explorer with editor
 
-The
-_Package Explorer_
-view
-allows you to display the associated file from
-the
-currently selected
-editor. For example, if you are working on the
-`Foo.java`
-file in the Java
-_editor_
-and
-switch to the Java
-_editor_
-of the
-`Var.java`
-file,
-then the corresponding file will be selected in
-the
-_Package Explorer_
-view.
+The _Package Explorer_ view allows you to display the associated file from the currently selected editor. 
+For example, if you are working on the `Foo.java` file in the Java _editor_ and switch to the Java _editor_ of the `Var.java` file, then the corresponding file will be selected in the _Package Explorer_ view.
 
-To activate this behavior, press the
-btn:[Link with Editor] button in
-the
-_Package explorer_ view
-as depicted in the following screenshot.
+To activate this behavior, press the btn:[Link with Editor] button in the _Package explorer_ view as depicted in the following screenshot.
 
 image::editorsyncpackage10.png[Synchronize the package explorer selectioni with the current selected editor,pdfwidth=40%]
 
 === Opening a class
 
-You can navigate between the classes in your project via the
-_Package Explorer_
-view
-as described before. You can navigate the tree and open a file via
-a double-click.
+You can navigate between the classes in your project via the _Package Explorer_ view as described before. 
+You can navigate the tree and open a file via a double-click.
 
-In addition, you can open any class by positioning the cursor
-on
-the
-class
-in
-an editor and pressing
-kbd:[F3]. 
+In addition, you can open any class by positioning the cursor on the class in an editor and pressing kbd:[F3]. 
 Alternatively, you can press kbd:[Ctrl+Shift+T]. 
-This shows the following dialog in which you can enter the
-class name
-to open
-it.
+This shows the following dialog in which you can enter the class name to open it.
 
 image::classopen10.png[Opening a class]
 
-You can also search for package names. Each part of the package name
-must end with a `.` (the
-_dot_
-character)
-so that the
-_Open Type Dialog_
-can identify it as a package.
+You can also search for package names. 
+Each part of the package name must end with a `.` (the _dot_ character) so that the _Open Type Dialog_ can identify it as a package.
 
-TIP: You only need to specify part of each
-segment of the package name.
-Assume, for example, that you search for
-the
-_org.eclipse.swt.widgets.Button_
-class. To
-find this class, you can use the search term
-_org.eclipse.swt.widgets.Button_
-or
-_o.e.s.w.Button_
-or
-_o.Button_.
+TIP: You only need to specify part of each segment of the package name. 
+Assume, for example, that you search for the _org.eclipse.swt.widgets.Button_ class. 
+To find this class, you can use the search term _org.eclipse.swt.widgets.Button_ or _o.e.s.w.Button_ or _o.Button_.
 
 image::classopen20.png[Opening a class with package name]
 
-The
-_Open Type Dialog_
-also supports
-_CamelCase_
-like
-search, e.g., it matches capital letters in the class name. For
-example, if you would search for the
-`OnTouchListener`
-class you could use
-_OTL_
-or
-_OToList_
-as search term.
+The _Open Type Dialog_ also supports _CamelCase_ like search, e.g., it matches capital letters in the class name. 
+For example, if you would search for the `OnTouchListener` class you could use _OTL_ or _OToList_ as search term.
 
 image::classopen30.png[Opening a class with CamelCase]
 
 TIP: To avoid suffix matching, you can add a space after the class name.
-For
-example, you can type
-_Selection_
-(there is a space after selection) to match the
-`Selection`
-class but not the
-`SelectionListener`
-class. Wildcards like * are also supported.
+For example, you can type _Selection_ (there is a space after selection) to match the `Selection` class but not the `SelectionListener` class. 
+Wildcards like * are also supported.
 
 === Open Resource dialog to open arbitrary files
 
-You can open any file from your open projects via the
-_Open Resource_
-dialog. You can open this dialog via the
-kbd:[Ctrl+Shift+R]
-shortcut. This dialog allows to enter the file name
-and to open or show it in a selected view. The following
-screenshot demonstrate the usage to open a pom.xml file from your workspace.
+You can open any file from your open projects via the _Open Resource_ dialog. 
+You can open this dialog via the kbd:[Ctrl+Shift+R] shortcut. 
+This dialog allows to enter the file name and to open or show it in a selected view. 
+The following screenshot demonstrate the usage to open a pom.xml file from your workspace.
 
 image::openresourceeclipse10.png[Open resources in Eclipse,pdfwidth=40%]
 
@@ -145,44 +67,17 @@ For example, for a Java class you see its methods with the option to filter.
 The shortcut for opening the _Quick Outline_ is kbd:[Ctrl+O]. 
 You can also reach this option, via right-click in an editor via the _Quick Outline_ option.
 
-By default,
-_Quick Outline_
-shows only the direct members and fields of the Java class. Press
-kbd:[Ctrl+O]
-again to show also the inherited members and fields.
+By default, _Quick Outline_ shows only the direct members and fields of the Java class. 
+Press kbd:[Ctrl+O] again to show also the inherited members and fields.
 
-The default look of the
-_Quick Outline_
-option is similar to the
-_Quick Outline_
-view
-of the
-_Java_
-_perspective_.
+The default look of the _Quick Outline_ option is similar to the _Quick Outline_ view of the _Java_ _perspective_.
 
 === Open Type Hierarchy
 
-The type hierarchy of a class shows you which classes it extends
-and
-which interfaces it implements. You can use
-the type hierarchy to
-navigate to one of these elements.
+The type hierarchy of a class shows you which classes it extends and which interfaces it implements. 
+You can use the type hierarchy to navigate to one of these elements.
 
-To open the type
-hierarchy of the
-selected class, right-click
-in
-the
-editor and
-select
-_Open Type Hierarchy_
-(Shortcut:
-kbd:[F4]
-) or
-_Quick Type Hierarchy_
-(Shortcut:
-kbd:[Ctrl+T]
-).
+To open the type hierarchy of the selected class, right-click in the editor and select _Open Type Hierarchy_ (Shortcut: kbd:[F4]) or _Quick Type Hierarchy_ (Shortcut: kbd:[Ctrl+T]).
 
 === Full text search
 
@@ -245,42 +140,24 @@ image::navigation_annotations20.png[Annotation navigation,pdfwidth=40%]
 
 === Mouse and keyboard navigation
 
-In a lot of cases you can also use the mouse to navigate to or into an element if you press the kbd:[Ctrl]
-key. For example, press the
-kbd:[Ctrl]
-key and (left) click with the mouse on the name of a class to jump
-into the class
-declaration.
+In a lot of cases you can also use the mouse to navigate to or into an element if you press the kbd:[Ctrl] key. 
+For example, press the kbd:[Ctrl] key and (left) click with the mouse on the name of a class to jump into the class declaration.
 
-Similar to the left mouse click combined with the
-kbd:[Ctrl],
-you can use the
-kbd:[F3]
-key to go into a class.
+Similar to the left mouse click combined with the kbd:[Ctrl], you can use the kbd:[F3] key to go into a class.
 
 === Show in Breadcrumb
 
-You can also activate the
-_breadcrumb_
-mode for the Java editor
-which allows you to navigate the source code
-directly from the Java
-editor.
+You can also activate the _breadcrumb_ mode for the Java editor which allows you to navigate the source code directly from the Java editor.
 
-You can activate this mode via right-click in the editor and by
-selecting the
-_Show in Breadcrumb_
-entry.
+You can activate this mode via right-click in the editor and by selecting the _Show in Breadcrumb_ entry.
 
-image::breadcrumb10.png[Show in Breadcrumb]
+image::breadcrumb10.png[Show in Breadcrumb, pdfwidth=40%]
 
-This allows you to navigate the source code from the editor as
-depicted in the following screenshot.
+This allows you to navigate the source code from the editor as depicted in the following screenshot.
 
 image::breadcrumb20.png[Breadcrumb view]
 
-To hide it again, right-click on a breadcrump entry and select
-_Hide Breadcrumb_.
+To hide it again, right-click on a breadcrump entry and select _Hide Breadcrumb_.
 
 image::breadcrumb30.png[Breadcrumb view]
 
@@ -291,33 +168,14 @@ Please check the appendix of this {textselfreference} for these shortcuts or ope
 
 === Closing and opening projects
 
-Closing projects saves memory in Eclipse and can reduce the build
-time. Eclipse ignores closed
-projects, e.g., all
-searches ignore files from closed projects. Also the
-_Problems_
-view
-does only shows errors of opened projects. This typically helps you
-focus your attention on the project. You can
-close projects via a right-click on it and by selecting the
-_Close Project_
-menu entry.
-Alternatively, if you work on a project, you can close all
-unrelated
-projects via a right-click on it and by
-selecting the
-_Close Unrelated Projects_
-menu entry.
+Closing projects saves memory in Eclipse and can reduce the build time. 
+Eclipse ignores closed projects, e.g., all searches ignore files from closed projects. 
+Also the _Problems_ view does only shows errors of opened projects. 
+This typically helps you focus your attention on the project. 
+You can close projects via a right-click on it and by selecting the _Close Project_ menu entry.
+Alternatively, if you work on a project, you can close all unrelated projects via a right-click on it and by selecting the _Close Unrelated Projects_ menu entry.
 
-To open a
-closed project double-click on it, or right-click it
-and
-select
-_Open Project_.
+To open a closed project double-click on it, or right-click it and select _Open Project_.
 
-You can
-use the filter functionality for the
-_Package Explorer_
-view
-to hide the closed projects.
+You can use the filter functionality for the _Package Explorer_ view to hide the closed projects.
 

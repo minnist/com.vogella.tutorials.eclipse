@@ -151,7 +151,7 @@ You can also activate the _breadcrumb_ mode for the Java editor which allows you
 
 You can activate this mode via right-click in the editor and by selecting the _Show in Breadcrumb_ entry.
 
-image::breadcrumb10.png[Show in Breadcrumb, pdfwidth=40%]
+image::breadcrumb10.png[Show in Breadcrumb, pdfwidth=20%]
 
 This allows you to navigate the source code from the editor as depicted in the following screenshot.
 

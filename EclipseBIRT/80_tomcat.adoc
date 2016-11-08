@@ -50,6 +50,7 @@ image::SNAG-0042.gif[]
 After that the jar file has to be copied to the Tomcat
 webapps/birt/WEB-INF/lib/ directory. Restart the Tomcat and navigate
 to your report.
+
 Your report should be found under
 
 ....

@@ -9,5 +9,5 @@ http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Fguide%
 
 http://www.jave.de/eclipse/poormansquickfix/[Plug-in for creating custom quickfixes based on regular expressions]
 
-https://jaxenter.de/eclipse-jdt-um-eigene-quickfixes-erweitern-9425[Create custom quick fixes for Eclipse JDT (German)]
+link:++https://jaxenter.de/eclipse-jdt-um-eigene-quickfixes-erweitern-9425++[Create custom quick fixes for Eclipse JDT (German)]
 

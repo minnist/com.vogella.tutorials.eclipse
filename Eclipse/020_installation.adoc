@@ -63,7 +63,8 @@ java -version
 ----
 
 on the command line. 
-If the output does not contain the word "Server" you are using the 32 bit version of Java and must use a 32 bit version of Eclipse.
+If the output does contain the word "Server" you are using the 64 bit version of Java and must use a 64 bit version of Eclipse.
+If it does not contain "Server", you have to use the 32 bit version of Eclipse.
 
 === Starting the Eclipse IDE
         

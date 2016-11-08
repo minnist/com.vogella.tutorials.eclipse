@@ -1,125 +1,63 @@
+[[contextfunctionschapter]]
 == Context functions
 
 === What are context functions?
 
-A _context function_
-is an OSGi service which has access to the
-`IEclipseContext`. 
-It allows you to lazily create an object for a given key if this key
-is
-not contained in the relevant
-`IEclipseContext`.
+A _context function_ is an OSGi service which has access to the `IEclipseContext` of the requester. 
+It allows you to lazily create an object for a given key, if this key is not contained in the relevant `IEclipseContext`.
 
-The context
-function registers itself for a certain key, for
-example a
-class
-name.
-Whenever the Eclipse
-dependency
-injection does not find an
-existing object
-under this key, it calls the
-`compute()`
-method of the object registered as context function.
+The context function registers itself for a certain key, for example a class name.
+Whenever the Eclipse dependency injection does not find an existing object under this key, it calls the `compute()` method of the context function.
 
 image::contextfunctionoverview10.png[Context function query]
 
-In this
-`compute()`
-method the context function creates
-the requested
-object. As input you
-receive the local
-`IEclipseContext`
-in which the injection was invoked and the requested key.
+In this `compute()` method the context function can create the requested object. 
+As input you receive the local `IEclipseContext` in which the injection was invoked and the requested key.
 
-It can also
-persist the created object into the
-context so that
-successive calls will return the same generated
-object.
+It can also persist the created object into the context, so that successive calls will return the same generated object.
 
 === Creation of a context function
 
-Context functions
-are typically contributed as OSGi services. They
-extend the
-`ContextFunction`
-class from the
-`org.eclipse.e4.core.contexts`
-package. The Eclipse runtime adds
-context functions
-by default to the
-application context.
+Context functions can be contributed as OSGi services. 
+They extend the `ContextFunction` class from the `org.eclipse.e4.core.contexts` package.
+The Eclipse runtime adds context functions by default to the application context.
 
-They register itself as OSGi service for the
-`IContextFunction`
-interface.
+They register itself as OSGi service for the `IContextFunction` interface.
 
 [TIP]
 ====
-Question: Why should you register your service for the
-`IContextFunction`
-interface
-but extend the
-`ContextFunction`
-class?
+Question: 
+Why should you register your service for the `IContextFunction` interface but extend the `ContextFunction` class?
 
 Answer:
-If the interface gets another method in a later
-Eclipse
-release
-your
-service continues to work, as the abstract
-class
-`ContextFunction`
-can provide a default implementation.
+If the interface gets extended by a new methodyour service continues to work, as the abstract class `ContextFunction` can provide a default implementation.
 ====
 
-You need to specify the key the context function is responsible for. This is done via the
-_service.context.key_
-property in the service definition.
+You need to specify the key the context function is responsible for. 
+This is done via the _service.context.key_ property in the service definition.
 
 If the key is a class you have to point to the fully qualified class.
-This key can
-be used for dependency
-injection.
-If
-you register a key which is not a class name, a consumer of
-the injection would
-have to use
-the
-`@Named`
-annotation to specify the key.
+This key can be used for dependency injection.
+If you register a key which is not a class name, a consumer of the injection can use the `@Named` annotation to specify the key.
 
 === Examples for context function registrations
 
-The following example shows the declaration of a
-context function.
-This
-function is available in the application context
-and responsible
-for
-the
-`vogella`
-key.
+The following example shows the declaration of a context function.
+This function is available in the application context and responsible for the `vogella` key.
 
 [source,xml]
 ----
 include::res/contextfunctions/component.xml[]
 ----
 
-This key can be used for dependency injection as demonstrated in
-the following example.
+This key can be used for dependency injection as demonstrated in the following example.
 
 [source,java]
 ----
 include::res/contextfunctions/Inject.java[]
 ----
 
-The following example demonstrates a possible implementation of
-this context function which used OSGi DS annotations.
+The following example demonstrates a possible implementation of this context function which used OSGi DS annotations.
 
 [source,java]
 ----
@@ -128,41 +66,17 @@ include::res/todo/Todo.java[]
 
 === When to use context functions?
 
-Using
-context functions
-instead of a OSGi services has the
-advantage
-that these functions
-have
-access to the
-`IEclipseContext`
-hierarchy. They have access to the context in which the dependency
-injection was called.
+A context functions can access the `IEclipseContext` hierarchy.
+This allows them to lazily create objects using values from the context.
 
-This allows them to lazily create objects using values from the
-context.
-
-Standard OSGi services
-have no direct access to
-the
-`IEclipseContext`.
+Standard OSGi services have no direct access to the `IEclipseContext`.
 
 === Publishing to the OSGi service registry from a context function
 
-OSGi services may need to access the objects created by a
-context
-function. In this case you can also publish an
-OSGi service
-from a
-context
-function.
+OSGi services may need to access the objects created by a context function.
+In this case you can also publish an OSGi service from a context function.
 
-The
-following example demonstrates how to publish an
-implementation into
-the
-`IEclipseContext`
-and to the OSGi service registry.
+The following example demonstrates how to publish an implementation into the `IEclipseContext` and to the OSGi service registry.
 
 [source,java]
 ----

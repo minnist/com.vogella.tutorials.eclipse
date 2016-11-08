@@ -100,7 +100,8 @@ image::e4_productfeature30.png[Remove version number via the Properties button]
 
 ==== Create an application model
 
-Select menu:File[New > Other... > Eclipse 4 >  Model > New Application Model] to open a wizard to create an application model file.
+Now create an application model file in your `com.example.e4.rcp.todo` plug-in.
+Select menu:File[New > Other... > Eclipse 4 >  Model > New Application Model] to open a wizard.
 
 image::training_product48.png[]
 

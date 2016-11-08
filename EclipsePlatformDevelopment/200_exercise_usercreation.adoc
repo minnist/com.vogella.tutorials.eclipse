@@ -9,7 +9,7 @@ These systems use the same account.
 You can create a new user via the following: https://dev.eclipse.org/site_login/createaccount.php[Create Eclipse.org user account].
 	
 
-=== Sign the Contributor License Agreement (CLA)
+=== Sign the Eclipse License Agreement (ELA)
 
 You also need to confirm to the Eclipse foundation that you have the right to contribute your code to the Eclipse open source project. 
 This requires that you sign an Eclipse license agreement (ELA) via a web interface of your user you created.

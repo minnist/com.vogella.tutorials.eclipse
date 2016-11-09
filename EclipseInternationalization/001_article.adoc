@@ -13,7 +13,6 @@ Version 2.4, 06.07.2016
 Eclipse internationalization and localization.
 This article describes how to externalize your strings in Eclipse RCP and Eclipse plug-ins and how to support different
 languages. Includes how to translate your Eclipse 4.x workbench model.	
-This article is based on Eclipse 4.2 (Eclipse Juno).
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]

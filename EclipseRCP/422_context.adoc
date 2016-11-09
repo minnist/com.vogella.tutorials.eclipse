@@ -1,6 +1,7 @@
 == The Eclipse context
 
 === What is the Eclipse context?
+
 (((IEclipseContext, Eclipse context)))
 During startup of an Eclipse application the Eclipse runtime creates an object based on the `IEclipseContext` interface.
 This object is called the _context_ or the _Eclipse context_.
@@ -88,6 +89,7 @@ Such an object has access to its corresponding model object via dependency injec
 
 For example, in the implementation of a part you can access the model information of a part via: `@Inject MPart part;`
 
+
 === Default entries in the Eclipse context
 
 The Eclipse framework creates several objects in the context.
@@ -101,6 +103,7 @@ The context can be modified by the application code and the framework.
 As the Eclipse framework automatically tracks the dependencies of the objects it creates, it can update them as described in <<dependencyinjection_reinject>>.
 
 === Qualifiers for accessing the active part or shell
+
 (((IServiceConstants, ACTIVE_SHELL)))
 (((IServiceConstants, ACTIVE_PART)))
 The Eclipse platform places the part which is currently selected and the active shell into the `IEclipseContext` of the application object. The related keys are defined in the `IServiceConstants` interface.

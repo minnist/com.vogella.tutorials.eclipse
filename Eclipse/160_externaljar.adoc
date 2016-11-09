@@ -16,92 +16,57 @@ Alternatively, just copy and paste the `jar` file into the _lib_ folder.
 
 You can add this library to your classpath, right-click on the JAR file and select menu:Build Path[Add to Build Path].
 
-To manage your classpath, right-click on your project and select
-_Properties_.
-Under
-menu:Java Build Path[Libraries]
-select the
-btn:[Add JARs]
-button.
+To manage your classpath, right-click on your project and select _Properties_.
+Under menu:Java Build Path[Libraries] select the  btn:[Add JARs] button.
 
-The following example shows how the result would look like
-if
-the
-_junit-4.4.jar_
-file
-had been added to the project.
+The following example shows how the result would look like, if the _junit-4.4.jar_ file had been added to the project.
 
 image::externaljars10.gif[Adding a jar to the current project]
 
 After adding it to the classpath, Eclipse allows you to use the classes contained in the JAR file in the project. 
 Outside Eclipse you still need to configure your classpath, e.g., via the _MANIFEST.MF_ file.
 
+.Using project dependencies
+[TIP]
+====
+You can define in Eclipse that a project is dependent on another project.
+If you do this, you can use its classes in the project defining the dependency.
+To do this select your project, right-click on it and select _Properties_.
+Select _Java Build Path_ and the _Projects_ tab.
+	
+image::projectdependencies10.png[Defining project dependencies,pdfwidth=40%]
+	
+	
+This only works within Eclipse.
+Outside of it you need to create Java libraries for the projects and add them to the classpath of your Java application.
+Hence is setting is more for testing purpose.
+	
+====
+
 === Attach source code to a Java library
 
-You can open any class by positioning the
-cursor on
-the class in
-an
-editor and pressing
-kbd:[F3]. 
-Alternatively, you
-can
-press
-kbd:[Ctrl+Shift+T]. This will show a dialog in which you can enter
-the
-class name to open
-it.
+You can open any class by positioning the cursor on the class in an editor and pressing kbd:[F3]. 
+Alternatively, you can press kbd:[Ctrl+Shift+T]. 
+This shows a dialog in which you can enter the class name to open it.
 
-If the source code is not
-available,
-the editor
-will show the
-bytecode
-of that class.
+If the source code is not available, the editor shows the bytecode of that class.
 
-This happens, for example, if you open a class from a the standard
-Java library without attaching the
-source code to it.
+This happens, for example, if you open a class from a the standard Java library without attaching the source code to it.
 
-To see the source code of such a class, you can
-attach a source
-archive or source folder
-to a Java
-library. Afterwards, the editor
-shows
-the source instead of
-the
-bytecode.
+To see the source code of such a class, you can attach a source archive or source folder to a Java library. 
+Afterwards, the editor shows the source instead of the bytecode.
 
-Attaching the source code to a library also allows you to
-debug
-this
-source code.
+Attaching the source code to a library also allows you to debug this source code.
 
-The _Source Attachment_ dialog can be reached in the
-_Java Build Path_
-page of a project. To open this page, right-click on a project and
-select
-menu:Properties[Java Build Path]. On the
-_Libraries_
-tab, expand the library's node, select the
-_Source Attachment_
-attribute and click the
-btn:[Edit]
-button.
+The _Source Attachment_ dialog can be reached in the _Java Build Path_ page of a project. 
+To open this page, right-click on a project and select menu:Properties[Java Build Path]. 
+On the _Libraries_ tab, expand the library's node, select the _Source Attachment_ attribute and click the btn:[Edit] button.
 
-In the Location path field, enter the path of an archive or a
-folder containing the source.
+In the Location path field, enter the path of an archive or a folder containing the source.
 
-The following screenshot shows this setting for the standard Java
-library. If you
-have
-the Java Development Kit (JDK) installed, you
-should find the
-source
-in the JDK installation folder. The file is
-typically called
-_src.zip_.
+The following screenshot shows this setting for the standard Java library. 
+If you have the Java Development Kit (JDK) installed, you should find the source in the JDK installation folder. 
+The file is typically called _src.zip_.
 
 image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar]
 
@@ -109,22 +74,11 @@ image::add_source_to_jar.jpg[Maintaining the location of the source attachment t
  
 It is also possible to add Javadoc to a library which you use.
 
-Download the Javadoc of the JAR file and put it somewhere in
-your
-filesystem.
+Download the Javadoc of the JAR file and put it somewhere in your filesystem.
 
-To enter the location of the Javadoc, open the
-_Java Build Path_
-via a
-right-click on a project and select
-menu:Properties[Java Build Path]. On the
-_Libraries_
-tab expand the
-library's node, select the
-_Javadoc location_
-attribute and press the
-btn:[Edit]
-button.
+To enter the location of the Javadoc, open the _Java Build Path_ via a right-click on a project.
+Select menu:Properties[Java Build Path]. 
+On the _Libraries_ tab expand the library's node, select the _Javadoc location_ attribute and press the btn:[Edit] button.
 
 Enter the location to the file which contains the Javadoc.
 

@@ -1,41 +1,26 @@
 == Refactoring
 
+This section covers the refactoring facilities of Eclipse which allow you to improve the structure of your source code.
+
+
 === Refactoring
 
-_Refactoring_
-is the process of restructuring the code without
-changing its
-behavior. For example, renaming a Java class or method is
-a refactoring
-activity.
+_Refactoring_ is the process of restructuring the code without changing its behavior. 
+For example, renaming a Java class or method is a refactoring activity.
 
 === Refactoring in Eclipse
 
-Eclipse supports several refactoring activities, for example,
-renaming
-or
-moving.
+Eclipse supports several refactoring activities, for example, renaming or moving.
 
-For example, to use the
-_Rename_
-refactoring, you can right-click on your class (in the editor or
-Package Explorer) and
-select
-menu:Refactor[Rename]
-to rename your class. Eclipse will make sure that all calls
-in your
-Workspace to
-your class or method are renamed.
+For example, to use the _Rename_ refactoring, you can right-click on your class (in the editor or Package Explorer) and select menu:Refactor[Rename] to rename your class. 
+Eclipse will make sure that all calls in your Workspace to your class or method are renamed.
 
-The following screenshot shows how to call the
-_Rename_
-refactoring for a class. The cursor is positioned on the class and
-the context menu is activated via a right-click on the class.
+The following screenshot shows how to call the _Rename_ refactoring for a class. 
+The cursor is positioned on the class and the context menu is activated via a right-click on the class.
 
 image::refactor10.png[Renaming a class]
 
-The most important refactorings are listed in the following
-table.
+The most important refactorings are listed in the following table.
 
 .Refactoring
 |===
@@ -51,17 +36,13 @@ table.
 |Gives magic numbers or hard-coded strings a descriptive constant name and replaces all occurences.
 |===
 
-TIP: Lots of refactorings are also available via the kbd:[Ctrl+1]
-shortcut (
-_quick fix_
-). Select a certain part of your code and press
-kbd:[Ctrl+1]
-to see possible refactorings for the selected
-position.
+[TIP]
+====
+Lots of refactorings are also available via the kbd:[Ctrl+1] shortcut (_quick fix_).
+Select a certain part of your code and press kbd:[Ctrl+1] to see possible refactorings for the selected position.
+====
 
-Eclipse has many more refactorings. The available options
-depend on the selection in the Java editor. In most cases you should
-get
-an idea of the performed action by the naming of the refactoring
-operation.
+Eclipse has many more refactorings. 
+The available options depend on the selection in the Java editor. 
+In most cases you should get an idea of the performed action by the naming of the refactoring operation.
 

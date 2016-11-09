@@ -29,15 +29,15 @@ These releases and the corresponding API are referred to as Eclipse 3.x.
 As of 2012 the main Eclipse release carried the major version number 4:
 
 .Eclipse releases
-[cols="1, 2",options="header"]
+[cols="1, 2, 2",options="header"]
 |===
-| Release | Release year
-| 4.2 | 2012
-| 4.3 | 2013
-| 4.4 | 2014
-| 4.5 | 2015
-| 4.6 | 2016
-| 4.7 | 2017
+| Release | Rename name| Release year 
+| 4.2 | Juno | 2012
+| 4.3 | Kepler| 2013
+| 4.4 | Luna | 2014
+| 4.5 | Mars | 2015
+| 4.6 | Neon | 2016
+| 4.7 | Oxygen | 2017
 |===
 
 == Eclipse foundation

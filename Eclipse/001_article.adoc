@@ -12,13 +12,9 @@ Version 5.2, 08.07.2016
 
 [abstract]
 Eclipse Java IDE.
-This tutorial describes the usage of Eclipse as a Java IDE. It
-describes the
-installation of Eclipse, the
-creation of Java programs
-and tips for using Eclipse.
-This tutorial is based on Eclipse 4.6
-(Neon).
+This tutorial describes the usage of Eclipse as a Java IDE. 
+It describes the installation of Eclipse, the creation of Java programs and tips for using Eclipse.
+This tutorial is based on Eclipse 4.6 (Neon).
 	
 include::../web/kindle/eclipse-ide.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
@@ -40,7 +36,6 @@ include::083_exercise_codecompletion.adoc[]
 include::084_refactoring.adoc[]
 include::086_exercise_refactoring.adoc[]
 include::090_shortcuts.adoc[]
-include::150_projectdependency.adoc[]
 include::160_externaljar.adoc[]
 include::200_updatemanager.adoc[]
 include::201_marketplace.adoc[]

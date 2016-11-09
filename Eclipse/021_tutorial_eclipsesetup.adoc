@@ -1,7 +1,5 @@
 == Exercise: Optimizing the Eclipse IDE settings
 
-=== Configuration
-		
 Certain settings in the Eclipse IDE allow you to use it more efficiently. 
 In this exercise you make changes to the default Eclipse IDE settings to improve the usability of the Eclipse IDE.
 		

@@ -1,41 +1,21 @@
-== Organizing your workspace
+== Organizing your workspace with working sets
 
-=== Working sets and tasks
 
-The Eclipse IDE allows you to organize your project into
-working sets so
-that you can hide certain resources. 
+You will create more and more projects in your development career. 
+Therefore, the data in your workspace grows and it is hard to find the right information.
+The Eclipse IDE allows you to organize your project into _working sets_ so that you can hide certain resources. 
 
-=== Working sets
-
-You will create more and more projects in your development
-career. Therefore, the data in your
-workspace
-grows
-and it is hard to
-find the right information.
-
-You can
-use working sets to organize your displayed projects / data.
-To
-set up
-your working set, select the
-menu:Package Explorer[open the drop-down menu > Select Working Set...]
+You can use working sets to organize your displayed projects / data.
+To set up your working set, select the menu:Package Explorer[open the drop-down menu > Select Working Set...]
 
 image::workingset10.png[Showing the working set]
 
-Press the
-btn:[New] button
-on the following dialog to create a working set.
+Press the btn:[New] button on the following dialog to create a working set.
 
 image::workingset20.png[Creating new working sets]
 
-On the next dialog select
-_Resource_, press the
-btn:[Next] button and select the
-projects
-you
-would like to see and give it a name.
+On the next dialog select _Resource_, press the btn:[Next] button.
+Select the projects you would like to see and give it a name.
 
 image::workingset30.png[Creating new working sets]
 
@@ -43,24 +23,19 @@ image::workingset40.png[Creating new working sets]
 
 image::workingset50.png[Creating new working sets]
 
-You can now filter the displayed files in the
-_Package Explorer_
-based on the created working set.
+You can now filter the displayed files in the _Package Explorer_ based on the created working set.
 
 image::workingset60.png[Filtering resources for the working set]
 
 
 [TIP]
 ====
-You can also use the working set to structure your projects in your
-workspace. For this, select
-_Working Sets_
-from the context menu of the
-_Package Explorer_
-view.
+You can also use the working set to structure your projects in your workspace. 
+For this, select _Working Sets_ from the context menu of the _Package Explorer_ view.
 
 image::workingset70.png[Structure by working set]
 
 image::workingset80.png[Structure by working set]
 ====
 
+ 

@@ -2,55 +2,30 @@
 
 === Templates
 
-In Eclipse you can create templates for code snippets. This code
-snippets can be activated via
-autocomplete (
-kbd:[Ctrl+Space]).
+In Eclipse you can create templates for code snippets. 
+These code snippets can be activated via autocomplete (kbd:[Ctrl+Space]).
 		
-For example, assume that you are frequently creating
-`public void name(){}`
-methods. You could define a template which creates the
-method body
-for
-you.
+For example, assume that you are frequently creating `public void name(){}` methods. 
+You could define a template which creates the method body for you
 		
-To create a template for this, select the menu
-menu:Window[Preferences > Java > Editor >  Templates].
+To create a template for this, select the menu menu:Window[Preferences > Java > Editor >  Templates].
 		
 image::templates10.gif[Maintaining code templates]
 		
-Press the
-btn:[New]
-button. Create the template shown in the following
-screenshot.
+Press the btn:[New] button. 
+Create the template shown in the following screenshot.
 		
 image::templates30.gif[Creating a new code template]
 		
-`${cursor}`
-indicates
-that the cursor should be placed at this
-position after
-applying the
-template.
+`${cursor}` indicates that the cursor should be placed at this position after applying the template.
 		
-In this example the name
-_npm_
-is your keyword for code completion.
+In this example the name _npm_ is your keyword for code completion.
 		
-Now every time you type
-_npm_
-in the Java editor and
-press
-kbd:[Ctrl+Space],
-the
-system will allow you to replace your keyword with
-your
-template.
+Now every time you type _npm_ in the Java editor and press kbd:[Ctrl+Space], Eclipse allows you to replace your keyword with your template.
 		
 image::templates40.gif[Using code templates]
 
 === Code Formatter
-
 		
 Eclipse allows you also to specify the rules for the code formatter.
 These rules are used by Eclipse to format your source code.
@@ -58,28 +33,19 @@ This allows you, for example, to define the settings for the usage of whitespace
 		
 You find the settings under menu:Window[Preferences > Java > Code Style > Formatter].
 		
-Press the
-btn:[New]
-button to create a new set of formatting rules or press the
-btn:[Edit]
-button to adjust an exising profile.
+Press the btn:[New] button to create a new set of formatting rules or press the btn:[Edit] button to adjust an existing profile.
 		
 image::codeformatter10.png[Code formatter]
 
 === Code Templates
 
-Eclipse can generate source code automatically. In several
-cases comments are added to the source code.
+Eclipse can generate source code automatically. 
+In several cases comments are added to the source code.
 		
-Select
-menu:Window[Preferences > Java > Code Style >  Code Templates]
-to change the code-generation templates.
+Select menu:Window[Preferences > Java > Code Style >  Code Templates] to change the code-generation templates.
 		
-In the code tree you have the templates. Select, for example,
-menu:Code [Method Body]
-and press the
-btn:[Edit] button to edit this template and to remove the "todo"
-comment.
+In the code tree you have the templates. 
+Select, for example, menu:Code [Method Body] and press the btn:[Edit] button to edit this template and to remove the "todo" comment.
 		
 image::codetemplates10.png[Removing the todos from the Java code templates]
 		

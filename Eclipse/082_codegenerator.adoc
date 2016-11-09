@@ -3,43 +3,28 @@
 Eclipse has several possibilities to generate code for you. This
 can save significant time during development.
 	
-For example, Eclipse can override methods from superclasses and
-generate the
-`toString()`,
-`hashcode()`
-and
-`equals()`
-methods. It
-can also generate getter and setter methods for attributes
-of
-your Java class.
+For example, Eclipse can override methods from superclasses and generate the `toString()`, `hashcode()` and `equals()` methods.
+It can also generate getter and setter methods for attributes of your Java class.
 	
 You can find these options in the Source menu.
 	
 image::generate10.png[Code generation]
 	
-To test the source generation, create the following class in your
-`de.vogella.eclipse.ide.first`
-project.
+To test the source generation, create the following class in your `com.vogella.eclipse.ide.first` project.
 	
 [source,java]
 ----
 include::res/codegen/Person.java[]
 ----
 	
-Select
-menu:Source[Generate Constructor using Fields...], mark both fields and click the btn:[OK] button.
+Select menu:Source[Generate Constructor using Fields...], mark both fields and click the btn:[OK] button.
 	
 image::sourcegenerator10.png[Generating]
 	
-Select
-menu:Source[Generate Getter and Setter...], select all fields and afterwards click the btn:[OK] button.
+Select menu:Source[Generate Getter and Setter...], select all fields and afterwards click the btn:[OK] button.
 	
 	
-Select
-menu:Source[Generate toString()...], mark again all fields and click the
-btn:[OK]
-button.
+Select menu:Source[Generate toString()...], mark again all fields and click the btn:[OK] button.
 
 You created the following class:
 	

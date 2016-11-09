@@ -1,4 +1,6 @@
-== The Eclipse IDE, other projects and a short history
+== Background over the Eclipse project
+
+=== The Eclipse IDE, other projects and a short history
 		
 While the Eclipse IDE for Java development is widely known, the Eclipse open source community is much bigger.
 Currently it consists of more than 150 projects covering different aspects of software development.
@@ -17,7 +19,7 @@ IBM stated that the name was targeting at "Eclipsing" Microsoft. See http://www.
 With the purchase of _Sun Microsystems_ by Oracle this conflict finally went away.
 Oracle is currently among the 5 largest contributor companies of the Eclipse project.
 
-== Eclipse releases
+=== Eclipse releases
 		
 The Eclipse open source project has a simultaneous release every year. 
 Eclipse projects can choose to join this release but must fulfill the requirements described in the https://wiki.eclipse.org/SimRel/Simultaneous_Release_Requirements[Release requirements wiki].
@@ -40,7 +42,7 @@ As of 2012 the main Eclipse release carried the major version number 4:
 | 4.7 | Oxygen | 2017
 |===
 
-== Eclipse foundation
+=== Eclipse foundation
 
 The Eclipse projects are governed by the _Eclipse Foundation_.
 The Eclipse Foundation is a non-profit, member supported corporation that hosts the Eclipse Open Source projects.
@@ -55,7 +57,7 @@ There is also an Eclipse Foundation Europe based in Germany.
 
 In 2016 the Eclipse Foundation had approximately 30 employees. See http://www.eclipse.org/org/foundation/staff.php[Eclipse Foundation Staff] for details.
 
-== The Eclipse Public License
+=== The Eclipse Public License
 
 The _Eclipse Public License_ (EPL) is an open source software license.
 The EPL is designed to be business-friendly. 
@@ -72,5 +74,3 @@ Contributions with more than 1000 lines of code require the creation of a Contri
 
 The permissive EPL and the IP cleansing effort of the Eclipse Foundation makes reusing the source code of Eclipse projects attractive to companies.
 
-
-		

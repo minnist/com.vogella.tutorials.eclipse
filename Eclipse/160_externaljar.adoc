@@ -4,7 +4,7 @@
 
 If the libraries should be distributed with your project, you can store the JAR files directly in your project.
 
-For example, you can create a new Java project `de.vogella.eclipse.ide.jars`. 
+For example, you can create a new Java project `com.vogella.eclipse.ide.jars`. 
 Then create a new folder called `lib` by right-clicking on your project and selecting menu:New[Folder].
 
 image::jar10.png[Creating a new folder]

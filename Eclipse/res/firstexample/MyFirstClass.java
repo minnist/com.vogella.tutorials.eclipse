@@ -1,4 +1,4 @@
-package de.vogella.eclipse.ide.first;
+package com.vogella.eclipse.ide.first;
 
 public class MyFirstClass {
 

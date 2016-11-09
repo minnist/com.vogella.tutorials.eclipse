@@ -1,0 +1,50 @@
+[[exercise_javaproject]]
+== Exercise: Java project, packages and import statements
+
+=== Create project
+
+Create a new Java project called _com.vogella.ide.counter_.
+
+
+Create the following packages:
+
+* `com.vogella.ide.counter.util`
+* `com.vogella.ide.counter.main`
+
+=== Create classes
+
+Create the following `Counter` class in the `*.util` package.
+
+[source,java]
+----
+include::res/first/Counter.java[]
+----
+
+Create the following `Tester` class in the `*.main` package. 
+This is a simple class without the usage of any unit testing framework like _JUnit_.
+The Eclipse editor should mark the created class with an error because the required `import` statements are missing.
+
+[source,java]
+----
+include::res/first/Tester1.java[]
+----
+
+Right-click in your Java editor and select menu:Source[Organize Imports] to add the required import statements to your Java class.
+
+image::sourceimport10.png[Adding import statements with the Java editor]
+
+image::sourceimport20.png[Selecting import statements with the Java editor]
+
+This should remove the syntax error. Finish the implementation for the `Tester` class based on the following code.
+
+[source,java]
+----
+include::res/first/Tester.java[]
+----
+
+The `Counter` class had in its source code a comment starting with _TODO_. 
+Finish the source code and calculate the correct values.
+
+Run the `Tester` class and validate that your implementation is correct.
+The `Tester` class checks for an example value but the method should work for different input values.
+

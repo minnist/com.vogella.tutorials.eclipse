@@ -1,21 +1,12 @@
 == Extensions and extension points
 
-Eclipse provides the concept of
-_extensions_
-to contribute functionality to a certain type of API
-by
-one or more
-plug-ins. The type of API is defined by another plug-in as
-_extension point_.
+Eclipse provides the concept of _extensions_ to contribute functionality to a certain type of API.
+The type of API is defined by a plug-in via an _extension point_.
+Extensions can be contribute by one or more plug-ins. 
 
-These
-extensions and extension points are defined via
-the
-_plugin.xml_
-file.
+These extensions and extension points are defined via the _plugin.xml_ file.
 
-This approach is depicted in the following graphic and the
-terminology is described in the following table.
+This approach is depicted in the following graphic and the terminology is described in the following table.
 
 image::extensionpointconcept10.png[Extensions and extension points concept]
 

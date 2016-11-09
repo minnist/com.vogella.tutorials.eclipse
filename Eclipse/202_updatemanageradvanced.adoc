@@ -51,60 +51,33 @@ from your Eclipse installation.
 
 === Exporting and importing the installed components
 
-Eclipse allows you to export a file which
-describes the installed
-Eclipse components. During the export the user can select which
-components should be included into this description file.
+Eclipse allows you to export a file which describes the installed Eclipse components. During the export the user can select which components should be included into this description file.
 
-Other
-users
-can import this description
-file into
-their
-Eclipse
-installation and
-install the components based on this file.
+Other users can import this description file into their Eclipse installation and install the components based on this file.
 
-This way, Eclipse installation can be kept in sync with each
-other.
+This way, Eclipse installation can be kept in sync with each other.
 
-To export a description file, select
-menu:File[Export > Install > Installed Software Items to File]
-and select the components which should be included in your
-description file.
+To export a description file, select menu:File[Export > Install > Installed Software Items to File].
+Select the components which should be included in your description file.
 
 image::descriptionfile10.png[Exporting a description file for p2]
 
-To install the described components in another Eclipse
-installation,
-open the exported file with
-menu:File[Import > Install > Install Software Items from File]
-and follow the wizard. The wizard allows you to specify the
-components which should be installed.
+To install the described components in another Eclipse installation, open the exported file with menu:File[Import > Install > Install Software Items from File] and follow the wizard. 
+The wizard allows you to specify the components which should be installed.
 
 === Installing features via the command line
 
-The Eclipse update manager has a component called
-_director_
-which allows you to
-install new features
-via the command line.
+The Eclipse update manager has a component called _director_ which allows you to install new features via the command line.
 
-For example, the following command will install the components EGit,
-Mylyn and EMF into
-an Eclipse instance. You need to start this command
-in the command line and it assumes that you are in a directory which
-contains your Eclipse installation in a folder called
-_eclipse_.
+For example, the following command will install the components EGit, Mylyn and EMF into an Eclipse instance. 
+You need to start this command in the command line and it assumes that you are in a directory which contains your Eclipse installation in a folder called _eclipse_.
 
 [source,bourne]
 ----
 include::res/commandline.txt[]
 ----
 
-The feature names which you need for this operation can be seen
-on the second page of the standard installation dialog of the Eclipse
-update manager.
+The feature names which you need for this operation can be seen on the second page of the standard installation dialog of the Eclipse update manager.
 
 image::eclipse_installcommandline10.png[Getting the feature name,pdfwidth=40%]
 

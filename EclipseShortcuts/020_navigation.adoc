@@ -1,5 +1,4 @@
 == Navigation and text selection
-=== Globally available navigation shortcuts
 
 .Navigation
 [cols="1,2",options="header"]

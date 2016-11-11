@@ -16,8 +16,7 @@ The usage of SWT is not restricted to Eclipse plug-ins and applications .
 To use it in normal Java programs, you have to add the _JAR_ files, which contain the SWT implementation for the corresponding OS, to the classpath of your Java application.
 	
 To use  SWT in stand-alone applications, you need to have the SWT library available. 
-If you are not using an automated build system, you can download the SWT library from the following URL:
-http://www.eclipse.org/swt/.
+If you are not using an automated build system, you can download the SWT library from the http://www.eclipse.org/swt/[SWT homepage].
 	
 This ZIP file contains a _swt.jar_ file which you need to add to the _classpath_ of your SWT project.
 	

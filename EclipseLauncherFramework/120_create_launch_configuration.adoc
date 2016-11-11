@@ -15,8 +15,7 @@ image::run_exc.png[]
 +
 and clicking on  menu:Run Configurations...[] in the menu.
 
-In the _Run Configuration..._ you can choose between different launch
-configuration types:
+In the _Run Configuration..._ you can choose between different launch configuration types:
 
 image::run_configurations.png[]
 
@@ -31,9 +30,8 @@ _Export (Launch Configuration)_ in the Quick Access.
 
 image::export_launch_configuration.png[]
 
-When pressing _Next_ you can choose, which launch configuration you
-want to export and define a location to store the _*.launch_
-file.
+When pressing _Next_ you can choose, which launch configuration you want to export. 
+You can also define a location to store the _*.launch_ file.
 
 image::launch_configuration_export_wizard.png[]
 

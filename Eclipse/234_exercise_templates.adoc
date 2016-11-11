@@ -1,4 +1,4 @@
-== Exercise: Creating and using template
+== Exercise: Custom code template usage
 
 === Create template for try/catch/finally
 
@@ -12,7 +12,5 @@ statement.
 
 === Use template
 
-Test your template in the Java editor and ensure that it works
-as
-expected.
+Test your template in the Java editor and ensure that it works as expected.
 

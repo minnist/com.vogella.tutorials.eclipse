@@ -1,0 +1,21 @@
+[[exercise_swtproject]]
+== Exercise: Using the SWT library in a Java project
+
+Create a new Java project called _com.examle.swt.widgets_. 
+Create a new `lib` folder in your project.
+
+Download the SWT library from the http://www.eclipse.org/swt[SWT website] and extract the archive. 
+Ensure that you download the correct version for your Java and OS version.
+If you use a 32 bit Java version you need also to use the 32 bit version of SWT.
+Use the _more_ link to find the correct version (32 bit vs. 64 bit).
+
+
+image::swt-download10.png[SWT Download Page]
+
+Copy the `swt.jar` library and the `src.zip` file to the `lib` folder in your project.
+
+Add the library to the classpath of the project.
+Attach the `src.zip` source zip file to the library.
+Use the btn:[Open Type] dialog to open the 'Shell' class. 
+If everything has been done correctly you see the source code of the 'Shell' class.
+

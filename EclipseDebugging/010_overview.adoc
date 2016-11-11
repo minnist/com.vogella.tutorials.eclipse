@@ -1,49 +1,38 @@
 == Overview
 
 === What is debugging?
-		
-_Debugging_
-allows you to run a program interactively while watching
-the
-source
-code
-and the variables during the execution.
+	
 (((Breakpoint)))
-By
-_breakpoints_
-in the source code you specify where the execution of the
-program
-should stop. To stop the execution only if a field is read or
-modified, you can specify
-_watchpoints_.
 (((Watchpoint)))
+_Debugging_ allows you to run a program interactively while watching the source code and the variables during the execution.
+
+A _breakpoint_ in the source code specifies where the execution of the program should stop during debugging.
+Once the program is stopped you can investigate variables, change their content, etc.
 		
-_Breakpoints_
-and
-_watchpoints_
-can be summarized as
-_stop points_.
-		
-Once the program is stopped you can investigate variables,
-change their content, etc.
+To stop the execution, if a field is read or modified, you can specify _watchpoints_.
+
+[NOTE]
+====
+_Breakpoints_ and _watchpoints_ are sometimes called _stop points_.
+====
 
 === Debugging support in Eclipse
 		
-Eclipse allows you to start a Java program
-in
-_Debug mode_.
+Eclipse allows you to start a Java program in _Debug mode_.
 		
-Eclipse has a special
-_Debug_
-_perspective_
-which gives you a preconfigured set of
-_views_. In this
-_perspective_
-you
-control the execution
-process of your program and
-can
-investigate the
-state of
-the variables.
+Eclipse provides a _Debug_ _perspective_ which gives you a pre-configured set of _views_. 
+Eclipse allows you to control the execution flow via debug commands.
+	
+=== Setting Breakpoints
+
+To define a breakpoint in your source code, right-click in the left margin in the Java  editor and select _Toggle Breakpoint_. Alternatively you can double-click on this position.
+
+image::setbreakpoint10.png[Setting a breakpoint]
+
+For example in the following screenshot we set a breakpoint on
+the
+line
+`Counter counter = new Counter();`.
+
+image::setbreakpoint12.png[Showing a defined breakpoint]
 	

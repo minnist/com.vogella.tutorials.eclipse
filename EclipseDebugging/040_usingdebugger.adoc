@@ -1,75 +1,32 @@
-== Debugging in Eclipse
-
-=== Setting Breakpoints
-
-To set
-breakpoints in your source code right-click in the small left
-margin in your
-source
-code editor
-and select
-_Toggle Breakpoint_. Alternatively you can
-double-click
-on this position.
-
-image::setbreakpoint10.gif[Setting a breakpoint]
-
-For example in the following screenshot we set a breakpoint on
-the
-line
-`Counter counter = new Counter();`.
-
-image::setbreakpoint12.png[Showing a defined breakpoint]
-
 === Starting the Debugger
 
-To debug your application, select a Java file
-which can be executed,
-right-click on it and select
-menu:Debug As[Java Application].
+To debug your application, select a Java file with a main method.
+Right-click on it and select menu:Debug As[Java Application].
 
-image::debugstart10.gif[Start the debugger]
+image::debugstart10.png[Start the debugger]
 
-After you have started the application once via the context menu, you
-can
-use the created launch configuration again via the
-btn:[Debug] button in the Eclipse toolbar.
+[TIP]
+====
+If you started an application once via the context menu, you can use the created launch configuration again via the btn:[Debug] button in the Eclipse toolbar.
+====
 
 image::debugtoolbar10.png[Debug button]
 
-If you have not defined any breakpoints, this will run your
-program as normal. To debug the program you
-need to define
-breakpoints.
-
-If you start the debugger, Eclipse asks
-you
-if you
-want
-to switch to the
-_Debug_
-_perspective_
-once a stop point is reached.
-Answer
-_Yes_
-in the corresponding dialog.
+If you have not defined any breakpoints, program as normally. 
+To debug the program you need to define breakpoints.
+Eclipse asks you if you want to switch to the _Debug_ _perspective_ once a stop point is reached.
+Answer _Yes_ in the corresponding dialog.
+Afterwards Eclipse opens this _perspective_.
 
 image::debugstart08.png[]
 
-Afterwards Eclipse opens this
-_perspective_, which
-looks
-similar to the following screenshot.
-
-image::debugstart20.gif[Switch to perspective]
 
 === Controlling the program execution
 
-Eclipse provides buttons in the toolbar for controlling the
-execution of the program you are debugging. Typically it is easier to
-use the corresponding keys to control this execution.
+Eclipse provides buttons in the toolbar for controlling the execution of the program you are debugging. 
+Typically, it is easier to use the corresponding keys to control this execution.
 
-You can use the btn:[F5], btn:[F6], btn:[F7] and btn:[F8] key to step through your coding.
+You can use allow use shortcut key to step through your coding.
 The meaning of these keys is explained in the following table.
 
 .Debugging key bindings / shortcuts
@@ -77,7 +34,7 @@ The meaning of these keys is explained in the following table.
 |===
 |Key |Description
 
-|F5 
+|kbd:[F5]
 |Executes the currently selected line and goes to the next
 line in
 your program. If the selected line is a method call the
@@ -85,43 +42,32 @@ debugger steps into the
 associated
 code.
 	
-|F6 
+|kbd:[F6]
 |F6 steps over the call, i.e. it executes a method without stepping into it in the debugger.
 
-|F7
+|kbd:[F7]
 |F7 steps out to the caller of the currently executed method.
 This finishes the execution of the current method and returns to the caller of this method.
 
-|F8
+|kbd:[F8]
 |F8 tells the Eclipse debugger to resume the execution of the program code until is reaches the next breakpoint or watchpoint.
 	
 |===
 
-The
-following picture
-displays
-the buttons and their related
-keyboard
-shortcuts.
+The following picture displays the buttons and their related keyboard shortcuts.
 
-image::debugstart30.gif[Debug Shortcuts]
+image::debugstart30.png[Debug Shortcuts, pdfwidth=40%]
+
 
 The call stack shows the parts of the program which are currently executed and how they relate to each other. 
 The current stack is displayed in the _Debug_ view.
 
-image::stack10.gif[Showing the stack view]
+image::debuggerstack10.png[Showing the stack view]
 
 === Breakpoints view and deactivating breakpoints
 
-The
-_Breakpoints_
-view
-allows you to delete and deactivate
-_stop points_, i.e.
-_breakpoints_
-and
-_watchpoints_
-and to modify their properties.
+The _Breakpoints_ view allows you to delete and deactivate _breakpoints_ and _watchpoints_.
+You can also modify their properties.
 
 To deactivate a breakpoint, remove the corresponding checkbox in the _Breakpoints_ view.
 To delete it you can use the corresponding buttons in the view toolbar. 
@@ -129,92 +75,56 @@ These options are depicted in the following screenshot.
 
 image::breakpointview10.png[Breakpoint view]
 
-If you want to deactivate all your breakpoints you
-can
-press the
-btn:[Skip all breakpoints] button. If you press it again, your breakpoints are
-reactivated. This
-button is highlighted in the following screenshot.
+If you want to deactivate all your breakpoints you can press the btn:[Skip all breakpoints] button. 
+If you press it again, your breakpoints are reactivated.
+This button is highlighted in the following screenshot.
 
-image::skipbreakpoints10.gif[De-activating all breakpoints]
+image::skipbreakpoints10.png[De-activating all breakpoints]
 
 === Evaluating variables in the debugger
 
-The
-_Variables_
-view
-displays fields and local variables from
-the
-current executing stack.
-Please note
-you need to run the debugger to see the
-variables in this
-view.
+The _Variables_ view displays fields and local variables from the current executing stack.
+Please note you need to run the debugger to see the variables in this view.
 
-image::variables10.gif[Variables View]
+image::variables10.png[Variables View]
+
+[NOTE]
+====
+As of Eclipse 4.7 you also see the return statement of the last method call in the debugger.
+====
 
 Use the drop-down menu to display static variables.
 
-image::variables20.gif[Drop-down menu for static variables]
+image::variables20.png[Drop-down menu for static variables]
 
-Via the drop-down menu of the
-_Variables_
-view
-you can customize the displayed columns.
+Via the drop-down menu of the _Variables_ view you can customize the displayed columns.
 
-For example,
-you can show
-the
-actual type of each variable
-declaration. For this select
-menu:Layout[Select Columns... > Type].
+For example, you can show the actual type of each variable declaration. 
+For this select menu:Layout[Select Columns... > Type].
 
-image::variables30.gif[Showing the actual type of the variables]
+image::variables30.png[Showing the actual type of the variables]
 
 === Changing variable assignments in the debugger
 
-The
-_Variables_
-view
-allows you to change the values assigned to your variable at runtime.
-This is
-depicted in the following screenshot.
+The _Variables_ view allows you to change the values assigned to your variable at runtime.
+This is depicted in the following screenshot.
 
 image::variablesview_change10.png[Changing the value of a variable]
 
 === Controlling the display of the variables with Detail Formatter
 
-By default the
-_Variables_
-view
-uses the
-`toString()`
-method to determine how to display the variable.
+By default the _Variables_ view uses the `toString()` method to determine how to display the variable.
 
-You can define a
-_Detail Formatter_
-in which you can use Java code to
-define how a variable is displayed.
+You can define a _Detail Formatter_ in which you can use Java code to define how a variable is displayed.
 
-For example the
-`toString()`
-method in the
-`Counter`
-class
-may show meaningless information, e.g.
-`de.vogella.combug.first.Counter@587c94`. To make this output more readable you can right-click on the
-corresponding variable
-and select the
-menu:New Detail Formater...[]
-entry from the context menu.
+For example, the `toString()` method in the `Counter` class may show meaningless information, e.g. `com.vogella.combug.first.Counter@587c94`. 
+To make this output more readable you can right-click on the corresponding variable and select the menu:New Detail Formater...[] entry from the context menu.
 
-image::variables40.gif[New Detail Formater Screenshot]
+image::variables40.png[New Detail Formater Screenshot]
 
-Afterwards you can use a method of this class to determine the
-output. In this example the
-`getResult()`
-method of this class is used. This setup is depicted in the following
-screenshot.
+Afterwards you can use a method of this class to determine the output. 
+In this example the `getResult()` method of this class is used. 
+This setup is depicted in the following screenshot.
 
-image::variables50.gif[Detailled formater example]
+image::variables50.png[Detailled formater example]
 

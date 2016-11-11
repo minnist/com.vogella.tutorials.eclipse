@@ -1,4 +1,4 @@
-== Background over the Eclipse project
+== Background of the Eclipse project
 
 === The Eclipse IDE, other projects and a short history
 		

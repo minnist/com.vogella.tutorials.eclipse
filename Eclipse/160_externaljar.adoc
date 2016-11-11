@@ -2,33 +2,30 @@
 
 === Adding a Java library to the project classpath
 
-If the libraries should be distributed with your project, you can store the JAR files directly in your project.
+You can store JAR files directly in your project, and add them to the classpath which the Java compiler of Eclipse is using.
+To manage the classpath for your Eclipse, right-click on your project and select _Properties_.
+Under menu:Java Build Path[Libraries] you can review and change your current classpath as depicted in the following screenshot.
 
-For example, you can create a new Java project `com.vogella.eclipse.ide.jars`. 
-Then create a new folder called `lib` by right-clicking on your project and selecting menu:New[Folder].
+image::externaljars10.png[Project classpath in Eclipse]
 
-image::jar10.png[Creating a new folder]
+JAR files can be stored outside your project or inside.
+To import a JAR into an existing folder, select menu:File[Import > General > File System].
+Select the Java library you want to import and select the folder, e.g.,_lib_,  as target. 
+To add JAR file located in the project to its classpath, right-click on the JAR file and select menu:Build Path[Add to Build Path].
 
-From the menu select menu:File[Import > General > File System].
-
-Select the Java library you want to import and select the _lib_ folder as target. 
-Alternatively, just copy and paste the `jar` file into the _lib_ folder.
-
-You can add this library to your classpath, right-click on the JAR file and select menu:Build Path[Add to Build Path].
-
-To manage your classpath, right-click on your project and select _Properties_.
-Under menu:Java Build Path[Libraries] select the  btn:[Add JARs] button.
-
-The following example shows how the result would look like, if the _junit-4.4.jar_ file had been added to the project.
-
-image::externaljars10.gif[Adding a jar to the current project]
-
-After adding it to the classpath, Eclipse allows you to use the classes contained in the JAR file in the project. 
-Outside Eclipse you still need to configure your classpath, e.g., via the _MANIFEST.MF_ file.
-
-.Using project dependencies
 [TIP]
 ====
+Alternatively, to the import approach via the menu, you can copy and paste the `jar` file into a folder.
+====
+
+
+[WARNING]
+====
+Outside Eclipse you still need to configure your classpath for your project. 
+====
+
+=== Using project dependencies
+
 You can define in Eclipse that a project is dependent on another project.
 If you do this, you can use its classes in the project defining the dependency.
 To do this select your project, right-click on it and select _Properties_.
@@ -37,13 +34,10 @@ Select _Java Build Path_ and the _Projects_ tab.
 image::projectdependencies10.png[Defining project dependencies,pdfwidth=40%]
 	
 	
-This only works within Eclipse.
-Outside of it you need to create Java libraries for the projects and add them to the classpath of your Java application.
-Hence is setting is more for testing purpose.
-	
-====
+This only works within Eclipse, it allows you to develop several projects which will later be exported as JAR files together.
+Outside of Eclipse you need to create Java libraries for the projects and add them to the classpath.
 
-=== Attach source code to a Java library
+=== Attach source code  to a Java library
 
 You can open any class by positioning the cursor on the class in an editor and pressing kbd:[F3]. 
 Alternatively, you can press kbd:[Ctrl+Shift+T]. 
@@ -68,15 +62,13 @@ The following screenshot shows this setting for the standard Java library.
 If you have the Java Development Kit (JDK) installed, you should find the source in the JDK installation folder. 
 The file is typically called _src.zip_.
 
-image::add_source_to_jar.jpg[Maintaining the location of the source attachment to an jar]
+image::add_source_to_jar.png[Maintaining the location of the source attachment to an jar]
 
-=== Add Javadoc for a JAR
+=== Add Javadoc to a Java library
  
 It is also possible to add Javadoc to a library which you use.
-
-Download the Javadoc of the JAR file and put it somewhere in your filesystem.
-
-To enter the location of the Javadoc, open the _Java Build Path_ via a right-click on a project.
+For this you need to have the Javadoc somewhere in your filesystem.
+To configure the location of the Javadoc for the JAR File, open the _Java Build Path_ via a right-click on a project.
 Select menu:Properties[Java Build Path]. 
 On the _Libraries_ tab expand the library's node, select the _Javadoc location_ attribute and press the btn:[Edit] button.
 

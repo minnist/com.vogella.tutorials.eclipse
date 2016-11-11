@@ -12,13 +12,11 @@ Version 2.3, 06.07.2016
 [abstract]
 Eclipse Debugging.
 This article describes how to debug a Java application in Eclipse.
-This article is based on Eclipse 4.2 (Eclipse Juno). 
-		
+This article is based on Eclipse 4.6 (Eclipse Neon). 
 	
 include::../web/kindle/eclipse-ide.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::012_prerequisites.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::040_usingdebugger.adoc[]
 include::../web/advertisement/inBetween02.adoc[]

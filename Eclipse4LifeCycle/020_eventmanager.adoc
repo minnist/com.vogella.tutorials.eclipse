@@ -18,17 +18,13 @@ NOTE: The life cycle annotations are not yet released as official API.
 
 === Register life cycle hook
 
-Register the `Manager` class as life cycle handler in your _plugin.xml_file.
+Register the `Manager` class as life cycle handler in your _plugin.xml_ file.
 
-For this, open the
-_plugin.xml_
-in your application plug-in and select the
-_Extensions_
-tab.
+For this, open the _plugin.xml_ file of your application plug-in and select the _Extensions_ tab.
 
 Open the `org.eclipse.core.runtime.products` extension, right click on the existing entry and create a new property.
 
-image::lifecycleregistration10.png[Lifecycle registration in the product extension part 1,pdfwidth=40%]
+image::lifecycleregistration10.png[Lifecycle registration in the product extension part 1]
 
 Enter _lifeCycleURI_ as name for the property and use `bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.lifecycle.Manager` as the value.
 

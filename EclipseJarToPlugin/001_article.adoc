@@ -1,6 +1,6 @@
 = How to create Eclipse plug-ins from Java libraries (JAR files) - Tutorial
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: ./img
@@ -12,14 +12,12 @@ Version 0.3, 06.07.2016
 [abstract]
 This article describes the manual process of  converting a Java library delivered as JAR files to an Eclipse plug-ins (OSGi bundles).
 
-		
-	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::100_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::200_usingexternaljars.adoc[]
 include::400_convertgradle.adoc[]
 include::../support.adoc[]
-include::008_resourcesloacl.adoc[]
-include::../copyright.adoc[]	
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 

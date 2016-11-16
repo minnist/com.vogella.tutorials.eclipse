@@ -1,0 +1,60 @@
+== The IPresentationEngine
+
+This `IPresentationEngine` interface contains several constants, which can be used to alternate the layout of the application.
+
+.Some IPresentationEngine constants
+|===
+|Constant |Description
+
+|STANDALONE
+|Can be added as _tag_ to a `MPartStack`, so that only one single part can be shown in that stack.
+
+|NO_AUTO_COLLAPSE
+|Any `MElementContainer<T>` where the children are disposed usually collapse. For example when all parts in a part stack are closed the part stack disappears by default. If the part stack should stay, even though it is empty, the _NO_AUTO_COLLAPSE_ tag can be used.
+
+|NO_MOVE
+|When this tag is applied to an `MUIElement` it cannot be moved any more, e.g., by Drag&Drop.
+
+|STYLE_OVERRIDE_KEY
+|This constant can be used as key in a persisted state of an `MUIElement` in order to override the SWT style flag, which is passed to the widget. One example would be the removal of the trim of a `MWindow`'s `Shell` by specifying `SWT.NO_TRIM` in the persisted state.
+
+|MAXIMIZED / MINIMIZED
+|When applied to a `MPartStack` as a tag the stack will be MAXIMIZED or minimized.
+
+|===
+
+
+[TIP]
+====
+All constants of the `IPresentationEngine` interface are well documented by their JavaDoc. So having a look directly in the interface will help.
+====
+
+
+The `IPresentationEngine` is also used to render any model element, which can be specified in the application model.
+
+The running `IPresentationEngine` can be obtained by using dependency injection.
+
+[source, java]
+----
+@Inject
+private IPresentationEngine presentationEngine;
+----
+
+Available methods are: 
+
+image::./ipresentationEngine-methods.png[] 
+
+A `Toolbar` widget, assuming the _com.vogella.e4.renderer.toolbar_ snippet is a MToolbar, could be populated like this:
+
+[source, java]
+----
+Composite parent = // ...
+MApplication app = // ...
+EModelService modelService = // ...
+IEclipseContext eclipseContext = // ...
+
+ToolBar toolBar = new ToolBar(parent, SWT.NONE);
+MUIElement mtoolbarSnippet = modelService.cloneSnippet(app, "com.vogella.e4.renderer.toolbar", null);
+presentationEngine.createGui(mtoolbarSnippet, toolBar, eclipseContext);
+----
+

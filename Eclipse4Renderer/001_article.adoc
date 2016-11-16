@@ -1,11 +1,11 @@
 = Eclipse 4 Renderer - Tutorial
 :linkcss:
-:sectnums:                                                          
+:sectnums:
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 6.6, 06.07.2016
+Lars Vogel, Simon Scholz (c) 2009, 2016 vogella GmbH
+Version 6.7, 16.11.2016
 :docinfodir: ../
 :vgwort: Eclipse4Renderer
 :textselfreference: script
@@ -17,6 +17,7 @@ This tutorial gives an overview about the rendering framework introduced in Ecli
 include::../web/kindle/eclipse-rcp.adoc[]
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_renderer.adoc[]
+include::015_presentation_engine.adoc[]
 include::020_ownrenderer.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::040_custom_browser_part_renderer.adoc[]

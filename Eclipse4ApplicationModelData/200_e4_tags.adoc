@@ -35,23 +35,14 @@ tag which you can add to a
 
 |_NoMove_
 |Part
-|Prevents the user from moving the part. This tag is evaluated by the
-_DnDAddon_
-class which handles drag and drop by default in the Eclipse platform.
+|Prevents the user from moving the part. 
+This tag is evaluated by the _DnDAddon_ class which handles drag and drop by default in the Eclipse platform.
 
 |_styleOverride_
 |_MWindow_ or _MPartStack_
-|Allows to define the style bits of the user interface control. For
-example, to create an SWT shell which cannot be
-resized,
-you need to
-supply the integer value for <![CDATA[SWT.SHELL_TRIM & (~SWT.RESIZE)]]>, which is 1248 on the
-_MWindow_
-application element.
-If, for example, your
-_MPartStack_
-should
-render its tab below the
-parts, use 1024.
+|Allows to define the style bits of the user interface control. 
+For example, to create an SWT shell which cannot be resized, you need to supply the integer value for SWT.SHELL_TRIM & (~SWT.RESIZE) for the _MWindow_ application element.
+This value is 1248.
+If, for example, your _MPartStack_ should render its tab below the parts, use 1024.
 |===
 

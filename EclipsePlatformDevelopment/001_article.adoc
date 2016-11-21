@@ -20,7 +20,7 @@ include::010_contributingtoeclipse.adoc[]
 This tutorial assumes that you have already Eclipse plug-indevelopment experience. 
 See the http://www.vogella.com/tutorials/EclipsePlugin/article.html[Eclipse Plug-in development tutorial] for details.
 
-include::012_versioncontrol.adoc[]
+include::012_findingeclipseprojectinformation.adoc[]
 include::060_eclipsedevelopmentbuild.adoc[]
 include::200_exercise_usercreation.adoc[]
 include::210_exercise_cloningplatformui.adoc[]

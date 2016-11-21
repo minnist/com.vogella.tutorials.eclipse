@@ -1,19 +1,17 @@
-== Finding information about an Eclipse project
+== Getting initial information about an Eclipse project
 
 === The Eclipse project page
 		
-
 Eclipse lists all project repositories under their project page. 
 This page can be found via the main https://projects.eclipse.org[Eclipse projects page].
-        
-		
-Use the project page you can search for an Eclipse project.
-The individual project page includes information about future developments plans, documentation, wiki pages, developer mailing lists and the project charter.
+On this website you can search for the Eclipse project you are interested in.
+
+The individual project page contain information about the project.
+This includes future developments plans, documentation, wiki pages, developer mailing lists and the project charter.
 If you click on the _Learn more_ in one of the search results you are taken to the project homepage. 
 Click on the _Developer resources_ tab to see all Git repositories of the project.
 		
 The following screenshot depicts the website for the https://projects.eclipse.org/projects/eclipse.jdt.ui[JDT UI project]. 
-		
 		
 image::jdtuieclipseprojectpage10.png[Eclipse top-level project homepage]
 
@@ -51,4 +49,8 @@ You can select in the top the sub-project to see.
 For example the reporting for the Eclipse project is depicted in the following screenshot.
 		
 image::eclipsedash20.png[Eclipse project dashboard]
+
+=== User interface guidelines
 		
+Eclipse has a description for its user interface guidelines, it is a bit outdated but still gives an good overview.
+See https://wiki.eclipse.org/User_Interface_Guidelines[Eclpise UI guidelines Wiki].

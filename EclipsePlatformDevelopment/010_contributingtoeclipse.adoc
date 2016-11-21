@@ -2,27 +2,18 @@
 
 === Code contributing
 		
-The development of the individual Eclipse projects is done by the Eclipse developers - companies and individuals alike - which develop the code.
-
-As the Eclipse project is an open source project, it is possible to get the source code, modify it and provide the change back to the project. 
-Most Eclipse projects use a code review process based on the Gerrit code review system.
-Some Eclipse projects also use Github for code contributions.
+Eclipse projects are an open source projects. Multiple developers - companies and individuals alike - advance the code.
+Everyone has read access to the code repositories hosted at eclipse.org.
+It is possible for you to get the source code, modify it and provide the change back to the project. 
+Most Eclipse projects use a code review process based on the Gerrit code review system, some use Github.
 		
 Contributing to an Eclipse project has the benefit of getting feedback directly from the core developers. 
 It also allows developers and organizations to fix bugs which affect them and to drive the project into a desired direction.
 		
 This {textselfreference} focuses on the process of contributing code to an Eclipse project.
-If case you do not want to contribute code, there are other ways of contributing, e.g., via updating the project documentation, but these are not covered here.
+If case you do not want to contribute code, there are other ways of contributing.
+For example, you can provide or update documentation for a project wiki.
 	
-
-=== User interface guidelines
-		
-Eclipse has a description for its user interface guidelines. See https://wiki.eclipse.org/User_Interface_Guidelines[Eclpise UI guidelines Wiki].
-		
-It is not expected that you read this UI guide completely.
-But in case you want to check what the Eclipse way of doing things is, you can have a look at this (old but still valid) description.
-	
-
 === Users, Contributors and Committers
 		
 The Eclipse project distinguishes between the following group of people:
@@ -30,11 +21,9 @@ The Eclipse project distinguishes between the following group of people:
 * Eclipse User - Using at least one product, e.g., a _JAR_ file, of the Eclipse project. Eclipse users consume the software created by the Eclipse developers. 
 Users also report bugs and issue feature requests in Eclipse projects they are using.
 	
-* Contributors are individuals who contribute code, fixes, tests, documentation, or other work that is part of the project.
+* Contributors are individuals who contribute code fixes or make other significant contributions to the project.
 	
 * Committers have write access to the project's resources (source code repository, bug tracking system, website, build server, downloads, etc.) and are expected to influence the project's development.
-		
-Everyone has read access to the code repositories hosted at eclipse.org.
 		
 === Relevant Eclipse projects
 
@@ -42,22 +31,24 @@ Eclipse hosts multiple projects but several projects are critical for the develo
 These are described here.
         
 ==== The Eclipse Platform project
+
 (((Platform project)))
 The _Eclipse Platform_ project provides the core frameworks and services upon which all Eclipse based applications are created. 
 It also provides the runtime in which Eclipse components are loaded, integrated, and executed. 
 The primary purpose of the _Eclipse Platform_ project is to enable other developers to easily build and deliver integrated tools and applications.
 
 ==== The Eclipse Plug-in Development Environment (PDE)
+
 (((PDE)))
 ((((Plug-in Development Environment)))
 The Eclipse Plug-in Development Environment (PDE) project provides wizards for creating Eclipse RCP applications and plug-ins, editors and other tools to develop Eclipse plug-ins.
 
         
 ==== The Eclipse e4 project
+
 ((((e4 project)))
 _Eclipse e4_ is the name used for the _Eclipse Platform_ incubator project.
 This incubator is used for exploratory projects relating to improving the Eclipse Platform.
-
 
 The e4 project includes several technology evaluations.
 Some of these evaluations have been ported back to the core Eclipse framework.

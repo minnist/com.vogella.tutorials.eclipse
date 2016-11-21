@@ -1,6 +1,8 @@
-== EGit Resources
+== Eclipse Git Resources
 
-http://wiki.eclipse.org/EGit/User_Guide[EGit User Guide]
-	
-http://wiki.eclipse.org/EGit/Contributor_Guide[EGit contributor guide]
+http://wiki.eclipse.org/EGit/User_Guide[Eclipse Git User Guide]
+
+http://wiki.eclipse.org/EGit/Contributor_Guide[Contributor guide for the Eclipse Git project]
+
+https://www.eclipse.org/egit/download/[Different update sites for Eclipse Git]
 

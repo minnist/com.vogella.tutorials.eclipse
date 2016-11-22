@@ -21,20 +21,19 @@ It is possible to refer to external resources (e.g., projects) from  the _worksp
 Eclipse provides _views_ and _editors_ to navigate and change content.
 View and editors can be grouped into _perspectives_.
 
-A view is typically used to work on a set of data, which might be a hierarchical structure. 
-If data is changed via the view, this change is typically directly applied to the underlying data structure.
-A view sometimes allows the user to open an editor for the selected set of data.
+A view is typically used to work on a set of data.
+This data might be a hierarchical structure. 
+If data is changed via the view, the underlying data is directly changed, without the need to save.
 
-An example for a view is the _Project Explorer_, which allows you to browse the files of Eclipse projects.
-If you change data in the _Project Explorer_ this change is directly applied to the underlying data model.
-For example, if you rename a file, the file name is directly changed on the file system.
+For example, the _Project Explorer_ view allows you to browse and modify files of Eclipse projects.
+Any change in the _Project Explorer_ is directly applied to the files, e.g., if you rename a file, the file system is directly changed.
 
 Editors are typically used to modify a single data element, e.g., the content of a file or a data object.
 Change in an editor are only applied once the user saves.
 
 For example, the _Java_ editor is used to modify Java source files. 
 Changes to the source file are applied once the user selects the btn:[Save] button.
-A dirty editor tab is marked with an asterisk left to the name of the modified file.
+A editor with changed data (a dirty editor) is marked with an asterisk left to the name of the modified file.
 
 image::dirtyeditor10.png[Editor marked as dirty]
 

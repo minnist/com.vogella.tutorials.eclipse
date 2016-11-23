@@ -48,17 +48,6 @@ image::tycho_productid20.png[Switch product to features]
 image::tycho_productid30.png[Switch product to features]
 
 
-=== Enable separate update of the custom feature
-		
-Open the product file and add `installMode="root"`for the feature. 
-This allows to update the feature separately.
-
-[source,xml]
-----
-include::res/rcp/com.vogella.tycho.rcp.product[]     
-----	
-		
-
 === Enter start-level in the product
 
 To ensure that your product can be executed after the build, set the start levels and the auto-start flag for important plug-ins.
@@ -77,12 +66,22 @@ NOTE: If you get the following stack trace, when starting the built product, you
 include::res/rcp/start-level-incorrect-trace.txt[]
 ----
 
+=== Enable separate update of the custom feature
+
+Open the product file and add `installMode="root"`for the feature. 
+This allows to update the feature separately.
+
+[source,xml]
+----
+include::res/rcp/com.vogella.tycho.rcp.product[]     
+----
+
 === Update releng pom
 
 [source,xml]
 ----
 include::res/rcp/relengpom.xml[]     
-----    	
+----
 
 <1> Add the project with the product configuration to the build
 
@@ -92,7 +91,7 @@ include::res/rcp/relengpom.xml[]
 [source,xml]
 ----
 include::res/exercise/rcp/bundlespomrcp.xml[]     
-----        		
+----
 
 <1> Adds the rcp plug-in to the bundles build
 

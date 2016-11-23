@@ -15,7 +15,7 @@ include::res/refactoring/MyFirstClassVrs1.java[]
 === Extract method
 		
 A useful refactoring is to mark code and create a method from the selected code. 
-To use this in this exercise, mark the coding of the "for" loop, right click on the selection and select menu:Refactoring [Extract Method]. 
+Mark now the coding of the "for" loop, right click on the selection and select menu:Refactoring[Extract Method]. 
 Use _calculateSum_ as the name of the new method.
 		
 image::refactor20.png[Extract Method refactoring]

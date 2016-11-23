@@ -4,18 +4,6 @@
 This chapter lists other useful Eclipse settings which are not directly related to Java development.
 It also explains how to export and import your preference settings from one workspace to another.
 
-=== Launch Configuration
-		
-Eclipse allows you to start an application via the btn:[Run] button in the menu or via the kbd:[Ctrl+F11] shortcut. 
-By default, Eclipse determines if the currently selected file is executable and try to start that. 
-This is sometimes confusing.
-You can configure the Eclipse IDE to always start the last started program.
-		
-To configure this, select menu:Window[Preferences > Run/Debug > Launching].
-Define that the previous launched application should always be launched.
-		
-image::androideclipsesetup10.png[Setting the previous launched application,pdfwidth=40%]
-
 === Configuring the editors for a file extension
 		
 The _Editors_ which are available to open a file can be configured via menu:Window[Preferences > General > Editors > File Associations].
@@ -49,7 +37,7 @@ To do this, select your project, right-click on it and select _Properties_.
 For example, on the menu:Java Editor[Save Actions] you can select the _Enable project specific settings_ checkbox to configure the save action for the current project only.
 		
 		
-image::preferencesettingsperproject10.png[Preference settings per project,pdfwidth=35%,width=35%]
+image::preferencesettingsperproject10.png[Preference settings per project,pdfwidth=35%]
 		
 This creates a _.settings_ folder.
 You can add this folder to your version control system to ensure that every developer uses the same setting.

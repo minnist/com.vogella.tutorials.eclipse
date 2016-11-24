@@ -5,7 +5,7 @@
 :icons:
 :imagesdir: ./img
 Lars Vogel, Simon Scholz (c) 2013 - 2016 vogella GmbH
-Version 0.4, 23.06.2016
+Version 0.5, 25.11.2016
 :docinfodir: ../
 :vgwort: Eclipse4Adapter
 
@@ -15,6 +15,7 @@ Also see the http://www.vogella.com/tutorials/DesignPatternAdapter/article.html[
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::020_eclipse_adapter.adoc[]
+include::030_exercise_workbenchlabelprovider.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]

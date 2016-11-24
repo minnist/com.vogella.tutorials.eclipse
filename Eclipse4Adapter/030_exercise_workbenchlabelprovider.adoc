@@ -1,0 +1,76 @@
+== Exercise - Adapters for the IWorkbenchAdapter
+
+The `IWorkbenchAdapter` interface is used enable any object to be visualized in the workspace, e.g., in the Package Explorer or the Project Explorer.
+
+image::iworkbenchadapter-interface.png[] 
+
+So it provides a label and image for a label provider, e.g., the `WorkbenchLabelProvider`, which is supposed to visualize the object. And a `getParent()` and `getChildren()` method to be used in an `ITreeContentProvider`, e.g., the `WorkbenchContentProvider`.
+
+=== Creating a model object
+
+For this exercise a `Todo` object should be created and is supposed to be adapted as IWorkbenchAdapter.
+
+[source, java]
+----
+include::res/model/Todo.java[]
+----
+
+=== Solution by implementing IAdaptable
+
+One solution could be letting the `Todo` directly implement `IAdaptable` and return the desired `IWorkbenchAdapter`.
+
+[source, java]
+----
+include::res/model/AdaptableTodo.java[]
+----
+
+<1> The `getLabel()` will be used by the `WorkbenchLabelProvider` to get a label for the Todo, even though it does not know the type `Todo`, which can be considered as inversion of control and loose coupling.
+
+=== Making use of the WorkbenchLabelProvider
+
+Using the `WorkbenchLabelProvider` for a `Viewer` makes it possible to view any kind of object in the `Viewer` as long as it supplies an adapter of type `IWorkbenchAdapter`.
+
+So what the `WorkbenchLabelProvider` does is to ask the adapter framework for each object, which is supposed to be shown in the `Viewer` whether there is an adapter of type `IWorkbenchAdapter` for that object.
+
+[source, java]
+----
+include::res/parts/IWorkbenchAdapterViewerPart.java[]
+----
+
+<1> `WorkbenchLabelProvider`, which does not know anything about `Todo` objects.
+
+So the `WorkbenchLabelProvider` does not know anything about `Todo` objects, but will nevertheless be able to show them due to the fact, that the `WorkbenchLabelProvider` is able to get an instance of an `IWorkbenchAdapter` for `Todo` objects.
+
+=== Also show a Task object from a third party vendor
+
+Since the `WorkbenchLabelProvider` can handle any type of objects as long as they can be adapted to an `IWorkbenchAdapter`, a Task object from a third party vendor could also be shown.
+
+The problem here is that classes from third party vendors cannot be changed and therefore the `IAdaptable` interface cannot be implemented.
+
+But an `IAdapterFactory` can be registered to provide adapters for such a `Task` object.
+
+So for testing purpose the `Todo` class without implementing the `IAdaptable` interface can be copied and renamed to `Task`.
+
+[source, java]
+----
+include::res/model/Task.java[]
+----
+
+To provide the `IWorkbenchAdapter` as adapter for the `Task` object the _org.eclipse.core.runtime.adapters_ extension point must be used.
+
+image::./adapter-factory-extension-point.png[]
+
+In plain XML it looks like this:
+
+[source, xml]
+----
+include::res/adaptermanager/adapter-factory.xml[]
+----
+
+The `IAdapterFactory` for `Task` objects should look like this.
+
+[source, xml]
+----
+include::res/adaptermanager/TaskAdapterFactory.java[]
+----
+

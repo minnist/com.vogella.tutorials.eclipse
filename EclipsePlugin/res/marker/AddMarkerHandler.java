@@ -9,7 +9,7 @@ import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.jface.viewers.IStructuredSelection;
 
 
-public class AddMarker {
+public class AddMarkerHandler {
 
 	@Execute
 	public void execute(@Named(IServiceConstants.ACTIVE_SELECTION) IStructuredSelection selection, Adapter adapter) {

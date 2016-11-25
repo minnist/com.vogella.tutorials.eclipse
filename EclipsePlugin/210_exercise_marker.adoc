@@ -1,26 +1,36 @@
 == Exercise: Create Markers for resources
 
 Create a plug-in project _com.vogella.plugin.markers_.
+
+image::marker-plugin-page1.png[]
+
+image::marker-plugin-page2.png[]
+
+image::marker-plugin-page3.png[]
+
+image::marker-plugin-page4.png[]
+
+This template will create a `AddMarkerHandler` handler, which should be used to create an `IMarker` for a selected resource.
+
 Add the following dependencies:
 
-* _javax.inject_
-* _org.eclipse.core.resources_
 * _org.eclipse.jface_
 * _org.eclipse.e4.ui.services_
-* _org.eclipse.e4.core.di_
-* _org.eclipse.e4.core.services_
+* _org.eclipse.e4.core.di.annotations_
+* _org.eclipse.core.resources_
 * _org.eclipse.core.runtime_
+* _org.eclipse.e4.core.services_
 
-Create the command _com.vogella.plugin.markers.AddMarker_ with a handler `AddMarkerHandler` in the `de.vogella.plugin.markers.handler` class and add this command to the a menu.
-
-Create the following code.
+Modify the `AddMarkerHandler` code to the following:
 
 [source, java]
 ----
 include::res/marker/AddMarkerHandler.java[]
 ----
 
-If you run, you can create a marker in the Tasks View if you select a Java project and click your menu entry.
+In the _fragment.e4xmi_ file the command's name should be changed from "Hello World" to "Add Task Marker".
+
+If you run, you can create a marker in the Tasks View if you select a Java project or any other `IResource` and click the menu entry.
 
 image::marker40.png[]
 

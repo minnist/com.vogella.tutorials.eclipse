@@ -1,13 +1,59 @@
-== Eclipse JDT Quickfixes and Quickassist
+== Developing custom Eclipse quick fixes and quick assist for Java
 
-The Eclipse Java Development Tools (JDT) allow the creation of custom quick fixes and quick assistance by using the the `org.eclipse.jdt.ui` plug-in.
+=== Using quick fixes and quick assists
 
-Such plug-ins require the following plug-ins as dependency:
+The Eclipse IDE provides quick fixes and quick assists to efficiently solve common problems in your Java code.
+For your Java code you can create  custom quick fixes and quick assistance via additional custom plug-ins.
+Such plug-ins require the following plug-ins as dependency in their manifest.
 
 * org.eclipse.jdt.ui
 * org.eclipse.jdt.core
 * org.eclipse.core.runtime
 * org.eclipse.jface
 * org.eclipse.jface.text
+
+
+=== Quick assist processors
+
+Quick Assists Processors provide the opportunity to provide context sensitive refactorings and assistance in an editor, e.g., the Java editor.
+
+In order to provide quick assistance the _org.eclipse.jdt.ui.quickAssistProcessors_ extension point has to be used.
+
+image::quickassist-extensionpoint.png[]
+
+The referenced class in the extension point has to be an instance of `IQuickAssistProcessor`, which specifies the `boolean hasAssists(IInvocationContext context)` and `IJavaCompletionProposal[] getAssists(IInvocationContext context, IProblemLocation[] locations)` methods.
+
+The `hasAssists` method specifies whether the quick assist is appropriate.
+
+The `getAssists` method returns an array of `IJavaCompletionProposal` objects, which can apply refactorings and changes to the code.
+
+
+=== Quick fix processors
+
+The Eclipse Java Development Tools (JDT) allow the creation of custom quick fixes via the `org.eclipse.jdt.ui.quickFixProcessors` extension point from the `org.eclipse.jdt.ui` plug-in.
+
+The class which is referred by the extension points must implement the `IQuickFixProcessor` interface.
+This defines the `hasCorrections()` and `getCorrections()` methods.
+
+The `IProblem` interface defines the possible problems.
+
+[[find-problem-id]]
+=== Finding predefined problem ids
+
+The `IProblem` interface contains a huge amount of potential problem ids, where a quick fix could be used to resolve a certain problem.
+
+Due to the huge amount of problem ids it sometimes is pretty hard to figure out, which problem id is in charge for a particular problem.
+
+Therefore an empty implementation of an `IQuickFixProcessor` can be used to find the correct id.
+
+[source, java]
+----
+include::res/ProblemIdQuickFixProcessor.java[]
+----
+
+With the `IQuickFixProcessor` from above the Eclipse IDE can be started from the Eclipse IDE itself and a certain problem can be reconstructed, e.g., in a Java editor.
+
+Once a problem appears and the `hasCorrections()` is invoked the actual problem id will be printed to the system output.
+
 
 

@@ -1,8 +1,7 @@
-== Exercise - Eclipse JDT Quickfixes
+== Exercise - Eclipse JDT quick fix
 
-=== Target
-
-In this exercise a JDT Quickfix will be created and the previously created _com.vogella.jdt.quickfix_ project will be reused for this.
+In this exercise a JDT quick fix is created.
+The previously created _com.vogella.jdt.quickfix_ project is reused for this.
 
 === Using the org.eclipse.jdt.ui.quickFixProcessors extension point
 

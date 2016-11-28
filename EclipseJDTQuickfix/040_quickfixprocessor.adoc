@@ -1,9 +1,0 @@
-== Quick Fix Processors
-
-The Eclipse Java Development Tools (JDT) allow the creation of custom quick fixes via the `org.eclipse.jdt.ui.quickFixProcessors` extension point from the `org.eclipse.jdt.ui` plug-in.
-
-The class which is referred by the extension points must implement the `IQuickFixProcessor` interface.
-This defines the `hasCorrections(()` and `getCorrections()` methods.
-
-The `IProblem` interface defines the possible problems.
-

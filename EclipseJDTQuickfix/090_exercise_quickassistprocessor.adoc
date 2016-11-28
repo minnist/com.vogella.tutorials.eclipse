@@ -1,12 +1,11 @@
 == Exercise - Eclipse JDT Quick Assist
 
-=== Target
-
-In this exercise a JDT Quick Assist, which opens the _Generate Getters and Setters..._ dialog from the menu:Source[] menu, will be created.
+In this exercise a custom JDT quick assist is created.
+It is available on the class definition and opens the _Generate Getters and Setters..._ dialog from the menu:Source[] menu.
 
 === Creating a Plug-in Project and add dependencies
 
-Create an empty Plug-in Project called _com.vogella.jdt.quickfix_ and add the following dependencies:
+Create an empty Plug-in project called _com.vogella.jdt.quickfix_ and add the following dependencies:
 
 * org.eclipse.jdt.ui
 * org.eclipse.jdt.core

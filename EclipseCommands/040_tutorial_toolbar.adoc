@@ -1,80 +1,60 @@
 == Tutorial: Commands and toolbars
 
 === Overview
-You can add commands to the application toolbar and to a view
-toolbar. 
+You can add commands to the application toolbar and to a view toolbar. 
 
 === Application toolbar (coolbar)
 
-Create a new project
-"de.vogella.rcp.intro.commands.toolbar". Use
-the
-"RCP application
-with a view" as a template. Create a command
-"de.vogella.rcp.intro.commands.toolbar.Hello"
-with the default
-handler
-"de.vogella.rcp.intro.commands.toolbar.handler.Hello". This handler
-will open a
-http://www.vogella.com/tutorials/EclipseDialogs/article.html[JFace Dialog].
+Create a new project "de.vogella.rcp.intro.commands.toolbar".
+Use the "RCP application with a view" as a template.
+Create a command "de.vogella.rcp.intro.commands.toolbar.Hello" with the default handler "de.vogella.rcp.intro.commands.toolbar.handler.Hello".
+This handler opens a http://www.vogella.com/tutorials/EclipseDialogs/article.html[JFace Dialog].
 
 [source,java]
 ----
 include::res/toolbar/Hello.java[]
 ----
 
-Add a
-menucontribution to the "org.eclipse.ui.menus extension"
-point. Set the
-location URI
-to "toolbar:org.eclipse.ui.main.toolbar".
-Add a
-toolbar to your
-menu contribution.
+Add a menucontribution to the "org.eclipse.ui.menus extension" point.
+Set the location URI to "toolbar:org.eclipse.ui.main.toolbar".
+Add a toolbar to your menu contribution.
 
 image::commandcoolbar10.gif[]
 
-Add the command
-"de.vogella.rcp.intro.commands.toolbar.Hello" to
-the toolbar. Assign a label and an
-icon to it.
+Add the command "de.vogella.rcp.intro.commands.toolbar.Hello" to the toolbar.
+Assign a label and an icon to it.
 
 image::commandcoolbar20.gif[]
 
-Activate the application toolbar via
-ApplicationWorkbenchWindowAdvisor.java and set the
-configurer.setShowCoolBar(true); (
+Activate the application toolbar via `ApplicationWorkbenchWindowAdvisor` via the `configurer.setShowCoolBar(true);` call.
 
 [source,java]
 ----
 include::res/toolbar/ApplicationWorkbenchWindowAdvisor.java[]
 ----
 
-The result should look like the following. If you select the
-element in the toolbar an information dialog should open.
+The result should look like the following. 
+If you select the element in the toolbar an information dialog should open.
 
 image::commandcoolbar30.gif[]
 
 === Contribution to the View Toolbar
 
-You can also add a command directly to a view toolbar. For
-this
-we will extend the previous example. Change the class "Perspective" to the following (a stand-alone view
-does not have a own toolbar).
+You can also add a command directly to a view toolbar. 
+For this you extend the previous example. 
+Change the class "Perspective" to the following (a stand-alone view does not have a own toolbar).
 
 [source,java]
 ----
 include::res/toolbar/Perspective.java[]
 ----
 
-Create a new menu contribution to the extension point
-"org.eclipse.ui.menus" with the locationURI:
-"toolbar:de.vogella.rcp.intro.commands.toolbar.view".  ""toolbar:"" tells the system to add it to the toolbar while the
-second argument is the id of your view.
+Create a new menu contribution to the extension point "org.eclipse.ui.menus" with the locationURI:
+"toolbar:de.vogella.rcp.intro.commands.toolbar.view".  
+_toolbar:_ tells the system to add it to the toolbar while the second argument is the id of your view.
 
-Create then a new command for this menucontribution and set the
-command id to "de.vogella.rcp.intro.commands.toolbar.Hello". Assign
-the label "Say Hello" to it.
+Create then a new command for this menucontribution and set the command id to "de.vogella.rcp.intro.commands.toolbar.Hello".
+Assign the label "Say Hello" to it.
 
 image::commandview10.gif[]
 
@@ -84,44 +64,40 @@ image::commandview20.gif[]
 
 === Drop down list
 
-The following adds a dropdown list to the application
-coolbar.
+The following adds a dropdown list to the application coolbar.
 
-This creation is a bit strange. You create a helper drop-down
-command to which later the other (real) commands will be assigned to.
+This creation is a bit strange.
+You create a helper drop-down command to which later the other (real) commands will be assigned to.
 
 Therefore create a command with the id "referenceToMenuId".
-Maintain also the default handler. For example you could reuse
-"de.vogella.rcp.intro.commands.toolbar.handler.Hello".
+Maintain also the default handler. For example you could reuse "de.vogella.rcp.intro.commands.toolbar.handler.Hello".
 
 image::commanddropdown06.gif[]
 
-Add a new menucontribution to the "org.eclipse.ui.menus"
-extension point. Set the location URI to
-"toolbar:org.eclipse.ui.main.toolbar". Add a toolbar to this
-extension and a new command to this new toolbar. As the id use
-"referenceToMenuId" give it a label and an icon and change the style
-to "pulldown".
+Add a new menucontribution to the `org.eclipse.ui.menus` extension point.
+Set the location URI to "toolbar:org.eclipse.ui.main.toolbar".
+Add a toolbar to this extension and a new command to this new toolbar.
+As the id use `referenceToMenuId` give it a label and an icon and change the style to "pulldown".
 
 image::commanddropdown10.gif[]
 
-Create a new menucontribution and set the locationURI to:
-"menu:referenceToMenuId"
+Create a new menucontribution and set the locationURI to: "menu:referenceToMenuId"
 
-TIP:referenceToMenuId is the ID we used earlier in
-the command.
+[NOTE]
+====
+referenceToMenuId is the ID we used earlier in the command.
+====
 
-Add your exiting command
-"de.vogella.rcp.intro.commands.toolbar.Hello" two times to this menu.
+Add your exiting command "de.vogella.rcp.intro.commands.toolbar.Hello" two times to this menu.
 Use different labels.
 
 image::commanddropdown20.gif[]
 
-Run your application, it should now have a drop-down list in
-the application toolbar.
+Run your application, it should now have a drop-down list in the application toolbar.
 
 image::commanddropdown30.gif[]
 
-TIP: Add the command "referenceToMenuId" to your existing view
-toolbar contribution to get the drop-down menu also in your view.
-
+[TIP]
+====
+Add the command "referenceToMenuId" to your existing view toolbar contribution to get the drop-down menu also in your view.
+====

@@ -2,29 +2,15 @@
 
 === Menu extension points
 		
-The
-`org.eclipse.ui.menu`
-extension point is used to define where the command is visible in the
-application, e.g., you could define that the command is visible in the
-application menu or in a
-view
-menu.
+The `org.eclipse.ui.menu` extension point is used to define where the command is visible in the application
+For example, you could define that the command is visible in the application menu or in a view menu.
 		
 image::command62.gif[]
 
-The
-_menuContribution_
-contribution has an ID value which allow to identify the
-contribution.
+The _menuContribution_ contribution has an ID value which allow to identify the contribution.
 		
-_menuContribution_
-has an
-_locationURI_
-attribute which allows to
-define where in the user interface a
-command
-is displayed. This different attribute values are summarized in the
-following table.
+_menuContribution_ has an _locationURI_ attribute which allows to define where in the user interface a command is displayed. 
+The different attribute values are summarized in the following table.
 
 .Table Location URIs
 |===	
@@ -50,42 +36,15 @@ following table.
 
 === Defining the position of a menu extension
 		
-Frequently you want to position a new command behind or before
-another command. For example the 
-_Save All_
-menu entry should be positioned after the
-_Save_
-menu entry.
+Can you also define the position of a command.
+For example, the  _Save All_ menu entry should be positioned after the _Save_ menu entry.
 		
-You can define the relative position of a command in this
-locationURI
-by using the
-pattern
-_?before=ID_
-or
-_?after=ID_.
+You can define the relative position of a command in this locationURI by using the pattern _?before=ID_ or _?after=ID_.
 		
-The ID
-can
-be an existing separator
-name,
-menu ID, or item ID. The
-command will
-then be placed before or
-after
-the element with the
-corresponding ID.
+The ID can be an existing separator name, menu ID, or item ID. 
+The command is placed before or after the element with the corresponding ID.
 		
 		
-For example if you want to add
-a command to an
-existing menu with
-the
-_fileMenu_
-ID behind the menu
-entry with the
-_oneEntry_
-ID use the
-_menu:fileMenu?after=oneEntry_
-locationURI .
+For example, to place a command in the _fileMenu_ menu behind the _oneEntry_ menu entry, use the _menu:fileMenu?after=oneEntry_
+locationURI.
 		

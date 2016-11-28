@@ -1,23 +1,22 @@
-== Commands
-
-=== What are commands?
+=== Defining commands with Eclipse 3.x API
 		
-A command in Eclipse is a declarative description of a component and is independent from the implementation details.
-		
-A
-command can be
-categorized, assigned
-to
-the user
-interface and a
-key
-binding can be defined for the
-command.
-The behavior
-of a command is
-defined via a handler.
+Eclipse 3.x API uses extension points to define commands.
+Three extensions points play a role here.
+The following extension points are relevant to define a menu or toolbar contribution for an Eclipse plug-in.
 
-=== Relevant Extension Points for Commands
+.Table
+|===
+|Extension Point |Description
+	
+|org.eclipse.ui.command
+|Declarative description of the component
+	
+|org.eclipse.ui.handlers
+|Defines the behavior, e.g., the Java class which should be called
+	
+|org.eclipse.ui.menu
+|Where and how should the command be included in the user interface, e.g., menu, popup menu, toolbar, etc.
+	
+|===
+	
 		
-To define a command you create an extension to the `org.eclipse.ui.command` extension point.
-

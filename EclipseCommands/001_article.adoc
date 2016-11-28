@@ -12,7 +12,7 @@ Version 3.2, 29.08.2016
 [abstract]
 Eclipse Commands tutorial.
 This tutorials describes how to add commands, menus and toolbar entries to the Eclipse IDE.
-This article is based on Eclipse Neon (4.7).
+This article is based on Eclipse Neon (4.6).
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::001_overview.adoc[]

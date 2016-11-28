@@ -2,14 +2,9 @@
 
 === Where do I find the initial application model of the Eclipse SDK
 
-In plug-in "org.eclipse.platform". Here you find the file
-"LegacyIDE.e4xmi" which defines the initial window and some add-ons.
-During startup the
-`E4Workbench`
-class
-from the
-`org.eclipse.e4.workbench.ui.internal`
-package is started.
+In plug-in "org.eclipse.platform".
+Here you find the file "LegacyIDE.e4xmi" which defines the initial window and some add-ons.
+During startup the `E4Workbench` class from the `org.eclipse.e4.workbench.ui.internal` package is started.
 
 
 === Meta-model of the application model
@@ -41,21 +36,13 @@ include::res/command/getid.java[]
 
 === BindingContext
 
-Eclipse 4 uses predefined BindingContext identifier which are
-based on org.eclipse.jface.contexts.IContextIds.
+Eclipse 4 uses predefined BindingContext identifier which are based on org.eclipse.jface.contexts.IContextIds.
 
-These are
-`org.eclipse.ui.contexts.dialog`
-for dialogs,
-`org.eclipse.ui.contexts.window`
-for windows and
-`org.eclipse.ui.contexts.dialogAndWindow`
-for both.
+These are `org.eclipse.ui.contexts.dialog` for dialogs, `org.eclipse.ui.contexts.window` for windows and `org.eclipse.ui.contexts.dialogAndWindow` for both.
 
 === DI in OSGi stand-alone environments
 
-It is possible to use the DI engine in a standard OSGi
-environment
+It is possible to use the DI engine in a standard OSGi environment
 
 [source,java]
 ----
@@ -64,11 +51,9 @@ include::res/osgi/standard.java[]
 
 === Persists user changes
 
-Via a startup parameter you can control if Eclipse should persists
-model changes. For example you want to save the last position of the
-main application window. This is similar to the
-`setSaveAndRestore(true)`
-method call in Eclipse 3.x.
+Via a startup parameter you can control if Eclipse should persists model changes. 
+For example, you want to save the last position of the main application window. 
+This is similar to the `setSaveAndRestore(true)` method call in Eclipse 3.x.
 
 .Sample Table
 |===
@@ -94,56 +79,19 @@ deserialize from XMI.
 
 === Styling the Eclipse 4 IDE
 
-The platform style sheets
-are stored in
-the
-`org.eclipse.platform`
-plug-in .
-This
-plugin_contains
-a
-_/css_
-folder
-which contains
-the style
-sheets for the
-individual
-platforms (os
-based).
+The platform style sheets are stored in the `org.eclipse.platform` plug-in.
+This plugin contains a _/css_ folder which contains the style sheets for the individual platforms (os based).
 
 You can use the ThemeManager to style the Eclipse 4 IDE itself.
-In the
-Eclipse the theme can be selected via
-menu:Window[Preferences > General > Appearance].
+In the Eclipse the theme can be selected via menu:Window[Preferences > General > Appearance].
 
-You can also contribute a new theme
-via a separate plug-in. Create
-a
-plug-in project (no activator required)
-which has a
-dependency
-to
-the
-plug-in
-`org.eclipse.e4.ui.css.swt.theme`.
+You can also contribute a new theme via a separate plug-in.
+Create a plug-in project (no activator required) which has a dependency to the `org.eclipse.e4.ui.css.swt.theme` plug-in.
 
-Contribute a new theme to the
-`org.eclipse.e4.ui.css.swt.theme`
-extension point
-Create a CSS file
-and point
-the theme to this file.
+Contribute a new theme to the `org.eclipse.e4.ui.css.swt.theme` extension point.
+Create a CSS file and point the theme to this file.
 
-Export the plug-in
-(including the CSS
-file) and put it into
-your
-Eclipse
-installation folder into the "dropins" folder you
-should be
-able
-to
-select
-your new theme after restarting the Eclipse
-IDE.
+Export the plug-in (including the CSS file).
+Put it into your Eclipse installation folder into the "dropins" folder.
+You should be able to select your new theme after restarting the Eclipse IDE.
 

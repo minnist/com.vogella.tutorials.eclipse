@@ -1,5 +1,101 @@
 == Tutorial: Commands and menus
 
-include::../10_Include/commands/320_commandspart1.adoc[]
-include::../10_Include/commands/320_commandspart2.adoc[]
+=== Exercise: Defining commands
+
+In this exercise you create a command which allows to  exit the application.
+Create a
+new
+http://www.vogella.com/tutorials/EclipseRCP/article.html[RCP project]
+"de.vogella.rcp.commands.first"
+using the
+"Hello RCP"
+template. Click on
+the plugin.xml and select the Extensions tab.
+Press
+the btn:[Add...] button.
+
+image::command10.gif[]
+
+Search for the extension
+"org.eclipse.ui.commands". Select it and
+press finish.
+	
+image::command20.gif[]
+	
+Create a new command by right-click on your extension point
+and by selecting New -> command.
+	
+TIP: If you only see an "Generic" entry you most likely have not downloaded "Eclipse for RCP/Plug-in Developers". Please see
+http://www.vogella.com/tutorials/RichClientPlatform/article.html#eclipseinstallation[Eclipse Installation].
+
+image::command30.gif[]
+	
+Set the ID to "de.vogella.rcp.commands.first.commands.Exit" and
+the name to "Exit". Enter the class
+"de.vogella.rcp.commands.first.commands.ExitHandler" as
+defaultHandler. 
+	
+image::command40.gif[]
+	
+Press the hyperlink "defaultHandler" to create the
+class which should extend "org.eclipse.core.commands.AbstractHandler".
+	
+	
+[source,java]
+----
+include::res/commands/ExitHandler.java[]
+----
+	
+
+=== Using commands in menus
+
+The command which we defined should be used in a
+menu. Add a extension
+to the
+`org.eclipse.ui.menus`
+extension point.
+Right-click on the
+extension point and select
+menu:New[menuContribution].
+	
+image::command62.gif[]
+	
+Create a new menu contribution with the
+"menu:org.eclipse.ui.main.menu" locationURI. Make sure this URL is
+correct spelled,
+otherwise your menu will not be shown.
+	
+image::command80.gif[]
+	
+Right-click your menucontribution and select
+menu:New[Menu].
+Add a
+menu with the "File" label and the "fileMenu" ID.
+	
+image::commandmenu10.gif[]
+	
+image::commandmenu20.gif[]
+	
+Select your menu, right-click on it, select New->
+Command.
+Maintain your commandID. Set the label
+to
+"Exit" and the tooltip to
+"Exits the application".
+	
+image::commandmenu30.gif[]
+	
+This should result in a `plugin.xml` file which looks like
+the
+following.
+	
+[source,xml]
+----
+include::res/commands/pluginfileexit.xml[]
+----
+	
+Run the example. 
+You should see menu with the file and if you select the "Exit" entry you application should exit.
+	
+image::commandmenu40.gif[]
 

@@ -12,7 +12,7 @@ Version 6.6, 06.07.2016
 
 [abstract]
 How to extend the Eclipse 4 application model.
-This tutorial gives an overview on how to extend the Eclipse 4 application model and how to define a new renderer for new model elements. 
+This tutorial explains how to extend the Eclipse 4 application model and how to define a new renderer for new model elements. 
 It also covers how to create custom editor implementations for these new model elements.
 			
 include::../web/advertisement/afterTableOfContent.adoc[]

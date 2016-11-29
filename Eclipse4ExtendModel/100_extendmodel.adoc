@@ -6,6 +6,7 @@ In this exercise you extend the structure of the Eclipse application model with 
 
 Create a new simple plug-in called _com.vogella.e4.appmodel.extensions_.
 
+
 image::appmodel_projectwizard10.png[Wizard to create a simple plug-in,pdfwidth=40%]
 
 Add a dependency in your new plug-in to the following plug-ins via its _MANIFEST.MF_ file.

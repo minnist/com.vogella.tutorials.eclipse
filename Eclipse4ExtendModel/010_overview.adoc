@@ -2,23 +2,11 @@
 
 === The application model structure
 		
-The application
-model you create for your Eclipse based
-application is
-based on
-an Eclipse Modeling Framework (EMF) model
-defined by
-the
-Eclipse platform. This
-structure
-defines, for example, that
-an
-`MPart` can
-be stored in an `MPartSashContainer`.
+The application model of an Eclipse RCP application is based on an Eclipse Modeling Framework (EMF) model defined by the Eclipse platform. 
+This structure defines, for example, that an `MPart` can be stored in an `MPartSashContainer`.
 		
-The
-Eclipse platform uses generated Java classes based on this EMF
-model. These classes are instantiated based on the
+The Eclipse platform uses generated Java classes based on this EMF model. 
+These classes are instantiated based on the
 _Application.e4xmi_
 file of the application including formation from model fragments,
 processors and other sources which modify the model, e.g., mode

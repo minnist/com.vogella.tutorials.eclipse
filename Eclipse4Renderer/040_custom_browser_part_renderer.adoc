@@ -12,17 +12,14 @@ sometimes has issues on Linux.
 include::res/browser/MyPartRenderer.java[]
 ----
 
-Extend the
-`MyRendererFactory`
-to the following to use your own part renderer.
+Extend the `MyRendererFactory` to the following to use your own part renderer.
 
 [source,java]
 ----
 include::res/browser/MyRendererFactory.java[]
 ----
 
-Run your application and test that every part is now rendered as
-browser.
+Run your application and test that every part is now rendered as browser.
 
 NOTE: Currently all parts show the same URL, but you could extend your
 renderer to access for example tags at the parts to determine the

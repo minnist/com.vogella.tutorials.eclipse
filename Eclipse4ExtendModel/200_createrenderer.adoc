@@ -1,7 +1,6 @@
 == Exercise: Create renderer for new model element
 	
-Define a new simple plug-in called
-_com.vogella.e4.appmodel.renderer_.
+Define a new simple plug-in called _com.vogella.e4.appmodel.renderer_.
 	
 Add the following plug-ins as dependencies to your new plug-in.
 
@@ -12,13 +11,10 @@ Add the following plug-ins as dependencies to your new plug-in.
 * `org.eclipse.e4.ui.workbench.swt`
 * `org.eclipse.e4.core.contexts`
 	
-Create the following new class called
-`BrowserPartRenderer`
-as renderer for your new
-`BrowserPart`.
+Create the following new class called `BrowserPartRenderer`.
+This class is used as renderer for your new `BrowserPart`.
 	
-Create the following factory to assign a renderer to your new
-model element.
+Create the following factory to assign a renderer to your new model element.
 	
 [source,java]
 ----

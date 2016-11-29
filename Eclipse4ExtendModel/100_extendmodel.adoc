@@ -42,31 +42,14 @@ image::renderermodel40.png[Define connections to an existing model, part 2]
 
 === Define your custom model extension
 
-Create a new
-`EClass`
-model element
-and add the following
-`Part`
-_
-ESuper
-Types
-_
-to it.
+Create a new `EClass` model element via right-mouse click.
+Via the _Properties_ view, add `Part`  as _ESuper Types_ to it.
 
 image::renderermodel50.png[]
 
-Use
-_BrowserPart_
-as value for the
-_Name_
-attribute.
+Use _BrowserPart_ as value for the _Name_ attribute.
 
-Right-click on the model element and
-add an
-`EAttribute`
-called uri with type of
-`EString`
-to it.
+Right-click on the model element and add an `EAttribute` called uri with type of `EString` to it.
 
 image::renderermodel54.png[]
 
@@ -78,10 +61,7 @@ image::renderermodel60.png[]
 
 === Create the Genmodel
 
-Right-click your
-_.ecore_
-file and select
-menu:File[New > Other... > EMF Generator model].
+Right-click your _.ecore_ file and select menu:File[New > Other... > EMF Generator model].
 
 Follow the wizard similar to the following screenshots.
 
@@ -95,45 +75,22 @@ image::renderermodel70.png[]
 
 === Generate the Java classes
 
-Use your
-_genmodel_
-to create the Java
-code. Right-click on it
-and select
-_Generate Model Code_.
+Use your _genmodel_ to create the Java code.
+Right-click on it and select _Generate Model Code_.
 
 image::applicationmodel_generatecode10.png[pdfwidth=40%]
 
 === Make generated classes available
 
-Export all package via
-the Runtime tab on the
-_MANIFEST.MF_
-file.
+Export all package via the Runtime tab on the _MANIFEST.MF_ file.
 
 [TIP]
 ====
-Please note that the first time you run the model generation, the
-_plugin.xml_
-file is created and the
-`org.eclipse.emf.ecore.generated_package`
-extension point
-is added to the file.
-This extension point
-describes
-your
-model. It
-is only added if
-the
-_plugin.xml_
-file needs to get created. If you
-later
-adjust settings of your mode,
-i.e., your
-package setting,you have
-to adjust the
-extension point
-manually.
+Please note that the first time you run the model generation, the _plugin.xml_ file is created. 
+Also the `org.eclipse.emf.ecore.generated_package` extension point is added to it.
+This extension point declares your custom model. 
+It is only added if the _plugin.xml_ file needs to get created. 
+If you later adjust settings of your model, i.e., your package setting, you have to adjust the extension point manually.
 
 [source,xml]
 ----
@@ -143,9 +100,6 @@ include::res/renderer/plugin.xml[]
 
 image::renderermodel80.png[]
 
-Note down the uri from the extension point. You need to
-define this in
-your
-_Application.e4xmi_
-later.
+Note down the uri from the extension point. 
+You need to define this in your _Application.e4xmi_ later.
 

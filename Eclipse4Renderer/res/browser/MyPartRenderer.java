@@ -12,9 +12,7 @@ public class MyPartRenderer extends SWTPartRenderer {
 
 	@Override
 	public Object createWidget(MUIElement element, Object parent) {
-		final Composite mapComposite = new Composite((Composite) parent,
-				SWT.NONE);
-		System.out.println(parent.getClass());
+		final Composite mapComposite = new Composite((Composite) parent, SWT.NONE);
 		mapComposite.setLayout(new GridLayout(1, false));
 		final Browser browser = new Browser(mapComposite, SWT.NONE);
 		browser.setUrl("http://www.vogella.com");

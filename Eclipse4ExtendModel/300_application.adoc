@@ -2,39 +2,28 @@
 
 === Exercise: Create the application
 
-Create a new Eclipse RCP application called
-_com.vogella.e4.appmodel.app_.
+Create a new Eclipse RCP application called _com.vogella.e4.appmodel.app_.
 
-Add
-a dependency to the following plug-ins:
+Add a dependency to the following plug-ins:
 
 * `com.vogella.e4.appmodel.extension`
 * `com.vogella.e4.appmodel.renderer`
 
-NOTE: You have to manually adjust the application model, as the
-default editors don't support your new model elements. It is
-possible
-to develop custom components in the editor to handle your
-extensions
-but that is beyond this description.
+[NOTE]
+====
+You have to manually adjust the application model, as the default editors don't support your new model elements. 
+It is possible to develop custom components in the editor to handle your extensions but that is beyond this description.
 
-Add your model name space to the
-_Application.e4xmi_
-file. Please note that
-_xmlns:extension="http://www.vogella.com/ui/e4/extension_
-defines the
-UI of your model extension. By this you can use
-`extension:modelelement`
-in the file referring to your custom model
-elements.
+Add your model name space to the _Application.e4xmi_ file. 
+Please note that _xmlns:extension="http://www.vogella.com/ui/e4/extension_ defines the UI of your model extension. 
+By this you can use `extension:modelelement` in the file referring to your custom model elements.
 
 [source,xml]
 ----
 include::res/renderer/Application.e4xmi[]
 ----
 
-Afterwards add your new part implementation to a part, the
-snippet to add it listed below.
+Afterwards add your new part implementation to a part, the snippet to add it listed below.
 
 [source,xml]
 ----
@@ -43,12 +32,8 @@ include::res/renderer/Application2.e4xmi[]
 
 === Register your factory via an extension point
 
-As a last step add the property
-`rendererFactoryUri`
-to your
-product in
-_plugin.xml_
-with a link to your new factory:
+As a last step add the property `rendererFactoryUri` to your product in _plugin.xml_.
+Add a link to your new factory:
 _platform:/plugin/com.vogella.e4.renderer.maps/com.vogella.e4.renderer.maps.MyRendererFactory_
 
 [source,xml]
@@ -58,10 +43,8 @@ include::res/renderer/plugin2.xml[]
 
 === Run your application
 
-Run your application. The result should display the webpage to which
-you pointed via the
-_uri_
-parameter.
+Run your application. 
+The result should display the webpage to which you pointed via the _uri_ parameter.
 
 image::renderermodel90.png[]
 
